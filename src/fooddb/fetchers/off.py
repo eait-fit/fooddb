@@ -18,13 +18,27 @@ FETCHER = "off-delta"
 DUMP_FETCHER = "off-dump"
 LICENCE = "ODbL-1.0"
 
-# OFF nutrient key → INFOODS tagname. Values are converted to our units (g, kcal; sodium in mg).
+# OFF nutrient key → INFOODS tagname. Values are converted to our units (g, kcal, kJ; sodium in mg).
+# "carbohydrates" is what the label calls carbohydrate; its code depends on the market (`carbs_code`).
 NUTRIENTS = {
-    "energy-kcal": "ENERC_KCAL", "proteins": "PROCNT", "fat": "FAT", "carbohydrates": "CHOCDF",
+    "energy-kcal": "ENERC_KCAL", "energy-kj": "ENERC_KJ", "proteins": "PROCNT", "fat": "FAT",
+    "carbohydrates": "CHO", "carbohydrates-total": "CHOCDF",
     "sugars": "SUGAR", "saturated-fat": "FASAT", "fiber": "FIBTG", "sodium": "NA",
 }
+ENERGY_UNITS = {"ENERC_KCAL": "kcal", "ENERC_KJ": "kJ"}
 TO_GRAMS = {"g": 1, "mg": 1e-3, "µg": 1e-6, "mcg": 1e-6}
 KJ_PER_KCAL = 4.184
+
+# Label carbohydrate includes fibre (by difference) in the US and Canada. It excludes fibre
+# (available carbohydrate) under EU 1169/2011, in the UK, the EFTA states, Australia and New Zealand.
+TOTAL_CARB_MARKETS = {"en:united-states", "en:canada"}
+AVAILABLE_CARB_MARKETS = {f"en:{c}" for c in (
+    "austria", "belgium", "bulgaria", "croatia", "cyprus", "czech-republic", "denmark", "estonia", "finland",
+    "france", "germany", "greece", "hungary", "ireland", "italy", "latvia", "lithuania", "luxembourg", "malta",
+    "netherlands", "poland", "portugal", "romania", "slovakia", "slovenia", "spain", "sweden",
+    "united-kingdom", "switzerland", "norway", "iceland", "liechtenstein", "australia", "new-zealand",
+)}
+CARBS_UNKNOWN = "carbs-regime-unknown"
 
 
 def delta_files() -> list[str]:
@@ -43,9 +57,17 @@ def _num(v) -> float | None:
     return x if x == x else None  # drop NaN
 
 
-def per_100(p: dict) -> dict[str, float]:
-    """Per-100 g/ml values. OFF's current schema has nutrition.aggregated_set; older dumps have
-    flat nutriments.<key>_100g (grams, kcal)."""
+def carbs_code(p: dict) -> str | None:
+    """CHOCDF or CHOAVL for OFF's `carbohydrates`, from the markets the product is sold in. None when
+    they do not say, or say both."""
+    markets = set(p.get("countries_tags") or [])
+    total, available = bool(markets & TOTAL_CARB_MARKETS), bool(markets & AVAILABLE_CARB_MARKETS)
+    return None if total == available else "CHOCDF" if total else "CHOAVL"
+
+
+def _parsed(p: dict) -> dict[str, float]:
+    """Per-100 g/ml values, with label carbohydrate still under "CHO". OFF's current schema has
+    nutrition.aggregated_set; older dumps have flat nutriments.<key>_100g (grams, kcal, kJ)."""
     out: dict[str, float] = {}
     agg = (p.get("nutrition") or {}).get("aggregated_set") or {}
     if agg.get("per") in ("100g", "100ml"):
@@ -54,23 +76,36 @@ def per_100(p: dict) -> dict[str, float]:
             v, unit = _num(n.get("value")), n.get("unit")
             if v is None:
                 continue
-            if tag == "ENERC_KCAL":
-                if unit == "kcal":
+            if tag in ENERGY_UNITS:
+                if unit == ENERGY_UNITS[tag]:
                     out[tag] = v
             elif unit in TO_GRAMS:
                 out[tag] = v * TO_GRAMS[unit] * (1000 if tag == "NA" else 1)
-        kj = agg.get("nutrients", {}).get("energy-kj") or {}
-        if "ENERC_KCAL" not in out and (v := _num(kj.get("value"))) is not None and kj.get("unit") == "kJ":
-            out["ENERC_KCAL"] = v / KJ_PER_KCAL  # many EU labels state kJ only
-        return out
-    flat = p.get("nutriments") or {}
-    for key, tag in NUTRIENTS.items():
-        v = _num(flat.get(f"{key}_100g"))
-        if v is not None:
-            out[tag] = v * (1000 if tag == "NA" else 1)
-    if "ENERC_KCAL" not in out and (v := _num(flat.get("energy-kj_100g"))) is not None:
-        out["ENERC_KCAL"] = v / KJ_PER_KCAL
+    else:
+        flat = p.get("nutriments") or {}
+        for key, tag in NUTRIENTS.items():
+            v = _num(flat.get(f"{key}_100g"))
+            if v is not None:
+                out[tag] = v * (1000 if tag == "NA" else 1)
+    if "ENERC_KCAL" not in out and "ENERC_KJ" in out:
+        out["ENERC_KCAL"] = out["ENERC_KJ"] / KJ_PER_KCAL  # many EU labels state kJ only
     return out
+
+
+def coded(p: dict) -> tuple[dict[str, float], list[str]]:
+    """Per-100 g/ml values under their INFOODS codes, and the flags for what was guessed. Label
+    carbohydrate goes under the code of its market (`carbs_code`), else CHOCDF with CARBS_UNKNOWN.
+    An explicit total carbohydrate is CHOCDF."""
+    out, flags = _parsed(p), []
+    if (v := out.pop("CHO", None)) is not None:
+        if (code := carbs_code(p)) is None:
+            code, flags = "CHOCDF", [CARBS_UNKNOWN]
+        out.setdefault(code, v)
+    return out, flags
+
+
+def per_100(p: dict) -> dict[str, float]:
+    return coded(p)[0]
 
 
 def basis(p: dict) -> str:
@@ -90,12 +125,13 @@ def records(lines: Iterable[bytes]):
             continue
         code = gtin.normalize(p.get("code"))
         name = (p.get("product_name") or "").strip()
-        values = per_100(p)
+        values, guessed = coded(p)
         if not code or not name or not values:
             continue
         yield ingest.Record(
             id=f"off:{code}", source="off", layer="off", licence=LICENCE, gtin14=code, name=name,
             brand=(p.get("brands") or None), lang=p.get("lang"), values=values, basis=basis(p),
+            extra_flags=guessed,
             serving_text=p.get("serving_size"), serving_g=_num(p.get("serving_quantity")),
             observed_at=datetime.fromtimestamp(int(p.get("last_modified_t") or 0), UTC),
         )

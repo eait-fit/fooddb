@@ -111,9 +111,11 @@ review routes have no API keys yet ([#10](https://github.com/eait-fit/fooddb/iss
 ## Data model
 
 Values per 100 g or per 100 ml, plus the serving size printed on the label. Nutrient codes use FAO
-INFOODS tagnames (ENERC, PROCNT, FAT, CHOAVL…). Built: the code stores `ENERC_KCAL` and `CHOCDF`
-(carbohydrate by difference), not `ENERC` and `CHOAVL`. Which set is canonical is open
-([#7](https://github.com/eait-fit/fooddb/issues/7)).
+INFOODS tagnames (ENERC, PROCNT, FAT, CHOAVL…). Each value keeps the code of the quantity that its
+source states, and no value is converted to another code. Built
+([#7](https://github.com/eait-fit/fooddb/issues/7)): carbohydrate is `CHOCDF` (by difference, with
+fibre) from FDC and US or Canadian labels, and `CHOAVL` (available, without fibre) from EU, UK,
+Australian and similar labels. Energy is `ENERC_KCAL`, plus `ENERC_KJ` when the source states kJ.
 
 ## Licences
 
