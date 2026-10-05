@@ -6,6 +6,7 @@ served as a REST API, an MCP server and a CLI.
 **Status: early prototype.** Fetchers for USDA FDC and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), and a REST API.
 
 - [docs/design.md](docs/design.md): the pipeline, the data model, sources and licences
+- [docs/architecture.md](docs/architecture.md): the parts, the deployment and the data flow as built, with diagrams
 - [docs/decisions.md](docs/decisions.md): what is settled, and what is still open
 - [docs/landscape.md](docs/landscape.md): open-source competitors, and what we build vs reuse
 - [docs/deploy.md](docs/deploy.md): self-hosting with Docker Compose: install, TLS, upgrade, backup
