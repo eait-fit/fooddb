@@ -56,12 +56,12 @@ flowchart TB
     subgraph host["Docker host"]
         caddy["Caddy on the host<br/>ports 80, 443<br/>(docs/deploy.md, not in Compose)"]
         subgraph stack["Compose project fooddb"]
-            dbc[("db<br/>postgres:17-alpine<br/>health: pg_isready")]
+            dbc[("db<br/>postgres:18-alpine<br/>health: pg_isready")]
             mig["migrate<br/>fooddb migrate<br/>restart: no"]
             apic["api<br/>fooddb serve, port 8000<br/>health: /livez"]
             wk["worker<br/>fooddb worker<br/>health check off"]
         end
-        vol[["volume fooddb_pgdata"]]
+        vol[["volume fooddb_pgdata18"]]
     end
     up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
     client -->|"HTTPS 443"| caddy
@@ -80,8 +80,8 @@ Thin arrows are network traffic. Thick arrows are the start order.
 
 [`deploy/docker-compose.yml`](../deploy/docker-compose.yml) defines four services:
 
-- `db` keeps its data in the `pgdata` volume (`deploy/docker-compose.yml:21`). Compose names it
-  `fooddb_pgdata`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
+- `db` keeps its data in the `pgdata18` volume (`deploy/docker-compose.yml:21`). Compose names it
+  `fooddb_pgdata18`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
 - `migrate` starts when `db` is healthy (`deploy/docker-compose.yml:33`). It applies the Alembic
   migrations, then the pq migrations, and stops (`cli.py:21`).
 - `api` and `worker` start only after `migrate` stops with success
