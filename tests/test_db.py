@@ -352,3 +352,57 @@ def test_mcp_tools_serve_the_api_reads_and_keep_off_layer_out_unless_asked():
     assert call("get_food", product_id=999999).is_error
     assert call("search_foods", q="h").is_error
     assert "fetchers" in call("health_report").structured_content
+
+
+class OneOffQueue:
+    """pq's one-off order: highest priority first, then oldest. An upsert on a client_id moves the
+    task to the back, as pq resets its run_at."""
+
+    def __init__(self):
+        self.tasks = {}
+
+    def schedule(self, *args, **kwargs):
+        pass
+
+    def upsert(self, fn, *, client_id, priority=50, **kwargs):  # 50 = Priority.NORMAL, pq's default
+        self.tasks.pop(client_id, None)
+        self.tasks[client_id] = (priority, fn, kwargs)
+
+    def drain(self) -> list[str]:
+        ran = []
+        while self.tasks:
+            _, fn, kwargs = self.tasks.pop(max(self.tasks, key=lambda c: self.tasks[c][0]))
+            fn(**kwargs)
+            ran.append(fn.__name__)
+        return ran
+
+
+def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
+    from fooddb import ingest, jobs
+    from fooddb.fetchers import fdc, off
+
+    q = OneOffQueue()
+    monkeypatch.setattr(jobs, "queue", lambda: q)
+    monkeypatch.setattr(fdc, "fetch", lambda dataset, force=False: ingest.run(
+        f"fdc-{dataset}", "r1", [rec(id=f"fdc:{dataset}")]))
+    deltas = iter(["d1", "d2"])
+
+    def off_fetch(max_files=1):
+        name = next(deltas)
+        foods, obs = ingest.run(off.FETCHER, name, [rec(
+            id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0", gtin14="04006381333931",
+            name="Chocolate hazelnut spread", values={"ENERC_KCAL": 539.0 if name == "d1" else 540.0})])
+        return [(name, foods, obs)]
+
+    monkeypatch.setattr(off, "fetch", off_fetch)
+
+    jobs.schedule()
+    assert q.drain() == ["fetch_fdc", "fetch_fdc", "match_products", "build_snapshot"]
+    jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
+    assert q.drain() == ["match_products", "build_snapshot"]
+    kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
+    assert (kcal["value"], kcal["source"]) == (539, "off")
+
+    jobs.fetch_off_deltas()  # later deltas wait for the nightly snapshot
+    assert q.drain() == ["match_products"]
+    assert product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]["value"] == 539

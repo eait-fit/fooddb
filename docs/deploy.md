@@ -5,7 +5,7 @@ This runbook installs fooddb on one server with Docker Compose. The stack is in
 
 | Service | What it does |
 |---|---|
-| `db` | Postgres 17. The data is in the `fooddb_pgdata` volume. |
+| `db` | Postgres 18. The data is in the `fooddb_pgdata18` volume. |
 | `migrate` | Applies the fooddb and pq migrations, then stops. It runs on every `up`. |
 | `api` | The REST API on port 8000 inside the container. |
 | `worker` | The pq job worker: fetches, matching and the nightly snapshot. |
@@ -65,9 +65,10 @@ The first boot fills the database without help. The worker does these jobs in th
 
 1. It downloads USDA FoodData Central Foundation and SR Legacy.
 2. It runs Splink matching.
-3. It builds the first snapshot.
+3. It builds the first snapshot. This snapshot has FDC values only.
 4. It downloads the newest Open Food Facts delta file.
 5. It runs Splink matching again.
+6. It builds the snapshot again. Now the snapshot has Open Food Facts values too.
 
 On a test server, `/healthz` changed to 200 after 70 seconds. On a slow network, it can take
 3 minutes. Wait for the 200:
@@ -77,15 +78,9 @@ until curl -sf -o /dev/null http://127.0.0.1:8000/healthz; do sleep 10; done
 curl -s http://127.0.0.1:8000/healthz
 ```
 
-Then build the snapshot again:
-
-```bash
-docker compose exec worker fooddb run snapshot
-```
-
-This step is necessary because the first snapshot runs before the Open Food Facts delta
-arrives. Without it, Open Food Facts products have an empty `per_100` until the nightly snapshot
-at 02:30. Issue [#2](https://github.com/eait-fit/fooddb/issues/2) removes this step.
+`/healthz` can change to 200 before steps 5 and 6 end. Until then, Open Food Facts products
+can have an empty `per_100`. The second `snapshot:` line in `docker compose logs worker` shows
+that step 6 is complete.
 
 Do a test of the API:
 
@@ -178,6 +173,11 @@ docker compose exec worker fooddb status   # row counts, the last 5 fetch runs, 
    ```bash
    docker compose up -d --build
    ```
+
+A new major version of Postgres cannot read the data of the previous one. The volume name carries
+the major version (`pgdata18`), so a new major starts with a new, empty volume. To keep your data,
+make a backup before the upgrade and restore it after. See [Back up](#back-up) and
+[Restore](#restore).
 
 The `migrate` service applies the new migrations before the `api` and `worker` services start.
 If a migration fails, `api` and `worker` do not start. Read the cause with

@@ -47,7 +47,7 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:53`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
-(`jobs.py:62`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
+(`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
 eait is not in this diagram. No code in fooddb or in eait reads the snapshot for eait yet. See
 [Planned, not built](#planned-not-built).
@@ -60,12 +60,12 @@ flowchart TB
     subgraph host["Docker host"]
         caddy["Caddy on the host<br/>ports 80, 443<br/>(docs/deploy.md, not in Compose)"]
         subgraph stack["Compose project fooddb"]
-            dbc[("db<br/>postgres:17-alpine<br/>health: pg_isready")]
+            dbc[("db<br/>postgres:18-alpine<br/>health: pg_isready")]
             mig["migrate<br/>fooddb migrate<br/>restart: no"]
             apic["api<br/>fooddb serve, port 8000<br/>health: /livez"]
             wk["worker<br/>fooddb worker<br/>health check off"]
         end
-        vol[["volume fooddb_pgdata"]]
+        vol[["volume fooddb_pgdata18"]]
     end
     up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
     client -->|"HTTPS 443"| caddy
@@ -84,8 +84,8 @@ Thin arrows are network traffic. Thick arrows are the start order.
 
 [`deploy/docker-compose.yml`](../deploy/docker-compose.yml) defines four services:
 
-- `db` keeps its data in the `pgdata` volume (`deploy/docker-compose.yml:21`). Compose names it
-  `fooddb_pgdata`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
+- `db` keeps its data in the `pgdata18` volume (`deploy/docker-compose.yml:21`). Compose names it
+  `fooddb_pgdata18`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
 - `migrate` starts when `db` is healthy (`deploy/docker-compose.yml:33`). It applies the Alembic
   migrations, then the pq migrations, and stops (`cli.py:21`).
 - `api` and `worker` start only after `migrate` stops with success
@@ -226,12 +226,13 @@ the live tables (`resolve.py:76`).
 
 | Job | Function | Trigger | Priority |
 |---|---|---|---|
-| OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:65`) | NORMAL |
-| Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:66`) | NORMAL |
-| FDC Foundation, FDC SR Legacy | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:76`) | BATCH |
+| OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:71`) | NORMAL |
+| Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:72`) | NORMAL |
+| FDC Foundation, FDC SR Legacy | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:82`) | BATCH |
 | Match | `match_products` | after a fetch that stored data (`jobs.py:57`) | NORMAL |
-| First-boot FDC | `fetch_fdc` | once, when `fetcher_check` has no row (`jobs.py:70`) | NORMAL |
-| First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:73`) | BATCH |
+| First-boot FDC | `fetch_fdc` | once, when `fetcher_check` has no row (`jobs.py:76`) | NORMAL |
+| First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:79`) | BATCH |
+| Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
 
 pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
@@ -242,7 +243,7 @@ sequenceDiagram
     participant W as Worker parent
     participant Q as Postgres
     participant C as Forked child
-    Note over W: schedule(), jobs.py:62
+    Note over W: schedule(), jobs.py:68
     W->>Q: schedule fetch_off_deltas every 6 h, next run now
     W->>Q: schedule build_snapshot, daily 02:30 UTC
     W->>Q: read fetcher_check and snapshot (health.report)
@@ -259,8 +260,10 @@ sequenceDiagram
     Note over C: No OFF data yet. The snapshot has FDC values only.
     W->>C: fork fetch_off_deltas, now due
     C->>Q: upsert match-products
+    C->>Q: upsert bootstrap-snapshot, BATCH (first OFF data)
     W->>C: fork match_products
-    Note over W,C: OFF products show an empty per_100 until the next snapshot.
+    W->>C: fork build_snapshot
+    Note over W,C: The snapshot has FDC and OFF values.
 ```
 
 The worker parent registers the schedule, then forks one child per task (`cli.py:36`). It closes
@@ -273,15 +276,18 @@ a higher priority first (pq 0.8.1 `worker.py:722`, `worker.py:792`). This rule s
 order above:
 
 1. The two FDC tasks run first. Each one queues the match task. The client id `match-products`
-   collapses the two requests into one task (`jobs.py:59`).
+   collapses the two requests into one task (`jobs.py:63`).
 2. The match task runs before the snapshot, because BATCH is the lowest priority.
 3. The first snapshot runs next. It is the last one-off task.
 4. Only then does the periodic OFF delta task run, although it was due at once.
+5. The OFF delta queues the match task and a snapshot rebuild. The match task runs first, then the
+   snapshot. Now the snapshot has OFF values.
 
-**Known gap.** The first snapshot runs before the first OFF delta. Thus OFF products have an empty
-`per_100` until the nightly snapshot at 02:30 UTC. [deploy.md](deploy.md#first-boot) tells the
-operator to run `fooddb run snapshot` once after `/healthz` returns 200. The sequence in
-deploy.md also leaves out the match task that runs after the FDC fetches.
+A fetch that stores data queues a snapshot rebuild if no snapshot is newer than the first
+successful run of that fetcher (`jobs.py:64`, `snapshot.py:34`). Thus the first data of each
+fetcher gets into a snapshot without help. Later fetches wait for the nightly snapshot. The rebuild
+uses the client id `bootstrap-snapshot`. Thus it collapses with the first-boot snapshot into one
+pending task.
 
 Each worker start registers the OFF schedule again with the next run set to now
 (pq 0.8.1 `client.py:379`). Thus a restart of the worker always checks for OFF deltas at once.
