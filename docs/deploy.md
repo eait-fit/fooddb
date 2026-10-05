@@ -202,6 +202,7 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` | `false` | `true`: reads need an API key too. See [API keys](#api-keys). |
 | `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` | `60` | Requests per minute per key, and per client IP for reads without a key. |
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
+| `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 
 After you change `deploy/.env`, apply the change:
 

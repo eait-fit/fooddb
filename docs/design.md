@@ -69,8 +69,10 @@ agent accepts or rejects each one, and the decision records who decided and when
 Chooses a winning value per field from trust rank, recency and agreement between sources. A
 verified label read outranks a crowd edit, which outranks an older table value.
 
-Built: a fixed source rank (FDC before OFF), then the newest value. Agreement and the
-crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/fooddb/issues/5)).
+Built for nutrient values: a value much older than the newest one loses (default 730 days). Then
+the value that most sources agree with wins, then the source rank, then the newest value. Label
+reads have a rank above FDC, but no fetcher writes them yet
+([#12](https://github.com/eait-fit/fooddb/issues/12)).
 
 ### Snapshot and serving
 
@@ -82,8 +84,8 @@ crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/food
   loads it.
 - Customers may store what they fetch.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
-  carries a licence tag. Built for nutrient values only
-  ([#4](https://github.com/eait-fit/fooddb/issues/4)).
+  carries a licence tag. Built: each served field, each barcode and each nutrient value has its
+  source and licence. The non-nutrient fields and the barcodes also name their source record.
 - Search uses `pg_trgm`. Known limit: short CJK names match poorly.
 
 ## Model port

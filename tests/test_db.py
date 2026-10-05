@@ -79,7 +79,7 @@ def test_api_keeps_off_layer_out_unless_asked():
     ingest.run("t", "r1", [rec(), rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
                                       gtin14="04006381333931", name="Hummus classic")])
     c = TestClient(app)
-    names = [i["name"] for i in c.get("/v1/foods", params={"q": "hummus"}).json()["items"]]
+    names = [i["name"]["value"] for i in c.get("/v1/foods", params={"q": "hummus"}).json()["items"]]
     assert names == ["Hummus, commercial"]
     assert c.get("/v1/products/4006381333931").status_code == 404
     item = c.get("/v1/products/4006381333931", params={"include": "off"}).json()["items"][0]
@@ -115,7 +115,7 @@ def test_older_record_does_not_roll_food_back():
     ingest.run("t", "old", [rec(name="Hummus, old recipe", observed_at=datetime(2026, 1, 1, tzinfo=UTC),
                                 values={"ENERC_KCAL": 100.0, "PROCNT": 1.0})])
     p = product("fdc:1")
-    assert p["name"] == "Hummus, new recipe"
+    assert p["name"]["value"] == "Hummus, new recipe"
     assert p["per_100"]["ENERC_KCAL"]["value"] == 229
 
 
@@ -229,6 +229,60 @@ def test_matching_joins_a_barcode_across_sources_and_the_trusted_source_wins():
     assert p["per_100"]["ENERC_KCAL"]["source"] == "fdc"  # USDA outranks OFF
     # Without include=off the same product answers from core only.
     assert product("fdc:9")["records"] == ["fdc:9"]
+
+
+def acme_hummus_in_both_layers() -> str:
+    from fooddb import ingest, jobs
+
+    code = "04006381333931"
+    ingest.run("t", "r1", [
+        rec(id="off:" + code, source="off", layer="off", licence="ODbL-1.0", gtin14=code, name="Hummus Classic",
+            brand="Acme", lang="de", serving_text="2 EL (30 g)", serving_g=30.0,
+            values=HUMMUS | {"ENERC_KCAL": 240.0, "FIBTG": 6.0}),
+        rec(id="fdc:9", gtin14=code, name="ACME, HUMMUS CLASSIC", brand="Acme", values=HUMMUS),
+    ])
+    jobs.match_products()
+    return code
+
+
+FIELDS = ("name", "brand", "lang", "serving_text", "serving_g", "flags")
+
+
+def test_every_served_field_carries_the_source_licence_and_record_it_came_from():
+    from fooddb import ingest
+
+    code = acme_hummus_in_both_layers()
+    fdc = {"source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"}
+    for include in (None, "off"):
+        p = product("fdc:9", include)
+        assert p["name"] == {"value": "ACME, HUMMUS CLASSIC"} | fdc
+        assert p["brand"] == {"value": "Acme"} | fdc
+        assert p["flags"] == {"value": []} | fdc
+        assert p["lang"] is p["serving_text"] is p["serving_g"] is None  # fdc:9 has none: nothing to tag
+        assert p["gtin14"] == [{"value": code} | fdc]  # both records carry it: the trusted one tags it
+        assert all({"source", "licence"} <= v.keys() for v in p["per_100"].values())
+    ingest.run("t", "r2", [rec(id="off:03256220000017", source="off", layer="off", licence="ODbL-1.0",
+                               gtin14="03256220000017", name="Pomme Pêche", lang="fr", serving_text="1 gourde",
+                               serving_g=90.0, extra_flags=["off-flag"], values={"ENERC_KCAL": 45.0})])
+    off = {"source": "off", "licence": "ODbL-1.0", "record": "off:03256220000017"}
+    p = product("off:03256220000017", "off")
+    assert float(p["serving_g"].pop("value")) == 90 and p["serving_g"] == off
+    assert {f: p[f] for f in FIELDS if f != "serving_g"} == {
+        "name": {"value": "Pomme Pêche"} | off, "brand": None, "lang": {"value": "fr"} | off,
+        "serving_text": {"value": "1 gourde"} | off, "flags": {"value": ["off-flag"]} | off}
+    assert p["gtin14"] == [{"value": "03256220000017"} | off]
+
+
+def test_a_core_response_carries_nothing_from_the_off_layer(monkeypatch):
+    acme_hummus_in_both_layers()
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        core = client().get("/v1/records/fdc:9")
+        assert core.status_code == 200
+        assert "ODbL" not in core.text and "off:" not in core.text and "30 g" not in core.text
+        assert core.json()["records"] == ["fdc:9"] and "FIBTG" not in core.json()["per_100"]
+        assert "ODbL" in client().get("/v1/records/fdc:9", params={"include": "off"}).text
 
 
 def test_matching_keeps_variants_with_different_barcodes_or_salt_apart():
@@ -402,7 +456,8 @@ def test_mcp_tools_serve_the_api_reads_and_keep_off_layer_out_unless_asked():
     ingest.run("t", "r1", [rec(), rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
                                       gtin14="04006381333931", name="Hummus classic")])
     found = call("search_foods", q="hummus").structured_content["items"]
-    assert [i["name"] for i in found] == ["Hummus, commercial"]
+    assert [i["name"]["value"] for i in found] == ["Hummus, commercial"]
+    assert found[0]["name"]["licence"] == "CC0-1.0"
     assert found[0]["per_100"]["ENERC_KCAL"]["licence"] == "CC0-1.0"
 
     core = call("get_product_by_barcode", barcode="4006381333931")
@@ -570,3 +625,75 @@ def test_admin_lists_pending_values_and_accepts_them():
     with engine().connect() as conn:
         row = conn.execute(text("select status, reviewed_by from observation where id = :id"), {"id": obs}).one()
     assert tuple(row) == ("accepted", "kirill")
+
+
+def merge(*record_ids: str) -> None:
+    """Put records in one product the way the match job does: the lowest product id survives."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().begin() as conn:
+        pids = sorted(set(conn.execute(text("select product_id from food where id = any(:ids)"),
+                                       {"ids": list(record_ids)}).scalars()))
+        conn.execute(text("update food set product_id = :s where product_id = any(:o)"), {"s": pids[0], "o": pids[1:]})
+        conn.execute(text("update product set merged_into = :s where id = any(:o)"), {"s": pids[0], "o": pids[1:]})
+
+
+def served(record_id: str, include: str | None = None) -> tuple[float, str]:
+    v = product(record_id, include)["per_100"]["ENERC_KCAL"]
+    return v["value"], v["source"]
+
+
+def kcal_record(id: str, source: str, value: float, year: int):
+    return rec(id=id, source=source, layer="off" if source == "off" else "core",
+               licence="ODbL-1.0" if source == "off" else "CC0-1.0",
+               observed_at=datetime(year, 1, 1, tzinfo=UTC), values={"ENERC_KCAL": value})
+
+
+def test_a_crowd_value_much_newer_than_a_table_value_wins(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [
+        kcal_record("fdc:1", "fdc", 229.0, 2018), kcal_record("off:1", "off", 260.0, 2026),  # 8 years apart
+        kcal_record("fdc:2", "fdc", 229.0, 2025), kcal_record("off:2", "off", 260.0, 2026),  # 1 year apart
+    ])
+    merge("fdc:1", "off:1")
+    merge("fdc:2", "off:2")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        assert served("fdc:1", "off") == (260, "off")
+        assert served("fdc:2", "off") == (229, "fdc")  # within the window, rank wins
+        assert served("fdc:1") == (229, "fdc")  # the core scope has no crowd value
+
+
+def test_sources_that_agree_outvote_a_lone_outlier_of_higher_rank(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [
+        kcal_record("label:1", "label", 300.0, 2026),
+        kcal_record("fdc:1", "fdc", 229.0, 2026),
+        kcal_record("off:1", "off", 233.0, 2026),  # within 5% of fdc:1
+        kcal_record("fdc:2", "fdc", 229.0, 2026),
+        kcal_record("off:2", "off", 300.0, 2026),
+        kcal_record("off:3", "off", 301.0, 2026),  # two records of one source are one vote
+    ])
+    merge("label:1", "fdc:1", "off:1")
+    merge("fdc:2", "off:2", "off:3")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        assert served("fdc:1", "off") == (229, "fdc")  # fdc and off agree; the label read is alone
+        assert served("fdc:1") == (300, "label")  # core only: no agreement, rank wins
+        assert served("fdc:2", "off") == (229, "fdc")
+
+
+def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rule(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [kcal_record("fdc:1", "fdc", 229.0, 2018), kcal_record("off:1", "off", 260.0, 2026)])
+    build_on(monkeypatch, "2026-10-01")
+    assert served("fdc:1", "off") == (229, "fdc")  # separate products at build time
+    merge("fdc:1", "off:1")
+    assert served("fdc:1", "off") == served("off:1", "off") == (260, "off")

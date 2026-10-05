@@ -40,6 +40,33 @@ curl -X POST "$(./dev url)/v1/review/42" -H "Authorization: Bearer $KEY" -H 'con
      -d '{"decision": "reject", "by": "kirill", "note": "10x typo"}'
 ```
 
+Every served field carries its `source`, its `licence` and the source `record` it comes from. A
+product from `/v1/records/fdc:9?include=off`, shortened:
+
+```json
+{
+  "id": 1,
+  "records": ["fdc:9", "off:04006381333931"],
+  "gtin14": [{"value": "04006381333931", "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"}],
+  "snapshot": "2026-10-04",
+  "name": {"value": "ACME, HUMMUS CLASSIC", "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"},
+  "brand": {"value": "Acme", "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"},
+  "lang": null,
+  "serving_text": null,
+  "serving_g": null,
+  "flags": {"value": [], "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"},
+  "per_100": {
+    "ENERC_KCAL": {"value": 229.0, "unit": "kcal", "basis": "100g", "source": "fdc",
+                   "licence": "CC0-1.0", "observed_at": "2026-01-01T00:00:00Z"},
+    "FIBTG": {"value": 6.0, "unit": "g", "basis": "100g", "source": "off",
+              "licence": "ODbL-1.0", "observed_at": "2026-01-01T00:00:00Z"}
+  }
+}
+```
+
+A field is `null` when the record that names the product has no value for it. Without
+`include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
+
 The review queue is also in a browser at `$(./dev url)/admin`. Log in with an `admin` key in the
 password field. `/admin` needs `FOODDB__BACKEND__SECRET_KEY`, which signs its login cookie.
 
@@ -66,7 +93,7 @@ RapidAPI, a request with the listing's `X-RapidAPI-Proxy-Secret`
 The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
 `search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`,
 plus the review tools `review_queue` and `decide_review`.
-Each value carries its licence tag. OFF data comes back only with `include_off: true`.
+Each field carries its licence tag, as in REST. OFF data comes back only with `include_off: true`.
 
 Two transports:
 
@@ -116,7 +143,7 @@ does not call the per-product endpoints. Customers may store what they fetch.
    product count and `final`. A day is final when it is over (UTC). Today's snapshot can still be
    rebuilt, so sync only from a day where `final` is `true`.
 2. **Export the day.** `GET /v1/snapshots/{day}/export` returns NDJSON: one product per line, in
-   the same shape as `GET /v1/foods/{id}?snapshot={day}`, with a licence tag on each value. The
+   the same shape as `GET /v1/foods/{id}?snapshot={day}`, with a licence tag on each field. The
    OFF layer (ODbL) is in the export only with `include=off`. Send `Accept-Encoding: gzip` for a
    gzipped body.
 3. **Skip an unchanged day.** Keep the `ETag`. Send it back in `If-None-Match`, and the API

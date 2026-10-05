@@ -16,6 +16,7 @@ x-app: &app
     # The API port is published on loopback only, so every peer is the reverse proxy: trust its
     # X-Forwarded-For, or the per-IP rate limit sees one client.
     FOODDB__BACKEND__FORWARDED_ALLOW_IPS: "*"
+    FOODDB__BACKEND__STALE_AFTER_DAYS: ${FOODDB__BACKEND__STALE_AFTER_DAYS:-730}
 
 services:
   db:
