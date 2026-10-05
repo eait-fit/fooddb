@@ -29,3 +29,12 @@ def build(day: date | None = None) -> int:
         conn.execute(text("update snapshot set products = :n where day = :d"), {"n": n, "d": day})
         conn.execute(text("delete from snapshot where day < :cutoff"), {"cutoff": day - timedelta(days=KEEP_DAYS)})
     return n
+
+
+def predates(fetcher: str) -> bool:
+    """True while no snapshot was built after the fetcher's first successful run."""
+    with engine().connect() as conn:
+        return conn.execute(text("""
+            select 1 from snapshot where built_at > (
+                select min(finished_at) from fetch_run where fetcher = :f and status = 'done')
+        """), {"f": fetcher}).first() is None
