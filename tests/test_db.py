@@ -615,3 +615,75 @@ def test_admin_lists_pending_values_and_accepts_them():
     with engine().connect() as conn:
         row = conn.execute(text("select status, reviewed_by from observation where id = :id"), {"id": obs}).one()
     assert tuple(row) == ("accepted", "admin")
+
+
+def merge(*record_ids: str) -> None:
+    """Put records in one product the way the match job does: the lowest product id survives."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().begin() as conn:
+        pids = sorted(set(conn.execute(text("select product_id from food where id = any(:ids)"),
+                                       {"ids": list(record_ids)}).scalars()))
+        conn.execute(text("update food set product_id = :s where product_id = any(:o)"), {"s": pids[0], "o": pids[1:]})
+        conn.execute(text("update product set merged_into = :s where id = any(:o)"), {"s": pids[0], "o": pids[1:]})
+
+
+def served(record_id: str, include: str | None = None) -> tuple[float, str]:
+    v = product(record_id, include)["per_100"]["ENERC_KCAL"]
+    return v["value"], v["source"]
+
+
+def kcal_record(id: str, source: str, value: float, year: int):
+    return rec(id=id, source=source, layer="off" if source == "off" else "core",
+               licence="ODbL-1.0" if source == "off" else "CC0-1.0",
+               observed_at=datetime(year, 1, 1, tzinfo=UTC), values={"ENERC_KCAL": value})
+
+
+def test_a_crowd_value_much_newer_than_a_table_value_wins(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [
+        kcal_record("fdc:1", "fdc", 229.0, 2018), kcal_record("off:1", "off", 260.0, 2026),  # 8 years apart
+        kcal_record("fdc:2", "fdc", 229.0, 2025), kcal_record("off:2", "off", 260.0, 2026),  # 1 year apart
+    ])
+    merge("fdc:1", "off:1")
+    merge("fdc:2", "off:2")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        assert served("fdc:1", "off") == (260, "off")
+        assert served("fdc:2", "off") == (229, "fdc")  # within the window, rank wins
+        assert served("fdc:1") == (229, "fdc")  # the core scope has no crowd value
+
+
+def test_sources_that_agree_outvote_a_lone_outlier_of_higher_rank(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [
+        kcal_record("label:1", "label", 300.0, 2026),
+        kcal_record("fdc:1", "fdc", 229.0, 2026),
+        kcal_record("off:1", "off", 233.0, 2026),  # within 5% of fdc:1
+        kcal_record("fdc:2", "fdc", 229.0, 2026),
+        kcal_record("off:2", "off", 300.0, 2026),
+        kcal_record("off:3", "off", 301.0, 2026),  # two records of one source are one vote
+    ])
+    merge("label:1", "fdc:1", "off:1")
+    merge("fdc:2", "off:2", "off:3")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        assert served("fdc:1", "off") == (229, "fdc")  # fdc and off agree; the label read is alone
+        assert served("fdc:1") == (300, "label")  # core only: no agreement, rank wins
+        assert served("fdc:2", "off") == (229, "fdc")
+
+
+def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rule(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [kcal_record("fdc:1", "fdc", 229.0, 2018), kcal_record("off:1", "off", 260.0, 2026)])
+    build_on(monkeypatch, "2026-10-01")
+    assert served("fdc:1", "off") == (229, "fdc")  # separate products at build time
+    merge("fdc:1", "off:1")
+    assert served("fdc:1", "off") == served("off:1", "off") == (260, "off")

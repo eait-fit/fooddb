@@ -138,6 +138,7 @@ All the settings are in `deploy/.env`:
 | `FOODDB__DEPLOY__BIND` | `127.0.0.1` | The host address where Compose publishes the API port. |
 | `FOODDB__DEPLOY__PORT` | `8000` | The host port of the API. |
 | `FOODDB__BACKEND__MATCH_THRESHOLD` | `0.95` | The Splink match probability that merges two products. |
+| `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 
 After you change `deploy/.env`, apply the change:
 
