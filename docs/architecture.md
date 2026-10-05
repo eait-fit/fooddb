@@ -53,7 +53,7 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   creates, lists and revokes API keys (`cli.py:128`).
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
-`CC0-1.0` for FDC (`fetchers/fdc.py:53`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
+`CC0-1.0` for FDC (`fetchers/fdc.py:54`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
 (`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
@@ -148,25 +148,44 @@ flowchart TD
 
 Both fetchers read their source as a stream.
 
-- The FDC fetcher finds the newest release on the FDC download page (`fetchers/fdc.py:29`). It
-  writes the zip to a tempfile, then loads the JSON file into memory (`fetchers/fdc.py:64`,
-  `fetchers/fdc.py:72`). The two datasets are small, so this is acceptable.
+- The FDC fetcher finds the newest release on the FDC download page (`fetchers/fdc.py:30`). It
+  writes the zip to a tempfile, then loads the JSON file into memory (`fetchers/fdc.py:65`,
+  `fetchers/fdc.py:73`). The two datasets are small, so this is acceptable.
 - The OFF fetcher decompresses each `.gz` file as it arrives and yields one line at a time
-  (`fetchers/off.py:111`). The file never goes to disk. A delta file and the 13 GB dump use the
-  same path (`fetchers/off.py:126`).
+  (`fetchers/off.py:147`). The file never goes to disk. A delta file and the 13 GB dump use the
+  same path (`fetchers/off.py:162`).
 - The delta fetcher takes every file in the OFF index that is not done yet. On the first run it
-  takes only the newest file (`fetchers/off.py:132`).
+  takes only the newest file (`fetchers/off.py:168`).
 
 ### Normalise
 
 - `gtin.normalize` stores each barcode as a GTIN-14 with a valid check digit. It rejects
   restricted-circulation and coupon prefixes: 02, 04, 05, 20–29, 98 and 99 (`gtin.py:3`). An OFF
-  product without a valid global GTIN is skipped (`fetchers/off.py:94`).
-- Nutrients use INFOODS tagnames: `ENERC_KCAL`, `PROCNT`, `FAT`, `CHOCDF`, `SUGAR`, `FASAT`,
-  `FIBTG` and `NA` (`fetchers/off.py:22`, `fetchers/fdc.py:22`).
-- Units are kcal for energy, mg for sodium and g for all other nutrients (`ingest.py:14`). The OFF
-  fetcher converts kJ-only energy to kcal (`fetchers/off.py:63`).
-- Each value records its basis, `100g` or `100ml` (`fetchers/off.py:76`).
+  product without a valid global GTIN is skipped (`fetchers/off.py:129`).
+- Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
+  `SUGAR`, `FASAT`, `FIBTG` and `NA` (`fetchers/off.py:23`, `fetchers/fdc.py:23`).
+- Each value keeps the code of the quantity that the source states. The code converts no value
+  from one code to another, except kJ to kcal (below).
+- Carbohydrate has two codes. `CHOCDF` is carbohydrate by difference, with fibre. `CHOAVL` is
+  available carbohydrate, without fibre. FDC nutrient 1005 is `CHOCDF`. FDC has no available
+  carbohydrate.
+- OFF's `carbohydrates` is the value on the label. `carbs_code` takes its code from the product's
+  `countries_tags` (`fetchers/off.py:60`):
+
+  | Markets in `countries_tags` | Code | Flag |
+  |---|---|---|
+  | US or Canada only | `CHOCDF` | none |
+  | EU, UK, Switzerland, Norway, Iceland, Liechtenstein, Australia or New Zealand only | `CHOAVL` | none |
+  | both groups, or neither | `CHOCDF` | `carbs-regime-unknown` in `food.flags` |
+
+  OFF's `carbohydrates-total` (fibre included) is always `CHOCDF`.
+- Units are kcal and kJ for energy, mg for sodium and g for all other nutrients (`ingest.py:14`).
+  `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
+  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062). When the label states kJ only, the OFF fetcher
+  converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
+- The match job compares carbohydrate as `CHOCDF` only (`match.py:29`). A record with `CHOAVL` has
+  no carbohydrate for matching, and a missing field neither helps nor hurts a match.
+- Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`).
 - Record ids have the form `<source>:<code>`, for example `fdc:168421` or `off:<gtin14>`.
 
 ### Store observations
@@ -189,16 +208,21 @@ a review decision: it moves a `pending` observation to `accepted` or `rejected`,
 
 ### Checks and review status
 
-`checks.flags` runs five checks per record (`checks.py:8`). Each failed check names the fields that
+`checks.flags` runs five checks per record (`checks.py:6`). Each failed check names the fields that
 it implicates:
 
 | Check | Implicated fields |
 |---|---|
-| `energy-mismatch`: Atwater energy against the macros | `ENERC_KCAL`, `PROCNT`, `FAT`, `CHOCDF` |
+| `energy-mismatch`: Atwater energy against the macros | `ENERC_KCAL`, `PROCNT`, `FAT`, the carbohydrate code, and `FIBTG` when it is used |
 | `macros-over-100g`: protein, fat and carbohydrate over 100 g | the macros that the record has |
-| `sugars-over-carbs` | `SUGAR`, `CHOCDF` |
+| `sugars-over-carbs` | `SUGAR`, the carbohydrate code |
 | `saturates-over-fat` | `FASAT`, `FAT` |
 | `negative-value` | each negative field |
+
+The carbohydrate code is `CHOAVL` when the record has it, else `CHOCDF`. Atwater is
+4 × protein + 9 × fat + 4 × carbohydrate. With `CHOAVL`, it adds 2 × fibre when `FIBTG` is present,
+because available carbohydrate does not contain fibre. 2 kcal/g is the fibre factor of EU
+Regulation 1169/2011, Annex XIV. With `CHOCDF`, fibre is already in the carbohydrate.
 
 The checks flag values, but they do not change them.
 
@@ -263,7 +287,8 @@ The resolver picks one value per product and nutrient (`resolve.py:24`):
    2. **Agreement.** The value that the most distinct sources agree with wins. Two values agree
       when they differ by 5 % or less, or by 0.5 or less in the unit of the nutrient
       (`resolve.py:20`). Two records of one source count as one source. Thus `fdc` and `off`
-      that agree outvote a `label` value that is alone.
+      that agree outvote a `label` value that is alone. Only values of one nutrient code are
+      compared. A `CHOAVL` value is not a vote for or against a `CHOCDF` value.
    3. **Trust rank.** `brand`, then `label`, then `fdc`, then `off` (`resolve.py:17`).
    4. **Newest value**, then the smallest value, so that the result is always the same.
 
@@ -371,7 +396,7 @@ Each worker start registers the OFF schedule again with the next run set to now
 
 The full OFF dump takes hours, which is more than the task limit. Run it with `fooddb run off-dump`
 in its own container ([deploy.md](deploy.md#load-the-full-open-food-facts-dump)). It loads a dump
-only once per `Last-Modified` value of the file (`fetchers/off.py:159`).
+only once per `Last-Modified` value of the file (`fetchers/off.py:195`).
 
 ## Database schema
 

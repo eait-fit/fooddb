@@ -64,6 +64,14 @@ product from `/v1/records/fdc:9?include=off`, shortened:
 }
 ```
 
+Nutrients in `per_100` use INFOODS codes: `ENERC_KCAL` (kcal), `ENERC_KJ` (kJ, when the source
+states it), `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`, `SUGAR`, `FASAT`, `FIBTG` (g) and `NA` (mg). The two
+carbohydrate codes are different quantities, and a product can have both. `CHOCDF` is
+carbohydrate by difference, with fibre: USDA FDC and US or Canadian labels. `CHOAVL` is available
+carbohydrate, without fibre: EU, UK, Australian and similar labels. fooddb never converts one into
+the other. An Open Food Facts value whose label market is unknown is `CHOCDF`, and the record has
+the flag `carbs-regime-unknown`.
+
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
 

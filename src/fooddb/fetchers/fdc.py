@@ -19,9 +19,10 @@ DATASETS = {
 }
 
 # FDC nutrient id → INFOODS tagname. Energy: 1008 when present, else Atwater general (2047).
+# 1005 is carbohydrate by difference, fibre included. FDC reports no available carbohydrate.
 NUTRIENTS = {
     1003: "PROCNT", 1004: "FAT", 1005: "CHOCDF", 2000: "SUGAR",
-    1258: "FASAT", 1079: "FIBTG", 1093: "NA",
+    1258: "FASAT", 1079: "FIBTG", 1093: "NA", 1062: "ENERC_KJ",
 }
 ENERGY = (1008, 2047)
 
