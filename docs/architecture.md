@@ -255,7 +255,7 @@ The resolver picks one value per product and nutrient (`resolve.py:17`):
 3. Across records, the most trusted source wins: `brand`, then `label`, then `fdc`, then `off`
    (`resolve.py:15`). The newest value breaks a tie.
 
-The `include=off` parameter adds the `off` layer to the query (`resolve.py:62`). Without it, OFF
+The `include=off` parameter adds the `off` layer to the query (`resolve.py:72`). Without it, OFF
 values do not take part.
 
 ### Snapshot
@@ -270,9 +270,10 @@ today. Thus a pin on today can change during the day, but a pin on an earlier da
 deletes days that are more than 30 days older than the new day (`snapshot.py:34`).
 
 The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
-(`resolve.py:92`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:96`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:86`).
+(`resolve.py:102`). Before the first snapshot exists, the API resolves values live
+(`resolve.py:106`). The snapshot holds only values. Record lists, names and merges always come from
+the live tables (`resolve.py:96`). Each of these fields carries the record that it is read from,
+so its licence tag is correct for the record that is served now.
 
 `snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
 the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
@@ -500,21 +501,32 @@ sequenceDiagram
 
 1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
 2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:62`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:66`). A
+   Without `include=off`, only the `core` layer is visible (`resolve.py:72`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:76`). A
    merged-away id thus answers as its survivor, with the survivor's id.
 4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:93`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:95`). The most
-   trusted, newest record gives the name, brand and serving (`resolve.py:101`).
+   (`resolve.py:103`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
+5. It reads the records of each product from the live `food` table (`resolve.py:105`). The most
+   trusted, newest record gives the name, brand, language, serving and flags (`resolve.py:114`).
+   Each barcode is tagged with the most trusted record that has it (`resolve.py:117`).
 6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:90`). The values include those of every product merged
+   `include=off`, else `core` (`resolve.py:100`). The values include those of every product merged
    into this one after the build (`resolve.py:37`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
    (`api.py:85`).
 
-A value in `per_100` carries its `source`, `licence`, `basis` and `observed_at`
-(`resolve.py:109`). The response field `snapshot` shows the day that the values come from.
+The product shape (API version 0.3.0):
+
+| Field | Shape |
+|---|---|
+| `id`, `snapshot` | fooddb's own: the product id, and the day that the values come from |
+| `records` | the ids of the visible source records |
+| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:65`) |
+| `gtin14` | a list of `{value, source, licence, record}`, one per barcode |
+| `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` (`resolve.py:118`) |
+
+Without `include=off`, only `core` records are read. Thus no field of a core response comes from
+the OFF layer, and no ODbL tag is in it.
 
 The other read endpoints use the same `resolve.products` call:
 

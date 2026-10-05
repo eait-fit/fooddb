@@ -81,6 +81,9 @@ def test_export_keeps_the_off_layer_out_unless_asked(monkeypatch):
     assert sorted(r for p in both for r in p["records"]) == ["fdc:1", "off:04006381333931"]
     licences = {v["licence"] for p in both for v in p["per_100"].values()}
     assert licences == {"CC0-1.0", "ODbL-1.0"}
+    assert {(p["name"]["record"], p["name"]["licence"], p["gtin14"][0]["licence"] if p["gtin14"] else None)
+            for p in both} == {("fdc:1", "CC0-1.0", None), ("off:04006381333931", "ODbL-1.0", "ODbL-1.0")}
+    assert "ODbL" not in client().get("/v1/snapshots/2026-10-01/export").text
 
 
 def test_export_etag_is_stable_for_a_final_day_and_gzip_on_request(monkeypatch):

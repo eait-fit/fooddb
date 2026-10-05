@@ -59,6 +59,16 @@ order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls l
 """
 
 
+FIELDS = ("name", "brand", "lang", "serving_text", "serving_g")
+
+
+def tagged(record, value) -> dict | None:
+    """A served field: its value with the source, licence and record it came from."""
+    if value is None:
+        return None
+    return {"value": value, "source": record["source"], "licence": record["licence"], "record": record["id"]}
+
+
 def layers_for(include: str | None) -> list[str]:
     return ["core", "off"] if include == "off" else ["core"]
 
@@ -101,11 +111,10 @@ def products(pids: list[int], include: str | None, snapshot: date | None = None,
         p = by_pid.setdefault(r["product_id"], {"id": r["product_id"], "records": [], "gtin14": [],
                                                 "snapshot": day.isoformat() if day else None})
         if not p["records"]:  # the most trusted, newest record names the product
-            p.update(name=r["name"], brand=r["brand"], lang=r["lang"], serving_text=r["serving_text"],
-                     serving_g=r["serving_g"], flags=list(r["flags"]), per_100={})
+            p.update({f: tagged(r, r[f]) for f in FIELDS}, flags=tagged(r, list(r["flags"])), per_100={})
         p["records"].append(r["id"])
-        if r["gtin14"] and r["gtin14"] not in p["gtin14"]:
-            p["gtin14"].append(r["gtin14"])
+        if r["gtin14"] and r["gtin14"] not in [g["value"] for g in p["gtin14"]]:
+            p["gtin14"].append(tagged(r, r["gtin14"]))
     for v in values:
         if v["product_id"] in by_pid:
             by_pid[v["product_id"]]["per_100"][v["nutrient"]] = {
