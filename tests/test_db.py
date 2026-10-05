@@ -319,6 +319,41 @@ def test_health_reports_stale_and_fresh_fetchers():
     assert r.status_code == 503 and "fetchers" in r.json()
 
 
+def call(tool: str, **args):
+    import anyio
+    from mcp import Client
+
+    from fooddb.api import mcp
+
+    async def go():
+        async with Client(mcp) as c:
+            return await c.call_tool(tool, args)
+
+    return anyio.run(go)
+
+
+def test_mcp_tools_serve_the_api_reads_and_keep_off_layer_out_unless_asked():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(), rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
+                                      gtin14="04006381333931", name="Hummus classic")])
+    found = call("search_foods", q="hummus").structured_content["items"]
+    assert [i["name"] for i in found] == ["Hummus, commercial"]
+    assert found[0]["per_100"]["ENERC_KCAL"]["licence"] == "CC0-1.0"
+
+    core = call("get_product_by_barcode", barcode="4006381333931")
+    assert core.is_error and "not found in core" in core.content[0].text
+    item = call("get_product_by_barcode", barcode="4006381333931", include_off=True).structured_content["items"][0]
+    assert item["per_100"]["ENERC_KCAL"]["licence"] == "ODbL-1.0"
+    assert call("get_product_by_barcode", barcode="123").is_error
+
+    p = call("get_record_product", record_id="fdc:1").structured_content
+    assert call("get_food", product_id=p["id"]).structured_content["records"] == ["fdc:1"]
+    assert call("get_food", product_id=999999).is_error
+    assert call("search_foods", q="h").is_error
+    assert "fetchers" in call("health_report").structured_content
+
+
 class OneOffQueue:
     """pq's one-off order: highest priority first, then oldest. An upsert on a client_id moves the
     task to the back, as pq resets its run_at."""

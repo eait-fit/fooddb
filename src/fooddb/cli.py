@@ -1,4 +1,4 @@
-"""fooddb CLI: migrate, run the worker and the API, enqueue fetches, look things up."""
+"""fooddb CLI: migrate, run the worker, the API and the MCP server, enqueue fetches, look things up."""
 
 import json
 from pathlib import Path
@@ -50,6 +50,14 @@ def serve(port: int = typer.Option(None, help="default: $FOODDB__BACKEND__API_PO
     port = port or int(os.environ.get("FOODDB__BACKEND__API_PORT", "9640"))
     host = os.environ.get("FOODDB__BACKEND__API_HOST", "127.0.0.1")  # 0.0.0.0 inside a container
     uvicorn.run("fooddb.api:app", host=host, port=port, reload=reload, proxy_headers=True)
+
+
+@app.command()
+def mcp() -> None:
+    """Run the MCP server on stdio, for a local MCP client (Claude Desktop, Claude Code)."""
+    from fooddb.api import mcp as server
+
+    server.run("stdio")
 
 
 @app.command()

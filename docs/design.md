@@ -19,9 +19,8 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
 **Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
-resolver, the nightly snapshot and REST. The checks run before the insert and set each value's
-status. **Not built:** human review ([#3](https://github.com/eait-fit/fooddb/issues/3)), MCP
-([#9](https://github.com/eait-fit/fooddb/issues/9)), lanes 3 and 4, and the label-photo loop.
+resolver, the nightly snapshot, REST and MCP. The checks run before the insert and set each value's
+status. **Not built:** human review ([#3](https://github.com/eait-fit/fooddb/issues/3)), lanes 3 and 4, and the label-photo loop.
 
 ### Intake lanes
 
@@ -97,9 +96,10 @@ Not built: [#12](https://github.com/eait-fit/fooddb/issues/12).
 
 Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI listing), SQLAlchemy
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
-process. The review UI is SQLAdmin plus one custom page. Built: everything except the MCP SDK
-([#9](https://github.com/eait-fit/fooddb/issues/9)) and the review UI
-([#3](https://github.com/eait-fit/fooddb/issues/3)).
+process. The review UI is SQLAdmin plus one custom page. Built: everything except the review UI
+([#3](https://github.com/eait-fit/fooddb/issues/3)). The MCP server has read tools only, over stdio
+(`fooddb mcp`) and Streamable HTTP at `/mcp`, without API keys
+([#10](https://github.com/eait-fit/fooddb/issues/10)).
 
 ## Data model
 
