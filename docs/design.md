@@ -69,8 +69,10 @@ agent accepts or rejects each one, and the decision records who decided and when
 Chooses a winning value per field from trust rank, recency and agreement between sources. A
 verified label read outranks a crowd edit, which outranks an older table value.
 
-Built: a fixed source rank (FDC before OFF), then the newest value. Agreement and the
-crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/fooddb/issues/5)).
+Built for nutrient values: a value much older than the newest one loses (default 730 days). Then
+the value that most sources agree with wins, then the source rank, then the newest value. Label
+reads have a rank above FDC, but no fetcher writes them yet
+([#12](https://github.com/eait-fit/fooddb/issues/12)).
 
 ### Snapshot and serving
 

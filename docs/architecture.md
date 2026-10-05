@@ -202,7 +202,7 @@ The checks flag values, but they do not change them.
 
 A new observation of an implicated field gets the status `pending`. All other new observations of
 the record get `accepted` (`ingest.py:154`). The resolver and the match job read only `accepted`
-observations (`resolve.py:24`, `match.py:35`). Thus the last accepted value of a held field stays
+observations (`resolve.py:57`, `match.py:35`). Thus the last accepted value of a held field stays
 in service. The [review loop](#review) moves each pending value out.
 
 ### Review
@@ -248,14 +248,27 @@ survives. The other products get `merged_into`, and their `food` rows move to th
 
 ### Resolve
 
-The resolver picks one value per product and nutrient (`resolve.py:17`):
+The resolver picks one value per product and nutrient (`resolve.py:24`):
 
 1. Per source record, it takes the newest accepted observation of each nutrient.
 2. It drops the nulls. A withdrawn field thus falls back to the other records of the product.
-3. Across records, the most trusted source wins: `brand`, then `label`, then `fdc`, then `off`
-   (`resolve.py:15`). The newest value breaks a tie.
+3. Across records, `pick_sql` picks the winner (`resolve.py:24`). It compares the candidates in
+   this order, and the first difference decides:
+   1. **Recency.** A value that is older than the newest candidate by more than
+      `FOODDB__BACKEND__STALE_AFTER_DAYS` (default 730) loses to the fresher ones. Thus a new OFF
+      value wins over an FDC value from many years earlier.
+   2. **Agreement.** The value that the most distinct sources agree with wins. Two values agree
+      when they differ by 5 % or less, or by 0.5 or less in the unit of the nutrient
+      (`resolve.py:20`). Two records of one source count as one source. Thus `fdc` and `off`
+      that agree outvote a `label` value that is alone.
+   3. **Trust rank.** `brand`, then `label`, then `fdc`, then `off` (`resolve.py:17`).
+   4. **Newest value**, then the smallest value, so that the result is always the same.
 
-The `include=off` parameter adds the `off` layer to the query (`resolve.py:72`). Without it, OFF
+The live read, the snapshot build and the merge-follow of the snapshot read all use `pick_sql`.
+Thus the rule has one definition. The rule applies to nutrient values only. The name, brand and
+the other record fields come from the most trusted, newest record.
+
+The `include=off` parameter adds the `off` layer to the query (`resolve.py:103`). Without it, OFF
 values do not take part.
 
 ### Snapshot
@@ -270,16 +283,17 @@ today. Thus a pin on today can change during the day, but a pin on an earlier da
 deletes days that are more than 30 days older than the new day (`snapshot.py:34`).
 
 The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
-(`resolve.py:102`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:106`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:96`). Each of these fields carries the record that it is read from,
+(`resolve.py:133`). Before the first snapshot exists, the API resolves values live
+(`resolve.py:137`). The snapshot holds only values. Record lists, names and merges always come from
+the live tables (`resolve.py:127`). Each of these fields carries the record that it is read from,
 so its licence tag is correct for the record that is served now.
 
 `snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
 the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
 `merged_into` backwards. It collects the values of each product and of every product merged into
-it. It picks one value per nutrient with the resolver rule: trust rank, then newest
-(`resolve.py:37`). The result is the value that the build would have frozen if the merge had come
+it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:68`). The
+snapshot keeps only the winner of each old id. Thus agreement counts those winners, not every value
+that the build saw. The result is the value that the build would have frozen if the merge had come
 first. The index `product_merged_into_idx` keeps this lookup fast.
 
 ## Jobs and schedules
@@ -501,17 +515,17 @@ sequenceDiagram
 
 1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
 2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:72`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:76`). A
+   Without `include=off`, only the `core` layer is visible (`resolve.py:103`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:107`). A
    merged-away id thus answers as its survivor, with the survivor's id.
 4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:103`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:105`). The most
-   trusted, newest record gives the name, brand, language, serving and flags (`resolve.py:114`).
-   Each barcode is tagged with the most trusted record that has it (`resolve.py:117`).
+   (`resolve.py:134`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
+5. It reads the records of each product from the live `food` table (`resolve.py:136`). The most
+   trusted, newest record gives the name, brand, language, serving and flags (`resolve.py:145`).
+   Each barcode is tagged with the most trusted record that has it (`resolve.py:148`).
 6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:100`). The values include those of every product merged
-   into this one after the build (`resolve.py:37`). If no snapshot exists, it resolves live.
+   `include=off`, else `core` (`resolve.py:131`). The values include those of every product merged
+   into this one after the build (`resolve.py:68`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
    (`api.py:85`).
 
@@ -521,9 +535,9 @@ The product shape (API version 0.3.0):
 |---|---|
 | `id`, `snapshot` | fooddb's own: the product id, and the day that the values come from |
 | `records` | the ids of the visible source records |
-| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:65`) |
+| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:96`) |
 | `gtin14` | a list of `{value, source, licence, record}`, one per barcode |
-| `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` (`resolve.py:118`) |
+| `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` (`resolve.py:149`) |
 
 Without `include=off`, only `core` records are read. Thus no field of a core response comes from
 the OFF layer, and no ODbL tag is in it.
@@ -687,7 +701,7 @@ flowchart LR
 
 - **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
   check, and label reads from eait photos. The resolver already ranks the sources `brand` and
-  `label` above `fdc` (`resolve.py:15`), but no fetcher writes them.
+  `label` above `fdc` (`resolve.py:17`), but no fetcher writes them.
 - **Model port.** One port for all LLM work, with OpenRouter for the hosted pipeline and local
   agents for customers' own runs.
 - **Review photo page.** A page that shows the label photo next to the fields that differ. It needs
