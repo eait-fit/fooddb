@@ -286,20 +286,74 @@ def test_off_file_is_ingested_line_by_line_from_disk(tmp_path):
     assert product("off:05449000000996", "off")["per_100"]["ENERC_KCAL"]["basis"] == "100ml"
 
 
-def test_api_serves_the_latest_snapshot_and_pins_an_older_one():
+def build_on(monkeypatch, day: str) -> None:
     from datetime import date
 
-    from fooddb import ingest, snapshot
+    from fooddb import snapshot
+
+    monkeypatch.setattr(snapshot, "today", lambda: date.fromisoformat(day))
+    snapshot.build()
+
+
+def kcal(record_id: str, **params) -> float:
+    r = client().get(f"/v1/records/{record_id}", params=params)
+    assert r.status_code == 200, r.text
+    return r.json()["per_100"]["ENERC_KCAL"]["value"]
+
+
+def test_api_serves_the_latest_snapshot_and_pins_an_older_one(monkeypatch):
+    from fooddb import ingest
 
     ingest.run("t", "r1", [rec()])
-    snapshot.build(date(2026, 10, 1))
+    build_on(monkeypatch, "2026-10-01")
     ingest.run("t", "r2", [rec(observed_at=datetime(2026, 6, 1, tzinfo=UTC), values={"ENERC_KCAL": 231.0, "PROCNT": 7.4})])
-    assert product("fdc:1")["per_100"]["ENERC_KCAL"]["value"] == 229  # not live until the next build
-    snapshot.build(date(2026, 10, 2))
-    assert product("fdc:1")["per_100"]["ENERC_KCAL"]["value"] == 231
+    assert kcal("fdc:1") == 229  # not live until the next build
+    build_on(monkeypatch, "2026-10-02")
+    assert kcal("fdc:1") == 231
     pinned = client().get("/v1/records/fdc:1", params={"snapshot": "2026-10-01"}).json()
     assert pinned["per_100"]["ENERC_KCAL"]["value"] == 229 and pinned["snapshot"] == "2026-10-01"
     assert client().get("/v1/records/fdc:1", params={"snapshot": "2026-09-01"}).status_code == 404
+
+
+def test_a_day_is_final_once_it_is_over_and_only_today_is_rebuilt(monkeypatch):
+    from fooddb import ingest
+
+    def observe(name: str, value: float, month: int) -> None:
+        ingest.run("t", name, [rec(observed_at=datetime(2026, month, 1, tzinfo=UTC), values={"ENERC_KCAL": value})])
+
+    observe("r1", 229.0, 1)
+    build_on(monkeypatch, "2026-10-01")
+    observe("r2", 231.0, 2)
+    build_on(monkeypatch, "2026-10-01")  # a same-day rebuild (a fetcher's first data) replaces today
+    assert kcal("fdc:1") == kcal("fdc:1", snapshot="2026-10-01") == 231
+    observe("r3", 233.0, 3)
+    build_on(monkeypatch, "2026-10-02")
+    observe("r4", 235.0, 4)
+    build_on(monkeypatch, "2026-10-02")
+    assert kcal("fdc:1") == 235
+    assert kcal("fdc:1", snapshot="2026-10-01") == 231  # 2026-10-01 is over: no build writes it again
+
+
+def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatch):
+    from fooddb import ingest, jobs
+
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+            values=HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}),
+    ])
+    survivor, merged_away = product("fdc:1")["id"], product("fdc:2")["id"]
+    assert survivor < merged_away
+    build_on(monkeypatch, "2026-10-01")
+    jobs.match_products()
+    for params in ({}, {"snapshot": "2026-10-01"}):
+        for pid in (survivor, merged_away):
+            r = client().get(f"/v1/foods/{pid}", params=params)
+            assert r.status_code == 200, r.text
+            p = r.json()
+            assert (p["id"], sorted(p["records"])) == (survivor, ["fdc:1", "fdc:2"])
+            # As if the merge had come before the build: fdc:2's newer kcal and its fibre.
+            assert {n: v["value"] for n, v in p["per_100"].items()} == HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
 
 
 def test_health_reports_stale_and_fresh_fetchers():

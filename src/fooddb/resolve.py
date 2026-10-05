@@ -32,9 +32,19 @@ order by product_id, nutrient, {RANK.format(col="source")}, observed_at desc
 
 
 LIVE_SQL = values_sql("f.product_id = any(:pids)")
-SNAPSHOT_SQL = """
-select product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at
-from snapshot_value where day = :day and scope = :scope and product_id = any(:pids)
+# A product merged after the build still has its values under its old id: read every id merged into
+# each product, and pick across them by the resolver's rule, as if the merge had come before the build.
+SNAPSHOT_SQL = f"""
+with recursive member(product_id, id) as (
+    select id, id from product where id = any(:pids)
+    union all
+    select m.product_id, p.id from member m join product p on p.merged_into = m.id
+)
+select distinct on (m.product_id, v.nutrient)
+       m.product_id, v.nutrient, v.value_per_100, v.unit, v.basis, v.source, v.licence, v.observed_at
+from member m join snapshot_value v on v.product_id = m.id
+where v.day = :day and v.scope = :scope
+order by m.product_id, v.nutrient, {RANK.format(col="v.source")}, v.observed_at desc
 """
 
 
