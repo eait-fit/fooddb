@@ -10,10 +10,14 @@ from fooddb.resolve import values_sql
 KEEP_DAYS = 30
 
 
-def build(day: date | None = None) -> int:
-    """(Re)build one day's snapshot in a single transaction and drop days past retention.
-    Returns the number of products in it."""
-    day = day or datetime.now(UTC).date()
+def today() -> date:
+    return datetime.now(UTC).date()
+
+
+def build() -> int:
+    """(Re)build today's snapshot in a single transaction and drop days past retention.
+    Only today is ever written, so a day is final once it is over. Returns the number of products in it."""
+    day = today()
     with engine().begin() as conn:
         conn.execute(text("delete from snapshot where day = :d"), {"d": day})
         conn.execute(text("insert into snapshot (day, products) values (:d, 0)"), {"d": day})
