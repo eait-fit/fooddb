@@ -11,7 +11,7 @@ from sqlalchemy.dialects.postgresql import insert as pg_insert
 from fooddb import checks
 from fooddb.db import engine, fetch_run, food, observation
 
-UNITS = {"ENERC_KCAL": "kcal", "NA": "mg"}  # everything else is grams
+UNITS = {"ENERC_KCAL": "kcal", "ENERC_KJ": "kJ", "NA": "mg"}  # everything else is grams
 OBS_ROWS_PER_INSERT = 60_000 // len(observation.c)  # Postgres caps a statement at 65535 parameters
 
 

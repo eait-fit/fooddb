@@ -339,7 +339,7 @@ def test_off_file_is_ingested_line_by_line_from_disk(tmp_path):
     path = tmp_path / "dump.jsonl.gz"
     with gzip.open(path, "wt") as f:
         f.writelines(json.dumps(p) + "\n" for p in products)
-    assert off.load(path, fetcher="off-test", ref="dump-1") == (2, 3)
+    assert off.load(path, fetcher="off-test", ref="dump-1") == (2, 4)  # the cola keeps its kJ and gets kcal
     assert product("off:05449000000996", "off")["per_100"]["ENERC_KCAL"]["basis"] == "100ml"
 
 
@@ -677,6 +677,50 @@ def test_sources_that_agree_outvote_a_lone_outlier_of_higher_rank(monkeypatch):
         assert served("fdc:1", "off") == (229, "fdc")  # fdc and off agree; the label read is alone
         assert served("fdc:1") == (300, "label")  # core only: no agreement, rank wins
         assert served("fdc:2", "off") == (229, "fdc")
+
+
+def test_agreement_counts_only_values_of_the_same_nutrient_code(monkeypatch):
+    from fooddb import ingest
+
+    def carbs(id, source, code, value):
+        return rec(id=id, source=source, layer="off" if source == "off" else "core",
+                   licence="ODbL-1.0" if source == "off" else "CC0-1.0", values={code: value})
+
+    ingest.run("t", "r1", [
+        carbs("label:1", "label", "CHOCDF", 20.0),
+        carbs("fdc:1", "fdc", "CHOCDF", 14.9),
+        carbs("off:1", "off", "CHOAVL", 14.9),  # same number, other quantity: no vote for fdc:1
+    ])
+    merge("label:1", "fdc:1", "off:1")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        per_100 = product("fdc:1", "off")["per_100"]
+        assert (per_100["CHOCDF"]["value"], per_100["CHOCDF"]["source"]) == (20, "label")
+        assert (per_100["CHOAVL"]["value"], per_100["CHOAVL"]["source"]) == (14.9, "off")
+
+
+def test_an_off_delta_files_label_carbohydrate_under_its_market_code(tmp_path):
+    import gzip
+    import json
+
+    from fooddb.fetchers import off
+
+    def load(ref, modified, countries):
+        path = tmp_path / f"{ref}.jsonl.gz"
+        with gzip.open(path, "wt") as f:
+            f.write(json.dumps({"code": "4006381333931", "product_name": "Hummus", "last_modified_t": modified,
+                                "countries_tags": countries, "nutriments": {
+                                    "energy-kj_100g": 958, "carbohydrates_100g": 9.0, "fiber_100g": 6.0}}))
+        off.load(path, fetcher="off-test", ref=ref)
+        return product("off:04006381333931", "off")["per_100"]
+
+    per_100 = load("d1", 1790000000, ["en:germany"])
+    assert per_100["CHOAVL"]["value"] == 9 and "CHOCDF" not in per_100
+    assert (per_100["ENERC_KJ"]["value"], per_100["ENERC_KJ"]["unit"]) == (958, "kJ")
+    assert round(per_100["ENERC_KCAL"]["value"]) == 229
+    per_100 = load("d2", 1790000100, ["en:united-states"])  # a newer edit moves it to the US market
+    assert per_100["CHOCDF"]["value"] == 9 and "CHOAVL" not in per_100  # the old code is withdrawn
 
 
 def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rule(monkeypatch):
