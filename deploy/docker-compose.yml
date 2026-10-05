@@ -9,6 +9,13 @@ x-app: &app
   environment:
     FOODDB__BACKEND__DATABASE_URL: postgresql://fooddb:${FOODDB__BACKEND__POSTGRES_PASSWORD:?set FOODDB__BACKEND__POSTGRES_PASSWORD in deploy/.env}@db:5432/fooddb
     FOODDB__BACKEND__MATCH_THRESHOLD: ${FOODDB__BACKEND__MATCH_THRESHOLD:-0.95}
+    FOODDB__BACKEND__SECRET_KEY: ${FOODDB__BACKEND__SECRET_KEY:-}
+    FOODDB__BACKEND__REQUIRE_KEY_FOR_READS: ${FOODDB__BACKEND__REQUIRE_KEY_FOR_READS:-false}
+    FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE: ${FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE:-60}
+    FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET: ${FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET:-}
+    # The API port is published on loopback only, so every peer is the reverse proxy: trust its
+    # X-Forwarded-For, or the per-IP rate limit sees one client.
+    FOODDB__BACKEND__FORWARDED_ALLOW_IPS: "*"
 
 services:
   db:
