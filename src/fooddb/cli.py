@@ -86,6 +86,26 @@ def run(job: str = typer.Argument(help="off | off-dump | fdc | match | snapshot"
      "match": jobs.match_products, "snapshot": jobs.build_snapshot}[job]()
 
 
+match_app = typer.Typer(no_args_is_help=True, help="Product matching.")
+app.add_typer(match_app, name="match")
+
+
+@match_app.command("train")
+def match_train(out: Path = typer.Option(None, help="model file; default: $FOODDB__BACKEND__MATCH_MODEL")) -> None:
+    """Estimate the Splink m/u probabilities on the current records and save the model. Matching
+    uses the model at $FOODDB__BACKEND__MATCH_MODEL from its next run."""
+    import os
+
+    from fooddb import match
+
+    path = out or os.environ.get("FOODDB__BACKEND__MATCH_MODEL")
+    if not path:
+        typer.echo("set FOODDB__BACKEND__MATCH_MODEL or pass --out", err=True)
+        raise typer.Exit(1)
+    match.train(str(path))
+    typer.echo(f"wrote {path}")
+
+
 @app.command()
 def status() -> None:
     """Row counts, recent fetch runs and queue state."""

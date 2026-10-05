@@ -1,4 +1,5 @@
-"""SQLAdmin at /admin: the pending review queue, read-only, with accept and reject actions."""
+"""SQLAdmin at /admin: the pending review queue with accept and reject actions, and the merge log
+with a split action. Both read-only."""
 
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
@@ -7,8 +8,8 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from starlette.concurrency import run_in_threadpool
 
-from fooddb import review
-from fooddb.db import engine, observation
+from fooddb import resolve, review
+from fooddb.db import engine, merge_log, observation
 
 
 class Base(DeclarativeBase):
@@ -55,6 +56,38 @@ class PendingView(ModelView, model=Observation):
         return RedirectResponse(request.url_for("admin:list", identity=self.identity), status_code=302)
 
 
+class MergeLog(Base):
+    __table__ = merge_log
+
+
+def split_merge(merge_id: int) -> None:
+    """Split a logged merge's records back out of the product they are in now."""
+    with engine().connect() as conn:
+        row = conn.execute(select(merge_log.c.into_product, merge_log.c.food_ids)
+                           .where(merge_log.c.id == merge_id, merge_log.c.kind == "merge")).first()
+        if row is None:
+            raise LookupError(f"merge {merge_id} not found")
+        [pid] = resolve.canonical([row.into_product], conn)
+    review.split(pid, row.food_ids, "admin", f"split of merge {merge_id}")
+
+
+class MergeLogView(ModelView, model=MergeLog):
+    name_plural = "Merge log"
+    can_create = can_edit = can_delete = False
+    column_list = ["id", "at", "kind", "from_product", "into_product", "food_ids", "probability", "by", "note"]
+    column_default_sort = ("id", True)
+
+    @action("split", "Split", "Move the records of the selected merges back out of the product they were merged into?")
+    async def split(self, request: Request) -> RedirectResponse:
+        for pk in filter(None, request.query_params.get("pks", "").split(",")):
+            try:
+                await run_in_threadpool(split_merge, int(pk))
+            except (LookupError, ValueError):
+                pass  # split meanwhile, or the records moved on: nothing left to undo
+        return RedirectResponse(request.url_for("admin:list", identity=self.identity), status_code=302)
+
+
 def mount(app: FastAPI) -> None:
     admin = Admin(app, session_maker=sessionmaker(class_=PendingSession), title="fooddb review")
     admin.add_view(PendingView)
+    admin.add_view(MergeLogView)

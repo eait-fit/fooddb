@@ -1,17 +1,22 @@
-"""The review queue: values a failed check held back, and the decision that moves each one out.
-The API, the MCP server and the admin UI all call these two functions."""
+"""The review writes: the queue of values a failed check held back with the decision that moves
+each one out, and the split that undoes a wrong merge. The API, the MCP server and the admin UI all
+call these functions."""
 
 from typing import Literal
 
 from sqlalchemy import func, select, text, update
 
 from fooddb import resolve
-from fooddb.db import engine, observation
+from fooddb.db import engine, merge_log, observation
 
 STATUS = {"accept": "accepted", "reject": "rejected"}
 
 
 class NotPending(ValueError):
+    pass
+
+
+class MergedAway(ValueError):
     pass
 
 
@@ -63,3 +68,52 @@ def decide(observation_id: int, decision: Literal["accept", "reject"], by: str, 
                 raise LookupError(f"observation {observation_id} not found")
             raise NotPending(f"observation {observation_id} is already {status}")
     return dict(row)
+
+
+# A record's home is the product ingest made for it: the source of its first logged merge.
+HOMES_SQL = """
+select coalesce((select from_product from merge_log where kind = 'merge' and f = any(food_ids) order by id limit 1),
+                :pid)
+from unnest(cast(:ids as text[])) f
+"""
+
+
+def split(product_id: int, food_ids: list[str], by: str, note: str | None = None) -> dict:
+    """Move records out of a product that matching merged wrongly, into one product of their own.
+
+    When every record has the same home and that home was merged into this product, the home gets
+    its id back, so old links to it work again. Otherwise the records get a new product. Each moved
+    record and each record that stays become a cannot-link pair: matching never joins them again.
+    """
+    ids = sorted(set(food_ids))
+    with engine().begin() as conn:
+        found = conn.execute(text("select merged_into from product where id = :id for update"), {"id": product_id}).first()
+        if found is None:
+            raise LookupError(f"product {product_id} not found")
+        if found.merged_into is not None:
+            raise MergedAway(f"product {product_id} was merged into {found.merged_into}: split that one")
+        records = set(conn.execute(text("select id from food where product_id = :id"), {"id": product_id}).scalars())
+        if not ids or not set(ids) <= records:
+            raise ValueError(f"not records of product {product_id}: {sorted(set(ids) - records) or 'none given'}")
+        if set(ids) == records:
+            raise ValueError("a split leaves at least one record in the product")
+        homes = set(conn.execute(text(HOMES_SQL), {"ids": ids, "pid": product_id}).scalars())
+        home = homes.pop() if len(homes) == 1 else None
+        restored = home is not None and home != product_id and resolve.canonical([home], conn) == [product_id]
+        if restored:
+            # Products merged into the home have their records here, not in the home: they keep following them.
+            conn.execute(text("update product set merged_into = :p where merged_into = :h"), {"p": product_id, "h": home})
+            conn.execute(text("update product set merged_into = null where id = :h"), {"h": home})
+            target = home
+        else:
+            target = conn.execute(text("insert into product default values returning id")).scalar_one()
+        conn.execute(text("update food set product_id = :t where id = any(:ids)"), {"t": target, "ids": ids})
+        conn.execute(text("""
+            insert into cannot_link (food_a, food_b, by, note)
+            select least(a, b), greatest(a, b), :by, :note
+            from unnest(cast(:moved as text[])) a cross join unnest(cast(:kept as text[])) b
+            on conflict do nothing
+        """), {"moved": ids, "kept": sorted(records - set(ids)), "by": by, "note": note})
+        conn.execute(merge_log.insert().values(kind="split", from_product=product_id, into_product=target,
+                                               food_ids=ids, by=by, note=note))
+    return {"product_id": product_id, "split_into": target, "records": ids, "restored": restored}
