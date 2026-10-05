@@ -26,6 +26,7 @@ Technical decisions. Business decisions are tracked outside this repo.
 | 2026-10-04 | Data model: each value records its basis (per 100 g or per 100 ml); kJ-only energy is converted to kcal; a field that disappears from a newer source record is withdrawn; unchanged values are not stored again. |
 | 2026-10-04 | Ingest streams downloads to disk and reads them line by line. A full-dump OFF fetcher bootstraps the OFF layer before the daily deltas. |
 | 2026-10-05 | Snapshot pins: `?snapshot=DAY` returns the same values for the 30 days that it is kept, once that UTC day is over. Only today's snapshot is written, and a rebuild on the same day (the nightly build, or a fetcher's first data) replaces it. Thus a pin on today can change until the day ends. A merge after a build does not change a snapshot's values: a read collects the values of every product merged into the one asked for. Records and names stay live. |
+| 2026-10-05 | Access: writes, the review queue and `/admin` always need an API key. Reads need one only when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`. The default keeps a self-hosted read API public. Our hosted API sets it. Keys are stored as SHA-256 hashes. The rate limit is a per-minute window in Postgres, shared by all replicas. stdio MCP is local and needs no key. |
 | 2026-10-04 | Health means freshness: each fetcher's last successful run within its schedule, shown in `/healthz` and `./dev status`. |
 
 ## Open

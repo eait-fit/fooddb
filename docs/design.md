@@ -20,7 +20,7 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 **Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
-(`/v1/review`, two MCP tools, SQLAdmin at `/admin`). The checks run before the insert and set each
+(`/v1/review`, two MCP tools, SQLAdmin at `/admin`), and API keys with scopes and rate limits. The checks run before the insert and set each
 value's status. **Not built:** the review page with the photo
 ([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
 
@@ -103,8 +103,10 @@ Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI list
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
 process. The review UI is SQLAdmin plus one custom page. Built: everything except the custom photo
 page ([#12](https://github.com/eait-fit/fooddb/issues/12)). The MCP server has the read tools and
-two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. The MCP server and the
-review routes have no API keys yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. Built: our own API keys
+with the scopes `read`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
+`/admin` login check them. stdio is local and needs no key. Not built: the RapidAPI listing. The
+API already accepts RapidAPI's proxy secret as a `read` key.
 
 ## Data model
 
@@ -131,7 +133,7 @@ for licence traps in nearby open-source projects.
 fooddb is its own repo, database and deploy. It is not part of the eait backend, because:
 
 - eait scopes every row to one user, while this catalog is global and needs API keys, rate limits
-  and billing ([#10](https://github.com/eait-fit/fooddb/issues/10), not built).
+  and billing. API keys and rate limits are built. Billing goes through RapidAPI and is not built.
 - ODbL share-alike stays inside one database with a clear edge.
 - Batch ingestion and review must not share CPU, deploys or incidents with meal logging.
 - B2B customers need versioned releases and their own uptime commitment.

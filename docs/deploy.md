@@ -40,9 +40,12 @@ The optional full Open Food Facts dump needs much more disk. See
    ```bash
    cp .env.example .env
    sed -i "s/^FOODDB__BACKEND__POSTGRES_PASSWORD=$/FOODDB__BACKEND__POSTGRES_PASSWORD=$(openssl rand -hex 24)/" .env
+   sed -i "s/^FOODDB__BACKEND__SECRET_KEY=$/FOODDB__BACKEND__SECRET_KEY=$(openssl rand -hex 32)/" .env
    ```
 
-   Git ignores `deploy/.env`. Do not commit it. The other settings in the file are optional.
+   Git ignores `deploy/.env`. Do not commit it. `FOODDB__BACKEND__SECRET_KEY` signs the login
+   cookie of `/admin`. Without it, the API does not serve `/admin`. The other settings in the file
+   are optional.
 
 3. Build the image and start the stack:
 
@@ -90,6 +93,58 @@ curl "http://127.0.0.1:8000/v1/products/00000000010177?include=off"
 docker compose exec worker fooddb status
 ```
 
+## API keys
+
+fooddb has its own API keys. The API keeps only the SHA-256 hash of a key. It shows the key
+one time, when you create it. A key has one or more scopes:
+
+| Scope | Gives access to |
+|---|---|
+| `read` | All the `GET` data routes, the snapshot export, and the MCP read tools. |
+| `review` | `read`, plus `/v1/review` and the MCP tools `review_queue` and `decide_review`. |
+| `admin` | `review`, plus the login to `/admin`. |
+
+Writes, the review queue and `/admin` always need a key. Reads need a key only when
+`FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is `true`. The default is `false`, so the read API stays
+public. `/livez` and `/healthz` never need a key. `fooddb mcp` on stdio is local and needs no key.
+
+1. Make the first admin key:
+
+   ```bash
+   docker compose exec api fooddb keys create --name ops --scope admin
+   ```
+
+   Copy the `fdb_…` token that the command prints. You cannot get it again. Keep it in a password
+   manager. To log in to `/admin`, put the token in the password field. The username is not used.
+
+2. Make a key for each client, with only the scopes that it needs:
+
+   ```bash
+   docker compose exec api fooddb keys create --name eait --scope read --rate-limit 600
+   docker compose exec api fooddb keys create --name review-agent --scope review
+   ```
+
+3. A client sends the key in the `Authorization: Bearer fdb_…` header, or in `X-API-Key`. An MCP
+   client sends the same header to `/mcp`.
+
+To see the keys and their last use, and to revoke a key:
+
+```bash
+docker compose exec api fooddb keys list
+docker compose exec api fooddb keys revoke eait
+```
+
+A revoked key stops working on the next request. This is also true in an open `/admin` session.
+
+**Rate limits.** Each key can send `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` requests per minute
+(default 60). `--rate-limit` sets a different limit for one key. Reads without a key have the same
+limit per client IP address. Above the limit, the API answers 429 with a `Retry-After` header. The
+counters are in Postgres, so all API replicas share them.
+
+**RapidAPI.** Set `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` to the proxy secret of your RapidAPI
+listing. A request with the same `X-RapidAPI-Proxy-Secret` header then counts as a `read` key.
+RapidAPI meters its own customers, so fooddb does not rate-limit these requests.
+
 ## TLS with Caddy
 
 The API port is open on `127.0.0.1` only. Put a TLS reverse proxy in front of it. This example
@@ -101,15 +156,20 @@ without more configuration.
 
    ```caddy
    fooddb.example.com {
-   	@review path /admin /admin/* /v1/review /v1/review/*
-   	respond @review 403
    	reverse_proxy 127.0.0.1:8000
    }
    ```
 
-   The review routes have no authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
-   The `@review` lines keep them off the internet. To review, open an SSH tunnel to port 8000 and
-   use `http://127.0.0.1:8000/admin`. The MCP tool `decide_review` at `/mcp` stays open until #10.
+   Caddy sends the client address in `X-Forwarded-For`. The API uses it for the rate limit of
+   reads without a key.
+
+   Optional hardening: `/admin` needs an admin key, but you can also keep it off the internet.
+   Add these two lines before `reverse_proxy`. Then open `/admin` through an SSH tunnel to port 8000.
+
+   ```caddy
+   	@admin path /admin /admin/*
+   	respond @admin 403
+   ```
 
 3. Load the new configuration:
 
@@ -138,6 +198,10 @@ All the settings are in `deploy/.env`:
 | `FOODDB__DEPLOY__BIND` | `127.0.0.1` | The host address where Compose publishes the API port. |
 | `FOODDB__DEPLOY__PORT` | `8000` | The host port of the API. |
 | `FOODDB__BACKEND__MATCH_THRESHOLD` | `0.95` | The Splink match probability that merges two products. |
+| `FOODDB__BACKEND__SECRET_KEY` | none | Signs the `/admin` login cookie. Without it, the API does not serve `/admin`. |
+| `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` | `false` | `true`: reads need an API key too. See [API keys](#api-keys). |
+| `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` | `60` | Requests per minute per key, and per client IP for reads without a key. |
+| `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
 
 After you change `deploy/.env`, apply the change:
 
@@ -176,8 +240,8 @@ steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
   `final` is `true`: that is yesterday's snapshot.
 - To make a file instead, run `docker compose exec api fooddb export --day 2026-10-04 --out
   /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
-- The export has no authentication yet, like the rest of the API
-  ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+- The export is a read. Give the consumer its own `read` key, with a `--rate-limit` that is
+  sufficient for its sync. See [API keys](#api-keys).
 
 ## Upgrade
 
