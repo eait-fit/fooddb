@@ -13,7 +13,7 @@ from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import Field
 from sqlalchemy import text
 
-from fooddb import gtin, health, resolve
+from fooddb import export, gtin, health, resolve
 from fooddb.db import engine
 
 
@@ -24,6 +24,7 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="fooddb", version="0.2.0", lifespan=lifespan)
+app.include_router(export.router)
 
 
 def _pids(sql: str, **params) -> list[int]:
