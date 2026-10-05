@@ -53,20 +53,6 @@ def done_refs(fetcher: str) -> set[str]:
         ).scalars())
 
 
-def pending(limit: int = 100) -> list[dict]:
-    """The review queue: values held back because their record failed a check."""
-    with engine().connect() as conn:
-        rows = conn.execute(text("""
-            select o.id, o.food_id as record, o.nutrient, o.value_per_100 as value, o.unit, o.basis,
-                   o.observed_at, f.flags
-            from observation o join food f on f.id = o.food_id
-            where o.status = 'pending'
-            order by o.observed_at desc, o.food_id, o.nutrient
-            limit :limit
-        """), {"limit": limit}).mappings().all()
-    return [dict(r) | {"value": None if r["value"] is None else float(r["value"])} for r in rows]
-
-
 def runs(fetcher: str, ref: str) -> list[dict]:
     """Run history for one fetcher and ref, oldest first."""
     with engine().connect() as conn:
@@ -125,7 +111,7 @@ def _write(records: list[Record]) -> tuple[int, int]:
                 "source": r.source, "layer": r.layer, "licence": r.licence,
                 "gtin14": r.gtin14, "name": r.name[:500], "brand": r.brand, "lang": r.lang,
                 "serving_text": r.serving_text, "serving_g": r.serving_g,
-                "flags": failed + r.extra_flags, "source_updated_at": r.observed_at,
+                "flags": list(failed) + r.extra_flags, "source_updated_at": r.observed_at,
             })
             obs += _observations(r, failed, known.get(r.id), stored)
 
@@ -155,7 +141,7 @@ order by food_id, nutrient, observed_at desc, id desc
 """
 
 
-def _observations(r: Record, failed: list[str], known, stored: dict) -> list[dict]:
+def _observations(r: Record, failed: dict[str, set[str]], known, stored: dict) -> list[dict]:
     """Only what changed: new or different values, and fields the source has dropped (withdrawn,
     stored as null). A record older than what we already have adds nothing."""
     if known is not None and known.source_updated_at and r.observed_at < known.source_updated_at:
@@ -165,11 +151,12 @@ def _observations(r: Record, failed: list[str], known, stored: dict) -> list[dic
                        and float(last.value_per_100) == v and last.basis == r.basis)}
     dropped = {k: None for (fid, k), last in stored.items()
                if fid == r.id and last.value_per_100 is not None and k not in r.values}
+    held = set().union(*failed.values())
     return [
         {"food_id": r.id, "nutrient": k, "value_per_100": v, "unit": UNITS.get(k, "g"), "basis": r.basis,
          "source": r.source, "licence": r.licence, "observed_at": r.observed_at,
-         # A record that fails a check waits for review; the last accepted values keep serving.
-         "status": "pending" if failed else "accepted"}
+         # A field a failed check implicates waits for review; its last accepted value keeps serving.
+         "status": "pending" if k in held else "accepted"}
         for k, v in (changed | dropped).items()
     ]
 

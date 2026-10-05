@@ -20,10 +20,17 @@ def test_gtin_rejects_store_local_prefixes():
 
 
 def test_checks_flag_energy_mismatch_and_impossible_sums():
-    assert checks.flags({"ENERC_KCAL": 100, "PROCNT": 10, "FAT": 5, "CHOCDF": 10}) == []
+    assert not checks.flags({"ENERC_KCAL": 100, "PROCNT": 10, "FAT": 5, "CHOCDF": 10})
     assert "energy-mismatch" in checks.flags({"ENERC_KCAL": 900, "PROCNT": 10, "FAT": 5, "CHOCDF": 10})
     assert "macros-over-100g" in checks.flags({"PROCNT": 60, "FAT": 30, "CHOCDF": 30})
     assert "sugars-over-carbs" in checks.flags({"CHOCDF": 10, "SUGAR": 20})
+
+
+def test_checks_name_the_fields_they_implicate():
+    found = checks.flags({"ENERC_KCAL": 900, "PROCNT": 10, "FAT": 5, "CHOCDF": 10, "SUGAR": 20, "FIBTG": -1})
+    assert found["energy-mismatch"] == {"ENERC_KCAL", "PROCNT", "FAT", "CHOCDF"}
+    assert found["sugars-over-carbs"] == {"SUGAR", "CHOCDF"}
+    assert found["negative-value"] == {"FIBTG"}
 
 
 def test_off_reads_new_and_old_nutrition_schemas():

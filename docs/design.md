@@ -19,8 +19,9 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
 **Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
-resolver, the nightly snapshot, REST and MCP. The checks run before the insert and set each value's
-status. **Not built:** human review ([#3](https://github.com/eait-fit/fooddb/issues/3)), lanes 3 and 4, and the label-photo loop.
+resolver, the nightly snapshot, REST and MCP, and the review queue (`/v1/review`, two MCP tools,
+SQLAdmin at `/admin`). The checks run before the insert and set each value's status. **Not built:**
+the review page with the photo ([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
 
 ### Intake lanes
 
@@ -58,9 +59,9 @@ field that disappears from a newer record is stored as withdrawn.
 - Ranges per category, and front-of-pack warning seals against nutrient thresholds (LatAm octagons).
 
 Built: Atwater, sums (with a 0.5 g tolerance), macros over 100 g, and negative values. Not built:
-ranges and seals ([#11](https://github.com/eait-fit/fooddb/issues/11)). If one check fails, every
-new value of that record is `pending`, and nothing moves it out yet
-([#3](https://github.com/eait-fit/fooddb/issues/3)).
+ranges and seals ([#11](https://github.com/eait-fit/fooddb/issues/11)). Each failed check names
+the fields that it implicates. Only the new values of those fields are `pending`. A reviewer or an
+agent accepts or rejects each one, and the decision records who decided and when.
 
 ### Resolver
 
@@ -97,10 +98,10 @@ Not built: [#12](https://github.com/eait-fit/fooddb/issues/12).
 
 Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI listing), SQLAlchemy
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
-process. The review UI is SQLAdmin plus one custom page. Built: everything except the review UI
-([#3](https://github.com/eait-fit/fooddb/issues/3)). The MCP server has read tools only, over stdio
-(`fooddb mcp`) and Streamable HTTP at `/mcp`, without API keys
-([#10](https://github.com/eait-fit/fooddb/issues/10)).
+process. The review UI is SQLAdmin plus one custom page. Built: everything except the custom photo
+page ([#12](https://github.com/eait-fit/fooddb/issues/12)). The MCP server has the read tools and
+two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. The MCP server and the
+review routes have no API keys yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
 
 ## Data model
 
