@@ -12,18 +12,20 @@ References have the form `file:line` and point to the code at commit `2480b2f`.
 ```mermaid
 flowchart LR
     callers["REST and MCP callers"]
+    consumer["Consumer with a local copy<br/>eait"]
     local["Local MCP client<br/>Claude Desktop, Claude Code"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
         api["API<br/>fooddb serve"]
         worker["Worker<br/>fooddb worker"]
-        cli["CLI<br/>fooddb run, status, lookup, mcp"]
+        cli["CLI<br/>fooddb run, status, lookup, export, mcp"]
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
     end
     fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
+    consumer -->|"HTTPS, GET /v1/snapshots/{day}/export"| proxy
     local -->|"stdio: fooddb mcp"| cli
     api -->|read| db
     worker -->|read, write| db
@@ -42,15 +44,17 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:103`).
-  `fooddb mcp` runs the MCP server on stdio for a local client.
+  `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
+  snapshot to a file with the same code as the export endpoint (`cli.py:107`).
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:53`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
 (`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
-eait is not in this diagram. No code in fooddb or in eait reads the snapshot for eait yet. See
-[Planned, not built](#planned-not-built).
+A consumer that keeps a local copy, such as eait, reads the snapshot export. See
+[`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). The eait job that loads the export
+is not built. See [Planned, not built](#planned-not-built).
 
 ## Deployment
 
@@ -128,6 +132,7 @@ flowchart TD
     resolver --> snap["snapshot.build()<br/>scopes core and all"]
     snap --> sv[("snapshot, snapshot_value")]
     sv --> api["API"]
+    sv -->|"export, NDJSON per day"| consumer["Consumer local copy"]
     resolver -->|"only while no snapshot exists"| api
     prod -->|"merged_into, both ways"| api
 ```
@@ -468,6 +473,54 @@ The other read endpoints use the same `resolve.products` call:
 - `GET /v1/foods/{product_id}` reads one product (`api.py:64`).
 - `GET /v1/records/{record_id}` finds the product of one source record (`api.py:69`).
 
+### `GET /v1/snapshots/{day}/export`
+
+```mermaid
+sequenceDiagram
+    participant Cl as Consumer
+    participant A as export.export
+    participant G as export.lines
+    participant R as resolve.products
+    participant P as Postgres
+    Cl->>A: GET /v1/snapshots
+    A->>P: day, built_at, products from snapshot
+    A-->>Cl: days, newest first, final when the day is over
+    Cl->>A: GET /v1/snapshots/2026-10-04/export?include=off, If-None-Match
+    A->>P: built_at of 2026-10-04
+    alt no snapshot for the day
+        A-->>Cl: 404
+    else If-None-Match has the ETag
+        A-->>Cl: 304, no body
+    else
+        A-->>Cl: 200 NDJSON stream, ETag, Last-Modified, gzip on request
+        G->>P: begin repeatable read, server-side cursor on IDS_SQL
+        loop one batch of 1000 product ids
+            G->>R: products(batch, include, day, conn)
+            R->>P: records, snapshot values
+            G-->>Cl: one JSON line per product
+        end
+    end
+```
+
+The export router is in `export.py`. The app adds it with `include_router` (`api.py:27`), so a later
+auth dependency can gate it in one place.
+
+- `GET /v1/snapshots` lists the days, newest first (`export.py:34`). `final` is true when the day
+  is before today (UTC). `products` counts the products with values in the `all` scope at build
+  time, before later merges.
+- `GET /v1/snapshots/{day}/export` gets 404 for a day with no snapshot (`export.py:81`). The ETag
+  is weak and is made of the day, the scope and `built_at`. A final day is never rebuilt, so its
+  ETag never changes. A matching `If-None-Match` gets 304 (`export.py:87`).
+- `export.lines` reads in one repeatable-read transaction (`export.py:50`). A rebuild or a merge
+  during the export does not change what it sends.
+- `IDS_SQL` selects every product with values that day, and follows `merged_into` to the survivor
+  (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
+  (`export.py:53`). Each batch goes through `resolve.products`, so each line has the shape of
+  `GET /v1/foods/{id}?snapshot=`. The process never holds the full export in memory.
+- With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
+- `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
+  ends in `.gz` (`cli.py:107`).
+
 ### `/livez` and `/healthz`
 
 ```mermaid
@@ -538,6 +591,7 @@ flowchart LR
         obs[("observation")]
         pend["pending observations"]
         snap[("snapshot_value")]
+        exp["Snapshot export<br/>NDJSON per day"]
     end
     tables["Other composition tables<br/>CIQUAL, BLS, Fineli, MFDS, MEXT"]
     brand["Brand upload form<br/>GS1 prefix check"]
@@ -558,7 +612,8 @@ flowchart LR
     pend -.-> review
     review -.->|"accept or reject"| obs
     keys -.-> api
-    snap -.->|"nightly refresh"| eaitc
+    snap --> exp
+    exp -.->|"nightly refresh"| eaitc
     obs -.-> odbl
     classDef planned stroke-dasharray: 5 5
     class tables,brand,eaitp,port,orouter,agents,review,keys,eaitc,odbl planned
@@ -575,6 +630,6 @@ flowchart LR
 - **Checks.** Ranges per category, and front-of-pack warning seals.
 - **Access.** API keys, rate limits and the RapidAPI listing. The REST API and the MCP server have
   no authentication today.
-- **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the nightly
-  snapshot. No export endpoint or eait job exists yet.
+- **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot
+  export. The export exists. The eait job that loads it does not.
 - **ODbL dump.** A monthly ODbL dump of the OFF-derived layer.

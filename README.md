@@ -80,6 +80,32 @@ until midnight UTC, so a pin on today can change. A product that matching merged
 keeps the values the snapshot froze, and a merged-away product id answers as its survivor. Record
 lists and names are always live.
 
+## Sync a local copy
+
+A consumer that keeps its own copy of the catalog (eait does) syncs from the snapshot export. It
+does not call the per-product endpoints. Customers may store what they fetch.
+
+1. **List the days.** `GET /v1/snapshots` returns each day, newest first, with `built_at`, a
+   product count and `final`. A day is final when it is over (UTC). Today's snapshot can still be
+   rebuilt, so sync only from a day where `final` is `true`.
+2. **Export the day.** `GET /v1/snapshots/{day}/export` returns NDJSON: one product per line, in
+   the same shape as `GET /v1/foods/{id}?snapshot={day}`, with a licence tag on each value. The
+   OFF layer (ODbL) is in the export only with `include=off`. Send `Accept-Encoding: gzip` for a
+   gzipped body.
+3. **Skip an unchanged day.** Keep the `ETag`. Send it back in `If-None-Match`, and the API
+   answers `304 Not Modified` with no body. A final day's ETag never changes.
+4. **Load it.** Replace the local copy with the lines of the new day in one transaction. A
+   product that is not in the export is not in that snapshot any more: it was merged into another
+   product, or it has no values.
+
+```bash
+curl "$(./dev url)/v1/snapshots"
+curl -H 'Accept-Encoding: gzip' -o 2026-10-04.ndjson.gz "$(./dev url)/v1/snapshots/2026-10-04/export?include=off"
+./dev cli export --day 2026-10-04 --include-off --out 2026-10-04.ndjson.gz   # the same lines, from the database
+```
+
+The export has no authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
 | `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
