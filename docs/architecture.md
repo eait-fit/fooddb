@@ -125,6 +125,7 @@ flowchart TD
     snap --> sv[("snapshot, snapshot_value")]
     sv --> api["API"]
     resolver -->|"only while no snapshot exists"| api
+    prod -->|"merged_into, both ways"| api
 ```
 
 ### Fetch
@@ -203,20 +204,31 @@ The resolver picks one value per product and nutrient (`resolve.py:17`):
 3. Across records, the most trusted source wins: `brand`, then `label`, then `fdc`, then `off`
    (`resolve.py:15`). The newest value breaks a tie.
 
-The `include=off` parameter adds the `off` layer to the query (`resolve.py:52`). Without it, OFF
+The `include=off` parameter adds the `off` layer to the query (`resolve.py:62`). Without it, OFF
 values do not take part.
 
 ### Snapshot
 
-`snapshot.build` writes the resolved values of all products for one UTC day, in one transaction
-(`snapshot.py:13`). It writes two scopes: `core` (core layer only) and `all` (core and OFF). A
-second build on the same day replaces that day (`snapshot.py:18`). The build deletes days that are
-more than 30 days older than the new day (`snapshot.py:30`).
+`snapshot.build` writes the resolved values of all products for the current UTC day, in one
+transaction (`snapshot.py:17`). It writes two scopes: `core` (core layer only) and `all` (core and
+OFF). The build takes no day argument. It writes only today (`snapshot.py:13`).
+
+A day is final when it is over. Until then, a second build on the same day replaces that day
+(`snapshot.py:22`). The nightly build and the rebuild after a fetcher's first data both write
+today. Thus a pin on today can change during the day, but a pin on an earlier day cannot. The build
+deletes days that are more than 30 days older than the new day (`snapshot.py:34`).
 
 The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
-(`resolve.py:82`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:86`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:76`).
+(`resolve.py:92`). Before the first snapshot exists, the API resolves values live
+(`resolve.py:96`). The snapshot holds only values. Record lists, names and merges always come from
+the live tables (`resolve.py:86`).
+
+`snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
+the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
+`merged_into` backwards. It collects the values of each product and of every product merged into
+it. It picks one value per nutrient with the resolver rule: trust rank, then newest
+(`resolve.py:37`). The result is the value that the build would have frozen if the merge had come
+first. The index `product_merged_into_idx` keeps this lookup fast.
 
 ## Jobs and schedules
 
@@ -302,7 +314,7 @@ erDiagram
     snapshot ||--o{ snapshot_value : "day, on delete cascade"
     product {
         bigint id PK
-        bigint merged_into FK "null means canonical"
+        bigint merged_into FK "null means canonical, btree index"
         timestamptz created_at
     }
     food {
@@ -430,19 +442,21 @@ sequenceDiagram
 
 1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
 2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:52`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:56`).
+   Without `include=off`, only the `core` layer is visible (`resolve.py:62`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:66`). A
+   merged-away id thus answers as its survivor, with the survivor's id.
 4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:83`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:85`). The most
-   trusted, newest record gives the name, brand and serving (`resolve.py:91`).
+   (`resolve.py:93`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
+5. It reads the records of each product from the live `food` table (`resolve.py:95`). The most
+   trusted, newest record gives the name, brand and serving (`resolve.py:101`).
 6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:80`). If no snapshot exists, it resolves live.
+   `include=off`, else `core` (`resolve.py:90`). The values include those of every product merged
+   into this one after the build (`resolve.py:37`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
    (`api.py:85`).
 
 A value in `per_100` carries its `source`, `licence`, `basis` and `observed_at`
-(`resolve.py:99`). The response field `snapshot` shows the day that the values come from.
+(`resolve.py:109`). The response field `snapshot` shows the day that the values come from.
 
 The other read endpoints use the same `resolve.products` call:
 

@@ -73,9 +73,10 @@ crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/food
 
 ### Snapshot and serving
 
-- A nightly snapshot, versioned and immutable. Built: one snapshot per day, but a second build on
-  the same day replaces it, and merges are read live ([#6](https://github.com/eait-fit/fooddb/issues/6)). The API serves the latest one;
-  `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days.
+- A nightly snapshot, versioned and immutable. The API serves the latest one;
+  `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. Built: one snapshot per UTC day. A day is
+  final when it is over. Until then, a rebuild on the same day replaces it. A merge after a build
+  keeps the values that the build froze. Records and names are read live, not frozen.
 - Customers may store what they fetch.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
   carries a licence tag. Built for nutrient values only

@@ -33,13 +33,19 @@ of these are derived into `.env.worktree` by `scripts/dev_env.py`.
 curl "$(./dev url)/v1/foods?q=hummus"                         # search products
 curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with the OFF layer
 curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
-curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot
+curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot (see below)
 curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
 ```
 
 How data flows: fetchers write append-only observations per source record; values that fail a
 check wait for review; Splink matches records into products; the nightly snapshot freezes each
 product's resolved values (most trusted source per field), and the API serves that snapshot.
+
+`?snapshot=YYYY-MM-DD` pins the values of one UTC day's snapshot for 30 days. A day is final when
+it is over: a pin on an earlier day always returns the same values. Today's snapshot can be rebuilt
+until midnight UTC, so a pin on today can change. A product that matching merged after the build
+keeps the values the snapshot froze, and a merged-away product id answers as its survivor. Record
+lists and names are always live.
 
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
