@@ -7,7 +7,7 @@ layer (ODbL) takes part only when the caller asks for it, so licence follows eac
 
 from datetime import date
 
-from sqlalchemy import text
+from sqlalchemy import Connection, text
 
 from fooddb.db import engine
 
@@ -63,37 +63,39 @@ def layers_for(include: str | None) -> list[str]:
     return ["core", "off"] if include == "off" else ["core"]
 
 
-def canonical(pids: list[int]) -> list[int]:
+def canonical(pids: list[int], conn: Connection) -> list[int]:
     """Follow merges: a product matching merged away answers as the one it was merged into."""
     if not pids:
         return []
-    with engine().connect() as conn:
-        rows = dict(conn.execute(text("""
-            with recursive chain(start, id, merged_into) as (
-                select id, id, merged_into from product where id = any(:pids)
-                union all
-                select c.start, p.id, p.merged_into from chain c join product p on p.id = c.merged_into
-            )
-            select start, id from chain where merged_into is null
-        """), {"pids": pids}).all())
+    rows = dict(conn.execute(text("""
+        with recursive chain(start, id, merged_into) as (
+            select id, id, merged_into from product where id = any(:pids)
+            union all
+            select c.start, p.id, p.merged_into from chain c join product p on p.id = c.merged_into
+        )
+        select start, id from chain where merged_into is null
+    """), {"pids": pids}).all())
     return list(dict.fromkeys(rows[p] for p in pids if p in rows))
 
 
-def products(pids: list[int], include: str | None, snapshot: date | None = None) -> list[dict]:
+def products(pids: list[int], include: str | None, snapshot: date | None = None,
+             conn: Connection | None = None) -> list[dict]:
     """Resolved products in the order given; a product with no visible record is left out.
 
     Values come from the newest nightly snapshot (or the pinned `snapshot` day); live resolution
     only while no snapshot has been built yet. Which records make up a product is always live.
     ponytail: records and names are not snapshotted; pin them too if clients need full replay.
     """
-    pids = canonical(pids)
+    if conn is None:
+        with engine().connect() as conn:
+            return products(pids, include, snapshot, conn)
+    pids = canonical(pids, conn)
     params = {"pids": pids, "layers": layers_for(include), "scope": "all" if include == "off" else "core"}
-    with engine().connect() as conn:
-        day = snapshot or conn.execute(text("select max(day) from snapshot")).scalar_one()
-        if snapshot and not conn.execute(text("select 1 from snapshot where day = :d"), {"d": snapshot}).first():
-            raise NoSnapshot(f"no snapshot for {snapshot.isoformat()}")
-        records = conn.execute(text(RECORDS_SQL), params).mappings().all()
-        values = conn.execute(text(SNAPSHOT_SQL if day else LIVE_SQL), params | {"day": day}).mappings().all()
+    day = snapshot or conn.execute(text("select max(day) from snapshot")).scalar_one()
+    if snapshot and not conn.execute(text("select 1 from snapshot where day = :d"), {"d": snapshot}).first():
+        raise NoSnapshot(f"no snapshot for {snapshot.isoformat()}")
+    records = conn.execute(text(RECORDS_SQL), params).mappings().all()
+    values = conn.execute(text(SNAPSHOT_SQL if day else LIVE_SQL), params | {"day": day}).mappings().all()
     by_pid: dict[int, dict] = {}
     for r in records:
         p = by_pid.setdefault(r["product_id"], {"id": r["product_id"], "records": [], "gtin14": [],

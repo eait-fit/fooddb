@@ -165,6 +165,20 @@ docker compose logs -f api
 docker compose exec worker fooddb status   # row counts, the last 5 fetch runs, the job queue
 ```
 
+## Consumer sync
+
+A service that keeps its own copy of the catalog reads the snapshot export. The README has the
+steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
+
+- The export of a large day is long. With the full OFF dump it has about 4 million lines. Give the
+  consumer's HTTP client a long read timeout. Caddy streams the response and needs no change.
+- Run the consumer's sync after the nightly snapshot (02:30 UTC). Sync the newest day where
+  `final` is `true`: that is yesterday's snapshot.
+- To make a file instead, run `docker compose exec api fooddb export --day 2026-10-04 --out
+  /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
+- The export has no authentication yet, like the rest of the API
+  ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+
 ## Upgrade
 
 1. Make a backup. See [Back up](#back-up).

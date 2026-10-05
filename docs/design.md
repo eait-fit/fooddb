@@ -19,9 +19,10 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
 **Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
-resolver, the nightly snapshot, REST and MCP, and the review queue (`/v1/review`, two MCP tools,
-SQLAdmin at `/admin`). The checks run before the insert and set each value's status. **Not built:**
-the review page with the photo ([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
+resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
+(`/v1/review`, two MCP tools, SQLAdmin at `/admin`). The checks run before the insert and set each
+value's status. **Not built:** the review page with the photo
+([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
 
 ### Intake lanes
 
@@ -76,7 +77,9 @@ crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/food
 - A nightly snapshot, versioned and immutable. The API serves the latest one;
   `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. Built: one snapshot per UTC day. A day is
   final when it is over. Until then, a rebuild on the same day replaces it. A merge after a build
-  keeps the values that the build froze. Records and names are read live, not frozen.
+  keeps the values that the build froze. Records and names are read live, not frozen. Built: the
+  export of one day as NDJSON, for consumers that keep a local copy. Not built: the eait job that
+  loads it.
 - Customers may store what they fetch.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
   carries a licence tag. Built for nutrient values only

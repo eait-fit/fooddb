@@ -1,4 +1,4 @@
-"""fooddb CLI: migrate, run the worker, the API and the MCP server, enqueue fetches, look things up."""
+"""fooddb CLI: migrate, run the worker, the API and the MCP server, enqueue fetches, export a snapshot, look things up."""
 
 import json
 from pathlib import Path
@@ -101,6 +101,27 @@ def status() -> None:
             typer.echo(f"run {r.fetcher} {r.ref} {r.status} foods={r.foods} obs={r.observations} {r.finished_at}")
         for r in conn.execute(text("select status, count(*) from pq_tasks group by status")):
             typer.echo(f"pq tasks {r.status}: {r.count}")
+
+
+@app.command()
+def export(
+    day: str = typer.Option(..., help="UTC day of the snapshot, YYYY-MM-DD"),
+    include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)"),
+    out: Path = typer.Option(..., help="NDJSON file, gzipped when the name ends in .gz"),
+) -> None:
+    """Write one day's snapshot as NDJSON, one product per line: the same lines as the export endpoint."""
+    from datetime import date
+
+    from fooddb import export as ex
+
+    if ex.built_at(date.fromisoformat(day)) is None:
+        typer.echo(f"no snapshot for {day}", err=True)
+        raise typer.Exit(1)
+    chunks = ex.lines(date.fromisoformat(day), "off" if include_off else None)
+    with out.open("wb") as f:
+        for chunk in ex.gzipped(chunks) if out.suffix == ".gz" else chunks:
+            f.write(chunk)
+    typer.echo(f"wrote {out}")
 
 
 @app.command()
