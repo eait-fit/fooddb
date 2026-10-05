@@ -12,14 +12,14 @@ x-app: &app
 
 services:
   db:
-    image: postgres:17-alpine
+    image: postgres:18-alpine
     restart: unless-stopped
     environment:
       POSTGRES_USER: fooddb
       POSTGRES_DB: fooddb
       POSTGRES_PASSWORD: ${FOODDB__BACKEND__POSTGRES_PASSWORD:?set FOODDB__BACKEND__POSTGRES_PASSWORD in deploy/.env}
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata18:/var/lib/postgresql
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "fooddb"]
       interval: 5s
@@ -50,4 +50,4 @@ services:
       migrate: { condition: service_completed_successfully }
 
 volumes:
-  pgdata:
+  pgdata18:

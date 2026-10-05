@@ -1,15 +1,29 @@
-"""REST API over products. Core data by default; the ODbL "off" layer only with include=off."""
+"""REST API and MCP server over products. Core data by default; the ODbL "off" layer only with
+include=off (include_off in MCP)."""
 
+import os
+from contextlib import asynccontextmanager
 from datetime import date
+from typing import Annotated, Any
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse
+from mcp.server import MCPServer
+from mcp.server.mcpserver.exceptions import ToolError
+from pydantic import Field
 from sqlalchemy import text
 
 from fooddb import gtin, health, resolve
 from fooddb.db import engine
 
-app = FastAPI(title="fooddb", version="0.2.0")
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    async with mcp.session_manager.run():
+        yield
+
+
+app = FastAPI(title="fooddb", version="0.2.0", lifespan=lifespan)
 
 
 def _pids(sql: str, **params) -> list[int]:
@@ -85,3 +99,58 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
     if not items:
         raise HTTPException(404, "product not found" + ("" if include == "off" else " in core; try include=off"))
     return {"items": items}
+
+
+mcp = MCPServer("fooddb", instructions="Food nutrition per 100 g or 100 ml, with a licence tag on every value. "
+                "Core data by default; include_off=True adds the Open Food Facts layer (ODbL).")
+
+
+def _tool(handler, *args, **kwargs) -> dict:
+    """An MCP tool answers with the REST handler's body, and its HTTP error as a tool error."""
+    try:
+        return handler(*args, **kwargs)
+    except HTTPException as e:
+        raise ToolError(e.detail)
+
+
+def _include(include_off: bool) -> str | None:
+    return "off" if include_off else None
+
+
+@mcp.tool()
+def search_foods(q: Annotated[str, Field(min_length=2)], limit: Annotated[int, Field(ge=1, le=100)] = 20,
+                 snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+    """Search foods and products by name."""
+    return _tool(search, q=q, include=_include(include_off), limit=limit, snapshot=snapshot)
+
+
+@mcp.tool()
+def get_product_by_barcode(barcode: str, snapshot: date | None = None,
+                           include_off: bool = False) -> dict[str, Any]:
+    """Products with this barcode (GTIN-8, -12, -13 or -14)."""
+    return _tool(by_barcode, barcode, _include(include_off), snapshot)
+
+
+@mcp.tool()
+def get_food(product_id: int, snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+    """One product by its fooddb id."""
+    return _tool(get_product, product_id, _include(include_off), snapshot)
+
+
+@mcp.tool()
+def get_record_product(record_id: str, snapshot: date | None = None,
+                       include_off: bool = False) -> dict[str, Any]:
+    """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
+    return _tool(get_record, record_id, _include(include_off), snapshot)
+
+
+@mcp.tool()
+def health_report() -> dict[str, Any]:
+    """Data freshness: each fetcher's last successful check and the snapshot age, against its schedule."""
+    return health.report()
+
+
+# Streamable HTTP at /mcp, served by this app. Stateless, so any API replica answers any request.
+app.router.routes.extend(mcp.streamable_http_app(
+    stateless_http=True, json_response=True, host=os.environ.get("FOODDB__BACKEND__API_HOST", "127.0.0.1"),
+).routes)

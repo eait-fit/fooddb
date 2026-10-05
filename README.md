@@ -1,10 +1,9 @@
 # fooddb
 
 A global food database: generic nutrition and branded products by barcode, kept current and
-served as a REST API and a CLI. An MCP server is planned
-([#9](https://github.com/eait-fit/fooddb/issues/9)).
+served as a REST API, an MCP server and a CLI.
 
-**Status: early prototype.** Fetchers for USDA FDC and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), and a REST API.
+**Status: early prototype.** Fetchers for USDA FDC and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), a REST API and an MCP server.
 
 - [docs/design.md](docs/design.md): the pipeline, the data model, sources and licences
 - [docs/architecture.md](docs/architecture.md): the parts, the deployment and the data flow as built, with diagrams
@@ -35,6 +34,40 @@ curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with
 curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
 curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot (see below)
 curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
+```
+
+## MCP
+
+The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
+`search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`.
+Each value carries its licence tag. OFF data comes back only with `include_off: true`. There is no
+authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+
+Two transports:
+
+- **stdio**, for a local client: `fooddb mcp`. It needs `FOODDB__BACKEND__DATABASE_URL`.
+- **Streamable HTTP** at `/mcp` on the API: `$(./dev url)/mcp` locally, `https://<your host>/mcp`
+  when self-hosted.
+
+Claude Code:
+
+```bash
+claude mcp add fooddb --env FOODDB__BACKEND__DATABASE_URL=postgresql://… -- uv run --directory /path/to/fooddb fooddb mcp
+claude mcp add --transport http fooddb "$(./dev url)/mcp"     # or over HTTP
+```
+
+Claude Desktop, in `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "fooddb": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/fooddb", "fooddb", "mcp"],
+      "env": {"FOODDB__BACKEND__DATABASE_URL": "postgresql://…"}
+    }
+  }
+}
 ```
 
 How data flows: fetchers write append-only observations per source record; values that fail a

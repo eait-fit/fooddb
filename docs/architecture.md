@@ -11,18 +11,20 @@ References have the form `file:line` and point to the code at commit `2480b2f`.
 
 ```mermaid
 flowchart LR
-    callers["REST callers"]
+    callers["REST and MCP callers"]
+    local["Local MCP client<br/>Claude Desktop, Claude Code"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
         api["API<br/>fooddb serve"]
         worker["Worker<br/>fooddb worker"]
-        cli["CLI<br/>fooddb run, status, lookup"]
+        cli["CLI<br/>fooddb run, status, lookup, mcp"]
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
     end
     fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
-    callers -->|HTTPS| proxy -->|HTTP| api
+    callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
+    local -->|"stdio: fooddb mcp"| cli
     api -->|read| db
     worker -->|read, write| db
     cli -->|read, write| db
@@ -33,12 +35,14 @@ flowchart LR
 
 fooddb has three processes, and all of them come from one image (`Dockerfile:1`):
 
-- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. It only reads.
+- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. It only reads. It also serves the MCP
+  server over Streamable HTTP at `/mcp`. See [MCP](#mcp).
 - The **worker** (`fooddb worker`, `cli.py:26`) runs the fetches, the match job and the snapshot.
   The queue is [pq](https://github.com/ricwo/pq), which keeps its tasks in the same Postgres
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:103`).
+  `fooddb mcp` runs the MCP server on stdio for a local client.
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:53`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
@@ -56,12 +60,12 @@ flowchart TB
     subgraph host["Docker host"]
         caddy["Caddy on the host<br/>ports 80, 443<br/>(docs/deploy.md, not in Compose)"]
         subgraph stack["Compose project fooddb"]
-            dbc[("db<br/>postgres:17-alpine<br/>health: pg_isready")]
+            dbc[("db<br/>postgres:18-alpine<br/>health: pg_isready")]
             mig["migrate<br/>fooddb migrate<br/>restart: no"]
             apic["api<br/>fooddb serve, port 8000<br/>health: /livez"]
             wk["worker<br/>fooddb worker<br/>health check off"]
         end
-        vol[["volume fooddb_pgdata"]]
+        vol[["volume fooddb_pgdata18"]]
     end
     up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
     client -->|"HTTPS 443"| caddy
@@ -80,8 +84,8 @@ Thin arrows are network traffic. Thick arrows are the start order.
 
 [`deploy/docker-compose.yml`](../deploy/docker-compose.yml) defines four services:
 
-- `db` keeps its data in the `pgdata` volume (`deploy/docker-compose.yml:21`). Compose names it
-  `fooddb_pgdata`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
+- `db` keeps its data in the `pgdata18` volume (`deploy/docker-compose.yml:21`). Compose names it
+  `fooddb_pgdata18`, because the project name is `fooddb` (`deploy/docker-compose.yml:3`).
 - `migrate` starts when `db` is healthy (`deploy/docker-compose.yml:33`). It applies the Alembic
   migrations, then the pq migrations, and stops (`cli.py:21`).
 - `api` and `worker` start only after `migrate` stops with success
@@ -487,6 +491,41 @@ flowchart LR
 - A fetch that finds nothing new also counts as a successful check (`health.py:19`,
   `jobs.py:21`, `jobs.py:37`). The full OFF dump has no health entry.
 
+### MCP
+
+```mermaid
+flowchart LR
+    local["Local MCP client"] -->|"stdio: fooddb mcp"| srv["api.mcp<br/>MCPServer"]
+    remote["Remote MCP client"] -->|"POST /mcp"| route["Route /mcp on the FastAPI app<br/>stateless, JSON responses"] --> srv
+    srv --> tool["MCP tool<br/>include_off to include=off"]
+    tool --> h["REST handler<br/>search, by_barcode, get_product, get_record"]
+    tool --> rep["health.report()"]
+    h --> R["resolve.products"]
+    h -.->|"HTTPException"| err["tool error with the same detail"]
+```
+
+The MCP server is `mcp` in `api.py`. It uses the official MCP Python SDK (`MCPServer`). Each tool
+calls the REST handler for the same read, so MCP and REST cannot answer differently:
+
+| Tool | Calls | REST equivalent |
+|---|---|---|
+| `search_foods` | `search` | `GET /v1/foods?q=` |
+| `get_product_by_barcode` | `by_barcode` | `GET /v1/products/{barcode}` |
+| `get_food` | `get_product` | `GET /v1/foods/{product_id}` |
+| `get_record_product` | `get_record` | `GET /v1/records/{record_id}` |
+| `health_report` | `health.report` | `GET /healthz` |
+
+- `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
+  Each value keeps its `licence` tag, as in REST.
+- `snapshot` pins a day, as `?snapshot=` does. `q` and `limit` have the same limits as REST.
+- A 404 or 422 from the handler becomes an MCP tool error with the same message.
+- Over HTTP, the FastAPI lifespan runs the SDK's session manager. The route is stateless, so any
+  API replica can answer any request.
+- When `FOODDB__BACKEND__API_HOST` is `127.0.0.1` (the local default), the SDK refuses requests
+  with a `Host` header other than localhost. In the image the value is `0.0.0.0`, so the check is
+  off, and the reverse proxy sets the host.
+- The MCP server has no authentication, like the REST API.
+
 ## Planned, not built
 
 [design.md](design.md) and [decisions.md](decisions.md) describe these parts. The code does not
@@ -507,7 +546,6 @@ flowchart LR
     orouter["OpenRouter"]
     agents["Local agents<br/>Claude, Codex, Devin"]
     review["Review UI<br/>SQLAdmin and photo page"]
-    mcp["MCP server"]
     keys["API keys, rate limits<br/>RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
     odbl["Monthly ODbL dump<br/>of the off layer"]
@@ -519,12 +557,11 @@ flowchart LR
     port -.->|"source label"| obs
     pend -.-> review
     review -.->|"accept or reject"| obs
-    mcp -.->|"same reads as the API"| snap
     keys -.-> api
     snap -.->|"nightly refresh"| eaitc
     obs -.-> odbl
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,port,orouter,agents,review,mcp,keys,eaitc,odbl planned
+    class tables,brand,eaitp,port,orouter,agents,review,keys,eaitc,odbl planned
 ```
 
 - **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
@@ -536,8 +573,8 @@ flowchart LR
   differ. Agents use the same queue through the API. Today no code changes the status of a pending
   observation.
 - **Checks.** Ranges per category, and front-of-pack warning seals.
-- **Access.** The MCP server, API keys, rate limits and the RapidAPI listing. The REST API has no
-  authentication today.
+- **Access.** API keys, rate limits and the RapidAPI listing. The REST API and the MCP server have
+  no authentication today.
 - **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the nightly
   snapshot. No export endpoint or eait job exists yet.
 - **ODbL dump.** A monthly ODbL dump of the OFF-derived layer.
