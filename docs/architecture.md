@@ -13,6 +13,7 @@ References have the form `file:line` and point to the code at commit `2480b2f`.
 flowchart LR
     callers["REST and MCP callers"]
     consumer["Consumer with a local copy<br/>eait"]
+    reviewer["Reviewer<br/>browser at /admin"]
     local["Local MCP client<br/>Claude Desktop, Claude Code"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
@@ -26,8 +27,9 @@ flowchart LR
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
     consumer -->|"HTTPS, GET /v1/snapshots/{day}/export"| proxy
+    reviewer -->|HTTPS| proxy
     local -->|"stdio: fooddb mcp"| cli
-    api -->|read| db
+    api -->|"read, write review decisions"| db
     worker -->|read, write| db
     cli -->|read, write| db
     worker -->|"HTTPS, weekly check"| fdc
@@ -37,8 +39,9 @@ flowchart LR
 
 fooddb has three processes, and all of them come from one image (`Dockerfile:1`):
 
-- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. It only reads. It also serves the MCP
-  server over Streamable HTTP at `/mcp`. See [MCP](#mcp).
+- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its only write is a review
+  decision. It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)), and the
+  SQLAdmin review UI at `/admin` (see [Review](#review)).
 - The **worker** (`fooddb worker`, `cli.py:26`) runs the fetches, the match job and the snapshot.
   The queue is [pq](https://github.com/ricwo/pq), which keeps its tasks in the same Postgres
   database (`jobs.py:14`).
@@ -125,7 +128,9 @@ flowchart TD
     chk --> foodt[("food<br/>one row per source record")]
     chk --> diff["_observations()<br/>changed values, withdrawn fields as null"]
     diff --> obs[("observation<br/>append-only")]
-    obs -->|"status pending: the record failed a check"| queue["ingest.pending()<br/>review queue, read only"]
+    obs -->|"status pending: a failed check implicates the field"| queue["review.queue()<br/>GET /v1/review, MCP, /admin"]
+    queue --> decide["review.decide()<br/>accept or reject, once"]
+    decide -->|"status accepted or rejected, reviewed_by, reviewed_at"| obs
     obs -->|"status accepted"| match["match.run()<br/>Splink on DuckDB, in process"]
     match -->|"food.product_id, product.merged_into"| prod
     obs -->|"newest accepted value per record"| resolver["resolve.values_sql()<br/>trust rank, then newest"]
@@ -171,29 +176,66 @@ with `EmptyRun`, because that usually means the source format changed (`ingest.p
 For each batch, `_write` does these steps (`ingest.py:104`):
 
 1. It creates one `product` row for each record that it did not see before (`ingest.py:114`).
-2. It runs the checks on the record (`ingest.py:122`). The failed check names go into `food.flags`.
+2. It runs the checks on the record (`ingest.py:108`). The failed check names go into `food.flags`.
 3. It upserts the `food` row. An older file cannot overwrite newer metadata (`ingest.py:139`).
 4. It inserts observations only for values that changed, and a null value for each field that the
    source removed (`ingest.py:158`). A duplicate observation is ignored (`ingest.py:145`).
 
-The `observation` table is append-only. The code never updates or deletes an observation.
+The `observation` table is append-only. The code never deletes an observation. The only update is
+a review decision: it moves a `pending` observation to `accepted` or `rejected`, once
+(`review.py:51`).
 
 ### Checks and review status
 
-`checks.flags` runs five checks per record (`checks.py:6`):
+`checks.flags` runs five checks per record (`checks.py:8`). Each failed check names the fields that
+it implicates:
 
-- Atwater energy against the macros
-- protein, fat and carbohydrate over 100 g
-- sugars over carbohydrate, and saturates over fat
-- negative values
+| Check | Implicated fields |
+|---|---|
+| `energy-mismatch`: Atwater energy against the macros | `ENERC_KCAL`, `PROCNT`, `FAT`, `CHOCDF` |
+| `macros-over-100g`: protein, fat and carbohydrate over 100 g | the macros that the record has |
+| `sugars-over-carbs` | `SUGAR`, `CHOCDF` |
+| `saturates-over-fat` | `FASAT`, `FAT` |
+| `negative-value` | each negative field |
 
 The checks flag values, but they do not change them.
 
-If a record fails one check, all its new observations get the status `pending` (`ingest.py:172`).
-The resolver and the match job read only `accepted` observations (`resolve.py:24`, `match.py:35`).
-Thus the last accepted value stays in service. `ingest.pending()` lists the pending values
-(`ingest.py:56`). No API endpoint, CLI command or UI calls it, and no code sets an observation to
-`accepted` or `rejected` after the insert.
+A new observation of an implicated field gets the status `pending`. All other new observations of
+the record get `accepted` (`ingest.py:154`). The resolver and the match job read only `accepted`
+observations (`resolve.py:24`, `match.py:35`). Thus the last accepted value of a held field stays
+in service. The [review loop](#review) moves each pending value out.
+
+### Review
+
+```mermaid
+flowchart LR
+    obs[("observation<br/>status pending")] --> q["review.queue()<br/>grouped per record"]
+    q --> rest["GET /v1/review"]
+    q --> mq["MCP review_queue"]
+    obs --> adm["SQLAdmin /admin<br/>pending values, read only"]
+    md["MCP decide_review"] --> post["POST /v1/review/{observation_id}"]
+    post --> d["review.decide()"]
+    adm -->|"accept or reject action, by admin"| d
+    d -->|"accepted: the resolver reads it"| build["next snapshot.build()"]
+    d -->|"rejected: never served"| obs
+```
+
+- `review.queue` returns the pending values grouped per source record, newest first
+  (`review.py:18`). Each item has the record's failed checks (`food.flags`) and the values that the
+  API serves now for its product (`resolve.products`).
+- `review.decide` sets `status`, `reviewed_by`, `reviewed_at` and `review_note` in one update. The
+  update matches only a `pending` row, so a value is decided once. A second decision gets a 409, and
+  an unknown id gets a 404.
+- An accepted value goes into the next snapshot build. It wins only if it is the newest accepted
+  value of its record and field. Snapshots of earlier days do not change.
+- A rejected value is never served. If the source sends the same value again, ingest sees no change
+  and stores nothing, so the value does not come back for review.
+- The REST routes are on one `APIRouter`, `review_router` (`api.py:105`). The MCP tools
+  `review_queue` and `decide_review` call the same handlers. The SQLAdmin actions call
+  `review.decide` with `by` set to `admin` (`admin.py:27`). They are GET requests, as SQLAdmin
+  builds them.
+- Nothing authenticates these writes yet. [#10](https://github.com/eait-fit/fooddb/issues/10) adds
+  API keys to the router and the MCP review tools in one place.
 
 ### Match records into products
 
@@ -354,6 +396,9 @@ erDiagram
         text licence
         timestamptz observed_at UK
         timestamptz ingested_at
+        text reviewed_by "null until a review decision"
+        timestamptz reviewed_at
+        text review_note
     }
     snapshot {
         date day PK
@@ -389,7 +434,7 @@ erDiagram
     }
 ```
 
-Four Alembic migrations make this schema:
+Six Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -398,6 +443,10 @@ Four Alembic migrations make this schema:
   nullable and drops the `food_value` view (`alembic/versions/0002_products_and_value_status.py:14`).
 - `0003` adds `snapshot` and `snapshot_value` (`alembic/versions/0003_snapshots.py:14`).
 - `0004` adds `fetcher_check` (`alembic/versions/0004_fetcher_check.py:14`).
+- `0005` indexes `product.merged_into` (`alembic/versions/0005_product_merged_into_idx.py:14`).
+- `0006` adds `reviewed_by`, `reviewed_at` and `review_note` to `observation`, and the partial index
+  `observation_pending_idx` on the pending rows for the review queue
+  (`alembic/versions/0006_review_decisions.py:15`).
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -567,17 +616,20 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 | `get_food` | `get_product` | `GET /v1/foods/{product_id}` |
 | `get_record_product` | `get_record` | `GET /v1/records/{record_id}` |
 | `health_report` | `health.report` | `GET /healthz` |
+| `review_queue` | `review_queue` | `GET /v1/review` |
+| `decide_review` | `decide_review` | `POST /v1/review/{observation_id}` |
 
 - `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
   Each value keeps its `licence` tag, as in REST.
 - `snapshot` pins a day, as `?snapshot=` does. `q` and `limit` have the same limits as REST.
-- A 404 or 422 from the handler becomes an MCP tool error with the same message.
+- A 404, 409 or 422 from the handler becomes an MCP tool error with the same message.
 - Over HTTP, the FastAPI lifespan runs the SDK's session manager. The route is stateless, so any
   API replica can answer any request.
 - When `FOODDB__BACKEND__API_HOST` is `127.0.0.1` (the local default), the SDK refuses requests
   with a `Host` header other than localhost. In the image the value is `0.0.0.0`, so the check is
   off, and the reverse proxy sets the host.
-- The MCP server has no authentication, like the REST API.
+- The MCP server has no authentication, like the REST API. `decide_review` is its only write. See
+  [Review](#review).
 
 ## Planned, not built
 
@@ -590,6 +642,7 @@ flowchart LR
         api["REST API"]
         obs[("observation")]
         pend["pending observations"]
+        review["Review queue<br/>API, MCP, SQLAdmin"]
         snap[("snapshot_value")]
         exp["Snapshot export<br/>NDJSON per day"]
     end
@@ -599,7 +652,7 @@ flowchart LR
     port["Model port"]
     orouter["OpenRouter"]
     agents["Local agents<br/>Claude, Codex, Devin"]
-    review["Review UI<br/>SQLAdmin and photo page"]
+    photo["Photo page<br/>photo next to the fields that differ"]
     keys["API keys, rate limits<br/>RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
     odbl["Monthly ODbL dump<br/>of the off layer"]
@@ -609,14 +662,15 @@ flowchart LR
     port -.-> orouter
     port -.-> agents
     port -.->|"source label"| obs
-    pend -.-> review
-    review -.->|"accept or reject"| obs
+    pend --> review
+    review -->|"accept or reject"| obs
+    review -.-> photo
     keys -.-> api
     snap --> exp
     exp -.->|"nightly refresh"| eaitc
     obs -.-> odbl
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,port,orouter,agents,review,keys,eaitc,odbl planned
+    class tables,brand,eaitp,port,orouter,agents,photo,keys,eaitc,odbl planned
 ```
 
 - **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
@@ -624,9 +678,8 @@ flowchart LR
   `label` above `fdc` (`resolve.py:15`), but no fetcher writes them.
 - **Model port.** One port for all LLM work, with OpenRouter for the hosted pipeline and local
   agents for customers' own runs.
-- **Review.** A review UI on SQLAdmin, plus a page that shows the photo next to the fields that
-  differ. Agents use the same queue through the API. Today no code changes the status of a pending
-  observation.
+- **Review photo page.** A page that shows the label photo next to the fields that differ. It needs
+  photo evidence on observations ([#12](https://github.com/eait-fit/fooddb/issues/12)).
 - **Checks.** Ranges per category, and front-of-pack warning seals.
 - **Access.** API keys, rate limits and the RapidAPI listing. The REST API and the MCP server have
   no authentication today.

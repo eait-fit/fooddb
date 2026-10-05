@@ -4,16 +4,16 @@ include=off (include_off in MCP)."""
 import os
 from contextlib import asynccontextmanager
 from datetime import date
-from typing import Annotated, Any
+from typing import Annotated, Any, Literal
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import APIRouter, FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse
 from mcp.server import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
-from pydantic import Field
+from pydantic import BaseModel, Field
 from sqlalchemy import text
 
-from fooddb import export, gtin, health, resolve
+from fooddb import admin, export, gtin, health, resolve, review
 from fooddb.db import engine
 
 
@@ -102,6 +102,37 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
     return {"items": items}
 
 
+# Review: the only writes. Open until #10 requires an API key on this router (and the MCP review tools).
+review_router = APIRouter(prefix="/v1/review", tags=["review"])
+
+
+class Decision(BaseModel):
+    decision: Literal["accept", "reject"]
+    by: str = Field(min_length=1, description="who decided")
+    note: str | None = None
+
+
+@review_router.get("")
+def review_queue(limit: int = Query(100, ge=1, le=1000)) -> dict:
+    """Values a failed check held back, grouped per source record, next to the values served now."""
+    return {"items": review.queue(limit)}
+
+
+@review_router.post("/{observation_id}")
+def decide_review(observation_id: int, body: Decision) -> dict:
+    """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
+    try:
+        return review.decide(observation_id, body.decision, body.by, body.note)
+    except review.NotPending as e:
+        raise HTTPException(409, str(e))
+    except LookupError as e:
+        raise HTTPException(404, str(e))
+
+
+app.include_router(review_router)
+admin.mount(app)
+
+
 mcp = MCPServer("fooddb", instructions="Food nutrition per 100 g or 100 ml, with a licence tag on every value. "
                 "Core data by default; include_off=True adds the Open Food Facts layer (ODbL).")
 
@@ -149,6 +180,20 @@ def get_record_product(record_id: str, snapshot: date | None = None,
 def health_report() -> dict[str, Any]:
     """Data freshness: each fetcher's last successful check and the snapshot age, against its schedule."""
     return health.report()
+
+
+# Review tools: open until #10, like the /v1/review routes.
+@mcp.tool(name="review_queue")
+def review_queue_tool(limit: Annotated[int, Field(ge=1, le=1000)] = 100) -> dict[str, Any]:
+    """Values a failed check held back, grouped per source record, next to the values served now."""
+    return _tool(review_queue, limit)
+
+
+@mcp.tool(name="decide_review")
+def decide_review_tool(observation_id: int, decision: Literal["accept", "reject"], by: str,
+                       note: str | None = None) -> dict[str, Any]:
+    """Accept a pending value (served from the next snapshot on) or reject it (never served). `by` names who decided."""
+    return _tool(decide_review, observation_id, Decision(decision=decision, by=by, note=note))
 
 
 # Streamable HTTP at /mcp, served by this app. Stateless, so any API replica answers any request.

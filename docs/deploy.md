@@ -101,9 +101,15 @@ without more configuration.
 
    ```caddy
    fooddb.example.com {
+   	@review path /admin /admin/* /v1/review /v1/review/*
+   	respond @review 403
    	reverse_proxy 127.0.0.1:8000
    }
    ```
+
+   The review routes have no authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+   The `@review` lines keep them off the internet. To review, open an SSH tunnel to port 8000 and
+   use `http://127.0.0.1:8000/admin`. The MCP tool `decide_review` at `/mcp` stays open until #10.
 
 3. Load the new configuration:
 
