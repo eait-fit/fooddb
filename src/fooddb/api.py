@@ -23,7 +23,7 @@ async def lifespan(_app: FastAPI):
         yield
 
 
-app = FastAPI(title="fooddb", version="0.2.0", lifespan=lifespan)
+app = FastAPI(title="fooddb", version="0.3.0", lifespan=lifespan)
 app.include_router(export.router)
 
 
@@ -133,7 +133,7 @@ app.include_router(review_router)
 admin.mount(app)
 
 
-mcp = MCPServer("fooddb", instructions="Food nutrition per 100 g or 100 ml, with a licence tag on every value. "
+mcp = MCPServer("fooddb", instructions="Food nutrition per 100 g or 100 ml. Every field carries its source and licence. "
                 "Core data by default; include_off=True adds the Open Food Facts layer (ODbL).")
 
 
