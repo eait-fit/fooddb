@@ -5,7 +5,7 @@ This runbook installs fooddb on one server with Docker Compose. The stack is in
 
 | Service | What it does |
 |---|---|
-| `db` | Postgres 17. The data is in the `fooddb_pgdata` volume. |
+| `db` | Postgres 18. The data is in the `fooddb_pgdata18` volume. |
 | `migrate` | Applies the fooddb and pq migrations, then stops. It runs on every `up`. |
 | `api` | The REST API on port 8000 inside the container. |
 | `worker` | The pq job worker: fetches, matching and the nightly snapshot. |
@@ -178,6 +178,11 @@ docker compose exec worker fooddb status   # row counts, the last 5 fetch runs, 
    ```bash
    docker compose up -d --build
    ```
+
+A new major version of Postgres cannot read the data of the previous one. The volume name carries
+the major version (`pgdata18`), so a new major starts with a new, empty volume. To keep your data,
+make a backup before the upgrade and restore it after. See [Back up](#back-up) and
+[Restore](#restore).
 
 The `migrate` service applies the new migrations before the `api` and `worker` services start.
 If a migration fails, `api` and `worker` do not start. Read the cause with
