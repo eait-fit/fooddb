@@ -172,7 +172,10 @@ def test_values_failing_checks_wait_for_review_while_the_last_good_ones_serve():
     ingest.run("t", "typo", [rec(observed_at=datetime(2026, 6, 1, tzinfo=UTC), values=typo)])
     p = product("fdc:1")
     assert p["per_100"]["ENERC_KCAL"]["value"] == 229
-    assert ("fdc:1", "ENERC_KCAL", 2290) in [(r["record"], r["nutrient"], r["value"]) for r in ingest.pending()]
+    from fooddb import review
+
+    assert ("fdc:1", "ENERC_KCAL", 2290) in [
+        (i["record"], v["nutrient"], v["value"]) for i in review.queue() for v in i["pending"]]
 
 
 def test_unchanged_values_are_not_stored_again_and_dropped_fields_are_withdrawn():
@@ -460,3 +463,100 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     jobs.fetch_off_deltas()  # later deltas wait for the nightly snapshot
     assert q.drain() == ["match_products"]
     assert product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]["value"] == 539
+
+
+TYPO = HUMMUS | {"ENERC_KCAL": 2290.0, "SUGAR": 20.0, "FIBTG": 6.0}  # 10x kcal, sugars over carbs, new fibre
+
+
+def ingest_typo() -> None:
+    from fooddb import ingest
+
+    ingest.run("t", "good", [rec(values=HUMMUS)])
+    ingest.run("t", "typo", [rec(observed_at=datetime(2026, 6, 1, tzinfo=UTC), values=TYPO)])
+
+
+def pending_id(nutrient: str) -> int:
+    from fooddb import review
+
+    return next(v["observation_id"] for i in review.queue() for v in i["pending"] if v["nutrient"] == nutrient)
+
+
+def test_a_failing_check_holds_back_only_the_fields_it_implicates():
+    from fooddb import review
+
+    ingest_typo()
+    [item] = review.queue()
+    assert item["record"] == "fdc:1" and item["product_id"] == product("fdc:1")["id"]
+    assert {v["nutrient"]: v["value"] for v in item["pending"]} == {"ENERC_KCAL": 2290, "SUGAR": 20}
+    assert {"energy-mismatch", "sugars-over-carbs"} <= set(item["checks"])
+    assert item["served"]["ENERC_KCAL"]["value"] == 229
+    per_100 = product("fdc:1")["per_100"]
+    assert (per_100["ENERC_KCAL"]["value"], per_100["FIBTG"]["value"]) == (229, 6)  # fibre passed: served
+    assert "SUGAR" not in per_100
+
+
+def test_an_accepted_value_is_served_from_the_next_snapshot(monkeypatch):
+    from fooddb import review
+
+    ingest_typo()
+    build_on(monkeypatch, "2026-10-01")
+    obs = pending_id("ENERC_KCAL")
+    r = client().post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester", "note": "label says so"})
+    assert r.status_code == 200, r.text
+    d = r.json()
+    assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester", "label says so")
+    assert d["reviewed_at"]
+    assert kcal("fdc:1") == 229  # the snapshot holds until the next build
+    build_on(monkeypatch, "2026-10-02")
+    assert kcal("fdc:1") == 2290
+    assert kcal("fdc:1", snapshot="2026-10-01") == 229
+    assert [v["nutrient"] for i in review.queue() for v in i["pending"]] == ["SUGAR"]
+
+
+def test_a_rejected_value_is_never_served(monkeypatch):
+    from fooddb import ingest
+
+    ingest_typo()
+    obs = pending_id("ENERC_KCAL")
+    assert client().post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).json()["status"] == "rejected"
+    # The source sends the same typo again: it is not stored again, so it does not come back for review.
+    ingest.run("t", "typo-again", [rec(observed_at=datetime(2026, 7, 1, tzinfo=UTC), values=TYPO)])
+    build_on(monkeypatch, "2026-10-01")
+    assert kcal("fdc:1") == 229
+    assert client().get("/v1/review").json()["items"][0]["pending"][0]["nutrient"] == "SUGAR"
+
+
+def test_review_decisions_are_final_and_validated():
+    ingest_typo()
+    obs = pending_id("ENERC_KCAL")
+    c = client()
+    assert c.post(f"/v1/review/{obs}", json={"decision": "maybe", "by": "tester"}).status_code == 422
+    assert c.post(f"/v1/review/{obs}", json={"decision": "accept"}).status_code == 422  # who decided is required
+    assert c.post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester"}).status_code == 200
+    assert c.post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).status_code == 409
+    assert c.post("/v1/review/999999", json={"decision": "accept", "by": "tester"}).status_code == 404
+
+
+def test_mcp_agents_work_the_same_review_queue():
+    ingest_typo()
+    [item] = call("review_queue").structured_content["items"]
+    sugar = next(v["observation_id"] for v in item["pending"] if v["nutrient"] == "SUGAR")
+    assert call("decide_review", observation_id=sugar, decision="reject", by="agent").structured_content["status"] == "rejected"
+    assert call("decide_review", observation_id=sugar, decision="accept", by="agent").is_error
+    assert [v["nutrient"] for v in call("review_queue").structured_content["items"][0]["pending"]] == ["ENERC_KCAL"]
+
+
+def test_admin_lists_pending_values_and_accepts_them():
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    ingest_typo()
+    obs = pending_id("ENERC_KCAL")
+    c = client()
+    page = c.get("/admin/observation/list")
+    assert page.status_code == 200 and "2290" in page.text and "FIBTG" not in page.text
+    assert c.get(f"/admin/observation/action/accept?pks={obs}", follow_redirects=False).status_code == 302
+    with engine().connect() as conn:
+        row = conn.execute(text("select status, reviewed_by from observation where id = :id"), {"id": obs}).one()
+    assert tuple(row) == ("accepted", "admin")

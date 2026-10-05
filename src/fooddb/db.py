@@ -2,7 +2,8 @@
 
 `product` is one real-world product or food. `food` is one source record, linked to
 the product matching assigned it to. `observation` is append-only: one value per
-source record, nutrient and observation time, never updated (null = withdrawn).
+source record, nutrient and observation time (null = withdrawn). Only a review
+decision changes a row: a pending value becomes accepted or rejected, once.
 `fooddb.resolve` picks the served value per product and field.
 """
 
@@ -23,6 +24,7 @@ from sqlalchemy import (
     UniqueConstraint,
     create_engine,
     func,
+    text,
 )
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.engine import Engine
@@ -74,7 +76,11 @@ observation = Table(
     Column("licence", Text, nullable=False),
     Column("observed_at", DateTime(timezone=True), nullable=False),
     Column("ingested_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
+    Column("reviewed_by", Text),
+    Column("reviewed_at", DateTime(timezone=True)),
+    Column("review_note", Text),
     UniqueConstraint("food_id", "nutrient", "source", "observed_at", name="observation_once"),
+    Index("observation_pending_idx", "food_id", postgresql_where=text("status = 'pending'")),
 )
 
 fetch_run = Table(
