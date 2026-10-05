@@ -21,7 +21,10 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
 (`/v1/review`, two MCP tools, SQLAdmin at `/admin`). The checks run before the insert and set each
-value's status. **Not built:** the review page with the photo
+value's status. Each merge is logged. A reviewer splits a wrong merge through the API, MCP or
+SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
+Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
+hand-set), the review page with the photo
 ([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
 
 ### Intake lanes
