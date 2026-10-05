@@ -63,7 +63,7 @@ def schedule() -> None:
     """Periodic fetches. Idempotent: re-registering updates the schedule."""
     q = queue()
     q.schedule(fetch_off_deltas, run_every=timedelta(hours=6))
-    q.schedule(build_snapshot, cron="30 2 * * *")  # nightly: what the API serves the next day  # OFF publishes one delta a day
+    q.schedule(build_snapshot, cron="30 2 * * *")  # nightly: what the API serves the next day
     # A fresh install fills itself instead of waiting for the weekly cron: each source never
     # checked is fetched now, and a first snapshot follows (BATCH priority runs after the fetches).
     checked = {name for name, f in health.report()["fetchers"].items() if f["last_ok"]}

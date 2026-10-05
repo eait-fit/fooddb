@@ -64,9 +64,10 @@ The optional full Open Food Facts dump needs much more disk. See
 The first boot fills the database without help. The worker does these jobs in this sequence:
 
 1. It downloads USDA FoodData Central Foundation and SR Legacy.
-2. It builds the first snapshot.
-3. It downloads the newest Open Food Facts delta file.
-4. It runs Splink matching.
+2. It runs Splink matching.
+3. It builds the first snapshot.
+4. It downloads the newest Open Food Facts delta file.
+5. It runs Splink matching again.
 
 On a test server, `/healthz` changed to 200 after 70 seconds. On a slow network, it can take
 3 minutes. Wait for the 200:
@@ -84,7 +85,7 @@ docker compose exec worker fooddb run snapshot
 
 This step is necessary because the first snapshot runs before the Open Food Facts delta
 arrives. Without it, Open Food Facts products have an empty `per_100` until the nightly snapshot
-at 02:30.
+at 02:30. Issue [#2](https://github.com/eait-fit/fooddb/issues/2) removes this step.
 
 Do a test of the API:
 
@@ -147,7 +148,8 @@ docker compose up -d
 
 fooddb has two health endpoints:
 
-- `/livez` returns 200 when the API process runs. The container health check uses it.
+- `/livez` returns 200 when the API process runs and can read the database. The container health
+  check uses it.
 - `/healthz` returns 200 when all the data is fresh, and 503 when one source is stale. The
   JSON body shows the last successful run and the maximum age of each fetcher and of the snapshot.
 

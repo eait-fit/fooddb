@@ -1,7 +1,8 @@
 # fooddb
 
 A global food database: generic nutrition and branded products by barcode, kept current and
-served as a REST API, an MCP server and a CLI.
+served as a REST API and a CLI. An MCP server is planned
+([#9](https://github.com/eait-fit/fooddb/issues/9)).
 
 **Status: early prototype.** Fetchers for USDA FDC and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), and a REST API.
 
@@ -44,7 +45,7 @@ product's resolved values (most trusted source per field), and the API serves th
 |---|---|---|---|
 | `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
 | `off` | Open Food Facts daily delta files | ODbL, `off` layer | every 6 hours |
-| `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | once, then deltas |
+| `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |
 | `match` | Splink product matching | – | after every fetch that added data |
 | `snapshot` | Nightly snapshot of resolved values | – | 02:30 daily |
 
