@@ -1,0 +1,3 @@
+#!/bin/sh
+# The dev stack for this worktree. Logic lives in scripts/dev.sh — root holds meta only.
+exec sh "$(dirname "$0")/scripts/dev.sh" "$@"

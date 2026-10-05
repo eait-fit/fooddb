@@ -1,0 +1,10 @@
+.venv
+.dev
+.cache
+.git
+tests
+scripts
+docs
+*.md
+.env*
+.fooddb-slot

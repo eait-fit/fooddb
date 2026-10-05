@@ -1,0 +1,32 @@
+[project]
+name = "fooddb"
+version = "0.1.0"
+description = "Global food nutrition database served as REST, MCP and CLI"
+license = "AGPL-3.0-only"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.142.2",
+    "httpx>=0.28.1",
+    "psycopg[binary]>=3.3.6",
+    "python-pq>=0.8.1",
+    "splink>=5.0.0",
+    "sqlalchemy>=2.1.3",
+    "typer>=0.27.2",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+fooddb = "fooddb.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fooddb"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

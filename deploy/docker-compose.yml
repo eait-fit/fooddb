@@ -1,0 +1,53 @@
+# Self-hosted fooddb: Postgres, a one-shot migration, the API and the job worker.
+# Runbook: docs/deploy.md. Every setting comes from deploy/.env (see deploy/.env.example).
+name: fooddb
+
+x-app: &app
+  image: ${FOODDB__DEPLOY__IMAGE:-fooddb:latest}
+  build: ..
+  restart: unless-stopped
+  environment:
+    FOODDB__BACKEND__DATABASE_URL: postgresql://fooddb:${FOODDB__BACKEND__POSTGRES_PASSWORD:?set FOODDB__BACKEND__POSTGRES_PASSWORD in deploy/.env}@db:5432/fooddb
+    FOODDB__BACKEND__MATCH_THRESHOLD: ${FOODDB__BACKEND__MATCH_THRESHOLD:-0.95}
+
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fooddb
+      POSTGRES_DB: fooddb
+      POSTGRES_PASSWORD: ${FOODDB__BACKEND__POSTGRES_PASSWORD:?set FOODDB__BACKEND__POSTGRES_PASSWORD in deploy/.env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "fooddb"]
+      interval: 5s
+      retries: 30
+
+  # Runs fooddb's and pq's migrations, then exits. The API and worker start only after it succeeds.
+  migrate:
+    <<: *app
+    restart: "no"
+    command: ["fooddb", "migrate"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  api:
+    <<: *app
+    command: ["fooddb", "serve"]
+    ports:
+      # Loopback only: put a TLS reverse proxy (Caddy, nginx) in front. See docs/deploy.md.
+      - "${FOODDB__DEPLOY__BIND:-127.0.0.1}:${FOODDB__DEPLOY__PORT:-8000}:8000"
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+  worker:
+    <<: *app
+    command: ["fooddb", "worker"]
+    healthcheck: { disable: true }
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+volumes:
+  pgdata:

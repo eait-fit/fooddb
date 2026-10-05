@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.cache/
+.dev/
+.env.worktree
+.fooddb-slot
+deploy/.env

@@ -1,0 +1,35 @@
+# Decisions
+
+Technical decisions. Business decisions are tracked outside this repo.
+
+## Settled
+
+| Date | Decision |
+|---|---|
+| 2026-10-04 | fooddb is a separate repo and service, not part of the eait backend. eait consumes the nightly snapshot. |
+| 2026-10-04 | Global scope. v1 covers markets where open data is rich: US, KR, JP, TW, the Nordics, DE, FR. |
+| 2026-10-04 | v1 covers both generic foods and branded products. Restaurants come later. |
+| 2026-10-04 | Python for everything, the API included: uv, FastAPI, SQLAlchemy with Alembic, the official MCP SDK, Typer, Splink. |
+| 2026-10-04 | Open Food Facts data stays in its own attributed layer. The API returns only core data by default, and OFF data with `include=off`. Every field carries a licence tag. The OFF-derived layer is published monthly as an ODbL dump. |
+| 2026-10-04 | Customers may store what they fetch. |
+| 2026-10-04 | The model layer is a port with two backends: OpenRouter, and local agents (Claude, Codex, Devin) running on the user's own licence. The hosted pipeline uses OpenRouter. When customers run the CLI or MCP server locally, they can point label reads at their own key, and the results come back as observations. |
+| 2026-10-04 | Data model: values per 100 g or 100 ml, plus the serving size printed on the label. |
+| 2026-10-04 | Search uses `pg_trgm` only. Known limit: short CJK names match poorly. |
+| 2026-10-04 | Snapshots: the API serves the latest one by default, and `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. |
+| 2026-10-04 | Brand upload form in v1. The uploader's brand is checked against the GS1 company prefix. |
+| 2026-10-04 | Review UI: SQLAdmin plus one custom page that shows the photo next to the fields that differ. Agents work the same queue through the API. |
+| 2026-10-04 | Hosting: on eait's infrastructure, with its own Postgres database. REST is sold through RapidAPI; MCP and CLI use our own API keys. |
+| 2026-10-04 | Code licence: AGPL-3.0 (changed from Apache-2.0 the same day). Anyone hosting a modified fooddb must publish their changes. API customers are not affected. The data is licensed separately: the core data under our own terms, the OFF layer under ODbL. |
+| 2026-10-04 | Products are matched entities. Every source record, barcoded or not, is matched by Splink to a product id. Barcode, name, brand, language and nutrient values are features. Matches above one probability threshold (default 0.95, configurable) merge automatically, with no human step. The resolver picks per field across all sources of a product, and the licence travels with each value. |
+| 2026-10-04 | Observations carry a review status. Values that pass the checks are accepted automatically; failing values stay pending and the last accepted value keeps being served. Pending values feed the review queue. |
+| 2026-10-04 | Reads: values are resolved per returned product inside each query now; a nightly snapshot table is added later, and the API switches to it for speed and `?snapshot=` pinning. |
+| 2026-10-04 | Data model: each value records its basis (per 100 g or per 100 ml); kJ-only energy is converted to kcal; a field that disappears from a newer source record is withdrawn; unchanged values are not stored again. |
+| 2026-10-04 | Ingest streams downloads to disk and reads them line by line. A full-dump OFF fetcher bootstraps the OFF layer before the daily deltas. |
+| 2026-10-04 | Health means freshness: each fetcher's last successful run within its schedule, shown in `/healthz` and `./dev status`. |
+
+## Open
+
+1. **GS1 prefix check.** GS1's public GEPIR lookup has mostly been replaced by "Verified by GS1",
+   which may require a paid GS1 membership. Find out what access costs.
+2. **Legal review.** How far ODbL reaches into served answers, and whether training a model on
+   OFF's CC BY-SA photos is allowed.
