@@ -22,13 +22,13 @@ def fetch_off_deltas(max_files: int = 1) -> None:
     for name, foods, obs in done:
         logger.info(f"off delta {name}: {foods} foods, {obs} new observations")
     if done:
-        _rematch()
+        _rematch(off.FETCHER)
 
 
 def fetch_off_dump(force: bool = False) -> None:
     result = off.fetch_dump(force=force)
     if result is not None:
-        _rematch()
+        _rematch(off.DUMP_FETCHER)
     logger.info("off dump: " + ("already loaded" if result is None else f"{result[0]} foods, {result[1]} new observations"))
 
 
@@ -36,7 +36,7 @@ def fetch_fdc(dataset: str = "foundation", force: bool = False) -> None:
     result = fdc.fetch(dataset, force=force)
     health.checked(f"fdc-{dataset}")
     if result is not None:
-        _rematch()
+        _rematch(f"fdc-{dataset}")
     logger.info(f"fdc {dataset}: " + ("already current" if result is None else f"{result[0]} foods, {result[1]} new observations"))
 
 
@@ -54,9 +54,15 @@ def build_snapshot() -> None:
     logger.info(f"snapshot: {snapshot.build()} products")
 
 
-def _rematch() -> None:
-    """Queue one matching pass after new data; repeated calls collapse into one pending task."""
+def _rematch(fetcher: str) -> None:
+    """Queue one matching pass after new data; repeated calls collapse into one pending task.
+    A fetcher's first data also queues a snapshot rebuild, so a fresh install serves every source
+    before the nightly build. BATCH priority runs it after the matching pass."""
+    from fooddb import snapshot
+
     queue().upsert(match_products, client_id="match-products")
+    if snapshot.predates(fetcher):
+        queue().upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
 
 
 def schedule() -> None:
