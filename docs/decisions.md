@@ -26,6 +26,7 @@ Technical decisions. Business decisions are tracked outside this repo.
 | 2026-10-04 | Data model: each value records its basis (per 100 g or per 100 ml); kJ-only energy is converted to kcal; a field that disappears from a newer source record is withdrawn; unchanged values are not stored again. |
 | 2026-10-04 | Ingest streams downloads to disk and reads them line by line. A full-dump OFF fetcher bootstraps the OFF layer before the daily deltas. |
 | 2026-10-05 | Snapshot pins: `?snapshot=DAY` returns the same values for the 30 days that it is kept, once that UTC day is over. Only today's snapshot is written, and a rebuild on the same day (the nightly build, or a fetcher's first data) replaces it. Thus a pin on today can change until the day ends. A merge after a build does not change a snapshot's values: a read collects the values of every product merged into the one asked for. Records and names stay live. |
+| 2026-10-05 | Licence tags: each served field is an object `{value, source, licence, record}`, not a flat value with a separate provenance map. Thus the tag stays with the value when a consumer copies one field, and the shape matches `per_100`. Each barcode is tagged with the most trusted record that has it. A field with no value is `null`. API version 0.3.0. |
 | 2026-10-04 | Health means freshness: each fetcher's last successful run within its schedule, shown in `/healthz` and `./dev status`. |
 
 ## Open

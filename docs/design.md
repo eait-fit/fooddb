@@ -82,8 +82,8 @@ crowd-versus-old-table rule are not built ([#5](https://github.com/eait-fit/food
   loads it.
 - Customers may store what they fetch.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
-  carries a licence tag. Built for nutrient values only
-  ([#4](https://github.com/eait-fit/fooddb/issues/4)).
+  carries a licence tag. Built: each served field, each barcode and each nutrient value has its
+  source and licence. The non-nutrient fields and the barcodes also name their source record.
 - Search uses `pg_trgm`. Known limit: short CJK names match poorly.
 
 ## Model port
