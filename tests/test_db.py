@@ -334,6 +334,28 @@ def test_a_day_is_final_once_it_is_over_and_only_today_is_rebuilt(monkeypatch):
     assert kcal("fdc:1", snapshot="2026-10-01") == 231  # 2026-10-01 is over: no build writes it again
 
 
+def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatch):
+    from fooddb import ingest, jobs
+
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+            values=HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}),
+    ])
+    survivor, merged_away = product("fdc:1")["id"], product("fdc:2")["id"]
+    assert survivor < merged_away
+    build_on(monkeypatch, "2026-10-01")
+    jobs.match_products()
+    for params in ({}, {"snapshot": "2026-10-01"}):
+        for pid in (survivor, merged_away):
+            r = client().get(f"/v1/foods/{pid}", params=params)
+            assert r.status_code == 200, r.text
+            p = r.json()
+            assert (p["id"], sorted(p["records"])) == (survivor, ["fdc:1", "fdc:2"])
+            # As if the merge had come before the build: fdc:2's newer kcal and its fibre.
+            assert {n: v["value"] for n, v in p["per_100"].items()} == HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
+
+
 def test_health_reports_stale_and_fresh_fetchers():
     from datetime import timedelta
 

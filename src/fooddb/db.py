@@ -35,6 +35,7 @@ product = Table(
     Column("id", BigInteger, primary_key=True),
     Column("merged_into", BigInteger, ForeignKey("product.id")),
     Column("created_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
+    Index("product_merged_into_idx", "merged_into"),
 )
 
 food = Table(
