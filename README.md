@@ -34,12 +34,20 @@ curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with
 curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
 curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot (see below)
 curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
+curl "$(./dev url)/v1/review"                                 # values a failed check held back
+curl -X POST "$(./dev url)/v1/review/42" -H 'content-type: application/json' \
+     -d '{"decision": "reject", "by": "kirill", "note": "10x typo"}'
 ```
+
+The review queue is also in a browser at `$(./dev url)/admin`. The review routes, the MCP review
+tools and `/admin` have no authentication yet
+([#10](https://github.com/eait-fit/fooddb/issues/10)), so do not expose them publicly.
 
 ## MCP
 
 The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
-`search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`.
+`search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`,
+plus the review tools `review_queue` and `decide_review`.
 Each value carries its licence tag. OFF data comes back only with `include_off: true`. There is no
 authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
 
