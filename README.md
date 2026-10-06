@@ -10,6 +10,7 @@ served as a REST API, an MCP server and a CLI.
 - [docs/decisions.md](docs/decisions.md): what is settled, and what is still open
 - [docs/landscape.md](docs/landscape.md): open-source competitors, and what we build vs reuse
 - [docs/deploy.md](docs/deploy.md): self-hosting with Docker Compose: install, TLS, upgrade, backup
+- [docs/data-licence.md](docs/data-licence.md): the data licences, the ODbL attribution and its share-alike obligation
 
 ## Run locally
 
@@ -197,6 +198,23 @@ curl -H 'Accept-Encoding: gzip' -o 2026-10-04.ndjson.gz "$(./dev url)/v1/snapsho
 
 The export is a read: it needs a `read` key when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`.
 
+## ODbL dump of the Open Food Facts layer
+
+Each month fooddb publishes the Open Food Facts part of its data as an ODbL dump. A line is one
+product with an OFF record: its fooddb id, its `off:` record ids, and only the fields and values
+tagged `ODbL-1.0`. The dumps need no API key, also when reads need one. They count against the
+rate limit.
+
+```bash
+curl "$(./dev url)/v1/dumps"                                    # manifests: day, products, size, sha256, licence
+curl -OJ "$(./dev url)/v1/dumps/fooddb-off-odbl-2026-09-30.ndjson.gz"
+./dev cli dump odbl --out dumps/                                # write one now, from the newest final day
+```
+
+The worker writes a dump on the 1st of each month at 04:00 UTC and keeps the newest 3. Use of the
+dump comes with the ODbL attribution and share-alike obligation: see
+[docs/data-licence.md](docs/data-licence.md).
+
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
 | `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
@@ -204,6 +222,7 @@ The export is a read: it needs a `read` key when `FOODDB__BACKEND__REQUIRE_KEY_F
 | `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |
 | `match` | Splink product matching | – | after every fetch that added data |
 | `snapshot` | Nightly snapshot of resolved values | – | 02:30 daily |
+| `odbl-dump` | ODbL dump of the OFF layer, newest final day | ODbL | 04:00 on the 1st of each month |
 
 `uv run pytest` runs the unit tests alone; the database suite is skipped without `./dev test`.
 
@@ -214,7 +233,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Report vulnerabilities privately: [SECUR
 ## Licence
 
 The code is under [AGPL-3.0](LICENSE). The data is licensed separately: the core data under
-fooddb's own terms, and the Open Food Facts layer under ODbL.
+fooddb's own terms, and the Open Food Facts layer under ODbL. See
+[docs/data-licence.md](docs/data-licence.md) for the attribution and the share-alike obligation.
 
 ## Relation to eait
 

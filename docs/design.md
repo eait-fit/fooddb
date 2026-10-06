@@ -20,7 +20,8 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 **Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
-(`/v1/review`, two MCP tools, SQLAdmin at `/admin`), and API keys with scopes and rate limits. The checks run before the insert and set each
+(`/v1/review`, two MCP tools, SQLAdmin at `/admin`), API keys with scopes and rate limits, and the
+monthly ODbL dump of the OFF layer at `/v1/dumps`. The checks run before the insert and set each
 value's status. Each merge is logged. A reviewer splits a wrong merge through the API, MCP or
 SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
 Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
@@ -129,7 +130,7 @@ Australian and similar labels. Energy is `ENERC_KCAL`, plus `ENERC_KJ` when the 
 | Source | Licence | Obligation |
 |---|---|---|
 | USDA FDC | CC0 | none |
-| Open Food Facts | ODbL | Share-alike on the derived database. It is kept in its own layer, which we publish monthly as an ODbL dump ([#14](https://github.com/eait-fit/fooddb/issues/14), not built). |
+| Open Food Facts | ODbL | Share-alike on the derived database. It is kept in its own layer, which we publish monthly as an ODbL dump at `/v1/dumps` ([#14](https://github.com/eait-fit/fooddb/issues/14), built). See [data-licence.md](data-licence.md). |
 | Most EU national tables | CC BY / OGL / NLOD | attribution |
 | Korea MFDS | public, no usage restriction | none |
 | Japan MEXT | cite the source | attribution |

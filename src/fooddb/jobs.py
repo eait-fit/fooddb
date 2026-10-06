@@ -54,6 +54,13 @@ def build_snapshot() -> None:
     logger.info(f"snapshot: {snapshot.build()} products")
 
 
+def dump_odbl() -> None:
+    from fooddb import dump
+
+    m = dump.write()
+    logger.info("odbl dump: " + ("no final snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
+
+
 def _rematch(fetcher: str) -> None:
     """Queue one matching pass after new data; repeated calls collapse into one pending task.
     A fetcher's first data also queues a snapshot rebuild, so a fresh install serves every source
@@ -70,6 +77,7 @@ def schedule() -> None:
     q = queue()
     q.schedule(fetch_off_deltas, run_every=timedelta(hours=6))
     q.schedule(build_snapshot, cron="30 2 * * *")  # nightly: what the API serves the next day
+    q.schedule(dump_odbl, cron="0 4 1 * *", priority=Priority.BATCH)  # monthly ODbL dump of the OFF layer
     # A fresh install fills itself instead of waiting for the weekly cron: each source never
     # checked is fetched now, and a first snapshot follows (BATCH priority runs after the fetches).
     checked = {name for name, f in health.report()["fetchers"].items() if f["last_ok"]}
@@ -84,5 +92,5 @@ def schedule() -> None:
 
 def enqueue(name: str, **kwargs) -> int:
     fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "match": match_products,
-          "snapshot": build_snapshot}[name]
+          "snapshot": build_snapshot, "odbl-dump": dump_odbl}[name]
     return queue().enqueue(fn, **kwargs)

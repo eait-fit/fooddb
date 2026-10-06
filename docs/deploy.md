@@ -7,8 +7,8 @@ This runbook installs fooddb on one server with Docker Compose. The stack is in
 |---|---|
 | `db` | Postgres 18. The data is in the `fooddb_pgdata18` volume. |
 | `migrate` | Applies the fooddb and pq migrations, then stops. It runs on every `up`. |
-| `api` | The REST API on port 8000 inside the container. |
-| `worker` | The pq job worker: fetches, matching and the nightly snapshot. |
+| `api` | The REST API on port 8000 inside the container. It reads the ODbL dumps from the `fooddb_dumps` volume. |
+| `worker` | The pq job worker: fetches, matching, the nightly snapshot and the monthly ODbL dump into `fooddb_dumps`. |
 
 The `api` and `worker` services start only after `migrate` succeeds.
 
@@ -204,6 +204,8 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` | `60` | Requests per minute per key, and per client IP for reads without a key. |
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
+| `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |
+| `FOODDB__BACKEND__DUMP_DIR` | `/app/dumps` | Where the worker writes the ODbL dumps and the API reads them. Compose sets it to the `dumps` volume. Outside Compose, the default is `dumps` in the working directory. |
 
 After you change `deploy/.env`, apply the change:
 
@@ -244,6 +246,19 @@ steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
   /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
 - The export is a read. Give the consumer its own `read` key, with a `--rate-limit` that is
   sufficient for its sync. See [API keys](#api-keys).
+
+## ODbL dumps
+
+The worker writes the ODbL dump of the Open Food Facts layer on the 1st of each month, at 04:00
+UTC. It dumps the newest final snapshot day to the `fooddb_dumps` volume, and keeps the newest
+`FOODDB__BACKEND__DUMP_KEEP` dumps. The API serves them at `/v1/dumps` with no API key, also when
+reads need one. The ODbL requires this. [data-licence.md](data-licence.md) has the terms.
+
+- To write a dump now: `docker compose exec worker fooddb dump odbl`.
+- The dump reads about 1000 products per second. The worker stops a task after 1 hour. With the
+  full OFF dump loaded (about 4 million products), the job does not finish in the worker. Then run
+  `docker compose exec worker fooddb dump odbl` from a host cron job on the 1st of each month.
+- A stopped run leaves a `.part` file. The next run replaces it. The API never serves it.
 
 ## Upgrade
 

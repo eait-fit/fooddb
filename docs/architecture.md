@@ -15,12 +15,14 @@ flowchart LR
     consumer["Consumer with a local copy<br/>eait"]
     reviewer["Reviewer<br/>browser at /admin, admin key"]
     local["Local MCP client<br/>Claude Desktop, Claude Code"]
+    anyone["Anyone<br/>ODbL dump users"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
         api["API<br/>fooddb serve"]
         worker["Worker<br/>fooddb worker"]
-        cli["CLI<br/>fooddb run, status, lookup, export, keys, mcp"]
+        cli["CLI<br/>fooddb run, status, lookup, export, dump, keys, mcp"]
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
+        dumps[("Dump directory<br/>ODbL dumps, manifests")]
     end
     fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
@@ -28,10 +30,13 @@ flowchart LR
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
     consumer -->|"HTTPS, GET /v1/snapshots/{day}/export"| proxy
     reviewer -->|HTTPS| proxy
+    anyone -->|"HTTPS, GET /v1/dumps, no key"| proxy
     local -->|"stdio: fooddb mcp"| cli
     api -->|"read, write review decisions, key use, rate counters"| db
     worker -->|read, write| db
     cli -->|read, write| db
+    worker -->|"write, monthly"| dumps
+    api -->|read| dumps
     worker -->|"HTTPS, weekly check"| fdc
     worker -->|"HTTPS, every 6 h"| offd
     cli -->|"HTTPS, manual: fooddb run off-dump"| offdump
@@ -50,7 +55,8 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:103`).
   `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
   snapshot to a file with the same code as the export endpoint (`cli.py:107`). `fooddb keys`
-  creates, lists and revokes API keys (`cli.py:128`).
+  creates, lists and revokes API keys (`cli.py:128`). `fooddb dump odbl` writes the ODbL dump now
+  (`cli.py:152`).
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:54`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
@@ -75,11 +81,14 @@ flowchart TB
             wk["worker<br/>fooddb worker<br/>health check off"]
         end
         vol[["volume fooddb_pgdata18"]]
+        dvol[["volume fooddb_dumps"]]
     end
     up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
     client -->|"HTTPS 443"| caddy
     caddy -->|"FOODDB__DEPLOY__BIND:PORT<br/>default 127.0.0.1:8000"| apic
     dbc --- vol
+    wk -->|"write"| dvol
+    apic -->|"read only"| dvol
     mig -->|5432| dbc
     apic -->|5432| dbc
     wk -->|5432| dbc
@@ -100,6 +109,9 @@ Thin arrows are network traffic. Thick arrows are the start order.
 - `api` and `worker` start only after `migrate` stops with success
   (`deploy/docker-compose.yml:42`, `deploy/docker-compose.yml:49`). A failed migration keeps both
   of them down.
+- `worker` writes the ODbL dumps to the `dumps` volume at `/app/dumps`. `api` mounts the same
+  volume read-only and serves it (`deploy/docker-compose.yml:49`, `deploy/docker-compose.yml:61`).
+  The image creates `/app/dumps` for the `fooddb` user, so a new volume is writable.
 - Compose publishes the API port on the loopback address only (`deploy/docker-compose.yml:41`).
   A TLS reverse proxy on the host forwards to it. [deploy.md](deploy.md#tls-with-caddy) shows the
   Caddy configuration.
@@ -441,6 +453,7 @@ first. The index `product_merged_into_idx` keeps this lookup fast.
 | First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:79`) | BATCH |
 | Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
+| ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:80`) | BATCH |
 
 pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
 
@@ -453,6 +466,7 @@ sequenceDiagram
     Note over W: schedule(), jobs.py:68
     W->>Q: schedule fetch_off_deltas every 6 h, next run now
     W->>Q: schedule build_snapshot, daily 02:30 UTC
+    W->>Q: schedule dump_odbl, 1st of the month 04:00 UTC, BATCH
     W->>Q: read fetcher_check and snapshot (health.report)
     W->>Q: upsert bootstrap-fdc-foundation, bootstrap-fdc-sr_legacy
     W->>Q: upsert bootstrap-snapshot, priority BATCH
@@ -762,8 +776,9 @@ dependency (`api.py:31`). See [Authentication](#authentication).
 - `GET /v1/snapshots/{day}/export` gets 404 for a day with no snapshot (`export.py:81`). The ETag
   is weak and is made of the day, the scope and `built_at`. A final day is never rebuilt, so its
   ETag never changes. A matching `If-None-Match` gets 304 (`export.py:87`).
-- `export.lines` reads in one repeatable-read transaction (`export.py:50`). A rebuild or a merge
-  during the export does not change what it sends.
+- `export.products` reads in one repeatable-read transaction (`export.py:46`). A rebuild or a
+  merge during the export does not change what it sends. `export.lines` makes one JSON line of
+  each product. The ODbL dump uses `export.products` too.
 - `IDS_SQL` selects every product with values that day, and follows `merged_into` to the survivor
   (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
   (`export.py:53`). Each batch goes through `resolve.products`, so each line has the shape of
@@ -771,6 +786,62 @@ dependency (`api.py:31`). See [Authentication](#authentication).
 - With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
 - `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
   ends in `.gz` (`cli.py:107`).
+
+### `GET /v1/dumps`
+
+```mermaid
+sequenceDiagram
+    participant Wk as Worker, 1st of the month
+    participant D as dump.write
+    participant E as export.products
+    participant F as Dump directory
+    participant Cl as Anyone
+    participant A as dump.download
+    Wk->>D: dump_odbl()
+    D->>D: newest day before today (UTC)
+    alt no final day
+        D-->>Wk: None, nothing written
+    else
+        loop each product of the day, include=off
+            E-->>D: product, as the export sends it
+            D->>D: odbl(): keep off records and ODbL-tagged fields, skip products with no off record
+        end
+        D->>F: gzipped NDJSON (.part, then rename), then the manifest
+        D->>F: delete all but the newest DUMP_KEEP dumps
+    end
+    Cl->>A: GET /v1/dumps/fooddb-off-odbl-2026-09-30.ndjson.gz, If-None-Match
+    A->>F: manifests, newest first
+    alt no manifest with this name
+        A-->>Cl: 404
+    else If-None-Match has the sha256
+        A-->>Cl: 304
+    else
+        A-->>Cl: 200 application/gzip, attachment, ETag = sha256
+    end
+```
+
+`dump.py` writes and serves the monthly ODbL dump of the Open Food Facts layer.
+
+- `dump.write` dumps the newest final day: the newest snapshot day before today (UTC)
+  (`dump.py:47`). It reads the products with `export.products(day, "off")`, the same generator as
+  the export. Thus each line has the export's shape, with the parts that are not ODbL removed.
+- `dump.odbl` keeps a product only when it has an `off:` record (`dump.py:31`). It keeps the
+  product id, the snapshot day and the `off:` record ids. It keeps each field, barcode and
+  `per_100` value only when its `licence` is `ODbL-1.0`. A field that a core record gives becomes
+  `null`. Thus the dump holds only what the API serves under ODbL with `include=off`.
+- The file is `fooddb-off-odbl-DAY.ndjson.gz`. `dump.write` writes it to a `.part` file, then
+  renames it. The manifest `fooddb-off-odbl-DAY.json` follows, the same way. It holds the day, the
+  product count, the size, the SHA-256, the licence, the attribution and a link to
+  [data-licence.md](data-licence.md). Then `dump.write` deletes the oldest dumps past
+  `FOODDB__BACKEND__DUMP_KEEP` (default 3) (`dump.py:52`).
+- The directory is `FOODDB__BACKEND__DUMP_DIR`, default `dumps` in the working directory.
+- `GET /v1/dumps` lists the manifests, newest first (`dump.py:96`).
+- `GET /v1/dumps/{name}` sends a file that a manifest names, with `Content-Disposition:
+  attachment` (`dump.py:102`). Any other name gets 404. The ETag is the SHA-256 of the file. A
+  matching `If-None-Match` gets 304.
+- The app adds the router with the `auth.counted` dependency, not `read` (`api.py:32`). The ODbL
+  requires open access, so the routes need no key, also when reads need one. See
+  [Authentication](#authentication).
 
 ### `/livez` and `/healthz`
 
@@ -847,6 +918,7 @@ flowchart LR
     key -->|yes| caller["caller: key scopes"]
     who -->|"X-RapidAPI-Proxy-Secret matches"| rapid["caller: read, not rate-limited"]
     who -->|"no key"| anon["caller: anonymous"]
+    who -->|"/v1/dumps: no scope check"| count
     caller --> scope{"auth.authorize()<br/>scope held?"}
     rapid --> scope
     anon --> scope
@@ -863,6 +935,9 @@ flowchart LR
   (`auth.py:15`).
 - `auth.require(scope)` is a FastAPI dependency (`auth.py:131`). The data reads and the export
   router use `read` (`api.py:30`). `review_router` uses `review` (`api.py:110`).
+- `auth.counted` is the dependency of `/v1/dumps` (`auth.py:145`). It authenticates the caller
+  and counts the request against the rate limit, but checks no scope. Thus the dumps are open,
+  also when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is `true`.
 - An anonymous caller passes a `read` check only when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is
   not `true` (`auth.py:99`). A key that is unknown or revoked gets 401, even on an open read.
 - A request with `X-RapidAPI-Proxy-Secret` equal to `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` gets
@@ -903,7 +978,6 @@ flowchart LR
     photo["Photo page<br/>photo next to the fields that differ"]
     listing["RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
-    odbl["Monthly ODbL dump<br/>of the off layer"]
     tables -.->|"source rows"| obs
     brand -.->|"source brand"| obs
     eaitp -.-> port
@@ -917,9 +991,8 @@ flowchart LR
     auth --> api
     snap --> exp
     exp -.->|"nightly refresh"| eaitc
-    obs -.-> odbl
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,port,orouter,agents,photo,listing,eaitc,odbl planned
+    class tables,brand,eaitp,port,orouter,agents,photo,listing,eaitc planned
 ```
 
 - **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
@@ -933,4 +1006,3 @@ flowchart LR
   listing's proxy secret as a `read` key. See [Authentication](#authentication).
 - **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot
   export. The export exists. The eait job that loads it does not.
-- **ODbL dump.** A monthly ODbL dump of the OFF-derived layer.

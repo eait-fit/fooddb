@@ -63,7 +63,7 @@ def mcp() -> None:
 
 @app.command()
 def enqueue(
-    fetcher: str = typer.Argument(help="off | off-dump | fdc | match | snapshot"),
+    fetcher: str = typer.Argument(help="off | off-dump | fdc | match | snapshot | odbl-dump"),
     max_files: int = typer.Option(1, help="off: newest N delta files"),
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy"),
 ) -> None:
@@ -75,7 +75,7 @@ def enqueue(
 
 
 @app.command()
-def run(job: str = typer.Argument(help="off | off-dump | fdc | match | snapshot")) -> None:
+def run(job: str = typer.Argument(help="off | off-dump | fdc | match | snapshot | odbl-dump")) -> None:
     """Run a job in this process instead of queueing it: for loads longer than the worker's
     per-task timeout (the full OFF dump takes hours)."""
     from pq.logging import configure_logging
@@ -84,7 +84,7 @@ def run(job: str = typer.Argument(help="off | off-dump | fdc | match | snapshot"
 
     configure_logging()
     {"off": jobs.fetch_off_deltas, "off-dump": jobs.fetch_off_dump, "fdc": jobs.fetch_fdc,
-     "match": jobs.match_products, "snapshot": jobs.build_snapshot}[job]()
+     "match": jobs.match_products, "snapshot": jobs.build_snapshot, "odbl-dump": jobs.dump_odbl}[job]()
 
 
 match_app = typer.Typer(no_args_is_help=True, help="Product matching.")
@@ -143,6 +143,23 @@ def export(
         for chunk in ex.gzipped(chunks) if out.suffix == ".gz" else chunks:
             f.write(chunk)
     typer.echo(f"wrote {out}")
+
+
+dump_app = typer.Typer(no_args_is_help=True, help="Data dumps.")
+app.add_typer(dump_app, name="dump")
+
+
+@dump_app.command("odbl")
+def dump_odbl(out: Path = typer.Option(None, help="directory; default: $FOODDB__BACKEND__DUMP_DIR, else ./dumps")) -> None:
+    """Write the ODbL dump of the Open Food Facts layer of the newest final snapshot day, with its manifest.
+    Keeps the newest $FOODDB__BACKEND__DUMP_KEEP dumps (default 3) in the directory."""
+    from fooddb import dump
+
+    m = dump.write(out)
+    if m is None:
+        typer.echo("no final snapshot day yet", err=True)
+        raise typer.Exit(1)
+    typer.echo(f"wrote {m['name']}: {m['products']} products, {m['size']} bytes")
 
 
 keys = typer.Typer(no_args_is_help=True, help="API keys: scopes read, review (implies read), admin (implies both).")

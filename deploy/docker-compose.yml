@@ -17,6 +17,8 @@ x-app: &app
     # X-Forwarded-For, or the per-IP rate limit sees one client.
     FOODDB__BACKEND__FORWARDED_ALLOW_IPS: "*"
     FOODDB__BACKEND__STALE_AFTER_DAYS: ${FOODDB__BACKEND__STALE_AFTER_DAYS:-730}
+    FOODDB__BACKEND__DUMP_DIR: /app/dumps
+    FOODDB__BACKEND__DUMP_KEEP: ${FOODDB__BACKEND__DUMP_KEEP:-3}
 
 services:
   db:
@@ -44,6 +46,8 @@ services:
   api:
     <<: *app
     command: ["fooddb", "serve"]
+    volumes:
+      - dumps:/app/dumps:ro  # serves the monthly ODbL dumps the worker writes
     ports:
       # Loopback only: put a TLS reverse proxy (Caddy, nginx) in front. See docs/deploy.md.
       - "${FOODDB__DEPLOY__BIND:-127.0.0.1}:${FOODDB__DEPLOY__PORT:-8000}:8000"
@@ -54,8 +58,11 @@ services:
     <<: *app
     command: ["fooddb", "worker"]
     healthcheck: { disable: true }
+    volumes:
+      - dumps:/app/dumps
     depends_on:
       migrate: { condition: service_completed_successfully }
 
 volumes:
   pgdata18:
+  dumps:

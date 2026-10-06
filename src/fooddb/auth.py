@@ -142,6 +142,14 @@ def check(request: Request, scope: str) -> Caller:
     return caller
 
 
+def counted(request: Request) -> Caller:
+    """Open to anyone, with a key or without, but each request counts against the caller's rate limit."""
+    caller = authenticate(request)
+    if caller.bucket is not None:
+        _count(caller)
+    return caller
+
+
 def require(scope: str):
     def dependency(request: Request) -> Caller:
         return check(request, scope)
