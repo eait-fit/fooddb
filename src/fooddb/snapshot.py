@@ -33,6 +33,7 @@ def build() -> int:
                          {"d": day}).scalar_one()
         conn.execute(text("update snapshot set products = :n where day = :d"), {"n": n, "d": day})
         conn.execute(text("delete from snapshot where day < :cutoff"), {"cutoff": day - timedelta(days=KEEP_DAYS)})
+        conn.execute(text("analyze snapshot_value"))  # autovacuum lags a night: until then no read knows the new day's size
     return n
 
 
