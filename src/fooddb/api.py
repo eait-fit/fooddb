@@ -74,8 +74,8 @@ def search(q: str = Query(min_length=2), include: str | None = None, limit: int 
            snapshot: date | None = None) -> dict:
     # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
     pids = _pids(
-        """select product_id from food
-           where layer = any(:layers) and :q <% name
+        f"""select product_id from food
+           where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
            group by product_id
            order by max(word_similarity(:q, name)) desc, min(length(name))
            limit :limit""",
@@ -92,7 +92,7 @@ def get_product(product_id: int, include: str | None = None, snapshot: date | No
 @app.get("/v1/records/{record_id}", dependencies=READ)
 def get_record(record_id: str, include: str | None = None, snapshot: date | None = None) -> dict:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
-    pids = _pids("select product_id from food where id = :id and layer = any(:layers)",
+    pids = _pids(f"select product_id from food where id = :id and layer = any(:layers) and {resolve.VISIBLE}",
                  id=record_id, layers=resolve.layers_for(include))
     return _one(pids, include, "record", snapshot)
 
@@ -102,7 +102,7 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
     code = gtin.normalize(barcode)
     if code is None:
         raise HTTPException(422, "not a valid global GTIN")
-    pids = _pids("select distinct product_id from food where gtin14 = :code and layer = any(:layers)",
+    pids = _pids(f"select distinct product_id from food where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}",
                  code=code, layers=resolve.layers_for(include))
     items = _resolve(pids, include, snapshot)
     if not items:

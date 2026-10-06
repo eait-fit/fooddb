@@ -47,9 +47,9 @@ def queue(limit: int = 100, records: str = "%") -> list[dict]:
     for layer, include in (("core", None), ("off", "off")):
         pids = [i["product_id"] for i in items.values() if i["layer"] == layer]
         for p in resolve.products(pids, include):
-            for rid in p["records"]:
-                if rid in items and items[rid]["layer"] == layer:
-                    items[rid]["served"] = p["per_100"]
+            for item in items.values():
+                if item["layer"] == layer and item["product_id"] == p["id"]:
+                    item["served"] = p["per_100"]  # a held record is not among p["records"], its product still serves
     return list(items.values())
 
 

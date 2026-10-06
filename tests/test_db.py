@@ -989,3 +989,67 @@ def test_national_tables_rank_with_fdc_above_the_crowd(monkeypatch):
     # Attribution lists only the sources of what is served.
     assert [a["source"] for a in product("off:1", "off")["attribution"]] == ["ciqual"]
     assert product("fdc:2")["attribution"] == []
+
+
+BRAND_GTIN = "04006381333931"
+
+
+def held_record(**kw):
+    return rec(id=f"brand:{BRAND_GTIN}", source="brand", gtin14=BRAND_GTIN, name="Acme Hummus", brand="Acme",
+               review_all=True, **kw)
+
+
+def test_a_record_whose_every_value_waits_for_review_is_not_served_at_all(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [held_record()])
+    c = client()
+    assert c.get(f"/v1/products/{BRAND_GTIN}").status_code == 404
+    assert c.get(f"/v1/records/brand:{BRAND_GTIN}").status_code == 404
+    assert c.get("/v1/foods", params={"q": "hummus"}).json()["items"] == []
+    assert call("get_product_by_barcode", barcode=BRAND_GTIN).is_error
+    pid = _food_product(f"brand:{BRAND_GTIN}")
+    assert c.get(f"/v1/foods/{pid}").status_code == 404
+    build_on(monkeypatch, "2026-10-01")
+    assert c.get("/v1/snapshots/2026-10-01/export").text == ""
+
+
+def _food_product(record_id: str) -> int:
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return conn.execute(text("select product_id from food where id = :i"), {"i": record_id}).scalar_one()
+
+
+def test_a_held_record_does_not_name_or_tag_the_product_it_is_merged_into(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(), held_record(values={"ENERC_KCAL": 400.0})])
+    merge("fdc:1", f"brand:{BRAND_GTIN}")
+    p = product("fdc:1")
+    assert p["name"]["value"] == "Hummus, commercial" and p["name"]["source"] == "fdc"
+    assert p["brand"] is None and p["gtin14"] == [] and p["records"] == ["fdc:1"]
+    assert p["per_100"]["ENERC_KCAL"]["value"] == 229
+    assert client().get(f"/v1/products/{BRAND_GTIN}").status_code == 404
+
+
+def test_accepting_one_value_lets_the_record_name_the_product():
+    from fooddb import ingest, review
+
+    ingest.run("t", "r1", [held_record()])
+    obs = next(v["observation_id"] for i in review.queue() for v in i["pending"] if v["nutrient"] == "PROCNT")
+    review.decide(obs, "accept", "tester")
+    p = client().get(f"/v1/products/{BRAND_GTIN}").json()["items"][0]
+    assert p["name"]["value"] == "Acme Hummus" and p["name"]["source"] == "brand"
+    assert p["gtin14"][0]["value"] == BRAND_GTIN and set(p["per_100"]) == {"PROCNT"}
+
+
+def test_a_record_with_only_rejected_values_is_not_served():
+    from fooddb import ingest, review
+
+    ingest.run("t", "r1", [held_record(values={"PROCNT": 7.4})])
+    [item] = review.queue()
+    review.decide(item["pending"][0]["observation_id"], "reject", "tester")
+    assert client().get(f"/v1/products/{BRAND_GTIN}").status_code == 404
