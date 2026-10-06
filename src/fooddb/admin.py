@@ -1,13 +1,14 @@
-"""SQLAdmin at /admin: the pending review queue with accept and reject actions, and the merge log
-with a split action. Both read-only otherwise. Login takes an API key with the admin scope.
+"""SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads that
+wait for review next to their photo, and the merge log with a split action. Read-only otherwise. Login takes an API key with the admin scope.
 Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
 
 import logging
 import os
+from pathlib import Path
 
 from fastapi import FastAPI, Request
-from fastapi.responses import RedirectResponse
-from sqladmin import Admin, ModelView, action
+from fastapi.responses import RedirectResponse, Response
+from sqladmin import Admin, BaseView, ModelView, action, expose
 from sqladmin.authentication import AuthenticationBackend
 from sqlalchemy import func, select
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
@@ -15,6 +16,7 @@ from starlette.concurrency import run_in_threadpool
 
 from fooddb import auth, resolve, review
 from fooddb.db import engine, merge_log, observation
+from fooddb.labels import photos
 
 
 class Base(DeclarativeBase):
@@ -92,6 +94,28 @@ class MergeLogView(ModelView, model=MergeLog):
         return RedirectResponse(request.url_for("admin:list", identity=self.identity), status_code=302)
 
 
+class LabelView(BaseView):
+    """Each label record with pending values: the photo, the values read from it, and the values served now.
+    SQLAdmin registers exposed methods last line first, and the last one names the menu link: `page` stays first."""
+
+    name = "Label reads"
+    icon = "fa-solid fa-camera"
+
+    @expose("/labels", identity="labels")
+    async def page(self, request: Request):
+        items = await run_in_threadpool(review.queue, 100, "label:%")
+        return await self.templates.TemplateResponse(request, "labels.html", {"items": items})
+
+    @expose("/labels/photo/{sha}", identity="label-photo")
+    async def label_photo(self, request: Request) -> Response:
+        try:
+            data = await run_in_threadpool(photos.load, request.path_params["sha"])
+        except LookupError:
+            return Response("no such photo", status_code=404)
+        return Response(data, media_type=photos.sniff(data),
+                        headers={"Cache-Control": "private, max-age=86400", "X-Content-Type-Options": "nosniff"})
+
+
 class KeyLogin(AuthenticationBackend):
     """The password field takes an admin-scope key. Each request checks that the key is still active."""
 
@@ -121,6 +145,7 @@ def mount(app: FastAPI) -> None:
     # another site from carrying the session, so such a link cannot decide anything.
     login = KeyLogin(secret_key=secret, same_site="strict", max_age=8 * 3600)
     admin = Admin(app, session_maker=sessionmaker(class_=PendingSession), title="fooddb review",
-                  authentication_backend=login)
+                  authentication_backend=login, templates_dir=str(Path(__file__).parent / "templates"))
     admin.add_view(PendingView)
+    admin.add_base_view(LabelView)
     admin.add_view(MergeLogView)

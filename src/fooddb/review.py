@@ -20,13 +20,13 @@ class MergedAway(ValueError):
     pass
 
 
-def queue(limit: int = 100) -> list[dict]:
+def queue(limit: int = 100, records: str = "%") -> list[dict]:
     """Pending values grouped per source record, newest first, next to the values the API serves now
-    and the checks the record failed."""
+    and the checks the record failed. `records` is a LIKE pattern on the record id, e.g. "label:%"."""
     with engine().connect() as conn:
         rows = conn.execute(text("""
             with recs as (
-                select food_id from observation where status = 'pending'
+                select food_id from observation where status = 'pending' and food_id like :records
                 group by food_id order by max(observed_at) desc, food_id limit :limit
             )
             select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.observed_at,
@@ -34,7 +34,7 @@ def queue(limit: int = 100) -> list[dict]:
             from recs join observation o on o.food_id = recs.food_id and o.status = 'pending'
             join food f on f.id = o.food_id
             order by o.observed_at desc, o.food_id, o.nutrient
-        """), {"limit": limit}).mappings().all()
+        """), {"limit": limit, "records": records}).mappings().all()
     items: dict[str, dict] = {}
     for r in rows:
         item = items.setdefault(r["food_id"], {

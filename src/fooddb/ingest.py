@@ -35,6 +35,8 @@ class Record:
     serving_text: str | None = None
     serving_g: float | None = None
     extra_flags: list[str] = field(default_factory=list)
+    evidence: str | None = None  # sha256 of the label photo the values were read from
+    review_all: bool = False  # every value waits for review, whatever the checks say
 
 
 def already_done(fetcher: str, ref: str) -> bool:
@@ -154,9 +156,9 @@ def _observations(r: Record, failed: dict[str, set[str]], known, stored: dict) -
     held = set().union(*failed.values())
     return [
         {"food_id": r.id, "nutrient": k, "value_per_100": v, "unit": UNITS.get(k, "g"), "basis": r.basis,
-         "source": r.source, "licence": r.licence, "observed_at": r.observed_at,
+         "source": r.source, "licence": r.licence, "observed_at": r.observed_at, "evidence": r.evidence,
          # A field a failed check implicates waits for review; its last accepted value keeps serving.
-         "status": "pending" if k in held else "accepted"}
+         "status": "pending" if r.review_all or k in held else "accepted"}
         for k, v in (changed | dropped).items()
     ]
 

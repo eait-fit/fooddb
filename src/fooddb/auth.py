@@ -13,7 +13,12 @@ from sqlalchemy import text
 
 from fooddb.db import engine
 
-IMPLIES = {"read": {"read"}, "review": {"read", "review"}, "admin": {"read", "review", "admin"}}
+IMPLIES = {
+    "read": {"read"},
+    "contribute": {"read", "contribute"},
+    "review": {"read", "contribute", "review"},
+    "admin": {"read", "contribute", "review", "admin"},
+}
 
 
 @dataclass(frozen=True)
