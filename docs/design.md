@@ -44,7 +44,9 @@ hand-set), lane 3, and the eait side of the label-photo loop.
 2. **Open Food Facts**: the full dump, then daily deltas. Built: a fresh install takes the newest
    delta, then every delta after it. The full dump is a manual job (`fooddb run off-dump`). Its data is under ODbL (see Licences).
 3. **Brands**: a brand upload form in v1. The uploader's brand is checked against the GS1
-   company prefix, and a label photo is attached. GDSN data pools come later. Not built: [#13](https://github.com/eait-fit/fooddb/issues/13).
+   company prefix, and a label photo is attached. GDSN data pools come later. Built ([#13](https://github.com/eait-fit/fooddb/issues/13)):
+   `POST /v1/brands/uploads` and an HTML form at `/brands/upload`. Each upload becomes the record
+   `brand:<gtin14>`. The GS1 verifier is still `none`, so every value of an upload waits for review.
 4. **Own label reads**: a vision model reads a label photo into structured nutrition, through
    the model port (below). Photos come from eait users who opt in, from brands, and from customers'
    local runs. Built ([#12](https://github.com/eait-fit/fooddb/issues/12)): `POST /v1/labels` takes a

@@ -1,4 +1,4 @@
-"""SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads that
+"""SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads and brand uploads that
 wait for review next to their photo, and the merge log with a split action. Read-only otherwise. Login takes an API key with the admin scope.
 Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
 
@@ -95,7 +95,7 @@ class MergeLogView(ModelView, model=MergeLog):
 
 
 class LabelView(BaseView):
-    """Each label record with pending values: the photo, the values read from it, and the values served now.
+    """Each label or brand record with pending values: the photo, the values read from it, and the values served now.
     SQLAdmin registers exposed methods last line first, and the last one names the menu link: `page` stays first."""
 
     name = "Label reads"
@@ -103,7 +103,7 @@ class LabelView(BaseView):
 
     @expose("/labels", identity="labels")
     async def page(self, request: Request):
-        items = await run_in_threadpool(review.queue, 100, "label:%")
+        items = await run_in_threadpool(review.queue, 100, ("label:%", "brand:%"))
         return await self.templates.TemplateResponse(request, "labels.html", {"items": items})
 
     @expose("/labels/photo/{sha}", identity="label-photo")

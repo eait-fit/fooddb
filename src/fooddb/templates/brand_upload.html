@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>fooddb brand upload</title>
+<style>
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+label { display: block; margin-top: .8rem; font-weight: 600; }
+input, select { width: 100%; padding: .4rem; box-sizing: border-box; }
+fieldset { margin-top: 1.2rem; }
+.row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 1rem; }
+.error { background: #fde8e8; padding: .6rem 1rem; border-radius: 4px; }
+.done { background: #e6f4ea; padding: .6rem 1rem; border-radius: 4px; }
+button { margin-top: 1.2rem; padding: .6rem 1.4rem; font-size: 1rem; }
+</style>
+</head>
+<body>
+<h1>Brand upload</h1>
+{% if done %}
+<p class="done">Received as <code>{{ done.record }}</code>.
+{% if done.review == "required" %}Your values wait for review before anyone sees them.{% else %}Your values go through the automatic checks.{% endif %}</p>
+<p><a href="/brands/upload">Upload another product</a></p>
+{% else %}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<p>Give the barcode, the values per 100 g or 100 ml, and a photo of the nutrition label. You need an API key with the contribute scope.</p>
+<form method="post" action="/brands/upload" enctype="multipart/form-data" autocomplete="off">
+<label>API key <input type="password" name="key" required autocomplete="off"></label>
+<label>Barcode (GTIN-8, -12, -13 or -14) <input name="barcode" required inputmode="numeric" value="{{ form.get('barcode', '') }}"></label>
+<label>Product name <input name="name" required value="{{ form.get('name', '') }}"></label>
+<label>Brand <input name="brand" required value="{{ form.get('brand', '') }}"></label>
+<label>Values are per
+  <select name="basis">
+    <option value="100g" {% if form.get('basis') != '100ml' %}selected{% endif %}>100 g</option>
+    <option value="100ml" {% if form.get('basis') == '100ml' %}selected{% endif %}>100 ml</option>
+  </select></label>
+<fieldset><legend>Nutrition values (energy in kcal and kJ, sodium in mg, the rest in g)</legend>
+<div class="row">
+{% for code in nutrients %}
+<label>{{ code }} <input name="{{ code }}" type="number" step="any" min="0" value="{{ form.get(code, '') }}"></label>
+{% endfor %}
+</div></fieldset>
+<div class="row">
+<label>Serving as printed <input name="serving_text" value="{{ form.get('serving_text', '') }}"></label>
+<label>Serving in g <input name="serving_g" type="number" step="any" min="0" value="{{ form.get('serving_g', '') }}"></label>
+</div>
+<label>Label photo (JPEG, PNG or WebP, at most 10 MiB) <input type="file" name="photo" accept="image/jpeg,image/png,image/webp" required></label>
+<button type="submit">Upload</button>
+</form>
+{% endif %}
+</body>
+</html>

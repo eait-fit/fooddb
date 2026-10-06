@@ -20,26 +20,26 @@ class MergedAway(ValueError):
     pass
 
 
-def queue(limit: int = 100, records: str = "%") -> list[dict]:
+def queue(limit: int = 100, records: tuple[str, ...] = ("%",)) -> list[dict]:
     """Pending values grouped per source record, newest first, next to the values the API serves now
-    and the checks the record failed. `records` is a LIKE pattern on the record id, e.g. "label:%"."""
+    and the checks the record failed. `records` are LIKE patterns on the record id, e.g. ("label:%", "brand:%")."""
     with engine().connect() as conn:
         rows = conn.execute(text("""
             with recs as (
-                select food_id from observation where status = 'pending' and food_id like :records
+                select food_id from observation where status = 'pending' and food_id like any(:records)
                 group by food_id order by max(observed_at) desc, food_id limit :limit
             )
-            select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.observed_at,
+            select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.observed_at, o.evidence,
                    f.product_id, f.layer, f.name, f.source, f.flags
             from recs join observation o on o.food_id = recs.food_id and o.status = 'pending'
             join food f on f.id = o.food_id
             order by o.observed_at desc, o.food_id, o.nutrient
-        """), {"limit": limit, "records": records}).mappings().all()
+        """), {"limit": limit, "records": list(records)}).mappings().all()
     items: dict[str, dict] = {}
     for r in rows:
         item = items.setdefault(r["food_id"], {
             "record": r["food_id"], "product_id": r["product_id"], "layer": r["layer"], "name": r["name"],
-            "source": r["source"], "checks": list(r["flags"]), "pending": [], "served": {}})
+            "source": r["source"], "photo": r["evidence"], "checks": list(r["flags"]), "pending": [], "served": {}})
         item["pending"].append({
             "observation_id": r["id"], "nutrient": r["nutrient"], "unit": r["unit"], "basis": r["basis"],
             "value": None if r["value_per_100"] is None else float(r["value_per_100"]),
@@ -47,9 +47,9 @@ def queue(limit: int = 100, records: str = "%") -> list[dict]:
     for layer, include in (("core", None), ("off", "off")):
         pids = [i["product_id"] for i in items.values() if i["layer"] == layer]
         for p in resolve.products(pids, include):
-            for rid in p["records"]:
-                if rid in items and items[rid]["layer"] == layer:
-                    items[rid]["served"] = p["per_100"]
+            for item in items.values():
+                if item["layer"] == layer and item["product_id"] == p["id"]:
+                    item["served"] = p["per_100"]  # a held record is not among p["records"], its product still serves
     return list(items.values())
 
 

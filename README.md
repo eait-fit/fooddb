@@ -189,6 +189,24 @@ source record `label:<sha256>`. The checks run as for every source. A read below
 `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` (default 0.9) waits for review in full. Reviewers see the
 photo next to the values on the **Label reads** page in `/admin`.
 
+## Brand uploads
+
+A brand sends its own values with a label photo. The upload needs a key with the `contribute`
+scope. Use the form at `/brands/upload` (paste the key in the password field), or post it:
+
+```bash
+curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/brands/uploads" \
+  -F photo=@label.jpg -F barcode=4006381333931 -F name="Acme Hummus" -F brand=Acme \
+  -F basis=100g -F ENERC_KCAL=229 -F PROCNT=7.4 -F FAT=17.1 -F serving_g=30
+```
+
+The fields are `barcode`, `name`, `brand`, `basis`, one field for each INFOODS code (`ENERC_KCAL`,
+`ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`, `SUGAR`, `FASAT`, `FIBTG`, `NA`), `serving_text`,
+`serving_g` and `photo`. The values become the source record `brand:<gtin14>`. The GS1 check
+(`FOODDB__BACKEND__GS1_VERIFIER`) has only the backend `none`. Thus every value waits for review,
+and nothing from the upload is served until a reviewer accepts a value. Reviewers see the photo next
+to the values on the **Label reads** page in `/admin`.
+
 ## Fix a wrong merge
 
 Matching merges products above the match threshold with no human step, and logs each merge. To

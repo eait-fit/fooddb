@@ -188,3 +188,16 @@ def test_admin_shows_a_label_records_pending_values_next_to_its_photo_and_the_se
     photo = c.get(f"/admin/labels/photo/{sha}")
     assert photo.status_code == 200 and photo.content == PNG and photo.headers["content-type"] == "image/png"
     assert c.get("/admin/labels/photo/" + "0" * 64).status_code == 404
+
+
+def test_a_label_read_below_the_floor_is_not_served_until_a_value_is_accepted(monkeypatch):
+    from fooddb import review
+
+    use(monkeypatch, Canned(confidence=0.5))
+    rid = ingest()
+    c = client()
+    assert c.get(f"/v1/records/{rid}").status_code == 404
+    assert c.get("/v1/products/4006381333931").status_code == 404
+    assert c.get("/v1/foods", params={"q": "hummus"}).json()["items"] == []
+    review.decide(review.queue()[0]["pending"][0]["observation_id"], "accept", "tester")
+    assert c.get("/v1/products/4006381333931").json()["items"][0]["name"]["value"] == "Hummus classic"
