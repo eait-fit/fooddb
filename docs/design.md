@@ -18,7 +18,7 @@ Every step runs automatically except human review. Review sees only rows that ch
 check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
 **Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, CIQUAL, Fineli, Matvaretabellen,
-OFF), normalise, observations, checks,
+TFDA, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
 (`/v1/review`, two MCP tools, SQLAdmin at `/admin`), API keys with scopes and rate limits, and the
@@ -34,13 +34,13 @@ hand-set), lane 3, and the eait side of the label-photo loop.
 1. **Open composition tables**, loaded when each publisher releases: USDA FDC (CC0), CIQUAL, BLS,
    Fineli, Frida, Matvaretabellen (NLOD 2.0), CoFID (OGL), Korea MFDS, Japan MEXT, Taiwan TFDA, and
    others. Built ([#15](https://github.com/eait-fit/fooddb/issues/15)): USDA FDC Foundation, SR
-   Legacy and Branded Foods, CIQUAL (Etalab 2.0), Fineli (CC BY 4.0) and Matvaretabellen (NLOD 2.0).
-   FDC Branded and Fineli are off by default. The FDC fetcher reads its JSON as a stream. Not built:
-   Frida ([#35](https://github.com/eait-fit/fooddb/issues/35)), CoFID
+   Legacy and Branded Foods, CIQUAL (Etalab 2.0), Fineli (CC BY 4.0), Matvaretabellen (NLOD 2.0) and
+   Taiwan TFDA (OGDL 1.0, [#39](https://github.com/eait-fit/fooddb/issues/39)). FDC Branded and Fineli
+   are off by default. The FDC fetcher reads its JSON as a stream. Not built: Frida
+   ([#35](https://github.com/eait-fit/fooddb/issues/35)), CoFID
    ([#36](https://github.com/eait-fit/fooddb/issues/36)), Korea MFDS
    ([#37](https://github.com/eait-fit/fooddb/issues/37)), Japan MEXT
-   ([#38](https://github.com/eait-fit/fooddb/issues/38)), Taiwan TFDA
-   ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS.
+   ([#38](https://github.com/eait-fit/fooddb/issues/38)) and BLS.
 2. **Open Food Facts**: the full dump, then daily deltas. Built: a fresh install takes the newest
    delta, then every delta after it. The full dump is a manual job (`fooddb run off-dump`). Its data is under ODbL (see Licences).
 3. **Brands**: a brand upload form in v1. The uploader's brand is checked against the GS1
@@ -145,7 +145,7 @@ Values per 100 g or per 100 ml, plus the serving size printed on the label. Nutr
 INFOODS tagnames (ENERC, PROCNT, FAT, CHOAVL…). Each value keeps the code of the quantity that its
 source states, and no value is converted to another code. Built
 ([#7](https://github.com/eait-fit/fooddb/issues/7)): carbohydrate is `CHOCDF` (by difference, with
-fibre) from FDC and US or Canadian labels, and `CHOAVL` (available, without fibre) from EU, UK,
+fibre) from FDC, TFDA and US or Canadian labels, and `CHOAVL` (available, without fibre) from EU, UK,
 Australian and similar labels, and from CIQUAL, Fineli and Matvaretabellen. Energy is `ENERC_KCAL`, plus `ENERC_KJ` when the source states kJ.
 
 ## Licences
@@ -160,6 +160,7 @@ Australian and similar labels, and from CIQUAL, Fineli and Matvaretabellen. Ener
 | Most EU national tables | CC BY / OGL / NLOD | attribution |
 | Korea MFDS | public, no usage restriction | none |
 | Japan MEXT | cite the source | attribution |
+| Taiwan TFDA | OGDL 1.0 | attribution, built |
 
 fooddb's code is AGPL-3.0. Its core data has its own terms. See [landscape.md](landscape.md)
 for licence traps in nearby open-source projects.
