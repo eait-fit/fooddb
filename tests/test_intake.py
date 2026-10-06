@@ -5,6 +5,8 @@ import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
+import pytest
+
 from fooddb import checks
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -110,3 +112,66 @@ def test_matvaretabellen_reads_its_food_list_into_available_carbohydrate():
     assert agave.categories == ["matvaretabellen:7.1", "matvaretabellen:7"]
     assert checks.category(aioli.categories) == "fats"  # 8.3 mayonnaise, under 8 cooking fat: not an oil
     assert not checks.flags(beans.values, checks.category(beans.categories))
+
+
+def test_mext_value_follows_the_rule_for_estimates_traces_and_gaps():
+    from fooddb.fetchers.mext import value
+
+    assert value("12.7") == 12.7 and value("1452") == 1452 and value(" 0.3 ") == 0.3
+    assert value("(11.3)") == 11.3 and value("(0)") == 0  # an estimate is the table's value
+    assert value("Tr") == 0 and value("(Tr)") == 0
+    assert value("18.5†") == 18.5  # † points to a note on the value
+    assert value("-") is None and value("*") is None and value("") is None and value(None) is None
+
+
+def test_mext_reads_its_main_table_with_available_carbohydrate_and_clean_japanese_names():
+    from fooddb.fetchers import mext
+
+    observed = datetime(2026, 3, 27, tzinfo=UTC)
+    got = {r.id: r for r in mext.records(FIXTURES / "mext.xlsx", observed)}
+    assert list(got) == ["mext:01001", "mext:01172", "mext:01091", "mext:03032", "mext:07107", "mext:09059", "mext:10457",
+                         "mext:14011", "mext:16001"]
+    amaranth, batter, porridge, syrup, banana, wakame, horse_mackerel, oil, sake = got.values()
+    assert amaranth.name == "アマランサス 玄穀" and amaranth.lang == "ja" and amaranth.observed_at == observed
+    assert amaranth.licence == "mext-free-use" and amaranth.source == "mext" and amaranth.layer == "core"
+    assert amaranth.values == pytest.approx({"ENERC_KJ": 1452, "ENERC_KCAL": 343, "PROCNT": 12.7, "FAT": 6.0, "CHOAVL": 57.8,
+                                             "CHOCDF": 64.9, "FIBTG": 7.4, "NA": 1})
+    assert amaranth.categories == ["mext:01"] and checks.category(amaranth.categories) is None
+    assert "CHOAVL" not in batter.values and batter.values["FAT"] == pytest.approx(47.7)  # "-": not measured
+    assert porridge.values["PROCNT"] == 1.1 and porridge.values["NA"] == 0 and porridge.values["CHOAVL"] == 14.2  # (1.1), (Tr)
+    assert syrup.values["CHOAVL"] == 18.5 and syrup.values["FIBTG"] == 14.0 and syrup.values["FAT"] == 0  # 18.5†, Tr
+    assert syrup.name == "還元水あめ"
+    assert wakame.values == {"ENERC_KJ": 1, "ENERC_KCAL": 0, "CHOCDF": 0.1, "FIBTG": 0, "NA": 68}
+    assert horse_mackerel.name == "にしまあじ 開き干し 生" and horse_mackerel.values["CHOAVL"] == 0
+    assert "FIBTG" not in horse_mackerel.values and checks.category(horse_mackerel.categories) == "fish"
+    assert oil.values["FAT"] == 100 and "CHOAVL" not in oil.values and checks.category(oil.categories) == "fats"
+    assert checks.category(banana.categories) == "fruits" and checks.category(sake.categories) == "beverages"
+    assert not checks.flags(banana.values, "fruits") and not checks.flags(oil.values, "fats")
+
+
+def test_mext_stops_when_a_component_identifier_moves(tmp_path):
+    from fooddb.fetchers import mext
+
+    broken = tmp_path / "mext.xlsx"
+    with zipfile.ZipFile(FIXTURES / "mext.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b">CHOAVL<", b">CHOAVLX<") if "sharedStrings" in item.filename else data)
+    with pytest.raises(RuntimeError, match="CHOAVL"):
+        list(mext.records(broken, datetime(2026, 3, 27, tzinfo=UTC)))
+
+
+def test_mext_finds_the_main_table_on_its_page_and_stops_when_the_edition_changes():
+    from fooddb.fetchers import mext
+
+    page = ('<html><head><title>日本食品標準成分表（八訂）増補2023年：文部科学省</title></head><body>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_0001.pdf">日本食品標準成分表（八訂）増補2023年 電子書籍（第2章を除く）&nbsp;(PDF:5.1MB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_02.xlsx">・第2章（データ）&nbsp;(Excel:1.9MB) <img alt="Excel"/></a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_04.xlsx">・第2章第1表（データ）&nbsp;(Excel:915KB)</a></li></body></html>')
+    url, ref, observed = mext.newest(page)
+    assert url == "https://www.mext.go.jp/content/20260327-mxt_kagsei-mext-000029402_02.xlsx"
+    assert ref == "20260327-mxt_kagsei-mext-000029402_02.xlsx" and observed == datetime(2026, 3, 27, tzinfo=UTC)
+    with pytest.raises(RuntimeError, match="edition"):
+        mext.newest(page.replace("八訂）増補2023年：", "九訂）2030年："))
+    with pytest.raises(RuntimeError, match="no main table"):
+        mext.newest(page.replace("・第2章（データ）", "・第3章（データ）"))
