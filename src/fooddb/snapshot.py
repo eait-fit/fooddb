@@ -24,8 +24,9 @@ def build() -> int:
         for scope, layers in (("core", ["core"]), ("all", ["core", "off"])):
             conn.execute(text(f"""
                 insert into snapshot_value (day, scope, product_id, nutrient, value_per_100, unit, basis,
-                                            source, licence, observed_at)
-                select :d, :scope, product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at
+                                            source, licence, observed_at, approved)
+                select :d, :scope, product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at,
+                       approved
                 from ({values_sql("true")}) v
             """), {"d": day, "scope": scope, "layers": layers})
         n = conn.execute(text("select count(distinct product_id) from snapshot_value where day = :d and scope = 'all'"),

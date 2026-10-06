@@ -1,8 +1,8 @@
 """The resolver: one served value per product and field, across every source record of it.
 
 Per source record, the newest accepted observation of each field counts (a null one means the
-source withdrew it). Across records, `pick_sql` holds the rule: staleness, agreement, trust rank,
-recency. The OFF layer (ODbL) takes part only when the caller asks for it, so licence follows each
+source withdrew it). Across records, `pick_sql` holds the rule: an approved label read first, then
+staleness, agreement, trust rank, recency. The OFF layer (ODbL) takes part only when the caller asks for it, so licence follows each
 value.
 """
 
@@ -29,7 +29,8 @@ STALE_AFTER_DAYS = int(os.environ.get("FOODDB__BACKEND__STALE_AFTER_DAYS", "730"
 def pick_sql(candidates: str) -> str:
     """One value per product and nutrient from `candidates`, the resolver rule in one place.
 
-    A value older than the newest candidate by more than STALE_AFTER_DAYS loses to fresher ones.
+    A label read that a reviewer approved wins outright; the newest of several does. Otherwise,
+    a value older than the newest candidate by more than STALE_AFTER_DAYS loses to fresher ones.
     Then the value that the most distinct sources agree with wins, then the most trusted source,
     then the newest value.
     """
@@ -45,9 +46,11 @@ with cand as (
     group by c.cid
 )
 select distinct on (c.product_id, c.nutrient)
-       c.product_id, c.nutrient, c.value_per_100, c.unit, c.basis, c.source, c.licence, c.observed_at
+       c.product_id, c.nutrient, c.value_per_100, c.unit, c.basis, c.source, c.licence, c.observed_at,
+       c.approved
 from cand c join support s using (cid)
-order by c.product_id, c.nutrient, c.observed_at < c.newest - interval '{STALE_AFTER_DAYS} days',
+order by c.product_id, c.nutrient, not c.approved, case when c.approved then c.observed_at end desc,
+         c.observed_at < c.newest - interval '{STALE_AFTER_DAYS} days',
          s.sources desc, {RANK.format(col="c.source")}, c.observed_at desc, c.value_per_100
 """
 
@@ -57,7 +60,8 @@ def values_sql(products: str) -> str:
     return pick_sql(f"""
 select * from (
     select distinct on (o.food_id, o.nutrient)
-           f.product_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.source, o.licence, o.observed_at
+           f.product_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.source, o.licence, o.observed_at,
+           (o.source = 'label' and o.status = 'accepted' and o.reviewed_by is not null) as approved
     from observation o join food f on f.id = o.food_id
     where {products} and f.layer = any(:layers) and o.status = 'accepted'
     order by o.food_id, o.nutrient, o.observed_at desc, o.id desc
@@ -70,6 +74,7 @@ LIVE_SQL = values_sql("f.product_id = any(:pids)")
 # A product merged after the build still has its values under its old id: read every id merged into
 # each product, and pick across them by the resolver's rule, as if the merge had come before the build.
 # ponytail: the snapshot keeps only each old id's winner, so agreement counts winners, not every value.
+# An approved label read always wins its old id, so the stored flag makes the override exact.
 SNAPSHOT_SQL = f"""
 with recursive member(product_id, id) as (
     select id, id from product where id = any(:pids)
@@ -77,7 +82,7 @@ with recursive member(product_id, id) as (
     select m.product_id, p.id from member m join product p on p.merged_into = m.id
 )
 select * from ({pick_sql("""
-    select m.product_id, v.nutrient, v.value_per_100, v.unit, v.basis, v.source, v.licence, v.observed_at
+    select m.product_id, v.nutrient, v.value_per_100, v.unit, v.basis, v.source, v.licence, v.observed_at, v.approved
     from member m join snapshot_value v on v.product_id = m.id
     where v.day = :day and v.scope = :scope
 """)}) picked

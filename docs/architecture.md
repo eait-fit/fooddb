@@ -587,18 +587,22 @@ The resolver picks one value per product and nutrient (`resolve.py:24`):
 2. It drops the nulls. A withdrawn field thus falls back to the other records of the product.
 3. Across records, `pick_sql` picks the winner (`resolve.py:24`). It compares the candidates in
    this order, and the first difference decides:
-   1. **Recency.** A value that is older than the newest candidate by more than
+   1. **Approved label read.** A candidate with source `label`, status `accepted` and a
+      `reviewed_by` (a human accepted it in the review queue) wins over all others. Of several, the
+      newest wins. A label read that the checks accepted alone has no `reviewed_by` and gets no
+      override. A rejected or pending read is not a candidate. Brand uploads get no override.
+   2. **Recency.** A value that is older than the newest candidate by more than
       `FOODDB__BACKEND__STALE_AFTER_DAYS` (default 730) loses to the fresher ones. Thus a new OFF
       value wins over an FDC value from many years earlier.
-   2. **Agreement.** The value that the most distinct sources agree with wins. Two values agree
+   3. **Agreement.** The value that the most distinct sources agree with wins. Two values agree
       when they differ by 5 % or less, or by 0.5 or less in the unit of the nutrient
       (`resolve.py:20`). Two records of one source count as one source. Thus `fdc` and `off`
-      that agree outvote a `label` value that is alone. Only values of one nutrient code are
+      that agree outvote a `label` value that is alone, unless a reviewer approved that value. Only values of one nutrient code are
       compared. A `CHOAVL` value is not a vote for or against a `CHOCDF` value.
-   3. **Trust rank.** `brand`, then `label`, then the composition tables, then `off`
+   4. **Trust rank.** `brand`, then `label`, then the composition tables, then `off`
       (`resolve.py:20`). `fdc`, `ciqual`, `fineli` and `matvaretabellen` share one rank. Thus a
       table value wins over a crowd value, and between two tables the newer value wins.
-   4. **Newest value**, then the smallest value, so that the result is always the same.
+   5. **Newest value**, then the smallest value, so that the result is always the same.
 
 A record has no part in the product until one of its values is accepted. `resolve.VISIBLE` is the
 condition: the record has an accepted observation, or it has no observation at all (nothing to
@@ -641,7 +645,8 @@ the survivor, but the old values stay under the merged-away id. Thus the snapsho
 `merged_into` backwards. It collects the values of each product and of every product merged into
 it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:68`). The
 snapshot keeps only the winner of each old id. Thus agreement counts those winners, not every value
-that the build saw. The result is the value that the build would have frozen if the merge had come
+that the build saw. An approved label read always wins its old id, and `snapshot_value.approved`
+keeps that flag. Thus the override holds after a merge. The result is the value that the build would have frozen if the merge had come
 first. The index `product_merged_into_idx` keeps this lookup fast.
 
 ## Jobs and schedules
@@ -793,6 +798,7 @@ erDiagram
         text source
         text licence
         timestamptz observed_at
+        boolean approved "an approved label read"
     }
     fetch_run {
         bigint id PK
@@ -865,6 +871,8 @@ Ten Alembic migrations make this schema:
   have no category until a newer edit of the record arrives.
 - `0010` adds `observation.evidence`, and the scope `contribute` to the check on `api_key.scopes`
   (`alembic/versions/0010_observation_evidence.py:19`).
+- `0011` adds `snapshot_value.approved`, true for a value from an approved label read
+  (`alembic/versions/0011_snapshot_value_approved.py:15`).
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.

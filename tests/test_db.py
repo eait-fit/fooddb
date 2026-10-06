@@ -792,6 +792,88 @@ def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rul
     assert served("fdc:1", "off") == served("off:1", "off") == (260, "off")
 
 
+def label_record(id: str, value: float, month: int, approved: bool = False):
+    r = rec(id=id, source="label", licence="LicenseRef-fooddb",
+            observed_at=datetime(2026, month, 1, tzinfo=UTC), values={"ENERC_KCAL": value})
+    return r, approved
+
+
+def ingest_labels(*labels) -> None:
+    """Ingest label reads (accepted by the checks); an approved one also carries a reviewer."""
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "labels", [r for r, _ in labels])
+    with engine().begin() as conn:
+        for r, approved in labels:
+            if approved:
+                conn.execute(text("update observation set reviewed_by = 'tester', reviewed_at = now() where food_id = :f"),
+                             {"f": r.id})
+
+
+def agreeing_tables(*ids: str) -> list:
+    return [kcal_record(i, s, 229.0, y) for i, s, y in zip(ids, ("fdc", "ciqual"), (2026, 2025), strict=True)]
+
+
+def test_an_approved_label_read_beats_two_agreeing_sources(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", agreeing_tables("fdc:1", "ciqual:1"))
+    ingest_labels(label_record("label:aa", 260.0, 1, True))
+    merge("fdc:1", "ciqual:1", "label:aa")
+    assert served("fdc:1") == (260, "label")
+
+
+def test_an_auto_accepted_label_read_gets_no_override():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", agreeing_tables("fdc:1", "ciqual:1"))
+    ingest_labels(label_record("label:aa", 260.0, 1))
+    merge("fdc:1", "ciqual:1", "label:aa")
+    assert served("fdc:1") == (229, "fdc")  # agreement still outvotes a lone label read
+
+
+def test_a_rejected_or_pending_label_read_never_wins():
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", agreeing_tables("fdc:1", "ciqual:1"))
+    ingest_labels(label_record("label:aa", 260.0, 1), label_record("label:bb", 270.0, 2))
+    with engine().begin() as conn:
+        conn.execute(text("update observation set status = 'rejected', reviewed_by = 'tester' where food_id = 'label:aa'"))
+        conn.execute(text("update observation set status = 'pending', reviewed_by = 'tester' where food_id = 'label:bb'"))
+    merge("fdc:1", "ciqual:1", "label:aa", "label:bb")
+    assert served("fdc:1") == (229, "fdc")
+
+
+def test_the_newest_of_several_approved_label_reads_wins():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", agreeing_tables("fdc:1", "ciqual:1"))
+    ingest_labels(label_record("label:aa", 250.0, 3, True), label_record("label:bb", 260.0, 5, True),
+                  label_record("label:cc", 270.0, 4, True))
+    merge("fdc:1", "ciqual:1", "label:aa", "label:bb", "label:cc")
+    assert served("fdc:1") == (260, "label")
+
+
+def test_an_approved_label_read_wins_in_the_snapshot_and_after_a_merge(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", agreeing_tables("fdc:1", "ciqual:1"))
+    ingest_labels(label_record("label:aa", 260.0, 1, True))
+    merge("fdc:1", "ciqual:1")
+    build_on(monkeypatch, "2026-10-01")
+    assert served("fdc:1") == (229, "fdc")  # the label record is a separate product here
+    merge("fdc:1", "label:aa")
+    assert served("fdc:1") == served("label:aa") == (260, "label")  # merge-follow keeps the override
+    build_on(monkeypatch, "2026-10-02")
+    assert served("fdc:1") == (260, "label")
+
+
 def log_rows(kind: str) -> list[dict]:
     from sqlalchemy import text
 
