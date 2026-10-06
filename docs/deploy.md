@@ -182,9 +182,14 @@ have no account and are never charged. Requests through RapidAPI are not charged
 4. Create a restricted key (Developers, API keys, Create restricted key). Give it write permission
    for Checkout Sessions only, and nothing else. Set it as `FOODDB__BACKEND__STRIPE_SECRET_KEY`.
 5. Optional: create a Product and a Price in Stripe, and set `FOODDB__BACKEND__STRIPE_PRICE_ID`.
-   Without it, fooddb sends the price of EUR 29.99 inline.
+   Without it, fooddb sends the price of EUR 29.99 inline. With it, the tax behaviour is the one
+   on that Price. Create the Price with `tax_behavior` set (`inclusive`), and give its Product a tax
+   code.
 6. Optional: turn on Stripe Tax, add your registrations, and set
-   `FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX=true`. Stripe then adds tax to each session.
+   `FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX=true`. Stripe then calculates the tax on each session,
+   and Checkout always asks for the billing address, because Stripe Tax needs the location.
+   Stripe collects tax only where you have an active registration. Until your live account has one,
+   a live sale collects no VAT.
 7. Enable customer receipts in the Stripe email settings. Stripe sends them, not fooddb.
 8. Run `docker compose up -d`, then open `https://<host>/portal` and buy one pack in Stripe test
    mode first.
@@ -268,6 +273,8 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__STRIPE_WEBHOOK_SECRET` | none | The signing secret of the Stripe webhook endpoint. Without it, the webhook answers 503. |
 | `FOODDB__BACKEND__STRIPE_PRICE_ID` | none | A Stripe price for one pack. Without it, fooddb sends a price of EUR 29.99 inline. |
 | `FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX` | `false` | `true`: Stripe Tax calculates the tax on each Checkout session. |
+| `FOODDB__BACKEND__STRIPE_TAX_BEHAVIOR` | `inclusive` | `inclusive` or `exclusive`: whether the inline price includes tax. Any other value makes the purchase answer 503. Not used with `STRIPE_PRICE_ID`. |
+| `FOODDB__BACKEND__STRIPE_TAX_CODE` | `txcd_10000000` | The Stripe tax code of the inline product. Not used with `STRIPE_PRICE_ID`. |
 | `FOODDB__BACKEND__CREDITS_PER_PACK` | `100000` | The credits that one paid pack adds. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 | `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |

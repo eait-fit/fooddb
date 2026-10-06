@@ -24,7 +24,7 @@ def configured(monkeypatch):
     monkeypatch.setenv("FOODDB__BACKEND__STRIPE_WEBHOOK_SECRET", WHSEC)
     monkeypatch.setenv("FOODDB__BACKEND__STRIPE_SECRET_KEY", "fake-stripe-key")
     monkeypatch.setenv("FOODDB__BACKEND__REQUIRE_KEY_FOR_READS", "true")
-    for k in ("STRIPE_PRICE_ID", "STRIPE_AUTOMATIC_TAX", "CREDITS_PER_PACK", "MAIL", "RESEND_API_KEY"):
+    for k in ("STRIPE_PRICE_ID", "STRIPE_AUTOMATIC_TAX", "STRIPE_TAX_BEHAVIOR", "STRIPE_TAX_CODE", "CREDITS_PER_PACK", "MAIL", "RESEND_API_KEY"):
         monkeypatch.delenv(f"FOODDB__BACKEND__{k}", raising=False)
 
 
@@ -358,7 +358,9 @@ def test_buy_creates_a_checkout_session_for_the_account(monkeypatch, outbox):
     assert d["line_items[0][price_data][currency]"] == "eur" and d["line_items[0][price_data][unit_amount]"] == "2999"
     assert d["line_items[0][price_data][product_data][name]"] == "fooddb — 100,000 API requests"
     assert d["success_url"].startswith(f"{PUBLIC}/portal/success") and d["cancel_url"] == f"{PUBLIC}/portal/cancel"
-    assert "automatic_tax[enabled]" not in d and "line_items[0][price]" not in d
+    assert "automatic_tax[enabled]" not in d and "billing_address_collection" not in d and "line_items[0][price]" not in d
+    assert d["line_items[0][price_data][tax_behavior]"] == "inclusive"
+    assert d["line_items[0][price_data][product_data][tax_code]"] == "txcd_10000000"
 
 
 def test_checkout_uses_the_configured_price_and_stripe_tax(monkeypatch, outbox):
@@ -372,7 +374,24 @@ def test_checkout_uses_the_configured_price_and_stripe_tax(monkeypatch, outbox):
     assert post(c, "/portal/buy").status_code == 303
     d = calls[0]["data"]
     assert d["line_items[0][price]"] == "price_fake" and d["automatic_tax[enabled]"] == "true"
+    assert d["billing_address_collection"] == "required" and "customer_update[address]" not in d
     assert not any("price_data" in k for k in d)
+
+
+def test_checkout_tax_behavior_and_code_are_configurable_and_validated(monkeypatch, outbox):
+    calls = []
+    monkeypatch.setattr("fooddb.billing.httpx.post", lambda url, **kw: calls.append(kw) or httpx.Response(
+        200, json={"url": "https://checkout.stripe.test/x"}, request=httpx.Request("POST", url)))
+    c = web()
+    sign_in(c, "cfg@example.com", outbox)
+    monkeypatch.setenv("FOODDB__BACKEND__STRIPE_TAX_BEHAVIOR", "Exclusive")
+    monkeypatch.setenv("FOODDB__BACKEND__STRIPE_TAX_CODE", "txcd_99999999")
+    assert post(c, "/portal/buy").status_code == 303
+    d = calls[0]["data"]
+    assert d["line_items[0][price_data][tax_behavior]"] == "exclusive"
+    assert d["line_items[0][price_data][product_data][tax_code]"] == "txcd_99999999"
+    monkeypatch.setenv("FOODDB__BACKEND__STRIPE_TAX_BEHAVIOR", "unspecified")
+    assert post(c, "/portal/buy").status_code == 503 and len(calls) == 1
 
 
 def test_buy_without_a_stripe_key_is_refused_and_a_stripe_error_leaks_nothing(monkeypatch, outbox):
