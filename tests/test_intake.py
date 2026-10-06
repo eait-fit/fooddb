@@ -5,6 +5,8 @@ import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
+import pytest
+
 from fooddb import checks
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -110,3 +112,49 @@ def test_matvaretabellen_reads_its_food_list_into_available_carbohydrate():
     assert agave.categories == ["matvaretabellen:7.1", "matvaretabellen:7"]
     assert checks.category(aioli.categories) == "fats"  # 8.3 mayonnaise, under 8 cooking fat: not an oil
     assert not checks.flags(beans.values, checks.category(beans.categories))
+
+
+def test_frida_reads_its_data_table_with_both_carbohydrate_codes_and_its_food_groups():
+    from fooddb.fetchers import frida
+
+    observed = datetime(2026, 1, 19, tzinfo=UTC)
+    strawberry, biscuit, celeriac, water = frida.records(FIXTURES / "frida.xlsx", observed)
+    assert strawberry.id == "frida:1" and strawberry.name == "Strawberry, raw" and strawberry.lang == "en"
+    assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "frida" and strawberry.layer == "core"
+    assert strawberry.values == pytest.approx({
+        "ENERC_KJ": 161.95358974359, "ENERC_KCAL": 38.4579487179487, "PROCNT": 0.659855769230769,
+        "CHOCDF": 8.34732371794872, "CHOAVL": 6.8619391025641, "FIBTG": 1.48538461538462, "FAT": 0.6,
+        "SUGAR": 6.06625, "FASAT": 0.049655172413793, "NA": 0.5078})
+    assert strawberry.observed_at == observed
+    assert strawberry.values["CHOCDF"] == pytest.approx(strawberry.values["CHOAVL"] + strawberry.values["FIBTG"])
+    assert strawberry.categories == ["frida:51", "frida:47"] and checks.category(strawberry.categories) == "fruits"
+    assert "FASAT" not in biscuit.values and biscuit.categories == ["frida:32", "frida:126"]
+    assert "SUGAR" not in celeriac.values and celeriac.values["FIBTG"] > 0
+    assert water.values["ENERC_KCAL"] == 0 and checks.category(water.categories) == "waters"
+    assert not checks.flags(strawberry.values, "fruits")
+
+
+def test_frida_stops_when_a_parameter_is_not_the_one_it_expects(tmp_path):
+    from fooddb.fetchers import frida
+
+    broken = tmp_path / "frida.xlsx"
+    with zipfile.ZipFile(FIXTURES / "frida.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b"Available carbohydrates", b"Starch") if "sharedStrings" in item.filename else data)
+    with pytest.raises(RuntimeError, match="parameter 172"):
+        list(frida.records(broken, datetime(2026, 1, 19, tzinfo=UTC)))
+
+
+def test_frida_finds_the_dataset_workbook_in_the_dtu_data_record():
+    from fooddb.fetchers import frida
+
+    article = {"version": 8, "published_date": "2026-01-19T12:00:51Z", "files": [
+        {"name": "Frida5.5_Documentation_English.pdf", "computed_md5": "47", "download_url": "https://ndownloader.figshare.com/files/60901597"},
+        {"name": "Frida_5.5_Dataset.xlsx", "computed_md5": "b553eed6805e3cd8856663421de0f1fe", "download_url": "https://ndownloader.figshare.com/files/60901603"},
+        {"name": "Frida_5.5_Dataset.ods", "computed_md5": "06", "download_url": "https://ndownloader.figshare.com/files/60901606"}]}
+    url, ref, observed = frida.newest(article)
+    assert url == "https://ndownloader.figshare.com/files/60901603" and ref == "Frida_5.5_Dataset.xlsx b553eed6805e3cd8856663421de0f1fe"
+    assert observed == datetime(2026, 1, 19, 12, 0, 51, tzinfo=UTC)
+    with pytest.raises(RuntimeError, match="no dataset workbook"):
+        frida.newest({"files": [article["files"][0]]})
