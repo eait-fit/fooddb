@@ -9,8 +9,8 @@ from collections.abc import Callable, Iterable, Mapping
 # Source category → fooddb category. The first row with a tag the record carries wins, so a narrow
 # tag comes before its parent (OFF tags carry every ancestor). Tags: OFF `categories_tags`, FDC
 # `foodCategory.description` and `brandedFoodCategory`, and for the national tables
-# "<source>:<group>": CIQUAL group names, Fineli use classes, Matvaretabellen food group ids. A None
-# row stops the search: no category, so no range check.
+# "<source>:<group>": CIQUAL group names, Fineli use classes, Matvaretabellen food group ids and MEXT food
+# group numbers. A None row stops the search: no category, so no range check.
 CATEGORIES: list[tuple[str | None, tuple[str, ...]]] = [
     ("alcoholic-beverages", ("en:alcoholic-beverages", "ciqual:alcoholic beverages", "fineli:ALCTOT",
                              "matvaretabellen:9.3")),
@@ -24,33 +24,33 @@ CATEGORIES: list[tuple[str | None, tuple[str, ...]]] = [
     ("waters", ("en:spring-waters", "fineli:DRWATER")),  # OFF files mineral waters under spring waters
     # FDC Branded files sweetened sparkling waters under "Water".
     ("beverages", ("en:beverages", "Beverages", "Water", "Soda", "Fruit & Vegetable Juice, Nectars & Fruit Drinks",
-                   "ciqual:beverages", "fineli:BEVTOT", "matvaretabellen:9")),
+                   "ciqual:beverages", "fineli:BEVTOT", "matvaretabellen:9", "mext:16")),
     ("oils", ("en:vegetable-oils", "en:fish-oils", "ciqual:vegetable oils", "ciqual:fish oils",
               "matvaretabellen:8.2")),
-    ("fats", ("en:fats", "Fats and Oils", "ciqual:fats and oils", "fineli:FATTOT", "matvaretabellen:8")),
+    ("fats", ("en:fats", "Fats and Oils", "ciqual:fats and oils", "fineli:FATTOT", "matvaretabellen:8", "mext:14")),
     ("dairy", ("en:dairies", "Dairy and Egg Products", "Cheese", "Milk", "Yogurt", "ciqual:milk and milk products",
-               "fineli:MILKDTOT", "matvaretabellen:1")),
+               "fineli:MILKDTOT", "matvaretabellen:1", "mext:13")),
     ("vegetables", ("en:fresh-vegetables", "en:frozen-vegetables", "en:canned-vegetables",
                     "Vegetables and Vegetable Products", "Canned Vegetables", "Frozen Vegetables",
-                    "ciqual:vegetables", "fineli:VEGFRESH", "matvaretabellen:6.2")),
+                    "ciqual:vegetables", "fineli:VEGFRESH", "matvaretabellen:6.2", "mext:06")),
     ("fruits", ("en:fresh-fruits", "Fruits and Fruit Juices", "Canned Fruit", "ciqual:fruits", "fineli:FRUFRESH",
-                "fineli:BERFRESH", "matvaretabellen:13.1", "matvaretabellen:13.2")),
+                "fineli:BERFRESH", "matvaretabellen:13.1", "matvaretabellen:13.2", "mext:07")),
     ("legumes", ("en:legumes-and-their-products", "Legumes and Legume Products", "ciqual:legumes",
-                 "matvaretabellen:12")),
+                 "matvaretabellen:12", "mext:04")),
     ("nuts", ("en:nuts-and-their-products", "Nut and Seed Products", "Nut & Seed Butters", "ciqual:nuts and seeds",
-              "matvaretabellen:14")),
+              "matvaretabellen:14", "mext:05")),
     ("cereals", ("en:cereal-grains", "en:pastas", "Cereal Grains and Pasta", "Rice", "Pasta by Shape & Type",
                  "ciqual:pasta, rice and grains", "ciqual:flours", "fineli:RICEADD", "fineli:PASTAADD",
                  "matvaretabellen:5.1", "matvaretabellen:5.2")),
     ("meat", ("en:meats-and-their-products", "Beef Products", "Pork Products", "Poultry Products",
               "Lamb, Veal, and Game Products", "Sausages and Luncheon Meats", "Pepperoni, Salami & Cold Cuts",
               "Sausages, Hotdogs & Brats", "ciqual:cooked meat", "ciqual:raw meat", "ciqual:delicatessen meat and similar",
-              "fineli:MSTEAK", "fineli:SAUSAGE", "matvaretabellen:3")),
+              "fineli:MSTEAK", "fineli:SAUSAGE", "matvaretabellen:3", "mext:11")),
     ("fish", ("en:fishes-and-their-products", "en:seafood", "Finfish and Shellfish Products", "Fish & Seafood",
               "Canned Tuna", "ciqual:fish, cooked", "ciqual:fish, raw", "ciqual:seafood, cooked", "ciqual:seafood, raw",
-              "fineli:FISH", "matvaretabellen:4")),
+              "fineli:FISH", "matvaretabellen:4", "mext:10")),
     ("sweets", ("en:sweet-snacks", "Sweets", "Candy", "ciqual:sugar and confectionery", "fineli:SUGARTOT",
-                "matvaretabellen:7")),
+                "matvaretabellen:7", "mext:03", "mext:15")),
     ("snacks", ("en:salty-snacks", "Snacks", "Chips, Pretzels & Snacks", "fineli:SNACK", "matvaretabellen:10.5")),
 ]
 
