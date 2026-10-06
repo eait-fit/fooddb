@@ -58,8 +58,9 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
 
 - The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its data writes are a
   review decision, and a label photo with its queued read (see [Label reads](#label-reads)). It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)),
-  and the SQLAdmin review UI at `/admin` (see [Review](#review)). It checks API keys and rate
-  limits on each request (see [Authentication](#authentication)).
+  and the SQLAdmin review UI and admin panel at `/admin` (see [Review](#review) and
+  [Admin panel](#admin-panel)). It checks API keys and rate limits on each request (see
+  [Authentication](#authentication)). One middleware logs each request (see [Request log](#request-log)).
 - The **worker** (`fooddb worker`, `cli.py:26`) runs the fetches, the match job and the snapshot.
   The queue is [pq](https://github.com/ricwo/pq), which keeps its tasks in the same Postgres
   database (`jobs.py:14`).
@@ -386,6 +387,99 @@ flowchart LR
   `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
   cannot decide a value.
 
+### Admin panel
+
+```mermaid
+flowchart LR
+    browser["Admin in a browser<br/>admin key"] --> login["SQLAdmin login<br/>session cookie with csrf token"]
+    login --> ov["Overview<br/>/admin/overview"]
+    login --> jb["Jobs<br/>/admin/jobs"]
+    login --> rq["Requests<br/>/admin/requests"]
+    login --> us["Users<br/>/admin/users"]
+    ov --> ops["ops.py<br/>queries and actions"]
+    jb --> ops
+    rq --> ops
+    us --> ops
+    ops -->|"read"| db[("Postgres<br/>food, observation, snapshot, account,<br/>api_key, purchase, usage_month,<br/>pq_tasks, pq_periodic, fetch_run,<br/>request_log")]
+    jb -->|"POST run now"| ops
+    us -->|"POST grant, unlimited, revoke"| ops
+    ops -->|"enqueue fetch or snapshot"| pq[("pq_tasks")]
+    ops -->|"one transaction with the change"| act[("admin_action<br/>who, what, detail")]
+```
+
+- Four pages sit next to the SQLAdmin model views: **Overview**, **Jobs**, **Requests** and **Users**
+  (`adminpages.py:47`). Each one is a SQLAdmin `BaseView` with a Jinja template. Charts are CSS bars
+  in tables, with no JavaScript library. `ops.py` holds the queries and the actions, so a page
+  function only renders. All four need the admin login, like every other `/admin` page.
+- **Overview** shows the count of source records per source and layer, the products that are not
+  merged away, the pending review values, the newest snapshot and ODbL dump, freshness, the
+  requests of the last 24 hours, credits sold, credits outstanding and the metered requests
+  (`ops.py:29`). The count per source reads the whole `food` table, so it takes a few seconds
+  after the full OFF dump is loaded.
+- **Jobs** shows each watched fetcher with its last check and its state, the pq queue (pending and
+  running tasks, the last 50 failed and 20 completed, with the error text and the duration), the
+  pq schedules with their next run, and the last 30 `fetch_run` rows (`ops.py:55`).
+- **Requests** shows the request log for 24 hours, 7 days or 30 days: requests per hour or per day,
+  by status, by key, the top routes, p50 and p95 latency, the counts of 4xx, 5xx, 402 and 429, and
+  the latest 50 rows (`ops.py:74`).
+- **Users** shows each account with its credits, the requests metered this month, its purchases and
+  all its keys with the last use and the revocation time. Keys without an account are in a
+  second list (`ops.py:94`).
+- The actions are POST forms: **Run now** for a fetcher or the snapshot (`/admin/jobs/run`),
+  **Grant** credits and **Set unlimited** (`/admin/users/{id}/grant` and `/unlimited`), and
+  **Revoke** a key (`/admin/keys/{id}/revoke`). SQLAdmin builds its own actions as GET links, so
+  these forms are our own routes. Login stores a random `csrf` value in the signed session cookie.
+  Each form carries that value, and the route compares it in constant time (`adminpages.py:25`). A
+  missing or wrong value gives a 403 and changes nothing. An unauthenticated request gets the login
+  redirect before the route runs, and so does a session whose key was revoked.
+- Each action writes one `admin_action` row in the same transaction as the change (`ops.py:110`).
+  The row has the name of the admin key, the action and a JSON detail. **Overview** lists the
+  latest 15.
+- **Run now** queues the same function that the schedule runs. It queues nothing when a task of
+  the same function and arguments is already pending or running, so a double click does not start
+  two fetches. An admin cannot revoke the key of the session that he uses: the CLI does that.
+- A grant is between 1 and 10,000,000 credits. Credits are never taken back here. The balance
+  has a `credits >= 0` check anyway.
+
+### Request log
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Cl as Client
+    participant M as RequestLog middleware
+    participant A as Route and auth dependency
+    participant P as Postgres
+    Cl->>M: GET /v1/products/4006381333931?include=off
+    alt path is /livez, /healthz or under /admin
+        M->>A: pass through, no row
+    else
+        M->>A: call the app, count the response bytes
+        A->>A: auth.authenticate sets request.state.caller
+        A-->>Cl: response
+        M->>P: insert into request_log, in a worker thread, after the response
+    end
+```
+
+- `RequestLog` is one ASGI middleware on the FastAPI app (`api.py:35`, `requestlog.py:61`). It
+  writes one row per request from this one place. The client does not wait for the insert: it
+  runs in a worker thread after the last response byte went out. A failed insert logs a warning
+  and does not change the response. The insert is one statement and has no batch.
+- The `route` column holds the route template, for example `/v1/products/{barcode}`. A request
+  that no route matched gets `(unmatched)`. The raw URL, the query, the headers and the token are
+  never read into the row. Thus barcodes, search terms and keys stay out of the log.
+- `key_id`, `key_name` and `account_id` come from `request.state.caller`, which
+  `auth.authenticate` sets (`auth.py:119`). A refused key (401) has no caller, so those columns
+  are empty. An anonymous read has the name `anonymous`, and a RapidAPI read has the name `rapidapi`.
+- The client address is stored only as `ip_hash`: the first 8 hex digits of an HMAC-SHA256 of the
+  address under `FOODDB__BACKEND__SECRET_KEY` (`requestlog.py:33`). It lets an operator see that
+  many requests come from one client, and it cannot be turned back into the address without the
+  secret. Without the secret, nothing is stored. See the decision of 2026-10-07.
+- `/livez`, `/healthz` and `/admin` are not logged. A health probe every 30 s would be most of the
+  rows. The admin pages are not API requests.
+- `jobs.prune_request_log` deletes the rows older than `FOODDB__BACKEND__REQUEST_LOG_DAYS`
+  (default 30). The worker schedules it daily at 03:15 UTC (`jobs.py:106`).
+
 ### Label reads
 
 ```mermaid
@@ -663,6 +757,8 @@ first. The index `product_merged_into_idx` keeps this lookup fast.
 | Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
 | ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:80`) | BATCH |
+| Request log prune | `prune_request_log` | cron `15 3 * * *`, UTC (`jobs.py:106`) | BATCH |
+| Admin run now | `fetch_off_deltas`, `fetch_fdc`, `fetch_table`, `build_snapshot` | the **Run now** button in `/admin/jobs` (`ops.py:158`) | NORMAL |
 | Label read | `read_label` | `POST /v1/labels` (`api.py:165`) | NORMAL |
 
 pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
@@ -677,6 +773,7 @@ sequenceDiagram
     W->>Q: schedule fetch_off_deltas every 6 h, next run now
     W->>Q: schedule build_snapshot, daily 02:30 UTC
     W->>Q: schedule dump_odbl, 1st of the month 04:00 UTC, BATCH
+    W->>Q: schedule prune_request_log, daily 03:15 UTC, BATCH
     W->>Q: read fetcher_check and snapshot (health.report)
     W->>Q: upsert bootstrap-fdc-foundation, bootstrap-fdc-sr_legacy
     W->>Q: upsert bootstrap-ciqual, bootstrap-matvaretabellen
@@ -877,6 +974,26 @@ erDiagram
         date month PK "first day, UTC"
         bigint requests
     }
+    request_log {
+        bigint id PK
+        timestamptz at "index request_log_at_idx"
+        text method
+        text route "template, or (unmatched)"
+        smallint status
+        int latency_ms
+        bigint bytes "response body"
+        bigint key_id "no foreign key"
+        text key_name
+        bigint account_id "no foreign key"
+        text ip_hash "8 hex digits of a keyed HMAC, or null"
+    }
+    admin_action {
+        bigint id PK
+        timestamptz at
+        text by "name of the admin key"
+        text action "grant-credits, set-unlimited, revoke-key, run-now"
+        text detail "JSON"
+    }
     rate_limit {
         text bucket PK "key:id or ip:address"
         timestamptz window_start "start of the minute"
@@ -884,7 +1001,7 @@ erDiagram
     }
 ```
 
-Twelve Alembic migrations make this schema:
+Fourteen Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -908,6 +1025,9 @@ Twelve Alembic migrations make this schema:
   (`alembic/versions/0011_snapshot_value_approved.py:15`).
 - `0012` adds `account`, `purchase`, `login_token` and `usage_month`, and `api_key.account_id`
   (`alembic/versions/0012_developer_portal.py:15`).
+- `0014` adds `request_log` with an index on `at`, and `admin_action`
+  (`alembic/versions/0014_admin_panel.py:15`). Neither table has a foreign key, so the log keeps
+  its rows if a key or an account goes away.
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -1221,7 +1341,7 @@ flowchart LR
   `FOODDB__BACKEND__FORWARDED_ALLOW_IPS` (`cli.py:52`). The compose stack trusts every peer, because
   it publishes the port on loopback only.
 - `/admin` logs in with an `admin` key in the password field (`admin.py:63`). The session cookie
-  holds the key id, signed with `FOODDB__BACKEND__SECRET_KEY`. Each admin request checks that the
+  holds the key id and a random CSRF value, signed with `FOODDB__BACKEND__SECRET_KEY`. Each admin request checks that the
   key is still active. Without the secret, `admin.mount` does not mount `/admin` (`admin.py:83`).
 
 ### Developer portal and billing

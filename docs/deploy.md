@@ -206,7 +206,9 @@ docker compose exec api fooddb accounts grant someone@example.com 100000
 docker compose exec api fooddb accounts set-unlimited someone@example.com
 ```
 
-`/admin` shows the accounts and the purchases, read-only.
+`/admin` shows the accounts and the purchases, read-only. Its **Users** page also grants credits,
+sets an account to unlimited and revokes keys. The **Jobs**, **Requests** and **Overview** pages show
+the queue, the request log and the platform counts.
 
 ## TLS with Caddy
 
@@ -277,6 +279,7 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__STRIPE_TAX_CODE` | `txcd_10000000` | The Stripe tax code of the inline product. Not used with `STRIPE_PRICE_ID`. |
 | `FOODDB__BACKEND__CREDITS_PER_PACK` | `100000` | The credits that one paid pack adds. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
+| `FOODDB__BACKEND__REQUEST_LOG_DAYS` | `30` | The days that the request log keeps its rows. The worker deletes older rows every day at 03:15 UTC. |
 | `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |
 | `FOODDB__BACKEND__LLM_API_KEY` | none | The OpenRouter key for label reads. Set it on the server yourself. Without it, label reads are demo reads, and every value waits for review. |
 | `FOODDB__BACKEND__LLM_MODEL` | `qwen/qwen3-vl-235b-a22b-instruct` | The OpenRouter vision model. Our account reaches only x-ai and Chinese-vendor models. |
