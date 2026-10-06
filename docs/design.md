@@ -66,7 +66,8 @@ Append-only. Each row records one field value, its source, when it was observed,
 (source record, photo). Nothing is overwritten, so any served value can be traced back.
 Built: a label value names its photo by SHA-256 in `observation.evidence`. For the other sources,
 the evidence is the source record. Unchanged values are not stored again, and a
-field that disappears from a newer record is stored as withdrawn.
+field that disappears from a newer record is stored as withdrawn. Built ([#28](https://github.com/eait-fit/fooddb/issues/28)):
+a record seen again at the same `observed_at` can also withdraw a field.
 
 ### Checks
 
