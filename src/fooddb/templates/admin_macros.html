@@ -1,0 +1,15 @@
+{% macro ts(t) %}{% if t %}{{ t.strftime("%Y-%m-%d %H:%M") }}{% else %}-{% endif %}{% endmacro %}
+{% macro iso(s) %}{% if s %}{{ s[:16]|replace("T", " ") }}{% else %}-{% endif %}{% endmacro %}
+{% macro bar(pct, cls="bg-primary") %}<div class="progress progress-sm" style="min-width: 80px"><div class="progress-bar {{ cls }}" style="width: {{ pct }}%"></div></div>{% endmacro %}
+{% macro stat(label, value, note="") %}
+<div class="col-sm-6 col-lg-3"><div class="card"><div class="card-body">
+  <div class="subheader">{{ label }}</div><div class="h1 mb-0">{{ value }}</div>{% if note %}<div class="text-muted">{{ note }}</div>{% endif %}
+</div></div></div>
+{% endmacro %}
+{% macro post(url, csrf, label, cls="btn-sm btn-outline-primary", fields={}) %}
+<form method="post" action="{{ url }}" class="d-inline">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  {% for k, v in fields.items() %}<input type="hidden" name="{{ k }}" value="{{ v }}">{% endfor %}
+  <button type="submit" class="btn {{ cls }}">{{ label }}</button>
+</form>
+{% endmacro %}

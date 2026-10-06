@@ -1,0 +1,66 @@
+{% extends "sqladmin/layout.html" %}
+{% from "admin_macros.html" import ts, iso, post %}
+{% block content %}
+<div class="col-12"><div class="w-100">
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">Freshness</h3>
+      <div class="card-actions">{{ post(url_for("admin:view-jobs-run"), csrf, "Run snapshot", "btn-sm btn-primary", {"fetcher": "snapshot"}) }}</div></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Source</th><th>Last successful check (UTC)</th><th>Allowed age</th><th>State</th><th></th></tr></thead>
+      <tbody>
+      {% for name, f in health.fetchers.items() %}<tr>
+        <td>{{ name }}</td><td>{{ iso(f.last_ok) }}</td><td>{{ f.max_age_hours|round|int }} h</td>
+        <td>{% if f.fresh %}<span class="badge bg-green-lt">fresh</span>{% else %}<span class="badge bg-red-lt">stale</span>{% endif %}</td>
+        <td class="text-end">{{ post(url_for("admin:view-jobs-run"), csrf, "Run now", "btn-sm btn-outline-primary", {"fetcher": name}) }}</td>
+      </tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">Queue</h3>
+      <div class="card-actions">{% for status in ("pending", "running", "failed", "completed") %}<span class="badge me-1">{{ status }} {{ counts.get(status, 0) }}</span>{% endfor %}</div></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Id</th><th>Task</th><th>Status</th><th>Attempts</th><th>Queued</th><th>Started</th><th>Seconds</th><th>Error</th></tr></thead>
+      <tbody>
+      {% for t in tasks %}<tr>
+        <td>{{ t.id }}</td><td>{{ t.name.split(":")[-1] }}{% if t.kwargs %} <code>{{ t.kwargs }}</code>{% endif %}</td>
+        <td><span class="badge {{ {"failed": "bg-red-lt", "running": "bg-blue-lt", "pending": "bg-yellow-lt", "completed": "bg-green-lt"}[t.status] }}">{{ t.status }}</span></td>
+        <td>{{ t.attempts }}</td><td>{{ ts(t.run_at) }}</td><td>{{ ts(t.started_at) }}</td>
+        <td>{% if t.started_at and t.completed_at %}{{ (t.completed_at - t.started_at).total_seconds()|round(1) }}{% else %}-{% endif %}</td>
+        <td>{% if t.error %}<pre class="mb-0 small" style="max-width: 40em; white-space: pre-wrap">{{ t.error[-600:] }}</pre>{% endif %}</td>
+      </tr>{% else %}<tr><td colspan="8" class="text-muted">The queue is empty.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">Schedules</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Task</th><th>Key</th><th>Every</th><th>Next run (UTC)</th><th>Last run (UTC)</th><th>Active</th></tr></thead>
+      <tbody>
+      {% for p in periodic %}<tr>
+        <td>{{ p.name.split(":")[-1] }}</td><td>{{ p.key or "" }}</td><td>{{ p.cron or p.run_every }}</td>
+        <td>{{ ts(p.next_run) }}</td><td>{{ ts(p.last_run) }}</td><td>{{ "yes" if p.active else "no" }}</td>
+      </tr>{% else %}<tr><td colspan="6" class="text-muted">No schedule: the worker registers them when it starts.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><h3 class="card-title">Fetch runs</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Fetcher</th><th>Reference</th><th>Status</th><th class="text-end">Foods</th><th class="text-end">Observations</th><th>Started (UTC)</th><th>Seconds</th><th>Error</th></tr></thead>
+      <tbody>
+      {% for r in runs %}<tr>
+        <td>{{ r.fetcher }}</td><td>{{ r.ref }}</td>
+        <td><span class="badge {{ {"failed": "bg-red-lt", "running": "bg-blue-lt", "done": "bg-green-lt"}.get(r.status, "") }}">{{ r.status }}</span></td>
+        <td class="text-end">{{ r.foods }}</td><td class="text-end">{{ r.observations }}</td><td>{{ ts(r.started_at) }}</td>
+        <td>{% if r.finished_at %}{{ (r.finished_at - r.started_at).total_seconds()|round(1) }}{% else %}-{% endif %}</td>
+        <td>{% if r.error %}<pre class="mb-0 small" style="max-width: 40em; white-space: pre-wrap">{{ r.error[-600:] }}</pre>{% endif %}</td>
+      </tr>{% else %}<tr><td colspan="8" class="text-muted">Nothing fetched yet.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div></div>
+{% endblock %}

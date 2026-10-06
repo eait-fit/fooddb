@@ -1,9 +1,11 @@
 """SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads and brand uploads that
-wait for review next to their photo, and the merge log with a split action. Accounts and purchases are read-only here. Read-only otherwise. Login takes an API key with the admin scope.
-Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
+wait for review next to their photo, and the merge log with a split action. Accounts and purchases are read-only here.
+The Overview, Jobs, Requests and Users pages (adminpages.py) show the platform and run its few actions. Login takes an
+API key with the admin scope. Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
 
 import logging
 import os
+import secrets
 from pathlib import Path
 
 from fastapi import FastAPI, Request
@@ -14,7 +16,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from starlette.concurrency import run_in_threadpool
 
-from fooddb import auth, resolve, review
+from fooddb import adminpages, auth, resolve, review
 from fooddb.db import account, engine, merge_log, observation, purchase
 from fooddb.labels import photos
 
@@ -146,7 +148,7 @@ class KeyLogin(AuthenticationBackend):
         caller = await run_in_threadpool(auth.lookup, str((await request.form()).get("password", "")))
         if caller is None or "admin" not in caller.scopes:
             return False
-        request.session.update(key_id=caller.key_id, key_name=caller.name)
+        request.session.update(key_id=caller.key_id, key_name=caller.name, csrf=secrets.token_urlsafe(24))
         return True
 
     async def logout(self, request: Request) -> bool:
@@ -169,6 +171,8 @@ def mount(app: FastAPI) -> None:
     login = KeyLogin(secret_key=secret, same_site="strict", max_age=8 * 3600)
     admin = Admin(app, session_maker=sessionmaker(class_=PendingSession), title="fooddb review",
                   authentication_backend=login, templates_dir=str(Path(__file__).parent / "templates"))
+    for page in (adminpages.OverviewView, adminpages.JobsView, adminpages.RequestsView, adminpages.UsersView):
+        admin.add_base_view(page)
     admin.add_view(PendingView)
     admin.add_base_view(LabelView)
     admin.add_view(MergeLogView)

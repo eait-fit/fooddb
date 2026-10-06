@@ -20,7 +20,7 @@ from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 from starlette.templating import Jinja2Templates
 
-from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, resolve, review
+from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
 from fooddb.db import engine
 from fooddb.labels import photos
 
@@ -32,6 +32,7 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="fooddb", version="0.3.0", lifespan=lifespan)
+app.add_middleware(requestlog.RequestLog)
 READ = [auth.require("read")]
 app.include_router(export.router, dependencies=READ)
 app.include_router(dump.router, dependencies=[Depends(auth.counted)])  # ODbL: public, whatever reads need

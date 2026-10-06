@@ -1,0 +1,71 @@
+{% extends "sqladmin/layout.html" %}
+{% from "admin_macros.html" import ts, bar, stat %}
+{% block content %}
+<div class="col-12"><div class="w-100">
+  <div class="mb-3">
+    {% for w in windows %}<a class="btn btn-sm {{ "btn-primary" if w == hours else "btn-outline-primary" }}" href="?hours={{ w }}">{{ "%d h" % w if w <= 24 else "%d days" % (w // 24) }}</a> {% endfor %}
+    <span class="text-muted ms-2">The log keeps {{ days }} days. Times are UTC.</span>
+  </div>
+  <div class="row row-cards mb-3">
+    {{ stat("Requests", "{:,}".format(totals.n), "%d with status 4xx or 5xx"|format(totals.errors)) }}
+    {{ stat("Latency p50 / p95", "%d / %d ms"|format(totals.p50, totals.p95)) }}
+    {{ stat("4xx / 5xx", "%d / %d"|format(totals.s4xx, totals.s5xx)) }}
+    {{ stat("402 out of credits / 429 rate limited", "%d / %d"|format(totals.s402, totals.s429)) }}
+  </div>
+
+  <div class="row row-cards mb-3">
+    <div class="col-lg-8"><div class="card">
+      <div class="card-header"><h3 class="card-title">Requests per {{ "hour" if hours <= 24 else "day" }}</h3></div>
+      <table class="table table-vcenter card-table">
+        <thead><tr><th>{{ "Hour" if hours <= 24 else "Day" }}</th><th class="text-end">Requests</th><th class="text-end">Errors</th><th style="width: 50%"></th></tr></thead>
+        <tbody>
+        {% for b in buckets %}<tr><td>{{ b.b.strftime("%Y-%m-%d %H:00" if hours <= 24 else "%Y-%m-%d") }}</td><td class="text-end">{{ b.n }}</td><td class="text-end">{{ b.errors }}</td><td>{{ bar(b.pct) }}</td></tr>
+        {% else %}<tr><td colspan="4" class="text-muted">No requests in this window.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div></div>
+    <div class="col-lg-4"><div class="card">
+      <div class="card-header"><h3 class="card-title">By status</h3></div>
+      <table class="table table-vcenter card-table">
+        <tbody>
+        {% for s in statuses %}<tr><td>{{ s.status }}</td><td class="text-end">{{ s.n }}</td><td style="width: 50%">{{ bar(s.pct, "bg-red" if s.status >= 500 else "bg-yellow" if s.status >= 400 else "bg-green") }}</td></tr>
+        {% else %}<tr><td class="text-muted">None.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div></div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">By key</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Key</th><th>Account</th><th class="text-end">Requests</th><th class="text-end">Errors</th><th class="text-end">p50 ms</th><th class="text-end">p95 ms</th><th style="width: 25%"></th></tr></thead>
+      <tbody>
+      {% for c in callers %}<tr><td>{{ c.name }}</td><td>{{ c.account_id or "" }}</td><td class="text-end">{{ c.n }}</td><td class="text-end">{{ c.errors }}</td><td class="text-end">{{ c.p50|round|int }}</td><td class="text-end">{{ c.p95|round|int }}</td><td>{{ bar(c.pct) }}</td></tr>
+      {% else %}<tr><td colspan="7" class="text-muted">None.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">Top routes</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Method</th><th>Route</th><th class="text-end">Requests</th><th class="text-end">Errors</th><th class="text-end">p50 ms</th><th class="text-end">p95 ms</th><th style="width: 25%"></th></tr></thead>
+      <tbody>
+      {% for r in routes %}<tr><td>{{ r.method }}</td><td><code>{{ r.route }}</code></td><td class="text-end">{{ r.n }}</td><td class="text-end">{{ r.errors }}</td><td class="text-end">{{ r.p50|round|int }}</td><td class="text-end">{{ r.p95|round|int }}</td><td>{{ bar(r.pct) }}</td></tr>
+      {% else %}<tr><td colspan="7" class="text-muted">None.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><h3 class="card-title">Latest 50 requests</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>When (UTC)</th><th>Method</th><th>Route</th><th>Status</th><th class="text-end">ms</th><th class="text-end">Bytes</th><th>Key</th><th>Account</th><th>Client</th></tr></thead>
+      <tbody>
+      {% for r in recent %}<tr><td>{{ r.at.strftime("%Y-%m-%d %H:%M:%S") }}</td><td>{{ r.method }}</td><td><code>{{ r.route }}</code></td><td>{{ r.status }}</td><td class="text-end">{{ r.latency_ms }}</td><td class="text-end">{{ r.bytes }}</td><td>{{ r.key_name or "" }}</td><td>{{ r.account_id or "" }}</td><td><code>{{ r.ip_hash or "" }}</code></td></tr>
+      {% else %}<tr><td colspan="9" class="text-muted">None.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div></div>
+{% endblock %}

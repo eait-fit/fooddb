@@ -92,6 +92,13 @@ The review queue is also in a browser at `$(./dev url)/admin`. Log in with an `a
 password field. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
 admin login cookie.
 
+The same login opens four more pages: **Overview** (counts per source and layer, snapshot, dump,
+credits), **Jobs** (the pq queue with errors, schedules, fetch runs, freshness, and **Run now**
+buttons), **Requests** (the request log: per hour or day, by status, key and route, p50 and p95)
+and **Users** (accounts, credits, keys; grant credits, set unlimited, revoke a key). Each action is a
+POST form with a CSRF token. The request log keeps the route template, never the URL or query,
+and `FOODDB__BACKEND__REQUEST_LOG_DAYS` (default 30) sets how long.
+
 ## Authentication
 
 API keys look like `fdb_…`. Send one as `Authorization: Bearer fdb_…` or `X-API-Key: fdb_…`.

@@ -1,0 +1,38 @@
+{% extends "sqladmin/layout.html" %}
+{% from "admin_macros.html" import ts, bar, stat %}
+{% block content %}
+<div class="col-12"><div class="w-100">
+  <div class="row row-cards mb-3">
+    {{ stat("Products", "{:,}".format(products), "not merged away") }}
+    {{ stat("Values pending review", pending) }}
+    {{ stat("Freshness", "ok" if health.ok else "stale", "all watched sources" if health.ok else "see Jobs") }}
+    {{ stat("Requests, last 24 h", "{:,}".format(requests.n), "%d errors, p95 %d ms"|format(requests.errors, requests.p95)) }}
+  </div>
+  <div class="row row-cards mb-3">
+    {{ stat("Last snapshot", snapshot.day if snapshot else "none", "%s products, built %s"|format(snapshot.products, ts(snapshot.built_at)) if snapshot else "") }}
+    {{ stat("Last dump", dump.day if dump else "none", "%s products"|format(dump.products) if dump else "") }}
+    {{ stat("Credits sold", "{:,}".format(credits_sold), revenue) }}
+    {{ stat("Credits outstanding", "{:,}".format(outstanding), "%d accounts; %s requests metered this month, %s in all"|format(accounts, "{:,}".format(metered_month), "{:,}".format(metered_total))) }}
+  </div>
+  <div class="card mb-3">
+    <div class="card-header"><h3 class="card-title">Source records per source and layer</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>Layer</th><th>Source</th><th class="text-end">Records</th><th style="width: 40%"></th></tr></thead>
+      <tbody>
+      {% for f in foods %}<tr><td>{{ f.layer }}</td><td>{{ f.source }}</td><td class="text-end">{{ "{:,}".format(f.n) }}</td><td>{{ bar(f.pct) }}</td></tr>
+      {% else %}<tr><td colspan="4" class="text-muted">No records yet.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <div class="card-header"><h3 class="card-title">Recent admin actions</h3></div>
+    <table class="table table-vcenter card-table">
+      <thead><tr><th>When (UTC)</th><th>By</th><th>Action</th><th>Detail</th></tr></thead>
+      <tbody>
+      {% for a in actions %}<tr><td>{{ ts(a.at) }}</td><td>{{ a.by }}</td><td>{{ a.action }}</td><td><code>{{ a.detail }}</code></td></tr>
+      {% else %}<tr><td colspan="4" class="text-muted">None yet.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div></div>
+{% endblock %}
