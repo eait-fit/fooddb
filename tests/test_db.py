@@ -515,6 +515,7 @@ def test_health_reports_stale_and_fresh_fetchers():
     assert report["fetchers"]["fdc-foundation"]["fresh"] is False
     assert report["fetchers"]["fdc-sr_legacy"]["fresh"] is False  # never checked
     assert report["fetchers"]["ciqual"]["fresh"] is False and "fdc-branded" not in report["fetchers"]
+    assert report["fetchers"]["tfda"]["max_age_hours"] == 192
     assert report["ok"] is False
     r = client().get("/healthz")
     assert r.status_code == 503 and "fetchers" in r.json()
@@ -605,8 +606,9 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     monkeypatch.setattr(off, "fetch", off_fetch)
 
     jobs.schedule()
-    # FDC Branded and Fineli are off by default; CIQUAL and Matvaretabellen fill a fresh install.
-    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+    # FDC Branded and Fineli are off by default; CIQUAL, Matvaretabellen and TFDA fill a fresh install.
+    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "match_products",
+                         "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
@@ -1111,6 +1113,25 @@ def test_a_national_table_is_served_with_its_licence_and_attribution():
     assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (32.9, "etalab-2.0")
     assert p["attribution"] == [{"source": "ciqual", "licence": "etalab-2.0", "text": ciqual.ATTRIBUTION}]
     assert product("ciqual:25600")["seals"]["licence"] == "etalab-2.0"
+
+
+def test_tfda_is_served_in_chinese_with_its_licence_and_attribution_and_outranks_the_crowd():
+    from pathlib import Path
+
+    from fooddb import ingest
+    from fooddb.fetchers import tfda
+
+    zipped = Path(__file__).parent / "fixtures" / "tfda.zip"
+    assert ingest.run(tfda.FETCHER, "t", tfda.records(zipped, datetime(2026, 10, 5, tzinfo=UTC)))[0] == 5
+    p = product("tfda:D3200404")
+    assert p["name"] == {"value": "富士蘋果", "source": "tfda", "licence": "OGDL-Taiwan-1.0", "record": "tfda:D3200404"}
+    assert p["lang"]["value"] == "zh-TW"
+    assert (p["per_100"]["SUGAR"]["value"], p["per_100"]["SUGAR"]["licence"]) == (10.4, "OGDL-Taiwan-1.0")
+    assert p["per_100"]["CHOCDF"]["value"] == 13.1 and "CHOAVL" not in p["per_100"]
+    assert p["attribution"] == [{"source": "tfda", "licence": "OGDL-Taiwan-1.0", "text": tfda.ATTRIBUTION}]
+    ingest.run("t", "r2", [kcal_record("tfda:1", "tfda", 229.0, 2026), kcal_record("off:1", "off", 260.0, 2026)])
+    merge("tfda:1", "off:1")
+    assert served("off:1", "off") == (229, "tfda")
 
 
 def test_national_tables_rank_with_fdc_above_the_crowd(monkeypatch):
