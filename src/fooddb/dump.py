@@ -102,9 +102,9 @@ def list_dumps() -> dict:
 @router.get("/{name}")
 def download(name: str, if_none_match: str = Header("")) -> Response:
     """One dump file, gzipped NDJSON, one product per line. The ETag is its sha256."""
-    path = directory() / name
     m = next((m for m in manifests() if m["name"] == name), None)
-    if m is None or not path.is_file():
+    path = directory() / m["name"] if m else None
+    if path is None or not path.is_file():
         raise HTTPException(404, f"no dump named {name}")
     etag = f'"{m["sha256"]}"'
     if "*" in if_none_match or etag in {t.strip().removeprefix("W/") for t in if_none_match.split(",")}:
