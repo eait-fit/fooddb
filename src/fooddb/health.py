@@ -17,7 +17,9 @@ MAX_AGE = {
     "ciqual": timedelta(days=8),
     "cofid": timedelta(days=8),
     "fineli": timedelta(days=8),
+    "frida": timedelta(days=8),
     "matvaretabellen": timedelta(days=8),
+    "mext": timedelta(days=8),
     "snapshot": timedelta(hours=26),
 }
 # Fetchers that run only when switched on. FDC Branded is about 3 GB of JSON. Fineli's site refuses

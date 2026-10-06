@@ -181,3 +181,112 @@ def test_cofid_finds_the_dataset_workbook_on_its_gov_uk_page():
     assert ref == "60538b91e90e07527df82ae4" and observed == datetime(2021, 3, 19, 14, 0, 7, tzinfo=UTC)
     with pytest.raises(RuntimeError, match="no dataset workbook"):
         cofid.newest({"details": {"change_history": [], "attachments": content["details"]["attachments"][:2]}})
+
+
+def test_frida_reads_its_data_table_with_both_carbohydrate_codes_and_its_food_groups():
+    from fooddb.fetchers import frida
+
+    observed = datetime(2026, 1, 19, tzinfo=UTC)
+    strawberry, biscuit, celeriac, water = frida.records(FIXTURES / "frida.xlsx", observed)
+    assert strawberry.id == "frida:1" and strawberry.name == "Strawberry, raw" and strawberry.lang == "en"
+    assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "frida" and strawberry.layer == "core"
+    assert strawberry.values == pytest.approx({
+        "ENERC_KJ": 161.95358974359, "ENERC_KCAL": 38.4579487179487, "PROCNT": 0.659855769230769,
+        "CHOCDF": 8.34732371794872, "CHOAVL": 6.8619391025641, "FIBTG": 1.48538461538462, "FAT": 0.6,
+        "SUGAR": 6.06625, "FASAT": 0.049655172413793, "NA": 0.5078})
+    assert strawberry.observed_at == observed
+    assert strawberry.values["CHOCDF"] == pytest.approx(strawberry.values["CHOAVL"] + strawberry.values["FIBTG"])
+    assert strawberry.categories == ["frida:51", "frida:47"] and checks.category(strawberry.categories) == "fruits"
+    assert "FASAT" not in biscuit.values and biscuit.categories == ["frida:32", "frida:126"]
+    assert "SUGAR" not in celeriac.values and celeriac.values["FIBTG"] > 0
+    assert water.values["ENERC_KCAL"] == 0 and checks.category(water.categories) == "waters"
+    assert not checks.flags(strawberry.values, "fruits")
+
+
+def test_frida_stops_when_a_parameter_is_not_the_one_it_expects(tmp_path):
+    from fooddb.fetchers import frida
+
+    broken = tmp_path / "frida.xlsx"
+    with zipfile.ZipFile(FIXTURES / "frida.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b"Available carbohydrates", b"Starch") if "sharedStrings" in item.filename else data)
+    with pytest.raises(RuntimeError, match="parameter 172"):
+        list(frida.records(broken, datetime(2026, 1, 19, tzinfo=UTC)))
+
+
+def test_frida_finds_the_dataset_workbook_in_the_dtu_data_record():
+    from fooddb.fetchers import frida
+
+    article = {"version": 8, "published_date": "2026-01-19T12:00:51Z", "files": [
+        {"name": "Frida5.5_Documentation_English.pdf", "computed_md5": "47", "download_url": "https://ndownloader.figshare.com/files/60901597"},
+        {"name": "Frida_5.5_Dataset.xlsx", "computed_md5": "b553eed6805e3cd8856663421de0f1fe", "download_url": "https://ndownloader.figshare.com/files/60901603"},
+        {"name": "Frida_5.5_Dataset.ods", "computed_md5": "06", "download_url": "https://ndownloader.figshare.com/files/60901606"}]}
+    url, ref, observed = frida.newest(article)
+    assert url == "https://ndownloader.figshare.com/files/60901603" and ref == "Frida_5.5_Dataset.xlsx b553eed6805e3cd8856663421de0f1fe"
+    assert observed == datetime(2026, 1, 19, 12, 0, 51, tzinfo=UTC)
+    with pytest.raises(RuntimeError, match="no dataset workbook"):
+        frida.newest({"files": [article["files"][0]]})
+
+
+def test_mext_value_follows_the_rule_for_estimates_traces_and_gaps():
+    from fooddb.fetchers.mext import value
+
+    assert value("12.7") == 12.7 and value("1452") == 1452 and value(" 0.3 ") == 0.3
+    assert value("(11.3)") == 11.3 and value("(0)") == 0  # an estimate is the table's value
+    assert value("Tr") == 0 and value("(Tr)") == 0
+    assert value("18.5†") == 18.5  # † points to a note on the value
+    assert value("-") is None and value("*") is None and value("") is None and value(None) is None
+
+
+def test_mext_reads_its_main_table_with_available_carbohydrate_and_clean_japanese_names():
+    from fooddb.fetchers import mext
+
+    observed = datetime(2026, 3, 27, tzinfo=UTC)
+    got = {r.id: r for r in mext.records(FIXTURES / "mext.xlsx", observed)}
+    assert list(got) == ["mext:01001", "mext:01172", "mext:01091", "mext:03032", "mext:07107", "mext:09059", "mext:10457",
+                         "mext:14011", "mext:16001"]
+    amaranth, batter, porridge, syrup, banana, wakame, horse_mackerel, oil, sake = got.values()
+    assert amaranth.name == "アマランサス 玄穀" and amaranth.lang == "ja" and amaranth.observed_at == observed
+    assert amaranth.licence == "mext-free-use" and amaranth.source == "mext" and amaranth.layer == "core"
+    assert amaranth.values == pytest.approx({"ENERC_KJ": 1452, "ENERC_KCAL": 343, "PROCNT": 12.7, "FAT": 6.0, "CHOAVL": 57.8,
+                                             "CHOCDF": 64.9, "FIBTG": 7.4, "NA": 1})
+    assert amaranth.categories == ["mext:01"] and checks.category(amaranth.categories) is None
+    assert "CHOAVL" not in batter.values and batter.values["FAT"] == pytest.approx(47.7)  # "-": not measured
+    assert porridge.values["PROCNT"] == 1.1 and porridge.values["NA"] == 0 and porridge.values["CHOAVL"] == 14.2  # (1.1), (Tr)
+    assert syrup.values["CHOAVL"] == 18.5 and syrup.values["FIBTG"] == 14.0 and syrup.values["FAT"] == 0  # 18.5†, Tr
+    assert syrup.name == "還元水あめ"
+    assert wakame.values == {"ENERC_KJ": 1, "ENERC_KCAL": 0, "CHOCDF": 0.1, "FIBTG": 0, "NA": 68}
+    assert horse_mackerel.name == "にしまあじ 開き干し 生" and horse_mackerel.values["CHOAVL"] == 0
+    assert "FIBTG" not in horse_mackerel.values and checks.category(horse_mackerel.categories) == "fish"
+    assert oil.values["FAT"] == 100 and "CHOAVL" not in oil.values and checks.category(oil.categories) == "fats"
+    assert checks.category(banana.categories) == "fruits" and checks.category(sake.categories) == "beverages"
+    assert not checks.flags(banana.values, "fruits") and not checks.flags(oil.values, "fats")
+
+
+def test_mext_stops_when_a_component_identifier_moves(tmp_path):
+    from fooddb.fetchers import mext
+
+    broken = tmp_path / "mext.xlsx"
+    with zipfile.ZipFile(FIXTURES / "mext.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b">CHOAVL<", b">CHOAVLX<") if "sharedStrings" in item.filename else data)
+    with pytest.raises(RuntimeError, match="CHOAVL"):
+        list(mext.records(broken, datetime(2026, 3, 27, tzinfo=UTC)))
+
+
+def test_mext_finds_the_main_table_on_its_page_and_stops_when_the_edition_changes():
+    from fooddb.fetchers import mext
+
+    page = ('<html><head><title>日本食品標準成分表（八訂）増補2023年：文部科学省</title></head><body>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_0001.pdf">日本食品標準成分表（八訂）増補2023年 電子書籍（第2章を除く）&nbsp;(PDF:5.1MB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_02.xlsx">・第2章（データ）&nbsp;(Excel:1.9MB) <img alt="Excel"/></a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_04.xlsx">・第2章第1表（データ）&nbsp;(Excel:915KB)</a></li></body></html>')
+    url, ref, observed = mext.newest(page)
+    assert url == "https://www.mext.go.jp/content/20260327-mxt_kagsei-mext-000029402_02.xlsx"
+    assert ref == "20260327-mxt_kagsei-mext-000029402_02.xlsx" and observed == datetime(2026, 3, 27, tzinfo=UTC)
+    with pytest.raises(RuntimeError, match="edition"):
+        mext.newest(page.replace("八訂）増補2023年：", "九訂）2030年："))
+    with pytest.raises(RuntimeError, match="no main table"):
+        mext.newest(page.replace("・第2章（データ）", "・第3章（データ）"))

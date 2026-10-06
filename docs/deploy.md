@@ -17,10 +17,11 @@ The `api` and `worker` services start only after `migrate` succeeds.
 - A Linux server (a VPS is sufficient) with 2 CPUs and 2 GB of memory or more.
 - Docker Engine with the Compose v2 plugin (`docker compose version` must work).
 - About 1 GB of free disk for the image and the data of the first boot. The image is
-  490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL, CoFID
-  and Matvaretabellen add about 7,000 foods. Their size was not measured.
+  490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL,
+  CoFID, Frida, Matvaretabellen and MEXT add about 12,300 foods. Their size was not measured.
 - Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr`,
-  `www.matvaretabellen.no`, `www.gov.uk` and `assets.publishing.service.gov.uk` (CoFID). With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
+  `www.matvaretabellen.no`, `www.mext.go.jp`, `api.figshare.com`, `ndownloader.figshare.com` (Frida,
+  which redirects to `s3q.ait.dtu.dk`), `www.gov.uk` and `assets.publishing.service.gov.uk` (CoFID). With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
 - For TLS: a DNS name with an A record that points to the server, and open ports 80 and 443.
 
 The optional full Open Food Facts dump needs much more disk. See
@@ -354,8 +355,9 @@ UTC. It dumps the newest final snapshot day to the `fooddb_dumps` volume, and ke
 reads need one. The ODbL requires this. [data-licence.md](data-licence.md) has the terms.
 
 - To write a dump now: `docker compose exec worker fooddb dump odbl`.
-- The dump reads about 1000 products per second. The worker stops a task after 1 hour. With the
-  full OFF dump loaded (about 4 million products), the job does not finish in the worker. Then run
+- The dump reads about 7000 products per second. The worker stops a task after 1 hour. With the
+  full OFF dump loaded (about 4 million products), that rate gives about 10 minutes. If a slow
+  disk or a small database cache makes the job last more than 1 hour, run
   `docker compose exec worker fooddb dump odbl` from a host cron job on the 1st of each month.
 - A stopped run leaves a `.part` file. The next run replaces it. The API never serves it.
 

@@ -9,11 +9,12 @@ from collections.abc import Callable, Iterable, Mapping
 # Source category → fooddb category. The first row with a tag the record carries wins, so a narrow
 # tag comes before its parent (OFF tags carry every ancestor). Tags: OFF `categories_tags`, FDC
 # `foodCategory.description` and `brandedFoodCategory`, and for the national tables
-# "<source>:<group>": CIQUAL group names, Fineli use classes, Matvaretabellen food group ids and CoFID group
-# codes (a code and its prefixes: DG, D). A None row stops the search: no category, so no range check.
+# "<source>:<group>": CIQUAL group names, Fineli use classes, Matvaretabellen and Frida food group ids, MEXT food
+# group numbers and CoFID group codes (a code and its prefixes: DG, D). A None row stops the search: no category, so no range check.
 CATEGORIES: list[tuple[str | None, tuple[str, ...]]] = [
     ("alcoholic-beverages", ("en:alcoholic-beverages", "ciqual:alcoholic beverages", "fineli:ALCTOT",
-                             "matvaretabellen:9.3", "cofid:Q")),
+                             "matvaretabellen:9.3", "frida:112", "frida:113", "frida:114", "frida:115", "frida:116",
+                             "frida:194", "cofid:Q")),
     # Concentrates, powders, sprays and cooking creams: as sold, they are not what the category's ranges describe.
     (None, ("en:syrups", "en:beverage-preparations", "en:dehydrated-beverages", "en:instant-beverages",
             "en:coconut-milks", "en:coconut-creams", "en:meal-replacements", "en:dietary-supplements",
@@ -21,39 +22,41 @@ CATEGORIES: list[tuple[str | None, tuple[str, ...]]] = [
             "Weight Control", "ciqual:beverages, to reconstitute", "fineli:MEALREP", "fineli:SPECSUPP",
             "matvaretabellen:10.10", "cofid:PA")),
     ("beverages", ("en:flavored-carbonated-mineral-waters",)),
-    ("waters", ("en:spring-waters", "fineli:DRWATER")),  # OFF files mineral waters under spring waters
+    ("waters", ("en:spring-waters", "fineli:DRWATER", "frida:117")),  # OFF files mineral waters under spring waters
     # FDC Branded files sweetened sparkling waters under "Water".
     ("beverages", ("en:beverages", "Beverages", "Water", "Soda", "Fruit & Vegetable Juice, Nectars & Fruit Drinks",
-                   "ciqual:beverages", "fineli:BEVTOT", "matvaretabellen:9", "cofid:P", "cofid:FC")),
+                   "ciqual:beverages", "fineli:BEVTOT", "matvaretabellen:9", "mext:16", "frida:105", "cofid:P", "cofid:FC")),
     ("oils", ("en:vegetable-oils", "en:fish-oils", "ciqual:vegetable oils", "ciqual:fish oils",
               "matvaretabellen:8.2", "cofid:OC")),
-    ("fats", ("en:fats", "Fats and Oils", "ciqual:fats and oils", "fineli:FATTOT", "matvaretabellen:8", "cofid:O")),
+    ("fats", ("en:fats", "Fats and Oils", "ciqual:fats and oils", "fineli:FATTOT", "matvaretabellen:8", "mext:14", "frida:91", "cofid:O")),
     ("dairy", ("en:dairies", "Dairy and Egg Products", "Cheese", "Milk", "Yogurt", "ciqual:milk and milk products",
-               "fineli:MILKDTOT", "matvaretabellen:1", "cofid:BA", "cofid:BC", "cofid:BJ", "cofid:BL", "cofid:BN",
-               "cofid:BP")),
+               "fineli:MILKDTOT", "matvaretabellen:1", "mext:13", "frida:2", "frida:9", "frida:18", "cofid:BA", "cofid:BC", "cofid:BJ", "cofid:BL",
+               "cofid:BN", "cofid:BP")),
     ("vegetables", ("en:fresh-vegetables", "en:frozen-vegetables", "en:canned-vegetables",
                     "Vegetables and Vegetable Products", "Canned Vegetables", "Frozen Vegetables",
-                    "ciqual:vegetables", "fineli:VEGFRESH", "matvaretabellen:6.2", "cofid:DA", "cofid:DI")),
+                    "ciqual:vegetables", "fineli:VEGFRESH", "matvaretabellen:6.2", "mext:06", "frida:39", "frida:40", "frida:41",
+                    "frida:43", "frida:46", "frida:192", "cofid:DA", "cofid:DI")),
     ("fruits", ("en:fresh-fruits", "Fruits and Fruit Juices", "Canned Fruit", "ciqual:fruits", "fineli:FRUFRESH",
-                "fineli:BERFRESH", "matvaretabellen:13.1", "matvaretabellen:13.2", "cofid:FA")),
+                "fineli:BERFRESH", "matvaretabellen:13.1", "matvaretabellen:13.2", "mext:07", "frida:49", "frida:50", "frida:51",
+                "frida:52", "frida:184", "frida:193", "cofid:FA")),
     ("legumes", ("en:legumes-and-their-products", "Legumes and Legume Products", "ciqual:legumes",
-                 "matvaretabellen:12", "cofid:DB", "cofid:DF")),
+                 "matvaretabellen:12", "mext:04", "frida:170", "cofid:DB", "cofid:DF")),
     ("nuts", ("en:nuts-and-their-products", "Nut and Seed Products", "Nut & Seed Butters", "ciqual:nuts and seeds",
-              "matvaretabellen:14", "cofid:G")),
+              "matvaretabellen:14", "mext:05", "frida:176", "cofid:G")),
     ("cereals", ("en:cereal-grains", "en:pastas", "Cereal Grains and Pasta", "Rice", "Pasta by Shape & Type",
                  "ciqual:pasta, rice and grains", "ciqual:flours", "fineli:RICEADD", "fineli:PASTAADD",
-                 "matvaretabellen:5.1", "matvaretabellen:5.2", "cofid:AA", "cofid:AC", "cofid:AD", "cofid:AG",
+                 "matvaretabellen:5.1", "matvaretabellen:5.2", "frida:26", "cofid:AA", "cofid:AC", "cofid:AD", "cofid:AG",
                  "cofid:AI", "cofid:AK")),
     ("meat", ("en:meats-and-their-products", "Beef Products", "Pork Products", "Poultry Products",
               "Lamb, Veal, and Game Products", "Sausages and Luncheon Meats", "Pepperoni, Salami & Cold Cuts",
               "Sausages, Hotdogs & Brats", "ciqual:cooked meat", "ciqual:raw meat", "ciqual:delicatessen meat and similar",
-              "fineli:MSTEAK", "fineli:SAUSAGE", "matvaretabellen:3", "cofid:M")),
+              "fineli:MSTEAK", "fineli:SAUSAGE", "matvaretabellen:3", "mext:11", "frida:56", "frida:80", "cofid:M")),
     ("fish", ("en:fishes-and-their-products", "en:seafood", "Finfish and Shellfish Products", "Fish & Seafood",
               "Canned Tuna", "ciqual:fish, cooked", "ciqual:fish, raw", "ciqual:seafood, cooked", "ciqual:seafood, raw",
-              "fineli:FISH", "matvaretabellen:4", "cofid:J")),
+              "fineli:FISH", "matvaretabellen:4", "mext:10", "frida:68", "cofid:J")),
     ("sweets", ("en:sweet-snacks", "Sweets", "Candy", "ciqual:sugar and confectionery", "fineli:SUGARTOT",
-                "matvaretabellen:7", "cofid:SC", "cofid:SE")),
-    ("snacks", ("en:salty-snacks", "Snacks", "Chips, Pretzels & Snacks", "fineli:SNACK", "matvaretabellen:10.5", "cofid:SN")),
+                "matvaretabellen:7", "mext:03", "mext:15", "frida:100", "cofid:SC", "cofid:SE")),
+    ("snacks", ("en:salty-snacks", "Snacks", "Chips, Pretzels & Snacks", "fineli:SNACK", "matvaretabellen:10.5", "frida:143", "cofid:SN")),
 ]
 
 # Plausible values per 100 g or 100 ml: (category, basis or None for both, field, low, high), None

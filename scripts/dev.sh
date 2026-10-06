@@ -367,7 +367,9 @@ cmd_fetch() {
       .venv/bin/fooddb enqueue fdc --dataset sr_legacy
       .venv/bin/fooddb enqueue table --source ciqual
       .venv/bin/fooddb enqueue table --source cofid
+      .venv/bin/fooddb enqueue table --source frida
       .venv/bin/fooddb enqueue table --source matvaretabellen
+      .venv/bin/fooddb enqueue table --source mext
       .venv/bin/fooddb enqueue off --max-files 7
       ;;
     off|off-dump|fdc|table|match|snapshot) .venv/bin/fooddb enqueue "$@" ;;
