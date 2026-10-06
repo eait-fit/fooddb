@@ -17,10 +17,10 @@ The `api` and `worker` services start only after `migrate` succeeds.
 - A Linux server (a VPS is sufficient) with 2 CPUs and 2 GB of memory or more.
 - Docker Engine with the Compose v2 plugin (`docker compose version` must work).
 - About 1 GB of free disk for the image and the data of the first boot. The image is
-  490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL and
-  Matvaretabellen add about 5,600 foods. Their size was not measured.
-- Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr` and
-  `www.matvaretabellen.no`. With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
+  490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL, CoFID
+  and Matvaretabellen add about 7,000 foods. Their size was not measured.
+- Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr`,
+  `www.matvaretabellen.no`, `www.gov.uk` and `assets.publishing.service.gov.uk` (CoFID). With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
 - For TLS: a DNS name with an A record that points to the server, and open ports 80 and 443.
 
 The optional full Open Food Facts dump needs much more disk. See
