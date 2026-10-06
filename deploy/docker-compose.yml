@@ -19,6 +19,11 @@ x-app: &app
     FOODDB__BACKEND__STALE_AFTER_DAYS: ${FOODDB__BACKEND__STALE_AFTER_DAYS:-730}
     FOODDB__BACKEND__DUMP_DIR: /app/dumps
     FOODDB__BACKEND__DUMP_KEEP: ${FOODDB__BACKEND__DUMP_KEEP:-3}
+    FOODDB__BACKEND__PHOTO_DIR: /app/photos
+    FOODDB__BACKEND__LLM_API_KEY: ${FOODDB__BACKEND__LLM_API_KEY:-}
+    FOODDB__BACKEND__LLM_MODEL: ${FOODDB__BACKEND__LLM_MODEL:-}
+    FOODDB__BACKEND__LABEL_READER: ${FOODDB__BACKEND__LABEL_READER:-}
+    FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR: ${FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR:-0.9}
     FOODDB__BACKEND__FETCH_FDC_BRANDED: ${FOODDB__BACKEND__FETCH_FDC_BRANDED:-false}
     FOODDB__BACKEND__FETCH_FINELI: ${FOODDB__BACKEND__FETCH_FINELI:-false}
     FOODDB__BACKEND__FINELI_URL: ${FOODDB__BACKEND__FINELI_URL:-https://fineli.fi/fineli/content/file/47}
@@ -51,6 +56,7 @@ services:
     command: ["fooddb", "serve"]
     volumes:
       - dumps:/app/dumps:ro  # serves the monthly ODbL dumps the worker writes
+      - photos:/app/photos  # label photos uploaded to POST /v1/labels
     ports:
       # Loopback only: put a TLS reverse proxy (Caddy, nginx) in front. See docs/deploy.md.
       - "${FOODDB__DEPLOY__BIND:-127.0.0.1}:${FOODDB__DEPLOY__PORT:-8000}:8000"
@@ -63,9 +69,11 @@ services:
     healthcheck: { disable: true }
     volumes:
       - dumps:/app/dumps
+      - photos:/app/photos:ro  # reads the label photos the API stores
     depends_on:
       migrate: { condition: service_completed_successfully }
 
 volumes:
   pgdata18:
   dumps:
+  photos:

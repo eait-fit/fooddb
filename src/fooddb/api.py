@@ -1,12 +1,14 @@
 """REST API and MCP server over products. Core data by default; the ODbL "off" layer only with
 include=off (include_off in MCP)."""
 
+import base64
+import binascii
 import os
 from contextlib import asynccontextmanager
 from datetime import date
 from typing import Annotated, Any, Literal
 
-from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, FastAPI, Form, HTTPException, Query, Request, UploadFile
 from fastapi.responses import JSONResponse
 from mcp.server import MCPServer
 from mcp.server.mcpserver import Context
@@ -16,8 +18,9 @@ from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 
-from fooddb import admin, auth, dump, export, gtin, health, resolve, review
+from fooddb import admin, auth, dump, export, gtin, health, jobs, labels, resolve, review
 from fooddb.db import engine
+from fooddb.labels import photos
 
 
 @asynccontextmanager
@@ -154,6 +157,44 @@ def split_product(product_id: int, body: Split) -> dict:
 
 
 app.include_router(review_router)
+
+# Label intake: a photo in, a queued read out. Needs a key with the contribute scope.
+label_router = APIRouter(tags=["labels"], dependencies=[auth.require("contribute")])
+
+
+@label_router.post("/v1/labels", status_code=202)
+def submit_label(photo: UploadFile, barcode: Annotated[str | None, Form()] = None,
+                 name: Annotated[str | None, Form()] = None, read: Annotated[str | None, Form()] = None) -> dict:
+    """Queue a read of a nutrition label photo (JPEG, PNG or WebP). `barcode` and `name` are hints. `read` is a
+    read the client already did (the JSON that the MCP tool read_label returns): it is not read again, and
+    every value waits for review."""
+    if barcode and gtin.normalize(barcode) is None:
+        raise HTTPException(422, "barcode: not a valid global GTIN")
+    if read is not None:
+        try:
+            labels.parse(read)
+        except labels.ReadFailed as e:
+            raise HTTPException(422, f"read: {e}")
+    try:
+        sha, _ = photos.store(photo.file.read(photos.MAX_BYTES + 1))
+    except photos.Refused as e:
+        raise HTTPException(e.status, str(e))
+    hints = {k: v for k, v in (("barcode", barcode), ("name", name)) if v}
+    task = jobs.queue().enqueue(jobs.read_label, photo=sha, hints=hints, read=read)
+    return {"task": task, "photo": sha, "record": f"label:{sha}"}
+
+
+@label_router.get("/v1/labels/{task_id}")
+def label_status(task_id: int) -> dict:
+    """A queued label read: pending, running, completed or failed. Its values are under `record` once completed."""
+    task = jobs.queue().get_task(task_id)
+    if task is None or task.name != "fooddb.jobs:read_label":
+        raise HTTPException(404, f"label task {task_id} not found")
+    photo = task.payload["kwargs"]["photo"]
+    return {"task": task_id, "status": task.status, "error": task.error, "photo": photo, "record": f"label:{photo}"}
+
+
+app.include_router(label_router)
 admin.mount(app)
 
 
@@ -237,6 +278,32 @@ def split_product_tool(ctx: Context, product_id: int, food_ids: list[str], by: s
     joins them with the rest again. `by` names who decided."""
     _needs(ctx, "review")
     return _tool(split_product, product_id, Split(food_ids=food_ids, by=by, note=note))
+
+
+@mcp.tool(name="read_label")
+def read_label_tool(ctx: Context, image: str, barcode: str | None = None, name: str | None = None,
+                    reader: Literal["claude-cli", "codex-cli", "openrouter", "demo"] | None = None,
+                    submit: bool = False) -> dict[str, Any]:
+    """Read a nutrition label photo (base64 JPEG, PNG or WebP) into per-100 values, on this machine.
+    `reader` defaults to $FOODDB__BACKEND__LABEL_READER, else claude-cli: your own Claude subscription pays.
+    Nothing leaves this machine except to the model, unless `submit` is true: then the read and the photo
+    go to $FOODDB__BACKEND__SUBMIT_URL with the key in $FOODDB__BACKEND__SUBMIT_KEY, where they wait for review."""
+    if ctx.request_context.request is not None:
+        raise ToolError("read_label runs on stdio (fooddb mcp) only; over HTTP, POST the photo to /v1/labels")
+    try:
+        data = base64.b64decode(image, validate=True)
+        mime = photos.check(data)
+    except (binascii.Error, photos.Refused) as e:
+        raise ToolError(f"image: {e}")
+    hints = {k: v for k, v in (("barcode", barcode), ("name", name)) if v}
+    try:
+        read = labels.reader(reader or os.environ.get("FOODDB__BACKEND__LABEL_READER") or "claude-cli").read(data, mime, hints)
+        out: dict[str, Any] = {"read": read.model_dump()}
+        if submit:
+            out["submitted"] = labels.submit(data, hints, read)
+    except (RuntimeError, ValueError) as e:
+        raise ToolError(str(e))
+    return out
 
 
 class _Authenticated:

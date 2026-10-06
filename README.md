@@ -95,11 +95,12 @@ admin login cookie.
 ## Authentication
 
 API keys look like `fdb_…`. Send one as `Authorization: Bearer fdb_…` or `X-API-Key: fdb_…`.
-`fooddb keys create --name NAME --scope read|review|admin` makes one and prints it once.
+`fooddb keys create --name NAME --scope read|contribute|review|admin` makes one and prints it once.
 `fooddb keys list` and `fooddb keys revoke NAME` manage them.
 
 - `read`: the data routes, the snapshot export and the MCP read tools.
-- `review`: `read`, plus `/v1/review` and the MCP review tools.
+- `contribute`: `read`, plus label photos at `/v1/labels`.
+- `review`: `contribute`, plus `/v1/review` and the MCP review tools.
 - `admin`: `review`, plus the login to `/admin`.
 
 Writes, the review queue and `/admin` always need a key. Reads need a key only when
@@ -114,7 +115,7 @@ RapidAPI, a request with the listing's `X-RapidAPI-Proxy-Secret`
 
 The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
 `search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`,
-plus the review tools `review_queue` and `decide_review`.
+plus the review tools `review_queue` and `decide_review`, and `read_label` on stdio.
 Each field carries its licence tag, as in REST. OFF data comes back only with `include_off: true`.
 
 Two transports:
@@ -155,6 +156,38 @@ it is over: a pin on an earlier day always returns the same values. Today's snap
 until midnight UTC, so a pin on today can change. A product that matching merged after the build
 keeps the values the snapshot froze, and a merged-away product id answers as its survivor. Record
 lists and names are always live.
+
+## Read a label with your own Claude or Codex subscription
+
+The MCP tool `read_label` reads a nutrition label photo into per-100 values on your machine. It
+runs `claude -p` (Claude Code) or `codex exec` (Codex CLI) as a subprocess, so your own
+subscription pays for the read. It works only over stdio (`fooddb mcp`), needs no API key, and
+sends nothing to a fooddb server unless you ask it to.
+
+1. Install Claude Code or Codex CLI, and log in once.
+2. Add the server: `claude mcp add fooddb -- uv run --directory /path/to/fooddb fooddb mcp`.
+   No database is necessary for `read_label`.
+3. Give the client a photo. The tool takes the photo as base64 (JPEG, PNG or WebP, at most
+   10 MiB), plus an optional `barcode` and `name`. `reader` is `claude-cli` (default),
+   `codex-cli`, `openrouter` (with your own `FOODDB__BACKEND__LLM_API_KEY`) or `demo`. Set
+   `FOODDB__BACKEND__LABEL_READER` to change the default.
+4. To contribute the read, call the tool with `submit: true`. It posts the photo and the read to
+   `FOODDB__BACKEND__SUBMIT_URL` with the `contribute` key in `FOODDB__BACKEND__SUBMIT_KEY`. The
+   server does not read the photo again. Every value waits for review there.
+
+A server reads photos itself through `POST /v1/labels`:
+
+```bash
+curl -H "Authorization: Bearer $KEY" -F photo=@label.jpg -F barcode=4006381333931 "$(./dev url)/v1/labels"
+# {"task": 17, "photo": "9f2c…", "record": "label:9f2c…"}
+curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/labels/17"   # pending, running, completed or failed
+```
+
+The worker reads the photo with OpenRouter (`FOODDB__BACKEND__LLM_API_KEY`, model
+`FOODDB__BACKEND__LLM_MODEL`). Without a key, it uses the demo reader. The values become the
+source record `label:<sha256>`. The checks run as for every source. A read below
+`FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` (default 0.9) waits for review in full. Reviewers see the
+photo next to the values on the **Label reads** page in `/admin`.
 
 ## Fix a wrong merge
 
@@ -251,5 +284,6 @@ eait (eait.fit) is the first customer and the first data source:
 - **Customer.** eait keeps a read-only local copy of the catalog (`food_ref` / `off_product`) and
   refreshes it from the nightly snapshot. It never calls this service live, so eait keeps logging
   meals when fooddb is down.
-- **Data source.** When a barcode scan in eait misses or hits a stale row, eait sends the label
-  photo here as an observation. No user id crosses the boundary.
+- **Data source.** When a barcode scan in eait misses or hits a stale row, eait is to send the
+  label photo to `POST /v1/labels` with a `contribute` key. No user id crosses the boundary. The
+  fooddb side is built. eait does not send photos yet.

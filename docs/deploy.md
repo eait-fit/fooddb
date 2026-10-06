@@ -117,7 +117,8 @@ one time, when you create it. A key has one or more scopes:
 | Scope | Gives access to |
 |---|---|
 | `read` | All the `GET` data routes, the snapshot export, and the MCP read tools. |
-| `review` | `read`, plus `/v1/review` and the MCP tools `review_queue` and `decide_review`. |
+| `contribute` | `read`, plus `POST /v1/labels` (label photos) and `GET /v1/labels/{task}`. |
+| `review` | `contribute`, plus `/v1/review` and the MCP tools `review_queue` and `decide_review`. |
 | `admin` | `review`, plus the login to `/admin`. |
 
 Writes, the review queue and `/admin` always need a key. Reads need a key only when
@@ -138,6 +139,7 @@ public. `/livez` and `/healthz` never need a key. `fooddb mcp` on stdio is local
    ```bash
    docker compose exec api fooddb keys create --name eait --scope read --rate-limit 600
    docker compose exec api fooddb keys create --name review-agent --scope review
+   docker compose exec api fooddb keys create --name eait-labels --scope contribute
    ```
 
 3. A client sends the key in the `Authorization: Bearer fdb_…` header, or in `X-API-Key`. An MCP
@@ -220,6 +222,11 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 | `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |
+| `FOODDB__BACKEND__LLM_API_KEY` | none | The OpenRouter key for label reads. Set it on the server yourself. Without it, label reads are demo reads, and every value waits for review. |
+| `FOODDB__BACKEND__LLM_MODEL` | `qwen/qwen3-vl-235b-a22b-instruct` | The OpenRouter vision model. Our account reaches only x-ai and Chinese-vendor models. |
+| `FOODDB__BACKEND__LABEL_READER` | `openrouter` with a key, else `demo` | The backend of the model port on the server. |
+| `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` | `0.9` | A label read below this confidence has every value pending review. |
+| `FOODDB__BACKEND__PHOTO_DIR` | `/app/photos` | Where the API stores label photos and the worker reads them. Compose sets it to the `photos` volume. Outside Compose, the default is `photos` in the working directory. |
 | `FOODDB__BACKEND__FETCH_FDC_BRANDED` | `false` | `true`: fetch FDC Branded Foods at once and every week. See [First boot](#first-boot). |
 | `FOODDB__BACKEND__FETCH_FINELI` | `false` | `true`: fetch Fineli at once and every week, from `FOODDB__BACKEND__FINELI_URL`. |
 | `FOODDB__BACKEND__FINELI_URL` | `https://fineli.fi/fineli/content/file/47` | The Fineli open data zip, or a copy of it. |
@@ -264,6 +271,21 @@ steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
   /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
 - The export is a read. Give the consumer its own `read` key, with a `--rate-limit` that is
   sufficient for its sync. See [API keys](#api-keys).
+
+## Label photos
+
+`POST /v1/labels` stores each photo once, under its SHA-256, in the `fooddb_photos` volume. The
+worker reads it with the model in `FOODDB__BACKEND__LABEL_READER`. A photo is at most 10 MiB, and
+only JPEG, PNG and WebP pass. Back up the `fooddb_photos` volume with the database: each label
+value names its photo in `observation.evidence`, and the review page at `/admin/labels` shows it.
+
+1. Set `FOODDB__BACKEND__LLM_API_KEY` in `deploy/.env` on the server. Do not put it in a
+   repository or a chat.
+2. Run `docker compose up -d`.
+3. Make a `contribute` key for each client that sends photos. See [API keys](#api-keys).
+
+A read below `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` waits for review in full. Check the
+**Label reads** page in `/admin` for these reads.
 
 ## ODbL dumps
 

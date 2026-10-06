@@ -168,14 +168,14 @@ def dump_odbl(out: Path = typer.Option(None, help="directory; default: $FOODDB__
     typer.echo(f"wrote {m['name']}: {m['products']} products, {m['size']} bytes")
 
 
-keys = typer.Typer(no_args_is_help=True, help="API keys: scopes read, review (implies read), admin (implies both).")
+keys = typer.Typer(no_args_is_help=True, help="API keys: scopes read, contribute (implies read), review (implies both), admin (implies all).")
 app.add_typer(keys, name="keys")
 
 
 @keys.command("create")
 def keys_create(
     name: str = typer.Option(..., help="who holds the key, e.g. eait"),
-    scope: list[str] = typer.Option(["read"], help="read | review | admin; repeat for several"),
+    scope: list[str] = typer.Option(["read"], help="read | contribute | review | admin; repeat for several"),
     rate_limit: int = typer.Option(None, min=1, help="requests per minute; default $FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE"),
 ) -> None:
     """Create a key and print its token. The token is shown only this once: only its hash is stored."""

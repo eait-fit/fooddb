@@ -14,8 +14,8 @@ FROM python:3.14-slim
 RUN useradd --system --uid 10001 --home /app fooddb
 WORKDIR /app
 COPY --from=build --chown=fooddb /app /app
-# The ODbL dumps volume mounts here; a fresh named volume takes this owner.
-RUN install -d -o fooddb /app/dumps
+# The ODbL dumps and label photo volumes mount here; a fresh named volume takes this owner.
+RUN install -d -o fooddb /app/dumps /app/photos
 ENV PATH=/app/.venv/bin:$PATH PYTHONUNBUFFERED=1 FOODDB__BACKEND__API_HOST=0.0.0.0 FOODDB__BACKEND__API_PORT=8000
 USER fooddb
 EXPOSE 8000

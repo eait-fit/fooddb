@@ -74,6 +74,13 @@ def dump_odbl() -> None:
     logger.info("odbl dump: " + ("no final snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
 
 
+def read_label(photo: str, hints: dict[str, str], read: str | None = None) -> None:
+    from fooddb.labels import intake
+
+    logger.info(f"label read: {intake.process(photo, hints, read)}")
+    _rematch(intake.FETCHER)
+
+
 def _rematch(fetcher: str) -> None:
     """Queue one matching pass after new data; repeated calls collapse into one pending task.
     A fetcher's first data also queues a snapshot rebuild, so a fresh install serves every source
