@@ -11,6 +11,7 @@ from datetime import date
 
 from sqlalchemy import Connection, text
 
+from fooddb import checks
 from fooddb.db import engine
 
 # ponytail: fixed source ranks; a per-field trust table when brand uploads and label reads land.
@@ -83,14 +84,16 @@ class NoSnapshot(LookupError):
     pass
 
 RECORDS_SQL = f"""
-select product_id, id, source, licence, gtin14, name, brand, lang, serving_text, serving_g, flags, source_updated_at
+select product_id, id, source, licence, gtin14, name, brand, lang, serving_text, serving_g, category, flags,
+       source_updated_at
 from food
 where product_id = any(:pids) and layer = any(:layers)
 order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last
 """
 
 
-FIELDS = ("name", "brand", "lang", "serving_text", "serving_g")
+FIELDS = ("name", "brand", "lang", "serving_text", "serving_g", "category")
+LICENCES = ("CC0-1.0", "ODbL-1.0")  # least to most restrictive; an unknown licence counts as the most
 
 
 def tagged(record, value) -> dict | None:
@@ -98,6 +101,18 @@ def tagged(record, value) -> dict | None:
     if value is None:
         return None
     return {"value": value, "source": record["source"], "licence": record["licence"], "record": record["id"]}
+
+
+def seals(per_100: dict) -> dict | None:
+    """The warning seals the served values imply (`checks.SEALS`), computed here and never stored.
+    Its licence is the most restrictive among the values it read."""
+    values = {n: v["value"] for n, v in per_100.items()}
+    found, used = checks.seals(values, liquid=all(v["basis"] == "100ml" for v in per_100.values()))
+    if not used:
+        return None
+    licence = max((per_100[n]["licence"] for n in used),
+                  key=lambda lic: LICENCES.index(lic) if lic in LICENCES else len(LICENCES))
+    return {"value": found, "source": "fooddb", "licence": licence, "record": None}
 
 
 def layers_for(include: str | None) -> list[str]:
@@ -152,4 +167,6 @@ def products(pids: list[int], include: str | None, snapshot: date | None = None,
                 "value": float(v["value_per_100"]), "unit": v["unit"], "basis": v["basis"],
                 "source": v["source"], "licence": v["licence"], "observed_at": v["observed_at"],
             }
+    for found in by_pid.values():
+        found["seals"] = seals(found["per_100"])
     return [by_pid[p] for p in pids if p in by_pid]

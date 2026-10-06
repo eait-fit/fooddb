@@ -56,6 +56,7 @@ food = Table(
     Column("lang", Text),
     Column("serving_text", Text),
     Column("serving_g", Numeric),
+    Column("category", Text),  # fooddb category (checks.CATEGORIES), null when unknown
     Column("flags", ARRAY(Text), nullable=False, server_default="{}"),
     Column("source_updated_at", DateTime(timezone=True)),
     Column("fetched_at", DateTime(timezone=True), nullable=False, server_default=func.now()),

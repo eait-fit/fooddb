@@ -54,13 +54,16 @@ product from `/v1/records/fdc:9?include=off`, shortened:
   "lang": null,
   "serving_text": null,
   "serving_g": null,
+  "category": {"value": "legumes", "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"},
   "flags": {"value": [], "source": "fdc", "licence": "CC0-1.0", "record": "fdc:9"},
   "per_100": {
     "ENERC_KCAL": {"value": 229.0, "unit": "kcal", "basis": "100g", "source": "fdc",
                    "licence": "CC0-1.0", "observed_at": "2026-01-01T00:00:00Z"},
     "FIBTG": {"value": 6.0, "unit": "g", "basis": "100g", "source": "off",
               "licence": "ODbL-1.0", "observed_at": "2026-01-01T00:00:00Z"}
-  }
+  },
+  "seals": {"value": {"CL": {"calories": false}, "MX": {"calories": false}},
+            "source": "fooddb", "licence": "CC0-1.0", "record": null}
 }
 ```
 
@@ -71,6 +74,11 @@ carbohydrate by difference, with fibre: USDA FDC and US or Canadian labels. `CHO
 carbohydrate, without fibre: EU, UK, Australian and similar labels. fooddb never converts one into
 the other. An Open Food Facts value whose label market is unknown is `CHOCDF`, and the record has
 the flag `carbs-regime-unknown`.
+
+`seals` are the front-of-pack warning seals of Chile (`CL`), Mexico (`MX`) and Peru (`PE`) that
+the served values imply, computed on each read. A seal whose inputs are missing is left out. The
+schemes count added sugars, fats and sodium, and fooddb has total values, so a seal is an upper
+bound on the label. Its licence is the most restrictive among the values it reads.
 
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.

@@ -285,6 +285,47 @@ def test_a_core_response_carries_nothing_from_the_off_layer(monkeypatch):
         assert "ODbL" in client().get("/v1/records/fdc:9", params={"include": "off"}).text
 
 
+def test_seals_are_served_with_the_strictest_licence_of_their_inputs_in_rest_and_export(monkeypatch):
+    import json
+
+    from fooddb import ingest
+
+    code = acme_hummus_in_both_layers()
+    ingest.run("t", "r2", [rec(id="off:" + code, source="off", layer="off", licence="ODbL-1.0", gtin14=code,
+                               name="Hummus Classic", brand="Acme", observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+                               values=HUMMUS | {"ENERC_KCAL": 240.0, "FIBTG": 6.0, "SUGAR": 1.0})])
+    computed = {"source": "fooddb", "record": None}
+    core = product("fdc:9")
+    assert core["seals"] == {"value": {"CL": {"calories": False}, "MX": {"calories": False}},
+                             "licence": "CC0-1.0"} | computed
+    full = product("fdc:9", "off")
+    assert full["seals"] == {"value": {"CL": {"calories": False, "sugars": False}, "PE": {"sugars": False},
+                                       "MX": {"calories": False, "sugars": False}},
+                             "licence": "ODbL-1.0"} | computed  # SUGAR comes from the OFF record only
+
+    build_on(monkeypatch, "2026-10-01")
+    for include, expected in ((None, core["seals"]), ("off", full["seals"])):
+        r = client().get("/v1/snapshots/2026-10-01/export", params={"include": include} if include else {})
+        [exported] = [p for p in map(json.loads, r.text.splitlines()) if "fdc:9" in p["records"]]
+        assert exported["seals"] == expected == product("fdc:9", include)["seals"]
+
+
+def test_a_stated_seal_the_values_contradict_holds_those_values_for_review():
+    from fooddb import ingest, review
+
+    code = "05449000000996"
+    ingest.run("t", "r1", [rec(id="off:" + code, source="off", layer="off", licence="ODbL-1.0", gtin14=code,
+                               name="Cola", basis="100ml", categories=["en:beverages", "en:sodas"],
+                               labels=["es:exceso-sodio"], values={"ENERC_KCAL": 42.0, "SUGAR": 10.6, "NA": 10.0})])
+    [item] = review.queue()
+    assert item["checks"] == ["seal-disagreement"]
+    assert {v["nutrient"] for v in item["pending"]} == {"NA", "ENERC_KCAL"}  # 10 mg is under 1 mg per kcal
+    p = product("off:" + code, "off")
+    assert p["category"] == {"value": "beverages", "source": "off", "licence": "ODbL-1.0", "record": "off:" + code}
+    assert set(p["per_100"]) == {"SUGAR"}
+    assert p["seals"]["value"] == {"CL": {"sugars": True}, "PE": {"sugars": True}}
+
+
 def test_matching_keeps_variants_with_different_barcodes_or_salt_apart():
     from fooddb import ingest, jobs
 

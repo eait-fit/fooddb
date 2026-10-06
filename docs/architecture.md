@@ -121,12 +121,12 @@ where Caddy is. `fooddb-worker` also joins the `fooddb-egress` network for its f
 ```mermaid
 flowchart TD
     fdcsrc["FDC zip"] -->|"stream to a tempfile, then json.load"| fdcrec["fdc.records()"]
-    offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis"]
+    offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
     offrec --> run
     run --> fr[("fetch_run<br/>running, done, failed")]
     run -->|"one new product per new record"| prod[("product")]
-    run --> chk["checks.flags()"]
+    run --> chk["checks.category(), checks.flags()"]
     chk --> foodt[("food<br/>one row per source record")]
     chk --> diff["_observations()<br/>changed values, withdrawn fields as null"]
     diff --> obs[("observation<br/>append-only")]
@@ -138,7 +138,7 @@ flowchart TD
     obs -->|"newest accepted value per record"| resolver["resolve.values_sql()<br/>trust rank, then newest"]
     resolver --> snap["snapshot.build()<br/>scopes core and all"]
     snap --> sv[("snapshot, snapshot_value")]
-    sv --> api["API"]
+    sv --> api["API<br/>seals computed per read"]
     sv -->|"export, NDJSON per day"| consumer["Consumer local copy"]
     resolver -->|"only while no snapshot exists"| api
     prod -->|"merged_into, both ways"| api
@@ -186,6 +186,10 @@ Both fetchers read their source as a stream.
 - The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
   no carbohydrate for matching, and a missing field neither helps nor hurts a match.
 - Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`).
+- Each record keeps the category tags of its source: OFF `categories_tags` and FDC
+  `foodCategory.description` (`fetchers/off.py:134`, `fetchers/fdc.py:56`). An OFF record also keeps
+  its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:129`), and
+  `food.category` stores it. Tags that no row of the table names give no category.
 - Record ids have the form `<source>:<code>`, for example `fdc:168421` or `off:<gtin14>`.
 
 ### Store observations
@@ -197,7 +201,8 @@ with `EmptyRun`, because that usually means the source format changed (`ingest.p
 For each batch, `_write` does these steps (`ingest.py:104`):
 
 1. It creates one `product` row for each record that it did not see before (`ingest.py:114`).
-2. It runs the checks on the record (`ingest.py:108`). The failed check names go into `food.flags`.
+2. It maps the record's category and runs the checks on the record (`ingest.py:110`). The failed
+   check names go into `food.flags`.
 3. It upserts the `food` row. An older file cannot overwrite newer metadata (`ingest.py:139`).
 4. It inserts observations only for values that changed, and a null value for each field that the
    source removed (`ingest.py:158`). A duplicate observation is ignored (`ingest.py:145`).
@@ -208,8 +213,8 @@ a review decision: it moves a `pending` observation to `accepted` or `rejected`,
 
 ### Checks and review status
 
-`checks.flags` runs five checks per record (`checks.py:6`). Each failed check names the fields that
-it implicates:
+`checks.flags` runs seven checks per record (`checks.py:156`). Each failed check names the fields
+that it implicates:
 
 | Check | Implicated fields |
 |---|---|
@@ -218,13 +223,59 @@ it implicates:
 | `sugars-over-carbs` | `SUGAR`, the carbohydrate code |
 | `saturates-over-fat` | `FASAT`, `FAT` |
 | `negative-value` | each negative field |
+| `out-of-range`: a value outside the plausible range of the record's category | each field out of range |
+| `seal-disagreement`: OFF says the pack carries a warning seal that the values do not reach | the fields that the seal's rule reads |
 
 The carbohydrate code is `CHOAVL` when the record has it, else `CHOCDF`. Atwater is
 4 × protein + 9 × fat + 4 × carbohydrate. With `CHOAVL`, it adds 2 × fibre when `FIBTG` is present,
 because available carbohydrate does not contain fibre. 2 kcal/g is the fibre factor of EU
 Regulation 1169/2011, Annex XIV. With `CHOCDF`, fibre is already in the carbohydrate.
 
+The ranges are a table in `checks.py` (`checks.py:40`), with a source for each row where one
+exists:
+
+| Category | Basis | Field | Range per 100 g or 100 ml |
+|---|---|---|---|
+| `oils` | both | `FAT` | 85 to 100 g |
+| `waters` | both | `ENERC_KCAL`, `SUGAR` | at most 5 kcal, at most 1 g |
+| `beverages` | `100ml` only | `ENERC_KCAL` | at most 150 kcal |
+| `fruits`, `vegetables`, `cereals` | both | `FAT` | at most 30 g |
+
+The ranges are wide on purpose. A value out of range waits for review, so a row flags only a
+value that no real product of the category has. A record with no category gets no range check.
+Per 100 g, beverages include powders, so the beverage range applies per 100 ml only.
+
+The category table (`checks.py:12`) has 15 categories: `alcoholic-beverages`, `waters`, `beverages`,
+`oils`, `fats`, `dairy`, `vegetables`, `fruits`, `legumes`, `nuts`, `cereals`, `meat`, `fish`,
+`sweets` and `snacks`. The first row with a tag of the record wins. OFF tags include every parent
+category, so a narrow tag comes before its parent. Syrups, drink powders, coconut milk and cream,
+meal replacements, supplements and oil sprays get no category.
+
+`seal-disagreement` reads the seals of Chile and Mexico in OFF `labels_tags` (`checks.py:117`). It
+flags a stated seal only when the values decide the seal and do not reach it. A seal that OFF does
+not list says nothing, because OFF lists labels incompletely. The [seals](#front-of-pack-warning-seals)
+come from the same rules as the served ones.
+
 The checks flag values, but they do not change them.
+
+### Front-of-pack warning seals
+
+`checks.SEALS` (`checks.py:88`) holds the rules of three schemes. Each rule cites its regulation:
+
+| Scheme | Seals | Limits |
+|---|---|---|
+| `CL`: Chile, Ley 20.606, limits since 27 June 2019 | `calories`, `sugars`, `saturated-fat`, `sodium` | over 275 kcal, 10 g, 4 g, 400 mg per 100 g; over 70 kcal, 5 g, 3 g, 100 mg per 100 ml |
+| `MX`: Mexico, NOM-051 as modified in 2020, phase 3 | `calories`, `sugars`, `saturated-fat`, `sodium` | 275 kcal per 100 g, or 70 kcal or 8 kcal of sugar per 100 ml; sugars and saturated fat at 10 % of energy; sodium at 1 mg per kcal or 300 mg, 45 mg for a drink without energy |
+| `PE`: Peru, Ley 30021, phase 2 since 17 September 2021 | `sugars`, `saturated-fat`, `sodium` | at least 10 g, 4 g, 400 mg per 100 g; at least 5 g, 3 g, 100 mg per 100 ml |
+
+The schemes count added sugars, fats and sodium, and they exempt some foods. fooddb has total
+values only. Thus a computed seal is an upper bound on the label.
+
+`resolve.seals` computes the seals from the served `per_100` values on each read
+(`resolve.py:106`). No seal is stored, and a seal never holds a value for review. The values are
+liquid when every served value is per 100 ml. A seal whose inputs are missing is left out. The
+licence of `seals` is the most restrictive licence among the values that the rules read:
+`ODbL-1.0` over `CC0-1.0`, and an unknown licence over both.
 
 A new observation of an implicated field gets the status `pending`. All other new observations of
 the record get `accepted` (`ingest.py:154`). The resolver and the match job read only `accepted`
@@ -479,6 +530,7 @@ erDiagram
         text lang
         text serving_text
         numeric serving_g
+        text category "fooddb category, null when unknown"
         text_array flags "failed checks"
         timestamptz source_updated_at
         timestamptz fetched_at
@@ -567,7 +619,7 @@ erDiagram
     }
 ```
 
-Seven Alembic migrations make this schema:
+Nine Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -583,6 +635,8 @@ Seven Alembic migrations make this schema:
 - `0007` adds `api_key` and the unlogged table `rate_limit` (`alembic/versions/0007_api_keys.py:16`).
   A crash can lose the counts of one minute, which is acceptable for a rate limit.
 - `0008` adds `merge_log` and `cannot_link` (`alembic/versions/0008_merge_log_and_cannot_link.py:16`).
+- `0009` adds `food.category` (`alembic/versions/0009_food_category.py:14`). Records stored before it
+  have no category until a newer edit of the record arrives.
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -642,7 +696,7 @@ sequenceDiagram
 4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
    (`resolve.py:134`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
 5. It reads the records of each product from the live `food` table (`resolve.py:136`). The most
-   trusted, newest record gives the name, brand, language, serving and flags (`resolve.py:145`).
+   trusted, newest record gives the name, brand, language, serving, category and flags.
    Each barcode is tagged with the most trusted record that has it (`resolve.py:148`).
 6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
    `include=off`, else `core` (`resolve.py:131`). The values include those of every product merged
@@ -656,9 +710,10 @@ The product shape (API version 0.3.0):
 |---|---|
 | `id`, `snapshot` | fooddb's own: the product id, and the day that the values come from |
 | `records` | the ids of the visible source records |
-| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:96`) |
+| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `category`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:99`) |
 | `gtin14` | a list of `{value, source, licence, record}`, one per barcode |
-| `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` (`resolve.py:149`) |
+| `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` |
+| `seals` | `{value, source, licence, record}`: `value` maps each scheme to `{seal: true or false}`, `source` is `fooddb`, `record` is `null`. `null` when no seal has its inputs (`resolve.py:106`) |
 
 Without `include=off`, only `core` records are read. Thus no field of a core response comes from
 the OFF layer, and no ODbL tag is in it.
@@ -874,7 +929,6 @@ flowchart LR
   agents for customers' own runs.
 - **Review photo page.** A page that shows the label photo next to the fields that differ. It needs
   photo evidence on observations ([#12](https://github.com/eait-fit/fooddb/issues/12)).
-- **Checks.** Ranges per category, and front-of-pack warning seals.
 - **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
   listing's proxy secret as a `read` key. See [Authentication](#authentication).
 - **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot

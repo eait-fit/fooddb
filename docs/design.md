@@ -62,8 +62,10 @@ field that disappears from a newer record is stored as withdrawn.
 - Sums: sugars ≤ carbohydrate, saturates ≤ fat, and so on.
 - Ranges per category, and front-of-pack warning seals against nutrient thresholds (LatAm octagons).
 
-Built: Atwater, sums (with a 0.5 g tolerance), macros over 100 g, and negative values. Not built:
-ranges and seals ([#11](https://github.com/eait-fit/fooddb/issues/11)). Each failed check names
+Built: Atwater, sums (with a 0.5 g tolerance), macros over 100 g, negative values, ranges per
+category, and seals for Chile, Mexico and Peru ([#11](https://github.com/eait-fit/fooddb/issues/11)).
+The API computes the seals on each read, and they hold no value for review. A seal that OFF says
+the pack carries, but that the values do not reach, is a failed check. Each failed check names
 the fields that it implicates. Only the new values of those fields are `pending`. A reviewer or an
 agent accepts or rejects each one, and the decision records who decided and when.
 
