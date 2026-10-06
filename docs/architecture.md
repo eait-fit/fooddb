@@ -478,7 +478,7 @@ erDiagram
     api_key {
         bigint id PK
         text name "unique among active keys"
-        text token_hash UK "HMAC-SHA256, never the token"
+        text token_hash UK "PBKDF2-HMAC-SHA256, never the token"
         text_array scopes "read, review, admin"
         int rate_limit "null means the default"
         timestamptz created_at
@@ -725,7 +725,7 @@ flowchart LR
     count -->|"within the limit"| handler["handler"]
 ```
 
-- A token is `fdb_` and 32 random bytes in URL-safe base64. `api_key` stores only its HMAC-SHA256 under `FOODDB__BACKEND__SECRET_KEY`
+- A token is `fdb_` and 32 random bytes in URL-safe base64. `api_key` stores only its PBKDF2-HMAC-SHA256 under `FOODDB__BACKEND__SECRET_KEY`
   (`auth.py:43`). A lookup updates `last_used_at` in the same statement (`auth.py:66`).
 - The scopes are `read`, `review` and `admin`. `review` implies `read`. `admin` implies both
   (`auth.py:15`).

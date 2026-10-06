@@ -96,7 +96,7 @@ docker compose exec worker fooddb status
 
 ## API keys
 
-fooddb has its own API keys. The API keeps only an HMAC-SHA256 of a key, under `FOODDB__BACKEND__SECRET_KEY`. It shows the key
+fooddb has its own API keys. The API keeps only an PBKDF2-HMAC-SHA256 of a key, under `FOODDB__BACKEND__SECRET_KEY`. It shows the key
 one time, when you create it. A key has one or more scopes:
 
 | Scope | Gives access to |

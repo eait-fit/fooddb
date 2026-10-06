@@ -1,7 +1,6 @@
 """API keys, scopes and rate limits on REST, MCP over HTTP and the admin. Database suite."""
 
 import hashlib
-import hmac
 import re
 
 import pytest
@@ -94,7 +93,7 @@ def test_keys_are_stored_as_hashes_only():
     assert k.startswith("fdb_")
     with engine().connect() as conn:
         row = conn.execute(text("select * from api_key")).mappings().one()
-    assert row["token_hash"] == hmac.new(b"test-only-secret", k.encode(), "sha256").hexdigest()
+    assert row["token_hash"] == hashlib.pbkdf2_hmac("sha256", k.encode(), b"test-only-secret", 1000).hex()
     assert row["token_hash"] != hashlib.sha256(k.encode()).hexdigest()
     assert not any(k in str(v) or k[4:] in str(v) for v in row.values())
 

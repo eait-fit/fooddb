@@ -1,5 +1,5 @@
 """API keys, scopes and rate limits. REST routes, the MCP route and the admin login all check
-callers here. A key is stored only as an HMAC-SHA256 under FOODDB__BACKEND__SECRET_KEY: the token is
+callers here. A key is stored only as a PBKDF2-HMAC-SHA256 under FOODDB__BACKEND__SECRET_KEY: the token is
 shown once, at creation, and a new secret retires every key."""
 
 import hashlib
@@ -38,7 +38,9 @@ def _secret() -> bytes | None:
 
 
 def _hash(token: str, secret: bytes) -> str:
-    return hmac.new(secret, token.encode(), hashlib.sha256).hexdigest()
+    # PBKDF2 keyed by the secret; deterministic, so a presented token is found by its hash. Tokens are
+    # 256 random bits, so the iteration count only has to be cheap per request.
+    return hashlib.pbkdf2_hmac("sha256", token.encode(), secret, 1000).hex()
 
 
 def _caller(row) -> Caller:
