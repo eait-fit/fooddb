@@ -986,6 +986,8 @@ The product shape (API version 0.3.0):
 | `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` |
 | `seals` | `{value, source, licence, record}`: `value` maps each scheme to `{seal: true or false}`, `source` is `fooddb`, `record` is `null`. `null` when no seal has its inputs (`resolve.py:106`) |
 
+Every number in the response is a JSON number: `serving_g` and each `value` are read as floats, never as decimal strings. REST, MCP, the NDJSON export and the ODbL dump share this shape.
+
 Without `include=off`, only `core` records are read. Thus no field of a core response comes from
 the OFF layer, and no ODbL tag is in it.
 
