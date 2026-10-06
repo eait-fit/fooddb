@@ -15,6 +15,7 @@ MAX_AGE = {
     "fdc-sr_legacy": timedelta(days=8),
     "fdc-branded": timedelta(days=8),
     "ciqual": timedelta(days=8),
+    "cofid": timedelta(days=8),
     "fineli": timedelta(days=8),
     "matvaretabellen": timedelta(days=8),
     "snapshot": timedelta(hours=26),

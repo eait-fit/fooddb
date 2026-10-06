@@ -515,6 +515,7 @@ def test_health_reports_stale_and_fresh_fetchers():
     assert report["fetchers"]["fdc-foundation"]["fresh"] is False
     assert report["fetchers"]["fdc-sr_legacy"]["fresh"] is False  # never checked
     assert report["fetchers"]["ciqual"]["fresh"] is False and "fdc-branded" not in report["fetchers"]
+    assert report["fetchers"]["cofid"]["max_age_hours"] == 192
     assert report["ok"] is False
     r = client().get("/healthz")
     assert r.status_code == 503 and "fetchers" in r.json()
@@ -605,8 +606,9 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     monkeypatch.setattr(off, "fetch", off_fetch)
 
     jobs.schedule()
-    # FDC Branded and Fineli are off by default; CIQUAL and Matvaretabellen fill a fresh install.
-    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+    # FDC Branded and Fineli are off by default; CIQUAL, CoFID and Matvaretabellen fill a fresh install.
+    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "match_products",
+                         "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
@@ -1111,6 +1113,25 @@ def test_a_national_table_is_served_with_its_licence_and_attribution():
     assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (32.9, "etalab-2.0")
     assert p["attribution"] == [{"source": "ciqual", "licence": "etalab-2.0", "text": ciqual.ATTRIBUTION}]
     assert product("ciqual:25600")["seals"]["licence"] == "etalab-2.0"
+
+
+def test_cofid_is_served_with_its_licence_and_attribution_and_outranks_the_crowd():
+    from pathlib import Path
+
+    from fooddb import ingest
+    from fooddb.fetchers import cofid
+
+    xlsx = Path(__file__).parent / "fixtures" / "cofid.xlsx"
+    assert ingest.run(cofid.FETCHER, "t", cofid.records(xlsx, datetime(2021, 3, 19, tzinfo=UTC)))[0] == 5
+    p = product("cofid:14-319")
+    assert p["name"] == {"value": "Apples, eating, raw, flesh and skin", "source": "cofid", "licence": "OGL-UK-3.0",
+                         "record": "cofid:14-319"}
+    assert (p["per_100"]["FIBTG"]["value"], p["per_100"]["FIBTG"]["licence"]) == (1.2, "OGL-UK-3.0")
+    assert "CHOAVL" not in p["per_100"] and "CHOCDF" not in p["per_100"]
+    assert p["attribution"] == [{"source": "cofid", "licence": "OGL-UK-3.0", "text": cofid.ATTRIBUTION}]
+    ingest.run("t", "r2", [kcal_record("cofid:1", "cofid", 229.0, 2021), kcal_record("off:1", "off", 260.0, 2022)])
+    merge("cofid:1", "off:1")
+    assert served("off:1", "off") == (229, "cofid")
 
 
 def test_national_tables_rank_with_fdc_above_the_crowd(monkeypatch):
