@@ -473,6 +473,7 @@ def test_health_reports_stale_and_fresh_fetchers():
     assert report["fetchers"]["off-delta"]["fresh"] is True
     assert report["fetchers"]["fdc-foundation"]["fresh"] is False
     assert report["fetchers"]["fdc-sr_legacy"]["fresh"] is False  # never checked
+    assert report["fetchers"]["ciqual"]["fresh"] is False and "fdc-branded" not in report["fetchers"]
     assert report["ok"] is False
     r = client().get("/healthz")
     assert r.status_code == 503 and "fetchers" in r.json()
@@ -524,7 +525,10 @@ class OneOffQueue:
     def schedule(self, *args, **kwargs):
         pass
 
-    def upsert(self, fn, *, client_id, priority=50, **kwargs):  # 50 = Priority.NORMAL, pq's default
+    def unschedule(self, *args, **kwargs):
+        pass
+
+    def upsert(self, fn, *, client_id, priority=50, max_runtime_seconds=None, **kwargs):  # 50 = Priority.NORMAL
         self.tasks.pop(client_id, None)
         self.tasks[client_id] = (priority, fn, kwargs)
 
@@ -545,6 +549,9 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     monkeypatch.setattr(jobs, "queue", lambda: q)
     monkeypatch.setattr(fdc, "fetch", lambda dataset, force=False: ingest.run(
         f"fdc-{dataset}", "r1", [rec(id=f"fdc:{dataset}")]))
+    for name, table in jobs.TABLES.items():
+        monkeypatch.setattr(table, "fetch", lambda force=False, name=name: ingest.run(
+            name, "r1", [rec(id=f"{name}:1", source=name)]))
     deltas = iter(["d1", "d2"])
 
     def off_fetch(max_files=1):
@@ -557,7 +564,8 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     monkeypatch.setattr(off, "fetch", off_fetch)
 
     jobs.schedule()
-    assert q.drain() == ["fetch_fdc", "fetch_fdc", "match_products", "build_snapshot"]
+    # FDC Branded and Fineli are off by default; CIQUAL and Matvaretabellen fill a fresh install.
+    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
@@ -946,3 +954,38 @@ def test_match_train_saves_a_model_that_matching_then_uses(tmp_path, monkeypatch
     monkeypatch.setenv("FOODDB__BACKEND__MATCH_MODEL", str(tmp_path / "absent.json"))  # no model yet: hand-set weights
     jobs.match_products()
     assert product("fdc:1")["id"] == product("fdc:2")["id"]
+
+
+def test_a_national_table_is_served_with_its_licence_and_attribution():
+    from pathlib import Path
+
+    from fooddb import ingest
+    from fooddb.fetchers import ciqual
+
+    xlsx = Path(__file__).parent / "fixtures" / "ciqual.xlsx"
+    assert ingest.run(ciqual.FETCHER, "t", ciqual.records(xlsx, datetime(2025, 11, 3, tzinfo=UTC)))[0] == 3
+    p = product("ciqual:24999")
+    assert p["name"] == {"value": "Dessert (average)", "source": "ciqual", "licence": "etalab-2.0",
+                         "record": "ciqual:24999"}
+    assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (32.9, "etalab-2.0")
+    assert p["attribution"] == [{"source": "ciqual", "licence": "etalab-2.0", "text": ciqual.ATTRIBUTION}]
+    assert product("ciqual:25600")["seals"]["licence"] == "etalab-2.0"
+
+
+def test_national_tables_rank_with_fdc_above_the_crowd(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [
+        kcal_record("ciqual:1", "ciqual", 229.0, 2025), kcal_record("off:1", "off", 260.0, 2026),
+        kcal_record("fdc:2", "fdc", 200.0, 2026), kcal_record("matvaretabellen:2", "matvaretabellen", 180.0, 2025),
+    ])
+    merge("ciqual:1", "off:1")
+    merge("fdc:2", "matvaretabellen:2")
+    for build in (False, True):
+        if build:
+            build_on(monkeypatch, "2026-10-01")
+        assert served("off:1", "off") == (229, "ciqual")  # a table outranks the crowd
+        assert served("fdc:2") == (200, "fdc")  # FDC and the national tables share a rank: the newer value wins
+    # Attribution lists only the sources of what is served.
+    assert [a["source"] for a in product("off:1", "off")["attribution"]] == ["ciqual"]
+    assert product("fdc:2")["attribution"] == []

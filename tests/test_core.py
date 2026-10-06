@@ -118,7 +118,7 @@ def test_fdc_maps_carbohydrate_by_difference_and_kj():
 
     payload = {"SRLegacyFoods": [{"fdcId": 1, "description": "Hummus", "publicationDate": "4/1/2019",
                                   "foodNutrients": [n(1005, 14.9), n(1008, 229), n(1062, 958), n(1050, 9.0)]}]}
-    (r,) = records(payload, "SRLegacyFoods")
+    (r,) = records(payload["SRLegacyFoods"])
     assert r.values == {"CHOCDF": 14.9, "ENERC_KCAL": 229, "ENERC_KJ": 958}
 
 
@@ -164,9 +164,9 @@ def test_off_and_fdc_records_carry_their_source_categories_and_labels():
     food = {"fdcId": 1, "description": "Oil, olive", "publicationDate": "4/1/2019",
             "foodCategory": {"description": "Fats and Oils"},
             "foodNutrients": [{"nutrient": {"id": 1004}, "amount": 100}]}
-    (r,) = fdc.records({"SRLegacyFoods": [food]}, "SRLegacyFoods")
+    (r,) = fdc.records([food])
     assert r.categories == ["Fats and Oils"]
-    (r,) = fdc.records({"SRLegacyFoods": [food | {"foodCategory": None}]}, "SRLegacyFoods")
+    (r,) = fdc.records([food | {"foodCategory": None}])
     assert r.categories == []
 
 
