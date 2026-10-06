@@ -29,7 +29,7 @@ flowchart LR
     end
     openrouter["OpenRouter<br/>vision model"]
     fdc["USDA FoodData Central<br/>Foundation, SR Legacy and Branded bulk JSON<br/>CC0-1.0"]
-    tables["National composition tables<br/>CIQUAL etalab-2.0, Fineli CC-BY-4.0,<br/>Matvaretabellen NLOD-2.0, MEXT mext-free-use"]
+    tables["National composition tables<br/>CIQUAL etalab-2.0, Fineli CC-BY-4.0,<br/>Frida CC-BY-4.0, Matvaretabellen NLOD-2.0, MEXT mext-free-use"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
@@ -74,12 +74,12 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
 The worker reads label photos through the model port: OpenRouter on a server, or a local agent
 (see [Label reads](#label-reads)).
 
-The worker fetches from six upstream sources. Each value keeps the licence of its source:
+The worker fetches from seven upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:16`),
-`CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`), `NLOD-2.0` for Matvaretabellen
-(`fetchers/matvaretabellen.py:12`), `mext-free-use` for MEXT (`fetchers/mext.py:17`) and `ODbL-1.0` for
+`CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`) and Frida (`fetchers/frida.py:16`), `NLOD-2.0` for
+Matvaretabellen (`fetchers/matvaretabellen.py:12`), `mext-free-use` for MEXT (`fetchers/mext.py:17`) and `ODbL-1.0` for
 Open Food Facts (`fetchers/off.py:19`).
-FDC Branded Foods and Fineli are off by default (`health.py:25`). See [Fetch](#fetch).
+FDC Branded Foods and Fineli are off by default (`health.py:26`). See [Fetch](#fetch).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
 (`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
@@ -104,7 +104,7 @@ flowchart TB
         dvol[["volume fooddb_dumps"]]
         pvol[["volume fooddb_photos"]]
     end
-    up["fdc.nal.usda.gov, static.openfoodfacts.org<br/>ciqual.anses.fr, fineli.fi, www.matvaretabellen.no<br/>www.mext.go.jp"]
+    up["fdc.nal.usda.gov, static.openfoodfacts.org<br/>ciqual.anses.fr, fineli.fi, www.matvaretabellen.no<br/>www.mext.go.jp, api.figshare.com, ndownloader.figshare.com"]
     client -->|"HTTPS 443"| caddy
     caddy -->|"FOODDB__DEPLOY__BIND:PORT<br/>default 127.0.0.1:8000"| apic
     dbc --- vol
@@ -158,7 +158,7 @@ where Caddy is. `fooddb-worker` also joins the `fooddb-egress` network for its f
 ```mermaid
 flowchart TD
     fdcsrc["FDC zip"] -->|"stream to a tempfile, then json_items, one food at a time"| fdcrec["fdc.records()"]
-    tabsrc["CIQUAL and MEXT xlsx, Fineli zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["ciqual, fineli, matvaretabellen, mext<br/>records()"]
+    tabsrc["CIQUAL, Frida and MEXT xlsx, Fineli zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["ciqual, fineli, frida, matvaretabellen, mext<br/>records()"]
     tabrec --> run
     offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
@@ -201,6 +201,13 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   reads the sheet as a stream with the standard library (`fetchers/xlsx.py:38`). A cell
   `traces` is 0. A cell `< x` (under the limit of quantification) and a cell `-` give no value
   (`fetchers/ciqual.py:36`). See [decisions.md](decisions.md).
+- The Frida fetcher asks DTU Data for the record of the dataset, `api.figshare.com/v2/articles/29500682`,
+  and takes the `Dataset.xlsx` file of its newest version (`fetchers/frida.py:69`). The file name and
+  its MD5 are the ref, so an unchanged version is not downloaded again. The observation date is the
+  day DTU Data published the version. The sheet `Data_Table` has one row for each food and one
+  column for each parameter. The fetcher reads a parameter by its ParameterID and checks its English
+  name in the header row (`fetchers/frida.py:41`). Frida writes a trace as 0, so a number is always
+  the value. A blank cell gives no value.
 - The Fineli fetcher downloads the open data zip at `FOODDB__BACKEND__FINELI_URL` and reads its
   CSV files (`fetchers/fineli.py:35`). The URL has no release name, so the SHA-256 of the zip is
   the ref (`fetchers/fineli.py:55`). The observation date is the date of `component_value.csv` in
@@ -233,14 +240,15 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
   `SUGAR`, `FASAT`, `FIBTG` and `NA`. Each fetcher maps its source codes in one table
   (`fetchers/off.py:23`, `fetchers/fdc.py:26`, `fetchers/ciqual.py:22`, `fetchers/fineli.py:24`,
-  `fetchers/matvaretabellen.py:18`, `fetchers/mext.py:28`).
+  `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:18`, `fetchers/mext.py:28`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
   from one code to another, except kJ to kcal (below).
 - Carbohydrate has two codes. `CHOCDF` is carbohydrate by difference, with fibre. `CHOAVL` is
   available carbohydrate, without fibre. FDC nutrient 1005 is `CHOCDF`. FDC has no available
   carbohydrate. CIQUAL `Carbohydrate`, Fineli `CHOAVL` and Matvaretabellen `Karbo` are `CHOAVL`. MEXT states both:
   its `CHOAVL` (available, by mass) is `CHOAVL`, and its `CHOCDF-` (by difference) is `CHOCDF`. Its
-  `CHOAVLM` (monosaccharide equivalents) is not stored.
+  `CHOAVLM` (monosaccharide equivalents) is not stored. Frida states both: its parameter 170 is `CHOCDF`
+  and its parameter 172 is `CHOAVL`.
 - OFF's `carbohydrates` is the value on the label. `carbs_code` takes its code from the product's
   `countries_tags` (`fetchers/off.py:60`):
 
@@ -253,7 +261,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   OFF's `carbohydrates-total` (fibre included) is always `CHOCDF`.
 - Units are kcal and kJ for energy, mg for sodium and g for all other nutrients (`ingest.py:14`).
   `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
-  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, CIQUAL, Fineli, Matvaretabellen and MEXT). When the
+  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, CIQUAL, Fineli, Frida, Matvaretabellen and MEXT). When the
   label states kJ only, the OFF fetcher converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
   Fineli states kJ only, and its fetcher converts it the same way (`fetchers/fineli.py:46`).
 - The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
@@ -261,13 +269,13 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 - Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`).
 - Each record keeps the category tags of its source: OFF `categories_tags`, FDC
   `foodCategory.description` or `brandedFoodCategory`, and `<source>:<group>` for a national table
-  (CIQUAL group names, Fineli use classes, Matvaretabellen food group ids with their parents, MEXT food
-  group numbers)
+  (CIQUAL group names, Fineli use classes, Matvaretabellen and Frida food group ids with their parents, MEXT
+  food group numbers)
   (`fetchers/off.py:134`, `fetchers/fdc.py:63`). An OFF record also keeps
-  its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:129`), and
+  its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:132`), and
   `food.category` stores it. Tags that no row of the table names give no category.
 - Record ids have the form `<source>:<code>`, for example `fdc:168421`, `off:<gtin14>`,
-  `ciqual:24999`, `fineli:1`, `matvaretabellen:06.178` or `mext:07107`.
+  `ciqual:24999`, `fineli:1`, `frida:1`, `matvaretabellen:06.178` or `mext:07107`.
 
 ### Store observations
 
@@ -292,7 +300,7 @@ a review decision: it moves a `pending` observation to `accepted` or `rejected`,
 
 ### Checks and review status
 
-`checks.flags` runs seven checks per record (`checks.py:156`). Each failed check names the fields
+`checks.flags` runs seven checks per record (`checks.py:159`). Each failed check names the fields
 that it implicates:
 
 | Check | Implicated fields |
@@ -310,7 +318,7 @@ The carbohydrate code is `CHOAVL` when the record has it, else `CHOCDF`. Atwater
 because available carbohydrate does not contain fibre. 2 kcal/g is the fibre factor of EU
 Regulation 1169/2011, Annex XIV. With `CHOCDF`, fibre is already in the carbohydrate.
 
-The ranges are a table in `checks.py` (`checks.py:40`), with a source for each row where one
+The ranges are a table in `checks.py` (`checks.py:43`), with a source for each row where one
 exists:
 
 | Category | Basis | Field | Range per 100 g or 100 ml |
@@ -330,7 +338,7 @@ The category table (`checks.py:12`) has 15 categories: `alcoholic-beverages`, `w
 category, so a narrow tag comes before its parent. Syrups, drink powders, coconut milk and cream,
 meal replacements, supplements and oil sprays get no category.
 
-`seal-disagreement` reads the seals of Chile and Mexico in OFF `labels_tags` (`checks.py:117`). It
+`seal-disagreement` reads the seals of Chile and Mexico in OFF `labels_tags` (`checks.py:120`). It
 flags a stated seal only when the values decide the seal and do not reach it. A seal that OFF does
 not list says nothing, because OFF lists labels incompletely. The [seals](#front-of-pack-warning-seals)
 come from the same rules as the served ones.
@@ -351,7 +359,7 @@ The schemes count added sugars, fats and sodium, and they exempt some foods. foo
 values only. Thus a computed seal is an upper bound on the label.
 
 `resolve.seals` computes the seals from the served `per_100` values on each read
-(`resolve.py:107`). No seal is stored, and a seal never holds a value for review. The values are
+(`resolve.py:108`). No seal is stored, and a seal never holds a value for review. The values are
 liquid when every served value is per 100 ml. A seal whose inputs are missing is left out. The
 licence of `seals` is the most restrictive licence among the values that the rules read:
 `ODbL-1.0` over `CC0-1.0`, and an unknown licence over both.
@@ -690,11 +698,11 @@ row out of the product that the row's survivor answers as now (`admin.py:63`).
 
 ### Resolve
 
-The resolver picks one value per product and nutrient (`resolve.py:25`):
+The resolver picks one value per product and nutrient (`resolve.py:26`):
 
 1. Per source record, it takes the newest accepted observation of each nutrient.
 2. It drops the nulls. A withdrawn field thus falls back to the other records of the product.
-3. Across records, `pick_sql` picks the winner (`resolve.py:25`). It compares the candidates in
+3. Across records, `pick_sql` picks the winner (`resolve.py:26`). It compares the candidates in
    this order, and the first difference decides:
    1. **Approved label read.** A candidate with source `label`, status `accepted` and a
       `reviewed_by` (a human accepted it in the review queue) wins over all others. Of several, the
@@ -709,7 +717,7 @@ The resolver picks one value per product and nutrient (`resolve.py:25`):
       that agree outvote a `label` value that is alone, unless a reviewer approved that value. Only values of one nutrient code are
       compared. A `CHOAVL` value is not a vote for or against a `CHOCDF` value.
    4. **Trust rank.** `brand`, then `label`, then the composition tables, then `off`
-      (`resolve.py:20`). `fdc`, `ciqual`, `fineli`, `matvaretabellen` and `mext` share one rank. Thus a
+      (`resolve.py:20`). `fdc`, `ciqual`, `fineli`, `frida`, `matvaretabellen` and `mext` share one rank. Thus a
       table value wins over a crowd value, and between two tables the newer value wins.
    5. **Newest value**, then the smallest value, so that the result is always the same.
 
@@ -726,12 +734,12 @@ The live read, the snapshot build and the merge-follow of the snapshot read all 
 Thus the rule has one definition. The rule applies to nutrient values only. The name, brand and
 the other record fields come from the most trusted, newest record.
 
-The `include=off` parameter adds the `off` layer to the query (`resolve.py:132`). Without it, OFF
+The `include=off` parameter adds the `off` layer to the query (`resolve.py:133`). Without it, OFF
 values do not take part.
 
-Each product has an `attribution` list (`resolve.py:125`). It has one entry for each source of a
-served field whose licence asks for attribution: CIQUAL, Fineli, Matvaretabellen and MEXT. Each entry
-has the source, the licence and the text to show (`resolve.py:104`).
+Each product has an `attribution` list (`resolve.py:126`). It has one entry for each source of a
+served field whose licence asks for attribution: CIQUAL, Fineli, Frida, Matvaretabellen and MEXT. Each entry
+has the source, the licence and the text to show (`resolve.py:105`).
 
 ### Snapshot
 
@@ -748,14 +756,14 @@ deletes days that are more than 30 days older than the new day (`snapshot.py:34`
 
 The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
 (`resolve.py:133`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:138`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:128`). Each of these fields carries the record that it is read from,
+(`resolve.py:139`). The snapshot holds only values. Record lists, names and merges always come from
+the live tables (`resolve.py:129`). Each of these fields carries the record that it is read from,
 so its licence tag is correct for the record that is served now.
 
 `snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
 the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
 `merged_into` backwards. It collects the values of each product and of every product merged into
-it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:69`). The
+it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:70`). The
 snapshot keeps only the winner of each old id. Thus agreement counts those winners, not every value
 that the build saw. An approved label read always wins its old id, and `snapshot_value.approved`
 keeps that flag. Thus the override holds after a merge. The result is the value that the build would have frozen if the merge had come
@@ -773,7 +781,7 @@ result is the same, and the plan does not depend on the table statistics.
 | OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:71`) | NORMAL |
 | Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:72`) | NORMAL |
 | FDC Foundation, FDC SR Legacy, FDC Branded (when on) | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
-| CIQUAL, Matvaretabellen, MEXT, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
+| CIQUAL, Frida, Matvaretabellen, MEXT, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
 | Match | `match_products` | after a fetch that stored data (`jobs.py:57`) | NORMAL |
 | First-boot FDC and national tables | `fetch_fdc`, `fetch_table` | once, when `fetcher_check` has no row for a fetcher that is on (`jobs.py:102`) | NORMAL |
 | First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:79`) | BATCH |
@@ -1108,17 +1116,17 @@ sequenceDiagram
 
 1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
 2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:104`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:108`). A
+   Without `include=off`, only the `core` layer is visible (`resolve.py:105`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:109`). A
    merged-away id thus answers as its survivor, with the survivor's id.
 4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:135`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:137`). The most
+   (`resolve.py:136`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
+5. It reads the records of each product from the live `food` table (`resolve.py:138`). The most
    trusted, newest record gives the name, brand, language, serving, category and flags.
-   Each barcode is tagged with the most trusted record that has it (`resolve.py:149`).
+   Each barcode is tagged with the most trusted record that has it (`resolve.py:150`).
 6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:132`). The values include those of every product merged
-   into this one after the build (`resolve.py:69`). If no snapshot exists, it resolves live.
+   `include=off`, else `core` (`resolve.py:133`). The values include those of every product merged
+   into this one after the build (`resolve.py:70`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
    (`api.py:85`).
 
@@ -1128,10 +1136,10 @@ The product shape (API version 0.3.0):
 |---|---|
 | `id`, `snapshot` | fooddb's own: the product id, and the day that the values come from |
 | `records` | the ids of the visible source records |
-| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `category`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:100`) |
+| `name`, `brand`, `lang`, `serving_text`, `serving_g`, `category`, `flags` | `{value, source, licence, record}`, or `null` when the naming record has no value (`resolve.py:101`) |
 | `gtin14` | a list of `{value, source, licence, record}`, one per barcode |
 | `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` |
-| `seals` | `{value, source, licence, record}`: `value` maps each scheme to `{seal: true or false}`, `source` is `fooddb`, `record` is `null`. `null` when no seal has its inputs (`resolve.py:107`) |
+| `seals` | `{value, source, licence, record}`: `value` maps each scheme to `{seal: true or false}`, `source` is `fooddb`, `record` is `null`. `null` when no seal has its inputs (`resolve.py:108`) |
 
 Every number in the response is a JSON number: `serving_g` and each `value` are read as floats, never as decimal strings. REST, MCP, the NDJSON export and the ODbL dump share this shape.
 
@@ -1271,10 +1279,10 @@ flowchart LR
   nothing about the age of the data. A database error gives a 500, not a 200.
 - `/healthz` shows freshness (`api.py:42`). It compares each `fetcher_check` row and the newest
   `snapshot.built_at` with a maximum age (`health.py:12`): `off-delta` 12 h, `fdc-foundation`,
-  `fdc-sr_legacy`, `ciqual`, `matvaretabellen` and `mext` 8 days, and `snapshot` 26 h. `fdc-branded` and
-  `fineli` (8 days) count only when they are on (`health.py:32`). One stale entry or one entry with
+  `fdc-sr_legacy`, `ciqual`, `frida`, `matvaretabellen` and `mext` 8 days, and `snapshot` 26 h. `fdc-branded` and
+  `fineli` (8 days) count only when they are on (`health.py:33`). One stale entry or one entry with
   no row gives 503.
-- A fetch that finds nothing new also counts as a successful check (`health.py:37`,
+- A fetch that finds nothing new also counts as a successful check (`health.py:38`,
   `jobs.py:26`, `jobs.py:42`, `jobs.py:50`). The full OFF dump has no health entry.
 
 ### MCP
@@ -1436,7 +1444,7 @@ flowchart LR
         labels["POST /v1/labels<br/>model port: OpenRouter, Claude, Codex"]
         brand["Brand upload form<br/>POST /v1/brands/uploads, GS1 port"]
     end
-    tables["Other composition tables<br/>BLS, Frida, CoFID, MFDS, TFDA"]
+    tables["Other composition tables<br/>BLS, CoFID, MFDS, TFDA"]
     eaitp["eait label photos<br/>no user id"]
     devin["Local agent Devin"]
     listing["RapidAPI listing"]
@@ -1456,8 +1464,7 @@ flowchart LR
     class tables,eaitp,devin,listing,eaitc planned
 ```
 
-- **Intake.** Other national composition tables: Frida
-  ([#35](https://github.com/eait-fit/fooddb/issues/35)), CoFID
+- **Intake.** Other national composition tables: CoFID
   ([#36](https://github.com/eait-fit/fooddb/issues/36)), Korea MFDS
   ([#37](https://github.com/eait-fit/fooddb/issues/37)), Taiwan TFDA
   ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS. eait does not send label photos to
