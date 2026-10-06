@@ -6,14 +6,17 @@ from contextlib import asynccontextmanager
 from datetime import date
 from typing import Annotated, Any, Literal
 
-from fastapi import APIRouter, FastAPI, HTTPException, Query
+from fastapi import APIRouter, FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse
 from mcp.server import MCPServer
+from mcp.server.mcpserver import Context
 from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import BaseModel, Field
 from sqlalchemy import text
+from starlette.concurrency import run_in_threadpool
+from starlette.routing import Route
 
-from fooddb import admin, export, gtin, health, resolve, review
+from fooddb import admin, auth, export, gtin, health, resolve, review
 from fooddb.db import engine
 
 
@@ -24,7 +27,8 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="fooddb", version="0.3.0", lifespan=lifespan)
-app.include_router(export.router)
+READ = [auth.require("read")]
+app.include_router(export.router, dependencies=READ)
 
 
 def _pids(sql: str, **params) -> list[int]:
@@ -61,7 +65,7 @@ def healthz() -> JSONResponse:
     return JSONResponse(r, status_code=200 if r["ok"] else 503)
 
 
-@app.get("/v1/foods")
+@app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
            snapshot: date | None = None) -> dict:
     # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
@@ -76,12 +80,12 @@ def search(q: str = Query(min_length=2), include: str | None = None, limit: int 
     return {"items": _resolve(pids, include, snapshot)}
 
 
-@app.get("/v1/foods/{product_id}")
+@app.get("/v1/foods/{product_id}", dependencies=READ)
 def get_product(product_id: int, include: str | None = None, snapshot: date | None = None) -> dict:
     return _one([product_id], include, "product", snapshot)
 
 
-@app.get("/v1/records/{record_id}")
+@app.get("/v1/records/{record_id}", dependencies=READ)
 def get_record(record_id: str, include: str | None = None, snapshot: date | None = None) -> dict:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
     pids = _pids("select product_id from food where id = :id and layer = any(:layers)",
@@ -89,7 +93,7 @@ def get_record(record_id: str, include: str | None = None, snapshot: date | None
     return _one(pids, include, "record", snapshot)
 
 
-@app.get("/v1/products/{barcode}")
+@app.get("/v1/products/{barcode}", dependencies=READ)
 def by_barcode(barcode: str, include: str | None = None, snapshot: date | None = None) -> dict:
     code = gtin.normalize(barcode)
     if code is None:
@@ -102,8 +106,8 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
     return {"items": items}
 
 
-# Review: the only writes. Open until #10 requires an API key on this router (and the MCP review tools).
-review_router = APIRouter(tags=["review"])
+# Review and split: the only writes. Every route here needs a key with the review scope.
+review_router = APIRouter(tags=["review"], dependencies=[auth.require("review")])
 
 
 class Decision(BaseModel):
@@ -164,6 +168,16 @@ def _tool(handler, *args, **kwargs) -> dict:
         raise ToolError(e.detail)
 
 
+def _needs(ctx: Context, scope: str) -> None:
+    """Over HTTP, the caller the /mcp route authenticated must hold the scope. stdio is local and trusted."""
+    request = ctx.request_context.request
+    if request is None:
+        return
+    caller = request.scope.get("state", {}).get("caller")
+    if caller is None or scope not in caller.scopes:
+        raise ToolError(f"this tool needs an API key with the {scope} scope")
+
+
 def _include(include_off: bool) -> str | None:
     return "off" if include_off else None
 
@@ -201,28 +215,46 @@ def health_report() -> dict[str, Any]:
     return health.report()
 
 
-# Review tools: open until #10, like the /v1/review routes.
 @mcp.tool(name="review_queue")
-def review_queue_tool(limit: Annotated[int, Field(ge=1, le=1000)] = 100) -> dict[str, Any]:
+def review_queue_tool(ctx: Context, limit: Annotated[int, Field(ge=1, le=1000)] = 100) -> dict[str, Any]:
     """Values a failed check held back, grouped per source record, next to the values served now."""
+    _needs(ctx, "review")
     return _tool(review_queue, limit)
 
 
 @mcp.tool(name="decide_review")
-def decide_review_tool(observation_id: int, decision: Literal["accept", "reject"], by: str,
+def decide_review_tool(ctx: Context, observation_id: int, decision: Literal["accept", "reject"], by: str,
                        note: str | None = None) -> dict[str, Any]:
     """Accept a pending value (served from the next snapshot on) or reject it (never served). `by` names who decided."""
+    _needs(ctx, "review")
     return _tool(decide_review, observation_id, Decision(decision=decision, by=by, note=note))
 
 
 @mcp.tool(name="split_product")
-def split_product_tool(product_id: int, food_ids: list[str], by: str, note: str | None = None) -> dict[str, Any]:
+def split_product_tool(ctx: Context, product_id: int, food_ids: list[str], by: str, note: str | None = None) -> dict[str, Any]:
     """Undo a wrong merge: move source records out of a product into one of their own. Matching never
     joins them with the rest again. `by` names who decided."""
+    _needs(ctx, "review")
     return _tool(split_product, product_id, Split(food_ids=food_ids, by=by, note=note))
 
 
+class _Authenticated:
+    """Every /mcp request needs what a REST read needs. The caller rides in the ASGI state for _needs."""
+
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        try:
+            caller = await run_in_threadpool(auth.check, Request(scope), "read")
+        except HTTPException as e:
+            return await JSONResponse({"detail": e.detail}, e.status_code, e.headers)(scope, receive, send)
+        scope.setdefault("state", {})["caller"] = caller
+        await self.app(scope, receive, send)
+
+
 # Streamable HTTP at /mcp, served by this app. Stateless, so any API replica answers any request.
-app.router.routes.extend(mcp.streamable_http_app(
+[_mcp_route] = mcp.streamable_http_app(
     stateless_http=True, json_response=True, host=os.environ.get("FOODDB__BACKEND__API_HOST", "127.0.0.1"),
-).routes)
+).routes
+app.router.routes.append(Route(_mcp_route.path, _Authenticated(_mcp_route.endpoint)))

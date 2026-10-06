@@ -49,7 +49,8 @@ def serve(port: int = typer.Option(None, help="default: $FOODDB__BACKEND__API_PO
 
     port = port or int(os.environ.get("FOODDB__BACKEND__API_PORT", "9640"))
     host = os.environ.get("FOODDB__BACKEND__API_HOST", "127.0.0.1")  # 0.0.0.0 inside a container
-    uvicorn.run("fooddb.api:app", host=host, port=port, reload=reload, proxy_headers=True)
+    uvicorn.run("fooddb.api:app", host=host, port=port, reload=reload, proxy_headers=True,
+                forwarded_allow_ips=os.environ.get("FOODDB__BACKEND__FORWARDED_ALLOW_IPS"))
 
 
 @app.command()
@@ -142,6 +143,47 @@ def export(
         for chunk in ex.gzipped(chunks) if out.suffix == ".gz" else chunks:
             f.write(chunk)
     typer.echo(f"wrote {out}")
+
+
+keys = typer.Typer(no_args_is_help=True, help="API keys: scopes read, review (implies read), admin (implies both).")
+app.add_typer(keys, name="keys")
+
+
+@keys.command("create")
+def keys_create(
+    name: str = typer.Option(..., help="who holds the key, e.g. eait"),
+    scope: list[str] = typer.Option(["read"], help="read | review | admin; repeat for several"),
+    rate_limit: int = typer.Option(None, min=1, help="requests per minute; default $FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE"),
+) -> None:
+    """Create a key and print its token. The token is shown only this once: only its hash is stored."""
+    from fooddb import auth
+
+    try:
+        typer.echo(auth.create(name, scope, rate_limit))
+    except ValueError as e:
+        raise typer.BadParameter(str(e), param_hint="--scope")
+
+
+@keys.command("list")
+def keys_list() -> None:
+    """Every key with its scopes, rate limit and last use. Tokens are not stored, so not shown."""
+    from fooddb import auth
+
+    for k in auth.keys():
+        state = f"revoked {k['revoked_at']:%Y-%m-%d}" if k["revoked_at"] else "active"
+        typer.echo(f"{k['id']}\t{k['name']}\t{','.join(k['scopes'])}\t{k['rate_limit'] or 'default'}/min\t"
+                   f"{state}\tlast used {k['last_used_at'] or 'never'}")
+
+
+@keys.command("revoke")
+def keys_revoke(name: str) -> None:
+    """Revoke the active key with this name. It stops working on the next request."""
+    from fooddb import auth
+
+    if not auth.revoke(name):
+        typer.echo(f"no active key named {name}", err=True)
+        raise typer.Exit(1)
+    typer.echo(f"revoked {name}")
 
 
 @app.command()

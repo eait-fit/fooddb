@@ -1,15 +1,15 @@
 """Merge log and cannot-link pairs: every merge and split is recorded, and a split is never re-merged.
 
-Revision ID: 0007
-Revises: 0006
+Revision ID: 0008
+Revises: 0007
 """
 
 import sqlalchemy as sa
 from alembic import op
 from sqlalchemy.dialects.postgresql import ARRAY
 
-revision = "0007"
-down_revision = "0006"
+revision = "0008"
+down_revision = "0007"
 
 
 def upgrade() -> None:

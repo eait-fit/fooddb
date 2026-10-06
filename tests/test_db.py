@@ -7,6 +7,7 @@ from datetime import UTC, datetime
 import pytest
 
 TEST_URL = os.environ.get("FOODDB_TEST_DATABASE_URL")
+os.environ.setdefault("FOODDB__BACKEND__SECRET_KEY", "test-only-secret")  # before fooddb.api mounts the admin
 # The suite truncates tables, so it runs only against a database whose name says it is a test one.
 pytestmark = pytest.mark.skipif(
     not TEST_URL or os.environ.get("FOODDB__BACKEND__DATABASE_URL") != TEST_URL or not TEST_URL.endswith("__test"),
@@ -21,15 +22,21 @@ def clean():
     from fooddb.db import engine
 
     with engine().begin() as conn:
-        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link restart identity cascade"))
+        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit restart identity cascade"))
 
 
-def client():
+def client(key: str | None = None):
     from fastapi.testclient import TestClient
 
     from fooddb.api import app
 
-    return TestClient(app)
+    return TestClient(app, headers={"Authorization": f"Bearer {key}"} if key else {})
+
+
+def key(*scopes: str, name: str | None = None, **kw) -> str:
+    from fooddb import auth
+
+    return auth.create(name or f"test-{'-'.join(scopes)}", list(scopes), **kw)
 
 
 def product(record_id: str, include: str | None = None) -> dict:
@@ -556,7 +563,7 @@ def test_an_accepted_value_is_served_from_the_next_snapshot(monkeypatch):
     ingest_typo()
     build_on(monkeypatch, "2026-10-01")
     obs = pending_id("ENERC_KCAL")
-    r = client().post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester", "note": "label says so"})
+    r = client(key("review")).post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester", "note": "label says so"})
     assert r.status_code == 200, r.text
     d = r.json()
     assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester", "label says so")
@@ -573,18 +580,19 @@ def test_a_rejected_value_is_never_served(monkeypatch):
 
     ingest_typo()
     obs = pending_id("ENERC_KCAL")
-    assert client().post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).json()["status"] == "rejected"
+    c = client(key("review"))
+    assert c.post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).json()["status"] == "rejected"
     # The source sends the same typo again: it is not stored again, so it does not come back for review.
     ingest.run("t", "typo-again", [rec(observed_at=datetime(2026, 7, 1, tzinfo=UTC), values=TYPO)])
     build_on(monkeypatch, "2026-10-01")
     assert kcal("fdc:1") == 229
-    assert client().get("/v1/review").json()["items"][0]["pending"][0]["nutrient"] == "SUGAR"
+    assert c.get("/v1/review").json()["items"][0]["pending"][0]["nutrient"] == "SUGAR"
 
 
 def test_review_decisions_are_final_and_validated():
     ingest_typo()
     obs = pending_id("ENERC_KCAL")
-    c = client()
+    c = client(key("review"))
     assert c.post(f"/v1/review/{obs}", json={"decision": "maybe", "by": "tester"}).status_code == 422
     assert c.post(f"/v1/review/{obs}", json={"decision": "accept"}).status_code == 422  # who decided is required
     assert c.post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester"}).status_code == 200
@@ -609,12 +617,14 @@ def test_admin_lists_pending_values_and_accepts_them():
     ingest_typo()
     obs = pending_id("ENERC_KCAL")
     c = client()
+    assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
+                  follow_redirects=False).status_code == 302
     page = c.get("/admin/observation/list")
     assert page.status_code == 200 and "2290" in page.text and "FIBTG" not in page.text
     assert c.get(f"/admin/observation/action/accept?pks={obs}", follow_redirects=False).status_code == 302
     with engine().connect() as conn:
         row = conn.execute(text("select status, reviewed_by from observation where id = :id"), {"id": obs}).one()
-    assert tuple(row) == ("accepted", "admin")
+    assert tuple(row) == ("accepted", "kirill")
 
 
 def merge(*record_ids: str) -> None:
@@ -761,7 +771,10 @@ def wrongly_merged_hummus() -> tuple[int, int]:
 
 
 def split(pid: int, food_ids: list[str], **body):
-    return client().post(f"/v1/products/{pid}/split", json={"food_ids": food_ids, "by": "tester"} | body)
+    import uuid
+
+    reviewer = client(key("review", name=f"reviewer-{uuid.uuid4().hex[:8]}"))
+    return reviewer.post(f"/v1/products/{pid}/split", json={"food_ids": food_ids, "by": "tester"} | body)
 
 
 def test_matching_logs_each_merge_with_its_probability_and_the_records_it_moved():
@@ -851,11 +864,13 @@ def test_admin_lists_the_merge_log_and_splits_a_merge():
     survivor, merged_away = wrongly_merged_hummus()
     [row] = log_rows("merge")
     c = client()
+    assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
+                  follow_redirects=False).status_code == 302
     page = c.get("/admin/merge-log/list")
     assert page.status_code == 200 and "fdc:2" in page.text
     assert c.get(f"/admin/merge-log/action/split?pks={row['id']}", follow_redirects=False).status_code == 302
     assert product("fdc:2")["id"] == merged_away
-    assert log_rows("split")[0]["by"] == "admin"
+    assert log_rows("split")[0]["by"] == "kirill"
 
 
 def test_match_train_saves_a_model_that_matching_then_uses(tmp_path, monkeypatch):
