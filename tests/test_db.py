@@ -196,6 +196,27 @@ def test_unchanged_values_are_not_stored_again_and_dropped_fields_are_withdrawn(
     assert "NA" not in per_100
 
 
+def observation_count() -> int:
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return conn.execute(text("select count(*) from observation")).scalar_one()
+
+
+def test_a_field_dropped_when_the_record_is_seen_again_at_the_same_time_is_withdrawn():
+    from fooddb import ingest
+
+    ingest.run("t", "v1", [rec(values={"ENERC_KCAL": 229.0, "NA": 438.0})])
+    assert ingest.run("t", "v2", [rec(values={"ENERC_KCAL": 229.0})]) == (1, 1)  # same observed_at: the withdrawal
+    assert "NA" not in product("fdc:1")["per_100"] and product("fdc:1")["per_100"]["ENERC_KCAL"]["value"] == 229
+    stored = observation_count()
+    assert ingest.run("t", "v3", [rec(values={"ENERC_KCAL": 229.0})]) == (1, 0)  # unchanged: nothing stored
+    assert ingest.run("t", "v4", [rec(values={"ENERC_KCAL": 229.0, "NA": 438.0})]) == (1, 1)  # and it can come back
+    assert observation_count() == stored + 1 and product("fdc:1")["per_100"]["NA"]["value"] == 438
+
+
 HUMMUS = {"ENERC_KCAL": 229.0, "PROCNT": 7.35, "FAT": 17.1, "CHOCDF": 14.9}
 
 
@@ -800,6 +821,24 @@ def test_an_off_delta_files_label_carbohydrate_under_its_market_code(tmp_path):
     assert round(per_100["ENERC_KCAL"]["value"]) == 229
     per_100 = load("d2", 1790000100, ["en:united-states"])  # a newer edit moves it to the US market
     assert per_100["CHOCDF"]["value"] == 9 and "CHOAVL" not in per_100  # the old code is withdrawn
+
+
+def test_a_reload_of_an_unedited_off_product_serves_only_the_new_carbohydrate_code(tmp_path):
+    import gzip
+    import json
+
+    from fooddb.fetchers import off
+
+    def load(ref, countries):
+        path = tmp_path / f"{ref}.jsonl.gz"
+        with gzip.open(path, "wt") as f:
+            f.write(json.dumps({"code": "4006381333931", "product_name": "Hummus", "last_modified_t": 1790000000,
+                                "countries_tags": countries, "nutriments": {"carbohydrates_100g": 9.0}}))
+        off.load(path, fetcher="off-test", ref=ref)
+        return product("off:04006381333931", "off")["per_100"]
+
+    assert load("old-parser", ["en:united-states"]).keys() == {"CHOCDF"}
+    assert load("new-parser", ["en:germany"]).keys() == {"CHOAVL"}  # same last_modified_t: the old code is withdrawn
 
 
 def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rule(monkeypatch):
