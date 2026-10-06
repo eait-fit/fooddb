@@ -11,15 +11,15 @@ References have the form `file:line` and point to the code at commit `2480b2f`.
 
 ```mermaid
 flowchart LR
-    callers["REST and MCP callers"]
+    callers["REST and MCP callers<br/>API key, or anonymous reads"]
     consumer["Consumer with a local copy<br/>eait"]
-    reviewer["Reviewer<br/>browser at /admin"]
+    reviewer["Reviewer<br/>browser at /admin, admin key"]
     local["Local MCP client<br/>Claude Desktop, Claude Code"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
         api["API<br/>fooddb serve"]
         worker["Worker<br/>fooddb worker"]
-        cli["CLI<br/>fooddb run, status, lookup, export, mcp"]
+        cli["CLI<br/>fooddb run, status, lookup, export, keys, mcp"]
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
     end
     fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
@@ -29,7 +29,7 @@ flowchart LR
     consumer -->|"HTTPS, GET /v1/snapshots/{day}/export"| proxy
     reviewer -->|HTTPS| proxy
     local -->|"stdio: fooddb mcp"| cli
-    api -->|"read, write review decisions"| db
+    api -->|"read, write review decisions, key use, rate counters"| db
     worker -->|read, write| db
     cli -->|read, write| db
     worker -->|"HTTPS, weekly check"| fdc
@@ -39,16 +39,18 @@ flowchart LR
 
 fooddb has three processes, and all of them come from one image (`Dockerfile:1`):
 
-- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its only write is a review
-  decision. It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)), and the
-  SQLAdmin review UI at `/admin` (see [Review](#review)).
+- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its only data write is a
+  review decision. It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)),
+  and the SQLAdmin review UI at `/admin` (see [Review](#review)). It checks API keys and rate
+  limits on each request (see [Authentication](#authentication)).
 - The **worker** (`fooddb worker`, `cli.py:26`) runs the fetches, the match job and the snapshot.
   The queue is [pq](https://github.com/ricwo/pq), which keeps its tasks in the same Postgres
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:103`).
   `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
-  snapshot to a file with the same code as the export endpoint (`cli.py:107`).
+  snapshot to a file with the same code as the export endpoint (`cli.py:107`). `fooddb keys`
+  creates, lists and revokes API keys (`cli.py:128`).
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:54`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
@@ -254,12 +256,13 @@ flowchart LR
   value of its record and field. Snapshots of earlier days do not change.
 - A rejected value is never served. If the source sends the same value again, ingest sees no change
   and stores nothing, so the value does not come back for review.
-- The REST routes are on one `APIRouter`, `review_router` (`api.py:105`). The MCP tools
-  `review_queue` and `decide_review` call the same handlers. The SQLAdmin actions call
-  `review.decide` with `by` set to `admin` (`admin.py:27`). They are GET requests, as SQLAdmin
-  builds them.
-- Nothing authenticates these writes yet. [#10](https://github.com/eait-fit/fooddb/issues/10) adds
-  API keys to the router and the MCP review tools in one place.
+- The REST routes are on one `APIRouter`, `review_router`, which needs the `review` scope
+  (`api.py:110`). The MCP tools `review_queue` and `decide_review` call the same handlers. Over
+  HTTP, they need the `review` scope too (`api.py:152`). The SQLAdmin actions call `review.decide`
+  with `by` set to the name of the admin key that logged in (`admin.py:54`).
+- The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
+  `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
+  cannot decide a value.
 
 ### Match records into products
 
@@ -472,9 +475,24 @@ erDiagram
         text fetcher PK
         timestamptz checked_at
     }
+    api_key {
+        bigint id PK
+        text name "unique among active keys"
+        text token_hash UK "PBKDF2-HMAC-SHA256, never the token"
+        text_array scopes "read, review, admin"
+        int rate_limit "null means the default"
+        timestamptz created_at
+        timestamptz last_used_at
+        timestamptz revoked_at
+    }
+    rate_limit {
+        text bucket PK "key:id or ip:address"
+        timestamptz window_start "start of the minute"
+        int hits
+    }
 ```
 
-Six Alembic migrations make this schema:
+Seven Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -487,6 +505,8 @@ Six Alembic migrations make this schema:
 - `0006` adds `reviewed_by`, `reviewed_at` and `review_note` to `observation`, and the partial index
   `observation_pending_idx` on the pending rows for the review queue
   (`alembic/versions/0006_review_decisions.py:15`).
+- `0007` adds `api_key` and the unlogged table `rate_limit` (`alembic/versions/0007_api_keys.py:16`).
+  A crash can lose the counts of one minute, which is acceptable for a rate limit.
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -602,8 +622,8 @@ sequenceDiagram
     end
 ```
 
-The export router is in `export.py`. The app adds it with `include_router` (`api.py:27`), so a later
-auth dependency can gate it in one place.
+The export router is in `export.py`. The app adds it with `include_router` and the `read`
+dependency (`api.py:31`). See [Authentication](#authentication).
 
 - `GET /v1/snapshots` lists the days, newest first (`export.py:34`). `final` is true when the day
   is before today (UTC). `products` counts the products with values in the `all` scope at build
@@ -649,7 +669,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     local["Local MCP client"] -->|"stdio: fooddb mcp"| srv["api.mcp<br/>MCPServer"]
-    remote["Remote MCP client"] -->|"POST /mcp"| route["Route /mcp on the FastAPI app<br/>stateless, JSON responses"] --> srv
+    remote["Remote MCP client"] -->|"POST /mcp, API key"| route["Route /mcp on the FastAPI app<br/>key check, stateless, JSON responses"] --> srv
     srv --> tool["MCP tool<br/>include_off to include=off"]
     tool --> h["REST handler<br/>search, by_barcode, get_product, get_record"]
     tool --> rep["health.report()"]
@@ -679,8 +699,52 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 - When `FOODDB__BACKEND__API_HOST` is `127.0.0.1` (the local default), the SDK refuses requests
   with a `Host` header other than localhost. In the image the value is `0.0.0.0`, so the check is
   off, and the reverse proxy sets the host.
-- The MCP server has no authentication, like the REST API. `decide_review` is its only write. See
-  [Review](#review).
+- Over HTTP, every request to `/mcp` passes the same key check as a REST read (`api.py:214`). The
+  review tools also need the `review` scope (`api.py:152`). Over stdio, no key is checked: the
+  process is local and trusted. `decide_review` is the only write. See [Review](#review).
+
+### Authentication
+
+```mermaid
+flowchart LR
+    req["Request"] --> open{"/livez or /healthz?"}
+    open -->|yes| ok["handler, no key"]
+    open -->|no| who["auth.authenticate()"]
+    who -->|"Bearer or X-API-Key"| key{"active key<br/>with this hash?"}
+    key -->|no| e401["401"]
+    key -->|yes| caller["caller: key scopes"]
+    who -->|"X-RapidAPI-Proxy-Secret matches"| rapid["caller: read, not rate-limited"]
+    who -->|"no key"| anon["caller: anonymous"]
+    caller --> scope{"auth.authorize()<br/>scope held?"}
+    rapid --> scope
+    anon --> scope
+    scope -->|"no, anonymous"| e401
+    scope -->|"no, key"| e403["403"]
+    scope -->|yes| count["auth._count()<br/>upsert rate_limit"]
+    count -->|"over the limit"| e429["429, Retry-After"]
+    count -->|"within the limit"| handler["handler"]
+```
+
+- A token is `fdb_` and 32 random bytes in URL-safe base64. `api_key` stores only its PBKDF2-HMAC-SHA256 under `FOODDB__BACKEND__SECRET_KEY`
+  (`auth.py:43`). A lookup updates `last_used_at` in the same statement (`auth.py:66`).
+- The scopes are `read`, `review` and `admin`. `review` implies `read`. `admin` implies both
+  (`auth.py:15`).
+- `auth.require(scope)` is a FastAPI dependency (`auth.py:131`). The data reads and the export
+  router use `read` (`api.py:30`). `review_router` uses `review` (`api.py:110`).
+- An anonymous caller passes a `read` check only when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is
+  not `true` (`auth.py:99`). A key that is unknown or revoked gets 401, even on an open read.
+- A request with `X-RapidAPI-Proxy-Secret` equal to `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` gets
+  the `read` scope. The compare is in constant time (`auth.py:93`).
+- The rate limit is a fixed window of one minute. Each request does one upsert on `rate_limit`
+  (`auth.py:110`). The bucket is the key, or the client IP for anonymous reads. The limit is the
+  key's `rate_limit`, else `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` (default 60). All API replicas
+  share the counters.
+- The client IP comes from `X-Forwarded-For` when the peer is in
+  `FOODDB__BACKEND__FORWARDED_ALLOW_IPS` (`cli.py:52`). The compose stack trusts every peer, because
+  it publishes the port on loopback only.
+- `/admin` logs in with an `admin` key in the password field (`admin.py:63`). The session cookie
+  holds the key id, signed with `FOODDB__BACKEND__SECRET_KEY`. Each admin request checks that the
+  key is still active. Without the secret, `admin.mount` does not mount `/admin` (`admin.py:83`).
 
 ## Planned, not built
 
@@ -691,6 +755,7 @@ have them yet. Dashed boxes and dashed arrows are planned. Solid boxes exist tod
 flowchart LR
     subgraph built["As built"]
         api["REST API"]
+        auth["API keys, rate limits<br/>proxy secret check"]
         obs[("observation")]
         pend["pending observations"]
         review["Review queue<br/>API, MCP, SQLAdmin"]
@@ -704,7 +769,7 @@ flowchart LR
     orouter["OpenRouter"]
     agents["Local agents<br/>Claude, Codex, Devin"]
     photo["Photo page<br/>photo next to the fields that differ"]
-    keys["API keys, rate limits<br/>RapidAPI listing"]
+    listing["RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
     odbl["Monthly ODbL dump<br/>of the off layer"]
     tables -.->|"source rows"| obs
@@ -716,12 +781,13 @@ flowchart LR
     pend --> review
     review -->|"accept or reject"| obs
     review -.-> photo
-    keys -.-> api
+    listing -.->|"X-RapidAPI-Proxy-Secret"| auth
+    auth --> api
     snap --> exp
     exp -.->|"nightly refresh"| eaitc
     obs -.-> odbl
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,port,orouter,agents,photo,keys,eaitc,odbl planned
+    class tables,brand,eaitp,port,orouter,agents,photo,listing,eaitc,odbl planned
 ```
 
 - **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
@@ -732,8 +798,8 @@ flowchart LR
 - **Review photo page.** A page that shows the label photo next to the fields that differ. It needs
   photo evidence on observations ([#12](https://github.com/eait-fit/fooddb/issues/12)).
 - **Checks.** Ranges per category, and front-of-pack warning seals.
-- **Access.** API keys, rate limits and the RapidAPI listing. The REST API and the MCP server have
-  no authentication today.
+- **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
+  listing's proxy secret as a `read` key. See [Authentication](#authentication).
 - **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot
   export. The export exists. The eait job that loads it does not.
 - **ODbL dump.** A monthly ODbL dump of the OFF-derived layer.

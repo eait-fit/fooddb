@@ -34,8 +34,9 @@ curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with
 curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
 curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot (see below)
 curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
-curl "$(./dev url)/v1/review"                                 # values a failed check held back
-curl -X POST "$(./dev url)/v1/review/42" -H 'content-type: application/json' \
+KEY=$(./dev cli keys create --name me --scope review)          # printed once; only its hash is stored
+curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/review"  # values a failed check held back
+curl -X POST "$(./dev url)/v1/review/42" -H "Authorization: Bearer $KEY" -H 'content-type: application/json' \
      -d '{"decision": "reject", "by": "kirill", "note": "10x typo"}'
 ```
 
@@ -74,9 +75,27 @@ the flag `carbs-regime-unknown`.
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
 
-The review queue is also in a browser at `$(./dev url)/admin`. The review routes, the MCP review
-tools and `/admin` have no authentication yet
-([#10](https://github.com/eait-fit/fooddb/issues/10)), so do not expose them publicly.
+The review queue is also in a browser at `$(./dev url)/admin`. Log in with an `admin` key in the
+password field. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
+admin login cookie.
+
+## Authentication
+
+API keys look like `fdb_…`. Send one as `Authorization: Bearer fdb_…` or `X-API-Key: fdb_…`.
+`fooddb keys create --name NAME --scope read|review|admin` makes one and prints it once.
+`fooddb keys list` and `fooddb keys revoke NAME` manage them.
+
+- `read`: the data routes, the snapshot export and the MCP read tools.
+- `review`: `read`, plus `/v1/review` and the MCP review tools.
+- `admin`: `review`, plus the login to `/admin`.
+
+Writes, the review queue and `/admin` always need a key. Reads need a key only when
+`FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`. The default is `false`, so a self-hosted read API
+stays public. `/livez` and `/healthz` are always open. Each key has a rate limit per minute
+(`FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE`, default 60, or `--rate-limit`). Reads without a key have
+the same limit per client IP. Over the limit, the API answers 429 with `Retry-After`. Behind
+RapidAPI, a request with the listing's `X-RapidAPI-Proxy-Secret`
+(`FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET`) counts as a `read` key.
 
 ## MCP
 
@@ -84,19 +103,20 @@ The MCP server has the same reads as the REST API, and calls the same functions.
 `search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`,
 plus the review tools `review_queue` and `decide_review`.
 Each field carries its licence tag, as in REST. OFF data comes back only with `include_off: true`.
-There is no authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
 
 Two transports:
 
-- **stdio**, for a local client: `fooddb mcp`. It needs `FOODDB__BACKEND__DATABASE_URL`.
+- **stdio**, for a local client: `fooddb mcp`. It needs `FOODDB__BACKEND__DATABASE_URL`. It is
+  local and trusted, so it needs no API key.
 - **Streamable HTTP** at `/mcp` on the API: `$(./dev url)/mcp` locally, `https://<your host>/mcp`
-  when self-hosted.
+  when self-hosted. Send an API key in the `Authorization` header, as for REST. The read tools
+  need what a REST read needs. `review_queue` and `decide_review` need the `review` scope.
 
 Claude Code:
 
 ```bash
 claude mcp add fooddb --env FOODDB__BACKEND__DATABASE_URL=postgresql://… -- uv run --directory /path/to/fooddb fooddb mcp
-claude mcp add --transport http fooddb "$(./dev url)/mcp"     # or over HTTP
+claude mcp add --transport http fooddb "$(./dev url)/mcp" --header "Authorization: Bearer fdb_…"   # or over HTTP
 ```
 
 Claude Desktop, in `claude_desktop_config.json`:
@@ -147,7 +167,7 @@ curl -H 'Accept-Encoding: gzip' -o 2026-10-04.ndjson.gz "$(./dev url)/v1/snapsho
 ./dev cli export --day 2026-10-04 --include-off --out 2026-10-04.ndjson.gz   # the same lines, from the database
 ```
 
-The export has no authentication yet ([#10](https://github.com/eait-fit/fooddb/issues/10)).
+The export is a read: it needs a `read` key when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`.
 
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
