@@ -8,9 +8,9 @@ from pq import PQ, Priority
 
 from fooddb import health, requestlog
 from fooddb.db import database_url
-from fooddb.fetchers import ciqual, fdc, fineli, frida, matvaretabellen, mext, off
+from fooddb.fetchers import ciqual, cofid, fdc, fineli, frida, matvaretabellen, mext, off
 
-TABLES = {m.FETCHER: m for m in (ciqual, fineli, frida, matvaretabellen, mext)}  # national composition tables
+TABLES = {m.FETCHER: m for m in (ciqual, cofid, fineli, frida, matvaretabellen, mext)}  # national composition tables
 WEEKLY = "0 3 * * 1"  # Monday 03:00 UTC
 PRUNE_CRON = "15 3 * * *"
 # FDC Branded is about 3 GB of JSON: it may run longer than the worker's default task limit.

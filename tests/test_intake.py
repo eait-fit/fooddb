@@ -114,6 +114,75 @@ def test_matvaretabellen_reads_its_food_list_into_available_carbohydrate():
     assert not checks.flags(beans.values, checks.category(beans.categories))
 
 
+def test_cofid_value_follows_the_conservative_rule_for_trace_and_not_measured():
+    from fooddb.fetchers.cofid import value
+
+    assert value("151") == 151 and value("0.30") == 0.3 and value(" 5.1 ") == 5.1
+    assert value("Tr") == 0
+    assert value("N") is None and value("") is None and value(None) is None
+
+
+def test_cofid_reads_its_sheets_and_leaves_out_carbohydrate_in_monosaccharide_equivalents():
+    from fooddb.fetchers import cofid
+
+    observed = datetime(2021, 3, 19, 14, 0, 7, tzinfo=UTC)
+    ackee, agar, allspice, apples, beer = cofid.records(FIXTURES / "cofid.xlsx", observed)
+    assert ackee.id == "cofid:13-145" and ackee.name == "Ackee, canned, drained" and ackee.lang == "en"
+    assert ackee.licence == "OGL-UK-3.0" and ackee.source == "cofid" and ackee.layer == "core"
+    # Fat 15.2, energy and sodium are stated. Saturates are N (not measured), AOAC fibre is blank. Carbohydrate is not stored.
+    assert ackee.values == {"PROCNT": 2.9, "FAT": 15.2, "ENERC_KCAL": 151, "ENERC_KJ": 625, "NA": 240}
+    assert agar.values["FASAT"] == 0.3 and "FIBTG" not in agar.values
+    assert allspice.values == {"PROCNT": 6.1, "FAT": 8.7, "FASAT": 2.5, "NA": 77}  # N for energy: no value
+    assert apples.values == {"PROCNT": 0.6, "FAT": 0.5, "ENERC_KCAL": 51, "ENERC_KJ": 215, "FIBTG": 1.2, "FASAT": 0.12, "NA": 1}
+    assert not any(k in v.values for v in (ackee, agar, allspice, apples, beer) for k in ("CHOAVL", "CHOCDF", "SUGAR"))
+    assert beer.values["FAT"] == 0 and beer.values["FIBTG"] == 0 and beer.values["FASAT"] == 0  # Tr is 0
+    assert apples.basis == "100g" and beer.basis == "100ml"  # alcoholic beverages are per 100 ml
+    assert apples.observed_at == observed
+    assert apples.categories == ["cofid:FA", "cofid:F"] and checks.category(apples.categories) == "fruits"
+    assert beer.categories == ["cofid:QA", "cofid:Q"] and checks.category(beer.categories) == "alcoholic-beverages"
+    assert ackee.categories == ["cofid:DG", "cofid:D"] and checks.category(ackee.categories) is None
+    assert not checks.flags(apples.values, "fruits")
+
+
+def test_cofid_drops_a_food_code_that_two_foods_share():
+    from fooddb.fetchers import cofid
+
+    ids = [r.id for r in cofid.records(FIXTURES / "cofid.xlsx", datetime(2021, 3, 19, tzinfo=UTC))]
+    assert "cofid:13-669" not in ids and len(ids) == 5  # CoFID 2021 gives 13-669 to an aubergine and to watercress
+
+
+def test_cofid_stops_when_a_tagname_moves(tmp_path):
+    from fooddb.fetchers import cofid
+
+    broken = tmp_path / "cofid.xlsx"
+    with zipfile.ZipFile(FIXTURES / "cofid.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b">AOACFIB<", b">AOACFIBRE<") if "sharedStrings" in item.filename else data)
+    with pytest.raises(RuntimeError, match="AOACFIB"):
+        list(cofid.records(broken, datetime(2021, 3, 19, tzinfo=UTC)))
+
+
+def test_cofid_finds_the_dataset_workbook_on_its_gov_uk_page():
+    from fooddb.fetchers import cofid
+
+    base = "https://assets.publishing.service.gov.uk/media/"
+    content = {"details": {"change_history": [{"public_timestamp": "2021-03-19T14:00:07Z"}, {"public_timestamp": "2019-03-25T12:30:00Z"}],
+                           "attachments": [
+        {"title": "McCance and Widdowson’s The Composition of Foods Integrated Dataset 2021: user guide",
+         "content_type": "application/pdf", "url": base + "60538e66d3bf7f03249bac58/guide.pdf"},
+        {"title": "McCance and Widdowson's composition of foods: old foods",
+         "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "url": base + "60538ba4e90e07527f645f88/CoFID_oldFoods.xlsx"},
+        {"title": "McCance and Widdowson's composition of foods integrated dataset",
+         "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+         "url": base + "60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx"}]}}
+    url, ref, observed = cofid.newest(content)
+    assert url.endswith("McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx")
+    assert ref == "60538b91e90e07527df82ae4" and observed == datetime(2021, 3, 19, 14, 0, 7, tzinfo=UTC)
+    with pytest.raises(RuntimeError, match="no dataset workbook"):
+        cofid.newest({"details": {"change_history": [], "attachments": content["details"]["attachments"][:2]}})
+
+
 def test_frida_reads_its_data_table_with_both_carbohydrate_codes_and_its_food_groups():
     from fooddb.fetchers import frida
 

@@ -7,6 +7,7 @@ served field and value carries the licence of its source in its `licence` tag.
 |---|---|
 | Core data from USDA FoodData Central | CC0-1.0 |
 | Core data from CIQUAL (ANSES, France), tagged `etalab-2.0` | [Licence Ouverte / Open Licence 2.0 (Etalab)](https://www.etalab.gouv.fr/licence-ouverte-open-licence/) |
+| Core data from CoFID (Public Health England, UK), tagged `OGL-UK-3.0` | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |
 | Core data from Fineli (THL, Finland), tagged `CC-BY-4.0` | [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Core data from Matvaretabellen (Mattilsynet, Norway), tagged `NLOD-2.0` | [Norwegian Licence for Open Government Data 2.0](https://data.norge.no/nlod/en/2.0) |
 | Core data from Frida (DTU, Denmark), tagged `CC-BY-4.0` | [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) |
@@ -16,7 +17,7 @@ served field and value carries the licence of its source in its `licence` tag.
 
 ## National composition tables
 
-The terms of CIQUAL, Fineli, Frida, Matvaretabellen and MEXT ask you to name the source. Each product in the
+The terms of CIQUAL, CoFID, Fineli, Frida, Matvaretabellen and MEXT ask you to name the source. Each product in the
 API and in the snapshot export has an `attribution` list: one entry for each of these sources that
 gives a served field. Each entry has the `source`, the `licence` and the `text`. Show the text where
 you use the data, or link to it. The texts are:
@@ -25,12 +26,14 @@ you use the data, or link to it. The texts are:
 |---|---|
 | `ciqual` | Anses. Ciqual French food composition table (https://ciqual.anses.fr). Licence Ouverte / Etalab 2.0. |
 | `fineli` | Finnish Institute for Health and Welfare (THL), Fineli (https://fineli.fi). CC BY 4.0. |
+| `cofid` | McCance and Widdowson's The Composition of Foods Integrated Dataset 2021, Public Health England (https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid). Contains public sector information licensed under the Open Government Licence v3.0. |
 | `frida` | Frida Food Data (https://frida.fooddata.dk), National Food Institute, Technical University of Denmark. CC BY 4.0. |
 | `mext` | 日本食品標準成分表（八訂）増補2023年から引用 (Standard Tables of Food Composition in Japan, 8th revised edition, 2023 supplement, Ministry of Education, Culture, Sports, Science and Technology, https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html). |
 | `matvaretabellen` | Contains data from Matvaretabellen (https://www.matvaretabellen.no), Norwegian Food Safety Authority, made available under the Norwegian Licence for Open Government Data (NLOD) 2.0. |
 
 fooddb changes this data: it maps the nutrient codes to INFOODS, converts kJ to kcal for Fineli,
-and leaves out values that the table gives only as a limit. For MEXT it also drops the class headings
+and leaves out values that the table gives only as a limit. For CoFID it also leaves out carbohydrate and sugars, which the table gives as monosaccharide
+equivalents. For MEXT it also drops the class headings
 that lead some food names. These licences have no share-alike
 obligation.
 
