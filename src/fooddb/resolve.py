@@ -13,12 +13,15 @@ from sqlalchemy import Connection, text
 
 from fooddb import checks
 from fooddb.db import engine
-from fooddb.fetchers import ciqual, fineli, matvaretabellen, tfda
+from fooddb.fetchers import ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda
 
 # ponytail: fixed source ranks; a per-field trust table when brand uploads and label reads land.
 # The composition tables (FDC and the national ones) share one rank, above the crowd (OFF).
 RANK = ("case {col} when 'brand' then 1 when 'label' then 2"
         " when 'fdc' then 3 when 'ciqual' then 3 when 'fineli' then 3 when 'matvaretabellen' then 3"
+        " when 'mext' then 3"
+        " when 'frida' then 3"
+        " when 'cofid' then 3"
         " when 'tfda' then 3"
         " when 'off' then 4 else 9 end")
 
@@ -120,9 +123,9 @@ order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls l
 
 FIELDS = ("name", "brand", "lang", "serving_text", "serving_g", "category")
 # Least to most restrictive; an unknown licence counts as the most. The middle ones ask for attribution.
-LICENCES = ("CC0-1.0", "etalab-2.0", "NLOD-2.0", "OGDL-Taiwan-1.0", "CC-BY-4.0", "ODbL-1.0")
+LICENCES = ("CC0-1.0", "etalab-2.0", "NLOD-2.0", "OGL-UK-3.0", "OGDL-Taiwan-1.0", "mext-free-use", "CC-BY-4.0", "ODbL-1.0")
 # Sources whose licence asks every user of the data to name them: source → (licence, text).
-ATTRIBUTION = {m.FETCHER: (m.LICENCE, m.ATTRIBUTION) for m in (ciqual, fineli, matvaretabellen, tfda)}
+ATTRIBUTION = {m.FETCHER: (m.LICENCE, m.ATTRIBUTION) for m in (ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda)}
 
 
 def tagged(record, value) -> dict | None:
