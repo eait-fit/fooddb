@@ -1,6 +1,7 @@
 """API keys, scopes and rate limits on REST, MCP over HTTP and the admin. Database suite."""
 
 import hashlib
+import hmac
 import re
 
 import pytest
@@ -93,8 +94,22 @@ def test_keys_are_stored_as_hashes_only():
     assert k.startswith("fdb_")
     with engine().connect() as conn:
         row = conn.execute(text("select * from api_key")).mappings().one()
-    assert row["token_hash"] == hashlib.sha256(k.encode()).hexdigest()
+    assert row["token_hash"] == hmac.new(b"test-only-secret", k.encode(), "sha256").hexdigest()
+    assert row["token_hash"] != hashlib.sha256(k.encode()).hexdigest()
     assert not any(k in str(v) or k[4:] in str(v) for v in row.values())
+
+
+def test_keys_are_keyed_to_the_server_secret(monkeypatch):
+    from fooddb import auth
+
+    k = key("read")
+    assert auth.lookup(k) is not None
+    monkeypatch.setenv("FOODDB__BACKEND__SECRET_KEY", "another-secret")
+    assert auth.lookup(k) is None
+    monkeypatch.delenv("FOODDB__BACKEND__SECRET_KEY")
+    assert auth.lookup(k) is None
+    with pytest.raises(RuntimeError, match="FOODDB__BACKEND__SECRET_KEY"):
+        auth.create("no-secret", ["read"])
 
 
 def test_cli_prints_a_key_once_and_lists_and_revokes_it():

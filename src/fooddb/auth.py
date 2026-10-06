@@ -1,5 +1,6 @@
 """API keys, scopes and rate limits. REST routes, the MCP route and the admin login all check
-callers here. A key is stored as its SHA-256 hash only: the token is shown once, at creation."""
+callers here. A key is stored only as an HMAC-SHA256 under FOODDB__BACKEND__SECRET_KEY: the token is
+shown once, at creation, and a new secret retires every key."""
 
 import hashlib
 import hmac
@@ -31,8 +32,13 @@ def _default_limit() -> int:
     return int(os.environ.get("FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE", "60"))
 
 
-def _hash(token: str) -> str:
-    return hashlib.sha256(token.encode()).hexdigest()
+def _secret() -> bytes | None:
+    s = os.environ.get("FOODDB__BACKEND__SECRET_KEY")
+    return s.encode() if s else None
+
+
+def _hash(token: str, secret: bytes) -> str:
+    return hmac.new(secret, token.encode(), hashlib.sha256).hexdigest()
 
 
 def _caller(row) -> Caller:
@@ -43,10 +49,13 @@ def _caller(row) -> Caller:
 def create(name: str, scopes: list[str], rate_limit: int | None = None) -> str:
     if not scopes or not set(scopes) <= IMPLIES.keys():
         raise ValueError(f"scopes must be some of {', '.join(IMPLIES)}")
+    secret = _secret()
+    if secret is None:
+        raise RuntimeError("set FOODDB__BACKEND__SECRET_KEY before creating API keys")
     token = "fdb_" + secrets.token_urlsafe(32)
     with engine().begin() as conn:
         conn.execute(text("insert into api_key (name, token_hash, scopes, rate_limit) values (:n, :h, :s, :r)"),
-                     {"n": name, "h": _hash(token), "s": sorted(set(scopes)), "r": rate_limit})
+                     {"n": name, "h": _hash(token, secret), "s": sorted(set(scopes)), "r": rate_limit})
     return token
 
 
@@ -64,12 +73,15 @@ def revoke(name: str) -> bool:
 
 
 def lookup(token: str) -> Caller | None:
-    """The active key for this token, marked as used now."""
+    """The active key for this token, marked as used now. None without a server secret."""
+    secret = _secret()
+    if secret is None:
+        return None
     with engine().begin() as conn:
         row = conn.execute(text("""
             update api_key set last_used_at = now() where token_hash = :h and revoked_at is null
             returning id, name, scopes, rate_limit
-        """), {"h": _hash(token)}).mappings().first()
+        """), {"h": _hash(token, secret)}).mappings().first()
     return _caller(row) if row else None
 
 

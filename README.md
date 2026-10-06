@@ -76,7 +76,8 @@ A field is `null` when the record that names the product has no value for it. Wi
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
 
 The review queue is also in a browser at `$(./dev url)/admin`. Log in with an `admin` key in the
-password field. `/admin` needs `FOODDB__BACKEND__SECRET_KEY`, which signs its login cookie.
+password field. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
+admin login cookie.
 
 ## Authentication
 

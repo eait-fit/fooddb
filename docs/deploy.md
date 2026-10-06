@@ -43,8 +43,9 @@ The optional full Open Food Facts dump needs much more disk. See
    sed -i "s/^FOODDB__BACKEND__SECRET_KEY=$/FOODDB__BACKEND__SECRET_KEY=$(openssl rand -hex 32)/" .env
    ```
 
-   Git ignores `deploy/.env`. Do not commit it. `FOODDB__BACKEND__SECRET_KEY` signs the login
-   cookie of `/admin`. Without it, the API does not serve `/admin`. The other settings in the file
+   Git ignores `deploy/.env`. Do not commit it. `FOODDB__BACKEND__SECRET_KEY` keys the stored
+   API key hashes and signs the login cookie of `/admin`. Without it, no API key works and the API
+   does not serve `/admin`. A new secret retires every API key. The other settings in the file
    are optional.
 
 3. Build the image and start the stack:
@@ -95,7 +96,7 @@ docker compose exec worker fooddb status
 
 ## API keys
 
-fooddb has its own API keys. The API keeps only the SHA-256 hash of a key. It shows the key
+fooddb has its own API keys. The API keeps only an HMAC-SHA256 of a key, under `FOODDB__BACKEND__SECRET_KEY`. It shows the key
 one time, when you create it. A key has one or more scopes:
 
 | Scope | Gives access to |
@@ -198,7 +199,7 @@ All the settings are in `deploy/.env`:
 | `FOODDB__DEPLOY__BIND` | `127.0.0.1` | The host address where Compose publishes the API port. |
 | `FOODDB__DEPLOY__PORT` | `8000` | The host port of the API. |
 | `FOODDB__BACKEND__MATCH_THRESHOLD` | `0.95` | The Splink match probability that merges two products. |
-| `FOODDB__BACKEND__SECRET_KEY` | none | Signs the `/admin` login cookie. Without it, the API does not serve `/admin`. |
+| `FOODDB__BACKEND__SECRET_KEY` | none | Keys the API key hashes and signs the `/admin` login cookie. Without it, no API key works and the API does not serve `/admin`. A new secret retires every key. |
 | `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` | `false` | `true`: reads need an API key too. See [API keys](#api-keys). |
 | `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` | `60` | Requests per minute per key, and per client IP for reads without a key. |
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
