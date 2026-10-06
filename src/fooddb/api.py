@@ -6,7 +6,7 @@ from contextlib import asynccontextmanager
 from datetime import date
 from typing import Annotated, Any, Literal
 
-from fastapi import APIRouter, FastAPI, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse
 from mcp.server import MCPServer
 from mcp.server.mcpserver import Context
@@ -16,7 +16,7 @@ from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 
-from fooddb import admin, auth, export, gtin, health, resolve, review
+from fooddb import admin, auth, dump, export, gtin, health, resolve, review
 from fooddb.db import engine
 
 
@@ -29,6 +29,7 @@ async def lifespan(_app: FastAPI):
 app = FastAPI(title="fooddb", version="0.3.0", lifespan=lifespan)
 READ = [auth.require("read")]
 app.include_router(export.router, dependencies=READ)
+app.include_router(dump.router, dependencies=[Depends(auth.counted)])  # ODbL: public, whatever reads need
 
 
 def _pids(sql: str, **params) -> list[int]:

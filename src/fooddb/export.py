@@ -43,16 +43,19 @@ def built_at(day: date) -> datetime | None:
         return conn.execute(text("select built_at from snapshot where day = :d"), {"d": day}).scalar_one_or_none()
 
 
-def lines(day: date, include: str | None) -> Iterator[bytes]:
-    """NDJSON lines, read in one repeatable-read transaction: a rebuild or merge mid-export is not seen."""
+def products(day: date, include: str | None) -> Iterator[dict]:
+    """Every product of the day, read in one repeatable-read transaction: a rebuild or merge mid-export is not seen."""
     scope = "all" if include == "off" else "core"
     with engine().connect() as conn:
         conn.execution_options(isolation_level="REPEATABLE READ")
         with conn.begin():
             ids = conn.execute(text(IDS_SQL), {"day": day, "scope": scope}, execution_options={"yield_per": BATCH})
             for batch in ids.scalars().partitions(BATCH):
-                for p in resolve.products(list(batch), include, day, conn):
-                    yield to_json(p) + b"\n"
+                yield from resolve.products(list(batch), include, day, conn)
+
+
+def lines(day: date, include: str | None) -> Iterator[bytes]:
+    return (to_json(p) + b"\n" for p in products(day, include))
 
 
 def gzipped(chunks: Iterator[bytes]) -> Iterator[bytes]:
