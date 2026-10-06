@@ -130,3 +130,96 @@ def test_cli_export_writes_the_same_lines_gzipped(monkeypatch, tmp_path):
     assert r.exit_code == 0, r.output
     assert [json.loads(line) for line in gzip.decompress(out.read_bytes()).splitlines()] == export(
         "2026-10-01", include="off")
+
+
+# What resolve.products did on main before #31: every product of a batch through the merge-following
+# SNAPSHOT_SQL, and the record filter as exists-or-not-exists. The export must stay byte-identical to it.
+LEGACY_VISIBLE = """(exists (select 1 from observation o where o.food_id = food.id and o.status = 'accepted')
+       or not exists (select 1 from observation o where o.food_id = food.id))"""
+
+
+def legacy_products(pids: list[int], include: str | None, day: date, conn) -> list[dict]:
+    from sqlalchemy import text
+
+    from fooddb import resolve
+
+    pids = resolve.canonical(pids, conn)
+    params = {"pids": pids, "layers": resolve.layers_for(include), "scope": "all" if include == "off" else "core"}
+    records = conn.execute(text(resolve.RECORDS_SQL.replace(resolve.VISIBLE, LEGACY_VISIBLE)), params).mappings().all()
+    values = conn.execute(text(resolve.SNAPSHOT_SQL), params | {"day": day}).mappings().all()
+    by_pid: dict[int, dict] = {}
+    for r in records:
+        p = by_pid.setdefault(r["product_id"], {"id": r["product_id"], "records": [], "gtin14": [],
+                                                "snapshot": day.isoformat()})
+        if not p["records"]:
+            p.update({f: resolve.tagged(r, r[f]) for f in resolve.FIELDS}, flags=resolve.tagged(r, list(r["flags"])),
+                     per_100={})
+        p["records"].append(r["id"])
+        if r["gtin14"] and r["gtin14"] not in [g["value"] for g in p["gtin14"]]:
+            p["gtin14"].append(resolve.tagged(r, r["gtin14"]))
+    for v in values:
+        if v["product_id"] in by_pid:
+            by_pid[v["product_id"]]["per_100"][v["nutrient"]] = {
+                "value": float(v["value_per_100"]), "unit": v["unit"], "basis": v["basis"],
+                "source": v["source"], "licence": v["licence"], "observed_at": v["observed_at"],
+            }
+    for found in by_pid.values():
+        found["seals"] = resolve.seals(found["per_100"])
+        found["attribution"] = resolve.attribution(found)
+    return [by_pid[p] for p in pids if p in by_pid]
+
+
+def legacy_export(day: date, include: str | None) -> bytes:
+    from pydantic_core import to_json
+    from sqlalchemy import text
+
+    from fooddb import export as ex
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        ids = conn.execute(text(ex.IDS_SQL), {"day": day, "scope": "all" if include == "off" else "core"}).scalars().all()
+        return b"".join(to_json(p) + b"\n" for i in range(0, len(ids), 2)
+                        for p in legacy_products(ids[i:i + 2], include, day, conn))
+
+
+def test_export_bytes_equal_the_per_batch_resolve_it_replaced(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import export as ex
+    from fooddb import ingest
+    from fooddb.db import engine
+    from tests.test_db import ingest_labels, kcal_record, label_record, merge
+
+    ingest.run("t", "r1", [
+        kcal_record("fdc:1", "fdc", 229.0, 2026), kcal_record("ciqual:1", "ciqual", 229.0, 2025),
+        kcal_record("off:1", "off", 300.0, 2026), kcal_record("off:2", "off", 310.0, 2025),
+        rec(id="fdc:9", name="Lentils, raw", values=HUMMUS | {"SUGAR": 2.0, "NA": 500.0}),
+        rec(**OFF), rec(id="fdc:7", name="Held back"), rec(id="fdc:8", name="No values yet", values={}),
+    ])
+    ingest_labels(label_record("label:aa", 260.0, 1, True))
+    with engine().begin() as conn:
+        conn.execute(text("update observation set status = 'pending' where food_id = 'fdc:7'"))
+    build_on(monkeypatch, "2026-10-01")
+    merge("fdc:1", "ciqual:1", "label:aa", "fdc:7", "fdc:8")  # after the build: the survivor has merged-in ids
+    merge("off:1", "off:2")
+    monkeypatch.setattr(ex, "BATCH", 2)  # batches that mix products with and without merged-in ids
+    with engine().connect() as conn:
+        assert conn.execute(text("select count(*) from product where merged_into is not null")).scalar_one() == 5
+    day = date(2026, 10, 1)
+    for include in (None, "off"):
+        got = b"".join(ex.lines(day, include))
+        assert got and got == legacy_export(day, include)
+    assert b"fdc:7" not in got and b"fdc:8" in got  # a record with only pending values is held back; one with none is not
+    assert b'"value":260.0' in b"".join(ex.lines(day, None))  # the approved label read won
+
+
+def test_a_snapshot_build_analyzes_its_table(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    with engine().connect() as conn:
+        assert conn.execute(text("select reltuples from pg_class where relname = 'snapshot_value'")).scalar_one() > 0

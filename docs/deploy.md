@@ -351,8 +351,9 @@ UTC. It dumps the newest final snapshot day to the `fooddb_dumps` volume, and ke
 reads need one. The ODbL requires this. [data-licence.md](data-licence.md) has the terms.
 
 - To write a dump now: `docker compose exec worker fooddb dump odbl`.
-- The dump reads about 1000 products per second. The worker stops a task after 1 hour. With the
-  full OFF dump loaded (about 4 million products), the job does not finish in the worker. Then run
+- The dump reads about 7000 products per second. The worker stops a task after 1 hour. With the
+  full OFF dump loaded (about 4 million products), that rate gives about 10 minutes. If a slow
+  disk or a small database cache makes the job last more than 1 hour, run
   `docker compose exec worker fooddb dump odbl` from a host cron job on the 1st of each month.
 - A stopped run leaves a `.part` file. The next run replaces it. The API never serves it.
 

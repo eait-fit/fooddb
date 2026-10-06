@@ -100,8 +100,10 @@ two sources that agree. Brand uploads get no such override.
   `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. Built: one snapshot per UTC day. A day is
   final when it is over. Until then, a rebuild on the same day replaces it. A merge after a build
   keeps the values that the build froze. Records and names are read live, not frozen. Built: the
-  export of one day as NDJSON, for consumers that keep a local copy. Not built: the eait job that
-  loads it.
+  export of one day as NDJSON, for consumers that keep a local copy. Built
+  ([#31](https://github.com/eait-fit/fooddb/issues/31)): the export reads about 7000 products per
+  second, the same at 20,000 and at 100,000 products. At that rate the monthly ODbL dump of the full
+  OFF layer fits in the worker's task limit. Not built: the eait job that loads it.
 - Customers may store what they fetch.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
   carries a licence tag. Built: each served field, each barcode and each nutrient value has its
