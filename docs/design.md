@@ -21,12 +21,12 @@ check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
 (`/v1/review`, two MCP tools, SQLAdmin at `/admin`), API keys with scopes and rate limits, and the
-monthly ODbL dump of the OFF layer at `/v1/dumps`. The checks run before the insert and set each
+monthly ODbL dump of the OFF layer at `/v1/dumps`, and lane 4: label reads through the model port,
+with the photo as evidence and a review page that shows it. The checks run before the insert and set each
 value's status. Each merge is logged. A reviewer splits a wrong merge through the API, MCP or
 SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
 Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
-hand-set), the review page with the photo
-([#12](https://github.com/eait-fit/fooddb/issues/12)), lanes 3 and 4, and the label-photo loop.
+hand-set), lane 3, and the eait side of the label-photo loop.
 
 ### Intake lanes
 
@@ -39,7 +39,8 @@ hand-set), the review page with the photo
    company prefix, and a label photo is attached. GDSN data pools come later. Not built: [#13](https://github.com/eait-fit/fooddb/issues/13).
 4. **Own label reads**: a vision model reads a label photo into structured nutrition, through
    the model port (below). Photos come from eait users who opt in, from brands, and from customers'
-   local runs. Not built: [#12](https://github.com/eait-fit/fooddb/issues/12).
+   local runs. Built ([#12](https://github.com/eait-fit/fooddb/issues/12)): `POST /v1/labels` takes a
+   photo and queues a read. Each read becomes the observations of the record `label:<sha256>`.
 
 ### Normalise
 
@@ -53,8 +54,8 @@ hand-set), the review page with the photo
 
 Append-only. Each row records one field value, its source, when it was observed, and the evidence
 (source record, photo). Nothing is overwritten, so any served value can be traced back.
-Built without the photo: evidence is the source record only
-([#12](https://github.com/eait-fit/fooddb/issues/12)). Unchanged values are not stored again, and a
+Built: a label value names its photo by SHA-256 in `observation.evidence`. For the other sources,
+the evidence is the source record. Unchanged values are not stored again, and a
 field that disappears from a newer record is stored as withdrawn.
 
 ### Checks
@@ -75,8 +76,8 @@ verified label read outranks a crowd edit, which outranks an older table value.
 
 Built for nutrient values: a value much older than the newest one loses (default 730 days). Then
 the value that most sources agree with wins, then the source rank, then the newest value. Label
-reads have a rank above FDC, but no fetcher writes them yet
-([#12](https://github.com/eait-fit/fooddb/issues/12)).
+reads have a rank above FDC. Agreement still comes before rank, so a label read that is alone
+loses to two sources that agree. Whether a verified label read always wins is not decided.
 
 ### Snapshot and serving
 
@@ -101,16 +102,19 @@ All LLM work, label reads included, goes through one port with two backends:
   CLI or MCP server locally, they can do label reads on their own key, and the results come back
   as observations.
 
-Not built: [#12](https://github.com/eait-fit/fooddb/issues/12).
+Built ([#12](https://github.com/eait-fit/fooddb/issues/12)) for label reads: `openrouter`,
+`claude-cli` and `codex-cli`, plus a `demo` backend. The MCP tool `read_label` runs on stdio with
+the user's own Claude or Codex subscription. It can submit the read to a fooddb server, where every
+value waits for review. Not built: a Devin backend.
 
 ## Stack
 
 Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI listing), SQLAlchemy
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
-process. The review UI is SQLAdmin plus one custom page. Built: everything except the custom photo
-page ([#12](https://github.com/eait-fit/fooddb/issues/12)). The MCP server has the read tools and
+process. The review UI is SQLAdmin plus one custom page, **Label reads**, which shows the photo next
+to the values read from it and the values served now. Built. The MCP server has the read tools and
 two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. Built: our own API keys
-with the scopes `read`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
+with the scopes `read`, `contribute`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
 `/admin` login check them. stdio is local and needs no key. Not built: the RapidAPI listing. The
 API already accepts RapidAPI's proxy secret as a `read` key.
 

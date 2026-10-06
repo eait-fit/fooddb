@@ -16,6 +16,8 @@ flowchart LR
     reviewer["Reviewer<br/>browser at /admin, admin key"]
     local["Local MCP client<br/>Claude Desktop, Claude Code"]
     anyone["Anyone<br/>ODbL dump users"]
+    contributor["Label contributor<br/>eait, contribute key"]
+    agents["Claude Code, Codex CLI<br/>the user's own subscription"]
     proxy["TLS reverse proxy<br/>Caddy"]
     subgraph fooddb["fooddb: one image, three roles"]
         api["API<br/>fooddb serve"]
@@ -23,7 +25,9 @@ flowchart LR
         cli["CLI<br/>fooddb run, status, lookup, export, dump, keys, mcp"]
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
         dumps[("Dump directory<br/>ODbL dumps, manifests")]
+        photos[("Photo directory<br/>label photos by SHA-256")]
     end
+    openrouter["OpenRouter<br/>vision model"]
     fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
@@ -31,12 +35,18 @@ flowchart LR
     consumer -->|"HTTPS, GET /v1/snapshots/{day}/export"| proxy
     reviewer -->|HTTPS| proxy
     anyone -->|"HTTPS, GET /v1/dumps, no key"| proxy
+    contributor -->|"HTTPS, POST /v1/labels"| proxy
     local -->|"stdio: fooddb mcp"| cli
     api -->|"read, write review decisions, key use, rate counters"| db
     worker -->|read, write| db
     cli -->|read, write| db
     worker -->|"write, monthly"| dumps
     api -->|read| dumps
+    api -->|"write label photos"| photos
+    worker -->|"read label photos"| photos
+    worker -->|"HTTPS, label reads"| openrouter
+    cli -->|"subprocess: read_label on stdio"| agents
+    cli -->|"HTTPS, submit=true: POST /v1/labels"| proxy
     worker -->|"HTTPS, weekly check"| fdc
     worker -->|"HTTPS, every 6 h"| offd
     cli -->|"HTTPS, manual: fooddb run off-dump"| offdump
@@ -44,8 +54,8 @@ flowchart LR
 
 fooddb has three processes, and all of them come from one image (`Dockerfile:1`):
 
-- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its only data write is a
-  review decision. It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)),
+- The **API** (`fooddb serve`, `cli.py:43`) serves REST over FastAPI. Its data writes are a
+  review decision, and a label photo with its queued read (see [Label reads](#label-reads)). It also serves the MCP server over Streamable HTTP at `/mcp` (see [MCP](#mcp)),
   and the SQLAdmin review UI at `/admin` (see [Review](#review)). It checks API keys and rate
   limits on each request (see [Authentication](#authentication)).
 - The **worker** (`fooddb worker`, `cli.py:26`) runs the fetches, the match job and the snapshot.
@@ -57,6 +67,9 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   snapshot to a file with the same code as the export endpoint (`cli.py:107`). `fooddb keys`
   creates, lists and revokes API keys (`cli.py:128`). `fooddb dump odbl` writes the ODbL dump now
   (`cli.py:152`).
+
+The worker reads label photos through the model port: OpenRouter on a server, or a local agent
+(see [Label reads](#label-reads)).
 
 The worker fetches from two upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:54`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
@@ -82,6 +95,7 @@ flowchart TB
         end
         vol[["volume fooddb_pgdata18"]]
         dvol[["volume fooddb_dumps"]]
+        pvol[["volume fooddb_photos"]]
     end
     up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
     client -->|"HTTPS 443"| caddy
@@ -89,6 +103,8 @@ flowchart TB
     dbc --- vol
     wk -->|"write"| dvol
     apic -->|"read only"| dvol
+    apic -->|"write"| pvol
+    wk -->|"read only"| pvol
     mig -->|5432| dbc
     apic -->|5432| dbc
     wk -->|5432| dbc
@@ -112,6 +128,8 @@ Thin arrows are network traffic. Thick arrows are the start order.
 - `worker` writes the ODbL dumps to the `dumps` volume at `/app/dumps`. `api` mounts the same
   volume read-only and serves it (`deploy/docker-compose.yml:49`, `deploy/docker-compose.yml:61`).
   The image creates `/app/dumps` for the `fooddb` user, so a new volume is writable.
+- `api` writes the label photos to the `photos` volume at `/app/photos`. `worker` mounts it
+  read-only and reads the photos from it. The image creates `/app/photos` for the `fooddb` user.
 - Compose publishes the API port on the loopback address only (`deploy/docker-compose.yml:41`).
   A TLS reverse proxy on the host forwards to it. [deploy.md](deploy.md#tls-with-caddy) shows the
   Caddy configuration.
@@ -251,6 +269,8 @@ flowchart LR
     q --> rest["GET /v1/review"]
     q --> mq["MCP review_queue"]
     obs --> adm["SQLAdmin /admin<br/>pending values, read only"]
+    obs --> lab["SQLAdmin /admin/labels<br/>photo, read values, served values"]
+    lab -->|"accept or reject links"| adm
     md["MCP decide_review"] --> post["POST /v1/review/{observation_id}"]
     post --> d["review.decide()"]
     adm -->|"accept or reject action, by admin"| d
@@ -272,9 +292,94 @@ flowchart LR
   (`api.py:110`). The split route `POST /v1/products/{id}/split` is on it too. The MCP tools `review_queue`, `decide_review` and `split_product` call the same handlers. Over
   HTTP, they need the `review` scope too (`api.py:152`). The SQLAdmin actions call `review.decide`
   with `by` set to the name of the admin key that logged in (`admin.py:54`).
+- The **Label reads** page at `/admin/labels` shows each label record with pending values
+  (`admin.py:97`). It shows the photo, each value read from it, and the value that the API serves
+  now for the product. Each row links to the accept and reject actions of **Pending values**.
+  `review.queue(records="label:%")` gives the rows. The photo route `/admin/labels/photo/{sha}`
+  needs the admin login too.
 - The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
   `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
   cannot decide a value.
+
+### Label reads
+
+```mermaid
+flowchart TD
+    up["Contributor<br/>contribute key"] -->|"POST /v1/labels<br/>photo, barcode, name"| post["api.submit_label"]
+    post -->|"magic bytes JPEG, PNG, WebP<br/>at most 10 MiB"| store["photos.store()"]
+    store --> pdir[("Photo directory<br/>sha256[:2]/sha256")]
+    post -->|"202: task, photo, record"| up
+    post -->|"enqueue read_label"| q[("pq_tasks")]
+    q --> job["jobs.read_label<br/>forked child"]
+    job --> proc["intake.process()"]
+    pdir --> proc
+    proc -->|"labels.reader()"| port{"FOODDB__BACKEND__LABEL_READER"}
+    port --> orr["OpenRouter<br/>JSON schema, 2 retries"]
+    port --> demo["demo<br/>confidence 0"]
+    orr --> read["LabelRead<br/>per-100 values, basis, serving,<br/>name, brand, barcode, lang, confidence"]
+    demo --> read
+    read --> rec["intake.record()<br/>label:sha256, source label, core layer"]
+    rec --> ing["ingest.run()<br/>checks as for every source"]
+    ing --> obs[("observation<br/>evidence = sha256")]
+    ing -.->|"queue match"| match["match_products"]
+    local["Local MCP client"] -->|"stdio: read_label, base64 photo"| tool["api.read_label_tool"]
+    tool -->|"claude -p, codex exec<br/>photo as a temp file"| agent["Local agent<br/>own subscription"]
+    agent --> tool
+    tool -.->|"submit=true: photo and read"| post
+```
+
+The model port is the package `labels` (`labels/__init__.py:1`). A `LabelReader` has one method,
+`read(image, mime, hints)`, which returns a `LabelRead` (`labels/__init__.py:24`). `reader()`
+selects the backend by `FOODDB__BACKEND__LABEL_READER` (`labels/__init__.py:103`). The default is
+`openrouter` when `FOODDB__BACKEND__LLM_API_KEY` is set, else `demo`.
+
+| Backend | How it reads | Where it runs |
+|---|---|---|
+| `openrouter` | One HTTPS call with the photo as a data URL and a strict JSON schema (`labels/backends.py:23`). It retries a connection error, a 429 and a 5xx twice, and fails at once on another 4xx. The model is `FOODDB__BACKEND__LLM_MODEL`, default `qwen/qwen3-vl-235b-a22b-instruct`. | The worker on a server |
+| `claude-cli` | `claude -p` with `--json-schema`, `--output-format json` and only the `Read` tool. The photo is a file in a temporary directory (`labels/backends.py:66`). | The user's machine, with `fooddb mcp` |
+| `codex-cli` | `codex exec --image` with `--output-schema`, in a read-only sandbox. The last message is read from a file. | The user's machine, with `fooddb mcp` |
+| `demo` | A canned read with confidence 0 (`labels/backends.py:111`). | Tests, and a server without an LLM key |
+
+All backends answer with the same schema (`labels/__init__.py:47`). `parse` accepts one JSON
+object, at most inside one code fence (`labels/__init__.py:84`). It refuses unknown nutrient codes,
+values that are not finite numbers, extra fields, and a confidence outside 0 to 1. An agent CLI has
+300 s, else the read fails.
+
+The model gives each value under the code of the label's regime: `CHOAVL` for a label whose
+carbohydrate excludes fibre, `CHOCDF` for a label whose carbohydrate includes it. Values are per
+100 g or per 100 ml. Sodium is in mg. A label that prints only salt gives sodium as salt × 400.
+
+The photo:
+
+- `photos.check` reads the first bytes. Only JPEG, PNG and WebP pass (415 otherwise). The limit is
+  10 MiB (413 otherwise) (`labels/photos.py:29`). The file name and the content type that the
+  client sends are not used.
+- `photos.store` writes the photo once, under its SHA-256, in `FOODDB__BACKEND__PHOTO_DIR`
+  (`labels/photos.py:45`). A second upload of the same photo writes nothing.
+
+The ingest (`labels/intake.py:21`):
+
+- The record id is `label:<sha256>`, so one photo is one source record. Its source is `label`,
+  its layer `core`, and its licence `LicenseRef-fooddb` (fooddb's own terms).
+- Each observation has `evidence` set to the SHA-256 of the photo (`ingest.py:159`).
+- The barcode that the client sends wins over the barcode that the model reads. Each must be a
+  valid global GTIN.
+- The checks run as for every source. A field that a failed check implicates is `pending`.
+- A server read with a confidence below `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` (default 0.9)
+  makes every value `pending`. The record gets the flag `label-low-confidence`.
+- A read that the client did and sent (`read` in the form) is not read again. Every value is
+  `pending`, and the record gets the flag `label-client-read`.
+- `jobs.read_label` queues a match pass after the ingest (`jobs.py:64`). Thus a label record with
+  the barcode of a known product joins that product.
+
+`GET /v1/labels/{task}` returns the state of the pq task: `pending`, `running`, `completed` or
+`failed`, with the error (`api.py:187`). Both label routes need the `contribute` scope.
+
+The MCP tool `read_label` runs only on stdio (`api.py:283`). Over HTTP it answers with a tool
+error. It needs no key and no database. It reads the photo with `claude-cli` by default, or with
+the `reader` it is given. It returns the read. With `submit=true`, `labels.submit` posts the photo
+and the read to `FOODDB__BACKEND__SUBMIT_URL` with the key `FOODDB__BACKEND__SUBMIT_KEY`
+(`labels/__init__.py:117`).
 
 ### Match records into products
 
@@ -403,6 +508,7 @@ first. The index `product_merged_into_idx` keeps this lookup fast.
 | Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
 | ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:80`) | BATCH |
+| Label read | `read_label` | `POST /v1/labels` (`api.py:165`) | NORMAL |
 
 pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
 
@@ -512,6 +618,7 @@ erDiagram
         text reviewed_by "null until a review decision"
         timestamptz reviewed_at
         text review_note
+        text evidence "sha256 of the label photo, null for other sources"
     }
     snapshot {
         date day PK
@@ -568,7 +675,7 @@ erDiagram
         bigint id PK
         text name "unique among active keys"
         text token_hash UK "PBKDF2-HMAC-SHA256, never the token"
-        text_array scopes "read, review, admin"
+        text_array scopes "read, contribute, review, admin"
         int rate_limit "null means the default"
         timestamptz created_at
         timestamptz last_used_at
@@ -581,7 +688,7 @@ erDiagram
     }
 ```
 
-Seven Alembic migrations make this schema:
+Nine Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -597,6 +704,8 @@ Seven Alembic migrations make this schema:
 - `0007` adds `api_key` and the unlogged table `rate_limit` (`alembic/versions/0007_api_keys.py:16`).
   A crash can lose the counts of one minute, which is acceptable for a rate limit.
 - `0008` adds `merge_log` and `cannot_link` (`alembic/versions/0008_merge_log_and_cannot_link.py:16`).
+- `0009` adds `observation.evidence`, and the scope `contribute` to the check on `api_key.scopes`
+  (`alembic/versions/0009_observation_evidence.py:19`).
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -837,6 +946,7 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 | `review_queue` | `review_queue` | `GET /v1/review` |
 | `decide_review` | `decide_review` | `POST /v1/review/{observation_id}` |
 | `split_product` | `split_product` | `POST /v1/products/{product_id}/split` |
+| `read_label` | `labels.reader().read`, stdio only | `POST /v1/labels` (with `submit=true`) |
 
 - `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
   Each value keeps its `licence` tag, as in REST.
@@ -849,7 +959,8 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
   off, and the reverse proxy sets the host.
 - Over HTTP, every request to `/mcp` passes the same key check as a REST read (`api.py:214`). The
   review tools also need the `review` scope (`api.py:152`). Over stdio, no key is checked: the
-  process is local and trusted. `decide_review` and `split_product` are its only writes. See [Review](#review).
+  process is local and trusted. `decide_review` and `split_product` are its only writes.
+  `read_label` writes nothing locally. See [Label reads](#label-reads). See [Review](#review).
 
 ### Authentication
 
@@ -876,10 +987,11 @@ flowchart LR
 
 - A token is `fdb_` and 32 random bytes in URL-safe base64. `api_key` stores only its PBKDF2-HMAC-SHA256 under `FOODDB__BACKEND__SECRET_KEY`
   (`auth.py:43`). A lookup updates `last_used_at` in the same statement (`auth.py:66`).
-- The scopes are `read`, `review` and `admin`. `review` implies `read`. `admin` implies both
-  (`auth.py:15`).
+- The scopes are `read`, `contribute`, `review` and `admin`. `contribute` implies `read`.
+  `review` implies `read` and `contribute`. `admin` implies all of them (`auth.py:16`).
 - `auth.require(scope)` is a FastAPI dependency (`auth.py:131`). The data reads and the export
-  router use `read` (`api.py:30`). `review_router` uses `review` (`api.py:110`).
+  router use `read` (`api.py:30`). `review_router` uses `review` (`api.py:110`). `label_router` uses
+  `contribute` (`api.py:162`).
 - `auth.counted` is the dependency of `/v1/dumps` (`auth.py:145`). It authenticates the caller
   and counts the request against the rate limit, but checks no scope. Thus the dumps are open,
   also when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is `true`.
@@ -913,40 +1025,33 @@ flowchart LR
         review["Review queue<br/>API, MCP, SQLAdmin"]
         snap[("snapshot_value")]
         exp["Snapshot export<br/>NDJSON per day"]
+        labels["POST /v1/labels<br/>model port: OpenRouter, Claude, Codex"]
     end
     tables["Other composition tables<br/>CIQUAL, BLS, Fineli, MFDS, MEXT"]
     brand["Brand upload form<br/>GS1 prefix check"]
     eaitp["eait label photos<br/>no user id"]
-    port["Model port"]
-    orouter["OpenRouter"]
-    agents["Local agents<br/>Claude, Codex, Devin"]
-    photo["Photo page<br/>photo next to the fields that differ"]
+    devin["Local agent Devin"]
     listing["RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
     tables -.->|"source rows"| obs
     brand -.->|"source brand"| obs
-    eaitp -.-> port
-    port -.-> orouter
-    port -.-> agents
-    port -.->|"source label"| obs
+    eaitp -.-> labels
+    devin -.-> labels
+    labels -->|"source label"| obs
     pend --> review
     review -->|"accept or reject"| obs
-    review -.-> photo
     listing -.->|"X-RapidAPI-Proxy-Secret"| auth
     auth --> api
     snap --> exp
     exp -.->|"nightly refresh"| eaitc
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,port,orouter,agents,photo,listing,eaitc planned
+    class tables,brand,eaitp,devin,listing,eaitc planned
 ```
 
-- **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
-  check, and label reads from eait photos. The resolver already ranks the sources `brand` and
-  `label` above `fdc` (`resolve.py:17`), but no fetcher writes them.
-- **Model port.** One port for all LLM work, with OpenRouter for the hosted pipeline and local
-  agents for customers' own runs.
-- **Review photo page.** A page that shows the label photo next to the fields that differ. It needs
-  photo evidence on observations ([#12](https://github.com/eait-fit/fooddb/issues/12)).
+- **Intake.** Other national composition tables, and the brand upload form with its GS1 prefix
+  check. The resolver already ranks the source `brand` above `label` and `fdc` (`resolve.py:17`),
+  but no fetcher writes it. eait does not send label photos to `POST /v1/labels` yet.
+- **Model port.** A Devin backend. The port has OpenRouter, Claude Code and Codex CLI.
 - **Checks.** Ranges per category, and front-of-pack warning seals.
 - **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
   listing's proxy secret as a `read` key. See [Authentication](#authentication).
