@@ -1,6 +1,5 @@
 """Developer accounts: sign-in tokens, the keys an account owns, prepaid credits and Stripe purchases."""
 
-import re
 import secrets
 
 from sqlalchemy import text
@@ -10,12 +9,14 @@ from fooddb.db import engine
 
 LOGIN_MINUTES = 15
 MAX_ACTIVE_KEYS = 10
-EMAIL = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
 
 
 def normalize(email: str) -> str | None:
     email = email.strip().lower()
-    return email if len(email) <= 254 and EMAIL.fullmatch(email) else None
+    local, _, domain = email.partition("@")
+    ok = (len(email) <= 254 and local and "@" not in domain and "." in domain.strip(".") and domain == domain.strip(".")
+          and not any(c.isspace() for c in email))
+    return email if ok else None
 
 
 def ensure(email: str) -> int:

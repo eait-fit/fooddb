@@ -58,11 +58,11 @@ def _cookie(response, request: Request, name: str, value: str, **kw) -> None:
 
 def page(request: Request, name: str, status: int = 200, **context):
     """A page with its CSRF token: a random cookie, and in each form the MAC of it, which only we can make."""
-    seed = request.cookies.get(CSRF) or secrets.token_urlsafe(24)
-    response = TEMPLATES.TemplateResponse(request, name, {"csrf": _mac(seed), "error": None} | context,
+    fresh = None if CSRF in request.cookies else secrets.token_urlsafe(24)
+    response = TEMPLATES.TemplateResponse(request, name, {"csrf": _mac(fresh or request.cookies[CSRF]), "error": None} | context,
                                           status_code=status, headers=HEADERS)
-    if CSRF not in request.cookies:
-        _cookie(response, request, CSRF, seed)
+    if fresh:
+        _cookie(response, request, CSRF, fresh)
     return response
 
 
