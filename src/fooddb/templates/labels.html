@@ -2,20 +2,20 @@
 {% block content %}
 <div class="col-12">
   {% if not items %}
-  <div class="card"><div class="card-body">No label read waits for review.</div></div>
+  <div class="card"><div class="card-body">No label read or brand upload waits for review.</div></div>
   {% endif %}
   {% for item in items %}
-  {% set sha = item.record[6:] %}
+  {% set sha = item.photo %}
   <div class="card mb-3">
     <div class="card-header">
-      <h3 class="card-title">{{ item.name }} <span class="text-muted">{{ item.record[:18] }}… · product {{ item.product_id }}</span></h3>
+      <h3 class="card-title">{{ item.name }} <span class="text-muted">{{ item.record[:18] }}{% if item.record|length > 18 %}…{% endif %} · product {{ item.product_id }}</span></h3>
       <div class="card-actions">{% for check in item.checks %}<span class="badge bg-yellow-lt me-1">{{ check }}</span>{% endfor %}</div>
     </div>
     <div class="card-body row">
       <div class="col-md-5">
-        <a href="{{ url_for('admin:view-label-photo', sha=sha) }}" target="_blank">
+        {% if sha %}<a href="{{ url_for('admin:view-label-photo', sha=sha) }}" target="_blank">
           <img src="{{ url_for('admin:view-label-photo', sha=sha) }}" alt="label photo" class="img-fluid rounded border">
-        </a>
+        </a>{% endif %}
       </div>
       <div class="col-md-7">
         <table class="table table-vcenter">

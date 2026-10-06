@@ -379,8 +379,9 @@ flowchart LR
 - The **Label reads** page at `/admin/labels` shows each label record with pending values
   (`admin.py:97`). It shows the photo, each value read from it, and the value that the API serves
   now for the product. Each row links to the accept and reject actions of **Pending values**.
-  `review.queue(records="label:%")` gives the rows. The photo route `/admin/labels/photo/{sha}`
-  needs the admin login too.
+  `review.queue(records=("label:%", "brand:%"))` gives the rows. The page shows brand uploads too
+  (see [Brand uploads](#brand-uploads)). The photo is the `evidence` of the newest pending value.
+  The photo route `/admin/labels/photo/{sha}` needs the admin login too.
 - The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
   `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
   cannot decide a value.
@@ -465,6 +466,56 @@ the `reader` it is given. It returns the read. With `submit=true`, `labels.submi
 and the read to `FOODDB__BACKEND__SUBMIT_URL` with the key `FOODDB__BACKEND__SUBMIT_KEY`
 (`labels/__init__.py:117`).
 
+### Brand uploads
+
+```mermaid
+flowchart TD
+    user["Brand user<br/>contribute key"] -->|"POST /v1/brands/uploads<br/>multipart"| api["api.submit_brand_upload"]
+    user -->|"/brands/upload<br/>HTML form, key in the post"| form["api.brand_form_post"]
+    form -->|"auth.lookup, auth.authorize"| sub
+    api --> sub["brands.submit()"]
+    sub --> parse["brands.parse()<br/>GTIN, values, basis, serving"]
+    sub --> store["photos.store()<br/>magic bytes, 10 MiB, SHA-256"]
+    sub --> gs1["gs1.check()<br/>FOODDB__BACKEND__GS1_VERIFIER"]
+    gs1 -->|"verified"| checks["checks only"]
+    gs1 -->|"not_verified, unknown"| held["every value pending<br/>flag brand-unverified"]
+    checks --> ing["ingest.run()<br/>brand:gtin14, source brand"]
+    held --> ing
+    ing --> obs[("observation<br/>evidence = sha256")]
+    ing -.->|"queue match"| match["match_products"]
+```
+
+A brand upload is the same shape as a label read with another source. The photo store, the
+`evidence` column, the ingest path, the review queue and the **Label reads** page are the same.
+
+- `POST /v1/brands/uploads` needs the `contribute` scope. The body is multipart: `barcode`, `name`
+  and `brand` (all required), `basis` (`100g` or `100ml`, default `100g`), one field per INFOODS
+  code of the label port, `serving_text`, `serving_g`, and the required `photo`. A blank field is
+  absent. At least one value is required. A value must be a finite number and not negative.
+  `LabelRead` validates the rest. The route answers 201 with the record id, the photo hash, the
+  GS1 verdict and `review` (`required` or `checks only`).
+- The barcode must be a valid global GTIN (422 otherwise). The photo gets the same checks as a
+  label photo: 422 when it is missing or empty, 415 for another type, 413 above 10 MiB. The route
+  stores the photo only after the other fields are valid.
+- The record id is `brand:<gtin14>`: one record for each barcode. Its source is `brand`, its layer
+  `core` and its licence `LicenseRef-fooddb`. The resolver ranks `brand` first.
+- `gs1.py` is the verification port. A `Gs1Verifier` has one method, `verify(gtin14,
+  claimed_brand)`, which answers `verified`, `not_verified` or `unknown`. `gs1.check` calls the
+  verifier that `FOODDB__BACKEND__GS1_VERIFIER` names. A verifier that fails or gives another
+  answer counts as `unknown`. The only backend is `none`, which always answers `unknown`: access
+  to GS1 data has a cost that is still an open decision (see [decisions.md](decisions.md)).
+- Only `verified` lets the checks decide. For `not_verified` and `unknown`, every value is `pending`
+  and the record gets the flag `brand-unverified`. `not_verified` also gets `brand-gs1-mismatch`.
+- A second upload for a barcode with a served value does not change the name, brand, language and
+  serving that are served, if its verdict is not `verified`. Its values wait for review.
+- The upload queues a match pass, so a brand record joins the product that has its barcode.
+- `/brands/upload` is the same upload as an HTML form. The form has a password field for the key
+  and no JavaScript. The server looks the key up, checks the `contribute` scope (this counts the
+  rate limit) and calls `brands.submit`. It sets no cookie and keeps no session, so a cross-site
+  post has no session to ride on. The response has `Cache-Control: no-store` and `Referrer-Policy:
+  no-referrer`. The page never shows the key again. The key is in the body of the post, not in the
+  URL, so the access log does not have it.
+
 ### Match records into products
 
 `match.run` loads every record with its newest accepted energy and macros (`match.py:25`). Splink
@@ -548,6 +599,14 @@ The resolver picks one value per product and nutrient (`resolve.py:24`):
       (`resolve.py:20`). `fdc`, `ciqual`, `fineli` and `matvaretabellen` share one rank. Thus a
       table value wins over a crowd value, and between two tables the newer value wins.
    4. **Newest value**, then the smallest value, so that the result is always the same.
+
+A record has no part in the product until one of its values is accepted. `resolve.VISIBLE` is the
+condition: the record has an accepted observation, or it has no observation at all (nothing to
+hold back). A record that fails it does not name the product. Its barcode, category and flags
+are not served, and the barcode, record and name lookups do not find it. A product with no visible
+record is not returned: the lookups answer 404, the search lists nothing, and the export has no
+line for it. Thus an unverified brand upload and a low-confidence label read serve nothing before a
+reviewer accepts a value.
 
 The live read, the snapshot build and the merge-follow of the snapshot read all use `pick_sql`.
 Thus the rule has one definition. The rule applies to nutrient values only. The name, brand and
@@ -1094,7 +1153,8 @@ flowchart LR
   `review` implies `read` and `contribute`. `admin` implies all of them (`auth.py:16`).
 - `auth.require(scope)` is a FastAPI dependency (`auth.py:131`). The data reads and the export
   router use `read` (`api.py:30`). `review_router` uses `review` (`api.py:110`). `label_router` uses
-  `contribute` (`api.py:162`).
+  `contribute` (`api.py:162`). `brand_router` uses `contribute` too. The HTML form at
+  `/brands/upload` has no dependency: it checks the key from its post itself.
 - `auth.counted` is the dependency of `/v1/dumps` (`auth.py:145`). It authenticates the caller
   and counts the request against the rate limit, but checks no scope. Thus the dumps are open,
   also when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` is `true`.
@@ -1129,15 +1189,15 @@ flowchart LR
         snap[("snapshot_value")]
         exp["Snapshot export<br/>NDJSON per day"]
         labels["POST /v1/labels<br/>model port: OpenRouter, Claude, Codex"]
+        brand["Brand upload form<br/>POST /v1/brands/uploads, GS1 port"]
     end
     tables["Other composition tables<br/>BLS, Frida, CoFID, MFDS, MEXT, TFDA"]
-    brand["Brand upload form<br/>GS1 prefix check"]
     eaitp["eait label photos<br/>no user id"]
     devin["Local agent Devin"]
     listing["RapidAPI listing"]
     eaitc["eait local copy<br/>food_ref, off_product"]
     tables -.->|"source rows"| obs
-    brand -.->|"source brand"| obs
+    brand -->|"source brand"| obs
     eaitp -.-> labels
     devin -.-> labels
     labels -->|"source label"| obs
@@ -1148,7 +1208,7 @@ flowchart LR
     snap --> exp
     exp -.->|"nightly refresh"| eaitc
     classDef planned stroke-dasharray: 5 5
-    class tables,brand,eaitp,devin,listing,eaitc planned
+    class tables,eaitp,devin,listing,eaitc planned
 ```
 
 - **Intake.** Other national composition tables: Frida
@@ -1156,9 +1216,10 @@ flowchart LR
   ([#36](https://github.com/eait-fit/fooddb/issues/36)), Korea MFDS
   ([#37](https://github.com/eait-fit/fooddb/issues/37)), Japan MEXT
   ([#38](https://github.com/eait-fit/fooddb/issues/38)), Taiwan TFDA
-  ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS. Also the brand upload form with
-  its GS1 prefix check. The resolver already ranks the source `brand` above `label` and the tables
-  (`resolve.py:20`), but no fetcher writes it. eait does not send label photos to `POST /v1/labels` yet.
+  ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS. eait does not send label photos to
+  `POST /v1/labels` yet.
+- **GS1 verifier.** The brand upload form is built, but its verifier is `none`, so every brand
+  upload waits for review. A real backend needs a decision on the cost of GS1 access.
 - **Model port.** A Devin backend. The port has OpenRouter, Claude Code and Codex CLI.
 - **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
   listing's proxy secret as a `read` key. See [Authentication](#authentication).

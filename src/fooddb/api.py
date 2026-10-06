@@ -6,6 +6,7 @@ import binascii
 import os
 from contextlib import asynccontextmanager
 from datetime import date
+from pathlib import Path
 from typing import Annotated, Any, Literal
 
 from fastapi import APIRouter, Depends, FastAPI, Form, HTTPException, Query, Request, UploadFile
@@ -17,8 +18,9 @@ from pydantic import BaseModel, Field
 from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
+from starlette.templating import Jinja2Templates
 
-from fooddb import admin, auth, dump, export, gtin, health, jobs, labels, resolve, review
+from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, resolve, review
 from fooddb.db import engine
 from fooddb.labels import photos
 
@@ -195,6 +197,63 @@ def label_status(task_id: int) -> dict:
 
 
 app.include_router(label_router)
+
+
+# Brand uploads: product values and a label photo from the brand. Needs a key with the contribute scope.
+brand_router = APIRouter(tags=["brands"], dependencies=[auth.require("contribute")])
+
+
+async def _brand_submit(request: Request) -> dict:
+    form = await request.form()
+    photo = form.get("photo")
+    data = await photo.read(photos.MAX_BYTES + 1) if hasattr(photo, "read") else b""
+    return await run_in_threadpool(brands.submit, {k: v for k, v in form.items() if isinstance(v, str)}, data)
+
+
+@brand_router.post("/v1/brands/uploads", status_code=201)
+async def submit_brand_upload(request: Request) -> dict:
+    """Multipart form: `barcode`, `name`, `brand`, `basis` (100g or 100ml), per-100 values as one field per INFOODS
+    code (ENERC_KCAL, ENERC_KJ, PROCNT, FAT, CHOCDF, CHOAVL, SUGAR, FASAT, FIBTG, NA in mg), `serving_text`,
+    `serving_g`, and the label `photo` (JPEG, PNG or WebP). Unless GS1 verifies the brand, every value waits for review."""
+    try:
+        return await _brand_submit(request)
+    except brands.Refused as e:
+        raise HTTPException(e.status, str(e))
+
+
+app.include_router(brand_router)
+
+# The same upload as an HTML form for brand users. The key is a password field of the post (no session, no cookie).
+TEMPLATES = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
+NO_STORE = {"Cache-Control": "no-store", "Referrer-Policy": "no-referrer"}
+
+
+def _brand_page(request: Request, status: int = 200, **context):
+    context = {"nutrients": brands.NUTRIENTS, "form": {}, "error": None, "done": None} | context
+    return TEMPLATES.TemplateResponse(request, "brand_upload.html", context, status_code=status, headers=NO_STORE)
+
+
+@app.get("/brands/upload", include_in_schema=False)
+def brand_form(request: Request):
+    return _brand_page(request)
+
+
+@app.post("/brands/upload", include_in_schema=False)
+async def brand_form_post(request: Request):
+    form = await request.form()
+    typed = {k: v for k, v in form.items() if isinstance(v, str) and k != "key"}
+    token = str(form.get("key", "")).strip()
+    caller = await run_in_threadpool(auth.lookup, token) if token else None
+    try:
+        if caller is None:
+            raise HTTPException(401, "a valid API key is required")
+        await run_in_threadpool(auth.authorize, caller, "contribute")
+        done = await _brand_submit(request)
+    except HTTPException as e:
+        return _brand_page(request, e.status_code, form=typed, error=e.detail)
+    except brands.Refused as e:
+        return _brand_page(request, e.status, form=typed, error=str(e))
+    return _brand_page(request, done=done)
 admin.mount(app)
 
 

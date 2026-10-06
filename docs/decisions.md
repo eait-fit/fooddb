@@ -38,11 +38,13 @@ Technical decisions. Business decisions are tracked outside this repo.
 | 2026-10-06 | CIQUAL cell values: a number is the value. `traces` is 0, because the amount is too small to measure and 0 is what a label shows for it. `< x` (under the limit of quantification x) gives no value, not x/2 or x: a bound is not a measurement, and an invented value would pass the checks and win in the resolver. `-` (not analysed) gives no value. A field with no value falls back to the other sources of the product. The same rule applies to other tables that use trace and limit marks. |
 | 2026-10-06 | Trust rank for nutrient values, highest first: `brand`, `label`, the composition tables (`fdc`, `ciqual`, `fineli`, `matvaretabellen`, one rank), `off`. Tables are curated and have a method and a date, so they outrank crowd edits. They share a rank because none of them is more trusted than the others for its own foods. Between tables, agreement and then the newest value decide. |
 | 2026-10-06 | New sources: CIQUAL (`etalab-2.0`), Fineli (`CC-BY-4.0`) and Matvaretabellen (`NLOD-2.0`) go into the core layer. Their licences ask for attribution. Thus each product lists the attribution of the sources of its served fields, and [data-licence.md](data-licence.md) states the texts. FDC Branded Foods (CC0) is off by default (`FOODDB__BACKEND__FETCH_FDC_BRANDED`), because it is about 3 GB of JSON. Fineli is off by default (`FOODDB__BACKEND__FETCH_FINELI`), because fineli.fi refuses automated downloads. A source that is off is not fetched, not scheduled and not in `/healthz`. |
+| 2026-10-06 | An unverified brand upload is fully pending. The GS1 check is a port, and its only backend is `none` (answers `unknown`), because GS1 access has a cost that is not decided. Until a verifier answers `verified`, every value of an upload waits for review, with the flag `brand-unverified`. A record with no accepted value does not name a product, tag its barcode or answer a lookup. Thus nothing that a brand uploads, and no low-confidence label read, is served before review. |
 | 2026-10-04 | Health means freshness: each fetcher's last successful run within its schedule, shown in `/healthz` and `./dev status`. |
 
 ## Open
 
 1. **GS1 prefix check.** GS1's public GEPIR lookup has mostly been replaced by "Verified by GS1",
-   which may require a paid GS1 membership. Find out what access costs.
+   which may require a paid GS1 membership. Find out what access costs. The brand upload form
+   waits for the answer: its verifier is `none` until then.
 2. **Legal review.** How far ODbL reaches into served answers, and whether training a model on
    OFF's CC BY-SA photos is allowed.
