@@ -23,7 +23,7 @@ Splink matching (not in the diagram above: it runs between observations and the 
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
 (`/v1/review`, two MCP tools, SQLAdmin at `/admin`), API keys with scopes and rate limits, and the
 monthly ODbL dump of the OFF layer at `/v1/dumps`, and lane 4: label reads through the model port,
-with the photo as evidence and a review page that shows it. The checks run before the insert and set each
+with the photo as evidence and a review page that shows it, and the admin panel (Overview, Jobs, Requests and Users pages, and a request log). The checks run before the insert and set each
 value's status. Each merge is logged. A reviewer splits a wrong merge through the API, MCP or
 SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
 Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
@@ -66,7 +66,8 @@ Append-only. Each row records one field value, its source, when it was observed,
 (source record, photo). Nothing is overwritten, so any served value can be traced back.
 Built: a label value names its photo by SHA-256 in `observation.evidence`. For the other sources,
 the evidence is the source record. Unchanged values are not stored again, and a
-field that disappears from a newer record is stored as withdrawn.
+field that disappears from a newer record is stored as withdrawn. Built ([#28](https://github.com/eait-fit/fooddb/issues/28)):
+a record seen again at the same `observed_at` can also withdraw a field.
 
 ### Checks
 
@@ -108,6 +109,7 @@ two sources that agree. Brand uploads get no such override.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
   carries a licence tag. Built: each served field, each barcode and each nutrient value has its
   source and licence. The non-nutrient fields and the barcodes also name their source record.
+  Built ([#24](https://github.com/eait-fit/fooddb/issues/24)): every served number is a JSON number.
 - Search uses `pg_trgm`. Known limit: short CJK names match poorly.
 
 ## Model port
@@ -129,7 +131,7 @@ value waits for review. Not built: a Devin backend.
 Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI listing), SQLAlchemy
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
 process. The review UI is SQLAdmin plus one custom page, **Label reads**, which shows the photo next
-to the values read from it and the values served now. Built. The MCP server has the read tools and
+to the values read from it and the values served now. Built. Built ([#48](https://github.com/eait-fit/fooddb/issues/48)): the admin panel with the pages Overview, Jobs, Requests and Users, a request log of route templates, and actions as POST forms with a CSRF token. The MCP server has the read tools and
 two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. Built: our own API keys
 with the scopes `read`, `contribute`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
 `/admin` login check them. stdio is local and needs no key. Not built: the RapidAPI listing. The

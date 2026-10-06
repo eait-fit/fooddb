@@ -6,12 +6,13 @@ from functools import cache
 from loguru import logger
 from pq import PQ, Priority
 
-from fooddb import health
+from fooddb import health, requestlog
 from fooddb.db import database_url
 from fooddb.fetchers import ciqual, fdc, fineli, matvaretabellen, off
 
 TABLES = {m.FETCHER: m for m in (ciqual, fineli, matvaretabellen)}  # national composition tables
 WEEKLY = "0 3 * * 1"  # Monday 03:00 UTC
+PRUNE_CRON = "15 3 * * *"
 # FDC Branded is about 3 GB of JSON: it may run longer than the worker's default task limit.
 RUNTIME = {"fdc-branded": 6 * 3600}
 
@@ -74,6 +75,10 @@ def dump_odbl() -> None:
     logger.info("odbl dump: " + ("no final snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
 
 
+def prune_request_log() -> None:
+    logger.info(f"request log: {requestlog.prune()} rows past {requestlog.retention_days()} days deleted")
+
+
 def read_label(photo: str, hints: dict[str, str], read: str | None = None) -> None:
     from fooddb.labels import intake
 
@@ -98,6 +103,7 @@ def schedule() -> None:
     q.schedule(fetch_off_deltas, run_every=timedelta(hours=6))
     q.schedule(build_snapshot, cron="30 2 * * *")  # nightly: what the API serves the next day
     q.schedule(dump_odbl, cron="0 4 1 * *", priority=Priority.BATCH)  # monthly ODbL dump of the OFF layer
+    q.schedule(prune_request_log, cron=PRUNE_CRON, priority=Priority.BATCH)
     # A fresh install fills itself instead of waiting for the weekly cron: each source never
     # checked is fetched now, and a first snapshot follows (BATCH priority runs after the fetches).
     # A source switched off (health.OPTIONAL) is neither fetched nor scheduled.

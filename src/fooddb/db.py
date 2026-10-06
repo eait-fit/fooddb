@@ -24,7 +24,6 @@ from sqlalchemy import (
     Numeric,
     Table,
     Text,
-    UniqueConstraint,
     create_engine,
     false,
     func,
@@ -85,7 +84,6 @@ observation = Table(
     Column("reviewed_at", DateTime(timezone=True)),
     Column("review_note", Text),
     Column("evidence", Text),  # sha256 of the label photo the value was read from; null: the source record
-    UniqueConstraint("food_id", "nutrient", "source", "observed_at", name="observation_once"),
     Index("observation_pending_idx", "food_id", postgresql_where=text("status = 'pending'")),
 )
 
