@@ -117,6 +117,12 @@ def by_id(key_id: int) -> Caller | None:
 
 
 def authenticate(request: Request) -> Caller:
+    """The caller of this request, also left in the request state for the request log."""
+    request.state.caller = caller = _authenticate(request)
+    return caller
+
+
+def _authenticate(request: Request) -> Caller:
     """A presented key must be valid; without one, a matching RapidAPI proxy secret reads, else anonymous."""
     h = request.headers
     token = h.get("x-api-key") or (h.get("authorization", "").removeprefix("Bearer ").strip() or None)
