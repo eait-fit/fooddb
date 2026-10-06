@@ -53,6 +53,7 @@ def records(payload: dict, key: str):
         yield ingest.Record(
             id=f"fdc:{f['fdcId']}", source="fdc", layer="core", licence="CC0-1.0",
             name=f["description"], lang="en", values=values,
+            categories=[c] if (c := (f.get("foodCategory") or {}).get("description")) else [],
             observed_at=datetime.strptime(published, "%m/%d/%Y" if "/" in published else "%Y-%m-%d").replace(tzinfo=UTC),
         )
 
