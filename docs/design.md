@@ -84,13 +84,15 @@ agent accepts or rejects each one, and the decision records who decided and when
 ### Resolver
 
 Chooses a winning value per field from trust rank, recency and agreement between sources. A
-verified label read outranks a crowd edit, which outranks an older table value.
+label read that a reviewer approved always wins. Otherwise a label read outranks a crowd edit,
+which outranks an older table value.
 
-Built for nutrient values: a value much older than the newest one loses (default 730 days). Then
+Built for nutrient values: an approved label read wins first, and the newest of several wins.
+Otherwise a value much older than the newest one loses (default 730 days). Then
 the value that most sources agree with wins, then the source rank, then the newest value. FDC
 and the national tables share one rank, above OFF. Label reads have a rank above the tables.
-Agreement still comes before rank, so a label read that is alone loses to two sources that agree.
-Whether a verified label read always wins is not decided.
+For other label reads, agreement still comes before rank, so a label read that is alone loses to
+two sources that agree. Brand uploads get no such override.
 
 ### Snapshot and serving
 
