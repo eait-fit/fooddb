@@ -75,7 +75,7 @@ The worker reads label photos through the model port: OpenRouter on a server, or
 (see [Label reads](#label-reads)).
 
 The worker fetches from five upstream sources. Each value keeps the licence of its source:
-`CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:18`),
+`CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:16`),
 `CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`), `NLOD-2.0` for Matvaretabellen
 (`fetchers/matvaretabellen.py:12`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
 FDC Branded Foods and Fineli are off by default (`health.py:24`). See [Fetch](#fetch).
@@ -196,10 +196,10 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   ml (`fetchers/fdc.py:49`). Branded Foods is off by default: `FOODDB__BACKEND__FETCH_FDC_BRANDED`
   switches it on.
 - The CIQUAL fetcher finds the newest English Excel file on the ANSES download page
-  (`fetchers/ciqual.py:98`). The file name is the ref, and its date is the observation date. It
-  reads the sheet as a stream with the standard library (`fetchers/ciqual.py:57`). A cell
+  (`fetchers/ciqual.py:67`). The file name is the ref, and its date is the observation date. It
+  reads the sheet as a stream with the standard library (`fetchers/xlsx.py:38`). A cell
   `traces` is 0. A cell `< x` (under the limit of quantification) and a cell `-` give no value
-  (`fetchers/ciqual.py:39`). See [decisions.md](decisions.md).
+  (`fetchers/ciqual.py:36`). See [decisions.md](decisions.md).
 - The Fineli fetcher downloads the open data zip at `FOODDB__BACKEND__FINELI_URL` and reads its
   CSV files (`fetchers/fineli.py:35`). The URL has no release name, so the SHA-256 of the zip is
   the ref (`fetchers/fineli.py:55`). The observation date is the date of `component_value.csv` in
@@ -222,7 +222,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   product without a valid global GTIN is skipped (`fetchers/off.py:129`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
   `SUGAR`, `FASAT`, `FIBTG` and `NA`. Each fetcher maps its source codes in one table
-  (`fetchers/off.py:23`, `fetchers/fdc.py:26`, `fetchers/ciqual.py:24`, `fetchers/fineli.py:24`,
+  (`fetchers/off.py:23`, `fetchers/fdc.py:26`, `fetchers/ciqual.py:22`, `fetchers/fineli.py:24`,
   `fetchers/matvaretabellen.py:18`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
   from one code to another, except kJ to kcal (below).
