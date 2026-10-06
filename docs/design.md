@@ -66,7 +66,8 @@ Append-only. Each row records one field value, its source, when it was observed,
 (source record, photo). Nothing is overwritten, so any served value can be traced back.
 Built: a label value names its photo by SHA-256 in `observation.evidence`. For the other sources,
 the evidence is the source record. Unchanged values are not stored again, and a
-field that disappears from a newer record is stored as withdrawn.
+field that disappears from a newer record is stored as withdrawn. Built ([#28](https://github.com/eait-fit/fooddb/issues/28)):
+a record seen again at the same `observed_at` can also withdraw a field.
 
 ### Checks
 
@@ -106,6 +107,7 @@ two sources that agree. Brand uploads get no such override.
 - Responses contain only core data by default. `include=off` adds the OFF layer. Every field
   carries a licence tag. Built: each served field, each barcode and each nutrient value has its
   source and licence. The non-nutrient fields and the barcodes also name their source record.
+  Built ([#24](https://github.com/eait-fit/fooddb/issues/24)): every served number is a JSON number.
 - Search uses `pg_trgm`. Known limit: short CJK names match poorly.
 
 ## Model port

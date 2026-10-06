@@ -133,8 +133,7 @@ def _write(records: list[Record]) -> tuple[int, int]:
         n_obs = 0
         for i in range(0, len(obs), OBS_ROWS_PER_INSERT):
             n_obs += len(conn.execute(
-                pg_insert(observation).values(obs[i:i + OBS_ROWS_PER_INSERT])
-                .on_conflict_do_nothing(constraint="observation_once").returning(observation.c.id)
+                insert(observation).values(obs[i:i + OBS_ROWS_PER_INSERT]).returning(observation.c.id)
             ).all())
     return len(foods), n_obs
 
@@ -149,7 +148,9 @@ order by food_id, nutrient, observed_at desc, id desc
 
 def _observations(r: Record, failed: dict[str, set[str]], known, stored: dict) -> list[dict]:
     """Only what changed: new or different values, and fields the source has dropped (withdrawn,
-    stored as null). A record older than what we already have adds nothing."""
+    stored as null). A record older than what we already have adds nothing. This diff is what makes
+    a re-run idempotent; rows at the same observed_at are ordered by id, the newest row wins.
+    ponytail: no unique key backs it, so two workers on one record could store the same row twice."""
     if known is not None and known.source_updated_at and r.observed_at < known.source_updated_at:
         return []
     changed = {k: v for k, v in r.values.items()

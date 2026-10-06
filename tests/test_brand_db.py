@@ -145,7 +145,7 @@ def test_a_verified_upload_is_served_and_ranks_above_the_tables(monkeypatch):
     p = client().get("/v1/products/4006381333931").json()["items"][0]
     assert p["per_100"]["ENERC_KCAL"]["source"] == "brand" and p["per_100"]["ENERC_KCAL"]["value"] == 229
     assert p["name"]["source"] == "brand" and p["gtin14"][0]["value"] == GTIN
-    assert float(p["serving_g"]["value"]) == 30
+    assert p["serving_g"]["value"] == 30.0
 
 
 def test_a_verified_upload_still_goes_through_the_checks(monkeypatch):
@@ -162,7 +162,7 @@ def test_an_unverified_second_upload_changes_neither_the_served_values_nor_the_s
     assert upload(contributor(), ENERC_KCAL="300", name="Evil Hummus", serving_g="99").status_code == 201
     p = client().get("/v1/products/4006381333931").json()["items"][0]
     assert p["per_100"]["ENERC_KCAL"]["value"] == 229
-    assert p["name"]["value"] == "Acme Hummus" and float(p["serving_g"]["value"]) == 30
+    assert p["name"]["value"] == "Acme Hummus" and p["serving_g"]["value"] == 30.0
 
 
 def test_the_upload_queues_a_match_pass(monkeypatch):

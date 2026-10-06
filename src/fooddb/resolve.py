@@ -97,8 +97,8 @@ class NoSnapshot(LookupError):
 VISIBLE = """(exists (select 1 from observation o where o.food_id = food.id and o.status = 'accepted')
        or not exists (select 1 from observation o where o.food_id = food.id))"""
 RECORDS_SQL = f"""
-select product_id, id, source, licence, gtin14, name, brand, lang, serving_text, serving_g, category, flags,
-       source_updated_at
+select product_id, id, source, licence, gtin14, name, brand, lang, serving_text,
+       serving_g::float8 as serving_g, category, flags, source_updated_at
 from food
 where product_id = any(:pids) and layer = any(:layers) and {VISIBLE}
 order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last

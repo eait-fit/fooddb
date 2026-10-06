@@ -269,7 +269,9 @@ For each batch, `_write` does these steps (`ingest.py:104`):
    check names go into `food.flags`.
 3. It upserts the `food` row. An older file cannot overwrite newer metadata (`ingest.py:139`).
 4. It inserts observations only for values that changed, and a null value for each field that the
-   source removed (`ingest.py:158`). A duplicate observation is ignored (`ingest.py:145`).
+   source removed (`ingest.py:149`). A record seen again with the same `observed_at` is compared in the
+   same way, so an unchanged field stores nothing and a dropped field stores its withdrawal. Of several
+   rows with one `observed_at`, the newest `id` wins.
 
 The `observation` table is append-only. The code never deletes an observation. The only update is
 a review decision: it moves a `pending` observation to `accepted` or `rejected`, once
@@ -868,15 +870,15 @@ erDiagram
     }
     observation {
         bigint id PK
-        text food_id FK,UK
-        text nutrient UK "INFOODS tagname"
+        text food_id FK
+        text nutrient "INFOODS tagname"
         numeric value_per_100 "null means withdrawn"
         text unit
         text basis "100g or 100ml"
         text status "accepted, pending, rejected"
-        text source UK
+        text source
         text licence
-        timestamptz observed_at UK
+        timestamptz observed_at
         timestamptz ingested_at
         text reviewed_by "null until a review decision"
         timestamptz reviewed_at
@@ -1025,11 +1027,13 @@ Fourteen Alembic migrations make this schema:
   (`alembic/versions/0011_snapshot_value_approved.py:15`).
 - `0012` adds `account`, `purchase`, `login_token` and `usage_month`, and `api_key.account_id`
   (`alembic/versions/0012_developer_portal.py:15`).
+- `0013` drops the unique constraint `observation_once`, which dropped the withdrawal of a field when
+  a record was seen again at the same `observed_at` (`alembic/versions/0013_observation_same_time_rows.py:15`).
 - `0014` adds `request_log` with an index on `at`, and `admin_action`
   (`alembic/versions/0014_admin_panel.py:15`). Neither table has a foreign key, so the log keeps
   its rows if a key or an account goes away.
 
-The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
+`observation` has no unique key. The comparison in `_observations` makes a re-run idempotent.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
 `snapshot_value.product_id` has no foreign key. `fetch_run.fetcher` and `fetcher_check.fetcher`
 use the same names as the health report (`health.py:11`), but no constraint links them. pq creates
@@ -1105,6 +1109,8 @@ The product shape (API version 0.3.0):
 | `gtin14` | a list of `{value, source, licence, record}`, one per barcode |
 | `per_100` | per nutrient: `{value, unit, basis, source, licence, observed_at}` |
 | `seals` | `{value, source, licence, record}`: `value` maps each scheme to `{seal: true or false}`, `source` is `fooddb`, `record` is `null`. `null` when no seal has its inputs (`resolve.py:106`) |
+
+Every number in the response is a JSON number: `serving_g` and each `value` are read as floats, never as decimal strings. REST, MCP, the NDJSON export and the ODbL dump share this shape.
 
 Without `include=off`, only `core` records are read. Thus no field of a core response comes from
 the OFF layer, and no ODbL tag is in it.
