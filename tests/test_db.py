@@ -266,11 +266,31 @@ def test_every_served_field_carries_the_source_licence_and_record_it_came_from()
                                serving_g=90.0, extra_flags=["off-flag"], values={"ENERC_KCAL": 45.0})])
     off = {"source": "off", "licence": "ODbL-1.0", "record": "off:03256220000017"}
     p = product("off:03256220000017", "off")
-    assert float(p["serving_g"].pop("value")) == 90 and p["serving_g"] == off
+    assert p["serving_g"] == {"value": 90.0} | off
     assert {f: p[f] for f in FIELDS if f != "serving_g"} == {
         "name": {"value": "Pomme Pêche"} | off, "brand": None, "lang": {"value": "fr"} | off,
         "serving_text": {"value": "1 gourde"} | off, "flags": {"value": ["off-flag"]} | off}
     assert p["gtin14"] == [{"value": "03256220000017"} | off]
+
+
+def test_every_served_number_is_a_json_number_in_rest_and_export(monkeypatch):
+    import json
+
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="off:03256220000017", source="off", layer="off", licence="ODbL-1.0",
+                               gtin14="03256220000017", name="Pomme Pêche", serving_g=90.0,
+                               values={"ENERC_KCAL": 45.0, "FIBTG": 1.5})])
+
+    def numbers(p):
+        return [p["serving_g"]["value"], *(v["value"] for v in p["per_100"].values())]
+
+    served = product("off:03256220000017", "off")
+    assert len(numbers(served)) == 3 and all(type(n) is float for n in numbers(served))
+    build_on(monkeypatch, "2026-10-01")
+    r = client().get("/v1/snapshots/2026-10-01/export", params={"include": "off"})
+    [exported] = map(json.loads, r.text.splitlines())
+    assert numbers(exported) == numbers(served) and all(type(n) is float for n in numbers(exported))
 
 
 def test_a_core_response_carries_nothing_from_the_off_layer(monkeypatch):
