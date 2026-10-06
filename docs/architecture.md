@@ -706,7 +706,8 @@ hold back). A record that fails it does not name the product. Its barcode, categ
 are not served, and the barcode, record and name lookups do not find it. A product with no visible
 record is not returned: the lookups answer 404, the search lists nothing, and the export has no
 line for it. Thus an unverified brand upload and a low-confidence label read serve nothing before a
-reviewer accepts a value.
+reviewer accepts a value. The condition is one index lookup for each record. Thus the cost of a read
+does not grow with the size of the `observation` table.
 
 The live read, the snapshot build and the merge-follow of the snapshot read all use `pick_sql`.
 Thus the rule has one definition. The rule applies to nutrient values only. The name, brand and
@@ -723,7 +724,9 @@ has the source, the licence and the text to show (`resolve.py:103`).
 
 `snapshot.build` writes the resolved values of all products for the current UTC day, in one
 transaction (`snapshot.py:17`). It writes two scopes: `core` (core layer only) and `all` (core and
-OFF). The build takes no day argument. It writes only today (`snapshot.py:13`).
+OFF). The build takes no day argument. It writes only today (`snapshot.py:13`). It ends with
+`analyze snapshot_value`. Autovacuum analyzes the table a night later. Until then the planner does
+not know the size of the new day, and it joins the whole day for each read.
 
 A day is final when it is over. Until then, a second build on the same day replaces that day
 (`snapshot.py:22`). The nightly build and the rebuild after a fetcher's first data both write
@@ -744,6 +747,11 @@ snapshot keeps only the winner of each old id. Thus agreement counts those winne
 that the build saw. An approved label read always wins its old id, and `snapshot_value.approved`
 keeps that flag. Thus the override holds after a merge. The result is the value that the build would have frozen if the merge had come
 first. The index `product_merged_into_idx` keeps this lookup fast.
+
+Most products have nothing merged into them. For these, the stored value of each nutrient is the
+winner already, so a read takes it as stored (`resolve.STORED_SQL`). A read runs the merge-follow
+and `pick_sql` only for the products that `resolve.MERGED_SQL` finds with merged-in ids. The
+result is the same, and the plan does not depend on the table statistics.
 
 ## Jobs and schedules
 
@@ -1069,7 +1077,9 @@ sequenceDiagram
     end
     R->>P: records from food, always live
     alt a snapshot day is known
-        R->>P: values from snapshot_value, scope all
+        R->>P: which ids have merged-in ids?
+        R->>P: values from snapshot_value, scope all, as stored
+        R->>P: merge-follow and pick_sql, only for the ids with merged-in ids
     else no snapshot exists yet
         R->>P: resolve values live from observation
     end
@@ -1166,6 +1176,9 @@ dependency (`api.py:31`). See [Authentication](#authentication).
   (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
   (`export.py:53`). Each batch goes through `resolve.products`, so each line has the shape of
   `GET /v1/foods/{id}?snapshot=`. The process never holds the full export in memory.
+- The export reads about 7000 products per second, the same at 20,000 and at 100,000 products.
+  `scripts/bench_export.py` measures this on a development database that it seeds with synthetic
+  products ([#31](https://github.com/eait-fit/fooddb/issues/31)).
 - With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
 - `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
   ends in `.gz` (`cli.py:107`).

@@ -88,14 +88,26 @@ select * from ({pick_sql("""
 """)}) picked
 """
 
+# A product that nothing was merged into has one candidate per nutrient in the snapshot: its stored winner.
+# Only a product with merged-in ids needs SNAPSHOT_SQL. The rest is read as stored, by index, whatever the
+# table statistics say.
+MERGED_SQL = "select distinct merged_into from product where merged_into = any(:pids)"
+STORED_SQL = """
+select product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at, approved
+from snapshot_value
+where day = :day and scope = :scope and product_id = any(:pids)
+order by product_id, nutrient
+"""
+
 
 class NoSnapshot(LookupError):
     pass
 
 # A record shapes the product (name, barcode, category, flags) and is found by lookups only once one of
 # its values is accepted. A record with no observations at all has nothing to hold back.
-VISIBLE = """(exists (select 1 from observation o where o.food_id = food.id and o.status = 'accepted')
-       or not exists (select 1 from observation o where o.food_id = food.id))"""
+# One correlated lookup per record: written as exists-or-not-exists, the planner hashes the accepted
+# observations of the whole table once per query.
+VISIBLE = "((select bool_or(o.status = 'accepted') from observation o where o.food_id = food.id) is not false)"
 RECORDS_SQL = f"""
 select product_id, id, source, licence, gtin14, name, brand, lang, serving_text,
        serving_g::float8 as serving_g, category, flags, source_updated_at
@@ -174,7 +186,13 @@ def products(pids: list[int], include: str | None, snapshot: date | None = None,
     if snapshot and not conn.execute(text("select 1 from snapshot where day = :d"), {"d": snapshot}).first():
         raise NoSnapshot(f"no snapshot for {snapshot.isoformat()}")
     records = conn.execute(text(RECORDS_SQL), params).mappings().all()
-    values = conn.execute(text(SNAPSHOT_SQL if day else LIVE_SQL), params | {"day": day}).mappings().all()
+    if day:
+        merged = set(conn.execute(text(MERGED_SQL), params).scalars())
+        values = conn.execute(text(STORED_SQL), params | {"day": day, "pids": [p for p in pids if p not in merged]}).mappings().all()
+        if merged:
+            values += conn.execute(text(SNAPSHOT_SQL), params | {"day": day, "pids": sorted(merged)}).mappings().all()
+    else:
+        values = conn.execute(text(LIVE_SQL), params).mappings().all()
     by_pid: dict[int, dict] = {}
     for r in records:
         p = by_pid.setdefault(r["product_id"], {"id": r["product_id"], "records": [], "gtin14": [],
