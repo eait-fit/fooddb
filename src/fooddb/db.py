@@ -12,6 +12,7 @@ from functools import cache
 
 from sqlalchemy import (
     BigInteger,
+    Boolean,
     CheckConstraint,
     Column,
     DateTime,
@@ -25,6 +26,7 @@ from sqlalchemy import (
     Text,
     UniqueConstraint,
     create_engine,
+    false,
     func,
     text,
 )
@@ -130,6 +132,31 @@ cannot_link = Table(
     Column("note", Text),
     Column("created_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
     CheckConstraint("food_a < food_b", name="cannot_link_ordered"),
+)
+
+account = Table(
+    "account",
+    metadata,
+    Column("id", BigInteger, primary_key=True),
+    Column("email", Text, nullable=False, unique=True),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
+    Column("credits", BigInteger, nullable=False, server_default="0"),
+    Column("unlimited", Boolean, nullable=False, server_default=false()),
+    Column("stripe_customer_id", Text),
+    CheckConstraint("email = lower(email)", name="account_email_lower"),
+    CheckConstraint("credits >= 0", name="account_credits"),
+)
+
+purchase = Table(
+    "purchase",
+    metadata,
+    Column("id", BigInteger, primary_key=True),
+    Column("account_id", BigInteger, ForeignKey("account.id"), nullable=False),
+    Column("stripe_session_id", Text, nullable=False, unique=True),
+    Column("amount_cents", Integer, nullable=False),
+    Column("currency", Text, nullable=False),
+    Column("credits", BigInteger, nullable=False),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
 )
 
 

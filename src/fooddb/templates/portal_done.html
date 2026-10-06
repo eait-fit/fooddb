@@ -1,0 +1,11 @@
+{% extends "portal_base.html" %}
+{% block body %}
+{% if paid %}
+<h1>Thank you</h1>
+<p class="done">Your payment went through. The credits show on your account within a minute.</p>
+{% else %}
+<h1>Payment cancelled</h1>
+<p>Nothing was charged.</p>
+{% endif %}
+<p><a href="/portal">Back to your account</a></p>
+{% endblock %}

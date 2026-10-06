@@ -20,7 +20,7 @@ from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 from starlette.templating import Jinja2Templates
 
-from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, resolve, review
+from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, resolve, review
 from fooddb.db import engine
 from fooddb.labels import photos
 
@@ -35,6 +35,19 @@ app = FastAPI(title="fooddb", version="0.3.0", lifespan=lifespan)
 READ = [auth.require("read")]
 app.include_router(export.router, dependencies=READ)
 app.include_router(dump.router, dependencies=[Depends(auth.counted)])  # ODbL: public, whatever reads need
+
+
+app.include_router(portal.router)
+app.include_router(portal.webhook)
+
+
+def _buy_url() -> str:
+    return os.environ.get("FOODDB__BACKEND__PUBLIC_URL", "").rstrip("/") + "/portal/buy"
+
+
+@app.exception_handler(auth.OutOfCredits)
+def out_of_credits(_request: Request, e: auth.OutOfCredits) -> JSONResponse:
+    return JSONResponse({"detail": e.detail, "buy": _buy_url()}, 402)
 
 
 def _pids(sql: str, **params) -> list[int]:
@@ -375,7 +388,8 @@ class _Authenticated:
         try:
             caller = await run_in_threadpool(auth.check, Request(scope), "read")
         except HTTPException as e:
-            return await JSONResponse({"detail": e.detail}, e.status_code, e.headers)(scope, receive, send)
+            body = {"detail": e.detail} | ({"buy": _buy_url()} if isinstance(e, auth.OutOfCredits) else {})
+            return await JSONResponse(body, e.status_code, e.headers)(scope, receive, send)
         scope.setdefault("state", {})["caller"] = caller
         await self.app(scope, receive, send)
 
