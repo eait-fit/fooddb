@@ -30,16 +30,22 @@ def checkout(account_id: int, email: str, base: str) -> str:
     if not key:
         raise Unavailable("FOODDB__BACKEND__STRIPE_SECRET_KEY is unset")
     price = os.environ.get("FOODDB__BACKEND__STRIPE_PRICE_ID")
+    behavior = os.environ.get("FOODDB__BACKEND__STRIPE_TAX_BEHAVIOR", "inclusive").lower()
+    if behavior not in ("inclusive", "exclusive"):
+        raise Unavailable("FOODDB__BACKEND__STRIPE_TAX_BEHAVIOR must be inclusive or exclusive")
     item = {"line_items[0][quantity]": "1"} | (
         {"line_items[0][price]": price} if price else {
             "line_items[0][price_data][currency]": "eur",
             "line_items[0][price_data][unit_amount]": str(PACK_CENTS),
-            "line_items[0][price_data][product_data][name]": PACK_NAME})
+            "line_items[0][price_data][tax_behavior]": behavior,
+            "line_items[0][price_data][product_data][name]": PACK_NAME,
+            "line_items[0][price_data][product_data][tax_code]": os.environ.get("FOODDB__BACKEND__STRIPE_TAX_CODE", "txcd_10000000")})
     data = {"mode": "payment", "client_reference_id": str(account_id), "customer_email": email, "metadata[app]": "fooddb",
             "success_url": base + "/portal/success?session_id={CHECKOUT_SESSION_ID}", "cancel_url": f"{base}/portal/cancel",
             **item}
     if os.environ.get("FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX", "").lower() in ("1", "true", "yes"):
         data["automatic_tax[enabled]"] = "true"
+        data["billing_address_collection"] = "required"
     r = httpx.post("https://api.stripe.com/v1/checkout/sessions", data=data, headers={"Authorization": f"Bearer {key}"}, timeout=20)
     r.raise_for_status()
     return r.json()["url"]
