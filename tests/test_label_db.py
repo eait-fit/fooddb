@@ -62,7 +62,7 @@ def test_a_confident_label_read_becomes_observations_with_the_photo_as_evidence(
         ("accepted", "label", "LicenseRef-fooddb", sha)}
     p = product(rid)
     assert p["gtin14"][0]["value"] == "04006381333931" and p["name"]["value"] == "Hummus classic"
-    assert float(p["serving_g"]["value"]) == 30 and p["per_100"]["CHOAVL"]["source"] == "label"
+    assert p["serving_g"]["value"] == 30.0 and p["per_100"]["CHOAVL"]["source"] == "label"
 
 
 def test_label_fields_that_fail_a_check_wait_for_review(monkeypatch):
