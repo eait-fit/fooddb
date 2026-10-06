@@ -3,7 +3,7 @@
 A global food database: generic nutrition and branded products by barcode, kept current and
 served as a REST API, an MCP server and a CLI.
 
-**Status: early prototype.** Fetchers for USDA FDC, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, Japan MEXT and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), a REST API and an MCP server.
+**Status: early prototype.** Fetchers for USDA FDC, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, Japan MEXT, Taiwan TFDA and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), a REST API and an MCP server.
 
 - [docs/design.md](docs/design.md): the pipeline, the data model, sources and licences
 - [docs/architecture.md](docs/architecture.md): the parts, the deployment and the data flow as built, with diagrams
@@ -83,7 +83,7 @@ schemes count added sugars, fats and sodium, and fooddb has total values, so a s
 bound on the label. Its licence is the most restrictive among the values it reads.
 
 `attribution` lists the text that each source of a served field asks you to show: CIQUAL, CoFID,
-Fineli, Frida, Matvaretabellen and MEXT. See [docs/data-licence.md](docs/data-licence.md).
+Fineli, Frida, Matvaretabellen, MEXT and TFDA. See [docs/data-licence.md](docs/data-licence.md).
 
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
@@ -296,6 +296,7 @@ dump comes with the ODbL attribution and share-alike obligation: see
 | `table` frida | Frida, Danish food composition database (DTU), Excel from DTU Data | CC BY 4.0, attribution | weekly check |
 | `table` matvaretabellen | Matvaretabellen, Norwegian food composition table, JSON API | NLOD 2.0, attribution | weekly check |
 | `table` mext | Standard Tables of Food Composition in Japan, 8th edition, 2023 supplement (MEXT), Excel | free use, cite the source | weekly check |
+| `table` tfda | Taiwan food nutrient database (TFDA), CSV in a zip, found through data.gov.tw | Open Government Data License 1.0, attribution | weekly check |
 | `off` | Open Food Facts daily delta files | ODbL, `off` layer | every 6 hours |
 | `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |
 | `match` | Splink product matching | – | after every fetch that added data |

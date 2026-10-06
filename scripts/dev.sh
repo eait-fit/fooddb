@@ -370,6 +370,7 @@ cmd_fetch() {
       .venv/bin/fooddb enqueue table --source frida
       .venv/bin/fooddb enqueue table --source matvaretabellen
       .venv/bin/fooddb enqueue table --source mext
+      .venv/bin/fooddb enqueue table --source tfda
       .venv/bin/fooddb enqueue off --max-files 7
       ;;
     off|off-dump|fdc|table|match|snapshot) .venv/bin/fooddb enqueue "$@" ;;
