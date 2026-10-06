@@ -3,7 +3,7 @@
 A global food database: generic nutrition and branded products by barcode, kept current and
 served as a REST API, an MCP server and a CLI.
 
-**Status: early prototype.** Fetchers for USDA FDC and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), a REST API and an MCP server.
+**Status: early prototype.** Fetchers for USDA FDC, CIQUAL, Fineli, Matvaretabellen and Open Food Facts, async jobs on [pq](https://github.com/ricwo/pq), a REST API and an MCP server.
 
 - [docs/design.md](docs/design.md): the pipeline, the data model, sources and licences
 - [docs/architecture.md](docs/architecture.md): the parts, the deployment and the data flow as built, with diagrams
@@ -18,7 +18,7 @@ Needs Docker and [uv](https://docs.astral.sh/uv/); `./dev install` installs what
 
 ```bash
 ./dev up --all       # shared Postgres, this worktree's databases, API + pq worker
-./dev fetch all      # queue USDA FDC (Foundation, SR Legacy) and 7 Open Food Facts deltas
+./dev fetch all      # queue USDA FDC (Foundation, SR Legacy), CIQUAL, Matvaretabellen and 7 OFF deltas
 ./dev jobs           # row counts, fetch runs, queue state
 ./dev status         # this worktree;  ./dev ls  for every worktree
 ./dev test           # unit tests + the database suite against this worktree's __test database
@@ -64,7 +64,8 @@ product from `/v1/records/fdc:9?include=off`, shortened:
               "licence": "ODbL-1.0", "observed_at": "2026-01-01T00:00:00Z"}
   },
   "seals": {"value": {"CL": {"calories": false}, "MX": {"calories": false}},
-            "source": "fooddb", "licence": "CC0-1.0", "record": null}
+            "source": "fooddb", "licence": "CC0-1.0", "record": null},
+  "attribution": []
 }
 ```
 
@@ -80,6 +81,9 @@ the flag `carbs-regime-unknown`.
 the served values imply, computed on each read. A seal whose inputs are missing is left out. The
 schemes count added sugars, fats and sodium, and fooddb has total values, so a seal is an upper
 bound on the label. Its licence is the most restrictive among the values it reads.
+
+`attribution` lists the text that each source of a served field asks you to show: CIQUAL, Fineli
+and Matvaretabellen. See [docs/data-licence.md](docs/data-licence.md).
 
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
@@ -251,6 +255,10 @@ dump comes with the ODbL attribution and share-alike obligation: see
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
 | `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
+| `fdc` branded | USDA FoodData Central Branded Foods (~3 GB JSON, streamed) | CC0 | weekly check, only with `FOODDB__BACKEND__FETCH_FDC_BRANDED=true` |
+| `table` ciqual | CIQUAL, French food composition table (ANSES), Excel | Etalab 2.0, attribution | weekly check |
+| `table` fineli | Fineli, Finnish food composition database (THL), zip of CSV | CC BY 4.0, attribution | weekly check, only with `FOODDB__BACKEND__FETCH_FINELI=true` |
+| `table` matvaretabellen | Matvaretabellen, Norwegian food composition table, JSON API | NLOD 2.0, attribution | weekly check |
 | `off` | Open Food Facts daily delta files | ODbL, `off` layer | every 6 hours |
 | `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |
 | `match` | Splink product matching | – | after every fetch that added data |

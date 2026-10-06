@@ -17,7 +17,8 @@ references to the code. Each section below says what is built and links the issu
 Every step runs automatically except human review. Review sees only rows that changed or failed a
 check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
-**Built:** lanes 1 and 2 (FDC Foundation and SR Legacy, OFF), normalise, observations, checks,
+**Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, CIQUAL, Fineli, Matvaretabellen,
+OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
 (`/v1/review`, two MCP tools, SQLAdmin at `/admin`), API keys with scopes and rate limits, and the
@@ -31,8 +32,15 @@ hand-set), lane 3, and the eait side of the label-photo loop.
 ### Intake lanes
 
 1. **Open composition tables**, loaded when each publisher releases: USDA FDC (CC0), CIQUAL, BLS,
-   Fineli, Frida, Matvaretabellen (NLOD 2.0), CoFID (OGL), Korea MFDS, Japan MEXT, Taiwan TFDA, and others. Built: USDA FDC Foundation and SR Legacy. The rest:
-   [#15](https://github.com/eait-fit/fooddb/issues/15).
+   Fineli, Frida, Matvaretabellen (NLOD 2.0), CoFID (OGL), Korea MFDS, Japan MEXT, Taiwan TFDA, and
+   others. Built ([#15](https://github.com/eait-fit/fooddb/issues/15)): USDA FDC Foundation, SR
+   Legacy and Branded Foods, CIQUAL (Etalab 2.0), Fineli (CC BY 4.0) and Matvaretabellen (NLOD 2.0).
+   FDC Branded and Fineli are off by default. The FDC fetcher reads its JSON as a stream. Not built:
+   Frida ([#35](https://github.com/eait-fit/fooddb/issues/35)), CoFID
+   ([#36](https://github.com/eait-fit/fooddb/issues/36)), Korea MFDS
+   ([#37](https://github.com/eait-fit/fooddb/issues/37)), Japan MEXT
+   ([#38](https://github.com/eait-fit/fooddb/issues/38)), Taiwan TFDA
+   ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS.
 2. **Open Food Facts**: the full dump, then daily deltas. Built: a fresh install takes the newest
    delta, then every delta after it. The full dump is a manual job (`fooddb run off-dump`). Its data is under ODbL (see Licences).
 3. **Brands**: a brand upload form in v1. The uploader's brand is checked against the GS1
@@ -77,9 +85,10 @@ Chooses a winning value per field from trust rank, recency and agreement between
 verified label read outranks a crowd edit, which outranks an older table value.
 
 Built for nutrient values: a value much older than the newest one loses (default 730 days). Then
-the value that most sources agree with wins, then the source rank, then the newest value. Label
-reads have a rank above FDC. Agreement still comes before rank, so a label read that is alone
-loses to two sources that agree. Whether a verified label read always wins is not decided.
+the value that most sources agree with wins, then the source rank, then the newest value. FDC
+and the national tables share one rank, above OFF. Label reads have a rank above the tables.
+Agreement still comes before rank, so a label read that is alone loses to two sources that agree.
+Whether a verified label read always wins is not decided.
 
 ### Snapshot and serving
 
@@ -127,13 +136,16 @@ INFOODS tagnames (ENERC, PROCNT, FAT, CHOAVL…). Each value keeps the code of t
 source states, and no value is converted to another code. Built
 ([#7](https://github.com/eait-fit/fooddb/issues/7)): carbohydrate is `CHOCDF` (by difference, with
 fibre) from FDC and US or Canadian labels, and `CHOAVL` (available, without fibre) from EU, UK,
-Australian and similar labels. Energy is `ENERC_KCAL`, plus `ENERC_KJ` when the source states kJ.
+Australian and similar labels, and from CIQUAL, Fineli and Matvaretabellen. Energy is `ENERC_KCAL`, plus `ENERC_KJ` when the source states kJ.
 
 ## Licences
 
 | Source | Licence | Obligation |
 |---|---|---|
 | USDA FDC | CC0 | none |
+| CIQUAL (France) | Licence Ouverte / Etalab 2.0 | attribution, built |
+| Fineli (Finland) | CC BY 4.0 | attribution, built |
+| Matvaretabellen (Norway) | NLOD 2.0 | attribution, built |
 | Open Food Facts | ODbL | Share-alike on the derived database. It is kept in its own layer, which we publish monthly as an ODbL dump at `/v1/dumps` ([#14](https://github.com/eait-fit/fooddb/issues/14), built). See [data-licence.md](data-licence.md). |
 | Most EU national tables | CC BY / OGL / NLOD | attribution |
 | Korea MFDS | public, no usage restriction | none |

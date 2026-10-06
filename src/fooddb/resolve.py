@@ -13,9 +13,13 @@ from sqlalchemy import Connection, text
 
 from fooddb import checks
 from fooddb.db import engine
+from fooddb.fetchers import ciqual, fineli, matvaretabellen
 
 # ponytail: fixed source ranks; a per-field trust table when brand uploads and label reads land.
-RANK = "case {col} when 'brand' then 1 when 'label' then 2 when 'fdc' then 3 when 'off' then 4 else 9 end"
+# The composition tables (FDC and the national ones) share one rank, above the crowd (OFF).
+RANK = ("case {col} when 'brand' then 1 when 'label' then 2"
+        " when 'fdc' then 3 when 'ciqual' then 3 when 'fineli' then 3 when 'matvaretabellen' then 3"
+        " when 'off' then 4 else 9 end")
 
 # Two values agree within 5 %, or within 0.5 of the unit for small values.
 AGREE = "abs({a} - {b}) <= greatest(0.05 * greatest(abs({a}), abs({b})), 0.5)"
@@ -93,7 +97,10 @@ order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls l
 
 
 FIELDS = ("name", "brand", "lang", "serving_text", "serving_g", "category")
-LICENCES = ("CC0-1.0", "ODbL-1.0")  # least to most restrictive; an unknown licence counts as the most
+# Least to most restrictive; an unknown licence counts as the most. The middle ones ask for attribution.
+LICENCES = ("CC0-1.0", "etalab-2.0", "NLOD-2.0", "CC-BY-4.0", "ODbL-1.0")
+# Sources whose licence asks every user of the data to name them: source → (licence, text).
+ATTRIBUTION = {m.FETCHER: (m.LICENCE, m.ATTRIBUTION) for m in (ciqual, fineli, matvaretabellen)}
 
 
 def tagged(record, value) -> dict | None:
@@ -113,6 +120,13 @@ def seals(per_100: dict) -> dict | None:
     licence = max((per_100[n]["licence"] for n in used),
                   key=lambda lic: LICENCES.index(lic) if lic in LICENCES else len(LICENCES))
     return {"value": found, "source": "fooddb", "licence": licence, "record": None}
+
+
+def attribution(p: dict) -> list[dict]:
+    """The attribution that each source of a served field asks for, once per source."""
+    tags = [*(p[f] for f in (*FIELDS, "flags")), *p["gtin14"], *p["per_100"].values()]
+    return [{"source": s, "licence": ATTRIBUTION[s][0], "text": ATTRIBUTION[s][1]}
+            for s in sorted({t["source"] for t in tags if t} & ATTRIBUTION.keys())]
 
 
 def layers_for(include: str | None) -> list[str]:
@@ -169,4 +183,5 @@ def products(pids: list[int], include: str | None, snapshot: date | None = None,
             }
     for found in by_pid.values():
         found["seals"] = seals(found["per_100"])
+        found["attribution"] = attribution(found)
     return [by_pid[p] for p in pids if p in by_pid]

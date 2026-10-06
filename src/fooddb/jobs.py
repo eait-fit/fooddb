@@ -8,7 +8,12 @@ from pq import PQ, Priority
 
 from fooddb import health
 from fooddb.db import database_url
-from fooddb.fetchers import fdc, off
+from fooddb.fetchers import ciqual, fdc, fineli, matvaretabellen, off
+
+TABLES = {m.FETCHER: m for m in (ciqual, fineli, matvaretabellen)}  # national composition tables
+WEEKLY = "0 3 * * 1"  # Monday 03:00 UTC
+# FDC Branded is about 3 GB of JSON: it may run longer than the worker's default task limit.
+RUNTIME = {"fdc-branded": 6 * 3600}
 
 
 @cache
@@ -38,6 +43,14 @@ def fetch_fdc(dataset: str = "foundation", force: bool = False) -> None:
     if result is not None:
         _rematch(f"fdc-{dataset}")
     logger.info(f"fdc {dataset}: " + ("already current" if result is None else f"{result[0]} foods, {result[1]} new observations"))
+
+
+def fetch_table(source: str, force: bool = False) -> None:
+    result = TABLES[source].fetch(force=force)
+    health.checked(source)
+    if result is not None:
+        _rematch(source)
+    logger.info(f"{source}: " + ("already current" if result is None else f"{result[0]} foods, {result[1]} new observations"))
 
 
 def match_products() -> None:
@@ -87,17 +100,25 @@ def schedule() -> None:
     q.schedule(dump_odbl, cron="0 4 1 * *", priority=Priority.BATCH)  # monthly ODbL dump of the OFF layer
     # A fresh install fills itself instead of waiting for the weekly cron: each source never
     # checked is fetched now, and a first snapshot follows (BATCH priority runs after the fetches).
+    # A source switched off (health.OPTIONAL) is neither fetched nor scheduled.
     checked = {name for name, f in health.report()["fetchers"].items() if f["last_ok"]}
-    for ds in fdc.DATASETS:
-        if f"fdc-{ds}" not in checked:
-            q.upsert(fetch_fdc, client_id=f"bootstrap-fdc-{ds}", dataset=ds)
+    weekly = [(f"fdc-{ds}", fetch_fdc, {"dataset": ds}) for ds in fdc.DATASETS]
+    weekly += [(name, fetch_table, {"source": name}) for name in TABLES]
+    for name, fn, kwargs in weekly:
+        if health.enabled(name) and name not in checked:
+            q.upsert(fn, client_id=f"bootstrap-{name}", max_runtime_seconds=RUNTIME.get(name), **kwargs)
     if "snapshot" not in checked:
         q.upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
-    for ds in fdc.DATASETS:  # FDC releases twice a year; a weekly check is plenty
-        q.schedule(fetch_fdc, cron="0 3 * * 1", priority=Priority.BATCH, key=ds, dataset=ds)
+    # FDC and the national tables release a few times a year at most; a weekly check is plenty.
+    for name, fn, kwargs in weekly:
+        key = next(iter(kwargs.values()))
+        if health.enabled(name):
+            q.schedule(fn, cron=WEEKLY, priority=Priority.BATCH, key=key, max_runtime_seconds=RUNTIME.get(name), **kwargs)
+        else:
+            q.unschedule(fn, key=key)
 
 
 def enqueue(name: str, **kwargs) -> int:
-    fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "match": match_products,
-          "snapshot": build_snapshot, "odbl-dump": dump_odbl}[name]
+    fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "table": fetch_table,
+          "match": match_products, "snapshot": build_snapshot, "odbl-dump": dump_odbl}[name]
     return queue().enqueue(fn, **kwargs)
