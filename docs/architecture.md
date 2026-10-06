@@ -24,7 +24,8 @@ flowchart LR
         db[("Postgres<br/>fooddb tables, pq_tasks, pq_periodic")]
         dumps[("Dump directory<br/>ODbL dumps, manifests")]
     end
-    fdc["USDA FoodData Central<br/>Foundation and SR Legacy bulk JSON<br/>CC0-1.0"]
+    fdc["USDA FoodData Central<br/>Foundation, SR Legacy and Branded bulk JSON<br/>CC0-1.0"]
+    tables["National composition tables<br/>CIQUAL etalab-2.0, Fineli CC-BY-4.0,<br/>Matvaretabellen NLOD-2.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
@@ -38,6 +39,7 @@ flowchart LR
     worker -->|"write, monthly"| dumps
     api -->|read| dumps
     worker -->|"HTTPS, weekly check"| fdc
+    worker -->|"HTTPS, weekly check"| tables
     worker -->|"HTTPS, every 6 h"| offd
     cli -->|"HTTPS, manual: fooddb run off-dump"| offdump
 ```
@@ -58,8 +60,11 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   creates, lists and revokes API keys (`cli.py:128`). `fooddb dump odbl` writes the ODbL dump now
   (`cli.py:152`).
 
-The worker fetches from two upstream sources. Each value keeps the licence of its source:
-`CC0-1.0` for FDC (`fetchers/fdc.py:54`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
+The worker fetches from five upstream sources. Each value keeps the licence of its source:
+`CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:18`),
+`CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`), `NLOD-2.0` for Matvaretabellen
+(`fetchers/matvaretabellen.py:12`) and `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
+FDC Branded Foods and Fineli are off by default (`health.py:24`). See [Fetch](#fetch).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
 (`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
@@ -83,7 +88,7 @@ flowchart TB
         vol[["volume fooddb_pgdata18"]]
         dvol[["volume fooddb_dumps"]]
     end
-    up["fdc.nal.usda.gov<br/>static.openfoodfacts.org"]
+    up["fdc.nal.usda.gov, static.openfoodfacts.org<br/>ciqual.anses.fr, fineli.fi, www.matvaretabellen.no"]
     client -->|"HTTPS 443"| caddy
     caddy -->|"FOODDB__DEPLOY__BIND:PORT<br/>default 127.0.0.1:8000"| apic
     dbc --- vol
@@ -132,7 +137,9 @@ where Caddy is. `fooddb-worker` also joins the `fooddb-egress` network for its f
 
 ```mermaid
 flowchart TD
-    fdcsrc["FDC zip"] -->|"stream to a tempfile, then json.load"| fdcrec["fdc.records()"]
+    fdcsrc["FDC zip"] -->|"stream to a tempfile, then json_items, one food at a time"| fdcrec["fdc.records()"]
+    tabsrc["CIQUAL xlsx, Fineli zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["ciqual, fineli, matvaretabellen<br/>records()"]
+    tabrec --> run
     offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
     offrec --> run
@@ -158,11 +165,31 @@ flowchart TD
 
 ### Fetch
 
-Both fetchers read their source as a stream.
+Every fetcher reads its source as a stream. `fetchers.download` writes a download to a tempfile and
+returns its SHA-256 (`fetchers/__init__.py:13`). `fetchers.json_items` reads the items of one JSON
+array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 
-- The FDC fetcher finds the newest release on the FDC download page (`fetchers/fdc.py:30`). It
-  writes the zip to a tempfile, then loads the JSON file into memory (`fetchers/fdc.py:65`,
-  `fetchers/fdc.py:73`). The two datasets are small, so this is acceptable.
+- The FDC fetcher finds the newest release on the FDC download page (`fetchers/fdc.py:33`). It
+  writes the zip to a tempfile and reads the JSON file in it with `json_items`
+  (`fetchers/fdc.py:78`). Foundation and SR Legacy are small. Branded Foods is a zip of about
+  200 MB with about 3 GB of JSON. A branded food also has its barcode (`gtinUpc`), its brand owner,
+  its label serving and its `brandedFoodCategory`. Its values are per 100 ml when its serving is in
+  ml (`fetchers/fdc.py:49`). Branded Foods is off by default: `FOODDB__BACKEND__FETCH_FDC_BRANDED`
+  switches it on.
+- The CIQUAL fetcher finds the newest English Excel file on the ANSES download page
+  (`fetchers/ciqual.py:98`). The file name is the ref, and its date is the observation date. It
+  reads the sheet as a stream with the standard library (`fetchers/ciqual.py:57`). A cell
+  `traces` is 0. A cell `< x` (under the limit of quantification) and a cell `-` give no value
+  (`fetchers/ciqual.py:39`). See [decisions.md](decisions.md).
+- The Fineli fetcher downloads the open data zip at `FOODDB__BACKEND__FINELI_URL` and reads its
+  CSV files (`fetchers/fineli.py:35`). The URL has no release name, so the SHA-256 of the zip is
+  the ref (`fetchers/fineli.py:55`). The observation date is the date of `component_value.csv` in
+  the zip. fineli.fi refused automated requests with a Cloudflare challenge on 2026-10-06. Thus
+  Fineli is off by default: `FOODDB__BACKEND__FETCH_FINELI` switches it on, for a host that can
+  reach the zip or a mirror of it.
+- The Matvaretabellen fetcher downloads the whole table from its API, `api/en/foods.json`, and
+  reads it with `json_items` (`fetchers/matvaretabellen.py:47`). The API has no versions, so the
+  SHA-256 of the file is the ref, and the values carry the day of the download.
 - The OFF fetcher decompresses each `.gz` file as it arrives and yields one line at a time
   (`fetchers/off.py:147`). The file never goes to disk. A delta file and the 13 GB dump use the
   same path (`fetchers/off.py:162`).
@@ -175,12 +202,14 @@ Both fetchers read their source as a stream.
   restricted-circulation and coupon prefixes: 02, 04, 05, 20–29, 98 and 99 (`gtin.py:3`). An OFF
   product without a valid global GTIN is skipped (`fetchers/off.py:129`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
-  `SUGAR`, `FASAT`, `FIBTG` and `NA` (`fetchers/off.py:23`, `fetchers/fdc.py:23`).
+  `SUGAR`, `FASAT`, `FIBTG` and `NA`. Each fetcher maps its source codes in one table
+  (`fetchers/off.py:23`, `fetchers/fdc.py:26`, `fetchers/ciqual.py:24`, `fetchers/fineli.py:24`,
+  `fetchers/matvaretabellen.py:18`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
   from one code to another, except kJ to kcal (below).
 - Carbohydrate has two codes. `CHOCDF` is carbohydrate by difference, with fibre. `CHOAVL` is
   available carbohydrate, without fibre. FDC nutrient 1005 is `CHOCDF`. FDC has no available
-  carbohydrate.
+  carbohydrate. CIQUAL `Carbohydrate`, Fineli `CHOAVL` and Matvaretabellen `Karbo` are `CHOAVL`.
 - OFF's `carbohydrates` is the value on the label. `carbs_code` takes its code from the product's
   `countries_tags` (`fetchers/off.py:60`):
 
@@ -193,16 +222,20 @@ Both fetchers read their source as a stream.
   OFF's `carbohydrates-total` (fibre included) is always `CHOCDF`.
 - Units are kcal and kJ for energy, mg for sodium and g for all other nutrients (`ingest.py:14`).
   `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
-  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062). When the label states kJ only, the OFF fetcher
-  converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
+  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, CIQUAL, Fineli and Matvaretabellen). When the
+  label states kJ only, the OFF fetcher converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
+  Fineli states kJ only, and its fetcher converts it the same way (`fetchers/fineli.py:46`).
 - The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
   no carbohydrate for matching, and a missing field neither helps nor hurts a match.
 - Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`).
-- Each record keeps the category tags of its source: OFF `categories_tags` and FDC
-  `foodCategory.description` (`fetchers/off.py:134`, `fetchers/fdc.py:56`). An OFF record also keeps
+- Each record keeps the category tags of its source: OFF `categories_tags`, FDC
+  `foodCategory.description` or `brandedFoodCategory`, and `<source>:<group>` for a national table
+  (CIQUAL group names, Fineli use classes, Matvaretabellen food group ids with their parents)
+  (`fetchers/off.py:134`, `fetchers/fdc.py:63`). An OFF record also keeps
   its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:129`), and
   `food.category` stores it. Tags that no row of the table names give no category.
-- Record ids have the form `<source>:<code>`, for example `fdc:168421` or `off:<gtin14>`.
+- Record ids have the form `<source>:<code>`, for example `fdc:168421`, `off:<gtin14>`,
+  `ciqual:24999`, `fineli:1` or `matvaretabellen:06.178`.
 
 ### Store observations
 
@@ -406,15 +439,21 @@ The resolver picks one value per product and nutrient (`resolve.py:24`):
       (`resolve.py:20`). Two records of one source count as one source. Thus `fdc` and `off`
       that agree outvote a `label` value that is alone. Only values of one nutrient code are
       compared. A `CHOAVL` value is not a vote for or against a `CHOCDF` value.
-   3. **Trust rank.** `brand`, then `label`, then `fdc`, then `off` (`resolve.py:17`).
+   3. **Trust rank.** `brand`, then `label`, then the composition tables, then `off`
+      (`resolve.py:20`). `fdc`, `ciqual`, `fineli` and `matvaretabellen` share one rank. Thus a
+      table value wins over a crowd value, and between two tables the newer value wins.
    4. **Newest value**, then the smallest value, so that the result is always the same.
 
 The live read, the snapshot build and the merge-follow of the snapshot read all use `pick_sql`.
 Thus the rule has one definition. The rule applies to nutrient values only. The name, brand and
 the other record fields come from the most trusted, newest record.
 
-The `include=off` parameter adds the `off` layer to the query (`resolve.py:103`). Without it, OFF
+The `include=off` parameter adds the `off` layer to the query (`resolve.py:132`). Without it, OFF
 values do not take part.
+
+Each product has an `attribution` list (`resolve.py:125`). It has one entry for each source of a
+served field whose licence asks for attribution: CIQUAL, Fineli and Matvaretabellen. Each entry
+has the source, the licence and the text to show (`resolve.py:103`).
 
 ### Snapshot
 
@@ -447,9 +486,10 @@ first. The index `product_merged_into_idx` keeps this lookup fast.
 |---|---|---|---|
 | OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:71`) | NORMAL |
 | Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:72`) | NORMAL |
-| FDC Foundation, FDC SR Legacy | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:82`) | BATCH |
+| FDC Foundation, FDC SR Legacy, FDC Branded (when on) | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
+| CIQUAL, Matvaretabellen, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
 | Match | `match_products` | after a fetch that stored data (`jobs.py:57`) | NORMAL |
-| First-boot FDC | `fetch_fdc` | once, when `fetcher_check` has no row (`jobs.py:76`) | NORMAL |
+| First-boot FDC and national tables | `fetch_fdc`, `fetch_table` | once, when `fetcher_check` has no row for a fetcher that is on (`jobs.py:102`) | NORMAL |
 | First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:79`) | BATCH |
 | Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
@@ -469,16 +509,18 @@ sequenceDiagram
     W->>Q: schedule dump_odbl, 1st of the month 04:00 UTC, BATCH
     W->>Q: read fetcher_check and snapshot (health.report)
     W->>Q: upsert bootstrap-fdc-foundation, bootstrap-fdc-sr_legacy
+    W->>Q: upsert bootstrap-ciqual, bootstrap-matvaretabellen
     W->>Q: upsert bootstrap-snapshot, priority BATCH
-    W->>Q: schedule fetch_fdc for each dataset, Monday 03:00 UTC, BATCH
+    W->>Q: schedule fetch_fdc and fetch_table for each source that is on, Monday 03:00 UTC, BATCH
+    W->>Q: unschedule each source that is off
     Note over W: engine().dispose(), then run_worker(max_runtime=3600)
     W->>C: fork fetch_fdc foundation
     C->>Q: upsert match-products
-    W->>C: fork fetch_fdc sr_legacy
+    W->>C: fork fetch_fdc sr_legacy, fetch_table ciqual, fetch_table matvaretabellen
     C->>Q: upsert match-products, same task
     W->>C: fork match_products
     W->>C: fork build_snapshot, the last one-off task
-    Note over C: No OFF data yet. The snapshot has FDC values only.
+    Note over C: No OFF data yet. The snapshot has the table values only.
     W->>C: fork fetch_off_deltas, now due
     C->>Q: upsert match-products
     C->>Q: upsert bootstrap-snapshot, BATCH (first OFF data)
@@ -496,8 +538,9 @@ The pq worker takes one task at a time. It always takes a one-off task before a 
 a higher priority first (pq 0.8.1 `worker.py:722`, `worker.py:792`). This rule sets the first-boot
 order above:
 
-1. The two FDC tasks run first. Each one queues the match task. The client id `match-products`
-   collapses the two requests into one task (`jobs.py:63`).
+1. The FDC and national table tasks run first. Each one queues the match task. The client id
+   `match-products` collapses the requests into one task (`jobs.py:77`). FDC Branded and Fineli
+   are off by default, so a first boot does not fetch them.
 2. The match task runs before the snapshot, because BATCH is the lowest priority.
 3. The first snapshot runs next. It is the last one-off task.
 4. Only then does the periodic OFF delta task run, although it was due at once.
@@ -516,6 +559,9 @@ Each worker start registers the OFF schedule again with the next run set to now
 The full OFF dump takes hours, which is more than the task limit. Run it with `fooddb run off-dump`
 in its own container ([deploy.md](deploy.md#load-the-full-open-food-facts-dump)). It loads a dump
 only once per `Last-Modified` value of the file (`fetchers/off.py:195`).
+
+FDC Branded can also take more than one hour. Its tasks have a limit of six hours (`jobs.py:16`).
+While it runs, the worker runs no other task.
 
 ## Database schema
 
@@ -861,10 +907,12 @@ flowchart LR
 - `/livez` shows that the process is up and can query the database (`api.py:34`). It says
   nothing about the age of the data. A database error gives a 500, not a 200.
 - `/healthz` shows freshness (`api.py:42`). It compares each `fetcher_check` row and the newest
-  `snapshot.built_at` with a maximum age (`health.py:11`): `off-delta` 12 h, `fdc-foundation` and
-  `fdc-sr_legacy` 8 days, and `snapshot` 26 h. One stale entry or one entry with no row gives 503.
-- A fetch that finds nothing new also counts as a successful check (`health.py:19`,
-  `jobs.py:21`, `jobs.py:37`). The full OFF dump has no health entry.
+  `snapshot.built_at` with a maximum age (`health.py:12`): `off-delta` 12 h, `fdc-foundation`,
+  `fdc-sr_legacy`, `ciqual` and `matvaretabellen` 8 days, and `snapshot` 26 h. `fdc-branded` and
+  `fineli` (8 days) count only when they are on (`health.py:31`). One stale entry or one entry with
+  no row gives 503.
+- A fetch that finds nothing new also counts as a successful check (`health.py:36`,
+  `jobs.py:26`, `jobs.py:42`, `jobs.py:50`). The full OFF dump has no health entry.
 
 ### MCP
 
@@ -969,7 +1017,7 @@ flowchart LR
         snap[("snapshot_value")]
         exp["Snapshot export<br/>NDJSON per day"]
     end
-    tables["Other composition tables<br/>CIQUAL, BLS, Fineli, MFDS, MEXT"]
+    tables["Other composition tables<br/>BLS, Frida, CoFID, MFDS, MEXT, TFDA"]
     brand["Brand upload form<br/>GS1 prefix check"]
     eaitp["eait label photos<br/>no user id"]
     port["Model port"]
@@ -995,9 +1043,14 @@ flowchart LR
     class tables,brand,eaitp,port,orouter,agents,photo,listing,eaitc planned
 ```
 
-- **Intake.** Other national composition tables, the brand upload form with its GS1 prefix
-  check, and label reads from eait photos. The resolver already ranks the sources `brand` and
-  `label` above `fdc` (`resolve.py:17`), but no fetcher writes them.
+- **Intake.** Other national composition tables: Frida
+  ([#35](https://github.com/eait-fit/fooddb/issues/35)), CoFID
+  ([#36](https://github.com/eait-fit/fooddb/issues/36)), Korea MFDS
+  ([#37](https://github.com/eait-fit/fooddb/issues/37)), Japan MEXT
+  ([#38](https://github.com/eait-fit/fooddb/issues/38)), Taiwan TFDA
+  ([#39](https://github.com/eait-fit/fooddb/issues/39)) and BLS. Also the brand upload form with
+  its GS1 prefix check, and label reads from eait photos. The resolver already ranks the sources
+  `brand` and `label` above the tables (`resolve.py:20`), but no fetcher writes them.
 - **Model port.** One port for all LLM work, with OpenRouter for the hosted pipeline and local
   agents for customers' own runs.
 - **Review photo page.** A page that shows the label photo next to the fields that differ. It needs

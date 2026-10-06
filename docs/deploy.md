@@ -17,8 +17,10 @@ The `api` and `worker` services start only after `migrate` succeeds.
 - A Linux server (a VPS is sufficient) with 2 CPUs and 2 GB of memory or more.
 - Docker Engine with the Compose v2 plugin (`docker compose version` must work).
 - About 1 GB of free disk for the image and the data of the first boot. The image is
-  490 MB. The database is 210 MB after the first boot.
-- Outbound HTTPS to `fdc.nal.usda.gov` and `static.openfoodfacts.org`.
+  490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL and
+  Matvaretabellen add about 5,600 foods. Their size was not measured.
+- Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr` and
+  `www.matvaretabellen.no`. With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
 - For TLS: a DNS name with an A record that points to the server, and open ports 80 and 443.
 
 The optional full Open Food Facts dump needs much more disk. See
@@ -67,9 +69,10 @@ The optional full Open Food Facts dump needs much more disk. See
 
 The first boot fills the database without help. The worker does these jobs in this sequence:
 
-1. It downloads USDA FoodData Central Foundation and SR Legacy.
+1. It downloads USDA FoodData Central Foundation and SR Legacy, CIQUAL (France) and
+   Matvaretabellen (Norway). These are small tables of generic foods.
 2. It runs Splink matching.
-3. It builds the first snapshot. This snapshot has FDC values only.
+3. It builds the first snapshot. This snapshot has the values of these tables only.
 4. It downloads the newest Open Food Facts delta file.
 5. It runs Splink matching again.
 6. It builds the snapshot again. Now the snapshot has Open Food Facts values too.
@@ -81,6 +84,18 @@ On a test server, `/healthz` changed to 200 after 70 seconds. On a slow network,
 until curl -sf -o /dev/null http://127.0.0.1:8000/healthz; do sleep 10; done
 curl -s http://127.0.0.1:8000/healthz
 ```
+
+Two sources are off at first boot, and `/healthz` does not watch them while they are off:
+
+- **FDC Branded Foods** (US branded products with barcodes). The download is a zip of about
+  200 MB. It has about 3 GB of JSON, which the worker reads as a stream. The tempfile needs about
+  200 MB of free disk, and the database grows by much more. The size was not measured. To switch
+  it on, set `FOODDB__BACKEND__FETCH_FDC_BRANDED=true` and restart the worker. The worker then
+  fetches it at once and every week. One load can take hours, and the worker runs no other task
+  during that time. A task has a limit of six hours.
+- **Fineli** (Finland). fineli.fi refuses automated downloads with a Cloudflare challenge
+  (checked on 2026-10-06). Put a copy of the open data zip (basic package 1) where the worker can
+  reach it. Then set `FOODDB__BACKEND__FINELI_URL` to it and `FOODDB__BACKEND__FETCH_FINELI=true`.
 
 `/healthz` can change to 200 before steps 5 and 6 end. Until then, Open Food Facts products
 can have an empty `per_100`. The second `snapshot:` line in `docker compose logs worker` shows
@@ -205,6 +220,9 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 | `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |
+| `FOODDB__BACKEND__FETCH_FDC_BRANDED` | `false` | `true`: fetch FDC Branded Foods at once and every week. See [First boot](#first-boot). |
+| `FOODDB__BACKEND__FETCH_FINELI` | `false` | `true`: fetch Fineli at once and every week, from `FOODDB__BACKEND__FINELI_URL`. |
+| `FOODDB__BACKEND__FINELI_URL` | `https://fineli.fi/fineli/content/file/47` | The Fineli open data zip, or a copy of it. |
 | `FOODDB__BACKEND__DUMP_DIR` | `/app/dumps` | Where the worker writes the ODbL dumps and the API reads them. Compose sets it to the `dumps` volume. Outside Compose, the default is `dumps` in the working directory. |
 
 After you change `deploy/.env`, apply the change:

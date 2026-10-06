@@ -1,14 +1,16 @@
-"""USDA FoodData Central bulk JSON (CC0): Foundation Foods (twice a year) and SR Legacy (frozen, 7.8k foods)."""
+"""USDA FoodData Central bulk JSON (CC0): Foundation Foods (twice a year), SR Legacy (frozen, 7.8k foods)
+and Branded Foods (twice a year, about 3 GB of JSON, read as a stream)."""
 
-import json
 import re
 import tempfile
 import zipfile
+from collections.abc import Iterable
 from datetime import UTC, datetime
 
 import httpx
 
-from fooddb import ingest
+from fooddb import gtin, ingest
+from fooddb.fetchers import download, json_items
 
 LISTING = "https://fdc.nal.usda.gov/download-datasets.html"
 BASE = "https://fdc.nal.usda.gov/fdc-datasets/"
@@ -16,6 +18,7 @@ BASE = "https://fdc.nal.usda.gov/fdc-datasets/"
 DATASETS = {
     "foundation": ("foundation_food_json", "FoundationFoods"),
     "sr_legacy": ("sr_legacy_food_json", "SRLegacyFoods"),
+    "branded": ("branded_food_json", "BrandedFoods"),
 }
 
 # FDC nutrient id → INFOODS tagname. Energy: 1008 when present, else Atwater general (2047).
@@ -36,8 +39,17 @@ def latest_release(dataset: str) -> str:
     return max(found)
 
 
-def records(payload: dict, key: str):
-    for f in filter(None, payload[key]):
+def _num(v) -> float | None:
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def records(foods: Iterable[dict]):
+    """One record per FDC food. A branded food also has its barcode, brand owner and label serving.
+    Its values are per 100 ml when its serving is in ml."""
+    for f in filter(None, foods):
         by_id = {
             n["nutrient"]["id"]: n.get("amount")
             for n in f.get("foodNutrients") or []
@@ -50,10 +62,15 @@ def records(payload: dict, key: str):
         if not values:
             continue
         published = f.get("publicationDate") or "2000-01-01"
+        unit = (f.get("servingSizeUnit") or "").lower()
+        categories = [(f.get("foodCategory") or {}).get("description"), f.get("brandedFoodCategory")]
         yield ingest.Record(
             id=f"fdc:{f['fdcId']}", source="fdc", layer="core", licence="CC0-1.0",
-            name=f["description"], lang="en", values=values,
-            categories=[c] if (c := (f.get("foodCategory") or {}).get("description")) else [],
+            name=f["description"], lang="en", values=values, basis="100ml" if unit in ("ml", "mlt") else "100g",
+            gtin14=gtin.normalize(f.get("gtinUpc")), brand=f.get("brandOwner") or None,
+            serving_text=f.get("householdServingFullText") or None,
+            serving_g=_num(f.get("servingSize")) if unit in ("g", "grm") else None,
+            categories=[c for c in categories if c],
             observed_at=datetime.strptime(published, "%m/%d/%Y" if "/" in published else "%Y-%m-%d").replace(tzinfo=UTC),
         )
 
@@ -64,12 +81,6 @@ def fetch(dataset: str = "foundation", force: bool = False) -> tuple[int, int] |
     if not force and ingest.already_done(fetcher, release):
         return None
     with tempfile.TemporaryFile() as tmp:  # the zip goes to disk, not memory
-        with httpx.stream("GET", BASE + release, timeout=httpx.Timeout(60, read=600), follow_redirects=True) as r:
-            r.raise_for_status()
-            for chunk in r.iter_bytes():
-                tmp.write(chunk)
+        download(BASE + release, tmp)
         with zipfile.ZipFile(tmp) as z, z.open(next(n for n in z.namelist() if n.endswith(".json"))) as f:
-            # ponytail: Foundation and SR Legacy are small; Branded Foods (GBs) needs a streaming
-            # JSON parser (ijson) or FDC's CSV files.
-            payload = json.load(f)
-    return ingest.run(fetcher, release, records(payload, DATASETS[dataset][1]))
+            return ingest.run(fetcher, release, records(json_items(f, DATASETS[dataset][1])))
