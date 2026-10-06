@@ -12,8 +12,10 @@ from functools import cache
 
 from sqlalchemy import (
     BigInteger,
+    CheckConstraint,
     Column,
     DateTime,
+    Float,
     ForeignKey,
     Index,
     Integer,
@@ -95,6 +97,37 @@ fetch_run = Table(
     Column("error", Text),
     Column("started_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
     Column("finished_at", DateTime(timezone=True)),
+)
+
+
+# One row per merge (matching) and per split (a reviewer). A run's merges share `at`.
+merge_log = Table(
+    "merge_log",
+    metadata,
+    Column("id", BigInteger, primary_key=True),
+    Column("at", DateTime(timezone=True), nullable=False, server_default=func.now()),
+    Column("kind", Text, nullable=False),  # "merge" | "split"
+    Column("from_product", BigInteger, ForeignKey("product.id"), nullable=False),
+    Column("into_product", BigInteger, ForeignKey("product.id"), nullable=False),
+    Column("food_ids", ARRAY(Text), nullable=False),  # the records that moved
+    Column("probability", Float),  # merge: the best match probability that joined from_product
+    Column("threshold", Float),
+    Column("by", Text),
+    Column("note", Text),
+    CheckConstraint("kind in ('merge', 'split')", name="merge_log_kind"),
+    Index("merge_log_food_ids_idx", "food_ids", postgresql_using="gin"),
+)
+
+# Record pairs that matching never puts in one product. A split writes them.
+cannot_link = Table(
+    "cannot_link",
+    metadata,
+    Column("food_a", Text, ForeignKey("food.id"), primary_key=True),
+    Column("food_b", Text, ForeignKey("food.id"), primary_key=True),
+    Column("by", Text, nullable=False),
+    Column("note", Text),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
+    CheckConstraint("food_a < food_b", name="cannot_link_ordered"),
 )
 
 

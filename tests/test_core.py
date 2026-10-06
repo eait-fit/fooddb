@@ -133,3 +133,15 @@ def test_checks_use_the_carbohydrate_code_the_record_has():
     assert checks.flags({"PROCNT": 60, "FAT": 30, "CHOAVL": 30})["macros-over-100g"] == {"PROCNT", "FAT", "CHOAVL"}
     # Carbohydrate by difference already holds the fibre: it is not counted twice.
     assert not checks.flags({"ENERC_KCAL": 80, "PROCNT": 0, "FAT": 0, "CHOCDF": 20, "FIBTG": 15})
+
+
+def test_merges_never_join_a_cannot_link_pair_and_keep_the_lowest_id():
+    from fooddb.match import merges
+
+    product_of = {"a": 1, "b": 2, "c": 3, "d": 4}
+    links = [("c", "d", 0.97), ("a", "b", 0.99), ("b", "c", 0.98)]
+    assert merges(product_of, links, []) == {1: [(2, 0.99), (3, 0.98), (4, 0.97)]}
+    # a and c stay apart: the weaker link b-c is dropped, and c and d form their own product.
+    assert merges(product_of, links, [("a", "c")]) == {1: [(2, 0.99)], 3: [(4, 0.97)]}
+    # Records already in one product move together: a pair against one of them blocks the whole product.
+    assert merges({"a": 1, "b": 1, "c": 2}, [("b", "c", 0.99)], [("a", "c")]) == {}

@@ -22,7 +22,7 @@ def clean():
     from fooddb.db import engine
 
     with engine().begin() as conn:
-        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, api_key, rate_limit restart identity cascade"))
+        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit restart identity cascade"))
 
 
 def client(key: str | None = None):
@@ -741,3 +741,167 @@ def test_a_merge_after_a_snapshot_picks_across_the_merged_values_by_the_same_rul
     assert served("fdc:1", "off") == (229, "fdc")  # separate products at build time
     merge("fdc:1", "off:1")
     assert served("fdc:1", "off") == served("off:1", "off") == (260, "off")
+
+
+def log_rows(kind: str) -> list[dict]:
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return [dict(r) for r in conn.execute(text("select * from merge_log where kind = :k order by id"),
+                                              {"k": kind}).mappings()]
+
+
+MERGED_HUMMUS = HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
+
+
+def wrongly_merged_hummus() -> tuple[int, int]:
+    """Two hummus records that matching merges; the test then calls the merge wrong."""
+    from fooddb import ingest, jobs
+
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", observed_at=datetime(2026, 6, 1, tzinfo=UTC), values=MERGED_HUMMUS),
+    ])
+    survivor, merged_away = product("fdc:1")["id"], product("fdc:2")["id"]
+    jobs.match_products()
+    assert product("fdc:2")["id"] == survivor
+    return survivor, merged_away
+
+
+def split(pid: int, food_ids: list[str], **body):
+    import uuid
+
+    reviewer = client(key("review", name=f"reviewer-{uuid.uuid4().hex[:8]}"))
+    return reviewer.post(f"/v1/products/{pid}/split", json={"food_ids": food_ids, "by": "tester"} | body)
+
+
+def test_matching_logs_each_merge_with_its_probability_and_the_records_it_moved():
+    survivor, merged_away = wrongly_merged_hummus()
+    [row] = log_rows("merge")
+    assert (row["from_product"], row["into_product"], row["food_ids"]) == (merged_away, survivor, ["fdc:2"])
+    assert row["threshold"] == 0.95 and 0.95 <= row["probability"] <= 1
+
+
+def test_a_split_undoes_a_wrong_merge_and_matching_never_joins_the_records_again():
+    from fooddb import jobs
+
+    survivor, merged_away = wrongly_merged_hummus()
+    r = split(survivor, ["fdc:2"], note="two recipes")
+    assert r.status_code == 200, r.text
+    assert (r.json()["split_into"], r.json()["restored"]) == (merged_away, True)
+    # The merged-away id is its own product again, so old links to it work again.
+    assert client().get(f"/v1/foods/{merged_away}").json()["records"] == ["fdc:2"]
+    assert client().get(f"/v1/foods/{survivor}").json()["records"] == ["fdc:1"]
+    [row] = log_rows("split")
+    assert (row["from_product"], row["into_product"], row["food_ids"], row["by"], row["note"]) == (
+        survivor, merged_away, ["fdc:2"], "tester", "two recipes")
+    jobs.match_products()
+    assert product("fdc:1")["id"] == survivor and product("fdc:2")["id"] == merged_away
+    assert len(log_rows("merge")) == 1
+
+
+def test_a_split_without_a_logged_merge_makes_a_new_product():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:1"), rec(id="fdc:2"), rec(id="fdc:3")])
+    merge("fdc:1", "fdc:2", "fdc:3")  # merged before the log existed
+    r = split(product("fdc:1")["id"], ["fdc:2", "fdc:3"])
+    assert r.status_code == 200, r.text
+    assert r.json()["split_into"] > 3 and not r.json()["restored"]
+    p = product("fdc:3")
+    assert (p["id"], sorted(p["records"])) == (r.json()["split_into"], ["fdc:2", "fdc:3"])
+
+
+def test_a_split_is_validated():
+    survivor, merged_away = wrongly_merged_hummus()
+    assert split(999999, ["fdc:2"]).status_code == 404
+    assert split(merged_away, ["fdc:2"]).status_code == 409  # split the product it answers as
+    assert split(survivor, ["fdc:3"]).status_code == 422  # not a record of this product
+    assert split(survivor, ["fdc:1", "fdc:2"]).status_code == 422  # a split leaves at least one record
+    assert split(survivor, []).status_code == 422
+    assert split(survivor, ["fdc:2"], by="").status_code == 422  # who decided is required
+
+
+def test_matching_never_puts_a_cannot_link_pair_in_one_product():
+    from sqlalchemy import text
+
+    from fooddb import ingest, jobs
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id=f"fdc:{i}", name="Hummus, commercial", values=HUMMUS) for i in (1, 2, 3)])
+    with engine().begin() as conn:
+        conn.execute(text("insert into cannot_link (food_a, food_b, by) values ('fdc:1', 'fdc:3', 'tester')"))
+    jobs.match_products()
+    assert product("fdc:1")["id"] != product("fdc:3")["id"]
+    assert product("fdc:2")["id"] in (product("fdc:1")["id"], product("fdc:3")["id"])
+
+
+def test_a_split_keeps_a_past_days_values_and_todays_follow_the_next_build(monkeypatch):
+    survivor, merged_away = wrongly_merged_hummus()
+    build_on(monkeypatch, "2026-10-01")
+
+    def values(pid, **params):
+        return {n: v["value"] for n, v in client().get(f"/v1/foods/{pid}", params=params).json()["per_100"].items()}
+
+    assert values(survivor) == MERGED_HUMMUS
+    assert split(survivor, ["fdc:2"]).status_code == 200
+    assert values(survivor, snapshot="2026-10-01") == MERGED_HUMMUS  # 2026-10-01 is over: it keeps its values
+    build_on(monkeypatch, "2026-10-02")
+    assert values(survivor) == HUMMUS and values(merged_away) == MERGED_HUMMUS
+    assert values(survivor, snapshot="2026-10-01") == MERGED_HUMMUS
+
+
+def test_mcp_agents_split_like_the_api():
+    survivor, merged_away = wrongly_merged_hummus()
+    assert call("split_product", product_id=survivor, food_ids=["fdc:9"], by="agent").is_error
+    out = call("split_product", product_id=survivor, food_ids=["fdc:2"], by="agent").structured_content
+    assert out["split_into"] == merged_away
+
+
+def test_admin_lists_the_merge_log_and_splits_a_merge():
+    survivor, merged_away = wrongly_merged_hummus()
+    [row] = log_rows("merge")
+    c = client()
+    assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
+                  follow_redirects=False).status_code == 302
+    page = c.get("/admin/merge-log/list")
+    assert page.status_code == 200 and "fdc:2" in page.text
+    assert c.get(f"/admin/merge-log/action/split?pks={row['id']}", follow_redirects=False).status_code == 302
+    assert product("fdc:2")["id"] == merged_away
+    assert log_rows("split")[0]["by"] == "kirill"
+
+
+def test_match_train_saves_a_model_that_matching_then_uses(tmp_path, monkeypatch):
+    import json
+
+    from typer.testing import CliRunner
+
+    from fooddb import ingest, jobs
+    from fooddb.cli import app
+
+    beans = {"ENERC_KCAL": 31.0, "PROCNT": 1.8, "FAT": 0.2, "CHOCDF": 7.0}
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", values=HUMMUS | {"ENERC_KCAL": 233.0}),
+        rec(id="fdc:3", name="Beans, snap, green, raw", values=beans),
+        rec(id="fdc:4", name="Beans, snap, yellow, raw", values=beans),
+        rec(id="fdc:9", gtin14="04006381333931", name="ACME, HUMMUS CLASSIC", brand="Acme", values=HUMMUS),
+        rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0", gtin14="04006381333931",
+            name="Hummus Classic", brand="Acme", values=HUMMUS | {"ENERC_KCAL": 240.0}),
+    ])
+    path = tmp_path / "model.json"
+    monkeypatch.setenv("FOODDB__BACKEND__MATCH_MODEL", str(path))
+    r = CliRunner().invoke(app, ["match", "train"])
+    assert r.exit_code == 0, r.output
+    model = json.loads(path.read_text())
+    assert {c["output_column_name"] for c in model["comparisons"]} == {"gtin14", "name_words", "brand", "nutrients"}
+    # Matching reads the saved model: one that calls every pair unlikely merges nothing.
+    model["probability_two_random_records_match"] = 1e-12
+    path.write_text(json.dumps(model))
+    jobs.match_products()
+    assert product("fdc:1")["id"] != product("fdc:2")["id"]
+    monkeypatch.setenv("FOODDB__BACKEND__MATCH_MODEL", str(tmp_path / "absent.json"))  # no model yet: hand-set weights
+    jobs.match_products()
+    assert product("fdc:1")["id"] == product("fdc:2")["id"]

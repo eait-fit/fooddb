@@ -183,7 +183,7 @@ Both fetchers read their source as a stream.
   `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
   as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062). When the label states kJ only, the OFF fetcher
   converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
-- The match job compares carbohydrate as `CHOCDF` only (`match.py:29`). A record with `CHOAVL` has
+- The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
   no carbohydrate for matching, and a missing field neither helps nor hurts a match.
 - Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`).
 - Record ids have the form `<source>:<code>`, for example `fdc:168421` or `off:<gtin14>`.
@@ -204,7 +204,7 @@ For each batch, `_write` does these steps (`ingest.py:104`):
 
 The `observation` table is append-only. The code never deletes an observation. The only update is
 a review decision: it moves a `pending` observation to `accepted` or `rejected`, once
-(`review.py:51`).
+(`review.py:56`).
 
 ### Checks and review status
 
@@ -228,7 +228,7 @@ The checks flag values, but they do not change them.
 
 A new observation of an implicated field gets the status `pending`. All other new observations of
 the record get `accepted` (`ingest.py:154`). The resolver and the match job read only `accepted`
-observations (`resolve.py:57`, `match.py:35`). Thus the last accepted value of a held field stays
+observations (`resolve.py:57`, `match.py:36`). Thus the last accepted value of a held field stays
 in service. The [review loop](#review) moves each pending value out.
 
 ### Review
@@ -247,7 +247,7 @@ flowchart LR
 ```
 
 - `review.queue` returns the pending values grouped per source record, newest first
-  (`review.py:18`). Each item has the record's failed checks (`food.flags`) and the values that the
+  (`review.py:23`). Each item has the record's failed checks (`food.flags`) and the values that the
   API serves now for its product (`resolve.products`).
 - `review.decide` sets `status`, `reviewed_by`, `reviewed_at` and `review_note` in one update. The
   update matches only a `pending` row, so a value is decided once. A second decision gets a 409, and
@@ -257,7 +257,7 @@ flowchart LR
 - A rejected value is never served. If the source sends the same value again, ingest sees no change
   and stores nothing, so the value does not come back for review.
 - The REST routes are on one `APIRouter`, `review_router`, which needs the `review` scope
-  (`api.py:110`). The MCP tools `review_queue` and `decide_review` call the same handlers. Over
+  (`api.py:110`). The split route `POST /v1/products/{id}/split` is on it too. The MCP tools `review_queue`, `decide_review` and `split_product` call the same handlers. Over
   HTTP, they need the `review` scope too (`api.py:152`). The SQLAdmin actions call `review.decide`
   with `by` set to the name of the admin key that logged in (`admin.py:54`).
 - The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
@@ -266,12 +266,66 @@ flowchart LR
 
 ### Match records into products
 
-`match.run` loads every record with its newest accepted energy and macros (`match.py:24`). Splink
-compares only candidate pairs (`match.py:109`). A pair has the same GTIN, or the same name words at
-a similar energy, or the same brand and first word at a similar energy. Clusters at or above
-`FOODDB__BACKEND__MATCH_THRESHOLD` (default 0.95, `match.py:22`) merge. The lowest product id
-survives. The other products get `merged_into`, and their `food` rows move to the survivor
-(`match.py:158`). The match job never splits a product again.
+`match.run` loads every record with its newest accepted energy and macros (`match.py:25`). Splink
+compares only candidate pairs (`match.py:110`). A pair has the same GTIN, or the same name words at
+a similar energy, or the same brand and first word at a similar energy. Splink returns the pairs at
+or above `FOODDB__BACKEND__MATCH_THRESHOLD` (default 0.95, `match.py:23`) with their match
+probability (`match.py:152`).
+
+`merges` joins products along these pairs, the strongest pair first (`match.py:160`). The records
+of one product always stay together. A pair is skipped when it would put the two records of a
+`cannot_link` row in one product. Thus a cluster that contains both sides of a constraint splits at
+its weakest pairs, and each side keeps the pairs that are stronger.
+
+In each joined group, the lowest product id survives. For each other product, `match.run` moves its
+`food` rows to the survivor, sets `merged_into`, and writes one `merge_log` row in the same
+transaction (`match.py:195`). The row holds the two products, the records that moved, the best
+probability of a pair that joined the product, and the threshold. All rows of one run have the same
+`at`. Matching never splits a product. Only a reviewer splits one (see [Split](#split-a-wrong-merge)).
+
+The m and u probabilities are set by hand in `SETTINGS`. `fooddb match train` estimates them on the
+current records (`match.py:214`). It estimates u by random sampling, and m by expectation
+maximisation, blocked on the GTIN and then on the name words. It saves the Splink model as JSON to
+`FOODDB__BACKEND__MATCH_MODEL` or `--out`. When that file exists, `match.run` uses it instead of
+`SETTINGS` (`match.py:137`). The training runs in the CLI process, never in the worker parent.
+
+### Split a wrong merge
+
+```mermaid
+flowchart LR
+    rest["POST /v1/products/{id}/split"] --> s["review.split()"]
+    mcp["MCP split_product"] --> rest
+    adm["SQLAdmin merge log<br/>split action, by admin"] --> s
+    s -->|"records move"| food[("food.product_id")]
+    s -->|"home id comes back"| prod[("product.merged_into")]
+    s --> cl[("cannot_link")]
+    s --> log[("merge_log, kind split")]
+    cl -->|"never joined again"| match["match.run()"]
+```
+
+`review.split` moves the given records out of a product into one product of their own
+(`review.py:81`):
+
+1. The product must exist (else 404) and must not be merged away (else 409). The records must be
+   records of the product, and at least one record must stay (else 422).
+2. The home of a record is the product that ingest made for it. That is the `from_product` of its
+   first `merge` row in `merge_log`.
+3. When all records have one home, and that home now answers as this product, the home gets its id
+   back. `merged_into` of the home becomes null. Products that were merged into the home now point
+   at this product, because their records stay here. Thus old links to the home id work again.
+4. Otherwise the records go to a new product. Merges from before `merge_log` existed have no rows,
+   so their records always get a new product.
+5. Each moved record and each record that stays become a `cannot_link` pair. A `split` row goes
+   into `merge_log` with `by` and `note`.
+
+`resolve.canonical` follows `merged_into`. Thus a restored id answers as itself at once. The
+snapshot read collects values over the live `merged_into` links. After a split, the survivor's
+values of a past day are what that day froze for it, because the build wrote them under its id. The
+next build writes the values of both products for today. A pin on a past day for the restored id
+has no values, because that day froze them under the survivor.
+
+The SQLAdmin view `merge-log` lists `merge_log`. Its split action splits the records of a `merge`
+row out of the product that the row's survivor answers as now (`admin.py:63`).
 
 ### Resolve
 
@@ -406,6 +460,8 @@ erDiagram
     product ||--o{ food : "product_id"
     food ||--o{ observation : "food_id"
     snapshot ||--o{ snapshot_value : "day, on delete cascade"
+    product ||--o{ merge_log : "from_product, into_product"
+    food ||--o{ cannot_link : "food_a, food_b"
     product {
         bigint id PK
         bigint merged_into FK "null means canonical, btree index"
@@ -475,6 +531,25 @@ erDiagram
         text fetcher PK
         timestamptz checked_at
     }
+    merge_log {
+        bigint id PK
+        timestamptz at "one value per match run"
+        text kind "merge or split"
+        bigint from_product FK
+        bigint into_product FK
+        text_array food_ids "records that moved, GIN index"
+        float probability "merge only"
+        float threshold "merge only"
+        text by "split only"
+        text note
+    }
+    cannot_link {
+        text food_a PK,FK "food_a before food_b"
+        text food_b PK,FK
+        text by
+        text note
+        timestamptz created_at
+    }
     api_key {
         bigint id PK
         text name "unique among active keys"
@@ -507,6 +582,7 @@ Seven Alembic migrations make this schema:
   (`alembic/versions/0006_review_decisions.py:15`).
 - `0007` adds `api_key` and the unlogged table `rate_limit` (`alembic/versions/0007_api_keys.py:16`).
   A crash can lose the counts of one minute, which is acceptable for a rate limit.
+- `0008` adds `merge_log` and `cannot_link` (`alembic/versions/0008_merge_log_and_cannot_link.py:16`).
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -689,6 +765,7 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 | `health_report` | `health.report` | `GET /healthz` |
 | `review_queue` | `review_queue` | `GET /v1/review` |
 | `decide_review` | `decide_review` | `POST /v1/review/{observation_id}` |
+| `split_product` | `split_product` | `POST /v1/products/{product_id}/split` |
 
 - `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
   Each value keeps its `licence` tag, as in REST.
@@ -701,7 +778,7 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
   off, and the reverse proxy sets the host.
 - Over HTTP, every request to `/mcp` passes the same key check as a REST read (`api.py:214`). The
   review tools also need the `review` scope (`api.py:152`). Over stdio, no key is checked: the
-  process is local and trusted. `decide_review` is the only write. See [Review](#review).
+  process is local and trusted. `decide_review` and `split_product` are its only writes. See [Review](#review).
 
 ### Authentication
 

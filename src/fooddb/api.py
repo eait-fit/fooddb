@@ -106,8 +106,8 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
     return {"items": items}
 
 
-# Review: the only writes.
-review_router = APIRouter(prefix="/v1/review", tags=["review"], dependencies=[auth.require("review")])
+# Review and split: the only writes. Every route here needs a key with the review scope.
+review_router = APIRouter(tags=["review"], dependencies=[auth.require("review")])
 
 
 class Decision(BaseModel):
@@ -116,13 +116,13 @@ class Decision(BaseModel):
     note: str | None = None
 
 
-@review_router.get("")
+@review_router.get("/v1/review")
 def review_queue(limit: int = Query(100, ge=1, le=1000)) -> dict:
     """Values a failed check held back, grouped per source record, next to the values served now."""
     return {"items": review.queue(limit)}
 
 
-@review_router.post("/{observation_id}")
+@review_router.post("/v1/review/{observation_id}")
 def decide_review(observation_id: int, body: Decision) -> dict:
     """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
     try:
@@ -131,6 +131,25 @@ def decide_review(observation_id: int, body: Decision) -> dict:
         raise HTTPException(409, str(e))
     except LookupError as e:
         raise HTTPException(404, str(e))
+
+
+class Split(BaseModel):
+    food_ids: list[str] = Field(min_length=1, description="the source records to move out")
+    by: str = Field(min_length=1, description="who decided")
+    note: str | None = None
+
+
+@review_router.post("/v1/products/{product_id}/split")
+def split_product(product_id: int, body: Split) -> dict:
+    """Undo a wrong merge: move records out of a product. Matching never joins them with the rest again."""
+    try:
+        return review.split(product_id, body.food_ids, body.by, body.note)
+    except review.MergedAway as e:
+        raise HTTPException(409, str(e))
+    except LookupError as e:
+        raise HTTPException(404, str(e))
+    except ValueError as e:
+        raise HTTPException(422, str(e))
 
 
 app.include_router(review_router)
@@ -209,6 +228,14 @@ def decide_review_tool(ctx: Context, observation_id: int, decision: Literal["acc
     """Accept a pending value (served from the next snapshot on) or reject it (never served). `by` names who decided."""
     _needs(ctx, "review")
     return _tool(decide_review, observation_id, Decision(decision=decision, by=by, note=note))
+
+
+@mcp.tool(name="split_product")
+def split_product_tool(ctx: Context, product_id: int, food_ids: list[str], by: str, note: str | None = None) -> dict[str, Any]:
+    """Undo a wrong merge: move source records out of a product into one of their own. Matching never
+    joins them with the rest again. `by` names who decided."""
+    _needs(ctx, "review")
+    return _tool(split_product, product_id, Split(food_ids=food_ids, by=by, note=note))
 
 
 class _Authenticated:

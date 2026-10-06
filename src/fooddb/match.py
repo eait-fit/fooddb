@@ -2,11 +2,12 @@
 
 Every record takes part, barcoded or not; the barcode is a strong feature, not a rule. Pairs at or
 above the threshold merge automatically: the lower product id survives, the others point at it
-(`product.merged_into`) and their records move over. Nothing is ever split again by matching.
+(`product.merged_into`) and their records move over. Each merge is logged in `merge_log`. A split
+(`review.split`) writes `cannot_link` pairs, and matching never joins such a pair again.
 
-The m/u probabilities are set by hand rather than trained, so results are deterministic on any
-data size. ponytail: hand-set weights and a full re-match per run; train on labelled pairs and match
-only new records once volume makes this slow.
+The m/u probabilities are hand-set (`SETTINGS`) until `fooddb match train` saves a model estimated
+on the data to FOODDB__BACKEND__MATCH_MODEL. ponytail: a full re-match per run; match only new
+records once volume makes this slow.
 """
 
 import os
@@ -17,7 +18,7 @@ import splink.comparison_library as cl
 from splink import DuckDBAPI, Linker, SettingsCreator, block_on
 from sqlalchemy import text
 
-from fooddb.db import engine
+from fooddb.db import engine, merge_log
 
 THRESHOLD = float(os.environ.get("FOODDB__BACKEND__MATCH_THRESHOLD", "0.95"))
 
@@ -133,33 +134,87 @@ SETTINGS = SettingsCreator(
 )
 
 
-def clusters(rows: list[dict], threshold: float = THRESHOLD) -> list[list[str]]:
-    """Groups of record ids (size > 1) that describe the same product."""
+def model() -> SettingsCreator | str:
+    """The trained model when one is saved, else the hand-set weights."""
+    path = os.environ.get("FOODDB__BACKEND__MATCH_MODEL")
+    return path if path and os.path.exists(path) else SETTINGS
+
+
+def _linker(rows: list[dict], settings: SettingsCreator | str) -> Linker:
+    return Linker(DuckDBAPI().register(pa.Table.from_pylist([_prepare(r) for r in rows])), settings, log_level=30)
+
+
+def _records() -> list[dict]:
+    with engine().connect() as conn:
+        return [dict(r) for r in conn.execute(text(RECORDS_SQL)).mappings()]
+
+
+def links(rows: list[dict], threshold: float = THRESHOLD) -> list[tuple[str, str, float]]:
+    """Record pairs at or above the threshold, with their match probability."""
     if len(rows) < 2:
         return []
-    db = DuckDBAPI()
-    linker = Linker(db.register(pa.Table.from_pylist([_prepare(r) for r in rows])), SETTINGS, log_level=30)
-    predictions = linker.inference.predict(threshold_match_probability=threshold, warning_mode="never")
-    found = linker.clustering.cluster_pairwise_predictions_at_threshold(predictions, threshold).as_record_list()
-    groups: dict[str, list[str]] = {}
-    for r in found:
-        groups.setdefault(r["cluster_id"], []).append(r["unique_id"])
-    return [ids for ids in groups.values() if len(ids) > 1]
+    predictions = _linker(rows, model()).inference.predict(threshold_match_probability=threshold, warning_mode="never")
+    return [(r["unique_id_l"], r["unique_id_r"], float(r["match_probability"])) for r in predictions.as_record_list()]
+
+
+def merges(product_of: dict[str, int], links: list[tuple[str, str, float]],
+           cannot: list[tuple[str, str]]) -> dict[int, list[tuple[int, float]]]:
+    """Survivor -> [(merged product, probability)]: the connected components of the links over
+    products, strongest link first. A link that would put both records of a cannot-link pair in one
+    product is skipped, so a component splits along the constraint at its weakest links."""
+    parent: dict[int, int] = {}
+
+    def find(p: int) -> int:
+        while parent.get(p, p) != p:
+            p = parent[p]
+        return p
+
+    forbid: dict[int, set[int]] = {}
+    for a, b in cannot:
+        pa, pb = product_of.get(a), product_of.get(b)
+        if pa is not None and pb is not None and pa != pb:
+            forbid.setdefault(pa, set()).add(pb)
+            forbid.setdefault(pb, set()).add(pa)
+    best: dict[int, float] = {}
+    for a, b, prob in sorted(links, key=lambda link: (-link[2], link[0], link[1])):
+        pa, pb = product_of[a], product_of[b]
+        ra, rb = sorted((find(pa), find(pb)))
+        if ra == rb or any(find(x) == ra for x in forbid.get(rb, ())):
+            continue
+        parent[rb] = ra
+        forbid[ra] = forbid.get(ra, set()) | forbid.pop(rb, set())
+        for p in (pa, pb):
+            best[p] = max(best.get(p, 0.0), prob)
+    out: dict[int, list[tuple[int, float]]] = {}
+    for p in sorted(best):
+        if find(p) != p:
+            out.setdefault(find(p), []).append((p, best[p]))
+    return out
 
 
 def run(threshold: float = THRESHOLD) -> int:
     """Match every record; merge products that matched. Returns how many products were merged away."""
+    rows = _records()
     with engine().connect() as conn:
-        rows = [dict(r) for r in conn.execute(text(RECORDS_SQL)).mappings()]
+        cannot = [tuple(r) for r in conn.execute(text("select food_a, food_b from cannot_link"))]
     product_of = {r["unique_id"]: r["product_id"] for r in rows}
     merged = 0
     with engine().begin() as conn:
-        for ids in clusters(rows, threshold):
-            pids = sorted({product_of[i] for i in ids})
-            survivor, others = pids[0], pids[1:]
-            if not others:
-                continue
-            conn.execute(text("update food set product_id = :s where product_id = any(:o)"), {"s": survivor, "o": others})
-            conn.execute(text("update product set merged_into = :s where id = any(:o)"), {"s": survivor, "o": others})
-            merged += len(others)
+        for survivor, others in merges(product_of, links(rows, threshold), cannot).items():
+            for pid, prob in others:
+                moved = conn.execute(text("update food set product_id = :s where product_id = :o returning id"),
+                                     {"s": survivor, "o": pid}).scalars().all()
+                conn.execute(text("update product set merged_into = :s where id = :o"), {"s": survivor, "o": pid})
+                conn.execute(merge_log.insert().values(kind="merge", from_product=pid, into_product=survivor,
+                                                       food_ids=sorted(moved), probability=prob, threshold=threshold))
+                merged += 1
     return merged
+
+
+def train(path: str) -> dict:
+    """Estimate u by random sampling and m by EM on the current records; save the model as JSON."""
+    linker = _linker(_records(), SETTINGS)
+    linker.training.estimate_u_using_random_sampling(max_pairs=1e7, seed=1)
+    for rule in (block_on("gtin14"), block_on("name_norm", "kcal_band")):
+        linker.training.estimate_parameters_using_expectation_maximisation(rule)
+    return linker.misc.save_model_to_json(path, overwrite=True)

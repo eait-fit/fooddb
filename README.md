@@ -143,6 +143,26 @@ until midnight UTC, so a pin on today can change. A product that matching merged
 keeps the values the snapshot froze, and a merged-away product id answers as its survivor. Record
 lists and names are always live.
 
+## Fix a wrong merge
+
+Matching merges products above the match threshold with no human step, and logs each merge. To
+undo a wrong merge, split the records out of the product:
+
+```bash
+curl -X POST "$(./dev url)/v1/products/1234/split" -H 'content-type: application/json' \
+  -d '{"food_ids": ["off:04006381333931"], "by": "kirill", "note": "two different recipes"}'
+```
+
+The records go back to the product id they had before the merge, so old links to that id work
+again. When the log has no such id, they get a new product. Matching never joins the moved records
+and the remaining records again. Past snapshot days keep their values; today's values change at the
+next snapshot build. Agents call the MCP tool `split_product`. In SQLAdmin, open **Merge log** at
+`/admin`, select the merge and run **Split**.
+
+`./dev cli match train` estimates the Splink weights on the current data and saves the model to
+`FOODDB__BACKEND__MATCH_MODEL`. Matching uses that model from its next run. Without it, matching
+uses the hand-set weights.
+
 ## Sync a local copy
 
 A consumer that keeps its own copy of the catalog (eait does) syncs from the snapshot export. It
