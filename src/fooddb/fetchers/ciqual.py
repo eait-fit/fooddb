@@ -3,15 +3,13 @@
 
 import re
 import tempfile
-import zipfile
-from collections.abc import Iterator
 from datetime import UTC, datetime
-from xml.etree import ElementTree as ET
 
 import httpx
 
 from fooddb import ingest
 from fooddb.fetchers import download
+from fooddb.fetchers.xlsx import rows
 
 PAGE = "https://ciqual.anses.fr/cms/en/node/20"
 FETCHER = "ciqual"
@@ -33,7 +31,6 @@ COLUMNS = {
     "Sodium (mg 100g)": "NA",
 }
 GROUPS = ("alim_grp_nom_eng", "alim_ssgrp_nom_eng", "alim_ssssgrp_nom_eng")
-NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 
 
 def value(cell: str | None) -> float | None:
@@ -45,34 +42,6 @@ def value(cell: str | None) -> float | None:
         return float(s.replace(",", "."))
     except ValueError:
         return None
-
-
-def _column(ref: str) -> int:
-    n = 0
-    for ch in re.match(r"[A-Z]+", ref).group():
-        n = n * 26 + ord(ch) - 64
-    return n - 1
-
-
-def rows(xlsx) -> Iterator[list[str | None]]:
-    """The cells of the first sheet as text, row by row. The sheet is parsed as a stream."""
-    with zipfile.ZipFile(xlsx) as z:
-        with z.open("xl/sharedStrings.xml") as f:
-            strings = ["".join(t.text or "" for t in si.iter(f"{NS}t"))
-                       for _, si in ET.iterparse(f) if si.tag == f"{NS}si"]
-        with z.open("xl/worksheets/sheet1.xml") as f:
-            for _, row in ET.iterparse(f):
-                if row.tag != f"{NS}row":
-                    continue
-                cells: dict[int, str | None] = {}
-                for c in row.iter(f"{NS}c"):
-                    v = c.findtext(f"{NS}v")
-                    kind = c.get("t")
-                    cells[_column(c.get("r"))] = (
-                        strings[int(v)] if kind == "s" and v is not None
-                        else "".join(t.text or "" for t in c.iter(f"{NS}t")) if kind == "inlineStr" else v)
-                row.clear()
-                yield [cells.get(i) for i in range(max(cells, default=-1) + 1)]
 
 
 def records(xlsx, observed_at: datetime):
