@@ -209,6 +209,36 @@ def keys_revoke(name: str) -> None:
     typer.echo(f"revoked {name}")
 
 
+accounts = typer.Typer(no_args_is_help=True, help="Developer accounts of the portal: their credits and the unlimited flag.")
+app.add_typer(accounts, name="accounts")
+
+
+@accounts.command("list")
+def accounts_list() -> None:
+    """Every account with its credits."""
+    from fooddb import accounts as store
+
+    for a in store.listing():
+        typer.echo(f"{a['id']}\t{a['email']}\t{a['credits']} credits\t{'unlimited' if a['unlimited'] else 'metered'}\t{a['created_at']:%Y-%m-%d}")
+
+
+@accounts.command("grant")
+def accounts_grant(email: str, credits: int = typer.Argument(..., min=1)) -> None:
+    """Add credits to the account of this email, creating the account when it does not exist."""
+    from fooddb import accounts as store
+
+    typer.echo(f"{email.strip().lower()}: {store.grant(email.strip().lower(), credits)} credits")
+
+
+@accounts.command("set-unlimited")
+def accounts_set_unlimited(email: str, off: bool = typer.Option(False, "--off", help="turn it off again")) -> None:
+    """Exempt the account from credits: its reads are counted but never refused. Creates the account when absent."""
+    from fooddb import accounts as store
+
+    store.set_unlimited(email.strip().lower(), not off)
+    typer.echo(f"{email.strip().lower()}: unlimited {'off' if off else 'on'}")
+
+
 @app.command()
 def lookup(barcode: str, include_off: bool = True) -> None:
     """Look up a product by barcode."""

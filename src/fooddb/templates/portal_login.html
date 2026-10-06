@@ -1,0 +1,15 @@
+{% extends "portal_base.html" %}
+{% block body %}
+<h1>fooddb developer portal</h1>
+{% if sent %}
+<p class="done">If the address is valid, a sign-in link is on its way. It works once, for 15 minutes.</p>
+{% else %}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<p>Sign in with your email to get an API key and buy requests. There is no password: we mail you a link.</p>
+<form method="post" action="/portal/login">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<label>Email <input type="email" name="email" required autocomplete="email"></label>
+<p><button type="submit">Send the link</button></p>
+</form>
+{% endif %}
+{% endblock %}

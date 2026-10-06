@@ -1,0 +1,9 @@
+{% extends "portal_base.html" %}
+{% block body %}
+<h1>Sign in to fooddb</h1>
+<form method="post" action="/portal/verify">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="token" value="{{ token }}">
+<p><button type="submit">Sign in</button></p>
+</form>
+{% endblock %}

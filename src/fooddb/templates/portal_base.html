@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{% block title %}fooddb developer portal{% endblock %}</title>
+<style>
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; }
+label { display: block; margin-top: .8rem; font-weight: 600; }
+input { width: 100%; padding: .4rem; box-sizing: border-box; }
+button { padding: .5rem 1.2rem; font-size: 1rem; }
+table { border-collapse: collapse; width: 100%; }
+td, th { text-align: left; padding: .3rem .6rem .3rem 0; border-bottom: 1px solid #ddd; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: .2rem 1.5rem; }
+dd { margin: 0; font-weight: 600; }
+.error { background: #fde8e8; padding: .6rem 1rem; border-radius: 4px; }
+.done { background: #e6f4ea; padding: .6rem 1rem; border-radius: 4px; }
+code { word-break: break-all; }
+form.inline { display: inline; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>

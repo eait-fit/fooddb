@@ -22,7 +22,7 @@ def clean():
     from fooddb.db import engine
 
     with engine().begin() as conn:
-        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit restart identity cascade"))
+        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit, account, purchase, login_token, usage_month restart identity cascade"))
 
 
 def client(key: str | None = None):

@@ -1,0 +1,46 @@
+{% extends "portal_base.html" %}
+{% block body %}
+<nav><h1>fooddb developer portal</h1>
+<form method="post" action="/portal/logout"><input type="hidden" name="csrf" value="{{ csrf }}"><button type="submit">Sign out</button></form></nav>
+<p>{{ account.email }}</p>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<dl>
+<dt>Credits left</dt><dd>{% if account.unlimited %}unlimited{% else %}{{ '{:,}'.format(account.credits) }}{% endif %}</dd>
+<dt>Requests this month</dt><dd>{{ used }}</dd>
+</dl>
+<p>Each read request with your key costs one credit. Credits do not expire, and all your keys share them.</p>
+<form method="post" action="/portal/buy">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<button type="submit">Buy {{ '{:,}'.format(pack.credits) }} requests for €{{ '%.2f'|format(pack.price) }}</button>
+</form>
+
+<h2>API keys</h2>
+{% if new_key %}
+<p class="done">Your new key. Copy it now: it is not shown again.<br><code>{{ new_key }}</code></p>
+{% endif %}
+<table>
+{% for k in keys %}
+<tr><td>{{ k.name }}</td><td>created {{ k.created_at.strftime('%Y-%m-%d') }}</td><td>last used {{ k.last_used_at.strftime('%Y-%m-%d') if k.last_used_at else 'never' }}</td>
+<td><form class="inline" method="post" action="/portal/keys/{{ k.id }}/revoke"><input type="hidden" name="csrf" value="{{ csrf }}"><button type="submit">Revoke</button></form></td></tr>
+{% else %}
+<tr><td>No keys yet.</td></tr>
+{% endfor %}
+</table>
+<form method="post" action="/portal/keys">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<p><button type="submit">Create a key</button></p>
+</form>
+<p>Send it as <code>Authorization: Bearer KEY</code> or <code>X-API-Key: KEY</code>.</p>
+
+<h2>Purchases</h2>
+{% if purchases %}
+<table>
+<tr><th>Date</th><th>Amount</th><th>Requests</th></tr>
+{% for p in purchases %}
+<tr><td>{{ p.created_at.strftime('%Y-%m-%d') }}</td><td>{{ '%.2f'|format(p.amount_cents / 100) }} {{ p.currency|upper }}</td><td>{{ '{:,}'.format(p.credits) }}</td></tr>
+{% endfor %}
+</table>
+{% else %}
+<p>No purchases yet. Stripe mails a receipt for each one.</p>
+{% endif %}
+{% endblock %}

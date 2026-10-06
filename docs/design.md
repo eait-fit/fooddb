@@ -131,7 +131,9 @@ to the values read from it and the values served now. Built. The MCP server has 
 two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. Built: our own API keys
 with the scopes `read`, `contribute`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
 `/admin` login check them. stdio is local and needs no key. Not built: the RapidAPI listing. The
-API already accepts RapidAPI's proxy secret as a `read` key.
+API already accepts RapidAPI's proxy secret as a `read` key. Built ([#44](https://github.com/eait-fit/fooddb/issues/44)):
+a developer portal at `/portal` with email-link sign-in, self-serve read keys and prepaid request
+packs through Stripe Checkout. Each keyed read of an account costs one credit.
 
 ## Data model
 

@@ -1,5 +1,5 @@
 """SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads and brand uploads that
-wait for review next to their photo, and the merge log with a split action. Read-only otherwise. Login takes an API key with the admin scope.
+wait for review next to their photo, and the merge log with a split action. Accounts and purchases are read-only here. Read-only otherwise. Login takes an API key with the admin scope.
 Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
 
 import logging
@@ -15,7 +15,7 @@ from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from starlette.concurrency import run_in_threadpool
 
 from fooddb import auth, resolve, review
-from fooddb.db import engine, merge_log, observation
+from fooddb.db import account, engine, merge_log, observation, purchase
 from fooddb.labels import photos
 
 
@@ -116,6 +116,29 @@ class LabelView(BaseView):
                         headers={"Cache-Control": "private, max-age=86400", "X-Content-Type-Options": "nosniff"})
 
 
+class Account(Base):
+    __table__ = account
+
+
+class Purchase(Base):
+    __table__ = purchase
+
+
+class AccountView(ModelView, model=Account):
+    name_plural = "Accounts"
+    can_create = can_edit = can_delete = False
+    column_list = ["id", "email", "credits", "unlimited", "created_at"]
+    column_searchable_list = ["email"]
+    column_default_sort = ("id", True)
+
+
+class PurchaseView(ModelView, model=Purchase):
+    name_plural = "Purchases"
+    can_create = can_edit = can_delete = False
+    column_list = ["id", "account_id", "stripe_session_id", "amount_cents", "currency", "credits", "created_at"]
+    column_default_sort = ("id", True)
+
+
 class KeyLogin(AuthenticationBackend):
     """The password field takes an admin-scope key. Each request checks that the key is still active."""
 
@@ -149,3 +172,5 @@ def mount(app: FastAPI) -> None:
     admin.add_view(PendingView)
     admin.add_base_view(LabelView)
     admin.add_view(MergeLogView)
+    admin.add_view(AccountView)
+    admin.add_view(PurchaseView)
