@@ -163,6 +163,46 @@ counters are in Postgres, so all API replicas share them.
 listing. A request with the same `X-RapidAPI-Proxy-Secret` header then counts as a `read` key.
 RapidAPI meters its own customers, so fooddb does not rate-limit these requests.
 
+## Selling access
+
+The developer portal at `/portal` sells prepaid packs of API requests. One pack is 100,000 requests
+for EUR 29.99, paid once. The credits do not expire. There is no free tier. A user signs in with an
+email link, makes read keys, and pays through Stripe Checkout. Each read request with such a key
+costs one credit. At zero credits the API answers 402. Keys that you make with `fooddb keys create`
+have no account and are never charged. Requests through RapidAPI are not charged either.
+
+1. Set `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`, `FOODDB__BACKEND__SECRET_KEY` and
+   `FOODDB__BACKEND__PUBLIC_URL` in `deploy/.env`.
+2. Verify a sender domain in Resend. Set `FOODDB__BACKEND__RESEND_API_KEY` and
+   `FOODDB__BACKEND__MAIL_FROM` on the host.
+3. In the Stripe dashboard, open Developers, then Webhooks, and add an endpoint. Set the URL to
+   `https://<host>/v1/stripe/webhook` and the event to `checkout.session.completed`. Copy the
+   signing secret into `FOODDB__BACKEND__STRIPE_WEBHOOK_SECRET`. fooddb refuses an event whose
+   signature does not match.
+4. Create a restricted key (Developers, API keys, Create restricted key). Give it write permission
+   for Checkout Sessions only, and nothing else. Set it as `FOODDB__BACKEND__STRIPE_SECRET_KEY`.
+5. Optional: create a Product and a Price in Stripe, and set `FOODDB__BACKEND__STRIPE_PRICE_ID`.
+   Without it, fooddb sends the price of EUR 29.99 inline.
+6. Optional: turn on Stripe Tax, add your registrations, and set
+   `FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX=true`. Stripe then adds tax to each session.
+7. Enable customer receipts in the Stripe email settings. Stripe sends them, not fooddb.
+8. Run `docker compose up -d`, then open `https://<host>/portal` and buy one pack in Stripe test
+   mode first.
+
+If you enable a delayed payment method such as SEPA debit, also subscribe the endpoint to
+`checkout.session.async_payment_succeeded`. fooddb adds the credits when the payment clears.
+
+The webhook ignores every session that did not come from the portal. A paid session adds credits
+once, even if Stripe delivers the event twice. To give credits or a free account by hand:
+
+```bash
+docker compose exec api fooddb accounts list
+docker compose exec api fooddb accounts grant someone@example.com 100000
+docker compose exec api fooddb accounts set-unlimited someone@example.com
+```
+
+`/admin` shows the accounts and the purchases, read-only.
+
 ## TLS with Caddy
 
 The API port is open on `127.0.0.1` only. Put a TLS reverse proxy in front of it. This example
@@ -220,6 +260,15 @@ All the settings are in `deploy/.env`:
 | `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS` | `false` | `true`: reads need an API key too. See [API keys](#api-keys). |
 | `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` | `60` | Requests per minute per key, and per client IP for reads without a key. |
 | `FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET` | none | A request with this `X-RapidAPI-Proxy-Secret` header counts as a `read` key. |
+| `FOODDB__BACKEND__PUBLIC_URL` | none | The public address of the API, for example `https://food-api.eait.fit`. The sign-in mails and the Stripe return links point there. The portal does not trust the `Host` header. |
+| `FOODDB__BACKEND__RESEND_API_KEY` | none | The Resend key that mails the sign-in links. Set it on the server yourself. |
+| `FOODDB__BACKEND__MAIL_FROM` | none | The sender of those mails, for a domain that Resend verifies. |
+| `FOODDB__BACKEND__MAIL` | `resend` with a key | `log`: write the mails, with their sign-in links, to the server log. For development only. |
+| `FOODDB__BACKEND__STRIPE_SECRET_KEY` | none | A Stripe restricted key that creates Checkout Sessions. Set it on the server yourself. |
+| `FOODDB__BACKEND__STRIPE_WEBHOOK_SECRET` | none | The signing secret of the Stripe webhook endpoint. Without it, the webhook answers 503. |
+| `FOODDB__BACKEND__STRIPE_PRICE_ID` | none | A Stripe price for one pack. Without it, fooddb sends a price of EUR 29.99 inline. |
+| `FOODDB__BACKEND__STRIPE_AUTOMATIC_TAX` | `false` | `true`: Stripe Tax calculates the tax on each Checkout session. |
+| `FOODDB__BACKEND__CREDITS_PER_PACK` | `100000` | The credits that one paid pack adds. |
 | `FOODDB__BACKEND__STALE_AFTER_DAYS` | `730` | A nutrient value older than the newest one by more days than this loses its trust rank. |
 | `FOODDB__BACKEND__DUMP_KEEP` | `3` | The number of monthly ODbL dumps to keep. |
 | `FOODDB__BACKEND__LLM_API_KEY` | none | The OpenRouter key for label reads. Set it on the server yourself. Without it, label reads are demo reads, and every value waits for review. |

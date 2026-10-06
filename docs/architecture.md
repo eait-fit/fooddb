@@ -743,6 +743,10 @@ erDiagram
     snapshot ||--o{ snapshot_value : "day, on delete cascade"
     product ||--o{ merge_log : "from_product, into_product"
     food ||--o{ cannot_link : "food_a, food_b"
+    account |o--o{ api_key : "account_id"
+    account ||--o{ purchase : "account_id"
+    account ||--o{ login_token : "account_id"
+    account ||--o{ usage_month : "account_id"
     product {
         bigint id PK
         bigint merged_into FK "null means canonical, btree index"
@@ -843,6 +847,35 @@ erDiagram
         timestamptz created_at
         timestamptz last_used_at
         timestamptz revoked_at
+        bigint account_id FK "null: made by the CLI, never charged"
+    }
+    account {
+        bigint id PK
+        text email UK "lower case"
+        timestamptz created_at
+        bigint credits "never below 0"
+        bool unlimited
+        text stripe_customer_id
+    }
+    purchase {
+        bigint id PK
+        bigint account_id FK
+        text stripe_session_id UK "one row per paid session"
+        int amount_cents
+        text currency
+        bigint credits
+        timestamptz created_at
+    }
+    login_token {
+        text token_hash PK "the token is mailed, never stored"
+        bigint account_id FK
+        timestamptz expires_at "15 minutes"
+        timestamptz used_at "set once"
+    }
+    usage_month {
+        bigint account_id PK,FK
+        date month PK "first day, UTC"
+        bigint requests
     }
     rate_limit {
         text bucket PK "key:id or ip:address"
@@ -851,7 +884,7 @@ erDiagram
     }
 ```
 
-Ten Alembic migrations make this schema:
+Twelve Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -873,6 +906,8 @@ Ten Alembic migrations make this schema:
   (`alembic/versions/0010_observation_evidence.py:19`).
 - `0011` adds `snapshot_value.approved`, true for a value from an approved label read
   (`alembic/versions/0011_snapshot_value_approved.py:15`).
+- `0012` adds `account`, `purchase`, `login_token` and `usage_month`, and `api_key.account_id`
+  (`alembic/versions/0012_developer_portal.py:15`).
 
 The unique constraint `observation_once` covers `food_id`, `nutrient`, `source` and `observed_at`.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -1152,7 +1187,10 @@ flowchart LR
     scope -->|"no, key"| e403["403"]
     scope -->|yes| count["auth._count()<br/>upsert rate_limit"]
     count -->|"over the limit"| e429["429, Retry-After"]
-    count -->|"within the limit"| handler["handler"]
+    count -->|"within the limit"| paid{"read with the key<br/>of an account?"}
+    paid -->|"no, or unlimited"| handler["handler"]
+    paid -->|"yes, credits left"| handler
+    paid -->|"yes, credits 0"| e402["402, link to the portal"]
 ```
 
 - A token is `fdb_` and 32 random bytes in URL-safe base64. `api_key` stores only its PBKDF2-HMAC-SHA256 under `FOODDB__BACKEND__SECRET_KEY`
@@ -1174,12 +1212,59 @@ flowchart LR
   (`auth.py:110`). The bucket is the key, or the client IP for anonymous reads. The limit is the
   key's `rate_limit`, else `FOODDB__BACKEND__RATE_LIMIT_PER_MINUTE` (default 60). All API replicas
   share the counters.
+- A key can belong to an account. A `read` request with such a key, in the same transaction as the
+  rate limit, runs `update account set credits = credits - 1 where credits > 0` and counts the
+  request in `usage_month`, in one statement. At zero the API answers 402 `out of credits` with a
+  `buy` link. A 429 costs no credit. Keys without an account, RapidAPI requests, writes, `/v1/dumps`
+  and unlimited accounts are not charged. The next section shows the portal and its billing flow.
 - The client IP comes from `X-Forwarded-For` when the peer is in
   `FOODDB__BACKEND__FORWARDED_ALLOW_IPS` (`cli.py:52`). The compose stack trusts every peer, because
   it publishes the port on loopback only.
 - `/admin` logs in with an `admin` key in the password field (`admin.py:63`). The session cookie
   holds the key id, signed with `FOODDB__BACKEND__SECRET_KEY`. Each admin request checks that the
   key is still active. Without the secret, `admin.mount` does not mount `/admin` (`admin.py:83`).
+
+### Developer portal and billing
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Dev as Developer
+    participant P as portal.py
+    participant DB as Postgres
+    participant M as mail.py (Resend)
+    participant S as Stripe
+    Dev->>P: POST /portal/login (email, CSRF token)
+    P->>DB: ensure account, insert login_token (hash)
+    P->>M: mail the link /portal/verify?token=…
+    P-->>Dev: same page for every address
+    Dev->>P: open link, then press Sign in (POST /portal/verify)
+    P->>DB: update login_token set used_at where unused and not expired
+    P-->>Dev: signed session cookie, 30 days
+    Dev->>P: POST /portal/buy
+    P->>S: create Checkout Session (client_reference_id = account id)
+    P-->>Dev: 303 to the Stripe page
+    Dev->>S: pay
+    S->>P: POST /v1/stripe/webhook (checkout.session.completed, signed)
+    P->>P: billing.verify(): HMAC-SHA256 under the webhook secret, 5 minutes
+    P->>DB: insert purchase (unique session id), credits += pack, one transaction
+    Dev->>P: GET /v1/… with a portal key
+    P->>DB: credits -= 1 where credits > 0, usage_month += 1
+```
+
+- `portal.py` serves the pages, `accounts.py` holds the queries, `billing.py` talks to Stripe with
+  httpx, and `mail.py` is the mail port. The `log` backend writes mails to the server log, and
+  only when `FOODDB__BACKEND__MAIL=log` is set.
+- A sign-in link goes to `FOODDB__BACKEND__PUBLIC_URL`, never to the `Host` header. The link
+  opens a page with a button, and the button posts the token. Thus a mail scanner that follows the
+  link does not use up the token.
+- The session is a cookie that `itsdangerous` signs with `FOODDB__BACKEND__SECRET_KEY`. It is
+  `HttpOnly`, `SameSite=Lax`, valid 30 days, and `Secure` on https. Each form carries a CSRF token:
+  an HMAC of a random cookie, which only the server can make. `/admin` has its own session.
+- Sign-in requests are limited to 5 per hour per address and 20 per hour per client IP. Over the
+  per-address limit, the page stays the same and no mail goes out.
+- The webhook needs a valid signature and a paid session that carries `metadata.app = fooddb`.
+  The unique `stripe_session_id` makes a second delivery change nothing.
 
 ## Planned, not built
 

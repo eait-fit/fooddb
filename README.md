@@ -111,6 +111,15 @@ the same limit per client IP. Over the limit, the API answers 429 with `Retry-Af
 RapidAPI, a request with the listing's `X-RapidAPI-Proxy-Secret`
 (`FOODDB__BACKEND__RAPIDAPI_PROXY_SECRET`) counts as a `read` key.
 
+## Get an API key
+
+On a hosted fooddb, open `/portal` (for example `https://food-api.eait.fit/portal`), enter your email
+and open the link that arrives. There you create read keys, see your credits and this month's
+requests, and buy a pack: 100,000 requests for EUR 29.99, paid once through Stripe, with no
+expiry and no free tier. Each read with your key costs one credit. At zero the API answers 402 with a
+link to the portal. A self-hosted setup can leave the portal off: it needs the Stripe and Resend
+settings in [docs/deploy.md](docs/deploy.md#selling-access).
+
 ## MCP
 
 The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
