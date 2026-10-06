@@ -145,3 +145,98 @@ def test_merges_never_join_a_cannot_link_pair_and_keep_the_lowest_id():
     assert merges(product_of, links, [("a", "c")]) == {1: [(2, 0.99)], 3: [(4, 0.97)]}
     # Records already in one product move together: a pair against one of them blocks the whole product.
     assert merges({"a": 1, "b": 1, "c": 2}, [("b", "c", 0.99)], [("a", "c")]) == {}
+
+
+def test_off_and_fdc_records_carry_their_source_categories_and_labels():
+    import json
+
+    from fooddb.fetchers import fdc, off
+
+    p = off_product(["en:spain"], {"fat": {"value": 91.6, "unit": "g"}}) | {
+        "categories_tags": ["en:plant-based-foods", "en:fats", "en:vegetable-oils", "en:olive-oils"],
+        "labels_tags": ["en:organic", "en:high-in-calories-chile-ministry-of-health"]}
+    (r,) = off.records([json.dumps(p)])
+    assert r.categories == ["en:plant-based-foods", "en:fats", "en:vegetable-oils", "en:olive-oils"]
+    assert r.labels == ["en:organic", "en:high-in-calories-chile-ministry-of-health"]
+    (r,) = off.records([json.dumps(off_product(None, {"fat": {"value": 1, "unit": "g"}}))])
+    assert r.categories == r.labels == []
+
+    food = {"fdcId": 1, "description": "Oil, olive", "publicationDate": "4/1/2019",
+            "foodCategory": {"description": "Fats and Oils"},
+            "foodNutrients": [{"nutrient": {"id": 1004}, "amount": 100}]}
+    (r,) = fdc.records({"SRLegacyFoods": [food]}, "SRLegacyFoods")
+    assert r.categories == ["Fats and Oils"]
+    (r,) = fdc.records({"SRLegacyFoods": [food | {"foodCategory": None}]}, "SRLegacyFoods")
+    assert r.categories == []
+
+
+def test_source_categories_map_onto_one_fooddb_category():
+    assert checks.category(["en:plant-based-foods", "en:fats", "en:vegetable-oils", "en:olive-oils"]) == "oils"
+    assert checks.category(["en:fats", "en:vegetable-fats"]) == "fats"
+    assert checks.category(["en:beverages", "en:waters", "en:spring-waters", "en:mineral-waters"]) == "waters"
+    assert checks.category(["en:beverages", "en:spring-waters", "en:flavored-carbonated-mineral-waters"]) == "beverages"
+    assert checks.category(["en:beverages", "en:alcoholic-beverages", "en:wines"]) == "alcoholic-beverages"
+    assert checks.category(["en:beverages", "en:syrups"]) is None  # a concentrate: no range applies
+    assert checks.category(["Vegetables and Vegetable Products"]) == "vegetables"
+    assert checks.category(["en:plant-based-foods", "en:cereal-grains", "en:rices"]) == "cereals"
+    assert checks.category(["en:something-new"]) is checks.category([]) is None
+
+
+def test_ranges_flag_only_the_out_of_range_field_of_a_known_category():
+    assert not checks.flags({"ENERC_KCAL": 824, "FAT": 91.6}, "oils", "100ml")  # oil per 100 ml: about 92 g fat
+    assert checks.flags({"FAT": 9.2}, "oils")["out-of-range"] == {"FAT"}
+    assert checks.flags({"FAT": 9.2}, None) == {}  # unknown category: no range check
+    assert checks.flags({"FAT": 9.2}, "dairy") == {}  # a category without ranges
+    assert checks.flags({"ENERC_KCAL": 18, "FAT": 0.2, "PROCNT": 0.9}, "vegetables") == {}
+    assert checks.flags({"FAT": 40, "PROCNT": 0.9}, "vegetables")["out-of-range"] == {"FAT"}
+    assert checks.flags({"ENERC_KCAL": 0, "SUGAR": 0}, "waters") == {}
+    assert checks.flags({"ENERC_KCAL": 0, "SUGAR": 12}, "waters")["out-of-range"] == {"SUGAR"}
+
+
+def test_beverage_energy_range_applies_per_100_ml_only():
+    cola_kj_as_kcal = {"ENERC_KCAL": 180, "SUGAR": 10.6}
+    assert checks.flags(cola_kj_as_kcal, "beverages", "100ml")["out-of-range"] == {"ENERC_KCAL"}
+    assert checks.flags({"ENERC_KCAL": 42, "SUGAR": 10.6}, "beverages", "100ml") == {}
+    assert checks.flags({"ENERC_KCAL": 380, "SUGAR": 80}, "beverages", "100g") == {}  # a drink powder
+
+
+def test_seals_per_scheme_for_solids_and_liquids():
+    biscuit = {"ENERC_KCAL": 480, "SUGAR": 30, "FASAT": 10, "NA": 350}
+    seals, used = checks.seals(biscuit, liquid=False)
+    assert seals["CL"] == {"calories": True, "sugars": True, "saturated-fat": True, "sodium": False}
+    assert seals["PE"] == {"sugars": True, "saturated-fat": True, "sodium": False}
+    assert seals["MX"] == {"calories": True, "sugars": True, "saturated-fat": True, "sodium": True}  # 350 mg ≥ 300
+    assert used == {"ENERC_KCAL", "SUGAR", "FASAT", "NA"}
+
+    cola = {"ENERC_KCAL": 42, "SUGAR": 10.6, "FASAT": 0, "NA": 10}
+    seals, _ = checks.seals(cola, liquid=True)
+    assert seals["CL"] == {"calories": False, "sugars": True, "saturated-fat": False, "sodium": False}
+    assert seals["PE"] == {"sugars": True, "saturated-fat": False, "sodium": False}
+    assert seals["MX"] == {"calories": True, "sugars": True, "saturated-fat": False, "sodium": False}  # 42 kcal of sugar ≥ 8
+    # 7 g sugar: over the liquid limit (5 g per 100 ml), under the solid one (10 g per 100 g).
+    assert checks.seals({"SUGAR": 7}, liquid=False)[0]["CL"]["sugars"] is False
+    assert checks.seals({"SUGAR": 7}, liquid=True)[0]["CL"]["sugars"] is True
+
+
+def test_seals_need_their_inputs_and_list_only_what_they_read():
+    seals, used = checks.seals({"SUGAR": 7}, liquid=True)
+    assert seals == {"CL": {"sugars": True}, "PE": {"sugars": True}}  # MX sugars needs energy too
+    assert used == {"SUGAR"}
+    assert checks.seals({"PROCNT": 7}, liquid=False) == ({}, set())
+    # A non-caloric drink carries the Mexican sodium seal from 45 mg, not from 1 mg per kcal.
+    assert checks.seals({"ENERC_KCAL": 0, "NA": 50}, liquid=True)[0]["MX"]["sodium"] is True
+    assert checks.seals({"ENERC_KCAL": 0, "NA": 40, "SUGAR": 0}, liquid=True)[0]["MX"] == {
+        "calories": False, "sugars": False, "saturated-fat": False, "sodium": False}  # no energy, no share of it
+
+
+def test_a_stated_seal_the_values_do_not_support_holds_the_fields_it_read():
+    biscuit = {"ENERC_KCAL": 480, "SUGAR": 30, "FASAT": 10, "NA": 350, "FAT": 22}
+    agree = ["en:high-in-sugars-chile-ministry-of-health", "es:exceso-sodio", "en:organic"]
+    assert "seal-disagreement" not in checks.flags(biscuit, labels=agree)
+    found = checks.flags(biscuit, labels=["en:high-in-sodium-chile-ministry-of-health"])
+    assert found["seal-disagreement"] == {"NA"}  # 350 mg is not over Chile's 400 mg
+    found = checks.flags(biscuit | {"SUGAR": 2}, labels=["es:exceso-azucares"])
+    assert found["seal-disagreement"] == {"SUGAR", "ENERC_KCAL"}  # 8 kcal of sugar is under 10 % of 480
+    # A seal whose inputs are missing, or a label without the seal, says nothing.
+    assert checks.flags({"FAT": 22}, labels=["es:exceso-azucares"]) == {}
+    assert checks.flags({"ENERC_KCAL": 480, "SUGAR": 30}, labels=[]) == {}
