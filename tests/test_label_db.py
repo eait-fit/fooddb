@@ -177,18 +177,18 @@ def test_admin_shows_a_label_records_pending_values_next_to_its_photo_and_the_se
     merge("fdc:1", rid)
     sha = rid.removeprefix("label:")
     c = client()
-    assert c.get("/admin/labels", follow_redirects=False).status_code == 302
-    assert c.get(f"/admin/labels/photo/{sha}", follow_redirects=False).status_code == 302
+    assert c.get("/admin/review", follow_redirects=False).status_code == 302
+    assert c.get(f"/admin/review/photo/{sha}", follow_redirects=False).status_code == 302
     assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
                   follow_redirects=False).status_code == 302
-    page = c.get("/admin/labels")
+    page = c.get("/admin/review")
     assert page.status_code == 200, page.text
-    assert f"/admin/labels/photo/{sha}" in page.text and "ENERC_KCAL" in page.text
+    assert f"/admin/review/photo/{sha}" in page.text and "ENERC_KCAL" in page.text
     assert "231" in page.text and "229" in page.text  # the pending read next to the value served now
     assert '<div class="col-12"><div class="w-100">' in page.text  # Tabler's row-deck makes a bare col-12 a flex row
-    photo = c.get(f"/admin/labels/photo/{sha}")
+    photo = c.get(f"/admin/review/photo/{sha}")
     assert photo.status_code == 200 and photo.content == PNG and photo.headers["content-type"] == "image/png"
-    assert c.get("/admin/labels/photo/" + "0" * 64).status_code == 404
+    assert c.get("/admin/review/photo/" + "0" * 64).status_code == 404
 
 
 def test_a_label_read_below_the_floor_is_not_served_until_a_value_is_accepted(monkeypatch):

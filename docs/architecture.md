@@ -325,7 +325,7 @@ a review decision: it moves a `pending` observation to `accepted` or `rejected`,
 
 ### Checks and review status
 
-`checks.flags` runs seven checks per record (`checks.py:162`). Each failed check names the fields
+`checks.flags` runs seven checks per record (`checks.py:196`). Each failed check names the fields
 that it implicates:
 
 | Check | Implicated fields |
@@ -404,8 +404,8 @@ flowchart LR
     q --> rest["GET /v1/review"]
     q --> mq["MCP review_queue"]
     obs --> adm["SQLAdmin /admin<br/>pending values, read only"]
-    obs --> lab["SQLAdmin /admin/labels<br/>photo, read values, served values"]
-    lab -->|"accept or reject links"| adm
+    obs --> lab["SQLAdmin /admin/review<br/>one card per record: why it failed, all values, photo"]
+    lab -->|"accept or reject links, then back to the page"| adm
     md["MCP decide_review"] --> post["POST /v1/review/{observation_id}"]
     post --> d["review.decide()"]
     adm -->|"accept or reject action, by admin"| d
@@ -427,12 +427,33 @@ flowchart LR
   (`api.py:110`). The split route `POST /v1/products/{id}/split` is on it too. The MCP tools `review_queue`, `decide_review` and `split_product` call the same handlers. Over
   HTTP, they need the `review` scope too (`api.py:152`). The SQLAdmin actions call `review.decide`
   with `by` set to the name of the admin key that logged in (`admin.py:54`).
-- The **Label reads** page at `/admin/labels` shows each label record with pending values
-  (`admin.py:97`). It shows the photo, each value read from it, and the value that the API serves
-  now for the product. Each row links to the accept and reject actions of **Pending values**.
-  `review.queue(records=("label:%", "brand:%"))` gives the rows. The page shows brand uploads too
-  (see [Brand uploads](#brand-uploads)). The photo is the `evidence` of the newest pending value.
-  The photo route `/admin/labels/photo/{sha}` needs the admin login too.
+- The **Review** page at `/admin/review` shows one card per food record that has pending values, of
+  every source (`admin.py:125`, template `templates/review.html`).
+  `review.queue(PAGE_SIZE, offset=…, check=…, source=…, detail=True)` gives the cards (`review.py:23`).
+  A card has:
+  - the name, brand, record id, product id and source. For an `off:` record, it links to the
+    product on Open Food Facts. A leading zero of a 14-digit code is dropped, because OFF files EAN-13 codes.
+  - each failed check as a badge with one line of numbers (`checks.explain`, `checks.py:239`),
+    computed from the record's latest values, accepted ones too. For `energy-mismatch`, the line gives
+    the Atwater energy of the macros (`checks.atwater`, `checks.py:186`, the function that the check
+    itself calls), the declared `ENERC_KCAL` and `ENERC_KJ` ÷ 4.184. `sugars-over-carbs`,
+    `saturates-over-fat` and `macros-over-100g` give the numbers that they compare. The other checks
+    name the fields that they implicate.
+  - a table of the latest value of every nutrient, whatever its status, and every pending value.
+    It shows the status, the value that the API serves now for the product, and Accept and Reject
+    on pending rows. **Accept all pending** sends all the pending ids of the card in one `pks` list.
+  - the photo, for a label or brand record: the `evidence` of the newest pending value. The photo
+    route `/admin/review/photo/{sha}` needs the admin login too.
+
+  The query parameters `check` and `source` filter the records, and `offset` pages them by
+  `PAGE_SIZE` = 25 (`admin.py:113`). The two dropdowns list the checks and sources of the records
+  with pending values and their counts (`review.facets`, `review.py:95`). Each count respects the
+  other filter. `review.queue` without the new keyword arguments returns what it returned before,
+  for `/v1/review` and the MCP tool.
+- The accept and reject links of the page carry `next`, the page's own path and query. After the
+  decision, the action redirects there (`admin.py:62`). `back_to` (`admin.py:72`) accepts a `next`
+  only when it has no scheme or host and its normalised path is under the admin mount. Anything else
+  goes to **Pending values**, as before.
 - The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
   `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
   cannot decide a value.
@@ -630,7 +651,7 @@ flowchart TD
 ```
 
 A brand upload is the same shape as a label read with another source. The photo store, the
-`evidence` column, the ingest path, the review queue and the **Label reads** page are the same.
+`evidence` column, the ingest path, the review queue and the **Review** page are the same.
 
 - `POST /v1/brands/uploads` needs the `contribute` scope. The body is multipart: `barcode`, `name`
   and `brand` (all required), `basis` (`100g` or `100ml`, default `100g`), one field per INFOODS

@@ -192,10 +192,10 @@ def test_admin_shows_a_brand_upload_next_to_its_photo():
     c = client()
     assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
                   follow_redirects=False).status_code == 302
-    page = c.get("/admin/labels")
+    page = c.get("/admin/review")
     assert page.status_code == 200, page.text
-    assert f"/admin/labels/photo/{sha}" in page.text and "Acme Hummus" in page.text and "brand-unverified" in page.text
-    assert c.get(f"/admin/labels/photo/{sha}").content == PNG
+    assert f"/admin/review/photo/{sha}" in page.text and "Acme Hummus" in page.text and "brand-unverified" in page.text
+    assert c.get(f"/admin/review/photo/{sha}").content == PNG
 
 
 def post_form(c, photo: bytes | None = JPEG, **form):

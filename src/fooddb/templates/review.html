@@ -1,0 +1,78 @@
+{% extends "sqladmin/layout.html" %}
+{% block content %}
+{% set accept = url_for('admin:action-observation-accept') %}
+{% set reject = url_for('admin:action-observation-reject') %}
+<div class="col-12"><div class="w-100">
+  <form method="get" action="" class="card mb-3"><div class="card-body d-flex flex-wrap align-items-center gap-2">
+    <select name="check" class="form-select w-auto" onchange="this.form.submit()">
+      <option value="">All checks</option>
+      {% for name, n in facets.checks.items() %}<option value="{{ name }}"{% if name == check %} selected{% endif %}>{{ name }} ({{ n }})</option>{% endfor %}
+      {% if check and check not in facets.checks %}<option value="{{ check }}" selected>{{ check }} (0)</option>{% endif %}
+    </select>
+    <select name="source" class="form-select w-auto" onchange="this.form.submit()">
+      <option value="">All sources</option>
+      {% for name, n in facets.sources.items() %}<option value="{{ name }}"{% if name == source %} selected{% endif %}>{{ name }} ({{ n }})</option>{% endfor %}
+      {% if source and source not in facets.sources %}<option value="{{ source }}" selected>{{ source }} (0)</option>{% endif %}
+    </select>
+    <noscript><button class="btn btn-primary">Filter</button></noscript>
+    <span class="text-muted ms-auto">{% if items %}Records {{ first }}–{{ last }} of {{ facets.total }}{% else %}{{ facets.total }} records{% endif %}</span>
+    {% if prev %}<a class="btn btn-sm" href="{{ prev }}">Previous</a>{% endif %}
+    {% if next %}<a class="btn btn-sm" href="{{ next }}">Next</a>{% endif %}
+  </div></form>
+  {% if not items %}
+  <div class="card"><div class="card-body">No record with pending values{% if check or source or offset %} on this page. <a href="?">Clear filters</a>{% else %} waits for review{% endif %}.</div></div>
+  {% endif %}
+  {% for item in items %}
+  {% set sha = item.photo %}
+  {% set pending = item['values'] | selectattr('status', 'equalto', 'pending') | list %}
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3 class="card-title">{{ item.name }}{% if item.brand %} <span class="text-muted">· {{ item.brand }}</span>{% endif %}
+        <span class="text-muted">· {{ item.record }} · product {{ item.product_id }} · {{ item.source }}</span></h3>
+      <div class="card-actions">
+        {% if item.record.startswith('off:') %}{% set code = item.record[4:] %}{% if code|length == 14 and code[0] == '0' %}{% set code = code[1:] %}{% endif %}
+        <a href="https://world.openfoodfacts.org/product/{{ code }}" target="_blank" rel="noopener" class="me-2">Open Food Facts</a>{% endif %}
+      </div>
+    </div>
+    <div class="card-body row">
+      {% if sha %}
+      <div class="col-md-4">
+        <a href="{{ url_for('admin:view-review-photo', sha=sha) }}" target="_blank">
+          <img src="{{ url_for('admin:view-review-photo', sha=sha) }}" alt="label photo" class="img-fluid rounded border">
+        </a>
+      </div>
+      {% endif %}
+      <div class="{{ 'col-md-8' if sha else 'col-12' }}">
+        {% if item.checks %}
+        <ul class="mb-3">
+          {% for check in item.checks %}<li><span class="badge bg-yellow-lt">{{ check }}</span>{% if item.why[check] %} {{ item.why[check] }}{% endif %}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        <table class="table table-vcenter">
+          <thead><tr><th>Nutrient</th><th>This record</th><th>Status</th><th>Served now</th><th class="text-end">
+            <a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ pending | map(attribute='observation_id') | join(',') }}&next={{ back | urlencode }}">Accept all pending</a>
+          </th></tr></thead>
+          <tbody>
+          {% for v in item['values'] %}
+          {% set now = item.served.get(v.nutrient) %}
+          <tr>
+            <td>{{ v.nutrient }}</td>
+            <td>{% if v.value is none %}<span class="text-muted">withdrawn</span>{% else %}<strong>{{ v.value }}</strong> {{ v.unit }}/{{ v.basis }}{% endif %}</td>
+            <td><span class="badge {{ {'pending': 'bg-yellow-lt', 'accepted': 'bg-green-lt', 'rejected': 'bg-red-lt'}[v.status] }}">{{ v.status }}</span>{% if not v.latest %} <span class="text-muted">superseded</span>{% endif %}</td>
+            <td>{% if now %}{{ now.value }} {{ now.unit }}/{{ now.basis }} <span class="text-muted">({{ now.source }})</span>{% else %}<span class="text-muted">none</span>{% endif %}</td>
+            <td class="text-nowrap text-end">
+              {% if v.status == 'pending' %}
+              <a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ v.observation_id }}&next={{ back | urlencode }}">Accept</a>
+              <a class="btn btn-sm btn-outline-danger" href="{{ reject }}?pks={{ v.observation_id }}&next={{ back | urlencode }}">Reject</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div></div>
+{% endblock %}

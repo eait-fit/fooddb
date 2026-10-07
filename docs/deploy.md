@@ -337,7 +337,7 @@ steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
 `POST /v1/labels` stores each photo once, under its SHA-256, in the `fooddb_photos` volume. The
 worker reads it with the model in `FOODDB__BACKEND__LABEL_READER`. A photo is at most 10 MiB, and
 only JPEG, PNG and WebP pass. Back up the `fooddb_photos` volume with the database: each label
-value names its photo in `observation.evidence`, and the review page at `/admin/labels` shows it.
+value names its photo in `observation.evidence`, and the **Review** page at `/admin/review` shows it.
 
 1. Set `FOODDB__BACKEND__LLM_API_KEY` in `deploy/.env` on the server. Do not put it in a
    repository or a chat.
@@ -345,7 +345,7 @@ value names its photo in `observation.evidence`, and the review page at `/admin/
 3. Make a `contribute` key for each client that sends photos. See [API keys](#api-keys).
 
 A read below `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` waits for review in full. Check the
-**Label reads** page in `/admin` for these reads.
+**Review** page in `/admin` for these reads.
 
 ## ODbL dumps
 
