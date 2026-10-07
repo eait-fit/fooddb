@@ -36,7 +36,7 @@ you use the data, or link to it. The texts are:
 fooddb changes this data: it maps the nutrient codes to INFOODS, converts kJ to kcal for Fineli,
 and leaves out values that the table gives only as a limit. For CoFID it also leaves out carbohydrate and sugars, which the table gives as monosaccharide
 equivalents. For TFDA it also skips the rows of sample means. For MEXT it also drops the class headings
-that lead some food names. These licences have no share-alike
+that lead some food names, and it adds the separate sugars of the carbohydrate table into total sugars. These licences have no share-alike
 obligation.
 
 ## The Open Food Facts layer
