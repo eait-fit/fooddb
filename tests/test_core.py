@@ -33,6 +33,22 @@ def test_checks_name_the_fields_they_implicate():
     assert found["negative-value"] == {"FIBTG"}
 
 
+def test_checks_count_alcohol_at_seven_kcal_per_gram():
+    # Per 100 g, rounded from CIQUAL and Frida: a dry white wine and a 40 % vodka.
+    wine = {"ENERC_KCAL": 70, "PROCNT": 0.1, "FAT": 0, "CHOCDF": 2.6, "ALC": 9.5}
+    vodka = {"ENERC_KCAL": 231, "PROCNT": 0, "FAT": 0, "CHOCDF": 0, "ALC": 33}
+    for drink in (wine, vodka):
+        assert not checks.flags(drink, "alcoholic-beverages")
+        assert "energy-mismatch" in checks.flags({k: v for k, v in drink.items() if k != "ALC"})
+    # A figure that the alcohol does not explain still fails, and names ALC among the fields it implicates.
+    found = checks.flags({**wine, "ENERC_KCAL": 400})
+    assert found["energy-mismatch"] == {"ENERC_KCAL", "PROCNT", "FAT", "CHOCDF", "ALC"}
+    # Fibre and alcohol both count with available carbohydrate: 4 * 5 + 2 * 3 + 7 * 10 = 96.
+    assert not checks.flags({"ENERC_KCAL": 96, "PROCNT": 0, "FAT": 0, "CHOAVL": 5, "FIBTG": 3, "ALC": 10})
+    assert checks.flags({"ENERC_KCAL": 900, "PROCNT": 0, "FAT": 0, "CHOCDF": 5, "ALC": 0})["energy-mismatch"] == {
+        "ENERC_KCAL", "PROCNT", "FAT", "CHOCDF", "ALC"}
+
+
 def test_off_reads_new_and_old_nutrition_schemas():
     from fooddb.fetchers.off import per_100
 
