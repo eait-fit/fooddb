@@ -23,9 +23,9 @@ ATTRIBUTION = ("McCance and Widdowson's The Composition of Foods Integrated Data
 # method and is left out. SATFOD is saturated fatty acids per 100 g of food (SATFAC is per 100 g of fat).
 # CHO and TOTSUG are left out: the user guide states them as monosaccharide equivalents, which is about 5 %
 # more than the weight of available carbohydrate and sugars, and it gives only an approximate factor. That is
-# neither CHOAVL nor CHOCDF.
+# neither CHOAVL nor CHOCDF. ALCO is ethanol in g, per 100 ml for the alcoholic beverages like the rest of their row.
 PROXIMATES = ("1.3 Proximates", {"PROT": "PROCNT", "FAT": "FAT", "KCALS": "ENERC_KCAL", "KJ": "ENERC_KJ",
-                                  "AOACFIB": "FIBTG", "SATFOD": "FASAT"})
+                                  "AOACFIB": "FIBTG", "SATFOD": "FASAT", "ALCO": "ALC"})
 INORGANICS = ("1.4 Inorganics", {"NA": "NA"})
 
 

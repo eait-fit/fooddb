@@ -654,6 +654,18 @@ def test_a_failing_check_holds_back_only_the_fields_it_implicates():
     assert "SUGAR" not in per_100
 
 
+def test_a_wine_with_its_alcohol_is_served_and_a_mislabelled_one_waits_for_review():
+    from fooddb import ingest, review
+
+    wine = {"ENERC_KCAL": 70, "PROCNT": 0.1, "FAT": 0, "CHOCDF": 2.6, "ALC": 9.5}
+    ingest.run("t", "wines", [rec(id="frida:164", source="frida", values=wine, categories=["frida:112"]),
+                               rec(id="frida:165", source="frida", values=wine | {"ENERC_KCAL": 400})])
+    assert review.queue()[0]["record"] == "frida:165" and len(review.queue()) == 1
+    assert {v["nutrient"] for v in review.queue()[0]["pending"]} == {"ENERC_KCAL", "PROCNT", "FAT", "CHOCDF", "ALC"}
+    served = product("frida:164")["per_100"]
+    assert (served["ALC"]["value"], served["ENERC_KCAL"]["value"]) == (9.5, 70)
+
+
 def test_an_accepted_value_is_served_from_the_next_snapshot(monkeypatch):
     from fooddb import review
 

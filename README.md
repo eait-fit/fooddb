@@ -70,7 +70,7 @@ product from `/v1/records/fdc:9?include=off`, shortened:
 ```
 
 Nutrients in `per_100` use INFOODS codes: `ENERC_KCAL` (kcal), `ENERC_KJ` (kJ, when the source
-states it), `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`, `SUGAR`, `FASAT`, `FIBTG` (g) and `NA` (mg). The two
+states it), `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`, `SUGAR`, `FASAT`, `FIBTG`, `ALC` (alcohol, when the source states it) (g) and `NA` (mg). The two
 carbohydrate codes are different quantities, and a product can have both. `CHOCDF` is
 carbohydrate by difference, with fibre: USDA FDC and US or Canadian labels. `CHOAVL` is available
 carbohydrate, without fibre: EU, UK, Australian and similar labels. fooddb never converts one into

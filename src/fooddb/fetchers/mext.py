@@ -26,10 +26,11 @@ SHEET = "表全体"
 # the rest g. A trailing "-" in an identifier only marks how MEXT derived the value. CHOAVL is available
 # carbohydrate by mass (利用可能炭水化物, 質量計): fibre is not in it. CHOAVLM, the same in monosaccharide
 # equivalents, is left out. CHOCDF is carbohydrate by difference (炭水化物), fibre included. FIB- is total
-# dietary fibre (食物繊維総量, AOAC 2011.25). PROT- is protein from nitrogen. FAT- is total lipid.
+# dietary fibre (食物繊維総量, AOAC 2011.25). PROT- is protein from nitrogen. FAT- is total lipid. ALC is
+# alcohol (アルコール) in g.
 COLUMNS = {
     "ENERC": "ENERC_KJ", "ENERC_KCAL": "ENERC_KCAL", "PROT-": "PROCNT", "FAT-": "FAT", "CHOAVL": "CHOAVL",
-    "CHOCDF-": "CHOCDF", "FIB-": "FIBTG", "NA": "NA",
+    "CHOCDF-": "CHOCDF", "FIB-": "FIBTG", "NA": "NA", "ALC": "ALC",
 }
 # The supplementary tables, one workbook each with the same sheet and rows of identifiers. Both state g per 100 g
 # of edible part. FASAT is saturated fatty acids (飽和脂肪酸) in the fatty acid book (脂肪酸成分表編), 第1表. The

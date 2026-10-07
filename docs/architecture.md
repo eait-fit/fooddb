@@ -259,9 +259,9 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   restricted-circulation and coupon prefixes: 02, 04, 05, 20–29, 98 and 99 (`gtin.py:3`). An OFF
   product without a valid global GTIN is skipped (`fetchers/off.py:129`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
-  `SUGAR`, `FASAT`, `FIBTG` and `NA`. Each fetcher maps its source codes in one table
-  (`fetchers/off.py:23`, `fetchers/fdc.py:26`, `fetchers/ciqual.py:22`, `fetchers/cofid.py:27`,
-  `fetchers/fineli.py:24`, `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:18`, `fetchers/mext.py:30`,
+  `SUGAR`, `FASAT`, `FIBTG`, `NA` and `ALC` (alcohol). Each fetcher maps its source codes in one table
+  (`fetchers/off.py:23`, `fetchers/fdc.py:27`, `fetchers/ciqual.py:22`, `fetchers/cofid.py:27`,
+  `fetchers/fineli.py:24`, `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:19`, `fetchers/mext.py:31`,
   `fetchers/tfda.py:31`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
   from one code to another, except kJ to kcal (below).
@@ -330,7 +330,7 @@ that it implicates:
 
 | Check | Implicated fields |
 |---|---|
-| `energy-mismatch`: Atwater energy against the macros | `ENERC_KCAL`, `PROCNT`, `FAT`, the carbohydrate code, and `FIBTG` when it is used |
+| `energy-mismatch`: Atwater energy against the macros | `ENERC_KCAL`, `PROCNT`, `FAT`, the carbohydrate code, `FIBTG` when it is used, and `ALC` when the record has it |
 | `macros-over-100g`: protein, fat and carbohydrate over 100 g | the macros that the record has |
 | `sugars-over-carbs` | `SUGAR`, the carbohydrate code |
 | `saturates-over-fat` | `FASAT`, `FAT` |
@@ -341,7 +341,9 @@ that it implicates:
 The carbohydrate code is `CHOAVL` when the record has it, else `CHOCDF`. Atwater is
 4 × protein + 9 × fat + 4 × carbohydrate. With `CHOAVL`, it adds 2 × fibre when `FIBTG` is present,
 because available carbohydrate does not contain fibre. 2 kcal/g is the fibre factor of EU
-Regulation 1169/2011, Annex XIV. With `CHOCDF`, fibre is already in the carbohydrate.
+Regulation 1169/2011, Annex XIV. With `CHOCDF`, fibre is already in the carbohydrate. When the
+record has `ALC`, Atwater also adds 7 × alcohol, the ethanol factor of the same Annex. A wine, a
+beer or a spirit then passes. Energy that the alcohol does not explain still fails.
 
 The ranges are a table in `checks.py` (`checks.py:45`), with a source for each row where one
 exists:

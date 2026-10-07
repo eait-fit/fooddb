@@ -23,7 +23,7 @@ KJ_PER_KCAL = 4.184
 # CHOAVL is available carbohydrate. FIBC is total dietary fibre. Fineli states energy in kJ only.
 NUTRIENTS = {
     "ENERC": "ENERC_KJ", "CHOAVL": "CHOAVL", "FAT": "FAT", "PROT": "PROCNT", "FIBC": "FIBTG",
-    "SUGAR": "SUGAR", "FASAT": "FASAT", "NA": "NA",
+    "SUGAR": "SUGAR", "FASAT": "FASAT", "NA": "NA", "ALC": "ALC",
 }
 
 

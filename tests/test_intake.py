@@ -68,7 +68,7 @@ def test_ciqual_reads_the_xlsx_into_available_carbohydrate_and_its_groups():
     assert dessert.id == "ciqual:24999" and dessert.name == "Dessert (average)" and dessert.lang == "en"
     assert dessert.licence == "etalab-2.0" and dessert.source == "ciqual" and dessert.layer == "core"
     assert dessert.values == {"ENERC_KJ": 1070, "ENERC_KCAL": 255, "PROCNT": 4.41, "CHOAVL": 32.9, "FAT": 11.3,
-                              "SUGAR": 21.3, "FIBTG": 1.7, "FASAT": 4.96, "NA": 130}
+                              "SUGAR": 21.3, "FIBTG": 1.7, "FASAT": 4.96, "NA": 130, "ALC": 0.087}
     assert dessert.categories == [] and dessert.observed_at == observed
     assert celeriac.categories == ["ciqual:starters and dishes", "ciqual:mixed salads"]
     assert "CHOCDF" not in tuna.values and tuna.values["CHOAVL"] == 8.13
@@ -92,7 +92,7 @@ def test_fineli_reads_its_csv_package_into_available_carbohydrate_and_kcal():
         sugar, fructose = fineli.records(z)
     assert sugar.id == "fineli:1" and sugar.name == "SUGAR" and sugar.licence == "CC-BY-4.0"
     assert sugar.values == {"ENERC_KJ": 1698.3, "CHOAVL": 99.9, "FAT": 0, "PROCNT": 0, "FIBTG": 0, "SUGAR": 99.9,
-                            "FASAT": 0, "NA": 0.1, "ENERC_KCAL": 1698.3 / 4.184}
+                            "FASAT": 0, "NA": 0.1, "ALC": 0, "ENERC_KCAL": 1698.3 / 4.184}
     assert sugar.categories == ["fineli:SUGADD", "fineli:SUGARTOT"] and checks.category(sugar.categories) == "sweets"
     assert fructose.name == "FRUCTOSE"
     assert sugar.observed_at.tzinfo is UTC
@@ -185,10 +185,11 @@ def test_cofid_reads_its_sheets_and_leaves_out_carbohydrate_in_monosaccharide_eq
     assert ackee.values == {"PROCNT": 2.9, "FAT": 15.2, "ENERC_KCAL": 151, "ENERC_KJ": 625, "NA": 240}
     assert agar.values["FASAT"] == 0.3 and "FIBTG" not in agar.values
     assert allspice.values == {"PROCNT": 6.1, "FAT": 8.7, "FASAT": 2.5, "NA": 77}  # N for energy: no value
-    assert apples.values == {"PROCNT": 0.6, "FAT": 0.5, "ENERC_KCAL": 51, "ENERC_KJ": 215, "FIBTG": 1.2, "FASAT": 0.12, "NA": 1}
+    assert apples.values == {"PROCNT": 0.6, "FAT": 0.5, "ENERC_KCAL": 51, "ENERC_KJ": 215, "FIBTG": 1.2, "FASAT": 0.12, "NA": 1, "ALC": 0}
     assert not any(k in v.values for v in (ackee, agar, allspice, apples, beer) for k in ("CHOAVL", "CHOCDF", "SUGAR"))
     assert beer.values["FAT"] == 0 and beer.values["FIBTG"] == 0 and beer.values["FASAT"] == 0  # Tr is 0
     assert apples.basis == "100g" and beer.basis == "100ml"  # alcoholic beverages are per 100 ml
+    assert beer.values["ALC"] == 2.9  # ethanol in g per 100 ml, like the energy
     assert apples.observed_at == observed
     assert apples.categories == ["cofid:FA", "cofid:F"] and checks.category(apples.categories) == "fruits"
     assert beer.categories == ["cofid:QA", "cofid:Q"] and checks.category(beer.categories) == "alcoholic-beverages"
@@ -245,7 +246,7 @@ def test_frida_reads_its_data_table_with_both_carbohydrate_codes_and_its_food_gr
     assert strawberry.values == pytest.approx({
         "ENERC_KJ": 161.95358974359, "ENERC_KCAL": 38.4579487179487, "PROCNT": 0.659855769230769,
         "CHOCDF": 8.34732371794872, "CHOAVL": 6.8619391025641, "FIBTG": 1.48538461538462, "FAT": 0.6,
-        "SUGAR": 6.06625, "FASAT": 0.049655172413793, "NA": 0.5078})
+        "SUGAR": 6.06625, "FASAT": 0.049655172413793, "NA": 0.5078, "ALC": 0})
     assert strawberry.observed_at == observed
     assert strawberry.values["CHOCDF"] == pytest.approx(strawberry.values["CHOAVL"] + strawberry.values["FIBTG"])
     assert strawberry.categories == ["frida:51", "frida:47"] and checks.category(strawberry.categories) == "fruits"
@@ -314,6 +315,8 @@ def test_mext_reads_its_main_table_with_available_carbohydrate_and_clean_japanes
     assert "FIBTG" not in horse_mackerel.values and checks.category(horse_mackerel.categories) == "fish"
     assert oil.values["FAT"] == 100 and "CHOAVL" not in oil.values and checks.category(oil.categories) == "fats"
     assert checks.category(banana.categories) == "fruits" and checks.category(sake.categories) == "beverages"
+    assert sake.values["ALC"] == 12.3 and "ALC" not in banana.values  # アルコール in g; "-" elsewhere
+    assert not checks.flags(sake.values, "beverages")
     assert not checks.flags(banana.values, "fruits") and not checks.flags(oil.values, "fats")
 
 
