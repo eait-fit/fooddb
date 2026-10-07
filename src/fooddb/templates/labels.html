@@ -1,6 +1,6 @@
 {% extends "sqladmin/layout.html" %}
 {% block content %}
-<div class="col-12">
+<div class="col-12"><div class="w-100">
   {% if not items %}
   <div class="card"><div class="card-body">No label read or brand upload waits for review.</div></div>
   {% endif %}
@@ -39,5 +39,5 @@
     </div>
   </div>
   {% endfor %}
-</div>
+</div></div>
 {% endblock %}
