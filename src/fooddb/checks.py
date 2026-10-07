@@ -179,6 +179,20 @@ def seals(values: Mapping[str, float], liquid: bool) -> tuple[dict[str, dict[str
     return out, used
 
 
+def carbs_field(values: Mapping[str, float]) -> str:
+    return "CHOAVL" if "CHOAVL" in values else "CHOCDF"
+
+
+def atwater(values: Mapping[str, float]) -> float | None:
+    """Energy in kcal that the macros give: 4, 9 and 4 per g of protein, fat and carbohydrate, plus fibre at 2 with
+    CHOAVL and alcohol at 7. None when a macro is missing."""
+    p, f, c = values.get("PROCNT"), values.get("FAT"), values.get(carbs := carbs_field(values))
+    if None in (p, f, c):
+        return None
+    fibre = values.get("FIBTG") if carbs == "CHOAVL" else None
+    return 4 * p + 9 * f + 4 * c + 2 * (fibre or 0) + 7 * (values.get("ALC") or 0)
+
+
 def flags(values: Mapping[str, float], category: str | None = None, basis: str = "100g",
           labels: Iterable[str] = ()) -> dict[str, set[str]]:
     """Values are per 100 g, keyed by INFOODS tagname. Each failed check names the fields it implicates.
@@ -188,17 +202,15 @@ def flags(values: Mapping[str, float], category: str | None = None, basis: str =
     7 kcal/g when the record has it (both EU 1169/2011 Annex XIV).
     """
     out: dict[str, set[str]] = {}
-    carbs = "CHOAVL" if "CHOAVL" in values else "CHOCDF"
+    carbs = carbs_field(values)
     macros = ("PROCNT", "FAT", carbs)
     kcal = values.get("ENERC_KCAL")
     p, f, c = values.get("PROCNT"), values.get("FAT"), values.get(carbs)
     fibre = values.get("FIBTG") if carbs == "CHOAVL" else None
     alcohol = values.get("ALC")
-    if kcal is not None and None not in (p, f, c):
-        atwater = 4 * p + 9 * f + 4 * c + 2 * (fibre or 0) + 7 * (alcohol or 0)
-        if abs(kcal - atwater) > max(20, 0.25 * max(kcal, atwater)):
-            out["energy-mismatch"] = {"ENERC_KCAL", *macros} | {
-                k for k, v in (("FIBTG", fibre), ("ALC", alcohol)) if v is not None}
+    if kcal is not None and (energy := atwater(values)) is not None and abs(kcal - energy) > max(20, 0.25 * max(kcal, energy)):
+        out["energy-mismatch"] = {"ENERC_KCAL", *macros} | {
+            k for k, v in (("FIBTG", fibre), ("ALC", alcohol)) if v is not None}
     if sum(v for v in (p, f, c) if v is not None) > 105:
         out["macros-over-100g"] = {k for k in macros if k in values}
     sugar, sat = values.get("SUGAR"), values.get("FASAT")
@@ -222,3 +234,27 @@ def flags(values: Mapping[str, float], category: str | None = None, basis: str =
             if carried is False:
                 out.setdefault("seal-disagreement", set()).update(read)
     return out
+
+
+def explain(check: str, values: Mapping[str, float], implicated: Iterable[str] = ()) -> str:
+    """One line with the numbers a check compared, from the record's values. A check without a rule here names the
+    fields it implicates."""
+    g = lambda k: f"{values[k]:g}"
+    carbs = carbs_field(values)
+    if check == "energy-mismatch" and (kcal := atwater(values)) is not None:
+        parts = [f"{g(k)} {name}" for k, name in (("PROCNT", "protein"), ("FAT", "fat"), (carbs, "carbs"),
+                                                  ("FIBTG", "fibre"), ("ALC", "alcohol")) if k in values]
+        line = f"macros give {kcal:.0f} kcal by Atwater ({', '.join(parts)} g)"
+        if "ENERC_KCAL" in values:
+            line += f"; declared {g('ENERC_KCAL')} kcal"
+        if "ENERC_KJ" in values:
+            line += f"; kJ/4.184 gives {values['ENERC_KJ'] / 4.184:.0f} kcal"
+        return line
+    if check == "sugars-over-carbs" and {"SUGAR", carbs} <= values.keys():
+        return f"sugars {g('SUGAR')} g are over carbohydrate {g(carbs)} g"
+    if check == "saturates-over-fat" and {"FASAT", "FAT"} <= values.keys():
+        return f"saturated fat {g('FASAT')} g is over total fat {g('FAT')} g"
+    if check == "macros-over-100g":
+        macros = [k for k in ("PROCNT", "FAT", carbs) if k in values]
+        return f"{' + '.join(f'{k} {g(k)}' for k in macros)} = {sum(values[k] for k in macros):g} g in 100 g"
+    return f"implicates {', '.join(sorted(implicated))}" if implicated else ""

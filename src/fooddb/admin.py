@@ -1,12 +1,15 @@
-"""SQLAdmin at /admin: the pending review queue with accept and reject actions, the label reads and brand uploads that
-wait for review next to their photo, and the merge log with a split action. Accounts and purchases are read-only here.
+"""SQLAdmin at /admin: the pending review queue with accept and reject actions, the Review page with one card per food
+record that has pending values (failed checks explained, all latest values, the photo of a label or brand record), and
+the merge log with a split action. Accounts and purchases are read-only here.
 The Overview, Jobs, Requests and Users pages (adminpages.py) show the platform and run its few actions. Login takes an
 API key with the admin scope. Without FOODDB__BACKEND__SECRET_KEY the admin is not served."""
 
 import logging
 import os
+import posixpath
 import secrets
 from pathlib import Path
+from urllib.parse import urlencode, urlsplit
 
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse, Response
@@ -62,7 +65,18 @@ class PendingView(ModelView, model=Observation):
                 await run_in_threadpool(review.decide, int(pk), decision, request.session["key_name"])
             except (LookupError, review.NotPending):
                 pass  # decided meanwhile (by an agent or a second click): the first decision stands
-        return RedirectResponse(request.url_for("admin:list", identity=self.identity), status_code=302)
+        return RedirectResponse(back_to(request, str(request.url_for("admin:list", identity=self.identity))),
+                                status_code=302)
+
+
+def back_to(request: Request, default: str) -> str:
+    """The `next` query parameter when it is a path under the admin mount, else `default`: a redirect stays in the app."""
+    nxt = urlsplit(request.query_params.get("next", ""))
+    path = posixpath.normpath(nxt.path)
+    mount = urlsplit(str(request.url_for("admin:index"))).path
+    if nxt.scheme or nxt.netloc or "\\" in nxt.path or not f"{path}/".startswith(mount):
+        return default
+    return path + (f"?{nxt.query}" if nxt.query else "")
 
 
 class MergeLog(Base):
@@ -96,19 +110,33 @@ class MergeLogView(ModelView, model=MergeLog):
         return RedirectResponse(request.url_for("admin:list", identity=self.identity), status_code=302)
 
 
-class LabelView(BaseView):
-    """Each label or brand record with pending values: the photo, the values read from it, and the values served now.
+PAGE_SIZE = 25
+
+
+class ReviewView(BaseView):
+    """Each food record with pending values: why its checks failed, all its latest values next to the values served now,
+    and the photo of a label or brand record. Filters: `check`, `source`; paging: `offset`.
     SQLAdmin registers exposed methods last line first, and the last one names the menu link: `page` stays first."""
 
-    name = "Label reads"
-    icon = "fa-solid fa-camera"
+    name = "Review"
+    icon = "fa-solid fa-clipboard-check"
 
-    @expose("/labels", identity="labels")
+    @expose("/review", identity="review")
     async def page(self, request: Request):
-        items = await run_in_threadpool(review.queue, 100, ("label:%", "brand:%"))
-        return await self.templates.TemplateResponse(request, "labels.html", {"items": items})
+        q = request.query_params
+        check, source = q.get("check") or None, q.get("source") or None
+        offset = int(q["offset"]) if q.get("offset", "").isdigit() else 0
+        items = await run_in_threadpool(lambda: review.queue(PAGE_SIZE, offset=offset, check=check, source=source, detail=True))
+        facets = await run_in_threadpool(review.facets, ("%",), check, source)
+        page = lambda off: "?" + urlencode({k: v for k, v in (("check", check), ("source", source), ("offset", off)) if v})
+        return await self.templates.TemplateResponse(request, "review.html", {
+            "items": items, "facets": facets, "check": check, "source": source, "offset": offset,
+            "back": request.url.path + (f"?{request.url.query}" if request.url.query else ""),
+            "prev": page(max(offset - PAGE_SIZE, 0)) if offset else None,
+            "next": page(offset + PAGE_SIZE) if offset + PAGE_SIZE < facets["total"] else None,
+            "first": offset + 1, "last": offset + len(items)})
 
-    @expose("/labels/photo/{sha}", identity="label-photo")
+    @expose("/review/photo/{sha}", identity="review-photo")
     async def label_photo(self, request: Request) -> Response:
         try:
             data = await run_in_threadpool(photos.load, request.path_params["sha"])
@@ -174,7 +202,7 @@ def mount(app: FastAPI) -> None:
     for page in (adminpages.OverviewView, adminpages.JobsView, adminpages.RequestsView, adminpages.UsersView):
         admin.add_base_view(page)
     admin.add_view(PendingView)
-    admin.add_base_view(LabelView)
+    admin.add_base_view(ReviewView)
     admin.add_view(MergeLogView)
     admin.add_view(AccountView)
     admin.add_view(PurchaseView)

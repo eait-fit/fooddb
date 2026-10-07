@@ -6,7 +6,7 @@ from typing import Literal
 
 from sqlalchemy import func, select, text, update
 
-from fooddb import resolve
+from fooddb import checks, resolve
 from fooddb.db import engine, merge_log, observation
 
 STATUS = {"accept": "accepted", "reject": "rejected"}
@@ -20,26 +20,34 @@ class MergedAway(ValueError):
     pass
 
 
-def queue(limit: int = 100, records: tuple[str, ...] = ("%",)) -> list[dict]:
+def queue(limit: int = 100, records: tuple[str, ...] = ("%",), *, offset: int = 0, check: str | None = None,
+          source: str | None = None, detail: bool = False) -> list[dict]:
     """Pending values grouped per source record, newest first, next to the values the API serves now
-    and the checks the record failed. `records` are LIKE patterns on the record id, e.g. ("label:%", "brand:%")."""
+    and the checks the record failed. `records` are LIKE patterns on the record id, e.g. ("label:%", "brand:%").
+    `offset`, `check` and `source` page and filter the records. `detail` adds to each item the brand, all the
+    record's latest values (`values`, any status) and one line per failed check with its numbers (`why`)."""
     with engine().connect() as conn:
         rows = conn.execute(text("""
             with recs as (
-                select food_id from observation where status = 'pending' and food_id like any(:records)
-                group by food_id order by max(observed_at) desc, food_id limit :limit
+                select o.food_id from observation o join food f on f.id = o.food_id
+                where o.status = 'pending' and o.food_id like any(:records)
+                  and (cast(:check as text) is null or cast(:check as text) = any(f.flags))
+                  and (cast(:source as text) is null or f.source = cast(:source as text))
+                group by o.food_id order by max(o.observed_at) desc, o.food_id limit :limit offset :offset
             )
             select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.observed_at, o.evidence,
-                   f.product_id, f.layer, f.name, f.source, f.flags
+                   f.product_id, f.layer, f.name, f.brand, f.category, f.source, f.flags
             from recs join observation o on o.food_id = recs.food_id and o.status = 'pending'
             join food f on f.id = o.food_id
             order by o.observed_at desc, o.food_id, o.nutrient
-        """), {"limit": limit, "records": list(records)}).mappings().all()
+        """), {"limit": limit, "offset": offset, "records": list(records), "check": check, "source": source}
+        ).mappings().all()
     items: dict[str, dict] = {}
     for r in rows:
         item = items.setdefault(r["food_id"], {
             "record": r["food_id"], "product_id": r["product_id"], "layer": r["layer"], "name": r["name"],
-            "source": r["source"], "photo": r["evidence"], "checks": list(r["flags"]), "pending": [], "served": {}})
+            "source": r["source"], "photo": r["evidence"], "checks": list(r["flags"]), "pending": [], "served": {}}
+            | ({"brand": r["brand"], "category": r["category"]} if detail else {}))
         item["pending"].append({
             "observation_id": r["id"], "nutrient": r["nutrient"], "unit": r["unit"], "basis": r["basis"],
             "value": None if r["value_per_100"] is None else float(r["value_per_100"]),
@@ -50,7 +58,56 @@ def queue(limit: int = 100, records: tuple[str, ...] = ("%",)) -> list[dict]:
             for item in items.values():
                 if item["layer"] == layer and item["product_id"] == p["id"]:
                     item["served"] = p["per_100"]  # a held record is not among p["records"], its product still serves
+    if detail:
+        _detail(items)
     return list(items.values())
+
+
+def _detail(items: dict[str, dict]) -> None:
+    """Each record's latest value per nutrient (whatever its status) and its pending values, and the checks explained
+    from those latest values."""
+    with engine().connect() as conn:
+        rows = conn.execute(text("""
+            with newest as (
+                select distinct on (food_id, nutrient) id from observation where food_id = any(:ids)
+                order by food_id, nutrient, observed_at desc, id desc
+            )
+            select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.status, o.observed_at,
+                   o.id in (select id from newest) as latest
+            from observation o
+            where o.food_id = any(:ids) and (o.status = 'pending' or o.id in (select id from newest))
+            order by o.food_id, o.nutrient, o.observed_at desc, o.id desc
+        """), {"ids": list(items)}).mappings().all()
+    for item in items.values():
+        item["values"] = []
+    for r in rows:
+        items[r["food_id"]]["values"].append({
+            "observation_id": r["id"], "nutrient": r["nutrient"], "unit": r["unit"], "basis": r["basis"],
+            "status": r["status"], "observed_at": r["observed_at"], "latest": r["latest"],
+            "value": None if r["value_per_100"] is None else float(r["value_per_100"])})
+    for item in items.values():
+        latest = [v for v in item["values"] if v["latest"] and v["value"] is not None]
+        nums = {v["nutrient"]: v["value"] for v in latest}
+        implicated = checks.flags(nums, item["category"], latest[0]["basis"] if latest else "100g")
+        item["why"] = {c: checks.explain(c, nums, implicated.get(c, ())) for c in item["checks"]}
+
+
+def facets(records: tuple[str, ...] = ("%",), check: str | None = None, source: str | None = None) -> dict:
+    """What the records with pending values hold: how many (`total`, under both filters), and per check and per source
+    how many records have it, each counted under the other filter."""
+    pending = """select f.id, f.source, f.flags from food f where f.id like any(:records)
+                 and exists (select 1 from observation o where o.food_id = f.id and o.status = 'pending')"""
+    has_check = "(cast(:check as text) is null or cast(:check as text) = any(flags))"
+    has_source = "(cast(:source as text) is null or source = cast(:source as text))"
+    args = {"records": list(records), "check": check, "source": source}
+    with engine().connect() as conn:
+        total = conn.execute(text(f"with p as ({pending}) select count(*) from p where {has_check} and {has_source}"),
+                             args).scalar_one()
+        by_check = conn.execute(text(f"with p as ({pending}) select c, count(*) from p, unnest(flags) c "
+                                     f"where {has_source} group by c order by 2 desc, 1"), args).all()
+        by_source = conn.execute(text(f"with p as ({pending}) select source, count(*) from p where {has_check} "
+                                      "group by source order by 2 desc, 1"), args).all()
+    return {"total": total, "checks": dict(by_check), "sources": dict(by_source)}
 
 
 def decide(observation_id: int, decision: Literal["accept", "reject"], by: str, note: str | None = None) -> dict:

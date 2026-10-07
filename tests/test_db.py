@@ -2,6 +2,7 @@
 FOODDB__BACKEND__DATABASE_URL at this worktree's __test database; skipped otherwise, loudly."""
 
 import os
+import re
 from datetime import UTC, datetime
 
 import pytest
@@ -734,6 +735,111 @@ def test_admin_lists_pending_values_and_accepts_them():
     with engine().connect() as conn:
         row = conn.execute(text("select status, reviewed_by from observation where id = :id"), {"id": obs}).one()
     assert tuple(row) == ("accepted", "kirill")
+
+
+BISCUITS = {"PROCNT": 7.8, "CHOAVL": 76.0, "FAT": 11.0, "FIBTG": 2.0, "ENERC_KCAL": 700.8, "ENERC_KJ": 1847.6,
+            "SUGAR": 23.0, "FASAT": 1.7, "NA": 15.6}
+
+
+def ingest_biscuits(**kw) -> None:
+    from fooddb import ingest
+
+    code = "08002330009380"
+    ingest.run("t", "off", [rec(id=f"off:{code}", source="off", layer="off", licence="ODbL-1.0", gtin14=code,
+                                name="Biscotti Petit", brand="Esselunga", values=BISCUITS, **kw)])
+
+
+def admin_client():
+    c = client()
+    assert c.post("/admin/login", data={"username": "", "password": key("admin", name="kirill")},
+                  follow_redirects=False).status_code == 302
+    return c
+
+
+def test_the_review_page_explains_an_energy_mismatch_with_the_numbers_and_shows_accepted_values():
+    ingest_biscuits()
+    page = admin_client().get("/admin/review")
+    assert page.status_code == 200, page.text
+    text = page.text
+    assert "Biscotti Petit" in text and "Esselunga" in text and "off:08002330009380" in text
+    assert "https://world.openfoodfacts.org/product/8002330009380" in text and 'target="_blank"' in text
+    assert "macros give 438 kcal by Atwater" in text and "declared 700.8 kcal" in text and "kJ/4.184 gives 442 kcal" in text
+    for nutrient in ("ENERC_KJ", "SUGAR", "FASAT", "NA"):  # accepted values sit next to the pending ones
+        assert re.search(rf"<td>{nutrient}</td>.*?accepted", text, re.S), nutrient
+    assert text.count("Accept all pending") == 1 and "pks=" in text
+    assert "ENERC_KCAL" in text and ">pending<" in text
+
+
+def test_atwater_is_one_function_for_the_check_and_its_explanation():
+    from fooddb import checks
+
+    assert round(checks.atwater(BISCUITS)) == 438
+    assert checks.atwater({"PROCNT": 1.0}) is None
+    assert "ENERC_KCAL" in checks.flags(BISCUITS)["energy-mismatch"]
+    assert checks.explain("sugars-over-carbs", {"SUGAR": 12.0, "CHOCDF": 10.0}) == "sugars 12 g are over carbohydrate 10 g"
+    assert checks.explain("negative-value", {}, {"FAT", "NA"}) == "implicates FAT, NA"
+
+
+def test_the_review_page_filters_by_check_and_source_and_pages(monkeypatch):
+    from fooddb import ingest, review
+
+    ingest_biscuits()
+    ingest.run("t", "fdc", [rec(id="fdc:7", values={"ENERC_KCAL": 229.0, "SUGAR": 20.0, "CHOCDF": 9.0})])
+    facets = review.facets()
+    assert facets["total"] == 2 and facets["checks"] == {"energy-mismatch": 1, "sugars-over-carbs": 1}
+    assert facets["sources"] == {"fdc": 1, "off": 1}
+    assert review.facets(check="energy-mismatch")["sources"] == {"off": 1}
+    c = admin_client()
+    both = c.get("/admin/review").text
+    assert "Biscotti Petit" in both and "Hummus, commercial" in both
+    only = c.get("/admin/review", params={"check": "sugars-over-carbs"}).text
+    assert "Hummus, commercial" in only and "Biscotti Petit" not in only
+    assert "energy-mismatch (1)" in only and "sugars-over-carbs (1)" in only
+    only = c.get("/admin/review", params={"source": "off"}).text
+    assert "Biscotti Petit" in only and "Hummus, commercial" not in only
+    assert "Biscotti Petit" not in c.get("/admin/review", params={"check": "sugars-over-carbs", "source": "off"}).text
+    monkeypatch.setattr("fooddb.admin.PAGE_SIZE", 1)
+    first = c.get("/admin/review").text
+    assert "Records 1–1 of 2" in first and "?offset=1" in first and "Previous" not in first
+    second = c.get("/admin/review", params={"offset": 1}).text
+    assert "Records 2–2 of 2" in second and "Previous" in second and "Next" not in second
+    assert ("Biscotti Petit" in first) != ("Biscotti Petit" in second)
+    assert c.get("/admin/review", params={"offset": "junk", "check": "nope"}).status_code == 200
+
+
+def test_a_decision_from_the_review_page_returns_to_it_and_refuses_an_unsafe_next():
+    from urllib.parse import quote
+
+    from fooddb import review
+
+    ingest_biscuits()
+    c = admin_client()
+    pks = [v["observation_id"] for v in review.queue()[0]["pending"]]
+    back = "/admin/review?check=energy-mismatch&offset=0"
+    assert "&next=" + quote(back, safe="/") in c.get(back).text
+    r = c.get(f"/admin/observation/action/reject?pks={pks[0]}&next={quote(back, safe='')}", follow_redirects=False)
+    assert r.status_code == 302 and r.headers["location"] == back
+    r = c.get(f"/admin/observation/action/accept?pks={','.join(map(str, pks[1:]))}&next={quote(back, safe='')}",
+              follow_redirects=False)
+    assert r.headers["location"] == back and review.queue() == []
+    for bad in ("https://evil.example/admin/review", "//evil.example/admin/review", "/elsewhere", "/admin/../v1/review",
+                "/administrator", "\\\\evil.example", "javascript:alert(1)", ""):
+        r = c.get(f"/admin/observation/action/accept?pks=0&next={quote(bad, safe='')}", follow_redirects=False)
+        assert r.status_code == 302 and r.headers["location"].endswith("/admin/observation/list"), bad
+
+
+def test_the_queue_is_unchanged_for_callers_that_ask_for_nothing_new():
+    from fooddb import review
+
+    ingest_typo()
+    [item] = review.queue()
+    assert set(item) == {"record", "product_id", "layer", "name", "source", "photo", "checks", "pending", "served"}
+    assert set(item["pending"][0]) == {"observation_id", "nutrient", "unit", "basis", "value", "observed_at"}
+    assert review.queue(100, ("%",)) == review.queue() == review.queue(100, ("fdc:%",)) != review.queue(offset=1)
+    [detailed] = review.queue(detail=True)
+    assert {k: v for k, v in detailed.items() if k not in ("brand", "category", "values", "why")} == item
+    assert {(v["nutrient"], v["status"]) for v in detailed["values"]} >= {("ENERC_KCAL", "pending"), ("FIBTG", "accepted")}
+    assert "macros give" in detailed["why"]["energy-mismatch"] and "2290" in detailed["why"]["energy-mismatch"]
 
 
 def merge(*record_ids: str) -> None:

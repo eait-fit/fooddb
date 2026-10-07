@@ -203,7 +203,7 @@ The worker reads the photo with OpenRouter (`FOODDB__BACKEND__LLM_API_KEY`, mode
 `FOODDB__BACKEND__LLM_MODEL`). Without a key, it uses the demo reader. The values become the
 source record `label:<sha256>`. The checks run as for every source. A read below
 `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` (default 0.9) waits for review in full. Reviewers see the
-photo next to the values on the **Label reads** page in `/admin`.
+photo next to the values on the **Review** page in `/admin`.
 
 ## Brand uploads
 
@@ -221,7 +221,7 @@ The fields are `barcode`, `name`, `brand`, `basis`, one field for each INFOODS c
 `serving_g` and `photo`. The values become the source record `brand:<gtin14>`. The GS1 check
 (`FOODDB__BACKEND__GS1_VERIFIER`) has only the backend `none`. Thus every value waits for review,
 and nothing from the upload is served until a reviewer accepts a value. Reviewers see the photo next
-to the values on the **Label reads** page in `/admin`.
+to the values on the **Review** page in `/admin`.
 
 ## Fix a wrong merge
 

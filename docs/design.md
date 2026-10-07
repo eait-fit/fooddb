@@ -131,7 +131,7 @@ value waits for review. Not built: a Devin backend.
 
 Python throughout: uv, FastAPI (whose OpenAPI spec also serves the RapidAPI listing), SQLAlchemy
 with Alembic, the official MCP Python SDK, Typer for the CLI, and Splink for matching, run in
-process. The review UI is SQLAdmin plus one custom page, **Label reads**, which shows the photo next
+process. The review UI is SQLAdmin plus one custom page, **Review**, one card per record with pending values: why its checks failed, all its values, and for a label read the photo next
 to the values read from it and the values served now. Built. Built ([#48](https://github.com/eait-fit/fooddb/issues/48)): the admin panel with the pages Overview, Jobs, Requests and Users, a request log of route templates, and actions as POST forms with a CSRF token. The MCP server has the read tools and
 two review tools, over stdio (`fooddb mcp`) and Streamable HTTP at `/mcp`. Built: our own API keys
 with the scopes `read`, `contribute`, `review` and `admin`, and a rate limit per key. REST, `/mcp` and the
