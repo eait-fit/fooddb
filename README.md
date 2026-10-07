@@ -295,7 +295,7 @@ dump comes with the ODbL attribution and share-alike obligation: see
 | `table` cofid | CoFID, UK composition of foods integrated dataset (Public Health England), Excel | OGL v3.0, attribution | weekly check |
 | `table` frida | Frida, Danish food composition database (DTU), Excel from DTU Data | CC BY 4.0, attribution | weekly check |
 | `table` matvaretabellen | Matvaretabellen, Norwegian food composition table, JSON API | NLOD 2.0, attribution | weekly check |
-| `table` mext | Standard Tables of Food Composition in Japan, 8th edition, 2023 supplement (MEXT), Excel | free use, cite the source | weekly check |
+| `table` mext | Standard Tables of Food Composition in Japan, 8th edition, 2023 supplement (MEXT), three Excel files | free use, cite the source | weekly check |
 | `table` tfda | Taiwan food nutrient database (TFDA), CSV in a zip, found through data.gov.tw | Open Government Data License 1.0, attribution | weekly check |
 | `off` | Open Food Facts daily delta files | ODbL, `off` layer | every 6 hours |
 | `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |

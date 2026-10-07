@@ -77,7 +77,7 @@ The worker reads label photos through the model port: OpenRouter on a server, or
 The worker fetches from nine upstream sources. Each value keeps the licence of its source:
 `CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:16`),
 `OGL-UK-3.0` for CoFID (`fetchers/cofid.py:16`), `CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`) and Frida (`fetchers/frida.py:16`), `NLOD-2.0` for
-Matvaretabellen (`fetchers/matvaretabellen.py:12`), `mext-free-use` for MEXT (`fetchers/mext.py:17`), `OGDL-Taiwan-1.0` for TFDA (`fetchers/tfda.py:18`) and
+Matvaretabellen (`fetchers/matvaretabellen.py:12`), `mext-free-use` for MEXT (`fetchers/mext.py:19`), `OGDL-Taiwan-1.0` for TFDA (`fetchers/tfda.py:18`) and
 `ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
 FDC Branded Foods and Fineli are off by default (`health.py:28`). See [Fetch](#fetch).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
@@ -224,15 +224,22 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 - The Matvaretabellen fetcher downloads the whole table from its API, `api/en/foods.json`, and
   reads it with `json_items` (`fetchers/matvaretabellen.py:47`). The API has no versions, so the
   SHA-256 of the file is the ref, and the values carry the day of the download.
-- The MEXT fetcher reads the MEXT page of the 8th edition, 2023 supplement. It takes the main table,
-  the link `第2章（データ）` (`fetchers/mext.py:74`). The file name starts with its date, so the name
-  is the ref and the date is the observation date. A page whose title no longer names this edition
-  stops the run, because the attribution text names it. The sheet `表全体` has a row of INFOODS
-  component identifiers, and the fetcher finds each column by its identifier (`fetchers/mext.py:50`).
-  A cell `Tr` or `(Tr)` is 0. A number in brackets is an estimate that the table prints as its
-  value, so it is the value. A cell `-` gives no value (`fetchers/mext.py:35`). A name loses the
-  class headings that lead some names, and its ideographic spaces become spaces. See
-  [decisions.md](decisions.md).
+- The MEXT fetcher reads the MEXT page of the 8th edition, 2023 supplement. It takes three Excel
+  tables (`fetchers/mext.py:118`): the main table, the link `第2章（データ）`, the fatty acid table, the
+  link `第2章第1表（データ）` after `脂肪酸成分表編`, and the carbohydrate table, the link `第2章本表（データ）`
+  after `炭水化物成分表編`. The file names start with their date. The ref is the three names joined with
+  `+`, and the observation date is the newest date. A page whose title no longer names this edition
+  stops the run, because the attribution text names it. The sheet `表全体` of each table has a row of
+  INFOODS component identifiers, and the fetcher finds each column by its identifier
+  (`fetchers/mext.py:72`). A cell `Tr` or `(Tr)` is 0. A number in brackets is an estimate that the
+  table prints as its value, so it is the value. A cell `-` gives no value (`fetchers/mext.py:46`). A
+  name loses the class headings that lead some names, and its ideographic spaces become spaces.
+  The main table has no sugars and no saturated fat, so the fetcher joins the two other tables to it
+  on the food number (`fetchers/mext.py:89`). `FASAT` is the `FASAT` column of the fatty acid table.
+  `SUGAR` is the sum of the carbohydrate table's glucose, fructose, galactose, sucrose, maltose, lactose
+  and trehalose, each in its own mass, and a `-` adds nothing. Both tables must state g per 100 g, and
+  the same number must name the same food in every table, or the run stops. A food that a table does
+  not list gets no value from it. See [decisions.md](decisions.md).
 - The TFDA fetcher reads the data.gov.tw record of dataset 8543 (`fetchers/tfda.py:75`) and takes its
   CSV zip (`fetchers/tfda.py:65`). The modification time of the record, in Taipei time, is the ref and
   the observation date. The CSV has one row for each food and analyte, so the fetcher folds it into
@@ -254,7 +261,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
   `SUGAR`, `FASAT`, `FIBTG`, `NA` and `ALC` (alcohol). Each fetcher maps its source codes in one table
   (`fetchers/off.py:23`, `fetchers/fdc.py:27`, `fetchers/ciqual.py:22`, `fetchers/cofid.py:27`,
-  `fetchers/fineli.py:24`, `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:19`, `fetchers/mext.py:29`,
+  `fetchers/fineli.py:24`, `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:19`, `fetchers/mext.py:31`,
   `fetchers/tfda.py:31`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
   from one code to another, except kJ to kcal (below).
@@ -262,7 +269,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   available carbohydrate, without fibre. FDC nutrient 1005 is `CHOCDF`. FDC has no available
   carbohydrate. CIQUAL `Carbohydrate`, Fineli `CHOAVL` and Matvaretabellen `Karbo` are `CHOAVL`. MEXT states both:
   its `CHOAVL` (available, by mass) is `CHOAVL`, and its `CHOCDF-` (by difference) is `CHOCDF`. Its
-  `CHOAVLM` (monosaccharide equivalents) is not stored. Frida states both: its parameter 170 is `CHOCDF`
+  `CHOAVLM` (monosaccharide equivalents) is not stored. MEXT's `SUGAR` is the sum of its separate sugars. Frida states both: its parameter 170 is `CHOCDF`
   and its parameter 172 is `CHOAVL`. CoFID states carbohydrate and sugars as monosaccharide equivalents.
   They are neither code, so fooddb does not store them. TFDA's `總碳水化合物` is `CHOCDF`, and TFDA has no
   available carbohydrate.

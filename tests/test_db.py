@@ -1191,12 +1191,17 @@ def test_frida_is_served_with_both_carbohydrate_codes_and_outranks_the_crowd():
 def test_mext_is_served_in_japanese_with_both_carbohydrate_codes_and_its_attribution():
     from pathlib import Path
 
-    from fooddb import ingest
+    from fooddb import ingest, review
     from fooddb.fetchers import mext
 
-    xlsx = Path(__file__).parent / "fixtures" / "mext.xlsx"
-    assert ingest.run(mext.FETCHER, "t", mext.records(xlsx, datetime(2026, 3, 27, tzinfo=UTC)))[0] == 9
+    fixtures = Path(__file__).parent / "fixtures"
+    records = mext.records(fixtures / "mext.xlsx", datetime(2026, 3, 27, tzinfo=UTC),
+                           fixtures / "mext_fatty_acids.xlsx", fixtures / "mext_carbohydrates.xlsx")
+    assert ingest.run(mext.FETCHER, "t", records)[0] == 10
     p = product("mext:07107")
+    assert (p["per_100"]["SUGAR"]["value"], p["per_100"]["SUGAR"]["licence"]) == (15.5, "mext-free-use")
+    assert (p["per_100"]["FASAT"]["value"], p["per_100"]["FASAT"]["source"]) == (0.07, "mext")
+    assert not [i for i in review.queue() if i["record"] == "mext:07107"]  # no check flags the joined values
     assert p["name"] == {"value": "バナナ 生", "source": "mext", "licence": "mext-free-use", "record": "mext:07107"}
     assert p["lang"]["value"] == "ja"
     assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (18.5, "mext-free-use")

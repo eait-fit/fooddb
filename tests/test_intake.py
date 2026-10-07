@@ -297,9 +297,10 @@ def test_mext_reads_its_main_table_with_available_carbohydrate_and_clean_japanes
 
     observed = datetime(2026, 3, 27, tzinfo=UTC)
     got = {r.id: r for r in mext.records(FIXTURES / "mext.xlsx", observed)}
-    assert list(got) == ["mext:01001", "mext:01172", "mext:01091", "mext:03032", "mext:07107", "mext:09059", "mext:10457",
-                         "mext:14011", "mext:16001"]
-    amaranth, batter, porridge, syrup, banana, wakame, horse_mackerel, oil, sake = got.values()
+    assert list(got) == ["mext:01001", "mext:01172", "mext:01026", "mext:01091", "mext:03032", "mext:07107", "mext:09059",
+                         "mext:10457", "mext:14011", "mext:16001"]
+    amaranth, batter, bread, porridge, syrup, banana, wakame, horse_mackerel, oil, sake = got.values()
+    assert "FASAT" not in bread.values and "SUGAR" not in bread.values  # the main table has neither
     assert amaranth.name == "アマランサス 玄穀" and amaranth.lang == "ja" and amaranth.observed_at == observed
     assert amaranth.licence == "mext-free-use" and amaranth.source == "mext" and amaranth.layer == "core"
     assert amaranth.values == pytest.approx({"ENERC_KJ": 1452, "ENERC_KCAL": 343, "PROCNT": 12.7, "FAT": 6.0, "CHOAVL": 57.8,
@@ -317,6 +318,70 @@ def test_mext_reads_its_main_table_with_available_carbohydrate_and_clean_japanes
     assert sake.values["ALC"] == 12.3 and "ALC" not in banana.values  # アルコール in g; "-" elsewhere
     assert not checks.flags(sake.values, "beverages")
     assert not checks.flags(banana.values, "fruits") and not checks.flags(oil.values, "fats")
+
+
+def mext_with_supplements():
+    from fooddb.fetchers import mext
+
+    return {r.id: r for r in mext.records(FIXTURES / "mext.xlsx", datetime(2026, 3, 27, tzinfo=UTC),
+                                          FIXTURES / "mext_fatty_acids.xlsx", FIXTURES / "mext_carbohydrates.xlsx")}
+
+
+def test_mext_joins_saturated_fat_and_the_sum_of_its_sugars_by_food_number():
+    got = mext_with_supplements()
+    assert list(got) == ["mext:01001", "mext:01172", "mext:01026", "mext:01091", "mext:03032", "mext:07107", "mext:09059",
+                         "mext:10457", "mext:14011", "mext:16001"]
+    amaranth, batter, bread, porridge, syrup, banana, wakame, horse_mackerel, oil, sake = got.values()
+    # The main table's values stay as they were.
+    assert amaranth.values == pytest.approx({"ENERC_KJ": 1452, "ENERC_KCAL": 343, "PROCNT": 12.7, "FAT": 6.0, "CHOAVL": 57.8,
+                                             "CHOCDF": 64.9, "FIBTG": 7.4, "NA": 1, "FASAT": 1.18, "SUGAR": 1.3})
+    # Sugars are the sum of glucose, fructose, galactose, sucrose, maltose, lactose and trehalose, each in its own mass.
+    # A "-" (not measured, as galactose is for bread) adds nothing, and "Tr" is 0.
+    assert bread.values["FASAT"] == 1.5 and bread.values["SUGAR"] == pytest.approx(1.5 + 2.2 + 0 + 1.3 + 0.2 + 0.1)
+    assert banana.values["SUGAR"] == pytest.approx(2.6 + 2.4 + 10.5) and banana.values["FASAT"] == 0.07  # (0.07): an estimate
+    assert porridge.values["SUGAR"] == pytest.approx(0.2) and porridge.values["FASAT"] == 0.08
+    # A food that a table does not list keeps no value for it. Zero is a value: the table measured it.
+    assert "FASAT" not in syrup.values and syrup.values["SUGAR"] == 0
+    assert "SUGAR" not in horse_mackerel.values and horse_mackerel.values["FASAT"] == 2.87
+    assert "SUGAR" not in oil.values and oil.values["FASAT"] == 10.25
+    assert sake.values["FASAT"] == 0 and sake.values["SUGAR"] == 2.5
+    assert not {"FASAT", "SUGAR"} & (batter.values.keys() | wakame.values.keys())
+    for food, category in ((banana, "fruits"), (oil, "fats")):
+        assert not checks.flags(food.values, category)  # sugars stay under CHOAVL, saturates under fat
+
+
+def test_mext_reads_the_main_table_alone_when_no_supplement_is_given():
+    from fooddb.fetchers import mext
+
+    bread = next(r for r in mext.records(FIXTURES / "mext.xlsx", datetime(2026, 3, 27, tzinfo=UTC)) if r.id == "mext:01026")
+    assert "FASAT" not in bread.values and "SUGAR" not in bread.values
+
+
+def broken_mext(tmp_path, source: str, old: str, new: str) -> Path:
+    broken = tmp_path / source
+    with zipfile.ZipFile(FIXTURES / source) as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(f">{old}<".encode(), f">{new}<".encode()) if "sharedStrings" in item.filename else data)
+    return broken
+
+
+def test_mext_stops_when_a_supplementary_table_changes_its_identifier_unit_or_numbering(tmp_path):
+    from fooddb.fetchers import mext
+
+    at, main = datetime(2026, 3, 27, tzinfo=UTC), FIXTURES / "mext.xlsx"
+    fa, carbs = FIXTURES / "mext_fatty_acids.xlsx", FIXTURES / "mext_carbohydrates.xlsx"
+    with pytest.raises(RuntimeError, match="FASAT"):
+        list(mext.records(main, at, broken_mext(tmp_path, "mext_fatty_acids.xlsx", "FASAT", "FASATX"), carbs))
+    with pytest.raises(RuntimeError, match="TRES"):
+        list(mext.records(main, at, fa, broken_mext(tmp_path, "mext_carbohydrates.xlsx", "TRES", "TRESX")))
+    with pytest.raises(RuntimeError, match="FASAT.*unit"):
+        list(mext.records(main, at, broken_mext(tmp_path, "mext_fatty_acids.xlsx", "g/100 g", "mg/100 g"), carbs))
+    with pytest.raises(RuntimeError, match="GLUS.*unit"):
+        list(mext.records(main, at, fa, broken_mext(tmp_path, "mext_carbohydrates.xlsx", "g/100 g", "mg/100 g")))
+    # The same number must name the same food in every table, or the join would mix foods.
+    with pytest.raises(RuntimeError, match="01001.*numbering"):
+        list(mext.records(main, at, broken_mext(tmp_path, "mext_fatty_acids.xlsx", "アマランサス　玄穀", "あわ"), carbs))
 
 
 def test_mext_stops_when_a_component_identifier_moves(tmp_path):
@@ -337,11 +402,22 @@ def test_mext_finds_the_main_table_on_its_page_and_stops_when_the_edition_change
     page = ('<html><head><title>日本食品標準成分表（八訂）増補2023年：文部科学省</title></head><body>'
             '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_0001.pdf">日本食品標準成分表（八訂）増補2023年 電子書籍（第2章を除く）&nbsp;(PDF:5.1MB)</a></li>'
             '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_02.xlsx">・第2章（データ）&nbsp;(Excel:1.9MB) <img alt="Excel"/></a></li>'
-            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_04.xlsx">・第2章第1表（データ）&nbsp;(Excel:915KB)</a></li></body></html>')
-    url, ref, observed = mext.newest(page)
-    assert url == "https://www.mext.go.jp/content/20260327-mxt_kagsei-mext-000029402_02.xlsx"
-    assert ref == "20260327-mxt_kagsei-mext-000029402_02.xlsx" and observed == datetime(2026, 3, 27, tzinfo=UTC)
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_04.xlsx">・第2章第1表（データ）&nbsp;(Excel:915KB)</a></li>'
+            '<li><a href="/content/20230428-mxt_kagsei-mext_00001_031.pdf">日本食品標準成分表（八訂）増補2023年脂肪酸成分表編　電子書籍（第2章を除く）&nbsp;(PDF:1.2MB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_09.xlsx">・第2章第1表（データ）&nbsp;(Excel:1.5MB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_10.xlsx">・第2章第2表（データ）&nbsp;(Excel:891KB)</a></li>'
+            '<li><a href="/content/20230428-mxt_kagsei-mext_00001_041.pdf">日本食品標準成分表（八訂）増補2023年炭水化物成分表編　電子書籍（第2章を除く）&nbsp;(PDF:1.5MB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_13.xlsx">・第2章本表（データ）&nbsp;(Excel:312KB)</a></li>'
+            '<li><a href="/content/20260327-mxt_kagsei-mext-000029402_14.xlsx">・第2章本表別表1（データ）&nbsp;(Excel:292KB)</a></li></body></html>')
+    urls, ref, observed = mext.newest(page)
+    names = [f"20260327-mxt_kagsei-mext-000029402_{n}.xlsx" for n in ("02", "09", "13")]
+    assert urls == tuple("https://www.mext.go.jp/content/" + n for n in names)  # the first table of the fatty acid book, not of the amino acid book
+    assert ref == "+".join(names) and observed == datetime(2026, 3, 27, tzinfo=UTC)
     with pytest.raises(RuntimeError, match="edition"):
         mext.newest(page.replace("八訂）増補2023年：", "九訂）2030年："))
     with pytest.raises(RuntimeError, match="no main table"):
         mext.newest(page.replace("・第2章（データ）", "・第3章（データ）"))
+    with pytest.raises(RuntimeError, match="no fatty acid table"):
+        mext.newest(page.replace("_09.xlsx", "_09.pdf"))
+    with pytest.raises(RuntimeError, match="no carbohydrate table"):
+        mext.newest(page.replace("・第2章本表（データ）", "・第2章本表別表1（データ）"))

@@ -36,7 +36,8 @@ hand-set), lane 3, and the eait side of the label-photo loop.
    others. Built ([#15](https://github.com/eait-fit/fooddb/issues/15)): USDA FDC Foundation, SR
    Legacy and Branded Foods, CIQUAL (Etalab 2.0), CoFID (OGL v3.0, [#36](https://github.com/eait-fit/fooddb/issues/36)), Fineli (CC BY 4.0), Frida (CC BY 4.0, [#35](https://github.com/eait-fit/fooddb/issues/35)),
    Matvaretabellen (NLOD 2.0), Japan MEXT (free use with a citation,
-   [#38](https://github.com/eait-fit/fooddb/issues/38)) and Taiwan TFDA (OGDL 1.0,
+   [#38](https://github.com/eait-fit/fooddb/issues/38); total sugars and saturated fat from its
+   separate tables, [#57](https://github.com/eait-fit/fooddb/issues/57)) and Taiwan TFDA (OGDL 1.0,
    [#39](https://github.com/eait-fit/fooddb/issues/39)). FDC Branded and Fineli are off by default. The
    FDC fetcher reads its JSON as a stream. Not built: Korea MFDS
    ([#37](https://github.com/eait-fit/fooddb/issues/37)) and BLS.
