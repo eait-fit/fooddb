@@ -185,6 +185,7 @@ def test_admin_shows_a_label_records_pending_values_next_to_its_photo_and_the_se
     assert page.status_code == 200, page.text
     assert f"/admin/labels/photo/{sha}" in page.text and "ENERC_KCAL" in page.text
     assert "231" in page.text and "229" in page.text  # the pending read next to the value served now
+    assert '<div class="col-12"><div class="w-100">' in page.text  # Tabler's row-deck makes a bare col-12 a flex row
     photo = c.get(f"/admin/labels/photo/{sha}")
     assert photo.status_code == 200 and photo.content == PNG and photo.headers["content-type"] == "image/png"
     assert c.get("/admin/labels/photo/" + "0" * 64).status_code == 404
