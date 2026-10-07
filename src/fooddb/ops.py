@@ -6,7 +6,7 @@ import logging
 
 from sqlalchemy import text
 
-from fooddb import dump, health, jobs, requestlog
+from fooddb import dump, health, jobs, requestlog, review
 from fooddb.db import engine
 
 log = logging.getLogger(__name__)
@@ -24,6 +24,17 @@ def _rows(sql: str, **params) -> list[dict]:
 def _bars(rows: list[dict], key: str = "n") -> list[dict]:
     top = max((r[key] for r in rows), default=0) or 1
     return [r | {"pct": round(r[key] * 100 / top)} for r in rows]
+
+
+def _hourly(hours: int) -> list[dict]:
+    """Requests per bucket of the window, with an empty bucket for a quiet hour or day, so a chart has no gaps."""
+    unit = WINDOWS[hours]
+    return _bars(_rows(f"""select s.b, count(r.id) n, count(r.id) filter (where r.status >= 400) errors
+                           from generate_series(date_trunc('{unit}', now() - make_interval(hours => :h)), date_trunc('{unit}', now()),
+                                                interval '1 {unit}') s(b)
+                           left join request_log r on r.at >= s.b and r.at < s.b + interval '1 {unit}'
+                                and r.at > now() - make_interval(hours => :h)
+                           group by 1 order by 1""", h=hours))
 
 
 def overview() -> dict:
@@ -49,6 +60,12 @@ def overview() -> dict:
         }
     out["dump"] = (dump.manifests() or [None])[0]
     out["health"] = health.report()
+    out["stale"] = [name for name, f in out["health"]["fetchers"].items() if not f["fresh"]]
+    out["queue"] = {r["status"]: r["n"] for r in _rows("select lower(status::text) status, count(*) n from pq_tasks group by 1")}
+    out["failed_tasks"] = _rows("""select id, name, error, completed_at from pq_tasks where status = 'FAILED'
+                                   order by completed_at desc nulls last limit 5""")
+    out["pending_records"] = review.facets()
+    out["hourly"] = _hourly(24)
     return out
 
 
@@ -81,8 +98,7 @@ def requests_report(hours: int) -> dict:
                        from request_log where {since}""", **w)[0]
     return {
         "hours": hours, "windows": list(WINDOWS), "days": requestlog.retention_days(), "totals": totals,
-        "buckets": _bars(_rows(f"""select date_trunc('{WINDOWS[hours]}', at) b, count(*) n, count(*) filter (where status >= 400) errors
-                                   from request_log where {since} group by 1 order by 1""", **w)),
+        "buckets": _hourly(hours),
         "statuses": _bars(_rows(f"select status, count(*) n from request_log where {since} group by 1 order by 2 desc", **w)),
         "callers": _bars(_rows(f"""select coalesce(key_name, '(refused or no key)') name, account_id, {_STATS}
                                    from request_log where {since} group by 1, 2 order by n desc limit 20""", **w)),

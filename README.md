@@ -88,8 +88,8 @@ Fineli, Frida, Matvaretabellen, MEXT and TFDA. See [docs/data-licence.md](docs/d
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
 
-The review queue is also in a browser at `$(./dev url)/admin`. Log in with an `admin` key in the
-password field. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
+The review queue is also in a browser at `$(./dev url)/admin`. Sign in with an `admin` key. The
+landing page is a dashboard, and the menu has **Review**, **Platform** and **Customers** sections. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
 admin login cookie.
 
 The same login opens four more pages: **Overview** (counts per source and layer, snapshot, dump,
@@ -236,8 +236,8 @@ curl -X POST "$(./dev url)/v1/products/1234/split" -H 'content-type: application
 The records go back to the product id they had before the merge, so old links to that id work
 again. When the log has no such id, they get a new product. Matching never joins the moved records
 and the remaining records again. Past snapshot days keep their values; today's values change at the
-next snapshot build. Agents call the MCP tool `split_product`. In SQLAdmin, open **Merge log** at
-`/admin`, select the merge and run **Split**.
+next snapshot build. Agents call the MCP tool `split_product`. In the admin, open **Merge log** at
+`/admin` and press **Split** on the merge row.
 
 `./dev cli match train` estimates the Splink weights on the current data and saves the model to
 `FOODDB__BACKEND__MATCH_MODEL`. Matching uses that model from its next run. Without it, matching

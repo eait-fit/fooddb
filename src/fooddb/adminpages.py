@@ -18,8 +18,8 @@ def _csrf(request: Request) -> str:
     return request.session.setdefault("csrf", secrets.token_urlsafe(24))
 
 
-async def _render(view: BaseView, request: Request, template: str, data: dict):
-    return await view.templates.TemplateResponse(request, template, {"csrf": _csrf(request)} | data)
+async def _render(view: BaseView, request: Request, template: str, data: dict, subtitle: str = ""):
+    return await view.templates.TemplateResponse(request, template, {"csrf": _csrf(request), "title": view.name, "subtitle": subtitle} | data)
 
 
 async def _form(request: Request) -> dict | None:
@@ -50,16 +50,17 @@ class OverviewView(BaseView):
 
     @expose("/overview", identity="overview")
     async def page(self, request: Request):
-        return await _render(self, request, "admin_overview.html", await run_in_threadpool(ops.overview))
+        return await _render(self, request, "admin_overview.html", await run_in_threadpool(ops.overview), "The platform at a glance")
 
 
 class JobsView(BaseView):
     name = "Jobs"
+    category = "Platform"
     icon = "fa-solid fa-list-check"
 
     @expose("/jobs", identity="jobs")
     async def page(self, request: Request):
-        return await _render(self, request, "admin_jobs.html", await run_in_threadpool(ops.jobs_report))
+        return await _render(self, request, "admin_jobs.html", await run_in_threadpool(ops.jobs_report), "Fetchers, the queue, schedules and fetch runs")
 
     @expose("/jobs/run", methods=["POST"], identity="jobs-run")
     async def run(self, request: Request):
@@ -77,21 +78,24 @@ class JobsView(BaseView):
 
 class RequestsView(BaseView):
     name = "Requests"
+    category = "Platform"
     icon = "fa-solid fa-chart-column"
 
     @expose("/requests", identity="requests")
     async def page(self, request: Request):
         data = await run_in_threadpool(ops.requests_report, _int(request.query_params.get("hours"), 24))
-        return await _render(self, request, "admin_requests.html", data)
+        return await _render(self, request, "admin_requests.html", data, "API traffic from the request log")
 
 
 class UsersView(BaseView):
     name = "Users"
+    category = "Customers"
     icon = "fa-solid fa-users"
 
     @expose("/users", identity="users")
     async def page(self, request: Request):
-        return await _render(self, request, "admin_users.html", await run_in_threadpool(ops.users_report, request.query_params.get("q", "")))
+        return await _render(self, request, "admin_users.html", await run_in_threadpool(ops.users_report, request.query_params.get("q", "")),
+                              "Accounts, credits and API keys")
 
     @expose("/users/{account_id:int}/grant", methods=["POST"], identity="users-grant")
     async def grant(self, request: Request):

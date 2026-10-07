@@ -207,9 +207,9 @@ docker compose exec api fooddb accounts grant someone@example.com 100000
 docker compose exec api fooddb accounts set-unlimited someone@example.com
 ```
 
-`/admin` shows the accounts and the purchases, read-only. Its **Users** page also grants credits,
-sets an account to unlimited and revokes keys. The **Jobs**, **Requests** and **Overview** pages show
-the queue, the request log and the platform counts.
+`/admin` shows the accounts and the purchases, read-only, with a filter and search on each list. Its **Users** page also grants credits,
+sets an account to unlimited and revokes keys. The **Overview** page is the landing page: pending values, jobs, requests per hour, credits and what needs attention. The **Jobs** and **Requests** pages show
+the queue and the request log. The admin needs no extra setting, and its CSS and JavaScript ship inside the image.
 
 ## TLS with Caddy
 

@@ -1,5 +1,5 @@
 {% extends "sqladmin/layout.html" %}
-{% from "admin_macros.html" import ts, post %}
+{% from "admin_macros.html" import ts, post, filter_box %}
 {% macro keys_table(keys) %}
 <table class="table table-sm mb-0">
   <thead><tr><th>Key</th><th>Scopes</th><th>Created</th><th>Last used</th><th></th></tr></thead>
@@ -13,34 +13,39 @@
 {% endmacro %}
 {% block content %}
 <div class="col-12"><div class="w-100">
-  <form class="mb-3" method="get"><div class="input-group" style="max-width: 30em">
-    <input class="form-control" name="q" value="{{ q }}" placeholder="Search by email"><button class="btn btn-outline-primary" type="submit">Search</button>
-  </div></form>
-  <p class="text-muted">{{ accounts|length }} of {{ total }} accounts, newest first. Usage is requests metered this month.</p>
-  {% for a in accounts %}
   <div class="card mb-3">
     <div class="card-header">
-      <h3 class="card-title">{{ a.email }} <span class="text-muted">account {{ a.id }}, since {{ ts(a.created_at) }}</span></h3>
-      <div class="card-actions">{% if a.unlimited %}<span class="badge bg-blue-lt">unlimited</span>{% endif %}</div>
+      <h3 class="card-title">Accounts</h3>
+      <div class="ms-auto d-flex gap-2 align-items-center">
+        <span class="text-muted small">{{ accounts|length }} of {{ total }}, newest first. Usage is requests metered this month.</span>
+        <form method="get" class="d-flex gap-1"><input class="form-control form-control-sm" name="q" value="{{ q }}" placeholder="Search by email"><button class="btn btn-sm btn-outline-primary" type="submit">Search</button></form>
+        {{ filter_box("accounts", "Filter this page") }}
+      </div>
     </div>
-    <div class="card-body">
-      <div class="row mb-3">
-        <div class="col-sm-3"><div class="subheader">Credits</div><div class="h2">{{ "{:,}".format(a.credits) }}</div></div>
-        <div class="col-sm-3"><div class="subheader">Requests this month</div><div class="h2">{{ "{:,}".format(a.used) }}</div></div>
-        <div class="col-sm-3"><div class="subheader">Purchases</div><div class="h2">{{ a.purchases }}</div><div class="text-muted">{{ "{:,}".format(a.bought) }} credits bought</div></div>
-        <div class="col-sm-3 d-flex flex-column gap-2">
-          <form method="post" action="{{ url_for("admin:view-users-grant", account_id=a.id) }}" class="input-group input-group-sm">
+    <div class="table-responsive">
+    <table class="table table-vcenter card-table" id="accounts" data-sortable>
+      <thead><tr><th>Account</th><th class="num">Credits</th><th class="num">Requests this month</th><th class="num">Purchases</th><th>Since (UTC)</th><th data-nosort>Credits and plan</th><th data-nosort>Keys</th></tr></thead>
+      <tbody>
+      {% for a in accounts %}<tr>
+        <td><strong>{{ a.email }}</strong> <span class="text-muted">#{{ a.id }}</span>{% if a.unlimited %} <span class="badge bg-blue-lt">unlimited</span>{% endif %}</td>
+        <td class="num">{{ "{:,}".format(a.credits) }}</td>
+        <td class="num">{{ "{:,}".format(a.used) }}</td>
+        <td class="num" data-v="{{ a.purchases }}">{{ a.purchases }} <span class="text-muted small">({{ "{:,}".format(a.bought) }} credits)</span></td>
+        <td>{{ ts(a.created_at) }}</td>
+        <td class="text-nowrap">
+          <form method="post" action="{{ url_for("admin:view-users-grant", account_id=a.id) }}" class="input-group input-group-sm d-inline-flex w-auto align-middle">
             <input type="hidden" name="csrf" value="{{ csrf }}">
-            <input class="form-control" type="number" name="credits" min="1" placeholder="credits" required>
+            <input class="form-control" style="width: 6.5rem" type="number" name="credits" min="1" placeholder="credits" required>
             <button class="btn btn-outline-primary" type="submit">Grant</button>
           </form>
           {{ post(url_for("admin:view-users-unlimited", account_id=a.id), csrf, "Unlimited off" if a.unlimited else "Set unlimited", "btn-sm btn-outline-secondary", {"on": "0" if a.unlimited else "1"}) }}
-        </div>
-      </div>
-      {{ keys_table(a.api_keys) }}
+        </td>
+        <td><details><summary>{{ a.api_keys|length }} key{{ "" if a.api_keys|length == 1 else "s" }}</summary>{{ keys_table(a.api_keys) }}</details></td>
+      </tr>{% else %}<tr><td colspan="7" class="text-muted">No account matches.</td></tr>{% endfor %}
+      </tbody>
+    </table>
     </div>
   </div>
-  {% else %}<div class="card"><div class="card-body text-muted">No account matches.</div></div>{% endfor %}
   <div class="card">
     <div class="card-header"><h3 class="card-title">Keys without an account</h3></div>
     <div class="card-body">{{ keys_table(service_keys) }}</div>
