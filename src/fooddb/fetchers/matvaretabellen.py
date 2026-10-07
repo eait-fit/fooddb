@@ -15,9 +15,10 @@ ATTRIBUTION = ("Contains data from Matvaretabellen (https://www.matvaretabellen.
 
 # Matvaretabellen nutrientId → (INFOODS tagname, unit). "Karbo" is available carbohydrate: Atwater
 # with fibre at 2 kcal/g matches its stated energy. "Mono+Di" is total sugars; "Sukker" is added sugar.
+# "Alko" is alcohol in g (its euroFirId is ALC).
 NUTRIENTS = {
     "Protein": ("PROCNT", "g"), "Fett": ("FAT", "g"), "Mettet": ("FASAT", "g"), "Karbo": ("CHOAVL", "g"),
-    "Mono+Di": ("SUGAR", "g"), "Fiber": ("FIBTG", "g"), "Na": ("NA", "mg"),
+    "Mono+Di": ("SUGAR", "g"), "Fiber": ("FIBTG", "g"), "Na": ("NA", "mg"), "Alko": ("ALC", "g"),
 }
 ENERGY = {"energy": ("ENERC_KJ", "kJ"), "calories": ("ENERC_KCAL", "kcal")}
 

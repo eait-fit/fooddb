@@ -27,10 +27,11 @@ SAMPLE = "樣品基本資料"  # a measured sample. 樣品平均值 rows are mea
 # median gap over 2,212 foods is 0), so CHOCDF. 糖質總量 is the sum of the six sugars of the 糖質分析 group:
 # glucose, fructose, galactose, sucrose, maltose and lactose (the largest gap over 1,212 foods is 0.2), so
 # SUGAR. 熱量 follows 4 kcal/g of protein and of total carbohydrate and 9 kcal/g of fat (median gap 0.3 kcal).
-# 修正熱量 (modified energy) is another figure and is left out.
+# 修正熱量 (modified energy) is another figure and is left out. 酒精含量 is alcohol in g.
 ANALYTES = {
     "熱量": ("kcal", "ENERC_KCAL"), "粗蛋白": ("g", "PROCNT"), "粗脂肪": ("g", "FAT"), "總碳水化合物": ("g", "CHOCDF"),
     "糖質總量": ("g", "SUGAR"), "膳食纖維": ("g", "FIBTG"), "飽和脂肪": ("g", "FASAT"), "鈉": ("mg", "NA"),
+    "酒精含量": ("g", "ALC"),
 }
 COLUMNS = ("整合編號", "樣品名稱", "食品分類", "資料類別", "分析項", "含量單位", "每100克含量")
 
