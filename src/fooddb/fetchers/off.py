@@ -2,6 +2,8 @@
 
 import gzip
 import json
+import re
+import time
 import zlib
 from collections.abc import Iterable, Iterator
 from pathlib import Path
@@ -9,14 +11,23 @@ from datetime import UTC, datetime
 
 import httpx
 from loguru import logger
+from sqlalchemy import select, update
 
 from fooddb import gtin, ingest
+from fooddb.db import engine, food, observation
 
 DELTA = "https://static.openfoodfacts.org/data/delta/"
 DUMP = "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz"  # ~13 GB gzipped
 FETCHER = "off-delta"
 DUMP_FETCHER = "off-dump"
 LICENCE = "ODbL-1.0"
+IMAGES = "https://images.openfoodfacts.org/images/products/"
+IMAGE_KINDS = ("front", "nutrition")
+API = "https://world.openfoodfacts.org/api/v2/product/"
+USER_AGENT = "fooddb-images/0.1 (https://github.com/eait-fit/fooddb)"  # OFF asks for AppName/Version (contact)
+# OFF allows 15 product reads a minute per IP (API introduction, "Rate limits"). 8 s is 7.5 a minute.
+# ponytail: one worker, fixed pause; adapt to the Retry-After header if OFF ever tightens the limit.
+PAUSE_S = 8.0
 
 # OFF nutrient key → INFOODS tagname. Values are converted to our units (g, kcal, kJ; sodium in mg).
 # "carbohydrates" is what the label calls carbohydrate; its code depends on the market (`carbs_code`).
@@ -115,6 +126,37 @@ def basis(p: dict) -> str:
     return "100ml" if per == "100ml" else "100g"
 
 
+def _revs(images: dict, kind: str) -> dict[str, int]:
+    """lang → rev of a kind's selected image, from the new shape (`selected.<kind>.<lang>`) or the old one (`<kind>_<lang>`)."""
+    new = (images.get("selected") or {}).get(kind)
+    by_lang = new if isinstance(new, dict) and new else {k[len(kind) + 1:]: v for k, v in images.items() if k.startswith(kind + "_")}
+    return {lang: int(v["rev"]) for lang, v in by_lang.items()
+            if re.fullmatch(r"[A-Za-z0-9_-]{1,12}", lang) and isinstance(v, dict) and str(v.get("rev")).isdigit()}
+
+
+def image_refs(p: dict) -> dict[str, dict]:
+    """{kind: {"lang", "rev"}} for the front and nutrition photos of an OFF product: the product's main language
+    if it has one, else the first language by name. Only the reference, never the image."""
+    images, out = p.get("images"), {}
+    for kind in IMAGE_KINDS if isinstance(images, dict) else ():
+        revs = _revs(images, kind)
+        if lang := (str(p.get("lang")) if str(p.get("lang")) in revs else min(revs, default=None)):
+            out[kind] = {"lang": lang, "rev": revs[lang]}
+    return out
+
+
+def code13(code: str) -> str:
+    """An OFF code from a GTIN-14: leading zeros removed, then padded to 13 digits."""
+    return code.lstrip("0").rjust(13, "0")
+
+
+def image_url(code: str, kind: str, lang: str, rev: int, size: int = 400) -> str:
+    """OFF's address of a selected image. The folder is the barcode padded to 13 digits and split 3/3/3/rest
+    (openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images)."""
+    folder = re.sub(r"^(...)(...)(...)(.*)$", r"\1/\2/\3/\4", code13(code))
+    return f"{IMAGES}{folder}/{kind}_{lang}.{rev}.{size}.jpg"
+
+
 def records(lines: Iterable[bytes]):
     bad = 0
     for line in lines:
@@ -130,7 +172,7 @@ def records(lines: Iterable[bytes]):
             continue
         yield ingest.Record(
             id=f"off:{code}", source="off", layer="off", licence=LICENCE, gtin14=code, name=name,
-            brand=(p.get("brands") or None), lang=p.get("lang"), values=values, basis=basis(p),
+            brand=(p.get("brands") or None), lang=p.get("lang"), images=image_refs(p), values=values, basis=basis(p),
             extra_flags=guessed, categories=p.get("categories_tags") or [], labels=p.get("labels_tags") or [],
             serving_text=p.get("serving_size"), serving_g=_num(p.get("serving_quantity")),
             observed_at=datetime.fromtimestamp(int(p.get("last_modified_t") or 0), UTC),
@@ -201,3 +243,32 @@ def fetch_dump(force: bool = False) -> tuple[int, int] | None:
     if not force and ingest.already_done(DUMP_FETCHER, ref):
         return None
     return load(url_lines(DUMP), DUMP_FETCHER, ref)
+
+
+def backfill_images(limit: int | None = None, pause: float = PAUSE_S, transport: httpx.BaseTransport | None = None) -> tuple[int, int]:
+    """Photo references for the OFF records that have pending values and none stored (`food.images` null), read one
+    product at a time from OFF's API. A product OFF does not know, or without a front or nutrition photo, gets `{}`, so
+    the next run skips it. Stops on a rate limit, an outage or a network error: the rest waits for the next run.
+    Returns (records checked, records with a photo)."""
+    pending = select(observation.c.food_id).where(observation.c.status == "pending", observation.c.food_id == food.c.id)
+    with engine().connect() as conn:
+        ids = list(conn.execute(
+            select(food.c.id).where(food.c.source == "off", food.c.images.is_(None), pending.exists())
+            .order_by(food.c.id).limit(limit)).scalars())
+    checked = found = 0
+    with httpx.Client(transport=transport, headers={"User-Agent": USER_AGENT}, timeout=30) as client:
+        for i, fid in enumerate(ids):
+            if i:
+                time.sleep(pause)
+            r = client.get(f"{API}{code13(fid.removeprefix('off:'))}.json", params={"fields": "images,lang"})
+            if r.status_code in (429, 503):
+                raise RuntimeError(f"off: HTTP {r.status_code} after {checked} products: rate-limited or down, run again later")
+            if r.status_code not in (200, 404):
+                logger.warning(f"off: {fid}: HTTP {r.status_code}, skipped")
+                continue
+            refs = image_refs(r.json().get("product") or {}) if r.status_code == 200 else {}
+            with engine().begin() as conn:
+                conn.execute(update(food).where(food.c.id == fid, food.c.images.is_(None)).values(images=refs))
+            checked, found = checked + 1, found + bool(refs)
+    logger.info(f"off images: {checked} products checked, {found} with a photo")
+    return checked, found

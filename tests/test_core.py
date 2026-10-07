@@ -256,3 +256,41 @@ def test_a_stated_seal_the_values_do_not_support_holds_the_fields_it_read():
     # A seal whose inputs are missing, or a label without the seal, says nothing.
     assert checks.flags({"FAT": 22}, labels=["es:exceso-azucares"]) == {}
     assert checks.flags({"ENERC_KCAL": 480, "SUGAR": 30}, labels=[]) == {}
+
+
+def test_off_image_url_pads_the_barcode_to_13_digits_and_splits_3_3_3_rest():
+    from fooddb.fetchers.off import image_url
+
+    root = "https://images.openfoodfacts.org/images/products/"
+    assert image_url("08002330009380", "front", "it", 12) == root + "800/233/000/9380/front_it.12.400.jpg"
+    assert image_url("8002330009380", "nutrition", "fr", 3, 200) == root + "800/233/000/9380/nutrition_fr.3.200.jpg"
+    assert image_url("00036000291452", "front", "en", 1) == root + "003/600/029/1452/front_en.1.400.jpg"  # UPC-A: 12 digits, padded
+    assert image_url("00000096385074", "front", "en", 1) == root + "000/009/638/5074/front_en.1.400.jpg"  # EAN-8: padded, not a single folder
+    assert image_url("10012345678902", "front", "en", 1) == root + "100/123/456/78902/front_en.1.400.jpg"  # GTIN-14 keeps its 14
+
+
+def test_off_image_refs_read_both_json_shapes_and_prefer_the_main_language():
+    from fooddb.fetchers.off import image_refs
+
+    new = {"lang": "de", "images": {"uploaded": {"1": {}}, "selected": {
+        "front": {"fr": {"rev": 3, "imgid": "1"}, "de": {"rev": 7, "imgid": "2"}},
+        "nutrition": {"fr": {"rev": 4}}, "ingredients": {"de": {"rev": 9}}}}}
+    assert image_refs(new) == {"front": {"lang": "de", "rev": 7}, "nutrition": {"lang": "fr", "rev": 4}}  # main language, else any
+    old = {"lang": "it", "images": {"1": {"uploader": "x"}, "front_it": {"rev": "12", "imgid": "3"}, "nutrition_en": {"rev": "2"},
+                                    "nutrition_de": {"rev": "5"}, "ingredients_it": {"rev": "1"}}}
+    assert image_refs(old) == {"front": {"lang": "it", "rev": 12}, "nutrition": {"lang": "de", "rev": 5}}  # first by name
+    assert image_refs({"lang": "it"}) == image_refs({"images": None}) == image_refs({"images": {}}) == image_refs({"images": []}) == {}
+    assert image_refs({"images": {"selected": {"front": {"../x": {"rev": 1}, "fr": {"rev": "x"}, "de": {}}}}}) == {}  # unsafe or partial: dropped
+
+
+def test_off_records_carry_their_image_references():
+    import json
+
+    from fooddb.fetchers.off import records
+
+    p = off_product(["en:germany"], {"fat": {"value": 1, "unit": "g"}}) | {
+        "lang": "de", "images": {"selected": {"front": {"de": {"rev": 2}}}}}
+    (r,) = records([json.dumps(p)])
+    assert r.images == {"front": {"lang": "de", "rev": 2}}
+    (r,) = records([json.dumps(p | {"images": None})])
+    assert r.images == {}  # OFF was asked and has none: not null, which means "not asked"

@@ -65,11 +65,11 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   The queue is [pq](https://github.com/ricwo/pq), which keeps its tasks in the same Postgres
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
-  `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:103`).
+  `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:106`).
   `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
-  snapshot to a file with the same code as the export endpoint (`cli.py:107`). `fooddb keys`
-  creates, lists and revokes API keys (`cli.py:128`). `fooddb dump odbl` writes the ODbL dump now
-  (`cli.py:152`).
+  snapshot to a file with the same code as the export endpoint (`cli.py:110`). `fooddb keys`
+  creates, lists and revokes API keys (`cli.py:131`). `fooddb dump odbl` writes the ODbL dump now
+  (`cli.py:155`).
 
 The worker reads label photos through the model port: OpenRouter on a server, or a local agent
 (see [Label reads](#label-reads)).
@@ -78,10 +78,10 @@ The worker fetches from nine upstream sources. Each value keeps the licence of i
 `CC0-1.0` for FDC (`fetchers/fdc.py:66`), `etalab-2.0` for CIQUAL (`fetchers/ciqual.py:16`),
 `OGL-UK-3.0` for CoFID (`fetchers/cofid.py:16`), `CC-BY-4.0` for Fineli (`fetchers/fineli.py:18`) and Frida (`fetchers/frida.py:16`), `NLOD-2.0` for
 Matvaretabellen (`fetchers/matvaretabellen.py:12`), `mext-free-use` for MEXT (`fetchers/mext.py:19`), `OGDL-Taiwan-1.0` for TFDA (`fetchers/tfda.py:18`) and
-`ODbL-1.0` for Open Food Facts (`fetchers/off.py:19`).
+`ODbL-1.0` for Open Food Facts (`fetchers/off.py:23`).
 FDC Branded Foods and Fineli are off by default (`health.py:28`). See [Fetch](#fetch).
 The worker never fetches the full OFF dump on a schedule. An operator starts it by hand
-(`jobs.py:68`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
+(`jobs.py:75`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
 A consumer that keeps a local copy, such as eait, reads the snapshot export. See
 [`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). The eait job that loads the export
@@ -248,19 +248,19 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   average samples that the table lists. A blank amount gives no value, and the table has no trace
   marks. See [decisions.md](decisions.md).
 - The OFF fetcher decompresses each `.gz` file as it arrives and yields one line at a time
-  (`fetchers/off.py:147`). The file never goes to disk. A delta file and the 13 GB dump use the
-  same path (`fetchers/off.py:162`).
+  (`fetchers/off.py:189`). The file never goes to disk. A delta file and the 13 GB dump use the
+  same path (`fetchers/off.py:204`).
 - The delta fetcher takes every file in the OFF index that is not done yet. On the first run it
-  takes only the newest file (`fetchers/off.py:168`).
+  takes only the newest file (`fetchers/off.py:210`).
 
 ### Normalise
 
 - `gtin.normalize` stores each barcode as a GTIN-14 with a valid check digit. It rejects
   restricted-circulation and coupon prefixes: 02, 04, 05, 20–29, 98 and 99 (`gtin.py:3`). An OFF
-  product without a valid global GTIN is skipped (`fetchers/off.py:129`).
+  product without a valid global GTIN is skipped (`fetchers/off.py:171`).
 - Nutrients use INFOODS tagnames: `ENERC_KCAL`, `ENERC_KJ`, `PROCNT`, `FAT`, `CHOCDF`, `CHOAVL`,
   `SUGAR`, `FASAT`, `FIBTG`, `NA` and `ALC` (alcohol). Each fetcher maps its source codes in one table
-  (`fetchers/off.py:23`, `fetchers/fdc.py:27`, `fetchers/ciqual.py:22`, `fetchers/cofid.py:27`,
+  (`fetchers/off.py:34`, `fetchers/fdc.py:27`, `fetchers/ciqual.py:22`, `fetchers/cofid.py:27`,
   `fetchers/fineli.py:24`, `fetchers/frida.py:26`, `fetchers/matvaretabellen.py:19`, `fetchers/mext.py:31`,
   `fetchers/tfda.py:31`).
 - Each value keeps the code of the quantity that the source states. The code converts no value
@@ -274,7 +274,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   They are neither code, so fooddb does not store them. TFDA's `總碳水化合物` is `CHOCDF`, and TFDA has no
   available carbohydrate.
 - OFF's `carbohydrates` is the value on the label. `carbs_code` takes its code from the product's
-  `countries_tags` (`fetchers/off.py:60`):
+  `countries_tags` (`fetchers/off.py:71`):
 
   | Markets in `countries_tags` | Code | Flag |
   |---|---|---|
@@ -286,42 +286,54 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 - Units are kcal and kJ for energy, mg for sodium and g for all other nutrients (`ingest.py:14`).
   `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
   as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA). When the
-  label states kJ only, the OFF fetcher converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:91`).
+  label states kJ only, the OFF fetcher converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:102`).
   Fineli states kJ only, and its fetcher converts it the same way (`fetchers/fineli.py:46`).
 - The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
   no carbohydrate for matching, and a missing field neither helps nor hurts a match.
-- Each value records its basis, `100g` or `100ml` (`fetchers/off.py:111`). CoFID gives its
+- Each value records its basis, `100g` or `100ml` (`fetchers/off.py:122`). CoFID gives its
   alcoholic beverages per 100 ml (`fetchers/cofid.py:59`).
 - Each record keeps the category tags of its source: OFF `categories_tags`, FDC
   `foodCategory.description` or `brandedFoodCategory`, and `<source>:<group>` for a national table
   (CIQUAL group names, CoFID group codes with their prefixes, Fineli use classes, Matvaretabellen and Frida food group ids with their parents, MEXT
   food group numbers, TFDA food group names)
-  (`fetchers/off.py:134`, `fetchers/fdc.py:63`). An OFF record also keeps
+  (`fetchers/off.py:176`, `fetchers/fdc.py:63`). An OFF record also keeps
   its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:135`), and
   `food.category` stores it. Tags that no row of the table names give no category.
+- An OFF record keeps a reference to its front and nutrition photos, never the photos
+  (`food.images`, `fetchers/off.py:137`). For each kind it takes `lang` and `rev` from
+  `images.selected.<kind>.<lang>` (new shape) or `images.<kind>_<lang>` (old shape, where `rev` is a
+  string), in the product's own language if it has a photo there, else the first language by name. `images`
+  is `{"front": {"lang": "it", "rev": 12}, "nutrition": {...}}`. A language code that is not
+  `[A-Za-z0-9_-]{1,12}`, or a `rev` that is not a number, is dropped. `{}` means that OFF has no such photo, and null
+  means that nobody asked yet: a core record, or an OFF record stored before this column existed.
+  `image_url` builds the address from the barcode, `kind`, `lang` and `rev` (`fetchers/off.py:153`). OFF's
+  folder is the barcode with its leading zeros removed and then padded to 13 digits, split 3/3/3/rest, for
+  every length (an EAN-8 is padded too): `8002330009380` is `800/233/000/9380`, and the file is
+  `front_it.12.400.jpg`. See [product-images.md](product-images.md) for why only the reference is stored.
 - Record ids have the form `<source>:<code>`, for example `fdc:168421`, `off:<gtin14>`,
   `ciqual:24999`, `cofid:14-319`, `fineli:1`, `frida:1`, `matvaretabellen:06.178`, `mext:07107` or `tfda:D3200301`.
 
 ### Store observations
 
-`ingest.run` writes one `fetch_run` row per file or release (`ingest.py:78`). It marks a run that a
-killed process left in `running` as `failed` (`ingest.py:83`). A run that stores no records fails
-with `EmptyRun`, because that usually means the source format changed (`ingest.py:95`).
+`ingest.run` writes one `fetch_run` row per file or release (`ingest.py:79`). It marks a run that a
+killed process left in `running` as `failed` (`ingest.py:84`). A run that stores no records fails
+with `EmptyRun`, because that usually means the source format changed (`ingest.py:96`).
 
-For each batch, `_write` does these steps (`ingest.py:104`):
+For each batch, `_write` does these steps (`ingest.py:105`):
 
-1. It creates one `product` row for each record that it did not see before (`ingest.py:114`).
-2. It maps the record's category and runs the checks on the record (`ingest.py:110`). The failed
+1. It creates one `product` row for each record that it did not see before (`ingest.py:115`).
+2. It maps the record's category and runs the checks on the record (`ingest.py:111`). The failed
    check names go into `food.flags`.
-3. It upserts the `food` row. An older file cannot overwrite newer metadata (`ingest.py:139`).
+3. It upserts the `food` row. An older file cannot overwrite newer metadata (`ingest.py:140`). A changed
+   photo reference (`images`) updates the row like any other metadata, and adds no observation.
 4. It inserts observations only for values that changed, and a null value for each field that the
-   source removed (`ingest.py:149`). A record seen again with the same `observed_at` is compared in the
+   source removed (`ingest.py:150`). A record seen again with the same `observed_at` is compared in the
    same way, so an unchanged field stores nothing and a dropped field stores its withdrawal. Of several
    rows with one `observed_at`, the newest `id` wins.
 
 The `observation` table is append-only. The code never deletes an observation. The only update is
 a review decision: it moves a `pending` observation to `accepted` or `rejected`, once
-(`review.py:56`).
+(`review.py:60`).
 
 ### Checks and review status
 
@@ -392,7 +404,7 @@ licence of `seals` is the most restrictive licence among the values that the rul
 `ODbL-1.0` over `CC0-1.0`, and an unknown licence over both.
 
 A new observation of an implicated field gets the status `pending`. All other new observations of
-the record get `accepted` (`ingest.py:154`). The resolver and the match job read only `accepted`
+the record get `accepted` (`ingest.py:155`). The resolver and the match job read only `accepted`
 observations (`resolve.py:58`, `match.py:36`). Thus the last accepted value of a held field stays
 in service. The [review loop](#review) moves each pending value out.
 
@@ -414,7 +426,7 @@ flowchart LR
 ```
 
 - `review.queue` returns the pending values grouped per source record, newest first
-  (`review.py:23`). Each item has the record's failed checks (`food.flags`) and the values that the
+  (`review.py:24`). Each item has the record's failed checks (`food.flags`) and the values that the
   API serves now for its product (`resolve.products`).
 - `review.decide` sets `status`, `reviewed_by`, `reviewed_at` and `review_note` in one update. The
   update matches only a `pending` row, so a value is decided once. A second decision gets a 409, and
@@ -429,7 +441,7 @@ flowchart LR
   with `by` set to the name of the admin key that logged in (`admin.py:106`).
 - The **Review** page at `/admin/review` shows one card per food record that has pending values, of
   every source (`admin.py:199`, template `templates/review.html`).
-  `review.queue(PAGE_SIZE, offset=…, check=…, source=…, detail=True)` gives the cards (`review.py:23`).
+  `review.queue(PAGE_SIZE, offset=…, check=…, source=…, detail=True)` gives the cards (`review.py:24`).
   A card has:
   - the name, brand, record id, product id and source. For an `off:` record, it links to the
     product on Open Food Facts. A leading zero of a 14-digit code is dropped, because OFF files EAN-13 codes.
@@ -444,10 +456,20 @@ flowchart LR
     on pending rows. Pending rows have a tinted background and settled rows are muted. **Accept all pending** sends all the pending ids of the card in one `pks` list.
   - the photo, for a label or brand record: the `evidence` of the newest pending value. The photo
     route `/admin/review/photo/{sha}` needs the admin login too.
+  - the photos, for an `off:` record that has a stored reference: the front and the nutrition panel
+    side by side, at 400 px, each a link to the same 400 px image in a new tab. `review.queue(detail=True)`
+    adds `images: [{kind, url}]` to such an item (`review.py:52`), and the template draws them
+    (`templates/review.html:45`). The `<img>` tags are `loading="lazy"` and `referrerpolicy="no-referrer"`, so
+    OFF learns neither the admin address nor the reviewer's place on the page. The browser fetches the bytes from
+    `images.openfoodfacts.org`: fooddb stores and serves none, and the public API shows no reference.
+    A credit line under them reads "Photo: Open Food Facts contributors, CC BY-SA 3.0" and links to the
+    product page and to the licence, which is what the licence asks for. A record with no
+    reference, or with `{}`, shows nothing. The admin sends no `Content-Security-Policy`, so nothing
+    blocks the host. If one is added, `img-src` needs `https://images.openfoodfacts.org`.
 
   The query parameters `check` and `source` filter the records, and `offset` pages them by
   `PAGE_SIZE` = 25 (`admin.py:186`). The two dropdowns list the checks and sources of the records
-  with pending values and their counts (`review.facets`, `review.py:95`). Each count respects the
+  with pending values and their counts (`review.facets`, `review.py:99`). Each count respects the
   other filter. The filter bar stays at the top of the viewport while the cards scroll. `review.queue` without the new keyword arguments returns what it returned before,
   for `/v1/review` and the MCP tool.
 - The accept and reject links of the page carry `next`, the page's own path and query. After the
@@ -570,7 +592,7 @@ sequenceDiagram
 - `/livez`, `/healthz` and `/admin` are not logged. A health probe every 30 s would be most of the
   rows. The admin pages are not API requests.
 - `jobs.prune_request_log` deletes the rows older than `FOODDB__BACKEND__REQUEST_LOG_DAYS`
-  (default 30). The worker schedules it daily at 03:15 UTC (`jobs.py:106`).
+  (default 30). The worker schedules it daily at 03:15 UTC (`jobs.py:113`).
 
 ### Label reads
 
@@ -632,7 +654,7 @@ The ingest (`labels/intake.py:21`):
 
 - The record id is `label:<sha256>`, so one photo is one source record. Its source is `label`,
   its layer `core`, and its licence `LicenseRef-fooddb` (fooddb's own terms).
-- Each observation has `evidence` set to the SHA-256 of the photo (`ingest.py:163`).
+- Each observation has `evidence` set to the SHA-256 of the photo (`ingest.py:164`).
 - The barcode that the client sends wins over the barcode that the model reads. Each must be a
   valid global GTIN.
 - The checks run as for every source. A field that a failed check implicates is `pending`.
@@ -640,7 +662,7 @@ The ingest (`labels/intake.py:21`):
   makes every value `pending`. The record gets the flag `label-low-confidence`.
 - A read that the client did and sent (`read` in the form) is not read again. Every value is
   `pending`, and the record gets the flag `label-client-read`.
-- `jobs.read_label` queues a match pass after the ingest (`jobs.py:64`). Thus a label record with
+- `jobs.read_label` queues a match pass after the ingest (`jobs.py:71`). Thus a label record with
   the barcode of a known product joins that product.
 
 `GET /v1/labels/{task}` returns the state of the pq task: `pending`, `running`, `completed` or
@@ -742,7 +764,7 @@ flowchart LR
 ```
 
 `review.split` moves the given records out of a product into one product of their own
-(`review.py:81`):
+(`review.py:85`):
 
 1. The product must exist (else 404) and must not be merged away (else 409). The records must be
    records of the product, and at least one record must stay (else 422).
@@ -847,17 +869,18 @@ result is the same, and the plan does not depend on the table statistics.
 
 | Job | Function | Trigger | Priority |
 |---|---|---|---|
-| OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:71`) | NORMAL |
-| Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:72`) | NORMAL |
-| FDC Foundation, FDC SR Legacy, FDC Branded (when on) | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
-| CIQUAL, CoFID, Frida, Matvaretabellen, MEXT, TFDA, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:109`) | BATCH |
-| Match | `match_products` | after a fetch that stored data (`jobs.py:57`) | NORMAL |
-| First-boot FDC and national tables | `fetch_fdc`, `fetch_table` | once, when `fetcher_check` has no row for a fetcher that is on (`jobs.py:102`) | NORMAL |
-| First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:79`) | BATCH |
-| Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:64`) | BATCH |
-| OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
-| ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:80`) | BATCH |
-| Request log prune | `prune_request_log` | cron `15 3 * * *`, UTC (`jobs.py:106`) | BATCH |
+| OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:78`) | NORMAL |
+| Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:79`) | NORMAL |
+| FDC Foundation, FDC SR Legacy, FDC Branded (when on) | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:116`) | BATCH |
+| CIQUAL, CoFID, Frida, Matvaretabellen, MEXT, TFDA, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:116`) | BATCH |
+| Match | `match_products` | after a fetch that stored data (`jobs.py:64`) | NORMAL |
+| First-boot FDC and national tables | `fetch_fdc`, `fetch_table` | once, when `fetcher_check` has no row for a fetcher that is on (`jobs.py:109`) | NORMAL |
+| First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:86`) | BATCH |
+| Snapshot rebuild | `build_snapshot` | after the first data of a fetcher, when no snapshot is newer (`jobs.py:71`) | BATCH |
+| OFF full dump | `fetch_off_dump` | manual only (`cli.py:69`) | – |
+| OFF photo references | `backfill_off_images` | manual only (`cli.py:75`, `cli.py:93`) | NORMAL |
+| ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:87`) | BATCH |
+| Request log prune | `prune_request_log` | cron `15 3 * * *`, UTC (`jobs.py:113`) | BATCH |
 | Admin run now | `fetch_off_deltas`, `fetch_fdc`, `fetch_table`, `build_snapshot` | the **Run now** button in `/admin/jobs` (`ops.py:174`) | NORMAL |
 | Label read | `read_label` | `POST /v1/labels` (`api.py:165`) | NORMAL |
 
@@ -869,7 +892,7 @@ sequenceDiagram
     participant W as Worker parent
     participant Q as Postgres
     participant C as Forked child
-    Note over W: schedule(), jobs.py:68
+    Note over W: schedule(), jobs.py:75
     W->>Q: schedule fetch_off_deltas every 6 h, next run now
     W->>Q: schedule build_snapshot, daily 02:30 UTC
     W->>Q: schedule dump_odbl, 1st of the month 04:00 UTC, BATCH
@@ -898,7 +921,7 @@ sequenceDiagram
 
 The worker parent registers the schedule, then forks one child per task (`cli.py:36`). It closes
 its database pool before the first fork, so that no child inherits a connection (`cli.py:39`). The
-match job imports Splink and DuckDB only in the child (`jobs.py:44`). Each task has a limit of one
+match job imports Splink and DuckDB only in the child (`jobs.py:51`). Each task has a limit of one
 hour (`cli.py:40`).
 
 The pq worker takes one task at a time. It always takes a one-off task before a periodic task, and
@@ -906,7 +929,7 @@ a higher priority first (pq 0.8.1 `worker.py:722`, `worker.py:792`). This rule s
 order above:
 
 1. The FDC and national table tasks run first. Each one queues the match task. The client id
-   `match-products` collapses the requests into one task (`jobs.py:77`). FDC Branded and Fineli
+   `match-products` collapses the requests into one task (`jobs.py:84`). FDC Branded and Fineli
    are off by default, so a first boot does not fetch them.
 2. The match task runs before the snapshot, because BATCH is the lowest priority.
 3. The first snapshot runs next. It is the last one-off task.
@@ -915,7 +938,7 @@ order above:
    snapshot. Now the snapshot has OFF values.
 
 A fetch that stores data queues a snapshot rebuild if no snapshot is newer than the first
-successful run of that fetcher (`jobs.py:64`, `snapshot.py:34`). Thus the first data of each
+successful run of that fetcher (`jobs.py:71`, `snapshot.py:34`). Thus the first data of each
 fetcher gets into a snapshot without help. Later fetches wait for the nightly snapshot. The rebuild
 uses the client id `bootstrap-snapshot`. Thus it collapses with the first-boot snapshot into one
 pending task.
@@ -925,9 +948,20 @@ Each worker start registers the OFF schedule again with the next run set to now
 
 The full OFF dump takes hours, which is more than the task limit. Run it with `fooddb run off-dump`
 in its own container ([deploy.md](deploy.md#load-the-full-open-food-facts-dump)). It loads a dump
-only once per `Last-Modified` value of the file (`fetchers/off.py:195`).
+only once per `Last-Modified` value of the file (`fetchers/off.py:237`).
 
-FDC Branded can also take more than one hour. Its tasks have a limit of six hours (`jobs.py:16`).
+The OFF photo backfill (`backfill_off_images`, `off.backfill_images`, `fetchers/off.py:248`) is a one-off, and
+no schedule starts it. New OFF records get their references at ingest, so only the OFF records stored
+before that need it. It takes the `off:` records that have pending values and a null `images`, one at a
+time, and asks `https://world.openfoodfacts.org/api/v2/product/<code>.json?fields=images,lang` with the
+`User-Agent` `fooddb-images/0.1 (<repo URL>)`. OFF limits product reads to 15 a minute per IP (API
+introduction, "Rate limits"). The job waits 8 s between products, which is 7.5 a minute, so about 2 hours for
+870 records. The task limit is four hours (`jobs.py:18`). A product that OFF does not know (404), or
+that has no front or nutrition photo, gets `{}`, so the next run skips it. A 429 or 503, or a network error, stops the run
+and the next run continues with the records that are still null. Run it with `fooddb run off-images [--limit N]`
+or `fooddb enqueue off-images` ([deploy.md](deploy.md#photo-references-for-the-review-page)).
+
+FDC Branded can also take more than one hour. Its tasks have a limit of six hours (`jobs.py:18`).
 While it runs, the worker runs no other task.
 
 ## Database schema
@@ -963,6 +997,7 @@ erDiagram
         numeric serving_g
         text category "fooddb category, null when unknown"
         text_array flags "failed checks"
+        jsonb images "OFF photo references, not the photos"
         timestamptz source_updated_at
         timestamptz fetched_at
     }
@@ -1271,7 +1306,7 @@ dependency (`api.py:31`). See [Authentication](#authentication).
   products ([#31](https://github.com/eait-fit/fooddb/issues/31)).
 - With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
 - `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
-  ends in `.gz` (`cli.py:107`).
+  ends in `.gz` (`cli.py:110`).
 
 ### `GET /v1/dumps`
 
@@ -1352,7 +1387,7 @@ flowchart LR
   `fineli` (8 days) count only when they are on (`health.py:35`). One stale entry or one entry with
   no row gives 503.
 - A fetch that finds nothing new also counts as a successful check (`health.py:40`,
-  `jobs.py:26`, `jobs.py:42`, `jobs.py:50`). The full OFF dump has no health entry.
+  `jobs.py:27`, `jobs.py:49`, `jobs.py:57`). The full OFF dump has no health entry.
 
 ### MCP
 

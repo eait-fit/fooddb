@@ -7,9 +7,10 @@
 #   ./dev restart [same flags]       bare: whatever `up` last asked for, including what has crashed
 #   ./dev status                     this worktree
 #   ./dev ls [--plain]               EVERY worktree on this machine, and what each is running
-#   ./dev fetch [off|off-dump|fdc|table|match|all] [...]   queue work for the worker (`off --max-files 7`,
+#   ./dev fetch [off|off-dump|off-images|fdc|table|match|all] [...]   queue work for the worker (`off --max-files 7`,
 #                                    `fdc --dataset sr_legacy`, `table --source ciqual`; `off-dump` = the full
-#                                    ~13 GB OFF dump, streamed, hours; `all` = FDC Foundation and SR Legacy,
+#                                    ~13 GB OFF dump, streamed, hours; `off-images --limit 50` = OFF photo
+#                                    references for records with pending values, 8 s per product; `all` = FDC Foundation and SR Legacy,
 #                                    CIQUAL, Matvaretabellen + 7 OFF deltas; never FDC Branded, ~3 GB)
 #   ./dev jobs                       row counts, fetch runs and the pq queue for this worktree
 #   ./dev cli <args…>                the fooddb CLI against this worktree's database
@@ -373,8 +374,8 @@ cmd_fetch() {
       .venv/bin/fooddb enqueue table --source tfda
       .venv/bin/fooddb enqueue off --max-files 7
       ;;
-    off|off-dump|fdc|table|match|snapshot) .venv/bin/fooddb enqueue "$@" ;;
-    *) die "unknown fetcher: $1 (off | off-dump | fdc | table | match | snapshot | all)" ;;
+    off|off-dump|off-images|fdc|table|match|snapshot) .venv/bin/fooddb enqueue "$@" ;;
+    *) die "unknown fetcher: $1 (off | off-dump | off-images | fdc | table | match | snapshot | all)" ;;
   esac
 }
 

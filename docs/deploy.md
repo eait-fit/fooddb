@@ -448,6 +448,28 @@ docker logs -f fooddb-off-dump
 After the load, the daily delta files keep the layer current. A second run of `off-dump` does
 nothing until Open Food Facts publishes a new dump.
 
+## Photo references for the Review page
+
+The **Review** page shows the front and nutrition photos of an Open Food Facts record from a stored
+reference (`food.images`, a few bytes: language and revision). fooddb stores no photo. The browser
+loads each one from `images.openfoodfacts.org`. A record that the daily deltas or the dump bring in
+has its reference from the start. A record that was stored before migration 0015 has none, and its
+card shows no photo until you fill it. Fill only the records that have pending values, which are the
+ones that a reviewer opens:
+
+```bash
+docker compose run -d --name fooddb-off-images worker fooddb run off-images
+docker logs -f fooddb-off-images
+```
+
+The job asks OFF's API for one product at a time, with the `User-Agent` `fooddb-images/0.1`. OFF
+limits product reads to 15 a minute per IP. The job waits 8 s between products (7.5 a minute),
+so 870 records take about 2 hours. A product that OFF does not know, or that has no front or
+nutrition photo, is marked and not asked again. If OFF answers 429 or 503, or the network fails,
+the job stops with an error. Run it again later: it continues with the records that are not yet
+checked. `fooddb run off-images --limit 50` does only 50. `fooddb enqueue off-images` hands it to
+the worker instead (task limit four hours). Nothing schedules it.
+
 ## Stop and remove
 
 ```bash

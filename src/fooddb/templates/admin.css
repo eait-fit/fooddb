@@ -52,6 +52,7 @@ th[data-sort="desc"]::after { content: " \2193"; opacity: .9; }
 .review-bar { position: sticky; top: 0; z-index: 5; }
 .review-card .pending-row td { background: #fffaf0; }
 .review-card .settled-row td { color: var(--fd-muted); }
+.review-off-photos img { max-height: 260px; width: auto; max-width: 100%; }
 .review-card .why { margin: 0 0 .75rem; padding: 0; list-style: none; }
 .review-card .why li { padding: .15rem 0; }
 .review-card td, .review-card th { padding-top: .35rem; padding-bottom: .35rem; }

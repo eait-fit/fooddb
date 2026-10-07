@@ -837,7 +837,7 @@ def test_the_queue_is_unchanged_for_callers_that_ask_for_nothing_new():
     assert set(item["pending"][0]) == {"observation_id", "nutrient", "unit", "basis", "value", "observed_at"}
     assert review.queue(100, ("%",)) == review.queue() == review.queue(100, ("fdc:%",)) != review.queue(offset=1)
     [detailed] = review.queue(detail=True)
-    assert {k: v for k, v in detailed.items() if k not in ("brand", "category", "values", "why")} == item
+    assert {k: v for k, v in detailed.items() if k not in ("brand", "category", "images", "values", "why")} == item
     assert {(v["nutrient"], v["status"]) for v in detailed["values"]} >= {("ENERC_KCAL", "pending"), ("FIBTG", "accepted")}
     assert "macros give" in detailed["why"]["energy-mismatch"] and "2290" in detailed["why"]["energy-mismatch"]
 

@@ -42,8 +42,22 @@
           <img src="{{ url_for('admin:view-review-photo', sha=sha) }}" alt="label photo" class="img-fluid rounded border">
         </a>
       </div>
+      {% elif item.images %}
+      <div class="col-md-4 review-off-photos">
+        <div class="row g-2">
+          {% for im in item.images %}
+          <figure class="col-6 mb-0">
+            <a href="{{ im.url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ im.url }}" alt="{{ im.kind }} photo" loading="lazy" referrerpolicy="no-referrer" class="img-fluid rounded border">
+            </a>
+            <figcaption class="text-muted small">{{ im.kind | capitalize }}</figcaption>
+          </figure>
+          {% endfor %}
+        </div>
+        <div class="text-muted small mt-1">Photo: <a href="https://world.openfoodfacts.org/product/{{ code }}" target="_blank" rel="noopener noreferrer">Open Food Facts contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></div>
+      </div>
       {% endif %}
-      <div class="{{ 'col-md-8' if sha else 'col-12' }}">
+      <div class="{{ 'col-md-8' if sha or item.images else 'col-12' }}">
         {% if item.checks %}
         <ul class="why">
           {% for check in item.checks %}<li><span class="badge bg-yellow-lt">{{ check }}</span>{% if item.why[check] %} {{ item.why[check] }}{% endif %}</li>{% endfor %}
