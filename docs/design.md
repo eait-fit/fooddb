@@ -76,6 +76,7 @@ a record seen again at the same `observed_at` can also withdraw a field.
 
 Built: Atwater, sums (with a 0.5 g tolerance), macros over 100 g, negative values, ranges per
 category, and seals for Chile, Mexico and Peru ([#11](https://github.com/eait-fit/fooddb/issues/11)).
+Atwater counts alcohol at 7 kcal/g, so wines and spirits pass ([#53](https://github.com/eait-fit/fooddb/issues/53)).
 The API computes the seals on each read, and they hold no value for review. A seal that OFF says
 the pack carries, but that the values do not reach, is a failed check. Each failed check names
 the fields that it implicates. Only the new values of those fields are `pending`. A reviewer or an

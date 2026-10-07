@@ -29,6 +29,7 @@ COLUMNS = {
     "Fibres (g 100g)": "FIBTG",
     "FA saturated (g 100g)": "FASAT",
     "Sodium (mg 100g)": "NA",
+    "Alcohol (g 100g)": "ALC",
 }
 GROUPS = ("alim_grp_nom_eng", "alim_ssgrp_nom_eng", "alim_ssssgrp_nom_eng")
 

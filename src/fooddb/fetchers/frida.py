@@ -22,12 +22,12 @@ ROOT = "1"  # the group that holds every top-level group
 # kcal, sodium mg, the rest g per 100 g. The documentation (section 5.2) defines 170 as dry matter minus
 # protein, fat, ash, organic acids and the residual, so fibre is in it: CHOCDF. It defines 172 as 170 minus
 # dietary fibre: CHOAVL. Energy uses 172 at 4 kcal/g and fibre at 2 kcal/g (EU 1169/2011). 245 is the sum of
-# mono- and disaccharides, and 168 is the sum of the soluble and insoluble fibre fractions.
+# mono- and disaccharides, and 168 is the sum of the soluble and insoluble fibre fractions. 19 is ethanol in g.
 PARAMETERS = {
     137: ("Energy (kJ)", "ENERC_KJ"), 356: ("Energy (kcal)", "ENERC_KCAL"), 218: ("Protein", "PROCNT"),
     170: ("Carbohydrate by difference", "CHOCDF"), 172: ("Available carbohydrates", "CHOAVL"),
     168: ("Dietary fibre", "FIBTG"), 141: ("Fat", "FAT"), 245: ("Sum sugars", "SUGAR"),
-    248: ("Sum saturated fatty acids", "FASAT"), 201: ("Sodium", "NA"),
+    248: ("Sum saturated fatty acids", "FASAT"), 201: ("Sodium", "NA"), 19: ("Alcohol", "ALC"),
 }
 
 
