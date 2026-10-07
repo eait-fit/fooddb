@@ -299,6 +299,7 @@ dump comes with the ODbL attribution and share-alike obligation: see
 | `table` tfda | Taiwan food nutrient database (TFDA), CSV in a zip, found through data.gov.tw | Open Government Data License 1.0, attribution | weekly check |
 | `off` | Open Food Facts daily delta files | ODbL, `off` layer | every 6 hours |
 | `off-dump` | Open Food Facts full dump (~13 GB, streamed) | ODbL, `off` layer | manual (`fooddb run off-dump`), deltas keep it current |
+| `off-images` | Photo references (not photos) of OFF records with pending values, from OFF's API at 7.5 products a minute | – | manual (`fooddb run off-images`), for the Review page |
 | `match` | Splink product matching | – | after every fetch that added data |
 | `snapshot` | Nightly snapshot of resolved values | – | 02:30 daily |
 | `odbl-dump` | ODbL dump of the OFF layer, newest final day | ODbL | 04:00 on the 1st of each month |

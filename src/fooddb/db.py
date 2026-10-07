@@ -29,7 +29,7 @@ from sqlalchemy import (
     func,
     text,
 )
-from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy.dialects.postgresql import ARRAY, JSONB
 from sqlalchemy.engine import Engine
 
 metadata = MetaData()
@@ -59,6 +59,8 @@ food = Table(
     Column("serving_g", Numeric),
     Column("category", Text),  # fooddb category (checks.CATEGORIES), null when unknown
     Column("flags", ARRAY(Text), nullable=False, server_default="{}"),
+    # OFF records only: {kind: {"lang", "rev"}} for the front and nutrition photos, never bytes. {} = checked, OFF has none; null = not checked.
+    Column("images", JSONB(none_as_null=True)),
     Column("source_updated_at", DateTime(timezone=True)),
     Column("fetched_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
     Index("food_gtin14_idx", "gtin14"),

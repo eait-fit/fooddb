@@ -37,6 +37,7 @@ class Record:
     extra_flags: list[str] = field(default_factory=list)
     categories: list[str] = field(default_factory=list)  # the source's own category tags (checks.category)
     labels: list[str] = field(default_factory=list)  # OFF labels_tags: seals stated on the pack
+    images: dict | None = None  # OFF photo references (food.images); {} = the source has none
     evidence: str | None = None  # sha256 of the label photo the values were read from
     review_all: bool = False  # every value waits for review, whatever the checks say
 
@@ -116,7 +117,7 @@ def _write(records: list[Record]) -> tuple[int, int]:
                 "source": r.source, "layer": r.layer, "licence": r.licence,
                 "gtin14": r.gtin14, "name": r.name[:500], "brand": r.brand, "lang": r.lang,
                 "serving_text": r.serving_text, "serving_g": r.serving_g, "category": category,
-                "flags": list(failed) + r.extra_flags, "source_updated_at": r.observed_at,
+                "flags": list(failed) + r.extra_flags, "images": r.images, "source_updated_at": r.observed_at,
             })
             obs += _observations(r, failed, known.get(r.id), stored)
 
@@ -125,7 +126,7 @@ def _write(records: list[Record]) -> tuple[int, int]:
             index_elements=[food.c.id],
             set_={c: stmt.excluded[c] for c in (
                 "gtin14", "name", "brand", "lang", "serving_text", "serving_g", "category", "flags",
-                "source_updated_at")}
+                "images", "source_updated_at")}
             | {"fetched_at": datetime.now(UTC)},
             # A late or retried older file must not roll the row back to older metadata.
             where=food.c.source_updated_at <= stmt.excluded.source_updated_at,

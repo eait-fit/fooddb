@@ -14,7 +14,8 @@ TABLES = {m.FETCHER: m for m in (ciqual, cofid, fineli, frida, matvaretabellen, 
 WEEKLY = "0 3 * * 1"  # Monday 03:00 UTC
 PRUNE_CRON = "15 3 * * *"
 # FDC Branded is about 3 GB of JSON: it may run longer than the worker's default task limit.
-RUNTIME = {"fdc-branded": 6 * 3600}
+# The OFF photo backfill waits 8 s between products (off.PAUSE_S): about 2 hours for the ~870 that matter on prod.
+RUNTIME = {"fdc-branded": 6 * 3600, "off-images": 4 * 3600}
 
 
 @cache
@@ -36,6 +37,12 @@ def fetch_off_dump(force: bool = False) -> None:
     if result is not None:
         _rematch(off.DUMP_FETCHER)
     logger.info("off dump: " + ("already loaded" if result is None else f"{result[0]} foods, {result[1]} new observations"))
+
+
+def backfill_off_images(limit: int | None = None) -> None:
+    """One-off, not scheduled: photo references for the OFF records with pending values that have none yet. Safe to
+    repeat: it takes only the records not yet checked."""
+    off.backfill_images(limit=limit)
 
 
 def fetch_fdc(dataset: str = "foundation", force: bool = False) -> None:
@@ -126,5 +133,6 @@ def schedule() -> None:
 
 def enqueue(name: str, **kwargs) -> int:
     fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "table": fetch_table,
-          "match": match_products, "snapshot": build_snapshot, "odbl-dump": dump_odbl}[name]
-    return queue().enqueue(fn, **kwargs)
+          "match": match_products, "snapshot": build_snapshot, "odbl-dump": dump_odbl,
+          "off-images": backfill_off_images}[name]
+    return queue().enqueue(fn, max_runtime_seconds=RUNTIME.get(name), **kwargs)

@@ -6,13 +6,21 @@ customers may get image URLs later. Facts were checked on 2026-10-07 against the
 listed under [Sources](#sources), against real OFF data (one daily delta, the head of the full dump,
 and the AWS key list), and against the code. What could not be verified is marked **unverified**.
 
+> **Status, 2026-10-08:** recommendations 1 to 3 below are built for the admin Review page (see the row of that
+> date in [decisions.md](decisions.md), [architecture.md](architecture.md#normalise) and
+> [deploy.md](deploy.md#photo-references-for-the-review-page)). The text below is the research as it stood
+> on 2026-10-07: statements in the present tense about what the parser reads, and its line numbers, are from then.
+> Two corrections from the build: OFF pads every barcode to 13 digits, so a code shorter than 13
+> digits has no folder of its own (37 URLs checked, 12 of them EAN-8 or short codes, all answered 200). And the API v2 answer
+> for `fields=images` is in the old shape (`front_it` with a string `rev`), so the parser reads both shapes.
+
 ## Summary
 
 - **OFF images are free to hotlink for a reviewer's browser, and OFF documents no rule against it.**
   The only guidance is: do not bulk-download from `images.openfoodfacts.org` (use the AWS dataset),
   and fetch the size you need, not the full image.
 - **The daily delta files and the dump carry the data to build the image URLs, but no URLs.** Our
-  parser (`fetchers/off.py:118`, `ingest.Record` at `ingest.py:23`) reads none of it today. So the
+  parser (`fetchers/off.py:160`, `ingest.Record` at `ingest.py:23`) reads none of it today. So the
   13k OFF records already stored have no image reference.
 - **OFF images are CC BY-SA 3.0**, separate from the ODbL on the data. The licence is cheap while
   fooddb only shows the image to a logged-in reviewer. It matters when a customer gets the image.

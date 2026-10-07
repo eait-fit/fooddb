@@ -8,6 +8,7 @@ from sqlalchemy import func, select, text, update
 
 from fooddb import checks, resolve
 from fooddb.db import engine, merge_log, observation
+from fooddb.fetchers import off
 
 STATUS = {"accept": "accepted", "reject": "rejected"}
 
@@ -25,7 +26,8 @@ def queue(limit: int = 100, records: tuple[str, ...] = ("%",), *, offset: int = 
     """Pending values grouped per source record, newest first, next to the values the API serves now
     and the checks the record failed. `records` are LIKE patterns on the record id, e.g. ("label:%", "brand:%").
     `offset`, `check` and `source` page and filter the records. `detail` adds to each item the brand, all the
-    record's latest values (`values`, any status) and one line per failed check with its numbers (`why`)."""
+    record's latest values (`values`, any status), one line per failed check with its numbers (`why`) and, for an OFF
+    record with stored photo references, `images`: [{kind, url}] at 400 px, hotlinked from OFF."""
     with engine().connect() as conn:
         rows = conn.execute(text("""
             with recs as (
@@ -36,7 +38,7 @@ def queue(limit: int = 100, records: tuple[str, ...] = ("%",), *, offset: int = 
                 group by o.food_id order by max(o.observed_at) desc, o.food_id limit :limit offset :offset
             )
             select o.id, o.food_id, o.nutrient, o.value_per_100, o.unit, o.basis, o.observed_at, o.evidence,
-                   f.product_id, f.layer, f.name, f.brand, f.category, f.source, f.flags
+                   f.product_id, f.layer, f.name, f.brand, f.category, f.source, f.flags, f.images
             from recs join observation o on o.food_id = recs.food_id and o.status = 'pending'
             join food f on f.id = o.food_id
             order by o.observed_at desc, o.food_id, o.nutrient
@@ -47,7 +49,9 @@ def queue(limit: int = 100, records: tuple[str, ...] = ("%",), *, offset: int = 
         item = items.setdefault(r["food_id"], {
             "record": r["food_id"], "product_id": r["product_id"], "layer": r["layer"], "name": r["name"],
             "source": r["source"], "photo": r["evidence"], "checks": list(r["flags"]), "pending": [], "served": {}}
-            | ({"brand": r["brand"], "category": r["category"]} if detail else {}))
+            | ({"brand": r["brand"], "category": r["category"], "images": [
+                {"kind": kind, "url": off.image_url(r["food_id"].removeprefix("off:"), kind, **ref)}
+                for kind, ref in (r["images"] or {}).items()]} if detail else {}))
         item["pending"].append({
             "observation_id": r["id"], "nutrient": r["nutrient"], "unit": r["unit"], "basis": r["basis"],
             "value": None if r["value_per_100"] is None else float(r["value_per_100"]),
