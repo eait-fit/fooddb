@@ -1,0 +1,18 @@
+{% extends "sqladmin/base.html" %}
+{% block body %}
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <form class="card card-md login-card" action="{{ url_for('admin:login') }}" method="POST" autocomplete="off">
+    <div class="card-body">
+      <div class="login-brand mb-1">fooddb</div>
+      <div class="text-muted mb-4">Admin. Sign in with an API key that has the admin scope.</div>
+      <input type="hidden" name="username" value="">
+      <div class="mb-3">
+        <label class="form-label" for="key">API key</label>
+        <input id="key" name="password" type="password" class="form-control{% if error %} is-invalid{% endif %}" placeholder="fdb_..." autocomplete="off" autofocus>
+        {% if error %}<div class="invalid-feedback">{{ error }}</div>{% endif %}
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Sign in</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

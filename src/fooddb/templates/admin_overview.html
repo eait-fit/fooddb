@@ -1,38 +1,71 @@
 {% extends "sqladmin/layout.html" %}
-{% from "admin_macros.html" import ts, bar, stat %}
+{% from "admin_macros.html" import ts, bar, stat, columns %}
 {% block content %}
+{% set review_url = url_for("admin:view-review") %}
+{% set failed = queue.get("failed", 0) %}
 <div class="col-12"><div class="w-100">
   <div class="row row-cards mb-3">
-    {{ stat("Products", "{:,}".format(products), "not merged away") }}
-    {{ stat("Values pending review", pending) }}
-    {{ stat("Freshness", "ok" if health.ok else "stale", "all watched sources" if health.ok else "see Jobs") }}
-    {{ stat("Requests, last 24 h", "{:,}".format(requests.n), "%d errors, p95 %d ms"|format(requests.errors, requests.p95)) }}
+    {{ stat("Values pending review", "{:,}".format(pending), ("1 record waits for a decision" if pending_records.total == 1 else "%d records wait for a decision"|format(pending_records.total)) if pending else "nothing waits", "warn" if pending else "ok", review_url) }}
+    {{ stat("Requests, last 24 h", "{:,}".format(requests.n), "%d errors, p95 %d ms"|format(requests.errors, requests.p95), "bad" if requests.n and requests.errors * 10 > requests.n else "", url_for("admin:view-requests")) }}
+    {{ stat("Jobs", "%d active"|format(queue.get("running", 0) + queue.get("pending", 0)), "%d failed, %d completed"|format(failed, queue.get("completed", 0)), "bad" if failed else "ok", url_for("admin:view-jobs")) }}
+    {{ stat("Freshness", "ok" if health.ok else "stale", "all watched sources" if health.ok else "%d of %d sources stale"|format(stale|length, health.fetchers|length), "ok" if health.ok else "bad", url_for("admin:view-jobs")) }}
+  </div>
+
+  <div class="row row-cards mb-3">
+    <div class="col-lg-8"><div class="card">
+      <div class="card-header"><h3 class="card-title">Requests per hour, last 24 h</h3>
+        </div>
+      <div class="card-body">{% if requests.n %}{{ columns(hourly) }}{% else %}<div class="text-muted">No requests in the last 24 hours.</div>{% endif %}</div>
+    </div></div>
+    <div class="col-lg-4"><div class="card">
+      <div class="card-header"><h3 class="card-title">Needs attention</h3></div>
+      <div class="card-body">
+        <ul class="attention">
+          {% for name, n in pending_records.checks.items() %}{% if loop.index <= 5 %}
+          <li><a href="{{ review_url }}?check={{ name|urlencode }}"><span class="badge bg-yellow-lt">{{ name }}</span></a><span>{{ n }} records</span></li>
+          {% endif %}{% endfor %}
+          {% for t in failed_tasks %}
+          <li><a href="{{ url_for("admin:view-jobs") }}"><span class="badge bg-red-lt">failed</span> {{ t.name.split(":")[-1] }}</a><span class="text-muted">{{ ts(t.completed_at) }}</span></li>
+          {% endfor %}
+          {% if stale %}<li><a href="{{ url_for("admin:view-jobs") }}"><span class="badge bg-red-lt">stale</span> {{ stale[:3]|join(", ") }}{% if stale|length > 3 %} and {{ stale|length - 3 }} more{% endif %}</a><span class="text-muted">see Jobs</span></li>{% endif %}
+          {% if not pending_records.checks and not failed_tasks and not stale %}<li class="text-muted">Nothing needs attention.</li>{% endif %}
+        </ul>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="row row-cards mb-3">
+    {{ stat("Accounts", "{:,}".format(accounts), "%s requests metered this month"|format("{:,}".format(metered_month)), "", url_for("admin:view-users")) }}
+    {{ stat("Credits outstanding", "{:,}".format(outstanding), "%s requests metered in all"|format("{:,}".format(metered_total)), "", url_for("admin:view-users")) }}
+    {{ stat("Credits sold", "{:,}".format(credits_sold), revenue, "", url_for("admin:list", identity="purchase")) }}
+    {{ stat("Products", "{:,}".format(products), "not merged away", "", url_for("admin:list", identity="merge-log")) }}
   </div>
   <div class="row row-cards mb-3">
-    {{ stat("Last snapshot", snapshot.day if snapshot else "none", "%s products, built %s"|format(snapshot.products, ts(snapshot.built_at)) if snapshot else "") }}
-    {{ stat("Last dump", dump.day if dump else "none", "%s products"|format(dump.products) if dump else "") }}
-    {{ stat("Credits sold", "{:,}".format(credits_sold), revenue) }}
-    {{ stat("Credits outstanding", "{:,}".format(outstanding), "%d accounts; %s requests metered this month, %s in all"|format(accounts, "{:,}".format(metered_month), "{:,}".format(metered_total))) }}
+    {{ stat("Last snapshot", snapshot.day if snapshot else "none", "%s products, built %s"|format(snapshot.products, ts(snapshot.built_at)) if snapshot else "", "", "", "col-lg-6") }}
+    {{ stat("Last dump", dump.day if dump else "none", "%s products"|format(dump.products) if dump else "", "", "", "col-lg-6") }}
   </div>
-  <div class="card mb-3">
-    <div class="card-header"><h3 class="card-title">Source records per source and layer</h3></div>
-    <table class="table table-vcenter card-table">
-      <thead><tr><th>Layer</th><th>Source</th><th class="text-end">Records</th><th style="width: 40%"></th></tr></thead>
-      <tbody>
-      {% for f in foods %}<tr><td>{{ f.layer }}</td><td>{{ f.source }}</td><td class="text-end">{{ "{:,}".format(f.n) }}</td><td>{{ bar(f.pct) }}</td></tr>
-      {% else %}<tr><td colspan="4" class="text-muted">No records yet.</td></tr>{% endfor %}
-      </tbody>
-    </table>
-  </div>
-  <div class="card">
-    <div class="card-header"><h3 class="card-title">Recent admin actions</h3></div>
-    <table class="table table-vcenter card-table">
-      <thead><tr><th>When (UTC)</th><th>By</th><th>Action</th><th>Detail</th></tr></thead>
-      <tbody>
-      {% for a in actions %}<tr><td>{{ ts(a.at) }}</td><td>{{ a.by }}</td><td>{{ a.action }}</td><td><code>{{ a.detail }}</code></td></tr>
-      {% else %}<tr><td colspan="4" class="text-muted">None yet.</td></tr>{% endfor %}
-      </tbody>
-    </table>
+
+  <div class="row row-cards">
+    <div class="col-lg-6"><div class="card">
+      <div class="card-header"><h3 class="card-title">Source records per source and layer</h3></div>
+      <table class="table table-vcenter card-table" id="sources" data-sortable>
+        <thead><tr><th>Layer</th><th>Source</th><th class="num">Records</th><th style="width: 40%" data-nosort></th></tr></thead>
+        <tbody>
+        {% for f in foods %}<tr><td>{{ f.layer }}</td><td>{{ f.source }}</td><td class="num">{{ "{:,}".format(f.n) }}</td><td>{{ bar(f.pct) }}</td></tr>
+        {% else %}<tr><td colspan="4" class="text-muted">No records yet.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div></div>
+    <div class="col-lg-6"><div class="card">
+      <div class="card-header"><h3 class="card-title">Recent admin actions</h3></div>
+      <table class="table table-vcenter card-table">
+        <thead><tr><th>When (UTC)</th><th>By</th><th>Action</th><th>Detail</th></tr></thead>
+        <tbody>
+        {% for a in actions %}<tr><td>{{ ts(a.at) }}</td><td>{{ a.by }}</td><td>{{ a.action }}</td><td><code>{{ a.detail }}</code></td></tr>
+        {% else %}<tr><td colspan="4" class="text-muted">None yet.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div></div>
   </div>
 </div></div>
 {% endblock %}

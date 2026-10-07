@@ -1,10 +1,10 @@
 {% macro ts(t) %}{% if t %}{{ t.strftime("%Y-%m-%d %H:%M") }}{% else %}-{% endif %}{% endmacro %}
 {% macro iso(s) %}{% if s %}{{ s[:16]|replace("T", " ") }}{% else %}-{% endif %}{% endmacro %}
 {% macro bar(pct, cls="bg-primary") %}<div class="progress progress-sm" style="min-width: 80px"><div class="progress-bar {{ cls }}" style="width: {{ pct }}%"></div></div>{% endmacro %}
-{% macro stat(label, value, note="") %}
-<div class="col-sm-6 col-lg-3"><div class="card"><div class="card-body">
-  <div class="subheader">{{ label }}</div><div class="h1 mb-0">{{ value }}</div>{% if note %}<div class="text-muted">{{ note }}</div>{% endif %}
-</div></div></div>
+{% macro stat(label, value, note="", tone="", href="", cols="col-lg-3") %}
+<div class="col-sm-6 {{ cols }}">{% if href %}<a class="stat-link" href="{{ href }}">{% endif %}<div class="card stat {{ tone }}"><div class="card-body">
+  <div class="label">{{ label }}</div><div class="value">{{ value }}</div>{% if note %}<div class="note">{{ note }}</div>{% endif %}
+</div></div>{% if href %}</a>{% endif %}</div>
 {% endmacro %}
 {% macro post(url, csrf, label, cls="btn-sm btn-outline-primary", fields={}) %}
 <form method="post" action="{{ url }}" class="d-inline">
@@ -13,3 +13,19 @@
   <button type="submit" class="btn {{ cls }}">{{ label }}</button>
 </form>
 {% endmacro %}
+{% macro columns(buckets, fmt="%H:%M") %}
+{% if buckets %}
+<svg class="chart" viewBox="0 0 {{ buckets | length * 10 }} 100" preserveAspectRatio="none" role="img" aria-label="requests per bucket">
+  <line class="grid" x1="0" x2="{{ buckets | length * 10 }}" y1="99.5" y2="99.5"></line>
+  {% for b in buckets %}{% set h = (b.pct * 0.94) | round(1) %}{% set e = (b.errors * h / b.n) | round(1) if b.n else 0 %}
+  <g><title>{{ b.b.strftime("%Y-%m-%d %H:%M") }} UTC: {{ b.n }} requests, {{ b.errors }} errors</title>
+    <rect x="{{ loop.index0 * 10 }}" y="0" width="10" height="100" fill="transparent"></rect>
+    <rect class="{{ 'col-ok' if b.n else 'col-none' }}" x="{{ loop.index0 * 10 + 1 }}" y="{{ 99 - (h if b.n else 1) }}" width="8" height="{{ h if b.n else 1 }}" rx="1"></rect>
+    {% if b.errors %}<rect class="col-err" x="{{ loop.index0 * 10 + 1 }}" y="{{ 99 - e }}" width="8" height="{{ e }}" rx="1"></rect>{% endif %}
+  </g>{% endfor %}
+</svg>
+<div class="fd-legend text-muted small mt-2"><span class="me-3"><i style="background: var(--fd-accent)"></i>requests</span><span><i style="background: var(--fd-bad)"></i>4xx and 5xx</span></div>
+<div class="chart-axis"><span>{{ buckets[0].b.strftime(fmt) }}</span><span>{{ buckets[(buckets | length) // 2].b.strftime(fmt) }}</span><span>{{ buckets[-1].b.strftime(fmt) }}</span></div>
+{% endif %}
+{% endmacro %}
+{% macro filter_box(table_id, placeholder="Filter rows") %}<input type="search" class="form-control form-control-sm table-filter" placeholder="{{ placeholder }}" data-filter="{{ table_id }}">{% endmacro %}

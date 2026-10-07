@@ -1,12 +1,12 @@
 {% extends "sqladmin/layout.html" %}
-{% from "admin_macros.html" import ts, iso, post %}
+{% from "admin_macros.html" import ts, iso, post, filter_box %}
 {% block content %}
 <div class="col-12"><div class="w-100">
   <div class="card mb-3">
     <div class="card-header"><h3 class="card-title">Freshness</h3>
       <div class="card-actions">{{ post(url_for("admin:view-jobs-run"), csrf, "Run snapshot", "btn-sm btn-primary", {"fetcher": "snapshot"}) }}</div></div>
-    <table class="table table-vcenter card-table">
-      <thead><tr><th>Source</th><th>Last successful check (UTC)</th><th>Allowed age</th><th>State</th><th></th></tr></thead>
+    <table class="table table-vcenter card-table" id="fresh" data-sortable>
+      <thead><tr><th>Source</th><th>Last successful check (UTC)</th><th>Allowed age</th><th>State</th><th data-nosort></th></tr></thead>
       <tbody>
       {% for name, f in health.fetchers.items() %}<tr>
         <td>{{ name }}</td><td>{{ iso(f.last_ok) }}</td><td>{{ f.max_age_hours|round|int }} h</td>
@@ -19,9 +19,9 @@
 
   <div class="card mb-3">
     <div class="card-header"><h3 class="card-title">Queue</h3>
-      <div class="card-actions">{% for status in ("pending", "running", "failed", "completed") %}<span class="badge me-1">{{ status }} {{ counts.get(status, 0) }}</span>{% endfor %}</div></div>
-    <table class="table table-vcenter card-table">
-      <thead><tr><th>Id</th><th>Task</th><th>Status</th><th>Attempts</th><th>Queued</th><th>Started</th><th>Seconds</th><th>Error</th></tr></thead>
+      <div class="card-actions d-flex align-items-center gap-2">{% for status in ("pending", "running", "failed", "completed") %}<span class="badge {{ {"failed": "bg-red-lt", "running": "bg-blue-lt", "pending": "bg-yellow-lt", "completed": "bg-green-lt"}[status] }}">{{ status }} {{ counts.get(status, 0) }}</span>{% endfor %}{{ filter_box("queue", "Filter the queue") }}</div></div>
+    <table class="table table-vcenter card-table" id="queue" data-sortable>
+      <thead><tr><th>Id</th><th>Task</th><th>Status</th><th>Attempts</th><th>Queued</th><th>Started</th><th>Seconds</th><th data-nosort>Error</th></tr></thead>
       <tbody>
       {% for t in tasks %}<tr>
         <td>{{ t.id }}</td><td>{{ t.name.split(":")[-1] }}{% if t.kwargs %} <code>{{ t.kwargs }}</code>{% endif %}</td>
@@ -36,7 +36,7 @@
 
   <div class="card mb-3">
     <div class="card-header"><h3 class="card-title">Schedules</h3></div>
-    <table class="table table-vcenter card-table">
+    <table class="table table-vcenter card-table" id="schedules" data-sortable>
       <thead><tr><th>Task</th><th>Key</th><th>Every</th><th>Next run (UTC)</th><th>Last run (UTC)</th><th>Active</th></tr></thead>
       <tbody>
       {% for p in periodic %}<tr>
@@ -48,9 +48,9 @@
   </div>
 
   <div class="card">
-    <div class="card-header"><h3 class="card-title">Fetch runs</h3></div>
-    <table class="table table-vcenter card-table">
-      <thead><tr><th>Fetcher</th><th>Reference</th><th>Status</th><th class="text-end">Foods</th><th class="text-end">Observations</th><th>Started (UTC)</th><th>Seconds</th><th>Error</th></tr></thead>
+    <div class="card-header"><h3 class="card-title">Fetch runs</h3><div class="card-actions">{{ filter_box("runs", "Filter fetch runs") }}</div></div>
+    <table class="table table-vcenter card-table" id="runs" data-sortable>
+      <thead><tr><th>Fetcher</th><th>Reference</th><th>Status</th><th class="text-end">Foods</th><th class="text-end">Observations</th><th>Started (UTC)</th><th>Seconds</th><th data-nosort>Error</th></tr></thead>
       <tbody>
       {% for r in runs %}<tr>
         <td>{{ r.fetcher }}</td><td>{{ r.ref }}</td>

@@ -403,7 +403,7 @@ flowchart LR
     obs[("observation<br/>status pending")] --> q["review.queue()<br/>grouped per record"]
     q --> rest["GET /v1/review"]
     q --> mq["MCP review_queue"]
-    obs --> adm["SQLAdmin /admin<br/>pending values, read only"]
+    obs --> adm["SQLAdmin /admin/observation/list<br/>pending values, filters, accept and reject on each row"]
     obs --> lab["SQLAdmin /admin/review<br/>one card per record: why it failed, all values, photo"]
     lab -->|"accept or reject links, then back to the page"| adm
     md["MCP decide_review"] --> post["POST /v1/review/{observation_id}"]
@@ -426,9 +426,9 @@ flowchart LR
 - The REST routes are on one `APIRouter`, `review_router`, which needs the `review` scope
   (`api.py:110`). The split route `POST /v1/products/{id}/split` is on it too. The MCP tools `review_queue`, `decide_review` and `split_product` call the same handlers. Over
   HTTP, they need the `review` scope too (`api.py:152`). The SQLAdmin actions call `review.decide`
-  with `by` set to the name of the admin key that logged in (`admin.py:54`).
+  with `by` set to the name of the admin key that logged in (`admin.py:106`).
 - The **Review** page at `/admin/review` shows one card per food record that has pending values, of
-  every source (`admin.py:125`, template `templates/review.html`).
+  every source (`admin.py:199`, template `templates/review.html`).
   `review.queue(PAGE_SIZE, offset=…, check=…, source=…, detail=True)` gives the cards (`review.py:23`).
   A card has:
   - the name, brand, record id, product id and source. For an `off:` record, it links to the
@@ -441,21 +441,22 @@ flowchart LR
     name the fields that they implicate.
   - a table of the latest value of every nutrient, whatever its status, and every pending value.
     It shows the status, the value that the API serves now for the product, and Accept and Reject
-    on pending rows. **Accept all pending** sends all the pending ids of the card in one `pks` list.
+    on pending rows. Pending rows have a tinted background and settled rows are muted. **Accept all pending** sends all the pending ids of the card in one `pks` list.
   - the photo, for a label or brand record: the `evidence` of the newest pending value. The photo
     route `/admin/review/photo/{sha}` needs the admin login too.
 
   The query parameters `check` and `source` filter the records, and `offset` pages them by
-  `PAGE_SIZE` = 25 (`admin.py:113`). The two dropdowns list the checks and sources of the records
+  `PAGE_SIZE` = 25 (`admin.py:186`). The two dropdowns list the checks and sources of the records
   with pending values and their counts (`review.facets`, `review.py:95`). Each count respects the
-  other filter. `review.queue` without the new keyword arguments returns what it returned before,
+  other filter. The filter bar stays at the top of the viewport while the cards scroll. `review.queue` without the new keyword arguments returns what it returned before,
   for `/v1/review` and the MCP tool.
 - The accept and reject links of the page carry `next`, the page's own path and query. After the
-  decision, the action redirects there (`admin.py:62`). `back_to` (`admin.py:72`) accepts a `next`
+  decision, the action redirects there (`admin.py:106`). `back_to` (`admin.py:116`) accepts a `next`
   only when it has no scheme or host and its normalised path is under the admin mount. Anything else
-  goes to **Pending values**, as before.
+  goes to **Pending values**, as before. The Accept and Reject buttons on each row of **Pending values**
+  carry the list's own path and query as `next` too, so a decision keeps the filters (`decision_buttons`, `admin.py:61`).
 - The SQLAdmin actions are GET requests, as SQLAdmin builds them. The login cookie is
-  `SameSite=Strict` (`admin.py:90`). Thus a link on another site does not carry the session, and
+  `SameSite=Strict` (`admin.py:301`). Thus a link on another site does not carry the session, and
   cannot decide a value.
 
 ### Admin panel
@@ -463,7 +464,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     browser["Admin in a browser<br/>admin key"] --> login["SQLAdmin login<br/>session cookie with csrf token"]
-    login --> ov["Overview<br/>/admin/overview"]
+    login -->|"/admin/ redirects"| ov["Overview<br/>/admin/overview"]
     login --> jb["Jobs<br/>/admin/jobs"]
     login --> rq["Requests<br/>/admin/requests"]
     login --> us["Users<br/>/admin/users"]
@@ -479,23 +480,43 @@ flowchart LR
 ```
 
 - Four pages sit next to the SQLAdmin model views: **Overview**, **Jobs**, **Requests** and **Users**
-  (`adminpages.py:47`). Each one is a SQLAdmin `BaseView` with a Jinja template. Charts are CSS bars
-  in tables, with no JavaScript library. `ops.py` holds the queries and the actions, so a page
-  function only renders. All four need the admin login, like every other `/admin` page.
-- **Overview** shows the count of source records per source and layer, the products that are not
-  merged away, the pending review values, the newest snapshot and ODbL dump, freshness, the
-  requests of the last 24 hours, credits sold, credits outstanding and the metered requests
-  (`ops.py:29`). The count per source reads the whole `food` table, so it takes a few seconds
-  after the full OFF dump is loaded.
+  (`adminpages.py:47`). Each one is a SQLAdmin `BaseView` with a Jinja template. `ops.py` holds the
+  queries and the actions, so a page function only renders. All four need the admin login, like every
+  other `/admin` page. `/admin/` redirects to **Overview** (`FooddbAdmin.index`, `admin.py:287`).
+- The menu has three sections, set by `category` on each view: **Review** (Review, Pending values,
+  Merge log), **Platform** (Jobs, Requests) and **Customers** (Users, Accounts, Purchases).
+  `templates/admin.css` lists the sections open, as headings, instead of as dropdowns.
+- The look is Tabler, which SQLAdmin ships, with no JavaScript library and no build step.
+  `templates/sqladmin/base.html` extends the original `base.html` (SQLAdmin registers it as
+  `sqladmin_original/base.html`) and inlines `admin.css` and `admin.js`, so model views and our
+  pages look alike. `sqladmin/login.html` asks only for the API key.
+- Charts are inline SVG that the `columns` macro draws from the bucket counts (`admin_macros.html`).
+  A bar has one `<title>` with the hour, the requests and the errors, and an hour without requests
+  is an empty bar (`ops._hourly`, `ops.py:29`). A table with `data-sortable` sorts by the header
+  that the admin clicks, and an `input[data-filter]` hides the rows that do not contain its text
+  (`admin.js`). Both work on the rows of the page only: the server limits each list.
+- **Overview** has four cards (pending values, requests of the last 24 hours, jobs, freshness), a
+  chart of requests per hour, and a **Needs attention** list: the checks of the pending records,
+  linked to **Review** with that check as the filter, the failed tasks and the stale fetchers. Below
+  are accounts, credits outstanding, credits sold, products, the newest snapshot and ODbL dump, the
+  count of source records per source and layer, and the latest 15 admin actions (`ops.py:40`). The
+  count per source reads the whole `food` table, so it takes a few seconds after the full OFF dump
+  is loaded.
 - **Jobs** shows each watched fetcher with its last check and its state, the pq queue (pending and
   running tasks, the last 50 failed and 20 completed, with the error text and the duration), the
-  pq schedules with their next run, and the last 30 `fetch_run` rows (`ops.py:55`).
+  pq schedules with their next run, and the last 30 `fetch_run` rows (`ops.py:72`).
 - **Requests** shows the request log for 24 hours, 7 days or 30 days: requests per hour or per day,
   by status, by key, the top routes, p50 and p95 latency, the counts of 4xx, 5xx, 402 and 429, and
-  the latest 50 rows (`ops.py:74`).
-- **Users** shows each account with its credits, the requests metered this month, its purchases and
-  all its keys with the last use and the revocation time. Keys without an account are in a
-  second list (`ops.py:94`).
+  the latest 50 rows (`ops.py:91`).
+- **Users** is a table with one row per account: credits, the requests metered this month, its
+  purchases, the grant and unlimited forms, and a **keys** disclosure with all its keys, the last use
+  and the revocation time. Keys without an account are in a second list (`ops.py:110`).
+- The model views have a filter panel, search, sortable columns and a page size. **Pending values**
+  filters by source, nutrient and basis. The filter lists only values of pending rows
+  (`PendingOnly`, `admin.py:52`), because `observation` holds every value ever read, and a `distinct`
+  over it on each page load would scan it all. **Merge log** filters by kind and has a **Split**
+  button on each `merge` row. **Accounts** filters by unlimited and **Purchases** by currency.
+  Credits and amounts show as `1,200` and `EUR 29.99`.
 - The actions are POST forms: **Run now** for a fetcher or the snapshot (`/admin/jobs/run`),
   **Grant** credits and **Set unlimited** (`/admin/users/{id}/grant` and `/unlimited`), and
   **Revoke** a key (`/admin/keys/{id}/revoke`). SQLAdmin builds its own actions as GET links, so
@@ -503,7 +524,7 @@ flowchart LR
   Each form carries that value, and the route compares it in constant time (`adminpages.py:25`). A
   missing or wrong value gives a 403 and changes nothing. An unauthenticated request gets the login
   redirect before the route runs, and so does a session whose key was revoked.
-- Each action writes one `admin_action` row in the same transaction as the change (`ops.py:110`).
+- Each action writes one `admin_action` row in the same transaction as the change (`ops.py:126`).
   The row has the name of the admin key, the action and a JSON detail. **Overview** lists the
   latest 15.
 - **Run now** queues the same function that the schedule runs. It queues nothing when a task of
@@ -742,7 +763,7 @@ next build writes the values of both products for today. A pin on a past day for
 has no values, because that day froze them under the survivor.
 
 The SQLAdmin view `merge-log` lists `merge_log`. Its split action splits the records of a `merge`
-row out of the product that the row's survivor answers as now (`admin.py:63`).
+row out of the product that the row's survivor answers as now (`admin.py:134`). Each `merge` row has a **Split** button, and the Actions menu splits several (`admin.py:177`).
 
 ### Resolve
 
@@ -837,7 +858,7 @@ result is the same, and the plan does not depend on the table statistics.
 | OFF full dump | `fetch_off_dump` | manual only (`cli.py:68`) | – |
 | ODbL dump | `dump_odbl` | cron `0 4 1 * *`, UTC (`jobs.py:80`) | BATCH |
 | Request log prune | `prune_request_log` | cron `15 3 * * *`, UTC (`jobs.py:106`) | BATCH |
-| Admin run now | `fetch_off_deltas`, `fetch_fdc`, `fetch_table`, `build_snapshot` | the **Run now** button in `/admin/jobs` (`ops.py:158`) | NORMAL |
+| Admin run now | `fetch_off_deltas`, `fetch_fdc`, `fetch_table`, `build_snapshot` | the **Run now** button in `/admin/jobs` (`ops.py:174`) | NORMAL |
 | Label read | `read_label` | `POST /v1/labels` (`api.py:165`) | NORMAL |
 
 pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
@@ -1428,9 +1449,9 @@ flowchart LR
 - The client IP comes from `X-Forwarded-For` when the peer is in
   `FOODDB__BACKEND__FORWARDED_ALLOW_IPS` (`cli.py:52`). The compose stack trusts every peer, because
   it publishes the port on loopback only.
-- `/admin` logs in with an `admin` key in the password field (`admin.py:63`). The session cookie
+- `/admin` logs in with an `admin` key (`admin.py:270`). The session cookie
   holds the key id and a random CSRF value, signed with `FOODDB__BACKEND__SECRET_KEY`. Each admin request checks that the
-  key is still active. Without the secret, `admin.mount` does not mount `/admin` (`admin.py:83`).
+  key is still active. Without the secret, `admin.mount` does not mount `/admin` (`admin.py:294`).
 
 ### Developer portal and billing
 

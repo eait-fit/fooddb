@@ -3,7 +3,7 @@
 {% set accept = url_for('admin:action-observation-accept') %}
 {% set reject = url_for('admin:action-observation-reject') %}
 <div class="col-12"><div class="w-100">
-  <form method="get" action="" class="card mb-3"><div class="card-body d-flex flex-wrap align-items-center gap-2">
+  <form method="get" action="" class="card mb-3 review-bar"><div class="card-body py-2 d-flex flex-wrap align-items-center gap-2">
     <select name="check" class="form-select w-auto" onchange="this.form.submit()">
       <option value="">All checks</option>
       {% for name, n in facets.checks.items() %}<option value="{{ name }}"{% if name == check %} selected{% endif %}>{{ name }} ({{ n }})</option>{% endfor %}
@@ -14,6 +14,7 @@
       {% for name, n in facets.sources.items() %}<option value="{{ name }}"{% if name == source %} selected{% endif %}>{{ name }} ({{ n }})</option>{% endfor %}
       {% if source and source not in facets.sources %}<option value="{{ source }}" selected>{{ source }} (0)</option>{% endif %}
     </select>
+    {% if check or source %}<a class="btn btn-sm btn-outline-secondary" href="?">Clear filters</a>{% endif %}
     <noscript><button class="btn btn-primary">Filter</button></noscript>
     <span class="text-muted ms-auto">{% if items %}Records {{ first }}–{{ last }} of {{ facets.total }}{% else %}{{ facets.total }} records{% endif %}</span>
     {% if prev %}<a class="btn btn-sm" href="{{ prev }}">Previous</a>{% endif %}
@@ -25,7 +26,7 @@
   {% for item in items %}
   {% set sha = item.photo %}
   {% set pending = item['values'] | selectattr('status', 'equalto', 'pending') | list %}
-  <div class="card mb-3">
+  <div class="card mb-3 review-card">
     <div class="card-header">
       <h3 class="card-title">{{ item.name }}{% if item.brand %} <span class="text-muted">· {{ item.brand }}</span>{% endif %}
         <span class="text-muted">· {{ item.record }} · product {{ item.product_id }} · {{ item.source }}</span></h3>
@@ -44,18 +45,18 @@
       {% endif %}
       <div class="{{ 'col-md-8' if sha else 'col-12' }}">
         {% if item.checks %}
-        <ul class="mb-3">
+        <ul class="why">
           {% for check in item.checks %}<li><span class="badge bg-yellow-lt">{{ check }}</span>{% if item.why[check] %} {{ item.why[check] }}{% endif %}</li>{% endfor %}
         </ul>
         {% endif %}
-        <table class="table table-vcenter">
+        <table class="table table-sm table-vcenter mb-0">
           <thead><tr><th>Nutrient</th><th>This record</th><th>Status</th><th>Served now</th><th class="text-end">
-            <a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ pending | map(attribute='observation_id') | join(',') }}&next={{ back | urlencode }}">Accept all pending</a>
+            {% if pending %}<a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ pending | map(attribute='observation_id') | join(',') }}&next={{ back | urlencode }}">Accept all pending</a>{% endif %}
           </th></tr></thead>
           <tbody>
           {% for v in item['values'] %}
           {% set now = item.served.get(v.nutrient) %}
-          <tr>
+          <tr class="{{ 'pending-row' if v.status == 'pending' else 'settled-row' }}">
             <td>{{ v.nutrient }}</td>
             <td>{% if v.value is none %}<span class="text-muted">withdrawn</span>{% else %}<strong>{{ v.value }}</strong> {{ v.unit }}/{{ v.basis }}{% endif %}</td>
             <td><span class="badge {{ {'pending': 'bg-yellow-lt', 'accepted': 'bg-green-lt', 'rejected': 'bg-red-lt'}[v.status] }}">{{ v.status }}</span>{% if not v.latest %} <span class="text-muted">superseded</span>{% endif %}</td>
