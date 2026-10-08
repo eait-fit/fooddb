@@ -166,7 +166,7 @@ RapidAPI meters its own customers, so fooddb does not rate-limit these requests.
 
 ## Selling access
 
-The developer portal at `/portal` sells prepaid packs of API requests. One pack is 100,000 requests
+The customer portal at `/portal` sells prepaid packs of API requests. One pack is 100,000 requests
 for EUR 29.99, paid once. The credits do not expire. There is no free tier. A user signs in with an
 email link, makes read keys, and pays through Stripe Checkout. Each read request with such a key
 costs one credit. At zero credits the API answers 402. Keys that you make with `fooddb keys create`
