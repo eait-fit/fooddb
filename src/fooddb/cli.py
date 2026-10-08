@@ -26,9 +26,12 @@ def migrate() -> None:
 @app.command()
 def worker() -> None:
     """Register periodic fetches and process jobs until stopped."""
-    from pq.logging import configure_logging
+    from datetime import timedelta
 
-    from fooddb.jobs import queue, schedule
+    from pq.logging import configure_logging
+    from pq.worker import run_worker
+
+    from fooddb.jobs import RUNTIME, queue, schedule
 
     from fooddb.db import engine
 
@@ -37,7 +40,9 @@ def worker() -> None:
     # The parent forks every task: it must hold no pooled connection a child would inherit
     # (psycopg then collides on prepared statements across processes).
     engine().dispose()
-    queue().run_worker(max_runtime=3600)
+    # The reaper fails a task RUNNING longer than this, and a parked upsert of it may then start next to the live run:
+    # it must outlast the longest task.
+    run_worker(queue(), max_runtime=3600, stale_task_timeout=timedelta(seconds=max(RUNTIME.values()) + 3600))
 
 
 @app.command()
