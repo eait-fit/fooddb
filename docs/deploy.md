@@ -320,8 +320,8 @@ docker compose exec worker fooddb status   # row counts, the last 5 fetch runs, 
 
 ## Consumer sync
 
-A service that keeps its own copy of the catalog reads the snapshot export. The README has the
-steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
+A service that keeps its own copy of the catalog reads the snapshot export. The steps are in
+[Sync a local copy](usage.md#sync-a-local-copy). For the operator:
 
 - The export of a large day is long. With the full OFF dump it has about 4 million lines. Give the
   consumer's HTTP client a long read timeout. Caddy streams the response and needs no change.
