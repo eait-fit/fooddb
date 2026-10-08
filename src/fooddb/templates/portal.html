@@ -1,46 +1,127 @@
 {% extends "portal_base.html" %}
+{% block title %}Account · fooddb customer portal{% endblock %}
+{% block nav %}
+<span class="who">{{ account.email }}</span>
+<form method="post" action="/portal/logout"><input type="hidden" name="csrf" value="{{ csrf }}"><button class="btn btn-quiet" type="submit">Sign out</button></form>
+{% endblock %}
 {% block body %}
-<nav><h1>fooddb developer portal</h1>
-<form method="post" action="/portal/logout"><input type="hidden" name="csrf" value="{{ csrf }}"><button type="submit">Sign out</button></form></nav>
-<p>{{ account.email }}</p>
-{% if error %}<p class="error">{{ error }}</p>{% endif %}
-<dl>
-<dt>Credits left</dt><dd>{% if account.unlimited %}unlimited{% else %}{{ '{:,}'.format(account.credits) }}{% endif %}</dd>
-<dt>Requests this month</dt><dd>{{ used }}</dd>
+<main class="wrap">
+<div class="page-head">
+<h1>Account</h1>
+<p class="who-mobile">{{ account.email }}</p>
+</div>
+<div class="stack">
+{% if error %}<div class="alert alert-error" role="alert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg><p class="error">{{ error }}</p></div>{% endif %}
+
+<section class="card balance" aria-labelledby="h-balance">
+<div class="balance-main">
+<h2 id="h-balance">Balance</h2>
+<dl class="stats">
+<div class="stat-main"><dt>Credits left</dt><dd>{% if account.unlimited %}Unlimited{% else %}{{ '{:,}'.format(account.credits) }}{% endif %}</dd></div>
+<div class="stat-sub"><dt>Requests this month</dt><dd>{{ used }}</dd></div>
 </dl>
-<p>Each read request with your key costs one credit. Credits do not expire, and all your keys share them.</p>
+<p class="balance-note">Each read request with your key costs one credit. All your keys share the balance.</p>
+</div>
+<div class="offer">
+<p class="offer-label">Prepaid pack</p>
+<p class="offer-price">€{{ '%.2f'|format(pack.price) }}<span>for {{ '{:,}'.format(pack.credits) }} requests</span></p>
 <form method="post" action="/portal/buy">
 <input type="hidden" name="csrf" value="{{ csrf }}">
-<button type="submit">Buy {{ '{:,}'.format(pack.credits) }} requests for €{{ '%.2f'|format(pack.price) }}</button>
+<button class="btn btn-primary btn-block" type="submit">Buy {{ '{:,}'.format(pack.credits) }} requests for €{{ '%.2f'|format(pack.price) }}</button>
 </form>
+<p class="fine">Credits never expire.</p>
+</div>
+</section>
 
-<h2>API keys</h2>
-{% if new_key %}
-<p class="done">Your new key. Copy it now: it is not shown again.<br><code>{{ new_key }}</code></p>
-{% endif %}
-<table>
-{% for k in keys %}
-<tr><td>{{ k.name }}</td><td>created {{ k.created_at.strftime('%Y-%m-%d') }}</td><td>last used {{ k.last_used_at.strftime('%Y-%m-%d') if k.last_used_at else 'never' }}</td>
-<td><form class="inline" method="post" action="/portal/keys/{{ k.id }}/revoke"><input type="hidden" name="csrf" value="{{ csrf }}"><button type="submit">Revoke</button></form></td></tr>
-{% else %}
-<tr><td>No keys yet.</td></tr>
-{% endfor %}
-</table>
+<section class="card" aria-labelledby="h-keys">
+<div class="card-head">
+<div>
+<h2 id="h-keys">API keys</h2>
+<p class="sub">Requests made with any of your keys draw from the same balance.</p>
+</div>
 <form method="post" action="/portal/keys">
 <input type="hidden" name="csrf" value="{{ csrf }}">
-<p><button type="submit">Create a key</button></p>
+<button class="btn {% if keys %}btn-secondary{% else %}btn-primary{% endif %}" type="submit">Create a key</button>
 </form>
-<p>Send it as <code>Authorization: Bearer KEY</code> or <code>X-API-Key: KEY</code>.</p>
-
-<h2>Purchases</h2>
-{% if purchases %}
-<table>
-<tr><th>Date</th><th>Amount</th><th>Requests</th></tr>
-{% for p in purchases %}
-<tr><td>{{ p.created_at.strftime('%Y-%m-%d') }}</td><td>{{ '%.2f'|format(p.amount_cents / 100) }} {{ p.currency|upper }}</td><td>{{ '{:,}'.format(p.credits) }}</td></tr>
-{% endfor %}
-</table>
-{% else %}
-<p>No purchases yet. Stripe mails a receipt for each one.</p>
+</div>
+{% if new_key %}
+<div class="callout" role="status">
+<p class="callout-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Your new key</p>
+<p class="callout-warn">Copy it now: it is not shown again.</p>
+<div class="keyrow">
+<code id="new-key">{{ new_key }}</code>
+<button class="btn btn-primary" type="button" data-copy="#new-key" aria-live="polite">Copy</button>
+</div>
+</div>
 {% endif %}
+{% if keys %}
+<div class="table-wrap">
+<table class="table">
+<thead><tr><th scope="col">Name</th><th scope="col">Created</th><th scope="col">Last used</th><th scope="col" class="end"><span class="sr">Actions</span></th></tr></thead>
+<tbody>
+{% for k in keys %}
+<tr>
+<td class="name">{{ k.name }}</td>
+<td data-label="Created">{{ k.created_at.strftime('%Y-%m-%d') }}</td>
+<td data-label="Last used">{% if k.last_used_at %}{{ k.last_used_at.strftime('%Y-%m-%d') }}{% else %}<span class="dim">Never</span>{% endif %}</td>
+<td class="end"><form method="post" action="/portal/keys/{{ k.id }}/revoke"><input type="hidden" name="csrf" value="{{ csrf }}"><button class="btn btn-danger btn-sm" type="submit" aria-label="Revoke key {{ k.name }}">Revoke</button></form></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% else %}
+<div class="empty">
+<strong>No keys yet</strong>
+<p>Create a key to start sending requests.</p>
+</div>
+{% endif %}
+</section>
+
+<div class="cols">
+<section class="card" aria-labelledby="h-quick">
+<div class="card-head">
+<div>
+<h2 id="h-quick">Quickstart</h2>
+<p class="sub">Look up a product by barcode.</p>
+</div>
+<button class="btn" type="button" data-copy="#quickstart" aria-live="polite">Copy</button>
+</div>
+<div class="card-body">
+<div class="codeblock">
+<pre id="quickstart"><code>curl -H "Authorization: Bearer <span class="ph">YOUR_KEY</span>" \
+  {{ base }}/v1/products/3017620422003</code></pre>
+</div>
+<p class="note">Send the key as <code>Authorization: Bearer KEY</code> or <code>X-API-Key: KEY</code>.</p>
+</div>
+</section>
+
+<section class="card" aria-labelledby="h-purchases">
+<div class="card-head">
+<div>
+<h2 id="h-purchases">Purchases</h2>
+<p class="sub">Each pack adds credits to your balance.</p>
+</div>
+</div>
+{% if purchases %}
+<div class="table-wrap">
+<table class="table">
+<thead><tr><th scope="col">Date</th><th scope="col">Amount</th><th scope="col">Requests</th></tr></thead>
+<tbody>
+{% for p in purchases %}
+<tr><td class="name">{{ p.created_at.strftime('%Y-%m-%d') }}</td><td data-label="Amount">{{ '%.2f'|format(p.amount_cents / 100) }} {{ p.currency|upper }}</td><td data-label="Requests">{{ '{:,}'.format(p.credits) }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% else %}
+<div class="empty">
+<strong>No purchases yet</strong>
+<p>Stripe mails a receipt for each one.</p>
+</div>
+{% endif %}
+</section>
+</div>
+</div>
+</main>
 {% endblock %}

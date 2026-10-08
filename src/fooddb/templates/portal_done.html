@@ -1,11 +1,18 @@
 {% extends "portal_base.html" %}
+{% block title %}{% if paid %}Payment received{% else %}Payment cancelled{% endif %} · fooddb customer portal{% endblock %}
+{% block header %}{% endblock %}
 {% block body %}
+<main class="auth"><div class="card auth-card">
+<div class="auth-brand">{{ self.mark() }}<span class="brand">fooddb</span><span class="tag">Customer portal</span></div>
 {% if paid %}
+<div class="status-icon status-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
 <h1>Thank you</h1>
-<p class="done">Your payment went through. The credits show on your account within a minute.</p>
+<p class="lead done" role="status">Your payment went through. The credits show on your account within a minute.</p>
 {% else %}
+<div class="status-icon status-neutral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
 <h1>Payment cancelled</h1>
-<p>Nothing was charged.</p>
+<p class="lead">Nothing was charged.</p>
 {% endif %}
-<p><a href="/portal">Back to your account</a></p>
+<a class="btn btn-primary btn-block cta" href="/portal">Back to your account</a>
+</div></main>
 {% endblock %}

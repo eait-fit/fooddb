@@ -1,4 +1,4 @@
-"""The developer portal at /portal: magic-link sign-in, keys, credits, Stripe Checkout, and the Stripe webhook.
+"""The customer portal at /portal: magic-link sign-in, keys, credits, Stripe Checkout, and the Stripe webhook.
 Server-rendered pages. The session is a signed cookie; every POST form carries a CSRF token."""
 
 import hashlib
@@ -108,7 +108,7 @@ def _flashed(request: Request) -> str | None:
 def _dashboard(request: Request, account: dict, status: int = 200, **context):
     return page(request, "portal.html", status, **{
         "account": account, "keys": accounts.keys(account["id"]), "used": accounts.requests_this_month(account["id"]),
-        "purchases": accounts.purchases(account["id"]), "new_key": None,
+        "purchases": accounts.purchases(account["id"]), "new_key": None, "base": _base(request),
         "pack": {"price": billing.PACK_CENTS / 100, "credits": billing.credits_per_pack()}} | context)
 
 

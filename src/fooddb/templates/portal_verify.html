@@ -1,9 +1,15 @@
 {% extends "portal_base.html" %}
+{% block title %}Sign in · fooddb customer portal{% endblock %}
+{% block header %}{% endblock %}
 {% block body %}
+<main class="auth"><div class="card auth-card">
+<div class="auth-brand">{{ self.mark() }}<span class="brand">fooddb</span><span class="tag">Customer portal</span></div>
 <h1>Sign in to fooddb</h1>
+<p class="lead">One more step: confirm to finish signing in. This keeps mail scanners from using up your link.</p>
 <form method="post" action="/portal/verify">
 <input type="hidden" name="csrf" value="{{ csrf }}">
 <input type="hidden" name="token" value="{{ token }}">
-<p><button type="submit">Sign in</button></p>
+<button class="btn btn-primary btn-block" type="submit">Sign in</button>
 </form>
+</div></main>
 {% endblock %}
