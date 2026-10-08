@@ -884,7 +884,7 @@ result is the same, and the plan does not depend on the table statistics.
 | Admin run now | `fetch_off_deltas`, `fetch_fdc`, `fetch_table`, `build_snapshot` | the **Run now** button in `/admin/jobs` (`ops.py:174`) | NORMAL |
 | Label read | `read_label` | `POST /v1/labels` (`api.py:165`) | NORMAL |
 
-pq evaluates cron in UTC (pq 0.8.1 `client.py:374`).
+pq evaluates cron in UTC (pq 0.9.0 `client.py:422`).
 
 ```mermaid
 sequenceDiagram
@@ -925,7 +925,7 @@ match job imports Splink and DuckDB only in the child (`jobs.py:51`). Each task 
 hour (`cli.py:40`).
 
 The pq worker takes one task at a time. It always takes a one-off task before a periodic task, and
-a higher priority first (pq 0.8.1 `worker.py:722`, `worker.py:792`). This rule sets the first-boot
+a higher priority first (pq 0.9.0 `worker.py:737`, `worker.py:867`). This rule sets the first-boot
 order above:
 
 1. The FDC and national table tasks run first. Each one queues the match task. The client id
@@ -944,7 +944,12 @@ uses the client id `bootstrap-snapshot`. Thus it collapses with the first-boot s
 pending task.
 
 Each worker start registers the OFF schedule again with the next run set to now
-(pq 0.8.1 `client.py:379`). Thus a restart of the worker always checks for OFF deltas at once.
+(pq 0.9.0 `client.py:427`). Thus a restart of the worker always checks for OFF deltas at once.
+
+The worker reaps a task that stays RUNNING longer than its stale timeout and marks it failed. The timeout is the
+longest `RUNTIME` plus one hour, 7 hours now (`cli.py:45`). A shorter one fails a live run of FDC Branded. Since pq
+0.9.0 an `upsert()` on a RUNNING task waits in `pq_tasks.requeue` and runs when that run ends, so after an early
+reap the parked version could start next to the live run.
 
 The full OFF dump takes hours, which is more than the task limit. Run it with `fooddb run off-dump`
 in its own container ([deploy.md](deploy.md#load-the-full-open-food-facts-dump)). It loads a dump
