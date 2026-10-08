@@ -72,9 +72,9 @@
           {% set now = item.served.get(v.nutrient) %}
           <tr class="{{ 'pending-row' if v.status == 'pending' else 'settled-row' }}">
             <td>{{ v.nutrient }}</td>
-            <td>{% if v.value is none %}<span class="text-muted">withdrawn</span>{% else %}<strong>{{ v.value }}</strong> {{ v.unit }}/{{ v.basis }}{% endif %}</td>
+            <td>{% if v.value is none %}<span class="text-muted">withdrawn</span>{% else %}<strong>{{ v.value | short }}</strong> {{ v.unit }}/{{ v.basis }}{% endif %}</td>
             <td><span class="badge {{ {'pending': 'bg-yellow-lt', 'accepted': 'bg-green-lt', 'rejected': 'bg-red-lt'}[v.status] }}">{{ v.status }}</span>{% if not v.latest %} <span class="text-muted">superseded</span>{% endif %}</td>
-            <td>{% if now %}{{ now.value }} {{ now.unit }}/{{ now.basis }} <span class="text-muted">({{ now.source }})</span>{% else %}<span class="text-muted">none</span>{% endif %}</td>
+            <td>{% if now %}{{ now.value | short }} {{ now.unit }}/{{ now.basis }} <span class="text-muted">({{ now.source }})</span>{% else %}<span class="text-muted">none</span>{% endif %}</td>
             <td class="text-nowrap text-end">
               {% if v.status == 'pending' %}
               <a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ v.observation_id }}&next={{ back | urlencode }}">Accept</a>

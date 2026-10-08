@@ -60,3 +60,7 @@ th[data-sort="desc"]::after { content: " \2193"; opacity: .9; }
 .clip { display: inline-block; max-width: 9rem; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
 .table-responsive .table.text-nowrap > :not(caption) > * > * { padding-left: .5rem; padding-right: .5rem; }
 .row-actions .btn { padding: .1rem .45rem; }
+@media (max-width: 767.98px) {
+  .card .table { display: block; overflow-x: auto; }
+  code { overflow-wrap: anywhere; }
+}

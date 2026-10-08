@@ -243,7 +243,7 @@ NO_STORE = {"Cache-Control": "no-store", "Referrer-Policy": "no-referrer"}
 
 
 def _brand_page(request: Request, status: int = 200, **context):
-    context = {"nutrients": brands.NUTRIENTS, "form": {}, "error": None, "done": None} | context
+    context = {"nutrients": brands.LABELS, "form": {}, "error": None, "done": None} | context
     return TEMPLATES.TemplateResponse(request, "brand_upload.html", context, status_code=status, headers=NO_STORE)
 
 

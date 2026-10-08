@@ -294,3 +294,10 @@ def test_off_records_carry_their_image_references():
     assert r.images == {"front": {"lang": "de", "rev": 2}}
     (r,) = records([json.dumps(p | {"images": None})])
     assert r.images == {}  # OFF was asked and has none: not null, which means "not asked"
+
+
+def test_review_short_rounds_values_for_people():
+    from fooddb.checks import short
+
+    assert [short(v) for v in (15.8333333333333, 366.666666666667, 0.105263, 1073.4, 12345.6, 0.0, 0.5)] == [
+        "15.83", "366.7", "0.1053", "1073", "12346", "0", "0.5"]

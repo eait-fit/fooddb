@@ -22,7 +22,7 @@ from fooddb import accounts, auth, billing, mail
 log = logging.getLogger(__name__)
 TEMPLATES = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 HEADERS = {"Cache-Control": "no-store", "Referrer-Policy": "no-referrer"}
-SESSION, CSRF = "fooddb_portal", "fooddb_csrf"
+SESSION, CSRF, FLASH = "fooddb_portal", "fooddb_csrf", "fooddb_flash"
 SESSION_SECONDS = 30 * 24 * 3600
 LOGINS_PER_IP_HOUR, LOGINS_PER_EMAIL_HOUR = 20, 5
 PAID_EVENTS = {"checkout.session.completed", "checkout.session.async_payment_succeeded"}
@@ -79,6 +79,10 @@ def _sessions() -> URLSafeTimedSerializer:
     return URLSafeTimedSerializer(_secret(), salt="fooddb-portal-session")
 
 
+def _flash() -> URLSafeTimedSerializer:
+    return URLSafeTimedSerializer(_secret(), salt="fooddb-portal-flash")
+
+
 def current(request: Request) -> dict:
     """The signed-in account, else a redirect to sign in. A session of a deleted account counts as none."""
     try:
@@ -91,6 +95,14 @@ def current(request: Request) -> dict:
 
 
 ACCOUNT = Depends(current)
+
+
+def _flashed(request: Request) -> str | None:
+    """The key the last redirect left in the flash cookie, if it is ours and under a minute old."""
+    try:
+        return _flash().loads(request.cookies.get(FLASH, ""), max_age=60)
+    except BadSignature:
+        return None
 
 
 def _dashboard(request: Request, account: dict, status: int = 200, **context):
@@ -152,7 +164,11 @@ def logout():
 
 @router.get("/portal")
 def dashboard(request: Request, account: dict = ACCOUNT):
-    return _dashboard(request, account)
+    new_key = _flashed(request)
+    response = _dashboard(request, account, new_key=new_key)
+    if FLASH in request.cookies:
+        response.delete_cookie(FLASH, path="/portal")
+    return response
 
 
 @router.post("/portal/keys", dependencies=[CSRF_OK])
@@ -160,7 +176,9 @@ def new_key(request: Request, account: dict = ACCOUNT):
     token = accounts.create_key(account["id"])
     if token is None:
         return _dashboard(request, account, 409, error=f"At most {accounts.MAX_ACTIVE_KEYS} active keys. Revoke one first.")
-    return _dashboard(request, account, new_key=token)
+    response = RedirectResponse("/portal", 303, headers=HEADERS)
+    _cookie(response, request, FLASH, _flash().dumps(token), max_age=60)
+    return response
 
 
 @router.post("/portal/keys/{key_id}/revoke", dependencies=[CSRF_OK])
