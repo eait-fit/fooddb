@@ -35,10 +35,10 @@ button { margin-top: 1.2rem; padding: .6rem 1.4rem; font-size: 1rem; }
     <option value="100g" {% if form.get('basis') != '100ml' %}selected{% endif %}>100 g</option>
     <option value="100ml" {% if form.get('basis') == '100ml' %}selected{% endif %}>100 ml</option>
   </select></label>
-<fieldset><legend>Nutrition values (energy in kcal and kJ, sodium in mg, the rest in g)</legend>
+<fieldset><legend>Nutrition values</legend>
 <div class="row">
-{% for code in nutrients %}
-<label>{{ code }} <input name="{{ code }}" type="number" step="any" min="0" value="{{ form.get(code, '') }}"></label>
+{% for code, label in nutrients.items() %}
+<label>{{ label }} <input name="{{ code }}" type="number" step="any" min="0" value="{{ form.get(code, '') }}"></label>
 {% endfor %}
 </div></fieldset>
 <div class="row">

@@ -17,6 +17,10 @@ FETCHER = "brand"
 LICENCE = "LicenseRef-fooddb"  # fooddb's own terms for its core data
 UNVERIFIED = "brand-unverified"
 MISMATCH = "brand-gs1-mismatch"
+LABELS = {
+    "ENERC_KCAL": "Energy (kcal)", "ENERC_KJ": "Energy (kJ)", "PROCNT": "Protein (g)", "FAT": "Fat (g)",
+    "CHOCDF": "Carbohydrate, total (g)", "CHOAVL": "Carbohydrate, available (g)", "SUGAR": "Sugars (g)",
+    "FASAT": "Saturated fat (g)", "FIBTG": "Fibre (g)", "NA": "Sodium (mg)"}
 TEXT_FIELDS = ("barcode", "name", "brand", "basis", "serving_text", "serving_g", *NUTRIENTS)
 
 

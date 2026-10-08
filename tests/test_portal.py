@@ -92,7 +92,8 @@ def account(email: str) -> dict:
 
 
 def portal_key(c) -> str:
-    return re.search(r"fdb_[\w-]+", post(c, "/portal/keys").text.replace("&#45;", "-")).group()
+    assert post(c, "/portal/keys").status_code == 303
+    return re.search(r"fdb_[\w-]+", dash(c).replace("&#45;", "-")).group()
 
 
 def signed(body: bytes, secret: str = WHSEC, ts: int | None = None) -> dict:
@@ -228,6 +229,18 @@ def test_keys_are_created_shown_once_and_revoked_only_by_their_owner(outbox):
     assert client(token).get("/v1/snapshots").status_code == 200
     assert post(a, f"/portal/keys/{row['id']}/revoke").status_code == 303
     assert client(token).get("/v1/snapshots").status_code == 401
+
+
+def test_creating_a_key_redirects_and_a_reload_neither_repeats_it_nor_shows_it_again(outbox):
+    c = web()
+    sign_in(c, "prg@example.com", outbox)
+    r = post(c, "/portal/keys")
+    assert r.status_code == 303 and r.headers["location"] == "/portal" and "fdb_" not in r.headers["location"]
+    first = c.get("/portal").text
+    assert "Your new key" in first and len(re.findall(r"fdb_[\w-]+", first.replace("&#45;", "-"))) == 1
+    again = c.get("/portal").text
+    assert "Your new key" not in again and "fdb_" not in again.replace("&#45;", "-")
+    assert db("select count(*) n from api_key")[0]["n"] == 1
 
 
 def test_a_portal_key_cannot_be_given_another_scope(outbox):

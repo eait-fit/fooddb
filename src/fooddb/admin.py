@@ -23,7 +23,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from starlette.concurrency import run_in_threadpool
 
-from fooddb import adminpages, auth, resolve, review
+from fooddb import adminpages, auth, checks, resolve, review
 from fooddb.db import account, engine, merge_log, observation, purchase
 from fooddb.labels import photos
 
@@ -301,6 +301,7 @@ def mount(app: FastAPI) -> None:
     login = KeyLogin(secret_key=secret, same_site="strict", max_age=8 * 3600)
     admin = FooddbAdmin(app, session_maker=sessionmaker(class_=PendingSession), title="fooddb admin",
                   authentication_backend=login, templates_dir=str(Path(__file__).parent / "templates"))
+    admin.templates.env.filters["short"] = checks.short
     admin.add_base_view(adminpages.OverviewView)
     admin.add_base_view(ReviewView)
     admin.add_view(PendingView)

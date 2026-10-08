@@ -236,10 +236,15 @@ def flags(values: Mapping[str, float], category: str | None = None, basis: str =
     return out
 
 
+def short(value: float) -> str:
+    """A value for people: four significant digits, whole numbers from 1000 on."""
+    return f"{round(value)}" if abs(value) >= 1000 else f"{value:.4g}"
+
+
 def explain(check: str, values: Mapping[str, float], implicated: Iterable[str] = ()) -> str:
     """One line with the numbers a check compared, from the record's values. A check without a rule here names the
     fields it implicates."""
-    g = lambda k: f"{values[k]:g}"
+    g = lambda k: short(values[k])
     carbs = carbs_field(values)
     if check == "energy-mismatch" and (kcal := atwater(values)) is not None:
         parts = [f"{g(k)} {name}" for k, name in (("PROCNT", "protein"), ("FAT", "fat"), (carbs, "carbs"),
@@ -256,5 +261,5 @@ def explain(check: str, values: Mapping[str, float], implicated: Iterable[str] =
         return f"saturated fat {g('FASAT')} g is over total fat {g('FAT')} g"
     if check == "macros-over-100g":
         macros = [k for k in ("PROCNT", "FAT", carbs) if k in values]
-        return f"{' + '.join(f'{k} {g(k)}' for k in macros)} = {sum(values[k] for k in macros):g} g in 100 g"
+        return f"{' + '.join(f'{k} {g(k)}' for k in macros)} = {short(sum(values[k] for k in macros))} g in 100 g"
     return f"implicates {', '.join(sorted(implicated))}" if implicated else ""
