@@ -16,15 +16,40 @@ nothing here is specific to it.
 
 ## Setting up
 
+`make` is the operator interface for a self-hosted stack, and `./dev` is the developer one.
+
+Needs Docker and [uv](https://docs.astral.sh/uv/). `./dev install` installs what is missing.
+
 ```sh
-./dev install        # every tool this repo needs (uv, Docker, …)
-./dev up --all       # Postgres, this worktree's databases, API + worker
-./dev fetch all      # FDC and a few Open Food Facts deltas
+./dev up --all       # shared Postgres, this worktree's databases, API + pq worker
+./dev fetch all      # queue USDA FDC (Foundation, SR Legacy), CIQUAL, Matvaretabellen and 7 OFF deltas
+./dev jobs           # row counts, fetch runs, queue state
+./dev status         # this worktree;  ./dev ls  for every worktree
 ./dev test           # unit tests + the database suite against this worktree's __test database
+./dev down
 ```
 
-Python 3.13 or newer, through `uv`. `uv run pytest` alone skips the database suite; `./dev test`
-runs it. Each git worktree gets its own ports and databases — see the README.
+`./dev` with no arguments lists every command. Each git worktree gets its own slot: the API port
+(9640 + 10 × slot) and its own dev and `__test` databases on one shared Postgres (port 5440). All
+of these are derived into `.env.worktree` by `scripts/dev_env.py`.
+
+Try the API of your worktree:
+
+```sh
+curl "$(./dev url)/v1/foods?q=hummus"                         # search products
+curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with the OFF layer
+curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
+curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot
+curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
+KEY=$(./dev cli keys create --name me --scope review)         # printed once; only its hash is stored
+curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/review" # values a failed check held back
+```
+
+API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`. The commands that
+[docs/usage.md](docs/usage.md) shows with `fooddb` run in a checkout as `./dev cli …`.
+
+Python 3.13 or newer, through `uv`. `uv run pytest` alone runs the unit tests and skips the
+database suite. `./dev test` runs both.
 
 ## Writing the change
 

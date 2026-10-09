@@ -12,6 +12,11 @@ This runbook installs fooddb on one server with Docker Compose. The stack is in
 
 The `api` and `worker` services start only after `migrate` succeeds.
 
+**Shortcut.** From the repository root, `make install` does steps 2 to 4 of the install below after you clone the repository: it
+creates `deploy/.env` with random secrets, builds the image, starts the stack and waits for the
+API. Run `make status`, `make logs`, `make update` and `make stop` for the matching Compose
+commands in this runbook. Run `make` to list every target.
+
 ## Requirements
 
 - A Linux server (a VPS is sufficient) with 2 CPUs and 2 GB of memory or more.
@@ -78,8 +83,8 @@ The first boot fills the database without help. The worker does these jobs in th
 5. It runs Splink matching again.
 6. It builds the snapshot again. Now the snapshot has Open Food Facts values too.
 
-On a test server, `/healthz` changed to 200 after 70 seconds. On a slow network, it can take
-3 minutes. Wait for the 200:
+On a test server, `/healthz` changed to 200 after 70 seconds. A fresh install on 2026-10-09 took
+400 seconds. Wait for the 200:
 
 ```bash
 until curl -sf -o /dev/null http://127.0.0.1:8000/healthz; do sleep 10; done
@@ -320,8 +325,8 @@ docker compose exec worker fooddb status   # row counts, the last 5 fetch runs, 
 
 ## Consumer sync
 
-A service that keeps its own copy of the catalog reads the snapshot export. The README has the
-steps: [Sync a local copy](../README.md#sync-a-local-copy). For the operator:
+A service that keeps its own copy of the catalog reads the snapshot export. The steps are in
+[Sync a local copy](usage.md#sync-a-local-copy). For the operator:
 
 - The export of a large day is long. With the full OFF dump it has about 4 million lines. Give the
   consumer's HTTP client a long read timeout. Caddy streams the response and needs no change.
