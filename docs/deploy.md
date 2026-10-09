@@ -12,6 +12,11 @@ This runbook installs fooddb on one server with Docker Compose. The stack is in
 
 The `api` and `worker` services start only after `migrate` succeeds.
 
+**Shortcut.** From the repository root, `make install` does steps 2 to 4 of the install below after you clone the repository: it
+creates `deploy/.env` with random secrets, builds the image, starts the stack and waits for the
+API. Run `make status`, `make logs`, `make update` and `make stop` for the matching Compose
+commands in this runbook. Run `make` to list every target.
+
 ## Requirements
 
 - A Linux server (a VPS is sufficient) with 2 CPUs and 2 GB of memory or more.

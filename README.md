@@ -9,23 +9,23 @@ nutrition APIs.
 
 ## Install and look up a food
 
-You need a Linux or macOS machine with Docker, Docker Compose v2, curl and git or tar.
+You need a Linux or macOS machine with git, make, Docker with Compose v2, and curl.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/eait-fit/fooddb/main/deploy/install.sh | sh
+git clone https://github.com/eait-fit/fooddb.git && cd fooddb && make install
 ```
 
-The installer builds the stack and waits until the API answers. On the first start, the worker
+The install builds the stack and waits until the API answers. On the first start, the worker
 downloads the sources, which takes 1 to 7 minutes. Then look up an apple pie with one request:
 
 ```bash
 curl "http://127.0.0.1:8000/v1/foods?q=apple+pie&limit=1"
 ```
 
-Or with one CLI call:
+Or with one make command:
 
 ```bash
-docker compose -f fooddb/deploy/docker-compose.yml exec api fooddb search "apple pie" --limit 1
+make search q="apple pie"
 ```
 
 Both return the same data, shortened here:

@@ -5,7 +5,7 @@ brand uploads, review, the ODbL dump and the fetchers. For the install, see [dep
 
 In the examples, `$API` is the base URL of the API. It is `http://127.0.0.1:8000` on a stack from
 [deploy.md](deploy.md), and `$(./dev url)` in a development checkout. `fooddb` is the CLI. On a
-deployed stack, run it as `docker compose exec api fooddb …`. In a checkout, run it as `./dev cli …`.
+deployed stack, run it as `docker compose exec api fooddb …`, or on a stack that you installed with make, as `make cli args='…'`. In a checkout, run it as `./dev cli …`.
 
 ## REST endpoints
 
@@ -27,7 +27,7 @@ Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day
 
 ## CLI
 
-`fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `search`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a deployed stack, run it as `docker compose exec api fooddb status`.
+`fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `search`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a stack that you installed with make, run `make cli args='status'`, or `make search q='apple pie'` to look up a food. On any other deployed stack, run `docker compose exec api fooddb status`.
 
 ## Response shape
 

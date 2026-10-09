@@ -16,6 +16,8 @@ nothing here is specific to it.
 
 ## Setting up
 
+`make` is the operator interface for a self-hosted stack, and `./dev` is the developer one.
+
 Needs Docker and [uv](https://docs.astral.sh/uv/). `./dev install` installs what is missing.
 
 ```sh
