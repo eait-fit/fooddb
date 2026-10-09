@@ -9,33 +9,35 @@ nutrition APIs.
 
 ## Install and look up a food
 
-You need a Linux server with Docker Compose v2.
+You need a Linux or macOS machine with Docker, Docker Compose v2, curl and git or tar.
 
 ```bash
-git clone https://github.com/eait-fit/fooddb.git
-cd fooddb/deploy
-cp .env.example .env
-sed -i "s/^FOODDB__BACKEND__POSTGRES_PASSWORD=$/FOODDB__BACKEND__POSTGRES_PASSWORD=$(openssl rand -hex 24)/" .env
-sed -i "s/^FOODDB__BACKEND__SECRET_KEY=$/FOODDB__BACKEND__SECRET_KEY=$(openssl rand -hex 32)/" .env
-docker compose up -d --build
-until curl -sf -o /dev/null http://127.0.0.1:8000/healthz; do sleep 10; done
+curl -fsSL https://raw.githubusercontent.com/eait-fit/fooddb/main/deploy/install.sh | sh
 ```
 
-On the first start, the worker downloads the sources. `/healthz` answers 200 when the data is in,
-after 1 to 3 minutes. Then search:
+The installer builds the stack and waits until the API answers. On the first start, the worker
+downloads the sources, which takes 1 to 7 minutes. Then look up an apple pie with one request:
 
 ```bash
-curl "http://127.0.0.1:8000/v1/foods?q=hummus"
+curl "http://127.0.0.1:8000/v1/foods?q=apple+pie&limit=1"
 ```
+
+Or with one CLI call:
+
+```bash
+docker compose -f fooddb/deploy/docker-compose.yml exec api fooddb search "apple pie" --limit 1
+```
+
+Both return the same data, shortened here:
 
 ```json
 {"items": [{
-  "id": 12582,
-  "records": ["matvaretabellen:06.679"],
-  "name": {"value": "Hummus", "source": "matvaretabellen", "licence": "NLOD-2.0", "record": "matvaretabellen:06.679"},
+  "id": 17335,
+  "records": ["matvaretabellen:05.131"],
+  "name": {"value": "Pie, apple", "source": "matvaretabellen", "licence": "NLOD-2.0", "record": "matvaretabellen:05.131"},
   "per_100": {
-    "ENERC_KCAL": {"value": 170.0, "unit": "kcal", "basis": "100g", "source": "matvaretabellen", "licence": "NLOD-2.0"},
-    "PROCNT": {"value": 5.6, "unit": "g", "basis": "100g", "source": "matvaretabellen", "licence": "NLOD-2.0"}
+    "ENERC_KCAL": {"value": 214.0, "unit": "kcal", "basis": "100g", "source": "matvaretabellen", "licence": "NLOD-2.0"},
+    "PROCNT": {"value": 2.6, "unit": "g", "basis": "100g", "source": "matvaretabellen", "licence": "NLOD-2.0"}
   }
 }]}
 ```

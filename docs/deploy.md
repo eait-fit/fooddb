@@ -78,8 +78,8 @@ The first boot fills the database without help. The worker does these jobs in th
 5. It runs Splink matching again.
 6. It builds the snapshot again. Now the snapshot has Open Food Facts values too.
 
-On a test server, `/healthz` changed to 200 after 70 seconds. On a slow network, it can take
-3 minutes. Wait for the 200:
+On a test server, `/healthz` changed to 200 after 70 seconds. A fresh install on 2026-10-09 took
+400 seconds. Wait for the 200:
 
 ```bash
 until curl -sf -o /dev/null http://127.0.0.1:8000/healthz; do sleep 10; done

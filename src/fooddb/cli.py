@@ -259,3 +259,11 @@ def lookup(barcode: str, include_off: bool = True) -> None:
     except HTTPException as e:
         typer.echo(f"{barcode}: {e.detail}", err=True)
         raise typer.Exit(1)
+
+
+@app.command()
+def search(query: str, limit: int = typer.Option(5, min=1, max=100), include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)")) -> None:
+    """Search foods by name."""
+    from fooddb.api import search as foods
+
+    typer.echo(json.dumps(foods(q=query, include="off" if include_off else None, limit=limit, snapshot=None), default=str, indent=2))

@@ -132,6 +132,20 @@ def test_search_finds_a_word_inside_a_long_name():
     assert c.get("/v1/foods", params={"q": "beans", "limit": 0}).status_code == 422
 
 
+def test_cli_search_prints_what_the_route_returns():
+    import json
+
+    from typer.testing import CliRunner
+
+    from fooddb import ingest
+    from fooddb.cli import app
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Beans, snap, green, canned, regular pack, drained solids")])
+    r = CliRunner().invoke(app, ["search", "beans", "--limit", "1"])
+    assert r.exit_code == 0, r.output
+    assert json.loads(r.output)["items"][0]["records"] == ["fdc:2"]
+
+
 @pytest.mark.parametrize("barcode", [
     "²²²²²²²²",       # unicode digits: used to crash with a 500
     "0400000000008",  # GTIN-13 prefix 04: restricted, in-store use

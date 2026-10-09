@@ -27,7 +27,7 @@ Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day
 
 ## CLI
 
-`fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a deployed stack, run it as `docker compose exec api fooddb status`.
+`fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `search`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a deployed stack, run it as `docker compose exec api fooddb status`.
 
 ## Response shape
 
