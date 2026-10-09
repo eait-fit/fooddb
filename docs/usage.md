@@ -7,6 +7,28 @@ In the examples, `$API` is the base URL of the API. It is `http://127.0.0.1:8000
 [deploy.md](deploy.md), and `$(./dev url)` in a development checkout. `fooddb` is the CLI. On a
 deployed stack, run it as `docker compose exec api fooddb …`. In a checkout, run it as `./dev cli …`.
 
+## REST endpoints
+
+| Route | What it does | Scope |
+|---|---|---|
+| `GET /v1/foods?q=` | Search products by name. | `read` |
+| `GET /v1/foods/{product_id}` | One product. | `read` |
+| `GET /v1/products/{barcode}` | Products for a GTIN. | `read` |
+| `GET /v1/records/{record_id}` | The product that a source record belongs to, for example `fdc:9`. | `read` |
+| `GET /v1/snapshots` and `GET /v1/snapshots/{day}/export` | List the snapshot days. Export one day as NDJSON. | `read` |
+| `GET /v1/dumps` and `GET /v1/dumps/{name}` | The monthly ODbL dump of the OFF layer. | none |
+| `GET /v1/review` and `POST /v1/review/{id}` | Read the review queue. Accept or reject a value. | `review` |
+| `POST /v1/products/{id}/split` | Undo a wrong merge. | `review` |
+| `POST /v1/labels` and `GET /v1/labels/{task}` | Send a label photo. Read the state of its read. | `contribute` |
+| `POST /v1/brands/uploads` | Upload brand values with a label photo. | `contribute` |
+| `GET /livez` and `GET /healthz` | Liveness and data freshness. `/healthz` answers 503 when a source is stale. | none |
+
+Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day.
+
+## CLI
+
+`fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a deployed stack, run it as `docker compose exec api fooddb status`.
+
 ## Response shape
 
 Every served field carries its `source`, its `licence` and the source `record` it comes from. A
