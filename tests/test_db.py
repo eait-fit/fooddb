@@ -780,7 +780,7 @@ def test_the_review_page_explains_an_energy_mismatch_with_the_numbers_and_shows_
     assert "macros give 438 kcal by Atwater" in text and "declared 700.8 kcal" in text and "kJ/4.184 gives 442 kcal" in text
     for nutrient in ("ENERC_KJ", "SUGAR", "FASAT", "NA"):  # accepted values sit next to the pending ones
         assert re.search(rf"<td>{nutrient}</td>.*?accepted", text, re.S), nutrient
-    assert text.count("Accept all pending") == 1 and "pks=" in text
+    assert len(re.findall(r"Accept all \d+<", text)) == 1 and "pks=" in text
     assert "ENERC_KCAL" in text and ">pending<" in text
 
 
