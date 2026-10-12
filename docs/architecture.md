@@ -29,7 +29,7 @@ flowchart LR
     end
     openrouter["OpenRouter<br/>vision model"]
     fdc["USDA FoodData Central<br/>Foundation, SR Legacy and Branded bulk JSON<br/>CC0-1.0"]
-    tables["National composition tables<br/>CIQUAL etalab-2.0, CoFID OGL-UK-3.0, Fineli CC-BY-4.0,<br/>Frida CC-BY-4.0, Matvaretabellen NLOD-2.0, MEXT mext-free-use,<br/>TFDA OGDL-Taiwan-1.0"]
+    tables["National composition tables<br/>BLS CC-BY-4.0, CIQUAL etalab-2.0, CoFID OGL-UK-3.0, Fineli CC-BY-4.0,<br/>Frida CC-BY-4.0, Matvaretabellen NLOD-2.0, MEXT mext-free-use,<br/>TFDA OGDL-Taiwan-1.0"]
     offd["Open Food Facts daily delta files<br/>ODbL-1.0"]
     offdump["Open Food Facts full dump<br/>about 13 GB jsonl.gz, ODbL-1.0"]
     callers -->|HTTPS| proxy -->|"HTTP, REST and /mcp"| api
@@ -158,7 +158,7 @@ where Caddy is. `fooddb-worker` also joins the `fooddb-egress` network for its f
 ```mermaid
 flowchart TD
     fdcsrc["FDC zip"] -->|"stream to a tempfile, then json_items, one food at a time"| fdcrec["fdc.records()"]
-    tabsrc["CIQUAL, CoFID, Frida and MEXT xlsx, Fineli and TFDA zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda<br/>records()"]
+    tabsrc["BLS (in a zip), CIQUAL, CoFID, Frida and MEXT xlsx, Fineli and TFDA zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda<br/>records()"]
     tabrec --> run
     offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
@@ -208,6 +208,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   code (`fetchers/cofid.py:59`). It finds each column by its tagname in row 2 of the sheet. A cell
   `Tr` is 0. A cell `N` and a blank cell give no value (`fetchers/cofid.py:32`). CoFID gives the
   code 13-669 to two foods, so the fetcher keeps neither. See [decisions.md](decisions.md).
+- The BLS fetcher reads the download page `www.blsdb.de/download` and takes the address of the zip it links, `BLS_4_0_2025_DE.zip`. The link carries a token that the server does not check, so the fetcher uses the address without it. A HEAD request gives the ref, the file name with its size and change date, so an unchanged zip is not downloaded again. The zip holds the data workbook (7,140 foods, 138 components, three columns for each: the value, its origin and its reference), a component list and the documentation. The fetcher stores 10 components: `ENERCJ`, `ENERCC`, `PROT625`, `CHO`, `FIBT`, `FAT`, `SUGAR`, `FASAT`, `NA` and `ALC`. Their units come from the column headers, and the run stops if one is not the expected unit. `TR` (traces) is 0. `-` (no value), `<LOD` and `<LOQ` give no value. The name is the English one. The observation date is the day the workbook was saved in the zip.
 - The Frida fetcher asks DTU Data for the record of the dataset, `api.figshare.com/v2/articles/29500682`,
   and takes the `Dataset.xlsx` file of its newest version (`fetchers/frida.py:69`). The file name and
   its MD5 are the ref, so an unchanged version is not downloaded again. The observation date is the
@@ -267,7 +268,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   from one code to another, except kJ to kcal (below).
 - Carbohydrate has two codes. `CHOCDF` is carbohydrate by difference, with fibre. `CHOAVL` is
   available carbohydrate, without fibre. FDC nutrient 1005 is `CHOCDF`. FDC has no available
-  carbohydrate. CIQUAL `Carbohydrate`, Fineli `CHOAVL` and Matvaretabellen `Karbo` are `CHOAVL`. MEXT states both:
+  carbohydrate. CIQUAL `Carbohydrate`, BLS `CHO`, Fineli `CHOAVL` and Matvaretabellen `Karbo` are `CHOAVL`. MEXT states both:
   its `CHOAVL` (available, by mass) is `CHOAVL`, and its `CHOCDF-` (by difference) is `CHOCDF`. Its
   `CHOAVLM` (monosaccharide equivalents) is not stored. MEXT's `SUGAR` is the sum of its separate sugars. Frida states both: its parameter 170 is `CHOCDF`
   and its parameter 172 is `CHOAVL`. CoFID states carbohydrate and sugars as monosaccharide equivalents.
@@ -285,7 +286,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   OFF's `carbohydrates-total` (fibre included) is always `CHOCDF`.
 - Units are kcal and kJ for energy, mg for sodium and g for all other nutrients (`ingest.py:14`).
   `ENERC_KCAL` is the canonical energy. When a source states kJ, the fetcher also keeps the kJ value
-  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA). When the
+  as `ENERC_KJ` (OFF `energy-kj`, FDC nutrient 1062, BLS, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA). When the
   label states kJ only, the OFF fetcher converts it to kcal for `ENERC_KCAL` (`fetchers/off.py:102`).
   Fineli states kJ only, and its fetcher converts it the same way (`fetchers/fineli.py:46`).
 - The match job compares carbohydrate as `CHOCDF` only (`match.py:30`). A record with `CHOAVL` has
@@ -294,7 +295,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   alcoholic beverages per 100 ml (`fetchers/cofid.py:59`).
 - Each record keeps the category tags of its source: OFF `categories_tags`, FDC
   `foodCategory.description` or `brandedFoodCategory`, and `<source>:<group>` for a national table
-  (CIQUAL group names, CoFID group codes with their prefixes, Fineli use classes, Matvaretabellen and Frida food group ids with their parents, MEXT
+  (BLS main groups (the first letter of the code), CIQUAL group names, CoFID group codes with their prefixes, Fineli use classes, Matvaretabellen and Frida food group ids with their parents, MEXT
   food group numbers, TFDA food group names)
   (`fetchers/off.py:176`, `fetchers/fdc.py:63`). An OFF record also keeps
   its `labels_tags`. `checks.category` maps the tags onto one fooddb category (`checks.py:135`), and
@@ -311,7 +312,7 @@ array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
   every length (an EAN-8 is padded too): `8002330009380` is `800/233/000/9380`, and the file is
   `front_it.12.400.jpg`. See [product-images.md](product-images.md) for why only the reference is stored.
 - Record ids have the form `<source>:<code>`, for example `fdc:168421`, `off:<gtin14>`,
-  `ciqual:24999`, `cofid:14-319`, `fineli:1`, `frida:1`, `matvaretabellen:06.178`, `mext:07107` or `tfda:D3200301`.
+  `bls:F301100`, `ciqual:24999`, `cofid:14-319`, `fineli:1`, `frida:1`, `matvaretabellen:06.178`, `mext:07107` or `tfda:D3200301`.
 
 ### Store observations
 
@@ -808,7 +809,7 @@ The resolver picks one value per product and nutrient (`resolve.py:28`):
       that agree outvote a `label` value that is alone, unless a reviewer approved that value. Only values of one nutrient code are
       compared. A `CHOAVL` value is not a vote for or against a `CHOCDF` value.
    4. **Trust rank.** `brand`, then `label`, then the composition tables, then `off`
-      (`resolve.py:20`). `fdc`, `ciqual`, `cofid`, `fineli`, `frida`, `matvaretabellen`, `mext` and `tfda` share one rank. Thus a
+      (`resolve.py:20`). `fdc`, `bls`, `ciqual`, `cofid`, `fineli`, `frida`, `matvaretabellen`, `mext` and `tfda` share one rank. Thus a
       table value wins over a crowd value, and between two tables the newer value wins.
    5. **Newest value**, then the smallest value, so that the result is always the same.
 
@@ -829,7 +830,7 @@ The `include=off` parameter adds the `off` layer to the query (`resolve.py:135`)
 values do not take part.
 
 Each product has an `attribution` list (`resolve.py:128`). It has one entry for each source of a
-served field whose licence asks for attribution: CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA. Each entry
+served field whose licence asks for attribution: BLS, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA. Each entry
 has the source, the licence and the text to show (`resolve.py:107`).
 
 ### Snapshot
@@ -872,7 +873,7 @@ result is the same, and the plan does not depend on the table statistics.
 | OFF deltas | `fetch_off_deltas` | every 6 h (`jobs.py:78`) | NORMAL |
 | Snapshot | `build_snapshot` | cron `30 2 * * *`, UTC (`jobs.py:79`) | NORMAL |
 | FDC Foundation, FDC SR Legacy, FDC Branded (when on) | `fetch_fdc` | cron `0 3 * * 1`, UTC (`jobs.py:116`) | BATCH |
-| CIQUAL, CoFID, Frida, Matvaretabellen, MEXT, TFDA, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:116`) | BATCH |
+| BLS, CIQUAL, CoFID, Frida, Matvaretabellen, MEXT, TFDA, Fineli (when on) | `fetch_table` | cron `0 3 * * 1`, UTC (`jobs.py:116`) | BATCH |
 | Match | `match_products` | after a fetch that stored data (`jobs.py:64`) | NORMAL |
 | First-boot FDC and national tables | `fetch_fdc`, `fetch_table` | once, when `fetcher_check` has no row for a fetcher that is on (`jobs.py:109`) | NORMAL |
 | First-boot snapshot | `build_snapshot` | once, when no snapshot exists (`jobs.py:86`) | BATCH |
@@ -1388,7 +1389,7 @@ flowchart LR
   nothing about the age of the data. A database error gives a 500, not a 200.
 - `/healthz` shows freshness (`api.py:42`). It compares each `fetcher_check` row and the newest
   `snapshot.built_at` with a maximum age (`health.py:12`): `off-delta` 12 h, `fdc-foundation`,
-  `fdc-sr_legacy`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
+  `fdc-sr_legacy`, `bls`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
   `fineli` (8 days) count only when they are on (`health.py:35`). One stale entry or one entry with
   no row gives 503.
 - A fetch that finds nothing new also counts as a successful check (`health.py:40`,
@@ -1553,7 +1554,7 @@ flowchart LR
         labels["POST /v1/labels<br/>model port: OpenRouter, Claude, Codex"]
         brand["Brand upload form<br/>POST /v1/brands/uploads, GS1 port"]
     end
-    tables["Other composition tables<br/>BLS, MFDS"]
+    tables["Other composition tables<br/>MFDS"]
     eaitp["eait label photos<br/>no user id"]
     devin["Local agent Devin"]
     listing["RapidAPI listing"]
@@ -1574,7 +1575,7 @@ flowchart LR
 ```
 
 - **Intake.** Other national composition tables: Korea MFDS
-  ([#37](https://github.com/eait-fit/fooddb/issues/37)) and BLS. eait does not send label photos to
+  ([#37](https://github.com/eait-fit/fooddb/issues/37)). eait does not send label photos to
   `POST /v1/labels` yet.
 - **GS1 verifier.** The brand upload form is built, but its verifier is `none`, so every brand
   upload waits for review. A real backend needs a decision on the cost of GS1 access.

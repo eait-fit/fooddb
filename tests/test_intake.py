@@ -282,6 +282,55 @@ def test_frida_finds_the_dataset_workbook_in_the_dtu_data_record():
         frida.newest({"files": [article["files"][0]]})
 
 
+def test_bls_reads_available_carbohydrate_in_the_units_it_states_and_the_english_name():
+    from fooddb.fetchers import bls
+
+    observed = datetime(2025, 12, 11, tzinfo=UTC)
+    strawberry, bread, salt, beer, oil, dish = bls.records(FIXTURES / "bls.xlsx", observed)
+    assert strawberry.id == "bls:F301100" and strawberry.name == "Strawberry raw" and strawberry.lang == "en"
+    assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "bls" and strawberry.layer == "core"
+    assert strawberry.values == pytest.approx({
+        "ENERC_KJ": 158, "ENERC_KCAL": 38, "PROCNT": 0.82, "CHOAVL": 5.917, "FIBTG": 2, "FAT": 0.4, "SUGAR": 5.857,
+        "FASAT": 0.03130, "NA": 1, "ALC": 0})
+    assert strawberry.observed_at == observed and "CHOCDF" not in strawberry.values
+    assert strawberry.categories == ["bls:F"] and checks.category(strawberry.categories) == "fruits"
+    assert not checks.flags(strawberry.values, "fruits")
+    assert "ALC" not in bread.values and bread.values["NA"] == 440.5  # <LOD is no value
+    assert salt.values["NA"] == 38145 and salt.values["ENERC_KCAL"] == 0  # sodium in mg, as stored
+    assert checks.category(beer.categories) == "alcoholic-beverages" and checks.category(oil.categories) == "fats"
+    assert dish.values == {"ENERC_KJ": 100, "ENERC_KCAL": 24, "CHOAVL": 3.5, "FAT": 0}  # TR is 0; "-" and <LOQ are gaps
+
+
+def test_bls_stops_when_a_component_changes_its_unit(tmp_path):
+    from fooddb.fetchers import bls
+
+    broken = tmp_path / "bls.xlsx"
+    with zipfile.ZipFile(FIXTURES / "bls.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b"Natrium [mg/100g]", b"Natrium [g/100g]") if "sheet1" in item.filename else data)
+    with pytest.raises(RuntimeError, match="component NA is not in mg"):
+        list(bls.records(broken, datetime(2025, 12, 11, tzinfo=UTC)))
+
+
+def test_bls_finds_its_zip_on_the_download_page_and_the_workbook_in_the_zip(tmp_path):
+    from fooddb.fetchers import bls
+
+    page = '<a href="&#47;assets&#47;uploads&#47;BLS&#95;4&#95;0&#95;2025&#95;DE&#46;zip?token=AAAA-BBBB">Download</a>'
+    assert bls.link(page) == "https://www.blsdb.de/assets/uploads/BLS_4_0_2025_DE.zip"
+    with pytest.raises(RuntimeError, match="no zip"):
+        bls.link("<a href='/download'>Download</a>")
+    path = tmp_path / "bls.zip"
+    with zipfile.ZipFile(path, "w") as z:
+        z.writestr("BLS_4_0_2025_DE/BLS_4_0_Components_DE_EN.xlsx", b"")
+        z.writestr(zipfile.ZipInfo("BLS_4_0_2025_DE/BLS_4_0_Daten_2025_DE.xlsx", (2025, 12, 11, 16, 50, 0)), b"")
+    with zipfile.ZipFile(path) as z:
+        assert bls.dataset(z).filename.endswith("BLS_4_0_Daten_2025_DE.xlsx") and bls.dataset(z).date_time[:3] == (2025, 12, 11)
+    with zipfile.ZipFile(path, "w") as z, pytest.raises(RuntimeError, match="no data workbook"):
+        z.writestr("BLS_4_0_Components_DE_EN.xlsx", b"")
+        bls.dataset(z)
+
+
 def test_mext_value_follows_the_rule_for_estimates_traces_and_gaps():
     from fooddb.fetchers.mext import value
 

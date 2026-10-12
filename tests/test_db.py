@@ -535,6 +535,7 @@ def test_health_reports_stale_and_fresh_fetchers():
     assert report["fetchers"]["tfda"]["max_age_hours"] == 192
     assert report["fetchers"]["cofid"]["max_age_hours"] == 192
     assert report["fetchers"]["frida"]["max_age_hours"] == 192
+    assert report["fetchers"]["bls"]["max_age_hours"] == 192
     assert report["fetchers"]["mext"]["max_age_hours"] == 192
     assert report["ok"] is False
     r = client().get("/healthz")
@@ -626,9 +627,9 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     monkeypatch.setattr(off, "fetch", off_fetch)
 
     jobs.schedule()
-    # FDC Branded and Fineli are off by default; CIQUAL, CoFID, Frida, Matvaretabellen, MEXT and TFDA fill a fresh install.
+    # FDC Branded and Fineli are off by default; BLS, CIQUAL, CoFID, Frida, Matvaretabellen, MEXT and TFDA fill a fresh install.
     assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "fetch_table",
-                         "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+                         "fetch_table", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
@@ -1306,6 +1307,25 @@ def test_frida_is_served_with_both_carbohydrate_codes_and_outranks_the_crowd():
     ingest.run("t", "r2", [kcal_record("frida:2", "frida", 229.0, 2025), kcal_record("off:1", "off", 260.0, 2026)])
     merge("frida:2", "off:1")
     assert served("off:1", "off") == (229, "frida")
+
+
+def test_bls_is_served_with_available_carbohydrate_and_its_attribution_and_outranks_the_crowd():
+    from pathlib import Path
+
+    from fooddb import ingest, review
+    from fooddb.fetchers import bls
+
+    xlsx = Path(__file__).parent / "fixtures" / "bls.xlsx"
+    assert ingest.run(bls.FETCHER, "t", bls.records(xlsx, datetime(2025, 12, 11, tzinfo=UTC)))[0] == 6
+    p = product("bls:F301100")
+    assert p["name"] == {"value": "Strawberry raw", "source": "bls", "licence": "CC-BY-4.0", "record": "bls:F301100"}
+    assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (5.917, "CC-BY-4.0")
+    assert "CHOCDF" not in p["per_100"] and p["per_100"]["NA"]["unit"] == "mg"
+    assert not [i for i in review.queue() if i["record"].startswith("bls:")]  # no check flags the fixture
+    assert p["attribution"] == [{"source": "bls", "licence": "CC-BY-4.0", "text": bls.ATTRIBUTION}]
+    ingest.run("t", "r2", [kcal_record("bls:1", "bls", 229.0, 2025), kcal_record("off:1", "off", 260.0, 2026)])
+    merge("bls:1", "off:1")
+    assert served("off:1", "off") == (229, "bls")
 
 
 def test_mext_is_served_in_japanese_with_both_carbohydrate_codes_and_its_attribution():

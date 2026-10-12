@@ -366,6 +366,7 @@ cmd_fetch() {
     all)
       .venv/bin/fooddb enqueue fdc --dataset foundation
       .venv/bin/fooddb enqueue fdc --dataset sr_legacy
+      .venv/bin/fooddb enqueue table --source bls
       .venv/bin/fooddb enqueue table --source ciqual
       .venv/bin/fooddb enqueue table --source cofid
       .venv/bin/fooddb enqueue table --source frida
