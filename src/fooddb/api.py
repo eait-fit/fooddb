@@ -20,7 +20,7 @@ from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 from starlette.templating import Jinja2Templates
 
-from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
+from fooddb import admin, auth, brands, countries, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
 from fooddb.db import engine
 from fooddb.labels import photos
 
@@ -87,16 +87,29 @@ def healthz() -> JSONResponse:
 
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
-           snapshot: date | None = None) -> dict:
+           snapshot: date | None = None,
+           country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
+                                       "matches, that country's sources rank first")) -> dict:
     # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
-    pids = _pids(
-        f"""select product_id from food
-           where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
-           group by product_id
-           order by max(word_similarity(:q, name)) desc, min(length(name))
-           limit :limit""",
-        q=q, layers=resolve.layers_for(include), limit=limit,
-    )
+    if (cc := countries.code(country)) is None:
+        pids = _pids(
+            f"""select product_id from food
+               where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
+               group by product_id
+               order by max(word_similarity(:q, name)) desc, min(length(name))
+               limit :limit""",
+            q=q, layers=resolve.layers_for(include), limit=limit,
+        )
+    else:
+        pids = _pids(
+            f"""select product_id from food
+               where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
+               group by product_id
+               order by max(word_similarity(:q, name)) desc, min({countries.rank_sql(cc)}),
+                        min(length(name))
+               limit :limit""",
+            q=q, layers=resolve.layers_for(include), limit=limit, off_markets=countries.off_markets(cc),
+        )
     return {"items": _resolve(pids, include, snapshot)}
 
 
@@ -114,12 +127,23 @@ def get_record(record_id: str, include: str | None = None, snapshot: date | None
 
 
 @app.get("/v1/products/{barcode}", dependencies=READ)
-def by_barcode(barcode: str, include: str | None = None, snapshot: date | None = None) -> dict:
+def by_barcode(barcode: str, include: str | None = None, snapshot: date | None = None,
+               country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: order the "
+                                           "products by that country's preferred sources")) -> dict:
     code = gtin.normalize(barcode)
     if code is None:
         raise HTTPException(422, "not a valid global GTIN")
-    pids = _pids(f"select distinct product_id from food where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}",
-                 code=code, layers=resolve.layers_for(include))
+    if (cc := countries.code(country)) is None:
+        pids = _pids(
+            f"select distinct product_id from food where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}",
+            code=code, layers=resolve.layers_for(include))
+    else:
+        pids = _pids(
+            f"""select product_id from food
+               where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}
+               group by product_id
+               order by min({countries.rank_sql(cc)})""",
+            code=code, layers=resolve.layers_for(include), off_markets=countries.off_markets(cc))
     items = _resolve(pids, include, snapshot)
     if not items:
         raise HTTPException(404, "product not found" + ("" if include == "off" else " in core; try include=off"))
@@ -299,16 +323,22 @@ def _include(include_off: bool) -> str | None:
 
 @mcp.tool()
 def search_foods(q: Annotated[str, Field(min_length=2)], limit: Annotated[int, Field(ge=1, le=100)] = 20,
-                 snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+                 snapshot: date | None = None, include_off: bool = False,
+                 country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: among equal "
+                                                      "name matches, that country's sources rank first")] = None
+                 ) -> dict[str, Any]:
     """Search foods and products by name."""
-    return _tool(search, q=q, include=_include(include_off), limit=limit, snapshot=snapshot)
+    return _tool(search, q=q, include=_include(include_off), limit=limit, snapshot=snapshot, country=country)
 
 
 @mcp.tool()
 def get_product_by_barcode(barcode: str, snapshot: date | None = None,
-                           include_off: bool = False) -> dict[str, Any]:
+                           include_off: bool = False,
+                           country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: order the "
+                                                               "products by that country's preferred sources")] = None
+                           ) -> dict[str, Any]:
     """Products with this barcode (GTIN-8, -12, -13 or -14)."""
-    return _tool(by_barcode, barcode, _include(include_off), snapshot)
+    return _tool(by_barcode, barcode, _include(include_off), snapshot, country)
 
 
 @mcp.tool()

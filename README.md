@@ -42,7 +42,9 @@ Both return the same data, shortened here:
 }]}
 ```
 
-Look up a packaged product with `GET /v1/products/{barcode}`. To connect an AI agent, add the MCP
+Look up a packaged product with `GET /v1/products/{barcode}`. Say which country you are searching
+for and the answer favours that country's tables: `?country=de` ranks BLS records first among
+equal matches. To connect an AI agent, add the MCP
 server: `claude mcp add --transport http fooddb http://127.0.0.1:8000/mcp`.
 
 - [docs/deploy.md](docs/deploy.md): TLS, upgrades, backups and API keys

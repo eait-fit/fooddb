@@ -174,6 +174,7 @@ def records(lines: Iterable[bytes]):
             id=f"off:{code}", source="off", layer="off", licence=LICENCE, gtin14=code, name=name,
             brand=(p.get("brands") or None), lang=p.get("lang"), images=image_refs(p), values=values, basis=basis(p),
             extra_flags=guessed, categories=p.get("categories_tags") or [], labels=p.get("labels_tags") or [],
+            markets=p.get("countries_tags") or [],
             serving_text=p.get("serving_size"), serving_g=_num(p.get("serving_quantity")),
             observed_at=datetime.fromtimestamp(int(p.get("last_modified_t") or 0), UTC),
         )
