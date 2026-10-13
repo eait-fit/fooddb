@@ -286,7 +286,9 @@ def test_bls_reads_available_carbohydrate_in_the_units_it_states_and_the_english
     from fooddb.fetchers import bls
 
     observed = datetime(2025, 12, 11, tzinfo=UTC)
-    strawberry, bread, salt, beer, oil, dish = bls.records(FIXTURES / "bls.xlsx", observed)
+    got = {r.id.removeprefix("bls:"): r for r in bls.records(FIXTURES / "bls.xlsx", observed)}
+    strawberry, bread, salt, beer, oil, dish = (got[c] for c in ("F301100", "B121000", "R111000", "P1A4000", "Q180000", "Y999991"))
+    assert len(got) == 9
     assert strawberry.id == "bls:F301100" and strawberry.name == "Strawberry raw" and strawberry.lang == "en"
     assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "bls" and strawberry.layer == "core"
     assert strawberry.values == pytest.approx({
@@ -299,6 +301,57 @@ def test_bls_reads_available_carbohydrate_in_the_units_it_states_and_the_english
     assert salt.values["NA"] == 38145 and salt.values["ENERC_KCAL"] == 0  # sodium in mg, as stored
     assert checks.category(beer.categories) == "alcoholic-beverages" and checks.category(oil.categories) == "fats"
     assert dish.values == {"ENERC_KJ": 100, "ENERC_KCAL": 24, "CHOAVL": 3.5, "FAT": 0}  # TR is 0; "-" and <LOQ are gaps
+
+
+def test_bls_erratum_takes_the_double_counted_oligosaccharides_out_of_the_energy():
+    from fooddb.fetchers import bls
+
+    observed = datetime(2025, 12, 11, tzinfo=UTC)
+    raw = {r.id: r for r in bls.records(FIXTURES / "bls.xlsx", observed)}
+    fixed = {r.id: r for r in bls.records(FIXTURES / "bls.xlsx", observed, erratum=True)}
+    syrup = fixed["bls:S151000"]  # 47.7 g OLSAC: section 3 of the errata, 23.1 % too much energy
+    assert raw["bls:S151000"].values["ENERC_KCAL"] == 413 and raw["bls:S151000"].values["ENERC_KJ"] == 1733
+    assert syrup.values["ENERC_KCAL"] == pytest.approx(413 - 2 * 47.7) and syrup.values["ENERC_KJ"] == pytest.approx(1733 - 8 * 47.7)
+    assert 1 - syrup.values["ENERC_KCAL"] / 413 == pytest.approx(0.231, abs=0.001)
+    assert {k: v for k, v in syrup.values.items() if not k.startswith("ENERC")} == {
+        k: v for k, v in raw["bls:S151000"].values.items() if not k.startswith("ENERC")}
+    unchanged = [i for i in raw if raw[i].values == fixed[i].values]
+    assert "bls:F301100" in unchanged and "bls:Q180000" in unchanged  # no OLSAC, nothing to take out
+
+
+def test_bls_erratum_withholds_the_fat_and_energy_of_anchovy_but_not_of_recipes_with_a_little():
+    from fooddb.fetchers import bls
+
+    observed = datetime(2025, 12, 11, tzinfo=UTC)
+    raw = {r.id: r for r in bls.records(FIXTURES / "bls.xlsx", observed)}
+    fixed = {r.id: r for r in bls.records(FIXTURES / "bls.xlsx", observed, erratum=True)}
+    assert raw["bls:T104100"].values["FAT"] == 13.7
+    anchovy = fixed["bls:T104100"].values  # section 6: no value until BLS 4.1
+    assert not {"FAT", "FASAT", "ENERC_KJ", "ENERC_KCAL"} & anchovy.keys()
+    assert anchovy["PROCNT"] == 20.1 and "NA" in anchovy
+    assert fixed["bls:W278400"].values == raw["bls:W278400"].values  # anchovy is a minor ingredient
+
+
+def test_bls_erratum_stops_when_oligosaccharides_change_their_unit(tmp_path):
+    from fooddb.fetchers import bls
+
+    broken = tmp_path / "bls.xlsx"
+    with zipfile.ZipFile(FIXTURES / "bls.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace("Oligosaccharide, verfügbar [g/100g]".encode(), "Oligosaccharide, verfügbar [mg/100g]".encode())
+                         if "sheet1" in item.filename else data)
+    with pytest.raises(RuntimeError, match="component OLSAC is not in g"):
+        list(bls.records(broken, datetime(2025, 12, 11, tzinfo=UTC), erratum=True))
+    assert list(bls.records(broken, datetime(2025, 12, 11, tzinfo=UTC)))  # 4.1 and later: no correction, no check
+
+
+def test_bls_ref_changes_for_a_4_0_zip_that_was_loaded_before_the_errata():
+    from fooddb.fetchers import bls
+
+    old = "BLS_4_0_2025_DE.zip 14263306 Mon, 07 Sep 2026 15:26:56 GMT"  # the ref that production holds
+    assert bls.ref("BLS_4_0_2025_DE.zip", "14263306", "Mon, 07 Sep 2026 15:26:56 GMT") == old + " erratum-2026-08"
+    assert bls.ref("BLS_4_1_2027_DE.zip", "1", "x") == "BLS_4_1_2027_DE.zip 1 x"  # 4.1 has the corrections in it
 
 
 def test_bls_stops_when_a_component_changes_its_unit(tmp_path):
