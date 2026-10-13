@@ -41,6 +41,7 @@ class Record:
     images: dict | None = None  # OFF photo references (food.images); {} = the source has none
     evidence: str | None = None  # sha256 of the label photo the values were read from
     review_all: bool = False  # every value waits for review, whatever the checks say
+    group: str | None = None  # records of one run sharing a group land in one product (e.g. a recipe's names)
 
 
 def already_done(fetcher: str, ref: str) -> bool:
@@ -104,10 +105,15 @@ def _write(records: list[Record]) -> tuple[int, int]:
         stored = {(row.food_id, row.nutrient): row for row in conn.execute(text(LATEST_SQL), {"ids": ids})}
 
         # A record seen for the first time becomes its own product; matching merges products later.
+        # Records naming a `group` share one product — and join a known group member's product.
         new = [fid for fid in ids if fid not in known]
-        pids = dict(zip(new, conn.execute(text(
+        key = {fid: latest_by_id[fid].group or fid for fid in ids}
+        claimed = {key[fid]: row.product_id for fid, row in known.items()}
+        fresh = sorted({key[fid] for fid in new} - claimed.keys())
+        claimed.update(dict(zip(fresh, conn.execute(text(
             "insert into product (created_at) select now() from generate_series(1, :n) returning id"
-        ), {"n": len(new)}).scalars().all())) if new else {}
+        ), {"n": len(fresh)}).scalars().all()))) if fresh else None
+        pids = {fid: claimed[key[fid]] for fid in new}
 
         foods, obs = [], []
         for r in latest_by_id.values():

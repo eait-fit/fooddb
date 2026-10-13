@@ -117,7 +117,7 @@ select product_id, id, source, licence, gtin14, name, brand, lang, serving_text,
        serving_g::float8 as serving_g, category, flags, source_updated_at
 from food
 where product_id = any(:pids) and layer = any(:layers) and {VISIBLE}
-order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last
+order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last, id
 """
 
 
@@ -148,10 +148,17 @@ def seals(per_100: dict) -> dict | None:
 
 
 def attribution(p: dict) -> list[dict]:
-    """The attribution that each source of a served field asks for, once per source."""
+    """The attribution that each source of a served field asks for, once per source.
+    A recipe's sources are its ingredients': the union of what the computed values were made of."""
+    from fooddb import recipes
+
     tags = [*(p[f] for f in (*FIELDS, "flags")), *p["gtin14"], *p["per_100"].values()]
+    sources = {t["source"] for t in tags if t}
+    for record in p["records"]:
+        if record.startswith(f"{recipes.SOURCE}:"):
+            sources |= recipes.ingredient_sources(record)
     return [{"source": s, "licence": ATTRIBUTION[s][0], "text": ATTRIBUTION[s][1]}
-            for s in sorted({t["source"] for t in tags if t} & ATTRIBUTION.keys())]
+            for s in sorted(sources & ATTRIBUTION.keys())]
 
 
 def layers_for(include: str | None) -> list[str]:

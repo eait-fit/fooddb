@@ -36,6 +36,8 @@ left join lateral (
     where o.food_id = f.id and o.status = 'accepted'
     order by nutrient, observed_at desc, id desc
 ) v on true
+where f.source <> 'recipe'  -- a recipe is its own product by construction (its name records share one);
+                            -- merging it into a branded or crowd record would bury its reviewed values
 group by f.id
 """
 

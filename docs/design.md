@@ -28,6 +28,9 @@ value's status. Each merge is logged. A reviewer splits a wrong merge through th
 SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
 Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
 hand-set), lane 3, and the eait side of the label-photo loop.
+Built ([#84](https://github.com/eait-fit/fooddb/issues/84)): the recipe layer — dishes no open
+composition table carries (plov, beshbarmak, manty, pelmeni, …) as records of the source `recipe`,
+computed from ingredient records, never typed in. See [Recipes](#recipes) below.
 
 ### Intake lanes
 
@@ -95,6 +98,24 @@ the value that most sources agree with wins, then the source rank, then the newe
 and the national tables share one rank, above OFF. Label reads have a rank above the tables.
 For other label reads, agreement still comes before rank, so a label read that is alone loses to
 two sources that agree. Brand uploads get no such override.
+
+### Recipes
+
+Dishes no usable open table carries are built as *recipes*: a formulation in `fooddb.recipes` names
+ingredient records of the composition tables with their grams in the raw mix, a cooked yield (the
+served weight divided by the raw mix) and a citation for the formulation. `build` weighs each
+ingredient's newest accepted values into per-100 g values of the cooked dish — the values are
+computed, never typed — and stores them through the normal ingest path with `review_all`, so every
+value waits in the review queue and the dish is invisible until a person has accepted it once. A
+nutrient an ingredient does not state counts only toward its share of the mix; below 90 % coverage
+the nutrient is dropped rather than understated. Each recipe declares a plausible kcal band and an
+outlier is flagged for review. `fooddb recipes` prints the formulations with the computed values —
+the readable review list. One recipe makes two records on one product: `recipe:<slug>` with the
+English name and `recipe:<slug>.ru` with the Russian one. Every snapshot build recomputes the
+recipes first, so an ingredient update or an edited formulation re-enters review on its own.
+Recipe records stay out of matching and rank below every composition table: a real table entry for
+the same dish always wins over a computed one. The recipe's licence tag is the most restrictive of
+its ingredients' licences, and its `attribution` is the union of the sources they came from.
 
 ### Snapshot and serving
 
