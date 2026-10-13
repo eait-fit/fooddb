@@ -59,6 +59,8 @@ food = Table(
     Column("serving_g", Numeric),
     Column("category", Text),  # fooddb category (checks.CATEGORIES), null when unknown
     Column("flags", ARRAY(Text), nullable=False, server_default="{}"),
+    # OFF records only: countries_tags, the markets the product is sold in (?country= ranking).
+    Column("markets", ARRAY(Text), nullable=False, server_default="{}"),
     # OFF records only: {kind: {"lang", "rev"}} for the front and nutrition photos, never bytes. {} = checked, OFF has none; null = not checked.
     Column("images", JSONB(none_as_null=True)),
     Column("source_updated_at", DateTime(timezone=True)),
