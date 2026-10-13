@@ -25,6 +25,13 @@ deployed stack, run it as `docker compose exec api fooddb …`, or on a stack th
 
 Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day.
 
+`/v1/foods` and `/v1/products/{barcode}` also take `?country=` (ISO 3166-1 alpha-2,
+case-insensitive): among results of comparable name similarity, records of that country's
+sources rank first — a preference, never a filter, and it never outranks a much better name
+match. An OFF record counts when its `countries_tags` name the country. For example,
+`$API/v1/foods?q=apple&country=de` ranks BLS records before other sources of an equal match.
+An unknown code is refused with 422.
+
 ## CLI
 
 `fooddb` has the commands `serve`, `worker`, `migrate`, `run`, `status`, `lookup`, `search`, `export`, `dump odbl`, `match train`, `keys`, `accounts` and `mcp`. On a stack that you installed with make, run `make cli args='status'`, or `make search q='apple pie'` to look up a food. On any other deployed stack, run `docker compose exec api fooddb status`.
