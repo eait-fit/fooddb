@@ -17,7 +17,7 @@ references to the code. Each section below says what is built and links the issu
 Every step runs automatically except human review. Review sees only rows that changed or failed a
 check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
-**Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, CIQUAL, CoFID, Fineli, Frida,
+**Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, BLS, CIQUAL, CoFID, Fineli, Frida,
 Matvaretabellen, MEXT, TFDA, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
@@ -34,13 +34,13 @@ hand-set), lane 3, and the eait side of the label-photo loop.
 1. **Open composition tables**, loaded when each publisher releases: USDA FDC (CC0), CIQUAL, BLS,
    Fineli, Frida, Matvaretabellen (NLOD 2.0), CoFID (OGL), Korea MFDS, Japan MEXT, Taiwan TFDA, and
    others. Built ([#15](https://github.com/eait-fit/fooddb/issues/15)): USDA FDC Foundation, SR
-   Legacy and Branded Foods, CIQUAL (Etalab 2.0), CoFID (OGL v3.0, [#36](https://github.com/eait-fit/fooddb/issues/36)), Fineli (CC BY 4.0), Frida (CC BY 4.0, [#35](https://github.com/eait-fit/fooddb/issues/35)),
+   Legacy and Branded Foods, BLS (Germany, CC BY 4.0, [#75](https://github.com/eait-fit/fooddb/issues/75)), CIQUAL (Etalab 2.0), CoFID (OGL v3.0, [#36](https://github.com/eait-fit/fooddb/issues/36)), Fineli (CC BY 4.0), Frida (CC BY 4.0, [#35](https://github.com/eait-fit/fooddb/issues/35)),
    Matvaretabellen (NLOD 2.0), Japan MEXT (free use with a citation,
    [#38](https://github.com/eait-fit/fooddb/issues/38); total sugars and saturated fat from its
    separate tables, [#57](https://github.com/eait-fit/fooddb/issues/57)) and Taiwan TFDA (OGDL 1.0,
    [#39](https://github.com/eait-fit/fooddb/issues/39)). FDC Branded and Fineli are off by default. The
    FDC fetcher reads its JSON as a stream. Not built: Korea MFDS
-   ([#37](https://github.com/eait-fit/fooddb/issues/37)) and BLS.
+   ([#37](https://github.com/eait-fit/fooddb/issues/37)).
 2. **Open Food Facts**: the full dump, then daily deltas. Built: a fresh install takes the newest
    delta, then every delta after it. The full dump is a manual job (`fooddb run off-dump`). Its data is under ODbL (see Licences).
 3. **Brands**: a brand upload form in v1. The uploader's brand is checked against the GS1
@@ -162,6 +162,7 @@ Australian and similar labels, and from CIQUAL, Fineli and Matvaretabellen. Frid
 | Fineli (Finland) | CC BY 4.0 | attribution, built |
 | Matvaretabellen (Norway) | NLOD 2.0 | attribution, built |
 | Frida (Denmark) | CC BY 4.0 | attribution, built |
+| BLS (Germany) | CC BY 4.0 | attribution, built |
 | Open Food Facts | ODbL | Share-alike on the derived database. It is kept in its own layer, which we publish monthly as an ODbL dump at `/v1/dumps` ([#14](https://github.com/eait-fit/fooddb/issues/14), built). See [data-licence.md](data-licence.md). |
 | Most EU national tables | CC BY / OGL / NLOD | attribution |
 | Korea MFDS | public, no usage restriction | none |

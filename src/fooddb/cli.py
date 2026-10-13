@@ -72,7 +72,7 @@ def enqueue(
     max_files: int = typer.Option(1, help="off: newest N delta files"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
-    source: str = typer.Option("ciqual", help="table: ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
+    source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
 ) -> None:
     """Queue a fetch for the worker."""
     from fooddb.jobs import enqueue as _enqueue
@@ -86,7 +86,7 @@ def run(
     job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | snapshot | odbl-dump"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
-    source: str = typer.Option("ciqual", help="table: ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
+    source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
 ) -> None:
     """Run a job in this process instead of queueing it: for loads longer than the worker's
     per-task timeout (the full OFF dump takes hours)."""

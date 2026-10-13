@@ -72,7 +72,7 @@ the served values imply, computed on each read. A seal whose inputs are missing 
 schemes count added sugars, fats and sodium, and fooddb has total values, so a seal is an upper
 bound on the label. Its licence is the most restrictive among the values it reads.
 
-`attribution` lists the text that each source of a served field asks you to show: CIQUAL, CoFID,
+`attribution` lists the text that each source of a served field asks you to show: BLS, CIQUAL, CoFID,
 Fineli, Frida, Matvaretabellen, MEXT and TFDA. See [data-licence.md](data-licence.md).
 
 A field is `null` when the record that names the product has no value for it. Without
@@ -296,6 +296,7 @@ dump comes with the ODbL attribution and share-alike obligation: see
 |---|---|---|---|
 | `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
 | `fdc` branded | USDA FoodData Central Branded Foods (~3 GB JSON, streamed) | CC0 | weekly check, only with `FOODDB__BACKEND__FETCH_FDC_BRANDED=true` |
+| `table` bls | BLS, German food composition table (Max Rubner-Institut), Excel in a zip from blsdb.de | CC BY 4.0, attribution | weekly check |
 | `table` ciqual | CIQUAL, French food composition table (ANSES), Excel | Etalab 2.0, attribution | weekly check |
 | `table` fineli | Fineli, Finnish food composition database (THL), zip of CSV | CC BY 4.0, attribution | weekly check, only with `FOODDB__BACKEND__FETCH_FINELI=true` |
 | `table` cofid | CoFID, UK composition of foods integrated dataset (Public Health England), Excel | OGL v3.0, attribution | weekly check |
