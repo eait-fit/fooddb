@@ -146,6 +146,83 @@ def test_cli_search_prints_what_the_route_returns():
     assert json.loads(r.output)["items"][0]["records"] == ["fdc:2"]
 
 
+def names(c, params: dict) -> list[str]:
+    r = c.get("/v1/foods", params=params)
+    assert r.status_code == 200, r.text
+    return [i["records"][0] for i in r.json()["items"]]
+
+
+def test_search_without_country_is_unchanged():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel"),
+                           rec(id="bls:2", source="bls", licence="CC-BY-4.0", name="Applesauce")])
+    # Similarity first (a whole-word match is 1.0), then the shortest name, whatever the source.
+    assert names(client(), {"q": "apple"}) == ["fdc:2", "bls:1", "bls:2"]
+
+
+def test_search_country_prefers_the_countrys_sources():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel")])
+    c = client()
+    # Both names match "apple" equally (1.0): today the shorter name wins, with country=de the
+    # bls record does. The code is case-insensitive.
+    assert names(c, {"q": "apple", "country": "de"}) == ["bls:1", "fdc:2"]
+    assert names(c, {"q": "apple", "country": "DE"}) == ["bls:1", "fdc:2"]
+    assert names(c, {"q": "apple", "country": "us"}) == ["fdc:2", "bls:1"]
+
+
+def test_search_country_does_not_prefer_a_different_food():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Applesauce")])
+    # "Apple" is the better name match (1.0 against 0.83): a preference never outranks it.
+    assert names(client(), {"q": "apple", "country": "de"}) == ["fdc:2", "bls:1"]
+
+
+def test_search_country_ranks_the_whole_list(monkeypatch):
+    from fooddb import countries, ingest
+
+    # A country maps to an ordered list: adding a second source is one entry, no code change.
+    monkeypatch.setitem(countries.COUNTRIES["de"], "sources", ("ciqual", "bls"))
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel"),
+                           rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Apple turnover")])
+    assert names(client(), {"q": "apple", "country": "de"}) == ["ciqual:1", "bls:1", "fdc:2"]
+
+
+def test_search_country_prefers_an_off_record_sold_there():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
+                               gtin14="04006381333931", name="Apple compote", markets=["en:germany"]),
+                           rec(id="fdc:2", name="Apple butter")])
+    c, params = client(), {"q": "apple", "include": "off"}
+    assert names(c, params | {"country": "de"}) == ["off:04006381333931", "fdc:2"]
+    assert names(c, params | {"country": "us"}) == ["fdc:2", "off:04006381333931"]
+
+
+def test_country_refuses_an_unknown_code():
+    c = client()
+    assert c.get("/v1/foods", params={"q": "apple", "country": "xx"}).status_code == 422
+    assert c.get("/v1/foods", params={"q": "apple", "country": "de2"}).status_code == 422
+    assert c.get("/v1/products/4006381333931", params={"country": "xx"}).status_code == 422
+
+
+def test_barcode_country_orders_by_preferred_source():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie", gtin14="04006381333931"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel",
+                               gtin14="04006381333931")])
+    items = client().get("/v1/products/4006381333931", params={"country": "de"}).json()["items"]
+    assert [i["records"] for i in items] == [["bls:1"], ["fdc:2"]]
+
+
 @pytest.mark.parametrize("barcode", [
     "²²²²²²²²",       # unicode digits: used to crash with a 500
     "0400000000008",  # GTIN-13 prefix 04: restricted, in-store use
