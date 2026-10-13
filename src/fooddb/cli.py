@@ -68,7 +68,7 @@ def mcp() -> None:
 
 @app.command()
 def enqueue(
-    fetcher: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | snapshot | odbl-dump"),
+    fetcher: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     max_files: int = typer.Option(1, help="off: newest N delta files"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
@@ -83,7 +83,7 @@ def enqueue(
 
 @app.command()
 def run(
-    job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | snapshot | odbl-dump"),
+    job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
@@ -98,7 +98,7 @@ def run(
     kwargs = {"off-images": {"limit": limit or None}, "fdc": {"dataset": dataset}, "table": {"source": source}}.get(job, {})
     {"off": jobs.fetch_off_deltas, "off-dump": jobs.fetch_off_dump, "fdc": jobs.fetch_fdc, "table": jobs.fetch_table,
      "match": jobs.match_products, "snapshot": jobs.build_snapshot, "odbl-dump": jobs.dump_odbl,
-     "off-images": jobs.backfill_off_images}[job](**kwargs)
+     "off-images": jobs.backfill_off_images, "recipes": jobs.build_recipes}[job](**kwargs)
 
 
 match_app = typer.Typer(no_args_is_help=True, help="Product matching.")
@@ -119,6 +119,14 @@ def match_train(out: Path = typer.Option(None, help="model file; default: $FOODD
         raise typer.Exit(1)
     match.train(str(path))
     typer.echo(f"wrote {path}")
+
+
+@app.command()
+def recipes() -> None:
+    """The recipe layer's review list: each dish's formulation, citation and computed values."""
+    from fooddb import recipes as r
+
+    typer.echo(r.report())
 
 
 @app.command()

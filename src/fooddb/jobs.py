@@ -69,9 +69,23 @@ def match_products() -> None:
     logger.info(f"match: {match.run()} products merged")
 
 
+def build_recipes() -> None:
+    from fooddb import recipes
+
+    result = recipes.build()
+    health.checked("recipes")
+    logger.info(f"recipes: {result}")
+
+
 def build_snapshot() -> None:
     from fooddb import snapshot
 
+    # Recipes recompute from their ingredients' current values before the build freezes: a changed
+    # formulation or ingredient lands in the queue for review, and the accepted values serve tonight.
+    try:
+        build_recipes()
+    except Exception as e:  # a recipe must never take the snapshot down: the build still runs
+        logger.exception(f"recipes skipped: {e}")
     logger.info(f"snapshot: {snapshot.build()} products")
 
 
@@ -134,5 +148,5 @@ def schedule() -> None:
 def enqueue(name: str, **kwargs) -> int:
     fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "table": fetch_table,
           "match": match_products, "snapshot": build_snapshot, "odbl-dump": dump_odbl,
-          "off-images": backfill_off_images}[name]
+          "off-images": backfill_off_images, "recipes": build_recipes}[name]
     return queue().enqueue(fn, max_runtime_seconds=RUNTIME.get(name), **kwargs)

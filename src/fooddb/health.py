@@ -22,6 +22,7 @@ MAX_AGE = {
     "matvaretabellen": timedelta(days=8),
     "mext": timedelta(days=8),
     "tfda": timedelta(days=8),
+    "recipes": timedelta(days=2),  # recomputed inside every snapshot build
     "snapshot": timedelta(hours=26),
 }
 # Fetchers that run only when switched on. FDC Branded is about 3 GB of JSON. Fineli's site refuses

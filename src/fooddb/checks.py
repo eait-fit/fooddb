@@ -58,6 +58,7 @@ CATEGORIES: list[tuple[str | None, tuple[str, ...]]] = [
     ("sweets", ("en:sweet-snacks", "Sweets", "Candy", "ciqual:sugar and confectionery", "fineli:SUGARTOT",
                 "matvaretabellen:7", "mext:03", "mext:15", "frida:100", "cofid:SC", "cofid:SE", "tfda:糖類", "bls:S")),
     ("snacks", ("en:salty-snacks", "Snacks", "Chips, Pretzels & Snacks", "fineli:SNACK", "matvaretabellen:10.5", "frida:143", "cofid:SN")),
+    ("dishes", ("recipe:dish",)),  # computed recipes (recipes.py): cooked dishes from ingredient records
 ]
 
 # Plausible values per 100 g or 100 ml: (category, basis or None for both, field, low, high), None
