@@ -24,6 +24,7 @@ ZIP = re.compile(r"/assets/uploads/(BLS_\w+_DE\.zip)")
 DATA = re.compile(r"_Daten_\w+\.xlsx$")
 VALUE = re.compile(r"^(\S+) .*\[(.+)/100g\]$")
 RELEASE_4_0 = "BLS_4_0_"
+ERRATUM_REF = "erratum-2026-08"
 
 # BLS component code → (INFOODS tagname, unit as the column header states it). CHO is available
 # carbohydrate: the documentation (section 5.3) sums sugars, starch, available oligosaccharides and
@@ -95,6 +96,12 @@ def records(xlsx, observed_at: datetime, erratum: bool = False):
         )
 
 
+def ref(name: str, size: str, modified: str) -> str:
+    """The run's ref. A 4.0 zip carries the errata in it, so a zip that was loaded before the errata were
+    applied is loaded again once."""
+    return f"{name} {size} {modified}" + (f" {ERRATUM_REF}" if name.startswith(RELEASE_4_0) else "")
+
+
 def link(page: str) -> str:
     """The zip that the download page offers, as an address that needs no token."""
     m = ZIP.search(html.unescape(page))
@@ -123,8 +130,8 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     if not (modified := h.headers.get("last-modified")) or not (size := h.headers.get("content-length")):
         raise RuntimeError(f"bls: {url} states no size or change date; the server changed")
     name = url.rsplit("/", 1)[1]
-    ref = f"{name} {size} {modified}"
-    if not force and ingest.already_done(FETCHER, ref):
+    run_ref = ref(name, size, modified)
+    if not force and ingest.already_done(FETCHER, run_ref):
         return None
     with tempfile.TemporaryFile() as tmp, tempfile.TemporaryFile() as workbook:
         download(url, tmp)
@@ -134,4 +141,4 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
                 shutil.copyfileobj(src, workbook)
         workbook.seek(0)
         observed_at = datetime(*member.date_time, tzinfo=UTC)
-        return ingest.run(FETCHER, ref, records(workbook, observed_at, erratum=name.startswith(RELEASE_4_0)))
+        return ingest.run(FETCHER, run_ref, records(workbook, observed_at, erratum=name.startswith(RELEASE_4_0)))

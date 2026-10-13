@@ -346,6 +346,14 @@ def test_bls_erratum_stops_when_oligosaccharides_change_their_unit(tmp_path):
     assert list(bls.records(broken, datetime(2025, 12, 11, tzinfo=UTC)))  # 4.1 and later: no correction, no check
 
 
+def test_bls_ref_changes_for_a_4_0_zip_that_was_loaded_before_the_errata():
+    from fooddb.fetchers import bls
+
+    old = "BLS_4_0_2025_DE.zip 14263306 Mon, 07 Sep 2026 15:26:56 GMT"  # the ref that production holds
+    assert bls.ref("BLS_4_0_2025_DE.zip", "14263306", "Mon, 07 Sep 2026 15:26:56 GMT") == old + " erratum-2026-08"
+    assert bls.ref("BLS_4_1_2027_DE.zip", "1", "x") == "BLS_4_1_2027_DE.zip 1 x"  # 4.1 has the corrections in it
+
+
 def test_bls_stops_when_a_component_changes_its_unit(tmp_path):
     from fooddb.fetchers import bls
 
