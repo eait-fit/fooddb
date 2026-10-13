@@ -188,7 +188,7 @@ def test_search_country_ranks_the_whole_list(monkeypatch):
     from fooddb import countries, ingest
 
     # A country maps to an ordered list: adding a second source is one entry, no code change.
-    monkeypatch.setitem(countries.COUNTRIES["de"], "sources", ("ciqual", "bls"))
+    monkeypatch.setitem(countries.PREFERRED, "de", ("ciqual", "bls"))
     ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
                            rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel"),
                            rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Apple turnover")])
@@ -199,11 +199,14 @@ def test_search_country_prefers_an_off_record_sold_there():
     from fooddb import ingest
 
     ingest.run("t", "r1", [rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
-                               gtin14="04006381333931", name="Apple compote", markets=["en:germany"]),
+                               gtin14="04006381333931", name="Apple compote",
+                               markets=["en:germany", "en:spain"]),
                            rec(id="fdc:2", name="Apple butter")])
     c, params = client(), {"q": "apple", "include": "off"}
     assert names(c, params | {"country": "de"}) == ["off:04006381333931", "fdc:2"]
     assert names(c, params | {"country": "us"}) == ["fdc:2", "off:04006381333931"]
+    # A country with no preferred table still gets the OFF-layer preference.
+    assert names(c, params | {"country": "es"}) == ["off:04006381333931", "fdc:2"]
 
 
 def test_country_refuses_an_unknown_code():

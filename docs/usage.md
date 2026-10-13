@@ -28,9 +28,10 @@ Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day
 `/v1/foods` and `/v1/products/{barcode}` also take `?country=` (ISO 3166-1 alpha-2,
 case-insensitive): among results of comparable name similarity, records of that country's
 sources rank first — a preference, never a filter, and it never outranks a much better name
-match. An OFF record counts when its `countries_tags` name the country. For example,
+match. An OFF record counts when its `countries_tags` name the country, so every valid code
+has an effect even without a preferred table. For example,
 `$API/v1/foods?q=apple&country=de` ranks BLS records before other sources of an equal match.
-An unknown code is refused with 422.
+A code that is not ISO 3166-1 alpha-2 is refused with 422.
 
 ## CLI
 
