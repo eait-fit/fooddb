@@ -161,8 +161,10 @@ flowchart TD
     tabsrc["BLS (in a zip), CIQUAL, CoFID, Frida and MEXT xlsx, Fineli and TFDA zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda<br/>records()"]
     tabrec --> run
     offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
+    reg["recipe registry<br/>(recipes.py)"] -->|"computed from ingredient records,<br/>never typed"| rrec["recipes.build()<br/>review_all: every value waits"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
     offrec --> run
+    rrec --> run
     run --> fr[("fetch_run<br/>running, done, failed")]
     run -->|"one new product per new record"| prod[("product")]
     run --> chk["checks.category(), checks.flags()"]
@@ -724,6 +726,36 @@ A brand upload is the same shape as a label read with another source. The photo 
   post has no session to ride on. The response has `Cache-Control: no-store` and `Referrer-Policy:
   no-referrer`. The page never shows the key again. The key is in the body of the post, not in the
   URL, so the access log does not have it.
+
+### Recipes
+
+Dishes that no open composition table carries are built from ingredient records (`recipes.py`). A
+recipe in the `RECIPES` registry names ingredient record ids with their grams in the raw mix, a
+cooked yield (served weight ÷ raw mix) and a citation: a public recipe or `fooddb editorial` with
+the reasoning written down.
+
+- `recipes.compute` weighs each ingredient's newest accepted per-100 g values into the cooked
+  dish's: `Σ grams × value / (Σ grams × yield)` per nutrient (`recipes.py:196`). CHOCDF-only
+  ingredients (FDC) contribute `CHOCDF − FIBTG` as CHOAVL, so US and EU rows can share one dish. A
+  nutrient stated by less than 90 % of the raw mix is dropped rather than understated, and the
+  review list names it (`recipes.report`, `fooddb recipes`). Computed values are rounded to six
+  significant digits so a rebuild with unchanged ingredients stores nothing.
+- `recipes.build` stores the values through `ingest.run` under the source `recipe` in the `core`
+  layer with `review_all`: every value waits in the review queue, and the record is invisible until
+  a person has accepted it once (`recipes.py:224`). Each recipe declares a plausible kcal band per
+  100 g; an outlier carries the flag `recipe-kcal-outside-band` for the reviewer. The build runs
+  inside `build_snapshot`, so every snapshot first recomputes the recipes (`jobs.py:80`), and a
+  manual `fooddb run recipes` does the same outside the schedule. A changed ingredient or
+  formulation stores new pending values while the last accepted ones keep serving.
+- One recipe makes two records sharing one product through `ingest.Record.group`: `recipe:<slug>`
+  with the English name the eait matcher keys on and `recipe:<slug>.ru` with the Russian one. Both
+  hold the same computed values, so the Russian record is reviewed too and invisible before that.
+- Recipe records do not take part in matching (`match.py:39`): a merge with a branded or crowd
+  record would bury the reviewed values. Their source ranks below every table in the resolver, so a
+  real table entry for the same dish wins over a computed one.
+- The licence tag on a recipe record and its values is the most restrictive among its ingredients'
+  licences; `resolve.attribution` serves the union of the ingredient sources' texts
+  (`resolve.py:150`).
 
 ### Match records into products
 
