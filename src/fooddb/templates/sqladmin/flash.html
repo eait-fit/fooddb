@@ -1,0 +1,34 @@
+{% with messages = get_flashed_messages(request) %}
+{% if messages %}
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  {% for message in messages %}
+  <div class="toast admin-toast text-bg-{{message.category}}" role="alert" aria-live="assertive" aria-atomic="true"
+    data-bs-toggle="toast"{% if message.undo %} data-undo{% endif %}>
+    <div class="d-flex">
+      {% if message.title %}
+      <div class="toast-header">{{ message.title }}</div>
+      {% endif %}
+      <div class="toast-body">{{ message.message }}
+        {% if message.undo %}
+        <form method="post" action="{{ url_for('admin:view-review-undo') }}?next={{ (request.url.path ~ ('?' ~ request.url.query if request.url.query else '')) | urlencode }}" class="d-inline ms-2">
+          <input type="hidden" name="csrf" value="{{ request.session.get('csrf', '') }}">
+          <input type="hidden" name="ids" value="{{ message.undo }}">
+          <button type="submit" class="btn btn-sm btn-light">Undo</button>
+        </form>
+        {% endif %}
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.toast').forEach(function (toastEl) {
+      new window.tabler.bootstrap.Toast(toastEl, { "delay": toastEl.hasAttribute('data-undo') ? 12000 : 3000 }).show()
+    })
+  })
+</script>
+{% endif %}
+{% endwith %}

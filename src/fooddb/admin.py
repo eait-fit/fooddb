@@ -16,15 +16,15 @@ from urllib.parse import quote, urlencode, urlsplit
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse, Response
 from markupsafe import Markup
-from sqladmin import Admin, BaseView, ModelView, action, expose
+from sqladmin import Admin, BaseView, Flash, ModelView, action, expose
 from sqladmin.authentication import AuthenticationBackend, login_required
 from sqladmin.filters import AllUniqueStringValuesFilter, BooleanFilter, StaticValuesFilter, get_column_obj
 from sqlalchemy import func, select
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from starlette.concurrency import run_in_threadpool
 
-from fooddb import adminpages, auth, checks, resolve, review
-from fooddb.db import account, engine, merge_log, observation, purchase
+from fooddb import adminpages, auth, checks, export, ops, resolve, review
+from fooddb.db import account, engine, food, merge_log, observation, purchase
 from fooddb.labels import photos
 
 
@@ -104,13 +104,44 @@ class PendingView(ModelView, model=Observation):
         return await self._decide(request, "reject")
 
     async def _decide(self, request: Request, decision) -> RedirectResponse:
+        decided = []
         for pk in filter(None, request.query_params.get("pks", "").split(",")):
             try:
-                await run_in_threadpool(review.decide, int(pk), decision, request.session["key_name"])
+                decided.append((await run_in_threadpool(review.decide, int(pk), decision, request.session["key_name"]))["id"])
             except (LookupError, review.NotPending):
                 pass  # decided meanwhile (by an agent or a second click): the first decision stands
+        if decided:
+            flash_decided(request, review.STATUS[decision].capitalize(), await run_in_threadpool(describe, decided), decided)
+        else:
+            Flash.warning(request, "Nothing to decide: already decided")
         return RedirectResponse(back_to(request, str(request.url_for("admin:list", identity=self.identity))),
                                 status_code=302)
+
+
+def describe(ids: list[int]) -> str:
+    """What the given values are, for a toast: the value and record name when it is one value of one record."""
+    o = observation.c
+    with engine().connect() as conn:
+        rows = conn.execute(select(o.nutrient, o.value_per_100, o.unit, o.basis, food.c.name, food.c.id)
+                            .join_from(observation, food).where(o.id.in_(ids))).all()
+    records = {r.id: r.name or r.id for r in rows}
+    what = (f"{rows[0].nutrient} " + ("withdrawn" if rows[0].value_per_100 is None else f"{checks.short(float(rows[0].value_per_100))} {rows[0].unit}/{rows[0].basis}")
+            if len(rows) == 1 else f"{len(rows)} values")
+    return what + " \u00b7 " + (next(iter(records.values())) if len(records) == 1 else f"{len(records)} records")
+
+
+def flash_decided(request: Request, verb: str, what: str, ids: list[int]) -> None:
+    """A toast with an Undo button: `templates/sqladmin/flash.html` posts the ids to the Review page's undo."""
+    Flash.success(request, f"{verb} {what}")
+    request.session["_messages"][-1]["undo"] = ",".join(map(str, ids))
+
+
+def undo_decisions(ids: list[int], by: str) -> int:
+    with engine().begin() as conn:
+        n = review.undo(ids, by, conn)
+        if n:
+            ops.audit(conn, by, "review-undo", {"observations": ids, "reverted": n})
+    return n
 
 
 def back_to(request: Request, default: str) -> str:
@@ -202,13 +233,23 @@ class ReviewView(BaseView):
         offset = int(q["offset"]) if q.get("offset", "").isdigit() else 0
         items = await run_in_threadpool(lambda: review.queue(PAGE_SIZE, offset=offset, check=check, source=source, detail=True))
         facets = await run_in_threadpool(review.facets, ("%",), check, source)
+        days = await run_in_threadpool(export.days)
         page = lambda off: "?" + urlencode({k: v for k, v in (("check", check), ("source", source), ("offset", off)) if v})
         return await self.templates.TemplateResponse(request, "review.html", {
-            "title": "Review", "subtitle": "One card per food record with pending values", "items": items, "facets": facets, "check": check, "source": source, "offset": offset,
+            "title": "Review", "subtitle": "One card per food record with pending values", "items": items, "facets": facets, "snapshot_day": days[0]["day"] if days else None, "check": check, "source": source, "offset": offset,
             "back": request.url.path + (f"?{request.url.query}" if request.url.query else ""),
             "prev": page(max(offset - PAGE_SIZE, 0)) if offset else None,
             "next": page(offset + PAGE_SIZE) if offset + PAGE_SIZE < facets["total"] else None,
             "first": offset + 1, "last": offset + len(items)})
+
+    @expose("/review/undo", methods=["POST"], identity="review-undo")
+    async def undo(self, request: Request):
+        if (form := await adminpages._form(request)) is None:
+            return adminpages.EXPIRED
+        ids = [int(i) for i in str(form.get("ids", "")).split(",") if i.isdigit()]
+        n = await run_in_threadpool(undo_decisions, ids, request.session["key_name"])
+        Flash.success(request, f"Undone: {n} values back to pending")
+        return RedirectResponse(back_to(request, str(request.url_for("admin:view-review"))), status_code=303)
 
     @expose("/review/photo/{sha}", identity="review-photo")
     async def label_photo(self, request: Request) -> Response:

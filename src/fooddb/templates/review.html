@@ -64,8 +64,8 @@
         </ul>
         {% endif %}
         <table class="table table-sm table-vcenter mb-0">
-          <thead><tr><th>Nutrient</th><th>This record</th><th>Status</th><th>Served now</th><th class="text-end">
-            {% if pending %}<a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ pending | map(attribute='observation_id') | join(',') }}&next={{ back | urlencode }}">Accept all pending</a>{% endif %}
+          <thead><tr><th>Nutrient</th><th>This record</th><th>Status</th><th>{% if snapshot_day %}Served in snapshot {{ snapshot_day }}{% else %}Served now{% endif %}</th><th class="text-end">
+            {% if pending %}<a class="btn btn-sm btn-outline-success" href="{{ accept }}?pks={{ pending | map(attribute='observation_id') | join(',') }}&next={{ back | urlencode }}" onclick='return confirm({{ ("Accept all " ~ pending | length ~ " pending values of " ~ (item.name or item.record) ~ "?") | tojson }})'>Accept all {{ pending | length }}</a>{% endif %}
           </th></tr></thead>
           <tbody>
           {% for v in item['values'] %}
@@ -74,7 +74,7 @@
             <td>{{ v.nutrient }}</td>
             <td>{% if v.value is none %}<span class="text-muted">withdrawn</span>{% else %}<strong>{{ v.value | short }}</strong> {{ v.unit }}/{{ v.basis }}{% endif %}</td>
             <td><span class="badge {{ {'pending': 'bg-yellow-lt', 'accepted': 'bg-green-lt', 'rejected': 'bg-red-lt'}[v.status] }}">{{ v.status }}</span>{% if not v.latest %} <span class="text-muted">superseded</span>{% endif %}</td>
-            <td>{% if now %}{{ now.value | short }} {{ now.unit }}/{{ now.basis }} <span class="text-muted">({{ now.source }})</span>{% else %}<span class="text-muted">none</span>{% endif %}</td>
+            <td>{% if now %}{{ now.value | short }} {{ now.unit }}/{{ now.basis }} <span class="text-muted">({{ now.source }})</span>{% elif item.served or not snapshot_day %}<span class="text-muted">none</span>{% else %}<span class="text-muted">not in snapshot yet</span>{% endif %}</td>
             <td class="text-nowrap text-end">
               {% if v.status == 'pending' %}
               <a class="btn btn-sm btn-success" href="{{ accept }}?pks={{ v.observation_id }}&next={{ back | urlencode }}">Accept</a>

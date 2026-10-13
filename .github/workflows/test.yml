@@ -30,6 +30,7 @@ jobs:
           --health-timeout 5s
           --health-retries 10
     env:
+      UV_PYTHON: "3.14"
       FOODDB__BACKEND__DATABASE_URL: postgresql://fooddb:fooddb@127.0.0.1:5432/fooddb__test
       FOODDB_TEST_DATABASE_URL: postgresql://fooddb:fooddb@127.0.0.1:5432/fooddb__test
     steps:

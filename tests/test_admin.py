@@ -1,10 +1,11 @@
 """The admin panel's look and navigation: login page, cookie, menu sections, dashboard, list filters and row actions. Database suite."""
 
+import json
 import re
 from datetime import UTC, datetime
 
-from tests.test_db import clean, client, ingest_typo, key, pending_id, pytestmark, rec, wrongly_merged_hummus  # noqa: F401
-from tests.test_ops import admin, rows, seed
+from tests.test_db import HUMMUS, TYPO, clean, client, ingest_typo, key, pending_id, pytestmark, rec, wrongly_merged_hummus  # noqa: F401
+from tests.test_ops import admin, csrf, rows, seed
 
 
 def test_the_login_page_asks_for_an_api_key_and_sets_a_strict_session_cookie():
@@ -105,6 +106,7 @@ def test_a_pending_row_has_accept_and_reject_buttons_that_return_to_the_same_fil
     assert r.status_code == 302 and r.headers["location"] == "/admin/observation/list?source=fdc"
     with engine().connect() as conn:
         assert tuple(conn.execute(text("select status, reviewed_by from observation where id = :i"), {"i": obs}).one()) == ("rejected", "ops")
+    assert "Rejected ENERC_KCAL 2290 kcal/100g" in c.get("/admin/observation/list").text  # the toast, once
     assert "2290" not in c.get("/admin/observation/list").text
 
 
@@ -154,3 +156,62 @@ def test_the_users_and_requests_tables_can_be_sorted_and_filtered_in_the_browser
     jobs = c.get("/admin/jobs").text
     for table in ("fresh", "queue", "schedules", "runs"):
         assert f'id="{table}" data-sortable' in jobs
+
+
+def test_undo_puts_back_only_the_values_this_reviewer_decided_and_that_are_still_decided():
+    from fooddb import review
+
+    ingest_typo()
+    kcal, sugar = pending_id("ENERC_KCAL"), pending_id("SUGAR")
+    review.decide(kcal, "accept", "ops")
+    review.decide(sugar, "reject", "agent")
+    assert review.undo([kcal, sugar], "ops") == 1
+    assert rows("select status, reviewed_by, reviewed_at, review_note from observation where id = :i", i=kcal) == [
+        {"status": "pending", "reviewed_by": None, "reviewed_at": None, "review_note": None}]
+    assert rows("select status, reviewed_by from observation where id = :i", i=sugar) == [{"status": "rejected", "reviewed_by": "agent"}]
+    assert review.undo([kcal, sugar], "ops") == 0  # one is pending again, the other is not the reviewer's
+
+
+def test_a_decision_from_the_review_page_shows_a_toast_with_undo_that_returns_to_the_same_page():
+    ingest_typo()
+    obs = pending_id("ENERC_KCAL")
+    c = admin()
+    back = "/admin/review%3Fsource%3Dfdc%26offset%3D0"
+    r = c.get(f"/admin/observation/action/accept?pks={obs}&next={back}", follow_redirects=False)
+    assert r.status_code == 302 and r.headers["location"] == "/admin/review?source=fdc&offset=0"
+    page = c.get(r.headers["location"]).text
+    assert "Accepted ENERC_KCAL 2290 kcal/100g · Hummus, commercial" in page
+    assert f'name="ids" value="{obs}"' in page and f"/admin/review/undo?next={back}" in page
+    assert "Undo" not in c.get(r.headers["location"]).text  # the toast is shown once
+    assert c.post(f"/admin/review/undo?next={back}", data={"ids": str(obs), "csrf": "wrong"}).status_code == 403
+    r = c.post(f"/admin/review/undo?next={back}", data={"ids": str(obs), "csrf": csrf(c)}, follow_redirects=False)
+    assert r.status_code == 303 and r.headers["location"] == "/admin/review?source=fdc&offset=0"
+    assert "Undone: 1 values back to pending" in c.get(r.headers["location"]).text
+    assert rows("select status from observation where id = :i", i=obs) == [{"status": "pending"}]
+    [logged] = rows("select \"by\", action, detail from admin_action")
+    assert (logged["by"], logged["action"], json.loads(logged["detail"])) == ("ops", "review-undo", {"observations": [obs], "reverted": 1})
+
+
+def test_accept_all_asks_for_confirmation_and_names_the_count_without_trusting_the_product_name():
+    from fooddb import ingest
+
+    name = '"><img src=x onerror=alert(1)>'
+    ingest.run("t", "good", [rec(name=name, values=HUMMUS)])
+    ingest.run("t", "typo", [rec(name=name, observed_at=datetime(2026, 6, 1, tzinfo=UTC), values=TYPO)])
+    page = admin().get("/admin/review").text
+    assert "Accept all 2" in page and "btn-outline-success" in page and "Accept all pending" not in page
+    assert "onclick='return confirm(\"Accept all 2 pending values of \\\"\\u003e\\u003cimg" in page
+    assert "<img src=x" not in page
+
+
+def test_the_review_column_names_its_snapshot_day_and_a_record_after_it_is_not_in_the_snapshot_yet():
+    from fooddb import ingest, snapshot
+
+    ingest_typo()
+    c = admin()
+    assert "Served now" in c.get("/admin/review").text  # no snapshot yet: the live values
+    snapshot.build()
+    page = c.get("/admin/review").text
+    assert f"Served in snapshot {snapshot.today()}" in page and "not in snapshot yet" not in page and ">none<" in page
+    ingest.run("t", "late", [rec(id="fdc:2", name="Late", values=TYPO)])
+    assert "not in snapshot yet" in c.get("/admin/review").text

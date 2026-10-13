@@ -4,7 +4,7 @@ call these functions."""
 
 from typing import Literal
 
-from sqlalchemy import func, select, text, update
+from sqlalchemy import Connection, func, select, text, update
 
 from fooddb import checks, resolve
 from fooddb.db import engine, merge_log, observation
@@ -129,6 +129,18 @@ def decide(observation_id: int, decision: Literal["accept", "reject"], by: str, 
                 raise LookupError(f"observation {observation_id} not found")
             raise NotPending(f"observation {observation_id} is already {status}")
     return dict(row)
+
+
+def undo(observation_ids: list[int], by: str, conn: Connection | None = None) -> int:
+    """Put the values `by` decided back to pending, those still accepted or rejected: a value someone else decided
+    since, or one already pending, stays as it is. Returns how many went back."""
+    if conn is None:
+        with engine().begin() as conn:
+            return undo(observation_ids, by, conn)
+    o = observation.c
+    return conn.execute(
+        update(observation).where(o.id.in_(observation_ids), o.reviewed_by == by, o.status.in_(tuple(STATUS.values())))
+        .values(status="pending", reviewed_by=None, reviewed_at=None, review_note=None)).rowcount
 
 
 # A record's home is the product ingest made for it: the source of its first logged merge.
