@@ -17,7 +17,7 @@ deployed stack, run it as `docker compose exec api fooddb …`, or on a stack th
 | `GET /v1/records/{record_id}` | The product that a source record belongs to, for example `fdc:9`. | `read` |
 | `GET /v1/snapshots` and `GET /v1/snapshots/{day}/export` | The current snapshot: its day and `built_at`. Export it as NDJSON. | `read` |
 | `GET /v1/dumps` and `GET /v1/dumps/{name}` | The monthly ODbL dump of the OFF layer. | none |
-| `GET /v1/review` and `POST /v1/review/{id}` | Read the review queue. Accept or reject a value. | `review` |
+| `GET /v1/review`, `GET /v1/review/facets` and `POST /v1/review/{id}` | Read the review queue (`source`, `check`, `offset`, `detail`). Count it per check and source. Accept or reject a value. | `review` |
 | `POST /v1/products/{id}/split` | Undo a wrong merge. | `review` |
 | `POST /v1/labels` and `GET /v1/labels/{task}` | Send a label photo. Read the state of its read. | `contribute` |
 | `POST /v1/brands/uploads` | Upload brand values with a label photo. | `contribute` |
@@ -130,7 +130,8 @@ self-hosted setup can leave the portal off: it needs the Stripe and Resend setti
 
 The MCP server has the same reads as the REST API, and calls the same functions. Its tools are
 `search_foods`, `get_product_by_barcode`, `get_food`, `get_record_product` and `health_report`,
-plus the review tools `review_queue` and `decide_review`, and `read_label` on stdio.
+plus the review tools `review_queue` (same `source`, `check`, `offset` and `detail` filters) and
+`decide_review`, and `read_label` on stdio.
 Each field carries its licence tag, as in REST. OFF data comes back only with `include_off: true`.
 
 Two transports:
@@ -248,6 +249,12 @@ curl -H "Authorization: Bearer $KEY" "$API/v1/review"  # values a failed check h
 curl -X POST "$API/v1/review/42" -H "Authorization: Bearer $KEY" -H 'content-type: application/json' \
      -d '{"decision": "reject", "by": "kirill", "note": "10x typo"}'
 ```
+
+`GET /v1/review` takes `source`, `check`, `offset` and `detail` (each record's latest values and a
+line per failed check); `GET /v1/review/facets` counts the queue per check and per source, so a
+slice can be chosen before it is paged. A decision is stored under `by`, plus the key's name when
+the two differ. `fooddb-review` wraps all of this for an agent — one stdlib-only file, the key in
+`FOODDB__REVIEW__KEY` — see [the README](../README.md#review-by-an-agent).
 
 The review queue is also in a browser at `$API/admin`. Sign in with an `admin` key. The
 landing page is a dashboard, and the menu has **Review**, **Platform** and **Customers** sections. API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`: it keys the stored key hashes and signs the
