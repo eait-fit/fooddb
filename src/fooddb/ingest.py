@@ -1,7 +1,7 @@
 """Shared write path for every fetcher: normalise, check, store observations."""
 
 from collections.abc import Iterable, Iterator
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields, replace
 from datetime import UTC, datetime
 from itertools import islice
 
@@ -82,7 +82,7 @@ def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> 
         ).scalar_one()
     n_foods = n_obs = 0
     try:
-        for chunk in _chunks(records, batch):
+        for chunk in _chunks((_clean(r) for r in records), batch):
             f, o = _write(chunk)
             n_foods, n_obs = n_foods + f, n_obs + o
         if n_foods == 0:
@@ -92,6 +92,21 @@ def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> 
         raise
     _finish(run_id, "done", n_foods, n_obs)
     return n_foods, n_obs
+
+
+def _clean(r: Record) -> Record:
+    # Postgres text and jsonb refuse NUL (0x00): a source can carry it in any string.
+    return replace(r, **{f.name: _strip_nul(getattr(r, f.name)) for f in fields(r)})
+
+
+def _strip_nul(v):
+    if isinstance(v, str):
+        return v.replace("\x00", "")
+    if isinstance(v, list):
+        return [_strip_nul(i) for i in v]
+    if isinstance(v, dict):
+        return {_strip_nul(k): _strip_nul(i) for k, i in v.items()}
+    return v
 
 
 def _write(records: list[Record]) -> tuple[int, int]:
