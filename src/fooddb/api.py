@@ -5,7 +5,6 @@ import base64
 import binascii
 import os
 from contextlib import asynccontextmanager
-from datetime import date
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
@@ -56,15 +55,8 @@ def _pids(sql: str, **params) -> list[int]:
         return list(conn.execute(text(sql), params).scalars())
 
 
-def _resolve(pids: list[int], include: str | None, snapshot: date | None) -> list[dict]:
-    try:
-        return resolve.products(pids, include, snapshot)
-    except resolve.NoSnapshot as e:
-        raise HTTPException(404, str(e))
-
-
-def _one(pids: list[int], include: str | None, what: str, snapshot: date | None = None) -> dict:
-    found = _resolve(pids, include, snapshot)
+def _one(pids: list[int], include: str | None, what: str) -> dict:
+    found = resolve.products(pids, include)
     if not found:
         raise HTTPException(404, f"{what} not found" + ("" if include == "off" else " in core; try include=off"))
     return found[0]
@@ -87,7 +79,6 @@ def healthz() -> JSONResponse:
 
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
-           snapshot: date | None = None,
            country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
                                        "matches, that country's sources rank first")) -> dict:
     # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
@@ -110,24 +101,24 @@ def search(q: str = Query(min_length=2), include: str | None = None, limit: int 
                limit :limit""",
             q=q, layers=resolve.layers_for(include), limit=limit, off_markets=countries.off_markets(cc),
         )
-    return {"items": _resolve(pids, include, snapshot)}
+    return {"items": resolve.products(pids, include)}
 
 
 @app.get("/v1/foods/{product_id}", dependencies=READ)
-def get_product(product_id: int, include: str | None = None, snapshot: date | None = None) -> dict:
-    return _one([product_id], include, "product", snapshot)
+def get_product(product_id: int, include: str | None = None) -> dict:
+    return _one([product_id], include, "product")
 
 
 @app.get("/v1/records/{record_id}", dependencies=READ)
-def get_record(record_id: str, include: str | None = None, snapshot: date | None = None) -> dict:
+def get_record(record_id: str, include: str | None = None) -> dict:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
     pids = _pids(f"select product_id from food where id = :id and layer = any(:layers) and {resolve.VISIBLE}",
                  id=record_id, layers=resolve.layers_for(include))
-    return _one(pids, include, "record", snapshot)
+    return _one(pids, include, "record")
 
 
 @app.get("/v1/products/{barcode}", dependencies=READ)
-def by_barcode(barcode: str, include: str | None = None, snapshot: date | None = None,
+def by_barcode(barcode: str, include: str | None = None,
                country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: order the "
                                            "products by that country's preferred sources")) -> dict:
     code = gtin.normalize(barcode)
@@ -144,7 +135,7 @@ def by_barcode(barcode: str, include: str | None = None, snapshot: date | None =
                group by product_id
                order by min({countries.rank_sql(cc)})""",
             code=code, layers=resolve.layers_for(include), off_markets=countries.off_markets(cc))
-    items = _resolve(pids, include, snapshot)
+    items = resolve.products(pids, include)
     if not items:
         raise HTTPException(404, "product not found" + ("" if include == "off" else " in core; try include=off"))
     return {"items": items}
@@ -323,35 +314,33 @@ def _include(include_off: bool) -> str | None:
 
 @mcp.tool()
 def search_foods(q: Annotated[str, Field(min_length=2)], limit: Annotated[int, Field(ge=1, le=100)] = 20,
-                 snapshot: date | None = None, include_off: bool = False,
+                 include_off: bool = False,
                  country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: among equal "
                                                       "name matches, that country's sources rank first")] = None
                  ) -> dict[str, Any]:
     """Search foods and products by name."""
-    return _tool(search, q=q, include=_include(include_off), limit=limit, snapshot=snapshot, country=country)
+    return _tool(search, q=q, include=_include(include_off), limit=limit, country=country)
 
 
 @mcp.tool()
-def get_product_by_barcode(barcode: str, snapshot: date | None = None,
-                           include_off: bool = False,
+def get_product_by_barcode(barcode: str, include_off: bool = False,
                            country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: order the "
                                                                "products by that country's preferred sources")] = None
                            ) -> dict[str, Any]:
     """Products with this barcode (GTIN-8, -12, -13 or -14)."""
-    return _tool(by_barcode, barcode, _include(include_off), snapshot, country)
+    return _tool(by_barcode, barcode, _include(include_off), country)
 
 
 @mcp.tool()
-def get_food(product_id: int, snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+def get_food(product_id: int, include_off: bool = False) -> dict[str, Any]:
     """One product by its fooddb id."""
-    return _tool(get_product, product_id, _include(include_off), snapshot)
+    return _tool(get_product, product_id, _include(include_off))
 
 
 @mcp.tool()
-def get_record_product(record_id: str, snapshot: date | None = None,
-                       include_off: bool = False) -> dict[str, Any]:
+def get_record_product(record_id: str, include_off: bool = False) -> dict[str, Any]:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
-    return _tool(get_record, record_id, _include(include_off), snapshot)
+    return _tool(get_record, record_id, _include(include_off))
 
 
 @mcp.tool()
