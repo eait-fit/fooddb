@@ -15,7 +15,7 @@ deployed stack, run it as `docker compose exec api fooddb …`, or on a stack th
 | `GET /v1/foods/{product_id}` | One product. | `read` |
 | `GET /v1/products/{barcode}` | Products for a GTIN. | `read` |
 | `GET /v1/records/{record_id}` | The product that a source record belongs to, for example `fdc:9`. | `read` |
-| `GET /v1/snapshots` and `GET /v1/snapshots/{day}/export` | List the snapshot days. Export one day as NDJSON. | `read` |
+| `GET /v1/snapshots` and `GET /v1/snapshots/{day}/export` | The current snapshot: its day and `built_at`. Export it as NDJSON. | `read` |
 | `GET /v1/dumps` and `GET /v1/dumps/{name}` | The monthly ODbL dump of the OFF layer. | none |
 | `GET /v1/review` and `POST /v1/review/{id}` | Read the review queue. Accept or reject a value. | `review` |
 | `POST /v1/products/{id}/split` | Undo a wrong merge. | `review` |
@@ -23,7 +23,7 @@ deployed stack, run it as `docker compose exec api fooddb …`, or on a stack th
 | `POST /v1/brands/uploads` | Upload brand values with a label photo. | `contribute` |
 | `GET /livez` and `GET /healthz` | Liveness and data freshness. `/healthz` answers 503 when a source is stale. | none |
 
-Add `?include=off` to get the OFF layer. Add `?snapshot=YYYY-MM-DD` to pin a day.
+Add `?include=off` to get the OFF layer.
 
 `/v1/foods` and `/v1/products/{barcode}` also take `?country=` (ISO 3166-1 alpha-2,
 case-insensitive): among results of comparable name similarity, records of that country's
@@ -86,17 +86,17 @@ Fineli, Frida, Matvaretabellen, MEXT and TFDA. See [data-licence.md](data-licenc
 A field is `null` when the record that names the product has no value for it. Without
 `include=off`, the same product has only `fdc:9`, and no field in it comes from Open Food Facts.
 
-## Snapshots and pins
+## The snapshot
 
 Fetchers write append-only observations per source record. Values that fail a check wait for
 review. Splink matches records into products. The nightly snapshot freezes each product's resolved
 values (the most trusted source for each field), and the API serves that snapshot.
 
-`?snapshot=YYYY-MM-DD` pins the values of one UTC day's snapshot for 30 days. A day is final when
-it is over: a pin on an earlier day always returns the same values. Today's snapshot can be rebuilt
-until midnight UTC, so a pin on today can change. A product that matching merged after the build
-keeps the values the snapshot froze, and a merged-away product id answers as its survivor. Record
-lists and names are always live.
+One snapshot exists, the current one: each build replaces it in one transaction, so a read never
+sees a half-built state. The raw history stays in `observation`. A product that matching merged
+after the build keeps the values the snapshot froze, and a merged-away product id answers as its
+survivor. Record lists and names are always live. The `snapshot` field of a product names the day
+its served values come from.
 
 ## Authentication
 
@@ -167,23 +167,22 @@ Claude Desktop, in `claude_desktop_config.json`:
 A consumer that keeps its own copy of the catalog (eait does) syncs from the snapshot export. It
 does not call the per-product endpoints. Customers may store what they fetch.
 
-1. **List the days.** `GET /v1/snapshots` returns each day, newest first, with `built_at`, a
-   product count and `final`. A day is final when it is over (UTC). Today's snapshot can still be
-   rebuilt, so sync only from a day where `final` is `true`.
-2. **Export the day.** `GET /v1/snapshots/{day}/export` returns NDJSON: one product per line, in
-   the same shape as `GET /v1/foods/{id}?snapshot={day}`, with a licence tag on each field. The
-   OFF layer (ODbL) is in the export only with `include=off`. Send `Accept-Encoding: gzip` for a
-   gzipped body.
-3. **Skip an unchanged day.** Keep the `ETag`. Send it back in `If-None-Match`, and the API
-   answers `304 Not Modified` with no body. A final day's ETag never changes.
-4. **Load it.** Replace the local copy with the lines of the new day in one transaction. A
-   product that is not in the export is not in that snapshot any more: it was merged into another
+1. **Read the current snapshot.** `GET /v1/snapshots` returns one item: the snapshot's day,
+   `built_at` and product count. Every build moves `built_at`, so sync when it changes.
+2. **Export it.** `GET /v1/snapshots/{day}/export` returns NDJSON: one product per line, in the
+   same shape as `GET /v1/foods/{id}`, with a licence tag on each field. Only the current
+   snapshot's day answers; any other day gets 404. The OFF layer (ODbL) is in the export only
+   with `include=off`. Send `Accept-Encoding: gzip` for a gzipped body.
+3. **Skip an unchanged snapshot.** Keep the `ETag`. Send it back in `If-None-Match`, and the API
+   answers `304 Not Modified` with no body. The ETag holds `built_at`, so it changes on a rebuild.
+4. **Load it.** Replace the local copy with the lines of the export in one transaction. A
+   product that is not in the export is not in the snapshot any more: it was merged into another
    product, or it has no values.
 
 ```bash
 curl "$API/v1/snapshots"
-curl -H 'Accept-Encoding: gzip' -o 2026-10-04.ndjson.gz "$API/v1/snapshots/2026-10-04/export?include=off"
-fooddb export --day 2026-10-04 --include-off --out 2026-10-04.ndjson.gz   # the same lines, from the database
+curl -H 'Accept-Encoding: gzip' -o snapshot.ndjson.gz "$API/v1/snapshots/2026-10-04/export?include=off"
+fooddb export --include-off --out snapshot.ndjson.gz   # the same lines, from the database
 ```
 
 The export is a read: it needs a `read` key when `FOODDB__BACKEND__REQUIRE_KEY_FOR_READS=true`.
@@ -273,8 +272,8 @@ curl -X POST "$API/v1/products/1234/split" -H "Authorization: Bearer $KEY" -H 'c
 
 The records go back to the product id they had before the merge, so old links to that id work
 again. When the log has no such id, they get a new product. Matching never joins the moved records
-and the remaining records again. Past snapshot days keep their values; today's values change at the
-next snapshot build. Agents call the MCP tool `split_product`. In the admin, open **Merge log** at
+and the remaining records again. The served values follow the split at the next snapshot build.
+Agents call the MCP tool `split_product`. In the admin, open **Merge log** at
 `/admin` and press **Split** on the merge row.
 
 `fooddb match train` estimates the Splink weights on the current data and saves the model to
@@ -291,7 +290,7 @@ rate limit.
 ```bash
 curl "$API/v1/dumps"                                    # manifests: day, products, size, sha256, licence
 curl -OJ "$API/v1/dumps/fooddb-off-odbl-2026-09-30.ndjson.gz"
-fooddb dump odbl --out dumps/                           # write one now, from the newest final day
+fooddb dump odbl --out dumps/                           # write one now, from the current snapshot
 ```
 
 The worker writes a dump on the 1st of each month at 04:00 UTC and keeps the newest 3. Use of the
@@ -317,4 +316,4 @@ dump comes with the ODbL attribution and share-alike obligation: see
 | `off-images` | Photo references (not photos) of OFF records with pending values, from OFF's API at 7.5 products a minute | – | manual (`fooddb run off-images`), for the Review page |
 | `match` | Splink product matching | – | after every fetch that added data |
 | `snapshot` | Nightly snapshot of resolved values | – | 02:30 daily |
-| `odbl-dump` | ODbL dump of the OFF layer, newest final day | ODbL | 04:00 on the 1st of each month |
+| `odbl-dump` | ODbL dump of the OFF layer, of the current snapshot | ODbL | 04:00 on the 1st of each month |

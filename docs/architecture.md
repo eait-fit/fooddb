@@ -66,10 +66,10 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:106`).
-  `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
-  snapshot to a file with the same code as the export endpoint (`cli.py:110`). `fooddb keys`
-  creates, lists and revokes API keys (`cli.py:131`). `fooddb dump odbl` writes the ODbL dump now
-  (`cli.py:155`).
+  `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes the
+  current snapshot to a file with the same code as the export endpoint (`cli.py:150`). `fooddb keys`
+  creates, lists and revokes API keys (`cli.py:190`). `fooddb dump odbl` writes the ODbL dump now
+  (`cli.py:173`).
 
 The worker reads label photos through the model port: OpenRouter on a server, or a local agent
 (see [Label reads](#label-reads)).
@@ -812,10 +812,9 @@ flowchart LR
    into `merge_log` with `by` and `note`.
 
 `resolve.canonical` follows `merged_into`. Thus a restored id answers as itself at once. The
-snapshot read collects values over the live `merged_into` links. After a split, the survivor's
-values of a past day are what that day froze for it, because the build wrote them under its id. The
-next build writes the values of both products for today. A pin on a past day for the restored id
-has no values, because that day froze them under the survivor.
+snapshot read collects values over the live `merged_into` links. After a split, the survivor keeps
+the values the build froze under its id until the next build, which writes the values of both
+products.
 
 The SQLAdmin view `merge-log` lists `merge_log`. Its split action splits the records of a `merge`
 row out of the product that the row's survivor answers as now (`admin.py:134`). Each `merge` row has a **Split** button, and the Actions menu splits several (`admin.py:177`).
@@ -868,26 +867,25 @@ has the source, the licence and the text to show (`resolve.py:107`).
 ### Snapshot
 
 `snapshot.build` writes the resolved values of all products for the current UTC day, in one
-transaction (`snapshot.py:17`). It writes two scopes: `core` (core layer only) and `all` (core and
-OFF). The build takes no day argument. It writes only today (`snapshot.py:13`). It ends with
+transaction (`snapshot.py:16`). It writes two scopes: `core` (core layer only) and `all` (core and
+OFF). The build takes no day argument. It writes only today (`snapshot.py:12`). It ends with
 `analyze snapshot_value`. Autovacuum analyzes the table a night later. Until then the planner does
-not know the size of the new day, and it joins the whole day for each read.
+not know the size of the new rows, and it joins the whole table for each read.
 
-A day is final when it is over. Until then, a second build on the same day replaces that day
-(`snapshot.py:22`). The nightly build and the rebuild after a fetcher's first data both write
-today. Thus a pin on today can change during the day, but a pin on an earlier day cannot. The build
-deletes days that are more than 30 days older than the new day (`snapshot.py:34`).
+One snapshot exists, the current one. A build deletes today's rows, writes the new ones, and then
+deletes every other day; the `snapshot_value.day` cascade removes their values (`snapshot.py:34`).
+The nightly build and the rebuild after a fetcher's first data both write today, inside one
+transaction, so a read never sees a half-built state. There is no `final` flag and no date pin.
 
-The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
-(`resolve.py:135`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:141`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:131`). Each of these fields carries the record that it is read from,
+The API reads values from the current snapshot (`resolve.py:195`). Before the first snapshot
+exists, the API resolves values live (`resolve.py:206`). The snapshot holds only values. Record
+lists, names and merges always come from the live tables (`resolve.py:111`). Each of these fields carries the record that it is read from,
 so its licence tag is correct for the record that is served now.
 
 `snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
 the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
 `merged_into` backwards. It collects the values of each product and of every product merged into
-it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:72`). The
+it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:81`). The
 snapshot keeps only the winner of each old id. Thus agreement counts those winners, not every value
 that the build saw. An approved label read always wins its old id, and `snapshot_value.approved`
 keeps that flag. Thus the override holds after a merge. The result is the value that the build would have frozen if the merge had come
@@ -1221,25 +1219,17 @@ sequenceDiagram
     participant A as api.by_barcode
     participant R as resolve.products
     participant P as Postgres
-    Cl->>A: GET /v1/products/{barcode}?include=off&snapshot=2026-10-04
+    Cl->>A: GET /v1/products/{barcode}?include=off
     A->>A: gtin.normalize(barcode)
     alt not a valid global GTIN
         A-->>Cl: 422
     end
     A->>P: product ids from food, gtin14 = code, layer in core and off
-    A->>R: products(pids, include, snapshot)
+    A->>R: products(pids, include)
     R->>P: follow product.merged_into to the survivor
-    alt snapshot is given
-        R->>P: does snapshot.day = 2026-10-04 exist?
-        alt no
-            R-->>A: NoSnapshot
-            A-->>Cl: 404 no snapshot for 2026-10-04
-        end
-    else snapshot is not given
-        R->>P: max(day) from snapshot
-    end
+    R->>P: max(day) from snapshot
     R->>P: records from food, always live
-    alt a snapshot day is known
+    alt a snapshot exists
         R->>P: which ids have merged-in ids?
         R->>P: values from snapshot_value, scope all, as stored
         R->>P: merge-follow and pick_sql, only for the ids with merged-in ids
@@ -1256,21 +1246,20 @@ sequenceDiagram
 
 `by_barcode` (`api.py:77`) does these steps:
 
-1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
-2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:107`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:111`). A
+1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:124`).
+2. It finds the products that have a record with this GTIN in the visible layers (`api.py:127`).
+   Without `include=off`, only the `core` layer is visible (`resolve.py:160`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:164`). A
    merged-away id thus answers as its survivor, with the survivor's id.
-4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:138`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:140`). The most
+4. It reads the day of the one current snapshot (`resolve.py:195`).
+5. It reads the records of each product from the live `food` table (`resolve.py:111`). The most
    trusted, newest record gives the name, brand, language, serving, category and flags.
-   Each barcode is tagged with the most trusted record that has it (`resolve.py:152`).
-6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:135`). The values include those of every product merged
-   into this one after the build (`resolve.py:72`). If no snapshot exists, it resolves live.
+   Each barcode is tagged with the most trusted record that has it (`resolve.py:127`).
+6. It reads the values from `snapshot_value` for the snapshot's day and scope. The scope is `all`
+   with `include=off`, else `core` (`resolve.py:195`). The values include those of every product
+   merged into this one after the build (`resolve.py:81`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
-   (`api.py:85`).
+   (`api.py:140`).
 
 The product shape (API version 0.3.0):
 
@@ -1304,11 +1293,11 @@ sequenceDiagram
     participant R as resolve.products
     participant P as Postgres
     Cl->>A: GET /v1/snapshots
-    A->>P: day, built_at, products from snapshot
-    A-->>Cl: days, newest first, final when the day is over
+    A->>P: the one row of snapshot: day, built_at, products
+    A-->>Cl: the current snapshot: day, built_at, products
     Cl->>A: GET /v1/snapshots/2026-10-04/export?include=off, If-None-Match
     A->>P: built_at of 2026-10-04
-    alt no snapshot for the day
+    alt 2026-10-04 is not the current snapshot
         A-->>Cl: 404
     else If-None-Match has the ETag
         A-->>Cl: 304, no body
@@ -1316,7 +1305,7 @@ sequenceDiagram
         A-->>Cl: 200 NDJSON stream, ETag, Last-Modified, gzip on request
         G->>P: begin repeatable read, server-side cursor on IDS_SQL
         loop one batch of 1000 product ids
-            G->>R: products(batch, include, day, conn)
+            G->>R: products(batch, include, conn)
             R->>P: records, snapshot values
             G-->>Cl: one JSON line per product
         end
@@ -1326,25 +1315,25 @@ sequenceDiagram
 The export router is in `export.py`. The app adds it with `include_router` and the `read`
 dependency (`api.py:31`). See [Authentication](#authentication).
 
-- `GET /v1/snapshots` lists the days, newest first (`export.py:34`). `final` is true when the day
-  is before today (UTC). `products` counts the products with values in the `all` scope at build
-  time, before later merges.
-- `GET /v1/snapshots/{day}/export` gets 404 for a day with no snapshot (`export.py:81`). The ETag
-  is weak and is made of the day, the scope and `built_at`. A final day is never rebuilt, so its
-  ETag never changes. A matching `If-None-Match` gets 304 (`export.py:87`).
+- `GET /v1/snapshots` lists the one current snapshot (`export.py:73`): its day, `built_at` and
+  `products`, the count of products with values in the `all` scope at build time, before later
+  merges. A consumer syncs when `built_at` changes.
+- `GET /v1/snapshots/{day}/export` gets 404 for every day but the current snapshot's
+  (`export.py:83`). The ETag is weak and is made of the day, the scope and `built_at`, so a rebuild
+  changes it. A matching `If-None-Match` gets 304 (`export.py:90`).
 - `export.products` reads in one repeatable-read transaction (`export.py:46`). A rebuild or a
   merge during the export does not change what it sends. `export.lines` makes one JSON line of
   each product. The ODbL dump uses `export.products` too.
-- `IDS_SQL` selects every product with values that day, and follows `merged_into` to the survivor
-  (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
-  (`export.py:53`). Each batch goes through `resolve.products`, so each line has the shape of
-  `GET /v1/foods/{id}?snapshot=`. The process never holds the full export in memory.
+- `IDS_SQL` selects every product with values in the snapshot, and follows `merged_into` to the
+  survivor (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
+  (`export.py:52`). Each batch goes through `resolve.products`, so each line has the shape of
+  `GET /v1/foods/{id}`. The process never holds the full export in memory.
 - The export reads about 7000 products per second, the same at 20,000 and at 100,000 products.
   `scripts/bench_export.py` measures this on a development database that it seeds with synthetic
   products ([#31](https://github.com/eait-fit/fooddb/issues/31)).
-- With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
-- `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
-  ends in `.gz` (`cli.py:110`).
+- With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:94`).
+- `fooddb export --include-off --out` writes the same lines to a file, gzipped when the name
+  ends in `.gz` (`cli.py:150`).
 
 ### `GET /v1/dumps`
 
@@ -1357,11 +1346,11 @@ sequenceDiagram
     participant Cl as Anyone
     participant A as dump.download
     Wk->>D: dump_odbl()
-    D->>D: newest day before today (UTC)
-    alt no final day
+    D->>D: the current snapshot's day
+    alt no snapshot yet
         D-->>Wk: None, nothing written
     else
-        loop each product of the day, include=off
+        loop each product of the snapshot, include=off
             E-->>D: product, as the export sends it
             D->>D: odbl(): keep off records and ODbL-tagged fields, skip products with no off record
         end
@@ -1381,8 +1370,8 @@ sequenceDiagram
 
 `dump.py` writes and serves the monthly ODbL dump of the Open Food Facts layer.
 
-- `dump.write` dumps the newest final day: the newest snapshot day before today (UTC)
-  (`dump.py:47`). It reads the products with `export.products(day, "off")`, the same generator as
+- `dump.write` dumps the current snapshot (`dump.py:53`). It reads the products with
+  `export.products(day, "off")`, the same generator as
   the export. Thus each line has the export's shape, with the parts that are not ODbL removed.
 - `dump.odbl` keeps a product only when it has an `off:` record (`dump.py:31`). It keeps the
   product id, the snapshot day and the `off:` record ids. It keeps each field, barcode and
@@ -1457,7 +1446,7 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 
 - `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
   Each value keeps its `licence` tag, as in REST.
-- `snapshot` pins a day, as `?snapshot=` does. `q` and `limit` have the same limits as REST.
+- `q` and `limit` have the same limits as REST.
 - A 404, 409 or 422 from the handler becomes an MCP tool error with the same message.
 - Over HTTP, the FastAPI lifespan runs the SDK's session manager. The route is stateless, so any
   API replica can answer any request.

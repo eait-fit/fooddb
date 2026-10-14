@@ -1,13 +1,12 @@
-"""Nightly snapshot: every product's resolved values, frozen per day, for fast reads and pinning."""
+"""Nightly snapshot: every product's resolved values, frozen, for fast reads. One snapshot only,
+the current one: each build replaces it inside the same transaction."""
 
-from datetime import UTC, date, datetime, timedelta
+from datetime import UTC, date, datetime
 
 from sqlalchemy import text
 
 from fooddb.db import engine
 from fooddb.resolve import values_sql
-
-KEEP_DAYS = 30
 
 
 def today() -> date:
@@ -15,8 +14,8 @@ def today() -> date:
 
 
 def build() -> int:
-    """(Re)build today's snapshot in a single transaction and drop days past retention.
-    Only today is ever written, so a day is final once it is over. Returns the number of products in it."""
+    """(Re)build today's snapshot in a single transaction and drop every other day. The one row in
+    `snapshot` is the snapshot the API and the export serve. Returns the number of products in it."""
     day = today()
     with engine().begin() as conn:
         conn.execute(text("delete from snapshot where day = :d"), {"d": day})
@@ -32,7 +31,8 @@ def build() -> int:
         n = conn.execute(text("select count(distinct product_id) from snapshot_value where day = :d and scope = 'all'"),
                          {"d": day}).scalar_one()
         conn.execute(text("update snapshot set products = :n where day = :d"), {"n": n, "d": day})
-        conn.execute(text("delete from snapshot where day < :cutoff"), {"cutoff": day - timedelta(days=KEEP_DAYS)})
+        # Only the current snapshot is kept: deleting the other days cascades their values away.
+        conn.execute(text("delete from snapshot where day <> :d"), {"d": day})
         conn.execute(text("analyze snapshot_value"))  # autovacuum lags a night: until then no read knows the new day's size
     return n
 

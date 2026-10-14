@@ -7,7 +7,6 @@ value.
 """
 
 import os
-from datetime import date
 
 from sqlalchemy import Connection, text
 
@@ -104,9 +103,6 @@ order by product_id, nutrient
 """
 
 
-class NoSnapshot(LookupError):
-    pass
-
 # A record shapes the product (name, barcode, category, flags) and is found by lookups only once one of
 # its values is accepted. A record with no observations at all has nothing to hold back.
 # One correlated lookup per record: written as exists-or-not-exists, the planner hashes the accepted
@@ -180,22 +176,19 @@ def canonical(pids: list[int], conn: Connection) -> list[int]:
     return list(dict.fromkeys(rows[p] for p in pids if p in rows))
 
 
-def products(pids: list[int], include: str | None, snapshot: date | None = None,
-             conn: Connection | None = None) -> list[dict]:
+def products(pids: list[int], include: str | None, conn: Connection | None = None) -> list[dict]:
     """Resolved products in the order given; a product with no visible record is left out.
 
-    Values come from the newest nightly snapshot (or the pinned `snapshot` day); live resolution
-    only while no snapshot has been built yet. Which records make up a product is always live.
-    ponytail: records and names are not snapshotted; pin them too if clients need full replay.
+    Values come from the current nightly snapshot; live resolution only while no snapshot has been
+    built yet. Which records make up a product is always live.
+    ponytail: records and names are not snapshotted.
     """
     if conn is None:
         with engine().connect() as conn:
-            return products(pids, include, snapshot, conn)
+            return products(pids, include, conn)
     pids = canonical(pids, conn)
     params = {"pids": pids, "layers": layers_for(include), "scope": "all" if include == "off" else "core"}
-    day = snapshot or conn.execute(text("select max(day) from snapshot")).scalar_one()
-    if snapshot and not conn.execute(text("select 1 from snapshot where day = :d"), {"d": snapshot}).first():
-        raise NoSnapshot(f"no snapshot for {snapshot.isoformat()}")
+    day = conn.execute(text("select max(day) from snapshot")).scalar_one()
     records = conn.execute(text(RECORDS_SQL), params).mappings().all()
     if day:
         merged = set(conn.execute(text(MERGED_SQL), params).scalars())

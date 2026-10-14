@@ -148,19 +148,17 @@ def status() -> None:
 
 @app.command()
 def export(
-    day: str = typer.Option(..., help="UTC day of the snapshot, YYYY-MM-DD"),
     include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)"),
     out: Path = typer.Option(..., help="NDJSON file, gzipped when the name ends in .gz"),
 ) -> None:
-    """Write one day's snapshot as NDJSON, one product per line: the same lines as the export endpoint."""
-    from datetime import date
-
+    """Write the current snapshot as NDJSON, one product per line: the same lines as the export endpoint."""
     from fooddb import export as ex
 
-    if ex.built_at(date.fromisoformat(day)) is None:
-        typer.echo(f"no snapshot for {day}", err=True)
+    snap = ex.current()
+    if snap is None:
+        typer.echo("no snapshot yet", err=True)
         raise typer.Exit(1)
-    chunks = ex.lines(date.fromisoformat(day), "off" if include_off else None)
+    chunks = ex.lines(snap["day"], "off" if include_off else None)
     with out.open("wb") as f:
         for chunk in ex.gzipped(chunks) if out.suffix == ".gz" else chunks:
             f.write(chunk)
@@ -173,13 +171,13 @@ app.add_typer(dump_app, name="dump")
 
 @dump_app.command("odbl")
 def dump_odbl(out: Path = typer.Option(None, help="directory; default: $FOODDB__BACKEND__DUMP_DIR, else ./dumps")) -> None:
-    """Write the ODbL dump of the Open Food Facts layer of the newest final snapshot day, with its manifest.
+    """Write the ODbL dump of the Open Food Facts layer of the current snapshot, with its manifest.
     Keeps the newest $FOODDB__BACKEND__DUMP_KEEP dumps (default 3) in the directory."""
     from fooddb import dump
 
     m = dump.write(out)
     if m is None:
-        typer.echo("no final snapshot day yet", err=True)
+        typer.echo("no snapshot yet", err=True)
         raise typer.Exit(1)
     typer.echo(f"wrote {m['name']}: {m['products']} products, {m['size']} bytes")
 
@@ -275,4 +273,4 @@ def search(query: str, limit: int = typer.Option(5, min=1, max=100), include_off
     """Search foods by name."""
     from fooddb.api import search as foods
 
-    typer.echo(json.dumps(foods(q=query, include="off" if include_off else None, limit=limit, snapshot=None, country=country), default=str, indent=2))
+    typer.echo(json.dumps(foods(q=query, include="off" if include_off else None, limit=limit, country=country), default=str, indent=2))

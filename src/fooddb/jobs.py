@@ -93,7 +93,7 @@ def dump_odbl() -> None:
     from fooddb import dump
 
     m = dump.write()
-    logger.info("odbl dump: " + ("no final snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
+    logger.info("odbl dump: " + ("no snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
 
 
 def prune_request_log() -> None:

@@ -119,11 +119,11 @@ its ingredients' licences, and its `attribution` is the union of the sources the
 
 ### Snapshot and serving
 
-- A nightly snapshot, versioned and immutable. The API serves the latest one;
-  `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. Built: one snapshot per UTC day. A day is
-  final when it is over. Until then, a rebuild on the same day replaces it. A merge after a build
-  keeps the values that the build froze. Records and names are read live, not frozen. Built: the
-  export of one day as NDJSON, for consumers that keep a local copy. Built
+- One nightly snapshot, replaced in full by each build. The API serves it; there are no date pins
+  and no kept days — the raw history stays in `observation`. Built: one snapshot per UTC night, in
+  one transaction, so a read never sees a half-built state. A merge after a build keeps the values
+  that the build froze. Records and names are read live, not frozen. Built: the export of the
+  snapshot as NDJSON, for consumers that keep a local copy. Built
   ([#31](https://github.com/eait-fit/fooddb/issues/31)): the export reads about 7000 products per
   second, the same at 20,000 and at 100,000 products. At that rate the monthly ODbL dump of the full
   OFF layer fits in the worker's task limit. Not built: the eait job that loads it.

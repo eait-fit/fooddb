@@ -63,7 +63,7 @@ fooddb publishes the ODbL part of its data each month, as the ODbL requires:
 - `GET /v1/dumps/{name}` downloads one dump: gzipped NDJSON, one product per line.
 - These routes need no API key, also when reads need one. They count against the rate limit.
 
-A dump holds the products of the newest final snapshot day that have an Open Food Facts record.
+A dump holds the products of the current snapshot that have an Open Food Facts record.
 For each product, it keeps the fooddb product id, the `off:` record ids, and each field and value
 tagged `ODbL-1.0`. It holds no other value. The fooddb product id links a line to the API.
 

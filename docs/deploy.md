@@ -330,10 +330,10 @@ A service that keeps its own copy of the catalog reads the snapshot export. The 
 
 - The export of a large day is long. With the full OFF dump it has about 4 million lines. Give the
   consumer's HTTP client a long read timeout. Caddy streams the response and needs no change.
-- Run the consumer's sync after the nightly snapshot (02:30 UTC). Sync the newest day where
-  `final` is `true`: that is yesterday's snapshot.
-- To make a file instead, run `docker compose exec api fooddb export --day 2026-10-04 --out
-  /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
+- Run the consumer's sync after the nightly snapshot (02:30 UTC). Sync when the snapshot's
+  `built_at` (from `GET /v1/snapshots`, or the export's ETag) changes.
+- To make a file instead, run `docker compose exec api fooddb export --out
+  /tmp/snapshot.ndjson.gz`, then copy the file out of the container.
 - The export is a read. Give the consumer its own `read` key, with a `--rate-limit` that is
   sufficient for its sync. See [API keys](#api-keys).
 
@@ -355,7 +355,7 @@ A read below `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` waits for review in full.
 ## ODbL dumps
 
 The worker writes the ODbL dump of the Open Food Facts layer on the 1st of each month, at 04:00
-UTC. It dumps the newest final snapshot day to the `fooddb_dumps` volume, and keeps the newest
+UTC. It dumps the current snapshot to the `fooddb_dumps` volume, and keeps the newest
 `FOODDB__BACKEND__DUMP_KEEP` dumps. The API serves them at `/v1/dumps` with no API key, also when
 reads need one. The ODbL requires this. [data-licence.md](data-licence.md) has the terms.
 
