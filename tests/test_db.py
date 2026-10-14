@@ -268,6 +268,33 @@ def test_full_batch_with_many_nutrients_stays_under_postgres_parameter_limit():
     assert ingest.run("t", "wide", records) == (500, 500 * 25)
 
 
+def test_nul_bytes_are_stripped_from_every_string_before_a_record_is_stored():
+    # Postgres text and jsonb both refuse NUL: one OFF product carrying ^@ killed the dump at 2.88M.
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    assert ingest.run("t", "nul", [rec(
+        name="Hum\x00mus, commercial", brand="Ac\x00me", lang="d\x00e",
+        serving_text="2 EL (30 g\x00)", categories=["en:bev\x00erages"],
+        labels=["en:organic\x00"], markets=["en:german\x00y"], extra_flags=["fla\x00g"],
+        images={"front": {"lang": "i\x00t", "rev": 12}},
+    )]) == (1, 2)
+    p = product("fdc:1")
+    assert p["name"]["value"] == "Hummus, commercial"
+    assert p["brand"]["value"] == "Acme"
+    assert p["lang"]["value"] == "de"
+    assert p["serving_text"]["value"] == "2 EL (30 g)"
+    assert p["category"]["value"] == "beverages"  # the tag only matches once clean
+    assert p["flags"]["value"] == ["flag"]
+    with engine().connect() as conn:
+        row = dict(conn.execute(
+            text("select markets, images from food where id = 'fdc:1'")).mappings().one())
+    assert row["markets"] == ["en:germany"]
+    assert row["images"] == {"front": {"lang": "it", "rev": 12}}
+
+
 def test_values_failing_checks_wait_for_review_while_the_last_good_ones_serve():
     from fooddb import ingest
 
