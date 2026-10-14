@@ -9,7 +9,7 @@ What fooddb does that other food-data options do not, and where it is weaker. Th
 - **Automatic checks and a review queue.** Energy against the Atwater macros, sugars over carbohydrate and five more checks ([`checks.py`](../src/fooddb/checks.py)) hold a bad value back for a human.
 - **Entity matching across sources.** [Splink](https://github.com/moj-analytical-services/splink) joins records of the same product, and a reviewer can split a wrong merge for good.
 - **Licence-clean layers.** Government data stays in the core layer, and OFF data stays in its own ODbL layer, so the core is not forced under ODbL. Also, fooddb publishes the OFF layer as a monthly ODbL dump.
-- **Reproducible daily snapshots.** Pin any of the last 30 days, or sync a local read-only copy from the NDJSON export. You may store what you fetch.
+- **A nightly snapshot you can mirror.** Sync a local read-only copy from the NDJSON export; its `built_at` and ETag say when it changed. You may store what you fetch.
 - **REST, MCP and CLI from one database**, in one image, in about 430 MB of RAM. The production stack of API, worker and Postgres 18 runs on one small Hetzner Cloud VM.
 
 ## How it compares
