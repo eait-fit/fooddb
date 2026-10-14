@@ -5,7 +5,10 @@ with their grams in the raw mix, a cooked yield (the cooked dish's weight divide
 a water-loss factor below 1, a gain above) and the citation of its formulation. `compute` weighs
 each ingredient's newest accepted per-100 g values into the cooked dish's; `build` stores them
 through the normal ingest path with `review_all`, so every value waits in the review queue and a
-recipe stays invisible until a person accepts it once.
+recipe stays invisible until a person accepts it once. The same build sweeps after itself: a
+record's older pending rows are rejected once a newer observation of the nutrient exists, and a
+record whose slug left RECIPES is retired — queue rejected, served nutrients withdrawn — so nothing
+stays pending or orphaned.
 
 One recipe makes two records on one product (`ingest.Record.group`): `recipe:<slug>` with the
 English name the eait matcher keys on, `recipe:<slug>.ru` with the Russian one. Both hold the same
@@ -25,12 +28,14 @@ import json
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
 
+from loguru import logger
 from sqlalchemy import text
 
 from fooddb import ingest
 from fooddb.db import engine
 
 SOURCE = "recipe"
+REVIEWER = "fooddb:recipes"  # the by-line the build's own sweep writes on the rows it decides
 MIN_COVERAGE = 0.9  # a nutrient is computed when ingredients with a stated value make ≥90 % of the raw mix
 OUTLIER_FLAG = "recipe-kcal-outside-band"
 # Computed values keep ~6 significant digits: that is far beyond what a formulation justifies, and a value
@@ -242,10 +247,15 @@ def build(recipes: tuple[Recipe, ...] = RECIPES) -> dict:
                 values.setdefault(row["food_id"], {})[row["nutrient"]] = row["value"]
     at = datetime.now(UTC)
     records = []
+    uncomputable = {}
     for r in recipes:
         missing = [i.record for i in r.ingredients if not values.get(i.record)]
         if missing:
-            continue  # an ingredient never loaded or still pending: the recipe is skipped, see report()
+            # An ingredient never loaded or still pending: the recipe is skipped, loudly — it must
+            # not vanish silently (see report() for the same list, readable).
+            logger.warning(f"recipe {r.slug} skipped: no accepted values for {', '.join(missing)}")
+            uncomputable[r.slug] = missing
+            continue
         licence = max((meta[i.record]["licence"] for i in r.ingredients),
                       key=lambda lic: _rank(lic))
         found, _dropped = compute(r, values)
@@ -255,11 +265,51 @@ def build(recipes: tuple[Recipe, ...] = RECIPES) -> dict:
                 id=f"recipe:{r.slug}{suffix}", source=SOURCE, layer="core", licence=licence,
                 name=name, lang=lang, serving_g=r.serving_g, values=found, observed_at=at,
                 categories=["recipe:dish"], extra_flags=list(flags), review_all=True, group=r.slug))
-    if not records:
-        return {"recipes": 0, "skipped": len(recipes), "foods": 0, "observations": 0}
-    foods, obs = ingest.run(SOURCE, registry_ref(), records)
-    return {"recipes": len(records) // 2, "skipped": len(recipes) - len(records) // 2,
-            "foods": foods, "observations": obs}
+    foods = obs = 0
+    if records:
+        foods, obs = ingest.run(SOURCE, registry_ref(), records)
+    return {"recipes": len(records) // 2, "skipped": len(uncomputable), "uncomputable": uncomputable,
+            "foods": foods, "observations": obs} | _sweep(at)
+
+
+def _sweep(at: datetime) -> dict:
+    """Nothing pending or orphaned after a build. A recipe record whose slug left RECIPES is retired:
+    its pending values are rejected and every nutrient it still serves is withdrawn by a null
+    observation — the convention VALUES_SQL reads — so no orphan keeps serving. And only the newest
+    values of a live recipe ever wait for review: an older pending row is rejected once a newer
+    observation of the same nutrient exists."""
+    live = {r.slug for r in RECIPES}
+    with engine().begin() as conn:
+        retired = sorted(conn.execute(text(
+            "select id from food where id like 'recipe:%'")).scalars())
+        retired = [i for i in retired if i.removeprefix("recipe:").removesuffix(".ru") not in live]
+        if retired:
+            conn.execute(text(
+                "update observation set status = 'rejected', reviewed_by = :by, reviewed_at = now(), "
+                "review_note = 'recipe retired' where status = 'pending' and food_id = any(:ids)"),
+                {"by": REVIEWER, "ids": retired})
+            conn.execute(text(WITHDRAW_SQL), {"by": REVIEWER, "ids": retired, "at": at})
+        superseded = conn.execute(text(
+            "update observation o set status = 'rejected', reviewed_by = :by, reviewed_at = now(), "
+            "review_note = :note where o.food_id like 'recipe:%' and o.status = 'pending' and exists ("
+            "select 1 from observation n where n.food_id = o.food_id and n.nutrient = o.nutrient "
+            "and (n.observed_at, n.id) > (o.observed_at, o.id))"),
+            {"by": REVIEWER, "note": f"superseded by recipe rebuild {registry_ref()}"}).rowcount
+    return {"retired": retired, "superseded": superseded}
+
+
+# For each nutrient a retired record still serves (its newest accepted value is not null), store a
+# newer accepted null — the same withdrawal ingest writes when a source drops a field.
+WITHDRAW_SQL = """
+insert into observation (food_id, nutrient, value_per_100, unit, basis, status, source, licence,
+                         observed_at, reviewed_by, reviewed_at, review_note)
+select food_id, nutrient, null, unit, basis, 'accepted', source, licence,
+       :at, :by, now(), 'recipe retired'
+from (select distinct on (food_id, nutrient) food_id, nutrient, unit, basis, source, licence, value_per_100
+      from observation where food_id = any(:ids) and status = 'accepted'
+      order by food_id, nutrient, observed_at desc, id desc) newest
+where value_per_100 is not null
+"""
 
 
 def _rank(licence: str) -> int:
