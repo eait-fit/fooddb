@@ -64,51 +64,52 @@ RECIPES: tuple[Recipe, ...] = (
     Recipe("plov", "Plov", "Плов",
            "fooddb editorial: Uzbek-style plov — rice, lamb, carrot and onion fried in oil, then steamed with "
            "water; ~0.88 of the raw mix survives as the served dish (evaporation past the rice's uptake)",
-           (I("bls:C352000", 250), I("bls:U807000", 200), I("bls:G620100", 150), I("fdc:170000", 100),
+           (I("bls:C352000", 250), I("bls:U807000", 200), I("bls:G620100", 150), I("bls:G480100", 100),
             I("bls:Q320000", 80), I("ciqual:18066", 450), I("ciqual:11017", 8), I("bls:G490100", 10)),
            cooked_yield=0.88, kcal_band=(140, 260), serving_g=300),
     Recipe("beshbarmak", "Beshbarmak", "Бешбармак",
            "fooddb editorial: boiled fatty mutton and lamb over boiled noodle sheets with onion and a ladle "
            "of broth — the Kazakh serving, nothing evaporates once plated",
-           (I("bls:U856132", 200), I("bls:U867132", 200), I("bls:E432032", 400), I("fdc:170000", 80),
+           (I("bls:U856132", 200), I("bls:U867132", 200), I("bls:E432032", 400), I("bls:G480100", 80),
             I("ciqual:18066", 120)),
            cooked_yield=1.0, kcal_band=(140, 260), serving_g=350),
     Recipe("manty", "Manty", "Манты",
            "fooddb editorial: steamed lamb dumplings — unleavened dough (flour, water, egg) around minced lamb "
            "with onion and tail fat (mutton tallow); steaming loses ~10 % of the raw weight",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 7),
-            I("bls:U807000", 150), I("bls:Q880000", 30), I("fdc:170000", 100)),
+            I("bls:U807000", 150), I("bls:Q880000", 30), I("bls:G480100", 100)),
            cooked_yield=0.9, kcal_band=(170, 280), serving_g=250),
     Recipe("pelmeni", "Pelmeni", "Пельмени",
            "fooddb editorial: boiled dumplings — unleavened dough around mixed beef-pork mince with onion; "
            "boiled dumplings take up a little water, so the cooked weight slightly exceeds the raw one",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 7),
-            I("bls:U050100", 250), I("fdc:170000", 60)),
+            I("bls:U050100", 250), I("bls:G480100", 60)),
            cooked_yield=1.05, kcal_band=(170, 270), serving_g=200),
     Recipe("vareniki", "Vareniki, potato filling", "Вареники с картофелем",
            "fooddb editorial: boiled dumplings — unleavened dough around mashed boiled potato with onion "
            "fried in butter",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 5),
-            I("bls:K110132", 250), I("fdc:170000", 50), I("bls:Q6A4000", 15)),
+            I("bls:K110132", 250), I("bls:G480100", 50), I("bls:Q6A4000", 15)),
            cooked_yield=1.02, kcal_band=(130, 220), serving_g=250),
     Recipe("syrniki", "Syrniki", "Сырники",
-           "fooddb editorial: fried curd fritters — tvorog (quark, 40 % fat in dry matter ≈ 9 % fat tvorog) "
-           "with egg, a little flour and sugar, fried in sunflower oil; ~10 % of the raw weight goes as steam",
-           (I("bls:M713500", 400), I("bls:E111100", 50), I("bls:C214200", 60), I("bls:S111000", 30),
-            I("ciqual:11017", 1), I("bls:Q320000", 15)),
-           cooked_yield=0.9, kcal_band=(190, 280), serving_g=180),
+           "fooddb editorial: fried curd fritters — tvorog (the pressed quark mix of the tvorog recipe: "
+           "450 g quark 20 % + 113 g quark 40 % press to ≈400 g once the whey leaves) with egg, a little "
+           "flour and sugar, fried in sunflower oil; ~10 % of the raw weight goes as steam",
+           (I("bls:M713300", 450), I("bls:M713500", 113), I("bls:E111100", 50), I("bls:C214200", 60),
+            I("bls:S111000", 30), I("ciqual:11017", 1), I("bls:Q320000", 15)),
+           cooked_yield=0.696, kcal_band=(190, 280), serving_g=180),
     Recipe("borscht", "Borscht", "Борщ",
            "fooddb editorial: beet soup on beef — beets, cabbage and potato with carrot and onion fried in "
            "sunflower oil, tomato paste, simmered; ~5 % of the pot evaporates",
            (I("ciqual:18066", 600), I("bls:U184100", 120), I("bls:G613100", 150), I("bls:G342100", 100),
-            I("bls:K110100", 150), I("bls:G620100", 50), I("fdc:170000", 50), I("bls:R160000", 20),
+            I("bls:K110100", 150), I("bls:G620100", 50), I("bls:G480100", 50), I("bls:R160000", 20),
             I("bls:Q320000", 15), I("ciqual:11017", 6)),
            cooked_yield=0.95, kcal_band=(35, 80), serving_g=300),
     Recipe("shchi", "Shchi", "Щи",
            "fooddb editorial: cabbage soup on beef — cabbage and potato with carrot and onion fried in "
            "sunflower oil, a spoon of tomato paste, simmered; ~5 % of the pot evaporates",
            (I("ciqual:18066", 600), I("bls:U184100", 120), I("bls:G342100", 200), I("bls:K110100", 150),
-            I("bls:G620100", 40), I("fdc:170000", 50), I("bls:R160000", 15), I("bls:Q320000", 10),
+            I("bls:G620100", 40), I("bls:G480100", 50), I("bls:R160000", 15), I("bls:Q320000", 10),
             I("ciqual:11017", 6)),
            cooked_yield=0.95, kcal_band=(30, 70), serving_g=300),
     Recipe("olivier", "Olivier salad", "Оливье",
@@ -118,10 +119,10 @@ RECIPES: tuple[Recipe, ...] = (
             I("bls:G890902", 100), I("bls:W236000", 150), I("ciqual:11054", 120)),
            cooked_yield=1.0, kcal_band=(160, 260), serving_g=150),
     Recipe("kurt", "Kurt", "Курт",
-           "fooddb editorial: salted dried strained yogurt — Greek-style yogurt dried with salt to ~35 % of "
-           "its weight",
-           (I("ciqual:19860", 1000), I("ciqual:11017", 20)),
-           cooked_yield=0.35, kcal_band=(200, 400), serving_g=50),
+           "fooddb editorial: salted sour-milk curd strained and dried hard — quark 20 % with salt to ~30 % "
+           "of the raw weight; the moisture is an assumption: kurt ranges from soft to stone-dry",
+           (I("bls:M713300", 1000), I("ciqual:11017", 20)),
+           cooked_yield=0.30, kcal_band=(280, 420), serving_g=50),
     Recipe("kumys", "Kumys", "Кумыс",
            "fooddb editorial: fermented mare's milk, modelled as mare's milk — fermentation moves part of the "
            "lactose to lactic acid and ~1–2 % alcohol that the model does not add; mass is nearly unchanged",
@@ -141,19 +142,19 @@ RECIPES: tuple[Recipe, ...] = (
            "fooddb editorial: noodle soup — hand-pulled egg noodles under beef with pepper, carrot, onion, "
            "garlic and tomato paste fried in oil, water to the serving broth",
            (I("bls:E432000", 150), I("bls:U184100", 150), I("bls:G543100", 80), I("bls:R160000", 20),
-            I("bls:G620100", 50), I("fdc:170000", 60), I("bls:G490100", 5), I("bls:Q320000", 20),
+            I("bls:G620100", 50), I("bls:G480100", 60), I("bls:G490100", 5), I("bls:Q320000", 20),
             I("ciqual:18066", 500)),
            cooked_yield=0.95, kcal_band=(70, 140), serving_g=350),
     Recipe("samsa", "Samsa", "Самса",
            "fooddb editorial: baked pastry — butter dough around minced lamb with onion and tail fat; baking "
            "loses ~20 % of the raw weight",
            (I("bls:C214200", 200), I("ciqual:18066", 90), I("bls:Q6A4000", 30), I("ciqual:11017", 7),
-            I("bls:U807000", 150), I("bls:Q880000", 40), I("fdc:170000", 100)),
+            I("bls:U807000", 150), I("bls:Q880000", 40), I("bls:G480100", 100)),
            cooked_yield=0.8, kcal_band=(240, 360), serving_g=150),
     Recipe("shashlik", "Shashlik, pork", "Шашлык из свинины",
            "fooddb editorial: pork neck marinated with onion and vinegar, grilled — the skewer loses fat and "
            "juice to ~62 % of the raw weight",
-           (I("bls:U632100", 400), I("fdc:170000", 60), I("bls:R121000", 20), I("ciqual:11017", 6)),
+           (I("bls:U632100", 400), I("bls:G480100", 60), I("bls:R121000", 20), I("ciqual:11017", 6)),
            cooked_yield=0.62, kcal_band=(190, 340), serving_g=250),
     Recipe("blini", "Blini", "Блины",
            "fooddb editorial: thin milk pancakes — batter of flour, milk, egg, sugar and butter, fried; the "
@@ -166,15 +167,16 @@ RECIPES: tuple[Recipe, ...] = (
            (I("bls:C327000", 100), I("ciqual:18066", 220), I("bls:Q6A4000", 15), I("ciqual:11017", 2)),
            cooked_yield=0.98, kcal_band=(100, 160), serving_g=200),
     Recipe("tvorog", "Tvorog", "Творог",
-           "fooddb editorial: tvorog is the same fresh curd cheese as German Speisequark; the common ~9 % fat "
-           "tvorog is BLS's 40 % fat-in-dry-matter band",
-           (I("bls:M713500", 1000),),
-           cooked_yield=1.0, kcal_band=(120, 200), serving_g=200),
+           "fooddb editorial: tvorog is pressed harder than Speisequark, so whey leaves — 800 g quark 20 % "
+           "+ 200 g quark 40 % pressed to 71 % of the raw weight lands on 9 % fat tvorog (GOST 31453): "
+           "≈ P 16.8, F 9.0, C 4.1, ~169 kcal",
+           (I("bls:M713300", 800), I("bls:M713500", 200)),
+           cooked_yield=0.71, kcal_band=(140, 200), serving_g=200),
     Recipe("chebureki", "Chebureki", "Чебуреки",
            "fooddb editorial: deep-fried meat pasties — unleavened dough around minced lamb with onion, fried "
            "in sunflower oil",
            (I("bls:C214200", 200), I("ciqual:18066", 90), I("ciqual:11017", 5), I("bls:U807000", 150),
-            I("fdc:170000", 80), I("bls:Q320000", 40)),
+            I("bls:G480100", 80), I("bls:Q320000", 40)),
            cooked_yield=0.85, kcal_band=(220, 340), serving_g=150),
 )
 
