@@ -16,7 +16,9 @@ WORKDIR /app
 COPY --from=build --chown=fooddb /app /app
 # The ODbL dumps and label photo volumes mount here; a fresh named volume takes this owner.
 RUN install -d -o fooddb /app/dumps /app/photos
-ENV PATH=/app/.venv/bin:$PATH PYTHONUNBUFFERED=1 FOODDB__BACKEND__API_HOST=0.0.0.0 FOODDB__BACKEND__API_PORT=8000
+# The sha /version reports; the release workflow and `make update` pass it as a build arg.
+ARG GIT_SHA=
+ENV PATH=/app/.venv/bin:$PATH PYTHONUNBUFFERED=1 FOODDB__BACKEND__API_HOST=0.0.0.0 FOODDB__BACKEND__API_PORT=8000 FOODDB__BACKEND__GIT_SHA=${GIT_SHA}
 USER fooddb
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s CMD python -c "import urllib.request,os; urllib.request.urlopen(f'http://127.0.0.1:{os.environ[\"FOODDB__BACKEND__API_PORT\"]}/livez', timeout=4)"

@@ -77,6 +77,12 @@ def healthz() -> JSONResponse:
     return JSONResponse(r, status_code=200 if r["ok"] else 503)
 
 
+@app.get("/version")
+def version() -> dict:
+    """Code version and, when the image was built with a GIT_SHA build arg, the git sha it was built from."""
+    return {"version": app.version, "sha": os.environ.get("FOODDB__BACKEND__GIT_SHA") or None}
+
+
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
            country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "

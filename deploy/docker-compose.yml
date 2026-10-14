@@ -4,7 +4,10 @@ name: fooddb
 
 x-app: &app
   image: ${FOODDB__DEPLOY__IMAGE:-fooddb:latest}
-  build: ..
+  build:
+    context: ..
+    args:
+      GIT_SHA: ${GIT_SHA:-}
   restart: unless-stopped
   environment:
     FOODDB__BACKEND__DATABASE_URL: postgresql://fooddb:${FOODDB__BACKEND__POSTGRES_PASSWORD:?set FOODDB__BACKEND__POSTGRES_PASSWORD in deploy/.env}@db:5432/fooddb
