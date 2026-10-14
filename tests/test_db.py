@@ -800,7 +800,8 @@ def test_an_accepted_value_is_served_from_the_next_snapshot(monkeypatch):
     r = client(key("review")).post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester", "note": "label says so"})
     assert r.status_code == 200, r.text
     d = r.json()
-    assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester", "label says so")
+    assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester (key test-review)",
+                                                               "label says so")
     assert d["reviewed_at"]
     assert kcal("fdc:1") == 229  # the snapshot holds until the next build
     build_on(monkeypatch, "2026-10-02")
@@ -831,6 +832,53 @@ def test_review_decisions_are_final_and_validated():
     assert c.post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester"}).status_code == 200
     assert c.post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).status_code == 409
     assert c.post("/v1/review/999999", json={"decision": "accept", "by": "tester"}).status_code == 404
+
+
+def test_the_review_queue_filters_pages_and_details_for_agents():
+    ingest_typo()
+    c = client(key("review"))
+    [item] = c.get("/v1/review").json()["items"]
+    assert "why" not in item and "values" not in item  # detail is opt-in
+    assert c.get("/v1/review", params={"source": "recipe"}).json() == {"items": []}
+    assert c.get("/v1/review", params={"check": "negative-value"}).json() == {"items": []}
+    assert c.get("/v1/review", params={"offset": 1}).json() == {"items": []}
+    [item] = c.get("/v1/review", params={"source": "fdc", "check": "sugars-over-carbs",
+                                        "detail": "true", "limit": 5}).json()["items"]
+    assert item["record"] == "fdc:1" and "sugars-over-carbs" in item["why"]
+    assert any(v["nutrient"] == "SUGAR" and v["status"] == "pending" for v in item["values"])
+
+
+def test_review_facets_count_the_queue_per_check_and_source():
+    ingest_typo()
+    assert client().get("/v1/review/facets").status_code == 401
+    c = client(key("review"))
+    f = c.get("/v1/review/facets").json()
+    assert f["total"] == 1 and f["sources"] == {"fdc": 1}
+    assert all(f["checks"][k] == 1 for k in ("energy-mismatch", "sugars-over-carbs"))
+    assert c.get("/v1/review/facets", params={"source": "recipe"}).json()["total"] == 0
+    f = c.get("/v1/review/facets", params={"check": "sugars-over-carbs"}).json()
+    assert f["total"] == 1 and f["sources"] == {"fdc": 1}  # a check filter still counts all its sources
+
+
+def test_a_decision_under_another_name_records_the_key_name_too():
+    ingest_typo()
+    obs = pending_id("SUGAR")
+    r = client(key("review", name="agent-1")).post(f"/v1/review/{obs}",
+                                                 json={"decision": "accept", "by": "kirill"})
+    assert r.status_code == 200 and r.json()["reviewed_by"] == "kirill (key agent-1)"
+    obs = pending_id("ENERC_KCAL")
+    r = client(key("review", name="agent-2")).post(f"/v1/review/{obs}",
+                                                  json={"decision": "reject", "by": "agent-2"})
+    assert r.json()["reviewed_by"] == "agent-2"  # by names the key: stored once
+
+
+def test_mcp_review_queue_filters_and_details_like_the_api():
+    ingest_typo()
+    assert call("review_queue", source="recipe").structured_content["items"] == []
+    [item] = call("review_queue", source="fdc", check="sugars-over-carbs",
+                  detail=True).structured_content["items"]
+    assert "sugars-over-carbs" in item["why"] and item["values"]
+    assert call("review_queue", offset=1).structured_content["items"] == []
 
 
 def test_mcp_agents_work_the_same_review_queue():

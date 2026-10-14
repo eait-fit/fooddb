@@ -21,6 +21,7 @@ dependencies = [
 
 [project.scripts]
 fooddb = "fooddb.cli:app"
+fooddb-review = "fooddb.reviewcli:main"
 
 [build-system]
 requires = ["hatchling"]

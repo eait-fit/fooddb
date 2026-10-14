@@ -53,6 +53,28 @@ server: `claude mcp add --transport http fooddb http://127.0.0.1:8000/mcp`.
 You can also use the hosted instance at [food-api.eait.fit](https://food-api.eait.fit). Get a key
 in its [customer portal](https://food-api.eait.fit/portal).
 
+## Review by an agent
+
+A value that fails a check waits in the review queue — the queue `/admin/review` shows a person.
+An agent can work it autonomously over the HTTP API with `fooddb-review`, one stdlib-only Python
+file (`src/fooddb/reviewcli.py`) that runs anywhere `python3` does. It needs a key with the
+`review` scope, read from the environment and never echoed:
+
+```bash
+export FOODDB__REVIEW__KEY=fdb_…                          # fooddb keys create --name agent --scope review
+export FOODDB__REVIEW__URL=https://food-api.eait.fit      # the default; --url overrides
+
+fooddb-review facets                            # how many records wait, per source and per check
+fooddb-review queue --source recipe --limit 2   # two records of the recipe slice, as JSON
+fooddb-review queue --source recipe --detail    # each record's values and why its checks failed
+fooddb-review decide 42 43 --accept --by agent  # one JSON line per id; accept serves the value
+                                                # from the next snapshot on, reject never serves it
+```
+
+`queue` filters with `--source` and `--check` and pages with `--limit`/`--offset`; `decide` keeps
+going past a value that is no longer pending. A decision is recorded under `--by`, plus the key's
+name when the two differ. `python3 src/fooddb/reviewcli.py --help` works without installing.
+
 ## Contribute
 
 - [CONTRIBUTING.md](CONTRIBUTING.md): the local dev setup (`./dev`), tests and the PR process
