@@ -5,7 +5,10 @@ with their grams in the raw mix, a cooked yield (the cooked dish's weight divide
 a water-loss factor below 1, a gain above) and the citation of its formulation. `compute` weighs
 each ingredient's newest accepted per-100 g values into the cooked dish's; `build` stores them
 through the normal ingest path with `review_all`, so every value waits in the review queue and a
-recipe stays invisible until a person accepts it once.
+recipe stays invisible until a person accepts it once. The same build sweeps after itself: a
+record's older pending rows are rejected once a newer observation of the nutrient exists, and a
+record whose slug left RECIPES is retired — queue rejected, served nutrients withdrawn — so nothing
+stays pending or orphaned.
 
 One recipe makes two records on one product (`ingest.Record.group`): `recipe:<slug>` with the
 English name the eait matcher keys on, `recipe:<slug>.ru` with the Russian one. Both hold the same
@@ -25,12 +28,14 @@ import json
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
 
+from loguru import logger
 from sqlalchemy import text
 
 from fooddb import ingest
 from fooddb.db import engine
 
 SOURCE = "recipe"
+REVIEWER = "fooddb:recipes"  # the by-line the build's own sweep writes on the rows it decides
 MIN_COVERAGE = 0.9  # a nutrient is computed when ingredients with a stated value make ≥90 % of the raw mix
 OUTLIER_FLAG = "recipe-kcal-outside-band"
 # Computed values keep ~6 significant digits: that is far beyond what a formulation justifies, and a value
@@ -64,51 +69,52 @@ RECIPES: tuple[Recipe, ...] = (
     Recipe("plov", "Plov", "Плов",
            "fooddb editorial: Uzbek-style plov — rice, lamb, carrot and onion fried in oil, then steamed with "
            "water; ~0.88 of the raw mix survives as the served dish (evaporation past the rice's uptake)",
-           (I("bls:C352000", 250), I("bls:U807000", 200), I("bls:G620100", 150), I("fdc:170000", 100),
+           (I("bls:C352000", 250), I("bls:U807000", 200), I("bls:G620100", 150), I("bls:G480100", 100),
             I("bls:Q320000", 80), I("ciqual:18066", 450), I("ciqual:11017", 8), I("bls:G490100", 10)),
            cooked_yield=0.88, kcal_band=(140, 260), serving_g=300),
     Recipe("beshbarmak", "Beshbarmak", "Бешбармак",
            "fooddb editorial: boiled fatty mutton and lamb over boiled noodle sheets with onion and a ladle "
            "of broth — the Kazakh serving, nothing evaporates once plated",
-           (I("bls:U856132", 200), I("bls:U867132", 200), I("bls:E432032", 400), I("fdc:170000", 80),
+           (I("bls:U856132", 200), I("bls:U867132", 200), I("bls:E432032", 400), I("bls:G480100", 80),
             I("ciqual:18066", 120)),
            cooked_yield=1.0, kcal_band=(140, 260), serving_g=350),
     Recipe("manty", "Manty", "Манты",
            "fooddb editorial: steamed lamb dumplings — unleavened dough (flour, water, egg) around minced lamb "
            "with onion and tail fat (mutton tallow); steaming loses ~10 % of the raw weight",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 7),
-            I("bls:U807000", 150), I("bls:Q880000", 30), I("fdc:170000", 100)),
+            I("bls:U807000", 150), I("bls:Q880000", 30), I("bls:G480100", 100)),
            cooked_yield=0.9, kcal_band=(170, 280), serving_g=250),
     Recipe("pelmeni", "Pelmeni", "Пельмени",
            "fooddb editorial: boiled dumplings — unleavened dough around mixed beef-pork mince with onion; "
            "boiled dumplings take up a little water, so the cooked weight slightly exceeds the raw one",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 7),
-            I("bls:U050100", 250), I("fdc:170000", 60)),
+            I("bls:U050100", 250), I("bls:G480100", 60)),
            cooked_yield=1.05, kcal_band=(170, 270), serving_g=200),
     Recipe("vareniki", "Vareniki, potato filling", "Вареники с картофелем",
            "fooddb editorial: boiled dumplings — unleavened dough around mashed boiled potato with onion "
            "fried in butter",
            (I("bls:C214200", 200), I("ciqual:18066", 80), I("bls:E111100", 25), I("ciqual:11017", 5),
-            I("bls:K110132", 250), I("fdc:170000", 50), I("bls:Q6A4000", 15)),
+            I("bls:K110132", 250), I("bls:G480100", 50), I("bls:Q6A4000", 15)),
            cooked_yield=1.02, kcal_band=(130, 220), serving_g=250),
     Recipe("syrniki", "Syrniki", "Сырники",
-           "fooddb editorial: fried curd fritters — tvorog (quark, 40 % fat in dry matter ≈ 9 % fat tvorog) "
-           "with egg, a little flour and sugar, fried in sunflower oil; ~10 % of the raw weight goes as steam",
-           (I("bls:M713500", 400), I("bls:E111100", 50), I("bls:C214200", 60), I("bls:S111000", 30),
-            I("ciqual:11017", 1), I("bls:Q320000", 15)),
-           cooked_yield=0.9, kcal_band=(190, 280), serving_g=180),
+           "fooddb editorial: fried curd fritters — tvorog (the pressed quark mix of the tvorog recipe: "
+           "450 g quark 20 % + 113 g quark 40 % press to ≈400 g once the whey leaves) with egg, a little "
+           "flour and sugar, fried in sunflower oil; ~10 % of the raw weight goes as steam",
+           (I("bls:M713300", 450), I("bls:M713500", 113), I("bls:E111100", 50), I("bls:C214200", 60),
+            I("bls:S111000", 30), I("ciqual:11017", 1), I("bls:Q320000", 15)),
+           cooked_yield=0.696, kcal_band=(190, 280), serving_g=180),
     Recipe("borscht", "Borscht", "Борщ",
            "fooddb editorial: beet soup on beef — beets, cabbage and potato with carrot and onion fried in "
            "sunflower oil, tomato paste, simmered; ~5 % of the pot evaporates",
            (I("ciqual:18066", 600), I("bls:U184100", 120), I("bls:G613100", 150), I("bls:G342100", 100),
-            I("bls:K110100", 150), I("bls:G620100", 50), I("fdc:170000", 50), I("bls:R160000", 20),
+            I("bls:K110100", 150), I("bls:G620100", 50), I("bls:G480100", 50), I("bls:R160000", 20),
             I("bls:Q320000", 15), I("ciqual:11017", 6)),
            cooked_yield=0.95, kcal_band=(35, 80), serving_g=300),
     Recipe("shchi", "Shchi", "Щи",
            "fooddb editorial: cabbage soup on beef — cabbage and potato with carrot and onion fried in "
            "sunflower oil, a spoon of tomato paste, simmered; ~5 % of the pot evaporates",
            (I("ciqual:18066", 600), I("bls:U184100", 120), I("bls:G342100", 200), I("bls:K110100", 150),
-            I("bls:G620100", 40), I("fdc:170000", 50), I("bls:R160000", 15), I("bls:Q320000", 10),
+            I("bls:G620100", 40), I("bls:G480100", 50), I("bls:R160000", 15), I("bls:Q320000", 10),
             I("ciqual:11017", 6)),
            cooked_yield=0.95, kcal_band=(30, 70), serving_g=300),
     Recipe("olivier", "Olivier salad", "Оливье",
@@ -118,10 +124,10 @@ RECIPES: tuple[Recipe, ...] = (
             I("bls:G890902", 100), I("bls:W236000", 150), I("ciqual:11054", 120)),
            cooked_yield=1.0, kcal_band=(160, 260), serving_g=150),
     Recipe("kurt", "Kurt", "Курт",
-           "fooddb editorial: salted dried strained yogurt — Greek-style yogurt dried with salt to ~35 % of "
-           "its weight",
-           (I("ciqual:19860", 1000), I("ciqual:11017", 20)),
-           cooked_yield=0.35, kcal_band=(200, 400), serving_g=50),
+           "fooddb editorial: salted sour-milk curd strained and dried hard — quark 20 % with salt to ~30 % "
+           "of the raw weight; the moisture is an assumption: kurt ranges from soft to stone-dry",
+           (I("bls:M713300", 1000), I("ciqual:11017", 20)),
+           cooked_yield=0.30, kcal_band=(280, 420), serving_g=50),
     Recipe("kumys", "Kumys", "Кумыс",
            "fooddb editorial: fermented mare's milk, modelled as mare's milk — fermentation moves part of the "
            "lactose to lactic acid and ~1–2 % alcohol that the model does not add; mass is nearly unchanged",
@@ -141,19 +147,19 @@ RECIPES: tuple[Recipe, ...] = (
            "fooddb editorial: noodle soup — hand-pulled egg noodles under beef with pepper, carrot, onion, "
            "garlic and tomato paste fried in oil, water to the serving broth",
            (I("bls:E432000", 150), I("bls:U184100", 150), I("bls:G543100", 80), I("bls:R160000", 20),
-            I("bls:G620100", 50), I("fdc:170000", 60), I("bls:G490100", 5), I("bls:Q320000", 20),
+            I("bls:G620100", 50), I("bls:G480100", 60), I("bls:G490100", 5), I("bls:Q320000", 20),
             I("ciqual:18066", 500)),
            cooked_yield=0.95, kcal_band=(70, 140), serving_g=350),
     Recipe("samsa", "Samsa", "Самса",
            "fooddb editorial: baked pastry — butter dough around minced lamb with onion and tail fat; baking "
            "loses ~20 % of the raw weight",
            (I("bls:C214200", 200), I("ciqual:18066", 90), I("bls:Q6A4000", 30), I("ciqual:11017", 7),
-            I("bls:U807000", 150), I("bls:Q880000", 40), I("fdc:170000", 100)),
+            I("bls:U807000", 150), I("bls:Q880000", 40), I("bls:G480100", 100)),
            cooked_yield=0.8, kcal_band=(240, 360), serving_g=150),
     Recipe("shashlik", "Shashlik, pork", "Шашлык из свинины",
            "fooddb editorial: pork neck marinated with onion and vinegar, grilled — the skewer loses fat and "
            "juice to ~62 % of the raw weight",
-           (I("bls:U632100", 400), I("fdc:170000", 60), I("bls:R121000", 20), I("ciqual:11017", 6)),
+           (I("bls:U632100", 400), I("bls:G480100", 60), I("bls:R121000", 20), I("ciqual:11017", 6)),
            cooked_yield=0.62, kcal_band=(190, 340), serving_g=250),
     Recipe("blini", "Blini", "Блины",
            "fooddb editorial: thin milk pancakes — batter of flour, milk, egg, sugar and butter, fried; the "
@@ -166,15 +172,16 @@ RECIPES: tuple[Recipe, ...] = (
            (I("bls:C327000", 100), I("ciqual:18066", 220), I("bls:Q6A4000", 15), I("ciqual:11017", 2)),
            cooked_yield=0.98, kcal_band=(100, 160), serving_g=200),
     Recipe("tvorog", "Tvorog", "Творог",
-           "fooddb editorial: tvorog is the same fresh curd cheese as German Speisequark; the common ~9 % fat "
-           "tvorog is BLS's 40 % fat-in-dry-matter band",
-           (I("bls:M713500", 1000),),
-           cooked_yield=1.0, kcal_band=(120, 200), serving_g=200),
+           "fooddb editorial: tvorog is pressed harder than Speisequark, so whey leaves — 800 g quark 20 % "
+           "+ 200 g quark 40 % pressed to 71 % of the raw weight lands on 9 % fat tvorog (GOST 31453): "
+           "≈ P 16.8, F 9.0, C 4.1, ~169 kcal",
+           (I("bls:M713300", 800), I("bls:M713500", 200)),
+           cooked_yield=0.71, kcal_band=(140, 200), serving_g=200),
     Recipe("chebureki", "Chebureki", "Чебуреки",
            "fooddb editorial: deep-fried meat pasties — unleavened dough around minced lamb with onion, fried "
            "in sunflower oil",
            (I("bls:C214200", 200), I("ciqual:18066", 90), I("ciqual:11017", 5), I("bls:U807000", 150),
-            I("fdc:170000", 80), I("bls:Q320000", 40)),
+            I("bls:G480100", 80), I("bls:Q320000", 40)),
            cooked_yield=0.85, kcal_band=(220, 340), serving_g=150),
 )
 
@@ -240,10 +247,15 @@ def build(recipes: tuple[Recipe, ...] = RECIPES) -> dict:
                 values.setdefault(row["food_id"], {})[row["nutrient"]] = row["value"]
     at = datetime.now(UTC)
     records = []
+    uncomputable = {}
     for r in recipes:
         missing = [i.record for i in r.ingredients if not values.get(i.record)]
         if missing:
-            continue  # an ingredient never loaded or still pending: the recipe is skipped, see report()
+            # An ingredient never loaded or still pending: the recipe is skipped, loudly — it must
+            # not vanish silently (see report() for the same list, readable).
+            logger.warning(f"recipe {r.slug} skipped: no accepted values for {', '.join(missing)}")
+            uncomputable[r.slug] = missing
+            continue
         licence = max((meta[i.record]["licence"] for i in r.ingredients),
                       key=lambda lic: _rank(lic))
         found, _dropped = compute(r, values)
@@ -253,11 +265,51 @@ def build(recipes: tuple[Recipe, ...] = RECIPES) -> dict:
                 id=f"recipe:{r.slug}{suffix}", source=SOURCE, layer="core", licence=licence,
                 name=name, lang=lang, serving_g=r.serving_g, values=found, observed_at=at,
                 categories=["recipe:dish"], extra_flags=list(flags), review_all=True, group=r.slug))
-    if not records:
-        return {"recipes": 0, "skipped": len(recipes), "foods": 0, "observations": 0}
-    foods, obs = ingest.run(SOURCE, registry_ref(), records)
-    return {"recipes": len(records) // 2, "skipped": len(recipes) - len(records) // 2,
-            "foods": foods, "observations": obs}
+    foods = obs = 0
+    if records:
+        foods, obs = ingest.run(SOURCE, registry_ref(), records)
+    return {"recipes": len(records) // 2, "skipped": len(uncomputable), "uncomputable": uncomputable,
+            "foods": foods, "observations": obs} | _sweep(at)
+
+
+def _sweep(at: datetime) -> dict:
+    """Nothing pending or orphaned after a build. A recipe record whose slug left RECIPES is retired:
+    its pending values are rejected and every nutrient it still serves is withdrawn by a null
+    observation — the convention VALUES_SQL reads — so no orphan keeps serving. And only the newest
+    values of a live recipe ever wait for review: an older pending row is rejected once a newer
+    observation of the same nutrient exists."""
+    live = {r.slug for r in RECIPES}
+    with engine().begin() as conn:
+        retired = sorted(conn.execute(text(
+            "select id from food where id like 'recipe:%'")).scalars())
+        retired = [i for i in retired if i.removeprefix("recipe:").removesuffix(".ru") not in live]
+        if retired:
+            conn.execute(text(
+                "update observation set status = 'rejected', reviewed_by = :by, reviewed_at = now(), "
+                "review_note = 'recipe retired' where status = 'pending' and food_id = any(:ids)"),
+                {"by": REVIEWER, "ids": retired})
+            conn.execute(text(WITHDRAW_SQL), {"by": REVIEWER, "ids": retired, "at": at})
+        superseded = conn.execute(text(
+            "update observation o set status = 'rejected', reviewed_by = :by, reviewed_at = now(), "
+            "review_note = :note where o.food_id like 'recipe:%' and o.status = 'pending' and exists ("
+            "select 1 from observation n where n.food_id = o.food_id and n.nutrient = o.nutrient "
+            "and (n.observed_at, n.id) > (o.observed_at, o.id))"),
+            {"by": REVIEWER, "note": f"superseded by recipe rebuild {registry_ref()}"}).rowcount
+    return {"retired": retired, "superseded": superseded}
+
+
+# For each nutrient a retired record still serves (its newest accepted value is not null), store a
+# newer accepted null — the same withdrawal ingest writes when a source drops a field.
+WITHDRAW_SQL = """
+insert into observation (food_id, nutrient, value_per_100, unit, basis, status, source, licence,
+                         observed_at, reviewed_by, reviewed_at, review_note)
+select food_id, nutrient, null, unit, basis, 'accepted', source, licence,
+       :at, :by, now(), 'recipe retired'
+from (select distinct on (food_id, nutrient) food_id, nutrient, unit, basis, source, licence, value_per_100
+      from observation where food_id = any(:ids) and status = 'accepted'
+      order by food_id, nutrient, observed_at desc, id desc) newest
+where value_per_100 is not null
+"""
 
 
 def _rank(licence: str) -> int:

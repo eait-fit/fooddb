@@ -128,3 +128,83 @@ def test_recipe_records_are_not_matched_into_other_products(registered):
     recipes.build([registered])
     assert {r["unique_id"] for r in match._records()}.isdisjoint(
         {"recipe:test-stew", "recipe:test-stew.ru"})
+
+
+def observation_rows(record_id: str) -> list[dict]:
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return [dict(r) for r in conn.execute(text(
+            "select nutrient, value_per_100, status, reviewed_by, review_note from observation "
+            "where food_id = :id order by nutrient, observed_at, id"), {"id": record_id}).mappings()]
+
+
+def test_a_rebuild_rejects_the_pending_set_its_new_values_supersede(registered):
+    from datetime import UTC, datetime
+
+    from fooddb import ingest, recipes
+
+    ingredients()
+    recipes.build([registered])
+    # The ingredient's newer accepted values change the computed dish: the rebuild stores a new set.
+    ingest.run("t", "r2", [rec(
+        observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+        values={"ENERC_KCAL": 120.0, "PROCNT": 11.0, "CHOCDF": 24.0, "FIBTG": 5.0})])
+    recipes.build([registered])
+    rows = observation_rows("recipe:test-stew")
+    pending = [r for r in rows if r["status"] == "pending"]
+    superseded = [r for r in rows if r["status"] == "rejected"]
+    assert {r["nutrient"] for r in pending} == {"ENERC_KCAL", "PROCNT", "CHOAVL"}
+    assert {r["nutrient"] for r in superseded} == {"ENERC_KCAL", "PROCNT", "CHOAVL"}
+    assert {r["reviewed_by"] for r in superseded} == {"fooddb:recipes"}
+    assert all(r["review_note"].startswith("superseded by recipe rebuild ") for r in superseded)
+
+
+def test_a_retired_recipe_loses_its_queue_and_stops_serving(registered, monkeypatch):
+    from datetime import UTC, datetime
+
+    from fooddb import ingest, recipes, review
+
+    ingredients()
+    recipes.build([registered])
+    for i in pending_ids("recipe:test-stew") + pending_ids("recipe:test-stew.ru"):
+        review.decide(i, "accept", "tester")
+    assert client().get("/v1/records/recipe:test-stew").status_code == 200
+    # A changed ingredient leaves a second, unreviewed set when the slug leaves the registry.
+    ingest.run("t", "r2", [rec(
+        observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+        values={"ENERC_KCAL": 120.0, "PROCNT": 11.0, "CHOCDF": 24.0, "FIBTG": 5.0})])
+    recipes.build([registered])
+    monkeypatch.setattr(recipes, "RECIPES", ())
+    result = recipes.build(())
+    assert {"recipe:test-stew", "recipe:test-stew.ru"} <= set(result["retired"])
+    rows = observation_rows("recipe:test-stew") + observation_rows("recipe:test-stew.ru")
+    assert not [r for r in rows if r["status"] == "pending"]  # nothing waits for review any more
+    retired = [r for r in rows if r["status"] == "rejected"]
+    assert {r["nutrient"] for r in retired} == {"ENERC_KCAL", "PROCNT", "CHOAVL"}
+    assert {(r["reviewed_by"], r["review_note"]) for r in retired} == {("fooddb:recipes", "recipe retired")}
+    # Every nutrient the record served is withdrawn by an accepted null: the orphan serves nothing.
+    withdrawn = [r for r in rows
+                 if r["status"] == "accepted" and r["value_per_100"] is None]
+    assert {r["nutrient"] for r in withdrawn} == {"ENERC_KCAL", "PROCNT", "CHOAVL"}
+    assert {(r["reviewed_by"], r["review_note"]) for r in withdrawn} == {("fooddb:recipes", "recipe retired")}
+    p = client().get("/v1/records/recipe:test-stew").json()
+    assert p["per_100"] == {}
+
+
+def test_an_uncomputable_recipe_is_a_warning_named_in_the_result(registered):
+    from loguru import logger
+
+    from fooddb import recipes
+
+    seen = []
+    sink = logger.add(lambda m: seen.append(m.record["message"]), level="WARNING")
+    try:
+        result = recipes.build([registered])  # no ingredients() run: nothing accepted
+    finally:
+        logger.remove(sink)
+    assert result["recipes"] == 0 and result["skipped"] == 1
+    assert result["uncomputable"] == {"test-stew": ["fdc:1", "cofid:2", "frida:3"]}
+    assert [m for m in seen if "test-stew" in m and "fdc:1" in m]
