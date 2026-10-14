@@ -1,0 +1,366 @@
+{
+  "country": "ru",
+  "queries": [
+    {
+      "q": "борщ",
+      "expect": {
+        "records": [
+          "recipe:borscht",
+          "recipe:borscht.ru"
+        ]
+      },
+      "kcal": 57,
+      "kcal_ref": "fooddb recipe borscht, plausible band 35–80 (recipes.py)",
+      "why": "the RU soup; the recipe layer carries it"
+    },
+    {
+      "q": "щи",
+      "expect": {
+        "records": [
+          "recipe:shchi",
+          "recipe:shchi.ru"
+        ]
+      },
+      "kcal": 50,
+      "kcal_ref": "fooddb recipe shchi, plausible band 30–70 (recipes.py)",
+      "why": "cabbage soup"
+    },
+    {
+      "q": "плов",
+      "expect": {
+        "records": [
+          "recipe:plov",
+          "recipe:plov.ru"
+        ]
+      },
+      "kcal": 200,
+      "kcal_ref": "fooddb recipe plov, plausible band 140–260 (recipes.py)",
+      "why": "pilaf, shared with Central Asia"
+    },
+    {
+      "q": "блины",
+      "expect": {
+        "records": [
+          "recipe:blini",
+          "recipe:blini.ru"
+        ]
+      },
+      "kcal": 235,
+      "kcal_ref": "fooddb recipe blini, plausible band 180–290 (recipes.py)",
+      "why": "pancakes"
+    },
+    {
+      "q": "оливье",
+      "expect": {
+        "records": [
+          "recipe:olivier",
+          "recipe:olivier.ru"
+        ]
+      },
+      "kcal": 210,
+      "kcal_ref": "fooddb recipe olivier, plausible band 160–260 (recipes.py)",
+      "why": "the salad"
+    },
+    {
+      "q": "творог",
+      "expect": {
+        "records": [
+          "recipe:tvorog",
+          "recipe:tvorog.ru"
+        ]
+      },
+      "kcal": 170,
+      "kcal_ref": "fooddb recipe tvorog, plausible band 140–200 (recipes.py)",
+      "why": "curd cheese, the RU staple"
+    },
+    {
+      "q": "сырники",
+      "expect": {
+        "records": [
+          "recipe:syrniki",
+          "recipe:syrniki.ru"
+        ]
+      },
+      "kcal": 235,
+      "kcal_ref": "fooddb recipe syrniki, plausible band 190–280 (recipes.py)",
+      "why": "fried tvorog pancakes"
+    },
+    {
+      "q": "пельмени",
+      "expect": {
+        "records": [
+          "recipe:pelmeni",
+          "recipe:pelmeni.ru"
+        ]
+      },
+      "kcal": 175,
+      "kcal_ref": "fooddb recipe pelmeni, plausible band 130–220 (recipes.py)",
+      "why": "the dumplings"
+    },
+    {
+      "q": "вареники",
+      "expect": {
+        "records": [
+          "recipe:vareniki",
+          "recipe:vareniki.ru"
+        ]
+      },
+      "kcal": 235,
+      "kcal_ref": "fooddb recipe vareniki, plausible band 190–280 (recipes.py)",
+      "why": "the boiled dumplings"
+    },
+    {
+      "q": "чебуреки",
+      "expect": {
+        "records": [
+          "recipe:chebureki",
+          "recipe:chebureki.ru"
+        ]
+      },
+      "kcal": 280,
+      "kcal_ref": "fooddb recipe chebureki, plausible band 220–340 (recipes.py)",
+      "why": "the fried turnovers"
+    },
+    {
+      "q": "гречка",
+      "expect": {
+        "records": [
+          "recipe:grechka",
+          "recipe:grechka.ru",
+          "bls:C327000",
+          "bls:C327032"
+        ]
+      },
+      "kcal": 130,
+      "kcal_ref": "fooddb recipe grechka, plausible band 100–160 (recipes.py)",
+      "why": "buckwheat porridge; the recipe dish or a buckwheat groats record answers it"
+    },
+    {
+      "q": "молоко",
+      "expect": {
+        "records": [
+          "fdc:171265",
+          "fdc:171267",
+          "fdc:171269",
+          "bls:M111300",
+          "ciqual:19016"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171265 whole milk 3.25 %",
+      "why": "milk is logged daily; RU has no national table in fooddb"
+    },
+    {
+      "q": "хлеб",
+      "expect": {
+        "records": [
+          "fdc:167532",
+          "fdc:172686",
+          "fdc:172684",
+          "bls:B221000",
+          "bls:B251000",
+          "ciqual:7000"
+        ]
+      },
+      "kcal": 259,
+      "kcal_ref": "USDA FDC 172684 rye bread (RU bread is rye-wheat)",
+      "why": "generic bread"
+    },
+    {
+      "q": "курица",
+      "expect": {
+        "records": [
+          "fdc:171077",
+          "fdc:2646170",
+          "bls:V416100",
+          "ciqual:36017"
+        ]
+      },
+      "kcal": 120,
+      "kcal_ref": "USDA FDC 171077 chicken breast, meat only, raw",
+      "why": "chicken breast"
+    },
+    {
+      "q": "яблоко",
+      "expect": {
+        "records": [
+          "fdc:171688",
+          "bls:F110100",
+          "ciqual:13039"
+        ]
+      },
+      "kcal": 52,
+      "kcal_ref": "USDA FDC 171688 apples, raw, with skin",
+      "why": "the default fruit"
+    },
+    {
+      "q": "банан",
+      "expect": {
+        "records": [
+          "fdc:173944",
+          "bls:F503100",
+          "ciqual:13005",
+          "frida:3"
+        ]
+      },
+      "kcal": 89,
+      "kcal_ref": "USDA FDC 173944 bananas, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "картофель",
+      "expect": {
+        "records": [
+          "fdc:170027",
+          "fdc:170440",
+          "bls:K120100",
+          "ciqual:4003",
+          "frida:801"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "USDA FDC 170027 potatoes, russet, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "яйцо",
+      "expect": {
+        "records": [
+          "fdc:171287",
+          "ciqual:22000",
+          "bls:E111100",
+          "cofid:12-937"
+        ]
+      },
+      "kcal": 143,
+      "kcal_ref": "USDA FDC 171287 egg, whole, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "кофе",
+      "expect": {
+        "records": [
+          "fdc:171890",
+          "ciqual:18004",
+          "bls:N410100",
+          "cofid:17-833"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "USDA FDC 171890 coffee, brewed",
+      "why": "plain coffee"
+    },
+    {
+      "q": "пиво",
+      "expect": {
+        "records": [
+          "fdc:168747",
+          "ciqual:5001",
+          "bls:P161000",
+          "fdc:168746",
+          "fdc:168749",
+          "ciqual:5000",
+          "cofid:17-506",
+          "cofid:17-749"
+        ]
+      },
+      "kcal": 41,
+      "kcal_ref": "USDA FDC 168747 beer, regular",
+      "why": "a generic beer"
+    },
+    {
+      "q": "borscht",
+      "expect": {
+        "records": [
+          "recipe:borscht",
+          "recipe:borscht.ru"
+        ]
+      },
+      "kcal": 57,
+      "kcal_ref": "fooddb recipe borscht, plausible band 35–80 (recipes.py)",
+      "why": "English spelling of the dish must hit the same product"
+    },
+    {
+      "q": "plov",
+      "expect": {
+        "records": [
+          "recipe:plov",
+          "recipe:plov.ru"
+        ]
+      },
+      "kcal": 200,
+      "kcal_ref": "fooddb recipe plov, plausible band 140–260 (recipes.py)",
+      "why": "English spelling of pilaf"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "04600935030675",
+      "expect": {
+        "name": "гречка|buckwheat"
+      },
+      "why": "packaged buckwheat groats"
+    },
+    {
+      "barcode": "04650067210773",
+      "expect": {
+        "name": "(?i)кефир|kefir"
+      },
+      "why": "kefir"
+    },
+    {
+      "barcode": "04602328004980",
+      "expect": {
+        "name": "бородин|borodinsk"
+      },
+      "why": "Borodinsky rye bread"
+    },
+    {
+      "barcode": "00099990001920",
+      "expect": {
+        "name": "простоквашино|молоко|milk"
+      },
+      "why": "Prostokvashino milk"
+    },
+    {
+      "barcode": "04600605027721",
+      "expect": {
+        "name": "творог|простоквашино"
+      },
+      "why": "Prostokvashino tvorog"
+    },
+    {
+      "barcode": "09602065580070",
+      "expect": {
+        "name": "(?i)доширак|doshirak"
+      },
+      "why": "Doshirak instant noodles"
+    },
+    {
+      "barcode": "04600631000736",
+      "expect": {
+        "name": "хлеб|bread"
+      },
+      "why": "packaged bread"
+    },
+    {
+      "barcode": "00099990001685",
+      "expect": {
+        "name": "макфа|макарон|pasta"
+      },
+      "why": "Makfa buckwheat pasta"
+    },
+    {
+      "barcode": "04606272029860",
+      "expect": {
+        "name": "шоколад|российск|chocolate"
+      },
+      "why": "Rossiysky dark chocolate"
+    },
+    {
+      "barcode": "4609990000081",
+      "not_found": true,
+      "why": "valid GS1-RU prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

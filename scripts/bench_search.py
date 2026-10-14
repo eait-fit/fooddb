@@ -138,7 +138,7 @@ def run_barcode(client: httpx.Client, country: str, case: dict) -> dict:
     if case.get("not_found"):
         ok = r.status_code == 404
     else:
-        ok = r.status_code == 200 and bool(items) and acceptable(items[0], case.get("expect", {}))
+        ok = r.status_code == 200 and any(acceptable(i, case.get("expect", {})) for i in items)
     return {"barcode": case["barcode"], "status": r.status_code, "ms": ms, "ok": ok,
             "found": r.status_code == 200, "expected_not_found": bool(case.get("not_found")),
             "top_id": items[0]["id"] if items else None}

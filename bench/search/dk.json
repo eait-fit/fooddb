@@ -1,0 +1,364 @@
+{
+  "country": "dk",
+  "queries": [
+    {
+      "q": "rugbrød",
+      "expect": {
+        "records": [
+          "frida:646",
+          "frida:1670",
+          "frida:1671",
+          "frida:1673",
+          "frida:1674",
+          "frida:413",
+          "frida:418",
+          "frida:379"
+        ]
+      },
+      "kcal": 215,
+      "kcal_ref": "Frida 4.4, 646 rye bread, dark with whole kernels",
+      "why": "rye bread is the Danish daily bread"
+    },
+    {
+      "q": "sødmælk",
+      "expect": {
+        "records": [
+          "frida:1265",
+          "frida:1266",
+          "frida:6"
+        ]
+      },
+      "kcal": 63.1,
+      "kcal_ref": "Frida 4.4, 1265 milk, whole, 3.5 %",
+      "why": "whole milk"
+    },
+    {
+      "q": "letmælk",
+      "expect": {
+        "records": [
+          "frida:33",
+          "frida:1154"
+        ]
+      },
+      "kcal": 47.5,
+      "kcal_ref": "Frida 4.4, 33 partly skimmed milk 1.5 %",
+      "why": "the most-drunk milk in DK"
+    },
+    {
+      "q": "yoghurt",
+      "expect": {
+        "records": [
+          "frida:12",
+          "frida:1597"
+        ]
+      },
+      "kcal": 62.2,
+      "kcal_ref": "Frida 4.4, 12 yogurt, plain, whole milk",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "ost",
+      "expect": {
+        "records": [
+          "frida:148",
+          "frida:1779",
+          "frida:94",
+          "frida:109"
+        ]
+      },
+      "kcal": 335,
+      "kcal_ref": "Frida 4.4, 148 firm cheese, 45 % f.i.d.m.",
+      "why": "a generic firm cheese like Danbo"
+    },
+    {
+      "q": "danbo",
+      "expect": {
+        "records": [
+          "frida:109",
+          "frida:1203",
+          "frida:1259"
+        ]
+      },
+      "kcal": 325,
+      "kcal_ref": "Frida 4.4, 109 firm cheese, Danbo, 45 % f.i.d.m.",
+      "why": "Danbo is the Danish cheese"
+    },
+    {
+      "q": "ris",
+      "expect": {
+        "records": [
+          "frida:1973",
+          "frida:1252",
+          "frida:1225"
+        ]
+      },
+      "kcal": 171,
+      "kcal_ref": "Frida 4.4, 1973 rice, boiled",
+      "why": "plain rice"
+    },
+    {
+      "q": "pasta",
+      "expect": {
+        "records": [
+          "frida:305",
+          "frida:1296",
+          "frida:377"
+        ]
+      },
+      "kcal": 361,
+      "kcal_ref": "Frida 4.4, 305 pasta, raw",
+      "why": "generic pasta"
+    },
+    {
+      "q": "kylling",
+      "expect": {
+        "records": [
+          "frida:907",
+          "frida:754",
+          "frida:886",
+          "matvaretabellen:03.373",
+          "matvaretabellen:03.391"
+        ]
+      },
+      "kcal": 148.5,
+      "kcal_ref": "Frida 4.4, 907 chicken breast, flesh and skin, raw",
+      "why": "chicken breast"
+    },
+    {
+      "q": "æble",
+      "expect": {
+        "records": [
+          "frida:2"
+        ]
+      },
+      "kcal": 55.1,
+      "kcal_ref": "Frida 4.4, 2 apple, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "banan",
+      "expect": {
+        "records": [
+          "frida:3"
+        ]
+      },
+      "kcal": 93.5,
+      "kcal_ref": "Frida 4.4, 3 banana, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "kaffe",
+      "expect": {
+        "records": [
+          "frida:142"
+        ]
+      },
+      "kcal": 1.1,
+      "kcal_ref": "Frida 4.4, 142 coffee, beverage",
+      "why": "plain brewed coffee"
+    },
+    {
+      "q": "øl",
+      "expect": {
+        "records": [
+          "frida:1905",
+          "frida:1906",
+          "frida:1917"
+        ]
+      },
+      "kcal": 35.9,
+      "kcal_ref": "Frida 4.4, 1905 lager beer, 4-5 %",
+      "why": "a generic beer"
+    },
+    {
+      "q": "kartoffel",
+      "expect": {
+        "records": [
+          "frida:4",
+          "frida:801",
+          "frida:846",
+          "frida:946"
+        ]
+      },
+      "kcal": 77,
+      "kcal_ref": "Frida 4.4, 4 potato, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "æg",
+      "expect": {
+        "records": [
+          "frida:1662",
+          "frida:1663",
+          "frida:1664",
+          "frida:1665"
+        ]
+      },
+      "kcal": 137,
+      "kcal_ref": "Frida 4.4, 1662 eggs, chicken, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "tomat",
+      "expect": {
+        "records": [
+          "frida:451",
+          "frida:624"
+        ]
+      },
+      "kcal": 19.7,
+      "kcal_ref": "Frida 4.4, 451 tomato, Danish, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "havregryn",
+      "expect": {
+        "records": [
+          "frida:59"
+        ]
+      },
+      "kcal": 366,
+      "kcal_ref": "Frida 4.4, 59 oats, rolled",
+      "why": "porridge oats"
+    },
+    {
+      "q": "laks",
+      "expect": {
+        "records": [
+          "frida:30",
+          "frida:1552",
+          "frida:1031"
+        ]
+      },
+      "kcal": 158.9,
+      "kcal_ref": "Frida 4.4, 30 salmon, Atlantic, raw",
+      "why": "Atlantic salmon"
+    },
+    {
+      "q": "smør",
+      "expect": {
+        "records": [
+          "frida:1052",
+          "frida:1015"
+        ]
+      },
+      "kcal": 740.9,
+      "kcal_ref": "Frida 4.4, 1052 butter, salt added",
+      "why": "plain butter"
+    },
+    {
+      "q": "sild",
+      "expect": {
+        "records": [
+          "frida:47",
+          "frida:975",
+          "frida:1610",
+          "frida:1132"
+        ]
+      },
+      "kcal": 271.6,
+      "kcal_ref": "Frida 4.4, 47 herring, pickled, canned",
+      "why": "pickled herring, the Danish lunch fish"
+    },
+    {
+      "q": "rye bread",
+      "expect": {
+        "records": [
+          "frida:646",
+          "frida:1670",
+          "frida:1673",
+          "frida:1671",
+          "frida:413",
+          "frida:418",
+          "frida:379"
+        ]
+      },
+      "kcal": 215,
+      "kcal_ref": "Frida 4.4, 646 rye bread, dark with whole kernels",
+      "why": "English query in Denmark: the Frida names are English, this must hit"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "frida:1265",
+          "frida:1266",
+          "frida:6"
+        ]
+      },
+      "kcal": 63.1,
+      "kcal_ref": "Frida 4.4, 1265 milk, whole, 3.5 %",
+      "why": "English query in Denmark"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "05740900403772",
+      "expect": {
+        "name": "(?i)lurpak"
+      },
+      "why": "Lurpak butter"
+    },
+    {
+      "barcode": "05730800523427",
+      "expect": {
+        "name": "(?i)cocio"
+      },
+      "why": "Cocio chocolate milk"
+    },
+    {
+      "barcode": "05741000129623",
+      "expect": {
+        "name": "(?i)faxe"
+      },
+      "why": "Faxe Kondi, the Danish soft drink"
+    },
+    {
+      "barcode": "05711926050004",
+      "expect": {
+        "name": "(?i)rugbr"
+      },
+      "why": "packaged rye bread"
+    },
+    {
+      "barcode": "05707196346664",
+      "expect": {
+        "name": "(?i)tulip"
+      },
+      "why": "Tulip taco mix"
+    },
+    {
+      "barcode": "05774540905808",
+      "expect": {
+        "name": "(?i)anthon berg"
+      },
+      "why": "Anthon Berg chocolates"
+    },
+    {
+      "barcode": "09141324280134",
+      "expect": {
+        "name": "(?i)toms"
+      },
+      "why": "Toms chocolate bar"
+    },
+    {
+      "barcode": "05711953167690",
+      "expect": {
+        "name": "(?i)arla|queso"
+      },
+      "why": "Arla cheese"
+    },
+    {
+      "barcode": "00854651003947",
+      "expect": {
+        "name": "(?i)karma"
+      },
+      "why": "Karma water kefir"
+    },
+    {
+      "barcode": "5709990000063",
+      "not_found": true,
+      "why": "valid GS1-DK prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

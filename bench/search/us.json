@@ -1,0 +1,410 @@
+{
+  "country": "us",
+  "queries": [
+    {
+      "q": "whole wheat bread",
+      "expect": {
+        "records": [
+          "fdc:172688",
+          "fdc:174091",
+          "fdc:172690",
+          "fdc:172691",
+          "fdc:172689",
+          "frida:615"
+        ]
+      },
+      "kcal": 252,
+      "kcal_ref": "USDA FDC 172688 bread, whole-wheat",
+      "why": "the US wholegrain bread"
+    },
+    {
+      "q": "white bread",
+      "expect": {
+        "records": [
+          "fdc:167532",
+          "fdc:172686",
+          "fdc:174925",
+          "fdc:168009"
+        ]
+      },
+      "kcal": 238,
+      "kcal_ref": "USDA FDC 167532 bread, white wheat",
+      "why": "the everyday loaf"
+    },
+    {
+      "q": "rye bread",
+      "expect": {
+        "records": [
+          "fdc:172684",
+          "bls:B221000",
+          "fdc:172685",
+          "bls:B121000",
+          "frida:413"
+        ]
+      },
+      "kcal": 259,
+      "kcal_ref": "USDA FDC 172684 rye bread",
+      "why": "rye bread"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "fdc:171265",
+          "fdc:746782"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171265 milk, whole, 3.25 %",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "skim milk",
+      "expect": {
+        "records": [
+          "fdc:171269",
+          "fdc:171270",
+          "fdc:746776",
+          "frida:1049",
+          "ciqual:19050"
+        ]
+      },
+      "kcal": 34,
+      "kcal_ref": "USDA FDC 171269 milk, nonfat",
+      "why": "the common low-fat milk"
+    },
+    {
+      "q": "yogurt",
+      "expect": {
+        "records": [
+          "fdc:171284",
+          "fdc:2259793",
+          "fdc:170886",
+          "fdc:170887",
+          "fdc:2647437"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171284 yogurt, plain, whole milk",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "cheddar cheese",
+      "expect": {
+        "records": [
+          "fdc:328637",
+          "fdc:173414",
+          "fdc:170899"
+        ]
+      },
+      "kcal": 408,
+      "kcal_ref": "USDA FDC 328637 cheddar",
+      "why": "the US cheese"
+    },
+    {
+      "q": "white rice",
+      "expect": {
+        "records": [
+          "fdc:169708",
+          "fdc:169759",
+          "fdc:2512381",
+          "fdc:169707",
+          "fdc:169712",
+          "fdc:168879",
+          "fdc:168931"
+        ]
+      },
+      "kcal": 123,
+      "kcal_ref": "USDA FDC 169708 white rice, cooked",
+      "why": "plain rice, cooked or dry"
+    },
+    {
+      "q": "spaghetti",
+      "expect": {
+        "records": [
+          "fdc:169737",
+          "fdc:169736",
+          "fdc:168934",
+          "fdc:168937",
+          "fdc:168911",
+          "fdc:168912"
+        ]
+      },
+      "kcal": 158,
+      "kcal_ref": "USDA FDC 169737 pasta, cooked",
+      "why": "plain pasta; SR Legacy consolidated plain spaghetti under pasta"
+    },
+    {
+      "q": "chicken breast",
+      "expect": {
+        "records": [
+          "fdc:171077",
+          "fdc:2646170",
+          "fdc:171534",
+          "fdc:174608",
+          "fdc:172963"
+        ]
+      },
+      "kcal": 120,
+      "kcal_ref": "USDA FDC 171077 chicken breast, meat only, raw",
+      "why": "the lean protein logged most"
+    },
+    {
+      "q": "apple",
+      "expect": {
+        "records": [
+          "fdc:171688",
+          "fdc:168201",
+          "fdc:168203",
+          "fdc:168204"
+        ]
+      },
+      "kcal": 52,
+      "kcal_ref": "USDA FDC 171688 apples, raw, with skin",
+      "why": "the default fruit"
+    },
+    {
+      "q": "banana",
+      "expect": {
+        "records": [
+          "fdc:173944",
+          "fdc:1105314",
+          "fdc:1105073"
+        ]
+      },
+      "kcal": 89,
+      "kcal_ref": "USDA FDC 173944 bananas, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "coffee",
+      "expect": {
+        "records": [
+          "fdc:171890",
+          "fdc:171881",
+          "fdc:171891",
+          "fdc:174134",
+          "fdc:171897"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "USDA FDC 171890 coffee, brewed",
+      "why": "plain brewed coffee"
+    },
+    {
+      "q": "beer",
+      "expect": {
+        "records": [
+          "fdc:168747",
+          "fdc:168749",
+          "fdc:168746",
+          "ciqual:5001",
+          "ciqual:5000",
+          "cofid:17-506",
+          "cofid:17-749",
+          "bls:P161000"
+        ]
+      },
+      "kcal": 41,
+      "kcal_ref": "USDA FDC 168747 beer, regular",
+      "why": "a generic beer"
+    },
+    {
+      "q": "potato",
+      "expect": {
+        "records": [
+          "fdc:170027",
+          "fdc:170028",
+          "fdc:170440",
+          "fdc:2346401"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "USDA FDC 170027 potatoes, russet, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "egg",
+      "expect": {
+        "records": [
+          "fdc:171287",
+          "fdc:172202"
+        ]
+      },
+      "kcal": 143,
+      "kcal_ref": "USDA FDC 171287 egg, whole, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "tomato",
+      "expect": {
+        "records": [
+          "fdc:170457",
+          "fdc:321360",
+          "fdc:1999634"
+        ]
+      },
+      "kcal": 18,
+      "kcal_ref": "USDA FDC 170457 tomatoes, red, ripe, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "oatmeal",
+      "expect": {
+        "records": [
+          "fdc:169705",
+          "fdc:2346396",
+          "fdc:2346397"
+        ]
+      },
+      "kcal": 389,
+      "kcal_ref": "USDA FDC 169705 oats",
+      "why": "rolled oats for porridge"
+    },
+    {
+      "q": "butter",
+      "expect": {
+        "records": [
+          "fdc:173410"
+        ]
+      },
+      "kcal": 717,
+      "kcal_ref": "USDA FDC 173410 butter, salted",
+      "why": "plain butter"
+    },
+    {
+      "q": "peanut butter",
+      "expect": {
+        "records": [
+          "fdc:174294",
+          "fdc:174265",
+          "fdc:172469",
+          "fdc:2262072",
+          "fdc:169869",
+          "fdc:172458",
+          "fdc:172471"
+        ]
+      },
+      "kcal": 588,
+      "kcal_ref": "USDA FDC 174294 peanut butter, smooth",
+      "why": "the US spread"
+    },
+    {
+      "q": "ground beef",
+      "expect": {
+        "records": [
+          "fdc:174036",
+          "fdc:2514744",
+          "fdc:168652",
+          "fdc:173111",
+          "fdc:173110",
+          "fdc:171790",
+          "fdc:2514743"
+        ]
+      },
+      "kcal": 254,
+      "kcal_ref": "USDA FDC 174036 ground beef 80/20, raw",
+      "why": "the mince logged most"
+    },
+    {
+      "q": "orange juice",
+      "expect": {
+        "records": [
+          "fdc:169100",
+          "fdc:169099",
+          "fdc:169920"
+        ]
+      },
+      "kcal": 49,
+      "kcal_ref": "USDA FDC 169100 orange juice",
+      "why": "the breakfast juice"
+    },
+    {
+      "q": "broccoli",
+      "expect": {
+        "records": [
+          "fdc:170382",
+          "fdc:169967",
+          "fdc:168510",
+          "fdc:747447",
+          "fdc:170379",
+          "fdc:169331",
+          "fdc:169329"
+        ]
+      },
+      "kcal": 35,
+      "kcal_ref": "USDA FDC 169967 broccoli, boiled",
+      "why": "broccoli cooked or raw"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "06938530601685",
+      "expect": {
+        "name": "(?i)cheerios"
+      },
+      "why": "Cheerios cereal"
+    },
+    {
+      "barcode": "00044000063689",
+      "expect": {
+        "name": "(?i)oreo"
+      },
+      "why": "Oreo cookies"
+    },
+    {
+      "barcode": "00021000064113",
+      "expect": {
+        "name": "(?i)kraft|macaroni"
+      },
+      "why": "Kraft Macaroni & Cheese"
+    },
+    {
+      "barcode": "00013000014458",
+      "expect": {
+        "name": "(?i)heinz"
+      },
+      "why": "Heinz ketchup"
+    },
+    {
+      "barcode": "00037600106481",
+      "expect": {
+        "name": "(?i)skippy"
+      },
+      "why": "Skippy peanut butter"
+    },
+    {
+      "barcode": "05905669265201",
+      "expect": {
+        "name": "(?i)reese"
+      },
+      "why": "Reese's cups"
+    },
+    {
+      "barcode": "05900259141422",
+      "expect": {
+        "name": "(?i)lay"
+      },
+      "why": "Lay's chips"
+    },
+    {
+      "barcode": "00070424004052",
+      "expect": {
+        "name": "(?i)quaker"
+      },
+      "why": "Quaker oats"
+    },
+    {
+      "barcode": "00049000062496",
+      "expect": {
+        "name": "(?i)coca.?cola|coke"
+      },
+      "why": "Coca-Cola"
+    },
+    {
+      "barcode": "0009990000106",
+      "not_found": true,
+      "why": "valid GS1-US prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

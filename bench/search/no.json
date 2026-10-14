@@ -1,0 +1,375 @@
+{
+  "country": "no",
+  "queries": [
+    {
+      "q": "grovbrød",
+      "expect": {
+        "records": [
+          "matvaretabellen:05.342",
+          "matvaretabellen:05.343",
+          "matvaretabellen:05.392"
+        ]
+      },
+      "kcal": 239,
+      "kcal_ref": "Matvaretabellen 2025, 05.342 bread, coarse",
+      "why": "coarse bread is the Norwegian daily bread"
+    },
+    {
+      "q": "brød",
+      "expect": {
+        "records": [
+          "matvaretabellen:05.060",
+          "matvaretabellen:05.341",
+          "matvaretabellen:05.342",
+          "matvaretabellen:05.427"
+        ]
+      },
+      "kcal": 255,
+      "kcal_ref": "Matvaretabellen 2025, 05.060 bread, white",
+      "why": "generic bread"
+    },
+    {
+      "q": "brunost",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.055",
+          "matvaretabellen:01.053",
+          "matvaretabellen:01.052",
+          "matvaretabellen:01.186"
+        ]
+      },
+      "kcal": 412,
+      "kcal_ref": "Matvaretabellen 2025, 01.055 whey cheese, cow and goat milk",
+      "why": "brown cheese is whey cheese in the table; the Norwegian food"
+    },
+    {
+      "q": "melk",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.001",
+          "matvaretabellen:01.236",
+          "matvaretabellen:01.235"
+        ]
+      },
+      "kcal": 63,
+      "kcal_ref": "Matvaretabellen 2025, 01.001 whole milk 3.5 %",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "lettmelk",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.002",
+          "matvaretabellen:01.229",
+          "matvaretabellen:01.192",
+          "matvaretabellen:01.231"
+        ]
+      },
+      "kcal": 41,
+      "kcal_ref": "Matvaretabellen 2025, 01.002 semi-skimmed milk 1 %",
+      "why": "the most-drunk milk in NO"
+    },
+    {
+      "q": "yoghurt",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.011",
+          "matvaretabellen:01.334",
+          "matvaretabellen:01.290"
+        ]
+      },
+      "kcal": 69,
+      "kcal_ref": "Matvaretabellen 2025, 01.011 yoghurt, plain",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "ost",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.039",
+          "matvaretabellen:01.246",
+          "matvaretabellen:01.040"
+        ]
+      },
+      "kcal": 351,
+      "kcal_ref": "Matvaretabellen 2025, 01.039 cheese, hard, Norvegia",
+      "why": "Norvegia is the default Norwegian cheese"
+    },
+    {
+      "q": "norvegia",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.039",
+          "matvaretabellen:01.246",
+          "matvaretabellen:01.040",
+          "matvaretabellen:01.245",
+          "matvaretabellen:01.247"
+        ]
+      },
+      "kcal": 351,
+      "kcal_ref": "Matvaretabellen 2025, 01.039 cheese, hard, Norvegia",
+      "why": "Norvegia by name"
+    },
+    {
+      "q": "ris",
+      "expect": {
+        "records": [
+          "matvaretabellen:05.289",
+          "matvaretabellen:05.212",
+          "matvaretabellen:05.254",
+          "matvaretabellen:05.024"
+        ]
+      },
+      "kcal": 111,
+      "kcal_ref": "Matvaretabellen 2025, 05.289 white rice, cooked",
+      "why": "plain rice, cooked or dry"
+    },
+    {
+      "q": "pasta",
+      "expect": {
+        "records": [
+          "matvaretabellen:05.422",
+          "matvaretabellen:05.327",
+          "matvaretabellen:05.326",
+          "matvaretabellen:05.130",
+          "matvaretabellen:05.016"
+        ]
+      },
+      "kcal": 273,
+      "kcal_ref": "Matvaretabellen 2025, 05.327 fresh ravioli, uncooked",
+      "why": "the table's plain pasta entries are fresh filled pasta; still the honest answer"
+    },
+    {
+      "q": "kylling",
+      "expect": {
+        "records": [
+          "matvaretabellen:03.205",
+          "matvaretabellen:03.481",
+          "matvaretabellen:03.242",
+          "matvaretabellen:03.373",
+          "matvaretabellen:03.391"
+        ]
+      },
+      "kcal": 111,
+      "kcal_ref": "Matvaretabellen 2025, 03.205 chicken fillet, raw",
+      "why": "chicken fillet, the lean protein logged most"
+    },
+    {
+      "q": "eple",
+      "expect": {
+        "records": [
+          "matvaretabellen:06.529",
+          "matvaretabellen:06.620",
+          "matvaretabellen:06.848"
+        ]
+      },
+      "kcal": 49,
+      "kcal_ref": "Matvaretabellen 2025, 06.529 apple, Norwegian, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "banan",
+      "expect": {
+        "records": [
+          "matvaretabellen:06.525"
+        ]
+      },
+      "kcal": 88,
+      "kcal_ref": "Matvaretabellen 2025, 06.525 banana, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "kaffe",
+      "expect": {
+        "records": [
+          "matvaretabellen:13.009"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "Matvaretabellen 2025, 13.009 coffee, infusion",
+      "why": "plain brewed coffee"
+    },
+    {
+      "q": "øl",
+      "expect": {
+        "records": [
+          "matvaretabellen:13.024",
+          "matvaretabellen:13.023",
+          "matvaretabellen:13.022"
+        ]
+      },
+      "kcal": 41,
+      "kcal_ref": "Matvaretabellen 2025, 13.024 beer, pilsner 4.7 %",
+      "why": "a generic beer"
+    },
+    {
+      "q": "potet",
+      "expect": {
+        "records": [
+          "matvaretabellen:06.262",
+          "matvaretabellen:06.264",
+          "matvaretabellen:06.096",
+          "matvaretabellen:06.003"
+        ]
+      },
+      "kcal": 84,
+      "kcal_ref": "Matvaretabellen 2025, 06.262 potatoes, autumn, boiled",
+      "why": "boiled or raw potato"
+    },
+    {
+      "q": "egg",
+      "expect": {
+        "records": [
+          "matvaretabellen:02.001",
+          "matvaretabellen:02.026"
+        ]
+      },
+      "kcal": 149,
+      "kcal_ref": "Matvaretabellen 2025, 02.001 egg, raw",
+      "why": "a whole egg; spelled alike in Norwegian and English"
+    },
+    {
+      "q": "tomat",
+      "expect": {
+        "records": [
+          "matvaretabellen:06.069"
+        ]
+      },
+      "kcal": 12,
+      "kcal_ref": "Matvaretabellen 2025, 06.069 tomato, Norwegian, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "havregryn",
+      "expect": {
+        "records": [
+          "matvaretabellen:05.004"
+        ]
+      },
+      "kcal": 369,
+      "kcal_ref": "Matvaretabellen 2025, 05.004 oatmeal",
+      "why": "porridge oats"
+    },
+    {
+      "q": "laks",
+      "expect": {
+        "records": [
+          "matvaretabellen:04.220",
+          "matvaretabellen:04.226",
+          "matvaretabellen:04.018",
+          "matvaretabellen:04.015"
+        ]
+      },
+      "kcal": 223,
+      "kcal_ref": "Matvaretabellen 2025, 04.220 salmon, farmed, raw",
+      "why": "farmed Atlantic salmon"
+    },
+    {
+      "q": "smør",
+      "expect": {
+        "records": [
+          "matvaretabellen:08.005",
+          "matvaretabellen:08.237"
+        ]
+      },
+      "kcal": 744,
+      "kcal_ref": "Matvaretabellen 2025, 08.005 butter",
+      "why": "plain butter"
+    },
+    {
+      "q": "salmon",
+      "expect": {
+        "records": [
+          "matvaretabellen:04.220",
+          "matvaretabellen:04.018",
+          "matvaretabellen:04.015"
+        ]
+      },
+      "kcal": 223,
+      "kcal_ref": "Matvaretabellen 2025, 04.220 salmon, farmed, raw",
+      "why": "English query in Norway: the table names are English, this must hit"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "matvaretabellen:01.001",
+          "matvaretabellen:01.236"
+        ]
+      },
+      "kcal": 63,
+      "kcal_ref": "Matvaretabellen 2025, 01.001 whole milk 3.5 %",
+      "why": "English query in Norway"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "07622210882936",
+      "expect": {
+        "name": "(?i)freia"
+      },
+      "why": "Freia milk chocolate"
+    },
+    {
+      "barcode": "07038010017278",
+      "expect": {
+        "name": "(?i)jarlsberg"
+      },
+      "why": "Jarlsberg cheese"
+    },
+    {
+      "barcode": "07039010600651",
+      "expect": {
+        "name": "(?i)grandiosa"
+      },
+      "why": "Grandiosa, the Norwegian frozen pizza"
+    },
+    {
+      "barcode": "07622210816672",
+      "expect": {
+        "name": "(?i)kvikk"
+      },
+      "why": "Kvikk Lunsj wafer"
+    },
+    {
+      "barcode": "07038010068690",
+      "expect": {
+        "name": "(?i)tine"
+      },
+      "why": "Tine yogurt"
+    },
+    {
+      "barcode": "07039010132435",
+      "expect": {
+        "name": "(?i)stabburet|leverpostei"
+      },
+      "why": "Stabburet liver pâté"
+    },
+    {
+      "barcode": "07036110210933",
+      "expect": {
+        "name": "(?i)mills|majones"
+      },
+      "why": "Mills mayonnaise"
+    },
+    {
+      "barcode": "07037610042635",
+      "expect": {
+        "name": "(?i)toro|potetmos"
+      },
+      "why": "Toro mashed potato mix"
+    },
+    {
+      "barcode": "07034280002730",
+      "expect": {
+        "name": "(?i)brunost"
+      },
+      "why": "a packaged brown cheese"
+    },
+    {
+      "barcode": "7099900000053",
+      "not_found": true,
+      "why": "valid GS1-NO prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}
