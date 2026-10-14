@@ -22,11 +22,14 @@ URL_ENV = "FOODDB__REVIEW__URL"
 TIMEOUT = 30
 
 CHECKS = """\
-A check name filters to the records whose values failed that check (the `checks` facet lists them
-with counts): energy-mismatch (the declared calories disagree with the macros by Atwater),
-macros-over-100g (protein + fat + carbohydrate over 105 g per 100 g), sugars-over-carbs,
-saturates-over-fat, negative-value, out-of-range (a value outside its food group's range) and
-seal-disagreement (a "high in …" seal on the pack that the values do not reach)."""
+A check name filters to the records whose values failed that check. `facets` is the live list —
+it counts the names actually pending. Today those are: energy-mismatch (the declared calories
+disagree with the macros by Atwater), macros-over-100g (protein + fat + carbohydrate over 105 g
+per 100 g), sugars-over-carbs, saturates-over-fat, negative-value, out-of-range (a value outside
+its food group's range), carbs-regime-unknown (an OFF label's carbohydrate that does not say
+whether it is total or available; stored as total) and seal-disagreement (a "high in …" seal on
+the pack that the values do not reach). Records held back in full — review_all, e.g. recipes —
+carry no check name; they appear in the `sources` facet, not under a check."""
 
 DECISIONS = """\
 --accept marks the value accepted: the resolver may serve it from the next snapshot on. --reject
