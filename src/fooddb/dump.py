@@ -1,4 +1,4 @@
-"""Monthly ODbL dump: the Open Food Facts-derived layer of the newest final snapshot day, as gzipped NDJSON
+"""Monthly ODbL dump: the Open Food Facts-derived layer of the current snapshot, as gzipped NDJSON
 next to a JSON manifest. ODbL share-alike applies to it, so its routes need no key; they only count
 against the rate limit."""
 
@@ -13,7 +13,7 @@ from fastapi.responses import FileResponse
 from pydantic_core import to_json
 from sqlalchemy import text
 
-from fooddb import export, resolve, snapshot
+from fooddb import export, resolve
 from fooddb.db import engine
 from fooddb.fetchers.off import LICENCE
 
@@ -44,15 +44,16 @@ def odbl(p: dict) -> dict | None:
             "per_100": {n: v for n, v in p["per_100"].items() if ours(v)}}
 
 
-def final_day() -> date | None:
+def current_day() -> date | None:
+    """The day of the current snapshot. None before the first build."""
     with engine().connect() as conn:
-        return conn.execute(text("select max(day) from snapshot where day < :t"), {"t": snapshot.today()}).scalar_one()
+        return conn.execute(text("select max(day) from snapshot")).scalar_one()
 
 
 def write(out: Path | None = None) -> dict | None:
-    """Dump the newest final day into `out`, then keep only the newest FOODDB__BACKEND__DUMP_KEEP dumps there.
-    Returns the manifest, or None while no day is final."""
-    day = final_day()
+    """Dump the current snapshot into `out`, then keep only the newest FOODDB__BACKEND__DUMP_KEEP dumps there.
+    Returns the manifest, or None while no snapshot exists."""
+    day = current_day()
     if day is None:
         return None
     out = out or directory()
@@ -95,7 +96,8 @@ router = APIRouter(prefix="/v1/dumps", tags=["dumps"])
 
 @router.get("")
 def list_dumps() -> dict:
-    """The monthly ODbL dumps of the Open Food Facts layer, newest first: name, day, size, sha256, licence."""
+    """The monthly ODbL dumps of the Open Food Facts layer, newest first: name, day, size, sha256, licence.
+    Each dump holds the current snapshot of the day it was written on."""
     return {"items": manifests()}
 
 
