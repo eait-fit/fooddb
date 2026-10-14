@@ -152,20 +152,38 @@ class Decision(BaseModel):
 
 
 @review_router.get("/v1/review")
-def review_queue(limit: int = Query(100, ge=1, le=1000)) -> dict:
-    """Values a failed check held back, grouped per source record, next to the values served now."""
-    return {"items": review.queue(limit)}
+def review_queue(limit: int = Query(100, ge=1, le=1000), offset: int = Query(0, ge=0),
+                 check: str | None = None, source: str | None = None, detail: bool = False) -> dict:
+    """Values a failed check held back, grouped per source record, next to the values served now.
+    `check` and `source` filter, `offset` pages, `detail` adds each record's latest values and a line
+    per failed check with its numbers."""
+    return {"items": review.queue(limit, offset=offset, check=check, source=source, detail=detail)}
 
 
-@review_router.post("/v1/review/{observation_id}")
-def decide_review(observation_id: int, body: Decision) -> dict:
-    """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
+@review_router.get("/v1/review/facets")
+def review_facets(check: str | None = None, source: str | None = None) -> dict:
+    """How many records wait in the queue: in total under both filters, per check under `source`,
+    per source under `check`."""
+    return review.facets(check=check, source=source)
+
+
+def _decide(observation_id: int, body: Decision, key_name: str | None) -> dict:
+    """`by` is who decided; when it differs from the caller's key name, both are recorded — a key
+    cannot sign as someone else."""
+    by = body.by if key_name is None or body.by == key_name else f"{body.by} (key {key_name})"
     try:
-        return review.decide(observation_id, body.decision, body.by, body.note)
+        return review.decide(observation_id, body.decision, by, body.note)
     except review.NotPending as e:
         raise HTTPException(409, str(e))
     except LookupError as e:
         raise HTTPException(404, str(e))
+
+
+@review_router.post("/v1/review/{observation_id}")
+def decide_review(request: Request, observation_id: int, body: Decision) -> dict:
+    """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
+    caller = getattr(request.state, "caller", None)
+    return _decide(observation_id, body, caller.name if caller else None)
 
 
 class Split(BaseModel):
@@ -298,14 +316,16 @@ def _tool(handler, *args, **kwargs) -> dict:
         raise ToolError(e.detail)
 
 
-def _needs(ctx: Context, scope: str) -> None:
-    """Over HTTP, the caller the /mcp route authenticated must hold the scope. stdio is local and trusted."""
+def _needs(ctx: Context, scope: str) -> auth.Caller | None:
+    """Over HTTP, the caller the /mcp route authenticated must hold the scope; it is returned so a
+    tool can record who called. stdio is local and trusted: no caller."""
     request = ctx.request_context.request
     if request is None:
-        return
+        return None
     caller = request.scope.get("state", {}).get("caller")
     if caller is None or scope not in caller.scopes:
         raise ToolError(f"this tool needs an API key with the {scope} scope")
+    return caller
 
 
 def _include(include_off: bool) -> str | None:
@@ -350,18 +370,23 @@ def health_report() -> dict[str, Any]:
 
 
 @mcp.tool(name="review_queue")
-def review_queue_tool(ctx: Context, limit: Annotated[int, Field(ge=1, le=1000)] = 100) -> dict[str, Any]:
-    """Values a failed check held back, grouped per source record, next to the values served now."""
+def review_queue_tool(ctx: Context, limit: Annotated[int, Field(ge=1, le=1000)] = 100,
+                      offset: Annotated[int, Field(ge=0)] = 0, check: str | None = None,
+                      source: str | None = None, detail: bool = False) -> dict[str, Any]:
+    """Values a failed check held back, grouped per source record, next to the values served now.
+    `check` and `source` filter, `offset` pages, `detail` adds each record's latest values and a line
+    per failed check with its numbers."""
     _needs(ctx, "review")
-    return _tool(review_queue, limit)
+    return _tool(review_queue, limit=limit, offset=offset, check=check, source=source, detail=detail)
 
 
 @mcp.tool(name="decide_review")
 def decide_review_tool(ctx: Context, observation_id: int, decision: Literal["accept", "reject"], by: str,
                        note: str | None = None) -> dict[str, Any]:
     """Accept a pending value (served from the next snapshot on) or reject it (never served). `by` names who decided."""
-    _needs(ctx, "review")
-    return _tool(decide_review, observation_id, Decision(decision=decision, by=by, note=note))
+    caller = _needs(ctx, "review")
+    return _tool(_decide, observation_id, Decision(decision=decision, by=by, note=note),
+                 caller.name if caller else None)
 
 
 @mcp.tool(name="split_product")
