@@ -84,8 +84,9 @@ The worker never fetches the full OFF dump on a schedule. An operator starts it 
 (`jobs.py:75`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
 A consumer that keeps a local copy, such as eait, reads the snapshot export. See
-[`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). The eait job that loads the export
-is not built. See [Planned, not built](#planned-not-built).
+[`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). eait's leading backend checks
+`built_at` hourly and loads the export when it changed; the check is the cheap `GET /v1/snapshots`
+list, and the export downloads only on a new build.
 
 ## Deployment
 
@@ -1609,9 +1610,9 @@ flowchart LR
     listing -.->|"X-RapidAPI-Proxy-Secret"| auth
     auth --> api
     snap --> exp
-    exp -.->|"nightly refresh"| eaitc
+    exp -->|"built_at check hourly, export on change"| eaitc
     classDef planned stroke-dasharray: 5 5
-    class tables,eaitp,devin,listing,eaitc planned
+    class tables,eaitp,devin,listing planned
 ```
 
 - **Intake.** Other national composition tables: Korea MFDS
@@ -1622,5 +1623,3 @@ flowchart LR
 - **Model port.** A Devin backend. The port has OpenRouter, Claude Code and Codex CLI.
 - **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
   listing's proxy secret as a `read` key. See [Authentication](#authentication).
-- **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot
-  export. The export exists. The eait job that loads it does not.
