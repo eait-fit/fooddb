@@ -1,0 +1,367 @@
+{
+  "country": "de",
+  "queries": [
+    {
+      "q": "Vollkornbrot",
+      "expect": {
+        "records": [
+          "bls:B111000",
+          "bls:B122000",
+          "bls:B291000"
+        ]
+      },
+      "kcal": 180,
+      "kcal_ref": "BLS 4.0 (2025) B111000 wholemeal wheat bread",
+      "why": "everyday wholegrain bread; a German query must reach the BLS table"
+    },
+    {
+      "q": "Roggenbrot",
+      "expect": {
+        "records": [
+          "bls:B221000",
+          "bls:B122000",
+          "bls:B227300",
+          "bls:B121000"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "BLS 4.0 (2025) B221000 rye bread",
+      "why": "rye bread is the German bread staple"
+    },
+    {
+      "q": "Weizenbrötchen",
+      "expect": {
+        "records": [
+          "bls:B511000"
+        ]
+      },
+      "kcal": 280,
+      "kcal_ref": "BLS 4.0 (2025) B511000 wheat roll",
+      "why": "the breakfast roll"
+    },
+    {
+      "q": "Vollmilch",
+      "expect": {
+        "records": [
+          "bls:M111300",
+          "bls:M113300"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M111300 whole milk 3.5 %",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "Magermilch",
+      "expect": {
+        "records": [
+          "bls:M111100",
+          "bls:M113100"
+        ]
+      },
+      "kcal": 34,
+      "kcal_ref": "BLS 4.0 (2025) M111100 skimmed milk",
+      "why": "common low-fat milk variant"
+    },
+    {
+      "q": "Joghurt",
+      "expect": {
+        "records": [
+          "bls:M141200",
+          "bls:M141100",
+          "bls:M2N6400"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M141200 low-fat yogurt, plain",
+      "why": "plain yogurt; the table has no fruit varieties as the generic answer"
+    },
+    {
+      "q": "Gouda",
+      "expect": {
+        "records": [
+          "bls:M402600",
+          "bls:M402500",
+          "bls:M402400",
+          "fdc:171241"
+        ]
+      },
+      "kcal": 379,
+      "kcal_ref": "BLS 4.0 (2025) M402600 Gouda 48 % f.i.d.m.",
+      "why": "the default sliced cheese in DE"
+    },
+    {
+      "q": "Reis",
+      "expect": {
+        "records": [
+          "bls:C352000",
+          "bls:C351000",
+          "bls:C359000",
+          "bls:X820162"
+        ]
+      },
+      "kcal": 351,
+      "kcal_ref": "BLS 4.0 (2025) C352000 white rice, raw",
+      "why": "plain rice; dry and cooked entries both answer it"
+    },
+    {
+      "q": "Nudeln",
+      "expect": {
+        "records": [
+          "bls:E432000",
+          "bls:E432032"
+        ]
+      },
+      "kcal": 342,
+      "kcal_ref": "BLS 4.0 (2025) E432000 egg pasta, raw",
+      "why": "generic pasta as eaten and as bought"
+    },
+    {
+      "q": "Spaghetti",
+      "expect": {
+        "records": [
+          "bls:E432000",
+          "bls:E432032",
+          "bls:C559000",
+          "fdc:168911",
+          "fdc:168912"
+        ]
+      },
+      "kcal": 342,
+      "kcal_ref": "BLS 4.0 (2025) E432000 egg pasta, raw",
+      "why": "BLS has no separate spaghetti entry; egg pasta is the held equivalent"
+    },
+    {
+      "q": "Hähnchenbrust",
+      "expect": {
+        "records": [
+          "bls:V416100",
+          "bls:V416132",
+          "bls:V416200",
+          "bls:V416172",
+          "bls:V4A6100"
+        ]
+      },
+      "kcal": 109,
+      "kcal_ref": "BLS 4.0 (2025) V416100 chicken breast fillet, raw",
+      "why": "the lean protein logged most"
+    },
+    {
+      "q": "Apfel",
+      "expect": {
+        "records": [
+          "bls:F110100"
+        ]
+      },
+      "kcal": 58,
+      "kcal_ref": "BLS 4.0 (2025) F110100 apple, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "Banane",
+      "expect": {
+        "records": [
+          "bls:F503100"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "BLS 4.0 (2025) F503100 banana, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "Kaffee",
+      "expect": {
+        "records": [
+          "bls:N410100"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "BLS 4.0 (2025) N410100 coffee, infusion",
+      "why": "plain brewed coffee, no milk or sugar"
+    },
+    {
+      "q": "Bier",
+      "expect": {
+        "records": [
+          "bls:P161000",
+          "bls:P150000",
+          "bls:P165000",
+          "bls:P1A4000"
+        ]
+      },
+      "kcal": 36,
+      "kcal_ref": "BLS 4.0 (2025) P161000 pale beer",
+      "why": "a generic beer should answer a generic beer"
+    },
+    {
+      "q": "Kartoffel",
+      "expect": {
+        "records": [
+          "bls:K120100",
+          "bls:K110100",
+          "bls:K110132",
+          "bls:K120134"
+        ]
+      },
+      "kcal": 86,
+      "kcal_ref": "BLS 4.0 (2025) K120100 potato, unpeeled, raw",
+      "why": "potato raw or boiled is the honest answer"
+    },
+    {
+      "q": "Ei",
+      "expect": {
+        "records": [
+          "bls:E111100",
+          "bls:E111132"
+        ]
+      },
+      "kcal": 135,
+      "kcal_ref": "BLS 4.0 (2025) E111100 chicken egg, raw",
+      "why": "a whole chicken egg"
+    },
+    {
+      "q": "Tomate",
+      "expect": {
+        "records": [
+          "bls:G561100"
+        ]
+      },
+      "kcal": 22,
+      "kcal_ref": "BLS 4.0 (2025) G561100 tomato, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "Haferflocken",
+      "expect": {
+        "records": [
+          "bls:C133000"
+        ]
+      },
+      "kcal": 348,
+      "kcal_ref": "BLS 4.0 (2025) C133000 oat flakes",
+      "why": "porridge oats"
+    },
+    {
+      "q": "Butter",
+      "expect": {
+        "records": [
+          "bls:Q611000",
+          "bls:Q6A4000"
+        ]
+      },
+      "kcal": 747,
+      "kcal_ref": "BLS 4.0 (2025) Q611000 butter",
+      "why": "plain butter"
+    },
+    {
+      "q": "rye bread",
+      "expect": {
+        "records": [
+          "bls:B221000",
+          "bls:B122000",
+          "bls:B121000"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "BLS 4.0 (2025) B221000 rye bread",
+      "why": "English query in Germany: the BLS names are English, this must hit"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "bls:M111300",
+          "bls:M113300"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M111300 whole milk 3.5 %",
+      "why": "English query in Germany"
+    },
+    {
+      "q": "chicken breast",
+      "expect": {
+        "records": [
+          "bls:V416100",
+          "bls:V416132",
+          "bls:V416200",
+          "bls:V416172",
+          "bls:V4A6100"
+        ]
+      },
+      "kcal": 109,
+      "kcal_ref": "BLS 4.0 (2025) V416100 chicken breast fillet, raw",
+      "why": "English query in Germany"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "00000080050698",
+      "expect": {
+        "name": "(?i)nutella"
+      },
+      "why": "Nutella, the top-selling spread in DE"
+    },
+    {
+      "barcode": "07622201446390",
+      "expect": {
+        "name": "(?i)milka"
+      },
+      "why": "Milka chocolate"
+    },
+    {
+      "barcode": "04001686328330",
+      "expect": {
+        "name": "(?i)haribo"
+      },
+      "why": "Haribo gummies"
+    },
+    {
+      "barcode": "00000042486244",
+      "expect": {
+        "name": "(?i)ritter"
+      },
+      "why": "Ritter Sport chocolate"
+    },
+    {
+      "barcode": "04260038331019",
+      "expect": {
+        "name": "(?i)apfelsaft|apple juice"
+      },
+      "why": "apple juice, a DE staple"
+    },
+    {
+      "barcode": "00000020230043",
+      "expect": {
+        "name": "(?i)kaffee|coffee"
+      },
+      "why": "packaged coffee"
+    },
+    {
+      "barcode": "04053400257662",
+      "expect": {
+        "name": "(?i)bier|beer"
+      },
+      "why": "a German beer"
+    },
+    {
+      "barcode": "04056489442707",
+      "expect": {
+        "name": "(?i)vollkornbrot|wholemeal|whole grain"
+      },
+      "why": "packaged wholemeal bread"
+    },
+    {
+      "barcode": "00000080050100",
+      "expect": {
+        "name": "(?i)nutella"
+      },
+      "why": "Nutella & GO single-serve"
+    },
+    {
+      "barcode": "4009990000010",
+      "not_found": true,
+      "why": "valid GS1-DE prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

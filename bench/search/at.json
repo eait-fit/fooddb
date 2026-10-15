@@ -1,0 +1,335 @@
+{
+  "country": "at",
+  "queries": [
+    {
+      "q": "Semmel",
+      "expect": {
+        "records": [
+          "bls:B511000"
+        ]
+      },
+      "kcal": 280,
+      "kcal_ref": "BLS 4.0 (2025) B511000 wheat roll",
+      "why": "the Austrian breakfast roll"
+    },
+    {
+      "q": "Topfen",
+      "expect": {
+        "records": [
+          "bls:M713100",
+          "bls:M713300",
+          "bls:M713500",
+          "bls:M713700"
+        ]
+      },
+      "kcal": 110,
+      "kcal_ref": "BLS 4.0 (2025) M713300 quark 20 % f.i.d.m.",
+      "why": "Austrian curd cheese; BLS quark is the same food"
+    },
+    {
+      "q": "Joghurt",
+      "expect": {
+        "records": [
+          "bls:M141200",
+          "bls:M141100",
+          "bls:M2N6400"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M141200 low-fat yogurt, plain",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "Vollmilch",
+      "expect": {
+        "records": [
+          "bls:M111300",
+          "bls:M113300"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M111300 whole milk 3.5 %",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "Vollkornbrot",
+      "expect": {
+        "records": [
+          "bls:B111000",
+          "bls:B122000",
+          "bls:B291000"
+        ]
+      },
+      "kcal": 180,
+      "kcal_ref": "BLS 4.0 (2025) B111000 wholemeal wheat bread",
+      "why": "wholegrain bread"
+    },
+    {
+      "q": "Roggenbrot",
+      "expect": {
+        "records": [
+          "bls:B221000",
+          "bls:B122000",
+          "bls:B121000"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "BLS 4.0 (2025) B221000 rye bread",
+      "why": "rye bread"
+    },
+    {
+      "q": "Gouda",
+      "expect": {
+        "records": [
+          "bls:M402600",
+          "bls:M402500",
+          "fdc:171241"
+        ]
+      },
+      "kcal": 379,
+      "kcal_ref": "BLS 4.0 (2025) M402600 Gouda 48 % f.i.d.m.",
+      "why": "sliced cheese"
+    },
+    {
+      "q": "Reis",
+      "expect": {
+        "records": [
+          "bls:C352000",
+          "bls:C359000",
+          "bls:X820162"
+        ]
+      },
+      "kcal": 351,
+      "kcal_ref": "BLS 4.0 (2025) C352000 white rice, raw",
+      "why": "plain rice"
+    },
+    {
+      "q": "Nudeln",
+      "expect": {
+        "records": [
+          "bls:E432000",
+          "bls:E432032"
+        ]
+      },
+      "kcal": 342,
+      "kcal_ref": "BLS 4.0 (2025) E432000 egg pasta, raw",
+      "why": "generic pasta"
+    },
+    {
+      "q": "Hähnchenbrust",
+      "expect": {
+        "records": [
+          "bls:V416100",
+          "bls:V416132",
+          "bls:V416200",
+          "bls:V416172",
+          "bls:V4A6100"
+        ]
+      },
+      "kcal": 109,
+      "kcal_ref": "BLS 4.0 (2025) V416100 chicken breast fillet, raw",
+      "why": "lean protein"
+    },
+    {
+      "q": "Apfel",
+      "expect": {
+        "records": [
+          "bls:F110100"
+        ]
+      },
+      "kcal": 58,
+      "kcal_ref": "BLS 4.0 (2025) F110100 apple, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "Banane",
+      "expect": {
+        "records": [
+          "bls:F503100"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "BLS 4.0 (2025) F503100 banana, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "Kaffee",
+      "expect": {
+        "records": [
+          "bls:N410100"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "BLS 4.0 (2025) N410100 coffee, infusion",
+      "why": "plain brewed coffee"
+    },
+    {
+      "q": "Bier",
+      "expect": {
+        "records": [
+          "bls:P161000",
+          "bls:P150000",
+          "bls:P165000",
+          "bls:P1A4000"
+        ]
+      },
+      "kcal": 36,
+      "kcal_ref": "BLS 4.0 (2025) P161000 pale beer",
+      "why": "generic beer"
+    },
+    {
+      "q": "Kartoffel",
+      "expect": {
+        "records": [
+          "bls:K120100",
+          "bls:K110100",
+          "bls:K110132"
+        ]
+      },
+      "kcal": 86,
+      "kcal_ref": "BLS 4.0 (2025) K120100 potato, unpeeled, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "Ei",
+      "expect": {
+        "records": [
+          "bls:E111100",
+          "bls:E111132"
+        ]
+      },
+      "kcal": 135,
+      "kcal_ref": "BLS 4.0 (2025) E111100 chicken egg, raw",
+      "why": "a whole chicken egg"
+    },
+    {
+      "q": "Tomate",
+      "expect": {
+        "records": [
+          "bls:G561100"
+        ]
+      },
+      "kcal": 22,
+      "kcal_ref": "BLS 4.0 (2025) G561100 tomato, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "Butter",
+      "expect": {
+        "records": [
+          "bls:Q611000",
+          "bls:Q6A4000"
+        ]
+      },
+      "kcal": 747,
+      "kcal_ref": "BLS 4.0 (2025) Q611000 butter",
+      "why": "plain butter"
+    },
+    {
+      "q": "Apfelsaft",
+      "expect": {
+        "records": [
+          "bls:F110600"
+        ]
+      },
+      "kcal": 44,
+      "kcal_ref": "BLS 4.0 (2025) F110600 apple juice",
+      "why": "apple juice, the Austrian soft drink"
+    },
+    {
+      "q": "rye bread",
+      "expect": {
+        "records": [
+          "bls:B221000",
+          "bls:B122000",
+          "bls:B121000"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "BLS 4.0 (2025) B221000 rye bread",
+      "why": "English query in Austria: the BLS names are English, this must hit"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "bls:M111300",
+          "bls:M113300"
+        ]
+      },
+      "kcal": 62,
+      "kcal_ref": "BLS 4.0 (2025) M111300 whole milk 3.5 %",
+      "why": "English query in Austria"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "09015160706052",
+      "expect": {
+        "name": "(?i)almdudler"
+      },
+      "why": "Almdudler, the Austrian soft drink"
+    },
+    {
+      "barcode": "09007600306755",
+      "expect": {
+        "name": "(?i)ottakringer"
+      },
+      "why": "Ottakringer lager, the Viennese beer"
+    },
+    {
+      "barcode": "09001432039058",
+      "expect": {
+        "name": "(?i)darbo"
+      },
+      "why": "Darbo raspberry jam"
+    },
+    {
+      "barcode": "09003402620082",
+      "expect": {
+        "name": "(?i)stiegl"
+      },
+      "why": "Stiegl, the Salzburg beer"
+    },
+    {
+      "barcode": "09019100194800",
+      "expect": {
+        "name": "(?i)n[öo]m"
+      },
+      "why": "NÖM milk drink"
+    },
+    {
+      "barcode": "09066001988700",
+      "expect": {
+        "name": "(?i)sch[aä]rdinger"
+      },
+      "why": "Schärdinger gouda"
+    },
+    {
+      "barcode": "05999033896665",
+      "expect": {
+        "name": "(?i)wiesbauer|sonka|ham"
+      },
+      "why": "Wiesbauer cooked ham"
+    },
+    {
+      "barcode": "09000331635583",
+      "expect": {
+        "name": "(?i)manner"
+      },
+      "why": "Manner wafers"
+    },
+    {
+      "barcode": "07622200009305",
+      "expect": {
+        "name": "(?i)mozartkugel|mozart"
+      },
+      "why": "Salzburger Mozartkugel"
+    },
+    {
+      "barcode": "9009990000022",
+      "not_found": true,
+      "why": "valid GS1-AT prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

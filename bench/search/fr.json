@@ -1,0 +1,369 @@
+{
+  "country": "fr",
+  "queries": [
+    {
+      "q": "pain complet",
+      "expect": {
+        "records": [
+          "ciqual:7110"
+        ]
+      },
+      "kcal": 234,
+      "kcal_ref": "CIQUAL 2025, 7110 French bread, wholemeal",
+      "why": "wholemeal bread; a French query must reach the CIQUAL table"
+    },
+    {
+      "q": "baguette",
+      "expect": {
+        "records": [
+          "ciqual:7001"
+        ]
+      },
+      "kcal": 287,
+      "kcal_ref": "CIQUAL 2025, 7001 French bread, baguette",
+      "why": "the French bread"
+    },
+    {
+      "q": "pain",
+      "expect": {
+        "records": [
+          "ciqual:7000",
+          "ciqual:7001"
+        ]
+      },
+      "kcal": 276,
+      "kcal_ref": "CIQUAL 2025, 7000 bread, average",
+      "why": "generic bread"
+    },
+    {
+      "q": "lait entier",
+      "expect": {
+        "records": [
+          "ciqual:19016",
+          "ciqual:19023",
+          "ciqual:19010"
+        ]
+      },
+      "kcal": 63.9,
+      "kcal_ref": "CIQUAL 2025, 19016 whole milk, average",
+      "why": "whole milk"
+    },
+    {
+      "q": "lait",
+      "expect": {
+        "records": [
+          "ciqual:19016",
+          "ciqual:19023",
+          "ciqual:19033",
+          "ciqual:19041",
+          "ciqual:19010"
+        ]
+      },
+      "kcal": 63.9,
+      "kcal_ref": "CIQUAL 2025, 19016 whole milk, average",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "yaourt",
+      "expect": {
+        "records": [
+          "ciqual:19600",
+          "ciqual:19624"
+        ]
+      },
+      "kcal": 62.3,
+      "kcal_ref": "CIQUAL 2025, 19600 yoghurt or fermented milk, plain",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "camembert",
+      "expect": {
+        "records": [
+          "ciqual:12001",
+          "ciqual:12006",
+          "ciqual:12007"
+        ]
+      },
+      "kcal": 280,
+      "kcal_ref": "CIQUAL 2025, 12001 Camembert",
+      "why": "the French cheese"
+    },
+    {
+      "q": "brie",
+      "expect": {
+        "records": [
+          "ciqual:12020",
+          "ciqual:12021",
+          "ciqual:12022",
+          "fdc:172177",
+          "frida:1774"
+        ]
+      },
+      "kcal": 345,
+      "kcal_ref": "CIQUAL 2025, 12020 Brie",
+      "why": "the other French cheese"
+    },
+    {
+      "q": "riz",
+      "expect": {
+        "records": [
+          "ciqual:9100",
+          "ciqual:9101",
+          "ciqual:9104",
+          "ciqual:9105"
+        ]
+      },
+      "kcal": 350,
+      "kcal_ref": "CIQUAL 2025, 9100 white rice, raw",
+      "why": "plain rice"
+    },
+    {
+      "q": "pâtes",
+      "expect": {
+        "records": [
+          "ciqual:9821",
+          "ciqual:9815",
+          "ciqual:9875",
+          "ciqual:9876"
+        ]
+      },
+      "kcal": 381,
+      "kcal_ref": "CIQUAL 2025, 9821 pasta with egg, dry",
+      "why": "generic pasta"
+    },
+    {
+      "q": "poulet",
+      "expect": {
+        "records": [
+          "ciqual:36017",
+          "ciqual:36029",
+          "ciqual:36018"
+        ]
+      },
+      "kcal": 110,
+      "kcal_ref": "CIQUAL 2025, 36017 chicken breast without skin, raw",
+      "why": "chicken breast, the lean protein logged most"
+    },
+    {
+      "q": "pomme",
+      "expect": {
+        "records": [
+          "ciqual:13039",
+          "ciqual:13396",
+          "ciqual:13085"
+        ]
+      },
+      "kcal": 54,
+      "kcal_ref": "CIQUAL 2025, 13039 apple, flesh and skin, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "banane",
+      "expect": {
+        "records": [
+          "ciqual:13005"
+        ]
+      },
+      "kcal": 87.6,
+      "kcal_ref": "CIQUAL 2025, 13005 banana, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "café",
+      "expect": {
+        "records": [
+          "ciqual:18004",
+          "ciqual:18072",
+          "ciqual:18003"
+        ]
+      },
+      "kcal": 5.78,
+      "kcal_ref": "CIQUAL 2025, 18004 coffee, ready-to-drink",
+      "why": "plain coffee"
+    },
+    {
+      "q": "bière",
+      "expect": {
+        "records": [
+          "ciqual:5001",
+          "ciqual:5000",
+          "ciqual:5010"
+        ]
+      },
+      "kcal": 39,
+      "kcal_ref": "CIQUAL 2025, 5001 beer, regular 4-5°",
+      "why": "generic beer"
+    },
+    {
+      "q": "pomme de terre",
+      "expect": {
+        "records": [
+          "ciqual:4003",
+          "ciqual:4014"
+        ]
+      },
+      "kcal": 81,
+      "kcal_ref": "CIQUAL 2025, 4003 potato, boiled",
+      "why": "boiled potato"
+    },
+    {
+      "q": "oeuf",
+      "expect": {
+        "records": [
+          "ciqual:22000"
+        ]
+      },
+      "kcal": 140,
+      "kcal_ref": "CIQUAL 2025, 22000 egg, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "tomate",
+      "expect": {
+        "records": [
+          "ciqual:20385",
+          "ciqual:20192",
+          "ciqual:20345",
+          "ciqual:20584"
+        ]
+      },
+      "kcal": 19.2,
+      "kcal_ref": "CIQUAL 2025, 20385 tomato, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "beurre",
+      "expect": {
+        "records": [
+          "ciqual:16400",
+          "ciqual:16402",
+          "ciqual:16403"
+        ]
+      },
+      "kcal": 753,
+      "kcal_ref": "CIQUAL 2025, 16400 butter, unsalted",
+      "why": "plain butter"
+    },
+    {
+      "q": "lentilles",
+      "expect": {
+        "records": [
+          "ciqual:20360",
+          "ciqual:20359",
+          "ciqual:20587",
+          "ciqual:20588",
+          "ciqual:20585",
+          "ciqual:20586"
+        ]
+      },
+      "kcal": 125,
+      "kcal_ref": "CIQUAL 2025, 20360 lentils, boiled",
+      "why": "the French pulse"
+    },
+    {
+      "q": "vin rouge",
+      "expect": {
+        "records": [
+          "ciqual:5214"
+        ]
+      },
+      "kcal": 75.7,
+      "kcal_ref": "CIQUAL 2025, 5214 red wine",
+      "why": "red wine"
+    },
+    {
+      "q": "wholemeal bread",
+      "expect": {
+        "records": [
+          "ciqual:7110"
+        ]
+      },
+      "kcal": 234,
+      "kcal_ref": "CIQUAL 2025, 7110 French bread, wholemeal",
+      "why": "English query in France: the CIQUAL names are English, this must hit"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "ciqual:19016",
+          "ciqual:19023",
+          "ciqual:19010"
+        ]
+      },
+      "kcal": 63.9,
+      "kcal_ref": "CIQUAL 2025, 19016 whole milk, average",
+      "why": "English query in France"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "03017620420443",
+      "expect": {
+        "name": "(?i)nutella"
+      },
+      "why": "Nutella, a top seller in FR"
+    },
+    {
+      "barcode": "03275240312016",
+      "expect": {
+        "name": "(?i)camembert"
+      },
+      "why": "a Camembert"
+    },
+    {
+      "barcode": "03249760000654",
+      "expect": {
+        "name": "(?i)orangina"
+      },
+      "why": "Orangina"
+    },
+    {
+      "barcode": "00305764038512",
+      "expect": {
+        "name": "(?i)volvic"
+      },
+      "why": "Volvic water"
+    },
+    {
+      "barcode": "03083680020763",
+      "expect": {
+        "name": "(?i)bonduelle"
+      },
+      "why": "Bonduelle corn"
+    },
+    {
+      "barcode": "03155250367018",
+      "expect": {
+        "name": "(?i)pr[eé]sident"
+      },
+      "why": "Président butter"
+    },
+    {
+      "barcode": "03760253430081",
+      "expect": {
+        "name": "(?i)saumon|petit navire|salmon"
+      },
+      "why": "Petit Navire smoked salmon"
+    },
+    {
+      "barcode": "08054491010064",
+      "expect": {
+        "name": "(?i)danone"
+      },
+      "why": "Danone yogurt"
+    },
+    {
+      "barcode": "07622210022776",
+      "expect": {
+        "name": "(?i)milka"
+      },
+      "why": "Milka LU biscuits"
+    },
+    {
+      "barcode": "3009990000035",
+      "not_found": true,
+      "why": "valid GS1-FR prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

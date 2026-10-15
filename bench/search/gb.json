@@ -1,0 +1,374 @@
+{
+  "country": "gb",
+  "queries": [
+    {
+      "q": "wholemeal bread",
+      "expect": {
+        "records": [
+          "cofid:11-981",
+          "cofid:11-982",
+          "bls:B101000",
+          "frida:672"
+        ]
+      },
+      "kcal": 217,
+      "kcal_ref": "CoFID 2021, 11-981 bread, wholemeal, average",
+      "why": "the British wholegrain bread"
+    },
+    {
+      "q": "white bread",
+      "expect": {
+        "records": [
+          "cofid:11-1145",
+          "cofid:11-979",
+          "cofid:11-977",
+          "cofid:11-976",
+          "cofid:11-980",
+          "cofid:11-1001"
+        ]
+      },
+      "kcal": 236,
+      "kcal_ref": "CoFID 2021, 11-1145 bread, white, average",
+      "why": "the everyday loaf"
+    },
+    {
+      "q": "porridge oats",
+      "expect": {
+        "records": [
+          "cofid:11-788",
+          "cofid:11-789"
+        ]
+      },
+      "kcal": 381,
+      "kcal_ref": "CoFID 2021, 11-788 porridge oats, unfortified",
+      "why": "the British breakfast"
+    },
+    {
+      "q": "whole milk",
+      "expect": {
+        "records": [
+          "cofid:12-596",
+          "cofid:12-320"
+        ]
+      },
+      "kcal": 63,
+      "kcal_ref": "CoFID 2021, 12-596 milk, whole, pasteurised",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "semi-skimmed milk",
+      "expect": {
+        "records": [
+          "cofid:12-313",
+          "cofid:12-314"
+        ]
+      },
+      "kcal": 46,
+      "kcal_ref": "CoFID 2021, 12-313 milk, semi-skimmed, pasteurised",
+      "why": "the most-drunk milk in GB"
+    },
+    {
+      "q": "cheddar",
+      "expect": {
+        "records": [
+          "cofid:12-346",
+          "cofid:12-548",
+          "cofid:12-348"
+        ]
+      },
+      "kcal": 416,
+      "kcal_ref": "CoFID 2021, 12-346 cheddar, English",
+      "why": "the British cheese"
+    },
+    {
+      "q": "rice",
+      "expect": {
+        "records": [
+          "cofid:11-858",
+          "cofid:11-862",
+          "cofid:11-857",
+          "cofid:11-868",
+          "cofid:11-869",
+          "cofid:11-876",
+          "cofid:11-872"
+        ]
+      },
+      "kcal": 117,
+      "kcal_ref": "CoFID 2021, 11-858 white basmati rice, boiled",
+      "why": "plain rice, cooked or dry"
+    },
+    {
+      "q": "spaghetti",
+      "expect": {
+        "records": [
+          "cofid:11-722",
+          "cofid:11-716",
+          "cofid:11-1129",
+          "cofid:11-718"
+        ]
+      },
+      "kcal": 141,
+      "kcal_ref": "CoFID 2021, 11-722 spaghetti, boiled",
+      "why": "plain pasta"
+    },
+    {
+      "q": "chicken breast",
+      "expect": {
+        "records": [
+          "cofid:18-323",
+          "cofid:18-324",
+          "cofid:18-325",
+          "cofid:18-307"
+        ]
+      },
+      "kcal": 148,
+      "kcal_ref": "CoFID 2021, 18-323 chicken breast, grilled without skin",
+      "why": "the lean protein logged most"
+    },
+    {
+      "q": "apple",
+      "expect": {
+        "records": [
+          "cofid:14-319",
+          "cofid:14-362"
+        ]
+      },
+      "kcal": 51,
+      "kcal_ref": "CoFID 2021, 14-319 apples, eating, raw",
+      "why": "the default fruit"
+    },
+    {
+      "q": "banana",
+      "expect": {
+        "records": [
+          "cofid:14-318"
+        ]
+      },
+      "kcal": 81,
+      "kcal_ref": "CoFID 2021, 14-318 bananas, flesh only",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "coffee",
+      "expect": {
+        "records": [
+          "cofid:17-833",
+          "cofid:17-153",
+          "cofid:17-154"
+        ]
+      },
+      "kcal": 2,
+      "kcal_ref": "CoFID 2021, 17-833 coffee infusion, average",
+      "why": "plain brewed coffee"
+    },
+    {
+      "q": "beer",
+      "expect": {
+        "records": [
+          "cofid:17-506",
+          "cofid:17-749",
+          "cofid:17-751",
+          "cofid:17-208",
+          "cofid:17-748",
+          "bls:P161000"
+        ]
+      },
+      "kcal": 30,
+      "kcal_ref": "CoFID 2021, 17-506 bitter, average",
+      "why": "a pint of bitter or a standard lager"
+    },
+    {
+      "q": "potato",
+      "expect": {
+        "records": [
+          "cofid:13-495",
+          "cofid:13-610",
+          "cofid:13-491",
+          "cofid:13-618"
+        ]
+      },
+      "kcal": 68,
+      "kcal_ref": "CoFID 2021, 13-495 new potatoes, boiled",
+      "why": "boiled or baked potato"
+    },
+    {
+      "q": "egg",
+      "expect": {
+        "records": [
+          "cofid:12-937",
+          "cofid:12-940"
+        ]
+      },
+      "kcal": 131,
+      "kcal_ref": "CoFID 2021, 12-937 chicken eggs, whole, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "tomato",
+      "expect": {
+        "records": [
+          "cofid:13-517"
+        ]
+      },
+      "kcal": 14,
+      "kcal_ref": "CoFID 2021, 13-517 tomatoes, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "butter",
+      "expect": {
+        "records": [
+          "cofid:17-685",
+          "cofid:17-661"
+        ]
+      },
+      "kcal": 744,
+      "kcal_ref": "CoFID 2021, 17-685 butter, salted",
+      "why": "plain butter"
+    },
+    {
+      "q": "baked beans",
+      "expect": {
+        "records": [
+          "cofid:13-532",
+          "cofid:13-535",
+          "cofid:13-578",
+          "cofid:13-579",
+          "fdc:173731"
+        ]
+      },
+      "kcal": 81,
+      "kcal_ref": "CoFID 2021, 13-532 baked beans in tomato sauce",
+      "why": "the British side dish"
+    },
+    {
+      "q": "salmon",
+      "expect": {
+        "records": [
+          "cofid:16-356",
+          "cofid:16-357",
+          "cofid:16-412",
+          "cofid:16-485",
+          "cofid:16-486",
+          "cofid:16-487"
+        ]
+      },
+      "kcal": 217,
+      "kcal_ref": "CoFID 2021, 16-356 salmon, farmed, raw",
+      "why": "farmed Atlantic salmon"
+    },
+    {
+      "q": "tea",
+      "expect": {
+        "records": [
+          "cofid:17-165",
+          "cofid:17-167",
+          "cofid:17-166",
+          "cofid:17-171",
+          "cofid:17-172"
+        ]
+      },
+      "kcal": 0,
+      "kcal_ref": "CoFID 2021, 17-165 black tea, infusion",
+      "why": "a cup of tea"
+    },
+    {
+      "q": "digestive biscuits",
+      "expect": {
+        "records": [
+          "cofid:11-799",
+          "cofid:11-807",
+          "cofid:11-803"
+        ]
+      },
+      "kcal": 463,
+      "kcal_ref": "CoFID 2021, 11-799 digestive biscuits, plain",
+      "why": "the biscuit logged most"
+    },
+    {
+      "q": "carrots",
+      "expect": {
+        "records": [
+          "cofid:13-496",
+          "cofid:13-449",
+          "cofid:13-448",
+          "cofid:13-497",
+          "cofid:13-498"
+        ]
+      },
+      "kcal": 34,
+      "kcal_ref": "CoFID 2021, 13-496 carrots, old, raw",
+      "why": "raw carrot"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "07622201716950",
+      "expect": {
+        "name": "(?i)cadbury"
+      },
+      "why": "Cadbury chocolate"
+    },
+    {
+      "barcode": "05000328311692",
+      "expect": {
+        "name": "(?i)walkers"
+      },
+      "why": "Walkers crisps"
+    },
+    {
+      "barcode": "05000157158147",
+      "expect": {
+        "name": "(?i)heinz"
+      },
+      "why": "Heinz baked beans"
+    },
+    {
+      "barcode": "00000044934453",
+      "expect": {
+        "name": "(?i)marmite"
+      },
+      "why": "Marmite"
+    },
+    {
+      "barcode": "08712423020214",
+      "expect": {
+        "name": "(?i)pg.?tips"
+      },
+      "why": "PG Tips tea"
+    },
+    {
+      "barcode": "05010044025544",
+      "expect": {
+        "name": "(?i)warburtons"
+      },
+      "why": "Warburtons bread"
+    },
+    {
+      "barcode": "05010003063440",
+      "expect": {
+        "name": "(?i)hovis"
+      },
+      "why": "Hovis bread"
+    },
+    {
+      "barcode": "05000295147393",
+      "expect": {
+        "name": "(?i)cathedral"
+      },
+      "why": "Cathedral City cheddar"
+    },
+    {
+      "barcode": "05010102242302",
+      "expect": {
+        "name": "(?i)robinsons"
+      },
+      "why": "Robinsons squash"
+    },
+    {
+      "barcode": "5009990000040",
+      "not_found": true,
+      "why": "valid GS1-GB prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

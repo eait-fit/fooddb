@@ -1,0 +1,352 @@
+{
+  "country": "kz",
+  "queries": [
+    {
+      "q": "бешбармак",
+      "expect": {
+        "records": [
+          "recipe:beshbarmak",
+          "recipe:beshbarmak.ru"
+        ]
+      },
+      "kcal": 200,
+      "kcal_ref": "fooddb recipe beshbarmak, plausible band 140–260 (recipes.py)",
+      "why": "the national dish of Kazakhstan; the recipe layer carries it"
+    },
+    {
+      "q": "манты",
+      "expect": {
+        "records": [
+          "recipe:manty",
+          "recipe:manty.ru"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "fooddb recipe manty, plausible band 170–280 (recipes.py)",
+      "why": "steamed dumplings"
+    },
+    {
+      "q": "лагман",
+      "expect": {
+        "records": [
+          "recipe:lagman",
+          "recipe:lagman.ru"
+        ]
+      },
+      "kcal": 105,
+      "kcal_ref": "fooddb recipe lagman, plausible band 70–140 (recipes.py)",
+      "why": "the noodle dish"
+    },
+    {
+      "q": "самса",
+      "expect": {
+        "records": [
+          "recipe:samsa",
+          "recipe:samsa.ru"
+        ]
+      },
+      "kcal": 300,
+      "kcal_ref": "fooddb recipe samsa, plausible band 240–360 (recipes.py)",
+      "why": "the baked pastry"
+    },
+    {
+      "q": "баурсак",
+      "expect": {
+        "records": [
+          "recipe:baursak",
+          "recipe:baursak.ru"
+        ]
+      },
+      "kcal": 385,
+      "kcal_ref": "fooddb recipe baursak, plausible band 320–450 (recipes.py)",
+      "why": "the fried dough"
+    },
+    {
+      "q": "кумыс",
+      "expect": {
+        "records": [
+          "recipe:kumys",
+          "recipe:kumys.ru"
+        ]
+      },
+      "kcal": 50,
+      "kcal_ref": "fooddb recipe kumys, plausible band 30–70 (recipes.py)",
+      "why": "fermented mare's milk"
+    },
+    {
+      "q": "қымыз",
+      "expect": {
+        "records": [
+          "recipe:kumys",
+          "recipe:kumys.ru"
+        ]
+      },
+      "kcal": 50,
+      "kcal_ref": "fooddb recipe kumys, plausible band 30–70 (recipes.py)",
+      "why": "kumys in Kazakh spelling"
+    },
+    {
+      "q": "курт",
+      "expect": {
+        "records": [
+          "recipe:kurt",
+          "recipe:kurt.ru"
+        ]
+      },
+      "kcal": 350,
+      "kcal_ref": "fooddb recipe kurt, plausible band 280–420 (recipes.py)",
+      "why": "the dried cheese balls"
+    },
+    {
+      "q": "айран",
+      "expect": {
+        "records": [
+          "recipe:ayran",
+          "recipe:ayran.ru"
+        ]
+      },
+      "kcal": 32,
+      "kcal_ref": "fooddb recipe ayran, plausible band 20–45 (recipes.py)",
+      "why": "the yogurt drink"
+    },
+    {
+      "q": "шашлык",
+      "expect": {
+        "records": [
+          "recipe:shashlik",
+          "recipe:shashlik.ru"
+        ]
+      },
+      "kcal": 265,
+      "kcal_ref": "fooddb recipe shashlik, plausible band 190–340 (recipes.py)",
+      "why": "the skewers"
+    },
+    {
+      "q": "плов",
+      "expect": {
+        "records": [
+          "recipe:plov",
+          "recipe:plov.ru"
+        ]
+      },
+      "kcal": 200,
+      "kcal_ref": "fooddb recipe plov, plausible band 140–260 (recipes.py)",
+      "why": "pilaf, shared across Central Asia"
+    },
+    {
+      "q": "чебуреки",
+      "expect": {
+        "records": [
+          "recipe:chebureki",
+          "recipe:chebureki.ru"
+        ]
+      },
+      "kcal": 280,
+      "kcal_ref": "fooddb recipe chebureki, plausible band 220–340 (recipes.py)",
+      "why": "the fried turnovers"
+    },
+    {
+      "q": "молоко",
+      "expect": {
+        "records": [
+          "fdc:171265",
+          "fdc:171267",
+          "bls:M111300",
+          "ciqual:19016"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171265 whole milk 3.25 %",
+      "why": "milk is logged daily; Russian is the common search language in KZ"
+    },
+    {
+      "q": "хлеб",
+      "expect": {
+        "records": [
+          "fdc:167532",
+          "fdc:172686",
+          "fdc:172684",
+          "bls:B221000",
+          "ciqual:7000"
+        ]
+      },
+      "kcal": 259,
+      "kcal_ref": "USDA FDC 172684 rye bread",
+      "why": "generic bread"
+    },
+    {
+      "q": "курица",
+      "expect": {
+        "records": [
+          "fdc:171077",
+          "fdc:2646170",
+          "bls:V416100",
+          "ciqual:36017"
+        ]
+      },
+      "kcal": 120,
+      "kcal_ref": "USDA FDC 171077 chicken breast, meat only, raw",
+      "why": "chicken breast"
+    },
+    {
+      "q": "яблоко",
+      "expect": {
+        "records": [
+          "fdc:171688",
+          "bls:F110100",
+          "ciqual:13039"
+        ]
+      },
+      "kcal": 52,
+      "kcal_ref": "USDA FDC 171688 apples, raw, with skin",
+      "why": "the default fruit"
+    },
+    {
+      "q": "банан",
+      "expect": {
+        "records": [
+          "fdc:173944",
+          "bls:F503100",
+          "ciqual:13005"
+        ]
+      },
+      "kcal": 89,
+      "kcal_ref": "USDA FDC 173944 bananas, raw",
+      "why": "the other default fruit"
+    },
+    {
+      "q": "яйцо",
+      "expect": {
+        "records": [
+          "fdc:171287",
+          "ciqual:22000",
+          "bls:E111100"
+        ]
+      },
+      "kcal": 143,
+      "kcal_ref": "USDA FDC 171287 egg, whole, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "картофель",
+      "expect": {
+        "records": [
+          "fdc:170027",
+          "fdc:170440",
+          "bls:K120100",
+          "ciqual:4003"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "USDA FDC 170027 potatoes, russet, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "кофе",
+      "expect": {
+        "records": [
+          "fdc:171890",
+          "ciqual:18004",
+          "bls:N410100"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "USDA FDC 171890 coffee, brewed",
+      "why": "plain coffee"
+    },
+    {
+      "q": "beshbarmak",
+      "expect": {
+        "records": [
+          "recipe:beshbarmak",
+          "recipe:beshbarmak.ru"
+        ]
+      },
+      "kcal": 200,
+      "kcal_ref": "fooddb recipe beshbarmak, plausible band 140–260 (recipes.py)",
+      "why": "English spelling of the dish must hit the same product"
+    },
+    {
+      "q": "manty",
+      "expect": {
+        "records": [
+          "recipe:manty",
+          "recipe:manty.ru"
+        ]
+      },
+      "kcal": 220,
+      "kcal_ref": "fooddb recipe manty, plausible band 170–280 (recipes.py)",
+      "why": "English spelling of the dumplings"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "04650241941974",
+      "expect": {
+        "name": "бешбармак|beshbarmak"
+      },
+      "why": "a packaged beshbarmak set"
+    },
+    {
+      "barcode": "04678598005002",
+      "expect": {
+        "name": "кумыс|kumys"
+      },
+      "why": "bottled kumys"
+    },
+    {
+      "barcode": "03800771008307",
+      "expect": {
+        "name": "(?i)rahat"
+      },
+      "why": "Rahat, the Kazakh confectioner"
+    },
+    {
+      "barcode": "04260168542422",
+      "expect": {
+        "name": "манты|manty"
+      },
+      "why": "frozen manty"
+    },
+    {
+      "barcode": "04870055000852",
+      "expect": {
+        "name": "кефир|kefir"
+      },
+      "why": "kefir 2.5 %"
+    },
+    {
+      "barcode": "04870003180193",
+      "expect": {
+        "name": "гречка|buckwheat"
+      },
+      "why": "packaged buckwheat"
+    },
+    {
+      "barcode": "04820020200855",
+      "expect": {
+        "name": "плов|plov"
+      },
+      "why": "a packaged plov"
+    },
+    {
+      "barcode": "04870028006041",
+      "expect": {
+        "name": "казахстан|шоколад|chocolade"
+      },
+      "why": "Kazakh chocolate"
+    },
+    {
+      "barcode": "04870202521247",
+      "expect": {
+        "name": "чай|tea|персик"
+      },
+      "why": "peach tea"
+    },
+    {
+      "barcode": "4879990000095",
+      "not_found": true,
+      "why": "valid GS1-KZ prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}

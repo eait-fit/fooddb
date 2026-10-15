@@ -1,0 +1,437 @@
+{
+  "country": "es",
+  "queries": [
+    {
+      "q": "pan integral",
+      "expect": {
+        "records": [
+          "fdc:172688",
+          "ciqual:7110",
+          "bls:B111000",
+          "cofid:11-981"
+        ]
+      },
+      "kcal": 252,
+      "kcal_ref": "USDA FDC 172688 bread, whole-wheat",
+      "why": "wholegrain bread; ES has no national table, the generic tables must answer"
+    },
+    {
+      "q": "pan",
+      "expect": {
+        "records": [
+          "fdc:167532",
+          "fdc:172686",
+          "fdc:172675",
+          "ciqual:7000",
+          "ciqual:7001"
+        ]
+      },
+      "kcal": 274,
+      "kcal_ref": "USDA FDC 172686 bread, wheat",
+      "why": "generic bread"
+    },
+    {
+      "q": "leche entera",
+      "expect": {
+        "records": [
+          "fdc:171265",
+          "fdc:746782",
+          "ciqual:19016",
+          "ciqual:19023",
+          "bls:M111300"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171265 whole milk 3.25 %",
+      "why": "whole milk"
+    },
+    {
+      "q": "leche",
+      "expect": {
+        "records": [
+          "fdc:171265",
+          "fdc:171267",
+          "fdc:171269",
+          "ciqual:19016",
+          "ciqual:19033",
+          "bls:M111300",
+          "bls:M111200"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171265 whole milk 3.25 %",
+      "why": "milk is logged daily"
+    },
+    {
+      "q": "yogur natural",
+      "expect": {
+        "records": [
+          "fdc:171284",
+          "fdc:2259793",
+          "ciqual:19600",
+          "bls:M141200"
+        ]
+      },
+      "kcal": 61,
+      "kcal_ref": "USDA FDC 171284 yogurt, plain, whole milk",
+      "why": "plain yogurt"
+    },
+    {
+      "q": "queso",
+      "expect": {
+        "name": "(?i)cheese|queso|ost|fromage"
+      },
+      "kcal": 408,
+      "kcal_ref": "USDA FDC 328637 cheddar (a firm cheese stands in for the generic)",
+      "why": "generic cheese; any plain cheese is a right answer"
+    },
+    {
+      "q": "arroz",
+      "expect": {
+        "records": [
+          "fdc:169708",
+          "fdc:2512381",
+          "fdc:169759",
+          "ciqual:9100",
+          "ciqual:9104",
+          "cofid:11-858",
+          "bls:C352000",
+          "bls:X820162"
+        ]
+      },
+      "kcal": 123,
+      "kcal_ref": "USDA FDC 169708 white rice, cooked",
+      "why": "plain rice"
+    },
+    {
+      "q": "pollo",
+      "expect": {
+        "records": [
+          "fdc:171077",
+          "fdc:2646170",
+          "fdc:171534",
+          "ciqual:36017",
+          "ciqual:36018",
+          "bls:V416100",
+          "bls:V416132",
+          "matvaretabellen:03.205"
+        ]
+      },
+      "kcal": 120,
+      "kcal_ref": "USDA FDC 171077 chicken breast, meat only, raw",
+      "why": "chicken breast, the lean protein logged most"
+    },
+    {
+      "q": "manzana",
+      "expect": {
+        "records": [
+          "fdc:171688",
+          "fdc:168201",
+          "ciqual:13039",
+          "bls:F110100",
+          "matvaretabellen:06.529",
+          "cofid:14-319"
+        ]
+      },
+      "kcal": 52,
+      "kcal_ref": "USDA FDC 171688 apples, raw, with skin",
+      "why": "the default fruit"
+    },
+    {
+      "q": "plátano",
+      "expect": {
+        "records": [
+          "fdc:173944",
+          "fdc:1105314",
+          "ciqual:13005",
+          "bls:F503100",
+          "frida:3"
+        ]
+      },
+      "kcal": 89,
+      "kcal_ref": "USDA FDC 173944 bananas, raw",
+      "why": "banana; plátano is the Spanish word for it"
+    },
+    {
+      "q": "café",
+      "expect": {
+        "records": [
+          "fdc:171890",
+          "fdc:171881",
+          "fdc:171891",
+          "ciqual:18004",
+          "bls:N410100",
+          "cofid:17-833",
+          "matvaretabellen:13.009",
+          "frida:142"
+        ]
+      },
+      "kcal": 1,
+      "kcal_ref": "USDA FDC 171890 coffee, brewed",
+      "why": "plain coffee"
+    },
+    {
+      "q": "cerveza",
+      "expect": {
+        "records": [
+          "fdc:168747",
+          "ciqual:5001",
+          "bls:P161000",
+          "cofid:17-749",
+          "matvaretabellen:13.024",
+          "frida:1905",
+          "fdc:168746",
+          "fdc:168749",
+          "ciqual:5000",
+          "cofid:17-506"
+        ]
+      },
+      "kcal": 41,
+      "kcal_ref": "USDA FDC 168747 beer, regular",
+      "why": "a generic beer"
+    },
+    {
+      "q": "patata",
+      "expect": {
+        "records": [
+          "fdc:170027",
+          "fdc:170028",
+          "fdc:170440",
+          "ciqual:4003",
+          "bls:K120100",
+          "frida:801",
+          "matvaretabellen:06.262"
+        ]
+      },
+      "kcal": 79,
+      "kcal_ref": "USDA FDC 170027 potatoes, russet, raw",
+      "why": "potato raw or boiled"
+    },
+    {
+      "q": "huevo",
+      "expect": {
+        "records": [
+          "fdc:171287",
+          "fdc:172202",
+          "ciqual:22000",
+          "bls:E111100",
+          "cofid:12-937",
+          "frida:1662",
+          "matvaretabellen:02.001"
+        ]
+      },
+      "kcal": 143,
+      "kcal_ref": "USDA FDC 171287 egg, whole, raw",
+      "why": "a whole egg"
+    },
+    {
+      "q": "tomate",
+      "expect": {
+        "records": [
+          "fdc:170457",
+          "fdc:321360",
+          "ciqual:20385",
+          "bls:G561100",
+          "cofid:13-517",
+          "frida:451",
+          "matvaretabellen:06.069",
+          "fdc:1999634"
+        ]
+      },
+      "kcal": 18,
+      "kcal_ref": "USDA FDC 170457 tomatoes, red, ripe, raw",
+      "why": "raw tomato"
+    },
+    {
+      "q": "aceite de oliva",
+      "expect": {
+        "records": [
+          "fdc:171413",
+          "fdc:748608",
+          "fdc:1750351",
+          "bls:Q120000",
+          "frida:1467",
+          "matvaretabellen:08.019",
+          "cofid:17-038",
+          "matvaretabellen:08.112",
+          "ciqual:17270"
+        ]
+      },
+      "kcal": 884,
+      "kcal_ref": "USDA FDC 171413 olive oil",
+      "why": "olive oil is the Spanish fat"
+    },
+    {
+      "q": "lentejas",
+      "expect": {
+        "records": [
+          "fdc:172420",
+          "fdc:2644283",
+          "ciqual:20360",
+          "ciqual:20359",
+          "cofid:13-663",
+          "frida:681",
+          "matvaretabellen:06.131",
+          "bls:H662100"
+        ]
+      },
+      "kcal": 352,
+      "kcal_ref": "USDA FDC 172420 lentils, raw",
+      "why": "lentils, the Spanish pulse"
+    },
+    {
+      "q": "naranja",
+      "expect": {
+        "records": [
+          "fdc:169097",
+          "fdc:169916",
+          "fdc:169917",
+          "bls:F603100",
+          "ciqual:13039"
+        ]
+      },
+      "kcal": 47,
+      "kcal_ref": "USDA FDC 169097 oranges, raw",
+      "why": "orange, the Spanish fruit"
+    },
+    {
+      "q": "avena",
+      "expect": {
+        "records": [
+          "fdc:169705",
+          "fdc:2346396",
+          "fdc:2346397",
+          "bls:C133000",
+          "cofid:11-788",
+          "matvaretabellen:05.004",
+          "frida:59"
+        ]
+      },
+      "kcal": 389,
+      "kcal_ref": "USDA FDC 169705 oats",
+      "why": "porridge oats"
+    },
+    {
+      "q": "mantequilla",
+      "expect": {
+        "records": [
+          "fdc:173410",
+          "bls:Q611000",
+          "ciqual:16400",
+          "cofid:17-685",
+          "matvaretabellen:08.005",
+          "frida:1052"
+        ]
+      },
+      "kcal": 717,
+      "kcal_ref": "USDA FDC 173410 butter, salted",
+      "why": "plain butter"
+    },
+    {
+      "q": "olive oil",
+      "expect": {
+        "records": [
+          "fdc:171413",
+          "fdc:748608",
+          "bls:Q120000",
+          "frida:1467",
+          "matvaretabellen:08.019",
+          "cofid:17-038",
+          "matvaretabellen:08.112",
+          "ciqual:17270",
+          "fdc:1750351"
+        ]
+      },
+      "kcal": 884,
+      "kcal_ref": "USDA FDC 171413 olive oil",
+      "why": "English query in Spain"
+    },
+    {
+      "q": "lentils",
+      "expect": {
+        "records": [
+          "fdc:172420",
+          "fdc:2644283",
+          "ciqual:20360",
+          "cofid:13-663",
+          "frida:681",
+          "matvaretabellen:06.131",
+          "bls:H662100"
+        ]
+      },
+      "kcal": 352,
+      "kcal_ref": "USDA FDC 172420 lentils, raw",
+      "why": "English query in Spain"
+    }
+  ],
+  "barcodes": [
+    {
+      "barcode": "08410014477576",
+      "expect": {
+        "name": "(?i)cola.?cao"
+      },
+      "why": "Cola Cao, the Spanish breakfast drink"
+    },
+    {
+      "barcode": "07410053457271",
+      "expect": {
+        "name": "(?i)nocilla"
+      },
+      "why": "Nocilla spread"
+    },
+    {
+      "barcode": "08411327031240",
+      "expect": {
+        "name": "(?i)mahou"
+      },
+      "why": "Mahou clásica, the Spanish beer"
+    },
+    {
+      "barcode": "08410320120920",
+      "expect": {
+        "name": "(?i)campofr|fiambre|pavo"
+      },
+      "why": "Campofrío turkey cold cuts"
+    },
+    {
+      "barcode": "08411700606140",
+      "expect": {
+        "name": "(?i)puleva"
+      },
+      "why": "Puleva milk"
+    },
+    {
+      "barcode": "08402600012162",
+      "expect": {
+        "name": "(?i)bimbo|pan"
+      },
+      "why": "Bimbo sandwich bread"
+    },
+    {
+      "barcode": "09414000352440",
+      "expect": {
+        "name": "(?i)gallina|sopa"
+      },
+      "why": "Gallina Blanca soup"
+    },
+    {
+      "barcode": "05601027955127",
+      "expect": {
+        "name": "(?i)donettes|donuts"
+      },
+      "why": "Donettes"
+    },
+    {
+      "barcode": "08410109040319",
+      "expect": {
+        "name": "(?i)valor"
+      },
+      "why": "Chocolates Valor"
+    },
+    {
+      "barcode": "8409990000076",
+      "not_found": true,
+      "why": "valid GS1-ES prefix, unassigned code: the honest answer is 404"
+    }
+  ]
+}
