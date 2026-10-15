@@ -152,6 +152,31 @@ def names(c, params: dict) -> list[str]:
     return [i["records"][0] for i in r.json()["items"]]
 
 
+def test_search_finds_a_record_by_its_name_in_the_tables_own_language():
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Wholemeal bread",
+                               names={"de": "Vollkornbrot"}),
+                           rec(id="fdc:2", name="Bread, whole-wheat"),
+                           rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Camembert cheese",
+                               names={"fr": "Camembert au lait cru"})])
+    c = client()
+    assert names(c, {"q": "Vollkornbrot"}) == ["bls:1"]
+    assert names(c, {"q": "vollkornbrot", "country": "de"}) == ["bls:1"]
+    assert names(c, {"q": "lait cru"}) == ["ciqual:1"]
+    assert names(c, {"q": "camembert"}) == ["ciqual:1"]  # one product, once, though both names match
+    # A later load restates the set: a name the source dropped goes; a load stating none keeps it.
+    ingest.run("t", "r2", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Wholemeal bread",
+                               names={"de": "Vollkornbrot, Weizen"})])
+    ingest.run("t", "r3", [rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Camembert cheese")])
+    with engine().connect() as conn:
+        assert dict(conn.execute(text("select food_id, name from food_name order by 1")).all()) == {
+            "bls:1": "Vollkornbrot, Weizen", "ciqual:1": "Camembert au lait cru"}
+
+
 def test_search_without_country_is_unchanged():
     from fooddb import ingest
 

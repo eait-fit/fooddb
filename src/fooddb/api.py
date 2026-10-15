@@ -87,26 +87,27 @@ def version() -> dict:
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
            country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
                                        "matches, that country's sources rank first")) -> dict:
-    # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
-    if (cc := countries.code(country)) is None:
-        pids = _pids(
-            f"""select product_id from food
-               where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
-               group by product_id
-               order by max(word_similarity(:q, name)) desc, min(length(name))
-               limit :limit""",
-            q=q, layers=resolve.layers_for(include), limit=limit,
-        )
-    else:
-        pids = _pids(
-            f"""select product_id from food
-               where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
-               group by product_id
-               order by max(word_similarity(:q, name)) desc, min({countries.rank_sql(cc)}),
-                        min(length(name))
-               limit :limit""",
-            q=q, layers=resolve.layers_for(include), limit=limit, off_markets=countries.off_markets(cc),
-        )
+    # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw"), over each
+    # record's name and its names in other languages (`food_name`: "Vollkornbrot" finds BLS's wholemeal bread).
+    # Two index scans joined by union all: an OR across both tables would scan every record.
+    cc = countries.code(country)
+    rank = f"min({countries.rank_sql(cc)}), " if cc else ""
+    pids = _pids(
+        f"""with hit as (
+               select product_id, source, markets, word_similarity(:q, name) as sim, length(name) as len
+               from food where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
+               union all
+               select food.product_id, food.source, food.markets, word_similarity(:q, n.name), length(n.name)
+               from food_name n join food on food.id = n.food_id
+               where food.layer = any(:layers) and {resolve.VISIBLE} and :q <% n.name
+           )
+           select product_id from hit
+           group by product_id
+           order by max(sim) desc, {rank}min(len)
+           limit :limit""",
+        q=q, layers=resolve.layers_for(include), limit=limit,
+        **({"off_markets": countries.off_markets(cc)} if cc else {}),
+    )
     return {"items": resolve.products(pids, include)}
 
 
