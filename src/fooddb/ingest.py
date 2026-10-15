@@ -9,7 +9,7 @@ from sqlalchemy import insert, select, text, update
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from fooddb import checks
-from fooddb.db import engine, fetch_run, food, observation
+from fooddb.db import engine, fetch_run, food, food_name, observation
 
 UNITS = {"ENERC_KCAL": "kcal", "ENERC_KJ": "kJ", "NA": "mg"}  # everything else is grams
 OBS_ROWS_PER_INSERT = 60_000 // len(observation.c)  # Postgres caps a statement at 65535 parameters
@@ -42,6 +42,7 @@ class Record:
     evidence: str | None = None  # sha256 of the label photo the values were read from
     review_all: bool = False  # every value waits for review, whatever the checks say
     group: str | None = None  # records of one run sharing a group land in one product (e.g. a recipe's names)
+    names: dict[str, str] = field(default_factory=dict)  # lang → the name in another language than `name`
 
 
 def already_done(fetcher: str, ref: str) -> bool:
@@ -154,6 +155,12 @@ def _write(records: list[Record]) -> tuple[int, int]:
             # A late or retried older file must not roll the row back to older metadata.
             where=food.c.source_updated_at <= stmt.excluded.source_updated_at,
         ))
+        # A record that states names in other languages replaces its set; one that states none keeps it.
+        named = [r for r in latest_by_id.values() if r.names]
+        if named:
+            conn.execute(food_name.delete().where(food_name.c.food_id.in_([r.id for r in named])))
+            conn.execute(insert(food_name).values(
+                [{"food_id": r.id, "lang": lang, "name": n[:500]} for r in named for lang, n in r.names.items()]))
         n_obs = 0
         for i in range(0, len(obs), OBS_ROWS_PER_INSERT):
             n_obs += len(conn.execute(

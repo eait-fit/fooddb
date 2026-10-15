@@ -60,6 +60,7 @@ def records(xlsx, observed_at: datetime):
     if missing := [c for c in ("BLS Code", "Food name") if c not in header]:
         raise RuntimeError(f"bls: columns {missing} missing; the file layout changed")
     code_at, name_at = header.index("BLS Code"), header.index("Food name")
+    de_at = header.index("Lebensmittelbezeichnung") if "Lebensmittelbezeichnung" in header else None
     for row in it:
         def cell(i: int) -> str | None:
             return row[i] if i < len(row) else None
@@ -71,6 +72,7 @@ def records(xlsx, observed_at: datetime):
         yield ingest.Record(
             id=f"bls:{code}", source="bls", layer="core", licence=LICENCE, name=name, lang="en",
             values=values, observed_at=observed_at, categories=[f"bls:{code[0]}"],
+            names={"de": de} if de_at is not None and (de := (cell(de_at) or "").strip()) else {},
         )
 
 

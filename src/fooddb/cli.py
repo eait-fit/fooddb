@@ -88,6 +88,7 @@ def run(
     dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
     full: bool = typer.Option(False, "--full", help="snapshot: rewrite every product, not just the changed ones"),
+    force: bool = typer.Option(False, "--force", help="table, fdc, off-dump: load again even when this release is already loaded"),
 ) -> None:
     """Run a job in this process instead of queueing it: for loads longer than the worker's
     per-task timeout (the full OFF dump takes hours)."""
@@ -98,6 +99,8 @@ def run(
     configure_logging()
     kwargs = {"off-images": {"limit": limit or None}, "fdc": {"dataset": dataset}, "table": {"source": source},
               "snapshot": {"full": full}}.get(job, {})
+    if force and job in ("table", "fdc", "off-dump"):
+        kwargs["force"] = True
     {"off": jobs.fetch_off_deltas, "off-dump": jobs.fetch_off_dump, "fdc": jobs.fetch_fdc, "table": jobs.fetch_table,
      "match": jobs.match_products, "snapshot": jobs.build_snapshot, "odbl-dump": jobs.dump_odbl,
      "off-images": jobs.backfill_off_images, "recipes": jobs.build_recipes}[job](**kwargs)

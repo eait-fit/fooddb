@@ -70,6 +70,17 @@ food = Table(
     Index("food_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
 )
 
+# A record's names in other languages than `food.name`, as its source states them (BLS German, CIQUAL French,
+# Frida Danish, Matvaretabellen Norwegian): search matches them too.
+food_name = Table(
+    "food_name",
+    metadata,
+    Column("food_id", Text, ForeignKey("food.id", ondelete="CASCADE"), primary_key=True),
+    Column("lang", Text, primary_key=True),
+    Column("name", Text, nullable=False),
+    Index("food_name_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+)
+
 observation = Table(
     "observation",
     metadata,
