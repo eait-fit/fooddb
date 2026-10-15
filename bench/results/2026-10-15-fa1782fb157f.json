@@ -1,0 +1,4724 @@
+{
+  "date": "2026-10-15",
+  "server": {
+    "url": "https://food-api.eait.fit",
+    "version": "0.3.0",
+    "sha": "fa1782fb157f83aab5dca8bc1200b28d3e57b06e",
+    "snapshot": "2026-10-15",
+    "id": "fa1782fb157f"
+  },
+  "countries": {
+    "at": {
+      "queries": 21,
+      "hit1": 0.42857142857142855,
+      "hit5": 0.5714285714285714,
+      "kcal_n": 20,
+      "kcal_median_pct": 3.347578347578348,
+      "kcal_p90_pct": 60.555555555555706,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 21,
+        "p50": 150.97777172923088,
+        "p95": 579.4983501546085,
+        "max": 637.0036820881069
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 39.94792653247714,
+        "p95": 41.7718100361526,
+        "max": 42.50738909468055
+      },
+      "cases": [
+        {
+          "q": "Semmel",
+          "status": 200,
+          "ms": 117.61884903535247,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 64204,
+          "top_kcal": 364.0,
+          "kcal_err_pct": 30.0,
+          "ids": [
+            64204,
+            66922,
+            65983,
+            67107,
+            65146
+          ]
+        },
+        {
+          "q": "Topfen",
+          "status": 200,
+          "ms": 111.62525555118918,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "Joghurt",
+          "status": 200,
+          "ms": 480.3652558475733,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62815,
+          "top_kcal": 93.0,
+          "kcal_err_pct": 50.0,
+          "ids": [
+            62815,
+            66762,
+            64008,
+            61711,
+            65220
+          ]
+        },
+        {
+          "q": "Vollmilch",
+          "status": 200,
+          "ms": 115.34122796729207,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61710,
+          "top_kcal": 62.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61710,
+            61707,
+            62052,
+            62058,
+            61396
+          ]
+        },
+        {
+          "q": "Vollkornbrot",
+          "status": 200,
+          "ms": 184.22300042584538,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 63991,
+          "top_kcal": 210.0,
+          "kcal_err_pct": 16.666666666666664,
+          "ids": [
+            63991,
+            62700,
+            64290,
+            62929,
+            62731
+          ]
+        },
+        {
+          "q": "Roggenbrot",
+          "status": 200,
+          "ms": 91.98274370282888,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 64107,
+          "top_kcal": 220.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            64107,
+            64572,
+            62830,
+            63075,
+            63255
+          ]
+        },
+        {
+          "q": "Gouda",
+          "status": 200,
+          "ms": 162.4000151641667,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61720,
+          "top_kcal": 379.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61720,
+            62453,
+            62449,
+            68836,
+            20606
+          ]
+        },
+        {
+          "q": "Reis",
+          "status": 200,
+          "ms": 536.6806159727275,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 61440,
+          "top_kcal": 347.0,
+          "kcal_err_pct": 1.1396011396011396,
+          "ids": [
+            61440,
+            61513,
+            62377,
+            19516,
+            65514
+          ]
+        },
+        {
+          "q": "Nudeln",
+          "status": 200,
+          "ms": 142.80335512012243,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 65919,
+          "top_kcal": 421.0,
+          "kcal_err_pct": 23.099415204678362,
+          "ids": [
+            65919,
+            61514,
+            65346,
+            68149,
+            68283
+          ]
+        },
+        {
+          "q": "Hähnchenbrust",
+          "status": 200,
+          "ms": 117.19299200922251,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 64434,
+          "top_kcal": 145.0,
+          "kcal_err_pct": 33.02752293577982,
+          "ids": [
+            64434,
+            68297,
+            63356,
+            67088,
+            66574
+          ]
+        },
+        {
+          "q": "Apfel",
+          "status": 200,
+          "ms": 134.32959094643593,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61605,
+          "top_kcal": 58.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61605,
+            64093,
+            61606,
+            61956,
+            67816
+          ]
+        },
+        {
+          "q": "Banane",
+          "status": 200,
+          "ms": 221.0831199772656,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61617,
+          "top_kcal": 79.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61617,
+            62766,
+            20831,
+            66591,
+            62716
+          ]
+        },
+        {
+          "q": "Kaffee",
+          "status": 200,
+          "ms": 137.46518781408668,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61734,
+          "top_kcal": 1.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61734,
+            62758,
+            64797,
+            64761,
+            65843
+          ]
+        },
+        {
+          "q": "Bier",
+          "status": 200,
+          "ms": 271.4369809255004,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 61744,
+          "top_kcal": 38.0,
+          "kcal_err_pct": 5.555555555555555,
+          "ids": [
+            61744,
+            64101,
+            66399,
+            62489,
+            62169
+          ]
+        },
+        {
+          "q": "Kartoffel",
+          "status": 200,
+          "ms": 150.97777172923088,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 66457,
+          "top_kcal": 94.0,
+          "kcal_err_pct": 9.30232558139535,
+          "ids": [
+            66457,
+            61694,
+            68817,
+            62040,
+            66955
+          ]
+        },
+        {
+          "q": "Ei",
+          "status": 200,
+          "ms": 146.80914720520377,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 61600,
+          "top_kcal": 345.0,
+          "kcal_err_pct": 155.55555555555557,
+          "ids": [
+            61600,
+            61602,
+            66647,
+            61951,
+            61952
+          ]
+        },
+        {
+          "q": "Tomate",
+          "status": 200,
+          "ms": 637.0036820881069,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61661,
+          "top_kcal": 22.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61661,
+            65426,
+            65655,
+            64610,
+            65456
+          ]
+        },
+        {
+          "q": "Butter",
+          "status": 200,
+          "ms": 579.4983501546085,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62510,
+          "top_kcal": 900.0,
+          "kcal_err_pct": 20.481927710843372,
+          "ids": [
+            62510,
+            67252,
+            66086,
+            21898,
+            63328
+          ]
+        },
+        {
+          "q": "Apfelsaft",
+          "status": 200,
+          "ms": 102.77356300503016,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22254,
+          "top_kcal": 44.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22254,
+            62389,
+            66241,
+            65742,
+            68174
+          ]
+        },
+        {
+          "q": "rye bread",
+          "status": 200,
+          "ms": 413.35032181814313,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 64107,
+          "top_kcal": 220.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            64107,
+            61566,
+            62830,
+            64572,
+            63075
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 423.53818425908685,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 61396,
+          "top_kcal": 483.0,
+          "kcal_err_pct": 679.0322580645161,
+          "ids": [
+            61396,
+            62248,
+            66698,
+            64584,
+            61710
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "09015160706052",
+          "status": 200,
+          "ms": 40.11220298707485,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2307703
+        },
+        {
+          "barcode": "09007600306755",
+          "status": 200,
+          "ms": 34.887056797742844,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2746801
+        },
+        {
+          "barcode": "09001432039058",
+          "status": 200,
+          "ms": 37.569735664874315,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 582796
+        },
+        {
+          "barcode": "09003402620082",
+          "status": 200,
+          "ms": 36.02149477228522,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1717137
+        },
+        {
+          "barcode": "09019100194800",
+          "status": 200,
+          "ms": 39.78365007787943,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 898667
+        },
+        {
+          "barcode": "09066001988700",
+          "status": 200,
+          "ms": 40.872768964618444,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2308163
+        },
+        {
+          "barcode": "05999033896665",
+          "status": 200,
+          "ms": 40.246894117444754,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2881961
+        },
+        {
+          "barcode": "09000331635583",
+          "status": 200,
+          "ms": 42.50738909468055,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2772941
+        },
+        {
+          "barcode": "07622200009305",
+          "status": 200,
+          "ms": 40.781490970402956,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 528939
+        },
+        {
+          "barcode": "9009990000022",
+          "status": 404,
+          "ms": 36.87903797253966,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "de": {
+      "queries": 23,
+      "hit1": 0.43478260869565216,
+      "hit5": 0.6086956521739131,
+      "kcal_n": 23,
+      "kcal_median_pct": 5.555555555555555,
+      "kcal_p90_pct": 130.00000000000006,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 23,
+        "p50": 140.4025610536337,
+        "p95": 475.6875335704535,
+        "max": 551.4444601722062
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 38.84769533760846,
+        "p95": 42.741382704116404,
+        "max": 43.90299692749977
+      },
+      "cases": [
+        {
+          "q": "Vollkornbrot",
+          "status": 200,
+          "ms": 179.670337587595,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 63991,
+          "top_kcal": 210.0,
+          "kcal_err_pct": 16.666666666666664,
+          "ids": [
+            63991,
+            62700,
+            64290,
+            62929,
+            62731
+          ]
+        },
+        {
+          "q": "Roggenbrot",
+          "status": 200,
+          "ms": 111.4898263476789,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 64107,
+          "top_kcal": 220.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            64107,
+            64572,
+            62830,
+            63075,
+            63255
+          ]
+        },
+        {
+          "q": "Weizenbrötchen",
+          "status": 200,
+          "ms": 122.5482476875186,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61569,
+          "top_kcal": 280.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61569,
+            63046,
+            62736,
+            62827,
+            64034
+          ]
+        },
+        {
+          "q": "Vollmilch",
+          "status": 200,
+          "ms": 116.89073592424393,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61710,
+          "top_kcal": 62.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61710,
+            61707,
+            62052,
+            62058,
+            61396
+          ]
+        },
+        {
+          "q": "Magermilch",
+          "status": 200,
+          "ms": 140.4025610536337,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62057,
+          "top_kcal": 85.0,
+          "kcal_err_pct": 150.0,
+          "ids": [
+            62057,
+            61713,
+            61397,
+            62060,
+            62441
+          ]
+        },
+        {
+          "q": "Joghurt",
+          "status": 200,
+          "ms": 437.24374007433653,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62815,
+          "top_kcal": 93.0,
+          "kcal_err_pct": 50.0,
+          "ids": [
+            62815,
+            66762,
+            64008,
+            61711,
+            65220
+          ]
+        },
+        {
+          "q": "Gouda",
+          "status": 200,
+          "ms": 94.85949575901031,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61720,
+          "top_kcal": 379.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61720,
+            62453,
+            62449,
+            68836,
+            20606
+          ]
+        },
+        {
+          "q": "Reis",
+          "status": 200,
+          "ms": 457.14985206723213,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 61440,
+          "top_kcal": 347.0,
+          "kcal_err_pct": 1.1396011396011396,
+          "ids": [
+            61440,
+            61513,
+            62377,
+            19516,
+            65514
+          ]
+        },
+        {
+          "q": "Nudeln",
+          "status": 200,
+          "ms": 92.241071164608,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 65919,
+          "top_kcal": 421.0,
+          "kcal_err_pct": 23.099415204678362,
+          "ids": [
+            65919,
+            61514,
+            65346,
+            68149,
+            68283
+          ]
+        },
+        {
+          "q": "Spaghetti",
+          "status": 200,
+          "ms": 436.10160797834396,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 67064,
+          "top_kcal": 189.0,
+          "kcal_err_pct": 44.73684210526316,
+          "ids": [
+            67064,
+            26953,
+            1763,
+            26952,
+            1764
+          ]
+        },
+        {
+          "q": "Hähnchenbrust",
+          "status": 200,
+          "ms": 104.07073888927698,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 64434,
+          "top_kcal": 145.0,
+          "kcal_err_pct": 33.02752293577982,
+          "ids": [
+            64434,
+            68297,
+            63356,
+            67088,
+            66574
+          ]
+        },
+        {
+          "q": "Apfel",
+          "status": 200,
+          "ms": 133.17630579695106,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61605,
+          "top_kcal": 58.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61605,
+            64093,
+            61606,
+            61956,
+            67816
+          ]
+        },
+        {
+          "q": "Banane",
+          "status": 200,
+          "ms": 154.384003020823,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61617,
+          "top_kcal": 79.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61617,
+            62766,
+            20831,
+            66591,
+            62716
+          ]
+        },
+        {
+          "q": "Kaffee",
+          "status": 200,
+          "ms": 92.03869616612792,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61734,
+          "top_kcal": 1.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61734,
+            62758,
+            64797,
+            64761,
+            65843
+          ]
+        },
+        {
+          "q": "Bier",
+          "status": 200,
+          "ms": 172.8575872257352,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 61744,
+          "top_kcal": 38.0,
+          "kcal_err_pct": 5.555555555555555,
+          "ids": [
+            61744,
+            64101,
+            66399,
+            62489,
+            62169
+          ]
+        },
+        {
+          "q": "Kartoffel",
+          "status": 200,
+          "ms": 120.43071212247014,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 66457,
+          "top_kcal": 94.0,
+          "kcal_err_pct": 9.30232558139535,
+          "ids": [
+            66457,
+            61694,
+            68817,
+            62040,
+            66955
+          ]
+        },
+        {
+          "q": "Ei",
+          "status": 200,
+          "ms": 99.72310299053788,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 61600,
+          "top_kcal": 345.0,
+          "kcal_err_pct": 155.55555555555557,
+          "ids": [
+            61600,
+            61602,
+            66647,
+            61951,
+            61952
+          ]
+        },
+        {
+          "q": "Tomate",
+          "status": 200,
+          "ms": 551.4444601722062,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61661,
+          "top_kcal": 22.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            61661,
+            65426,
+            65655,
+            64610,
+            65456
+          ]
+        },
+        {
+          "q": "Haferflocken",
+          "status": 200,
+          "ms": 121.83752283453941,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 63964,
+          "top_kcal": 517.0,
+          "kcal_err_pct": 48.56321839080459,
+          "ids": [
+            63964,
+            64081,
+            66818,
+            66730,
+            65880
+          ]
+        },
+        {
+          "q": "Butter",
+          "status": 200,
+          "ms": 477.74727595970035,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62510,
+          "top_kcal": 900.0,
+          "kcal_err_pct": 20.481927710843372,
+          "ids": [
+            62510,
+            67252,
+            66086,
+            21898,
+            63328
+          ]
+        },
+        {
+          "q": "rye bread",
+          "status": 200,
+          "ms": 432.1082439273596,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 64107,
+          "top_kcal": 220.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            64107,
+            61566,
+            62830,
+            64572,
+            63075
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 394.39442893490195,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 61396,
+          "top_kcal": 483.0,
+          "kcal_err_pct": 679.0322580645161,
+          "ids": [
+            61396,
+            62248,
+            66698,
+            64584,
+            61710
+          ]
+        },
+        {
+          "q": "chicken breast",
+          "status": 200,
+          "ms": 307.3419816792011,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 62319,
+          "top_kcal": 109.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            62319,
+            64434,
+            65056,
+            64842,
+            62570
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "00000080050698",
+          "status": 200,
+          "ms": 34.11091072484851,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 543490
+        },
+        {
+          "barcode": "07622201446390",
+          "status": 200,
+          "ms": 36.92655498161912,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1546185
+        },
+        {
+          "barcode": "04001686328330",
+          "status": 200,
+          "ms": 43.90299692749977,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1964243
+        },
+        {
+          "barcode": "00000042486244",
+          "status": 200,
+          "ms": 41.321631986647844,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2925665
+        },
+        {
+          "barcode": "04260038331019",
+          "status": 200,
+          "ms": 37.41283481940627,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 462213
+        },
+        {
+          "barcode": "00000020230043",
+          "status": 200,
+          "ms": 39.65602582320571,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2067209
+        },
+        {
+          "barcode": "04053400257662",
+          "status": 200,
+          "ms": 40.18581472337246,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1590253
+        },
+        {
+          "barcode": "04056489442707",
+          "status": 200,
+          "ms": 37.85505797713995,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1949375
+        },
+        {
+          "barcode": "00000080050100",
+          "status": 200,
+          "ms": 38.039364852011204,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 45363
+        },
+        {
+          "barcode": "4009990000010",
+          "status": 404,
+          "ms": 40.649458300322294,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "dk": {
+      "queries": 22,
+      "hit1": 0.5454545454545454,
+      "hit5": 0.8636363636363636,
+      "kcal_n": 21,
+      "kcal_median_pct": 4.5033591731265155,
+      "kcal_p90_pct": 39.06752411575562,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 22,
+        "p50": 110.35337997600436,
+        "p95": 550.0207362929358,
+        "max": 568.4738047420979
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 40.5076895840466,
+        "p95": 46.30654156208038,
+        "max": 47.866655979305506
+      },
+      "cases": [
+        {
+          "q": "rugbrød",
+          "status": 200,
+          "ms": 98.56079891324043,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27496,
+          "top_kcal": 205.317777777778,
+          "kcal_err_pct": 4.5033591731265155,
+          "ids": [
+            27496,
+            27472,
+            28322,
+            28323,
+            28325
+          ]
+        },
+        {
+          "q": "sødmælk",
+          "status": 200,
+          "ms": 71.14348979666829,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 28153,
+          "top_kcal": 63.0802415749682,
+          "kcal_err_pct": 0.03131287643708879,
+          "ids": [
+            28153,
+            28154,
+            27246,
+            28166,
+            27241
+          ]
+        },
+        {
+          "q": "letmælk",
+          "status": 200,
+          "ms": 74.18873813003302,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 28071,
+          "top_kcal": 47.3,
+          "kcal_err_pct": 0.42105263157895334,
+          "ids": [
+            28071,
+            27262,
+            28401,
+            28070,
+            27987
+          ]
+        },
+        {
+          "q": "yoghurt",
+          "status": 200,
+          "ms": 442.6965480670333,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 28180,
+          "top_kcal": 86.5,
+          "kcal_err_pct": 39.06752411575562,
+          "ids": [
+            28180,
+            28157,
+            28160,
+            28169,
+            28165
+          ]
+        },
+        {
+          "q": "ost",
+          "status": 200,
+          "ms": 99.95978605002165,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 28415,
+          "top_kcal": 367.32,
+          "kcal_err_pct": 9.647761194029849,
+          "ids": [
+            28415,
+            28414,
+            28116,
+            27338,
+            27312
+          ]
+        },
+        {
+          "q": "danbo",
+          "status": 200,
+          "ms": 109.0327836573124,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27320,
+          "top_kcal": 325.393675024163,
+          "kcal_err_pct": 0.12113077666553042,
+          "ids": [
+            27320,
+            28109,
+            28150,
+            62090
+          ]
+        },
+        {
+          "q": "ris",
+          "status": 200,
+          "ms": 424.752009101212,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 28606,
+          "top_kcal": 171.02,
+          "kcal_err_pct": 0.011695906432754522,
+          "ids": [
+            28606,
+            27344,
+            28144,
+            28158,
+            28384
+          ]
+        },
+        {
+          "q": "pasta",
+          "status": 200,
+          "ms": 555.1152187399566,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27434,
+          "top_kcal": 361.4,
+          "kcal_err_pct": 0.11080332409971669,
+          "ids": [
+            27434,
+            28174,
+            61444,
+            23595,
+            23596
+          ]
+        },
+        {
+          "q": "kylling",
+          "status": 200,
+          "ms": 127.96608684584498,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 27790,
+          "top_kcal": 127.906862745098,
+          "kcal_err_pct": 13.867432494883506,
+          "ids": [
+            27790,
+            27720,
+            27697,
+            28582,
+            27916
+          ]
+        },
+        {
+          "q": "æble",
+          "status": 200,
+          "ms": 86.89929684624076,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 28081,
+          "top_kcal": 252.76,
+          "kcal_err_pct": 358.7295825771325,
+          "ids": [
+            28081,
+            27238,
+            27956,
+            22254,
+            27371
+          ]
+        },
+        {
+          "q": "banan",
+          "status": 200,
+          "ms": 198.37979599833488,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27239,
+          "top_kcal": 93.4754660894661,
+          "kcal_err_pct": 0.0262394765068494,
+          "ids": [
+            27239,
+            28168,
+            22328,
+            22936,
+            23455
+          ]
+        },
+        {
+          "q": "kaffe",
+          "status": 200,
+          "ms": 87.49236119911075,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 27911,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": [
+            27911,
+            27334,
+            27727,
+            27877,
+            27325
+          ]
+        },
+        {
+          "q": "øl",
+          "status": 200,
+          "ms": 61.36586284264922,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 22381,
+          "top_kcal": 24.0,
+          "kcal_err_pct": 33.147632311977716,
+          "ids": [
+            22381,
+            22377,
+            22376
+          ]
+        },
+        {
+          "q": "kartoffel",
+          "status": 200,
+          "ms": 111.67397629469633,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27796,
+          "top_kcal": 84.9020408163265,
+          "kcal_err_pct": 10.262390670553902,
+          "ids": [
+            27796,
+            27703,
+            27240,
+            27722,
+            28479
+          ]
+        },
+        {
+          "q": "æg",
+          "status": 200,
+          "ms": 88.15340977162123,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 27833,
+          "top_kcal": 180.97,
+          "kcal_err_pct": 32.0948905109489,
+          "ids": [
+            27833,
+            27851,
+            27670,
+            28129,
+            28314
+          ]
+        },
+        {
+          "q": "tomat",
+          "status": 200,
+          "ms": 568.4738047420979,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27519,
+          "top_kcal": 19.7,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            27519,
+            27354,
+            27280,
+            27646,
+            27625
+          ]
+        },
+        {
+          "q": "havregryn",
+          "status": 200,
+          "ms": 87.41483697667718,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27286,
+          "top_kcal": 366.447999364373,
+          "kcal_err_pct": 0.12240419791612132,
+          "ids": [
+            27286,
+            27517,
+            27542,
+            23898,
+            23899
+          ]
+        },
+        {
+          "q": "laks",
+          "status": 200,
+          "ms": 453.2255697995424,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 27515,
+          "top_kcal": 562.8,
+          "kcal_err_pct": 254.18502202643168,
+          "ids": [
+            27515,
+            27259,
+            28311,
+            28310,
+            27972
+          ]
+        },
+        {
+          "q": "smør",
+          "status": 200,
+          "ms": 75.52967919036746,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27989,
+          "top_kcal": 740.901775510204,
+          "kcal_err_pct": 0.00023964235442975346,
+          "ids": [
+            27989,
+            27959,
+            22506,
+            22510,
+            22749
+          ]
+        },
+        {
+          "q": "sild",
+          "status": 200,
+          "ms": 177.68415715545416,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 27276,
+          "top_kcal": 189.787619047619,
+          "kcal_err_pct": 30.122378848446623,
+          "ids": [
+            27276,
+            27970,
+            27275,
+            28057,
+            27886
+          ]
+        },
+        {
+          "q": "rye bread",
+          "status": 200,
+          "ms": 428.8749750703573,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 27496,
+          "top_kcal": 205.317777777778,
+          "kcal_err_pct": 4.5033591731265155,
+          "ids": [
+            27496,
+            27499,
+            28325,
+            27472,
+            28322
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 395.3075697645545,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 27246,
+          "top_kcal": 62.1831607181484,
+          "kcal_err_pct": 1.452994107530271,
+          "ids": [
+            27246,
+            28153,
+            28166,
+            28154,
+            27241
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "05740900403772",
+          "status": 200,
+          "ms": 38.03711477667093,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2001051
+        },
+        {
+          "barcode": "05730800523427",
+          "status": 200,
+          "ms": 43.011113069951534,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1474709
+        },
+        {
+          "barcode": "05741000129623",
+          "status": 200,
+          "ms": 47.866655979305506,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 748041
+        },
+        {
+          "barcode": "05711926050004",
+          "status": 200,
+          "ms": 43.77967957407236,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2533365
+        },
+        {
+          "barcode": "05707196346664",
+          "status": 200,
+          "ms": 38.72874891385436,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2674233
+        },
+        {
+          "barcode": "05774540905808",
+          "status": 200,
+          "ms": 40.046697948127985,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1434525
+        },
+        {
+          "barcode": "09141324280134",
+          "status": 200,
+          "ms": 40.96868121996522,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 3005674
+        },
+        {
+          "barcode": "05711953167690",
+          "status": 200,
+          "ms": 44.39973505213857,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2169323
+        },
+        {
+          "barcode": "00854651003947",
+          "status": 200,
+          "ms": 37.524210289120674,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1154904
+        },
+        {
+          "barcode": "5709990000063",
+          "status": 404,
+          "ms": 37.41007810458541,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "es": {
+      "queries": 22,
+      "hit1": 0.22727272727272727,
+      "hit5": 0.22727272727272727,
+      "kcal_n": 15,
+      "kcal_median_pct": 22.22222222222222,
+      "kcal_p90_pct": 513.3866453418632,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 22,
+        "p50": 161.20975138619542,
+        "p95": 560.5273457244039,
+        "max": 613.8491039164364
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 41.34227172471583,
+        "p95": 43.60508488025516,
+        "max": 43.91347710043192
+      },
+      "cases": [
+        {
+          "q": "pan integral",
+          "status": 200,
+          "ms": 215.2334381826222,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 19405,
+          "top_kcal": 234.0,
+          "kcal_err_pct": 7.142857142857142,
+          "ids": [
+            19405
+          ]
+        },
+        {
+          "q": "pan",
+          "status": 200,
+          "ms": 613.8491039164364,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 18597,
+          "top_kcal": 205.0,
+          "kcal_err_pct": 25.18248175182482,
+          "ids": [
+            18597,
+            20280,
+            22821,
+            23957,
+            23479
+          ]
+        },
+        {
+          "q": "leche entera",
+          "status": 200,
+          "ms": 160.43171379715204,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "leche",
+          "status": 200,
+          "ms": 103.33611583337188,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 6313,
+          "top_kcal": 315.0,
+          "kcal_err_pct": 416.3934426229508,
+          "ids": [
+            6313,
+            21102,
+            915,
+            66010
+          ]
+        },
+        {
+          "q": "yogur natural",
+          "status": 200,
+          "ms": 186.61210173740983,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "queso",
+          "status": 200,
+          "ms": 146.5266589075327,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 5075,
+          "top_kcal": 299.0,
+          "kcal_err_pct": 26.715686274509803,
+          "ids": [
+            5075,
+            5076,
+            262,
+            5053,
+            50
+          ]
+        },
+        {
+          "q": "arroz",
+          "status": 200,
+          "ms": 121.63082091137767,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 915,
+          "top_kcal": 146.0,
+          "kcal_err_pct": 18.69918699186992,
+          "ids": [
+            915,
+            918,
+            916,
+            917,
+            790
+          ]
+        },
+        {
+          "q": "pollo",
+          "status": 200,
+          "ms": 204.77037597447634,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 20044,
+          "top_kcal": 97.8,
+          "kcal_err_pct": 18.500000000000004,
+          "ids": [
+            20044,
+            22235,
+            38,
+            62264,
+            20069
+          ]
+        },
+        {
+          "q": "manzana",
+          "status": 200,
+          "ms": 161.9877889752388,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 34,
+          "top_kcal": 130.0,
+          "kcal_err_pct": 150.0,
+          "ids": [
+            34,
+            62716
+          ]
+        },
+        {
+          "q": "plátano",
+          "status": 200,
+          "ms": 98.88421185314655,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "café",
+          "status": 200,
+          "ms": 514.1297639347613,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 20944,
+          "top_kcal": 341.0,
+          "kcal_err_pct": 34000.0,
+          "ids": [
+            20944,
+            22528,
+            20945,
+            20487,
+            21806
+          ]
+        },
+        {
+          "q": "cerveza",
+          "status": 200,
+          "ms": 122.12205305695534,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 19995,
+          "top_kcal": 278.0,
+          "kcal_err_pct": 578.0487804878048,
+          "ids": [
+            19995,
+            19996,
+            19802,
+            19801,
+            19648
+          ]
+        },
+        {
+          "q": "patata",
+          "status": 200,
+          "ms": 153.75722013413906,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 19029,
+          "top_kcal": 80.0,
+          "kcal_err_pct": 1.2658227848101267,
+          "ids": [
+            19029,
+            19030,
+            19031,
+            18958,
+            18978
+          ]
+        },
+        {
+          "q": "huevo",
+          "status": 200,
+          "ms": 391.7935760691762,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "tomate",
+          "status": 200,
+          "ms": 562.9693237133324,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 61661,
+          "top_kcal": 22.0,
+          "kcal_err_pct": 22.22222222222222,
+          "ids": [
+            61661,
+            65426,
+            65655,
+            64610,
+            18942
+          ]
+        },
+        {
+          "q": "aceite de oliva",
+          "status": 200,
+          "ms": 489.19766396284103,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "lentejas",
+          "status": 200,
+          "ms": 117.94875515624881,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "naranja",
+          "status": 200,
+          "ms": 132.46809039264917,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 62404,
+          "top_kcal": 48.0,
+          "kcal_err_pct": 2.127659574468085,
+          "ids": [
+            62404,
+            642
+          ]
+        },
+        {
+          "q": "avena",
+          "status": 200,
+          "ms": 149.24744609743357,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 837,
+          "top_kcal": 482.0,
+          "kcal_err_pct": 23.90745501285347,
+          "ids": [
+            837
+          ]
+        },
+        {
+          "q": "mantequilla",
+          "status": 200,
+          "ms": 159.52044632285833,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "olive oil",
+          "status": 200,
+          "ms": 490.6624951399863,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 62198,
+          "top_kcal": 899.0,
+          "kcal_err_pct": 1.6968325791855203,
+          "ids": [
+            62198,
+            28222,
+            23542,
+            21919,
+            128
+          ]
+        },
+        {
+          "q": "lentils",
+          "status": 200,
+          "ms": 415.1149960234761,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 5272,
+          "top_kcal": 352.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            5272,
+            237,
+            27696,
+            23270,
+            61390
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "08410014477576",
+          "status": 200,
+          "ms": 37.19332115724683,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1147763
+        },
+        {
+          "barcode": "07410053457271",
+          "status": 200,
+          "ms": 37.80202614143491,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1168534
+        },
+        {
+          "barcode": "08411327031240",
+          "status": 200,
+          "ms": 43.22816105559468,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1226103
+        },
+        {
+          "barcode": "08410320120920",
+          "status": 200,
+          "ms": 41.87246272340417,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 734775
+        },
+        {
+          "barcode": "08411700606140",
+          "status": 200,
+          "ms": 43.91347710043192,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1407836
+        },
+        {
+          "barcode": "08402600012162",
+          "status": 200,
+          "ms": 42.67757199704647,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2264640
+        },
+        {
+          "barcode": "09414000352440",
+          "status": 200,
+          "ms": 40.47478502616286,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1247975
+        },
+        {
+          "barcode": "05601027955127",
+          "status": 200,
+          "ms": 42.21828142181039,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1444481
+        },
+        {
+          "barcode": "08410109040319",
+          "status": 200,
+          "ms": 40.81208072602749,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 955613
+        },
+        {
+          "barcode": "8409990000076",
+          "status": 404,
+          "ms": 32.99433412030339,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "fr": {
+      "queries": 23,
+      "hit1": 0.2608695652173913,
+      "hit5": 0.782608695652174,
+      "kcal_n": 19,
+      "kcal_median_pct": 16.52173913043478,
+      "kcal_p90_pct": 429.19865319865295,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 23,
+        "p50": 383.4590567275882,
+        "p95": 555.4450259078294,
+        "max": 568.3302069082856
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 40.38780881091952,
+        "p95": 44.46516982279718,
+        "max": 45.60061637312174
+      },
+      "cases": [
+        {
+          "q": "pain complet",
+          "status": 200,
+          "ms": 238.4718689136207,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 19402,
+          "top_kcal": 213.0,
+          "kcal_err_pct": 8.974358974358974,
+          "ids": [
+            19402,
+            19405,
+            19421,
+            19373,
+            19406
+          ]
+        },
+        {
+          "q": "baguette",
+          "status": 200,
+          "ms": 448.5127041116357,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 18612,
+          "top_kcal": 293.0,
+          "kcal_err_pct": 2.0905923344947737,
+          "ids": [
+            18612,
+            19393,
+            18610,
+            18600,
+            18593
+          ]
+        },
+        {
+          "q": "pain",
+          "status": 200,
+          "ms": 218.07216806337237,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 19416,
+          "top_kcal": 249.0,
+          "kcal_err_pct": 9.782608695652174,
+          "ids": [
+            19416,
+            20496,
+            19423,
+            19415,
+            19409
+          ]
+        },
+        {
+          "q": "lait entier",
+          "status": 200,
+          "ms": 204.98994179069996,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20332,
+          "top_kcal": 64.6,
+          "kcal_err_pct": 1.095461658841934,
+          "ids": [
+            20332,
+            20330,
+            20333,
+            20331,
+            20409
+          ]
+        },
+        {
+          "q": "lait",
+          "status": 200,
+          "ms": 165.30534764751792,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 22078,
+          "top_kcal": 199.0,
+          "kcal_err_pct": 211.42410015649455,
+          "ids": [
+            22078,
+            20412,
+            20332,
+            20340,
+            20330
+          ]
+        },
+        {
+          "q": "yaourt",
+          "status": 200,
+          "ms": 108.08011004701257,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 21860,
+          "top_kcal": 126.0,
+          "kcal_err_pct": 102.24719101123596,
+          "ids": [
+            21860,
+            20410,
+            21971,
+            20387,
+            20373
+          ]
+        },
+        {
+          "q": "camembert",
+          "status": 200,
+          "ms": 157.64588210731745,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 20639,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": [
+            20639,
+            20520,
+            20516,
+            20519,
+            18599
+          ]
+        },
+        {
+          "q": "brie",
+          "status": 200,
+          "ms": 501.6860458999872,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20526,
+          "top_kcal": 288.0,
+          "kcal_err_pct": 16.52173913043478,
+          "ids": [
+            20526,
+            20525,
+            20524,
+            27332,
+            28127
+          ]
+        },
+        {
+          "q": "riz",
+          "status": 200,
+          "ms": 383.4590567275882,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 22056,
+          "top_kcal": 397.81,
+          "kcal_err_pct": 13.66,
+          "ids": [
+            22056,
+            19516,
+            19505,
+            19359,
+            19363
+          ]
+        },
+        {
+          "q": "pâtes",
+          "status": 200,
+          "ms": 440.9488020464778,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 19380,
+          "top_kcal": 364.0,
+          "kcal_err_pct": 4.4619422572178475,
+          "ids": [
+            19380,
+            19382,
+            19381,
+            19385,
+            19384
+          ]
+        },
+        {
+          "q": "poulet",
+          "status": 200,
+          "ms": 183.3591782487929,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 21953,
+          "top_kcal": 898.0,
+          "kcal_err_pct": 716.3636363636364,
+          "ids": [
+            21953,
+            19742,
+            19814,
+            19658,
+            18397
+          ]
+        },
+        {
+          "q": "pomme",
+          "status": 200,
+          "ms": 482.3449971154332,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 19221,
+          "top_kcal": 247.0,
+          "kcal_err_pct": 357.4074074074074,
+          "ids": [
+            19221,
+            20829,
+            20812,
+            19495,
+            19106
+          ]
+        },
+        {
+          "q": "banane",
+          "status": 200,
+          "ms": 181.57470505684614,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 20831,
+          "top_kcal": 52.0,
+          "kcal_err_pct": 40.63926940639269,
+          "ids": [
+            20831,
+            18803,
+            19034,
+            19082,
+            19220
+          ]
+        },
+        {
+          "q": "café",
+          "status": 200,
+          "ms": 416.5653050877154,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20944,
+          "top_kcal": 341.0,
+          "kcal_err_pct": 5799.653979238755,
+          "ids": [
+            20944,
+            20945,
+            20487,
+            21806,
+            20948
+          ]
+        },
+        {
+          "q": "bière",
+          "status": 200,
+          "ms": 157.52715524286032,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20969,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": [
+            20969,
+            20976,
+            19902,
+            20971,
+            21008
+          ]
+        },
+        {
+          "q": "pomme de terre",
+          "status": 200,
+          "ms": 558.7691902182996,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 19495,
+          "top_kcal": 337.0,
+          "kcal_err_pct": 316.04938271604937,
+          "ids": [
+            19495,
+            18990,
+            18993,
+            19353,
+            19015
+          ]
+        },
+        {
+          "q": "oeuf",
+          "status": 200,
+          "ms": 128.01907025277615,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 20307,
+          "top_kcal": 134.0,
+          "kcal_err_pct": 4.285714285714286,
+          "ids": [
+            20307,
+            20312,
+            20308,
+            20309,
+            20317
+          ]
+        },
+        {
+          "q": "tomate",
+          "status": 200,
+          "ms": 568.3302069082856,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 18942,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": [
+            18942,
+            18793,
+            18800,
+            18783,
+            18726
+          ]
+        },
+        {
+          "q": "beurre",
+          "status": 200,
+          "ms": 170.48547370359302,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 18751,
+          "top_kcal": 37.6,
+          "kcal_err_pct": 95.0066401062417,
+          "ids": [
+            18751,
+            21888,
+            21898,
+            21154,
+            21887
+          ]
+        },
+        {
+          "q": "lentilles",
+          "status": 200,
+          "ms": 525.5275471135974,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 18303,
+          "top_kcal": 63.3,
+          "kcal_err_pct": 49.36000000000001,
+          "ids": [
+            18303,
+            18292,
+            18403,
+            18521,
+            19349
+          ]
+        },
+        {
+          "q": "vin rouge",
+          "status": 200,
+          "ms": 505.5502690374851,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20966,
+          "top_kcal": 75.7,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            20966,
+            22043,
+            22014,
+            20968,
+            19363
+          ]
+        },
+        {
+          "q": "wholemeal bread",
+          "status": 200,
+          "ms": 468.8225518912077,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 18617,
+          "top_kcal": 246.0,
+          "kcal_err_pct": 5.128205128205128,
+          "ids": [
+            18617,
+            18643,
+            18624,
+            18632,
+            18615
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 457.75579288601875,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 20330,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": [
+            20330,
+            20332,
+            20347,
+            20346,
+            20348
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "03017620420443",
+          "status": 200,
+          "ms": 40.023382753133774,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 265376
+        },
+        {
+          "barcode": "03275240312016",
+          "status": 200,
+          "ms": 36.093848291784525,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 16749
+        },
+        {
+          "barcode": "03249760000654",
+          "status": 200,
+          "ms": 40.03888834267855,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 299927
+        },
+        {
+          "barcode": "00305764038512",
+          "status": 200,
+          "ms": 45.60061637312174,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2920793
+        },
+        {
+          "barcode": "03083680020763",
+          "status": 200,
+          "ms": 41.84907488524914,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 275689
+        },
+        {
+          "barcode": "03155250367018",
+          "status": 200,
+          "ms": 39.14217837154865,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 281528
+        },
+        {
+          "barcode": "03760253430081",
+          "status": 200,
+          "ms": 42.030125856399536,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 439336
+        },
+        {
+          "barcode": "08054491010064",
+          "status": 200,
+          "ms": 43.07740181684494,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1277146
+        },
+        {
+          "barcode": "07622210022776",
+          "status": 200,
+          "ms": 40.7367292791605,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 528991
+        },
+        {
+          "barcode": "3009990000035",
+          "status": 404,
+          "ms": 37.28577122092247,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "gb": {
+      "queries": 22,
+      "hit1": 0.5454545454545454,
+      "hit5": 0.7727272727272727,
+      "kcal_n": 21,
+      "kcal_median_pct": 10.0,
+      "kcal_p90_pct": 224.42748091603053,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 22,
+        "p50": 327.98886485397816,
+        "p95": 573.0291396612301,
+        "max": 644.2388840951025
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 39.13335897959769,
+        "p95": 42.004373273812234,
+        "max": 42.854211293160915
+      },
+      "cases": [
+        {
+          "q": "wholemeal bread",
+          "status": 200,
+          "ms": 436.7184732109308,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24763,
+          "top_kcal": 255.0,
+          "kcal_err_pct": 17.51152073732719,
+          "ids": [
+            24763,
+            24762,
+            25524,
+            63991,
+            27688
+          ]
+        },
+        {
+          "q": "white bread",
+          "status": 200,
+          "ms": 152.41779712960124,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24757,
+          "top_kcal": 219.0,
+          "kcal_err_pct": 7.203389830508475,
+          "ids": [
+            24757,
+            24759,
+            24756,
+            24751,
+            24753
+          ]
+        },
+        {
+          "q": "porridge oats",
+          "status": 200,
+          "ms": 165.30966525897384,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 26525,
+          "top_kcal": 381.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            26525,
+            26526,
+            23531,
+            23529,
+            23533
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 413.28489733859897,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 26031,
+          "top_kcal": 66.0,
+          "kcal_err_pct": 4.761904761904762,
+          "ids": [
+            26031,
+            27231,
+            27229,
+            26529,
+            25368
+          ]
+        },
+        {
+          "q": "semi-skimmed milk",
+          "status": 200,
+          "ms": 222.98696776852012,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 26019,
+          "top_kcal": 46.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            26019,
+            25366,
+            26016,
+            25130,
+            27051
+          ]
+        },
+        {
+          "q": "cheddar",
+          "status": 200,
+          "ms": 228.2767971046269,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24951,
+          "top_kcal": 416.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            24951,
+            24950,
+            24949,
+            26790,
+            20603
+          ]
+        },
+        {
+          "q": "rice",
+          "status": 200,
+          "ms": 574.8818442225456,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 23870,
+          "top_kcal": 369.0,
+          "kcal_err_pct": 215.3846153846154,
+          "ids": [
+            23870,
+            26693,
+            26710,
+            26757,
+            26681
+          ]
+        },
+        {
+          "q": "spaghetti",
+          "status": 200,
+          "ms": 474.74854718893766,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 26953,
+          "top_kcal": 26.0,
+          "kcal_err_pct": 81.56028368794325,
+          "ids": [
+            26953,
+            26952,
+            26929,
+            26248,
+            26241
+          ]
+        },
+        {
+          "q": "chicken breast",
+          "status": 200,
+          "ms": 297.07479011267424,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 25006,
+          "top_kcal": 234.0,
+          "kcal_err_pct": 58.108108108108105,
+          "ids": [
+            25006,
+            25022,
+            25025,
+            25020,
+            25023
+          ]
+        },
+        {
+          "q": "apple",
+          "status": 200,
+          "ms": 537.8277529962361,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 24368,
+          "top_kcal": 79.0,
+          "kcal_err_pct": 54.90196078431373,
+          "ids": [
+            24368,
+            26978,
+            25953,
+            25114,
+            25244
+          ]
+        },
+        {
+          "q": "banana",
+          "status": 200,
+          "ms": 159.8221017047763,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 24446,
+          "top_kcal": 205.0,
+          "kcal_err_pct": 153.0864197530864,
+          "ids": [
+            24446,
+            24445,
+            26011,
+            24907,
+            22563
+          ]
+        },
+        {
+          "q": "coffee",
+          "status": 200,
+          "ms": 201.10879698768258,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 25167,
+          "top_kcal": 125.0,
+          "kcal_err_pct": 6150.0,
+          "ids": [
+            25167,
+            25163,
+            25168,
+            25162,
+            25158
+          ]
+        },
+        {
+          "q": "beer",
+          "status": 200,
+          "ms": 358.9029395952821,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24621,
+          "top_kcal": 33.0,
+          "kcal_err_pct": 10.0,
+          "ids": [
+            24621,
+            24622,
+            24620,
+            66908,
+            62165
+          ]
+        },
+        {
+          "q": "potato",
+          "status": 200,
+          "ms": 488.1050228141248,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 26563,
+          "top_kcal": 480.0,
+          "kcal_err_pct": 605.8823529411765,
+          "ids": [
+            26563,
+            26995,
+            26998,
+            26555,
+            26855
+          ]
+        },
+        {
+          "q": "egg",
+          "status": 200,
+          "ms": 526.6293468885124,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 25239,
+          "top_kcal": 425.0,
+          "kcal_err_pct": 224.42748091603053,
+          "ids": [
+            25239,
+            25432,
+            25365,
+            25433,
+            26236
+          ]
+        },
+        {
+          "q": "tomato",
+          "status": 200,
+          "ms": 644.2388840951025,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 27068,
+          "top_kcal": 14.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            27068,
+            27070,
+            27069,
+            25116,
+            26671
+          ]
+        },
+        {
+          "q": "butter",
+          "status": 200,
+          "ms": 533.5541889071465,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 22790,
+          "top_kcal": 896.0,
+          "kcal_err_pct": 20.43010752688172,
+          "ids": [
+            22790,
+            25560,
+            24831,
+            24834,
+            26285
+          ]
+        },
+        {
+          "q": "baked beans",
+          "status": 200,
+          "ms": 220.60790285468102,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24440,
+          "top_kcal": 81.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            24440,
+            24439,
+            24442,
+            24441,
+            6583
+          ]
+        },
+        {
+          "q": "salmon",
+          "status": 200,
+          "ms": 533.0455061048269,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 26777,
+          "top_kcal": 215.0,
+          "kcal_err_pct": 0.9216589861751152,
+          "ids": [
+            26777,
+            26986,
+            26779,
+            26780,
+            26732
+          ]
+        },
+        {
+          "q": "tea",
+          "status": 200,
+          "ms": 188.94483102485538,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24220,
+          "top_kcal": 0.0,
+          "kcal_err_pct": null,
+          "ids": [
+            24220,
+            27050,
+            27047,
+            27046,
+            27045
+          ]
+        },
+        {
+          "q": "digestive biscuits",
+          "status": 200,
+          "ms": 236.25622084364295,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24676,
+          "top_kcal": 463.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            24676,
+            24677,
+            24675
+          ]
+        },
+        {
+          "q": "carrots",
+          "status": 200,
+          "ms": 167.32260584831238,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 24888,
+          "top_kcal": 34.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            24888,
+            24891,
+            24887,
+            24886,
+            24889
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "07622201716950",
+          "status": 200,
+          "ms": 35.42790934443474,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2035896
+        },
+        {
+          "barcode": "05000328311692",
+          "status": 200,
+          "ms": 34.27038295194507,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1575418
+        },
+        {
+          "barcode": "05000157158147",
+          "status": 200,
+          "ms": 38.284364156425,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2704725
+        },
+        {
+          "barcode": "00000044934453",
+          "status": 200,
+          "ms": 39.31412706151605,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2577386
+        },
+        {
+          "barcode": "08712423020214",
+          "status": 200,
+          "ms": 40.96568236127496,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1252912
+        },
+        {
+          "barcode": "05010044025544",
+          "status": 200,
+          "ms": 40.08943494409323,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2815108
+        },
+        {
+          "barcode": "05010003063440",
+          "status": 200,
+          "ms": 38.95259089767933,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1549045
+        },
+        {
+          "barcode": "05000295147393",
+          "status": 200,
+          "ms": 42.854211293160915,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1157044
+        },
+        {
+          "barcode": "05010102242302",
+          "status": 200,
+          "ms": 40.02087004482746,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1640961
+        },
+        {
+          "barcode": "5009990000040",
+          "status": 404,
+          "ms": 36.26566380262375,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "kz": {
+      "queries": 22,
+      "hit1": 0.5909090909090909,
+      "hit5": 0.5909090909090909,
+      "kcal_n": 14,
+      "kcal_median_pct": 5.947488095238093,
+      "kcal_p90_pct": 11.324776415094345,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 22,
+        "p50": 80.09017445147038,
+        "p95": 114.40257236827165,
+        "max": 133.78120213747025
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 40.973430033773184,
+        "p95": 45.20821077749133,
+        "max": 46.57462192699313
+      },
+      "cases": [
+        {
+          "q": "бешбармак",
+          "status": 200,
+          "ms": 94.02907080948353,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69011,
+          "top_kcal": 185.12,
+          "kcal_err_pct": 7.439999999999998,
+          "ids": [
+            69011
+          ]
+        },
+        {
+          "q": "манты",
+          "status": 200,
+          "ms": 62.99722893163562,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69019,
+          "top_kcal": 218.44,
+          "kcal_err_pct": 0.7090909090909101,
+          "ids": [
+            69019
+          ]
+        },
+        {
+          "q": "лагман",
+          "status": 200,
+          "ms": 63.901811838150024,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69018,
+          "top_kcal": 99.1864,
+          "kcal_err_pct": 5.5367619047618994,
+          "ids": [
+            69018
+          ]
+        },
+        {
+          "q": "самса",
+          "status": 200,
+          "ms": 66.50668010115623,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69023,
+          "top_kcal": 288.574,
+          "kcal_err_pct": 3.8086666666666624,
+          "ids": [
+            69023
+          ]
+        },
+        {
+          "q": "баурсак",
+          "status": 200,
+          "ms": 64.63790824636817,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69010,
+          "top_kcal": 391.159,
+          "kcal_err_pct": 1.5997402597402577,
+          "ids": [
+            69010
+          ]
+        },
+        {
+          "q": "кумыс",
+          "status": 200,
+          "ms": 90.78896697610617,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69016,
+          "top_kcal": 51.0204,
+          "kcal_err_pct": 2.0408000000000044,
+          "ids": [
+            69016
+          ]
+        },
+        {
+          "q": "қымыз",
+          "status": 200,
+          "ms": 84.35973431915045,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "курт",
+          "status": 200,
+          "ms": 98.13594771549106,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69017,
+          "top_kcal": 359.477,
+          "kcal_err_pct": 2.7077142857142786,
+          "ids": [
+            69017
+          ]
+        },
+        {
+          "q": "айран",
+          "status": 200,
+          "ms": 79.56555485725403,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69009,
+          "top_kcal": 29.9402,
+          "kcal_err_pct": 6.436874999999997,
+          "ids": [
+            69009
+          ]
+        },
+        {
+          "q": "шашлык",
+          "status": 200,
+          "ms": 91.07026737183332,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69024,
+          "top_kcal": 239.081,
+          "kcal_err_pct": 9.780754716981138,
+          "ids": [
+            69024
+          ]
+        },
+        {
+          "q": "плов",
+          "status": 200,
+          "ms": 80.61479404568672,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69022,
+          "top_kcal": 176.027,
+          "kcal_err_pct": 11.986500000000007,
+          "ids": [
+            69022
+          ]
+        },
+        {
+          "q": "чебуреки",
+          "status": 200,
+          "ms": 82.21305906772614,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69014,
+          "top_kcal": 262.197,
+          "kcal_err_pct": 6.358214285714285,
+          "ids": [
+            69014
+          ]
+        },
+        {
+          "q": "молоко",
+          "status": 200,
+          "ms": 87.7495538443327,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "хлеб",
+          "status": 200,
+          "ms": 70.31429093331099,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "курица",
+          "status": 200,
+          "ms": 65.55517902597785,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "яблоко",
+          "status": 200,
+          "ms": 64.93057496845722,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "банан",
+          "status": 200,
+          "ms": 112.81208507716656,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "яйцо",
+          "status": 200,
+          "ms": 70.78741071745753,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "картофель",
+          "status": 200,
+          "ms": 73.15059565007687,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 69028,
+          "top_kcal": 164.478,
+          "kcal_err_pct": 108.2,
+          "ids": [
+            69028
+          ]
+        },
+        {
+          "q": "кофе",
+          "status": 200,
+          "ms": 61.16899196058512,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "beshbarmak",
+          "status": 200,
+          "ms": 114.48628222569823,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69011,
+          "top_kcal": 185.12,
+          "kcal_err_pct": 7.439999999999998,
+          "ids": [
+            69011
+          ]
+        },
+        {
+          "q": "manty",
+          "status": 200,
+          "ms": 133.78120213747025,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69019,
+          "top_kcal": 218.44,
+          "kcal_err_pct": 0.7090909090909101,
+          "ids": [
+            69019,
+            647
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "04650241941974",
+          "status": 200,
+          "ms": 39.01407727971673,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2675640
+        },
+        {
+          "barcode": "04678598005002",
+          "status": 200,
+          "ms": 41.04851186275482,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2353923
+        },
+        {
+          "barcode": "03800771008307",
+          "status": 200,
+          "ms": 34.35398219153285,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1727831
+        },
+        {
+          "barcode": "04260168542422",
+          "status": 200,
+          "ms": 46.57462192699313,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2399367
+        },
+        {
+          "barcode": "04870055000852",
+          "status": 200,
+          "ms": 42.38057183101773,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1225427
+        },
+        {
+          "barcode": "04870003180193",
+          "status": 200,
+          "ms": 42.831887025386095,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2531821
+        },
+        {
+          "barcode": "04820020200855",
+          "status": 200,
+          "ms": 37.669251672923565,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2427617
+        },
+        {
+          "barcode": "04870028006041",
+          "status": 200,
+          "ms": 40.898348204791546,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2454260
+        },
+        {
+          "barcode": "04870202521247",
+          "status": 200,
+          "ms": 43.53815270587802,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2077365
+        },
+        {
+          "barcode": "4879990000095",
+          "status": 404,
+          "ms": 38.17853657528758,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "no": {
+      "queries": 23,
+      "hit1": 0.391304347826087,
+      "hit5": 0.782608695652174,
+      "kcal_n": 23,
+      "kcal_median_pct": 3.765690376569038,
+      "kcal_p90_pct": 207.5543836519447,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 23,
+        "p50": 124.20155014842749,
+        "p95": 522.6839799899608,
+        "max": 596.6015681624413
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 40.87337199598551,
+        "p95": 41.88138633035123,
+        "max": 41.910141706466675
+      },
+      "cases": [
+        {
+          "q": "grovbrød",
+          "status": 200,
+          "ms": 124.20155014842749,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 22464,
+          "top_kcal": 248.0,
+          "kcal_err_pct": 3.765690376569038,
+          "ids": [
+            22464,
+            22444,
+            22446,
+            22454,
+            22445
+          ]
+        },
+        {
+          "q": "brød",
+          "status": 200,
+          "ms": 98.71734585613012,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22444,
+          "top_kcal": 239.0,
+          "kcal_err_pct": 6.2745098039215685,
+          "ids": [
+            22444,
+            22446,
+            22458,
+            22456,
+            22448
+          ]
+        },
+        {
+          "q": "brunost",
+          "status": 200,
+          "ms": 110.48504197970033,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22697,
+          "top_kcal": 411.0,
+          "kcal_err_pct": 0.24271844660194172,
+          "ids": [
+            22697,
+            22695,
+            22698,
+            22693,
+            22696
+          ]
+        },
+        {
+          "q": "melk",
+          "status": 200,
+          "ms": 237.83520888537169,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 23416,
+          "top_kcal": 33.0,
+          "kcal_err_pct": 47.61904761904761,
+          "ids": [
+            23416,
+            23417,
+            23531,
+            23415,
+            23387
+          ]
+        },
+        {
+          "q": "lettmelk",
+          "status": 200,
+          "ms": 120.50512013956904,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 23767,
+          "top_kcal": 72.0,
+          "kcal_err_pct": 75.60975609756098,
+          "ids": [
+            23767,
+            23414,
+            23406,
+            23169,
+            22797
+          ]
+        },
+        {
+          "q": "yoghurt",
+          "status": 200,
+          "ms": 509.79696307331324,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 24341,
+          "top_kcal": 71.0,
+          "kcal_err_pct": 2.898550724637681,
+          "ids": [
+            24341,
+            24344,
+            24351,
+            24024,
+            24343
+          ]
+        },
+        {
+          "q": "ost",
+          "status": 200,
+          "ms": 92.95764984562993,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 22680,
+          "top_kcal": 325.0,
+          "kcal_err_pct": 7.4074074074074066,
+          "ids": [
+            22680,
+            22505,
+            4094,
+            22645,
+            22646
+          ]
+        },
+        {
+          "q": "norvegia",
+          "status": 200,
+          "ms": 109.0266122482717,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22670,
+          "top_kcal": 351.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22670,
+            22676,
+            22679,
+            22677,
+            22678
+          ]
+        },
+        {
+          "q": "ris",
+          "status": 200,
+          "ms": 457.20549020916224,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 23816,
+          "top_kcal": 378.0,
+          "kcal_err_pct": 240.54054054054052,
+          "ids": [
+            23816,
+            23875,
+            23891,
+            23873,
+            23892
+          ]
+        },
+        {
+          "q": "pasta",
+          "status": 200,
+          "ms": 523.5031601041555,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 23597,
+          "top_kcal": 181.0,
+          "kcal_err_pct": 33.6996336996337,
+          "ids": [
+            23597,
+            23595,
+            23596,
+            23610,
+            24030
+          ]
+        },
+        {
+          "q": "kylling",
+          "status": 200,
+          "ms": 117.79230181127787,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 23302,
+          "top_kcal": 133.0,
+          "kcal_err_pct": 19.81981981981982,
+          "ids": [
+            23302,
+            22719,
+            23367,
+            22733,
+            22711
+          ]
+        },
+        {
+          "q": "eple",
+          "status": 200,
+          "ms": 112.73697298020124,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 22263,
+          "top_kcal": 272.0,
+          "kcal_err_pct": 455.1020408163265,
+          "ids": [
+            22263,
+            22262,
+            22260,
+            22258,
+            22259
+          ]
+        },
+        {
+          "q": "banan",
+          "status": 200,
+          "ms": 158.76892302185297,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22328,
+          "top_kcal": 88.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22328,
+            22936,
+            23455,
+            23578,
+            22327
+          ]
+        },
+        {
+          "q": "kaffe",
+          "status": 200,
+          "ms": 94.94883893057704,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22835,
+          "top_kcal": 1.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22835,
+            22244,
+            23198,
+            27911,
+            27334
+          ]
+        },
+        {
+          "q": "øl",
+          "status": 200,
+          "ms": 72.33523996546865,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 22381,
+          "top_kcal": 24.0,
+          "kcal_err_pct": 41.46341463414634,
+          "ids": [
+            22381,
+            22377,
+            22376
+          ]
+        },
+        {
+          "q": "potet",
+          "status": 200,
+          "ms": 421.3359788991511,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 23787,
+          "top_kcal": 106.0,
+          "kcal_err_pct": 26.190476190476193,
+          "ids": [
+            23787,
+            23786,
+            23155,
+            23784,
+            23791
+          ]
+        },
+        {
+          "q": "egg",
+          "status": 200,
+          "ms": 515.311358962208,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22989,
+          "top_kcal": 149.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22989,
+            22992,
+            22984,
+            22983,
+            22981
+          ]
+        },
+        {
+          "q": "tomat",
+          "status": 200,
+          "ms": 596.6015681624413,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 24236,
+          "top_kcal": 12.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            24236,
+            24234,
+            24233,
+            22681,
+            24237
+          ]
+        },
+        {
+          "q": "havregryn",
+          "status": 200,
+          "ms": 108.13961178064346,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 23898,
+          "top_kcal": 369.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            23898,
+            23899,
+            23529,
+            23530,
+            22958
+          ]
+        },
+        {
+          "q": "laks",
+          "status": 200,
+          "ms": 460.61797672882676,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 23961,
+          "top_kcal": 225.0,
+          "kcal_err_pct": 0.8968609865470852,
+          "ids": [
+            23961,
+            23970,
+            23959,
+            23029,
+            23960
+          ]
+        },
+        {
+          "q": "smør",
+          "status": 200,
+          "ms": 85.47768602147698,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 22506,
+          "top_kcal": 744.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            22506,
+            22510,
+            22749,
+            22538,
+            22942
+          ]
+        },
+        {
+          "q": "salmon",
+          "status": 200,
+          "ms": 499.6866718865931,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 23961,
+          "top_kcal": 225.0,
+          "kcal_err_pct": 0.8968609865470852,
+          "ids": [
+            23961,
+            23970,
+            23029,
+            23959,
+            23018
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 400.1059657894075,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 24171,
+          "top_kcal": 334.0,
+          "kcal_err_pct": 430.1587301587301,
+          "ids": [
+            24171,
+            23422,
+            23170,
+            24344,
+            23418
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "07622210882936",
+          "status": 200,
+          "ms": 33.441529143601656,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1180936
+        },
+        {
+          "barcode": "07038010017278",
+          "status": 200,
+          "ms": 34.38930818811059,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2345091
+        },
+        {
+          "barcode": "07039010600651",
+          "status": 200,
+          "ms": 40.738258976489305,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2638370
+        },
+        {
+          "barcode": "07622210816672",
+          "status": 200,
+          "ms": 41.00848501548171,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 938217
+        },
+        {
+          "barcode": "07038010068690",
+          "status": 200,
+          "ms": 41.287776082754135,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2618697
+        },
+        {
+          "barcode": "07039010132435",
+          "status": 200,
+          "ms": 40.50418781116605,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 510966
+        },
+        {
+          "barcode": "07036110210933",
+          "status": 200,
+          "ms": 41.910141706466675,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2558491
+        },
+        {
+          "barcode": "07037610042635",
+          "status": 200,
+          "ms": 41.61672480404377,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2400525
+        },
+        {
+          "barcode": "07034280002730",
+          "status": 200,
+          "ms": 41.84624087065458,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1159615
+        },
+        {
+          "barcode": "7099900000053",
+          "status": 404,
+          "ms": 36.85043891891837,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "ru": {
+      "queries": 22,
+      "hit1": 0.5909090909090909,
+      "hit5": 0.5909090909090909,
+      "kcal_n": 14,
+      "kcal_median_pct": 11.986500000000007,
+      "kcal_p90_pct": 26.280079507278824,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 22,
+        "p50": 74.7132720425725,
+        "p95": 94.69410218298435,
+        "max": 131.14058785140514
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 40.20333499647677,
+        "p95": 46.21296189725399,
+        "max": 47.044538892805576
+      },
+      "cases": [
+        {
+          "q": "борщ",
+          "status": 200,
+          "ms": 94.95254419744015,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69013,
+          "top_kcal": 46.9803,
+          "kcal_err_pct": 17.57842105263158,
+          "ids": [
+            69013
+          ]
+        },
+        {
+          "q": "щи",
+          "status": 200,
+          "ms": 76.95232704281807,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69025,
+          "top_kcal": 42.1804,
+          "kcal_err_pct": 15.639200000000002,
+          "ids": [
+            69025
+          ]
+        },
+        {
+          "q": "плов",
+          "status": 200,
+          "ms": 81.18569292128086,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69022,
+          "top_kcal": 176.027,
+          "kcal_err_pct": 11.986500000000007,
+          "ids": [
+            69022
+          ]
+        },
+        {
+          "q": "блины",
+          "status": 200,
+          "ms": 72.92695995420218,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69012,
+          "top_kcal": 228.911,
+          "kcal_err_pct": 2.5910638297872333,
+          "ids": [
+            69012
+          ]
+        },
+        {
+          "q": "оливье",
+          "status": 200,
+          "ms": 76.20723219588399,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69020,
+          "top_kcal": 196.663,
+          "kcal_err_pct": 6.350952380952375,
+          "ids": [
+            69020
+          ]
+        },
+        {
+          "q": "творог",
+          "status": 200,
+          "ms": 82.3937151581049,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69027,
+          "top_kcal": 168.732,
+          "kcal_err_pct": 0.7458823529411769,
+          "ids": [
+            69027
+          ]
+        },
+        {
+          "q": "сырники",
+          "status": 200,
+          "ms": 76.9049902446568,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69026,
+          "top_kcal": 241.11,
+          "kcal_err_pct": 2.600000000000006,
+          "ids": [
+            69026
+          ]
+        },
+        {
+          "q": "пельмени",
+          "status": 200,
+          "ms": 70.03147806972265,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69021,
+          "top_kcal": 205.505,
+          "kcal_err_pct": 17.43142857142857,
+          "ids": [
+            69021
+          ]
+        },
+        {
+          "q": "вареники",
+          "status": 200,
+          "ms": 62.684664968401194,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69028,
+          "top_kcal": 164.478,
+          "kcal_err_pct": 30.009361702127656,
+          "ids": [
+            69028
+          ]
+        },
+        {
+          "q": "чебуреки",
+          "status": 200,
+          "ms": 64.50356682762504,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69014,
+          "top_kcal": 262.197,
+          "kcal_err_pct": 6.358214285714285,
+          "ids": [
+            69014
+          ]
+        },
+        {
+          "q": "гречка",
+          "status": 200,
+          "ms": 73.21931188926101,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69015,
+          "top_kcal": 130.745,
+          "kcal_err_pct": 0.5730769230769266,
+          "ids": [
+            69015
+          ]
+        },
+        {
+          "q": "молоко",
+          "status": 200,
+          "ms": 70.23735390976071,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "хлеб",
+          "status": 200,
+          "ms": 64.27020812407136,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "курица",
+          "status": 200,
+          "ms": 63.69828479364514,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "яблоко",
+          "status": 200,
+          "ms": 80.17818816006184,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "банан",
+          "status": 200,
+          "ms": 82.53027684986591,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "картофель",
+          "status": 200,
+          "ms": 89.78370390832424,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 69028,
+          "top_kcal": 164.478,
+          "kcal_err_pct": 108.2,
+          "ids": [
+            69028
+          ]
+        },
+        {
+          "q": "яйцо",
+          "status": 200,
+          "ms": 71.14115683361888,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "кофе",
+          "status": 200,
+          "ms": 58.69210325181484,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "пиво",
+          "status": 200,
+          "ms": 58.088327292352915,
+          "hit1": false,
+          "hit5": false,
+          "top_id": null,
+          "top_kcal": null,
+          "kcal_err_pct": null,
+          "ids": []
+        },
+        {
+          "q": "borscht",
+          "status": 200,
+          "ms": 131.14058785140514,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69013,
+          "top_kcal": 46.9803,
+          "kcal_err_pct": 17.57842105263158,
+          "ids": [
+            69013,
+            66332
+          ]
+        },
+        {
+          "q": "plov",
+          "status": 200,
+          "ms": 78.29823903739452,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 69022,
+          "top_kcal": 176.027,
+          "kcal_err_pct": 11.986500000000007,
+          "ids": [
+            69022,
+            2801,
+            66954,
+            23729,
+            66501
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "04600935030675",
+          "status": 200,
+          "ms": 36.981118842959404,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2529359
+        },
+        {
+          "barcode": "04650067210773",
+          "status": 200,
+          "ms": 36.77126718685031,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2977390
+        },
+        {
+          "barcode": "04602328004980",
+          "status": 200,
+          "ms": 38.15893596038222,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 639491
+        },
+        {
+          "barcode": "00099990001920",
+          "status": 200,
+          "ms": 43.257624842226505,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2407345
+        },
+        {
+          "barcode": "04600605027721",
+          "status": 200,
+          "ms": 42.40137618035078,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2107047
+        },
+        {
+          "barcode": "09602065580070",
+          "status": 200,
+          "ms": 47.044538892805576,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2449116
+        },
+        {
+          "barcode": "04600631000736",
+          "status": 200,
+          "ms": 45.19659001380205,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1815243
+        },
+        {
+          "barcode": "00099990001685",
+          "status": 200,
+          "ms": 39.37516501173377,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2407325
+        },
+        {
+          "barcode": "04606272029860",
+          "status": 200,
+          "ms": 40.95015302300453,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 467948
+        },
+        {
+          "barcode": "4609990000081",
+          "status": 404,
+          "ms": 39.45651696994901,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    },
+    "us": {
+      "queries": 23,
+      "hit1": 0.4782608695652174,
+      "hit5": 0.6956521739130435,
+      "kcal_n": 23,
+      "kcal_median_pct": 30.848329048843187,
+      "kcal_p90_pct": 411.91820837390463,
+      "barcodes": 10,
+      "found": 1.0,
+      "barcode_ok": 1.0,
+      "search_ms": {
+        "n": 23,
+        "p50": 257.73836579173803,
+        "p95": 554.553242539987,
+        "max": 605.771821923554
+      },
+      "lookup_ms": {
+        "n": 10,
+        "p50": 39.35659606941044,
+        "p95": 48.67261156905443,
+        "max": 52.47569037601352
+      },
+      "cases": [
+        {
+          "q": "whole wheat bread",
+          "status": 200,
+          "ms": 201.6683779656887,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 5542,
+          "top_kcal": 278.0,
+          "kcal_err_pct": 10.317460317460316,
+          "ids": [
+            5542,
+            5540,
+            5543,
+            5541,
+            27641
+          ]
+        },
+        {
+          "q": "white bread",
+          "status": 200,
+          "ms": 140.4779739677906,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 384,
+          "top_kcal": 238.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            384,
+            1748,
+            105,
+            7777,
+            861
+          ]
+        },
+        {
+          "q": "rye bread",
+          "status": 200,
+          "ms": 431.65212916210294,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 5536,
+          "top_kcal": 259.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            5536,
+            5537,
+            64107,
+            27496,
+            61566
+          ]
+        },
+        {
+          "q": "whole milk",
+          "status": 200,
+          "ms": 462.2688232921064,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 4136,
+          "top_kcal": 61.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            4136,
+            167,
+            51,
+            3703,
+            3697
+          ]
+        },
+        {
+          "q": "skim milk",
+          "status": 200,
+          "ms": 187.84965993836522,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 3739,
+          "top_kcal": 56.0,
+          "kcal_err_pct": 64.70588235294117,
+          "ids": [
+            3739,
+            4100,
+            3699,
+            27987,
+            20340
+          ]
+        },
+        {
+          "q": "yogurt",
+          "status": 200,
+          "ms": 181.2033662572503,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 574,
+          "top_kcal": 94.0,
+          "kcal_err_pct": 54.09836065573771,
+          "ids": [
+            574,
+            6631,
+            8079,
+            257,
+            3738
+          ]
+        },
+        {
+          "q": "cheddar cheese",
+          "status": 200,
+          "ms": 257.73836579173803,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 21,
+          "top_kcal": 408.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            21,
+            3751,
+            4147,
+            5807,
+            816
+          ]
+        },
+        {
+          "q": "white rice",
+          "status": 200,
+          "ms": 226.1145208030939,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 106,
+          "top_kcal": 359.0,
+          "kcal_err_pct": 191.869918699187,
+          "ids": [
+            106,
+            2564,
+            1731,
+            219,
+            1783
+          ]
+        },
+        {
+          "q": "spaghetti",
+          "status": 200,
+          "ms": 437.16336973011494,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 1763,
+          "top_kcal": 372.0,
+          "kcal_err_pct": 135.44303797468353,
+          "ids": [
+            1763,
+            1764,
+            2150,
+            2697,
+            328
+          ]
+        },
+        {
+          "q": "chicken breast",
+          "status": 200,
+          "ms": 328.51322926580906,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 7460,
+          "top_kcal": 134.0,
+          "kcal_err_pct": 11.666666666666666,
+          "ids": [
+            7460,
+            251,
+            4367,
+            5797,
+            5815
+          ]
+        },
+        {
+          "q": "apple",
+          "status": 200,
+          "ms": 491.50558887049556,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 7884,
+          "top_kcal": 274.0,
+          "kcal_err_pct": 426.9230769230769,
+          "ids": [
+            7884,
+            7840,
+            1668,
+            3811,
+            2761
+          ]
+        },
+        {
+          "q": "banana",
+          "status": 200,
+          "ms": 184.31603210046887,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 2246,
+          "top_kcal": 27.0,
+          "kcal_err_pct": 69.66292134831461,
+          "ids": [
+            2246,
+            1701,
+            481,
+            4203,
+            8082
+          ]
+        },
+        {
+          "q": "coffee",
+          "status": 200,
+          "ms": 203.23919272050261,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 8076,
+          "top_kcal": 62.0,
+          "kcal_err_pct": 6100.0,
+          "ids": [
+            8076,
+            6986,
+            4749,
+            4733,
+            2489
+          ]
+        },
+        {
+          "q": "beer",
+          "status": 200,
+          "ms": 380.77193684875965,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 4468,
+          "top_kcal": 238.0,
+          "kcal_err_pct": 480.4878048780488,
+          "ids": [
+            4468,
+            4723,
+            4863,
+            7715,
+            66908
+          ]
+        },
+        {
+          "q": "potato",
+          "status": 200,
+          "ms": 556.1414919793606,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 1298,
+          "top_kcal": 357.0,
+          "kcal_err_pct": 351.8987341772152,
+          "ids": [
+            1298,
+            795,
+            173,
+            2944,
+            1706
+          ]
+        },
+        {
+          "q": "egg",
+          "status": 200,
+          "ms": 501.61353405565023,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 5525,
+          "top_kcal": 287.0,
+          "kcal_err_pct": 100.69930069930071,
+          "ids": [
+            5525,
+            7753,
+            6280,
+            26,
+            9
+          ]
+        },
+        {
+          "q": "tomato",
+          "status": 200,
+          "ms": 605.771821923554,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 137,
+          "top_kcal": 22.0,
+          "kcal_err_pct": 22.22222222222222,
+          "ids": [
+            137,
+            3313,
+            285,
+            4677,
+            2906
+          ]
+        },
+        {
+          "q": "oatmeal",
+          "status": 200,
+          "ms": 147.2475230693817,
+          "hit1": false,
+          "hit5": false,
+          "top_id": 5530,
+          "top_kcal": 269.0,
+          "kcal_err_pct": 30.848329048843187,
+          "ids": [
+            5530,
+            5531,
+            7812,
+            4717,
+            7815
+          ]
+        },
+        {
+          "q": "butter",
+          "status": 200,
+          "ms": 540.2589975856245,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 6262,
+          "top_kcal": 717.0,
+          "kcal_err_pct": 0.0,
+          "ids": [
+            6262,
+            4273,
+            7839,
+            5187,
+            6422
+          ]
+        },
+        {
+          "q": "peanut butter",
+          "status": 200,
+          "ms": 267.66777923330665,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 174,
+          "top_kcal": 632.0,
+          "kcal_err_pct": 7.482993197278912,
+          "ids": [
+            174,
+            2721,
+            5310,
+            5323,
+            1615
+          ]
+        },
+        {
+          "q": "ground beef",
+          "status": 200,
+          "ms": 178.2313110306859,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 5963,
+          "top_kcal": 121.0,
+          "kcal_err_pct": 52.362204724409445,
+          "ids": [
+            5963,
+            5962,
+            4642,
+            220,
+            1504
+          ]
+        },
+        {
+          "q": "orange juice",
+          "status": 200,
+          "ms": 234.64546399191022,
+          "hit1": false,
+          "hit5": true,
+          "top_id": 4206,
+          "top_kcal": 45.0,
+          "kcal_err_pct": 8.16326530612245,
+          "ids": [
+            4206,
+            1896,
+            1895,
+            1951,
+            4207
+          ]
+        },
+        {
+          "q": "broccoli",
+          "status": 200,
+          "ms": 204.4343608431518,
+          "hit1": true,
+          "hit5": true,
+          "top_id": 90,
+          "top_kcal": 31.0,
+          "kcal_err_pct": 11.428571428571429,
+          "ids": [
+            90,
+            3231,
+            3233,
+            2183,
+            2181
+          ]
+        }
+      ],
+      "barcode_cases": [
+        {
+          "barcode": "06938530601685",
+          "status": 200,
+          "ms": 43.13754476606846,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1845207
+        },
+        {
+          "barcode": "00044000063689",
+          "status": 200,
+          "ms": 44.024404138326645,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1551857
+        },
+        {
+          "barcode": "00021000064113",
+          "status": 200,
+          "ms": 39.39718334004283,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1160792
+        },
+        {
+          "barcode": "00013000014458",
+          "status": 200,
+          "ms": 52.47569037601352,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2256845
+        },
+        {
+          "barcode": "00037600106481",
+          "status": 200,
+          "ms": 43.50723000243306,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 108030
+        },
+        {
+          "barcode": "05905669265201",
+          "status": 200,
+          "ms": 32.54546318203211,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2205910
+        },
+        {
+          "barcode": "05900259141422",
+          "status": 200,
+          "ms": 31.884652096778154,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 2942623
+        },
+        {
+          "barcode": "00070424004052",
+          "status": 200,
+          "ms": 36.892431788146496,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1827520
+        },
+        {
+          "barcode": "00049000062496",
+          "status": 200,
+          "ms": 39.31600879877806,
+          "ok": true,
+          "found": true,
+          "expected_not_found": false,
+          "top_id": 1599028
+        },
+        {
+          "barcode": "0009990000106",
+          "status": 404,
+          "ms": 34.241251181811094,
+          "ok": true,
+          "found": false,
+          "expected_not_found": true,
+          "top_id": null
+        }
+      ]
+    }
+  },
+  "overall": {
+    "queries": 223,
+    "hit1": 0.4484304932735426,
+    "hit5": 0.6502242152466368,
+    "kcal_n": 193,
+    "kcal_median_pct": 9.30232558139535,
+    "kcal_p90_pct": 237.3179286156387,
+    "barcodes": 100,
+    "found": 1.0,
+    "barcode_ok": 1.0,
+    "search_ms": {
+      "n": 223,
+      "p50": 159.8221017047763,
+      "p95": 556.0388646554202,
+      "max": 644.2388840951025
+    },
+    "lookup_ms": {
+      "n": 100,
+      "p50": 40.10081896558404,
+      "p95": 45.216791331768036,
+      "max": 52.47569037601352
+    }
+  }
+}
