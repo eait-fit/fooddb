@@ -77,7 +77,7 @@ def build_recipes() -> None:
     logger.info(f"recipes: {result}")
 
 
-def build_snapshot() -> None:
+def build_snapshot(full: bool = False) -> None:
     from fooddb import snapshot
 
     # Recipes recompute from their ingredients' current values before the build freezes: a changed
@@ -86,7 +86,7 @@ def build_snapshot() -> None:
         build_recipes()
     except Exception as e:  # a recipe must never take the snapshot down: the build still runs
         logger.exception(f"recipes skipped: {e}")
-    logger.info(f"snapshot: {snapshot.build()} products")
+    logger.info(f"snapshot: {snapshot.build(full=full)} products")
 
 
 def dump_odbl() -> None:
