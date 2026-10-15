@@ -244,7 +244,6 @@ def print_deltas(a: dict, b: dict) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--base-url", default=os.environ.get("FOODDB__BENCH__URL", PROD))
-    ap.add_argument("--key", default=os.environ.get("FOODDB__BENCH__KEY"))
     ap.add_argument("--country", help="comma list to run only some countries")
     ap.add_argument("--compare", nargs="*", metavar="RESULT",
                     help="compare two result files (default: the last two) instead of running")
@@ -262,7 +261,10 @@ def main() -> int:
             print(f"REGRESSION {line}")
         return 1 if bad else 0
 
-    result = run(args.base_url.rstrip("/"), args.key,
+    key = os.environ.get("FOODDB__BENCH__KEY")
+    if not key:
+        sys.exit("FOODDB__BENCH__KEY is not set: a read key, from the environment only")
+    result = run(args.base_url.rstrip("/"), key,
                  set(args.country.split(",")) if args.country else None)
     out = Path(args.out) if args.out else RESULTS / f"{result['date']}-{result['server']['id']}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
