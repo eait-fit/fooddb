@@ -124,6 +124,14 @@ merge_log = Table(
     Index("merge_log_food_ids_idx", "food_ids", postgresql_using="gin"),
 )
 
+# Products whose resolved values can differ since the last snapshot build. Statement-level
+# triggers on observation, food and product write it (migration 0018); each build drains it.
+snapshot_dirty = Table(
+    "snapshot_dirty",
+    metadata,
+    Column("product_id", BigInteger, primary_key=True),
+)
+
 # Record pairs that matching never puts in one product. A split writes them.
 cannot_link = Table(
     "cannot_link",

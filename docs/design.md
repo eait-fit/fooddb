@@ -119,9 +119,11 @@ its ingredients' licences, and its `attribution` is the union of the sources the
 
 ### Snapshot and serving
 
-- One nightly snapshot, replaced in full by each build. The API serves it; there are no date pins
+- One nightly snapshot, kept current by each build. The API serves it; there are no date pins
   and no kept days — the raw history stays in `observation`. Built: one snapshot per UTC night, in
-  one transaction, so a read never sees a half-built state. A merge after a build keeps the values
+  one transaction, so a read never sees a half-built state. A build rewrites only the products
+  whose values can have moved since the last one ([#96](https://github.com/eait-fit/fooddb/issues/96));
+  `fooddb run snapshot --full` rewrites all of them. A merge after a build keeps the values
   that the build froze. Records and names are read live, not frozen. Built: the export of the
   snapshot as NDJSON, for consumers that keep a local copy. Built
   ([#31](https://github.com/eait-fit/fooddb/issues/31)): the export reads about 7000 products per

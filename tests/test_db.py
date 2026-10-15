@@ -23,7 +23,7 @@ def clean():
     from fooddb.db import engine
 
     with engine().begin() as conn:
-        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit, account, purchase, login_token, usage_month, request_log, admin_action restart identity cascade"))
+        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, snapshot_dirty, fetcher_check, merge_log, cannot_link, api_key, rate_limit, account, purchase, login_token, usage_month, request_log, admin_action restart identity cascade"))
 
 
 def client(key: str | None = None):
@@ -605,8 +605,8 @@ def test_a_build_replaces_the_current_snapshot_and_no_older_rows_remain(monkeypa
     assert kcal("fdc:1") == 233
     with engine().connect() as conn:
         assert conn.execute(text("select day from snapshot")).scalars().all() == [date(2026, 10, 2)]
-        assert conn.execute(text("select count(*) from snapshot_value where day <> :d"),
-                            {"d": date(2026, 10, 2)}).scalar_one() == 0
+        # snapshot_value is not day-keyed anymore: one product and one nutrient, in both scopes.
+        assert conn.execute(text("select count(*) from snapshot_value")).scalar_one() == 2
 
 
 def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatch):
@@ -626,6 +626,153 @@ def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatc
         assert (p["id"], sorted(p["records"])) == (survivor, ["fdc:1", "fdc:2"])
         # As if the merge had come before the build: fdc:2's newer kcal and its fibre.
         assert {n: v["value"] for n, v in p["per_100"].items()} == HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
+
+
+def snapshot_rows() -> list[dict]:
+    """Every value the one snapshot serves, ordered: what an incremental build must reproduce."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return [dict(r) for r in conn.execute(text(
+            "select scope, product_id, nutrient, value_per_100, unit, basis, source, licence,"
+            " observed_at, approved from snapshot_value order by scope, product_id, nutrient"
+        )).mappings()]
+
+
+def assert_incremental_equals_full(monkeypatch, day: str = "2026-10-02") -> list[dict]:
+    """Rebuild after a change, then force the full rebuild: the two must be row-for-row identical."""
+    from fooddb import snapshot
+
+    build_on(monkeypatch, day)
+    rows = snapshot_rows()
+    snapshot.build(full=True)
+    assert snapshot_rows() == rows
+    return rows
+
+
+def test_an_incremental_build_without_a_change_keeps_every_row(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    before = snapshot_rows()
+    assert assert_incremental_equals_full(monkeypatch) == before
+    with engine().connect() as conn:
+        assert conn.execute(text("select count(*) from snapshot_dirty")).scalar_one() == 0
+
+
+def test_an_incremental_build_picks_up_a_new_observation_and_a_withdrawal(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    ingest.run("t", "r2", [rec(observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+                               values={"ENERC_KCAL": 231.0})])  # PROCNT withdrawn, ENERC_KCAL moved
+    assert_incremental_equals_full(monkeypatch)
+    assert "PROCNT" not in product("fdc:1")["per_100"] and kcal("fdc:1") == 231
+
+
+def test_an_incremental_build_picks_up_review_decisions_and_undo(monkeypatch):
+    from fooddb import review
+
+    ingest_typo()
+    build_on(monkeypatch, "2026-10-01")
+    obs = pending_id("ENERC_KCAL")
+    review.decide(obs, "accept", "tester")
+    assert_incremental_equals_full(monkeypatch, "2026-10-02")
+    assert kcal("fdc:1") == 2290
+    review.decide(pending_id("SUGAR"), "reject", "tester")
+    assert_incremental_equals_full(monkeypatch, "2026-10-03")
+    assert review.undo([obs], "tester") == 1
+    assert_incremental_equals_full(monkeypatch, "2026-10-04")
+    assert kcal("fdc:1") == 229  # pending again: the value a reviewer undid is not served
+
+
+def test_an_incremental_build_rebuilds_both_sides_of_a_merge(monkeypatch):
+    from fooddb import ingest, jobs
+
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+            values=MERGED_HUMMUS),
+    ])
+    survivor, merged_away = product("fdc:1")["id"], product("fdc:2")["id"]
+    build_on(monkeypatch, "2026-10-01")
+    jobs.match_products()
+    rows = assert_incremental_equals_full(monkeypatch)
+    assert not [r for r in rows if r["product_id"] == merged_away]  # its records serve the survivor
+    assert {n: v["value"] for n, v in product("fdc:2")["per_100"].items()} == MERGED_HUMMUS
+
+
+def test_an_incremental_build_rebuilds_both_sides_of_a_split(monkeypatch):
+    survivor, merged_away = wrongly_merged_hummus()
+    build_on(monkeypatch, "2026-10-01")
+    assert split(survivor, ["fdc:2"]).status_code == 200
+    assert_incremental_equals_full(monkeypatch)
+    values = lambda pid: {n: v["value"] for n, v in client().get(f"/v1/foods/{pid}").json()["per_100"].items()}
+    assert values(survivor) == HUMMUS and values(merged_away) == MERGED_HUMMUS
+
+
+def test_an_incremental_build_picks_up_a_moved_or_deleted_record(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+                           rec(id="fdc:2", name="Beans, snap, green, raw",
+                               values={"ENERC_KCAL": 31.0, "CHOCDF": 7.0})])
+    build_on(monkeypatch, "2026-10-01")
+    with engine().begin() as conn:
+        # A record moved to another product by hand, and one deleted with its observations.
+        conn.execute(text("update food set product_id = (select product_id from food where id = 'fdc:1')"
+                          " where id = 'fdc:2'"))
+    assert_incremental_equals_full(monkeypatch)
+    with engine().begin() as conn:
+        conn.execute(text("delete from observation where food_id = 'fdc:2'"))
+        conn.execute(text("delete from food where id = 'fdc:2'"))
+    assert_incremental_equals_full(monkeypatch, "2026-10-03")
+    assert product("fdc:1")["records"] == ["fdc:1"]
+
+
+def test_an_incremental_build_drops_a_product_that_no_longer_resolves(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    with engine().begin() as conn:
+        conn.execute(text("delete from observation where food_id = 'fdc:1'"))
+        conn.execute(text("delete from food where id = 'fdc:1'"))
+        conn.execute(text("delete from product"))
+    rows = assert_incremental_equals_full(monkeypatch)
+    assert rows == []  # no product, no rows: a stale row would survive a selective rebuild
+
+
+def test_a_full_build_stays_available_and_runs_when_no_snapshot_exists(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest, snapshot
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    snapshot.build(full=True)  # no snapshot yet: the same thing either way
+    assert kcal("fdc:1") == 229
+    with engine().begin() as conn:  # a row a build would drop: --full rewrites everything
+        conn.execute(text("insert into snapshot_value (scope, product_id, nutrient, value_per_100,"
+                          " unit, basis, source, licence, observed_at)"
+                          " values ('all', 999999, 'X', 1, 'g', '100g', 'x', 'x', now())"))
+    snapshot.build(full=True)
+    with engine().connect() as conn:
+        assert conn.execute(text("select count(*) from snapshot_value where product_id = 999999")
+                            ).scalar_one() == 0
 
 
 def test_health_reports_stale_and_fresh_fetchers():

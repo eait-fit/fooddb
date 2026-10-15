@@ -87,7 +87,7 @@ with recursive member(product_id, id) as (
 select * from ({pick_sql("""
     select m.product_id, v.nutrient, v.value_per_100, v.unit, v.basis, v.source, v.licence, v.observed_at, v.approved
     from member m join snapshot_value v on v.product_id = m.id
-    where v.day = :day and v.scope = :scope
+    where v.scope = :scope
 """)}) picked
 """
 
@@ -98,7 +98,7 @@ MERGED_SQL = "select distinct merged_into from product where merged_into = any(:
 STORED_SQL = """
 select product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at, approved
 from snapshot_value
-where day = :day and scope = :scope and product_id = any(:pids)
+where scope = :scope and product_id = any(:pids)
 order by product_id, nutrient
 """
 
@@ -192,9 +192,9 @@ def products(pids: list[int], include: str | None, conn: Connection | None = Non
     records = conn.execute(text(RECORDS_SQL), params).mappings().all()
     if day:
         merged = set(conn.execute(text(MERGED_SQL), params).scalars())
-        values = conn.execute(text(STORED_SQL), params | {"day": day, "pids": [p for p in pids if p not in merged]}).mappings().all()
+        values = conn.execute(text(STORED_SQL), params | {"pids": [p for p in pids if p not in merged]}).mappings().all()
         if merged:
-            values += conn.execute(text(SNAPSHOT_SQL), params | {"day": day, "pids": sorted(merged)}).mappings().all()
+            values += conn.execute(text(SNAPSHOT_SQL), params | {"pids": sorted(merged)}).mappings().all()
     else:
         values = conn.execute(text(LIVE_SQL), params).mappings().all()
     by_pid: dict[int, dict] = {}

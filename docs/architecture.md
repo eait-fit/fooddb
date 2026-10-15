@@ -866,16 +866,26 @@ has the source, the licence and the text to show (`resolve.py:107`).
 
 ### Snapshot
 
-`snapshot.build` writes the resolved values of all products for the current UTC day, in one
-transaction (`snapshot.py:16`). It writes two scopes: `core` (core layer only) and `all` (core and
-OFF). The build takes no day argument. It writes only today (`snapshot.py:12`). It ends with
-`analyze snapshot_value`. Autovacuum analyzes the table a night later. Until then the planner does
-not know the size of the new rows, and it joins the whole table for each read.
+`snapshot.build` rewrites the resolved values of the products that changed since the last build,
+in one transaction (`snapshot.py:33`). It writes two scopes: `core` (core layer only) and `all`
+(core and OFF). `snapshot.build(full=True)` — `fooddb run snapshot --full` — rewrites every
+product, and so does any build while no snapshot exists yet. The build takes no day argument. It
+writes only today (`snapshot.py:17`). It ends with `analyze snapshot_value`. Autovacuum analyzes
+the table a night later. Until then the planner does not know the size of the new rows, and it
+joins the whole table for each read.
 
-One snapshot exists, the current one. A build deletes today's rows, writes the new ones, and then
-deletes every other day; the `snapshot_value.day` cascade removes their values (`snapshot.py:34`).
-The nightly build and the rebuild after a fetcher's first data both write today, inside one
-transaction, so a read never sees a half-built state. There is no `final` flag and no date pin.
+The changed products come from `snapshot_dirty` plus both ends of every `merge_log` row newer
+than the last `built_at` (`snapshot.py:21`). Statement-level triggers on `observation` (new
+values, withdrawals, review decisions and undo — an undo clears `reviewed_at`, so no timestamp
+sees it), and row-level triggers on `food` (a record moving product or layer, or deleted) and
+`product` (`merged_into` changing, or deleted) keep `snapshot_dirty` (`0018`). The build drains it
+inside the same transaction, so a change committed mid-build survives in the table and the next
+build picks it up. A build rewrites a changed product in both scopes, whatever it touched.
+
+One snapshot exists, the current one. `snapshot` keeps one row: its `day` and `built_at` are the
+last build's (`snapshot.py:68`), which is what the API, the export and the freshness check read.
+`snapshot_value` is not day-keyed. Inside one transaction a read never sees a half-built state.
+There is no `final` flag and no date pin.
 
 The API reads values from the current snapshot (`resolve.py:195`). Before the first snapshot
 exists, the API resolves values live (`resolve.py:206`). The snapshot holds only values. Record
@@ -1007,7 +1017,8 @@ erDiagram
     product |o--o{ product : "merged_into"
     product ||--o{ food : "product_id"
     food ||--o{ observation : "food_id"
-    snapshot ||--o{ snapshot_value : "day, on delete cascade"
+    snapshot ||--o{ snapshot_value : "the current one"
+    observation ||--o{ snapshot_dirty : "triggers mark changed products"
     product ||--o{ merge_log : "from_product, into_product"
     food ||--o{ cannot_link : "food_a, food_b"
     account |o--o{ api_key : "account_id"
@@ -1060,7 +1071,6 @@ erDiagram
         int products
     }
     snapshot_value {
-        date day PK,FK
         text scope PK "core or all"
         bigint product_id PK "no FK"
         text nutrient PK
@@ -1071,6 +1081,9 @@ erDiagram
         text licence
         timestamptz observed_at
         boolean approved "an approved label read"
+    }
+    snapshot_dirty {
+        bigint product_id PK "a product the next build rewrites"
     }
     fetch_run {
         bigint id PK
@@ -1172,7 +1185,7 @@ erDiagram
     }
 ```
 
-Fourteen Alembic migrations make this schema:
+Eighteen Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -1201,6 +1214,12 @@ Fourteen Alembic migrations make this schema:
 - `0014` adds `request_log` with an index on `at`, and `admin_action`
   (`alembic/versions/0014_admin_panel.py:15`). Neither table has a foreign key, so the log keeps
   its rows if a key or an account goes away.
+- `0015` adds `food.images` (`alembic/versions/0015_food_images.py:16`), `0016` adds `food.markets`
+  (`alembic/versions/0016_food_markets.py:16`), and `0017` drops every snapshot day but the newest
+  (`alembic/versions/0017_one_snapshot.py:15`).
+- `0018` drops `snapshot_value.day`, adds `snapshot_dirty` and the triggers that fill it
+  (`alembic/versions/0018_incremental_snapshot.py:75`). It seeds the table with every product, so
+  the first incremental build replays a full one and misses nothing the triggers never saw.
 
 `observation` has no unique key. The comparison in `_observations` makes a re-run idempotent.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -1255,7 +1274,7 @@ sequenceDiagram
 5. It reads the records of each product from the live `food` table (`resolve.py:111`). The most
    trusted, newest record gives the name, brand, language, serving, category and flags.
    Each barcode is tagged with the most trusted record that has it (`resolve.py:127`).
-6. It reads the values from `snapshot_value` for the snapshot's day and scope. The scope is `all`
+6. It reads the values from `snapshot_value` for the scope. The scope is `all`
    with `include=off`, else `core` (`resolve.py:195`). The values include those of every product
    merged into this one after the build (`resolve.py:81`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`

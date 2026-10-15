@@ -15,7 +15,7 @@ from fooddb import resolve
 from fooddb.db import engine
 
 BATCH = 1000
-NOTE = ("One snapshot only, the current one: a build replaces it in full. "
+NOTE = ("One snapshot only, the current one: a build rewrites the products that changed. "
         "Sync when its built_at (or the export's ETag) changes.")
 
 # Every product with values in the snapshot, merges followed: a product merged after the build is
@@ -23,7 +23,7 @@ NOTE = ("One snapshot only, the current one: a build replaces it in full. "
 IDS_SQL = """
 with recursive chain(id, merged_into) as (
     select id, merged_into from product
-    where id in (select product_id from snapshot_value where day = :day and scope = :scope)
+    where id in (select product_id from snapshot_value where scope = :scope)
     union all
     select p.id, p.merged_into from chain c join product p on p.id = c.merged_into
 )
@@ -49,7 +49,7 @@ def products(day: date, include: str | None) -> Iterator[dict]:
     with engine().connect() as conn:
         conn.execution_options(isolation_level="REPEATABLE READ")
         with conn.begin():
-            ids = conn.execute(text(IDS_SQL), {"day": day, "scope": scope}, execution_options={"yield_per": BATCH})
+            ids = conn.execute(text(IDS_SQL), {"scope": scope}, execution_options={"yield_per": BATCH})
             for batch in ids.scalars().partitions(BATCH):
                 yield from resolve.products(list(batch), include, conn)
 
