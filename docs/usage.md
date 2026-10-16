@@ -308,7 +308,7 @@ dump comes with the ODbL attribution and share-alike obligation: see
 
 | Fetcher | Source | Licence | Schedule |
 |---|---|---|---|
-| `fdc` foundation, sr_legacy | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
+| `fdc` foundation, sr_legacy, survey (FNDDS) | USDA FoodData Central bulk JSON | CC0 | weekly check (USDA releases twice a year) |
 | `fdc` branded | USDA FoodData Central Branded Foods (~3 GB JSON, streamed) | CC0 | weekly check, only with `FOODDB__BACKEND__FETCH_FDC_BRANDED=true` |
 | `table` bls | BLS, German food composition table (Max Rubner-Institut), Excel in a zip from blsdb.de | CC BY 4.0, attribution | weekly check |
 | `table` ciqual | CIQUAL, French food composition table (ANSES), Excel | Etalab 2.0, attribution | weekly check |

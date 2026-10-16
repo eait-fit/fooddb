@@ -1,5 +1,5 @@
-"""USDA FoodData Central bulk JSON (CC0): Foundation Foods (twice a year), SR Legacy (frozen, 7.8k foods)
-and Branded Foods (twice a year, about 3 GB of JSON, read as a stream)."""
+"""USDA FoodData Central bulk JSON (CC0): Foundation Foods (twice a year), SR Legacy (frozen, 7.8k foods),
+Survey Foods (FNDDS: 5.4k foods as eaten, mixed dishes included; every two years) and Branded Foods (twice a year, about 3 GB of JSON, read as a stream)."""
 
 import re
 import tempfile
@@ -19,6 +19,7 @@ DATASETS = {
     "foundation": ("foundation_food_json", "FoundationFoods"),
     "sr_legacy": ("sr_legacy_food_json", "SRLegacyFoods"),
     "branded": ("branded_food_json", "BrandedFoods"),
+    "survey": ("survey_food_json", "SurveyFoods"),
 }
 
 # FDC nutrient id → INFOODS tagname. Energy: 1008 when present, else Atwater general (2047).
@@ -64,7 +65,8 @@ def records(foods: Iterable[dict]):
             continue
         published = f.get("publicationDate") or "2000-01-01"
         unit = (f.get("servingSizeUnit") or "").lower()
-        categories = [(f.get("foodCategory") or {}).get("description"), f.get("brandedFoodCategory")]
+        categories = [(f.get("foodCategory") or {}).get("description"), f.get("brandedFoodCategory"),
+                      (f.get("wweiaFoodCategory") or {}).get("wweiaFoodCategoryDescription")]
         yield ingest.Record(
             id=f"fdc:{f['fdcId']}", source="fdc", layer="core", licence="CC0-1.0",
             name=f["description"], lang="en", values=values, basis="100ml" if unit in ("ml", "mlt") else "100g",
