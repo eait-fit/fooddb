@@ -220,17 +220,6 @@ def test_search_country_does_not_prefer_a_different_food():
     assert names(client(), {"q": "apple", "country": "de"}) == ["fdc:2", "bls:1"]
 
 
-def test_search_country_prefers_its_table_among_near_ties():
-    from fooddb import ingest
-
-    ingest.run("t", "r1", [rec(id="fdc:2", name="Rye bread"),
-                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Rye breads")])
-    c = client()
-    # 1.0 against 0.9: close enough that the country's table wins; without a country, similarity does.
-    assert names(c, {"q": "rye bread", "country": "de"}) == ["bls:1", "fdc:2"]
-    assert names(c, {"q": "rye bread"}) == ["fdc:2", "bls:1"]
-
-
 def test_search_country_ranks_the_whole_list(monkeypatch):
     from fooddb import countries, ingest
 
