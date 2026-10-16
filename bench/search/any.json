@@ -14,7 +14,8 @@
           "cofid:11-980",
           "frida:676",
           "frida:861",
-          "frida:786"
+          "frida:786",
+          "fdc:2707598"
         ]
       },
       "kcal": 238,
@@ -27,7 +28,9 @@
         "records": [
           "fdc:172688",
           "fdc:172690",
-          "bls:B111000"
+          "bls:B111000",
+          "fdc:2707709",
+          "fdc:2707711"
         ]
       },
       "kcal": 252,
@@ -46,7 +49,8 @@
           "frida:418",
           "frida:1673",
           "frida:413",
-          "bls:B227300"
+          "bls:B227300",
+          "fdc:2707755"
         ]
       },
       "kcal": 259,
@@ -57,7 +61,8 @@
       "q": "sourdough bread",
       "expect": {
         "records": [
-          "fdc:172675"
+          "fdc:172675",
+          "fdc:2707646"
         ]
       },
       "kcal": 272,
@@ -72,7 +77,8 @@
           "bls:B291000",
           "ciqual:7255",
           "ciqual:7098",
-          "bls:B314200"
+          "bls:B314200",
+          "fdc:2707777"
         ]
       },
       "kcal": 265,
@@ -107,7 +113,8 @@
       "expect": {
         "records": [
           "fdc:167945",
-          "matvaretabellen:05.437"
+          "matvaretabellen:05.437",
+          "fdc:2707612"
         ]
       },
       "kcal": 249,
@@ -125,7 +132,8 @@
           "ciqual:7740",
           "ciqual:7745",
           "ciqual:7210",
-          "matvaretabellen:05.501"
+          "matvaretabellen:05.501",
+          "fdc:2707682"
         ]
       },
       "kcal": 363,
@@ -144,7 +152,8 @@
           "ciqual:7620",
           "ciqual:7621",
           "frida:223",
-          "matvaretabellen:05.312"
+          "matvaretabellen:05.312",
+          "fdc:2707678"
         ]
       },
       "kcal": 417,
@@ -156,7 +165,8 @@
       "expect": {
         "records": [
           "ciqual:7730",
-          "ciqual:7733"
+          "ciqual:7733",
+          "fdc:2707680"
         ]
       },
       "kcal": 423,
@@ -173,7 +183,8 @@
           "fdc:175051",
           "ciqual:7258",
           "cofid:11-970",
-          "matvaretabellen:05.454"
+          "matvaretabellen:05.454",
+          "fdc:2707684"
         ]
       },
       "kcal": 275,
@@ -190,7 +201,8 @@
           "fdc:174994",
           "fdc:167515",
           "ciqual:7257",
-          "cofid:11-541"
+          "cofid:11-541",
+          "fdc:2707698"
         ]
       },
       "kcal": 235,
@@ -209,7 +221,10 @@
           "frida:1704",
           "frida:1705",
           "matvaretabellen:05.188",
-          "matvaretabellen:05.551"
+          "matvaretabellen:05.551",
+          "fdc:2707616",
+          "fdc:2707730",
+          "fdc:2707731"
         ]
       },
       "kcal": 275,
@@ -222,7 +237,8 @@
         "records": [
           "fdc:171845",
           "fdc:174077",
-          "cofid:11-973"
+          "cofid:11-973",
+          "fdc:2707613"
         ]
       },
       "kcal": 291,
@@ -249,7 +265,8 @@
       "expect": {
         "records": [
           "fdc:171844",
-          "fdc:174075"
+          "fdc:174075",
+          "fdc:2707713"
         ]
       },
       "kcal": 297,
@@ -261,7 +278,8 @@
       "expect": {
         "records": [
           "fdc:174076",
-          "cofid:11-1104"
+          "cofid:11-1104",
+          "fdc:2707715"
         ]
       },
       "kcal": 326,
@@ -276,7 +294,9 @@
           "bls:B783012",
           "ciqual:7815",
           "cofid:11-925",
-          "matvaretabellen:05.381"
+          "matvaretabellen:05.381",
+          "fdc:2707824",
+          "fdc:2707825"
         ]
       },
       "kcal": 285,
@@ -288,7 +308,8 @@
       "expect": {
         "records": [
           "ciqual:7813",
-          "matvaretabellen:05.248"
+          "matvaretabellen:05.248",
+          "fdc:2707823"
         ]
       },
       "kcal": 316,
@@ -308,7 +329,9 @@
       "expect": {
         "records": [
           "fdc:172740",
-          "fdc:172742"
+          "fdc:172742",
+          "fdc:2708158",
+          "fdc:2708142"
         ]
       },
       "kcal": 395,
@@ -333,7 +356,8 @@
           "bls:B6A2500",
           "bls:B6A2200",
           "bls:B6A2300",
-          "bls:B6A2400"
+          "bls:B6A2400",
+          "fdc:2708156"
         ]
       },
       "kcal": 366,
@@ -356,7 +380,8 @@
           "fdc:170652",
           "frida:1748",
           "matvaretabellen:05.193",
-          "matvaretabellen:05.194"
+          "matvaretabellen:05.194",
+          "fdc:2708162"
         ]
       },
       "kcal": 387,
@@ -368,7 +393,11 @@
       "expect": {
         "records": [
           "fdc:174910",
-          "fdc:174909"
+          "fdc:174909",
+          "fdc:2707811",
+          "fdc:2707810",
+          "fdc:2707813",
+          "fdc:2707814"
         ]
       },
       "kcal": 266,
@@ -397,7 +426,8 @@
           "fdc:172796",
           "fdc:172797",
           "fdc:174090",
-          "matvaretabellen:05.061"
+          "matvaretabellen:05.061",
+          "fdc:2707657"
         ]
       },
       "kcal": 279,
@@ -412,7 +442,9 @@
           "fdc:174090",
           "ciqual:7259",
           "ciqual:7262",
-          "matvaretabellen:05.063"
+          "matvaretabellen:05.063",
+          "fdc:2707656",
+          "fdc:2707750"
         ]
       },
       "kcal": 283,
@@ -426,7 +458,13 @@
           "fdc:169064",
           "fdc:174790",
           "bls:B723100",
-          "bls:B723000"
+          "bls:B723000",
+          "fdc:2708267",
+          "fdc:2708277",
+          "fdc:2708268",
+          "fdc:2708278",
+          "fdc:2708279",
+          "fdc:2708271"
         ]
       },
       "kcal": 338,
@@ -437,7 +475,8 @@
       "q": "white toast",
       "expect": {
         "records": [
-          "cofid:11-1001"
+          "cofid:11-1001",
+          "fdc:2707599"
         ]
       },
       "kcal": 267,
@@ -449,7 +488,10 @@
       "expect": {
         "records": [
           "fdc:167939",
-          "cofid:11-937"
+          "cofid:11-937",
+          "fdc:2707626",
+          "fdc:2707627",
+          "fdc:2707628"
         ]
       },
       "kcal": 350,
@@ -461,7 +503,9 @@
       "expect": {
         "records": [
           "fdc:174929",
-          "cofid:11-826"
+          "cofid:11-826",
+          "fdc:2707690",
+          "fdc:2707691"
         ]
       },
       "kcal": 412,
@@ -482,7 +526,12 @@
           "cofid:11-820",
           "frida:1122",
           "fdc:171838",
-          "fdc:174980"
+          "fdc:174980",
+          "fdc:2708132",
+          "fdc:2708159",
+          "fdc:2708184",
+          "fdc:2708178",
+          "fdc:2708167"
         ]
       },
       "kcal": 455,
@@ -495,7 +544,9 @@
         "records": [
           "fdc:172746",
           "fdc:175056",
-          "fdc:175057"
+          "fdc:175057",
+          "fdc:2708167",
+          "fdc:2708143"
         ]
       },
       "kcal": 418,
@@ -535,7 +586,8 @@
           "fdc:174918",
           "bls:B780500",
           "frida:418",
-          "matvaretabellen:05.184"
+          "matvaretabellen:05.184",
+          "fdc:2707760"
         ]
       },
       "kcal": 250,
@@ -563,7 +615,8 @@
           "cofid:11-827",
           "cofid:11-1114",
           "matvaretabellen:05.413",
-          "matvaretabellen:05.414"
+          "matvaretabellen:05.414",
+          "fdc:2707808"
         ]
       },
       "kcal": 346,
@@ -606,7 +659,9 @@
           "fdc:172079",
           "frida:279",
           "matvaretabellen:05.187",
-          "matvaretabellen:05.314"
+          "matvaretabellen:05.314",
+          "fdc:2707668",
+          "fdc:2707667"
         ]
       },
       "kcal": 372,
@@ -630,7 +685,10 @@
           "bls:D7A7600",
           "bls:D780500",
           "bls:D780300",
-          "frida:392"
+          "frida:392",
+          "fdc:2708059",
+          "fdc:2708061",
+          "fdc:2708060"
         ]
       },
       "kcal": 442.2,
@@ -645,7 +703,8 @@
           "bls:D072000",
           "bls:D072062",
           "matvaretabellen:10.130",
-          "bls:D490300"
+          "bls:D490300",
+          "fdc:2708053"
         ]
       },
       "kcal": 560,
@@ -677,7 +736,10 @@
       "q": "waffle",
       "expect": {
         "records": [
-          "ciqual:23850"
+          "ciqual:23850",
+          "fdc:2708312",
+          "fdc:2708325",
+          "fdc:2708313"
         ]
       },
       "kcal": 301,
@@ -693,7 +755,15 @@
           "fdc:172035",
           "fdc:172077",
           "bls:Y812962",
-          "ciqual:39236"
+          "ciqual:39236",
+          "fdc:2708331",
+          "fdc:2708335",
+          "fdc:2708333",
+          "fdc:2708332",
+          "fdc:2708338",
+          "fdc:2708339",
+          "fdc:2708334",
+          "fdc:2708340"
         ]
       },
       "kcal": 229,
@@ -706,7 +776,9 @@
         "records": [
           "ciqual:23799",
           "ciqual:23800",
-          "ciqual:23801"
+          "ciqual:23801",
+          "fdc:2708341",
+          "fdc:2708342"
         ]
       },
       "kcal": 257,
@@ -716,10 +788,13 @@
     {
       "q": "injera",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707796"
+        ]
       },
-      "gap": true,
-      "why": "bread: searched injera, ethiopian flatbread, teff bread; no injera record"
+      "kcal": 93,
+      "kcal_ref": "USDA FDC 2707796 injera, Ethiopian bread",
+      "why": "bread: FNDDS Injera, Ethiopian bread"
     },
     {
       "q": "arepa",
@@ -735,16 +810,21 @@
     {
       "q": "steamed bun",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708724",
+          "fdc:2708725"
+        ]
       },
-      "gap": true,
-      "why": "bread: searched steamed bun, mantou, chinese steamed bread; no steamed bun (bao/mantou) record"
+      "kcal": 268,
+      "kcal_ref": "USDA FDC 2708725 bao bun, no meat",
+      "why": "bread: FNDDS bao bun (Chinese steamed bun), with and without meat; best the no-meat bun, closest to plain mantou"
     },
     {
       "q": "challah",
       "expect": {
         "records": [
-          "fdc:172673"
+          "fdc:172673",
+          "fdc:2707624"
         ]
       },
       "kcal": 287,
@@ -756,7 +836,8 @@
       "expect": {
         "records": [
           "fdc:174912",
-          "cofid:11-1117"
+          "cofid:11-1117",
+          "fdc:2707852"
         ]
       },
       "kcal": 290,
@@ -855,7 +936,8 @@
           "matvaretabellen:05.354",
           "matvaretabellen:05.263",
           "matvaretabellen:05.264",
-          "matvaretabellen:05.262"
+          "matvaretabellen:05.262",
+          "fdc:2707797"
         ]
       },
       "kcal": 298,
@@ -869,7 +951,9 @@
           "ciqual:7815",
           "cofid:11-925",
           "bls:B783012",
-          "matvaretabellen:05.381"
+          "matvaretabellen:05.381",
+          "fdc:2707824",
+          "fdc:2707825"
         ]
       },
       "kcal": 320,
@@ -908,7 +992,8 @@
           "ciqual:19024",
           "cofid:12-320",
           "matvaretabellen:01.236",
-          "ciqual:19010"
+          "ciqual:19010",
+          "fdc:2705385"
         ]
       },
       "kcal": 63.9,
@@ -945,7 +1030,8 @@
           "bls:M113200",
           "bls:M111200",
           "bls:M1A5200",
-          "bls:M114200"
+          "bls:M114200",
+          "fdc:2705387"
         ]
       },
       "kcal": 44,
@@ -959,7 +1045,8 @@
           "fdc:2259792",
           "fdc:172225",
           "bls:M150000",
-          "frida:32"
+          "frida:32",
+          "fdc:2705393"
         ]
       },
       "kcal": 42.8,
@@ -976,7 +1063,8 @@
           "bls:M130300",
           "ciqual:19865",
           "frida:1153",
-          "matvaretabellen:01.084"
+          "matvaretabellen:01.084",
+          "fdc:2705394"
         ]
       },
       "kcal": 61.1,
@@ -1013,7 +1101,10 @@
           "fdc:171304",
           "fdc:171309",
           "ciqual:19860",
-          "cofid:12-555"
+          "cofid:12-555",
+          "fdc:2705423",
+          "fdc:2705424",
+          "fdc:2705422"
         ]
       },
       "kcal": 93.7,
@@ -1029,7 +1120,8 @@
           "bls:M1B2200",
           "cofid:12-379",
           "fdc:170886",
-          "frida:1597"
+          "frida:1597",
+          "fdc:2705419"
         ]
       },
       "kcal": 63,
@@ -1088,7 +1180,10 @@
           "frida:1678",
           "frida:517",
           "frida:1679",
-          "matvaretabellen:01.028"
+          "matvaretabellen:01.028",
+          "fdc:2705747",
+          "fdc:2705756",
+          "fdc:2705758"
         ]
       },
       "kcal": 98,
@@ -1105,7 +1200,8 @@
           "matvaretabellen:01.150",
           "frida:1215",
           "frida:1304",
-          "frida:1773"
+          "frida:1773",
+          "fdc:2705760"
         ]
       },
       "kcal": 350,
@@ -1122,7 +1218,8 @@
           "bls:M741600",
           "ciqual:19585",
           "cofid:12-176",
-          "matvaretabellen:01.266"
+          "matvaretabellen:01.266",
+          "fdc:2705750"
         ]
       },
       "kcal": 150,
@@ -1142,7 +1239,8 @@
           "frida:97",
           "frida:1299",
           "matvaretabellen:01.066",
-          "matvaretabellen:01.297"
+          "matvaretabellen:01.297",
+          "fdc:2705722"
         ]
       },
       "kcal": 299,
@@ -1161,7 +1259,9 @@
           "ciqual:12726",
           "cofid:12-346",
           "frida:321",
-          "matvaretabellen:01.027"
+          "matvaretabellen:01.027",
+          "fdc:2705709",
+          "fdc:2705739"
         ]
       },
       "kcal": 408,
@@ -1183,7 +1283,9 @@
           "cofid:12-526",
           "frida:309",
           "frida:721",
-          "matvaretabellen:01.200"
+          "matvaretabellen:01.200",
+          "fdc:2705730",
+          "fdc:2705728"
         ]
       },
       "kcal": 392,
@@ -1199,7 +1301,8 @@
           "ciqual:12066",
           "ciqual:12061",
           "ciqual:12060",
-          "cofid:12-525"
+          "cofid:12-525",
+          "fdc:2705714"
         ]
       },
       "kcal": 265,
@@ -1215,7 +1318,8 @@
           "bls:M402500",
           "ciqual:12736",
           "matvaretabellen:01.302",
-          "cofid:12-358"
+          "cofid:12-358",
+          "fdc:2705717"
         ]
       },
       "kcal": 356,
@@ -1237,7 +1341,8 @@
           "frida:1228",
           "frida:1313",
           "frida:139",
-          "matvaretabellen:01.136"
+          "matvaretabellen:01.136",
+          "fdc:2705708"
         ]
       },
       "kcal": 334,
@@ -1259,7 +1364,8 @@
           "cofid:12-345",
           "frida:1235",
           "frida:1277",
-          "matvaretabellen:01.025"
+          "matvaretabellen:01.025",
+          "fdc:2705707"
         ]
       },
       "kcal": 300,
@@ -1288,7 +1394,9 @@
         "records": [
           "fdc:746767",
           "fdc:171251",
-          "fdc:168124"
+          "fdc:168124",
+          "fdc:2705735",
+          "fdc:2705736"
         ]
       },
       "kcal": 393,
@@ -1314,7 +1422,8 @@
           "matvaretabellen:01.042",
           "matvaretabellen:01.264",
           "matvaretabellen:01.252",
-          "matvaretabellen:01.287"
+          "matvaretabellen:01.287",
+          "fdc:2705705"
         ]
       },
       "kcal": 353,
@@ -1333,7 +1442,8 @@
           "matvaretabellen:01.251",
           "matvaretabellen:01.248",
           "matvaretabellen:01.249",
-          "matvaretabellen:01.117"
+          "matvaretabellen:01.117",
+          "fdc:2705716"
         ]
       },
       "kcal": 264,
@@ -1361,7 +1471,8 @@
       "expect": {
         "records": [
           "matvaretabellen:01.301",
-          "cofid:12-495"
+          "cofid:12-495",
+          "fdc:2705740"
         ]
       },
       "kcal": 325,
@@ -1434,7 +1545,8 @@
           "frida:321",
           "matvaretabellen:01.027",
           "bls:M303600",
-          "bls:M303700"
+          "bls:M303700",
+          "fdc:2705704"
         ]
       },
       "kcal": 408,
@@ -1448,7 +1560,9 @@
           "fdc:173410",
           "bls:Q6A4000",
           "bls:Q630000",
-          "matvaretabellen:08.005"
+          "matvaretabellen:08.005",
+          "fdc:2710154",
+          "fdc:2710156"
         ]
       },
       "kcal": 717,
@@ -1474,7 +1588,8 @@
         "records": [
           "fdc:171314",
           "cofid:17-640",
-          "matvaretabellen:08.252"
+          "matvaretabellen:08.252",
+          "fdc:2710168"
         ]
       },
       "kcal": 900,
@@ -1486,7 +1601,8 @@
       "expect": {
         "records": [
           "fdc:170859",
-          "fdc:2346386"
+          "fdc:2346386",
+          "fdc:2705597"
         ]
       },
       "kcal": 343,
@@ -1499,7 +1615,8 @@
         "records": [
           "fdc:170860",
           "ciqual:19420",
-          "matvaretabellen:01.225"
+          "matvaretabellen:01.225",
+          "fdc:2705598"
         ]
       },
       "kcal": 257,
@@ -1516,7 +1633,8 @@
           "matvaretabellen:01.087",
           "matvaretabellen:01.086",
           "bls:M172900",
-          "frida:146"
+          "frida:146",
+          "fdc:2705614"
         ]
       },
       "kcal": 198,
@@ -1544,7 +1662,8 @@
           "bls:M181400",
           "ciqual:19027",
           "cofid:12-520",
-          "matvaretabellen:10.147"
+          "matvaretabellen:10.147",
+          "fdc:2705402"
         ]
       },
       "kcal": 321,
@@ -1559,7 +1678,9 @@
           "fdc:171276",
           "bls:M182400",
           "cofid:12-522",
-          "bls:M182500"
+          "bls:M182500",
+          "fdc:2705399",
+          "fdc:2705398"
         ]
       },
       "kcal": 134,
@@ -1603,7 +1724,12 @@
       "expect": {
         "records": [
           "ciqual:19118",
-          "ciqual:19119"
+          "ciqual:19119",
+          "fdc:2705466",
+          "fdc:2705467",
+          "fdc:2705470",
+          "fdc:2705469",
+          "fdc:2705468"
         ]
       },
       "kcal": 72.8,
@@ -1665,7 +1791,9 @@
           "bls:Y720143",
           "bls:Y720163",
           "bls:Y725412",
-          "matvaretabellen:02.008"
+          "matvaretabellen:02.008",
+          "fdc:2707198",
+          "fdc:2707205"
         ]
       },
       "kcal": 212,
@@ -1721,7 +1849,8 @@
           "ciqual:22001",
           "frida:215",
           "matvaretabellen:02.039",
-          "matvaretabellen:02.002"
+          "matvaretabellen:02.002",
+          "fdc:2707168"
         ]
       },
       "kcal": 47.3,
@@ -1741,7 +1870,8 @@
           "ciqual:22009",
           "ciqual:22002",
           "matvaretabellen:02.040",
-          "matvaretabellen:02.003"
+          "matvaretabellen:02.003",
+          "fdc:2707172"
         ]
       },
       "kcal": 340,
@@ -1772,7 +1902,8 @@
           "bls:E131100",
           "ciqual:22060",
           "cofid:12-920",
-          "frida:848"
+          "frida:848",
+          "fdc:2707176"
         ]
       },
       "kcal": 182,
@@ -1784,7 +1915,8 @@
       "expect": {
         "records": [
           "fdc:1999630",
-          "cofid:12-524"
+          "cofid:12-524",
+          "fdc:2705405"
         ]
       },
       "kcal": 38.5,
@@ -1798,7 +1930,9 @@
           "fdc:2257045",
           "fdc:1999631",
           "fdc:174832",
-          "frida:1798"
+          "frida:1798",
+          "fdc:2705410",
+          "fdc:2705409"
         ]
       },
       "kcal": 15,
@@ -1809,7 +1943,8 @@
       "q": "oat milk",
       "expect": {
         "records": [
-          "fdc:2257046"
+          "fdc:2257046",
+          "fdc:2705412"
         ]
       },
       "kcal": 48.3,
@@ -1820,7 +1955,8 @@
       "q": "rice milk",
       "expect": {
         "records": [
-          "fdc:171942"
+          "fdc:171942",
+          "fdc:2705411"
         ]
       },
       "kcal": 47,
@@ -1833,7 +1969,8 @@
         "records": [
           "cofid:12-539",
           "frida:517",
-          "matvaretabellen:01.028"
+          "matvaretabellen:01.028",
+          "fdc:2705749"
         ]
       },
       "kcal": 103,
@@ -1859,7 +1996,8 @@
           "fdc:171247",
           "fdc:2259795",
           "frida:721",
-          "fdc:173431"
+          "fdc:173431",
+          "fdc:2705728"
         ]
       },
       "kcal": 420,
@@ -1881,7 +2019,8 @@
           "ciqual:36017",
           "cofid:18-307",
           "frida:754",
-          "fdc:171477"
+          "fdc:171477",
+          "fdc:2705966"
         ]
       },
       "kcal": 165,
@@ -1894,7 +2033,8 @@
         "records": [
           "bls:V416172",
           "cofid:18-324",
-          "cofid:18-323"
+          "cofid:18-323",
+          "fdc:2705968"
         ]
       },
       "kcal": 148,
@@ -1918,7 +2058,15 @@
           "matvaretabellen:03.330",
           "matvaretabellen:03.393",
           "matvaretabellen:03.333",
-          "matvaretabellen:03.394"
+          "matvaretabellen:03.394",
+          "fdc:2706027",
+          "fdc:2706039",
+          "fdc:2706035",
+          "fdc:2706036",
+          "fdc:2706043",
+          "fdc:2706044",
+          "fdc:2706037",
+          "fdc:2706038"
         ]
       },
       "kcal": 203,
@@ -1943,7 +2091,14 @@
           "matvaretabellen:03.331",
           "matvaretabellen:03.395",
           "matvaretabellen:03.334",
-          "matvaretabellen:03.396"
+          "matvaretabellen:03.396",
+          "fdc:2706010",
+          "fdc:2706008",
+          "fdc:2706009",
+          "fdc:2706016",
+          "fdc:2706017",
+          "fdc:2706014",
+          "fdc:2706015"
         ]
       },
       "kcal": 185,
@@ -1966,7 +2121,10 @@
           "bls:V417100",
           "ciqual:36023",
           "ciqual:36033",
-          "frida:990"
+          "frida:990",
+          "fdc:2706072",
+          "fdc:2706078",
+          "fdc:2706075"
         ]
       },
       "kcal": 247,
@@ -2041,7 +2199,13 @@
           "ciqual:25512",
           "frida:1645",
           "matvaretabellen:03.307",
-          "matvaretabellen:03.320"
+          "matvaretabellen:03.320",
+          "fdc:2706092",
+          "fdc:2706093",
+          "fdc:2706096",
+          "fdc:2706097",
+          "fdc:2706094",
+          "fdc:2706095"
         ]
       },
       "kcal": 268,
@@ -2071,7 +2235,10 @@
           "fdc:173111",
           "fdc:169447",
           "fdc:172161",
-          "ciqual:6259"
+          "ciqual:6259",
+          "fdc:2705854",
+          "fdc:2705853",
+          "fdc:2705855"
         ]
       },
       "kcal": 240,
@@ -2121,7 +2288,16 @@
           "ciqual:6200",
           "ciqual:6201",
           "cofid:18-043",
-          "cofid:18-471"
+          "cofid:18-471",
+          "fdc:2705824",
+          "fdc:2705840",
+          "fdc:2705825",
+          "fdc:2705826",
+          "fdc:2705827",
+          "fdc:2705830",
+          "fdc:2705831",
+          "fdc:2705837",
+          "fdc:2705841"
         ]
       },
       "kcal": 180,
@@ -2148,7 +2324,10 @@
           "cofid:18-069",
           "cofid:18-072",
           "cofid:18-064",
-          "cofid:18-065"
+          "cofid:18-065",
+          "fdc:2705832",
+          "fdc:2705833",
+          "fdc:2705834"
         ]
       },
       "kcal": 182,
@@ -2179,7 +2358,10 @@
           "fdc:2646172",
           "matvaretabellen:03.054",
           "matvaretabellen:03.268",
-          "ciqual:6103"
+          "ciqual:6103",
+          "fdc:2705828",
+          "fdc:2705829",
+          "fdc:2705830"
         ]
       },
       "kcal": 202,
@@ -2225,7 +2407,8 @@
           "fdc:174570",
           "bls:Y131132",
           "ciqual:6210",
-          "matvaretabellen:03.354"
+          "matvaretabellen:03.354",
+          "fdc:2705847"
         ]
       },
       "kcal": 115,
@@ -2248,7 +2431,8 @@
           "frida:1040",
           "frida:1782",
           "frida:1237",
-          "frida:1233"
+          "frida:1233",
+          "fdc:2705851"
         ]
       },
       "kcal": 247,
@@ -2269,7 +2453,8 @@
           "fdc:169193",
           "fdc:168375",
           "fdc:169190",
-          "fdc:2514745"
+          "fdc:2514745",
+          "fdc:2705863"
         ]
       },
       "kcal": 297,
@@ -2290,7 +2475,10 @@
           "bls:U522100",
           "bls:Y321222",
           "ciqual:28101",
-          "ciqual:28100"
+          "ciqual:28100",
+          "fdc:2705866",
+          "fdc:2705867",
+          "fdc:2705868"
         ]
       },
       "kcal": 211,
@@ -2352,7 +2540,8 @@
           "bls:U57A100",
           "bls:U57B100",
           "ciqual:28479",
-          "ciqual:28002"
+          "ciqual:28002",
+          "fdc:2705901"
         ]
       },
       "kcal": 421,
@@ -2374,7 +2563,8 @@
           "ciqual:28202",
           "frida:771",
           "matvaretabellen:03.209",
-          "matvaretabellen:03.492"
+          "matvaretabellen:03.492",
+          "fdc:2705877"
         ]
       },
       "kcal": 151,
@@ -2387,7 +2577,8 @@
         "records": [
           "bls:Y352212",
           "ciqual:28301",
-          "ciqual:28451"
+          "ciqual:28451",
+          "fdc:2705882"
         ]
       },
       "kcal": 163,
@@ -2459,7 +2650,8 @@
           "ciqual:28925",
           "ciqual:28906",
           "ciqual:28917",
-          "ciqual:28960"
+          "ciqual:28960",
+          "fdc:2705878"
         ]
       },
       "kcal": 164,
@@ -2472,7 +2664,8 @@
         "records": [
           "bls:W441000",
           "ciqual:28844",
-          "ciqual:28812"
+          "ciqual:28812",
+          "fdc:2705879"
         ]
       },
       "kcal": 248,
@@ -2498,7 +2691,8 @@
           "frida:358",
           "matvaretabellen:03.163",
           "matvaretabellen:03.425",
-          "matvaretabellen:03.507"
+          "matvaretabellen:03.507",
+          "fdc:2706195"
         ]
       },
       "kcal": 457,
@@ -2510,7 +2704,8 @@
       "expect": {
         "records": [
           "fdc:174575",
-          "matvaretabellen:03.475"
+          "matvaretabellen:03.475",
+          "fdc:2706185"
         ]
       },
       "kcal": 504,
@@ -2527,7 +2722,8 @@
           "ciqual:30316",
           "ciqual:30317",
           "cofid:19-516",
-          "matvaretabellen:03.363"
+          "matvaretabellen:03.363",
+          "fdc:2706179"
         ]
       },
       "kcal": 346,
@@ -2569,7 +2765,8 @@
           "ciqual:30701",
           "fdc:172934",
           "fdc:173876",
-          "fdc:172971"
+          "fdc:172971",
+          "fdc:2706191"
         ]
       },
       "kcal": 325,
@@ -2592,7 +2789,8 @@
           "bls:W221372",
           "bls:W221000",
           "bls:W221072",
-          "frida:1161"
+          "frida:1161",
+          "fdc:2706174"
         ]
       },
       "kcal": 333,
@@ -2618,7 +2816,8 @@
           "cofid:18-117",
           "cofid:18-119",
           "cofid:18-115",
-          "matvaretabellen:03.266"
+          "matvaretabellen:03.266",
+          "fdc:2705906"
         ]
       },
       "kcal": 157,
@@ -2658,7 +2857,8 @@
           "fdc:172616",
           "fdc:172617",
           "fdc:172544",
-          "fdc:174370"
+          "fdc:174370",
+          "fdc:2705907"
         ]
       },
       "kcal": 283,
@@ -2742,7 +2942,8 @@
           "ciqual:6551",
           "ciqual:6550",
           "ciqual:6522",
-          "frida:1712"
+          "frida:1712",
+          "fdc:2705909"
         ]
       },
       "kcal": 143,
@@ -2788,7 +2989,8 @@
           "fdc:2514747",
           "fdc:172848",
           "fdc:172849",
-          "fdc:172847"
+          "fdc:172847",
+          "fdc:2706133"
         ]
       },
       "kcal": 203,
@@ -2844,7 +3046,9 @@
         "records": [
           "ciqual:36202",
           "cofid:18-372",
-          "cofid:18-374"
+          "cofid:18-374",
+          "fdc:2706139",
+          "fdc:2706140"
         ]
       },
       "kcal": 423,
@@ -2900,7 +3104,9 @@
           "ciqual:14005",
           "ciqual:14000",
           "cofid:18-390",
-          "cofid:18-491"
+          "cofid:18-491",
+          "fdc:2705913",
+          "fdc:2705914"
         ]
       },
       "kcal": 165,
@@ -2923,7 +3129,8 @@
           "bls:V531182",
           "bls:V531100",
           "cofid:18-415",
-          "matvaretabellen:03.122"
+          "matvaretabellen:03.122",
+          "fdc:2706153"
         ]
       },
       "kcal": 159,
@@ -2946,7 +3153,8 @@
           "ciqual:40111",
           "cofid:18-412",
           "cofid:18-411",
-          "matvaretabellen:03.259"
+          "matvaretabellen:03.259",
+          "fdc:2706154"
         ]
       },
       "kcal": 172,
@@ -2957,7 +3165,8 @@
       "q": "beef jerky",
       "expect": {
         "records": [
-          "fdc:167536"
+          "fdc:167536",
+          "fdc:2705860"
         ]
       },
       "kcal": 410,
@@ -2975,7 +3184,8 @@
           "bls:W520032",
           "bls:U931900",
           "ciqual:28505",
-          "cofid:19-128"
+          "cofid:19-128",
+          "fdc:2705850"
         ]
       },
       "kcal": 251,
@@ -3044,7 +3254,8 @@
           "ciqual:6310",
           "ciqual:6311",
           "cofid:18-420",
-          "cofid:18-419"
+          "cofid:18-419",
+          "fdc:2705843"
         ]
       },
       "kcal": 243,
@@ -3058,7 +3269,8 @@
           "bls:Y395222",
           "ciqual:28401",
           "ciqual:28400",
-          "cofid:18-609"
+          "cofid:18-609",
+          "fdc:2705894"
         ]
       },
       "kcal": 332,
@@ -3087,7 +3299,8 @@
           "fdc:168614",
           "ciqual:6123",
           "ciqual:6122",
-          "frida:1251"
+          "frida:1251",
+          "fdc:2705845"
         ]
       },
       "kcal": 305,
@@ -3111,7 +3324,9 @@
       "expect": {
         "records": [
           "fdc:173880",
-          "frida:925"
+          "frida:925",
+          "fdc:2706200",
+          "fdc:2706201"
         ]
       },
       "kcal": 183,
@@ -3128,7 +3343,8 @@
           "ciqual:30789",
           "ciqual:30797",
           "ciqual:30791",
-          "ciqual:30790"
+          "ciqual:30790",
+          "fdc:2706182"
         ]
       },
       "kcal": 311,
@@ -3148,7 +3364,8 @@
           "matvaretabellen:03.434",
           "matvaretabellen:03.469",
           "matvaretabellen:03.157",
-          "matvaretabellen:03.470"
+          "matvaretabellen:03.470",
+          "fdc:2706155"
         ]
       },
       "kcal": 319,
@@ -3170,7 +3387,8 @@
           "bls:W384100",
           "bls:W340000",
           "bls:W352000",
-          "ciqual:8742"
+          "ciqual:8742",
+          "fdc:2706173"
         ]
       },
       "kcal": 379,
@@ -3185,7 +3403,8 @@
           "fdc:172953",
           "fdc:172954",
           "bls:W171200",
-          "bls:W181000"
+          "bls:W181000",
+          "fdc:2706188"
         ]
       },
       "kcal": 326,
@@ -3237,7 +3456,14 @@
           "bls:V4A5162",
           "bls:V4A5172",
           "matvaretabellen:03.393",
-          "matvaretabellen:03.394"
+          "matvaretabellen:03.394",
+          "fdc:2706033",
+          "fdc:2706031",
+          "fdc:2706034",
+          "fdc:2706032",
+          "fdc:2706029",
+          "fdc:2706030",
+          "fdc:2706035"
         ]
       },
       "kcal": 203,
@@ -3277,7 +3503,11 @@
           "matvaretabellen:03.225",
           "matvaretabellen:03.244",
           "matvaretabellen:03.332",
-          "matvaretabellen:03.392"
+          "matvaretabellen:03.392",
+          "fdc:2705986",
+          "fdc:2705994",
+          "fdc:2705988",
+          "fdc:2705989"
         ]
       },
       "kcal": 205,
@@ -3389,7 +3619,8 @@
           "cofid:18-076",
           "cofid:18-077",
           "cofid:18-080",
-          "cofid:18-081"
+          "cofid:18-081",
+          "fdc:2705849"
         ]
       },
       "kcal": 203,
@@ -3503,7 +3734,8 @@
         "records": [
           "bls:T410072",
           "ciqual:26229",
-          "cofid:16-486"
+          "cofid:16-486",
+          "fdc:2706287"
         ]
       },
       "kcal": 206,
@@ -3515,7 +3747,8 @@
       "expect": {
         "records": [
           "cofid:16-485",
-          "bls:T410072"
+          "bls:T410072",
+          "fdc:2706286"
         ]
       },
       "kcal": 215,
@@ -3536,7 +3769,8 @@
           "ciqual:26695",
           "cofid:16-412",
           "cofid:16-413",
-          "matvaretabellen:04.018"
+          "matvaretabellen:04.018",
+          "fdc:2706292"
         ]
       },
       "kcal": 117,
@@ -3555,7 +3789,8 @@
           "ciqual:26039",
           "ciqual:26181",
           "cofid:16-416",
-          "cofid:16-417"
+          "cofid:16-417",
+          "fdc:2706311"
         ]
       },
       "kcal": 90,
@@ -3613,7 +3848,8 @@
       "q": "baked cod",
       "expect": {
         "records": [
-          "bls:T204172"
+          "bls:T204172",
+          "fdc:2706241"
         ]
       },
       "kcal": 106,
@@ -3628,7 +3864,11 @@
           "fdc:2684442",
           "fdc:175176",
           "ciqual:27019",
-          "cofid:16-154"
+          "cofid:16-154",
+          "fdc:2706318",
+          "fdc:2706319",
+          "fdc:2706320",
+          "fdc:2706323"
         ]
       },
       "kcal": 128,
@@ -3677,7 +3917,9 @@
           "ciqual:26051",
           "ciqual:26019",
           "cofid:16-393",
-          "frida:34"
+          "frida:34",
+          "fdc:2706263",
+          "fdc:2706265"
         ]
       },
       "kcal": 188,
@@ -3716,7 +3958,8 @@
           "cofid:16-488",
           "cofid:16-401",
           "frida:1121",
-          "frida:924"
+          "frida:924",
+          "fdc:2706293"
         ]
       },
       "kcal": 220,
@@ -3730,7 +3973,8 @@
           "cofid:16-424",
           "cofid:16-440",
           "cofid:16-439",
-          "cofid:16-422"
+          "cofid:16-422",
+          "fdc:2706293"
         ]
       },
       "kcal": 220,
@@ -3786,7 +4030,8 @@
           "ciqual:26079",
           "cofid:16-448",
           "matvaretabellen:04.075",
-          "matvaretabellen:04.086"
+          "matvaretabellen:04.086",
+          "fdc:2706232"
         ]
       },
       "kcal": 206,
@@ -3840,7 +4085,8 @@
           "cofid:16-076",
           "cofid:16-073",
           "frida:711",
-          "matvaretabellen:04.014"
+          "matvaretabellen:04.014",
+          "fdc:2706260"
         ]
       },
       "kcal": 121,
@@ -3865,7 +4111,9 @@
           "cofid:16-377",
           "frida:582",
           "matvaretabellen:04.110",
-          "matvaretabellen:04.218"
+          "matvaretabellen:04.218",
+          "fdc:2706256",
+          "fdc:2706259"
         ]
       },
       "kcal": 90,
@@ -3916,7 +4164,9 @@
           "cofid:16-007",
           "fdc:173714",
           "fdc:175166",
-          "bls:T507182"
+          "bls:T507182",
+          "fdc:2706236",
+          "fdc:2706239"
         ]
       },
       "kcal": 144,
@@ -3940,7 +4190,8 @@
           "bls:T501152",
           "ciqual:27003",
           "ciqual:27004",
-          "cofid:16-172"
+          "cofid:16-172",
+          "fdc:2706233"
         ]
       },
       "kcal": 162,
@@ -3984,7 +4235,8 @@
           "ciqual:26093",
           "cofid:16-222",
           "cofid:16-223",
-          "cofid:16-221"
+          "cofid:16-221",
+          "fdc:2706301"
         ]
       },
       "kcal": 172,
@@ -4024,7 +4276,9 @@
           "ciqual:10100",
           "ciqual:10061",
           "frida:518",
-          "matvaretabellen:04.387"
+          "matvaretabellen:04.387",
+          "fdc:2706360",
+          "fdc:2706362"
         ]
       },
       "kcal": 99,
@@ -4044,7 +4298,8 @@
           "cofid:16-245",
           "cofid:16-246",
           "frida:518",
-          "matvaretabellen:04.057"
+          "matvaretabellen:04.057",
+          "fdc:2706363"
         ]
       },
       "kcal": 91.3,
@@ -4090,7 +4345,8 @@
           "frida:654",
           "matvaretabellen:04.054",
           "matvaretabellen:04.394",
-          "matvaretabellen:04.395"
+          "matvaretabellen:04.395",
+          "fdc:2706349"
         ]
       },
       "kcal": 103,
@@ -4112,7 +4368,8 @@
           "matvaretabellen:04.393",
           "matvaretabellen:04.391",
           "matvaretabellen:04.390",
-          "matvaretabellen:04.392"
+          "matvaretabellen:04.392",
+          "fdc:2706344"
         ]
       },
       "kcal": 124,
@@ -4139,7 +4396,8 @@
       "expect": {
         "records": [
           "fdc:174203",
-          "bls:T890100"
+          "bls:T890100",
+          "fdc:2706568"
         ]
       },
       "kcal": 95,
@@ -4162,7 +4420,8 @@
           "frida:387",
           "matvaretabellen:04.389",
           "matvaretabellen:04.053",
-          "matvaretabellen:04.388"
+          "matvaretabellen:04.388",
+          "fdc:2706350"
         ]
       },
       "kcal": 104,
@@ -4187,7 +4446,11 @@
           "bls:T797282",
           "bls:T797100",
           "ciqual:10027",
-          "ciqual:10017"
+          "ciqual:10017",
+          "fdc:2706339",
+          "fdc:2706340",
+          "fdc:2706338",
+          "fdc:2706342"
         ]
       },
       "kcal": 148,
@@ -4205,7 +4468,8 @@
           "cofid:16-260",
           "cofid:16-261",
           "frida:163",
-          "matvaretabellen:04.058"
+          "matvaretabellen:04.058",
+          "fdc:2706351"
         ]
       },
       "kcal": 67.2,
@@ -4230,7 +4494,10 @@
           "ciqual:10045",
           "cofid:16-262",
           "matvaretabellen:04.264",
-          "matvaretabellen:04.114"
+          "matvaretabellen:04.114",
+          "fdc:2706356",
+          "fdc:2706357",
+          "fdc:2706358"
         ]
       },
       "kcal": 118,
@@ -4260,7 +4527,8 @@
       "expect": {
         "records": [
           "ciqual:10002",
-          "cofid:16-404"
+          "cofid:16-404",
+          "fdc:2706334"
         ]
       },
       "kcal": 288,
@@ -4277,7 +4545,8 @@
           "ciqual:10079",
           "ciqual:10018",
           "cofid:16-259",
-          "frida:495"
+          "frida:495",
+          "fdc:2706331"
         ]
       },
       "kcal": 164,
@@ -4288,7 +4557,8 @@
       "q": "fish sticks",
       "expect": {
         "records": [
-          "fdc:174195"
+          "fdc:174195",
+          "fdc:2706231"
         ]
       },
       "kcal": 277,
@@ -4301,7 +4571,11 @@
         "records": [
           "ciqual:26249",
           "frida:549",
-          "frida:634"
+          "frida:634",
+          "fdc:2706324",
+          "fdc:2706325",
+          "fdc:2706329",
+          "fdc:2706328"
         ]
       },
       "kcal": 114,
@@ -4324,17 +4598,21 @@
     {
       "q": "grilled eel",
       "expect": {
-        "records": []
+        "records": [
+          "ciqual:27000"
+        ]
       },
-      "gap": true,
-      "why": "fish: searched grilled eel, eel kabayaki; only raw, smoked, stewed eel in pool"
+      "kcal": 229,
+      "kcal_ref": "CIQUAL 2025, 27000 eel, roasted/baked",
+      "why": "fish: CIQUAL eel roasted/baked (dry heat) found by retry; FNDDS 'Fish, eel' has no stated cooking method, left out"
     },
     {
       "q": "fish cake",
       "expect": {
         "records": [
           "frida:324",
-          "matvaretabellen:04.061"
+          "matvaretabellen:04.061",
+          "fdc:2706550"
         ]
       },
       "kcal": 110,
@@ -4419,7 +4697,9 @@
           "bls:T601152",
           "ciqual:27010",
           "frida:561",
-          "matvaretabellen:04.048"
+          "matvaretabellen:04.048",
+          "fdc:2706272",
+          "fdc:2706275"
         ]
       },
       "kcal": 73,
@@ -4466,7 +4746,8 @@
           "cofid:13-523",
           "frida:388",
           "matvaretabellen:06.010",
-          "frida:540"
+          "frida:540",
+          "fdc:2709784"
         ]
       },
       "kcal": 15.9,
@@ -4499,7 +4780,10 @@
           "bls:G108100",
           "matvaretabellen:06.059",
           "matvaretabellen:06.097",
-          "matvaretabellen:06.138"
+          "matvaretabellen:06.138",
+          "fdc:2709790",
+          "fdc:2709789",
+          "fdc:2709590"
         ]
       },
       "kcal": 15,
@@ -4536,7 +4820,8 @@
           "ciqual:20171",
           "fdc:746769",
           "fdc:169247",
-          "matvaretabellen:06.138"
+          "matvaretabellen:06.138",
+          "fdc:2709590"
         ]
       },
       "kcal": 20.8,
@@ -4560,7 +4845,8 @@
           "cofid:13-521",
           "frida:50",
           "matvaretabellen:06.065",
-          "matvaretabellen:06.064"
+          "matvaretabellen:06.064",
+          "fdc:2709614"
         ]
       },
       "kcal": 23,
@@ -4570,10 +4856,14 @@
     {
       "q": "sauteed spinach",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709618",
+          "fdc:2709624"
+        ]
       },
-      "gap": true,
-      "why": "veg: searched sauteed spinach, spinach cooked with oil; only raw/boiled/steamed spinach and dishes found"
+      "kcal": 63,
+      "kcal_ref": "USDA FDC 2709618 spinach, fresh, cooked with oil",
+      "why": "veg: FNDDS spinach fresh/frozen cooked with oil; best fresh; canned excluded (canned state)"
     },
     {
       "q": "kale",
@@ -4596,7 +4886,9 @@
           "frida:23",
           "matvaretabellen:06.208",
           "matvaretabellen:06.035",
-          "matvaretabellen:06.850"
+          "matvaretabellen:06.850",
+          "fdc:2709602",
+          "fdc:2709599"
         ]
       },
       "kcal": 34.6,
@@ -4609,7 +4901,8 @@
         "records": [
           "fdc:2710822",
           "fdc:169387",
-          "frida:1492"
+          "frida:1492",
+          "fdc:2709791"
         ]
       },
       "kcal": 25,
@@ -4655,7 +4948,9 @@
           "frida:1750",
           "frida:44",
           "matvaretabellen:06.224",
-          "matvaretabellen:06.093"
+          "matvaretabellen:06.093",
+          "fdc:2709893",
+          "fdc:2709775"
         ]
       },
       "kcal": 31,
@@ -4683,7 +4978,10 @@
           "ciqual:20296",
           "cofid:13-187",
           "frida:573",
-          "matvaretabellen:06.040"
+          "matvaretabellen:06.040",
+          "fdc:2709888",
+          "fdc:2709887",
+          "fdc:2709774"
         ]
       },
       "kcal": 16,
@@ -4724,7 +5022,8 @@
           "frida:914",
           "frida:1824",
           "frida:17",
-          "matvaretabellen:06.725"
+          "matvaretabellen:06.725",
+          "fdc:2709643"
         ]
       },
       "kcal": 33,
@@ -4767,7 +5066,8 @@
           "frida:799",
           "frida:1823",
           "matvaretabellen:06.719",
-          "matvaretabellen:06.853"
+          "matvaretabellen:06.853",
+          "fdc:2709777"
         ]
       },
       "kcal": 37,
@@ -4873,7 +5173,8 @@
           "frida:740",
           "bls:G482100",
           "matvaretabellen:06.113",
-          "cofid:13-352"
+          "cofid:13-352",
+          "fdc:2709794"
         ]
       },
       "kcal": 32,
@@ -4914,7 +5215,9 @@
           "ciqual:11306",
           "cofid:13-244",
           "frida:205",
-          "matvaretabellen:06.038"
+          "matvaretabellen:06.038",
+          "fdc:2709932",
+          "fdc:2709786"
         ]
       },
       "kcal": 149,
@@ -4963,7 +5266,9 @@
           "ciqual:20023",
           "cofid:13-636",
           "frida:13",
-          "matvaretabellen:06.280"
+          "matvaretabellen:06.280",
+          "fdc:2709906",
+          "fdc:2709778"
         ]
       },
       "kcal": 14,
@@ -5000,7 +5305,8 @@
           "ciqual:20087",
           "matvaretabellen:06.717",
           "matvaretabellen:06.048",
-          "matvaretabellen:06.275"
+          "matvaretabellen:06.275",
+          "fdc:2710799"
         ]
       },
       "kcal": 31.3,
@@ -5025,7 +5331,8 @@
           "matvaretabellen:06.047",
           "frida:37",
           "ciqual:20085",
-          "matvaretabellen:06.276"
+          "matvaretabellen:06.276",
+          "fdc:2710798"
         ]
       },
       "kcal": 22.9,
@@ -5105,7 +5412,11 @@
           "fdc:2685577",
           "fdc:169228",
           "ciqual:20002",
-          "ciqual:20300"
+          "ciqual:20300",
+          "fdc:2710802",
+          "fdc:2709930",
+          "fdc:2709929",
+          "fdc:2709785"
         ]
       },
       "kcal": 35,
@@ -5141,7 +5452,8 @@
           "ciqual:20044",
           "ciqual:20332",
           "frida:366",
-          "matvaretabellen:06.033"
+          "matvaretabellen:06.033",
+          "fdc:2709692"
         ]
       },
       "kcal": 26.1,
@@ -5220,7 +5532,8 @@
           "frida:39",
           "frida:490",
           "frida:368",
-          "matvaretabellen:06.054"
+          "matvaretabellen:06.054",
+          "fdc:2709803"
         ]
       },
       "kcal": 11,
@@ -5243,7 +5556,9 @@
           "cofid:13-391",
           "cofid:13-389",
           "frida:381",
-          "matvaretabellen:06.046"
+          "matvaretabellen:06.046",
+          "fdc:2710002",
+          "fdc:2709809"
         ]
       },
       "kcal": 12,
@@ -5317,7 +5632,9 @@
           "ciqual:20028",
           "cofid:13-241",
           "frida:65",
-          "matvaretabellen:06.112"
+          "matvaretabellen:06.112",
+          "fdc:2709907",
+          "fdc:2709779"
         ]
       },
       "kcal": 31,
@@ -5343,7 +5660,8 @@
           "cofid:13-638",
           "frida:64",
           "frida:878",
-          "matvaretabellen:06.012"
+          "matvaretabellen:06.012",
+          "fdc:2709767"
         ]
       },
       "kcal": 16,
@@ -5364,7 +5682,12 @@
           "frida:764",
           "frida:1822",
           "matvaretabellen:06.741",
-          "matvaretabellen:06.098"
+          "matvaretabellen:06.098",
+          "fdc:2709855",
+          "fdc:2710803",
+          "fdc:2709859",
+          "fdc:2709861",
+          "fdc:2709769"
         ]
       },
       "kcal": 26,
@@ -5407,7 +5730,16 @@
           "frida:1821",
           "frida:55",
           "matvaretabellen:06.027",
-          "matvaretabellen:06.028"
+          "matvaretabellen:06.028",
+          "fdc:2709962",
+          "fdc:2709970",
+          "fdc:2709961",
+          "fdc:2709958",
+          "fdc:2709966",
+          "fdc:2709959",
+          "fdc:2709968",
+          "fdc:2709960",
+          "fdc:2709797"
         ]
       },
       "kcal": 84,
@@ -5479,7 +5811,8 @@
           "ciqual:20114",
           "cofid:13-293",
           "cofid:13-505",
-          "frida:961"
+          "frida:961",
+          "fdc:2709793"
         ]
       },
       "kcal": 22,
@@ -5559,7 +5892,8 @@
           "ciqual:20074",
           "cofid:13-153",
           "frida:57",
-          "matvaretabellen:06.011"
+          "matvaretabellen:06.011",
+          "fdc:2709766"
         ]
       },
       "kcal": 33.2,
@@ -5586,7 +5920,9 @@
           "cofid:13-630",
           "cofid:13-177",
           "frida:41",
-          "matvaretabellen:06.222"
+          "matvaretabellen:06.222",
+          "fdc:2709883",
+          "fdc:2709772"
         ]
       },
       "kcal": 32,
@@ -5613,7 +5949,10 @@
           "cofid:13-652",
           "cofid:13-302",
           "matvaretabellen:06.188",
-          "frida:63"
+          "frida:63",
+          "fdc:2709946",
+          "fdc:2709947",
+          "fdc:2709948"
         ]
       },
       "kcal": 22,
@@ -5636,7 +5975,9 @@
           "frida:616",
           "matvaretabellen:06.524",
           "frida:1834",
-          "matvaretabellen:06.258"
+          "matvaretabellen:06.258",
+          "fdc:2710248",
+          "fdc:2709223"
         ]
       },
       "kcal": 160,
@@ -5652,7 +5993,8 @@
           "cofid:14-340",
           "cofid:14-359",
           "frida:371",
-          "matvaretabellen:06.556"
+          "matvaretabellen:06.556",
+          "fdc:2710089"
         ]
       },
       "kcal": 164,
@@ -5669,7 +6011,8 @@
           "ciqual:13186",
           "frida:1257",
           "frida:251",
-          "matvaretabellen:06.611"
+          "matvaretabellen:06.611",
+          "fdc:2710090"
         ]
       },
       "kcal": 182,
@@ -5685,7 +6028,8 @@
           "fdc:168563",
           "fdc:169379",
           "fdc:168562",
-          "bls:G520802"
+          "bls:G520802",
+          "matvaretabellen:06.076"
         ]
       },
       "kcal": 12,
@@ -5709,7 +6053,8 @@
           "bls:G346100",
           "bls:G346152",
           "cofid:13-336",
-          "matvaretabellen:06.078"
+          "matvaretabellen:06.078",
+          "fdc:2709982"
         ]
       },
       "kcal": 19,
@@ -5720,7 +6065,8 @@
       "q": "kimchi",
       "expect": {
         "records": [
-          "fdc:170392"
+          "fdc:170392",
+          "fdc:2710077"
         ]
       },
       "kcal": 15,
@@ -5741,7 +6087,9 @@
           "frida:978",
           "frida:970",
           "frida:1317",
-          "matvaretabellen:06.145"
+          "matvaretabellen:06.145",
+          "fdc:2709871",
+          "fdc:2709768"
         ]
       },
       "kcal": 31,
@@ -5760,7 +6108,8 @@
           "bls:H610100",
           "bls:X574012",
           "ciqual:20198",
-          "frida:1051"
+          "frida:1051",
+          "fdc:2709847"
         ]
       },
       "kcal": 12,
@@ -5774,7 +6123,8 @@
           "fdc:168536",
           "fdc:168430",
           "fdc:169250",
-          "matvaretabellen:06.185"
+          "matvaretabellen:06.185",
+          "fdc:2709936"
         ]
       },
       "kcal": 66,
@@ -5878,7 +6228,8 @@
           "cofid:15-661",
           "cofid:15-345",
           "cofid:13-604",
-          "cofid:15-364"
+          "cofid:15-364",
+          "fdc:2710036"
         ]
       },
       "kcal": 64,
@@ -5934,7 +6285,11 @@
           "cofid:13-528",
           "cofid:13-527",
           "frida:1821",
-          "matvaretabellen:06.027"
+          "matvaretabellen:06.027",
+          "fdc:2709969",
+          "fdc:2709968",
+          "fdc:2709964",
+          "fdc:2709960"
         ]
       },
       "kcal": 78,
@@ -5952,7 +6307,9 @@
           "fdc:170138",
           "bls:G560900",
           "cofid:13-530",
-          "matvaretabellen:06.070"
+          "matvaretabellen:06.070",
+          "fdc:2709722",
+          "fdc:2709724"
         ]
       },
       "kcal": 16,
@@ -5971,7 +6328,8 @@
           "ciqual:20256",
           "frida:169",
           "matvaretabellen:06.102",
-          "matvaretabellen:06.103"
+          "matvaretabellen:06.103",
+          "fdc:2709727"
         ]
       },
       "kcal": 258,
@@ -6031,7 +6389,8 @@
           "bls:G250100",
           "ciqual:11014",
           "cofid:13-844",
-          "frida:8"
+          "frida:8",
+          "fdc:2709796"
         ]
       },
       "kcal": 36,
@@ -6046,7 +6405,8 @@
           "ciqual:11033",
           "cofid:13-804",
           "matvaretabellen:06.111",
-          "fdc:172232"
+          "fdc:172232",
+          "fdc:2709780"
         ]
       },
       "kcal": 23,
@@ -6089,7 +6449,8 @@
           "ciqual:20810",
           "ciqual:20022",
           "frida:685",
-          "matvaretabellen:06.174"
+          "matvaretabellen:06.174",
+          "fdc:2709639"
         ]
       },
       "kcal": 11,
@@ -6110,7 +6471,9 @@
           "cofid:13-340",
           "cofid:13-341",
           "frida:1204",
-          "matvaretabellen:06.139"
+          "matvaretabellen:06.139",
+          "fdc:2709988",
+          "fdc:2709805"
         ]
       },
       "kcal": 45,
@@ -6137,7 +6500,8 @@
         "records": [
           "ciqual:25604",
           "cofid:15-648",
-          "bls:X201160"
+          "bls:X201160",
+          "fdc:2709792"
         ]
       },
       "kcal": 13.5,
@@ -6149,7 +6513,8 @@
       "expect": {
         "records": [
           "ciqual:25604",
-          "cofid:15-648"
+          "cofid:15-648",
+          "fdc:2709792"
         ]
       },
       "kcal": 13.5,
@@ -6162,7 +6527,8 @@
         "records": [
           "bls:X205650",
           "bls:X200350",
-          "bls:X252810"
+          "bls:X252810",
+          "fdc:2709756"
         ]
       },
       "kcal": 28,
@@ -6217,7 +6583,8 @@
       "expect": {
         "records": [
           "bls:F110100",
-          "frida:2"
+          "frida:2",
+          "fdc:2709215"
         ]
       },
       "kcal": 58,
@@ -6232,7 +6599,8 @@
           "bls:F503100",
           "cofid:14-347",
           "frida:3",
-          "matvaretabellen:06.525"
+          "matvaretabellen:06.525",
+          "fdc:2709224"
         ]
       },
       "kcal": 89,
@@ -6247,7 +6615,8 @@
           "fdc:746771",
           "frida:70",
           "bls:F603100",
-          "matvaretabellen:06.520"
+          "matvaretabellen:06.520",
+          "fdc:2709171"
         ]
       },
       "kcal": 47,
@@ -6259,7 +6628,8 @@
       "expect": {
         "records": [
           "fdc:169105",
-          "bls:F609100"
+          "bls:F609100",
+          "fdc:2709175"
         ]
       },
       "kcal": 53,
@@ -6273,7 +6643,8 @@
           "fdc:168195",
           "bls:F607100",
           "ciqual:13024",
-          "matvaretabellen:06.526"
+          "matvaretabellen:06.526",
+          "fdc:2709164"
         ]
       },
       "kcal": 47,
@@ -6295,7 +6666,8 @@
           "cofid:14-384",
           "frida:1856",
           "matvaretabellen:06.538",
-          "bls:F604100"
+          "bls:F604100",
+          "fdc:2709165"
         ]
       },
       "kcal": 32,
@@ -6309,7 +6681,8 @@
           "fdc:167746",
           "bls:F601100",
           "frida:21",
-          "matvaretabellen:06.550"
+          "matvaretabellen:06.550",
+          "fdc:2709168"
         ]
       },
       "kcal": 29,
@@ -6324,7 +6697,8 @@
           "bls:F602100",
           "ciqual:13067",
           "frida:464",
-          "matvaretabellen:06.603"
+          "matvaretabellen:06.603",
+          "fdc:2709170"
         ]
       },
       "kcal": 30,
@@ -6341,7 +6715,8 @@
           "frida:9",
           "matvaretabellen:06.546",
           "matvaretabellen:06.759",
-          "matvaretabellen:06.760"
+          "matvaretabellen:06.760",
+          "fdc:2709254"
         ]
       },
       "kcal": 57,
@@ -6355,7 +6730,8 @@
           "bls:F203100",
           "cofid:14-299",
           "matvaretabellen:06.532",
-          "frida:1853"
+          "frida:1853",
+          "fdc:2709249"
         ]
       },
       "kcal": 39,
@@ -6375,7 +6751,8 @@
           "cofid:14-380",
           "cofid:14-381",
           "matvaretabellen:06.605",
-          "frida:610"
+          "frida:610",
+          "fdc:2709245"
         ]
       },
       "kcal": 44,
@@ -6393,7 +6770,8 @@
           "cofid:14-025",
           "cofid:14-026",
           "frida:1851",
-          "matvaretabellen:06.521"
+          "matvaretabellen:06.521",
+          "fdc:2709221"
         ]
       },
       "kcal": 48,
@@ -6409,7 +6787,8 @@
           "frida:1852",
           "bls:F220100",
           "matvaretabellen:06.544",
-          "fdc:169949"
+          "fdc:169949",
+          "fdc:2709265"
         ]
       },
       "kcal": 44,
@@ -6424,7 +6803,8 @@
           "fdc:171719",
           "cofid:14-382",
           "matvaretabellen:06.506",
-          "matvaretabellen:06.507"
+          "matvaretabellen:06.507",
+          "fdc:2709231"
         ]
       },
       "kcal": 63,
@@ -6453,7 +6833,9 @@
           "matvaretabellen:06.504",
           "fdc:167762",
           "frida:1819",
-          "matvaretabellen:06.840"
+          "matvaretabellen:06.840",
+          "fdc:2709283",
+          "fdc:2709285"
         ]
       },
       "kcal": 36.4,
@@ -6468,7 +6850,8 @@
           "fdc:171711",
           "cofid:14-325",
           "frida:1848",
-          "matvaretabellen:06.667"
+          "matvaretabellen:06.667",
+          "fdc:2709275"
         ]
       },
       "kcal": 57,
@@ -6486,7 +6869,9 @@
           "cofid:14-375",
           "frida:1818",
           "matvaretabellen:06.841",
-          "matvaretabellen:06.503"
+          "matvaretabellen:06.503",
+          "fdc:2709281",
+          "fdc:2709282"
         ]
       },
       "kcal": 52,
@@ -6506,7 +6891,9 @@
           "cofid:14-388",
           "frida:1849",
           "matvaretabellen:06.501",
-          "fdc:173946"
+          "fdc:173946",
+          "fdc:2709273",
+          "fdc:2709274"
         ]
       },
       "kcal": 41,
@@ -6521,7 +6908,8 @@
           "ciqual:13113",
           "cofid:14-073",
           "frida:350",
-          "matvaretabellen:06.765"
+          "matvaretabellen:06.765",
+          "fdc:2709279"
         ]
       },
       "kcal": 46,
@@ -6535,7 +6923,8 @@
           "fdc:171723",
           "bls:F414400",
           "ciqual:13178",
-          "matvaretabellen:06.228"
+          "matvaretabellen:06.228",
+          "fdc:2709202"
         ]
       },
       "kcal": 308,
@@ -6559,7 +6948,8 @@
           "frida:54",
           "matvaretabellen:06.756",
           "matvaretabellen:06.528",
-          "matvaretabellen:06.755"
+          "matvaretabellen:06.755",
+          "fdc:2709237"
         ]
       },
       "kcal": 69,
@@ -6578,7 +6968,8 @@
           "cofid:14-296",
           "cofid:14-309",
           "frida:36",
-          "matvaretabellen:06.543"
+          "matvaretabellen:06.543",
+          "fdc:2709270"
         ]
       },
       "kcal": 30,
@@ -6594,7 +6985,8 @@
           "bls:F532100",
           "ciqual:13026",
           "frida:491",
-          "matvaretabellen:06.600"
+          "matvaretabellen:06.600",
+          "fdc:2709226"
         ]
       },
       "kcal": 34,
@@ -6612,7 +7004,8 @@
           "cofid:14-357",
           "cofid:14-358",
           "frida:1857",
-          "matvaretabellen:06.610"
+          "matvaretabellen:06.610",
+          "fdc:2709241"
         ]
       },
       "kcal": 36,
@@ -6631,7 +7024,9 @@
           "frida:1830",
           "matvaretabellen:06.842",
           "matvaretabellen:06.517",
-          "frida:1855"
+          "frida:1855",
+          "fdc:2709260",
+          "fdc:2709264"
         ]
       },
       "kcal": 50,
@@ -6647,7 +7042,9 @@
           "frida:1828",
           "matvaretabellen:06.839",
           "matvaretabellen:06.542",
-          "frida:1859"
+          "frida:1859",
+          "fdc:2709242",
+          "fdc:2709244"
         ]
       },
       "kcal": 60,
@@ -6665,7 +7062,8 @@
           "cofid:14-397",
           "frida:510",
           "matvaretabellen:06.606",
-          "bls:F517100"
+          "bls:F517100",
+          "fdc:2709246"
         ]
       },
       "kcal": 43,
@@ -6684,7 +7082,8 @@
           "cofid:14-371",
           "cofid:14-373",
           "matvaretabellen:06.539",
-          "frida:1858"
+          "frida:1858",
+          "fdc:2709239"
         ]
       },
       "kcal": 61,
@@ -6703,7 +7102,8 @@
           "frida:1829",
           "matvaretabellen:06.845",
           "matvaretabellen:06.596",
-          "bls:F506100"
+          "bls:F506100",
+          "fdc:2709267"
         ]
       },
       "kcal": 83,
@@ -6737,7 +7137,8 @@
           "cofid:14-092",
           "frida:348",
           "matvaretabellen:06.535",
-          "cofid:14-395"
+          "cofid:14-395",
+          "fdc:2709204"
         ]
       },
       "kcal": 249,
@@ -6755,7 +7156,8 @@
           "cofid:14-394",
           "cofid:14-399",
           "frida:533",
-          "matvaretabellen:06.527"
+          "matvaretabellen:06.527",
+          "fdc:2709203"
         ]
       },
       "kcal": 282,
@@ -6780,7 +7182,8 @@
           "fdc:168164",
           "fdc:168166",
           "cofid:14-393",
-          "matvaretabellen:06.549"
+          "matvaretabellen:06.549",
+          "fdc:2709212"
         ]
       },
       "kcal": 301,
@@ -6797,7 +7200,8 @@
           "cofid:14-031",
           "frida:458",
           "matvaretabellen:06.523",
-          "cofid:14-392"
+          "cofid:14-392",
+          "fdc:2709197"
         ]
       },
       "kcal": 241,
@@ -6829,7 +7233,8 @@
           "fdc:169091",
           "bls:F516400",
           "matvaretabellen:06.226",
-          "matvaretabellen:06.227"
+          "matvaretabellen:06.227",
+          "fdc:2709205"
         ]
       },
       "kcal": 319,
@@ -6844,7 +7249,8 @@
           "bls:F507100",
           "ciqual:13066",
           "frida:593",
-          "matvaretabellen:06.767"
+          "matvaretabellen:06.767",
+          "fdc:2709259"
         ]
       },
       "kcal": 70,
@@ -6859,7 +7265,8 @@
           "cofid:14-143",
           "cofid:14-142",
           "matvaretabellen:06.604",
-          "frida:630"
+          "frida:630",
+          "fdc:2709240"
         ]
       },
       "kcal": 71,
@@ -6876,7 +7283,8 @@
           "cofid:14-178",
           "cofid:14-179",
           "frida:1055",
-          "matvaretabellen:06.581"
+          "matvaretabellen:06.581",
+          "fdc:2709248"
         ]
       },
       "kcal": 97,
@@ -6893,7 +7301,8 @@
           "cofid:14-118",
           "cofid:14-119",
           "frida:633",
-          "matvaretabellen:06.597"
+          "matvaretabellen:06.597",
+          "fdc:2709238"
         ]
       },
       "kcal": 68,
@@ -6903,10 +7312,13 @@
     {
       "q": "dragon fruit",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709234"
+        ]
       },
-      "gap": true,
-      "why": "fruit: searched dragon fruit, pitaya, pitahaya; no record in any table"
+      "kcal": 68,
+      "kcal_ref": "USDA FDC 2709234 dragon fruit",
+      "why": "fruit: FNDDS Dragon fruit"
     },
     {
       "q": "coconut",
@@ -6916,7 +7328,8 @@
           "bls:H150100",
           "ciqual:15006",
           "frida:88",
-          "matvaretabellen:06.769"
+          "matvaretabellen:06.769",
+          "fdc:2707500"
         ]
       },
       "kcal": 354,
@@ -7025,7 +7438,9 @@
           "fdc:167772",
           "fdc:2346414",
           "fdc:172278",
-          "fdc:173512"
+          "fdc:173512",
+          "fdc:2709216",
+          "fdc:2709217"
         ]
       },
       "kcal": 68,
@@ -7047,7 +7462,10 @@
           "cofid:14-189",
           "frida:434",
           "matvaretabellen:06.533",
-          "matvaretabellen:06.534"
+          "matvaretabellen:06.534",
+          "fdc:2709250",
+          "fdc:2709251",
+          "fdc:2709252"
         ]
       },
       "kcal": 54,
@@ -7060,7 +7478,9 @@
         "records": [
           "ciqual:13134",
           "cofid:14-333",
-          "bls:X270112"
+          "bls:X270112",
+          "fdc:2709287",
+          "fdc:2709288"
         ]
       },
       "kcal": 79.3,
@@ -7089,7 +7509,8 @@
           "cofid:14-265",
           "cofid:13-856",
           "frida:222",
-          "matvaretabellen:06.632"
+          "matvaretabellen:06.632",
+          "fdc:2709269"
         ]
       },
       "kcal": 239,
@@ -7156,7 +7577,8 @@
       "expect": {
         "records": [
           "matvaretabellen:06.844",
-          "frida:1831"
+          "frida:1831",
+          "fdc:2709272"
         ]
       },
       "kcal": 47,
@@ -7224,7 +7646,10 @@
           "matvaretabellen:05.289",
           "matvaretabellen:05.212",
           "matvaretabellen:05.254",
-          "matvaretabellen:05.024"
+          "matvaretabellen:05.024",
+          "fdc:2708403",
+          "fdc:2708408",
+          "fdc:2708422"
         ]
       },
       "kcal": 151,
@@ -7261,7 +7686,8 @@
           "cofid:11-868",
           "frida:156",
           "matvaretabellen:05.255",
-          "matvaretabellen:05.021"
+          "matvaretabellen:05.021",
+          "fdc:2708414"
         ]
       },
       "kcal": 128,
@@ -7325,7 +7751,10 @@
           "cofid:11-873",
           "cofid:11-872",
           "matvaretabellen:05.340",
-          "matvaretabellen:05.339"
+          "matvaretabellen:05.339",
+          "fdc:2708423",
+          "fdc:2708425",
+          "fdc:2708424"
         ]
       },
       "kcal": 101,
@@ -7347,7 +7776,8 @@
           "frida:1296",
           "frida:305",
           "matvaretabellen:05.130",
-          "matvaretabellen:05.016"
+          "matvaretabellen:05.016",
+          "fdc:2708357"
         ]
       },
       "kcal": 133,
@@ -7394,7 +7824,8 @@
           "cofid:11-723",
           "cofid:11-718",
           "matvaretabellen:05.335",
-          "matvaretabellen:05.332"
+          "matvaretabellen:05.332",
+          "fdc:2708358"
         ]
       },
       "kcal": 149,
@@ -7468,7 +7899,8 @@
           "bls:C559000",
           "cofid:11-725",
           "matvaretabellen:05.334",
-          "matvaretabellen:05.331"
+          "matvaretabellen:05.331",
+          "fdc:2708356"
         ]
       },
       "kcal": 108,
@@ -7533,7 +7965,8 @@
           "cofid:11-902",
           "cofid:11-901",
           "matvaretabellen:05.252",
-          "matvaretabellen:05.225"
+          "matvaretabellen:05.225",
+          "fdc:2708441"
         ]
       },
       "kcal": 112,
@@ -7555,7 +7988,10 @@
           "cofid:11-904",
           "frida:283",
           "matvaretabellen:05.285",
-          "matvaretabellen:05.233"
+          "matvaretabellen:05.233",
+          "fdc:2708440",
+          "fdc:2708439",
+          "fdc:2708438"
         ]
       },
       "kcal": 83,
@@ -7583,7 +8019,9 @@
           "matvaretabellen:06.664",
           "matvaretabellen:06.615",
           "matvaretabellen:05.456",
-          "matvaretabellen:06.663"
+          "matvaretabellen:06.663",
+          "fdc:2708401",
+          "fdc:2708400"
         ]
       },
       "kcal": 120,
@@ -7624,7 +8062,8 @@
           "cofid:11-006",
           "frida:1240",
           "frida:67",
-          "matvaretabellen:05.231"
+          "matvaretabellen:05.231",
+          "fdc:2708362"
         ]
       },
       "kcal": 115,
@@ -7642,7 +8081,8 @@
           "bls:C332000",
           "ciqual:9330",
           "frida:385",
-          "matvaretabellen:05.005"
+          "matvaretabellen:05.005",
+          "fdc:2708377"
         ]
       },
       "kcal": 119,
@@ -7747,7 +8187,8 @@
         "records": [
           "ciqual:4023",
           "frida:801",
-          "frida:4"
+          "frida:4",
+          "fdc:2709382"
         ]
       },
       "kcal": 84.9,
@@ -7780,7 +8221,10 @@
           "fdc:170033",
           "bls:X699412",
           "ciqual:4026",
-          "matvaretabellen:06.274"
+          "matvaretabellen:06.274",
+          "fdc:2709383",
+          "fdc:2709524",
+          "fdc:2709384"
         ]
       },
       "kcal": 93,
@@ -7826,7 +8270,13 @@
           "ciqual:4032",
           "ciqual:4030",
           "frida:1209",
-          "matvaretabellen:06.738"
+          "matvaretabellen:06.738",
+          "fdc:2709456",
+          "fdc:2709461",
+          "fdc:2709459",
+          "fdc:2709458",
+          "fdc:2709462",
+          "fdc:2709464"
         ]
       },
       "kcal": 289,
@@ -7843,7 +8293,20 @@
           "cofid:13-534",
           "cofid:13-492",
           "bls:X699412",
-          "matvaretabellen:06.274"
+          "matvaretabellen:06.274",
+          "fdc:2709402",
+          "fdc:2709403",
+          "fdc:2709405",
+          "fdc:2709407",
+          "fdc:2709408",
+          "fdc:2709406",
+          "fdc:2709404",
+          "fdc:2709409",
+          "fdc:2709413",
+          "fdc:2709414",
+          "fdc:2709412",
+          "fdc:2709411",
+          "fdc:2709415"
         ]
       },
       "kcal": 161,
@@ -7862,7 +8325,14 @@
           "fdc:170044",
           "fdc:170036",
           "fdc:167605",
-          "fdc:169848"
+          "fdc:169848",
+          "fdc:2709477",
+          "fdc:2709485",
+          "fdc:2709478",
+          "fdc:2709483",
+          "fdc:2709480",
+          "fdc:2709482",
+          "fdc:2709486"
         ]
       },
       "kcal": 265,
@@ -7899,7 +8369,8 @@
           "matvaretabellen:06.101",
           "matvaretabellen:06.136",
           "ciqual:4101",
-          "matvaretabellen:06.229"
+          "matvaretabellen:06.229",
+          "fdc:2709697"
         ]
       },
       "kcal": 79.1,
@@ -7914,7 +8385,10 @@
           "fdc:168483",
           "bls:K420162",
           "cofid:13-672",
-          "matvaretabellen:06.229"
+          "matvaretabellen:06.229",
+          "fdc:2709698",
+          "fdc:2709700",
+          "fdc:2709699"
         ]
       },
       "kcal": 90,
@@ -7925,7 +8399,8 @@
       "q": "sweet potato fries",
       "expect": {
         "records": [
-          "bls:K420192"
+          "bls:K420192",
+          "fdc:2709713"
         ]
       },
       "kcal": 300,
@@ -7949,7 +8424,8 @@
           "cofid:13-211",
           "frida:939",
           "fdc:169985",
-          "matvaretabellen:06.122"
+          "matvaretabellen:06.122",
+          "fdc:2709564"
         ]
       },
       "kcal": 130,
@@ -7994,7 +8470,8 @@
           "cofid:13-377",
           "cofid:13-378",
           "cofid:13-376",
-          "cofid:13-379"
+          "cofid:13-379",
+          "fdc:2709567"
         ]
       },
       "kcal": 142,
@@ -8015,7 +8492,9 @@
           "cofid:13-324",
           "cofid:13-323",
           "frida:892",
-          "matvaretabellen:06.623"
+          "matvaretabellen:06.623",
+          "fdc:2709560",
+          "fdc:2709558"
         ]
       },
       "kcal": 112,
@@ -8028,7 +8507,8 @@
         "records": [
           "fdc:168199",
           "bls:F545182",
-          "cofid:13-569"
+          "cofid:13-569",
+          "fdc:2709559"
         ]
       },
       "kcal": 309,
@@ -8055,7 +8535,9 @@
           "matvaretabellen:06.184",
           "frida:1807",
           "matvaretabellen:06.130",
-          "matvaretabellen:06.131"
+          "matvaretabellen:06.131",
+          "fdc:2707423",
+          "fdc:2707426"
         ]
       },
       "kcal": 99,
@@ -8108,7 +8590,13 @@
           "fdc:173801",
           "fdc:175206",
           "fdc:175250",
-          "frida:1812"
+          "frida:1812",
+          "fdc:2707414",
+          "fdc:2707417",
+          "fdc:2707418",
+          "fdc:2707419",
+          "fdc:2707415",
+          "fdc:2707416"
         ]
       },
       "kcal": 164,
@@ -8127,7 +8615,10 @@
           "ciqual:20532",
           "cofid:13-670",
           "frida:1812",
-          "matvaretabellen:06.128"
+          "matvaretabellen:06.128",
+          "fdc:2707417",
+          "fdc:2707418",
+          "fdc:2707419"
         ]
       },
       "kcal": 139,
@@ -8148,7 +8639,14 @@
           "fdc:2644285",
           "fdc:175238",
           "frida:1814",
-          "matvaretabellen:06.132"
+          "matvaretabellen:06.132",
+          "fdc:2707359",
+          "fdc:2707362",
+          "fdc:2707363",
+          "fdc:2707364",
+          "fdc:2707360",
+          "fdc:2707361",
+          "fdc:2707365"
         ]
       },
       "kcal": 132,
@@ -8175,7 +8673,14 @@
           "fdc:174285",
           "fdc:175243",
           "fdc:175245",
-          "fdc:175195"
+          "fdc:175195",
+          "fdc:2707379",
+          "fdc:2707382",
+          "fdc:2707383",
+          "fdc:2707384",
+          "fdc:2707380",
+          "fdc:2707381",
+          "fdc:2707385"
         ]
       },
       "kcal": 127,
@@ -8196,7 +8701,14 @@
           "fdc:2644292",
           "fdc:173797",
           "fdc:175201",
-          "fdc:175247"
+          "fdc:175247",
+          "fdc:2707371",
+          "fdc:2707374",
+          "fdc:2707375",
+          "fdc:2707376",
+          "fdc:2707372",
+          "fdc:2707373",
+          "fdc:2707377"
         ]
       },
       "kcal": 143,
@@ -8223,7 +8735,9 @@
           "fdc:168128",
           "fdc:175182",
           "cofid:13-532",
-          "frida:1808"
+          "frida:1808",
+          "fdc:2707390",
+          "fdc:2707391"
         ]
       },
       "kcal": 94,
@@ -8241,7 +8755,10 @@
           "fdc:174296",
           "fdc:167666",
           "cofid:13-108",
-          "cofid:15-854"
+          "cofid:15-854",
+          "fdc:2707396",
+          "fdc:2707399",
+          "fdc:2707397"
         ]
       },
       "kcal": 90,
@@ -8260,7 +8777,8 @@
           "cofid:13-664",
           "cofid:13-096",
           "frida:58",
-          "matvaretabellen:06.089"
+          "matvaretabellen:06.089",
+          "fdc:2707389"
         ]
       },
       "kcal": 105,
@@ -8278,7 +8796,9 @@
           "ciqual:20515",
           "cofid:13-142",
           "cofid:13-141",
-          "frida:592"
+          "frida:592",
+          "fdc:2707421",
+          "fdc:2707420"
         ]
       },
       "kcal": 118,
@@ -8292,7 +8812,8 @@
           "fdc:175205",
           "fdc:173798",
           "fdc:173753",
-          "fdc:173754"
+          "fdc:173754",
+          "fdc:2707367"
         ]
       },
       "kcal": 110,
@@ -8309,7 +8830,8 @@
           "bls:G750100",
           "cofid:13-667",
           "frida:1806",
-          "matvaretabellen:06.197"
+          "matvaretabellen:06.197",
+          "fdc:2707436"
         ]
       },
       "kcal": 121,
@@ -8372,7 +8894,8 @@
           "fdc:172440",
           "ciqual:20901",
           "frida:1217",
-          "matvaretabellen:06.083"
+          "matvaretabellen:06.083",
+          "fdc:2707388"
         ]
       },
       "kcal": 172,
@@ -8386,7 +8909,8 @@
           "fdc:171646",
           "bls:X0A3000",
           "ciqual:32145",
-          "matvaretabellen:05.483"
+          "matvaretabellen:05.483",
+          "fdc:2708461"
         ]
       },
       "kcal": 489,
@@ -8421,7 +8945,8 @@
           "cofid:11-742",
           "cofid:11-745",
           "frida:395",
-          "matvaretabellen:05.033"
+          "matvaretabellen:05.033",
+          "fdc:2708453"
         ]
       },
       "kcal": 376,
@@ -8489,7 +9014,8 @@
           "bls:K270000",
           "bls:K270022",
           "ciqual:25510",
-          "ciqual:26264"
+          "ciqual:26264",
+          "fdc:2708722"
         ]
       },
       "kcal": 178,
@@ -8589,7 +9115,13 @@
           "fdc:174805",
           "fdc:169677",
           "fdc:170649",
-          "bls:K280100"
+          "bls:K280100",
+          "fdc:2709421",
+          "fdc:2709422",
+          "fdc:2709439",
+          "fdc:2709427",
+          "fdc:2709438",
+          "bls:X654042"
         ]
       },
       "kcal": 532,
@@ -8620,7 +9152,13 @@
           "fdc:169851",
           "fdc:169850",
           "bls:X730033",
-          "ciqual:25081"
+          "ciqual:25081",
+          "fdc:2708750",
+          "fdc:2708751",
+          "fdc:2708752",
+          "fdc:2708754",
+          "fdc:2708753",
+          "fdc:2708755"
         ]
       },
       "kcal": 185,
@@ -8734,7 +9272,8 @@
           "ciqual:25916",
           "cofid:17-711",
           "cofid:17-810",
-          "matvaretabellen:10.166"
+          "matvaretabellen:10.166",
+          "fdc:2710114"
         ]
       },
       "kcal": 34,
@@ -8760,7 +9299,8 @@
           "bls:X203460",
           "ciqual:26262",
           "cofid:15-871",
-          "matvaretabellen:06.712"
+          "matvaretabellen:06.712",
+          "fdc:2709830"
         ]
       },
       "kcal": 107,
@@ -8772,7 +9312,9 @@
       "expect": {
         "records": [
           "ciqual:25628",
-          "matvaretabellen:06.200"
+          "matvaretabellen:06.200",
+          "fdc:2709591",
+          "fdc:2706818"
         ]
       },
       "kcal": 151,
@@ -8798,7 +9340,10 @@
       "q": "paella",
       "expect": {
         "records": [
-          "bls:X890933"
+          "bls:X890933",
+          "fdc:2706723",
+          "fdc:2706711",
+          "fdc:2708973"
         ]
       },
       "kcal": 102,
@@ -8808,10 +9353,14 @@
     {
       "q": "seafood paella",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706711",
+          "fdc:2708973"
+        ]
       },
-      "gap": true,
-      "why": "dish-eu: searched seafood paella, paella with seafood, paella marinera; only a generic (unspecified) paella and seafood risotto/pizza"
+      "kcal": 143,
+      "kcal_ref": "USDA FDC 2706711 paella with seafood",
+      "why": "dish-eu: FNDDS Paella with seafood and seafood paella Puerto Rican style; Paella NFS/BLS paella unspecified, left out"
     },
     {
       "q": "gazpacho",
@@ -8819,7 +9368,8 @@
         "records": [
           "bls:X469460",
           "ciqual:25967",
-          "cofid:17-795"
+          "cofid:17-795",
+          "fdc:2710106"
         ]
       },
       "kcal": 46,
@@ -8845,7 +9395,8 @@
           "bls:X518543",
           "ciqual:25018",
           "cofid:15-659",
-          "matvaretabellen:06.706"
+          "matvaretabellen:06.706",
+          "fdc:2710028"
         ]
       },
       "kcal": 57.1,
@@ -8891,7 +9442,8 @@
           "ciqual:25910",
           "ciqual:25942",
           "fdc:174568",
-          "bls:X425553"
+          "bls:X425553",
+          "fdc:2710108"
         ]
       },
       "kcal": 41,
@@ -8956,7 +9508,12 @@
           "cofid:15-874",
           "cofid:15-654",
           "matvaretabellen:08.012",
-          "matvaretabellen:08.204"
+          "matvaretabellen:08.204",
+          "fdc:2709531",
+          "fdc:2709541",
+          "fdc:2709542",
+          "fdc:2709547",
+          "fdc:2709543"
         ]
       },
       "kcal": 143,
@@ -8980,7 +9537,8 @@
         "records": [
           "ciqual:25009",
           "cofid:19-494",
-          "cofid:19-626"
+          "cofid:19-626",
+          "fdc:2706594"
         ]
       },
       "kcal": 107,
@@ -9029,17 +9587,21 @@
     {
       "q": "pierogi",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708720"
+        ]
       },
-      "gap": true,
-      "why": "dish-eu: searched pierogi, polish dumplings, pierogi with potato and cheese; no pierogi record"
+      "kcal": 195,
+      "kcal_ref": "USDA FDC 2708720 pierogi",
+      "why": "dish-eu: FNDDS Pierogi"
     },
     {
       "q": "cabbage rolls",
       "expect": {
         "records": [
           "bls:X538212",
-          "bls:X5A5000"
+          "bls:X5A5000",
+          "fdc:2706620"
         ]
       },
       "kcal": 107,
@@ -9049,17 +9611,21 @@
     {
       "q": "swedish meatballs",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706384"
+        ]
       },
-      "gap": true,
-      "why": "dish-eu: searched swedish meatballs, kottbullar, meatballs with gravy; only plain fried meatballs and other meatball dishes"
+      "kcal": 170,
+      "kcal_ref": "USDA FDC 2706384 swedish meatballs with cream or white sauce",
+      "why": "dish-eu: FNDDS Swedish meatballs with cream sauce; frozen meal with noodles and generic breaded meatballs with gravy left out"
     },
     {
       "q": "cheese fondue",
       "expect": {
         "records": [
           "bls:Y780163",
-          "ciqual:25509"
+          "ciqual:25509",
+          "fdc:2705791"
         ]
       },
       "kcal": 252,
@@ -9086,7 +9652,8 @@
           "fdc:171607",
           "bls:X448153",
           "bls:K850532",
-          "cofid:17-713"
+          "cofid:17-713",
+          "fdc:2710107"
         ]
       },
       "kcal": 39,
@@ -9109,7 +9676,10 @@
           "ciqual:25914",
           "cofid:17-636",
           "frida:1023",
-          "matvaretabellen:10.013"
+          "matvaretabellen:10.013",
+          "fdc:2709757",
+          "fdc:2709759",
+          "fdc:2709760"
         ]
       },
       "kcal": 32,
@@ -9126,7 +9696,10 @@
           "bls:X4A7010",
           "cofid:17-712",
           "cofid:17-684",
-          "fdc:172900"
+          "fdc:172900",
+          "fdc:2710113",
+          "fdc:2710111",
+          "fdc:2710112"
         ]
       },
       "kcal": 28,
@@ -9142,7 +9715,11 @@
           "ciqual:25900",
           "cofid:17-698",
           "cofid:17-808",
-          "matvaretabellen:10.228"
+          "matvaretabellen:10.228",
+          "fdc:2707462",
+          "fdc:2707460",
+          "fdc:2707461",
+          "fdc:2707463"
         ]
       },
       "kcal": 82,
@@ -9182,7 +9759,8 @@
           "matvaretabellen:04.298",
           "ciqual:25919",
           "ciqual:25904",
-          "matvaretabellen:10.023"
+          "matvaretabellen:10.023",
+          "fdc:2707143"
         ]
       },
       "kcal": 72,
@@ -9211,7 +9789,8 @@
       "q": "spanakopita",
       "expect": {
         "records": [
-          "cofid:15-840"
+          "cofid:15-840",
+          "fdc:2708729"
         ]
       },
       "kcal": 177,
@@ -9243,7 +9822,11 @@
         "records": [
           "cofid:19-632",
           "cofid:15-837",
-          "cofid:15-852"
+          "cofid:15-852",
+          "fdc:2706633",
+          "fdc:2709072",
+          "fdc:2709073",
+          "fdc:2709074"
         ]
       },
       "kcal": 99,
@@ -9253,10 +9836,13 @@
     {
       "q": "eggplant parmesan",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2710050"
+        ]
       },
-      "gap": true,
-      "why": "dish-eu: searched eggplant parmesan, eggplant parmigiana, aubergine parmigiana; nothing returned"
+      "kcal": 155,
+      "kcal_ref": "USDA FDC 2710050 eggplant parmesan casserole, regular",
+      "why": "dish-eu: FNDDS eggplant parmesan casserole"
     },
     {
       "q": "chicken parmesan",
@@ -9318,7 +9904,10 @@
           "fdc:172100",
           "bls:X740933",
           "bls:X702512",
-          "matvaretabellen:10.227"
+          "matvaretabellen:10.227",
+          "fdc:2708831",
+          "fdc:2708832",
+          "fdc:2708830"
         ]
       },
       "kcal": 129,
@@ -9359,7 +9948,8 @@
       "q": "bruschetta",
       "expect": {
         "records": [
-          "matvaretabellen:05.504"
+          "matvaretabellen:05.504",
+          "fdc:2707652"
         ]
       },
       "kcal": 111,
@@ -9398,7 +9988,12 @@
           "bls:X4A1020",
           "fdc:171145",
           "cofid:17-714",
-          "fdc:171544"
+          "fdc:171544",
+          "fdc:2707134",
+          "fdc:2709149",
+          "fdc:2709148",
+          "fdc:2707133",
+          "fdc:2709150"
         ]
       },
       "kcal": 71,
@@ -9413,7 +10008,10 @@
           "cofid:19-473",
           "cofid:19-550",
           "ciqual:25065",
-          "bls:X417013"
+          "bls:X417013",
+          "fdc:2706592",
+          "fdc:2706591",
+          "fdc:2706503"
         ]
       },
       "kcal": 99,
@@ -9480,7 +10078,13 @@
           "fdc:170323",
           "bls:Y911060",
           "ciqual:25413",
-          "cofid:19-544"
+          "cofid:19-544",
+          "fdc:2706922",
+          "fdc:2706924",
+          "fdc:2706926",
+          "fdc:2706919",
+          "fdc:2706920",
+          "fdc:2706925"
         ]
       },
       "kcal": 263,
@@ -9509,7 +10113,17 @@
           "ciqual:25644",
           "cofid:19-545",
           "frida:1619",
-          "matvaretabellen:03.309"
+          "matvaretabellen:03.309",
+          "fdc:2706890",
+          "fdc:2706892",
+          "fdc:2706894",
+          "fdc:2706887",
+          "fdc:2706888",
+          "fdc:2706893",
+          "fdc:2706896",
+          "fdc:2706895",
+          "fdc:2706913",
+          "fdc:2706914"
         ]
       },
       "kcal": 270,
@@ -9523,7 +10137,10 @@
           "bls:Y021512",
           "ciqual:25403",
           "frida:1640",
-          "frida:1641"
+          "frida:1641",
+          "fdc:2707057",
+          "fdc:2707056",
+          "fdc:2707060"
         ]
       },
       "kcal": 231,
@@ -9553,10 +10170,15 @@
     {
       "q": "buffalo wings",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706070",
+          "fdc:2706076",
+          "fdc:2706073"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched buffalo wings, chicken wings hot sauce, spicy chicken wings; only plain/marinated wings, no wings in buffalo sauce"
+      "kcal": 272,
+      "kcal_ref": "USDA FDC 2706070 chicken \"wings\" with hot sauce, from fast food / restaurant",
+      "why": "dish-am: FNDDS chicken wings with hot sauce (restaurant, other, precooked); boneless 'wings' left out"
     },
     {
       "q": "clam chowder",
@@ -9568,7 +10190,9 @@
           "fdc:174539",
           "fdc:174555",
           "fdc:174062",
-          "fdc:174063"
+          "fdc:174063",
+          "fdc:2707138",
+          "fdc:2707139"
         ]
       },
       "kcal": 79,
@@ -9611,7 +10235,8 @@
       "expect": {
         "records": [
           "matvaretabellen:09.140",
-          "matvaretabellen:09.143"
+          "matvaretabellen:09.143",
+          "fdc:2708529"
         ]
       },
       "kcal": 176,
@@ -9622,7 +10247,11 @@
       "q": "chicken burrito",
       "expect": {
         "records": [
-          "fdc:170334"
+          "fdc:170334",
+          "fdc:2708543",
+          "fdc:2708546",
+          "fdc:2708545",
+          "fdc:2708544"
         ]
       },
       "kcal": 179,
@@ -9649,7 +10278,11 @@
         "records": [
           "fdc:170765",
           "fdc:169034",
-          "fdc:169035"
+          "fdc:169035",
+          "fdc:2708590",
+          "fdc:2708591",
+          "fdc:2708593",
+          "fdc:2708596"
         ]
       },
       "kcal": 368,
@@ -9659,10 +10292,13 @@
     {
       "q": "chicken enchiladas",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708568"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched chicken enchiladas, chicken enchilada, enchilada with chicken; only cheese/beef enchiladas and chicken salads"
+      "kcal": 178,
+      "kcal_ref": "USDA FDC 2708568 enchilada, chicken",
+      "why": "dish-am: FNDDS Enchilada, chicken"
     },
     {
       "q": "nachos",
@@ -9671,7 +10307,14 @@
           "fdc:170291",
           "fdc:170292",
           "fdc:170336",
-          "fdc:170337"
+          "fdc:170337",
+          "fdc:2708576",
+          "fdc:2708577",
+          "fdc:2708578",
+          "fdc:2708579",
+          "fdc:2708580",
+          "fdc:2708581",
+          "fdc:2708582"
         ]
       },
       "kcal": 343,
@@ -9683,7 +10326,8 @@
       "expect": {
         "records": [
           "cofid:19-464",
-          "ciqual:25460"
+          "ciqual:25460",
+          "fdc:2708604"
         ]
       },
       "kcal": 125,
@@ -9699,7 +10343,12 @@
           "fdc:334628",
           "fdc:169856",
           "fdc:167636",
-          "fdc:169007"
+          "fdc:169007",
+          "fdc:2708570",
+          "fdc:2708571",
+          "fdc:2708573",
+          "fdc:2708572",
+          "fdc:2708574"
         ]
       },
       "kcal": 174,
@@ -9709,25 +10358,32 @@
     {
       "q": "pozole",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707129"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched pozole, posole, hominy stew with pork; only a Navajo hominy-mutton stew"
+      "kcal": 43,
+      "kcal_ref": "USDA FDC 2707129 soup, pozole",
+      "why": "dish-am: FNDDS Soup, pozole"
     },
     {
       "q": "chilaquiles",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708505"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched chilaquiles, chilaquiles with salsa, tortilla chips in salsa; only plain tortilla chips"
+      "kcal": 195,
+      "kcal_ref": "USDA FDC 2708505 chilaquiles",
+      "why": "dish-am: FNDDS Chilaquiles"
     },
     {
       "q": "ceviche",
       "expect": {
         "records": [
           "matvaretabellen:04.386",
-          "matvaretabellen:04.385"
+          "matvaretabellen:04.385",
+          "fdc:2706463"
         ]
       },
       "kcal": 102,
@@ -9738,7 +10394,9 @@
       "q": "beef empanada",
       "expect": {
         "records": [
-          "fdc:167660"
+          "fdc:167660",
+          "fdc:2708711",
+          "fdc:2708712"
         ]
       },
       "kcal": 335,
@@ -9757,7 +10415,10 @@
       "q": "rice and black beans",
       "expect": {
         "records": [
-          "fdc:168064"
+          "fdc:168064",
+          "fdc:2708988",
+          "fdc:2708994",
+          "fdc:2709035"
         ]
       },
       "kcal": 151,
@@ -9768,7 +10429,8 @@
       "q": "cheese bread",
       "expect": {
         "records": [
-          "fdc:167944"
+          "fdc:167944",
+          "fdc:2707618"
         ]
       },
       "kcal": 408,
@@ -9782,7 +10444,11 @@
           "fdc:167661",
           "fdc:334720",
           "fdc:167662",
-          "fdc:167663"
+          "fdc:167663",
+          "fdc:2708608",
+          "fdc:2708610",
+          "fdc:2708611",
+          "fdc:2708609"
         ]
       },
       "kcal": 256,
@@ -9825,7 +10491,12 @@
           "ciqual:25599",
           "ciqual:25651",
           "ciqual:25575",
-          "ciqual:25650"
+          "ciqual:25650",
+          "fdc:2706995",
+          "fdc:2706996",
+          "fdc:2706993",
+          "fdc:2706994",
+          "fdc:2706997"
         ]
       },
       "kcal": 220,
@@ -9836,7 +10507,12 @@
       "q": "grilled cheese sandwich",
       "expect": {
         "records": [
-          "ciqual:25501"
+          "ciqual:25501",
+          "fdc:2705803",
+          "fdc:2705802",
+          "fdc:2705801",
+          "fdc:2705805",
+          "fdc:2705804"
         ]
       },
       "kcal": 294,
@@ -9859,16 +10535,26 @@
     {
       "q": "peanut butter and jelly sandwich",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707554",
+          "fdc:2707561",
+          "fdc:2707556",
+          "fdc:2707555"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched peanut butter and jelly sandwich, peanut butter and jam sandwich, peanut butter jelly sandwich; only PB cookies/crackers"
+      "kcal": 361,
+      "kcal_ref": "USDA FDC 2707554 peanut butter and jelly sandwich, NFS",
+      "why": "dish-am: FNDDS PB&J sandwich NFS, frozen, regular PB and jelly on wheat/white; reduced-fat/reduced-sugar variants and the spread alone left out"
     },
     {
       "q": "tuna sandwich",
       "expect": {
         "records": [
-          "fdc:170299"
+          "fdc:170299",
+          "fdc:2707036",
+          "fdc:2707037",
+          "fdc:2707034",
+          "fdc:2707035"
         ]
       },
       "kcal": 218,
@@ -9892,7 +10578,9 @@
           "ciqual:25476",
           "ciqual:25638",
           "ciqual:25663",
-          "frida:1622"
+          "frida:1622",
+          "fdc:2706988",
+          "fdc:2706989"
         ]
       },
       "kcal": 250,
@@ -9904,7 +10592,13 @@
       "expect": {
         "records": [
           "fdc:170706",
-          "ciqual:25531"
+          "ciqual:25531",
+          "fdc:2706983",
+          "fdc:2706984",
+          "fdc:2706981",
+          "fdc:2706982",
+          "fdc:2706985",
+          "fdc:2706986"
         ]
       },
       "kcal": 147,
@@ -9953,7 +10647,8 @@
           "fdc:171817",
           "fdc:174767",
           "fdc:171198",
-          "fdc:171199"
+          "fdc:171199",
+          "fdc:2705848"
         ]
       },
       "kcal": 297,
@@ -9963,16 +10658,23 @@
     {
       "q": "jambalaya",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706727"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched jambalaya, jambalaya with chicken and sausage, creole rice; nothing relevant"
+      "kcal": 161,
+      "kcal_ref": "USDA FDC 2706727 jambalaya with meat and rice",
+      "why": "dish-am: FNDDS Jambalaya with meat and rice"
     },
     {
       "q": "gumbo",
       "expect": {
         "records": [
-          "fdc:172908"
+          "fdc:172908",
+          "fdc:2706726",
+          "fdc:2706879",
+          "fdc:2707142",
+          "fdc:2707141"
         ]
       },
       "kcal": 23,
@@ -9993,7 +10695,9 @@
           "bls:X2A1030",
           "ciqual:26259",
           "cofid:15-635",
-          "matvaretabellen:06.230"
+          "matvaretabellen:06.230",
+          "fdc:2709815",
+          "fdc:2709814"
         ]
       },
       "kcal": 153,
@@ -10006,7 +10710,8 @@
         "records": [
           "fdc:173331",
           "cofid:19-515",
-          "cofid:19-559"
+          "cofid:19-559",
+          "fdc:2706703"
         ]
       },
       "kcal": 204,
@@ -10016,10 +10721,14 @@
     {
       "q": "sloppy joe",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706883",
+          "fdc:2706884"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched sloppy joe, sloppy joes, sloppy joe sandwich; nothing returned"
+      "kcal": 185,
+      "kcal_ref": "USDA FDC 2706883 sloppy joe sandwich, on white bun",
+      "why": "dish-am: FNDDS sloppy joe sandwich on white/wheat bun; no-bun filling left out (as frankfurter vs hot dog)"
     },
     {
       "q": "philly cheesesteak",
@@ -10037,7 +10746,8 @@
       "q": "corn dog",
       "expect": {
         "records": [
-          "fdc:173345"
+          "fdc:173345",
+          "fdc:2707044"
         ]
       },
       "kcal": 250,
@@ -10047,10 +10757,22 @@
     {
       "q": "burrito bowl",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708555",
+          "fdc:2708560",
+          "fdc:2708564",
+          "fdc:2708556",
+          "fdc:2708561",
+          "fdc:2708562",
+          "fdc:2708557",
+          "fdc:2708558",
+          "fdc:2708563",
+          "fdc:2708559"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched burrito bowl, chipotle bowl, burrito bowl chicken rice beans; only wrapped burritos"
+      "kcal": 145,
+      "kcal_ref": "USDA FDC 2708555 burrito bowl, NFS",
+      "why": "dish-am: FNDDS burrito bowl, generic, every filling variant"
     },
     {
       "q": "poke bowl",
@@ -10063,10 +10785,13 @@
     {
       "q": "pancakes with maple syrup",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:173311"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched pancakes with maple syrup, pancakes with syrup, hotcakes with butter and syrup; only plain/filled pancakes and syrup alone, no combined record"
+      "kcal": 272,
+      "kcal_ref": "USDA FDC 173311 mcDONALD'S, Hotcakes (with 2 pats margarine & syrup)",
+      "why": "dish-am: fast-food hotcakes with margarine and syrup (retry), the only pancakes-with-syrup plate; plain pancakes lack the syrup"
     },
     {
       "q": "chicken caesar wrap",
@@ -10079,17 +10804,23 @@
     {
       "q": "eggs benedict",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707180"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched eggs benedict, poached egg on english muffin with hollandaise; nothing returned"
+      "kcal": 288,
+      "kcal_ref": "USDA FDC 2707180 egg, Benedict",
+      "why": "dish-am: FNDDS Egg, Benedict"
     },
     {
       "q": "breakfast burrito",
       "expect": {
         "records": [
           "fdc:170787",
-          "fdc:172063"
+          "fdc:172063",
+          "fdc:2707343",
+          "fdc:2707345",
+          "fdc:2707346"
         ]
       },
       "kcal": 277,
@@ -10099,10 +10830,13 @@
     {
       "q": "cobb salad",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709832"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched cobb salad, salad with chicken bacon egg and avocado; only cooked-vegetable salads and chicken-bacon sandwiches"
+      "kcal": 93,
+      "kcal_ref": "USDA FDC 2709832 cobb salad, no dressing",
+      "why": "dish-am: FNDDS Cobb salad, no dressing"
     },
     {
       "q": "chicken salad",
@@ -10111,7 +10845,11 @@
           "bls:X1A4010",
           "bls:X1A4000",
           "frida:1978",
-          "matvaretabellen:10.205"
+          "matvaretabellen:10.205",
+          "fdc:2706221",
+          "fdc:2706810",
+          "fdc:2706811",
+          "fdc:2706816"
         ]
       },
       "kcal": 136,
@@ -10125,7 +10863,11 @@
           "fdc:175160",
           "bls:X1A8060",
           "ciqual:25601",
-          "bls:X208240"
+          "bls:X208240",
+          "fdc:2706828",
+          "fdc:2706830",
+          "fdc:2706832",
+          "fdc:2706834"
         ]
       },
       "kcal": 187,
@@ -10138,7 +10880,11 @@
         "records": [
           "matvaretabellen:08.268",
           "matvaretabellen:08.130",
-          "bls:X1A5000"
+          "bls:X1A5000",
+          "fdc:2707182",
+          "fdc:2707184",
+          "fdc:2707186",
+          "fdc:2707188"
         ]
       },
       "kcal": 210,
@@ -10148,10 +10894,13 @@
     {
       "q": "deviled eggs",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707181"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched deviled eggs, stuffed eggs with mayonnaise; nothing returned"
+      "kcal": 198,
+      "kcal_ref": "USDA FDC 2707181 egg, deviled",
+      "why": "dish-am: FNDDS Egg, deviled"
     },
     {
       "q": "veggie burger",
@@ -10160,7 +10909,9 @@
           "matvaretabellen:06.705",
           "fdc:174287",
           "bls:Y9A1030",
-          "matvaretabellen:06.784"
+          "matvaretabellen:06.784",
+          "fdc:2707473",
+          "fdc:2707481"
         ]
       },
       "kcal": 189,
@@ -10176,7 +10927,9 @@
           "ciqual:25502",
           "ciqual:25643",
           "frida:1621",
-          "matvaretabellen:03.312"
+          "matvaretabellen:03.312",
+          "fdc:2707019",
+          "fdc:2707018"
         ]
       },
       "kcal": 235,
@@ -10199,10 +10952,14 @@
     {
       "q": "baked potato with sour cream",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709526",
+          "fdc:2709519"
+        ]
       },
-      "gap": true,
-      "why": "dish-am: searched baked potato with sour cream, potato baked topped with sour cream; only plain baked potato, herb-quark potato, gratin"
+      "kcal": 131,
+      "kcal_ref": "USDA FDC 2709526 potato, baked, peel eaten, with sour cream",
+      "why": "dish-am: FNDDS baked potato with sour cream, peel eaten or not"
     },
     {
       "q": "hummus",
@@ -10213,7 +10970,8 @@
           "fdc:172454",
           "bls:H960000",
           "ciqual:25621",
-          "matvaretabellen:06.679"
+          "matvaretabellen:06.679",
+          "fdc:2707402"
         ]
       },
       "kcal": 229,
@@ -10230,7 +10988,8 @@
           "ciqual:25590",
           "cofid:15-795",
           "matvaretabellen:06.817",
-          "matvaretabellen:06.783"
+          "matvaretabellen:06.783",
+          "fdc:2707408"
         ]
       },
       "kcal": 333,
@@ -10258,7 +11017,8 @@
       "expect": {
         "records": [
           "cofid:15-885",
-          "ciqual:25608"
+          "ciqual:25608",
+          "fdc:2709131"
         ]
       },
       "kcal": 119,
@@ -10276,10 +11036,13 @@
     {
       "q": "baba ganoush",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2710049"
+        ]
       },
-      "gap": true,
-      "why": "dish-me: searched baba ganoush, eggplant dip; only plain eggplant and other eggplant dishes"
+      "kcal": 183,
+      "kcal_ref": "USDA FDC 2710049 eggplant dip",
+      "why": "dish-me: FNDDS Eggplant dip (baba ghanoush)"
     },
     {
       "q": "shakshuka",
@@ -10337,25 +11100,35 @@
     {
       "q": "mujadara",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709030",
+          "fdc:2709029"
+        ]
       },
-      "gap": true,
-      "why": "dish-me: searched mujadara, lentils and rice with fried onions; only rice with onions/pilaf"
+      "kcal": 150,
+      "kcal_ref": "USDA FDC 2709030 rice, white, with lentils, fat added",
+      "why": "dish-me: FNDDS rice with lentils, fat added/NS (onions fried in oil); no-fat version excluded"
     },
     {
       "q": "kibbeh",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708716"
+        ]
       },
-      "gap": true,
-      "why": "dish-me: searched kibbeh, bulgur and minced meat croquettes; nothing returned"
+      "kcal": 168,
+      "kcal_ref": "USDA FDC 2708716 kibby, Puerto Rican style",
+      "why": "dish-me: FNDDS Kibby, Puerto Rican style = fried bulgur and meat kibbeh"
     },
     {
       "q": "stuffed grape leaves",
       "expect": {
         "records": [
           "cofid:15-823",
-          "ciqual:25217"
+          "ciqual:25217",
+          "fdc:2709064",
+          "fdc:2706621",
+          "fdc:2706659"
         ]
       },
       "kcal": 263,
@@ -10430,10 +11203,15 @@
     {
       "q": "menemen",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707229",
+          "fdc:2707231",
+          "bls:Y722243"
+        ]
       },
-      "gap": true,
-      "why": "dish-me: searched menemen, turkish scrambled eggs with tomatoes and peppers; nothing returned"
+      "kcal": 165,
+      "kcal_ref": "USDA FDC 2707229 egg omelet or scrambled egg, with tomatoes, fat added",
+      "why": "dish-me: scrambled eggs with tomatoes, fat added/NS (FNDDS) and BLS scrambled eggs fried with tomatoes; dark-green-veg variants excluded"
     },
     {
       "q": "iskender kebab",
@@ -10476,7 +11254,10 @@
           "cofid:17-808",
           "ciqual:25900",
           "cofid:17-698",
-          "matvaretabellen:10.228"
+          "matvaretabellen:10.228",
+          "fdc:2707462",
+          "fdc:2707460",
+          "fdc:2707461"
         ]
       },
       "kcal": 91,
@@ -10497,7 +11278,8 @@
         "records": [
           "bls:Y9A1060",
           "frida:1636",
-          "matvaretabellen:10.222"
+          "matvaretabellen:10.222",
+          "fdc:2707483"
         ]
       },
       "kcal": 156,
@@ -10534,7 +11316,9 @@
         "records": [
           "fdc:167659",
           "bls:X453023",
-          "fdc:173339"
+          "fdc:173339",
+          "fdc:2707110",
+          "fdc:2707109"
         ]
       },
       "kcal": 174,
@@ -10578,7 +11362,8 @@
           "cofid:19-568",
           "cofid:19-465",
           "cofid:19-534",
-          "frida:1980"
+          "frida:1980",
+          "fdc:2706437"
         ]
       },
       "kcal": 145,
@@ -10600,7 +11385,8 @@
           "cofid:15-760",
           "cofid:15-766",
           "cofid:15-765",
-          "cofid:15-641"
+          "cofid:15-641",
+          "fdc:2707427"
         ]
       },
       "kcal": 141,
@@ -10632,10 +11418,13 @@
     {
       "q": "palak paneer",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709631"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched palak paneer, spinach and paneer curry; only paneer alone and spinach-potato curry"
+      "kcal": 101,
+      "kcal_ref": "USDA FDC 2709631 palak Paneer",
+      "why": "dish-sa: FNDDS Palak Paneer"
     },
     {
       "q": "paneer tikka",
@@ -10649,7 +11438,8 @@
       "q": "chicken biryani",
       "expect": {
         "records": [
-          "cofid:19-454"
+          "cofid:19-454",
+          "fdc:2706538"
         ]
       },
       "kcal": 163,
@@ -10659,10 +11449,13 @@
     {
       "q": "vegetable biryani",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708985"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched vegetable biryani, biryani vegetable; only chicken/lamb biryani and unrelated vegetable dishes"
+      "kcal": 109,
+      "kcal_ref": "USDA FDC 2708985 biryani with vegetables",
+      "why": "dish-sa: FNDDS Biryani with vegetables"
     },
     {
       "q": "samosa",
@@ -10673,7 +11466,8 @@
           "ciqual:25108",
           "cofid:19-326",
           "cofid:19-596",
-          "cofid:19-597"
+          "cofid:19-597",
+          "fdc:2708730"
         ]
       },
       "kcal": 217,
@@ -10693,7 +11487,8 @@
           "cofid:15-830",
           "cofid:15-831",
           "cofid:15-832",
-          "cofid:11-1101"
+          "cofid:11-1101",
+          "fdc:2710066"
         ]
       },
       "kcal": 293,
@@ -10703,32 +11498,42 @@
     {
       "q": "dosa",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708347"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched dosa, rice and lentil crepe; only a dosa filling and lentil-rice roast"
+      "kcal": 210,
+      "kcal_ref": "USDA FDC 2708347 dosa, plain",
+      "why": "dish-sa: FNDDS Dosa, plain; filled dosa is masala dosa"
     },
     {
       "q": "masala dosa",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709129"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched masala dosa, dosa with potato filling; only the vegetable filling alone and vareniki"
+      "kcal": 184,
+      "kcal_ref": "USDA FDC 2709129 dosa, with filling",
+      "why": "dish-sa: FNDDS Dosa, with filling (potato masala); CoFID filling alone excluded"
     },
     {
       "q": "idli",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708346"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched idli, steamed rice cake; only steamed white rice"
+      "kcal": 128,
+      "kcal_ref": "USDA FDC 2708346 idli",
+      "why": "dish-sa: FNDDS Idli"
     },
     {
       "q": "sambar",
       "expect": {
         "records": [
-          "cofid:12-467"
+          "cofid:12-467",
+          "fdc:2707430"
         ]
       },
       "kcal": 49,
@@ -10857,10 +11662,13 @@
     {
       "q": "upma",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709128"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched upma, savory semolina porridge; only sweet semolina porridge"
+      "kcal": 87,
+      "kcal_ref": "USDA FDC 2709128 upma",
+      "why": "dish-sa: FNDDS Upma"
     },
     {
       "q": "poha",
@@ -10888,7 +11696,8 @@
           "cofid:16-364",
           "cofid:16-446",
           "cofid:16-462",
-          "bls:Y692423"
+          "bls:Y692423",
+          "fdc:2706460"
         ]
       },
       "kcal": 139,
@@ -10912,10 +11721,15 @@
     {
       "q": "keema",
       "expect": {
-        "records": []
+        "records": [
+          "cofid:19-587",
+          "cofid:19-480",
+          "cofid:19-593"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched keema, minced meat curry; only raw/fried mince and other mince dishes"
+      "kcal": 178,
+      "kcal_ref": "CoFID 19-480 kheema, lamb, homemade",
+      "why": "dish-sa: CoFID kheema beef/lamb homemade (retry)"
     },
     {
       "q": "nihari",
@@ -10952,7 +11766,8 @@
           "cofid:15-790",
           "cofid:15-619",
           "cofid:15-794",
-          "cofid:15-634"
+          "cofid:15-634",
+          "fdc:2710067"
         ]
       },
       "kcal": 90,
@@ -10985,10 +11800,13 @@
     {
       "q": "vada",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709130"
+        ]
       },
-      "gap": true,
-      "why": "dish-sa: searched vada, medu vada lentil fritter; nothing returned"
+      "kcal": 266,
+      "kcal_ref": "USDA FDC 2709130 vada",
+      "why": "dish-sa: FNDDS Vada"
     },
     {
       "q": "sushi",
@@ -11009,7 +11827,13 @@
           "matvaretabellen:04.334",
           "matvaretabellen:04.372",
           "matvaretabellen:04.371",
-          "matvaretabellen:04.336"
+          "matvaretabellen:04.336",
+          "fdc:2708959",
+          "fdc:2708965",
+          "fdc:2708960",
+          "fdc:2708962",
+          "fdc:2708963",
+          "fdc:2708964"
         ]
       },
       "kcal": 178.9,
@@ -11032,7 +11856,8 @@
       "q": "california roll",
       "expect": {
         "records": [
-          "matvaretabellen:04.368"
+          "matvaretabellen:04.368",
+          "fdc:2708961"
         ]
       },
       "kcal": 112,
@@ -11055,7 +11880,8 @@
       "expect": {
         "records": [
           "bls:X4A8060",
-          "ciqual:25972"
+          "ciqual:25972",
+          "fdc:2707455"
         ]
       },
       "kcal": 11,
@@ -11065,10 +11891,19 @@
     {
       "q": "ramen",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2709153",
+          "fdc:2709154",
+          "fdc:2709156",
+          "fdc:2709157",
+          "fdc:2709155",
+          "fdc:2709158",
+          "fdc:2709159"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched ramen, ramen noodle soup, ramen with pork and egg; only dry instant ramen packets, no ramen bowl"
+      "kcal": 127,
+      "kcal_ref": "USDA FDC 2709153 ramen bowl, NFS",
+      "why": "dish-ea: FNDDS ramen bowls (any topping); instant ramen (dry or water added) excluded"
     },
     {
       "q": "udon noodle soup",
@@ -11081,18 +11916,24 @@
     {
       "q": "shrimp tempura",
       "expect": {
-        "records": []
+        "records": [
+          "matvaretabellen:04.277"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched shrimp tempura, prawn tempura; nothing returned"
+      "kcal": 270,
+      "kcal_ref": "Matvaretabellen 04.277 shrimp, battered, pre-fried, fried in fat",
+      "why": "dish-ea: battered shrimp fried in fat (tempura = battered deep-fried shrimp); frozen pre-fried and breaded/platters excluded"
     },
     {
       "q": "chicken teriyaki",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706433"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched chicken teriyaki, teriyaki chicken; only teriyaki sub sandwiches, sauce, mixed rice bowl"
+      "kcal": 163,
+      "kcal_ref": "USDA FDC 2706433 chicken or turkey with teriyaki",
+      "why": "dish-ea: FNDDS Chicken or turkey with teriyaki; with-rice meal and sub excluded"
     },
     {
       "q": "katsu curry",
@@ -11116,10 +11957,15 @@
     {
       "q": "gyoza",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708705",
+          "fdc:2708708",
+          "fdc:169773"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched gyoza, pork dumplings potstickers; nothing returned"
+      "kcal": 192,
+      "kcal_ref": "USDA FDC 2708705 wonton, dumpling or pot sticker, fried",
+      "why": "dish-ea: FNDDS wonton/dumpling/pot sticker fried and steamed (meat), plus pork-vegetable potsticker frozen; best fried (gyoza is pan-fried)"
     },
     {
       "q": "onigiri",
@@ -11164,7 +12010,13 @@
           "fdc:334536",
           "bls:X891133",
           "cofid:11-885",
-          "cofid:11-444"
+          "cofid:11-444",
+          "fdc:2708952",
+          "fdc:2708951",
+          "fdc:2708955",
+          "fdc:2708953",
+          "fdc:2708954",
+          "fdc:2708956"
         ]
       },
       "kcal": 174,
@@ -11178,7 +12030,8 @@
           "cofid:11-444",
           "cofid:11-885",
           "fdc:334536",
-          "fdc:167668"
+          "fdc:167668",
+          "fdc:2708951"
         ]
       },
       "kcal": 174,
@@ -11192,7 +12045,14 @@
           "fdc:168083",
           "cofid:19-321",
           "cofid:19-519",
-          "cofid:19-614"
+          "cofid:19-614",
+          "fdc:2706607",
+          "fdc:2706687",
+          "fdc:2706722",
+          "fdc:2710069",
+          "fdc:2706724",
+          "fdc:2706648",
+          "fdc:2706712"
         ]
       },
       "kcal": 147,
@@ -11203,7 +12063,8 @@
       "q": "kung pao chicken",
       "expect": {
         "records": [
-          "fdc:167676"
+          "fdc:167676",
+          "fdc:2706796"
         ]
       },
       "kcal": 129,
@@ -11219,7 +12080,8 @@
           "cofid:19-668",
           "cofid:19-669",
           "cofid:19-304",
-          "cofid:19-485"
+          "cofid:19-485",
+          "fdc:2706401"
         ]
       },
       "kcal": 270,
@@ -11237,10 +12099,13 @@
     {
       "q": "peking duck",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706141"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched peking duck, roast duck, chinese roast duck; only plain roast duck meat (main ingredient alone)"
+      "kcal": 154,
+      "kcal_ref": "USDA FDC 2706141 duck, Peking",
+      "why": "dish-ea: FNDDS Duck, Peking; plain roast duck records stay out (main ingredient alone)"
     },
     {
       "q": "char siu",
@@ -11264,10 +12129,13 @@
     {
       "q": "pork dumplings",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:169773"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched pork dumplings, jiaozi, gyoza; only European dumplings and an unspecified Chinese dumpling record"
+      "kcal": 136,
+      "kcal_ref": "USDA FDC 169773 potsticker or wonton, pork and vegetable, frozen, unprepared",
+      "why": "dish-ea: pork-vegetable potsticker/wonton, frozen unprepared, only acceptable record (cooked FNDDS ones not reached by this query's searches); unspecified Chinese dumpling record stays out"
     },
     {
       "q": "spring rolls",
@@ -11292,7 +12160,8 @@
       "q": "wonton soup",
       "expect": {
         "records": [
-          "fdc:171821"
+          "fdc:171821",
+          "fdc:2709160"
         ]
       },
       "kcal": 32,
@@ -11303,7 +12172,8 @@
       "q": "hot and sour soup",
       "expect": {
         "records": [
-          "fdc:174808"
+          "fdc:174808",
+          "fdc:2707136"
         ]
       },
       "kcal": 39,
@@ -11313,10 +12183,17 @@
     {
       "q": "congee",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708418",
+          "fdc:2708984",
+          "fdc:2708983",
+          "fdc:2708981",
+          "fdc:2708982"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched congee, rice porridge, rice gruel; only conger eel and sweet milk rice porridge"
+      "kcal": 39,
+      "kcal_ref": "USDA FDC 2708418 congee",
+      "why": "dish-ea: FNDDS congee, plain and with egg/meat/vegetables (all congee); best plain congee"
     },
     {
       "q": "soup dumplings",
@@ -11348,10 +12225,13 @@
     {
       "q": "bibimbap",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708950"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched bibimbap, korean mixed rice, rice bowl with vegetables and egg; nothing"
+      "kcal": 76,
+      "kcal_ref": "USDA FDC 2708950 bibimbap, Korean",
+      "why": "dish-ea: FNDDS Bibimbap, Korean"
     },
     {
       "q": "bulgogi",
@@ -11380,10 +12260,13 @@
     {
       "q": "tteokbokki",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708957"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched tteokbokki, rice cakes in spicy sauce, korean rice cake; nothing"
+      "kcal": 131,
+      "kcal_ref": "USDA FDC 2708957 dukboki or Tteokbokki, Korean",
+      "why": "dish-ea: FNDDS Dukboki or Tteokbokki, Korean"
     },
     {
       "q": "kimchi stew",
@@ -11396,10 +12279,14 @@
     {
       "q": "pho",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707125",
+          "fdc:2707124"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched pho, vietnamese noodle soup, pho bo; nothing"
+      "kcal": 77,
+      "kcal_ref": "USDA FDC 2707124 soup, pho, with meat",
+      "why": "dish-ea: FNDDS soup pho with and without meat; best with meat (typical pho)"
     },
     {
       "q": "banh mi",
@@ -11428,7 +12315,12 @@
       "expect": {
         "records": [
           "frida:1979",
-          "matvaretabellen:10.224"
+          "matvaretabellen:10.224",
+          "fdc:2708806",
+          "fdc:2708808",
+          "fdc:2708807",
+          "fdc:2708804",
+          "fdc:2708805"
         ]
       },
       "kcal": 168.1,
@@ -11555,7 +12447,8 @@
       "q": "orange chicken",
       "expect": {
         "records": [
-          "fdc:167679"
+          "fdc:167679",
+          "fdc:2706443"
         ]
       },
       "kcal": 262,
@@ -11566,7 +12459,8 @@
       "q": "general tso's chicken",
       "expect": {
         "records": [
-          "fdc:167675"
+          "fdc:167675",
+          "fdc:2706794"
         ]
       },
       "kcal": 295,
@@ -11576,10 +12470,13 @@
     {
       "q": "beef and broccoli",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706738"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched beef and broccoli, beef with broccoli, chinese beef broccoli stir fry; nothing"
+      "kcal": 160,
+      "kcal_ref": "USDA FDC 2706738 beef and broccoli",
+      "why": "dish-ea: FNDDS Beef and broccoli"
     },
     {
       "q": "chicken stir fry",
@@ -11601,7 +12498,9 @@
           "cofid:15-344",
           "cofid:15-661",
           "cofid:15-345",
-          "cofid:13-604"
+          "cofid:13-604",
+          "fdc:2710036",
+          "fdc:2710035"
         ]
       },
       "kcal": 52,
@@ -11627,7 +12526,11 @@
           "ciqual:25674",
           "ciqual:25582",
           "ciqual:25583",
-          "ciqual:25584"
+          "ciqual:25584",
+          "fdc:2708700",
+          "fdc:2708702",
+          "fdc:2708703",
+          "fdc:2708701"
         ]
       },
       "kcal": 250,
@@ -11649,10 +12552,13 @@
     {
       "q": "beef pho",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2707124"
+        ]
       },
-      "gap": true,
-      "why": "dish-ea: searched beef pho, pho bo, vietnamese beef noodle soup; only canned US beef noodle soup"
+      "kcal": 77,
+      "kcal_ref": "USDA FDC 2707124 soup, pho, with meat",
+      "why": "dish-ea: FNDDS Soup, pho, with meat (beef pho); no-meat pho stays out"
     },
     {
       "q": "jollof rice",
@@ -11667,7 +12573,8 @@
       "expect": {
         "records": [
           "cofid:15-806",
-          "cofid:15-807"
+          "cofid:15-807",
+          "fdc:2709568"
         ]
       },
       "kcal": 155,
@@ -11777,10 +12684,13 @@
     {
       "q": "harira",
       "expect": {
-        "records": []
+        "records": [
+          "ciqual:25924"
+        ]
       },
-      "gap": true,
-      "why": "dish-af: searched harira, moroccan soup, lentil and chickpea soup; only branded/dehydrated 'Moroccan' soups not named harira"
+      "kcal": 39.9,
+      "kcal_ref": "CIQUAL 2025, 25924 soup, Moroccan, dehydrated and reconstituted",
+      "why": "dish-af: CIQUAL 'Soupe marocaine' reconstituted = harira-style lentil/chickpea/tomato soup; branded SMART SOUP chickpea soup not clearly harira"
     },
     {
       "q": "koshari",
@@ -11869,10 +12779,13 @@
     {
       "q": "thieboudienne",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706573"
+        ]
       },
-      "gap": true,
-      "why": "dish-af: searched thieboudienne, ceebu jen, fish and rice; nothing"
+      "kcal": 135,
+      "kcal_ref": "USDA FDC 2706573 fish and rice with tomato-based sauce",
+      "why": "dish-af: FNDDS fish and rice with tomato-based sauce = ceebu jen composition (fish, rice, tomato)"
     },
     {
       "q": "borscht",
@@ -11880,7 +12793,8 @@
         "records": [
           "recipe:borscht",
           "recipe:borscht.ru",
-          "bls:X469033"
+          "bls:X469033",
+          "fdc:2710105"
         ]
       },
       "kcal": 47,
@@ -12049,7 +12963,8 @@
       "q": "beef stroganoff",
       "expect": {
         "records": [
-          "cofid:19-551"
+          "cofid:19-551",
+          "fdc:2706382"
         ]
       },
       "kcal": 171,
@@ -12059,10 +12974,13 @@
     {
       "q": "chicken kiev",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2706445"
+        ]
       },
-      "gap": true,
-      "why": "dish-ca: searched chicken kiev, chicken kyiv, breaded chicken with garlic butter; only plain chicken items"
+      "kcal": 280,
+      "kcal_ref": "USDA FDC 2706445 chicken kiev",
+      "why": "dish-ca: FNDDS chicken kiev"
     },
     {
       "q": "buckwheat porridge",
@@ -12145,7 +13063,8 @@
           "bls:X655032",
           "bls:K260262",
           "bls:K260292",
-          "bls:K260282"
+          "bls:K260282",
+          "fdc:2709552"
         ]
       },
       "kcal": 268,
@@ -12226,7 +13145,8 @@
           "ciqual:31074",
           "matvaretabellen:09.133",
           "matvaretabellen:09.176",
-          "fdc:169592"
+          "fdc:169592",
+          "fdc:2710336"
         ]
       },
       "kcal": 579,
@@ -12241,7 +13161,8 @@
           "bls:S580000",
           "ciqual:31010",
           "cofid:17-091",
-          "matvaretabellen:09.134"
+          "matvaretabellen:09.134",
+          "fdc:2710339"
         ]
       },
       "kcal": 539,
@@ -12287,7 +13208,8 @@
           "bls:D461200",
           "ciqual:23001",
           "cofid:12-562",
-          "matvaretabellen:05.205"
+          "matvaretabellen:05.205",
+          "fdc:2707861"
         ]
       },
       "kcal": 321,
@@ -12303,7 +13225,8 @@
           "bls:D4A8400",
           "bls:D312700",
           "matvaretabellen:05.210",
-          "matvaretabellen:05.321"
+          "matvaretabellen:05.321",
+          "fdc:2707859"
         ]
       },
       "kcal": 346,
@@ -12320,7 +13243,8 @@
           "bls:D086000",
           "ciqual:23050",
           "cofid:11-957",
-          "cofid:11-956"
+          "cofid:11-956",
+          "fdc:2707886"
         ]
       },
       "kcal": 294,
@@ -12341,7 +13265,8 @@
           "ciqual:23082",
           "frida:359",
           "matvaretabellen:05.091",
-          "matvaretabellen:05.320"
+          "matvaretabellen:05.320",
+          "fdc:2707882"
         ]
       },
       "kcal": 353,
@@ -12360,7 +13285,9 @@
           "cofid:11-1025",
           "cofid:11-920",
           "cofid:11-921",
-          "matvaretabellen:05.131"
+          "matvaretabellen:05.131",
+          "fdc:2707995",
+          "fdc:2707996"
         ]
       },
       "kcal": 237,
@@ -12372,7 +13299,8 @@
       "expect": {
         "records": [
           "fdc:172787",
-          "fdc:172788"
+          "fdc:172788",
+          "fdc:2708011"
         ]
       },
       "kcal": 243,
@@ -12388,7 +13316,9 @@
           "bls:D4A2000",
           "ciqual:23032",
           "ciqual:23031",
-          "cofid:11-1127"
+          "cofid:11-1127",
+          "fdc:2707904",
+          "fdc:2707903"
         ]
       },
       "kcal": 405,
@@ -12409,7 +13339,8 @@
           "fdc:175071",
           "bls:D7A2000",
           "cofid:11-816",
-          "cofid:11-815"
+          "cofid:11-815",
+          "fdc:2707909"
         ]
       },
       "kcal": 492,
@@ -12428,7 +13359,9 @@
           "fdc:174963",
           "fdc:175074",
           "fdc:175075",
-          "frida:1575"
+          "frida:1575",
+          "fdc:2707945",
+          "fdc:2707946"
         ]
       },
       "kcal": 450,
@@ -12443,7 +13376,8 @@
           "bls:D630400",
           "ciqual:24049",
           "ciqual:24071",
-          "cofid:11-802"
+          "cofid:11-802",
+          "fdc:2707964"
         ]
       },
       "kcal": 514,
@@ -12467,7 +13401,8 @@
         "records": [
           "cofid:12-476",
           "ciqual:19698",
-          "bls:Y8D5010"
+          "bls:Y8D5010",
+          "fdc:2705702"
         ]
       },
       "kcal": 244,
@@ -12491,7 +13426,8 @@
       "q": "creme brulee",
       "expect": {
         "records": [
-          "bls:Y8A5000"
+          "bls:Y8A5000",
+          "fdc:2705684"
         ]
       },
       "kcal": 351,
@@ -12524,7 +13460,8 @@
           "matvaretabellen:05.295",
           "ciqual:19684",
           "ciqual:39505",
-          "ciqual:39214"
+          "ciqual:39214",
+          "fdc:2705682"
         ]
       },
       "kcal": 114,
@@ -12540,7 +13477,8 @@
           "ciqual:39212",
           "cofid:12-580",
           "cofid:12-514",
-          "cofid:12-608"
+          "cofid:12-608",
+          "fdc:2705685"
         ]
       },
       "kcal": 146,
@@ -12557,7 +13495,8 @@
           "frida:1929",
           "frida:1930",
           "frida:1931",
-          "matvaretabellen:01.308"
+          "matvaretabellen:01.308",
+          "fdc:2705630"
         ]
       },
       "kcal": 194,
@@ -12573,7 +13512,8 @@
           "bls:S242000",
           "bls:Y993240",
           "bls:Y996340",
-          "frida:1921"
+          "frida:1921",
+          "fdc:2705632"
         ]
       },
       "kcal": 216,
@@ -12590,7 +13530,9 @@
           "bls:Y996510",
           "frida:1924",
           "ciqual:39515",
-          "bls:Y999140"
+          "bls:Y999140",
+          "fdc:2705629",
+          "fdc:2705630"
         ]
       },
       "kcal": 194,
@@ -12607,7 +13549,12 @@
           "fdc:168815",
           "fdc:170908",
           "ciqual:39517",
-          "bls:S221700"
+          "bls:S221700",
+          "fdc:2705451",
+          "fdc:2705452",
+          "fdc:2705453",
+          "fdc:2705454",
+          "fdc:2705455"
         ]
       },
       "kcal": 127,
@@ -12624,7 +13571,8 @@
           "ciqual:39525",
           "ciqual:31013",
           "cofid:12-393",
-          "frida:1927"
+          "frida:1927",
+          "fdc:2709314"
         ]
       },
       "kcal": 122,
@@ -12635,7 +13583,8 @@
       "q": "gummy candy",
       "expect": {
         "records": [
-          "fdc:167989"
+          "fdc:167989",
+          "fdc:2710359"
         ]
       },
       "kcal": 396,
@@ -12650,7 +13599,8 @@
           "bls:S311000",
           "ciqual:31124",
           "ciqual:31059",
-          "ciqual:31094"
+          "ciqual:31094",
+          "fdc:2710360"
         ]
       },
       "kcal": 394,
@@ -12666,7 +13616,8 @@
           "ciqual:31050",
           "frida:987",
           "matvaretabellen:09.127",
-          "cofid:17-114"
+          "cofid:17-114",
+          "fdc:2710353"
         ]
       },
       "kcal": 318,
@@ -12693,7 +13644,8 @@
         "records": [
           "fdc:167987",
           "fdc:167579",
-          "cofid:17-683"
+          "cofid:17-683",
+          "fdc:2710340"
         ]
       },
       "kcal": 410,
@@ -12704,7 +13656,8 @@
       "q": "gelatin dessert",
       "expect": {
         "records": [
-          "fdc:169596"
+          "fdc:169596",
+          "fdc:2710310"
         ]
       },
       "kcal": 60,
@@ -12717,7 +13670,8 @@
         "records": [
           "cofid:11-842",
           "ciqual:23300",
-          "bls:D702000"
+          "bls:D702000",
+          "fdc:2708044"
         ]
       },
       "kcal": 456,
@@ -12767,24 +13721,32 @@
     {
       "q": "mochi",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708345"
+        ]
       },
-      "gap": true,
-      "why": "sweets: searched mochi, daifuku, glutinous rice cake; only glutinous rice flour and mocha items"
+      "kcal": 279,
+      "kcal_ref": "USDA FDC 2708345 cake made with glutinous rice",
+      "why": "sweets: FNDDS cake made with glutinous rice = plain mochi; bean-filled variant (daifuku) excluded"
     },
     {
       "q": "churros",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2708070"
+        ]
       },
-      "gap": true,
-      "why": "sweets: searched churros, churro, spanish fried dough; nothing"
+      "kcal": 419,
+      "kcal_ref": "USDA FDC 2708070 churros",
+      "why": "sweets: FNDDS churros"
     },
     {
       "q": "cupcake",
       "expect": {
         "records": [
-          "matvaretabellen:05.346"
+          "matvaretabellen:05.346",
+          "fdc:2707853",
+          "fdc:2707891"
         ]
       },
       "kcal": 375,
@@ -12799,7 +13761,10 @@
           "bls:D720300",
           "ciqual:23477",
           "cofid:11-844",
-          "cofid:11-1064"
+          "cofid:11-1064",
+          "fdc:2708031",
+          "fdc:2708030",
+          "fdc:2708029"
         ]
       },
       "kcal": 334,
@@ -12814,7 +13779,8 @@
           "bls:D4A1000",
           "bls:D483400",
           "bls:D540200",
-          "bls:D540100"
+          "bls:D540100",
+          "fdc:2708039"
         ]
       },
       "kcal": 274,
@@ -12826,7 +13792,8 @@
       "expect": {
         "records": [
           "bls:D300600",
-          "ciqual:23006"
+          "ciqual:23006",
+          "fdc:2707857"
         ]
       },
       "kcal": 258,
@@ -12851,7 +13818,9 @@
           "bls:C546000",
           "ciqual:38417",
           "cofid:17-644",
-          "matvaretabellen:12.017"
+          "matvaretabellen:12.017",
+          "fdc:2708202",
+          "fdc:2708212"
         ]
       },
       "kcal": 472,
@@ -12870,7 +13839,12 @@
           "bls:C533000",
           "cofid:17-692",
           "matvaretabellen:12.012",
-          "matvaretabellen:12.028"
+          "matvaretabellen:12.028",
+          "fdc:2708216",
+          "fdc:2708223",
+          "fdc:2708224",
+          "fdc:2708231",
+          "fdc:2708232"
         ]
       },
       "kcal": 500,
@@ -12895,7 +13869,8 @@
         "records": [
           "fdc:167542",
           "fdc:169063",
-          "frida:1591"
+          "frida:1591",
+          "fdc:2708101"
         ]
       },
       "kcal": 471,
@@ -12906,7 +13881,9 @@
       "q": "protein bar",
       "expect": {
         "records": [
-          "fdc:173158"
+          "fdc:173158",
+          "fdc:2708122",
+          "fdc:2708124"
         ]
       },
       "kcal": 412,
@@ -12918,7 +13895,8 @@
       "expect": {
         "records": [
           "fdc:173161",
-          "fdc:167966"
+          "fdc:167966",
+          "fdc:2708163"
         ]
       },
       "kcal": 416,
@@ -12931,7 +13909,8 @@
         "records": [
           "fdc:169060",
           "ciqual:31127",
-          "cofid:17-814"
+          "cofid:17-814",
+          "fdc:2710355"
         ]
       },
       "kcal": 398,
@@ -12960,7 +13939,8 @@
       "expect": {
         "records": [
           "fdc:175021",
-          "fdc:172786"
+          "fdc:172786",
+          "fdc:2708015"
         ]
       },
       "kcal": 407,
@@ -12971,7 +13951,8 @@
       "q": "key lime pie",
       "expect": {
         "records": [
-          "matvaretabellen:10.201"
+          "matvaretabellen:10.201",
+          "fdc:2708001"
         ]
       },
       "kcal": 425,
@@ -13016,7 +13997,10 @@
           "bls:Y861753",
           "bls:R481232",
           "matvaretabellen:01.020",
-          "matvaretabellen:10.006"
+          "matvaretabellen:10.006",
+          "fdc:2705679",
+          "fdc:2705694",
+          "fdc:2705689"
         ]
       },
       "kcal": 142,
@@ -13029,7 +14013,8 @@
         "records": [
           "ciqual:31081",
           "bls:S332000",
-          "matvaretabellen:09.013"
+          "matvaretabellen:09.013",
+          "fdc:2710354"
         ]
       },
       "kcal": 415,
@@ -13063,7 +14048,8 @@
       "expect": {
         "records": [
           "ciqual:31059",
-          "ciqual:31124"
+          "ciqual:31124",
+          "fdc:2710361"
         ]
       },
       "kcal": 384,
@@ -13076,7 +14062,8 @@
         "records": [
           "ciqual:23000",
           "bls:D440300",
-          "frida:359"
+          "frida:359",
+          "fdc:2707882"
         ]
       },
       "kcal": 410,
@@ -13125,10 +14112,13 @@
     {
       "q": "red bean paste",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2710309"
+        ]
       },
-      "gap": true,
-      "why": "sweets: searched red bean paste, sweet red bean paste, anko; only miso"
+      "kcal": 226,
+      "kcal_ref": "USDA FDC 2710309 bean paste, sweetened",
+      "why": "sweets: FNDDS bean paste, sweetened = anko"
     },
     {
       "q": "water",
@@ -13140,7 +14130,9 @@
           "ciqual:18430",
           "ciqual:18066",
           "frida:1860",
-          "matvaretabellen:13.033"
+          "matvaretabellen:13.033",
+          "fdc:2710707",
+          "fdc:2710706"
         ]
       },
       "kcal": 0,
@@ -13187,7 +14179,10 @@
           "bls:N410100",
           "frida:142",
           "matvaretabellen:13.009",
-          "matvaretabellen:13.142"
+          "matvaretabellen:13.142",
+          "fdc:2710375",
+          "fdc:2710452",
+          "fdc:2710376"
         ]
       },
       "kcal": 1,
@@ -13202,7 +14197,9 @@
           "fdc:174125",
           "bls:N411100",
           "ciqual:18071",
-          "matvaretabellen:13.069"
+          "matvaretabellen:13.069",
+          "fdc:2710378",
+          "fdc:2710379"
         ]
       },
       "kcal": 9,
@@ -13218,7 +14215,9 @@
           "matvaretabellen:13.039",
           "matvaretabellen:13.135",
           "ciqual:18151",
-          "cofid:17-632"
+          "cofid:17-632",
+          "fdc:2710472",
+          "fdc:2710475"
         ]
       },
       "kcal": 50,
@@ -13233,7 +14232,9 @@
           "matvaretabellen:13.040",
           "matvaretabellen:13.041",
           "matvaretabellen:13.141",
-          "cofid:17-632"
+          "cofid:17-632",
+          "fdc:2710386",
+          "fdc:2710392"
         ]
       },
       "kcal": 50,
@@ -13244,7 +14245,11 @@
       "q": "iced coffee",
       "expect": {
         "records": [
-          "matvaretabellen:13.120"
+          "matvaretabellen:13.120",
+          "fdc:2710431",
+          "fdc:2710428",
+          "fdc:2710437",
+          "fdc:2710429"
         ]
       },
       "kcal": 59,
@@ -13292,7 +14297,8 @@
       "q": "chamomile tea",
       "expect": {
         "records": [
-          "fdc:174156"
+          "fdc:174156",
+          "fdc:2710505"
         ]
       },
       "kcal": 1,
@@ -13303,7 +14309,8 @@
       "q": "tea with milk",
       "expect": {
         "records": [
-          "bls:N630200"
+          "bls:N630200",
+          "fdc:2710506"
         ]
       },
       "kcal": 2,
@@ -13323,7 +14330,10 @@
       "expect": {
         "records": [
           "matvaretabellen:01.309",
-          "matvaretabellen:01.310"
+          "matvaretabellen:01.310",
+          "fdc:2705472",
+          "fdc:2705473",
+          "fdc:2705484"
         ]
       },
       "kcal": 159,
@@ -13345,7 +14355,8 @@
           "cofid:14-369",
           "frida:1863",
           "matvaretabellen:06.682",
-          "matvaretabellen:06.568"
+          "matvaretabellen:06.568",
+          "fdc:2709186"
         ]
       },
       "kcal": 47,
@@ -13363,7 +14374,9 @@
           "frida:194",
           "matvaretabellen:06.571",
           "frida:1866",
-          "bls:F110600"
+          "bls:F110600",
+          "fdc:2709320",
+          "fdc:2709321"
         ]
       },
       "kcal": 48.9,
@@ -13387,7 +14400,9 @@
           "ciqual:2016",
           "cofid:17-745",
           "frida:407",
-          "matvaretabellen:06.728"
+          "matvaretabellen:06.728",
+          "fdc:2709325",
+          "fdc:2709326"
         ]
       },
       "kcal": 60,
@@ -13406,7 +14421,9 @@
           "ciqual:2032",
           "cofid:13-382",
           "frida:1869",
-          "matvaretabellen:06.071"
+          "matvaretabellen:06.071",
+          "fdc:2709728",
+          "fdc:2709729"
         ]
       },
       "kcal": 17,
@@ -13424,7 +14441,9 @@
           "fdc:173654",
           "ciqual:2381",
           "matvaretabellen:06.777",
-          "cofid:17-744"
+          "cofid:17-744",
+          "fdc:2709324",
+          "fdc:2710579"
         ]
       },
       "kcal": 46,
@@ -13459,7 +14478,8 @@
           "ciqual:18018",
           "ciqual:18067",
           "cofid:17-175",
-          "matvaretabellen:13.045"
+          "matvaretabellen:13.045",
+          "fdc:2710541"
         ]
       },
       "kcal": 42,
@@ -13472,7 +14492,9 @@
         "records": [
           "cofid:17-505",
           "matvaretabellen:13.047",
-          "fdc:174825"
+          "fdc:174825",
+          "fdc:2710542",
+          "fdc:2710544"
         ]
       },
       "kcal": 1,
@@ -13485,7 +14507,8 @@
         "records": [
           "fdc:171869",
           "cofid:17-736",
-          "matvaretabellen:13.043"
+          "matvaretabellen:13.043",
+          "fdc:2710538"
         ]
       },
       "kcal": 34,
@@ -13505,7 +14528,16 @@
           "ciqual:18352",
           "cofid:17-672",
           "frida:2384",
-          "matvaretabellen:13.064"
+          "matvaretabellen:13.064",
+          "fdc:2710756",
+          "fdc:2710751",
+          "fdc:2710755",
+          "fdc:2710747",
+          "fdc:2710749",
+          "fdc:2710753",
+          "fdc:2710752",
+          "fdc:2710746",
+          "fdc:2710748"
         ]
       },
       "kcal": 45,
@@ -13517,7 +14549,10 @@
       "expect": {
         "records": [
           "ciqual:18348",
-          "ciqual:18349"
+          "ciqual:18349",
+          "fdc:2710771",
+          "fdc:2710770",
+          "fdc:2710769"
         ]
       },
       "kcal": 21.7,
@@ -13531,7 +14566,14 @@
           "matvaretabellen:13.071",
           "matvaretabellen:13.150",
           "matvaretabellen:13.151",
-          "bls:N019000"
+          "bls:N019000",
+          "fdc:2710527",
+          "fdc:2710533",
+          "fdc:2710517",
+          "fdc:2710523",
+          "fdc:2710531",
+          "fdc:2710535",
+          "fdc:2710528"
         ]
       },
       "kcal": 29,
@@ -13559,7 +14601,12 @@
           "matvaretabellen:13.113",
           "matvaretabellen:13.117",
           "matvaretabellen:13.105",
-          "matvaretabellen:13.106"
+          "matvaretabellen:13.106",
+          "fdc:2705513",
+          "fdc:2709339",
+          "fdc:2709334",
+          "fdc:2705514",
+          "fdc:2709336"
         ]
       },
       "kcal": 54.2,
@@ -13570,7 +14617,9 @@
       "q": "protein shake",
       "expect": {
         "records": [
-          "fdc:173170"
+          "fdc:173170",
+          "fdc:2710726",
+          "fdc:2710724"
         ]
       },
       "kcal": 61,
@@ -13638,7 +14687,8 @@
           "bls:P167000",
           "bls:P150000",
           "ciqual:5009",
-          "ciqual:5000"
+          "ciqual:5000",
+          "fdc:2710616"
         ]
       },
       "kcal": 38,
@@ -13653,7 +14703,8 @@
           "bls:P163100",
           "bls:P151110",
           "ciqual:5030",
-          "matvaretabellen:13.026"
+          "matvaretabellen:13.026",
+          "fdc:2710610"
         ]
       },
       "kcal": 37,
@@ -13673,7 +14724,8 @@
           "frida:213",
           "matvaretabellen:13.017",
           "matvaretabellen:13.059",
-          "matvaretabellen:13.060"
+          "matvaretabellen:13.060",
+          "fdc:2710688"
         ]
       },
       "kcal": 75.7,
@@ -13696,7 +14748,8 @@
           "frida:167",
           "frida:164",
           "frida:173",
-          "frida:232"
+          "frida:232",
+          "fdc:2710689"
         ]
       },
       "kcal": 75,
@@ -13713,7 +14766,8 @@
           "bls:P2B1000",
           "ciqual:5216",
           "cofid:17-754",
-          "frida:206"
+          "frida:206",
+          "fdc:2710690"
         ]
       },
       "kcal": 64,
@@ -13731,7 +14785,8 @@
           "bls:P2A7100",
           "bls:P2A7000",
           "ciqual:5201",
-          "frida:246"
+          "frida:246",
+          "fdc:2710687"
         ]
       },
       "kcal": 84,
@@ -13744,7 +14799,8 @@
         "records": [
           "bls:P712000",
           "ciqual:1008",
-          "frida:258"
+          "frida:258",
+          "fdc:2710704"
         ]
       },
       "kcal": 225,
@@ -13757,7 +14813,8 @@
         "records": [
           "bls:P733000",
           "ciqual:1005",
-          "frida:286"
+          "frida:286",
+          "fdc:2710700"
         ]
       },
       "kcal": 231,
@@ -13770,7 +14827,8 @@
         "records": [
           "bls:P741000",
           "ciqual:1004",
-          "frida:325"
+          "frida:325",
+          "fdc:2710703"
         ]
       },
       "kcal": 214,
@@ -13783,7 +14841,8 @@
         "records": [
           "bls:P722000",
           "ciqual:1002",
-          "frida:313"
+          "frida:313",
+          "fdc:2710702"
         ]
       },
       "kcal": 246,
@@ -13794,7 +14853,8 @@
       "q": "tequila",
       "expect": {
         "records": [
-          "bls:P7A4000"
+          "bls:P7A4000",
+          "fdc:2710705"
         ]
       },
       "kcal": 234,
@@ -13823,7 +14883,8 @@
           "cofid:17-222",
           "cofid:17-822",
           "cofid:17-224",
-          "matvaretabellen:13.063"
+          "matvaretabellen:13.063",
+          "fdc:2710621"
         ]
       },
       "kcal": 36.5,
@@ -13837,7 +14898,8 @@
           "fdc:170174",
           "fdc:174831",
           "bls:H151000",
-          "ciqual:18011"
+          "ciqual:18011",
+          "fdc:2707572"
         ]
       },
       "kcal": 19,
@@ -13848,7 +14910,8 @@
       "q": "kombucha",
       "expect": {
         "records": [
-          "ciqual:18025"
+          "ciqual:18025",
+          "fdc:2710509"
         ]
       },
       "kcal": 6.6,
@@ -13859,7 +14922,9 @@
       "q": "horchata",
       "expect": {
         "records": [
-          "fdc:171941"
+          "fdc:171941",
+          "fdc:2710603",
+          "fdc:2710602"
         ]
       },
       "kcal": 54,
@@ -13869,10 +14934,13 @@
     {
       "q": "bubble tea",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2710508"
+        ]
       },
-      "gap": true,
-      "why": "drinks: searched bubble tea, boba milk tea, tapioca pearl milk tea; only dry tapioca pearls and bubble and squeak"
+      "kcal": 55,
+      "kcal_ref": "USDA FDC 2710508 tea, bubble",
+      "why": "drinks: FNDDS tea, bubble"
     },
     {
       "q": "coffee with milk",
@@ -13910,7 +14978,8 @@
           "matvaretabellen:08.019",
           "cofid:17-038",
           "matvaretabellen:08.112",
-          "ciqual:17270"
+          "ciqual:17270",
+          "fdc:2710186"
         ]
       },
       "kcal": 884,
@@ -13929,7 +14998,8 @@
           "ciqual:17440",
           "frida:1382",
           "matvaretabellen:08.106",
-          "cofid:17-045"
+          "cofid:17-045",
+          "fdc:2710192"
         ]
       },
       "kcal": 884,
@@ -13942,7 +15012,8 @@
         "records": [
           "ciqual:17001",
           "cofid:17-686",
-          "fdc:172370"
+          "fdc:172370",
+          "fdc:2710180"
         ]
       },
       "kcal": 899,
@@ -13961,7 +15032,8 @@
           "frida:1440",
           "cofid:17-031",
           "fdc:171412",
-          "matvaretabellen:08.001"
+          "matvaretabellen:08.001",
+          "fdc:2710182"
         ]
       },
       "kcal": 833,
@@ -13999,7 +15071,10 @@
           "matvaretabellen:08.239",
           "matvaretabellen:08.221",
           "matvaretabellen:08.260",
-          "matvaretabellen:08.228"
+          "matvaretabellen:08.228",
+          "fdc:2710158",
+          "fdc:2710159",
+          "fdc:2710160"
         ]
       },
       "kcal": 741.6,
@@ -14015,7 +15090,8 @@
           "ciqual:16520",
           "cofid:17-010",
           "frida:79",
-          "frida:78"
+          "frida:78",
+          "fdc:2710166"
         ]
       },
       "kcal": 902,
@@ -14028,7 +15104,8 @@
         "records": [
           "bls:X341040",
           "cofid:17-809",
-          "frida:1964"
+          "frida:1964",
+          "fdc:2710204"
         ]
       },
       "kcal": 719,
@@ -14044,7 +15121,9 @@
           "ciqual:11008",
           "cofid:17-709",
           "frida:1262",
-          "matvaretabellen:06.079"
+          "matvaretabellen:06.079",
+          "fdc:2709733",
+          "fdc:2709734"
         ]
       },
       "kcal": 117,
@@ -14062,7 +15141,8 @@
           "ciqual:11021",
           "cofid:17-364",
           "cofid:17-365",
-          "matvaretabellen:12.008"
+          "matvaretabellen:12.008",
+          "fdc:2710085"
         ]
       },
       "kcal": 151,
@@ -14082,7 +15162,9 @@
           "ciqual:11104",
           "cofid:17-721",
           "frida:92",
-          "matvaretabellen:10.126"
+          "matvaretabellen:10.126",
+          "fdc:2707442",
+          "fdc:2707443"
         ]
       },
       "kcal": 53,
@@ -14132,7 +15214,8 @@
           "ciqual:11100",
           "cofid:17-705",
           "cofid:17-769",
-          "frida:459"
+          "frida:459",
+          "fdc:2709750"
         ]
       },
       "kcal": 172,
@@ -14168,7 +15251,8 @@
           "cofid:17-622",
           "frida:1958",
           "matvaretabellen:06.143",
-          "matvaretabellen:06.144"
+          "matvaretabellen:06.144",
+          "fdc:2710175"
         ]
       },
       "kcal": 418,
@@ -14181,7 +15265,11 @@
         "records": [
           "fdc:174524",
           "fdc:746777",
-          "matvaretabellen:06.202"
+          "matvaretabellen:06.202",
+          "fdc:2709736",
+          "fdc:2709738",
+          "fdc:2709739",
+          "fdc:2709737"
         ]
       },
       "kcal": 29,
@@ -14195,7 +15283,9 @@
           "cofid:17-797",
           "bls:X389000",
           "ciqual:25620",
-          "matvaretabellen:06.672"
+          "matvaretabellen:06.672",
+          "fdc:2709307",
+          "fdc:2709308"
         ]
       },
       "kcal": 128,
@@ -14209,7 +15299,8 @@
           "cofid:12-547",
           "ciqual:19863",
           "ciqual:19864",
-          "matvaretabellen:06.673"
+          "matvaretabellen:06.673",
+          "fdc:2705448"
         ]
       },
       "kcal": 76,
@@ -14228,7 +15319,8 @@
           "ciqual:15203",
           "cofid:14-847",
           "frida:1699",
-          "matvaretabellen:06.702"
+          "matvaretabellen:06.702",
+          "fdc:2707587"
         ]
       },
       "kcal": 595,
@@ -14249,7 +15341,10 @@
           "ciqual:15202",
           "cofid:14-892",
           "frida:1162",
-          "matvaretabellen:06.559"
+          "matvaretabellen:06.559",
+          "fdc:2707537",
+          "fdc:2707538",
+          "fdc:2707540"
         ]
       },
       "kcal": 632,
@@ -14262,7 +15357,8 @@
         "records": [
           "fdc:168000",
           "ciqual:31032",
-          "cofid:17-687"
+          "cofid:17-687",
+          "fdc:2710289"
         ]
       },
       "kcal": 539,
@@ -14293,7 +15389,8 @@
           "ciqual:31008",
           "cofid:17-050",
           "frida:1176",
-          "matvaretabellen:09.003"
+          "matvaretabellen:09.003",
+          "fdc:2710281"
         ]
       },
       "kcal": 305,
@@ -14319,7 +15416,8 @@
       "expect": {
         "records": [
           "ciqual:31016",
-          "cofid:17-063"
+          "cofid:17-063",
+          "fdc:2710257"
         ]
       },
       "kcal": 399,
@@ -14336,7 +15434,8 @@
           "cofid:17-060",
           "frida:1414",
           "matvaretabellen:09.001",
-          "frida:876"
+          "frida:876",
+          "fdc:2710260"
         ]
       },
       "kcal": 380,
@@ -14347,7 +15446,8 @@
       "q": "ranch dressing",
       "expect": {
         "records": [
-          "fdc:173592"
+          "fdc:173592",
+          "fdc:2710212"
         ]
       },
       "kcal": 430,
@@ -14381,7 +15481,8 @@
       "expect": {
         "records": [
           "fdc:174531",
-          "ciqual:11194"
+          "ciqual:11194",
+          "fdc:2706457"
         ]
       },
       "kcal": 35,
@@ -14393,7 +15494,8 @@
       "expect": {
         "records": [
           "fdc:174529",
-          "ciqual:11223"
+          "ciqual:11223",
+          "fdc:2707150"
         ]
       },
       "kcal": 51,
@@ -14407,7 +15509,9 @@
           "fdc:171167",
           "fdc:172890",
           "ciqual:11301",
-          "matvaretabellen:10.179"
+          "matvaretabellen:10.179",
+          "fdc:2707445",
+          "fdc:2707446"
         ]
       },
       "kcal": 89,
@@ -14430,7 +15534,9 @@
       "expect": {
         "records": [
           "fdc:171564",
-          "bls:U990100"
+          "bls:U990100",
+          "fdc:2707145",
+          "fdc:2707149"
         ]
       },
       "kcal": 53,
@@ -14446,7 +15552,8 @@
           "bls:U990400",
           "ciqual:11105",
           "cofid:17-800",
-          "matvaretabellen:10.162"
+          "matvaretabellen:10.162",
+          "fdc:2710171"
         ]
       },
       "kcal": 518,
@@ -14456,10 +15563,13 @@
     {
       "q": "alfredo sauce",
       "expect": {
-        "records": []
+        "records": [
+          "fdc:2705809"
+        ]
       },
-      "gap": true,
-      "why": "sauces: searched alfredo sauce, alfredo pasta sauce, parmesan cream sauce; only dry alfredo mix and other pasta sauces"
+      "kcal": 150,
+      "kcal_ref": "USDA FDC 2705809 alfredo sauce",
+      "why": "sauces: FNDDS plain alfredo sauce; meat/veg variants and dry mix excluded"
     },
     {
       "q": "cheese sauce",
@@ -14471,7 +15581,9 @@
           "ciqual:11189",
           "cofid:17-665",
           "cofid:17-773",
-          "cofid:17-775"
+          "cofid:17-775",
+          "fdc:2705808",
+          "fdc:2710244"
         ]
       },
       "kcal": 197,
@@ -14541,7 +15653,8 @@
           "fdc:171826",
           "bls:X344360",
           "ciqual:11051",
-          "cofid:17-722"
+          "cofid:17-722",
+          "fdc:2710173"
         ]
       },
       "kcal": 211,
@@ -14554,7 +15667,8 @@
         "records": [
           "fdc:171610",
           "cofid:17-723",
-          "matvaretabellen:10.218"
+          "matvaretabellen:10.218",
+          "fdc:2707447"
         ]
       },
       "kcal": 77,
@@ -14569,7 +15683,8 @@
           "bls:X354040",
           "ciqual:11248",
           "frida:1961",
-          "matvaretabellen:08.257"
+          "matvaretabellen:08.257",
+          "fdc:2710199"
         ]
       },
       "kcal": 542,
@@ -14588,7 +15703,8 @@
           "cofid:15-879",
           "cofid:15-880",
           "cofid:15-751",
-          "cofid:15-881"
+          "cofid:15-881",
+          "fdc:2710178"
         ]
       },
       "kcal": 77.4,
@@ -14600,7 +15716,8 @@
       "expect": {
         "records": [
           "fdc:171575",
-          "fdc:174070"
+          "fdc:174070",
+          "fdc:2707546"
         ]
       },
       "kcal": 179,
@@ -14612,7 +15729,8 @@
       "expect": {
         "records": [
           "fdc:172886",
-          "matvaretabellen:10.197"
+          "matvaretabellen:10.197",
+          "fdc:2707441"
         ]
       },
       "kcal": 220,
@@ -14643,7 +15761,12 @@
           "cofid:14-898",
           "frida:35",
           "matvaretabellen:06.107",
-          "matvaretabellen:06.555"
+          "matvaretabellen:06.555",
+          "fdc:2707485",
+          "fdc:2707488",
+          "fdc:2707487",
+          "fdc:2707486",
+          "fdc:2707489"
         ]
       },
       "kcal": 579,
@@ -14683,7 +15806,8 @@
           "cofid:14-879",
           "cofid:14-887",
           "frida:647",
-          "matvaretabellen:06.560"
+          "matvaretabellen:06.560",
+          "fdc:2707531"
         ]
       },
       "kcal": 654,
@@ -14707,7 +15831,12 @@
           "cofid:14-811",
           "frida:390",
           "matvaretabellen:06.582",
-          "matvaretabellen:06.618"
+          "matvaretabellen:06.618",
+          "fdc:2707493",
+          "fdc:2707496",
+          "fdc:2707495",
+          "fdc:2707494",
+          "fdc:2707497"
         ]
       },
       "kcal": 603.1,
@@ -14731,7 +15860,13 @@
           "cofid:14-834",
           "frida:864",
           "matvaretabellen:06.557",
-          "matvaretabellen:06.558"
+          "matvaretabellen:06.558",
+          "fdc:2707512",
+          "fdc:2707517",
+          "fdc:2707519",
+          "fdc:2707515",
+          "fdc:2707516",
+          "fdc:2707514"
         ]
       },
       "kcal": 590,
@@ -14744,7 +15879,9 @@
         "records": [
           "cofid:14-834",
           "bls:H110700",
-          "matvaretabellen:06.558"
+          "matvaretabellen:06.558",
+          "fdc:2707517",
+          "fdc:2707515"
         ]
       },
       "kcal": 602,
@@ -14768,7 +15905,11 @@
           "frida:328",
           "frida:757",
           "matvaretabellen:06.668",
-          "matvaretabellen:06.594"
+          "matvaretabellen:06.594",
+          "fdc:2707527",
+          "fdc:2707529",
+          "fdc:2707528",
+          "fdc:2707530"
         ]
       },
       "kcal": 569,
@@ -14785,7 +15926,8 @@
           "fdc:2515375",
           "cofid:14-874",
           "cofid:14-885",
-          "matvaretabellen:06.553"
+          "matvaretabellen:06.553",
+          "fdc:2707502"
         ]
       },
       "kcal": 628,
@@ -14811,7 +15953,11 @@
           "frida:515",
           "frida:1194",
           "frida:1193",
-          "matvaretabellen:06.593"
+          "matvaretabellen:06.593",
+          "fdc:2707521",
+          "fdc:2707523",
+          "fdc:2707522",
+          "fdc:2707524"
         ]
       },
       "kcal": 691,
@@ -14832,7 +15978,8 @@
           "ciqual:15043",
           "ciqual:15027",
           "cofid:14-891",
-          "matvaretabellen:06.617"
+          "matvaretabellen:06.617",
+          "fdc:2707503"
         ]
       },
       "kcal": 718,
@@ -14851,7 +15998,8 @@
           "cofid:14-871",
           "cofid:14-884",
           "frida:692",
-          "matvaretabellen:06.592"
+          "matvaretabellen:06.592",
+          "fdc:2707492"
         ]
       },
       "kcal": 664,
@@ -14871,7 +16019,8 @@
           "ciqual:15025",
           "cofid:14-839",
           "frida:806",
-          "matvaretabellen:06.614"
+          "matvaretabellen:06.614",
+          "fdc:2707526"
         ]
       },
       "kcal": 673,
@@ -14892,7 +16041,14 @@
           "fdc:169428",
           "fdc:169423",
           "fdc:170588",
-          "cofid:14-880"
+          "cofid:14-880",
+          "fdc:2707504",
+          "fdc:2707505",
+          "fdc:2707507",
+          "fdc:2707506",
+          "fdc:2707508",
+          "fdc:2707509",
+          "fdc:2707510"
         ]
       },
       "kcal": 594,
@@ -14909,7 +16065,12 @@
           "fdc:170655",
           "fdc:167968",
           "cofid:14-849",
-          "bls:H810000"
+          "bls:H810000",
+          "fdc:2707577",
+          "fdc:2707575",
+          "fdc:2707576",
+          "fdc:2707578",
+          "fdc:2707574"
         ]
       },
       "kcal": 462,
@@ -14926,7 +16087,10 @@
           "cofid:14-845",
           "cofid:14-846",
           "frida:438",
-          "matvaretabellen:05.126"
+          "matvaretabellen:05.126",
+          "fdc:2707585",
+          "fdc:2707583",
+          "fdc:2707582"
         ]
       },
       "kcal": 584,
@@ -14940,7 +16104,10 @@
           "fdc:170556",
           "fdc:2515380",
           "cofid:14-842",
-          "matvaretabellen:05.170"
+          "matvaretabellen:05.170",
+          "fdc:2707579",
+          "fdc:2707580",
+          "fdc:2707581"
         ]
       },
       "kcal": 559,
@@ -14956,7 +16123,8 @@
           "bls:H480100",
           "ciqual:15047",
           "frida:1728",
-          "matvaretabellen:05.380"
+          "matvaretabellen:05.380",
+          "fdc:2707590"
         ]
       },
       "kcal": 486,
@@ -14991,7 +16159,8 @@
           "cofid:14-844",
           "frida:370",
           "matvaretabellen:05.030",
-          "matvaretabellen:05.147"
+          "matvaretabellen:05.147",
+          "fdc:2707586"
         ]
       },
       "kcal": 573,
@@ -15031,7 +16200,8 @@
           "fdc:173180",
           "fdc:173177",
           "fdc:173167",
-          "frida:1747"
+          "frida:1747",
+          "fdc:2710731"
         ]
       },
       "kcal": 352,
@@ -15086,7 +16256,9 @@
       "expect": {
         "records": [
           "ciqual:15019",
-          "matvaretabellen:06.618"
+          "matvaretabellen:06.618",
+          "fdc:2707496",
+          "fdc:2707495"
         ]
       },
       "kcal": 632,

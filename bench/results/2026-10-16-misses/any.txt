@@ -1,0 +1,133 @@
+sourdough bread | #1 bls:B8A4000 Sourdough bread gluten-free | expected USDA FDC 172675 bread, french or vienna (includes sourdough) | hit@5 True
+chapati | #1 cofid:11-894 Flour, chapati, white | expected USDA FDC 171844 bread, chapati or roti, plain, commercially prepared | hit@5 True
+cornbread | #1 fdc:2708745 Chicken cornbread | expected USDA FDC 174910 bread, cornbread, prepared from recipe, made with low fat (2%) milk | hit@5 True
+dinner roll | #1 fdc:167590 Andrea's, Gluten Free Soft Dinner Roll | expected USDA FDC 172793 rolls, dinner, plain, commercially prepared (includes brown-and-serve) | hit@5 False
+breadsticks | #1 fdc:2707689 Breadsticks, NFS | expected USDA FDC 174929 bread, sticks, plain | hit@5 True
+danish pastry | #1 bls:D7A7000 Danish pastry raw | expected Frida 280 danish pastry, average values | hit@5 True
+pancake | #1 fdc:2710273 Pancake syrup | expected USDA FDC 175009 pancakes, plain, prepared from recipe | hit@5 False
+arepa | #1 fdc:2707828 Arepa Dominicana | expected USDA FDC 168070 restaurant, Latino, arepa (unleavened cornmeal bread) | hit@5 True
+steamed bun | #1 cofid:13-401 Yam, steamed | expected USDA FDC 2708725 bao bun, no meat | hit@5 False
+skim milk | #1 fdc:170887 Yogurt, plain, skim milk | expected CoFID 12-307 milk, skimmed, pasteurised, average | hit@5 False
+greek yogurt | #1 fdc:2705441 Yogurt, Greek, with oats | expected USDA FDC 2259794 yogurt, Greek, plain, whole milk | hit@5 True
+low-fat yogurt | #1 cofid:12-380 Yogurt, low fat, fruit | expected USDA FDC 170886 yogurt, plain, low fat | hit@5 True
+fruit yogurt | #1 bls:S221800 Yogurt-fruit ice cream | expected USDA FDC 170889 yogurt, fruit, low fat,9 g protein/8 oz | hit@5 True
+skyr | #1 matvaretabellen:01.306 Cultured milk, banana, Skyr | expected Frida 1693 skyr, 0.2 % fat | hit@5 True
+brie | #1 frida:1774 Cheese, Brie, 11% | expected USDA FDC 172177 cheese, brie | hit@5 True
+processed cheese slice | #1 cofid:12-549 Cheese, processed, slices, reduced fat | expected CIQUAL 2025, 12300 processed cheese, in slices, from cow's milk | hit@5 True
+string cheese | #1 fdc:170361 DIGIORNO Pizza, cheese topping, cheese stuffed crust, frozen, baked | expected USDA FDC 171244 cheese, mozzarella, low moisture, part-skim | hit@5 False
+cheese | #1 fdc:2705786 Cheese dip | expected USDA FDC 328637 cheese, cheddar | hit@5 True
+sour cream | #1 fdc:173443 Sour cream, light | expected USDA FDC 171257 cream, sour, cultured | hit@5 True
+creme fraiche | #1 frida:671 Cream, cultured, 18 % fat | expected CoFID 12-335 creme fraiche, full fat | hit@5 True
+evaporated milk | #1 cofid:12-324 Milk, evaporated, light | expected USDA FDC 171276 milk, canned, evaporated, with added vitamin D and without added vitamin A | hit@5 True
+quark | #1 bls:Y880160 Quark cream | expected CoFID 12-174 cheese, Quark | hit@5 False
+chocolate milk | #1 bls:S530000 Milk chocolate | expected CIQUAL 2025, 19118 chocolate flavoured milk beverage, with sugar(s), partially skimmed, not fortified | hit@5 False
+egg | #1 bls:P8A3000 Egg nog | expected Matvaretabellen 02.026 egg, boiled | hit@5 True
+soy milk | #1 fdc:2705404 Soy milk, sweetened | expected USDA FDC 1999630 soy milk, unsweetened, plain, shelf stable | hit@5 True
+grilled chicken breast | #1 cofid:18-325 Chicken, breast, grilled, meat and skin | expected CoFID 18-323 chicken, breast, grilled without skin, meat only | hit@5 True
+fried chicken | #1 cofid:18-412 Liver, chicken, fried in corn oil | expected USDA FDC 170756 fast Foods, Fried Chicken, Breast, meat and skin and breading | hit@5 False
+boiled chicken | #1 cofid:18-394 Giblets, chicken, boiled | expected BLS 4.0 (2025) V413132 chicken meat, without skin, boiled | hit@5 False
+bacon | #1 fdc:2707466 Bacon bits | expected USDA FDC 167914 pork, cured, bacon, cooked, baked | hit@5 False
+fried bacon | #1 cofid:19-603 Liver and bacon, fried, homemade | expected Matvaretabellen 03.509 pork, bacon, side bacon, pan-fried | hit@5 False
+leg of lamb | #1 bls:Y497113 Leg of lamb fried in oven Provencal style, with sauce | expected CoFID 18-480 lamb, leg, whole, roasted, lean and fat | hit@5 True
+mutton | #1 bls:Y441133 Mutton goulash | expected BLS 4.0 (2025) Y410012 mutton fillet fried | hit@5 True
+roast turkey | #1 fdc:171503 Turkey roast, boneless, frozen, seasoned, light and dark meat, raw | expected USDA FDC 171095 turkey, fryer-roasters, meat and skin, cooked, roasted | hit@5 True
+hamburger patty | #1 frida:1617 Hamburger, large patty, salad and dressing, fast food | expected BLS 4.0 (2025) U013172 beef patty, grilled | hit@5 False
+pan-fried chicken breast | #1 bls:Y599112 Wrap filled with salad and fried chicken breast fillet | expected BLS 4.0 (2025) Y562032 chicken breast fillet fried | hit@5 False
+baked chicken thigh | #1 fdc:2706054 Chicken thigh, baked, coated, skin / coating eaten | expected Matvaretabellen 03.393 chicken, thigh (leg without drumstick), with skin, roasted | hit@5 True
+tuna steak | #1 bls:Y6A1020 Tuna steak fried with ham | expected BLS 4.0 (2025) Y614533 tuna steak marinated, grilled | hit@5 True
+crab meat | #1 fdc:2706568 Imitation crab meat | expected CoFID 16-392 crab, white meat, purchased cooked | hit@5 True
+scallops | #1 fdc:2706359 Scallops, fried | expected CoFID 16-262 scallops, steamed | hit@5 True
+white fish fillet | #1 bls:Y646132 Whitefish fillet baked in almond crust | expected CIQUAL 2025, 26249 white fish, cooked (average) | hit@5 True
+grilled eel | #1 bls:T107172 Mackerel grilled | expected CIQUAL 2025, 27000 eel, roasted/baked | hit@5 False
+fried fish | #1 fdc:2706868 Fried fish with sauce, Puerto Rican style | expected USDA FDC 169846 restaurant, family style, fish fillet, battered or breaded, fried | hit@5 False
+tomato | #1 frida:1246 Tomato puree | expected USDA FDC 1999634 tomato, roma | hit@5 False
+sauteed spinach | #1 bls:X3A2010 Salmon-spinach sauce from white basic sauce | expected USDA FDC 2709618 spinach, fresh, cooked with oil | hit@5 False
+roasted cauliflower | #1 bls:G311100 Cauliflower raw | expected BLS 4.0 (2025) G311162 cauliflower baked | hit@5 False
+eggplant | #1 fdc:2710049 Eggplant dip | expected USDA FDC 169229 eggplant, cooked, boiled, drained, without salt | hit@5 True
+fried eggplant | #1 fdc:2710048 Fried eggplant | expected CoFID 13-162 aubergine, fried in corn oil | hit@5 False
+sauteed mushrooms | #1 ciqual:25143 White fish with Parisian-style sauce (mushrooms sauce), prepacked | expected USDA FDC 169253 mushrooms, white, stir-fried | hit@5 True
+collard greens | #1 fdc:170503 Mustard greens, cooked, boiled, drained, with salt | expected USDA FDC 170407 collards, cooked, boiled, drained, without salt | hit@5 False
+grilled vegetables | #1 bls:Y436232 Lamb skewer with vegetables, grilled | expected BLS 4.0 (2025) G994162 mixed vegetables Asian style, baked | hit@5 False
+roasted vegetables | #1 bls:X454663 Oat flakes soup roasted, with vegetable stock | expected BLS 4.0 (2025) G994162 mixed vegetables Asian style, baked | hit@5 False
+mixed vegetables | #1 bls:G090600 Mixed vegetables juice | expected USDA FDC 170472 vegetables, mixed, frozen, cooked, boiled, drained, without salt | hit@5 True
+grilled bell peppers | #1 fdc:2258588 Peppers, bell, green, raw | expected BLS 4.0 (2025) G543072 sweet pepper red, grilled | hit@5 False
+orange | #1 bls:R381100 Candied orange peel | expected USDA FDC 746771 oranges, raw, navels | hit@5 True
+apricot | #1 matvaretabellen:06.792 Apricot jam | expected USDA FDC 171697 apricots, raw | hit@5 True
+plum | #1 matvaretabellen:06.812 Plum jam | expected Matvaretabellen 06.544 plums, raw | hit@5 True
+kiwi | #1 bls:F514600 Kiwi fruit juice | expected USDA FDC 168153 kiwifruit, green, raw | hit@5 True
+fresh figs | #1 cofid:11-732 Pasta, egg, fresh, filled with meat, boiled in unsalted water | expected USDA FDC 173021 figs, raw | hit@5 False
+coconut | #1 fdc:2710182 Coconut oil | expected USDA FDC 170169 nuts, coconut meat, raw | hit@5 False
+rhubarb | #1 fdc:2709268 Rhubarb | expected Matvaretabellen 06.053 rhubarb, raw | hit@5 True
+applesauce | #1 fdc:2707901 Cookie, applesauce | expected USDA FDC 171696 applesauce, canned, sweetened, without salt | hit@5 True
+green apple | #1 ciqual:13439 Prune de cythère or pomme cythere or golden apple, green or immature, flesh and skin, with seeeds, raw, sampled in the island of La Martinique | expected Matvaretabellen 06.620 apple, Granny Smith, Golden Delicious, raw | hit@5 True
+banana slices | #1 bls:Y780543 Cheese slices breaded, fried | expected Matvaretabellen 06.525 banana, raw | hit@5 False
+spaghetti | #1 fdc:2709745 Spaghetti sauce | expected USDA FDC 169737 pasta, cooked, enriched, without added salt | hit@5 False
+penne | #1 ciqual:11088 Cayenne pepper, powder | expected USDA FDC 169737 pasta, cooked, enriched, without added salt | hit@5 False
+macaroni | #1 fdc:2706483 Chili with macaroni | expected USDA FDC 169737 pasta, cooked, enriched, without added salt | hit@5 False
+soba noodles | #1 bls:E605000 Potato noodles (Schupfnudeln) raw | expected USDA FDC 168907 noodles, japanese, soba, cooked | hit@5 False
+instant noodles | #1 fdc:2710480 Coffee, instant, not reconstituted | expected USDA FDC 171177 soup, ramen noodle, any flavor, dry | hit@5 False
+quinoa | #1 matvaretabellen:05.527 Quinoa flour | expected USDA FDC 168917 quinoa, cooked | hit@5 True
+oatmeal porridge | #1 matvaretabellen:11.047 Baby food, oatmeal porridge, from 6 months, powder | expected CoFID 11-1107 porridge, made with water | hit@5 False
+roasted potatoes | #1 fdc:170031 Potatoes, roasted, salt added in processing, frozen, unprepared | expected CoFID 13-534 potatoes, old, roasted in rapeseed oil | hit@5 True
+potato wedges | #1 frida:1841 Potato wedges, frozen | expected CoFID 13-483 potato wedges, retail, cooked | hit@5 True
+sweet potato fries | #1 fdc:2709709 Sweet potato fries, NFS | expected BLS 4.0 (2025) K420192 batata/sweet potato, deep-fried, salted | hit@5 False
+cooked lentils | #1 ciqual:9876 Pasta, dry, gluten-free (from red lentils), cooked, no added salt | expected Matvaretabellen 06.105 lentils, green, cooked | hit@5 True
+split peas | #1 cofid:15-861 Rice and split peas | expected USDA FDC 172429 peas, split, mature seeds, cooked, boiled, without salt | hit@5 True
+granola | #1 frida:1591 Granola bar | expected USDA FDC 171646 cereals ready-to-eat, granola, homemade | hit@5 True
+muesli | #1 bls:S830000 Muesli bar | expected BLS 4.0 (2025) C512300 muesli mix with dried fruit, unsweetened | hit@5 True
+whole wheat flour | #1 frida:1723 Spelt wheat flour, whole | expected USDA FDC 168893 wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program) | hit@5 True
+cooked buckwheat | #1 bls:C422000 Buckwheat coarse meal | expected USDA FDC 170686 buckwheat groats, roasted, cooked | hit@5 False
+fried potatoes | #1 bls:X651912 Fried potatoes with egg | expected BLS 4.0 (2025) X651013 potatoes raw, peeled, fried | hit@5 False
+pizza | #1 fdc:2708686 Pizza rolls | expected CIQUAL 2025, 25478 pizza, cheeses, prepacked | hit@5 True
+schnitzel | #1 bls:H910400 Vegan schnitzel | expected BLS 4.0 (2025) Y332132 pork schnitzel breaded, fried | hit@5 True
+chicken schnitzel | #1 matvaretabellen:03.321 Schnitzel, chicken, with cheese, breaded, raw | expected BLS 4.0 (2025) Y591112 chicken breast fillet breaded, fried | hit@5 False
+pesto pasta | #1 bls:X659012 "Schupfnudeln" (German potato pasta) cooked | expected BLS 4.0 (2025) X703112 pasta egg-free, with pesto verde | hit@5 False
+osso buco | #1 frida:870 Beef, shin + leg (shank), raw | expected CIQUAL 2025, 25164 osso buco from veal (with vegetables and white wine), homemade | hit@5 True
+spaetzle | #1 bls:X437143 Liver spaetzle | expected BLS 4.0 (2025) X711512 fresh egg pasta spaetzle, homemade, raw | hit@5 True
+mac and cheese | #1 bls:X070260 Club sandwich with tuna, cucumber, Emmental cheese and mayonnaise | expected USDA FDC 169770 macaroni and cheese, box mix with cheese sauce, prepared | hit@5 False
+buffalo wings | #1 fdc:175299 Game meat, buffalo, water, raw | expected USDA FDC 2706070 chicken "wings" with hot sauce, from fast food / restaurant | hit@5 False
+beef taco | #1 fdc:2706750 Beef taco filling: beef, cheese, tomato, taco sauce | expected USDA FDC 170689 fast foods, taco with beef, cheese and lettuce, hard shell | hit@5 False
+quesadilla | #1 fdc:2708597 Quesadilla, egg | expected USDA FDC 169035 restaurant, Mexican, cheese quesadilla | hit@5 True
+blt sandwich | #1 ciqual:25543 Sandwich baguette (average) | expected USDA FDC 170313 fast foods, submarine sandwich, bacon, lettuce, and tomato on white bread | hit@5 False
+turkey sandwich | #1 fdc:2706987 Turkey sandwich wrap | expected USDA FDC 170706 fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato | hit@5 True
+meatloaf | #1 bls:W865000 Jellied meatloaf | expected CoFID 19-605 meat loaf, homemade | hit@5 False
+sloppy joe | #1 fdc:2706378 Sloppy joe, no bun | expected USDA FDC 2706883 sloppy joe sandwich, on white bun | hit@5 True
+pancakes with maple syrup | #1 fdc:168838 Syrups, table blends, pancake, with 2% maple | expected USDA FDC 173311 mcDONALD'S, Hotcakes (with 2 pats margarine & syrup) | hit@5 False
+fish burger | #1 matvaretabellen:04.272 Fish burger, salmon | expected CIQUAL 2025, 25416 fish burger, from fast food | hit@5 False
+lamb kebab | #1 ciqual:25194 Meat balls, beef and lamb (kefta type), prepacked, raw | expected CoFID 19-150 shish kebab, meat only | hit@5 False
+lentil soup with lemon | #1 fdc:2707463 Soup, lentil, with meat | expected BLS 4.0 (2025) X4A8070 red lentil soup with coriander | hit@5 True
+falafel wrap | #1 fdc:2707408 Falafel | expected BLS 4.0 (2025) Y9A1060 falafel deep-fried, in flatbread, vegetarian filled | hit@5 True
+vegetable pulao | #1 bls:X416913 Vegetable puree soup | expected CoFID 12-472 pilau, vegetable, homemade | hit@5 False
+shrimp tempura | #1 fdc:2706462 Shrimp teriyaki | expected Matvaretabellen 04.277 shrimp, battered, pre-fried, fried in fat | hit@5 False
+chicken teriyaki | #1 fdc:2707109 Teriyaki chicken with rice and vegetable, diet frozen meal | expected USDA FDC 2706433 chicken or turkey with teriyaki | hit@5 False
+chow mein | #1 fdc:2708354 Noodles, chow mein | expected CoFID 19-321 chow mein, chicken, takeaway | hit@5 True
+shrimp dumplings | #1 bls:E606022 White bread dumplings steamed | expected CIQUAL 2025, 25110 dumplings, steamed, with shrimps, cooked | hit@5 True
+pork dumplings | #1 bls:Y881743 Quark dumplings filled with apricots | expected USDA FDC 169773 potsticker or wonton, pork and vegetable, frozen, unprepared | hit@5 False
+beef noodle soup | #1 fdc:171539 Soup, beef noodle, canned, condensed | expected USDA FDC 172906 soup, beef noodle, canned, prepared with equal volume water | hit@5 True
+green curry | #1 cofid:15-755 Curry, green bean, masala, homemade | expected CoFID 19-465 curry, chicken, Thai green, takeaway and restaurant | hit@5 False
+mee goreng | #1 bls:X891133 Nasi Goreng (rice fried with vegetables and pork) | expected BLS 4.0 (2025) X891212 bami Goreng (egg pasta fried with vegetables and chicken) | hit@5 True
+chicken katsu | #1 fdc:2706445 Chicken kiev | expected CIQUAL 2025, 36036 milanese-style chicken escalope or breaded chicken escalope | hit@5 False
+beef pho | #1 fdc:2705848 Beef, pot roast | expected USDA FDC 2707124 soup, pho, with meat | hit@5 False
+pap | #1 fdc:168106 Papad | expected BLS 4.0 (2025) X9A2050 polenta (maize porridge prepared with water, rapeseed oil and salt) boiled | hit@5 False
+cabbage soup | #1 fdc:2709816 Cabbage salad, NFS | expected fooddb recipe shchi shchi | hit@5 False
+brownie | #1 fdc:2707907 Cookie, butterscotch, brownie | expected USDA FDC 172713 cookies, brownies, commercially prepared | hit@5 True
+oatmeal cookies | #1 fdc:174960 Cookies, oatmeal, dry mix | expected USDA FDC 172725 cookies, oatmeal, commercially prepared, regular | hit@5 True
+macarons | #1 ciqual:23027 Macaroon, biscuit, dry | expected CIQUAL 2025, 23024 macaroon filled with jam or cream | hit@5 False
+ice cream | #1 ciqual:39533 Ice cream log | expected BLS 4.0 (2025) S241000 vanilla ice cream | hit@5 True
+sorbet | #1 matvaretabellen:09.110 Sherbet | expected CIQUAL 2025, 39524 sorbet, in box | hit@5 True
+mochi | #1 matvaretabellen:13.081 Caffe mocha | expected USDA FDC 2708345 cake made with glutinous rice | hit@5 False
+popcorn | #1 fdc:2708165 Popcorn cake | expected USDA FDC 170247 snacks, popcorn, oil-popped, white popcorn, salt added | hit@5 True
+nougat | #1 bls:S450000 Nougat | expected USDA FDC 169060 candies, nougat, with almonds | hit@5 True
+cake | #1 fdc:2707409 Bean cake | expected CIQUAL 2025, 23000 cake (average) | hit@5 True
+cookies | #1 fdc:172722 Cookies, fortune | expected USDA FDC 172716 cookies, chocolate chip, commercially prepared, regular, higher fat, enriched | hit@5 True
+red bean paste | #1 bls:H862200 Miso/soya bean paste | expected USDA FDC 2710309 bean paste, sweetened | hit@5 True
+iced coffee | #1 bls:Y997043 Iced coffee | expected Matvaretabellen 13.120 ice coffee, cappuchino | hit@5 True
+iced tea | #1 fdc:2710679 Long Island iced tea | expected Matvaretabellen 13.071 iced tea, industrially made | hit@5 True
+coffee with milk | #1 ciqual:18160 Coffee with milk or cappuccino, powder, instant | expected CIQUAL 2025, 18151 coffee with milk or white coffee or cappuccino, instant or non instant coffee, no added sugars, ready-to-drink | hit@5 True
+cooking oil | #1 fdc:171433 Oil, cooking and salad, ENOVA, 80% diglycerides | expected USDA FDC 171411 oil, soybean, salad or cooking | hit@5 True
+marinara sauce | #1 fdc:169037 OLIVE GARDEN, cheese ravioli with marinara sauce | expected USDA FDC 171192 sauce, pasta, spaghetti/marinara, ready-to-serve | hit@5 False
+pesto | #1 cofid:17-623 Pesto, red | expected USDA FDC 171579 sauce, pesto, ready-to-serve, refrigerated | hit@5 True
+butter chicken sauce | #1 frida:1977 Butter chicken, takeaway | expected CoFID 17-626 sauce, Indian cook in, korma/tikka masala | hit@5 False
+roasted almonds | #1 bls:X532043 Broccoli stewed, with roasted almond flakes | expected USDA FDC 170158 nuts, almonds, dry roasted, without salt added | hit@5 True
+pistachios | #1 ciqual:30797 Mortadella with pistachios, pure pork | expected USDA FDC 169426 nuts, pistachio nuts, dry roasted, with salt added | hit@5 True
+flaxseed | #1 fdc:2710185 Flaxseed oil | expected USDA FDC 169414 seeds, flaxseed | hit@5 True

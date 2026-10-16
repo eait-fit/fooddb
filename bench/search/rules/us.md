@@ -25,7 +25,11 @@ Retries for gaps (one at a time, nothing else hits the API):
   source. If it refuses, pick another acceptable record as `best`. A product holding several FDC records
   (SR Legacy + Foundation of one food) is cited with all of them (`USDA FDC 172234/326698 ...`).
 - Branded `best` only when no generic record in ANY table is acceptable (decided after labelling: peanut
-  butter cups, rice crispy treats, protein shake, protein bar, chicken burrito, egg and cheese sandwich).
+  butter cups, rice crispy treats, protein shake, protein bar; since FNDDS only rice crispy treats and protein
+  bar remain branded).
+- A `best` from another table or a branded record moves to its FNDDS twin once FNDDS holds the food (2026-10-16:
+  35 cases, e.g. latte, wines and spirits, kefir, pad thai, meatloaf). FNDDS twins of every case's food are
+  listed in `expect` like any other acceptable record; an SR/Foundation `best` stays.
 - Form of `best`: as in the pilot (raw/as-bought for an unprepared query; the named preparation for a prepared
   one; as eaten for foods only eaten prepared), with these US exceptions, which follow the 23 existing US cases:
   rice, pasta, noodles, quinoa, couscous, barley, grits: COOKED (Americans log cooked cups);
