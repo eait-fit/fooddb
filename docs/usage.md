@@ -31,7 +31,10 @@ sources rank first — a preference, never a filter, and it never outranks a muc
 match. An OFF record counts when its `countries_tags` name the country, so every valid code
 has an effect even without a preferred table. For example,
 `$API/v1/foods?q=apple&country=de` ranks BLS records before other sources of an equal match.
-A code that is not ISO 3166-1 alpha-2 is refused with 422.
+A code that is not ISO 3166-1 alpha-2 is refused with 422. For `at`, the country's own food
+words also reach the standard-German record names (`?q=Erdäpfel&country=at` finds the
+`Kartoffel` records): `fooddb.synonyms` rewrites a query through `synonyms/<cc>.tsv`, and every
+variant is searched with the product keeping its best score.
 
 ## CLI
 

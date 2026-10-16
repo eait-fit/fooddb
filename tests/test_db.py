@@ -287,6 +287,30 @@ def test_country_refuses_an_unknown_code():
     assert c.get("/v1/products/4006381333931", params={"country": "xx"}).status_code == 422
 
 
+def test_search_expands_austrian_food_words_for_country_at():
+    from fooddb import ingest
+
+    # BLS names its records in English; the German name rides in `names` (food_name).
+    ingest.run("t", "r1", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Potatoes, raw",
+                               names={"de": "Kartoffeln, roh"}),
+                           rec(id="bls:2", source="bls", licence="CC-BY-4.0", name="Tomatoes, raw",
+                               names={"de": "Tomaten, frisch"})])
+    c = client()
+    assert names(c, {"q": "Erdäpfel", "country": "at"}) == ["bls:1"]
+    assert names(c, {"q": "Paradeiser", "country": "at"}) == ["bls:2"]
+    # A compound rewrites its stem (erdäpfel in erdäpfelsalat), and a false friend keeps its
+    # Austrian sense: Hörnchen is the pasta here, not the croissant.
+    ingest.run("t", "r2", [rec(id="bls:3", source="bls", licence="CC-BY-4.0", name="Egg pasta, raw",
+                               names={"de": "Eiernudeln, roh"}),
+                           rec(id="bls:4", source="bls", licence="CC-BY-4.0", name="Potato salad",
+                               names={"de": "Kartoffelsalat"})])
+    assert names(c, {"q": "Erdäpfelsalat", "country": "at"})[0] == "bls:4"
+    assert names(c, {"q": "Hörnchen", "country": "at"})[0] == "bls:3"
+    # Without country=at an Austrian word rewrites nothing and finds no German name.
+    assert names(c, {"q": "Erdäpfel"}) == []
+    assert names(c, {"q": "Erdäpfel", "country": "de"}) == []
+
+
 def test_barcode_country_orders_by_preferred_source():
     from fooddb import ingest
 

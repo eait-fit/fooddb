@@ -3,7 +3,7 @@ as `resolve.products` serves them; what a miss means is the caller's (the API's 
 
 from sqlalchemy import ColumnElement, Select, case, false, func, literal, literal_column, select, union_all
 
-from fooddb import countries, resolve
+from fooddb import countries, resolve, synonyms
 from fooddb.db import engine, food, food_name, observation
 
 CANDIDATES = 20  # name rows ranked per result row before the visibility check
@@ -48,16 +48,21 @@ def by_name(q: str, include: str | None = None, limit: int = 20, country: str | 
     # A literal, not a bound parameter, so the planner can use the core-only name index.
     layer = _layers(include) if include == "off" else food.c.layer == literal_column("'core'")
 
-    def best(name, source) -> Select:
+    # The country's synonyms add query variants (Erdäpfel → Kartoffel for `at`): each is searched
+    # the same way and a product keeps its best score, whichever variant found it.
+    variants = synonyms.expand(q, cc)
+    named = food_name.join(food, food.c.id == food_name.c.food_id)
+
+    def best(name, source, variant) -> Select:
         # f_unaccent on both sides: the query may carry the marks or lack them, so may the name.
-        uq, un = func.f_unaccent(q), func.f_unaccent(name)
+        uq, un = func.f_unaccent(variant), func.f_unaccent(name)
         sim, length = func.word_similarity(uq, un), func.length(name)
         return (select(food.c.id, sim.label("sim"), length.label("len"), rk.label("rk"))
                 .select_from(source).where(layer, uq.op("<%")(un))
                 .order_by(sim.desc(), *([rk] if cc else []), length).limit(limit * CANDIDATES))
 
-    cand = union_all(best(food.c.name, food),
-                     best(food_name.c.name, food_name.join(food, food.c.id == food_name.c.food_id))).cte("cand")
+    cand = union_all(*(best(name, source, v) for v in variants
+                       for name, source in ((food.c.name, food), (food_name.c.name, named)))).cte("cand")
     return resolve.products(_pids(
         select(food.c.product_id).select_from(cand.join(food, food.c.id == cand.c.id))
         .where(_visible()).group_by(food.c.product_id)
