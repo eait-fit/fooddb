@@ -18,6 +18,10 @@ or "products" (product ids) the answer must hold one of, or a "name" regex the a
 match (with "source" pinning which record may name it). "kcal" is the reference kcal/100 g and
 "kcal_ref" its citation. A barcode case carries the same "expect" or "not_found": true. Every
 case's "why" says what makes it representative.
+
+A set with "country": null (any.json) runs without ?country= and reports as "any". A case marked "gap": true
+names a food no record in fooddb is (expect is empty, so it always misses): re-label gaps when a source is added.
+How each set's ambiguous words were labelled is bench/search/rules/<set>.md (common.md applies to all).
 """
 
 import argparse
@@ -82,7 +86,7 @@ def get(client: httpx.Client, path: str, **params) -> tuple[httpx.Response, floa
     for attempt in range(3):
         t = time.perf_counter()
         try:
-            r = client.get(path, params=params)
+            r = client.get(path, params={k: v for k, v in params.items() if v is not None})
         except httpx.HTTPError:
             if attempt == 2:
                 raise
@@ -175,10 +179,11 @@ def run(base: str, key: str | None, only: set[str] | None) -> dict:
     all_cases, all_lookups = [], []
     for path in sorted(GOLDEN.glob("*.json")):
         gold = json.loads(path.read_text())
-        country = gold["country"]
-        if only and country not in only:
+        country = gold["country"]  # null: the set runs without ?country=, reported as "any"
+        name = country or "any"
+        if only and name not in only:
             continue
-        print(f"{country} ({path.name})", flush=True)
+        print(f"{name} ({path.name})", flush=True)
         cases, lookups = [], []
         for case in gold.get("queries", []):
             cases.append(run_query(client, country, case))
@@ -186,7 +191,7 @@ def run(base: str, key: str | None, only: set[str] | None) -> dict:
         for case in gold.get("barcodes", []):
             lookups.append(run_barcode(client, country, case))
             print(f"  {case['barcode']}: {lookups[-1]['status']} {lookups[-1]['ms']:.0f} ms", flush=True)
-        out["countries"][country] = {**metrics(cases, lookups), "cases": cases, "barcode_cases": lookups}
+        out["countries"][name] = {**metrics(cases, lookups), "cases": cases, "barcode_cases": lookups}
         all_cases += cases
         all_lookups += lookups
     out["overall"] = metrics(all_cases, all_lookups)
@@ -271,11 +276,11 @@ def main() -> int:
     out.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     o = result["overall"]
     found = f"{o['found']:.1%}" if o["found"] is not None else "n/a"
+    ms = {k: f"{o[k]['p95']:.0f} ms" if o[k]["p95"] is not None else "n/a" for k in ("search_ms", "lookup_ms")}
     print(f"\nwrote {out}\n"
           f"overall: hit@1 {o['hit1']:.1%}  hit@5 {o['hit5']:.1%}  "
           f"kcal err med {o['kcal_median_pct']}% p90 {o['kcal_p90_pct']}%  "
-          f"found {found}  search p95 {o['search_ms']['p95']:.0f} ms  "
-          f"lookup p95 {o['lookup_ms']['p95']:.0f} ms")
+          f"found {found}  search p95 {ms['search_ms']}  lookup p95 {ms['lookup_ms']}")
     return 0
 
 
