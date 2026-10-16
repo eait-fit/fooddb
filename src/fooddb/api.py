@@ -98,15 +98,17 @@ def search(q: str = Query(min_length=2), include: str | None = None, limit: int 
     # result row keeps that far below `limit`.
     cc = countries.code(country)
     rk = countries.rank_sql(cc) if cc else "0"
+    # A literal, not a parameter, so the planner can use the core-only name index.
+    layer = "layer = any(:layers)" if include == "off" else "layer = 'core'"
     pids = _pids(
         f"""with cand as (
                (select id, word_similarity(:q, name) as sim, length(name) as len, {rk} as rk
-                from food where layer = any(:layers) and :q <% name
+                from food where {layer} and :q <% name
                 order by sim desc, rk, len limit :k)
                union all
                (select food.id, word_similarity(:q, n.name), length(n.name), {rk}
                 from food_name n join food on food.id = n.food_id
-                where food.layer = any(:layers) and :q <% n.name
+                where food.{layer} and :q <% n.name
                 order by 2 desc, 4, 3 limit :k)
            )
            select food.product_id from cand join food on food.id = cand.id

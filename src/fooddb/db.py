@@ -68,6 +68,9 @@ food = Table(
     Index("food_gtin14_idx", "gtin14"),
     Index("food_product_idx", "product_id"),
     Index("food_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    # The core layer alone (~30k of ~3M records): a search without OFF reads only these names.
+    Index("food_core_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"},
+          postgresql_where=text("layer = 'core'")),
 )
 
 # A record's names in other languages than `food.name`, as its source states them (BLS German, CIQUAL French,
