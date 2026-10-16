@@ -261,21 +261,21 @@ def accounts_set_unlimited(email: str, off: bool = typer.Option(False, "--off", 
 @app.command()
 def lookup(barcode: str, include_off: bool = True) -> None:
     """Look up a product by barcode."""
-    from fastapi import HTTPException
+    from fooddb import gtin, search
 
-    from fooddb.api import by_barcode as product
-
-    try:
-        typer.echo(json.dumps(product(barcode, "off" if include_off else None), default=str, indent=2))
-    except HTTPException as e:
-        typer.echo(f"{barcode}: {e.detail}", err=True)
+    code = gtin.normalize(barcode)
+    items = search.by_barcode(code, "off" if include_off else None) if code else []
+    if not items:
+        typer.echo(f"{barcode}: " + ("product not found" if code else "not a valid global GTIN"), err=True)
         raise typer.Exit(1)
+    typer.echo(json.dumps({"items": items}, default=str, indent=2))
 
 
 @app.command()
 def search(query: str, limit: int = typer.Option(5, min=1, max=100), include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)"),
            country: str | None = typer.Option(None, help="prefer that country's sources (ISO 3166-1 alpha-2)")) -> None:
     """Search foods by name."""
-    from fooddb.api import search as foods
+    from fooddb import search as find
 
-    typer.echo(json.dumps(foods(q=query, include="off" if include_off else None, limit=limit, country=country), default=str, indent=2))
+    items = find.by_name(query, "off" if include_off else None, limit, country)
+    typer.echo(json.dumps({"items": items}, default=str, indent=2))

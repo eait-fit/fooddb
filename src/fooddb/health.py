@@ -48,6 +48,12 @@ def checked(fetcher: str, at: datetime | None = None) -> None:
         """), {"f": fetcher, "at": at or datetime.now(UTC)})
 
 
+def live_products() -> int:
+    """Products not merged away: /livez's proof that the process reaches the database."""
+    with engine().connect() as conn:
+        return conn.execute(text("select count(*) from product where merged_into is null")).scalar_one()
+
+
 def report(now: datetime | None = None) -> dict:
     now = now or datetime.now(UTC)
     with engine().connect() as conn:
