@@ -1299,7 +1299,7 @@ the OFF layer, and no ODbL tag is in it.
 
 The other read endpoints use the same `resolve.products` call:
 
-- `GET /v1/foods?q=` searches `food.name` with `pg_trgm` word similarity, diacritics folded away on both sides through `f_unaccent` (`api.py:49`).
+- `GET /v1/foods?q=` searches `food.name` with `pg_trgm` word similarity, diacritics folded away on both sides through `f_unaccent` (`api.py:49`). With `?country=` the country's synonyms rewrite the query first (AT Erdäpfel → Kartoffel), and every variant is searched with each product keeping its best score (`search.by_name`).
 - `GET /v1/foods/{product_id}` reads one product (`api.py:64`).
 - `GET /v1/records/{record_id}` finds the product of one source record (`api.py:69`).
 
