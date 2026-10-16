@@ -195,8 +195,8 @@ def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(t
     assert names(c, {"q": "хумус"}) == ["fdc:1"]
     with engine().connect() as conn:
         assert conn.execute(text(
-            "select count(*) from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
-        )).scalar() == 1
+            "select licence from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
+        )).scalar() == "AGPL-3.0"  # agent-written names ride under the code's licence, not the source's
     # Idempotent, and a line gone from the TSV drops its row.
     assert load_mt(tmp_path) == {"ru": 1}
     (tmp_path / "ru.tsv").write_text("", encoding="utf-8")
