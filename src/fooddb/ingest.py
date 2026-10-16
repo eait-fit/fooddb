@@ -162,7 +162,7 @@ def _write(records: list[Record]) -> tuple[int, int]:
             conn.execute(food_name.delete().where(food_name.c.food_id.in_([r.id for r in named]),
                                                   food_name.c.origin == "source"))
             conn.execute(insert(food_name).values(
-                [{"food_id": r.id, "lang": lang, "name": n[:500], "origin": "source"}
+                [{"food_id": r.id, "lang": lang, "name": n[:500], "origin": "source", "licence": r.licence}
                  for r in named for lang, n in r.names.items()]))
         n_obs = 0
         for i in range(0, len(obs), OBS_ROWS_PER_INSERT):

@@ -86,6 +86,8 @@ food_name = Table(
     Column("lang", Text, primary_key=True),
     Column("origin", Text, primary_key=True, server_default="source"),
     Column("name", Text, nullable=False),
+    # Source-stated names ride under the record's licence; agent-written ones under AGPL-3.0.
+    Column("licence", Text, nullable=False, server_default=""),
     Index("food_name_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
           postgresql_ops={"un": "gin_trgm_ops"}),
 )

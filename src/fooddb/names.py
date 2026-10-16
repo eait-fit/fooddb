@@ -16,6 +16,8 @@ from fooddb.db import engine, food, food_name
 
 # Repo root in a checkout, /app in the image (the Dockerfile copies data/ in).
 MT_DIR = Path(__file__).resolve().parents[2] / "data" / "names" / "mt"
+# Agent-written names are project data: the licence of the code, not the record's source licence.
+MT_LICENCE = "AGPL-3.0"
 
 
 def _tsv(f: Path) -> dict[str, str]:
@@ -41,11 +43,12 @@ def load_mt(dir: Path = MT_DIR) -> dict[str, int]:
             live = set(conn.execute(select(food.c.id).where(food.c.id.in_(list(rows)))).scalars())
             conn.execute(food_name.delete().where(food_name.c.origin == "mt", food_name.c.lang == lang,
                                                   ~food_name.c.food_id.in_(list(rows))))
-            if vals := [{"food_id": rid, "lang": lang, "name": n, "origin": "mt"}
+            if vals := [{"food_id": rid, "lang": lang, "name": n, "origin": "mt", "licence": MT_LICENCE}
                         for rid, n in rows.items() if rid in live]:
                 stmt = pg_insert(food_name).values(vals)
-                conn.execute(stmt.on_conflict_do_update(index_elements=["food_id", "lang", "origin"],
-                                                        set_={"name": stmt.excluded.name}))
+                conn.execute(stmt.on_conflict_do_update(
+                    index_elements=["food_id", "lang", "origin"],
+                    set_={"name": stmt.excluded.name, "licence": stmt.excluded.licence}))
         out[lang] = len(vals)
         logger.info(f"names mt {lang}: {len(vals)} rows ({len(rows) - len(vals)} for records not held)")
     return out

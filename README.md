@@ -49,7 +49,7 @@ flowchart LR
 | Frida | Denmark | CC-BY-4.0 | `Dataset.xlsx` of the figshare record | weekly; only a new version downloads | the Danish composition table | 1,381 |
 | Fineli | Finland | CC-BY-4.0 | the open-data zip at `fineli.fi` | off — fineli.fi refuses automated downloads, so a manual mirror is pending | the Finnish composition table | — |
 | Recipes | — | the ingredients' | computed from ingredient records, never typed in | rebuilt with each snapshot | dish values from their ingredients | 40 |
-| Agent-written names | ru, es | CC0-1.0 | nothing fetched — `data/names/mt/{ru,es}.tsv`, written by an AI agent and reviewed | with the code | Russian and Spanish names for core records, loaded as `food_name` `origin='mt'` — a table refetch does not touch them | 500 × 2 (pilot) |
+| Agent-written names | ru, es | AGPL-3.0 | nothing fetched — `data/names/mt/{ru,es}.tsv`, written by an AI agent and reviewed | with the code | Russian and Spanish names for core records, loaded as `food_name` `origin='mt'` — a table refetch does not touch them | 500 × 2 (pilot) |
 
 The same worker writes the monthly ODbL dump of the OFF layer (1st of the month, 04:00 UTC) and
 prunes the request log daily (03:15 UTC). [docs/architecture.md](docs/architecture.md) has every

@@ -195,13 +195,40 @@ def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(t
     assert names(c, {"q": "хумус"}) == ["fdc:1"]
     with engine().connect() as conn:
         assert conn.execute(text(
-            "select count(*) from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
-        )).scalar() == 1
+            "select licence from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
+        )).scalar() == "AGPL-3.0"  # agent-written names ride under the code's licence, not the source's
     # Idempotent, and a line gone from the TSV drops its row.
     assert load_mt(tmp_path) == {"ru": 1}
     (tmp_path / "ru.tsv").write_text("", encoding="utf-8")
     assert load_mt(tmp_path) == {"ru": 0}
     assert names(c, {"q": "хумус"}) == []
+
+
+def test_no_two_records_share_an_mt_name_with_different_kcal():
+    """Two records that collapse to one mt name must be the same food for energy: a shared name
+    whose newest accepted ENERC_KCAL differ by more than 10 % means a qualifier that changes the
+    numbers (fat %, state, lean) was dropped in translation."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+    from fooddb.names import MT_DIR, _tsv
+
+    for f in sorted(MT_DIR.glob("*.tsv")):
+        by_name: dict[str, list[str]] = {}
+        for rid, n in _tsv(f).items():
+            by_name.setdefault(n, []).append(rid)
+        for n, ids in by_name.items():
+            if len(ids) < 2:
+                continue
+            with engine().connect() as conn:
+                kcal = dict(conn.execute(text(
+                    "select distinct on (food_id) food_id, value_per_100::float from observation "
+                    "where food_id = any(:ids) and nutrient = 'ENERC_KCAL' and status = 'accepted' "
+                    "and basis = '100g' order by food_id, observed_at desc, id desc"),
+                    {"ids": ids}).all())
+            vals = [kcal[i] for i in ids if i in kcal]
+            assert len(vals) < 2 or max(vals) <= min(vals) * 1.1, (
+                f"{f.name}: {ids} share mt name {n!r} but kcal {sorted(vals)} differ by >10%")
 
 
 def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page():
