@@ -76,13 +76,15 @@ food = Table(
           postgresql_ops={"un": "gin_trgm_ops"}, postgresql_where=text("layer = 'core'")),
 )
 
-# A record's names in other languages than `food.name`, as its source states them (BLS German, CIQUAL French,
-# Frida Danish, Matvaretabellen Norwegian): search matches them too.
+# A record's names in other languages than `food.name`: origin 'source' is what its source states
+# (BLS German, CIQUAL French, Frida Danish, Matvaretabellen Norwegian — a refetch restates only
+# these), 'mt' is an agent-written translation (data/names/mt/*.tsv). Search matches them all.
 food_name = Table(
     "food_name",
     metadata,
     Column("food_id", Text, ForeignKey("food.id", ondelete="CASCADE"), primary_key=True),
     Column("lang", Text, primary_key=True),
+    Column("origin", Text, primary_key=True, server_default="source"),
     Column("name", Text, nullable=False),
     Index("food_name_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
           postgresql_ops={"un": "gin_trgm_ops"}),

@@ -106,6 +106,18 @@ def run(
      "off-images": jobs.backfill_off_images, "recipes": jobs.build_recipes}[job](**kwargs)
 
 
+names_app = typer.Typer(no_args_is_help=True, help="Names a record carries beyond its own.")
+app.add_typer(names_app, name="names")
+
+
+@names_app.command("load-mt")
+def names_load_mt() -> None:
+    """Sync the agent-written names of data/names/mt/*.tsv into food_name (origin='mt'). Idempotent."""
+    from fooddb.names import load_mt
+
+    typer.echo(json.dumps(load_mt()))
+
+
 match_app = typer.Typer(no_args_is_help=True, help="Product matching.")
 app.add_typer(match_app, name="match")
 

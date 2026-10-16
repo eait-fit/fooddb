@@ -177,6 +177,33 @@ def test_search_finds_a_record_by_its_name_in_the_tables_own_language():
             "bls:1": "Vollkornbrot, Weizen", "ciqual:1": "Camembert au lait cru"}
 
 
+def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(tmp_path):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    ingest.run("t", "r1", [rec()])
+    (tmp_path / "ru.tsv").write_text("fdc:1\tHummus, commercial\tхумус\nmissing:1\tGone\tпропал\n",
+                                   encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 1}  # the TSV's second record is not held: skipped
+    c = client()
+    assert names(c, {"q": "хумус"}) == ["fdc:1"]
+    # A table load restates only the source's own names: the agent-written row survives.
+    ingest.run("t", "r2", [rec(name="Hummus, commercial", names={"de": "Hummus, Kichererbsen"})])
+    assert names(c, {"q": "хумус"}) == ["fdc:1"]
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
+        )).scalar() == 1
+    # Idempotent, and a line gone from the TSV drops its row.
+    assert load_mt(tmp_path) == {"ru": 1}
+    (tmp_path / "ru.tsv").write_text("", encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 0}
+    assert names(c, {"q": "хумус"}) == []
+
+
 def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page():
     from fooddb import ingest
 
@@ -980,7 +1007,7 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     jobs.schedule()
     # FDC Branded and Fineli are off by default; BLS, CIQUAL, CoFID, Frida, Matvaretabellen, MEXT and TFDA fill a fresh install.
     assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "fetch_table",
-                         "fetch_table", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+                         "fetch_table", "fetch_table", "fetch_table", "match_products", "load_mt_names", "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
