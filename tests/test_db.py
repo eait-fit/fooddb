@@ -177,6 +177,17 @@ def test_search_finds_a_record_by_its_name_in_the_tables_own_language():
             "bls:1": "Vollkornbrot, Weizen", "ciqual:1": "Camembert au lait cru"}
 
 
+def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page():
+    from fooddb import ingest
+
+    # The best name match waits for review in full: it is not found, and the cut of ranked candidates
+    # taken before the visibility check still leaves room for the visible ones behind it.
+    ingest.run("t", "r1", [rec(id="fdc:9", name="Apple", review_all=True),
+                           rec(id="fdc:2", name="Apple pie"),
+                           rec(id="fdc:3", name="Apple strudel")])
+    assert names(client(), {"q": "apple", "limit": 2}) == ["fdc:2", "fdc:3"]
+
+
 def test_search_without_country_is_unchanged():
     from fooddb import ingest
 
