@@ -155,12 +155,15 @@ def _write(records: list[Record]) -> tuple[int, int]:
             # A late or retried older file must not roll the row back to older metadata.
             where=food.c.source_updated_at <= stmt.excluded.source_updated_at,
         ))
-        # A record that states names in other languages replaces its set; one that states none keeps it.
+        # A record that states names in other languages replaces its source-stated set; one that
+        # states none keeps it. origin='mt' rows (agent-written names) are never touched here.
         named = [r for r in latest_by_id.values() if r.names]
         if named:
-            conn.execute(food_name.delete().where(food_name.c.food_id.in_([r.id for r in named])))
+            conn.execute(food_name.delete().where(food_name.c.food_id.in_([r.id for r in named]),
+                                                  food_name.c.origin == "source"))
             conn.execute(insert(food_name).values(
-                [{"food_id": r.id, "lang": lang, "name": n[:500]} for r in named for lang, n in r.names.items()]))
+                [{"food_id": r.id, "lang": lang, "name": n[:500], "origin": "source"}
+                 for r in named for lang, n in r.names.items()]))
         n_obs = 0
         for i in range(0, len(obs), OBS_ROWS_PER_INSERT):
             n_obs += len(conn.execute(

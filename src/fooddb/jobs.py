@@ -100,6 +100,12 @@ def prune_request_log() -> None:
     logger.info(f"request log: {requestlog.prune()} rows past {requestlog.retention_days()} days deleted")
 
 
+def load_mt_names() -> None:
+    from fooddb.names import load_mt
+
+    logger.info(f"names mt: {load_mt()}")
+
+
 def read_label(photo: str, hints: dict[str, str], read: str | None = None) -> None:
     from fooddb.labels import intake
 
@@ -136,6 +142,9 @@ def schedule() -> None:
             q.upsert(fn, client_id=f"bootstrap-{name}", max_runtime_seconds=RUNTIME.get(name), **kwargs)
     if "snapshot" not in checked:
         q.upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
+    # The agent-written names ship with the code: BATCH lands the sync after the bootstrap fetches,
+    # so a fresh install names the records once they exist and a redeploy resyncs the TSVs.
+    q.upsert(load_mt_names, client_id="bootstrap-names-mt", priority=Priority.BATCH)
     # FDC and the national tables release a few times a year at most; a weekly check is plenty.
     for name, fn, kwargs in weekly:
         key = next(iter(kwargs.values()))
