@@ -16,18 +16,20 @@ _DIR = Path(__file__).parent / "synonyms"
 
 @cache
 def _words(cc: str) -> dict[str, list[str]] | None:
-    """The country's {lowercased word or phrase: [replacements]}, or None without a list."""
-    f = _DIR / f"{cc}.tsv"
-    if not f.exists():
-        return None
-    words = {}
-    for line in f.read_text(encoding="utf-8").splitlines():
-        if not (line := line.strip()) or line.startswith("#"):
+    """The country's {lowercased word or phrase: [replacements]}, or None without a list.
+    cc is only ever compared to a shipped list's name — it is never a path part itself."""
+    for f in _DIR.glob("*.tsv"):
+        if f.stem != cc:
             continue
-        word, *targets = (c.strip() for c in line.split("\t"))
-        if word and (targets := [t for t in targets if t]):
-            words[word.lower()] = targets
-    return words
+        words = {}
+        for line in f.read_text(encoding="utf-8").splitlines():
+            if not (line := line.strip()) or line.startswith("#"):
+                continue
+            word, *targets = (c.strip() for c in line.split("\t"))
+            if word and (targets := [t for t in targets if t]):
+                words[word.lower()] = targets
+        return words
+    return None
 
 
 def _match(words: dict[str, list[str]], lower: list[str], i: int):
