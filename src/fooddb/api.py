@@ -84,7 +84,6 @@ def version() -> dict:
 
 
 CANDIDATES = 20  # name rows ranked per result row before the visibility check
-COUNTRY_TIE = 0.1  # word similarity within this of the best match ranks by country first
 
 
 @app.get("/v1/foods", dependencies=READ)
@@ -101,30 +100,23 @@ def search(q: str = Query(min_length=2), include: str | None = None, limit: int 
     rk = countries.rank_sql(cc) if cc else "0"
     # A literal, not a parameter, so the planner can use the core-only name index.
     layer = "layer = any(:layers)" if include == "off" else "layer = 'core'"
-    # Within COUNTRY_TIE of the best match a name counts as tied, and the country's rank decides
-    # ("Roggenbrot" beats "Bread, rye" for de); below that, similarity first as before. Without a
-    # country rk is constant and this is plain similarity order.
-    top = "sim >= max(sim) over () - cast(:tie as real)"  # real, as word_similarity is: 0.9 is not >= 1.0 - 0.1 in double
     pids = _pids(
         f"""with cand as (
-               (select * from (select id, word_similarity(:q, name) as sim, length(name) as len, {rk} as rk
-                               from food where {layer} and :q <% name) m
-                order by {top} desc, case when {top} then rk end, sim desc, rk, len limit :k)
+               (select id, word_similarity(:q, name) as sim, length(name) as len, {rk} as rk
+                from food where {layer} and :q <% name
+                order by sim desc, rk, len limit :k)
                union all
-               (select * from (select food.id, word_similarity(:q, n.name) as sim, length(n.name) as len, {rk} as rk
-                               from food_name n join food on food.id = n.food_id
-                               where food.{layer} and :q <% n.name) m
-                order by {top} desc, case when {top} then rk end, sim desc, rk, len limit :k)
-           ), hit as (
-               select food.product_id, max(cand.sim) as sim, min(cand.rk) as rk, min(cand.len) as len
-               from cand join food on food.id = cand.id
-               where {resolve.VISIBLE}
-               group by food.product_id
+               (select food.id, word_similarity(:q, n.name), length(n.name), {rk}
+                from food_name n join food on food.id = n.food_id
+                where food.{layer} and :q <% n.name
+                order by 2 desc, 4, 3 limit :k)
            )
-           select product_id from hit
-           order by {top} desc, case when {top} then rk end, sim desc, rk, len
+           select food.product_id from cand join food on food.id = cand.id
+           where {resolve.VISIBLE}
+           group by food.product_id
+           order by max(cand.sim) desc, min(cand.rk), min(cand.len)
            limit :limit""",
-        q=q, layers=resolve.layers_for(include), limit=limit, k=limit * CANDIDATES, tie=COUNTRY_TIE,
+        q=q, layers=resolve.layers_for(include), limit=limit, k=limit * CANDIDATES,
         **({"off_markets": countries.off_markets(cc)} if cc else {}),
     )
     return {"items": resolve.products(pids, include)}
