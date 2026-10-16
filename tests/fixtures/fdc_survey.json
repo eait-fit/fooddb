@@ -1,0 +1,67 @@
+{
+ "SurveyFoods": [
+  {
+   "foodClass": "Survey",
+   "description": "Milk, human",
+   "foodCode": "11000000",
+   "dataType": "Survey (FNDDS)",
+   "fdcId": 2705383,
+   "publicationDate": "10/31/2024",
+   "wweiaFoodCategory": {
+    "wweiaFoodCategoryDescription": "Human milk",
+    "wweiaFoodCategoryCode": 3298314
+   },
+   "foodNutrients": []
+  },
+  {
+   "foodClass": "Survey",
+   "description": "Jambalaya with meat and rice",
+   "foodCode": "27363100",
+   "dataType": "Survey (FNDDS)",
+   "fdcId": 2706727,
+   "publicationDate": "10/31/2024",
+   "wweiaFoodCategory": {
+    "wweiaFoodCategoryDescription": "Rice mixed dishes",
+    "wweiaFoodCategoryCode": 3301002
+   },
+   "foodNutrients": [
+    {
+     "type": "FoodNutrient",
+     "nutrient": {
+      "id": 1003,
+      "name": "Protein",
+      "unitName": "g"
+     },
+     "amount": 13.8
+    },
+    {
+     "type": "FoodNutrient",
+     "nutrient": {
+      "id": 1004,
+      "name": "Total lipid (fat)",
+      "unitName": "g"
+     },
+     "amount": 7.97
+    },
+    {
+     "type": "FoodNutrient",
+     "nutrient": {
+      "id": 1005,
+      "name": "Carbohydrate, by difference",
+      "unitName": "g"
+     },
+     "amount": 8.65
+    },
+    {
+     "type": "FoodNutrient",
+     "nutrient": {
+      "id": 1008,
+      "name": "Energy",
+      "unitName": "kcal"
+     },
+     "amount": 161
+    }
+   ]
+  }
+ ]
+}

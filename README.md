@@ -39,7 +39,7 @@ flowchart LR
 | Source | Country | Licence | What is fetched | How often | Contributes | Records, prod 15 Oct 2026 |
 |---|---|---|---|---|---|---|
 | Open Food Facts | worldwide | ODbL-1.0 | JSONL delta files at `static.openfoodfacts.org/data/delta/`; the ~13 GB dump `openfoodfacts-products.jsonl.gz` runs once, by hand | deltas every 6 h | barcoded products — the `off` layer | 3,028,974 |
-| USDA FoodData Central | US | CC0-1.0 | JSON zips under `fdc.nal.usda.gov/fdc-datasets/` — Foundation and SR Legacy (Branded is off by default) | weekly; only a new release downloads | generic foods and branded products | 8,156 |
+| USDA FoodData Central | US | CC0-1.0 | JSON zips under `fdc.nal.usda.gov/fdc-datasets/` — Foundation, SR Legacy and Survey (FNDDS: foods as eaten, mixed dishes included) (Branded is off by default) | weekly; only a new release downloads | generic foods, dishes and branded products | 8,156 |
 | BLS | Germany | CC-BY-4.0 | the workbook zip linked from `blsdb.de/download` | weekly; only a changed zip downloads | the German composition table | 7,140 |
 | CIQUAL | France | etalab-2.0 | the Excel table linked from `ciqual.anses.fr` | weekly; only a new release downloads | the French composition table | 3,484 |
 | CoFID | UK | OGL-UK-3.0 | the dataset workbook on the `gov.uk` publication page | weekly; only a new attachment downloads | the UK composition table | 2,885 |

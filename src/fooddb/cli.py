@@ -71,7 +71,7 @@ def enqueue(
     fetcher: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     max_files: int = typer.Option(1, help="off: newest N delta files"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
-    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
+    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | survey | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
 ) -> None:
     """Queue a fetch for the worker."""
@@ -85,7 +85,7 @@ def enqueue(
 def run(
     job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
-    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
+    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | survey | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
     full: bool = typer.Option(False, "--full", help="snapshot: rewrite every product, not just the changed ones"),
     force: bool = typer.Option(False, "--force", help="table, fdc, off-dump: load again even when this release is already loaded"),

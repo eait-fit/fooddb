@@ -14,6 +14,7 @@ MAX_AGE = {
     "fdc-foundation": timedelta(days=8),
     "fdc-sr_legacy": timedelta(days=8),
     "fdc-branded": timedelta(days=8),
+    "fdc-survey": timedelta(days=8),
     "bls": timedelta(days=8),
     "ciqual": timedelta(days=8),
     "cofid": timedelta(days=8),

@@ -1430,7 +1430,7 @@ flowchart LR
   nothing about the age of the data. A database error gives a 500, not a 200.
 - `/healthz` shows freshness (`api.py:42`). It compares each `fetcher_check` row and the newest
   `snapshot.built_at` with a maximum age (`health.py:12`): `off-delta` 12 h, `fdc-foundation`,
-  `fdc-sr_legacy`, `bls`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
+  `fdc-sr_legacy`, `fdc-survey`, `bls`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
   `fineli` (8 days) count only when they are on (`health.py:35`). One stale entry or one entry with
   no row gives 503.
 - A fetch that finds nothing new also counts as a successful check (`health.py:40`,

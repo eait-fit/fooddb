@@ -42,6 +42,19 @@ def test_fdc_branded_records_carry_barcode_brand_serving_and_category(tmp_path):
     assert water.gtin14 == "00083046155385"
 
 
+def test_fdc_survey_records_are_fndds_dishes_with_their_wweia_category(tmp_path):
+    from fooddb.fetchers import fdc
+
+    path = tmp_path / "survey.zip"
+    with zipfile.ZipFile(path, "w") as z:
+        z.write(FIXTURES / "fdc_survey.json", "surveyDownload.json")
+    with zipfile.ZipFile(path) as z, z.open(z.namelist()[0]) as f:
+        # "Milk, human" ships with no nutrients and is skipped; a mixed dish is a core record.
+        (jambalaya,) = fdc.records(fdc.json_items(f, fdc.DATASETS["survey"][1]))
+    assert jambalaya.name == "Jambalaya with meat and rice" and jambalaya.source == "fdc" and jambalaya.layer == "core"
+    assert jambalaya.categories == ["Rice mixed dishes"] and jambalaya.values["ENERC_KCAL"] > 0
+
+
 def test_fdc_branded_is_off_by_default(monkeypatch):
     from fooddb import health
 
