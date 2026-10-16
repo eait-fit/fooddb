@@ -49,9 +49,11 @@ def by_name(q: str, include: str | None = None, limit: int = 20, country: str | 
     layer = _layers(include) if include == "off" else food.c.layer == literal_column("'core'")
 
     def best(name, source) -> Select:
-        sim, length = func.word_similarity(q, name), func.length(name)
+        # f_unaccent on both sides: the query may carry the marks or lack them, so may the name.
+        uq, un = func.f_unaccent(q), func.f_unaccent(name)
+        sim, length = func.word_similarity(uq, un), func.length(name)
         return (select(food.c.id, sim.label("sim"), length.label("len"), rk.label("rk"))
-                .select_from(source).where(layer, literal(q).op("<%")(name))
+                .select_from(source).where(layer, uq.op("<%")(un))
                 .order_by(sim.desc(), *([rk] if cc else []), length).limit(limit * CANDIDATES))
 
     cand = union_all(best(food.c.name, food),

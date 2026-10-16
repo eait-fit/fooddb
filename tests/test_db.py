@@ -245,6 +245,41 @@ def test_search_country_prefers_an_off_record_sold_there():
     assert names(c, params | {"country": "es"}) == ["off:04006381333931", "fdc:2"]
 
 
+def test_search_ignores_diacritics_in_the_query_and_the_name():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Paëlla"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Käse"),
+                           rec(id="fdc:2", name="Paella pan"),
+                           rec(id="ciqual:2", source="ciqual", licence="etalab-2.0", name="Burnt cream",
+                               names={"fr": "Crème brûlée"})])
+    c = client()
+    # Both sides pass through f_unaccent: the query may have the marks or lack them, so may the name.
+    assert names(c, {"q": "paella"}) == ["ciqual:1", "fdc:2"]
+    assert names(c, {"q": "Paëlla"}) == ["ciqual:1", "fdc:2"]
+    assert names(c, {"q": "kase"}) == ["bls:1"]
+    # The other-language names too (food_name): "creme brulee" finds "Crème brûlée".
+    assert names(c, {"q": "creme brulee"}) == ["ciqual:2"]
+
+
+def test_search_without_off_reads_names_through_the_core_index(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest, search
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie")])
+    seen, run = [], search._pids
+    monkeypatch.setattr(search, "_pids", lambda stmt: seen.append(stmt) or run(stmt))
+    search.by_name("apple")
+    sql = str(seen[0].compile(engine(), compile_kwargs={"literal_binds": True}))
+    with engine().connect() as conn:
+        conn.execute(text("set local enable_seqscan = off"))
+        # exec_driver_sql: the compiled statement's <% operator must reach Postgres unescaped.
+        plan = "\n".join(conn.exec_driver_sql(f"explain {sql}").scalars())
+    assert "food_core_name_trgm_idx" in plan
+
+
 def test_country_refuses_an_unknown_code():
     c = client()
     assert c.get("/v1/foods", params={"q": "apple", "country": "xx"}).status_code == 422
