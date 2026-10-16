@@ -83,29 +83,38 @@ def version() -> dict:
     return {"version": app.version, "sha": os.environ.get("FOODDB__BACKEND__GIT_SHA") or None}
 
 
+CANDIDATES = 20  # name rows ranked per result row before the visibility check
+
+
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
            country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
                                        "matches, that country's sources rank first")) -> dict:
     # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw"), over each
     # record's name and its names in other languages (`food_name`: "Vollkornbrot" finds BLS's wholemeal bread).
-    # Two index scans joined by union all: an OR across both tables would scan every record.
+    # Each name index yields its best CANDIDATES rows in the final order first; only those pay the visibility
+    # check (a correlated lookup per row: over 16k OFF matches for "rye bread" it was most of a second).
+    # ponytail: a product whose every top-ranked record is invisible can fall past the cut; CANDIDATES per
+    # result row keeps that far below `limit`.
     cc = countries.code(country)
-    rank = f"min({countries.rank_sql(cc)}), " if cc else ""
+    rk = countries.rank_sql(cc) if cc else "0"
     pids = _pids(
-        f"""with hit as (
-               select product_id, source, markets, word_similarity(:q, name) as sim, length(name) as len
-               from food where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
+        f"""with cand as (
+               (select id, word_similarity(:q, name) as sim, length(name) as len, {rk} as rk
+                from food where layer = any(:layers) and :q <% name
+                order by sim desc, rk, len limit :k)
                union all
-               select food.product_id, food.source, food.markets, word_similarity(:q, n.name), length(n.name)
-               from food_name n join food on food.id = n.food_id
-               where food.layer = any(:layers) and {resolve.VISIBLE} and :q <% n.name
+               (select food.id, word_similarity(:q, n.name), length(n.name), {rk}
+                from food_name n join food on food.id = n.food_id
+                where food.layer = any(:layers) and :q <% n.name
+                order by 2 desc, 4, 3 limit :k)
            )
-           select product_id from hit
-           group by product_id
-           order by max(sim) desc, {rank}min(len)
+           select food.product_id from cand join food on food.id = cand.id
+           where {resolve.VISIBLE}
+           group by food.product_id
+           order by max(cand.sim) desc, min(cand.rk), min(cand.len)
            limit :limit""",
-        q=q, layers=resolve.layers_for(include), limit=limit,
+        q=q, layers=resolve.layers_for(include), limit=limit, k=limit * CANDIDATES,
         **({"off_markets": countries.off_markets(cc)} if cc else {}),
     )
     return {"items": resolve.products(pids, include)}
