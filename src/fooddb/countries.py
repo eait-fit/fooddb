@@ -292,16 +292,5 @@ def code(country: str | None) -> str | None:
     return cc
 
 
-def rank_sql(cc: str) -> str:
-    """A record's rank for the country's ordering: listed sources by position, an OFF record
-    sold there just below them, and everything else last. Used inside `min(...)`, grouped by
-    product, so any preferred record of a product counts."""
-    sources = PREFERRED.get(cc, ())
-    n = len(sources)
-    cases = [f"when '{s}' then {i}" for i, s in enumerate(sources)]
-    cases.append(f"when 'off' then case when :off_markets && markets then {n} else {n + 1} end")
-    return f"case source {' '.join(cases)} else {n + 1} end"
-
-
 def off_markets(cc: str) -> list[str]:
     return [OFF_TAG[cc]]

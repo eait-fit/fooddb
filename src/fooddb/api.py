@@ -14,13 +14,12 @@ from mcp.server import MCPServer
 from mcp.server.mcpserver import Context
 from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import BaseModel, Field
-from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 from starlette.templating import Jinja2Templates
 
-from fooddb import admin, auth, brands, countries, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
-from fooddb.db import engine
+from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
+from fooddb import search as find
 from fooddb.labels import photos
 
 
@@ -50,13 +49,7 @@ def out_of_credits(_request: Request, e: auth.OutOfCredits) -> JSONResponse:
     return JSONResponse({"detail": e.detail, "buy": _buy_url()}, 402)
 
 
-def _pids(sql: str, **params) -> list[int]:
-    with engine().connect() as conn:
-        return list(conn.execute(text(sql), params).scalars())
-
-
-def _one(pids: list[int], include: str | None, what: str) -> dict:
-    found = resolve.products(pids, include)
+def _one(found: list[dict], include: str | None, what: str) -> dict:
     if not found:
         raise HTTPException(404, f"{what} not found" + ("" if include == "off" else " in core; try include=off"))
     return found[0]
@@ -65,9 +58,7 @@ def _one(pids: list[int], include: str | None, what: str) -> dict:
 @app.get("/livez")
 def livez() -> dict:
     """The process is up and reaches the database. Says nothing about data freshness."""
-    with engine().connect() as conn:
-        n = conn.execute(text("select count(*) from product where merged_into is null")).scalar_one()
-    return {"ok": True, "products": n}
+    return {"ok": True, "products": health.live_products()}
 
 
 @app.get("/healthz")
@@ -83,56 +74,22 @@ def version() -> dict:
     return {"version": app.version, "sha": os.environ.get("FOODDB__BACKEND__GIT_SHA") or None}
 
 
-CANDIDATES = 20  # name rows ranked per result row before the visibility check
-
-
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
            country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
                                        "matches, that country's sources rank first")) -> dict:
-    # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw"), over each
-    # record's name and its names in other languages (`food_name`: "Vollkornbrot" finds BLS's wholemeal bread).
-    # Each name index yields its best CANDIDATES rows in the final order first; only those pay the visibility
-    # check (a correlated lookup per row: over 16k OFF matches for "rye bread" it was most of a second).
-    # ponytail: a product whose every top-ranked record is invisible can fall past the cut; CANDIDATES per
-    # result row keeps that far below `limit`.
-    cc = countries.code(country)
-    rk = countries.rank_sql(cc) if cc else "0"
-    # A literal, not a parameter, so the planner can use the core-only name index.
-    layer = "layer = any(:layers)" if include == "off" else "layer = 'core'"
-    pids = _pids(
-        f"""with cand as (
-               (select id, word_similarity(:q, name) as sim, length(name) as len, {rk} as rk
-                from food where {layer} and :q <% name
-                order by sim desc, rk, len limit :k)
-               union all
-               (select food.id, word_similarity(:q, n.name), length(n.name), {rk}
-                from food_name n join food on food.id = n.food_id
-                where food.{layer} and :q <% n.name
-                order by 2 desc, 4, 3 limit :k)
-           )
-           select food.product_id from cand join food on food.id = cand.id
-           where {resolve.VISIBLE}
-           group by food.product_id
-           order by max(cand.sim) desc, min(cand.rk), min(cand.len)
-           limit :limit""",
-        q=q, layers=resolve.layers_for(include), limit=limit, k=limit * CANDIDATES,
-        **({"off_markets": countries.off_markets(cc)} if cc else {}),
-    )
-    return {"items": resolve.products(pids, include)}
+    return {"items": find.by_name(q, include, limit, country)}
 
 
 @app.get("/v1/foods/{product_id}", dependencies=READ)
 def get_product(product_id: int, include: str | None = None) -> dict:
-    return _one([product_id], include, "product")
+    return _one(resolve.products([product_id], include), include, "product")
 
 
 @app.get("/v1/records/{record_id}", dependencies=READ)
 def get_record(record_id: str, include: str | None = None) -> dict:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
-    pids = _pids(f"select product_id from food where id = :id and layer = any(:layers) and {resolve.VISIBLE}",
-                 id=record_id, layers=resolve.layers_for(include))
-    return _one(pids, include, "record")
+    return _one(find.by_record(record_id, include), include, "record")
 
 
 @app.get("/v1/products/{barcode}", dependencies=READ)
@@ -142,18 +99,7 @@ def by_barcode(barcode: str, include: str | None = None,
     code = gtin.normalize(barcode)
     if code is None:
         raise HTTPException(422, "not a valid global GTIN")
-    if (cc := countries.code(country)) is None:
-        pids = _pids(
-            f"select distinct product_id from food where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}",
-            code=code, layers=resolve.layers_for(include))
-    else:
-        pids = _pids(
-            f"""select product_id from food
-               where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}
-               group by product_id
-               order by min({countries.rank_sql(cc)})""",
-            code=code, layers=resolve.layers_for(include), off_markets=countries.off_markets(cc))
-    items = resolve.products(pids, include)
+    items = find.by_barcode(code, include, country)
     if not items:
         raise HTTPException(404, "product not found" + ("" if include == "off" else " in core; try include=off"))
     return {"items": items}
