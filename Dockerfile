@@ -8,6 +8,7 @@ RUN uv sync --frozen --no-dev --no-install-project
 COPY src ./src
 COPY alembic ./alembic
 COPY alembic.ini ./
+COPY data ./data
 RUN uv sync --frozen --no-dev
 
 FROM python:3.14-slim

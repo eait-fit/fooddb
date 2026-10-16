@@ -1007,7 +1007,7 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     jobs.schedule()
     # FDC Branded and Fineli are off by default; BLS, CIQUAL, CoFID, Frida, Matvaretabellen, MEXT and TFDA fill a fresh install.
     assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "fetch_table",
-                         "fetch_table", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+                         "fetch_table", "fetch_table", "fetch_table", "match_products", "load_mt_names", "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]

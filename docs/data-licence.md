@@ -15,6 +15,7 @@ served field and value carries the licence of its source in its `licence` tag.
 | Core data from TFDA (Taiwan), tagged `OGDL-Taiwan-1.0` | [Open Government Data License, version 1.0](https://data.gov.tw/license) |
 | Core data from MEXT (Japan), tagged `mext-free-use` | Free use, with the source cited. See the [MEXT terms of use](https://www.mext.go.jp/a_menu/syokuhinseibun/index.htm) |
 | Core data computed by the recipe layer, tagged `recipe` | the most restrictive licence among each dish's ingredient sources; the product's `attribution` lists every ingredient source's text |
+| ru/es record names in `data/names/mt/` written by an AI agent, `food_name` `origin='mt'` | CC0-1.0 |
 | Other core data | fooddb's own terms |
 | The Open Food Facts layer (`off`, tagged `ODbL-1.0`) | [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) |
 
