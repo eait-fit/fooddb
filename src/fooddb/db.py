@@ -24,6 +24,7 @@ from sqlalchemy import (
     Numeric,
     Table,
     Text,
+    column,
     create_engine,
     false,
     func,
@@ -67,10 +68,12 @@ food = Table(
     Column("fetched_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
     Index("food_gtin14_idx", "gtin14"),
     Index("food_product_idx", "product_id"),
-    Index("food_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    # Names match diacritic-free through f_unaccent (migration 0021): "paella" finds "Paëlla".
+    Index("food_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}),
     # The core layer alone (~30k of ~3M records): a search without OFF reads only these names.
-    Index("food_core_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"},
-          postgresql_where=text("layer = 'core'")),
+    Index("food_core_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}, postgresql_where=text("layer = 'core'")),
 )
 
 # A record's names in other languages than `food.name`, as its source states them (BLS German, CIQUAL French,
@@ -81,7 +84,8 @@ food_name = Table(
     Column("food_id", Text, ForeignKey("food.id", ondelete="CASCADE"), primary_key=True),
     Column("lang", Text, primary_key=True),
     Column("name", Text, nullable=False),
-    Index("food_name_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    Index("food_name_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}),
 )
 
 observation = Table(
