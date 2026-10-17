@@ -2876,26 +2876,1456 @@ bls:S241700	Chocolate ice cream, covered with chocolate	мороженое шо�
 bls:S241800	Ice cream covered with chocolate, caramel and almonds	мороженое в шоколадной глазури с карамелью и миндалём
 bls:S241900	Vanilla ice cream, covered with chocolate and caramel	мороженое ванильное в шоколадной глазури с карамелью
 bls:S242000	Chocolate ice cream	мороженое шоколадное
+bls:S242200	Caramel ice cream	мороженое карамельное
+bls:S242300	Walnut ice cream	мороженое ореховое
+bls:S242400	Ice cream mixed (chocolate, vanilla, fruit)	мороженое ассорти (шоколадное, ванильное, фруктовое)
+bls:S242500	Ice cream mixed (chocolate, vanilla, nut)	мороженое ассорти (шоколадное, ванильное, ореховое)
+bls:S242600	Ice cream mixed (chocolate, nut)	мороженое ассорти (шоколадное, ореховое)
+bls:S242700	Ice cream mixed (caramel, vanilla)	мороженое ассорти (карамельное, ванильное)
+bls:S242800	Vanilla ice cream with egg liqueur	мороженое ванильное с яичным ликёром
+bls:S242900	Ice cream mixed (chocolate, fruit, coffee)	мороженое ассорти (шоколадное, фруктовое, кофейное)
+bls:S243000	Ice cream mixed (chocolate, vanilla)	мороженое ассорти (шоколадное, ванильное)
+bls:S243200	Ice cream mixed (chocolate, vanilla, nut) with egg liqueur	мороженое ассорти (шоколадное, ванильное, ореховое) с яичным ликёром
+bls:S243300	Ice cream mixed (chocolate, vanilla, coffee, caramel)	мороженое ассорти (шоколадное, ванильное, кофейное, карамельное)
+bls:S243400	Ice cream mixed (chocolate, vanilla, caramel)	мороженое ассорти (шоколадное, ванильное, карамельное)
+bls:S243600	Ice cream mixed (chocolate, nut, fruit)	мороженое ассорти (шоколадное, ореховое, фруктовое)
+bls:S243800	Ice cream mixed (nut, vanilla, caramel)	мороженое ассорти (ореховое, ванильное, карамельное)
+bls:S243900	Ice cream mixed (fruit, vanilla) with egg liqueur	мороженое ассорти (фруктовое, ванильное) с яичным ликёром
+bls:S244000	Ice cream mixed (fruit, vanilla)	мороженое ассорти (фруктовое, ванильное)
+bls:S244100	Ice cream mixed (chocolate, vanilla, fruit) with egg liqueur	мороженое ассорти (шоколадное, ванильное, фруктовое) с яичным ликёром
+bls:S244200	Ice cream mixed (chocolate, vanilla, coffee, fruit)	мороженое ассорти (шоколадное, ванильное, кофейное, фруктовое)
+bls:S244300	Ice cream mixed (chocolate, fruit )	мороженое ассорти (шоколадное, фруктовое)
+bls:S244400	Ice cream mixed (fruit, vanilla, nut)	мороженое ассорти (фруктовое, ванильное, ореховое)
+bls:S244500	Ice cream mixed (fruit, vanilla, nut, chocolate)	мороженое ассорти (фруктовое, ванильное, ореховое, шоколадное)
+bls:S244600	Ice cream mixed (fruit, vanilla, nut, caramel)	мороженое ассорти (фруктовое, ванильное, ореховое, карамельное)
+bls:S244800	Ice cream mixed (chocolate, coffee)	мороженое ассорти (шоколадное, кофейное)
+bls:S311000	Hard candy	леденцы
+bls:S320000	Boiled sweets filled/hard candy filled	леденцы с начинкой
+bls:S330000	Soft caramels	ириски мягкие
+bls:S331000	Toffee/cream toffee	тоффи сливочный
+bls:S332000	Cream caramel	карамельки сливочные
+bls:S340000	Soft caramel filled	ириски с начинкой
+bls:S341000	Caramel candy sugar-free	карамельные леденцы без сахара
+bls:S342000	Fruit gum sugar-free	мармелад жевательный фруктовый без сахара
+bls:S351000	Fondant/fondant mass	помадная масса
+bls:S352000	Fondant confectionery covered with bittersweet chocolate	конфеты-помадки в тёмном шоколаде
+bls:S353000	Peppermint creams	помадки мятные
+bls:S354000	Coconut fondant flakes	кокосовая помадная стружка
+bls:S355000	Fondant confectionery	конфеты-помадки
+bls:S356000	Fondant cream	помадный крем
+bls:S358100	Chocolate fondant	помадка шоколадная
+bls:S358300	Vanilla fondant	помадка ванильная
+bls:S361000	Gum drops with fruit essence	мармелад фруктовый
+bls:S372000	Marshmallow	зефир-маршмеллоу
+bls:S380000	Compressed sweet/candy	таблетированные леденцы
+bls:S410000	Liquorice	лакрица
+bls:S420000	Marzipan	марципанная масса
+bls:S421000	Marzipan raw paste	марципановая масса-сырец
+bls:S440000	Jelly fruit	желейные фрукты
+bls:S450000	Nougat	нуга
+bls:S451000	Nut nougat raw paste	ореховая нуговая масса
+bls:S461000	Nonpareil	нонпарель
+bls:S462000	Sugar beads/sugar sprinkles	сахарный бисер
+bls:S463000	Hundreds and Thousands sprinkles	разноцветная сахарная посыпка
+bls:S464000	Chocolate sugar-coated	шоколадные драже
+bls:S465000	Almond roasted, sugar-coated	миндаль жареный в сахарной оболочке
+bls:S466000	Hazelnut roasted, sugar-coated	фундук жареный в сахарной оболочке
+bls:S467000	Peanut roasted, sugar-coated	арахис жареный в сахарной оболочке
+bls:S472200	Cherry candied	вишня кандированная
+bls:S475100	Pineapple candied	ананас кандированный
+bls:S478100	Ginger candied	имбирь кандированный
+bls:S491000	Sesame brittle	кунжутный грильяж
+bls:S492000	Peanut brittle	арахисовый грильяж
+bls:S493000	Hazelnut brittle	ореховый грильяж
+bls:S500000	Chocolate	шоколад
+bls:S530000	Milk chocolate	молочный шоколад
+bls:S530300	Milk chocolate filled with caramel	молочный шоколад с карамельной начинкой
+bls:S530700	Milk chocolate filled with fruit cream	молочный шоколад с фруктовым кремом
+bls:S530800	Milk chocolate with truffle filling (alcoholic)	молочный шоколад с трюфельной начинкой (с алкоголем)
+bls:S531200	Milk chocolate filled with almond-caramel	молочный шоколад с миндальной карамелью
+bls:S532000	Milk chocolate with puffed rice	молочный шоколад с воздушным рисом
+bls:S533000	Flaky brittle covered with whole milk chocolate	слоёный грильяж в молочном шоколаде
+bls:S535000	Milk chocolate filled with nougat	молочный шоколад с нугой
+bls:S536000	Whole milk chocolate with hazelnuts	молочный шоколад с фундуком
+bls:S537000	Whole milk chocolate with almonds	молочный шоколад с миндалём
+bls:S538000	Milk chocolate with peanuts	молочный шоколад с арахисом
+bls:S538300	Whole milk chocolate filled with fruit-vanilla cream	молочный шоколад с фруктово-ванильным кремом
+bls:S538400	Whole milk chocolate with raisins and hazelnuts (alcoholic)	молочный шоколад с изюмом и фундуком (с алкоголем)
+bls:S538500	Whole milk chocolate with cereal flakes	молочный шоколад с зерновыми хлопьями
+bls:S538600	Whole milk chocolate with caramel filling (alcoholic)	молочный шоколад с карамельной начинкой (с алкоголем)
+bls:S538700	Whole milk chocolate with truffle filling (alcoholic)	молочный шоколад с трюфельной начинкой (с алкоголем)
+bls:S538800	Whole milk chocolate filled with coconut cream	молочный шоколад с кокосовым кремом
+bls:S538900	Whole milk chocolate with alcoholic filling	молочный шоколад с алкогольной начинкой
+bls:S539000	Whole milk chocolate filled with mocha/coffee cream	молочный шоколад с кремом мокко/кофе
+bls:S539100	Whole milk chocolate filled with caramel	молочный шоколад с карамельной начинкой
+bls:S539200	Whole milk chocolate filled with fruit cream	молочный шоколад с фруктовым кремом
+bls:S539300	Whole milk chocolate with nut-spice cream	молочный шоколад с орехово-пряным кремом
+bls:S539700	Whole milk chocolate with raisins and hazelnuts	молочный шоколад с изюмом и фундуком
+bls:S539900	Whole milk chocolate	молочный шоколад
+bls:S541000	Whole milk chocolate with hazelnuts and cornflakes	молочный шоколад с фундуком и кукурузными хлопьями
+bls:S541600	Whole milk chocolate filled with nougat	молочный шоколад с нугой
+bls:S550000	Cream chocolate	сливочный шоколад
+bls:S551000	Cream chocolate with mocha/coffee	сливочный шоколад с мокко/кофе
+bls:S551200	Cream chocolate filled with caramel	сливочный шоколад с карамельной начинкой
+bls:S560000	Bittersweet/semisweet chocolate	шоколад полугорький
+bls:S560400	Bittersweet/semisweet chocolate, with hazelnuts	шоколад полугорький с фундуком
+bls:S560500	Bittersweet/semisweet chocolate, filled with mocha/coffee	шоколад полугорький с мокко/кофе
+bls:S560600	Bittersweet/semisweet chocolate, filled with coconut cream	шоколад полугорький с кокосовым кремом
+bls:S560700	Bittersweet/semisweet chocolate, filled with peppermint cream	шоколад полугорький с мятным кремом
+bls:S561500	Bittersweet/semisweet chocolate, filled with marzipan	шоколад полугорький с марципаном
+bls:S570000	Dark chocolate	тёмный шоколад
+bls:S570100	Dark chocolate filled with marzipan (alcoholic)	тёмный шоколад с марципаном (с алкоголем)
+bls:S570300	Dark chocolate with hazelnuts	тёмный шоколад с фундуком
+bls:S570500	Dark chocolate with spice cream	тёмный шоколад с пряным кремом
+bls:S570700	Dark chocolate filled with fruit cream	тёмный шоколад с фруктовым кремом
+bls:S570800	Dark chocolate filled with peppermint cream	тёмный шоколад с мятным кремом
+bls:S570900	Dark chocolate filled with coffee	тёмный шоколад с кофейной начинкой
+bls:S571000	Dark chocolate filled with caramel	тёмный шоколад с карамельной начинкой
+bls:S571300	Dark chocolate filled with fruit cream (alcoholic)	тёмный шоколад с фруктовым кремом (с алкоголем)
+bls:S571400	Dark chocolate filled with truffles	тёмный шоколад с трюфельной начинкой
+bls:S580000	Chocolate white	белый шоколад
+bls:S580200	Chocolate white, filled with coffee	белый шоколад с кофейной начинкой
+bls:S580300	Chocolate white, filled with coconut chips	белый шоколад с кокосовой стружкой
+bls:S580600	Chocolate white, with cornflakes	белый шоколад с кукурузными хлопьями
+bls:S580700	Chocolate white, with hazelnuts	белый шоколад с фундуком
+bls:S581000	Whole milk chocolate bar filled with nougat cream and waffle	батончик молочного шоколада с нуговым кремом и вафлей
+bls:S581100	Milk chocolate bar filled with caramel, roasted peanuts and soft nougat	батончик молочного шоколада с карамелью, жареным арахисом и мягкой нугой
+bls:S581200	Milk chocolate bar filled with caramel cream and roasted hazelnuts	батончик молочного шоколада с карамельным кремом и жареным фундуком
+bls:S581300	Milk chocolate bar filled with wholemeal biscuit	батончик молочного шоколада с цельнозерновым печеньем
+bls:S581400	Milk chocolate bar filled with caramel and crispy biscuit	батончик молочного шоколада с карамелью и хрустящим печеньем
+bls:S581500	Milk chocolate bar filled with crispy waffle	батончик молочного шоколада с хрустящей вафлей
+bls:S581600	Whole milk chocolate bar filled with strawberry -yogurt cream	батончик молочного шоколада с клубнично-йогуртовым кремом
+bls:S581700	Caramel-toffee filled with nougat cream, chocolate and hazelnut	ирис-тоффи с нуговым кремом, шоколадом и фундуком
+bls:S581800	Milk chocolate bar with caramel-waffle and puffed cereals	батончик молочного шоколада с карамельной вафлей и воздушной крупой
+bls:S581900	Coconut praline with cream-filling and blanched almond	кокосовое пралине с кремом и бланшированным миндалём
+bls:S582000	Crispy praline with milk chocolate, cornflakes and almond bits	пралине хрустящее с молочным шоколадом, кукурузными хлопьями и кусочками миндаля
+bls:S582100	Wafer square filled with cocoa cream and roasted hazelnut bits	вафельный квадрат с какао-кремом и жареным фундуком
+bls:S582200	Chocolate kiss (chocolate coated egg meringue on waffle base)	шоколадный зефир в глазури
+bls:S582300	Milk chocolate with almond-nougat	молочный шоколад с миндальной нугой
+bls:S582400	Sponge cake slice filled with milk cream	бисквитный пласт с молочным кремом
+bls:S582500	Milk chocolate bar filled with soft nougat/with soft nougat and caramel	батончик молочного шоколада с мягкой нугой (и карамелью)
+bls:S582600	Whole milk chocolate bar filled with milk cream	батончик молочного шоколада с молочным кремом
+bls:S610000	Pralines	конфеты-пралине
+bls:S620000	Pralines filled	пралине с начинкой
+bls:S621000	Pralines with alcoholic filling	пралине с алкогольной начинкой
+bls:S621100	Pralines with brandy-cherry filling	пралине с вишней в коньяке
+bls:S621200	Pralines with brandy filling	пралине с коньячной начинкой
+bls:S622000	Pralines filled with marzipan	пралине с марципаном
+bls:S622100	Pralines filled with almond-caramel	пралине с миндальной карамелью
+bls:S622300	Pralines filled with peppermint cream	пралине с мятным кремом
+bls:S622400	Pralines filled with coconut cream	пралине с кокосовым кремом
+bls:S622500	Nut pralines (alcoholic)	пралине ореховые (с алкоголем)
+bls:S622600	Pralines filled with caramel cream	пралине с карамельным кремом
+bls:S622800	Pralines filled with spice cream	пралине с пряным кремом
+bls:S622900	Cream pralines	пралине сливочные
+bls:S623000	Nut pralines	пралине ореховые
+bls:S623100	Pralines with fruit-nut filling (alcoholic)	пралине с фруктово-ореховой начинкой (с алкоголем)
+bls:S623200	Nut truffle pralines (alcoholic)	пралине ореховый трюфель (с алкоголем)
+bls:S623400	Pralines filled with fruit cream (alcoholic)	пралине с фруктовым кремом (с алкоголем)
+bls:S623600	Pralines filled with vanilla cream	пралине с ванильным кремом
+bls:S623700	Truffle pralines (alcoholic)	пралине трюфель (с алкоголем)
+bls:S624000	Pralines filled with fruit cream	пралине с фруктовым кремом
+bls:S625000	Truffle pralines	пралине трюфель
+bls:S627000	Pralines filled with coffee	пралине с кофейной начинкой
+bls:S628000	Pralines filled with milk/yogurt cream	пралине с молочно-йогуртовым кремом
+bls:S640000	Rum truffles	ромовые трюфели
+bls:S660000	Chocolate sprinkles	шоколадная посыпка
+bls:S671000	Glazing chocolate, bittersweet/semi-sweet	шоколадная глазурь полугорькая
+bls:S672000	Chocolate decorations	шоколадный декор
+bls:S680000	Ice confectionery	ледяные конфеты
+bls:S691000	Crispbread pieces in whole milk chocolate	кусочки хлебцев в молочном шоколаде
+bls:S692000	Cereal crisps coated with milk chocolate	зерновые хлопья в молочном шоколаде
+bls:S693000	Whole milk chocolate covered nuts	орехи в молочном шоколаде
+bls:S694000	Whole milk chocolate covered dried fruits	сухофрукты в молочном шоколаде
+bls:S711000	Cocoa powder lightly deoiled	какао-порошок слабо обезжиренный
+bls:S713000	Cocoa powder strongly deoiled	какао-порошок сильно обезжиренный
+bls:S723000	Beverage powder containing cocoa	шоколадный напиток порошковый
+bls:S730000	Beverage powder containing malt, fortified with vitamins and minerals	солодовый напиток порошковый с витаминами и минералами
+bls:S740000	Instant hot chocolate powder (for drinking chocolate)	какао-напиток порошковый
+bls:S790000	Cocoa mass	какао-масса
+bls:S820000	Energy bar with hazelnut cream	энергетический батончик с ореховым кремом
+bls:S820100	Energy bar fortified with vitamins and minerals	энергетический батончик с витаминами и минералами
+bls:S830000	Muesli bar	батончик мюсли
+bls:T020100	Common cuttlefish raw	каракатица сырая
+bls:T020132	Common cuttlefish boiled	каракатица обыкновенная варёная
+bls:T020142	Common cuttlefish braised without fat	каракатица тушёная
+bls:T020172	Common cuttlefish grilled	каракатица на гриле
+bls:T020182	Common cuttlefish fried without fat (pan)	каракатица жареная без масла
+bls:T020200	Common cuttlefish deep-frozen	каракатица замороженная
+bls:T020232	Common cuttlefish deep-frozen, boiled	каракатица из заморозки варёная
+bls:T020252	Common cuttlefish deep-frozen, stewed	каракатица из заморозки тушёная
+bls:T020262	Common cuttlefish deep-frozen, fried without fat (oven)	каракатица из заморозки запечённая
+bls:T020272	Common cuttlefish deep-frozen, grilled	каракатица из заморозки на гриле
+bls:T020282	Common cuttlefish deep-frozen, fried without fat (pan)	каракатица из заморозки жареная без масла
+bls:T020702	Common cuttlefish in oil, canned, drained	каракатица в масле консервированная слитая
+bls:T033000	Piked dogfish belly hot smoked	полоски брюшка катрана горячего копчения
+bls:T033100	Piked dogfish raw	катран сырой
+bls:T033152	Piked dogfish stewed	катран тушёный
+bls:T033182	Piked dogfish fried without fat (pan)	катран жареный без масла
+bls:T033600	Piked dogfish smoked	катран копчёный
+bls:T041100	Eel raw	угорь европейский сырой
+bls:T041142	Eel braised without fat	угорь тушёный
+bls:T041152	Eel stewed	угорь тушёный
+bls:T041182	Eel fried without fat (pan)	угорь жареный без масла
+bls:T041600	Eel smoked	угорь копчёный
+bls:T045100	Cod liver raw	печень трески сырая
+bls:T045182	Cod liver fried without fat (pan)	печень трески жареная без масла
+bls:T045900	Cod liver canned	печень трески консервированная
+bls:T060132	Pike poached	щука припущенная
+bls:T060182	Pike fried without fat (pan)	щука жареная без масла
+bls:T061100	Garfish raw	сарган сырой
+bls:T061152	Garfish stewed	сарган тушёный
+bls:T061182	Garfish fried without fat (pan)	сарган жареный без масла
+bls:T064100	Pike raw	щука сырая
+bls:T064152	Pike stewed	щука тушёная
+bls:T070100	Anglerfish raw	удильщик свежий
+bls:T070152	Anglerfish stewed	удильщик тушёный
+bls:T070182	Anglerfish fried without fat (pan)	удильщик жареный без масла
+bls:T091100	Herring roe raw	икра сельди сырая
+bls:T091400	Herring roe salted	икра сельди солёная
+bls:T093100	Cod roe raw	икра трески сырая
+bls:T093400	Cod roe salted	икра трески солёная
+bls:T094100	Salmon roe raw	икра лосося сырая
+bls:T094400	Salmon roe salted	икра лосося солёная
+bls:T102100	Herring raw	сельдь сырая
+bls:T102132	Herring poached	сельдь припущенная
+bls:T102162	Herring fried without fat (oven)	сельдь запечённая
+bls:T102182	Herring fried without fat (pan)	сельдь жареная без масла
+bls:T102400	Herring salted	сельдь солёная
+bls:T102600	Herring smoked	сельдь копчёная
+bls:T102702	Herring in oil, canned, drained	сельдь в масле консервированная слитая
+bls:T103100	Matjes herring mild salted	сельдь матье малосольная
+bls:T103600	Matjes herring mild salted, smoked	сельдь матье малосольная копчёная
+bls:T103802	Matjes herring in oil, semi-preserved, drained	сельдь матье в масле полуконсервированная слитая
+bls:T104100	Anchovy raw	анчоус сырой
+bls:T104162	Anchovy fried without fat (oven)	анчоус запечённый
+bls:T104172	Anchovy grilled	анчоус на гриле
+bls:T104182	Anchovy fried without fat (pan)	анчоус жареный без масла
+bls:T104400	Anchovy salted	анчоус солёный
+bls:T104702	Anchovy in oil, canned, drained	анчоус в масле консервированный слитый
+bls:T105100	Sardine raw	сардина сырая
+bls:T105172	Sardine grilled	сардина на гриле
+bls:T105182	Sardine fried without fat (pan)	сардина жареная без масла
+bls:T105702	Sardine in oil, canned, drained	сардина в масле консервированная слитая
+bls:T106100	Sprat raw	шпрот сырой
+bls:T106152	Sprat stewed	шпрот тушёный
+bls:T106182	Sprat fried without fat (pan)	шпрот жареный без масла
+bls:T106600	Sprat smoked	шпрот копчёный
+bls:T106702	Sprat in oil, canned, drained	шпрот в масле консервированный слитый
+bls:T107100	Mackerel raw	скумбрия сырая
+bls:T107172	Mackerel grilled	скумбрия на решётке
+bls:T107182	Mackerel fried without fat (pan)	скумбрия жареная без масла
+bls:T107600	Mackerel smoked	скумбрия копчёная
+bls:T107702	Mackerel in oil, canned, drained	скумбрия в масле консервированная слитая
+bls:T107902	Mackerel canned, drained	скумбрия консервированная в собственном соку
+bls:T113902	Herring fillet rolled, pickled, canned, drained	роллмопс маринованный консервированный слитый
+bls:T118100	Atlantic horse mackerel raw	ставрида сырая
+bls:T118152	Atlantic horse mackerel stewed	ставрида тушёная
+bls:T118182	Atlantic horse mackerel fried without fat (pan)	ставрида жареная без масла
+bls:T120100	Atlantic bonito raw	пеламида сырая
+bls:T120152	Atlantic bonito stewed	пеламида тушёная
+bls:T120182	Atlantic bonito fried without fat (pan)	пеламида жареная без масла
+bls:T121100	Tuna raw	тунец свежий
+bls:T121132	Tuna poached	тунец припущенный
+bls:T121162	Tuna fried without fat (oven)	тунец запечённый
+bls:T121172	Tuna grilled	тунец на гриле
+bls:T121182	Tuna fried without fat (pan)	тунец жареный без масла
+bls:T121200	Tuna deep-frozen	тунец замороженный
+bls:T121262	Tuna deep-frozen, fried without fat (oven)	тунец из заморозки запечённый
+bls:T121272	Tuna deep-frozen, grilled	тунец из заморозки на гриле
+bls:T121282	Tuna deep-frozen, fried without fat (pan)	тунец из заморозки жареный без масла
+bls:T121702	Tuna in oil, canned, drained	тунец в масле консервированный слитый
+bls:T121902	Tuna canned, drained	тунец консервированный в собственном соку
+bls:T122100	Albacore raw	белый тунец сырой
+bls:T122152	Albacore stewed	белый тунец тушёный
+bls:T122182	Albacore fried without fat (pan)	белый тунец жареный без масла
+bls:T122200	Albacore deep-frozen	белый тунец замороженный
+bls:T122252	Albacore deep-frozen, stewed	белый тунец из заморозки тушёный
+bls:T122282	Albacore deep-frozen, fried without fat (pan)	белый тунец из заморозки жареный без масла
+bls:T124100	Yellowfin tuna raw	желтопёрый тунец сырой
+bls:T124152	Yellowfin tuna stewed	желтопёрый тунец тушёный
+bls:T124182	Yellowfin tuna fried without fat (pan)	желтопёрый тунец жареный без масла
+bls:T124200	Yellowfin tuna deep-frozen	желтопёрый тунец замороженный
+bls:T124252	Yellowfin tuna deep-frozen, stewed	желтопёрый тунец из заморозки тушёный
+bls:T124282	Yellowfin tuna deep-frozen, fried without fat (pan)	желтопёрый тунец из заморозки жареный без масла
+bls:T200100	Grenadier raw	гренадер сырой
+bls:T200152	Grenadier stewed	гренадер тушёный
+bls:T200182	Grenadier fried without fat (pan)	гренадер жареный без масла
+bls:T201100	Cusk raw	брусме сырая
+bls:T201152	Cusk stewed	брусме тушёная
+bls:T201182	Cusk fried without fat (pan)	брусме жареная без масла
+bls:T202100	Ling raw	мольва сырая
+bls:T202152	Ling stewed	мольва тушёная
+bls:T202182	Ling fried without fat (pan)	мольва жареная без масла
+bls:T204100	Cod raw	треска сырая
+bls:T204132	Cod poached	треска припущенная
+bls:T204152	Cod stewed	треска тушёная
+bls:T204162	Cod fried without fat (oven)	треска в духовке
+bls:T204172	Cod grilled	треска на решётке
 bls:T204182	Cod fried without fat (pan)	треска жареная без масла
+bls:T204200	Cod deep-frozen	треска замороженная
+bls:T204232	Cod deep-frozen, poached	треска из заморозки припущенная
+bls:T204252	Cod deep-frozen, stewed	треска из заморозки тушёная
+bls:T204262	Cod deep-frozen, fried without fat (oven)	треска в духовке из заморозки
+bls:T204272	Cod deep-frozen, grilled	треска на решётке из заморозки
+bls:T204282	Cod deep-frozen, fried without fat (pan)	треска из заморозки жареная без масла
+bls:T204582	Cod breaded fried without fat (pan)	треска в панировке жареная без масла
+bls:T206100	Haddock raw	пикша сырая
+bls:T206152	Haddock stewed	пикша тушёная
+bls:T206172	Haddock grilled	пикша на решётке
+bls:T206182	Haddock fried without fat (pan)	пикша жареная без масла
 bls:T206600	Haddock smoked	пикша копчёная
+bls:T207100	Saithe/pollack, raw	сайда сырая
+bls:T207132	Saithe/pollack, poached	сайда припущенная
+bls:T207152	Saithe/pollack, stewed	сайда тушёная
+bls:T207162	Saithe/pollack, fried without fat (oven)	сайда запечённая
+bls:T207172	Saithe/pollack, grilled	сайда на гриле
+bls:T207182	Saithe/pollack, fried without fat (pan)	сайда жареная без масла
+bls:T207200	Saithe/pollack, deep-frozen	сайда замороженная
+bls:T207232	Saithe/pollack, deep-frozen, poached	сайда из заморозки припущенная
+bls:T207252	Saithe/pollack, deep-frozen, stewed	сайда из заморозки тушёная
+bls:T207262	Saithe/pollack, deep-frozen, fried without fat (oven)	сайда из заморозки запечённая
+bls:T207272	Saithe/pollack, deep-frozen, grilled	сайда из заморозки на гриле
+bls:T207282	Saithe/pollack, deep-frozen, fried without fat (pan)	сайда из заморозки жареная без масла
+bls:T207600	Saithe/pollack, smoked	сайда копчёная
+bls:T208100	Whiting raw	мерланг сырой
+bls:T208152	Whiting stewed	мерланг тушёный
+bls:T208182	Whiting fried without fat (pan)	мерланг жареный без масла
+bls:T209100	Hake raw	хек сырой
+bls:T209132	Hake poached	хек припущенный
+bls:T209152	Hake stewed	хек тушёный
+bls:T209182	Hake fried without fat (pan)	хек жареный без масла
+bls:T209200	Hake deep-frozen	хек замороженный
+bls:T209232	Hake deep-frozen, poached	хек из заморозки припущенный
+bls:T209252	Hake deep-frozen, stewed	хек из заморозки тушёный
+bls:T209282	Hake deep-frozen, fried without fat (pan)	хек из заморозки жареный без масла
+bls:T213100	Alaska pollock raw	минтай сырой
+bls:T213132	Alaska pollock poached	минтай припущенный
+bls:T213152	Alaska pollock stewed	минтай тушёный
+bls:T213162	Alaska pollock fried without fat (oven)	минтай в духовке
+bls:T213172	Alaska pollock grilled	минтай на гриле
+bls:T213182	Alaska pollock fried without fat (pan)	минтай жареный без масла
+bls:T213200	Alaska pollock deep-frozen	минтай замороженный
+bls:T213232	Alaska pollock deep-frozen, poached	минтай из заморозки припущенный
+bls:T213252	Alaska pollock deep-frozen, stewed	минтай из заморозки тушёный
+bls:T213262	Alaska pollock deep-frozen, fried without fat (oven)	минтай из заморозки запечённый
+bls:T213272	Alaska pollock deep-frozen, grilled	минтай из заморозки на гриле
+bls:T213282	Alaska pollock deep-frozen, fried without fat (pan)	минтай из заморозки жареный без масла
+bls:T213802	Alaska pollock in oil, semi-preserved, drained	минтай в масле полуконсервированный слитый
+bls:T302100	Turbot raw	калкан свежий
+bls:T302152	Turbot stewed	калкан тушёный
+bls:T302182	Turbot fried without fat (pan)	калкан жареный без масла
+bls:T302200	Turbot deep-frozen	калкан замороженный
+bls:T302252	Turbot deep-frozen, stewed	калкан из заморозки тушёный
+bls:T302282	Turbot deep-frozen, fried without fat (pan)	калкан из заморозки жареный без масла
+bls:T305100	Plaice raw	камбала морская сырая
+bls:T305132	Plaice poached	камбала морская припущенная
+bls:T305152	Plaice stewed	камбала морская тушёная
+bls:T305162	Plaice fried without fat (oven)	камбала морская запечённая
+bls:T305172	Plaice grilled	камбала морская на гриле
+bls:T305182	Plaice fried without fat (pan)	камбала морская жареная без масла
+bls:T305200	Plaice deep-frozen	камбала морская замороженная
+bls:T305232	Plaice deep-frozen, poached	камбала морская из заморозки припущенная
+bls:T305252	Plaice deep-frozen, stewed	камбала морская из заморозки тушёная
+bls:T305262	Plaice deep-frozen, fried without fat (oven)	камбала морская из заморозки запечённая
+bls:T305272	Plaice deep-frozen, grilled	камбала морская из заморозки на гриле
+bls:T305282	Plaice deep-frozen, fried without fat (pan)	камбала морская из заморозки жареная без масла
+bls:T306100	Halibut/white halibut, raw	палтус белый сырой
+bls:T306132	Halibut/white halibut, poached	палтус белый припущенный
+bls:T306152	Halibut/white halibut, stewed	палтус белый тушёный
 bls:T306182	Halibut/white halibut, fried without fat (pan)	палтус жареный без масла
+bls:T306200	Halibut/white halibut, deep-frozen	палтус белый замороженный
+bls:T306252	Halibut/white halibut, deep-frozen, stewed	палтус белый из заморозки тушёный
+bls:T306282	Halibut/white halibut, deep-frozen, fried without fat (pan)	палтус белый из заморозки жареный без масла
+bls:T307100	Greenland halibut raw	палтус чёрный сырой
+bls:T307152	Greenland halibut stewed	палтус чёрный тушёный
+bls:T307182	Greenland halibut fried without fat (pan)	палтус чёрный жареный без масла
+bls:T307200	Greenland halibut deep-frozen	палтус чёрный замороженный
+bls:T307252	Greenland halibut deep-frozen, stewed	палтус чёрный из заморозки тушёный
+bls:T307282	Greenland halibut deep-frozen, fried without fat (pan)	палтус чёрный из заморозки жареный без масла
+bls:T307600	Greenland halibut smoked	палтус чёрный копчёный
+bls:T309100	Sole raw	морской язык сырой
+bls:T309152	Sole stewed	морской язык тушёный
+bls:T309182	Sole fried without fat (pan)	морской язык жареный без масла
+bls:T309200	Sole deep-frozen	морской язык замороженный
+bls:T309252	Sole deep-frozen, stewed	морской язык из заморозки тушёный
+bls:T309282	Sole deep-frozen, fried without fat (pan)	морской язык из заморозки жареный без масла
+bls:T311100	Flounder raw	камбала речная сырая
+bls:T311152	Flounder stewed	камбала речная тушёная
+bls:T311182	Flounder fried without fat (pan)	камбала речная жареная без масла
+bls:T311600	Flounder smoked	камбала речная копчёная
+bls:T313100	Witch raw	камбала-ведьма сырая
+bls:T313152	Witch stewed	камбала-ведьма тушёная
+bls:T313182	Witch fried without fat (pan)	камбала-ведьма жареная без масла
+bls:T313200	Witch deep-frozen	камбала-ведьма замороженная
+bls:T313252	Witch deep-frozen, stewed	камбала-ведьма из заморозки тушёная
+bls:T313282	Witch deep-frozen, fried without fat (pan)	камбала-ведьма из заморозки жареная без масла
+bls:T402100	European smelt raw	корюшка сырая
+bls:T402152	European smelt stewed	корюшка тушёная
+bls:T402182	European smelt fried without fat (pan)	корюшка жареная без масла
+bls:T402200	European smelt deep-frozen	корюшка замороженная
+bls:T402252	European smelt deep-frozen, stewed	корюшка из заморозки тушёная
+bls:T402282	European smelt deep-frozen, fried without fat (pan)	корюшка из заморозки жареная без масла
+bls:T403100	Brook trout raw	форель ручьевая сырая
+bls:T403152	Brook trout stewed	форель ручьевая тушёная
+bls:T403182	Brook trout fried without fat (pan)	форель ручьевая жареная без масла
+bls:T403600	Brook trout smoked	форель ручьевая копчёная
+bls:T406100	Whitefishes raw	сиг озёрный сырой
+bls:T406152	Whitefishes stewed	сиг тушёный
+bls:T406182	Whitefishes fried without fat (pan)	сиг жареный без масла
+bls:T406200	Whitefishes deep-frozen	сиг замороженный
+bls:T406252	Whitefishes deep-frozen, stewed	сиг из заморозки тушёный
+bls:T406282	Whitefishes deep-frozen, fried without fat (pan)	сиг из заморозки жареный без масла
+bls:T406600	Whitefishes smoked	сиг озёрный копчёный
+bls:T410052	Salmon stewed	лосось тушёный
+bls:T410062	Salmon fried without fat (oven)	лосось атлантический запечённый
+bls:T410072	Salmon grilled	лосось атлантический на гриле
+bls:T410082	Salmon fried without fat (pan)	лосось жареный без масла
+bls:T410100	Salmon raw	лосось сырой
+bls:T410132	Salmon poached	лосось припущенный
+bls:T410200	Salmon deep-frozen	лосось замороженный
+bls:T410252	Salmon deep-frozen, stewed	лосось из заморозки тушёный
+bls:T410262	Salmon deep-frozen, fried without fat (oven)	лосось из заморозки запечённый
+bls:T410272	Salmon deep-frozen, grilled	лосось из заморозки на гриле
+bls:T410282	Salmon deep-frozen, fried without fat (pan)	лосось из заморозки жареный без масла
+bls:T410600	Salmon smoked	лосось атлантический копчёный
+bls:T410702	Salmon in oil, canned, drained	лосось в масле консервированный слитый
+bls:T410902	Salmon canned, drained	лосось консервированный слитый
+bls:T411222	Salmon deep-frozen, poached	лосось из заморозки припущенный
+bls:T411700	Salmon salted	лосось атлантический солёный
+bls:T411800	Graved salmon (salt-sugar-cured)	лосось гравлакс
+bls:T412100	Pink salmon raw	горбуша сырая
+bls:T412152	Pink salmon stewed	горбуша тушёная
+bls:T412182	Pink salmon fried without fat (pan)	горбуша жареная без масла
+bls:T412200	Pink salmon deep-frozen	горбуша замороженная
+bls:T412252	Pink salmon deep-frozen, stewed	горбуша из заморозки тушёная
+bls:T412282	Pink salmon deep-frozen, fried without fat (pan)	горбуша из заморозки жареная без масла
+bls:T412902	Pink salmon in oil, canned, drained	горбуша в масле консервированная слитая
+bls:T415100	Chinook salmon raw	чавыча сырая
+bls:T415152	Chinook salmon stewed	чавыча тушёная
+bls:T415182	Chinook salmon fried without fat (pan)	чавыча жареная без масла
+bls:T415200	Chinook salmon deep-frozen	чавыча замороженная
+bls:T415252	Chinook salmon deep-frozen, stewed	чавыча из заморозки тушёная
+bls:T415282	Chinook salmon deep-frozen, fried without fat (pan)	чавыча из заморозки жареная без масла
+bls:T415600	Chinook salmon smoked	лосось чавыча копчёный
+bls:T417100	Pacific salmon raw	дикий лосось сырой
+bls:T417152	Pacific salmon stewed	дикий лосось тушёный
+bls:T417182	Pacific salmon fried without fat (pan)	дикий лосось жареный без масла
+bls:T417200	Pacific salmon deep-frozen	дикий лосось замороженный
+bls:T417252	Pacific salmon deep-frozen, stewed	дикий лосось из заморозки тушёный
+bls:T417282	Pacific salmon deep-frozen, fried without fat (pan)	дикий лосось из заморозки жареный без масла
+bls:T417400	Pacific salmon salted	дикий лосось солёный
+bls:T417600	Pacific salmon smoked	дикий лосось копчёный
+bls:T417902	Pacific salmon canned, drained	дикий лосось консервированный слитый
+bls:T420132	Trout poached	форель припущенная
+bls:T420152	Trout stewed	форель тушёная
+bls:T420162	Trout fried without fat (oven)	форель запечённая
+bls:T420172	Trout grilled	форель на гриле
+bls:T420182	Trout fried without fat (pan)	форель жареная без масла
+bls:T420232	Trout deep-frozen, poached	форель из заморозки припущенная
+bls:T420252	Trout deep-frozen, stewed	форель из заморозки тушёная
+bls:T420262	Trout deep-frozen, fried without fat (oven)	форель из заморозки запечённая
+bls:T420282	Trout deep-frozen, fried without fat (pan)	форель из заморозки жареная без масла
 bls:T422100	Trout raw	форель сырая
+bls:T422112	Trout/rainbow trout fillet with skin, raw	филе радужной форели с кожей сырое
+bls:T422200	Trout deep-frozen	форель замороженная
+bls:T422272	Trout deep-frozen, grilled	форель из заморозки на гриле
+bls:T422400	Trout salted	форель солёная
+bls:T422600	Trout smoked	форель копчёная
+bls:T424100	Sea trout raw	кумжа сырая
+bls:T424152	Sea trout stewed	кумжа тушёная
+bls:T424182	Sea trout fried without fat (pan)	кумжа жареная без масла
+bls:T424200	Sea trout deep-frozen	кумжа замороженная
+bls:T424252	Sea trout deep-frozen, stewed	кумжа из заморозки тушёная
+bls:T424282	Sea trout deep-frozen, fried without fat (pan)	кумжа из заморозки жареная без масла
+bls:T501100	Carp raw	карп сырой
+bls:T501132	Carp poached	карп припущенный
+bls:T501152	Carp stewed	карп тушёный
+bls:T501162	Carp fried without fat (oven)	карп запечённый
+bls:T501182	Carp fried without fat (pan)	карп жареный без масла
+bls:T501200	Carp deep-frozen	карп замороженный
+bls:T501232	Carp deep-frozen, poached	карп из заморозки припущенный
+bls:T501252	Carp deep-frozen, stewed	карп из заморозки тушёный
+bls:T501262	Carp deep-frozen, fried without fat (oven)	карп из заморозки запечённый
+bls:T501282	Carp deep-frozen, fried without fat (pan)	карп из заморозки жареный без масла
+bls:T501400	Carp salted	карп солёный
+bls:T501600	Carp smoked	карп копчёный
+bls:T502100	Common bream raw	лещ сырой
+bls:T502132	Common bream poached	лещ припущенный
+bls:T502182	Common bream fried without fat (pan)	лещ жареный без масла
+bls:T502200	Common bream deep-frozen	лещ замороженный
+bls:T502252	Common bream deep-frozen, stewed	лещ из заморозки тушёный
+bls:T502282	Common bream deep-frozen, fried without fat (pan)	лещ из заморозки жареный без масла
 bls:T502400	Common bream salted	лещ солёный
+bls:T502600	Common bream smoked	лещ копчёный
 bls:T506100	European catfish raw	сом сырой
+bls:T506152	European catfish stewed	сом тушёный
+bls:T506182	European catfish fried without fat (pan)	сом жареный без масла
+bls:T506200	European catfish deep-frozen	сом замороженный
+bls:T506252	European catfish deep-frozen, stewed	сом из заморозки тушёный
+bls:T506282	European catfish deep-frozen, fried without fat (pan)	сом из заморозки жареный без масла
+bls:T506400	European catfish salted	сом солёный
+bls:T506600	European catfish smoked	сом копчёный
+bls:T507100	Striped catfish raw	пангасиус сырой
+bls:T507152	Striped catfish stewed	пангасиус тушёный
+bls:T507182	Striped catfish fried without fat (pan)	пангасиус жареный без масла
+bls:T512100	Tench raw	линь сырой
+bls:T512182	Tench fried without fat (pan)	линь жареный без масла
+bls:T512200	Tench deep-frozen	линь замороженный
+bls:T512400	Tench salted	линь солёный
+bls:T512600	Tench smoked	линь копчёный
+bls:T600100	Goatfish raw	барабулька сырая
+bls:T600152	Goatfish stewed	барабулька тушёная
+bls:T600182	Goatfish fried without fat (pan)	барабулька жареная без масла
 bls:T601100	European perch raw	окунь сырой
+bls:T601132	European perch poached	окунь припущенный
+bls:T601152	European perch stewed	окунь тушёный
+bls:T601162	European perch fried without fat (oven)	окунь запечённый речной
+bls:T601182	European perch fried without fat (pan)	окунь жареный без масла
+bls:T601200	European perch deep-frozen	окунь замороженный
+bls:T601232	European perch deep-frozen, poached	окунь из заморозки припущенный
+bls:T601252	European perch deep-frozen, stewed	окунь из заморозки тушёный
+bls:T601272	European perch deep-frozen, grilled	окунь из заморозки на гриле
+bls:T601282	European perch deep-frozen, fried without fat (pan)	окунь из заморозки жареный без масла
+bls:T601400	European perch salted	окунь солёный
+bls:T601600	European perch smoked	окунь копчёный
+bls:T603100	Pike-perch raw	судак сырой
+bls:T603132	Pike-perch poached	судак припущенный
+bls:T603152	Pike-perch stewed	судак тушёный
+bls:T603172	Pike-perch grilled	судак на гриле
+bls:T603182	Pike-perch fried without fat (pan)	судак жареный без масла
+bls:T603200	Pike-perch deep-frozen	судак замороженный
+bls:T603252	Pike-perch deep-frozen, stewed	судак из заморозки тушёный
+bls:T603282	Pike-perch deep-frozen, fried without fat (pan)	судак из заморозки жареный без масла
+bls:T603400	Pike-perch salted	судак солёный
+bls:T603600	Pike-perch smoked	судак копчёный
+bls:T604100	Catfish/wolffish, raw	зубатка сырая
+bls:T604152	Catfish/wolffish, stewed	зубатка тушёная
+bls:T604182	Catfish/wolffish, fried without fat (pan)	зубатка жареная без масла
+bls:T604200	Catfish/wolffish, deep-frozen	зубатка замороженная
+bls:T604252	Catfish/wolffish, deep-frozen, stewed	зубатка из заморозки тушёная
+bls:T604282	Catfish/wolffish, deep-frozen, fried without fat (pan)	зубатка из заморозки жареная без масла
+bls:T604600	Catfish/wolffish, smoked	зубатка копчёная
+bls:T612100	Swordfish raw	рыба-меч свежая
+bls:T612152	Swordfish stewed	рыба-меч тушёная
+bls:T612182	Swordfish fried without fat (pan)	рыба-меч жареная без масла
+bls:T612200	Swordfish deep-frozen	рыба-меч замороженная
+bls:T612252	Swordfish deep-frozen, stewed	рыба-меч из заморозки тушёная
+bls:T612282	Swordfish deep-frozen, fried without fat (pan)	рыба-меч из заморозки жареная без масла
+bls:T615100	Ocean perch/redfish, raw	морской окунь сырой
+bls:T615142	Ocean perch/redfish, steamed	морской окунь на пару
+bls:T615152	Ocean perch/redfish, stewed	морской окунь тушёный
+bls:T615162	Ocean perch/redfish, fried without fat (oven)	морской окунь запечённый
+bls:T615172	Ocean perch/redfish, grilled	морской окунь на гриле
+bls:T615182	Ocean perch/redfish, fried without fat (pan)	морской окунь жареный без масла
+bls:T615200	Ocean perch/redfish, deep-frozen	морской окунь замороженный
+bls:T615252	Ocean perch/redfish deep-frozen, stewed	морской окунь из заморозки тушёный
+bls:T615262	Ocean perch/redfish, deep-frozen, fried without fat (oven)	морской окунь из заморозки запечённый
+bls:T615282	Ocean perch/redfish, deep-frozen, fried without fat (pan)	морской окунь из заморозки жареный без масла
+bls:T615600	Ocean perch/redfish, smoked	морской окунь копчёный
+bls:T617100	Sheepshead raw	сарг сырой
+bls:T617152	Sheepshead stewed	сарг тушёный
+bls:T617182	Sheepshead fried without fat (pan)	сарг жареный без масла
+bls:T617200	Sheepshead deep-frozen	сарг замороженный
+bls:T617252	Sheepshead deep-frozen, stewed	сарг из заморозки тушёный
+bls:T617282	Sheepshead deep-frozen, fried without fat (pan)	сарг из заморозки жареный без масла
+bls:T633100	Grey mullet raw	кефаль сырая
+bls:T633152	Grey mullet stewed	кефаль тушёная
+bls:T633182	Grey mullet fried without fat (pan)	кефаль жареная без масла
+bls:T633200	Grey mullet deep-frozen	кефаль замороженная
+bls:T633252	Grey mullet deep-frozen, stewed	кефаль из заморозки тушёная
+bls:T633282	Grey mullet deep-frozen, fried without fat (pan)	кефаль из заморозки жареная без масла
+bls:T710100	Crayfish raw	раки сырые
+bls:T710132	Crayfish boiled	раки варёные
+bls:T710172	Crayfish boiled, grilled	раки варёные на гриле
+bls:T710182	Crayfish boiled, fried without fat (pan)	раки варёные жареные без масла
 bls:T710200	Crayfish deep-frozen	раки замороженные
+bls:T710232	Crayfish deep-frozen, boiled	раки из заморозки варёные
+bls:T710282	Crayfish deep-frozen, fried without fat (pan)	раки из заморозки жареные без масла
+bls:T710400	Crayfish salted	раки солёные
+bls:T710800	Crayfish semi-preserved	раки полуконсервированные
+bls:T710902	Crayfish canned, drained	раки консервированные слитые
+bls:T720100	Spiny lobster/rock lobster/crawfish, raw	лангуст колючий сырой
+bls:T720132	Spiny lobster/rock lobster/crawfish, boiled	лангуст колючий варёный
+bls:T720172	Spiny lobster/rock lobster/crawfish, boiled, grilled	лангуст колючий варёный на гриле
+bls:T720182	Spiny lobster/rock lobster/crawfish, boiled, fried without fat (pan)	лангуст колючий варёный жареный без масла
+bls:T720200	Spiny lobster/rock lobster/crawfish, deep-frozen	лангуст колючий замороженный
+bls:T720232	Spiny lobster/rock lobster/crawfish, deep-frozen, boiled	лангуст колючий варёный из заморозки
+bls:T720272	Spiny lobster/rock lobster/crawfish, deep-frozen, grilled	лангуст колючий на гриле из заморозки
+bls:T720282	Spiny lobster/rock lobster/crawfish, deep-frozen, fried without fat (pan)	лангуст колючий жареный без масла из заморозки
+bls:T730100	Lobster raw	омар сырой
+bls:T730132	Lobster boiled	омар европейский варёный
+bls:T730172	Lobster boiled, grilled	омар варёный на гриле
+bls:T730182	Lobster boiled, fried without fat (pan)	омар варёный жареный без масла
+bls:T730200	Lobster deep-frozen	омар замороженный
+bls:T730232	Lobster deep-frozen, boiled	омар варёный из заморозки
+bls:T730272	Lobster deep-frozen, grilled	омар из заморозки на гриле
+bls:T730282	Lobster deep-frozen, fried without fat (pan)	омар из заморозки жареный без масла
+bls:T753100	Common shrimp raw	креветки сырые
+bls:T753132	Common shrimp boiled	креветки варёные
+bls:T753172	Common shrimp boiled, grilled	креветки варёные на гриле
+bls:T753182	Common shrimp boiled, fried without fat (pan)	креветки варёные жареные без масла
+bls:T753200	Common shrimp deep-frozen	креветки замороженные
+bls:T753232	Common shrimp deep-frozen, boiled	креветки из заморозки варёные
+bls:T753252	Common shrimp deep-frozen, stewed	креветки из заморозки тушёные
+bls:T753272	Common shrimp deep-frozen, grilled	креветки из заморозки на гриле
+bls:T753282	Common shrimp deep-frozen, fried without fat (pan)	креветки из заморозки жареные без масла
+bls:T753800	Common shrimp semi-preserved	креветки полуконсервированные
+bls:T780100	European oyster raw	устрица сырая
+bls:T780152	European oyster steamed	устрица на пару
+bls:T780162	European oyster gratinated without fat (oven)	устрица запечённая до корочки
+bls:T780172	European oyster grilled	устрица на гриле
+bls:T780182	European oyster fried without fat (pan)	устрица жареная без масла
+bls:T780200	European oyster deep-frozen	устрица замороженная
+bls:T780252	European oyster deep-frozen, steamed	устрица из заморозки на пару
+bls:T780262	European oyster deep-frozen, gratinated without fat (oven)	устрица из заморозки запечённая до корочки
+bls:T780272	European oyster deep-frozen, grilled	устрица из заморозки на гриле
+bls:T780282	European oyster deep-frozen, fried without fat (pan)	устрица из заморозки жареная без масла
+bls:T780702	European oyster in oil, canned, drained	устрица в масле консервированная слитая
+bls:T791100	Softshell clam raw	пескожил сырой
+bls:T791132	Softshell clam boiled	пескожил варёный
+bls:T791200	Softshell clam deep-frozen	пескожил замороженный
+bls:T791232	Softshell clam deep-frozen, boiled	пескожил из заморозки варёный
+bls:T792100	Common mussel raw	мидия сырая
+bls:T792132	Common mussel boiled	мидия варёная
+bls:T792182	Common mussel boiled, fried without fat (pan)	мидия варёная жареная без масла
+bls:T792200	Common mussel deep-frozen	мидия замороженная
+bls:T792232	Common mussel deep-frozen, boiled	мидия из заморозки варёная
+bls:T792282	Common mussel deep-frozen, fried without fat (pan)	мидия из заморозки жареная без масла
+bls:T792702	Common mussel in oil, canned, drained	мидия в масле консервированная слитая
+bls:T793100	Scallop raw	гребешок сырой
+bls:T793162	Scallop gratinated without fat (oven)	гребешок запечённый до корочки
+bls:T793172	Scallop grilled	гребешок на гриле
+bls:T793182	Scallop fried without fat (pan)	гребешок жареный без масла
+bls:T793200	Scallop deep-frozen	гребешок замороженный
+bls:T793262	Scallop deep-frozen, gratinated without fat (oven)	гребешок из заморозки запечённый до корочки
+bls:T793272	Scallop deep-frozen, grilled	гребешок из заморозки на гриле
+bls:T793282	Scallop deep-frozen, fried without fat (pan)	гребешок из заморозки жареный без масла
+bls:T797100	Venus clam raw	венерка сырая
+bls:T797132	Venus clam boiled	венерка варёная
 bls:T797162	Venus clam boiled, gratinated without fat (oven)	венерка варёная запечённая
+bls:T797182	Venus clam boiled, fried without fat (pan)	венерка варёная жареная без масла
+bls:T797200	Venus clam deep-frozen	венерка замороженная
+bls:T797232	Venus clam deep-frozen, boiled	венерка из заморозки варёная
+bls:T797262	Venus clam deep-frozen, gratinated without fat (oven)	венерка из заморозки запечённая до корочки
+bls:T797282	Venus clam deep-frozen, fried without fat (pan)	венерка из заморозки жареная без масла
+bls:T797902	Venus clam canned, drained	венерка консервированная слитая
+bls:T800100	Fish salted, dried	рыба солёная сушёная
+bls:T800200	Stockfish (cod unsalted, dried)	стокфиск
+bls:T811100	Matjes fillet (herring fillet) Nordic style	филе сельди матье по-нордически
+bls:T812702	Shellfish (frutti di mare) in oil, canned, drained	ассорти морепродуктов в масле консервированные слитые
+bls:T813900	Tuna in tomato sauce, canned	тунец в томате консервированный
+bls:T815900	Common shrimp in dill cream, semi-preserved	креветки в укропно-сливочном соусе полуконсервированные
+bls:T817900	Sardine in tomato sauce, canned	сардина в томатном соусе консервированная
+bls:T820802	Herring pickled, semi-preserved, drained	сельдь маринованная полуконсервированная слитая
+bls:T822100	Herring fillet in dill cream, canned	филе сельди в укропно-сливочном соусе консервированное
+bls:T822400	Herring fillet in horseradish cream, canned	филе сельди в сливочном соусе с хреном консервированное
+bls:T822500	Herring fillet in mustard cream, canned	филе сельди в горчично-сливочном соусе консервированное
+bls:T822900	Herring fillet in tomato sauce, canned	филе сельди в томатном соусе консервированное
+bls:T824900	Salmon in tomato sauce, canned	лосось в томатном соусе консервированный
+bls:T830102	Fried herring canned, drained	сельдь жареная консервированная слитая
+bls:T830802	Fried mackerel canned, drained	скумбрия жареная консервированная слитая
+bls:T831900	Mackerel in tomato sauce, canned	скумбрия в томате консервированная
+bls:T832900	Common mussel in tomato sauce, canned	мидия в томатном соусе консервированная
+bls:T840000	Herring boiled, in jelly	сельдь варёная в желе
+bls:T860000	Caviar paste	икорная паста
+bls:T860100	Anchovy paste	анчоусная паста
+bls:T861100	Caviar (sturgeon)	икра осетровая
+bls:T861700	Caviar substitute (lumpfish)	имитация икры (из пинагора)
+bls:T890100	Surimi (crab meat imitation)	сурими из рыбы
+bls:T900262	Common cuttlefish rings, breaded, deep-frozen, baked (oven)	кольца каракатицы в панировке из заморозки запечённые
+bls:T900300	Shellfish (frutti di mare) raw	ассорти морепродуктов сырые
+bls:T900352	Shellfish (frutti di mare) stewed	ассорти морепродуктов тушёные
+bls:T900382	Shellfish (frutti di mare) fried without fat (pan)	ассорти морепродуктов жареные без масла
+bls:T930100	Fish fingers (Alaska pollock) breaded, deep-frozen	рыбные палочки из минтая в панировке замороженные
+bls:T930162	Fish fingers (Alaska pollock) breaded, deep-frozen, fried without fat (oven)	рыбные палочки из минтая в панировке из заморозки запечённые
+bls:T930182	Fish fingers (Alaska pollock) breaded, deep-frozen, fried without fat (pan)	рыбные палочки из минтая в панировке из заморозки жареные без масла
 bls:T930700	Alaska pollock in frying batter, deep-frozen	минтай в кляре замороженный
+bls:T930762	Alaska pollock in frying batter, deep-frozen, fried without fat (oven)	минтай в кляре из заморозки запечённый
+bls:T930782	Alaska pollock in frying batter, deep-frozen, fried without fat (pan)	минтай в кляре из заморозки жареный без масла
+bls:T930792	Alaska pollock in frying batter, deep-frozen, deep-fried	минтай в кляре из заморозки жареный во фритюре
+bls:T930800	Fishcake (Alaska pollock) breaded, deep-frozen	рыбная котлета из минтая в панировке замороженная
+bls:T930862	Fishcake (Alaska pollock) breaded, deep-frozen, fried without fat (oven)	рыбная котлета из минтая в панировке из заморозки запечённая
+bls:T930882	Fishcake (Alaska pollock) breaded, deep-frozen, fried without fat (pan)	рыбная котлета из минтая в панировке из заморозки жареная без масла
+bls:T930892	Fishcake (Alaska pollock) breaded, deep-frozen, deep-fried	рыбная котлета из минтая в панировке из заморозки жареная во фритюре
+bls:T931200	Saithe/pollack, breaded, deep-frozen	сайда в панировке замороженная
+bls:T931262	Saithe/pollack, breaded, deep-frozen, fried without fat (oven)	сайда в панировке из заморозки запечённая
+bls:T931282	Saithe/pollack, breaded, deep-frozen, fried without fat (pan)	сайда в панировке из заморозки жареная без масла
+bls:T931292	Saithe/pollack, breaded, deep-frozen, deep-fried	сайда в панировке из заморозки жареная во фритюре
+bls:T932200	Saithe/pollack, in frying batter, deep-frozen	сайда в кляре замороженная
+bls:T932262	Saithe/pollack, in frying batter, deep-frozen, fried without fat (oven)	сайда в кляре из заморозки запечённая
+bls:T932282	Saithe/pollack, in frying batter, deep-frozen, fried without fat (pan)	сайда в кляре из заморозки жареная без масла
 bls:T933100	Carp in frying batter, raw	карп в кляре сырой
+bls:T933182	Carp in frying batter, fried without fat (pan)	карп в кляре жареный без масла
+bls:T934200	Alaska pollock breaded, deep-frozen	минтай в панировке замороженный
+bls:T934262	Alaska pollock breaded, deep-frozen, fried without fat (oven)	минтай в панировке из заморозки запечённый
+bls:T934282	Alaska pollock breaded, deep-frozen, fried without fat (pan)	минтай в панировке из заморозки жареный без масла
+bls:T934292	Alaska pollock breaded, deep-frozen, deep-fried	минтай в панировке из заморозки жареный во фритюре
+bls:T935200	Fish bake Bordelaise style (Alaska pollock) deep-frozen	филе минтая по-бордельски замороженное
+bls:T935262	Fish bake Bordelaise style (Alaska pollock) deep-frozen, fried without fat (oven)	филе минтая по-бордельски из заморозки запечённое
+bls:T936100	Common shrimp breaded, deep-frozen	креветки в панировке замороженные
+bls:T936182	Common shrimp breaded, deep-frozen, fried without fat (pan)	креветки в панировке из заморозки жареные без масла
+bls:T940200	Cod in frying batter, deep-frozen	треска в кляре замороженная
+bls:U010100	Beef mince, raw	фарш говяжий сырой
+bls:U010132	Beef mince, boiled	фарш говяжий варёный
+bls:U010142	Beef mince, braised without fat	фарш говяжий тушёный
+bls:U010162	Beef mince, fried without fat (oven)	фарш говяжий запечённый
+bls:U010182	Beef mince, fried without fat (pan)	фарш говяжий жареный без масла
+bls:U010200	Beef mince, deep-frozen	фарш говяжий замороженный
+bls:U010232	Beef mince, deep-frozen, boiled	фарш говяжий из заморозки варёный
+bls:U010242	Beef mince, deep-frozen, braised without fat	фарш говяжий из заморозки тушёный
+bls:U010262	Beef mince, deep-frozen, fried without fat (oven)	фарш говяжий из заморозки запечённый
+bls:U010272	Beef mince, deep-frozen, grilled	фарш говяжий из заморозки на гриле
+bls:U011172	Beef mince, grilled	фарш говяжий на гриле
+bls:U012282	Beef mince, deep-frozen, fried without fat (pan)	фарш говяжий из заморозки жареный без масла
+bls:U013100	Beef patty, raw	котлета говяжья сырая
+bls:U013162	Beef patty, fried without fat (oven)	котлета говяжья запечённая
+bls:U013172	Beef patty, grilled	котлета говяжья на гриле
+bls:U013182	Beef patty, fried without fat (pan)	котлета говяжья жареная без масла
+bls:U020100	Pork mince, raw	фарш свиной сырой
+bls:U020132	Pork mince, boiled	фарш свиной варёный
+bls:U020142	Pork mince, braised without fat	фарш свиной тушёный
+bls:U020162	Pork mince, fried without fat (oven)	фарш свиной запечённый
 bls:U020182	Pork mince, fried without fat (pan)	фарш свиной жареный без масла
+bls:U020200	Pork mince, deep-frozen	фарш свиной замороженный
+bls:U020242	Pork mince, deep-frozen, braised without fat	фарш свиной из заморозки тушёный
+bls:U020272	Pork mince, deep-frozen, grilled	фарш свиной из заморозки на гриле
+bls:U022232	Pork mince, deep-frozen, boiled	фарш свиной из заморозки варёный
+bls:U023262	Pork mince, deep-frozen, fried without fat (pan)	фарш свиной из заморозки жареный без масла
+bls:U024172	Pork mince, grilled	фарш свиной на гриле
+bls:U025100	Pork patty, raw	котлета свиная сырая
+bls:U025162	Pork patty, fried without fat (oven)	котлета свиная запечённая
+bls:U025172	Pork patty, grilled	котлета свиная на гриле
+bls:U025182	Pork patty, fried without fat (pan)	котлета свиная жареная без масла
+bls:U030100	Veal mince, raw	фарш телячий сырой
+bls:U030132	Veal mince, boiled	фарш телячий варёный
+bls:U030142	Veal mince, braised without fat	фарш телячий тушёный
+bls:U030162	Veal mince, fried without fat (oven)	фарш телячий запечённый
+bls:U030172	Veal mince, grilled	фарш телячий на решётке
+bls:U030182	Veal mince, fried without fat (pan)	фарш телячий жареный без масла
+bls:U040100	Pork/beef, mince mixed, raw	фарш свино-говяжий смешанный сырой
+bls:U040132	Pork/beef, mince mixed, boiled	фарш свино-говяжий смешанный варёный
+bls:U040142	Pork/beef, mince mixed, braised without fat	фарш свино-говяжий смешанный тушёный
+bls:U040162	Pork/beef, mince mixed, fried without fat (oven)	фарш свино-говяжий смешанный запечённый
+bls:U040182	Pork/beef, mince mixed, fried without fat (pan)	фарш свино-говяжий смешанный жареный без масла
+bls:U042232	Pork/beef, mince mixed, deep-frozen, boiled	фарш свино-говяжий смешанный из заморозки варёный
+bls:U043262	Pork/beef, mince mixed, deep-frozen, fried without fat (oven)	фарш свино-говяжий смешанный из заморозки запечённый
+bls:U044262	Pork/beef, mince mixed, deep-frozen, fried without fat (pan)	фарш свино-говяжий смешанный из заморозки жареный без масла
+bls:U045172	Pork/beef, mince mixed, grilled	фарш свино-говяжий смешанный на гриле
+bls:U047200	Pork/beef, mince mixed, deep-frozen	фарш свино-говяжий смешанный замороженный
+bls:U047242	Pork/beef, mince mixed, deep-frozen, braised without fat	фарш свино-говяжий смешанный из заморозки тушёный
+bls:U050100	Beef/pork, mince mixed, raw	фарш говяжье-свиной смешанный сырой
+bls:U050132	Beef/pork, mince mixed, boiled	фарш говяжье-свиной смешанный варёный
+bls:U050162	Beef/pork, mince mixed, fried without fat (oven)	фарш говяжье-свиной смешанный запечённый
+bls:U050182	Beef/pork, mince mixed, fried without fat (pan)	фарш говяжье-свиной смешанный жареный без масла
+bls:U050200	Beef/pork, mince mixed, deep-frozen	фарш говяжье-свиной смешанный замороженный
+bls:U050242	Beef/pork, mince mixed, deep-frozen, braised without fat	фарш говяжье-свиной смешанный из заморозки тушёный
+bls:U050282	Beef/pork, mince mixed, deep-frozen, fried without fat (pan)	фарш говяжье-свиной смешанный из заморозки жареный без масла
+bls:U051100	Beef/pork, patty, raw	котлета говяжье-свиная сырая
+bls:U051162	Beef/pork, patty, fried without fat (oven)	котлета говяжье-свиная запечённая
+bls:U051172	Beef/pork, patty, grilled	котлета говяжье-свиная на гриле
+bls:U051182	Beef/pork, patty, fried without fat (pan)	котлета говяжье-свиная жареная без масла
+bls:U063100	Beef/pork, minced steak, raw	бифштекс рубленый говяжье-свиной сырой
+bls:U063162	Beef/pork, minced steak, fried without fat (oven)	бифштекс рубленый говяжье-свиной запечённый
+bls:U063172	Beef/pork, minced steak, grilled	бифштекс рубленый говяжье-свиной на гриле
+bls:U063182	Beef/pork, minced steak, fried without fat (pan)	бифштекс рубленый говяжье-свиной жареный без масла
+bls:U063200	Beef/pork, minced steak, deep-frozen	бифштекс рубленый говяжье-свиной замороженный
+bls:U063262	Beef/pork, minced steak, deep-frozen, fried without fat (oven)	бифштекс рубленый говяжье-свиной из заморозки запечённый
+bls:U063272	Beef/pork, minced steak, deep-frozen, grilled	бифштекс рубленый говяжье-свиной из заморозки на гриле
+bls:U063282	Beef/pork, minced steak, deep-frozen, fried without fat (pan)	бифштекс рубленый говяжье-свиной из заморозки жареный без масла
+bls:U065100	Pork sausage meat, raw	колбасный фарш свиной сырой
+bls:U065132	Pork sausage meat, boiled	колбасный фарш свиной варёный
+bls:U065200	Pork sausage meat, deep-frozen	колбасный фарш свиной замороженный
+bls:U067100	Leberkase sausage meat from veal with pork, raw	фарш для леберкезе из телятины со свининой сырой
+bls:U067162	Leberkase sausage meat from veal with pork, fried without fat (oven)	фарш для леберкезе из телятины со свининой запечённый
+bls:U070100	Beef mince, lean, raw	фарш говяжий постный сырой
+bls:U070162	Beef mince, lean, fried without fat (oven)	фарш говяжий постный запечённый
+bls:U070182	Beef mince, lean, fried without fat (pan)	фарш говяжий постный жареный без масла
+bls:U070200	Beef mince, lean, deep-frozen	фарш говяжий постный замороженный
+bls:U070232	Beef mince, lean, deep-frozen, boiled	фарш говяжий постный из заморозки варёный
+bls:U080100	Beef liver mince, raw	фарш говяжий печёночный сырой
+bls:U080132	Beef liver mince, boiled	фарш говяжий печёночный варёный
+bls:U080182	Beef liver mince, fried without fat (pan)	фарш говяжий печёночный жареный без масла
+bls:U080200	Beef liver mince, deep-frozen	фарш говяжий печёночный замороженный
+bls:U080232	Beef liver mince, deep-frozen, boiled	фарш говяжий печёночный из заморозки варёный
+bls:U080282	Beef liver mince, deep-frozen, fried without fat (pan)	фарш говяжий печёночный из заморозки жареный без масла
+bls:U101400	Beef meat (round) dried	говядина (окорок) сушёная
+bls:U104100	Beef bonemeat, raw	говяжья обрезь с кости сырая
+bls:U109100	Beef oxtail, raw	бычий хвост сырой
+bls:U109142	Beef oxtail, braised without fat	бычий хвост тушёный
+bls:U109182	Beef oxtail, fried without fat (pan)	бычий хвост жареный без масла
+bls:U111700	Beef fillet, raw cured, smoked	говяжья вырезка солёная сырая копчёная
+bls:U121100	Beef chop (loin) raw	говяжья отбивная сырая
+bls:U121172	Beef chop (loin) grilled	говяжья отбивная на гриле
+bls:U121182	Beef chop (loin) fried without fat (pan)	говяжья отбивная жареная без масла
+bls:U121200	Beef chop (loin) deep-frozen	говяжья отбивная замороженная
 bls:U121272	Beef chop (loin) deep-frozen, grilled	говяжья отбивная на гриле
+bls:U121282	Beef chop (loin) deep-frozen, fried without fat (pan)	говяжья отбивная из заморозки жареная без масла
+bls:U131100	Beef steak (loin) raw	говяжий стейк из корейки сырой
+bls:U131162	Beef steak (loin) fried in the oven without fat	говяжий стейк из корейки запечённый
+bls:U131172	Beef steak (loin) grilled	говяжий стейк из корейки на гриле
+bls:U131182	Beef steak (loin) fried without fat (pan)	говяжий стейк из корейки жареный без масла
+bls:U131200	Beef steak (loin) deep-frozen	говяжий стейк из корейки замороженный
+bls:U131262	Beef steak (loin) deep-frozen, fried without fat (oven)	говяжий стейк из корейки из заморозки запечённый
+bls:U131272	Beef steak (loin) deep-frozen, grilled	говяжий стейк из корейки из заморозки на гриле
+bls:U131282	Beef steak (loin) deep-frozen, fried without fat (pan)	говяжий стейк из корейки из заморозки жареный без масла
+bls:U133100	Beef steak (loin) marinated, raw	говяжий стейк из корейки маринованный сырой
+bls:U133172	Beef steak (loin) marinated, grilled	говяжий стейк из корейки маринованный на гриле
+bls:U133182	Beef steak (loin) marinated, fried without fat (pan)	говяжий стейк из корейки маринованный жареный без масла
+bls:U151100	Beef goulash (shoulder) raw	говядина для гуляша (лопатка) сырая
+bls:U151142	Beef goulash (shoulder) braised without fat	говядина для гуляша (лопатка) тушёная
+bls:U151182	Beef goulash (shoulder) fried without fat (pan)	говядина для гуляша (лопатка) жареная без масла
+bls:U151200	Beef goulash (shoulder) deep-frozen	говядина для гуляша (лопатка) замороженная
+bls:U151242	Beef goulash (shoulder) deep-frozen, braised without fat	говядина для гуляша (лопатка) из заморозки тушёная
+bls:U151282	Beef goulash (shoulder) deep-frozen, fried without fat (pan)	говядина для гуляша (лопатка) из заморозки жареная без масла
+bls:U163100	Beef meat for olives (topside/top round) raw	говядина для рулетов (внутренняя часть бедра) сырая
+bls:U163142	Beef meat for olives (topside/top round) braised without fat	говядина для рулетов (внутренняя часть бедра) тушёная
+bls:U163182	Beef meat for olives (topside/top round) fried without fat (pan)	говядина для рулетов (внутренняя часть бедра) жареная без масла
+bls:U171100	Beef meat for roasting (shoulder) raw	говядина для жаркого (лопатка) сырая
+bls:U171142	Beef meat for roasting (shoulder) braised without fat	говядина для жаркого (лопатка) тушёная
+bls:U171162	Beef meat for roasting (shoulder) fried without fat (oven)	говядина для жаркого (лопатка) запечённая
+bls:U171200	Beef meat for roasting (shoulder) deep-frozen	говядина для жаркого (лопатка) замороженная
+bls:U171242	Beef meat for roasting (shoulder) deep-frozen, braised without fat	говядина для жаркого (лопатка) из заморозки тушёная
+bls:U171262	Beef meat for roasting (shoulder) deep-frozen, fried without fat (oven)	говядина для жаркого (лопатка) из заморозки запечённая
+bls:U171942	Beef meat for roasting (shoulder) marinated, braised without fat	говядина для жаркого (лопатка) маринованная тушёная
+bls:U175100	Beef meat for roasting (sirloin) raw	говядина для жаркого (корейка) сырая
+bls:U175162	Beef meat for roasting (sirloin) fried without fat (oven)	говядина для жаркого (корейка) запечённая
+bls:U184100	Beef meat for boiling (shoulder) raw	говядина для варки (лопатка) сырая
+bls:U184132	Beef meat for boiling (shoulder) boiled	говядина для варки (лопатка) варёная
+bls:U185100	Beef meat for boiling (rump) raw	говядина для варки (кострец) сырая
+bls:U185132	Beef meat for boiling (rump) boiled	говядина для варки (кострец) варёная
+bls:U201000	Beef muscle meat, raw	говяжья мякоть сырая
+bls:U202000	Beef meat, fat and tendons free (R I) raw	говядина без жира и сухожилий сырая
+bls:U203000	Beef meat, tendons coarsly removed, visible fat content max. 5 % (R II) raw	говядина грубо зачищенная от сухожилий видимый жир до 5 % сырая
+bls:U204000	Beef meat, tendons coarsly removed, visible fat content max. 10 % (R III) raw	говядина грубо зачищенная от сухожилий видимый жир до 10 % сырая
+bls:U205000	Beef fatty tissue, subcutaneous, raw	говяжья жировая ткань подкожная сырая
+bls:U205300	Beef marrow, raw	говяжий костный мозг сырой
+bls:U205800	Beef fatty tissue, intermuscular, raw	говяжья жировая ткань межмускульная сырая
+bls:U207000	Beef connective tissue, raw	говяжья соединительная ткань сырая
+bls:U209100	Beef blood liquid, raw	говяжья кровь сырая
+bls:U211100	Beef fillet (tenderloin) raw	говяжья вырезка сырая
+bls:U211162	Beef fillet (tenderloin) fried in the oven without fat	говяжья вырезка запечённая
+bls:U211200	Beef fillet (tenderloin) deep-frozen	говяжья вырезка замороженная
+bls:U211262	Beef fillet (tenderloin) deep-frozen, fried without fat (oven)	говяжья вырезка из заморозки запечённая
+bls:U216100	Beef tenderloin steak raw	стейк говяжьей вырезки сырой
+bls:U216172	Beef tenderloin steak grilled	стейк из говяжьей вырезки на гриле
+bls:U216182	Beef tenderloin steak fried without fat (pan)	стейк из говяжьей вырезки жареный без масла
+bls:U221100	Beef roastbeef (loin) raw	говяжий ростбиф сырой
+bls:U221162	Beef roastbeef (loin) fried without fat (oven)	говяжий ростбиф запечённый
+bls:U221200	Beef roastbeef (loin) deep-frozen	говяжий ростбиф замороженный
+bls:U221262	Beef roastbeef (loin) deep-frozen, fried without fat (oven)	говяжий ростбиф из заморозки запечённый
+bls:U221700	Beef roastbeef (loin) raw cured, smoked	говяжий ростбиф солёный сырой копчёный
+bls:U221800	Beef roastbeef (loin) raw cured	говяжий ростбиф солёный сырой
+bls:U223000	Beef roastbeef (loin) marinated	говяжий ростбиф маринованный
+bls:U223072	Beef roastbeef (loin) marinated, grilled	говяжий ростбиф маринованный на гриле
+bls:U231100	Beef neck/chuck, raw	говяжья шея сырая
+bls:U231132	Beef neck/chuck, boiled	говяжья шея варёная
+bls:U231142	Beef neck/chuck, braised without fat	говяжья шея тушёная
+bls:U231200	Beef neck/chuck, deep-frozen	говяжья шея замороженная
+bls:U231232	Beef neck/chuck, deep-frozen, boiled	говяжья шея из заморозки варёная
+bls:U231242	Beef neck/chuck, deep-frozen, braised without fat	говяжья шея из заморозки тушёная
+bls:U235100	Beef forerib/prime rib, raw	говяжий рибай сырой
+bls:U235132	Beef forerib/prime rib, boiled	говяжий рибай варёный
+bls:U235142	Beef forerib/prime rib, braised without fat	говяжий рибай тушёный
+bls:U235162	Beef forerib/prime rib, fried without fat (oven)	говяжий рибай запечённый
+bls:U255100	Beef brisket/centre cut, raw	грудинка говяжья средняя сырая
+bls:U255132	Beef brisket/centre cut, boiled	говяжья грудинка варёная
+bls:U255142	Beef brisket/centre cut, braised without fat	говяжья грудинка тушёная
+bls:U255162	Beef brisket/centre cut, fried without fat (oven)	говяжья грудинка запечённая
+bls:U255700	Beef brisket/centre cut, raw cured, smoked	говяжья грудинка солёная сырая копчёная
+bls:U255800	Beef brisket/centre cut, raw cured	говяжья грудинка солёная сырая
+bls:U261100	Beef shoulder, raw	говяжья лопатка сырая
+bls:U261142	Beef shoulder, braised without fat	говяжья лопатка тушёная
+bls:U261162	Beef shoulder, fried without fat (oven)	говяжья лопатка запечённая
+bls:U261200	Beef shoulder, deep-frozen	говяжья лопатка замороженная
+bls:U271100	Beef shin/foreshank, raw	говяжья голяшка передняя сырая
+bls:U271132	Beef shin/foreshank, boiled	говяжья голяшка передняя варёная
+bls:U271142	Beef shin/foreshank, braised without fat	говяжья голяшка передняя тушёная
+bls:U271200	Beef shin/foreshank, deep-frozen	говяжья голяшка передняя замороженная
+bls:U271232	Beef shin/foreshank, deep-frozen, boiled	говяжья голяшка передняя из заморозки варёная
+bls:U271242	Beef shin/foreshank, deep-frozen, braised without fat	говяжья голяшка передняя из заморозки тушёная
+bls:U281100	Beef round, raw	говяжий огузок сырой
+bls:U281132	Beef round, boiled	говяжий огузок варёный
+bls:U281142	Beef round, braised without fat	говяжий огузок тушёный
 bls:U281162	Beef round, fried without fat (oven)	говядина огузок запечённая
+bls:U281200	Beef round, deep-frozen	говяжий огузок замороженный
+bls:U281232	Beef round, deep-frozen, boiled	говяжий огузок из заморозки варёный
+bls:U281242	Beef round, deep-frozen, braised without fat	говяжий огузок из заморозки тушёный
+bls:U281262	Beef round, deep-frozen, fried without fat (oven)	говяжий огузок из заморозки запечённый
+bls:U284100	Beef rump, raw	говяжий кострец сырой
+bls:U284132	Beef rump, boiled	говяжий кострец варёный
+bls:U284142	Beef rump, braised without fat	говяжий кострец тушёный
+bls:U284162	Beef rump, fried without fat (oven)	говяжий кострец запечённый
+bls:U287100	Beef topside/top round, raw	говядина внутренняя часть бедра сырая
+bls:U287132	Beef topside/top round, boiled	говядина внутренняя часть бедра варёная
+bls:U287162	Beef topside/top round, fried without fat (oven)	говядина внутренняя часть бедра запечённая
+bls:U291100	Beef leg/hindshank, raw	говяжья голяшка задняя сырая
+bls:U291132	Beef leg/hindshank, boiled	говяжья голяшка задняя варёная
+bls:U291142	Beef leg/hindshank, braised without fat	говяжья голяшка задняя тушёная
+bls:U291200	Beef leg/hindshank, deep-frozen	говяжья голяшка задняя замороженная
+bls:U291232	Beef leg/hindshank, deep-frozen, boiled	говяжья голяшка задняя из заморозки варёная
+bls:U291242	Beef leg/hindshank, deep-frozen, braised without fat	говяжья голяшка задняя из заморозки тушёная
+bls:U304100	Veal bonemeat, raw	телячья обрезь с кости сырая
+bls:U323100	Veal chop (loin) raw	телячья отбивная сырая
+bls:U323162	Veal chop (loin) fried without fat (oven)	телячья отбивная запечённая
+bls:U323172	Veal chop (loin) grilled	телячья отбивная на гриле
+bls:U323182	Veal chop (loin) fried without fat (pan)	телячья отбивная жареная без масла
+bls:U331100	Veal steak (loin) raw	телячий стейк из корейки сырой
+bls:U331162	Veal steak (loin) fried without fat (oven)	телячий стейк из корейки запечённый
+bls:U331172	Veal steak (loin) grilled	телячий стейк из корейки на гриле
+bls:U331182	Veal steak (loin) fried without fat (pan)	телячий стейк из корейки жареный без масла
+bls:U331200	Veal steak (loin) deep-frozen	телячий стейк из корейки замороженный
+bls:U331262	Veal steak (loin) deep-frozen, fried without fat (oven)	телячий стейк из корейки из заморозки запечённый
+bls:U331272	Veal steak (loin) deep-frozen, grilled	телячий стейк из корейки из заморозки на гриле
+bls:U331282	Veal steak (loin) deep-frozen, fried without fat (pan)	телячий стейк из корейки из заморозки жареный без масла
+bls:U333100	Veal tenderloin steak, raw	стейк из телячьей вырезки сырой
+bls:U333162	Veal tenderloin steak, fried without fat (oven)	стейк из телячьей вырезки запечённый
+bls:U333172	Veal tenderloin steak, grilled	стейк из телячьей вырезки на гриле
+bls:U333182	Veal tenderloin steak, fried without fat (pan)	стейк из телячьей вырезки жареный без масла
+bls:U342100	Veal schnitzel (round) raw	телячий шницель (окорок) сырой
+bls:U342162	Veal schnitzel (round) fried without fat (oven)	телячий шницель (окорок) запечённый
+bls:U342172	Veal schnitzel (round) grilled	телячий шницель (окорок) на гриле
+bls:U342182	Veal schnitzel (round) fried without fat (pan)	телячий шницель (окорок) жареный без масла
+bls:U342200	Veal schnitzel (round) deep-frozen	телячий шницель (окорок) замороженный
+bls:U342262	Veal schnitzel (round) deep-frozen, fried without fat (oven)	телячий шницель (окорок) из заморозки запечённый
+bls:U342272	Veal schnitzel (round) deep-frozen, grilled	телячий шницель (окорок) из заморозки на гриле
+bls:U342282	Veal schnitzel (round) deep-frozen, fried without fat (pan)	телячий шницель (окорок) из заморозки жареный без масла
+bls:U351100	Veal goulash (shoulder) raw	телятина для гуляша (лопатка) сырая
+bls:U351142	Veal goulash (shoulder) braised without fat	телятина для гуляша (лопатка) тушёная
+bls:U351182	Veal goulash (shoulder) fried without fat (pan)	телятина для гуляша (лопатка) жареная без масла
+bls:U362100	Veal meat for olives (round) raw	телятина для рулетов (окорок) сырая
+bls:U362200	Veal meat for olives (round) deep-frozen	телятина для рулетов (окорок) замороженная
+bls:U371100	Veal meat for roasting (shoulder) raw	телятина для жаркого (лопатка) сырая
+bls:U371162	Veal meat for roasting (shoulder) fried without fat (oven)	телятина для жаркого (лопатка) запечённая
+bls:U371200	Veal meat for roasting (shoulder) deep-frozen	телятина для жаркого (лопатка) замороженная
+bls:U371262	Veal meat for roasting (shoulder) deep-frozen, fried without fat (oven)	телятина для жаркого (лопатка) из заморозки запечённая
+bls:U382100	Veal meat for boiling (breast) raw	телятина для варки (грудинка) сырая
+bls:U382132	Veal meat for boiling (breast) boiled	телятина для варки (грудинка) варёная
+bls:U382200	Veal meat for boiling (breast) deep-frozen	телятина для варки (грудинка) замороженная
+bls:U382232	Veal meat for boiling (breast) deep-frozen, boiled	телятина для варки (грудинка) из заморозки варёная
+bls:U401000	Veal muscle meat, raw	телячья мякоть сырая
+bls:U402000	Veal meat, fat and tendon free (KA I) raw	телятина без жира и сухожилий сырая
+bls:U403100	Veal meat, low tendon content, visible fat content max. 5 % (KA II) raw	телятина с малым количеством сухожилий видимый жир до 5 % сырая
+bls:U404000	Veal meat, tendon free, visible fat content > 20 % (KA IV) raw	телятина без сухожилий жир более 20 % сырая
+bls:U405000	Veal fatty tissue, subcutaneous, raw	телячья жировая ткань подкожная сырая
+bls:U405200	Veal kidney fat, deep-frozen	телячий околопочечный жир замороженный
+bls:U405800	Veal fatty tissue, intermuscular, raw	телячья жировая ткань межмускульная сырая
+bls:U411100	Veal fillet (tenderloin) raw	телячья вырезка сырая
+bls:U411162	Veal fillet (tenderloin) fried without fat (oven)	телячья вырезка запечённая
+bls:U411200	Veal fillet (tenderloin) deep-frozen	телячья вырезка замороженная
+bls:U411262	Veal fillet (tenderloin) deep-frozen, fried without fat (oven)	телячья вырезка из заморозки запечённая
+bls:U421100	Veal loin, raw	телячья корейка сырая
+bls:U421142	Veal loin, braised without fat	телячья корейка тушёная
+bls:U421162	Veal loin, fried without fat (oven)	телячья корейка запечённая
+bls:U421200	Veal loin, deep-frozen	телячья корейка замороженная
+bls:U421242	Veal loin, deep-frozen, braised without fat	телячья корейка из заморозки тушёная
+bls:U421262	Veal loin, deep-frozen, fried without fat (oven)	телячья корейка из заморозки запечённая
+bls:U432100	Veal scrag raw	телячья шея сырая
+bls:U432132	Veal scrag boiled	телячья шея варёная
+bls:U432142	Veal scrag braised without fat	телячья шея тушёная
+bls:U432162	Veal scrag fried without fat (oven)	телячья шея запечённая
+bls:U432200	Veal scrag deep-frozen	телячья шея замороженная
+bls:U432232	Veal scrag deep-frozen, boiled	телячья шея из заморозки варёная
+bls:U432242	Veal scrag deep-frozen, braised without fat	телячья шея из заморозки тушёная
+bls:U432262	Veal scrag deep-frozen, fried without fat (oven)	телячья шея из заморозки запечённая
+bls:U452100	Veal breast, raw	телячья грудинка сырая
+bls:U452132	Veal breast, boiled	телячья грудинка варёная
+bls:U452142	Veal breast, braised without fat	телячья грудинка тушёная
+bls:U452162	Veal breast, fried without fat (oven)	телячья грудинка запечённая
+bls:U452200	Veal breast, deep-frozen	телячья грудинка замороженная
+bls:U452232	Veal breast, deep-frozen, boiled	телячья грудинка из заморозки варёная
+bls:U452242	Veal breast, deep-frozen, braised without fat	телячья грудинка из заморозки тушёная
+bls:U452262	Veal breast, deep-frozen, fried without fat (oven)	телячья грудинка из заморозки запечённая
+bls:U452700	Veal breast, raw cured, smoked	телячья грудинка солёная сырая копчёная
+bls:U452800	Veal breast, raw cured	телячья грудинка солёная сырая
+bls:U461100	Veal shoulder, raw	телячья лопатка сырая
+bls:U461132	Veal shoulder, boiled	телячья лопатка варёная
+bls:U461142	Veal shoulder, braised without fat	телячья лопатка тушёная
+bls:U461162	Veal shoulder, fried without fat (oven)	телячья лопатка запечённая
+bls:U461200	Veal shoulder, deep-frozen	телячья лопатка замороженная
+bls:U461232	Veal shoulder, deep-frozen, boiled	телячья лопатка из заморозки варёная
+bls:U461242	Veal shoulder, deep-frozen, braised without fat	телячья лопатка из заморозки тушёная
+bls:U461262	Veal shoulder, deep-frozen, fried without fat (oven)	телячья лопатка из заморозки запечённая
+bls:U471100	Veal shank, raw	телячья голяшка сырая
+bls:U471142	Veal shank, braised without fat	телячья голяшка тушёная
+bls:U471162	Veal shank, fried without fat (oven)	телячья голяшка запечённая
+bls:U471172	Veal shank, grilled	телячья голяшка на гриле
+bls:U471200	Veal shank, deep-frozen	телячья голяшка замороженная
+bls:U471242	Veal shank, deep-frozen, braised without fat	телячья голяшка из заморозки тушёная
+bls:U471262	Veal shank, deep-frozen, fried without fat (oven)	телячья голяшка из заморозки запечённая
+bls:U471272	Veal shank, deep-frozen, grilled	телячья голяшка из заморозки на гриле
+bls:U482100	Veal round, raw	телячий окорок сырой
+bls:U482162	Veal round, fried without fat (oven)	телячий окорок запечённый
+bls:U482200	Veal round, deep-frozen	телячий окорок замороженный
+bls:U482262	Veal round, deep-frozen, fried without fat (oven)	телячий окорок из заморозки запечённый
+bls:U485100	Veal thick flank, raw	телячий подбёдерок сырой
+bls:U485162	Veal thick flank, fried without fat (oven)	телячий подбёдерок запечённый
+bls:U486100	Veal silverside, raw	телятина наружная часть бедра сырая
+bls:U486142	Veal silverside, braised without fat	телятина наружная часть бедра тушёная
+bls:U486162	Veal silverside, fried without fat (oven)	телятина наружная часть бедра запечённая
+bls:U4A3100	Veal meat, visible fat content max. 15 % (KA III) raw	телятина видимый жир до 15 % сырая
+bls:U504100	Pork bonemeat, raw	свиная обрезь с кости сырая
+bls:U505100	Pork fat belly flank, without rind, low lean meat content (S XI) raw	свиная пашина жирная без шкурки мало мяса (S XI) сырая
+bls:U507100	Pork fat jowl, without rind (S VI) raw	свиное щёчное сало без шкурки (S VI) сырое
+bls:U508100	Pork mask, without lean and fat jowl (S XII) raw	свиная маска без щёк (S XII) сырая
+bls:U510082	Pork fillet medallion, marinated, fried without fat (pan)	медальон из свиной вырезки маринованный жареный без масла
+bls:U511082	Pork fillet medaillon, breaded, fried without fat (pan)	медальоны из свиной вырезки в панировке жареные без масла
+bls:U511100	Pork fillet medaillon, raw	медальоны из свиной вырезки сырые
+bls:U511162	Pork fillet medaillon, fried without fat (oven)	медальоны из свиной вырезки запечённые
+bls:U511172	Pork fillet medaillon, grilled	медальоны из свиной вырезки на гриле
 bls:U511182	Pork fillet medaillon, fried without fat (pan)	медальоны из свиной вырезки жареные без масла
+bls:U511200	Pork fillet medaillon, deep-frozen	медальоны из свиной вырезки замороженные
+bls:U511262	Pork fillet medaillon, deep-frozen, fried without fat (oven)	медальоны из свиной вырезки из заморозки запечённые
+bls:U511272	Pork fillet medaillon, deep-frozen, grilled	медальоны из свиной вырезки из заморозки на гриле
+bls:U511282	Pork fillet medaillon, deep-frozen, fried without fat (pan)	медальоны из свиной вырезки из заморозки жареные без масла
+bls:U512100	Pork fillet medaillon, marinated, raw	медальоны из свиной вырезки маринованные сырые
+bls:U512172	Pork fillet medaillon, marinated, grilled	медальоны из свиной вырезки маринованные на гриле
+bls:U522100	Pork chop (loin) raw	свиная отбивная на косточке сырая
+bls:U522162	Pork chop (loin) fried without fat (oven)	свиная отбивная запечённая
+bls:U522172	Pork chop (loin) grilled	свиная отбивная на гриле
+bls:U522182	Pork chop (loin) fried without fat (pan)	свиная отбивная жареная без масла
+bls:U522200	Pork chop (loin) deep-frozen	свиная отбивная замороженная
+bls:U522262	Pork chop (loin) deep-frozen, fried without fat (oven)	свиная отбивная из заморозки запечённая
+bls:U522272	Pork chop (loin) deep-frozen, grilled	свиная отбивная из заморозки на гриле
+bls:U522282	Pork chop (loin) deep-frozen, fried without fat (pan)	свиная отбивная из заморозки жареная без масла
+bls:U522700	Pork chop (loin) cooked cured, smoked	свиная отбивная варёно-солёная копчёная
+bls:U522800	Pork chop (loin) cooked cured	свиная отбивная варёно-солёная
+bls:U532072	Pork steak (neck) marinated, grilled	свиной стейк из шеи маринованный на гриле
+bls:U532100	Pork steak (neck) raw	свиной стейк из шеи сырой
+bls:U532162	Pork steak (neck) fried without fat (oven)	свиной стейк из шеи запечённый
+bls:U532172	Pork steak (neck) grilled	свиной стейк из шеи на гриле
+bls:U532182	Pork steak (neck) raw fried without fat (pan)	свиной стейк из шеи жареный без масла
+bls:U532200	Pork steak (neck) deep-frozen	свиной стейк из шеи замороженный
+bls:U532262	Pork steak (neck) deep-frozen, fried without fat (oven)	свиной стейк из шеи из заморозки запечённый
+bls:U532272	Pork steak (neck) deep-frozen, grilled	свиной стейк из шеи из заморозки на гриле
+bls:U532282	Pork steak (neck) deep-frozen, fried without fat (pan)	свиной стейк из шеи из заморозки жареный без масла
+bls:U533100	Pork steak (loin) raw	свиной стейк-бабочка сырой
+bls:U533162	Pork steak (loin) fried without fat (oven)	свиной стейк-бабочка запечённый
+bls:U533172	Pork steak (loin) grilled	свиной стейк-бабочка на гриле
+bls:U533182	Pork steak (loin) fried without fat (pan)	свиной стейк-бабочка жареный без масла
+bls:U541062	Pork schnitzel (topside) fried without fat (oven)	свиной шницель (внутренняя часть бедра) запечённый
+bls:U541072	Pork schnitzel (topside) marinated, grilled	свиной шницель (внутренняя часть бедра) маринованный на гриле
+bls:U541082	Pork schnitzel (topside) fried without fat (pan)	свиной шницель (внутренняя часть бедра) жареный без масла
+bls:U541100	Pork schnitzel (topside) raw	свиной шницель (внутренняя часть бедра) сырой
+bls:U541172	Pork schnitzel (topside) grilled	свиной шницель (внутренняя часть бедра) на гриле
+bls:U541200	Pork schnitzel (topside) deep-frozen	свиной шницель (внутренняя часть бедра) замороженный
+bls:U541262	Pork schnitzel (topside) deep-frozen, fried without fat (oven)	свиной шницель (внутренняя часть бедра) из заморозки запечённый
+bls:U541272	Pork schnitzel (topside) deep-frozen, grilled	свиной шницель (внутренняя часть бедра) из заморозки на гриле
+bls:U541282	Pork schnitzel (topside) deep-frozen, fried without fat (pan)	свиной шницель (внутренняя часть бедра) из заморозки жареный без масла
+bls:U543100	Pork schnitzel (thick flank) raw	свиной шницель (подбёдерок) сырой
+bls:U543162	Pork schnitzel (thick flank) fried without fat (oven)	свиной шницель (подбёдерок) запечённый
+bls:U543172	Pork schnitzel (thick flank) grilled	свиной шницель (подбёдерок) на гриле
+bls:U543182	Pork schnitzel (thick flank) fried without fat (pan)	свиной шницель (подбёдерок) жареный без масла
+bls:U554100	Pork goulash (shoulder strips) raw	свинина для гуляша (обрезь лопатки) сырая
+bls:U554142	Pork goulash (shoulder strips) braised without fat	свинина для гуляша (обрезь лопатки) тушёная
+bls:U554182	Pork goulash (shoulder strips) fried without fat (pan)	свинина для гуляша (обрезь лопатки) жареная без масла
+bls:U563100	Pork meat for olives (topside) raw	свинина для рулетов (внутренняя часть бедра) сырая
+bls:U563142	Pork meat for olives (topside) braised without fat	свинина для рулетов (внутренняя часть бедра) тушёная
 bls:U563162	Pork meat for olives (topside) fried without fat (pan)	свиной окорок (на рулеты) жареный без масла
+bls:U564100	Pork breast tip cut raw	свиное ребро толстое сырое
+bls:U564132	Pork breast tip cut boiled	свиное ребро толстое варёное
+bls:U564142	Pork breast tip cut braised without fat	свиное ребро толстое тушёное
+bls:U564162	Pork breast tip cut fried without fat (oven)	свиное ребро толстое запечённое
+bls:U571100	Pork meat for roasting (shoulder with fat and rind) raw	свинина для жаркого (лопатка, с жиром и шкуркой) сырая
+bls:U571162	Pork meat for roasting (shoulder with fat and rind) fried without fat (oven)	свинина для жаркого (лопатка, с жиром и шкуркой) запечённая
+bls:U574100	Pork meat for roasting (shoulder without fat and rind) raw	свинина для жаркого (лопатка, без жира и шкурки) сырая
+bls:U574162	Pork meat for roasting (shoulder without fat and rind) fried without fat (oven)	свинина для жаркого (лопатка, без жира и шкурки) запечённая
+bls:U575100	Pork meat for roasting (thick flank) raw	свинина для жаркого (подбёдерок) сырая
+bls:U575162	Pork meat for roasting (thick flank) fried without fat (oven)	свинина для жаркого (подбёдерок) запечённая
+bls:U576100	Pork meat for roasting (rump) roh	свинина для жаркого (кострец) сырая
+bls:U576162	Pork meat for roasting (rump) fried without fat (oven)	свинина для жаркого (кострец) запечённая
+bls:U577100	Pork meat for roasting (neck) raw	свинина для жаркого (шея) сырая
+bls:U577162	Pork meat for roasting (neck) fried without fat (oven)	свинина для жаркого (шея) запечённая
+bls:U578100	Pork meat for roasting (loin) raw	свинина для жаркого (корейка) сырая
+bls:U578162	Pork meat for roasting (loin) fried without fat (oven)	свинина для жаркого (корейка) запечённая
+bls:U579100	Pork meat for roasting (silverside) raw	свинина для жаркого со шкуркой (крустенбратен) сырая
+bls:U579162	Pork meat for roasting (silverside) fried without fat (oven)	свинина для жаркого со шкуркой (крустенбратен) запечённая
+bls:U57A100	Pork belly for grilling, raw	свиной подчерёвок для гриля сырой
+bls:U57A172	Pork belly for grilling, grilled	свиной подчерёвок для гриля на гриле
+bls:U57B100	Pork belly for roasting, raw	свиная пашина для жаркого сырая
+bls:U57B162	Pork belly for roasting, fried without fat (oven)	свиная пашина для жаркого запечённая
+bls:U583100	Pork meat for boiling (belly) raw	свинина для варки (подчерёвок) сырая
+bls:U583132	Pork meat for boiling (belly) boiled	свинина для варки (подчерёвок) варёная
+bls:U583200	Pork meat for boiling (belly) deep-frozen	свинина для варки (подчерёвок) замороженная
+bls:U583232	Pork meat for boiling (belly) deep-frozen, boiled	свинина для варки (подчерёвок) из заморозки варёная
+bls:U601000	Pork muscle meat, raw	свиная мякоть сырая
+bls:U602000	Pork meat, fat and tendon free (S I) raw	свинина без жира и сухожилий сырая
+bls:U602100	Pork meat, tendon free, visible fat content max. 5 % (S II) raw	свинина без сухожилий жир до 5 % сырая
+bls:U602200	Pork meat, low fine tendon content, visible fat content max. 3 - 5 % (S II/III) raw	свинина с малым количеством мелких сухожилий жир 3–5 % сырая
+bls:U603000	Pork meat, higher tendon content, visible fat content max. 7 - 10 % (S III) raw	свинина с повышенным количеством сухожилий жир 7–10 % сырая
+bls:U603100	Pork belly, lean, visible fat content max. 25 % (S IV) raw	свиной подчерёвок постный жир до 25 % сырой
+bls:U604000	Pork belly, firm, visible fat content max. 60 % (S V) raw	свиной подчерёвок плотный жир до 60 % сырой
+bls:U605000	Pork back fat, firm, without rind (S VIII) raw	свиное спинное сало плотное без шкурки (S VIII) сырое
+bls:U605700	Pork neck and back fat, without rind (S VII) raw	свиная шейка со спинным салом без шкурки (S VII) сырая
+bls:U605800	Pork fat trimmings, low rind content, very low lean meat content (S IX) raw	обрезки свиного жира с малым количеством шкурки очень мало мяса (S IX) сырые
+bls:U605900	Pork belly flank, medium fat, without rind (S X) raw	свиная пашина средней жирности без шкурки (S X) сырая
+bls:U608300	Pork rind, boiled	свиная шкурка варёная
+bls:U609100	Pork blood, raw	свиная кровь сырая
+bls:U611100	Pork tenderloin, raw	свиная вырезка сырая
+bls:U611162	Pork tenderloin, fried without fat (oven)	свиная вырезка запечённая
+bls:U611172	Pork tenderloin, grilled	свиная вырезка на гриле
+bls:U611200	Pork tenderloin, deep-frozen	свиная вырезка замороженная
+bls:U611262	Pork tenderloin, deep-frozen, fried without fat (oven)	свиная вырезка из заморозки запечённая
+bls:U611272	Pork tenderloin, deep-frozen, grilled	свиная вырезка из заморозки на гриле
+bls:U622100	Pork loin (cranial part) raw	свиная корейка (передняя часть) сырая
+bls:U622142	Pork loin (cranial part) braised without fat	свиная корейка (передняя часть) тушёная
+bls:U622162	Pork loin (cranial part) fried without fat (oven)	свиная корейка (передняя часть) запечённая
+bls:U622172	Pork loin (cranial part) grilled	свиная корейка (передняя часть) на гриле
+bls:U622200	Pork loin (cranial part) deep-frozen	свиная корейка (передняя часть) замороженная
+bls:U622242	Pork loin (cranial part) deep-frozen, braised without fat	свиная корейка (передняя часть) из заморозки тушёная
+bls:U622262	Pork loin (cranial part) deep-frozen, fried without fat (oven)	свиная корейка (передняя часть) из заморозки запечённая
+bls:U622272	Pork loin (cranial part) deep-frozen, grilled	свиная корейка (передняя часть) из заморозки на гриле
+bls:U622700	Pork loin (cranial part) cooked cured, smoked	свиная корейка (передняя часть) варёно-солёная копчёная
+bls:U622800	Pork loin (cranial part) cooked cured	свиная корейка (передняя часть) варёно-солёная
+bls:U623172	Pork loin (cranial part) marinated, grilled	свиная корейка (передняя часть) маринованная на гриле
+bls:U624100	Pork loin (caudal part) raw	свиная корейка (задняя часть) сырая
+bls:U624162	Pork loin (caudal part) fried without fat (oven)	свиная корейка (задняя часть) запечённая
+bls:U624172	Pork loin (caudal part) grilled	свиная корейка (задняя часть) на гриле
+bls:U632072	Pork neck, marinated, grilled	свиная шейка маринованная на гриле
+bls:U632100	Pork neck, raw	свиная шейка сырая
+bls:U632162	Pork neck, fried without fat (oven)	свиная шейка запечённая
+bls:U632172	Pork neck, grilled	свиная шейка на гриле
+bls:U632200	Pork neck, deep-frozen	свиная шейка замороженная
+bls:U632262	Pork neck, deep-frozen, fried without fat (oven)	свиная шейка из заморозки запечённая
+bls:U632272	Pork neck, deep-frozen, grilled	свиная шейка из заморозки на гриле
+bls:U632700	Pork neck, raw cured, smoked	свиная шейка солёная сырая копчёная
+bls:U632800	Pork neck, raw cured	свиная шейка солёная сырая
+bls:U642100	Pork belly (untrimmed) raw	свиной подчерёвок необработанный сырой
+bls:U642132	Pork belly (untrimmed) boiled	свиной подчерёвок необработанный варёный
+bls:U642162	Pork belly (untrimmed) fried in the oven without fat	свиной подчерёвок необработанный запечённый
+bls:U642172	Pork belly (untrimmed) grilled	свиной подчерёвок необработанный на гриле
+bls:U642200	Pork belly (untrimmed) deep-frozen	свиной подчерёвок необработанный замороженный
+bls:U642232	Pork belly (untrimmed) deep-frozen, boiled	свиной подчерёвок необработанный из заморозки варёный
+bls:U642262	Pork belly (untrimmed) deep-frozen, fried without fat (oven)	свиной подчерёвок необработанный из заморозки запечённый
+bls:U642272	Pork belly (untrimmed) deep-frozen, grilled	свиной подчерёвок необработанный из заморозки на гриле
+bls:U642300	Pork belly (untrimmed) marinated	свиной подчерёвок необработанный маринованный
+bls:U642372	Pork belly (untrimmed) marinated, grilled	свиной подчерёвок необработанный маринованный на гриле
+bls:U642700	Pork belly (untrimmed) raw cured, smoked	свиной подчерёвок необработанный солёный сырой копчёный
+bls:U642800	Pork belly (untrimmed) raw cured	свиной подчерёвок необработанный солёный сырой
+bls:U651100	Pork breast tip, raw	край свиной грудинки сырой
+bls:U651132	Pork breast tip, boiled	край свиной грудинки варёный
+bls:U651142	Pork breast tip, braised without fat	край свиной грудинки тушёный
+bls:U651162	Pork breast tip, fried without fat (oven)	край свиной грудинки запечённый
+bls:U664100	Pork shoulder (with fat and rind) raw	свиная лопатка с жиром и шкуркой сырая
+bls:U664162	Pork shoulder (with fat and rind) fried without fat (oven)	свиная лопатка с жиром и шкуркой запечённая
+bls:U665100	Pork shoulder (without fat and rind) raw	свиная лопатка без жира и шкурки сырая
+bls:U665162	Pork shoulder (without fat and rind) fried without fat (oven)	свиная лопатка без жира и шкурки запечённая
+bls:U666100	Pork shoulder strips, raw	обрезь свиной лопатки сырая
+bls:U672100	Pork foreshank (hock) raw	свиная рулька передняя сырая
+bls:U672132	Pork foreshank (hock) boiled	свиная рулька передняя варёная
+bls:U672162	Pork foreshank (hock) fried without fat (oven)	свиная рулька передняя запечённая
+bls:U672172	Pork foreshank (hock) grilled	свиная рулька передняя на гриле
+bls:U672200	Pork foreshank (hock) deep-frozen	свиная рулька передняя замороженная
+bls:U672232	Pork foreshank (hock) deep-frozen, boiled	свиная рулька передняя из заморозки варёная
+bls:U672262	Pork foreshank (hock) deep-frozen, fried without fat (oven)	свиная рулька передняя из заморозки запечённая
+bls:U672272	Pork foreshank (hock) deep-frozen, grilled	свиная рулька передняя из заморозки на гриле
+bls:U672700	Pork foreshank (hock) cooked cured, smoked	свиная рулька передняя варёно-солёная копчёная
+bls:U672800	Pork foreshank (hock) cooked cured	свиная рулька передняя варёно-солёная
+bls:U681700	Pork ham raw, lean, raw cured, smoked	свиной окорок постный солёный сырой копчёный
+bls:U682700	Pork ham raw, with fat, raw cured, smoked	свиной окорок с жировой кромкой солёный сырой копчёный
+bls:U684100	Pork thick flank, raw	свиной подбёдерок сырой
+bls:U684162	Pork thick flank, fried without fat (oven)	свиной подбёдерок запечённый
+bls:U685100	Pork rump, raw	свиной кострец сырой
+bls:U685142	Pork rump, braised without fat	свиной кострец тушёный
+bls:U685162	Pork rump, fried without fat (oven)	свиной кострец запечённый
+bls:U686100	Pork silverside, raw	свинина наружная часть бедра сырая
+bls:U686162	Pork silverside, fried without fat (oven)	свинина наружная часть бедра запечённая
+bls:U687000	Pork topside	свинина внутренняя часть бедра
+bls:U687032	Pork topside, boiled	свинина внутренняя часть бедра варёная
+bls:U687062	Pork topside, fried without fat (oven)	свинина внутренняя часть бедра запечённая
+bls:U693100	Pork hindshank (hock) raw	свиная рулька задняя сырая
+bls:U693132	Pork hindshank (hock) boiled	свиная рулька задняя варёная
+bls:U693162	Pork hindshank (hock) fried without fat (oven)	свиная рулька задняя запечённая
+bls:U693172	Pork hindshank (hock) grilled	свиная рулька задняя на гриле
+bls:U693200	Pork hindshank (hock) deep-frozen	свиная рулька задняя замороженная
+bls:U693232	Pork hindshank (hock) deep-frozen, boiled	свиная рулька задняя из заморозки варёная
+bls:U693262	Pork hindshank (hock) deep-frozen, fried without fat (oven)	свиная рулька задняя из заморозки запечённая
+bls:U693272	Pork hindshank (hock) deep-frozen, grilled	свиная рулька задняя из заморозки на гриле
+bls:U693700	Pork hindshank (hock) cooked cured, smoked	свиная рулька задняя варёно-солёная копчёная
+bls:U693800	Pork hindshank (hock) cooked cured	свиная рулька задняя варёно-солёная
+bls:U711100	Sheep fillet medaillon, raw	медальоны из бараньей вырезки сырые
+bls:U711162	Sheep fillet medaillon, fried without fat (oven)	медальоны из бараньей вырезки запечённые
+bls:U711172	Sheep fillet medaillon, grilled	медальоны из бараньей вырезки на гриле
+bls:U711182	Sheep fillet medaillon, fried without fat (pan)	медальоны из бараньей вырезки жареные без масла
+bls:U711200	Sheep fillet medaillon, deep-frozen	медальоны из бараньей вырезки замороженные
+bls:U711262	Sheep fillet medaillon, deep-frozen, fried without fat (oven)	медальоны из бараньей вырезки из заморозки запечённые
+bls:U711272	Sheep fillet medaillon, deep-frozen, grilled	медальоны из бараньей вырезки из заморозки на гриле
+bls:U711282	Sheep fillet medaillon, deep-frozen, fried without fat (pan)	медальоны из бараньей вырезки из заморозки жареные без масла
+bls:U721100	Sheep chop (loin) raw	баранья отбивная сырая
+bls:U721172	Sheep chop (loin) grilled	баранья отбивная на гриле
+bls:U721182	Sheep chop (loin) fried without fat (pan)	баранья отбивная жареная без масла
+bls:U721200	Sheep chop (loin) deep-frozen	баранья отбивная замороженная
+bls:U721272	Sheep chop (loin) deep-frozen, grilled	баранья отбивная из заморозки на гриле
+bls:U721282	Sheep chop (loin) deep-frozen, fried without fat (pan)	баранья отбивная из заморозки жареная без масла
+bls:U724000	Sheep chop (loin) marinated, raw	баранья отбивная маринованная сырая
+bls:U724072	Sheep chop (loin) marinated, grilled	баранья отбивная маринованная на гриле
+bls:U724082	Sheep chop (loin) marinated, fried without fat (pan)	баранья отбивная маринованная жареная без масла
+bls:U726100	Mutton chop (loin) raw	баранья отбивная сырая
+bls:U726162	Mutton chop (loin) fried without fat (oven)	баранья отбивная запечённая
+bls:U726172	Mutton chop (loin) grilled	баранья отбивная на гриле
+bls:U726182	Mutton chop (loin) fried without fat (pan)	баранья отбивная жареная без масла
+bls:U727100	Lamb chop (loin) raw	ягнячья отбивная сырая
+bls:U727162	Lamb chop (loin) fried without fat (oven)	ягнячья отбивная запечённая
+bls:U727172	Lamb chop (loin) grilled	ягнячья отбивная на гриле
+bls:U727182	Lamb chop (loin) fried without fat (pan)	ягнячья отбивная жареная без масла
+bls:U733100	Sheep fillet steak, raw	стейк из бараньей вырезки сырой
+bls:U733162	Sheep fillet steak, fried without fat (oven)	стейк из бараньей вырезки запечённый
+bls:U733172	Sheep fillet steak, grilled	стейк из бараньей вырезки на гриле
+bls:U733182	Sheep fillet steak, fried without fat (pan)	стейк из бараньей вырезки жареный без масла
+bls:U733200	Sheep fillet steak, deep-frozen	стейк из бараньей вырезки замороженный
+bls:U733262	Sheep fillet steak, deep-frozen, fried without fat (oven)	стейк из бараньей вырезки из заморозки запечённый
+bls:U733272	Sheep fillet steak, deep-frozen, grilled	стейк из бараньей вырезки из заморозки на гриле
+bls:U733282	Sheep fillet steak, deep-frozen, fried without fat (pan)	стейк из бараньей вырезки из заморозки жареный без масла
+bls:U741100	Sheep schnitzel (leg, lean) raw	бараний шницель (нога, постный) сырой
+bls:U741162	Sheep schnitzel (leg, lean) fried without fat (oven)	бараний шницель (нога, постный) запечённый
+bls:U741172	Sheep schnitzel (leg, lean) grilled	бараний шницель (нога, постный) на гриле
+bls:U741182	Sheep schnitzel (leg, lean) fried without fat (pan)	бараний шницель (нога, постный) жареный без масла
+bls:U741200	Sheep schnitzel (leg, lean) deep-frozen	бараний шницель (нога, постный) замороженный
+bls:U741262	Sheep schnitzel (leg, lean) deep-frozen, fried without fat (oven)	бараний шницель (нога, постный) из заморозки запечённый
+bls:U741272	Sheep schnitzel (leg, lean) deep-frozen, grilled	бараний шницель (нога, постный) из заморозки на гриле
+bls:U741282	Sheep schnitzel (leg, lean) deep-frozen, fried without fat (pan)	бараний шницель (нога, постный) из заморозки жареный без масла
+bls:U742100	Sheep schnitzel (leg, medium fat) raw	бараний шницель (нога, средней жирности) сырой
+bls:U742162	Sheep schnitzel (leg, medium fat) fried without fat (oven)	бараний шницель (нога, средней жирности) запечённый
+bls:U742172	Sheep schnitzel (leg, medium fat) grilled	бараний шницель (нога, средней жирности) на гриле
+bls:U742182	Sheep schnitzel (leg, medium fat) fried without fat (pan)	бараний шницель (нога, средней жирности) жареный без масла
+bls:U751100	Sheep goulash (shoulder, lean) raw	баранина для гуляша (лопатка, постная) сырая
+bls:U751142	Sheep goulash (shoulder, lean) braised without fat	баранина для гуляша (лопатка, постная) тушёная
+bls:U751182	Sheep goulash (shoulder, lean) fried without fat (pan)	баранина для гуляша (лопатка, постная) жареная без масла
+bls:U753100	Sheep goulash (shoulder, fat) raw	баранина для гуляша (лопатка, жирная) сырая
+bls:U753142	Sheep goulash (shoulder, fat) braised without fat	баранина для гуляша (лопатка, жирная) тушёная
+bls:U753182	Sheep goulash (shoulder, fat) fried without fat (pan)	баранина для гуляша (лопатка, жирная) жареная без масла
+bls:U754100	Sheep goulash (scrag) raw	баранина для гуляша (шея) сырая
+bls:U754142	Sheep goulash (scrag) braised without fat	баранина для гуляша (шея) тушёная
+bls:U754182	Sheep goulash (scrag) fried without fat (pan)	баранина для гуляша (шея) жареная без масла
+bls:U771100	Sheep meat for roasting (shoulder, lean) raw	баранина для жаркого (лопатка, постная) сырая
+bls:U771142	Sheep meat for roasting (shoulder, lean) braised without fat	баранина для жаркого (лопатка, постная) тушёная
+bls:U771162	Sheep meat for roasting (shoulder, lean) fried without fat (oven)	баранина для жаркого (лопатка, постная) запечённая
+bls:U773100	Sheep meat for roasting (shoulder, fat) raw	баранина для жаркого (лопатка, жирная) сырая
+bls:U773142	Sheep meat for roasting (shoulder, fat) braised without fat	баранина для жаркого (лопатка, жирная) тушёная
+bls:U773162	Sheep meat for roasting (shoulder, fat) fried without fat (oven)	баранина для жаркого (лопатка, жирная) запечённая
+bls:U783100	Sheep meat for boiling (breast, fat) raw	баранина для варки (грудинка, жирная) сырая
+bls:U783132	Sheep meat for boiling (breast, fat) boiled	баранина для варки (грудинка, жирная) варёная
+bls:U801000	Sheep muscle meat, raw	баранья мякоть сырая
+bls:U802000	Sheep meat, low in fat and tendons, raw	баранина нежирная и без сухожилий сырая
+bls:U803000	Sheep meat, tendons coarsly removed, raw	баранина грубо зачищенная от сухожилий сырая
+bls:U805800	Sheep fatty tissue, intermuscular, raw	баранья жировая ткань межмускульная сырая
+bls:U806000	Mutton muscle meat, raw	баранья мякоть сырая
 bls:U807000	Lamb muscle meat, raw	мякоть баранины сырая
+bls:U807100	Lamb fatty tissue, intermuscular, raw	ягнячья жировая ткань межмускульная сырая
+bls:U811100	Sheep tenderloin, raw	баранья вырезка сырая
+bls:U811162	Sheep tenderloin, fried without fat (oven)	баранья вырезка запечённая
+bls:U811172	Sheep tenderloin, grilled	баранья вырезка на гриле
+bls:U811200	Sheep tenderloin, deep-frozen	баранья вырезка замороженная
+bls:U811262	Sheep tenderloin, deep-frozen, fried without fat (oven)	баранья вырезка из заморозки запечённая
+bls:U811272	Sheep tenderloin, deep-frozen, grilled	баранья вырезка из заморозки на гриле
+bls:U816100	Mutton tenderloin, raw	баранья вырезка сырая
+bls:U816162	Mutton tenderloin, fried without fat (oven)	баранья вырезка запечённая
+bls:U816172	Mutton tenderloin, grilled	баранья вырезка на гриле
+bls:U817100	Lamb thick flank, raw	ягнячий подбёдерок сырой
+bls:U817162	Lamb thick flank, fried without fat (oven)	ягнячий подбёдерок запечённый
+bls:U821100	Sheep loin (chop) raw	баранья корейка сырая
+bls:U821162	Sheep loin (chop) fried without fat (oven)	баранья корейка запечённая
+bls:U821172	Sheep loin (chop) grilled	баранья корейка на гриле
+bls:U831100	Sheep scrag, raw	баранья шея сырая
+bls:U831142	Sheep scrag, braised without fat	баранья шея тушёная
+bls:U831162	Sheep scrag, fried without fat (oven)	баранья шея запечённая
+bls:U831172	Sheep scrag, grilled	баранья шея на гриле
+bls:U831182	Sheep scrag, fried without fat (pan)	баранья шея жареная без масла
+bls:U837100	Lamb scrag, raw	ягнячья шея сырая
+bls:U852100	Sheep breast, medium fat, raw	баранья грудинка средней жирности сырая
+bls:U852132	Sheep breast, medium fat, boiled	баранья грудинка средней жирности варёная
+bls:U852142	Sheep breast, medium fat, braised without fat	баранья грудинка средней жирности тушёная
+bls:U852162	Sheep breast, medium fat, fried without fat (oven)	баранья грудинка средней жирности запечённая
+bls:U852200	Sheep breast, medium fat, deep-frozen	баранья грудинка средней жирности замороженная
+bls:U852232	Sheep breast, medium fat, deep-frozen, boiled	баранья грудинка средней жирности из заморозки варёная
+bls:U852242	Sheep breast, medium fat, deep-frozen, braised without fat	баранья грудинка средней жирности из заморозки тушёная
+bls:U852262	Sheep breast, medium fat, deep-frozen, fried without fat (oven)	баранья грудинка средней жирности из заморозки запечённая
+bls:U853100	Sheep breast, fat, raw	баранья грудинка жирная сырая
+bls:U853132	Sheep breast, fat, boiled	баранья грудинка жирная варёная
+bls:U853142	Sheep breast, fat, braised without fat	баранья грудинка жирная тушёная
+bls:U853162	Sheep breast, fat, fried without fat (oven)	баранья грудинка жирная запечённая
+bls:U856100	Mutton breast, raw	баранья грудинка сырая
+bls:U856132	Mutton breast, boiled	баранья грудинка варёная
+bls:U856142	Mutton breast, braised without fat	баранья грудинка тушёная
+bls:U856162	Mutton breast, fried without fat (oven)	баранья грудинка запечённая
+bls:U857100	Lamb breast, raw	ягнячья грудинка сырая
+bls:U857132	Lamb breast, boiled	ягнячья грудинка варёная
+bls:U857142	Lamb breast, braised without fat	ягнячья грудинка тушёная
+bls:U857162	Lamb breast, fried without fat (oven)	ягнячья грудинка запечённая
+bls:U861100	Sheep shoulder, lean, raw	баранья лопатка постная сырая
+bls:U861132	Sheep shoulder, lean, boiled	баранья лопатка постная варёная
+bls:U861142	Sheep shoulder, lean, braised without fat	баранья лопатка постная тушёная
+bls:U861162	Sheep shoulder, lean, fried without fat (oven)	баранья лопатка постная запечённая
+bls:U861200	Sheep shoulder, lean, deep-frozen	баранья лопатка постная замороженная
+bls:U861232	Sheep shoulder, lean, deep-frozen, boiled	баранья лопатка постная из заморозки варёная
+bls:U861242	Sheep shoulder, lean, deep-frozen, braised without fat	баранья лопатка постная из заморозки тушёная
+bls:U861262	Sheep shoulder, lean, deep-frozen, fried without fat (oven)	баранья лопатка постная из заморозки запечённая
+bls:U863100	Sheep shoulder, fat, raw	баранья лопатка жирная сырая
+bls:U863132	Sheep shoulder, fat, boiled	баранья лопатка жирная варёная
+bls:U863142	Sheep shoulder, fat, braised without fat	баранья лопатка жирная тушёная
+bls:U863162	Sheep shoulder, fat, fried without fat (oven)	баранья лопатка жирная запечённая
+bls:U863200	Sheep shoulder, fat, deep-frozen	баранья лопатка жирная замороженная
+bls:U863232	Sheep shoulder, fat, deep-frozen, boiled	баранья лопатка жирная из заморозки варёная
 bls:U863242	Sheep shoulder, fat, deep-frozen, braised without fat	баранья лопатка жирная тушёная
+bls:U863262	Sheep shoulder, fat, deep-frozen, fried without fat (oven)	баранья лопатка жирная из заморозки запечённая
+bls:U866100	Mutton shoulder, raw	лопатка баранины сырая
+bls:U866132	Mutton shoulder, boiled	баранья лопатка варёная
+bls:U866142	Mutton shoulder, braised without fat	баранья лопатка тушёная
+bls:U866162	Mutton shoulder, fried without fat (oven)	баранья лопатка запечённая
+bls:U867100	Lamb shoulder, raw	ягнячья лопатка сырая
+bls:U867132	Lamb shoulder, boiled	ягнячья лопатка варёная
+bls:U867142	Lamb shoulder, braised without fat	ягнячья лопатка тушёная
+bls:U867162	Lamb shoulder, fried without fat (oven)	ягнячья лопатка запечённая
 bls:U871100	Sheep foreshank, lean, raw	баранья голяшка передняя постная сырая
+bls:U871132	Sheep foreshank, lean, boiled	баранья голяшка передняя постная варёная
+bls:U871142	Sheep foreshank, lean, braised without fat	баранья голяшка передняя постная тушёная
+bls:U871162	Sheep foreshank, lean, fried without fat (oven)	баранья голяшка передняя постная запечённая
+bls:U871172	Sheep foreshank, lean, grilled	баранья голяшка передняя постная на гриле
+bls:U872100	Sheep foreshank, medium fat, raw	баранья голяшка передняя средней жирности сырая
+bls:U872132	Sheep foreshank, medium fat, boiled	баранья голяшка передняя средней жирности варёная
+bls:U872142	Sheep foreshank, medium fat, braised without fat	баранья голяшка передняя средней жирности тушёная
+bls:U872162	Sheep foreshank, medium fat, fried without fat (oven)	баранья голяшка передняя средней жирности запечённая
+bls:U872172	Sheep foreshank, medium fat, grilled	баранья голяшка передняя средней жирности на гриле
+bls:U872200	Sheep foreshank, medium fat, deep-frozen	баранья голяшка передняя средней жирности замороженная
+bls:U872232	Sheep foreshank, medium fat, deep-frozen boiled	баранья голяшка передняя средней жирности из заморозки варёная
+bls:U872242	Sheep foreshank, medium fat, deep-frozen braised without fat	баранья голяшка передняя средней жирности из заморозки тушёная
+bls:U872262	Sheep foreshank, medium fat, deep-frozen fried without fat (oven)	баранья голяшка передняя средней жирности из заморозки запечённая
+bls:U872272	Sheep foreshank, medium fat, deep-frozen grilled	баранья голяшка передняя средней жирности из заморозки на гриле
+bls:U881100	Sheep leg, lean, raw	баранья нога постная сырая
+bls:U881142	Sheep leg, lean, braised without fat	баранья нога постная тушёная
+bls:U881162	Sheep leg, lean, fried without fat (oven)	баранья нога постная запечённая
+bls:U881200	Sheep leg, lean, deep-frozen	баранья нога постная замороженная
+bls:U881242	Sheep leg, lean, deep-frozen, braised without fat	баранья нога постная тушёная из заморозки
+bls:U881262	Sheep leg, lean, deep-frozen, fried without fat (oven)	баранья нога постная из заморозки запечённая
+bls:U882100	Sheep leg, medium fat, raw	баранья нога средней жирности сырая
+bls:U882142	Sheep leg, medium fat, braised without fat	баранья нога средней жирности тушёная
+bls:U882162	Sheep leg, medium fat, fried without fat (oven)	баранья нога средней жирности запечённая
+bls:U882200	Sheep leg, medium fat, deep-frozen	баранья нога средней жирности замороженная
+bls:U882242	Sheep leg, medium fat, deep-frozen, baked	баранья нога средней жирности тушёная из заморозки
+bls:U882262	Sheep leg, medium fat, deep-frozen, fried without fat (oven)	баранья нога средней жирности из заморозки запечённая
+bls:U883100	Sheep leg, fat, raw	баранья нога жирная сырая
+bls:U883142	Sheep leg, fat, braised without fat	баранья нога жирная тушёная
+bls:U883162	Sheep leg, fat, fried without fat (oven)	баранья нога жирная запечённая
+bls:U883200	Sheep leg, fat, deep-frozen	баранья нога жирная замороженная
+bls:U883242	Sheep leg, fat, deep-frozen, baked	баранья нога жирная тушёная из заморозки
+bls:U883262	Sheep leg, fat, deep-frozen, fried without fat (oven)	баранья нога жирная из заморозки запечённая
 bls:U884000	Sheep leg, lean, marinated, raw	нога баранья маринованная сырая
+bls:U884042	Sheep leg, lean, marinated, braised without fat	баранья нога постная маринованная тушёная
+bls:U886100	Mutton leg, raw	баранья нога сырая
+bls:U886142	Mutton leg, braised without fat	баранья нога тушёная
+bls:U886162	Mutton leg, fried without fat (oven)	баранья нога запечённая
+bls:U891100	Sheep hindshank, lean, raw	баранья голяшка задняя постная сырая
+bls:U891132	Sheep hindshank, lean, boiled	баранья голяшка задняя постная варёная
+bls:U891142	Sheep hindshank, lean, braised without fat	баранья голяшка задняя постная тушёная
+bls:U891162	Sheep hindshank, lean, fried without fat (oven)	баранья голяшка задняя постная запечённая
+bls:U891172	Sheep hindshank, lean, grilled	баранья голяшка задняя постная на гриле
+bls:U891200	Sheep hindshank, lean, deep-frozen	баранья голяшка задняя постная замороженная
+bls:U891232	Sheep hindshank, lean, deep-frozen, boiled	баранья голяшка задняя постная из заморозки варёная
+bls:U891242	Sheep hindshank, lean, deep-frozen, braised without fat	баранья голяшка задняя постная из заморозки тушёная
+bls:U891262	Sheep hindshank, lean, deep-frozen, fried without fat (oven)	баранья голяшка задняя постная из заморозки запечённая
+bls:U891272	Sheep hindshank, lean, deep-frozen, grilled	баранья голяшка задняя постная из заморозки на гриле
+bls:U892100	Sheep hindshank, medium fat, raw	баранья голяшка задняя средней жирности сырая
+bls:U892132	Sheep hindshank, medium fat, boiled	баранья голяшка задняя средней жирности варёная
+bls:U892142	Sheep hindshank, medium fat, braised without fat	баранья голяшка задняя средней жирности тушёная
+bls:U892162	Sheep hindshank, medium fat, fried without fat (oven)	баранья голяшка задняя средней жирности запечённая
+bls:U892172	Sheep hindshank, medium fat, grilled	баранья голяшка задняя средней жирности на гриле
+bls:U892200	Sheep hindshank, medium fat, deep-frozen	баранья голяшка задняя средней жирности замороженная
+bls:U892232	Sheep hindshank, medium fat, deep-frozen, boiled	баранья голяшка задняя средней жирности из заморозки варёная
+bls:U892242	Sheep hindshank, medium fat, deep-frozen, braised without fat	баранья голяшка задняя средней жирности из заморозки тушёная
+bls:U892262	Sheep hindshank, medium fat, deep-frozen, fried without fat (oven)	баранья голяшка задняя средней жирности из заморозки запечённая
+bls:U892272	Sheep hindshank, medium fat, deep-frozen, grilled	баранья голяшка задняя средней жирности из заморозки на гриле
+bls:U912000	Beef in jelly, canned	говядина в желе консервированная
+bls:U931100	Beef in its own juice, with pork rind, canned	говядина в собственном соку со свиной шкуркой консервированная
+bls:U931600	Beef olive (ready-made meal) canned	говяжий рулет консервированный
+bls:U931900	German corned beef, with pork rind, canned	корнед-биф по-немецки со свиной шкуркой консервированный
+bls:U941100	"Königsberger Klopse" meatballs, canned	клопсы по-кёнигсбергски консервированные
+bls:U950100	Pork in its own juice, with rind, canned	свинина в собственном соку со шкуркой консервированная
+bls:U950200	Pork roast, canned	буженина консервированная
+bls:U951800	Corned pork, canned	свиная солонина консервированная
+bls:U952000	Pork meat, breaded, fried without fat (pan)	свинина в панировке жареная без масла
+bls:U980200	Oxtail soup thickened, canned	суп из бычьих хвостов загущённый консервированный
+bls:U980400	Goulash soup canned	суп-гуляш консервированный
+bls:U981700	Soup basic stock canned	бульон мясной концентрированный консервированный
+bls:U984100	Marrow dumplings canned	клёцки с костным мозгом консервированные
+bls:U985200	Beef stock canned	говяжий бульон консервированный
+bls:U990100	Gravy dark, canned	подливка тёмная консервированная
+bls:U990200	Horseradish sauce canned	соус из хрена консервированный
+bls:U990400	Sauce Hollandaise, canned	соус голландез консервированный
+bls:V050100	Snails edible/escargots, raw	улитки виноградные сырые
+bls:V050132	Snails edible/escargots, boiled	улитки виноградные варёные
+bls:V050182	Snails edible/escargots, fried without fat (pan)	улитки виноградные жареные без масла
+bls:V050200	Snails edible/escargots, deep-frozen	улитки виноградные замороженные
+bls:V050232	Snails edible/escargots, deep-frozen, boiled	улитки виноградные из заморозки варёные
+bls:V050282	Snails edible/escargots, deep-frozen, fried without fat (pan)	улитки виноградные из заморозки жареные без масла
+bls:V111200	Horse meat, deep-frozen	конина замороженная
+bls:V111242	Horse meat, deep-frozen, braised without fat	конина из заморозки тушёная
+bls:V111262	Horse meat, deep-frozen, fried without fat (oven)	мясо лошади запечённое из заморозки
+bls:V112100	Horse meat, raw	мясо лошади сырое
+bls:V112142	Horse meat, braised without fat	конина тушёная
+bls:V112162	Horse meat, fried without fat (oven)	мясо лошади запечённое
+bls:V122100	Goat meat, raw	козье мясо сырое
+bls:V122142	Goat meat, braised without fat	козье мясо тушёное
+bls:V122162	Goat meat, fried without fat (oven)	козье мясо запечённое
+bls:V132100	Domestic rabbit meat, raw	крольчатина сырая
+bls:V132142	Domestic rabbit meat, braised without fat	крольчатина тушёная
+bls:V132162	Domestic rabbit meat, fried without fat (oven)	крольчатина запечённая
+bls:V132200	Domestic rabbit meat, deep-frozen	крольчатина замороженная
+bls:V132242	Domestic rabbit meat, deep-frozen, braised without fat	крольчатина из заморозки тушёная
+bls:V132262	Domestic rabbit meat, deep-frozen, fried without fat (oven)	крольчатина из заморозки запечённая
+bls:V212100	Venison meat, raw	оленина сырая
+bls:V212132	Venison meat, boiled	оленина варёная
+bls:V212142	Venison meat, braised without fat	оленина тушёная
+bls:V212162	Venison meat, fried without fat (oven)	оленина запечённая
+bls:V212182	Venison meat, fried without fat (pan)	оленина жареная без масла
+bls:V212200	Venison meat, deep-frozen	оленина замороженная
+bls:V217100	Venison saddle, raw	оленья корейка сырая
+bls:V217142	Venison saddle, braised without fat	оленья корейка тушёная
+bls:V217162	Venison saddle, fried without fat (oven)	оленья корейка запечённая
+bls:V217200	Venison saddle, deep-frozen	оленья корейка замороженная
+bls:V217242	Venison saddle, deep-frozen, braised without fat	оленья корейка из заморозки тушёная
+bls:V217262	Venison saddle, deep-frozen, fried without fat (oven)	оленья корейка из заморозки запечённая
+bls:V221100	Roe deer leg, raw	окорок косули сырой
+bls:V221132	Roe deer leg, boiled	окорок косули варёный
+bls:V221142	Roe deer leg, braised without fat	окорок косули тушёный
+bls:V221162	Roe deer leg, fried without fat (oven)	окорок косули запечённый
+bls:V221172	Roe deer leg, grilled	окорок косули на гриле
+bls:V222100	Roe deer saddle, raw	корейка косули сырая
+bls:V222142	Roe deer saddle, braised without fat	корейка косули тушёная
+bls:V222162	Roe deer saddle, fried without fat (oven)	корейка косули запечённая
+bls:V222200	Roe deer saddle, deep-frozen	корейка косули замороженная
+bls:V222242	Roe deer saddle, deep-frozen, braised without fat	корейка косули из заморозки тушёная
+bls:V222262	Roe deer saddle, deep-frozen, fried without fat (oven)	корейка косули из заморозки запечённая
+bls:V224100	Roe deer saddle, marinated, raw	корейка косули маринованная сырая
+bls:V224142	Roe deer saddle, marinated, braised without fat	корейка косули маринованная тушёная
+bls:V232100	Hare meat, raw	мясо зайца сырое
+bls:V232142	Hare meat, braised without fat	мясо зайца тушёное
+bls:V232162	Hare meat, fried without fat (oven)	мясо зайца запечённое
+bls:V232200	Hare meat, deep-frozen	мясо зайца замороженное
+bls:V232242	Hare meat, deep-frozen, braised without fat	мясо зайца из заморозки тушёное
+bls:V232262	Hare meat, deep-frozen, fried without fat (oven)	мясо зайца из заморозки запечённое
+bls:V242100	Wild rabbit meat, raw	мясо дикого кролика сырое
+bls:V242142	Wild rabbit meat, braised without fat	крольчатина дикая тушёная
+bls:V242162	Wild rabbit meat, fried without fat (oven)	мясо дикого кролика запечённое
+bls:V250100	Wild boar meat, raw	кабанина сырая
+bls:V250132	Wild boar meat, boiled	кабанина варёная
+bls:V250162	Wild boar meat, fried without fat (oven)	кабанина запечённая
+bls:V250172	Wild boar meat, grilled	кабанина на гриле
+bls:V250182	Wild boar meat, fried without fat (pan)	кабанина жареная без масла
+bls:V250200	Wild boar meat, deep-frozen	кабанина замороженная
+bls:V250232	Wild boar meat, deep-frozen, boiled	кабанина из заморозки варёная
+bls:V250242	Wild boar meat, deep-frozen, braised without fat	кабанина из заморозки тушёная
+bls:V250262	Wild boar meat, deep-frozen, fried without fat (oven)	кабанина из заморозки запечённая
+bls:V250272	Wild boar meat, deep-frozen, grilled	кабанина из заморозки на гриле
+bls:V250282	Wild boar meat, deep-frozen, fried without fat (pan)	кабанина из заморозки жареная без масла
+bls:V256042	Wild boar meat, braised without fat	кабанина тушёная
+bls:V272100	Reindeer meat, raw	мясо северного оленя сырое
+bls:V272142	Reindeer meat, braised without fat	мясо северного оленя тушёное
+bls:V272162	Reindeer meat, fried without fat (oven)	мясо северного оленя запечённое
+bls:V311100	Pheasant meat, with skin, raw	мясо фазана с кожей сырое
+bls:V311162	Pheasant meat, with skin, fried without fat (oven)	мясо фазана с кожей запечённое
+bls:V311200	Pheasant meat, with skin, deep-frozen	мясо фазана с кожей замороженное
+bls:V311262	Pheasant meat, with skin, deep-frozen, fried without fat (oven)	мясо фазана с кожей из заморозки запечённое
+bls:V320100	Partridge meat, raw	мясо куропатки сырое
 bls:V438232	Boiling fowl giblets, deep-frozen, boiled	куриные потроха варёные
 bls:V454200	Guineafowl meat, with skin, deep-frozen	цесарка замороженная
 bls:V465242	Duck leg, with skin, deep-frozen, braised without fat	утиная ножка тушёная
