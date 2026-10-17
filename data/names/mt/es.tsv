@@ -6224,12 +6224,206 @@ fdc:173508	Babyfood, potatoes, toddler	comida infantil de patata para pequeños
 fdc:173509	Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified	papilla de avena infantil Gerber enriquecida seca
 fdc:173510	Babyfood, vegetable, butternut squash and corn	comida infantil verduras calabaza butternut con maíz
 fdc:173511	Babyfood, apples, dices, toddler	comida infantil manzana en dados para pequeños
-fdc:173603	Oil, industrial, palm kernel (hydrogenated), filling fat	aceite de palmiste hidrogenado
-fdc:173611	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, flour	muslo de pollo frito enharinado
-fdc:173645	Chicken, capons, meat and skin, raw	capón crudo
-fdc:173664	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof	licor destilado 50 % vol.
-fdc:173693	Fish, salmon, sockeye, canned, drained solids	salmón rojo en conserva
-fdc:173707	Fish, tuna, fresh, bluefin, cooked, dry heat	atún rojo cocinado
+fdc:173512	Babyfood, fruit, applesauce, strained	comida infantil puré de manzana
+fdc:173513	Babyfood, dinner, vegetables and chicken, junior	comida infantil verduras con pollo junior
+fdc:173514	Babyfood, dinner, mixed vegetable, strained	puré infantil de verduras mixtas
+fdc:173515	Babyfood, vegetables, mix vegetables strained	puré infantil de verduras mixtas
+fdc:173516	Babyfood, dinner, beef noodle, junior	comida infantil vacuno con fideos junior
+fdc:173517	Babyfood, apples with ham, strained	puré infantil de manzana con jamón
+fdc:173518	Babyfood, carrots and beef, strained	puré infantil de zanahoria con vacuno
+fdc:173519	Babyfood, beverage, GERBER, GRADUATES, FRUIT SPLASHERS	bebida de fruta infantil Gerber Graduates Fruit Splashers
+fdc:173520	Babyfood, snack, GERBER, GRADUATES, YOGURT MELTS	gotitas de yogur infantiles Gerber Graduates Yogurt Melts
+fdc:173521	Babyfood, dinner, sweet potatoes and chicken, strained	puré infantil de boniato con pollo
+fdc:173522	Infant formula, MEAD JOHNSON, Enfamil 24, ready to feed, with ARA and DHA	fórmula infantil Enfamil 24 lista
+fdc:173523	Infant formula, MEAD JOHNSON, Enfamil Enspire Powder, with ARA and DHA, not reconstituted	fórmula infantil Enfamil Enspire en polvo
+fdc:173524	Infant formula, MEAD JOHNSON, Enfamil Reguline, ready to feed, with ARA and DHA	fórmula infantil Enfamil Reguline lista
+fdc:173525	Infant formula, MEAD JOHNSON, Gentlease, ready to feed, with ARA and DHA	fórmula infantil Gentlease lista
+fdc:173526	Toddler formula, MEAD JOHNSON, Nutramigen Toddler with LGG Powder, with ARA and DHA, not reconstituted	fórmula infantil Nutramigen Toddler en polvo
+fdc:173527	Infant formula, MEAD JOHNSON, Pregestimil 20 Calories, ready to feed, with ARA and DHA	fórmula infantil Pregestimil 20 kcal lista
+fdc:173528	Babyfood, cereal, high protein, prepared with whole milk	papilla infantil alta en proteína con leche entera
+fdc:173529	Babyfood, cereal, mixed, prepared with whole milk	papilla infantil de cereales con leche entera
+fdc:173530	Babyfood, cereal, mixed, with bananas, prepared with whole milk	papilla infantil de cereales con plátano con leche entera
+fdc:173531	Babyfood, cereal, oatmeal, prepared with whole milk	papilla infantil de avena con leche entera
+fdc:173532	Babyfood, cereal, mixed, with honey, prepared with whole milk	papilla infantil de cereales con miel con leche entera
+fdc:173533	Babyfood, cereal, high protein, with apple and orange, prepared with whole milk	papilla infantil alta en proteína con manzana y naranja con leche entera
+fdc:173534	Babyfood, cereal, rice, with bananas, prepared with whole milk	papilla infantil de arroz con plátano con leche entera
+fdc:173535	Infant formula, NESTLE, GOOD START SUPREME, with iron, liquid concentrate, not reconstituted	fórmula infantil Good Start Supreme con hierro concentrada
+fdc:173536	Infant formula, NESTLE, GOOD START SUPREME, with iron, powder	fórmula infantil Good Start Supreme con hierro en polvo
+fdc:173537	Infant formula, MEAD JOHNSON, ENFAMIL, LIPIL, low iron, liquid concentrate, with ARA and DHA	fórmula infantil Enfamil Lipil baja en hierro concentrada
+fdc:173538	Infant formula, MEAD JOHNSON, PREGESTIMIL, with iron, powder, with ARA and DHA, not reconstituted	fórmula infantil Pregestimil con hierro en polvo
+fdc:173539	Infant formula, MEAD JOHNSON, PREGESTIMIL, with iron, with ARA and DHA, prepared from powder	fórmula infantil Pregestimil con hierro preparada
+fdc:173540	Infant formula, MEAD JOHNSON, PROSOBEE, with iron, ready-to-feed	fórmula infantil Prosobee con hierro lista
+fdc:173541	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, ready-to-feed	fórmula infantil Similac Isomil con hierro lista
+fdc:173542	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, liquid concentrate	fórmula infantil Similac Isomil con hierro concentrada
+fdc:173543	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, powder, not reconstituted	fórmula infantil Similac Isomil con hierro en polvo
+fdc:173544	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN, with iron, liquid concentrate not reconstituted, with ARA and DHA	fórmula infantil Enfamil Nutramigen con hierro concentrada
+fdc:173545	Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, with iron, powder, not reconstituted, with ARA and DHA	fórmula infantil Enfamil Prosobee con hierro en polvo
+fdc:173546	Infant formula, ABBOTT NUTRITION, SIMILAC, with iron, powder, not reconstituted	fórmula infantil Similac con hierro en polvo
+fdc:173547	Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, liquid concentrate, reconstituted, with ARA and DHA	fórmula infantil Enfamil Prosobee preparada
+fdc:173548	Infant formula, MEAD JOHNSON, PROSOBEE, with iron, ready to feed, with ARA and DHA	fórmula infantil Prosobee con hierro lista
+fdc:173549	Infant formula, NESTLE, GOOD START SOY, with DHA and ARA, ready-to-feed	fórmula infantil Good Start Soy lista
+fdc:173550	Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed, with iron and fiber	fórmula infantil Pediasure con hierro y fibra lista
+fdc:173551	Infant formula, NESTLE, GOOD START ESSENTIALS SOY, with iron, powder	fórmula infantil Good Start Essentials Soy con hierro en polvo
+fdc:173552	Infant formula, MEAD JOHNSON, NEXT STEP PROSOBEE, powder, not reconstituted	fórmula infantil Next Step Prosobee en polvo
+fdc:173553	Infant formula, MEAD JOHNSON,NEXT STEP PROSOBEE, prepared from powder	fórmula infantil Next Step Prosobee preparada
+fdc:173554	Infant formula, PBM PRODUCTS, store brand, powder	fórmula infantil de marca blanca en polvo
+fdc:173555	Infant formula, PBM PRODUCTS, store brand, soy, ready-to-feed	fórmula infantil de marca blanca de soja lista
+fdc:173556	Infant formula, PBM PRODUCTS, store brand, soy, liquid concentrate, not reconstituted	fórmula infantil de marca blanca de soja concentrada
+fdc:173557	Infant formula, PBM PRODUCTS, store brand, soy, powder	fórmula infantil de marca blanca de soja en polvo
+fdc:173558	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE, (LACTOSE FREE), liquid concentrate, with ARA and DHA	fórmula infantil Similac Sensitive sin lactosa concentrada
+fdc:173559	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE, (LACTOSE FREE), powder, with ARA and DHA	fórmula infantil Similac Sensitive sin lactosa en polvo
+fdc:173560	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, ready-to-feed	fórmula infantil Similac Advance con hierro lista
+fdc:173561	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, powder, not reconstituted	fórmula infantil Similac Advance con hierro en polvo
+fdc:173562	Salad dressing, blue or roquefort cheese dressing, commercial, regular	salsa de queso azul
+fdc:173563	Oil, cupu assu	aceite de cupuaçu
+fdc:173564	Fat, chicken	grasa de pollo
+fdc:173565	Oil, soybean, salad or cooking, (partially hydrogenated) and cottonseed	aceite de soja y algodón parcialmente hidrogenado
+fdc:173566	Shortening industrial, lard and vegetable oil	grasa industrial de manteca de cerdo y aceite vegetal
+fdc:173567	Shortening frying (heavy duty), beef tallow and cottonseed	grasa para fritura de sebo de vacuno y algodón
+fdc:173568	Shortening confectionery, coconut (hydrogenated) and or palm kernel (hydrogenated)	grasa de confitería de coco y palmiste
+fdc:173569	Shortening industrial, soybean (hydrogenated) and cottonseed	grasa industrial de soja y algodón
+fdc:173570	Oil, ucuhuba butter	aceite de ucuhuba
+fdc:173571	Fat, turkey	grasa de pavo
+fdc:173572	Fat, goose	grasa de oca
+fdc:173573	Oil, avocado	aceite de aguacate
+fdc:173574	Shortening, special purpose for cakes and frostings, soybean (hydrogenated)	grasa para bizcochos y glaseados de soja
+fdc:173575	Shortening, special purpose for baking, soybean (hydrogenated) palm and cottonseed	grasa para repostería de soja palma y algodón
+fdc:173576	Oil, oat	aceite de avena
+fdc:173577	Fish oil, cod liver	aceite de hígado de bacalao
+fdc:173578	Fish oil, sardine	aceite de sardina
+fdc:173579	Shortening, multipurpose, soybean (hydrogenated) and palm (hydrogenated)	grasa multiuso de soja y palma
+fdc:173580	Margarine-like, vegetable oil-butter spread, tub, with salt	crema de untar vegetal con mantequilla con sal
+fdc:173581	Butter, light, stick, with salt	mantequilla ligera con sal en barra
+fdc:173582	Margarine-like, vegetable oil spread, 60% fat, tub, with salt	margarina vegetal 60% grasa con sal en tarrina
+fdc:173583	Margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, with salt	margarina vegetal 60% grasa con sal
+fdc:173584	Shortening, vegetable, household, composite	grasa vegetal de cocina
+fdc:173585	Margarine, regular, 80% fat, composite, stick, without salt	margarina 80% sin sal en barra
+fdc:173586	Margarine-like spread with yogurt, approximately 40% fat, tub, with salt	margarina con yogur 40% grasa con sal en tarrina
+fdc:173587	Margarine, 80% fat, stick, includes regular and hydrogenated corn and soybean oils	margarina 80% en barra
+fdc:173588	Margarine, margarine-type vegetable oil spread, 70% fat, soybean and partially hydrogenated soybean, stick	margarina vegetal 70% grasa de soja en barra
+fdc:173589	Margarine Spread, 40-49% fat, tub	margarina 40-49% grasa en tarrina
+fdc:173590	Salad dressing, italian dressing, fat-free	salsa italiana sin grasa
+fdc:173591	Salad dressing, ranch dressing, fat-free	salsa ranch sin grasa
+fdc:173592	Salad dressing, ranch dressing, regular	salsa ranch
+fdc:173593	Salad dressing, ranch dressing, reduced fat	salsa ranch reducida en grasa
+fdc:173594	Salad dressing, mayonnaise, light	mayonesa ligera
+fdc:173595	Oil, industrial, coconut, principal uses candy coatings, oil sprays, roasting nuts	aceite de coco industrial para coberturas y sprays
+fdc:173596	Oil, industrial, soy (partially hydrogenated), principal uses popcorn and flavoring vegetables	aceite de soja industrial para palomitas
+fdc:173597	Shortening, industrial, soy (partially hydrogenated), pourable liquid fry shortening	grasa líquida de soja industrial para fritura
+fdc:173598	Oil, industrial, soy, refined, for woks and light frying	aceite de soja refinado para wok y fritura ligera
+fdc:173599	Margarine-like shortening, industrial, soy (partially hydrogenated), cottonseed, and soy, principal use flaky pastries	grasa industrial de soja y algodón para hojaldre
+fdc:173600	Oil, industrial, palm kernel, confection fat, uses similar to high quality cocoa butter	aceite de palmiste de confitería sustituto de manteca de cacao
+fdc:173601	Oil, industrial, palm kernel (hydrogenated), confection fat, uses similar to 95 degree hard butter	aceite de palmiste de confitería duro
+fdc:173602	Oil, industrial, palm kernel (hydrogenated), confection fat, intermediate grade product	aceite de palmiste de confitería medio
+fdc:173603	Oil, industrial, palm kernel (hydrogenated), filling fat	aceite de palmiste para rellenos
+fdc:173604	Oil, industrial, soy (partially hydrogenated ), palm, principal uses icings and fillings	aceite de soja y palma industrial para glaseados y rellenos
+fdc:173605	Margarine, industrial, non-dairy, cottonseed, soy oil (partially hydrogenated ), for flaky pastries	margarina industrial sin lácteos para hojaldre
+fdc:173606	Shortening, industrial, soy (partially hydrogenated ) and corn for frying	grasa industrial de soja y maíz para fritura
+fdc:173607	Shortening, industrial, soy (partially hydrogenated ) for baking and confections	grasa de soja industrial para repostería y confitería
+fdc:173608	Margarine-like spread, SMART BEAT Super Light without saturated fat	margarina Smart Beat súper ligera sin grasa saturada
+fdc:173609	Margarine-like spread, SMART BEAT Smart Squeeze	margarina Smart Beat Smart Squeeze
+fdc:173610	Margarine-like spread, SMART BALANCE Omega Plus Spread (with plant sterols & fish oil)	margarina Smart Balance Omega Plus
+fdc:173611	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, flour	muslo de pollo con piel frito enharinado
+fdc:173612	Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted	muslo de pollo con piel asado
+fdc:173613	Chicken, broilers or fryers, drumstick, meat and skin, cooked, stewed	muslo de pollo con piel estofado
+fdc:173614	Chicken, broilers or fryers, dark meat, drumstick, meat only, raw	muslo de pollo sin piel crudo
+fdc:173615	Chicken, broilers or fryers, leg, meat and skin, cooked, fried, batter	pata de pollo con piel frita en rebozado
+fdc:173616	Chicken, broilers or fryers, leg, meat and skin, cooked, fried, flour	pata de pollo con piel frita enharinada
+fdc:173617	Chicken, broilers or fryers, leg, meat and skin, cooked, roasted	pata de pollo con piel asada
+fdc:173618	Chicken, broilers or fryers, leg, meat and skin, cooked, stewed	pata de pollo con piel estofada
+fdc:173619	Chicken, broilers or fryers, leg, meat only, raw	pata de pollo sin piel cruda
+fdc:173620	Chicken, broilers or fryers, neck, meat and skin, cooked, fried, batter	pescuezo de pollo con piel frito en rebozado
+fdc:173621	Chicken, broilers or fryers, neck, meat and skin, cooked, fried, flour	pescuezo de pollo con piel frito enharinado
+fdc:173622	Chicken, broilers or fryers, neck, meat and skin, cooked simmered	pescuezo de pollo con piel cocido
+fdc:173623	Chicken, broilers or fryers, neck, meat only, raw	pescuezo de pollo sin piel crudo
+fdc:173624	Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, flour	contramuslo de pollo con piel frito enharinado
+fdc:173625	Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted	contramuslo de pollo con piel asado
+fdc:173626	Chicken, broilers or fryers, thigh, meat and skin, cooked, stewed	contramuslo de pollo con piel estofado
+fdc:173627	Chicken, broilers or fryers, dark meat, thigh, meat only, raw	contramuslo de pollo sin piel crudo
+fdc:173628	Chicken, broilers or fryers, wing, meat and skin, cooked, fried, batter	ala de pollo con piel frita en rebozado
+fdc:173629	Chicken, broilers or fryers, wing, meat and skin, cooked, fried, flour	ala de pollo con piel frita enharinada
+fdc:173630	Chicken, broilers or fryers, wing, meat and skin, cooked, roasted	ala de pollo con piel asada
+fdc:173631	Chicken, broilers or fryers, wing, meat and skin, cooked, stewed	ala de pollo con piel estofada
+fdc:173632	Chicken, broilers or fryers, wing, meat only, raw	ala de pollo sin piel cruda
+fdc:173633	Chicken, roasting, meat and skin and giblets and neck, cooked, roasted	pollo para asar con piel y menudillos asado
+fdc:173634	Canada Goose, breast meat only, skinless, raw	barnacla canadiense pechuga sin piel cruda
+fdc:173635	Chicken, roasting, meat and skin, cooked, roasted	pollo para asar con piel asado
+fdc:173636	Chicken, roasting, meat only, raw	pollo para asar sin piel crudo
+fdc:173637	Chicken, roasting, light meat, meat only, cooked, roasted	carne blanca de pollo asada
+fdc:173638	Chicken, roasting, dark meat, meat only, raw	carne oscura de pollo cruda
+fdc:173639	Chicken, roasting, dark meat, meat only, cooked, roasted	carne oscura de pollo asada
+fdc:173640	Chicken, stewing, meat and skin, and giblets and neck, raw	gallina con piel y menudillos cruda
+fdc:173641	Chicken, stewing, giblets, raw	menudillos de gallina crudos
+fdc:173642	Chicken, stewing, giblets, cooked, simmered	menudillos de gallina cocidos
+fdc:173643	Chicken, stewing, light meat, meat only, raw	carne blanca de gallina cruda
+fdc:173644	Chicken, stewing, light meat, meat only, cooked, stewed	carne blanca de gallina estofada
+fdc:173645	Chicken, capons, meat and skin, raw	capón con piel crudo
+fdc:173646	Chicken, capons, meat and skin, cooked, roasted	capón con piel asado
+fdc:173647	Beverages, water, tap, drinking	agua potable
+fdc:173648	Beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk	sucedáneo de café de cereales con leche entera
+fdc:173649	Beverages, Dairy drink mix, chocolate, reduced calorie, with low-calorie sweeteners, powder	bebida láctea de chocolate baja en calorías en polvo
+fdc:173650	Beverages, dairy drink mix, chocolate, reduced calorie, with aspartame, powder, prepared with water and ice	bebida láctea de chocolate baja en calorías con aspartamo con agua
+fdc:173651	Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate.	bebida de naranja con pulpa concentrada congelada
+fdc:173652	Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate, prepared with water	bebida de naranja con pulpa de concentrado
+fdc:173653	Cranberry juice cocktail, frozen concentrate	zumo de arándanos concentrado congelado
+fdc:173654	Cranberry juice cocktail, frozen concentrate, prepared with water	zumo de arándanos de concentrado
+fdc:173655	Beverages, water, bottled, non-carbonated, DANNON	agua sin gas Dannon
+fdc:173656	Beverages, water, bottled, non-carbonated, PEPSI, AQUAFINA	agua sin gas Aquafina
+fdc:173657	Water, bottled, non-carbonated, NAYA	agua sin gas Naya
+fdc:173658	Beverages, DANNON, water, bottled, non-carbonated, with Fluoride	agua sin gas con flúor Dannon
+fdc:173659	Beverages, drink mix, QUAKER OATS, GATORADE, orange flavor, powder	bebida Gatorade de naranja en polvo
+fdc:173660	Beverages, PEPSICO QUAKER, Gatorade, G performance O 2, ready-to-drink.	bebida Gatorade G2 lista para beber
+fdc:173661	Whiskey sour mix, bottled, with added potassium and sodium	mezcla para whisky sour embotellada
+fdc:173662	Alcoholic beverage, whiskey sour	cóctel whisky sour
+fdc:173663	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof	destilado 94 proof
+fdc:173664	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof	destilado 100 proof
+fdc:173665	Alcoholic beverage, liqueur, coffee, 63 proof	licor de café
+fdc:173666	Lemonade, frozen concentrate, pink	limonada rosa concentrada congelada
+fdc:173667	Beverages, lemonade, frozen concentrate, pink, prepared with water	limonada rosa de concentrado
+fdc:173668	Fish, herring, Atlantic, kippered	arenque atlántico ahumado
+fdc:173669	Fish, herring, Pacific, raw	arenque del Pacífico crudo
+fdc:173670	Fish, ling, raw	maruca cruda
+fdc:173671	Fish, lingcod, raw	lingcod crudo
+fdc:173672	Fish, mackerel, Pacific and jack, mixed species, raw	caballa del Pacífico cruda
+fdc:173673	Fish, mackerel, spanish, raw	caballa española cruda
+fdc:173674	Fish, mackerel, spanish, cooked, dry heat	caballa española asada
+fdc:173675	Fish, milkfish, raw	sabalote crudo
+fdc:173676	Fish, monkfish, raw	rape crudo
+fdc:173677	Fish, pout, ocean, raw	faneca cruda
+fdc:173678	Fish, perch, mixed species, raw	perca de mar cruda
+fdc:173679	Fish, perch, mixed species, cooked, dry heat	perca de mar asada
+fdc:173680	Fish, pike, northern, raw	lucio crudo
+fdc:173681	Fish, pollock, Alaska, cooked, dry heat (may contain additives to retain moisture)	abadejo asado
+fdc:173682	Fish, pompano, florida, raw	pámpano crudo
+fdc:173683	Fish, pompano, florida, cooked, dry heat	pámpano asado
+fdc:173684	Fish, rockfish, Pacific, mixed species, raw	gallineta del Pacífico cruda
+fdc:173685	Fish, sablefish, smoked	bacalao negro ahumado
+fdc:173686	Fish, salmon, Atlantic, wild, raw	salmón atlántico salvaje crudo
+fdc:173687	Fish, salmon, chinook, smoked	salmón chinook ahumado
+fdc:173688	Fish, salmon, chinook, raw	salmón chinook crudo
+fdc:173689	Fish, salmon, chum, raw	salmón chum crudo
+fdc:173690	Fish, salmon, pink, canned, total can contents	salmón rosado en conserva
+fdc:173691	Fish, salmon, sockeye, raw	salmón rojo crudo
+fdc:173692	Fish, salmon, sockeye, cooked, dry heat	salmón rojo asado
+fdc:173693	Fish, salmon, sockeye, canned, drained solids	salmón rojo en conserva escurrido
+fdc:173694	Fish, sea bass, mixed species, cooked, dry heat	lubina asada
+fdc:173695	Fish, seatrout, mixed species, raw	trucha de mar cruda
+fdc:173696	Fish, shad, american, raw	sábalo americano crudo
+fdc:173697	Fish, shark, mixed species, raw	tiburón crudo
+fdc:173698	Fish, snapper, mixed species, raw	pargo crudo
+fdc:173699	Fish, snapper, mixed species, cooked, dry heat	pargo asado
+fdc:173700	Fish, spot, raw	pescadilla spot cruda
+fdc:173701	Fish, sturgeon, mixed species, raw	esturión crudo
+fdc:173702	Fish, surimi	surimi
+fdc:173703	Fish, swordfish, raw	pez espada crudo
+fdc:173704	Fish, swordfish, cooked, dry heat	pez espada asado
+fdc:173705	Fish, tilefish, raw	blanquillo crudo
+fdc:173706	Fish, tuna, fresh, bluefin, raw	atún rojo fresco crudo
+fdc:173707	Fish, tuna, fresh, bluefin, cooked, dry heat	atún rojo fresco asado
+fdc:173708	Fish, tuna, light, canned in oil, drained solids	atún en conserva en aceite escurrido
+fdc:173709	Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)	atún en conserva en agua escurrido
+fdc:173710	Fish, turbot, european, raw	rodaballo crudo
+fdc:173711	Fish, whitefish, mixed species, raw	pescado blanco crudo
 fdc:173726	Fish, pollock, Alaska, cooked	colín de Alaska cocido
 fdc:173763	Vitasoy USA, Organic Nasoya Firm Tofu	Nasoya tofu firme
 fdc:173771	SILK Light Plain, soymilk	Silk leche de soja ligera

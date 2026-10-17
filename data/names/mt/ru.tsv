@@ -6224,12 +6224,206 @@ fdc:173508	Babyfood, potatoes, toddler	детское питание карто�
 fdc:173509	Babyfood, cereal, Oatmeal, dry, GERBER, SINGLE GRAIN, fortified	детская каша овсяная Gerber обогащённая сухая
 fdc:173510	Babyfood, vegetable, butternut squash and corn	детское питание овощное мускатная тыква с кукурузой
 fdc:173511	Babyfood, apples, dices, toddler	детское питание яблоки кусочками для малышей
-fdc:173603	Oil, industrial, palm kernel (hydrogenated), filling fat	пальмоядровое масло гидрогенизированное
-fdc:173611	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, flour	куриная голень жареная в муке
-fdc:173645	Chicken, capons, meat and skin, raw	каплун сырой
-fdc:173664	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof	крепкий алкоголь 50 %
-fdc:173693	Fish, salmon, sockeye, canned, drained solids	нерка консервированная
-fdc:173707	Fish, tuna, fresh, bluefin, cooked, dry heat	тунец синепёрый запечённый
+fdc:173512	Babyfood, fruit, applesauce, strained	детское питание фруктовое яблочное пюре
+fdc:173513	Babyfood, dinner, vegetables and chicken, junior	детский обед овощи с курицей для старших
+fdc:173514	Babyfood, dinner, mixed vegetable, strained	детский обед овощная смесь протёртый
+fdc:173515	Babyfood, vegetables, mix vegetables strained	детское питание овощная смесь протёртая
+fdc:173516	Babyfood, dinner, beef noodle, junior	детский обед говядина с лапшой для старших
+fdc:173517	Babyfood, apples with ham, strained	детское питание яблоки с ветчиной протёртое
+fdc:173518	Babyfood, carrots and beef, strained	детское питание морковь с говядиной протёртое
+fdc:173519	Babyfood, beverage, GERBER, GRADUATES, FRUIT SPLASHERS	детский напиток фруктовый Gerber Graduates Fruit Splashers
+fdc:173520	Babyfood, snack, GERBER, GRADUATES, YOGURT MELTS	детские йогуртовые капли Gerber Graduates Yogurt Melts
+fdc:173521	Babyfood, dinner, sweet potatoes and chicken, strained	детский обед батат с курицей протёртый
+fdc:173522	Infant formula, MEAD JOHNSON, Enfamil 24, ready to feed, with ARA and DHA	детская смесь Enfamil 24 готовая
+fdc:173523	Infant formula, MEAD JOHNSON, Enfamil Enspire Powder, with ARA and DHA, not reconstituted	детская смесь Enfamil Enspire порошок
+fdc:173524	Infant formula, MEAD JOHNSON, Enfamil Reguline, ready to feed, with ARA and DHA	детская смесь Enfamil Reguline готовая
+fdc:173525	Infant formula, MEAD JOHNSON, Gentlease, ready to feed, with ARA and DHA	детская смесь Gentlease готовая
+fdc:173526	Toddler formula, MEAD JOHNSON, Nutramigen Toddler with LGG Powder, with ARA and DHA, not reconstituted	детская смесь Nutramigen Toddler порошок
+fdc:173527	Infant formula, MEAD JOHNSON, Pregestimil 20 Calories, ready to feed, with ARA and DHA	детская смесь Pregestimil 20 ккал готовая
+fdc:173528	Babyfood, cereal, high protein, prepared with whole milk	детская каша высокобелковая на цельном молоке
+fdc:173529	Babyfood, cereal, mixed, prepared with whole milk	детская каша злаковая на цельном молоке
+fdc:173530	Babyfood, cereal, mixed, with bananas, prepared with whole milk	детская каша злаковая с бананом на цельном молоке
+fdc:173531	Babyfood, cereal, oatmeal, prepared with whole milk	детская каша овсяная на цельном молоке
+fdc:173532	Babyfood, cereal, mixed, with honey, prepared with whole milk	детская каша злаковая с мёдом на цельном молоке
+fdc:173533	Babyfood, cereal, high protein, with apple and orange, prepared with whole milk	детская каша высокобелковая с яблоком и апельсином на цельном молоке
+fdc:173534	Babyfood, cereal, rice, with bananas, prepared with whole milk	детская каша рисовая с бананом на цельном молоке
+fdc:173535	Infant formula, NESTLE, GOOD START SUPREME, with iron, liquid concentrate, not reconstituted	детская смесь Good Start Supreme с железом концентрат
+fdc:173536	Infant formula, NESTLE, GOOD START SUPREME, with iron, powder	детская смесь Good Start Supreme с железом порошок
+fdc:173537	Infant formula, MEAD JOHNSON, ENFAMIL, LIPIL, low iron, liquid concentrate, with ARA and DHA	детская смесь Enfamil Lipil с пониженным железом концентрат
+fdc:173538	Infant formula, MEAD JOHNSON, PREGESTIMIL, with iron, powder, with ARA and DHA, not reconstituted	детская смесь Pregestimil с железом порошок
+fdc:173539	Infant formula, MEAD JOHNSON, PREGESTIMIL, with iron, with ARA and DHA, prepared from powder	детская смесь Pregestimil с железом разведённая
+fdc:173540	Infant formula, MEAD JOHNSON, PROSOBEE, with iron, ready-to-feed	детская смесь Prosobee с железом готовая
+fdc:173541	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, ready-to-feed	детская смесь Similac Isomil с железом готовая
+fdc:173542	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, liquid concentrate	детская смесь Similac Isomil с железом концентрат
+fdc:173543	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, with iron, powder, not reconstituted	детская смесь Similac Isomil с железом порошок
+fdc:173544	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN, with iron, liquid concentrate not reconstituted, with ARA and DHA	детская смесь Enfamil Nutramigen с железом концентрат
+fdc:173545	Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, with iron, powder, not reconstituted, with ARA and DHA	детская смесь Enfamil Prosobee с железом порошок
+fdc:173546	Infant formula, ABBOTT NUTRITION, SIMILAC, with iron, powder, not reconstituted	детская смесь Similac с железом порошок
+fdc:173547	Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, liquid concentrate, reconstituted, with ARA and DHA	детская смесь Enfamil Prosobee разведённая
+fdc:173548	Infant formula, MEAD JOHNSON, PROSOBEE, with iron, ready to feed, with ARA and DHA	детская смесь Prosobee с железом готовая
+fdc:173549	Infant formula, NESTLE, GOOD START SOY, with DHA and ARA, ready-to-feed	детская смесь Good Start Soy готовая
+fdc:173550	Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed, with iron and fiber	детская смесь Pediasure с железом и клетчаткой готовая
+fdc:173551	Infant formula, NESTLE, GOOD START ESSENTIALS SOY, with iron, powder	детская смесь Good Start Essentials Soy с железом порошок
+fdc:173552	Infant formula, MEAD JOHNSON, NEXT STEP PROSOBEE, powder, not reconstituted	детская смесь Next Step Prosobee порошок
+fdc:173553	Infant formula, MEAD JOHNSON,NEXT STEP PROSOBEE, prepared from powder	детская смесь Next Step Prosobee разведённая
+fdc:173554	Infant formula, PBM PRODUCTS, store brand, powder	детская смесь магазинная порошок
+fdc:173555	Infant formula, PBM PRODUCTS, store brand, soy, ready-to-feed	детская смесь магазинная соевая готовая
+fdc:173556	Infant formula, PBM PRODUCTS, store brand, soy, liquid concentrate, not reconstituted	детская смесь магазинная соевая концентрат
+fdc:173557	Infant formula, PBM PRODUCTS, store brand, soy, powder	детская смесь магазинная соевая порошок
+fdc:173558	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE, (LACTOSE FREE), liquid concentrate, with ARA and DHA	детская смесь Similac Sensitive безлактозная концентрат
+fdc:173559	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE, (LACTOSE FREE), powder, with ARA and DHA	детская смесь Similac Sensitive безлактозная порошок
+fdc:173560	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, ready-to-feed	детская смесь Similac Advance с железом готовая
+fdc:173561	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, powder, not reconstituted	детская смесь Similac Advance с железом порошок
+fdc:173562	Salad dressing, blue or roquefort cheese dressing, commercial, regular	соус для салата с благородной плесенью
+fdc:173563	Oil, cupu assu	масло купуасу
+fdc:173564	Fat, chicken	жир куриный
+fdc:173565	Oil, soybean, salad or cooking, (partially hydrogenated) and cottonseed	масло соево-хлопковое частично гидрогенизированное
+fdc:173566	Shortening industrial, lard and vegetable oil	жир промышленный из сала и растительного масла
+fdc:173567	Shortening frying (heavy duty), beef tallow and cottonseed	жир для жарки говяжий и хлопковый
+fdc:173568	Shortening confectionery, coconut (hydrogenated) and or palm kernel (hydrogenated)	жир кондитерский кокосово-пальмоядровый
+fdc:173569	Shortening industrial, soybean (hydrogenated) and cottonseed	жир промышленный соево-хлопковый
+fdc:173570	Oil, ucuhuba butter	масло укухуба
+fdc:173571	Fat, turkey	жир индейки
+fdc:173572	Fat, goose	жир гусиный
+fdc:173573	Oil, avocado	масло авокадо
+fdc:173574	Shortening, special purpose for cakes and frostings, soybean (hydrogenated)	жир для кексов и глазури соевый
+fdc:173575	Shortening, special purpose for baking, soybean (hydrogenated) palm and cottonseed	жир для выпечки соево-пальмово-хлопковый
+fdc:173576	Oil, oat	масло овсяное
+fdc:173577	Fish oil, cod liver	рыбий жир из печени трески
+fdc:173578	Fish oil, sardine	жир сардиновый
+fdc:173579	Shortening, multipurpose, soybean (hydrogenated) and palm (hydrogenated)	жир универсальный соево-пальмовый
+fdc:173580	Margarine-like, vegetable oil-butter spread, tub, with salt	спред растительно-сливочный с солью в коробочке
+fdc:173581	Butter, light, stick, with salt	масло лёгкое с солью брусок
+fdc:173582	Margarine-like, vegetable oil spread, 60% fat, tub, with salt	спред растительный 60% жирности с солью в коробочке
+fdc:173583	Margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, with salt	спред растительный 60% жирности с солью
+fdc:173584	Shortening, vegetable, household, composite	жир кухонный растительный
+fdc:173585	Margarine, regular, 80% fat, composite, stick, without salt	маргарин 80% без соли брусок
+fdc:173586	Margarine-like spread with yogurt, approximately 40% fat, tub, with salt	спред с йогуртом 40% жирности с солью в коробочке
+fdc:173587	Margarine, 80% fat, stick, includes regular and hydrogenated corn and soybean oils	маргарин 80% брусок
+fdc:173588	Margarine, margarine-type vegetable oil spread, 70% fat, soybean and partially hydrogenated soybean, stick	спред маргариновый 70% жирности соевый брусок
+fdc:173589	Margarine Spread, 40-49% fat, tub	спред маргариновый 40-49% жирности в коробочке
+fdc:173590	Salad dressing, italian dressing, fat-free	соус итальянский обезжиренный
+fdc:173591	Salad dressing, ranch dressing, fat-free	соус ранч обезжиренный
+fdc:173592	Salad dressing, ranch dressing, regular	соус ранч
+fdc:173593	Salad dressing, ranch dressing, reduced fat	соус ранч пониженной жирности
+fdc:173594	Salad dressing, mayonnaise, light	майонез лёгкий
+fdc:173595	Oil, industrial, coconut, principal uses candy coatings, oil sprays, roasting nuts	масло кокосовое промышленное для глазури и спреев
+fdc:173596	Oil, industrial, soy (partially hydrogenated), principal uses popcorn and flavoring vegetables	масло соевое промышленное для попкорна
+fdc:173597	Shortening, industrial, soy (partially hydrogenated), pourable liquid fry shortening	жир для жарки жидкий соевый промышленный
+fdc:173598	Oil, industrial, soy, refined, for woks and light frying	масло соевое рафинированное для вока и лёгкой жарки
+fdc:173599	Margarine-like shortening, industrial, soy (partially hydrogenated), cottonseed, and soy, principal use flaky pastries	жир промышленный соево-хлопковый для слоёного теста
+fdc:173600	Oil, industrial, palm kernel, confection fat, uses similar to high quality cocoa butter	масло пальмоядровое кондитерское заменитель какао-масла
+fdc:173601	Oil, industrial, palm kernel (hydrogenated), confection fat, uses similar to 95 degree hard butter	масло пальмоядровое кондитерское твёрдое
+fdc:173602	Oil, industrial, palm kernel (hydrogenated), confection fat, intermediate grade product	масло пальмоядровое кондитерское среднее
+fdc:173603	Oil, industrial, palm kernel (hydrogenated), filling fat	масло пальмоядровое для начинок
+fdc:173604	Oil, industrial, soy (partially hydrogenated ), palm, principal uses icings and fillings	масло соево-пальмовое промышленное для глазури и начинок
+fdc:173605	Margarine, industrial, non-dairy, cottonseed, soy oil (partially hydrogenated ), for flaky pastries	маргарин промышленный безмолочный для слоёного теста
+fdc:173606	Shortening, industrial, soy (partially hydrogenated ) and corn for frying	жир для жарки соево-кукурузный промышленный
+fdc:173607	Shortening, industrial, soy (partially hydrogenated ) for baking and confections	жир соевый промышленный для выпечки и кондитерских изделий
+fdc:173608	Margarine-like spread, SMART BEAT Super Light without saturated fat	спред Smart Beat суперлёгкий без насыщенных жиров
+fdc:173609	Margarine-like spread, SMART BEAT Smart Squeeze	спред Smart Beat Smart Squeeze
+fdc:173610	Margarine-like spread, SMART BALANCE Omega Plus Spread (with plant sterols & fish oil)	спред Smart Balance Omega Plus
+fdc:173611	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, flour	куриная голень с кожей жареная в муке
+fdc:173612	Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted	куриная голень с кожей запечённая
+fdc:173613	Chicken, broilers or fryers, drumstick, meat and skin, cooked, stewed	куриная голень с кожей тушёная
+fdc:173614	Chicken, broilers or fryers, dark meat, drumstick, meat only, raw	куриная голень без кожи сырая
+fdc:173615	Chicken, broilers or fryers, leg, meat and skin, cooked, fried, batter	куриная нога с кожей жареная в кляре
+fdc:173616	Chicken, broilers or fryers, leg, meat and skin, cooked, fried, flour	куриная нога с кожей жареная в муке
+fdc:173617	Chicken, broilers or fryers, leg, meat and skin, cooked, roasted	куриная нога с кожей запечённая
+fdc:173618	Chicken, broilers or fryers, leg, meat and skin, cooked, stewed	куриная нога с кожей тушёная
+fdc:173619	Chicken, broilers or fryers, leg, meat only, raw	куриная нога без кожи сырая
+fdc:173620	Chicken, broilers or fryers, neck, meat and skin, cooked, fried, batter	куриная шея с кожей жареная в кляре
+fdc:173621	Chicken, broilers or fryers, neck, meat and skin, cooked, fried, flour	куриная шея с кожей жареная в муке
+fdc:173622	Chicken, broilers or fryers, neck, meat and skin, cooked simmered	куриная шея с кожей варёная
+fdc:173623	Chicken, broilers or fryers, neck, meat only, raw	куриная шея без кожи сырая
+fdc:173624	Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, flour	куриное бедро с кожей жареное в муке
+fdc:173625	Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted	куриное бедро с кожей запечённое
+fdc:173626	Chicken, broilers or fryers, thigh, meat and skin, cooked, stewed	куриное бедро с кожей тушёное
+fdc:173627	Chicken, broilers or fryers, dark meat, thigh, meat only, raw	куриное бедро без кожи сырое
+fdc:173628	Chicken, broilers or fryers, wing, meat and skin, cooked, fried, batter	куриное крыло с кожей жареное в кляре
+fdc:173629	Chicken, broilers or fryers, wing, meat and skin, cooked, fried, flour	куриное крыло с кожей жареное в муке
+fdc:173630	Chicken, broilers or fryers, wing, meat and skin, cooked, roasted	куриное крыло с кожей запечённое
+fdc:173631	Chicken, broilers or fryers, wing, meat and skin, cooked, stewed	куриное крыло с кожей тушёное
+fdc:173632	Chicken, broilers or fryers, wing, meat only, raw	куриное крыло без кожи сырое
+fdc:173633	Chicken, roasting, meat and skin and giblets and neck, cooked, roasted	курица для запекания с кожей и потрохами запечённая
+fdc:173634	Canada Goose, breast meat only, skinless, raw	казарка канадская грудка без кожи сырая
+fdc:173635	Chicken, roasting, meat and skin, cooked, roasted	курица для запекания с кожей запечённая
+fdc:173636	Chicken, roasting, meat only, raw	курица для запекания без кожи сырая
+fdc:173637	Chicken, roasting, light meat, meat only, cooked, roasted	белое мясо курицы запечённое
+fdc:173638	Chicken, roasting, dark meat, meat only, raw	тёмное мясо курицы сырое
+fdc:173639	Chicken, roasting, dark meat, meat only, cooked, roasted	тёмное мясо курицы запечённое
+fdc:173640	Chicken, stewing, meat and skin, and giblets and neck, raw	суповая курица с кожей и потрохами сырая
+fdc:173641	Chicken, stewing, giblets, raw	потроха суповой курицы сырые
+fdc:173642	Chicken, stewing, giblets, cooked, simmered	потроха суповой курицы варёные
+fdc:173643	Chicken, stewing, light meat, meat only, raw	белое мясо суповой курицы сырое
+fdc:173644	Chicken, stewing, light meat, meat only, cooked, stewed	белое мясо суповой курицы тушёное
+fdc:173645	Chicken, capons, meat and skin, raw	каплун с кожей сырой
+fdc:173646	Chicken, capons, meat and skin, cooked, roasted	каплун с кожей запечённый
+fdc:173647	Beverages, water, tap, drinking	вода питьевая
+fdc:173648	Beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk	заменитель кофе злаковый на цельном молоке
+fdc:173649	Beverages, Dairy drink mix, chocolate, reduced calorie, with low-calorie sweeteners, powder	напиток молочный шоколадный низкокалорийный порошок
+fdc:173650	Beverages, dairy drink mix, chocolate, reduced calorie, with aspartame, powder, prepared with water and ice	напиток молочный шоколадный низкокалорийный с аспартамом на воде
+fdc:173651	Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate.	напиток апельсиновый с мякотью концентрат замороженный
+fdc:173652	Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate, prepared with water	напиток апельсиновый с мякотью из концентрата
+fdc:173653	Cranberry juice cocktail, frozen concentrate	морс клюквенный концентрат замороженный
+fdc:173654	Cranberry juice cocktail, frozen concentrate, prepared with water	морс клюквенный из концентрата
+fdc:173655	Beverages, water, bottled, non-carbonated, DANNON	вода негазированная Dannon
+fdc:173656	Beverages, water, bottled, non-carbonated, PEPSI, AQUAFINA	вода негазированная Aquafina
+fdc:173657	Water, bottled, non-carbonated, NAYA	вода негазированная Naya
+fdc:173658	Beverages, DANNON, water, bottled, non-carbonated, with Fluoride	вода негазированная с фтором Dannon
+fdc:173659	Beverages, drink mix, QUAKER OATS, GATORADE, orange flavor, powder	напиток Gatorade апельсиновый порошок
+fdc:173660	Beverages, PEPSICO QUAKER, Gatorade, G performance O 2, ready-to-drink.	напиток Gatorade G2 готовый
+fdc:173661	Whiskey sour mix, bottled, with added potassium and sodium	смесь для виски-сауэр в бутылке
+fdc:173662	Alcoholic beverage, whiskey sour	коктейль виски-сауэр
+fdc:173663	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof	крепкий алкоголь 94 пруф
+fdc:173664	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof	крепкий алкоголь 100 пруф
+fdc:173665	Alcoholic beverage, liqueur, coffee, 63 proof	ликёр кофейный
+fdc:173666	Lemonade, frozen concentrate, pink	лимонад розовый концентрат замороженный
+fdc:173667	Beverages, lemonade, frozen concentrate, pink, prepared with water	лимонад розовый из концентрата
+fdc:173668	Fish, herring, Atlantic, kippered	сельдь атлантическая копчёная
+fdc:173669	Fish, herring, Pacific, raw	сельдь тихоокеанская сырая
+fdc:173670	Fish, ling, raw	мольва сырая
+fdc:173671	Fish, lingcod, raw	линкод сырой
+fdc:173672	Fish, mackerel, Pacific and jack, mixed species, raw	скумбрия тихоокеанская сырая
+fdc:173673	Fish, mackerel, spanish, raw	скумбрия испанская сырая
+fdc:173674	Fish, mackerel, spanish, cooked, dry heat	скумбрия испанская запечённая
+fdc:173675	Fish, milkfish, raw	чанос сырой
+fdc:173676	Fish, monkfish, raw	удильщик сырой
+fdc:173677	Fish, pout, ocean, raw	тресковый бычок сырой
+fdc:173678	Fish, perch, mixed species, raw	окунь морской смешанный сырой
+fdc:173679	Fish, perch, mixed species, cooked, dry heat	окунь морской запечённый
+fdc:173680	Fish, pike, northern, raw	щука сырая
+fdc:173681	Fish, pollock, Alaska, cooked, dry heat (may contain additives to retain moisture)	минтай запечённый
+fdc:173682	Fish, pompano, florida, raw	помпано сырое
+fdc:173683	Fish, pompano, florida, cooked, dry heat	помпано запечённое
+fdc:173684	Fish, rockfish, Pacific, mixed species, raw	окунь тихоокеанский сырой
+fdc:173685	Fish, sablefish, smoked	угольная рыба копчёная
+fdc:173686	Fish, salmon, Atlantic, wild, raw	лосось атлантический дикий сырой
+fdc:173687	Fish, salmon, chinook, smoked	чавыча копчёная
+fdc:173688	Fish, salmon, chinook, raw	чавыча сырая
+fdc:173689	Fish, salmon, chum, raw	кета сырая
+fdc:173690	Fish, salmon, pink, canned, total can contents	горбуша консервированная
+fdc:173691	Fish, salmon, sockeye, raw	нерка сырая
+fdc:173692	Fish, salmon, sockeye, cooked, dry heat	нерка запечённая
+fdc:173693	Fish, salmon, sockeye, canned, drained solids	нерка консервированная слитая
+fdc:173694	Fish, sea bass, mixed species, cooked, dry heat	окунь морской запечённый
+fdc:173695	Fish, seatrout, mixed species, raw	форель морская сырая
+fdc:173696	Fish, shad, american, raw	сельдь американская сырая
+fdc:173697	Fish, shark, mixed species, raw	акула сырая
+fdc:173698	Fish, snapper, mixed species, raw	снеппер сырой
+fdc:173699	Fish, snapper, mixed species, cooked, dry heat	снеппер запечённый
+fdc:173700	Fish, spot, raw	спот сырой
+fdc:173701	Fish, sturgeon, mixed species, raw	осётр сырой
+fdc:173702	Fish, surimi	сурими
+fdc:173703	Fish, swordfish, raw	рыба-меч сырая
+fdc:173704	Fish, swordfish, cooked, dry heat	рыба-меч запечённая
+fdc:173705	Fish, tilefish, raw	тайлфиш сырой
+fdc:173706	Fish, tuna, fresh, bluefin, raw	тунец голубой сырой
+fdc:173707	Fish, tuna, fresh, bluefin, cooked, dry heat	тунец голубой запечённый
+fdc:173708	Fish, tuna, light, canned in oil, drained solids	тунец консервированный в масле слитый
+fdc:173709	Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)	тунец консервированный в воде слитый
+fdc:173710	Fish, turbot, european, raw	палтус европейский сырой
+fdc:173711	Fish, whitefish, mixed species, raw	сиг смешанный сырой
 fdc:173726	Fish, pollock, Alaska, cooked	минтай запечённый
 fdc:173763	Vitasoy USA, Organic Nasoya Firm Tofu	Nasoya тофу твёрдый
 fdc:173771	SILK Light Plain, soymilk	Silk соевое молоко лёгкое
