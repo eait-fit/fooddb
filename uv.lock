@@ -290,7 +290,7 @@ requires-dist = [
     { name = "itsdangerous", specifier = ">=2.2.0" },
     { name = "mcp", specifier = ">=2.3.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.6" },
-    { name = "python-pq", specifier = ">=0.9.0" },
+    { name = "python-pq", specifier = ">=0.9.2" },
     { name = "splink", specifier = ">=5.0.0" },
     { name = "sqladmin", specifier = ">=0.32.0" },
     { name = "sqlalchemy", extras = ["asyncio"], specifier = ">=2.1.3" },
@@ -951,7 +951,7 @@ wheels = [
 
 [[package]]
 name = "python-pq"
-version = "0.9.0"
+version = "0.9.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alembic" },
@@ -964,9 +964,9 @@ dependencies = [
     { name = "pydantic-settings" },
     { name = "sqlalchemy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/48/4b/14b984b64a3a8eb18ee60b49ab14ea60b5af1145774b970437cce8ebd5d6/python_pq-0.9.0.tar.gz", hash = "sha256:5c2594fc5634c94ed32d84dc85a49943c762ed758c97ee9d13ed72964f591768", size = 32785, upload-time = "2026-10-08T05:19:40.505Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/4e/1c0f35e4b4490400c65812e426ca119e0ad14994d80c0c9f6e1cdfd28942/python_pq-0.9.2.tar.gz", hash = "sha256:36a1f34e1cdf6813f9f356fb8966c0257f3c02ab59b5bcf8c0ce8b3b601dcf08", size = 35178, upload-time = "2026-10-16T14:11:27.243Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/50/d5/f0caa96a612415d68f88f2b82b1111b50d78b71ae8b23f9dc91b72811d5b/python_pq-0.9.0-py3-none-any.whl", hash = "sha256:ea3406ccc8b64cc8882228e25972d9ab333fe87e9ed88afecc2e8674d7d23fe5", size = 41300, upload-time = "2026-10-08T05:19:39.25Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/65/39349c169a91f5426392621b79a2306539716a338261718747f1d549ed6c/python_pq-0.9.2-py3-none-any.whl", hash = "sha256:018a47667913b7fdafa9b21d0b436cffd5276ab6c551aa21e38a7a4d95920706", size = 43766, upload-time = "2026-10-16T14:11:25.863Z" },
 ]
 
 [[package]]
