@@ -1840,13 +1840,218 @@ bls:H150400	Coconut meat, grated, dried	кокосовая стружка
 bls:H151000	Coconut water (liquid from coconuts)	кокосовая вода
 bls:H154000	Coconut milk	кокосовое молоко
 bls:H160100	Pecan	пекан
+bls:H160600	Pecan roasted without fat	пекан жареный
+bls:H170100	Cashew nut	кешью
+bls:H170600	Cashew nut roasted with fat	кешью жареный в масле
+bls:H170610	Cashew nut roasted without fat	кешью жареный
+bls:H170700	Cashew nut roasted with fat, salted	кешью жареный в масле солёный
+bls:H180100	Brazil nut	бразильский орех
+bls:H180610	Brazil nut roasted without fat	бразильский орех жареный
+bls:H190100	Macadamia nut	макадамия
+bls:H190600	Macadamia nut roasted without fat	макадамия жареная
+bls:H190700	Macadamia nut roasted without fat, salted	макадамия жареная солёная
+bls:H210100	Sweet almond	миндаль сладкий
+bls:H210200	Sweet almond blanched	миндаль бланшированный
+bls:H210400	Sweet almond crushed	миндаль молотый
+bls:H210600	Sweet almond roasted without fat	миндаль жареный
 bls:H210710	Sweet almond roasted with fat, salted	миндаль жареный солёный
+bls:H212800	Sweet almond butter (100 % pure)	миндальная паста
+bls:H220100	Bitter almond	миндаль горький
+bls:H230100	Sweet chestnut	каштан съедобный
+bls:H230132	Sweet chestnut boiled	каштан съедобный варёный
+bls:H230162	Sweet chestnut baked	каштан съедобный запечённый
+bls:H230172	Sweet chestnut grilled	каштан съедобный на гриле
+bls:H230182	Sweet chestnut fried without fat (pan)	каштан съедобный жареный без масла
+bls:H230400	Sweet chestnut flour	мука каштановая
+bls:H250100	Pistachio nut	фисташки
+bls:H250600	Pistachio nut roasted without fat	фисташки жареные
+bls:H250700	Pistachio nut roasted without fat, salted	фисташки жареные солёные
+bls:H310100	Pumpkin seed	семечки тыквенные
 bls:H310600	Pumpkin seed roasted without fat	тыквенные семечки жареные
+bls:H320100	Pine nut	кедровые орешки
+bls:H320600	Pine nut roasted without fat	кедровые орешки жареные
+bls:H410100	Linseed/flax seed	семена льна
+bls:H410400	Linseed/flax seed, ground	семена льна молотые
+bls:H410600	Linseed/flax seed, roasted without fat	семена льна жареные
+bls:H420100	Sesame seed	кунжут
+bls:H420610	Sesame seeds roasted without fat	кунжут жареный
+bls:H430100	Sunflower seed	семечки подсолнечные
+bls:H430610	Sunflower seeds roasted without fat	семечки подсолнечные жареные
+bls:H450100	Poppy seed	мак
+bls:H450400	Poppy seed ground	мак молотый
+bls:H480100	Chia seeds	семена чиа
+bls:H510802	Olives green, pickled, drained	оливки зелёные маринованные слитые
+bls:H510900	Olives green, filled with sweet pepper paste, pickled, drained	оливки зелёные с перцем маринованные слитые
+bls:H511900	Olives green, filled with almonds, pickled, drained	оливки зелёные с миндалём маринованные слитые
+bls:H520800	Olives blackened, in brine, drained	оливки чёрные в рассоле слитые
+bls:H610100	Bamboo shoots raw	побеги бамбука сырые
+bls:H610132	Bamboo shoots boiled	побеги бамбука варёные
+bls:H610182	Bamboo shoots fried without fat (pan)	побеги бамбука жареные без масла
+bls:H610902	Bamboo shoots canned, drained	побеги бамбука консервированные слитые
+bls:H620100	Soya bean sprouts raw	ростки сои сырые
 bls:H620902	Soya bean sprouts canned, drained	ростки сои консервированные
+bls:H640100	Lucerne/alfalfa sprouts, raw	ростки люцерны сырые
+bls:H650100	Mung bean sprouts raw	ростки маш сырые
+bls:H650902	Mung bean sprouts canned, drained	ростки маш консервированные слитые
+bls:H662100	Lentils sprouted raw	чечевица пророщенная сырая
+bls:H702100	Cowpea/black-eyed pea, mature	вигна спелая
+bls:H702132	Cowpea/black-eyed pea, mature, boiled	вигна спелая варёная
+bls:H702902	Cowpea/black-eyed pea, mature, canned, drained	вигна консервированная слитая
+bls:H710400	Pea flour	гороховая мука
+bls:H720400	Chickpea flour	мука из нута
+bls:H720902	Chickpea mature, canned, drained	нут консервированный слитый
+bls:H725100	Lentil mature	чечевица
 bls:H730000	Lentil red mature	чечевица красная
+bls:H730032	Lentil red, mature, boiled	чечевица красная варёная
+bls:H730132	Lentil mature, boiled	чечевица варёная
+bls:H730400	Lentil flour	чечевичная мука
+bls:H730902	Lentil mature, canned, drained	чечевица консервированная слитая
+bls:H731400	Lupin flour	люпиновая мука
+bls:H739400	Haricot bean mature	фасоль белая спелая
+bls:H740132	Haricot bean mature, boiled	фасоль белая спелая варёная
+bls:H740902	Haricot bean mature, canned, drained	фасоль белая консервированная слитая
+bls:H742100	Kidney bean mature	фасоль красная спелая
+bls:H742132	Kidney bean mature, boiled	фасоль красная варёная
+bls:H742902	Kidney bean mature, canned, drained	фасоль красная консервированная слитая
+bls:H750100	Broad bean mature	бобы спелые
+bls:H750132	Broad bean mature, boiled	бобы спелые варёные
+bls:H760600	Soya bean mature (soya kernel) roasted without fat	соевые бобы жареные
+bls:H764400	Soya flour full fat	соевая мука полножирная
+bls:H765000	Plant-based mince, made from texturised soya protein, plain, dry	соевый фарш сухой
 bls:H765082	Plant-based mince, made from texturised soya protein, plain, soaked, fried without fat (pan)	соевый фарш жареный без масла
+bls:H770100	Mung bean mature	маш спелый
+bls:H770132	Mung bean mature, boiled	маш спелый варёный
+bls:H800000	Almond drink unsweetened	миндальный напиток без сахара
+bls:H800100	Almond drink unsweetened, fortified with vitamins and calcium	миндальный напиток без сахара с витаминами и кальцием
+bls:H800200	Almond drink sweetened, flavoured	миндальный напиток сладкий ароматизированный
+bls:H800300	Almond drink sweetened, flavoured, fortified with calcium	миндальный напиток сладкий ароматизированный с кальцием
+bls:H800400	Almond drink sweetened, flavoured, fortified with vitamins and calcium	миндальный напиток сладкий ароматизированный с витаминами и кальцием
+bls:H810000	Fruit and nut mix	микс орехов и сухофруктов
+bls:H810100	Peanut roasted, crispy coated	арахис жареный в хрустящей оболочке
+bls:H841100	Soya drink unsweetened	соевый напиток без сахара
+bls:H841400	Soya drink unsweetened, fortified with vitamins and calcium	соевый напиток без сахара с витаминами и кальцием
 bls:H842400	Soya drink sweetened, flavoured	соевый напиток сладкий ароматизированный
+bls:H842600	Soya drink sweetened, flavoured, fortified with vitamins and calcium	соевый напиток сладкий ароматизированный с витаминами и кальцием
+bls:H843200	Plant-based dessert/pudding alternative	десерт растительный
+bls:H843300	Plant-based dessert/pudding alternative, fortified with vitamins and calcium	десерт растительный с витаминами и кальцием
+bls:H844000	Plant-based yogurt alternative, made from soya, unsweetened	йогурт соевый без сахара
+bls:H844100	Plant-based yogurt alternative, made from soya, unsweetened, fortified with vitamins and calcium	йогурт соевый без сахара с витаминами и кальцием
+bls:H844400	Plant-based yogurt alternative, made from soya, sweetened, flavoured	йогурт соевый сладкий ароматизированный
+bls:H844500	Plant-based yogurt alternative, made from soya, sweetened, flavoured fortified with vitamins and calcium	йогурт соевый сладкий ароматизированный с витаминами и кальцием
+bls:H845000	Plant-based cream alternative, made from soya (for boiling and refining)	сливки соевые для готовки
+bls:H861000	Tofu	тофу
+bls:H861032	Tofu poached	тофу отварной
+bls:H861042	Tofu braised without fat	тофу припущенный
+bls:H861062	Tofu baked	тофу запечённый
+bls:H861082	Tofu fried without fat (pan)	тофу жареный без масла
+bls:H861100	Silken tofu	тофу шёлковый
+bls:H861132	Silken tofu poached	тофу шёлковый отварной
+bls:H862200	Miso/soya bean paste	мисо
+bls:H880100	Sunflower seed spread	намазка из семечек подсолнечника
+bls:H880200	Peanut butter	арахисовое масло
+bls:H882000	Plant-based cheese alternative, cashew-based, vegan	сыр веганский из кешью
+bls:H882100	Plant-based soft cream cheese alternative, almond-based, vegan	крем-сыр веганский из миндаля
+bls:H900900	Haricot beans in tomato sauce, canned	фасоль в томатном соусе консервированная
+bls:H910200	Tofu burgers fried without fat (pan)	котлеты из тофу жареные без масла
+bls:H910300	Vegetarian bratwurst (made from tofu and wheat protein)	колбаски вегетарианские из тофу
+bls:H910400	Vegan schnitzel	шницель веганский
+bls:H910500	Vegetarian Vienna sausages	сосиски вегетарианские
+bls:H923900	Soya Bolognese, canned	соевое болоньезе консервированное
+bls:H926100	Soya burgers fried without fat (pan)	котлеты соевые жареные без масла
+bls:H930000	Vegan cold cuts alternative	колбасные ломтики веганские
+bls:H930100	Soya spreadable sausage alternative, vegan	колбаса-паста соевая веганская
+bls:H930200	Vegetarian cold cuts alternative, with egg	колбасные ломтики вегетарианские с яйцом
+bls:H960000	Hummus/chickpea puree	хумус
+bls:K110100	Potatoe peeled, raw	картофель очищенный сырой
+bls:K110132	Potatoe peeled, boiled	картофель очищенный варёный
+bls:K110142	Potatoe peeled, braised without fat	картофель очищенный припущенный
+bls:K110143	Potatoe peeled, pressure-steamed	картофель очищенный в скороварке
+bls:K110162	Potatoe peeled, baked	картофель очищенный запечённый
+bls:K110182	Potatoe peeled, fried without fat (pan)	картофель очищенный жареный без масла
+bls:K110902	Potatoe peeled, boiled, canned, drained	картофель очищенный варёный консервированный слитый
+bls:K120100	Potatoe unpeeled, raw	картофель в кожуре сырой
+bls:K120134	Potatoe unpeeled, boiled	картофель в мундире
+bls:K120164	Potatoe unpeeled, baked	картофель в мундире запечённый
+bls:K120184	Potatoe unpeeled, fried without fat (pan)	картофель в кожуре жареный без масла
+bls:K120200	Potatoe unpeeled, deep-frozen	картофель в кожуре замороженный
+bls:K120264	Potatoe unpeeled, deep-frozen, baked	картофель в кожуре замороженный запечённый
+bls:K130200	Potato chips/french fries, deep-frozen	картофель фри замороженный
+bls:K130262	Potato chips/french fries, deep-frozen, baked	картофель фри замороженный запечённый
+bls:K130362	Potato chips/french fries, deep-frozen, baked, salted	картофель фри замороженный запечённый солёный
+bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	картофель фри замороженный жареный во фритюре
+bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	картофель фри замороженный жареный во фритюре солёный
+bls:K213000	Potatoes mashed instant powder	пюре картофельное порошковое
+bls:K230000	Potato starch (potato flour)	крахмал картофельный
+bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	клёцки картофельные из сырого картофеля сухие
+bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	клёцки картофельные из варёного картофеля сухие
+bls:K241200	Potato dumpling half and half, deep-frozen	клёцки картофельные полусырые замороженные
+bls:K241232	Potato dumpling half and half, deep-frozen, poached	клёцки картофельные полусырые замороженные отварные
+bls:K260200	Potato pancakes deep-frozen	драники замороженные
+bls:K260262	Potato pancakes deep-frozen, baked	драники замороженные запечённые
+bls:K260282	Potato pancakes deep-frozen, fried without fat (pan)	драники замороженные жареные без масла
+bls:K260292	Potato pancakes deep-frozen, deep-fried	драники замороженные жареные во фритюре
+bls:K270000	Gnocchi raw	ньокки сырые
+bls:K270022	Gnocchi steamed	ньокки на пару
+bls:K270032	Gnocchi boiled	ньокки варёные
+bls:K270062	Gnocchi boiled, baked	ньокки варёные запечённые
+bls:K270082	Gnocchi boiled, fried without fat (pan)	ньокки варёные жареные без масла
+bls:K271000	Gnocchi deep-frozen	ньокки замороженные
+bls:K271032	Gnocchi deep-frozen, boiled	ньокки замороженные варёные
+bls:K280100	Potato crisps/potato chips (various types)	чипсы картофельные
+bls:K280200	Potato sticks	картофельные стики
+bls:K282200	Potato croquettes deep-frozen	крокеты картофельные замороженные
+bls:K282262	Potato croquettes deep-frozen, baked	крокеты картофельные замороженные запечённые
+bls:K282292	Potato croquettes deep-frozen, deep-fried	крокеты картофельные замороженные жареные во фритюре
+bls:K290100	Potato crisps/potato chips, calorie-reduced	чипсы картофельные облегчённые
+bls:K311200	Potato pockets with cream cheese filling, deep-frozen	картофельные конвертики с крем-сыром замороженные
+bls:K311262	Potato pockets with cream cheese filling, deep-frozen, baked	картофельные конвертики с крем-сыром замороженные запечённые
+bls:K311282	Potato pockets with cream cheese filling, deep-frozen, fried without fat (pan)	картофельные конвертики с крем-сыром замороженные жареные без масла
+bls:K311292	Potato pockets with cream cheese filling, deep-frozen, deep-fried	картофельные конвертики с крем-сыром замороженные жареные во фритюре
+bls:K391200	Potato rösti (fried grated potatoes) deep-frozen	рёшти замороженный
+bls:K391262	Potato rösti (fried grated potatoes) deep-frozen, baked	рёшти замороженный запечённый
+bls:K391282	Potato rösti (fried grated potatoes) deep-frozen, fried without fat (pan)	рёшти замороженный жареный без масла
+bls:K391292	Potato rösti (fried grated potatoes) deep-frozen, deep-fried	рёшти замороженный жареный во фритюре
+bls:K392200	Potato rösti with bacon, deep-frozen	рёшти с беконом замороженный
+bls:K392262	Potato rösti with bacon, deep-frozen, baked	рёшти с беконом замороженный запечённый
+bls:K392282	Potato rösti with bacon, deep-frozen, fried without fat (pan)	рёшти с беконом замороженный жареный без масла
+bls:K392292	Potato rösti with bacon, deep-frozen, deep-fried	рёшти с беконом замороженный жареный во фритюре
+bls:K410100	Manioc/cassava, raw	маниок сырой
+bls:K410162	Manioc/cassava, baked	маниок запечённый
+bls:K410182	Manioc/cassava, fried without fat (pan)	маниок жареный без масла
+bls:K410432	Manioc/cassava, boiled	маниок варёный
 bls:K420100	Batata/sweet potato, raw	батат сырой
+bls:K420132	Batata/sweet potato, boiled	батат варёный
+bls:K420162	Batata/sweet potato, baked	батат запечённый
+bls:K420182	Batata/sweet potato, fried without fat (pan)	батат жареный без масла
+bls:K420192	Batata/sweet potato, deep-fried, salted	батат жареный во фритюре солёный
+bls:K430100	Jerusalem artichoke/topinambur, raw	топинамбур сырой
+bls:K430132	Jerusalem artichoke/topinambur, boiled	топинамбур варёный
+bls:K430162	Jerusalem artichoke/topinambur, baked	топинамбур запечённый
+bls:K430182	Jerusalem artichoke/topinambur, fried without fat (pan)	топинамбур жареный без масла
+bls:K440100	Yam raw	ямс сырой
+bls:K440132	Yam boiled	ямс варёный
+bls:K440162	Yam baked	ямс запечённый
+bls:K440182	Yam fried without fat (pan)	ямс жареный без масла
+bls:K512000	Tapioca (granulated cassava starch)	тапиока
+bls:K550000	Arrowroot flour	мука аррорут
+bls:K701100	Button mushroom raw	шампиньоны сырые
+bls:K701132	Button mushroom boiled	шампиньоны варёные
+bls:K701142	Button mushroom braised without fat	шампиньоны припущенные
+bls:K701152	Button mushroom stewed	шампиньоны тушёные
+bls:K701162	Button mushroom baked	шампиньоны запечённые
+bls:K701172	Button mushroom grilled	шампиньоны на гриле
+bls:K701182	Button mushroom fried without fat (pan)	шампиньоны жареные без масла
+bls:K701200	Button mushroom deep-frozen	шампиньоны замороженные
+bls:K701242	Button mushroom deep-frozen, stewed	шампиньоны замороженные тушёные
+bls:K701262	Button mushroom deep-frozen, baked	шампиньоны замороженные запечённые
+bls:K701282	Button mushroom deep-frozen, fried without fat (pan)	шампиньоны замороженные жареные без масла
+bls:K701400	Button mushroom dried	шампиньоны сушёные
+bls:K701432	Buttom mushroom dried, boiled	шампиньоны сушёные варёные
+bls:K701502	Button mushroom grilled, in oil, canned, drained	шампиньоны жареные на гриле в масле консервированные слитые
+bls:K701902	Button mushroom canned, drained	шампиньоны консервированные слитые
+bls:K702100	Black truffle (Perigord black truffle) raw	трюфель чёрный сырой
+bls:K702152	Black truffle (Perigord black truffle) stewed	трюфель чёрный тушёный
+bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	трюфель чёрный жареный без масла
 bls:M176800	Creme fraiche 30 % fat	крем-фреш 30 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	йогурт обезжиренный без лактозы
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	сливочный сыр лёгкий (10 % жира в сухом веществе)

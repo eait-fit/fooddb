@@ -1840,13 +1840,218 @@ bls:H150400	Coconut meat, grated, dried	coco rallado seco
 bls:H151000	Coconut water (liquid from coconuts)	agua de coco
 bls:H154000	Coconut milk	leche de coco
 bls:H160100	Pecan	pacana
+bls:H160600	Pecan roasted without fat	pacana tostada
+bls:H170100	Cashew nut	anacardo
+bls:H170600	Cashew nut roasted with fat	anacardo tostado en aceite
+bls:H170610	Cashew nut roasted without fat	anacardo tostado
+bls:H170700	Cashew nut roasted with fat, salted	anacardo tostado en aceite salado
+bls:H180100	Brazil nut	nuez de Brasil
+bls:H180610	Brazil nut roasted without fat	nuez de Brasil tostada
+bls:H190100	Macadamia nut	macadamia
+bls:H190600	Macadamia nut roasted without fat	macadamia tostada
+bls:H190700	Macadamia nut roasted without fat, salted	macadamia tostada salada
+bls:H210100	Sweet almond	almendra
+bls:H210200	Sweet almond blanched	almendra blanqueada
+bls:H210400	Sweet almond crushed	almendra molida
+bls:H210600	Sweet almond roasted without fat	almendra tostada
 bls:H210710	Sweet almond roasted with fat, salted	almendras tostadas saladas
+bls:H212800	Sweet almond butter (100 % pure)	crema de almendras pura
+bls:H220100	Bitter almond	almendra amarga
+bls:H230100	Sweet chestnut	castaña
+bls:H230132	Sweet chestnut boiled	castaña cocida
+bls:H230162	Sweet chestnut baked	castaña asada
+bls:H230172	Sweet chestnut grilled	castaña a la parrilla
+bls:H230182	Sweet chestnut fried without fat (pan)	castaña a la plancha
+bls:H230400	Sweet chestnut flour	harina de castaña
+bls:H250100	Pistachio nut	pistachos
+bls:H250600	Pistachio nut roasted without fat	pistachos tostados
+bls:H250700	Pistachio nut roasted without fat, salted	pistachos tostados salados
+bls:H310100	Pumpkin seed	pipas de calabaza
 bls:H310600	Pumpkin seed roasted without fat	semillas de calabaza tostadas
+bls:H320100	Pine nut	piñones
+bls:H320600	Pine nut roasted without fat	piñones tostados
+bls:H410100	Linseed/flax seed	semillas de lino
+bls:H410400	Linseed/flax seed, ground	semillas de lino molidas
+bls:H410600	Linseed/flax seed, roasted without fat	semillas de lino tostadas
+bls:H420100	Sesame seed	sésamo
+bls:H420610	Sesame seeds roasted without fat	sésamo tostado
+bls:H430100	Sunflower seed	pipas de girasol
+bls:H430610	Sunflower seeds roasted without fat	pipas de girasol tostadas
+bls:H450100	Poppy seed	semillas de amapola
+bls:H450400	Poppy seed ground	semillas de amapola molidas
+bls:H480100	Chia seeds	semillas de chía
+bls:H510802	Olives green, pickled, drained	aceitunas verdes en vinagre escurridas
+bls:H510900	Olives green, filled with sweet pepper paste, pickled, drained	aceitunas verdes rellenas de pimiento escurridas
+bls:H511900	Olives green, filled with almonds, pickled, drained	aceitunas verdes rellenas de almendra escurridas
+bls:H520800	Olives blackened, in brine, drained	aceitunas negras en salmuera escurridas
+bls:H610100	Bamboo shoots raw	brotes de bambú en crudo
+bls:H610132	Bamboo shoots boiled	brotes de bambú cocidos
+bls:H610182	Bamboo shoots fried without fat (pan)	brotes de bambú a la plancha
+bls:H610902	Bamboo shoots canned, drained	brotes de bambú en conserva, escurridos
+bls:H620100	Soya bean sprouts raw	brotes de soja en crudo
 bls:H620902	Soya bean sprouts canned, drained	brotes de soja en conserva
+bls:H640100	Lucerne/alfalfa sprouts, raw	brotes de alfalfa en crudo
+bls:H650100	Mung bean sprouts raw	brotes de mungo en crudo
+bls:H650902	Mung bean sprouts canned, drained	brotes de mungo en conserva, escurridos
+bls:H662100	Lentils sprouted raw	lentejas germinadas en crudo
+bls:H702100	Cowpea/black-eyed pea, mature	carillas secas
+bls:H702132	Cowpea/black-eyed pea, mature, boiled	carillas secas cocidas
+bls:H702902	Cowpea/black-eyed pea, mature, canned, drained	carillas en conserva, escurridas
+bls:H710400	Pea flour	harina de guisantes
+bls:H720400	Chickpea flour	harina de garbanzo
+bls:H720902	Chickpea mature, canned, drained	garbanzos en conserva, escurridos
+bls:H725100	Lentil mature	lentejas
 bls:H730000	Lentil red mature	lentejas rojas secas
+bls:H730032	Lentil red, mature, boiled	lentejas rojas cocidas
+bls:H730132	Lentil mature, boiled	lentejas cocidas
+bls:H730400	Lentil flour	harina de lentejas
+bls:H730902	Lentil mature, canned, drained	lentejas en conserva, escurridas
+bls:H731400	Lupin flour	harina de altramuz
+bls:H739400	Haricot bean mature	alubias blancas secas
+bls:H740132	Haricot bean mature, boiled	alubias blancas cocidas
+bls:H740902	Haricot bean mature, canned, drained	alubias blancas en conserva, escurridas
+bls:H742100	Kidney bean mature	alubias rojas secas
+bls:H742132	Kidney bean mature, boiled	alubias rojas cocidas
+bls:H742902	Kidney bean mature, canned, drained	alubias rojas en conserva, escurridas
+bls:H750100	Broad bean mature	habas secas
+bls:H750132	Broad bean mature, boiled	habas secas cocidas
+bls:H760600	Soya bean mature (soya kernel) roasted without fat	soja tostada
+bls:H764400	Soya flour full fat	harina de soja entera
+bls:H765000	Plant-based mince, made from texturised soya protein, plain, dry	soja texturizada seca
 bls:H765082	Plant-based mince, made from texturised soya protein, plain, soaked, fried without fat (pan)	soja texturizada hidratada a la plancha
+bls:H770100	Mung bean mature	judías mungo secas
+bls:H770132	Mung bean mature, boiled	judías mungo cocidas
+bls:H800000	Almond drink unsweetened	bebida de almendra sin azúcar
+bls:H800100	Almond drink unsweetened, fortified with vitamins and calcium	bebida de almendra sin azúcar con vitaminas y calcio
+bls:H800200	Almond drink sweetened, flavoured	bebida de almendra azucarada aromatizada
+bls:H800300	Almond drink sweetened, flavoured, fortified with calcium	bebida de almendra azucarada aromatizada con calcio
+bls:H800400	Almond drink sweetened, flavoured, fortified with vitamins and calcium	bebida de almendra azucarada aromatizada con vitaminas y calcio
+bls:H810000	Fruit and nut mix	mezcla de frutos secos
+bls:H810100	Peanut roasted, crispy coated	cacahuetes japoneses
+bls:H841100	Soya drink unsweetened	bebida de soja sin azúcar
+bls:H841400	Soya drink unsweetened, fortified with vitamins and calcium	bebida de soja sin azúcar con vitaminas y calcio
 bls:H842400	Soya drink sweetened, flavoured	bebida de soja con sabor, azucarada
+bls:H842600	Soya drink sweetened, flavoured, fortified with vitamins and calcium	bebida de soja azucarada aromatizada con vitaminas y calcio
+bls:H843200	Plant-based dessert/pudding alternative	postre vegetal
+bls:H843300	Plant-based dessert/pudding alternative, fortified with vitamins and calcium	postre vegetal con vitaminas y calcio
+bls:H844000	Plant-based yogurt alternative, made from soya, unsweetened	yogur de soja sin azúcar
+bls:H844100	Plant-based yogurt alternative, made from soya, unsweetened, fortified with vitamins and calcium	yogur de soja sin azúcar con vitaminas y calcio
+bls:H844400	Plant-based yogurt alternative, made from soya, sweetened, flavoured	yogur de soja azucarado aromatizado
+bls:H844500	Plant-based yogurt alternative, made from soya, sweetened, flavoured fortified with vitamins and calcium	yogur de soja azucarado aromatizado con vitaminas y calcio
+bls:H845000	Plant-based cream alternative, made from soya (for boiling and refining)	nata de soja para cocinar
+bls:H861000	Tofu	tofu
+bls:H861032	Tofu poached	tofu escalfado
+bls:H861042	Tofu braised without fat	tofu estofado sin grasa
+bls:H861062	Tofu baked	tofu al horno
+bls:H861082	Tofu fried without fat (pan)	tofu a la plancha
+bls:H861100	Silken tofu	tofu sedoso
+bls:H861132	Silken tofu poached	tofu sedoso escalfado
+bls:H862200	Miso/soya bean paste	miso
+bls:H880100	Sunflower seed spread	crema de pipas de girasol
+bls:H880200	Peanut butter	crema de cacahuete
+bls:H882000	Plant-based cheese alternative, cashew-based, vegan	queso vegano de anacardos
+bls:H882100	Plant-based soft cream cheese alternative, almond-based, vegan	queso crema vegano de almendras
+bls:H900900	Haricot beans in tomato sauce, canned	alubias en salsa de tomate en conserva
+bls:H910200	Tofu burgers fried without fat (pan)	hamburguesas de tofu a la plancha
+bls:H910300	Vegetarian bratwurst (made from tofu and wheat protein)	salchichas vegetarianas de tofu
+bls:H910400	Vegan schnitzel	escalope vegano
+bls:H910500	Vegetarian Vienna sausages	salchichas vienesas vegetarianas
+bls:H923900	Soya Bolognese, canned	bolognesa de soja en conserva
+bls:H926100	Soya burgers fried without fat (pan)	hamburguesas de soja a la plancha
+bls:H930000	Vegan cold cuts alternative	fiambre vegano
+bls:H930100	Soya spreadable sausage alternative, vegan	salchicha para untar de soja vegana
+bls:H930200	Vegetarian cold cuts alternative, with egg	fiambre vegetariano con huevo
+bls:H960000	Hummus/chickpea puree	hummus
+bls:K110100	Potatoe peeled, raw	patata pelada en crudo
+bls:K110132	Potatoe peeled, boiled	patata pelada cocida
+bls:K110142	Potatoe peeled, braised without fat	patata pelada estofada sin grasa
+bls:K110143	Potatoe peeled, pressure-steamed	patata pelada en olla a presión
+bls:K110162	Potatoe peeled, baked	patata pelada al horno
+bls:K110182	Potatoe peeled, fried without fat (pan)	patata pelada a la plancha
+bls:K110902	Potatoe peeled, boiled, canned, drained	patata pelada cocida en conserva, escurrida
+bls:K120100	Potatoe unpeeled, raw	patata con piel en crudo
+bls:K120134	Potatoe unpeeled, boiled	patata cocida con piel
+bls:K120164	Potatoe unpeeled, baked	patata asada con piel
+bls:K120184	Potatoe unpeeled, fried without fat (pan)	patata con piel a la plancha
+bls:K120200	Potatoe unpeeled, deep-frozen	patata con piel congelada
+bls:K120264	Potatoe unpeeled, deep-frozen, baked	patata con piel congelada asada
+bls:K130200	Potato chips/french fries, deep-frozen	patatas fritas congeladas
+bls:K130262	Potato chips/french fries, deep-frozen, baked	patatas fritas congeladas al horno
+bls:K130362	Potato chips/french fries, deep-frozen, baked, salted	patatas fritas congeladas al horno saladas
+bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	patatas fritas congeladas fritas
+bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	patatas fritas congeladas fritas saladas
+bls:K213000	Potatoes mashed instant powder	puré de patatas en polvo
+bls:K230000	Potato starch (potato flour)	fécula de patata
+bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	bolas de patata de patata cruda en polvo
+bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	bolas de patata de patata cocida en polvo
+bls:K241200	Potato dumpling half and half, deep-frozen	bolas de patata mixtas congeladas
+bls:K241232	Potato dumpling half and half, deep-frozen, poached	bolas de patata mixtas congeladas escalfadas
+bls:K260200	Potato pancakes deep-frozen	tortitas de patata congeladas
+bls:K260262	Potato pancakes deep-frozen, baked	tortitas de patata congeladas al horno
+bls:K260282	Potato pancakes deep-frozen, fried without fat (pan)	tortitas de patata congeladas a la plancha
+bls:K260292	Potato pancakes deep-frozen, deep-fried	tortitas de patata congeladas fritas
+bls:K270000	Gnocchi raw	ñoquis en crudo
+bls:K270022	Gnocchi steamed	ñoquis al vapor
+bls:K270032	Gnocchi boiled	ñoquis cocidos
+bls:K270062	Gnocchi boiled, baked	ñoquis cocidos al horno
+bls:K270082	Gnocchi boiled, fried without fat (pan)	ñoquis cocidos a la plancha
+bls:K271000	Gnocchi deep-frozen	ñoquis congelados
+bls:K271032	Gnocchi deep-frozen, boiled	ñoquis congelados cocidos
+bls:K280100	Potato crisps/potato chips (various types)	patatas fritas de bolsa
+bls:K280200	Potato sticks	palitos de patata
+bls:K282200	Potato croquettes deep-frozen	croquetas de patata congeladas
+bls:K282262	Potato croquettes deep-frozen, baked	croquetas de patata congeladas al horno
+bls:K282292	Potato croquettes deep-frozen, deep-fried	croquetas de patata congeladas fritas
+bls:K290100	Potato crisps/potato chips, calorie-reduced	patatas fritas de bolsa ligeras
+bls:K311200	Potato pockets with cream cheese filling, deep-frozen	bolsitas de patata con queso crema congeladas
+bls:K311262	Potato pockets with cream cheese filling, deep-frozen, baked	bolsitas de patata con queso crema congeladas al horno
+bls:K311282	Potato pockets with cream cheese filling, deep-frozen, fried without fat (pan)	bolsitas de patata con queso crema congeladas a la plancha
+bls:K311292	Potato pockets with cream cheese filling, deep-frozen, deep-fried	bolsitas de patata con queso crema congeladas fritas
+bls:K391200	Potato rösti (fried grated potatoes) deep-frozen	rösti congelado
+bls:K391262	Potato rösti (fried grated potatoes) deep-frozen, baked	rösti congelado al horno
+bls:K391282	Potato rösti (fried grated potatoes) deep-frozen, fried without fat (pan)	rösti congelado a la plancha
+bls:K391292	Potato rösti (fried grated potatoes) deep-frozen, deep-fried	rösti congelado frito
+bls:K392200	Potato rösti with bacon, deep-frozen	rösti con beicon congelado
+bls:K392262	Potato rösti with bacon, deep-frozen, baked	rösti con beicon congelado al horno
+bls:K392282	Potato rösti with bacon, deep-frozen, fried without fat (pan)	rösti con beicon congelado a la plancha
+bls:K392292	Potato rösti with bacon, deep-frozen, deep-fried	rösti con beicon congelado frito
+bls:K410100	Manioc/cassava, raw	yuca en crudo
+bls:K410162	Manioc/cassava, baked	yuca al horno
+bls:K410182	Manioc/cassava, fried without fat (pan)	yuca a la plancha
+bls:K410432	Manioc/cassava, boiled	yuca cocida
 bls:K420100	Batata/sweet potato, raw	batata cruda
+bls:K420132	Batata/sweet potato, boiled	boniato cocido
+bls:K420162	Batata/sweet potato, baked	boniato asado
+bls:K420182	Batata/sweet potato, fried without fat (pan)	boniato a la plancha
+bls:K420192	Batata/sweet potato, deep-fried, salted	boniato frito salado
+bls:K430100	Jerusalem artichoke/topinambur, raw	alcachofa de Jerusalén en crudo
+bls:K430132	Jerusalem artichoke/topinambur, boiled	alcachofa de Jerusalén cocida
+bls:K430162	Jerusalem artichoke/topinambur, baked	alcachofa de Jerusalén al horno
+bls:K430182	Jerusalem artichoke/topinambur, fried without fat (pan)	alcachofa de Jerusalén a la plancha
+bls:K440100	Yam raw	ñame en crudo
+bls:K440132	Yam boiled	ñame cocido
+bls:K440162	Yam baked	ñame asado
+bls:K440182	Yam fried without fat (pan)	ñame a la plancha
+bls:K512000	Tapioca (granulated cassava starch)	tapioca
+bls:K550000	Arrowroot flour	harina de arrurruz
+bls:K701100	Button mushroom raw	champiñones en crudo
+bls:K701132	Button mushroom boiled	champiñones cocidos
+bls:K701142	Button mushroom braised without fat	champiñones estofados sin grasa
+bls:K701152	Button mushroom stewed	champiñones estofados
+bls:K701162	Button mushroom baked	champiñones al horno
+bls:K701172	Button mushroom grilled	champiñones a la parrilla
+bls:K701182	Button mushroom fried without fat (pan)	champiñones a la plancha
+bls:K701200	Button mushroom deep-frozen	champiñones congelados
+bls:K701242	Button mushroom deep-frozen, stewed	champiñones congelados estofados
+bls:K701262	Button mushroom deep-frozen, baked	champiñones congelados al horno
+bls:K701282	Button mushroom deep-frozen, fried without fat (pan)	champiñones congelados a la plancha
+bls:K701400	Button mushroom dried	champiñones secos
+bls:K701432	Buttom mushroom dried, boiled	champiñones secos cocidos
+bls:K701502	Button mushroom grilled, in oil, canned, drained	champiñones a la parrilla en aceite en conserva, escurridos
+bls:K701902	Button mushroom canned, drained	champiñones en conserva, escurridos
+bls:K702100	Black truffle (Perigord black truffle) raw	trufa negra en crudo
+bls:K702152	Black truffle (Perigord black truffle) stewed	trufa negra estofada
+bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	trufa negra a la plancha
 bls:M176800	Creme fraiche 30 % fat	crème fraîche 30 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	yogur desnatado sin lactosa
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero
