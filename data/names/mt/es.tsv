@@ -7724,10 +7724,207 @@ fdc:175008	Pancakes, plain, dry mix, incomplete, prepared	tortitas de mezcla
 fdc:175009	Pancakes, plain, prepared from recipe	tortitas caseras
 fdc:175010	Pancakes, whole-wheat, dry mix, incomplete, prepared	tortitas integrales de mezcla
 fdc:175011	Pie, apple, commercially prepared, enriched flour	tarta de manzana
+fdc:175012	Pie, apple, prepared from recipe	tarta de manzana casera
+fdc:175013	Pie, banana cream, prepared from mix, no-bake type	tarta de plátano y nata de mezcla
+fdc:175014	Pie, chocolate creme, commercially prepared	tarta de crema de chocolate
+fdc:175015	Pie, chocolate mousse, prepared from mix, no-bake type	tarta de mousse de chocolate de mezcla
+fdc:175016	Pie, coconut creme, commercially prepared	tarta de crema de coco
+fdc:175017	Pie, coconut cream, prepared from mix, no-bake type	tarta de coco de mezcla
+fdc:175018	Pie, lemon meringue, prepared from recipe	tarta de limón con merengue casera
+fdc:175019	Pie, mince, prepared from recipe	tarta de picadillo de frutas casera
+fdc:175020	Pie, peach	tarta de melocotón
+fdc:175021	Pie, pecan, commercially prepared	tarta de pacanas
+fdc:175022	Pie crust, standard-type, dry mix	mezcla para masa de tarta seca
+fdc:175023	Pie crust, standard-type, dry mix, prepared, baked	masa de tarta de mezcla
+fdc:175024	Pie crust, standard-type, frozen, ready-to-bake, enriched	masa de tarta congelada
+fdc:175025	Pie crust, standard-type, frozen, ready-to-bake, enriched, baked	masa de tarta congelada horneada
+fdc:175026	Pie crust, standard-type, prepared from recipe, baked	masa de tarta casera horneada
+fdc:175027	Rolls, dinner, egg	panecillos de huevo
+fdc:175028	Rolls, dinner, oat bran	panecillos con salvado de avena
+fdc:175029	Rolls, dinner, rye	panecillos de centeno
+fdc:175030	Rolls, dinner, wheat	panecillos de trigo
+fdc:175031	Rolls, hard (includes kaiser)	bollos
+fdc:175032	Strudel, apple	strudel de manzana
+fdc:175033	Sweet rolls, cheese	rollos dulces de queso
+fdc:175034	Sweet rolls, cinnamon, commercially prepared with raisins	rollos dulces de canela con pasas
 fdc:1750340	Apples, fuji, with skin, raw	manzana fuji
-fdc:175042	Leavening agents, yeast, baker's, compressed	levadura prensada
-fdc:175154	Fish, trout, rainbow, wild, raw	trucha arcoíris silvestre cruda
-fdc:175169	Crustaceans, crayfish, mixed species, farmed, raw	cangrejos de río crudos
+fdc:175035	Toaster pastries, fruit (includes apple, blueberry, cherry, strawberry)	pastelitos para tostadora de fruta
+fdc:175036	Tortillas, ready-to-bake or -fry, corn	tortillas de maíz
+fdc:175037	Tortillas, ready-to-bake or -fry, flour, refrigerated	tortillas de trigo refrigeradas
+fdc:175038	Waffles, plain, frozen, ready-to-heat	gofres congelados
+fdc:175039	Waffles, plain, prepared from recipe	gofres caseros
+fdc:175040	Leavening agents, baking soda	bicarbonato
+fdc:175041	Leavening agents, cream of tartar	cremor tártaro
+fdc:175042	Leavening agents, yeast, baker's, compressed	levadura fresca
+fdc:175043	Leavening agents, yeast, baker's, active dry	levadura seca
+fdc:175044	Bread, rice bran, toasted	pan de salvado de arroz tostado
+fdc:175045	Muffins, blueberry, toaster-type, toasted	muffins de arándanos para tostadora tostados
+fdc:175046	Muffins, wheat bran, toaster-type with raisins, toasted	muffins de salvado de trigo con pasas para tostadora tostados
+fdc:175047	Pancakes, buttermilk, prepared from recipe	tortitas de suero caseras
+fdc:175048	Waffles, plain, frozen, ready -to-heat, toasted	gofres congelados tostados
+fdc:175049	Bagels, plain, enriched, without calcium propionate (includes onion, poppy, sesame)	bagels
+fdc:175050	Bagels, plain, unenriched, with calcium propionate (includes onion, poppy, sesame)	bagels
+fdc:175051	Bagels, plain, unenriched, without calcium propionate(includes onion, poppy, sesame)	bagels
+fdc:175052	Cake, coffeecake, cinnamon with crumb topping, commercially prepared, unenriched	pastel de café de canela con crumble
+fdc:175053	Cake, pound, commercially prepared, other than all butter, unenriched	bizcocho de mantequilla
+fdc:175054	Cake, pudding-type, white, unenriched, dry mix	mezcla para pastel blanco seca
+fdc:175055	Cake, yellow, unenriched, dry mix	mezcla para pastel amarillo seca
+fdc:175056	Crackers, saltines, low salt (includes oyster, soda, soup)	galletas de soda bajas en sal
+fdc:175057	Crackers, saltines, unsalted tops (includes oyster, soda, soup)	galletas de soda sin sal
+fdc:175058	Crackers, standard snack-type, regular, low salt	galletas saladas bajas en sal
+fdc:175059	Crackers, wheat, low salt	galletas de trigo bajas en sal
+fdc:175060	Crackers, cheese, low sodium	galletas de queso bajas en sodio
+fdc:175061	Danish pastry, raspberry, unenriched	dulce danés de frambuesa
+fdc:175062	Doughnuts, yeast-leavened, glazed, unenriched (includes honey buns)	rosquillas de levadura glaseadas
+fdc:175063	English muffins, plain, enriched, without calcium propionate(includes sourdough)	muffins ingleses
+fdc:175064	Pie, fried pies, lemon	pastelitos fritos de limón
+fdc:175065	Pie crust, standard-type, frozen, ready-to-bake, unenriched	masa de tarta congelada
+fdc:175066	Popovers, dry mix, unenriched	mezcla para bollos huecos seca
+fdc:175067	Taco shells, baked, without added salt	tortillas de taco horneadas sin sal
+fdc:175068	Crackers, saltines, fat-free, low-sodium	galletas de soda sin grasa bajas en sal
+fdc:175069	Tart, breakfast, low fat	tartaleta de desayuno baja en grasa
+fdc:175070	Archway Home Style Cookies, Sugar Free Oatmeal	galletas de avena sin azúcar Archway
+fdc:175071	Archway Home Style Cookies, Chocolate Chip Ice Box	galletas con pepitas de chocolate de nevera Archway
+fdc:175072	Archway Home Style Cookies, Iced Oatmeal	galletas de avena glaseadas Archway
+fdc:175073	Archway Home Style Cookies, Molasses	galletas de melaza Archway
+fdc:175074	Archway Home Style Cookies, Oatmeal	galletas de avena Archway
+fdc:175075	Archway Home Style Cookies, Oatmeal Raisin	galletas de avena con pasas Archway
+fdc:175076	Archway Home Style Cookies, Strawberry Filled	galletas rellenas de fresa Archway
+fdc:175077	Archway Home Style Cookies, Reduced Fat Ginger Snaps	galletas de jengibre bajas en grasa Archway
+fdc:175078	Artificial Blueberry Muffin Mix, dry	mezcla para muffins con aroma de arándanos seca
+fdc:175079	Kraft, Stove Top Stuffing Mix Chicken Flavor	mezcla para relleno de pollo Stove Top Kraft
+fdc:175080	Martha White Foods, Martha White's Chewy Fudge Brownie Mix, dry	mezcla para brownie Martha White
+fdc:175081	Martha White Foods, Martha White's Buttermilk Biscuit Mix, dry	mezcla para biscotes con suero Martha White
+fdc:175082	Mission Foods, Mission Flour Tortillas, Soft Taco, 8 inch	tortillas de trigo Mission
+fdc:175083	Nabisco, Nabisco Grahams Crackers	galletas graham Nabisco
+fdc:175084	Nabisco, Nabisco Oreo Crunchies, Cookie Crumb Topping	topping de galleta Oreo Nabisco
+fdc:175085	Game meat, deer, cooked, roasted	carne de ciervo asada
+fdc:175086	Game meat, horse, raw	carne de caballo cruda
+fdc:175087	Game meat, horse, cooked, roasted	carne de caballo asada
+fdc:175088	Beverages, tea, instant, lemon, unsweetened	té soluble de limón sin azúcar
+fdc:175089	Beverages, tea, instant, lemon, sweetened, powder	té soluble de limón azucarado en polvo
+fdc:175090	Beverages, tea, instant, lemon, sweetened, prepared with water	té soluble de limón azucarado
+fdc:175091	Beverages, tea, instant, sweetened with sodium saccharin, lemon-flavored, powder	té soluble de limón con sacarina en polvo
+fdc:175092	Beverages, cocoa mix, with aspartame, powder, prepared with water	cacao instantáneo con aspartamo preparado con agua
+fdc:175093	Beverages, carbonated, cola, fast-food cola	cola de grifo
+fdc:175094	Beverages, fruit punch juice drink, frozen concentrate	ponche de frutas concentrado congelado
+fdc:175095	Beverages, fruit punch juice drink, frozen concentrate, prepared with water	ponche de frutas
+fdc:175096	Beverages, water, tap, well	agua de pozo
+fdc:175097	Alcoholic beverage, liqueur, coffee, 53 proof	licor de café 26°
+fdc:175098	Alcoholic beverage, liqueur, coffee with cream, 34 proof	licor de café con nata 17°
+fdc:175099	Beverages, carbonated, low calorie, cola or pepper-type, with aspartame, contains caffeine	cola dietética con aspartamo
+fdc:175100	Beverages, Orange drink, breakfast type, with juice and pulp, frozen concentrate	bebida de naranja de desayuno concentrada congelada
+fdc:175101	Beverages, Orange drink, breakfast type, with juice and pulp, frozen concentrate, prepared with water	bebida de naranja de desayuno
+fdc:175102	Beverages, shake, fast food, strawberry	batido de fresa
+fdc:175103	Beverages, water, tap, municipal	agua del grifo
+fdc:175104	Beverages, The COCA-COLA company, DASANI, water, bottled, non-carbonated	agua Dasani
+fdc:175105	Beverages, orange breakfast drink, ready-to-drink, with added nutrients	bebida de naranja de desayuno enriquecida
+fdc:175106	Beverages, water, bottled, non-carbonated, CALISTOGA	agua Calistoga
+fdc:175107	Beverages, water, bottled, non-carbonated, CRYSTAL GEYSER	agua Crystal Geyser
+fdc:175108	Beverages, COCA-COLA, POWERADE, lemon-lime flavored, ready-to-drink	bebida Powerade limón-lima
+fdc:175109	Beverages, Propel Zero, fruit-flavored, non-carbonated	agua de frutas Propel Zero
+fdc:175110	Beverages, ARIZONA, tea, ready-to-drink, lemon	té de limón Arizona
+fdc:175111	Beverages, LIPTON BRISK, tea, black, ready-to-drink, lemon	té negro de limón Lipton Brisk
+fdc:175112	Alcoholic beverage, wine, dessert, dry	vino de postre seco
+fdc:175113	Carbonated beverage, low calorie, other than cola or pepper, with sodium saccharin, without caffeine	refresco dietético con sacarina sin cafeína
+fdc:175114	Beverages, Cocoa mix, low calorie, powder, with added calcium, phosphorus, aspartame, without added sodium or vitamin A	cacao instantáneo bajo en calorías en polvo
+fdc:175115	Beverages, fruit punch-flavor drink, powder, without added sodium, prepared with water	ponche de frutas en polvo preparado
+fdc:175116	Fish, herring, Atlantic, raw	arenque del Atlántico crudo
+fdc:175117	Fish, herring, Atlantic, cooked, dry heat	arenque del Atlántico asado
+fdc:175118	Fish, herring, Atlantic, pickled	arenque del Atlántico en escabeche
+fdc:175119	Fish, mackerel, Atlantic, raw	caballa del Atlántico cruda
+fdc:175120	Fish, mackerel, Atlantic, cooked, dry heat	caballa del Atlántico asada
+fdc:175121	Fish, mackerel, jack, canned, drained solids	jurel en conserva escurrido
+fdc:175122	Fish, mackerel, king, raw	carite crudo
+fdc:175123	Fish, mullet, striped, raw	liseta cruda
+fdc:175124	Fish, mullet, striped, cooked, dry heat	liseta asada
+fdc:175125	Fish, ocean perch, Atlantic, raw	gallo del Atlántico crudo
+fdc:175126	Fish, ocean perch, Atlantic, cooked, dry heat	gallo del Atlántico asado
+fdc:175127	Fish, pike, northern, cooked, dry heat	lucio asado
+fdc:175128	Fish, pike, walleye, raw	lucioperca cruda
+fdc:175129	Fish, pollock, Atlantic, raw	abadejo del Atlántico crudo
+fdc:175130	Fish, pollock, Alaska, raw (may contain additives to retain moisture)	colín de Alaska crudo
+fdc:175131	Fish, rockfish, Pacific, mixed species, cooked, dry heat	pez roca del Pacífico asado
+fdc:175132	Fish, roe, mixed species, raw	huevas de pescado crudas
+fdc:175133	Fish, roughy, orange, raw	reloj anaranjado crudo
+fdc:175134	Fish, sablefish, raw	bacalao negro crudo
+fdc:175135	Fish, salmon, chum, canned, drained solids with bone	salmón keta en conserva escurrido con espinas
+fdc:175136	Fish, salmon, coho, wild, raw	salmón coho salvaje crudo
+fdc:175137	Fish, salmon, coho, wild, cooked, moist heat	salmón coho salvaje cocido
+fdc:175138	Fish, salmon, pink, raw	salmón rosado crudo
+fdc:175139	Fish, sardine, Atlantic, canned in oil, drained solids with bone	sardina en aceite escurrida con espinas
+fdc:175140	Fish, sardine, Pacific, canned in tomato sauce, drained solids with bone	sardina del Pacífico en salsa de tomate escurrida con espinas
+fdc:175141	Fish, scup, raw	escup crudo
+fdc:175142	Fish, sea bass, mixed species, raw	lubina cruda
+fdc:175143	Fish, shark, mixed species, cooked, batter-dipped and fried	tiburón frito en rebozado
+fdc:175144	Fish, sheepshead, raw	sargo crudo
+fdc:175145	Fish, sheepshead, cooked, dry heat	sargo asado
+fdc:175146	Fish, smelt, rainbow, raw	eperlano crudo
+fdc:175147	Fish, smelt, rainbow, cooked, dry heat	eperlano asado
+fdc:175148	Fish, sturgeon, mixed species, cooked, dry heat	esturión asado
+fdc:175149	Fish, sturgeon, mixed species, smoked	esturión ahumado
+fdc:175150	Fish, sucker, white, raw	matalote blanco crudo
+fdc:175151	Fish, sunfish, pumpkin seed, raw	pez sol crudo
+fdc:175152	Fish, tilefish, cooked, dry heat	pez teja asado
+fdc:175153	Fish, trout, mixed species, raw	trucha cruda
+fdc:175154	Fish, trout, rainbow, wild, raw	trucha arcoíris salvaje cruda
+fdc:175155	Fish, trout, rainbow, wild, cooked, dry heat	trucha arcoíris salvaje asada
+fdc:175156	Fish, tuna, fresh, skipjack, raw	listado crudo
+fdc:175157	Fish, tuna, white, canned in oil, drained solids	bonito del norte en aceite escurrido
+fdc:175158	Fish, tuna, white, canned in water, drained solids	bonito del norte al natural escurrido
+fdc:175159	Fish, tuna, fresh, yellowfin, raw	atún de aleta amarilla crudo
+fdc:175160	Fish, tuna salad	ensalada de atún
+fdc:175161	Fish, whiting, mixed species, cooked, dry heat	bacaladilla asada
+fdc:175162	Fish, wolffish, Atlantic, raw	pez lobo del Atlántico crudo
+fdc:175163	Fish, yellowtail, mixed species, raw	rabo crudo
+fdc:175164	Crustaceans, crab, alaska king, raw	cangrejo real de Alaska crudo
+fdc:175165	Fish, catfish, channel, farmed, raw	bagre de canal de piscifactoría crudo
+fdc:175166	Fish, catfish, channel, farmed, cooked, dry heat	bagre de canal de piscifactoría asado
+fdc:175167	Fish, salmon, Atlantic, farmed, raw	salmón atlántico de piscifactoría crudo
+fdc:175168	Fish, salmon, Atlantic, farmed, cooked, dry heat	salmón atlántico de piscifactoría asado
+fdc:175169	Crustaceans, crayfish, mixed species, farmed, raw	cangrejos de río de piscifactoría crudos
+fdc:175170	Crustaceans, crayfish, mixed species, farmed, cooked, moist heat	cangrejos de río de piscifactoría cocidos
+fdc:175171	Mollusks, oyster, eastern, wild, cooked, dry heat	ostra del este salvaje asada
+fdc:175172	Mollusks, oyster, eastern, farmed, raw	ostra del este de vivero cruda
+fdc:175173	Mollusks, oyster, eastern, farmed, cooked, dry heat	ostra del este de vivero asada
+fdc:175174	Salmon, sockeye, canned, total can contents	salmón sockeye en conserva
+fdc:175175	Fish, salmon, pink, canned, drained solids	salmón rosado en conserva escurrido
+fdc:175176	Fish, tilapia, raw	tilapia cruda
+fdc:175177	Fish, tilapia, cooked, dry heat	tilapia asada
+fdc:175178	Fish, cod, Pacific, cooked	bacalao del Pacífico asado
+fdc:175179	Crustaceans, shrimp, raw	gambas crudas
+fdc:175180	Crustaceans, shrimp, cooked	gambas cocidas
+fdc:175181	Fish, trout, brook, raw, New York State	trucha de arroyo cruda
+fdc:175182	Beans, baked, canned, plain or vegetarian	judías al horno en conserva
+fdc:175183	Beans, baked, canned, with beef	judías al horno en conserva con vacuno
+fdc:175184	Beans, baked, canned, with franks	judías al horno en conserva con salchichas
+fdc:175185	Beans, baked, canned, with pork	judías al horno en conserva con cerdo
+fdc:175186	Beans, black turtle, mature seeds, raw	judías negras crudas
+fdc:175187	Beans, black turtle, mature seeds, cooked, boiled, without salt	judías negras cocidas sin sal
+fdc:175188	Beans, black turtle, mature seeds, canned	judías negras en conserva
+fdc:175189	Beans, cranberry (roman), mature seeds, raw	judías borlotti crudas
+fdc:175190	Beans, great northern, mature seeds, raw (Includes foods for USDA's Food Distribution Program)	alubias blancas del norte crudas
+fdc:175191	Beans, great northern, mature seeds, cooked, boiled, without salt	alubias blancas del norte cocidas sin sal
+fdc:175192	Beans, great northern, mature seeds, canned	alubias blancas del norte en conserva
+fdc:175193	Beans, kidney, all types, mature seeds, raw	alubias kidney crudas
+fdc:175194	Beans, kidney, red, mature seeds, cooked, boiled, without salt	alubias rojas cocidas sin sal
+fdc:175195	Beans, kidney, red, mature seeds, canned, solids and liquids	alubias rojas en conserva
+fdc:175196	Beans, kidney, royal red, mature seeds, raw	alubias rojas reales crudas
+fdc:175197	Beans, kidney, royal red, mature seeds, cooked, boiled, without salt	alubias rojas reales cocidas sin sal
+fdc:175198	Beans, pink, mature seeds, cooked, boiled, without salt	alubias rosadas cocidas sin sal
+fdc:175199	Beans, pinto, mature seeds, raw (Includes foods for USDA's Food Distribution Program)	alubias pintas crudas
+fdc:175200	Beans, pinto, mature seeds, cooked, boiled, without salt	alubias pintas cocidas sin sal
+fdc:175201	Beans, pinto, mature seeds, canned, solids and liquids	alubias pintas en conserva
+fdc:175202	Beans, white, mature seeds, raw	alubias blancas crudas
+fdc:175203	Beans, white, mature seeds, cooked, boiled, without salt	alubias blancas cocidas sin sal
+fdc:175204	Beans, white, mature seeds, canned	alubias blancas en conserva
+fdc:175205	Broadbeans (fava beans), mature seeds, raw	habas crudas
+fdc:175206	Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids	garbanzos en conserva
+fdc:175207	Chili with beans, canned	chili con alubias en conserva
+fdc:175208	Cowpeas, catjang, mature seeds, raw	caupí catjang crudo
+fdc:175209	Cowpeas, catjang, mature seeds, cooked, boiled, without salt	caupí catjang cocido sin sal
+fdc:175210	Hyacinth beans, mature seeds, raw	judías egipcias crudas
+fdc:175211	Hyacinth beans, mature seeds, cooked, boiled, without salt	judías egipcias cocidas sin sal
 fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium	alubias rojas en conserva bajas en sal
 fdc:175259	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled	lomo de cordero asado
 fdc:175268	Veal, leg (top round), separable lean and fat, raw	pierna de ternera cruda
