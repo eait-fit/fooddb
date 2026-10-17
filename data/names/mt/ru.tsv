@@ -7124,8 +7124,206 @@ fdc:174408	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separ
 fdc:174409	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, cooked, broiled	бараньи отбивные тазобедренные без кости австралийские постные жир 1/8" на гриле
 fdc:174410	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	баранья нога средний ломтик на кости австралийская с жиром жир 1/8" сырая
 fdc:174411	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	баранья нога средний ломтик на кости австралийская с жиром жир 1/8" на гриле
-fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	грудка индейки сырая с рассолом
-fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	грудка индейки запечённая
+fdc:174412	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, raw	баранья нога средний ломтик на кости австралийская постная жир 1/8" сырая
+fdc:174413	Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, cooked, broiled	баранья корейка австралийская постная жир 1/8" на гриле
+fdc:174414	Lamb, Australian, imported, fresh, rib chop/rack roast, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	баранье каре френч на кости австралийское с жиром жир 1/8" сырое
+fdc:174415	Lamb, Australian, imported, fresh, rib chop, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, grilled	баранья отбивная френч на кости австралийская с жиром жир 1/8" на гриле
+fdc:174416	Lamb, Australian, imported, fresh, rib chop/rack roast, frenched, bone-in, separable lean only, trimmed to 1/8" fat, raw	баранье каре френч на кости австралийское постное жир 1/8" сырое
+fdc:174417	Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, raw	баранья лопатка плечевая часть австралийская с жиром жир 1/8" сырая
+fdc:174418	Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, cooked, braised	баранья лопатка плечевая часть австралийская с жиром жир 1/8" тушёная
+fdc:174419	Lamb, Australian, imported, fresh, shoulder, arm, separable lean only, trimmed to 1/8" fat, raw	баранья лопатка плечевая часть австралийская постная жир 1/8" сырая
+fdc:174420	Lamb, Australian, imported, fresh, shoulder, arm, separable lean only,   trimmed to 1/8" fat, cooked, braised	баранья лопатка плечевая часть австралийская постная жир 1/8" тушёная
+fdc:174421	Game meat , bison, ground, raw	фарш бизона сырой
+fdc:174422	Game meat, bison, ground, cooked, pan-broiled	фарш бизона жареный
+fdc:174423	Game meat , bison, top sirloin, separable lean only, 1" steak, cooked, broiled	стейк из топ-серлоина бизона постный на гриле
+fdc:174424	Game meat, bison, chuck, shoulder clod, separable lean only, cooked, braised	лопатка бизона постная тушёная
+fdc:174425	Game meat, elk, ground, raw	фарш вапити сырой
+fdc:174426	Game meat, elk, ground, cooked, pan-broiled	фарш вапити жареный
+fdc:174427	Game meat, elk, loin, separable lean only, cooked, broiled	корейка вапити постная на гриле
+fdc:174428	Game meat, elk, round, separable lean only, cooked, broiled	огузок вапити постный на гриле
+fdc:174429	Game meat, elk, tenderloin, separable lean only, cooked, broiled	вырезка вапити постная на гриле
+fdc:174430	Game meat, deer, tenderloin, separable lean only, cooked, broiled	вырезка оленины постная на гриле
+fdc:174431	Game meat, deer, top round, separable lean only, 1" steak, cooked, broiled	стейк из верхнего огузка оленины постный на гриле
+fdc:174432	Veal, Australian, shank, fore, bone-in, separable lean only, raw	голяшка телячья передняя на кости австралийская постная сырая
+fdc:174433	Veal, Australian, shank, fore, bone-in, separable lean and fat, raw	голяшка телячья передняя на кости австралийская с жиром сырая
+fdc:174434	Lamb, New Zealand, imported, Intermuscular fat, raw	бараний жир межмышечный новозеландский сырой
+fdc:174435	Lamb, New Zealand, imported, subcutaneous fat, raw	бараний жир подкожный новозеландский сырой
+fdc:174436	Lamb, New Zealand, imported, brains, cooked, soaked and fried	мозги бараньи новозеландские жареные
+fdc:174437	Lamb, New Zealand, imported, brains, raw	мозги бараньи новозеландские сырые
+fdc:174438	Lamb, New Zealand, imported, chump, boneless, separable lean only, raw	бараний окорок новозеландский без кости постный сырой
+fdc:174439	Lamb, New Zealand, imported, kidney, cooked, soaked and fried	почки бараньи новозеландские жареные
+fdc:174440	Lamb, New Zealand, imported, flap, boneless, separable lean only, cooked, braised	баранья брюшина новозеландская без кости постная тушёная
+fdc:174441	Lamb, New Zealand, imported, flap, boneless, separable lean only, raw	баранья брюшина новозеландская без кости постная сырая
+fdc:174442	Lamb, New Zealand, imported, kidney, raw	почки бараньи новозеландские сырые
+fdc:174443	Lamb, New Zealand, imported, heart, cooked, soaked and simmered	сердце баранье новозеландское варёное
+fdc:174444	Lamb, New Zealand, imported, heart, raw	сердце баранье новозеландское сырое
+fdc:174445	Lamb, New Zealand, imported, sweetbread, cooked, soaked and simmered	молочная железа баранья новозеландская варёная
+fdc:174446	Lamb, New Zealand, imported, sweetbread, raw	молочная железа баранья новозеландская сырая
+fdc:174447	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, cooked, slow roasted	баранья нога без кости и голени новозеландская постная запечённая
+fdc:174448	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, raw	баранья нога без кости и голени новозеландская постная сырая
+fdc:174449	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, cooked, braised	бараньи отбивные из лопатки новозеландские постные тушёные
+fdc:174450	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, raw	бараньи отбивные из лопатки новозеландские постные сырые
+fdc:174451	Lamb, New Zealand, imported, loin, boneless, separable lean only, cooked, fast roasted	баранья корейка без кости новозеландская постная запечённая
+fdc:174452	Lamb, New Zealand, imported, loin, boneless, separable lean only, raw	баранья корейка без кости новозеландская постная сырая
+fdc:174453	Lamb, New Zealand, imported, hind-shank, separable lean only, cooked, braised	баранья голяшка задняя новозеландская постная тушёная
+fdc:174454	Lamb, New Zealand, imported, hind-shank, separable lean only, raw	баранья голяшка задняя новозеландская постная сырая
+fdc:174455	Lamb, New Zealand, imported, neck chops, separable lean only, raw	бараньи отбивные шейные новозеландские постные сырые
+fdc:174456	Lamb, New Zealand, imported, rack - fully frenched, separable lean only, raw	баранье каре френч новозеландское постное сырое
+fdc:174457	Lamb, New Zealand, imported, loin chop, separable lean only, cooked, fast fried	баранья отбивная из корейки новозеландская постная жареная
+fdc:174458	Lamb, New Zealand, imported, square-cut shoulder, separable lean only, cooked, slow roasted	баранья лопатка новозеландская постная запечённая
+fdc:174459	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, cooked, fast fried	баранья отбивная из ноги на кости новозеландская постная жареная
+fdc:174460	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, cooked, fast fried	баранья отбивная из ноги на кости новозеландская с жиром жареная
+fdc:174461	Lamb, New Zealand, imported, loin chop, separable lean and fat, cooked, fast fried	баранья отбивная из корейки новозеландская с жиром жареная
+fdc:174462	Lamb, New Zealand, imported, loin saddle, separable lean and fat, cooked, fast roasted	баранья седловина новозеландская с жиром запечённая
+fdc:174463	Lamb, New Zealand, imported, loin saddle, separable lean and fat, raw	баранья седловина новозеландская с жиром сырая
+fdc:174464	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, raw	баранья лопатка рулетом без кости новозеландская с жиром сырая
+fdc:174465	Chicken, capons, giblets, raw	потроха каплуна сырые
+fdc:174466	Chicken, capons, giblets, cooked, simmered	потроха каплуна варёные
+fdc:174467	Duck, domesticated, liver, raw	печень утиная сырая
+fdc:174468	Duck, wild, meat and skin, raw	утка дикая с кожей сырая
+fdc:174469	Duck, wild, breast, meat only, raw	грудка дикой утки без кожи сырая
+fdc:174470	Goose, domesticated, meat and skin, raw	гусь с кожей сырой
+fdc:174471	Guinea hen, meat only, raw	цесарка без кожи сырая
+fdc:174472	Pheasant, raw, meat and skin	фазан с кожей сырой
+fdc:174473	Pheasant, raw, meat only	фазан без кожи сырой
+fdc:174474	Pheasant, breast, meat only, raw	грудка фазана без кожи сырая
+fdc:174475	Squab, (pigeon), meat and skin, raw	голубь с кожей сырой
+fdc:174476	Emu, fan fillet, raw	эму веерное филе сырое
+fdc:174477	Emu, fan fillet, cooked, broiled	эму веерное филе на гриле
+fdc:174478	Emu, flat fillet, raw	эму плоское филе сырое
+fdc:174479	Emu, full rump, raw	эму огузок сырой
+fdc:174480	Emu, top loin, cooked, broiled	эму верхняя корейка на гриле
+fdc:174481	Ostrich, ground, raw	фарш страуса сырой
+fdc:174482	Ostrich, ground, cooked, pan-broiled	фарш страуса жареный
+fdc:174483	Ostrich, fan, raw	страус веерная часть сырой
+fdc:174484	Ostrich, outside leg, raw	страус наружная часть ноги сырая
+fdc:174485	Ostrich, outside strip, raw	страус наружная полоска сырая
+fdc:174486	Ostrich, outside strip, cooked	страус наружная полоска приготовленная
+fdc:174487	Ostrich, oyster, raw	страус медальон сырой
+fdc:174488	Ostrich, tip trimmed, cooked	страус кончик приготовленный
+fdc:174489	Ostrich, top loin, raw	страус верхняя корейка сырая
+fdc:174490	Ostrich, top loin, cooked	страус верхняя корейка приготовленная
+fdc:174491	Chicken, liver, all classes, cooked, pan-fried	печень куриная жареная
+fdc:174492	Turkey, ground, 93% lean, 7% fat, patties, broiled	котлеты из индюшиного фарша 93% постности на гриле
+fdc:174493	Turkey, ground, 85% lean, 15% fat, raw	фарш индюшиный 85% постности сырой
+fdc:174494	Turkey, ground, 85% lean, 15% fat, pan-broiled crumbles	фарш индюшиный 85% постности жареный
+fdc:174495	Turkey, ground, 85% lean, 15% fat, patties, broiled	котлеты из индюшиного фарша 85% постности на гриле
+fdc:174496	Chicken, skin (drumsticks and thighs), cooked, roasted	куриная кожа запечённая
+fdc:174497	Chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised	куриная голень с кожей тушёная
+fdc:174498	Chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised	куриное бедро с кожей тушёное
+fdc:174499	Chicken, dark meat, drumstick, meat only, with added solution, raw	куриная голень без кожи с рассолом сырая
+fdc:174500	Chicken, dark meat, thigh, meat only, with added solution, cooked, roasted	куриное бедро без кожи с рассолом запечённое
+fdc:174501	Chicken, skin (drumsticks and thighs), with added solution, cooked, braised	куриная кожа с рассолом тушёная
+fdc:174502	Chicken, skin (drumsticks and thighs), with added solution, raw	куриная кожа с рассолом сырая
+fdc:174503	Chicken, skin (drumsticks and thighs), with added solution, cooked, roasted	куриная кожа с рассолом запечённая
+fdc:174504	Chicken, dark meat, drumstick, meat and skin, with added solution, cooked, braised	куриная голень с кожей с рассолом тушёная
+fdc:174505	Chicken, dark meat, thigh, meat and skin, with added solution, cooked, roasted	куриное бедро с кожей с рассолом запечённое
+fdc:174506	Chicken, broiler, rotisserie, BBQ, back meat only	курица-гриль спинка без кожи
+fdc:174507	Turkey, dark meat from whole, meat only, with added solution, raw	тёмное мясо индейки без кожи с рассолом сырое
+fdc:174508	Turkey, dark meat, meat only, with added solution, cooked, roasted	тёмное мясо индейки без кожи с рассолом запечённое
+fdc:174509	Turkey, dark meat from whole, meat and skin, with added solution, raw	тёмное мясо индейки с кожей с рассолом сырое
+fdc:174510	Turkey, dark meat from whole, meat and skin, with added solution, cooked, roasted	тёмное мясо индейки с кожей с рассолом запечённое
+fdc:174511	Turkey from whole, light meat, meat and skin, with added solution, raw	белое мясо индейки с кожей с рассолом сырое
+fdc:174512	Turkey from whole, light meat, meat and skin, with added solution, cooked, roasted	белое мясо индейки с кожей с рассолом запечённое
+fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	грудка индейки без кожи с рассолом сырая
+fdc:174514	Turkey, retail parts, breast, meat only, with added solution, cooked, roasted	грудка индейки без кожи с рассолом запечённая
+fdc:174515	Turkey, retail parts, breast, meat only, raw	грудка индейки без кожи сырая
+fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	грудка индейки без кожи запечённая
+fdc:174517	Turkey, retail parts, wing, meat only, raw	крыло индейки без кожи сырое
+fdc:174518	Turkey, retail parts, thigh, meat only, raw	бедро индейки без кожи сырое
+fdc:174519	Turkey, breast, from whole bird, meat only, with added solution, roasted	грудка индейки из целой тушки без кожи с рассолом запечённая
+fdc:174520	Turkey, back, from whole bird, meat only, with added solution, raw	спинка индейки без кожи с рассолом сырая
+fdc:174521	Turkey, back, from whole bird, meat only, with added solution, roasted	спинка индейки без кожи с рассолом запечённая
+fdc:174522	Soup, chicken mushroom, canned, condensed	суп куриный с грибами концентрат консервированный
+fdc:174523	Sauce, barbecue	соус барбекю
+fdc:174524	Sauce, salsa, ready-to-serve	сальса готовая
+fdc:174525	Sauce, homemade, white, medium	соус белый домашний средней густоты
+fdc:174526	Sauce, homemade, white, thick	соус белый домашний густой
+fdc:174527	Sauce, ready-to-serve, pepper or hot	соус острый перечный
+fdc:174528	Sauce, ready-to-serve, pepper, TABASCO	соус острый перечный Tabasco
+fdc:174529	Sauce, oyster, ready-to-serve	соус устричный
+fdc:174530	Soup, minestrone, canned, reduced sodium, ready-to-serve	суп минестроне с пониженным натрием консервированный готовый
+fdc:174531	Sauce, fish, ready-to-serve	рыбный соус
+fdc:174532	Soup, shark fin, restaurant-prepared	суп из плавников акулы
+fdc:174533	Soup, bean & ham, canned, reduced sodium, prepared with water or ready-to-serve	суп с фасолью и ветчиной с пониженным натрием
+fdc:174534	Split pea soup, canned, reduced sodium, prepared with water or ready-to serve	суп гороховый с пониженным натрием
+fdc:174535	Split pea with ham soup, canned, reduced sodium, prepared with water or ready-to-serve	суп гороховый с ветчиной с пониженным натрием
+fdc:174536	Soup, chicken broth, ready-to-serve	куриный бульон готовый
+fdc:174537	Soup, cream of chicken, canned, prepared with equal volume milk	суп-пюре куриный на молоке
+fdc:174538	Soup, vegetable, canned, low sodium, condensed	суп овощной с пониженным натрием концентрат консервированный
+fdc:174539	Soup, clam chowder, new england, canned, prepared with equal volume low fat (2%) milk	чаудер с моллюсками по-новоанглийски на молоке 2%
+fdc:174540	Soup, cream of mushroom, canned, prepared with equal volume low fat (2%) milk	суп-пюре грибной на молоке 2%
+fdc:174541	Soup, cream of onion, canned, prepared with equal volume milk	суп-пюре луковый на молоке
+fdc:174542	Sauce, white, thin, prepared-from-recipe, with butter	соус белый жидкий с маслом
+fdc:174543	Sauce, sweet and sour, prepared-from-recipe	соус кисло-сладкий домашний
+fdc:174544	Sauce, barbecue, KRAFT, original	соус барбекю Kraft
+fdc:174545	Soup, HEALTHY CHOICE Chicken Noodle Soup, canned	суп куриный с лапшой Healthy Choice
+fdc:174546	Soup, tomato, canned, prepared with equal volume low fat (2%) milk	суп томатный на молоке 2%
+fdc:174547	CAMPBELL'S, Tomato Soup, condensed	суп томатный концентрат Campbell's
+fdc:174548	CAMPBELL'S CHUNKY, Classic Chicken Noodle Soup	суп куриный с лапшой с кусочками Campbell's Chunky
+fdc:174549	Soup, cream of asparagus, canned, prepared with equal volume water	суп-пюре спаржевый разведённый водой
+fdc:174550	Soup, cheese, canned, prepared with equal volume water	суп сырный разведённый водой
+fdc:174551	Soup, chicken broth, canned, prepared with equal volume water	куриный бульон разведённый водой
+fdc:174552	CAMPBELL'S CHUNKY, Hearty Beef Barley Soup	суп говяжий с перловкой с кусочками Campbell's Chunky
+fdc:174553	Soup, cream of chicken, canned, prepared with equal volume water	суп-пюре куриный разведённый водой
+fdc:174554	Soup, clam chowder, manhattan, canned, prepared with equal volume water	чаудер с моллюсками по-манхэттенски разведённый водой
+fdc:174555	Soup, clam chowder, new england, canned, prepared with equal volume water	чаудер с моллюсками по-новоанглийски разведённый водой
+fdc:174556	CAMPBELL'S CHUNKY, New England Clam Chowder	чаудер с моллюсками по-новоанглийски Campbell's Chunky
+fdc:174557	Soup, beef broth, bouillon, consomme, prepared with equal volume water	говяжий бульон и консоме разведённые водой
+fdc:174558	Soup, mushroom with beef stock, canned, prepared with equal volume water	суп грибной на говяжьем бульоне разведённый водой
+fdc:174559	Soup, cream of onion, canned, prepared with equal volume water	суп-пюре луковый разведённый водой
+fdc:174560	Soup, oyster stew, canned, prepared with equal volume water	суп устричный разведённый водой
+fdc:174561	Soup, pea, green, canned, prepared with equal volume water	суп гороховый разведённый водой
+fdc:174562	Soup, turkey noodle, canned, prepared with equal volume water	суп с индейкой и лапшой разведённый водой
+fdc:174563	Soup, turkey vegetable, canned, prepared with equal volume water	суп с индейкой и овощами разведённый водой
+fdc:174564	Soup, vegetarian vegetable, canned, prepared with equal volume water	суп овощной постный разведённый водой
+fdc:174565	Soup, vegetable beef, canned, prepared with equal volume water	суп говяжий с овощами разведённый водой
+fdc:174566	Soup, chicken broth cubes, dry, prepared with water	куриный бульон из кубиков
+fdc:174567	Soup, cream of chicken, dry, mix, prepared with water	суп-пюре куриный из сухой смеси
+fdc:174568	Soup, onion, dry, mix, prepared with water	суп луковый из сухой смеси
+fdc:174569	Soup, tomato, dry, mix, prepared with water	суп томатный из сухой смеси
+fdc:174570	Roast beef, deli style, prepackaged, sliced	ростбиф ломтиками
+fdc:174571	Luncheon meat, pork, canned	свиной рубленый продукт консервированный
+fdc:174572	Turkey breast, low salt, prepackaged or deli, luncheon meat	грудка индейки с пониженной солью для сэндвичей
+fdc:174573	Mortadella, beef, pork	мортаделла из говядины и свинины
+fdc:174574	Peppered loaf, pork, beef	мясной хлеб с перцем
+fdc:174575	Pepperoni, beef and pork, sliced	пепперони из говядины и свинины ломтиками
+fdc:174576	Pickle and pimiento loaf, pork	мясной хлеб с огурцом и пименто
+fdc:174577	Polish sausage, pork	колбаса польская свиная
+fdc:174578	Pork sausage, link/patty, cooked, pan-fried	колбаски свиные жареные
+fdc:174579	Sausage, pork and beef, fresh, cooked	колбаса из свинины и говядины свежая приготовленная
+fdc:174580	Sausage, turkey, reduced fat, brown and serve, cooked	колбаса из индейки обезжиренная полуготовая
+fdc:174581	Poultry salad sandwich spread	паста салатная из птицы для сэндвичей
+fdc:174582	Salami, dry or hard, pork, beef	салями сухая
+fdc:174583	Sandwich spread, pork, beef	паста для сэндвичей из свинины и говядины
+fdc:174584	Sausage, smoked link sausage, pork	колбаски копчёные свиные
+fdc:174585	Sausage, smoked link sausage, pork and beef	колбаски копчёные из свинины и говядины
+fdc:174586	Sausage, Italian, pork, mild, cooked, pan-fried	колбаса итальянская свиная неострая жареная
+fdc:174587	Luncheon sausage, pork and beef	сервелат из свинины и говядины
+fdc:174588	Sausage, New england brand, pork, beef	колбаса по-новоанглийски из свинины и говядины
+fdc:174589	Oscar Mayer, Bologna (beef)	колбаса болонья говяжья Oscar Mayer
+fdc:174590	Oscar Mayer, Smokies Sausage Little Cheese (pork, turkey)	колбаски копчёные с сыром Oscar Mayer
+fdc:174591	Oscar Mayer, Wieners (beef franks)	сосиски говяжьи Oscar Mayer
+fdc:174592	Bacon, turkey, unprepared	бекон из индейки
+fdc:174593	Hormel Pillow Pak Sliced Turkey Pepperoni	пепперони из индейки ломтиками Hormel
+fdc:174594	Luncheon meat, pork and chicken, minced, canned, includes Spam Lite	рубленый продукт из свинины и курицы консервированный лёгкий
+fdc:174595	Bratwurst, veal, cooked	братвурст телячий приготовленный
+fdc:174596	Liverwurst spread	паштет ливерный
+fdc:174597	Roast beef spread	паста из ростбифа
+fdc:174598	Salami, pork, beef, less sodium	салями с пониженным натрием
+fdc:174599	Sausage, summer, pork and beef, sticks, with cheddar cheese	колбаса летняя с сыром чеддер палочками
+fdc:174600	Sausage, turkey, breakfast links, mild, raw	колбаски завтрачные из индейки неострые сырые
+fdc:174601	Swisswurst, pork and beef, with swiss cheese, smoked	колбаса швейцарская с сыром копчёная
+fdc:174602	Bacon and beef sticks	палочки беконные с говядиной
+fdc:174603	Salami, Italian, pork	салями итальянская свиная
+fdc:174604	Sausage, Italian, turkey, smoked	колбаса итальянская из индейки копчёная
+fdc:174605	Sausage, chicken, beef, pork, skinless, smoked	колбаса копчёная без оболочки из курицы, говядины и свинины
+fdc:174606	Sausage, turkey, hot, smoked	колбаса из индейки острая копчёная
+fdc:174607	Kielbasa, Polish, turkey and beef, smoked	колбаса польская из индейки и говядины копчёная
+fdc:174608	Chicken breast, roll, oven-roasted	куриная грудка рулетом запечённая
+fdc:174609	Bologna, pork and turkey, lite	колбаса болонья из свинины и индейки лёгкая
+fdc:174610	Bologna, pork, turkey and beef	колбаса болонья из свинины, индейки и говядины
+fdc:174611	Ham, honey, smoked, cooked	ветчина мёдовая копчёная
 fdc:174666	Figs, dried, stewed	инжир сушёный томлёный
 fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	говяжья грудинка (пашина) тушёная
 fdc:174766	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw	говяжья грудинка постная сырая

@@ -7124,8 +7124,206 @@ fdc:174408	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separ
 fdc:174409	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, cooked, broiled	chuletas de cadera de cordero australiano sin hueso magras grasa 1/8" a la parrilla
 fdc:174410	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano loncha central con hueso con grasa grasa 1/8" cruda
 fdc:174411	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	pierna de cordero australiano loncha central con hueso con grasa grasa 1/8" a la parrilla
-fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	pechuga de pavo cruda con salmuera
-fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	pechuga de pavo asada
+fdc:174412	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano loncha central con hueso magra grasa 1/8" cruda
+fdc:174413	Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, cooked, broiled	lomo de cordero australiano magro grasa 1/8" a la parrilla
+fdc:174414	Lamb, Australian, imported, fresh, rib chop/rack roast, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	carré de cordero australiano francés con hueso con grasa grasa 1/8" crudo
+fdc:174415	Lamb, Australian, imported, fresh, rib chop, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, grilled	chuleta de cordero australiano francesa con hueso con grasa grasa 1/8" a la parrilla
+fdc:174416	Lamb, Australian, imported, fresh, rib chop/rack roast, frenched, bone-in, separable lean only, trimmed to 1/8" fat, raw	carré de cordero australiano francés con hueso magro grasa 1/8" crudo
+fdc:174417	Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, raw	paletilla de cordero australiano parte del brazo con grasa grasa 1/8" cruda
+fdc:174418	Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, cooked, braised	paletilla de cordero australiano parte del brazo con grasa grasa 1/8" estofada
+fdc:174419	Lamb, Australian, imported, fresh, shoulder, arm, separable lean only, trimmed to 1/8" fat, raw	paletilla de cordero australiano parte del brazo magra grasa 1/8" cruda
+fdc:174420	Lamb, Australian, imported, fresh, shoulder, arm, separable lean only,   trimmed to 1/8" fat, cooked, braised	paletilla de cordero australiano parte del brazo magra grasa 1/8" estofada
+fdc:174421	Game meat , bison, ground, raw	carne picada de bisonte cruda
+fdc:174422	Game meat, bison, ground, cooked, pan-broiled	carne picada de bisonte a la plancha
+fdc:174423	Game meat , bison, top sirloin, separable lean only, 1" steak, cooked, broiled	filete de lomo bajo de bisonte magro a la parrilla
+fdc:174424	Game meat, bison, chuck, shoulder clod, separable lean only, cooked, braised	aguja de bisonte magra estofada
+fdc:174425	Game meat, elk, ground, raw	carne picada de uapití cruda
+fdc:174426	Game meat, elk, ground, cooked, pan-broiled	carne picada de uapití a la plancha
+fdc:174427	Game meat, elk, loin, separable lean only, cooked, broiled	lomo de uapití magro a la parrilla
+fdc:174428	Game meat, elk, round, separable lean only, cooked, broiled	redondo de uapití magro a la parrilla
+fdc:174429	Game meat, elk, tenderloin, separable lean only, cooked, broiled	solomillo de uapití magro a la parrilla
+fdc:174430	Game meat, deer, tenderloin, separable lean only, cooked, broiled	solomillo de ciervo magro a la parrilla
+fdc:174431	Game meat, deer, top round, separable lean only, 1" steak, cooked, broiled	filete de tapa de ciervo magro a la parrilla
+fdc:174432	Veal, Australian, shank, fore, bone-in, separable lean only, raw	jarrete delantero de ternera australiana con hueso magro crudo
+fdc:174433	Veal, Australian, shank, fore, bone-in, separable lean and fat, raw	jarrete delantero de ternera australiana con hueso con grasa crudo
+fdc:174434	Lamb, New Zealand, imported, Intermuscular fat, raw	grasa intermuscular de cordero neozelandés cruda
+fdc:174435	Lamb, New Zealand, imported, subcutaneous fat, raw	grasa subcutánea de cordero neozelandés cruda
+fdc:174436	Lamb, New Zealand, imported, brains, cooked, soaked and fried	sesos de cordero neozelandés fritos
+fdc:174437	Lamb, New Zealand, imported, brains, raw	sesos de cordero neozelandés crudos
+fdc:174438	Lamb, New Zealand, imported, chump, boneless, separable lean only, raw	anca de cordero neozelandés sin hueso magra cruda
+fdc:174439	Lamb, New Zealand, imported, kidney, cooked, soaked and fried	riñones de cordero neozelandés fritos
+fdc:174440	Lamb, New Zealand, imported, flap, boneless, separable lean only, cooked, braised	falda de cordero neozelandés sin hueso magra estofada
+fdc:174441	Lamb, New Zealand, imported, flap, boneless, separable lean only, raw	falda de cordero neozelandés sin hueso magra cruda
+fdc:174442	Lamb, New Zealand, imported, kidney, raw	riñones de cordero neozelandés crudos
+fdc:174443	Lamb, New Zealand, imported, heart, cooked, soaked and simmered	corazón de cordero neozelandés cocido
+fdc:174444	Lamb, New Zealand, imported, heart, raw	corazón de cordero neozelandés crudo
+fdc:174445	Lamb, New Zealand, imported, sweetbread, cooked, soaked and simmered	molleja de cordero neozelandés cocida
+fdc:174446	Lamb, New Zealand, imported, sweetbread, raw	molleja de cordero neozelandés cruda
+fdc:174447	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, cooked, slow roasted	pierna de cordero neozelandés deshuesada sin anca ni jarrete magra asada
+fdc:174448	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, raw	pierna de cordero neozelandés deshuesada sin anca ni jarrete magra cruda
+fdc:174449	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, cooked, braised	chuletas de paletilla de cordero neozelandés magras estofadas
+fdc:174450	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, raw	chuletas de paletilla de cordero neozelandés magras crudas
+fdc:174451	Lamb, New Zealand, imported, loin, boneless, separable lean only, cooked, fast roasted	lomo de cordero neozelandés sin hueso magro asado
+fdc:174452	Lamb, New Zealand, imported, loin, boneless, separable lean only, raw	lomo de cordero neozelandés sin hueso magro crudo
+fdc:174453	Lamb, New Zealand, imported, hind-shank, separable lean only, cooked, braised	jarrete trasero de cordero neozelandés magro estofado
+fdc:174454	Lamb, New Zealand, imported, hind-shank, separable lean only, raw	jarrete trasero de cordero neozelandés magro crudo
+fdc:174455	Lamb, New Zealand, imported, neck chops, separable lean only, raw	chuletas de cuello de cordero neozelandés magras crudas
+fdc:174456	Lamb, New Zealand, imported, rack - fully frenched, separable lean only, raw	carré de cordero neozelandés francés magro crudo
+fdc:174457	Lamb, New Zealand, imported, loin chop, separable lean only, cooked, fast fried	chuleta de lomo de cordero neozelandés magra frita
+fdc:174458	Lamb, New Zealand, imported, square-cut shoulder, separable lean only, cooked, slow roasted	paletilla de cordero neozelandés magra asada
+fdc:174459	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, cooked, fast fried	chuleta de pierna de cordero neozelandés con hueso magra frita
+fdc:174460	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, cooked, fast fried	chuleta de pierna de cordero neozelandés con hueso con grasa frita
+fdc:174461	Lamb, New Zealand, imported, loin chop, separable lean and fat, cooked, fast fried	chuleta de lomo de cordero neozelandés con grasa frita
+fdc:174462	Lamb, New Zealand, imported, loin saddle, separable lean and fat, cooked, fast roasted	silla de cordero neozelandés con grasa asada
+fdc:174463	Lamb, New Zealand, imported, loin saddle, separable lean and fat, raw	silla de cordero neozelandés con grasa cruda
+fdc:174464	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, raw	paletilla de cordero neozelandés enrollada sin hueso con grasa cruda
+fdc:174465	Chicken, capons, giblets, raw	menudos de capón crudos
+fdc:174466	Chicken, capons, giblets, cooked, simmered	menudos de capón cocidos
+fdc:174467	Duck, domesticated, liver, raw	hígado de pato crudo
+fdc:174468	Duck, wild, meat and skin, raw	pato salvaje con piel crudo
+fdc:174469	Duck, wild, breast, meat only, raw	pechuga de pato salvaje sin piel cruda
+fdc:174470	Goose, domesticated, meat and skin, raw	oca con piel cruda
+fdc:174471	Guinea hen, meat only, raw	pintada sin piel cruda
+fdc:174472	Pheasant, raw, meat and skin	faisán con piel crudo
+fdc:174473	Pheasant, raw, meat only	faisán sin piel crudo
+fdc:174474	Pheasant, breast, meat only, raw	pechuga de faisán sin piel cruda
+fdc:174475	Squab, (pigeon), meat and skin, raw	pichón con piel crudo
+fdc:174476	Emu, fan fillet, raw	emú filete en abanico crudo
+fdc:174477	Emu, fan fillet, cooked, broiled	emú filete en abanico a la parrilla
+fdc:174478	Emu, flat fillet, raw	emú filete plano crudo
+fdc:174479	Emu, full rump, raw	emú anca cruda
+fdc:174480	Emu, top loin, cooked, broiled	emú lomo alto a la parrilla
+fdc:174481	Ostrich, ground, raw	carne picada de avestruz cruda
+fdc:174482	Ostrich, ground, cooked, pan-broiled	carne picada de avestruz a la plancha
+fdc:174483	Ostrich, fan, raw	avestruz abanico crudo
+fdc:174484	Ostrich, outside leg, raw	avestruz pata exterior cruda
+fdc:174485	Ostrich, outside strip, raw	avestruz tira exterior cruda
+fdc:174486	Ostrich, outside strip, cooked	avestruz tira exterior cocinada
+fdc:174487	Ostrich, oyster, raw	avestruz medallón crudo
+fdc:174488	Ostrich, tip trimmed, cooked	avestruz punta cocinada
+fdc:174489	Ostrich, top loin, raw	avestruz lomo alto crudo
+fdc:174490	Ostrich, top loin, cooked	avestruz lomo alto cocinado
+fdc:174491	Chicken, liver, all classes, cooked, pan-fried	hígado de pollo frito
+fdc:174492	Turkey, ground, 93% lean, 7% fat, patties, broiled	hamburguesas de pavo 93% magro a la parrilla
+fdc:174493	Turkey, ground, 85% lean, 15% fat, raw	carne picada de pavo 85% magro cruda
+fdc:174494	Turkey, ground, 85% lean, 15% fat, pan-broiled crumbles	carne picada de pavo 85% magro a la plancha
+fdc:174495	Turkey, ground, 85% lean, 15% fat, patties, broiled	hamburguesas de pavo 85% magro a la parrilla
+fdc:174496	Chicken, skin (drumsticks and thighs), cooked, roasted	piel de pollo asada
+fdc:174497	Chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised	muslo de pollo con piel estofado
+fdc:174498	Chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised	contramuslo de pollo con piel estofado
+fdc:174499	Chicken, dark meat, drumstick, meat only, with added solution, raw	muslo de pollo sin piel con salmuera crudo
+fdc:174500	Chicken, dark meat, thigh, meat only, with added solution, cooked, roasted	contramuslo de pollo sin piel con salmuera asado
+fdc:174501	Chicken, skin (drumsticks and thighs), with added solution, cooked, braised	piel de pollo con salmuera estofada
+fdc:174502	Chicken, skin (drumsticks and thighs), with added solution, raw	piel de pollo con salmuera cruda
+fdc:174503	Chicken, skin (drumsticks and thighs), with added solution, cooked, roasted	piel de pollo con salmuera asada
+fdc:174504	Chicken, dark meat, drumstick, meat and skin, with added solution, cooked, braised	muslo de pollo con piel con salmuera estofado
+fdc:174505	Chicken, dark meat, thigh, meat and skin, with added solution, cooked, roasted	contramuslo de pollo con piel con salmuera asado
+fdc:174506	Chicken, broiler, rotisserie, BBQ, back meat only	pollo asado espalda sin piel
+fdc:174507	Turkey, dark meat from whole, meat only, with added solution, raw	carne oscura de pavo sin piel con salmuera cruda
+fdc:174508	Turkey, dark meat, meat only, with added solution, cooked, roasted	carne oscura de pavo sin piel con salmuera asada
+fdc:174509	Turkey, dark meat from whole, meat and skin, with added solution, raw	carne oscura de pavo con piel con salmuera cruda
+fdc:174510	Turkey, dark meat from whole, meat and skin, with added solution, cooked, roasted	carne oscura de pavo con piel con salmuera asada
+fdc:174511	Turkey from whole, light meat, meat and skin, with added solution, raw	carne blanca de pavo con piel con salmuera cruda
+fdc:174512	Turkey from whole, light meat, meat and skin, with added solution, cooked, roasted	carne blanca de pavo con piel con salmuera asada
+fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	pechuga de pavo sin piel con salmuera cruda
+fdc:174514	Turkey, retail parts, breast, meat only, with added solution, cooked, roasted	pechuga de pavo sin piel con salmuera asada
+fdc:174515	Turkey, retail parts, breast, meat only, raw	pechuga de pavo sin piel cruda
+fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	pechuga de pavo sin piel asada
+fdc:174517	Turkey, retail parts, wing, meat only, raw	ala de pavo sin piel cruda
+fdc:174518	Turkey, retail parts, thigh, meat only, raw	contramuslo de pavo sin piel crudo
+fdc:174519	Turkey, breast, from whole bird, meat only, with added solution, roasted	pechuga de pavo entero sin piel con salmuera asada
+fdc:174520	Turkey, back, from whole bird, meat only, with added solution, raw	espalda de pavo sin piel con salmuera cruda
+fdc:174521	Turkey, back, from whole bird, meat only, with added solution, roasted	espalda de pavo sin piel con salmuera asada
+fdc:174522	Soup, chicken mushroom, canned, condensed	sopa de pollo con champiñones concentrada en conserva
+fdc:174523	Sauce, barbecue	salsa barbacoa
+fdc:174524	Sauce, salsa, ready-to-serve	salsa mexicana
+fdc:174525	Sauce, homemade, white, medium	salsa bechamel casera media
+fdc:174526	Sauce, homemade, white, thick	salsa bechamel casera espesa
+fdc:174527	Sauce, ready-to-serve, pepper or hot	salsa picante de pimiento
+fdc:174528	Sauce, ready-to-serve, pepper, TABASCO	salsa picante Tabasco
+fdc:174529	Sauce, oyster, ready-to-serve	salsa de ostras
+fdc:174530	Soup, minestrone, canned, reduced sodium, ready-to-serve	sopa minestrone reducida en sodio en conserva lista
+fdc:174531	Sauce, fish, ready-to-serve	salsa de pescado
+fdc:174532	Soup, shark fin, restaurant-prepared	sopa de aleta de tiburón
+fdc:174533	Soup, bean & ham, canned, reduced sodium, prepared with water or ready-to-serve	sopa de alubias con jamón reducida en sodio
+fdc:174534	Split pea soup, canned, reduced sodium, prepared with water or ready-to serve	sopa de guisantes reducida en sodio
+fdc:174535	Split pea with ham soup, canned, reduced sodium, prepared with water or ready-to-serve	sopa de guisantes con jamón reducida en sodio
+fdc:174536	Soup, chicken broth, ready-to-serve	caldo de pollo listo
+fdc:174537	Soup, cream of chicken, canned, prepared with equal volume milk	crema de pollo con leche
+fdc:174538	Soup, vegetable, canned, low sodium, condensed	sopa de verduras baja en sodio concentrada en conserva
+fdc:174539	Soup, clam chowder, new england, canned, prepared with equal volume low fat (2%) milk	sopa de almejas estilo Nueva Inglaterra con leche semidesnatada
+fdc:174540	Soup, cream of mushroom, canned, prepared with equal volume low fat (2%) milk	crema de champiñones con leche semidesnatada
+fdc:174541	Soup, cream of onion, canned, prepared with equal volume milk	crema de cebolla con leche
+fdc:174542	Sauce, white, thin, prepared-from-recipe, with butter	salsa bechamel ligera con mantequilla
+fdc:174543	Sauce, sweet and sour, prepared-from-recipe	salsa agridulce casera
+fdc:174544	Sauce, barbecue, KRAFT, original	salsa barbacoa Kraft
+fdc:174545	Soup, HEALTHY CHOICE Chicken Noodle Soup, canned	sopa de pollo con fideos Healthy Choice
+fdc:174546	Soup, tomato, canned, prepared with equal volume low fat (2%) milk	sopa de tomate con leche semidesnatada
+fdc:174547	CAMPBELL'S, Tomato Soup, condensed	sopa de tomate concentrada Campbell's
+fdc:174548	CAMPBELL'S CHUNKY, Classic Chicken Noodle Soup	sopa de pollo con fideos con trozos Campbell's Chunky
+fdc:174549	Soup, cream of asparagus, canned, prepared with equal volume water	crema de espárragos reconstituida
+fdc:174550	Soup, cheese, canned, prepared with equal volume water	sopa de queso reconstituida
+fdc:174551	Soup, chicken broth, canned, prepared with equal volume water	caldo de pollo reconstituido
+fdc:174552	CAMPBELL'S CHUNKY, Hearty Beef Barley Soup	sopa de vacuno con cebada con trozos Campbell's Chunky
+fdc:174553	Soup, cream of chicken, canned, prepared with equal volume water	crema de pollo reconstituida
+fdc:174554	Soup, clam chowder, manhattan, canned, prepared with equal volume water	sopa de almejas estilo Manhattan reconstituida
+fdc:174555	Soup, clam chowder, new england, canned, prepared with equal volume water	sopa de almejas estilo Nueva Inglaterra reconstituida
+fdc:174556	CAMPBELL'S CHUNKY, New England Clam Chowder	sopa de almejas estilo Nueva Inglaterra Campbell's Chunky
+fdc:174557	Soup, beef broth, bouillon, consomme, prepared with equal volume water	caldo y consomé de vacuno reconstituidos
+fdc:174558	Soup, mushroom with beef stock, canned, prepared with equal volume water	sopa de champiñones con caldo de vacuno reconstituida
+fdc:174559	Soup, cream of onion, canned, prepared with equal volume water	crema de cebolla reconstituida
+fdc:174560	Soup, oyster stew, canned, prepared with equal volume water	sopa de ostras reconstituida
+fdc:174561	Soup, pea, green, canned, prepared with equal volume water	sopa de guisantes reconstituida
+fdc:174562	Soup, turkey noodle, canned, prepared with equal volume water	sopa de pavo con fideos reconstituida
+fdc:174563	Soup, turkey vegetable, canned, prepared with equal volume water	sopa de pavo con verduras reconstituida
+fdc:174564	Soup, vegetarian vegetable, canned, prepared with equal volume water	sopa de verduras vegetariana reconstituida
+fdc:174565	Soup, vegetable beef, canned, prepared with equal volume water	sopa de vacuno con verduras reconstituida
+fdc:174566	Soup, chicken broth cubes, dry, prepared with water	caldo de pollo de pastilla
+fdc:174567	Soup, cream of chicken, dry, mix, prepared with water	crema de pollo de sobre
+fdc:174568	Soup, onion, dry, mix, prepared with water	sopa de cebolla de sobre
+fdc:174569	Soup, tomato, dry, mix, prepared with water	sopa de tomate de sobre
+fdc:174570	Roast beef, deli style, prepackaged, sliced	roast beef en lonchas
+fdc:174571	Luncheon meat, pork, canned	picadillo de cerdo en conserva
+fdc:174572	Turkey breast, low salt, prepackaged or deli, luncheon meat	pechuga de pavo baja en sal en lonchas
+fdc:174573	Mortadella, beef, pork	mortadela de vacuno y cerdo
+fdc:174574	Peppered loaf, pork, beef	pastel de carne con pimienta
+fdc:174575	Pepperoni, beef and pork, sliced	pepperoni de vacuno y cerdo en lonchas
+fdc:174576	Pickle and pimiento loaf, pork	pastel de carne con pepinillo y pimiento
+fdc:174577	Polish sausage, pork	salchicha polaca de cerdo
+fdc:174578	Pork sausage, link/patty, cooked, pan-fried	salchichas de cerdo fritas
+fdc:174579	Sausage, pork and beef, fresh, cooked	salchicha de cerdo y vacuno fresca cocinada
+fdc:174580	Sausage, turkey, reduced fat, brown and serve, cooked	salchicha de pavo baja en grasa para dorar
+fdc:174581	Poultry salad sandwich spread	crema de ave para sándwiches
+fdc:174582	Salami, dry or hard, pork, beef	salami seco
+fdc:174583	Sandwich spread, pork, beef	crema para sándwiches de cerdo y vacuno
+fdc:174584	Sausage, smoked link sausage, pork	salchichas ahumadas de cerdo
+fdc:174585	Sausage, smoked link sausage, pork and beef	salchichas ahumadas de cerdo y vacuno
+fdc:174586	Sausage, Italian, pork, mild, cooked, pan-fried	salchicha italiana de cerdo suave frita
+fdc:174587	Luncheon sausage, pork and beef	salchichón de cerdo y vacuno
+fdc:174588	Sausage, New england brand, pork, beef	salchicha estilo Nueva Inglaterra de cerdo y vacuno
+fdc:174589	Oscar Mayer, Bologna (beef)	embutido bologna de vacuno Oscar Mayer
+fdc:174590	Oscar Mayer, Smokies Sausage Little Cheese (pork, turkey)	salchichas ahumadas con queso Oscar Mayer
+fdc:174591	Oscar Mayer, Wieners (beef franks)	salchichas de vacuno Oscar Mayer
+fdc:174592	Bacon, turkey, unprepared	beicon de pavo
+fdc:174593	Hormel Pillow Pak Sliced Turkey Pepperoni	pepperoni de pavo en lonchas Hormel
+fdc:174594	Luncheon meat, pork and chicken, minced, canned, includes Spam Lite	picadillo de cerdo y pollo en conserva ligero
+fdc:174595	Bratwurst, veal, cooked	bratwurst de ternera cocinada
+fdc:174596	Liverwurst spread	paté de hígado
+fdc:174597	Roast beef spread	crema de roast beef
+fdc:174598	Salami, pork, beef, less sodium	salami reducido en sodio
+fdc:174599	Sausage, summer, pork and beef, sticks, with cheddar cheese	salami de verano con queso cheddar en sticks
+fdc:174600	Sausage, turkey, breakfast links, mild, raw	salchichas de desayuno de pavo suaves crudas
+fdc:174601	Swisswurst, pork and beef, with swiss cheese, smoked	salchicha suiza con queso ahumada
+fdc:174602	Bacon and beef sticks	sticks de beicon y vacuno
+fdc:174603	Salami, Italian, pork	salami italiano de cerdo
+fdc:174604	Sausage, Italian, turkey, smoked	salchicha italiana de pavo ahumada
+fdc:174605	Sausage, chicken, beef, pork, skinless, smoked	salchicha ahumada sin piel de pollo, vacuno y cerdo
+fdc:174606	Sausage, turkey, hot, smoked	salchicha de pavo picante ahumada
+fdc:174607	Kielbasa, Polish, turkey and beef, smoked	kielbasa de pavo y vacuno ahumada
+fdc:174608	Chicken breast, roll, oven-roasted	rollo de pechuga de pollo asada
+fdc:174609	Bologna, pork and turkey, lite	embutido bologna de cerdo y pavo ligero
+fdc:174610	Bologna, pork, turkey and beef	embutido bologna de cerdo, pavo y vacuno
+fdc:174611	Ham, honey, smoked, cooked	jamón ahumado con miel
 fdc:174666	Figs, dried, stewed	compota de higos secos
 fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	falda de ternera estofada
 fdc:174766	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw	pecho de ternera crudo
