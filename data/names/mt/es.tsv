@@ -2052,8 +2052,213 @@ bls:K701902	Button mushroom canned, drained	champiñones en conserva, escurridos
 bls:K702100	Black truffle (Perigord black truffle) raw	trufa negra en crudo
 bls:K702152	Black truffle (Perigord black truffle) stewed	trufa negra estofada
 bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	trufa negra a la plancha
+bls:K702400	Black truffle (Perigord black truffle) dried	trufa negra seca
+bls:K702432	Black truffle (Perigord black truffle) dried, boiled	trufa negra seca cocida
+bls:K702902	Black truffle (Perigord black truffle) canned, drained	trufa negra en conserva, escurrida
+bls:K703100	Morel raw	colmenilla en crudo
+bls:K703152	Morel stewed	colmenilla estofada
+bls:K703182	Morel fried without fat (pan)	colmenilla a la plancha
+bls:K703400	Morel dried	colmenilla seca
+bls:K703432	Morel dried, boiled	colmenilla seca cocida
+bls:K703902	Morel canned, drained	colmenilla en conserva, escurrida
+bls:K704100	Brown birch bolete raw	boleto de abedul en crudo
+bls:K704152	Brown birch bolete stewed	boleto de abedul estofado
+bls:K704182	Brown birch bolete fried without fat (pan)	boleto de abedul a la plancha
+bls:K706100	Brown-yellow boletus (slippery jack) raw	mocós en crudo
+bls:K706152	Brown-yellow boletus (slippery jack) stewed	mocós estofado
+bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	mocós a la plancha
+bls:K706400	Brown-yellow boletus (slippery jack) dried	mocós seco
+bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	mocós seco cocido
+bls:K707100	Saffron milk cap (red pine mushroom) raw	níscalo en crudo
+bls:K707152	Saffron milk cap (red pine mushroom) stewed	níscalo estofado
+bls:K707182	Saffron milk cap (red pine mushroom) fried without fat (pan)	níscalo a la plancha
+bls:K709100	Dark honey mushroom raw	seta de miel en crudo
+bls:K709152	Dark honey mushroom stewed	seta de miel estofada
+bls:K709182	Dark honey mushroom fried without fat (pan)	seta de miel a la plancha
+bls:K713062	Chanterelle baked	rebozuelo al horno
+bls:K713100	Chanterelle raw	rebozuelo en crudo
+bls:K713142	Chanterelle braised without fat	rebozuelo estofado sin grasa
+bls:K713152	Chanterelle stewed	rebozuelo estofado
+bls:K713182	Chanterelle fried without fat (pan)	rebozuelo a la plancha
+bls:K713400	Chanterelle dried	rebozuelo seco
+bls:K713432	Chanterelle dried, boiled	rebozuelo seco cocido
+bls:K713902	Chanterelle canned, drained	rebozuelo en conserva, escurrido
+bls:K717100	Orange birch bolete raw	boleto de álamo en crudo
+bls:K717152	Orange birch bolete stewed	boleto de álamo estofado
+bls:K717182	Orange birch bolete fried without fat (pan)	boleto de álamo a la plancha
+bls:K718100	Porcini mushroom raw	boletus en crudo
+bls:K718152	Porcini mushroom stewed	boletus estofado
+bls:K718162	Porcini mushroom baked	boletus al horno
+bls:K718182	Porcini mushroom fried without fat (pan)	boletus a la plancha
+bls:K718400	Porcini mushroom dried	boletus seco
+bls:K718432	Porcini mushroom dried, boiled	boletus seco cocido
+bls:K718902	Porcini mushroom canned, drained	boletus en conserva, escurrido
+bls:K724100	Shiitake mushroom raw	shiitake en crudo
+bls:K724152	Shiitake mushroom stewed	shiitake estofado
+bls:K724182	Shiitake mushroom fried without fat (pan)	shiitake a la plancha
+bls:K724400	Shiitake mushroom dried	shiitake seco
+bls:K724432	Shiitake mushroom dried, boiled	shiitake seco cocido
+bls:K724902	Shiitake mushroom canned, drained	shiitake en conserva, escurrido
+bls:K740100	Oyster mushroom raw	seta de ostra en crudo
+bls:K740152	Oyster mushroom stewed	seta de ostra estofada
+bls:K740182	Oyster mushroom fried without fat (pan)	seta de ostra a la plancha
+bls:K740400	Oyster mushroom dried	seta de ostra seca
+bls:K740432	Oyster mushroom dried, boiled	seta de ostra seca cocida
+bls:K750100	Mixed mushrooms raw	setas variadas en crudo
+bls:K750152	Mixed mushrooms stewed	setas variadas estofadas
+bls:K750162	Mixed mushrooms baked	setas variadas al horno
+bls:K750182	Mixed mushrooms fried without fat (pan)	setas variadas a la plancha
+bls:K750200	Mixed mushrooms deep-frozen	setas variadas congeladas
+bls:K750252	Mixed mushrooms deep-frozen, stewed	setas variadas congeladas estofadas
+bls:K750262	Mixed mushrooms deep-frozen, baked	setas variadas congeladas al horno
+bls:K750282	Mixed mushrooms deep-frozen, fried without fat (pan)	setas variadas congeladas a la plancha
+bls:K750400	Mixed mushrooms dried	setas variadas secas
+bls:K750432	Mixed mushrooms dried, boiled	setas variadas secas cocidas
+bls:K750902	Mixed mushrooms canned, drained	setas variadas en conserva, escurridas
+bls:K762400	Yeast flakes/nutritional yeast	levadura nutricional en copos
+bls:K820000	Vegetarian pate, spread yeast-based	paté vegetal de levadura
+bls:K850500	Cream of mushroom soup instant powder	crema de champiñones en polvo
+bls:K850532	Cream of mushroom soup, made from instant powder and water	crema de champiñones de sobre
+bls:M011000	Sheep's milk min. 4.5 % fat	leche de oveja 4,5 %
+bls:M012100	Roquefort min. 50 % fat in dry matter	queso roquefort 50 % grasa en seco
+bls:M012200	Feta min. 45 % fat in dry matter	queso feta 45 % grasa en seco
+bls:M021000	Goat's milk min. 3 % fat	leche de cabra 3 %
+bls:M032100	Mozzarella min. 45 % fat in dry matter	mozzarella 45 % grasa en seco
+bls:M052000	Brine cheese made from cow's milk, min. 45 % fat in dry matter	queso de salmuera de vaca 45 % grasa en seco
+bls:M053000	Brine cheese made from goat's milk, min. 45 % fat in dry matter	queso de salmuera de cabra 45 % grasa en seco
+bls:M0A1000	Mozzarella min. 20 % fat in dry matter	mozzarella 20 % grasa en seco
+bls:M111100	Milk skimmed, fresh, max. 0.1 % fat, pasteurised	leche desnatada fresca 0,1 % pasteurizada
+bls:M111200	Milk low-fat, fresh, 1.5 % fat, pasteurised	leche semidesnatada fresca 1,5 % pasteurizada
+bls:M111300	Whole milk, fresh, 3.5 % fat, pasteurised	leche entera fresca 3,5 % pasteurizada
+bls:M112300	Certified raw milk, min. 3.5 % fat	leche cruda certificada 3,5 %
+bls:M113100	Milk skimmed, max. 0.5 % fat, ultra-heated	leche desnatada UHT 0,5 %
+bls:M113200	Milk low-fat, 1.5 % fat, ultra-heated	leche semidesnatada UHT 1,5 %
+bls:M113300	Whole milk, 3.5 % fat, ultra-heated	leche entera UHT 3,5 %
+bls:M114100	Milk skimmed, fresh, max. 0.1 % fat, lactose-free, pasteurised	leche desnatada sin lactosa 0,1 %
+bls:M114200	Milk low-fat, fresh, 1.5 % fat, lactose-free, pasteurised	leche semidesnatada sin lactosa 1,5 %
+bls:M114300	Whole milk, fresh, 3.5 % fat, lactose-free, pasteurised	leche entera sin lactosa 3,5 %
+bls:M117700	Cream substitute (mixture of vegetable fats and milk)	sucedáneo de nata vegetal
+bls:M121100	Soured milk (thick) skimmed, max. 0.5 % fat	leche fermentada desnatada 0,5 %
+bls:M121200	Soured milk (thick) low-fat, min. 1.5 % to max. 1.8 % fat	leche fermentada semidesnatada 1,5 %
+bls:M121300	Soured milk (thick) min. 3.5 % fat	leche fermentada entera 3,5 %
+bls:M121500	Soured milk (thick) min. 10 % fat	leche fermentada con nata 10 %
+bls:M130100	Kefir from skimmed milk, max. 0.5 % fat	kéfir desnatado 0,5 %
+bls:M130200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat	kéfir semidesnatado 1,5 %
+bls:M130300	Kefir min. 3.5 % fat	kéfir entero 3,5 %
+bls:M130500	Kefir min. 10 % fat	kéfir de nata 10 %
+bls:M141100	Yogurt from skimmed milk, max. 0.5 % fat	yogur desnatado 0,5 %
+bls:M141200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat	yogur semidesnatado 1,5 %
+bls:M141300	Yogurt mild, min. 3.5 % fat	yogur suave 3,5 %
+bls:M141500	Yogurt min. 10 % fat	yogur con nata 10 %
+bls:M148100	Yogurt from skimmed milk, max. 0.5 % fat, fortified with skimmed milk powder	yogur desnatado 0,5 % con leche en polvo
+bls:M148200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, fortified with skimmed milk powder	yogur semidesnatado 1,5 % con leche en polvo
+bls:M148300	Yogurt min. 3.5 % fat, fortified with skimmed milk powder	yogur 3,5 % con leche en polvo
+bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	yogur con nata 10 % con leche en polvo
+bls:M149500	Yogurt made from sheep's milk	yogur de oveja
+bls:M150000	Buttermilk	suero de mantequilla
+bls:M161000	Sweet whey	suero dulce
+bls:M162000	Sour whey	suero ácido
+bls:M171500	Coffee cream min. 10 % fat	nata para café 10 %
+bls:M172500	Sour cream min. 10 % fat	nata agria 10 %
+bls:M172700	Sour cream min. 20 % fat	nata agria 20 %
+bls:M172900	Sour cream 40 % fat	nata agria 40 %
+bls:M173800	Whipping cream min. 30 % fat	nata para montar 30 %
+bls:M173900	Whipping cream min. 36 % fat	nata para montar 36 %
+bls:M175800	Spray cream/whipping cream, sweetened, min. 30 % fat	nata en aerosol azucarada 30 %
 bls:M176800	Creme fraiche 30 % fat	crème fraîche 30 %
+bls:M181100	Condensed milk max. 1 % fat, sweetened	leche condensada desnatada azucarada
+bls:M181400	Condensed milk min. 8 % fat, sweetened	leche condensada azucarada 8 %
+bls:M182100	Evaporated milk max. 1 % fat	leche evaporada desnatada
+bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	leche evaporada semidesnatada
+bls:M182400	Evaporated milk min. 7.5 % fat	leche evaporada entera 7,5 %
+bls:M182500	Evaporated milk 10 % fat	leche evaporada 10 %
+bls:M1A3100	Milk skimmed, max. 0.5 % fat, lactose-free, ultra-heated	leche desnatada UHT sin lactosa 0,5 %
+bls:M1A5200	Milk low-fat, 1.5 % fat, lactose-free, ultra-heated	leche semidesnatada UHT sin lactosa 1,5 %
+bls:M1A7300	Whole milk, 3.5 % fat, lactose-free, ultra-heated	leche entera UHT sin lactosa 3,5 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	yogur desnatado sin lactosa
+bls:M1B2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, lactose-free	yogur semidesnatado sin lactosa 1,5 %
+bls:M1E3300	Yogurt min. 3.5 % fat, lactose-free	yogur sin lactosa 3,5 %
+bls:M200100	Milk drink < 1 % fat, flavoured, sweetened	bebida láctea desnatada aromatizada azucarada
+bls:M200200	Milk drink 1.5 % fat, flavoured, sweetened	bebida láctea 1,5 % aromatizada azucarada
+bls:M200300	Milk drink 3.5 % fat, flavoured, sweetened	bebida láctea 3,5 % aromatizada azucarada
+bls:M206100	Milk drink < 1 % fat, with cocoa/chocolate, sweetened	bebida láctea desnatada con cacao azucarada
+bls:M206200	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened	bebida láctea 1,5 % con cacao azucarada
+bls:M206300	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened	bebida láctea 3,5 % con cacao azucarada
+bls:M208000	Milk drink 3.5 % fat, with coffee, sweetened	bebida láctea 3,5 % con café azucarada
+bls:M231200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	kéfir semidesnatado con fruta azucarado
+bls:M231500	Kefir min. 10 % fat, with fruit preparation, sweetened	kéfir de nata con fruta azucarado
+bls:M241100	Yogurt mild, max. 1 % fat, with fruit preparation, sweetened	yogur suave desnatado con fruta azucarado
+bls:M241200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur semidesnatado con fruta azucarado
+bls:M241300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened	yogur suave con fruta azucarado
+bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	yogur con nata con fruta azucarado
+bls:M246000	Yogurt min. 3.5 % fat, with chocolate preparation, sweetened	yogur con chocolate azucarado
+bls:M248000	Yogurt min. 3.5 % fat, with coffee preparation, sweetened	yogur con café azucarado
+bls:M252000	Buttermilk drink with fruit preparation, sweetened	bebida de suero de mantequilla con fruta azucarada
+bls:M255000	Buttermilk dessert with cream and fruit preparation, sweetened	postre de suero de mantequilla con nata y fruta azucarado
+bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	bebida de suero de mantequilla con fruta azucarada con vitaminas
+bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	bebida de suero con zumo de frutas y edulcorante con vitaminas
+bls:M276300	Yogurt min. 3.5 % fat, with fruit-chocolate preparation, sweetened	yogur con fruta y chocolate azucarado
+bls:M293300	Yogurt min. 3.5 % fat, with chocolate-cereal preparation, sweetened	yogur con chocolate y cereales azucarado
+bls:M2A0100	Milk drink < 1 % fat, flavoured, with sugar and artificial sweeteners	bebida láctea desnatada aromatizada con azúcar y edulcorante
+bls:M2A0200	Milk drink 1.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 1,5 % aromatizada azucarada con vitaminas
+bls:M2A0300	Milk drink 3.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 3,5 % aromatizada azucarada con vitaminas
+bls:M2A1100	Milk drink < 1 % fat, flavoured, with artificial sweeteners	bebida láctea desnatada aromatizada con edulcorante
+bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	bebida láctea desnatada probiótica con azúcar y edulcorante con vitaminas
+bls:M2A2200	Milk drink > 1 % fat, probiotic, flavoured, sweetened, fortified with vitamins	bebida láctea probiótica aromatizada azucarada con vitaminas
+bls:M2A3200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened, lactose-free	yogur semidesnatado con fruta azucarado sin lactosa
+bls:M2A3300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened, lactose-free	yogur suave con fruta azucarado sin lactosa
+bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	bebida láctea desnatada con cacao con azúcar y edulcorante
+bls:M2A7200	Milk drink 1.5 % fat, with coffee, sweetened	bebida láctea 1,5 % con café azucarada
+bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	yogur semidesnatado con fruta con azúcar y edulcorante
+bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	yogur desnatado con vainilla con azúcar y edulcorante
+bls:M2H2300	Milkshake 3.5 % fat sweetened	batido 3,5 % azucarado
+bls:M2H7300	Milkshake 3.5 % fat, with cocoa/chocolate, sweetened	batido de chocolate 3,5 % azucarado
+bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	bebida láctea 1,5 % con café con edulcorante
+bls:M2I5200	Milk drink 1.5 % fat, with coffee, unsweetened	bebida láctea 1,5 % con café sin azúcar
+bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	yogur desnatado con fruta con azúcar y edulcorante con vitaminas
+bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	yogur desnatado con fruta con azúcar y edulcorante
+bls:M2J7100	Yogurt drink from skimmed milk, max. 0.5 % fat, with fruit preparation, sweetened	yogur líquido desnatado con fruta azucarado
+bls:M2K7200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit-cereal preparation, sweetened	yogur semidesnatado con fruta y cereales azucarado
+bls:M2L2200	Yogurt drink low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur líquido semidesnatado con fruta azucarado
+bls:M2L2300	Yogurt drink min. 3.5 % fat, with fruit preparation, sweetened	yogur líquido con fruta azucarado
+bls:M2L7300	Yogurt min. 3.5 % fat, with fruit-cereal preparation, sweetened	yogur con fruta y cereales azucarado
+bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	yogur con nata con chocolate azucarado
+bls:M2N1400	Yogurt min. 10 % fat, with vanilla preparation, sweetened	yogur con nata de vainilla azucarado
+bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	yogur con nata con fruta con edulcorante
+bls:M2N6400	Yogurt min. 10 % fat, sweetened	yogur con nata azucarado
+bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 1,5 % con cacao azucarada con vitaminas
+bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 3,5 % con cacao azucarada con vitaminas
+bls:M2R2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with vanilla preparation, sweetened	yogur semidesnatado de vainilla azucarado
+bls:M2R7300	Yogurt min. 3.5 % fat, with crunchy-muesli mix, sweetened	yogur con muesli crujiente azucarado
+bls:M2R8300	Yogurt min. 3.5 % fat, with vanilla preparation, sweetened	yogur de vainilla azucarado
+bls:M2R9300	Yogurt min. 3.5 % fat, with nuts, sweetened	yogur con frutos secos azucarado
+bls:M2S8300	Ayran, yogurt drink, salted	ayrán salado
+bls:M300400	Hard cheese min. 30 % fat in dry matter	queso duro 30 % grasa en seco
+bls:M300600	Hard cheese min. 45 % fat in dry matter	queso duro 45 % grasa en seco
+bls:M300700	Hard cheese min. 50 % fat in dry matter	queso duro 50 % grasa en seco
+bls:M301300	Appenzeller cheese min. 20 % fat in dry matter	queso appenzeller 20 % grasa en seco
+bls:M301700	Appenzeller cheese min. 50 % fat in dry matter	queso appenzeller 50 % grasa en seco
+bls:M302600	Bergkäse (Alpine cheese) min. 45 % fat in dry matter	queso de montaña 45 % grasa en seco
+bls:M302700	Bergkäse (Alpine cheese) min. 50 % fat in dry matter	queso de montaña 50 % grasa en seco
+bls:M303600	Chester (Cheddar) cheese min. 45 % fat in dry matter	queso cheddar 45 % grasa en seco
+bls:M303700	Chester (Cheddar) cheese min. 50 % fat in dry matter	queso cheddar 50 % grasa en seco
+bls:M304600	Emmentaler cheese min. 45 % fat in dry matter	queso emmental 45 % grasa en seco
+bls:M305700	Gruyère cheese min. 50 % fat in dry matter	queso gruyère 50 % grasa en seco
+bls:M306400	Parmesan cheese min. 30 % fat in dry matter	queso parmesano 30 % grasa en seco
+bls:M307700	Raclette cheese min. 45 % fat in dry matter	queso raclette 45 % grasa en seco
+bls:M309600	Jarlsberg cheese min. 45 % fat in dry matter	queso jarlsberg 45 % grasa en seco
+bls:M313600	Provolone cheese min. 45 % fat in dry matter	queso provolone 45 % grasa en seco
+bls:M3A4300	Brine cheese made from sheep's milk, min. 20 % fat in dry matter	queso de salmuera de oveja 20 % grasa en seco
+bls:M400300	Semi-hard cheese min. 20 % fat in dry matter	queso semiduro 20 % grasa en seco
+bls:M400400	Semi-hard cheese min. 30 % fat in dry matter	queso semiduro 30 % grasa en seco
+bls:M400500	Semi-hard cheese min. 40 % fat in dry matter	queso semiduro 40 % grasa en seco
+bls:M400600	Semi-hard cheese min. 45 % fat in dry matter	queso semiduro 45 % grasa en seco
+bls:M400700	Semi-hard cheese min. 50 % fat in dry matter	queso semiduro 50 % grasa en seco
+bls:M400800	Semi-hard cheese min. 60 % fat in dry matter	queso semiduro 60 % grasa en seco
+bls:M401400	Edam cheese min. 30 % fat in dry matter	queso edam 30 % grasa en seco
+bls:M401500	Edam cheese min. 40 % fat in dry matter	queso edam 40 % grasa en seco
+bls:M401600	Edam cheese min. 45 % fat in dry matter	queso edam 45 % grasa en seco
+bls:M401700	Edam cheese min. 50 % fat in dry matter	queso edam 50 % grasa en seco
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	agua con sabor sin azúcar
 bls:P192000	Pilsner beer mixed with carbonated lemonade	cerveza con gaseosa (clara)

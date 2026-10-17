@@ -2052,8 +2052,213 @@ bls:K701902	Button mushroom canned, drained	шампиньоны консерв�
 bls:K702100	Black truffle (Perigord black truffle) raw	трюфель чёрный сырой
 bls:K702152	Black truffle (Perigord black truffle) stewed	трюфель чёрный тушёный
 bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	трюфель чёрный жареный без масла
+bls:K702400	Black truffle (Perigord black truffle) dried	трюфель чёрный сушёный
+bls:K702432	Black truffle (Perigord black truffle) dried, boiled	трюфель чёрный сушёный варёный
+bls:K702902	Black truffle (Perigord black truffle) canned, drained	трюфель чёрный консервированный слитый
+bls:K703100	Morel raw	сморчок сырой
+bls:K703152	Morel stewed	сморчок тушёный
+bls:K703182	Morel fried without fat (pan)	сморчок жареный без масла
+bls:K703400	Morel dried	сморчок сушёный
+bls:K703432	Morel dried, boiled	сморчок сушёный варёный
+bls:K703902	Morel canned, drained	сморчок консервированный слитый
+bls:K704100	Brown birch bolete raw	подберёзовик сырой
+bls:K704152	Brown birch bolete stewed	подберёзовик тушёный
+bls:K704182	Brown birch bolete fried without fat (pan)	подберёзовик жареный без масла
+bls:K706100	Brown-yellow boletus (slippery jack) raw	маслёнок сырой
+bls:K706152	Brown-yellow boletus (slippery jack) stewed	маслёнок тушёный
+bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	маслёнок жареный без масла
+bls:K706400	Brown-yellow boletus (slippery jack) dried	маслёнок сушёный
+bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	маслёнок сушёный варёный
+bls:K707100	Saffron milk cap (red pine mushroom) raw	рыжик сырой
+bls:K707152	Saffron milk cap (red pine mushroom) stewed	рыжик тушёный
+bls:K707182	Saffron milk cap (red pine mushroom) fried without fat (pan)	рыжик жареный без масла
+bls:K709100	Dark honey mushroom raw	опёнок сырой
+bls:K709152	Dark honey mushroom stewed	опёнок тушёный
+bls:K709182	Dark honey mushroom fried without fat (pan)	опёнок жареный без масла
+bls:K713062	Chanterelle baked	лисичка запечённая
+bls:K713100	Chanterelle raw	лисичка сырая
+bls:K713142	Chanterelle braised without fat	лисичка припущенная
+bls:K713152	Chanterelle stewed	лисичка тушёная
+bls:K713182	Chanterelle fried without fat (pan)	лисичка жареная без масла
+bls:K713400	Chanterelle dried	лисичка сушёная
+bls:K713432	Chanterelle dried, boiled	лисичка сушёная варёная
+bls:K713902	Chanterelle canned, drained	лисичка консервированная слитая
+bls:K717100	Orange birch bolete raw	подосиновик сырой
+bls:K717152	Orange birch bolete stewed	подосиновик тушёный
+bls:K717182	Orange birch bolete fried without fat (pan)	подосиновик жареный без масла
+bls:K718100	Porcini mushroom raw	белый гриб сырой
+bls:K718152	Porcini mushroom stewed	белый гриб тушёный
+bls:K718162	Porcini mushroom baked	белый гриб запечённый
+bls:K718182	Porcini mushroom fried without fat (pan)	белый гриб жареный без масла
+bls:K718400	Porcini mushroom dried	белый гриб сушёный
+bls:K718432	Porcini mushroom dried, boiled	белый гриб сушёный варёный
+bls:K718902	Porcini mushroom canned, drained	белый гриб консервированный слитый
+bls:K724100	Shiitake mushroom raw	шиитаке сырой
+bls:K724152	Shiitake mushroom stewed	шиитаке тушёный
+bls:K724182	Shiitake mushroom fried without fat (pan)	шиитаке жареный без масла
+bls:K724400	Shiitake mushroom dried	шиитаке сушёный
+bls:K724432	Shiitake mushroom dried, boiled	шиитаке сушёный варёный
+bls:K724902	Shiitake mushroom canned, drained	шиитаке консервированный слитый
+bls:K740100	Oyster mushroom raw	вешенка сырая
+bls:K740152	Oyster mushroom stewed	вешенка тушёная
+bls:K740182	Oyster mushroom fried without fat (pan)	вешенка жареная без масла
+bls:K740400	Oyster mushroom dried	вешенка сушёная
+bls:K740432	Oyster mushroom dried, boiled	вешенка сушёная варёная
+bls:K750100	Mixed mushrooms raw	грибы ассорти сырые
+bls:K750152	Mixed mushrooms stewed	грибы ассорти тушёные
+bls:K750162	Mixed mushrooms baked	грибы ассорти запечённые
+bls:K750182	Mixed mushrooms fried without fat (pan)	грибы ассорти жареные без масла
+bls:K750200	Mixed mushrooms deep-frozen	грибы ассорти замороженные
+bls:K750252	Mixed mushrooms deep-frozen, stewed	грибы ассорти замороженные тушёные
+bls:K750262	Mixed mushrooms deep-frozen, baked	грибы ассорти замороженные запечённые
+bls:K750282	Mixed mushrooms deep-frozen, fried without fat (pan)	грибы ассорти замороженные жареные без масла
+bls:K750400	Mixed mushrooms dried	грибы ассорти сушёные
+bls:K750432	Mixed mushrooms dried, boiled	грибы ассорти сушёные варёные
+bls:K750902	Mixed mushrooms canned, drained	грибы ассорти консервированные слитые
+bls:K762400	Yeast flakes/nutritional yeast	дрожжи пищевые хлопьями
+bls:K820000	Vegetarian pate, spread yeast-based	паштет вегетарианский на дрожжах
+bls:K850500	Cream of mushroom soup instant powder	суп-пюре грибной порошковый
+bls:K850532	Cream of mushroom soup, made from instant powder and water	суп-пюре грибной из порошка
+bls:M011000	Sheep's milk min. 4.5 % fat	молоко овечье 4,5 %
+bls:M012100	Roquefort min. 50 % fat in dry matter	сыр рокфор 50 % жира в сухом веществе
+bls:M012200	Feta min. 45 % fat in dry matter	сыр фета 45 % жира в сухом веществе
+bls:M021000	Goat's milk min. 3 % fat	молоко козье 3 %
+bls:M032100	Mozzarella min. 45 % fat in dry matter	моцарелла 45 % жира в сухом веществе
+bls:M052000	Brine cheese made from cow's milk, min. 45 % fat in dry matter	сыр рассольный из коровьего молока 45 % жира в сухом веществе
+bls:M053000	Brine cheese made from goat's milk, min. 45 % fat in dry matter	сыр рассольный из козьего молока 45 % жира в сухом веществе
+bls:M0A1000	Mozzarella min. 20 % fat in dry matter	моцарелла 20 % жира в сухом веществе
+bls:M111100	Milk skimmed, fresh, max. 0.1 % fat, pasteurised	молоко обезжиренное свежее 0,1 % пастеризованное
+bls:M111200	Milk low-fat, fresh, 1.5 % fat, pasteurised	молоко нежирное свежее 1,5 % пастеризованное
+bls:M111300	Whole milk, fresh, 3.5 % fat, pasteurised	молоко цельное свежее 3,5 % пастеризованное
+bls:M112300	Certified raw milk, min. 3.5 % fat	молоко сырое сертифицированное 3,5 %
+bls:M113100	Milk skimmed, max. 0.5 % fat, ultra-heated	молоко обезжиренное ультрапастеризованное 0,5 %
+bls:M113200	Milk low-fat, 1.5 % fat, ultra-heated	молоко нежирное ультрапастеризованное 1,5 %
+bls:M113300	Whole milk, 3.5 % fat, ultra-heated	молоко цельное ультрапастеризованное 3,5 %
+bls:M114100	Milk skimmed, fresh, max. 0.1 % fat, lactose-free, pasteurised	молоко обезжиренное без лактозы 0,1 %
+bls:M114200	Milk low-fat, fresh, 1.5 % fat, lactose-free, pasteurised	молоко нежирное без лактозы 1,5 %
+bls:M114300	Whole milk, fresh, 3.5 % fat, lactose-free, pasteurised	молоко цельное без лактозы 3,5 %
+bls:M117700	Cream substitute (mixture of vegetable fats and milk)	заменитель сливок растительно-молочный
+bls:M121100	Soured milk (thick) skimmed, max. 0.5 % fat	простокваша обезжиренная 0,5 %
+bls:M121200	Soured milk (thick) low-fat, min. 1.5 % to max. 1.8 % fat	простокваша нежирная 1,5 %
+bls:M121300	Soured milk (thick) min. 3.5 % fat	простокваша 3,5 %
+bls:M121500	Soured milk (thick) min. 10 % fat	простокваша сливочная 10 %
+bls:M130100	Kefir from skimmed milk, max. 0.5 % fat	кефир обезжиренный 0,5 %
+bls:M130200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat	кефир нежирный 1,5 %
+bls:M130300	Kefir min. 3.5 % fat	кефир 3,5 %
+bls:M130500	Kefir min. 10 % fat	кефир сливочный 10 %
+bls:M141100	Yogurt from skimmed milk, max. 0.5 % fat	йогурт обезжиренный 0,5 %
+bls:M141200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat	йогурт нежирный 1,5 %
+bls:M141300	Yogurt mild, min. 3.5 % fat	йогурт мягкий 3,5 %
+bls:M141500	Yogurt min. 10 % fat	йогурт сливочный 10 %
+bls:M148100	Yogurt from skimmed milk, max. 0.5 % fat, fortified with skimmed milk powder	йогурт обезжиренный 0,5 % с сухим молоком
+bls:M148200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, fortified with skimmed milk powder	йогурт нежирный 1,5 % с сухим молоком
+bls:M148300	Yogurt min. 3.5 % fat, fortified with skimmed milk powder	йогурт 3,5 % с сухим молоком
+bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	йогурт сливочный 10 % с сухим молоком
+bls:M149500	Yogurt made from sheep's milk	йогурт из овечьего молока
+bls:M150000	Buttermilk	пахта
+bls:M161000	Sweet whey	сыворотка сладкая
+bls:M162000	Sour whey	сыворотка кислая
+bls:M171500	Coffee cream min. 10 % fat	сливки для кофе 10 %
+bls:M172500	Sour cream min. 10 % fat	сметана 10 %
+bls:M172700	Sour cream min. 20 % fat	сметана 20 %
+bls:M172900	Sour cream 40 % fat	сметана 40 %
+bls:M173800	Whipping cream min. 30 % fat	сливки для взбивания 30 %
+bls:M173900	Whipping cream min. 36 % fat	сливки для взбивания 36 %
+bls:M175800	Spray cream/whipping cream, sweetened, min. 30 % fat	сливки в аэрозоле сладкие 30 %
 bls:M176800	Creme fraiche 30 % fat	крем-фреш 30 %
+bls:M181100	Condensed milk max. 1 % fat, sweetened	сгущённое молоко обезжиренное с сахаром
+bls:M181400	Condensed milk min. 8 % fat, sweetened	сгущённое молоко с сахаром 8 %
+bls:M182100	Evaporated milk max. 1 % fat	сгущённое молоко обезжиренное без сахара
+bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	сгущённое молоко полуобезжиренное без сахара
+bls:M182400	Evaporated milk min. 7.5 % fat	сгущённое молоко без сахара 7,5 %
+bls:M182500	Evaporated milk 10 % fat	сгущённое молоко без сахара 10 %
+bls:M1A3100	Milk skimmed, max. 0.5 % fat, lactose-free, ultra-heated	молоко обезжиренное ультрапастеризованное без лактозы 0,5 %
+bls:M1A5200	Milk low-fat, 1.5 % fat, lactose-free, ultra-heated	молоко нежирное ультрапастеризованное без лактозы 1,5 %
+bls:M1A7300	Whole milk, 3.5 % fat, lactose-free, ultra-heated	молоко цельное ультрапастеризованное без лактозы 3,5 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	йогурт обезжиренный без лактозы
+bls:M1B2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, lactose-free	йогурт нежирный без лактозы 1,5 %
+bls:M1E3300	Yogurt min. 3.5 % fat, lactose-free	йогурт без лактозы 3,5 %
+bls:M200100	Milk drink < 1 % fat, flavoured, sweetened	молочный напиток обезжиренный ароматизированный сладкий
+bls:M200200	Milk drink 1.5 % fat, flavoured, sweetened	молочный напиток 1,5 % ароматизированный сладкий
+bls:M200300	Milk drink 3.5 % fat, flavoured, sweetened	молочный напиток 3,5 % ароматизированный сладкий
+bls:M206100	Milk drink < 1 % fat, with cocoa/chocolate, sweetened	молочный напиток обезжиренный с какао сладкий
+bls:M206200	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened	молочный напиток 1,5 % с какао сладкий
+bls:M206300	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened	молочный напиток 3,5 % с какао сладкий
+bls:M208000	Milk drink 3.5 % fat, with coffee, sweetened	молочный напиток 3,5 % с кофе сладкий
+bls:M231200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	кефир нежирный с фруктовым наполнителем сладкий
+bls:M231500	Kefir min. 10 % fat, with fruit preparation, sweetened	кефир сливочный с фруктовым наполнителем сладкий
+bls:M241100	Yogurt mild, max. 1 % fat, with fruit preparation, sweetened	йогурт мягкий обезжиренный с фруктовым наполнителем сладкий
+bls:M241200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	йогурт нежирный с фруктовым наполнителем сладкий
+bls:M241300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened	йогурт мягкий с фруктовым наполнителем сладкий
+bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	йогурт сливочный с фруктовым наполнителем сладкий
+bls:M246000	Yogurt min. 3.5 % fat, with chocolate preparation, sweetened	йогурт с шоколадным наполнителем сладкий
+bls:M248000	Yogurt min. 3.5 % fat, with coffee preparation, sweetened	йогурт с кофейным наполнителем сладкий
+bls:M252000	Buttermilk drink with fruit preparation, sweetened	напиток из пахты с фруктами сладкий
+bls:M255000	Buttermilk dessert with cream and fruit preparation, sweetened	десерт из пахты со сливками и фруктами сладкий
+bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	напиток из пахты с фруктами сладкий с витаминами
+bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	сывороточный напиток с фруктовым соком и подсластителями с витаминами
+bls:M276300	Yogurt min. 3.5 % fat, with fruit-chocolate preparation, sweetened	йогурт с фруктово-шоколадным наполнителем сладкий
+bls:M293300	Yogurt min. 3.5 % fat, with chocolate-cereal preparation, sweetened	йогурт с шоколадно-зерновым наполнителем сладкий
+bls:M2A0100	Milk drink < 1 % fat, flavoured, with sugar and artificial sweeteners	молочный напиток обезжиренный ароматизированный с сахаром и подсластителем
+bls:M2A0200	Milk drink 1.5 % fat, flavoured, sweetened, fortified with vitamins	молочный напиток 1,5 % ароматизированный сладкий с витаминами
+bls:M2A0300	Milk drink 3.5 % fat, flavoured, sweetened, fortified with vitamins	молочный напиток 3,5 % ароматизированный сладкий с витаминами
+bls:M2A1100	Milk drink < 1 % fat, flavoured, with artificial sweeteners	молочный напиток обезжиренный ароматизированный с подсластителем
+bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	молочный напиток обезжиренный пробиотический с сахаром и подсластителем с витаминами
+bls:M2A2200	Milk drink > 1 % fat, probiotic, flavoured, sweetened, fortified with vitamins	молочный напиток пробиотический ароматизированный сладкий с витаминами
+bls:M2A3200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened, lactose-free	йогурт нежирный с фруктовым наполнителем сладкий без лактозы
+bls:M2A3300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened, lactose-free	йогурт мягкий с фруктовым наполнителем сладкий без лактозы
+bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	молочный напиток обезжиренный с какао с сахаром и подсластителем
+bls:M2A7200	Milk drink 1.5 % fat, with coffee, sweetened	молочный напиток 1,5 % с кофе сладкий
+bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	йогурт нежирный с фруктовым наполнителем с сахаром и подсластителем
+bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	йогурт обезжиренный ванильный с сахаром и подсластителем
+bls:M2H2300	Milkshake 3.5 % fat sweetened	милкшейк 3,5 % сладкий
+bls:M2H7300	Milkshake 3.5 % fat, with cocoa/chocolate, sweetened	милкшейк шоколадный 3,5 % сладкий
+bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	молочный напиток 1,5 % с кофе с подсластителем
+bls:M2I5200	Milk drink 1.5 % fat, with coffee, unsweetened	молочный напиток 1,5 % с кофе без сахара
+bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	йогурт обезжиренный с фруктовым наполнителем с сахаром и подсластителем с витаминами
+bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	йогурт обезжиренный с фруктовым наполнителем с сахаром и подсластителем
+bls:M2J7100	Yogurt drink from skimmed milk, max. 0.5 % fat, with fruit preparation, sweetened	йогурт питьевой обезжиренный с фруктовым наполнителем сладкий
+bls:M2K7200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit-cereal preparation, sweetened	йогурт нежирный с фруктово-зерновым наполнителем сладкий
+bls:M2L2200	Yogurt drink low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	йогурт питьевой нежирный с фруктовым наполнителем сладкий
+bls:M2L2300	Yogurt drink min. 3.5 % fat, with fruit preparation, sweetened	йогурт питьевой с фруктовым наполнителем сладкий
+bls:M2L7300	Yogurt min. 3.5 % fat, with fruit-cereal preparation, sweetened	йогурт с фруктово-зерновым наполнителем сладкий
+bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	йогурт сливочный с шоколадным наполнителем сладкий
+bls:M2N1400	Yogurt min. 10 % fat, with vanilla preparation, sweetened	йогурт сливочный ванильный сладкий
+bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	йогурт сливочный с фруктовым наполнителем с подсластителем
+bls:M2N6400	Yogurt min. 10 % fat, sweetened	йогурт сливочный сладкий
+bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	молочный напиток 1,5 % с какао сладкий с витаминами
+bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	молочный напиток 3,5 % с какао сладкий с витаминами
+bls:M2R2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with vanilla preparation, sweetened	йогурт нежирный ванильный сладкий
+bls:M2R7300	Yogurt min. 3.5 % fat, with crunchy-muesli mix, sweetened	йогурт с мюсли-кранч сладкий
+bls:M2R8300	Yogurt min. 3.5 % fat, with vanilla preparation, sweetened	йогурт ванильный сладкий
+bls:M2R9300	Yogurt min. 3.5 % fat, with nuts, sweetened	йогурт с орехами сладкий
+bls:M2S8300	Ayran, yogurt drink, salted	айран солёный
+bls:M300400	Hard cheese min. 30 % fat in dry matter	сыр твёрдый 30 % жира в сухом веществе
+bls:M300600	Hard cheese min. 45 % fat in dry matter	сыр твёрдый 45 % жира в сухом веществе
+bls:M300700	Hard cheese min. 50 % fat in dry matter	сыр твёрдый 50 % жира в сухом веществе
+bls:M301300	Appenzeller cheese min. 20 % fat in dry matter	сыр аппенцеллер 20 % жира в сухом веществе
+bls:M301700	Appenzeller cheese min. 50 % fat in dry matter	сыр аппенцеллер 50 % жира в сухом веществе
+bls:M302600	Bergkäse (Alpine cheese) min. 45 % fat in dry matter	сыр горный 45 % жира в сухом веществе
+bls:M302700	Bergkäse (Alpine cheese) min. 50 % fat in dry matter	сыр горный 50 % жира в сухом веществе
+bls:M303600	Chester (Cheddar) cheese min. 45 % fat in dry matter	сыр чеддер 45 % жира в сухом веществе
+bls:M303700	Chester (Cheddar) cheese min. 50 % fat in dry matter	сыр чеддер 50 % жира в сухом веществе
+bls:M304600	Emmentaler cheese min. 45 % fat in dry matter	сыр эмменталер 45 % жира в сухом веществе
+bls:M305700	Gruyère cheese min. 50 % fat in dry matter	сыр грюйер 50 % жира в сухом веществе
+bls:M306400	Parmesan cheese min. 30 % fat in dry matter	сыр пармезан 30 % жира в сухом веществе
+bls:M307700	Raclette cheese min. 45 % fat in dry matter	сыр раклет 45 % жира в сухом веществе
+bls:M309600	Jarlsberg cheese min. 45 % fat in dry matter	сыр ярлсберг 45 % жира в сухом веществе
+bls:M313600	Provolone cheese min. 45 % fat in dry matter	сыр проволоне 45 % жира в сухом веществе
+bls:M3A4300	Brine cheese made from sheep's milk, min. 20 % fat in dry matter	сыр рассольный из овечьего молока 20 % жира в сухом веществе
+bls:M400300	Semi-hard cheese min. 20 % fat in dry matter	сыр полутвёрдый 20 % жира в сухом веществе
+bls:M400400	Semi-hard cheese min. 30 % fat in dry matter	сыр полутвёрдый 30 % жира в сухом веществе
+bls:M400500	Semi-hard cheese min. 40 % fat in dry matter	сыр полутвёрдый 40 % жира в сухом веществе
+bls:M400600	Semi-hard cheese min. 45 % fat in dry matter	сыр полутвёрдый 45 % жира в сухом веществе
+bls:M400700	Semi-hard cheese min. 50 % fat in dry matter	сыр полутвёрдый 50 % жира в сухом веществе
+bls:M400800	Semi-hard cheese min. 60 % fat in dry matter	сыр полутвёрдый 60 % жира в сухом веществе
+bls:M401400	Edam cheese min. 30 % fat in dry matter	сыр эдам 30 % жира в сухом веществе
+bls:M401500	Edam cheese min. 40 % fat in dry matter	сыр эдам 40 % жира в сухом веществе
+bls:M401600	Edam cheese min. 45 % fat in dry matter	сыр эдам 45 % жира в сухом веществе
+bls:M401700	Edam cheese min. 50 % fat in dry matter	сыр эдам 50 % жира в сухом веществе
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	сливочный сыр лёгкий (10 % жира в сухом веществе)
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	вода с ароматом без сахара
 bls:P192000	Pilsner beer mixed with carbonated lemonade	пиво с лимонадом (радлер)
