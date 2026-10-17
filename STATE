@@ -1,21 +1,14 @@
-dv-fooddb-128-merge — batch 2b merge state
-==========================================
-main merged into names-mt-2b at 5449e6f (union of 2a 2705384-2706763 +
-2b 2706764-2708143, sorted by record_id, ZERO line edits; RULES.md kept
-all sections — batch-2a traps then batch-2b qualifiers).
-Gates on combined files: real-data kcal-collision 0 (loaded
-fooddb_names_mt_2b, 238 ru / 281 es shared-name groups), ru/es alignment
-0, coverage 11,202 ids per lang each once, script scan clean, ./dev test
-370 passed.
-REVIEW sent to lead-fooddb (msg 01M55DJVYNA5KR2HA0WKF7J4CQ):
-"changed translations: none".
-WAITING for lead GO. After GO: task add task:fooddb/128 (release from
-dv-fooddb-122-2b on 409), eait-merge eait-fit/fooddb 128 5449e6f, pin
-bump in kirmalyshev-org/ieat-app (branch off origin/main; submodule
-update; eait_fooddb_ref in deploy/iac/inventories/production/group_vars/
-eait.yml + REF in scripts/fooddb-deploy.test.ts incl. title +
-scripts/fooddb-backup.test.ts; add exactly 3 files; bun test; PR;
-eait-merge EAIT_NO_VISIBLE_CHANGE="deploy pin only"), tell coordinator
-"deploying fooddb 5449e6f" and wait for its go, make deploy in
-~/Personal/projects/ieat-app (git pull --ff-only + submodule update
-first), verify mt=11,202/lang + /healthz, DONE to lead, task done.
+dv-fooddb-122-2c — batch 2c: TRANSLATION COMPLETE, AWAITING REVIEWER
+===================================================================
+PR #129, head 590c172 (branch names-mt-2c, on main incl. 2a+2b merge).
+1,380 FNDDS records fdc:2708144-2709523 (positions 2761-4140 of ids
+>= 2705000), ru + es in data/names/mt/{ru,es}.tsv + RULES.md batch-2c
+section. Gates green: kcal-collision 0 on loaded mirror
+fooddb_names_mt_2c (41,279 foods incl. FNDDS), ru/es alignment 0,
+coverage 1380/1380, script scan clean, ./dev test 370 passed.
+Partner edits: fdc:167549 +на масле/en aceite, fdc:169035
++из ресторана/de restaurante, fdc:170291 +(фастфуд)/de fast food,
+fdc:2706630/2706703 pot pies empanada->pay de *.
+Next: reviewer Devin (ru + es separately, findings TSV) ->
+lead approval -> merge + ieat-app pin + coordinator go + deploy.
+Mirror DB left loaded on shared postgres: fooddb_names_mt_2c.
