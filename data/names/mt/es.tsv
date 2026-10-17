@@ -25779,7 +25779,7 @@ frida:1105	Mackerel, filet, in natural juices, canned	caballa al natural en cons
 frida:1106	Sandwich, rib roast	sándwich de panceta asada
 frida:1107	Milk, skimmed, with chocolate	leche desnatada con cacao
 frida:1108	Milk, skimmed, with chocolate (UHT)	leche desnatada con cacao UHT
-frida:1109	Beef, striploin "cap on", raw	lomo bajo de vacuno con tapa crudo
+frida:1109	Beef, striploin "cap on", raw	lomo bajo de vacuno con capa de grasa crudo
 frida:1110	Cheese, Camembert, 30 % fidm.	queso camembert 30 %
 frida:1111	Alfalfa seeds, sprouted, raw	brotes de alfalfa
 frida:1112	Pork, meat, approx. 20 % fat, raw	carne de cerdo 20 % grasa cruda
@@ -25806,7 +25806,7 @@ frida:1142	Alfalfa seeds	semillas de alfalfa
 frida:1143	Pork, sausage, frankfurter	salchicha de Viena
 frida:1147	Salad dressing, mayonnaise	salsa mayonesa para ensalada
 frida:1148	Rye-flour, bolted (extraction rate 70 %)	harina de centeno tamizada
-frida:1149	Beef, entrecote "cap on", raw	entrecot con tapa crudo
+frida:1149	Beef, entrecote "cap on", raw	entrecot con capa de grasa crudo
 frida:115	Tea, ready-to-drink	té listo para consumir
 frida:1150	Kippers, in oil, canned	kipper en aceite
 frida:1152	Herring, salted, ripened	arenque salado madurado
@@ -25840,7 +25840,7 @@ frida:1184	Black pudding, boiled	morcilla cocida
 frida:1187	Eggs, chicken, yolk, salted, pasteurized	yema de huevo salada pasteurizada
 frida:1188	Charr, fillet, smoked	salvelino ahumado
 frida:1189	Milk, with chocolate, partly skimmed, 1.5 % fat (UHT)	leche con cacao 1,5 % UHT
-frida:1190	Gelatin	gelatina
+frida:1190	Gelatin	gelatina en polvo
 frida:1191	Margarine, (less than 50 % fat), average	margarina ligera
 frida:1192	Frankfurt sausage, fried, fast food	salchicha de Viena frita de fast food
 frida:1193	Pecans, oil roasted	pacanas tostadas en aceite
@@ -25857,7 +25857,7 @@ frida:1203	Cheese, firm, Danbo, 20 % fidm.	queso danbo 20 %
 frida:1204	Seaweed, kombu, dried	alga kombu deshidratada
 frida:1205	Milk, with chocolate, partly skimmed, 1.5 % fat	leche con cacao 1,5 %
 frida:1206	Cocoa, instant, without milk, powder	cacao instantáneo sin leche en polvo
-frida:1207	Yeast extract, Marmite	mostaza amarilla danesa
+frida:1207	Yeast extract, Marmite	extracto de levadura Marmite
 frida:1209	French fries, deepfried, fast food	patatas fritas de fast food
 frida:1210	Egg, hen, yolk, sugar added, pasteurized, frozen	yema de huevo con azúcar pasteurizada
 frida:1211	Cheese, firm, 20 % fidm., all varieties	queso semiduro 20 %
@@ -25875,7 +25875,7 @@ frida:1228	Cheese, Brie, 45 % fidm.	queso brie 45 %
 frida:1229	Chicken, flesh and skin, battered, deepfried	pollo con piel empanado frito
 frida:1230	Egg, chicken, yolk, raw	yema de huevo cruda
 frida:1232	Beef, meat, approx. 25 % fat, raw	carne de vacuno 25 % grasa cruda
-frida:1233	Beef, brisket, posterior part, raw	extremo naval de vacuno crudo
+frida:1233	Beef, brisket, posterior part, raw	parte posterior del pecho de vacuno crudo
 frida:1234	Lamb, meat, average values, raw	carne de cordero cruda
 frida:1235	Cheese, Camembert, 45 % fidm.	queso camembert 45 %
 frida:1236	Chicken, flesh and skin, deepfried	pollo con piel frito
@@ -26109,8 +26109,8 @@ frida:1680	Lactose, dry, powder	lactosa en polvo
 frida:1681	Yogurt, with fruit, 0.4 % fat	yogur con fruta 0,4 %
 frida:1682	Buttermilk dessert	koldskål
 frida:1683	Milkshake	batido
-frida:1684	Blended spread, 75% fat	untada mezcla 75 %
-frida:1685	Blended spread, reduced fat, 57% fat	untada mezcla ligera 57 %
+frida:1684	Blended spread, 75% fat	mezcla para untar 75 %
+frida:1685	Blended spread, reduced fat, 57% fat	mezcla para untar ligera 57 %
 frida:1686	Pork, thick flank, completely trimmed, raw	jamón de cerdo limpio crudo
 frida:1687	Pork, thin belly with rind, raw	pecho de cerdo con corteza crudo
 frida:1688	Pork, loin, 0-1 mm fat, raw	lomo de cerdo con borde de grasa 0-1 mm crudo
@@ -26234,8 +26234,8 @@ frida:1811	Beans, red kidney, cooked, ready to eat	alubias rojas cocidas listas 
 frida:1812	Chickpeas, boiled, canned	garbanzos cocidos en conserva
 frida:1813	Chickpeas, steamed, ready to eat	garbanzos al vapor
 frida:1814	Beans, black, boiled, canned	alubias negras cocidas en conserva
-frida:1815	White beans, dried and boiled	alubias blancas de secas cocidas
-frida:1816	Beans, red kidney, dried and boiled	alubias rojas de secas cocidas
+frida:1815	White beans, dried and boiled	alubias blancas cocidas a partir de secas
+frida:1816	Beans, red kidney, dried and boiled	alubias rojas cocidas a partir de secas
 frida:1817	Blueberries, frozen	arándanos congelados
 frida:1818	Raspberries, frozen	frambuesas congeladas
 frida:1819	Strawberries, frozen	fresas congeladas
@@ -26414,7 +26414,7 @@ frida:203	Cheese, firm, Maribo, 45 % fidm.	queso maribo 45 %
 frida:204	Mustard, brown, ready made	mostaza marrón
 frida:205	Garlic, raw	ajo
 frida:206	Wine, rosé	vino rosado
-frida:208	Minced meat in gravy, average values	carne picada en gravy
+frida:208	Minced meat in gravy, average values	carne picada en salsa
 frida:209	Cheese, firm, Samsoe, 45 % fidm.	queso samsø 45 %
 frida:21	Lemon, raw	limón
 frida:211	Baby food, infant formula, low iron content, powder	leche de fórmula en polvo baja en hierro
@@ -26655,7 +26655,7 @@ frida:535	Ice cream, dairy, three coloured	helado de tres colores
 frida:537	Tea, leaves	té en hojas
 frida:538	Rhubarb, frozen	ruibarbo congelado
 frida:54	Grape, raw	uvas
-frida:540	Gherkin cucumber, raw	pepino pepinillo
+frida:540	Gherkin cucumber, raw	pepino para encurtidos
 frida:541	Lemon sole, raw	lenguado limón
 frida:542	Cucumber, large, pickled	pepinos grandes en vinagre
 frida:544	Chicory, raw	endibia
@@ -26684,7 +26684,7 @@ frida:572	Prickly pear, Indian fig, raw	higo chumbo
 frida:573	Cabbage, Chinese, raw	col china
 frida:574	Kidney, pig, raw	riñones de cerdo crudos
 frida:575	Norway pout, flesh, raw	faneca noruega
-frida:577	Pastry, frangipani pastry	mazapanes
+frida:577	Pastry, frangipani pastry	mazarines
 frida:578	Figs, raw	higos
 frida:579	Carambola, raw	carambola
 frida:58	Beans, mung, dried, raw	frijoles mungo secos
@@ -26702,7 +26702,7 @@ frida:591	Lettuce, looseleaf, raw	lechuga de hoja
 frida:592	Split peas, dry, raw	guisantes partidos secos
 frida:593	Persimmon, kaki fruit, raw	caqui
 frida:594	Ling, fillet, raw	filete de maruca crudo
-frida:595	Sole, raw	lenguado
+frida:595	Sole, raw	lenguado verdadero
 frida:596	Tomato, peeled, canned	tomates pelados en conserva
 frida:597	Meat balls, average values	albóndigas
 frida:598	Fish balls, fried	albóndigas de pescado fritas
@@ -26743,7 +26743,7 @@ frida:634	Spotted wolffish, fillet, raw	filete de pez lobo moteado crudo
 frida:635	Mussels, in water, canned	mejillones al natural en conserva
 frida:636	Cape gooseberries, raw	physalis
 frida:637	Cheese, unripened, smoked, 10 % fat	queso ahumado 10 %
-frida:639	Bream, raw	besugo
+frida:639	Bream, raw	brema
 frida:64	Asparagus, green, raw	espárragos verdes
 frida:641	Heart, beef, raw	corazón de vacuno crudo
 frida:643	Pak choi (bok choy), raw	pak choi
@@ -26828,7 +26828,7 @@ frida:728	Duck, flesh only, raw	pato sin piel crudo
 frida:729	Turkey, breast, boiled/smoked, sliced	pechuga de pavo cocida y ahumada en lonchas
 frida:73	Cheese, semihard, Feta, 40 % fidm	queso feta 40 %
 frida:730	Pizza with tuna, frozen	pizza con atún congelada
-frida:731	Cream pastry, marzipan- and cocoa-covered	pastel de nata cubierto de mazapán y cacao
+frida:731	Cream pastry, marzipan- and cocoa-covered	tarta de nata cubierta de mazapán y cacao
 frida:732	Turkey, flesh only, raw	pavo sin piel crudo
 frida:734	Pork, ham, silverside (M. Semitendinosus), lean, raw	jamón de cerdo magro de semitendinoso crudo
 frida:735	Loganberries, frozen	frambuesas logan congeladas
@@ -26853,7 +26853,7 @@ frida:753	Asparagus, all types, raw	espárragos
 frida:754	Chicken, breast, boiled, sliced	pechuga de pollo cocida en lonchas
 frida:756	Lemon peel, raw	ralladura de limón
 frida:757	Pistachio nuts, dry roasted with salt	pistachos tostados en seco con sal
-frida:76	Rice groats, brown, raw	arroz integral para leche crudo
+frida:76	Rice groats, brown, raw	arroz redondo integral crudo
 frida:760	Cherry juice, concentrated, sugar added	zumo de cereza concentrado con azúcar
 frida:761	Currant, red, juice, concentrated, sugar added	zumo de grosella roja concentrado con azúcar
 frida:762	Raspberry juice, concentrated, sugar added	zumo de frambuesa concentrado con azúcar
@@ -26865,7 +26865,7 @@ frida:767	Celeriac, celery leaves, raw	hojas de apio
 frida:768	Whitefish, raw	pescado blanco
 frida:769	Lingonberry, raw	arándano rojo
 frida:77	Sugar, sucrose, white	azúcar
-frida:770	Beef, topside, cap off, raw	vacuno parte interna sin tapa crudo
+frida:770	Beef, topside, cap off, raw	vacuno parte interna sin capa de grasa crudo
 frida:771	Pork, tenderloin, trimmed, raw	solomillo de cerdo limpio crudo
 frida:772	Crispbread, knackebrot, wheat, fine	pan crujiente de trigo fino
 frida:773	Hare, raw	liebre cruda
@@ -26898,7 +26898,7 @@ frida:801	Potato, boiled	patatas cocidas
 frida:802	Ptarmigan, flesh, raw	perdiz nival cruda
 frida:803	Marmalade, apricot	mermelada de albaricoque
 frida:804	Chocolate, milk, with nuts	chocolate con leche y frutos secos
-frida:805	Beef, rumpsteak, cap off, raw	rump steak sin tapa crudo
+frida:805	Beef, rumpsteak, cap off, raw	rump steak sin capa de grasa crudo
 frida:806	Pine nuts, dried	piñones secos
 frida:807	Rabbit, flesh only, raw	carne de conejo cruda
 frida:808	Pepper, hot chili, raw	chile
@@ -26908,14 +26908,14 @@ frida:813	Baguette, with rye, industrially produced	baguette con centeno
 frida:815	Cashew nuts, dry roasted	anacardos tostados en seco
 frida:816	Rolls, italien type, industrially produced	panecillo italiano industrial
 frida:818	Beef, meat, lean (<5 % fat), raw	carne de vacuno magra cruda
-frida:819	Beef, thick flank (top rump), cap off, raw	vacuno tapa sin tapa cruda
+frida:819	Beef, thick flank (top rump), cap off, raw	vacuno tapa sin capa de grasa cruda
 frida:821	Caviar, made from capelin roe	huevas de capelán
 frida:823	Breakfast cereal, Guldkorn	cereales de desayuno Guldkorn
 frida:824	Leek, raw	puerro crudo
 frida:825	Tuna, in water, canned	atún al natural en conserva
-frida:827	Cream pastry, cream puff	pastel de nata con crema
+frida:827	Cream pastry, cream puff	tarta de nata con crema
 frida:828	Roastbeef, sliced	roast beef en lonchas
-frida:830	Cream pastry, average values	pastel de nata
+frida:830	Cream pastry, average values	tarta de nata
 frida:831	Beef, tenderloin, defatted, raw	solomillo de vacuno limpio crudo
 frida:832	Mutton, round, raw	pierna de cordero adulto cruda
 frida:833	Dried fig spread	crema de higos
@@ -26949,7 +26949,7 @@ frida:868	Bamboo shoots, canned, salted	brotes de bambú en conserva salados
 frida:869	Bamboo shoots, canned, nonsalted	brotes de bambú en conserva sin sal
 frida:87	Goose, flesh and skin, raw	oca con piel cruda
 frida:870	Beef, shin + leg (shank), raw	morcillo de vacuno crudo
-frida:871	Beef, striploin "cap off", raw	lomo bajo de vacuno sin tapa crudo
+frida:871	Beef, striploin "cap off", raw	lomo bajo de vacuno sin capa de grasa crudo
 frida:872	Dock (US), sorrel (UK), raw	acedera
 frida:874	Cheese, Quarg, 45 % fidm.	queso quark 45 %
 frida:875	Egg, goose, whole, raw	huevo de oca crudo
@@ -27003,13 +27003,13 @@ frida:929	Wheat bread, white, with sunflower kernels	pan de trigo con pipas de g
 frida:930	Chives, raw	ciboulette
 frida:932	Kumquats, raw	kumquat
 frida:933	Tongue, calf, raw	lengua de ternera cruda
-frida:935	Pork, ham, silverside, 2 mm fat, raw	tapilla de cerdo con tocino 2 mm cruda
+frida:935	Pork, ham, silverside, 2 mm fat, raw	tapilla de cerdo con 2 mm de grasa cruda
 frida:936	Pork, ham, spiced, deboned	jamón especiado sin hueso
 frida:937	Parsnip, raw	chirivía cruda
 frida:938	Potato, automn (October to January), raw	patata de otoño
 frida:939	Cassava, raw	yuca
 frida:94	Cheese, firm, 40 % fidm., all varieties	queso semiduro 40 %
-frida:940	Beef, topside "cap on", raw	vacuno parte interna con tapa crudo
+frida:940	Beef, topside "cap on", raw	vacuno parte interna con capa de grasa crudo
 frida:942	Beef, mince, 10-15% fat, raw	carne picada de vacuno 10-15 % grasa cruda
 frida:943	Chewing gum, no sugar added, all types	chicle sin azúcar
 frida:944	Beef, neck, raw	cuello de vacuno crudo
@@ -27028,7 +27028,7 @@ frida:959	Chicken, flesh and skin, raw	pollo con piel crudo
 frida:960	Mackerel, in tomato sauce, canned	caballa en salsa de tomate en conserva
 frida:961	Mushroom, raw	champiñones
 frida:962	Swiss roll, apricot stuffing	brazo de gitano de albaricoque
-frida:966	Beef, rumpsteak "cap on", raw	rump steak con tapa crudo
+frida:966	Beef, rumpsteak "cap on", raw	rump steak con capa de grasa crudo
 frida:967	Biscuit, sweet	galletas maría
 frida:969	Cress, garden, raw	berro de jardín
 frida:97	Cheese, semihard, Mozzarella, 45 % fidm.	queso mozzarella 45 %
@@ -27047,7 +27047,7 @@ frida:981	Cod, roe, smoked	huevas de bacalao ahumadas
 frida:982	Pork, sausage, Danish, raw	salchicha medister cruda
 frida:984	Veal, medium fat, raw	ternera semigrasa cruda
 frida:985	Pork, hand with rind, raw	paleta de cerdo con corteza cruda
-frida:986	Blended spread, 80% fat	untada mezcla 80 %
+frida:986	Blended spread, 80% fat	mezcla para untar 80 %
 frida:987	Marshmellows, unspecified	malvaviscos
 frida:988	Pork, meat, approx. 10 % fat, raw	carne de cerdo 10 % grasa cruda
 frida:989	Pork, brawn, head cheese	queso de cerdo
