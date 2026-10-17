@@ -2259,8 +2259,213 @@ bls:M401400	Edam cheese min. 30 % fat in dry matter	queso edam 30 % grasa en sec
 bls:M401500	Edam cheese min. 40 % fat in dry matter	queso edam 40 % grasa en seco
 bls:M401600	Edam cheese min. 45 % fat in dry matter	queso edam 45 % grasa en seco
 bls:M401700	Edam cheese min. 50 % fat in dry matter	queso edam 50 % grasa en seco
+bls:M402400	Gouda cheese min. 30 % fat in dry matter	queso gouda 30 % grasa en seco
+bls:M402500	Gouda cheese min. 40 % fat in dry matter	queso gouda 40 % grasa en seco
+bls:M402600	Gouda cheese 48 % fat in dry matter	queso gouda 48 % grasa en seco
+bls:M403400	Tilsit cheese min. 30 % fat in dry matter	queso tilsit 30 % grasa en seco
+bls:M403500	Tilsit cheese min. 40 % fat in dry matter	queso tilsit 40 % grasa en seco
+bls:M403600	Tilsit cheese min. 45 % fat in dry matter	queso tilsit 45 % grasa en seco
+bls:M403700	Tilsit cheese min. 50 % fat in dry matter	queso tilsit 50 % grasa en seco
+bls:M403800	Tilsit cheese min. 60 % fat in dry matter	queso tilsit 60 % grasa en seco
+bls:M404600	Wilstermarsch cheese min. 45 % fat in dry matter	queso wilstermarsch 45 % grasa en seco
+bls:M404700	Wilstermarsch cheese min. 50 % fat in dry matter	queso wilstermarsch 50 % grasa en seco
+bls:M406700	Fontina cheese min. 50 % fat in dry matter	queso fontina 50 % grasa en seco
+bls:M410700	Semi-hard cheese made from sheep's milk, min. 50 % fat in dry matter	queso semiduro de oveja 50 % grasa en seco
+bls:M500300	Semi-soft cheese min. 20 % fat in dry matter	queso semiblando 20 % grasa en seco
+bls:M500400	Semi-soft cheese min. 30 % fat in dry matter	queso semiblando 30 % grasa en seco
+bls:M500500	Semi-soft cheese min. 40 % fat in dry matter	queso semiblando 40 % grasa en seco
+bls:M500600	Semi-soft cheese min. 45 % fat in dry matter	queso semiblando 45 % grasa en seco
+bls:M500700	Semi-soft cheese min. 50 % fat in dry matter	queso semiblando 50 % grasa en seco
+bls:M500800	Semi-soft cheese min. 60 % fat in dry matter	queso semiblando 60 % grasa en seco
+bls:M501600	Butterkäse cheese min. 45 % fat in dry matter	queso butterkäse 45 % grasa en seco
+bls:M501700	Butterkäse cheese min. 50 % fat in dry matter	queso butterkäse 50 % grasa en seco
+bls:M501800	Butterkäse cheese min. 60 % fat in dry matter	queso butterkäse 60 % grasa en seco
+bls:M502600	Blue cheese min. 45 % fat in dry matter	queso azul 45 % grasa en seco
+bls:M502700	Blue cheese min. 50 % fat in dry matter	queso azul 50 % grasa en seco
+bls:M502800	Blue cheese min. 60 % fat in dry matter	queso azul 60 % grasa en seco
+bls:M503400	Steinbuscher cheese min. 30 % fat in dry matter	queso steinbuscher 30 % grasa en seco
+bls:M503600	Steinbuscher cheese min. 45 % fat in dry matter	queso steinbuscher 45 % grasa en seco
+bls:M503700	Steinbuscher cheese min. 50 % fat in dry matter	queso steinbuscher 50 % grasa en seco
+bls:M504500	Weisslacker cheese min. 40 % fat in dry matter	queso weisslacker 40 % grasa en seco
+bls:M504600	Weisslacker cheese min. 45 % fat in dry matter	queso weisslacker 45 % grasa en seco
+bls:M504700	Weisslacker cheese min. 50 % fat in dry matter	queso weisslacker 50 % grasa en seco
+bls:M505600	Trappista cheese min. 45 % fat in dry matter	queso trappista 45 % grasa en seco
+bls:M505700	Trappista cheese min. 50 % fat in dry matter	queso trappista 50 % grasa en seco
+bls:M506600	Danbo cheese min. 45 % fat in dry matter	queso danbo 45 % grasa en seco
+bls:M507600	Esrom cheese min. 45 % fat in dry matter	queso esrom 45 % grasa en seco
+bls:M508600	Havarti cheese min. 45 % fat in dry matter	queso havarti 45 % grasa en seco
+bls:M512400	Steppenkäse cheese min. 30 % fat in dry matter	queso steppenkäse 30 % grasa en seco
+bls:M512600	Steppenkäse cheese min. 45 % fat in dry matter	queso steppenkäse 45 % grasa en seco
+bls:M516700	Danish Blue cheese min. 50 % fat in dry matter	queso danablu 50 % grasa en seco
+bls:M524500	Halloumi cheese	queso halloumi
+bls:M524562	Halloumi cheese baked	queso halloumi al horno
+bls:M524572	Halloumi cheese grilled	queso halloumi a la parrilla
+bls:M524582	Halloumi cheese fried without fat (pan)	queso halloumi a la plancha
+bls:M5B1600	Gorgonzola cheese min. 48 % fat in dry matter	queso gorgonzola 48 % grasa en seco
+bls:M600300	Soft cheese min. 20 % fat in dry matter	queso blando 20 % grasa en seco
+bls:M600400	Soft cheese min. 30 % fat in dry matter	queso blando 30 % grasa en seco
+bls:M600500	Soft cheese min. 40 % fat in dry matter	queso blando 40 % grasa en seco
+bls:M600600	Soft cheese min. 45 % fat in dry matter	queso blando 45 % grasa en seco
+bls:M600700	Soft cheese min. 50 % fat in dry matter	queso blando 50 % grasa en seco
+bls:M600800	Soft cheese min. 60 % fat in dry matter	queso blando 60 % grasa en seco
+bls:M600900	Soft cheese min. 70 % fat in dry matter	queso blando 70 % grasa en seco
+bls:M601600	Brie cheese min. 45 % fat in dry matter	queso brie 45 % grasa en seco
+bls:M601700	Brie cheese min. 50 % fat in dry matter	queso brie 50 % grasa en seco
+bls:M601800	Brie cheese min. 60 % fat in dry matter	queso brie 60 % grasa en seco
+bls:M602400	Camembert cheese min. 30 % fat in dry matter	queso camembert 30 % grasa en seco
+bls:M602600	Camembert cheese min. 45 % fat in dry matter	queso camembert 45 % grasa en seco
+bls:M602700	Camembert cheese min. 50 % fat in dry matter	queso camembert 50 % grasa en seco
+bls:M602800	Camembert cheese min. 60 % fat in dry matter	queso camembert 60 % grasa en seco
+bls:M603300	Limburger cheese min. 20 % fat in dry matter	queso limburger 20 % grasa en seco
+bls:M603500	Limburger cheese min. 40 % fat in dry matter	queso limburger 40 % grasa en seco
+bls:M603700	Limburger cheese min. 50 % fat in dry matter	queso limburger 50 % grasa en seco
+bls:M604600	Muenster cheese min. 45 % fat in dry matter	queso münster 45 % grasa en seco
+bls:M604700	Muenster cheese min. 50 % fat in dry matter	queso münster 50 % grasa en seco
+bls:M605300	Romadur cheese min. 20 % fat in dry matter	queso romadur 20 % grasa en seco
+bls:M605500	Romadur cheese min. 40 % fat in dry matter	queso romadur 40 % grasa en seco
+bls:M605700	Romadur cheese min. 50 % fat in dry matter	queso romadur 50 % grasa en seco
+bls:M609600	Wine cheese, soft cheese, min. 45 % fat in dry matter	queso al vino blando 45 % grasa en seco
+bls:M609800	Wine cheese, soft cheese, min. 60 % fat in dry matter	queso al vino blando 60 % grasa en seco
+bls:M619700	Bel Paese cheese min. 50 % fat in dry matter	queso bel paese 50 % grasa en seco
+bls:M6A3700	Semi-hard cheese made from goat's milk, min. 50 % fat in dry matter	queso semiduro de cabra 50 % grasa en seco
+bls:M6A5700	Soft cheese made from sheep's milk, min. 45 % fat in dry matter	queso blando de oveja 45 % grasa en seco
+bls:M6A6800	Brine cheese made from sheep's milk, min. 45 % fat in dry matter	queso de salmuera de oveja 45 % grasa en seco
+bls:M6A9600	Soft cheese made from goat's milk, min. 45 % fat in dry matter	queso blando de cabra 45 % grasa en seco
+bls:M710100	Skyr Icelandic style strained yogurt < 10 % fat in dry matter	skyr
+bls:M710700	Cream cheese preparation min. 50 % fat in dry matter	queso crema 50 % grasa en seco
+bls:M710800	Cream cheese preparation min. 60 % fat in dry matter	queso crema 60 % grasa en seco
+bls:M711100	Cottage cheese < 10 % fat in dry matter	queso cottage desnatado
+bls:M711300	Cottage cheese min. 20 % fat in dry matter	queso cottage 20 % grasa en seco
+bls:M712200	Layered cheese min. 10 % fat in dry matter	queso en capas 10 % grasa en seco
+bls:M712300	Layered cheese min. 20 % fat in dry matter	queso en capas 20 % grasa en seco
+bls:M712500	Layered cheese min. 40 % fat in dry matter	queso en capas 40 % grasa en seco
+bls:M713100	Quark < 10 % fat in dry matter	requesón desnatado
+bls:M713200	Quark 10 % fat in dry matter	requesón 10 % grasa en seco
+bls:M713300	Quark 20 % fat in dry matter	requesón 20 % grasa en seco
+bls:M713500	Quark 40 % fat in dry matter	requesón 40 % grasa en seco
+bls:M713700	Quark 50 % fat in dry matter	requesón 50 % grasa en seco
+bls:M715800	Spread made from vegetable fats, cream, skimmed yogurt	crema para untar vegetal con nata y yogur
+bls:M730100	Soured milk cheese < 10 % fat in dry matter	queso de leche agria desnatado
+bls:M741600	Ricotta min. 45 % fat in dry matter	queso ricotta 45 % grasa en seco
+bls:M771300	Processed cheese sliceable min. 20 % fat in dry matter	queso fundido en lonchas 20 % grasa en seco
+bls:M771400	Processed cheese sliceable min. 30 % fat in dry matter	queso fundido en lonchas 30 % grasa en seco
+bls:M771600	Processed cheese sliceable min. 45 % fat in dry matter	queso fundido en lonchas 45 % grasa en seco
+bls:M771700	Processed cheese sliceable min. 50 % fat in dry matter	queso fundido en lonchas 50 % grasa en seco
+bls:M772800	Processed cheese made from cream cheese, spreadable, min. 60 % fat in dry matter	queso fundido para untar 60 % grasa en seco
+bls:M780100	German cooked cheese < 10 % fat in dry matter	queso cocido desnatado
+bls:M780200	German cooked cheese min. 10 % fat in dry matter	queso cocido 10 % grasa en seco
+bls:M780300	German cooked cheese min. 20 % fat in dry matter	queso cocido 20 % grasa en seco
+bls:M780500	German cooked cheese min. 40 % fat in dry matter	queso cocido 40 % grasa en seco
+bls:M7A1600	Cream cheese made from goat's milk, min. 45 % fat in dry matter	queso crema de cabra 45 % grasa en seco
+bls:M7A6800	Mascarpone min. 80 % fat in dry matter	queso mascarpone 80 % grasa en seco
+bls:M7B1600	Cream cheese made from sheep's milk, min. 45 % fat in dry matter	queso crema de oveja 45 % grasa en seco
+bls:M810300	Processed cheese preparation min. 20 % fat in dry matter	preparado de queso fundido 20 % grasa en seco
+bls:M810400	Processed cheese preparation min. 30 % fat in dry matter	preparado de queso fundido 30 % grasa en seco
+bls:M810500	Processed cheese preparation min. 40 % fat in dry matter	preparado de queso fundido 40 % grasa en seco
+bls:M810600	Processed cheese preparation 45 - 52 % fat in dry matter	preparado de queso fundido 45-52 % grasa en seco
+bls:M813700	Processed cheese preparation 45 - 52 % fat in dry matter, with ham	preparado de queso fundido 45-52 % grasa en seco con jamón
+bls:M816000	Processed cheese preparation 45 - 52 % fat in dry matter, with nuts	preparado de queso fundido 45-52 % grasa en seco con frutos secos
+bls:M820100	Cream cheese preparation < 10 % fat in dry matter	queso crema desnatado
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero
+bls:M820500	Cream cheese preparation min. 40 % fat in dry matter	queso crema 40 % grasa en seco
+bls:M820600	Cream cheese preparation min. 45 % fat in dry matter	queso crema 45 % grasa en seco
+bls:M821300	Dessert with yogurt mild, cream cheese and fruit preparation, sweetened	postre de yogur y queso crema con fruta azucarado
+bls:M827100	Cream cheese preparation < 10 % fat in dry matter, with vegetables/herbs	queso crema desnatado con verduras y hierbas
+bls:M827200	Cream cheese preparation min. 10 % fat in dry matter, with vegetables/herbs	queso crema 10 % grasa en seco con verduras y hierbas
+bls:M827300	Cream cheese preparation min. 20 % fat in dry matter, with vegetables/herbs	queso crema 20 % grasa en seco con verduras y hierbas
+bls:M827400	Cream cheese preparation min. 30 % fat in dry matter, with vegetables/herbs	queso crema 30 % grasa en seco con verduras y hierbas
+bls:M827500	Cream cheese preparation min. 40 % fat in dry matter, with vegetables/herbs	queso crema 40 % grasa en seco con verduras y hierbas
+bls:M827700	Cream cheese preparation min. 50 % fat in dry matter, with vegetables/herbs	queso crema 50 % grasa en seco con verduras y hierbas
+bls:M827800	Cream cheese preparation min. 60 % fat in dry matter, with vegetables/herbs	queso crema 60 % grasa en seco con verduras y hierbas
+bls:M831100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón desnatado con fruta azucarado
+bls:M831300	Quark preparation min. 20 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón 20 % grasa en seco con fruta azucarado
+bls:M831500	Quark preparation min. 40 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón 40 % grasa en seco con fruta azucarado
+bls:M832100	Quark preparation < 10 % fat in dry matter, with vanilla preparation, sweetened	preparado de requesón desnatado de vainilla azucarado
+bls:M837500	Quark preparation min. 40 % fat in dry matter, with herbs	preparado de requesón 40 % grasa en seco con hierbas
+bls:M856000	Semolina pudding with cream and fruit sauce, sweetened	pudín de sémola con nata y salsa de frutas azucarado
+bls:M857000	Semolina pudding with cream, sweetened	pudín de sémola con nata azucarado
+bls:M861000	Mousse au chocolat (milk-based) sweetened	mousse de chocolate lácteo azucarado
+bls:M863000	Obatzter/Obazda (Bavarian cheese spread) 60 % fat in dry matter	obatzda 60 % grasa en seco
+bls:M881000	Milk powder with high fat content (cream powder)	nata en polvo
+bls:M882000	Whole milk powder	leche entera en polvo
+bls:M884000	Skimmed milk powder	leche desnatada en polvo
+bls:M886000	Buttermilk powder	suero de mantequilla en polvo
+bls:M887000	Sweet whey powder	suero dulce en polvo
+bls:M8A1200	Cream cheese preparation min. 10 % fat in dry matter, with fruit preparation, sweetened, fortified with vitamin D and Calcium	queso crema 10 % grasa en seco con fruta con vitamina D y calcio
+bls:M8A1300	Cream cheese preparation min. 20 % fat in dry matter, with fruit preparation, sweetened, fortified with Calcium	queso crema 20 % grasa en seco con fruta con calcio
+bls:M8A4000	Quark preparation min. 10 % fat in dry matter, with herbs	preparado de requesón 10 % grasa en seco con hierbas
+bls:M8A5000	Quark preparation min. 20 % fat in dry matter, with herbs	preparado de requesón 20 % grasa en seco con hierbas
+bls:M8A6000	Quark preparation min. 30 % fat in dry matter, with herbs	preparado de requesón 30 % grasa en seco con hierbas
+bls:M8B2100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sugar and artificial sweeteners	preparado de requesón desnatado con fruta con azúcar y edulcorante
+bls:M8C3300	Quark preparation min. 20 % fat in dry matter, with vanilla preparation, sweetened	preparado de requesón 20 % grasa en seco de vainilla azucarado
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	agua con sabor sin azúcar
+bls:N002000	Nearwater/Aqua Plus beverage, flavoured, sweetened	agua con sabor azucarada
+bls:N003000	Aperitif alcohol-free	aperitivo sin alcohol
+bls:N005000	Sparkling wine alcohol-free	cava sin alcohol
+bls:N014000	Wine alcohol-free	vino sin alcohol
+bls:N019000	Iced tea lemon-peach-flavoured, sweetened	té frío sabor limón y melocotón azucarado
+bls:N0A1000	Nearwater/Aqua Plus beverage, with fruit juice, flavoured, sweetened	agua con sabor con zumo de frutas azucarada
+bls:N0A1100	Nearwater/Aqua Plus beverage, flavoured, with sugar and artificial sweeteners	agua con sabor con azúcar y edulcorante
+bls:N110000	Drinking water	agua potable
+bls:N120000	Natural mineral water	agua mineral
+bls:N127000	Natural mineral water carbonated	agua mineral con gas
+bls:N128000	Natural mineral water still	agua mineral sin gas
+bls:N130000	Natural mineral water with low mineral content	agua mineral de mineralización débil
+bls:N160000	Spring water	agua de manantial
+bls:N210000	Fruit juice beverage apple	bebida de zumo de manzana
+bls:N220000	Fruit juice beverage cherry	bebida de zumo de cereza
+bls:N230000	Fruit juice beverage currant	bebida de zumo de grosella
+bls:N250000	Fruit juice beverage citrus fruit	bebida de zumo de cítricos
+bls:N251000	Fruit juice beverage with sugar and artificial sweeteners	bebida de zumo con azúcar y edulcorante
+bls:N252000	Fruit juice beverage fortified with vitamins	bebida de zumo con vitaminas
+bls:N253000	Fruit juice beverage with artificial sweeteners, fortified with vitamins	bebida de zumo con edulcorante con vitaminas
+bls:N256000	Apple juice spritzer	zumo de manzana con agua con gas
+bls:N257000	Orange juice spritzer	zumo de naranja con agua con gas
+bls:N258000	Grape juice spritzer	zumo de uva con agua con gas
+bls:N259000	Isotonic beverage, sweetened, fortified with vitamins and minerals	bebida isotónica azucarada con vitaminas y minerales
+bls:N260000	Isotonic beverage with sugar and artificial sweeteners, fortified with vitamins and minerals	bebida isotónica con azúcar y edulcorante con vitaminas y minerales
+bls:N261000	Cherry nectar spritzer	néctar de cereza con agua con gas
+bls:N261700	Peach-maracuja fruit nectar	néctar de melocotón y maracuyá
+bls:N262000	Pear juice spritzer	zumo de pera con agua con gas
+bls:N264000	Currant juice spritzer	néctar de grosella con agua con gas
+bls:N265000	Fruit juice beverage ACE fortified	bebida de zumo con vitaminas ACE
+bls:N270000	Grapefruit juice spritzer	zumo de pomelo con agua con gas
+bls:N271000	Multi-fruit juice spritzer	zumo multifruta con agua con gas
+bls:N272000	Carrot juice spritzer	zumo de zanahoria con agua con gas
+bls:N273000	Pineapple juice spritzer	zumo de piña con agua con gas
+bls:N274000	Banana nectar spritzer	néctar de plátano con agua con gas
+bls:N276000	Peach-maracuja nectar spritzer	néctar de melocotón y maracuyá con agua con gas
+bls:N277000	Multi-fruit juice spritzer fortified with vitamins (multivitamin juice spritzer)	zumo multivitaminas con agua con gas
+bls:N310300	Orange soft drink	refresco de naranja
+bls:N310400	Carbonated lemonade	gaseosa
+bls:N311000	Carbonated soft drink with artificial sweeteners	refresco con edulcorante
+bls:N312000	Carbonated soft drink with higher fruit juice content	refresco con más zumo
+bls:N314000	Carbonated soft drink with quinine	tónica
+bls:N315000	Ginger Ale	ginger ale
+bls:N316000	Carbonated soft drink with spice extracts and artificial sweeteners	refresco de especias con edulcorante
+bls:N321000	Carbonated sherbet with sugar and artificial sweeteners	refresco efervescente con azúcar y edulcorante
+bls:N323000	Carbonated sherbet	refresco efervescente
+bls:N330000	Cola beverage caffeinated	cola con cafeína
+bls:N331000	Cola beverage caffeinated, with artificial sweeteners	cola con cafeína con edulcorante
+bls:N340000	Cola beverage decaffeinated	cola sin cafeína
+bls:N352000	Cola beverage decaffeinated, with artificial sweeteners	cola sin cafeína con edulcorante
+bls:N390100	Cola Mix (cola beverage caffeinated with orange soft drink)	cola con naranja
+bls:N410100	Coffee (infusion)	café de filtro
+bls:N410200	Coffee (infusion) with milk 3.5 % fat	café con leche 3,5 %
+bls:N410300	Coffee (infusion) with milk 3.5 % fat and sugar	café con leche 3,5 % y azúcar
+bls:N410400	Coffee (infusion) with evaporated milk 7.5 % fat	café con leche evaporada 7,5 %
+bls:N410500	Coffee (infusion) with evaporated milk 7.5 % fat and sugar	café con leche evaporada 7,5 % y azúcar
+bls:N410600	Coffee (infusion) with sugar	café con azúcar
+bls:N410800	Coffee (infusion) with alcohol	café con alcohol
+bls:N411100	Espresso (infusion)	espresso
+bls:N411200	Espresso (infusion) with sugar	espresso con azúcar
+bls:N412900	Cappuccino (infusion) made from sweetened instant powder	capuchino de sobre azucarado
+bls:N414000	Cappuccino (infusion) with milk 3.5 % fat	capuchino con leche 3,5 %
+bls:N414100	Coffee (infusion) decaffeinated, with milk 3.5 % fat	café descafeinado con leche 3,5 %
+bls:N414200	Coffee (infusion) decaffeinated, with evaporated milk 7.5 % fat	café descafeinado con leche evaporada 7,5 %
+bls:N415000	Coffee (infusion) decaffeinated	café descafeinado
+bls:N416000	Coffee (infusion) caffeine-reduced	café bajo en cafeína
+bls:N418000	Latte Macchiato (infusion) with milk 3.5 % fat	latte macchiato con leche 3,5 %
 bls:P192000	Pilsner beer mixed with carbonated lemonade	cerveza con gaseosa (clara)
 bls:P464000	Sherry sweet	jerez dulce
 bls:P560000	Bitter/herb/spice liqueur	licor de hierbas amargo
