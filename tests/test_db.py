@@ -233,6 +233,57 @@ def test_load_mt_scales_past_the_pg_parameter_limit(tmp_path):
             "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == 1
 
 
+def test_health_names_is_advisory_and_flags_a_short_or_failed_mt_load(tmp_path, monkeypatch):
+    """`names` in the health JSON is never part of `ok` — a translation gap must not 503 the
+    API — but it says not-ok when fewer rows are held than the TSVs can cover, or when the
+    last load_mt run died."""
+    from sqlalchemy import text
+
+    from fooddb import health, ingest
+    from fooddb import names as names_mod
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    now = datetime(2026, 10, 17, 12, tzinfo=UTC)
+    for f in health.watched():
+        if f != "snapshot":
+            health.checked(f, at=now)
+    with engine().begin() as conn:  # and a fresh snapshot: the report is green without names
+        conn.execute(text("insert into snapshot (day, built_at, products) values (current_date, :t, 0)"),
+                     {"t": now})
+    ingest.run("t", "r1", [rec()])
+    (tmp_path / "ru.tsv").write_text("fdc:1\tHummus, commercial\tхумус\n", encoding="utf-8")
+    monkeypatch.setattr(names_mod, "MT_DIR", tmp_path)
+
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False  # never loaded: held 0 < expected 1
+    assert r["names"]["languages"]["ru"] == {"expected": 1, "held": 0, "ok": False}
+    assert r["names"]["last_ok"] is None
+
+    load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True and r["names"]["languages"]["ru"]["held"] == 1
+    assert r["names"]["last_ok"] is not None and r["names"]["last_failed"] is None
+
+    with engine().begin() as conn:  # held drops below what the TSV can cover
+        conn.execute(text("delete from food_name where origin = 'mt'"))
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False
+
+    real_load = names_mod._load  # the load dies mid-run -> last run failed marks names not-ok
+    monkeypatch.setattr(names_mod, "_load", lambda dir: (_ for _ in ()).throw(RuntimeError("x")))
+    with pytest.raises(RuntimeError):
+        load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False and r["names"]["last_failed"] is not None
+
+    monkeypatch.setattr(names_mod, "_load", real_load)
+    load_mt(tmp_path)  # the next good run clears the flag
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True
+    assert client().get("/healthz").status_code == 200
+
+
 def test_no_two_records_share_an_mt_name_with_different_kcal():
     """Two records that collapse to one mt name must be the same food for energy: a shared name
     whose newest accepted ENERC_KCAL differ by more than 10 % means a qualifier that changes the
