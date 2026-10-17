@@ -1319,7 +1319,7 @@ fdc:168603	Nuts, almond butter, plain, with salt added	crema de almendra salada
 fdc:168604	Seeds, sesame butter, tahini, type of kernels unspecified	tahini
 fdc:168605	Beef, retail cuts, separable fat, raw	grasa de vacuno cruda
 fdc:168606	Beef, retail cuts, separable fat, cooked	grasa de vacuno cocinada
-fdc:168607	Beef, brisket, whole, separable lean only, all grades, raw	falda de vacuno magra cruda
+fdc:168607	Beef, brisket, whole, separable lean only, all grades, raw	pecho de vacuno entero magro crudo
 fdc:168608	Beef, grass-fed, ground, raw	vacuno picado de pastura crudo
 fdc:168609	Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw	filete de falda de vacuno magro crudo
 fdc:168610	Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, cooked, braised	filete de falda de vacuno magro estofado
@@ -1790,7 +1790,7 @@ fdc:169074	Tomato sauce, canned, no salt added	salsa de tomate en conserva sin s
 fdc:169075	Cereals ready-to-eat, ALPEN	muesli Alpen
 fdc:169076	Cereals ready-to-eat, FAMILIA	muesli Familia
 fdc:169077	Cereals ready-to-eat, wheat and bran, presweetened with nuts and fruits	cereales de trigo y salvado con frutos secos y fruta azucarados
-fdc:169078	Cheese, cottage, with vegetables	requesón con verduras
+fdc:169078	Cheese, cottage, with vegetables	requesón envasado con verduras
 fdc:169079	Cheese, cream, low fat	queso crema desnatado
 fdc:169080	Cheese, pasteurized process, American, low fat	queso fundido bajo en grasa
 fdc:169081	Cheese spread, cream cheese base	crema de queso para untar
@@ -4099,7 +4099,7 @@ fdc:171383	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, ADVANCE with iron,
 fdc:171384	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, ADVANCE with iron, powder, not reconstituted	fórmula infantil Similac Isomil Advance en polvo con hierro
 fdc:171385	Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, ready-to-feed	fórmula infantil Good Start Supreme con hierro, DHA y ARA
 fdc:171386	Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, prepared from liquid concentrate	fórmula infantil Good Start Supreme de concentrado
-fdc:171387	Infant Formula, MEAD JOHNSON, ENFAMIL GENTLEASE, with iron, prepared from powder	fórmula infantil Enfamil Gentlease de polvo con hierro
+fdc:171387	Infant Formula, MEAD JOHNSON, ENFAMIL GENTLEASE, with iron, prepared from powder	fórmula infantil Enfamil Gentlease en polvo con hierro
 fdc:171388	Babyfood, fortified cereal bar, fruit filling	barrita de cereales enriquecida con fruta infantil
 fdc:171389	Infant Formula, MEAD JOHNSON, ENFAMIL, GENTLEASE, with ARA and DHA powder not reconstituted	fórmula infantil Enfamil Gentlease en polvo con DHA y ARA
 fdc:171390	Infant formula, MEAD JOHNSON, ENFAMIL, Enfagrow, Soy, Toddler ready-to-feed	fórmula infantil Enfagrow de soja lista para tomar
@@ -4282,7 +4282,7 @@ fdc:174403	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), se
 fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	pechuga de pavo cruda con salmuera
 fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	pechuga de pavo asada
 fdc:174666	Figs, dried, stewed	compota de higos secos
-fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	falda de ternera estofada
+fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	pecho de ternera estofado
 fdc:174766	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw	pecho de ternera crudo
 fdc:174767	Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, cooked, braised	paleta de ternera estofada
 fdc:174773	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	rabillo de cadera de ternera asado
@@ -4330,7 +4330,7 @@ fdc:2705412	Oat milk	leche de avena
 fdc:2705413	Coconut milk	leche de coco
 fdc:2705414	Yogurt, NFS	yogur
 fdc:2705415	Yogurt, Greek, NS as to type of milk or flavor	yogur griego
-fdc:2705416	Yogurt, NS as to type of milk or flavor	yogur
+fdc:2705416	Yogurt, NS as to type of milk or flavor	yogur clásico
 fdc:2705417	Yogurt, NS as to type of milk, plain	yogur natural
 fdc:2705418	Yogurt, whole milk, plain	yogur natural entero
 fdc:2705419	Yogurt, low fat milk, plain	yogur natural bajo en grasa
@@ -4386,29 +4386,29 @@ fdc:2705468	Chocolate milk, reduced fat (2%)	leche chocolatada semidesnatada
 fdc:2705469	Chocolate milk, fat free (skim)	leche chocolatada desnatada
 fdc:2705470	Chocolate milk, low fat (1%)	leche chocolatada semidesnatada 1 %
 fdc:2705471	Chocolate milk, reduced sugar, NFS	leche chocolatada reducida en azúcar
-fdc:2705472	Hot chocolate / cocoa, NFS	chocolate caliente
-fdc:2705473	Hot chocolate / cocoa, made with whole or reduced fat (2%) milk	chocolate caliente con leche entera
-fdc:2705474	Hot chocolate / cocoa, made with lowfat (1%) or fat free (skim) milk	chocolate caliente con leche desnatada
-fdc:2705475	Hot chocolate / cocoa, made with non-dairy milk	chocolate caliente con bebida vegetal
-fdc:2705476	Hot chocolate / cocoa, with whipped cream	chocolate caliente con nata montada
+fdc:2705472	Hot chocolate / cocoa, NFS	chocolate a la taza
+fdc:2705473	Hot chocolate / cocoa, made with whole or reduced fat (2%) milk	chocolate a la taza con leche entera
+fdc:2705474	Hot chocolate / cocoa, made with lowfat (1%) or fat free (skim) milk	chocolate a la taza con leche desnatada
+fdc:2705475	Hot chocolate / cocoa, made with non-dairy milk	chocolate a la taza con bebida vegetal
+fdc:2705476	Hot chocolate / cocoa, with whipped cream	chocolate a la taza con nata montada
 fdc:2705477	Chocolate milk, Nesquik, NS as to type of milk	leche chocolatada Nesquik
 fdc:2705478	Chocolate milk, Nesquik, made with non-dairy milk	leche chocolatada Nesquik con bebida vegetal
 fdc:2705479	Chocolate milk, reduced sugar, whole	leche chocolatada entera reducida en azúcar
 fdc:2705480	Chocolate milk, reduced sugar, reduced fat (2%)	leche chocolatada semidesnatada reducida en azúcar
 fdc:2705481	Chocolate milk, reduced sugar, low fat (1%)	leche chocolatada semidesnatada 1 % reducida en azúcar
 fdc:2705482	Chocolate milk, reduced sugar, fat free (skim)	leche chocolatada desnatada reducida en azúcar
-fdc:2705483	Hot chocolate / cocoa, dry mix, made with water	chocolate caliente de polvo con agua
-fdc:2705484	Hot chocolate / cocoa, dry mix, made with whole or reduced fat (2%) milk	chocolate caliente de polvo con leche entera
-fdc:2705485	Hot chocolate / cocoa, dry mix, made with lowfat (1%) or fat free (skim) milk	chocolate caliente de polvo con leche desnatada
-fdc:2705486	Hot chocolate / cocoa, dry mix , made with non-dairy milk	chocolate caliente de polvo con bebida vegetal
-fdc:2705487	Hot chocolate / cocoa, dry mix, made with water, with whipped cream	chocolate caliente de polvo con agua y nata montada
-fdc:2705488	Hot chocolate / cocoa, dry mix, reduced sugar, made with water	chocolate caliente de polvo reducido en azúcar con agua
-fdc:2705489	Hot chocolate / cocoa, dry mix, reduced sugar, made with whole or reduced fat (2%) milk	chocolate caliente de polvo reducido en azúcar con leche entera
-fdc:2705490	Hot chocolate / cocoa, reduced sugar, made with non-dairy milk	chocolate caliente reducido en azúcar con bebida vegetal
-fdc:2705491	Hot chocolate / cocoa, reduced sugar, made with whole or reduced fat (2%) milk	chocolate caliente reducido en azúcar con leche entera
-fdc:2705492	Hot chocolate / cocoa, dry mix, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate caliente de polvo reducido en azúcar con leche desnatada
-fdc:2705493	Hot chocolate / cocoa, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate caliente reducido en azúcar con leche desnatada
-fdc:2705494	Hot chocolate / cocoa, dry mix, reduced sugar, made with non-dairy milk	chocolate caliente de polvo reducido en azúcar con bebida vegetal
+fdc:2705483	Hot chocolate / cocoa, dry mix, made with water	chocolate a la taza en polvo con agua
+fdc:2705484	Hot chocolate / cocoa, dry mix, made with whole or reduced fat (2%) milk	chocolate a la taza en polvo con leche entera
+fdc:2705485	Hot chocolate / cocoa, dry mix, made with lowfat (1%) or fat free (skim) milk	chocolate a la taza en polvo con leche desnatada
+fdc:2705486	Hot chocolate / cocoa, dry mix , made with non-dairy milk	chocolate a la taza en polvo con bebida vegetal
+fdc:2705487	Hot chocolate / cocoa, dry mix, made with water, with whipped cream	chocolate a la taza en polvo con agua y nata montada
+fdc:2705488	Hot chocolate / cocoa, dry mix, reduced sugar, made with water	chocolate a la taza en polvo reducido en azúcar con agua
+fdc:2705489	Hot chocolate / cocoa, dry mix, reduced sugar, made with whole or reduced fat (2%) milk	chocolate a la taza en polvo reducido en azúcar con leche entera
+fdc:2705490	Hot chocolate / cocoa, reduced sugar, made with non-dairy milk	chocolate a la taza reducido en azúcar con bebida vegetal
+fdc:2705491	Hot chocolate / cocoa, reduced sugar, made with whole or reduced fat (2%) milk	chocolate a la taza reducido en azúcar con leche entera
+fdc:2705492	Hot chocolate / cocoa, dry mix, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate a la taza en polvo reducido en azúcar con leche desnatada
+fdc:2705493	Hot chocolate / cocoa, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate a la taza reducido en azúcar con leche desnatada
+fdc:2705494	Hot chocolate / cocoa, dry mix, reduced sugar, made with non-dairy milk	chocolate a la taza en polvo reducido en azúcar con bebida vegetal
 fdc:2705495	Strawberry milk, NFS	leche de fresa
 fdc:2705496	Strawberry milk, whole	leche de fresa entera
 fdc:2705497	Strawberry milk, reduced fat (2%)	leche de fresa semidesnatada
@@ -4435,29 +4435,29 @@ fdc:2705517	Chocolate milk drink	bebida de leche con chocolate
 fdc:2705518	Infant formula, NFS	leche de fórmula
 fdc:2705519	Infant formula, Similac, NFS	leche de fórmula Similac
 fdc:2705520	Infant formula, Similac Alimentum, ready-to-feed	leche de fórmula Similac Alimentum líquida
-fdc:2705521	Infant formula, Similac Alimentum, powder, made with water	leche de fórmula Similac Alimentum de polvo
+fdc:2705521	Infant formula, Similac Alimentum, powder, made with water	leche de fórmula Similac Alimentum en polvo
 fdc:2705522	Infant formula, Similac Advance, ready-to-feed	leche de fórmula Similac Advance líquida
-fdc:2705523	Infant formula, Similac Advance, powder, made with tap water	leche de fórmula Similac Advance de polvo
-fdc:2705524	Infant formula, Similac Advance, powder, made with bottled water	leche de fórmula Similac Advance de polvo
-fdc:2705525	Infant formula, Similac Advance, powder, made with baby water	leche de fórmula Similac Advance de polvo
+fdc:2705523	Infant formula, Similac Advance, powder, made with tap water	leche de fórmula Similac Advance en polvo
+fdc:2705524	Infant formula, Similac Advance, powder, made with bottled water	leche de fórmula Similac Advance en polvo
+fdc:2705525	Infant formula, Similac Advance, powder, made with baby water	leche de fórmula Similac Advance en polvo
 fdc:2705526	Infant formula, Similac Sensitive, ready-to-feed	leche de fórmula Similac Sensitive líquida
-fdc:2705527	Infant formula, Similac Sensitive, powder, made with tap water	leche de fórmula Similac Sensitive de polvo
-fdc:2705528	Infant formula, Similac Sensitive, powder, made with bottled water	leche de fórmula Similac Sensitive de polvo
-fdc:2705529	Infant formula, Similac Sensitive, powder, made with baby water	leche de fórmula Similac Sensitive de polvo
+fdc:2705527	Infant formula, Similac Sensitive, powder, made with tap water	leche de fórmula Similac Sensitive en polvo
+fdc:2705528	Infant formula, Similac Sensitive, powder, made with bottled water	leche de fórmula Similac Sensitive en polvo
+fdc:2705529	Infant formula, Similac Sensitive, powder, made with baby water	leche de fórmula Similac Sensitive en polvo
 fdc:2705530	Infant formula, Similac for Spit-Up, ready-to-feed	leche de fórmula Similac for Spit-Up líquida
-fdc:2705531	Infant formula, Similac for Spit-Up, powder, made with water	leche de fórmula Similac for Spit-Up de polvo
+fdc:2705531	Infant formula, Similac for Spit-Up, powder, made with water	leche de fórmula Similac for Spit-Up en polvo
 fdc:2705532	Toddler formula, Similac Go and Grow	leche de crecimiento Similac Go and Grow
 fdc:2705533	Infant formula, Enfamil, NFS	leche de fórmula Enfamil
 fdc:2705534	Infant formula, Enfamil Infant, ready-to-feed	leche de fórmula Enfamil Infant líquida
-fdc:2705535	Infant formula, Enfamil Infant, powder, made with tap water	leche de fórmula Enfamil Infant de polvo
-fdc:2705536	Infant formula, Enfamil Infant, powder, made with bottled water	leche de fórmula Enfamil Infant de polvo
-fdc:2705537	Infant formula, Enfamil Infant, powder, made with baby water	leche de fórmula Enfamil Infant de polvo
+fdc:2705535	Infant formula, Enfamil Infant, powder, made with tap water	leche de fórmula Enfamil Infant en polvo
+fdc:2705536	Infant formula, Enfamil Infant, powder, made with bottled water	leche de fórmula Enfamil Infant en polvo
+fdc:2705537	Infant formula, Enfamil Infant, powder, made with baby water	leche de fórmula Enfamil Infant en polvo
 fdc:2705538	Infant formula, Enfamil AR, ready-to-feed	leche de fórmula Enfamil AR líquida
-fdc:2705539	Infant formula, Enfamil AR, powder, made with water	leche de fórmula Enfamil AR de polvo
+fdc:2705539	Infant formula, Enfamil AR, powder, made with water	leche de fórmula Enfamil AR en polvo
 fdc:2705540	Infant formula, Enfamil Gentlease, ready-to-feed	leche de fórmula Enfamil Gentlease líquida
-fdc:2705541	Infant formula, Enfamil Gentlease, powder, made with tap water	leche de fórmula Enfamil Gentlease de polvo
-fdc:2705542	Infant formula, Enfamil Gentlease, powder, made with bottled water	leche de fórmula Enfamil Gentlease de polvo
-fdc:2705543	Infant formula, Enfamil Gentlease, powder, made with baby water	leche de fórmula Enfamil Gentlease de polvo
+fdc:2705541	Infant formula, Enfamil Gentlease, powder, made with tap water	leche de fórmula Enfamil Gentlease en polvo
+fdc:2705542	Infant formula, Enfamil Gentlease, powder, made with bottled water	leche de fórmula Enfamil Gentlease en polvo
+fdc:2705543	Infant formula, Enfamil Gentlease, powder, made with baby water	leche de fórmula Enfamil Gentlease en polvo
 fdc:2705544	Toddler formula, Enfamil Enfagrow	leche de crecimiento Enfamil Enfagrow
 fdc:2705545	Toddler formula, PediaSure	batido infantil PediaSure
 fdc:2705546	Toddler formula, Nido Kinder	leche de crecimiento Nido Kinder
@@ -4465,38 +4465,38 @@ fdc:2705547	Toddler formula, store brand, beginning or next stage	leche de creci
 fdc:2705548	Toddler formula, store brand, pediatric shake	batido infantil de marca blanca
 fdc:2705549	Infant formula, Gerber, NFS	leche de fórmula Gerber
 fdc:2705550	Infant formula, Gerber Good Start Gentle, Stage 1, ready-to-feed	leche de fórmula Gerber Good Start Gentle 1 líquida
-fdc:2705551	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Gentle 1 de polvo
-fdc:2705552	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Gentle 1 de polvo
-fdc:2705553	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Gentle 1 de polvo
+fdc:2705551	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Gentle 1 en polvo
+fdc:2705552	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Gentle 1 en polvo
+fdc:2705553	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Gentle 1 en polvo
 fdc:2705554	Infant formula, Gerber Good Start Gentle, Stage 2	leche de fórmula Gerber Good Start Gentle 2
 fdc:2705555	Toddler formula, Gerber Good Start, Stage 3	leche de crecimiento Gerber Good Start 3
-fdc:2705556	Infant formula, premature, powder, made with water	leche de fórmula para prematuros de polvo
+fdc:2705556	Infant formula, premature, powder, made with water	leche de fórmula para prematuros en polvo
 fdc:2705557	Infant formula, premature, ready-to-feed	leche de fórmula para prematuros líquida
-fdc:2705558	Infant formula, organic, powder, made with water	leche de fórmula ecológica de polvo
+fdc:2705558	Infant formula, organic, powder, made with water	leche de fórmula ecológica en polvo
 fdc:2705559	Infant formula, organic, ready-to-feed	leche de fórmula ecológica líquida
-fdc:2705560	Infant formula, store brand, advantage or tender, powder, made with tap water	leche de fórmula de marca blanca de polvo
-fdc:2705561	Infant formula, store brand, advantage or tender, powder, made with bottled water	leche de fórmula de marca blanca de polvo
-fdc:2705562	Infant formula, store brand, advantage or tender, powder, made with baby water	leche de fórmula de marca blanca de polvo
+fdc:2705560	Infant formula, store brand, advantage or tender, powder, made with tap water	leche de fórmula de marca blanca en polvo
+fdc:2705561	Infant formula, store brand, advantage or tender, powder, made with bottled water	leche de fórmula de marca blanca en polvo
+fdc:2705562	Infant formula, store brand, advantage or tender, powder, made with baby water	leche de fórmula de marca blanca en polvo
 fdc:2705563	Infant formula, store brand, gentle or sensitivity	leche de fórmula de marca blanca suave
 fdc:2705564	Infant formula, store brand, added rice	leche de fórmula de marca blanca con arroz
 fdc:2705565	Infant formula, Enfamil ProSobee, ready-to-feed	leche de fórmula Enfamil ProSobee líquida
-fdc:2705566	Infant formula, Enfamil ProSobee, powder, made with tap water	leche de fórmula Enfamil ProSobee de polvo
-fdc:2705567	Infant formula, Enfamil ProSobee, powder, made with bottled water	leche de fórmula Enfamil ProSobee de polvo
-fdc:2705568	Infant formula, Enfamil ProSobee, powder, made with baby water	leche de fórmula Enfamil ProSobee de polvo
+fdc:2705566	Infant formula, Enfamil ProSobee, powder, made with tap water	leche de fórmula Enfamil ProSobee en polvo
+fdc:2705567	Infant formula, Enfamil ProSobee, powder, made with bottled water	leche de fórmula Enfamil ProSobee en polvo
+fdc:2705568	Infant formula, Enfamil ProSobee, powder, made with baby water	leche de fórmula Enfamil ProSobee en polvo
 fdc:2705569	Infant formula, Similac Isomil Soy, ready-to-feed	leche de fórmula Similac Isomil Soy líquida
-fdc:2705570	Infant formula, Similac Isomil Soy, powder, made with tap water	leche de fórmula Similac Isomil Soy de polvo
-fdc:2705571	Infant formula, Similac Isomil Soy, powder, made with bottled water	leche de fórmula Similac Isomil Soy de polvo
-fdc:2705572	Infant formula, Similac Isomil Soy, powder, made with baby water	leche de fórmula Similac Isomil Soy de polvo
+fdc:2705570	Infant formula, Similac Isomil Soy, powder, made with tap water	leche de fórmula Similac Isomil Soy en polvo
+fdc:2705571	Infant formula, Similac Isomil Soy, powder, made with bottled water	leche de fórmula Similac Isomil Soy en polvo
+fdc:2705572	Infant formula, Similac Isomil Soy, powder, made with baby water	leche de fórmula Similac Isomil Soy en polvo
 fdc:2705573	Infant formula, Similac for Diarrhea	leche de fórmula Similac for Diarrhea
 fdc:2705574	Infant formula, Gerber Good Start Soy, Stage 1, ready-to-feed	leche de fórmula Gerber Good Start Soy 1 líquida
-fdc:2705575	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Soy 1 de polvo
-fdc:2705576	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Soy 1 de polvo
-fdc:2705577	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Soy 1 de polvo
+fdc:2705575	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Soy 1 en polvo
+fdc:2705576	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Soy 1 en polvo
+fdc:2705577	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Soy 1 en polvo
 fdc:2705578	Infant formula, store brand, soy	leche de fórmula de marca blanca de soja
 fdc:2705579	Infant formula, Enfamil Nutramigen, ready-to-feed	leche de fórmula Enfamil Nutramigen líquida
-fdc:2705580	Infant formula, Enfamil Nutramigen, powder, made with water	leche de fórmula Enfamil Nutramigen de polvo
+fdc:2705580	Infant formula, Enfamil Nutramigen, powder, made with water	leche de fórmula Enfamil Nutramigen en polvo
 fdc:2705581	Infant formula, Enfamil Pregestimil, ready-to-feed	leche de fórmula Enfamil Pregestimil líquida
-fdc:2705582	Infant formula, Enfamil Pregestimil, powder, made with water	leche de fórmula Enfamil Pregestimil de polvo
+fdc:2705582	Infant formula, Enfamil Pregestimil, powder, made with water	leche de fórmula Enfamil Pregestimil en polvo
 fdc:2705583	Infant formula, amino acids	leche de fórmula de aminoácidos
 fdc:2705584	Infant formula, low iron	leche de fórmula baja en hierro
 fdc:2705585	Milk, dry, not reconstituted	leche en polvo
@@ -4507,7 +4507,7 @@ fdc:2705589	Chocolate beverage powder, light, dry mix, not reconstituted	polvo p
 fdc:2705590	Milk, malted, dry mix, not reconstituted	polvo para leche malteada
 fdc:2705591	Strawberry beverage powder, dry mix, not reconstituted	polvo para batido de fresa
 fdc:2705592	Cream, NS as to light, heavy, or half and half	nata
-fdc:2705593	Cream, light	nata ligera
+fdc:2705593	Cream, light	nata para cocinar
 fdc:2705594	Cream, half and half	nata para café
 fdc:2705595	Cream, half and half, flavored	nata para café de sabores
 fdc:2705596	Cream, half and half, fat free	nata para café desnatada
@@ -4596,7 +4596,7 @@ fdc:2705678	Fudgesicle, light	polo de chocolate ligero
 fdc:2705679	Pudding, chocolate, NFS	natillas de chocolate
 fdc:2705680	Pudding, bread	pudin de pan
 fdc:2705681	Pudding, flavors other than chocolate, NFS	natillas
-fdc:2705682	Custard	crema pastelera
+fdc:2705682	Custard	crema inglesa
 fdc:2705683	Flan	flan
 fdc:2705684	Creme brulee	crème brûlée
 fdc:2705685	Pudding, rice	arroz con leche
@@ -4606,11 +4606,11 @@ fdc:2705688	Pudding, flavors other than chocolate, made from dry mix	natillas de
 fdc:2705689	Pudding, chocolate, made from dry mix	natillas de chocolate de preparado
 fdc:2705690	Pudding, flavors other than chocolate, made from dry mix, sugar free	natillas de preparado sin azúcar
 fdc:2705691	Pudding, chocolate, made from dry mix, sugar free	natillas de chocolate de preparado sin azúcar
-fdc:2705692	Pudding, flavors other than chocolate, ready-to-eat	natillas listas para comer
-fdc:2705693	Pudding, flavors other than chocolate, ready-to-eat, sugar free	natillas listas para comer sin azúcar
-fdc:2705694	Pudding, chocolate, ready-to-eat	natillas de chocolate listas para comer
-fdc:2705695	Pudding, chocolate, ready-to-eat, sugar free	natillas de chocolate listas para comer sin azúcar
-fdc:2705696	Pudding, tapioca, ready-to-eat	natillas de tapioca listas para comer
+fdc:2705692	Pudding, flavors other than chocolate, ready-to-eat	natillas listas para consumir
+fdc:2705693	Pudding, flavors other than chocolate, ready-to-eat, sugar free	natillas listas para consumir sin azúcar
+fdc:2705694	Pudding, chocolate, ready-to-eat	natillas de chocolate listas para consumir
+fdc:2705695	Pudding, chocolate, ready-to-eat, sugar free	natillas de chocolate listas para consumir sin azúcar
+fdc:2705696	Pudding, tapioca, ready-to-eat	natillas de tapioca listas para consumir
 fdc:2705697	Banana pudding	natillas de plátano
 fdc:2705698	Mousse	mousse
 fdc:2705699	Dulce de leche	dulce de leche
@@ -4666,7 +4666,7 @@ fdc:2705748	Cheese, cottage, creamed, large or small curd	requesón en grano
 fdc:2705749	Cottage cheese, farmer's	requesón de granja
 fdc:2705750	Cheese, Ricotta	queso ricotta
 fdc:2705751	Cheese, cottage, with fruit	requesón con fruta
-fdc:2705752	Cheese, cottage, with vegetables	requesón bajo en grasa con verduras
+fdc:2705752	Cheese, cottage, with vegetables	requesón con verduras
 fdc:2705753	Cheese, cottage, dry curd	requesón seco
 fdc:2705754	Cheese, cottage, salted, dry curd	requesón seco salado
 fdc:2705755	Puerto Rican white cheese	queso blanco puertorriqueño
@@ -4700,7 +4700,7 @@ fdc:2705782	Artichoke dip	salsa de alcachofas
 fdc:2705783	Spinach and artichoke dip	salsa de espinacas y alcachofas
 fdc:2705784	Seafood dip	salsa de marisco para mojar
 fdc:2705785	Cheese dip with chili pepper	salsa de queso con chile
-fdc:2705786	Cheese dip	salsa de queso
+fdc:2705786	Cheese dip	salsa de queso para mojar
 fdc:2705787	Topping from cheese pizza	ingredientes de pizza de queso
 fdc:2705788	Topping from vegetable pizza	ingredientes de pizza de verduras
 fdc:2705789	Topping from meat pizza	ingredientes de pizza de carne
@@ -4742,9 +4742,9 @@ fdc:2705824	Beef, steak, NFS	filete de vacuno
 fdc:2705825	Beef, steak, chuck	filete de aguja
 fdc:2705826	Beef, steak, cube	filete ablandado
 fdc:2705827	Beef, steak, flank	filete de falda
-fdc:2705828	Beef, steak, ribeye, NS as to fat eaten	filete de ribeye
-fdc:2705829	Beef, steak, ribeye, lean and fat eaten	filete de ribeye con grasa
-fdc:2705830	Beef, steak, ribeye, lean only eaten	filete de ribeye solo magro
+fdc:2705828	Beef, steak, ribeye, NS as to fat eaten	entrecot
+fdc:2705829	Beef, steak, ribeye, lean and fat eaten	entrecot con grasa
+fdc:2705830	Beef, steak, ribeye, lean only eaten	entrecot solo magro
 fdc:2705831	Beef, steak, round	filete de redondo
 fdc:2705832	Beef, steak, sirloin, NS as to fat eaten	filete de lomo
 fdc:2705833	Beef, steak, sirloin, lean and fat eaten	filete de lomo con grasa
@@ -4752,20 +4752,20 @@ fdc:2705834	Beef, steak, sirloin, lean only eaten	filete de lomo solo magro
 fdc:2705835	Beef, steak, strip, NS as to fat eaten	filete de strip
 fdc:2705836	Beef, steak, strip, lean and fat eaten	filete de strip con grasa
 fdc:2705837	Beef, steak, strip, lean only eaten	filete de strip solo magro
-fdc:2705838	Beef, steak, T-bone, NS as to fat eaten	filete t-bone
-fdc:2705839	Beef, steak, T-bone,  lean and fat eaten	filete t-bone con grasa
-fdc:2705840	Beef, steak, T-bone, lean only eaten	filete t-bone solo magro
+fdc:2705838	Beef, steak, T-bone, NS as to fat eaten	chuletón
+fdc:2705839	Beef, steak, T-bone,  lean and fat eaten	chuletón con grasa
+fdc:2705840	Beef, steak, T-bone, lean only eaten	chuletón solo magro
 fdc:2705841	Beef, steak, tenderloin	solomillo de vacuno
-fdc:2705842	Beef, steak, country fried	filete de vacuno country fried
+fdc:2705842	Beef, steak, country fried	filete de vacuno empanado frito
 fdc:2705843	Beef, oxtails	rabo de toro
 fdc:2705844	Beef, neck bones	huesos de cuello de vacuno
 fdc:2705845	Beef, shortribs	costillas de vacuno
 fdc:2705846	Beef, cow head	cabeza de vacuno
 fdc:2705847	Beef, roast	asado de vacuno
-fdc:2705848	Beef, pot roast	vacuno asado en olla
+fdc:2705848	Beef, pot roast	vacuno estofado
 fdc:2705849	Beef, stew meat	carne de vacuno para guisar
 fdc:2705850	Beef, corned	corned beef
-fdc:2705851	Beef, brisket	falda de vacuno
+fdc:2705851	Beef, brisket	pecho de vacuno
 fdc:2705852	Beef, sandwich steak	filete para sándwich
 fdc:2705853	Beef, ground, raw	carne picada de vacuno cruda
 fdc:2705854	Beef, ground	carne picada de vacuno
@@ -5056,7 +5056,7 @@ fdc:2706138	Duck, cooked, skin not eaten	pato cocinado sin piel
 fdc:2706139	Duck, roasted, skin eaten	pato asado con piel
 fdc:2706140	Duck, roasted, skin not eaten	pato asado sin piel
 fdc:2706141	Duck, Peking	pato laqueado
-fdc:2706142	Goose, wild, roasted	ganso salvaje asado
+fdc:2706142	Goose, wild, roasted	ganso silvestre asado
 fdc:2706143	Cornish game hen, cooked, skin eaten	pollo de Cornualles cocinado con piel
 fdc:2706144	Cornish game hen, cooked, skin not eaten	pollo de Cornualles cocinado sin piel
 fdc:2706145	Cornish game hen, roasted, skin eaten	pollo de Cornualles asado con piel
@@ -5112,8 +5112,8 @@ fdc:2706194	Pork and beef sausage	salchicha de cerdo y vacuno
 fdc:2706195	Salami, NFS	salami
 fdc:2706196	Salami, made from any type of meat, reduced fat	salami bajo en grasa
 fdc:2706197	Salami, made from any type of meat, reduced sodium	salami bajo en sodio
-fdc:2706198	Scrapple, cooked	scrapple
-fdc:2706199	Thuringer	salchicha thuringer
+fdc:2706198	Scrapple, cooked	pastel de cerdo y harina de maíz (scrapple)
+fdc:2706199	Thuringer	salchicha de Turingia
 fdc:2706200	Turkey or chicken sausage	salchicha de pavo o pollo
 fdc:2706201	Turkey or chicken sausage, reduced sodium	salchicha de pavo o pollo baja en sodio
 fdc:2706202	Turkey or chicken and pork sausage	salchicha de ave y cerdo
@@ -5226,12 +5226,12 @@ fdc:2706308	Fish, tuna, raw	atún crudo
 fdc:2706309	Fish, tuna, NFS	atún
 fdc:2706310	Fish, tuna, cooked	atún cocinado
 fdc:2706311	Fish, tuna, canned	atún en conserva
-fdc:2706312	Fish, whiting, NFS	merlán
-fdc:2706313	Fish, whiting, baked or broiled	merlán al horno
-fdc:2706314	Fish, whiting, grilled	merlán a la parrilla
-fdc:2706315	Fish, whiting, baked or broiled, coated	merlán al horno empanado
-fdc:2706316	Fish, whiting, fried	merlán frito
-fdc:2706317	Fish, whiting, steamed	merlán al vapor
+fdc:2706312	Fish, whiting, NFS	pescadilla
+fdc:2706313	Fish, whiting, baked or broiled	pescadilla al horno
+fdc:2706314	Fish, whiting, grilled	pescadilla a la parrilla
+fdc:2706315	Fish, whiting, baked or broiled, coated	pescadilla al horno empanada
+fdc:2706316	Fish, whiting, fried	pescadilla frita
+fdc:2706317	Fish, whiting, steamed	pescadilla al vapor
 fdc:2706318	Fish, tilapia, NFS	tilapia
 fdc:2706319	Fish, tilapia, baked or broiled	tilapia al horno
 fdc:2706320	Fish, tilapia, grilled	tilapia a la parrilla
@@ -5282,11 +5282,11 @@ fdc:2706364	Shrimp, fried	gambas fritas
 fdc:2706365	Shrimp, baked or broiled, coated	gambas al horno empanadas
 fdc:2706366	Shrimp, dried	gambas secas
 fdc:2706367	Shrimp, canned	gambas en conserva
-fdc:2706368	Escargot	escargot
+fdc:2706368	Escargot	caracoles
 fdc:2706369	Barbecue meat, NFS	carne a la barbacoa
 fdc:2706370	Beef with tomato-based sauce	vacuno en salsa de tomate
 fdc:2706371	Beef burgundy	vacuno a la borgoñona
-fdc:2706372	Guisada, beef	vacuno guisada
+fdc:2706372	Guisada, beef	vacuno guisado
 fdc:2706373	Chili, NFS	chili
 fdc:2706374	Chili with meat, from restaurant	chili con carne de restaurante
 fdc:2706375	Chili with meat and beans	chili con carne y alubias
@@ -5294,9 +5294,9 @@ fdc:2706376	Chili with meat, canned	chili con carne en conserva
 fdc:2706377	Chili with meat	chili con carne
 fdc:2706378	Sloppy joe, no bun	sloppy joe sin pan
 fdc:2706379	Beef with gravy	vacuno con gravy
-fdc:2706380	Salisbury steak with gravy	filete Salisbury con gravy
+fdc:2706380	Salisbury steak with gravy	hamburguesa Salisbury con gravy
 fdc:2706381	Beef with cream or white sauce	vacuno en salsa de nata
-fdc:2706382	Beef stroganoff	buey stroganoff
+fdc:2706382	Beef stroganoff	ternera stroganoff
 fdc:2706383	Creamed chipped or dried beef	cecina en nata
 fdc:2706384	Swedish meatballs with cream or white sauce	albóndigas suecas en salsa de nata
 fdc:2706385	Beef with mushroom sauce	vacuno en salsa de champiñones
@@ -5321,7 +5321,7 @@ fdc:2706403	Ham or pork with mushroom sauce	jamón o cerdo en salsa de champiño
 fdc:2706404	Ham or pork with tomato-based sauce	jamón o cerdo en salsa de tomate
 fdc:2706405	Sausage with tomato-based sauce	salchicha en salsa de tomate
 fdc:2706406	Sausage gravy	gravy con salchicha
-fdc:2706407	Guisada, pork	cerdo guisada
+fdc:2706407	Guisada, pork	cerdo guisado
 fdc:2706408	Pork or ham with soy-based sauce	cerdo o jamón en salsa de soja
 fdc:2706409	Chili hot dog, no bun	perro caliente con chili sin pan
 fdc:2706410	Frankfurters or hot dogs with tomato-based sauce	salchichas en salsa de tomate
@@ -5329,7 +5329,7 @@ fdc:2706411	Pork with chili and tomatoes	cerdo con chili y tomate
 fdc:2706412	Stewed pork, Puerto Rican style	cerdo guisado a la puertorriqueña
 fdc:2706413	Lamb or mutton with gravy	cordero con gravy
 fdc:2706414	Stewed goat, Puerto Rican style	cabra guisada a la puertorriqueña
-fdc:2706415	Veal scallopini	ternera escalopini
+fdc:2706415	Veal scallopini	escalopes de ternera
 fdc:2706416	Veal Marsala	ternera Marsala
 fdc:2706417	Veal parmigiana	ternera parmesana
 fdc:2706418	Veal cordon bleu	ternera cordon bleu
@@ -5400,17 +5400,17 @@ fdc:2706482	Beef and noodles with tomato-based sauce	vacuno con fideos en salsa 
 fdc:2706483	Chili with macaroni	chili con macarrones
 fdc:2706484	Beef and noodles with gravy	vacuno con fideos con gravy
 fdc:2706485	Beef and noodles with cream or white sauce	vacuno con fideos en salsa de nata
-fdc:2706486	Beef stroganoff with noodles	buey stroganoff con fideos
+fdc:2706486	Beef stroganoff with noodles	ternera stroganoff con fideos
 fdc:2706487	Beef and noodles with mushroom sauce	vacuno con fideos en salsa de champiñones
 fdc:2706488	Beef and noodles with soy-based sauce	vacuno con fideos en salsa de soja
 fdc:2706489	Beef and rice, no sauce	vacuno con arroz sin salsa
 fdc:2706490	Biryani with meat	biryani con carne
 fdc:2706491	Beef and rice with tomato-based sauce	vacuno con arroz en salsa de tomate
-fdc:2706492	Porcupine balls with tomato-based sauce	albóndigas puerco espín en salsa de tomate
+fdc:2706492	Porcupine balls with tomato-based sauce	albóndigas con arroz "puerco espín" en salsa de tomate
 fdc:2706493	Beef and rice with gravy	vacuno con arroz con gravy
 fdc:2706494	Beef and rice with cream sauce	vacuno con arroz en salsa de nata
 fdc:2706495	Beef and rice with mushroom sauce	vacuno con arroz en salsa de champiñones
-fdc:2706496	Porcupine balls with mushroom sauce	albóndigas puerco espín en salsa de champiñones
+fdc:2706496	Porcupine balls with mushroom sauce	albóndigas con arroz "puerco espín" en salsa de champiñones
 fdc:2706497	Beef and rice with soy-based sauce	vacuno con arroz en salsa de soja
 fdc:2706498	Beef and rice with cheese sauce	vacuno con arroz en salsa de queso
 fdc:2706499	Meat loaf made with beef	pastel de carne de vacuno
@@ -5457,7 +5457,7 @@ fdc:2706539	Chicken or turkey and rice with cream sauce	pollo o pavo con arroz e
 fdc:2706540	Chicken or turkey and rice with mushroom sauce	pollo o pavo con arroz en salsa de champiñones
 fdc:2706541	Chicken or turkey and rice with tomato-based sauce	pollo o pavo con arroz en salsa de tomate
 fdc:2706542	Chicken or turkey and rice with soy-based sauce	pollo o pavo con arroz en salsa de soja
-fdc:2706543	Chicken or turkey with dumplings	pollo o pavo con dumplings
+fdc:2706543	Chicken or turkey with dumplings	pollo o pavo con bolitas de masa
 fdc:2706544	Chicken or turkey with stuffing	pollo o pavo con relleno
 fdc:2706545	Chicken or turkey cake, patty, or croquette	hamburguesa o croqueta de pollo o pavo
 fdc:2706546	Chicken or turkey souffle	suflé de pollo o pavo
@@ -5545,8 +5545,8 @@ fdc:2706627	Beef, rice, and vegetables excluding carrots, broccoli, and dark-gre
 fdc:2706628	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	vacuno con arroz, zanahoria y brócoli en salsa de soja
 fdc:2706629	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	vacuno con arroz y verduras sin zanahoria ni brócoli en salsa de soja
 fdc:2706630	Pot pie, beef	empanada de vacuno
-fdc:2706631	Beef, dumplings, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con dumplings, zanahoria y brócoli con gravy
-fdc:2706632	Beef, dumplings, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con dumplings y verduras sin zanahoria ni brócoli con gravy
+fdc:2706631	Beef, dumplings, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con bolitas de masa, zanahoria y brócoli con gravy
+fdc:2706632	Beef, dumplings, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con bolitas de masa y verduras sin zanahoria ni brócoli con gravy
 fdc:2706633	Stuffed green pepper, Puerto Rican style	pimiento verde relleno a la puertorriqueña
 fdc:2706634	Ham or pork, noodles and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	jamón o cerdo con fideos y verduras sin zanahoria ni brócoli, sin salsa
 fdc:2706635	Ham or pork, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	jamón o cerdo con fideos, zanahoria y brócoli sin salsa
@@ -5622,8 +5622,8 @@ fdc:2706704	Chicken or turkey, stuffing, and vegetables including carrots, brocc
 fdc:2706705	Chicken or turkey,stuffing, and vegetables excluding carrots, broccoli, and dark green leafy; no sauce	pollo o pavo con relleno y verduras sin zanahoria ni brócoli, sin salsa
 fdc:2706706	Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	pollo o pavo con relleno, zanahoria y brócoli con gravy
 fdc:2706707	Chicken or turkey, stuffing, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	pollo o pavo con relleno y verduras sin zanahoria ni brócoli con gravy
-fdc:2706708	Chicken or turkey, dumplings, and vegetables including carrots, broccoli, and/or dark green leafy; gravy	pollo o pavo con dumplings, zanahoria y brócoli con gravy
-fdc:2706709	Chicken or turkey, dumplings, and vegetables excluding carrots, broccoli, and dark green leafy; gravy	pollo o pavo con dumplings y verduras sin zanahoria ni brócoli con gravy
+fdc:2706708	Chicken or turkey, dumplings, and vegetables including carrots, broccoli, and/or dark green leafy; gravy	pollo o pavo con bolitas de masa, zanahoria y brócoli con gravy
+fdc:2706709	Chicken or turkey, dumplings, and vegetables excluding carrots, broccoli, and dark green leafy; gravy	pollo o pavo con bolitas de masa y verduras sin zanahoria ni brócoli con gravy
 fdc:2706710	Chicken fricassee, Puerto Rican style	pollo en fricasé a la puertorriqueña
 fdc:2706711	Paella with seafood	paella de marisco
 fdc:2706712	Shrimp chow mein or chop suey with noodles	chow mein de gambas
@@ -5633,7 +5633,7 @@ fdc:2706715	Fish, noodles, and vegetables including carrots, broccoli, and/or da
 fdc:2706716	Fish, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	pescado con fideos y verduras sin zanahoria ni brócoli en salsa de queso
 fdc:2706717	Soup, bouillabaisse	bullabesa
 fdc:2706718	Tuna noodle casserole with vegetables and mushroom sauce	cazuela de atún con fideos y verduras en salsa de champiñones
-fdc:2706719	Codfish with starchy vegetables, Puerto Rican style	bacalao con verduras feculentas a la puertorriqueña
+fdc:2706719	Codfish with starchy vegetables, Puerto Rican style	bacalao con tubérculos a la puertorriqueña
 fdc:2706720	Biscayne codfish, Puerto Rican style	bacalao a la vizcaína a la puertorriqueña
 fdc:2706721	Stew, NFS	guiso
 fdc:2706722	Chow mein or chop suey, NS as to type of meat, with noodles	chow mein de carne
