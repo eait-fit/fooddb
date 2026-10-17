@@ -225,7 +225,7 @@ cofid:19-553	Burger, beef, fried in rapeseed oil, homemade	hamburguesa de terner
 cofid:19-580	Duck with pineapple, homemade	pato con piña
 cofid:19-592	Curry, lamb biryani, reduced fat, homemade	biryani de cordero bajo en grasa
 fdc:1104647	Garlic, raw	ajo
-fdc:1104705	Flour, soy, defatted	harina de soja desgrasada (tabla nueva)
+fdc:1104705	Flour, soy, defatted	harina desgrasada de soja
 fdc:1104766	Flour, soy, full-fat	harina de soja entera
 fdc:1104812	Flour, rice, brown	harina de arroz integral
 fdc:1104867	Flour, rice, glutinous	harina de arroz glutinoso
@@ -4250,7 +4250,7 @@ fdc:171525	Turkey, drumstick, from whole bird, meat only, with added solution, r
 fdc:171526	Turkey, wing, from whole bird, meat only, with added solution, raw	ala de pavo sin piel con salmuera cruda
 fdc:171527	Turkey, wing, from whole bird, meat only, with added solution, roasted	ala de pavo sin piel con salmuera asada
 fdc:171528	Turkey, retail parts, breast, meat and skin, raw	pechuga de pavo con piel cruda
-fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	pechuga de pavo con piel asada
+fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	pechuga de pavo con piel asada (de piezas)
 fdc:171530	Turkey, drumstick, from whole bird, meat only, roasted	muslo de pavo sin piel asado
 fdc:171531	Turkey, thigh, from whole bird, meat only, raw	contramuslo de pavo sin piel crudo
 fdc:171532	Turkey, thigh, from whole bird, meat only, roasted	contramuslo de pavo sin piel asado
@@ -5593,13 +5593,13 @@ fdc:172868	Turkey, whole, meat only, with added solution, raw	pavo entero sin pi
 fdc:172869	Turkey, whole, meat only, with added solution, roasted	pavo entero sin piel con salmuera asado
 fdc:172870	Turkey, whole, meat and skin, with added solution, raw	pavo entero con piel con salmuera crudo
 fdc:172871	Turkey, whole, meat and skin, with added solution, roasted	pavo entero con piel con salmuera asado
-fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	ala de pavo sin piel asada
+fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	ala de pavo sin piel asada (de piezas)
 fdc:172873	Turkey, skin, from retail parts, from dark meat, raw	piel de pavo de carne oscura cruda
 fdc:172874	Turkey, skin, from retail parts, from dark meat, cooked, roasted	piel de pavo de carne oscura asada
 fdc:172875	Turkey, retail parts, drumstick, meat only, raw	muslo de pavo sin piel crudo
 fdc:172876	Turkey, breast, from whole bird, meat only, with added solution, raw	pechuga de pavo sin piel con salmuera cruda
 fdc:172877	Turkey, retail parts, thigh, meat only, cooked, roasted	contramuslo de pavo sin piel asado
-fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	muslo de pavo sin piel asado
+fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	muslo de pavo sin piel asado (de piezas)
 fdc:172879	Sauce, plum, ready-to-serve	salsa de ciruela
 fdc:172880	Sauce, pizza, canned, ready-to-serve	salsa para pizza en conserva
 fdc:172881	Soup, tomato bisque, canned, condensed	crema de tomate concentrada en conserva
@@ -6920,7 +6920,7 @@ fdc:174195	Fish, fish sticks, frozen, prepared	palitos de pescado preparados
 fdc:174196	Fish, flatfish (flounder and sole species), raw	platija y lenguado crudos
 fdc:174197	Fish, flatfish (flounder and sole species), cooked, dry heat	platija y lenguado asados
 fdc:174198	Fish, haddock, cooked, dry heat	eglefino asado
-fdc:174199	Fish, haddock, smoked	eglefino ahumado (EE. UU.)
+fdc:174199	Fish, haddock, smoked	ahumado de eglefino
 fdc:174200	Fish, halibut, Atlantic and Pacific, raw	fletán crudo
 fdc:174201	Fish, halibut, Atlantic and Pacific, cooked, dry heat	fletán asado
 fdc:174202	Crustaceans, crab, alaska king, cooked, moist heat	cangrejo real de Alaska cocido
@@ -8073,7 +8073,7 @@ fdc:2258589	Peppers, bell, yellow, raw	pimiento amarillo
 fdc:2258590	Peppers, bell, red, raw	pimiento rojo
 fdc:2258591	Peppers, bell, orange, raw	pimiento naranja
 fdc:2259792	Buttermilk, low fat	suero de mantequilla bajo en grasa
-fdc:2259793	Yogurt, plain, whole milk	yogur natural entero (tabla nueva)
+fdc:2259793	Yogurt, plain, whole milk	yogur natural de leche entera
 fdc:2259794	Yogurt, Greek, plain, whole milk	yogur griego natural entero
 fdc:2259795	Cheese, parmesan, grated, refrigerated	queso parmesano rallado refrigerado
 fdc:2259796	Cheese, feta, whole milk, crumbled	feta desmigado
@@ -8109,8 +8109,8 @@ fdc:2346405	Celery, raw	apio
 fdc:2346406	Cucumber, with peel, raw	pepino con piel
 fdc:2346407	Cabbage, green, raw	col verde
 fdc:2346408	Cabbage, red, raw	col morada
-fdc:2346409	Strawberries, raw	fresas frescas (tabla nueva)
-fdc:2346410	Raspberries, raw	frambuesas frescas (tabla nueva)
+fdc:2346409	Strawberries, raw	fresas frescas
+fdc:2346410	Raspberries, raw	frambuesas frescas
 fdc:2346411	Blueberries, raw	arándanos
 fdc:2346412	Grapes, red, seedless, raw	uva roja sin semillas
 fdc:2346413	Grapes, green, seedless, raw	uva verde sin semillas
@@ -8163,7 +8163,7 @@ fdc:2646172	Beef, ribeye, steak, boneless, choice, raw	filete ribeye de vacuno s
 fdc:2646173	Beef, round, top round, boneless, choice, raw	filete de tapa de vacuno sin hueso crudo (choice)
 fdc:2646174	Beef, chuck, roast, boneless, choice, raw	asado de aguja de vacuno sin hueso crudo (choice)
 fdc:2646175	Beef, flank, steak, boneless, choice, raw	filete de falda de vacuno sin hueso crudo (choice)
-fdc:2647437	Yogurt, plain, nonfat	yogur natural desnatado (tabla nueva)
+fdc:2647437	Yogurt, plain, nonfat	yogur natural sin grasa
 fdc:2647438	Cheese, monterey jack, solid	queso Monterey Jack
 fdc:2647439	Cheese, pasteurized process cheese food or product, American, singles	queso fundido en lonchas
 fdc:2647440	Cheese, provolone, sliced	queso provolone
@@ -8212,7 +8212,7 @@ fdc:325524	Seeds, sunflower seed kernels, dry roasted, with salt added	pipas de 
 fdc:326196	Kale, frozen, cooked, boiled, drained, without salt	col rizada congelada cocida sin sal
 fdc:326698	Mustard, prepared, yellow	mostaza amarilla
 fdc:327046	Kiwifruit, green, raw	kiwi verde
-fdc:327357	Nectarines, raw	nectarinas frescas (tabla nueva)
+fdc:327357	Nectarines, raw	nectarinas
 fdc:328637	Cheese, cheddar	queso cheddar
 fdc:328841	Cheese, cottage, lowfat, 2% milkfat	requesón 2%
 fdc:329370	Cheese, mozzarella, low moisture, part-skim	mozzarella semidesnatada baja en humedad

@@ -225,7 +225,7 @@ cofid:19-553	Burger, beef, fried in rapeseed oil, homemade	котлета для
 cofid:19-580	Duck with pineapple, homemade	утка с ананасом
 cofid:19-592	Curry, lamb biryani, reduced fat, homemade	бирьяни с бараниной
 fdc:1104647	Garlic, raw	чеснок свежий
-fdc:1104705	Flour, soy, defatted	мука соевая обезжиренная (новая таблица)
+fdc:1104705	Flour, soy, defatted	соевая мука обезжиренная
 fdc:1104766	Flour, soy, full-fat	мука соевая жирная
 fdc:1104812	Flour, rice, brown	мука из бурого риса
 fdc:1104867	Flour, rice, glutinous	мука из клейкого риса
@@ -4250,7 +4250,7 @@ fdc:171525	Turkey, drumstick, from whole bird, meat only, with added solution, r
 fdc:171526	Turkey, wing, from whole bird, meat only, with added solution, raw	крыло индейки без кожи с рассолом сырое
 fdc:171527	Turkey, wing, from whole bird, meat only, with added solution, roasted	крыло индейки без кожи с рассолом запечённое
 fdc:171528	Turkey, retail parts, breast, meat and skin, raw	грудка индейки с кожей сырая
-fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	грудка индейки с кожей запечённая
+fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	грудка индейки с кожей запечённая (из разделанной тушки)
 fdc:171530	Turkey, drumstick, from whole bird, meat only, roasted	голень индейки без кожи запечённая
 fdc:171531	Turkey, thigh, from whole bird, meat only, raw	бедро индейки без кожи сырое
 fdc:171532	Turkey, thigh, from whole bird, meat only, roasted	бедро индейки без кожи запечённое
@@ -5593,13 +5593,13 @@ fdc:172868	Turkey, whole, meat only, with added solution, raw	индейка ц�
 fdc:172869	Turkey, whole, meat only, with added solution, roasted	индейка целая без кожи с рассолом запечённая
 fdc:172870	Turkey, whole, meat and skin, with added solution, raw	индейка целая с кожей с рассолом сырая
 fdc:172871	Turkey, whole, meat and skin, with added solution, roasted	индейка целая с кожей с рассолом запечённая
-fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	крыло индейки без кожи запечённое
+fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	крыло индейки без кожи запечённое (из разделанной тушки)
 fdc:172873	Turkey, skin, from retail parts, from dark meat, raw	индюшиная кожа тёмного мяса сырая
 fdc:172874	Turkey, skin, from retail parts, from dark meat, cooked, roasted	индюшиная кожа тёмного мяса запечённая
 fdc:172875	Turkey, retail parts, drumstick, meat only, raw	голень индейки без кожи сырая
 fdc:172876	Turkey, breast, from whole bird, meat only, with added solution, raw	грудка индейки без кожи с рассолом сырая
 fdc:172877	Turkey, retail parts, thigh, meat only, cooked, roasted	бедро индейки без кожи запечённое
-fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	голень индейки без кожи запечённая
+fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	голень индейки без кожи запечённая (из разделанной тушки)
 fdc:172879	Sauce, plum, ready-to-serve	соус сливовый
 fdc:172880	Sauce, pizza, canned, ready-to-serve	соус для пиццы консервированный
 fdc:172881	Soup, tomato bisque, canned, condensed	томатный суп-биск концентрат консервированный
@@ -5993,7 +5993,7 @@ fdc:173268	Fast foods, biscuit, with crispy chicken fillet	бисквит с х�
 fdc:173269	Fast foods, croissant, with egg, cheese, and bacon	круассан с яйцом сыром и беконом
 fdc:173270	Fast foods, croissant, with egg, cheese, and ham	круассан с яйцом сыром и ветчиной
 fdc:173271	Fast foods, croissant, with egg, cheese, and sausage	круассан с яйцом сыром и колбаской
-fdc:173272	Fast foods, egg, scrambled	яичница-болтунья
+fdc:173272	Fast foods, egg, scrambled	яичница-болтунья из фастфуда
 fdc:173273	Fast foods, potatoes, hash browns, round pieces or patty	картофельные оладьи хэш-браун
 fdc:173274	Fast foods, vanilla, light, soft-serve ice cream, with cone	мороженое ванильное лёгкое в рожке
 fdc:173275	Fast foods, sundae, caramel	мороженое сандей карамельное
@@ -6446,7 +6446,7 @@ fdc:173721	Salmon nuggets, breaded, frozen, heated	наггетсы лососе
 fdc:173722	Salmon nuggets, cooked as purchased, unheated	наггетсы лососевые в панировке неразогретые
 fdc:173723	Salmon, sockeye, canned, drained solids, without skin and bones	нерка консервированная слитая без кожи и костей
 fdc:173724	Fish, Salmon, pink, canned, drained solids, without skin and bones	горбуша консервированная слитая без кожи и костей
-fdc:173725	Fish, pollock, Alaska, raw	минтай сырой
+fdc:173725	Fish, pollock, Alaska, raw	минтай сырой (Аляска)
 fdc:173726	Fish, pollock, Alaska, cooked	минтай приготовленный
 fdc:173727	Beans, adzuki, mature seeds, raw	фасоль адзуки сырая
 fdc:173728	Beans, adzuki, mature seeds, cooked, boiled, without salt	фасоль адзуки варёная без соли
@@ -6920,7 +6920,7 @@ fdc:174195	Fish, fish sticks, frozen, prepared	рыбные палочки пр�
 fdc:174196	Fish, flatfish (flounder and sole species), raw	камбала и морской язык сырые
 fdc:174197	Fish, flatfish (flounder and sole species), cooked, dry heat	камбала и морской язык запечённые
 fdc:174198	Fish, haddock, cooked, dry heat	пикша запечённая
-fdc:174199	Fish, haddock, smoked	пикша копчёная (США)
+fdc:174199	Fish, haddock, smoked	копчёная пикша
 fdc:174200	Fish, halibut, Atlantic and Pacific, raw	палтус сырой
 fdc:174201	Fish, halibut, Atlantic and Pacific, cooked, dry heat	палтус запечённый
 fdc:174202	Crustaceans, crab, alaska king, cooked, moist heat	краб камчатский варёный
@@ -8067,7 +8067,7 @@ fdc:2257044	Soy milk, sweetened, plain, refrigerated	молоко соевое �
 fdc:2257045	Almond milk, unsweetened, plain, refrigerated	молоко миндальное несладкое охлаждённое
 fdc:2257046	Oat milk, unsweetened, plain, refrigerated	молоко овсяное несладкое
 fdc:2258586	Carrots, mature, raw	морковь крупная свежая
-fdc:2258587	Carrots, baby, raw	морковь мини свежая (новая таблица)
+fdc:2258587	Carrots, baby, raw	мини-морковь свежая
 fdc:2258588	Peppers, bell, green, raw	перец болгарский зелёный свежий
 fdc:2258589	Peppers, bell, yellow, raw	перец болгарский жёлтый свежий
 fdc:2258590	Peppers, bell, red, raw	перец болгарский красный свежий
@@ -8109,8 +8109,8 @@ fdc:2346405	Celery, raw	сельдерей свежий
 fdc:2346406	Cucumber, with peel, raw	огурец с кожурой
 fdc:2346407	Cabbage, green, raw	капуста белокочанная свежая
 fdc:2346408	Cabbage, red, raw	капуста краснокочанная свежая
-fdc:2346409	Strawberries, raw	клубника свежая (новая таблица)
-fdc:2346410	Raspberries, raw	малина свежая (новая таблица)
+fdc:2346409	Strawberries, raw	свежая клубника
+fdc:2346410	Raspberries, raw	свежая малина
 fdc:2346411	Blueberries, raw	черника
 fdc:2346412	Grapes, red, seedless, raw	виноград красный без косточек
 fdc:2346413	Grapes, green, seedless, raw	виноград зелёный без косточек
@@ -8212,7 +8212,7 @@ fdc:325524	Seeds, sunflower seed kernels, dry roasted, with salt added	семе�
 fdc:326196	Kale, frozen, cooked, boiled, drained, without salt	кейл замороженный варёный без соли
 fdc:326698	Mustard, prepared, yellow	горчица жёлтая
 fdc:327046	Kiwifruit, green, raw	киви зелёный свежий
-fdc:327357	Nectarines, raw	нектарины свежие (новая таблица)
+fdc:327357	Nectarines, raw	свежие нектарины
 fdc:328637	Cheese, cheddar	сыр чеддер
 fdc:328841	Cheese, cottage, lowfat, 2% milkfat	творог нежирный 2%
 fdc:329370	Cheese, mozzarella, low moisture, part-skim	сыр моцарелла полуобезжиренный
@@ -8230,7 +8230,7 @@ fdc:332791	Olives, green, Manzanilla, stuffed with pimiento	оливки зел�
 fdc:333008	Cookies, oatmeal, soft, with raisins	печенье овсяное мягкое с изюмом
 fdc:333281	Tomatoes, canned, red, ripe, diced	помидоры консервированные кубиками
 fdc:333374	Fish, haddock, raw	пикша сырая
-fdc:333476	Fish, pollock, raw	минтай сырой (новая таблица)
+fdc:333476	Fish, pollock, raw	минтай сырой
 fdc:334194	Fish, tuna, light, canned in water, drained solids	тунец светлый в воде слитый
 fdc:334536	Restaurant, Chinese, fried rice, without meat	рис жареный по-китайски без мяса
 fdc:334628	Restaurant, Latino, tamale, pork	тамале со свининой
