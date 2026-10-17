@@ -248,3 +248,88 @@ Following the batch-2 section (PR #127): same mixed-dish qualifiers. New here:
 - Brands and their product names stay Latin: `Whopper`, `Big Mac`, `McDouble`,
   `Quarter Pounder`, `Nutella`, `Spam`, `Pocky`, cereal/nutrition-bar brands
   (`Nature Valley`, `Quaker`, `Clif`, `PowerBar`, …) — `McDonald's` spelled out.
+
+## FNDDS qualifiers (batch 2d)
+
+Cooked-vegetable form matrix, coffee/tea/soft drinks, alcohol, candy, baby food,
+ingredient rows.
+
+- Cooked-veg form matrix: `fresh, cooked` drops `fresh` (the default); `frozen,
+  cooked` → `замороженная приготовленная` / `congelada cocida`; `canned, cooked` →
+  `консервированная приготовленная` / `en conserva cocida`; `NS as to form` keeps
+  the bare name. Keep `свежие`/`frescos` only when the bare name would collide
+  with an NS row carrying no fat tag (tomatoes).
+- `cooked with butter or margarine` → `со сливочным маслом или маргарином` /
+  `con mantequilla o margarina` (never shortened to `с маслом` — it would read
+  as oil).
+- FNDDS ingredient rows (`as ingredient`, `for use with/on`) → `X (ингредиент
+  для Y)` / `X (ingrediente para Y)`.
+- Coffee: `brewed` → `кофе заварной` / `café de filtro`; `instant` →
+  `растворимый` / `instantáneo`, `reconstituted` → `разведённый` / `preparado`
+  (dry powder vs made-up drink split kcal, keep both); `frozen` →
+  `кофе-фраппе` / `café granizado` (`frozen mocha` → `мокко-фраппе` /
+  `granizado de moka`); `iced` → `со льдом` / `con hielo`, `iced latte` →
+  `латте со льдом` / `latte frío`; `decaffeinated` → `без кофеина` /
+  `descafeinado`; `nonfat` → `обезжиренный` / `desnatado`; `non-dairy milk` →
+  `на растительном молоке` / `con bebida vegetal`; `flavored` →
+  `ароматизированный` / `con sabor`; `pre-lightened` → `с добавленным молоком` /
+  `con leche añadida` (vs `cafe con leche` which keeps `с молоком` /
+  `con leche`); `pre-sweetened with sugar` → `с сахаром` / `con azúcar`,
+  `with low calorie sweetener` → `с подсластителем` / `con edulcorante`;
+  `bottled/canned` → `в бутылке` / `embotellado`.
+- Tea: `hot, leaf` drops the brew word (`чай чёрный`/`té negro`); `iced,
+  instant` → `чай со льдом растворимый` / `té frío instantáneo`; `iced, brewed`
+  → `чай со льдом` / `té frío`; `iced, bottled` → `в бутылке` / `embotellado`;
+  `dry` → `порошок` / `en polvo`; `diet` → `диетический` / `light`;
+  hibiscus → `каркаде` / `té de hibisco`; kombucha/bubble tea stay
+  `комбуча`/`kombucha`, `баббл-ти`/`té de burbujas`.
+- Soft drinks: `diet` → `диетическая` / `light` (Spain usage, never `de dieta`
+  on cola-family; `de dieta` only where `light` collides); `pepper type` →
+  `типа Dr Pepper` / `tipo Dr Pepper`; `caffeine free` → `без кофеина` /
+  `sin cafeína`, `caffeine containing` → `с кофеином` / `con cafeína`.
+- Juice drinks vs flavor drinks: `juice drink` → `соковый напиток` /
+  `bebida de zumo`; `fruit flavored drink` (no juice) → `напиток фруктовый` /
+  `bebida de frutas`; `40-50% juice beverage` → `напиток` без `соковый`;
+  `powdered` → `из порошка` / `de polvos` (reconstituted) vs `порошок` /
+  `en polvo` (not reconstituted); `with high vitamin C` → `с витамином С` /
+  `con vitamina C`.
+- Alcohol: cocktail names stay the established forms (`мохито`/`mojito`,
+  `маргарита`/`margarita`, `пина колада`/`piña colada`, `Cuba libre` for rum and
+  cola, `Whisky con cola`); `hard cider` → `сидр`/`sidra`; `hard seltzer` →
+  `алкогольный селтцер`/`seltzer con alcohol`; wine `light` → `лёгкое`/`ligero`.
+- Candy: `chocolate candy` → `шоколадные конфеты` / `bombones`; `dark` →
+  `из тёмного шоколада` / `de chocolate negro`; `hard candy` → `леденцы` /
+  `caramelos duros`; `gummy` → `мармеладные конфеты` / `gominolas`;
+  `peanut brittle` → `грильяж` / `crocante de cacahuete`; `candy shell` →
+  `шоколадные драже` / `grageas`; `licorice` → `лакричные конфеты` / `regaliz`;
+  `taffy` → `ириски` / `taffy`; `cotton candy` → `сахарная вата` /
+  `algodón de azúcar`; `fruit leather` → `фруктовая пастила` / `piel de fruta`;
+  generic `Candy, NFS` → `конфеты` / `golosinas` when `caramelos` is taken.
+- Jams/desserts: `jelly` (spread) → `джем-желе` / `jalea` vs `gelatin dessert`
+  → `желе` / `gelatina` (different kcal, never one name); `marmalade` →
+  `мармелад цитрусовый` / `mermelada de cítricos`; `popsicle`/`freezer pop` →
+  `фруктовый лёд` / `polo` (+ `в тюбике`/`de tubo`); `snow cone` →
+  `снежный конус` / `cono de nieve`; `Italian ice` → `итальянский лёд` /
+  `granizado italiano`; `icing` → `глазурь` / `glaseado`; `topping` →
+  `топпинг` / `topping`.
+- Nutritional drinks/powders: brand stays Latin inside `питательный напиток X` /
+  `bebida nutricional X` and `питательная смесь порошковая X` /
+  `mezcla nutricional en polvo X`; `high protein` → `высокобелковый` /
+  `alta en proteína`; `sports drink` → `спортивный напиток` / `bebida
+  deportiva`; `energy drink` → `энергетический напиток` / `bebida energética`.
+- New vocabulary: greens (generic) → `зелень листовая` / `verduras de hoja`;
+  collards → `листовая капуста` / `berza`; sweet potato → `батат` / `boniato`
+  (`тоты` → `тоты`/`croquetas`, `фри` → `фри`/`frito`); lima beans → `фасоль
+  лима` / `judías de Lima`; blackeyed peas → `вигна` / `carillas`; hominy →
+  `кукуруза хомини` / `maíz pozolero`; water chestnut → `водяной орех` /
+  `castaña de agua`; chayote → `чайот` / `chayote`; nopal cactus → `опунция` /
+  `nopal`; Chinese broccoli → `кай-лан` / `kai-lan`; radicchio → `радиккио` /
+  `radicchio`; snow peas → `горошек стручковый` / `tirabeques`; Puerto Rican
+  dishes → `мофонго`/`mofongo`, `пастелон`/`pastelón`, `пастелес`/`pasteles`,
+  `софрито`/`sofrito`; baby food → `детское пюре` / `potito` + `ступень N` /
+  `etapa N`; toddler meal → `детский обед` / `comida infantil`.
+- Collision lessons: FNDDS vs FDC same-English-name records with >10 % kcal got
+  a real qualifier or word-order variant (`спаржевая капуста` when both
+  `брокколи свежая` and `брокколи сырая` were taken, `бебida de aloe`,
+  `café instantáneo hecho` — check the three existing forms before adding a
+  fourth); `rum and cola` → `ром с колой` in ru (Cuba libre only in es).

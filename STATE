@@ -19,3 +19,50 @@ eait-merge EAIT_NO_VISIBLE_CHANGE="deploy pin only"), tell coordinator
 "deploying fooddb 5449e6f" and wait for its go, make deploy in
 ~/Personal/projects/ieat-app (git pull --ff-only + submodule update
 first), verify mt=11,202/lang + /healthz, DONE to lead, task done.
+
+dv-fooddb-122-2d — batch 2d: TRANSLATING
+========================================
+Slice: all fdc FNDDS ids >= 2705000 not yet translated (main + 2c
+branch #129) = 1,368 records, fdc:2709524-2747676.
+Mirror DB for gates: cloned fooddb_names_mt_2c -> fooddb_names_mt_2d
+(41,279 foods incl. all FNDDS).
+Working files /tmp/mt2d/ru_1..8.tsv + es_1..8.tsv keyed `id<TAB>name`;
+join with /tmp/batch2d.tsv (id, source name) for the middle column.
+DONE: ru_1..6 + es_1..6 = lines 1-1020 (potatoes, greens/veg matrices,
+salads, pickles, soups, baby food, PR dishes, fats, dressings, sugars,
+jams, candy, coffee, tea, soft drinks start).
+DONE: ru_1..8 + es_1..7 complete; es_8 pending, then assembly + gates.
+water, nutritional drinks); ru_8/es_8 lines 1201-1368 (nutritional,
+energy/sports drinks, ingredients, foundation raws).
+Conventions beyond 2c RULES: fresh-cooked drops `fresh` (NS rows keep
+bare name; keep `свежие`/`frescos` only when a bare NS twin would
+collide — tomatoes); frozen cooked = `замороженная приготовленная`/
+`congelada cocida`; canned cooked = `консервированная приготовленная`/
+`en conserva cocida`; butter-or-margarine = `со сливочным маслом или
+маргарином`/`con mantequilla o margarina`; ingredient rows =
+`X (ингредиент для Y)`/`X (ingrediente para Y)`; brewed coffee =
+`кофе заварной`/`café de filtro`, frozen coffee = `кофе-фраппе`/
+`café granizado`, nonfat = `обезжиренный`/`desnatado`, non-dairy =
+`на растительном молоке`/`con bebida vegetal`, flavored =
+`ароматизированный`/`con sabor`, decaf = `без кофеина`/`descafeinado`,
+pre-lightened = `с добавленным молоком`/`con leche añadida` (cafe con
+leche keeps `с молоком`/`con leche`); diet soft drinks = `диетическая`/
+`light`; baby food = `детское пюре`/`potito` + `ступень N`/`etapa N`;
+brands stay Latin.
+Gates to run: kcal-collision on loaded mirror, ru/es id alignment,
+Cyrillic-in-es / Latin-in-ru scan, coverage 1368/1368, `./dev test`,
+then PR + reviewer handoff.
+
+dv-fooddb-122-2d — batch 2d: TRANSLATION COMPLETE, AWAITING REVIEWER
+==================================================================
+1,368 FNDDS records fdc:2709524-2747676 (all ids >= 2705000 minus main
+and 2c PR #129). ru+es appended to data/names/mt/{ru,es}.tsv (12,570
+lines each), RULES.md batch-2d section. Gates on loaded mirror
+fooddb_names_mt_2d (clone of fooddb_names_mt_2c, 41,279 foods):
+kcal-collision 0 ru / 0 es (335/404 shared-name groups, ~95 splits
+resolved: FNDDS-vs-FDC same-name records like broccoli/kale/spinach got
+real qualifiers or variants); ru/es id alignment 1,368/1,368; Latin scan
+clean (brands only), no Cyrillic in es; coverage 1368/1368; file sorted
+by record_id. Commit 324fc1c. Next: reviewer Devin -> lead approval ->
+eait-merge + pin + coordinator go + deploy. Mirror DB left loaded:
+fooddb_names_mt_2d.
