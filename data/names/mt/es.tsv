@@ -225,7 +225,7 @@ cofid:19-553	Burger, beef, fried in rapeseed oil, homemade	hamburguesa de terner
 cofid:19-580	Duck with pineapple, homemade	pato con piña
 cofid:19-592	Curry, lamb biryani, reduced fat, homemade	biryani de cordero bajo en grasa
 fdc:1104647	Garlic, raw	ajo
-fdc:1104705	Flour, soy, defatted	harina de soja desgrasada Foundation
+fdc:1104705	Flour, soy, defatted	harina de soja desgrasada (tabla nueva)
 fdc:1104766	Flour, soy, full-fat	harina de soja entera
 fdc:1104812	Flour, rice, brown	harina de arroz integral
 fdc:1104867	Flour, rice, glutinous	harina de arroz glutinoso
@@ -623,7 +623,7 @@ fdc:167898	Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat,
 fdc:167899	Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat, cooked, broiled	chuletas de lomo bajo sin hueso con grasa a la parrilla
 fdc:167900	Pork, fresh, loin, sirloin (roasts), boneless, separable lean and fat, cooked, roasted	lomo bajo de cerdo sin hueso con grasa asado
 fdc:167901	Pork, fresh, loin, sirloin (chops or roasts), boneless, separable lean only, raw	chuletas de lomo bajo sin hueso magras crudas
-fdc:167902	Pork, fresh, ground, raw	cerdo picado crudo
+fdc:167902	Pork, fresh, ground, raw	cerdo fresco picado crudo
 fdc:167903	Pork, fresh, ground, cooked	cerdo picado cocinado
 fdc:167904	Pork, fresh, loin, tenderloin, separable lean and fat, cooked, broiled	solomillo de cerdo con grasa a la parrilla
 fdc:167905	Pork, fresh, loin, tenderloin, separable lean and fat, cooked, roasted	solomillo de cerdo con grasa asado
@@ -3798,7 +3798,7 @@ fdc:171073	Chicken, broilers or fryers, back, meat only, raw	espinazo de pollo s
 fdc:171074	Chicken, broilers or fryers, back, meat only, cooked, fried	espinazo de pollo sin piel frito
 fdc:171075	Chicken, broilers or fryers, breast, meat and skin, cooked, roasted	pechuga de pollo con piel asada
 fdc:171076	Chicken, broilers or fryers, breast, meat and skin, cooked, stewed	pechuga de pollo con piel guisada
-fdc:171077	Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw	pechuga de pollo sin piel ni hueso cruda
+fdc:171077	Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw	pechuga de pollo de engorde sin piel ni hueso cruda
 fdc:171078	Chicken, broilers or fryers, breast, meat only, cooked, fried	pechuga de pollo sin piel frita
 fdc:171079	Squab, (pigeon), meat only, raw	pichón crudo
 fdc:171080	Squab, (pigeon), light meat without skin, raw	pichón blanco sin piel crudo
@@ -6446,7 +6446,7 @@ fdc:173721	Salmon nuggets, breaded, frozen, heated	nuggets de salmón empanados 
 fdc:173722	Salmon nuggets, cooked as purchased, unheated	nuggets de salmón empanados sin calentar
 fdc:173723	Salmon, sockeye, canned, drained solids, without skin and bones	salmón rojo en conserva escurrido sin piel ni espinas
 fdc:173724	Fish, Salmon, pink, canned, drained solids, without skin and bones	salmón rosado en conserva escurrido sin piel ni espinas
-fdc:173725	Fish, pollock, Alaska, raw	abadejo crudo
+fdc:173725	Fish, pollock, Alaska, raw	abadejo de Alaska crudo
 fdc:173726	Fish, pollock, Alaska, cooked	abadejo cocinado
 fdc:173727	Beans, adzuki, mature seeds, raw	judías adzuki crudas
 fdc:173728	Beans, adzuki, mature seeds, cooked, boiled, without salt	judías adzuki cocidas sin sal
@@ -6920,7 +6920,7 @@ fdc:174195	Fish, fish sticks, frozen, prepared	palitos de pescado preparados
 fdc:174196	Fish, flatfish (flounder and sole species), raw	platija y lenguado crudos
 fdc:174197	Fish, flatfish (flounder and sole species), cooked, dry heat	platija y lenguado asados
 fdc:174198	Fish, haddock, cooked, dry heat	eglefino asado
-fdc:174199	Fish, haddock, smoked	eglefino ahumado USDA
+fdc:174199	Fish, haddock, smoked	eglefino ahumado (EE. UU.)
 fdc:174200	Fish, halibut, Atlantic and Pacific, raw	fletán crudo
 fdc:174201	Fish, halibut, Atlantic and Pacific, cooked, dry heat	fletán asado
 fdc:174202	Crustaceans, crab, alaska king, cooked, moist heat	cangrejo real de Alaska cocido
@@ -8073,7 +8073,7 @@ fdc:2258589	Peppers, bell, yellow, raw	pimiento amarillo
 fdc:2258590	Peppers, bell, red, raw	pimiento rojo
 fdc:2258591	Peppers, bell, orange, raw	pimiento naranja
 fdc:2259792	Buttermilk, low fat	suero de mantequilla bajo en grasa
-fdc:2259793	Yogurt, plain, whole milk	yogur natural entero Foundation
+fdc:2259793	Yogurt, plain, whole milk	yogur natural entero (tabla nueva)
 fdc:2259794	Yogurt, Greek, plain, whole milk	yogur griego natural entero
 fdc:2259795	Cheese, parmesan, grated, refrigerated	queso parmesano rallado refrigerado
 fdc:2259796	Cheese, feta, whole milk, crumbled	feta desmigado
@@ -8109,8 +8109,8 @@ fdc:2346405	Celery, raw	apio
 fdc:2346406	Cucumber, with peel, raw	pepino con piel
 fdc:2346407	Cabbage, green, raw	col verde
 fdc:2346408	Cabbage, red, raw	col morada
-fdc:2346409	Strawberries, raw	fresas Foundation
-fdc:2346410	Raspberries, raw	frambuesas Foundation
+fdc:2346409	Strawberries, raw	fresas (tabla nueva)
+fdc:2346410	Raspberries, raw	frambuesas (tabla nueva)
 fdc:2346411	Blueberries, raw	arándanos
 fdc:2346412	Grapes, red, seedless, raw	uva roja sin semillas
 fdc:2346413	Grapes, green, seedless, raw	uva verde sin semillas
@@ -8157,13 +8157,13 @@ fdc:2644293	Blackeye pea, canned, sodium added, drained and rinsed	caupí en con
 fdc:2644294	Beans, great northern, canned, sodium added, drained and rinsed	alubias blancas del norte en conserva escurridas lavadas
 fdc:2646168	Pork, loin, boneless, raw	lomo de cerdo sin hueso crudo
 fdc:2646169	Pork, loin, tenderloin, boneless, raw	solomillo de cerdo sin hueso crudo
-fdc:2646170	Chicken, breast, boneless, skinless, raw	pechuga de pollo sin piel ni hueso cruda Foundation
+fdc:2646170	Chicken, breast, boneless, skinless, raw	pechuga de pollo sin piel ni hueso cruda
 fdc:2646171	Chicken, thigh, boneless, skinless, raw	contramuslo de pollo sin piel ni hueso crudo
 fdc:2646172	Beef, ribeye, steak, boneless, choice, raw	filete ribeye de vacuno sin hueso crudo (choice)
 fdc:2646173	Beef, round, top round, boneless, choice, raw	filete de tapa de vacuno sin hueso crudo (choice)
 fdc:2646174	Beef, chuck, roast, boneless, choice, raw	asado de aguja de vacuno sin hueso crudo (choice)
 fdc:2646175	Beef, flank, steak, boneless, choice, raw	filete de falda de vacuno sin hueso crudo (choice)
-fdc:2647437	Yogurt, plain, nonfat	yogur natural desnatado Foundation
+fdc:2647437	Yogurt, plain, nonfat	yogur natural desnatado (tabla nueva)
 fdc:2647438	Cheese, monterey jack, solid	queso Monterey Jack
 fdc:2647439	Cheese, pasteurized process cheese food or product, American, singles	queso fundido en lonchas
 fdc:2647440	Cheese, provolone, sliced	queso provolone
@@ -8230,7 +8230,7 @@ fdc:332791	Olives, green, Manzanilla, stuffed with pimiento	aceitunas verdes rel
 fdc:333008	Cookies, oatmeal, soft, with raisins	galletas de avena blandas con pasas
 fdc:333281	Tomatoes, canned, red, ripe, diced	tomates en conserva en dados
 fdc:333374	Fish, haddock, raw	eglefino crudo
-fdc:333476	Fish, pollock, raw	abadejo crudo Foundation
+fdc:333476	Fish, pollock, raw	abadejo crudo
 fdc:334194	Fish, tuna, light, canned in water, drained solids	atún claro al natural escurrido
 fdc:334536	Restaurant, Chinese, fried rice, without meat	arroz frito chino sin carne
 fdc:334628	Restaurant, Latino, tamale, pork	tamal de cerdo
@@ -8314,7 +8314,7 @@ frida:1747	Whey protein powder	proteína de suero en polvo
 frida:1756	Veal, shortloin, raw	lomo corto de ternera crudo
 frida:179	Rice starch	almidón de arroz
 frida:1794	Sausage, with soy protein	salchicha con proteína de soja
-frida:1803	Chickpeas, dry, raw	garbanzos secos Frida
+frida:1803	Chickpeas, dry, raw	garbanzos secos crudos
 frida:1806	Edamame beans (Soy beans), shelled, frozen	edamame congelado
 frida:1886	Peach Icetea, artificial sweetener added	té helado de melocotón con edulcorante
 frida:236	Pepper, black	pimienta negra
