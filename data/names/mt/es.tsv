@@ -10649,17 +10649,933 @@ cofid:14-389	Rhubarb, stems only, stewed without sugar	compota de ruibarbo sin a
 cofid:14-848	Tigernuts	chufas
 cofid:14-892	Peanut butter, smooth	mantequilla de cacahuete
 cofid:15-711	Cauliflower cheese, made with whole milk, homemade	coliflor con queso
+cofid:15-712	Casserole, bean and mixed vegetable, homemade	cazuela de alubias con verduras casera
+cofid:15-713	Casserole, bean and root vegetable, homemade	cazuela de alubias con tubérculos casera
+cofid:15-714	Casserole, sweet potato and green banana, homemade	cazuela de boniato con plátano verde casera
+cofid:15-715	Cauliflower in white sauce, made with semi-skimmed milk, homemade	coliflor en bechamel con leche semidesnatada casera
+cofid:15-716	Cauliflower in white sauce, made with skimmed milk, homemade	coliflor en bechamel con leche desnatada casera
+cofid:15-717	Cauliflower in white sauce, made with whole milk, homemade	coliflor en bechamel con leche entera casera
+cofid:15-718	Cauliflower with onions and chilli pepper, homemade	coliflor con cebolla y guindilla casera
+cofid:15-719	Chilli, bean and lentil, homemade	chili con alubias y lentejas casero
+cofid:15-720	Chilli, Quorn, homemade	chili con Quorn casero
+cofid:15-721	Cho cho fritters, fried in rapeseed oil, homemade	buñuelos de chayote fritos en aceite de colza caseros
+cofid:15-722	Coco fritters, fried in rapeseed oil, homemade	buñuelos de taro fritos en aceite de colza caseros
+cofid:15-723	Coo-coo, homemade	coo-coo casero
+cofid:15-724	Corn fritters, fried in rapeseed oil, homemade	buñuelos de maíz fritos en aceite de colza caseros
+cofid:15-725	Corn pudding, homemade	pudín de maíz casero
+cofid:15-726	Courgettes with eggs, homemade	calabacines con huevo caseros
+cofid:15-727	Crumble, vegetable, with white sauce, homemade	crumble de verduras con bechamel casero
+cofid:15-728	Crumble, vegetable, with white sauce, wholemeal, homemade	crumble de verduras con bechamel integral casero
+cofid:15-729	Crumble, vegetable, with tinned tomatoes, homemade	crumble de verduras con tomate en conserva casero
+cofid:15-730	Crumble, vegetable, with tinned tomatoes, wholemeal, homemade	crumble de verduras con tomate en conserva integral casero
+cofid:15-731	Curry, almond, homemade	curry de almendras casero
+cofid:15-734	Moussaka, vegetable, homemade	musaka de verduras casera
+cofid:15-735	Curry, black gram, whole and red kidney bean, homemade	curry de urad entero con alubias rojas casero
+cofid:15-736	Curry, black gram, whole, Bengali, homemade	curry de urad entero bengalí casero
+cofid:15-737	Curry, black gram, whole, Gujerati, homemade	curry de urad entero gujarati casero
+cofid:15-738	Curry, black-eye bean, homemade	curry de carillas casero
+cofid:15-739	Curry, Bombay potato, homemade	curry de patatas Bombay casero
+cofid:15-740	Curry, cabbage, masala, homemade	curry de col masala casero
+cofid:15-741	Curry, cauliflower and potato, homemade	curry de coliflor con patatas casero
+cofid:15-742	Curry, chick pea dahl and spinach, with butter, homemade	curry de dal de garbanzos con espinacas con mantequilla casero
+cofid:15-743	Curry, chick pea dahl and spinach, with vegetable oil, homemade	curry de dal de garbanzos con espinacas con aceite vegetal casero
+cofid:15-744	Curry, chick pea, whole, Gujerati type, homemade	curry de garbanzos enteros gujarati casero
+cofid:15-745	Curry, chick pea, whole and potato, homemade	curry de garbanzos enteros con patatas casero
+cofid:15-746	Curry, chick pea, whole and tomato, Gujerati, with butter ghee, homemade	curry de garbanzos enteros con tomate gujarati con ghee casero
+cofid:15-747	Curry, chick pea, whole and tomato, Gujerati, with vegetable oil, homemade	curry de garbanzos enteros con tomate gujarati con aceite vegetal casero
+cofid:15-748	Curry, chick pea, UK type, homemade	curry de garbanzos británico casero
+cofid:15-749	Curry, courgette and potato, homemade	curry de calabacín con patatas casero
+cofid:15-750	Curry, egg and potato, homemade	curry de huevo con patatas casero
+cofid:15-751	Sauce, curry, sweet, UK type, homemade	salsa de curry dulce británica casera
+cofid:15-752	Curry, egg, in sweet sauce, UK type, homemade	curry de huevo en salsa dulce británico casero
+cofid:15-753	Curry, egg, with butter, homemade	curry de huevo con mantequilla casero
+cofid:15-754	Curry, egg, with rapeseed oil, homemade	curry de huevo con aceite de colza casero
+cofid:15-755	Curry, green bean, masala, homemade	curry de judías verdes masala casero
+cofid:15-756	Curry, karela, homemade	curry de karela casero
+cofid:15-757	Curry, lentil, red/masoor dahl and mung bean dahl, homemade	curry de lentejas rojas con dal de mung casero
+cofid:15-758	Curry, lentil, red/masoor dahl and tomato, Punjabi, homemade	curry de lentejas rojas con tomate punjabi casero
+cofid:15-759	Curry, lentil, red/masoor dahl and tomato, with butter, homemade	curry de lentejas rojas con tomate con mantequilla casero
+cofid:15-760	Curry, lentil, red/masoor dahl and tomato, with vegetable oil, homemade	curry de lentejas rojas con tomate con aceite vegetal casero
+cofid:15-761	Curry, lentil, red/masoor dahl and vegetable, UK type, homemade	curry de lentejas rojas con verduras británico casero
+cofid:15-762	Curry, lentil, red/masoor dahl, Punjabi, homemade	curry de lentejas rojas punjabi casero
+cofid:15-763	Curry, lentil, red/masoor dahl, with butter, homemade	curry de lentejas rojas con mantequilla casero
+cofid:15-764	Curry, lentil, red/masoor dahl, with vegetable oil, homemade	curry de lentejas rojas con aceite vegetal casero
+cofid:15-765	Curry, lentil, whole/masoor, Gujerati, homemade	curry de lentejas enteras gujarati casero
+cofid:15-766	Curry, lentil, whole/masoor, Punjabi, homemade	curry de lentejas enteras punjabi casero
+cofid:15-767	Curry, mung bean dahl and spinach, homemade	curry de dal de mung con espinacas casero
 cofid:15-768	Curry, mung bean dahl, Bengali, homemade	dal de judía mungo bengalí
 cofid:15-769	Curry, mung bean, whole and turnip leaves, homemade	curry de judía mungo con hojas de nabo
+cofid:15-771	Curry, mung bean, whole, Gujerati, homemade	curry de mung entero gujarati casero
+cofid:15-774	Curry, dudhi, kofta, homemade	curry con kofta de dudhi casero
+cofid:15-776	Curry, pea and potato, homemade	curry de guisantes con patatas casero
+cofid:15-777	Curry, pigeon pea dahl and tomato, homemade	curry de dal de guandú con tomate casero
+cofid:15-778	Curry, pigeon pea dahl with tomatoes and peanuts, homemade	curry de dal de guandú con tomate y cacahuetes casero
+cofid:15-779	Curry, pigeon pea dahl, with butter, homemade	curry de dal de guandú con mantequilla casero
+cofid:15-780	Curry, pigeon pea dahl, with vegetable oil, homemade	curry de dal de guandú con aceite vegetal casero
+cofid:15-781	Curry, potato and pea, homemade	curry de patatas con guisantes casero
+cofid:15-782	Curry, potato, Gujerati, homemade	curry de patatas gujarati casero
+cofid:15-783	Curry, potato, Punjabi, homemade	curry de patatas punjabi casero
+cofid:15-784	Curry, red kidney and mung bean, whole, homemade	curry de alubias rojas con mung entero casero
+cofid:15-785	Curry, red kidney bean, Gujerati, homemade	curry de alubias rojas gujarati casero
+cofid:15-787	Curry, spinach and potato, masala, homemade	curry de espinacas con patatas masala casero
+cofid:15-788	Curry, tinda gourd and potato, homemade	curry de tinda con patatas casero
+cofid:15-789	Curry, vegetable, frozen mixed vegetables, homemade	curry de verduras congeladas casero
+cofid:15-790	Curry, vegetable, in sweet sauce, UK type, homemade	curry de verduras en salsa dulce británico casero
+cofid:15-791	Curry, vegetable, Islami, homemade	curry de verduras islami casero
+cofid:15-792	Curry, vegetable, Pakistani, homemade	curry de verduras pakistaní casero
 cofid:15-793	Curry, vegetable, West Indian, homemade	curry de verduras
+cofid:15-794	Curry, vegetable, with yogurt, UK type, homemade	curry de verduras con yogur británico casero
+cofid:15-795	Falafel, fried in rapeseed oil, homemade	faláfel frito en aceite de colza casero
+cofid:15-796	Flan, cheese and mushroom, homemade	flan de queso y champiñones casero
+cofid:15-797	Flan, cheese and mushroom, wholemeal, homemade	flan de queso y champiñones integral casero
+cofid:15-798	Flan, cheese, onion and potato, homemade	flan de queso, cebolla y patata casero
+cofid:15-799	Flan, cheese, onion and potato, wholemeal, homemade	flan de queso, cebolla y patata integral casero
+cofid:15-800	Flan, lentil and tomato, homemade	flan de lentejas con tomate casero
+cofid:15-801	Flan, lentil and tomato, wholemeal, homemade	flan de lentejas con tomate integral casero
+cofid:15-802	Flan, spinach, homemade	flan de espinacas casero
+cofid:15-803	Flan, spinach, wholemeal, homemade	flan de espinacas integral casero
+cofid:15-804	Flan, vegetable, homemade	flan de verduras casero
+cofid:15-805	Flan, vegetable, wholemeal, homemade	flan de verduras integral casero
+cofid:15-806	Fu-fu, sweet potato, homemade	fufú de boniato casero
+cofid:15-807	Fu-fu, yam, homemade	fufú de ñame casero
+cofid:15-809	Khadhi	kadhi
+cofid:15-810	Khatiyu	khatiyu
+cofid:15-813	Leeks in cheese sauce, made with semi-skimmed milk, homemade	puerros en salsa de queso con leche semidesnatada caseros
+cofid:15-814	Leeks in cheese sauce, made with skimmed milk, homemade	puerros en salsa de queso con leche desnatada caseros
+cofid:15-815	Leeks in cheese sauce, made with whole milk, homemade	puerros en salsa de queso con leche entera caseros
+cofid:15-816	Pie, lentil and cheese, homemade	pastel de lentejas con queso casero
+cofid:15-817	Lentil and potato pie, homemade	pastel de lentejas y patata casero
+cofid:15-818	Lentil and rice roast, homemade	rollo de lentejas y arroz casero
+cofid:15-819	Lentil and rice roast, with egg, homemade	rollo de lentejas y arroz con huevo casero
+cofid:15-820	Lentil cutlets, fried in vegetable oil, homemade	croquetas de lentejas fritas en aceite vegetal caseras
+cofid:15-821	Lentil pie, homemade	pastel de lentejas casero
+cofid:15-822	Mchicha, homemade	mchicha casero
+cofid:15-823	Vine leaves, stuffed with rice	hojas de parra rellenas de arroz
+cofid:15-824	Okra with tomatoes and onion, Greek, homemade	ocra con tomate y cebolla griega casera
+cofid:15-825	Okra with tomatoes and onion, West Indian, homemade	ocra con tomate y cebolla caribeña casera
+cofid:15-826	Pakora/bhajia, aubergine, fried in vegetable oil, homemade	pakoras de berenjena fritas en aceite vegetal caseras
+cofid:15-827	Pakora/bhajia, cauliflower, fried in vegetable oil, homemade	pakoras de coliflor fritas en aceite vegetal caseras
+cofid:15-828	Pakora/bhajia, onion, fried in vegetable oil, homemade	pakoras de cebolla fritas en aceite vegetal caseras
+cofid:15-829	Pakora/bhajia, potato and cauliflower, fried in vegetable oil, homemade	pakoras de patata y coliflor fritas en aceite vegetal caseras
+cofid:15-830	Pakora/bhajia, potato, carrot and pea, fried in vegetable oil, homemade	pakoras de patata, zanahoria y guisantes fritas en aceite vegetal caseras
+cofid:15-831	Pakora/bhajia, potato, fried in vegetable oil, homemade	pakoras de patata fritas en aceite vegetal caseras
+cofid:15-832	Pakora/bhajia, spinach, fried in vegetable oil, homemade	pakoras de espinacas fritas en aceite vegetal caseras
+cofid:15-833	Pancakes, stuffed with vegetables, wholemeal, homemade	crepes rellenos de verduras integrales caseros
+cofid:15-835	Pastichio	pastitsio
+cofid:15-836	Pasty, vegetable, wholemeal, homemade	pasty de verduras integral casero
+cofid:15-837	Peppers, green, stuffed with rice, homemade	pimientos verdes rellenos de arroz caseros
+cofid:15-838	Pesto sauce, homemade	salsa pesto casera
+cofid:15-839	Pie, Quorn and vegetable	pastel de Quorn y verduras
+cofid:15-840	Pie, spinach, homemade	pastel de espinacas casero
+cofid:15-841	Pie, vegetable, wholemeal, homemade	pastel de verduras integral casero
+cofid:15-842	Pilaf, rice with spinach, homemade	pilaf de arroz con espinacas casero
+cofid:15-843	Pilaf, rice with tomato, homemade	pilaf de arroz con tomate casero
+cofid:15-844	Pilau, egg and potato, homemade	pilaf de huevo y patata casero
+cofid:15-845	Pilau, egg and potato, brown rice, homemade	pilaf de huevo y patata con arroz integral casero
+cofid:15-846	Pilau, mushroom, homemade	pilaf de champiñones casero
+cofid:15-849	Potato cakes, fried in rapeseed oil	tortitas de patata fritas en aceite de colza
+cofid:15-850	Potatoes, duchesse	patatas duquesa
+cofid:15-852	Peppers, green, stuffed with vegetables, cheese topping, homemade	pimientos verdes rellenos de verduras gratinados con queso caseros
+cofid:15-853	Red pea loaf	pastel de guisantes rojos
+cofid:15-854	Re-fried beans	alubias refritas
+cofid:15-855	Rice and black-eye beans	arroz con carillas
+cofid:15-856	Rice and black-eye beans, brown rice	arroz integral con carillas
+cofid:15-857	Rice and pigeon peas	arroz con guandú
 cofid:15-858	Rice and pigeon peas, brown rice	arroz integral con gandules
+cofid:15-859	Rice and red kidney beans	arroz con alubias rojas
+cofid:15-860	Rice and red kidney beans, brown rice	arroz integral con alubias rojas
+cofid:15-861	Rice and split peas	arroz con guisantes partidos
+cofid:15-862	Rice and split peas, brown rice	arroz integral con guisantes partidos
+cofid:15-863	Risotto, white rice, vegetable, homemade	risotto de verduras de arroz blanco casero
+cofid:15-864	Risotto, vegetable, brown rice	risotto de verduras de arroz integral
+cofid:15-865	Rissoles, chick pea, fried in sunflower oil	croquetas de garbanzos fritas en aceite de girasol
+cofid:15-866	Rissoles, chick pea, fried in vegetable oil	croquetas de garbanzos fritas en aceite vegetal
+cofid:15-867	Rissoles, vegetable, fried in sunflower oil	croquetas de verduras fritas en aceite de girasol
+cofid:15-868	Rissoles, vegetable, fried in vegetable oil	croquetas de verduras fritas en aceite vegetal
+cofid:15-869	Roulade, spinach	rollo de espinacas
+cofid:15-870	Salad, beetroot and onion in French dressing	ensalada de remolacha y cebolla con salsa francesa
+cofid:15-871	Salad, Greek	ensalada griega
+cofid:15-872	Salad, pasta, vegetables and mayonnaise	ensalada de pasta con verduras y mayonesa
+cofid:15-873	Salad, potato, with French dressing	ensalada de patata con salsa francesa
+cofid:15-874	Salad, potato, with mayonnaise	ensalada de patata con mayonesa
+cofid:15-875	Salad, rice, brown	ensalada de arroz integral
+cofid:15-876	Salad, tomato and onion	ensalada de tomate y cebolla
+cofid:15-878	Salad, Waldorf	ensalada Waldorf
+cofid:15-879	Sauce, curry, onion, with butter, homemade	salsa de curry con cebolla con mantequilla casera
+cofid:15-880	Sauce, curry, onion, with vegetable oil, homemade	salsa de curry con cebolla con aceite vegetal casera
+cofid:15-881	Sauce, curry, tomato and onion, homemade	salsa de curry de tomate y cebolla casera
+cofid:15-882	Sauce, tomato and mushroom, homemade	salsa de tomate con champiñones casera
+cofid:15-883	Shepherd's pie, vegetable	pastel del pastor vegetal
+cofid:15-884	Sweet potato and onion layer	cazuela de boniato con cebolla
+cofid:15-885	Tabouleh	tabulé
+cofid:15-886	Tempeh burgers, fried in vegetable oil	hamburguesas de tempeh fritas en aceite vegetal
+cofid:15-887	Tofu burger, baked	hamburguesa de tofu al horno
+cofid:15-888	Tofu spread	paté de tofu
+cofid:15-889	Tomatoes, stuffed with vegetables	tomates rellenos de verduras
+cofid:15-892	Curry, vegetable, retail, with rice	curry de verduras comprado con arroz
+cofid:16-001	Ayr, raw	ayr crudo
+cofid:16-003	Bele, raw	bele cruda
+cofid:16-004	Boal, raw	boal crudo
+cofid:16-005	Bombay duck	bummalo
+cofid:16-006	Bream, Sea, raw	besugo crudo
+cofid:16-007	Catfish, raw	bagre crudo
+cofid:16-008	Catfish, flesh only, steamed	bagre al vapor
+cofid:16-009	Catfish, flesh only, steamed, weighed with bones	bagre al vapor con huesos
+cofid:16-010	Salted fish, Chinese, bones removed, steamed	pescado salado chino sin espinas al vapor
+cofid:16-011	Chital, raw	chitala cruda
+cofid:16-015	Cod, flesh only, poached in milk, butter and salt added	bacalao fresco escalfado en leche con mantequilla y sal
+cofid:16-016	Cod, flesh only, poached in milk, butter and salt added, weighed with bones and skin	bacalao fresco escalfado en leche con mantequilla y sal con huesos y piel
+cofid:16-035	Eel, conger, flesh only, raw	congrio crudo
+cofid:16-036	Eel, conger, flesh only, grilled	congrio a la parrilla
+cofid:16-037	Eel, conger, flesh only, grilled, weighed with bones and skin	congrio a la parrilla con huesos y piel
+cofid:16-038	Dab, raw	limanda cruda
+cofid:16-039	Dover sole, raw	lenguado crudo
+cofid:16-040	Flounder, raw	platija común cruda
+cofid:16-041	Flounder, flesh only, steamed	platija común al vapor
+cofid:16-042	Flounder, flesh only, steamed, weighed with bones and skin	platija común al vapor con huesos y piel
+cofid:16-043	Flying fish, raw	pez volador crudo
+cofid:16-052	Haddock, in batter, fried in blended oil	eglefino rebozado frito en mezcla de aceites
+cofid:16-053	Haddock, in batter, fried in dripping	eglefino rebozado frito en grasa
+cofid:16-055	Haddock, in batter, fried in sunflower oil	eglefino rebozado frito en aceite de girasol
+cofid:16-057	Haddock, fillets, flesh only, in flour, fried in blended oil, weighed with bones and skin	filete de eglefino enharinado frito en mezcla de aceites con huesos y piel
+cofid:16-058	Haddock, fillets, flesh only, in flour, fried in dripping	filete de eglefino enharinado frito en grasa
+cofid:16-059	Haddock, fillets, flesh only, in flour, fried in dripping, weighed with bones and skin	filete de eglefino enharinado frito en grasa con huesos y piel
+cofid:16-060	Haddock, fillets, flesh only, in flour, fried in sunflower oil	filete de eglefino enharinado frito en aceite de girasol
+cofid:16-061	Haddock, fillets, flesh only, in flour, fried in sunflower oil, weighed with bones and skin	filete de eglefino enharinado frito en aceite de girasol con huesos y piel
+cofid:16-062	Haddock, coated in crumbs, frozen, raw	eglefino empanado congelado crudo
+cofid:16-063	Haddock, coated in crumbs, frozen, fried in blended oil	eglefino empanado frito en mezcla de aceites
+cofid:16-064	Haddock, coated in crumbs, frozen, fried in blended oil, weighed with bones and skin	eglefino empanado frito en mezcla de aceites con huesos y piel
+cofid:16-070	Hake, flesh only, raw	merluza cruda
+cofid:16-071	Hake, flesh only, grilled	merluza a la parrilla
+cofid:16-072	Hake, flesh only, grilled, weighed with bones and skin	merluza a la parrilla con huesos y piel
+cofid:16-073	Halibut, flesh only, raw	fletán crudo
+cofid:16-074	Halibut, flesh only, grilled	fletán a la parrilla
+cofid:16-075	Halibut, grilled, weighed with bones and skin	fletán a la parrilla con huesos y piel
+cofid:16-076	Halibut, flesh only, poached	fletán escalfado
+cofid:16-077	Halibut, flesh only, poached, weighed with bones and skin	fletán escalfado con huesos y piel
+cofid:16-078	Hoki, raw	hoki crudo
+cofid:16-079	Hoki, grilled	hoki a la parrilla
+cofid:16-080	John Dory, raw	pez de San Pedro crudo
+cofid:16-081	Kalabasu, raw	kalabasu cruda
+cofid:16-087	Lemon sole, goujons, baked	tiras de mendo limón al horno
+cofid:16-091	Ling, raw	maruca cruda
+cofid:16-092	Monkfish, flesh only, raw	rape crudo
+cofid:16-093	Monkfish, flesh only, grilled	rape a la parrilla
+cofid:16-094	Monkfish, flesh only, grilled, weighed with bones	rape a la parrilla con huesos
+cofid:16-095	Mullet, Grey, flesh only, raw	lisa cruda
+cofid:16-096	Mullet, Grey, flesh only, grilled	lisa a la parrilla
+cofid:16-097	Mullet, Grey, grilled, weighed with bones and skin	lisa a la parrilla con huesos y piel
+cofid:16-098	Mullet, Red, flesh only, raw	salmonete crudo
+cofid:16-099	Mullet, Red, flesh only, grilled	salmonete a la parrilla
+cofid:16-100	Mullet, Red, flesh only, grilled, weighed with bones and skin	salmonete a la parrilla con huesos y piel
 cofid:16-101	Parrot fish, raw	pez loro crudo
+cofid:16-124	Pomfret, black, raw	palometa negra cruda
+cofid:16-125	Pomfret, white, raw	palometa blanca cruda
+cofid:16-126	Red snapper, flesh only, raw	pargo crudo
+cofid:16-127	Red snapper, flesh only, fried in blended oil, weighed with bones and skin	pargo frito en mezcla de aceites con huesos y piel
+cofid:16-128	Red snapper, flesh only, fried in blended oil, weighed with bones and skin	pargo frito en mezcla de aceites con huesos y piel
+cofid:16-129	Red snapper, flesh only, fried in sunflower oil	pargo frito en aceite de girasol
+cofid:16-130	Red snapper, flesh only, fried in sunflower oil, weighed with bones and skin	pargo frito en aceite de girasol con huesos y piel
+cofid:16-131	Redfish, raw	gallineta cruda
+cofid:16-132	Rohu, raw	rohu crudo
+cofid:16-133	Rock Salmon/Dogfish, raw	musola cruda
+cofid:16-134	Rock Salmon/Dogfish, in batter, fried in blended oil	musola rebozada frita en mezcla de aceites
+cofid:16-135	Rock Salmon/Dogfish, in batter, fried in blended oil, weighed with bones	musola rebozada frita en mezcla de aceites con huesos
+cofid:16-136	Rock Salmon/Dogfish, in batter, fried in dripping	musola rebozada frita en grasa
+cofid:16-137	Rock Salmon/Dogfish, in batter, fried in dripping, weighed with bones	musola rebozada frita en grasa con huesos
+cofid:16-138	Rock Salmon/Dogfish, in batter, fried in retail blend oil	musola rebozada frita en mezcla de aceites comercial
+cofid:16-139	Rock Salmon/Dogfish, in batter, fried in retail blend oil, weighed with bones	musola rebozada frita en mezcla de aceites comercial con huesos
+cofid:16-140	Rock Salmon/Dogfish, in batter, fried in sunflower oil	musola rebozada frita en aceite de girasol
+cofid:16-141	Rock Salmon/Dogfish, in batter, fried in sunflower oil, weighed with bones	musola rebozada frita en aceite de girasol con huesos
+cofid:16-142	Shark, raw	tiburón crudo
+cofid:16-143	Skate, raw	raya cruda
+cofid:16-144	Skate, grilled	raya a la parrilla
+cofid:16-145	Skate, grilled, weighed with bones	raya a la parrilla con huesos
+cofid:16-154	Tilapia, raw	tilapia cruda
+cofid:16-155	Turbot, flesh only, raw	rodaballo crudo
+cofid:16-156	Turbot, flesh only, grilled	rodaballo a la parrilla
+cofid:16-157	Turbot, flesh only, grilled, weighed with bones and skin	rodaballo a la parrilla con huesos y piel
+cofid:16-158	White fish, dried, salted	pescado blanco seco salado
+cofid:16-159	Whiting, flesh only, raw	pescadilla cruda
+cofid:16-160	Whiting, flesh only, steamed	pescadilla al vapor
+cofid:16-161	Whiting, flesh only, steamed, weighed with bones and skin	pescadilla al vapor con huesos y piel
+cofid:16-162	Whiting, in crumbs, fried in blended oil	pescadilla empanada frita en mezcla de aceites
+cofid:16-163	Whiting, in crumbs, fried in blended oil, weighed with bones and skin	pescadilla empanada frita en mezcla de aceites con huesos y piel
+cofid:16-164	Whiting, in crumbs, fried in dripping	pescadilla empanada frita en grasa
+cofid:16-165	Whiting, in crumbs, fried in dripping, weighed with bones and skin	pescadilla empanada frita en grasa con huesos y piel
+cofid:16-166	Whiting, in crumbs, fried in sunflower oil	pescadilla empanada frita en aceite de girasol
+cofid:16-167	Whiting, in crumbs, fried in sunflower oil, weighed with bones and skin	pescadilla empanada frita en aceite de girasol con huesos y piel
+cofid:16-169	Bacha, raw	bacha cruda
+cofid:16-170	Bloater, flesh only, grilled	arenque ahumado entero a la parrilla
+cofid:16-171	Bloater, flesh only, grilled, weighed with bones and skin	arenque ahumado entero a la parrilla con huesos y piel
+cofid:16-172	Carp, raw	carpa cruda
+cofid:16-173	Eel, yellow, raw	anguila cruda
+cofid:16-175	Herring, flesh only, raw	arenque crudo
+cofid:16-176	Herring, flesh only, grilled	arenque a la parrilla
+cofid:16-177	Herring, flesh only, grilled, weighed with bones and skin	arenque a la parrilla con huesos y piel
+cofid:16-183	Herring, pickled	arenque en escabeche
+cofid:16-184	Hilsa, raw	hilsa cruda
+cofid:16-185	Jackfish, raw	jurel crudo
+cofid:16-186	Katla, raw	catla cruda
+cofid:16-199	Orange roughy, raw	reloj anaranjado crudo
+cofid:16-218	Sprats, raw	espadines crudos
+cofid:16-219	Sprats, fried	espadines fritos
+cofid:16-220	Sprats, fried, weighed with bones	espadines fritos con espinas
+cofid:16-221	Swordfish, flesh only, raw	pez espada crudo
+cofid:16-222	Swordfish, flesh only, grilled	pez espada a la parrilla
+cofid:16-223	Swordfish, flesh only, grilled, weighed with bones and skin	pez espada a la parrilla con huesos y piel
+cofid:16-224	Trout, brown, raw	trucha común cruda
+cofid:16-231	Whitebait, in flour, fried	chanquetes enharinados fritos
+cofid:16-235	Crayfish, raw	cangrejo de río crudo
+cofid:16-245	Shrimps, boiled	gambas cocidas
+cofid:16-246	Shrimps, boiled, weighed with shells	gambas cocidas con cáscara
+cofid:16-247	Shrimps, canned in brine, drained	gambas en conserva en salmuera escurridas
+cofid:16-248	Shrimps, frozen	gambas congeladas
+cofid:16-249	Shrimps, dried	gambas secas
+cofid:16-252	Cockles, boiled	berberechos cocidos
+cofid:16-254	Cuttlefish, raw	sepia cruda
+cofid:16-259	Octopus, raw	pulpo crudo
+cofid:16-260	Oysters, raw	ostras crudas
+cofid:16-261	Oysters, raw, weighed with shells	ostras crudas en su concha
+cofid:16-262	Scallops, steamed	vieiras al vapor
+cofid:16-263	Squid, raw	calamar crudo
+cofid:16-267	Squid, dried	calamar seco
+cofid:16-268	Whelks, boiled	buccinos cocidos
+cofid:16-269	Whelks, boiled, weighed with shells	buccinos cocidos en su concha
+cofid:16-270	Winkles, boiled	bígaros cocidos
+cofid:16-271	Winkles, boiled, weighed with shells	bígaros cocidos en su concha
+cofid:16-272	Caviare, bottled in brine, drained	caviar en salmuera escurrido
+cofid:16-279	Fish balls, steamed	albóndigas de pescado al vapor
+cofid:16-299	Roe, cod, hard, raw	huevas de bacalao crudas
+cofid:16-301	Roe, cod, hard, coated in batter, fried	huevas de bacalao rebozadas fritas
+cofid:16-302	Roe, herring, soft, raw	lechas de arenque crudas
+cofid:16-332	Lobster, boiled	bogavante cocido
+cofid:16-333	Curry, prawn, takeaway	curry de gambas para llevar
+cofid:16-335	Szechuan prawns with vegetables, takeaway	gambas de Sichuan con verduras para llevar
+cofid:16-343	Lobster, boiled, weighed with shell	bogavante cocido con caparazón
+cofid:16-356	Salmon, farmed, flesh only, raw	salmón de piscifactoría crudo
+cofid:16-357	Salmon, farmed, flesh only, grilled	salmón de piscifactoría a la parrilla
+cofid:16-358	Salmon, farmed, flesh only, steamed	salmón de piscifactoría al vapor
+cofid:16-359	Salmon, farmed, flesh only, baked	salmón de piscifactoría al horno
+cofid:16-360	Salmon, wild, flesh only, raw	salmón salvaje crudo
+cofid:16-361	Sushi, salmon nigiri	nigiri de salmón
+cofid:16-362	Sushi, tuna nigiri	nigiri de atún
+cofid:16-364	Curry, fish, homemade	curry de pescado casero
+cofid:16-365	Curry, Prawn bhuna, takeaway	curry de gambas bhuna para llevar
+cofid:16-366	Curry, Prawn madras, takeaway	curry de gambas madras para llevar
+cofid:16-367	Sesame prawn toast, takeaway	tostadas de gambas con sésamo para llevar
+cofid:16-368	Cod, in batter, fried, takeaway	bacalao fresco rebozado frito para llevar
+cofid:16-369	Cod, in batter, baked	bacalao fresco rebozado al horno
+cofid:16-370	Cod, in breadcrumbs, baked	bacalao fresco empanado al horno
+cofid:16-371	Fish fingers, pollock, grilled	palitos de abadejo a la parrilla
+cofid:16-372	Cod, flesh only, raw	bacalao fresco crudo
+cofid:16-373	Cod, flesh only, baked	bacalao fresco al horno
+cofid:16-374	Cod, flesh only, microwaved	bacalao fresco al microondas
+cofid:16-375	Haddock, flesh only, raw	eglefino crudo
+cofid:16-376	Haddock, flesh only, grilled	eglefino a la parrilla
+cofid:16-377	Haddock, flesh only, steamed	eglefino al vapor
+cofid:16-378	Pollock, Alaskan, flesh only, raw	abadejo de Alaska crudo
+cofid:16-379	Lemon sole, flesh only, raw	mendo limón crudo
+cofid:16-380	Lemon sole, flesh only, grilled	mendo limón a la parrilla
+cofid:16-381	Plaice, flesh only, raw	platija cruda
+cofid:16-382	Pangasius, flesh only, raw	pangasius crudo
+cofid:16-383	Coley, flesh only, raw	carbonero crudo
+cofid:16-384	Prawns, standard, purchased cooked	gambas cocidas compradas
+cofid:16-385	Bass, sea, flesh only, raw	lubina cruda
+cofid:16-386	Bass, sea, flesh only, baked	lubina al horno
+cofid:16-387	Prawns, king, raw	gambones crudos
+cofid:16-388	Prawns, king, grilled from raw	gambones a la parrilla desde crudo
+cofid:16-389	Prawns, king, purchased cooked	gambones cocidos comprados
+cofid:16-390	Mussels, purchased cooked	mejillones cocidos comprados
+cofid:16-391	Crab, brown meat, purchased cooked	carne oscura de cangrejo cocida comprada
+cofid:16-392	Crab, white meat, purchased cooked	carne blanca de cangrejo cocida comprada
+cofid:16-393	Mackerel, flesh only, raw	caballa cruda
+cofid:16-394	Mackerel, flesh only, grilled	caballa a la parrilla
+cofid:16-395	Trout, rainbow, flesh only, raw	trucha arcoíris cruda
+cofid:16-396	Trout, rainbow, flesh only, baked	trucha arcoíris al horno
+cofid:16-397	Kippers, flesh only, grilled	arenques ahumados a la parrilla
+cofid:16-398	Kippers, flesh only, boil in the bag, with butter, cooked	arenques ahumados en bolsa con mantequilla cocidos
+cofid:16-399	Tuna, flesh only, raw	atún crudo
+cofid:16-400	Tuna, flesh only, baked	atún al horno
+cofid:16-401	Sardines, flesh only, raw	sardinas crudas
+cofid:16-402	Haddock, flesh only, smoked, poached	eglefino ahumado escalfado
+cofid:16-403	Plaice, in breadcrumbs, baked	platija empanada al horno
+cofid:16-404	Calamari, coated in batter, baked	calamares rebozados al horno
+cofid:16-405	Fish fingers, cod, grilled/baked	palitos de bacalao a la parrilla o al horno
+cofid:16-406	Fish fingers, salmon, grilled/baked	palitos de salmón a la parrilla o al horno
+cofid:16-407	Fishcakes, white fish, coated in breadcrumbs, baked	croquetas de pescado blanco empanadas al horno
+cofid:16-408	Fishcakes, salmon, coated in breadcrumbs, baked	croquetas de salmón empanadas al horno
+cofid:16-409	Scampi, coated in breadcrumbs, baked	scampi empanados al horno
+cofid:16-410	Pie, fish, white fish, retail, baked	pastel de pescado blanco comprado al horno
+cofid:16-411	Mussels in white wine sauce, cooked	mejillones en salsa de vino blanco cocidos
+cofid:16-412	Salmon, smoked (cold-smoked)	salmón ahumado en frío
+cofid:16-413	Salmon, smoked (hot-smoked)	salmón ahumado en caliente
+cofid:16-414	Mackerel, flesh only, smoked	caballa ahumada
+cofid:16-415	Seafood sticks	palitos de mar
+cofid:16-416	Tuna, canned in brine, drained	atún en conserva en salmuera escurrido
+cofid:16-417	Tuna, canned in sunflower oil, drained	atún en conserva en aceite de girasol escurrido
+cofid:16-418	Salmon, red, canned in brine, drained	salmón rojo en conserva en salmuera escurrido
+cofid:16-419	Salmon, red, canned in brine, skinless and boneless, drained	salmón rojo en conserva en salmuera sin piel ni huesos escurrido
+cofid:16-420	Salmon, pink, canned in brine, drained	salmón rosa en conserva en salmuera escurrido
+cofid:16-422	Sardines, canned in tomato sauce, whole contents	sardinas en conserva en salsa de tomate con su jugo
+cofid:16-424	Sardines, canned in brine, drained	sardinas en conserva en salmuera escurridas
+cofid:16-425	Langoustine, boiled	cigala cocida
+cofid:16-426	Cod, in batter, fried in rapeseed oil	bacalao fresco rebozado frito en aceite de colza
+cofid:16-427	Cod, in batter, fried in dripping, takeaway	bacalao fresco rebozado frito en grasa para llevar
+cofid:16-428	Cod, in batter, fried in sunflower oil, takeaway	bacalao fresco rebozado frito en aceite de girasol para llevar
+cofid:16-429	Coley, flesh only, baked	carbonero al horno
+cofid:16-430	Coley, flesh only, grilled	carbonero a la parrilla
+cofid:16-431	Coley, flesh only, poached	carbonero escalfado
+cofid:16-432	Pangasius, flesh only, baked	pangasius al horno
+cofid:16-433	Pangasius, flesh only, poached	pangasius escalfado
+cofid:16-434	Plaice, flesh only, baked	platija al horno
+cofid:16-435	Plaice, flesh only, steamed	platija al vapor
+cofid:16-436	Pollock, Alaskan, flesh only, baked	abadejo de Alaska al horno
+cofid:16-437	Pollock, Alaskan, flesh only, steamed	abadejo de Alaska al vapor
+cofid:16-438	Sardines, flesh only, grilled	sardinas a la parrilla
+cofid:16-439	Sardines, canned in sunflower oil, drained	sardinas en conserva en aceite de girasol escurridas
+cofid:16-440	Sardines, canned in olive oil, drained	sardinas en conserva en aceite de oliva escurridas
+cofid:16-441	Crab, purchased cooked	cangrejo cocido comprado
+cofid:16-442	Scampi, in breadcrumbs, frozen, fried in rapeseed oil	scampi empanados congelados fritos en aceite de colza
+cofid:16-443	Scampi, coated in breadcrumbs, fried in sunflower oil	scampi empanados fritos en aceite de girasol
+cofid:16-444	Fish fingers, cod, fried in rapeseed oil	palitos de bacalao fritos en aceite de colza
+cofid:16-445	Fish fingers, cod, fried in sunflower oil	palitos de bacalao fritos en aceite de girasol
+cofid:16-446	Curry, fish, Bangladeshi, homemade	curry de pescado bangladeshí casero
+cofid:16-447	Kedgeree, homemade	kedgeree casero
+cofid:16-448	Anchovies, canned in oil, drained	anchoas en conserva en aceite escurridas
+cofid:16-449	Taramasalata	taramasalata
+cofid:16-450	Fish paste	paté de pescado
+cofid:16-451	Pate, tuna	paté de atún
+cofid:16-452	Crab, canned in brine, drained	cangrejo en conserva en salmuera escurrido
+cofid:16-453	Salmon en croute, retail	salmón en hojaldre comprado
+cofid:16-454	Seafood selection	selección de marisco
+cofid:16-455	Curry, haddock, Bengali, homemade	curry de eglefino bengalí casero
+cofid:16-456	Curry, herring, Bengali, homemade	curry de arenque bengalí casero
+cofid:16-457	Curry, prawn and mushroom, homemade	curry de gambas con champiñones casero
+cofid:16-458	Fishcakes, cod, homemade	croquetas de bacalao caseras
+cofid:16-459	Fishcakes, salmon, homemade	croquetas de salmón caseras
+cofid:16-460	Pie, fish, white fish, homemade	pastel de pescado blanco casero
+cofid:16-461	Pilau, prawn, homemade	pilaf de gambas casero
+cofid:16-462	Curry, fish and vegetable, Bangladeshi, homemade	curry de pescado con verduras bangladeshí casero
+cofid:16-463	Bass, sea, flesh only, baked, weighed with bones and skin	lubina al horno con huesos y piel
+cofid:16-464	Bass, sea, flesh only, raw, weighed with bones and skin	lubina cruda con huesos y piel
+cofid:16-465	Cod, flesh only, baked, weighed with bones and skin	bacalao fresco al horno con huesos y piel
+cofid:16-466	Cod, flesh only, grilled	bacalao fresco a la parrilla
+cofid:16-467	Cod, flesh only, steamed	bacalao fresco al vapor
+cofid:16-468	Cod, flesh only, steamed, weighed with bones and skin	bacalao fresco al vapor con huesos y piel
+cofid:16-469	Coley, flesh only, steamed	carbonero al vapor
+cofid:16-470	Crab, white and brown meat, purchased cooked, weighed with shell	carne blanca y oscura de cangrejo cocida comprada con caparazón
+cofid:16-471	Haddock, flesh only, grilled, fillets weighed with bones and skin	eglefino a la parrilla con huesos y piel
+cofid:16-472	Haddock, flesh only, steamed, fillets weighed with bones and skin	eglefino al vapor con huesos y piel
+cofid:16-473	Haddock, flesh only, poached	eglefino escalfado
+cofid:16-474	Haddock, flesh only, poached, fillets weighed with bones and skin	eglefino escalfado con huesos y piel
+cofid:16-475	Haddock, flesh only, smoked, poached, fillets weighed with bones and skin	eglefino ahumado escalfado con huesos y piel
+cofid:16-476	Kippers, flesh only, grilled, fillets weighed with bones and skin	arenques ahumados a la parrilla con huesos y piel
+cofid:16-477	Sole, flesh only, grilled, fillets weighed with skin	lenguado a la parrilla con piel
+cofid:16-478	Lemon sole, flesh only, steamed	mendo limón al vapor
+cofid:16-479	Mackerel, flesh only, grilled, fillets weighed with bones and skin	caballa a la parrilla con huesos y piel
+cofid:16-480	Plaice, flesh only, steamed, fillets weighed with bones and skin	platija al vapor con huesos y piel
+cofid:16-481	Prawns, king, purchased cooked, weighed with shells	gambones cocidos comprados con cáscara
+cofid:16-482	Prawns, standard, dried	gambas secas compradas
+cofid:16-483	Salmon, farmed, flesh only, steamed, fillets weighed with bones and skin	salmón de piscifactoría al vapor con huesos y piel
+cofid:16-484	Salmon, farmed, flesh only, grilled, weighed with bones and skin	salmón de piscifactoría a la parrilla con huesos y piel
+cofid:16-485	Salmon, wild, baked	salmón salvaje al horno
+cofid:16-486	Salmon, wild, grilled	salmón salvaje a la parrilla
+cofid:16-487	Salmon, wild, steamed	salmón salvaje al vapor
+cofid:16-488	Sardines, flesh only, grilled, weighed with skin and bones	sardinas a la parrilla con piel y espinas
+cofid:16-489	Trout, rainbow, baked, flesh only, fillets weighed with bones and skin	trucha arcoíris al horno con huesos y piel
+cofid:16-490	Cod, dried, salted, boiled	bacalao seco salado cocido
+cofid:16-491	Cod, flesh only, salted and smoked, raw	bacalao fresco salado ahumado crudo
+cofid:16-492	Haddock, flesh only, smoked, raw	eglefino ahumado crudo
+cofid:16-493	Haddock, flesh only, smoked, steamed	eglefino ahumado al vapor
+cofid:16-494	Haddock, flesh only, smoked, steamed, weighed with bones and skin	eglefino ahumado al vapor con huesos y piel
+cofid:16-495	Haddock, in batter, fried in retail blend oil	eglefino rebozado frito en mezcla de aceites comercial
+cofid:16-496	Lemon sole, flesh only, steamed, weighed with bones and skin	mendo limón al vapor con huesos y piel
+cofid:16-497	Mussels, raw	mejillones crudos
+cofid:16-498	Plaice, in batter, fried in blended oil	platija rebozada frita en mezcla de aceites
+cofid:16-499	Plaice, in batter, fried in retail blend oil	platija rebozada frita en mezcla de aceites comercial
+cofid:16-500	Plaice, in batter, fried in sunflower oil	platija rebozada frita en aceite de girasol
+cofid:16-501	Coley, flesh only, steamed, weighed with bones and skin	carbonero al vapor con huesos y piel
+cofid:17-001	Butteroil, unsalted	manteca de mantequilla sin sal
+cofid:17-002	Cocoa butter	manteca de cacao
+cofid:17-010	Lard	manteca de cerdo
+cofid:17-011	Suet, shredded	sebo rallado
+cofid:17-031	Oil, coconut	aceite de coco
+cofid:17-033	Oil, corn	aceite de maíz
+cofid:17-034	Oil, cottonseed	aceite de algodón
+cofid:17-035	Oil, evening primrose	aceite de onagra
+cofid:17-036	Oil, grapeseed	aceite de pepita de uva
+cofid:17-037	Oil, hazelnut	aceite de avellana
+cofid:17-038	Oil, olive	aceite de oliva
+cofid:17-039	Oil, palm	aceite de palma
+cofid:17-040	Oil, peanut (groundnut)	aceite de cacahuete
+cofid:17-041	Oil, rapeseed	aceite de colza
+cofid:17-042	Oil, safflower	aceite de cártamo
+cofid:17-043	Oil, sesame	aceite de sésamo
+cofid:17-044	Oil, soya	aceite de soja
+cofid:17-045	Oil, sunflower	aceite de girasol
+cofid:17-047	Oil, walnut	aceite de nuez
+cofid:17-048	Oil, wheatgerm	aceite de germen de trigo
+cofid:17-049	Glucose liquid, BP	glucosa líquida
+cofid:17-050	Honey	miel
+cofid:17-051	Honey and comb	miel con panal
+cofid:17-059	Molasses	melaza
+cofid:17-060	Sugar, brown	azúcar moreno
+cofid:17-061	Sugar, Demerara	azúcar demerara
+cofid:17-062	Sugar, icing	azúcar glas
+cofid:17-063	Sugar, white	azúcar blanco
+cofid:17-064	Syrup, corn, dark	jarabe de maíz oscuro
+cofid:17-065	Syrup, golden	sirope dorado
+cofid:17-073	Jam, fruit with edible seeds	mermelada de fruta con pepitas
+cofid:17-075	Jam, reduced sugar	mermelada baja en azúcar
+cofid:17-078	Marmalade	mermelada de cítricos
+cofid:17-091	Chocolate, white	chocolate blanco
+cofid:17-096	Smartie-type sweets	grageas tipo Smarties
+cofid:17-098	Truffles, mocha, homemade	trufas de moka caseras
+cofid:17-101	Sweets, boiled	caramelos duros
+cofid:17-107	Fruit gums/jellies	gominolas de fruta
+cofid:17-114	Marshmallows	malvaviscos
+cofid:17-116	Peanut brittle, homemade	crocante de cacahuete casero
+cofid:17-117	Peppermints	caramelos de menta
+cofid:17-122	Turkish delight, without nuts	delicia turca sin frutos secos
+cofid:17-132	Pork scratchings	cortezas de cerdo
+cofid:17-153	Coffee, infusion, strong	café de filtro fuerte
+cofid:17-154	Coffee, infusion, weak	café de filtro suave
+cofid:17-155	Coffee, infusion, average, with single cream	café de filtro con nata líquida
+cofid:17-156	Coffee, infusion, average, with whole milk	café de filtro con leche entera
+cofid:17-157	Coffee, infusion, average, with semi-skimmed milk	café de filtro con leche semidesnatada
+cofid:17-158	Coffee, powder, instant	café instantáneo en polvo
+cofid:17-159	Coffee, instant, made up with water	café instantáneo preparado con agua
+cofid:17-160	Coffee, instant, made up with water and whole milk	café instantáneo preparado con leche entera
+cofid:17-161	Coffee, instant, made up with water and semi-skimmed milk	café instantáneo preparado con leche semidesnatada
+cofid:17-163	Coffee and chicory essence, with water	esencia de café y achicoria preparada con agua
+cofid:17-165	Tea, black, infusion, average	té negro medio
+cofid:17-166	Tea, black, infusion, weak	té negro suave
 cofid:17-167	Tea, black, infusion, strong	té negro fuerte
+cofid:17-168	Tea, infusion, average, with whole milk	té con leche entera
+cofid:17-169	Tea, infusion, average, with semi-skimmed milk	té con leche semidesnatada
+cofid:17-170	Tea, Chinese, leaves, infusion	té chino en hoja
+cofid:17-171	Tea, green, infusion	té verde
+cofid:17-172	Tea, herbal, infusion	infusión de hierbas
+cofid:17-175	Cola	cola
+cofid:17-179	Lemonade	limonada
+cofid:17-200	Lime juice cordial, undiluted	cordial de lima sin diluir
+cofid:17-201	Lime juice cordial, diluted	cordial de lima diluido
+cofid:17-208	Beer, bitter, best, premium	cerveza bitter premium
+cofid:17-212	Lager, alcohol-free	cerveza lager sin alcohol
+cofid:17-222	Cider, dry	sidra seca
+cofid:17-223	Cider, low alcohol	sidra baja en alcohol
+cofid:17-224	Cider, sweet	sidra dulce
+cofid:17-233	Wine, white, sweet	vino blanco dulce
+cofid:17-234	Port	oporto
+cofid:17-236	Sherry, medium	jerez semiseco
+cofid:17-239	Vermouth, dry	vermut seco
+cofid:17-244	Liqueurs, high strength	licores de alta graduación
+cofid:17-245	Liqueurs, low-medium strength	licores de graduación media
+cofid:17-247	Spirits, 40% volume	destilados 40 % vol
+cofid:17-299	Dips, sour-cream based, assorted flavours	dips de crema agria variados
+cofid:17-314	Horseradish sauce	salsa de rábano picante
+cofid:17-329	Sauce, dry, casserole mix	mezcla seca de salsa para estofado
+cofid:17-330	Sauce, dry, casserole mix, made up	mezcla seca de salsa para estofado preparada
+cofid:17-336	Sauce, sweet and sour, take-away	salsa agridulce para llevar
+cofid:17-339	Vinegar	vinagre
+cofid:17-343	Chutney, mango, sweet	chutney de mango dulce
+cofid:17-345	Chutney, tomato	chutney de tomate
+cofid:17-354	Relish, tomato based	relish de tomate
+cofid:17-355	Baking powder	levadura química
+cofid:17-356	Bicarbonate of soda	bicarbonato sódico
+cofid:17-358	Cream of tartar	cremor tártaro
+cofid:17-360	Gelatine	gelatina
+cofid:17-362	Mustard powder	mostaza en polvo
+cofid:17-363	Mustard, powder, made up	mostaza en polvo preparada
+cofid:17-364	Mustard, smooth	mostaza suave
+cofid:17-365	Mustard, wholegrain	mostaza en grano
+cofid:17-367	Salt	sal
+cofid:17-371	Stuffing mix, dried	mezcla seca para relleno
+cofid:17-372	Stuffing mix, dried, assorted flavours, made up	mezcla para relleno variada preparada
+cofid:17-377	Water, distilled	agua destilada
+cofid:17-378	Yeast, bakers, compressed	levadura de panadería prensada
+cofid:17-379	Yeast, dried	levadura seca
+cofid:17-416	Mushroom, dried	setas secas
+cofid:17-417	Spinach, dried	espinacas secas
+cofid:17-487	Dripping, beef	grasa de vacuno
+cofid:17-488	Oil, cod liver	aceite de hígado de bacalao
 cofid:17-491	Chocolate, plain	chocolate negro
+cofid:17-498	Drinking chocolate, powder	chocolate a la taza en polvo
+cofid:17-499	Drinking chocolate, powder, reduced fat	chocolate a la taza en polvo bajo en grasa
+cofid:17-505	Cola, diet	cola light
+cofid:17-506	Beer, bitter, average (<4% ABV)	cerveza bitter media
+cofid:17-514	Beef extract	extracto de vacuno
+cofid:17-515	Stock cubes, beef	cubitos de caldo de vacuno
+cofid:17-517	Yeast extract	extracto de levadura
+cofid:17-583	Icing, glace, homemade	glaseado glasé casero
+cofid:17-593	Turkish delight, with nuts, homemade	delicia turca con frutos secos casera
+cofid:17-594	Coffee, Irish	café irlandés
+cofid:17-618	Sauce, pasta, tomato based, for bolognese	salsa de tomate para pasta boloñesa
+cofid:17-619	Sauce, pasta, tomato based, napoletana	salsa de tomate para pasta napolitana
+cofid:17-620	Sauce, pasta, tomato based, reduced fat	salsa de tomate para pasta baja en grasa
+cofid:17-621	Sauce, pasta, tomato based, with added vegetables	salsa de tomate para pasta con verduras
+cofid:17-622	Pesto, green	pesto verde
+cofid:17-623	Pesto, red	pesto rojo
+cofid:17-624	Sauce, pasta, four cheese	salsa de cuatro quesos para pasta
+cofid:17-625	Sauce, pasta, carbonara type	salsa carbonara para pasta
+cofid:17-626	Sauce, Indian cook in, korma/tikka masala	salsa india para cocinar korma/tikka masala
+cofid:17-627	Sauces, Indian cook in, other	otras salsas indias para cocinar
+cofid:17-628	Sauce, Chinese cook in, sweet & sour	salsa china agridulce para cocinar
+cofid:17-629	Sauce, Chinese stir fry	salsa china para salteado
+cofid:17-630	Sauce, traditional cook in, tomato based	salsa de tomate tradicional para cocinar
+cofid:17-631	Sauce, traditional cook in, white sauce based	salsa blanca tradicional para cocinar
+cofid:17-632	Coffee, cappuccino, latte	café capuchino/latte
+cofid:17-634	Soup, carrot and coriander, carton, chilled	sopa de zanahoria y cilantro en cartón refrigerada
+cofid:17-635	Soup, mushroom, carton, chilled	sopa de champiñones en cartón refrigerada
+cofid:17-636	Soup, tomato, carton, chilled	sopa de tomate en cartón refrigerada
+cofid:17-637	Soup, broccoli and stilton, carton, chilled	sopa de brócoli y stilton en cartón refrigerada
+cofid:17-640	Ghee, butter	ghee
+cofid:17-642	Potato snacks, pringle-type, fried in vegetable oil	snacks de patata tipo Pringles fritos en aceite vegetal
+cofid:17-643	Potato rings	anillas de patata
+cofid:17-644	Tortilla chips fried in sunflower oil	tortilla chips fritas en aceite de girasol
+cofid:17-645	Corn snacks	snacks de maíz
+cofid:17-646	Toffees, mixed	toffees variados
+cofid:17-647	Sweets, chew sweets	caramelos masticables
+cofid:17-648	Chocolate, milk	chocolate con leche
+cofid:17-649	Caramel bars and sweets, chocolate covered	barritas y caramelos de caramelo cubiertos de chocolate
+cofid:17-650	Chocolate, dark, with crème or mint fondant centres	chocolate negro con fondant de crema o menta
+cofid:17-651	Maltesers and similar products	Maltesers y similares
+cofid:17-652	Soup, cream of tomato, canned	sopa crema de tomate en conserva
+cofid:17-653	Soup, instant, dried, as purchased	sopa instantánea en polvo
+cofid:17-654	Mayonnaise, standard, retail	mayonesa
+cofid:17-655	Butter, spreadable (75-80% fat)	mantequilla para untar 75-80 % de grasa
+cofid:17-656	Butter, spreadable, light (60% fat)	mantequilla para untar ligera 60 % de grasa
+cofid:17-657	Chocolate covered caramel and biscuit fingers	barritas de caramelo y galleta cubiertas de chocolate
+cofid:17-658	Chocolate covered bar with caramel and cereal	barra de caramelo y cereales cubierta de chocolate
+cofid:17-659	Chocolate spread	crema de cacao
+cofid:17-660	Soup, instant, dried, as served	sopa instantánea en polvo preparada
+cofid:17-661	Butter, unsalted	mantequilla sin sal
+cofid:17-664	Bread sauce, made with semi-skimmed milk, HOMEMADE	salsa de pan con leche semidesnatada casera
+cofid:17-665	Cheese sauce, made with semi-skimmed milk, homemade	salsa de queso con leche semidesnatada casera
+cofid:17-666	Cheese sauce, packet mix, made up with semi-skimmed milk, homemade	salsa de queso de sobre con leche semidesnatada casera
+cofid:17-667	White sauce, savoury, made with semi-skimmed milk, homemade	bechamel con leche semidesnatada casera
+cofid:17-668	Mars bar and own brand equivalents	Mars y equivalentes
+cofid:17-669	Milky Way and own brand equivalents	Milky Way y equivalentes
+cofid:17-670	Topic/Snickers and own brand equivalents	Topic/Snickers y equivalentes
+cofid:17-671	Potato crisps, fried in sunflower oil	patatas fritas de bolsa fritas en aceite de girasol
+cofid:17-672	Energy drink, carbonated	bebida energética carbonatada
+cofid:17-673	Fruit juice drink, carbonated, no added sugar, ready to drink	bebida de zumo carbonatada sin azúcar lista para beber
+cofid:17-674	High juice drink, no added sugar, undiluted	concentrado de zumo alto en fruta sin azúcar sin diluir
+cofid:17-676	Lager, extra strong	cerveza lager extra fuerte
+cofid:17-677	Dips, sour-cream based, reduced fat	dips de crema agria bajos en grasa
+cofid:17-678	Brown sauce, reduced salt/sugar	salsa brown baja en sal y azúcar
+cofid:17-679	Mayonnaise, reduced fat	mayonesa baja en grasa
+cofid:17-680	Stock gel	gel de caldo
+cofid:17-681	Stock, chicken, ready made, retail	caldo de pollo preparado comprado
+cofid:17-682	Pot savouries, made up	pot savouries preparados
+cofid:17-683	Fudge, homemade	fudge casero
+cofid:17-684	Soup, vegetable, homemade	sopa de verduras casera
+cofid:17-685	Butter, salted	mantequilla con sal
+cofid:17-686	Oil, vegetable, average	aceite vegetal medio
+cofid:17-687	Chocolate nut spread	crema de cacao con avellanas
+cofid:17-688	Jam, stone fruit	mermelada de frutas de hueso
+cofid:17-689	Ice cream sauce, topping, strawberry and chocolate flavours	sirope para helado de fresa y chocolate
+cofid:17-690	Chocolate, fancy and filled	chocolates variados y rellenos
+cofid:17-691	Popcorn, candied	palomitas caramelizadas
+cofid:17-692	Popcorn, salted, retail	palomitas saladas compradas
+cofid:17-693	Potato crisps, low fat	patatas fritas de bolsa bajas en grasa
+cofid:17-694	Twiglets	Twiglets
+cofid:17-695	Soup, chicken, cream of, canned	sopa crema de pollo en conserva
+cofid:17-696	Soup, chicken, cream of, canned, condensed	sopa crema de pollo en conserva condensada
+cofid:17-697	Chicken soup, cream of, canned, condensed, as served	sopa crema de pollo en conserva condensada diluida
+cofid:17-698	Soup, lentil, canned	sopa de lentejas en conserva
+cofid:17-699	Soup, low calorie, canned	sopa baja en calorías en conserva
+cofid:17-700	Soup, oxtail, canned	sopa de rabo de buey en conserva
+cofid:17-701	Dressing, French	salsa francesa
+cofid:17-702	Piccalilli	piccalilli
+cofid:17-703	Salad cream	salad cream
 cofid:17-704	Salad cream, reduced fat	salsa para ensalada baja en grasa
+cofid:17-705	Barbecue sauce	salsa barbacoa
+cofid:17-706	Brown fruity sauce	salsa brown de frutas
+cofid:17-707	Mint sauce	salsa de menta
+cofid:17-708	Relish, corn/cucumber/onion	relish de maíz, pepino y cebolla
+cofid:17-709	Tomato ketchup	kétchup
+cofid:17-710	Fat spread, reduced fat (62-75%), polyunsaturated	margarina baja en grasa poliinsaturada 62-75 %
+cofid:17-711	Soup, minestrone, canned	sopa minestrone en conserva
+cofid:17-712	Soup, vegetable, canned	sopa de verduras en conserva
+cofid:17-713	Soup, mushroom, cream of, canned	sopa crema de champiñones en conserva
+cofid:17-714	Soup, chicken noodle, dried, as served	sopa de fideos con pollo en polvo preparada
+cofid:17-715	Dressing, blue cheese	salsa de queso azul
+cofid:17-716	Dressing, French, fat free	salsa francesa sin grasa
+cofid:17-717	Dressing, thousand island	salsa mil islas
+cofid:17-718	Pickle, sweet	pickle dulce
+cofid:17-719	Chilli sauce	salsa de chile
+cofid:17-720	Curry paste	pasta de curry
+cofid:17-721	Soy sauce, light and dark varieties	salsa de soja clara y oscura
+cofid:17-722	Tartare sauce	salsa tártara
+cofid:17-723	Worcestershire sauce	salsa Worcestershire
+cofid:17-724	Gravy instant granules	gránulos de gravy
 cofid:17-725	Gravy instant granules, made up with water	salsa gravy instantánea
+cofid:17-726	Stock cubes, chicken	cubitos de caldo de pollo
+cofid:17-727	Stock cubes, vegetable	cubitos de caldo vegetal
+cofid:17-728	Build-up powder, soup, assorted flavours	preparado en polvo para sopa variado
+cofid:17-729	Complan powder, original and sweet	Complan en polvo original y dulce
+cofid:17-730	Complan powder, savoury	Complan en polvo salado
+cofid:17-731	Horlicks, powder	Horlicks en polvo
+cofid:17-732	Instant drinks powder, chocolate, low calorie	bebida instantánea de chocolate baja en calorías en polvo
+cofid:17-733	Milk shake, powder	batido en polvo
+cofid:17-734	Ovaltine, powder	Ovaltine en polvo
+cofid:17-735	Fruit juice drink, carbonated, ready to drink	bebida de zumo carbonatada lista para beber
+cofid:17-736	Tonic water	tónica
+cofid:17-737	Blackcurrant juice drink/squash, undiluted	concentrado de zumo de grosella negra sin diluir
+cofid:17-738	Fruit juice drink/squash, undiluted	concentrado de zumo de frutas sin diluir
+cofid:17-739	Fruit juice drink/squash, no sugar added, undiluted	concentrado de zumo de frutas sin azúcar sin diluir
+cofid:17-740	High juice drink, undiluted	concentrado de zumo alto en fruta sin diluir
+cofid:17-741	Fruit juice drink/squash, ready to drink	bebida de zumo lista para beber
+cofid:17-742	Fruit juice drink, no added sugar, ready to drink	bebida de zumo sin azúcar lista para beber
+cofid:17-743	Barley water, undiluted	agua de cebada sin diluir
+cofid:17-744	Cranberry fruit juice drink	bebida de zumo de arándano rojo
+cofid:17-745	Grape juice, unsweetened	zumo de uva sin azúcar
+cofid:17-746	Fruit juice, mixed	zumo de frutas variado
+cofid:17-747	Smoothies	batidos de fruta
+cofid:17-748	Beer, bitter, strong (>5% ABV)	cerveza bitter fuerte
+cofid:17-749	Lager, standard	cerveza lager estándar
+cofid:17-750	Lager, low alcohol	cerveza lager baja en alcohol
+cofid:17-751	Lager, premium	cerveza lager premium
+cofid:17-752	Wine, red	vino tinto
+cofid:17-754	Wine, rose, medium	vino rosado semiseco
+cofid:17-755	Wine, white, dry	vino blanco seco
+cofid:17-756	Wine, white, medium	vino blanco semiseco
+cofid:17-757	Wine, white, sparkling	vino blanco espumoso
+cofid:17-758	Pre-mixed spirit based drinks	combinados premix
+cofid:17-759	Suet, vegetable, reduced fat	sebo vegetal bajo en grasa
+cofid:17-760	Shandy, 50% lager, homemade	clara de cerveza casera
+cofid:17-761	Lucozade	Lucozade
+cofid:17-762	Lemon curd	crema de limón
+cofid:17-763	Creme egg	Creme egg
+cofid:17-764	Bombay mix	mezcla Bombay
+cofid:17-765	Mincemeat	relleno de frutas para mince pies
+cofid:17-766	Bounty bar and own brand equivalents	Bounty y equivalentes
+cofid:17-767	Stout, Guinness	stout Guinness
+cofid:17-768	Liqueurs, cream	licores de crema
+cofid:17-769	Barbecue sauce, homemade	salsa barbacoa casera
+cofid:17-770	Bouillabaisse, homemade	bouillabaisse casera
+cofid:17-771	Bread sauce, made with skimmed milk, homemade	salsa de pan con leche desnatada casera
+cofid:17-772	Bread sauce, made with whole milk, homemade	salsa de pan con leche entera casera
+cofid:17-773	Cheese sauce, made with skimmed milk, homemade	salsa de queso con leche desnatada casera
+cofid:17-774	Stock cubes, chicken, made up with water	cubitos de caldo de pollo diluidos
+cofid:17-775	Cheese sauce, made with whole milk, homemade	salsa de queso con leche entera casera
+cofid:17-776	Soup, carrot and orange, homemade	sopa de zanahoria y naranja casera
+cofid:17-777	Liquorice allsorts	surtido de regaliz
+cofid:17-778	White sauce, savoury, made with skimmed milk, homemade	bechamel con leche desnatada casera
+cofid:17-779	White sauce, savoury, made with whole milk, homemade	bechamel con leche entera casera
+cofid:17-780	Cheese sauce, packet mix, made up with skimmed milk, homemade	salsa de queso de sobre con leche desnatada casera
+cofid:17-781	Cheese sauce, packet mix, made up with whole milk, homemade	salsa de queso de sobre con leche entera casera
+cofid:17-782	Chevda/chevra/chewra, homemade	chevda casero
+cofid:17-783	Icing, butter, homemade	glaseado de mantequilla casero
+cofid:17-784	Chutney, apple, homemade	chutney de manzana casero
+cofid:17-785	Chutney, tomato, homemade	chutney de tomate casero
+cofid:17-786	Coconut ice, homemade	dulce de coco casero
+cofid:17-787	Dressing, French, homemade	salsa francesa casera
+cofid:17-788	Dressing, oil and lemon, homemade	aliño de aceite y limón casero
+cofid:17-789	Dressing, yogurt, homemade	salsa de yogur casera
+cofid:17-790	Drinking chocolate powder, made up with semi-skimmed milk	chocolate a la taza en polvo preparado con leche semidesnatada
+cofid:17-791	Drinking chocolate powder, made up with skimmed milk	chocolate a la taza en polvo preparado con leche desnatada
+cofid:17-792	Drinking chocolate powder, made up with whole milk	chocolate a la taza en polvo preparado con leche entera
+cofid:17-793	Egg nog, homemade	ponche de huevo casero
+cofid:17-794	Soup, French onion, homemade	sopa de cebolla francesa casera
+cofid:17-795	Soup, gazpacho, homemade	gazpacho casero
+cofid:17-796	Soup, goulash, homemade	sopa gulash casera
+cofid:17-797	Guacamole, homemade	guacamole casero
+cofid:17-798	Halva, carrot, homemade	halva de zanahoria casera
+cofid:17-799	Halva, semolina, homemade	halva de sémola casera
+cofid:17-800	Hollandaise sauce, homemade	salsa holandesa casera
+cofid:17-801	Horlicks powder, made up with semi-skimmed milk	Horlicks en polvo preparado con leche semidesnatada
+cofid:17-802	Horlicks powder, made up with skimmed milk	Horlicks en polvo preparado con leche desnatada
+cofid:17-803	Horlicks powder, made up with whole milk	Horlicks en polvo preparado con leche entera
+cofid:17-804	Icing, fondant, homemade	glaseado de fondant casero
+cofid:17-805	Icing, Royal, homemade	glaseado real casero
+cofid:17-806	Lemon curd, homemade	crema de limón casera
+cofid:17-807	Lemonade, homemade	limonada casera
+cofid:17-808	Soup, lentil, homemade	sopa de lentejas casera
+cofid:17-809	Mayonnaise, homemade	mayonesa casera
+cofid:17-810	Soup, minestrone, homemade	sopa minestrone casera
+cofid:17-811	Mint sauce, homemade	salsa de menta casera
+cofid:17-812	Wine, mulled wine, homemade	vino caliente especiado casero
+cofid:17-813	Soup, mulligatawny, homemade	sopa mulligatawny casera
+cofid:17-814	Nougat, homemade	nougat casero
+cofid:17-815	Onion sauce, made with semi-skimmed milk, homemade	salsa de cebolla con leche semidesnatada casera
+cofid:17-816	Onion sauce, made with skimmed milk, homemade	salsa de cebolla con leche desnatada casera
+cofid:17-817	Onion sauce, made with whole milk, homemade	salsa de cebolla con leche entera casera
+cofid:17-818	Ovaltine powder, made up with semi-skimmed milk	Ovaltine en polvo preparado con leche semidesnatada
+cofid:17-819	Ovaltine powder, made up with skimmed milk	Ovaltine en polvo preparado con leche desnatada
+cofid:17-820	Ovaltine powder, made up with whole milk	Ovaltine en polvo preparado con leche entera
+cofid:17-821	Shandy, bottled or canned	clara de cerveza en botella o lata
+cofid:17-822	Cider, strong	sidra fuerte
+cofid:17-823	Build up, powder, shake, assorted flavours	preparado en polvo para batido variado
+cofid:17-824	Fruit pastilles	pastillas de fruta
+cofid:17-825	Instant drinks powder, malted, unfortified	bebida instantánea de malta en polvo sin fortificar
+cofid:17-826	Treacle, black	melaza negra
+cofid:17-827	Sauce, pasta, white, with ham and mushrooms, homemade	salsa blanca para pasta con jamón y champiñones casera
+cofid:17-828	Sweets, sherbert	caramelos efervescentes
+cofid:17-829	Soup, pea and ham, homemade	sopa de guisantes con jamón casera
+cofid:17-830	Peppermint creams, homemade	cremas de menta caseras
+cofid:17-831	Soup, potato and leek, homemade	sopa de puerro y patata casera
+cofid:17-832	Raita, homemade	raita casera
+cofid:17-833	Coffee, infusion, average	café de filtro medio
+cofid:17-834	Sauce, tomato based, homemade	salsa de tomate casera
+cofid:17-835	Scotch broth, homemade	scotch broth casero
+cofid:17-836	Sev/ganthia, homemade	sev/ganthia caseros
+cofid:17-837	Truffles, rum, homemade	trufas de ron caseras
+cofid:17-841	White sauce, sweet, made with semi-skimmed milk, homemade	salsa blanca dulce con leche semidesnatada casera
+cofid:17-842	White sauce, sweet, made with skimmed milk, homemade	salsa blanca dulce con leche desnatada casera
+cofid:17-843	White sauce, sweet, made with whole milk, homemade	salsa blanca dulce con leche entera casera
+cofid:17-844	Barley water, diluted	agua de cebada diluida
+cofid:17-845	Blackcurrant juice drink/squash, diluted	concentrado de zumo de grosella negra diluido
+cofid:17-846	Fruit juice drink/squash, no sugar added, diluted	concentrado de zumo de frutas sin azúcar diluido
+cofid:17-847	Fruit juice drink/squash, diluted	concentrado de zumo de frutas diluido
+cofid:17-848	High juice drink, diluted	concentrado de zumo alto en fruta diluido
+cofid:17-849	Pot savouries	pot savouries sin preparar
+cofid:17-850	Soup, chicken noodle, dried	sopa de fideos con pollo en polvo
 cofid:17-851	Apple sauce, homemade	compota de manzana
+cofid:17-852	Mincemeat, vegetarian, homemade	relleno de frutas para mince pies vegetariano casero
+cofid:18-002	Beef, lean, average, raw, extra trimmed	vacuno magro crudo extra limpio
+cofid:18-003	Beef, fat, average, raw	grasa de vacuno cruda
+cofid:18-004	Beef, fat, average, raw, extra trimmed	grasa de vacuno cruda extra limpia
+cofid:18-005	Beef, fat, average, cooked	grasa de vacuno cocinada
+cofid:18-006	Beef, braising steak, raw, lean	vacuno filete para estofar crudo magro
+cofid:18-007	Beef, braising steak, raw, lean and fat	vacuno filete para estofar crudo con grasa
+cofid:18-008	Beef, braising steak, braised, lean only	vacuno filete para estofar estofado magro
+cofid:18-009	Beef, braising steak, braised, lean and fat	vacuno filete para estofar estofado con grasa
+cofid:18-010	Beef, braising steak, slow cooked, lean	vacuno filete para estofar a fuego lento magro
+cofid:18-011	Beef, braising steak, slow cooked, lean and fat	vacuno filete para estofar a fuego lento con grasa
+cofid:18-012	Beef, brisket, raw, lean	vacuno pecho crudo magro
+cofid:18-013	Beef, brisket, raw, lean and fat	vacuno pecho crudo con grasa
+cofid:18-014	Beef, brisket, boiled, lean	vacuno pecho cocido magro
+cofid:18-015	Beef, brisket, boiled, lean and fat	vacuno pecho cocido con grasa
+cofid:18-016	Beef, fillet steak, raw, lean	solomillo de vacuno crudo magro
+cofid:18-017	Beef, fillet steak, raw, lean and fat	solomillo de vacuno crudo con grasa
+cofid:18-018	Beef, fillet steak, fried in corn oil, lean	solomillo de vacuno frito en aceite de maíz magro
+cofid:18-019	Beef, fillet steak, fried in corn oil, lean and fat	solomillo de vacuno frito en aceite de maíz con grasa
+cofid:18-020	Beef, fillet steak, grilled, lean	solomillo de vacuno a la parrilla magro
+cofid:18-021	Beef, fillet steak, grilled, lean and fat	solomillo de vacuno a la parrilla con grasa
+cofid:18-022	Beef, fillet steak, from steakhouse, lean	solomillo de vacuno de steakhouse magro
+cofid:18-023	Beef, fillet steak, from steakhouse, lean and fat	solomillo de vacuno de steakhouse con grasa
+cofid:18-024	Beef, flank, raw, lean	vacuno falda cruda magra
+cofid:18-025	Beef, flank, raw, lean and fat	vacuno falda cruda con grasa
+cofid:18-026	Beef, flank, pot-roasted, lean	vacuno falda asada en olla magra
+cofid:18-027	Beef, flank, pot-roasted, lean and fat	vacuno falda asada en olla con grasa
+cofid:18-028	Beef, fore-rib/rib-roast, raw, lean	vacuno costillar delantero crudo magro
+cofid:18-029	Beef, fore-rib/rib-roast, raw, lean and fat	vacuno costillar delantero crudo con grasa
+cofid:18-030	Beef, fore-rib/rib-roast, microwaved, lean	vacuno costillar delantero al microondas magro
+cofid:18-031	Beef, fore-rib/rib-roast, microwaved, lean and fat	vacuno costillar delantero al microondas con grasa
+cofid:18-032	Beef, fore-rib/rib-roast, microwaved, lean and fat, weighed with bone	vacuno costillar delantero al microondas con grasa con hueso
+cofid:18-033	Beef, fore-rib/rib-roast, roasted, lean	vacuno costillar delantero asado magro
+cofid:18-034	Beef, fore-rib/rib-roast, roasted, lean and fat	vacuno costillar delantero asado con grasa
+cofid:18-035	Beef, fore-rib/rib-roast, roasted, lean and fat, weighed with bone	vacuno costillar delantero asado con grasa con hueso
+cofid:18-037	Beef, mince, microwaved	carne picada de vacuno al microondas
+cofid:18-039	Beef, mince, frozen, stewed	carne picada de vacuno congelada guisada
+cofid:18-042	Beef, mince patties, barbecued	hamburguesas de vacuno a la barbacoa
+cofid:18-043	Beef, rump steak, raw, lean	filete de cadera de vacuno crudo magro
+cofid:18-045	Beef, rump steak, barbecued, lean	filete de cadera de vacuno a la barbacoa magro
+cofid:18-046	Beef, rump steak, barbecued, lean and fat	filete de cadera de vacuno a la barbacoa con grasa
+cofid:18-050	Beef, rump steak, from steakhouse, lean only	filete de cadera de vacuno de steakhouse magro
+cofid:18-051	Beef, rump steak, from steakhouse, lean and fat	filete de cadera de vacuno de steakhouse con grasa
+cofid:18-052	Beef, rump steak, strips, stir-fried in corn oil, lean	filete de cadera de vacuno en tiras salteado en aceite de maíz magro
+cofid:18-053	Beef, rump steak, strips, stir-fried in corn oil, lean and fat	filete de cadera de vacuno en tiras salteado en aceite de maíz con grasa
+cofid:18-054	Beef, silverside, raw, lean	vacuno contra cruda magra
+cofid:18-055	Beef, silverside, raw, lean and fat	vacuno contra cruda con grasa
+cofid:18-056	Beef, silverside, pot-roasted, lean	vacuno contra asada en olla magra
+cofid:18-057	Beef, silverside, pot-roasted, lean and fat	vacuno contra asada en olla con grasa
+cofid:18-058	Beef, silverside, salted, raw, lean	vacuno contra salada cruda magra
+cofid:18-059	Beef, silverside, salted, raw, lean and fat	vacuno contra salada cruda con grasa
+cofid:18-060	Beef, silverside, salted, boiled, lean	vacuno contra salada cocida magra
+cofid:18-061	Beef, silverside, salted, boiled, lean and fat	vacuno contra salada cocida con grasa
+cofid:18-062	Beef, sirloin joint, roasted, lean	lomo de vacuno para asar asado magro
+cofid:18-063	Beef, sirloin joint, roasted, lean and fat	lomo de vacuno para asar asado con grasa
+cofid:18-064	Beef, sirloin steak, raw, lean	filete de lomo de vacuno crudo magro
+cofid:18-065	Beef, sirloin steak, raw, lean and fat	filete de lomo de vacuno crudo con grasa
+cofid:18-066	Beef, sirloin steak, fried in corn oil, lean	filete de lomo de vacuno frito en aceite de maíz magro
+cofid:18-067	Beef, sirloin steak, fried in corn oil, lean and fat	filete de lomo de vacuno frito en aceite de maíz con grasa
+cofid:18-068	Beef, sirloin steak, grilled rare, lean	filete de lomo de vacuno a la parrilla poco hecho magro
+cofid:18-069	Beef, sirloin steak, grilled rare, lean and fat	filete de lomo de vacuno a la parrilla poco hecho con grasa
+cofid:18-070	Beef, sirloin steak, grilled medium-rare, lean	filete de lomo de vacuno a la parrilla al punto magro
+cofid:18-071	Beef, sirloin steak, grilled medium-rare, lean and fat	filete de lomo de vacuno a la parrilla al punto con grasa
+cofid:18-072	Beef, sirloin steak, grilled well-done, lean	filete de lomo de vacuno a la parrilla muy hecho magro
+cofid:18-073	Beef, sirloin steak, grilled well-done, lean and fat	filete de lomo de vacuno a la parrilla muy hecho con grasa
+cofid:18-074	Beef, sirloin steak, from steakhouse, lean	filete de lomo de vacuno de steakhouse magro
+cofid:18-075	Beef, sirloin steak, from steakhouse, lean and fat	filete de lomo de vacuno de steakhouse con grasa
+cofid:18-076	Beef, stewing steak, raw, lean	vacuno en pieza para guisar crudo magro
+cofid:18-077	Beef, stewing steak, raw, lean and fat	vacuno en pieza para guisar crudo con grasa
+cofid:18-078	Beef, stewing steak, pressure cooked, lean	vacuno en pieza para guisar en olla a presión magro
+cofid:18-079	Beef, stewing steak, pressure cooked, lean and fat	vacuno en pieza para guisar en olla a presión con grasa
+cofid:18-080	Beef, stewing steak, stewed, lean	vacuno en pieza para guisar guisado magro
+cofid:18-081	Beef, stewing steak, stewed, lean and fat	vacuno en pieza para guisar guisado con grasa
+cofid:18-082	Beef, stewing steak, frozen, stewed, lean	vacuno en pieza para guisar congelado guisado magro
+cofid:18-083	Beef, stewing steak, frozen, stewed, lean and fat	vacuno en pieza para guisar congelado guisado con grasa
+cofid:18-084	Beef, topside, raw, lean	vacuno tapa cruda magra
+cofid:18-085	Beef, topside, raw, lean and fat	vacuno tapa cruda con grasa
+cofid:18-086	Beef, topside, microwaved, lean	vacuno tapa al microondas magra
+cofid:18-087	Beef, topside, microwaved, lean and fat	vacuno tapa al microondas con grasa
+cofid:18-088	Beef, topside, roasted medium-rare, lean	vacuno tapa asada al punto magra
+cofid:18-089	Beef, topside, roasted medium-rare, lean and fat	vacuno tapa asada al punto con grasa
+cofid:18-090	Beef, topside, roasted well-done, lean	vacuno tapa asada muy hecha magra
+cofid:18-091	Beef, topside, roasted well-done, lean and fat	vacuno tapa asada muy hecha con grasa
+cofid:18-094	Veal, mince, raw	carne picada de ternera cruda
+cofid:18-095	Veal, mince, stewed	carne picada de ternera guisada
+cofid:18-097	Lamb, lean only, raw, average, extra trimmed	cordero magro crudo extra limpio
+cofid:18-098	Lamb, fat, average, raw	grasa de cordero cruda
+cofid:18-099	Lamb, fat, raw, average, extra trimmed	grasa de cordero cruda extra limpia
+cofid:18-100	Lamb, fat, average, cooked	grasa de cordero cocinada
+cofid:18-101	Lamb, best end neck cutlets, raw, lean and fat	cordero chuletas de costillar crudas con grasa
+cofid:18-102	Lamb, best end neck cutlets, raw, lean and fat, weighed with bone	cordero chuletas de costillar crudas con grasa con hueso
+cofid:18-103	Lamb, best end neck cutlets, barbecued, lean	cordero chuletas de costillar a la barbacoa magras
+cofid:18-104	Lamb, best end neck cutlets, barbecued, lean, weighed with fat and bone	cordero chuletas de costillar a la barbacoa magras con grasa y hueso
+cofid:18-105	Lamb, best end neck cutlets, barbecued, lean and fat	cordero chuletas de costillar a la barbacoa con grasa
+cofid:18-106	Lamb, best end neck cutlets, barbecued, lean and fat, weighed with bone	cordero chuletas de costillar a la barbacoa con grasa con hueso
+cofid:18-107	Lamb, best end neck cutlets, grilled, lean	cordero chuletas de costillar a la parrilla magras
+cofid:18-108	Lamb, best end neck cutlets, grilled, lean, weighed with fat and bone	cordero chuletas de costillar a la parrilla magras con grasa y hueso
+cofid:18-109	Lamb, best end neck cutlets, grilled, lean and fat	cordero chuletas de costillar a la parrilla con grasa
+cofid:18-110	Lamb, best end neck cutlets, grilled, lean and fat, weighed with bone	cordero chuletas de costillar a la parrilla con grasa con hueso
+cofid:18-111	Lamb, breast, raw, lean	cordero pecho crudo magro
+cofid:18-112	Lamb, breast, raw, lean and fat	cordero pecho crudo con grasa
+cofid:18-113	Lamb, breast, roasted, lean	cordero pecho asado magro
+cofid:18-114	Lamb, breast, roasted, lean and fat	cordero pecho asado con grasa
+cofid:18-115	Lamb, chump chops, raw, lean and fat	cordero chuletas de anca crudas con grasa
 cofid:18-116	Lamb, chump chops, raw, lean and fat, weighed with bone	chuletas de cordero crudas
+cofid:18-117	Lamb, chump chops, fried, lean	cordero chuletas de anca fritas magras
+cofid:18-118	Lamb, chump chops, fried, lean, weighed with fat and bone	cordero chuletas de anca fritas magras con grasa y hueso
+cofid:18-119	Lamb, chump chops, fried, lean and fat	cordero chuletas de anca fritas con grasa
+cofid:18-120	Lamb, chump chops, fried, lean and fat, weighed with bone	cordero chuletas de anca fritas con grasa con hueso
+cofid:18-121	Lamb, chump steaks, raw, lean and fat	cordero filetes de anca crudos con grasa
+cofid:18-122	Lamb, chump steaks, fried, lean and fat	cordero filetes de anca fritos con grasa
+cofid:18-124	Lamb, leg chops, grilled, lean and fat	cordero chuletas de pierna a la parrilla con grasa
+cofid:18-125	Lamb, leg chops, grilled, lean and fat, weighed with bone	cordero chuletas de pierna a la parrilla con grasa con hueso
+cofid:18-126	Lamb, leg, half fillet, braised, lean	cordero media pierna sin hueso estofada magra
+cofid:18-127	Lamb, leg, half fillet, braised, lean and fat	cordero media pierna sin hueso estofada con grasa
+cofid:18-128	Lamb, leg, half knuckle, pot-roasted, lean	cordero media pierna parte del jarrete asada en olla magra
+cofid:18-129	Lamb, leg, half knuckle, pot-roasted, lean and fat	cordero media pierna parte del jarrete asada en olla con grasa
+cofid:18-130	Lamb, leg, half knuckle, pot-roasted, lean and fat, weighed with bone	cordero media pierna parte del jarrete asada en olla con grasa con hueso
+cofid:18-131	Lamb, leg joint, roasted, lean	cordero pierna para asar asada magra
+cofid:18-132	Lamb, leg joint, roasted, lean and fat	cordero pierna para asar asada con grasa
+cofid:18-133	Lamb, leg steaks, grilled, lean	cordero filetes de pierna a la parrilla magros
+cofid:18-134	Lamb, leg steaks, grilled, lean and fat	cordero filetes de pierna a la parrilla con grasa
+cofid:18-137	Lamb, leg, whole, roasted well done, lean	cordero pierna entera asada muy hecha magra
+cofid:18-138	Lamb, leg, whole, roasted well done, lean and fat	cordero pierna entera asada muy hecha con grasa
+cofid:18-141	Lamb, loin chops, grilled, lean	cordero chuletas de lomo a la parrilla magras
+cofid:18-142	Lamb, loin chops, grilled, lean, weighed with fat and bone	cordero chuletas de lomo a la parrilla magras con grasa y hueso
+cofid:18-145	Lamb, loin chops, microwaved, lean	cordero chuletas de lomo al microondas magras
+cofid:18-146	Lamb, loin chops, microwaved, lean, weighed with fat and bone	cordero chuletas de lomo al microondas magras con grasa y hueso
+cofid:18-147	Lamb, loin chops, microwaved, lean and fat	cordero chuletas de lomo al microondas con grasa
+cofid:18-148	Lamb, loin chops, microwaved, lean and fat, weighed with bone	cordero chuletas de lomo al microondas con grasa con hueso
+cofid:18-149	Lamb, loin chops, roasted, lean	cordero chuletas de lomo asadas magras
+cofid:18-150	Lamb, loin chops, roasted, lean, weighed with fat and bone	cordero chuletas de lomo asadas magras con grasa y hueso
+cofid:18-151	Lamb, loin chops, roasted, lean and fat	cordero chuletas de lomo asadas con grasa
+cofid:18-152	Lamb, loin chops, roasted, lean and fat, weighed with bone	cordero chuletas de lomo asadas con grasa con hueso
+cofid:18-153	Lamb, loin joint, raw, lean and fat	cordero lomo para asar crudo con grasa
+cofid:18-154	Lamb, loin joint, raw, lean and fat, weighed with bone	cordero lomo para asar crudo con grasa con hueso
+cofid:18-155	Lamb, loin joint, roasted, lean	cordero lomo para asar asado magro
+cofid:18-156	Lamb, loin joint, roasted, lean and fat	cordero lomo para asar asado con grasa
+cofid:18-157	Lamb, loin joint, roasted, lean and fat, weighed with bone	cordero lomo para asar asado con grasa con hueso
+cofid:18-159	Lamb, mince, stewed	carne picada de cordero guisada
+cofid:18-160	Lamb, neck fillet, raw, lean	cordero filete de cuello crudo magro
+cofid:18-161	Lamb, neck fillet, raw, lean and fat	cordero filete de cuello crudo con grasa
 cofid:18-170	Lamb, shoulder, raw, lean and fat	paleta de cordero cruda con grasa
 cofid:18-400	Heart, pig, raw	corazón de cerdo crudo
 cofid:18-524	Pork, loin steaks, grilled, lean	filete de lomo de cerdo magro a la parrilla
