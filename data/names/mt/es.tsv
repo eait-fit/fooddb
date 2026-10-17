@@ -3090,7 +3090,7 @@ bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	muslo
 bls:V486100	Turkey breast, without skin, raw	pechuga de pavo sin piel cruda
 bls:V486132	Turkey breast, without skin, boiled	pechuga de pavo sin piel cocida
 bls:V486142	Turkey breast, without skin, braised without fat	pechuga de pavo sin piel estofada
-bls:V486162	Turkey breast, without skin, fried without fat (oven)	pechuga de pavo al horno sin piel
+bls:V486162	Turkey breast, without skin, fried without fat (oven)	pechuga de pavo sin piel al horno
 bls:V486172	Turkey breast, without skin, grilled	pechuga de pavo sin piel a la parrilla
 bls:V486182	Turkey breast, without skin, fried without fat (pan)	pechuga de pavo sin piel a la plancha
 bls:V486200	Turkey breast, without skin, deep-frozen	pechuga de pavo sin piel congelada
@@ -3111,7 +3111,7 @@ bls:V487242	Turkey wings, with skin, deep-frozen, braised without fat	alas de pa
 bls:V487262	Turkey wings, with skin, deep-frozen, fried without fat (oven)	alas de pavo con piel de congelado al horno
 bls:V487272	Turkey wings, with skin, deep-frozen, grilled	alas de pavo con piel de congelado a la parrilla
 bls:V487282	Turkey wings, with skin, deep-frozen, fried without fat (pan)	alas de pavo con piel de congelado a la plancha
-bls:V488100	Turkey giblets, raw	menudillos de pavo frescos
+bls:V488100	Turkey giblets, raw	menudillos de pavo crudos
 bls:V488142	Turkey giblets, braised without fat	menudillos de pavo estofados
 bls:V488182	Turkey giblets, fried without fat (pan)	menudillos de pavo a la plancha
 bls:V488200	Turkey giblets, deep-frozen	menudillos de pavo congelados
@@ -3126,7 +3126,7 @@ bls:V494200	Pigeon meat, with skin, deep-frozen	carne de pichón con piel congel
 bls:V494242	Pigeon meat, with skin, deep-frozen, braised without fat	carne de pichón con piel de congelado estofada
 bls:V494262	Pigeon meat, with skin, deep-frozen, fried without fat (oven)	carne de pichón con piel de congelado al horno
 bls:V4A5100	Chicken thigh, with skin, raw	contramuslo de pollo con piel crudo
-bls:V4A5142	Chicken thigh, with skin, braised without fat	contramuslo de pollo con piel guisado
+bls:V4A5142	Chicken thigh, with skin, braised without fat	contramuslo de pollo con piel estofado
 bls:V4A5162	Chicken thigh, with skin, fried without fat (oven)	contramuslo de pollo con piel al horno
 bls:V4A5172	Chicken thigh, with skin, grilled	contramuslo de pollo con piel a la parrilla
 bls:V4A5182	Chicken thigh, with skin, fried without fat (pan)	contramuslo de pollo con piel a la plancha
@@ -3136,7 +3136,7 @@ bls:V4A6162	Chicken breast, without skin, fried without fat (oven)	pechuga de po
 bls:V4A6172	Chicken breast, without skin, grilled	pechuga de pollo sin piel a la parrilla
 bls:V4A6182	Chicken breast, without skin, fried without fat (pan)	pechuga de pollo sin piel a la plancha
 bls:V4B5100	Chicken drumstick, with skin, raw	muslo de pollo con piel crudo
-bls:V4B5142	Chicken drumstick, with skin, braised without fat	muslo de pollo con piel guisado
+bls:V4B5142	Chicken drumstick, with skin, braised without fat	muslo de pollo con piel estofado
 bls:V4B5162	Chicken drumstick, with skin, fried without fat (oven)	muslo de pollo con piel al horno
 bls:V4B5172	Chicken drumstick, with skin, grilled	muslo de pollo con piel a la parrilla
 bls:V4B5182	Chicken drumstick, with skin, fried without fat (pan)	muslo de pollo con piel a la plancha
@@ -3152,8 +3152,8 @@ bls:V512182	Veal heart, fried without fat (pan)	corazón de ternera a la plancha
 bls:V512200	Veal heart, deep-frozen	corazón de ternera congelado
 bls:V512242	Veal heart, deep-frozen, braised without fat	corazón de ternera de congelado estofado
 bls:V512282	Veal heart, deep-frozen, fried without fat (pan)	corazón de ternera de congelado a la plancha
-bls:V513100	Pork heart, raw	corazón de cerdo fresco
-bls:V513142	Pork heart, braised without fat	corazón de cerdo guisado
+bls:V513100	Pork heart, raw	corazón de cerdo crudo
+bls:V513142	Pork heart, braised without fat	corazón de cerdo estofado
 bls:V513182	Pork heart, fried without fat (pan)	corazón de cerdo a la plancha
 bls:V513200	Pork heart, deep-frozen	corazón de cerdo congelado
 bls:V513242	Pork heart, deep-frozen, braised without fat	corazón de cerdo de congelado estofado
@@ -3163,7 +3163,7 @@ bls:V514100	Sheep heart, raw	corazón de oveja crudo
 bls:V514142	Sheep heart, braised without fat	corazón de oveja estofado
 bls:V514182	Sheep heart, fried without fat (pan)	corazón de oveja a la plancha
 bls:V515100	Lamb heart, raw	corazón de cordero crudo
-bls:V515142	Lamb heart, braised without fat	corazón de cordero guisado
+bls:V515142	Lamb heart, braised without fat	corazón de cordero estofado
 bls:V515182	Lamb heart, fried without fat (pan)	corazón de cordero a la plancha
 bls:V516100	Mutton heart, raw	corazón de carnero crudo
 bls:V516142	Mutton heart, braised without fat	corazón de carnero estofado
@@ -3180,7 +3180,7 @@ bls:V531100	Beef liver, raw	hígado de vacuno crudo
 bls:V531182	Beef liver, fried without fat (pan)	hígado de vacuno a la plancha
 bls:V531200	Beef liver, deep-frozen	hígado de vacuno congelado
 bls:V531282	Beef liver, deep-frozen, fried without fat (pan)	hígado de vacuno de congelado a la plancha
-bls:V532100	Veal liver, raw	hígado de ternera fresco
+bls:V532100	Veal liver, raw	hígado de ternera crudo
 bls:V532182	Veal liver, fried without fat (pan)	hígado de ternera a la plancha
 bls:V532200	Veal liver, deep-frozen	hígado de ternera congelado
 bls:V532282	Veal liver, deep-frozen, fried without fat (pan)	hígado de ternera de congelado a la plancha
@@ -3198,7 +3198,7 @@ bls:V541100	Beef lungs, raw	pulmones de vacuno crudos
 bls:V541132	Beef lungs, boiled	pulmones de vacuno cocidos
 bls:V542100	Veal lungs, raw	pulmones de ternera crudos
 bls:V542132	Veal lungs, boiled	pulmones de ternera cocidos
-bls:V543100	Pork lungs, raw	pulmones de cerdo frescos
+bls:V543100	Pork lungs, raw	pulmones de cerdo crudos
 bls:V543132	Pork lungs, boiled	pulmones de cerdo cocidos
 bls:V544100	Sheep lungs, raw	pulmones de oveja crudos
 bls:V544132	Sheep lungs, boiled	pulmones de oveja cocidos
@@ -3209,22 +3209,22 @@ bls:V551132	Beef stomach/tripe, boiled	callos de vacuno cocidos
 bls:V552100	Veal stomach/pluck, raw	estómago de ternera crudo
 bls:V552132	Veal stomach/pluck, boiled	estómago de ternera cocido
 bls:V553100	Pork stomach, raw	estómago de cerdo crudo
-bls:V553132	Pork stomach, boiled	estómago de cerdo hervido
+bls:V553132	Pork stomach, boiled	estómago de cerdo cocido
 bls:V561100	Beef spleen, raw	bazo de vacuno crudo
 bls:V562100	Veal spleen, raw	bazo de ternera crudo
 bls:V563100	Pork spleen, raw	bazo de cerdo crudo
 bls:V564100	Sheep spleen, raw	bazo de oveja crudo
 bls:V565100	Lamb spleen, raw	bazo de cordero crudo
 bls:V566100	Mutton spleen, raw	bazo de carnero crudo
-bls:V571100	Beef kidney, raw	riñones de vacuno frescos
-bls:V572100	Veal kidney, raw	riñones de ternera frescos
-bls:V572142	Veal kidney, braised without fat	riñones de ternera guisados
+bls:V571100	Beef kidney, raw	riñones de vacuno crudos
+bls:V572100	Veal kidney, raw	riñones de ternera crudos
+bls:V572142	Veal kidney, braised without fat	riñones de ternera estofados
 bls:V573100	Pork kidney, raw	riñones de cerdo crudos
-bls:V573142	Pork kidney, braised without fat	riñones de cerdo guisados
+bls:V573142	Pork kidney, braised without fat	riñones de cerdo estofados
 bls:V574100	Sheep kidney, raw	riñones de oveja crudos
 bls:V574142	Sheep kidney, braised without fat	riñones de oveja estofados sin grasa
-bls:V575100	Lamb kidney, raw	riñones de cordero frescos
-bls:V575142	Lamb kidney, braised without fat	riñones de cordero guisados
+bls:V575100	Lamb kidney, raw	riñones de cordero crudos
+bls:V575142	Lamb kidney, braised without fat	riñones de cordero estofados
 bls:V576100	Mutton kidney, raw	riñones de carnero crudos
 bls:V576142	Mutton kidney, braised without fat	riñones de carnero estofados
 bls:V582100	Veal sweetbread, raw	mollejas de ternera crudas
@@ -3234,12 +3234,12 @@ bls:V584132	Sheep sweetbread, boiled	mollejas de oveja cocidas
 bls:V585100	Lamb sweetbread, raw	mollejas de cordero crudas
 bls:V585132	Lamb sweetbread, boiled	mollejas de cordero cocidas
 bls:V591100	Beef tongue, raw	lengua de vacuno cruda
-bls:V591132	Beef tongue, boiled	lengua de vacuno hervida
+bls:V591132	Beef tongue, boiled	lengua de vacuno cocida
 bls:V591800	Beef tongue, cooked cured	lengua de vacuno curada cocida
-bls:V592100	Veal tongue, raw	lengua de ternera fresca
+bls:V592100	Veal tongue, raw	lengua de ternera cruda
 bls:V592132	Veal tongue, boiled	lengua de ternera cocida
 bls:V592800	Veal tongue, cooked cured	lengua de ternera curada cocida
-bls:V593100	Pork tongue, raw	lengua de cerdo fresca
+bls:V593100	Pork tongue, raw	lengua de cerdo cruda
 bls:V593132	Pork tongue, boiled	lengua de cerdo cocida
 bls:V593800	Pork tongue, cooked cured	lengua de cerdo curada cocida
 bls:V594100	Sheep tongue, raw	lengua de oveja cruda
@@ -3248,7 +3248,7 @@ bls:V595100	Lamb tongue, raw	lengua de cordero cruda
 bls:V595132	Lamb tongue, boiled	lengua de cordero cocida
 bls:V596100	Mutton tongue, raw	lengua de carnero cruda
 bls:V596132	Mutton tongue, boiled	lengua de carnero cocida
-bls:V604100	Chicken giblets, raw	menudillos de pollo frescos
+bls:V604100	Chicken giblets, raw	menudillos de pollo crudos
 bls:V604142	Chicken giblets, braised without fat	menudillos de pollo estofados
 bls:V604182	Chicken giblets, fried without fat (pan)	menudillos de pollo a la plancha
 bls:V614100	Chicken heart, raw	corazones de pollo crudos
@@ -3261,7 +3261,7 @@ bls:V634100	Chicken liver, raw	hígado de pollo crudo
 bls:V634182	Chicken liver, fried without fat (pan)	hígado de pollo a la plancha
 bls:V634200	Chicken liver, deep-frozen	hígado de pollo congelado
 bls:V634282	Chicken liver, deep-frozen, fried without fat (pan)	hígado de pollo de congelado a la plancha
-bls:V635100	Duck liver, raw	hígado de pato fresco
+bls:V635100	Duck liver, raw	hígado de pato crudo
 bls:V635182	Duck liver, fried without fat (pan)	hígado de pato a la plancha
 bls:V635200	Duck liver, deep-frozen	hígado de pato congelado
 bls:V635282	Duck liver, deep-frozen, fried without fat (pan)	hígado de pato de congelado a la plancha
@@ -3293,7 +3293,7 @@ bls:W008000	Sausage meat dark, for roulade sausage	masa oscura para fiambre en r
 bls:W009000	Mosaic-edge for roulade sausage	borde mosaico para fiambre en rollo
 bls:W010000	Shortcrust pastry for meat/sausage pate, raw	masa quebrada para patés de carne cruda
 bls:W110000	Braunschweiger Mettwurst sausage high quality, spreadable	mettwurst de Brunswick extra para untar
-bls:W112200	Mettwurst sausage/Mettwurst sausage with onions, spreadable	mettwurst para untar con cebolla
+bls:W112200	Mettwurst sausage/Mettwurst sausage with onions, spreadable	mettwurst para untar con o sin cebolla
 bls:W112300	Braunschweiger Mettwurst sausage spreadable, reduced-fat	mettwurst de Brunswick para untar baja en grasa
 bls:W114000	Coarse Mettwurst sausage spreadable	mettwurst gruesa para untar
 bls:W114100	Coarse Mettwurst sausage spreadable, reduced-fat	mettwurst gruesa para untar baja en grasa
@@ -3478,7 +3478,7 @@ bls:W275232	Light pork tongue sausage boiled	salchicha de lengua clara cocida
 bls:W275300	Pork tongue sausage reduced-fat	morcilla de lengua baja en grasa
 bls:W277000	Paprika bacon sausage	salchicha de beicon con pimentón
 bls:W278000	Veal roulade sausage with pork	rulo de ternera con cerdo
-bls:W278200	Veal roulade sausage with dry-cured, smoked, rolled lean pork loin	rulo de ternera con lomo de cerdo curado
+bls:W278200	Veal roulade sausage with dry-cured, smoked, rolled lean pork loin	rulo de ternera con lomo de cerdo curado ahumado
 bls:W278400	Swedish liver pate with anchovies	paté de hígado sueco con anchoas
 bls:W278600	Veal brisket filled, fried (in oven)	pecho de ternera relleno al horno
 bls:W281000	Scalded sausage with milt	salchicha de bazo
@@ -3523,7 +3523,7 @@ bls:W348000	Blood brawn	queso de cerdo de sangre
 bls:W349000	Red brawn	queso de cerdo rojo
 bls:W350000	Fillet blood sausage	morcilla con filete
 bls:W352000	Tongue blood sausage	morcilla de lengua
-bls:W361000	Jellied brawn	salchicha en gelatina
+bls:W361000	Jellied brawn	queso de cerdo en gelatina
 bls:W362000	Presswurst brawn	presswurst
 bls:W363000	Schwartenmagen brawn	queso de cerdo (schwartenmagen)
 bls:W364000	Franconian pork brawn	queso de cerdo de Franconia
@@ -3665,8 +3665,8 @@ bls:X060030	Baguette roll with salami, tomatoes and salad cream	bocadillo de bag
 bls:X060060	Baguette roll with boiled ham, cheese, tomatoes and remoulade sauce	bocadillo de baguette con jamón cocido, queso, tomate y salsa remoulade
 bls:X060130	Baguette roll with Parma ham, parmesan cheese, rucola and salad cream	bocadillo de baguette con jamón de Parma, parmesano, rúcula y crema de ensalada
 bls:X060160	Baguette roll with tomato-mozzarella	bocadillo de baguette con tomate y mozzarella
-bls:X061310	Pretzel roll with butter	bocadillo de colada con mantequilla
-bls:X061410	Pretzel with butter	pretzel de colada con mantequilla
+bls:X061310	Pretzel roll with butter	panecillo de pretzel con mantequilla
+bls:X061410	Pretzel with butter	pretzel con mantequilla
 bls:X061610	Baguette gratinated with boiled ham, cream cheese, tomatoes and button mushrooms	baguette gratinada con jamón cocido, queso crema, tomate y champiñones
 bls:X070060	Club sandwich with mozzarella, tomatoes and boiled ham	club sándwich con mozzarella, tomate y jamón cocido
 bls:X070160	Club sandwich with chicken breast fillet, tomatoes, bacon and mayonnaise	club sándwich con filete de pollo, tomate, beicon y mayonesa
@@ -4326,7 +4326,7 @@ bls:X532812	Broccoli in frying batter (with beer) deep-fried	brócoli en rebozad
 bls:X533042	Chinese white cabbage stewed, with grated cheese	col china estofada con queso rallado
 bls:X534133	Curly kale stewed, with Westphalian mettwurst sausage	col rizada estofada con mettwurst de Westfalia
 bls:X534212	Curly kale stewed, with bacon	col rizada estofada con beicon
-bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	colirábano estofado con perejil
+bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	colirábano estofado con perejil, grasa y sal
 bls:X535053	Kohlrabi stewed, with white basic sauce	colirábano estofado con salsa base blanca
 bls:X535163	Kohlrabi filled with chicken breast fillet, rice and vegetables, gratinated	colirábano relleno de filete de pollo, arroz y verduras gratinado
 bls:X535312	Kohlrabi stewed (with fat and salt)	colirábano estofado con grasa y sal

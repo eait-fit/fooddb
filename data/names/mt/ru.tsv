@@ -3090,7 +3090,7 @@ bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	но�
 bls:V486100	Turkey breast, without skin, raw	грудка индейки без кожи сырая
 bls:V486132	Turkey breast, without skin, boiled	грудка индейки без кожи варёная
 bls:V486142	Turkey breast, without skin, braised without fat	грудка индейки без кожи тушёная
-bls:V486162	Turkey breast, without skin, fried without fat (oven)	филе индейки без кожи запечённое
+bls:V486162	Turkey breast, without skin, fried without fat (oven)	грудка индейки без кожи запечённая
 bls:V486172	Turkey breast, without skin, grilled	грудка индейки без кожи на гриле
 bls:V486182	Turkey breast, without skin, fried without fat (pan)	грудка индейки без кожи жареная без масла
 bls:V486200	Turkey breast, without skin, deep-frozen	грудка индейки без кожи замороженная
@@ -3152,7 +3152,7 @@ bls:V512182	Veal heart, fried without fat (pan)	сердце телячье жа
 bls:V512200	Veal heart, deep-frozen	сердце телячье замороженное
 bls:V512242	Veal heart, deep-frozen, braised without fat	сердце телячье из заморозки тушёное
 bls:V512282	Veal heart, deep-frozen, fried without fat (pan)	сердце телячье из заморозки жареное без масла
-bls:V513100	Pork heart, raw	свиное сердце сырое
+bls:V513100	Pork heart, raw	сердце свиное сырое
 bls:V513142	Pork heart, braised without fat	сердце свиное тушёное
 bls:V513182	Pork heart, fried without fat (pan)	сердце свиное жареное без масла
 bls:V513200	Pork heart, deep-frozen	сердце свиное замороженное
@@ -3166,7 +3166,7 @@ bls:V515100	Lamb heart, raw	сердце ягнячье сырое
 bls:V515142	Lamb heart, braised without fat	сердце ягнячье тушёное
 bls:V515182	Lamb heart, fried without fat (pan)	сердце ягнячье жареное без масла
 bls:V516100	Mutton heart, raw	сердце баранье сырое
-bls:V516142	Mutton heart, braised without fat	баранье сердце тушёное
+bls:V516142	Mutton heart, braised without fat	сердце баранье тушёное
 bls:V516182	Mutton heart, fried without fat (pan)	сердце баранье жареное без масла
 bls:V522100	Veal brain, raw	мозги телячьи сырые
 bls:V522132	Veal brain, boiled	мозги телячьи варёные
@@ -3180,7 +3180,7 @@ bls:V531100	Beef liver, raw	печень говяжья сырая
 bls:V531182	Beef liver, fried without fat (pan)	печень говяжья жареная без масла
 bls:V531200	Beef liver, deep-frozen	печень говяжья замороженная
 bls:V531282	Beef liver, deep-frozen, fried without fat (pan)	печень говяжья из заморозки жареная без масла
-bls:V532100	Veal liver, raw	телячья печень сырая
+bls:V532100	Veal liver, raw	печень телячья сырая
 bls:V532182	Veal liver, fried without fat (pan)	печень телячья жареная без масла
 bls:V532200	Veal liver, deep-frozen	печень телячья замороженная
 bls:V532282	Veal liver, deep-frozen, fried without fat (pan)	печень телячья из заморозки жареная без масла
@@ -3217,8 +3217,8 @@ bls:V564100	Sheep spleen, raw	селезёнка овечья сырая
 bls:V565100	Lamb spleen, raw	селезёнка ягнячья сырая
 bls:V566100	Mutton spleen, raw	селезёнка баранья сырая
 bls:V571100	Beef kidney, raw	почки говяжьи сырые
-bls:V572100	Veal kidney, raw	телячьи почки сырые
-bls:V572142	Veal kidney, braised without fat	телячьи почки тушёные
+bls:V572100	Veal kidney, raw	почки телячьи сырые
+bls:V572142	Veal kidney, braised without fat	почки телячьи тушёные
 bls:V573100	Pork kidney, raw	почки свиные сырые
 bls:V573142	Pork kidney, braised without fat	почки свиные тушёные
 bls:V574100	Sheep kidney, raw	почки овечьи сырые
@@ -3226,7 +3226,7 @@ bls:V574142	Sheep kidney, braised without fat	почки овечьи тушён
 bls:V575100	Lamb kidney, raw	почки ягнячьи сырые
 bls:V575142	Lamb kidney, braised without fat	почки ягнячьи тушёные
 bls:V576100	Mutton kidney, raw	почки бараньи сырые
-bls:V576142	Mutton kidney, braised without fat	бараньи почки тушёные
+bls:V576142	Mutton kidney, braised without fat	почки бараньи тушёные
 bls:V582100	Veal sweetbread, raw	зобная железа телячья сырая
 bls:V582132	Veal sweetbread, boiled	зобная железа телячья варёная
 bls:V584100	Sheep sweetbread, raw	зобная железа овечья сырая
@@ -3236,7 +3236,7 @@ bls:V585132	Lamb sweetbread, boiled	зобная железа ягнячья в�
 bls:V591100	Beef tongue, raw	язык говяжий сырой
 bls:V591132	Beef tongue, boiled	язык говяжий варёный
 bls:V591800	Beef tongue, cooked cured	язык говяжий солёный варёный
-bls:V592100	Veal tongue, raw	телячий язык сырой
+bls:V592100	Veal tongue, raw	язык телячий сырой
 bls:V592132	Veal tongue, boiled	язык телячий варёный
 bls:V592800	Veal tongue, cooked cured	язык телячий солёный варёный
 bls:V593100	Pork tongue, raw	язык свиной сырой
@@ -3246,7 +3246,7 @@ bls:V594100	Sheep tongue, raw	язык овечий сырой
 bls:V594132	Sheep tongue, boiled	язык овечий варёный
 bls:V595100	Lamb tongue, raw	язык ягнячий сырой
 bls:V595132	Lamb tongue, boiled	язык ягнячий варёный
-bls:V596100	Mutton tongue, raw	бараний язык сырой
+bls:V596100	Mutton tongue, raw	язык бараний сырой
 bls:V596132	Mutton tongue, boiled	язык бараний варёный
 bls:V604100	Chicken giblets, raw	потрошки цыплёнка сырые
 bls:V604142	Chicken giblets, braised without fat	потрошки цыплёнка тушёные
@@ -3261,11 +3261,11 @@ bls:V634100	Chicken liver, raw	печень куриная сырая
 bls:V634182	Chicken liver, fried without fat (pan)	печень куриная жареная без масла
 bls:V634200	Chicken liver, deep-frozen	печень куриная замороженная
 bls:V634282	Chicken liver, deep-frozen, fried without fat (pan)	печень куриная из заморозки жареная без масла
-bls:V635100	Duck liver, raw	утиная печень сырая
+bls:V635100	Duck liver, raw	печень утиная сырая
 bls:V635182	Duck liver, fried without fat (pan)	печень утиная жареная без масла
 bls:V635200	Duck liver, deep-frozen	печень утиная замороженная
 bls:V635282	Duck liver, deep-frozen, fried without fat (pan)	печень утиная из заморозки жареная без масла
-bls:V636100	Goose liver, raw	гусиная печень сырая
+bls:V636100	Goose liver, raw	печень гусиная сырая
 bls:V636182	Goose liver, fried without fat (pan)	печень гусиная жареная без масла
 bls:V654100	Chicken stomach, raw	желудочки куриные сырые
 bls:V654182	Chicken stomach, fried without fat (pan)	желудочки куриные жареные без масла
@@ -3293,7 +3293,7 @@ bls:W008000	Sausage meat dark, for roulade sausage	фарш тёмный для 
 bls:W009000	Mosaic-edge for roulade sausage	колбаса мозаичная
 bls:W010000	Shortcrust pastry for meat/sausage pate, raw	песочное тесто для мясных паштетов сырое
 bls:W110000	Braunschweiger Mettwurst sausage high quality, spreadable	меттвурст брауншвейгский высший сорт для намазывания
-bls:W112200	Mettwurst sausage/Mettwurst sausage with onions, spreadable	меттвурст для намазывания с луком
+bls:W112200	Mettwurst sausage/Mettwurst sausage with onions, spreadable	меттвурст для намазывания с луком или без
 bls:W112300	Braunschweiger Mettwurst sausage spreadable, reduced-fat	меттвурст брауншвейгский для намазывания с пониженным жиром
 bls:W114000	Coarse Mettwurst sausage spreadable	меттвурст крупный для намазывания
 bls:W114100	Coarse Mettwurst sausage spreadable, reduced-fat	меттвурст крупный для намазывания с пониженным жиром
@@ -3428,7 +3428,7 @@ bls:W243000	Kalbskaese sausage with pork	кальбскезе со свинин�
 bls:W244000	White fleischkaese sausage	мясной хлебец белый (фляйшкезе)
 bls:W245000	White Lyoner sausage	лионская колбаса белая
 bls:W251000	Bavarian Bierwurst	баварская бирвурст
-bls:W251200	North German Kochmettwurst sausage (cooked)	североемецкая кочметтвурст
+bls:W251200	North German Kochmettwurst sausage (cooked)	северонемецкая кохметтвурст
 bls:W251300	Ham bologna smoked	ветчинная колбаса копчёная
 bls:W252000	Göttinger Bierwurst	гёттингенская бирвурст
 bls:W252100	Krakow cooked sausage	краковская варёная колбаса
@@ -3529,12 +3529,12 @@ bls:W363000	Schwartenmagen brawn	сальтисон
 bls:W364000	Franconian pork brawn	франконский мясной зельц
 bls:W364400	Tongue brawn	зельц из языка
 bls:W364500	Ham brawn	зельц ветчинный
-bls:W365100	Schweinekümmelmagen pork brawn with caraway seeds	свиной желудок с тмином
+bls:W365100	Schweinekümmelmagen pork brawn with caraway seeds	желудок свиной с тмином
 bls:W368000	Anspacher liver brawn	анспахский печёночный зельц
 bls:W371000	Jellied veal	телятина в желе
 bls:W372000	Jellied beef	говядина в желе
 bls:W373000	Vegetable aspic/vegetable mix in aspic	овощи в желе
-bls:W378100	Goose liver in aspic	гусиная печень в желе
+bls:W378100	Goose liver in aspic	печень гусиная в желе
 bls:W380200	Rice sausage	рисовая колбаса
 bls:W380300	Potato sausage	картофельная колбаса
 bls:W380400	Sausage made with pea flour	гороховая колбаса
@@ -3553,8 +3553,8 @@ bls:W396000	Venison meat pate with alcohol, baked	паштет из оленин
 bls:W397300	Goose liver pate with pork, baked	паштет из гусиной печени со свининой запечённый
 bls:W398000	Veal pate with pork	паштет из телятины со свининой
 bls:W399100	Pate made from cured rolled pork loin	паштет из копчёной свиной корейки
-bls:W399300	Ham bologna sausage meat terrine with alcohol, baked	ветчинная террина с алкоголем запечённая
-bls:W399400	French pork terrine baked	французская свиная террина запечённая
+bls:W399300	Ham bologna sausage meat terrine with alcohol, baked	ветчинный террин с алкоголем запечённый
+bls:W399400	French pork terrine baked	французский свиной террин запечённый
 bls:W410400	Pork bacon (ham) raw cured, smoked	бекон окорочный солёный копчёный
 bls:W410432	Pork bacon (ham) raw cured, smoked, boiled	бекон окорочный солёный копчёный варёный
 bls:W410462	Pork bacon (ham) raw cured, smoked, fried without fat (oven)	бекон окорочный солёный копчёный запечённый
@@ -3592,7 +3592,7 @@ bls:W530042	Pork loin chop raw cured, smoked, braised without fat	корейка
 bls:W530052	Pork loin chop raw cured, smoked, stewed	корейка свиная солёная копчёная припущенная
 bls:W531000	Pork loin chop raw cured, smoked, breaded	корейка свиная солёная копчёная в панировке
 bls:W531082	Pork loin chop raw cured, smoked, breaded fried without fat (pan)	корейка свиная солёная копчёная в панировке жареная без масла
-bls:W540000	Beef meat (topside/top round) raw cured, smoked	говядина солёная копчёная (оковолок)
+bls:W540000	Beef meat (topside/top round) raw cured, smoked	говядина солёная копчёная (оковалок)
 bls:W561000	Turkey breast cold cuts, cooked cured, smoked	грудка индейки солёная варёная копчёная
 bls:W610000	Pork spare ribs, cooked cured	рёбрышки свиные солёные варёные
 bls:W620000	Pork foreshank (hock) "Eisbein" cooked cured, boiled	свиная рулька солёная варёная (айсбайн)
@@ -3610,9 +3610,9 @@ bls:W850500	Jellied sausage	колбаса в желе
 bls:W851000	Jellied pork	свинина в желе
 bls:W854000	Jellied pork chop	котлета в желе
 bls:W855000	Pork belly in aspic	грудинка свиная в желе
-bls:W858000	Jellied pork tongue	свиной язык в желе
+bls:W858000	Jellied pork tongue	язык свиной в желе
 bls:W862000	Veal brisket in aspic	грудинка телячья в желе
-bls:W863000	Veal tongue white-wine aspic	телячий язык в желе из белого вина
+bls:W863000	Veal tongue white-wine aspic	язык телячий в желе из белого вина
 bls:W864000	Beef brisket white-wine aspic	грудинка говяжья в желе из белого вина
 bls:W865000	Jellied meatloaf	мясной хлеб в желе
 bls:W866000	Oxtail in jelly	хвост быка в желе
@@ -3994,7 +3994,7 @@ bls:X3A7000	Almond pesto	миндальное песто
 bls:X3A7010	Pesto rosso	песто россо
 bls:X3A7020	Salsa verde	зелёная сальса
 bls:X3A7030	Anchovy pesto with herbs	песто из анчоусов с травами
-bls:X3A7040	Spanish sauce (Salsa)	соус сальса испанский
+bls:X3A7040	Spanish sauce (Salsa)	испанская сальса
 bls:X3A7050	Mayonnaise, diluted with yogurt	майонез, разведённый йогуртом
 bls:X3A7060	Mayonnaise, diluted with sour cream	майонез, разведённый сметаной
 bls:X3A7070	Mayonnaise, diluted with whipping cream	майонез, разведённый сливками
@@ -4299,7 +4299,7 @@ bls:X521053	Spinach stewed, in white basic sauce	шпинат тушёный в 
 bls:X521413	Spinach casserole with cheese gratinated	запеканка шпинатная с сыром запечённая
 bls:X522012	Leaf spinach stewed (with fat and salt)	шпинат листовой тушёный с маслом и солью
 bls:X523053	Chard stewed, in white basic sauce	мангольд тушёный в белом базовом соусе
-bls:X523312	Chard tart (shortcrust pastry)	тарталетка из мангольда
+bls:X523312	Chard tart (shortcrust pastry)	тарт из мангольда
 bls:X523512	Chard stewed (with fat and salt)	мангольд тушёный с маслом и солью
 bls:X525043	Parsley root stewed, in white basic sauce with cream	корень петрушки тушёный в белом базовом соусе со сливками
 bls:X526062	Chicory stewed, with butter	цикорий салатный тушёный со сливочным маслом
@@ -4326,7 +4326,7 @@ bls:X532812	Broccoli in frying batter (with beer) deep-fried	брокколи в
 bls:X533042	Chinese white cabbage stewed, with grated cheese	пекинская капуста тушёная с тёртым сыром
 bls:X534133	Curly kale stewed, with Westphalian mettwurst sausage	кудрявая капуста тушёная с вестфальским меттвурстом
 bls:X534212	Curly kale stewed, with bacon	кудрявая капуста тушёная с беконом
-bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	кольраби тушёный с петрушкой
+bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	кольраби тушёный с петрушкой, маслом и солью
 bls:X535053	Kohlrabi stewed, with white basic sauce	кольраби тушёный с белым базовым соусом
 bls:X535163	Kohlrabi filled with chicken breast fillet, rice and vegetables, gratinated	кольраби фаршированный куриным филе, рисом и овощами запечённый с сыром
 bls:X535312	Kohlrabi stewed (with fat and salt)	кольраби тушёный с маслом и солью
