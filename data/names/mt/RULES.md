@@ -452,3 +452,42 @@ ingredient rows.
 - Pig-ear pastry → `печенье «свиное ушко»` / `palmeras`; Dominosteine → `пирожные «домино»` / `petit fours de dominó` (no extra `птифур`).
 - es `pomelo` = grapefruit; the pummelo record takes `pomelo chino`.
 - When the canonical name is kcal-blocked, prefer (in order): word-order variant (`свежее яблоко`), synonym (`хлеб из ржи`, `bebida vegetal`, `flips de cacahuete`), real qualifier (`cocido en agua`, `en crudo`, `exprimido`) — never an invented tag (`простой`, `natural`, `molida`).
+
+### Batch 3c lessons (bls sweets/fish/meat corpus)
+
+- **Every adjective and participle agrees with the head noun** — not with a
+  modifier in between: `шоколадная глазурь полугорькая` (глазурь fem),
+  `край свиной грудинки сырой` (край masc), `huevas de arenque crudas`,
+  `gambas cocidas`, `almendra tostada garrapiñada`. A cut in a genitive
+  complement does not steal the agreement.
+- **A part dangling in genitive reads as "of the X"**: `стейк из корейки` /
+  `стейк из шеи`, never `стейк корейки` / `стейк шейки` (`стейк из вырезки`
+  already did this).
+- **Never swap a species for a similar one**: lumpfish (Seehase) = `пинагор`
+  (`рогатка` is sculpin); stockfish is UNSALTED dried cod → `pescado seco sin
+  sal` (`bacalao` implies salted); fresh anchovy = `boquerón`, `anchoa` is the
+  salt-cured fillet; Schweinebraten = `буженина` (`ростбиф` is beef);
+  `pork mask` = `свиная маска`, `kernig` fat = `плотный`/`firme` (60 % fat —
+  not `мясистый`/`carnoso`); Lakritze = `лакричные конфеты` (bare `леденцы`
+  narrows to boiled sweets; when `лакричные конфеты` and `конфеты лакричные`
+  are both kcal-taken, `лакрица`); `grob entsehnt` = `грубо зачищенная от
+  сухожилий` / `con pocos tendones`, never `sin tendones`.
+- `im eigenen Saft` → `в собственном соку` / `al natural` — `слитая` /
+  `escurrido` means drained, the opposite thing.
+- Grade parens stay verbatim Latin: `(R II)`, `(KA I)`, `(S XI)` — the Cyrillic
+  homoglyphs `Р`/`КА`/`С` were a transliteration bug in both the source column
+  and the name; write roman numerals `(S XI)`, not `(С 11)`.
+- `fresh`+`raw` is redundant: when `X сырой` / `X crudo` is kcal-taken, write
+  `X свежий` / `X fresco` (`тунец свежий`, `калкан свежий`, `рыба-меч свежая`,
+  `удильщик свежий`, `fletán fresco`, `carne de caballo/cabra/jabalí fresca`).
+- A stray `raw` on a cooked-state record is dropped (`сырой жареный без масла`
+  → `жареный без масла`); `raw` + `raw cured` collapses to one `сырой`
+  (`окорок постный солёный сырой копчёный`).
+- es: bare `picada` is not a name → `carne picada de X`; the minced-steak
+  headword is `filete ruso` (`hamburguesa` off-pattern); when the `a la
+  parrilla` form is kcal-taken by a sibling record, `a la brasa` is the honest
+  grilled variant (`carne picada de ternera a la brasa`, `filete ruso de
+  vacuno y cerdo a la brasa`). `ahumado en caliente` — caliente is invariable.
+- Consistent headword within a record family: `удильщик`/`rape`,
+  `fletán`, `filete ruso` — do not introduce a synonym for one sibling
+  (`морской чёрт`, `halibut`, `hamburguesa`).
