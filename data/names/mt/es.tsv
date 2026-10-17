@@ -5364,8 +5364,206 @@ fdc:172648	Biscuits, plain or buttermilk, refrigerated dough, higher fat	bizcoch
 fdc:172649	Biscuits, plain or buttermilk, refrigerated dough, higher fat, baked	bizcochos de masa refrigerada ricos en grasa al horno
 fdc:172650	Biscuits, plain or buttermilk, prepared from recipe	bizcochos caseros
 fdc:172651	Biscuits, mixed grain, refrigerated dough	bizcochos multigrano de masa refrigerada
-fdc:172693	Bread, stuffing, cornbread, dry mix, prepared	relleno de pan de maíz preparado
-fdc:172769	Muffins, oat bran	muffins de salvado de avena
+fdc:172652	Cake, cheesecake, prepared from mix, no-bake type	tarta de queso de preparado sin horno
+fdc:172653	Cookies, brownies, commercially prepared	brownies
+fdc:172654	Cookies, chocolate wafers	barquillos de chocolate
+fdc:172655	Cookies, chocolate chip, commercially prepared, regular, lower fat	galletas con pepitas de chocolate reducidas en grasa
+fdc:172656	Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched	galletas con pepitas de chocolate ricas en grasa enriquecidas
+fdc:172657	Cookies, chocolate chip, commercially prepared, soft-type	galletas con pepitas de chocolate tiernas
+fdc:172658	Cookies, chocolate sandwich, with creme filling, regular	galletas de chocolate rellenas de crema
+fdc:172659	Cookies, chocolate sandwich, with creme filling, regular, chocolate-coated	galletas de chocolate rellenas de crema cubiertas de chocolate
+fdc:172660	Cookies, chocolate sandwich, with extra creme filling	galletas de chocolate con doble crema
+fdc:172661	Cookies, fig bars	barritas de higos
+fdc:172662	Cookies, fortune	galletas de la fortuna
+fdc:172663	Cookies, marshmallow, chocolate-coated (includes marshmallow pies)	galletas de malvavisco cubiertas de chocolate
+fdc:172664	Cookies, molasses	galletas de melaza
+fdc:172665	Cookies, oatmeal, commercially prepared, regular	galletas de avena
+fdc:172666	Cookies, oatmeal, commercially prepared, soft-type	galletas de avena tiernas
+fdc:172667	Cookies, peanut butter, commercially prepared, regular	galletas de crema de cacahuete
+fdc:172668	Cookies, peanut butter, commercially prepared, soft-type	galletas de crema de cacahuete tiernas
+fdc:172669	Cookies, peanut butter, refrigerated dough	galletas de crema de cacahuete de masa refrigerada
+fdc:172670	Cookies, peanut butter, refrigerated dough, baked	galletas de crema de cacahuete de masa refrigerada horneadas
+fdc:172671	Cookies, brownies, dry mix, sugar free	preparado de brownies sin azúcar
+fdc:172672	Cookies, chocolate chip, commercially prepared, special dietary	galletas con pepitas de chocolate dietéticas
+fdc:172673	Cookies, chocolate sandwich, with creme filling, special dietary	galletas de chocolate rellenas de crema dietéticas
+fdc:172674	Cookies, oatmeal, commercially prepared, special dietary	galletas de avena dietéticas
+fdc:172675	Cookies, sugar, refrigerated dough, baked	galletas de azúcar de masa refrigerada horneadas
+fdc:172676	Cookies, sugar wafers with creme filling, regular	barquillos de azúcar rellenos de crema
+fdc:172677	Cookies, vanilla sandwich with creme filling	galletas de vainilla rellenas de crema
+fdc:172678	Puff pastry, frozen, ready-to-bake, baked	hojaldre congelado horneado
+fdc:172679	Crackers, crispbread, rye	pan crujiente de centeno
+fdc:172680	Crackers, matzo, plain	pan de matzá
+fdc:172681	Crackers, matzo, egg	pan de matzá con huevo
+fdc:172682	Crackers, matzo, whole-wheat	pan de matzá integral
+fdc:172683	Crackers, rye, sandwich-type with cheese filling	galletas saladas de centeno rellenas de queso
+fdc:172684	Crackers, rye, wafers, plain	galletas finas de centeno
+fdc:172685	Crackers, rye, wafers, seasoned	galletas finas de centeno sazonadas
+fdc:172686	Crackers, saltines (includes oyster, soda, soup)	galletas saladas
+fdc:172687	Crackers, wheat, sandwich, with cheese filling	galletas saladas de trigo rellenas de queso
+fdc:172688	Crackers, wheat, sandwich, with peanut butter filling	galletas saladas de trigo rellenas de crema de cacahuete
+fdc:172689	Crackers, whole-wheat	galletas saladas integrales
+fdc:172690	Cracker, meal	pan rallado de galleta
+fdc:172691	Croutons, plain	picatostes
+fdc:172692	Croutons, seasoned	picatostes sazonados
+fdc:172693	Danish pastry, cinnamon, enriched	bollo de canela enriquecido
+fdc:172694	Danish pastry, cheese	bollo de queso
+fdc:172695	Danish pastry, fruit, enriched (includes apple, cinnamon, raisin, lemon, raspberry, strawberry)	bollo de fruta enriquecido
+fdc:172696	Doughnuts, french crullers, glazed	rosquillas glaseadas
+fdc:172697	Doughnuts, yeast-leavened, with creme filling	donuts de levadura rellenos de crema
+fdc:172698	Doughnuts, yeast-leavened, glazed, enriched (includes honey buns)	donuts de levadura glaseados enriquecidos
+fdc:172699	Doughnuts, yeast-leavened, with jelly filling	donuts de levadura rellenos de mermelada
+fdc:172700	Muffins, English, raisin-cinnamon, toasted (includes apple-cinnamon)	muffins de pasas y canela tostados
+fdc:172701	Muffins, English, wheat	muffins de trigo
+fdc:172702	Muffins, English, whole-wheat	muffins integrales
+fdc:172703	French toast, frozen, ready-to-heat	torrijas congeladas
+fdc:172704	Muffins, plain, prepared from recipe, made with low fat (2%) milk	muffins caseros con leche al 2%
+fdc:172705	Muffins, blueberry, commercially prepared (Includes mini-muffins)	magdalenas de arándanos
+fdc:172706	Muffins, blueberry, dry mix	preparado de magdalenas de arándanos
+fdc:172707	Muffins, blueberry, toaster-type	magdalenas de arándanos para tostadora
+fdc:172708	Muffins, blueberry, prepared from recipe, made with low fat (2%) milk	magdalenas de arándanos caseras con leche al 2%
+fdc:172709	Muffins, oat bran	magdalenas de salvado de avena
+fdc:172710	Muffins, wheat bran, dry mix	preparado de magdalenas de salvado de trigo
+fdc:172711	Pancakes plain, frozen, ready-to-heat (includes buttermilk)	tortitas congeladas
+fdc:172712	Pancakes, plain, dry mix, complete (includes buttermilk)	preparado de tortitas completo
+fdc:172713	Pancakes, blueberry, prepared from recipe	tortitas de arándanos caseras
+fdc:172714	Pancakes, buckwheat, dry mix, incomplete	preparado de tortitas de trigo sarraceno
+fdc:172715	Pancakes, special dietary, dry mix	preparado de tortitas dietéticas
+fdc:172716	Pancakes, whole-wheat, dry mix, incomplete	preparado de tortitas integrales
+fdc:172717	Pie, banana cream, prepared from recipe	tarta de crema de plátano casera
+fdc:172718	Pie, blueberry, commercially prepared	tarta de arándanos
+fdc:172719	Pie, blueberry, prepared from recipe	tarta de arándanos casera
+fdc:172720	Pie, cherry, commercially prepared	tarta de cereza
+fdc:172721	Pie, cherry, prepared from recipe	tarta de cereza casera
+fdc:172722	Pie, coconut custard, commercially prepared	tarta de crema de coco
+fdc:172723	Pie, egg custard, commercially prepared	tarta de crema de huevo
+fdc:172724	Pie, fried pies, fruit	empanadillas fritas de fruta
+fdc:172725	Pie, lemon meringue, commercially prepared	tarta de limón con merengue
+fdc:172726	Pie, pecan, prepared from recipe	tarta de pacanas casera
+fdc:172727	Pie, pumpkin, commercially prepared	tarta de calabaza
+fdc:172728	Pie, pumpkin, prepared from recipe	tarta de calabaza casera
+fdc:172729	Pie, vanilla cream, prepared from recipe	tarta de crema de vainilla casera
+fdc:172730	Puff pastry, frozen, ready-to-bake	hojaldre congelado
+fdc:172731	Phyllo dough	masa filo
+fdc:172732	Popovers, dry mix, enriched	preparado de popovers enriquecido
+fdc:172733	Rolls, dinner, plain, commercially prepared (includes brown-and-serve)	panecillos de mesa
+fdc:172734	Rolls, dinner, whole-wheat	panecillos de mesa integrales
+fdc:172735	Rolls, french	panecillos franceses
+fdc:172736	Rolls, hamburger or hotdog, plain	pan de hamburguesa
+fdc:172737	Rolls, hamburger or hotdog, mixed-grain	pan de hamburguesa multigrano
+fdc:172738	Sweet rolls, cinnamon, refrigerated dough with frosting	rollos de canela de masa refrigerada con glaseado
+fdc:172739	Sweet rolls, cinnamon, refrigerated dough with frosting, baked	rollos de canela de masa refrigerada con glaseado horneados
+fdc:172740	Taco shells, baked	tortillas de taco al horno
+fdc:172741	Toaster pastries, brown-sugar-cinnamon	pastelitos para tostadora de canela y azúcar moreno
+fdc:172742	Wonton wrappers (includes egg roll wrappers)	masa para wonton
+fdc:172743	Leavening agents, baking powder, double-acting, sodium aluminum sulfate	levadura química doble acción con alumbre sódico
+fdc:172744	Leavening agents, baking powder, double-acting, straight phosphate	levadura química doble acción fosfatada
+fdc:172745	Leavening agents, baking powder, low-sodium	levadura química baja en sodio
+fdc:172746	Bread, crumbs, dry, grated, seasoned	pan rallado sazonado
+fdc:172747	Cookies, oatmeal, prepared from recipe, without raisins	galletas de avena caseras sin pasas
+fdc:172748	Cookies, chocolate chip, prepared from recipe, made with butter	galletas con pepitas de chocolate caseras con mantequilla
+fdc:172749	Bread, protein, (includes gluten), toasted	pan proteico tostado
+fdc:172750	Rolls, dinner, plain, prepared from recipe, made with low fat (2%) milk	panecillos de mesa caseros con leche al 2%
+fdc:172751	Pie crust, cookie-type, prepared from recipe, graham cracker, chilled	base de tarta de galleta refrigerada
+fdc:172752	Crackers, matzo, egg and onion	pan de matzá con huevo y cebolla
+fdc:172753	Pie crust, cookie-type, prepared from recipe, vanilla wafer, chilled	base de tarta de barquillos de vainilla refrigerada
+fdc:172754	Pie crust, standard-type, prepared from recipe, unbaked	base de tarta casera sin hornear
+fdc:172755	Bread, cornbread, dry mix, unenriched (includes corn muffin mix)	preparado de pan de maíz no enriquecido
+fdc:172756	Bread, pita, white, unenriched	pan de pita blanco no enriquecido
+fdc:172757	Bread, raisin, unenriched	pan de pasas no enriquecido
+fdc:172758	Bread, white, commercially prepared, low sodium, no salt	pan blanco bajo en sodio sin sal
+fdc:172759	Cookies, butter, commercially prepared, unenriched	galletas de mantequilla no enriquecidas
+fdc:172760	Cookies, chocolate chip, commercially prepared, regular, higher fat, unenriched	galletas con pepitas de chocolate ricas en grasa no enriquecidas
+fdc:172761	Cookies, ladyfingers, without lemon juice and rind	bizcochos de soletilla
+fdc:172762	Crackers, melba toast, plain, without salt	tostadas melba sin sal
+fdc:172763	Crackers, whole-wheat, low salt	galletas saladas integrales bajas en sal
+fdc:172764	Danish pastry, cinnamon, unenriched	bollo de canela no enriquecido
+fdc:172765	Danish pastry, fruit, unenriched (includes apple, cinnamon, raisin, strawberry)	bollo de fruta no enriquecido
+fdc:172766	Bread, white, commercially prepared, toasted, low sodium no salt	pan blanco tostado bajo en sodio sin sal
+fdc:172767	Danish pastry, lemon, unenriched	bollo de limón no enriquecido
+fdc:172768	English muffins, plain, unenriched, with calcium propionate (includes sourdough)	muffins ingleses no enriquecidos
+fdc:172769	Quail, breast, meat only, raw	codorniz pechuga sin piel cruda
+fdc:172770	Chicken, broiler, rotisserie, BBQ, wing, meat and skin	ala de pollo asado con piel
+fdc:172771	Ruffed Grouse, breast meat, skinless, raw	urogallo pechuga sin piel cruda
+fdc:172772	Emu, ground, raw	carne picada de emú cruda
+fdc:172773	Emu, ground, cooked, pan-broiled	carne picada de emú a la plancha
+fdc:172774	Emu, full rump, cooked, broiled	emú anca a la parrilla
+fdc:172775	Emu, inside drum, raw	emú muslo interior crudo
+fdc:172776	Emu, inside drums, cooked, broiled	emú muslo interior a la parrilla
+fdc:172777	Emu, outside drum, raw	emú muslo exterior crudo
+fdc:172778	Emu, oyster, raw	emú medallón crudo
+fdc:172779	Ostrich, inside leg, raw	avestruz pata interior cruda
+fdc:172780	Ostrich, inside leg, cooked	avestruz pata interior cocinada
+fdc:172781	Ostrich, inside strip, raw	avestruz tira interior cruda
+fdc:172782	Ostrich, inside strip, cooked	avestruz tira interior cocinada
+fdc:172783	Ostrich, oyster, cooked	avestruz medallón cocinado
+fdc:172784	Ostrich, round, raw	avestruz redondo crudo
+fdc:172785	Ostrich, tenderloin, raw	avestruz solomillo crudo
+fdc:172786	Ostrich, tip trimmed, raw	avestruz punta limpia cruda
+fdc:172787	Turkey, ground, fat free, raw	carne picada de pavo sin grasa cruda
+fdc:172788	Turkey, ground, fat free, pan-broiled crumbles	carne picada de pavo sin grasa a la plancha
+fdc:172789	Turkey, ground, fat free, patties, broiled	hamburguesas de pavo sin grasa a la parrilla
+fdc:172790	Turkey, ground, 93% lean, 7% fat, raw	carne picada de pavo 93% magra cruda
+fdc:172791	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	carne picada de pavo 93% magra a la plancha
+fdc:172792	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, braised	muslo de pollo sin piel estofado
+fdc:172793	Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised	contramuslo de pollo sin piel estofado
+fdc:172794	Chicken, skin (drumsticks and thighs), cooked, braised	piel de pollo estofada
+fdc:172795	Chicken, skin (drumsticks and thighs), raw	piel de pollo cruda
+fdc:172796	Chicken, dark meat, drumstick, meat only, with added solution, cooked, roasted	muslo de pollo sin piel con salmuera asado
+fdc:172797	Chicken, dark meat, drumstick, meat only, with added solution, cooked, braised	muslo de pollo sin piel con salmuera estofado
+fdc:172798	Chicken, dark meat, thigh, meat only, with added solution, cooked, braised	contramuslo de pollo sin piel con salmuera estofado
+fdc:172799	Chicken, dark meat, thigh, meat only, with added solution, raw	contramuslo de pollo sin piel con salmuera crudo
+fdc:172800	Chicken, dark meat, drumstick, meat and skin, with added solution, raw	muslo de pollo con piel con salmuera crudo
+fdc:172801	Chicken, dark meat, drumstick, meat and skin, with added solution, cooked, roasted	muslo de pollo con piel con salmuera asado
+fdc:172802	Chicken, dark meat, thigh, meat and skin, with added solution, cooked, braised	contramuslo de pollo con piel con salmuera estofado
+fdc:172803	Chicken, dark meat, thigh, meat and skin, with added solution, raw	contramuslo de pollo con piel con salmuera crudo
+fdc:172804	Turkey from whole, light meat, meat only, with added solution, raw	pavo carne blanca sin piel con salmuera cruda
+fdc:172805	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	pavo carne blanca sin piel con salmuera asada
+fdc:172806	Turkey, skin from whole (light and dark), with added solution, raw	piel de pavo con salmuera cruda
+fdc:172807	Turkey, skin from whole, (light and dark), with added solution, roasted	piel de pavo con salmuera asada
+fdc:172808	Turkey, whole, meat only, with added solution, raw	pavo entero sin piel con salmuera crudo
+fdc:172809	Turkey, whole, meat only, with added solution, roasted	pavo entero sin piel con salmuera asado
+fdc:172810	Turkey, whole, meat and skin, with added solution, raw	pavo entero con piel con salmuera crudo
+fdc:172811	Turkey, whole, meat and skin, with added solution, roasted	pavo entero con piel con salmuera asado
+fdc:172812	Turkey, retail parts, wing, meat only, cooked, roasted	ala de pavo sin piel asada
+fdc:172813	Turkey, skin, from retail parts, from dark meat, raw	piel de pavo de carne oscura cruda
+fdc:172814	Turkey, skin, from retail parts, from dark meat, cooked, roasted	piel de pavo de carne oscura asada
+fdc:172815	Turkey, retail parts, drumstick, meat only, raw	muslo de pavo sin piel crudo
+fdc:172816	Turkey, breast, from whole bird, meat only, with added solution, raw	pechuga de pavo sin piel con salmuera cruda
+fdc:172817	Turkey, retail parts, thigh, meat only, cooked, roasted	contramuslo de pavo sin piel asado
+fdc:172818	Turkey, retail parts, drumstick, meat only, cooked, roasted	muslo de pavo sin piel asado
+fdc:172819	Sauce, plum, ready-to-serve	salsa de ciruela
+fdc:172820	Sauce, pizza, canned, ready-to-serve	salsa para pizza en conserva
+fdc:172821	Soup, tomato bisque, canned, condensed	sopa de tomate bisque concentrada en conserva
+fdc:172822	Soup, tomato, canned, condensed	sopa de tomate concentrada en conserva
+fdc:172823	Soup, stock, beef, home-prepared	caldo de vacuno casero
+fdc:172824	Soup, stock, chicken, home-prepared	caldo de pollo casero
+fdc:172825	Soup, stock, fish, home-prepared	caldo de pescado casero
+fdc:172826	Sauce, hoisin, ready-to-serve	salsa hoisin
+fdc:172827	Soup, cream of mushroom, canned, condensed, reduced sodium	crema de champiñones concentrada reducida en sodio
+fdc:172828	Soup, chicken broth, less/reduced sodium, ready to serve	caldo de pollo reducido en sodio listo
+fdc:172829	Soup, beef broth, less/reduced sodium, ready to serve	caldo de vacuno reducido en sodio listo
+fdc:172830	Sauce, teriyaki, ready-to-serve, reduced sodium	salsa teriyaki reducida en sodio
+fdc:172831	Soup, cream of asparagus, canned, prepared with equal volume milk	crema de espárragos preparada con leche
+fdc:172832	Soup, chicken vegetable with potato and cheese, chunky, ready-to-serve	sopa de pollo con verduras patata y queso con trozos
+fdc:172833	Soup, cream of celery, canned, prepared with equal volume milk	crema de apio preparada con leche
+fdc:172834	Soup, cheese, canned, prepared with equal volume milk	sopa de queso preparada con leche
+fdc:172835	Soup, oyster stew, canned, prepared with equal volume milk	sopa de ostras preparada con leche
+fdc:172836	Soup, pea, green, canned, prepared with equal volume milk	sopa de guisantes preparada con leche
+fdc:172837	Soup, cream of potato, canned, prepared with equal volume milk	crema de patata preparada con leche
+fdc:172838	Soup, cream of shrimp, canned, prepared with equal volume low fat (2%) milk	crema de gambas preparada con leche al 2%
+fdc:172839	Soup, HEALTHY CHOICE Chicken and Rice Soup, canned	sopa de pollo con arroz Healthy Choice
+fdc:172840	Soup, HEALTHY CHOICE Garden Vegetable Soup, canned	sopa de verduras de huerta Healthy Choice
+fdc:172841	CAMPBELL'S, Cream of Mushroom Soup, condensed	crema de champiñones concentrada Campbell's
+fdc:172842	Soup, tomato bisque, canned, prepared with equal volume milk	sopa de tomate bisque preparada con leche
+fdc:172843	Soup, black bean, canned, prepared with equal volume water	sopa de alubias negras reconstituida
+fdc:172844	Soup, bean with pork, canned, prepared with equal volume water	sopa de judías con cerdo reconstituida
+fdc:172845	Soup, bean with frankfurters, canned, prepared with equal volume water	sopa de judías con salchichas reconstituida
+fdc:172846	Soup, beef noodle, canned, prepared with equal volume water	sopa de vacuno con fideos reconstituida
+fdc:172847	Soup, cream of celery, canned, prepared with equal volume water	crema de apio reconstituida
+fdc:172848	Soup, chicken gumbo, canned, prepared with equal volume water	sopa de pollo gumbo reconstituida
+fdc:172849	Soup, chicken noodle, canned, prepared with equal volume water	sopa de pollo con fideos reconstituida
+fdc:172850	Soup, chicken with rice, canned, prepared with equal volume water	sopa de pollo con arroz reconstituida
+fdc:172851	Soup, chili beef, canned, prepared with equal volume water	sopa de chili con vacuno reconstituida
 fdc:172865	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	carne blanca de pavo asada con salmuera
 fdc:172891	Soup, cream of asparagus, canned, prepared with equal volume milk	crema de espárragos con leche
 fdc:173023	Figs, canned, light syrup pack, solids and liquids	higos en almíbar

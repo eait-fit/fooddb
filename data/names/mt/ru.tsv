@@ -5364,8 +5364,206 @@ fdc:172648	Biscuits, plain or buttermilk, refrigerated dough, higher fat	бис�
 fdc:172649	Biscuits, plain or buttermilk, refrigerated dough, higher fat, baked	бисквиты из охлаждённого теста жирные запечённые
 fdc:172650	Biscuits, plain or buttermilk, prepared from recipe	бисквиты домашние
 fdc:172651	Biscuits, mixed grain, refrigerated dough	бисквиты мультизерновые из охлаждённого теста
-fdc:172693	Bread, stuffing, cornbread, dry mix, prepared	начинка из кукурузного хлеба приготовленная
-fdc:172769	Muffins, oat bran	маффины с овсяными отрубями
+fdc:172652	Cake, cheesecake, prepared from mix, no-bake type	чизкейк из смеси без выпечки
+fdc:172653	Cookies, brownies, commercially prepared	брауни
+fdc:172654	Cookies, chocolate wafers	вафли шоколадные
+fdc:172655	Cookies, chocolate chip, commercially prepared, regular, lower fat	печенье с шоколадной крошкой пониженной жирности
+fdc:172656	Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched	печенье с шоколадной крошкой жирное обогащённое
+fdc:172657	Cookies, chocolate chip, commercially prepared, soft-type	печенье с шоколадной крошкой мягкое
+fdc:172658	Cookies, chocolate sandwich, with creme filling, regular	печенье шоколадное с кремовой начинкой
+fdc:172659	Cookies, chocolate sandwich, with creme filling, regular, chocolate-coated	печенье шоколадное с кремовой начинкой в шоколадной глазури
+fdc:172660	Cookies, chocolate sandwich, with extra creme filling	печенье шоколадное с двойной кремовой начинкой
+fdc:172661	Cookies, fig bars	батончики фиговые
+fdc:172662	Cookies, fortune	печенье с предсказаниями
+fdc:172663	Cookies, marshmallow, chocolate-coated (includes marshmallow pies)	печенье зефирное в шоколадной глазури
+fdc:172664	Cookies, molasses	печенье паточное
+fdc:172665	Cookies, oatmeal, commercially prepared, regular	печенье овсяное
+fdc:172666	Cookies, oatmeal, commercially prepared, soft-type	печенье овсяное мягкое
+fdc:172667	Cookies, peanut butter, commercially prepared, regular	печенье с арахисовой пастой
+fdc:172668	Cookies, peanut butter, commercially prepared, soft-type	печенье с арахисовой пастой мягкое
+fdc:172669	Cookies, peanut butter, refrigerated dough	печенье с арахисовой пастой из охлаждённого теста
+fdc:172670	Cookies, peanut butter, refrigerated dough, baked	печенье с арахисовой пастой из охлаждённого теста печёное
+fdc:172671	Cookies, brownies, dry mix, sugar free	брауни без сахара сухая смесь
+fdc:172672	Cookies, chocolate chip, commercially prepared, special dietary	печенье с шоколадной крошкой диетическое
+fdc:172673	Cookies, chocolate sandwich, with creme filling, special dietary	печенье шоколадное с кремовой начинкой диетическое
+fdc:172674	Cookies, oatmeal, commercially prepared, special dietary	печенье овсяное диетическое
+fdc:172675	Cookies, sugar, refrigerated dough, baked	печенье сахарное из охлаждённого теста печёное
+fdc:172676	Cookies, sugar wafers with creme filling, regular	вафли сахарные с кремовой начинкой
+fdc:172677	Cookies, vanilla sandwich with creme filling	печенье ванильное с кремовой начинкой
+fdc:172678	Puff pastry, frozen, ready-to-bake, baked	тесто слоёное замороженное выпеченное
+fdc:172679	Crackers, crispbread, rye	хлебцы ржаные
+fdc:172680	Crackers, matzo, plain	маца обычная
+fdc:172681	Crackers, matzo, egg	маца яичная
+fdc:172682	Crackers, matzo, whole-wheat	маца цельнопшеничная
+fdc:172683	Crackers, rye, sandwich-type with cheese filling	крекеры ржаные с сырной начинкой
+fdc:172684	Crackers, rye, wafers, plain	крекеры ржаные вафельные
+fdc:172685	Crackers, rye, wafers, seasoned	крекеры ржаные вафельные с приправой
+fdc:172686	Crackers, saltines (includes oyster, soda, soup)	крекеры солёные
+fdc:172687	Crackers, wheat, sandwich, with cheese filling	крекеры пшеничные с сырной начинкой
+fdc:172688	Crackers, wheat, sandwich, with peanut butter filling	крекеры пшеничные с арахисовой начинкой
+fdc:172689	Crackers, whole-wheat	крекеры цельнопшеничные
+fdc:172690	Cracker, meal	крекерная крошка
+fdc:172691	Croutons, plain	сухарики обычные
+fdc:172692	Croutons, seasoned	сухарики с приправой
+fdc:172693	Danish pastry, cinnamon, enriched	сдоба датская с корицей обогащённая
+fdc:172694	Danish pastry, cheese	сдоба датская с сыром
+fdc:172695	Danish pastry, fruit, enriched (includes apple, cinnamon, raisin, lemon, raspberry, strawberry)	сдоба датская фруктовая обогащённая
+fdc:172696	Doughnuts, french crullers, glazed	пончики крюллеры глазированные
+fdc:172697	Doughnuts, yeast-leavened, with creme filling	пончики дрожжевые с кремовой начинкой
+fdc:172698	Doughnuts, yeast-leavened, glazed, enriched (includes honey buns)	пончики дрожжевые глазированные обогащённые
+fdc:172699	Doughnuts, yeast-leavened, with jelly filling	пончики дрожжевые с джемовой начинкой
+fdc:172700	Muffins, English, raisin-cinnamon, toasted (includes apple-cinnamon)	маффины с изюмом и корицей тостовые
+fdc:172701	Muffins, English, wheat	маффины английские пшеничные
+fdc:172702	Muffins, English, whole-wheat	маффины английские цельнопшеничные
+fdc:172703	French toast, frozen, ready-to-heat	гренки замороженные
+fdc:172704	Muffins, plain, prepared from recipe, made with low fat (2%) milk	маффины домашние на молоке 2%
+fdc:172705	Muffins, blueberry, commercially prepared (Includes mini-muffins)	маффины черничные
+fdc:172706	Muffins, blueberry, dry mix	маффины черничные сухая смесь
+fdc:172707	Muffins, blueberry, toaster-type	маффины черничные тостовые
+fdc:172708	Muffins, blueberry, prepared from recipe, made with low fat (2%) milk	маффины черничные домашние на молоке 2%
+fdc:172709	Muffins, oat bran	маффины с овсяными отрубями
+fdc:172710	Muffins, wheat bran, dry mix	маффины с пшеничными отрубями сухая смесь
+fdc:172711	Pancakes plain, frozen, ready-to-heat (includes buttermilk)	блины замороженные
+fdc:172712	Pancakes, plain, dry mix, complete (includes buttermilk)	блины сухая смесь полная
+fdc:172713	Pancakes, blueberry, prepared from recipe	блины черничные домашние
+fdc:172714	Pancakes, buckwheat, dry mix, incomplete	блины гречневые сухая смесь
+fdc:172715	Pancakes, special dietary, dry mix	блины диетические сухая смесь
+fdc:172716	Pancakes, whole-wheat, dry mix, incomplete	блины цельнопшеничные сухая смесь
+fdc:172717	Pie, banana cream, prepared from recipe	пирог бананово-сливочный домашний
+fdc:172718	Pie, blueberry, commercially prepared	пирог черничный
+fdc:172719	Pie, blueberry, prepared from recipe	пирог черничный домашний
+fdc:172720	Pie, cherry, commercially prepared	пирог вишнёвый
+fdc:172721	Pie, cherry, prepared from recipe	пирог вишнёвый домашний
+fdc:172722	Pie, coconut custard, commercially prepared	пирог кокосовый заварной
+fdc:172723	Pie, egg custard, commercially prepared	пирог заварной яичный
+fdc:172724	Pie, fried pies, fruit	пирожки жареные фруктовые
+fdc:172725	Pie, lemon meringue, commercially prepared	пирог лимонный с меренгой
+fdc:172726	Pie, pecan, prepared from recipe	пирог пекановый домашний
+fdc:172727	Pie, pumpkin, commercially prepared	пирог тыквенный
+fdc:172728	Pie, pumpkin, prepared from recipe	пирог тыквенный домашний
+fdc:172729	Pie, vanilla cream, prepared from recipe	пирог ванильно-сливочный домашний
+fdc:172730	Puff pastry, frozen, ready-to-bake	тесто слоёное замороженное
+fdc:172731	Phyllo dough	тесто фило
+fdc:172732	Popovers, dry mix, enriched	поповеры сухая смесь обогащённая
+fdc:172733	Rolls, dinner, plain, commercially prepared (includes brown-and-serve)	булочки столовые
+fdc:172734	Rolls, dinner, whole-wheat	булочки столовые цельнопшеничные
+fdc:172735	Rolls, french	булочки французские
+fdc:172736	Rolls, hamburger or hotdog, plain	булочки для гамбургеров
+fdc:172737	Rolls, hamburger or hotdog, mixed-grain	булочки для гамбургеров мультизерновые
+fdc:172738	Sweet rolls, cinnamon, refrigerated dough with frosting	булочки с корицей из охлаждённого теста с глазурью
+fdc:172739	Sweet rolls, cinnamon, refrigerated dough with frosting, baked	булочки с корицей из охлаждённого теста с глазурью печёные
+fdc:172740	Taco shells, baked	коржи для тако запечённые
+fdc:172741	Toaster pastries, brown-sugar-cinnamon	пирожные тостовые с коричневым сахаром и корицей
+fdc:172742	Wonton wrappers (includes egg roll wrappers)	обёртки для вонтонов
+fdc:172743	Leavening agents, baking powder, double-acting, sodium aluminum sulfate	разрыхлитель двойного действия с алюминиевым квасцом
+fdc:172744	Leavening agents, baking powder, double-acting, straight phosphate	разрыхлитель двойного действия фосфатный
+fdc:172745	Leavening agents, baking powder, low-sodium	разрыхлитель с пониженным натрием
+fdc:172746	Bread, crumbs, dry, grated, seasoned	панировочные сухари с приправой
+fdc:172747	Cookies, oatmeal, prepared from recipe, without raisins	печенье овсяное домашнее без изюма
+fdc:172748	Cookies, chocolate chip, prepared from recipe, made with butter	печенье с шоколадной крошкой домашнее на масле
+fdc:172749	Bread, protein, (includes gluten), toasted	хлеб белковый тостовый
+fdc:172750	Rolls, dinner, plain, prepared from recipe, made with low fat (2%) milk	булочки столовые домашние на молоке 2%
+fdc:172751	Pie crust, cookie-type, prepared from recipe, graham cracker, chilled	основа для пирога из крекера охлаждённая
+fdc:172752	Crackers, matzo, egg and onion	маца яичная с луком
+fdc:172753	Pie crust, cookie-type, prepared from recipe, vanilla wafer, chilled	основа для пирога из ванильных вафель охлаждённая
+fdc:172754	Pie crust, standard-type, prepared from recipe, unbaked	основа для пирога домашняя незапечённая
+fdc:172755	Bread, cornbread, dry mix, unenriched (includes corn muffin mix)	хлеб кукурузный сухая смесь необогащённая
+fdc:172756	Bread, pita, white, unenriched	пита белая необогащённая
+fdc:172757	Bread, raisin, unenriched	хлеб с изюмом необогащённый
+fdc:172758	Bread, white, commercially prepared, low sodium, no salt	хлеб белый с пониженным натрием без соли
+fdc:172759	Cookies, butter, commercially prepared, unenriched	печенье сдобное необогащённое
+fdc:172760	Cookies, chocolate chip, commercially prepared, regular, higher fat, unenriched	печенье с шоколадной крошкой жирное необогащённое
+fdc:172761	Cookies, ladyfingers, without lemon juice and rind	печенье савоярди
+fdc:172762	Crackers, melba toast, plain, without salt	сухари мельба без соли
+fdc:172763	Crackers, whole-wheat, low salt	крекеры цельнопшеничные малосолёные
+fdc:172764	Danish pastry, cinnamon, unenriched	сдоба датская с корицей необогащённая
+fdc:172765	Danish pastry, fruit, unenriched (includes apple, cinnamon, raisin, strawberry)	сдоба датская фруктовая необогащённая
+fdc:172766	Bread, white, commercially prepared, toasted, low sodium no salt	хлеб белый тостовый с пониженным натрием без соли
+fdc:172767	Danish pastry, lemon, unenriched	сдоба датская лимонная необогащённая
+fdc:172768	English muffins, plain, unenriched, with calcium propionate (includes sourdough)	маффины английские необогащённые
+fdc:172769	Quail, breast, meat only, raw	перепел грудка без кожи сырая
+fdc:172770	Chicken, broiler, rotisserie, BBQ, wing, meat and skin	куриное крыло с гриля с кожей
+fdc:172771	Ruffed Grouse, breast meat, skinless, raw	рябчик грудка без кожи сырая
+fdc:172772	Emu, ground, raw	фарш эму сырой
+fdc:172773	Emu, ground, cooked, pan-broiled	фарш эму жареный
+fdc:172774	Emu, full rump, cooked, broiled	эму огузок на гриле
+fdc:172775	Emu, inside drum, raw	эму внутренняя голень сырая
+fdc:172776	Emu, inside drums, cooked, broiled	эму внутренняя голень на гриле
+fdc:172777	Emu, outside drum, raw	эму наружная голень сырая
+fdc:172778	Emu, oyster, raw	эму вырезка-медальон сырая
+fdc:172779	Ostrich, inside leg, raw	страус внутренняя нога сырая
+fdc:172780	Ostrich, inside leg, cooked	страус внутренняя нога приготовленная
+fdc:172781	Ostrich, inside strip, raw	страус внутренний ломтик сырой
+fdc:172782	Ostrich, inside strip, cooked	страус внутренний ломтик приготовленный
+fdc:172783	Ostrich, oyster, cooked	страус вырезка-медальон приготовленная
+fdc:172784	Ostrich, round, raw	страус огузок сырой
+fdc:172785	Ostrich, tenderloin, raw	страус вырезка сырая
+fdc:172786	Ostrich, tip trimmed, raw	страус кончик зачищенный сырой
+fdc:172787	Turkey, ground, fat free, raw	индюшиный фарш обезжиренный сырой
+fdc:172788	Turkey, ground, fat free, pan-broiled crumbles	индюшиный фарш обезжиренный обжаренный
+fdc:172789	Turkey, ground, fat free, patties, broiled	котлеты из индюшиного фарша обезжиренные на гриле
+fdc:172790	Turkey, ground, 93% lean, 7% fat, raw	индюшиный фарш 93% постности сырой
+fdc:172791	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	индюшиный фарш 93% постности обжаренный
+fdc:172792	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, braised	куриная голень без кожи тушёная
+fdc:172793	Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised	куриное бедро без кожи тушёное
+fdc:172794	Chicken, skin (drumsticks and thighs), cooked, braised	куриная кожа тушёная
+fdc:172795	Chicken, skin (drumsticks and thighs), raw	куриная кожа сырая
+fdc:172796	Chicken, dark meat, drumstick, meat only, with added solution, cooked, roasted	куриная голень без кожи с рассолом запечённая
+fdc:172797	Chicken, dark meat, drumstick, meat only, with added solution, cooked, braised	куриная голень без кожи с рассолом тушёная
+fdc:172798	Chicken, dark meat, thigh, meat only, with added solution, cooked, braised	куриное бедро без кожи с рассолом тушёное
+fdc:172799	Chicken, dark meat, thigh, meat only, with added solution, raw	куриное бедро без кожи с рассолом сырое
+fdc:172800	Chicken, dark meat, drumstick, meat and skin, with added solution, raw	куриная голень с кожей с рассолом сырая
+fdc:172801	Chicken, dark meat, drumstick, meat and skin, with added solution, cooked, roasted	куриная голень с кожей с рассолом запечённая
+fdc:172802	Chicken, dark meat, thigh, meat and skin, with added solution, cooked, braised	куриное бедро с кожей с рассолом тушёное
+fdc:172803	Chicken, dark meat, thigh, meat and skin, with added solution, raw	куриное бедро с кожей с рассолом сырое
+fdc:172804	Turkey from whole, light meat, meat only, with added solution, raw	индейка белое мясо без кожи с рассолом сырая
+fdc:172805	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	индейка белое мясо без кожи с рассолом запечённая
+fdc:172806	Turkey, skin from whole (light and dark), with added solution, raw	индюшиная кожа с рассолом сырая
+fdc:172807	Turkey, skin from whole, (light and dark), with added solution, roasted	индюшиная кожа с рассолом запечённая
+fdc:172808	Turkey, whole, meat only, with added solution, raw	индейка целая без кожи с рассолом сырая
+fdc:172809	Turkey, whole, meat only, with added solution, roasted	индейка целая без кожи с рассолом запечённая
+fdc:172810	Turkey, whole, meat and skin, with added solution, raw	индейка целая с кожей с рассолом сырая
+fdc:172811	Turkey, whole, meat and skin, with added solution, roasted	индейка целая с кожей с рассолом запечённая
+fdc:172812	Turkey, retail parts, wing, meat only, cooked, roasted	крыло индейки без кожи запечённое
+fdc:172813	Turkey, skin, from retail parts, from dark meat, raw	индюшиная кожа тёмного мяса сырая
+fdc:172814	Turkey, skin, from retail parts, from dark meat, cooked, roasted	индюшиная кожа тёмного мяса запечённая
+fdc:172815	Turkey, retail parts, drumstick, meat only, raw	голень индейки без кожи сырая
+fdc:172816	Turkey, breast, from whole bird, meat only, with added solution, raw	грудка индейки без кожи с рассолом сырая
+fdc:172817	Turkey, retail parts, thigh, meat only, cooked, roasted	бедро индейки без кожи запечённое
+fdc:172818	Turkey, retail parts, drumstick, meat only, cooked, roasted	голень индейки без кожи запечённая
+fdc:172819	Sauce, plum, ready-to-serve	соус сливовый
+fdc:172820	Sauce, pizza, canned, ready-to-serve	соус для пиццы консервированный
+fdc:172821	Soup, tomato bisque, canned, condensed	суп томаты-биск концентрат консервированный
+fdc:172822	Soup, tomato, canned, condensed	суп томатный концентрат консервированный
+fdc:172823	Soup, stock, beef, home-prepared	бульон говяжий домашний
+fdc:172824	Soup, stock, chicken, home-prepared	бульон куриный домашний
+fdc:172825	Soup, stock, fish, home-prepared	бульон рыбный домашний
+fdc:172826	Sauce, hoisin, ready-to-serve	соус хойсин
+fdc:172827	Soup, cream of mushroom, canned, condensed, reduced sodium	суп-пюре грибной концентрат с пониженным натрием
+fdc:172828	Soup, chicken broth, less/reduced sodium, ready to serve	куриный бульон с пониженным натрием готовый
+fdc:172829	Soup, beef broth, less/reduced sodium, ready to serve	говяжий бульон с пониженным натрием готовый
+fdc:172830	Sauce, teriyaki, ready-to-serve, reduced sodium	соус терияки с пониженным натрием
+fdc:172831	Soup, cream of asparagus, canned, prepared with equal volume milk	суп-пюре спаржевый разведённый молоком
+fdc:172832	Soup, chicken vegetable with potato and cheese, chunky, ready-to-serve	суп куриный с овощами картофелем и сыром с кусочками
+fdc:172833	Soup, cream of celery, canned, prepared with equal volume milk	суп-пюре сельдерейный разведённый молоком
+fdc:172834	Soup, cheese, canned, prepared with equal volume milk	суп сырный разведённый молоком
+fdc:172835	Soup, oyster stew, canned, prepared with equal volume milk	суп устричный разведённый молоком
+fdc:172836	Soup, pea, green, canned, prepared with equal volume milk	суп гороховый разведённый молоком
+fdc:172837	Soup, cream of potato, canned, prepared with equal volume milk	суп-пюре картофельный разведённый молоком
+fdc:172838	Soup, cream of shrimp, canned, prepared with equal volume low fat (2%) milk	суп-пюре креветочный разведённый молоком 2%
+fdc:172839	Soup, HEALTHY CHOICE Chicken and Rice Soup, canned	суп куриный с рисом Healthy Choice
+fdc:172840	Soup, HEALTHY CHOICE Garden Vegetable Soup, canned	суп овощной Healthy Choice
+fdc:172841	CAMPBELL'S, Cream of Mushroom Soup, condensed	суп-пюре грибной концентрат Campbell's
+fdc:172842	Soup, tomato bisque, canned, prepared with equal volume milk	суп томаты-биск разведённый молоком
+fdc:172843	Soup, black bean, canned, prepared with equal volume water	суп из чёрной фасоли разведённый водой
+fdc:172844	Soup, bean with pork, canned, prepared with equal volume water	суп фасолевый со свининой разведённый водой
+fdc:172845	Soup, bean with frankfurters, canned, prepared with equal volume water	суп фасолевый с сосисками разведённый водой
+fdc:172846	Soup, beef noodle, canned, prepared with equal volume water	суп говяжий с лапшой разведённый водой
+fdc:172847	Soup, cream of celery, canned, prepared with equal volume water	суп-пюре сельдерейный разведённый водой
+fdc:172848	Soup, chicken gumbo, canned, prepared with equal volume water	суп куриный гамбо разведённый водой
+fdc:172849	Soup, chicken noodle, canned, prepared with equal volume water	суп куриный с лапшой разведённый водой
+fdc:172850	Soup, chicken with rice, canned, prepared with equal volume water	суп куриный с рисом разведённый водой
+fdc:172851	Soup, chili beef, canned, prepared with equal volume water	суп чили с говядиной разведённый водой
 fdc:172865	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	белое мясо индейки запечённое с рассолом
 fdc:172891	Soup, cream of asparagus, canned, prepared with equal volume milk	суп-пюре спаржевый на молоке
 fdc:173023	Figs, canned, light syrup pack, solids and liquids	инжир консервированный в сиропе
