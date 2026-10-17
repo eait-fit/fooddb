@@ -6622,7 +6622,7 @@ ciqual:18033	Carbonated beverage or fruit soft drink, fruit content < 10% , with
 ciqual:18034	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	refresco de frutas con azúcar y edulcorantes (10-50 % de fruta)
 ciqual:18035	Lemonade, no added sugars, with sweetener(s)	limonada sin azúcar
 ciqual:18037	Cola, with sugar(s) and with sweetener(s)	cola con azúcar y edulcorantes
-ciqual:18039	Lemonade with syrupwith sugar(s)	limonada con sirope con azúcar
+ciqual:18039	Lemonade with syrupwith sugar(s)	limonada con sirope azucarado
 ciqual:18041	Coconut milk	leche de coco
 ciqual:18044	Water, mineral (average)	agua mineral
 ciqual:18045	Mineral still water, bottled (average)	agua mineral sin gas
@@ -6652,11 +6652,11 @@ ciqual:18076	Tea leaf	té en hoja
 ciqual:18078	Carbonated beverage or soft drink, without fruit, with sugar(s) and with sweetener(s)	refresco aromatizado con azúcar y edulcorantes
 ciqual:18100	Cocoa powder, no added sugars, powder, instant	cacao en polvo soluble sin azúcar
 ciqual:18101	Cocoa or chocolate powder, for beverages, with sugar(s)	cacao en polvo para bebidas con azúcar
-ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	cacao en polvo malteado con azúcar con vitaminas y minerales
-ciqual:18104	Instant cocoa or chocolate beverage, with sugar(s), ready-to-drink (reconstituted with standard semi-skimmed milk)	cacao soluble con azúcar preparado con leche
-ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	cacao soluble con azúcar con vitaminas preparado con leche
+ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	cacao en polvo malteado con azúcar, vitaminas y minerales
+ciqual:18104	Instant cocoa or chocolate beverage, with sugar(s), ready-to-drink (reconstituted with standard semi-skimmed milk)	cacao soluble azucarado preparado con leche
+ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	cacao soluble azucarado con vitaminas preparado con leche
 ciqual:18107	Almond drink, plain, no added sugars, not fortified, prepacked	bebida de almendras sin azúcar
-ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	bebida de almendras con azúcar con calcio
+ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	bebida de almendras con azúcar y calcio
 ciqual:18111	Almond drink, prepacked (average)	bebida de almendras
 ciqual:18112	Plant-based drink, prepacked (average)	bebida vegetal
 ciqual:18113	Soy drink, prepacked (average)	bebida de soja
@@ -6670,12 +6670,12 @@ ciqual:18160	Coffee with milk or cappuccino, powder, instant	café con leche sol
 ciqual:18161	Instant chicory, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	achicoria soluble sin azúcar preparada con leche
 ciqual:18162	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with water)	mezcla de achicoria y café soluble sin azúcar preparada con agua
 ciqual:18163	Coffee with milk or cappuccino with chocolate, powder, instant	capuchino con chocolate soluble
-ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	cacao en polvo para bebidas con azúcar con vitaminas y minerales
-ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	cacao en polvo para bebidas con azúcar con vitaminas
+ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	cacao en polvo para bebidas con azúcar, vitaminas y minerales
+ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	cacao en polvo para bebidas con azúcar y vitaminas
 ciqual:18220	Lemon speciality to be diluted, for beverages or culinary use, no added sugars	concentrado de limón para diluir sin azúcar
-ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	bebida de frutas con azúcar refrigerada con vitaminas (<10 % de fruta)
-ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	bebida de frutas con azúcar con vitaminas (10-50 % de fruta)
-ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	bebida de frutas con puré tipo smoothie con vitaminas
+ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	bebida de frutas refrigerada con azúcar y vitaminas (<10 % de fruta)
+ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	bebida de frutas con azúcar y vitaminas (10-50 % de fruta)
+ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	bebida de frutas tipo smoothie con puré y vitaminas
 ciqual:18297	Still soft drink, fruit content >= 50%, room temperature, fortified with vitamin(s)	bebida de frutas con vitaminas (≥50 % de fruta)
 ciqual:18298	Still soft drink, fruit content >= 50%, room temperature	bebida de frutas (≥50 % de fruta)
 ciqual:18299	Still soft drink, lemonade, fruit content >= 10% and < 50%, with sugar(s)	limonada sin gas con azúcar
@@ -6736,7 +6736,7 @@ ciqual:19044	Milk powder, semi-skimmed	leche en polvo semidesnatada
 ciqual:19050	Milk, skimmed, UHT	leche desnatada UHT
 ciqual:19051	Milk, skimmed, pasteurised	leche desnatada pasteurizada
 ciqual:19054	Milk powder, skimmed	leche en polvo desnatada
-ciqual:19060	Milk, semi-skimmed, UHT, reduced lactose	молоко 1,5 % УВТ с пониженной лактозой
+ciqual:19060	Milk, semi-skimmed, UHT, reduced lactose	leche semidesnatada UHT baja en lactosa
 ciqual:19114	Vanilla flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	bebida láctea de vainilla con azúcar y vitamina D
 ciqual:19116	Coffee flavoured milk beverage, with sugar(s), partially skimmed fortified with vitamin(s) and/or mineral(s)	bebida láctea de café con azúcar y vitaminas
 ciqual:19117	Coffee flavoured milk beverage, with sugar(s), partially skimmed, not fortified	bebida láctea de café con azúcar
@@ -6772,16 +6772,16 @@ ciqual:19508	Fermented milk drink, flavoured, with sugar(s)	bebida de leche ferm
 ciqual:19516	Fermented milk drink, flavoured, with sugar(s), with L Casei	bebida de leche fermentada saborizada con azúcar y L. casei
 ciqual:19534	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D	bebida de leche fermentada saborizada con azúcar y vitamina D
 ciqual:19535	Fermented milk drink, with fruits, with sugar(s)	bebida de leche fermentada con fruta azucarada
-ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	bebida de leche fermentada con fruta azucarada con vitamina D
+ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	bebida de leche fermentada azucarada con fruta y vitamina D
 ciqual:19538	Fermented milk drink, plain, with sugar(s), with L Casei	bebida de leche fermentada natural azucarada con L. casei
 ciqual:19539	Fermented milk, yogurt type with bifidus, flavoured, with sugar(s)	yogur con bífidus saborizado azucarado
-ciqual:19541	Fermented milk, yogurt type with bifidus, with fruits, 0% fat, with sweetener(s)	yogur con bífidus desnatado con fruta sin azúcar
-ciqual:19542	Fermented milk, yogurt type with bifidus, with fruits, with sugar(s)	yogur con bífidus con fruta azucarado
-ciqual:19543	Fermented milk, yogurt type with sterol esters, with fruits, 0% fat, with sweetener(s)	yogur con esteroles desnatado con fruta sin azúcar
+ciqual:19541	Fermented milk, yogurt type with bifidus, with fruits, 0% fat, with sweetener(s)	yogur de fruta con bífidus desnatado sin azúcar
+ciqual:19542	Fermented milk, yogurt type with bifidus, with fruits, with sugar(s)	yogur de fruta con bífidus azucarado
+ciqual:19543	Fermented milk, yogurt type with sterol esters, with fruits, 0% fat, with sweetener(s)	yogur de fruta con esteroles desnatado sin azúcar
 ciqual:19544	Fermented milk, yogurt type with bifidus, plain, 0% fat	yogur con bífidus desnatado natural
 ciqual:19546	Fermented milk, yogurt type with bifidus, plain	yogur con bífidus natural
 ciqual:19550	Yogurt, Greek-style, ewe's milk	yogur griego de leche de oveja
-ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	bebida de leche fermentada saborizada con azúcar con vitamina D y L. casei
+ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	bebida de leche fermentada saborizada con azúcar, vitamina D y L. casei
 ciqual:19552	Yogurt, Greek-style, on a fruit layer, with sugar(s)	yogur griego sobre capa de fruta azucarado
 ciqual:19553	Yogurt, ewe's milk, flavoured, with sugar(s)	yogur de leche de oveja azucarado
 ciqual:19554	Yogurt, ewe's milk, plain, around 3% fat	yogur de leche de oveja natural 3 %
@@ -6797,14 +6797,14 @@ ciqual:19578	Yogurt or fermented milk, flavoured, with sugar(s), fortified with 
 ciqual:19579	Yogurt or fermented milk, with cereals	yogur con cereales
 ciqual:19580	Yogurt or fermented milk, with chocolate flakes, with cream, with sugar(s)	yogur con virutas de chocolate y nata azucarado
 ciqual:19581	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s)	yogur desnatado con fruta sin azúcar
-ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	yogur desnatado con fruta sin azúcar con vitamina D
+ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	yogur desnatado con fruta y vitamina D sin azúcar
 ciqual:19584	Mascarpone cheese, from cow's milk	mascarpone
 ciqual:19585	Ricotta cheese, from cow's milk	queso ricotta
 ciqual:19587	Yogurt or fermented milk, with fruits, with sugar(s)	yogur con fruta azucarado
 ciqual:19589	Yogurt or fermented milk, with fruits, with cream, with sugar(s)	yogur con fruta y nata azucarado
 ciqual:19590	Mozzarella cheese, from cow's milk	mozzarella
 ciqual:19591	Mozzarella cheese, from buffala's milk	mozzarella di bufala
-ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	yogur con fruta azucarado con vitamina D
+ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	yogur azucarado con fruta y vitamina D
 ciqual:19593	Yogurt or fermented milk, plain	yogur natural
 ciqual:19594	Yogurt or fermented milk, plain, 0% fat	yogur desnatado natural
 ciqual:19596	Yogurt or fermented milk, plain, 0% fat, fortified with vitamin D	yogur desnatado natural con vitamina D
@@ -6848,12 +6848,12 @@ ciqual:19684	Egg custard, refrigerated	huevos con leche
 ciqual:19685	Panna cotta, with fruit preparation or caramel, refrigerated	panna cotta
 ciqual:19686	Dairy specialty or milk-based desert, flavoured, reduced fat, with sugar(s) and sweetener(s), refrigerated	postre lácteo ligero saborizado azucarado
 ciqual:19688	Rum baba, refrigerated	babá al ron
-ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado con fruta azucarado con vitamina D
-ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre de soja con fruta azucarado con calcio
+ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado azucarado con fruta y vitamina D
+ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre de soja azucarado con fruta y calcio
 ciqual:19693	Soy dessert, plain, no added sugars, not fortified, fermented, refrigerated	postre de soja natural sin azúcar
 ciqual:19694	Soy dessert, plain, no added sugars, fortified with calcium, fermented, refrigerated	postre de soja natural sin azúcar con calcio
 ciqual:19695	Soy dessert, with fruits, with sugar(s), not fortified, fermented, refrigerated	postre de soja con fruta azucarado
-ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	postre de soja con almendras azucarado con vitaminas y minerales
+ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	postre de soja azucarado con almendras, vitaminas y minerales
 ciqual:19697	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado saborizado azucarado con vitamina D
 ciqual:19698	Tiramisu with coffee, refrigerated	tiramisú de café
 ciqual:19699	Tiramisu with fruits, refrigerated	tiramisú de frutas
@@ -6869,7 +6869,7 @@ ciqual:19715	Quark or dairy specialty, flavoured, 2-3% fat, with sugar(s)	queso 
 ciqual:19716	Quark, plain, 2-3% fat, with sugar(s)	queso quark 2-3 % azucarado
 ciqual:19718	Quark or dairy specialty, flavoured, 7-8% fat, with sugar(s)	queso quark 7-8 % saborizado azucarado
 ciqual:19719	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s)	petit suisse con fruta 2-3 % azucarado
-ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	petit suisse con fruta 2-3 % azucarado con vitamina D
+ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	petit suisse 2-3 % azucarado con fruta y vitamina D
 ciqual:19721	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s)	petit suisse saborizado 2-3 % azucarado
 ciqual:19722	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s), fortified with vitamin D	petit suisse saborizado 2-3 % azucarado con vitamina D
 ciqual:19723	Yogurt or fermented milk, plain, fortified with vitamin D	yogur natural con vitamina D
@@ -6994,7 +6994,7 @@ ciqual:2011	Multifruit juice, orange base, multivitamin	zumo multifruta con base
 ciqual:20111	Sorrel, raw	acedera cruda
 ciqual:20114	Oyster mushroom, raw	setas ostra crudas
 ciqual:20116	White cabbage, raw	col blanca cruda
-ciqual:20118	Fennel, boiled/cooked in water	hinojo cocido
+ciqual:20118	Fennel, boiled/cooked in water	hinojo hervido
 ciqual:20119	Tomato, green, raw	tomate verde crudo
 ciqual:2012	Orange juice, from concentrate	zumo de naranja de concentrado
 ciqual:20123	Lettuce, var. batavia, raw	lechuga batavia cruda
@@ -7318,10 +7318,10 @@ ciqual:20918	Syrup for canned fruits	sirope para fruta en conserva
 ciqual:20919	Light syrup for canned fruits	sirope ligero para fruta en conserva
 ciqual:20921	Soy dessert, flavoured, with sugar(s), not fortified, refrigerated	postre de soja saborizado azucarado
 ciqual:20922	Plant-based dessert (almond, oat, hemp, coconut, rice), flavoured, with sugar(s), not fortified, refrigerated	postre vegetal sin soja saborizado azucarado
-ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre vegetal sin soja con fruta azucarado con calcio
+ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre vegetal sin soja azucarado con fruta y calcio
 ciqual:20924	Light syrup for canned pears	sirope ligero para pera en conserva
 ciqual:20925	Soy dessert, flavoured, with sugar(s), fortified with calcium and vitamin D, refrigerated	postre de soja saborizado azucarado con calcio y vitamina D
-ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	postre de soja con fruta azucarado con calcio y vitamina D
+ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	postre de soja azucarado con fruta, calcio y vitamina D
 ciqual:20927	Plant-based dessert (almond, oat, hemp, coconut, rice), plain, no added sugars, not fortified, refrigerated	postre vegetal sin soja natural sin azúcar
 ciqual:20928	Plant-based dessert without soy, refrigerated (average)	postre vegetal sin soja
 ciqual:20929	Soy dessert, refrigerated (average)	postre de soja
@@ -7367,10 +7367,10 @@ ciqual:21517	Lamb, rib chop, raw	chuleta de costilla de cordero cruda
 ciqual:21518	Lamb, leg, grilled/pan-fried	pierna de cordero a la plancha
 ciqual:21519	Lamb, leg, braised	pierna de cordero estofada
 ciqual:21520	Lamb, saddle, lean, grilled/pan-fried	silla de cordero magra a la plancha
-ciqual:21521	Lamb, chop, raw (average)	chuletas de cordero crudas
+ciqual:21521	Lamb, chop, raw (average)	chuletas y costillas de cordero crudas
 ciqual:21522	Lamb, chop, cooked (average)	chuletas de cordero cocidas
 ciqual:21523	Lamb, meat, cooked (average)	carne de cordero cocida
-ciqual:21524	Lamb, chop, grilled/pan-fried (average)	chuletas de cordero a la plancha
+ciqual:21524	Lamb, chop, grilled/pan-fried (average)	chuletas de cordero a la parrilla
 ciqual:21525	Lamb, spare rib, raw	costillas de cordero crudas
 ciqual:21800	Kid meat, raw	cabrito crudo
 ciqual:21801	Kid meat, cooked	cabrito cocido
@@ -7405,7 +7405,7 @@ ciqual:23006	Sponge cake with chocolate with or without cherry "black forest cak
 ciqual:23007	Sponge cake with fruit mousse	tarta con mousse de fruta
 ciqual:23008	Dessert, Opera cake type	tarta ópera
 ciqual:23009	Sponge sandwich cake filled and topped with strawberries or raspberries	tarta fraisier
-ciqual:23021	Rum baba, from bakery	babá al ron
+ciqual:23021	Rum baba, from bakery	babá al ron artesano
 ciqual:23022	Canelé cake	canelé
 ciqual:23023	Kouign amann, Buttered and caramelized milkbread cake, prepacked	kouign amann
 ciqual:23024	Macaroon filled with jam or cream	macarrón relleno de mermelada o crema
@@ -7505,7 +7505,7 @@ ciqual:23853	Wafer biscuit, crunchy (thin or dried), plain or with sugar(s), pre
 ciqual:23880	Doughnut, plain, sprinkled with sugar	donut con azúcar
 ciqual:23881	Doughnut filled with fruit filling (e.g. jam), prepacked-> ARCHIVE	donut con relleno de fruta
 ciqual:23885	Doughnut filled or covered with chocolate or with chocolate and hazelut paste, prepacked	donut con chocolate
-ciqual:23900	Pastry (average)	bollería
+ciqual:23900	Pastry (average)	pastelería
 ciqual:23909	Fruit cake (candied fruits and/or raisins), prepacked	plum cake con fruta escarchada y pasas
 ciqual:23925	Marble cake, prepacked	bizcocho marmolado
 ciqual:23935	Soft cake, plain, prepacked	bizcocho sencillo
@@ -7528,7 +7528,7 @@ ciqual:24008	Biscuit (cookie) filled with fruits, reduced fat	galleta rellena de
 ciqual:24009	Speculoos biscuit	galleta speculoos
 ciqual:24010	Biscuit (cookie), with vegetal fat	galleta con grasa vegetal
 ciqual:24011	Biscuit (cookie), assortment	galletas surtidas
-ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	galleta con chocolate sin azúcar con vitaminas
+ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	galleta con chocolate y vitaminas sin azúcar
 ciqual:24013	Biscuit (cookie), no added sugars and with sweetener(s)	galleta sin azúcar
 ciqual:24014	Biscuit (cookie), with a chocolate bar covering, milk filling	galleta bañada en chocolate con relleno de leche
 ciqual:24015	Butter biscuit (cookie)	galleta de mantequilla
@@ -7539,7 +7539,7 @@ ciqual:24019	Biscuit, with chocolate, gluten free	galleta con chocolate sin glut
 ciqual:24020	Biscuit (cookie) from whole grain cereals	galleta integral
 ciqual:24021	Butter biscuit (cookie), whole wheat	galleta de mantequilla integral
 ciqual:24028	Biscuit (cookie), with sesame, not fortified	galleta con sésamo
-ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	galleta con sésamo con vitaminas y minerales
+ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	galleta con sésamo, vitaminas y minerales
 ciqual:24031	Biscuit (cookie), without chocolate, reduced fat	galleta baja en grasa
 ciqual:24034	Breakfast biscuit (cookie), without chocolate, not fortified	galleta de desayuno
 ciqual:24035	Breakfast biscuit (cookie), reduced sugar	galleta de desayuno baja en azúcar
@@ -7548,7 +7548,7 @@ ciqual:24037	Biscuit (cookie) filled with fruit paste or fruit puree	galleta rel
 ciqual:24038	Biscuit (cookie), with chocolate covering	galleta con cobertura de chocolate
 ciqual:24040	Breakfast biscuit (cookie), with chocolate, not fortified	galleta de desayuno con chocolate
 ciqual:24041	Breakfast biscuit (cookie), fortified with vitamins and minerals	galleta de desayuno con vitaminas y minerales
-ciqual:24042	Biscuit (cookie) with cereals, fortified with vitamins and minerals	galleta con cereales con vitaminas y minerales
+ciqual:24042	Biscuit (cookie) with cereals, fortified with vitamins and minerals	galleta con cereales, vitaminas y minerales
 ciqual:24048	Biscuit (cookie), shortbread, commercial, whith vegetal fat	galleta tipo sablé con grasa vegetal
 ciqual:24049	Biscuit shortbread, with butter	galleta tipo sablé con mantequilla
 ciqual:24050	Biscuit shortbread, with butter and chocolate	galleta tipo sablé con mantequilla y chocolate
@@ -7579,7 +7579,7 @@ ciqual:24614	Biscuit (cookie), hard, with almonds (e.g. canistrelli)	galleta dur
 ciqual:24615	Biscuit (cookie), thin, with almonds	galleta fina de almendra
 ciqual:24616	Biscuit (cookie), thin, lemon or orange lavour	galleta fina de limón o naranja
 ciqual:24630	Madeleine cake, pure butter, prepacked	magdalenas
-ciqual:24631	Madeleine cake, with chocolate, prepacked	magdalena con chocolate
+ciqual:24631	Madeleine cake, with chocolate, prepacked	madeleine con chocolate
 ciqual:24632	Madeleine cake, prepacked	magdalena clásica
 ciqual:24654	Biscuit, oat, with chocolate covering	galleta de avena con chocolate
 ciqual:24655	Biscuit, oat, plain	galleta de avena

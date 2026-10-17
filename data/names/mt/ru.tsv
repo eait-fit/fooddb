@@ -6622,7 +6622,7 @@ ciqual:18033	Carbonated beverage or fruit soft drink, fruit content < 10% , with
 ciqual:18034	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	напиток фруктовый газированный с сахаром и подсластителями (10-50 % фруктов)
 ciqual:18035	Lemonade, no added sugars, with sweetener(s)	лимонад без сахара
 ciqual:18037	Cola, with sugar(s) and with sweetener(s)	кола с сахаром и подсластителями
-ciqual:18039	Lemonade with syrupwith sugar(s)	лимонад с сиропом с сахаром
+ciqual:18039	Lemonade with syrupwith sugar(s)	лимонад с сахарным сиропом
 ciqual:18041	Coconut milk	молоко кокосовое
 ciqual:18044	Water, mineral (average)	вода минеральная
 ciqual:18045	Mineral still water, bottled (average)	вода минеральная негазированная
@@ -6652,11 +6652,11 @@ ciqual:18076	Tea leaf	чай листовой
 ciqual:18078	Carbonated beverage or soft drink, without fruit, with sugar(s) and with sweetener(s)	напиток газированный ароматизированный с сахаром и подсластителями
 ciqual:18100	Cocoa powder, no added sugars, powder, instant	какао-порошок растворимый без сахара
 ciqual:18101	Cocoa or chocolate powder, for beverages, with sugar(s)	какао-порошок для напитков с сахаром
-ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	какао-порошок солодовый с сахаром с витаминами и минералами
+ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	какао-порошок солодовый с сахаром, витаминами и минералами
 ciqual:18104	Instant cocoa or chocolate beverage, with sugar(s), ready-to-drink (reconstituted with standard semi-skimmed milk)	какао напиток растворимый с сахаром готовый на молоке
-ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	какао напиток растворимый с сахаром с витаминами готовый на молоке
+ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	какао напиток растворимый с сахаром и витаминами готовый на молоке
 ciqual:18107	Almond drink, plain, no added sugars, not fortified, prepacked	напиток миндальный без сахара
-ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	напиток миндальный с сахаром с кальцием
+ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	напиток миндальный с сахаром и кальцием
 ciqual:18111	Almond drink, prepacked (average)	напиток миндальный
 ciqual:18112	Plant-based drink, prepacked (average)	напиток растительный
 ciqual:18113	Soy drink, prepacked (average)	напиток соевый
@@ -6670,19 +6670,19 @@ ciqual:18160	Coffee with milk or cappuccino, powder, instant	кофе с мол�
 ciqual:18161	Instant chicory, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	цикорий растворимый без сахара готовый на молоке
 ciqual:18162	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with water)	смесь цикория и кофе растворимая без сахара готовая на воде
 ciqual:18163	Coffee with milk or cappuccino with chocolate, powder, instant	капучино с шоколадом растворимый
-ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	какао-порошок для напитков с сахаром с витаминами и минералами
-ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	какао-порошок для напитков с сахаром с витаминами
+ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	какао-порошок для напитков с сахаром, витаминами и минералами
+ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	какао-порошок для напитков с сахаром и витаминами
 ciqual:18220	Lemon speciality to be diluted, for beverages or culinary use, no added sugars	лимонный концентрат для разведения без сахара
-ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	напиток фруктовый с сахаром охлаждённый с витаминами (<10 % фруктов)
-ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	напиток фруктовый с сахаром с витаминами (10-50 % фруктов)
-ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	напиток фруктовый с пюре типа смузи с витаминами
+ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	напиток фруктовый охлаждённый с сахаром и витаминами (<10 % фруктов)
+ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	напиток фруктовый с сахаром и витаминами (10-50 % фруктов)
+ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	напиток фруктовый типа смузи с витаминами
 ciqual:18297	Still soft drink, fruit content >= 50%, room temperature, fortified with vitamin(s)	напиток фруктовый с витаминами (≥50 % фруктов)
 ciqual:18298	Still soft drink, fruit content >= 50%, room temperature	напиток фруктовый (≥50 % фруктов)
 ciqual:18299	Still soft drink, lemonade, fruit content >= 10% and < 50%, with sugar(s)	лимонад негазированный с сахаром
 ciqual:18300	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, no added sugars, refrigerated	напиток фруктовый с пюре типа смузи без сахара охлаждённый
 ciqual:18304	Still soft drink, fruit content >= 10% and < 50%, reduced sugar	напиток фруктовый с пониженным сахаром (10-50 % фруктов)
 ciqual:18305	Still soft drink, fruit content >= 10% and < 50%, no added sugars	напиток фруктовый без сахара (10-50 % фруктов)
-ciqual:18306	Aloe vera beverage, with sugar(s)	напиток с алоэ вера с сахаром
+ciqual:18306	Aloe vera beverage, with sugar(s)	напиток из алоэ вера с сахаром
 ciqual:18309	Still soft drink, fruit content unknown, with sugar(s)	напиток фруктовый с сахаром
 ciqual:18315	Fruit and vegetable beverage	напиток из фруктов и овощей
 ciqual:18316	Water kefir or Tibicos, prepacked	водный кефир
@@ -6737,13 +6737,13 @@ ciqual:19050	Milk, skimmed, UHT	молоко обезжиренное УВТ
 ciqual:19051	Milk, skimmed, pasteurised	молоко обезжиренное пастеризованное
 ciqual:19054	Milk powder, skimmed	молоко сухое обезжиренное
 ciqual:19060	Milk, semi-skimmed, UHT, reduced lactose	молоко 1,5 % УВТ с пониженной лактозой
-ciqual:19114	Vanilla flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток ванильный с сахаром с витамином D
-ciqual:19116	Coffee flavoured milk beverage, with sugar(s), partially skimmed fortified with vitamin(s) and/or mineral(s)	молочный напиток кофейный с сахаром с витаминами
+ciqual:19114	Vanilla flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток ванильный с сахаром и витамином D
+ciqual:19116	Coffee flavoured milk beverage, with sugar(s), partially skimmed fortified with vitamin(s) and/or mineral(s)	молочный напиток кофейный с сахаром и витаминами
 ciqual:19117	Coffee flavoured milk beverage, with sugar(s), partially skimmed, not fortified	молочный напиток кофейный с сахаром
 ciqual:19118	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, not fortified	молочный напиток шоколадный с сахаром
-ciqual:19119	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamin(s) and/or mineral(s)	молочный напиток шоколадный с сахаром с витаминами
-ciqual:19120	Flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamins and/ormineral(s) (average)	молочный напиток ароматизированный с сахаром с витаминами
-ciqual:19127	Strawberry flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток клубничный с сахаром с витамином D
+ciqual:19119	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamin(s) and/or mineral(s)	молочный напиток шоколадный с сахаром и витаминами
+ciqual:19120	Flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamins and/ormineral(s) (average)	молочный напиток ароматизированный с сахаром и витаминами
+ciqual:19127	Strawberry flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток клубничный с сахаром и витамином D
 ciqual:19200	Goat milk, whole, UHT	молоко козье цельное УВТ
 ciqual:19201	Goat milk, half skimmed, UHT	молоко козье полуобезжиренное УВТ
 ciqual:19202	Goat milk, whole, raw	молоко козье цельное сырое
@@ -6769,10 +6769,10 @@ ciqual:19437	Cheese, breaded, to grill, prepacked, from goat's milk	сыр ко�
 ciqual:19500	Fermented milk drink, flavoured, with sweetener(s), reduced sugar, 0% fat, with L Casei	кисломолочный напиток обезжиренный без сахара с L. casei
 ciqual:19501	Quark, plain or with fruits (average)	творожок
 ciqual:19508	Fermented milk drink, flavoured, with sugar(s)	кисломолочный напиток ароматизированный с сахаром
-ciqual:19516	Fermented milk drink, flavoured, with sugar(s), with L Casei	кисломолочный напиток ароматизированный с сахаром с L. casei
-ciqual:19534	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D	кисломолочный напиток ароматизированный с сахаром с витамином D
+ciqual:19516	Fermented milk drink, flavoured, with sugar(s), with L Casei	кисломолочный напиток ароматизированный с сахаром и L. casei
+ciqual:19534	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D	кисломолочный напиток ароматизированный с сахаром и витамином D
 ciqual:19535	Fermented milk drink, with fruits, with sugar(s)	кисломолочный напиток с фруктами сладкий
-ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	кисломолочный напиток с фруктами сладкий с витамином D
+ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	кисломолочный напиток сладкий с фруктами и витамином D
 ciqual:19538	Fermented milk drink, plain, with sugar(s), with L Casei	кисломолочный напиток натуральный сладкий с L. casei
 ciqual:19539	Fermented milk, yogurt type with bifidus, flavoured, with sugar(s)	бифидойогурт ароматизированный сладкий
 ciqual:19541	Fermented milk, yogurt type with bifidus, with fruits, 0% fat, with sweetener(s)	бифидойогурт обезжиренный с фруктами без сахара
@@ -6781,7 +6781,7 @@ ciqual:19543	Fermented milk, yogurt type with sterol esters, with fruits, 0% fat
 ciqual:19544	Fermented milk, yogurt type with bifidus, plain, 0% fat	бифидойогурт обезжиренный натуральный
 ciqual:19546	Fermented milk, yogurt type with bifidus, plain	бифидойогурт натуральный
 ciqual:19550	Yogurt, Greek-style, ewe's milk	йогурт греческий из овечьего молока
-ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	кисломолочный напиток ароматизированный с сахаром с витамином D и L. casei
+ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	кисломолочный напиток ароматизированный с сахаром, витамином D и L. casei
 ciqual:19552	Yogurt, Greek-style, on a fruit layer, with sugar(s)	йогурт греческий на фруктовой подушке сладкий
 ciqual:19553	Yogurt, ewe's milk, flavoured, with sugar(s)	йогурт из овечьего молока сладкий
 ciqual:19554	Yogurt, ewe's milk, plain, around 3% fat	йогурт из овечьего молока натуральный 3 %
@@ -6797,14 +6797,14 @@ ciqual:19578	Yogurt or fermented milk, flavoured, with sugar(s), fortified with 
 ciqual:19579	Yogurt or fermented milk, with cereals	йогурт с злаками
 ciqual:19580	Yogurt or fermented milk, with chocolate flakes, with cream, with sugar(s)	йогурт с шоколадной крошкой и сливками сладкий
 ciqual:19581	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s)	йогурт обезжиренный с фруктами без сахара
-ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	йогурт обезжиренный с фруктами без сахара с витамином D
+ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	йогурт обезжиренный с фруктами и витамином D без сахара
 ciqual:19584	Mascarpone cheese, from cow's milk	маскарпоне
 ciqual:19585	Ricotta cheese, from cow's milk	рикотта
 ciqual:19587	Yogurt or fermented milk, with fruits, with sugar(s)	йогурт с фруктами сладкий
 ciqual:19589	Yogurt or fermented milk, with fruits, with cream, with sugar(s)	йогурт с фруктами и сливками сладкий
 ciqual:19590	Mozzarella cheese, from cow's milk	моцарелла
 ciqual:19591	Mozzarella cheese, from buffala's milk	моцарелла ди буфала
-ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	йогурт с фруктами сладкий с витамином D
+ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	йогурт сладкий с фруктами и витамином D
 ciqual:19593	Yogurt or fermented milk, plain	йогурт натуральный
 ciqual:19594	Yogurt or fermented milk, plain, 0% fat	йогурт обезжиренный натуральный
 ciqual:19596	Yogurt or fermented milk, plain, 0% fat, fortified with vitamin D	йогурт обезжиренный натуральный с витамином D
@@ -6848,12 +6848,12 @@ ciqual:19684	Egg custard, refrigerated	яично-молочный десерт
 ciqual:19685	Panna cotta, with fruit preparation or caramel, refrigerated	панна-котта
 ciqual:19686	Dairy specialty or milk-based desert, flavoured, reduced fat, with sugar(s) and sweetener(s), refrigerated	десерт молочный нежирный ароматизированный сладкий
 ciqual:19688	Rum baba, refrigerated	баба ромовая
-ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный с фруктами сладкий с витамином D
-ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт соевый с фруктами сладкий с кальцием
+ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный сладкий с фруктами и витамином D
+ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт соевый сладкий с фруктами и кальцием
 ciqual:19693	Soy dessert, plain, no added sugars, not fortified, fermented, refrigerated	десерт соевый натуральный без сахара
 ciqual:19694	Soy dessert, plain, no added sugars, fortified with calcium, fermented, refrigerated	десерт соевый натуральный без сахара с кальцием
 ciqual:19695	Soy dessert, with fruits, with sugar(s), not fortified, fermented, refrigerated	десерт соевый с фруктами сладкий
-ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	десерт соевый с миндалём сладкий с витаминами и минералами
+ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	десерт соевый сладкий с миндалём, витаминами и минералами
 ciqual:19697	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный ароматизированный сладкий с витамином D
 ciqual:19698	Tiramisu with coffee, refrigerated	тирамису с кофе
 ciqual:19699	Tiramisu with fruits, refrigerated	тирамису с фруктами
@@ -6869,7 +6869,7 @@ ciqual:19715	Quark or dairy specialty, flavoured, 2-3% fat, with sugar(s)	тво
 ciqual:19716	Quark, plain, 2-3% fat, with sugar(s)	творожок 2-3 % сладкий
 ciqual:19718	Quark or dairy specialty, flavoured, 7-8% fat, with sugar(s)	творожок 7-8 % ароматизированный сладкий
 ciqual:19719	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s)	пти-суисс с фруктами 2-3 % сладкий
-ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	пти-суисс с фруктами 2-3 % сладкий с витамином D
+ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	пти-суисс 2-3 % сладкий с фруктами и витамином D
 ciqual:19721	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s)	пти-суисс ароматизированный 2-3 % сладкий
 ciqual:19722	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s), fortified with vitamin D	пти-суисс ароматизированный 2-3 % сладкий с витамином D
 ciqual:19723	Yogurt or fermented milk, plain, fortified with vitamin D	йогурт натуральный с витамином D
@@ -7318,10 +7318,10 @@ ciqual:20918	Syrup for canned fruits	сироп для фруктовых кон
 ciqual:20919	Light syrup for canned fruits	сироп лёгкий для фруктовых консервов
 ciqual:20921	Soy dessert, flavoured, with sugar(s), not fortified, refrigerated	десерт соевый ароматизированный сладкий
 ciqual:20922	Plant-based dessert (almond, oat, hemp, coconut, rice), flavoured, with sugar(s), not fortified, refrigerated	десерт растительный без сои ароматизированный сладкий
-ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт растительный без сои с фруктами сладкий с кальцием
+ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт растительный без сои сладкий с фруктами и кальцием
 ciqual:20924	Light syrup for canned pears	сироп лёгкий для грушевых консервов
 ciqual:20925	Soy dessert, flavoured, with sugar(s), fortified with calcium and vitamin D, refrigerated	десерт соевый ароматизированный сладкий с кальцием и витамином D
-ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	десерт соевый с фруктами сладкий с кальцием и витамином D
+ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	десерт соевый сладкий с фруктами, кальцием и витамином D
 ciqual:20927	Plant-based dessert (almond, oat, hemp, coconut, rice), plain, no added sugars, not fortified, refrigerated	десерт растительный без сои натуральный без сахара
 ciqual:20928	Plant-based dessert without soy, refrigerated (average)	десерт растительный без сои
 ciqual:20929	Soy dessert, refrigerated (average)	десерт соевый
@@ -7413,7 +7413,7 @@ ciqual:23027	Macaroon, biscuit, dry	макарон сухой
 ciqual:23030	Christmas log cake	полено рождественское
 ciqual:23031	Brownie (chocolate cake), with nuts, prepacked	брауни с орехами
 ciqual:23032	Brownie (chocolate cake), prepacked	брауни
-ciqual:23033	Rock-shaped coconut cake, prepacked	кокосовые рошe
+ciqual:23033	Rock-shaped coconut cake, prepacked	кокосовые рошеры
 ciqual:23050	Savoy-style sponge cake	бисквит савойский
 ciqual:23080	Butter pound cake, traditional	кекс катр-кар пекарский
 ciqual:23081	Butter pound cake, prepacked	кекс катр-кар
@@ -7528,7 +7528,7 @@ ciqual:24008	Biscuit (cookie) filled with fruits, reduced fat	печенье с 
 ciqual:24009	Speculoos biscuit	печенье спекулос
 ciqual:24010	Biscuit (cookie), with vegetal fat	печенье на растительном масле
 ciqual:24011	Biscuit (cookie), assortment	печенье ассорти
-ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	печенье с шоколадом без сахара с витаминами
+ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	печенье с шоколадом и витаминами без сахара
 ciqual:24013	Biscuit (cookie), no added sugars and with sweetener(s)	печенье без сахара
 ciqual:24014	Biscuit (cookie), with a chocolate bar covering, milk filling	печенье в шоколаде с молочной начинкой
 ciqual:24015	Butter biscuit (cookie)	печенье сливочное
@@ -7539,7 +7539,7 @@ ciqual:24019	Biscuit, with chocolate, gluten free	печенье с шокола
 ciqual:24020	Biscuit (cookie) from whole grain cereals	печенье цельнозерновое
 ciqual:24021	Butter biscuit (cookie), whole wheat	печенье сливочное цельнозерновое
 ciqual:24028	Biscuit (cookie), with sesame, not fortified	печенье с кунжутом
-ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	печенье с кунжутом с витаминами и минералами
+ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	печенье с кунжутом, витаминами и минералами
 ciqual:24031	Biscuit (cookie), without chocolate, reduced fat	печенье нежирное
 ciqual:24034	Breakfast biscuit (cookie), without chocolate, not fortified	печенье завтраковое
 ciqual:24035	Breakfast biscuit (cookie), reduced sugar	печенье завтраковое с пониженным сахаром
