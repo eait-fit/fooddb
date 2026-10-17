@@ -387,7 +387,7 @@ fdc:167662	Restaurant, Latino, pupusas con queso (pupusas, cheese)	pupusas de qu
 fdc:167663	Restaurant, Latino, pupusas del cerdo (pupusas, pork)	pupusas de cerdo
 fdc:167664	Restaurant, Latino, tamale, corn	tamal de maíz
 fdc:167665	Restaurant, Mexican, spanish rice	arroz a la mexicana
-fdc:167666	Restaurant, Mexican, refried beans	judías refritas
+fdc:167666	Restaurant, Mexican, refried beans	judías refritas mexicanas
 fdc:167667	Restaurant, Chinese, egg rolls, assorted	rollitos de huevo variados
 fdc:167668	Restaurant, Chinese, fried rice, without meat	arroz frito sin carne
 fdc:167669	CRACKER BARREL, steak fries	patatas fritas gruesas Cracker Barrel
@@ -1222,7 +1222,7 @@ fdc:168497	Bamboo shoots, cooked, boiled, drained, with salt	brotes de bambú co
 fdc:168498	Lima beans, immature seeds, frozen, fordhook, cooked, boiled, drained, with salt	judías de lima congeladas cocidas con sal
 fdc:168499	Mung beans, mature seeds, sprouted, cooked, boiled, drained, with salt	brotes de judía mungo cocidos con sal
 fdc:168500	Beans, navy, mature seeds, sprouted, cooked, boiled, drained, with salt	brotes de alubia blanca cocidos con sal
-fdc:168501	Beans, pinto, immature seeds, frozen, cooked, boiled, drained, with salt	alubias pintas tiernas congeladas cocidas con sal
+fdc:168501	Beans, pinto, immature seeds, frozen, cooked, boiled, drained, with salt	judías pintas tiernas congeladas cocidas con sal
 fdc:168502	Beans, snap, green, canned, no salt added, solids and liquids	judías verdes en conserva sin sal
 fdc:168503	Beans, snap, yellow, canned, regular pack, solids and liquids	judías amarillas en conserva
 fdc:168504	Beans, snap, yellow, canned, no salt added, solids and liquids	judías amarillas en conserva sin sal
@@ -1727,7 +1727,7 @@ fdc:169002	Sea lion, Steller, heart (Alaska Native)	corazón de león marino de 
 fdc:169003	Sea lion, Steller, meat (Alaska Native)	carne de león marino de Steller (Alaska)
 fdc:169004	Piki bread, made from blue cornmeal (Hopi)	pan piki de maíz azul (hopi)
 fdc:169005	Wocas, tuber, cooked, Oregon, yellow pond lily (Klamath)	tubérculo de nenúfar amarillo cocido (klamath)
-fdc:169006	Stew, pinto bean and hominy, badufsuki (Hopi)	guiso de alubias pintas y maíz nixtamalizado (hopi)
+fdc:169006	Stew, pinto bean and hominy, badufsuki (Hopi)	guiso de judías pintas y maíz nixtamalizado (hopi)
 fdc:169007	Tamales, masa and pork filling (Hopi)	tamales de cerdo (hopi)
 fdc:169008	APPLEBEE'S, Double Crunch Shrimp	gambas Double Crunch Applebee's
 fdc:169009	APPLEBEE'S, french fries	patatas fritas Applebee's
@@ -2422,7 +2422,7 @@ fdc:169697	Cornmeal, whole-grain, yellow	harina de maíz amarilla integral
 fdc:169698	Cornstarch	maicena
 fdc:169699	Couscous, dry	cuscús crudo
 fdc:169700	Couscous, cooked	cuscús cocido
-fdc:169701	Hominy, canned, white	maíz pozolero enlatado
+fdc:169701	Hominy, canned, white	maíz pozolero en conserva
 fdc:169702	Millet, raw	mijo crudo
 fdc:169703	Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)	arroz integral de grano largo crudo
 fdc:169704	Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)	arroz integral de grano largo cocido
@@ -2606,7 +2606,7 @@ fdc:169881	Candies, chocolate covered, low sugar or low calorie	bombones bajos e
 fdc:169882	Chewing gum, sugarless	chicle sin azúcar
 fdc:169883	Fluid replacement, electrolyte solution (include PEDIALYTE)	solución de electrolitos (Pedialyte)
 fdc:169884	Vermicelli, made from soy	fideos de soja
-fdc:169885	Beans, liquid from stewed kidney beans	caldo de alubias rojas guisadas
+fdc:169885	Beans, liquid from stewed kidney beans	caldo de judías rojas guisadas
 fdc:169886	Chicken, meatless	pollo vegetariano
 fdc:169887	Frankfurter, meatless	salchichas vegetarianas
 fdc:169888	Vegetarian meatloaf or patties	pastel de carne vegetariano
@@ -2679,8 +2679,8 @@ fdc:169954	Lima beans, immature seeds, frozen, fordhook, cooked, boiled, drained
 fdc:169955	Lima beans, immature seeds, frozen, baby, unprepared	judías de lima baby congeladas sin preparar
 fdc:169956	Lima beans, immature seeds, frozen, baby, cooked, boiled, drained, without salt	judías de lima baby congeladas cocidas sin sal
 fdc:169957	Mung beans, mature seeds, sprouted, raw	brotes de judía mungo crudos
-fdc:169958	Beans, pinto, immature seeds, frozen, unprepared	alubias pintas tiernas congeladas sin preparar
-fdc:169959	Beans, pinto, immature seeds, frozen, cooked, boiled, drained, without salt	alubias pintas tiernas congeladas cocidas sin sal
+fdc:169958	Beans, pinto, immature seeds, frozen, unprepared	judías pintas tiernas congeladas sin preparar
+fdc:169959	Beans, pinto, immature seeds, frozen, cooked, boiled, drained, without salt	judías pintas tiernas congeladas cocidas sin sal
 fdc:169960	Beans, shellie, canned, solids and liquids	alubias en conserva
 fdc:169961	Beans, snap, green, raw	judías verdes crudas
 fdc:169962	Beans, snap, green, frozen, all styles, unprepared (Includes foods for USDA's Food Distribution Program)	judías verdes congeladas sin preparar
@@ -3862,7 +3862,7 @@ fdc:171137	Turkey, retail parts, thigh, meat and skin, cooked, roasted	contramus
 fdc:171138	Turkey, back, from whole bird, meat and skin, with added solution, raw	espinazo de pavo con piel crudo con salmuera
 fdc:171139	Turkey, back, from whole bird, meat and skin, with added solution, roasted	espalda de pavo asada con salmuera
 fdc:171140	Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised	pechuga de pollo sin piel ni hueso estofada
-fdc:171141	Soup, black bean, canned, condensed	sopa de alubias negras concentrada
+fdc:171141	Soup, black bean, canned, condensed	sopa de judías negras concentrada
 fdc:171142	Soup, bean with pork, canned, condensed	sopa de alubias con cerdo concentrada
 fdc:171143	Soup, bean with frankfurters, canned, condensed	sopa de alubias con salchichas concentrada
 fdc:171144	Soup, bean with ham, canned, chunky, ready-to-serve	sopa de alubias con jamón
@@ -5146,8 +5146,8 @@ fdc:172421	Lentils, mature seeds, cooked, boiled, without salt	lentejas cocidas 
 fdc:172422	Lima beans, thin seeded (baby), mature seeds, cooked, boiled, without salt	judías de lima pequeñas cocidas sin sal
 fdc:172423	Lupins, mature seeds, raw	altramuces crudos
 fdc:172424	Lupins, mature seeds, cooked, boiled, without salt	altramuces cocidos sin sal
-fdc:172425	Mothbeans, mature seeds, raw	frijol moth crudo
-fdc:172426	Mothbeans, mature seeds, cooked, boiled, without salt	frijol moth cocido sin sal
+fdc:172425	Mothbeans, mature seeds, raw	judía moth cruda
+fdc:172426	Mothbeans, mature seeds, cooked, boiled, without salt	judía moth cocida sin sal
 fdc:172427	Mungo beans, mature seeds, cooked, boiled, without salt	judías mungo cocidas sin sal
 fdc:172428	Peas, green, split, mature seeds, raw	guisantes verdes partidos crudos
 fdc:172429	Peas, split, mature seeds, cooked, boiled, without salt	guisantes partidos cocidos sin sal
@@ -5624,7 +5624,7 @@ fdc:172899	Soup, HEALTHY CHOICE Chicken and Rice Soup, canned	sopa de pollo con 
 fdc:172900	Soup, HEALTHY CHOICE Garden Vegetable Soup, canned	sopa de verduras de huerta Healthy Choice
 fdc:172901	CAMPBELL'S, Cream of Mushroom Soup, condensed	crema de champiñones concentrada Campbell's
 fdc:172902	Soup, tomato bisque, canned, prepared with equal volume milk	crema de tomate preparada con leche
-fdc:172903	Soup, black bean, canned, prepared with equal volume water	sopa de alubias negras reconstituida
+fdc:172903	Soup, black bean, canned, prepared with equal volume water	sopa de judías negras reconstituida
 fdc:172904	Soup, bean with pork, canned, prepared with equal volume water	sopa de judías con cerdo reconstituida
 fdc:172905	Soup, bean with frankfurters, canned, prepared with equal volume water	sopa de judías con salchichas reconstituida
 fdc:172906	Soup, beef noodle, canned, prepared with equal volume water	sopa de vacuno con fideos reconstituida
@@ -7006,8 +7006,8 @@ fdc:174281	Yardlong beans, mature seeds, raw	judía de metro cruda
 fdc:174282	Yardlong beans, mature seeds, cooked, boiled, without salt	judía de metro cocida sin sal
 fdc:174283	Winged beans, mature seeds, raw	judías aladas crudas
 fdc:174284	Lentils, pink or red, raw	lentejas rojas crudas
-fdc:174285	Beans, kidney, red, mature seeds, canned, drained solids	alubias rojas en conserva escurridas
-fdc:174286	Beans, pinto, canned, drained solids	alubias pintas en conserva escurridas
+fdc:174285	Beans, kidney, red, mature seeds, canned, drained solids	judías rojas en conserva escurridas
+fdc:174286	Beans, pinto, canned, drained solids	judías pintas en conserva escurridas
 fdc:174287	Veggie burgers or soyburgers, unprepared	hamburguesas vegetales
 fdc:174288	Chickpea flour (besan)	harina de garbanzo
 fdc:174289	Hummus, commercial	hummus
@@ -7893,7 +7893,7 @@ fdc:175159	Fish, tuna, fresh, yellowfin, raw	atún claro crudo
 fdc:175160	Fish, tuna salad	ensalada de atún
 fdc:175161	Fish, whiting, mixed species, cooked, dry heat	pescadilla asada
 fdc:175162	Fish, wolffish, Atlantic, raw	pez lobo del Atlántico crudo
-fdc:175163	Fish, yellowtail, mixed species, raw	rabo crudo
+fdc:175163	Fish, yellowtail, mixed species, raw	serviola cruda
 fdc:175164	Crustaceans, crab, alaska king, raw	cangrejo real de Alaska crudo
 fdc:175165	Fish, catfish, channel, farmed, raw	bagre de canal de piscifactoría crudo
 fdc:175166	Fish, catfish, channel, farmed, cooked, dry heat	bagre de canal de piscifactoría asado
@@ -7923,15 +7923,15 @@ fdc:175189	Beans, cranberry (roman), mature seeds, raw	judías borlotti crudas
 fdc:175190	Beans, great northern, mature seeds, raw (Includes foods for USDA's Food Distribution Program)	alubias blancas del norte crudas
 fdc:175191	Beans, great northern, mature seeds, cooked, boiled, without salt	alubias blancas del norte cocidas sin sal
 fdc:175192	Beans, great northern, mature seeds, canned	alubias blancas del norte en conserva
-fdc:175193	Beans, kidney, all types, mature seeds, raw	alubias rojas crudas
-fdc:175194	Beans, kidney, red, mature seeds, cooked, boiled, without salt	alubias rojas cocidas sin sal
-fdc:175195	Beans, kidney, red, mature seeds, canned, solids and liquids	alubias rojas en conserva
-fdc:175196	Beans, kidney, royal red, mature seeds, raw	alubias rojas reales crudas
-fdc:175197	Beans, kidney, royal red, mature seeds, cooked, boiled, without salt	alubias rojas reales cocidas sin sal
+fdc:175193	Beans, kidney, all types, mature seeds, raw	judías rojas crudas
+fdc:175194	Beans, kidney, red, mature seeds, cooked, boiled, without salt	judías rojas cocidas sin sal
+fdc:175195	Beans, kidney, red, mature seeds, canned, solids and liquids	judías rojas en conserva
+fdc:175196	Beans, kidney, royal red, mature seeds, raw	judías rojas reales crudas
+fdc:175197	Beans, kidney, royal red, mature seeds, cooked, boiled, without salt	judías rojas reales cocidas sin sal
 fdc:175198	Beans, pink, mature seeds, cooked, boiled, without salt	alubias rosadas cocidas sin sal
-fdc:175199	Beans, pinto, mature seeds, raw (Includes foods for USDA's Food Distribution Program)	alubias pintas crudas
-fdc:175200	Beans, pinto, mature seeds, cooked, boiled, without salt	alubias pintas cocidas sin sal
-fdc:175201	Beans, pinto, mature seeds, canned, solids and liquids	alubias pintas en conserva
+fdc:175199	Beans, pinto, mature seeds, raw (Includes foods for USDA's Food Distribution Program)	judías pintas crudas
+fdc:175200	Beans, pinto, mature seeds, cooked, boiled, without salt	judías pintas cocidas sin sal
+fdc:175201	Beans, pinto, mature seeds, canned, solids and liquids	judías pintas en conserva
 fdc:175202	Beans, white, mature seeds, raw	alubias blancas crudas
 fdc:175203	Beans, white, mature seeds, cooked, boiled, without salt	alubias blancas cocidas sin sal
 fdc:175204	Beans, white, mature seeds, canned	alubias blancas en conserva
@@ -7972,12 +7972,12 @@ fdc:175238	Beans, black, mature seeds, canned, low sodium	judías negras en cons
 fdc:175239	Beans, black turtle, mature seeds, cooked, boiled, with salt	judías negras cocidas con sal
 fdc:175240	Beans, cranberry (roman), mature seeds, cooked, boiled, with salt	judías borlotti cocidas con sal
 fdc:175241	Beans, french, mature seeds, cooked, boiled, with salt	judías francesas cocidas con sal
-fdc:175242	Beans, kidney, red, mature seeds, cooked, boiled, with salt	alubias rojas cocidas con sal
-fdc:175243	Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water	alubias rojas en conserva escurridas lavadas
-fdc:175244	Beans, kidney, royal red, mature seeds, cooked, boiled with salt	alubias rojas reales cocidas con sal
-fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium	alubias rojas en conserva bajas en sodio
+fdc:175242	Beans, kidney, red, mature seeds, cooked, boiled, with salt	judías rojas cocidas con sal
+fdc:175243	Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water	judías rojas en conserva escurridas lavadas
+fdc:175244	Beans, kidney, royal red, mature seeds, cooked, boiled with salt	judías rojas reales cocidas con sal
+fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium	judías rojas en conserva bajas en sodio
 fdc:175246	Beans, small white, mature seeds, cooked, boiled, with salt	alubias pequeñas blancas cocidas con sal
-fdc:175247	Beans, pinto, mature seeds, canned, solids and liquids, low sodium	alubias pintas en conserva bajas en sodio
+fdc:175247	Beans, pinto, mature seeds, canned, solids and liquids, low sodium	judías pintas en conserva bajas en sodio
 fdc:175248	Beans, yellow, mature seeds, cooked, boiled, with salt	alubias amarillas cocidas con sal
 fdc:175249	Beans, white, mature seeds, cooked, boiled, with salt	alubias blancas cocidas con sal
 fdc:175250	Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium	garbanzos en conserva bajos en sodio
@@ -8149,10 +8149,10 @@ fdc:2644285	Beans, black, canned, sodium added, drained and rinsed	judías negra
 fdc:2644286	Beans, navy, canned, sodium added, drained and rinsed	alubias blancas en conserva escurridas lavadas
 fdc:2644287	Beans, cannellini, canned, sodium added, drained and rinsed	alubias cannellini en conserva escurridas lavadas
 fdc:2644288	Chickpeas (garbanzo beans, bengal gram), canned, sodium added, drained and rinsed	garbanzos en conserva escurridos lavados
-fdc:2644289	Beans, kidney, dark red, canned, sodium added, sugar added, drained and rinsed	alubias rojas oscuras en conserva escurridas lavadas
-fdc:2644290	Beans, kidney, light red, canned, sodium added, sugar added, drained and rinsed	alubias rojas claras en conserva escurridas lavadas
+fdc:2644289	Beans, kidney, dark red, canned, sodium added, sugar added, drained and rinsed	judías rojas oscuras en conserva escurridas lavadas
+fdc:2644290	Beans, kidney, light red, canned, sodium added, sugar added, drained and rinsed	judías rojas claras en conserva escurridas lavadas
 fdc:2644291	Peas, green, sweet, canned, sodium added, sugar added, drained and rinsed	guisantes en conserva escurridos lavados
-fdc:2644292	Beans, pinto, canned, sodium added, drained and rinsed	alubias pintas en conserva escurridas lavadas
+fdc:2644292	Beans, pinto, canned, sodium added, drained and rinsed	judías pintas en conserva escurridas lavadas
 fdc:2644293	Blackeye pea, canned, sodium added, drained and rinsed	caupí en conserva escurrido lavado
 fdc:2644294	Beans, great northern, canned, sodium added, drained and rinsed	alubias blancas del norte en conserva escurridas lavadas
 fdc:2646168	Pork, loin, boneless, raw	lomo de cerdo sin hueso crudo
@@ -9572,6 +9572,1386 @@ fdc:2706760	Pork, tofu, and vegetables including carrots, broccoli, and/or dark-
 fdc:2706761	Pork and vegetables, Hawaiian style	cerdo con verduras a la hawaiana
 fdc:2706762	Pork and watercress with soy-based sauce	cerdo con berros en salsa de soja
 fdc:2706763	Kung Pao pork	cerdo kung pao
+fdc:2706764	Moo Shu pork, without Chinese pancake	cerdo mu shu
+fdc:2706765	Pork and onions with soy-based sauce	cerdo con cebolla en salsa de soja
+fdc:2706766	Pork hash	picadillo de cerdo
+fdc:2706767	Ham and vegetables including carrots broccoli, and/or dark- green leafy; no potatoes, no sauce	jamón con zanahoria y brócoli sin salsa
+fdc:2706768	Ham and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	jamón con verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706769	Pork and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	cerdo con verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706770	Pork, tofu, and vegetables, excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	cerdo con tofu y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706771	Pork chow mein or chop suey, no noodles	chow mein de cerdo sin fideos
+fdc:2706772	Pork and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	cerdo con zanahoria y brócoli en salsa de tomate
+fdc:2706773	Pork and vegetables excluding  carrots, broccoli, and dark-green leafy; no potatoes, tomato-based sauce	cerdo con verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706774	Sausage and vegetables including  carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	salchicha con zanahoria y brócoli en salsa de tomate
+fdc:2706775	Sausage and vegetables, excluding carrots, broccoli, and dark-green leafy; no potatoes, tomato-based sauce	salchicha con verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706776	Sausage and peppers, no sauce	salchicha con pimientos sin salsa
+fdc:2706777	Pork and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	cerdo con zanahoria y brócoli en salsa de soja
+fdc:2706778	Pork and vegetables excluding carrots, broccoli, and dark- green leafy; no potatoes, soy-based sauce	cerdo con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706779	Pork shish kabob with vegetables, excluding potatoes	brocheta de cerdo con verduras
+fdc:2706780	Lamb shish kabob with vegetables, excluding potatoes	brocheta de cordero con verduras
+fdc:2706781	Chicken or turkey and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	pollo o pavo con zanahoria y brócoli sin salsa
+fdc:2706782	Chicken or turkey and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	pollo o pavo con verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706783	Chicken or turkey shish kabob with vegetables, excluding potatoes	brocheta de pollo o pavo con verduras
+fdc:2706784	Chicken or turkey creole, without rice	pollo o pavo a la criolla sin arroz
+fdc:2706785	Chicken or turkey and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, gravy	pollo o pavo con zanahoria y brócoli con gravy
+fdc:2706786	Chicken or turkey and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, gravy	pollo o pavo con verduras sin zanahoria ni brócoli con gravy
+fdc:2706787	Chicken or turkey a la king with vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, cream, white, or soup-based sauce	pollo o pavo a la king con zanahoria y brócoli
+fdc:2706788	Chicken or turkey a la king with vegetables excluding carrorts, broccoli, and dark-green leafy; no potatoes, cream, white, or soup-based sauce	pollo o pavo a la king con verduras sin zanahoria ni brócoli
+fdc:2706789	Chicken or turkey divan	pollo o pavo diván
+fdc:2706790	Chicken or turkey and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	pollo o pavo con zanahoria y brócoli en salsa de soja
+fdc:2706791	Chicken or turkey and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	pollo o pavo con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706792	Chicken or turkey and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	pollo o pavo con zanahoria y brócoli en salsa de tomate
+fdc:2706793	Chicken or turkey and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, tomato-based sauce	pollo o pavo con verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706794	General Tso chicken	pollo del general Tso
+fdc:2706795	Moo Goo Gai Pan	pollo moo goo gai pan
+fdc:2706796	Kung pao chicken	pollo kung pao
+fdc:2706797	Almond chicken	pollo con almendras
+fdc:2706798	Chicken or turkey chow mein or chop suey, no noodles	chow mein de pollo o pavo sin fideos
+fdc:2706799	Chicken or turkey salad, made with mayonnaise	ensalada de pollo o pavo con mayonesa
+fdc:2706800	Chicken or turkey salad with nuts and/or fruits	ensalada de pollo o pavo con frutos secos y fruta
+fdc:2706801	Chicken or turkey salad with egg	ensalada de pollo o pavo con huevo
+fdc:2706802	Chicken or turkey salad, made with light mayonnaise	ensalada de pollo o pavo con mayonesa ligera
+fdc:2706803	Chicken or turkey salad, made with mayonnaise-type salad dressing	ensalada de pollo o pavo con salsa tipo mayonesa
+fdc:2706804	Chicken or turkey salad, made with light mayonnaise-type salad dressing	ensalada de pollo o pavo con salsa ligera tipo mayonesa
+fdc:2706805	Chicken or turkey salad, made with creamy dressing	ensalada de pollo o pavo con salsa cremosa
+fdc:2706806	Chicken or turkey salad, made with light creamy dressing	ensalada de pollo o pavo con salsa cremosa ligera
+fdc:2706807	Chicken or turkey salad, made with Italian dressing	ensalada de pollo o pavo con salsa italiana
+fdc:2706808	Chicken or turkey salad, made with light Italian dressing	ensalada de pollo o pavo con salsa italiana ligera
+fdc:2706809	Chicken or turkey salad, made with any type of fat free dressing	ensalada de pollo o pavo con salsa sin grasa
+fdc:2706810	Chicken or turkey garden salad, chicken and/or turkey, tomato and/or carrots, other vegetables, no dressing	ensalada de pollo o pavo con tomate y zanahoria sin aliño
+fdc:2706811	Chicken or turkey garden salad, chicken and/or turkey, other vegetables excluding tomato and carrots, no dressing	ensalada de pollo o pavo con verduras sin tomate ni zanahoria, sin aliño
+fdc:2706812	Chicken or turkey garden salad with bacon and cheese, chicken and/or turkey, bacon, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing	ensalada de pollo o pavo con beicon y queso sin aliño
+fdc:2706813	Chicken or turkey, breaded, fried, garden salad with bacon and cheese, chicken and/or turkey, bacon, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing	ensalada de pollo o pavo empanado con beicon y queso sin aliño
+fdc:2706814	Chicken or turkey garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing	ensalada de pollo o pavo con queso sin aliño
+fdc:2706815	Chicken or turkey, breaded, fried, garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing	ensalada de pollo o pavo empanado con queso sin aliño
+fdc:2706816	Asian chicken or turkey garden salad, chicken and/or turkey, lettuce, fruit, nuts, no dressing	ensalada asiática de pollo o pavo con fruta y frutos secos sin aliño
+fdc:2706817	Asian chicken or turkey garden salad with crispy noodles, chicken and/or turkey, lettuce, fruit, nuts, crispy noodles, no dressing	ensalada asiática de pollo o pavo con fruta, frutos secos y fideos crujientes sin aliño
+fdc:2706818	Chicken or turkey caesar garden salad, chicken and/or turkey, lettuce, tomato, cheese, no dressing	ensalada césar de pollo o pavo sin aliño
+fdc:2706819	Chicken or turkey, breaded, fried, caesar garden salad, chicken and/or turkey, lettuce, tomatoes, cheese, no dressing	ensalada césar de pollo o pavo empanado sin aliño
+fdc:2706820	Chicken or turkey and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, cheese sauce	pollo o pavo con zanahoria y brócoli en salsa de queso
+fdc:2706821	Chicken or turkey and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, cheese sauce	pollo o pavo con verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706822	Chicken or turkey fricassee, with sauce, no potatoes, potatoes reported separately, Puerto Rican style	pollo o pavo en fricasé a la puertorriqueña con salsa
+fdc:2706823	Chicken or turkey fricassee, no sauce, no potatoes, Puerto Rican style	pollo o pavo en fricasé a la puertorriqueña sin salsa
+fdc:2706824	Crab salad	ensalada de cangrejo
+fdc:2706825	Lobster salad	ensalada de bogavante
+fdc:2706826	Salmon salad	ensalada de salmón
+fdc:2706827	Shrimp chow mein or chop suey, no noodles	chow mein de gambas sin fideos
+fdc:2706828	Tuna salad, made with mayonnaise	ensalada de atún con mayonesa
+fdc:2706829	Tuna salad, made with light mayonnaise	ensalada de atún con mayonesa ligera
+fdc:2706830	Tuna salad, made with mayonnaise-type salad dressing	ensalada de atún con salsa tipo mayonesa
+fdc:2706831	Tuna salad, made with light mayonnaise-type salad dressing	ensalada de atún con salsa ligera tipo mayonesa
+fdc:2706832	Tuna salad, made with creamy dressing	ensalada de atún con salsa cremosa
+fdc:2706833	Tuna salad, made with light creamy dressing	ensalada de atún con salsa cremosa ligera
+fdc:2706834	Tuna salad, made with Italian dressing	ensalada de atún con salsa italiana
+fdc:2706835	Tuna salad, made with light Italian dressing	ensalada de atún con salsa italiana ligera
+fdc:2706836	Tuna salad, made with any type of fat free dressing	ensalada de atún con salsa sin grasa
+fdc:2706837	Shrimp salad	ensalada de gambas
+fdc:2706838	Seafood salad	ensalada de marisco
+fdc:2706839	Tuna salad with cheese	ensalada de atún con queso
+fdc:2706840	Tuna salad with egg	ensalada de atún con huevo
+fdc:2706841	Shrimp garden salad, shrimp, lettuce, eggs, tomato and/or carrots, other vegetables, no dressing	ensalada de gambas con lechuga, huevo, tomate y zanahoria sin aliño
+fdc:2706842	Shrimp garden salad, shrimp, lettuce, eggs, vegetables excluding tomato and carrots, no dressing	ensalada de gambas con lechuga y huevo, sin tomate ni zanahoria, sin aliño
+fdc:2706843	Crab salad made with imitation crab	ensalada de surimi
+fdc:2706844	Fish, tofu, and vegetables, tempura	tempura de pescado, tofu y verduras
+fdc:2706845	Seafood garden salad with seafood, lettuce, vegetables excluding tomato and carrots, no dressing	ensalada de marisco con verduras sin tomate ni zanahoria, sin aliño
+fdc:2706846	Seafood garden salad with seafood, lettuce, tomato and/or carrots, other vegetables, no dressing	ensalada de marisco con tomate y zanahoria sin aliño
+fdc:2706847	Seafood garden salad with seafood, lettuce, eggs, vegetables excluding tomato and carrots, no dressing	ensalada de marisco con huevo y verduras sin tomate ni zanahoria, sin aliño
+fdc:2706848	Seafood garden salad with seafood, lettuce, eggs, tomato and/or carrots, other vegetables, no dressing	ensalada de marisco con huevo, tomate y zanahoria sin aliño
+fdc:2706849	Oysters Rockefeller	ostras Rockefeller
+fdc:2706850	Lomi salmon	salmón lomi
+fdc:2706851	Shrimp and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	gambas con zanahoria y brócoli sin salsa
+fdc:2706852	Shrimp and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	gambas con verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706853	Shrimp and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	gambas con zanahoria y brócoli en salsa de soja
+fdc:2706854	Shrimp and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	gambas con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706855	Shrimp shish kabob with vegetables, excluding potatoes	brocheta de gambas con verduras
+fdc:2706856	Shrimp creole, no rice	gambas a la criolla sin arroz
+fdc:2706857	Kung Pao shrimp	gambas kung pao
+fdc:2706858	Tuna casserole with vegetables and mushroom sauce, no noodles	cazuela de atún con verduras en salsa de champiñones sin fideos
+fdc:2706859	Shellfish mixture and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	marisco con zanahoria y brócoli en salsa de soja
+fdc:2706860	Shellfish mixture and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	marisco con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706861	Shellfish mixture and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, mushroom sauce	marisco con zanahoria y brócoli en salsa de champiñones
+fdc:2706862	Shellfish mixture and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, mushroom sauce	marisco con verduras sin zanahoria ni brócoli en salsa de champiñones
+fdc:2706863	Fish and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	pescado con zanahoria y brócoli en salsa de tomate
+fdc:2706864	Fish and vegetables excluding carrots, broccoli, and dark- green leafy; no potatoes, tomato-based sauce	pescado con verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706865	Fish and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	pescado con zanahoria y brócoli en salsa de soja
+fdc:2706866	Fish and vegetables excluding  carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	pescado con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706867	Fish shish kabob with vegetables, excluding potatoes	brocheta de pescado con verduras
+fdc:2706868	Fried fish with sauce, Puerto Rican style	pescado frito con salsa a la puertorriqueña
+fdc:2706869	Lobster with sauce, Puerto Rican style	bogavante con salsa a la puertorriqueña
+fdc:2706870	Octopus salad, Puerto Rican style	ensalada de pulpo a la puertorriqueña
+fdc:2706871	Codfish salad, Puerto Rican style, Serenata	ensalada de bacalao serenata
+fdc:2706872	Chow mein or chop suey, NS as to type of meat, no noodles	chow mein de carne sin fideos
+fdc:2706873	Lau lau	lau lau
+fdc:2706874	Antipasto with ham, fish, cheese, vegetables	antipasto con jamón, pescado, queso y verduras
+fdc:2706875	Livers, chicken, chopped, with eggs and onion	hígados de pollo picados con huevo y cebolla
+fdc:2706876	Liver, beef or calves, and onions	hígado de vacuno o ternera con cebolla
+fdc:2706877	Stewed chitterlings, Puerto Rican style	tripas de cerdo estofadas a la puertorriqueña
+fdc:2706878	Stewed gizzards, Puerto Rican style	mollejas estofadas a la puertorriqueña
+fdc:2706879	Gumbo, no rice	gumbo sin arroz
+fdc:2706880	Sandwich, NFS	sándwich
+fdc:2706881	Sandwich wrap, NFS	wrap
+fdc:2706882	Barbecue sandwich, NFS	sándwich de barbacoa
+fdc:2706883	Sloppy joe sandwich, on white bun	sloppy joe en pan blanco
+fdc:2706884	Sloppy joe sandwich, on wheat bun	sloppy joe en pan de trigo
+fdc:2706885	Barbecue beef sandwich, on white bun	sándwich de vacuno a la barbacoa en pan blanco
+fdc:2706886	Barbecue beef sandwich, on wheat bun	sándwich de vacuno a la barbacoa en pan de trigo
+fdc:2706887	Cheeseburger slider, from fast food	minihamburguesa con queso de fast food
+fdc:2706888	Cheeseburger, NFS	hamburguesa con queso
+fdc:2706889	Cheeseburger, from fast food, 1 small patty	hamburguesa con queso pequeña de fast food
+fdc:2706890	Cheeseburger (Burger King)	hamburguesa con queso Burger King
+fdc:2706891	Whopper Jr with cheese (Burger King)	Whopper Jr con queso
+fdc:2706892	Cheeseburger (McDonalds)	hamburguesa con queso McDonald's
+fdc:2706893	Cheeseburger, from school cafeteria	hamburguesa con queso de comedor escolar
+fdc:2706894	Cheeseburger slider	minihamburguesa con queso
+fdc:2706895	Cheeseburger, on white bun, 1 small patty	hamburguesa con queso en pan blanco, pequeña
+fdc:2706896	Cheeseburger, on wheat bun, 1 small patty	hamburguesa con queso en pan de trigo, pequeña
+fdc:2706897	Cheeseburger, from fast food, 1 medium patty	hamburguesa con queso mediana de fast food
+fdc:2706898	Quarter Pounder (McDonalds)	Quarter Pounder (McDonald's)
+fdc:2706899	Whopper with cheese (Burger King)	Whopper con queso
+fdc:2706900	Quarter Pounder with cheese (McDonalds)	Quarter Pounder con queso
+fdc:2706901	Cheeseburger, on white bun, 1 medium patty	hamburguesa con queso en pan blanco, mediana
+fdc:2706902	Cheeseburger, on wheat bun, 1 medium patty	hamburguesa con queso en pan de trigo, mediana
+fdc:2706903	Cheeseburger, on white bun, 1 large patty	hamburguesa con queso en pan blanco, grande
+fdc:2706904	Cheeseburger, on wheat bun, 1 large patty	hamburguesa con queso en pan de trigo, grande
+fdc:2706905	Double cheeseburger, on white bun, 2 small patties	hamburguesa doble con queso en pan blanco, 2 pequeñas
+fdc:2706906	Double cheeseburger, on wheat bun, 2 small patties	hamburguesa doble con queso en pan de trigo, 2 pequeñas
+fdc:2706907	Double cheeseburger, on white bun, 2 medium patties	hamburguesa doble con queso en pan blanco, 2 medianas
+fdc:2706908	Double cheeseburger, on wheat bun, 2 medium patties	hamburguesa doble con queso en pan de trigo, 2 medianas
+fdc:2706909	Cheeseburger, from fast food, 1 large patty	hamburguesa con queso grande de fast food
+fdc:2706910	Double cheeseburger, on white bun, 2 large patties	hamburguesa doble con queso en pan blanco, 2 grandes
+fdc:2706911	Double cheeseburger, on wheat bun, 2 large patties	hamburguesa doble con queso en pan de trigo, 2 grandes
+fdc:2706912	Double cheeseburger, from fast food, 2 small patties	hamburguesa doble con queso, 2 pequeñas, de fast food
+fdc:2706913	Double cheeseburger (Burger King)	hamburguesa doble con queso Burger King
+fdc:2706914	Double cheeseburger (McDonalds)	hamburguesa doble con queso McDonald's
+fdc:2706915	McDouble (McDonalds)	McDouble (McDonald's)
+fdc:2706916	Big Mac (McDonalds)	Big Mac (McDonald's)
+fdc:2706917	Double cheeseburger, from fast food, 2 medium patties	hamburguesa doble con queso, 2 medianas, de fast food
+fdc:2706918	Double cheeseburger, from fast food, 2 large patties	hamburguesa doble con queso, 2 grandes, de fast food
+fdc:2706919	Hamburger slider, from fast food	minihamburguesa de fast food
+fdc:2706920	Hamburger, NFS	hamburguesa
+fdc:2706921	Hamburger, from fast food, 1 small patty	hamburguesa pequeña de fast food
+fdc:2706922	Hamburger (Burger King)	hamburguesa Burger King
+fdc:2706923	Whopper Jr (Burger King)	Whopper Jr (Burger King)
+fdc:2706924	Hamburger (McDonalds)	hamburguesa McDonald's
+fdc:2706925	Hamburger, from school cafeteria	hamburguesa de comedor escolar
+fdc:2706926	Hamburger slider	minihamburguesa
+fdc:2706927	Hamburger, on white bun, 1 small patty	hamburguesa en pan blanco, pequeña
+fdc:2706928	Hamburger, on wheat bun, 1 small patty	hamburguesa en pan de trigo, pequeña
+fdc:2706929	Hamburger, from fast food, 1 medium patty	hamburguesa mediana de fast food
+fdc:2706930	Hamburger, from fast food, 1 large patty	hamburguesa grande de fast food
+fdc:2706931	Whopper (Burger King)	Whopper (Burger King)
+fdc:2706932	Hamburger, on white bun, 1 medium patty	hamburguesa en pan blanco, mediana
+fdc:2706933	Hamburger, on wheat bun, 1 medium patty	hamburguesa en pan de trigo, mediana
+fdc:2706934	Hamburger, on white bun, 1 large patty	hamburguesa en pan blanco, grande
+fdc:2706935	Hamburger, on wheat bun, 1 large patty	hamburguesa en pan de trigo, grande
+fdc:2706936	Double hamburger, on white bun, 2 small patties	hamburguesa doble en pan blanco, 2 pequeñas
+fdc:2706937	Double hamburger, on wheat bun, 2 small patties	hamburguesa doble en pan de trigo, 2 pequeñas
+fdc:2706938	Double hamburger, on white bun, 2 medium patties	hamburguesa doble en pan blanco, 2 medianas
+fdc:2706939	Double hamburger, on wheat bun, 2 medium patties	hamburguesa doble en pan de trigo, 2 medianas
+fdc:2706940	Double hamburger, on white bun, 2 large patties	hamburguesa doble en pan blanco, 2 grandes
+fdc:2706941	Double hamburger, on wheat bun, 2 large patties	hamburguesa doble en pan de trigo, 2 grandes
+fdc:2706942	Double hamburger, from fast food, 2 small patties	hamburguesa doble, 2 pequeñas, de fast food
+fdc:2706943	Double hamburger, from fast food, 2 medium patties	hamburguesa doble, 2 medianas, de fast food
+fdc:2706944	Double hamburger, from fast food, 2 large patties	hamburguesa doble, 2 grandes, de fast food
+fdc:2706945	Meatball sandwich or sub	sándwich de albóndigas
+fdc:2706946	Meatloaf sandwich	sándwich de pastel de carne
+fdc:2706947	Chiliburger, with or without cheese, on bun	hamburguesa con chili
+fdc:2706948	Corned beef sandwich on white	sándwich de corned beef en pan blanco
+fdc:2706949	Corned beef sandwich on white, with cheese	sándwich de corned beef con queso en pan blanco
+fdc:2706950	Corned beef sandwich on wheat	sándwich de corned beef en pan de trigo
+fdc:2706951	Corned beef sandwich on wheat, with cheese	sándwich de corned beef con queso en pan de trigo
+fdc:2706952	Reuben sandwich	sándwich Reuben
+fdc:2706953	Roast beef sandwich on white	sándwich de roast beef en pan blanco
+fdc:2706954	Roast beef sandwich on white, with cheese	sándwich de roast beef con queso en pan blanco
+fdc:2706955	Roast beef sandwich on wheat	sándwich de roast beef en pan de trigo
+fdc:2706956	Roast beef sandwich on wheat, with cheese	sándwich de roast beef con queso en pan de trigo
+fdc:2706957	French dip sandwich	sándwich French dip
+fdc:2706958	Steak sandwich or sub on white	sándwich de filete en pan blanco
+fdc:2706959	Steak sandwich or sub on wheat	sándwich de filete en pan de trigo
+fdc:2706960	Cheese steak sandwich or sub on white	sándwich de filete con queso en pan blanco
+fdc:2706961	Cheese steak sandwich or sub on wheat	sándwich de filete con queso en pan de trigo
+fdc:2706962	Gyro sandwich	sándwich de gyros
+fdc:2706963	Hamburger wrap sandwich, from fast food	wrap de hamburguesa de fast food
+fdc:2706964	Ham sandwich on white	sándwich de jamón en pan blanco
+fdc:2706965	Ham sandwich on white, with cheese	sándwich de jamón y queso en pan blanco
+fdc:2706966	Ham sandwich on wheat	sándwich de jamón en pan de trigo
+fdc:2706967	Ham sandwich on wheat, with cheese	sándwich de jamón y queso en pan de trigo
+fdc:2706968	Ham sandwich or sub, restaurant	sándwich de jamón de restaurante
+fdc:2706969	Ham sandwich or sub, with cheese, restaurant	sándwich de jamón y queso de restaurante
+fdc:2706970	Ham sandwich wrap	wrap de jamón
+fdc:2706971	Ham salad sandwich on white	sándwich de ensalada de jamón en pan blanco
+fdc:2706972	Ham salad sandwich on wheat	sándwich de ensalada de jamón en pan de trigo
+fdc:2706973	Cuban sandwich	sándwich cubano
+fdc:2706974	Barbecue rib sandwich	sándwich de costillas a la barbacoa
+fdc:2706975	Barbecue pork sandwich, on white bun	sándwich de cerdo a la barbacoa en pan blanco
+fdc:2706976	Barbecue pork sandwich, on wheat bun	sándwich de cerdo a la barbacoa en pan de trigo
+fdc:2706977	Pork sandwich	sándwich de cerdo
+fdc:2706978	Pork sandwich, with cheese	sándwich de cerdo con queso
+fdc:2706979	Bacon, lettuce, tomato sandwich on white	sándwich de beicon, lechuga y tomate en pan blanco
+fdc:2706980	Bacon, lettuce, tomato sandwich on wheat	sándwich de beicon, lechuga y tomate en pan de trigo
+fdc:2706981	Turkey sandwich on white	sándwich de pavo en pan blanco
+fdc:2706982	Turkey sandwich on white, with cheese	sándwich de pavo y queso en pan blanco
+fdc:2706983	Turkey sandwich on wheat	sándwich de pavo en pan de trigo
+fdc:2706984	Turkey sandwich on wheat, with cheese	sándwich de pavo y queso en pan de trigo
+fdc:2706985	Turkey sandwich or sub, restaurant	sándwich de pavo de restaurante
+fdc:2706986	Turkey sandwich or sub, with cheese, restaurant	sándwich de pavo y queso de restaurante
+fdc:2706987	Turkey sandwich wrap	wrap de pavo
+fdc:2706988	Chicken deli sandwich or sub, restaurant	sándwich de pollo de restaurante
+fdc:2706989	Chicken deli sandwich or sub, with cheese, restaurant	sándwich de pollo y queso de restaurante
+fdc:2706990	Chicken salad sandwich on white	sándwich de ensalada de pollo en pan blanco
+fdc:2706991	Chicken salad sandwich on wheat	sándwich de ensalada de pollo en pan de trigo
+fdc:2706992	Chicken salad sandwich wrap	wrap de ensalada de pollo
+fdc:2706993	Club sandwich on white	sándwich club en pan blanco
+fdc:2706994	Club sandwich on white, with cheese	sándwich club con queso en pan blanco
+fdc:2706995	Club sandwich on wheat	sándwich club en pan de trigo
+fdc:2706996	Club sandwich on wheat, with cheese	sándwich club con queso en pan de trigo
+fdc:2706997	Club sandwich or sub, restaurant	sándwich club de restaurante
+fdc:2706998	Barbecue chicken sandwich, on white bun	sándwich de pollo a la barbacoa en pan blanco
+fdc:2706999	Barbecue chicken sandwich, on wheat bun	sándwich de pollo a la barbacoa en pan de trigo
+fdc:2707000	Chicken fillet sandwich, NFS	sándwich de filete de pollo
+fdc:2707001	Chicken fillet sandwich, from school cafeteria	sándwich de filete de pollo de comedor escolar
+fdc:2707002	Chicken fillet biscuit, from fast food	filete de pollo en panecillo de soda de fast food
+fdc:2707003	Chicken fillet sandwich, fried, from fast food	sándwich de filete de pollo frito de fast food
+fdc:2707004	Chicken fillet sandwich, fried, from fast food, with cheese	sándwich de filete de pollo frito con queso de fast food
+fdc:2707005	Chicken fillet sandwich, grilled, from fast food	sándwich de filete de pollo a la plancha de fast food
+fdc:2707006	Chicken fillet sandwich, grilled, from fast food, with cheese	sándwich de filete de pollo a la plancha con queso de fast food
+fdc:2707007	Chicken fillet sandwich, NS as to fried or grilled, from fast food	sándwich de filete de pollo de fast food
+fdc:2707008	Chicken fillet sandwich, fried, on white bun	sándwich de filete de pollo frito en pan blanco
+fdc:2707009	Chicken fillet sandwich, fried, on white bun; with cheese	sándwich de filete de pollo frito con queso en pan blanco
+fdc:2707010	Chicken fillet sandwich, fried, on wheat bun	sándwich de filete de pollo frito en pan de trigo
+fdc:2707011	Chicken fillet sandwich, fried, on wheat bun, with cheese	sándwich de filete de pollo frito con queso en pan de trigo
+fdc:2707012	Chicken fillet sandwich, grilled, on white bun	sándwich de filete de pollo a la plancha en pan blanco
+fdc:2707013	Chicken fillet sandwich, grilled, on white bun, with cheese	sándwich de filete de pollo a la plancha con queso en pan blanco
+fdc:2707014	Chicken fillet sandwich, grilled, on wheat bun	sándwich de filete de pollo a la plancha en pan de trigo
+fdc:2707015	Chicken fillet sandwich, grilled, on wheat bun, with cheese	sándwich de filete de pollo a la plancha con queso en pan de trigo
+fdc:2707016	Chicken fillet wrap sandwich, fried, from fast food	wrap de filete de pollo frito de fast food
+fdc:2707017	Chicken fillet wrap sandwich, grilled, from fast food	wrap de filete de pollo a la plancha de fast food
+fdc:2707018	Turkey or chicken burger, on white bun	hamburguesa de pavo o pollo en pan blanco
+fdc:2707019	Turkey or chicken burger, on wheat bun	hamburguesa de pavo o pollo en pan de trigo
+fdc:2707020	Fish sandwich, fried, from fast food	sándwich de pescado frito de fast food
+fdc:2707021	Fish sandwich, fried, from fast food, with cheese	sándwich de pescado frito con queso de fast food
+fdc:2707022	Crab cake sandwich	sándwich de pastel de cangrejo
+fdc:2707023	Salmon cake sandwich	sándwich de pastel de salmón
+fdc:2707024	Fried seafood sandwich	sándwich de marisco frito
+fdc:2707025	Fish sandwich, from school cafeteria	sándwich de pescado de comedor escolar
+fdc:2707026	Fish sandwich, NFS	sándwich de pescado
+fdc:2707027	Fish sandwich, fried, on white bun	sándwich de pescado frito en pan blanco
+fdc:2707028	Fish sandwich, fried, on white bun, with cheese	sándwich de pescado frito con queso en pan blanco
+fdc:2707029	Fish sandwich, fried, on wheat bun	sándwich de pescado frito en pan de trigo
+fdc:2707030	Fish sandwich, fried, on wheat bun, with cheese	sándwich de pescado frito con queso en pan de trigo
+fdc:2707031	Fish sandwich, grilled	sándwich de pescado a la plancha
+fdc:2707032	Fish wrap sandwich	wrap de pescado
+fdc:2707033	Sardine sandwich	sándwich de sardinas
+fdc:2707034	Tuna salad sandwich on white	sándwich de ensalada de atún en pan blanco
+fdc:2707035	Tuna salad sandwich on white, with cheese	sándwich de ensalada de atún con queso en pan blanco
+fdc:2707036	Tuna salad sandwich on wheat	sándwich de ensalada de atún en pan de trigo
+fdc:2707037	Tuna salad sandwich on wheat, with cheese	sándwich de ensalada de atún con queso en pan de trigo
+fdc:2707038	Tuna salad sandwich wrap	wrap de ensalada de atún
+fdc:2707039	Seafood salad sandwich	sándwich de ensalada de marisco
+fdc:2707040	Bologna sandwich on white	sándwich de mortadela en pan blanco
+fdc:2707041	Bologna sandwich on white, with cheese	sándwich de mortadela y queso en pan blanco
+fdc:2707042	Bologna sandwich on wheat	sándwich de mortadela en pan de trigo
+fdc:2707043	Bologna sandwich on wheat, with cheese	sándwich de mortadela y queso en pan de trigo
+fdc:2707044	Corn dog	corn dog
+fdc:2707045	Pig in a blanket	salchicha en hojaldre
+fdc:2707046	Salami sandwich on white	sándwich de salami en pan blanco
+fdc:2707047	Salami sandwich on white, with cheese	sándwich de salami y queso en pan blanco
+fdc:2707048	Salami sandwich on wheat	sándwich de salami en pan de trigo
+fdc:2707049	Salami sandwich on wheat, with cheese	sándwich de salami y queso en pan de trigo
+fdc:2707050	Italian sandwich on white	sándwich italiano en pan blanco
+fdc:2707051	Italian sandwich on wheat	sándwich italiano en pan de trigo
+fdc:2707052	Italian sandwich or sub, restaurant	sándwich italiano de restaurante
+fdc:2707053	Italian sausage sandwich on white	sándwich de salchicha italiana en pan blanco
+fdc:2707054	Italian sausage sandwich on wheat	sándwich de salchicha italiana en pan de trigo
+fdc:2707055	Spam sandwich	sándwich de Spam
+fdc:2707056	Hot dog sandwich, NFS, on white bun	hot dog en panecillo blanco
+fdc:2707057	Hot dog sandwich, NFS, on wheat bun	hot dog en panecillo de trigo
+fdc:2707058	Hot dog sandwich, NFS, on white bread	hot dog en pan blanco
+fdc:2707059	Hot dog sandwich, NFS, on wheat bread	hot dog en pan de trigo
+fdc:2707060	Hot dog sandwich, beef, on white bun	hot dog de vacuno en panecillo blanco
+fdc:2707061	Hot dog sandwich, beef, on wheat bun	hot dog de vacuno en panecillo de trigo
+fdc:2707062	Hot dog sandwich, beef, on white bread	hot dog de vacuno en pan blanco
+fdc:2707063	Hot dog sandwich, beef, on wheat bread	hot dog de vacuno en pan de trigo
+fdc:2707064	Hot dog sandwich, meat and poultry, on white bun	hot dog de carne en panecillo blanco
+fdc:2707065	Hot dog sandwich, meat and poultry, on wheat bun	hot dog de carne en panecillo de trigo
+fdc:2707066	Hot dog sandwich, meat and poultry, on white bread	hot dog de carne en pan blanco
+fdc:2707067	Hot dog sandwich, meat and poultry, on wheat bread	hot dog de carne en pan de trigo
+fdc:2707068	Hot dog sandwich, turkey, on white bun	hot dog de pavo en panecillo blanco
+fdc:2707069	Hot dog sandwich, turkey, on wheat bun	hot dog de pavo en panecillo de trigo
+fdc:2707070	Hot dog sandwich, turkey, on white bread	hot dog de pavo en pan blanco
+fdc:2707071	Hot dog sandwich, turkey, on wheat bread	hot dog de pavo en pan de trigo
+fdc:2707072	Hot dog sandwich, reduced fat, on white bun	hot dog bajo en grasa en panecillo blanco
+fdc:2707073	Hot dog sandwich, reduced fat, on wheat bun	hot dog bajo en grasa en panecillo de trigo
+fdc:2707074	Hot dog sandwich, reduced fat, on white bread	hot dog bajo en grasa en pan blanco
+fdc:2707075	Hot dog sandwich, reduced fat, on wheat bread	hot dog bajo en grasa en pan de trigo
+fdc:2707076	Hot dog sandwich, vegetarian, on bun	hot dog vegetariano en panecillo
+fdc:2707077	Hot dog sandwich, vegetarian, on bread	hot dog vegetariano en pan
+fdc:2707078	Chili hot dog sandwich, on white bun	hot dog con chili en panecillo blanco
+fdc:2707079	Chili hot dog sandwich, on wheat bun	hot dog con chili en panecillo de trigo
+fdc:2707080	Chili hot dog sandwich, on white bread	hot dog con chili en pan blanco
+fdc:2707081	Chili hot dog sandwich, on wheat bread	hot dog con chili en pan de trigo
+fdc:2707082	Multiple meat sandwich on white	sándwich de varias carnes en pan blanco
+fdc:2707083	Multiple meat sandwich on white, with cheese	sándwich de varias carnes con queso en pan blanco
+fdc:2707084	Multiple meat sandwich on wheat	sándwich de varias carnes en pan de trigo
+fdc:2707085	Multiple meat sandwich on wheat, with cheese	sándwich de varias carnes con queso en pan de trigo
+fdc:2707086	Multiple meat sandwich or sub, restaurant	sándwich de varias carnes de restaurante
+fdc:2707087	Multiple meat sandwich or sub, with cheese, restaurant	sándwich de varias carnes con queso de restaurante
+fdc:2707088	Multiple meat sandwich wrap	wrap de varias carnes
+fdc:2707089	Turkey and ham sandwich on white	sándwich de pavo y jamón en pan blanco
+fdc:2707090	Turkey and ham sandwich on white, with cheese	sándwich de pavo, jamón y queso en pan blanco
+fdc:2707091	Turkey and ham sandwich on wheat	sándwich de pavo y jamón en pan de trigo
+fdc:2707092	Turkey and ham sandwich on wheat, with cheese	sándwich de pavo, jamón y queso en pan de trigo
+fdc:2707093	Turkey and ham sandwich or sub, restaurant	sándwich de pavo y jamón de restaurante
+fdc:2707094	Turkey and ham sandwich or sub, with cheese, restaurant	sándwich de pavo, jamón y queso de restaurante
+fdc:2707095	Frozen dinner, NFS	comida preparada congelada
+fdc:2707096	Beef dinner, NFS, frozen meal	comida de vacuno congelada
+fdc:2707097	Beef with vegetable, diet frozen meal	vacuno con verduras, comida congelada de régimen
+fdc:2707098	Salisbury steak dinner, NFS, frozen meal	comida de hamburguesa Salisbury congelada
+fdc:2707099	Salisbury steak with gravy, potatoes, vegetable, frozen meal	hamburguesa Salisbury con gravy, patatas y verduras, comida congelada
+fdc:2707100	Salisbury steak with gravy, whipped potatoes, vegetable, dessert, frozen meal	hamburguesa Salisbury con gravy, puré de patata, verduras y postre, comida congelada
+fdc:2707101	Salisbury steak with gravy, macaroni and cheese, frozen meal	hamburguesa Salisbury con gravy y macarrones con queso, comida congelada
+fdc:2707102	Beef, sliced, with gravy, potatoes, vegetable, frozen meal	vacuno en lonchas con gravy, patatas y verduras, comida congelada
+fdc:2707103	Meatballs, Swedish, in gravy, with noodles, diet frozen meal	albóndigas suecas con gravy y fideos, comida congelada de régimen
+fdc:2707104	Beef with spaetzle or rice, vegetable, frozen meal	vacuno con spaetzle o arroz y verduras, comida congelada
+fdc:2707105	Chicken dinner, NFS, frozen meal	comida de pollo congelada
+fdc:2707106	Chicken, fried, with potatoes, vegetable, frozen meal	pollo frito con patatas y verduras, comida congelada
+fdc:2707107	Chicken patty, or nuggets, boneless, breaded, potatoes, vegetable, frozen meal	nuggets de pollo empanados con patatas y verduras, comida congelada
+fdc:2707108	Chicken, fried, with potatoes, vegetable, dessert, frozen meal, large meat portion	pollo frito con patatas, verduras y postre, comida congelada, ración grande de carne
+fdc:2707109	Teriyaki chicken with rice and vegetable, diet frozen meal	pollo teriyaki con arroz y verduras, comida congelada de régimen
+fdc:2707110	Chicken with rice and vegetable, diet frozen meal	pollo con arroz y verduras, comida congelada de régimen
+fdc:2707111	Chicken and vegetables au gratin with rice, diet frozen entree	pollo con verduras gratinadas y arroz, comida congelada de régimen
+fdc:2707112	Chicken and vegetable entree with rice, diet frozen meal	pollo con verduras y arroz, comida congelada de régimen
+fdc:2707113	Chicken with noodles and cheese sauce, diet frozen meal	pollo con fideos en salsa de queso, comida congelada de régimen
+fdc:2707114	Chicken and vegetable entree with noodles, diet frozen meal	pollo con verduras y fideos, comida congelada de régimen
+fdc:2707115	Chicken in soy-based sauce, rice and vegetables, frozen meal	pollo en salsa de soja con arroz y verduras, comida congelada
+fdc:2707116	Chicken and vegetable entree with noodles and cream sauce, frozen meal	pollo con verduras y fideos en salsa cremosa, comida congelada
+fdc:2707117	Turkey with vegetable, stuffing, diet frozen meal	pavo con verduras y relleno, comida congelada de régimen
+fdc:2707118	Turkey with gravy, dressing, potatoes, vegetable, frozen meal	pavo con gravy, relleno, patatas y verduras, comida congelada
+fdc:2707119	Fish in lemon-butter sauce with starch item, vegetable, frozen meal	pescado en salsa de limón y mantequilla con guarnición y verduras, comida congelada
+fdc:2707120	Shrimp and vegetables in sauce with noodles, diet frozen meal	gambas con verduras en salsa y fideos, comida congelada de régimen
+fdc:2707121	Meat loaf dinner, NFS, frozen meal	comida de pastel de carne congelada
+fdc:2707122	Meat loaf with potatoes, vegetable, frozen meal	pastel de carne con patatas y verduras, comida congelada
+fdc:2707123	Soup, meatball	sopa de albóndigas
+fdc:2707124	Soup, pho, with meat	sopa pho con carne
+fdc:2707125	Soup, pho, no meat	sopa pho sin carne
+fdc:2707126	Soup, pepperpot	sopa pepperpot
+fdc:2707127	Soup, beef, canned	sopa de vacuno en conserva
+fdc:2707128	Soup, sopa or caldo de res	sopa de res
+fdc:2707129	Soup, pozole	pozole
+fdc:2707130	Soup, Italian wedding	sopa italiana de boda
+fdc:2707131	Soup, pork or ham	sopa de cerdo o jamón
+fdc:2707132	Soup, broth	sopa de caldo
+fdc:2707133	Soup, chicken, canned	sopa de pollo en conserva
+fdc:2707134	Soup, chicken	sopa con pollo
+fdc:2707135	Soup, sopa or caldo de pollo	caldo de pollo
+fdc:2707136	Soup, hot and sour	sopa agridulce picante
+fdc:2707137	Soup, cream of chicken	crema de pollo
+fdc:2707138	Soup, Manhattan clam chowder	sopa de almejas Manhattan
+fdc:2707139	Soup, New England clam chowder	sopa de almejas Nueva Inglaterra
+fdc:2707140	Soup, bisque	sopa bisque
+fdc:2707141	Lobster gumbo	gumbo de bogavante
+fdc:2707142	Shrimp gumbo	gumbo de gambas
+fdc:2707143	Soup, fish or shrimp	sopa de pescado o gambas
+fdc:2707144	Gravy, poultry	gravy de ave
+fdc:2707145	Gravy, beef	gravy de vacuno
+fdc:2707146	Gravy, beef, fat free	gravy de vacuno sin grasa
+fdc:2707147	Gravy, poultry, fat free	gravy de ave sin grasa
+fdc:2707148	Gravy, made with soy sauce	gravy con salsa de soja
+fdc:2707149	Gravy, NFS	gravy
+fdc:2707150	Oyster sauce	salsa de ostras
+fdc:2707151	Mole sauce	salsa mole
+fdc:2707152	Egg, whole, raw	huevo crudo
+fdc:2707153	Egg, whole, cooked, NS as to cooking method	huevo cocinado
+fdc:2707154	Egg, whole, boiled or poached	huevo cocido o escalfado
+fdc:2707155	Egg, whole, fried, NS as to fat	huevo frito
+fdc:2707156	Egg, whole, fried no added fat	huevo a la plancha sin aceite
+fdc:2707157	Egg, whole, fried with margarine	huevo frito en margarina
+fdc:2707158	Egg, whole, fried with oil	huevo frito en aceite
+fdc:2707159	Egg, whole, fried with butter	huevo frito en mantequilla
+fdc:2707160	Egg, whole, fried with animal fat or meat drippings	huevo frito en grasa animal
+fdc:2707161	Egg, whole, fried with cooking spray	huevo frito con spray de cocinar
+fdc:2707162	Egg, whole, fried, NS as to fat type	huevo frito en grasa
+fdc:2707163	Egg, whole, fried, from fast food / restaurant	huevo frito de fast food
+fdc:2707164	Egg, whole, baked, NS as to fat	huevo al horno
+fdc:2707165	Egg, whole, baked, no added fat	huevo al horno sin grasa
+fdc:2707166	Egg, whole, baked, fat added	huevo al horno con grasa
+fdc:2707167	Egg, whole, pickled	huevo encurtido
+fdc:2707168	Egg, white only, raw	clara de huevo cruda
+fdc:2707169	Egg, white, cooked, NS as to fat	clara de huevo cocinada
+fdc:2707170	Egg, white, cooked, no added fat	clara de huevo cocinada sin grasa
+fdc:2707171	Egg, white, cooked, fat added	clara de huevo cocinada con grasa
+fdc:2707172	Egg, yolk only, raw	yema de huevo cruda
+fdc:2707173	Egg, yolk only, cooked, NS as to fat	yema de huevo cocinada
+fdc:2707174	Egg, yolk only, cooked, no added fat	yema de huevo cocinada sin grasa
+fdc:2707175	Egg, yolk only, cooked, fat added	yema de huevo cocinada con grasa
+fdc:2707176	Duck egg, cooked	huevo de pato cocido
+fdc:2707177	Goose egg, cooked	huevo de oca cocido
+fdc:2707178	Quail egg, canned	huevos de codorniz en conserva
+fdc:2707179	Egg, creamed	huevo en salsa cremosa
+fdc:2707180	Egg, Benedict	huevo benedictino
+fdc:2707181	Egg, deviled	huevo relleno
+fdc:2707182	Egg salad, made with mayonnaise	ensalada de huevo con mayonesa
+fdc:2707183	Egg salad, made with light mayonnaise	ensalada de huevo con mayonesa ligera
+fdc:2707184	Egg salad, made with mayonnaise-type salad dressing	ensalada de huevo con salsa tipo mayonesa
+fdc:2707185	Egg salad, made with light mayonnaise-type salad dressing	ensalada de huevo con salsa ligera tipo mayonesa
+fdc:2707186	Egg salad, made with creamy dressing	ensalada de huevo con salsa cremosa
+fdc:2707187	Egg salad, made with light creamy dressing	ensalada de huevo con salsa cremosa ligera
+fdc:2707188	Egg salad, made with Italian dressing	ensalada de huevo con salsa italiana
+fdc:2707189	Egg salad, made with light Italian dressing	ensalada de huevo con salsa italiana ligera
+fdc:2707190	Egg Salad, made with any type of fat free dressing	ensalada de huevo con salsa sin grasa
+fdc:2707191	Huevos rancheros	huevos rancheros
+fdc:2707192	Egg casserole with bread, cheese, milk and meat	pudin de huevo con pan, queso, leche y carne
+fdc:2707193	Egg foo yung, NFS	tortilla foo yung
+fdc:2707194	Chicken egg foo yung	tortilla foo yung de pollo
+fdc:2707195	Pork egg foo yung	tortilla foo yung de cerdo
+fdc:2707196	Shrimp egg foo yung	tortilla foo yung de gambas
+fdc:2707197	Beef egg foo yung	tortilla foo yung de vacuno
+fdc:2707198	Egg omelet or scrambled egg, NS as to fat	tortilla o huevo revuelto
+fdc:2707199	Egg omelet or scrambled egg, made with margarine	tortilla en margarina
+fdc:2707200	Egg omelet or scrambled egg, made with oil	tortilla en aceite
+fdc:2707201	Egg omelet or scrambled egg, made with butter	tortilla en mantequilla
+fdc:2707202	Egg omelet or scrambled egg, made with animal fat or meat drippings	tortilla en grasa animal
+fdc:2707203	Egg omelet or scrambled egg, made with cooking spray	tortilla con spray de cocinar
+fdc:2707204	Egg omelet or scrambled egg, NS as to fat type	tortilla en grasa
+fdc:2707205	Egg omelet or scrambled egg, no added fat	tortilla sin grasa
+fdc:2707206	Egg omelet or scrambled egg, from fast food / restaurant	tortilla de fast food
+fdc:2707207	Egg omelet or scrambled egg, with cheese, made with margarine	tortilla con queso en margarina
+fdc:2707208	Egg omelet or scrambled egg, with cheese, made with oil	tortilla con queso en aceite
+fdc:2707209	Egg omelet or scrambled egg, with cheese, made with butter	tortilla con queso en mantequilla
+fdc:2707210	Egg omelet or scrambled egg, with cheese, made with animal fat or meat drippings	tortilla con queso en grasa animal
+fdc:2707211	Egg omelet or scrambled egg, with cheese, made with cooking spray	tortilla con queso con spray de cocinar
+fdc:2707212	Egg omelet or scrambled egg, with cheese, no added fat	tortilla con queso sin grasa
+fdc:2707213	Egg omelet or scrambled egg, with meat, NS as to fat	tortilla con carne
+fdc:2707214	Egg omelet or scrambled egg, with meat, made with margarine	tortilla con carne en margarina
+fdc:2707215	Egg omelet or scrambled egg, with meat, made with oil	tortilla con carne en aceite
+fdc:2707216	Egg omelet or scrambled egg, with meat, made with butter	tortilla con carne en mantequilla
+fdc:2707217	Egg omelet or scrambled egg, with meat, made with animal fat or meat drippings	tortilla con carne en grasa animal
+fdc:2707218	Egg omelet or scrambled egg, with meat, made with cooking spray	tortilla con carne con spray de cocinar
+fdc:2707219	Egg omelet or scrambled egg, with meat, NS as to fat type	tortilla con carne en grasa
+fdc:2707220	Egg omelet or scrambled egg, with meat, no added fat	tortilla con carne sin grasa
+fdc:2707221	Egg omelet or scrambled egg, with cheese and meat, NS as to fat	tortilla con queso y carne
+fdc:2707222	Egg omelet or scrambled egg, with cheese and meat, made with margarine	tortilla con queso y carne en margarina
+fdc:2707223	Egg omelet or scrambled egg, with cheese and meat, made with oil	tortilla con queso y carne en aceite
+fdc:2707224	Egg omelet or scrambled egg, with cheese and meat, made with butter	tortilla con queso y carne en mantequilla
+fdc:2707225	Egg omelet or scrambled egg, with cheese and meat, made with animal fat or meat drippings	tortilla con queso y carne en grasa animal
+fdc:2707226	Egg omelet or scrambled egg, with cheese and meat, made with cooking spray	tortilla con queso y carne con spray de cocinar
+fdc:2707227	Egg omelet or scrambled egg, with cheese and meat, NS as to fat type	tortilla con queso y carne en grasa
+fdc:2707228	Egg omelet or scrambled egg, with cheese and meat, no added fat	tortilla con queso y carne sin grasa
+fdc:2707229	Egg omelet or scrambled egg, with tomatoes, fat added	tortilla con tomate en grasa
+fdc:2707230	Egg omelet or scrambled egg, with tomatoes, no added fat	tortilla con tomate sin grasa
+fdc:2707231	Egg omelet or scrambled egg, with tomatoes, NS as to fat	tortilla con tomate
+fdc:2707232	Egg omelet or scrambled egg, with dark-green vegetables, fat added	tortilla con verduras verdes en grasa
+fdc:2707233	Egg omelet or scrambled egg, with dark-green vegetables, no added fat	tortilla con verduras verdes sin grasa
+fdc:2707234	Egg omelet or scrambled egg, with dark-green vegetables, NS as to fat	tortilla con verduras verdes
+fdc:2707235	Egg omelet or scrambled egg, with tomatoes and dark-green vegetables, fat added	tortilla con tomate y verduras verdes en grasa
+fdc:2707236	Egg omelet or scrambled egg, with tomatoes and dark-green vegetables, no fat added	tortilla con tomate y verduras verdes sin grasa
+fdc:2707237	Egg omelet or scrambled egg, with tomatoes and dark-green vegetables, NS as to fat	tortilla con tomate y verduras verdes
+fdc:2707238	Egg omelet or scrambled egg, with vegetables other than dark green and/or tomatoes, fat added	tortilla con verduras en grasa
+fdc:2707239	Egg omelet or scrambled egg, with vegetables other than dark green and/or tomatoes, no added fat	tortilla con verduras sin grasa
+fdc:2707240	Egg omelet or scrambled egg, with vegetables other than dark green and/or tomatoes, NS as to fat	tortilla con verduras
+fdc:2707241	Egg omelet or scrambled egg, with cheese and tomatoes, fat added	tortilla con queso y tomate en grasa
+fdc:2707242	Egg omelet or scrambled egg, with cheese and tomatoes, no added fat	tortilla con queso y tomate sin grasa
+fdc:2707243	Egg omelet or scrambled egg, with cheese and tomatoes, NS as to fat	tortilla con queso y tomate
+fdc:2707244	Egg omelet or scrambled egg, with cheese and dark-green vegetables, fat added	tortilla con queso y verduras verdes en grasa
+fdc:2707245	Egg omelet or scrambled egg, with cheese and dark-green vegetables, no added fat	tortilla con queso y verduras verdes sin grasa
+fdc:2707246	Egg omelet or scrambled egg, with cheese and dark-green vegetables, NS as to fat	tortilla con queso y verduras verdes
+fdc:2707247	Egg omelet or scrambled egg, with cheese, tomatoes, and dark-green vegetables, fat added	tortilla con queso, tomate y verduras verdes en grasa
+fdc:2707248	Egg omelet or scrambled egg, with cheese, tomatoes, and dark-green vegetables, no added fat	tortilla con queso, tomate y verduras verdes sin grasa
+fdc:2707249	Egg omelet or scrambled egg, with cheese, tomatoes, and dark-green vegetables, NS as to fat	tortilla con queso, tomate y verduras verdes
+fdc:2707250	Egg omelet or scrambled egg, with cheese and vegetables other than dark green and/or tomatoes, fat added	tortilla con queso y verduras en grasa
+fdc:2707251	Egg omelet or scrambled egg, with cheese and vegetables other than dark green and/or tomatoes, no added fat	tortilla con queso y verduras sin grasa
+fdc:2707252	Egg omelet or scrambled egg, with cheese and vegetables other than dark green and/or tomatoes, NS as to fat	tortilla con queso y verduras
+fdc:2707253	Egg omelet or scrambled egg, with meat and tomatoes, fat added	tortilla con carne y tomate en grasa
+fdc:2707254	Egg omelet or scrambled egg, with meat and tomatoes, no added fat	tortilla con carne y tomate sin grasa
+fdc:2707255	Egg omelet or scrambled egg, with meat and tomatoes, NS as to fat	tortilla con carne y tomate
+fdc:2707256	Egg omelet or scrambled egg, with meat and dark-green vegetables, fat added	tortilla con carne y verduras verdes en grasa
+fdc:2707257	Egg omelet or scrambled egg, with meat and dark-green vegetables, no added fat	tortilla con carne y verduras verdes sin grasa
+fdc:2707258	Egg omelet or scrambled egg, with meat and dark-green vegetables, NS as to fat	tortilla con carne y verduras verdes
+fdc:2707259	Egg omelet or scrambled egg, with meat, tomatoes, and dark-green vegetables, fat added	tortilla con carne, tomate y verduras verdes en grasa
+fdc:2707260	Egg omelet or scrambled egg, with meat, tomatoes, and dark-green vegetables, no added fat	tortilla con carne, tomate y verduras verdes sin grasa
+fdc:2707261	Egg omelet or scrambled egg, with meat, tomatoes, and dark-green vegetables, NS as to fat	tortilla con carne, tomate y verduras verdes
+fdc:2707262	Egg omelet or scrambled egg, with meat and vegetables other than dark-green and/or tomatoes, fat added	tortilla con carne y verduras en grasa
+fdc:2707263	Egg omelet or scrambled egg, with meat and vegetables other than dark-green and/or tomatoes, no added fat	tortilla con carne y verduras sin grasa
+fdc:2707264	Egg omelet or scrambled egg, with meat and vegetables other than dark-green and/or tomatoes, NS as to fat	tortilla con carne y verduras
+fdc:2707265	Egg omelet or scrambled egg, with cheese, meat, and tomatoes, fat added	tortilla con queso, carne y tomate en grasa
+fdc:2707266	Egg omelet or scrambled egg, with cheese, meat, and tomatoes, no added fat	tortilla con queso, carne y tomate sin grasa
+fdc:2707267	Egg omelet or scrambled egg, with cheese, meat, and tomatoes, NS as to fat	tortilla con queso, carne y tomate
+fdc:2707268	Egg omelet or scrambled egg, with cheese, meat, and dark-green vegetables, fat added	tortilla con queso, carne y verduras verdes en grasa
+fdc:2707269	Egg omelet or scrambled egg, with cheese, meat, and dark-green vegetables, no added fat	tortilla con queso, carne y verduras verdes sin grasa
+fdc:2707270	Egg omelet or scrambled egg, with cheese, meat, and dark-green vegetables, NS as to fat	tortilla con queso, carne y verduras verdes
+fdc:2707271	Egg omelet or scrambled egg, with cheese, meat, tomatoes, and dark-green vegetables, fat added	tortilla con queso, carne, tomate y verduras verdes en grasa
+fdc:2707272	Egg omelet or scrambled egg, with cheese, meat, tomatoes, and dark-green vegetables, no added fat	tortilla con queso, carne, tomate y verduras verdes sin grasa
+fdc:2707273	Egg omelet or scrambled egg, with cheese, meat, tomatoes, and dark-green vegetables, NS as to fat	tortilla con queso, carne, tomate y verduras verdes
+fdc:2707274	Egg omelet or scrambled egg, with cheese, meat, and vegetables other than dark-green and/or tomatoes, fat added	tortilla con queso, carne y verduras en grasa
+fdc:2707275	Egg omelet or scrambled egg, with cheese, meat, and vegetables other than dark-green and/or tomatoes, no added fat	tortilla con queso, carne y verduras sin grasa
+fdc:2707276	Egg omelet or scrambled egg, with cheese, meat, and vegetables other than dark-green and/or tomatoes, NS as to fat	tortilla con queso, carne y verduras
+fdc:2707277	Egg omelet or scrambled egg, with potatoes and/or onions, fat added	tortilla con patatas y cebolla en grasa
+fdc:2707278	Egg omelet or scrambled egg, with potatoes and/or onions, no added fat	tortilla con patatas y cebolla sin grasa
+fdc:2707279	Egg omelet or scrambled egg, with potatoes and/or onions, NS as to fat	tortilla con patatas y cebolla
+fdc:2707280	Egg salad sandwich on white	sándwich de ensalada de huevo en pan blanco
+fdc:2707281	Egg salad sandwich on wheat	sándwich de ensalada de huevo en pan de trigo
+fdc:2707282	Soup, egg drop	sopa de huevo hilado
+fdc:2707283	Egg white omelet, scrambled, or fried, NS as to fat	tortilla de claras
+fdc:2707284	Egg white omelet, scrambled, or fried, made with margarine	tortilla de claras en margarina
+fdc:2707285	Egg white omelet, scrambled, or fried, made with oil	tortilla de claras en aceite
+fdc:2707286	Egg white omelet, scrambled, or fried, made with butter	tortilla de claras en mantequilla
+fdc:2707287	Egg white omelet, scrambled, or fried, made with cooking spray	tortilla de claras con spray de cocinar
+fdc:2707288	Egg white omelet, scrambled, or fried, NS as to fat type	tortilla de claras en grasa
+fdc:2707289	Egg white omelet, scrambled, or fried, no added fat	tortilla de claras sin grasa
+fdc:2707290	Egg white, omelet, scrambled, or fried, with cheese	tortilla de claras con queso
+fdc:2707291	Egg white, omelet, scrambled, or fried, with meat	tortilla de claras con carne
+fdc:2707292	Egg white, omelet, scrambled, or fried, with vegetables	tortilla de claras con verduras
+fdc:2707293	Egg white, omelet, scrambled, or fried, with cheese and meat	tortilla de claras con queso y carne
+fdc:2707294	Egg white, omelet, scrambled, or fried, with cheese and vegetables	tortilla de claras con queso y verduras
+fdc:2707295	Egg white, omelet, scrambled, or fried, with meat and vegetables	tortilla de claras con carne y verduras
+fdc:2707296	Egg white, omelet, scrambled, or fried, with cheese, meat, and vegetables	tortilla de claras con queso, carne y verduras
+fdc:2707297	Meringues	merengues
+fdc:2707298	Egg substitute, omelet, scrambled, or fried, fat added	tortilla de sucedáneo de huevo en grasa
+fdc:2707299	Egg substitute, omelet, scrambled, or fried, no added fat	tortilla de sucedáneo de huevo sin grasa
+fdc:2707300	Egg substitute, omelet, scrambled, or fried, with cheese	tortilla de sucedáneo de huevo con queso
+fdc:2707301	Egg substitute, omelet, scrambled, or fried, with meat	tortilla de sucedáneo de huevo con carne
+fdc:2707302	Egg substitute, omelet, scrambled, or fried, with vegetables	tortilla de sucedáneo de huevo con verduras
+fdc:2707303	Egg substitute, omelet, scrambled, or fried, with cheese and meat	tortilla de sucedáneo de huevo con queso y carne
+fdc:2707304	Egg substitute, omelet, scrambled, or fried, with cheese and vegetables	tortilla de sucedáneo de huevo con queso y verduras
+fdc:2707305	Egg substitute, omelet, scrambled, or fried, with meat and vegetables	tortilla de sucedáneo de huevo con carne y verduras
+fdc:2707306	Egg substitute, omelet, scrambled, or fried, with cheese, meat, and vegetables	tortilla de sucedáneo de huevo con queso, carne y verduras
+fdc:2707307	Egg sandwich on white bread	sándwich de huevo en pan blanco
+fdc:2707308	Egg sandwich on white bread, with cheese	sándwich de huevo con queso en pan blanco
+fdc:2707309	Egg sandwich on white bread, with meat	sándwich de huevo con carne en pan blanco
+fdc:2707310	Egg sandwich on white bread, with meat and cheese	sándwich de huevo con carne y queso en pan blanco
+fdc:2707311	Egg sandwich on wheat bread	sándwich de huevo en pan de trigo
+fdc:2707312	Egg sandwich on wheat bread, with cheese	sándwich de huevo con queso en pan de trigo
+fdc:2707313	Egg sandwich on wheat bread, with meat	sándwich de huevo con carne en pan de trigo
+fdc:2707314	Egg sandwich on wheat bread, with meat and cheese	sándwich de huevo con carne y queso en pan de trigo
+fdc:2707315	Egg sandwich on English muffin	sándwich de huevo en muffin inglés
+fdc:2707316	Egg sandwich on English muffin, with sausage	sándwich de huevo con salchicha en muffin inglés
+fdc:2707317	Egg sandwich on English muffin, with bacon	sándwich de huevo con beicon en muffin inglés
+fdc:2707318	Egg sandwich on English muffin, with ham	sándwich de huevo con jamón en muffin inglés
+fdc:2707319	Egg sandwich on croissant	sándwich de huevo en croissant
+fdc:2707320	Egg sandwich on croissant, with sausage	sándwich de huevo con salchicha en croissant
+fdc:2707321	Egg sandwich on croissant, with bacon	sándwich de huevo con beicon en croissant
+fdc:2707322	Egg sandwich on croissant, with ham	sándwich de huevo con jamón en croissant
+fdc:2707323	Egg sandwich on biscuit	sándwich de huevo en panecillo de soda
+fdc:2707324	Egg sandwich on biscuit, with sausage	sándwich de huevo con salchicha en panecillo de soda
+fdc:2707325	Egg sandwich on biscuit, with sausage and cheese	sándwich de huevo con salchicha y queso en panecillo de soda
+fdc:2707326	Egg sandwich on biscuit, with bacon	sándwich de huevo con beicon en panecillo de soda
+fdc:2707327	Egg sandwich on biscuit, with bacon and cheese	sándwich de huevo con beicon y queso en panecillo de soda
+fdc:2707328	Egg sandwich on bagel	sándwich de huevo en bagel
+fdc:2707329	Egg sandwich on bagel, with sausage	sándwich de huevo con salchicha en bagel
+fdc:2707330	Egg sandwich on bagel, with bacon	sándwich de huevo con beicon en bagel
+fdc:2707331	Egg sandwich on bagel, with ham	sándwich de huevo con jamón en bagel
+fdc:2707332	Egg sandwich on griddle/pancake	sándwich de huevo en tortita
+fdc:2707333	Egg sandwich on griddle/pancake, with meat	sándwich de huevo con carne en tortita
+fdc:2707334	Egg white sandwich	sándwich de clara de huevo
+fdc:2707335	Egg white sandwich, with cheese	sándwich de clara de huevo con queso
+fdc:2707336	Egg white sandwich, with meat	sándwich de clara de huevo con carne
+fdc:2707337	Bacon biscuit sandwich	sándwich de beicon en panecillo de soda
+fdc:2707338	Ham biscuit sandwich	sándwich de jamón en panecillo de soda
+fdc:2707339	Sausage biscuit sandwich	sándwich de salchicha en panecillo de soda
+fdc:2707340	Sausage biscuit sandwich, with cheese	sándwich de salchicha y queso en panecillo de soda
+fdc:2707341	Sausage English muffin sandwich	sándwich de salchicha en muffin inglés
+fdc:2707342	Sausage griddle/pancake sandwich	sándwich de salchicha en tortita
+fdc:2707343	Egg burrito	burrito de huevo
+fdc:2707344	Egg burrito, with sausage	burrito de huevo con salchicha
+fdc:2707345	Egg burrito, with bacon	burrito de huevo con beicon
+fdc:2707346	Egg burrito, with ham	burrito de huevo con jamón
+fdc:2707347	Beans, NFS	judías
+fdc:2707348	Beans, from dried, NS as to type, fat added	judías de secas con grasa
+fdc:2707349	Beans, from dried, NS as to type, no added fat	judías de secas sin grasa
+fdc:2707350	Beans, from canned, NS as to type, fat added	judías en conserva con grasa
+fdc:2707351	Beans, from canned, NS as to type, no added fat	judías en conserva sin grasa
+fdc:2707352	Beans, from fast food / restaurant, NS as to type	judías de fast food
+fdc:2707353	White beans, NFS	alubias
+fdc:2707354	White beans, from dried, fat added	alubias de secas con grasa
+fdc:2707355	White beans, from dried, no added fat	alubias de secas sin grasa
+fdc:2707356	White beans, from canned, fat added	alubias en conserva con grasa
+fdc:2707357	White beans, from canned, no added fat	alubias en conserva sin grasa
+fdc:2707358	White beans, from canned, reduced sodium	alubias en conserva bajas en sodio
+fdc:2707359	Black beans, NFS	judías negras
+fdc:2707360	Black beans, from dried, fat added	judías negras de secas con grasa
+fdc:2707361	Black beans, from dried, no added fat	judías negras de secas sin grasa
+fdc:2707362	Black beans, from canned, fat added	judías negras en conserva con grasa
+fdc:2707363	Black beans, from canned, no added fat	judías negras en conserva sin grasa
+fdc:2707364	Black beans, from canned, reduced sodium	judías negras en conserva cocidas bajas en sodio
+fdc:2707365	Black beans, from fast food / restaurant	judías negras de fast food
+fdc:2707366	Black beans with meat	judías negras con carne
+fdc:2707367	Fava beans, cooked	habas cocidas
+fdc:2707368	Lima beans, NFS	judías de lima
+fdc:2707369	Lima beans, from dried	judías de lima de secas
+fdc:2707370	Pink beans, cooked	alubias rosas cocidas
+fdc:2707371	Pinto beans, NFS	judías pintas
+fdc:2707372	Pinto beans, from dried, fat added	judías pintas de secas con grasa
+fdc:2707373	Pinto beans, from dried, no added fat	judías pintas de secas sin grasa
+fdc:2707374	Pinto beans, from canned, fat added	judías pintas en conserva con grasa
+fdc:2707375	Pinto beans, from canned, no added fat	judías pintas en conserva sin grasa
+fdc:2707376	Pinto beans, from canned, reduced sodium	judías pintas en conserva cocidas bajas en sodio
+fdc:2707377	Pinto beans, from fast food / restaurant	judías pintas de fast food
+fdc:2707378	Pinto beans with meat	judías pintas con carne
+fdc:2707379	Kidney beans, NFS	judías rojas
+fdc:2707380	Kidney beans, from dried, fat added	judías rojas de secas con grasa
+fdc:2707381	Kidney beans, from dried, no added fat	judías rojas de secas sin grasa
+fdc:2707382	Kidney beans, from canned, fat added	judías rojas en conserva con grasa
+fdc:2707383	Kidney beans, from canned, no added fat	judías rojas en conserva sin grasa
+fdc:2707384	Kidney beans, from canned, reduced sodium	judías rojas en conserva cocidas bajas en sodio
+fdc:2707385	Kidney beans, from fast food / restaurant	judías rojas de fast food
+fdc:2707386	Kidney beans with meat	judías rojas con carne
+fdc:2707387	Peruvian beans, from dried	judías peruanas de secas
+fdc:2707388	Soybeans, cooked	soja cocida
+fdc:2707389	Mung beans, cooked	judías mungo cocidas
+fdc:2707390	Baked beans	alubias al horno
+fdc:2707391	Baked beans, vegetarian	alubias al horno vegetarianas
+fdc:2707392	Baked beans from fast food / restaurant	alubias al horno de fast food
+fdc:2707393	Beans and tomatoes, no added fat	judías con tomate sin grasa
+fdc:2707394	Beans and tomatoes, fat added	judías con tomate con grasa
+fdc:2707395	Black bean salad	ensalada de judías negras
+fdc:2707396	Refried beans	judías refritas
+fdc:2707397	Refried beans, from fast food / restaurant	judías refritas de fast food
+fdc:2707398	Refried beans with meat	judías refritas con carne
+fdc:2707399	Refried beans, from canned, reduced sodium	judías refritas en conserva bajas en sodio
+fdc:2707400	Bean dip, made with refried beans	dip de judías refritas
+fdc:2707401	Layer dip	dip de capas
+fdc:2707402	Hummus, plain	hummus
+fdc:2707403	Hummus, flavored	hummus con sabor
+fdc:2707404	Black bean sauce	salsa de judías negras
+fdc:2707405	Beans and franks	judías con salchichas
+fdc:2707406	Pork and beans	judías con cerdo
+fdc:2707407	Beans with meat, NS as to type	judías con carne
+fdc:2707408	Falafel	falafel
+fdc:2707409	Bean cake	pastel de judías
+fdc:2707410	Baked beans, reduced sodium	alubias al horno bajas en sodio
+fdc:2707411	Chili, vegetarian	chili vegetariano
+fdc:2707412	Blackeyed peas, NFS	carillas
+fdc:2707413	Blackeyed peas, from dried	carillas de secas
+fdc:2707414	Chickpeas, NFS	garbanzos
+fdc:2707415	Chickpeas, from dried, fat added	garbanzos de secos con grasa
+fdc:2707416	Chickpeas, from dried, no added fat	garbanzos de secos sin grasa
+fdc:2707417	Chickpeas, from canned, fat added	garbanzos en conserva con grasa
+fdc:2707418	Chickpeas, from canned, no added fat	garbanzos en conserva sin grasa
+fdc:2707419	Chickpeas, from canned, reduced sodium	garbanzos en conserva cocidos bajos en sodio
+fdc:2707420	Split peas, from dried, no added fat	guisantes partidos de secos sin grasa
+fdc:2707421	Split peas, from dried, fat added	guisantes partidos de secos con grasa
+fdc:2707422	Wasabi peas	guisantes wasabi
+fdc:2707423	Lentils, NFS	lentejas
+fdc:2707424	Lentils, from dried, fat added	lentejas de secas con grasa
+fdc:2707425	Lentils, from dried, no added fat	lentejas de secas sin grasa
+fdc:2707426	Lentils, from canned	lentejas en conserva
+fdc:2707427	Dal	dal
+fdc:2707428	Bean chips	chips de judías
+fdc:2707429	Papad, grilled or broiled	papad a la plancha
+fdc:2707430	Sambar, vegetable stew	sambar
+fdc:2707431	Lentil curry	curri de lentejas
+fdc:2707432	Lentil curry with rice	curri de lentejas con arroz
+fdc:2707433	Soy nuts	soja tostada
+fdc:2707434	Soy chips	chips de soja
+fdc:2707435	Soybean curd	cuajada de soja
+fdc:2707436	Edamame, cooked	edamame cocido
+fdc:2707437	Soybean curd cheese	queso de soja
+fdc:2707438	Miso sauce	salsa de miso
+fdc:2707439	Miso	miso
+fdc:2707440	Natto	natto
+fdc:2707441	Hoisin sauce	salsa hoisin
+fdc:2707442	Soy sauce	salsa de soja
+fdc:2707443	Soy sauce, reduced sodium	salsa de soja baja en sodio
+fdc:2707444	Yogurt, soy	yogur de soja
+fdc:2707445	Teriyaki sauce	salsa teriyaki
+fdc:2707446	Teriyaki sauce, reduced sodium	salsa teriyaki baja en sodio
+fdc:2707447	Worcestershire sauce	salsa Worcestershire
+fdc:2707448	Soybean curd, deep fried	tofu frito
+fdc:2707449	Soybean curd, breaded, fried	tofu empanado frito
+fdc:2707450	Vermicelli, made from soybeans	fideos de soja cocidos
+fdc:2707451	Textured vegetable protein, dry	proteína vegetal texturizada seca
+fdc:2707452	Frozen dessert, non-dairy	postre helado sin lácteos
+fdc:2707453	Soup, bean	sopa de judías
+fdc:2707454	Soup, bean, canned	sopa de judías en conserva
+fdc:2707455	Soup, miso or tofu	sopa de miso
+fdc:2707456	Soup, bean, canned, reduced sodium	sopa de judías en conserva baja en sodio
+fdc:2707457	Soup, bean, with meat	sopa de judías con carne
+fdc:2707458	Soup, split pea, with meat	sopa de guisantes partidos con carne
+fdc:2707459	Soup, split pea	sopa de guisantes partidos
+fdc:2707460	Soup, lentil, canned	sopa de lentejas en conserva
+fdc:2707461	Soup, lentil, canned, reduced sodium	sopa de lentejas en conserva baja en sodio
+fdc:2707462	Soup, lentil	sopa de lentejas
+fdc:2707463	Soup, lentil, with meat	sopa de lentejas con carne
+fdc:2707464	Soup, mulligatawany	sopa mulligatawny
+fdc:2707465	Bacon strip, meatless	tiras de beicon vegetal
+fdc:2707466	Bacon bits	trocitos de beicon
+fdc:2707467	Breakfast link, pattie, or slice, meatless	salchicha vegetal de desayuno
+fdc:2707468	Chicken, meatless, NFS	pollo vegetal
+fdc:2707469	Chicken, meatless, breaded, fried	pollo vegetal empanado frito
+fdc:2707470	Hot dog, vegetarian	hot dog vegetariano
+fdc:2707471	Luncheon slice, meatless-beef, chicken, salami or turkey	fiambre vegetal en lonchas
+fdc:2707472	Meatball, meatless	albóndiga vegetal
+fdc:2707473	Veggie burger patty, no bun	hamburguesa vegetal sin pan
+fdc:2707474	Swiss steak, with gravy, meatless	filete suizo vegetal con gravy
+fdc:2707475	Pot pie, no meat	pastel de verduras sin carne
+fdc:2707476	Tofu and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, with soy-based sauce	tofu con zanahoria y brócoli en salsa de soja
+fdc:2707477	Tofu and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, with soy-based sauce	tofu con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2707478	Vegetarian, fillet	filete vegetal
+fdc:2707479	Vegetarian stew	estofado vegetariano
+fdc:2707480	Vegetarian stroganoff	strogonoff vegetariano
+fdc:2707481	Veggie burger, on bun	hamburguesa vegetal en panecillo
+fdc:2707482	Veggie burger, on bun, with cheese	hamburguesa vegetal con queso en panecillo
+fdc:2707483	Falafel sandwich	sándwich de falafel
+fdc:2707484	Nuts, NFS	frutos secos
+fdc:2707485	Almonds, NFS	almendras
+fdc:2707486	Almonds, unroasted	almendras crudas
+fdc:2707487	Almonds, salted	almendras saladas
+fdc:2707488	Almonds, lightly salted	almendras ligeramente saladas
+fdc:2707489	Almonds, unsalted	almendras sin sal
+fdc:2707490	Almonds, flavored	almendras con sabor
+fdc:2707491	Almonds, honey roasted	almendras tostadas con miel
+fdc:2707492	Brazil nuts	nueces de Brasil
+fdc:2707493	Cashews, NFS	anacardos
+fdc:2707494	Cashews, unroasted	anacardos crudos
+fdc:2707495	Cashews, salted	anacardos salados
+fdc:2707496	Cashews, lightly salted	anacardos ligeramente salados
+fdc:2707497	Cashews, unsalted	anacardos sin sal
+fdc:2707498	Cashews, honey roasted	anacardos tostados con miel
+fdc:2707499	Chestnuts	castañas
+fdc:2707500	Coconut, fresh	coco fresco
+fdc:2707501	Coconut, packaged	coco envasado
+fdc:2707502	Hazelnuts	avellanas
+fdc:2707503	Macadamia nuts	nueces de macadamia
+fdc:2707504	Mixed nuts, NFS	mezcla de frutos secos
+fdc:2707505	Mixed nuts, unroasted	mezcla de frutos secos crudos
+fdc:2707506	Mixed nuts, with peanuts, salted	mezcla de frutos secos con cacahuetes salada
+fdc:2707507	Mixed nuts, with peanuts, lightly salted	mezcla de frutos secos con cacahuetes ligeramente salada
+fdc:2707508	Mixed nuts, with peanuts, unsalted	mezcla de frutos secos con cacahuetes sin sal
+fdc:2707509	Mixed nuts, without peanuts, salted	mezcla de frutos secos sin cacahuetes salada
+fdc:2707510	Mixed nuts, without peanuts, unsalted	mezcla de frutos secos sin cacahuetes sin sal
+fdc:2707511	Mixed nuts, honey roasted	mezcla de frutos secos tostados con miel
+fdc:2707512	Peanuts, NFS	cacahuetes
+fdc:2707513	Peanuts, boiled	cacahuetes cocidos
+fdc:2707514	Peanuts, unroasted	cacahuetes crudos
+fdc:2707515	Peanuts, roasted, salted	cacahuetes tostados salados
+fdc:2707516	Peanuts, roasted, unsalted	cacahuetes tostados sin sal
+fdc:2707517	Peanuts, dry roasted, salted	cacahuetes tostados en seco salados
+fdc:2707518	Peanuts, dry roasted, lightly salted	cacahuetes tostados en seco ligeramente salados
+fdc:2707519	Peanuts, dry roasted, unsalted	cacahuetes tostados en seco sin sal
+fdc:2707520	Peanuts, honey roasted	cacahuetes tostados con miel
+fdc:2707521	Pecans, NFS	nueces pecanas
+fdc:2707522	Pecans, unroasted	nueces pecanas crudas
+fdc:2707523	Pecans, salted	nueces pecanas saladas
+fdc:2707524	Pecans, unsalted	nueces pecanas sin sal
+fdc:2707525	Pecans, honey roasted	nueces pecanas tostadas con miel
+fdc:2707526	Pine nuts	piñones
+fdc:2707527	Pistachio nuts, NFS	pistachos
+fdc:2707528	Pistachio nuts, salted	pistachos salados
+fdc:2707529	Pistachio nuts, lightly salted	pistachos ligeramente salados
+fdc:2707530	Pistachio nuts, unsalted	pistachos sin sal
+fdc:2707531	Walnuts, excluding honey roasted	nueces de nogal
+fdc:2707532	Walnuts, honey roasted	nueces tostadas con miel
+fdc:2707533	Almond butter	crema de almendras
+fdc:2707534	Almond butter, lower sodium	crema de almendras baja en sodio
+fdc:2707535	Almond paste	mazapán
+fdc:2707536	Cashew butter	crema de anacardos
+fdc:2707537	Peanut butter	crema de cacahuete
+fdc:2707538	Peanut butter, lower sodium	crema de cacahuete baja en sodio
+fdc:2707539	Peanut butter, lower sodium and lower sugar	crema de cacahuete baja en sodio y azúcar
+fdc:2707540	Peanut butter, lower sugar	crema de cacahuete baja en azúcar
+fdc:2707541	Peanut butter, reduced fat	crema de cacahuete baja en grasa
+fdc:2707542	Peanut butter, vitamin and mineral fortified	crema de cacahuete enriquecida
+fdc:2707543	Peanut butter and jelly	crema de cacahuete con mermelada
+fdc:2707544	Peanut butter and chocolate spread	crema de cacahuete con crema de cacao
+fdc:2707545	Soy nut butter	crema de soja
+fdc:2707546	Peanut sauce	salsa de cacahuete
+fdc:2707547	Soup, peanut	sopa de cacahuete
+fdc:2707548	Gravy, vegetarian	gravy vegetariano
+fdc:2707549	Peanut butter sandwich, NFS	sándwich de crema de cacahuete
+fdc:2707550	Peanut butter sandwich, with regular peanut butter, on white bread	sándwich de crema de cacahuete en pan blanco
+fdc:2707551	Peanut butter sandwich, with regular peanut butter, on wheat bread	sándwich de crema de cacahuete en pan de trigo
+fdc:2707552	Peanut butter sandwich, with reduced fat peanut butter, on white bread	sándwich de crema de cacahuete baja en grasa en pan blanco
+fdc:2707553	Peanut butter sandwich, with reduced fat peanut butter, on wheat bread	sándwich de crema de cacahuete baja en grasa en pan de trigo
+fdc:2707554	Peanut butter and jelly sandwich, NFS	sándwich de crema de cacahuete y mermelada
+fdc:2707555	Peanut butter and jelly sandwich, with regular peanut butter, regular jelly, on white bread	sándwich de crema de cacahuete y mermelada en pan blanco
+fdc:2707556	Peanut butter and jelly sandwich, with regular peanut butter, regular jelly, on wheat bread	sándwich de crema de cacahuete y mermelada en pan de trigo
+fdc:2707557	Peanut butter and jelly sandwich, with reduced fat peanut butter, on white bread	sándwich de crema de cacahuete baja en grasa y mermelada en pan blanco
+fdc:2707558	Peanut butter and jelly sandwich, with reduced fat peanut butter, on wheat bread	sándwich de crema de cacahuete baja en grasa y mermelada en pan de trigo
+fdc:2707559	Peanut butter and jelly sandwich, with regular peanut butter, reduced sugar jelly, on white bread	sándwich de crema de cacahuete y mermelada baja en azúcar en pan blanco
+fdc:2707560	Peanut butter and jelly sandwich, with regular peanut butter, reduced sugar jelly, on wheat bread	sándwich de crema de cacahuete y mermelada baja en azúcar en pan de trigo
+fdc:2707561	Peanut butter and jelly sandwich, frozen commercial product without crusts	sándwich de crema de cacahuete y mermelada sin corteza congelado
+fdc:2707562	Almond butter sandwich, on white bread	sándwich de crema de almendras en pan blanco
+fdc:2707563	Almond butter sandwich, on wheat bread	sándwich de crema de almendras en pan de trigo
+fdc:2707564	Almond butter and jelly sandwich, on white bread	sándwich de crema de almendras y mermelada en pan blanco
+fdc:2707565	Almond butter and jelly sandwich, on wheat bread	sándwich de crema de almendras y mermelada en pan de trigo
+fdc:2707566	Nutella sandwich on white bread	sándwich de Nutella en pan blanco
+fdc:2707567	Nutella sandwich on wheat bread	sándwich de Nutella en pan de trigo
+fdc:2707568	Coconut milk, used in cooking	leche de coco para cocinar
+fdc:2707569	Yogurt, coconut milk	yogur de leche de coco
+fdc:2707570	Yogurt, almond milk	yogur de leche de almendras
+fdc:2707571	Coconut cream, canned, sweetened	crema de coco en conserva azucarada
+fdc:2707572	Coconut water, unsweetened	agua de coco sin azúcar
+fdc:2707573	Coconut water, sweetened	agua de coco azucarada
+fdc:2707574	Trail mix, NFS	mezcla de frutos secos y fruta deshidratada
+fdc:2707575	Trail mix with nuts	mezcla de frutos secos
+fdc:2707576	Trail mix with nuts and fruit	mezcla de frutos secos con fruta
+fdc:2707577	Trail mix with chocolate	mezcla de frutos secos con chocolate
+fdc:2707578	Trail mix with pretzels, cereal, or granola	mezcla con pretzels, cereales o granola
+fdc:2707579	Pumpkin seeds, NFS	pipas de calabaza
+fdc:2707580	Pumpkin seeds, salted	pipas de calabaza saladas
+fdc:2707581	Pumpkin seeds, unsalted	pipas de calabaza sin sal
+fdc:2707582	Sunflower seeds, plain, unsalted	pipas de girasol sin sal
+fdc:2707583	Sunflower seeds, plain, salted	pipas de girasol saladas
+fdc:2707584	Sunflower seeds, flavored	pipas de girasol con sabor
+fdc:2707585	Sunflower seeds, NFS	pipas de girasol
+fdc:2707586	Sesame seeds	semillas de sésamo
+fdc:2707587	Tahini	tahini (pasta de sésamo)
+fdc:2707588	Flax seeds	semillas de lino
+fdc:2707589	Mixed seeds	mezcla de semillas
+fdc:2707590	Chia seeds	semillas de chía
+fdc:2707591	Bread, NS as to major flour	pan
+fdc:2707592	Bread, NS as to major flour, toasted	pan tostado
+fdc:2707593	Bread, made from home recipe or purchased at a bakery, NS as to major flour	pan casero o de panadería
+fdc:2707594	Bread, made from home recipe or purchased at a bakery, toasted, NS as to major flour	pan casero o de panadería tostado
+fdc:2707595	Roll, NS as to major flour	panecillo
+fdc:2707596	Roll, hard, NS as to major flour	panecillo crujiente
+fdc:2707597	Roll, bran, NS as to type of bran	panecillo de salvado
+fdc:2707598	Bread, white	pan blanco
+fdc:2707599	Bread, white, toasted	pan blanco tostado
+fdc:2707600	Bread, white, made from home recipe or purchased at a bakery	pan blanco casero o de panadería
+fdc:2707601	Bread, white, made from home recipe or purchased at a bakery, toasted	pan blanco casero o de panadería tostado
+fdc:2707602	Bread, white with whole wheat swirl	pan blanco con vetas de trigo integral
+fdc:2707603	Bread, white with whole wheat swirl, toasted	pan blanco con vetas de trigo integral tostado
+fdc:2707604	Bread, Cuban	pan cubano
+fdc:2707605	Bread, Cuban, toasted	pan cubano tostado
+fdc:2707606	Bread, native, water, Puerto Rican style	pan de agua a la puertorriqueña
+fdc:2707607	Bread, native, water, toasted, Puerto Rican style	pan de agua a la puertorriqueña tostado
+fdc:2707608	Bread, lard, Puerto Rican style	pan de manteca a la puertorriqueña
+fdc:2707609	Bread, lard, toasted, Puerto Rican style	pan de manteca a la puertorriqueña tostado
+fdc:2707610	Bread, French or Vienna	pan francés o vienés
+fdc:2707611	Bread, French or Vienna, toasted	pan francés o vienés tostado
+fdc:2707612	Focaccia, Italian, plain	focaccia
+fdc:2707613	Bread, naan	pan naan
+fdc:2707614	Bread, Italian, Grecian, Armenian	pan italiano, griego o armenio
+fdc:2707615	Bread, Italian, Grecian, Armenian, toasted	pan italiano, griego o armenio tostado
+fdc:2707616	Bread, pita	pan de pita
+fdc:2707617	Bread, pita with fruit	pan de pita con fruta
+fdc:2707618	Bread, cheese	pan de queso
+fdc:2707619	Bread, cheese, toasted	pan de queso tostado
+fdc:2707620	Bread, cinnamon	pan de canela
+fdc:2707621	Bread, cinnamon, toasted	pan de canela tostado
+fdc:2707622	Bread, cornmeal and molasses	pan de maíz con melaza
+fdc:2707623	Bread, cornmeal and molasses, toasted	pan de maíz con melaza tostado
+fdc:2707624	Bread, egg, Challah	pan jalá
+fdc:2707625	Bread, egg, Challah, toasted	pan jalá tostado
+fdc:2707626	Garlic bread, NFS	pan de ajo
+fdc:2707627	Garlic bread, from fast food / restaurant	pan de ajo de fast food
+fdc:2707628	Garlic bread, from frozen	pan de ajo congelado
+fdc:2707629	Garlic bread, with parmesan cheese, from fast food / restaurant	pan de ajo con parmesano de fast food
+fdc:2707630	Garlic bread, with parmesan cheese, from frozen	pan de ajo con parmesano congelado
+fdc:2707631	Garlic bread, with melted cheese, from fast food / restaurant	pan de ajo con queso fundido de fast food
+fdc:2707632	Garlic bread, with melted cheese, from frozen	pan de ajo con queso fundido congelado
+fdc:2707633	Bread, onion	pan de cebolla
+fdc:2707634	Bread, onion, toasted	pan de cebolla tostado
+fdc:2707635	Bread, reduced calorie and/or high fiber, white or NFS	pan bajo en calorías o rico en fibra
+fdc:2707636	Bread, reduced calorie and/or high fiber, white or NFS, toasted	pan bajo en calorías o rico en fibra tostado
+fdc:2707637	Bread, reduced calorie and/or high fiber, white or NFS, with fruit and/or nuts	pan bajo en calorías con fruta y frutos secos
+fdc:2707638	Bread, reduced calorie and/or high fiber, white or NFS, with fruit and/or nuts, toasted	pan bajo en calorías con fruta y frutos secos tostado
+fdc:2707639	Bread, white, special formula, added fiber	pan blanco con fibra añadida
+fdc:2707640	Bread, white, special formula, added fiber, toasted	pan blanco con fibra añadida tostado
+fdc:2707641	Bread, high protein, toasted	pan alto en proteína tostado
+fdc:2707642	Bread, potato	pan de patata
+fdc:2707643	Bread, potato, toasted	pan de patata tostado
+fdc:2707644	Bread, raisin	pan de pasas
+fdc:2707645	Bread, raisin, toasted	pan de pasas tostado
+fdc:2707646	Bread, sour dough	pan de masa madre
+fdc:2707647	Bread, sour dough, toasted	pan de masa madre tostado
+fdc:2707648	Bread, sweet potato	pan de boniato
+fdc:2707649	Bread, sweet potato, toasted	pan de boniato tostado
+fdc:2707650	Bread, vegetable	pan de verduras
+fdc:2707651	Bread, vegetable, toasted	pan de verduras tostado
+fdc:2707652	Bruschetta	bruschetta
+fdc:2707653	Bread, dough, fried	pan frito
+fdc:2707654	Roll, white, soft	panecillo blanco blando
+fdc:2707655	Roll, white, hard	panecillo blanco crujiente
+fdc:2707656	Roll, white, hot dog bun	panecillo de hot dog blanco
+fdc:2707657	Roll, white, hamburger bun	panecillo de hamburguesa blanco
+fdc:2707658	Roll, diet	panecillo de régimen
+fdc:2707659	Roll, egg bread	panecillo de huevo
+fdc:2707660	Roll, cheese	panecillo de queso
+fdc:2707661	Roll, French or Vienna	panecillo francés o vienés
+fdc:2707662	Roll, garlic	panecillo de ajo
+fdc:2707663	Roll, white, hoagie, submarine	panecillo de sándwich blanco
+fdc:2707664	Roll, Mexican, bolillo	bolillo
+fdc:2707665	Roll, sour dough	panecillo de masa madre
+fdc:2707666	Roll, sweet, no frosting	panecillo dulce sin glaseado
+fdc:2707667	Roll, sweet, cinnamon bun, no frosting	rollo de canela sin glaseado
+fdc:2707668	Roll, sweet, cinnamon bun, frosted	rollo de canela con glaseado
+fdc:2707669	Pan dulce, NFS	pan dulce
+fdc:2707670	Pan Dulce, with fruit, no frosting	pan dulce con fruta sin glaseado
+fdc:2707671	Roll, sweet, with fruit, frosted	panecillo dulce con fruta y glaseado
+fdc:2707672	Roll, sweet, with fruit, frosted, diet	panecillo dulce con fruta y glaseado de régimen
+fdc:2707673	Roll, sweet, frosted	panecillo dulce con glaseado
+fdc:2707674	Pan Dulce, no topping	pan dulce sin cobertura
+fdc:2707675	Pan Dulce, with sugar topping	pan dulce con cobertura de azúcar
+fdc:2707676	Pan Dulce, with raisins and icing	pan dulce con pasas y glaseado
+fdc:2707677	Coffee cake, yeast type	pastel americano de levadura
+fdc:2707678	Croissant	croissant
+fdc:2707679	Croissant, cheese	croissant de queso
+fdc:2707680	Croissant, chocolate	croissant de chocolate
+fdc:2707681	Croissant, fruit	croissant de fruta
+fdc:2707682	Brioche	brioche
+fdc:2707683	Bread, Spanish coffee	pan español para el café
+fdc:2707684	Bagel	bagel
+fdc:2707685	Bagel, with raisins	bagel con pasas
+fdc:2707686	Bagel, with fruit other than raisins	bagel con fruta
+fdc:2707687	Bread stuffing	relleno de pan para ave
+fdc:2707688	Bread stuffing made with egg	relleno de pan con huevo
+fdc:2707689	Breadsticks, NFS	picos de pan
+fdc:2707690	Breadsticks, hard, NFS	picos de pan crujientes
+fdc:2707691	Breadsticks, hard, reduced sodium	picos de pan crujientes bajos en sodio
+fdc:2707692	Breadsticks, soft, NFS	palitos de pan blandos
+fdc:2707693	Breadsticks, soft, fast food / restaurant	palitos de pan blandos de fast food
+fdc:2707694	Breadsticks, soft, frozen	palitos de pan blandos congelados
+fdc:2707695	Breadsticks, soft, with parmesan cheese, fast food / restaurant	palitos de pan blandos con parmesano de fast food
+fdc:2707696	Breadsticks, soft, stuffed or topped with melted cheese	palitos de pan blandos con queso fundido
+fdc:2707697	Croutons	crutones
+fdc:2707698	Muffin, English	muffin inglés
+fdc:2707699	Muffin, English, with raisins	muffin inglés con pasas
+fdc:2707700	Muffin, English, cheese	muffin inglés de queso
+fdc:2707701	Muffin, English, with fruit other than raisins	muffin inglés con fruta
+fdc:2707702	Melba toast	tosta melba
+fdc:2707703	Anisette toast	rebanada de anís tostada
+fdc:2707704	Pannetone	panetone
+fdc:2707705	Zwieback toast	bizcocho tostado zwieback
+fdc:2707706	Bread, whole grain white	pan blanco integral
+fdc:2707707	Bread, whole grain white, toasted	pan blanco integral tostado
+fdc:2707708	Bagel, whole grain white	bagel blanco integral
+fdc:2707709	Bread, whole wheat	pan integral
+fdc:2707710	Bread, whole wheat, toasted	pan integral tostado
+fdc:2707711	Bread, whole wheat, made from home recipe or purchased at bakery	pan integral casero o de panadería
+fdc:2707712	Bread, whole wheat, made from home recipe or purchased at bakery, toasted	pan integral casero o de panadería tostado
+fdc:2707713	Bread, chappatti or roti	chapati
+fdc:2707714	Bread, puri	puri
+fdc:2707715	Bread, paratha	paratha
+fdc:2707716	Bread, whole wheat, with raisins	pan integral con pasas
+fdc:2707717	Bread, whole wheat, with raisins, toasted	pan integral con pasas tostado
+fdc:2707718	Bread, sprouted wheat	pan de trigo germinado
+fdc:2707719	Bread, sprouted wheat, toasted	pan de trigo germinado tostado
+fdc:2707720	Bread, wheat or cracked wheat	pan de trigo
+fdc:2707721	Bread, wheat or cracked wheat, toasted	pan de trigo tostado
+fdc:2707722	Bread, wheat or cracked wheat, made from home recipe or purchased at bakery	pan de trigo casero o de panadería
+fdc:2707723	Bread, wheat or cracked wheat, made from home recipe or purchased at bakery, toasted	pan de trigo casero o de panadería tostado
+fdc:2707724	Bread, wheat or cracked wheat, with raisins	pan de trigo con pasas
+fdc:2707725	Bread, wheat or cracked wheat, with raisins, toasted	pan de trigo con pasas tostado
+fdc:2707726	Bread, wheat or cracked wheat, reduced calorie and/or high fiber	pan de trigo bajo en calorías o rico en fibra
+fdc:2707727	Bread, wheat or cracked wheat, reduced calorie and/or high fiber, toasted	pan de trigo bajo en calorías o rico en fibra tostado
+fdc:2707728	Bread, French or Vienna, whole wheat	pan francés o vienés integral
+fdc:2707729	Bread, French or Vienna, whole wheat, toasted	pan francés o vienés integral tostado
+fdc:2707730	Bread, pita, whole wheat	pan de pita integral
+fdc:2707731	Bread, pita, wheat or cracked wheat	pan de pita de trigo
+fdc:2707732	Bagel, wheat	bagel de trigo
+fdc:2707733	Bagel, whole wheat	bagel integral
+fdc:2707734	Bagel, wheat, with raisins	bagel de trigo con pasas
+fdc:2707735	Bagel, whole wheat, with raisins	bagel integral con pasas
+fdc:2707736	Bagel, wheat, with fruit and nuts	bagel de trigo con fruta y frutos secos
+fdc:2707737	Bagel, wheat bran	bagel de salvado de trigo
+fdc:2707738	Muffin, English, wheat bran	muffin inglés de salvado de trigo
+fdc:2707739	Muffin, English, wheat bran, with raisins	muffin inglés de salvado de trigo con pasas
+fdc:2707740	Muffin, English, wheat or cracked wheat	muffin inglés de trigo
+fdc:2707741	Muffin, English, whole wheat	muffin inglés integral
+fdc:2707742	Muffin, English, wheat or cracked wheat, with raisins	muffin inglés de trigo con pasas
+fdc:2707743	Muffin, English, whole wheat, with raisins	muffin inglés integral con pasas
+fdc:2707744	Muffin, English, whole grain white	muffin inglés blanco integral
+fdc:2707745	Breadsticks, hard, whole wheat	picos de pan crujientes integrales
+fdc:2707746	Roll, wheat or cracked wheat	panecillo de trigo
+fdc:2707747	Roll, wheat or cracked wheat, hot dog bun	panecillo de hot dog de trigo
+fdc:2707748	Roll, wheat or cracked wheat, hamburger bun	panecillo de hamburguesa de trigo
+fdc:2707749	Roll, whole wheat	panecillo integral
+fdc:2707750	Roll, whole wheat, hot dog bun	panecillo de hot dog integral
+fdc:2707751	Roll, whole wheat, hamburger bun	panecillo de hamburguesa integral
+fdc:2707752	Roll, whole grain white	panecillo blanco integral
+fdc:2707753	Roll, whole grain white, hot dog bun	panecillo de hot dog blanco integral
+fdc:2707754	Roll, whole grain white, hamburger bun	panecillo de hamburguesa blanco integral
+fdc:2707755	Bread, rye	pan de centeno
+fdc:2707756	Bread, rye, toasted	pan de centeno tostado
+fdc:2707757	Bread, marble rye and pumpernickel	pan de centeno marmoleado y pumpernickel
+fdc:2707758	Bread, marble rye and pumpernickel, toasted	pan de centeno marmoleado y pumpernickel tostado
+fdc:2707759	Muffin, English, rye	muffin inglés de centeno
+fdc:2707760	Bread, pumpernickel	pan pumpernickel
+fdc:2707761	Bread, pumpernickel, toasted	pan pumpernickel tostado
+fdc:2707762	Bagel, pumpernickel	bagel pumpernickel
+fdc:2707763	Muffin, English, pumpernickel	muffin inglés pumpernickel
+fdc:2707764	Bread, black	pan negro
+fdc:2707765	Bread, black, toasted	pan negro tostado
+fdc:2707766	Roll, rye	panecillo de centeno
+fdc:2707767	Roll, pumpernickel	panecillo pumpernickel
+fdc:2707768	Bread, oatmeal	pan de avena
+fdc:2707769	Bread, oatmeal, toasted	pan de avena tostado
+fdc:2707770	Bread, oat bran	pan con salvado de avena
+fdc:2707771	Bread, oat bran, toasted	pan con salvado de avena tostado
+fdc:2707772	Bagel, oat bran	bagel de salvado de avena
+fdc:2707773	Roll, oatmeal	panecillo de avena
+fdc:2707774	Muffin, English, oat bran	muffin inglés de salvado de avena
+fdc:2707775	Muffin, English, oat bran, with raisins	muffin inglés de salvado de avena con pasas
+fdc:2707776	Bread, multigrain, toasted	pan multicereales tostado
+fdc:2707777	Bread, multigrain	pan multicereales
+fdc:2707778	Bread, multigrain, with raisins	pan multicereales con pasas
+fdc:2707779	Bread, multigrain, with raisins, toasted	pan multicereales con pasas tostado
+fdc:2707780	Bread, multigrain, reduced calorie and/or high fiber	pan multicereales bajo en calorías o rico en fibra
+fdc:2707781	Bread, multigrain, reduced calorie and/or high fiber, toasted	pan multicereales bajo en calorías o rico en fibra tostado
+fdc:2707782	Roll, multigrain	panecillo multicereales
+fdc:2707783	Roll, multigrain, hot dog bun	panecillo de hot dog multicereales
+fdc:2707784	Roll, multigrain, hamburger bun	panecillo de hamburguesa multicereales
+fdc:2707785	Bagel, multigrain	bagel multicereales
+fdc:2707786	Bagel, multigrain, with raisins	bagel multicereales con pasas
+fdc:2707787	Muffin, English, multigrain	muffin inglés multicereales
+fdc:2707788	Bread, barley	pan de cebada
+fdc:2707789	Bread, barley, toasted	pan de cebada tostado
+fdc:2707790	Bread, soy	pan de soja
+fdc:2707791	Bread, soy, toasted	pan de soja tostado
+fdc:2707792	Bread, sunflower meal	pan de harina de girasol
+fdc:2707793	Bread, sunflower meal, toasted	pan de harina de girasol tostado
+fdc:2707794	Bread, rice	pan de arroz
+fdc:2707795	Bread, rice, toasted	pan de arroz tostado
+fdc:2707796	Injera, Ethiopian bread	injera
+fdc:2707797	Bread, gluten free	pan sin gluten
+fdc:2707798	Bread, gluten free, toasted	pan sin gluten tostado
+fdc:2707799	Breadsticks, hard, gluten free	picos de pan crujientes sin gluten
+fdc:2707800	Roll, gluten free	panecillo sin gluten
+fdc:2707801	Biscuit, NFS	panecillo de soda
+fdc:2707802	Biscuit, from refrigerated dough	panecillo de soda de masa refrigerada
+fdc:2707803	Biscuit, from fast food / restaurant	panecillo de soda de fast food
+fdc:2707804	Biscuit, home recipe	panecillo de soda casero
+fdc:2707805	Biscuit, wheat	panecillo de soda de trigo
+fdc:2707806	Biscuit, cheese	panecillo de soda de queso
+fdc:2707807	Biscuit with fruit	panecillo de soda con fruta
+fdc:2707808	Scone	scone
+fdc:2707809	Scone, with fruit	scone con fruta
+fdc:2707810	Cornbread, prepared from mix	pan de maíz de preparado
+fdc:2707811	Cornbread, made from home recipe	pan de maíz casero
+fdc:2707812	Cornbread stuffing	relleno de pan de maíz
+fdc:2707813	Cornbread muffin, stick, round	magdalena de pan de maíz
+fdc:2707814	Cornbread muffin, stick, round, made from home recipe	magdalena de pan de maíz casera
+fdc:2707815	Corn flour patty or tart, fried	tortita de harina de maíz frita
+fdc:2707816	Corn pone, baked	tortita de maíz al horno
+fdc:2707817	Corn pone, fried	tortita de maíz frita
+fdc:2707818	Gordita/sope shell, plain, no filling	gordita sin relleno
+fdc:2707819	Hush puppy	hush puppy
+fdc:2707820	Johnnycake	johnnycake
+fdc:2707821	Spoonbread	spoonbread
+fdc:2707822	Tortilla, NFS	tortilla de trigo o maíz
+fdc:2707823	Tortilla, corn	tortilla de maíz
+fdc:2707824	Tortilla, flour	tortilla de trigo
+fdc:2707825	Tortilla, whole wheat	tortilla integral
+fdc:2707826	Taco shell, corn	taco de maíz
+fdc:2707827	Taco shell, flour	taco de trigo
+fdc:2707828	Arepa Dominicana	arepa dominicana
+fdc:2707829	Muffin, NFS	magdalena
+fdc:2707830	Muffin, fruit	magdalena de fruta
+fdc:2707831	Muffin, fruit, low fat	magdalena de fruta baja en grasa
+fdc:2707832	Muffin, chocolate chip	magdalena con pepitas de chocolate
+fdc:2707833	Muffin, chocolate	magdalena de chocolate
+fdc:2707834	Muffin, whole wheat	magdalena integral
+fdc:2707835	Muffin, wheat	magdalena de trigo
+fdc:2707836	Muffin, whole grain	magdalena multicereales
+fdc:2707837	Muffin, wheat bran	magdalena de salvado de trigo
+fdc:2707838	Muffin, bran with fruit, lowfat	magdalena de salvado con fruta baja en grasa
+fdc:2707839	Muffin, oatmeal	magdalena de avena
+fdc:2707840	Muffin, oat bran	magdalena de salvado de avena
+fdc:2707841	Muffin, plain	magdalena sencilla
+fdc:2707842	Muffin, cheese	magdalena de queso
+fdc:2707843	Muffin, pumpkin	magdalena de calabaza
+fdc:2707844	Muffin, zucchini	magdalena de calabacín
+fdc:2707845	Muffin, carrot	magdalena de zanahoria
+fdc:2707846	Popover	popover
+fdc:2707847	Bread, Boston Brown	pan Boston brown
+fdc:2707848	Bread, nut	pan de frutos secos
+fdc:2707849	Bread, pumpkin	pan de calabaza
+fdc:2707850	Bread, fruit	pan de fruta
+fdc:2707851	Bread, zucchini	pan de calabacín
+fdc:2707852	Bread, Irish soda	pan de soda irlandés
+fdc:2707853	Cake or cupcake, NFS	tarta o magdalena
+fdc:2707854	Cake, angel food	bizcocho angel food
+fdc:2707855	Cake or cupcake, apple	bizcocho de manzana
+fdc:2707856	Cake or cupcake, banana	tarta de plátano
+fdc:2707857	Cake or cupcake, Black Forest	tarta Selva Negra
+fdc:2707858	Cake, Boston cream pie	tarta Boston cream
+fdc:2707859	Cake or cupcake, carrot	tarta de zanahoria
+fdc:2707860	Cake or cupcake, coconut	tarta de coco
+fdc:2707861	Cheesecake, plain	tarta de queso sencilla
+fdc:2707862	Cheesecake, fruit	tarta de queso con fruta
+fdc:2707863	Cheesecake, chocolate	tarta de queso de chocolate
+fdc:2707864	Cake or cupcake, chocolate with white icing, bakery	tarta de chocolate con glaseado blanco de panadería
+fdc:2707865	Cake or cupcake, chocolate with white icing, from mix	tarta de chocolate con glaseado blanco de preparado
+fdc:2707866	Cake or cupcake, chocolate with chocolate icing, bakery	tarta de chocolate con glaseado de chocolate de panadería
+fdc:2707867	Cake or cupcake, chocolate with chocolate icing, from mix	tarta de chocolate con glaseado de chocolate de preparado
+fdc:2707868	Cake or cupcake, chocolate, no icing	tarta de chocolate sin glaseado
+fdc:2707869	Cake or cupcake, German chocolate	tarta de chocolate alemana
+fdc:2707870	Cake or cupcake, gluten free	tarta sin gluten
+fdc:2707871	Cake, chocolate, flourless	tarta de chocolate sin harina
+fdc:2707872	Cake, cream	tarta de nata
+fdc:2707873	Snack cake, chocolate	bizcocho de chocolate
+fdc:2707874	Snack cake, white	bizcocho blanco
+fdc:2707875	Cake, fruit cake	pastel de frutas
+fdc:2707876	Cake or cupcake, gingerbread	pan de jengibre
+fdc:2707877	Ice cream cake	tarta helada
+fdc:2707878	Cake, jelly roll	brazo de gitano
+fdc:2707879	Cake or cupcake, lemon	bizcocho de limón
+fdc:2707880	Cake or cupcake, marble	tarta marmoleada
+fdc:2707881	Cake or cupcake, peanut butter	bizcocho de crema de cacahuete
+fdc:2707882	Cake, pound	bizcocho pound cake
+fdc:2707883	Cake or cupcake, pumpkin	bizcocho de calabaza
+fdc:2707884	Cake or cupcake, red velvet	tarta red velvet
+fdc:2707885	Cake or cupcake, spice	tarta de especias
+fdc:2707886	Cake, sponge	bizcocho
+fdc:2707887	Cake or cupcake, strawberry	bizcocho de fresa
+fdc:2707888	Cake, torte	tarta
+fdc:2707889	Cake, tres leche	tarta tres leches
+fdc:2707890	Cake, pineapple, upside down	tarta invertida de piña
+fdc:2707891	Cake or cupcake, white with white icing, bakery	tarta blanca con glaseado blanco de panadería
+fdc:2707892	Cake or cupcake, white with white icing, from mix	tarta blanca con glaseado blanco de preparado
+fdc:2707893	Cake or cupcake, white with chocolate icing, bakery	tarta blanca con glaseado de chocolate de panadería
+fdc:2707894	Cake or cupcake, white with chocolate icing, from mix	tarta blanca con glaseado de chocolate de preparado
+fdc:2707895	Cake or cupcake, white, no icing	tarta blanca sin glaseado
+fdc:2707896	Cake, strawberry shortcake	tarta de fresa con nata
+fdc:2707897	Cake or cupcake, zucchini	tarta de calabacín
+fdc:2707898	Cookie, batter or dough, raw	masa de galletas cruda
+fdc:2707899	Cookie, NFS	galleta
+fdc:2707900	Cookie, almond	galleta de almendra
+fdc:2707901	Cookie, applesauce	galleta de compota de manzana
+fdc:2707902	Cookie, biscotti	biscotti
+fdc:2707903	Cookie, brownie, NS as to icing	brownie
+fdc:2707904	Cookie, brownie, without icing	brownie sin glaseado
+fdc:2707905	Cookie, brownie, with icing or filling	brownie con glaseado o relleno
+fdc:2707906	Cookie, brownie, reduced fat, NS as to icing	brownie bajo en grasa
+fdc:2707907	Cookie, butterscotch, brownie	brownie de caramelo
+fdc:2707908	Cookie, bar, with chocolate	barra de galleta con chocolate
+fdc:2707909	Cookie, chocolate chip	galleta con pepitas de chocolate
+fdc:2707910	Cookie, chocolate chip, made from home recipe or purchased at a bakery	galleta con pepitas de chocolate casera o de panadería
+fdc:2707911	Cookie, chocolate chip, reduced fat	galleta con pepitas de chocolate baja en grasa
+fdc:2707912	Cookie, chocolate chip sandwich	galleta sándwich con pepitas de chocolate
+fdc:2707913	Cookie, chocolate, made with rice cereal	galleta de chocolate con arroz inflado
+fdc:2707914	Cookie, chocolate, made with oatmeal and coconut, no bake	galleta de chocolate con avena y coco sin horno
+fdc:2707915	Cookie, chocolate or fudge	galleta de chocolate o fudge
+fdc:2707916	Cookie, marshmallow, chocolate-covered	galleta de malvavisco cubierta de chocolate
+fdc:2707917	Cookie, marshmallow pie, chocolate covered	tarta de malvavisco cubierta de chocolate
+fdc:2707918	Cookie, chocolate, with icing or coating	galleta de chocolate con glaseado
+fdc:2707919	Cookie, sugar wafer, chocolate-covered	barquillo cubierto de chocolate
+fdc:2707920	Cookie, chocolate sandwich	galleta sándwich de chocolate
+fdc:2707921	Cookie, chocolate sandwich, reduced fat	galleta sándwich de chocolate baja en grasa
+fdc:2707922	Cookie, chocolate, sandwich, with extra filling	galleta sándwich de chocolate con doble relleno
+fdc:2707923	Cookie, chocolate and vanilla sandwich	galleta sándwich de chocolate y vainilla
+fdc:2707924	Cookie, chocolate wafer	barquillo de chocolate
+fdc:2707925	Cookie, graham cracker with chocolate and marshmallow	galleta graham con chocolate y malvavisco
+fdc:2707926	Cookie bar, with chocolate, nuts, and graham crackers	barra de galleta con chocolate, frutos secos y galleta graham
+fdc:2707927	Cookie, coconut	galleta de coco
+fdc:2707928	Cookie, fruit-filled bar	barra de galleta rellena de fruta
+fdc:2707929	Cookie, fig bar	barra de higos
+fdc:2707930	Cookie, fortune	galleta de la fortuna
+fdc:2707931	Cookie, cone shell, ice cream type, wafer or cake	cucurucho de barquillo
+fdc:2707932	Cookie, gingersnaps	galleta de jengibre crujiente
+fdc:2707933	Cookie, granola	galleta de granola
+fdc:2707934	Cookie, ladyfinger	bizcocho de soletilla
+fdc:2707935	Cookie, lemon bar	barra de limón
+fdc:2707936	Cookie, macaroon	mostachón de coco
+fdc:2707937	Cookie, marshmallow, with coconut	galleta de malvavisco con coco
+fdc:2707938	Cookie, marshmallow, with rice cereal, no bake	galleta de malvavisco con arroz inflado sin horno
+fdc:2707939	Cookie, marshmallow, with rice cereal and chocolate chips	galleta de malvavisco con arroz inflado y pepitas de chocolate
+fdc:2707940	Cookie, marshmallow and peanut butter, with oat cereal, no bake	galleta de malvavisco y crema de cacahuete con avena sin horno
+fdc:2707941	Cookie, meringue	merengue
+fdc:2707942	Cookie, molasses	galleta de melaza
+fdc:2707943	Cookie, Lebkuchen	lebkuchen
+fdc:2707944	Cookie, multigrain, high fiber	galleta multicereales rica en fibra
+fdc:2707945	Cookie, oatmeal	galleta de avena
+fdc:2707946	Cookie, oatmeal, with raisins	galleta de avena con pasas
+fdc:2707947	Cookie, oatmeal, reduced fat, NS as to raisins	galleta de avena baja en grasa
+fdc:2707948	Cookie, oatmeal sandwich, with creme filling	galleta sándwich de avena con crema
+fdc:2707949	Cookie, oatmeal, with chocolate chips	galleta de avena con pepitas de chocolate
+fdc:2707950	Cookie, oatmeal sandwich, with peanut butter and jelly filling	galleta sándwich de avena con crema de cacahuete y mermelada
+fdc:2707951	Cookie, oatmeal, with chocolate and peanut butter, no bake	galleta de avena con chocolate y crema de cacahuete sin horno
+fdc:2707952	Cookie, peanut butter	galleta de crema de cacahuete
+fdc:2707953	Cookie, peanut butter, with chocolate	galleta de crema de cacahuete con chocolate
+fdc:2707954	Cookie, peanut butter with rice cereal, no bake	galleta de crema de cacahuete con arroz inflado sin horno
+fdc:2707955	Cookie, peanut butter sandwich	galleta sándwich de crema de cacahuete
+fdc:2707956	Cookie, with peanut butter filling, chocolate-coated	galleta rellena de crema de cacahuete cubierta de chocolate
+fdc:2707957	Cookie, Pfeffernusse	pfeffernüsse
+fdc:2707958	Cookie, Pizzelle	pizzelle
+fdc:2707959	Cookie, pumpkin	galleta de calabaza
+fdc:2707960	Cookie, raisin	galleta de pasas
+fdc:2707961	Cookie, raisin sandwich, cream-filled	galleta sándwich de pasas con crema
+fdc:2707962	Cookie, rum ball, no bake	trufa de ron
+fdc:2707963	Cookie, sandwich-type, not chocolate or vanilla	galleta sándwich rellena
+fdc:2707964	Cookie, shortbread	galleta de mantequilla
+fdc:2707965	Cookie, shortbread, reduced fat	galleta de mantequilla baja en grasa
+fdc:2707966	Cookie, shortbread, with icing or filling	galleta de mantequilla con glaseado o relleno
+fdc:2707967	Pocky	Pocky
+fdc:2707968	Cookie, animal	galletas de animales
+fdc:2707969	Cookie, animal, with frosting or icing	galletas de animales con glaseado
+fdc:2707970	Cookie, butter or sugar	galleta de azúcar
+fdc:2707971	Marie biscuit	galleta María
+fdc:2707972	Cookie, butter or sugar, with fruit and/or nuts	galleta de azúcar con fruta y frutos secos
+fdc:2707973	Cookie, sugar wafer	barquillo de azúcar
+fdc:2707974	Cookie, toffee bar	barra de caramelo
+fdc:2707975	Cookie, vanilla sandwich	galleta sándwich de vainilla
+fdc:2707976	Cookie, vanilla sandwich, extra filling	galleta sándwich de vainilla con doble relleno
+fdc:2707977	Cookie, vanilla sandwich, reduced fat	galleta sándwich de vainilla baja en grasa
+fdc:2707978	Cookie, butter or sugar, with chocolate icing or filling	galleta de azúcar con glaseado o relleno de chocolate
+fdc:2707979	Cookie, butter or sugar, with icing or filling other than chocolate	galleta de azúcar con glaseado o relleno
+fdc:2707980	Cookie, tea, Japanese	galleta de té japonesa
+fdc:2707981	Cookie, vanilla wafer	barquillo de vainilla
+fdc:2707982	Cookie, vanilla wafer, reduced fat	barquillo de vainilla bajo en grasa
+fdc:2707983	Cookie, vanilla with caramel, coconut, and chocolate coating	galleta de vainilla con caramelo, coco y cobertura de chocolate
+fdc:2707984	Cookie, rugelach	rugelach
+fdc:2707985	Cookie, chocolate chip, reduced sugar	galleta con pepitas de chocolate baja en azúcar
+fdc:2707986	Cookie, oatmeal, reduced sugar	galleta de avena baja en azúcar
+fdc:2707987	Cookie, sandwich, reduced sugar	galleta sándwich baja en azúcar
+fdc:2707988	Cookie, sugar or plain, sugar free	galleta de azúcar sin azúcar
+fdc:2707989	Cookie, sugar wafer, sugar free	barquillo de azúcar sin azúcar
+fdc:2707990	Cookie, peanut butter, sugar free	galleta de crema de cacahuete sin azúcar
+fdc:2707991	Cookie, gluten free	galleta sin gluten
+fdc:2707992	Cookies, Puerto Rican style	galletas a la puertorriqueña
+fdc:2707993	Pie, NFS	pastel
+fdc:2707994	Tart, all types	tartaleta
+fdc:2707995	Pie, apple	tarta de manzana americana
+fdc:2707996	Pie, apple, fast food	tarta de manzana de fast food
+fdc:2707997	Pie, berry	tarta de bayas
+fdc:2707998	Pie, blueberry	pastel de arándanos
+fdc:2707999	Pie, cherry	pastel de cereza
+fdc:2708000	Pie, lemon	pastel de limón
+fdc:2708001	Pie, key lime	tarta de lima
+fdc:2708002	Pie, peach	pastel de melocotón
+fdc:2708003	Pie, strawberry	tarta de fresa
+fdc:2708004	Pie, banana cream	tarta de plátano con nata
+fdc:2708005	Pie, chocolate cream	tarta de chocolate con nata
+fdc:2708006	Pie, coconut cream	tarta de coco con nata
+fdc:2708007	Pie, custard	tarta de natillas
+fdc:2708008	Dessert pizza	pizza dulce
+fdc:2708009	Pie, peanut butter cream	tarta de crema de cacahuete
+fdc:2708010	Pie, pineapple cream	tarta de piña con nata
+fdc:2708011	Pie, pumpkin	tarta de calabaza
+fdc:2708012	Pie, sweet potato	tarta de boniato
+fdc:2708013	Pie, vanilla cream	tarta de vainilla con nata
+fdc:2708014	Pie, lemon meringue	tarta de limón con merengue
+fdc:2708015	Pie, pecan	tarta de nueces pecanas
+fdc:2708016	Pie, oatmeal	tarta de avena
+fdc:2708017	Pie shell	base de tarta
+fdc:2708018	Pie shell, graham cracker	base de tarta de galleta graham
+fdc:2708019	Cobbler, apple	cobbler de manzana
+fdc:2708020	Cobbler, berry	cobbler de bayas
+fdc:2708021	Cobbler, cherry	cobbler de cereza
+fdc:2708022	Cobbler, peach	cobbler de melocotón
+fdc:2708023	Crisp, apple	crisp de manzana
+fdc:2708024	Fritter, plain	buñuelo
+fdc:2708025	Fritter, fruit	buñuelo de fruta
+fdc:2708026	Crisp, berry	crisp de bayas
+fdc:2708027	Crisp, cherry	crisp de cereza
+fdc:2708028	Crisp, peach	crisp de melocotón
+fdc:2708029	Cream puff, eclair, custard or cream filled, NS as to icing	éclair con crema
+fdc:2708030	Cream puff, eclair, custard or cream filled, not iced	éclair con crema sin glaseado
+fdc:2708031	Cream puff, eclair, custard or cream filled, iced	éclair con crema glaseado
+fdc:2708032	Cream puff, eclair, custard or cream filled, iced, reduced fat	éclair con crema glaseado bajo en grasa
+fdc:2708033	Cream puff, no filling or icing	profiterol sin relleno
+fdc:2708034	Sopaipilla, without syrup or honey	sopaipilla sin sirope
+fdc:2708035	Sopaipilla with syrup or honey	sopaipilla con sirope o miel
+fdc:2708036	Crepe, chocolate filled	crepa rellena de chocolate
+fdc:2708037	Crepe, fruit filled	crepa rellena de fruta
+fdc:2708038	Tamale, sweet	tamal dulce
+fdc:2708039	Strudel, apple	strudel de manzana
+fdc:2708040	Strudel, berry	strudel de bayas
+fdc:2708041	Strudel, cherry	strudel de cereza
+fdc:2708042	Strudel, cheese	strudel de queso
+fdc:2708043	Strudel, peach	strudel de melocotón
+fdc:2708044	Baklava	baklava
+fdc:2708045	Basbousa	basbousa
+fdc:2708046	Turnover, fruit	empanadilla de fruta
+fdc:2708047	Pastry, fruit-filled	pastel relleno de fruta
+fdc:2708048	Pastry, made with bean or lotus seed paste filling, baked	pastel relleno de pasta de judías o loto
+fdc:2708049	Pastry, made with bean paste and salted egg yolk filling, baked	pastel de pasta de judías con yema salada
+fdc:2708050	Pastry, Chinese, made with rice flour	pastel chino de harina de arroz
+fdc:2708051	Pastry, cookie type, fried	pastel frito tipo galleta
+fdc:2708052	Pastry, Italian, with cheese	pastel italiano con queso
+fdc:2708053	Pastry, puff	hojaldre
+fdc:2708054	Pastry, puff, custard or cream filled, iced or not iced	hojaldre relleno de crema
+fdc:2708055	Cheese pastry puffs	bocados de hojaldre de queso
+fdc:2708056	Pastry, mainly flour and water, fried	tortita frita de harina y agua
+fdc:2708057	Empanada, fruit	empanada de fruta
+fdc:2708058	Breakfast pastry, NFS	bollería de desayuno
+fdc:2708059	Danish pastry, plain or spice	bollo danés
+fdc:2708060	Danish pastry, with fruit	bollo danés con fruta
+fdc:2708061	Danish pastry, with cheese	bollo danés con queso
+fdc:2708062	Doughnut, NFS	donut
+fdc:2708063	Doughnut, cake type, plain	donut denso
+fdc:2708064	Doughnut, chocolate	donut de chocolate
+fdc:2708065	Doughnut, cake type, powdered sugar	donut denso con azúcar glas
+fdc:2708066	Doughnut, cake type, with icing	donut denso con glaseado
+fdc:2708067	Doughnut, cake type, chocolate icing	donut denso con glaseado de chocolate
+fdc:2708068	Doughnut, chocolate, with chocolate icing	donut de chocolate con glaseado de chocolate
+fdc:2708069	Doughnut holes	bolas de donut
+fdc:2708070	Churros	churros
+fdc:2708071	Beignet	beignet
+fdc:2708072	Doughnut, yeast type	donut de levadura
+fdc:2708073	Doughnut, yeast type, with chocolate icing	donut de levadura con glaseado de chocolate
+fdc:2708074	Doughnut, jelly	donut de mermelada
+fdc:2708075	Doughnut, custard-filled	donut relleno de crema
+fdc:2708076	Doughnut, custard-filled, with icing	donut relleno de crema con glaseado
+fdc:2708077	Breakfast tart	tartaleta de desayuno
+fdc:2708078	Breakfast tart, lowfat	tartaleta de desayuno baja en grasa
+fdc:2708079	Coffee cake, crumb or quick-bread type	pastel americano de migas
+fdc:2708080	Coffee cake, crumb or quick-bread type, with fruit	pastel americano de migas con fruta
+fdc:2708081	Coffee cake, crumb or quick-bread type, cheese-filled	pastel americano relleno de queso
+fdc:2708082	Cereal or granola bar (General Mills Fiber One Chewy Bar)	barra Fiber One
+fdc:2708083	Cereal or granola bar (Kellogg's Nutri-Grain Cereal Bar)	barra Nutri-Grain
+fdc:2708084	Cereal or granola bar (Kellogg's Nutri-Grain Yogurt Bar)	barra Nutri-Grain de yogur
+fdc:2708085	Cereal or granola bar (Kellogg's Nutri-Grain Fruit and Nut Bar)	barra Nutri-Grain de fruta y frutos secos
+fdc:2708086	Milk 'n Cereal bar	barra Milk 'n Cereal
+fdc:2708087	Cereal or granola bar (Kellogg's Special K bar)	barra Special K
+fdc:2708088	Cereal or granola bar (Kashi Chewy)	barra Kashi chewy
+fdc:2708089	Cereal or granola bar (Kashi Crunchy)	barra Kashi crunchy
+fdc:2708090	Cereal or granola bar (KIND Fruit and Nut Bar)	barra KIND de fruta y frutos secos
+fdc:2708091	Cereal or granola bar (General Mills Nature Valley Chewy Trail Mix)	barra Nature Valley trail mix chewy
+fdc:2708092	Cereal or granola bar, with yogurt coating (General Mills Nature Valley Chewy Granola Bar)	barra Nature Valley con cobertura de yogur
+fdc:2708093	Cereal or granola bar (General Mills Nature Valley Sweet and Salty Granola Bar)	barra Nature Valley dulce y salada
+fdc:2708094	Cereal or granola bar (General Mills Nature Valley Crunchy Granola Bar)	barra Nature Valley crunchy
+fdc:2708095	Cereal or granola bar (Quaker Chewy Granola Bar)	barra Quaker chewy
+fdc:2708096	Cereal or granola bar (Quaker Chewy 90 Calorie Granola Bar)	barra Quaker 90 calorías
+fdc:2708097	Cereal or granola bar (Quaker Chewy 25% Less Sugar Granola Bar)	barra Quaker baja en azúcar
+fdc:2708098	Cereal or granola bar (Quaker Chewy Dipps Granola Bar)	barra Quaker Dipps
+fdc:2708099	Cereal or granola bar (Quaker Granola Bites)	Quaker Granola Bites
+fdc:2708100	Snack bar, oatmeal	barra de avena
+fdc:2708101	Cereal or Granola bar, NFS	barra de cereales
+fdc:2708102	Cereal or granola bar, lowfat, NFS	barra de cereales baja en grasa
+fdc:2708103	Cereal or granola bar, nonfat	barra de cereales sin grasa
+fdc:2708104	Cereal or granola bar, reduced sugar, NFS	barra de cereales baja en azúcar
+fdc:2708105	Cereal or granola bar, fruit and nut	barra de cereales de fruta y frutos secos
+fdc:2708106	Cereal or granola bar, peanuts , oats, sugar, wheat germ	barra de cacahuetes, avena y germen de trigo
+fdc:2708107	Cereal or granola bar, chocolate coated, NFS	barra de cereales cubierta de chocolate
+fdc:2708108	Cereal or granola bar, with coconut, chocolate coated	barra de cereales con coco cubierta de chocolate
+fdc:2708109	Cereal or granola bar with nuts, chocolate coated	barra de cereales con frutos secos cubierta de chocolate
+fdc:2708110	Cereal or granola bar, oats, nuts, coated with non-chocolate coating	barra de cereales de avena y frutos secos con cobertura blanca
+fdc:2708111	Cereal or granola bar, coated with non-chocolate coating	barra de cereales con cobertura blanca
+fdc:2708112	Cereal or granola bar, high fiber, coated with non-chocolate yogurt coating	barra de cereales rica en fibra con cobertura de yogur
+fdc:2708113	Cereal or granola bar, with rice cereal	barra de cereales con arroz inflado
+fdc:2708114	Breakfast bar, NFS	barra de desayuno
+fdc:2708115	Breakfast bar, date, with yogurt coating	barra de desayuno de dátiles con cobertura de yogur
+fdc:2708116	Breakfast bar, cereal crust with fruit filling, lowfat	barra de desayuno rellena de fruta baja en grasa
+fdc:2708117	Nutrition bar (Balance Original Bar)	barra nutritiva Balance
+fdc:2708118	Nutrition bar (Clif Bar)	barra nutritiva Clif Bar
+fdc:2708119	Nutrition bar (Clif Kids Organic Zbar)	barra nutritiva Clif Zbar infantil
+fdc:2708120	Nutrition bar (PowerBar)	barra nutritiva PowerBar
+fdc:2708121	Nutrition bar (Slim Fast Original Meal Bar)	barra nutritiva Slim Fast
+fdc:2708122	Nutrition bar (Snickers Marathon Protein Bar)	barra proteica Snickers Marathon
+fdc:2708123	Nutrition bar (South Beach Living Meal Bar)	barra nutritiva South Beach
+fdc:2708124	Nutrition bar (South Beach Living High Protein Bar)	barra proteica South Beach
+fdc:2708125	Nutrition bar (Tiger's Milk)	barra nutritiva Tiger's Milk
+fdc:2708126	Nutrition bar (Zone Perfect Classic Crunch)	barra nutritiva Zone Perfect
+fdc:2708127	Nutrition bar or meal replacement bar, NFS	barra nutritiva
+fdc:2708128	Baby Toddler snack, NFS	snack infantil
+fdc:2708129	Baby Toddler bar	barra infantil
+fdc:2708130	Baby Toddler cookie	galleta infantil
+fdc:2708131	Baby Toddler biscuit	bizcocho infantil
+fdc:2708132	Crackers, NFS	crackers
+fdc:2708133	Graham crackers	galletas graham
+fdc:2708134	Graham crackers (Teddy Grahams)	galletas Teddy Grahams
+fdc:2708135	Graham crackers, chocolate covered	galletas graham cubiertas de chocolate
+fdc:2708136	Crackers, oatmeal	crackers de avena
+fdc:2708137	Crackers, Cuban	crackers cubanos
+fdc:2708138	Graham crackers, reduced fat	galletas graham bajas en grasa
+fdc:2708139	Graham crackers, sandwich, with filling	galletas graham sándwich rellenas
+fdc:2708140	Crackers, breakfast biscuit	galletas de desayuno
+fdc:2708141	Crackers, butter, reduced sodium	crackers de mantequilla bajos en sodio
+fdc:2708142	Crackers, matzo, reduced sodium	matzá bajo en sodio
+fdc:2708143	Crackers, saltine, reduced sodium	galletas saladas bajas en sodio
 fdc:2727572	Beef, short loin (NY strip steak), raw	lomo bajo de vacuno crudo
 fdc:321358	Hummus, commercial	hummus
 fdc:321360	Tomatoes, grape, raw	tomates cherry
@@ -9646,21 +11026,21 @@ fdc:746785	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	carne picada d
 fdc:746952	Ham, sliced, restaurant	jamón en lonchas de restaurante
 fdc:747429	Cheese, American, restaurant	queso americano de restaurante
 fdc:747430	Beans, Dry, Medium Red (0% moisture)	alubias medianas rojas secas
-fdc:747431	Beans, Dry, Red (0% moisture)	alubias rojas secas
+fdc:747431	Beans, Dry, Red (0% moisture)	judías rojas secas
 fdc:747432	Beans, Dry, Flor de Mayo (0% moisture)	alubias Flor de Mayo secas
 fdc:747433	Beans, Dry, Brown (0% moisture)	alubias marrones secas
 fdc:747434	Beans, Dry, Tan (0% moisture)	alubias canelas secas
 fdc:747435	Beans, Dry, Light Tan (0% moisture)	alubias beige secas
 fdc:747436	Beans, Dry, Carioca (0% moisture)	alubias carioca secas
 fdc:747437	Beans, Dry, Cranberry (0% moisture)	alubias borlotti secas
-fdc:747438	Beans, Dry, Light Red Kidney (0% moisture)	alubias rojas claras secas
+fdc:747438	Beans, Dry, Light Red Kidney (0% moisture)	judías rojas claras secas
 fdc:747439	Beans, Dry, Pink (0% moisture)	alubias rosadas secas
-fdc:747440	Beans, Dry, Dark Red Kidney (0% moisture)	alubias rojas oscuras secas
+fdc:747440	Beans, Dry, Dark Red Kidney (0% moisture)	judías rojas oscuras secas
 fdc:747441	Beans, Dry, Navy (0% moisture)	alubias blancas secas
 fdc:747442	Beans, Dry, Small White (0% moisture)	alubias pequeñas blancas secas
 fdc:747443	Beans, Dry, Small Red (0% moisture)	alubias pequeñas rojas secas
-fdc:747444	Beans, Dry, Black (0% moisture)	alubias negras secas
-fdc:747445	Beans, Dry, Pinto (0% moisture)	alubias pintas secas
+fdc:747444	Beans, Dry, Black (0% moisture)	judías negras secas
+fdc:747445	Beans, Dry, Pinto (0% moisture)	judías pintas secas
 fdc:747446	Beans, Dry, Great Northern (0% moisture)	alubias blancas del norte secas
 fdc:747447	Broccoli, raw	brócoli
 fdc:747693	Ketchup, restaurant	ketchup de restaurante
