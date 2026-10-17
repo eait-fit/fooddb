@@ -1837,7 +1837,7 @@ bls:H130610	Hazelnut roasted without fat	avellana tostada
 bls:H130800	Hazelnut butter (100 % pure)	crema de avellanas pura
 bls:H150100	Coconut meat, raw	carne de coco en crudo
 bls:H150400	Coconut meat, grated, dried	coco rallado seco
-bls:H151000	Coconut water (liquid from coconuts)	agua de coco natural
+bls:H151000	Coconut water (liquid from coconuts)	agua de coco fresca
 bls:H154000	Coconut milk	leche de coco para cocinar
 bls:H160100	Pecan	pacana
 bls:H160600	Pecan roasted without fat	pacana tostada
@@ -1880,7 +1880,7 @@ bls:H430610	Sunflower seeds roasted without fat	pipas de girasol tostadas
 bls:H450100	Poppy seed	semillas de amapola
 bls:H450400	Poppy seed ground	semillas de amapola molidas
 bls:H480100	Chia seeds	semillas de chía
-bls:H510802	Olives green, pickled, drained	aceitunas verdes en vinagre escurridas
+bls:H510802	Olives green, pickled, drained	aceitunas verdes en salmuera escurridas
 bls:H510900	Olives green, filled with sweet pepper paste, pickled, drained	aceitunas verdes rellenas de pimiento escurridas
 bls:H511900	Olives green, filled with almonds, pickled, drained	aceitunas verdes rellenas de almendra escurridas
 bls:H520800	Olives blackened, in brine, drained	aceitunas negras en salmuera escurridas
@@ -1928,7 +1928,7 @@ bls:H800300	Almond drink sweetened, flavoured, fortified with calcium	bebida de 
 bls:H800400	Almond drink sweetened, flavoured, fortified with vitamins and calcium	bebida de almendra azucarada aromatizada con vitaminas y calcio
 bls:H810000	Fruit and nut mix	mezcla de frutos secos y pasas
 bls:H810100	Peanut roasted, crispy coated	cacahuetes japoneses
-bls:H841100	Soya drink unsweetened	bebida de soja no azucarada
+bls:H841100	Soya drink unsweetened	bebida de soja sin azúcares
 bls:H841400	Soya drink unsweetened, fortified with vitamins and calcium	bebida de soja sin azúcar con vitaminas y calcio
 bls:H842400	Soya drink sweetened, flavoured	bebida de soja con sabor, azucarada
 bls:H842600	Soya drink sweetened, flavoured, fortified with vitamins and calcium	bebida de soja azucarada aromatizada con vitaminas y calcio
@@ -1978,12 +1978,12 @@ bls:K120264	Potatoe unpeeled, deep-frozen, baked	patata con piel congelada asada
 bls:K130200	Potato chips/french fries, deep-frozen	patatas fritas prefritas congeladas
 bls:K130262	Potato chips/french fries, deep-frozen, baked	patatas fritas congeladas al horno
 bls:K130362	Potato chips/french fries, deep-frozen, baked, salted	patatas fritas congeladas al horno saladas
-bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	patatas fritas congeladas fritas
-bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	patatas fritas congeladas fritas saladas
+bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	patatas congeladas fritas
+bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	patatas congeladas fritas saladas
 bls:K213000	Potatoes mashed instant powder	puré de patatas en polvo
 bls:K230000	Potato starch (potato flour)	fécula de patata
-bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	bolas de patata de patata cruda en polvo
-bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	bolas de patata de patata cocida en polvo
+bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	bolas de patata cruda en polvo
+bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	bolas de patata cocida en polvo
 bls:K241200	Potato dumpling half and half, deep-frozen	bolas de patata mixtas congeladas
 bls:K241232	Potato dumpling half and half, deep-frozen, poached	bolas de patata mixtas congeladas escalfadas
 bls:K260200	Potato pancakes deep-frozen	tortitas de patata congeladas
@@ -2064,11 +2064,11 @@ bls:K703902	Morel canned, drained	colmenilla en conserva, escurrida
 bls:K704100	Brown birch bolete raw	boleto de abedul en crudo
 bls:K704152	Brown birch bolete stewed	boleto de abedul estofado
 bls:K704182	Brown birch bolete fried without fat (pan)	boleto de abedul a la plancha
-bls:K706100	Brown-yellow boletus (slippery jack) raw	mocós en crudo
-bls:K706152	Brown-yellow boletus (slippery jack) stewed	mocós estofado
-bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	mocós a la plancha
-bls:K706400	Brown-yellow boletus (slippery jack) dried	mocós seco
-bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	mocós seco cocido
+bls:K706100	Brown-yellow boletus (slippery jack) raw	boleto viscoso en crudo
+bls:K706152	Brown-yellow boletus (slippery jack) stewed	boleto viscoso estofado
+bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	boleto viscoso a la plancha
+bls:K706400	Brown-yellow boletus (slippery jack) dried	boleto viscoso seco
+bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	boleto viscoso seco cocido
 bls:K707100	Saffron milk cap (red pine mushroom) raw	níscalo en crudo
 bls:K707152	Saffron milk cap (red pine mushroom) stewed	níscalo estofado
 bls:K707182	Saffron milk cap (red pine mushroom) fried without fat (pan)	níscalo a la plancha
@@ -2153,9 +2153,9 @@ bls:M141500	Yogurt min. 10 % fat	yogur con nata 10 %
 bls:M148100	Yogurt from skimmed milk, max. 0.5 % fat, fortified with skimmed milk powder	yogur desnatado 0,5 % con leche en polvo
 bls:M148200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, fortified with skimmed milk powder	yogur semidesnatado 1,5 % con leche en polvo
 bls:M148300	Yogurt min. 3.5 % fat, fortified with skimmed milk powder	yogur 3,5 % con leche en polvo
-bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	yogur con nata 10 % con leche en polvo
+bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	yogur con nata 10 % y leche en polvo
 bls:M149500	Yogurt made from sheep's milk	yogur de oveja
-bls:M150000	Buttermilk	suero de mantequilla natural
+bls:M150000	Buttermilk	bebida de suero de mantequilla
 bls:M161000	Sweet whey	suero dulce
 bls:M162000	Sour whey	suero ácido
 bls:M171500	Coffee cream min. 10 % fat	nata para café 10 %
@@ -2169,7 +2169,7 @@ bls:M176800	Creme fraiche 30 % fat	crème fraîche 30 %
 bls:M181100	Condensed milk max. 1 % fat, sweetened	leche condensada desnatada azucarada
 bls:M181400	Condensed milk min. 8 % fat, sweetened	leche condensada azucarada 8 %
 bls:M182100	Evaporated milk max. 1 % fat	leche evaporada desnatada
-bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	leche evaporada parcialmente desnatada
+bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	leche evaporada semidesnatada 1-7,5 %
 bls:M182400	Evaporated milk min. 7.5 % fat	leche evaporada entera 7,5 %
 bls:M182500	Evaporated milk 10 % fat	leche evaporada 10 %
 bls:M1A3100	Milk skimmed, max. 0.5 % fat, lactose-free, ultra-heated	leche desnatada UHT sin lactosa 0,5 %
@@ -2190,44 +2190,44 @@ bls:M231500	Kefir min. 10 % fat, with fruit preparation, sweetened	kéfir de nat
 bls:M241100	Yogurt mild, max. 1 % fat, with fruit preparation, sweetened	yogur suave desnatado con fruta azucarado
 bls:M241200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur semidesnatado con fruta azucarado
 bls:M241300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened	yogur suave con fruta azucarado
-bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	yogur con nata con fruta azucarado
+bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	yogur con nata y fruta azucarado
 bls:M246000	Yogurt min. 3.5 % fat, with chocolate preparation, sweetened	yogur con chocolate azucarado
 bls:M248000	Yogurt min. 3.5 % fat, with coffee preparation, sweetened	yogur con café azucarado
 bls:M252000	Buttermilk drink with fruit preparation, sweetened	bebida de suero de mantequilla con fruta azucarada
 bls:M255000	Buttermilk dessert with cream and fruit preparation, sweetened	postre de suero de mantequilla con nata y fruta azucarado
-bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	bebida de suero de mantequilla con fruta azucarada con vitaminas
-bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	bebida de suero con zumo de frutas y edulcorante con vitaminas
+bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	bebida de suero de mantequilla con fruta, azucarada, con vitaminas
+bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	bebida de suero con zumo de frutas, edulcorante y vitaminas
 bls:M276300	Yogurt min. 3.5 % fat, with fruit-chocolate preparation, sweetened	yogur con fruta y chocolate azucarado
 bls:M293300	Yogurt min. 3.5 % fat, with chocolate-cereal preparation, sweetened	yogur con chocolate y cereales azucarado
 bls:M2A0100	Milk drink < 1 % fat, flavoured, with sugar and artificial sweeteners	bebida láctea desnatada aromatizada con azúcar y edulcorante
 bls:M2A0200	Milk drink 1.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 1,5 % aromatizada azucarada con vitaminas
 bls:M2A0300	Milk drink 3.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 3,5 % aromatizada azucarada con vitaminas
 bls:M2A1100	Milk drink < 1 % fat, flavoured, with artificial sweeteners	bebida láctea desnatada aromatizada con edulcorante
-bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	bebida láctea desnatada probiótica con azúcar y edulcorante con vitaminas
+bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	bebida láctea desnatada probiótica con azúcar, edulcorante y vitaminas
 bls:M2A2200	Milk drink > 1 % fat, probiotic, flavoured, sweetened, fortified with vitamins	bebida láctea probiótica aromatizada azucarada con vitaminas
 bls:M2A3200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened, lactose-free	yogur semidesnatado con fruta azucarado sin lactosa
 bls:M2A3300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened, lactose-free	yogur suave con fruta azucarado sin lactosa
-bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	bebida láctea desnatada con cacao con azúcar y edulcorante
+bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	bebida láctea desnatada con cacao, azúcar y edulcorante
 bls:M2A7200	Milk drink 1.5 % fat, with coffee, sweetened	bebida láctea 1,5 % con café azucarada
-bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	yogur semidesnatado con fruta con azúcar y edulcorante
-bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	yogur desnatado con vainilla con azúcar y edulcorante
+bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	yogur semidesnatado con fruta, azúcar y edulcorante
+bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	yogur desnatado con vainilla, azúcar y edulcorante
 bls:M2H2300	Milkshake 3.5 % fat sweetened	batido 3,5 % azucarado
 bls:M2H7300	Milkshake 3.5 % fat, with cocoa/chocolate, sweetened	batido de chocolate 3,5 % azucarado
-bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	bebida láctea 1,5 % con café con edulcorante
+bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	bebida láctea 1,5 % con café y edulcorante
 bls:M2I5200	Milk drink 1.5 % fat, with coffee, unsweetened	bebida láctea 1,5 % con café sin azúcar
-bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	yogur desnatado con fruta con azúcar y edulcorante con vitaminas
-bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	yogur desnatado con fruta con azúcar y edulcorante
+bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	yogur desnatado con fruta, azúcar, edulcorante y vitaminas
+bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	yogur desnatado con fruta, azúcar y edulcorante
 bls:M2J7100	Yogurt drink from skimmed milk, max. 0.5 % fat, with fruit preparation, sweetened	yogur líquido desnatado con fruta azucarado
 bls:M2K7200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit-cereal preparation, sweetened	yogur semidesnatado con fruta y cereales azucarado
 bls:M2L2200	Yogurt drink low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur líquido semidesnatado con fruta azucarado
 bls:M2L2300	Yogurt drink min. 3.5 % fat, with fruit preparation, sweetened	yogur líquido con fruta azucarado
 bls:M2L7300	Yogurt min. 3.5 % fat, with fruit-cereal preparation, sweetened	yogur con fruta y cereales azucarado
-bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	yogur con nata con chocolate azucarado
+bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	yogur con nata y chocolate azucarado
 bls:M2N1400	Yogurt min. 10 % fat, with vanilla preparation, sweetened	yogur con nata de vainilla azucarado
-bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	yogur con nata con fruta con edulcorante
+bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	yogur con nata, fruta y edulcorante
 bls:M2N6400	Yogurt min. 10 % fat, sweetened	yogur con nata azucarado
-bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 1,5 % con cacao azucarada con vitaminas
-bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 3,5 % con cacao azucarada con vitaminas
+bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 1,5 % con cacao, azucarada, con vitaminas
+bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 3,5 % con cacao, azucarada, con vitaminas
 bls:M2R2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with vanilla preparation, sweetened	yogur semidesnatado de vainilla azucarado
 bls:M2R7300	Yogurt min. 3.5 % fat, with crunchy-muesli mix, sweetened	yogur con muesli crujiente azucarado
 bls:M2R8300	Yogurt min. 3.5 % fat, with vanilla preparation, sweetened	yogur de vainilla azucarado
@@ -2391,12 +2391,12 @@ bls:M882000	Whole milk powder	leche entera en polvo
 bls:M884000	Skimmed milk powder	leche desnatada en polvo
 bls:M886000	Buttermilk powder	suero de mantequilla en polvo
 bls:M887000	Sweet whey powder	suero dulce en polvo
-bls:M8A1200	Cream cheese preparation min. 10 % fat in dry matter, with fruit preparation, sweetened, fortified with vitamin D and Calcium	queso crema 10 % grasa en seco con fruta con vitamina D y calcio
-bls:M8A1300	Cream cheese preparation min. 20 % fat in dry matter, with fruit preparation, sweetened, fortified with Calcium	queso crema 20 % grasa en seco con fruta con calcio
+bls:M8A1200	Cream cheese preparation min. 10 % fat in dry matter, with fruit preparation, sweetened, fortified with vitamin D and Calcium	queso crema 10 % grasa en seco con fruta, azucarado, con vitamina D y calcio
+bls:M8A1300	Cream cheese preparation min. 20 % fat in dry matter, with fruit preparation, sweetened, fortified with Calcium	queso crema 20 % grasa en seco con fruta, azucarado, con calcio
 bls:M8A4000	Quark preparation min. 10 % fat in dry matter, with herbs	preparado de requesón 10 % grasa en seco con hierbas
 bls:M8A5000	Quark preparation min. 20 % fat in dry matter, with herbs	preparado de requesón 20 % grasa en seco con hierbas
 bls:M8A6000	Quark preparation min. 30 % fat in dry matter, with herbs	preparado de requesón 30 % grasa en seco con hierbas
-bls:M8B2100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sugar and artificial sweeteners	preparado de requesón desnatado con fruta con azúcar y edulcorante
+bls:M8B2100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sugar and artificial sweeteners	preparado de requesón desnatado con fruta, azúcar y edulcorante
 bls:M8C3300	Quark preparation min. 20 % fat in dry matter, with vanilla preparation, sweetened	preparado de requesón 20 % grasa en seco de vainilla azucarado
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	agua con sabor sin azúcar
 bls:N002000	Nearwater/Aqua Plus beverage, flavoured, sweetened	agua con sabor azucarada
@@ -2404,8 +2404,8 @@ bls:N003000	Aperitif alcohol-free	aperitivo sin alcohol
 bls:N005000	Sparkling wine alcohol-free	cava sin alcohol
 bls:N014000	Wine alcohol-free	vino desalcoholizado
 bls:N019000	Iced tea lemon-peach-flavoured, sweetened	té frío sabor limón y melocotón azucarado
-bls:N0A1000	Nearwater/Aqua Plus beverage, with fruit juice, flavoured, sweetened	agua con sabor con zumo de frutas azucarada
-bls:N0A1100	Nearwater/Aqua Plus beverage, flavoured, with sugar and artificial sweeteners	agua con sabor con azúcar y edulcorante
+bls:N0A1000	Nearwater/Aqua Plus beverage, with fruit juice, flavoured, sweetened	agua con sabor y zumo de frutas azucarada
+bls:N0A1100	Nearwater/Aqua Plus beverage, flavoured, with sugar and artificial sweeteners	agua con sabor, azúcar y edulcorante
 bls:N110000	Drinking water	agua potable
 bls:N120000	Natural mineral water	agua mineral
 bls:N127000	Natural mineral water carbonated	agua mineral con gas
@@ -2418,12 +2418,12 @@ bls:N230000	Fruit juice beverage currant	bebida de zumo de grosella
 bls:N250000	Fruit juice beverage citrus fruit	bebida de zumo de cítricos
 bls:N251000	Fruit juice beverage with sugar and artificial sweeteners	bebida de zumo con azúcar y edulcorante
 bls:N252000	Fruit juice beverage fortified with vitamins	bebida de zumo con vitaminas
-bls:N253000	Fruit juice beverage with artificial sweeteners, fortified with vitamins	bebida de zumo con edulcorante con vitaminas
+bls:N253000	Fruit juice beverage with artificial sweeteners, fortified with vitamins	bebida de zumo con edulcorante y vitaminas
 bls:N256000	Apple juice spritzer	zumo de manzana con agua con gas
 bls:N257000	Orange juice spritzer	zumo de naranja con agua con gas
 bls:N258000	Grape juice spritzer	zumo de uva con agua con gas
 bls:N259000	Isotonic beverage, sweetened, fortified with vitamins and minerals	bebida isotónica azucarada con vitaminas y minerales
-bls:N260000	Isotonic beverage with sugar and artificial sweeteners, fortified with vitamins and minerals	bebida isotónica con azúcar y edulcorante con vitaminas y minerales
+bls:N260000	Isotonic beverage with sugar and artificial sweeteners, fortified with vitamins and minerals	bebida isotónica con azúcar, edulcorante, vitaminas y minerales
 bls:N261000	Cherry nectar spritzer	néctar de cereza con agua con gas
 bls:N261700	Peach-maracuja fruit nectar	néctar de melocotón y maracuyá
 bls:N262000	Pear juice spritzer	zumo de pera con agua con gas
@@ -2446,7 +2446,7 @@ bls:N316000	Carbonated soft drink with spice extracts and artificial sweeteners	
 bls:N321000	Carbonated sherbet with sugar and artificial sweeteners	refresco efervescente con azúcar y edulcorante
 bls:N323000	Carbonated sherbet	refresco efervescente
 bls:N330000	Cola beverage caffeinated	cola con cafeína
-bls:N331000	Cola beverage caffeinated, with artificial sweeteners	cola con cafeína con edulcorante
+bls:N331000	Cola beverage caffeinated, with artificial sweeteners	cola con cafeína y edulcorante
 bls:N340000	Cola beverage decaffeinated	cola sin cafeína
 bls:N352000	Cola beverage decaffeinated, with artificial sweeteners	cola sin cafeína con edulcorante
 bls:N390100	Cola Mix (cola beverage caffeinated with orange soft drink)	cola con naranja
@@ -2485,7 +2485,7 @@ bls:N500600	Coffee substitute (infusion) with sugar	sucedáneo de café con azú
 bls:N500800	Coffee substitute (infusion) with alcohol	sucedáneo de café con alcohol
 bls:N500900	Coffee substitute powder	sucedáneo de café en polvo
 bls:N503900	Cappuccino instant powder, sweetened	capuchino en polvo azucarado
-bls:N540100	Chicory coffee (infusion)	achicoria bebida
+bls:N540100	Chicory coffee (infusion)	café de achicoria
 bls:N540900	Chicory coffee powder	achicoria en polvo
 bls:N5A0000	Coffee substitute (infusion) with oat drink, unsweetened	sucedáneo de café con bebida de avena sin azúcar
 bls:N5A1000	Coffee substitute (infusion) with almond drink, unsweetened	sucedáneo de café con bebida de almendra sin azúcar
@@ -2613,7 +2613,7 @@ bls:P7A1000	Aniseed-flavoured spirit drink	licor de anís
 bls:P7A1100	Aniseed-flavoured spirit drink, with water	anís con agua
 bls:P7A2000	Bitter-tasting spirit drink or bitter	bitter
 bls:P7A3000	Caraway-flavoured spirit drink or Kümmel/Aquavit	aguardiente de cominos
-bls:P7A4000	Agave spirit (Mezcal/Tequila)	mezcal y tequila
+bls:P7A4000	Agave spirit (Mezcal/Tequila)	mezcal/tequila (destilado de agave)
 bls:P8A2000	Alcopops	refrescos con alcohol
 bls:P8A3000	Egg nog	ponche de huevo caliente
 bls:P9A4000	Cocktail, Gin and tonic	cóctel gin-tonic
@@ -2671,7 +2671,7 @@ bls:Q550200	Coconut fat hydrogenated	grasa de coco hidrogenada
 bls:Q570000	Palm kernel fat/palm kernel oil	aceite de palmiste
 bls:Q590000	Plant-based cheese alternative, vegetable fat based, vegan	queso vegano de grasa vegetal
 bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortified with vitamin B12 and calcium	queso vegano de grasa vegetal con vitamina B12 y calcio
-bls:Q611000	Best quality butter	mantequilla suave fermentada
+bls:Q611000	Best quality butter	mantequilla de cultivo suave
 bls:Q620000	Cultured butter	mantequilla de cultivo
 bls:Q630000	Sweet cream butter	mantequilla de nata dulce
 bls:Q640000	Butter half fat	mantequilla mitad de grasa
@@ -2714,8 +2714,8 @@ bls:R132000	Mustard medium hot	mostaza media
 bls:R133000	Mustard hot	mostaza fuerte
 bls:R134000	Mustard extra hot	mostaza extra fuerte
 bls:R135000	Mustard sweet	mostaza dulce
-bls:R141100	Tomato ketchup	kétchup de tomate
-bls:R141200	Curry ketchup	kétchup de curry
+bls:R141100	Tomato ketchup	kéchup de tomate
+bls:R141200	Curry ketchup	kéchup de curry
 bls:R143000	Soya sauce	salsa de soja fermentada
 bls:R144100	Fruit chutney	chutney de frutas
 bls:R146100	Chilli sauce (Sambal Oelek)	sambal oelek
@@ -2862,7 +2862,7 @@ bls:S221000	Ice cream mixed (caramel, fruit, vanilla)	helado de caramelo, fruta 
 bls:S221200	Ice cream mixed (caramel, chocolate)	helado de caramelo y chocolate
 bls:S221700	Yogurt ice cream	helado de yogur
 bls:S221800	Yogurt-fruit ice cream	helado de yogur y fruta
-bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	helado de yogur y yogur de fruta
+bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	helado de yogur y de yogur de fruta
 bls:S229000	Parfait	parfait
 bls:S230000	Ice cream cream-based	helado de nata
 bls:S231000	Ice cream with fruit preparation, covered with chocolate	helado con fruta cubierto de chocolate
@@ -2872,7 +2872,7 @@ bls:S241300	Ice cream mixed (chocolate, fruit, nut) with egg liqueur	helado de f
 bls:S241400	Ice cream mixed (coffee, fruit, nut) with egg liqueur	helado de café, fruta y frutos secos con licor de huevo
 bls:S241500	Vanilla ice cream, covered with chocolate	helado de vainilla cubierto de chocolate
 bls:S241600	Vanilla ice cream, covered with chocolate and almonds	helado de vainilla cubierto de chocolate y almendras
-bls:S241700	Chocolate ice cream, covered with chocolate	helado de chocolate cubierto de chocolate
+bls:S241700	Chocolate ice cream, covered with chocolate	helado de chocolate con cobertura de chocolate
 bls:S241800	Ice cream covered with chocolate, caramel and almonds	helado cubierto de chocolate, caramelo y almendras
 bls:S241900	Vanilla ice cream, covered with chocolate and caramel	helado de vainilla cubierto de chocolate y caramelo
 bls:S242000	Chocolate ice cream	helado de chocolate
