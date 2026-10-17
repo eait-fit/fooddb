@@ -10622,32 +10622,1452 @@ ciqual:9900	Rice vermicelli, dry, raw	вермишель рисовая суха
 ciqual:9901	Rice vermicelli, dry, cooked, no added salt	вермишель рисовая варёная без соли
 ciqual:9902	Soy vermicelli, dry, raw	фунчоза сухая
 ciqual:9903	Soy vermicelli, dry, cooked, no added salt	фунчоза варёная без соли
+cofid:11-001	Arrowroot	аррорут
+cofid:11-002	Barley, pearl, raw	перловка сырая
+cofid:11-003	Barley, pearl, boiled	перловка варёная
+cofid:11-006	Buckwheat, groats	гречневая крупа
+cofid:11-011	Cornmeal, sifted	кукурузная мука просеянная
+cofid:11-016	Flour, millet, foxtail	мука пшенная
+cofid:11-021	Flour, rice	мука рисовая
+cofid:11-023	Sago, raw	саго сырое
+cofid:11-027	Tapioca, raw	тапиока сырая
+cofid:11-1000	Stuffing, sage and onion, homemade	начинка с шалфеем и луком домашняя
+cofid:11-1001	Bread, white, toasted	хлеб белый поджаренный
+cofid:11-1003	Bread, white, 'with added fibre'	хлеб белый с добавленной клетчаткой
+cofid:11-1004	Bread, white, 'with added fibre', toasted	хлеб белый с добавленной клетчаткой поджаренный
+cofid:11-1005	Cake, fruit, rich, homemade	кекс фруктовый домашний
+cofid:11-1006	Bread rolls, white, soft	булочки белые мягкие
+cofid:11-1007	Pie, fruit, one crust, homemade	пирог фруктовый открытый домашний
+cofid:11-1008	Pie, fruit, pastry top and bottom, homemade	пирог фруктовый закрытый домашний
+cofid:11-1009	Currant buns, retail	булочки с коринкой магазинные
+cofid:11-1010	Pastry, wholemeal, uncooked, homemade	тесто цельнозерновое сырое домашнее
+cofid:11-1011	Pizza, fish topped, takeaway	пицца с рыбой на вынос
+cofid:11-1012	Pizza, chicken topped, retail	пицца с курицей магазинная
 cofid:11-1013	Pizza, ham and pineapple, retail	пицца с ветчиной и ананасом
+cofid:11-1014	Pizza, vegetarian, retail and takeaway	пицца вегетарианская магазинная и на вынос
+cofid:11-1015	Pizza, meat topped, retail and takeaway	пицца с мясом магазинная и на вынос
+cofid:11-1016	Pizza base, raw	основа для пиццы сырая
+cofid:11-1017	Pastry, shortcrust, uncooked, homemade	тесто песочное сырое домашнее
+cofid:11-1019	Breakfast cereal, multigrain hoops, fortified	хлопья мультизерновые колечки обогащённые
+cofid:11-1020	Crumble, fruit, retail	крамбл фруктовый магазинный
+cofid:11-1021	Pudding, sponge, canned	пудинг бисквитный консервированный
+cofid:11-1022	Pudding, Christmas, retail	пудинг рождественский магазинный
+cofid:11-1023	Prawn crackers, takeaway	креветочные чипсы на вынос
+cofid:11-1024	Pie, apple, one crust, homemade	пирог яблочный открытый домашний
+cofid:11-1025	Pie, apple, pastry top and bottom, homemade	пирог яблочный закрытый домашний
+cofid:11-1026	Pie, apple, wholemeal, one crust, homemade	пирог яблочный открытый цельнозерновой домашний
+cofid:11-1027	Pie, apple, wholemeal, pastry top and bottom, homemade	пирог яблочный закрытый цельнозерновой домашний
+cofid:11-1028	Tart, bakewell, homemade	тарт Бейквелл домашний
+cofid:11-1029	Banana bread, homemade	банановый хлеб домашний
+cofid:11-1030	Bannocks, made with beremeal, homemade	лепёшки баннок на ячневой муке домашние
+cofid:11-1032	Biscuits, plain, homemade	печенье простое домашнее
+cofid:11-1034	Biscuits, wholemeal, homemade	печенье цельнозерновое домашнее
+cofid:11-1035	Biscuits, melting moments, homemade	печенье тающее домашнее
+cofid:11-1036	Brandy snaps, homemade	бренди-снэпы домашние
+cofid:11-1037	Pudding, bread and butter, homemade	пудинг из хлеба с маслом домашний
+cofid:11-1038	Bread pudding, homemade	хлебный пудинг домашний
+cofid:11-1041	Cake, carrot, with topping, homemade	кекс морковный с помадкой домашний
+cofid:11-1043	Chelsea buns, homemade	булочки челси домашние
+cofid:11-1044	Cake, cherry, homemade	кекс вишнёвый домашний
+cofid:11-1045	Flour, corn	мука кукурузная
+cofid:11-1046	Cake, chocolate, not filled, homemade	кекс шоколадный без начинки домашний
+cofid:11-1047	Cake, chocolate, with butter icing, homemade	кекс шоколадный с масляной глазурью домашний
+cofid:11-1048	Pastry, choux, uncooked, homemade	тесто заварное сырое домашнее
+cofid:11-1049	Pastry, choux, cooked, homemade	тесто заварное приготовленное домашнее
+cofid:11-1050	Choux buns, homemade	заварные булочки домашние
+cofid:11-1051	Pudding, Christmas, homemade	пудинг рождественский домашний
+cofid:11-1052	Pastry, shortcrust, cooked, homemade	тесто песочное выпеченное домашнее
+cofid:11-1053	Cake, coconut, homemade	кекс кокосовый домашний
+cofid:11-1055	Crumble, apple, homemade	крамбл яблочный домашний
+cofid:11-1056	Crumble, fruit, homemade	крамбл фруктовый домашний
+cofid:11-1057	Crumble, with pie filling, homemade	крамбл с готовой начинкой домашний
+cofid:11-1058	Tart, custard, large, homemade	тарт с заварным кремом большой домашний
+cofid:11-1060	Biscuits, oat based, chocolate, half coated	печенье овсяное наполовину в шоколаде
+cofid:11-1064	Pastries, chocolate eclairs, fresh, homemade	эклеры шоколадные домашние
+cofid:11-1065	Pudding, Eve's pudding, homemade	пудинг «Ева» домашний
+cofid:11-1066	Flan case, pastry, homemade	основа для флана из теста домашняя
+cofid:11-1067	Flan case, sponge, homemade	основа для флана бисквитная домашняя
+cofid:11-1069	Flan, pastry, with fruit, homemade	флан из теста с фруктами домашний
+cofid:11-1070	Flan, sponge, with fruit, homemade	флан бисквитный с фруктами домашний
+cofid:11-1071	Flapjacks, homemade	флэпджеки овсяные домашние
+cofid:11-1072	Cake, fruit, wholemeal, homemade	кекс фруктовый цельнозерновой домашний
+cofid:11-1073	Pie, fruit, pastry top and bottom, blackcurrant, homemade	пирог закрытый с чёрной смородиной домашний
+cofid:11-1074	Pie, fruit, wholemeal, pastry top and bottom, blackcurrant, homemade	пирог закрытый цельнозерновой с чёрной смородиной домашний
+cofid:11-1075	Pie, fruit, wholemeal, one crust, homemade	пирог фруктовый открытый цельнозерновой домашний
+cofid:11-1076	Pie, fruit, wholemeal, pastry top and bottom, homemade	пирог фруктовый закрытый цельнозерновой домашний
 cofid:11-1077	Pie, fruit, wholemeal, with pie filling, homemade	пирог фруктовый из цельнозерновой муки
+cofid:11-1078	Pie, fruit, with pie filling, homemade	пирог фруктовый с готовой начинкой домашний
+cofid:11-1079	Gingerbread, homemade	имбирный пряник домашний
+cofid:11-1081	Gulab jamen/jambu, homemade	гулаб-джамун домашний
+cofid:11-1083	Gulab jamen/jambu, retail	гулаб-джамун магазинный
+cofid:11-1084	Hot cross buns, homemade	крестовые булочки домашние
+cofid:11-1085	Tarts, jam, homemade	тарталетки с джемом домашние
+cofid:11-1086	Tarts, jam, wholemeal, homemade	тарталетки с джемом цельнозерновые домашние
+cofid:11-1088	Jellabi, homemade	джалеби домашняя
+cofid:11-1090	Cake, lardy, homemade	кекс на смальце домашний
+cofid:11-1091	Milk bread, homemade	хлеб молочный домашний
+cofid:11-1092	Mince pies, homemade, individual	минс-пай домашний
+cofid:11-1093	Tart, mincemeat, one crust, homemade	тарт открытый с пряной фруктовой начинкой домашний
+cofid:11-1094	Muffins, American style, chocolate chip, homemade	маффины с шоколадной крошкой домашние
+cofid:11-1095	Muffins, bran, homemade	маффины отрубные домашние
+cofid:11-1096	Noodles, egg, fried with spring onions, homemade	лапша яичная жареная с зелёным луком домашняя
+cofid:11-1097	Pudding, Queen of Puddings, homemade	пудинг «Королева пудингов» домашний
+cofid:11-1100	Oatcakes, homemade	лепёшки овсяные домашние
+cofid:11-1101	Pakoras, homemade	пакоры домашние
 cofid:11-1102	Pancakes, savoury, made with skimmed milk, homemade	блины несладкие на обезжиренном молоке
+cofid:11-1103	Pancakes, savoury, wholemeal, made with whole milk, homemade	блины несладкие цельнозерновые на цельном молоке домашние
+cofid:11-1104	Paratha, homemade	парата домашняя
+cofid:11-1105	Pinni, homemade	пинни домашнее
+cofid:11-1106	Porridge, made with milk and water	каша овсяная на молоке с водой
+cofid:11-1107	Porridge, made with water	каша овсяная на воде
+cofid:11-1108	Porridge, made with whole milk	каша овсяная на цельном молоке
+cofid:11-1109	Rock cakes, homemade	рок-кейки домашние
+cofid:11-1111	Rum baba, homemade	ромовая баба домашняя
+cofid:11-1112	Scones, cheese, homemade	сконы сырные домашние
+cofid:11-1113	Scones, potato, homemade	сконы картофельные домашние
+cofid:11-1114	Scones, wholemeal, homemade	сконы цельнозерновые домашние
 cofid:11-1115	Scones, fruit, wholemeal, homemade	сконы с фруктами цельнозерновые
+cofid:11-1116	Scotch pancakes, homemade	оладьи шотландские домашние
+cofid:11-1117	Bread, soda, made with white flour, homemade	хлеб содовый из белой муки домашний
+cofid:11-1118	Cake, sponge, with butter icing, homemade	бисквитный кекс с масляной глазурью домашний
+cofid:11-1119	Pudding, sponge, homemade	пудинг бисквитный домашний
+cofid:11-1120	Pudding, sponge, with dried fruit, homemade	пудинг бисквитный с сухофруктами домашний
+cofid:11-1121	Pudding, sponge, with jam or treacle, homemade	пудинг бисквитный с джемом или патокой домашний
+cofid:11-1122	Pudding, spotted dick, homemade	пудинг спотед-дик домашний
+cofid:11-1123	Tartlets, strawberry, homemade	тарталетки клубничные домашние
 cofid:11-1124	Pudding, suet, homemade	пудинг на говяжьем нутряном жире
+cofid:11-1125	Cake, Swiss roll, homemade	рулет бисквитный домашний
+cofid:11-1126	Treacle tart, homemade	тарт с патокой домашний
+cofid:11-1127	Brownies, chocolate, homemade	брауни домашние
+cofid:11-1128	Flapjacks, retail, chocolate covered	флэпджеки овсяные магазинные в шоколаде
+cofid:11-1129	Pasta, white, dried, boiled in unsalted water	паста белая сухая варёная
+cofid:11-1130	Waffles, homemade	вафли домашние
+cofid:11-1131	Welsh cakes, homemade	лепёшки валлийские домашние
+cofid:11-1132	Welsh cheesecakes, homemade	валлийские чизкейки домашние
+cofid:11-1134	Crackers, wholemeal, homemade	крекеры цельнозерновые домашние
+cofid:11-1135	Yorkshire pudding, made with skimmed milk, homemade	йоркширский пудинг на обезжиренном молоке домашний
+cofid:11-1136	Bread, brown, toasted	хлеб серый поджаренный
+cofid:11-1137	Bread, white, sliced, fried in rapeseed oil	хлеб белый жареный на рапсовом масле
+cofid:11-1138	Custard powder	порошок для заварного крема
+cofid:11-1139	Pastry, flaky, cooked, homemade	тесто слоёное выпеченное домашнее
+cofid:11-1140	Pastry, flaky, uncooked, homemade	тесто слоёное сырое домашнее
+cofid:11-1141	Pancakes, sweet, made with skimmed milk, homemade	блины сладкие на обезжиренном молоке домашние
+cofid:11-1142	Pancakes, sweet, made with whole milk, homemade	блины сладкие на цельном молоке домашние
+cofid:11-1143	Pancakes, sweet, made with semi skimmed milk, homemade	блины сладкие на полуобезжиренном молоке домашние
+cofid:11-1144	Bread rolls, brown, crusty	булочки серые с корочкой
+cofid:11-1145	Bread, white, average	хлеб белый
+cofid:11-1146	Yorkshire pudding, made with whole milk	йоркширский пудинг на цельном молоке
+cofid:11-230	Pastries, Asian	выпечка азиатская
+cofid:11-444	Rice, egg fried, takeaway	рис жареный с яйцом на вынос
+cofid:11-450	Pasta, plain, fresh, boiled	паста свежая простая варёная
+cofid:11-459	Chapatis, made without fat	чапати без жира
+cofid:11-462	Bread, malt, fruited	хлеб солодовый с фруктами
+cofid:11-526	Gateau, chocolate based, frozen	торт шоколадный замороженный
+cofid:11-527	Cake, chocolate fudge	кекс шоколадный ирисковый
+cofid:11-530	Gateau, fruit, frozen	торт фруктовый замороженный
 cofid:11-532	Cake, sponge, with dairy cream and jam, frozen	бисквитный торт с кремом и джемом замороженный
+cofid:11-541	Muffins, English style, white	маффины английские белые
+cofid:11-542	Muffins, English style, white, toasted	маффины английские белые поджаренные
+cofid:11-544	Scotch pancakes, retail	оладьи шотландские магазинные
+cofid:11-548	Pie, lemon meringue, retail	пирог лимонный с меренгой магазинный
+cofid:11-715	Pasta, egg, white, dried, raw	паста яичная белая сухая сырая
+cofid:11-716	Pasta, white, dried, raw	паста белая сухая сырая
+cofid:11-717	Pasta shapes, coloured, flavoured, dried, raw	паста фигурная цветная ароматизированная сухая сырая
+cofid:11-718	Pasta, wholewheat, spaghetti, dried, raw	спагетти цельнозерновые сухие сырые
+cofid:11-719	Noodles, egg, dried, raw	лапша яичная сухая сырая
+cofid:11-720	Pasta, white,  twists, fusilli, dried, boiled in unsalted water	фузилли белые сухие варёные
+cofid:11-721	Pasta, white, twists, fusilli, dried, boiled in salted water	фузилли белые сухие варёные в подсоленной воде
+cofid:11-722	Pasta, white, spaghetti, dried, boiled in unsalted water	спагетти белые сухие варёные
+cofid:11-723	Pasta, wholewheat, spaghetti, dried, boiled in unsalted water	спагетти цельнозерновые сухие варёные
+cofid:11-724	Noodles, egg, medium, dried, boiled in unsalted water	лапша яичная средняя сухая варёная
+cofid:11-725	Noodles, rice, fine, dried, boiled in unsalted water	лапша рисовая тонкая сухая варёная
+cofid:11-726	Pasta, egg, fresh, raw	паста яичная свежая сырая
+cofid:11-727	Pasta, egg, white, tagliatelle, fresh, boiled in unsalted water	тальятелле яичные свежие варёные
+cofid:11-728	Pasta, egg, fresh, filled with cheese only, boiled in unsalted water	паста яичная свежая с сырной начинкой варёная
+cofid:11-729	Pasta, egg, fresh, filled with cheese and tomato, boiled in unsalted water	паста яичная свежая с начинкой из сыра и томата варёная
+cofid:11-730	Pasta, egg, fresh, filled with mushrooms, boiled in unsalted water	паста яичная свежая с грибной начинкой варёная
+cofid:11-731	Pasta, egg, fresh, filled with green vegetables/herbs and cheese, boiled in unsalted water	паста яичная свежая с зелёными овощами, зеленью и сыром варёная
+cofid:11-732	Pasta, egg, fresh, filled with meat, boiled in unsalted water	паста яичная свежая с мясной начинкой варёная
+cofid:11-734	Pasta and sauce mixes, dried, raw	паста с соусом сухая смесь сырая
+cofid:11-735	Pasta, spaghetti, canned, in tomato sauce	спагетти консервированные в томатном соусе
+cofid:11-736	Pasta, ravioli, meat filling, canned in tomato sauce	равиоли с мясом консервированные в томатном соусе
+cofid:11-737	Muffins, American, chocolate, retail	маффины шоколадные магазинные
+cofid:11-738	Muffins, American, not chocolate, retail	маффины магазинные
+cofid:11-739	Jaffa cakes	джаффа-кейки
+cofid:11-740	Cake bars, chocolate	батончики кексовые шоколадные
+cofid:11-742	Breakfast cereal, cornflakes, fortified	хлопья кукурузные обогащённые
+cofid:11-745	Breakfast cereal, cornflakes, unfortified	хлопья кукурузные необогащённые
+cofid:11-746	Breakfast cereal, cornflakes, crunchy / honey nut coated, fortified	хлопья кукурузные с мёдом и орехами обогащённые
+cofid:11-749	Breakfast cereal, cornflakes, frosted, fortified	хлопья кукурузные глазированные обогащённые
+cofid:11-750	Breakfast cereal, rice, toasted/crisp, fortified	рис воздушный обогащённый
+cofid:11-753	Breakfast cereal, rice, chocolate flavoured, fortified	рис воздушный шоколадный обогащённый
+cofid:11-754	Breakfast cereal, Ricicles, Kellogg's	рис воздушный Ricicles Kellogg's
+cofid:11-755	Breakfast cereal, honey loops and hoops, including Honey and Nut Cheerios, fortified	колечки с мёдом и орехами обогащённые
+cofid:11-756	Breakfast cereal, puffed wheat, unfortified	пшеница воздушная необогащённая
+cofid:11-757	Breakfast cereal, puffed wheat, honey coated, fortified	пшеница воздушная с мёдом обогащённая
+cofid:11-760	Breakfast cereal, malted flake, fortified	хлопья солодовые обогащённые
+cofid:11-761	Breakfast cereal, malted wheat, fortified	пшеница солодовая обогащённая
+cofid:11-762	Breakfast cereal, wheat and multigrain, chocolate flavoured, fortified	хлопья пшеничные и мультизерновые шоколадные обогащённые
+cofid:11-763	Breakfast cereal, bran flakes, fortified	хлопья с отрубями обогащённые
+cofid:11-767	Breakfast cereal, bran type cereal, fortified	хлопья отрубные обогащённые
+cofid:11-773	Breakfast cereal, wheat biscuits, Weetabix type, fortified	подушечки пшеничные типа Weetabix обогащённые
+cofid:11-774	Breakfast cereal, wheat biscuits, Weetabix type, unfortified	подушечки пшеничные типа Weetabix необогащённые
+cofid:11-775	Breakfast cereal, shredded wheat type, unfortified	подушечки из цельной пшеницы необогащённые
+cofid:11-777	Breakfast cereal, shredded wheat type with fruit, unfortified	подушечки из цельной пшеницы с фруктами необогащённые
+cofid:11-778	Breakfast cereal, Shredded Wheat, honey nut, Nestle	Shredded Wheat с мёдом и орехами Nestle
+cofid:11-779	Breakfast cereal, fruit and fibre type, fortified	хлопья с фруктами и клетчаткой обогащённые
+cofid:11-780	Muesli, Swiss style, unfortified	мюсли необогащённые
 cofid:11-781	Muesli, Swiss style, no added sugar or salt, unfortified	мюсли без сахара
+cofid:11-788	Porridge oats, unfortified	хлопья овсяные необогащённые
+cofid:11-789	Porridge oats, unfortified, cooked, made up with semi-skimmed milk	каша овсяная на полуобезжиренном молоке
+cofid:11-792	Breakfast cereal, instant hot oat, plain, raw, fortified	овсянка быстрого приготовления обогащённая сухая
+cofid:11-793	Breakfast cereal, oat, instant, plain, fortified, cooked, made up with semi-skimmed milk	овсянка быстрого приготовления обогащённая на полуобезжиренном молоке
+cofid:11-795	Breakfast cereal, Oat, instant, flavoured, unfortified, made up with semi-skimmed milk	овсянка быстрого приготовления ароматизированная на полуобезжиренном молоке
+cofid:11-796	Biscuits, short, sweet	печенье сдобное сладкое
+cofid:11-797	Biscuits, semi-sweet	печенье полусладкое
+cofid:11-798	Biscuits, ginger nuts	печенье имбирное
+cofid:11-799	Biscuits, digestive, plain	печенье дижестив
+cofid:11-800	Wafers, plain ice cream wafers, not filled	вафли для мороженого без начинки
+cofid:11-801	Biscuits, plain, reduced fat	печенье простое нежирное
+cofid:11-802	Shortbread	печенье песочное
+cofid:11-803	Biscuits, digestive, with oats, plain	печенье дижестив овсяное
+cofid:11-804	Biscuits, jam filled	печенье с джемом
+cofid:11-805	Fig Rolls	рулетики фиговые
+cofid:11-806	Biscuits, short or sweet, half coated in chocolate	печенье сдобное наполовину в шоколаде
+cofid:11-807	Biscuits, digestive, half coated in chocolate	печенье дижестив наполовину в шоколаде
+cofid:11-808	Biscuits, iced	печенье глазированное
+cofid:11-809	Biscuits, fully coated with chocolate	печенье полностью в шоколаде
+cofid:11-810	Biscuits, fully coated with chocolate, with cream	печенье в шоколаде с кремом
+cofid:11-811	Biscuits, fully coated with chocolate, with marshmallow	печенье в шоколаде с маршмеллоу
+cofid:11-812	Chocolate covered wafer biscuit	вафля в шоколадной глазури
+cofid:11-813	Biscuits, sandwich, cream	печенье-сэндвич с кремом
+cofid:11-814	Flapjacks, retail	флэпджеки овсяные магазинные
+cofid:11-815	Biscuits, cookies, chocolate chip, standard	печенье с шоколадной крошкой
+cofid:11-816	Biscuits, cookies, chocolate chip, American style	печенье с шоколадной крошкой американское
+cofid:11-818	Cereal bars, with fruit and/or nuts, with chocolate, unfortified	батончики зерновые с фруктами и орехами в шоколаде
+cofid:11-819	Cereal bars, with fruit and/or nuts, no chocolate, unfortified	батончики зерновые с фруктами и орехами
+cofid:11-820	Cream crackers	крем-крекеры
+cofid:11-821	Biscuits, cheese flavoured	печенье сырное
+cofid:11-822	Crispbread, rye	хлебцы ржаные
+cofid:11-823	Oatcakes, plain, retail	лепёшки овсяные магазинные
+cofid:11-824	Cheese straws/twists, retail	палочки сырные магазинные
+cofid:11-825	Minibreads, toasted, retail	мини-хлебцы поджаренные магазинные
+cofid:11-826	Breadsticks, plain	гриссини
+cofid:11-827	Scones, plain, retail	сконы магазинные
+cofid:11-828	Iced buns, retail	булочки с глазурью магазинные
+cofid:11-829	Cake, fruit, retail	кекс фруктовый магазинный
+cofid:11-830	Cake, chocolate, with filling and icing, retail	торт шоколадный с начинкой и глазурью магазинный
+cofid:11-831	Cake, sponge, with jam and butter cream, retail	бисквитный торт с джемом и кремом магазинный
+cofid:11-832	Cake, sponge, soft iced, retail	бисквитный кекс с мягкой глазурью магазинный
 cofid:11-833	Cake, loaf, retail	кекс
+cofid:11-834	Cake, Swiss rolls, chocolate covered and filled, retail	рулет бисквитный с начинкой в шоколаде магазинный
+cofid:11-835	Cake, battenberg, retail	кекс баттенберг магазинный
+cofid:11-836	Cake, carrot, iced, retail	кекс морковный с глазурью магазинный
+cofid:11-837	Shortcake, caramel, chocolate covered, retail	песочный пирог с карамелью в шоколаде магазинный
+cofid:11-838	Eccles cakes, retail	экклс-кейки магазинные
+cofid:11-839	Cakes, fancy iced, individual, retail	пирожные с глазурью магазинные
+cofid:11-840	Cakes from 'healthy eating' ranges	кексы диетические магазинные
+cofid:11-841	Pastries, Danish, retail	слойки венские магазинные
+cofid:11-842	Pastries, Greek, baklava, retail	пахлава магазинная
+cofid:11-843	Pastries, cream filled, retail	слойки с кремом магазинные
+cofid:11-844	Pastries, chocolate eclairs, cream filled, retail	эклеры шоколадные с кремом магазинные
+cofid:11-845	Tarts, bakewell, iced, retail	тарт Бейквелл с глазурью магазинный
+cofid:11-846	Jam tarts, retail	тарталетки с джемом магазинные
+cofid:11-847	Pie, fruit, individual, retail	пирожок фруктовый магазинный
+cofid:11-848	Mince pies, retail	минс-пай магазинный
+cofid:11-849	Doughnuts, with jam	пончики с джемом
+cofid:11-850	Doughnuts, ring, iced	пончики кольцевые с глазурью
+cofid:11-851	Pastry, shortcrust, retail, uncooked	тесто песочное магазинное сырое
+cofid:11-852	Pastry, flaky/puff, retail, uncooked	тесто слоёное магазинное сырое
+cofid:11-853	Pastry, shortcrust, retail, cooked	тесто песочное магазинное выпеченное
+cofid:11-854	Pastry, flaky/puff, retail, cooked	тесто слоёное магазинное выпеченное
+cofid:11-855	Pastry, filo, retail, uncooked	тесто фило магазинное сырое
+cofid:11-856	Pastry, filo, retail, cooked	тесто фило магазинное выпеченное
+cofid:11-857	Rice, white, basmati, raw	рис басмати белый сырой
+cofid:11-858	Rice, white, basmati, boiled in unsalted water	рис басмати белый варёный
+cofid:11-859	Rice, white, basmati, easy cook, raw	рис басмати белый пропаренный сырой
+cofid:11-860	Rice, white, basmati, easy cook, boiled in unsalted water	рис басмати белый пропаренный варёный
+cofid:11-861	Rice, white, long grain, raw	рис белый длиннозерновый сырой
+cofid:11-862	Rice, white, long grain, boiled in unsalted water	рис белый длиннозерновый варёный
+cofid:11-863	Rice, white, long grain, easy cook, raw	рис белый длиннозерновый пропаренный сырой
+cofid:11-864	Rice, white, long grain, easy cook, boiled in unsalted water	рис белый длиннозерновый пропаренный варёный
+cofid:11-865	Rice, white, pudding, raw	рис белый для пудинга сырой
+cofid:11-866	Rice, brown, basmati, raw	рис басмати бурый сырой
+cofid:11-867	Rice, brown, basmati, boiled in unsalted water	рис басмати бурый варёный
+cofid:11-868	Rice, brown, wholegrain, raw	рис бурый сырой
+cofid:11-869	Rice, brown, wholegrain, boiled in unsalted water	рис бурый варёный
+cofid:11-870	Rice, brown, easy cook, raw	рис бурый пропаренный сырой
+cofid:11-871	Rice, brown, easy cook, boiled in unsalted water	рис бурый пропаренный варёный
+cofid:11-872	Rice, wild, raw	рис дикий сырой
+cofid:11-873	Rice, wild, boiled in unsalted water	рис дикий варёный
+cofid:11-874	Rice, Thai fragrant, raw	рис тайский ароматный сырой
+cofid:11-875	Rice, Thai fragrant, boiled in unsalted water	рис тайский ароматный варёный
+cofid:11-876	Rice, red, raw	рис красный сырой
 cofid:11-877	Red rice, boiled in unsalted water	рис красный варёный
+cofid:11-878	Rice, white, Italian Arborio risotto, raw	рис арборио сырой
+cofid:11-879	Rice, white, Italian "Arborio" risotto, boiled in unsalted water	рис арборио варёный
+cofid:11-880	Rice, savoury, including chicken, beef, mushroom and vegetable varieties, dried, uncooked	рис со специями сухой сырой
+cofid:11-881	Rice, savoury, including chicken, beef, mushroom and vegetable varieties, dried, cooked	рис со специями сухой приготовленный
+cofid:11-884	Rice, ready-cooked, "plain", re-heated	рис готовый разогретый
+cofid:11-885	Rice, egg fried, ready cooked, re-heated, retail, not takeaway	рис жареный с яйцом готовый разогретый магазинный
+cofid:11-886	Flour, wheat, white, plain, soft	мука пшеничная белая
+cofid:11-887	Flour, wheat, bread/strong, white	мука пшеничная хлебопекарная белая
+cofid:11-888	Flour, wheat, white, self raising	мука пшеничная белая самоподнимающаяся
+cofid:11-889	Flour, wheat, wholemeal	мука пшеничная цельнозерновая
+cofid:11-890	Flour, wheat, wholemeal, bread/strong	мука пшеничная цельнозерновая хлебопекарная
+cofid:11-891	Flour, wheat, wholemeal, self raising	мука пшеничная цельнозерновая самоподнимающаяся
+cofid:11-892	Flour, wheat, brown	мука пшеничная обойная
+cofid:11-893	Flour, wheat, brown, bread/strong	мука пшеничная обойная хлебопекарная
+cofid:11-894	Flour, chapati, white	мука для чапати белая
+cofid:11-895	Flour, chapati, brown	мука для чапати обойная
+cofid:11-896	Flour, gram	мука нутовая
+cofid:11-897	Flour, rye	мука ржаная
+cofid:11-898	Flour, soya	мука соевая
+cofid:11-899	Flour, gari (cassava flour)	гари (мука маниоковая)
+cofid:11-901	Couscous, plain, raw	кускус сухой
+cofid:11-902	Couscous, plain, cooked	кускус приготовленный
+cofid:11-903	Semolina, raw	манка сырая
+cofid:11-904	Wheat, bulgur, raw	булгур сырой
 cofid:11-905	Polenta, hydrated, raw	полента готовая
+cofid:11-906	Bran, wheat	отруби пшеничные
+cofid:11-907	Wheatgerm	зародыши пшеницы
+cofid:11-910	Bread, naan, peshwari naan, takeaway and retail	наан пешавари
+cofid:11-911	Puri, homemade	пури домашние
+cofid:11-912	Mooli paratha, homemade	парата с дайконом домашняя
+cofid:11-913	Gajjeralla	каша из молодой пшеницы (гаджералла)
+cofid:11-915	Sevyian, homemade	севиян домашний
+cofid:11-916	Cake rusks	сухари бисквитные
+cofid:11-919	Strudel, fruit filled, retail, frozen	штрудель фруктовый замороженный магазинный
+cofid:11-920	Pie, apple, pastry, double crust, deep filled, retail	пирог яблочный закрытый с обильной начинкой магазинный
+cofid:11-921	Pie, apple, pastry, double crust, retail	пирог яблочный закрытый магазинный
+cofid:11-922	Pancakes (served with crispy duck), pancakes only, takeaway	блинчики к утке по-пекински на вынос
+cofid:11-923	Bread, white, crusty bloomer, unsliced, fresh, large	хлеб белый батон с корочкой
+cofid:11-925	Tortilla, wheat, soft	тортилья пшеничная мягкая
+cofid:11-936	Pizza, cheese and tomato, retail	пицца с сыром и томатом магазинная
+cofid:11-937	Bread, garlic and herb, retail	хлеб чесночный с травами магазинный
+cofid:11-938	Breakfast cereal, crunchy clusters type, without nuts, unfortified	хлопья-кластеры без орехов необогащённые
+cofid:11-939	Breakfast cereal, crunchy/crispy muesli type cereal, with nuts, unfortified	мюсли хрустящие с орехами необогащённые
+cofid:11-940	Rusks	сухари
+cofid:11-941	Noodles, egg, fine, dried, boiled in unsalted water	лапша яичная тонкая сухая варёная
+cofid:11-942	Noodles, egg, thick, dried, boiled in unsalted water	лапша яичная толстая сухая варёная
+cofid:11-947	Bread, seeded	хлеб с семечками
+cofid:11-948	Currant buns, toasted	булочки с коринкой поджаренные
+cofid:11-951	Bannocks, made with wheat flour, homemade	лепёшки баннок на пшеничной муке домашние
+cofid:11-952	Biscuits, gingernut, homemade	печенье имбирное домашнее
+cofid:11-954	Macaroni cheese, homemade	макароны с сыром домашние
+cofid:11-955	Sandwich, white bread, bacon, lettuce and tomato	сэндвич на белом хлебе с беконом, салатом и томатом
+cofid:11-956	Cake, sponge, homemade	бисквитный кекс домашний
+cofid:11-957	Cake, sponge, fatless, homemade	бисквитный кекс без жира домашний
+cofid:11-958	Scones, plain, homemade	сконы домашние
+cofid:11-959	Pancakes, savoury, made with semi-skimmed milk, homemade	блины несладкие на полуобезжиренном молоке домашние
+cofid:11-960	Yorkshire pudding, made with semi-skimmed milk, homemade	йоркширский пудинг на полуобезжиренном молоке домашний
+cofid:11-961	Pastry, wholemeal, cooked, homemade	тесто цельнозерновое выпеченное домашнее
+cofid:11-962	Dumplings, homemade	клецки домашние
+cofid:11-963	Sandwich, white bread, cheddar cheese and pickle	сэндвич на белом хлебе с чеддером и маринованными овощами
+cofid:11-964	Sandwich, white bread, chicken salad	сэндвич на белом хлебе с курицей и овощами
+cofid:11-965	Sandwich, white bread, ham salad	сэндвич на белом хлебе с ветчиной и овощами
+cofid:11-966	Sandwich, white bread, egg mayonnaise	сэндвич на белом хлебе с яичным майонезом
+cofid:11-967	Sandwich, white bread, tuna mayonnaise	сэндвич на белом хлебе с тунцом и майонезом
+cofid:11-968	Rice, pilau, plain, homemade	плов домашний
+cofid:11-969	Bread, ciabatta	чиабатта
+cofid:11-970	Bagels, plain	бейглы
+cofid:11-971	Bread, brown, average	хлеб серый
+cofid:11-972	Bread, malted wheat	хлеб солодовый пшеничный
+cofid:11-973	Bread, naan, retail	наан магазинный
+cofid:11-974	Bread, pitta, white	пита белая
+cofid:11-975	Bread, wheatgerm	хлеб с зародышами пшеницы
+cofid:11-976	Bread, white, Danish style	хлеб белый по-датски
+cofid:11-977	Bread, white, farmhouse or split tin	хлеб белый фермерский
+cofid:11-978	Bread, white, French stick	багет белый
+cofid:11-979	Bread, white, premium	хлеб белый премиальный
+cofid:11-980	Bread, white, sliced	хлеб белый нарезной
+cofid:11-981	Bread, wholemeal, average	хлеб цельнозерновой
+cofid:11-982	Bread, wholemeal, toasted	хлеб цельнозерновой поджаренный
+cofid:11-983	Bread rolls, brown, soft	булочки серые мягкие
+cofid:11-984	Bread rolls, malted wheat	булочки солодовые пшеничные
+cofid:11-985	Bread rolls, white, crusty	булочки белые с корочкой
+cofid:11-986	Bread rolls, wholemeal	булочки цельнозерновые
+cofid:11-987	Chapatis, made with fat, retail	чапати с жиром магазинные
+cofid:11-988	Croissants	круассаны
+cofid:11-989	Crumpets, toasted	крампеты поджаренные
+cofid:11-990	Cakes, crispie, homemade	криспи-кейки домашние
+cofid:11-991	Cake, fruit, rich, iced, homemade	кекс фруктовый с глазурью домашний
+cofid:11-992	Pastry, cheese, shortcrust, homemade	тесто песочное сырное домашнее
+cofid:11-993	Scones, fruit, retail	сконы с фруктами магазинные
+cofid:11-994	Crumble, fruit, wholemeal, homemade	крамбл фруктовый цельнозерновой домашний
+cofid:11-995	Quiche, cheese and egg, wholemeal, homemade	киш с сыром и яйцом цельнозерновой домашний
+cofid:11-997	Cheese and onion rolls, pastry, retail	слойки с сыром и луком магазинные
+cofid:11-998	Papadums, takeaway	пападамы на вынос
+cofid:11-999	Risotto, plain, homemade	ризотто домашнее
+cofid:12-038	Milk, human, colostrum	молозиво
+cofid:12-039	Milk, human, transitional	молоко грудное переходное
+cofid:12-112	Cream, half, fresh	сливки полужирные свежие
+cofid:12-132	Cheese, Caerphilly	сыр керфилли
+cofid:12-152	Cheese, Derby	сыр дерби
+cofid:12-164	Cheese, Gruyere	сыр грюйер
+cofid:12-173	Cheese, processed, smoked	сыр плавленый копчёный
+cofid:12-174	Cheese, Quark	сыр творожный кварк
+cofid:12-175	Cheese, Red Windsor	сыр ред-виндзор
+cofid:12-176	Cheese, Ricotta	сыр рикотта
+cofid:12-177	Cheese, Roquefort	сыр рокфор
+cofid:12-178	Cheese, Sage Derby	сыр дерби с шалфеем
+cofid:12-181	Cheese, Stilton, white	сыр стилтон белый
+cofid:12-184	Yogurt, whole milk, plain	йогурт натуральный из цельного молока
+cofid:12-232	Fruit fool, homemade	десерт фруктовый фул домашний
+cofid:12-237	Jelly, made with water	желе на воде
+cofid:12-240	Jelly, made with skimmed milk	желе на обезжиренном молоке
+cofid:12-307	Milk, skimmed, pasteurised, average	молоко обезжиренное пастеризованное
+cofid:12-308	Milk, skimmed, pasteurised, summer	молоко обезжиренное пастеризованное летнее
+cofid:12-309	Milk, skimmed, pasteurised, winter	молоко обезжиренное пастеризованное зимнее
+cofid:12-313	Milk, semi-skimmed, pasteurised, average	молоко полуобезжиренное пастеризованное
+cofid:12-314	Milk, semi-skimmed, UHT	молоко полуобезжиренное ультрапастеризованное
+cofid:12-320	Milk, whole, UHT	молоко цельное ультрапастеризованное
+cofid:12-321	Milk, Channel Islands, whole, pasteurised	молоко джерсейское цельное пастеризованное
 cofid:12-322	Milk, Channel islands, whole, summer	молоко цельное жирное (джерсейское)
+cofid:12-323	Milk, Channel islands, whole, winter	молоко джерсейское цельное зимнее
+cofid:12-324	Milk, evaporated, light	молоко сгущённое несладкое нежирное
+cofid:12-326	Milk, flavoured, pasteurised, strawberry, banana	молочный напиток клубнично-банановый
+cofid:12-327	Milkshake, thick, takeaway	молочный коктейль густой на вынос
+cofid:12-328	Milk, goats, pasteurised	молоко козье пастеризованное
+cofid:12-329	Milk, sheeps, raw	молоко овечье сырое
+cofid:12-332	Cream, fresh, single	сливки нежирные свежие
+cofid:12-333	Cream, fresh, whipping	сливки для взбивания свежие
+cofid:12-334	Cream, fresh, double, including Jersey cream	сливки жирные свежие
+cofid:12-335	Creme fraiche, full fat	крем-фреш жирный
+cofid:12-336	Creme fraiche, half fat	крем-фреш полужирный
+cofid:12-337	Cream, dairy, extra thick (24% fat)	сливки экстра-густые 24 %
+cofid:12-338	Cream, dairy, UHT, canned spray, 85% cream	сливки в аэрозоле ультрапастеризованные
+cofid:12-339	Cream, dairy, UHT, half fat, canned spray	сливки полужирные в аэрозоле ультрапастеризованные
+cofid:12-342	Cream substitute, double	заменитель сливок жирный
+cofid:12-344	Cheese, Brie, with outer rind removed	сыр бри без корки
+cofid:12-345	Cheese, Camembert	сыр камамбер
+cofid:12-346	Cheese, Cheddar, English	сыр чеддер английский
+cofid:12-348	Cheese, Cheddar type, half fat	сыр типа чеддер полужирный
+cofid:12-354	Cheese, Danish blue	сыр данаблю
+cofid:12-355	Cheese, Edam	сыр эдам
+cofid:12-357	Cheese, goats milk, full fat, soft, white rind	сыр козий мягкий жирный с белой корочкой
+cofid:12-358	Cheese, Gouda	сыр гауда
+cofid:12-360	Cheese, Mozzarella, fresh	сыр моцарелла свежий
+cofid:12-367	Cheese, Stilton, blue	сыр стилтон с голубой плесенью
+cofid:12-368	Cheese, white, average	сыр белый
+cofid:12-372	Fromage frais, virtually fat free, fruit	фромаж-фре обезжиренный фруктовый
+cofid:12-373	Lassi, sweetened	ласси сладкий
+cofid:12-375	Yogurt, whole milk, fruit	йогурт фруктовый из цельного молока
+cofid:12-377	Yogurt, Greek style, fruit	йогурт греческий фруктовый
+cofid:12-379	Yogurt, low fat, plain	йогурт нежирный натуральный
+cofid:12-380	Yogurt, low fat, fruit	йогурт нежирный фруктовый
+cofid:12-384	Ice cream bars/choc ices, non-dairy, with chocolate flavoured coating	эскимо безмолочное в шоколадной глазури
+cofid:12-385	Ice cream desserts, frozen	десерты мороженые замороженные
+cofid:12-389	Lollies, with real fruit juice	фруктовый лёд на соке
+cofid:12-390	Lollies, containing ice-cream	фруктовый лёд с мороженым
+cofid:12-393	Sorbet, fruit	сорбет фруктовый
+cofid:12-394	Pie, banoffee	пирог баноффи
+cofid:12-395	Cheesecake, fruit, frozen	чизкейк фруктовый замороженный
+cofid:12-397	Creme caramel, retail	крем-карамель магазинная
+cofid:12-398	Desserts, dairy, chocolate	десерт молочный шоколадный
+cofid:12-401	Mousse, chocolate, low fat	мусс шоколадный нежирный
+cofid:12-402	Mousse, fruit	мусс фруктовый
+cofid:12-405	Profiteroles with sauce, frozen	профитроли с соусом замороженные
+cofid:12-408	Torte, fruit	торт фруктовый
+cofid:12-409	Trifle, fruit, retail	трайфл фруктовый магазинный
+cofid:12-418	Milk, semi-skimmed, pasteurised, summer and autumn	молоко полуобезжиренное пастеризованное летне-осеннее
+cofid:12-419	Milk, semi-skimmed, pasteurised, winter and spring	молоко полуобезжиренное пастеризованное зимне-весеннее
+cofid:12-461	Tarts, custard, individual	тарталетки с заварным кремом
+cofid:12-467	Sambar, homemade	самбар домашний
+cofid:12-468	Urad dahl, homemade	урад-дал домашний
+cofid:12-472	Pilau, vegetable, homemade	плов овощной домашний
+cofid:12-475	Pavlova, toffee/chocolate, no fruit	павлова с ириской и шоколадом без фруктов
+cofid:12-476	Tiramisu	тирамису
+cofid:12-482	Ice cream, virtually fat free alternative	мороженое обезжиренное
+cofid:12-485	Cheese, Red Leicester	сыр ред-лестер
+cofid:12-486	Cheese, White Cheshire	сыр чешир белый
+cofid:12-487	Cheese, Double Gloucester	сыр дабл-глостер
+cofid:12-488	Cheese, Lancashire	сыр ланкашир
+cofid:12-489	Cheese, Wensleydale	сыр венслидейл
+cofid:12-490	Cheese, Mascarpone	сыр маскарпоне
+cofid:12-491	Cheese, Brie, rind only	корка сыра бри
+cofid:12-492	Cheese, Port Salut, St Paulin type	сыр пор-салю
+cofid:12-493	Cheese, Emmental	сыр эмменталь
+cofid:12-494	Cheese, Dolcelatte, rind removed	сыр дольчелатте без корки
+cofid:12-495	Cheese, Paneer	сыр панир
+cofid:12-496	Cheese, Halloumi	сыр халлуми
+cofid:12-497	Fat spread, low fat (26-39%), not polyunsaturated, including dairy type	спред нежирный 26–39 %
+cofid:12-498	Fat spread, low fat (26-39%), not polyunsaturated, with olive oil	спред нежирный 26–39 % с оливковым маслом
+cofid:12-499	Fat spread, low fat (26-39%), polyunsaturated	спред нежирный 26–39 % полиненасыщенный
+cofid:12-500	Baking fat and margarine (75-90% fat), hard block	маргарин кулинарный твёрдый 75–90 %
+cofid:12-501	Cooking fat, compound, not polyunsaturated	жир кулинарный смешанный
+cofid:12-502	Ghee made from vegetable oil	топлёное масло растительное
+cofid:12-503	Fat spread, reduced fat (41-62%), polyunsaturated	спред средней жирности 41–62 % полиненасыщенный
+cofid:12-504	Fat spread, reduced fat (41-62%), not polyunsaturated	спред средней жирности 41–62 %
+cofid:12-505	Fat spread, reduced fat (41-62%), not polyunsaturated, with olive oil	спред средней жирности 41–62 % с оливковым маслом
+cofid:12-506	Fat spread, reduced fat (62-75%), not polyunsaturated	спред повышенной жирности 62–75 %
+cofid:12-507	Cornetto type ice cream cone	рожок с мороженым типа Cornetto
+cofid:12-508	Ice cream, dairy, vanilla, soft scoop	мороженое ванильное мягкое
+cofid:12-509	Ice cream, non dairy, vanilla, soft scoop	мороженое ванильное безмолочное мягкое
+cofid:12-510	Ice cream bars/choc ices, chocolate coated, luxury	эскимо в шоколаде премиальное
+cofid:12-511	Ice cream, dairy, luxury, with chocolate/caramel	мороженое премиальное с шоколадом и карамелью
+cofid:12-512	Milk, 1% fat, pasteurised	молоко 1 % пастеризованное
+cofid:12-513	Milk drink, fermented, with probiotics	напиток кисломолочный с пробиотиками
+cofid:12-514	Pudding, rice, homemade, with semi-skimmed milk	рисовый пудинг на полуобезжиренном молоке домашний
+cofid:12-515	Yogurt, whole milk, twin pot, not fruit	йогурт из цельного молока двухкамерный без фруктовой части
+cofid:12-516	Jelly, sugar free, made with water	желе без сахара на воде
+cofid:12-517	Meringue, homemade	меренга домашняя
+cofid:12-518	Chocolate nut sundae	сандей шоколадно-ореховый
+cofid:12-519	Custard, made up with semi-skimmed milk	заварной крем на полуобезжиренном молоке
+cofid:12-520	Milk, condensed, whole, sweetened	молоко сгущённое с сахаром
+cofid:12-521	Milk, skimmed, dried, fortified	молоко обезжиренное сухое обогащённое
+cofid:12-522	Milk, evaporated, whole	молоко сгущённое несладкое цельное
+cofid:12-523	Milk, soya, non-dairy alternative to milk, sweetened, fortified	напиток соевый сладкий обогащённый
+cofid:12-524	Milk, soya, non-dairy alternative to milk, unsweetened, fortified	напиток соевый несладкий обогащённый
+cofid:12-525	Cheese, Feta	сыр фета
+cofid:12-526	Cheese, Parmesan, fresh	сыр пармезан
+cofid:12-527	Cheese, processed, plain	сыр плавленый
+cofid:12-528	Fromage frais, virtually fat free, natural	фромаж-фре обезжиренный натуральный
+cofid:12-530	Yogurt, whole milk, infant, fruit flavour	йогурт детский фруктовый из цельного молока
+cofid:12-531	Yogurt, whole milk, twin pot, thick and creamy with fruit	йогурт из цельного молока двухкамерный густой с фруктами
+cofid:12-532	Yogurt, virtually fat free/diet, fruit	йогурт обезжиренный фруктовый
+cofid:12-533	Yogurt, virtually fat free/diet, plain	йогурт обезжиренный натуральный
+cofid:12-534	Fromage frais, fruit, children's, fortified	фромаж-фре детский фруктовый обогащённый
+cofid:12-535	Milk, flavoured, pasteurised, chocolate	молочный напиток шоколадный
+cofid:12-536	Milk, human, mature	молоко грудное зрелое
+cofid:12-537	Cheese spread, plain, reduced fat	сырная паста нежирная
+cofid:12-538	Cheese, spreadable, medium fat, soft, white	сливочный сыр средней жирности
+cofid:12-539	Cheese, cottage, plain	творог зернёный
+cofid:12-540	Cheese spread, plain	сырная паста
+cofid:12-541	Cheese, spreadable, soft white, low fat	сливочный сыр нежирный
+cofid:12-542	Cheesecake, fruit, individual	чизкейк фруктовый
+cofid:12-543	Custard, ready to eat, canned and tetra-pak	заварной крем готовый
+cofid:12-544	Cream substitute, single	заменитель сливок нежирный
+cofid:12-545	Cocoa powder	какао-порошок
+cofid:12-546	Coffeemate, whitener powder	заменитель сливок порошковый
+cofid:12-547	Tzatziki	цацики
+cofid:12-548	Cheese, Cheddar type, '30% less fat'	сыр типа чеддер на 30 % меньше жира
+cofid:12-549	Cheese, processed, slices, reduced fat	сыр плавленый ломтиками нежирный
+cofid:12-550	Cheese, cottage, plain, reduced fat	творог зернёный нежирный
 cofid:12-551	Cheese, spreadable, full fat, soft, white	сливочный сыр жирный
+cofid:12-552	Pavlova, with fruit and cream	павлова с фруктами и сливками
+cofid:12-553	Pudding, rice, canned, low fat	рисовый пудинг консервированный нежирный
+cofid:12-554	Milk, skimmed, UHT	молоко обезжиренное ультрапастеризованное
+cofid:12-555	Yogurt, Greek style, plain	йогурт греческий натуральный
+cofid:12-556	Banana split, homemade	банана-сплит домашний
+cofid:12-557	Blancmange, homemade	бланманже домашнее
+cofid:12-560	Pie, cheese and potato, homemade	пирог с сыром и картофелем домашний
+cofid:12-561	Cheese pudding, homemade	сырный пудинг домашний
+cofid:12-562	Cheesecake, homemade	чизкейк домашний
+cofid:12-563	Cocoa powder, made up with semi-skimmed milk	какао на полуобезжиренном молоке
+cofid:12-564	Cocoa powder, made up with skimmed milk	какао на обезжиренном молоке
+cofid:12-565	Cocoa powder, made up with whole milk	какао на цельном молоке
+cofid:12-566	Complan powder, savoury, made up with water	питательная смесь Complan несладкая на воде
+cofid:12-567	Complan powder, sweet, made up with water	питательная смесь Complan сладкая на воде
+cofid:12-568	Complan powder, sweet, made up with semi-skimmed milk	питательная смесь Complan сладкая на полуобезжиренном молоке
+cofid:12-569	Complan powder, sweet, made up with skimmed milk	питательная смесь Complan сладкая на обезжиренном молоке
+cofid:12-570	Complan powder, sweet, made up with whole milk	питательная смесь Complan сладкая на цельном молоке
+cofid:12-571	Crème caramel, homemade	крем-карамель домашняя
+cofid:12-572	Custard, confectioners'	заварной крем кондитерский
+cofid:12-573	Custard, egg	заварной крем яичный
+cofid:12-574	Custard, made up with skimmed milk	заварной крем на обезжиренном молоке
+cofid:12-575	Custard, made up with whole milk	заварной крем на цельном молоке
+cofid:12-580	Pudding, rice, canned	рисовый пудинг консервированный
+cofid:12-581	Ice cream with cone, non-dairy, vanilla	мороженое безмолочное ванильное в рожке
+cofid:12-582	Ice cream with wafers, non-dairy, vanilla	мороженое безмолочное ванильное с вафлями
+cofid:12-583	Instant dessert powder, made up with skimmed milk	десерт растворимый на обезжиренном молоке
+cofid:12-584	Instant dessert powder, made up with whole milk	десерт растворимый на цельном молоке
+cofid:12-585	Meringue, with cream, homemade	меренга со сливками домашняя
+cofid:12-589	Milk shake, powder, made up with semi-skimmed milk	молочный коктейль из порошка на полуобезжиренном молоке
+cofid:12-590	Milk shake, powder, made up with skimmed milk	молочный коктейль из порошка на обезжиренном молоке
+cofid:12-591	Milk shake, powder, made up with whole milk	молочный коктейль из порошка на цельном молоке
+cofid:12-592	Cream, fresh, clotted	сливки топлёные
+cofid:12-593	Sauce, cheese, packet mix, dry	соус сырный сухая смесь
+cofid:12-594	Peach melba, homemade	персик Мельба домашний
+cofid:12-595	Raita, yogurt and gram flour, homemade	раита домашняя
+cofid:12-596	Milk, whole, pasteurised, average	молоко цельное пастеризованное
+cofid:12-597	Milk, whole, pasteurised, winter and spring	молоко цельное пастеризованное зимне-весеннее
+cofid:12-598	Milk, whole, pasteurised, summer and autumn	молоко цельное пастеризованное летне-осеннее
+cofid:12-600	Trifle, homemade	трайфл домашний
+cofid:12-601	Trifle, with Dream Topping	трайфл с Dream Topping
+cofid:12-602	Welsh rarebit, homemade	гренки с сырным соусом домашние
+cofid:12-603	Welsh rarebit, wholemeal, homemade	гренки с сырным соусом цельнозерновые домашние
+cofid:12-604	Cheese, hard, average	сыр твёрдый
+cofid:12-605	Knickerbocker glory, homemade	десерт никербокер-глори домашний
+cofid:12-606	Kulfi, homemade	кулфи домашнее
+cofid:12-607	Pudding, rice, homemade, with skimmed milk	рисовый пудинг на обезжиренном молоке домашний
+cofid:12-608	Pudding, rice, homemade, with whole milk	рисовый пудинг на цельном молоке домашний
+cofid:12-609	Yogurt, soya, non-dairy alternative to yogurt, fruit, fortified	йогурт соевый фруктовый обогащённый
+cofid:12-814	Eggs, duck, boiled and salted	яйца утиные варёные солёные
+cofid:12-815	Eggs, quail, whole, raw	яйца перепелиные сырые
+cofid:12-816	Eggs, turkey, whole, raw	яйца индюшиные сырые
+cofid:12-904	Yogurt, low fat, hazelnut	йогурт нежирный с фундуком
+cofid:12-905	Yogurt, low fat, toffee	йогурт нежирный с ириской
+cofid:12-920	Eggs, duck, whole, raw	яйца утиные сырые
+cofid:12-936	Quiche, Lorraine, shortcrust pastry, retail	киш Лорен магазинный
+cofid:12-937	Eggs, chicken, whole, raw	яйца куриные сырые
+cofid:12-938	Eggs, chicken, white, raw	белок яичный сырой
+cofid:12-939	Eggs, chicken, yolk, raw	желток яичный сырой
+cofid:12-940	Eggs, chicken, whole, boiled	яйца куриные варёные
+cofid:12-941	Eggs, chicken, white, boiled	белок яичный варёный
+cofid:12-942	Eggs, chicken, yolk, boiled	желток яичный варёный
+cofid:12-943	Eggs, chicken, whole, poached	яйца куриные пашот
+cofid:12-944	Eggs, chicken, whole, fried in sunflower oil	яйца куриные жареные на подсолнечном масле
+cofid:12-945	Eggs, chicken, scrambled, with semi-skimmed milk	яичница-болтунья на полуобезжиренном молоке
+cofid:12-946	Omelette, plain, homemade	омлет домашний
+cofid:12-947	Omelette, cheese, homemade	омлет с сыром домашний
+cofid:12-948	Quiche, cheese and egg, homemade	киш с сыром и яйцом домашний
+cofid:12-949	Quiche, vegetable, retail	киш овощной магазинный
+cofid:12-950	Egg fu yung	яйца фу-юнг
+cofid:12-951	Macaroon, homemade	макарон кокосовый домашний
+cofid:12-952	Quiche, Lorraine, homemade	киш Лорен домашний
+cofid:12-953	Quiche, Lorraine, wholemeal pastry, homemade	киш Лорен цельнозерновой домашний
+cofid:12-954	Quiche, mushroom, homemade	киш грибной домашний
+cofid:12-955	Quiche, mushroom, wholemeal, homemade	киш грибной цельнозерновой домашний
+cofid:12-956	Omelette, curried, homemade	омлет с карри домашний
+cofid:12-957	Omelette, Spanish, homemade	омлет испанский домашний
+cofid:12-958	Souffle, cheese, homemade	суфле сырное домашнее
+cofid:12-959	Souffle, plain, homemade	суфле домашнее
+cofid:12-960	Eggs, chicken, white, dried	белок яичный сухой
+cofid:12-961	Eggs, chicken, whole, dried	яйца куриные сухие
+cofid:12-962	Eggs, chicken, whole, fried, without fat	яйца куриные жареные без масла
+cofid:12-963	Eggs, chicken, whole, scrambled, without milk	яичница-болтунья без молока
+cofid:13-024	Potato chips, crinkle cut, frozen, fried in corn oil	картофель фри рифлёный жареный на кукурузном масле
+cofid:13-025	Potato chips, straight cut, frozen, fried in corn oil	картофель фри жареный на кукурузном масле
+cofid:13-026	Potato chips, fine cut, frozen, fried in corn oil	картофель фри тонкий жареный на кукурузном масле
+cofid:13-027	Potato chips, thick cut, frozen, fried in corn oil	картофель фри крупный жареный на кукурузном масле
+cofid:13-038	Potato croquettes, fried in blended oil	крокеты картофельные жареные на смеси масел
+cofid:13-041	Beans, aduki, whole, dried, raw	фасоль адзуки сухая сырая
+cofid:13-042	Beans, aduki, whole, dried, boiled in unsalted water	фасоль адзуки варёная
+cofid:13-049	Beans, balor, ends trimmed, raw	фасоль балор сырая
+cofid:13-056	Black gram, urad gram, whole, dried, raw	урад цельный сухой сырой
+cofid:13-057	Black gram, urad gram, whole, dried, boiled in unsalted water	урад цельный варёный
+cofid:13-058	Black gram, chilki urad dahl, split, dried, raw	урад-дал чилки колотый сухой сырой
+cofid:13-059	Black gram, chilki urad dahl, dried, split, boiled in unsalted water	урад-дал чилки колотый варёный
+cofid:13-060	Black gram, duhli urad dahl, split, dried, raw	урад-дал духли колотый сухой сырой
+cofid:13-061	Black gram, duhli urad dahl, split, dried, boiled in unsalted water	урад-дал духли колотый варёный
+cofid:13-062	Beans, blackeye, whole, dried, raw	вигна сухая сырая
+cofid:13-063	Beans, blackeye, whole, dried, boiled in unsalted water	вигна варёная
+cofid:13-064	Beans, broad, whole, raw	бобы свежие сырые
+cofid:13-067	Beans, broad, dried, raw	бобы сухие сырые
+cofid:13-070	Beans, butter, dried, raw	фасоль лима сухая сырая
+cofid:13-074	Beans, chick peas, Kabuli, whole, dried, raw	нут сухой сырой
+cofid:13-076	Beans, chick peas, Kabuli, split, dried, raw	нут колотый сухой сырой
+cofid:13-077	Beans, chick peas, Kabuli, split, dried, boiled in unsalted water	нут колотый варёный
 cofid:13-080	Beans, cluster, raw	гуар (кластерная фасоль) сырой
+cofid:13-086	Beans, haricot, whole, dried, raw	фасоль белая сухая сырая
+cofid:13-087	Beans, haricot, whole, dried, boiled in unsalted water	фасоль белая варёная
+cofid:13-089	Lentils, green and brown, whole, dried, raw	чечевица зелёная и коричневая сухая сырая
+cofid:13-096	Beans, mung, whole, dried, raw	маш сухой сырой
+cofid:13-098	Beans, mung, dahl, dried, raw	маш-дал сухой сырой
+cofid:13-099	Beans, mung, dahl, dried, boiled in unsalted water	маш-дал варёный
+cofid:13-100	Beans, papri, raw	фасоль папри сырая
+cofid:13-102	Beans, pigeon peas, whole, dried, raw	горох голубиный сухой сырой
+cofid:13-103	Beans, pigeon peas, whole, dried, boiled in unsalted water	горох голубиный варёный
+cofid:13-104	Beans, pigeon peas, dahl, dried, raw	горох голубиный дал сухой сырой
+cofid:13-105	Beans, pigeon peas, dahl, dried, boiled in unsalted water	горох голубиный дал варёный
+cofid:13-106	Beans, pinto, dried, raw	фасоль пинто сухая сырая
+cofid:13-107	Beans, pinto, dried, boiled in unsalted water	фасоль пинто варёная
+cofid:13-108	Beans, pinto, re-fried beans	фасоль пинто рефрита
+cofid:13-109	Beans, red kidney, dried, raw	фасоль красная сухая сырая
+cofid:13-112	Beans, runner, raw	фасоль огненная сырая
+cofid:13-115	Beans, soya, dried, raw	соевые бобы сухие сырые
+cofid:13-116	Beans, soya, dried, boiled in unsalted water	соевые бобы варёные
+cofid:13-117	Beans, sword, raw	фасоль мечевидная сырая
+cofid:13-118	Tempeh	темпе
+cofid:13-122	Peas, mange-tout, raw	горошек манжту сырой
+cofid:13-130	Peas, dried, raw	горох сухой сырой
+cofid:13-131	Peas, dried, boiled in unsalted water	горох сухой варёный
+cofid:13-141	Peas, split, dried, raw	горох колотый сухой сырой
+cofid:13-142	Peas, split, dried, boiled in unsalted water	горох колотый варёный
+cofid:13-143	Peas, sugar-snap, raw	горошек сладкий стручковый сырой
+cofid:13-145	Ackee, canned, drained	аки консервированный слитый
+cofid:13-146	Agar, dried	агар сухой
+cofid:13-147	Agar, dried, soaked and drained	агар замоченный слитый
+cofid:13-148	Alfalfa sprouts, raw	ростки люцерны сырые
+cofid:13-149	Amaranth leaves, raw	амарант листовой сырой
+cofid:13-150	Amaranth leaves, boiled in unsalted water	амарант листовой варёный
+cofid:13-151	Arrowhead, raw	стрелолист сырой
+cofid:13-152	Arrowhead, boiled in unsalted water	стрелолист варёный
+cofid:13-153	Artichoke, globe, raw	артишок сырой
+cofid:13-154	Artichoke, globe, boiled, weighed as served	артишок варёный
+cofid:13-155	Artichoke, globe, base of leaves and heart, boiled in unsalted water	артишок донце варёное
+cofid:13-156	Artichoke, Jerusalem, boiled in unsalted water, flesh only	топинамбур варёный
+cofid:13-157	Asparagus, raw	спаржа сырая
+cofid:13-161	Aubergine, raw	баклажан сырой
+cofid:13-162	Aubergine, fried in corn oil	баклажан жареный на кукурузном масле
+cofid:13-164	Beetroot, raw	свёкла сырая
+cofid:13-166	Beetroot, pickled, drained	свёкла маринованная слитая
+cofid:13-167	Breadfruit, raw	хлебное дерево сырое
+cofid:13-168	Breadfruit, boiled in unsalted water	хлебное дерево варёное
+cofid:13-174	Broccoli, purple sprouting, raw	брокколи пурпурная сырая
+cofid:13-176	Broccoli, purple sprouting, boiled in unsalted water	брокколи пурпурная варёная
+cofid:13-177	Brussels sprouts, raw	капуста брюссельская сырая
+cofid:13-187	Cabbage, Chinese, raw	капуста китайская сырая
+cofid:13-190	Cabbage, red, raw	капуста краснокочанная сырая
+cofid:13-208	Cassava, raw	маниок сырой
+cofid:13-209	Cassava, baked	маниок запечённый
+cofid:13-210	Cassava, boiled in unsalted water	маниок варёный
+cofid:13-211	Cassava, steamed	маниок на пару
+cofid:13-212	Cassava, frozen, raw	маниок замороженный сырой
+cofid:13-219	Celeriac, raw	сельдерей корневой сырой
+cofid:13-223	Chard, Swiss, raw	мангольд сырой
+cofid:13-224	Chard, Swiss, boiled in unsalted water	мангольд варёный
+cofid:13-225	Chicory, pale variety, raw	цикорий салатный сырой
+cofid:13-227	Cho cho, raw	чайот сырой
+cofid:13-228	Cho cho, boiled in unsalted water	чайот варёный
+cofid:13-229	Cole leaves, dried, boiled in unsalted water	листья капусты сушёные варёные
+cofid:13-232	Courgette, fried in corn oil	цукини жареный на кукурузном масле
+cofid:13-234	Curly kale, raw	кейл кудрявый сырой
+cofid:13-236	Drumstick leaves, raw	листья моринги сырые
+cofid:13-237	Drumstick leaves, boiled in unsalted water	листья моринги варёные
+cofid:13-238	Drumstick pods, raw	стручки моринги сырые
+cofid:13-239	Drumstick pods, boiled in unsalted water	стручки моринги варёные
+cofid:13-240	Endive, raw	эндивий сырой
+cofid:13-241	Fennel, Florence, raw	фенхель садовый сырой
+cofid:13-243	Fenugreek leaves, raw	листья пажитника сырые
+cofid:13-244	Garlic, raw	чеснок сырой
+cofid:13-245	Gherkins, raw	корнишоны сырые
+cofid:13-246	Gherkins, pickled, drained	корнишоны маринованные слитые
+cofid:13-248	Gourd, ash, raw	тыква восковая сырая
+cofid:13-249	Gourd, bottle, raw	тыква бутылочная сырая
+cofid:13-250	Gourd, kantola, raw	кантола сырая
+cofid:13-252	Gourd, karela, raw	карела сырая
+cofid:13-254	Gourd, ridge, raw	тыква ребристая сырая
+cofid:13-255	Gourd, snake, raw	тыква змеевидная сырая
+cofid:13-256	Gourd, tinda, raw	тинда сырая
+cofid:13-258	Horseradish, raw	хрен сырой
+cofid:13-259	Jackfruit, raw	джекфрут сырой
+cofid:13-261	Kohl rabi, raw	кольраби сырая
+cofid:13-271	Lotus tubers, raw	корневища лотоса сырые
+cofid:13-273	Mango, unripe, green flesh, raw	манго зелёный недозрелый сырой
+cofid:13-274	Marrow, raw	кабачок сырой
+cofid:13-276	Marrow, boiled in unsalted water	кабачок варёный
+cofid:13-277	Marrow, parwal, raw	парвал сырой
+cofid:13-279	Matoki, raw	матоки сырые
+cofid:13-288	Mushrooms, Chinese, dried, raw	грибы китайские сушёные сырые
+cofid:13-289	Mushrooms, Jew's ear, tender, dried, raw	грибы муэр нежные сушёные сырые
+cofid:13-290	Mushrooms, Jew's ear, tender, dried, soaked, raw	грибы муэр нежные замоченные сырые
+cofid:13-291	Mushrooms, Jew's ear, tough, dried, raw	грибы муэр жёсткие сушёные сырые
+cofid:13-292	Mushrooms, Jew's ear, tough, dried, soaked, raw	грибы муэр жёсткие замоченные сырые
+cofid:13-293	Mushrooms, oyster, raw	вёшенки сырые
+cofid:13-294	Mushrooms, shiitake, dried, raw	шиитаке сушёные сырые
+cofid:13-295	Mushrooms, shiitake, cooked	шиитаке приготовленные
+cofid:13-297	Mustard and cress, raw	горчица и кресс-салат сырые
+cofid:13-298	Mustard leaves, raw	листья горчицы сырые
+cofid:13-299	Mustard leaves, boiled in unsalted water	листья горчицы варёные
+cofid:13-300	Okra, raw	окра сырая
+cofid:13-302	Okra, stir-fried in corn oil	окра обжаренная на кукурузном масле
+cofid:13-309	Onions, pickled, drained	лук маринованный слитый
+cofid:13-311	Papaya, unripe, green flesh, raw	папайя зелёная недозрелая сырая
+cofid:13-312	Parsnip, raw	пастернак сырой
+cofid:13-315	Patra leaves, raw	листья патра сырые
+cofid:13-316	Peppers, capsicum, chilli, green, raw	перец чили зелёный сырой
+cofid:13-317	Peppers, capsicum, chilli, red, raw	перец чили красный сырой
+cofid:13-318	Peppers, capsicum, green, raw	перец болгарский зелёный сырой
+cofid:13-323	Plantain, green flesh, raw	банан овощной зелёный сырой
+cofid:13-324	Plantain, boiled in unsalted water, flesh only	банан овощной варёный
+cofid:13-326	Pumpkin, flesh only, raw	тыква сырая
+cofid:13-329	Raddiccio, raw	радиккио сырой
+cofid:13-331	Radish, white/mooli, raw	дайкон сырой
+cofid:13-332	Radish leaves, raw	ботва редиса сырая
+cofid:13-333	Rape leaves, raw	листья рапса сырые
+cofid:13-334	Salsify, flesh only, raw	козлобородник сырой
+cofid:13-336	Sauerkraut	капуста квашеная
+cofid:13-337	Seakale, stem only, boiled in unsalted water	капуста морская варёная
+cofid:13-338	Seaweed, Irish moss, raw	мох ирландский сырой
+cofid:13-339	Seaweed, kombu, dried, raw	комбу сушёная
+cofid:13-340	Seaweed, nori, dried, raw	нори сушёная
+cofid:13-341	Seaweed, wakame, dried, raw	вакаме сушёная
+cofid:13-342	Shallots, raw	шалот сырой
+cofid:13-348	Spring greens, raw	капуста молодая сырая
+cofid:13-350	Spring greens, boiled in unsalted water	капуста молодая варёная
+cofid:13-351	Spring onions, bulbs only, raw	лук зелёный луковицы сырые
+cofid:13-352	Spring onions, bulbs and tops, raw	лук зелёный с пером сырой
+cofid:13-353	Squash, acorn, raw	тыква желудёвая сырая
+cofid:13-354	Squash, acorn, baked	тыква желудёвая запечённая
+cofid:13-355	Squash, butternut, raw	тыква мускатная сырая
+cofid:13-357	Squash, spaghetti, raw	тыква спагетти сырая
+cofid:13-358	Squash, spaghetti, baked	тыква спагетти запечённая
+cofid:13-359	Swede, flesh only, raw	брюква сырая
+cofid:13-375	Tannia, raw	танния сырая
+cofid:13-376	Taro, raw	таро сырой
+cofid:13-377	Taro, baked	таро запечённый
+cofid:13-378	Taro, boiled in unsalted water	таро варёный
+cofid:13-379	Taro, steamed	таро на пару
+cofid:13-380	Taro leaves, raw	листья таро сырые
+cofid:13-381	Taro leaves, steamed	листья таро на пару
+cofid:13-382	Tomato juice	сок томатный
+cofid:13-389	Turnip, flesh only, raw	репа сырая
+cofid:13-391	Turnip, boiled in unsalted water	репа варёная
+cofid:13-392	Turnip tops, boiled in unsalted water	репная ботва варёная
+cofid:13-394	Water chestnuts, raw	водяной орех сырой
+cofid:13-397	Yam, flesh only, raw	ямс сырой
+cofid:13-398	Yam, baked	ямс запечённый
+cofid:13-401	Yam, steamed	ямс на пару
+cofid:13-412	Aubergine, fried in butter	баклажан жареный на сливочном масле
+cofid:13-414	Courgette, fried in butter	цукини жареный на сливочном масле
+cofid:13-426	Beansprouts, mung, raw	ростки маша сырые
+cofid:13-438	Peas, raw	горошек зелёный сырой
+cofid:13-439	Peas, boiled in unsalted water	горошек зелёный варёный
+cofid:13-448	Carrots, young, raw	морковь молодая сырая
+cofid:13-449	Carrots, young, boiled in unsalted water	морковь молодая варёная
+cofid:13-458	Spinach, frozen, boiled in unsalted water	шпинат замороженный варёный
+cofid:13-463	Sweet potato, raw, flesh only	батат сырой
+cofid:13-483	Potato wedges, retail, cooked	дольки картофельные магазинные приготовленные
+cofid:13-484	Dahl, mixed, homemade	дал ассорти домашний
+cofid:13-485	Potato chips, fried in commercial oil, from takeaway fish and chip shops	картофель фри жареный из закусочной фиш-энд-чипс
+cofid:13-486	Potato chips, fine cut, from fast food outlets	картофель фри тонкий из фастфуда
+cofid:13-487	Potato chips, oven ready, no batter, baked	картофель фри для запекания без кляра запечённый
+cofid:13-488	Potato chips, oven ready, with batter, baked	картофель фри для запекания в кляре запечённый
+cofid:13-489	Potatoes, old, raw, flesh only	картофель сырой
+cofid:13-490	Potatoes, old, boiled in unsalted water, flesh only	картофель варёный
+cofid:13-491	Potatoes, old, baked, flesh and skin	картофель запечённый в кожуре
+cofid:13-492	Potatoes, old, roasted in sunflower oil, flesh only	картофель запечённый на подсолнечном масле
+cofid:13-493	Potatoes, old, wedges, with skin, homemade, cooked in rapeseed oil	дольки картофельные с кожурой на рапсовом масле домашние
+cofid:13-494	Potatoes, old, microwaved, flesh and skin	картофель приготовленный в микроволновке в кожуре
+cofid:13-495	Potatoes, new and salad, boiled in unsalted water, flesh and skin	картофель молодой и салатный варёный в кожуре
+cofid:13-496	Carrots, old, raw	морковь сырая
+cofid:13-497	Carrots, old, boiled in unsalted water	морковь варёная
+cofid:13-498	Carrots, old, microwaved	морковь приготовленная в микроволновке
+cofid:13-499	Onions, raw	лук репчатый сырой
+cofid:13-500	Onions, boiled in unsalted water	лук репчатый варёный
 cofid:13-501	Onions, fried in sunflower oil	лук жареный
+cofid:13-502	Broccoli, green, raw	брокколи сырая
+cofid:13-503	Broccoli, green, boiled in unsalted water	брокколи варёная
+cofid:13-504	Broccoli, green, steamed	брокколи на пару
+cofid:13-505	Mushrooms, white, raw	шампиньоны сырые
+cofid:13-506	Mushrooms, white, stewed in unsalted water	шампиньоны тушёные
+cofid:13-507	Mushrooms, white, fried in rapeseed oil	шампиньоны жареные на рапсовом масле
+cofid:13-508	Sweetcorn, kernels, boiled 'on the cob' in unsalted water	кукуруза в початках варёная
+cofid:13-509	Cabbage, white, raw	капуста белокочанная сырая
+cofid:13-510	Cabbage, green, raw	капуста зелёная сырая
+cofid:13-511	Cabbage, green, boiled in unsalted water	капуста зелёная варёная
+cofid:13-512	Cauliflower, raw	капуста цветная сырая
+cofid:13-513	Cauliflower, boiled in unsalted water	капуста цветная варёная
+cofid:13-514	Beans, green, raw	фасоль стручковая зелёная сырая
+cofid:13-515	Beans, green, boiled in unsalted water	фасоль стручковая зелёная варёная
+cofid:13-516	Pak choi, steamed	пак-чой на пару
+cofid:13-517	Tomatoes, standard, raw	помидоры сырые
+cofid:13-518	Tomatoes, standard, grilled, flesh and seeds only	помидоры жареные на гриле
+cofid:13-519	Tomatoes, cherry, raw	помидоры черри сырые
+cofid:13-520	Lettuce, average, raw	салат листовой сырой
+cofid:13-521	Spinach, baby, raw	шпинат молодой сырой
+cofid:13-522	Rocket, raw	руккола сырая
+cofid:13-523	Cucumber, raw, flesh and skin	огурец сырой
 cofid:13-524	Pepper, capsicum, red, raw	перец болгарский красный сырой
+cofid:13-525	Pepper, capsicum, red, boiled in unsalted water	перец болгарский красный варёный
+cofid:13-526	Pepper, capsicum, yellow, raw	перец болгарский жёлтый сырой
+cofid:13-527	Peas, frozen, raw	горошек замороженный сырой
+cofid:13-528	Peas, frozen, microwaved	горошек замороженный приготовленный в микроволновке
+cofid:13-529	Sweetcorn kernels, canned in water, drained	кукуруза консервированная слитая
+cofid:13-530	Tomatoes, canned, whole contents	помидоры консервированные в собственном соку
+cofid:13-531	Tomato puree	пюре томатное
+cofid:13-532	Baked beans, canned in tomato sauce	фасоль тушёная в томатном соусе консервированная
+cofid:13-533	Potato products, shaped, frozen, baked	изделия картофельные фигурные запечённые
+cofid:13-534	Potatoes, old, roasted in rapeseed oil	картофель запечённый на рапсовом масле
+cofid:13-535	Baked beans, canned in tomato sauce, reduced sugar, reduced salt	фасоль тушёная в томатном соусе консервированная с пониженным сахаром и солью
+cofid:13-536	Peas, frozen, boiled in unsalted water	горошек замороженный варёный
+cofid:13-537	Pepper, capsicum, yellow, boiled in unsalted water	перец болгарский жёлтый варёный
+cofid:13-540	Cabbage, red, boiled in unsalted water	капуста краснокочанная варёная
+cofid:13-542	Fennel, Florence, boiled in unsalted water	фенхель садовый варёный
+cofid:13-543	Vegetables, mixed, frozen, boiled in unsalted water	овощная смесь замороженная варёная
+cofid:13-545	Mushrooms, white, fried in salted butter	шампиньоны жареные на солёном сливочном масле
+cofid:13-546	Mushrooms, white, fried in corn oil	шампиньоны жареные на кукурузном масле
+cofid:13-548	Peppers, capsicum, green, boiled in unsalted water	перец болгарский зелёный варёный
 cofid:13-549	Pumpkin, flesh only, boiled in unsalted water	тыква варёная
+cofid:13-550	Spinach, baby, boiled in unsalted water	шпинат молодой варёный
+cofid:13-553	Potatoes, old, mashed with butter	пюре картофельное со сливочным маслом
+cofid:13-554	Potatoes, old, mashed with reduced fat spread	пюре картофельное с нежирным спредом
+cofid:13-555	Potato chips, homemade, fried in rapeseed oil	картофель фри домашний жареный на рапсовом масле
+cofid:13-556	Houmous	хумус
+cofid:13-557	Potato chips, microwave, cooked	картофель фри для микроволновки приготовленный
+cofid:13-558	Potato powder, instant, made up with water	пюре картофельное порошковое на воде
+cofid:13-559	Beans, butter, canned, re-heated, drained	фасоль лима консервированная разогретая слитая
+cofid:13-562	Peas, marrowfat, canned, re-heated, drained	горох мозговой консервированный разогретый слитый
+cofid:13-563	Peas, mushy, canned, re-heated	горох разваренный консервированный разогретый
+cofid:13-564	Peas, canned in water, re-heated, drained	горошек консервированный разогретый слитый
+cofid:13-565	Carrots, young, canned in water, re-heated, drained	морковь молодая консервированная разогретая слитая
+cofid:13-566	Potatoes, old, potato wedges, with skin, cooked in sunflower oil, homemade	дольки картофельные с кожурой на подсолнечном масле домашние
+cofid:13-567	Beansprouts, mung, stir-fried in rapeseed oil	ростки маша обжаренные на рапсовом масле
+cofid:13-569	Plantain, ripe, fried in rapeseed oil	банан овощной спелый жареный на рапсовом масле
+cofid:13-570	Tofu, soya bean, steamed	тофу паровой
+cofid:13-571	Tofu, soya bean, steamed, fried	тофу жареный
+cofid:13-572	Spinach, mature, raw	шпинат сырой
+cofid:13-573	Spinach, mature, boiled in unsalted water	шпинат варёный
+cofid:13-574	Quorn, pieces, as purchased	кворн кусочками
+cofid:13-576	Kohl rabi, boiled in unsalted water	кольраби варёная
+cofid:13-577	Aubergine, fried in rapeseed oil	баклажан жареный на рапсовом масле
+cofid:13-578	Baked beans, canned in barbecue sauce	фасоль тушёная в соусе барбекю консервированная
+cofid:13-579	Baked beans, canned in tomato sauce, with pork sausages	фасоль тушёная в томатном соусе с сосисками консервированная
+cofid:13-580	Beansprouts, mung, boiled in unsalted water	ростки маша варёные
+cofid:13-581	Cabbage, average, boiled in unsalted water	капуста варёная
+cofid:13-582	Cabbage, average, raw	капуста сырая
+cofid:13-583	Broccoli, green, boiled in salted water	брокколи варёная в подсоленной воде
+cofid:13-584	Cabbage, white, boiled in unsalted water	капуста белокочанная варёная
+cofid:13-585	Celeriac, boiled in unsalted water	сельдерей корневой варёный
+cofid:13-586	Chicory, pale variety, boiled in unsalted water	цикорий салатный варёный
+cofid:13-587	Courgette, fried in rapeseed oil	цукини жареный на рапсовом масле
+cofid:13-588	Matoki, boiled in unsalted water	матоки варёные
+cofid:13-589	Onions, baked	лук репчатый запечённый
+cofid:13-590	Onions, dried, raw	лук репчатый сушёный
+cofid:13-591	Onions, fried in rapeseed oil	лук репчатый жареный на рапсовом масле
+cofid:13-592	Onions, fried in corn oil	лук репчатый жареный на кукурузном масле
+cofid:13-593	Onions, fried in lard	лук репчатый жареный на смалце
+cofid:13-594	Peas, sugar-snap, boiled in unsalted water	горошек сладкий стручковый варёный
+cofid:13-595	Potato chips, homemade, fried in corn oil	картофель фри домашний жареный на кукурузном масле
+cofid:13-596	Potato chips, homemade, fried in dripping	картофель фри домашний жареный на топлёном жире
+cofid:13-597	Potato chips, homemade, fried in sunflower oil	картофель фри домашний жареный на подсолнечном масле
+cofid:13-598	Potato powder, instant, raw	пюре картофельное порошковое сухое
+cofid:13-599	Potatoes, old, roasted in corn oil	картофель запечённый на кукурузном масле
+cofid:13-600	Potatoes, old, roasted in lard	картофель запечённый на смалце
+cofid:13-601	Salsify, flesh only, boiled in unsalted water	козлобородник варёный
+cofid:13-602	Tomatoes, standard, fried in rapeseed oil	помидоры жареные на рапсовом масле
+cofid:13-603	Tomatoes, standard, fried in corn oil	помидоры жареные на кукурузном масле
+cofid:13-604	Vegetables, mixed, stir-fry type, frozen, fried in rapeseed oil	овощная смесь обжаренная на рапсовом масле
+cofid:13-605	Potatoes, old, boiled in salted water, flesh only	картофель варёный в подсоленной воде
+cofid:13-606	Sweetcorn, kernels, boiled 'on the cob' in unsalted water, weighed with core	кукуруза в початках варёная с початком
+cofid:13-607	Carrot juice	сок морковный
+cofid:13-608	Green beans, dried	фасоль стручковая сушёная
+cofid:13-609	Sweetcorn, dried	кукуруза сушёная
 cofid:13-610	Potatoes, new and salad, boiled in salted water, flesh and skin	картофель молодой варёный
+cofid:13-611	Onions, fried in butter	лук репчатый жареный на сливочном масле
 cofid:13-612	Potato chips, fried in palm oil, from takeaway fish and chip shops	картофель фри на пальмовом масле
+cofid:13-613	Potato chips, fried in beef dripping, from takeaway fish and chip shops	картофель фри на говяжьем топлёном жире из закусочной фиш-энд-чипс
+cofid:13-614	Potato chips, fried in rapeseed oil, from takeaway fish and chip shops	картофель фри на рапсовом масле из закусочной фиш-энд-чипс
+cofid:13-615	Potato powder, instant, made up with semi-skimmed milk	пюре картофельное порошковое на полуобезжиренном молоке
+cofid:13-616	Potato powder, instant, made up with skimmed milk	пюре картофельное порошковое на обезжиренном молоке
+cofid:13-617	Potato powder, instant, made up with whole milk	пюре картофельное порошковое на цельном молоке
+cofid:13-618	Potatoes, new and salad, flesh only, raw	картофель молодой и салатный сырой
+cofid:13-619	Potatoes, new, frozen, `roast' in corn oil	картофель молодой запечённый на кукурузном масле
+cofid:13-620	Potatoes, old, baked, flesh only	картофель запечённый без кожуры
+cofid:13-621	Potatoes, old, baked, flesh only, weighed with skin	картофель запечённый без кожуры взвешенный с кожурой
+cofid:13-622	Sweetcorn, kernels, raw	кукуруза зерновая сырая
+cofid:13-623	Sweetcorn, kernels, 'on-the-cob', raw, weighed with core	кукуруза в початках сырая
+cofid:13-624	Leeks, raw	лук-порей сырой
+cofid:13-625	Leeks, boiled in unsalted water	лук-порей варёный
 cofid:13-626	Leeks, roasted in rapeseed oil	лук-порей запечённый
+cofid:13-627	Courgette, raw	цукини сырой
+cofid:13-628	Courgette, boiled in unsalted water	цукини варёный
+cofid:13-629	Courgette, roasted in rapeseed oil	цукини запечённый на рапсовом масле
+cofid:13-630	Brussels sprouts, boiled in unsalted water	капуста брюссельская варёная
+cofid:13-631	Parsnip, boiled in unsalted water	пастернак варёный
+cofid:13-632	Parsnip, roasted in rapeseed oil	пастернак запечённый на рапсовом масле
+cofid:13-633	Beetroot, cooked in unsalted water	свёкла варёная
+cofid:13-634	Sweetcorn, baby, boiled in unsalted water	кукуруза мини варёная
+cofid:13-635	Sweetcorn, baby, stir-fried in rapeseed oil	кукуруза мини обжаренная на рапсовом масле
+cofid:13-636	Celery, raw	сельдерей черешковый сырой
+cofid:13-637	Celery, boiled in unsalted water	сельдерей черешковый варёный
+cofid:13-638	Asparagus, steamed	спаржа на пару
+cofid:13-639	Asparagus, grilled	спаржа на гриле
+cofid:13-640	Asparagus, roasted in rapeseed oil	спаржа запечённая на рапсовом масле
+cofid:13-641	Peas, mange-tout, boiled in unsalted water	горошек манжту варёный
+cofid:13-642	Peas, mange-tout, stir-fried in rapeseed oil	горошек манжту обжаренный на рапсовом масле
+cofid:13-643	Squash, butternut, boiled in unsalted water	тыква мускатная варёная
+cofid:13-644	Squash, butternut, baked	тыква мускатная запечённая
+cofid:13-646	Sweet potato, flesh only, boiled in unsalted water	батат варёный
+cofid:13-647	Sweet potato, wedges, flesh and skin, baked in rapeseed oil	батат дольками запечённый на рапсовом масле
+cofid:13-648	Beans, broad, whole, boiled in unsalted water	бобы варёные
+cofid:13-649	Curly kale, boiled in unsalted water	кейл кудрявый варёный
+cofid:13-650	Swede, flesh only, boiled in unsalted water	брюква варёная
+cofid:13-651	Aubergine, flesh and skin, boiled in unsalted water	баклажан варёный
+cofid:13-652	Okra, boiled in unsalted water	окра варёная
+cofid:13-654	Beans, runner, boiled in unsalted water	фасоль огненная варёная
+cofid:13-655	Yam, flesh only, boiled in unsalted water	ямс варёный
+cofid:13-656	Radish, red, flesh and skin, raw	редис сырой
+cofid:13-657	Lentils, red, split, dried, raw	чечевица красная колотая сухая сырая
+cofid:13-658	Lentils, red, split, dried, boiled in unsalted water	чечевица красная колотая варёная
+cofid:13-659	Beans, red kidney, dried, boiled in unsalted water	фасоль красная варёная
+cofid:13-660	Beans, red kidney, canned in water, re-heated, drained	фасоль красная консервированная разогретая слитая
+cofid:13-661	Lentils, green and brown, whole, dried, boiled in unsalted water	чечевица зелёная и коричневая варёная
+cofid:13-662	Beans, chick peas, Kabuli, whole, dried, boiled in unsalted water	нут варёный
+cofid:13-663	Beans, butter, dried, boiled in unsalted water	фасоль лима варёная
+cofid:13-664	Beans, mung, whole, dried, boiled in unsalted water	маш варёный
+cofid:13-665	Beans, haricot, canned, re-heated, drained	фасоль белая консервированная разогретая слитая
+cofid:13-666	Beans, cannellini, canned, re-heated, drained	фасоль каннеллини консервированная разогретая слитая
+cofid:13-667	Beans, edamame, frozen, boiled in unsalted water	эдамаме варёные
+cofid:13-668	Courgette, dried	цукини сушёный
+cofid:13-670	Beans, chick peas, canned, re-heated, drained	нут консервированный разогретый слитый
+cofid:13-671	Sweet potato, steamed	батат на пару
+cofid:13-672	Sweet potato, baked	батат запечённый
+cofid:13-801	Allspice, ground	перец душистый молотый
+cofid:13-802	Anise seeds	семена аниса
+cofid:13-803	Asafoetida	асафетида
+cofid:13-804	Basil, fresh	базилик свежий
+cofid:13-805	Basil, dried, ground	базилик сушёный молотый
+cofid:13-806	Bay leaf, dried	лавровый лист сушёный
+cofid:13-807	Betel leaves, fresh	листья бетеля свежие
+cofid:13-808	Caraway seeds	семена тмина
+cofid:13-809	Cardamom, ground	кардамон молотый
+cofid:13-810	Celery seeds	семена сельдерея
+cofid:13-811	Chervil, dried	кервель сушёный
+cofid:13-813	Chinese 5 spice	смесь «пять специй» китайская
+cofid:13-816	Cloves, dried	гвоздика сушёная
+cofid:13-818	Coriander leaves, dried	кинза сушёная
+cofid:13-821	Curry leaves, fresh	листья карри свежие
+cofid:13-823	Curry powder, mixed flavours	порошок карри ассорти
+cofid:13-824	Dill, fresh	укроп свежий
+cofid:13-825	Dill, dried	укроп сушёный
+cofid:13-826	Dill seeds	семена укропа
+cofid:13-827	Fennel seeds	семена фенхеля
+cofid:13-828	Fenugreek seeds	семена пажитника
+cofid:13-829	Garam masala	гарам масала
+cofid:13-830	Garlic powder	чеснок молотый
+cofid:13-832	Ginger, ground	имбирь молотый
+cofid:13-833	Liquorice powder	солодка молотая
+cofid:13-834	Mace, ground	мускатный цвет молотый
+cofid:13-835	Marjoram, dried	майоран сушёный
+cofid:13-836	Mint, fresh	мята свежая
+cofid:13-837	Mint, dried	мята сушёная
+cofid:13-839	Mustard seeds	семена горчицы
+cofid:13-844	Parsley, fresh	петрушка свежая
+cofid:13-845	Parsley, dried	петрушка сушёная
+cofid:13-847	Pepper, cayenne, ground	перец кайенский молотый
+cofid:13-849	Poppy seeds	семена мака
+cofid:13-852	Saffron	шафран
+cofid:13-853	Sage, fresh	шалфей свежий
+cofid:13-854	Sage, dried, ground	шалфей сушёный молотый
+cofid:13-855	Tamarind leaves, fresh	листья тамаринда свежие
+cofid:13-856	Tamarind pulp, flesh only	мякоть тамаринда
+cofid:13-857	Tarragon, fresh	тархун свежий
+cofid:13-858	Tarragon, dried, ground	тархун сушёный молотый
+cofid:13-861	Turmeric, ground	куркума молотая
+cofid:13-873	Chilli powder	порошок чили
+cofid:13-874	Cinnamon, ground	корица молотая
+cofid:13-875	Coriander seeds	семена кориандра
+cofid:13-876	Curry powder	порошок карри
+cofid:13-877	Nutmeg, ground	мускатный орех молотый
+cofid:13-878	Oregano, dried, ground	орегано сушёный молотый
+cofid:13-879	Paprika	паприка
+cofid:13-880	Pepper, black	перец чёрный
+cofid:13-881	Pepper, white	перец белый
+cofid:13-882	Rosemary, dried	розмарин сушёный
+cofid:13-883	Thyme, dried, ground	тимьян сушёный молотый
+cofid:13-884	Mixed herbs, dried	смесь трав сушёная
+cofid:13-886	Mixed curry spices	смесь специй для карри
+cofid:13-887	Chives, fresh	лук-резанец свежий
+cofid:13-888	Coriander leaves, fresh	кинза свежая
+cofid:13-889	Cumin seeds	семена зиры
+cofid:13-890	Ginger, fresh	имбирь свежий
+cofid:13-891	Oregano, fresh	орегано свежий
+cofid:13-892	Rosemary, fresh	розмарин свежий
+cofid:13-893	Thyme, fresh	тимьян свежий
+cofid:14-001	Amla	амла
+cofid:14-016	Apples, eating, dried	яблоки сушёные
+cofid:14-025	Apricots, raw, flesh and skin	абрикосы сырые
+cofid:14-026	Apricots, raw, flesh and skin, weighed with stones	абрикосы с косточкой сырые
+cofid:14-027	Apricots, stewed with sugar	абрикосы тушёные с сахаром
+cofid:14-028	Apricots, stewed with sugar, weighed with stones	абрикосы тушёные с сахаром и косточкой
+cofid:14-029	Apricots, stewed without sugar	абрикосы тушёные без сахара
+cofid:14-030	Apricots, stewed without sugar, weighed with stones	абрикосы тушёные без сахара с косточкой
+cofid:14-031	Apricots, dried	курага
+cofid:14-032	Apricots, dried, stewed with sugar	курага тушёная с сахаром
+cofid:14-033	Apricots, dried, stewed without sugar	курага тушёная без сахара
+cofid:14-039	Avocado, Fuerte, flesh only	авокадо Фуэрте
+cofid:14-040	Avocado, Fuerte, flesh only, weighed with skin and stone	авокадо Фуэрте целый
+cofid:14-043	Babaco, flesh only	бабако
+cofid:14-049	Blackberries, stewed with sugar	ежевика тушёная с сахаром
+cofid:14-050	Blackberries, stewed without sugar	ежевика тушёная без сахара
+cofid:14-053	Blackcurrants, raw	смородина чёрная сырая
+cofid:14-054	Blackcurrants, stewed with sugar	смородина чёрная тушёная с сахаром
+cofid:14-055	Blackcurrants, stewed without sugar	смородина чёрная тушёная без сахара
+cofid:14-059	Star fruit	карамбола
+cofid:14-060	Cashew fruit, flesh only	яблоко кешью
+cofid:14-063	Cherries, stewed with sugar	вишня тушёная с сахаром
+cofid:14-064	Cherries, stewed with sugar, weighed with stones	вишня тушёная с сахаром и косточкой
+cofid:14-065	Cherries, stewed without sugar	вишня тушёная без сахара
+cofid:14-066	Cherries, stewed without sugar, weighed with stones	вишня тушёная без сахара с косточкой
+cofid:14-069	Cherries, West Indian, flesh only	ацерола
+cofid:14-073	Cranberries	клюква
+cofid:14-074	Currants	коринка
+cofid:14-075	Custard apple/Bullock's heart, flesh only	аннона сетчатая
+cofid:14-076	Sugar apple, flesh only	аннона чешуйчатая
+cofid:14-077	Damsons, flesh and skin, raw	терн сырой
+cofid:14-078	Damsons, flesh and skin, raw, weighed with stones	терн с косточкой сырой
+cofid:14-079	Damsons, stewed with sugar	терн тушёный с сахаром
+cofid:14-080	Damsons, stewed with sugar, weighed with stones	терн тушёный с сахаром и косточкой
+cofid:14-081	Damsons, stewed without sugar	терн тушёный без сахара
+cofid:14-082	Damsons, stewed without sugar, weighed with stones	терн тушёный без сахара с косточкой
+cofid:14-083	Dates, raw, flesh and skin	финики
+cofid:14-084	Dates, raw, flesh and skin, weighed with stones	финики с косточкой
+cofid:14-087	Dried mixed fruit	ассорти сухофруктов
+cofid:14-088	Durian, flesh only	дуриан
+cofid:14-089	Elderberries, whole fruit	бузина
+cofid:14-090	Feijoa, flesh only	фейхоа
+cofid:14-091	Figs, whole green fruit, raw	инжир зелёный сырой
+cofid:14-092	Figs, whole fruit, dried	инжир сушёный
+cofid:14-093	Figs, dried, stewed with sugar	инжир сушёный тушёный с сахаром
+cofid:14-094	Figs, dried, stewed without sugar	инжир сушёный тушёный без сахара
+cofid:14-097	Fruit cocktail, canned in syrup, whole contents	фруктовый микс консервированный в сиропе
+cofid:14-100	Gooseberries, cooking, raw	крыжовник кулинарный сырой
+cofid:14-101	Gooseberries, cooking, stewed with sugar	крыжовник тушёный с сахаром
+cofid:14-102	Gooseberries, cooking, stewed without sugar	крыжовник тушёный без сахара
+cofid:14-103	Gooseberries, dessert, raw	крыжовник десертный сырой
+cofid:14-107	Grapefruit, canned in juice, whole contents	грейпфрут консервированный в соку
+cofid:14-111	Greengages, raw	ренклод сырой
+cofid:14-112	Greengages, raw, weighed with stones	ренклод с косточкой сырой
+cofid:14-113	Greengages, stewed with sugar	ренклод тушёный с сахаром
+cofid:14-114	Greengages, stewed with sugar, weighed with stones	ренклод тушёный с сахаром и косточкой
+cofid:14-115	Greengages, stones, removed, stewed without sugar	ренклод без косточки тушёный без сахара
+cofid:14-116	Greengages, stewed without sugar, weighed with stones	ренклод тушёный без сахара с косточкой
+cofid:14-117	Grenadillas, flesh and seeds	гренадилла
+cofid:14-118	Guava, flesh only, raw	гуава сырая
+cofid:14-119	Guava, raw, weighed with skin and pips	гуава целая сырая
+cofid:14-121	Jambu fruit, flesh only	помароза
+cofid:14-122	Jujube, flesh only	ююба
+cofid:14-125	Kumquats, whole fruit, raw	кумкват сырой
+cofid:14-128	Lemons, whole, without pips	лимон целый без косточек
+cofid:14-129	Lemons, peeled, flesh only	лимон очищенный
+cofid:14-130	Lemons, flesh only, raw, weighed with peel and pips	лимон с кожурой и косточками
+cofid:14-131	Limes, flesh only	лайм очищенный
+cofid:14-132	Limes, flesh only, weighed with peel and pips	лайм с кожурой и косточками
+cofid:14-133	Loganberries, raw	логанова ягода сырая
+cofid:14-134	Loganberries, stewed with sugar	логанова ягода тушёная с сахаром
+cofid:14-135	Loganberries, stewed without sugar	логанова ягода тушёная без сахара
+cofid:14-137	Longans, flesh only, dried	лонган сушёный
 cofid:14-138	Longans, canned in syrup, drained	лонган консервированный в сиропе
+cofid:14-139	Longans, canned in syrup, whole contents	лонган консервированный в сиропе
+cofid:14-140	Loquats, flesh only, raw	мушмула японская сырая
+cofid:14-142	Lychees, raw, flesh only	личи сырые
+cofid:14-143	Lychees, flesh only, raw, weighed with skin and stone	личи целые сырые
+cofid:14-145	Mammie apple, flesh only	мамея
+cofid:14-146	Mandarin oranges, canned in juice, whole contents	мандарины консервированные в соку
+cofid:14-151	Mangosteen, flesh only	мангостин
+cofid:14-152	Medlars, flesh only	ниспола
+cofid:14-159	Melon, Galia, flesh only	дыня Галия
+cofid:14-160	Melon, Galia, flesh only, weighed whole	дыня Галия целая
+cofid:14-161	Melon, Galia, flesh only, weighed with skin	дыня Галия с кожурой
+cofid:14-168	Mulberries, whole fruit, raw	шелковица сырая
+cofid:14-169	Mulberries, whole fruit, stewed with sugar	шелковица тушёная с сахаром
+cofid:14-170	Mulberries, whole fruit, stewed without sugar	шелковица тушёная без сахара
+cofid:14-177	Ortaniques, flesh only	ортаник
+cofid:14-178	Passion fruit, flesh and pips	маракуйя
+cofid:14-179	Passion fruit, flesh and pips, weighed with skin	маракуйя с кожурой
 cofid:14-188	Peaches, canned in juice, whole contents	персики консервированные в соку
 cofid:14-189	Peaches, canned in syrup, whole contents	персики консервированные в сиропе
+cofid:14-196	Pears, dried	груши сушёные
+cofid:14-197	Pears, canned in juice, whole contents	груши консервированные в соку
+cofid:14-205	Pears, Nashi, flesh and skin, raw	груша нэши сырая
+cofid:14-206	Pears, Nashi, flesh and skin, raw, weighed with core	груша нэши с сердцевиной сырая
+cofid:14-207	Physalis, fruit only	физалис
+cofid:14-211	Pineapple, canned in juice, whole contents	ананас консервированный в соку
+cofid:14-212	Pineapple, canned in syrup, whole contents	ананас консервированный в сиропе
+cofid:14-220	Plums, Victoria, flesh and skin, raw	слива Виктория сырая
+cofid:14-221	Plums, Victoria, flesh and skin, raw, weighed with stones	слива Виктория с косточкой сырая
+cofid:14-222	Plums, Victoria, stewed without sugar	слива Виктория тушёная без сахара
+cofid:14-223	Plums, Victoria, stewed without sugar, weighed with stones	слива Виктория тушёная без сахара с косточкой
+cofid:14-224	Plums, yellow, flesh and skin, raw	слива жёлтая сырая
+cofid:14-225	Plums, yellow, flesh and skin, raw, weighed with stones	слива жёлтая с косточкой сырая
+cofid:14-226	Pomegranate, flesh and pips	гранат очищенный
+cofid:14-227	Pomegranate, flesh and pips, weighed with skin	гранат с кожурой
+cofid:14-228	Pomelo, flesh only	помело
+cofid:14-229	Pomelo, flesh only, weighed with peel and pips	помело с кожурой
+cofid:14-230	Prickly pears, flesh and seeds	опунция фиговая
+cofid:14-231	Prunes, flesh and skin	чернослив
+cofid:14-232	Prunes, flesh and skin, weighed with stones	чернослив с косточкой
+cofid:14-233	Prunes, flesh and skin, stewed with sugar	чернослив тушёный с сахаром
+cofid:14-234	Prunes, flesh and skin, stewed with sugar, weighed with stones	чернослив тушёный с сахаром и косточкой
+cofid:14-235	Prunes, flesh and skin, stewed without sugar	чернослив тушёный без сахара
+cofid:14-236	Prunes, flesh and skin, stewed without sugar, weighed with stones	чернослив тушёный без сахара с косточкой
+cofid:14-237	Prunes, canned in juice, whole contents	чернослив консервированный в соку
+cofid:14-241	Quinces, flesh only	айва
+cofid:14-243	Rambutan, flesh only	рамбутан
+cofid:14-245	Raspberries, stewed with sugar	малина тушёная с сахаром
+cofid:14-246	Raspberries, stewed without sugar	малина тушёная без сахара
+cofid:14-249	Redcurrants, raw	смородина красная сырая
+cofid:14-250	Redcurrants, stewed with sugar	смородина красная тушёная с сахаром
+cofid:14-251	Redcurrants, stewed without sugar	смородина красная тушёная без сахара
+cofid:14-252	Rhubarb, stems only, raw	ревень сырой
+cofid:14-253	Rhubarb, stems only, stewed with sugar	ревень тушёный с сахаром
+cofid:14-256	Sapodilla, flesh only	саподилла
+cofid:14-259	Sharon fruit, flesh only	хурма Шарон
+cofid:14-263	Sultanas	изюм султанка
+cofid:14-264	Tamarillos, flesh and seeds	тамарилло
+cofid:14-265	Tamarind	тамаринд
+cofid:14-268	Whitecurrants, raw	смородина белая сырая
+cofid:14-269	Whitecurrants, stewed with sugar	смородина белая тушёная с сахаром
+cofid:14-270	Whitecurrants, stewed without sugar	смородина белая тушёная без сахара
+cofid:14-272	Apple juice concentrate, unsweetened, commerical	концентрат яблочного сока без сахара
+cofid:14-275	Grapefruit juice, unsweetened	сок грейпфрутовый без сахара
+cofid:14-277	Lemon juice, fresh	сок лимонный свежевыжатый
+cofid:14-278	Lemon juice, fresh, weighed as whole fruit	сок лимонный свежевыжатый из целого плода
+cofid:14-279	Lime juice, fresh	сок лайма свежевыжатый
+cofid:14-285	Passion fruit juice	сок маракуйи
+cofid:14-286	Pineapple juice, unsweetened	сок ананасовый без сахара
+cofid:14-289	Prune juice	сок черносливовый
+cofid:14-296	Melon, watermelon, flesh only	арбуз
+cofid:14-299	Peaches, raw, flesh and skin	персики сырые
+cofid:14-309	Melon, watermelon, flesh only, weighed whole	арбуз целый
+cofid:14-312	Peaches, flesh and skin, raw, weighed with stone	персики с косточкой сырые
+cofid:14-314	Plums, average, stewed with sugar, flesh and skin	сливы тушёные с сахаром
+cofid:14-315	Plums, average, flesh and skin, stewed without sugar	сливы тушёные без сахара
+cofid:14-316	Plums, average, flesh and skin, stewed with sugar, weighed with stones	сливы тушёные с сахаром и косточкой
+cofid:14-317	Plums, average, flesh and skin, stewed without sugar, weighed with stones	сливы тушёные без сахара с косточкой
+cofid:14-318	Bananas, flesh only	банан
+cofid:14-319	Apples, eating, raw, flesh and skin	яблоко сырое
+cofid:14-320	Apples, cooking, stewed without sugar, flesh only	яблоки кулинарные тушёные без сахара
+cofid:14-321	Pears, raw, flesh and skin	груша сырая
+cofid:14-322	Grapes, green	виноград зелёный
+cofid:14-323	Grapes, red	виноград красный
+cofid:14-324	Strawberries, raw	клубника сырая
+cofid:14-325	Blueberries	черника
+cofid:14-326	Citrus fruit, soft/easy peelers, flesh only	мандарины очищенные
+cofid:14-327	Oranges, flesh only	апельсин очищенный
+cofid:14-328	Melon, yellow flesh, flesh only	дыня жёлтая
+cofid:14-329	Orange juice, chilled	сок апельсиновый охлаждённый
+cofid:14-330	Orange juice, ambient, UHT	сок апельсиновый ультрапастеризованный
+cofid:14-331	Apple juice, clear, ambient and chilled	сок яблочный осветлённый
+cofid:14-332	Apples, cooking, stewed with sugar, flesh only	яблоки кулинарные тушёные с сахаром
+cofid:14-333	Fruit salad, homemade	салат фруктовый домашний
+cofid:14-335	Cherries, glace	вишня глазированная
+cofid:14-336	Fruit cocktail, canned in juice, whole contents	фруктовый микс консервированный в соку
+cofid:14-337	Lemon peel	цедра лимонная
+cofid:14-338	Peel, mixed	цукаты ассорти
+cofid:14-339	Melon, Canteloupe-type, flesh only	дыня канталупа
+cofid:14-340	Olives, green, in brine, drained, flesh and skin	оливки зелёные в рассоле слитые
+cofid:14-341	Pomegranate juice drink	напиток соковый гранатовый
+cofid:14-342	Apples, cooking, baked without sugar, flesh only	яблоки кулинарные запечённые без сахара
+cofid:14-343	Apples, cooking, baked without sugar, flesh only, weighed with skin	яблоки кулинарные запечённые без сахара целиком
+cofid:14-344	Apples, cooking, baked with sugar, flesh only	яблоки кулинарные запечённые с сахаром
+cofid:14-345	Apples, cooking, baked with sugar, flesh only, weighed with skin	яблоки кулинарные запечённые с сахаром целиком
 cofid:14-346	Apples, eating, raw, flesh and skin, weighed with core	яблоко свежее
+cofid:14-347	Bananas, raw, flesh only, weighed with skin	банан в кожуре
+cofid:14-348	Citrus fruit, soft/easy peelers, flesh only, weighed with peel and pips	мандарины с кожурой и косточками
+cofid:14-349	Blackberry and apple, stewed with sugar	ежевика с яблоком тушёные с сахаром
+cofid:14-350	Grapes, average	виноград
+cofid:14-351	Grapes, average, weighed with pips	виноград с косточками
+cofid:14-352	Melon, Canteloupe-type, flesh only, weighed whole	дыня канталупа целая
+cofid:14-353	Melon, Canteloupe-type, flesh only, weighed with skin	дыня канталупа с кожурой
+cofid:14-354	Melon, flesh only, average	дыня очищенная
+cofid:14-355	Melon, flesh only, average, weighed whole	дыня целая
+cofid:14-356	Melon, flesh only, average, weighed with skin	дыня с кожурой
+cofid:14-357	Melon, Honeydew, flesh only, weighed whole	дыня Ханидью целая
+cofid:14-358	Melon, Honeydew, flesh only, weighed with skin	дыня Ханидью с кожурой
+cofid:14-359	Olives, green, in brine, drained, flesh and skin, weighed with stones	оливки зелёные в рассоле с косточкой
+cofid:14-360	Oranges, flesh only, weighed with peel and pips	апельсин с кожурой и косточками
+cofid:14-361	Pears, average, flesh and skin, raw, weighed with core and stalk	груша сырая с сердцевиной
+cofid:14-362	Apples, cooking, raw, flesh only, peeled	яблоки кулинарные очищенные сырые
+cofid:14-363	Apples, cooking, raw, flesh only, weighed with skin and core	яблоки кулинарные сырые целиком
+cofid:14-364	Blackberry and apple, stewed without sugar	ежевика с яблоком тушёные без сахара
+cofid:14-365	Pears, average, raw, flesh only	груша очищенная сырая
+cofid:14-366	Pears, raw, flesh only, peeled, weighed with skin and core	груша очищенная сырая взвешенная с кожурой и сердцевиной
+cofid:14-367	Pears, average, stewed with sugar	груши тушёные с сахаром
+cofid:14-368	Pears, average, stewed without sugar	груши тушёные без сахара
+cofid:14-369	Orange juice, freshly squeezed	сок апельсиновый свежевыжатый
+cofid:14-370	Orange juice, freshly squeezed, weighed as whole fruit	сок апельсиновый свежевыжатый из целого плода
+cofid:14-371	Kiwi fruit, flesh only, raw	киви очищенный сырой
+cofid:14-372	Plums, dessert, flesh and skin, raw	слива десертная сырая
+cofid:14-373	Kiwi fruit, flesh only, raw, weighed with skin	киви с кожурой сырой
+cofid:14-374	Plums, dessert, flesh and skin, raw, weighed with stones	слива десертная с косточкой сырая
+cofid:14-375	Raspberries, raw	малина сырая
+cofid:14-376	Pineapple, flesh only, raw	ананас свежий
+cofid:14-377	Pineapple, flesh only, raw, weighed with skin and top	ананас с кожурой и верхушкой
+cofid:14-378	Mangoes, ripe, flesh only, raw	манго спелый
+cofid:14-379	Mangoes, ripe, flesh only, raw, weighed with skin and stone	манго с кожурой и косточкой
+cofid:14-380	Nectarines, flesh and skin, raw	нектарин сырой
+cofid:14-381	Nectarines, flesh and skin, raw, weighed with stones	нектарин с косточкой сырой
+cofid:14-382	Cherries, flesh and skin, raw	вишня сырая
+cofid:14-383	Cherries, flesh and skin, raw, weighed with stones	вишня с косточкой сырая
+cofid:14-384	Grapefruit, flesh only, raw	грейпфрут очищенный сырой
+cofid:14-385	Grapefruit, flesh only, raw, weighed with peel and pips	грейпфрут с кожурой и косточками
+cofid:14-386	Avocado, Hass, flesh only	авокадо Хасс
+cofid:14-387	Avocado, Hass, flesh only, weighed with skin and stone	авокадо Хасс целый
+cofid:14-388	Blackberries, raw	ежевика сырая
 cofid:14-389	Rhubarb, stems only, stewed without sugar	ревень тушёный без сахара
+cofid:14-390	Papaya, flesh only, raw	папайя очищенная сырая
+cofid:14-391	Prunes, ready-to-eat, semi-dried	чернослив полусушёный
+cofid:14-392	Apricots, ready-to-eat, semi-dried	курага полусушёная
+cofid:14-393	Raisins, dried	изюм
+cofid:14-394	Dates, dried, flesh and skin	финики сушёные
+cofid:14-395	Figs, ready-to-eat, semi-dried	инжир полусушёный
+cofid:14-396	Pineapple, dried	ананас сушёный
+cofid:14-397	Papaya, flesh only, raw, weighed with skin and pips	папайя с кожурой и семенами сырая
+cofid:14-398	Prunes, ready-to-eat, semi-dried, weighed with stones	чернослив полусушёный с косточкой
+cofid:14-399	Dates, dried, flesh and skin, weighed with stones	финики сушёные с косточкой
+cofid:14-804	Barcelona nuts, Kernel only	фундук барселонский ядро
+cofid:14-805	Barcelona nuts, kernel only, weighed with shells	фундук барселонский в скорлупе
+cofid:14-806	Betel nuts	орехи бетеля
+cofid:14-811	Cashew nuts, kernel only, plain	кешью несолёные
+cofid:14-812	Cashew nuts, kernel only, roasted and salted	кешью жареные солёные
+cofid:14-813	Chestnuts, kernel only, raw	каштаны сырые
+cofid:14-814	Chestnuts, kernel only, raw, weighed with shells	каштаны в скорлупе сырые
+cofid:14-815	Chestnuts, dried	каштаны сушёные
+cofid:14-816	Coconut, flesh only, fresh	кокос свежий
+cofid:14-820	Coconut milk	молоко кокосовое
+cofid:14-826	Melon seeds	семечки дыни
+cofid:14-834	Peanuts, roasted and salted	арахис жареный солёный
+cofid:14-837	Pecan nuts, kernel only	пекан ядро
+cofid:14-838	Pecan nuts, kernel only, weighed with shells	пекан в скорлупе
+cofid:14-839	Pine nuts, kernel only	кедровые орешки
+cofid:14-840	Pistachio nuts, kernel only, roasted and salted	фисташки жареные солёные
+cofid:14-841	Pistachio nuts, kernel only, roasted and salted, weighed with shells	фисташки жареные солёные в скорлупе
+cofid:14-842	Pumpkin seeds	семечки тыквенные
+cofid:14-843	Quinoa, raw	киноа сырая
+cofid:14-844	Sesame seeds	семена кунжута
+cofid:14-845	Sunflower seeds	семечки подсолнечника
+cofid:14-846	Sunflower seeds, toasted	семечки подсолнечника поджаренные
+cofid:14-847	Tahini paste	тхина
 cofid:14-848	Tigernuts	чуфа
+cofid:14-849	Trail mix	микс орехов и сухофруктов
+cofid:14-870	Almonds, flaked and ground	миндаль лепестками и молотый
+cofid:14-871	Brazil nuts, kernel only	орехи бразильские ядра
+cofid:14-873	Coconut, desiccated	кокосовая стружка
+cofid:14-874	Hazelnuts, kernel only	фундук ядро
+cofid:14-875	Marzipan, white and yellow, retail	марципан магазинный
+cofid:14-877	Peanuts, kernel only, plain, unsalted	арахис несолёный
+cofid:14-878	Peanuts, dry roasted	арахис жареный без масла
+cofid:14-879	Walnuts, kernel only	орехи грецкие ядра
+cofid:14-880	Nuts, mixed	ассорти орехов
+cofid:14-882	Peanuts and raisins	арахис с изюмом
+cofid:14-884	Brazil nuts, kernel only, weighed with shells	орехи бразильские в скорлупе
+cofid:14-885	Hazelnuts, kernel only, weighed with shells	фундук в скорлупе
+cofid:14-886	Peanuts, kernel only, plain, weighed with shells	арахис в скорлупе
+cofid:14-887	Walnuts, kernel only, weighed with shells	орехи грецкие в скорлупе
+cofid:14-889	Coconut milk, retail	молоко кокосовое магазинное
+cofid:14-890	Coconut milk, reduced fat, retail	молоко кокосовое нежирное магазинное
+cofid:14-891	Macadamia nuts, salted	макадамия солёная
 cofid:14-892	Peanut butter, smooth	арахисовая паста
+cofid:14-893	Marzipan, homemade	марципан домашний
+cofid:14-894	Peanuts, raisins and chocolate chips	арахис с изюмом и шоколадной крошкой
+cofid:14-895	Breadnut seeds, dried	семена рамона сушёные
+cofid:14-896	Almonds, whole kernels	миндаль целый
+cofid:14-897	Almonds, toasted	миндаль поджаренный
+cofid:14-898	Almonds, weighed with shells	миндаль в скорлупе
+cofid:15-001	Aubergine, stuffed with lentils and vegetables	баклажаны фаршированные чечевицей и овощами
+cofid:15-016	Bhaji, cabbage and spinach	бхаджи капустно-шпинатное
+cofid:15-021	Bhaji, cauliflower, potato and pea, with butter	бхаджи из цветной капусты, картофеля и горошка на сливочном масле
+cofid:15-022	Bhaji, cauliflower, potato and pea, with vegetable oil	бхаджи из цветной капусты, картофеля и горошка на растительном масле
+cofid:15-024	Bhaji, green bean	бхаджи из стручковой фасоли
+cofid:15-025	Bhaji, karela, with butter ghee, homemade	бхаджи из карелы на топлёном масле домашнее
+cofid:15-026	Bhaji, karela, with vegetable oil, homemade	бхаджи из карелы на растительном масле домашнее
+cofid:15-040	Bhaji, potato, spinach and cauliflower, homemade	бхаджи из картофеля, шпината и цветной капусты домашнее
+cofid:15-047	Bhaji, vegetable, Punjabi, with butter	бхаджи овощное по-пенджабски на сливочном масле
+cofid:15-048	Bhaji, vegetable, Punjabi, with vegetable oil	бхаджи овощное по-пенджабски на растительном масле
+cofid:15-095	Curry, black-eye bean, Punjabi, homemade	карри из вигны по-пенджабски домашнее
+cofid:15-107	Curry, chick pea, whole and tomato, Punjabi, with butter, homemade	карри из нута с томатом по-пенджабски на сливочном масле домашнее
+cofid:15-108	Curry, chick pea, whole and tomato, Punjabi, with vegetable oil, homemade	карри из нута с томатом по-пенджабски на растительном масле домашнее
+cofid:15-125	Curry, lentil, red/masoor dahl, mung bean dahl and tomato, homemade	карри из красной чечевицы, маш-дал и томата домашнее
+cofid:15-132	Curry, mung bean dahl and tomato, homemade	карри из маш-дал с томатом домашнее
+cofid:15-146	Curry, red kidney bean, Punjabi, homemade	карри из красной фасоли по-пенджабски домашнее
+cofid:15-186	Lasagne, spinach, wholemeal, homemade	лазанья со шпинатом цельнозерновая домашняя
+cofid:15-188	Lasagne, vegetable, wholemeal, homemade	лазанья овощная цельнозерновая домашняя
+cofid:15-190	Laverbread	лавербред (паста из морских водорослей)
+cofid:15-198	Lentil roast, homemade	рулет чечевичный домашний
+cofid:15-199	Lentil roast, with egg, homemade	рулет чечевичный с яйцом домашний
+cofid:15-200	Lentil and nut roast, homemade	рулет чечевично-ореховый домашний
+cofid:15-201	Lentil and nut roast, with egg, homemade	рулет чечевично-ореховый с яйцом домашний
+cofid:15-208	Nut croquettes, fried in sunflower oil, homemade	котлеты ореховые жареные на подсолнечном масле домашние
+cofid:15-209	Nut croquettes, fried in vegetable oil, homemade	котлеты ореховые жареные на растительном масле домашние
+cofid:15-210	Nut cutlets, retail, fried in sunflower oil	котлеты ореховые магазинные жареные на подсолнечном масле
+cofid:15-211	Nut cutlets, retail, fried in vegetable oil	котлеты ореховые магазинные жареные на растительном масле
+cofid:15-212	Nut cutlets, retail, grilled	котлеты ореховые магазинные на гриле
+cofid:15-214	Nut roast, mixed nuts with egg, homemade	рулет ореховый ассорти с яйцом домашний
+cofid:15-215	Nut and rice roast, mixed nuts, homemade	рулет орехово-рисовый ассорти домашний
+cofid:15-216	Nut and rice roast, mixed nuts with egg, homemade	рулет орехово-рисовый ассорти с яйцом домашний
+cofid:15-217	Nut and seed roast, mixed nuts and sunflower seeds, homemade	рулет из орехов и семечек ассорти домашний
+cofid:15-218	Nut and seed roast, mixed nuts and sunflower seeds with egg, homemade	рулет из орехов и семечек ассорти с яйцом домашний
+cofid:15-219	Nut and vegetable roast, mixed nuts, homemade	рулет орехово-овощной ассорти домашний
+cofid:15-220	Nut and vegetable roast, mixed nuts with egg, homemade	рулет орехово-овощной ассорти с яйцом домашний
+cofid:15-221	Nut, mushroom and rice roast, homemade	рулет орехово-грибной с рисом домашний
+cofid:15-255	Pizza, tomato, homemade	пицца томатная домашняя
+cofid:15-259	Potato, leek and celery bake	запеканка картофельная с луком-пореем и сельдереем
+cofid:15-261	Potatoes with onions and eggs, fried	картофель жареный с луком и яйцом
+cofid:15-262	Quorn korma	кворн корма
+cofid:15-279	Rissoles, lentil, fried in sunflower oil	котлеты чечевичные жареные на подсолнечном масле
+cofid:15-280	Rissoles, lentil, fried in vegetable oil	котлеты чечевичные жареные на растительном масле
+cofid:15-281	Rissoles, brown rice, fried in sunflower oil	котлеты из бурого риса жареные на подсолнечном масле
+cofid:15-282	Rissoles, brown rice, fried in vegetable oil	котлеты из бурого риса жареные на растительном масле
+cofid:15-294	Salad, wholemeal pasta, with vegetables and mayonnaise	салат из цельнозерновой пасты с овощами и майонезом
+cofid:15-305	Samosas, vegetable, retail	самосы овощные магазинные
+cofid:15-321	Tomatoes, stuffed with rice	помидоры фаршированные рисом
+cofid:15-344	Vegetable stir fry mix, fried in corn oil	овощной микс обжаренный на кукурузном масле
+cofid:15-345	Vegetable stir fry mix, fried in sunflower oil	овощной микс обжаренный на подсолнечном масле
+cofid:15-364	Vegetables, stir-fried, takeaway	овощи обжаренные на вынос
+cofid:15-397	Bhaji, cabbage and potato, with rapeseed oil, homemade	бхаджи капустно-картофельное на рапсовом масле домашнее
+cofid:15-490	Curry, mung bean, whole, Punjabi, homemade	карри из цельного маш по-пенджабски домашнее
+cofid:15-511	Dal Dhokari, homemade	дал-дхокари домашнее
+cofid:15-513	Dosa, filling, vegetable, homemade	начинка для доса овощная домашняя
+cofid:15-528	Khichadi, with butter ghee	кхичади на топлёном масле
+cofid:15-529	Khichadi, with vegetable oil	кхичади на растительном масле
+cofid:15-617	Sushi, vegetable	суши овощные
+cofid:15-619	Curry, vegetable, ready meal, without rice, cooked	карри овощное готовое без риса
+cofid:15-620	Pakora, vegetable, takeaway and restaurant	пакоры овощные на вынос и в ресторане
+cofid:15-621	Vegetables, mixed, cooked with onion, spice and tomatoes, homemade	овощная смесь с луком, специями и томатами домашняя
+cofid:15-625	Tori ki subji, homemade	сабджи из тори домашнее
+cofid:15-626	Tinda subji, homemade	сабджи из тинды домашнее
+cofid:15-627	Curry, bhindi subji, homemade	сабджи из бхинди домашнее
+cofid:15-628	Methi aloo, homemade	мети-алу домашнее
+cofid:15-629	Saag, homemade	сааг домашний
+cofid:15-634	Curry, Thai, stir-fry vegetable, takeaway and restaurant	карри тайское овощное обжаренное на вынос и в ресторане
+cofid:15-635	Coleslaw, not low calorie, retail	коулсло магазинный
+cofid:15-636	Coleslaw, with reduced calorie dressing, retail	коулсло с нежирной заправкой магазинный
+cofid:15-637	Cauliflower cheese, retail	цветная капуста в сырном соусе магазинная
+cofid:15-638	Casserole, vegetable, homemade	запеканка овощная томлёная домашняя
+cofid:15-639	Cauliflower cheese, made with semi-skimmed milk, homemade	цветная капуста в сырном соусе на полуобезжиренном молоке домашняя
+cofid:15-640	Chilli, vegetable, homemade	чили овощное домашнее
+cofid:15-641	Curry, chick pea dhal, homemade	карри из нута домашнее
+cofid:15-642	Garlic mushrooms, not coated, homemade	шампиньоны с чесноком домашние
+cofid:15-643	Nut roast, homemade	рулет ореховый домашний
+cofid:15-645	Pancakes, stuffed with vegetables, homemade	блинчики с овощной начинкой домашние
+cofid:15-646	Pasty, vegetable, homemade	пасти овощное домашнее
+cofid:15-647	Pie, vegetable, homemade	пирог овощной домашний
+cofid:15-648	Salad, green	салат зелёный
+cofid:15-649	Salad, rice, homemade	салат рисовый домашний
+cofid:15-650	Vegetable bake, homemade	запеканка овощная домашняя
+cofid:15-651	Lasagne, vegetable, retail	лазанья овощная магазинная
+cofid:15-652	Moussaka, vegetable, retail	мусака овощная магазинная
+cofid:15-653	Pakora/bhajia, vegetable, retail	пакоры овощные магазинные
+cofid:15-654	Salad, potato, with mayonnaise, retail	салат картофельный с майонезом магазинный
+cofid:15-655	Shepherd's pie, vegetable, retail	пастуший пирог овощной магазинный
+cofid:15-656	Vegeburger, retail, grilled	веджи-бургер магазинный на гриле
+cofid:15-657	Vegetable and cheese grill/burger, in crumbs, baked/grilled	котлета овощно-сырная в панировке запечённая
+cofid:15-658	Sausages, vegetarian, baked/grilled	колбаски вегетарианские запечённые
+cofid:15-659	Ratatouille, homemade	рататуй домашний
+cofid:15-661	Vegetable stir fry mix, fried in rapeseed oil	овощной микс обжаренный на рапсовом масле
+cofid:15-662	Aubergine, stuffed with rice	баклажаны фаршированные рисом
+cofid:15-663	Aubergine, stuffed with vegetables, cheese topping	баклажаны фаршированные овощами с сырной корочкой
+cofid:15-664	Bean loaf, mixed beans, homemade	рулет бобовый ассорти домашний
+cofid:15-665	Beanburger, aduki, fried in rapeseed oil, homemade	котлета из адзуки жареная на рапсовом масле домашняя
+cofid:15-666	Beanburger, butter bean, fried in rapeseed oil, homemade	котлета из фасоли лима жареная на рапсовом масле домашняя
+cofid:15-667	Beanburger, red kidney bean, fried in rapeseed oil	котлета из красной фасоли жареная на рапсовом масле
+cofid:15-668	Beanburger, soya, fried in rapeseed oil	котлета соевая жареная на рапсовом масле
+cofid:15-669	Bhaji, aubergine and potato, homemade	бхаджи из баклажана и картофеля домашнее
+cofid:15-670	Bhaji, aubergine, pea, potato and cauliflower, homemade	бхаджи из баклажана, горошка, картофеля и цветной капусты домашнее
+cofid:15-671	Bhaji, cabbage, homemade	бхаджи капустное домашнее
+cofid:15-672	Bhaji, cabbage and pea, with butter ghee, homemade	бхаджи из капусты и горошка на топлёном масле домашнее
+cofid:15-673	Bhaji, cabbage and pea, with rapeseed oil, homemade	бхаджи из капусты и горошка на рапсовом масле домашнее
+cofid:15-674	Bhaji, cabbage and potato, with butter, homemade	бхаджи капустно-картофельное на сливочном масле домашнее
+cofid:15-675	Bhaji, cabbage and potato, with vegetable oil	бхаджи капустно-картофельное на растительном масле
+cofid:15-676	Bhaji, carrot, potato and pea, with butter, homemade	бхаджи из моркови, картофеля и горошка на сливочном масле домашнее
+cofid:15-677	Bhaji, carrot, potato and pea, with vegetable oil, homemade	бхаджи из моркови, картофеля и горошка на растительном масле домашнее
+cofid:15-678	Bhaji, cauliflower, homemade	бхаджи из цветной капусты домашнее
+cofid:15-679	Bhaji, cauliflower and potato, homemade	бхаджи из цветной капусты и картофеля домашнее
+cofid:15-680	Bhaji, cauliflower and vegetable, homemade	бхаджи из цветной капусты с овощами домашнее
+cofid:15-681	Bhaji, mushroom, homemade	бхаджи грибное домашнее
+cofid:15-682	Bhaji, mustard leaves, homemade	бхаджи из листьев горчицы домашнее
+cofid:15-683	Bhaji, mustard leaves and spinach, homemade	бхаджи из листьев горчицы и шпината домашнее
+cofid:15-684	Bhaji, okra, Bangladeshi, with butter ghee, homemade	бхаджи из окры по-бангладешски на топлёном масле домашнее
+cofid:15-685	Bhaji, okra, Bangladeshi, with vegetable oil, homemade	бхаджи из окры по-бангладешски на растительном масле домашнее
+cofid:15-686	Bhaji, okra, Islami, homemade	бхаджи из окры ислами домашнее
+cofid:15-687	Bhaji, pea, homemade	бхаджи гороховое домашнее
+cofid:15-688	Bhaji, potato and fenugreek leaves, homemade	бхаджи из картофеля и листьев пажитника домашнее
+cofid:15-689	Bhaji, potato and green pepper, homemade	бхаджи из картофеля и зелёного перца домашнее
+cofid:15-690	Bhaji, potato and onion, homemade	бхаджи картофельно-луковое домашнее
+cofid:15-691	Bhaji, potato, onion and mushroom, homemade	бхаджи из картофеля, лука и грибов домашнее
+cofid:15-692	Bhaji, potato, with butter ghee, homemade	бхаджи картофельное на топлёном масле домашнее
+cofid:15-693	Bhaji, potato, with vegetable oil, homemade	бхаджи картофельное на растительном масле домашнее
+cofid:15-694	Bhaji, spinach, homemade	бхаджи шпинатное домашнее
+cofid:15-695	Bhaji, spinach and potato, homemade	бхаджи шпинатно-картофельное домашнее
+cofid:15-696	Bhaji, turnip, homemade	бхаджи репное домашнее
+cofid:15-697	Bhaji, turnip and onion, homemade	бхаджи репно-луковое домашнее
+cofid:15-698	Bhaji, vegetable, with butter, homemade	бхаджи овощное на сливочном масле домашнее
+cofid:15-699	Bhaji, vegetable, with rapeseed oil, homemade	бхаджи овощное на рапсовом масле домашнее
+cofid:15-700	Broccoli in cheese sauce, made with semi-skimmed milk, homemade	брокколи в сырном соусе на полуобезжиренном молоке домашняя
+cofid:15-701	Broccoli in cheese sauce, made with skimmed milk, homemade	брокколи в сырном соусе на обезжиренном молоке домашняя
+cofid:15-702	Broccoli in cheese sauce, made with whole milk, homemade	брокколи в сырном соусе на цельном молоке домашняя
+cofid:15-703	Bubble and squeak, fried in sunflower oil, homemade	картофель с капустой жареные на подсолнечном масле домашние
+cofid:15-704	Bubble and squeak, fried in rapeseed oil, homemade	картофель с капустой жареные на рапсовом масле домашние
+cofid:15-705	Cabbage, red, cooked with apple	капуста краснокочанная тушёная с яблоком
+cofid:15-706	Callaloo and cho cho, homemade	каллалу с чайотом домашнее
+cofid:15-707	Callaloo and okra, homemade	каллалу с окрой домашнее
+cofid:15-708	Cannelloni, spinach, homemade	каннеллони со шпинатом домашние
+cofid:15-709	Cannelloni, vegetable, homemade	каннеллони овощные домашние
+cofid:15-710	Cauliflower cheese, made with skimmed milk, homemade	цветная капуста в сырном соусе на обезжиренном молоке домашняя
 cofid:15-711	Cauliflower cheese, made with whole milk, homemade	цветная капуста, запечённая в сырном соусе
 cofid:15-768	Curry, mung bean dahl, Bengali, homemade	дал из маша по-бенгальски
 cofid:15-769	Curry, mung bean, whole and turnip leaves, homemade	карри из маша с листьями репы

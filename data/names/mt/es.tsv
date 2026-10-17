@@ -10622,32 +10622,1452 @@ ciqual:9900	Rice vermicelli, dry, raw	fideos de arroz secos crudos
 ciqual:9901	Rice vermicelli, dry, cooked, no added salt	fideos de arroz cocidos sin sal
 ciqual:9902	Soy vermicelli, dry, raw	fideos de soja secos
 ciqual:9903	Soy vermicelli, dry, cooked, no added salt	fideos de soja cocidos sin sal
+cofid:11-001	Arrowroot	arrurruz
+cofid:11-002	Barley, pearl, raw	cebada perlada cruda
+cofid:11-003	Barley, pearl, boiled	cebada perlada cocida
+cofid:11-006	Buckwheat, groats	trigo sarraceno en grano
+cofid:11-011	Cornmeal, sifted	harina de maíz tamizada
+cofid:11-016	Flour, millet, foxtail	harina de mijo
+cofid:11-021	Flour, rice	harina de arroz
+cofid:11-023	Sago, raw	sagú crudo
+cofid:11-027	Tapioca, raw	tapioca cruda
+cofid:11-1000	Stuffing, sage and onion, homemade	relleno de salvia y cebolla casero
+cofid:11-1001	Bread, white, toasted	pan blanco tostado
+cofid:11-1003	Bread, white, 'with added fibre'	pan blanco con fibra añadida
+cofid:11-1004	Bread, white, 'with added fibre', toasted	pan blanco con fibra añadida tostado
+cofid:11-1005	Cake, fruit, rich, homemade	bizcocho de frutas casero
+cofid:11-1006	Bread rolls, white, soft	panecillos blancos blandos
+cofid:11-1007	Pie, fruit, one crust, homemade	pastel de fruta abierto casero
+cofid:11-1008	Pie, fruit, pastry top and bottom, homemade	pastel de fruta cerrado casero
+cofid:11-1009	Currant buns, retail	bollos con pasas de Corinto comprados
+cofid:11-1010	Pastry, wholemeal, uncooked, homemade	masa quebrada integral cruda casera
+cofid:11-1011	Pizza, fish topped, takeaway	pizza de pescado para llevar
+cofid:11-1012	Pizza, chicken topped, retail	pizza de pollo comprada
 cofid:11-1013	Pizza, ham and pineapple, retail	pizza con jamón y piña
+cofid:11-1014	Pizza, vegetarian, retail and takeaway	pizza vegetariana comprada y para llevar
+cofid:11-1015	Pizza, meat topped, retail and takeaway	pizza de carne comprada y para llevar
+cofid:11-1016	Pizza base, raw	base de pizza cruda
+cofid:11-1017	Pastry, shortcrust, uncooked, homemade	masa quebrada cruda casera
+cofid:11-1019	Breakfast cereal, multigrain hoops, fortified	cereales de desayuno aros multicereales enriquecidos
+cofid:11-1020	Crumble, fruit, retail	crumble de fruta comprado
+cofid:11-1021	Pudding, sponge, canned	pudín de bizcocho en conserva
+cofid:11-1022	Pudding, Christmas, retail	pudín de Navidad comprado
+cofid:11-1023	Prawn crackers, takeaway	galletas de gamba para llevar
+cofid:11-1024	Pie, apple, one crust, homemade	pastel de manzana abierto casero
+cofid:11-1025	Pie, apple, pastry top and bottom, homemade	pastel de manzana cerrado casero
+cofid:11-1026	Pie, apple, wholemeal, one crust, homemade	pastel de manzana abierto integral casero
+cofid:11-1027	Pie, apple, wholemeal, pastry top and bottom, homemade	pastel de manzana cerrado integral casero
+cofid:11-1028	Tart, bakewell, homemade	tarta Bakewell casera
+cofid:11-1029	Banana bread, homemade	pan de plátano casero
+cofid:11-1030	Bannocks, made with beremeal, homemade	tortas bannock de harina de cebada caseras
+cofid:11-1032	Biscuits, plain, homemade	galletas sencillas caseras
+cofid:11-1034	Biscuits, wholemeal, homemade	galletas integrales caseras
+cofid:11-1035	Biscuits, melting moments, homemade	galletas que se deshacen caseras
+cofid:11-1036	Brandy snaps, homemade	brandy snaps caseros
+cofid:11-1037	Pudding, bread and butter, homemade	pudín de pan con mantequilla casero
+cofid:11-1038	Bread pudding, homemade	pudín de pan casero
+cofid:11-1041	Cake, carrot, with topping, homemade	bizcocho de zanahoria con cobertura casero
+cofid:11-1043	Chelsea buns, homemade	bollos Chelsea caseros
+cofid:11-1044	Cake, cherry, homemade	bizcocho de cerezas casero
+cofid:11-1045	Flour, corn	harina de maíz
+cofid:11-1046	Cake, chocolate, not filled, homemade	bizcocho de chocolate sin relleno casero
+cofid:11-1047	Cake, chocolate, with butter icing, homemade	bizcocho de chocolate con glaseado de mantequilla casero
+cofid:11-1048	Pastry, choux, uncooked, homemade	masa choux cruda casera
+cofid:11-1049	Pastry, choux, cooked, homemade	masa choux horneada casera
+cofid:11-1050	Choux buns, homemade	bollos de pasta choux caseros
+cofid:11-1051	Pudding, Christmas, homemade	pudín de Navidad casero
+cofid:11-1052	Pastry, shortcrust, cooked, homemade	masa quebrada horneada casera
+cofid:11-1053	Cake, coconut, homemade	bizcocho de coco casero
+cofid:11-1055	Crumble, apple, homemade	crumble de manzana casero
+cofid:11-1056	Crumble, fruit, homemade	crumble de fruta casero
+cofid:11-1057	Crumble, with pie filling, homemade	crumble con relleno preparado casero
+cofid:11-1058	Tart, custard, large, homemade	tarta de natillas grande casera
+cofid:11-1060	Biscuits, oat based, chocolate, half coated	galletas de avena cubiertas a medias de chocolate
+cofid:11-1064	Pastries, chocolate eclairs, fresh, homemade	éclairs de chocolate caseros
+cofid:11-1065	Pudding, Eve's pudding, homemade	pudín Eve casero
+cofid:11-1066	Flan case, pastry, homemade	base de masa para flan casera
+cofid:11-1067	Flan case, sponge, homemade	base de bizcocho para flan casera
+cofid:11-1069	Flan, pastry, with fruit, homemade	flan de masa con fruta casero
+cofid:11-1070	Flan, sponge, with fruit, homemade	flan de bizcocho con fruta casero
+cofid:11-1071	Flapjacks, homemade	barritas de avena flapjack caseras
+cofid:11-1072	Cake, fruit, wholemeal, homemade	bizcocho de frutas integral casero
+cofid:11-1073	Pie, fruit, pastry top and bottom, blackcurrant, homemade	pastel cerrado de grosellas negras casero
+cofid:11-1074	Pie, fruit, wholemeal, pastry top and bottom, blackcurrant, homemade	pastel cerrado integral de grosellas negras casero
+cofid:11-1075	Pie, fruit, wholemeal, one crust, homemade	pastel de fruta abierto integral casero
+cofid:11-1076	Pie, fruit, wholemeal, pastry top and bottom, homemade	pastel de fruta cerrado integral casero
 cofid:11-1077	Pie, fruit, wholemeal, with pie filling, homemade	pastel de frutas integral
+cofid:11-1078	Pie, fruit, with pie filling, homemade	pastel de fruta con relleno preparado casero
+cofid:11-1079	Gingerbread, homemade	pan de jengibre casero
+cofid:11-1081	Gulab jamen/jambu, homemade	gulab jamun casero
+cofid:11-1083	Gulab jamen/jambu, retail	gulab jamun comprado
+cofid:11-1084	Hot cross buns, homemade	bollos de Pascua caseros
+cofid:11-1085	Tarts, jam, homemade	tartaletas de mermelada caseras
+cofid:11-1086	Tarts, jam, wholemeal, homemade	tartaletas de mermelada integrales caseras
+cofid:11-1088	Jellabi, homemade	jalebi casero
+cofid:11-1090	Cake, lardy, homemade	bizcocho de manteca de cerdo casero
+cofid:11-1091	Milk bread, homemade	pan de leche casero
+cofid:11-1092	Mince pies, homemade, individual	mince pies caseros
+cofid:11-1093	Tart, mincemeat, one crust, homemade	tarta abierta de frutos secos especiados casera
+cofid:11-1094	Muffins, American style, chocolate chip, homemade	magdalenas con pepitas de chocolate caseras
+cofid:11-1095	Muffins, bran, homemade	magdalenas de salvado caseras
+cofid:11-1096	Noodles, egg, fried with spring onions, homemade	fideos de huevo fritos con cebolleta caseros
+cofid:11-1097	Pudding, Queen of Puddings, homemade	pudín Queen of Puddings casero
+cofid:11-1100	Oatcakes, homemade	tortas de avena caseras
+cofid:11-1101	Pakoras, homemade	pakoras caseras
 cofid:11-1102	Pancakes, savoury, made with skimmed milk, homemade	tortitas saladas de leche desnatada
+cofid:11-1103	Pancakes, savoury, wholemeal, made with whole milk, homemade	crepes salados integrales con leche entera caseros
+cofid:11-1104	Paratha, homemade	paratha casera
+cofid:11-1105	Pinni, homemade	pinni casero
+cofid:11-1106	Porridge, made with milk and water	gachas de avena con leche y agua
+cofid:11-1107	Porridge, made with water	gachas de avena con agua
+cofid:11-1108	Porridge, made with whole milk	gachas de avena con leche entera
+cofid:11-1109	Rock cakes, homemade	rocas inglesas caseras
+cofid:11-1111	Rum baba, homemade	babá al ron casero
+cofid:11-1112	Scones, cheese, homemade	scones de queso caseros
+cofid:11-1113	Scones, potato, homemade	scones de patata caseros
+cofid:11-1114	Scones, wholemeal, homemade	scones integrales caseros
 cofid:11-1115	Scones, fruit, wholemeal, homemade	scones integrales con fruta
+cofid:11-1116	Scotch pancakes, homemade	tortitas escocesas caseras
+cofid:11-1117	Bread, soda, made with white flour, homemade	pan de soda de harina blanca casero
+cofid:11-1118	Cake, sponge, with butter icing, homemade	bizcocho con glaseado de mantequilla casero
+cofid:11-1119	Pudding, sponge, homemade	pudín de bizcocho casero
+cofid:11-1120	Pudding, sponge, with dried fruit, homemade	pudín de bizcocho con frutos secos casero
+cofid:11-1121	Pudding, sponge, with jam or treacle, homemade	pudín de bizcocho con mermelada o melaza casero
+cofid:11-1122	Pudding, spotted dick, homemade	pudín spotted dick casero
+cofid:11-1123	Tartlets, strawberry, homemade	tartaletas de fresa caseras
 cofid:11-1124	Pudding, suet, homemade	pudín de sebo
+cofid:11-1125	Cake, Swiss roll, homemade	brazo de gitano casero
+cofid:11-1126	Treacle tart, homemade	tarta de melaza casera
+cofid:11-1127	Brownies, chocolate, homemade	brownies de chocolate caseros
+cofid:11-1128	Flapjacks, retail, chocolate covered	barritas de avena flapjack compradas cubiertas de chocolate
+cofid:11-1129	Pasta, white, dried, boiled in unsalted water	pasta blanca seca cocida
+cofid:11-1130	Waffles, homemade	gofres caseros
+cofid:11-1131	Welsh cakes, homemade	tortas galesas caseras
+cofid:11-1132	Welsh cheesecakes, homemade	tartas de queso galesas caseras
+cofid:11-1134	Crackers, wholemeal, homemade	crackers integrales caseros
+cofid:11-1135	Yorkshire pudding, made with skimmed milk, homemade	pudín de Yorkshire con leche desnatada casero
+cofid:11-1136	Bread, brown, toasted	pan moreno tostado
+cofid:11-1137	Bread, white, sliced, fried in rapeseed oil	pan blanco frito en aceite de colza
+cofid:11-1138	Custard powder	natillas en polvo
+cofid:11-1139	Pastry, flaky, cooked, homemade	hojaldre horneado casero
+cofid:11-1140	Pastry, flaky, uncooked, homemade	hojaldre crudo casero
+cofid:11-1141	Pancakes, sweet, made with skimmed milk, homemade	crepes dulces con leche desnatada caseros
+cofid:11-1142	Pancakes, sweet, made with whole milk, homemade	crepes dulces con leche entera caseros
+cofid:11-1143	Pancakes, sweet, made with semi skimmed milk, homemade	crepes dulces con leche semidesnatada caseros
+cofid:11-1144	Bread rolls, brown, crusty	panecillos morenos de corteza crujiente
+cofid:11-1145	Bread, white, average	pan blanco
+cofid:11-1146	Yorkshire pudding, made with whole milk	pudín de Yorkshire con leche entera
+cofid:11-230	Pastries, Asian	bollería asiática
+cofid:11-444	Rice, egg fried, takeaway	arroz frito con huevo para llevar
+cofid:11-450	Pasta, plain, fresh, boiled	pasta fresca sencilla cocida
+cofid:11-459	Chapatis, made without fat	chapatis sin grasa
+cofid:11-462	Bread, malt, fruited	pan de malta con fruta
+cofid:11-526	Gateau, chocolate based, frozen	tarta de chocolate congelada
+cofid:11-527	Cake, chocolate fudge	bizcocho de chocolate y fudge
+cofid:11-530	Gateau, fruit, frozen	tarta de fruta congelada
 cofid:11-532	Cake, sponge, with dairy cream and jam, frozen	bizcocho relleno de nata y mermelada, congelado
+cofid:11-541	Muffins, English style, white	muffins ingleses blancos
+cofid:11-542	Muffins, English style, white, toasted	muffins ingleses blancos tostados
+cofid:11-544	Scotch pancakes, retail	tortitas escocesas compradas
+cofid:11-548	Pie, lemon meringue, retail	pastel de limón con merengue comprado
+cofid:11-715	Pasta, egg, white, dried, raw	pasta al huevo blanca seca cruda
+cofid:11-716	Pasta, white, dried, raw	pasta blanca seca cruda
+cofid:11-717	Pasta shapes, coloured, flavoured, dried, raw	pasta de colores con sabor seca cruda
+cofid:11-718	Pasta, wholewheat, spaghetti, dried, raw	espaguetis integrales secos crudos
+cofid:11-719	Noodles, egg, dried, raw	fideos de huevo secos crudos
+cofid:11-720	Pasta, white,  twists, fusilli, dried, boiled in unsalted water	fusilli blancos secos cocidos
+cofid:11-721	Pasta, white, twists, fusilli, dried, boiled in salted water	fusilli blancos secos cocidos con sal
+cofid:11-722	Pasta, white, spaghetti, dried, boiled in unsalted water	espaguetis blancos secos cocidos
+cofid:11-723	Pasta, wholewheat, spaghetti, dried, boiled in unsalted water	espaguetis integrales secos cocidos
+cofid:11-724	Noodles, egg, medium, dried, boiled in unsalted water	fideos de huevo medianos secos cocidos
+cofid:11-725	Noodles, rice, fine, dried, boiled in unsalted water	fideos de arroz finos secos cocidos
+cofid:11-726	Pasta, egg, fresh, raw	pasta fresca al huevo cruda
+cofid:11-727	Pasta, egg, white, tagliatelle, fresh, boiled in unsalted water	tagliatelle al huevo frescos cocidos
+cofid:11-728	Pasta, egg, fresh, filled with cheese only, boiled in unsalted water	pasta fresca al huevo rellena de queso cocida
+cofid:11-729	Pasta, egg, fresh, filled with cheese and tomato, boiled in unsalted water	pasta fresca al huevo rellena de queso y tomate cocida
+cofid:11-730	Pasta, egg, fresh, filled with mushrooms, boiled in unsalted water	pasta fresca al huevo rellena de champiñones cocida
+cofid:11-731	Pasta, egg, fresh, filled with green vegetables/herbs and cheese, boiled in unsalted water	pasta fresca al huevo rellena de verduras verdes, hierbas y queso cocida
+cofid:11-732	Pasta, egg, fresh, filled with meat, boiled in unsalted water	pasta fresca al huevo rellena de carne cocida
+cofid:11-734	Pasta and sauce mixes, dried, raw	pasta con salsa preparado seco crudo
+cofid:11-735	Pasta, spaghetti, canned, in tomato sauce	espaguetis en conserva en salsa de tomate
+cofid:11-736	Pasta, ravioli, meat filling, canned in tomato sauce	raviolis de carne en salsa de tomate en conserva
+cofid:11-737	Muffins, American, chocolate, retail	magdalenas de chocolate compradas
+cofid:11-738	Muffins, American, not chocolate, retail	magdalenas compradas
+cofid:11-739	Jaffa cakes	Jaffa Cakes
+cofid:11-740	Cake bars, chocolate	barritas de bizcocho de chocolate
+cofid:11-742	Breakfast cereal, cornflakes, fortified	copos de maíz enriquecidos
+cofid:11-745	Breakfast cereal, cornflakes, unfortified	copos de maíz sin enriquecer
+cofid:11-746	Breakfast cereal, cornflakes, crunchy / honey nut coated, fortified	copos de maíz con miel y frutos secos enriquecidos
+cofid:11-749	Breakfast cereal, cornflakes, frosted, fortified	copos de maíz azucarados enriquecidos
+cofid:11-750	Breakfast cereal, rice, toasted/crisp, fortified	arroz inflado enriquecido
+cofid:11-753	Breakfast cereal, rice, chocolate flavoured, fortified	arroz inflado de chocolate enriquecido
+cofid:11-754	Breakfast cereal, Ricicles, Kellogg's	arroz inflado Ricicles Kellogg's
+cofid:11-755	Breakfast cereal, honey loops and hoops, including Honey and Nut Cheerios, fortified	aros de miel y frutos secos enriquecidos
+cofid:11-756	Breakfast cereal, puffed wheat, unfortified	trigo inflado sin enriquecer
+cofid:11-757	Breakfast cereal, puffed wheat, honey coated, fortified	trigo inflado con miel enriquecido
+cofid:11-760	Breakfast cereal, malted flake, fortified	copos de malta enriquecidos
+cofid:11-761	Breakfast cereal, malted wheat, fortified	trigo malteado enriquecido
+cofid:11-762	Breakfast cereal, wheat and multigrain, chocolate flavoured, fortified	cereales de trigo y multicereales de chocolate enriquecidos
+cofid:11-763	Breakfast cereal, bran flakes, fortified	copos de salvado enriquecidos
+cofid:11-767	Breakfast cereal, bran type cereal, fortified	cereales de salvado enriquecidos
+cofid:11-773	Breakfast cereal, wheat biscuits, Weetabix type, fortified	almohadillas de trigo tipo Weetabix enriquecidas
+cofid:11-774	Breakfast cereal, wheat biscuits, Weetabix type, unfortified	almohadillas de trigo tipo Weetabix sin enriquecer
+cofid:11-775	Breakfast cereal, shredded wheat type, unfortified	almohadillas de trigo integral sin enriquecer
+cofid:11-777	Breakfast cereal, shredded wheat type with fruit, unfortified	almohadillas de trigo integral con fruta sin enriquecer
+cofid:11-778	Breakfast cereal, Shredded Wheat, honey nut, Nestle	Shredded Wheat con miel y frutos secos Nestle
+cofid:11-779	Breakfast cereal, fruit and fibre type, fortified	cereales de fruta y fibra enriquecidos
+cofid:11-780	Muesli, Swiss style, unfortified	muesli sin enriquecer
 cofid:11-781	Muesli, Swiss style, no added sugar or salt, unfortified	muesli sin azúcar
+cofid:11-788	Porridge oats, unfortified	copos de avena sin enriquecer
+cofid:11-789	Porridge oats, unfortified, cooked, made up with semi-skimmed milk	gachas de avena con leche semidesnatada
+cofid:11-792	Breakfast cereal, instant hot oat, plain, raw, fortified	gachas de avena instantáneas enriquecidas en seco
+cofid:11-793	Breakfast cereal, oat, instant, plain, fortified, cooked, made up with semi-skimmed milk	gachas de avena instantáneas enriquecidas con leche semidesnatada
+cofid:11-795	Breakfast cereal, Oat, instant, flavoured, unfortified, made up with semi-skimmed milk	gachas de avena instantáneas saborizadas con leche semidesnatada
+cofid:11-796	Biscuits, short, sweet	galletas dulces de mantequilla
+cofid:11-797	Biscuits, semi-sweet	galletas semidulces
+cofid:11-798	Biscuits, ginger nuts	galletas de jengibre
+cofid:11-799	Biscuits, digestive, plain	galletas digestive
+cofid:11-800	Wafers, plain ice cream wafers, not filled	barquillos para helado sin relleno
+cofid:11-801	Biscuits, plain, reduced fat	galletas sencillas bajas en grasa
+cofid:11-802	Shortbread	galletas de mantequilla
+cofid:11-803	Biscuits, digestive, with oats, plain	galletas digestive de avena
+cofid:11-804	Biscuits, jam filled	galletas rellenas de mermelada
+cofid:11-805	Fig Rolls	barritas de higo
+cofid:11-806	Biscuits, short or sweet, half coated in chocolate	galletas dulces cubiertas a medias de chocolate
+cofid:11-807	Biscuits, digestive, half coated in chocolate	galletas digestive cubiertas a medias de chocolate
+cofid:11-808	Biscuits, iced	galletas glaseadas
+cofid:11-809	Biscuits, fully coated with chocolate	galletas cubiertas de chocolate
+cofid:11-810	Biscuits, fully coated with chocolate, with cream	galletas cubiertas de chocolate con crema
+cofid:11-811	Biscuits, fully coated with chocolate, with marshmallow	galletas cubiertas de chocolate con malvavisco
+cofid:11-812	Chocolate covered wafer biscuit	barquillo cubierto de chocolate
+cofid:11-813	Biscuits, sandwich, cream	galletas sándwich de crema
+cofid:11-814	Flapjacks, retail	barritas de avena flapjack compradas
+cofid:11-815	Biscuits, cookies, chocolate chip, standard	galletas con pepitas de chocolate
+cofid:11-816	Biscuits, cookies, chocolate chip, American style	galletas con pepitas de chocolate americanas
+cofid:11-818	Cereal bars, with fruit and/or nuts, with chocolate, unfortified	barritas de cereales con fruta y frutos secos con chocolate
+cofid:11-819	Cereal bars, with fruit and/or nuts, no chocolate, unfortified	barritas de cereales con fruta y frutos secos
+cofid:11-820	Cream crackers	galletas cream crackers
+cofid:11-821	Biscuits, cheese flavoured	galletas de queso
+cofid:11-822	Crispbread, rye	pan crujiente de centeno
+cofid:11-823	Oatcakes, plain, retail	tortas de avena compradas
+cofid:11-824	Cheese straws/twists, retail	palitos de queso comprados
+cofid:11-825	Minibreads, toasted, retail	mini tostadas compradas
+cofid:11-826	Breadsticks, plain	picos de pan
+cofid:11-827	Scones, plain, retail	scones comprados
+cofid:11-828	Iced buns, retail	bollos glaseados comprados
+cofid:11-829	Cake, fruit, retail	bizcocho de frutas comprado
+cofid:11-830	Cake, chocolate, with filling and icing, retail	tarta de chocolate con relleno y glaseado comprada
+cofid:11-831	Cake, sponge, with jam and butter cream, retail	bizcocho con mermelada y crema de mantequilla comprado
+cofid:11-832	Cake, sponge, soft iced, retail	bizcocho con glaseado suave comprado
 cofid:11-833	Cake, loaf, retail	bizcocho de molde
+cofid:11-834	Cake, Swiss rolls, chocolate covered and filled, retail	brazo de gitano relleno cubierto de chocolate comprado
+cofid:11-835	Cake, battenberg, retail	bizcocho battenberg comprado
+cofid:11-836	Cake, carrot, iced, retail	bizcocho de zanahoria glaseado comprado
+cofid:11-837	Shortcake, caramel, chocolate covered, retail	galleta de caramelo cubierta de chocolate comprada
+cofid:11-838	Eccles cakes, retail	pasteles Eccles comprados
+cofid:11-839	Cakes, fancy iced, individual, retail	pasteles glaseados comprados
+cofid:11-840	Cakes from 'healthy eating' ranges	bizcochos de línea saludable comprados
+cofid:11-841	Pastries, Danish, retail	bollo danés comprado
+cofid:11-842	Pastries, Greek, baklava, retail	baklava comprada
+cofid:11-843	Pastries, cream filled, retail	bollería rellena de crema comprada
+cofid:11-844	Pastries, chocolate eclairs, cream filled, retail	éclairs de chocolate rellenos de crema comprados
+cofid:11-845	Tarts, bakewell, iced, retail	tarta Bakewell glaseada comprada
+cofid:11-846	Jam tarts, retail	tartaletas de mermelada compradas
+cofid:11-847	Pie, fruit, individual, retail	pastelito de fruta comprado
+cofid:11-848	Mince pies, retail	mince pies comprados
+cofid:11-849	Doughnuts, with jam	donuts con mermelada
+cofid:11-850	Doughnuts, ring, iced	donuts glaseados
+cofid:11-851	Pastry, shortcrust, retail, uncooked	masa quebrada comprada cruda
+cofid:11-852	Pastry, flaky/puff, retail, uncooked	hojaldre comprado crudo
+cofid:11-853	Pastry, shortcrust, retail, cooked	masa quebrada comprada horneada
+cofid:11-854	Pastry, flaky/puff, retail, cooked	hojaldre comprado horneado
+cofid:11-855	Pastry, filo, retail, uncooked	masa filo comprada cruda
+cofid:11-856	Pastry, filo, retail, cooked	masa filo comprada horneada
+cofid:11-857	Rice, white, basmati, raw	arroz basmati blanco crudo
+cofid:11-858	Rice, white, basmati, boiled in unsalted water	arroz basmati blanco cocido
+cofid:11-859	Rice, white, basmati, easy cook, raw	arroz basmati blanco vaporizado crudo
+cofid:11-860	Rice, white, basmati, easy cook, boiled in unsalted water	arroz basmati blanco vaporizado cocido
+cofid:11-861	Rice, white, long grain, raw	arroz blanco largo crudo
+cofid:11-862	Rice, white, long grain, boiled in unsalted water	arroz blanco largo cocido
+cofid:11-863	Rice, white, long grain, easy cook, raw	arroz blanco largo vaporizado crudo
+cofid:11-864	Rice, white, long grain, easy cook, boiled in unsalted water	arroz blanco largo vaporizado cocido
+cofid:11-865	Rice, white, pudding, raw	arroz blanco para pudín crudo
+cofid:11-866	Rice, brown, basmati, raw	arroz basmati integral crudo
+cofid:11-867	Rice, brown, basmati, boiled in unsalted water	arroz basmati integral cocido
+cofid:11-868	Rice, brown, wholegrain, raw	arroz integral crudo
+cofid:11-869	Rice, brown, wholegrain, boiled in unsalted water	arroz integral cocido
+cofid:11-870	Rice, brown, easy cook, raw	arroz integral vaporizado crudo
+cofid:11-871	Rice, brown, easy cook, boiled in unsalted water	arroz integral vaporizado cocido
+cofid:11-872	Rice, wild, raw	arroz salvaje crudo
+cofid:11-873	Rice, wild, boiled in unsalted water	arroz salvaje cocido
+cofid:11-874	Rice, Thai fragrant, raw	arroz tailandés aromático crudo
+cofid:11-875	Rice, Thai fragrant, boiled in unsalted water	arroz tailandés aromático cocido
+cofid:11-876	Rice, red, raw	arroz rojo crudo
 cofid:11-877	Red rice, boiled in unsalted water	arroz rojo cocido
+cofid:11-878	Rice, white, Italian Arborio risotto, raw	arroz arborio crudo
+cofid:11-879	Rice, white, Italian "Arborio" risotto, boiled in unsalted water	arroz arborio cocido
+cofid:11-880	Rice, savoury, including chicken, beef, mushroom and vegetable varieties, dried, uncooked	arroz de preparado seco crudo
+cofid:11-881	Rice, savoury, including chicken, beef, mushroom and vegetable varieties, dried, cooked	arroz de preparado seco cocido
+cofid:11-884	Rice, ready-cooked, "plain", re-heated	arroz precocinado recalentado
+cofid:11-885	Rice, egg fried, ready cooked, re-heated, retail, not takeaway	arroz frito con huevo precocinado recalentado comprado
+cofid:11-886	Flour, wheat, white, plain, soft	harina de trigo blanca
+cofid:11-887	Flour, wheat, bread/strong, white	harina de trigo de fuerza blanca
+cofid:11-888	Flour, wheat, white, self raising	harina de trigo blanca con levadura
+cofid:11-889	Flour, wheat, wholemeal	harina de trigo integral
+cofid:11-890	Flour, wheat, wholemeal, bread/strong	harina de trigo integral de fuerza
+cofid:11-891	Flour, wheat, wholemeal, self raising	harina de trigo integral con levadura
+cofid:11-892	Flour, wheat, brown	harina de trigo morena
+cofid:11-893	Flour, wheat, brown, bread/strong	harina de trigo morena de fuerza
+cofid:11-894	Flour, chapati, white	harina para chapati blanca
+cofid:11-895	Flour, chapati, brown	harina para chapati morena
+cofid:11-896	Flour, gram	harina de garbanzo
+cofid:11-897	Flour, rye	harina de centeno
+cofid:11-898	Flour, soya	harina de soja
+cofid:11-899	Flour, gari (cassava flour)	gari (harina de yuca)
+cofid:11-901	Couscous, plain, raw	cuscús seco
+cofid:11-902	Couscous, plain, cooked	cuscús preparado
+cofid:11-903	Semolina, raw	sémola cruda
+cofid:11-904	Wheat, bulgur, raw	bulgur crudo
 cofid:11-905	Polenta, hydrated, raw	polenta cocida
+cofid:11-906	Bran, wheat	salvado de trigo
+cofid:11-907	Wheatgerm	germen de trigo
+cofid:11-910	Bread, naan, peshwari naan, takeaway and retail	naan peshwari
+cofid:11-911	Puri, homemade	puris caseros
+cofid:11-912	Mooli paratha, homemade	paratha de daikon casera
+cofid:11-913	Gajjeralla	gachas de trigo tierno (gajjeralla)
+cofid:11-915	Sevyian, homemade	seviyan casero
+cofid:11-916	Cake rusks	bizcochos tostados
+cofid:11-919	Strudel, fruit filled, retail, frozen	strudel de fruta congelado comprado
+cofid:11-920	Pie, apple, pastry, double crust, deep filled, retail	pastel de manzana cerrado muy relleno comprado
+cofid:11-921	Pie, apple, pastry, double crust, retail	pastel de manzana cerrado comprado
+cofid:11-922	Pancakes (served with crispy duck), pancakes only, takeaway	crepes para pato laqueado para llevar
+cofid:11-923	Bread, white, crusty bloomer, unsliced, fresh, large	pan blanco de corteza crujiente sin rebanar grande
+cofid:11-925	Tortilla, wheat, soft	tortilla de trigo blanda
+cofid:11-936	Pizza, cheese and tomato, retail	pizza de queso y tomate comprada
+cofid:11-937	Bread, garlic and herb, retail	pan de ajo y hierbas comprado
+cofid:11-938	Breakfast cereal, crunchy clusters type, without nuts, unfortified	cereales crunchy sin frutos secos sin enriquecer
+cofid:11-939	Breakfast cereal, crunchy/crispy muesli type cereal, with nuts, unfortified	muesli crujiente con frutos secos sin enriquecer
+cofid:11-940	Rusks	panes tostados
+cofid:11-941	Noodles, egg, fine, dried, boiled in unsalted water	fideos de huevo finos secos cocidos
+cofid:11-942	Noodles, egg, thick, dried, boiled in unsalted water	fideos de huevo gruesos secos cocidos
+cofid:11-947	Bread, seeded	pan con semillas
+cofid:11-948	Currant buns, toasted	bollos con pasas de Corinto tostados
+cofid:11-951	Bannocks, made with wheat flour, homemade	tortas bannock de harina de trigo caseras
+cofid:11-952	Biscuits, gingernut, homemade	galletas de jengibre caseras
+cofid:11-954	Macaroni cheese, homemade	macarrones con queso caseros
+cofid:11-955	Sandwich, white bread, bacon, lettuce and tomato	bocadillo de pan blanco con beicon, lechuga y tomate
+cofid:11-956	Cake, sponge, homemade	bizcocho casero
+cofid:11-957	Cake, sponge, fatless, homemade	bizcocho sin grasa casero
+cofid:11-958	Scones, plain, homemade	scones caseros
+cofid:11-959	Pancakes, savoury, made with semi-skimmed milk, homemade	crepes salados con leche semidesnatada caseros
+cofid:11-960	Yorkshire pudding, made with semi-skimmed milk, homemade	pudín de Yorkshire con leche semidesnatada casero
+cofid:11-961	Pastry, wholemeal, cooked, homemade	masa quebrada integral horneada casera
+cofid:11-962	Dumplings, homemade	bolitas de masa caseras
+cofid:11-963	Sandwich, white bread, cheddar cheese and pickle	bocadillo de pan blanco con queso cheddar y pickle
+cofid:11-964	Sandwich, white bread, chicken salad	bocadillo de pan blanco con ensalada de pollo
+cofid:11-965	Sandwich, white bread, ham salad	bocadillo de pan blanco con ensalada de jamón
+cofid:11-966	Sandwich, white bread, egg mayonnaise	bocadillo de pan blanco con huevo y mayonesa
+cofid:11-967	Sandwich, white bread, tuna mayonnaise	bocadillo de pan blanco con atún y mayonesa
+cofid:11-968	Rice, pilau, plain, homemade	pilaf casero
+cofid:11-969	Bread, ciabatta	ciabatta
+cofid:11-970	Bagels, plain	bagels
+cofid:11-971	Bread, brown, average	pan moreno
+cofid:11-972	Bread, malted wheat	pan de trigo malteado
+cofid:11-973	Bread, naan, retail	naan comprado
+cofid:11-974	Bread, pitta, white	pan de pita blanco
+cofid:11-975	Bread, wheatgerm	pan con germen de trigo
+cofid:11-976	Bread, white, Danish style	pan blanco estilo danés
+cofid:11-977	Bread, white, farmhouse or split tin	pan blanco rústico de molde
+cofid:11-978	Bread, white, French stick	baguette blanca
+cofid:11-979	Bread, white, premium	pan blanco premium
+cofid:11-980	Bread, white, sliced	pan blanco de molde
+cofid:11-981	Bread, wholemeal, average	pan integral
+cofid:11-982	Bread, wholemeal, toasted	pan integral tostado
+cofid:11-983	Bread rolls, brown, soft	panecillos morenos blandos
+cofid:11-984	Bread rolls, malted wheat	panecillos de trigo malteado
+cofid:11-985	Bread rolls, white, crusty	panecillos blancos de corteza crujiente
+cofid:11-986	Bread rolls, wholemeal	panecillos integrales
+cofid:11-987	Chapatis, made with fat, retail	chapatis con grasa compradas
+cofid:11-988	Croissants	croissants
+cofid:11-989	Crumpets, toasted	crumpets tostados
+cofid:11-990	Cakes, crispie, homemade	pasteles de arroz inflado caseros
+cofid:11-991	Cake, fruit, rich, iced, homemade	bizcocho de frutas glaseado casero
+cofid:11-992	Pastry, cheese, shortcrust, homemade	masa quebrada de queso casera
+cofid:11-993	Scones, fruit, retail	scones con fruta comprados
+cofid:11-994	Crumble, fruit, wholemeal, homemade	crumble de fruta integral casero
+cofid:11-995	Quiche, cheese and egg, wholemeal, homemade	quiche de queso y huevo integral casera
+cofid:11-997	Cheese and onion rolls, pastry, retail	hojaldres de queso y cebolla comprados
+cofid:11-998	Papadums, takeaway	papadams para llevar
+cofid:11-999	Risotto, plain, homemade	risotto sencillo casero
+cofid:12-038	Milk, human, colostrum	calostro
+cofid:12-039	Milk, human, transitional	leche humana de transición
+cofid:12-112	Cream, half, fresh	nata ligera fresca
+cofid:12-132	Cheese, Caerphilly	queso Caerphilly
+cofid:12-152	Cheese, Derby	queso Derby
+cofid:12-164	Cheese, Gruyere	queso Gruyère
+cofid:12-173	Cheese, processed, smoked	queso fundido ahumado
+cofid:12-174	Cheese, Quark	queso quark
+cofid:12-175	Cheese, Red Windsor	queso Red Windsor
+cofid:12-176	Cheese, Ricotta	queso ricotta
+cofid:12-177	Cheese, Roquefort	queso Roquefort
+cofid:12-178	Cheese, Sage Derby	queso Derby con salvia
+cofid:12-181	Cheese, Stilton, white	queso Stilton blanco
+cofid:12-184	Yogurt, whole milk, plain	yogur natural entero
+cofid:12-232	Fruit fool, homemade	fool de fruta casero
+cofid:12-237	Jelly, made with water	gelatina con agua
+cofid:12-240	Jelly, made with skimmed milk	gelatina con leche desnatada
+cofid:12-307	Milk, skimmed, pasteurised, average	leche desnatada pasteurizada
+cofid:12-308	Milk, skimmed, pasteurised, summer	leche desnatada pasteurizada de verano
+cofid:12-309	Milk, skimmed, pasteurised, winter	leche desnatada pasteurizada de invierno
+cofid:12-313	Milk, semi-skimmed, pasteurised, average	leche semidesnatada pasteurizada
+cofid:12-314	Milk, semi-skimmed, UHT	leche semidesnatada UHT
+cofid:12-320	Milk, whole, UHT	leche entera UHT
+cofid:12-321	Milk, Channel Islands, whole, pasteurised	leche entera de Jersey pasteurizada
 cofid:12-322	Milk, Channel islands, whole, summer	leche entera de Jersey
+cofid:12-323	Milk, Channel islands, whole, winter	leche entera de Jersey de invierno
+cofid:12-324	Milk, evaporated, light	leche evaporada ligera
+cofid:12-326	Milk, flavoured, pasteurised, strawberry, banana	leche aromatizada de fresa y plátano
+cofid:12-327	Milkshake, thick, takeaway	batido espeso para llevar
+cofid:12-328	Milk, goats, pasteurised	leche de cabra pasteurizada
+cofid:12-329	Milk, sheeps, raw	leche de oveja cruda
+cofid:12-332	Cream, fresh, single	nata para cocinar fresca
+cofid:12-333	Cream, fresh, whipping	nata para montar fresca
+cofid:12-334	Cream, fresh, double, including Jersey cream	nata doble fresca
+cofid:12-335	Creme fraiche, full fat	creme fraiche entera
+cofid:12-336	Creme fraiche, half fat	creme fraiche ligera
+cofid:12-337	Cream, dairy, extra thick (24% fat)	nata extraespesa 24 % de grasa
+cofid:12-338	Cream, dairy, UHT, canned spray, 85% cream	nata en spray UHT
+cofid:12-339	Cream, dairy, UHT, half fat, canned spray	nata ligera en spray UHT
+cofid:12-342	Cream substitute, double	sucedáneo de nata doble
+cofid:12-344	Cheese, Brie, with outer rind removed	queso Brie sin corteza
+cofid:12-345	Cheese, Camembert	queso Camembert
+cofid:12-346	Cheese, Cheddar, English	queso cheddar inglés
+cofid:12-348	Cheese, Cheddar type, half fat	queso tipo cheddar semigraso
+cofid:12-354	Cheese, Danish blue	queso azul danés
+cofid:12-355	Cheese, Edam	queso Edam
+cofid:12-357	Cheese, goats milk, full fat, soft, white rind	queso de cabra tierno de corteza blanca
+cofid:12-358	Cheese, Gouda	queso Gouda
+cofid:12-360	Cheese, Mozzarella, fresh	mozzarella fresca
+cofid:12-367	Cheese, Stilton, blue	queso Stilton azul
+cofid:12-368	Cheese, white, average	queso blanco curado
+cofid:12-372	Fromage frais, virtually fat free, fruit	fromage frais desnatado de frutas
+cofid:12-373	Lassi, sweetened	lassi dulce
+cofid:12-375	Yogurt, whole milk, fruit	yogur de frutas entero
+cofid:12-377	Yogurt, Greek style, fruit	yogur griego de frutas
+cofid:12-379	Yogurt, low fat, plain	yogur bajo en grasa natural
+cofid:12-380	Yogurt, low fat, fruit	yogur bajo en grasa de frutas
+cofid:12-384	Ice cream bars/choc ices, non-dairy, with chocolate flavoured coating	bombón helado no lácteo con cobertura de chocolate
+cofid:12-385	Ice cream desserts, frozen	postres de helado congelados
+cofid:12-389	Lollies, with real fruit juice	polos de zumo de fruta
+cofid:12-390	Lollies, containing ice-cream	polos con helado
+cofid:12-393	Sorbet, fruit	sorbete de fruta
+cofid:12-394	Pie, banoffee	tarta banoffee
+cofid:12-395	Cheesecake, fruit, frozen	tarta de queso de frutas congelada
+cofid:12-397	Creme caramel, retail	flan comprado
+cofid:12-398	Desserts, dairy, chocolate	postre lácteo de chocolate
+cofid:12-401	Mousse, chocolate, low fat	mousse de chocolate ligero
+cofid:12-402	Mousse, fruit	mousse de fruta
+cofid:12-405	Profiteroles with sauce, frozen	profiteroles con salsa congelados
+cofid:12-408	Torte, fruit	tarta de fruta
+cofid:12-409	Trifle, fruit, retail	trifle de fruta comprado
+cofid:12-418	Milk, semi-skimmed, pasteurised, summer and autumn	leche semidesnatada pasteurizada de verano y otoño
+cofid:12-419	Milk, semi-skimmed, pasteurised, winter and spring	leche semidesnatada pasteurizada de invierno y primavera
+cofid:12-461	Tarts, custard, individual	tartaletas de natillas
+cofid:12-467	Sambar, homemade	sambar casero
+cofid:12-468	Urad dahl, homemade	dal de urad casero
+cofid:12-472	Pilau, vegetable, homemade	pilaf de verduras casero
+cofid:12-475	Pavlova, toffee/chocolate, no fruit	pavlova de caramelo y chocolate sin fruta
+cofid:12-476	Tiramisu	tiramisú
+cofid:12-482	Ice cream, virtually fat free alternative	helado casi sin grasa
+cofid:12-485	Cheese, Red Leicester	queso Red Leicester
+cofid:12-486	Cheese, White Cheshire	queso Cheshire blanco
+cofid:12-487	Cheese, Double Gloucester	queso Double Gloucester
+cofid:12-488	Cheese, Lancashire	queso Lancashire
+cofid:12-489	Cheese, Wensleydale	queso Wensleydale
+cofid:12-490	Cheese, Mascarpone	queso mascarpone
+cofid:12-491	Cheese, Brie, rind only	corteza de queso Brie
+cofid:12-492	Cheese, Port Salut, St Paulin type	queso Port Salut
+cofid:12-493	Cheese, Emmental	queso Emmental
+cofid:12-494	Cheese, Dolcelatte, rind removed	queso Dolcelatte sin corteza
+cofid:12-495	Cheese, Paneer	queso paneer
+cofid:12-496	Cheese, Halloumi	queso halloumi
+cofid:12-497	Fat spread, low fat (26-39%), not polyunsaturated, including dairy type	margarina baja en grasa 26–39 %
+cofid:12-498	Fat spread, low fat (26-39%), not polyunsaturated, with olive oil	margarina baja en grasa 26–39 % con aceite de oliva
+cofid:12-499	Fat spread, low fat (26-39%), polyunsaturated	margarina baja en grasa 26–39 % poliinsaturada
+cofid:12-500	Baking fat and margarine (75-90% fat), hard block	margarina de repostería en bloque 75–90 %
+cofid:12-501	Cooking fat, compound, not polyunsaturated	grasa de cocina compuesta
+cofid:12-502	Ghee made from vegetable oil	ghee vegetal
+cofid:12-503	Fat spread, reduced fat (41-62%), polyunsaturated	margarina de grasa media 41–62 % poliinsaturada
+cofid:12-504	Fat spread, reduced fat (41-62%), not polyunsaturated	margarina de grasa media 41–62 %
+cofid:12-505	Fat spread, reduced fat (41-62%), not polyunsaturated, with olive oil	margarina de grasa media 41–62 % con aceite de oliva
+cofid:12-506	Fat spread, reduced fat (62-75%), not polyunsaturated	margarina de grasa alta 62–75 %
+cofid:12-507	Cornetto type ice cream cone	cono de helado tipo Cornetto
+cofid:12-508	Ice cream, dairy, vanilla, soft scoop	helado de vainilla cremoso
+cofid:12-509	Ice cream, non dairy, vanilla, soft scoop	helado de vainilla no lácteo cremoso
+cofid:12-510	Ice cream bars/choc ices, chocolate coated, luxury	bombón helado cubierto de chocolate premium
+cofid:12-511	Ice cream, dairy, luxury, with chocolate/caramel	helado premium con chocolate y caramelo
+cofid:12-512	Milk, 1% fat, pasteurised	leche 1 % pasteurizada
+cofid:12-513	Milk drink, fermented, with probiotics	bebida láctea fermentada con probióticos
+cofid:12-514	Pudding, rice, homemade, with semi-skimmed milk	arroz con leche semidesnatada casero
+cofid:12-515	Yogurt, whole milk, twin pot, not fruit	yogur entero doble no de fruta
+cofid:12-516	Jelly, sugar free, made with water	gelatina sin azúcar con agua
+cofid:12-517	Meringue, homemade	merengue casero
+cofid:12-518	Chocolate nut sundae	sundae de chocolate con frutos secos
+cofid:12-519	Custard, made up with semi-skimmed milk	natillas con leche semidesnatada
+cofid:12-520	Milk, condensed, whole, sweetened	leche condensada azucarada
+cofid:12-521	Milk, skimmed, dried, fortified	leche desnatada en polvo enriquecida
+cofid:12-522	Milk, evaporated, whole	leche evaporada entera
+cofid:12-523	Milk, soya, non-dairy alternative to milk, sweetened, fortified	bebida de soja azucarada enriquecida
+cofid:12-524	Milk, soya, non-dairy alternative to milk, unsweetened, fortified	bebida de soja sin azúcar enriquecida
+cofid:12-525	Cheese, Feta	queso feta
+cofid:12-526	Cheese, Parmesan, fresh	parmesano
+cofid:12-527	Cheese, processed, plain	queso fundido
+cofid:12-528	Fromage frais, virtually fat free, natural	fromage frais desnatado natural
+cofid:12-530	Yogurt, whole milk, infant, fruit flavour	yogur infantil de frutas entero
+cofid:12-531	Yogurt, whole milk, twin pot, thick and creamy with fruit	yogur entero doble cremoso con fruta
+cofid:12-532	Yogurt, virtually fat free/diet, fruit	yogur desnatado de frutas
+cofid:12-533	Yogurt, virtually fat free/diet, plain	yogur desnatado natural
+cofid:12-534	Fromage frais, fruit, children's, fortified	fromage frais infantil de frutas enriquecido
+cofid:12-535	Milk, flavoured, pasteurised, chocolate	leche aromatizada de chocolate
+cofid:12-536	Milk, human, mature	leche humana madura
+cofid:12-537	Cheese spread, plain, reduced fat	crema de queso ligera
+cofid:12-538	Cheese, spreadable, medium fat, soft, white	queso para untar semigraso
+cofid:12-539	Cheese, cottage, plain	requesón
+cofid:12-540	Cheese spread, plain	crema de queso
+cofid:12-541	Cheese, spreadable, soft white, low fat	queso para untar ligero
+cofid:12-542	Cheesecake, fruit, individual	tarta de queso de frutas
+cofid:12-543	Custard, ready to eat, canned and tetra-pak	natillas listas para consumir
+cofid:12-544	Cream substitute, single	sucedáneo de nata líquida
+cofid:12-545	Cocoa powder	cacao en polvo
+cofid:12-546	Coffeemate, whitener powder	crema de café en polvo
+cofid:12-547	Tzatziki	tzatziki
+cofid:12-548	Cheese, Cheddar type, '30% less fat'	queso tipo cheddar 30 % menos grasa
+cofid:12-549	Cheese, processed, slices, reduced fat	queso fundido en lonchas ligero
+cofid:12-550	Cheese, cottage, plain, reduced fat	requesón ligero
 cofid:12-551	Cheese, spreadable, full fat, soft, white	queso para untar cremoso
+cofid:12-552	Pavlova, with fruit and cream	pavlova con fruta y nata
+cofid:12-553	Pudding, rice, canned, low fat	arroz con leche en conserva ligero
+cofid:12-554	Milk, skimmed, UHT	leche desnatada UHT
+cofid:12-555	Yogurt, Greek style, plain	yogur griego natural
+cofid:12-556	Banana split, homemade	banana split casero
+cofid:12-557	Blancmange, homemade	manjar blanco casero
+cofid:12-560	Pie, cheese and potato, homemade	pastel de queso y patata casero
+cofid:12-561	Cheese pudding, homemade	pudín de queso casero
+cofid:12-562	Cheesecake, homemade	tarta de queso casera
+cofid:12-563	Cocoa powder, made up with semi-skimmed milk	cacao con leche semidesnatada
+cofid:12-564	Cocoa powder, made up with skimmed milk	cacao con leche desnatada
+cofid:12-565	Cocoa powder, made up with whole milk	cacao con leche entera
+cofid:12-566	Complan powder, savoury, made up with water	mezcla nutricional Complan salada con agua
+cofid:12-567	Complan powder, sweet, made up with water	mezcla nutricional Complan dulce con agua
+cofid:12-568	Complan powder, sweet, made up with semi-skimmed milk	mezcla nutricional Complan dulce con leche semidesnatada
+cofid:12-569	Complan powder, sweet, made up with skimmed milk	mezcla nutricional Complan dulce con leche desnatada
+cofid:12-570	Complan powder, sweet, made up with whole milk	mezcla nutricional Complan dulce con leche entera
+cofid:12-571	Crème caramel, homemade	flan casero
+cofid:12-572	Custard, confectioners'	natillas de repostería
+cofid:12-573	Custard, egg	natillas de huevo
+cofid:12-574	Custard, made up with skimmed milk	natillas con leche desnatada
+cofid:12-575	Custard, made up with whole milk	natillas con leche entera
+cofid:12-580	Pudding, rice, canned	arroz con leche en conserva
+cofid:12-581	Ice cream with cone, non-dairy, vanilla	helado de vainilla no lácteo con cucurucho
+cofid:12-582	Ice cream with wafers, non-dairy, vanilla	helado de vainilla no lácteo con barquillos
+cofid:12-583	Instant dessert powder, made up with skimmed milk	postre instantáneo en polvo con leche desnatada
+cofid:12-584	Instant dessert powder, made up with whole milk	postre instantáneo en polvo con leche entera
+cofid:12-585	Meringue, with cream, homemade	merengue con nata casero
+cofid:12-589	Milk shake, powder, made up with semi-skimmed milk	batido de polvos con leche semidesnatada
+cofid:12-590	Milk shake, powder, made up with skimmed milk	batido de polvos con leche desnatada
+cofid:12-591	Milk shake, powder, made up with whole milk	batido de polvos con leche entera
+cofid:12-592	Cream, fresh, clotted	nata cuajada
+cofid:12-593	Sauce, cheese, packet mix, dry	salsa de queso preparado seco
+cofid:12-594	Peach melba, homemade	melocotón Melba casero
+cofid:12-595	Raita, yogurt and gram flour, homemade	raita casera
+cofid:12-596	Milk, whole, pasteurised, average	leche entera pasteurizada
+cofid:12-597	Milk, whole, pasteurised, winter and spring	leche entera pasteurizada de invierno y primavera
+cofid:12-598	Milk, whole, pasteurised, summer and autumn	leche entera pasteurizada de verano y otoño
+cofid:12-600	Trifle, homemade	trifle casero
+cofid:12-601	Trifle, with Dream Topping	trifle con Dream Topping
+cofid:12-602	Welsh rarebit, homemade	tostada con salsa de queso casera
+cofid:12-603	Welsh rarebit, wholemeal, homemade	tostada integral con salsa de queso casera
+cofid:12-604	Cheese, hard, average	queso duro
+cofid:12-605	Knickerbocker glory, homemade	copa Knickerbocker casera
+cofid:12-606	Kulfi, homemade	kulfi casero
+cofid:12-607	Pudding, rice, homemade, with skimmed milk	arroz con leche desnatada casero
+cofid:12-608	Pudding, rice, homemade, with whole milk	arroz con leche entera casero
+cofid:12-609	Yogurt, soya, non-dairy alternative to yogurt, fruit, fortified	yogur de soja de frutas enriquecido
+cofid:12-814	Eggs, duck, boiled and salted	huevos de pato cocidos salados
+cofid:12-815	Eggs, quail, whole, raw	huevos de codorniz crudos
+cofid:12-816	Eggs, turkey, whole, raw	huevos de pavo crudos
+cofid:12-904	Yogurt, low fat, hazelnut	yogur bajo en grasa de avellana
+cofid:12-905	Yogurt, low fat, toffee	yogur bajo en grasa de caramelo
+cofid:12-920	Eggs, duck, whole, raw	huevos de pato crudos
+cofid:12-936	Quiche, Lorraine, shortcrust pastry, retail	quiche Lorraine comprada
+cofid:12-937	Eggs, chicken, whole, raw	huevos de gallina crudos
+cofid:12-938	Eggs, chicken, white, raw	clara de huevo cruda
+cofid:12-939	Eggs, chicken, yolk, raw	yema de huevo cruda
+cofid:12-940	Eggs, chicken, whole, boiled	huevos de gallina cocidos
+cofid:12-941	Eggs, chicken, white, boiled	clara de huevo cocida
+cofid:12-942	Eggs, chicken, yolk, boiled	yema de huevo cocida
+cofid:12-943	Eggs, chicken, whole, poached	huevos de gallina pochados
+cofid:12-944	Eggs, chicken, whole, fried in sunflower oil	huevos de gallina fritos en aceite de girasol
+cofid:12-945	Eggs, chicken, scrambled, with semi-skimmed milk	revuelto con leche semidesnatada
+cofid:12-946	Omelette, plain, homemade	tortilla francesa casera
+cofid:12-947	Omelette, cheese, homemade	tortilla francesa de queso casera
+cofid:12-948	Quiche, cheese and egg, homemade	quiche de queso y huevo casera
+cofid:12-949	Quiche, vegetable, retail	quiche de verduras comprada
+cofid:12-950	Egg fu yung	huevo fu yung
+cofid:12-951	Macaroon, homemade	mostachón de coco casero
+cofid:12-952	Quiche, Lorraine, homemade	quiche Lorraine casera
+cofid:12-953	Quiche, Lorraine, wholemeal pastry, homemade	quiche Lorraine de masa integral casera
+cofid:12-954	Quiche, mushroom, homemade	quiche de champiñones casera
+cofid:12-955	Quiche, mushroom, wholemeal, homemade	quiche de champiñones de masa integral casera
+cofid:12-956	Omelette, curried, homemade	tortilla francesa al curry casera
+cofid:12-957	Omelette, Spanish, homemade	tortilla española casera
+cofid:12-958	Souffle, cheese, homemade	soufflé de queso casero
+cofid:12-959	Souffle, plain, homemade	soufflé casero
+cofid:12-960	Eggs, chicken, white, dried	clara de huevo en polvo
+cofid:12-961	Eggs, chicken, whole, dried	huevo en polvo
+cofid:12-962	Eggs, chicken, whole, fried, without fat	huevos de gallina fritos sin grasa
+cofid:12-963	Eggs, chicken, whole, scrambled, without milk	revuelto sin leche
+cofid:13-024	Potato chips, crinkle cut, frozen, fried in corn oil	patatas fritas onduladas en aceite de maíz
+cofid:13-025	Potato chips, straight cut, frozen, fried in corn oil	patatas fritas en aceite de maíz
+cofid:13-026	Potato chips, fine cut, frozen, fried in corn oil	patatas fritas finas en aceite de maíz
+cofid:13-027	Potato chips, thick cut, frozen, fried in corn oil	patatas fritas gruesas en aceite de maíz
+cofid:13-038	Potato croquettes, fried in blended oil	croquetas de patata fritas en aceite mezcla
+cofid:13-041	Beans, aduki, whole, dried, raw	judías azuki secas crudas
+cofid:13-042	Beans, aduki, whole, dried, boiled in unsalted water	judías azuki cocidas
+cofid:13-049	Beans, balor, ends trimmed, raw	judías balor crudas
+cofid:13-056	Black gram, urad gram, whole, dried, raw	urad entero seco crudo
+cofid:13-057	Black gram, urad gram, whole, dried, boiled in unsalted water	urad entero cocido
+cofid:13-058	Black gram, chilki urad dahl, split, dried, raw	dal de urad chilki partido seco crudo
+cofid:13-059	Black gram, chilki urad dahl, dried, split, boiled in unsalted water	dal de urad chilki partido cocido
+cofid:13-060	Black gram, duhli urad dahl, split, dried, raw	dal de urad duhli partido seco crudo
+cofid:13-061	Black gram, duhli urad dahl, split, dried, boiled in unsalted water	dal de urad duhli partido cocido
+cofid:13-062	Beans, blackeye, whole, dried, raw	carillas secas crudas
+cofid:13-063	Beans, blackeye, whole, dried, boiled in unsalted water	carillas cocidas
+cofid:13-064	Beans, broad, whole, raw	habas frescas crudas
+cofid:13-067	Beans, broad, dried, raw	habas secas crudas
+cofid:13-070	Beans, butter, dried, raw	judías de Lima secas crudas
+cofid:13-074	Beans, chick peas, Kabuli, whole, dried, raw	garbanzos secos crudos
+cofid:13-076	Beans, chick peas, Kabuli, split, dried, raw	garbanzos partidos secos crudos
+cofid:13-077	Beans, chick peas, Kabuli, split, dried, boiled in unsalted water	garbanzos partidos cocidos
 cofid:13-080	Beans, cluster, raw	judías guar crudas
+cofid:13-086	Beans, haricot, whole, dried, raw	alubias blancas secas crudas
+cofid:13-087	Beans, haricot, whole, dried, boiled in unsalted water	alubias blancas cocidas
+cofid:13-089	Lentils, green and brown, whole, dried, raw	lentejas verdes y pardas secas crudas
+cofid:13-096	Beans, mung, whole, dried, raw	judías mung secas crudas
+cofid:13-098	Beans, mung, dahl, dried, raw	dal de mung seco crudo
+cofid:13-099	Beans, mung, dahl, dried, boiled in unsalted water	dal de mung cocido
+cofid:13-100	Beans, papri, raw	judías papri crudas
+cofid:13-102	Beans, pigeon peas, whole, dried, raw	guandús secos crudos
+cofid:13-103	Beans, pigeon peas, whole, dried, boiled in unsalted water	guandús cocidos
+cofid:13-104	Beans, pigeon peas, dahl, dried, raw	guandús dal secos crudos
+cofid:13-105	Beans, pigeon peas, dahl, dried, boiled in unsalted water	guandús dal cocidos
+cofid:13-106	Beans, pinto, dried, raw	alubias pintas secas crudas
+cofid:13-107	Beans, pinto, dried, boiled in unsalted water	alubias pintas cocidas
+cofid:13-108	Beans, pinto, re-fried beans	alubias pintas refritas
+cofid:13-109	Beans, red kidney, dried, raw	alubias rojas secas crudas
+cofid:13-112	Beans, runner, raw	judías escarlata crudas
+cofid:13-115	Beans, soya, dried, raw	soja seca cruda
+cofid:13-116	Beans, soya, dried, boiled in unsalted water	soja cocida
+cofid:13-117	Beans, sword, raw	habas sable crudas
+cofid:13-118	Tempeh	tempeh
+cofid:13-122	Peas, mange-tout, raw	tirabeques crudos
+cofid:13-130	Peas, dried, raw	guisantes secos crudos
+cofid:13-131	Peas, dried, boiled in unsalted water	guisantes secos cocidos
+cofid:13-141	Peas, split, dried, raw	guisantes partidos secos crudos
+cofid:13-142	Peas, split, dried, boiled in unsalted water	guisantes partidos cocidos
+cofid:13-143	Peas, sugar-snap, raw	tirabeques dulces crudos
+cofid:13-145	Ackee, canned, drained	akee en conserva escurrido
+cofid:13-146	Agar, dried	agar seco
+cofid:13-147	Agar, dried, soaked and drained	agar remojado escurrido
+cofid:13-148	Alfalfa sprouts, raw	brotes de alfalfa crudos
+cofid:13-149	Amaranth leaves, raw	hojas de amaranto crudas
+cofid:13-150	Amaranth leaves, boiled in unsalted water	hojas de amaranto cocidas
+cofid:13-151	Arrowhead, raw	saeta de agua cruda
+cofid:13-152	Arrowhead, boiled in unsalted water	saeta de agua cocida
+cofid:13-153	Artichoke, globe, raw	alcachofa cruda
+cofid:13-154	Artichoke, globe, boiled, weighed as served	alcachofa cocida
+cofid:13-155	Artichoke, globe, base of leaves and heart, boiled in unsalted water	corazón de alcachofa cocido
+cofid:13-156	Artichoke, Jerusalem, boiled in unsalted water, flesh only	aguaturma cocida
+cofid:13-157	Asparagus, raw	espárragos crudos
+cofid:13-161	Aubergine, raw	berenjena cruda
+cofid:13-162	Aubergine, fried in corn oil	berenjena frita en aceite de maíz
+cofid:13-164	Beetroot, raw	remolacha cruda
+cofid:13-166	Beetroot, pickled, drained	remolacha encurtida escurrida
+cofid:13-167	Breadfruit, raw	fruta del pan cruda
+cofid:13-168	Breadfruit, boiled in unsalted water	fruta del pan cocida
+cofid:13-174	Broccoli, purple sprouting, raw	brócoli morado crudo
+cofid:13-176	Broccoli, purple sprouting, boiled in unsalted water	brócoli morado cocido
+cofid:13-177	Brussels sprouts, raw	coles de Bruselas crudas
+cofid:13-187	Cabbage, Chinese, raw	col china cruda
+cofid:13-190	Cabbage, red, raw	col lombarda cruda
+cofid:13-208	Cassava, raw	yuca cruda
+cofid:13-209	Cassava, baked	yuca asada
+cofid:13-210	Cassava, boiled in unsalted water	yuca cocida
+cofid:13-211	Cassava, steamed	yuca al vapor
+cofid:13-212	Cassava, frozen, raw	yuca congelada cruda
+cofid:13-219	Celeriac, raw	apio nabo crudo
+cofid:13-223	Chard, Swiss, raw	acelga cruda
+cofid:13-224	Chard, Swiss, boiled in unsalted water	acelga cocida
+cofid:13-225	Chicory, pale variety, raw	achicoria cruda
+cofid:13-227	Cho cho, raw	chayote crudo
+cofid:13-228	Cho cho, boiled in unsalted water	chayote cocido
+cofid:13-229	Cole leaves, dried, boiled in unsalted water	hojas de col secas cocidas
+cofid:13-232	Courgette, fried in corn oil	calabacín frito en aceite de maíz
+cofid:13-234	Curly kale, raw	col rizada cruda
+cofid:13-236	Drumstick leaves, raw	hojas de moringa crudas
+cofid:13-237	Drumstick leaves, boiled in unsalted water	hojas de moringa cocidas
+cofid:13-238	Drumstick pods, raw	vainas de moringa crudas
+cofid:13-239	Drumstick pods, boiled in unsalted water	vainas de moringa cocidas
+cofid:13-240	Endive, raw	endibia cruda
+cofid:13-241	Fennel, Florence, raw	hinojo crudo
+cofid:13-243	Fenugreek leaves, raw	hojas de fenogreco crudas
+cofid:13-244	Garlic, raw	ajo crudo
+cofid:13-245	Gherkins, raw	pepinillos crudos
+cofid:13-246	Gherkins, pickled, drained	pepinillos en vinagre escurridos
+cofid:13-248	Gourd, ash, raw	calabaza ceniza cruda
+cofid:13-249	Gourd, bottle, raw	calabaza vinatera cruda
+cofid:13-250	Gourd, kantola, raw	kantola cruda
+cofid:13-252	Gourd, karela, raw	cundeamor crudo
+cofid:13-254	Gourd, ridge, raw	calabaza estriada cruda
+cofid:13-255	Gourd, snake, raw	calabaza serpiente cruda
+cofid:13-256	Gourd, tinda, raw	tinda cruda
+cofid:13-258	Horseradish, raw	rábano picante crudo
+cofid:13-259	Jackfruit, raw	jaca cruda
+cofid:13-261	Kohl rabi, raw	colirábano crudo
+cofid:13-271	Lotus tubers, raw	raíces de loto crudas
+cofid:13-273	Mango, unripe, green flesh, raw	mango verde crudo
+cofid:13-274	Marrow, raw	calabacín maduro crudo
+cofid:13-276	Marrow, boiled in unsalted water	calabacín maduro cocido
+cofid:13-277	Marrow, parwal, raw	parwal crudo
+cofid:13-279	Matoki, raw	matoke crudo
+cofid:13-288	Mushrooms, Chinese, dried, raw	setas chinas secas crudas
+cofid:13-289	Mushrooms, Jew's ear, tender, dried, raw	orejas de Judas tiernas secas crudas
+cofid:13-290	Mushrooms, Jew's ear, tender, dried, soaked, raw	orejas de Judas tiernas remojadas crudas
+cofid:13-291	Mushrooms, Jew's ear, tough, dried, raw	orejas de Judas duras secas crudas
+cofid:13-292	Mushrooms, Jew's ear, tough, dried, soaked, raw	orejas de Judas duras remojadas crudas
+cofid:13-293	Mushrooms, oyster, raw	setas ostra crudas
+cofid:13-294	Mushrooms, shiitake, dried, raw	shiitake seco crudo
+cofid:13-295	Mushrooms, shiitake, cooked	shiitake cocido
+cofid:13-297	Mustard and cress, raw	mostaza y berros crudos
+cofid:13-298	Mustard leaves, raw	hojas de mostaza crudas
+cofid:13-299	Mustard leaves, boiled in unsalted water	hojas de mostaza cocidas
+cofid:13-300	Okra, raw	okra cruda
+cofid:13-302	Okra, stir-fried in corn oil	okra salteada en aceite de maíz
+cofid:13-309	Onions, pickled, drained	cebollas en vinagre escurridas
+cofid:13-311	Papaya, unripe, green flesh, raw	papaya verde cruda
+cofid:13-312	Parsnip, raw	chirivía cruda
+cofid:13-315	Patra leaves, raw	hojas de patra crudas
+cofid:13-316	Peppers, capsicum, chilli, green, raw	chiles verdes crudos
+cofid:13-317	Peppers, capsicum, chilli, red, raw	chiles rojos crudos
+cofid:13-318	Peppers, capsicum, green, raw	pimientos verdes crudos
+cofid:13-323	Plantain, green flesh, raw	plátano macho verde crudo
+cofid:13-324	Plantain, boiled in unsalted water, flesh only	plátano macho cocido
+cofid:13-326	Pumpkin, flesh only, raw	calabaza cruda
+cofid:13-329	Raddiccio, raw	radicchio crudo
+cofid:13-331	Radish, white/mooli, raw	daikon crudo
+cofid:13-332	Radish leaves, raw	hojas de rábano crudas
+cofid:13-333	Rape leaves, raw	hojas de colza crudas
+cofid:13-334	Salsify, flesh only, raw	salsifí crudo
+cofid:13-336	Sauerkraut	chucrut
+cofid:13-337	Seakale, stem only, boiled in unsalted water	col marina cocida
+cofid:13-338	Seaweed, Irish moss, raw	musgo de Irlanda crudo
+cofid:13-339	Seaweed, kombu, dried, raw	kombu seca
+cofid:13-340	Seaweed, nori, dried, raw	nori seca
+cofid:13-341	Seaweed, wakame, dried, raw	wakame seca
+cofid:13-342	Shallots, raw	chalotas crudas
+cofid:13-348	Spring greens, raw	col de primavera cruda
+cofid:13-350	Spring greens, boiled in unsalted water	col de primavera cocida
+cofid:13-351	Spring onions, bulbs only, raw	bulbos de cebolleta crudos
+cofid:13-352	Spring onions, bulbs and tops, raw	cebolletas enteras crudas
+cofid:13-353	Squash, acorn, raw	calabaza bellota cruda
+cofid:13-354	Squash, acorn, baked	calabaza bellota asada
+cofid:13-355	Squash, butternut, raw	calabaza moscada cruda
+cofid:13-357	Squash, spaghetti, raw	calabaza espagueti cruda
+cofid:13-358	Squash, spaghetti, baked	calabaza espagueti asada
+cofid:13-359	Swede, flesh only, raw	colinabo crudo
+cofid:13-375	Tannia, raw	malanga cruda
+cofid:13-376	Taro, raw	taro crudo
+cofid:13-377	Taro, baked	taro asado
+cofid:13-378	Taro, boiled in unsalted water	taro cocido
+cofid:13-379	Taro, steamed	taro al vapor
+cofid:13-380	Taro leaves, raw	hojas de taro crudas
+cofid:13-381	Taro leaves, steamed	hojas de taro al vapor
+cofid:13-382	Tomato juice	zumo de tomate
+cofid:13-389	Turnip, flesh only, raw	nabo crudo
+cofid:13-391	Turnip, boiled in unsalted water	nabo cocido
+cofid:13-392	Turnip tops, boiled in unsalted water	grelos de nabo cocidos
+cofid:13-394	Water chestnuts, raw	castañas de agua crudas
+cofid:13-397	Yam, flesh only, raw	ñame crudo
+cofid:13-398	Yam, baked	ñame asado
+cofid:13-401	Yam, steamed	ñame al vapor
+cofid:13-412	Aubergine, fried in butter	berenjena frita en mantequilla
+cofid:13-414	Courgette, fried in butter	calabacín frito en mantequilla
+cofid:13-426	Beansprouts, mung, raw	brotes de soja verde crudos
+cofid:13-438	Peas, raw	guisantes crudos
+cofid:13-439	Peas, boiled in unsalted water	guisantes cocidos
+cofid:13-448	Carrots, young, raw	zanahorias tiernas crudas
+cofid:13-449	Carrots, young, boiled in unsalted water	zanahorias tiernas cocidas
+cofid:13-458	Spinach, frozen, boiled in unsalted water	espinacas congeladas cocidas
+cofid:13-463	Sweet potato, raw, flesh only	boniato crudo
+cofid:13-483	Potato wedges, retail, cooked	gajos de patata comprados hechos
+cofid:13-484	Dahl, mixed, homemade	dal mixto casero
+cofid:13-485	Potato chips, fried in commercial oil, from takeaway fish and chip shops	patatas fritas de fish and chips
+cofid:13-486	Potato chips, fine cut, from fast food outlets	patatas fritas finas de fast food
+cofid:13-487	Potato chips, oven ready, no batter, baked	patatas fritas precocinadas sin rebozado al horno
+cofid:13-488	Potato chips, oven ready, with batter, baked	patatas fritas precocinadas con rebozado al horno
+cofid:13-489	Potatoes, old, raw, flesh only	patatas viejas crudas
+cofid:13-490	Potatoes, old, boiled in unsalted water, flesh only	patatas viejas cocidas
+cofid:13-491	Potatoes, old, baked, flesh and skin	patatas asadas con piel
+cofid:13-492	Potatoes, old, roasted in sunflower oil, flesh only	patatas asadas en aceite de girasol
+cofid:13-493	Potatoes, old, wedges, with skin, homemade, cooked in rapeseed oil	gajos de patata con piel en aceite de colza caseros
+cofid:13-494	Potatoes, old, microwaved, flesh and skin	patatas hechas en microondas con piel
+cofid:13-495	Potatoes, new and salad, boiled in unsalted water, flesh and skin	patatas nuevas cocidas con piel
+cofid:13-496	Carrots, old, raw	zanahorias crudas
+cofid:13-497	Carrots, old, boiled in unsalted water	zanahorias cocidas
+cofid:13-498	Carrots, old, microwaved	zanahorias hechas en microondas
+cofid:13-499	Onions, raw	cebollas crudas
+cofid:13-500	Onions, boiled in unsalted water	cebollas cocidas
 cofid:13-501	Onions, fried in sunflower oil	cebollas fritas
+cofid:13-502	Broccoli, green, raw	brócoli crudo
+cofid:13-503	Broccoli, green, boiled in unsalted water	brócoli cocido
+cofid:13-504	Broccoli, green, steamed	brócoli al vapor
+cofid:13-505	Mushrooms, white, raw	champiñones crudos
+cofid:13-506	Mushrooms, white, stewed in unsalted water	champiñones estofados
+cofid:13-507	Mushrooms, white, fried in rapeseed oil	champiñones fritos en aceite de colza
+cofid:13-508	Sweetcorn, kernels, boiled 'on the cob' in unsalted water	mazorcas de maíz cocidas
+cofid:13-509	Cabbage, white, raw	col blanca cruda
+cofid:13-510	Cabbage, green, raw	col verde cruda
+cofid:13-511	Cabbage, green, boiled in unsalted water	col verde cocida
+cofid:13-512	Cauliflower, raw	coliflor cruda
+cofid:13-513	Cauliflower, boiled in unsalted water	coliflor cocida
+cofid:13-514	Beans, green, raw	judías verdes crudas
+cofid:13-515	Beans, green, boiled in unsalted water	judías verdes cocidas
+cofid:13-516	Pak choi, steamed	pak choi al vapor
+cofid:13-517	Tomatoes, standard, raw	tomates crudos
+cofid:13-518	Tomatoes, standard, grilled, flesh and seeds only	tomates a la plancha
+cofid:13-519	Tomatoes, cherry, raw	tomates cherry crudos
+cofid:13-520	Lettuce, average, raw	lechuga cruda
+cofid:13-521	Spinach, baby, raw	espinacas baby crudas
+cofid:13-522	Rocket, raw	rúcula cruda
+cofid:13-523	Cucumber, raw, flesh and skin	pepino crudo
 cofid:13-524	Pepper, capsicum, red, raw	pimiento rojo crudo
+cofid:13-525	Pepper, capsicum, red, boiled in unsalted water	pimiento rojo cocido
+cofid:13-526	Pepper, capsicum, yellow, raw	pimiento amarillo crudo
+cofid:13-527	Peas, frozen, raw	guisantes congelados crudos
+cofid:13-528	Peas, frozen, microwaved	guisantes congelados hechos en microondas
+cofid:13-529	Sweetcorn kernels, canned in water, drained	maíz dulce en conserva escurrido
+cofid:13-530	Tomatoes, canned, whole contents	tomates en conserva en su jugo
+cofid:13-531	Tomato puree	puré de tomate
+cofid:13-532	Baked beans, canned in tomato sauce	alubias en salsa de tomate en conserva
+cofid:13-533	Potato products, shaped, frozen, baked	productos de patata congelados al horno
+cofid:13-534	Potatoes, old, roasted in rapeseed oil	patatas asadas en aceite de colza
+cofid:13-535	Baked beans, canned in tomato sauce, reduced sugar, reduced salt	alubias en salsa de tomate en conserva bajas en azúcar y sal
+cofid:13-536	Peas, frozen, boiled in unsalted water	guisantes congelados cocidos
+cofid:13-537	Pepper, capsicum, yellow, boiled in unsalted water	pimiento amarillo cocido
+cofid:13-540	Cabbage, red, boiled in unsalted water	col lombarda cocida
+cofid:13-542	Fennel, Florence, boiled in unsalted water	hinojo cocido
+cofid:13-543	Vegetables, mixed, frozen, boiled in unsalted water	mezcla de verduras congelada cocida
+cofid:13-545	Mushrooms, white, fried in salted butter	champiñones fritos en mantequilla salada
+cofid:13-546	Mushrooms, white, fried in corn oil	champiñones fritos en aceite de maíz
+cofid:13-548	Peppers, capsicum, green, boiled in unsalted water	pimientos verdes cocidos
 cofid:13-549	Pumpkin, flesh only, boiled in unsalted water	calabaza cocida
+cofid:13-550	Spinach, baby, boiled in unsalted water	espinacas baby cocidas
+cofid:13-553	Potatoes, old, mashed with butter	puré de patatas con mantequilla
+cofid:13-554	Potatoes, old, mashed with reduced fat spread	puré de patatas con margarina ligera
+cofid:13-555	Potato chips, homemade, fried in rapeseed oil	patatas fritas caseras en aceite de colza
+cofid:13-556	Houmous	hummus
+cofid:13-557	Potato chips, microwave, cooked	patatas fritas para microondas hechas
+cofid:13-558	Potato powder, instant, made up with water	puré de patata en polvo con agua
+cofid:13-559	Beans, butter, canned, re-heated, drained	judías de Lima en conserva recalentadas escurridas
+cofid:13-562	Peas, marrowfat, canned, re-heated, drained	guisantes marrowfat en conserva recalentados escurridos
+cofid:13-563	Peas, mushy, canned, re-heated	puré de guisantes en conserva recalentado
+cofid:13-564	Peas, canned in water, re-heated, drained	guisantes en conserva recalentados escurridos
+cofid:13-565	Carrots, young, canned in water, re-heated, drained	zanahorias tiernas en conserva recalentadas escurridas
+cofid:13-566	Potatoes, old, potato wedges, with skin, cooked in sunflower oil, homemade	gajos de patata con piel en aceite de girasol caseros
+cofid:13-567	Beansprouts, mung, stir-fried in rapeseed oil	brotes de soja verde salteados en aceite de colza
+cofid:13-569	Plantain, ripe, fried in rapeseed oil	plátano macho maduro frito en aceite de colza
+cofid:13-570	Tofu, soya bean, steamed	tofu al vapor
+cofid:13-571	Tofu, soya bean, steamed, fried	tofu frito
+cofid:13-572	Spinach, mature, raw	espinacas crudas
+cofid:13-573	Spinach, mature, boiled in unsalted water	espinacas cocidas
+cofid:13-574	Quorn, pieces, as purchased	Quorn en trozos
+cofid:13-576	Kohl rabi, boiled in unsalted water	colirábano cocido
+cofid:13-577	Aubergine, fried in rapeseed oil	berenjena frita en aceite de colza
+cofid:13-578	Baked beans, canned in barbecue sauce	alubias en salsa barbacoa en conserva
+cofid:13-579	Baked beans, canned in tomato sauce, with pork sausages	alubias en salsa de tomate con salchichas de cerdo en conserva
+cofid:13-580	Beansprouts, mung, boiled in unsalted water	brotes de soja verde cocidos
+cofid:13-581	Cabbage, average, boiled in unsalted water	col cocida
+cofid:13-582	Cabbage, average, raw	col cruda
+cofid:13-583	Broccoli, green, boiled in salted water	brócoli cocido con sal
+cofid:13-584	Cabbage, white, boiled in unsalted water	col blanca cocida
+cofid:13-585	Celeriac, boiled in unsalted water	apio nabo cocido
+cofid:13-586	Chicory, pale variety, boiled in unsalted water	achicoria cocida
+cofid:13-587	Courgette, fried in rapeseed oil	calabacín frito en aceite de colza
+cofid:13-588	Matoki, boiled in unsalted water	matoke cocido
+cofid:13-589	Onions, baked	cebollas asadas
+cofid:13-590	Onions, dried, raw	cebollas secas
+cofid:13-591	Onions, fried in rapeseed oil	cebollas fritas en aceite de colza
+cofid:13-592	Onions, fried in corn oil	cebollas fritas en aceite de maíz
+cofid:13-593	Onions, fried in lard	cebollas fritas en manteca de cerdo
+cofid:13-594	Peas, sugar-snap, boiled in unsalted water	tirabeques dulces cocidos
+cofid:13-595	Potato chips, homemade, fried in corn oil	patatas fritas caseras en aceite de maíz
+cofid:13-596	Potato chips, homemade, fried in dripping	patatas fritas caseras en grasa de asado
+cofid:13-597	Potato chips, homemade, fried in sunflower oil	patatas fritas caseras en aceite de girasol
+cofid:13-598	Potato powder, instant, raw	puré de patata en polvo seco
+cofid:13-599	Potatoes, old, roasted in corn oil	patatas asadas en aceite de maíz
+cofid:13-600	Potatoes, old, roasted in lard	patatas asadas en manteca de cerdo
+cofid:13-601	Salsify, flesh only, boiled in unsalted water	salsifí cocido
+cofid:13-602	Tomatoes, standard, fried in rapeseed oil	tomates fritos en aceite de colza
+cofid:13-603	Tomatoes, standard, fried in corn oil	tomates fritos en aceite de maíz
+cofid:13-604	Vegetables, mixed, stir-fry type, frozen, fried in rapeseed oil	mezcla de verduras para salteado frita en aceite de colza
+cofid:13-605	Potatoes, old, boiled in salted water, flesh only	patatas cocidas con sal
+cofid:13-606	Sweetcorn, kernels, boiled 'on the cob' in unsalted water, weighed with core	mazorcas de maíz cocidas con el corazón
+cofid:13-607	Carrot juice	zumo de zanahoria
+cofid:13-608	Green beans, dried	judías verdes secas
+cofid:13-609	Sweetcorn, dried	maíz dulce seco
 cofid:13-610	Potatoes, new and salad, boiled in salted water, flesh and skin	patatas nuevas cocidas
+cofid:13-611	Onions, fried in butter	cebollas fritas en mantequilla
 cofid:13-612	Potato chips, fried in palm oil, from takeaway fish and chip shops	patatas fritas en aceite de palma
+cofid:13-613	Potato chips, fried in beef dripping, from takeaway fish and chip shops	patatas fritas en grasa de vacuno de fish and chips
+cofid:13-614	Potato chips, fried in rapeseed oil, from takeaway fish and chip shops	patatas fritas en aceite de colza de fish and chips
+cofid:13-615	Potato powder, instant, made up with semi-skimmed milk	puré de patata en polvo con leche semidesnatada
+cofid:13-616	Potato powder, instant, made up with skimmed milk	puré de patata en polvo con leche desnatada
+cofid:13-617	Potato powder, instant, made up with whole milk	puré de patata en polvo con leche entera
+cofid:13-618	Potatoes, new and salad, flesh only, raw	patatas nuevas crudas
+cofid:13-619	Potatoes, new, frozen, `roast' in corn oil	patatas nuevas asadas en aceite de maíz
+cofid:13-620	Potatoes, old, baked, flesh only	patatas asadas sin piel
+cofid:13-621	Potatoes, old, baked, flesh only, weighed with skin	patatas asadas sin piel pesadas con piel
+cofid:13-622	Sweetcorn, kernels, raw	maíz dulce en grano crudo
+cofid:13-623	Sweetcorn, kernels, 'on-the-cob', raw, weighed with core	mazorcas de maíz crudas
+cofid:13-624	Leeks, raw	puerros crudos
+cofid:13-625	Leeks, boiled in unsalted water	puerros cocidos
 cofid:13-626	Leeks, roasted in rapeseed oil	puerros asados
+cofid:13-627	Courgette, raw	calabacín crudo
+cofid:13-628	Courgette, boiled in unsalted water	calabacín cocido
+cofid:13-629	Courgette, roasted in rapeseed oil	calabacín asado en aceite de colza
+cofid:13-630	Brussels sprouts, boiled in unsalted water	coles de Bruselas cocidas
+cofid:13-631	Parsnip, boiled in unsalted water	chirivía cocida
+cofid:13-632	Parsnip, roasted in rapeseed oil	chirivía asada en aceite de colza
+cofid:13-633	Beetroot, cooked in unsalted water	remolacha cocida
+cofid:13-634	Sweetcorn, baby, boiled in unsalted water	mini mazorcas cocidas
+cofid:13-635	Sweetcorn, baby, stir-fried in rapeseed oil	mini mazorcas salteadas en aceite de colza
+cofid:13-636	Celery, raw	apio crudo
+cofid:13-637	Celery, boiled in unsalted water	apio cocido
+cofid:13-638	Asparagus, steamed	espárragos al vapor
+cofid:13-639	Asparagus, grilled	espárragos a la plancha
+cofid:13-640	Asparagus, roasted in rapeseed oil	espárragos asados en aceite de colza
+cofid:13-641	Peas, mange-tout, boiled in unsalted water	tirabeques cocidos
+cofid:13-642	Peas, mange-tout, stir-fried in rapeseed oil	tirabeques salteados en aceite de colza
+cofid:13-643	Squash, butternut, boiled in unsalted water	calabaza moscada cocida
+cofid:13-644	Squash, butternut, baked	calabaza moscada asada
+cofid:13-646	Sweet potato, flesh only, boiled in unsalted water	boniato cocido
+cofid:13-647	Sweet potato, wedges, flesh and skin, baked in rapeseed oil	boniato en gajos asado en aceite de colza
+cofid:13-648	Beans, broad, whole, boiled in unsalted water	habas cocidas
+cofid:13-649	Curly kale, boiled in unsalted water	col rizada cocida
+cofid:13-650	Swede, flesh only, boiled in unsalted water	colinabo cocido
+cofid:13-651	Aubergine, flesh and skin, boiled in unsalted water	berenjena cocida
+cofid:13-652	Okra, boiled in unsalted water	okra cocida
+cofid:13-654	Beans, runner, boiled in unsalted water	judías escarlata cocidas
+cofid:13-655	Yam, flesh only, boiled in unsalted water	ñame cocido
+cofid:13-656	Radish, red, flesh and skin, raw	rabanitos crudos
+cofid:13-657	Lentils, red, split, dried, raw	lentejas rojas partidas secas crudas
+cofid:13-658	Lentils, red, split, dried, boiled in unsalted water	lentejas rojas partidas cocidas
+cofid:13-659	Beans, red kidney, dried, boiled in unsalted water	alubias rojas cocidas
+cofid:13-660	Beans, red kidney, canned in water, re-heated, drained	alubias rojas en conserva recalentadas escurridas
+cofid:13-661	Lentils, green and brown, whole, dried, boiled in unsalted water	lentejas verdes y pardas cocidas
+cofid:13-662	Beans, chick peas, Kabuli, whole, dried, boiled in unsalted water	garbanzos cocidos
+cofid:13-663	Beans, butter, dried, boiled in unsalted water	judías de Lima cocidas
+cofid:13-664	Beans, mung, whole, dried, boiled in unsalted water	judías mung cocidas
+cofid:13-665	Beans, haricot, canned, re-heated, drained	alubias blancas en conserva recalentadas escurridas
+cofid:13-666	Beans, cannellini, canned, re-heated, drained	alubias cannellini en conserva recalentadas escurridas
+cofid:13-667	Beans, edamame, frozen, boiled in unsalted water	edamame cocido
+cofid:13-668	Courgette, dried	calabacín seco
+cofid:13-670	Beans, chick peas, canned, re-heated, drained	garbanzos en conserva recalentados escurridos
+cofid:13-671	Sweet potato, steamed	boniato al vapor
+cofid:13-672	Sweet potato, baked	boniato asado
+cofid:13-801	Allspice, ground	pimienta de Jamaica molida
+cofid:13-802	Anise seeds	semillas de anís
+cofid:13-803	Asafoetida	asafétida
+cofid:13-804	Basil, fresh	albahaca fresca
+cofid:13-805	Basil, dried, ground	albahaca seca molida
+cofid:13-806	Bay leaf, dried	hojas de laurel secas
+cofid:13-807	Betel leaves, fresh	hojas de betel frescas
+cofid:13-808	Caraway seeds	semillas de alcaravea
+cofid:13-809	Cardamom, ground	cardamomo molido
+cofid:13-810	Celery seeds	semillas de apio
+cofid:13-811	Chervil, dried	perifollo seco
+cofid:13-813	Chinese 5 spice	mezcla china de cinco especias
+cofid:13-816	Cloves, dried	clavo seco
+cofid:13-818	Coriander leaves, dried	cilantro seco
+cofid:13-821	Curry leaves, fresh	hojas de curry frescas
+cofid:13-823	Curry powder, mixed flavours	mezcla de especias para curry
+cofid:13-824	Dill, fresh	eneldo fresco
+cofid:13-825	Dill, dried	eneldo seco
+cofid:13-826	Dill seeds	semillas de eneldo
+cofid:13-827	Fennel seeds	semillas de hinojo
+cofid:13-828	Fenugreek seeds	semillas de fenogreco
+cofid:13-829	Garam masala	garam masala
+cofid:13-830	Garlic powder	ajo en polvo
+cofid:13-832	Ginger, ground	jengibre molido
+cofid:13-833	Liquorice powder	regaliz en polvo
+cofid:13-834	Mace, ground	macis molido
+cofid:13-835	Marjoram, dried	mejorana seca
+cofid:13-836	Mint, fresh	menta fresca
+cofid:13-837	Mint, dried	menta seca
+cofid:13-839	Mustard seeds	semillas de mostaza
+cofid:13-844	Parsley, fresh	perejil fresco
+cofid:13-845	Parsley, dried	perejil seco
+cofid:13-847	Pepper, cayenne, ground	cayena molida
+cofid:13-849	Poppy seeds	semillas de amapola
+cofid:13-852	Saffron	azafrán
+cofid:13-853	Sage, fresh	salvia fresca
+cofid:13-854	Sage, dried, ground	salvia seca molida
+cofid:13-855	Tamarind leaves, fresh	hojas de tamarindo frescas
+cofid:13-856	Tamarind pulp, flesh only	pulpa de tamarindo
+cofid:13-857	Tarragon, fresh	estragón fresco
+cofid:13-858	Tarragon, dried, ground	estragón seco molido
+cofid:13-861	Turmeric, ground	cúrcuma molida
+cofid:13-873	Chilli powder	chile en polvo
+cofid:13-874	Cinnamon, ground	canela molida
+cofid:13-875	Coriander seeds	semillas de cilantro
+cofid:13-876	Curry powder	curry en polvo
+cofid:13-877	Nutmeg, ground	nuez moscada molida
+cofid:13-878	Oregano, dried, ground	orégano seco molido
+cofid:13-879	Paprika	pimentón
+cofid:13-880	Pepper, black	pimienta negra
+cofid:13-881	Pepper, white	pimienta blanca
+cofid:13-882	Rosemary, dried	romero seco
+cofid:13-883	Thyme, dried, ground	tomillo seco molido
+cofid:13-884	Mixed herbs, dried	hierbas mezcladas secas
+cofid:13-886	Mixed curry spices	mezcla de especias para curry
+cofid:13-887	Chives, fresh	ciboulette fresco
+cofid:13-888	Coriander leaves, fresh	cilantro fresco
+cofid:13-889	Cumin seeds	semillas de comino
+cofid:13-890	Ginger, fresh	jengibre fresco
+cofid:13-891	Oregano, fresh	orégano fresco
+cofid:13-892	Rosemary, fresh	romero fresco
+cofid:13-893	Thyme, fresh	tomillo fresco
+cofid:14-001	Amla	amla
+cofid:14-016	Apples, eating, dried	manzanas secas
+cofid:14-025	Apricots, raw, flesh and skin	albaricoques crudos
+cofid:14-026	Apricots, raw, flesh and skin, weighed with stones	albaricoques con hueso crudos
+cofid:14-027	Apricots, stewed with sugar	albaricoques en compota con azúcar
+cofid:14-028	Apricots, stewed with sugar, weighed with stones	albaricoques en compota con azúcar y hueso
+cofid:14-029	Apricots, stewed without sugar	albaricoques en compota sin azúcar
+cofid:14-030	Apricots, stewed without sugar, weighed with stones	albaricoques en compota sin azúcar con hueso
+cofid:14-031	Apricots, dried	orejones
+cofid:14-032	Apricots, dried, stewed with sugar	orejones en compota con azúcar
+cofid:14-033	Apricots, dried, stewed without sugar	orejones en compota sin azúcar
+cofid:14-039	Avocado, Fuerte, flesh only	aguacate Fuerte
+cofid:14-040	Avocado, Fuerte, flesh only, weighed with skin and stone	aguacate Fuerte entero
+cofid:14-043	Babaco, flesh only	babaco
+cofid:14-049	Blackberries, stewed with sugar	moras en compota con azúcar
+cofid:14-050	Blackberries, stewed without sugar	moras en compota sin azúcar
+cofid:14-053	Blackcurrants, raw	grosellas negras crudas
+cofid:14-054	Blackcurrants, stewed with sugar	grosellas negras en compota con azúcar
+cofid:14-055	Blackcurrants, stewed without sugar	grosellas negras en compota sin azúcar
+cofid:14-059	Star fruit	carambola
+cofid:14-060	Cashew fruit, flesh only	manzana de anacardo
+cofid:14-063	Cherries, stewed with sugar	cerezas en compota con azúcar
+cofid:14-064	Cherries, stewed with sugar, weighed with stones	cerezas en compota con azúcar y hueso
+cofid:14-065	Cherries, stewed without sugar	cerezas en compota sin azúcar
+cofid:14-066	Cherries, stewed without sugar, weighed with stones	cerezas en compota sin azúcar con hueso
+cofid:14-069	Cherries, West Indian, flesh only	acerola
+cofid:14-073	Cranberries	arándanos rojos
+cofid:14-074	Currants	pasas de Corinto
+cofid:14-075	Custard apple/Bullock's heart, flesh only	anona
+cofid:14-076	Sugar apple, flesh only	anona escamosa
+cofid:14-077	Damsons, flesh and skin, raw	endrinos crudos
+cofid:14-078	Damsons, flesh and skin, raw, weighed with stones	endrinos con hueso crudos
+cofid:14-079	Damsons, stewed with sugar	endrinos en compota con azúcar
+cofid:14-080	Damsons, stewed with sugar, weighed with stones	endrinos en compota con azúcar y hueso
+cofid:14-081	Damsons, stewed without sugar	endrinos en compota sin azúcar
+cofid:14-082	Damsons, stewed without sugar, weighed with stones	endrinos en compota sin azúcar con hueso
+cofid:14-083	Dates, raw, flesh and skin	dátiles
+cofid:14-084	Dates, raw, flesh and skin, weighed with stones	dátiles con hueso
+cofid:14-087	Dried mixed fruit	mezcla de frutas secas
+cofid:14-088	Durian, flesh only	durian
+cofid:14-089	Elderberries, whole fruit	bayas de saúco
+cofid:14-090	Feijoa, flesh only	feijoa
+cofid:14-091	Figs, whole green fruit, raw	higos verdes crudos
+cofid:14-092	Figs, whole fruit, dried	higos secos
+cofid:14-093	Figs, dried, stewed with sugar	higos secos en compota con azúcar
+cofid:14-094	Figs, dried, stewed without sugar	higos secos en compota sin azúcar
+cofid:14-097	Fruit cocktail, canned in syrup, whole contents	macedonia en conserva en almíbar
+cofid:14-100	Gooseberries, cooking, raw	grosellas espinosas de cocinar crudas
+cofid:14-101	Gooseberries, cooking, stewed with sugar	grosellas espinosas en compota con azúcar
+cofid:14-102	Gooseberries, cooking, stewed without sugar	grosellas espinosas en compota sin azúcar
+cofid:14-103	Gooseberries, dessert, raw	grosellas espinosas de postre crudas
+cofid:14-107	Grapefruit, canned in juice, whole contents	pomelo en conserva en su jugo
+cofid:14-111	Greengages, raw	ciruelas claudias crudas
+cofid:14-112	Greengages, raw, weighed with stones	ciruelas claudias con hueso crudas
+cofid:14-113	Greengages, stewed with sugar	ciruelas claudias en compota con azúcar
+cofid:14-114	Greengages, stewed with sugar, weighed with stones	ciruelas claudias en compota con azúcar y hueso
+cofid:14-115	Greengages, stones, removed, stewed without sugar	ciruelas claudias sin hueso en compota sin azúcar
+cofid:14-116	Greengages, stewed without sugar, weighed with stones	ciruelas claudias en compota sin azúcar con hueso
+cofid:14-117	Grenadillas, flesh and seeds	granadilla
+cofid:14-118	Guava, flesh only, raw	guayaba cruda
+cofid:14-119	Guava, raw, weighed with skin and pips	guayaba entera cruda
+cofid:14-121	Jambu fruit, flesh only	pomarrosa
+cofid:14-122	Jujube, flesh only	azufaifo
+cofid:14-125	Kumquats, whole fruit, raw	kumquats crudos
+cofid:14-128	Lemons, whole, without pips	limones enteros sin pepitas
+cofid:14-129	Lemons, peeled, flesh only	limones pelados
+cofid:14-130	Lemons, flesh only, raw, weighed with peel and pips	limones con piel y pepitas
+cofid:14-131	Limes, flesh only	limas peladas
+cofid:14-132	Limes, flesh only, weighed with peel and pips	limas con piel y pepitas
+cofid:14-133	Loganberries, raw	moras de Logan crudas
+cofid:14-134	Loganberries, stewed with sugar	moras de Logan en compota con azúcar
+cofid:14-135	Loganberries, stewed without sugar	moras de Logan en compota sin azúcar
+cofid:14-137	Longans, flesh only, dried	longan seco
 cofid:14-138	Longans, canned in syrup, drained	longanes en almíbar
+cofid:14-139	Longans, canned in syrup, whole contents	longan en conserva en almíbar
+cofid:14-140	Loquats, flesh only, raw	nísperos crudos
+cofid:14-142	Lychees, raw, flesh only	lichis crudos
+cofid:14-143	Lychees, flesh only, raw, weighed with skin and stone	lichis enteros crudos
+cofid:14-145	Mammie apple, flesh only	mamey
+cofid:14-146	Mandarin oranges, canned in juice, whole contents	mandarinas en conserva en su jugo
+cofid:14-151	Mangosteen, flesh only	mangostán
+cofid:14-152	Medlars, flesh only	níspero europeo
+cofid:14-159	Melon, Galia, flesh only	melón Galia
+cofid:14-160	Melon, Galia, flesh only, weighed whole	melón Galia entero
+cofid:14-161	Melon, Galia, flesh only, weighed with skin	melón Galia con piel
+cofid:14-168	Mulberries, whole fruit, raw	moras de morera crudas
+cofid:14-169	Mulberries, whole fruit, stewed with sugar	moras de morera en compota con azúcar
+cofid:14-170	Mulberries, whole fruit, stewed without sugar	moras de morera en compota sin azúcar
+cofid:14-177	Ortaniques, flesh only	ortanique
+cofid:14-178	Passion fruit, flesh and pips	maracuyá
+cofid:14-179	Passion fruit, flesh and pips, weighed with skin	maracuyá con piel
 cofid:14-188	Peaches, canned in juice, whole contents	melocotón en su jugo
 cofid:14-189	Peaches, canned in syrup, whole contents	melocotones en almíbar
+cofid:14-196	Pears, dried	peras secas
+cofid:14-197	Pears, canned in juice, whole contents	peras en conserva en su jugo
+cofid:14-205	Pears, Nashi, flesh and skin, raw	peras nashi crudas
+cofid:14-206	Pears, Nashi, flesh and skin, raw, weighed with core	peras nashi con corazón crudas
+cofid:14-207	Physalis, fruit only	physalis
+cofid:14-211	Pineapple, canned in juice, whole contents	piña en conserva en su jugo
+cofid:14-212	Pineapple, canned in syrup, whole contents	piña en conserva en almíbar
+cofid:14-220	Plums, Victoria, flesh and skin, raw	ciruelas Victoria crudas
+cofid:14-221	Plums, Victoria, flesh and skin, raw, weighed with stones	ciruelas Victoria con hueso crudas
+cofid:14-222	Plums, Victoria, stewed without sugar	ciruelas Victoria en compota sin azúcar
+cofid:14-223	Plums, Victoria, stewed without sugar, weighed with stones	ciruelas Victoria en compota sin azúcar con hueso
+cofid:14-224	Plums, yellow, flesh and skin, raw	ciruelas amarillas crudas
+cofid:14-225	Plums, yellow, flesh and skin, raw, weighed with stones	ciruelas amarillas con hueso crudas
+cofid:14-226	Pomegranate, flesh and pips	granada pelada
+cofid:14-227	Pomegranate, flesh and pips, weighed with skin	granada con piel
+cofid:14-228	Pomelo, flesh only	pomelo chino
+cofid:14-229	Pomelo, flesh only, weighed with peel and pips	pomelo chino con piel
+cofid:14-230	Prickly pears, flesh and seeds	higos chumbos
+cofid:14-231	Prunes, flesh and skin	ciruelas pasas
+cofid:14-232	Prunes, flesh and skin, weighed with stones	ciruelas pasas con hueso
+cofid:14-233	Prunes, flesh and skin, stewed with sugar	ciruelas pasas en compota con azúcar
+cofid:14-234	Prunes, flesh and skin, stewed with sugar, weighed with stones	ciruelas pasas en compota con azúcar y hueso
+cofid:14-235	Prunes, flesh and skin, stewed without sugar	ciruelas pasas en compota sin azúcar
+cofid:14-236	Prunes, flesh and skin, stewed without sugar, weighed with stones	ciruelas pasas en compota sin azúcar con hueso
+cofid:14-237	Prunes, canned in juice, whole contents	ciruelas pasas en conserva en su jugo
+cofid:14-241	Quinces, flesh only	membrillo
+cofid:14-243	Rambutan, flesh only	rambután
+cofid:14-245	Raspberries, stewed with sugar	frambuesas en compota con azúcar
+cofid:14-246	Raspberries, stewed without sugar	frambuesas en compota sin azúcar
+cofid:14-249	Redcurrants, raw	grosellas rojas crudas
+cofid:14-250	Redcurrants, stewed with sugar	grosellas rojas en compota con azúcar
+cofid:14-251	Redcurrants, stewed without sugar	grosellas rojas en compota sin azúcar
+cofid:14-252	Rhubarb, stems only, raw	ruibarbo crudo
+cofid:14-253	Rhubarb, stems only, stewed with sugar	ruibarbo en compota con azúcar
+cofid:14-256	Sapodilla, flesh only	zapote
+cofid:14-259	Sharon fruit, flesh only	caqui Sharon
+cofid:14-263	Sultanas	pasas sultanas
+cofid:14-264	Tamarillos, flesh and seeds	tamarillo
+cofid:14-265	Tamarind	tamarindo
+cofid:14-268	Whitecurrants, raw	grosellas blancas crudas
+cofid:14-269	Whitecurrants, stewed with sugar	grosellas blancas en compota con azúcar
+cofid:14-270	Whitecurrants, stewed without sugar	grosellas blancas en compota sin azúcar
+cofid:14-272	Apple juice concentrate, unsweetened, commerical	concentrado de zumo de manzana sin azúcar
+cofid:14-275	Grapefruit juice, unsweetened	zumo de pomelo sin azúcar
+cofid:14-277	Lemon juice, fresh	zumo de limón recién exprimido
+cofid:14-278	Lemon juice, fresh, weighed as whole fruit	zumo de limón recién exprimido de fruta entera
+cofid:14-279	Lime juice, fresh	zumo de lima recién exprimido
+cofid:14-285	Passion fruit juice	zumo de maracuyá
+cofid:14-286	Pineapple juice, unsweetened	zumo de piña sin azúcar
+cofid:14-289	Prune juice	zumo de ciruela pasa
+cofid:14-296	Melon, watermelon, flesh only	sandía
+cofid:14-299	Peaches, raw, flesh and skin	melocotones crudos
+cofid:14-309	Melon, watermelon, flesh only, weighed whole	sandía entera
+cofid:14-312	Peaches, flesh and skin, raw, weighed with stone	melocotones con hueso crudos
+cofid:14-314	Plums, average, stewed with sugar, flesh and skin	ciruelas en compota con azúcar
+cofid:14-315	Plums, average, flesh and skin, stewed without sugar	ciruelas en compota sin azúcar
+cofid:14-316	Plums, average, flesh and skin, stewed with sugar, weighed with stones	ciruelas en compota con azúcar y hueso
+cofid:14-317	Plums, average, flesh and skin, stewed without sugar, weighed with stones	ciruelas en compota sin azúcar con hueso
+cofid:14-318	Bananas, flesh only	plátano
+cofid:14-319	Apples, eating, raw, flesh and skin	manzana cruda
+cofid:14-320	Apples, cooking, stewed without sugar, flesh only	manzanas de cocinar en compota sin azúcar
+cofid:14-321	Pears, raw, flesh and skin	pera cruda
+cofid:14-322	Grapes, green	uvas verdes
+cofid:14-323	Grapes, red	uvas rojas
+cofid:14-324	Strawberries, raw	fresas crudas
+cofid:14-325	Blueberries	arándanos
+cofid:14-326	Citrus fruit, soft/easy peelers, flesh only	mandarinas peladas
+cofid:14-327	Oranges, flesh only	naranja pelada
+cofid:14-328	Melon, yellow flesh, flesh only	melón amarillo
+cofid:14-329	Orange juice, chilled	zumo de naranja refrigerado
+cofid:14-330	Orange juice, ambient, UHT	zumo de naranja UHT
+cofid:14-331	Apple juice, clear, ambient and chilled	zumo de manzana claro
+cofid:14-332	Apples, cooking, stewed with sugar, flesh only	manzanas de cocinar en compota con azúcar
+cofid:14-333	Fruit salad, homemade	macedonia casera
+cofid:14-335	Cherries, glace	cerezas escarchadas
+cofid:14-336	Fruit cocktail, canned in juice, whole contents	macedonia en conserva en su jugo
+cofid:14-337	Lemon peel	cáscara de limón
+cofid:14-338	Peel, mixed	fruta escarchada mezclada
+cofid:14-339	Melon, Canteloupe-type, flesh only	melón cantalupo
+cofid:14-340	Olives, green, in brine, drained, flesh and skin	aceitunas verdes en salmuera escurridas
+cofid:14-341	Pomegranate juice drink	bebida de zumo de granada
+cofid:14-342	Apples, cooking, baked without sugar, flesh only	manzanas de cocinar asadas sin azúcar
+cofid:14-343	Apples, cooking, baked without sugar, flesh only, weighed with skin	manzanas de cocinar asadas sin azúcar enteras
+cofid:14-344	Apples, cooking, baked with sugar, flesh only	manzanas de cocinar asadas con azúcar
+cofid:14-345	Apples, cooking, baked with sugar, flesh only, weighed with skin	manzanas de cocinar asadas con azúcar enteras
 cofid:14-346	Apples, eating, raw, flesh and skin, weighed with core	manzana fresca
+cofid:14-347	Bananas, raw, flesh only, weighed with skin	plátano con piel
+cofid:14-348	Citrus fruit, soft/easy peelers, flesh only, weighed with peel and pips	mandarinas con piel y pepitas
+cofid:14-349	Blackberry and apple, stewed with sugar	moras con manzana en compota con azúcar
+cofid:14-350	Grapes, average	uvas
+cofid:14-351	Grapes, average, weighed with pips	uvas con pepitas
+cofid:14-352	Melon, Canteloupe-type, flesh only, weighed whole	melón cantalupo entero
+cofid:14-353	Melon, Canteloupe-type, flesh only, weighed with skin	melón cantalupo con piel
+cofid:14-354	Melon, flesh only, average	melón pelado
+cofid:14-355	Melon, flesh only, average, weighed whole	melón entero
+cofid:14-356	Melon, flesh only, average, weighed with skin	melón con piel
+cofid:14-357	Melon, Honeydew, flesh only, weighed whole	melón verde entero
+cofid:14-358	Melon, Honeydew, flesh only, weighed with skin	melón verde con piel
+cofid:14-359	Olives, green, in brine, drained, flesh and skin, weighed with stones	aceitunas verdes en salmuera con hueso
+cofid:14-360	Oranges, flesh only, weighed with peel and pips	naranja con piel y pepitas
+cofid:14-361	Pears, average, flesh and skin, raw, weighed with core and stalk	pera cruda con corazón
+cofid:14-362	Apples, cooking, raw, flesh only, peeled	manzanas de cocinar peladas crudas
+cofid:14-363	Apples, cooking, raw, flesh only, weighed with skin and core	manzanas de cocinar crudas enteras
+cofid:14-364	Blackberry and apple, stewed without sugar	moras con manzana en compota sin azúcar
+cofid:14-365	Pears, average, raw, flesh only	pera pelada cruda
+cofid:14-366	Pears, raw, flesh only, peeled, weighed with skin and core	pera pelada cruda pesada con piel y corazón
+cofid:14-367	Pears, average, stewed with sugar	peras en compota con azúcar
+cofid:14-368	Pears, average, stewed without sugar	peras en compota sin azúcar
+cofid:14-369	Orange juice, freshly squeezed	zumo de naranja recién exprimido
+cofid:14-370	Orange juice, freshly squeezed, weighed as whole fruit	zumo de naranja recién exprimido de fruta entera
+cofid:14-371	Kiwi fruit, flesh only, raw	kiwi pelado crudo
+cofid:14-372	Plums, dessert, flesh and skin, raw	ciruelas de postre crudas
+cofid:14-373	Kiwi fruit, flesh only, raw, weighed with skin	kiwi con piel crudo
+cofid:14-374	Plums, dessert, flesh and skin, raw, weighed with stones	ciruelas de postre con hueso crudas
+cofid:14-375	Raspberries, raw	frambuesas crudas
+cofid:14-376	Pineapple, flesh only, raw	piña fresca
+cofid:14-377	Pineapple, flesh only, raw, weighed with skin and top	piña con piel y corona
+cofid:14-378	Mangoes, ripe, flesh only, raw	mango maduro
+cofid:14-379	Mangoes, ripe, flesh only, raw, weighed with skin and stone	mango con piel y hueso
+cofid:14-380	Nectarines, flesh and skin, raw	nectarinas crudas
+cofid:14-381	Nectarines, flesh and skin, raw, weighed with stones	nectarinas con hueso crudas
+cofid:14-382	Cherries, flesh and skin, raw	cerezas crudas
+cofid:14-383	Cherries, flesh and skin, raw, weighed with stones	cerezas con hueso crudas
+cofid:14-384	Grapefruit, flesh only, raw	pomelo pelado crudo
+cofid:14-385	Grapefruit, flesh only, raw, weighed with peel and pips	pomelo con piel y pepitas crudo
+cofid:14-386	Avocado, Hass, flesh only	aguacate Hass
+cofid:14-387	Avocado, Hass, flesh only, weighed with skin and stone	aguacate Hass entero
+cofid:14-388	Blackberries, raw	moras crudas
 cofid:14-389	Rhubarb, stems only, stewed without sugar	compota de ruibarbo sin azúcar
+cofid:14-390	Papaya, flesh only, raw	papaya pelada cruda
+cofid:14-391	Prunes, ready-to-eat, semi-dried	ciruelas pasas semisecas
+cofid:14-392	Apricots, ready-to-eat, semi-dried	orejones semisecos
+cofid:14-393	Raisins, dried	pasas
+cofid:14-394	Dates, dried, flesh and skin	dátiles secos
+cofid:14-395	Figs, ready-to-eat, semi-dried	higos semisecos
+cofid:14-396	Pineapple, dried	piña seca
+cofid:14-397	Papaya, flesh only, raw, weighed with skin and pips	papaya con piel y semillas cruda
+cofid:14-398	Prunes, ready-to-eat, semi-dried, weighed with stones	ciruelas pasas semisecas con hueso
+cofid:14-399	Dates, dried, flesh and skin, weighed with stones	dátiles secos con hueso
+cofid:14-804	Barcelona nuts, Kernel only	avellanas de Barcelona
+cofid:14-805	Barcelona nuts, kernel only, weighed with shells	avellanas de Barcelona con cáscara
+cofid:14-806	Betel nuts	nueces de betel
+cofid:14-811	Cashew nuts, kernel only, plain	anacardos naturales
+cofid:14-812	Cashew nuts, kernel only, roasted and salted	anacardos tostados salados
+cofid:14-813	Chestnuts, kernel only, raw	castañas crudas
+cofid:14-814	Chestnuts, kernel only, raw, weighed with shells	castañas con cáscara crudas
+cofid:14-815	Chestnuts, dried	castañas secas
+cofid:14-816	Coconut, flesh only, fresh	coco fresco
+cofid:14-820	Coconut milk	leche de coco
+cofid:14-826	Melon seeds	pepitas de melón
+cofid:14-834	Peanuts, roasted and salted	cacahuetes tostados salados
+cofid:14-837	Pecan nuts, kernel only	nueces pecanas
+cofid:14-838	Pecan nuts, kernel only, weighed with shells	nueces pecanas con cáscara
+cofid:14-839	Pine nuts, kernel only	piñones
+cofid:14-840	Pistachio nuts, kernel only, roasted and salted	pistachos tostados salados
+cofid:14-841	Pistachio nuts, kernel only, roasted and salted, weighed with shells	pistachos tostados salados con cáscara
+cofid:14-842	Pumpkin seeds	semillas de calabaza
+cofid:14-843	Quinoa, raw	quinoa cruda
+cofid:14-844	Sesame seeds	semillas de sésamo
+cofid:14-845	Sunflower seeds	pipas de girasol
+cofid:14-846	Sunflower seeds, toasted	pipas de girasol tostadas
+cofid:14-847	Tahini paste	tahini
 cofid:14-848	Tigernuts	chufas
+cofid:14-849	Trail mix	mezcla de frutos secos
+cofid:14-870	Almonds, flaked and ground	almendras en láminas y molidas
+cofid:14-871	Brazil nuts, kernel only	nueces de Brasil
+cofid:14-873	Coconut, desiccated	coco rallado
+cofid:14-874	Hazelnuts, kernel only	avellanas
+cofid:14-875	Marzipan, white and yellow, retail	mazapán comprado
+cofid:14-877	Peanuts, kernel only, plain, unsalted	cacahuetes sin sal
+cofid:14-878	Peanuts, dry roasted	cacahuetes tostados en seco
+cofid:14-879	Walnuts, kernel only	nueces
+cofid:14-880	Nuts, mixed	mezcla de frutos secos variados
+cofid:14-882	Peanuts and raisins	cacahuetes con pasas
+cofid:14-884	Brazil nuts, kernel only, weighed with shells	nueces de Brasil con cáscara
+cofid:14-885	Hazelnuts, kernel only, weighed with shells	avellanas con cáscara
+cofid:14-886	Peanuts, kernel only, plain, weighed with shells	cacahuetes con cáscara
+cofid:14-887	Walnuts, kernel only, weighed with shells	nueces con cáscara
+cofid:14-889	Coconut milk, retail	leche de coco comprada
+cofid:14-890	Coconut milk, reduced fat, retail	leche de coco ligera comprada
+cofid:14-891	Macadamia nuts, salted	macadamias saladas
 cofid:14-892	Peanut butter, smooth	mantequilla de cacahuete
+cofid:14-893	Marzipan, homemade	mazapán casero
+cofid:14-894	Peanuts, raisins and chocolate chips	cacahuetes con pasas y pepitas de chocolate
+cofid:14-895	Breadnut seeds, dried	semillas de ramón secas
+cofid:14-896	Almonds, whole kernels	almendras enteras
+cofid:14-897	Almonds, toasted	almendras tostadas
+cofid:14-898	Almonds, weighed with shells	almendras con cáscara
+cofid:15-001	Aubergine, stuffed with lentils and vegetables	berenjenas rellenas de lentejas y verduras
+cofid:15-016	Bhaji, cabbage and spinach	bhaji de col y espinacas
+cofid:15-021	Bhaji, cauliflower, potato and pea, with butter	bhaji de coliflor, patata y guisantes con mantequilla
+cofid:15-022	Bhaji, cauliflower, potato and pea, with vegetable oil	bhaji de coliflor, patata y guisantes con aceite vegetal
+cofid:15-024	Bhaji, green bean	bhaji de judías verdes
+cofid:15-025	Bhaji, karela, with butter ghee, homemade	bhaji de cundeamor con ghee casero
+cofid:15-026	Bhaji, karela, with vegetable oil, homemade	bhaji de cundeamor con aceite vegetal casero
+cofid:15-040	Bhaji, potato, spinach and cauliflower, homemade	bhaji de patata, espinacas y coliflor casero
+cofid:15-047	Bhaji, vegetable, Punjabi, with butter	bhaji de verduras punjabi con mantequilla
+cofid:15-048	Bhaji, vegetable, Punjabi, with vegetable oil	bhaji de verduras punjabi con aceite vegetal
+cofid:15-095	Curry, black-eye bean, Punjabi, homemade	curry de carillas punjabi casero
+cofid:15-107	Curry, chick pea, whole and tomato, Punjabi, with butter, homemade	curry de garbanzos con tomate punjabi en mantequilla casero
+cofid:15-108	Curry, chick pea, whole and tomato, Punjabi, with vegetable oil, homemade	curry de garbanzos con tomate punjabi en aceite vegetal casero
+cofid:15-125	Curry, lentil, red/masoor dahl, mung bean dahl and tomato, homemade	curry de lentejas rojas, dal de mung y tomate casero
+cofid:15-132	Curry, mung bean dahl and tomato, homemade	curry de dal de mung con tomate casero
+cofid:15-146	Curry, red kidney bean, Punjabi, homemade	curry de alubias rojas punjabi casero
+cofid:15-186	Lasagne, spinach, wholemeal, homemade	lasaña de espinacas integral casera
+cofid:15-188	Lasagne, vegetable, wholemeal, homemade	lasaña de verduras integral casera
+cofid:15-190	Laverbread	laverbread (pasta de algas)
+cofid:15-198	Lentil roast, homemade	rollo de lentejas casero
+cofid:15-199	Lentil roast, with egg, homemade	rollo de lentejas con huevo casero
+cofid:15-200	Lentil and nut roast, homemade	rollo de lentejas y frutos secos casero
+cofid:15-201	Lentil and nut roast, with egg, homemade	rollo de lentejas y frutos secos con huevo casero
+cofid:15-208	Nut croquettes, fried in sunflower oil, homemade	croquetas de frutos secos fritas en aceite de girasol caseras
+cofid:15-209	Nut croquettes, fried in vegetable oil, homemade	croquetas de frutos secos fritas en aceite vegetal caseras
+cofid:15-210	Nut cutlets, retail, fried in sunflower oil	croquetas de frutos secos compradas fritas en aceite de girasol
+cofid:15-211	Nut cutlets, retail, fried in vegetable oil	croquetas de frutos secos compradas fritas en aceite vegetal
+cofid:15-212	Nut cutlets, retail, grilled	croquetas de frutos secos compradas a la plancha
+cofid:15-214	Nut roast, mixed nuts with egg, homemade	rollo de frutos secos variados con huevo casero
+cofid:15-215	Nut and rice roast, mixed nuts, homemade	rollo de frutos secos variados y arroz casero
+cofid:15-216	Nut and rice roast, mixed nuts with egg, homemade	rollo de frutos secos variados y arroz con huevo casero
+cofid:15-217	Nut and seed roast, mixed nuts and sunflower seeds, homemade	rollo de frutos secos y semillas variados casero
+cofid:15-218	Nut and seed roast, mixed nuts and sunflower seeds with egg, homemade	rollo de frutos secos y semillas variados con huevo casero
+cofid:15-219	Nut and vegetable roast, mixed nuts, homemade	rollo de frutos secos variados y verduras casero
+cofid:15-220	Nut and vegetable roast, mixed nuts with egg, homemade	rollo de frutos secos variados y verduras con huevo casero
+cofid:15-221	Nut, mushroom and rice roast, homemade	rollo de frutos secos, champiñones y arroz casero
+cofid:15-255	Pizza, tomato, homemade	pizza de tomate casera
+cofid:15-259	Potato, leek and celery bake	gratinado de patata, puerro y apio
+cofid:15-261	Potatoes with onions and eggs, fried	patatas fritas con cebolla y huevo
+cofid:15-262	Quorn korma	Quorn korma
+cofid:15-279	Rissoles, lentil, fried in sunflower oil	croquetas de lentejas fritas en aceite de girasol
+cofid:15-280	Rissoles, lentil, fried in vegetable oil	croquetas de lentejas fritas en aceite vegetal
+cofid:15-281	Rissoles, brown rice, fried in sunflower oil	croquetas de arroz integral fritas en aceite de girasol
+cofid:15-282	Rissoles, brown rice, fried in vegetable oil	croquetas de arroz integral fritas en aceite vegetal
+cofid:15-294	Salad, wholemeal pasta, with vegetables and mayonnaise	ensalada de pasta integral con verduras y mayonesa
+cofid:15-305	Samosas, vegetable, retail	samosas de verduras compradas
+cofid:15-321	Tomatoes, stuffed with rice	tomates rellenos de arroz
+cofid:15-344	Vegetable stir fry mix, fried in corn oil	mezcla de verduras salteada en aceite de maíz
+cofid:15-345	Vegetable stir fry mix, fried in sunflower oil	mezcla de verduras salteada en aceite de girasol
+cofid:15-364	Vegetables, stir-fried, takeaway	verduras salteadas para llevar
+cofid:15-397	Bhaji, cabbage and potato, with rapeseed oil, homemade	bhaji de col y patata con aceite de colza casero
+cofid:15-490	Curry, mung bean, whole, Punjabi, homemade	curry de mung entero punjabi casero
+cofid:15-511	Dal Dhokari, homemade	dal dhokari casero
+cofid:15-513	Dosa, filling, vegetable, homemade	relleno de verduras para dosa casero
+cofid:15-528	Khichadi, with butter ghee	khichadi con ghee
+cofid:15-529	Khichadi, with vegetable oil	khichadi con aceite vegetal
+cofid:15-617	Sushi, vegetable	sushi de verduras
+cofid:15-619	Curry, vegetable, ready meal, without rice, cooked	curry de verduras preparado sin arroz
+cofid:15-620	Pakora, vegetable, takeaway and restaurant	pakoras de verduras para llevar y de restaurante
+cofid:15-621	Vegetables, mixed, cooked with onion, spice and tomatoes, homemade	mezcla de verduras con cebolla, especias y tomate casera
+cofid:15-625	Tori ki subji, homemade	sabzi de tori casero
+cofid:15-626	Tinda subji, homemade	sabzi de tinda casero
+cofid:15-627	Curry, bhindi subji, homemade	sabzi de bhindi casero
+cofid:15-628	Methi aloo, homemade	methi aloo casero
+cofid:15-629	Saag, homemade	saag casero
+cofid:15-634	Curry, Thai, stir-fry vegetable, takeaway and restaurant	curry tailandés de verduras salteadas para llevar y de restaurante
+cofid:15-635	Coleslaw, not low calorie, retail	ensalada de col comprada
+cofid:15-636	Coleslaw, with reduced calorie dressing, retail	ensalada de col con aliño ligero comprada
+cofid:15-637	Cauliflower cheese, retail	coliflor con queso comprada
+cofid:15-638	Casserole, vegetable, homemade	cazuela de verduras casera
+cofid:15-639	Cauliflower cheese, made with semi-skimmed milk, homemade	coliflor en salsa de queso con leche semidesnatada casera
+cofid:15-640	Chilli, vegetable, homemade	chili de verduras casero
+cofid:15-641	Curry, chick pea dhal, homemade	curry de garbanzos casero
+cofid:15-642	Garlic mushrooms, not coated, homemade	champiñones al ajillo caseros
+cofid:15-643	Nut roast, homemade	rollo de frutos secos casero
+cofid:15-645	Pancakes, stuffed with vegetables, homemade	crepes rellenos de verduras caseros
+cofid:15-646	Pasty, vegetable, homemade	pasty de verduras casero
+cofid:15-647	Pie, vegetable, homemade	pastel de verduras casero
+cofid:15-648	Salad, green	ensalada verde
+cofid:15-649	Salad, rice, homemade	ensalada de arroz casera
+cofid:15-650	Vegetable bake, homemade	horneado de verduras casero
+cofid:15-651	Lasagne, vegetable, retail	lasaña de verduras comprada
+cofid:15-652	Moussaka, vegetable, retail	musaca de verduras comprada
+cofid:15-653	Pakora/bhajia, vegetable, retail	pakoras de verduras compradas
+cofid:15-654	Salad, potato, with mayonnaise, retail	ensaladilla de patata con mayonesa comprada
+cofid:15-655	Shepherd's pie, vegetable, retail	pastel de pastor de verduras comprado
+cofid:15-656	Vegeburger, retail, grilled	hamburguesa vegetal comprada a la plancha
+cofid:15-657	Vegetable and cheese grill/burger, in crumbs, baked/grilled	hamburguesa de verduras y queso rebozada al horno
+cofid:15-658	Sausages, vegetarian, baked/grilled	salchichas vegetarianas al horno
+cofid:15-659	Ratatouille, homemade	ratatouille casero
+cofid:15-661	Vegetable stir fry mix, fried in rapeseed oil	mezcla de verduras salteada en aceite de colza
+cofid:15-662	Aubergine, stuffed with rice	berenjenas rellenas de arroz
+cofid:15-663	Aubergine, stuffed with vegetables, cheese topping	berenjenas rellenas de verduras con queso gratinado
+cofid:15-664	Bean loaf, mixed beans, homemade	pastel de alubias variadas casero
+cofid:15-665	Beanburger, aduki, fried in rapeseed oil, homemade	hamburguesa de azuki frita en aceite de colza casera
+cofid:15-666	Beanburger, butter bean, fried in rapeseed oil, homemade	hamburguesa de judías de Lima frita en aceite de colza casera
+cofid:15-667	Beanburger, red kidney bean, fried in rapeseed oil	hamburguesa de alubias rojas frita en aceite de colza
+cofid:15-668	Beanburger, soya, fried in rapeseed oil	hamburguesa de soja frita en aceite de colza
+cofid:15-669	Bhaji, aubergine and potato, homemade	bhaji de berenjena y patata casero
+cofid:15-670	Bhaji, aubergine, pea, potato and cauliflower, homemade	bhaji de berenjena, guisantes, patata y coliflor casero
+cofid:15-671	Bhaji, cabbage, homemade	bhaji de col casero
+cofid:15-672	Bhaji, cabbage and pea, with butter ghee, homemade	bhaji de col y guisantes con ghee casero
+cofid:15-673	Bhaji, cabbage and pea, with rapeseed oil, homemade	bhaji de col y guisantes con aceite de colza casero
+cofid:15-674	Bhaji, cabbage and potato, with butter, homemade	bhaji de col y patata con mantequilla casero
+cofid:15-675	Bhaji, cabbage and potato, with vegetable oil	bhaji de col y patata con aceite vegetal
+cofid:15-676	Bhaji, carrot, potato and pea, with butter, homemade	bhaji de zanahoria, patata y guisantes con mantequilla casero
+cofid:15-677	Bhaji, carrot, potato and pea, with vegetable oil, homemade	bhaji de zanahoria, patata y guisantes con aceite vegetal casero
+cofid:15-678	Bhaji, cauliflower, homemade	bhaji de coliflor casero
+cofid:15-679	Bhaji, cauliflower and potato, homemade	bhaji de coliflor y patata casero
+cofid:15-680	Bhaji, cauliflower and vegetable, homemade	bhaji de coliflor y verduras casero
+cofid:15-681	Bhaji, mushroom, homemade	bhaji de champiñones casero
+cofid:15-682	Bhaji, mustard leaves, homemade	bhaji de hojas de mostaza casero
+cofid:15-683	Bhaji, mustard leaves and spinach, homemade	bhaji de hojas de mostaza y espinacas casero
+cofid:15-684	Bhaji, okra, Bangladeshi, with butter ghee, homemade	bhaji de okra bangladeshí con ghee casero
+cofid:15-685	Bhaji, okra, Bangladeshi, with vegetable oil, homemade	bhaji de okra bangladeshí con aceite vegetal casero
+cofid:15-686	Bhaji, okra, Islami, homemade	bhaji de okra islami casero
+cofid:15-687	Bhaji, pea, homemade	bhaji de guisantes casero
+cofid:15-688	Bhaji, potato and fenugreek leaves, homemade	bhaji de patata y hojas de fenogreco casero
+cofid:15-689	Bhaji, potato and green pepper, homemade	bhaji de patata y pimiento verde casero
+cofid:15-690	Bhaji, potato and onion, homemade	bhaji de patata y cebolla casero
+cofid:15-691	Bhaji, potato, onion and mushroom, homemade	bhaji de patata, cebolla y champiñones casero
+cofid:15-692	Bhaji, potato, with butter ghee, homemade	bhaji de patata con ghee casero
+cofid:15-693	Bhaji, potato, with vegetable oil, homemade	bhaji de patata con aceite vegetal casero
+cofid:15-694	Bhaji, spinach, homemade	bhaji de espinacas casero
+cofid:15-695	Bhaji, spinach and potato, homemade	bhaji de espinacas y patata casero
+cofid:15-696	Bhaji, turnip, homemade	bhaji de nabo casero
+cofid:15-697	Bhaji, turnip and onion, homemade	bhaji de nabo y cebolla casero
+cofid:15-698	Bhaji, vegetable, with butter, homemade	bhaji de verduras con mantequilla casero
+cofid:15-699	Bhaji, vegetable, with rapeseed oil, homemade	bhaji de verduras con aceite de colza casero
+cofid:15-700	Broccoli in cheese sauce, made with semi-skimmed milk, homemade	brócoli en salsa de queso con leche semidesnatada casero
+cofid:15-701	Broccoli in cheese sauce, made with skimmed milk, homemade	brócoli en salsa de queso con leche desnatada casero
+cofid:15-702	Broccoli in cheese sauce, made with whole milk, homemade	brócoli en salsa de queso con leche entera casero
+cofid:15-703	Bubble and squeak, fried in sunflower oil, homemade	patata con col frita en aceite de girasol casera
+cofid:15-704	Bubble and squeak, fried in rapeseed oil, homemade	patata con col frita en aceite de colza casera
+cofid:15-705	Cabbage, red, cooked with apple	col lombarda estofada con manzana
+cofid:15-706	Callaloo and cho cho, homemade	callaloo con chayote casero
+cofid:15-707	Callaloo and okra, homemade	callaloo con okra casero
+cofid:15-708	Cannelloni, spinach, homemade	canelones de espinacas caseros
+cofid:15-709	Cannelloni, vegetable, homemade	canelones de verduras caseros
+cofid:15-710	Cauliflower cheese, made with skimmed milk, homemade	coliflor en salsa de queso con leche desnatada casera
 cofid:15-711	Cauliflower cheese, made with whole milk, homemade	coliflor con queso
 cofid:15-768	Curry, mung bean dahl, Bengali, homemade	dal de judía mungo bengalí
 cofid:15-769	Curry, mung bean, whole and turnip leaves, homemade	curry de judía mungo con hojas de nabo
