@@ -1644,10 +1644,210 @@ fdc:168928	Pasta, cooked, unenriched, without added salt	паста варёна
 fdc:168929	Cornmeal, degermed, unenriched, yellow	кукурузная мука жёлтая
 fdc:168930	Rice, white, medium-grain, cooked, unenriched	рис белый среднезёрный варёный
 fdc:168931	Rice, white, short-grain, raw, unenriched	рис белый короткозёрный сырой
+fdc:168932	Rice, white, short-grain, cooked, unenriched	рис белый короткозёрный варёный
+fdc:168933	Semolina, unenriched	манка
 fdc:168934	Spaghetti, protein-fortified, cooked, enriched (n x 6.25)	спагетти протеиновые варёные
+fdc:168935	Rice, white, long-grain, regular, cooked, unenriched, with salt	рис белый длиннозёрный варёный с солью
+fdc:168936	Wheat flour, white, all-purpose, enriched, unbleached	мука пшеничная универсальная обогащённая
+fdc:168937	Spaghetti, protein-fortified, dry, enriched (n x 6.25)	спагетти с добавленным белком сухие
+fdc:168938	Wheat flour, white (industrial), 10% protein, unbleached, enriched	мука пшеничная 10% белка обогащённая
+fdc:168939	Wheat flour, white (industrial), 11.5% protein, bleached, enriched	мука пшеничная 11,5% белка отбеленная обогащённая
+fdc:168940	Wheat flour, white (industrial), 11.5% protein, bleached, unenriched	мука пшеничная 11,5% белка отбеленная
+fdc:168941	Wheat flour, white (industrial), 11.5% protein, unbleached, enriched	мука пшеничная 11,5% белка обогащённая
+fdc:168942	Wheat flour, white (industrial), 13% protein, bleached, enriched	мука пшеничная 13% белка отбеленная обогащённая
+fdc:168943	Sorghum flour, whole-grain	мука сорго цельнозерновая
+fdc:168944	Wheat flour, whole-grain, soft wheat	мука пшеничная цельнозерновая из мягкой пшеницы
+fdc:168945	Potatoes, yellow fleshed, hash brown, shredded, salt added in processing, frozen, unprepared	рёшти из жёлтого картофеля замороженные сырые
+fdc:168946	Potatoes, french fried, wedge cut, frozen, unprepared	картофель фри дольками замороженный сырой
+fdc:168947	Potatoes, french fried, steak cut, salt not added in processing, frozen, unprepared	картофель фри крупный замороженный сырой
+fdc:168948	Potatoes, french fried, cross cut, frozen, unprepared	картофель фри сеткой замороженный сырой
+fdc:168949	Rice and vermicelli mix, beef flavor, unprepared	смесь риса с вермишелью со вкусом говядины сухая
+fdc:168950	Rice and vermicelli mix, beef flavor, prepared with 80% margarine	смесь риса с вермишелью со вкусом говядины с маргарином
+fdc:168951	Rice and vermicelli mix, rice pilaf flavor, unprepared	смесь риса с вермишелью плов сухая
+fdc:168952	Rice and vermicelli mix, rice pilaf flavor, prepared with 80% margarine	смесь риса с вермишелью плов с маргарином
+fdc:168953	Pasta mix, classic cheeseburger macaroni, unprepared	макароны со вкусом чизбургера сухая смесь
+fdc:168954	Pasta mix, classic beef, unprepared	паста со вкусом говядины сухая смесь
+fdc:168955	Pasta mix, Italian lasagna, unprepared	смесь для лазаньи итальянская сухая
+fdc:168956	Yellow rice with seasoning, dry packet mix, unprepared	жёлтый рис со специями сухая смесь
+fdc:168957	Pizza rolls, frozen, unprepared	роллы пицца замороженные сырые
+fdc:168958	Pasta mix, Italian four cheese lasagna, unprepared	смесь для лазаньи четыре сыра сухая
+fdc:168959	Spanish rice mix, dry mix, unprepared	смесь для испанского риса сухая
+fdc:168960	Lasagna, cheese, frozen, unprepared	лазанья сырная замороженная сырая
+fdc:168961	Chicken, thighs, frozen, breaded, reheated	куриные бёдра в панировке разогретые
+fdc:168962	Turnover, meat- and cheese-filled, tomato-based sauce, reduced fat, frozen	слоёный пирожок с мясом и сыром в томатном соусе нежирный замороженный
+fdc:168963	Turnover, filled with egg, meat and cheese, frozen	слоёный пирожок с яйцом, мясом и сыром замороженный
+fdc:168964	Rice mix, white and wild, flavored, unprepared	смесь белого и дикого риса с приправой сухая
+fdc:168965	Salisbury steak with gravy, frozen	солсберийский стейк с подливкой замороженный
+fdc:168966	Infant Formula, MEAD JOHNSON, ENFAMIL, Newborn, with ARA and DHA, powder	детская смесь Enfamil Newborn порошковая
+fdc:168967	Infant Formula, MEAD JOHNSON, ENFAMIL, Premium LIPIL, Infant, powder	детская смесь Enfamil Premium Lipil порошковая
+fdc:168968	Infant Formula, MEAD JOHNSON, ENFAMIL, Premium LIPIL, Infant, Liquid concentrate, not reconstituted	детская смесь Enfamil Premium Lipil концентрат
+fdc:168969	Infant Formula, MEAD JOHNSON, ENFAMIL, Premium, Infant, Liquid concentrate, not reconstituted	детская смесь Enfamil Premium концентрат
+fdc:168970	Infant formula, MEAD JOHNSON, ENFAMIL, ENFAGROW, GENTLEASE, Toddler transitions, with ARA and DHA, powder	детская смесь Enfagrow Gentlease порошковая
+fdc:168971	Infant formula, ABBOTT NUTRITION, SIMILAC, GO AND GROW, powder, with ARA and DHA	детская смесь Similac Go and Grow порошковая
+fdc:168972	Infant formula, GERBER, GOOD START 2 SOY, with iron, powder	детская смесь Gerber Good Start 2 Soy порошковая
+fdc:168973	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN, PurAmino, powder, not reconstituted	детская смесь Enfamil Nutramigen PurAmino порошковая
+fdc:168974	Infant formula, MEAD JOHNSON, ENFAMIL, Premature, 20 calories ready-to-feed Low iron	детская смесь Enfamil для недоношенных готовая маложелезная
+fdc:168975	Babyfood, rice cereal, dry, EARTHS BEST ORGANIC WHOLE GRAIN, fortified only with iron	детская каша рисовая Earth's Best органическая с железом
+fdc:168976	Agutuk, fish/berry with seal oil (Alaskan ice cream) (Alaska Native)	агутук с рыбой и ягодами на тюленьем жире (Аляска)
+fdc:168977	Agutuk, meat-caribou (Alaskan ice cream) (Alaska Native)	агутук с мясом карибу (Аляска)
+fdc:168978	Ascidians (tunughnak) (Alaska Native)	асцидии тунугнак (Аляска)
+fdc:168979	Whale, beluga, flipper, raw (Alaska Native)	ласт белухи сырой (Аляска)
+fdc:168980	Whale, beluga, liver, raw (Alaska Native)	печень белухи сырая (Аляска)
+fdc:168981	Oil, beluga, whale (Alaska Native)	жир белухи (Аляска)
+fdc:168982	Blackberries, wild, raw (Alaska Native)	ежевика дикая (Аляска)
+fdc:168983	Caribou, liver, raw (Alaska Native)	печень карибу сырая (Аляска)
+fdc:168984	Stew/soup, caribou (Alaska Native)	суп-рагу из карибу (Аляска)
+fdc:168985	Caribou, tongue, raw (Alaska Native)	язык карибу сырой (Аляска)
+fdc:168986	Chiton, leathery, gumboots (Alaska Native)	хитон сырой (Аляска)
+fdc:168987	Fish, devilfish, meat (Alaska Native)	мясо черти-рыбы (Аляска)
+fdc:168988	Fireweed, young leaves, raw (Alaska Native)	молодые листья кипрея сырые (Аляска)
+fdc:168989	Fish, herring eggs on giant kelp, Pacific (Alaska Native)	икра сельди на ламинарии (Аляска)
+fdc:168990	Fish, herring eggs, Pacific, dry (Alaska Native)	икра сельди сушёная (Аляска)
+fdc:168991	Stew, moose (Alaska Native)	рагу из лося (Аляска)
+fdc:168992	Agave, cooked (Southwest)	агава приготовленная (юго-запад)
+fdc:168993	Agave, dried (Southwest)	агава сушёная (юго-запад)
+fdc:168994	Cattail, Narrow Leaf Shoots (Northern Plains Indians)	побеги рогоза узколистного (индейцы равнин)
+fdc:168995	Lambsquarters, raw (Northern Plains Indians)	лебеда сырая (индейцы равнин)
+fdc:168996	Prairie Turnips, boiled (Northern Plains Indians)	репа прерийная варёная (индейцы равнин)
+fdc:168997	Raspberries, wild (Northern Plains Indians)	малина дикая (индейцы равнин)
+fdc:168998	Rose Hips, wild (Northern Plains Indians)	шиповник дикий (индейцы равнин)
+fdc:168999	Chokecherries, raw, pitted (Northern Plains Indians)	черёмуха без косточек (индейцы равнин)
+fdc:169000	Sea lion, Steller, liver (Alaska Native)	печень сивуча (Аляска)
+fdc:169001	Sea lion, Steller, kidney (Alaska Native)	почки сивуча (Аляска)
+fdc:169002	Sea lion, Steller, heart (Alaska Native)	сердце сивуча (Аляска)
+fdc:169003	Sea lion, Steller, meat (Alaska Native)	мясо сивуча (Аляска)
+fdc:169004	Piki bread, made from blue cornmeal (Hopi)	хлеб пики из синей кукурузной муки (хопи)
+fdc:169005	Wocas, tuber, cooked, Oregon, yellow pond lily (Klamath)	клубни жёлтой кувшинки варёные (кламат)
+fdc:169006	Stew, pinto bean and hominy, badufsuki (Hopi)	рагу из фасоли пинто и гомини (хопи)
+fdc:169007	Tamales, masa and pork filling (Hopi)	тамалес со свининой (хопи)
+fdc:169008	APPLEBEE'S, Double Crunch Shrimp	креветки Double Crunch Applebee's
+fdc:169009	APPLEBEE'S, french fries	картофель фри Applebee's
+fdc:169010	APPLEBEE'S, KRAFT, Macaroni & Cheese, from kid's menu	макароны с сыром Applebee's
 fdc:169011	APPLEBEE'S, mozzarella sticks	Applebee's палочки моцареллы
+fdc:169012	APPLEBEE'S, chicken tenders, from kids' menu	куриные стрипсы Applebee's
+fdc:169013	T.G.I. FRIDAY'S, chicken fingers, from kids' menu	куриные пальчики TGI Friday's
+fdc:169014	T.G.I. FRIDAY'S, classic sirloin steak (10 oz)	стейк серлоин TGI Friday's
+fdc:169015	Restaurant, family style, fried mozzarella sticks	жареные палочки моцарелла
+fdc:169016	Restaurant, family style, sirloin steak	стейк серлоин
+fdc:169017	APPLEBEE'S, fish, hand battered	рыба в кляре Applebee's
+fdc:169018	APPLEBEE'S, chili	чили кон карне Applebee's
+fdc:169019	T.G.I. FRIDAY'S, chicken fingers	куриные пальчики TGI Friday's
+fdc:169020	APPLEBEE'S, coleslaw	коул-сло Applebee's
+fdc:169021	CRACKER BARREL, onion rings, thick-cut	луковые кольца Cracker Barrel
+fdc:169022	DENNY'S, chicken strips	куриные стрипсы Denny's
+fdc:169023	DENNY'S, coleslaw	коул-сло Denny's
+fdc:169024	DENNY'S, fish fillet, battered or breaded, fried	рыбное филе в кляре жареное Denny's
+fdc:169025	DENNY'S, hash browns	рёшти Denny's
+fdc:169026	Restaurant, family style, coleslaw	коул-сло
+fdc:169027	Restaurant, family style, onion rings	луковые кольца
+fdc:169028	Restaurant, family style, chili with meat and beans	чили кон карне
+fdc:169029	Restaurant, family style, spaghetti and meatballs	спагетти с фрикадельками
+fdc:169030	CARRABBA'S ITALIAN GRILL, lasagne	лазанья Carrabba's
+fdc:169031	ON THE BORDER, Mexican rice	мексиканский рис On The Border
+fdc:169032	ON THE BORDER, refried beans	фасоль рефрида On The Border
+fdc:169033	Restaurant, Italian, spaghetti with pomodoro sauce (no meat)	спагетти с томатным соусом
+fdc:169034	ON THE BORDER, cheese quesadilla	кесадилья с сыром On The Border
+fdc:169035	Restaurant, Mexican, cheese quesadilla	кесадилья с сыром
+fdc:169036	CARRABBA'S ITALIAN GRILL, cheese ravioli with marinara sauce	равиоли с сыром в соусе маринара Carrabba's
+fdc:169037	OLIVE GARDEN, cheese ravioli with marinara sauce	равиоли с сыром в соусе маринара Olive Garden
+fdc:169038	Restaurant, Italian, cheese ravioli with marinara sauce	равиоли с сыром в соусе маринара
+fdc:169039	Cereals ready-to-eat, frosted oat cereal with marshmallows	овсяные колечки глазированные с маршмеллоу
+fdc:169040	Cereals ready-to-eat, WEETABIX whole grain cereal	цельнозерновые хлопья Weetabix
+fdc:169041	Cereals ready-to-eat, POST, GREAT GRAINS, Raisin, Date & Pecan	хлопья Great Grains с изюмом, финиками и пеканом Post
+fdc:169042	Babyfood, juice, apple-sweet potato	детский сок яблоко-батат
+fdc:169043	Babyfood, juice, orange-carrot	детский сок апельсин-морковь
+fdc:169044	Beverages, Orange juice drink	апельсиновый напиток
+fdc:169045	Gums, seed gums (includes locust bean, guar)	камеди семян (рожковое дерево, гуаровая)
 fdc:169046	Snacks, potato chips, white, restructured, baked	чипсы картофельные печёные
+fdc:169047	Babyfood, baked product, finger snacks cereal fortified	детское печенье обогащённое
+fdc:169048	Babyfood, cereal, brown rice, dry, instant	детская каша из коричневого риса сухая быстрого приготовления
+fdc:169049	Babyfood, green beans and turkey, strained	детское пюре стручковая фасоль с индейкой
+fdc:169050	Cheese, muenster, low fat	сыр мюнстер нежирный
+fdc:169051	Cheese, mozzarella, nonfat	моцарелла обезжиренная
+fdc:169052	Margarine-like, butter-margarine blend, 80% fat, stick, without salt	смесь сливочного масла с маргарином без соли
+fdc:169053	Margarine-like, vegetable oil-butter spread, reduced calorie, tub, with salt	спред масляно-растительный низкокалорийный солёный
+fdc:169054	Babyfood, dinner, chicken and rice	детское блюдо курица с рисом
+fdc:169055	Salad dressing, caesar dressing, regular	соус цезарь
+fdc:169056	Salad dressing, coleslaw	соус для коул-сло
+fdc:169057	Salad dressing, green goddess, regular	соус зелёная богиня
+fdc:169058	Jams and preserves, no sugar (with sodium saccharin), any flavor	варенье без сахара (с сахарином)
 fdc:169059	Candies, chocolate covered, caramel with nuts	конфеты карамель с орехами в шоколаде
+fdc:169060	Candies, nougat, with almonds	нуга с миндалём
+fdc:169061	Candies, gum drops, no sugar or low calorie (sorbitol)	мармелад без сахара (на сорбите)
+fdc:169062	Pie fillings, cherry, low calorie	начинка для пирога вишнёвая низкокалорийная
+fdc:169063	Breakfast bars, oats, sugar, raisins, coconut (include granola bar)	батончик овсяный с изюмом и кокосом
+fdc:169064	Pretzels, soft	крендель мягкий
+fdc:169065	Beans, chili, barbecue, ranch style, cooked	фасоль ранчо приготовленная
+fdc:169066	Luncheon slices, meatless	вегетарианская ветчина ломтиками
+fdc:169067	Meatballs, meatless	вегетарианские фрикадельки
+fdc:169068	Vegetarian fillets	вегетарианское филе
+fdc:169069	Sandwich spread, meatless	вегетарианская намазка
+fdc:169070	Alcoholic beverage, wine, cooking	вино для готовки
+fdc:169071	Alcoholic beverage, wine, light	вино лёгкое
+fdc:169072	Sweeteners, tabletop, saccharin (sodium saccharin)	сахарин
+fdc:169073	Beverage, instant breakfast powder, chocolate, not reconstituted	сухой шоколадный завтрак
+fdc:169074	Tomato sauce, canned, no salt added	томатный соус консервированный без соли
+fdc:169075	Cereals ready-to-eat, ALPEN	мюсли Alpen
+fdc:169076	Cereals ready-to-eat, FAMILIA	мюсли Familia
+fdc:169077	Cereals ready-to-eat, wheat and bran, presweetened with nuts and fruits	пшенично-отрубные хлопья с орехами и фруктами сладкие
+fdc:169078	Cheese, cottage, with vegetables	творог с овощами
+fdc:169079	Cheese, cream, low fat	сливочный сыр нежирный
+fdc:169080	Cheese, pasteurized process, American, low fat	плавленый сыр нежирный
+fdc:169081	Cheese spread, cream cheese base	намазка из сливочного сыра
+fdc:169082	Pork, oriental style, dehydrated	свинина по-восточному сушёная
+fdc:169083	Soybean, curd cheese	соевый творог
+fdc:169084	Potatoes, canned, drained solids, no salt added	картофель консервированный без соли слитый
+fdc:169085	Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added	смесь овощей консервированная без соли
+fdc:169086	Litchis, raw	личи свежие
+fdc:169087	Litchis, dried	личи сушёные
+fdc:169088	Loganberries, frozen	логанова малина замороженная
+fdc:169089	Longans, raw	лонган свежий
+fdc:169090	Mangosteen, canned, syrup pack	мангостин консервированный в сиропе
+fdc:169091	Mango, dried, sweetened	манго сушёное с сахаром
+fdc:169092	Melons, cantaloupe, raw	дыня канталупа свежая
+fdc:169093	Melons, casaba, raw	дыня касаба свежая
+fdc:169094	Olives, ripe, canned (small-extra large)	оливки чёрные консервированные мелкие
+fdc:169095	Olives, ripe, canned (jumbo-super colossal)	оливки чёрные консервированные крупные
+fdc:169096	Olives, pickled, canned or bottled, green	оливки зелёные маринованные
+fdc:169097	Oranges, raw, all commercial varieties	апельсины свежие
+fdc:169098	Orange juice, raw (Includes foods for USDA's Food Distribution Program)	апельсиновый сок свежевыжатый
+fdc:169099	Orange juice, canned, unsweetened	апельсиновый сок консервированный без сахара
+fdc:169100	Orange juice, chilled, includes from concentrate	апельсиновый сок охлаждённый
+fdc:169101	Orange juice, chilled, includes from concentrate, with added calcium and vitamin D	апельсиновый сок с кальцием и витамином D
+fdc:169102	Orange juice, frozen concentrate, unsweetened, diluted with 3 volume water	апельсиновый сок из замороженного концентрата
+fdc:169103	Orange peel, raw	апельсиновая цедра
+fdc:169104	Orange-grapefruit juice, canned or bottled, unsweetened	апельсиново-грейпфрутовый сок консервированный без сахара
+fdc:169105	Tangerines, (mandarin oranges), raw	мандарины свежие
+fdc:169106	Tangerines, (mandarin oranges), canned, juice pack	мандарины консервированные в соку
+fdc:169107	Papaya nectar, canned	нектар папайи консервированный
+fdc:169108	Passion-fruit, (granadilla), purple, raw	маракуйя фиолетовая свежая
+fdc:169109	Passion-fruit juice, purple, raw	сок маракуйи фиолетовой
+fdc:169110	Passion-fruit juice, yellow, raw	сок маракуйи жёлтой
+fdc:169111	Peaches, canned, light syrup pack, solids and liquids	персики консервированные в лёгком сиропе
+fdc:169112	Peaches, canned, heavy syrup pack, solids and liquids	персики консервированные в сиропе
+fdc:169113	Peaches, canned, extra heavy syrup pack, solids and liquids	персики консервированные в густом сиропе
+fdc:169114	Peaches, spiced, canned, heavy syrup pack, solids and liquids	персики консервированные в сиропе со специями
+fdc:169115	Peaches, dried, sulfured, stewed, with added sugar	персики сушёные тушёные с сахаром
+fdc:169116	Peaches, frozen, sliced, sweetened	персики замороженные ломтиками с сахаром
+fdc:169117	Peach nectar, canned, with sucralose, without added ascorbic acid	нектар персиковый с сукралозой
+fdc:169118	Pears, raw	груши свежие
+fdc:169119	Pears, canned, water pack, solids and liquids	груши консервированные без сиропа
+fdc:169120	Pears, canned, extra heavy syrup pack, solids and liquids	груши консервированные в густом сиропе
+fdc:169121	Pears, dried, sulfured, uncooked	груши сушёные
+fdc:169122	Pears, dried, sulfured, stewed, without added sugar	груши сушёные тушёные без сахара
+fdc:169123	Pears, dried, sulfured, stewed, with added sugar	груши сушёные тушёные с сахаром
+fdc:169124	Pineapple, raw, all varieties	ананас свежий
+fdc:169125	Pineapple, canned, water pack, solids and liquids	ананас консервированный без сиропа
+fdc:169126	Pineapple, canned, juice pack, solids and liquids	ананас консервированный в соку
+fdc:169127	Pineapple, canned, light syrup pack, solids and liquids	ананас консервированный в лёгком сиропе
+fdc:169128	Pineapple juice, frozen concentrate, unsweetened, diluted with 3 volume water	ананасовый сок из замороженного концентрата
+fdc:169129	Pitanga, (surinam-cherry), raw	питанга свежая
+fdc:169130	Plantains, yellow, raw	плантан жёлтый сырой
+fdc:169131	Plantains, yellow, baked	плантан жёлтый запечённый
+fdc:169132	Plums, canned, purple, heavy syrup pack, solids and liquids	сливы консервированные в сиропе
+fdc:169133	Plums, canned, purple, extra heavy syrup pack, solids and liquids	сливы консервированные в густом сиропе
+fdc:169134	Pomegranates, raw	гранаты свежие
+fdc:169135	Lima beans, immature seeds, cooked, boiled, drained, without salt	бобы лима варёные без соли
 fdc:169180	Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted	свиная вырезка запечённая
 fdc:169309	Taro shoots, cooked, without salt	побеги таро варёные
 fdc:169428	Nuts, mixed nuts, oil roasted, without peanuts, lightly salted	смесь жареных орехов слабосолёная
