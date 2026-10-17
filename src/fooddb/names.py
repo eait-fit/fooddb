@@ -9,7 +9,7 @@ Search needs no knowledge of any of this — it already unions food_name."""
 from pathlib import Path
 
 from loguru import logger
-from sqlalchemy import select
+from sqlalchemy import all_, any_, select
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from fooddb.db import engine, food, food_name
@@ -37,15 +37,19 @@ def load_mt(dir: Path = MT_DIR) -> dict[str, int]:
     out = {}
     for f in sorted(dir.glob("*.tsv")):
         lang, rows = f.stem, _tsv(f)
+        ids = list(rows)
         with engine().begin() as conn:
             # A TSV may still name a record a refetch retired (or one a smaller database never had):
-            # its row is not loadable, and a retired record's rows cascade away anyway.
-            live = set(conn.execute(select(food.c.id).where(food.c.id.in_(list(rows)))).scalars())
+            # its row is not loadable, and a retired record's rows cascade away anyway. The id list
+            # goes as one array parameter — a per-id IN list and the row insert below both scale
+            # past Postgres' 65,535-parameter statement limit near 13k names.
+            live = set(conn.execute(select(food.c.id).where(food.c.id == any_(ids))).scalars())
             conn.execute(food_name.delete().where(food_name.c.origin == "mt", food_name.c.lang == lang,
-                                                  ~food_name.c.food_id.in_(list(rows))))
-            if vals := [{"food_id": rid, "lang": lang, "name": n, "origin": "mt", "licence": MT_LICENCE}
-                        for rid, n in rows.items() if rid in live]:
-                stmt = pg_insert(food_name).values(vals)
+                                                  food_name.c.food_id != all_(ids)))
+            vals = [{"food_id": rid, "lang": lang, "name": n, "origin": "mt", "licence": MT_LICENCE}
+                    for rid, n in rows.items() if rid in live]
+            for i in range(0, len(vals), 2000):
+                stmt = pg_insert(food_name).values(vals[i:i + 2000])
                 conn.execute(stmt.on_conflict_do_update(
                     index_elements=["food_id", "lang", "origin"],
                     set_={"name": stmt.excluded.name, "licence": stmt.excluded.licence}))
