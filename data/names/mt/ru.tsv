@@ -4824,15 +4824,546 @@ fdc:172108	LEAN POCKETS, Ham N Cheddar	сэндвич с ветчиной и ч�
 fdc:172109	Lean Pockets, Meatballs & Mozzarella	сэндвич с фрикадельками и моцареллой Lean Pockets
 fdc:172110	Chili with beans, microwavable bowls	чили с фасолью для микроволновки
 fdc:172111	Chicken, nuggets, dark and white meat, precooked, frozen, not reheated	куриные наггетсы замороженные
-fdc:172121	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	говяжий стейк жареный
-fdc:172143	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	стейк рибай сырой
-fdc:172163	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw	стейк скерт (диафрагма) сырой
-fdc:172196	Milk, dry, nonfat, instant, without added vitamin A and vitamin D	молоко сухое обезжиренное
-fdc:172228	Ice cream cone, chocolate covered, with nuts, flavors other than chocolate	рожок мороженого в шоколаде с орехами
-fdc:172429	Peas, split, mature seeds, cooked, boiled, without salt	горох колотый варёный
-fdc:172528	Lamb, variety meats and by-products, heart, cooked, braised	сердце баранье тушёное
-fdc:172584	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, raw	бараньи отбивные из ноги сырые
-fdc:172621	Lamb, New Zealand, imported, tongue - swiss cut, raw	язык бараний сырой
+fdc:172112	Chicken, nuggets, white meat, precooked, frozen, not reheated	куриные наггетсы из белого мяса замороженные
+fdc:172113	Ravioli, cheese with tomato sauce, frozen, not prepared, includes regular and light entrees	равиоли с сыром в томатном соусе замороженные
+fdc:172114	Lasagna with meat sauce, frozen, prepared	лазанья с мясным соусом замороженная приготовленная
+fdc:172115	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled	стейк портерхаус с жиром жир 1/8" на гриле
+fdc:172116	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, raw	стейк портерхаус с жиром жир 1/8" сырой (селект)
+fdc:172117	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled	стейк портерхаус с жиром жир 1/8" на гриле (селект)
+fdc:172118	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк ти-бон с жиром жир 1/8" сырой
+fdc:172119	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк из огузка с жиром без внешнего жира на гриле (чойс)
+fdc:172120	Beef, round, knuckle, tip side, steak, separable lean and fat , trimmed to 0" fat, select, raw	стейк из огузка с жиром без внешнего жира сырой (селект)
+fdc:172121	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из огузка с жиром без внешнего жира на гриле (селект)
+fdc:172122	Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, choice, raw	медальон из лопатки с жиром без внешнего жира сырой (чойс)
+fdc:172123	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, raw	стейк из лопатки с жиром без внешнего жира сырой (селект)
+fdc:172124	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из лопатки с жиром без внешнего жира на гриле (селект)
+fdc:172125	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из верхней лопатки с жиром без внешнего жира сырой (чойс)
+fdc:172126	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк из верхней лопатки с жиром без внешнего жира на гриле (чойс)
+fdc:172127	Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из центра огузка с жиром без внешнего жира на гриле (селект)
+fdc:172128	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из нижнего огузка с жиром без внешнего жира сырой (чойс)
+fdc:172129	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк из нижнего огузка с жиром без внешнего жира на гриле (чойс)
+fdc:172130	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, raw	стейк из нижнего огузка с жиром без внешнего жира сырой (селект)
+fdc:172131	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк из огузка с жиром без внешнего жира на гриле
+fdc:172132	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк из лопатки с жиром без внешнего жира сырой
+fdc:172133	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк из лопатки с жиром без внешнего жира на гриле
+fdc:172134	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк из верхней лопатки с жиром без внешнего жира сырой
+fdc:172135	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк из нижнего огузка с жиром без внешнего жира на гриле
+fdc:172136	Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	медальон из лопатки с жиром без внешнего жира на гриле (селект)
+fdc:172137	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, choice, raw	стейк из внутренней пашины без кости постный без внешнего жира сырой (чойс)
+fdc:172138	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк из внутренней пашины без кости постный без внешнего жира на гриле (селект)
+fdc:172139	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, raw	стейк из внутренней пашины без кости постный без внешнего жира сырой (селект)
+fdc:172140	Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк из наружной пашины без кости постный без внешнего жира на гриле
+fdc:172141	Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, select, raw	стейк из наружной пашины без кости постный без внешнего жира сырой (селект)
+fdc:172142	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк рибай без кости без кромки постный без внешнего жира на гриле
+fdc:172143	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	стейк рибай без кости без кромки постный без внешнего жира сырой
+fdc:172144	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк рибай без кости без кромки постный без внешнего жира на гриле (чойс)
+fdc:172145	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, all grades, raw	говяжьи рёбра на кости постные без внешнего жира сырые
+fdc:172146	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, cooked, braised	говяжьи рёбра на кости постные без внешнего жира тушёные (чойс)
+fdc:172147	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, raw	говяжьи рёбра на кости постные без внешнего жира сырые (чойс)
+fdc:172148	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, select, cooked, braised	говяжьи рёбра на кости постные без внешнего жира тушёные (селект)
+fdc:172149	Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое рибай на кости с кромкой с жиром жир 1/8" запечённое (селект)
+fdc:172150	Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое рибай на кости с кромкой с жиром жир 1/8" запечённое
+fdc:172151	Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говядина рибай на кости с кромкой с жиром жир 1/8" сырая
+fdc:172152	Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, raw	говядина рибай на кости с кромкой с жиром жир 1/8" сырая (чойс)
+fdc:172153	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое рибай без кости с кромкой с жиром жир 1/8" запечённое
+fdc:172154	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	жаркое рибай без кости с кромкой с жиром жир 1/8" запечённое (чойс)
+fdc:172155	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое рибай без кости с кромкой с жиром жир 1/8" запечённое (селект)
+fdc:172156	Beef, rib eye steak/roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говядина рибай без кости с кромкой с жиром жир 1/8" сырая
+fdc:172157	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из внутренней пашины без кости с жиром без внешнего жира на гриле (селект)
+fdc:172158	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк из внутренней пашины без кости с жиром без внешнего жира сырой
+fdc:172159	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из внутренней пашины без кости с жиром без внешнего жира сырой (чойс)
+fdc:172160	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, raw	стейк из внутренней пашины без кости с жиром без внешнего жира сырой (селект)
+fdc:172161	Beef, ground, unspecified fat content, cooked	говяжий фарш приготовленный
+fdc:172162	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из наружной пашины без кости с жиром без внешнего жира сырой (чойс)
+fdc:172163	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw	стейк из наружной пашины без кости с жиром без внешнего жира сырой (селект)
+fdc:172164	Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк рибай без кости без кромки с жиром без внешнего жира на гриле
+fdc:172165	Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк рибай без кости без кромки с жиром без внешнего жира на гриле (чойс)
+fdc:172166	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	говяжьи рёбра на кости с жиром без внешнего жира тушёные
+fdc:172167	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	говяжьи рёбра на кости с жиром без внешнего жира тушёные (чойс)
+fdc:172168	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, select, cooked, braised	говяжьи рёбра на кости с жиром без внешнего жира тушёные (селект)
+fdc:172169	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, raw	говяжьи рёбра на кости с жиром без внешнего жира сырые
+fdc:172170	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	стейк топ-серлоин без кости постный жир 1/8" на гриле
+fdc:172171	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled	стейк топ-серлоин без кости постный жир 1/8" на гриле (чойс)
+fdc:172172	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	стейк топ-серлоин без кости постный жир 1/8" на гриле (селект)
+fdc:172173	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, raw	стейк топ-серлоин без кости постный жир 1/8" сырой
+fdc:172174	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, raw	стейк топ-серлоин без кости постный жир 1/8" сырой (чойс)
+fdc:172175	Cheese, blue	сыр голубой
+fdc:172176	Cheese, brick	сыр брик
+fdc:172177	Cheese, brie	сыр бри
+fdc:172178	Cheese, camembert	сыр камамбер
+fdc:172179	Cheese, cottage, creamed, large or small curd	творог со сливками
+fdc:172180	Cheese, cottage, creamed, with fruit	творог со сливками и фруктами
+fdc:172181	Cheese, cottage, nonfat, uncreamed, dry, large or small curd	творог обезжиренный
+fdc:172182	Cheese, cottage, lowfat, 2% milkfat	творог нежирный 2%
+fdc:172183	Egg, white, raw, fresh	яичный белок сырой
+fdc:172184	Egg, yolk, raw, fresh	яичный желток сырой
+fdc:172185	Egg, whole, cooked, omelet	омлет
+fdc:172186	Egg, whole, cooked, poached	яйцо пашот
+fdc:172187	Egg, whole, cooked, scrambled	яичница-болтунья
+fdc:172188	Egg, whole, dried	яичный порошок
+fdc:172189	Egg, duck, whole, fresh, raw	яйцо утиное сырое
+fdc:172190	Egg, goose, whole, fresh, raw	яйцо гусиное сырое
+fdc:172191	Egg, quail, whole, fresh, raw	яйцо перепелиное сырое
+fdc:172192	Egg, turkey, whole, fresh, raw	яйцо индюшиное сырое
+fdc:172193	Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids, without added vitamin A	молоко 2% с сухими веществами без витамина A
+fdc:172194	Milk, canned, evaporated, with added vitamin A	молоко сгущённое с витамином A
+fdc:172195	Milk, dry, nonfat, regular, with added vitamin A and vitamin D	молоко сухое обезжиренное с витаминами A и D
+fdc:172196	Milk, dry, nonfat, instant, without added vitamin A and vitamin D	молоко сухое обезжиренное быстрорастворимое
+fdc:172197	Cheese, goat, hard type	сыр козий твёрдый
+fdc:172198	Cheese substitute, mozzarella	заменитель сыра моцарелла
+fdc:172199	Yogurt, Greek, 2% fat, mango, CHOBANI	йогурт греческий 2% манго Chobani
+fdc:172200	Cheese sauce, prepared from recipe	соус сырный
+fdc:172201	Cheese, mexican, queso anejo	сыр мексиканский аньехо
+fdc:172202	Egg, whole, raw, frozen, pasteurized (Includes foods for USDA's Food Distribution Program)	яйцо замороженное пастеризованное сырое
+fdc:172203	Egg, white, raw, frozen, pasteurized	яичный белок замороженный пастеризованный
+fdc:172204	Egg, white, dried	яичный белок сухой
+fdc:172205	Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D	молоко 2%
+fdc:172206	Parmesan cheese topping, fat free	сыр пармезан тертый обезжиренный
+fdc:172207	Cheese, cream, fat free	сыр сливочный обезжиренный
+fdc:172208	Yogurt, chocolate, nonfat milk	йогурт шоколадный обезжиренный
+fdc:172209	KRAFT CHEEZ WHIZ Pasteurized Process Cheese Sauce	соус сырный Cheez Whiz Kraft
+fdc:172210	KRAFT BREAKSTONE'S Reduced Fat Sour Cream	сметана пониженной жирности Breakstone's Kraft
+fdc:172211	KRAFT BREAKSTONE'S FREE Fat Free Sour Cream	сметана обезжиренная Breakstone's Kraft
+fdc:172212	Cream, half and half, fat free	сливки полужирные обезжиренные
+fdc:172213	Reddi Wip Fat Free Whipped Topping	взбитые сливки обезжиренные Reddi Wip
+fdc:172214	Cream substitute, flavored, powdered	заменитель сливок порошковый ароматизированный
+fdc:172215	Cheese, provolone, reduced fat	сыр проволоне пониженной жирности
+fdc:172216	Cheese, Mexican, blend, reduced fat	сыр мексиканский смесь пониженной жирности
+fdc:172217	Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D	молоко цельное 3,25%
+fdc:172218	Yogurt, fruit, lowfat, with low calorie sweetener, fortified with vitamin D	йогурт фруктовый нежирный с подсластителем и витамином D
+fdc:172219	Yogurt, vanilla, low fat, fortified with vitamin D	йогурт ванильный нежирный с витамином D
+fdc:172220	Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, fortified with vitamin D	йогурт ванильный или лимонный обезжиренный с подсластителем и витамином D
+fdc:172221	Yogurt, chocolate, nonfat milk, fortified with vitamin D	йогурт шоколадный обезжиренный с витамином D
+fdc:172222	Cheese, dry white, queso seco	сыр сухой белый кесо сексо
+fdc:172223	Cheese, fresh, queso fresco	сыр свежий кесо фреско
+fdc:172224	Cheese, white, queso blanco	сыр белый кесо бланко
+fdc:172225	Milk, buttermilk, fluid, whole	пахта цельная
+fdc:172226	Ice cream sandwich	мороженое-сэндвич
+fdc:172227	Ice cream cookie sandwich	мороженое-сэндвич в печенье
+fdc:172228	Ice cream cone, chocolate covered, with nuts, flavors other than chocolate	мороженое в стаканчике в шоколаде с орехами
+fdc:172229	Ice cream sandwich, made with light ice cream, vanilla	мороженое-сэндвич ванильное лёгкое
+fdc:172230	Ice cream sandwich, vanilla, light, no sugar added	мороженое-сэндвич ванильное лёгкое без сахара
+fdc:172231	Spices, turmeric, ground	куркума молотая
+fdc:172232	Basil, fresh	базилик свежий
+fdc:172233	Dill weed, fresh	укроп свежий
+fdc:172234	Mustard, prepared, yellow	горчица жёлтая
+fdc:172235	Vanilla extract, imitation, alcohol	экстракт ванили имитация на спирте
+fdc:172236	Vanilla extract, imitation, no alcohol	экстракт ванили имитация без спирта
+fdc:172237	Vinegar, distilled	уксус столовый
+fdc:172238	Capers, canned	каперсы консервированные
+fdc:172239	Spearmint, dried	мята курчавая сушёная
+fdc:172240	Vinegar, red wine	уксус винный красный
+fdc:172241	Vinegar, balsamic	уксус бальзамический
+fdc:172242	Seasoning mix, dry, sazon, coriander & annatto	приправа сасон с кориандром и аннато сухая
+fdc:172243	Seasoning mix, dry, taco, original	приправа тако сухая
+fdc:172244	Babyfood, meat, beef, junior	детское питание мясное говядина для старших
+fdc:172245	Babyfood, meat, veal, strained	детское питание мясное телятина протёртое
+fdc:172246	Babyfood, meat, pork, strained	детское питание мясное свинина протёртое
+fdc:172247	Babyfood, meat, ham, strained	детское питание мясное ветчина протёртое
+fdc:172248	Babyfood, meat, chicken, junior	детское питание мясное курица для старших
+fdc:172249	Babyfood, meat, chicken sticks, junior	детское питание мясное куриные палочки для старших
+fdc:172250	Babyfood, meat, turkey, strained	детское питание мясное индейка протёртое
+fdc:172251	Babyfood, meat, turkey, junior	детское питание мясное индейка для старших
+fdc:172252	Babyfood, finger snacks, GERBER, GRADUATES, PUFFS, apple and cinnamon	детские подушечки с яблоком и корицей Gerber Graduates
+fdc:172253	Babyfood, water, bottled, GERBER, without added fluoride	вода детская Gerber без фтора
+fdc:172254	Babyfood, GERBER, 3rd Foods, apple, mango and kiwi	детское питание яблоко манго и киви Gerber
+fdc:172255	Babyfood, tropical fruit medley	детское питание фруктовая смесь тропическая
+fdc:172256	Babyfood, dinner, vegetables and dumplings and beef, strained	детский обед овощи клецки и говядина протёртый
+fdc:172257	Babyfood, ravioli, cheese filled, with tomato sauce	детские равиоли с сыром в томатном соусе
+fdc:172258	Babyfood, dinner, beef noodle, strained	детский обед говядина с лапшой протёртый
+fdc:172259	Babyfood, macaroni and cheese, toddler	детские макароны с сыром
+fdc:172260	Babyfood, dinner, beef and rice, toddler	детский обед говядина с рисом
+fdc:172261	Babyfood, dinner, beef with vegetables	детский обед говядина с овощами
+fdc:172262	Babyfood, dinner, vegetables and lamb, junior	детский обед овощи с бараниной для старших
+fdc:172263	Babyfood, dinner, chicken noodle, strained	детский обед курица с лапшой протёртый
+fdc:172264	Babyfood, dinner, chicken noodle, junior	детский обед курица с лапшой для старших
+fdc:172265	Babyfood, dinner, vegetables, noodles and chicken, junior	детский обед овощи лапша и курица для старших
+fdc:172266	Babyfood, dinner, pasta with vegetables	детский обед паста с овощами
+fdc:172267	Babyfood, dinner, vegetables and noodles and turkey, strained	детский обед овощи лапша и индейка протёртый
+fdc:172268	Babyfood, dinner, vegetables and noodles and turkey, junior	детский обед овощи лапша и индейка для старших
+fdc:172269	Babyfood, dinner, turkey and rice, strained	детский обед индейка с рисом протёртый
+fdc:172270	Babyfood, dinner, macaroni and cheese, junior	детский обед макароны с сыром для старших
+fdc:172271	Babyfood, vegetables, green beans, strained	детское питание овощное стручковая фасоль протёртая
+fdc:172272	Babyfood, vegetables, green beans, junior	детское питание овощное стручковая фасоль для старших
+fdc:172273	Babyfood, green beans, dices, toddler	детское питание стручковая фасоль кубиками
+fdc:172274	Babyfood, vegetables, squash, strained	детское питание овощное кабачок протёртый
+fdc:172275	Babyfood, vegetables, squash, junior	детское питание овощное кабачок для старших
+fdc:172276	Babyfood, vegetables, sweet potatoes strained	детское питание овощное батат протёртый
+fdc:172277	Babyfood, vegetables, sweet potatoes, junior	детское питание овощное батат для старших
+fdc:172278	Babyfood, fruit, applesauce, junior	детское питание фруктовое яблочное пюре для старших
+fdc:172279	Babyfood, fruit, apricot with tapioca, strained	детское питание фруктовое абрикос с тапиокой протёртое
+fdc:172280	Babyfood, vegetables, corn, creamed, strained	детское питание овощное кукуруза сливочная протёртая
+fdc:172281	Babyfood, dinner, mixed vegetable, junior	детский обед овощное ассорти для старших
+fdc:172282	Babyfood, fruit, bananas with tapioca, junior	детское питание фруктовое банан с тапиокой для старших
+fdc:172283	Babyfood, vegetables, mix vegetables junior	детское питание овощное ассорти для старших
+fdc:172284	Babyfood, vegetables, garden vegetable, strained	детское питание овощное огородное ассорти протёртое
+fdc:172285	Babyfood, plums, bananas and rice, strained	детское питание слива банан и рис протёртое
+fdc:172286	Babyfood, dinner, turkey, rice, and vegetables, toddler	детский обед индейка рис и овощи
+fdc:172287	Babyfood, dinner, apples and chicken, strained	детский обед яблоко и курица протёртый
+fdc:172288	Babyfood, dinner, broccoli and chicken, junior	детский обед брокколи и курица для старших
+fdc:172289	Infant formula, MEAD JOHNSON, Enfamil Premature High Protein 24 Calories, ready to feed, with ARA and DHA	детская смесь Enfamil для недоношенных с высоким белком 24 ккал готовая
+fdc:172290	Infant formula, MEAD JOHNSON, Enfamil Premature 30 Calories, ready to feed, with ARA and DHA	детская смесь Enfamil для недоношенных 30 ккал готовая
+fdc:172291	Infant formula, MEAD JOHNSON, Enfamil for Supplementing, powder, with ARA and DHA, not reconstituted	детская смесь Enfamil для докорма порошок
+fdc:172292	Infant formula, MEAD JOHNSON, Enfamil Reguline Powder, with ARA and DHA, not reconstituted	детская смесь Enfamil Reguline порошок
+fdc:172293	Infant formula, MEAD JOHNSON, Pregestimil 24 Calories, ready to feed, with ARA and DHA	детская смесь Pregestimil 24 ккал готовая
+fdc:172294	Toddler drink, MEAD JOHNSON, PurAmino Toddler Powder, with ARA and DHA, not reconstituted	напиток детский PurAmino порошок
+fdc:172295	Infant formula, MEAD JOHNSON, Enfamil for Supplementing, ready to feed, with ARA and DHA	детская смесь Enfamil для докорма готовая
+fdc:172296	Babyfood, cereal, barley, prepared with whole milk	детская каша ячневая на цельном молоке
+fdc:172297	Babyfood, cereal, oatmeal, with bananas, prepared with whole milk	детская каша овсяная с бананом на цельном молоке
+fdc:172298	Babyfood, cereal, oatmeal, with honey, prepared with whole milk	детская каша овсяная с мёдом на цельном молоке
+fdc:172299	Babyfood, cereal, rice, prepared with whole milk	детская каша рисовая на цельном молоке
+fdc:172300	Babyfood, cereal, rice, with honey, prepared with whole milk	детская каша рисовая с мёдом на цельном молоке
+fdc:172301	Infant formula, MEAD JOHNSON, ENFAMIL, with iron, powder	детская смесь Enfamil с железом порошок
+fdc:172302	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, with iron, powder, with ARA and DHA	детская смесь Enfamil Infant с железом порошок
+fdc:172303	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, with iron, liquid concentrate, with ARA and DHA, reconstituted	детская смесь Enfamil Infant с железом разведённая
+fdc:172304	Infant formula, MEAD JOHNSON, ENFAMIL LIPIL, with iron, ready-to-feed, with ARA and DHA	детская смесь Enfamil Lipil с железом готовая
+fdc:172305	Infant formula, MEAD JOHNSON, ENFAMIL, LIPIL, low iron, ready to feed, with ARA and DHA	детская смесь Enfamil Lipil с пониженным железом готовая
+fdc:172306	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, ready-to-feed, with ARA and DHA	детская смесь Enfamil Infant готовая
+fdc:172307	Infant formula, ABBOTT NUTRITION, SIMILAC, PM 60/40, powder not reconstituted	детская смесь Similac PM 60/40 порошок
+fdc:172308	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN WITH LGG, with iron, powder, not reconstituted, with ARA and DHA	детская смесь Enfamil Nutramigen с LGG с железом порошок
+fdc:172309	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN, with iron, ready-to-feed, with ARA and DHA	детская смесь Enfamil Nutramigen с железом готовая
+fdc:172310	Infant formula, ABBOTT NUTRITION, SIMILAC, ALIMENTUM, with iron, ready-to-feed	детская смесь Similac Alimentum с железом готовая
+fdc:172311	Infant formula, MEAD JOHNSON, ENFAMIL, ENFACARE, with iron, powder, with ARA and DHA	детская смесь Enfamil EnfaCare с железом порошок
+fdc:172312	Infant formula, ABBOTT NUTRITION, SIMILAC, with iron, liquid concentrate, not reconstituted	детская смесь Similac с железом концентрат
+fdc:172313	Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed	напиток детский PediaSure готовый
+fdc:172314	Infant formula, MEAD JOHNSON, NEXT STEP, PROSOBEE LIPIL, powder, with ARA and DHA	детская смесь Prosobee Lipil порошок
+fdc:172315	Infant formula, MEAD JOHNSON, NEXT STEP, PROSOBEE, LIPIL, ready to feed, with ARA and DHA	детская смесь Prosobee Lipil готовая
+fdc:172316	Infant formula, NESTLE, GOOD START SOY, with ARA and DHA, powder	детская смесь Good Start Soy порошок
+fdc:172317	Babyfood, corn and sweet potatoes, strained	детское питание кукуруза и батат протёртое
+fdc:172318	Infant formula, ABBOTT NUTRITION, SIMILAC, ALIMENTUM, ADVANCE, ready-to-feed, with ARA and DHA	детская смесь Similac Alimentum Advance готовая
+fdc:172319	Infant formula, PBM PRODUCTS, store brand, ready-to-feed	детская смесь магазинная готовая
+fdc:172320	Infant formula, PBM PRODUCTS, store brand, liquid concentrate, not reconstituted	детская смесь магазинная концентрат
+fdc:172321	Infant formula, MEAD JOHNSON, ENFAMIL, AR, ready-to-feed, with ARA and DHA	детская смесь Enfamil AR готовая
+fdc:172322	Infant formula, MEAD JOHNSON, ENFAMIL, AR, powder, with ARA and DHA	детская смесь Enfamil AR порошок
+fdc:172323	Infant formula, ABBOTT NUTRITION, SIMILAC NEOSURE, ready-to-feed, with ARA and DHA	детская смесь Similac Neosure готовая
+fdc:172324	Infant formula, ABBOTT NUTRITION, SIMILAC, NEOSURE, powder, with ARA and DHA	детская смесь Similac Neosure порошок
+fdc:172325	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE (LACTOSE FREE) ready-to-feed, with ARA and DHA	детская смесь Similac Sensitive безлактозная готовая
+fdc:172326	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, liquid concentrate, not reconstituted	детская смесь Similac Advance с железом концентрат
+fdc:172327	Shortening, household, lard and vegetable oil	кухонный жир из сала и растительного масла
+fdc:172328	Oil, sunflower, linoleic, (partially hydrogenated)	масло подсолнечное линолевое частично гидрогенизированное
+fdc:172329	Shortening bread, soybean (hydrogenated) and cottonseed	жир для хлеба соевый и хлопковый
+fdc:172330	Shortening cake mix, soybean (hydrogenated) and cottonseed (hydrogenated)	жир для выпечки соевый и хлопковый
+fdc:172331	Shortening frying (heavy duty), palm (hydrogenated)	жир для жарки пальмовый
+fdc:172332	Shortening household soybean (hydrogenated) and palm	жир кухонный соево-пальмовый
+fdc:172333	Shortening frying (heavy duty), soybean (hydrogenated), linoleic (less than 1%)	жир для жарки соевый
+fdc:172334	Shortening, confectionery, fractionated palm	жир кондитерский пальмовый фракционированный
+fdc:172335	Oil, nutmeg butter	масло мускатное
+fdc:172336	Oil, canola	масло рапсовое
+fdc:172337	Oil, mustard	масло горчичное
+fdc:172338	Oil, sunflower, high oleic (70% and over)	масло подсолнечное высокоолеиновое
+fdc:172339	Margarine-like, margarine-butter blend, soybean oil and butter	смесь маргарина и сливочного масла
+fdc:172340	Fish oil, herring	жир сельдевый
+fdc:172341	Fish oil, menhaden	жир менхаденовый
+fdc:172342	Fish oil, menhaden, fully hydrogenated	жир менхаденовый гидрогенизированный
+fdc:172343	Fish oil, salmon	жир лососёвый
+fdc:172344	Butter, light, stick, without salt	масло сливочное лёгкое без соли
+fdc:172345	Animal fat, bacon grease	жир топлёный беконный
+fdc:172346	Margarine, regular, 80% fat, composite, stick, with salt	маргарин 80% с солью брусок
+fdc:172347	Margarine, regular, 80% fat, composite, tub, with salt	маргарин 80% с солью в коробочке
+fdc:172348	Margarine-like, vegetable oil spread, 60% fat, stick, with salt	спред растительный 60% с солью
+fdc:172349	Margarine, regular, 80% fat, composite, tub, without salt	маргарин 80% без соли в коробочке
+fdc:172350	Margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, without salt	спред растительный 60% без соли
+fdc:172351	Margarine-like, vegetable oil spread, fat free, liquid, with salt	спред растительный обезжиренный жидкий с солью
+fdc:172352	Margarine-like spread with yogurt, 70% fat, stick, with salt	спред с йогуртом 70% с солью
+fdc:172353	Margarine-like, vegetable oil spread, fat-free, tub	спред растительный обезжиренный в коробочке
+fdc:172354	Margarine-like, vegetable oil spread, 20% fat, with salt	спред растительный 20% с солью
+fdc:172355	Margarine-like, vegetable oil spread, 20% fat, without salt	спред растительный 20% без соли
+fdc:172356	Salad dressing, thousand island dressing, fat-free	соус тысяча островов обезжиренный
+fdc:172357	Oil, industrial, mid-oleic, sunflower	масло подсолнечное среднеолеиновое промышленное
+fdc:172358	Oil, industrial, canola with antifoaming agent, principal uses salads, woks and light frying	масло рапсовое промышленное для салатов и жарки
+fdc:172359	Oil, industrial, canola for salads, woks and light frying	масло рапсовое промышленное для салатов и вока
+fdc:172360	Oil, industrial, canola (partially hydrogenated) oil for deep fat frying	масло рапсовое частично гидрогенизированное для фритюра
+fdc:172361	Oil, industrial, soy (partially hydrogenated), multiuse for non-dairy butter flavor	масло соевое частично гидрогенизированное универсальное
+fdc:172362	Oil, industrial, soy ( partially hydrogenated), all purpose	масло соевое частично гидрогенизированное
+fdc:172363	Oil, industrial, soy (partially hydrogenated ) and soy (winterized), pourable clear fry	масло соевое гидрогенизированное и винтеризованное для жарки
+fdc:172364	Oil, industrial, soy (partially hydrogenated)  and cottonseed, principal use as a tortilla shortening	масло соево-хлопковое гидрогенизированное для тортилий
+fdc:172365	Oil, industrial, coconut, confection fat, typical basis for ice cream coatings	масло кокосовое кондитерское для глазури мороженого
+fdc:172366	Oil, industrial, palm kernel (hydrogenated) , used for whipped toppings, non-dairy	масло пальмоядровое гидрогенизированное для топпингов
+fdc:172367	Oil, industrial, coconut (hydrogenated), used for whipped toppings and coffee whiteners	масло кокосовое гидрогенизированное для топпингов и сливок
+fdc:172368	Oil, industrial, palm and palm kernel, filling fat (non-hydrogenated)	масло пальмовое и пальмоядровое для начинок
+fdc:172369	Margarine, industrial, soy and partially hydrogenated soy oil, use for baking, sauces and candy	маргарин промышленный соевый для выпечки и соусов
+fdc:172370	Oil, vegetable, soybean, refined	масло соевое рафинированное
+fdc:172371	Margarine-like spread, SMART BALANCE Regular Buttery Spread with flax oil	спред Smart Balance с льняным маслом
+fdc:172372	Margarine-like spread, SMART BALANCE Light Buttery Spread	спред лёгкий Smart Balance
+fdc:172373	Chicken, broilers or fryers, drumstick, meat and skin, raw	куриная голень с кожей сырая
+fdc:172374	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, batter	куриная голень с кожей жареная в кляре
+fdc:172375	Chicken, broilers or fryers, drumstick, meat only, cooked, fried	куриная голень без кожи жареная
+fdc:172376	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted	куриная голень без кожи запечённая
+fdc:172377	Chicken, broilers or fryers, drumstick, meat only, cooked, stewed	куриная голень без кожи тушёная
+fdc:172378	Chicken, broilers or fryers, leg, meat and skin, raw	куриная нога с кожей сырая
+fdc:172379	Chicken, broilers or fryers, leg, meat only, cooked, fried	куриная нога без кожи жареная
+fdc:172380	Chicken, broilers or fryers, leg, meat only, cooked, roasted	куриная нога без кожи запечённая
+fdc:172381	Chicken, broilers or fryers, leg, meat only, cooked, stewed	куриная нога без кожи тушёная
+fdc:172382	Chicken, broilers or fryers, neck, meat and skin, raw	куриная шея с кожей сырая
+fdc:172383	Chicken, broilers or fryers, neck, meat only, cooked, fried	куриная шея без кожи жареная
+fdc:172384	Chicken, broilers or fryers, neck, meat only, cooked, simmered	куриная шея без кожи варёная
+fdc:172385	Chicken, broilers or fryers, thigh, meat and skin, raw	куриное бедро с кожей сырое
+fdc:172386	Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, batter	куриное бедро с кожей жареное в кляре
+fdc:172387	Chicken, broilers or fryers, thigh, meat only, cooked, fried	куриное бедро без кожи жареное
+fdc:172388	Chicken, broilers or fryers, thigh, meat only, cooked, roasted	куриное бедро без кожи запечённое
+fdc:172389	Chicken, broilers or fryers, thigh, meat only, cooked, stewed	куриное бедро без кожи тушёное
+fdc:172390	Chicken, broilers or fryers, wing, meat and skin, raw	куриное крыло с кожей сырое
+fdc:172391	Chicken, broilers or fryers, wing, meat only, cooked, fried	куриное крыло без кожи жареное
+fdc:172392	Goose, domesticated, meat and skin, cooked, roasted	гусь с кожей запечённый
+fdc:172393	Goose, domesticated, meat only, raw	гусь без кожи сырой
+fdc:172394	Goose, domesticated, meat only, cooked, roasted	гусь без кожи запечённый
+fdc:172395	Goose, liver, raw	печень гусиная сырая
+fdc:172396	Guinea hen, meat and skin, raw	цесарка с кожей сырая
+fdc:172397	Pheasant, leg, meat only, raw	фазан нога без кожи сырая
+fdc:172398	Quail, meat and skin, raw	перепел с кожей сырой
+fdc:172399	Quail, meat only, raw	перепел без кожи сырой
+fdc:172400	Lentils, raw	чечевица сырая
+fdc:172401	Lentils, mature seeds, cooked, boiled, without salt	чечевица варёная без соли
+fdc:172402	Lima beans, thin seeded (baby), mature seeds, cooked, boiled, without salt	фасоль лима мелкосемянная варёная без соли
+fdc:172403	Lupins, mature seeds, raw	люпин сырой
+fdc:172404	Lupins, mature seeds, cooked, boiled, without salt	люпин варёный без соли
+fdc:172405	Mothbeans, mature seeds, raw	бобы мот сырые
+fdc:172406	Mothbeans, mature seeds, cooked, boiled, without salt	бобы мот варёные без соли
+fdc:172407	Mungo beans, mature seeds, cooked, boiled, without salt	бобы мунг варёные без соли
+fdc:172408	Peas, green, split, mature seeds, raw	горох зелёный колотый сырой
+fdc:172409	Peas, split, mature seeds, cooked, boiled, without salt	горох колотый варёный без соли
+fdc:172410	Peanuts, all types, raw	арахис сырой
+fdc:172411	Peanuts, spanish, oil-roasted, with salt	арахис испанский жареный в масле солёный
+fdc:172412	Peanuts, valencia, raw	арахис валенсия сырой
+fdc:172413	Peanuts, valencia, oil-roasted, with salt	арахис валенсия жареный в масле солёный
+fdc:172414	Peanuts, virginia, raw	арахис вирджиния сырой
+fdc:172415	Peanut flour, low fat	мука арахисовая обезжиренная
+fdc:172416	Pigeon peas (red gram), mature seeds, raw	кайенский горох сырой
+fdc:172417	Pigeon peas (red gram), mature seeds, cooked, boiled, without salt	кайенский горох варёный без соли
+fdc:172418	Refried beans, canned, traditional style	фасоль жареная консервированная
+fdc:172419	Bacon, meatless	бекон растительный
+fdc:172420	Soybeans, mature seeds, roasted, salted	соевые бобы жареные солёные
+fdc:172421	Soybeans, mature seeds, dry roasted	соевые бобы жареные сухие
+fdc:172422	Miso	мисо
+fdc:172423	Natto	натто
+fdc:172424	Soy flour, low-fat	мука соевая обезжиренная
+fdc:172425	Soy meal, defatted, raw	шрот соевый обезжиренный
+fdc:172426	Soymilk, original and vanilla, unfortified	молоко соевое и ванильное необогащённое
+fdc:172427	Soy protein concentrate, produced by alcohol extraction	соевый белковый концентрат
+fdc:172428	Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)	тофу твёрдый
+fdc:172429	Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)	тофу мягкий
+fdc:172430	Tofu, dried-frozen (koyadofu)	тофу сушёно-мороженый коядофу
+fdc:172431	Tofu, fried	тофу жареный
+fdc:172432	Okara	окара
+fdc:172433	Winged beans, mature seeds, cooked, boiled, without salt	бобы крылатые варёные без соли
+fdc:172434	Hummus, home prepared	хумус домашний
+fdc:172435	Falafel, home-prepared	фалафель домашний
+fdc:172436	Soymilk, original and vanilla, with added calcium, vitamins A and D	молоко соевое и ванильное с кальцием и витаминами A и D
+fdc:172437	Peanut spread, reduced sugar	паста арахисовая пониженного сахара
+fdc:172438	Peanut butter, smooth, reduced fat	паста арахисовая пониженной жирности
+fdc:172439	Peanut butter, smooth, vitamin and mineral fortified	паста арахисовая обогащённая витаминами
+fdc:172440	Peanut butter, chunky, vitamin and mineral fortified	паста арахисовая с кусочками обогащённая витаминами
+fdc:172441	MORI-NU, Tofu, silken, firm	тофу шёлковый твёрдый Mori-Nu
+fdc:172442	MORI-NU, Tofu, silken, extra firm	тофу шёлковый экстра твёрдый Mori-Nu
+fdc:172443	MORI-NU, Tofu, silken, lite firm	тофу шёлковый лёгкий твёрдый Mori-Nu
+fdc:172444	MORI-NU, Tofu, silken, lite extra firm	тофу шёлковый лёгкий экстра твёрдый Mori-Nu
+fdc:172445	Refried beans, canned, fat-free	фасоль жареная обезжиренная консервированная
+fdc:172446	Frijoles rojos volteados (Refried beans, red, canned)	фасоль красная жареная консервированная
+fdc:172447	Tempeh, cooked	темпе приготовленный
+fdc:172448	Vitasoy USA, Nasoya Lite Firm Tofu	тофу лёгкий твёрдый Nasoya Vitasoy
+fdc:172449	Peanut butter, chunk style, without salt	паста арахисовая с кусочками без соли
+fdc:172450	Peanut butter, smooth style, without salt	паста арахисовая без соли
+fdc:172451	Peanut butter with omega-3, creamy	паста арахисовая с омега-3
+fdc:172452	Pigeon peas (red gram), mature seeds, cooked, boiled, with salt	кайенский горох варёный с солью
+fdc:172453	Soy sauce made from soy and wheat (shoyu), low sodium	соевый соус с пониженным натрием
+fdc:172454	Soy sauce, reduced sodium, made from hydrolyzed vegetable protein	соевый соус с пониженным натрием из гидролизата
+fdc:172455	Tofu, raw, firm, prepared with calcium sulfate	тофу твёрдый сырой
+fdc:172456	Tofu, raw, regular, prepared with calcium sulfate	тофу обычный сырой
+fdc:172457	Winged beans, mature seeds, cooked, boiled, with salt	бобы крылатые варёные с солью
+fdc:172458	Veal, Australian, rib, rib roast, separable lean only, raw	телятина австралийская ребро постное сырое
+fdc:172459	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, raw	баранина смешанных отрубов с жиром жир 1/4" сырая (чойс)
+fdc:172460	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, cooked	баранина смешанных отрубов с жиром жир 1/4" приготовленная (чойс)
+fdc:172461	Lamb, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, raw	баранья голяшка передняя с жиром жир 1/4" сырая (чойс)
+fdc:172462	Lamb, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	баранья голяшка передняя с жиром жир 1/4" тушёная (чойс)
+fdc:172463	Lamb, foreshank, separable lean only, trimmed to 1/4" fat, choice, raw	баранья голяшка передняя постная жир 1/4" сырая (чойс)
+fdc:172464	Lamb, foreshank, separable lean only, trimmed to 1/4" fat, choice, cooked, braised	баранья голяшка передняя постная жир 1/4" тушёная (чойс)
+fdc:172465	Lamb, leg, shank half, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	баранья нога голяшечная часть с жиром жир 1/4" запечённая (чойс)
+fdc:172466	Lamb, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, raw	баранья нога голяшечная часть постная жир 1/4" сырая (чойс)
+fdc:172467	Lamb, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	баранья нога голяшечная часть постная жир 1/4" запечённая (чойс)
+fdc:172468	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/4" fat, choice, raw	баранья нога тазобедренная часть с жиром жир 1/4" сырая (чойс)
+fdc:172469	Lamb, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	баранья корейка с жиром жир 1/4" на гриле (чойс)
+fdc:172470	Lamb, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	баранья корейка с жиром жир 1/4" запечённая (чойс)
+fdc:172471	Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, raw	баранья корейка постная жир 1/4" сырая (чойс)
+fdc:172472	Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	баранья корейка постная жир 1/4" на гриле (чойс)
+fdc:172473	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, raw	бараньи рёбра постные жир 1/4" сырые (чойс)
+fdc:172474	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	бараньи рёбра постные жир 1/4" на гриле (чойс)
+fdc:172475	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	бараньи рёбра постные жир 1/4" запечённые (чойс)
+fdc:172476	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, raw	баранья лопатка целая с жиром жир 1/4" сырая (чойс)
+fdc:172477	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	баранья лопатка целая с жиром жир 1/4" тушёная (чойс)
+fdc:172478	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	баранья лопатка целая постная жир 1/4" на гриле (чойс)
+fdc:172479	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	баранья лопатка целая постная жир 1/4" запечённая (чойс)
+fdc:172480	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, raw	баранья лопатка рулет с жиром жир 1/4" сырой (чойс)
+fdc:172481	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	баранья лопатка рулет с жиром жир 1/4" тушёный (чойс)
+fdc:172482	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	баранья лопатка рулет постный жир 1/4" на гриле (чойс)
+fdc:172483	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	баранья лопатка рулет постный жир 1/4" запечённый (чойс)
+fdc:172484	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, raw	баранья лопатка остистая с жиром жир 1/4" сырая (чойс)
+fdc:172485	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	баранья лопатка остистая с жиром жир 1/4" тушёная (чойс)
+fdc:172486	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	баранья лопатка остистая постная жир 1/4" на гриле (чойс)
+fdc:172487	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	баранья лопатка остистая постная жир 1/4" запечённая (чойс)
+fdc:172488	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, raw	баранина кубиками для рагу постная жир 1/4" сырая
+fdc:172489	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, braised	баранина кубиками для рагу постная жир 1/4" тушёная
+fdc:172490	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, broiled	баранина кубиками для рагу постная жир 1/4" на гриле
+fdc:172491	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, raw	баранина новозеландская замороженная жир сырой
+fdc:172492	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, cooked	баранина новозеландская замороженная жир приготовленный
+fdc:172493	Lamb, New Zealand, imported, fore-shank, separable lean and fat, raw	баранья голяшка новозеландская с жиром сырая
+fdc:172494	Lamb, New Zealand, imported, fore-shank, separable lean and fat, cooked, braised	баранья голяшка новозеландская с жиром тушёная
+fdc:172495	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, raw	баранья отбивная из ноги на кости постная сырая
+fdc:172496	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean only, cooked, roasted	баранья нога новозеландская целая постная запечённая
+fdc:172497	Lamb, New Zealand, imported, loin chop, separable lean and fat, raw	баранья корейная отбивная новозеландская с жиром сырая
+fdc:172498	Game meat, muskrat, raw	мясо ондатры сырое
+fdc:172499	Game meat, muskrat, cooked, roasted	мясо ондатры запечённое
+fdc:172500	Game meat, opossum, cooked, roasted	мясо опоссума запечённое
+fdc:172501	Game meat, rabbit, domesticated, composite of cuts, raw	мясо кролика сырое
+fdc:172502	Game meat, rabbit, domesticated, composite of cuts, cooked, roasted	мясо кролика запечённое
+fdc:172503	Game meat, squirrel, raw	мясо белки сырое
+fdc:172504	Game meat, squirrel, cooked, roasted	мясо белки запечённое
+fdc:172505	Lamb, variety meats and by-products, brain, raw	мозг бараний сырой
+fdc:172506	Lamb, variety meats and by-products, brain, cooked, braised	мозг бараний тушёный
+fdc:172507	Lamb, variety meats and by-products, heart, raw	сердце баранье сырое
+fdc:172508	Lamb, variety meats and by-products, heart, cooked, braised	сердце баранье тушёное
+fdc:172509	Veal, variety meats and by-products, heart, raw	сердце телячье сырое
+fdc:172510	Veal, variety meats and by-products, heart, cooked, braised	сердце телячье тушёное
+fdc:172511	Lamb, variety meats and by-products, liver, raw	печень баранья сырая
+fdc:172512	Lamb, variety meats and by-products, liver, cooked, braised	печень баранья тушёная
+fdc:172513	Lamb, variety meats and by-products, liver, cooked, pan-fried	печень баранья жареная
+fdc:172514	Veal, variety meats and by-products, liver, raw	печень телячья сырая
+fdc:172515	Veal, variety meats and by-products, liver, cooked, braised	печень телячья тушёная
+fdc:172516	Veal, variety meats and by-products, lungs, cooked, braised	лёгкие телячьи тушёные
+fdc:172517	Lamb, variety meats and by-products, mechanically separated, raw	баранина механическая обвалка сырая
+fdc:172518	Lamb, variety meats and by-products, pancreas, raw	поджелудочная баранья сырая
+fdc:172519	Lamb, variety meats and by-products, pancreas, cooked, braised	поджелудочная баранья тушёная
+fdc:172520	Veal, variety meats and by-products, spleen, raw	селезёнка телячья сырая
+fdc:172521	Veal, variety meats and by-products, spleen, cooked, braised	селезёнка телячья тушёная
+fdc:172522	Veal, variety meats and by-products, thymus, raw	тимус телячий сырой
+fdc:172523	Veal, variety meats and by-products, thymus, cooked, braised	тимус телячий тушёный
+fdc:172524	Lamb, ground, cooked, broiled	бараний фарш на гриле
+fdc:172525	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, raw	баранина смешанных отрубов с жиром жир 1/8" сырая (чойс)
+fdc:172526	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked	баранина смешанных отрубов с жиром жир 1/8" приготовленная (чойс)
+fdc:172527	Lamb, foreshank, separable lean and fat, trimmed to 1/8" fat, choice, raw	баранья голяшка передняя с жиром жир 1/8" сырая (чойс)
+fdc:172528	Lamb, leg, shank half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	баранья нога голяшечная часть с жиром жир 1/8" запечённая (чойс)
+fdc:172529	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, raw	баранья нога тазобедренная часть с жиром жир 1/8" сырая (чойс)
+fdc:172530	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	баранья нога тазобедренная часть с жиром жир 1/8" запечённая (чойс)
+fdc:172531	Lamb, loin, separable lean and fat, trimmed to 1/8" fat, choice, raw	баранья корейка с жиром жир 1/8" сырая (чойс)
+fdc:172532	Lamb, rib, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	бараньи рёбра с жиром жир 1/8" запечённые (чойс)
+fdc:172533	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, raw	баранья лопатка целая с жиром жир 1/8" сырая (чойс)
+fdc:172534	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	баранья лопатка целая с жиром жир 1/8" тушёная (чойс)
+fdc:172535	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	баранья лопатка целая с жиром жир 1/8" на гриле (чойс)
+fdc:172536	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, raw	баранья лопатка остистая с жиром жир 1/8" сырая (чойс)
+fdc:172537	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	баранья лопатка остистая с жиром жир 1/8" тушёная (чойс)
+fdc:172538	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	баранья лопатка остистая с жиром жир 1/8" на гриле (чойс)
+fdc:172539	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	баранья лопатка остистая с жиром жир 1/8" запечённая (чойс)
+fdc:172540	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw	баранья нога новозеландская целая с жиром жир 1/8" сырая
+fdc:172541	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, cooked, roasted	баранья нога новозеландская целая с жиром жир 1/8" запечённая
+fdc:172542	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, raw	баранья корейка новозеландская с жиром жир 1/8" сырая
+fdc:172543	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	баранья корейка новозеландская с жиром жир 1/8" на гриле
+fdc:172544	Game meat, bison, top sirloin, separable lean only, trimmed to 0" fat, raw	бизон топ-серлоин постный без внешнего жира сырой
+fdc:172545	Game meat, bison, ribeye, separable lean only, trimmed to 0" fat, raw	бизон рибай постный без внешнего жира сырой
+fdc:172546	Game meat, bison, shoulder clod, separable lean only, trimmed to 0" fat, raw	бизон лопатка постная без внешнего жира сырая
+fdc:172547	Veal, breast, separable fat, cooked	телятина грудинка жир приготовленный
+fdc:172548	Veal, shank (fore and hind), separable lean and fat, raw	телятина голяшка с жиром сырая
+fdc:172549	Veal, shank (fore and hind), separable lean and fat, cooked, braised	телятина голяшка с жиром тушёная
+fdc:172550	Veal, shank (fore and hind), separable lean only, raw	телятина голяшка постная сырая
+fdc:172551	Veal, shank (fore and hind), separable lean only, cooked, braised	телятина голяшка постная тушёная
+fdc:172552	Lamb, Australian, imported, fresh, separable fat, raw	баранина австралийская жир сырой
+fdc:172553	Lamb, Australian, imported, fresh, separable fat, cooked	баранина австралийская жир приготовленный
+fdc:172554	Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, raw	баранья голяшка австралийская с жиром жир 1/8" сырая
+fdc:172555	Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised	баранья голяшка австралийская с жиром жир 1/8" тушёная
+fdc:172556	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, raw	баранья нога австралийская целая постная жир 1/8" сырая
+fdc:172557	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, cooked, roasted	баранья нога австралийская целая постная жир 1/8" запечённая
+fdc:172558	Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, raw	баранья нога голяшечная часть австралийская с жиром жир 1/8" сырая
+fdc:172559	Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	баранья нога голяшечная часть австралийская с жиром жир 1/8" запечённая
+fdc:172560	Lamb, Australian, imported, fresh, leg, shank half, separable lean only, trimmed to 1/8" fat, raw	баранья нога голяшечная часть австралийская постная жир 1/8" сырая
+fdc:172561	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted	баранья нога тазобедренная часть австралийская без кости постная жир 1/8" запечённая
+fdc:172562	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, raw	бараньи отбивные тазобедренные австралийские без кости с жиром жир 1/8" сырые
+fdc:172563	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	бараньи отбивные тазобедренные австралийские без кости с жиром жир 1/8" на гриле
+fdc:172564	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, raw	бараньи отбивные тазобедренные австралийские без кости постные жир 1/8" сырые
+fdc:172565	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, cooked, broiled	баранья нога центральный ломтик австралийская на кости постная жир 1/8" на гриле
+fdc:172566	Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, raw	баранья корейка австралийская с жиром жир 1/8" сырая
+fdc:172567	Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	баранья корейка австралийская с жиром жир 1/8" на гриле
+fdc:172568	Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, raw	баранья корейка австралийская постная жир 1/8" сырая
+fdc:172569	Lamb, Australian, imported, fresh, rib chop, frenched, bone-in, separable lean only, trimmed to 1/8" fat, cooked, grilled	баранья ребёрная отбивная австралийская на кости постная жир 1/8" на гриле
+fdc:172570	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, raw	баранья лопатка австралийская целая с жиром жир 1/8" сырая
+fdc:172571	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, cooked	баранья лопатка австралийская целая с жиром жир 1/8" приготовленная
+fdc:172572	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only,   trimmed to 1/8" fat, raw	баранья лопатка австралийская целая постная жир 1/8" сырая
+fdc:172573	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only, trimmed to 1/8" fat, cooked	баранья лопатка австралийская целая постная жир 1/8" приготовленная
+fdc:172574	Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, raw	баранья лопатка остистая австралийская с жиром жир 1/8" сырая
+fdc:172575	Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	баранья лопатка остистая австралийская с жиром жир 1/8" на гриле
+fdc:172576	Lamb, Australian, imported, fresh, shoulder, blade, separable lean only, trimmed to 1/8" fat, raw	баранья лопатка остистая австралийская постная жир 1/8" сырая
+fdc:172577	Lamb, Australian, imported, fresh, shoulder ,blade, separable lean only, trimmed to 1/8" fat, cooked, broiled	баранья лопатка остистая австралийская постная жир 1/8" на гриле
+fdc:172578	Game meat, bison, chuck, shoulder clod, separable lean only, raw	бизон лопатка постная сырая
+fdc:172579	Game meat, bison, ribeye, separable lean only, 1" steak, cooked, broiled	бизон рибай постный стейк 2,5 см на гриле
+fdc:172580	Game meat, bison, top round, separable lean only, 1" steak, cooked, broiled	бизон верхний огузок постный стейк 2,5 см на гриле
+fdc:172581	Game meat, bison, top round, separable lean only, 1" steak, raw	бизон верхний огузок постный стейк 2,5 см сырой
+fdc:172582	Game meat, deer, ground, raw	оленина фарш сырой
+fdc:172583	Game meat, deer, ground, cooked, pan-broiled	оленина фарш жареный
+fdc:172584	Game meat, deer, loin, separable lean only, 1" steak, cooked, broiled	оленина корейка постная стейк 2,5 см на гриле
+fdc:172585	Game meat, deer, shoulder clod, separable lean only, cooked, braised	оленина лопатка постная тушёная
+fdc:172586	Veal, Australian, shank, hind, bone-in, separable lean only, raw	телятина австралийская голяшка задняя на кости постная сырая
+fdc:172587	Veal, Australian, shank, hind, bone-in, separable lean and fat, raw	телятина австралийская голяшка задняя на кости с жиром сырая
+fdc:172588	Lamb, Australian, ground,  85% lean / 15% fat, raw	бараний фарш 85% постности сырой
+fdc:172589	Lamb, New Zealand, imported, Intermuscular fat, cooked	баранина новозеландская межмышечный жир приготовленный
+fdc:172590	Lamb, New Zealand, imported, breast, separable lean only, cooked, braised	баранья грудинка новозеландская постная тушёная
+fdc:172591	Lamb, New Zealand, imported, breast, separable lean only, raw	баранья грудинка новозеландская постная сырая
+fdc:172592	Lamb, New Zealand, imported, chump, boneless, separable lean only, cooked, fast roasted	баранина новозеландская огузок без кости постный быстро запечённый
+fdc:172593	Lamb, New Zealand, imported, subcutaneous fat, cooked	баранина новозеландская подкожный жир приготовленный
+fdc:172594	Lamb, New Zealand, imported, liver, cooked, soaked and fried	печень баранья новозеландская вымоченная жареная
+fdc:172595	Lamb, New Zealand, imported, liver, raw	печень баранья новозеландская сырая
+fdc:172596	Lamb, New Zealand, imported, ground lamb, cooked, braised	бараний фарш новозеландский тушёный
+fdc:172597	Lamb, New Zealand, imported, ground lamb, raw	бараний фарш новозеландский сырой
+fdc:172598	Lamb, New Zealand, imported, testes, cooked, soaked and fried	бараньи яички новозеландские вымоченные жареные
+fdc:172599	Lamb, New Zealand, imported, testes, raw	бараньи яички новозеландские сырые
+fdc:172600	Lamb, New Zealand, imported, tongue - swiss cut, cooked, soaked and simmered	язык бараний новозеландский вымоченный варёный
+fdc:172601	Lamb, New Zealand, imported, tongue - swiss cut, raw	язык бараний новозеландский сырой
+fdc:172602	Lamb, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried	баранья вырезка новозеландская постная жареная
+fdc:172603	Lamb, New Zealand, imported, tenderloin, separable lean only, raw	баранья вырезка новозеландская постная сырая
+fdc:172604	Lamb, New Zealand, imported, loin saddle, separable lean only, cooked, fast roasted	баранья седловина новозеландская постная быстро запечённая
+fdc:172605	Lamb, New Zealand, imported, loin saddle, separable lean only, raw	баранья седловина новозеландская постная сырая
+fdc:172606	Lamb, New Zealand, imported, neck chops, separable lean only, cooked, braised	бараньи шейные отбивные новозеландские постные тушёные
+fdc:172607	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, cooked, slow roasted	баранья лопатка новозеландская рулет без кости постная медленно запечённая
+fdc:172608	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, raw	баранья лопатка новозеландская рулет без кости постная сырая
+fdc:172609	Lamb, New Zealand, imported, rack - fully frenched, separable lean only, cooked, fast roasted	баранья корейка новозеландская постная быстро запечённая
+fdc:172610	Lamb, New Zealand, imported, flap, boneless, separable lean and fat, cooked, braised	бараний пашина новозеландский без кости с жиром тушёный
+fdc:172611	Lamb, New Zealand, imported, flap, boneless, separable lean and fat, raw	бараний пашина новозеландский без кости с жиром сырой
+fdc:172612	Lamb, New Zealand, imported, hind-shank, separable lean and fat, cooked, braised	баранья голяшка задняя новозеландская с жиром тушёная
+fdc:172613	Lamb, New Zealand, imported, hind-shank, separable lean and fat, raw	баранья голяшка задняя новозеландская с жиром сырая
+fdc:172614	Lamb, New Zealand, imported, loin, boneless, separable lean and fat, cooked, fast roasted	баранья корейка новозеландская без кости с жиром быстро запечённая
+fdc:172615	Lamb, New Zealand, imported, loin, boneless, separable lean and fat, raw	баранья корейка новозеландская без кости с жиром сырая
+fdc:172616	Lamb, New Zealand, imported, neck chops, separable lean and fat, cooked, braised	бараньи шейные отбивные новозеландские с жиром тушёные
+fdc:172617	Lamb, New Zealand, imported, neck chops, separable lean and fat, raw	бараньи шейные отбивные новозеландские с жиром сырые
+fdc:172618	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, cooked, slow roasted	баранья лопатка новозеландская рулет без кости с жиром медленно запечённая
+fdc:172619	Lamb, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried	баранья вырезка новозеландская с жиром жареная
+fdc:172620	Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, cooked, fast roasted	баранья корейка новозеландская с жиром быстро запечённая
+fdc:172621	Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, raw	баранья корейка новозеландская с жиром сырая
+fdc:172622	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, cooked, slow roasted	баранья нога новозеландская без кости с жиром медленно запечённая
+fdc:172623	Veal, leg, top round, cap off, cutlet, boneless, raw	телячий эскалоп из верхнего огузка без кости сырой
+fdc:172624	Veal, loin, chop, separable lean only, cooked, grilled	телячья корейная отбивная постная на гриле
+fdc:172625	Veal, shank, separable lean only, raw	телятина голяшка постная сырая
+fdc:172626	Veal, foreshank, osso buco, separable lean only, cooked, braised	телятина голяшка оссобуко постная тушёная
+fdc:172627	Veal, seam fat only, cooked	телятина прослойка жира приготовленная
+fdc:172628	Veal, shank, separable lean and fat, raw	телятина голяшка с жиром сырая
+fdc:172629	Veal, foreshank, osso buco, separable lean and fat, cooked, braised	телятина голяшка оссобуко с жиром тушёная
+fdc:172630	Veal, loin, chop, separable lean and fat, cooked, grilled	телячья корейная отбивная с жиром на гриле
+fdc:172631	Veal, shoulder, blade chop, separable lean and fat, cooked, grilled	телячья лопаточная отбивная с жиром на гриле
+fdc:172632	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean only, trimmed to 1/8" fat, raw	баранья вырезка австралийская без кости постная жир 1/8" сырая
+fdc:172633	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean only, trimmed to 1/8" fat, raw	баранья нога нижняя часть австралийская без кости постная жир 1/8" сырая
+fdc:172634	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, cooked, roasted	баранья нога австралийская на кости постная жир 1/8" запечённая
+fdc:172635	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, raw	баранья нога австралийская на кости постная жир 1/8" сырая
+fdc:172636	Lamb, Australian, imported, fresh, seam fat, cooked	баранина австралийская прослойка жира приготовленная
+fdc:172637	Lamb, Australian, imported, fresh, seam fat, raw	баранина австралийская прослойка жира сырая
+fdc:172638	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	баранья нога нижняя часть австралийская без кости с жиром жир 1/8" запечённая
+fdc:172639	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, raw	баранья нога нижняя часть австралийская без кости с жиром жир 1/8" сырая
+fdc:172640	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean and fat, trimmed to 1/8" fat, raw	баранья вырезка австралийская без кости с жиром жир 1/8" сырая
+fdc:172641	Lamb, Australian, imported, fresh, rib chop, frenched, denuded, bone-in, separable lean only, trimmed to 0" fat, cooked, grilled	баранья ребёрная отбивная австралийская зачищенная на кости постная без внешнего жира на гриле
+fdc:172642	Lamb, Australian, imported, fresh, rack, roast, frenched, denuded, bone-in, separable lean and fat, trimmed to 0" fat, cooked, roasted	баранья корейка австралийская зачищенная на кости с жиром без внешнего жира запечённая
+fdc:172643	Lamb, Australian, imported, fresh, rack, roast, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	баранья корейка австралийская на кости с жиром жир 1/8" запечённая
+fdc:172644	Bagels, cinnamon-raisin	бейглы с корицей и изюмом
+fdc:172645	Bagels, cinnamon-raisin, toasted	бейглы с корицей и изюмом тостовые
+fdc:172646	Bagels, oat bran	бейглы с овсяными отрубями
+fdc:172647	Biscuits, plain or buttermilk, frozen, baked	бисквиты замороженные запечённые
+fdc:172648	Biscuits, plain or buttermilk, refrigerated dough, higher fat	бисквиты из охлаждённого теста жирные
+fdc:172649	Biscuits, plain or buttermilk, refrigerated dough, higher fat, baked	бисквиты из охлаждённого теста жирные запечённые
+fdc:172650	Biscuits, plain or buttermilk, prepared from recipe	бисквиты домашние
+fdc:172651	Biscuits, mixed grain, refrigerated dough	бисквиты мультизерновые из охлаждённого теста
 fdc:172693	Bread, stuffing, cornbread, dry mix, prepared	начинка из кукурузного хлеба приготовленная
 fdc:172769	Muffins, oat bran	маффины с овсяными отрубями
 fdc:172865	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	белое мясо индейки запечённое с рассолом

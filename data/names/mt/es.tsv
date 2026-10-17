@@ -4824,15 +4824,546 @@ fdc:172108	LEAN POCKETS, Ham N Cheddar	sándwich de jamón y cheddar Lean Pocket
 fdc:172109	Lean Pockets, Meatballs & Mozzarella	sándwich de albóndigas y mozzarella Lean Pockets
 fdc:172110	Chili with beans, microwavable bowls	chili con judías para microondas
 fdc:172111	Chicken, nuggets, dark and white meat, precooked, frozen, not reheated	nuggets de pollo congelados
-fdc:172121	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de ternera a la parrilla
-fdc:172143	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	lomo alto de ternera crudo
-fdc:172163	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw	entraña de ternera cruda
-fdc:172196	Milk, dry, nonfat, instant, without added vitamin A and vitamin D	leche desnatada en polvo
-fdc:172228	Ice cream cone, chocolate covered, with nuts, flavors other than chocolate	cucurucho de helado con chocolate y frutos secos
-fdc:172429	Peas, split, mature seeds, cooked, boiled, without salt	guisantes partidos cocidos
-fdc:172528	Lamb, variety meats and by-products, heart, cooked, braised	corazón de cordero estofado
-fdc:172584	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, raw	chuletas de pierna de cordero crudas
-fdc:172621	Lamb, New Zealand, imported, tongue - swiss cut, raw	lengua de cordero cruda
+fdc:172112	Chicken, nuggets, white meat, precooked, frozen, not reheated	nuggets de pollo de carne blanca congelados
+fdc:172113	Ravioli, cheese with tomato sauce, frozen, not prepared, includes regular and light entrees	ravioli de queso con salsa de tomate congelados
+fdc:172114	Lasagna with meat sauce, frozen, prepared	lasaña con salsa de carne congelada preparada
+fdc:172115	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled	filete porterhouse de vacuno con grasa grasa 1/8" a la parrilla
+fdc:172116	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, raw	filete porterhouse de vacuno con grasa grasa 1/8" crudo (select)
+fdc:172117	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled	filete porterhouse de vacuno con grasa grasa 1/8" a la parrilla (select)
+fdc:172118	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	chuleta T-bone de vacuno con grasa grasa 1/8" cruda
+fdc:172119	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de cadera de vacuno con grasa sin grasa visible a la parrilla (choice)
+fdc:172120	Beef, round, knuckle, tip side, steak, separable lean and fat , trimmed to 0" fat, select, raw	filete de cadera de vacuno con grasa sin grasa visible crudo (select)
+fdc:172121	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de cadera de vacuno con grasa sin grasa visible a la parrilla (select)
+fdc:172122	Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, choice, raw	medallón de aguja de vacuno con grasa sin grasa visible crudo (choice)
+fdc:172123	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, raw	filete de aguja de vacuno con grasa sin grasa visible crudo (select)
+fdc:172124	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de aguja de vacuno con grasa sin grasa visible a la parrilla (select)
+fdc:172125	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, raw	filete de aguja alta de vacuno con grasa sin grasa visible crudo (choice)
+fdc:172126	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de aguja alta de vacuno con grasa sin grasa visible a la parrilla (choice)
+fdc:172127	Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de cadera central de vacuno con grasa sin grasa visible a la parrilla (select)
+fdc:172128	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, raw	filete de contra de vacuno con grasa sin grasa visible crudo (choice)
+fdc:172129	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de contra de vacuno con grasa sin grasa visible a la parrilla (choice)
+fdc:172130	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, raw	filete de contra de vacuno con grasa sin grasa visible crudo (select)
+fdc:172131	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de cadera de vacuno con grasa sin grasa visible a la parrilla
+fdc:172132	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de aguja de vacuno con grasa sin grasa visible crudo
+fdc:172133	Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de aguja de vacuno con grasa sin grasa visible a la parrilla
+fdc:172134	Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de aguja alta de vacuno con grasa sin grasa visible crudo
+fdc:172135	Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de contra de vacuno con grasa sin grasa visible a la parrilla
+fdc:172136	Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	medallón de aguja de vacuno con grasa sin grasa visible a la parrilla (select)
+fdc:172137	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, choice, raw	filete de falda interior de vacuno sin hueso magro sin grasa visible crudo (choice)
+fdc:172138	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, cooked, grilled	filete de falda interior de vacuno sin hueso magro sin grasa visible a la parrilla (select)
+fdc:172139	Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, raw	filete de falda interior de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:172140	Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	filete de falda exterior de vacuno sin hueso magro sin grasa visible a la parrilla
+fdc:172141	Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, select, raw	filete de falda exterior de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:172142	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	filete ribeye de vacuno sin hueso sin borde magro sin grasa visible a la parrilla
+fdc:172143	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	filete ribeye de vacuno sin hueso sin borde magro sin grasa visible crudo
+fdc:172144	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled	filete ribeye de vacuno sin hueso sin borde magro sin grasa visible a la parrilla (choice)
+fdc:172145	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, all grades, raw	costillas de vacuno con hueso magras sin grasa visible crudas
+fdc:172146	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, cooked, braised	costillas de vacuno con hueso magras sin grasa visible estofadas (choice)
+fdc:172147	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, raw	costillas de vacuno con hueso magras sin grasa visible crudas (choice)
+fdc:172148	Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, select, cooked, braised	costillas de vacuno con hueso magras sin grasa visible estofadas (select)
+fdc:172149	Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	asado ribeye de vacuno con hueso con borde con grasa grasa 1/8" asado (select)
+fdc:172150	Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	asado ribeye de vacuno con hueso con borde con grasa grasa 1/8" asado
+fdc:172151	Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw	vacuno ribeye con hueso con borde con grasa grasa 1/8" crudo
+fdc:172152	Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, raw	vacuno ribeye con hueso con borde con grasa grasa 1/8" crudo (choice)
+fdc:172153	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	asado ribeye de vacuno sin hueso con borde con grasa grasa 1/8" asado
+fdc:172154	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	asado ribeye de vacuno sin hueso con borde con grasa grasa 1/8" asado (choice)
+fdc:172155	Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	asado ribeye de vacuno sin hueso con borde con grasa grasa 1/8" asado (select)
+fdc:172156	Beef, rib eye steak/roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw	vacuno ribeye sin hueso con borde con grasa grasa 1/8" crudo
+fdc:172157	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de falda interior de vacuno sin hueso con grasa sin grasa visible a la parrilla (select)
+fdc:172158	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de falda interior de vacuno sin hueso con grasa sin grasa visible crudo
+fdc:172159	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, choice, raw	filete de falda interior de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:172160	Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, raw	filete de falda interior de vacuno sin hueso con grasa sin grasa visible crudo (select)
+fdc:172161	Beef, ground, unspecified fat content, cooked	carne picada de vacuno cocinada
+fdc:172162	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, choice, raw	filete de falda exterior de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:172163	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw	filete de falda exterior de vacuno sin hueso con grasa sin grasa visible crudo (select)
+fdc:172164	Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete ribeye de vacuno sin hueso sin borde con grasa sin grasa visible a la parrilla
+fdc:172165	Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete ribeye de vacuno sin hueso sin borde con grasa sin grasa visible a la parrilla (choice)
+fdc:172166	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	costillas de vacuno con hueso con grasa sin grasa visible estofadas
+fdc:172167	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	costillas de vacuno con hueso con grasa sin grasa visible estofadas (choice)
+fdc:172168	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, select, cooked, braised	costillas de vacuno con hueso con grasa sin grasa visible estofadas (select)
+fdc:172169	Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, raw	costillas de vacuno con hueso con grasa sin grasa visible crudas
+fdc:172170	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	filete de lomo bajo de vacuno sin hueso magro grasa 1/8" a la parrilla
+fdc:172171	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled	filete de lomo bajo de vacuno sin hueso magro grasa 1/8" a la parrilla (choice)
+fdc:172172	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	filete de lomo bajo de vacuno sin hueso magro grasa 1/8" a la parrilla (select)
+fdc:172173	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, raw	filete de lomo bajo de vacuno sin hueso magro grasa 1/8" crudo
+fdc:172174	Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, raw	filete de lomo bajo de vacuno sin hueso magro grasa 1/8" crudo (choice)
+fdc:172175	Cheese, blue	queso azul
+fdc:172176	Cheese, brick	queso brick
+fdc:172177	Cheese, brie	queso brie
+fdc:172178	Cheese, camembert	queso camembert
+fdc:172179	Cheese, cottage, creamed, large or small curd	requesón con nata
+fdc:172180	Cheese, cottage, creamed, with fruit	requesón con nata y fruta
+fdc:172181	Cheese, cottage, nonfat, uncreamed, dry, large or small curd	requesón desnatado
+fdc:172182	Cheese, cottage, lowfat, 2% milkfat	requesón bajo en grasa 2%
+fdc:172183	Egg, white, raw, fresh	clara de huevo cruda
+fdc:172184	Egg, yolk, raw, fresh	yema de huevo cruda
+fdc:172185	Egg, whole, cooked, omelet	tortilla francesa
+fdc:172186	Egg, whole, cooked, poached	huevo escalfado
+fdc:172187	Egg, whole, cooked, scrambled	huevo revuelto
+fdc:172188	Egg, whole, dried	huevo en polvo
+fdc:172189	Egg, duck, whole, fresh, raw	huevo de pato crudo
+fdc:172190	Egg, goose, whole, fresh, raw	huevo de oca crudo
+fdc:172191	Egg, quail, whole, fresh, raw	huevo de codorniz crudo
+fdc:172192	Egg, turkey, whole, fresh, raw	huevo de pavo crudo
+fdc:172193	Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids, without added vitamin A	leche semidesnatada 2% con sólidos desnatados sin vitamina A
+fdc:172194	Milk, canned, evaporated, with added vitamin A	leche evaporada con vitamina A
+fdc:172195	Milk, dry, nonfat, regular, with added vitamin A and vitamin D	leche en polvo desnatada con vitaminas A y D
+fdc:172196	Milk, dry, nonfat, instant, without added vitamin A and vitamin D	leche en polvo desnatada instantánea
+fdc:172197	Cheese, goat, hard type	queso de cabra curado
+fdc:172198	Cheese substitute, mozzarella	sucedáneo de mozzarella
+fdc:172199	Yogurt, Greek, 2% fat, mango, CHOBANI	yogur griego 2% de mango Chobani
+fdc:172200	Cheese sauce, prepared from recipe	salsa de queso casera
+fdc:172201	Cheese, mexican, queso anejo	queso añejo mexicano
+fdc:172202	Egg, whole, raw, frozen, pasteurized (Includes foods for USDA's Food Distribution Program)	huevo congelado pasteurizado crudo
+fdc:172203	Egg, white, raw, frozen, pasteurized	clara de huevo congelada pasteurizada
+fdc:172204	Egg, white, dried	clara de huevo en polvo
+fdc:172205	Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D	leche semidesnatada 2%
+fdc:172206	Parmesan cheese topping, fat free	queso parmesano rallado sin grasa
+fdc:172207	Cheese, cream, fat free	queso crema sin grasa
+fdc:172208	Yogurt, chocolate, nonfat milk	yogur de chocolate desnatado
+fdc:172209	KRAFT CHEEZ WHIZ Pasteurized Process Cheese Sauce	salsa de queso Cheez Whiz Kraft
+fdc:172210	KRAFT BREAKSTONE'S Reduced Fat Sour Cream	nata agria reducida en grasa Breakstone's Kraft
+fdc:172211	KRAFT BREAKSTONE'S FREE Fat Free Sour Cream	nata agria sin grasa Breakstone's Kraft
+fdc:172212	Cream, half and half, fat free	nata para café sin grasa
+fdc:172213	Reddi Wip Fat Free Whipped Topping	nata montada sin grasa Reddi Wip
+fdc:172214	Cream substitute, flavored, powdered	sucedáneo de nata en polvo saborizado
+fdc:172215	Cheese, provolone, reduced fat	queso provolone reducido en grasa
+fdc:172216	Cheese, Mexican, blend, reduced fat	queso mexicano mezcla reducido en grasa
+fdc:172217	Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D	leche entera 3,25%
+fdc:172218	Yogurt, fruit, lowfat, with low calorie sweetener, fortified with vitamin D	yogur de fruta bajo en grasa con edulcorante y vitamina D
+fdc:172219	Yogurt, vanilla, low fat, fortified with vitamin D	yogur de vainilla bajo en grasa con vitamina D
+fdc:172220	Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, fortified with vitamin D	yogur de vainilla o limón desnatado con edulcorante y vitamina D
+fdc:172221	Yogurt, chocolate, nonfat milk, fortified with vitamin D	yogur de chocolate desnatado con vitamina D
+fdc:172222	Cheese, dry white, queso seco	queso seco mexicano
+fdc:172223	Cheese, fresh, queso fresco	queso fresco mexicano
+fdc:172224	Cheese, white, queso blanco	queso blanco
+fdc:172225	Milk, buttermilk, fluid, whole	suero de leche entero
+fdc:172226	Ice cream sandwich	sándwich de helado
+fdc:172227	Ice cream cookie sandwich	sándwich de helado con galleta
+fdc:172228	Ice cream cone, chocolate covered, with nuts, flavors other than chocolate	cono de helado cubierto de chocolate con frutos secos
+fdc:172229	Ice cream sandwich, made with light ice cream, vanilla	sándwich de helado de vainilla ligero
+fdc:172230	Ice cream sandwich, vanilla, light, no sugar added	sándwich de helado de vainilla ligero sin azúcar
+fdc:172231	Spices, turmeric, ground	cúrcuma molida
+fdc:172232	Basil, fresh	albahaca fresca
+fdc:172233	Dill weed, fresh	eneldo fresco
+fdc:172234	Mustard, prepared, yellow	mostaza amarilla
+fdc:172235	Vanilla extract, imitation, alcohol	extracto de vainilla de imitación con alcohol
+fdc:172236	Vanilla extract, imitation, no alcohol	extracto de vainilla de imitación sin alcohol
+fdc:172237	Vinegar, distilled	vinagre blanco
+fdc:172238	Capers, canned	alcaparras en conserva
+fdc:172239	Spearmint, dried	menta verde seca
+fdc:172240	Vinegar, red wine	vinagre de vino tinto
+fdc:172241	Vinegar, balsamic	vinagre balsámico
+fdc:172242	Seasoning mix, dry, sazon, coriander & annatto	sazón con cilantro y achiote en seco
+fdc:172243	Seasoning mix, dry, taco, original	sazonador de tacos en seco
+fdc:172244	Babyfood, meat, beef, junior	tarrito de vacuno infantil
+fdc:172245	Babyfood, meat, veal, strained	tarrito de ternera triturado
+fdc:172246	Babyfood, meat, pork, strained	tarrito de cerdo triturado
+fdc:172247	Babyfood, meat, ham, strained	tarrito de jamón triturado
+fdc:172248	Babyfood, meat, chicken, junior	tarrito de pollo infantil
+fdc:172249	Babyfood, meat, chicken sticks, junior	tarrito palitos de pollo infantil
+fdc:172250	Babyfood, meat, turkey, strained	tarrito de pavo triturado
+fdc:172251	Babyfood, meat, turkey, junior	tarrito de pavo infantil
+fdc:172252	Babyfood, finger snacks, GERBER, GRADUATES, PUFFS, apple and cinnamon	snacks infantiles de manzana y canela Gerber Graduates
+fdc:172253	Babyfood, water, bottled, GERBER, without added fluoride	agua infantil Gerber sin flúor
+fdc:172254	Babyfood, GERBER, 3rd Foods, apple, mango and kiwi	tarrito de manzana mango y kiwi Gerber
+fdc:172255	Babyfood, tropical fruit medley	tarrito de fruta tropical
+fdc:172256	Babyfood, dinner, vegetables and dumplings and beef, strained	tarrito de verduras albóndigas de masa y vacuno triturado
+fdc:172257	Babyfood, ravioli, cheese filled, with tomato sauce	tarrito de ravioli de queso con salsa de tomate
+fdc:172258	Babyfood, dinner, beef noodle, strained	tarrito de vacuno con fideos triturado
+fdc:172259	Babyfood, macaroni and cheese, toddler	tarrito de macarrones con queso
+fdc:172260	Babyfood, dinner, beef and rice, toddler	tarrito de vacuno con arroz
+fdc:172261	Babyfood, dinner, beef with vegetables	tarrito de vacuno con verduras
+fdc:172262	Babyfood, dinner, vegetables and lamb, junior	tarrito de verduras con cordero infantil
+fdc:172263	Babyfood, dinner, chicken noodle, strained	tarrito de pollo con fideos triturado
+fdc:172264	Babyfood, dinner, chicken noodle, junior	tarrito de pollo con fideos infantil
+fdc:172265	Babyfood, dinner, vegetables, noodles and chicken, junior	tarrito de verduras fideos y pollo infantil
+fdc:172266	Babyfood, dinner, pasta with vegetables	tarrito de pasta con verduras
+fdc:172267	Babyfood, dinner, vegetables and noodles and turkey, strained	tarrito de verduras fideos y pavo triturado
+fdc:172268	Babyfood, dinner, vegetables and noodles and turkey, junior	tarrito de verduras fideos y pavo infantil
+fdc:172269	Babyfood, dinner, turkey and rice, strained	tarrito de pavo con arroz triturado
+fdc:172270	Babyfood, dinner, macaroni and cheese, junior	tarrito de macarrones con queso infantil
+fdc:172271	Babyfood, vegetables, green beans, strained	tarrito de judías verdes triturado
+fdc:172272	Babyfood, vegetables, green beans, junior	tarrito de judías verdes infantil
+fdc:172273	Babyfood, green beans, dices, toddler	tarrito de judías verdes en dados
+fdc:172274	Babyfood, vegetables, squash, strained	tarrito de calabaza triturado
+fdc:172275	Babyfood, vegetables, squash, junior	tarrito de calabaza infantil
+fdc:172276	Babyfood, vegetables, sweet potatoes strained	tarrito de boniato triturado
+fdc:172277	Babyfood, vegetables, sweet potatoes, junior	tarrito de boniato infantil
+fdc:172278	Babyfood, fruit, applesauce, junior	tarrito de compota de manzana infantil
+fdc:172279	Babyfood, fruit, apricot with tapioca, strained	tarrito de albaricoque con tapioca triturado
+fdc:172280	Babyfood, vegetables, corn, creamed, strained	tarrito de maíz con crema triturado
+fdc:172281	Babyfood, dinner, mixed vegetable, junior	tarrito de verduras variadas infantil
+fdc:172282	Babyfood, fruit, bananas with tapioca, junior	tarrito de plátano con tapioca infantil
+fdc:172283	Babyfood, vegetables, mix vegetables junior	tarrito de verduras mezcla infantil
+fdc:172284	Babyfood, vegetables, garden vegetable, strained	tarrito de verduras de huerta triturado
+fdc:172285	Babyfood, plums, bananas and rice, strained	tarrito de ciruela plátano y arroz triturado
+fdc:172286	Babyfood, dinner, turkey, rice, and vegetables, toddler	tarrito de pavo arroz y verduras
+fdc:172287	Babyfood, dinner, apples and chicken, strained	tarrito de manzana y pollo triturado
+fdc:172288	Babyfood, dinner, broccoli and chicken, junior	tarrito de brécol y pollo infantil
+fdc:172289	Infant formula, MEAD JOHNSON, Enfamil Premature High Protein 24 Calories, ready to feed, with ARA and DHA	fórmula infantil Enfamil prematuro alta proteína 24 kcal lista
+fdc:172290	Infant formula, MEAD JOHNSON, Enfamil Premature 30 Calories, ready to feed, with ARA and DHA	fórmula infantil Enfamil prematuro 30 kcal lista
+fdc:172291	Infant formula, MEAD JOHNSON, Enfamil for Supplementing, powder, with ARA and DHA, not reconstituted	fórmula infantil Enfamil de suplemento en polvo
+fdc:172292	Infant formula, MEAD JOHNSON, Enfamil Reguline Powder, with ARA and DHA, not reconstituted	fórmula infantil Enfamil Reguline en polvo
+fdc:172293	Infant formula, MEAD JOHNSON, Pregestimil 24 Calories, ready to feed, with ARA and DHA	fórmula infantil Pregestimil 24 kcal lista
+fdc:172294	Toddler drink, MEAD JOHNSON, PurAmino Toddler Powder, with ARA and DHA, not reconstituted	bebida infantil PurAmino en polvo
+fdc:172295	Infant formula, MEAD JOHNSON, Enfamil for Supplementing, ready to feed, with ARA and DHA	fórmula infantil Enfamil de suplemento lista
+fdc:172296	Babyfood, cereal, barley, prepared with whole milk	papilla de cebada con leche entera
+fdc:172297	Babyfood, cereal, oatmeal, with bananas, prepared with whole milk	papilla de avena con plátano con leche entera
+fdc:172298	Babyfood, cereal, oatmeal, with honey, prepared with whole milk	papilla de avena con miel con leche entera
+fdc:172299	Babyfood, cereal, rice, prepared with whole milk	papilla de arroz con leche entera
+fdc:172300	Babyfood, cereal, rice, with honey, prepared with whole milk	papilla de arroz con miel con leche entera
+fdc:172301	Infant formula, MEAD JOHNSON, ENFAMIL, with iron, powder	fórmula infantil Enfamil con hierro en polvo
+fdc:172302	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, with iron, powder, with ARA and DHA	fórmula infantil Enfamil Infant con hierro en polvo
+fdc:172303	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, with iron, liquid concentrate, with ARA and DHA, reconstituted	fórmula infantil Enfamil Infant con hierro reconstituida
+fdc:172304	Infant formula, MEAD JOHNSON, ENFAMIL LIPIL, with iron, ready-to-feed, with ARA and DHA	fórmula infantil Enfamil Lipil con hierro lista
+fdc:172305	Infant formula, MEAD JOHNSON, ENFAMIL, LIPIL, low iron, ready to feed, with ARA and DHA	fórmula infantil Enfamil Lipil baja en hierro lista
+fdc:172306	Infant formula, MEAD JOHNSON, ENFAMIL, Infant, ready-to-feed, with ARA and DHA	fórmula infantil Enfamil Infant lista
+fdc:172307	Infant formula, ABBOTT NUTRITION, SIMILAC, PM 60/40, powder not reconstituted	fórmula infantil Similac PM 60/40 en polvo
+fdc:172308	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN WITH LGG, with iron, powder, not reconstituted, with ARA and DHA	fórmula infantil Enfamil Nutramigen con LGG y hierro en polvo
+fdc:172309	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN, with iron, ready-to-feed, with ARA and DHA	fórmula infantil Enfamil Nutramigen con hierro lista
+fdc:172310	Infant formula, ABBOTT NUTRITION, SIMILAC, ALIMENTUM, with iron, ready-to-feed	fórmula infantil Similac Alimentum con hierro lista
+fdc:172311	Infant formula, MEAD JOHNSON, ENFAMIL, ENFACARE, with iron, powder, with ARA and DHA	fórmula infantil Enfamil EnfaCare con hierro en polvo
+fdc:172312	Infant formula, ABBOTT NUTRITION, SIMILAC, with iron, liquid concentrate, not reconstituted	fórmula infantil Similac con hierro concentrado
+fdc:172313	Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed	bebida infantil PediaSure lista
+fdc:172314	Infant formula, MEAD JOHNSON, NEXT STEP, PROSOBEE LIPIL, powder, with ARA and DHA	fórmula infantil Prosobee Lipil en polvo
+fdc:172315	Infant formula, MEAD JOHNSON, NEXT STEP, PROSOBEE, LIPIL, ready to feed, with ARA and DHA	fórmula infantil Prosobee Lipil lista
+fdc:172316	Infant formula, NESTLE, GOOD START SOY, with ARA and DHA, powder	fórmula infantil Good Start Soy en polvo
+fdc:172317	Babyfood, corn and sweet potatoes, strained	tarrito de maíz y boniato triturado
+fdc:172318	Infant formula, ABBOTT NUTRITION, SIMILAC, ALIMENTUM, ADVANCE, ready-to-feed, with ARA and DHA	fórmula infantil Similac Alimentum Advance lista
+fdc:172319	Infant formula, PBM PRODUCTS, store brand, ready-to-feed	fórmula infantil marca blanca lista
+fdc:172320	Infant formula, PBM PRODUCTS, store brand, liquid concentrate, not reconstituted	fórmula infantil marca blanca concentrado
+fdc:172321	Infant formula, MEAD JOHNSON, ENFAMIL, AR, ready-to-feed, with ARA and DHA	fórmula infantil Enfamil AR lista
+fdc:172322	Infant formula, MEAD JOHNSON, ENFAMIL, AR, powder, with ARA and DHA	fórmula infantil Enfamil AR en polvo
+fdc:172323	Infant formula, ABBOTT NUTRITION, SIMILAC NEOSURE, ready-to-feed, with ARA and DHA	fórmula infantil Similac Neosure lista
+fdc:172324	Infant formula, ABBOTT NUTRITION, SIMILAC, NEOSURE, powder, with ARA and DHA	fórmula infantil Similac Neosure en polvo
+fdc:172325	Infant formula, ABBOTT NUTRITION, SIMILAC, SENSITIVE (LACTOSE FREE) ready-to-feed, with ARA and DHA	fórmula infantil Similac Sensitive sin lactosa lista
+fdc:172326	Infant formula, ABBOTT NUTRITION, SIMILAC, ADVANCE, with iron, liquid concentrate, not reconstituted	fórmula infantil Similac Advance con hierro concentrado
+fdc:172327	Shortening, household, lard and vegetable oil	grasa de cocina de manteca de cerdo y aceite vegetal
+fdc:172328	Oil, sunflower, linoleic, (partially hydrogenated)	aceite de girasol linoleico parcialmente hidrogenado
+fdc:172329	Shortening bread, soybean (hydrogenated) and cottonseed	grasa para pan de soja y algodón
+fdc:172330	Shortening cake mix, soybean (hydrogenated) and cottonseed (hydrogenated)	grasa para repostería de soja y algodón
+fdc:172331	Shortening frying (heavy duty), palm (hydrogenated)	grasa para fritura de palma
+fdc:172332	Shortening household soybean (hydrogenated) and palm	grasa de cocina de soja y palma
+fdc:172333	Shortening frying (heavy duty), soybean (hydrogenated), linoleic (less than 1%)	grasa para fritura de soja
+fdc:172334	Shortening, confectionery, fractionated palm	grasa de confitería de palma fraccionada
+fdc:172335	Oil, nutmeg butter	aceite de nuez moscada
+fdc:172336	Oil, canola	aceite de colza
+fdc:172337	Oil, mustard	aceite de mostaza
+fdc:172338	Oil, sunflower, high oleic (70% and over)	aceite de girasol alto oleico
+fdc:172339	Margarine-like, margarine-butter blend, soybean oil and butter	mezcla de margarina y mantequilla
+fdc:172340	Fish oil, herring	aceite de arenque
+fdc:172341	Fish oil, menhaden	aceite de menhaden
+fdc:172342	Fish oil, menhaden, fully hydrogenated	aceite de menhaden hidrogenado
+fdc:172343	Fish oil, salmon	aceite de salmón
+fdc:172344	Butter, light, stick, without salt	mantequilla ligera sin sal
+fdc:172345	Animal fat, bacon grease	grasa de beicon
+fdc:172346	Margarine, regular, 80% fat, composite, stick, with salt	margarina 80% con sal en barra
+fdc:172347	Margarine, regular, 80% fat, composite, tub, with salt	margarina 80% con sal en tarrina
+fdc:172348	Margarine-like, vegetable oil spread, 60% fat, stick, with salt	margarina vegetal 60% con sal
+fdc:172349	Margarine, regular, 80% fat, composite, tub, without salt	margarina 80% sin sal en tarrina
+fdc:172350	Margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, without salt	margarina vegetal 60% sin sal
+fdc:172351	Margarine-like, vegetable oil spread, fat free, liquid, with salt	margarina vegetal sin grasa líquida con sal
+fdc:172352	Margarine-like spread with yogurt, 70% fat, stick, with salt	margarina con yogur 70% con sal
+fdc:172353	Margarine-like, vegetable oil spread, fat-free, tub	margarina vegetal sin grasa en tarrina
+fdc:172354	Margarine-like, vegetable oil spread, 20% fat, with salt	margarina vegetal 20% con sal
+fdc:172355	Margarine-like, vegetable oil spread, 20% fat, without salt	margarina vegetal 20% sin sal
+fdc:172356	Salad dressing, thousand island dressing, fat-free	salsa mil islas sin grasa
+fdc:172357	Oil, industrial, mid-oleic, sunflower	aceite de girasol medio oleico industrial
+fdc:172358	Oil, industrial, canola with antifoaming agent, principal uses salads, woks and light frying	aceite de colza industrial para ensaladas y fritura
+fdc:172359	Oil, industrial, canola for salads, woks and light frying	aceite de colza industrial para ensaladas y wok
+fdc:172360	Oil, industrial, canola (partially hydrogenated) oil for deep fat frying	aceite de colza parcialmente hidrogenado para fritura
+fdc:172361	Oil, industrial, soy (partially hydrogenated), multiuse for non-dairy butter flavor	aceite de soja parcialmente hidrogenado multiusos
+fdc:172362	Oil, industrial, soy ( partially hydrogenated), all purpose	aceite de soja parcialmente hidrogenado
+fdc:172363	Oil, industrial, soy (partially hydrogenated ) and soy (winterized), pourable clear fry	aceite de soja hidrogenado e invernado para fritura
+fdc:172364	Oil, industrial, soy (partially hydrogenated)  and cottonseed, principal use as a tortilla shortening	aceite de soja y algodón hidrogenado para tortillas
+fdc:172365	Oil, industrial, coconut, confection fat, typical basis for ice cream coatings	aceite de coco de confitería para coberturas
+fdc:172366	Oil, industrial, palm kernel (hydrogenated) , used for whipped toppings, non-dairy	aceite de palmiste hidrogenado para coberturas
+fdc:172367	Oil, industrial, coconut (hydrogenated), used for whipped toppings and coffee whiteners	aceite de coco hidrogenado para coberturas y café
+fdc:172368	Oil, industrial, palm and palm kernel, filling fat (non-hydrogenated)	aceite de palma y palmiste para rellenos
+fdc:172369	Margarine, industrial, soy and partially hydrogenated soy oil, use for baking, sauces and candy	margarina industrial de soja para repostería y salsas
+fdc:172370	Oil, vegetable, soybean, refined	aceite de soja refinado
+fdc:172371	Margarine-like spread, SMART BALANCE Regular Buttery Spread with flax oil	margarina Smart Balance con aceite de lino
+fdc:172372	Margarine-like spread, SMART BALANCE Light Buttery Spread	margarina ligera Smart Balance
+fdc:172373	Chicken, broilers or fryers, drumstick, meat and skin, raw	muslo de pollo con piel crudo
+fdc:172374	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, batter	muslo de pollo con piel frito en rebozado
+fdc:172375	Chicken, broilers or fryers, drumstick, meat only, cooked, fried	muslo de pollo sin piel frito
+fdc:172376	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted	muslo de pollo sin piel asado
+fdc:172377	Chicken, broilers or fryers, drumstick, meat only, cooked, stewed	muslo de pollo sin piel estofado
+fdc:172378	Chicken, broilers or fryers, leg, meat and skin, raw	pata de pollo con piel cruda
+fdc:172379	Chicken, broilers or fryers, leg, meat only, cooked, fried	pata de pollo sin piel frita
+fdc:172380	Chicken, broilers or fryers, leg, meat only, cooked, roasted	pata de pollo sin piel asada
+fdc:172381	Chicken, broilers or fryers, leg, meat only, cooked, stewed	pata de pollo sin piel estofada
+fdc:172382	Chicken, broilers or fryers, neck, meat and skin, raw	pescuezo de pollo con piel crudo
+fdc:172383	Chicken, broilers or fryers, neck, meat only, cooked, fried	pescuezo de pollo sin piel frito
+fdc:172384	Chicken, broilers or fryers, neck, meat only, cooked, simmered	pescuezo de pollo sin piel cocido
+fdc:172385	Chicken, broilers or fryers, thigh, meat and skin, raw	contramuslo de pollo con piel crudo
+fdc:172386	Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, batter	contramuslo de pollo con piel frito en rebozado
+fdc:172387	Chicken, broilers or fryers, thigh, meat only, cooked, fried	contramuslo de pollo sin piel frito
+fdc:172388	Chicken, broilers or fryers, thigh, meat only, cooked, roasted	contramuslo de pollo sin piel asado
+fdc:172389	Chicken, broilers or fryers, thigh, meat only, cooked, stewed	contramuslo de pollo sin piel estofado
+fdc:172390	Chicken, broilers or fryers, wing, meat and skin, raw	ala de pollo con piel cruda
+fdc:172391	Chicken, broilers or fryers, wing, meat only, cooked, fried	ala de pollo sin piel frita
+fdc:172392	Goose, domesticated, meat and skin, cooked, roasted	oca con piel asada
+fdc:172393	Goose, domesticated, meat only, raw	oca sin piel cruda
+fdc:172394	Goose, domesticated, meat only, cooked, roasted	oca sin piel asada
+fdc:172395	Goose, liver, raw	hígado de oca crudo
+fdc:172396	Guinea hen, meat and skin, raw	pintada con piel cruda
+fdc:172397	Pheasant, leg, meat only, raw	faisán pata sin piel cruda
+fdc:172398	Quail, meat and skin, raw	codorniz con piel cruda
+fdc:172399	Quail, meat only, raw	codorniz sin piel cruda
+fdc:172400	Lentils, raw	lentejas crudas
+fdc:172401	Lentils, mature seeds, cooked, boiled, without salt	lentejas cocidas sin sal
+fdc:172402	Lima beans, thin seeded (baby), mature seeds, cooked, boiled, without salt	judías de lima pequeñas cocidas sin sal
+fdc:172403	Lupins, mature seeds, raw	altramuces crudos
+fdc:172404	Lupins, mature seeds, cooked, boiled, without salt	altramuces cocidos sin sal
+fdc:172405	Mothbeans, mature seeds, raw	frijol moth crudo
+fdc:172406	Mothbeans, mature seeds, cooked, boiled, without salt	frijol moth cocido sin sal
+fdc:172407	Mungo beans, mature seeds, cooked, boiled, without salt	judías mungo cocidas sin sal
+fdc:172408	Peas, green, split, mature seeds, raw	guisantes verdes partidos crudos
+fdc:172409	Peas, split, mature seeds, cooked, boiled, without salt	guisantes partidos cocidos sin sal
+fdc:172410	Peanuts, all types, raw	cacahuetes crudos
+fdc:172411	Peanuts, spanish, oil-roasted, with salt	cacahuetes fritos en aceite salados
+fdc:172412	Peanuts, valencia, raw	cacahuetes valencia crudos
+fdc:172413	Peanuts, valencia, oil-roasted, with salt	cacahuetes valencia fritos en aceite salados
+fdc:172414	Peanuts, virginia, raw	cacahuetes virginia crudos
+fdc:172415	Peanut flour, low fat	harina de cacahuete desgrasada
+fdc:172416	Pigeon peas (red gram), mature seeds, raw	gandules crudos
+fdc:172417	Pigeon peas (red gram), mature seeds, cooked, boiled, without salt	gandules cocidos sin sal
+fdc:172418	Refried beans, canned, traditional style	judías refritas en conserva
+fdc:172419	Bacon, meatless	beicon vegetal
+fdc:172420	Soybeans, mature seeds, roasted, salted	soja tostada salada
+fdc:172421	Soybeans, mature seeds, dry roasted	soja tostada en seco
+fdc:172422	Miso	miso
+fdc:172423	Natto	natto
+fdc:172424	Soy flour, low-fat	harina de soja desgrasada
+fdc:172425	Soy meal, defatted, raw	soja molida desgrasada
+fdc:172426	Soymilk, original and vanilla, unfortified	bebida de soja natural y vainilla no enriquecida
+fdc:172427	Soy protein concentrate, produced by alcohol extraction	concentrado de proteína de soja
+fdc:172428	Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)	tofu firme
+fdc:172429	Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)	tofu blando
+fdc:172430	Tofu, dried-frozen (koyadofu)	tofu liofilizado koyadofu
+fdc:172431	Tofu, fried	tofu frito
+fdc:172432	Okara	okara
+fdc:172433	Winged beans, mature seeds, cooked, boiled, without salt	judías aladas cocidas sin sal
+fdc:172434	Hummus, home prepared	hummus casero
+fdc:172435	Falafel, home-prepared	falafel casero
+fdc:172436	Soymilk, original and vanilla, with added calcium, vitamins A and D	bebida de soja natural y vainilla con calcio y vitaminas A y D
+fdc:172437	Peanut spread, reduced sugar	crema de cacahuete reducida en azúcar
+fdc:172438	Peanut butter, smooth, reduced fat	crema de cacahuete reducida en grasa
+fdc:172439	Peanut butter, smooth, vitamin and mineral fortified	crema de cacahuete enriquecida con vitaminas
+fdc:172440	Peanut butter, chunky, vitamin and mineral fortified	crema de cacahuete con trozos enriquecida con vitaminas
+fdc:172441	MORI-NU, Tofu, silken, firm	tofu sedoso firme Mori-Nu
+fdc:172442	MORI-NU, Tofu, silken, extra firm	tofu sedoso extra firme Mori-Nu
+fdc:172443	MORI-NU, Tofu, silken, lite firm	tofu sedoso ligero firme Mori-Nu
+fdc:172444	MORI-NU, Tofu, silken, lite extra firm	tofu sedoso ligero extra firme Mori-Nu
+fdc:172445	Refried beans, canned, fat-free	judías refritas sin grasa en conserva
+fdc:172446	Frijoles rojos volteados (Refried beans, red, canned)	judías rojas refritas en conserva
+fdc:172447	Tempeh, cooked	tempeh cocinado
+fdc:172448	Vitasoy USA, Nasoya Lite Firm Tofu	tofu ligero firme Nasoya Vitasoy
+fdc:172449	Peanut butter, chunk style, without salt	crema de cacahuete con trozos sin sal
+fdc:172450	Peanut butter, smooth style, without salt	crema de cacahuete sin sal
+fdc:172451	Peanut butter with omega-3, creamy	crema de cacahuete con omega-3
+fdc:172452	Pigeon peas (red gram), mature seeds, cooked, boiled, with salt	gandules cocidos con sal
+fdc:172453	Soy sauce made from soy and wheat (shoyu), low sodium	salsa de soja baja en sodio
+fdc:172454	Soy sauce, reduced sodium, made from hydrolyzed vegetable protein	salsa de soja reducida en sodio de proteína hidrolizada
+fdc:172455	Tofu, raw, firm, prepared with calcium sulfate	tofu firme crudo
+fdc:172456	Tofu, raw, regular, prepared with calcium sulfate	tofu normal crudo
+fdc:172457	Winged beans, mature seeds, cooked, boiled, with salt	judías aladas cocidas con sal
+fdc:172458	Veal, Australian, rib, rib roast, separable lean only, raw	ternera australiana costillar magro crudo
+fdc:172459	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, raw	cordero de cortes variados con grasa grasa 1/4" crudo (choice)
+fdc:172460	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, cooked	cordero de cortes variados con grasa grasa 1/4" cocinado (choice)
+fdc:172461	Lamb, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, raw	morcillo delantero de cordero con grasa grasa 1/4" crudo (choice)
+fdc:172462	Lamb, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	morcillo delantero de cordero con grasa grasa 1/4" estofado (choice)
+fdc:172463	Lamb, foreshank, separable lean only, trimmed to 1/4" fat, choice, raw	morcillo delantero de cordero magro grasa 1/4" crudo (choice)
+fdc:172464	Lamb, foreshank, separable lean only, trimmed to 1/4" fat, choice, cooked, braised	morcillo delantero de cordero magro grasa 1/4" estofado (choice)
+fdc:172465	Lamb, leg, shank half, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero mitad del jarrete con grasa grasa 1/4" asada (choice)
+fdc:172466	Lamb, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, raw	pierna de cordero mitad del jarrete magra grasa 1/4" cruda (choice)
+fdc:172467	Lamb, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero mitad del jarrete magra grasa 1/4" asada (choice)
+fdc:172468	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/4" fat, choice, raw	pierna de cordero mitad de la cadera con grasa grasa 1/4" cruda (choice)
+fdc:172469	Lamb, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	lomo de cordero con grasa grasa 1/4" a la parrilla (choice)
+fdc:172470	Lamb, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	lomo de cordero con grasa grasa 1/4" asado (choice)
+fdc:172471	Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, raw	lomo de cordero magro grasa 1/4" crudo (choice)
+fdc:172472	Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	lomo de cordero magro grasa 1/4" a la parrilla (choice)
+fdc:172473	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, raw	costillas de cordero magras grasa 1/4" crudas (choice)
+fdc:172474	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	costillas de cordero magras grasa 1/4" a la parrilla (choice)
+fdc:172475	Lamb, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	costillas de cordero magras grasa 1/4" asadas (choice)
+fdc:172476	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, raw	paleta de cordero entera con grasa grasa 1/4" cruda (choice)
+fdc:172477	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	paleta de cordero entera con grasa grasa 1/4" estofada (choice)
+fdc:172478	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	paleta de cordero entera magra grasa 1/4" a la parrilla (choice)
+fdc:172479	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	paleta de cordero entera magra grasa 1/4" asada (choice)
+fdc:172480	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, raw	brazo de paleta de cordero con grasa grasa 1/4" crudo (choice)
+fdc:172481	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	brazo de paleta de cordero con grasa grasa 1/4" estofado (choice)
+fdc:172482	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	brazo de paleta de cordero magro grasa 1/4" a la parrilla (choice)
+fdc:172483	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	brazo de paleta de cordero magro grasa 1/4" asado (choice)
+fdc:172484	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, raw	aguja de paleta de cordero con grasa grasa 1/4" cruda (choice)
+fdc:172485	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised	aguja de paleta de cordero con grasa grasa 1/4" estofada (choice)
+fdc:172486	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled	aguja de paleta de cordero magra grasa 1/4" a la parrilla (choice)
+fdc:172487	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	aguja de paleta de cordero magra grasa 1/4" asada (choice)
+fdc:172488	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, raw	cordero en dados para guisar magro grasa 1/4" crudo
+fdc:172489	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, braised	cordero en dados para guisar magro grasa 1/4" estofado
+fdc:172490	Lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, broiled	cordero en dados para guisar magro grasa 1/4" a la parrilla
+fdc:172491	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, raw	cordero neozelandés congelado grasa cruda
+fdc:172492	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, cooked	cordero neozelandés congelado grasa cocinada
+fdc:172493	Lamb, New Zealand, imported, fore-shank, separable lean and fat, raw	morcillo delantero de cordero neozelandés con grasa crudo
+fdc:172494	Lamb, New Zealand, imported, fore-shank, separable lean and fat, cooked, braised	morcillo delantero de cordero neozelandés con grasa estofado
+fdc:172495	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, raw	chuleta de pierna de cordero neozelandés con hueso magra cruda
+fdc:172496	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean only, cooked, roasted	pierna de cordero neozelandés entera magra asada
+fdc:172497	Lamb, New Zealand, imported, loin chop, separable lean and fat, raw	chuleta de lomo de cordero neozelandés con grasa cruda
+fdc:172498	Game meat, muskrat, raw	carne de rata almizclera cruda
+fdc:172499	Game meat, muskrat, cooked, roasted	carne de rata almizclera asada
+fdc:172500	Game meat, opossum, cooked, roasted	carne de zarigüeya asada
+fdc:172501	Game meat, rabbit, domesticated, composite of cuts, raw	carne de conejo cruda
+fdc:172502	Game meat, rabbit, domesticated, composite of cuts, cooked, roasted	carne de conejo asada
+fdc:172503	Game meat, squirrel, raw	carne de ardilla cruda
+fdc:172504	Game meat, squirrel, cooked, roasted	carne de ardilla asada
+fdc:172505	Lamb, variety meats and by-products, brain, raw	sesos de cordero crudos
+fdc:172506	Lamb, variety meats and by-products, brain, cooked, braised	sesos de cordero estofados
+fdc:172507	Lamb, variety meats and by-products, heart, raw	corazón de cordero crudo
+fdc:172508	Lamb, variety meats and by-products, heart, cooked, braised	corazón de cordero estofado
+fdc:172509	Veal, variety meats and by-products, heart, raw	corazón de ternera crudo
+fdc:172510	Veal, variety meats and by-products, heart, cooked, braised	corazón de ternera estofado
+fdc:172511	Lamb, variety meats and by-products, liver, raw	hígado de cordero crudo
+fdc:172512	Lamb, variety meats and by-products, liver, cooked, braised	hígado de cordero estofado
+fdc:172513	Lamb, variety meats and by-products, liver, cooked, pan-fried	hígado de cordero frito
+fdc:172514	Veal, variety meats and by-products, liver, raw	hígado de ternera crudo
+fdc:172515	Veal, variety meats and by-products, liver, cooked, braised	hígado de ternera estofado
+fdc:172516	Veal, variety meats and by-products, lungs, cooked, braised	pulmones de ternera estofados
+fdc:172517	Lamb, variety meats and by-products, mechanically separated, raw	carne de cordero separada mecánicamente cruda
+fdc:172518	Lamb, variety meats and by-products, pancreas, raw	páncreas de cordero crudo
+fdc:172519	Lamb, variety meats and by-products, pancreas, cooked, braised	páncreas de cordero estofado
+fdc:172520	Veal, variety meats and by-products, spleen, raw	bazo de ternera crudo
+fdc:172521	Veal, variety meats and by-products, spleen, cooked, braised	bazo de ternera estofado
+fdc:172522	Veal, variety meats and by-products, thymus, raw	timo de ternera crudo
+fdc:172523	Veal, variety meats and by-products, thymus, cooked, braised	timo de ternera estofado
+fdc:172524	Lamb, ground, cooked, broiled	carne picada de cordero a la parrilla
+fdc:172525	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, raw	cordero de cortes variados con grasa grasa 1/8" crudo (choice)
+fdc:172526	Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked	cordero de cortes variados con grasa grasa 1/8" cocinado (choice)
+fdc:172527	Lamb, foreshank, separable lean and fat, trimmed to 1/8" fat, choice, raw	morcillo delantero de cordero con grasa grasa 1/8" crudo (choice)
+fdc:172528	Lamb, leg, shank half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	pierna de cordero mitad del jarrete con grasa grasa 1/8" asada (choice)
+fdc:172529	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, raw	pierna de cordero mitad de la cadera con grasa grasa 1/8" cruda (choice)
+fdc:172530	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	pierna de cordero mitad de la cadera con grasa grasa 1/8" asada (choice)
+fdc:172531	Lamb, loin, separable lean and fat, trimmed to 1/8" fat, choice, raw	lomo de cordero con grasa grasa 1/8" crudo (choice)
+fdc:172532	Lamb, rib, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	costillas de cordero con grasa grasa 1/8" asadas (choice)
+fdc:172533	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, raw	paleta de cordero entera con grasa grasa 1/8" cruda (choice)
+fdc:172534	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	paleta de cordero entera con grasa grasa 1/8" estofada (choice)
+fdc:172535	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	paleta de cordero entera con grasa grasa 1/8" a la parrilla (choice)
+fdc:172536	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, raw	aguja de paleta de cordero con grasa grasa 1/8" cruda (choice)
+fdc:172537	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	aguja de paleta de cordero con grasa grasa 1/8" estofada (choice)
+fdc:172538	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	aguja de paleta de cordero con grasa grasa 1/8" a la parrilla (choice)
+fdc:172539	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	aguja de paleta de cordero con grasa grasa 1/8" asada (choice)
+fdc:172540	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero neozelandés entera con grasa grasa 1/8" cruda
+fdc:172541	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero neozelandés entera con grasa grasa 1/8" asada
+fdc:172542	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, raw	lomo de cordero neozelandés con grasa grasa 1/8" crudo
+fdc:172543	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	lomo de cordero neozelandés con grasa grasa 1/8" a la parrilla
+fdc:172544	Game meat, bison, top sirloin, separable lean only, trimmed to 0" fat, raw	bisonte lomo bajo magro sin grasa visible crudo
+fdc:172545	Game meat, bison, ribeye, separable lean only, trimmed to 0" fat, raw	bisonte ribeye magro sin grasa visible crudo
+fdc:172546	Game meat, bison, shoulder clod, separable lean only, trimmed to 0" fat, raw	bisonte aguja magra sin grasa visible cruda
+fdc:172547	Veal, breast, separable fat, cooked	ternera falda grasa cocinada
+fdc:172548	Veal, shank (fore and hind), separable lean and fat, raw	ternera morcillo con grasa crudo
+fdc:172549	Veal, shank (fore and hind), separable lean and fat, cooked, braised	ternera morcillo con grasa estofado
+fdc:172550	Veal, shank (fore and hind), separable lean only, raw	ternera morcillo magro crudo
+fdc:172551	Veal, shank (fore and hind), separable lean only, cooked, braised	ternera morcillo magro estofado
+fdc:172552	Lamb, Australian, imported, fresh, separable fat, raw	cordero australiano grasa cruda
+fdc:172553	Lamb, Australian, imported, fresh, separable fat, cooked	cordero australiano grasa cocinada
+fdc:172554	Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, raw	morcillo delantero de cordero australiano con grasa grasa 1/8" crudo
+fdc:172555	Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised	morcillo delantero de cordero australiano con grasa grasa 1/8" estofado
+fdc:172556	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano entera magra grasa 1/8" cruda
+fdc:172557	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano entera magra grasa 1/8" asada
+fdc:172558	Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano mitad del jarrete con grasa grasa 1/8" cruda
+fdc:172559	Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano mitad del jarrete con grasa grasa 1/8" asada
+fdc:172560	Lamb, Australian, imported, fresh, leg, shank half, separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano mitad del jarrete magra grasa 1/8" cruda
+fdc:172561	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano mitad de la cadera sin hueso magra grasa 1/8" asada
+fdc:172562	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, raw	chuletas de cadera de cordero australiano sin hueso con grasa grasa 1/8" crudas
+fdc:172563	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	chuletas de cadera de cordero australiano sin hueso con grasa grasa 1/8" a la parrilla
+fdc:172564	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, raw	chuletas de cadera de cordero australiano sin hueso magras grasa 1/8" crudas
+fdc:172565	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, cooked, broiled	pierna de cordero australiano tajada central con hueso magra grasa 1/8" a la parrilla
+fdc:172566	Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, raw	lomo de cordero australiano con grasa grasa 1/8" crudo
+fdc:172567	Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	lomo de cordero australiano con grasa grasa 1/8" a la parrilla
+fdc:172568	Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, raw	lomo de cordero australiano magro grasa 1/8" crudo
+fdc:172569	Lamb, Australian, imported, fresh, rib chop, frenched, bone-in, separable lean only, trimmed to 1/8" fat, cooked, grilled	chuleta de costilla de cordero australiano con hueso magra grasa 1/8" a la parrilla
+fdc:172570	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, raw	paleta de cordero australiano entera con grasa grasa 1/8" cruda
+fdc:172571	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, cooked	paleta de cordero australiano entera con grasa grasa 1/8" cocinada
+fdc:172572	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only,   trimmed to 1/8" fat, raw	paleta de cordero australiano entera magra grasa 1/8" cruda
+fdc:172573	Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only, trimmed to 1/8" fat, cooked	paleta de cordero australiano entera magra grasa 1/8" cocinada
+fdc:172574	Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, raw	aguja de paleta de cordero australiano con grasa grasa 1/8" cruda
+fdc:172575	Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	aguja de paleta de cordero australiano con grasa grasa 1/8" a la parrilla
+fdc:172576	Lamb, Australian, imported, fresh, shoulder, blade, separable lean only, trimmed to 1/8" fat, raw	aguja de paleta de cordero australiano magra grasa 1/8" cruda
+fdc:172577	Lamb, Australian, imported, fresh, shoulder ,blade, separable lean only, trimmed to 1/8" fat, cooked, broiled	aguja de paleta de cordero australiano magra grasa 1/8" a la parrilla
+fdc:172578	Game meat, bison, chuck, shoulder clod, separable lean only, raw	bisonte aguja magra cruda
+fdc:172579	Game meat, bison, ribeye, separable lean only, 1" steak, cooked, broiled	bisonte ribeye magro filete 2,5 cm a la parrilla
+fdc:172580	Game meat, bison, top round, separable lean only, 1" steak, cooked, broiled	bisonte tapa magra filete 2,5 cm a la parrilla
+fdc:172581	Game meat, bison, top round, separable lean only, 1" steak, raw	bisonte tapa magra filete 2,5 cm crudo
+fdc:172582	Game meat, deer, ground, raw	carne picada de venado cruda
+fdc:172583	Game meat, deer, ground, cooked, pan-broiled	carne picada de venado a la plancha
+fdc:172584	Game meat, deer, loin, separable lean only, 1" steak, cooked, broiled	venado lomo magro filete 2,5 cm a la parrilla
+fdc:172585	Game meat, deer, shoulder clod, separable lean only, cooked, braised	venado aguja magra estofada
+fdc:172586	Veal, Australian, shank, hind, bone-in, separable lean only, raw	ternera australiana jarrete con hueso magro crudo
+fdc:172587	Veal, Australian, shank, hind, bone-in, separable lean and fat, raw	ternera australiana jarrete con hueso con grasa crudo
+fdc:172588	Lamb, Australian, ground,  85% lean / 15% fat, raw	carne picada de cordero 85% magro cruda
+fdc:172589	Lamb, New Zealand, imported, Intermuscular fat, cooked	cordero neozelandés grasa intermuscular cocinada
+fdc:172590	Lamb, New Zealand, imported, breast, separable lean only, cooked, braised	falda de cordero neozelandés magra estofada
+fdc:172591	Lamb, New Zealand, imported, breast, separable lean only, raw	falda de cordero neozelandés magra cruda
+fdc:172592	Lamb, New Zealand, imported, chump, boneless, separable lean only, cooked, fast roasted	cordero neozelandés anca sin hueso magra asada rápido
+fdc:172593	Lamb, New Zealand, imported, subcutaneous fat, cooked	cordero neozelandés grasa subcutánea cocinada
+fdc:172594	Lamb, New Zealand, imported, liver, cooked, soaked and fried	hígado de cordero neozelandés remojado frito
+fdc:172595	Lamb, New Zealand, imported, liver, raw	hígado de cordero neozelandés crudo
+fdc:172596	Lamb, New Zealand, imported, ground lamb, cooked, braised	carne picada de cordero neozelandés estofada
+fdc:172597	Lamb, New Zealand, imported, ground lamb, raw	carne picada de cordero neozelandés cruda
+fdc:172598	Lamb, New Zealand, imported, testes, cooked, soaked and fried	testículos de cordero neozelandés remojados fritos
+fdc:172599	Lamb, New Zealand, imported, testes, raw	testículos de cordero neozelandés crudos
+fdc:172600	Lamb, New Zealand, imported, tongue - swiss cut, cooked, soaked and simmered	lengua de cordero neozelandés remojada cocida
+fdc:172601	Lamb, New Zealand, imported, tongue - swiss cut, raw	lengua de cordero neozelandés cruda
+fdc:172602	Lamb, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried	solomillo de cordero neozelandés magro frito
+fdc:172603	Lamb, New Zealand, imported, tenderloin, separable lean only, raw	solomillo de cordero neozelandés magro crudo
+fdc:172604	Lamb, New Zealand, imported, loin saddle, separable lean only, cooked, fast roasted	silla de cordero neozelandés magra asada rápido
+fdc:172605	Lamb, New Zealand, imported, loin saddle, separable lean only, raw	silla de cordero neozelandés magra cruda
+fdc:172606	Lamb, New Zealand, imported, neck chops, separable lean only, cooked, braised	chuletas de cuello de cordero neozelandés magras estofadas
+fdc:172607	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, cooked, slow roasted	paleta de cordero neozelandés reda sin hueso magra asada lento
+fdc:172608	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, raw	paleta de cordero neozelandés reda sin hueso magra cruda
+fdc:172609	Lamb, New Zealand, imported, rack - fully frenched, separable lean only, cooked, fast roasted	costillar de cordero neozelandés magro asado rápido
+fdc:172610	Lamb, New Zealand, imported, flap, boneless, separable lean and fat, cooked, braised	falda de cordero neozelandés sin hueso con grasa estofada
+fdc:172611	Lamb, New Zealand, imported, flap, boneless, separable lean and fat, raw	falda de cordero neozelandés sin hueso con grasa cruda
+fdc:172612	Lamb, New Zealand, imported, hind-shank, separable lean and fat, cooked, braised	jarrete trasero de cordero neozelandés con grasa estofado
+fdc:172613	Lamb, New Zealand, imported, hind-shank, separable lean and fat, raw	jarrete trasero de cordero neozelandés con grasa crudo
+fdc:172614	Lamb, New Zealand, imported, loin, boneless, separable lean and fat, cooked, fast roasted	lomo de cordero neozelandés sin hueso con grasa asado rápido
+fdc:172615	Lamb, New Zealand, imported, loin, boneless, separable lean and fat, raw	lomo de cordero neozelandés sin hueso con grasa crudo
+fdc:172616	Lamb, New Zealand, imported, neck chops, separable lean and fat, cooked, braised	chuletas de cuello de cordero neozelandés con grasa estofadas
+fdc:172617	Lamb, New Zealand, imported, neck chops, separable lean and fat, raw	chuletas de cuello de cordero neozelandés con grasa crudas
+fdc:172618	Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, cooked, slow roasted	paleta de cordero neozelandés reda sin hueso con grasa asada lento
+fdc:172619	Lamb, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried	solomillo de cordero neozelandés con grasa frito
+fdc:172620	Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, cooked, fast roasted	costillar de cordero neozelandés con grasa asado rápido
+fdc:172621	Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, raw	costillar de cordero neozelandés con grasa crudo
+fdc:172622	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, cooked, slow roasted	pierna de cordero neozelandés deshuesada con grasa asada lento
+fdc:172623	Veal, leg, top round, cap off, cutlet, boneless, raw	escalope de ternera de tapa sin hueso crudo
+fdc:172624	Veal, loin, chop, separable lean only, cooked, grilled	chuleta de lomo de ternera magra a la parrilla
+fdc:172625	Veal, shank, separable lean only, raw	ternera morcillo magro crudo
+fdc:172626	Veal, foreshank, osso buco, separable lean only, cooked, braised	ternera morcillo ossobuco magro estofado
+fdc:172627	Veal, seam fat only, cooked	ternera grasa intermuscular cocinada
+fdc:172628	Veal, shank, separable lean and fat, raw	ternera morcillo con grasa crudo
+fdc:172629	Veal, foreshank, osso buco, separable lean and fat, cooked, braised	ternera morcillo ossobuco con grasa estofado
+fdc:172630	Veal, loin, chop, separable lean and fat, cooked, grilled	chuleta de lomo de ternera con grasa a la parrilla
+fdc:172631	Veal, shoulder, blade chop, separable lean and fat, cooked, grilled	chuleta de paleta de ternera con grasa a la parrilla
+fdc:172632	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean only, trimmed to 1/8" fat, raw	solomillo de cordero australiano sin hueso magro grasa 1/8" crudo
+fdc:172633	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano parte baja sin hueso magra grasa 1/8" cruda
+fdc:172634	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano con hueso magra grasa 1/8" asada
+fdc:172635	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano con hueso magra grasa 1/8" cruda
+fdc:172636	Lamb, Australian, imported, fresh, seam fat, cooked	cordero australiano grasa intermuscular cocinada
+fdc:172637	Lamb, Australian, imported, fresh, seam fat, raw	cordero australiano grasa intermuscular cruda
+fdc:172638	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano parte baja sin hueso con grasa grasa 1/8" asada
+fdc:172639	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano parte baja sin hueso con grasa grasa 1/8" cruda
+fdc:172640	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean and fat, trimmed to 1/8" fat, raw	solomillo de cordero australiano sin hueso con grasa grasa 1/8" crudo
+fdc:172641	Lamb, Australian, imported, fresh, rib chop, frenched, denuded, bone-in, separable lean only, trimmed to 0" fat, cooked, grilled	chuleta de costilla de cordero australiano limpia con hueso magra sin grasa visible a la parrilla
+fdc:172642	Lamb, Australian, imported, fresh, rack, roast, frenched, denuded, bone-in, separable lean and fat, trimmed to 0" fat, cooked, roasted	costillar de cordero australiano limpio con hueso con grasa sin grasa visible asado
+fdc:172643	Lamb, Australian, imported, fresh, rack, roast, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	costillar de cordero australiano con hueso con grasa grasa 1/8" asado
+fdc:172644	Bagels, cinnamon-raisin	bagels de canela y pasas
+fdc:172645	Bagels, cinnamon-raisin, toasted	bagels de canela y pasas tostados
+fdc:172646	Bagels, oat bran	bagels de salvado de avena
+fdc:172647	Biscuits, plain or buttermilk, frozen, baked	bizcochos congelados al horno
+fdc:172648	Biscuits, plain or buttermilk, refrigerated dough, higher fat	bizcochos de masa refrigerada ricos en grasa
+fdc:172649	Biscuits, plain or buttermilk, refrigerated dough, higher fat, baked	bizcochos de masa refrigerada ricos en grasa al horno
+fdc:172650	Biscuits, plain or buttermilk, prepared from recipe	bizcochos caseros
+fdc:172651	Biscuits, mixed grain, refrigerated dough	bizcochos multigrano de masa refrigerada
 fdc:172693	Bread, stuffing, cornbread, dry mix, prepared	relleno de pan de maíz preparado
 fdc:172769	Muffins, oat bran	muffins de salvado de avena
 fdc:172865	Turkey from whole, light meat, meat only, with added solution, cooked, roasted	carne blanca de pavo asada con salmuera
