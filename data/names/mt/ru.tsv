@@ -7825,59 +7825,753 @@ ciqual:15048	Mix of nuts and dried fruit, no added salt	смесь орехов 
 ciqual:15049	Mix of nuts and raisins, no added salt	смесь орехов и изюма
 ciqual:15050	Hazelnut, grilled, salted	фундук жареный солёный
 ciqual:15052	Flaxseed, brown, seed	семена льна коричневые
+ciqual:15053	Peanut, grilled, no added salt	арахис жареный
+ciqual:15054	Cashew nut, grilled, no added salt	кешью жареные
+ciqual:15055	Cashew nut, dry-grilled, no added salt	кешью жареные сухие
+ciqual:15057	Peanut, grilled, flavoured	арахис жареный ароматизированный
+ciqual:15058	Candied peanut	арахис в карамели
+ciqual:15059	Mix of nuts, grilled, salted	смесь орехов жареных солёных
+ciqual:15062	Almond, grilled, salted, smoked	миндаль жареный солёный копчёный
+ciqual:15063	Hemp, seed, hulled	семена конопли очищенные
+ciqual:15064	Pumpkin and squash, seed, dried	семечки тыквы сушёные
+ciqual:15065	Seeds and peanuts, dried, salted (average)	смесь орехов и арахиса солёная
+ciqual:15066	Seeds and peanuts, dried, unsalted (average)	смесь орехов и арахиса несолёная
+ciqual:15201	Marzipan or almond paste, prepacked	марципан
+ciqual:15202	Peanut butter or peanut paste	арахисовое масло
+ciqual:15203	Tahini (sesame paste)	тахини
+ciqual:16030	Cocoa butter	масло какао
+ciqual:16040	Coconut fat or oil	масло кокосовое
+ciqual:16050	Coconut fat or oil, virgin	масло кокосовое нерафинированное
+ciqual:16060	Coconut fat or oil, refined	масло кокосовое рафинированное
+ciqual:16080	Solid vegetal fat (margarine type), for frying	жир растительный твёрдый для жарки
+ciqual:16110	Shea butter or shea oil	масло ши
+ciqual:16128	Frying oil	масло для фритюра
+ciqual:16150	Palm oil, refined	масло пальмовое рафинированное
+ciqual:16200	Palm kernel fat	масло пальмоядровое
+ciqual:16400	Butter, 80% fat minimum, unsalted	сливочное масло 80 % несолёное
+ciqual:16401	Butter oil or concentrated butter	топлёное масло
+ciqual:16402	Butter, 80% fat minimum, half-salted	сливочное масло 80 % полусолёное
+ciqual:16403	Butter, 80% fat minimum, salted	сливочное масло 80 % солёное
+ciqual:16404	Butter, 82% fa minimumt, unsalted, easy-to-spread	сливочное масло 82 % несолёное мягкое
+ciqual:16410	Butter, 60-62% fat, light, unsalted	сливочное масло лёгкое 60-62 % несолёное
+ciqual:16411	Butter, 60-62% fat, light, half-salted	сливочное масло лёгкое 60-62 % полусолёное
+ciqual:16412	Butter spread, reduced fat, unsalted (average)	спред из сливочного масла нежирный несолёный
+ciqual:16413	Butter, unknown fat content, half-salted (average)	сливочное масло полусолёное
+ciqual:16414	Butter, unknown fat content, unsalted (average)	сливочное масло несолёное
+ciqual:16415	Butter, light, 39-41% fat, unsalted	сливочное масло лёгкое 39-41 % несолёное
+ciqual:16416	Butter, light, 39-41% fat, half-salted	сливочное масло лёгкое 39-41 % полусолёное
+ciqual:16520	Lard or pork fat	смалец
 ciqual:16530	Pork fat, raw	свиное сало сырое
+ciqual:16540	Chicken fat	жир куриный
+ciqual:16550	Duck fat	жир утиный
+ciqual:16560	Goose fat	жир гусиный
+ciqual:16570	Turkey fat	жир индюшиный
+ciqual:16588	Spreadable fat <= 41% fat, unsalted, with plant strols	спред до 41 % жирности несолёный с фитостеролами
+ciqual:16589	Spreadable fat > 62% fat, unsalted, rich in omega 3	спред более 62 % жирности несолёный с омега-3
+ciqual:16590	Spreadable fat > 62% fat, unsalted, standard	спред более 62 % жирности несолёный
+ciqual:16591	Spreadable fat > 41% fat and <= 62% fat, unsalted, standard	спред 41-62 % жирности несолёный
+ciqual:16592	Spreadable fat <= 41% fat, unsalted, standard	спред до 41 % жирности несолёный
+ciqual:16593	Spreadable fat > 62% fat, half-salted	спред более 62 % жирности полусолёный
+ciqual:16594	Spreadable fat > 41% fat and <= 62% fat, half-salted	спред 41-62 % жирности полусолёный
+ciqual:16595	Spreadable fat > 41% fat and <= 62% fat, unsalted, with plant sterols	спред 41-62 % жирности несолёный с фитостеролами
+ciqual:16596	Spreadable fat > 41% fat and <= 62% fat, unsalted, rich in omega 3	спред 41-62 % жирности несолёный с омега-3
+ciqual:16597	Spreadable fat > 41% fat and <= 62% fat, half-salted, rich in omega 3	спред 41-62 % жирности полусолёный с омега-3
+ciqual:16598	Spreadable fat <= 41% fat, half-salted, with plant sterols	спред до 41 % жирности полусолёный с фитостеролами
+ciqual:16599	Spreadable fat <= 41% fat, unsalted, rich in omega 3	спред до 41 % жирности несолёный с омега-3
+ciqual:16600	Spreadable fat <= 41% fat, half-salted, standard	спред до 41 % жирности полусолёный
+ciqual:16601	Spreadable fat, fat % unknown, unsalted (average)	спред несолёный
+ciqual:16602	Spreadable fat, fat % unknown, half-salted (average)	спред полусолёный
+ciqual:16603	Spreadable fat, fat % unknown, unsalted, rich in omega 3 (average)	спред несолёный с омега-3
+ciqual:16713	Spreadable dairy fat 15-25% fat, light, spreadable, unsalted, fortified with vitamin(s)	спред молочный 15-25 % жирности несолёный с витаминами
+ciqual:17001	Vegetable oil (average)	масло растительное
+ciqual:17020	Apricot kernel oil	масло абрикосовых косточек
+ciqual:17030	Almond oil	масло миндальное
+ciqual:17040	Peanut oil	масло арахисовое
+ciqual:17100	Avocado oil	масло авокадо
+ciqual:17110	Wheat germ oil	масло зародышей пшеницы
+ciqual:17130	Rapeseed oil	масло рапсовое
+ciqual:17170	Cottonseed oil	масло хлопковое
+ciqual:17180	Linseed oil	масло льняное
+ciqual:17190	Maize/corn oil	масло кукурузное
+ciqual:17210	Hazelnut oil	масло фундука
+ciqual:17220	Walnut oil	масло грецкого ореха
+ciqual:17270	Olive oil, extra virgin	масло оливковое экстра верджин
+ciqual:17325	Poppyseed oil	масло маковое
+ciqual:17350	Grapeseed oil	масло виноградных косточек
+ciqual:17390	Rice bran oil	масло рисовых отрубей
+ciqual:17400	Sesame oil	масло кунжутное
+ciqual:17420	Soy oil	масло соевое
+ciqual:17440	Sunflower oil	масло подсолнечное
+ciqual:17630	Cod liver oil	жир из печени трески
+ciqual:17640	Sardine oil	жир сардины
+ciqual:17645	Salmon oil	жир лосося
+ciqual:17650	Herring oil	жир сельди
+ciqual:17700	Combined oil (blended vegetable oils)	смесь растительных масел
+ciqual:17701	Combined oil (mix of olive oil and seeds oil)	смесь оливкового масла и масел из семян
+ciqual:17800	Camelina oil	масло рыжиковое
+ciqual:17850	Hemp oil	масло конопляное
+ciqual:17900	Argan oil	масло аргановое
+ciqual:18001	Carbonated beverage or soft drink, without fruit , no added sugars and with sweetener(s)	напиток газированный ароматизированный без сахара с подсластителями
+ciqual:18003	Coffee, ground	кофе молотый
+ciqual:18004	Coffee, non instant no added sugars, ready-to-drink	кофе без сахара готовый к употреблению
+ciqual:18005	Coffee, powder, instant	кофе растворимый
+ciqual:18007	Cocktail, alcohol-free (juices based cocktail without syrup)	коктейль безалкогольный на соках
+ciqual:18009	Mineral sparkling water, bottled, lightly mineralized (average)	вода минеральная газированная слабоминерализованная
+ciqual:18010	Lemonade, with sugar(s)	лимонад с сахаром
+ciqual:18011	Coconut water	вода кокосовая
+ciqual:18012	Bottled water, flavoured, with sugar(s)	вода ароматизированная с сахаром
+ciqual:18013	Tonic drink, no added sugars, with sweetener(s)	тоник без сахара
+ciqual:18014	Tonic drink, with sugar(s) and sweetener(s)	тоник с сахаром и подсластителями
+ciqual:18015	Still soft drink with tea extract, with sugar(s) and sweetener(s)	чайный напиток с сахаром и подсластителями
+ciqual:18016	Lemonade, with sugar(s) and with sweetener(s)	лимонад с сахаром и подсластителями
+ciqual:18017	Syrup, to be diluted, with sugar(s)	сироп для разведения с сахаром
+ciqual:18018	Cola, with sugar(s)	кола с сахаром
+ciqual:18019	Carbonated beverage or fruit soft drink , fruit content >= 10% and < 50%, with sugar(s)	напиток фруктовый газированный с сахаром (10-50 % фруктов)
+ciqual:18020	Tea, brewed, no added sugars	чай заварной без сахара
+ciqual:18021	Still soft drink, fruit content <10%, no added sugars and with sweetener(s)	напиток фруктовый без сахара с подсластителями
+ciqual:18022	Infusion, brewed, no added sugars	травяной чай без сахара
+ciqual:18023	Still soft drink, fruit content <10%, with sugar(s)	напиток фруктовый с сахаром (<10 % фруктов)
+ciqual:18024	Still soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	напиток фруктовый с сахаром и подсластителями (10-50 % фруктов)
+ciqual:18025	Kombucha, prepacked	комбуча
+ciqual:18026	Carbonated beverage or soft drink, without fruit, with sugar(s)	напиток газированный ароматизированный с сахаром
+ciqual:18028	Bottled water, flavoured, no added sugars and no sweetener(s)	вода ароматизированная без сахара и подсластителей
+ciqual:18029	Non-alcoholic beverage (average)	напиток безалкогольный
+ciqual:18030	Bottled water, flavoured, no added sugars and with sweetener(s)	вода ароматизированная без сахара с подсластителями
+ciqual:18033	Carbonated beverage or fruit soft drink, fruit content < 10% , with sugar(s) and with sweetener(s)	напиток фруктовый газированный с сахаром и подсластителями
+ciqual:18034	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	напиток фруктовый газированный с сахаром и подсластителями (10-50 % фруктов)
+ciqual:18035	Lemonade, no added sugars, with sweetener(s)	лимонад без сахара
+ciqual:18037	Cola, with sugar(s) and with sweetener(s)	кола с сахаром и подсластителями
+ciqual:18039	Lemonade with syrupwith sugar(s)	лимонад с сахарным сиропом
+ciqual:18041	Coconut milk	молоко кокосовое
+ciqual:18044	Water, mineral (average)	вода минеральная
+ciqual:18045	Mineral still water, bottled (average)	вода минеральная негазированная
+ciqual:18046	Mineral sparkling water, bottled (average)	вода минеральная газированная
+ciqual:18048	Carbonated beverage or fruit soft drink (fruit juice content unknown), with sugar(s) (average)	напиток фруктовый газированный с сахаром
+ciqual:18049	Carbonated beverage or fruit soft drink, fruit content < 10% , with sugar(s)	напиток фруктовый газированный с сахаром (<10 % фруктов)
+ciqual:18050	Carbonated beverage or fruit soft drink, fruit content <10%, reduced sugar	напиток фруктовый газированный с пониженным сахаром
+ciqual:18051	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, no added sugars and with sweetener(s)	напиток фруктовый газированный без сахара с подсластителями (10-50 % фруктов)
+ciqual:18057	Preparation for beverage diluted in water (eg. mint, strawberry etc.), no added sugars, with sweetener(s), type syrup 0%	напиток из концентрата без сахара с подсластителями
+ciqual:18058	Syrup (eg. Mint, strawberry etc.), with sugar(s), diluted in water	напиток из сиропа с сахаром разведённый водой
+ciqual:18059	Concentrate beverage (to be diluted), no added sugars and with sweeteners, "syrup 0%" type	напиток концентрированный без сахара с подсластителями для разведения
+ciqual:18060	Cola, without added sugars and with sweetener(s)	кола без сахара
+ciqual:18062	Still soft drink with tea extract, sugar and sweetener contents unknown (average)	чайный напиток
+ciqual:18063	Cola, sugar(s) and sweetener(s) content unknown (average)	кола
+ciqual:18064	Still soft drink with tea extract, flavoured, reduced sugar	чайный напиток с пониженным сахаром
+ciqual:18065	Still soft drink with tea extract, flavoured, no added sugars and with sweetener(s)	чайный напиток без сахара
+ciqual:18066	Water, municipal	вода водопроводная
+ciqual:18067	Cola, with sugar(s) and without caffeine	кола с сахаром без кофеина
+ciqual:18068	Cola, without added sugars, with sweetener(s) and no caffeine	кола без сахара и кофеина
+ciqual:18069	Decaffeinated coffee, powder, instant	кофе растворимый порошковый без кофеина
+ciqual:18070	Decaffeinated non instant coffee, no added sugars, ready-to-drink	кофе без кофеина без сахара готовый к употреблению
+ciqual:18071	Espresso coffee non instant coffee, no added sugars, ready-to-drink	кофе эспрессо без сахара
+ciqual:18072	Decaffeinated instant coffee, no added sugars, ready-to-drink	кофе растворимый без кофеина без сахара готовый к употреблению
+ciqual:18073	Instant coffee, no added sugars, ready-to-drink	кофе растворимый без сахара готовый к употреблению
+ciqual:18075	Still soft drink with tea extract, flavoured, with sugar(s)	чайный напиток с сахаром
+ciqual:18076	Tea leaf	чай листовой
+ciqual:18078	Carbonated beverage or soft drink, without fruit, with sugar(s) and with sweetener(s)	напиток газированный ароматизированный с сахаром и подсластителями
+ciqual:18100	Cocoa powder, no added sugars, powder, instant	какао-порошок растворимый без сахара
+ciqual:18101	Cocoa or chocolate powder, for beverages, with sugar(s)	какао-порошок для напитков с сахаром
+ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	какао-порошок солодовый с сахаром, витаминами и минералами
+ciqual:18104	Instant cocoa or chocolate beverage, with sugar(s), ready-to-drink (reconstituted with standard semi-skimmed milk)	какао напиток растворимый с сахаром готовый на молоке
+ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	какао напиток растворимый с сахаром и витаминами готовый на молоке
+ciqual:18107	Almond drink, plain, no added sugars, not fortified, prepacked	напиток миндальный без сахара
+ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	напиток миндальный с сахаром и кальцием
+ciqual:18111	Almond drink, prepacked (average)	напиток миндальный
+ciqual:18112	Plant-based drink, prepacked (average)	напиток растительный
+ciqual:18113	Soy drink, prepacked (average)	напиток соевый
+ciqual:18150	Mix of chicory and coffee, powder, instant	смесь цикория и кофе растворимая
+ciqual:18151	Coffee with milk or white coffee or cappuccino, instant or non instant coffee, no added sugars, ready-to-drink	кофе с молоком без сахара готовый к употреблению
+ciqual:18152	Chicory, powder, instant	цикорий растворимый порошковый
+ciqual:18153	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	смесь цикория и кофе растворимая без сахара готовая на молоке
+ciqual:18154	Black tea, brewed, no added sugars	чай чёрный заварной без сахара
+ciqual:18155	Green tea, brewed, no added sugars	чай зелёный заварной без сахара
+ciqual:18160	Coffee with milk or cappuccino, powder, instant	кофе с молоком растворимый
+ciqual:18161	Instant chicory, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	цикорий растворимый без сахара готовый на молоке
+ciqual:18162	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with water)	смесь цикория и кофе растворимая без сахара готовая на воде
+ciqual:18163	Coffee with milk or cappuccino with chocolate, powder, instant	капучино с шоколадом растворимый
+ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	какао-порошок для напитков с сахаром, витаминами и минералами
+ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	какао-порошок для напитков с сахаром и витаминами
+ciqual:18220	Lemon speciality to be diluted, for beverages or culinary use, no added sugars	лимонный концентрат для разведения без сахара
+ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	напиток фруктовый охлаждённый с сахаром и витаминами (<10 % фруктов)
+ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	напиток фруктовый с сахаром и витаминами (10-50 % фруктов)
+ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	напиток фруктовый типа смузи с витаминами
+ciqual:18297	Still soft drink, fruit content >= 50%, room temperature, fortified with vitamin(s)	напиток фруктовый с витаминами (≥50 % фруктов)
+ciqual:18298	Still soft drink, fruit content >= 50%, room temperature	напиток фруктовый (≥50 % фруктов)
+ciqual:18299	Still soft drink, lemonade, fruit content >= 10% and < 50%, with sugar(s)	лимонад негазированный с сахаром
+ciqual:18300	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, no added sugars, refrigerated	напиток фруктовый с пюре типа смузи без сахара охлаждённый
+ciqual:18304	Still soft drink, fruit content >= 10% and < 50%, reduced sugar	напиток фруктовый с пониженным сахаром (10-50 % фруктов)
+ciqual:18305	Still soft drink, fruit content >= 10% and < 50%, no added sugars	напиток фруктовый без сахара (10-50 % фруктов)
+ciqual:18306	Aloe vera beverage, with sugar(s)	напиток из алоэ вера с сахаром
+ciqual:18309	Still soft drink, fruit content unknown, with sugar(s)	напиток фруктовый с сахаром
+ciqual:18315	Fruit and vegetable beverage	напиток из фруктов и овощей
+ciqual:18316	Water kefir or Tibicos, prepacked	водный кефир
+ciqual:18324	Energy drink, sugar and artifical sweetener contents unknown (average)	напиток энергетический
+ciqual:18325	Still soft drink, fruit content unknown, sugar and sweetener contents unknown (average)	напиток фруктовый
+ciqual:18326	Bottled water, flavoured, sugar and sweetener contents unknown (average)	вода ароматизированная
+ciqual:18327	Lemonade, sugar and sweetener contents unknown (average)	лимонад
+ciqual:18328	Syrup (eg. Mint, strawberry etc.), sugar content unknown, diluted in water (average)	напиток из сиропа разведённый водой
+ciqual:18329	Carbonated beverage or soft drink, without fruit, sugar and sweetener contents unknown (average)	напиток газированный ароматизированный
+ciqual:18339	Still soft drink, fruit content >= 10% and < 50%, with sugar(s)	напиток фруктовый с сахаром (10-50 % фруктов)
+ciqual:18340	Carbonated beverage or fruit soft drink, fruit content < 10% , no added sugars and with sweetener(s)	напиток фруктовый газированный без сахара с подсластителями
+ciqual:18341	Carbonated beverage, apple content >= 50% and <99%, no added sugars	напиток яблочный газированный без сахара
+ciqual:18343	Still beverage with fruit juice and milk	напиток с фруктовым соком и молоком
+ciqual:18344	Tonic drink, with sugar(s)	тоник с сахаром
+ciqual:18345	Carbonated beverage or fruit soft drink, fruit content < 10% , no added sugars and no sweetener(s)	напиток фруктовый газированный без сахара и подсластителей
+ciqual:18347	Birch sap beverage	напиток из берёзового сока
+ciqual:18348	Sports drink, with sugar(s)	напиток спортивный с сахаром
+ciqual:18349	Sports drink with added sugars, with sugar(s)	напиток спортивный с сахаром и подсластителями
+ciqual:18352	Energy drink, with sugar(s)	напиток энергетический с сахаром
+ciqual:18353	Energy drink, no added sugar(s) and with sweetener(s), fortified with vitamins	напиток энергетический без сахара с витаминами
+ciqual:18354	Energy drink, with sugar(s) and with sweetener(s)	напиток энергетический с сахаром и подсластителями
+ciqual:18356	Tonic drink, sugar(s) and sweetener(s) content unknown (average)	тоник
+ciqual:18430	Spring water, bottled	вода родниковая
+ciqual:18899	Oat drink, plain, no added sugar, not fortified, prepacked	напиток овсяный без сахара
+ciqual:18900	Soy drink, plain, not fortified, prepacked	напиток соевый натуральный
+ciqual:18901	Soy drink, plain, fortified with calcium, prepacked	напиток соевый натуральный с кальцием
+ciqual:18902	Soy drink, flavoured, with sugar(s), not fortified, prepacked	напиток соевый ароматизированный с сахаром
+ciqual:18903	Soy drink, flavoured, with sugar(s), fortified in calcium, prepacked	напиток соевый ароматизированный с сахаром и кальцием
+ciqual:18904	Rice drink, plain, prepacked	напиток рисовый
+ciqual:18906	Chestnut drink, plain, prepacked	напиток каштановый
+ciqual:18907	Coconut drink, plain, prepacked	напиток кокосовый
+ciqual:19000	Milk, bulk	молоко
+ciqual:19010	Milk, whole, raw	молоко цельное сырое
+ciqual:19012	Baby milk, growing-up milk, ready to drink	молочко детское готовое
+ciqual:19013	Baby milk, infant formula, ready to drink	детская смесь готовая
+ciqual:19014	Baby milk, follow-on formula, ready to drink	детская смесь второго этапа готовая
+ciqual:19015	Baby milk, for premature baby, ready to drink	детская смесь для недоношенных готовая
+ciqual:19016	Milk, whole (average)	молоко цельное
+ciqual:19021	Milk powder, whole	молоко сухое цельное
+ciqual:19023	Milk, whole, UHT	молоко цельное УВТ
+ciqual:19024	Milk, whole, pasteurised	молоко цельное пастеризованное
+ciqual:19026	Condensed milk, no added sugars, whole	молоко сгущённое без сахара цельное
+ciqual:19027	Condensed milk, with sugar(s), whole	молоко сгущённое с сахаром цельное
 ciqual:19033	Milk, semi-skimmed (average)	молоко 1,5 %
+ciqual:19037	Milk, semi-skimmed, UHT, fortified with vitamin D	молоко 1,5 % УВТ с витамином D
+ciqual:19038	Milk, 1,2% fat, UHT, fortified with vitamins	молоко 1,2 % УВТ с витаминами
+ciqual:19039	Milk, fat content unknown, UHT (average)	молоко УВТ
+ciqual:19041	Milk, semi-skimmed, UHT	молоко 1,5 % УВТ
+ciqual:19042	Milk, semi-skimmed, pasteurised	молоко 1,5 % пастеризованное
+ciqual:19044	Milk powder, semi-skimmed	молоко сухое 1,5 %
+ciqual:19050	Milk, skimmed, UHT	молоко обезжиренное УВТ
+ciqual:19051	Milk, skimmed, pasteurised	молоко обезжиренное пастеризованное
+ciqual:19054	Milk powder, skimmed	молоко сухое обезжиренное
+ciqual:19060	Milk, semi-skimmed, UHT, reduced lactose	молоко 1,5 % УВТ с пониженной лактозой
+ciqual:19114	Vanilla flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток ванильный с сахаром и витамином D
+ciqual:19116	Coffee flavoured milk beverage, with sugar(s), partially skimmed fortified with vitamin(s) and/or mineral(s)	молочный напиток кофейный с сахаром и витаминами
+ciqual:19117	Coffee flavoured milk beverage, with sugar(s), partially skimmed, not fortified	молочный напиток кофейный с сахаром
+ciqual:19118	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, not fortified	молочный напиток шоколадный с сахаром
+ciqual:19119	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamin(s) and/or mineral(s)	молочный напиток шоколадный с сахаром и витаминами
+ciqual:19120	Flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamins and/ormineral(s) (average)	молочный напиток ароматизированный с сахаром и витаминами
+ciqual:19127	Strawberry flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	молочный напиток клубничный с сахаром и витамином D
+ciqual:19200	Goat milk, whole, UHT	молоко козье цельное УВТ
+ciqual:19201	Goat milk, half skimmed, UHT	молоко козье полуобезжиренное УВТ
+ciqual:19202	Goat milk, whole, raw	молоко козье цельное сырое
+ciqual:19225	Mare's milk, whole	молоко кобылье цельное
+ciqual:19250	Sheep milk, whole	молоко овечье цельное
+ciqual:19270	Buffalo milk, whole	молоко буйволиное цельное
+ciqual:19402	Cream and similar, fat content unknown (average)	сливки
 ciqual:19403	Cream and similar, fat content unknown, fluid (average)	сливки жидкие
+ciqual:19404	Cream and similar, fat content unknownthick or semi-thick (average)	сливки густые
+ciqual:19410	Cream 30% fat, thick, refrigerated	сливки 30 % густые
+ciqual:19411	Cream, from Isigny, >= 35% fat	сливки Изиньи
+ciqual:19415	Cream 30% fat, semi-thick, UHT	сливки 30 % полугустые УВТ
+ciqual:19417	Cream 30% fat, liquid, UHT	сливки 30 % жидкие УВТ
+ciqual:19420	Whipped cream, aerosol, UHT	взбитые сливки в аэрозоле
+ciqual:19430	Cream, 12-25% fat, light, semi-thick, UHT	сливки лёгкие 12-25 % полугустые УВТ
+ciqual:19431	Cream, 12-25% fat, light, thick, refrigerated	сливки лёгкие 12-25 % густые
+ciqual:19432	Cream based preparation, light, 5% fat, fluid or thick	сливочный продукт лёгкий 5 %
+ciqual:19433	Cream based preparation, light, about 4% fat, fluid or thick	сливочный продукт лёгкий 4 %
+ciqual:19434	Cream based preparation with aromatic herbs 19% fat, to cook	сливочный продукт для готовки с травами 19 %
+ciqual:19435	Cream based preparation with aromatic herbs 12% fat, to cook	сливочный продукт для готовки с травами 12 %
+ciqual:19436	Cream, 12-20% fat, light, fluid, refrigerated	сливки лёгкие 12-20 % жидкие
+ciqual:19437	Cheese, breaded, to grill, prepacked, from goat's milk	сыр козий в панировке для жарки
+ciqual:19500	Fermented milk drink, flavoured, with sweetener(s), reduced sugar, 0% fat, with L Casei	кисломолочный напиток обезжиренный без сахара с L. casei
+ciqual:19501	Quark, plain or with fruits (average)	творожок
+ciqual:19508	Fermented milk drink, flavoured, with sugar(s)	кисломолочный напиток ароматизированный с сахаром
+ciqual:19516	Fermented milk drink, flavoured, with sugar(s), with L Casei	кисломолочный напиток ароматизированный с сахаром и L. casei
+ciqual:19534	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D	кисломолочный напиток ароматизированный с сахаром и витамином D
+ciqual:19535	Fermented milk drink, with fruits, with sugar(s)	кисломолочный напиток с фруктами сладкий
+ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	кисломолочный напиток сладкий с фруктами и витамином D
+ciqual:19538	Fermented milk drink, plain, with sugar(s), with L Casei	кисломолочный напиток натуральный сладкий с L. casei
+ciqual:19539	Fermented milk, yogurt type with bifidus, flavoured, with sugar(s)	бифидойогурт ароматизированный сладкий
+ciqual:19541	Fermented milk, yogurt type with bifidus, with fruits, 0% fat, with sweetener(s)	бифидойогурт обезжиренный с фруктами без сахара
+ciqual:19542	Fermented milk, yogurt type with bifidus, with fruits, with sugar(s)	бифидойогурт с фруктами сладкий
+ciqual:19543	Fermented milk, yogurt type with sterol esters, with fruits, 0% fat, with sweetener(s)	кисломолочный продукт обезжиренный с фруктами со стеролами без сахара
+ciqual:19544	Fermented milk, yogurt type with bifidus, plain, 0% fat	бифидойогурт обезжиренный натуральный
 ciqual:19546	Fermented milk, yogurt type with bifidus, plain	бифидойогурт натуральный
+ciqual:19550	Yogurt, Greek-style, ewe's milk	йогурт греческий из овечьего молока
+ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	кисломолочный напиток ароматизированный с сахаром, витамином D и L. casei
+ciqual:19552	Yogurt, Greek-style, on a fruit layer, with sugar(s)	йогурт греческий на фруктовой подушке сладкий
 ciqual:19553	Yogurt, ewe's milk, flavoured, with sugar(s)	йогурт из овечьего молока сладкий
+ciqual:19554	Yogurt, ewe's milk, plain, around 3% fat	йогурт из овечьего молока натуральный 3 %
+ciqual:19555	Yogurt, ewe's milk, on a fruit layer, with sugar(s)	йогурт из овечьего молока на фруктовой подушке сладкий
+ciqual:19556	Yogurt, goat's milk, plain	йогурт из козьего молока натуральный
+ciqual:19557	Yogurt or fermented milk, on a fruit layer, with sugar(s)	йогурт на фруктовой подушке сладкий
+ciqual:19559	Yogurt or fermented milk, flavoured, 0% fat, with sweetener(s)	йогурт обезжиренный ароматизированный без сахара
+ciqual:19572	Fresh cream cheese, petit-suisse type, chocolate flavoured, with sugar(s)	пти-суисс шоколадный сладкий
+ciqual:19574	Yogurt or fermented milk, flavoured, 0% fat, with sweetener(s), fortified with vitamin D	йогурт обезжиренный ароматизированный без сахара с витамином D
+ciqual:19575	Yogurt or fermented milk, flavoured, with sugar(s)	йогурт ароматизированный сладкий
+ciqual:19577	Yogurt or fermented milk, flavoured, with cream, with sugar(s)	йогурт ароматизированный со сливками сладкий
+ciqual:19578	Yogurt or fermented milk, flavoured, with sugar(s), fortified with vitamin D	йогурт ароматизированный сладкий с витамином D
+ciqual:19579	Yogurt or fermented milk, with cereals	йогурт с злаками
+ciqual:19580	Yogurt or fermented milk, with chocolate flakes, with cream, with sugar(s)	йогурт с шоколадной крошкой и сливками сладкий
+ciqual:19581	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s)	йогурт обезжиренный с фруктами без сахара
+ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	йогурт обезжиренный с фруктами и витамином D без сахара
+ciqual:19584	Mascarpone cheese, from cow's milk	маскарпоне
 ciqual:19585	Ricotta cheese, from cow's milk	рикотта
+ciqual:19587	Yogurt or fermented milk, with fruits, with sugar(s)	йогурт с фруктами сладкий
 ciqual:19589	Yogurt or fermented milk, with fruits, with cream, with sugar(s)	йогурт с фруктами и сливками сладкий
+ciqual:19590	Mozzarella cheese, from cow's milk	моцарелла
+ciqual:19591	Mozzarella cheese, from buffala's milk	моцарелла ди буфала
+ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	йогурт сладкий с фруктами и витамином D
+ciqual:19593	Yogurt or fermented milk, plain	йогурт натуральный
+ciqual:19594	Yogurt or fermented milk, plain, 0% fat	йогурт обезжиренный натуральный
+ciqual:19596	Yogurt or fermented milk, plain, 0% fat, fortified with vitamin D	йогурт обезжиренный натуральный с витамином D
+ciqual:19598	Yogurt or fermented milk, plain, with cream	йогурт натуральный сливочный
+ciqual:19599	Yogurt or fermented milk, plain, with sugar(s)	йогурт натуральный сладкий
+ciqual:19600	Yoghurt or fermented milk, plain (average)	йогурт натуральный без указания жирности
+ciqual:19624	Yoghurtor fermented milk, plain or with fruits (average)	йогурт натуральный или с фруктами
+ciqual:19628	Yoghurt or fermented milk, with fruits (average)	йогурт с фруктами
+ciqual:19638	Drained soft fresh cheese, with fruit sauce	фесель с фруктовым соусом
+ciqual:19639	Drained soft fresh cheese, 0% fat	фесель обезжиренная
+ciqual:19641	Drained soft fresh cheese, around 6% fat	фесель 6 %
+ciqual:19643	Quark and whipped cream, on a fruit layer, with sugar(s)	творожок со взбитыми сливками на фруктовой подушке сладкий
+ciqual:19644	Quark, plain, 0% fat	творожок обезжиренный
+ciqual:19645	Quark, plain, 0% fat, fortified with vitamin D	творожок обезжиренный с витамином D
+ciqual:19646	Quark, plain, 2-3% fat	творожок 2-3 %
+ciqual:19648	Quark, plain, 2-3% fat, fortified with vitamin D	творожок 2-3 % с витамином D
+ciqual:19650	Quark and whipped cream, plain	творожок со взбитыми сливками
+ciqual:19654	Quark or dairy specialty, with chocolate flakes, 7-8% fat, with sugar(s)	творожок с шоколадной крошкой 7-8 % сладкий
+ciqual:19656	Quark or dairy specialty, with fruits, 0% fat, with sugar(s)	творожок обезжиренный с фруктами сладкий
+ciqual:19657	Quark or dairy specialty, with fruits, 2-3% fat, with sugar(s)	творожок 2-3 % с фруктами сладкий
+ciqual:19659	Quark or dairy specialty, with fruits, 7-8% fat, with sugar(s)	творожок 7-8 % с фруктами сладкий
+ciqual:19660	Quark or dairy specialty, on a fruit layer, 7-8% fat, with sugar(s)	творожок 7-8 % на фруктовой подушке сладкий
+ciqual:19663	Fresh cream cheese, petit-suisse type, plain, 0% fat	пти-суисс обезжиренный
+ciqual:19664	Fresh cream cheese, petit-suisse type, plain, around 4% fat	пти-суисс 4 %
+ciqual:19665	Fresh cream cheese mousse, on a fruit layer, 0% fat, with sweetener(s), fortified with calcium and vitamin D	мусс творожный на фруктовой подушке обезжиренный без сахара с кальцием и витамином D
+ciqual:19666	Fresh cream cheese, petit-suisse type, plain, around 10% fat	пти-суисс 10 %
+ciqual:19669	Yoghurt, rich in protein, on a fruit layer, with sugar(s)	йогурт высокобелковый на фруктовой подушке сладкий
+ciqual:19671	Yogurt or fermented milk, with fruits or flavoured, 0% fat (average)	йогурт обезжиренный с фруктами
+ciqual:19672	Yogurt or fermented milk, with fruits or flavoured, no reduced fat (average)	йогурт с фруктами цельный
+ciqual:19673	Custard dessert, reduced fat, refrigerated	десерт кремовый нежирный
+ciqual:19674	Flan with eggs, refrigerated	флан яичный
+ciqual:19675	Yogurt or fermented milk, with fruits or flavoured, with sweetener(s) (average)	йогурт с фруктами без сахара
 ciqual:19676	Yogurt or fermented milk, with fruits or flavoured, with sugar(s) (average)	йогурт фруктовый сладкий
+ciqual:19677	Yogurt or fermented milk, with fruits or flavoured, no reduced fat, with sugar(s) (average)	йогурт с фруктами сладкий цельный
+ciqual:19678	Renneted milk, flavoured, refrigerated	молоко сычужное ароматизированное
+ciqual:19679	Milk jelly, flavoured, covered with caramel sauce, refrigerated	желе молочное с карамельным соусом
+ciqual:19680	Milk jelly, flavoured, refrigerated	желе молочное ароматизированное
+ciqual:19681	Custard (chocolate, coffee, caramel or vanilla) topped with whipped cream, refrigerated	десерт льежуа
+ciqual:19682	Yogurt or fermented milk, with fruits or flavoured (average)	йогурт с фруктами или ароматизированный
+ciqual:19684	Egg custard, refrigerated	яично-молочный десерт
+ciqual:19685	Panna cotta, with fruit preparation or caramel, refrigerated	панна-котта
+ciqual:19686	Dairy specialty or milk-based desert, flavoured, reduced fat, with sugar(s) and sweetener(s), refrigerated	десерт молочный нежирный ароматизированный сладкий
+ciqual:19688	Rum baba, refrigerated	баба ромовая
+ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный сладкий с фруктами и витамином D
+ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт соевый сладкий с фруктами и кальцием
+ciqual:19693	Soy dessert, plain, no added sugars, not fortified, fermented, refrigerated	десерт соевый натуральный без сахара
+ciqual:19694	Soy dessert, plain, no added sugars, fortified with calcium, fermented, refrigerated	десерт соевый натуральный без сахара с кальцием
+ciqual:19695	Soy dessert, with fruits, with sugar(s), not fortified, fermented, refrigerated	десерт соевый с фруктами сладкий
+ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	десерт соевый сладкий с миндалём, витаминами и минералами
+ciqual:19697	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный ароматизированный сладкий с витамином D
+ciqual:19698	Tiramisu with coffee, refrigerated	тирамису с кофе
+ciqual:19699	Tiramisu with fruits, refrigerated	тирамису с фруктами
+ciqual:19705	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s)	творожок обезжиренный ароматизированный сладкий
+ciqual:19707	Quark or dairy specialty, on a fruit layer, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	творожок обезжиренный на фруктовой подушке сладкий с витамином D
+ciqual:19708	Quark or dairy specialty, on a fruit layer, 0% fat, with sweetener(s), no added sugars, fortified with vitamin D	творожок обезжиренный на фруктовой подушке без сахара с витамином D
+ciqual:19709	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), no added sugars	творожок обезжиренный ароматизированный без сахара
+ciqual:19711	Quark, plain, 7-8% fat	творожок 7-8 %
+ciqual:19712	Quark from ewe's milk, plain, around 5% fat	творожок из овечьего молока 5 %
+ciqual:19713	Quark from goat's milk, plain, around 7% fat	творожок из козьего молока 7 %
 ciqual:19714	Quark or dairy specialty, flavoured, 0% fat, with sugar(s)	творожок обезжиренный сладкий ароматизированный
+ciqual:19715	Quark or dairy specialty, flavoured, 2-3% fat, with sugar(s)	творожок 2-3 % ароматизированный сладкий
+ciqual:19716	Quark, plain, 2-3% fat, with sugar(s)	творожок 2-3 % сладкий
+ciqual:19718	Quark or dairy specialty, flavoured, 7-8% fat, with sugar(s)	творожок 7-8 % ароматизированный сладкий
+ciqual:19719	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s)	пти-суисс с фруктами 2-3 % сладкий
+ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	пти-суисс 2-3 % сладкий с фруктами и витамином D
+ciqual:19721	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s)	пти-суисс ароматизированный 2-3 % сладкий
+ciqual:19722	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s), fortified with vitamin D	пти-суисс ароматизированный 2-3 % сладкий с витамином D
+ciqual:19723	Yogurt or fermented milk, plain, fortified with vitamin D	йогурт натуральный с витамином D
+ciqual:19724	Yoghurt, rich in protein, plain	йогурт высокобелковый натуральный
+ciqual:19725	Quark or dairy specialty, on a fruit layer, 0% fat, with sugar(s)	творожок обезжиренный на фруктовой подушке сладкий
+ciqual:19726	Yogurt or fermented milk, plain, with sugar(s), fortified with vitamin D	йогурт натуральный сладкий с витамином D
+ciqual:19727	Yogurt, goat's milk, with fruits, with sugar(s)	йогурт из козьего молока с фруктами сладкий
+ciqual:19728	Yogurt, goat's milk, on a fruit layer, with sugar(s)	йогурт из козьего молока на фруктовой подушке сладкий
+ciqual:19733	Yogurt or fermented milk, on a fruit layer, with cream, with sugar(s)	йогурт на фруктовой подушке со сливками сладкий
+ciqual:19801	Fermented milk drink, plain, skimmed milk	кисломолочный напиток обезжиренный
+ciqual:19805	Fermented milk drink, plain, whole milk	кисломолочный напиток из цельного молока
+ciqual:19852	Chestnut mousse, refrigerated	мусс каштановый
+ciqual:19860	Yogurt, Greek-style, plain	йогурт греческий натуральный
+ciqual:19862	Yogurt, Greek-style, flavoured, with sugar(s)	йогурт греческий ароматизированный сладкий
+ciqual:19863	Tzatziki, with yogurt, prepacked	цацики на йогурте
+ciqual:19864	Tzatziki, with quark, prepacked	цацики на творожном сыре
+ciqual:19865	Milk kefir	кефир
+ciqual:19882	Yogurt, ewe's milk, plain, around 6% fat	йогурт из овечьего молока натуральный 6 %
+ciqual:19999	Sweet pepper, green , yellow or red, cooked (average)	перец болгарский варёный
 ciqual:2000	Pineapple juice, from concentrate	ананасовый сок из концентрата
+ciqual:20000	Artichoke, globe, cooked	артишок варёный
+ciqual:20002	Eggplant, cooked	баклажан варёный
+ciqual:20003	Beetroot, cooked	свёкла варёная
+ciqual:20004	Swiss chard, stalk without leaves, raw	стебли мангольда сырые
+ciqual:20005	Swiss chard, stalk without leaves, cooked	стебли мангольда варёные
+ciqual:20007	Carrot, canned, drained	морковь консервированная слитая
+ciqual:20009	Carrot, raw	морковь сырая
+ciqual:20010	Mushroom, all types, raw	грибы сырые
+ciqual:20011	Mushroom, all types, canned, drained	грибы консервированные слитые
+ciqual:20012	Curly endive, raw	эндивий кудрявый сырой
+ciqual:20014	Red cabbage, raw	капуста краснокочанная сырая
+ciqual:20015	Green cabbage, cooked	капуста зелёная варёная
+ciqual:20016	Cauliflower, raw	капуста цветная сырая
+ciqual:20017	Cauliflower, boiled	капуста цветная варёная
+ciqual:20018	Palm heart, canned, drained	сердце пальмы консервированное слитое
+ciqual:20019	Cucumber, flesh and skin, raw	огурец сырой
 ciqual:2002	Multifruit juice, pure juice, multivitamin	мультифруктовый сок с витаминами
+ciqual:20020	Courgette or zucchini, flesh and skin, raw	кабачок сырой
+ciqual:20021	Courgette or zucchini, flesh and skin, cooked	кабачок варёный
+ciqual:20022	Watercress, raw	кресс водяной сырой
+ciqual:20023	Celery stalk, raw	сельдерей черешковый сырой
+ciqual:20025	Celeriac, cooked	сельдерей корневой варёный
+ciqual:20026	Chicory, raw	цикорий салатный сырой
+ciqual:20027	Spinach, cooked	шпинат варёный
+ciqual:20028	Fennel, raw	фенхель сырой
+ciqual:20029	Mung bean, sprouted, canned, drained	ростки маш консервированные слитые
+ciqual:20030	French bean, cooked	фасоль стручковая варёная
+ciqual:20031	Lettuce, raw	салат-латук сырой
+ciqual:20033	Turnip, cooked	репа варёная
+ciqual:20034	Onion, raw	лук репчатый сырой
+ciqual:20035	Onion, cooked	лук репчатый варёный
+ciqual:20036	Garden peas, canned, drained	горошек зелёный консервированный слитый
+ciqual:20037	Garden peas, cooked	горошек зелёный варёный
+ciqual:20038	Dandelion, raw	одуванчик сырой
+ciqual:20039	Leek, raw	порей сырой
 ciqual:2004	Fruit juice (average)	фруктовый сок
+ciqual:20040	Leek, cooked	порей варёный
+ciqual:20041	Sweet pepper, green, yellow or red, raw	перец болгарский сырой
+ciqual:20044	Pumpkin, raw	тыква крупноплодная сырая
+ciqual:20045	Radish, raw	редиска сырая
+ciqual:20046	Salsify, cooked	салсифи варёный
+ciqual:20048	Tomato, peeled, canned, drained	томаты очищенные консервированные слитые
+ciqual:20049	Corn, on the cob, cooked	кукуруза в початках варёная
+ciqual:20050	Jerusalem artichoke, cooked	топинамбур варёный
+ciqual:20051	Mixed diced vegetables, canned, drained	овощное ассорти консервированное слитое
+ciqual:20052	Artichoke, globe, raw	артишок сырой
+ciqual:20053	Eggplant, raw	баклажан сырой
+ciqual:20054	Cardoon, raw	кардончо сырой
+ciqual:20055	Celeriac, raw	сельдерей корневой сырой
+ciqual:20056	Button mushroom or cultivated mushroom, raw	шампиньоны сырые
+ciqual:20057	Broccoli, raw	брокколи сырая
+ciqual:20058	Brussels sprout, raw	капуста брюссельская сырая
+ciqual:20059	Spinach, raw	шпинат сырой
 ciqual:2006	Carrot juice, pure juice	морковный сок
+ciqual:20060	Spinach, canned, drained	шпинат консервированный слитый
+ciqual:20061	French bean, raw	фасоль стручковая сырая
+ciqual:20062	French bean, canned, drained	фасоль стручковая консервированная слитая
+ciqual:20063	Butter bean or yellow bean, canned, drained	фасоль масляная консервированная слитая
+ciqual:20064	Turnip, peeled, raw	репа очищенная сырая
+ciqual:20065	Kohlrabi, raw	кольраби сырой
+ciqual:20066	Corn, sweet, canned, drained	кукуруза сладкая консервированная слитая
+ciqual:20067	Artichoke, canned, drained	артишок консервированный слитый
+ciqual:20068	Tomato paste, concentrated, canned	томатная паста концентрированная
+ciqual:20069	Green cabbage, raw	капуста зелёная сырая
 ciqual:2007	Lemon juice, homemade	лимонный сок домашний
+ciqual:20070	French bean, frozen, raw	фасоль стручковая замороженная сырая
+ciqual:20071	French bean, frozen, cooked	фасоль стручковая замороженная варёная
+ciqual:20072	Garden peas, raw	горошек зелёный сырой
+ciqual:20074	Artichoke, globe, steamed	артишок на пару
+ciqual:20076	Asparagus, canned, drained	спаржа консервированная слитая
+ciqual:20077	Brussels sprout, canned, drained	капуста брюссельская консервированная слитая
+ciqual:20078	Celery stalk, canned, drained	сельдерей черешковый консервированный слитый
+ciqual:20079	Button mushroom or cultivated mushroom, canned, drained	шампиньоны консервированные слитые
 ciqual:2008	Cocktail, alcohol-free (juices and syrup-based cocktail)	коктейль безалкогольный фруктовый
+ciqual:20081	Salsify, canned, drained	салсифи консервированный слитый
+ciqual:20082	Cauliflower, frozen, raw	капуста цветная замороженная сырая
+ciqual:20083	Spinach, frozen, raw	шпинат замороженный сырой
+ciqual:20084	Garden peas, frozen, raw	горошек зелёный замороженный сырой
+ciqual:20085	Sweet pepper, green, raw	перец болгарский зелёный сырой
+ciqual:20086	Sweet pepper, green, cooked	перец болгарский зелёный варёный
+ciqual:20087	Sweet pepper, red, raw	перец болгарский красный сырой
+ciqual:20088	Sweet pepper, red, cooked	перец болгарский красный варёный
+ciqual:20089	Radish, black, raw	редька чёрная сырая
 ciqual:2009	Multifruit nectar, apple base, standard	мультифруктовый нектар на яблочной основе
+ciqual:20090	Escaroles, raw	эскариол сырой
+ciqual:20091	Beetroot, raw	свёкла сырая
+ciqual:20092	Carrot, dehydrated	морковь сушёная
+ciqual:20093	Garden peas and carrots, canned, drained	горошек с морковью консервированный слитый
+ciqual:20094	Kohlrabi, boiled/cooked in water	кольраби варёный
+ciqual:20095	Red cabbage, boiled/cooked in water	капуста краснокочанная варёная
+ciqual:20096	Pumpkin, cooked	тыква варёная
+ciqual:20097	Shallot, raw	шалот сырой
+ciqual:20099	Lamb's lettuce, raw	полевой салат сырой
 ciqual:2010	Multifruit nectar, apple base, multivitamin	мультифруктовый нектар на яблочной основе с витаминами
+ciqual:20101	Mixed vegetables, frozen, raw	смесь овощная замороженная сырая
+ciqual:20102	Button mushroom or cultivated mushroom, boiled/cooked in water	шампиньоны варёные
+ciqual:20103	Chanterelle or girolle mushroom, raw	лисички сырые
+ciqual:20105	Morel, raw	сморчки сырые
+ciqual:20106	Black truffle, raw	трюфель чёрный сырой
+ciqual:20108	Corn, on the cob, frozen, raw	кукуруза в початках замороженная сырая
 ciqual:2011	Multifruit juice, orange base, multivitamin	мультифруктовый сок на апельсиновой основе с витаминами
+ciqual:20111	Sorrel, raw	щавель сырой
+ciqual:20114	Oyster mushroom, raw	вёшенки сырые
+ciqual:20116	White cabbage, raw	капуста белокочанная сырая
+ciqual:20118	Fennel, boiled/cooked in water	фенхель варёный
+ciqual:20119	Tomato, green, raw	томаты зелёные сырые
 ciqual:2012	Orange juice, from concentrate	апельсиновый сок из концентрата
+ciqual:20123	Lettuce, var. batavia, raw	салат батавия сырой
+ciqual:20124	Garden peas, frozen, cooked	горошек зелёный замороженный варёный
+ciqual:20125	Button mushroom or cultivated mushroom, sautéed/pan-fried, without added fat	шампиньоны обжаренные без масла
+ciqual:20127	Purslane, leaf, raw	портулак сырой
+ciqual:20128	Pumpkin (cucurbita moschata), flesh without skin, raw	тыква мускатная без кожуры сырая
 ciqual:2013	Orange juice, fresh	апельсиновый сок свежевыжатый
+ciqual:20132	Red kuri squash, flesh without skin, raw	тыква потимаррон без кожуры сырая
+ciqual:20134	Sweet green hokkaido squash, flesh without skin, raw	тыква хоккайдо без кожуры сырая
+ciqual:20135	Leeks fondue or slow-simmered leeks, prepacked	порей тушёный
+ciqual:20136	Squash, melonnette jaspée from Vendée, flesh without skin, raw	тыква мелонетта без кожуры сырая
+ciqual:20137	Tomato, peeled, canned, in juice, solids and liquids	томаты очищенные в собственном соку консервированные
+ciqual:20138	Squash, butternut, flesh without skin, raw	тыква баттернат без кожуры сырая
+ciqual:20139	Squash, all types, raw	тыква сырая
 ciqual:2014	Apple juice, from concentrate	яблочный сок из концентрата
+ciqual:20141	Squash, butternut, flesh without skin, boiled	тыква баттернат варёная
+ciqual:20143	Squash, spaghetti, flesh without skin, cooked	тыква спагетти варёная
+ciqual:20145	Squash, spaghetti, flesh without skin, raw	тыква спагетти сырая
 ciqual:2015	Grapefruit juice, from concentrate	грейпфрутовый сок из концентрата
+ciqual:20151	Chili pepper, raw	перец чили сырой
+ciqual:20155	Artichoke, globe, heart, canned, drained	сердцевины артишока консервированные слитые
+ciqual:20156	Artichoke, globe, base, canned, drained	основания артишока консервированные слитые
+ciqual:20158	New Zealand spinach, cooked	шпинат новозеландский варёный
+ciqual:20159	Caesar's mushroom or royal agaric, raw	цезарский гриб сырой
 ciqual:2016	Grape juice, pure juice	виноградный сок
+ciqual:20160	Cep or boletus mushroom, raw	белый гриб сырой
+ciqual:20161	Field mushroom, raw	шампиньон полевой сырой
+ciqual:20162	Red endive, raw	радиккио сырой
+ciqual:20163	Green endive, raw	цикорий зелёный сырой
+ciqual:20165	Rutabaga or Swede, cooked	брюква варёная
+ciqual:20166	Pumpkin, flesh without skin, raw	тыква без кожуры сырая
+ciqual:20167	Chinese cabbage (nappa cabbage), raw	капуста пекинская сырая
+ciqual:20168	Sweet pepper, yellow, raw	перец болгарский жёлтый сырой
+ciqual:20169	Tomato flesh without skin, canned	томаты без кожи консервированные
 ciqual:2017	Pomegranate juice, pure juice	гранатовый сок
+ciqual:20170	Tomato puree, canned	пюре томатное консервированное
+ciqual:20171	Cos or romaine lettuce, raw	салат ромэн сырой
+ciqual:20172	Tomato, cherry, raw	томаты черри сырые
+ciqual:20173	Snow pea, raw	горошек стручковый сладкий сырой
 ciqual:2018	Prune juice	сок чернослива
 ciqual:20180	Onion, dried	лук сушёный
+ciqual:20181	Parsnip, raw	пастернак сырой
+ciqual:20183	Mung bean, sprouted, raw	ростки маш сырые
+ciqual:20188	Bamboo shoots, canned, drained	побеги бамбука консервированные слитые
+ciqual:20189	Tomato, dried	томаты сушёные
 ciqual:2019	Grape juice, from concentrate	виноградный сок из концентрата
+ciqual:20192	Tomato, beef heart, raw	томаты бычье сердце сырые
+ciqual:20194	Haricot beans with tomato sauce, canned	фасоль белая в томатном соусе консервированная
+ciqual:20195	Butter bean or yellow bean, raw	фасоль масляная сырая
+ciqual:20196	Jerusalem artichoke, raw	топинамбур сырой
+ciqual:20197	Salsify, black, raw	салсифи чёрный сырой
+ciqual:20198	Bamboo shoots, raw	побеги бамбука сырые
+ciqual:20199	Garden cress, raw	кресс-салат сырой
+ciqual:20200	Iceberg lettuce, raw	салат айсберг сырой
+ciqual:20201	Rutabaga or Swede, raw	брюква сырая
+ciqual:20202	Cloud ear fungus, dried	грибы древесные сушёные
+ciqual:20203	Butter bean or yellow bean, frozen, raw	фасоль масляная замороженная сырая
+ciqual:20204	Broccoli, frozen, raw	брокколи замороженная сырая
+ciqual:20206	Brussels sprout, frozen, raw	капуста брюссельская замороженная сырая
+ciqual:20208	Carrot, frozen, raw	морковь замороженная сырая
+ciqual:20210	Cucumber, flesh without skin, raw	огурец без кожуры сырой
+ciqual:20211	Shiitake mushroom, dried	шиитаке сушёные
+ciqual:20212	Shiitake mushroom, cooked	шиитаке варёные
+ciqual:20214	Garden peas and carrots, frozen, raw	горошек с морковью замороженный сырой
+ciqual:20216	Snow pea, boiled/cooked in water	горошек стручковый сладкий варёный
+ciqual:20217	Roman rocket, raw	руккола сырая
+ciqual:20218	Curly kale, raw	капуста кале сырая
+ciqual:20219	Curly kale, cooked	капуста кале варёная
 ciqual:2022	Strawberry nectar	клубничный нектар
+ciqual:20221	Chinese cabbage (nappa cabbage), sautéed/pan-fried, without added fat	капуста пекинская обжаренная без масла
+ciqual:20228	Button mushroom or cultivated mushroom, frozen, raw	шампиньоны замороженные сырые
 ciqual:2023	Mango juice, fresh	сок манго свежевыжатый
+ciqual:20230	Courgette or zucchini, flesh and skin, frozen, raw	кабачок замороженный сырой
+ciqual:20231	Chinese or Japanese artichokes, frozen, raw	кросн замороженный сырой
+ciqual:20232	Artichoke globe, base, frozen, raw	основания артишока замороженные сырые
+ciqual:20233	Corn, frozen, raw	кукуруза сладкая замороженная сырая
+ciqual:20234	Turnip, frozen, raw	репа замороженная сырая
+ciqual:20235	Onion, frozen, raw	лук репчатый замороженный сырой
+ciqual:20236	Leek, frozen, raw	порей замороженный сырой
+ciqual:20237	Salsify, frozen, raw	салсифи замороженный сырой
+ciqual:20238	Red onion, raw	лук красный сырой
+ciqual:20239	Yellow onion, raw	лук жёлтый сырой
 ciqual:2024	Passion fruit juice, fresh	сок маракуйи свежевыжатый
+ciqual:20240	Piperade, Basque-style (fondue of sweet peppers and tomatoes with onions and garlic), prepacked	пиперада
+ciqual:20241	Cardoon, cooked	кардончо варёный
+ciqual:20242	Tomato, flesh and skin, boiled/cooked in water	томаты варёные
+ciqual:20243	Snow pea, cooked	горошек стручковый сладкий приготовленный
+ciqual:20246	Baby food jar with vegetables, from 4-6 months	детское пюре овощное от 4-6 месяцев
 ciqual:20247	Baby food jar with vegetables and starchy food, from 4-6 months	детское пюре из овощей с крупой
+ciqual:20248	Baby meal, vegetables and starchy food, from 6-8 months	детское блюдо овощное с гарниром от 6-8 месяцев
+ciqual:20249	Baby meal, vegetable with milk/cream and starchy food, from 6-8 months	детское блюдо овощное с молоком и гарниром от 6-8 месяцев
 ciqual:2025	Grapefruit juice, fresh	грейпфрутовый сок свежевыжатый
+ciqual:20250	Baby meal, vegetable with milk/cream and starchy food, from 8-12 months	детское блюдо овощное с молоком и гарниром от 8-12 месяцев
+ciqual:20251	Baby meal, vegetable with milk/cream and starchy food, from 12 months	детское блюдо овощное с молоком и гарниром от 12 месяцев
+ciqual:20252	Baby soup, with vegetables and potatoes	суп детский овощной с картофелем
+ciqual:20253	Baby soup, with vegetables, cereals and milk	суп детский с овощами, злаками и молоком
+ciqual:20254	Baby meal, vegetable with milk/cream and starchy food, from 18 months	детское блюдо овощное с молоком и гарниром от 18 месяцев
+ciqual:20255	Shallot, cooked	шалот варёный
+ciqual:20256	Tomato, dried, in oil	томаты сушёные в масле
+ciqual:20257	French bean, puree	пюре из стручковой фасоли
+ciqual:20258	Vegetables (3-4 types), mashed	пюре овощное из нескольких видов
+ciqual:20259	Broccoli, puree	пюре из брокколи
 ciqual:2026	Tomato juice, pure juice, 3 g salt/L	томатный сок солёный (3 г/л)
+ciqual:20260	Tomato coulis, canned (tomato puree semi-reduced 11%)	кулис томатный консервированный
+ciqual:20261	Carrots, puree	пюре морковное
+ciqual:20262	Vegetables, pan-fried without mushrooms, seasonned, frozen, raw	овощи для жарки приправленные без грибов замороженные сырые
+ciqual:20263	Mixed vegetables for soups, frozen, raw	овощи для супа замороженные сырые
+ciqual:20264	Courgette or zucchini, puree	пюре из кабачка
+ciqual:20265	Thinly-shredded or diced vegetables, frozen, raw	овощи нарезанные соломкой или кубиком замороженные сырые
+ciqual:20266	Mixed vegetables for ratatouille, frozen	овощи для рататуя замороженные
+ciqual:20267	Spring vegetables, frozen, raw (green peas, potatoes, green beans, carrots, onions)	смесь овощная весенняя замороженная сырая
+ciqual:20268	Tomato paste, double concentrate, canned	томатная паста двойной концентрации
+ciqual:20269	Flat bean, raw	фасоль римская сырая
 ciqual:2027	Grapefruit juice, pure juice	грейпфрутовый сок
+ciqual:20270	Spinach, young leaves for salad, raw	шпинат молодые листья сырой
+ciqual:20271	Mixed diced vegetables, pre-cooked, to be recooked, frozen	овощное ассорти полуготовое замороженное
+ciqual:20272	Mesclun or salads, mix of baby leaves	месклун
+ciqual:20273	Vegetables, pan-fried or stir-fried, seasonned, Asian-style, frozen, raw	овощи для жарки приправленные по-азиатски замороженные сырые
+ciqual:20274	Vegetables, pan-fried or stir-fried, seasonned, Mediterranean-style, frozen, raw	овощи для жарки приправленные по-средиземноморски замороженные сырые
+ciqual:20275	Sweet pepper, red, canned, drained	перец болгарский красный консервированный слитый
+ciqual:20276	Tomato, round, raw	томаты круглые сырые
+ciqual:20277	Asparagus, white, boiled/cooked in water	спаржа белая варёная
+ciqual:20278	Celeriac, puree	пюре из корневого сельдерея
+ciqual:20279	Asparagus, green, raw	спаржа зелёная сырая
 ciqual:2028	Lemon juice, pure juice	лимонный сок
+ciqual:20280	Romanesco cauliflower or romanesco broccoli, raw	романеско сырой
+ciqual:20282	Asparagus, white or purple, peeled, raw	спаржа белая очищенная сырая
+ciqual:20283	Glasswort (Salicornia sp.), fresh, raw	солерос сырой
+ciqual:20284	Garden peas, puree	пюре из зелёного горошка
+ciqual:20288	Lettuce, sucrine, raw	салат сукрин сырой
+ciqual:20289	Tomato, flesh and skin, roasted/baked	томаты запечённые
+ciqual:20290	Romanesco cauliflower or romanesco broccoli, cooked	романеско варёный
+ciqual:20291	Red kuri squash, flesh without skin, braised	тыква потимаррон тушёная
+ciqual:20292	Pumpkin (cucurbita moschata), flesh without skin, cooked	тыква мускатная варёная
+ciqual:20293	Coco bean, boiled/cooked in water	фасоль коко варёная
+ciqual:20295	Lettuce, oak-leaf, raw	салат дуболистный сырой
+ciqual:20296	Chinese cabbageor bok choï bredes, rods and leafs, steamed, from the island La Réunion (Brassica rapa subsp. Chinensis)	бок-чой на пару
+ciqual:20297	Chayote, without skin, pitted, steamed, sampled in the island La Réunion (Sechium edule)	чайот на пару
+ciqual:20298	Carrots, , seasoned puree with cream, prepacked	пюре морковное со сливками
+ciqual:20299	Asparagus, green, boiled/cooked in water	спаржа зелёная варёная
 ciqual:2030	Lime juice, fresh	сок лайма свежевыжатый
+ciqual:20300	Eggplant, flesh and skin, roasted/baked	баклажан запечённый
+ciqual:20301	Swiss chard, leaf and stalk, boiled/cooked in water	мангольд варёный
+ciqual:20302	Broccoli, boiled/cooked in water, crunchy	брокколи варёная хрустящая
+ciqual:20303	Broccoli, boiled/cooked in water, tender	брокколи варёная мягкая
+ciqual:20304	Broccoli, steamed	брокколи на пару
+ciqual:20305	Carrot, boiled/cooked in water, crunchy	морковь варёная хрустящая
+ciqual:20306	Carrot, boiled/cooked in water, tender	морковь варёная мягкая
+ciqual:20307	Carrot, steamed	морковь на пару
+ciqual:20308	White cabbage, boiled/cooked in water	капуста белокочанная варёная
+ciqual:20309	Brussels sprout, boiled/cooked in water	капуста брюссельская варёная
 ciqual:2031	Lime juice, pure juice	сок лайма
+ciqual:20310	Red cabbage, braised	капуста краснокочанная тушёная
+ciqual:20311	Green cabbage, boiled/cooked in water	капуста зелёная отварная
+ciqual:20312	Cauliflower, steamed	капуста цветная на пару
+ciqual:20313	Courgette or zucchini, flesh and skin, roasted/baked	кабачок запечённый
+ciqual:20314	Celery stalk, braised	сельдерей черешковый тушёный
+ciqual:20315	Celeriac, boiled/cooked in water	сельдерей корневой отварной
+ciqual:20316	Chicory, roasted/baked	цикорий салатный запечённый
+ciqual:20317	Fennel, braised	фенхель тушёный
+ciqual:20318	Butter bean or yellow bean, boiled/cooked in water	фасоль масляная варёная
 ciqual:2032	Tomato juice, pure juice, 6 g salt/L	томатный сок солёный (6 г/л)
+ciqual:20320	French bean, boiled/cooked in water	фасоль стручковая отварная
+ciqual:20321	Turnip, boiled/cooked in water	репа отварная
+ciqual:20322	Onion, white or yellow, sautéed/pan-fried, without added fat	лук репчатый обжаренный без масла
+ciqual:20323	Spring onion, sautéed/pan-fried, without added fat	лук зелёный обжаренный без масла
+ciqual:20324	Onion, red, sautéed/pan-fried, without added fat	лук красный обжаренный без масла
+ciqual:20325	Parsnip, braised	пастернак тушёный
+ciqual:20326	Garden peas, boiled/cooked in water	горошек зелёный отварной
+ciqual:20327	Leek, boiled/cooked in water	порей отварной
+ciqual:20328	Sweet pepper, yellow, sautéed/pan-fried, without added fat	перец болгарский жёлтый обжаренный без масла
+ciqual:20329	Sweet pepper, red, sautéed/pan-fried, without added fat	перец болгарский красный обжаренный без масла
 ciqual:2033	Multifruit juice, juice and fruit puree	мультифруктовый сок с фруктовым пюре
+ciqual:20330	Sweet pepper, green, sautéed/pan-fried, without added fat	перец болгарский зелёный обжаренный без масла
+ciqual:20331	Red kuri squash, flesh without skin, boiled/cooked in water	тыква потимаррон отварная
 ciqual:20332	Pumpkin, roasted/baked	тыква запечённая
+ciqual:20333	Salsify, boiled/cooked in water	салсифи отварной
+ciqual:20335	Shallot, sautéed/pan-fried, without added fat	шалот обжаренный без масла
+ciqual:20336	Spinach, boiled/cooked in water	шпинат отварной
+ciqual:20337	Plant-based sausage with tofu (vegan), prepacked	сосиска растительная с тофу веганская
+ciqual:20338	Plant-based sausage with tofu (not vegan), prepacked	кнель из тофу
+ciqual:20339	Chinese cabbage, pak choï ou pak choy, cooked	бок-чой варёный
 ciqual:2034	Mandarin or clementine juice, pure juice	сок мандарина
+ciqual:20340	Chinese cabbage, pak choï ou pak choy, raw	бок-чой сырой
+ciqual:20343	Tomato, marmande, raw	томаты марманд сырые
+ciqual:20344	Tomato, black krim, raw	томаты чёрный крым сырые
+ciqual:20345	Tomato, long, raw	томаты удлинённые сырые
+ciqual:20346	Kale, raw	кейл сырой
+ciqual:20347	Drumstick or moringa pods, raw	стручки моринги сырые
+ciqual:20348	Drumstick or moringaleaves, raw	листья моринги сырые
+ciqual:20349	Asparagus, boiled/cooked in water (average)	спаржа отварная
 ciqual:2035	Multifruit juice, pure juice, standard	мультифруктовый сок
+ciqual:20350	Broccoli, boiled/cooked in water (average)	брокколи отварная
+ciqual:20351	Broccoli, cooked (average)	брокколи приготовленная
+ciqual:20352	Carrot, boiled/cooked in water (average)	морковь отварная
+ciqual:20353	Carrot, cooked (average)	морковь приготовленная
+ciqual:20354	Celery stalk, cooked (average)	сельдерей черешковый приготовленный
+ciqual:20355	Red cabbage, cooked (average)	капуста краснокочанная приготовленная
+ciqual:20356	Fennel, cooked (average)	фенхель приготовленный
+ciqual:20357	Red kuri squash, flesh without skin, cooked (average)	тыква потимаррон приготовленная
+ciqual:20358	Tomato, flesh and skin, cooked (average)	томаты приготовленные
+ciqual:20359	Lentil, dried (average)	чечевица сухая
 ciqual:2036	Multifruit juice, grape base, standard	мультифруктовый сок на виноградной основе
+ciqual:20360	Lentil, boiled/cooked in water (average)	чечевица отварная
 ciqual:2038	Multifruit juice, orange base, standard	мультифруктовый сок на апельсиновой основе
+ciqual:20385	Tomato, raw (average)	томаты сырые
 ciqual:2039	Pomegranate juice, fresh	гранатовый сок свежевыжатый
 ciqual:2040	Acerola juice, fresh	сок ацеролы свежевыжатый
 ciqual:2043	Apricot nectar	нектар абрикосовый
 ciqual:2045	Papaya nectar	нектар папайи
 ciqual:2048	Multifruit juice, apple base, standard	мультифруктовый сок на яблочной основе
+ciqual:20496	Mixed vegetables for couscous, frozen, raw	овощи для кускуса замороженные сырые
+ciqual:20497	Mixed vegetables for couscous, cooked	овощи для кускуса приготовленные
+ciqual:20498	Vegetables with mushrooms, pan-fried or stir-fried, seasonned, country-style, frozen	овощи с грибами для жарки приправленные замороженные
+ciqual:20499	Vegetable, cooked (average)	овощи приготовленные
 ciqual:2050	Multifruit juice, apple base, multivitamin	мультифруктовый сок на яблочной основе с витаминами
+ciqual:20500	Broad bean, boiled/cooked in water	бобы отварные
+ciqual:20501	Haricot bean, dried	фасоль белая сухая
+ciqual:20502	Haricot bean, boiled/cooked in water	фасоль белая отварная
+ciqual:20503	Red kidney bean, boiled/cooked in water	фасоль красная отварная
+ciqual:20506	Split pea, boiled/cooked in water	горох колотый отварной
+ciqual:20507	Chick pea, boiled/cooked in water	нут отварной
+ciqual:20508	Flageolet bean, canned, drained	фасоль флажоле консервированная слитая
+ciqual:20510	Lentil, seasoned, canned, drained	чечевица приправленная консервированная слитая
+ciqual:20511	Haricot bean, canned, drained	фасоль белая консервированная слитая
+ciqual:20513	Flageolet bean, boiled/cooked in water	фасоль флажоле отварная
+ciqual:20515	Split pea, dried	горох колотый сухой
+ciqual:20516	Chick pea, dried	нут сухой
+ciqual:20517	Broad bean, to shell, fresh, raw	бобы свежие в стручках сырые
+ciqual:20518	Broad bean, dried	бобы сухие
 ciqual:2052	Fruit and vegetable juice, pure juice	сок фруктово-овощной
+ciqual:20521	Lentils seeds, sprouted, fresh, raw	ростки чечевицы свежие сырые
+ciqual:20524	Red kidney bean, canned, drained	фасоль красная консервированная слитая
+ciqual:20525	Red kidney bean, dried	фасоль красная сухая
+ciqual:20527	Pigeon-pea, immature, fresh, raw	горох голубиный свежий сырой
+ciqual:20529	Lima bean, raw	фасоль лима сырая
 ciqual:2053	Tomato juice, pure juice (average)	томатный сок
+ciqual:20530	Beans, mung, mature, seeds, dried	маш сухой
+ciqual:20531	Mung bean, fresh, boiled/cooked in water	маш свежий отварной
+ciqual:20532	Chick pea, canned, drained	нут консервированный слитый
+ciqual:20534	Lupin, seed, dried	люпин сухой
+ciqual:20535	Lentil, pink or red, dried	чечевица красная сухая
+ciqual:20537	flageolet bean, fresh, frozen, raw	фасоль флажоле свежая замороженная сырая
+ciqual:20539	Flageolet bean, green, dried	фасоль флажоле зелёная сухая
 ciqual:2054	Pear nectar	нектар грушевый
+ciqual:20540	Flageolet bean, green, boiled/cooked in water	фасоль флажоле зелёная отварная
+ciqual:20541	Broad bean, peeled, fresh, frozen, raw	бобы очищенные замороженные сырые
+ciqual:20542	Broad bean, peeled, fresh, frozen, boiled/cooked in water	бобы очищенные замороженные отварные
+ciqual:20543	Broad bean, fresh, frozen, boiled/cooked in water	бобы замороженные отварные
+ciqual:20584	Tomato, bunch, raw	томаты на ветке сырые
+ciqual:20585	Lentil, green, dried	чечевица зелёная сухая
+ciqual:20586	Lentil, blond, dried	чечевица жёлтая сухая
+ciqual:20587	Lentil, green, boiled/cooked in water	чечевица зелёная отварная
+ciqual:20588	Lentil, blond, boiled/cooked in water	чечевица жёлтая отварная
+ciqual:20589	Lentil, pink or red, boiled/cooked in water	чечевица красная отварная
+ciqual:20590	Chinese or Japanese artichokes, cooked	кросн варёный
+ciqual:20591	Soy protein, textured, rehydrated	соевый белок текстурированный восстановленный
 ciqual:2060	Multifruit nectar, multivitamin	мультифруктовый нектар с витаминами
 ciqual:2061	Multifruit nectar, standard	мультифруктовый нектар
 ciqual:2062	Multifruit nectar, orange base, multivitamin	мультифруктовый нектар на апельсиновой основе с витаминами
@@ -7885,6 +8579,7 @@ ciqual:2063	Multifruit nectar, orange base, standard	мультифруктов�
 ciqual:2064	Fruit nectar, with sweetener(s), reduced sugar	нектар с подсластителем
 ciqual:2069	Multifruit juice, from concentrate, standard	мультифруктовый сок из концентрата
 ciqual:2070	Orange juice, pure juice	апельсиновый сок
+ciqual:20700	Legume, cooked (average)	бобовые варёные
 ciqual:2071	Multifruit juice, from concentrate, multivitamin	мультифруктовый сок из концентрата с витаминами
 ciqual:2072	Fruit juice, pure juice (average)	фруктовый сок прямого отжима
 ciqual:2073	Pineapple juice, pure juice	ананасовый сок
@@ -7892,27 +8587,507 @@ ciqual:2074	Apple juice, pure juice	яблочный сок
 ciqual:2075	Vegetable juice, pure juice (average)	овощной сок
 ciqual:2076	Apple nectar	яблочный нектар
 ciqual:2077	Fruit juice, from concentrate (average)	фруктовый сок из концентрата
+ciqual:20800	Yellow banana, flesh without skin, steamed, sampled in the island of La Martinique	банан на пару
+ciqual:20801	Pumpkin (local variety), crisps, sampled in the island of La Martinique	чипсы из тыквы (местный сорт)
+ciqual:20802	Pumpkin (phoenix variety), crisps, sampled in the island of La Martinique	чипсы из тыквы (сорт Феникс)
+ciqual:20803	Caribbean cabbage, pulp, steamed, sampled in the island of La Martinique	макабо на пару
+ciqual:20804	Chayote, white skin, flesh without skin, pitted, steamed, sampled in the island of La Martinique	чайот белокожий на пару
+ciqual:20805	Chayote, green skin, flesh without skin, pitted, steamed, sampled in the island of La Martinique	чайот зеленокожий на пару
+ciqual:20806	Chayote, white skin, flesh without skin, pitted, canned, solids and liquids, sampled in the island of La Martinique	чайот белокожий консервированный
+ciqual:20807	Chayote, white skin, flesh and skin, pitted, steamed, frozen, sampled in the island of La Martinique	чайот на пару замороженный
+ciqual:20808	Cucumber, flesh without skin, with seeds, raw, sampled in the island of La Martinique	огурец без кожуры с семенами сырой
+ciqual:20809	Cucumber, flesh and skin, raw, sampled in the island of La Martinique	огурец сырой с Мартиники
+ciqual:20810	Watercress, leaf, raw, sampled in the island of La Martinique	кресс водяной сырой с Мартиники
+ciqual:20811	Dachine, pulp, steamed, sampled in the island of La Martinique	дашин на пару
+ciqual:20812	Sweet potato flour, sampled in the island of La Martinique	мука из батата
+ciqual:20813	Breadfruit, flesh without skin, steamed, sampled in the island of La Martinique	плод хлебного дерева на пару
+ciqual:20814	Pumpkin (local variety), flesh without skin, steamed, sampled in the island of La Martinique	тыква местная на пару
+ciqual:20815	Pumpkin (local variety),flesh without skin, steamed, frozen, sampled in the island of La Martinique	тыква местная на пару замороженная
+ciqual:20816	Pumpkin (local variety), flesh without skin, grated, raw, sampled in the island of La Martinique	тыква местная тёртая сырая
+ciqual:20817	Pumpkin (phoenix variety), flesh without skin, steamed, sampled in the island of La Martinique	тыква Феникс на пару
+ciqual:20818	Pumpkin (phoenix variety), flesh without skin, grated, raw, sampled in the island of La Martinique	тыква Феникс тёртая сырая
+ciqual:20819	Pumpkin (phoenix variety), flesh without skin, frozen, steamed, sampled in the island of La Martinique	тыква Феникс на пару замороженная
+ciqual:20820	Okra, whole, canned, solids and liquids, sampled in the island of La Martinique	окра консервированная
+ciqual:20821	Okra, whole, canned, steamed, sampled in the island of La Martinique	окра на пару
+ciqual:20822	Okra, flesh without peduncle, blanched, frozen, sampled in the island of La Martinique	окра бланшированная замороженная
+ciqual:20823	Yam cousse-couche, pulp, steamed, sampled in the island of La Martinique	ям кус-куш на пару
+ciqual:20824	Yam yellow, pulp, steamed, sampled in the island of La Martinique	ям жёлтый на пару
+ciqual:20825	Yam St Martin, pulp, steamed, sampled in the island of La Martinique	ям сен-мартен на пару
+ciqual:20826	Jerusalem artichoke, pulp, steamed, sampled in the island of La Martinique	топинамбур на пару
+ciqual:20827	Kamanioc, pulp, steamed, sampled in the island of La Martinique	каманиок на пару
+ciqual:20828	Massissi, flesh, raw, sampled in the island of La Martinique	массиси сырой
+ciqual:20829	Papaya immature, flesh without skin, raw, from Martinique	папайя зелёная сырая
+ciqual:20830	Papaya immature, flesh without skin, steamed, sampled in the island of La Martinique	папайя зелёная на пару
+ciqual:20831	Sweet potato, pulp, blanched, frozen, sampled in the island of La Martinique	батат бланшированный замороженный
+ciqual:20832	Sweet potatoes, pulp, steamed, sampled in the island of La Martinique	батат на пару
+ciqual:20833	Pigeon pea, whole, steamed, sampled in the island of La Martinique	горох голубиный на пару
+ciqual:20834	Ti nain, flesh without skin, steamed, sampled in the island of La Martinique	ти-нань на пару
+ciqual:20835	Tomato, whole, raw, sampled in the island of La Martinique	томаты целые сырые с Мартиники
+ciqual:20901	Soybean, seed, whole	соя зерно
+ciqual:20903	Soy protein	изолят соевого белка
+ciqual:20904	Tofu, plain, prepacked	тофу натуральный
+ciqual:20906	Tofu, silky, prepacked	тофу шёлковый
+ciqual:20911	Soy dessert, flavoured, with sugar(s), fortified with calcium, refrigerated	десерт соевый ароматизированный сладкий с кальцием
+ciqual:20912	Tofu, smoked, prepacked	тофу копчёный
+ciqual:20914	Plant-based burger or steak from soybean	котлета соевая
+ciqual:20915	Soya flour, wholegrain	мука соевая цельнозерновая
+ciqual:20916	Miso	мисо
+ciqual:20917	Tempeh	темпе
+ciqual:20918	Syrup for canned fruits	сироп для фруктовых консервов
+ciqual:20919	Light syrup for canned fruits	сироп лёгкий для фруктовых консервов
+ciqual:20921	Soy dessert, flavoured, with sugar(s), not fortified, refrigerated	десерт соевый ароматизированный сладкий
+ciqual:20922	Plant-based dessert (almond, oat, hemp, coconut, rice), flavoured, with sugar(s), not fortified, refrigerated	десерт растительный без сои ароматизированный сладкий
+ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	десерт растительный без сои сладкий с фруктами и кальцием
+ciqual:20924	Light syrup for canned pears	сироп лёгкий для грушевых консервов
+ciqual:20925	Soy dessert, flavoured, with sugar(s), fortified with calcium and vitamin D, refrigerated	десерт соевый ароматизированный сладкий с кальцием и витамином D
+ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	десерт соевый сладкий с фруктами, кальцием и витамином D
+ciqual:20927	Plant-based dessert (almond, oat, hemp, coconut, rice), plain, no added sugars, not fortified, refrigerated	десерт растительный без сои натуральный без сахара
+ciqual:20928	Plant-based dessert without soy, refrigerated (average)	десерт растительный без сои
+ciqual:20929	Soy dessert, refrigerated (average)	десерт соевый
+ciqual:20982	Seaweed, Spirulina (spirulina sp.), fresh, raw	спирулина свежая
 ciqual:20983	Seaweed, Sea fennel, fresh, raw	морской укроп свежий
+ciqual:20985	Sea lettuce (Ulva sp.), dried or dehydrated	морской салат сушёный
+ciqual:20986	Sea belt (Saccharina latissima), dried or dehydrated	комбу роял сушёный
+ciqual:20987	Laver (Porphyra sp.), dried or dehydrated	нори сушёное
+ciqual:20988	Dulse (Palmaria palmata), dried or dehydrated	дульсе сушёное
+ciqual:20989	Lithothamnion (Lithothamnion), dried or dehydrated	маэрл сушёный
+ciqual:20990	Kombu or Japanese kelp (Saccharina japonica), dried or dehydrated	комбу сушёный
+ciqual:20991	Tangle (Laminaria digitata), dried or dehydrated	комбу бретонский сушёный
+ciqual:20992	Sea thong (Himanthalia elongata), dried or dehydrated	спагетти морские сушёные
+ciqual:20993	Gracilaria seaweeds (Gracilaria sp.), dried or dehydrated	грацилария сушёная
+ciqual:20994	Toothed wrack or bladder wrack (Fucus serratus et vesiculosus), dried or dehydrated	фукус сушёный
+ciqual:20995	Gut weed (Ulva sp.), dried or dehydrated	ао-нори сушёный
+ciqual:20996	Carragheen mosses (Chondrus crispus), dried or dehydrated	ирландский мох сушёный
+ciqual:20997	Chlorella, dried or dehydrated	хлорелла сушёная
+ciqual:20998	North Atlantic rockweed (Ascophyllum nodosum), dried or dehydrated	аскофиллум сушёный
+ciqual:20999	Atlantic wakame (Alaria esculenta), dried or dehydrated	вакаме атлантическое сушёное
+ciqual:21001	Mutton, meat, raw	баранина сырая
+ciqual:21003	Mutton, shoulder, raw	баранина лопатка сырая
+ciqual:21004	Sheep, foot, raw	бараньи ноги сырые
+ciqual:21005	Sheep, head, raw	голова барана сырая
+ciqual:21006	Mutton, leg, raw	баранина нога сырая
+ciqual:21007	Mutton, leg, roasted/baked	баранина нога запечённая
+ciqual:21500	Lamb, cutlet, raw	ягнятина котлеты сырые
+ciqual:21501	Lamb cutlet, grilled/pan-fried	ягнятина котлеты жареные
+ciqual:21502	Lamb, leg, raw	ягнятина нога сырая
+ciqual:21503	Lamb, leg, roasted/baked	ягнятина нога запечённая
+ciqual:21504	Lamb, shoulder, raw	ягнятина лопатка сырая
+ciqual:21505	Lamb, shoulder, lean, raw	ягнятина лопатка постная сырая
+ciqual:21506	Lamb, shoulder, roasted/baked	ягнятина лопатка запечённая
+ciqual:21507	Lamb, shoulder, lean, roasted/baked	ягнятина лопатка постная запечённая
+ciqual:21508	Lamb, neck, braised or boiled	ягнятина шея тушёная
+ciqual:21509	Lamb, chop fillet, grilled/pan-fried	ягнятина отбивная из корейки жареная
+ciqual:21512	Lamb, rib chop, grilled/pan-fried	ягнятина отбивная на ребре жареная
+ciqual:21513	Lamb, saddle, lean, roasted/baked	ягнятина седло постное запечённое
+ciqual:21514	Lamb, neck, raw	ягнятина шея сырая
+ciqual:21515	Lamb, saddle, raw	ягнятина седло сырое
+ciqual:21516	Lamb, chop fillet, raw	ягнятина отбивная из корейки сырая
+ciqual:21517	Lamb, rib chop, raw	ягнятина отбивная на ребре сырая
+ciqual:21518	Lamb, leg, grilled/pan-fried	ягнятина нога жареная
+ciqual:21519	Lamb, leg, braised	ягнятина нога тушёная
+ciqual:21520	Lamb, saddle, lean, grilled/pan-fried	ягнятина седло постное жареное
+ciqual:21521	Lamb, chop, raw (average)	ягнятина отбивные сырые
+ciqual:21522	Lamb, chop, cooked (average)	ягнятина отбивные приготовленные
+ciqual:21523	Lamb, meat, cooked (average)	ягнятина приготовленная
+ciqual:21524	Lamb, chop, grilled/pan-fried (average)	ягнятина отбивные жареные
+ciqual:21525	Lamb, spare rib, raw	ягнятина рёбрышки сырые
+ciqual:21800	Kid meat, raw	козлятина сырая
+ciqual:21801	Kid meat, cooked	козлятина приготовленная
+ciqual:22000	Egg, raw	яйцо сырое
+ciqual:22001	Egg white, raw	белок яичный сырой
+ciqual:22002	Egg yolk, raw	желток яичный сырой
+ciqual:22003	Egg yolk, powder	желток яичный порошковый
+ciqual:22004	Egg white, powder	белок яичный порошковый
+ciqual:22008	Egg white, cooked	белок яичный варёный
+ciqual:22009	Egg yolk, cooked	желток яичный варёный
+ciqual:22010	Egg, hard-boiled	яйцо вкрутую
+ciqual:22011	Egg, poached	яйцо пашот
+ciqual:22013	Egg, powder	яйцо порошковое
+ciqual:22014	Egg, soft-boiled	яйцо всмятку
+ciqual:22050	Quail egg, raw	яйцо перепелиное сырое
+ciqual:22060	Duck egg, raw	яйцо утиное сырое
+ciqual:22070	Goose egg, raw	яйцо гусиное сырое
+ciqual:22080	Turkey egg, raw	яйцо индюшиное сырое
+ciqual:22500	Omelette, plain, homemade	омлет натуральный домашний
+ciqual:22502	Egg, scrambled, with added fat	яичница-болтунья с маслом
+ciqual:22505	Egg, fried, without added fat	яичница-глазунья без масла
+ciqual:22506	Omelette with cheese, homemade	омлет с сыром домашний
+ciqual:22507	Omelette with lardoons, homemade	омлет с беконом домашний
+ciqual:22508	Omelette with mushrooms, homemade	омлет с грибами домашний
+ciqual:22509	Omelette with herbs, homemade	омлет с зеленью домашний
+ciqual:22510	Spanish-style tortilla with onions (omelette with potatoes and onions), prepacked	тортилья с луком
+ciqual:22511	Omelette with vegetables, cheese or meat (average)	омлет с начинкой
+ciqual:23000	Cake (average)	пирожное
+ciqual:23001	Cheesecake, prepacked	чизкейк
+ciqual:23005	Chou pastry with praline flavoured custard	пари-брест
+ciqual:23006	Sponge cake with chocolate with or without cherry "black forest cake"	торт чёрный лес
+ciqual:23007	Sponge cake with fruit mousse	торт с фруктовым муссом
+ciqual:23008	Dessert, Opera cake type	торт опера
+ciqual:23009	Sponge sandwich cake filled and topped with strawberries or raspberries	торт фрезье
 ciqual:23021	Rum baba, from bakery	ромовая баба
+ciqual:23022	Canelé cake	канеле
+ciqual:23023	Kouign amann, Buttered and caramelized milkbread cake, prepacked	куинь-аман
+ciqual:23024	Macaroon filled with jam or cream	макарон с начинкой из джема или крема
+ciqual:23027	Macaroon, biscuit, dry	макарон сухой
+ciqual:23030	Christmas log cake	полено рождественское
+ciqual:23031	Brownie (chocolate cake), with nuts, prepacked	брауни с орехами
+ciqual:23032	Brownie (chocolate cake), prepacked	брауни
+ciqual:23033	Rock-shaped coconut cake, prepacked	кокосовые рошеры
+ciqual:23050	Savoy-style sponge cake	бисквит савойский
+ciqual:23080	Butter pound cake, traditional	кекс катр-кар пекарский
+ciqual:23081	Butter pound cake, prepacked	кекс катр-кар
+ciqual:23082	Pound cake, prepacked	кекс-батончик
+ciqual:23103	Soft cake, with lemon, prepacked	кекс лимонный
+ciqual:23120	Breton pudding cake with prunes filling, prepacked	кекс бретонский с черносливной начинкой
+ciqual:23121	Breton pudding cake with prunes	фар бретон с черносливом
+ciqual:23122	Kouign amann, Buttered and caramelized milkbread cake, from bakery	куинь-аман пекарский
+ciqual:23200	Gingerbread, prepacked	пряник
+ciqual:23220	Gingerbread with filling, prepacked	пряник с начинкой
+ciqual:23300	Baklava (oriental pastry with almonds and syrup)	пахлава
+ciqual:23301	Gazelle horn (oriental pastry with almonds, crescent shaped and covered with icing sugar)	рожок газели
+ciqual:23399	Short crust pastry, prepacked, cooked (average)	тесто брисе выпеченное
+ciqual:23402	Thin-crust pizza dough, prepacked, raw	тесто для пиццы тонкое сырое
+ciqual:23410	Short crust pastry, with vegetal fat, prepacked, raw	тесто брисе на растительном масле сырое
+ciqual:23412	Short crust pastry, with vegetal fat, prepacked, cooked	тесто брисе на растительном масле выпеченное
+ciqual:23414	Short crust pastry, pure butter, prepacked, raw	тесто брисе на масле сырое
 ciqual:23415	Short crust pastry, pure butter, frozen, prepacked, raw	тесто брисе (несладкое песочное) на масле замороженное сырое
+ciqual:23416	Short crust pastryt, pure butter, prepacked, cooked	тесто брисе на масле выпеченное
+ciqual:23420	Puff pastry, with vegetal fat, prepacked, raw	тесто слоёное на растительном масле сырое
+ciqual:23424	Puff pastry, pure butter, prepacked, raw	тесто слоёное на масле сырое
+ciqual:23425	Puff pastry, pure butter, frozen, prepacked, raw	тесто слоёное на масле замороженное сырое
+ciqual:23426	Puff pastry, pure butter, prepacked, cooked	тесто слоёное на масле выпеченное
+ciqual:23430	Khatfa (phyllo or filo pastry sheets), prepacked, dry cooked, without fat	фило сухое выпеченное без масла
+ciqual:23440	Shortbread dough, prepacked, raw	песочное тесто сырое
 ciqual:23442	Shortbread dough, prepacked, cooked	песочное тесто выпеченное
+ciqual:23444	Shortbread dough, pure butter, prepacked, raw	песочное тесто на масле сырое
+ciqual:23445	Phyllo or filo dough, raw	тесто фило сырое
 ciqual:23446	Shortbread dough, pure butter, frozen, prepacked, raw	песочное тесто на масле замороженное сырое
+ciqual:23448	Shortbread dough, pure butter, prepacked, cooked	песочное тесто на масле выпеченное
+ciqual:23455	Chou pastry filled cream (whipped or custard)	шу с кремом
+ciqual:23456	Chou pastry filled with whipped cream	шу со взбитыми сливками
+ciqual:23457	Chou pastry filled with custard cream	шу с заварным кремом
+ciqual:23467	Chou pastry, sugar coated	шукетты
+ciqual:23472	Profiteroles (chou pastry), with vanilla ice cream and chocolate sauce	профитроли с ванильным мороженым и шоколадным соусом
+ciqual:23474	Profiteroles (chou pastry) with custard and chocolate sauce, refrigerated	профитроли с заварным кремом и шоколадным соусом
+ciqual:23477	Eclair	эклер
+ciqual:23479	Fruit pie with custard cream	тарт с фруктами и заварным кремом
+ciqual:23480	Apple turnover	слойка с яблоками
+ciqual:23481	Apple pie with custard (flour, eggs, cream, sugar, apple alcohol), from bakery	тарт нормандский с яблоками пекарский
+ciqual:23485	Lemon tart	тарт лимонный
+ciqual:23490	Apple tart	тарт яблочный
+ciqual:23491	Strawberries tart, from bakery	тарт клубничный пекарский
+ciqual:23493	Apple crumble, prepacked	крамбл яблочный
+ciqual:23494	Apricots tart	тарт абрикосовый
+ciqual:23495	Red berries tart	тарт с красными ягодами
+ciqual:23496	Tatin tart (caramelized upside-down apple tart)	тарт татен
+ciqual:23497	Chocolate tart, from bakery	тарт шоколадный пекарский
+ciqual:23498	Fruit tart (average)	тарт фруктовый
+ciqual:23525	Flan tart with eggs	флан кондитерский
+ciqual:23531	Fruit charlotte	шарлотка фруктовая
+ciqual:23534	Semolina pudding with raisins and caramel sauce, refrigerated	пудинг манный с изюмом и карамелью
+ciqual:23536	Rice pudding with caramel sauce, refrigerated	рисовый пудинг с карамелью
+ciqual:23540	Moka cake	торт мокко
+ciqual:23585	Chocolate cake, prepacked	торт шоколадный
+ciqual:23586	Chocolate soft cake, prepacked	кекс шоколадный
+ciqual:23588	Yogurt cake, prepacked	кекс йогуртовый
+ciqual:23594	Soft cake, plain, sponge cake type, prepacked	кекс бисквитный
 ciqual:2365	Passion fruit nectar	нектар маракуйи
 ciqual:2366	Banana nectar	нектар банановый
 ciqual:2367	Guava nectar	нектар гуавы
+ciqual:23680	Twelfth Night cake (puff pastry filled with applesauce)	галет дэ руа с яблочной начинкой
+ciqual:23684	Twelfth Night cake (puff pastry filled with almond paste)	галет дэ руа с миндальной начинкой
 ciqual:2370	Mango nectar	нектар манговый
 ciqual:2371	Peach nectar	нектар персиковый
 ciqual:2374	Pineapple nectar	нектар ананасовый
 ciqual:2375	Orange nectar	апельсиновый нектар
 ciqual:2377	Blood orange juice, pure juice	сок красного апельсина
+ciqual:23799	Crepe, plain, prepacked, refrigerated	блин охлаждённый
+ciqual:23800	Crepe, plain, prepacked, room temperature	блин
+ciqual:23801	Buckwheat crepe, plain, to be filled, prepacked	блин гречневый для начинки
+ciqual:23802	Basque cake (shortbread), with custard cream	пирог баскский с заварным кремом
+ciqual:23803	Basque cake (shortbread), with cherries	пирог баскский с вишней
+ciqual:23804	Crepe filled chocolate and cerels balls, prepacked	блин с начинкой из шоколада и хлопьев
+ciqual:23805	Blinis	блинчики
 ciqual:2381	Cranberry juice	клюквенный сок
 ciqual:23815	Crepe filled with sugar, prepacked	блин с сахаром
+ciqual:23820	Crepe filled with jam, home-made	блин с джемом домашний
+ciqual:23821	Crepe filled with chocolate or chocolate and hazelnut spread, home-made	блин с шоколадной пастой домашний
+ciqual:23827	Pancake, with sugar(s), prepacked	блин сладкий
+ciqual:23828	Pancake filled with chocolate and hazelnut spread, prepacked	блин с шоколадно-ореховой пастой
+ciqual:23829	Crepe filled with chocolate, prepacked	блин с шоколадом
+ciqual:23830	Crepe with strawberry filling, prepacked	блин с клубничной начинкой
+ciqual:23849	Wafer biscuit, thin, filled with honey, caramel or soft brown sugar, prepacked	вафля тонкая с мёдом или карамелью
+ciqual:23850	Waffle, from bakery, plain, from bakery	вафля пекарская
+ciqual:23851	Soft waffle (Brussels-style), plain or with sugar(s), prepacked	вафля мягкая брюссельская
+ciqual:23852	Soft waffle (Brussels-style), with chocolate, prepacked	вафля мягкая с шоколадом
+ciqual:23853	Wafer biscuit, crunchy (thin or dried), plain or with sugar(s), prepacked	вафля хрустящая
+ciqual:23880	Doughnut, plain, sprinkled with sugar	пончик с сахарной пудрой
+ciqual:23881	Doughnut filled with fruit filling (e.g. jam), prepacked-> ARCHIVE	пончик с фруктовой начинкой
+ciqual:23885	Doughnut filled or covered with chocolate or with chocolate and hazelut paste, prepacked	пончик с шоколадом
+ciqual:23900	Pastry (average)	выпечка
+ciqual:23909	Fruit cake (candied fruits and/or raisins), prepacked	кекс с цукатами и изюмом
+ciqual:23925	Marble cake, prepacked	кекс мраморный
+ciqual:23935	Soft cake, plain, prepacked	кекс простой
+ciqual:23937	Soft cake, with fruits, prepacked	кекс с фруктами
+ciqual:23938	Soft cake with nuts, prepacked	кекс с орехами
+ciqual:23939	Soft cake filled with chocolate, prepacked	кекс с шоколадной начинкой
+ciqual:23941	Soft cake filled with fruits, mini sponge roll type, prepacked	рулет бисквитный с фруктовой начинкой
+ciqual:23943	Soft cake, with chocolate chips, prepacked	кекс с шоколадной крошкой
+ciqual:23944	Soft cake filled with chocolate and with chocolate coating, prepacked	кекс с шоколадной начинкой в шоколадной глазури
+ciqual:23945	Soft cake filled with chocolate and milk, with chocolate coating prepacked	кекс с шоколадно-молочной начинкой в глазури
+ciqual:23951	Muffin, with fruits (e.g. blueberries), prepacked	маффин с фруктами
+ciqual:23952	Muffin, with chocolate, prepacked	маффин с шоколадом
+ciqual:24000	Biscuit (cookie)	печенье
+ciqual:24001	Biscuit (cookie), plain	печенье простое
+ciqual:24002	Biscuit (cookie), vitamin content guaranteed	печенье с витаминами
+ciqual:24003	Biscuit (cookie), vitamin and mineral content guaranteed	печенье с витаминами и минералами
+ciqual:24004	Biscuit (cookie) with fruits, low salt	печенье с фруктами малосольное
+ciqual:24006	Soja biscuit, fortified with vitamins and minerals	печенье соевое с витаминами и минералами
+ciqual:24008	Biscuit (cookie) filled with fruits, reduced fat	печенье с фруктовой начинкой нежирное
+ciqual:24009	Speculoos biscuit	печенье спекулос
+ciqual:24010	Biscuit (cookie), with vegetal fat	печенье на растительном масле
+ciqual:24011	Biscuit (cookie), assortment	печенье ассорти
+ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	печенье с шоколадом и витаминами без сахара
+ciqual:24013	Biscuit (cookie), no added sugars and with sweetener(s)	печенье без сахара
+ciqual:24014	Biscuit (cookie), with a chocolate bar covering, milk filling	печенье в шоколаде с молочной начинкой
+ciqual:24015	Butter biscuit (cookie)	печенье сливочное
+ciqual:24016	Biscuit (cookie), with a chocolate bar covering	печенье в шоколаде
+ciqual:24017	Butter biscuit (cookie), with chocolate (chocolate chips or covering)	печенье сливочное с шоколадом
+ciqual:24018	Butter biscuit (cookie), gluten free	печенье сливочное без глютена
+ciqual:24019	Biscuit, with chocolate, gluten free	печенье с шоколадом без глютена
+ciqual:24020	Biscuit (cookie) from whole grain cereals	печенье цельнозерновое
+ciqual:24021	Butter biscuit (cookie), whole wheat	печенье сливочное цельнозерновое
+ciqual:24028	Biscuit (cookie), with sesame, not fortified	печенье с кунжутом
+ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	печенье с кунжутом, витаминами и минералами
+ciqual:24031	Biscuit (cookie), without chocolate, reduced fat	печенье нежирное
+ciqual:24034	Breakfast biscuit (cookie), without chocolate, not fortified	печенье завтраковое
+ciqual:24035	Breakfast biscuit (cookie), reduced sugar	печенье завтраковое с пониженным сахаром
+ciqual:24036	Biscuit (cookie), with chocolate, not fortified	печенье с шоколадом необогащённое
+ciqual:24037	Biscuit (cookie) filled with fruit paste or fruit puree	печенье с фруктовой начинкой
+ciqual:24038	Biscuit (cookie), with chocolate covering	печенье в шоколадной глазури
+ciqual:24040	Breakfast biscuit (cookie), with chocolate, not fortified	печенье завтраковое с шоколадом
+ciqual:24041	Breakfast biscuit (cookie), fortified with vitamins and minerals	печенье завтраковое с витаминами и минералами
+ciqual:24042	Biscuit (cookie) with cereals, fortified with vitamins and minerals	печенье злаковое с витаминами и минералами
+ciqual:24048	Biscuit (cookie), shortbread, commercial, whith vegetal fat	печенье песочное на растительном масле
+ciqual:24049	Biscuit shortbread, with butter	печенье песочное на масле
+ciqual:24050	Biscuit shortbread, with butter and chocolate	печенье песочное на масле с шоколадом
+ciqual:24051	Biscuit sponge cake, with chocolate covering, pre-packed	бисквитное печенье в шоколадной глазури
+ciqual:24052	Biscuit (small tart), with chocolate covering, prepacked	тарталетка в шоколадной глазури
+ciqual:24054	Biscuit shortbread, with fruits	печенье песочное с фруктами
+ciqual:24056	Florentine biscuit (chocolate biscuit or cookie with almonds)	печенье флорентинское
+ciqual:24057	Biscuit shortbread, with fruit filling, "lunette" type	печенье песочное с фруктовой начинкой типа лунетт
+ciqual:24061	biscuit with meringue, filled (chocolate, hazelut, coconut…) with chocolate covering or chocolate base	печенье с безе и шоколадом
+ciqual:24070	Biscuit (cookie) with coconut	печенье кокосовое
+ciqual:24071	Shortbread pastry biscuit, from bakery	печенье песочное пекарское
+ciqual:24224	Chocolate biscuit (cookie), with vanilla filling, round, black and white	печенье шоколадное с ванильной начинкой круглое
+ciqual:24225	Biscuit (cookie), snack with dairy or vanilla filling	печенье с молочной начинкой
+ciqual:24230	Biscuit (cookie), snack with chocolate filling, whole wheat whole wheat	печенье цельнозерновое с шоколадной начинкой
+ciqual:24231	Biscuit (cookie), snack with chocolate filling	печенье с шоколадной начинкой
+ciqual:24240	Biscuit (cookie), snack with fruits filling	печенье с фруктовой начинкой сэндвич
+ciqual:24300	Wafer biscuit without filling	вафля без начинки
+ciqual:24311	Wafer biscuit, filled or coated with chocolate	вафля с шоколадом
+ciqual:24312	Wafer biscuit, with nuts (hazelnut, almond, praliné, etc.) filling, with chocolate or not, prepacked	вафля с ореховой начинкой
+ciqual:24313	Wafer biscuit, with vanilla filling	вафля с ванильной начинкой
+ciqual:24320	Wafer biscuit, with fruit filling	вафля с фруктовой начинкой
+ciqual:24370	Wafer cookie or crepe dentelle, plain	креп-дантель
+ciqual:24371	Wafer cookie, crepe dentelle, with chocolate covering	креп-дантель в шоколаде
+ciqual:24430	Biscuit (cookie), sponge fingers or lady fingers	печенье савоярди
+ciqual:24441	Biscuit (cookie), cat tongue type	печенье язычки кошачьи
+ciqual:24520	Meringue	безе
 ciqual:24614	Biscuit (cookie), hard, with almonds (e.g. canistrelli)	миндальное печенье сухое
+ciqual:24615	Biscuit (cookie), thin, with almonds	печенье тонкое миндальное
+ciqual:24616	Biscuit (cookie), thin, lemon or orange lavour	печенье тонкое лимонное или апельсиновое
 ciqual:24630	Madeleine cake, pure butter, prepacked	мадленки
+ciqual:24631	Madeleine cake, with chocolate, prepacked	мадлен с шоколадом
+ciqual:24632	Madeleine cake, prepacked	мадлен
+ciqual:24654	Biscuit, oat, with chocolate covering	печенье овсяное в шоколаде
+ciqual:24655	Biscuit, oat, plain	печенье овсяное
+ciqual:24656	Biscuit, cookie, cranberries and white chocolate, prepacked	печенье с клюквой и белым шоколадом
+ciqual:24657	Biscuit, stick, with chocolate covering	печенье-палочки в шоколаде
+ciqual:24658	Biscuit puff pastry, with chocolate covering	печенье слоёное в шоколаде
+ciqual:24659	Biscuit puff pastry, prepacked	печенье слоёное
+ciqual:24660	Biscuit (puff pastry), palmier, from bakery	слоёное печенье пальме пекарское
+ciqual:24663	Pear tart with almonds	тарт грушевый с миндалём
+ciqual:24664	Almond cake, financier, prepacked	финансье миндальный
+ciqual:24666	Mille-feuille pastry	мильфей
+ciqual:24674	Soft cake, without chocolate, gluten free, prepacked	кекс без шоколада без глютена
+ciqual:24675	Soft cake, with chocolate, gluten free, prepacked	кекс с шоколадом без глютена
+ciqual:24676	Biscuit (cookie), with chocolate and nuts, prepacked	печенье с шоколадом и орехами
+ciqual:24678	Biscuit sponge cake with fruits covering, pre-packed	бисквитное печенье с фруктовой начинкой
+ciqual:24679	Biscuit (small tart), with fruit covering, prepacked	тарталетка с фруктовой начинкой
+ciqual:24680	Soft cake, filled with orange paste and sugar icing coating	кекс с апельсиновой начинкой в сахарной глазури
+ciqual:24684	Biscuit (cookie), with chocolate, prepacked	печенье с шоколадом
+ciqual:24685	Cone, wafer for ice cream	вафельный рожок для мороженого
+ciqual:24686	Biscuit sponge cake, filled with fruits and with chocolate covering	бисквитное печенье с фруктами в шоколаде
+ciqual:24687	Biscuit (cookie), with chocolate chips and coconut, prepacked	печенье с шоколадной крошкой и кокосом
+ciqual:24689	Baby biscuit	печенье детское
 ciqual:24998	White fish with sauce, prepacked (average)	белая рыба в соусе готовая
+ciqual:24999	Dessert (average)	десерт
 ciqual:2500	Smoothie, no precision on fruit content and other ingredients	смузи
+ciqual:25001	Veal stew in white sauce, prepacked	бланкет из телятины
+ciqual:25002	White bean stew, canned	кассуле консервированное
+ciqual:25003	Sauerkraut, with garnish (cooked meats), prepacked	квашеная капуста с мясом
+ciqual:25009	Shepherd's pie or cottage pie with meat, prepacked	пастуший пирог с мясом
+ciqual:25010	Salt-cured pork belly with lentils, prepacked	грудинка свиная солёная с чечевицей
+ciqual:25013	Boiled meat with vegetables, prepacked	мясо отварное с овощами
+ciqual:25018	Ratatouille, seasoneded, prepacked	рататуй
+ciqual:25019	Ravioli filled with meat, in tomato sauce, canned	равиоли с мясом в томатном соусе консервированные
+ciqual:25020	Cheese soufflé	суфле сырное
+ciqual:25026	Spinach with cream sauce, prepacked	шпинат в сливочном соусе
+ciqual:25029	Couscous with mutton	кускус с бараниной
+ciqual:25031	Paëlla, prepacked	паэлья
+ciqual:25033	Burgundy-style beef stew, prepacked	говядина по-бургундски
+ciqual:25035	Sauté of lamb with curry, prepacked	ягнятина с карри
+ciqual:25037	Fish or seafood au gratin, intended to be cooked, prepacked, raw	рыба или морепродукты под гратеном сырые
+ciqual:25038	Fish and shrimp au gratin, prepacked, cooked	рыба с креветками под гратеном
+ciqual:25043	Couscous with meat or chicken, reduced fat, prepacked	кускус с мясом или курицей нежирный
+ciqual:25052	Eggplant au gratin, prepacked	баклажаны под гратеном
+ciqual:25056	Dauphiné-style creamed potatoes au gratin, prepacked	картофель по-дофински запечённый со сливками
+ciqual:25057	Pre-fried potatoes, pan-fried, with bacon bits or chicken, without green vegetables, prepacked	картофель жареный с беконом или курицей
+ciqual:25058	Duck with sauce (green pepper sauce, hunter-style sauce, etc.) , prepacked	утка в соусе
+ciqual:25063	Rabbit with mustard sauce, prepacked	кролик в горчичном соусе
+ciqual:25065	Beef stew with carrots, prepacked	говядина тушёная с морковью
+ciqual:25071	Pork sausage stew with cabbage, carrots and potatoes	свиные сосиски тушёные с капустой, морковью и картофелем
+ciqual:25073	Chicory with ham in sauce, prepacked	цикорий с ветчиной в соусе
+ciqual:25077	Salmon with sorrel, prepacked	лосось со щавелем
+ciqual:25081	Lasagna or cannelloni with meat (bolognese sauce), prepacked	лазанья с мясом болоньезе
+ciqual:25085	Bolognese-style pasta (spaghetti, tagliatelle…), prepacked	паста болоньезе
+ciqual:25086	White fish with bordelaise sauce, prepacked	белая рыба в соусе борделез
+ciqual:25088	Cantonese rice, prepacked	рис по-кантонски
+ciqual:25089	Veal escalope cordon bleu (escalope topped with a ham slice and cheese, breaded, prepacked	эскалоп кордон блю
+ciqual:25098	White bean stew, with pork, canned	кассуле со свининой консервированное
+ciqual:25099	White bean stew, with duck or goose, canned	кассуле с уткой консервированное
+ciqual:25101	Cauliflower au gratin, prepacked	цветная капуста под гратеном
+ciqual:25103	Stuffed tomatoes, prepacked	томаты фаршированные
+ciqual:25106	Stuffed cabbage, prepacked	капуста фаршированная
+ciqual:25107	Couscous with fish	кускус с рыбой
+ciqual:25108	Samosas or samoosas or filled filo pastry, prepacked, cooked	самоса
+ciqual:25110	Dumplings, steamed, with shrimps, cooked	пельмени с креветками на пару
+ciqual:25111	Chili con carne, prepacked	чили кон карне
+ciqual:25121	Cockerel in red wine sauce	петух в красном вине
+ciqual:25122	Pasta with ham au gratin, prepacked	паста с ветчиной под гратеном
+ciqual:25123	Moussaka, prepacked	мусака
+ciqual:25124	Stewed lamb garnished with potatoes and other vegetables	ягнятина тушёная с картофелем и овощами
+ciqual:25125	Veal paupiette	рулет из телятины
+ciqual:25126	Poultry paupiette	рулет из птицы
+ciqual:25127	Couscous royal (with different meats), prepacked	кускус роял
+ciqual:25128	White fish with Provencal-style sauce (tomato sauce), prepacked	белая рыба по-провански в томатном соусе
+ciqual:25131	Lasagna or cannelloni with vegetables, prepacked	лазанья с овощами
+ciqual:25135	Carbonara-style pasta (spaghetti, tagliatelle…), prepacked	паста карбонара
+ciqual:25137	Tartiflette (cheese fondue with potatoes, reblochon cheese, bacon bits…), prepacked	тартифлет
+ciqual:25138	Couscous with chicken	кускус с курицей
+ciqual:25139	Lasagna or cannelloni with fish, prepacked	лазанья с рыбой
+ciqual:25140	White fish with Florentine-style sauce (spinach sauce), prepacked	белая рыба по-флорентийски со шпинатом
+ciqual:25141	White fish with shallots, mussels and white wine sauce, prepacked	белая рыба с шалотом и мидиями в белом вине
+ciqual:25142	White fish with mustard sauce, prepacked	белая рыба в горчичном соусе
+ciqual:25143	White fish with Parisian-style sauce (mushrooms sauce), prepacked	белая рыба по-парижски с грибами
+ciqual:25145	White fish with tarragon sauce, prepacked	белая рыба в соусе с эстрагоном
+ciqual:25146	White fish with sorrel sauce, prepacked	белая рыба в щавелевом соусе
+ciqual:25149	Fresh pasta, stuffed with cheese (e.g. ravioli), prepacked, cooked	паста свежая с сыром готовая
+ciqual:25150	Couscous with vegetables, prepacked	кускус с овощами
+ciqual:25151	Fish or seafood in puff pastry, prepacked, to cook	рыба или морепродукты в слоёном тесте сырые
+ciqual:25152	Couscous with meat, prepacked	кускус с мясом
+ciqual:25154	Fish brandade or fish shepherd's pie, prepacked	брандада из рыбы
+ciqual:25155	Fresh pasta, stuffed with cheese and vegetables (e.g. ravioli), cooked, prepacked	паста свежая с сыром и овощами готовая
+ciqual:25157	Fresh pasta, stuffed with meat (e.g. bolognese-style ravioli), prepacked, raw	паста свежая с мясом сырая
+ciqual:25158	Fresh pasta, stuffed with meat (e.g. bolognese-style ravioli), prepacked, cooked	паста свежая с мясом готовая
+ciqual:25159	Mutton tagine, prepacked	тажин из баранины
+ciqual:25162	Vegetables au gratin, prepacked	овощи под гратеном
+ciqual:25163	Meat balls, beef, cooked	тефтели говяжьи готовые
+ciqual:25164	Osso buco from veal (with vegetables and white wine), homemade	оссо-буко из телятины домашний
+ciqual:25169	Chinese specialty or dumplings, prepacked	пельмени китайские
+ciqual:25172	Meat in sauce (average)	мясо в соусе
+ciqual:25173	Milanese-style veal escalope or breaded veal escalope	эскалоп телячий по-милански
+ciqual:25174	Chicken with curry and coconut milk sauce, prepacked	курица в соусе карри с кокосовым молоком
+ciqual:25175	Molokhia,beef-based mdish with jute mallow (or nalta jute), home-made	молохея с говядиной домашняя
+ciqual:25181	Fresh pasta, stuffed with cheese (e.g. ravioli, prepacked, raw	паста свежая с сыром сырая
+ciqual:25182	Fresh pasta, stuffed with cheese and vegetables (e.g. ravioli), prepacked, raw	паста свежая с сыром и овощами сырая
+ciqual:25183	Noodles with shrimps, prepacked, sautéed/pan-fried, without added fat	лапша с креветками обжаренная без масла
+ciqual:25186	Meat balls, pork and beef (Swedish-style), prepacked, raw	тефтели свиные и говяжьи по-шведски сырые
+ciqual:25187	Risotto, with vegetables, prepacked	ризотто с овощами
+ciqual:25188	Risotto, with seafood, prepacked	ризотто с морепродуктами
+ciqual:25189	Risotto, with cheeses, prepacked	ризотто с сырами
+ciqual:25190	Chicken, Basque-style, prepacked	курица по-баскски
+ciqual:25192	Ravioli filled with vegetables, in tomato sauce, canned	равиоли с овощами в томатном соусе консервированные
+ciqual:25193	Fresh pasta, stuffed with vegetables (e.g. ravioli), prepacked, cooked	паста свежая с овощами готовая
+ciqual:25194	Meat balls, beef and lamb (kefta type), prepacked, raw	тефтели кефта сырые
 ciqual:25195	Shepherd's pie with duck, prepacked, to cook	картофельная запеканка с уткой полуфабрикат
+ciqual:25196	Riste (Eggplant, tomatoes, onions), prepacked	ристе (баклажаны, томаты, лук)
+ciqual:25198	Pasta with cheese sauce (spaghetti, tagliatelle…), prepacked	паста в сырном соусе
+ciqual:25199	Vegetable rosti, pre-fried, frozen	рёшти овощные замороженные
+ciqual:25200	Devilled pork shoulder in mustard sauce, prepacked	свиная лопатка в горчичном соусе
+ciqual:25201	Beef tongue with Madeira wine sauce, prepacked	язык говяжий в соусе мадера
+ciqual:25203	Fresh pasta, stuffed with vegetables (e.g. ravioli), prepacked, raw	паста свежая с овощами сырая
+ciqual:25204	Chicken tagine, prepacked	тажин из курицы
+ciqual:25205	Chop suey (pork or chicken, vegetables), prepacked	чоп-сюи
+ciqual:25207	Pork with caramel sauce, prepacked	свинина в карамельном соусе
+ciqual:25208	Vegetable rosti, pre-fried, frozen, cooked	рёшти овощные приготовленные
+ciqual:25210	Stuffed salmon, prepacked	лосось фаршированный
+ciqual:25211	Meat balls, beef, with tomato sauce, prepacked	тефтели говяжьи в томатном соусе
+ciqual:25213	Veal paupiette, prepacked, roasted/baked	рулет из телятины запечённый
+ciqual:25216	Pasta (e.g. ravioli), filled, cooked (average)	паста фаршированная готовая
+ciqual:25217	Vine leaf stuffed wih rice or dolmas, drained, prepacked	долма из виноградных листьев
+ciqual:25219	Lasagna or cannelloni with vegetables and goat cheese, prepacked, cooked	лазанья с овощами и козьим сыром
+ciqual:25220	Sauerkraut, seasoned and cooked with bacon bits, without garnish, drained, cooked	квашеная капуста с беконом варёная слитая
+ciqual:25221	Meat balls, beef and lamb (kefta type), prepacked cooked	тефтели кефта готовые
+ciqual:25222	Meat balls, pork and beef (Swedish-style), prepacked, cooked	тефтели свиные и говяжьи по-шведски готовые
+ciqual:25223	Soy and wheat burger or bite (vegan), prepacked	котлета из сои и пшеницы веганская
+ciqual:25224	Soy and wheat burger or bite (not vegan), prepacked	котлета из сои и пшеницы
+ciqual:25225	Wheat-based nuggets, breaded croquette (wo soybean), prepacked	наггетсы пшеничные в панировке
+ciqual:25226	Soybean and wheat-based nuggets, breaded croquette (not vegan), prepacked	наггетсы соево-пшеничные в панировке
+ciqual:25227	Soybean and wheat-based nuggets, breaded croquette (vegan), prepacked	наггетсы соево-пшеничные в панировке веганские
+ciqual:25228	Schnitzel, soybean and wheat-based (not vegan), prepacked	шницель соево-пшеничный
+ciqual:25229	Schnitzel or stick, soybean and wheat-based (vegan), prepacked	шницель соево-пшеничный веганский
+ciqual:25230	Schnitzel, soybean, wheat and cheese-based, cordon bleu-style, prepacked	шницель соево-пшеничный с сыром кордон-блю
+ciqual:25231	Ravioli filled with tofu, in tomato sauce, prepacked	равиоли с тофу в томатном соусе
+ciqual:25232	Plant-based sausage with wheat or seitan, prepacked	сосиска растительная пшеничная
+ciqual:25233	Cereal burger with cheese (without soybean), prepacked	котлета злаковая с сыром
+ciqual:25234	Cereal burger with végétables (without soybean), prepacked	котлета злаковая с овощами
+ciqual:25238	Vegetables au gratin, home-made	овощи под гратеном домашние
+ciqual:25242	Paëlla, home-made	паэлья домашняя
+ciqual:25243	Noodles, asian style, instant, flavoured, cooked	лапша быстрого приготовления по-азиатски варёная
+ciqual:25396	Ham and cheese puffed pastry, prepacked	слойка с ветчиной и сыром
+ciqual:25398	Cheese puff pastry, prepacked, to cook	слойка с сыром сырая
+ciqual:25399	Snails in puff pastry, prepacked	улитки в слоёном тесте
+ciqual:25400	Toasted ham and cheese sandwich, w butter, homemade	крок-месье домашний
+ciqual:25401	Cheese puff pastry, prepacked, cooked	слойка с сыром
+ciqual:25402	Meat puff pastry, prepacked	слойка с мясом
+ciqual:25403	Hot-dog, prepacked	хот-дог
 ciqual:25404	Pizza, cheese and tomato (Margherita), prepacked	пицца маргарита
+ciqual:25405	Quiche Lorraine (eggs and lardoons quiche), prepacked	киш лоррен
+ciqual:25409	Crepe or buckwheat pancake, filled with ham, prepacked	галетт гречневый с ветчиной
+ciqual:25410	Crepe or buckwheat pancake, filled with cheese, ham and béchamel sauce, prepacked	галетт гречневый с ветчиной, сыром и бешамелью
+ciqual:25411	Crepe or buckwheat pancake, filled with mushrooms and béchamel sauce, prepacked, frozen	галетт гречневый с грибами и бешамелью замороженный
+ciqual:25412	Vol-au-vent with meat/poultry/quenelle	волован с мясом
+ciqual:25413	Hamburger, from fast food	гамбургер (фастфуд)
+ciqual:25414	Cheeseburger, from fast food	чизбургер (фастфуд)
+ciqual:25415	Cheeseburger, double, from fast food	чизбургер двойной (фастфуд)
+ciqual:25416	Fish burger, from fast food	фишбургер (фастфуд)
+ciqual:25417	Tart, vegetables, prepacked	тарт с овощами
+ciqual:25418	Croissant filled with ham and cheese, homemade	круассан с ветчиной и сыром домашний
+ciqual:25419	Spring roll	спринг-ролл
+ciqual:25428	Sandwich, pita bread, kebab and raw vegetables	сэндвич в пите с кебабом и овощами
+ciqual:25429	Sandwich, baguette, kebab and raw vegetables	сэндвич в багете с кебабом и овощами
+ciqual:25431	Sandwich, baguette, tuna, raw vegetables and mayonnaise, homemade	сэндвич в багете с тунцом, овощами и майонезом домашний
+ciqual:25433	Caribbean-style fish fritters, fish acras, prepacked	рыбные аккры карибские
+ciqual:25434	Sandwich, panini bread, cured ham, mozzarella cheese and tomato, toasted	панини с ветчиной, моцареллой и томатом
+ciqual:25435	Pizza, ham and cheese, prepacked	пицца с ветчиной и сыром
+ciqual:25437	Small cheese chou-pastry puff	шу с сыром
+ciqual:25438	Samosas or samoosas or filled filo pastry, home-made, cooked	самоса домашняя
+ciqual:25444	Tart, cheese, prepacked	тарт с сыром
+ciqual:25454	Tart, Provence-style, prepacked	тарт по-провански
+ciqual:25456	Sushi or maki, with seafood products	суши с морепродуктами
+ciqual:25457	Pizza, Bolognese-style with meat, prepacked	пицца болоньезе с мясом
+ciqual:25459	Burritos with beef	буррито с говядиной
+ciqual:25460	Fajitas, home-prepared from kit	фахитас из набора
+ciqual:25462	Pizza, chorizo or salami, prepacked	пицца с чоризо или салями
+ciqual:25463	Pizza, seafood, prepacked	пицца с морепродуктами
+ciqual:25464	Pizza, salmon, prepacked	пицца с лососем
+ciqual:25468	Pizza, goat cheese and lardoons, prepacked	пицца с козьим сыром и беконом
+ciqual:25472	Pizza, vegetables or (4 seasons), prepacked	пицца с овощами
+ciqual:25475	Sandwich, baguette, ham, hard-boiled egg, raw vegetables and butter	сэндвич в багете с ветчиной, яйцом, овощами и маслом
+ciqual:25476	Sandwich, baguette, chicken, raw vegetables and mayonnaise, homemade	сэндвич в багете с курицей, овощами и майонезом домашний
+ciqual:25477	Pizza, cheese and mushrooms, prepacked	пицца с сыром и грибами
 ciqual:25502	Chicken burger, from fast food	чикенбургер
 ciqual:25641	Sandwich, club, wholemeal bread, dry sausage, prepacked	клуб-сэндвич с сырокопчёной колбасой
 ciqual:25968	Soup, asparagus, prepacked, to be reheated	суп спаржевый готовый
