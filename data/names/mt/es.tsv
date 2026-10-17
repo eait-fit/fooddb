@@ -7925,14 +7925,208 @@ fdc:175208	Cowpeas, catjang, mature seeds, raw	caupí catjang crudo
 fdc:175209	Cowpeas, catjang, mature seeds, cooked, boiled, without salt	caupí catjang cocido sin sal
 fdc:175210	Hyacinth beans, mature seeds, raw	judías egipcias crudas
 fdc:175211	Hyacinth beans, mature seeds, cooked, boiled, without salt	judías egipcias cocidas sin sal
-fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium	alubias rojas en conserva bajas en sal
-fdc:175259	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled	lomo de cordero asado
-fdc:175268	Veal, leg (top round), separable lean and fat, raw	pierna de ternera cruda
+fdc:175212	Vitasoy USA, Vitasoy Organic Creamy Original Soymilk	bebida de soja cremosa ecológica Vitasoy
+fdc:175213	Vitasoy USA, Vitasoy Organic Classic Original Soymilk	bebida de soja clásica ecológica Vitasoy
+fdc:175214	Vitasoy USA, Vitasoy Light Vanilla Soymilk	bebida de soja ligera de vainilla Vitasoy
+fdc:175215	Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D	bebida de soja sin azúcar con calcio y vitaminas A y D
+fdc:175216	Soymilk (all flavors), nonfat, with added calcium, vitamins A and D	bebida de soja desnatada con calcio y vitaminas A y D
+fdc:175217	Soymilk, chocolate, nonfat, with added calcium, vitamins A and D	bebida de soja con chocolate desnatada con calcio y vitaminas A y D
+fdc:175218	SILK Plain, soymilk	bebida de soja Silk
+fdc:175219	SILK Vanilla, soymilk	bebida de soja de vainilla Silk
+fdc:175220	SILK Plus Omega-3 DHA, soymilk	bebida de soja con omega-3 Silk
+fdc:175221	SILK Plus for Bone Health, soymilk	bebida de soja para los huesos Silk
+fdc:175222	SILK Plus Fiber, soymilk	bebida de soja con fibra Silk
+fdc:175223	SILK Unsweetened, soymilk	bebida de soja sin azúcar Silk
+fdc:175224	SILK Coffee, soymilk	bebida de soja de café Silk
+fdc:175225	SILK Vanilla soy yogurt (family size)	yogur de soja de vainilla Silk familiar
+fdc:175226	SILK Vanilla soy yogurt (single serving size)	yogur de soja de vainilla Silk individual
+fdc:175227	SILK Plain soy yogurt	yogur de soja natural Silk
+fdc:175228	SILK Strawberry soy yogurt	yogur de soja de fresa Silk
+fdc:175229	SILK Key Lime soy yogurt	yogur de soja de lima Silk
+fdc:175230	SILK Banana-Strawberry soy yogurt	yogur de soja de plátano y fresa Silk
+fdc:175231	SILK Original Creamer	crema vegetal Silk
+fdc:175232	SILK French Vanilla Creamer	crema vegetal de vainilla Silk
+fdc:175233	Vitasoy USA Organic Nasoya, Tofu Plus Firm	tofu firme Plus Nasoya
+fdc:175234	Vitasoy USA Organic Nasoya Sprouted, Tofu Plus Super Firm	tofu germinado extra firme Nasoya
+fdc:175235	Vitasoy USA Azumaya, Extra Firm Tofu	tofu extra firme Azumaya
+fdc:175236	Vitasoy USA Azumaya, Firm Tofu	tofu firme Azumaya
+fdc:175237	Beans, black, mature seeds, cooked, boiled, with salt	judías negras cocidas con sal
+fdc:175238	Beans, black, mature seeds, canned, low sodium	judías negras en conserva bajas en sodio
+fdc:175239	Beans, black turtle, mature seeds, cooked, boiled, with salt	judías negras cocidas con sal
+fdc:175240	Beans, cranberry (roman), mature seeds, cooked, boiled, with salt	judías borlotti cocidas con sal
+fdc:175241	Beans, french, mature seeds, cooked, boiled, with salt	judías francesas cocidas con sal
+fdc:175242	Beans, kidney, red, mature seeds, cooked, boiled, with salt	alubias rojas cocidas con sal
+fdc:175243	Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water	alubias rojas en conserva escurridas lavadas
+fdc:175244	Beans, kidney, royal red, mature seeds, cooked, boiled with salt	alubias rojas reales cocidas con sal
+fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium	alubias rojas en conserva bajas en sodio
+fdc:175246	Beans, small white, mature seeds, cooked, boiled, with salt	alubias pequeñas blancas cocidas con sal
+fdc:175247	Beans, pinto, mature seeds, canned, solids and liquids, low sodium	alubias pintas en conserva bajas en sodio
+fdc:175248	Beans, yellow, mature seeds, cooked, boiled, with salt	alubias amarillas cocidas con sal
+fdc:175249	Beans, white, mature seeds, cooked, boiled, with salt	alubias blancas cocidas con sal
+fdc:175250	Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium	garbanzos en conserva bajos en sodio
+fdc:175251	Cowpeas, catjang, mature seeds, cooked, boiled, with salt	caupí catjang cocido con sal
+fdc:175252	Cowpeas, common (blackeyes, crowder, southern), mature seeds, cooked, boiled, with salt	caupí cocido con sal
+fdc:175253	Hyacinth beans, mature seeds, cooked, boiled, with salt	judías egipcias cocidas con sal
+fdc:175254	Lentils, mature seeds, cooked, boiled, with salt	lentejas cocidas con sal
+fdc:175255	Mung beans, mature seeds, cooked, boiled, with salt	judía mungo cocida con sal
+fdc:175256	Mungo beans, mature seeds, cooked, boiled, with salt	judías mungo cocidas con sal
+fdc:175257	Peas, split, mature seeds, cooked, boiled, with salt	guisantes partidos cocidos con sal
+fdc:175258	Peanuts, all types, oil-roasted, without salt	cacahuetes fritos en aceite sin sal
+fdc:175259	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled	lomo de cordero neozelandés con grasa a la parrilla
+fdc:175260	Lamb, New Zealand, imported, rack - partly frenched, separable lean only, raw	carré de cordero neozelandés semi-francés magro crudo
+fdc:175261	Lamb, New Zealand, imported, rack - partly frenched, separable lean only, cooked, fast roasted	carré de cordero neozelandés semi-francés magro asado
+fdc:175262	Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, raw	paletilla de cordero neozelandés con grasa cruda
+fdc:175263	Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, cooked, braised	paletilla de cordero neozelandés congelada entera con grasa estofada
+fdc:175264	Lamb, New Zealand, imported, square-cut shoulder, separable lean only, raw	paletilla de cordero neozelandés magra cruda
+fdc:175265	Veal, composite of trimmed retail cuts, separable lean only, cooked	ternera de cortes variados magra cocinada
+fdc:175266	Veal, composite of trimmed retail cuts, separable fat, raw	grasa de ternera de cortes variados cruda
+fdc:175267	Veal, composite of trimmed retail cuts, separable fat, cooked	grasa de ternera de cortes variados cocinada
+fdc:175268	Veal, leg (top round), separable lean and fat, raw	ternera pierna con grasa cruda
+fdc:175269	Veal, leg (top round), separable lean only, raw	ternera pierna magra cruda
+fdc:175270	Veal, leg (top round), separable lean only, cooked, braised	ternera pierna magra estofada
+fdc:175271	Veal, leg (top round), separable lean only, cooked, pan-fried, breaded	ternera pierna magra frita rebozada
+fdc:175272	Veal, leg (top round), separable lean only, cooked, pan-fried, not breaded	ternera pierna magra frita sin rebozar
+fdc:175273	Veal, loin, separable lean only, cooked, braised	lomo de ternera magro estofado
+fdc:175274	Veal, loin, separable lean only, cooked, roasted	lomo de ternera magro asado
+fdc:175275	Veal, rib, separable lean and fat, raw	costillar de ternera con grasa crudo
+fdc:175276	Veal, rib, separable lean and fat, cooked, braised	costillar de ternera con grasa estofado
+fdc:175277	Veal, shoulder, whole (arm and blade), separable lean and fat, raw	paletilla de ternera entera con grasa cruda
+fdc:175278	Veal, shoulder, whole (arm and blade), separable lean and fat, cooked, braised	paletilla de ternera entera con grasa estofada
+fdc:175279	Veal, shoulder, whole (arm and blade), separable lean and fat, cooked, roasted	paletilla de ternera entera con grasa asada
+fdc:175280	Veal, shoulder, whole (arm and blade), separable lean only, raw	paletilla de ternera entera magra cruda
+fdc:175281	Veal, shoulder, arm, separable lean and fat, cooked, roasted	paletilla de ternera parte del brazo con grasa asada
+fdc:175282	Veal, shoulder, arm, separable lean only, raw	paletilla de ternera parte del brazo magra cruda
+fdc:175283	Veal, shoulder, arm, separable lean only, cooked, braised	paletilla de ternera parte del brazo magra estofada
+fdc:175284	Veal, shoulder, arm, separable lean only, cooked, roasted	paletilla de ternera parte del brazo magra asada
+fdc:175285	Veal, shoulder, blade, separable lean only, cooked, roasted	paletilla de ternera parte de la hoja magra asada
+fdc:175286	Veal, sirloin, separable lean and fat, raw	cadera de ternera con grasa cruda
+fdc:175287	Veal, sirloin, separable lean and fat, cooked, braised	cadera de ternera con grasa estofada
+fdc:175288	Veal, sirloin, separable lean and fat, cooked, roasted	cadera de ternera con grasa asada
+fdc:175289	Veal, cubed for stew (leg and shoulder), separable lean only, cooked, braised	ternera para estofar en cubos magra estofada
+fdc:175290	Veal, ground, raw	carne picada de ternera cruda
+fdc:175291	Veal, ground, cooked, broiled	carne picada de ternera a la parrilla
+fdc:175292	Game meat, antelope, raw	carne de antílope cruda
+fdc:175293	Bison, ground, grass-fed, raw	carne picada de bisonte de pasto cruda
+fdc:175294	Game meat, beaver, raw	carne de castor cruda
+fdc:175295	Game meat, beaver, cooked, roasted	carne de castor asada
+fdc:175296	Game meat, beefalo, composite of cuts, raw	carne de beefalo cruda
+fdc:175297	Game meat, boar, wild, raw	carne de jabalí cruda
+fdc:175298	Game meat, boar, wild, cooked, roasted	carne de jabalí asada
+fdc:175299	Game meat, buffalo, water, raw	carne de búfalo de agua cruda
+fdc:175300	Game meat, buffalo, water, cooked, roasted	carne de búfalo de agua asada
+fdc:175301	Game meat, elk, raw	carne de uapití cruda
+fdc:175302	Game meat, elk, cooked, roasted	carne de uapití asada
+fdc:175303	Game meat, goat, raw	carne de cabra cruda
+fdc:175304	Game meat, goat, cooked, roasted	carne de cabra asada
 fdc:2346403	Potatoes, gold, without skin, raw	patata amarilla pelada cruda
 fdc:2727572	Beef, short loin (NY strip steak), raw	lomo bajo de vacuno crudo
+fdc:321358	Hummus, commercial	hummus
+fdc:321360	Tomatoes, grape, raw	tomates cherry
+fdc:321611	Beans, snap, green, canned, regular pack, drained solids	judías verdes en conserva escurridas
+fdc:323121	Frankfurter, beef, unheated	frankfurt de vacuno
+fdc:323294	Nuts, almonds, dry roasted, with salt added	almendras tostadas con sal
+fdc:323505	Kale, raw	col rizada
+fdc:323604	Egg, whole, raw, frozen, pasteurized	huevo entero crudo congelado pasteurizado
+fdc:323697	Egg, white, raw, frozen, pasteurized	clara de huevo congelada pasteurizada
+fdc:323793	Egg, white, dried	clara de huevo deshidratada
+fdc:324317	Onion rings, breaded, par fried, frozen, prepared, heated in oven	aros de cebolla empanados al horno
+fdc:324653	Pickles, cucumber, dill or kosher dill	pepinillos en vinagre con eneldo
+fdc:325036	Cheese, parmesan, grated	queso parmesano rallado
+fdc:325198	Cheese, pasteurized process, American, vitamin D fortified	queso fundido americano con vitamina D
+fdc:325287	Grapefruit juice, white, canned or bottled, unsweetened	zumo de pomelo blanco en conserva sin azúcar
+fdc:325430	Peaches, yellow, raw	melocotones amarillos
+fdc:325524	Seeds, sunflower seed kernels, dry roasted, with salt added	pipas de girasol tostadas con sal
+fdc:326196	Kale, frozen, cooked, boiled, drained, without salt	col rizada congelada cocida sin sal
+fdc:326698	Mustard, prepared, yellow	mostaza amarilla
+fdc:327046	Kiwifruit, green, raw	kiwi verde
+fdc:327357	Nectarines, raw	nectarinas
+fdc:328637	Cheese, cheddar	queso cheddar
+fdc:328841	Cheese, cottage, lowfat, 2% milkfat	requesón 2%
+fdc:329370	Cheese, mozzarella, low moisture, part-skim	mozzarella semidesnatada
+fdc:329490	Egg, whole, dried	huevo en polvo
+fdc:329596	Egg, yolk, raw, frozen, pasteurized	yema de huevo congelada pasteurizada
+fdc:329716	Egg, yolk, dried	yema de huevo deshidratada
+fdc:330137	Yogurt, Greek, plain, nonfat	yogur griego natural desnatado
+fdc:330415	Yogurt, Greek, strawberry, nonfat	yogur griego de fresa desnatado
+fdc:330458	Oil, coconut	aceite de coco
+fdc:331897	Chicken, broilers or fryers, drumstick, meat only, cooked, braised	muslo de pollo sin piel estofado
+fdc:331960	Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised	pechuga de pollo sin piel ni hueso estofada
+fdc:332282	Sauce, pasta, spaghetti/marinara, ready-to-serve	salsa marinara
+fdc:332397	Ham, sliced, pre-packaged, deli meat (96%fat free, water added)	jamón en lonchas con agua añadida
+fdc:332791	Olives, green, Manzanilla, stuffed with pimiento	aceitunas verdes rellenas de pimiento
+fdc:333008	Cookies, oatmeal, soft, with raisins	galletas de avena blandas con pasas
+fdc:333281	Tomatoes, canned, red, ripe, diced	tomates en conserva en dados
+fdc:333374	Fish, haddock, raw	eglefino crudo
 fdc:333476	Fish, pollock, raw	abadejo crudo
-fdc:746767	Cheese, swiss	queso emmental
+fdc:334194	Fish, tuna, light, canned in water, drained solids	atún claro al natural escurrido
+fdc:334536	Restaurant, Chinese, fried rice, without meat	arroz frito chino sin carne
+fdc:334628	Restaurant, Latino, tamale, pork	tamal de cerdo
+fdc:334720	Restaurant, Latino, pupusas con frijoles (pupusas, bean)	pupusas de alubias
+fdc:746758	Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0" fat, select, cooked, roasted	asado de solomillo de vacuno sin hueso magro sin grasa visible asado (select)
+fdc:746759	Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw	filete de lomo alto de vacuno sin hueso con borde magro grasa 1/8" crudo (choice)
+fdc:746760	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, select, raw	asado de redondo de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:746761	Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, select, raw	asado de tapa de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:746762	Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, select, raw	filete porterhouse de vacuno magro grasa 1/8" crudo (select)
+fdc:746763	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled	filete T-bone de vacuno con hueso magro grasa 1/8" a la parrilla (choice)
+fdc:746764	Carrots, frozen, unprepared	zanahorias congeladas
+fdc:746765	Cheese, dry white, queso seco	queso seco
+fdc:746766	Cheese, ricotta, whole milk	ricotta de leche entera
+fdc:746767	Cheese, swiss	queso suizo
+fdc:746768	Figs, dried, uncooked	higos secos
+fdc:746769	Lettuce, cos or romaine, raw	lechuga romana
+fdc:746770	Melons, cantaloupe, raw	melón cantalupo
+fdc:746771	Oranges, raw, navels	naranjas navel
+fdc:746772	Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D	leche 1% con vitaminas A y D
+fdc:746773	Pears, raw, bartlett	peras Williams
+fdc:746774	Restaurant, Chinese, sweet and sour pork	cerdo agridulce
+fdc:746775	Salt, table, iodized	sal yodada
+fdc:746776	Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)	leche desnatada con vitaminas A y D
+fdc:746777	Sauce, salsa, ready-to-serve	salsa mexicana
+fdc:746778	Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D	leche 2% con vitaminas A y D
+fdc:746779	Sausage, breakfast sausage, beef, pre-cooked, unprepared	salchichas de desayuno de vacuno precocinadas
+fdc:746780	Sausage, Italian, pork, mild, cooked, pan-fried	salchicha italiana de cerdo suave frita
+fdc:746781	Sausage, pork, chorizo, link or ground, cooked, pan-fried	chorizo de cerdo frito
+fdc:746782	Milk, whole, 3.25% milkfat, with added vitamin D	leche entera 3,25% con vitamina D
+fdc:746783	Sausage, turkey, breakfast links, mild, raw	salchichas de desayuno de pavo suaves crudas
+fdc:746784	Sugars, granulated	azúcar
+fdc:746785	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	carne picada de pavo 93% magro a la plancha
+fdc:746952	Ham, sliced, restaurant	jamón en lonchas
+fdc:747429	Cheese, American, restaurant	queso americano
+fdc:747430	Beans, Dry, Medium Red (0% moisture)	alubias medianas rojas secas
+fdc:747431	Beans, Dry, Red (0% moisture)	alubias rojas secas
+fdc:747432	Beans, Dry, Flor de Mayo (0% moisture)	alubias Flor de Mayo secas
+fdc:747433	Beans, Dry, Brown (0% moisture)	alubias marrones secas
+fdc:747434	Beans, Dry, Tan (0% moisture)	alubias canelas secas
+fdc:747435	Beans, Dry, Light Tan (0% moisture)	alubias beige secas
 fdc:747436	Beans, Dry, Carioca (0% moisture)	alubias carioca secas
+fdc:747437	Beans, Dry, Cranberry (0% moisture)	alubias borlotti secas
+fdc:747438	Beans, Dry, Light Red Kidney (0% moisture)	alubias kidney rojas claras secas
+fdc:747439	Beans, Dry, Pink (0% moisture)	alubias rosadas secas
+fdc:747440	Beans, Dry, Dark Red Kidney (0% moisture)	alubias kidney rojas oscuras secas
+fdc:747441	Beans, Dry, Navy (0% moisture)	alubias blancas secas
+fdc:747442	Beans, Dry, Small White (0% moisture)	alubias pequeñas blancas secas
+fdc:747443	Beans, Dry, Small Red (0% moisture)	alubias pequeñas rojas secas
+fdc:747444	Beans, Dry, Black (0% moisture)	alubias negras secas
+fdc:747445	Beans, Dry, Pinto (0% moisture)	alubias pintas secas
+fdc:747446	Beans, Dry, Great Northern (0% moisture)	alubias blancas del norte secas
+fdc:747447	Broccoli, raw	brócoli
+fdc:747693	Ketchup, restaurant	ketchup
+fdc:747997	Eggs, Grade A, Large, egg white	clara de huevo
+fdc:748236	Eggs, Grade A, Large, egg yolk	yema de huevo
+fdc:748278	Oil, canola	aceite de canola
+fdc:748323	Oil, corn	aceite de maíz
+fdc:748366	Oil, soybean	aceite de soja
+fdc:748608	Oil, olive, extra virgin	aceite de oliva virgen extra
+fdc:748967	Eggs, Grade A, Large, egg whole	huevo
+fdc:749420	Pork, cured, bacon, cooked, restaurant	beicon
+fdc:789828	Butter, stick, unsalted	mantequilla sin sal
+fdc:789890	Flour, wheat, all-purpose, enriched, bleached	harina de trigo enriquecida blanqueada
+fdc:789951	Flour, wheat, all-purpose, enriched, unbleached	harina de trigo enriquecida sin blanquear
+fdc:790018	Flour, wheat, all-purpose, unenriched, unbleached	harina de trigo sin enriquecer sin blanquear
+fdc:790085	Flour, whole wheat, unenriched	harina de trigo integral
+fdc:790146	Flour, bread, white, enriched, unbleached	harina de fuerza enriquecida sin blanquear
+fdc:790214	Flour, rice, white, unenriched	harina de arroz
+fdc:790276	Flour, corn, yellow, fine meal, enriched	harina de maíz amarilla fina enriquecida
 frida:1061	Sugar pea (Snow pea, Mangetout) raw	guisantes en vaina crudos
 frida:1244	Cheese, firm, skimmed milk, max. 5 % fidm.	queso semiduro desnatado
 frida:1641	Hotdog, fast food	perrito caliente
