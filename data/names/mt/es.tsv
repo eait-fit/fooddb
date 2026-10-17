@@ -9901,7 +9901,7 @@ cofid:11-973	Bread, naan, retail	naan comprado
 cofid:11-974	Bread, pitta, white	pan de pita blanco
 cofid:11-975	Bread, wheatgerm	pan con germen de trigo
 cofid:11-976	Bread, white, Danish style	pan blanco estilo danés
-cofid:11-977	Bread, white, farmhouse or split tin	pan blanco de molde
+cofid:11-977	Bread, white, farmhouse or split tin	pan blanco rústico de molde
 cofid:11-978	Bread, white, French stick	baguette blanca
 cofid:11-979	Bread, white, premium	pan blanco premium
 cofid:11-980	Bread, white, sliced	pan blanco de molde
@@ -9973,7 +9973,7 @@ cofid:12-357	Cheese, goats milk, full fat, soft, white rind	queso de cabra tiern
 cofid:12-358	Cheese, Gouda	queso Gouda
 cofid:12-360	Cheese, Mozzarella, fresh	mozzarella fresca
 cofid:12-367	Cheese, Stilton, blue	queso Stilton azul
-cofid:12-368	Cheese, white, average	queso blanco
+cofid:12-368	Cheese, white, average	queso blanco curado
 cofid:12-372	Fromage frais, virtually fat free, fruit	fromage frais desnatado de frutas
 cofid:12-373	Lassi, sweetened	lassi dulce
 cofid:12-375	Yogurt, whole milk, fruit	yogur de frutas entero
@@ -10167,7 +10167,7 @@ cofid:13-060	Black gram, duhli urad dahl, split, dried, raw	dal de urad duhli pa
 cofid:13-061	Black gram, duhli urad dahl, split, dried, boiled in unsalted water	dal de urad duhli partido cocido
 cofid:13-062	Beans, blackeye, whole, dried, raw	carillas secas crudas
 cofid:13-063	Beans, blackeye, whole, dried, boiled in unsalted water	carillas cocidas
-cofid:13-064	Beans, broad, whole, raw	habas crudas
+cofid:13-064	Beans, broad, whole, raw	habas frescas crudas
 cofid:13-067	Beans, broad, dried, raw	habas secas crudas
 cofid:13-070	Beans, butter, dried, raw	judías de Lima secas crudas
 cofid:13-074	Beans, chick peas, Kabuli, whole, dried, raw	garbanzos secos crudos
@@ -10232,7 +10232,7 @@ cofid:13-212	Cassava, frozen, raw	yuca congelada cruda
 cofid:13-219	Celeriac, raw	apio nabo crudo
 cofid:13-223	Chard, Swiss, raw	acelga cruda
 cofid:13-224	Chard, Swiss, boiled in unsalted water	acelga cocida
-cofid:13-225	Chicory, pale variety, raw	endibia cruda
+cofid:13-225	Chicory, pale variety, raw	achicoria cruda
 cofid:13-227	Cho cho, raw	chayote crudo
 cofid:13-228	Cho cho, boiled in unsalted water	chayote cocido
 cofid:13-229	Cole leaves, dried, boiled in unsalted water	hojas de col secas cocidas
@@ -10571,13 +10571,427 @@ cofid:13-890	Ginger, fresh	jengibre fresco
 cofid:13-891	Oregano, fresh	orégano fresco
 cofid:13-892	Rosemary, fresh	romero fresco
 cofid:13-893	Thyme, fresh	tomillo fresco
+cofid:14-001	Amla	amla
+cofid:14-016	Apples, eating, dried	manzanas secas
+cofid:14-025	Apricots, raw, flesh and skin	albaricoques crudos
+cofid:14-026	Apricots, raw, flesh and skin, weighed with stones	albaricoques con hueso crudos
+cofid:14-027	Apricots, stewed with sugar	albaricoques en compota con azúcar
+cofid:14-028	Apricots, stewed with sugar, weighed with stones	albaricoques en compota con azúcar con hueso
+cofid:14-029	Apricots, stewed without sugar	albaricoques en compota sin azúcar
+cofid:14-030	Apricots, stewed without sugar, weighed with stones	albaricoques en compota sin azúcar con hueso
+cofid:14-031	Apricots, dried	orejones
+cofid:14-032	Apricots, dried, stewed with sugar	orejones en compota con azúcar
+cofid:14-033	Apricots, dried, stewed without sugar	orejones en compota sin azúcar
+cofid:14-039	Avocado, Fuerte, flesh only	aguacate Fuerte
+cofid:14-040	Avocado, Fuerte, flesh only, weighed with skin and stone	aguacate Fuerte entero
+cofid:14-043	Babaco, flesh only	babaco
+cofid:14-049	Blackberries, stewed with sugar	moras en compota con azúcar
+cofid:14-050	Blackberries, stewed without sugar	moras en compota sin azúcar
+cofid:14-053	Blackcurrants, raw	grosellas negras crudas
+cofid:14-054	Blackcurrants, stewed with sugar	grosellas negras en compota con azúcar
+cofid:14-055	Blackcurrants, stewed without sugar	grosellas negras en compota sin azúcar
+cofid:14-059	Star fruit	carambola
+cofid:14-060	Cashew fruit, flesh only	manzana de anacardo
+cofid:14-063	Cherries, stewed with sugar	cerezas en compota con azúcar
+cofid:14-064	Cherries, stewed with sugar, weighed with stones	cerezas en compota con azúcar con hueso
+cofid:14-065	Cherries, stewed without sugar	cerezas en compota sin azúcar
+cofid:14-066	Cherries, stewed without sugar, weighed with stones	cerezas en compota sin azúcar con hueso
+cofid:14-069	Cherries, West Indian, flesh only	acerola
+cofid:14-073	Cranberries	arándanos rojos
+cofid:14-074	Currants	pasas de Corinto
+cofid:14-075	Custard apple/Bullock's heart, flesh only	anona
+cofid:14-076	Sugar apple, flesh only	anona escamosa
+cofid:14-077	Damsons, flesh and skin, raw	endrinos crudos
+cofid:14-078	Damsons, flesh and skin, raw, weighed with stones	endrinos con hueso crudos
+cofid:14-079	Damsons, stewed with sugar	endrinos en compota con azúcar
+cofid:14-080	Damsons, stewed with sugar, weighed with stones	endrinos en compota con azúcar con hueso
+cofid:14-081	Damsons, stewed without sugar	endrinos en compota sin azúcar
+cofid:14-082	Damsons, stewed without sugar, weighed with stones	endrinos en compota sin azúcar con hueso
+cofid:14-083	Dates, raw, flesh and skin	dátiles
+cofid:14-084	Dates, raw, flesh and skin, weighed with stones	dátiles con hueso
+cofid:14-087	Dried mixed fruit	mezcla de frutas secas
+cofid:14-088	Durian, flesh only	durian
+cofid:14-089	Elderberries, whole fruit	bayas de saúco
+cofid:14-090	Feijoa, flesh only	feijoa
+cofid:14-091	Figs, whole green fruit, raw	higos verdes crudos
+cofid:14-092	Figs, whole fruit, dried	higos secos
+cofid:14-093	Figs, dried, stewed with sugar	higos secos en compota con azúcar
+cofid:14-094	Figs, dried, stewed without sugar	higos secos en compota sin azúcar
+cofid:14-097	Fruit cocktail, canned in syrup, whole contents	macedonia en conserva en almíbar
+cofid:14-100	Gooseberries, cooking, raw	grosellas espinosas de cocinar crudas
+cofid:14-101	Gooseberries, cooking, stewed with sugar	grosellas espinosas en compota con azúcar
+cofid:14-102	Gooseberries, cooking, stewed without sugar	grosellas espinosas en compota sin azúcar
+cofid:14-103	Gooseberries, dessert, raw	grosellas espinosas de postre crudas
+cofid:14-107	Grapefruit, canned in juice, whole contents	pomelo en conserva en su jugo
+cofid:14-111	Greengages, raw	ciruelas claudias crudas
+cofid:14-112	Greengages, raw, weighed with stones	ciruelas claudias con hueso crudas
+cofid:14-113	Greengages, stewed with sugar	ciruelas claudias en compota con azúcar
+cofid:14-114	Greengages, stewed with sugar, weighed with stones	ciruelas claudias en compota con azúcar con hueso
+cofid:14-115	Greengages, stones, removed, stewed without sugar	ciruelas claudias sin hueso en compota sin azúcar
+cofid:14-116	Greengages, stewed without sugar, weighed with stones	ciruelas claudias en compota sin azúcar con hueso
+cofid:14-117	Grenadillas, flesh and seeds	granadilla
+cofid:14-118	Guava, flesh only, raw	guayaba cruda
+cofid:14-119	Guava, raw, weighed with skin and pips	guayaba entera cruda
+cofid:14-121	Jambu fruit, flesh only	pomarrosa
+cofid:14-122	Jujube, flesh only	azufaifo
+cofid:14-125	Kumquats, whole fruit, raw	kumquats crudos
+cofid:14-128	Lemons, whole, without pips	limones enteros sin pepitas
+cofid:14-129	Lemons, peeled, flesh only	limones pelados
+cofid:14-130	Lemons, flesh only, raw, weighed with peel and pips	limones con piel y pepitas
+cofid:14-131	Limes, flesh only	limas peladas
+cofid:14-132	Limes, flesh only, weighed with peel and pips	limas con piel y pepitas
+cofid:14-133	Loganberries, raw	moras de Logan crudas
+cofid:14-134	Loganberries, stewed with sugar	moras de Logan en compota con azúcar
+cofid:14-135	Loganberries, stewed without sugar	moras de Logan en compota sin azúcar
+cofid:14-137	Longans, flesh only, dried	longan seco
 cofid:14-138	Longans, canned in syrup, drained	longanes en almíbar
+cofid:14-139	Longans, canned in syrup, whole contents	longan en conserva en almíbar
+cofid:14-140	Loquats, flesh only, raw	nísperos crudos
+cofid:14-142	Lychees, raw, flesh only	lichis crudos
+cofid:14-143	Lychees, flesh only, raw, weighed with skin and stone	lichis enteros crudos
+cofid:14-145	Mammie apple, flesh only	mamey
+cofid:14-146	Mandarin oranges, canned in juice, whole contents	mandarinas en conserva en su jugo
+cofid:14-151	Mangosteen, flesh only	mangostán
+cofid:14-152	Medlars, flesh only	níspero medlar
+cofid:14-159	Melon, Galia, flesh only	melón Galia
+cofid:14-160	Melon, Galia, flesh only, weighed whole	melón Galia entero
+cofid:14-161	Melon, Galia, flesh only, weighed with skin	melón Galia con piel
+cofid:14-168	Mulberries, whole fruit, raw	moras de morera crudas
+cofid:14-169	Mulberries, whole fruit, stewed with sugar	moras de morera en compota con azúcar
+cofid:14-170	Mulberries, whole fruit, stewed without sugar	moras de morera en compota sin azúcar
+cofid:14-177	Ortaniques, flesh only	ortanique
+cofid:14-178	Passion fruit, flesh and pips	maracuyá
+cofid:14-179	Passion fruit, flesh and pips, weighed with skin	maracuyá con piel
 cofid:14-188	Peaches, canned in juice, whole contents	melocotón en su jugo
 cofid:14-189	Peaches, canned in syrup, whole contents	melocotones en almíbar
+cofid:14-196	Pears, dried	peras secas
+cofid:14-197	Pears, canned in juice, whole contents	peras en conserva en su jugo
+cofid:14-205	Pears, Nashi, flesh and skin, raw	peras nashi crudas
+cofid:14-206	Pears, Nashi, flesh and skin, raw, weighed with core	peras nashi con corazón crudas
+cofid:14-207	Physalis, fruit only	physalis
+cofid:14-211	Pineapple, canned in juice, whole contents	piña en conserva en su jugo
+cofid:14-212	Pineapple, canned in syrup, whole contents	piña en conserva en almíbar
+cofid:14-220	Plums, Victoria, flesh and skin, raw	ciruelas Victoria crudas
+cofid:14-221	Plums, Victoria, flesh and skin, raw, weighed with stones	ciruelas Victoria con hueso crudas
+cofid:14-222	Plums, Victoria, stewed without sugar	ciruelas Victoria en compota sin azúcar
+cofid:14-223	Plums, Victoria, stewed without sugar, weighed with stones	ciruelas Victoria en compota sin azúcar con hueso
+cofid:14-224	Plums, yellow, flesh and skin, raw	ciruelas amarillas crudas
+cofid:14-225	Plums, yellow, flesh and skin, raw, weighed with stones	ciruelas amarillas con hueso crudas
+cofid:14-226	Pomegranate, flesh and pips	granada pelada
+cofid:14-227	Pomegranate, flesh and pips, weighed with skin	granada con piel
+cofid:14-228	Pomelo, flesh only	pomelo chino
+cofid:14-229	Pomelo, flesh only, weighed with peel and pips	pomelo chino con piel
+cofid:14-230	Prickly pears, flesh and seeds	higos chumbos
+cofid:14-231	Prunes, flesh and skin	ciruelas pasas
+cofid:14-232	Prunes, flesh and skin, weighed with stones	ciruelas pasas con hueso
+cofid:14-233	Prunes, flesh and skin, stewed with sugar	ciruelas pasas en compota con azúcar
+cofid:14-234	Prunes, flesh and skin, stewed with sugar, weighed with stones	ciruelas pasas en compota con azúcar con hueso
+cofid:14-235	Prunes, flesh and skin, stewed without sugar	ciruelas pasas en compota sin azúcar
+cofid:14-236	Prunes, flesh and skin, stewed without sugar, weighed with stones	ciruelas pasas en compota sin azúcar con hueso
+cofid:14-237	Prunes, canned in juice, whole contents	ciruelas pasas en conserva en su jugo
+cofid:14-241	Quinces, flesh only	membrillo
+cofid:14-243	Rambutan, flesh only	rambután
+cofid:14-245	Raspberries, stewed with sugar	frambuesas en compota con azúcar
+cofid:14-246	Raspberries, stewed without sugar	frambuesas en compota sin azúcar
+cofid:14-249	Redcurrants, raw	grosellas rojas crudas
+cofid:14-250	Redcurrants, stewed with sugar	grosellas rojas en compota con azúcar
+cofid:14-251	Redcurrants, stewed without sugar	grosellas rojas en compota sin azúcar
+cofid:14-252	Rhubarb, stems only, raw	ruibarbo crudo
+cofid:14-253	Rhubarb, stems only, stewed with sugar	ruibarbo en compota con azúcar
+cofid:14-256	Sapodilla, flesh only	zapote
+cofid:14-259	Sharon fruit, flesh only	caqui Sharon
+cofid:14-263	Sultanas	pasas sultanas
+cofid:14-264	Tamarillos, flesh and seeds	tamarillo
+cofid:14-265	Tamarind	tamarindo
+cofid:14-268	Whitecurrants, raw	grosellas blancas crudas
+cofid:14-269	Whitecurrants, stewed with sugar	grosellas blancas en compota con azúcar
+cofid:14-270	Whitecurrants, stewed without sugar	grosellas blancas en compota sin azúcar
+cofid:14-272	Apple juice concentrate, unsweetened, commerical	concentrado de zumo de manzana sin azúcar
+cofid:14-275	Grapefruit juice, unsweetened	zumo de pomelo sin azúcar
+cofid:14-277	Lemon juice, fresh	zumo de limón recién exprimido
+cofid:14-278	Lemon juice, fresh, weighed as whole fruit	zumo de limón recién exprimido de fruta entera
+cofid:14-279	Lime juice, fresh	zumo de lima recién exprimido
+cofid:14-285	Passion fruit juice	zumo de maracuyá
+cofid:14-286	Pineapple juice, unsweetened	zumo de piña sin azúcar
+cofid:14-289	Prune juice	zumo de ciruela pasa
+cofid:14-296	Melon, watermelon, flesh only	sandía
+cofid:14-299	Peaches, raw, flesh and skin	melocotones crudos
+cofid:14-309	Melon, watermelon, flesh only, weighed whole	sandía entera
+cofid:14-312	Peaches, flesh and skin, raw, weighed with stone	melocotones con hueso crudos
+cofid:14-314	Plums, average, stewed with sugar, flesh and skin	ciruelas en compota con azúcar
+cofid:14-315	Plums, average, flesh and skin, stewed without sugar	ciruelas en compota sin azúcar
+cofid:14-316	Plums, average, flesh and skin, stewed with sugar, weighed with stones	ciruelas en compota con azúcar con hueso
+cofid:14-317	Plums, average, flesh and skin, stewed without sugar, weighed with stones	ciruelas en compota sin azúcar con hueso
+cofid:14-318	Bananas, flesh only	plátano
+cofid:14-319	Apples, eating, raw, flesh and skin	manzana cruda
+cofid:14-320	Apples, cooking, stewed without sugar, flesh only	manzanas de cocinar en compota sin azúcar
+cofid:14-321	Pears, raw, flesh and skin	pera cruda
+cofid:14-322	Grapes, green	uvas verdes
+cofid:14-323	Grapes, red	uvas tintas
+cofid:14-324	Strawberries, raw	fresas crudas
+cofid:14-325	Blueberries	arándanos
+cofid:14-326	Citrus fruit, soft/easy peelers, flesh only	mandarinas peladas
+cofid:14-327	Oranges, flesh only	naranja pelada
+cofid:14-328	Melon, yellow flesh, flesh only	melón amarillo
+cofid:14-329	Orange juice, chilled	zumo de naranja refrigerado
+cofid:14-330	Orange juice, ambient, UHT	zumo de naranja UHT
+cofid:14-331	Apple juice, clear, ambient and chilled	zumo de manzana claro
+cofid:14-332	Apples, cooking, stewed with sugar, flesh only	manzanas de cocinar en compota con azúcar
+cofid:14-333	Fruit salad, homemade	macedonia casera
+cofid:14-335	Cherries, glace	cerezas escarchadas
+cofid:14-336	Fruit cocktail, canned in juice, whole contents	macedonia en conserva en su jugo
+cofid:14-337	Lemon peel	cáscara de limón
+cofid:14-338	Peel, mixed	fruta escarchada mezclada
+cofid:14-339	Melon, Canteloupe-type, flesh only	melón cantalupo
+cofid:14-340	Olives, green, in brine, drained, flesh and skin	aceitunas verdes en salmuera escurridas
+cofid:14-341	Pomegranate juice drink	bebida de zumo de granada
+cofid:14-342	Apples, cooking, baked without sugar, flesh only	manzanas de cocinar asadas sin azúcar
+cofid:14-343	Apples, cooking, baked without sugar, flesh only, weighed with skin	manzanas de cocinar asadas sin azúcar enteras
+cofid:14-344	Apples, cooking, baked with sugar, flesh only	manzanas de cocinar asadas con azúcar
+cofid:14-345	Apples, cooking, baked with sugar, flesh only, weighed with skin	manzanas de cocinar asadas con azúcar enteras
 cofid:14-346	Apples, eating, raw, flesh and skin, weighed with core	manzana fresca
+cofid:14-347	Bananas, raw, flesh only, weighed with skin	plátano con piel
+cofid:14-348	Citrus fruit, soft/easy peelers, flesh only, weighed with peel and pips	mandarinas con piel y pepitas
+cofid:14-349	Blackberry and apple, stewed with sugar	moras con manzana en compota con azúcar
+cofid:14-350	Grapes, average	uvas
+cofid:14-351	Grapes, average, weighed with pips	uvas con pepitas
+cofid:14-352	Melon, Canteloupe-type, flesh only, weighed whole	melón cantalupo entero
+cofid:14-353	Melon, Canteloupe-type, flesh only, weighed with skin	melón cantalupo con piel
+cofid:14-354	Melon, flesh only, average	melón pelado
+cofid:14-355	Melon, flesh only, average, weighed whole	melón entero
+cofid:14-356	Melon, flesh only, average, weighed with skin	melón con piel
+cofid:14-357	Melon, Honeydew, flesh only, weighed whole	melón verde entero
+cofid:14-358	Melon, Honeydew, flesh only, weighed with skin	melón verde con piel
+cofid:14-359	Olives, green, in brine, drained, flesh and skin, weighed with stones	aceitunas verdes en salmuera con hueso
+cofid:14-360	Oranges, flesh only, weighed with peel and pips	naranja con piel y pepitas
+cofid:14-361	Pears, average, flesh and skin, raw, weighed with core and stalk	pera cruda con corazón
+cofid:14-362	Apples, cooking, raw, flesh only, peeled	manzanas de cocinar peladas crudas
+cofid:14-363	Apples, cooking, raw, flesh only, weighed with skin and core	manzanas de cocinar crudas enteras
+cofid:14-364	Blackberry and apple, stewed without sugar	moras con manzana en compota sin azúcar
+cofid:14-365	Pears, average, raw, flesh only	pera pelada cruda
+cofid:14-366	Pears, raw, flesh only, peeled, weighed with skin and core	pera pelada cruda pesada con piel y corazón
+cofid:14-367	Pears, average, stewed with sugar	peras en compota con azúcar
+cofid:14-368	Pears, average, stewed without sugar	peras en compota sin azúcar
+cofid:14-369	Orange juice, freshly squeezed	zumo de naranja recién exprimido
+cofid:14-370	Orange juice, freshly squeezed, weighed as whole fruit	zumo de naranja recién exprimido de fruta entera
+cofid:14-371	Kiwi fruit, flesh only, raw	kiwi pelado crudo
+cofid:14-372	Plums, dessert, flesh and skin, raw	ciruelas de postre crudas
+cofid:14-373	Kiwi fruit, flesh only, raw, weighed with skin	kiwi con piel crudo
+cofid:14-374	Plums, dessert, flesh and skin, raw, weighed with stones	ciruelas de postre con hueso crudas
+cofid:14-375	Raspberries, raw	frambuesas crudas
+cofid:14-376	Pineapple, flesh only, raw	piña fresca
+cofid:14-377	Pineapple, flesh only, raw, weighed with skin and top	piña con piel y corona
+cofid:14-378	Mangoes, ripe, flesh only, raw	mango maduro
+cofid:14-379	Mangoes, ripe, flesh only, raw, weighed with skin and stone	mango con piel y hueso
+cofid:14-380	Nectarines, flesh and skin, raw	nectarinas crudas
+cofid:14-381	Nectarines, flesh and skin, raw, weighed with stones	nectarinas con hueso crudas
+cofid:14-382	Cherries, flesh and skin, raw	cerezas crudas
+cofid:14-383	Cherries, flesh and skin, raw, weighed with stones	cerezas con hueso crudas
+cofid:14-384	Grapefruit, flesh only, raw	pomelo pelado crudo
+cofid:14-385	Grapefruit, flesh only, raw, weighed with peel and pips	pomelo con piel y pepitas crudo
+cofid:14-386	Avocado, Hass, flesh only	aguacate Hass
+cofid:14-387	Avocado, Hass, flesh only, weighed with skin and stone	aguacate Hass entero
+cofid:14-388	Blackberries, raw	moras crudas
 cofid:14-389	Rhubarb, stems only, stewed without sugar	compota de ruibarbo sin azúcar
+cofid:14-390	Papaya, flesh only, raw	papaya pelada cruda
+cofid:14-391	Prunes, ready-to-eat, semi-dried	ciruelas pasas semisecas
+cofid:14-392	Apricots, ready-to-eat, semi-dried	orejones semisecos
+cofid:14-393	Raisins, dried	pasas
+cofid:14-394	Dates, dried, flesh and skin	dátiles secos
+cofid:14-395	Figs, ready-to-eat, semi-dried	higos semisecos
+cofid:14-396	Pineapple, dried	piña seca
+cofid:14-397	Papaya, flesh only, raw, weighed with skin and pips	papaya con piel y semillas cruda
+cofid:14-398	Prunes, ready-to-eat, semi-dried, weighed with stones	ciruelas pasas semisecas con hueso
+cofid:14-399	Dates, dried, flesh and skin, weighed with stones	dátiles secos con hueso
+cofid:14-804	Barcelona nuts, Kernel only	avellanas de Barcelona
+cofid:14-805	Barcelona nuts, kernel only, weighed with shells	avellanas de Barcelona con cáscara
+cofid:14-806	Betel nuts	nueces de betel
+cofid:14-811	Cashew nuts, kernel only, plain	anacardos naturales
+cofid:14-812	Cashew nuts, kernel only, roasted and salted	anacardos tostados salados
+cofid:14-813	Chestnuts, kernel only, raw	castañas crudas
+cofid:14-814	Chestnuts, kernel only, raw, weighed with shells	castañas con cáscara crudas
+cofid:14-815	Chestnuts, dried	castañas secas
+cofid:14-816	Coconut, flesh only, fresh	coco fresco
+cofid:14-820	Coconut milk	leche de coco
+cofid:14-826	Melon seeds	pepitas de melón
+cofid:14-834	Peanuts, roasted and salted	cacahuetes tostados salados
+cofid:14-837	Pecan nuts, kernel only	nueces pecanas
+cofid:14-838	Pecan nuts, kernel only, weighed with shells	nueces pecanas con cáscara
+cofid:14-839	Pine nuts, kernel only	piñones
+cofid:14-840	Pistachio nuts, kernel only, roasted and salted	pistachos tostados salados
+cofid:14-841	Pistachio nuts, kernel only, roasted and salted, weighed with shells	pistachos tostados salados con cáscara
+cofid:14-842	Pumpkin seeds	semillas de calabaza
+cofid:14-843	Quinoa, raw	quinoa cruda
+cofid:14-844	Sesame seeds	semillas de sésamo
+cofid:14-845	Sunflower seeds	pipas de girasol
+cofid:14-846	Sunflower seeds, toasted	pipas de girasol tostadas
+cofid:14-847	Tahini paste	tahini
 cofid:14-848	Tigernuts	chufas
+cofid:14-849	Trail mix	mezcla de frutos secos
+cofid:14-870	Almonds, flaked and ground	almendras en láminas y molidas
+cofid:14-871	Brazil nuts, kernel only	nueces de Brasil
+cofid:14-873	Coconut, desiccated	coco rallado
+cofid:14-874	Hazelnuts, kernel only	avellanas
+cofid:14-875	Marzipan, white and yellow, retail	mazapán comprado
+cofid:14-877	Peanuts, kernel only, plain, unsalted	cacahuetes sin sal
+cofid:14-878	Peanuts, dry roasted	cacahuetes tostados en seco
+cofid:14-879	Walnuts, kernel only	nueces
+cofid:14-880	Nuts, mixed	mezcla de frutos secos variados
+cofid:14-882	Peanuts and raisins	cacahuetes con pasas
+cofid:14-884	Brazil nuts, kernel only, weighed with shells	nueces de Brasil con cáscara
+cofid:14-885	Hazelnuts, kernel only, weighed with shells	avellanas con cáscara
+cofid:14-886	Peanuts, kernel only, plain, weighed with shells	cacahuetes con cáscara
+cofid:14-887	Walnuts, kernel only, weighed with shells	nueces con cáscara
+cofid:14-889	Coconut milk, retail	leche de coco comprada
+cofid:14-890	Coconut milk, reduced fat, retail	leche de coco ligera comprada
+cofid:14-891	Macadamia nuts, salted	macadamias saladas
 cofid:14-892	Peanut butter, smooth	mantequilla de cacahuete
+cofid:14-893	Marzipan, homemade	mazapán casero
+cofid:14-894	Peanuts, raisins and chocolate chips	cacahuetes con pasas y pepitas de chocolate
+cofid:14-895	Breadnut seeds, dried	semillas de ramón secas
+cofid:14-896	Almonds, whole kernels	almendras enteras
+cofid:14-897	Almonds, toasted	almendras tostadas
+cofid:14-898	Almonds, weighed with shells	almendras con cáscara
+cofid:15-001	Aubergine, stuffed with lentils and vegetables	berenjenas rellenas de lentejas y verduras
+cofid:15-016	Bhaji, cabbage and spinach	bhaji de col y espinacas
+cofid:15-021	Bhaji, cauliflower, potato and pea, with butter	bhaji de coliflor, patata y guisantes con mantequilla
+cofid:15-022	Bhaji, cauliflower, potato and pea, with vegetable oil	bhaji de coliflor, patata y guisantes con aceite vegetal
+cofid:15-024	Bhaji, green bean	bhaji de judías verdes
+cofid:15-025	Bhaji, karela, with butter ghee, homemade	bhaji de cundeamor con ghee casero
+cofid:15-026	Bhaji, karela, with vegetable oil, homemade	bhaji de cundeamor con aceite vegetal casero
+cofid:15-040	Bhaji, potato, spinach and cauliflower, homemade	bhaji de patata, espinacas y coliflor casero
+cofid:15-047	Bhaji, vegetable, Punjabi, with butter	bhaji de verduras punjabi con mantequilla
+cofid:15-048	Bhaji, vegetable, Punjabi, with vegetable oil	bhaji de verduras punjabi con aceite vegetal
+cofid:15-095	Curry, black-eye bean, Punjabi, homemade	curry de carillas punjabi casero
+cofid:15-107	Curry, chick pea, whole and tomato, Punjabi, with butter, homemade	curry de garbanzos con tomate punjabi con mantequilla casero
+cofid:15-108	Curry, chick pea, whole and tomato, Punjabi, with vegetable oil, homemade	curry de garbanzos con tomate punjabi con aceite vegetal casero
+cofid:15-125	Curry, lentil, red/masoor dahl, mung bean dahl and tomato, homemade	curry de lentejas rojas, dal de mung y tomate casero
+cofid:15-132	Curry, mung bean dahl and tomato, homemade	curry de dal de mung con tomate casero
+cofid:15-146	Curry, red kidney bean, Punjabi, homemade	curry de alubias rojas punjabi casero
+cofid:15-186	Lasagne, spinach, wholemeal, homemade	lasaña de espinacas integral casera
+cofid:15-188	Lasagne, vegetable, wholemeal, homemade	lasaña de verduras integral casera
+cofid:15-190	Laverbread	laverbread (pasta de algas)
+cofid:15-198	Lentil roast, homemade	rollo de lentejas casero
+cofid:15-199	Lentil roast, with egg, homemade	rollo de lentejas con huevo casero
+cofid:15-200	Lentil and nut roast, homemade	rollo de lentejas y frutos secos casero
+cofid:15-201	Lentil and nut roast, with egg, homemade	rollo de lentejas y frutos secos con huevo casero
+cofid:15-208	Nut croquettes, fried in sunflower oil, homemade	croquetas de frutos secos fritas en aceite de girasol caseras
+cofid:15-209	Nut croquettes, fried in vegetable oil, homemade	croquetas de frutos secos fritas en aceite vegetal caseras
+cofid:15-210	Nut cutlets, retail, fried in sunflower oil	croquetas de frutos secos compradas fritas en aceite de girasol
+cofid:15-211	Nut cutlets, retail, fried in vegetable oil	croquetas de frutos secos compradas fritas en aceite vegetal
+cofid:15-212	Nut cutlets, retail, grilled	croquetas de frutos secos compradas a la plancha
+cofid:15-214	Nut roast, mixed nuts with egg, homemade	rollo de frutos secos variados con huevo casero
+cofid:15-215	Nut and rice roast, mixed nuts, homemade	rollo de frutos secos variados y arroz casero
+cofid:15-216	Nut and rice roast, mixed nuts with egg, homemade	rollo de frutos secos variados y arroz con huevo casero
+cofid:15-217	Nut and seed roast, mixed nuts and sunflower seeds, homemade	rollo de frutos secos y semillas variados casero
+cofid:15-218	Nut and seed roast, mixed nuts and sunflower seeds with egg, homemade	rollo de frutos secos y semillas variados con huevo casero
+cofid:15-219	Nut and vegetable roast, mixed nuts, homemade	rollo de frutos secos variados y verduras casero
+cofid:15-220	Nut and vegetable roast, mixed nuts with egg, homemade	rollo de frutos secos variados y verduras con huevo casero
+cofid:15-221	Nut, mushroom and rice roast, homemade	rollo de frutos secos, champiñones y arroz casero
+cofid:15-255	Pizza, tomato, homemade	pizza de tomate casera
+cofid:15-259	Potato, leek and celery bake	gratinado de patata, puerro y apio
+cofid:15-261	Potatoes with onions and eggs, fried	patatas fritas con cebolla y huevo
+cofid:15-262	Quorn korma	Quorn korma
+cofid:15-279	Rissoles, lentil, fried in sunflower oil	croquetas de lentejas fritas en aceite de girasol
+cofid:15-280	Rissoles, lentil, fried in vegetable oil	croquetas de lentejas fritas en aceite vegetal
+cofid:15-281	Rissoles, brown rice, fried in sunflower oil	croquetas de arroz integral fritas en aceite de girasol
+cofid:15-282	Rissoles, brown rice, fried in vegetable oil	croquetas de arroz integral fritas en aceite vegetal
+cofid:15-294	Salad, wholemeal pasta, with vegetables and mayonnaise	ensalada de pasta integral con verduras y mayonesa
+cofid:15-305	Samosas, vegetable, retail	samosas de verduras compradas
+cofid:15-321	Tomatoes, stuffed with rice	tomates rellenos de arroz
+cofid:15-344	Vegetable stir fry mix, fried in corn oil	mezcla de verduras salteada en aceite de maíz
+cofid:15-345	Vegetable stir fry mix, fried in sunflower oil	mezcla de verduras salteada en aceite de girasol
+cofid:15-364	Vegetables, stir-fried, takeaway	verduras salteadas para llevar
+cofid:15-397	Bhaji, cabbage and potato, with rapeseed oil, homemade	bhaji de col y patata con aceite de colza casero
+cofid:15-490	Curry, mung bean, whole, Punjabi, homemade	curry de mung entero punjabi casero
+cofid:15-511	Dal Dhokari, homemade	dal dhokari casero
+cofid:15-513	Dosa, filling, vegetable, homemade	relleno de verduras para dosa casero
+cofid:15-528	Khichadi, with butter ghee	khichadi con ghee
+cofid:15-529	Khichadi, with vegetable oil	khichadi con aceite vegetal
+cofid:15-617	Sushi, vegetable	sushi de verduras
+cofid:15-619	Curry, vegetable, ready meal, without rice, cooked	curry de verduras preparado sin arroz
+cofid:15-620	Pakora, vegetable, takeaway and restaurant	pakoras de verduras para llevar y de restaurante
+cofid:15-621	Vegetables, mixed, cooked with onion, spice and tomatoes, homemade	mezcla de verduras con cebolla, especias y tomate casera
+cofid:15-625	Tori ki subji, homemade	sabzi de tori casero
+cofid:15-626	Tinda subji, homemade	sabzi de tinda casero
+cofid:15-627	Curry, bhindi subji, homemade	sabzi de bhindi casero
+cofid:15-628	Methi aloo, homemade	methi aloo casero
+cofid:15-629	Saag, homemade	saag casero
+cofid:15-634	Curry, Thai, stir-fry vegetable, takeaway and restaurant	curry tailandés de verduras salteadas para llevar y de restaurante
+cofid:15-635	Coleslaw, not low calorie, retail	ensalada de col comprada
+cofid:15-636	Coleslaw, with reduced calorie dressing, retail	ensalada de col con aliño ligero comprada
+cofid:15-637	Cauliflower cheese, retail	coliflor con queso comprada
+cofid:15-638	Casserole, vegetable, homemade	cazuela de verduras casera
+cofid:15-639	Cauliflower cheese, made with semi-skimmed milk, homemade	coliflor con queso con leche semidesnatada casera
+cofid:15-640	Chilli, vegetable, homemade	chili de verduras casero
+cofid:15-641	Curry, chick pea dhal, homemade	curry de garbanzos casero
+cofid:15-642	Garlic mushrooms, not coated, homemade	champiñones al ajillo caseros
+cofid:15-643	Nut roast, homemade	rollo de frutos secos casero
+cofid:15-645	Pancakes, stuffed with vegetables, homemade	crepes rellenos de verduras caseros
+cofid:15-646	Pasty, vegetable, homemade	pasty de verduras casero
+cofid:15-647	Pie, vegetable, homemade	pastel de verduras casero
+cofid:15-648	Salad, green	ensalada verde
+cofid:15-649	Salad, rice, homemade	ensalada de arroz casera
+cofid:15-650	Vegetable bake, homemade	horneado de verduras casero
+cofid:15-651	Lasagne, vegetable, retail	lasaña de verduras comprada
+cofid:15-652	Moussaka, vegetable, retail	musaca de verduras comprada
+cofid:15-653	Pakora/bhajia, vegetable, retail	pakoras de verduras compradas
+cofid:15-654	Salad, potato, with mayonnaise, retail	ensaladilla de patata con mayonesa comprada
+cofid:15-655	Shepherd's pie, vegetable, retail	pastel de pastor de verduras comprado
+cofid:15-656	Vegeburger, retail, grilled	hamburguesa vegetal comprada a la plancha
+cofid:15-657	Vegetable and cheese grill/burger, in crumbs, baked/grilled	hamburguesa de verduras y queso rebozada al horno
+cofid:15-658	Sausages, vegetarian, baked/grilled	salchichas vegetarianas al horno
+cofid:15-659	Ratatouille, homemade	ratatouille casero
+cofid:15-661	Vegetable stir fry mix, fried in rapeseed oil	mezcla de verduras salteada en aceite de colza
+cofid:15-662	Aubergine, stuffed with rice	berenjenas rellenas de arroz
+cofid:15-663	Aubergine, stuffed with vegetables, cheese topping	berenjenas rellenas de verduras con queso gratinado
+cofid:15-664	Bean loaf, mixed beans, homemade	pastel de alubias variadas casero
+cofid:15-665	Beanburger, aduki, fried in rapeseed oil, homemade	hamburguesa de azuki frita en aceite de colza casera
+cofid:15-666	Beanburger, butter bean, fried in rapeseed oil, homemade	hamburguesa de judías de Lima frita en aceite de colza casera
+cofid:15-667	Beanburger, red kidney bean, fried in rapeseed oil	hamburguesa de alubias rojas frita en aceite de colza
+cofid:15-668	Beanburger, soya, fried in rapeseed oil	hamburguesa de soja frita en aceite de colza
+cofid:15-669	Bhaji, aubergine and potato, homemade	bhaji de berenjena y patata casero
+cofid:15-670	Bhaji, aubergine, pea, potato and cauliflower, homemade	bhaji de berenjena, guisantes, patata y coliflor casero
+cofid:15-671	Bhaji, cabbage, homemade	bhaji de col casero
+cofid:15-672	Bhaji, cabbage and pea, with butter ghee, homemade	bhaji de col y guisantes con ghee casero
+cofid:15-673	Bhaji, cabbage and pea, with rapeseed oil, homemade	bhaji de col y guisantes con aceite de colza casero
+cofid:15-674	Bhaji, cabbage and potato, with butter, homemade	bhaji de col y patata con mantequilla casero
+cofid:15-675	Bhaji, cabbage and potato, with vegetable oil	bhaji de col y patata con aceite vegetal
+cofid:15-676	Bhaji, carrot, potato and pea, with butter, homemade	bhaji de zanahoria, patata y guisantes con mantequilla casero
+cofid:15-677	Bhaji, carrot, potato and pea, with vegetable oil, homemade	bhaji de zanahoria, patata y guisantes con aceite vegetal casero
+cofid:15-678	Bhaji, cauliflower, homemade	bhaji de coliflor casero
+cofid:15-679	Bhaji, cauliflower and potato, homemade	bhaji de coliflor y patata casero
+cofid:15-680	Bhaji, cauliflower and vegetable, homemade	bhaji de coliflor y verduras casero
+cofid:15-681	Bhaji, mushroom, homemade	bhaji de champiñones casero
+cofid:15-682	Bhaji, mustard leaves, homemade	bhaji de hojas de mostaza casero
+cofid:15-683	Bhaji, mustard leaves and spinach, homemade	bhaji de hojas de mostaza y espinacas casero
+cofid:15-684	Bhaji, okra, Bangladeshi, with butter ghee, homemade	bhaji de okra bangladeshí con ghee casero
+cofid:15-685	Bhaji, okra, Bangladeshi, with vegetable oil, homemade	bhaji de okra bangladeshí con aceite vegetal casero
+cofid:15-686	Bhaji, okra, Islami, homemade	bhaji de okra islami casero
+cofid:15-687	Bhaji, pea, homemade	bhaji de guisantes casero
+cofid:15-688	Bhaji, potato and fenugreek leaves, homemade	bhaji de patata y hojas de fenogreco casero
+cofid:15-689	Bhaji, potato and green pepper, homemade	bhaji de patata y pimiento verde casero
+cofid:15-690	Bhaji, potato and onion, homemade	bhaji de patata y cebolla casero
+cofid:15-691	Bhaji, potato, onion and mushroom, homemade	bhaji de patata, cebolla y champiñones casero
+cofid:15-692	Bhaji, potato, with butter ghee, homemade	bhaji de patata con ghee casero
+cofid:15-693	Bhaji, potato, with vegetable oil, homemade	bhaji de patata con aceite vegetal casero
+cofid:15-694	Bhaji, spinach, homemade	bhaji de espinacas casero
+cofid:15-695	Bhaji, spinach and potato, homemade	bhaji de espinacas y patata casero
+cofid:15-696	Bhaji, turnip, homemade	bhaji de nabo casero
+cofid:15-697	Bhaji, turnip and onion, homemade	bhaji de nabo y cebolla casero
+cofid:15-698	Bhaji, vegetable, with butter, homemade	bhaji de verduras con mantequilla casero
+cofid:15-699	Bhaji, vegetable, with rapeseed oil, homemade	bhaji de verduras con aceite de colza casero
+cofid:15-700	Broccoli in cheese sauce, made with semi-skimmed milk, homemade	brócoli en salsa de queso con leche semidesnatada casero
+cofid:15-701	Broccoli in cheese sauce, made with skimmed milk, homemade	brócoli en salsa de queso con leche desnatada casero
+cofid:15-702	Broccoli in cheese sauce, made with whole milk, homemade	brócoli en salsa de queso con leche entera casero
+cofid:15-703	Bubble and squeak, fried in sunflower oil, homemade	patata con col frita en aceite de girasol casera
+cofid:15-704	Bubble and squeak, fried in rapeseed oil, homemade	patata con col frita en aceite de colza casera
+cofid:15-705	Cabbage, red, cooked with apple	col lombarda estofada con manzana
+cofid:15-706	Callaloo and cho cho, homemade	callaloo con chayote casero
+cofid:15-707	Callaloo and okra, homemade	callaloo con okra casero
+cofid:15-708	Cannelloni, spinach, homemade	canelones de espinacas caseros
+cofid:15-709	Cannelloni, vegetable, homemade	canelones de verduras caseros
+cofid:15-710	Cauliflower cheese, made with skimmed milk, homemade	coliflor con queso con leche desnatada casera
 cofid:15-711	Cauliflower cheese, made with whole milk, homemade	coliflor con queso
 cofid:15-768	Curry, mung bean dahl, Bengali, homemade	dal de judía mungo bengalí
 cofid:15-769	Curry, mung bean, whole and turnip leaves, homemade	curry de judía mungo con hojas de nabo
