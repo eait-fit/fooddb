@@ -7324,12 +7324,206 @@ fdc:174608	Chicken breast, roll, oven-roasted	куриная грудка рул
 fdc:174609	Bologna, pork and turkey, lite	колбаса болонья из свинины и индейки лёгкая
 fdc:174610	Bologna, pork, turkey and beef	колбаса болонья из свинины, индейки и говядины
 fdc:174611	Ham, honey, smoked, cooked	ветчина мёдовая копчёная
-fdc:174666	Figs, dried, stewed	инжир сушёный томлёный
-fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	говяжья грудинка (пашина) тушёная
-fdc:174766	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw	говяжья грудинка постная сырая
-fdc:174767	Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, cooked, braised	говядина лопатка тушёная
-fdc:174773	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	говядина трай-тип запечённая
-fdc:174806	Snacks, Pretzels, gluten- free made with cornstarch and potato flour	крендельки без глютена
+fdc:174612	Turkey, breast, smoked, lemon pepper flavor, 97% fat-free	грудка индейки копчёная с лимонным перцем 97% без жира
+fdc:174613	Turkey, white, rotisserie, deli cut	индейка белое мясо с гриля нарезка
+fdc:174614	Frankfurter, beef, heated	сосиска говяжья разогретая
+fdc:174615	Frankfurter, meat, heated	сосиска мясная разогретая
+fdc:174616	Sausage, breakfast sausage, beef, pre-cooked, unprepared	колбаски завтрачные говяжьи полуготовые
+fdc:174617	Sausage, turkey, fresh, raw	колбаса из индейки свежая сырая
+fdc:174618	Sausage, beef, fresh, cooked	колбаса говяжья свежая приготовленная
+fdc:174619	Cereals ready-to-eat, MALT-O-MEAL, COCO-ROOS	хлопья Coco-Roos Malt-O-Meal
+fdc:174620	Cereals ready-to-eat, QUAKER, QUAKER OAT CINNAMON LIFE	хлопья Oat Cinnamon Life Quaker
+fdc:174621	Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S	хлопья Honey Graham Oh!s Quaker
+fdc:174622	Cereals ready-to-eat, QUAKER, Oatmeal Squares	хлопья Oatmeal Squares Quaker
+fdc:174623	Cereals ready-to-eat, QUAKER, Oatmeal Squares, cinnamon	хлопья Oatmeal Squares корица Quaker
+fdc:174624	Cereals, QUAKER, Instant Oatmeal, fruit and cream variety, dry	овсянка быстрого приготовления фрукты со сливками Quaker сухая
+fdc:174625	Cereals, QUAKER, Instant Oatmeal, raisins, dates and walnuts, dry	овсянка быстрого приготовления изюм, финики и грецкие орехи Quaker сухая
+fdc:174626	Cereals, QUAKER, Oat Bran, QUAKER/MOTHER'S Oat Bran, dry	крупа овсяная отрубная Quaker сухая
+fdc:174627	Cereals, QUAKER, Oat Bran, QUAKER/MOTHER'S Oat Bran, prepared with water, no salt	крупа овсяная отрубная Quaker приготовленная на воде без соли
+fdc:174628	Cereals ready-to-eat, Post, Waffle Crisp	хлопья Waffle Crisp Post
+fdc:174629	Cereals, QUAKER, hominy grits, white, quick, dry	крупа гомини белая быстрого приготовления Quaker сухая
+fdc:174630	Cereals, QUAKER, hominy grits, white, regular, dry	крупа гомини белая Quaker сухая
+fdc:174631	Cereals ready-to-eat, MALT-O-MEAL, COLOSSAL CRUNCH	хлопья Colossal Crunch Malt-O-Meal
+fdc:174632	Cereals ready-to-eat, QUAKER, MOTHER'S Cinnamon Oat Crunch	хлопья Cinnamon Oat Crunch Mother's Quaker
+fdc:174633	Cereals ready-to-eat, QUAKER, MOTHER'S GRAHAM BUMPERS	хлопья Graham Bumpers Mother's Quaker
+fdc:174634	Cereals ready-to-eat, QUAKER, MOTHER'S COCOA BUMPERS	хлопья Cocoa Bumpers Mother's Quaker
+fdc:174635	Cereals ready-to-eat, SUN COUNTRY, KRETSCHMER Toasted Wheat Bran	отруби пшеничные жареные Kretschmer
+fdc:174636	Cereals, QUAKER, Instant Oatmeal, Cinnamon-Spice, dry	овсянка быстрого приготовления корица-специи Quaker сухая
+fdc:174637	Cereals, QUAKER, Instant Oatmeal, DINOSAUR EGGS, Brown Sugar, dry	овсянка быстрого приготовления Dinosaur Eggs коричневый сахар Quaker сухая
+fdc:174638	Cereals, QUAKER, Instant Oatmeal, Banana Bread, dry	овсянка быстрого приготовления банановый хлеб Quaker сухая
+fdc:174639	Cereals ready-to-eat, UNCLE SAM CEREAL	хлопья Uncle Sam
+fdc:174640	Cereals, QUAKER, Quick Oats with Iron, Dry	овсяные хлопья быстрого приготовления с железом Quaker сухие
+fdc:174641	Cereals, QUAKER, Whole Wheat Natural Cereal, dry	крупа цельнопшеничная Quaker сухая
+fdc:174642	Cereals ready-to-eat, MALT-O-MEAL, Honey BUZZERS	хлопья Honey Buzzers Malt-O-Meal
+fdc:174643	Cereals ready-to-eat, MALT-O-MEAL, GOLDEN PUFFS	хлопья Golden Puffs Malt-O-Meal
+fdc:174644	Cereals ready-to-eat, MOM'S BEST, Honey Nut TOASTY O'S	хлопья Honey Nut Toasty O's Mom's Best
+fdc:174645	Cereals ready-to-eat, MALT-O-MEAL, Apple ZINGS	хлопья Apple Zings Malt-O-Meal
+fdc:174646	Cereals ready-to-eat, MALT-O-MEAL, CINNAMON TOASTERS	хлопья Cinnamon Toasters Malt-O-Meal
+fdc:174647	Cereals ready-to-eat, MALT-O-MEAL, Cocoa DYNO-BITES	хлопья Cocoa Dyno-Bites Malt-O-Meal
+fdc:174648	Cereals ready-to-eat, RALSTON Corn Flakes	кукурузные хлопья Ralston
+fdc:174649	Cereals ready-to-eat, RALSTON Crispy Hexagons	хлопья Crispy Hexagons Ralston
+fdc:174650	Milk and cereal bar	батончик молочно-зерновой
+fdc:174651	Cereals, MALT-O-MEAL, original, plain, prepared with water, without salt	крупа Malt-O-Meal приготовленная на воде без соли
+fdc:174652	Cereals ready-to-eat, QUAKER, Christmas Crunch	хлопья Christmas Crunch Quaker
+fdc:174653	Cereals ready-to-eat, POST SELECTS Maple Pecan Crunch	хлопья Maple Pecan Crunch Post Selects
+fdc:174654	Cereals ready-to-eat, NATURE'S PATH, Organic FLAX PLUS, Pumpkin Granola	гранола органическая с льном и тыквой Nature's Path
+fdc:174655	Cereals, CREAM OF WHEAT, 2 1/2 minute cook time, dry	крупа манная Cream of Wheat быстрого приготовления сухая
+fdc:174656	Incaparina, dry mix (corn and soy flours), unprepared	инкапарина сухая смесь
+fdc:174657	Cereals ready-to-eat, QUAKER, CAP'N CRUNCH'S Halloween Crunch	хлопья Cap'n Crunch Halloween Quaker
+fdc:174658	Cereals ready-to-eat, QUAKER, Natural Granola Apple Cranberry Almond	гранола яблоко-клюква-миндаль Quaker
+fdc:174659	Cereals ready-to-eat, QUAKER, Maple Brown Sugar LIFE Cereal	хлопья Life кленовый сахар Quaker
+fdc:174660	Cereals, QUAKER, Instant Oatmeal Organic, Regular	овсянка быстрого приготовления органическая Quaker
+fdc:174661	Cereals, QUAKER, Instant Oatmeal, fruit and cream, variety of flavors, reduced sugar	овсянка быстрого приготовления фрукты со сливками пониженный сахар Quaker
+fdc:174662	Cereals, QUAKER, Instant Oatmeal, Apple and Cinnamon, reduced sugar	овсянка быстрого приготовления яблоко-корица пониженный сахар Quaker
+fdc:174663	Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, pecan bunches	хлопья Honey Bunches of Oats с пеканом Post
+fdc:174664	Cereals ready-to-eat, MALT-O-MEAL, CHOCOLATE MARSHMALLOW MATEYS	хлопья Chocolate Marshmallow Mateys Malt-O-Meal
+fdc:174665	Figs, dried, uncooked	инжир сушёный
+fdc:174666	Figs, dried, stewed	инжир сушёный тушёный
+fdc:174667	Fruit cocktail, (peach and pineapple and pear and grape and cherry), canned, water pack, solids and liquids	фруктовый коктейль консервированный в воде
+fdc:174668	Fruit cocktail, (peach and pineapple and pear and grape and cherry), canned, juice pack, solids and liquids	фруктовый коктейль консервированный в соку
+fdc:174669	Fruit salad, (peach and pear and apricot and pineapple and cherry), canned, water pack, solids and liquids	фруктовый салат консервированный в воде
+fdc:174670	Fruit salad, (peach and pear and apricot and pineapple and cherry), canned, juice pack, solids and liquids	фруктовый салат консервированный в соку
+fdc:174671	Fruit salad, (peach and pear and apricot and pineapple and cherry), canned, light syrup, solids and liquids	фруктовый салат консервированный в лёгком сиропе
+fdc:174672	Fruit salad, (peach and pear and apricot and pineapple and cherry), canned, extra heavy syrup, solids and liquids	фруктовый салат консервированный в очень густом сиропе
+fdc:174673	Grapefruit, raw, pink and red, all areas	грейпфрут розовый
+fdc:174674	Grapefruit, raw, pink and red, California and Arizona	грейпфрут розовый калифорнийский
+fdc:174675	Grapefruit, raw, pink and red, Florida	грейпфрут розовый флоридский
+fdc:174676	Grapefruit, raw, white, all areas	грейпфрут белый
+fdc:174677	Grapefruit, raw, white, California	грейпфрут белый калифорнийский
+fdc:174678	Grapefruit juice, white, canned or bottled, unsweetened	сок грейпфрутовый белый консервированный несладкий
+fdc:174679	Grapefruit juice, white, canned, sweetened	сок грейпфрутовый белый консервированный подслащённый
+fdc:174680	Grapefruit juice, white, frozen concentrate, unsweetened, undiluted	сок грейпфрутовый белый концентрат замороженный
+fdc:174681	Grapefruit juice, white, frozen concentrate, unsweetened, diluted with 3 volume water	сок грейпфрутовый белый из концентрата разведённый водой
+fdc:174682	Grapes, american type (slip skin), raw	виноград американский свежий
+fdc:174683	Grapes, red or green (European type, such as Thompson seedless), raw	виноград столовый свежий
+fdc:174684	Grapes, canned, thompson seedless, water pack, solids and liquids	виноград консервированный в воде
+fdc:174685	Grapes, canned, thompson seedless, heavy syrup pack, solids and liquids	виноград консервированный в густом сиропе
+fdc:174686	Guava sauce, cooked	соус гуавовый
+fdc:174687	Jackfruit, raw	джекфрут свежий
+fdc:174688	Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	филе стриплойна без кости постное жир 1/8" на гриле
+fdc:174689	Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled	филе стриплойна без кости постное жир 1/8" на гриле (чойс)
+fdc:174690	Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	филе стриплойна без кости постное жир 1/8" на гриле (селект)
+fdc:174691	Beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8" fat, choice, raw	малое жаркое из стриплойна без кости постное жир 1/8" сырое (чойс)
+fdc:174692	Beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8" fat, select, raw	малое жаркое из стриплойна без кости постное жир 1/8" сырое (селект)
+fdc:174693	Beef, loin, top sirloin filet, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	филе топ-серлоина без кости постное без внешнего жира на гриле
+fdc:174694	Beef, loin, top sirloin filet, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	филе топ-серлоина без кости постное без внешнего жира на гриле (чойс)
+fdc:174695	Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, select, raw	малое жаркое из топ-серлоина без кости постное без внешнего жира сырое (селект)
+fdc:174696	Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, all grades, raw	малое жаркое из рибая без кости постное без внешнего жира сырое
+fdc:174697	Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, choice, raw	малое жаркое из рибая без кости постное без внешнего жира сырое (чойс)
+fdc:174698	Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, select, raw	малое жаркое из рибая без кости постное без внешнего жира сырое (селект)
+fdc:174699	Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	стейк из крышки рибая без кости постный без внешнего жира сырой (чойс)
+fdc:174700	Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, select, raw	стейк из крышки рибая без кости постный без внешнего жира сырой (селект)
+fdc:174701	Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	филе рибая без кости постное без внешнего жира на гриле
+fdc:174702	Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	филе рибая без кости постное без внешнего жира на гриле (чойс)
+fdc:174703	Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	филе рибая без кости постное без внешнего жира на гриле (селект)
+fdc:174704	Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	стейк топ-серлоин без кости с жиром жир 1/8" на гриле (чойс)
+fdc:174705	Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled	стейк топ-серлоин без кости с жиром жир 1/8" на гриле (селект)
+fdc:174706	Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк топ-серлоин без кости с жиром жир 1/8" сырой
+fdc:174707	Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк топ-серлоин без кости с жиром жир 1/8" сырой (чойс)
+fdc:174708	Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	малое жаркое из стриплойна без кости с жиром жир 1/8" запечённое
+fdc:174709	Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	малое жаркое из стриплойна без кости с жиром жир 1/8" запечённое (чойс)
+fdc:174710	Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	малое жаркое из стриплойна без кости с жиром жир 1/8" запечённое (селект)
+fdc:174711	Beef, top loin petite roast/filet, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, raw	малое жаркое из стриплойна без кости с жиром жир 1/8" сырое
+fdc:174712	Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	стейк стриплойн без кости с кромкой с жиром жир 1/8" на гриле (чойс)
+fdc:174713	Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled	стейк стриплойн без кости с кромкой с жиром жир 1/8" на гриле (селект)
+fdc:174714	Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled	стейк стриплойн без кости с кромкой с жиром жир 1/8" на гриле
+fdc:174715	Beef, New Zealand, imported, bolar blade, separable lean only, cooked, fast roasted	лопатка болар новозеландская постная запечённая
+fdc:174716	Beef, New Zealand, imported, bolar blade, separable lean only, raw	лопатка болар новозеландская постная сырая
+fdc:174717	Beef, New Zealand, imported, brisket navel end, separable lean only, cooked, braised	грудинка брюшной конец новозеландская постная тушёная
+fdc:174718	Beef, New Zealand, imported, brisket navel end, separable lean only, raw	грудинка брюшной конец новозеландская постная сырая
+fdc:174719	Beef, New Zealand, imported, cube roll, separable lean only, cooked, fast roasted	куб-ролл новозеландский постный запечённый
+fdc:174720	Beef, New Zealand, imported, cube roll, separable lean only, raw	куб-ролл новозеландский постный сырой
+fdc:174721	Beef, New Zealand, imported, eye round, separable lean only, cooked, slow roasted	глазок огузка новозеландский постный запечённый
+fdc:174722	Beef, New Zealand, imported, eye round, separable lean only, raw	глазок огузка новозеландский постный сырой
+fdc:174723	Beef, New Zealand, imported, variety meats and by-products, heart, raw	сердце говяжье новозеландское сырое
+fdc:174724	Beef, New Zealand, imported, hind shin, separable lean only, cooked, braised	задняя голяшка говяжья новозеландская постная тушёная
+fdc:174725	Beef, New Zealand, imported, hind shin, separable lean only, raw	задняя голяшка говяжья новозеландская постная сырая
+fdc:174726	Beef, New Zealand, imported, inside, raw	внутренний огузок новозеландский сырой
+fdc:174727	Beef, New Zealand, imported, variety meats and by-products, kidney, raw	почки говяжьи новозеландские сырые
+fdc:174728	Beef, New Zealand, imported, variety meats and by-products liver, cooked, boiled	печень говяжья новозеландская варёная
+fdc:174729	Beef, New Zealand, imported, variety meats and by-products, liver, raw	печень говяжья новозеландская сырая
+fdc:174730	Beef, New Zealand, imported, manufacturing beef, cooked, boiled	говядина новозеландская для переработки варёная
+fdc:174731	Beef, New Zealand, imported, ribs prepared, raw	рёбра говяжьи новозеландские сырые
+fdc:174732	Beef, New Zealand, imported, rump centre, separable lean only, cooked, fast fried	центр огузка новозеландский постный жареный
+fdc:174733	Beef, New Zealand, imported, striploin, separable lean only, cooked, fast fried	стриплойн новозеландский постный жареный
+fdc:174734	Beef, New Zealand, imported, striploin, separable lean only, raw	стриплойн новозеландский постный сырой
+fdc:174735	Beef, New Zealand, imported, oyster blade, separable lean and fat, raw	лопатка оустер-блейд новозеландская с жиром сырая
+fdc:174736	Beef, New Zealand, imported, tenderloin, separable lean only, raw	вырезка новозеландская постная сырая
+fdc:174737	Beef, New Zealand, imported, variety meats and by-products, tongue, cooked, boiled	язык говяжий новозеландский варёный
+fdc:174738	Beef, New Zealand, imported, variety meats and by-products, tongue, raw	язык говяжий новозеландский сырой
+fdc:174739	Beef, New Zealand, imported, brisket navel end, separable lean and fat, cooked, braised	грудинка брюшной конец новозеландская с жиром тушёная
+fdc:174740	Beef, New Zealand, imported, brisket navel end, separable lean and fat, raw	грудинка брюшной конец новозеландская с жиром сырая
+fdc:174741	Beef, New Zealand, imported, brisket point end, separable lean and fat, cooked, braised	конец грудинки новозеландский с жиром тушёный
+fdc:174742	Beef, New Zealand, imported, brisket point end, separable lean and fat, raw	конец грудинки новозеландский с жиром сырой
+fdc:174743	Beef, New Zealand, imported, eye round, separable lean and fat, cooked, slow roasted	глазок огузка новозеландский с жиром запечённый
+fdc:174744	Beef, New Zealand, imported, eye round, separable lean and fat, raw	глазок огузка новозеландский с жиром сырой
+fdc:174745	Beef, New Zealand, imported, flank, separable lean and fat, cooked, braised	пашина новозеландская с жиром тушёная
+fdc:174746	Beef, New Zealand, imported, flank, separable lean and fat, raw	пашина новозеландская с жиром сырая
+fdc:174747	Beef, New Zealand, imported, flat, separable lean and fat, cooked, braised	плоская часть новозеландская с жиром тушёная
+fdc:174748	Beef, New Zealand, imported, rump centre, separable lean and fat, cooked, fast fried	центр огузка новозеландский с жиром жареный
+fdc:174749	Beef, New Zealand, imported, rump centre, separable lean only, raw	центр огузка новозеландский постный сырой
+fdc:174750	Beef, New Zealand, imported, rump centre, separable lean and fat, raw	центр огузка новозеландский с жиром сырой
+fdc:174751	Beef, New Zealand, imported, striploin, separable lean and fat, cooked, fast fried	стриплойн новозеландский с жиром жареный
+fdc:174752	Beef, ground, 93% lean meat / 7% fat, patty, cooked, broiled	котлета из говяжьего фарша 93% постности на гриле
+fdc:174753	Beef, ground, 93% lean meat /7% fat, patty, cooked, pan-broiled	котлета из говяжьего фарша 93% постности жареная
+fdc:174754	Beef, ground, 93% lean meat / 7% fat, loaf, cooked, baked	мясной хлеб из говяжьего фарша 93% постности запечённый
+fdc:174755	Beef, ground, 93% lean meat / 7% fat, crumbles, cooked, pan-browned	говяжий фарш 93% постности обжаренный
+fdc:174756	Beef, ground, 97% lean meat / 3% fat, crumbles, cooked, pan-browned	говяжий фарш 97% постности обжаренный
+fdc:174757	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, all grades, raw	говядина смешанных отрубов с жиром без внешнего жира сырая
+fdc:174758	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, all grades, raw	говядина смешанных отрубов постная жир 1/8" сырая
+fdc:174759	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, all grades, cooked	говядина смешанных отрубов постная жир 1/8" приготовленная
+fdc:174760	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, all grades, raw	говядина смешанных отрубов постная без внешнего жира сырая
+fdc:174761	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, choice, raw	говядина ребро тонкий край постное жир 1/8" сырое (чойс)
+fdc:174762	Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw	стейк из вырезки постный жир 1/8" сырой (чойс)
+fdc:174763	Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw	стейк топ-серлоин постный жир 1/8" сырой (чойс)
+fdc:174764	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8"fat, choice, cooked, broiled	говядина ребро тонкий край постное жир 1/8" на гриле (чойс)
+fdc:174765	Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, raw	жаркое из плеча постное жир 1/8" сырое (селект)
+fdc:174766	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw	грудинка плоская часть постная жир 1/8" сырая (селект)
+fdc:174767	Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, cooked, braised	жаркое из плеча постное жир 1/8" тушёное (селект)
+fdc:174768	Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, cooked, braised	грудинка плоская часть постная жир 1/8" тушёная (селект)
+fdc:174769	Beef, variety meats and by-products, tripe, cooked, simmered	рубец говяжий варёный
+fdc:174770	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, all grades, raw	жаркое три-тип постное без внешнего жира сырое
+fdc:174771	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое три-тип постное без внешнего жира запечённое (чойс)
+fdc:174772	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, choice, raw	жаркое три-тип постное без внешнего жира сырое (чойс)
+fdc:174773	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	жаркое три-тип постное без внешнего жира запечённое (селект)
+fdc:174774	Beef, flank, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	стейк из пашины постный без внешнего жира на гриле
+fdc:174775	Beef, flank, steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк из пашины постный без внешнего жира на гриле (селект)
+fdc:174776	Beef, flank, steak, separable lean only, trimmed to 0" fat, all grades, raw	стейк из пашины постный без внешнего жира сырой
+fdc:174777	Beef, flank, steak, separable lean only, trimmed to 0" fat, select, raw	стейк из пашины постный без внешнего жира сырой (селект)
+fdc:174778	Snacks, popcorn, microwave, low fat	попкорн для микроволновки обезжиренный
+fdc:174779	Snacks, candy rolls, yogurt-covered, fruit flavored with high vitamin C	рулетики фруктовые в йогуртовой глазури с витамином C
+fdc:174780	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Chewy Chocolate Peanut Bar	батончик Snickers Marathon жевательный с шоколадом и арахисом
+fdc:174781	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON MULTIGRAIN CRUNCH BAR	батончик Snickers Marathon мультизерновой хрустящий
+fdc:174782	Formulated bar, MARS SNACKFOOD US, COCOAVIA, Chocolate Almond Snack Bar	батончик Cocoavia с шоколадом и миндалём
+fdc:174783	Snacks, sweet potato chips, unsalted	чипсы из батата несолёные
+fdc:174784	Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, original flavor	чипсы мультизерновые SunChips
+fdc:174785	Snacks, popcorn, microwave, regular (butter) flavor, made with partially hydrogenated oil	попкорн для микроволновки масляный
+fdc:174786	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Protein Performance Bar, Caramel Nut Rush	батончик Snickers Marathon протеиновый карамель-орехи
+fdc:174787	Formulated bar, LUNA BAR, NUTZ OVER CHOCOLATE	батончик Luna шоколадно-ореховый
+fdc:174788	Snacks, FRITOLAY, SUNCHIPS, multigrain, French onion flavor	чипсы мультизерновые SunChips со вкусом лука
+fdc:174789	Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, Harvest Cheddar flavor	чипсы мультизерновые SunChips с чеддером
+fdc:174790	Pretzels, soft, unsalted	крендели мягкие несолёные
+fdc:174791	Snacks, vegetable chips, HAIN CELESTIAL GROUP, TERRA CHIPS	чипсы овощные Terra Chips
+fdc:174792	Formulated bar, ZONE PERFECT CLASSIC CRUNCH BAR, mixed flavors	батончик Zone Perfect хрустящий
+fdc:174793	Snacks, granola bar, KASHI GOLEAN, chewy, mixed flavors	батончик гранола жевательный Kashi GoLean
+fdc:174794	Snacks, granola bar, KASHI TLC Bar, chewy, mixed flavors	батончик гранола жевательный Kashi TLC
+fdc:174795	Snacks, granola bars, QUAKER OATMEAL TO GO, all flavors	батончик овсяный Quaker Oatmeal To Go
+fdc:174796	Snacks, vegetable chips, made from garden vegetables	чипсы овощные
+fdc:174797	Snacks, granola bar, KASHI TLC Bar, crunchy, mixed flavors	батончик гранола хрустящий Kashi TLC
+fdc:174798	Snacks, candy bits, yogurt covered with vitamin C	драже фруктовые в йогуртовой глазури с витамином C
+fdc:174799	Snacks, CLIF BAR, mixed flavors	батончик Clif Bar
+fdc:174800	Snacks, granola bar, QUAKER, chewy, 90 Calorie Bar	батончик гранола жевательный Quaker 90 ккал
+fdc:174801	Snacks, granola bar, GENERAL MILLS NATURE VALLEY, SWEET&SALTY NUT, peanut	батончик гранола Nature Valley солёно-сладкий с арахисом
+fdc:174802	Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, with yogurt coating	батончик гранола Nature Valley в йогуртовой глазури
+fdc:174803	Snack, Mixed Berry Bar	батончик ягодный
+fdc:174804	Snacks, potato chips, made from dried potatoes (preformed), multigrain	чипсы картофельные мультизерновые
+fdc:174805	Snacks, potato chips, lightly salted	чипсы картофельные малосолёные
+fdc:174806	Snacks, Pretzels, gluten- free made with cornstarch and potato flour	крендели без глютена
+fdc:174807	Soup, egg drop, Chinese restaurant	суп яичный китайский
+fdc:174808	Soup, hot and sour, Chinese restaurant	суп остро-кислый китайский
+fdc:174809	Beverages, THE COCA-COLA COMPANY, NOS Zero, energy drink, sugar-free with guarana, fortified with vitamins B6 and B12	энергетик NOS Zero без сахара с гуараной
+fdc:174810	Alcoholic beverage, whiskey sour, canned	коктейль виски-саур консервированный
+fdc:174811	Beverages, Whiskey sour mix, bottled	смесь для виски-саур
 fdc:174909	Bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs	кукурузный хлеб
 fdc:174949	Cookies, brownies, prepared from recipe	брауни
 fdc:175001	Ice cream cones, sugar, rolled-type	вафельный рожок
