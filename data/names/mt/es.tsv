@@ -6924,8 +6924,206 @@ fdc:174208	Crustaceans, lobster, northern, raw	bogavante crudo
 fdc:174209	Crustaceans, lobster, northern, cooked, moist heat	bogavante cocido
 fdc:174210	Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)	gambas crudas
 fdc:174211	Crustaceans, spiny lobster, mixed species, raw	langosta cruda
-fdc:174305	Tofu, salted and fermented (fuyu), prepared with calcium sulfate	tofu fermentado salado
-fdc:174403	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero cruda
+fdc:174212	Mollusks, abalone, mixed species, raw	abulón crudo
+fdc:174213	Mollusks, abalone, mixed species, cooked, fried	abulón frito
+fdc:174214	Mollusks, clam, mixed species, raw	almejas crudas
+fdc:174215	Mollusks, cuttlefish, mixed species, raw	sepia cruda
+fdc:174216	Mollusks, mussel, blue, raw	mejillones crudos
+fdc:174217	Mollusks, mussel, blue, cooked, moist heat	mejillones cocidos
+fdc:174218	Mollusks, octopus, common, raw	pulpo crudo
+fdc:174219	Mollusks, oyster, Pacific, raw	ostra del Pacífico cruda
+fdc:174220	Mollusks, scallop, mixed species, raw	vieira cruda
+fdc:174221	Mollusks, scallop, mixed species, cooked, breaded and fried	vieiras fritas rebozadas
+fdc:174222	Mollusks, scallop, mixed species, imitation, made from surimi	imitación de vieira de surimi
+fdc:174223	Mollusks, squid, mixed species, raw	calamar crudo
+fdc:174224	Fish, salmon, chum, canned, without salt, drained solids with bone	salmón keta en conserva sin sal escurrido con espinas
+fdc:174225	Fish, salmon, pink, canned, without salt, solids with bone and liquid	salmón rosado en conserva sin sal con espinas
+fdc:174226	Fish, salmon, sockeye, canned, without salt, drained solids with bone	salmón sockeye en conserva sin sal escurrido con espinas
+fdc:174227	Fish, tuna, light, canned in oil, without salt, drained solids	atún claro en aceite sin sal escurrido
+fdc:174228	Fish, bass, striped, cooked, dry heat	lubina rayada asada
+fdc:174229	Fish, bluefish, cooked, dry heat	anjova asada
+fdc:174230	Fish, burbot, cooked, dry heat	lota asada
+fdc:174231	Fish, butterfish, cooked, dry heat	palometa asada
+fdc:174232	Fish, halibut, greenland, cooked, dry heat	fletán de Groenlandia asado
+fdc:174233	Fish, herring, Pacific, cooked, dry heat	sardina del Pacífico asada
+fdc:174234	Fish, ling, cooked, dry heat	ling asado
+fdc:174235	Fish, lingcod, cooked, dry heat	lingcod asado
+fdc:174236	Fish, mackerel, king, cooked, dry heat	carite asado
+fdc:174237	Fish, pollock, Atlantic, cooked, dry heat	abadejo del Atlántico asado
+fdc:174238	Fish, pout, ocean, cooked, dry heat	faneca asada
+fdc:174239	Fish, roe, mixed species, cooked, dry heat	huevas de pescado asadas
+fdc:174240	Fish, sablefish, cooked, dry heat	bacalao negro asado
+fdc:174241	Fish, scup, cooked, dry heat	escup asado
+fdc:174242	Fish, seatrout, mixed species, cooked, dry heat	trotilla asada
+fdc:174243	Fish, shad, american, cooked, dry heat	sábalo americano asado
+fdc:174244	Fish, spot, cooked, dry heat	spot asado
+fdc:174245	Fish, turbot, european, cooked, dry heat	rodaballo asado
+fdc:174246	Fish, whitefish, mixed species, cooked, dry heat	pescadilla asada
+fdc:174247	Fish, wolffish, Atlantic, cooked, dry heat	pez lobo del Atlántico asado
+fdc:174248	Fish, yellowtail, mixed species, cooked, dry heat	rabo asado
+fdc:174249	Mollusks, octopus, common, cooked, moist heat	pulpo cocido
+fdc:174250	Mollusks, oyster, Pacific, cooked, moist heat	ostra del Pacífico cocida
+fdc:174251	Fish, roughy, orange, cooked, dry heat	reloj anaranjado asado
+fdc:174252	Lima beans, large, mature seeds, raw	judías de lima grandes crudas
+fdc:174253	Lima beans, large, mature seeds, cooked, boiled, without salt	judías de lima grandes cocidas sin sal
+fdc:174254	Lima beans, large, mature seeds, canned	judías de lima grandes en conserva
+fdc:174255	Lima beans, thin seeded (baby), mature seeds, raw	judías de lima pequeñas crudas
+fdc:174256	Mung beans, mature seeds, raw	judía mungo cruda
+fdc:174257	Mung beans, mature seeds, cooked, boiled, without salt	judía mungo cocida sin sal
+fdc:174258	Noodles, chinese, cellophane or long rice (mung beans), dehydrated	fideos de judía mungo deshidratados
+fdc:174259	Mungo beans, mature seeds, raw	judías urd crudas
+fdc:174260	Peanuts, all types, cooked, boiled, with salt	cacahuetes cocidos con sal
+fdc:174261	Peanuts, all types, oil-roasted, with salt	cacahuetes fritos en aceite salados
+fdc:174262	Peanuts, all types, dry-roasted, with salt	cacahuetes tostados salados
+fdc:174263	Peanuts, spanish, raw	cacahuetes españoles crudos
+fdc:174264	Peanuts, virginia, oil-roasted, with salt	cacahuetes virginia fritos en aceite salados
+fdc:174265	Peanut butter, chunk style, with salt	crema de cacahuete con trozos con sal
+fdc:174266	Peanut butter, smooth style, with salt (Includes foods for USDA's Food Distribution Program)	crema de cacahuete suave con sal
+fdc:174267	Peanut flour, defatted	harina de cacahuete desgrasada
+fdc:174268	Meat extender	proteína de soja texturizada
+fdc:174269	Sausage, meatless	salchicha vegetal
+fdc:174270	Soybeans, mature seeds, raw	soja cruda
+fdc:174271	Soybeans, mature cooked, boiled, without salt	soja cocida sin sal
+fdc:174272	Tempeh	tempeh
+fdc:174273	Soy flour, full-fat, raw	harina de soja entera cruda
+fdc:174274	Soy flour, full-fat, roasted	harina de soja entera tostada
+fdc:174275	Soy flour, defatted	harina de soja desgrasada
+fdc:174276	Soy protein isolate	aislado de proteína de soja
+fdc:174277	Soy sauce made from soy and wheat (shoyu)	salsa de soja con trigo
+fdc:174278	Soy sauce made from soy (tamari)	salsa de soja tamari
+fdc:174279	Soy sauce made from hydrolyzed vegetable protein	salsa de soja de proteína vegetal hidrolizada
+fdc:174280	Tofu, salted and fermented (fuyu)	tofu fermentado salado
+fdc:174281	Yardlong beans, mature seeds, raw	judía de metro cruda
+fdc:174282	Yardlong beans, mature seeds, cooked, boiled, without salt	judía de metro cocida sin sal
+fdc:174283	Winged beans, mature seeds, raw	judías aladas crudas
+fdc:174284	Lentils, pink or red, raw	lentejas rojas crudas
+fdc:174285	Beans, kidney, red, mature seeds, canned, drained solids	alubias rojas en conserva escurridas
+fdc:174286	Beans, pinto, canned, drained solids	alubias pintas en conserva escurridas
+fdc:174287	Veggie burgers or soyburgers, unprepared	hamburguesas vegetales
+fdc:174288	Chickpea flour (besan)	harina de garbanzo
+fdc:174289	Hummus, commercial	hummus
+fdc:174290	Tofu, extra firm, prepared with nigari	tofu extra firme
+fdc:174291	Tofu, hard, prepared with nigari	tofu firme
+fdc:174292	MORI-NU, Tofu, silken, soft	tofu sedoso Mori-Nu
+fdc:174293	Soymilk, chocolate, unfortified	bebida de soja con chocolate
+fdc:174294	Peanut Butter, smooth (Includes foods for USDA's Food Distribution Program)	crema de cacahuete suave
+fdc:174295	Soymilk, chocolate, with added calcium, vitamins A and D	bebida de soja con chocolate enriquecida
+fdc:174296	Refried beans, canned, vegetarian	judías refritas vegetarianas en conserva
+fdc:174297	Vitasoy USA, Organic Nasoya Super Firm Cubed Tofu	tofu extra firme en cubos Nasoya
+fdc:174298	Refried beans, canned, traditional, reduced sodium	judías refritas reducidas en sodio en conserva
+fdc:174299	Soybeans, mature seeds, cooked, boiled, with salt	soja cocida con sal
+fdc:174300	Soybeans, mature seeds, roasted, no salt added	soja tostada sin sal
+fdc:174301	Soy protein concentrate, produced by acid wash	concentrado de proteína de soja
+fdc:174302	Soy protein isolate, potassium type	aislado de proteína de soja potásico
+fdc:174303	Tofu, dried-frozen (koyadofu), prepared with calcium sulfate	tofu liofilizado
+fdc:174304	Tofu, fried, prepared with calcium sulfate	tofu frito
+fdc:174305	Tofu, salted and fermented (fuyu), prepared with calcium sulfate	tofu fermentado salado con sulfato de calcio
+fdc:174306	Yardlong beans, mature seeds, cooked, boiled, with salt	judía de metro cocida con sal
+fdc:174307	Lamb, composite of trimmed retail cuts, separable lean only, trimmed to 1/4" fat, choice, raw	cordero de cortes variados magro grasa 1/4" crudo (choice)
+fdc:174308	Lamb, composite of trimmed retail cuts, separable lean only, trimmed to 1/4" fat, choice, cooked	cordero de cortes variados magro grasa 1/4" cocinado (choice)
+fdc:174309	Lamb, composite of trimmed retail cuts, separable fat, trimmed to 1/4" fat, choice, raw	grasa de cordero de cortes variados grasa 1/4" cruda (choice)
+fdc:174310	Lamb, composite of trimmed retail cuts, separable fat, trimmed to 1/4" fat, choice, cooked	grasa de cordero de cortes variados grasa 1/4" cocinada (choice)
+fdc:174311	Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4" fat, choice, raw	pierna de cordero entera con grasa grasa 1/4" cruda (choice)
+fdc:174312	Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero entera con grasa grasa 1/4" asada (choice)
+fdc:174313	Lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4" fat, choice, raw	pierna de cordero entera magra grasa 1/4" cruda (choice)
+fdc:174314	Lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero entera magra grasa 1/4" asada (choice)
+fdc:174315	Lamb, leg, shank half, separable lean and fat, trimmed to 1/4" fat, choice, raw	pierna de cordero mitad del jarrete con grasa grasa 1/4" cruda (choice)
+fdc:174316	Lamb, leg, sirloin half, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero mitad de la cadera con grasa grasa 1/4" asada (choice)
+fdc:174317	Lamb, leg, sirloin half, separable lean only, trimmed to 1/4" fat, choice, raw	pierna de cordero mitad de la cadera magra grasa 1/4" cruda (choice)
+fdc:174318	Lamb, leg, sirloin half, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	pierna de cordero mitad de la cadera magra grasa 1/4" asada (choice)
+fdc:174319	Lamb, loin, separable lean and fat, trimmed to 1/4" fat, choice, raw	lomo de cordero con grasa grasa 1/4" crudo (choice)
+fdc:174320	Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted	lomo de cordero magro grasa 1/4" asado (choice)
+fdc:174321	Lamb, rib, separable lean and fat, trimmed to 1/4" fat, choice, raw	costillar de cordero con grasa grasa 1/4" crudo (choice)
+fdc:174322	Lamb, rib, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	costillar de cordero con grasa grasa 1/4" a la parrilla (choice)
+fdc:174323	Lamb, rib, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	costillar de cordero con grasa grasa 1/4" asado (choice)
+fdc:174324	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	paletilla de cordero entera con grasa grasa 1/4" a la parrilla (choice)
+fdc:174325	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	paletilla de cordero entera con grasa grasa 1/4" asada (choice)
+fdc:174326	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, raw	paletilla de cordero entera magra grasa 1/4" cruda (choice)
+fdc:174327	Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, braised	paletilla de cordero entera magra grasa 1/4" estofada (choice)
+fdc:174328	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	paletilla de cordero parte del brazo con grasa grasa 1/4" a la parrilla (choice)
+fdc:174329	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	paletilla de cordero parte del brazo con grasa grasa 1/4" asada (choice)
+fdc:174330	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, raw	paletilla de cordero parte del brazo magra grasa 1/4" cruda (choice)
+fdc:174331	Lamb, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, braised	paletilla de cordero parte del brazo magra grasa 1/4" estofada (choice)
+fdc:174332	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled	paletilla de cordero parte de la hoja con grasa grasa 1/4" a la parrilla (choice)
+fdc:174333	Lamb, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted	paletilla de cordero parte de la hoja con grasa grasa 1/4" asada (choice)
+fdc:174334	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, raw	paletilla de cordero parte de la hoja magra grasa 1/4" cruda (choice)
+fdc:174335	Lamb, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, braised	paletilla de cordero parte de la hoja magra grasa 1/4" estofada (choice)
+fdc:174336	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, raw	cordero neozelandés congelado de cortes variados con grasa crudo
+fdc:174337	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, cooked	cordero neozelandés congelado de cortes variados con grasa cocinado
+fdc:174338	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean only, raw	cordero neozelandés congelado de cortes variados magro crudo
+fdc:174339	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean only, cooked	cordero neozelandés congelado de cortes variados magro cocinado
+fdc:174340	Lamb, New Zealand, imported, fore-shank, separable lean only, raw	morcillo delantero de cordero neozelandés magro crudo
+fdc:174341	Lamb, New Zealand, imported, fore-shank, separable lean only, cooked, braised	morcillo delantero de cordero neozelandés magro estofado
+fdc:174342	Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, raw	chuleta de pierna de cordero neozelandés con hueso con grasa cruda
+fdc:174343	Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, cooked, roasted	pierna de cordero neozelandés entera con grasa asada
+fdc:174344	Game meat, moose, raw	carne de alce cruda
+fdc:174345	Game meat, moose, cooked, roasted	carne de alce asada
+fdc:174346	Game meat, rabbit, domesticated, composite of cuts, cooked, stewed	carne de conejo estofada
+fdc:174347	Game meat, rabbit, wild, raw	carne de conejo salvaje cruda
+fdc:174348	Game meat, rabbit, wild, cooked, stewed	carne de conejo salvaje estofada
+fdc:174349	Game meat, raccoon, cooked, roasted	carne de mapache asada
+fdc:174350	Lamb, variety meats and by-products, brain, cooked, pan-fried	sesos de cordero fritos
+fdc:174351	Veal, variety meats and by-products, brain, raw	sesos de ternera crudos
+fdc:174352	Veal, variety meats and by-products, brain, cooked, braised	sesos de ternera estofados
+fdc:174353	Veal, variety meats and by-products, brain, cooked, pan-fried	sesos de ternera fritos
+fdc:174354	Lamb, variety meats and by-products, kidneys, raw	riñones de cordero crudos
+fdc:174355	Lamb, variety meats and by-products, kidneys, cooked, braised	riñones de cordero estofados
+fdc:174356	Veal, variety meats and by-products, kidneys, raw	riñones de ternera crudos
+fdc:174357	Veal, variety meats and by-products, kidneys, cooked, braised	riñones de ternera estofados
+fdc:174358	Veal, variety meats and by-products, liver, cooked, pan-fried	hígado de ternera frito
+fdc:174359	Lamb, variety meats and by-products, lungs, raw	pulmones de cordero crudos
+fdc:174360	Lamb, variety meats and by-products, lungs, cooked, braised	pulmones de cordero estofados
+fdc:174361	Veal, variety meats and by-products, lungs, raw	pulmones de ternera crudos
+fdc:174362	Veal, variety meats and by-products, pancreas, raw	páncreas de ternera crudo
+fdc:174363	Veal, variety meats and by-products, pancreas, cooked, braised	páncreas de ternera estofado
+fdc:174364	Lamb, variety meats and by-products, spleen, raw	bazo de cordero crudo
+fdc:174365	Lamb, variety meats and by-products, spleen, cooked, braised	bazo de cordero estofado
+fdc:174366	Lamb, variety meats and by-products, tongue, raw	lengua de cordero cruda
+fdc:174367	Lamb, variety meats and by-products, tongue, cooked, braised	lengua de cordero estofada
+fdc:174368	Veal, variety meats and by-products, tongue, raw	lengua de ternera cruda
+fdc:174369	Veal, variety meats and by-products, tongue, cooked, braised	lengua de ternera estofada
+fdc:174370	Lamb, ground, raw	carne picada de cordero cruda
+fdc:174371	Lamb, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised	morcillo delantero de cordero con grasa grasa 1/8" estofado
+fdc:174372	Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, choice, raw	pierna de cordero entera con grasa grasa 1/8" cruda (choice)
+fdc:174373	Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	pierna de cordero entera con grasa grasa 1/8" asada (choice)
+fdc:174374	Lamb, leg, shank half, separable lean and fat, trimmed to 1/8" fat, choice, raw	pierna de cordero mitad del jarrete con grasa grasa 1/8" cruda (choice)
+fdc:174375	Lamb, loin, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	lomo de cordero con grasa grasa 1/8" a la parrilla (choice)
+fdc:174376	Lamb, loin, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	lomo de cordero con grasa grasa 1/8" asado (choice)
+fdc:174377	Lamb, rib, separable lean and fat, trimmed to 1/8" fat, choice, raw	costillar de cordero con grasa grasa 1/8" crudo (choice)
+fdc:174378	Lamb, rib, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	costillar de cordero con grasa grasa 1/8" a la parrilla (choice)
+fdc:174379	Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	paletilla de cordero entera con grasa grasa 1/8" asada (choice)
+fdc:174380	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, raw	paletilla de cordero parte del brazo con grasa grasa 1/8" cruda (choice)
+fdc:174381	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	paletilla de cordero parte del brazo con grasa grasa 1/8" estofada (choice)
+fdc:174382	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	paletilla de cordero parte del brazo con grasa grasa 1/8" a la parrilla
+fdc:174383	Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, roasted	paletilla de cordero parte del brazo con grasa grasa 1/8" asada (choice)
+fdc:174384	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, raw	cordero neozelandés congelado de cortes variados con grasa grasa 1/8" crudo
+fdc:174385	Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, cooked	cordero neozelandés congelado de cortes variados con grasa grasa 1/8" cocinado
+fdc:174386	Lamb, New Zealand, imported, frozen, foreshank, separable lean and fat, trimmed to 1/8" fat, raw	morcillo delantero de cordero neozelandés congelado con grasa grasa 1/8" crudo
+fdc:174387	Lamb, New Zealand, imported, frozen, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised	morcillo delantero de cordero neozelandés congelado con grasa grasa 1/8" estofado
+fdc:174388	Lamb, new zealand, imported, frozen, rib, separable lean and fat, trimmed to 1/8" fat, raw	costillar de cordero neozelandés congelado con grasa grasa 1/8" crudo
+fdc:174389	Lamb, New Zealand, imported, frozen, rib, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	costillar de cordero neozelandés congelado con grasa grasa 1/8" asado
+fdc:174390	Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, raw	paletilla de cordero neozelandés congelada entera con grasa grasa 1/8" cruda
+fdc:174391	Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, cooked, braised	paletilla de cordero neozelandés congelada entera con grasa grasa 1/8" estofada
+fdc:174392	Veal, breast, whole, boneless, separable lean and fat, raw	pecho de ternera sin hueso con grasa crudo
+fdc:174393	Veal, breast, whole, boneless, separable lean and fat, cooked, braised	pecho de ternera sin hueso con grasa estofado
+fdc:174394	Veal, breast, plate half, boneless, separable lean and fat, cooked, braised	pecho de ternera mitad de la placa sin hueso con grasa estofado
+fdc:174395	Veal, breast, point half, boneless, separable lean and fat, cooked, braised	pecho de ternera mitad de la punta sin hueso con grasa estofado
+fdc:174396	Veal, breast, whole, boneless, separable lean only, cooked, braised	pecho de ternera sin hueso magro estofado
+fdc:174397	Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, raw	cordero australiano fresco de cortes variados con grasa grasa 1/8" crudo
+fdc:174398	Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, cooked	cordero australiano fresco de cortes variados con grasa grasa 1/8" cocinado
+fdc:174399	Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, raw	cordero australiano fresco de cortes variados magro grasa 1/8" crudo
+fdc:174400	Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, cooked	cordero australiano fresco de cortes variados magro grasa 1/8" cocinado
+fdc:174401	Lamb, Australian, imported, fresh, foreshank, separable lean only, trimmed to 1/8" fat, raw	morcillo delantero de cordero australiano magro grasa 1/8" crudo
+fdc:174402	Lamb, Australian, imported, fresh, foreshank, separable lean only, trimmed to 1/8" fat, cooked, braised	morcillo delantero de cordero australiano magro grasa 1/8" estofado
+fdc:174403	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano entera con grasa grasa 1/8" cruda
+fdc:174404	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano entera con grasa grasa 1/8" asada
+fdc:174405	Lamb, Australian, imported, fresh, leg, shank half, separable lean only, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano mitad del jarrete magra grasa 1/8" asada
+fdc:174406	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano mitad de la cadera sin hueso con grasa grasa 1/8" cruda
+fdc:174407	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano mitad de la cadera sin hueso con grasa grasa 1/8" asada
+fdc:174408	Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean only, trimmed to 1/8" fat, raw	pierna de cordero australiano mitad de la cadera sin hueso magra grasa 1/8" cruda
+fdc:174409	Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, cooked, broiled	chuletas de cadera de cordero australiano sin hueso magras grasa 1/8" a la parrilla
+fdc:174410	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano loncha central con hueso con grasa grasa 1/8" cruda
+fdc:174411	Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, broiled	pierna de cordero australiano loncha central con hueso con grasa grasa 1/8" a la parrilla
 fdc:174513	Turkey, retail parts, breast, meat only, with added solution, raw	pechuga de pavo cruda con salmuera
 fdc:174516	Turkey, retail parts, breast, meat only, cooked, roasted	pechuga de pavo asada
 fdc:174666	Figs, dried, stewed	compota de higos secos
