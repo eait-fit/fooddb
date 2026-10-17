@@ -3268,11 +3268,311 @@ fdc:170552	Seeds, breadnut tree seeds, raw	семена хлебного дер�
 fdc:170553	Seeds, breadnut tree seeds, dried	семена хлебного дерева сушёные
 fdc:170554	Seeds, chia seeds, dried	семена чиа
 fdc:170555	Seeds, cottonseed flour, partially defatted (glandless)	мука хлопковая частично обезжиренная
+fdc:170556	Seeds, pumpkin and squash seed kernels, dried	тыквенные семечки сушёные
 fdc:170557	Seeds, pumpkin and squash seed kernels, roasted, without salt	тыквенные семечки жареные
+fdc:170558	Seeds, safflower seed kernels, dried	семена сафлора сушёные
+fdc:170559	Seeds, safflower seed meal, partially defatted	шрот сафлоровый частично обезжиренный
+fdc:170560	Seeds, sesame flour, low-fat	кунжутная мука обезжиренная
+fdc:170561	Seeds, sesame meal, partially defatted	шрот кунжутный частично обезжиренный
+fdc:170562	Seeds, sunflower seed kernels, dried	семечки подсолнечника сушёные
+fdc:170563	Seeds, sunflower seed kernels, dry roasted, without salt	семечки подсолнечника жареные несолёные
+fdc:170564	Seeds, sunflower seed kernels, oil roasted, without salt	семечки подсолнечника жареные в масле несолёные
+fdc:170565	Nuts, acorns, dried	жёлуди сушёные
+fdc:170566	Nuts, acorn flour, full fat	мука желудёвая
+fdc:170567	Nuts, almonds	миндаль
+fdc:170568	Nuts, almonds, blanched	миндаль бланшированный
+fdc:170569	Nuts, brazilnuts, dried, unblanched	бразильские орехи сушёные
+fdc:170570	Nuts, butternuts, dried	орехи серые сушёные
+fdc:170571	Nuts, cashew nuts, dry roasted, without salt added	кешью жареные несолёные
+fdc:170572	Nuts, cashew nuts, oil roasted, without salt added	кешью жареные в масле несолёные
+fdc:170573	Nuts, chestnuts, chinese, roasted	каштаны китайские жареные
+fdc:170574	Nuts, chestnuts, european, raw, unpeeled	каштаны европейские сырые в скорлупе
+fdc:170575	Nuts, chestnuts, european, raw, peeled	каштаны европейские сырые очищенные
+fdc:170576	Nuts, chestnuts, european, dried, unpeeled	каштаны европейские сушёные в скорлупе
+fdc:170577	Nuts, coconut meat, dried (desiccated), sweetened, flaked, packaged	кокосовая стружка сладкая упакованная
+fdc:170578	Nuts, coconut meat, dried (desiccated), sweetened, flaked, canned	кокосовая стружка сладкая консервированная
+fdc:170579	Nuts, coconut meat, dried (desiccated), toasted	кокосовая стружка подсушенная
+fdc:170580	Nuts, coconut cream, raw (liquid expressed from grated meat)	кокосовые сливки свежие
+fdc:170581	Nuts, hazelnuts or filberts	фундук
+fdc:170582	Nuts, hazelnuts or filberts, blanched	фундук бланшированный
+fdc:170583	Nuts, hazelnuts or filberts, dry roasted, without salt added	фундук жареный несолёный
+fdc:170584	Nuts, ginkgo nuts, raw	орешки гинкго сырые
+fdc:170585	Nuts, mixed nuts, dry roasted, with peanuts, without salt added	смесь орехов жареных несолёных с арахисом
+fdc:170586	Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend	смесь орехов жареных солёных с фисташками Planters
+fdc:170587	Nuts, mixed nuts, oil roasted, with peanuts, without salt added	смесь орехов жареных в масле несолёных с арахисом
+fdc:170588	Nuts, mixed nuts, oil roasted, without peanuts, without salt added	смесь орехов жареных в масле несолёных без арахиса
+fdc:170589	Nuts, pecans, oil roasted, without salt added	пекан жареный в масле несолёный
+fdc:170590	Nuts, pilinuts, dried	орехи пили сушёные
+fdc:170591	Nuts, pine nuts, dried	кедровые орехи сушёные
+fdc:170592	Nuts, pine nuts, pinyon, dried	кедровые орехи пиньон сушёные
+fdc:170593	Nuts, walnuts, glazed	грецкие орехи глазированные
+fdc:170594	Nuts, walnuts, dry roasted, with salt added	грецкие орехи жареные солёные
+fdc:170595	Seeds, breadfruit seeds, roasted	семена хлебного дерева жареные
+fdc:170596	Seeds, cottonseed kernels, roasted (glandless)	семена хлопка жареные
+fdc:170597	Beef, variety meats and by-products, spleen, cooked, braised	говяжья селезёнка тушёная
+fdc:170598	Beef, variety meats and by-products, tongue, cooked, simmered	говяжий язык варёный
+fdc:170599	Beef, variety meats and by-products, tripe, raw	говяжий рубец сырой
+fdc:170600	Beef, sandwich steaks, flaked, chopped, formed and thinly sliced, raw	говяжьи стейки формованные тонко нарезанные сырые
+fdc:170601	Beef, brisket, flat half, separable lean only, trimmed to 0" fat, choice, cooked, braised	говяжья грудинка плоская часть постная тушёная (чойс)
+fdc:170602	Beef, cured, corned beef, canned	корнед-биф консервированный
+fdc:170603	Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, select, raw	нижняя лопатка постная сырая (селект)
+fdc:170604	Beef, cured, dried	говядина вяленая
+fdc:170605	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк Денвер постный на гриле (все категории)
+fdc:170606	Sausage, beef, cured, cooked, smoked	колбаса говяжья солёная копчёная
+fdc:170607	Beef, chopped, cured, smoked	говядина рубленая солёная копчёная
+fdc:170608	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, choice, raw	стейк Денвер постный сырой (чойс)
+fdc:170609	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, all grades, cooked	говядина смешанных отрубов с жиром приготовленная
+fdc:170610	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, select, cooked	говядина смешанных отрубов постная приготовленная (селект)
+fdc:170611	Beef, brisket, whole, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	говяжья грудинка целая с жиром тушёная
+fdc:170612	Beef, brisket, whole, separable lean only, trimmed to 0" fat, all grades, cooked, braised	говяжья грудинка целая постная тушёная
+fdc:170613	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	говяжья грудинка плоская часть с жиром тушёная (все категории)
+fdc:170614	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 0" fat, select, cooked, braised	говяжья лопатка с жиром тушёная (селект)
+fdc:170615	Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, choice, cooked, braised	говяжья лопатка постная тушёная (чойс)
+fdc:170616	Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, select, cooked, braised	говяжья лопатка постная тушёная (селект)
+fdc:170617	Beef, chuck, blade roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	жаркое из говяжьей шеи с жиром тушёное
+fdc:170618	Beef, chuck, under blade pot roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	жаркое из нижней лопатки с жиром тушёное (чойс)
+fdc:170619	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (чойс)
+fdc:170620	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 0" fat, select, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (селект)
+fdc:170621	Beef, rib, large end (ribs 6-9), separable lean only, trimmed to 0" fat, all grades, cooked, roasted	говяжья рёберная часть толстый край постная запечённая
+fdc:170622	Beef, rib, large end (ribs 6-9), separable lean only, trimmed to 0" fat, choice, cooked, roasted	говяжья рёберная часть толстый край постная запечённая (чойс)
+fdc:170623	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, all grades, cooked, broiled	говяжья рёберная часть тонкий край постная на гриле
+fdc:170624	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, cooked, broiled	говяжья рёберная часть тонкий край постная на гриле (чойс)
+fdc:170625	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, select, cooked, broiled	говяжья рёберная часть тонкий край постная на гриле (селект)
+fdc:170626	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	стейк из нижнего огузка с жиром тушёный (все категории)
+fdc:170627	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	жаркое из нижнего огузка с жиром запечённое (селект)
+fdc:170628	Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, all grades, cooked, braised	стейк из нижнего огузка постный тушёный
+fdc:170629	Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	жаркое из нижнего огузка постное запечённое
+fdc:170630	Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, choice, cooked, braised	стейк из нижнего огузка постный тушёный (чойс)
+fdc:170631	Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое из нижнего огузка постное запечённое (чойс)
+fdc:170632	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	жаркое из глазка огузка с жиром запечённое (селект)
 fdc:170633	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	говядина оковалок запечённая
+fdc:170634	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое из глазка огузка постное запечённое (чойс)
+fdc:170635	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted	жаркое из глазка огузка постное запечённое (селект)
+fdc:170636	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое из верха огузка постное запечённое (чойс)
+fdc:170637	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	жаркое из верха огузка постное запечённое (селект)
+fdc:170638	Beef, round, top round, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	верхний огузок с жиром тушёный (все категории)
+fdc:170639	Beef, round, top round, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	верхний огузок с жиром тушёный (чойс)
+fdc:170640	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из вырезки с жиром на гриле (селект)
+fdc:170641	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк из вырезки постный на гриле
+fdc:170642	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк из вырезки постный на гриле (чойс)
+fdc:170643	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк из вырезки постный на гриле (селект)
+fdc:170644	Puddings, vanilla, dry mix, regular, with added oil	пудинг ванильный сухой с маслом
+fdc:170645	Jams and preserves, apricot	варенье абрикосовое
+fdc:170646	Syrups, table blends, pancake, with 2% maple, with added potassium	сироп для панкейков с кленовым
+fdc:170647	Snacks, corn cakes, very low sodium	хлебцы кукурузные малосолёные
+fdc:170648	Snacks, potato chips, plain, made with partially hydrogenated soybean oil, unsalted	картофельные чипсы несолёные на соевом масле
+fdc:170649	Snacks, potato chips, plain, unsalted	картофельные чипсы несолёные
+fdc:170650	Snacks, pretzels, hard, plain, made with unenriched flour, salted	крендельки твёрдые солёные
+fdc:170651	Snacks, pretzels, hard, plain, made with unenriched flour, unsalted	крендельки твёрдые несолёные
+fdc:170652	Snacks, rice cakes, brown rice, sesame seed, unsalted	хлебцы из коричневого риса с кунжутом несолёные
+fdc:170653	Snacks, sesame sticks, wheat-based, unsalted	кунжутные палочки несолёные
+fdc:170654	Snacks, trail mix, regular, unsalted	смесь орехов и сухофруктов несолёная
+fdc:170655	Snacks, trail mix, regular, with chocolate chips, unsalted nuts and seeds	смесь с шоколадной крошкой, орехами и семечками несолёная
+fdc:170656	Candies, sugar-coated almonds	миндаль в сахарной глазури
+fdc:170657	Cocoa, dry powder, hi-fat or breakfast, processed with alkali	какао-порошок жирный алкализованный
+fdc:170658	Candies, soft fruit and nut squares	мармеладные конфеты с орехами
+fdc:170659	Ice creams, vanilla, fat free	мороженое ванильное обезжиренное
+fdc:170660	Ice creams, BREYERS, All Natural Light French Vanilla	мороженое Breyers лёгкое французская ваниль
+fdc:170661	Ice creams, BREYERS, 98% Fat Free Vanilla	мороженое Breyers ванильное обезжиренное 98%
+fdc:170662	Ice creams, BREYERS, All Natural Light Vanilla Chocolate Strawberry	мороженое Breyers лёгкое ваниль-шоколад-клубника
+fdc:170663	Ice creams, BREYERS, All Natural Light Mint Chocolate Chip	мороженое Breyers лёгкое мятное с шоколадной крошкой
+fdc:170664	Ice creams, BREYERS, No Sugar Added, Vanilla Chocolate Strawberry	мороженое Breyers без сахара ваниль-шоколад-клубника
+fdc:170665	Frozen novelties, KLONDIKE, SLIM-A-BEAR Chocolate Cone	мороженое Klondike Slim-A-Bear шоколадное в рожке
+fdc:170666	Frozen novelties, KLONDIKE, SLIM-A-BEAR Vanilla Sandwich	мороженое Klondike Slim-A-Bear ванильное сэндвич
+fdc:170667	Frozen novelties, KLONDIKE, SLIM-A-BEAR, No Sugar Added, Stickless Bar	мороженое Klondike Slim-A-Bear без сахара
+fdc:170668	Ice creams, BREYERS, No Sugar Added, Chocolate Caramel	мороженое Breyers без сахара шоколадно-карамельное
+fdc:170669	Candies, REESE's Fast Break, milk chocolate, peanut butter, soft nougats, candy bar	батончик Reese's Fast Break
+fdc:170670	Candies, MARS SNACKFOOD US, COCOAVIA Chocolate Covered Almonds	миндаль в шоколаде Cocoavia
+fdc:170671	Ice creams, regular, low carbohydrate, vanilla	мороженое ванильное низкоуглеводное
+fdc:170672	Sweeteners, for baking, brown, contains sugar and sucralose	сахар коричневый для выпечки с сукралозой
+fdc:170673	Sweeteners, for baking, contains sugar and sucralose	сахар для выпечки с сукралозой
+fdc:170674	Sugar, turbinado	сахар турбинадо
+fdc:170675	Sweeteners, sugar substitute, granulated, brown	заменитель сахара коричневый
+fdc:170676	Candies, M&M MARS 3 MUSKETEERS Truffle Crisp	батончик 3 Musketeers Truffle Crisp
+fdc:170677	Syrups, chocolate, HERSHEY'S Sugar free, Genuine Chocolate Flavored, Lite Syrup	шоколадный сироп Hershey's без сахара
+fdc:170678	Candies, M&M MARS Pretzel Chocolate Candies	драже M&M's с крендельком
+fdc:170679	Sweetener, herbal extract powder from Stevia leaf	стевия порошковая
+fdc:170680	Candies, HERSHEYS, PAYDAY Bar	батончик PayDay
+fdc:170681	Syrup, NESTLE, chocolate	шоколадный сироп Nestlé
+fdc:170682	Amaranth grain, uncooked	амарант зерно сырое
+fdc:170683	Amaranth grain, cooked	амарант варёный
+fdc:170684	Arrowroot flour	мука аррорут
+fdc:170685	Buckwheat groats, roasted, dry	гречка жареная сырая
+fdc:170686	Buckwheat groats, roasted, cooked	гречка жареная варёная
+fdc:170687	Buckwheat flour, whole-groat	гречневая мука
+fdc:170688	Bulgur, dry	булгур сухой
+fdc:170689	Fast foods, taco with beef, cheese and lettuce, hard shell	тако с говядиной, сыром и салатом
+fdc:170690	Fast foods, cheeseburger; single, regular patty; plain	чизбургер простой
+fdc:170691	Fast foods, cheeseburger; single, regular patty, with condiments	чизбургер с соусами
+fdc:170692	Fast foods, cheeseburger; single, regular patty, with condiments and vegetables	чизбургер с соусами и овощами
+fdc:170693	Fast foods, hamburger; single, regular patty; plain	гамбургер простой
+fdc:170694	Fast foods, hamburger; single, regular patty; with condiments	гамбургер с соусами
+fdc:170695	Fast foods, roast beef sandwich, plain	бургер с ростбифом простой
+fdc:170696	Fast foods, submarine sandwich, cold cut on white bread with lettuce and tomato	сабвич с колбасой, салатом и томатом
+fdc:170697	Fast foods, onion rings, breaded and fried	луковые кольца в панировке жареные
+fdc:170698	Fast foods, potato, french fried in vegetable oil	картофель фри на растительном масле
+fdc:170699	Fast foods, potato, mashed	картофельное пюре
+fdc:170700	BURGER KING, Vanilla Shake	ванильный милкшейк Burger King
+fdc:170701	School Lunch, pizza, BIG DADDY'S LS 16" 51% Whole Grain Rolled Edge Turkey Pepperoni Pizza, frozen	пицца с индюшиной пепперони цельнозерновая школьная Big Daddy's замороженная
+fdc:170702	School Lunch, pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Cheese Pizza 50/50 Cheese, frozen	пицца цельнозерновая с сыром школьная Tony's замороженная
+fdc:170703	School Lunch, pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Pepperoni Pizza 50/50 Cheese, frozen	пицца цельнозерновая пепперони школьная Tony's замороженная
+fdc:170704	School Lunch, pizza, TONY'S Breakfast Pizza Sausage, frozen	пицца завтрачная с колбасой Tony's замороженная
+fdc:170705	SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce	саб с курицей терияки и сладким луком Subway
+fdc:170706	Fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato	сабвич с грудкой индейки
+fdc:170707	Fast foods, submarine sandwich, ham on white bread with lettuce and tomato	сабвич с ветчиной
+fdc:170708	SUBWAY, meatball marinara sub on white bread (no toppings)	саб с фрикадельками в маринаре Subway
+fdc:170709	Fast foods, submarine sandwich, meatball marinara on white bread	сабвич с фрикадельками в маринаре
+fdc:170710	Fast foods, hamburger, large, single patty, with condiments	большой гамбургер с соусами
+fdc:170711	SUBWAY, turkey breast sub on white bread with lettuce and tomato	саб с грудкой индейки Subway
+fdc:170712	SUBWAY, black forest ham sub on white bread with lettuce and tomato	саб с ветчиной Subway
+fdc:170713	SUBWAY, roast beef sub on white bread with lettuce and tomato	саб с ростбифом Subway
+fdc:170714	Pizza, cheese topping, rising crust, frozen, cooked	пицца с сыром на дрожжевом корже замороженная запечённая
+fdc:170715	Pizza, meat and vegetable topping, regular crust, frozen, cooked	пицца с мясом и овощами замороженная запечённая
+fdc:170716	Pizza, meat and vegetable topping, rising crust, frozen, cooked	пицца с мясом и овощами на дрожжевом корже замороженная запечённая
 fdc:170717	McDONALD'S, Hamburger	McDonald's гамбургер
+fdc:170718	Fast foods, chicken, breaded and fried, boneless pieces, plain	куриные наггетсы жареные
+fdc:170719	McDONALD'S, QUARTER POUNDER with Cheese	Куортер паундер с сыром McDonald's
+fdc:170720	McDONALD'S, BIG MAC	Биг-Мак McDonald's
+fdc:170721	McDONALD'S, french fries	картофель фри McDonald's
+fdc:170722	WENDY'S, CLASSIC SINGLE Hamburger, no cheese	гамбургер Wendy's без сыра
+fdc:170723	WENDY'S, Homestyle Chicken Fillet Sandwich	бургер с куриным филе домашний Wendy's
+fdc:170724	WENDY'S, Ultimate Chicken Grill Sandwich	бургер с куриным филе на гриле Wendy's
+fdc:170725	WENDY'S, Chicken Nuggets	куриные наггетсы Wendy's
+fdc:170726	WENDY'S, french fries	картофель фри Wendy's
+fdc:170727	BURGER KING, WHOPPER, no cheese	воппер Burger King без сыра
+fdc:170728	BURGER KING, WHOPPER, with cheese	воппер с сыром Burger King
+fdc:170729	BURGER KING, DOUBLE WHOPPER, no cheese	двойной воппер Burger King без сыра
 fdc:170730	BURGER KING, DOUBLE WHOPPER, with cheese	Burger King двойной воппер с сыром
+fdc:170731	BURGER KING, Chicken Strips	куриные стрипсы Burger King
+fdc:170732	TACO BELL, Soft Taco with chicken, cheese and lettuce	тако мягкий с курицей Taco Bell
+fdc:170733	TACO BELL, Soft Taco with steak	тако мягкий со стейком Taco Bell
+fdc:170734	TACO BELL, Bean Burrito	буррито с фасолью Taco Bell
+fdc:170735	TACO BELL, BURRITO SUPREME with beef	буррито с говядиной Taco Bell
+fdc:170736	TACO BELL, Taco Salad	тако-салат Taco Bell
+fdc:170737	KFC, Popcorn Chicken	куриное попкорн KFC
+fdc:170738	KFC, Fried Chicken, ORIGINAL RECIPE, Skin and Breading	куриная кожа с панировкой KFC
+fdc:170739	KFC, Fried Chicken, ORIGINAL RECIPE, Breast, meat only, skin and breading removed	куриная грудка жареная без кожи и панировки KFC
+fdc:170740	KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat only, skin and breading removed	куриная голень жареная без кожи и панировки KFC
+fdc:170741	KFC, Fried Chicken, ORIGINAL RECIPE, Thigh, meat only, skin and breading removed	куриное бедро жареное без кожи и панировки KFC
+fdc:170742	KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat only, skin and breading removed	куриное бедро жареное без кожи и панировки KFC хрустящее
+fdc:170743	KFC, Fried Chicken, EXTRA CRISPY, Wing, meat only, skin and breading removed	куриное крыло жареное без кожи и панировки KFC хрустящее
+fdc:170744	KFC, Fried Chicken, ORIGINAL RECIPE, Breast, meat and skin with breading	куриная грудка жареная с кожей и панировкой KFC
+fdc:170745	KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat and skin with breading	куриная голень жареная с кожей и панировкой KFC
+fdc:170746	KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat and skin with breading	куриное бедро жареное с кожей и панировкой KFC хрустящее
+fdc:170747	KFC, Fried Chicken, EXTRA CRISPY, Wing, meat and skin with breading	куриное крыло жареное с кожей и панировкой KFC хрустящее
+fdc:170748	POPEYES, Fried Chicken, Mild, Breast, meat only, skin and breading removed	куриная грудка жареная без кожи и панировки Popeyes
+fdc:170749	POPEYES, Fried Chicken, Mild, Drumstick, meat only, skin and breading removed	куриная голень жареная без кожи и панировки Popeyes
+fdc:170750	POPEYES, Fried Chicken, Mild, Thigh, meat and skin with breading	куриное бедро жареное с кожей и панировкой Popeyes
+fdc:170751	POPEYES, Fried Chicken, Mild, Wing, meat and skin with breading	куриное крыло жареное с кожей и панировкой Popeyes
+fdc:170752	Fast foods, grilled chicken, bacon and tomato club sandwich, with cheese, lettuce, and mayonnaise	клаб-сэндвич с курицей-гриль, беконом и сыром
+fdc:170753	Fast foods, crispy chicken, bacon, and tomato club sandwich, with cheese, lettuce, and mayonnaise	клаб-сэндвич с хрустящей курицей, беконом и сыром
+fdc:170754	Fast Foods, Fried Chicken, Wing, meat only, skin and breading removed	куриное крыло жареное без кожи и панировки
+fdc:170755	Fast Foods, Fried Chicken, Skin and breading from all pieces	куриная кожа с панировкой жареная
+fdc:170756	Fast Foods, Fried Chicken, Breast, meat and skin and breading	куриная грудка жареная с кожей и панировкой
+fdc:170757	Fast Foods, Fried Chicken, Drumstick, meat and skin with breading	куриная голень жареная с кожей и панировкой
+fdc:170758	DIGIORNO Pizza, cheese topping, thin crispy crust, frozen, baked	пицца DiGiorno с сыром на тонком корже запечённая
+fdc:170759	DIGIORNO Pizza, pepperoni topping, cheese stuffed crust, frozen, baked	пицца DiGiorno пепперони с сырным бортом запечённая
+fdc:170760	DIGIORNO Pizza, pepperoni topping, rising crust, frozen, baked	пицца DiGiorno пепперони на дрожжевом корже запечённая
+fdc:170761	DIGIORNO Pizza, pepperoni topping, thin crispy crust, frozen, baked	пицца DiGiorno пепперони на тонком корже запечённая
+fdc:170762	Fast Food, Pizza Chain, 14" pizza, pepperoni topping, thin crust	пицца пепперони на тонком корже
+fdc:170763	Fast foods, taco with beef, cheese and lettuce, soft	тако мягкий с говядиной, сыром и салатом
+fdc:170764	Fast foods, taco with chicken, lettuce and cheese, soft	тако мягкий с курицей и сыром
+fdc:170765	Fast foods, quesadilla, with chicken	кесадилья с курицей
+fdc:170766	DOMINO'S 14" Sausage Pizza, Classic Hand-Tossed Crust	пицца с колбасой ручной работы Domino's
+fdc:170767	DOMINO'S 14" Sausage Pizza, Ultimate Deep Dish Crust	пицца с колбасой глубокая Domino's
+fdc:170768	PIZZA HUT 14" Sausage Pizza, THIN 'N CRISPY Crust	пицца с колбасой тонкая Pizza Hut
+fdc:170769	PIZZA HUT 14" Sausage Pizza, Hand-Tossed Crust	пицца с колбасой ручной работы Pizza Hut
+fdc:170770	WEND'YS, Crispy Chicken Sandwich	бургер с хрустящей курицей Wendy's
 fdc:170771	BURGER KING, Onion Rings	Burger King луковые кольца
+fdc:170772	WENDY'S, DAVE'S Hot 'N Juicy 1/4 LB, single	бургер Dave's Wendy's
+fdc:170773	Fast Food, Pizza Chain, 14" pizza, cheese topping, stuffed crust	пицца с сырным бортом
+fdc:170774	PIZZA HUT 14" Cheese Pizza, Stuffed Crust	пицца с сырным бортом Pizza Hut
+fdc:170775	Fast foods, strawberry banana smoothie made with ice and low-fat yogurt	смузи клубнично-банановый на нежирном йогурте
+fdc:170776	McDONALD'S, Southern Style Chicken Biscuit	бисквит с курицей южный McDonald's
+fdc:170777	McDONALD'S, RANCH SNACK WRAP, Crispy	ролл с хрустящей курицей и ранч-соусом McDonald's
+fdc:170778	McDONALD'S, RANCH SNACK WRAP, Grilled	ролл с курицей-гриль и ранч-соусом McDonald's
+fdc:170779	School Lunch, pizza, cheese topping, thick crust, whole grain, frozen, cooked	пицца с сыром цельнозерновая на толстом корже школьная запечённая
+fdc:170780	School Lunch, pizza, pepperoni topping, thin crust, whole grain, frozen, cooked	пицца пепперони цельнозерновая на тонком корже школьная запечённая
+fdc:170781	School Lunch, pizza, pepperoni topping, thick crust, whole grain, frozen, cooked	пицца пепперони цельнозерновая на толстом корже школьная запечённая
+fdc:170782	School Lunch, pizza, sausage topping, thin crust, whole grain, frozen, cooked	пицца с колбасой цельнозерновая на тонком корже школьная запечённая
+fdc:170783	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw	говяжьи рёбрышки из шеи без кости постные сырые (чойс)
+fdc:170784	WENDY'S, Double Stack, with cheese	двойной бургер с сыром Wendy's
+fdc:170785	Fast foods, crispy chicken in tortilla, with lettuce, cheese, and ranch sauce	ролл с хрустящей курицей и ранч-соусом
+fdc:170786	Fast foods, grilled chicken in tortilla, with lettuce, cheese, and ranch sauce	ролл с курицей-гриль и ранч-соусом
+fdc:170787	Fast foods, breakfast burrito, with egg, cheese, and sausage	буррито завтрачный с яйцом и колбасой
+fdc:170788	Fast foods, breadstick, soft, prepared with garlic and parmesan cheese	хлебные палочки с чесноком и пармезаном
+fdc:170789	PIZZA HUT, breadstick, parmesan garlic	хлебные палочки с пармезаном и чесноком Pizza Hut
+fdc:170790	CHICK-FIL-A, chicken sandwich	бургер с куриным филе Chick-fil-A
+fdc:170791	ARBY'S, roast beef sandwich, classic	бургер с ростбифом Arby's
+fdc:170792	School Lunch, pizza, cheese topping, thin crust, whole grain, frozen, cooked	пицца с сыром цельнозерновая на тонком корже школьная запечённая
+fdc:170793	School Lunch, pizza, sausage topping, thick crust, whole grain, frozen, cooked	пицца с колбасой цельнозерновая на толстом корже школьная запечённая
+fdc:170794	School Lunch, chicken patty, whole grain breaded	куриная котлета в цельнозерновой панировке школьная
+fdc:170795	School Lunch, chicken nuggets, whole grain breaded	куриные наггетсы в цельнозерновой панировке школьные
+fdc:170796	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, all grades, raw	говяжьи рёбрышки из шеи без кости постные сырые
+fdc:170797	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised	рёбра кантри-стайл постные тушёные (чойс)
+fdc:170798	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised	рёбра кантри-стайл постные тушёные (селект)
+fdc:170799	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	рёбра кантри-стайл постные тушёные
+fdc:170800	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw	рёбра кантри-стайл постные сырые (чойс)
+fdc:170801	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк из шейной части постный на гриле
+fdc:170802	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	стейк из шейной части постный сырой (чойс)
+fdc:170803	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, select, raw	стейк из шейной части постный сырой (селект)
+fdc:170804	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	стейк из шейной части постный сырой
+fdc:170805	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised	стейк мок-тендер постный тушёный (селект)
+fdc:170806	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	стейк мок-тендер постный тушёный
+fdc:170807	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	стейк мок-тендер постный сырой (чойс)
+fdc:170808	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, select, raw	стейк мок-тендер постный сырой (селект)
+fdc:170809	Beef, chuck for stew, separable lean and fat, select, raw	говядина для рагу с жиром сырая (селект)
+fdc:170810	Beef, chuck for stew, separable lean and fat, choice, raw	говядина для рагу с жиром сырая (чойс)
+fdc:170811	Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised	стейк из нижней лопатки постный тушёный (чойс)
+fdc:170812	Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised	стейк из нижней лопатки постный тушёный (селект)
+fdc:170813	Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	нижняя лопатка с жиром сырая
+fdc:170814	Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	нижняя лопатка с жиром сырая (чойс)
+fdc:170815	Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	нижняя лопатка с жиром сырая (селект)
+fdc:170816	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк Денвер с жиром на гриле
+fdc:170817	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, select, raw	стейк Денвер с жиром сырой (селект)
+fdc:170818	Beef, shoulder pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	лопатка с жиром сырая (чойс)
+fdc:170819	Beef, shoulder pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	лопатка с жиром сырая (селект)
+fdc:170820	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	жаркое из шейной части с жиром запечённое
+fdc:170821	Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	стейк мок-тендер с жиром тушёный
+fdc:170822	Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	стейк мок-тендер с жиром тушёный (чойс)
+fdc:170823	Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised	стейк мок-тендер с жиром тушёный (селект)
+fdc:170824	Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк мок-тендер с жиром сырой
+fdc:170825	Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised	говяжьи рёбрышки из шеи с жиром тушёные (селект)
+fdc:170826	Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	говяжьи рёбрышки из шеи с жиром сырые
+fdc:170827	Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	говяжьи рёбрышки из шеи с жиром сырые (чойс)
+fdc:170828	Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, select, raw	говяжьи рёбрышки из шеи с жиром сырые (селект)
+fdc:170829	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	рёбра кантри-стайл с жиром тушёные (чойс)
+fdc:170830	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised	рёбра кантри-стайл с жиром тушёные (селект)
+fdc:170831	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	рёбра кантри-стайл с жиром сырые
+fdc:170832	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	рёбра кантри-стайл с жиром сырые (чойс)
+fdc:170833	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, select, raw	рёбра кантри-стайл с жиром сырые (селект)
+fdc:170834	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из шейной части с жиром сырой (чойс)
+fdc:170835	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	стейк из шейной части с жиром сырой (селект)
+fdc:170836	Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое рибай на кости постное запечённое
+fdc:170837	Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, roasted	жаркое рибай на кости постное запечённое (селект)
+fdc:170838	Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, raw	рибай на кости постный сырой (селект)
+fdc:170839	Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw	рибай без кости постный сырой
+fdc:170840	Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw	рибай без кости постный сырой (чойс)
+fdc:170841	Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, raw	рибай без кости постный сырой (селект)
+fdc:170842	Beef, rib eye roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted	жаркое рибай без кости постное запечённое (чойс)
+fdc:170843	Cheese, fontina	сыр фонтина
+fdc:170844	Cheese, monterey	сыр монтерей
+fdc:170845	Cheese, mozzarella, whole milk	сыр моцарелла из цельного молока
+fdc:170846	Cheese, mozzarella, whole milk, low moisture	сыр моцарелла из цельного молока низкой влажности
+fdc:170847	Cheese, mozzarella, part skim milk	сыр моцарелла из обезжиренного молока
+fdc:170848	Cheese, parmesan, hard	сыр пармезан
+fdc:170849	Cheese, port de salut	сыр пор-салю
+fdc:170850	Cheese, provolone	сыр проволоне
+fdc:170851	Cheese, ricotta, whole milk	сыр рикотта из цельного молока
+fdc:170852	Cheese, tilsit	сыр тильзит
+fdc:170853	Cheese, pasteurized process, American, fortified with vitamin D	сыр плавленый американский с витамином D
+fdc:170854	Cheese, pasteurized process, pimento	сыр плавленый с пименто
+fdc:170855	Cheese, pasteurized process, swiss	сыр плавленый швейцарский
+fdc:170856	Cheese food, cold pack, American	сырная паста американская холодной упаковки
+fdc:170857	Cream, fluid, light (coffee cream or table cream)	сливки лёгкие для кофе
+fdc:170858	Cream, fluid, light whipping	сливки для взбивания лёгкие
+fdc:170859	Cream, fluid, heavy whipping	сливки жирные для взбивания
+fdc:170860	Cream, whipped, cream topping, pressurized	взбитые сливки в баллончике
 fdc:170982	Babyfood, dessert, fruit pudding, pineapple, strained	детское питание ананасовый пудинг
 fdc:171048	Chicken, broilers or fryers, meat and skin and giblets and neck, cooked, fried, batter	курица жареная в кляре
 fdc:171111	Chicken, wing, frozen, glazed, barbecue flavored	куриные крылья в глазури барбекю замороженные
