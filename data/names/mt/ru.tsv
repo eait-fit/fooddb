@@ -7230,7 +7230,7 @@ ciqual:1029	Plant-based cheese, without soybean, prepacked	растительн�
 ciqual:1030	Plant-based ham, prepacked	растительная ветчина
 ciqual:1031	Plant-based pâté, prepacked	растительный паштет
 ciqual:1032	Burger from beef and soybean, prepacked	котлета из говядины с соей
-ciqual:1033	Chicken nuggets (with soybean), breaded croquette, prepacked	наггетсы куриные
+ciqual:1033	Chicken nuggets (with soybean), breaded croquette, prepacked	наггетсы куриные с соей
 ciqual:1034	Poultry sausage (with soybean), prepacked	сосиски из мяса птицы
 ciqual:10999	Chervil, dried	кервель сушёный
 ciqual:11000	Garlic, raw	чеснок свежий
@@ -7699,7 +7699,7 @@ ciqual:13398	Peach, flesh without skin, pitted, raw (average)	персик бе�
 ciqual:13399	Nectarine, flesh and skin, pitted, raw (average)	нектарин
 ciqual:13400	Mammee, flesh and skin, pitted, canned in syrup, solids and liquids, sampled in the island of La Martinique	мамея в сиропе
 ciqual:13401	Mammee, flesh and skin, pitted, raw, sampled in the island of La Martinique	мамея
-ciqual:13402	Pineapple, flesh without skin, raw, sampled in the island of La Martinique	ананас
+ciqual:13402	Pineapple, flesh without skin, raw, sampled in the island of La Martinique	ананас сырой (Мартиника)
 ciqual:13403	Star apple or milk truit, flesh without skin, raw, sampled in the island of La Martinique	каймит
 ciqual:13404	Acerola, flesh and skin, pitted, raw, sampled in the island of La Martinique	ацерола
 ciqual:13405	Shaddock, flesh without skin, without seeds, raw, sampled in the island of La Martinique	помело
@@ -7728,9 +7728,9 @@ ciqual:13427	Mango moussache, flesh without skin, pitted, raw, sampled in the is
 ciqual:13428	Mangue julie, flesh without skin, pitted, raw, sampled in the island of La Martinique	манго Жюли
 ciqual:13429	Green mango, flesh without skin, pitted, raw, sampled in the island of La Martinique	манго зелёный
 ciqual:13430	Melon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	дыня
-ciqual:13431	Orange (local variety), flesh without skin, without seeds, raw, sampled in the island of La Martinique	апельсин
+ciqual:13431	Orange (local variety), flesh without skin, without seeds, raw, sampled in the island of La Martinique	апельсин сырой (Мартиника)
 ciqual:13432	Bitter orange, flesh without skin, without seeds, raw, sampled in the island of La Martinique	апельсин горький
-ciqual:13433	Watermelon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	арбуз
+ciqual:13433	Watermelon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	арбуз сырой (Мартиника)
 ciqual:13434	Cashew apple,flesh and skin,, raw, sampled in the island of La Martinique	яблоко кешью
 ciqual:13435	Sugar apple, flesh without skin, without seeds, raw, sampled in the island of La Martinique	аннона
 ciqual:13436	Pomme d'eau or malaca apple, flesh without skin, pitted, raw, sampled in the island of La Martinique	малайское яблоко свежее
@@ -9636,7 +9636,7 @@ ciqual:30130	Poultry sausage, delicatessen-style	колбаска из птиц�
 ciqual:30131	Poultry sausage, knack-style	колбаска из птицы нак
 ciqual:30134	Frankfurter sausage	сосиска франкфуртская
 ciqual:30150	Merguez sausage, raw	мергез сырой
-ciqual:30151	Merguez sausage, raw (average)	мергез сырой средний
+ciqual:30151	Merguez sausage, raw (average)	колбаска мергез сырая
 ciqual:30152	Merguez sausage, pure beef, raw	мергез говяжий сырой
 ciqual:30153	Merguez sausage, pork and beef, raw	мергез свино-говяжий сырой
 ciqual:30154	Merguez sausage, beef, mutton and pork, raw	мергез из говядины, баранины и свинины сырой
@@ -9928,7 +9928,7 @@ ciqual:38107	Salty snacks, crackers, mini pretzels or sticks	крендельк�
 ciqual:38109	Salty snack, filled, prepacked	профитроли солёные с начинкой
 ciqual:38399	Salty snacks, crackers (average)	крекеры солёные
 ciqual:38401	Salty snacks, crackers, made from wheat, with cheese	крекеры с сыром
-ciqual:38402	Salty snacks, crackers, made from wheat, plain or flavoured	крекеры пшеничные
+ciqual:38402	Salty snacks, crackers, made from wheat, plain or flavoured	крекеры пшеничные солёные
 ciqual:38403	Salty snacks, crackers, made from wheat, plain, reduced fat	крекеры пшеничные нежирные
 ciqual:38404	Puffed salty snacks, peanut flavour	снеки воздушные со вкусом арахиса
 ciqual:38405	Salty snacks, crackers, made from potato	картофельные хрустики
@@ -10121,10 +10121,10 @@ ciqual:42004	Meal replacement, low calorie, powder, reconstituted with skimmed m
 ciqual:42005	Meal replacement, low calorie, powder, reconstituted with skimmed milk, milkshake type	заменитель еды низкокалорийный коктейль на обезжиренном молоке
 ciqual:42200	Soy lecithin	лецитин соевый
 ciqual:42501	Cocoa powder for baby beverage	какао-порошок детский
-ciqual:42603	Baby meal, vegetables with meat/fish and starchy food, from 6-8 months	детский обед овощной с крахмалом и мясом с 6–8 мес
-ciqual:42604	Baby meal, vegetables with meat/fish and starchy food, from 8-12 months	детский обед овощной с крахмалом и мясом с 8–12 мес
-ciqual:42605	Baby meal, vegetables with meat/fish and starchy food, from 12 months	детский обед овощной с крахмалом и мясом с 12 мес
-ciqual:42606	Baby meal, vegetables with meat/fish and starchy food, from 18 months	детский обед овощной с крахмалом и мясом с 18 мес
+ciqual:42603	Baby meal, vegetables with meat/fish and starchy food, from 6-8 months	детский обед овощной с крахмалом и мясом, от 6–8 мес
+ciqual:42604	Baby meal, vegetables with meat/fish and starchy food, from 8-12 months	детский обед овощной с крахмалом и мясом, от 8–12 мес
+ciqual:42605	Baby meal, vegetables with meat/fish and starchy food, from 12 months	детский обед овощной с крахмалом и мясом, от 12 мес
+ciqual:42606	Baby meal, vegetables with meat/fish and starchy food, from 18 months	детский обед овощной с крахмалом и мясом, от 18 мес
 ciqual:5000	Beer, dark	пиво тёмное
 ciqual:5001	Beer, regular (4-5° alcohol)	пиво обычное
 ciqual:5002	Beer, strong (>8° alcohol)	пиво крепкое

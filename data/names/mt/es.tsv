@@ -383,7 +383,7 @@ bls:C530100	Amaranth puffed, unsweetened	amaranto inflado sin azúcar
 bls:C530200	Quinoa puffed, unsweetened	quinoa inflada sin azúcar
 bls:C531000	Wheat puffed, unsweetened	trigo inflado sin azúcar
 bls:C532000	Rice puffed, unsweetened	arroz inflado sin azúcar
-bls:C532100	Whole milk chocolate with puffed rice and crispies	chocolate con leche con arroz inflado y trocitos crujientes
+bls:C532100	Whole milk chocolate with puffed rice and crispies	chocolate con leche y arroz inflado y trocitos crujientes
 bls:C532200	White chocolate with puffed rice and crispies	chocolate blanco con arroz inflado y crujientes
 bls:C532700	Puffed rice waffles unsalted	tortitas de arroz inflado sin sal
 bls:C532800	Puffed rice waffles salted	tortitas de arroz inflado saladas
@@ -2943,7 +2943,7 @@ bls:S530300	Milk chocolate filled with caramel	chocolate con leche relleno de ca
 bls:S530700	Milk chocolate filled with fruit cream	chocolate con leche relleno de crema de fruta
 bls:S530800	Milk chocolate with truffle filling (alcoholic)	chocolate con leche relleno de trufa (con alcohol)
 bls:S531200	Milk chocolate filled with almond-caramel	chocolate con leche relleno de caramelo de almendra
-bls:S532000	Milk chocolate with puffed rice	chocolate con leche con arroz inflado
+bls:S532000	Milk chocolate with puffed rice	chocolate con leche y arroz inflado
 bls:S533000	Flaky brittle covered with whole milk chocolate	crocante de hojaldre cubierto de chocolate con leche
 bls:S535000	Milk chocolate filled with nougat	chocolate con leche relleno de turrón
 bls:S536000	Whole milk chocolate with hazelnuts	chocolate con leche con avellanas
@@ -7230,7 +7230,7 @@ ciqual:1029	Plant-based cheese, without soybean, prepacked	queso vegetal sin soj
 ciqual:1030	Plant-based ham, prepacked	fiambre vegetal
 ciqual:1031	Plant-based pâté, prepacked	paté vegetal
 ciqual:1032	Burger from beef and soybean, prepacked	hamburguesa de vacuno con soja
-ciqual:1033	Chicken nuggets (with soybean), breaded croquette, prepacked	nuggets de pollo
+ciqual:1033	Chicken nuggets (with soybean), breaded croquette, prepacked	nuggets de pollo con soja
 ciqual:1034	Poultry sausage (with soybean), prepacked	salchichas de ave
 ciqual:10999	Chervil, dried	perifollo seco
 ciqual:11000	Garlic, raw	ajo fresco
@@ -7699,7 +7699,7 @@ ciqual:13398	Peach, flesh without skin, pitted, raw (average)	melocotón pelado
 ciqual:13399	Nectarine, flesh and skin, pitted, raw (average)	nectarina
 ciqual:13400	Mammee, flesh and skin, pitted, canned in syrup, solids and liquids, sampled in the island of La Martinique	mamey en almíbar
 ciqual:13401	Mammee, flesh and skin, pitted, raw, sampled in the island of La Martinique	mamey
-ciqual:13402	Pineapple, flesh without skin, raw, sampled in the island of La Martinique	piña
+ciqual:13402	Pineapple, flesh without skin, raw, sampled in the island of La Martinique	piña cruda (Martinica)
 ciqual:13403	Star apple or milk truit, flesh without skin, raw, sampled in the island of La Martinique	caimito
 ciqual:13404	Acerola, flesh and skin, pitted, raw, sampled in the island of La Martinique	acerola
 ciqual:13405	Shaddock, flesh without skin, without seeds, raw, sampled in the island of La Martinique	pomelo chino
@@ -7728,9 +7728,9 @@ ciqual:13427	Mango moussache, flesh without skin, pitted, raw, sampled in the is
 ciqual:13428	Mangue julie, flesh without skin, pitted, raw, sampled in the island of La Martinique	mango julie
 ciqual:13429	Green mango, flesh without skin, pitted, raw, sampled in the island of La Martinique	mango verde
 ciqual:13430	Melon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	melón
-ciqual:13431	Orange (local variety), flesh without skin, without seeds, raw, sampled in the island of La Martinique	naranja
+ciqual:13431	Orange (local variety), flesh without skin, without seeds, raw, sampled in the island of La Martinique	naranja cruda (Martinica)
 ciqual:13432	Bitter orange, flesh without skin, without seeds, raw, sampled in the island of La Martinique	naranja amarga
-ciqual:13433	Watermelon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	sandía
+ciqual:13433	Watermelon, flesh without skin, without seeds, raw, sampled in the island of La Martinique	sandía cruda (Martinica)
 ciqual:13434	Cashew apple,flesh and skin,, raw, sampled in the island of La Martinique	marañón
 ciqual:13435	Sugar apple, flesh without skin, without seeds, raw, sampled in the island of La Martinique	anona
 ciqual:13436	Pomme d'eau or malaca apple, flesh without skin, pitted, raw, sampled in the island of La Martinique	manzana de agua fresca
@@ -9324,7 +9324,7 @@ ciqual:26023	Cod, roasted/baked	bacalao asado
 ciqual:26024	Cod, salted, boiled/cooked in water	bacalao salado cocido
 ciqual:26025	Cod, steamed	bacalao al vapor
 ciqual:26026	Mullet, roasted/baked	lisa asada
-ciqual:26027	Pilchard, in tomato sauce, canned, drained	sardina en salsa de tomate en conserva
+ciqual:26027	Pilchard, in tomato sauce, canned, drained	sardina grande en salsa de tomate en conserva
 ciqual:26028	Fish nuggets, breaded croquette, prepacked	nuggets de pescado
 ciqual:26029	Fish, breaded, frozen, raw	pescado empanado congelado crudo
 ciqual:26030	Fish, breaded, fried, prepacked	pescado empanado frito
@@ -9636,7 +9636,7 @@ ciqual:30130	Poultry sausage, delicatessen-style	salchicha de ave tipo delicates
 ciqual:30131	Poultry sausage, knack-style	salchicha de ave tipo knack
 ciqual:30134	Frankfurter sausage	salchicha de Frankfurt
 ciqual:30150	Merguez sausage, raw	merguez cruda
-ciqual:30151	Merguez sausage, raw (average)	merguez cruda
+ciqual:30151	Merguez sausage, raw (average)	salchicha merguez cruda
 ciqual:30152	Merguez sausage, pure beef, raw	merguez de vacuno cruda
 ciqual:30153	Merguez sausage, pork and beef, raw	merguez de cerdo y vacuno cruda
 ciqual:30154	Merguez sausage, beef, mutton and pork, raw	merguez de vacuno, cordero y cerdo cruda
@@ -9702,14 +9702,14 @@ ciqual:31005	Dark chocolate, 50% cocoa, bar	chocolate negro 50 %
 ciqual:31006	Jam or marmalade, miscellaneaous fruits (not reduced sugar) (average)	mermelada de frutas variadas normal
 ciqual:31007	Chewing gum, with sugar(s)	chicle con azúcar
 ciqual:31008	Honey	miel
-ciqual:31009	Milk chocolate, with puffed/popped cereals, bar	chocolate con leche con arroz inflado
+ciqual:31009	Milk chocolate, with puffed/popped cereals, bar	chocolate con leche y arroz inflado
 ciqual:31010	White chocolate, bar	chocolate blanco
 ciqual:31012	Chocolate confectionery or bar, with milk	barrita de chocolate con leche
 ciqual:31013	Sorbet, stick	polo de sorbete
 ciqual:31014	Fruit jelly or fruit paste	dulce de fruta
 ciqual:31016	Sugar, white	azúcar blanco
 ciqual:31017	Sugar, brown	azúcar moreno
-ciqual:31018	Milk chocolate, with dried fruits (nuts, almonds, raisins, praliné), bar	chocolate con leche con frutos secos
+ciqual:31018	Milk chocolate, with dried fruits (nuts, almonds, raisins, praliné), bar	chocolate con leche y frutos secos
 ciqual:31020	Milk chocolate, no added sugars, with sweeteners, bar	chocolate con leche sin azúcares añadidos
 ciqual:31021	Candied orange peel	corteza de naranja confitada
 ciqual:31023	Candied chestnut	marrón glacé
@@ -9928,7 +9928,7 @@ ciqual:38107	Salty snacks, crackers, mini pretzels or sticks	mini pretzels y pal
 ciqual:38109	Salty snack, filled, prepacked	mini bollos salados rellenos
 ciqual:38399	Salty snacks, crackers (average)	galletas saladas
 ciqual:38401	Salty snacks, crackers, made from wheat, with cheese	crackers con queso
-ciqual:38402	Salty snacks, crackers, made from wheat, plain or flavoured	galletas saladas de trigo
+ciqual:38402	Salty snacks, crackers, made from wheat, plain or flavoured	galletas saladas de trigo de aperitivo
 ciqual:38403	Salty snacks, crackers, made from wheat, plain, reduced fat	galletas saladas de trigo bajas en grasa
 ciqual:38404	Puffed salty snacks, peanut flavour	snacks inflados sabor a cacahuete
 ciqual:38405	Salty snacks, crackers, made from potato	galletas saladas de patata
@@ -9972,8 +9972,8 @@ ciqual:39247	Custard dessert, caramel, refrigerated	natillas de caramelo
 ciqual:39248	Chocolate mousse, plant-based, refrigerated	mousse de chocolate vegetal
 ciqual:39249	Fruit mousse, with cottage cheese, 0% fat, with sugar(s) and sweetener(s), fortified with calcium, refrigerated	mousse de frutas con queso fresco 0%
 ciqual:39250	Fruit mousse, with cottage cheese, with sugar(s), refrigerated	mousse de frutas con queso fresco
-ciqual:39251	Rice pudding with caramel, refrigerated	arroz con leche con caramelo
-ciqual:39252	Rice pudding with rhum and raisins, refrigerated	arroz con leche con ron y pasas
+ciqual:39251	Rice pudding with caramel, refrigerated	arroz con leche y caramelo
+ciqual:39252	Rice pudding with rhum and raisins, refrigerated	arroz con leche, ron y pasas
 ciqual:39253	Chocolate or coffee mousse, on ganache cream, refrigerated	mousse de chocolate con ganache
 ciqual:39254	Custard dessert, chocolate, with chocolate-coated cereals, refrigerated	natillas de chocolate con bolas de cereales
 ciqual:39400	Eggnog, without alcohol	eggnog sin alcohol
@@ -11922,7 +11922,7 @@ fdc:168751	Beverages, almond milk, sweetened, vanilla flavor, ready-to-drink	beb
 fdc:168752	Alcoholic beverage, pina colada, prepared-from-recipe	piña colada
 fdc:168753	Alcoholic beverage, tequila sunrise, canned	tequila sunrise en conserva
 fdc:168754	Candies, milk chocolate, with almonds	chocolate con leche con almendras
-fdc:168755	Candies, milk chocolate, with rice cereal	chocolate con leche con arroz inflado
+fdc:168755	Candies, milk chocolate, with rice cereal	chocolate con leche y arroz inflado
 fdc:168756	Candies, MARS SNACKFOOD US, MILKY WAY Bar	chocolatina Milky Way
 fdc:168757	Candies, HERSHEY'S SKOR Toffee Bar	chocolatina Skor de caramelo
 fdc:168758	Toppings, strawberry	salsa de fresa
