@@ -2674,8 +2674,208 @@ bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortifie
 bls:Q611000	Best quality butter	масло сливочное мягкое сбражённое
 bls:Q620000	Cultured butter	масло сливочное на закваске
 bls:Q630000	Sweet cream butter	масло сливочное сладкосливочное
+bls:Q640000	Butter half fat	масло полужирное
+bls:Q656000	Garlic butter/herb butter	масло чесночно-травяное
+bls:Q683000	Rendered butter	масло топлёное
+bls:Q6A4000	Butter salted	масло сливочное солёное
+bls:Q6A6000	Butter with yogurt	масло сливочное с йогуртом
+bls:Q6A7000	Mixed fat spread, mainly milk fat, unsalted	спред сливочный несолёный
+bls:Q6A7100	Mixed fat spread, mainly milk fat, salted	спред сливочный солёный
+bls:Q730000	Cod-liver oil	жир печени трески
+bls:Q810000	Duck fat	жир утиный
+bls:Q820000	Goose lard/fat	жир гусиный
+bls:Q830000	Chicken fat	жир куриный
+bls:Q860000	Pork lard	смалец свиной
+bls:Q880000	Mutton tallow/fat	жир бараний
+bls:Q890000	Beef tallow/fat	жир говяжий
+bls:Q901000	Tahini made from sesame seeds	тахини
+bls:Q902000	Plant-based lard substitute, vegetable fat based, vegan	заменитель смальца растительный
+bls:Q940000	Vegetable deep-frying oil	масло растительное для жарки
+bls:Q960000	Vegetable deep-frying fat	жир растительный для фритюра
+bls:Q991000	Mayonnaise (ready-made product)	майонез
+bls:Q993000	Salad mayonnaise (ready-made product)	майонез салатный
+bls:Q998000	Salad cream (ready-made product)	крем салатный
+bls:Q999000	Remoulade (ready-made product)	соус ремулюн
+bls:R111000	Common salt/table salt	соль поваренная
+bls:R111100	Rock salt	соль каменная
+bls:R112000	Sea salt	соль морская
+bls:R113000	Iodised salt with fluoride	соль йодированная с фтором
+bls:R113100	Iodised salt with fluoride and folic acid	соль йодированная с фтором и фолиевой кислотой
+bls:R114000	Iodised salt	соль йодированная
+bls:R115000	Seasoned salt/herb salt	соль с травами
+bls:R118000	Nitrite curing salt	соль нитритная посолочная
+bls:R118100	Nitrite curing salt, iodised	соль нитритная посолочная йодированная
+bls:R121000	Wine vinegar	уксус винный
+bls:R122000	Distilled vinegar	уксус столовый
+bls:R123100	Apple cider vinegar	уксус яблочный
+bls:R124000	Herb vinegar	уксус травяной
+bls:R125000	Balsamic vinegar	уксус бальзамический
+bls:R132000	Mustard medium hot	горчица среднеострая
+bls:R133000	Mustard hot	горчица острая
+bls:R134000	Mustard extra hot	горчица очень острая
+bls:R135000	Mustard sweet	горчица сладкая
+bls:R141100	Tomato ketchup	кетчуп томатный
+bls:R141200	Curry ketchup	кетчуп карри
+bls:R143000	Soya sauce	соус соевый
+bls:R144100	Fruit chutney	чатни фруктовый
+bls:R146100	Chilli sauce (Sambal Oelek)	самбал-олек
+bls:R148200	Barbecue sauce, tomato-based	соус барбекю томатный
+bls:R148600	Barbecue sauce, mayonnaise-based	соус барбекю на майонезе
+bls:R160000	Tomato paste	томатная паста
+bls:R161200	Tomato puree	томатное пюре
+bls:R172000	Monosodium glutamate	глутамат натрия
+bls:R211200	Ginger root raw	имбирь корень сырой
+bls:R231000	Basil dried	базилик сушёный
+bls:R258100	Pepper black, dried	перец чёрный сушёный
+bls:R381100	Candied orange peel	цукаты апельсиновые
+bls:R381200	Candied lemon peel	цукаты лимонные
+bls:R411000	Cutter additives phosphate-based (E 450)	фосфатная добавка E 450
+bls:R421100	Baking powder	разрыхлитель
+bls:R421200	Hartshorn (ammonium bicarbonate, E 503)	гидрокарбонат аммония E 503
+bls:R421300	Potash (99 % potassium carbonate, E 501)	поташ E 501
+bls:R434000	Whipped cream stabilizer	стабилизатор для взбитых сливок
+bls:R452000	Vanillin sugar	сахар ванилиновый
+bls:R458000	Baker's yeast dried	дрожжи сухие
+bls:R459000	Baker's yeast fresh, pressed	дрожжи свежие прессованные
+bls:R466000	Apple pectin dried	пектин яблочный сухой
+bls:R468000	Gelatine	желатин
+bls:R481100	Pudding powder, vanilla, unsweetened	пудинг порошковый ванильный без сахара
+bls:R481132	Vanilla pudding made from powder, milk 3.5 % fat and sugar	пудинг ванильный из порошка на молоке 3,5 %
+bls:R481200	Pudding powder, chocolate, unsweetened	пудинг порошковый шоколадный без сахара
+bls:R481232	Chocolate pudding made from powder, milk 3.5 % fat and sugar	пудинг шоколадный из порошка на молоке 3,5 %
+bls:R551000	Lactic acid 80 % (E 270)	кислота молочная 80 % E 270
+bls:R552000	Citric acid (E 330)	кислота лимонная E 330
+bls:R553000	Ascorbic acid (E 300)	кислота аскорбиновая E 300
+bls:R554000	Acetic acid 60 % (E 260)	кислота уксусная 60 % E 260
+bls:R810000	Bouillon/stock/soup (stock cubes, powder)	бульон порошковый
+bls:R811000	Beef bouillon/stock/soup (stock cubes, powder)	бульон говяжий порошковый
+bls:R821000	Vegetable bouillon/stock/soup (stock cubes, powder)	бульон овощной порошковый
+bls:R822000	Chicken bouillon/stock/soup (stock cubes, powder)	бульон куриный порошковый
+bls:R910000	Gravy instant powder	соус подливочный порошковый
+bls:R910032	Gravy made from instant powder and water	соус подливочный из порошка
+bls:R911000	White sauce instant powder	соус белый порошковый
+bls:R911032	White sauce made from instant powder and water	соус белый из порошка
+bls:R912000	Sushi ginger (Gari) canned	имбирь для суши консервированный
+bls:R913000	Wasabi paste canned	паста васаби консервированная
+bls:R921000	Whipped cream sweetened, with gelatine, for pastry/tortes	сливки взбитые сладкие с желатином для выпечки
+bls:R922000	Yogurt cream for pastry/tortes	крем йогуртовый для выпечки
+bls:R923000	Lemon cream for pastry/tortes	крем лимонный для выпечки
+bls:R924000	Mocha cream for pastry/tortes	крем мокко для выпечки
+bls:R930000	Vanilla butter cream with egg, light, for pastry/tortes	крем масляный ванильный с яйцом для выпечки
+bls:R931000	Chocolate butter cream with egg, light, for pastry/tortes	крем масляный шоколадный с яйцом для выпечки
+bls:R940000	Vanilla cream/vanilla flummery, with egg, for pastry/tortes	крем ванильный с яйцом для выпечки
+bls:R941000	Cherry filling for pastry/tortes	начинка вишнёвая для выпечки
+bls:R942000	Gelatin glaze for pastry/tortes	глазурь желе для выпечки
+bls:R943000	Ganache for pastry/tortes	ганаш для выпечки
+bls:R944000	Truffle cream filling for pastry/tortes	крем трюфельный для выпечки
+bls:R963000	Egg-herb spread	намазка яично-травяная
+bls:R963100	Tomato-mozzarella spread	намазка томатно-моцарелловая
+bls:R9A1000	Strawberry cream for pastry/tortes	крем клубничный для выпечки
+bls:R9A1100	Raspberry cream for pastry/tortes	крем малиновый для выпечки
+bls:R9A1200	Cheese cream (egg-free) for pastry/tortes	крем сырный без яиц для выпечки
+bls:R9A1300	Mandarin cream for pastry/tortes	крем мандариновый для выпечки
+bls:R9A1400	Lemon cream (with starch) for pastry/tortes	крем лимонный с крахмалом для выпечки
+bls:R9A2000	Pineapple yogurt cream for pastry/tortes	крем ананасово-йогуртовый для выпечки
+bls:R9A2100	Nut cream for pastry/tortes	крем ореховый для выпечки
+bls:R9A2200	Chocolate cream for pastry/tortes	крем шоколадный для выпечки
+bls:R9A3000	Marzipan filling for pastry/tortes	начинка марципановая для выпечки
+bls:R9A3100	Poppy seed filling for pastry/tortes	начинка маковая для выпечки
+bls:R9A3200	Nut filling for pastry/tortes	начинка ореховая для выпечки
+bls:R9A3300	Pudding filling for pastry/tortes	начинка пудинговая для выпечки
+bls:R9A3400	Quark filling for pastry/tortes	начинка творожная для выпечки
+bls:R9A3500	Sugar-butter-cinnamon filling for pastry/tortes	начинка сахарно-масляно-коричная для выпечки
+bls:R9A4000	Mocha butter cream, egg-free, light, for pastry/tortes	крем масляный мокко без яиц для выпечки
+bls:R9A4100	Chocolate butter cream, egg-free, light, for pastry/tortes	крем масляный шоколадный без яиц для выпечки
+bls:R9A4200	Vanilla butter cream, egg-free, light, for pastry/tortes	крем масляный ванильный без яиц для выпечки
+bls:R9A5000	Apricot icing for pastry/tortes	глазурь абрикосовая для выпечки
+bls:R9A5100	Sacher icing/chocolate icing, for pastry/tortes	глазурь захер шоколадная для выпечки
+bls:R9A5200	Chocolate icing (containing non-cocoa fats) for pastry/tortes	глазурь шоколадная с заменителем какао для выпечки
+bls:R9A6000	Apple-wine cream (with egg) for pastry/tortes	крем яблочно-винный с яйцом для выпечки
+bls:R9A6100	Mocha flummery with liqueur, for pastry/tortes	крем мокко с ликёром для выпечки
+bls:R9A6200	Orange flummery with liqueur, for pastry/tortes	крем апельсиновый с ликёром для выпечки
+bls:S111000	Sugar white (refined sugar)	сахар белый
+bls:S111100	Icing sugar/powdered sugar	сахарная пудра
+bls:S112000	Sugar brown (candyfarin/raw sugar)	сахар коричневый
+bls:S114000	Vanilla sugar	сахар ванильный
+bls:S115100	Dextrose/glucose)	глюкоза
+bls:S116000	Lactose	лактоза
+bls:S117000	Maltose	мальтоза
+bls:S118000	Fructose	фруктоза
+bls:S120000	Honey	мёд
+bls:S121000	Blossom honey	мёд цветочный
+bls:S122000	Honeydew honey	мёд падевый
+bls:S124000	Invert sugar cream	инвертный сахарный крем
+bls:S131100	Fruit spread	спред фруктовый
+bls:S132000	Jam extra quality	варенье экстра
+bls:S132100	Jam extra quality, with fructose and artificial sweeteners	варенье экстра с фруктозой и подсластителем
+bls:S134000	Jelly extra quality	желе экстра
+bls:S135000	Marmalade	мармелад цитрусовый
+bls:S141000	Chocolate-nut cream	паста шоколадно-ореховая
+bls:S142100	Apple butter, unsweetened	повидло яблочное без сахара
+bls:S142200	Apple butter, sweetened	повидло яблочное
+bls:S142300	Pear butter, unsweetened	повидло грушевое без сахара
+bls:S142400	Pear butter, sweetened	повидло грушевое
+bls:S143000	Sweet chestnut cream (spread)	крем каштановый
+bls:S145000	Nut nougat cream (spread)	паста орехово-нуговая
+bls:S151000	Glucose syrup containing maltose	сироп глюкозный с мальтозой
+bls:S151100	Maple syrup	сироп кленовый
+bls:S152000	Treacle/molasses, dark	меласса
+bls:S154000	Fruit syrup	сироп фруктовый
+bls:S155000	Apple syrup	сироп яблочный
+bls:S156000	Pear syrup	сироп грушевый
+bls:S157000	Grape syrup	сироп виноградный
+bls:S161000	Plum butter (jam)	повидло сливовое
+bls:S162000	Sorbitol powder (E 420)	сорбит порошковый E 420
+bls:S163000	Xylitol powder (E 967)	ксилит порошковый E 967
+bls:S164000	Mannitol powder (E 421)	маннит порошковый E 421
+bls:S170000	Table sweetener tablets (cyclamate, saccharin)	подсластитель таблетки
+bls:S171000	Table sweetener liquid (cyclamate, saccharin)	подсластитель жидкий
+bls:S201000	Fruit sherbet/sorbet	сорбет фруктовый
+bls:S201300	Ice cream mixed (chocolate, nut) in waffle cone	мороженое орехово-шоколадное в вафельном стаканчике
+bls:S201400	Ice cream mixed (chocolate, fruit) in waffle cone	мороженое фруктово-шоколадное в вафельном стаканчике
 bls:S201500	Coffee ice cream, in waffle cone	кофейное мороженое в вафельном стаканчике
+bls:S201600	Caramel ice cream, in waffle cone	мороженое карамельное в вафельном стаканчике
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	мороженое шоколадно-ванильное с яичным ликёром
+bls:S210000	Ice cream (containing egg yolk)	мороженое кремовое на желтках
+bls:S210100	Ice cream mixed (fruit, vanilla) in waffle cone	мороженое фруктово-ванильное в вафельном стаканчике
+bls:S210300	Ice cream mixed (caramel, vanilla) in waffle cone	мороженое карамельно-ванильное в вафельном стаканчике
+bls:S210400	Ice cream mixed (chocolate, nut, vanilla) in waffle cone	мороженое орехово-шоколадно-ванильное в вафельном стаканчике
+bls:S210600	Ice cream mixed (chocolate, fruit, vanilla) in waffle cone	мороженое фруктово-шоколадно-ванильное в вафельном стаканчике
+bls:S210700	Ice cream mixed (chocolate, vanilla) in waffle cone	мороженое шоколадно-ванильное в вафельном стаканчике
+bls:S210800	Nut ice cream, in waffle cone	мороженое ореховое в вафельном стаканчике
+bls:S210900	Chocolate ice cream, in waffle cone	мороженое шоколадное в вафельном стаканчике
+bls:S211000	Ice cream bar filled with ice cream and caramel, covered with chocolate	эскимо с карамелью в шоколаде
+bls:S211100	Ice cream mixed (nut, vanilla) in waffle cone	мороженое орехово-ванильное в вафельном стаканчике
+bls:S211400	Ice cream mixed (coffee, fruit) in waffle cone	мороженое кофейно-фруктовое в вафельном стаканчике
+bls:S211500	Vanilla ice cream, in waffle cone	мороженое ванильное в вафельном стаканчике
+bls:S211700	Fruit ice cream, in waffle cone	мороженое фруктовое в вафельном стаканчике
+bls:S211800	Ice cream mixed (caramel, fruit) in waffle cone	мороженое карамельно-фруктовое в вафельном стаканчике
+bls:S211900	Ice cream mixed (fruit, nut) in waffle cone	мороженое фруктово-ореховое в вафельном стаканчике
+bls:S220000	Fruit ice cream	мороженое фруктовое
+bls:S220200	Coffee ice cream	мороженое кофейное
+bls:S220400	Ice cream mixed (chocolate, coffee, vanilla)	мороженое кофейно-шоколадно-ванильное
+bls:S220500	Ice cream mixed (fruit, nut)	мороженое фруктово-ореховое
+bls:S220700	Ice cream mixed (caramel, nut)	мороженое карамельно-ореховое
+bls:S220800	Ice cream mixed (nut, vanilla)	мороженое орехово-ванильное
+bls:S220900	Ice cream mixed (coffee, vanilla)	мороженое кофейно-ванильное
+bls:S221000	Ice cream mixed (caramel, fruit, vanilla)	мороженое карамельно-фруктово-ванильное
+bls:S221200	Ice cream mixed (caramel, chocolate)	мороженое карамельно-шоколадное
+bls:S221700	Yogurt ice cream	мороженое йогуртовое
+bls:S221800	Yogurt-fruit ice cream	мороженое йогуртово-фруктовое
+bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	мороженое йогуртовое и йогуртово-фруктовое микс
+bls:S229000	Parfait	парфе
+bls:S230000	Ice cream cream-based	мороженое на сливках
+bls:S231000	Ice cream with fruit preparation, covered with chocolate	мороженое с фруктовым наполнителем в шоколадной глазури
+bls:S231200	Ice cream streaked with chocolate	мороженое с шоколадной прослойкой
+bls:S241000	Vanilla ice cream	мороженое ванильное
+bls:S241300	Ice cream mixed (chocolate, fruit, nut) with egg liqueur	мороженое фруктово-орехово-шоколадное с яичным ликёром
+bls:S241400	Ice cream mixed (coffee, fruit, nut) with egg liqueur	мороженое кофейно-фруктово-ореховое с яичным ликёром
+bls:S241500	Vanilla ice cream, covered with chocolate	мороженое ванильное в шоколадной глазури
+bls:S241600	Vanilla ice cream, covered with chocolate and almonds	мороженое ванильное в шоколадной глазури с миндалём
+bls:S241700	Chocolate ice cream, covered with chocolate	мороженое шоколадное в шоколадной глазури
+bls:S241800	Ice cream covered with chocolate, caramel and almonds	мороженое в шоколадной глазури с карамелью и миндалём
+bls:S241900	Vanilla ice cream, covered with chocolate and caramel	мороженое ванильное в шоколадной глазури с карамелью
+bls:S242000	Chocolate ice cream	мороженое шоколадное
 bls:T204182	Cod fried without fat (pan)	треска жареная без масла
 bls:T206600	Haddock smoked	пикша копчёная
 bls:T306182	Halibut/white halibut, fried without fat (pan)	палтус жареный без масла

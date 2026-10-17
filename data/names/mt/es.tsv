@@ -2674,8 +2674,152 @@ bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortifie
 bls:Q611000	Best quality butter	mantequilla suave fermentada
 bls:Q620000	Cultured butter	mantequilla de cultivo
 bls:Q630000	Sweet cream butter	mantequilla de nata dulce
+bls:R421100	Baking powder	impulsor
+bls:R421200	Hartshorn (ammonium bicarbonate, E 503)	bicarbonato de amonio E 503
+bls:R421300	Potash (99 % potassium carbonate, E 501)	potasa E 501
+bls:R434000	Whipped cream stabilizer	estabilizante de nata montada
+bls:R452000	Vanillin sugar	azúcar de vainillina
+bls:R458000	Baker's yeast dried	levadura seca
+bls:R459000	Baker's yeast fresh, pressed	levadura fresca prensada
+bls:R466000	Apple pectin dried	pectina de manzana seca
+bls:R468000	Gelatine	gelatina
+bls:R481100	Pudding powder, vanilla, unsweetened	polvo para pudín de vainilla sin azúcar
+bls:R481132	Vanilla pudding made from powder, milk 3.5 % fat and sugar	pudín de vainilla de sobre con leche 3,5 %
+bls:R481200	Pudding powder, chocolate, unsweetened	polvo para pudín de chocolate sin azúcar
+bls:R481232	Chocolate pudding made from powder, milk 3.5 % fat and sugar	pudín de chocolate de sobre con leche 3,5 %
+bls:R551000	Lactic acid 80 % (E 270)	ácido láctico 80 % E 270
+bls:R552000	Citric acid (E 330)	ácido cítrico E 330
+bls:R553000	Ascorbic acid (E 300)	ácido ascórbico E 300
+bls:R554000	Acetic acid 60 % (E 260)	ácido acético 60 % E 260
+bls:R810000	Bouillon/stock/soup (stock cubes, powder)	caldo en polvo
+bls:R811000	Beef bouillon/stock/soup (stock cubes, powder)	caldo de vacuno en polvo
+bls:R821000	Vegetable bouillon/stock/soup (stock cubes, powder)	caldo de verduras en polvo
+bls:R822000	Chicken bouillon/stock/soup (stock cubes, powder)	caldo de pollo en polvo
+bls:R910000	Gravy instant powder	salsa gravy en polvo
+bls:R910032	Gravy made from instant powder and water	salsa gravy de sobre
+bls:R911000	White sauce instant powder	salsa blanca en polvo
+bls:R911032	White sauce made from instant powder and water	salsa blanca de sobre
+bls:R912000	Sushi ginger (Gari) canned	jengibre para sushi en conserva
+bls:R913000	Wasabi paste canned	pasta de wasabi en conserva
+bls:R921000	Whipped cream sweetened, with gelatine, for pastry/tortes	nata montada azucarada con gelatina para repostería
+bls:R922000	Yogurt cream for pastry/tortes	crema de yogur para repostería
+bls:R923000	Lemon cream for pastry/tortes	crema de limón para repostería
+bls:R924000	Mocha cream for pastry/tortes	crema de moka para repostería
+bls:R930000	Vanilla butter cream with egg, light, for pastry/tortes	crema de mantequilla de vainilla con huevo para repostería
+bls:R931000	Chocolate butter cream with egg, light, for pastry/tortes	crema de mantequilla de chocolate con huevo para repostería
+bls:R940000	Vanilla cream/vanilla flummery, with egg, for pastry/tortes	crema de vainilla con huevo para repostería
+bls:R941000	Cherry filling for pastry/tortes	relleno de cereza para repostería
+bls:R942000	Gelatin glaze for pastry/tortes	glaseado de gelatina para repostería
+bls:R943000	Ganache for pastry/tortes	ganache para repostería
+bls:R944000	Truffle cream filling for pastry/tortes	crema de trufa para repostería
+bls:R963000	Egg-herb spread	crema para untar de huevo y hierbas
+bls:R963100	Tomato-mozzarella spread	crema para untar de tomate y mozzarella
+bls:R9A1000	Strawberry cream for pastry/tortes	crema de fresa para repostería
+bls:R9A1100	Raspberry cream for pastry/tortes	crema de frambuesa para repostería
+bls:R9A1200	Cheese cream (egg-free) for pastry/tortes	crema de queso sin huevo para repostería
+bls:R9A1300	Mandarin cream for pastry/tortes	crema de mandarina para repostería
+bls:R9A1400	Lemon cream (with starch) for pastry/tortes	crema de limón con almidón para repostería
+bls:R9A2000	Pineapple yogurt cream for pastry/tortes	crema de piña y yogur para repostería
+bls:R9A2100	Nut cream for pastry/tortes	crema de frutos secos para repostería
+bls:R9A2200	Chocolate cream for pastry/tortes	crema de chocolate para repostería
+bls:R9A3000	Marzipan filling for pastry/tortes	relleno de mazapán para repostería
+bls:R9A3100	Poppy seed filling for pastry/tortes	relleno de amapola para repostería
+bls:R9A3200	Nut filling for pastry/tortes	relleno de frutos secos para repostería
+bls:R9A3300	Pudding filling for pastry/tortes	relleno de pudín para repostería
+bls:R9A3400	Quark filling for pastry/tortes	relleno de requesón para repostería
+bls:R9A3500	Sugar-butter-cinnamon filling for pastry/tortes	relleno de azúcar, mantequilla y canela para repostería
+bls:R9A4000	Mocha butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de moka sin huevo para repostería
+bls:R9A4100	Chocolate butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de chocolate sin huevo para repostería
+bls:R9A4200	Vanilla butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de vainilla sin huevo para repostería
+bls:R9A5000	Apricot icing for pastry/tortes	glaseado de albaricoque para repostería
+bls:R9A5100	Sacher icing/chocolate icing, for pastry/tortes	glaseado de chocolate sacher para repostería
+bls:R9A5200	Chocolate icing (containing non-cocoa fats) for pastry/tortes	cobertura de chocolate para repostería
+bls:R9A6000	Apple-wine cream (with egg) for pastry/tortes	crema de manzana y vino con huevo para repostería
+bls:R9A6100	Mocha flummery with liqueur, for pastry/tortes	crema de moka con licor para repostería
+bls:R9A6200	Orange flummery with liqueur, for pastry/tortes	crema de naranja con licor para repostería
+bls:S111000	Sugar white (refined sugar)	azúcar blanco
+bls:S111100	Icing sugar/powdered sugar	azúcar glas
+bls:S112000	Sugar brown (candyfarin/raw sugar)	azúcar moreno
+bls:S114000	Vanilla sugar	azúcar vainillado
+bls:S115100	Dextrose/glucose)	glucosa
+bls:S116000	Lactose	lactosa
+bls:S117000	Maltose	maltosa
+bls:S118000	Fructose	fructosa
+bls:S120000	Honey	miel
+bls:S121000	Blossom honey	miel de flores
+bls:S122000	Honeydew honey	mielato
+bls:S124000	Invert sugar cream	crema de azúcar invertido
+bls:S131100	Fruit spread	crema de fruta para untar
+bls:S132000	Jam extra quality	confitura extra
+bls:S132100	Jam extra quality, with fructose and artificial sweeteners	confitura extra con fructosa y edulcorante
+bls:S134000	Jelly extra quality	jalea extra
+bls:S135000	Marmalade	mermelada de cítricos
+bls:S141000	Chocolate-nut cream	crema de cacao con avellanas
+bls:S142100	Apple butter, unsweetened	dulce de manzana sin azúcar
+bls:S142200	Apple butter, sweetened	dulce de manzana
+bls:S142300	Pear butter, unsweetened	dulce de pera sin azúcar
+bls:S142400	Pear butter, sweetened	dulce de pera
+bls:S143000	Sweet chestnut cream (spread)	crema de castañas
+bls:S145000	Nut nougat cream (spread)	crema de turrón de avellanas
+bls:S151000	Glucose syrup containing maltose	jarabe de glucosa con maltosa
+bls:S151100	Maple syrup	jarabe de arce
+bls:S152000	Treacle/molasses, dark	melaza
+bls:S154000	Fruit syrup	sirope de fruta
+bls:S155000	Apple syrup	concentrado de manzana
+bls:S156000	Pear syrup	concentrado de pera
+bls:S157000	Grape syrup	concentrado de uva
+bls:S161000	Plum butter (jam)	dulce de ciruela
+bls:S162000	Sorbitol powder (E 420)	sorbitol en polvo E 420
+bls:S163000	Xylitol powder (E 967)	xilitol en polvo E 967
+bls:S164000	Mannitol powder (E 421)	manitol en polvo E 421
+bls:S170000	Table sweetener tablets (cyclamate, saccharin)	edulcorante en comprimidos
+bls:S171000	Table sweetener liquid (cyclamate, saccharin)	edulcorante líquido
+bls:S201000	Fruit sherbet/sorbet	sorbete de fruta
+bls:S201300	Ice cream mixed (chocolate, nut) in waffle cone	helado de frutos secos y chocolate en cucurucho
+bls:S201400	Ice cream mixed (chocolate, fruit) in waffle cone	helado de fruta y chocolate en cucurucho
 bls:S201500	Coffee ice cream, in waffle cone	cucurucho de helado de café
+bls:S201600	Caramel ice cream, in waffle cone	helado de caramelo en cucurucho
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	helado de chocolate y vainilla con licor de huevo
+bls:S210000	Ice cream (containing egg yolk)	helado de yema
+bls:S210100	Ice cream mixed (fruit, vanilla) in waffle cone	helado de fruta y vainilla en cucurucho
+bls:S210300	Ice cream mixed (caramel, vanilla) in waffle cone	helado de caramelo y vainilla en cucurucho
+bls:S210400	Ice cream mixed (chocolate, nut, vanilla) in waffle cone	helado de frutos secos, chocolate y vainilla en cucurucho
+bls:S210600	Ice cream mixed (chocolate, fruit, vanilla) in waffle cone	helado de fruta, chocolate y vainilla en cucurucho
+bls:S210700	Ice cream mixed (chocolate, vanilla) in waffle cone	helado de chocolate y vainilla en cucurucho
+bls:S210800	Nut ice cream, in waffle cone	helado de frutos secos en cucurucho
+bls:S210900	Chocolate ice cream, in waffle cone	helado de chocolate en cucurucho
+bls:S211000	Ice cream bar filled with ice cream and caramel, covered with chocolate	barrita de helado con caramelo cubierta de chocolate
+bls:S211100	Ice cream mixed (nut, vanilla) in waffle cone	helado de frutos secos y vainilla en cucurucho
+bls:S211400	Ice cream mixed (coffee, fruit) in waffle cone	helado de café y fruta en cucurucho
+bls:S211500	Vanilla ice cream, in waffle cone	helado de vainilla en cucurucho
+bls:S211700	Fruit ice cream, in waffle cone	helado de fruta en cucurucho
+bls:S211800	Ice cream mixed (caramel, fruit) in waffle cone	helado de caramelo y fruta en cucurucho
+bls:S211900	Ice cream mixed (fruit, nut) in waffle cone	helado de fruta y frutos secos en cucurucho
+bls:S220000	Fruit ice cream	helado de fruta
+bls:S220200	Coffee ice cream	helado de café
+bls:S220400	Ice cream mixed (chocolate, coffee, vanilla)	helado de café, chocolate y vainilla
+bls:S220500	Ice cream mixed (fruit, nut)	helado de fruta y frutos secos
+bls:S220700	Ice cream mixed (caramel, nut)	helado de caramelo y frutos secos
+bls:S220800	Ice cream mixed (nut, vanilla)	helado de frutos secos y vainilla
+bls:S220900	Ice cream mixed (coffee, vanilla)	helado de café y vainilla
+bls:S221000	Ice cream mixed (caramel, fruit, vanilla)	helado de caramelo, fruta y vainilla
+bls:S221200	Ice cream mixed (caramel, chocolate)	helado de caramelo y chocolate
+bls:S221700	Yogurt ice cream	helado de yogur
+bls:S221800	Yogurt-fruit ice cream	helado de yogur y fruta
+bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	helado de yogur y yogur de fruta
+bls:S229000	Parfait	parfait
+bls:S230000	Ice cream cream-based	helado de nata
+bls:S231000	Ice cream with fruit preparation, covered with chocolate	helado con fruta cubierto de chocolate
+bls:S231200	Ice cream streaked with chocolate	helado veteado de chocolate
+bls:S241000	Vanilla ice cream	helado de vainilla
+bls:S241300	Ice cream mixed (chocolate, fruit, nut) with egg liqueur	helado de fruta, frutos secos y chocolate con licor de huevo
+bls:S241400	Ice cream mixed (coffee, fruit, nut) with egg liqueur	helado de café, fruta y frutos secos con licor de huevo
+bls:S241500	Vanilla ice cream, covered with chocolate	helado de vainilla cubierto de chocolate
+bls:S241600	Vanilla ice cream, covered with chocolate and almonds	helado de vainilla cubierto de chocolate y almendras
+bls:S241700	Chocolate ice cream, covered with chocolate	helado de chocolate cubierto de chocolate
+bls:S241800	Ice cream covered with chocolate, caramel and almonds	helado cubierto de chocolate, caramelo y almendras
+bls:S241900	Vanilla ice cream, covered with chocolate and caramel	helado de vainilla cubierto de chocolate y caramelo
+bls:S242000	Chocolate ice cream	helado de chocolate
 bls:T204182	Cod fried without fat (pan)	bacalao fresco a la plancha
 bls:T206600	Haddock smoked	eglefino ahumado
 bls:T306182	Halibut/white halibut, fried without fat (pan)	fletán a la plancha
