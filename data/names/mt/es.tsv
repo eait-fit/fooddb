@@ -2933,10 +2933,188 @@ bls:X463613	Lentil soup with vegetables and cured pork	sopa de lentejas con verd
 bls:X463813	Lentil stew with prunes and blood sausage	estofado de lentejas con ciruelas y morcilla
 bls:X4A1020	Chicken soup with chicken and vegetables	sopa de pollo con verduras
 bls:X548443	Onions gratinated	cebollas gratinadas
+bls:X551142	Aubergine slices fried	rodajas de berenjena fritas
+bls:X551162	Aubergine slices deep-fried	rodajas de berenjena fritas en abundante aceite
+bls:X551343	Aubergines with tomatoes stewed	berenjenas con tomate estofadas
+bls:X551363	Aubergine slices fried, with tomato sauce (of canned tomatoes) and cheese gratinated	rodajas de berenjena fritas gratinadas con salsa de tomate en conserva y queso
+bls:X551463	Aubergines filled with lamb, rice and tomatoes, gratinated	berenjenas rellenas de cordero, arroz y tomate gratinadas
+bls:X551563	Aubergines braised with tomatoes and sweet peppers	berenjenas con tomate y pimiento braseadas
+bls:X551812	Aubergine slices in frying batter (with beer) deep-fried	rodajas de berenjena rebozadas con cerveza fritas en abundante aceite
+bls:X552043	Cucumbers stewed	pepinos estofados
+bls:X552153	Cucumbers braised	pepinos braseados
+bls:X552423	Cucumbers with minced meat filling, braised, with sauce	pepinos rellenos de carne picada braseados con salsa
+bls:X553712	Sweet peppers baked, with bulgur-vegetable-filling	pimientos al horno con relleno de bulgur y verduras
+bls:X553812	Sweet peppers with minced meat filling, baked	pimientos rellenos de carne picada al horno
+bls:X553912	Sweet peppers stewed (with fat and salt)	pimientos estofados con grasa y sal
+bls:X554043	Sweet peppers and tomatoes stewed	pimientos con tomate estofados
+bls:X554113	Sweet peppers with minced meat filling baked, in tomato sauce (of fresh tomatoes)	pimientos rellenos de carne picada al horno en salsa de tomate fresco
+bls:X554333	Sweet peppers with minced meat-rice filling, in tomato sauce (of tomato paste)	pimientos rellenos de carne picada y arroz estofados en salsa de concentrado de tomate
+bls:X554543	Sweet peppers and cucumbers stewed	pimientos con pepino estofados
+bls:X556043	Whole tomatoes stewed, with cream	tomates enteros estofados con nata
+bls:X556142	Tomatoes stewed, with rosemary and sage	tomates estofados con romero y salvia
+bls:X556233	Tomatoes baked Provencal style	tomates al horno a la provenzal
+bls:X556243	Tomatoes filled with olives and sheep's milk cheese, gratinated	tomates rellenos de aceitunas y queso de oveja gratinados
+bls:X556263	Tomatoes filled with herb-bread-parmesan mix, grilled	tomates rellenos de mezcla de hierbas, pan y parmesano a la parrilla
+bls:X556422	Tomatoes with minced meat filling, baked	tomates rellenos de carne picada al horno
+bls:X556643	Tomatoes with cheese-herb-filling, baked	tomates rellenos de queso y hierbas al horno
+bls:X556812	Tomatoes stewed (with fat and salt)	tomates estofados con grasa y sal
+bls:X558063	Courgette slices breaded, fried	rodajas de calabacín empanadas fritas
+bls:X558112	Courgette-cream sauce	salsa de calabacín con nata
+bls:X558143	Courgette stewed (with fat and salt)	calabacín estofado con grasa y sal
+bls:X558312	Courgette pancakes fried	tortitas de calabacín fritas
+bls:X558412	Courgette with millet-filling and cheese gratinated	calabacín con relleno de mijo gratinado con queso
+bls:X559043	Pumpkin baked, in tomato sauce (of tomato paste)	calabaza al horno en salsa de concentrado de tomate
+bls:X559063	Pumpkin baked, in white basic sauce	calabaza al horno en salsa blanca
+bls:X559243	Pumpkin baked, in sweet pepper sauce (from Bechamel sauce)	calabaza al horno en salsa de pimiento
+bls:X559312	Pumpkin stewed (with fat and salt)	calabaza estofada con grasa y sal
+bls:X561043	Swede stewed, with bacon, in white basic sauce	colinabo estofado con beicon en salsa blanca
+bls:X561053	Swede stewed, in white basic sauce	colinabo estofado en salsa blanca
+bls:X561112	Swede stewed (with fat and salt)	colinabo estofado con grasa y sal
+bls:X562013	Carrots boiled, fried	zanahorias cocidas salteadas
+bls:X562043	Carrots stewed (with fat and salt)	zanahorias estofadas con grasa y sal
+bls:X562053	Carrots boiled, with white basis sauce	zanahorias cocidas con salsa blanca
+bls:X562063	Carrots boiled, tossed in butter	zanahorias cocidas salteadas en mantequilla
+bls:X562153	Carrots, peas and beans boiled, in white basic sauce	zanahorias con guisantes y judías cocidas en salsa blanca
+bls:X562243	Carrots and leek stewed	zanahorias con puerro estofadas
+bls:X562463	Carrots puree	puré de zanahoria
+bls:X565043	Black salsify boiled (with lemon juice and salt)	escorzonera cocida
+bls:X565143	Black salsify boiled, with Hollandaise sauce	escorzonera cocida con salsa holandesa
+bls:X566063	Celeriac puree	puré de apio nabo
+bls:X566142	Celeriac slices in frying batter (with beer) deep-fried	rodajas de apio nabo rebozadas con cerveza fritas en abundante aceite
+bls:X566253	Celeriac stewed, in white basic sauce with cream	apio nabo estofado en salsa blanca con nata
 bls:X566412	Celeriac boiled, with cream	apio nabo cocido con nata
+bls:X567053	Beetroot sweet-and-sour stewed	remolacha estofada agridulce
+bls:X567243	Beetroot stewed, with sour cream	remolacha estofada con nata agria
+bls:X568043	Turnips "Teltower Rübchen" stewed, with cream	nabos de Teltow estofados con nata
 bls:X570143	Green peas stewed	guisantes estofados
+bls:X570153	Green peas boiled, in white basic sauce	guisantes cocidos en salsa blanca
+bls:X570343	Pea puree from dried peas	puré de guisantes secos
+bls:X570363	Pea puree from fresh peas	puré de guisantes frescos
+bls:X570653	Green peas and sweetcorn stewed	guisantes con maíz estofados
+bls:X570763	Sugar peas boiled, tossed in butter	guisantes cocidos salteados en mantequilla
+bls:X571143	Green beans stewed	judías verdes estofadas
+bls:X571153	Green beans boiled, in white basic sauce	judías verdes cocidas en salsa blanca
+bls:X571163	Green beans boiled, tossed in butter	judías verdes cocidas salteadas en mantequilla
+bls:X571253	Broad beans with bacon stewed, in white basic sauce	habas con beicon estofadas en salsa blanca
+bls:X571453	Haricot beans boiled, in tomato sauce (of canned tomatoes)	alubias blancas cocidas en salsa de tomate en conserva
+bls:X572143	Lentils boiled, with mirepoix and bacon	lentejas cocidas con verduras de sopa y beicon
+bls:X572153	Lentils boiled with mirepoix	lentejas cocidas con verduras de sopa
+bls:X572212	Antipasti mix with tuna and Parma ham	antipasto con atún y jamón de Parma
+bls:X572312	Sweetcorn stewed (with fat and salt)	maíz dulce estofado con grasa y sal
+bls:X572412	Tofu fried (with fat and salt)	tofu frito con grasa y sal
+bls:X572512	Topinambur stewed (with fat and salt)	tupinambo estofado con grasa y sal
+bls:X572612	Chinese white cabbage stewed (with fat and salt)	col china estofada con grasa y sal
+bls:X572712	Curly kale stewed (with fat and salt)	col rizada estofada con grasa y sal
+bls:X572812	Fennel boiled (with fat and salt)	hinojo cocido con grasa y sal
+bls:X573012	Aubergines stewed (with fat and salt)	berenjenas estofadas con grasa y sal
+bls:X573212	Celery boiled (with fat and salt)	apio cocido con grasa y sal
+bls:X573312	Romanesco stewed (with fat and salt)	romanesco estofado con grasa y sal
+bls:X573412	Okra stewed (with fat and salt)	ocra estofada con grasa y sal
+bls:X573612	Turnip stewed (with fat and salt)	nabos estofados con grasa y sal
+bls:X573712	Parsnip boiled, fried (with fat and salt)	chirivías cocidas fritas con grasa y sal
+bls:X573812	Celeriac stewed (with fat and salt)	apio nabo estofado con grasa y sal
+bls:X574012	Bamboo shoots stewed (with fat and salt)	brotes de bambú estofados con grasa y sal
+bls:X574112	Soya bean sprouts stewed (with fat and salt)	brotes de soja estofados con grasa y sal
+bls:X574212	Chickpeas boiled (with fat and salt)	garbanzos cocidos con grasa y sal
+bls:X574312	Haricot beans boiled (with fat and salt)	alubias blancas cocidas con grasa y sal
+bls:X574412	Broad beans stewed (with fat and salt)	habas estofadas con grasa y sal
+bls:X574512	Soya bean (edamame) stewed (with fat and salt)	edamame estofado con grasa y sal
+bls:X5A1000	Vegetable patties vegan, fried	hamburguesas de verduras veganas fritas
 bls:X5A1010	Vegetable wafers savoury	oblea salada de verduras
+bls:X5A1020	Chickpea patties fried	hamburguesas de garbanzos fritas
+bls:X5A1030	Chickpea snack baked	snack de garbanzos al horno
+bls:X5A1040	Lentil patties fried	hamburguesas de lentejas fritas
+bls:X5A1050	Lentil patties vegan, fried	hamburguesas de lentejas veganas fritas
+bls:X5A2000	Button mushrooms stewed in vinegar, pickled in rapeseed oil	champiñones estofados en vinagre en conserva en aceite de colza
+bls:X5A3000	Vegetable mix boiled (without sauce)	mezcla de verduras cocida
+bls:X5A4000	Chicory stewed, with cheese sauce from Bechamel sauce gratinated	achicoria estofada gratinada con salsa de queso
+bls:X5A4010	Chicory braised with bacon	achicoria braseada con beicon
+bls:X5A4020	Spinach casserole/spinach pudding	pudín de espinacas
+bls:X5A5000	Cabbage roulade with rice-ham-filling, stewed	rollitos de col con relleno de arroz y jamón estofados
+bls:X5A5010	Cabbage roulade stewed, vegan filled with millet, tomatoes and tofu	rollitos de col veganos rellenos de mijo, tomate y tofu estofados
+bls:X5A5020	Cabbage roulade stewed, vegetarian filled with millet, tomatoes and sheep's milk cheese	rollitos de col vegetarianos rellenos de mijo, tomate y queso de oveja estofados
+bls:X5A6000	Artichokes stewed with orange juice	alcachofas estofadas con zumo de naranja
+bls:X5A6010	Artichokes boiled (with lemon juice and salt)	alcachofas cocidas
+bls:X5A6020	Artichokes boiled, with butter	alcachofas cocidas con mantequilla
+bls:X5A6030	Leek stewed, with butter and cheese	puerro estofado con mantequilla y queso
+bls:X5A6040	Asparagus-ham rolls with cheese gratinated	rollitos de espárragos y jamón gratinados con queso
+bls:X5A6050	Onions filled with button mushrooms and minced meat, braised	cebollas rellenas de champiñones y carne picada braseadas
+bls:X5A7000	Antipasti of grilled sweet pepper	antipasto de pimiento a la parrilla
+bls:X5A7010	Pumpkin baked	calabaza asada
+bls:X5A7020	Pumpkin rösti baked	rösti de calabaza al horno
+bls:X5A7030	Courgette with minced meat filling and cheese gratinated	calabacín relleno de carne picada gratinado con queso
+bls:X5A8000	Green beans boiled	judías verdes cocidas
+bls:X5A8010	Green peas stewed in cream	guisantes estofados en nata
+bls:X5A8020	Kidney beans stewed	alubias rojas estofadas
+bls:X5A8030	Lentils boiled, with stewed vegetables	lentejas cocidas con verduras estofadas
+bls:X5A8040	Cheese alternative Mozzarella style, vegan	alternativa al queso tipo mozzarella vegana
+bls:X5A8050	Tofu vegan breaded, fried	tofu vegano empanado frito
+bls:X5A9000	Carrots boiled	zanahorias cocidas
+bls:X5A9010	Kohlrabi boiled, vegetarian filled with cream cheese and peas	colinabo cocido relleno de queso crema y guisantes
+bls:X5A9020	Swede stewed, with bacon	colinabo estofado con beicon
+bls:X5A9030	Fried onions	cebolla frita crujiente
+bls:X5A9040	Beetroot stewed	remolacha estofada
+bls:X5A9050	Celeriac boiled (with lemon juice and salt)	apio nabo cocido
+bls:X5B1000	Vegetable-potato-fish purree, with carrots and salmon (without salt, suitable as baby food)	puré de verduras, patata y pescado con zanahoria y salmón, sin sal, para bebés
+bls:X5B1010	Vegetable-potato-poultry purree, with carrots and chicken (without salt, suitable as baby food)	puré de verduras, patata y pollo con zanahoria, sin sal, para bebés
+bls:X5B1020	Vegetable-potato-meat purree, with carrots and beef (without salt, suitable as baby food)	puré de verduras, patata y carne con zanahoria y vacuno, sin sal, para bebés
+bls:X5B1030	Vegetable-potato-meat purree, with carrots and pork (without salt, suitable as baby food)	puré de verduras, patata y carne con zanahoria y cerdo, sin sal, para bebés
+bls:X5B1100	Vegetable-potato purree, with fennel (without salt, suitable as baby food)	puré de verduras y patata con hinojo, sin sal, para bebés
+bls:X5B1110	Vegetable-potato purree, with carrot and pumpkin (without salt, suitable as baby food)	puré de verduras y patata con zanahoria y calabaza, sin sal, para bebés
+bls:X5B1120	Vegetable-potato purree, with carrot and parsnip (without salt, suitable as baby food)	puré de verduras y patata con zanahoria y chirivía, sin sal, para bebés
+bls:X5B1130	Vegetable-potato purree, with spinach (without salt, suitable as baby food)	puré de verduras y patata con espinacas, sin sal, para bebés
+bls:X5B1140	Vegetable-potato purree, with courgette (without salt, suitable as baby food)	puré de verduras y patata con calabacín, sin sal, para bebés
+bls:X5B1150	Vegetable-potato-cereal purree, with carrot and oat flakes (without salt, suitable as baby food)	puré de verduras, patata y cereal con zanahoria y copos de avena, sin sal, para bebés
+bls:X5B1160	Vegetable-sweet potato purree, with carrot and parsnip (without salt, suitable as baby food)	puré de verduras y boniato con zanahoria y chirivía, sin sal, para bebés
+bls:X610042	Potatoes boiled with salt	patatas cocidas con sal
+bls:X610143	Cream potatoes "Niedernauer" fried	patatas en nata fritas
+bls:X610253	Boiled potatoes with vegetable stock and vegetables	patatas cocidas en caldo de verduras con verduras
+bls:X611143	Bouillon potatoes (with meat stock)	patatas cocidas en caldo de carne
+bls:X612152	Parsley potatoes	patatas con perejil
+bls:X613043	Potatoes with herb sauce from white basic sauce	patatas con salsa de hierbas
+bls:X613143	Bechamel potatoes	patatas con bechamel
+bls:X614213	Potato goulash	gulash de patatas
+bls:X614313	Potato layer dish with sauerkraut and boiled ham, gratinated	pastel de patatas con chucrut y jamón cocido gratinado
+bls:X631042	Potatoes mashed	puré de patatas
+bls:X634012	Potato puree with milk 3.5 % fat	puré de patatas con leche entera
+bls:X635053	Potato mash with milk 3.5 % fat	puré de patatas ligero con leche entera
+bls:X635253	Puree of potatoes and carrots with milk 3.5 % fat	puré de patata y zanahoria con leche entera
+bls:X636012	Potato puree, made from instant powder and milk 1.5 % fat	puré de patatas de copos con leche semidesnatada
+bls:X636043	Potato puree, made from instant powder, water, milk 3.5 % fat and fat	puré de patatas de copos con agua, leche entera y grasa
+bls:X636212	Puree of potatoes and brussels sprouts with milk 3.5 % fat	puré de patata y coles de Bruselas con leche entera
+bls:X637012	Potato puree, made from instant powder and milk 3.5 % fat	puré de patatas de copos con leche entera
+bls:X638012	Potato puree, made from instant powder and water	puré de patatas de copos con agua
+bls:X639012	Potato puree with milk 1.5 % fat	puré de patatas con leche semidesnatada
+bls:X640053	Potato gratin	gratinado de patatas
+bls:X640063	Potato casserole	pastel de patatas
+bls:X641000	Duchesse potatoes baked	patatas duquesa al horno
+bls:X641812	Butter potatoes	patatas con mantequilla
+bls:X642063	"Bäckerin-Kartoffeln" (potato gratin) vegetarian	gratinado de patatas Bäckerin vegetariano
+bls:X643113	Potatoes with eggs and tomatoes, gratinated	patatas con huevo y tomate gratinadas
+bls:X643153	Potatoes with tomatoes stewed	patatas con tomate estofadas
+bls:X644013	Potato gratin without cheese	gratinado de patatas sin queso
+bls:X644113	Potato gratin with tomatoes and mozzarella	gratinado de patatas con tomate y mozzarella
+bls:X644253	Potato gratin with kohlrabi and cheese	gratinado de patatas con colirábano y queso
+bls:X644313	Potato gratin with spinach	gratinado de patatas con espinacas
+bls:X644712	Potato gratin with leek	gratinado de patatas con puerro
+bls:X651012	Potatoes boiled, peeled, fried	patatas cocidas peladas fritas
+bls:X651013	Potatoes raw, peeled, fried	patatas crudas peladas fritas
+bls:X651043	Fried potatoes (of boiled potatoes) with onions	patatas salteadas de patata cocida con cebolla
+bls:X651063	Fried potatoes (of raw potatoes) with onions	patatas salteadas de patata cruda con cebolla
+bls:X651112	Farmer's breakfast with bacon and boiled ham, fried	desayuno de granjero con beicon y jamón cocido frito
+bls:X651343	Fried potatoes with bacon and onions	patatas salteadas con beicon y cebolla
+bls:X651443	Potatoes with caraway seeds baked	patatas al comino al horno
+bls:X651543	Fried potatoes sweetened	patatas salteadas azucaradas
+bls:X651642	Potatoes stewed with bacon	patatas estofadas con beicon
+bls:X651823	Fried grated potatoes "Tyrolese"	patatas ralladas fritas al estilo tirolés
+bls:X651912	Fried potatoes with egg	patatas salteadas con huevo
+bls:X652912	Potato croquettes	croquetas de patata
+bls:X653042	Potato croquettes with cheese	croquetas de patata con queso
+bls:X653123	Potato croquettes with carrots and peas in white basic sauce with cream	croquetas de patata con zanahoria y guisantes en salsa blanca con nata
+bls:X653242	Potato croquettes from choux pastry	croquetas de patata de masa choux
+bls:X654042	Potato chips	patatas fritas
 bls:X655022	Potato pancakes fried	tortitas de patata fritas
+bls:X655032	Potato pancakes (with sour cream and semolina) fried	tortitas de patata con nata agria y sémola fritas
 bls:X760212	Minced meat-spinach-filled pasta squares, Swabian style, fried in butter	maultaschen fritos en mantequilla
 bls:Y036410	Meatballs of turkey fried	albóndigas de pavo fritas
 bls:Y141123	Beef goulash "Hungarian"	gulash de ternera
@@ -10593,18 +10771,18 @@ fdc:175029	Rolls, dinner, rye	panecillos de centeno
 fdc:175030	Rolls, dinner, wheat	panecillos de trigo
 fdc:175031	Rolls, hard (includes kaiser)	bollos
 fdc:175032	Strudel, apple	strudel de manzana
-fdc:175033	Sweet rolls, cheese	rollos dulces de queso
 fdc:1750339	Apples, red delicious, with skin, raw	manzanas Red Delicious
-fdc:175034	Sweet rolls, cinnamon, commercially prepared with raisins	rollos dulces de canela con pasas
+fdc:175033	Sweet rolls, cheese	rollos dulces de queso
 fdc:1750340	Apples, fuji, with skin, raw	manzanas Fuji
 fdc:1750341	Apples, gala, with skin, raw	manzanas Gala
 fdc:1750342	Apples, granny smith, with skin, raw	manzanas Granny Smith
 fdc:1750343	Apples, honeycrisp, with skin, raw	manzanas Honeycrisp
 fdc:1750348	Oil, peanut	aceite de cacahuete
 fdc:1750349	Oil, sunflower	aceite de girasol
-fdc:175035	Toaster pastries, fruit (includes apple, blueberry, cherry, strawberry)	pastelitos para tostadora de fruta
+fdc:175034	Sweet rolls, cinnamon, commercially prepared with raisins	rollos dulces de canela con pasas
 fdc:1750350	Oil, safflower	aceite de cártamo
 fdc:1750351	Oil, olive, extra light	aceite de oliva suave
+fdc:175035	Toaster pastries, fruit (includes apple, blueberry, cherry, strawberry)	pastelitos para tostadora de fruta
 fdc:175036	Tortillas, ready-to-bake or -fry, corn	tortillas de maíz
 fdc:175037	Tortillas, ready-to-bake or -fry, flour, refrigerated	tortillas de trigo refrigeradas
 fdc:175038	Waffles, plain, frozen, ready-to-heat	gofres congelados
@@ -16659,8 +16837,8 @@ frida:1726	Quinoa, black, raw	quinoa negra cruda
 frida:1740	Chicken, mince, 3-10% fat, raw	carne picada de pollo cruda
 frida:1747	Whey protein powder	proteína de suero en polvo
 frida:1756	Veal, shortloin, raw	lomo corto de ternera crudo
-frida:179	Rice starch	almidón de arroz
 frida:1794	Sausage, with soy protein	salchicha con proteína de soja
+frida:179	Rice starch	almidón de arroz
 frida:1803	Chickpeas, dry, raw	garbanzos secos crudos
 frida:1806	Edamame beans (Soy beans), shelled, frozen	edamame congelado
 frida:1886	Peach Icetea, artificial sweetener added	té helado de melocotón con edulcorante
