@@ -116,7 +116,7 @@ bls:B561400	Spelt roll with sunflower seeds	panecillo de espelta con semillas de
 bls:B591000	Multigrain roll	panecillo multicereal
 bls:B629000	Crackerbread gluten-free	pan cracker sin gluten
 bls:B6A1000	Wheat crispbread with sesame seeds	pan crujiente de trigo con sésamo
-bls:B6A1100	Wholemeal wheat crispbread with cheese, oilseeds and tomatoes	pan crujiente integral de trigo con queso con semillas oleaginosas y tomate
+bls:B6A1100	Wholemeal wheat crispbread with cheese, oilseeds and tomatoes	pan crujiente integral de trigo con queso, semillas oleaginosas y tomate
 bls:B6A1200	Wholemeal wheat crispbread with muesli ingredients, sweetened	pan crujiente integral de trigo con ingredientes de muesli azucarado
 bls:B6A1300	Wholemeal wheat crispbread with oilseeds	pan crujiente integral de trigo con semillas oleaginosas
 bls:B6A1400	Wholemeal wheat crispbread with oilseeds and hard cheese	pan crujiente integral de trigo con semillas oleaginosas y queso curado
@@ -190,7 +190,7 @@ bls:C111062	Wheat whole grain, boiled, baked	trigo integral en grano cocido al h
 bls:C111082	Wheat whole grain, boiled, fried without fat (pan)	trigo integral en grano cocido a la plancha
 bls:C113000	Wheat flakes	copos de trigo
 bls:C113032	Wheat flakes, boiled	copos de trigo cocidos
-bls:C114000	Wheat germ	germen de trigo crudo
+bls:C114000	Wheat germ	germen de trigo (crudo)
 bls:C117000	Wheat groats	sémola de trigo
 bls:C117032	Wheat groats, boiled	sémola de trigo cocida
 bls:C118000	Quinoa white, raw	quinoa blanca cruda
@@ -233,7 +233,7 @@ bls:C213200	Wheat flour, Type 1050	harina de trigo (tipo 1050)
 bls:C213500	Wheat flour, Type 1600	harina de trigo (tipo 1600)
 bls:C214100	Wheat flour, Type 405	harina de trigo (tipo 405)
 bls:C214200	Wheat flour, Type 550	harina de trigo (tipo 550)
-bls:C215000	Wheat middlings (dunst)	dunst de trigo dunst
+bls:C215000	Wheat middlings (dunst)	dunst de trigo
 bls:C216000	Wheat starch	almidón de trigo
 bls:C217000	Wheat bran	salvado de trigo
 bls:C218000	Soft wheat semolina	sémola de trigo blando
@@ -257,7 +257,7 @@ bls:C223400	Rye flour, Type 1370	harina de centeno (tipo 1370)
 bls:C223600	Rye flour, Type 1740	harina de centeno (tipo 1740)
 bls:C232000	Oat coarse meal	sémola gruesa de avena
 bls:C232032	Oat coarse meal, boiled	sémola gruesa de avena cocida
-bls:C233000	Oat flour	harina de avena molida
+bls:C233000	Oat flour	harina fina de avena
 bls:C234000	Spelt flour, Type 630	harina de espelta (tipo 630)
 bls:C234100	Spelt flour, Type 812	harina de espelta (tipo 812)
 bls:C234200	Spelt flour, Type 1050	harina de espelta (tipo 1050)
@@ -297,7 +297,7 @@ bls:C333132	Millet wholegrain flakes, boiled	copos integrales de mijo cocidos
 bls:C334032	Millet boiled	mijo hervido
 bls:C335000	Amaranth raw	amaranto crudo
 bls:C335032	Amaranth boiled	amaranto hervido
-bls:C341000	Maize raw	maíz crudo
+bls:C341000	Maize raw	maíz fresco
 bls:C341032	Maize boiled	maíz cocido
 bls:C341162	Maize boiled, baked	maíz cocido al horno
 bls:C346000	Maize semolina	sémola de maíz
@@ -362,7 +362,7 @@ bls:C514600	Crunchy muesli mix with chocolate, sweetened	muesli crujiente con ch
 bls:C514700	Crunchy muesli mix with chocolate, sweetened, fortified with vitamins and minerals	muesli crujiente con chocolate azucarado con vitaminas y minerales
 bls:C515000	Cornflakes sweetened	copos de maíz azucarados
 bls:C515100	Cornflakes sweetened, fortified with vitamins	copos de maíz azucarados con vitaminas
-bls:C515200	Cornflakes sweetened, sugar frosted, with peanuts, fortified with vitamins and minerals	copos de maíz azucarados glaseados con cacahuetes con vitaminas y minerales
+bls:C515200	Cornflakes sweetened, sugar frosted, with peanuts, fortified with vitamins and minerals	copos de maíz azucarados glaseados con cacahuetes, vitaminas y minerales
 bls:C515300	Cornflakes sweetened, sugar frosted, with peanuts	copos de maíz azucarados glaseados con cacahuetes
 bls:C515400	Cornflakes unsweetened	copos de maíz sin azúcar
 bls:C515600	Cornflakes sweetened, sugar frosted	copos de maíz azucarados glaseados
@@ -371,19 +371,19 @@ bls:C519000	Popcorn sweet	palomitas dulces
 bls:C522000	Cereal flakes sweetened	copos de cereales azucarados
 bls:C522100	Cereal flakes sweetened, fortified with vitamins and minerals	copos de cereales azucarados con vitaminas y minerales
 bls:C522200	Cereal flakes sweetened, with dried fruit	copos de cereales azucarados con fruta deshidratada
-bls:C522300	Cereal flakes sweetened, with dried fruit, fortified with vitamins and minerals	copos de cereales azucarados con fruta deshidratada con vitaminas y minerales
+bls:C522300	Cereal flakes sweetened, with dried fruit, fortified with vitamins and minerals	copos de cereales azucarados con fruta deshidratada, vitaminas y minerales
 bls:C522400	Cereal flakes sweetened, with nuts	copos de cereales azucarados con frutos secos
-bls:C522500	Cereal flakes sweetened, with nuts, fortified with vitamins and minerals	copos de cereales azucarados con frutos secos con vitaminas y minerales
+bls:C522500	Cereal flakes sweetened, with nuts, fortified with vitamins and minerals	copos de cereales azucarados con frutos secos, vitaminas y minerales
 bls:C522600	Cereal flakes sweetened, with chocolate	copos de cereales azucarados con chocolate
-bls:C522700	Cereal flakes sweetened, with chocolate, fortified with vitamins and minerals	copos de cereales azucarados con chocolate con vitaminas y minerales
-bls:C526000	Polenta (Maize semolina prepared with water, fat and salt) boiled	polenta polenta cocida
-bls:C526062	Polenta (Maize semolina prepared with water, fat and salt) boiled, baked	polenta polenta cocida al horno
-bls:C526082	Polenta (Maize semolina prepared with water, fat and salt) boiled, fried without fat (pan)	polenta polenta cocida a la plancha
+bls:C522700	Cereal flakes sweetened, with chocolate, fortified with vitamins and minerals	copos de cereales azucarados con chocolate, vitaminas y minerales
+bls:C526000	Polenta (Maize semolina prepared with water, fat and salt) boiled	polenta de maíz
+bls:C526062	Polenta (Maize semolina prepared with water, fat and salt) boiled, baked	polenta cocida al horno
+bls:C526082	Polenta (Maize semolina prepared with water, fat and salt) boiled, fried without fat (pan)	polenta cocida a la plancha
 bls:C530100	Amaranth puffed, unsweetened	amaranto inflado sin azúcar
 bls:C530200	Quinoa puffed, unsweetened	quinoa inflada sin azúcar
 bls:C531000	Wheat puffed, unsweetened	trigo inflado sin azúcar
 bls:C532000	Rice puffed, unsweetened	arroz inflado sin azúcar
-bls:C532100	Whole milk chocolate with puffed rice and crispies	chocolate con leche con arroz inflado y crujientes
+bls:C532100	Whole milk chocolate with puffed rice and crispies	chocolate con leche con arroz inflado y trocitos crujientes
 bls:C532200	White chocolate with puffed rice and crispies	chocolate blanco con arroz inflado y crujientes
 bls:C532700	Puffed rice waffles unsalted	tortitas de arroz inflado sin sal
 bls:C532800	Puffed rice waffles salted	tortitas de arroz inflado saladas
@@ -400,21 +400,21 @@ bls:C537000	Wheat pops/wheat puffed, sweetened	trigo inflado azucarado
 bls:C538000	Muesli mix with dried fruit, sweetened	muesli con fruta deshidratada azucarado
 bls:C539100	Wholemeal wheat cereals sweetened, unfilled, basic/fruit/chocolate	cereales integrales de trigo azucarados sin relleno básicos, de fruta o de chocolate
 bls:C539200	Wholemeal wheat cereals sweetened, unfilled, basic/fruit/chocolate, fortified with vitamins and minerals	cereales integrales de trigo azucarados sin relleno básicos, de fruta o de chocolate con vitaminas y minerales
-bls:C546000	Tortilla chips (Nachos)	nachos nachos
+bls:C546000	Tortilla chips (Nachos)	nachos de maíz
 bls:C549000	Barley malt extract	extracto de malta de cebada
 bls:C551000	Gluten (from wheat)	gluten de trigo
 bls:C552000	Multigrain flakes	copos multicereal
-bls:C556000	Wheat gluten mix, dried product	mezcla de gluten de trigo producto seco
-bls:C557000	Meat substitute containing gluten, milk and soya	sucedáneo de carne con gluten con leche y soja
+bls:C556000	Wheat gluten mix, dried product	mezcla de gluten de trigo seca
+bls:C557000	Meat substitute containing gluten, milk and soya	sucedáneo de carne con gluten, leche y soja
 bls:C558000	Meat substitute containing gluten (seitan)	seitán
 bls:C559000	Rice noodles raw	fideos de arroz crudos
 bls:C559032	Rice noodles boiled	fideos de arroz hervidos
-bls:C650000	Rice drink unsweetened	bebida de arroz sin azúcar añadido
+bls:C650000	Rice drink unsweetened	bebida vegetal de arroz sin azúcar
 bls:C650200	Rice drink unsweetened, fortified with vitamins and calcium	bebida de arroz sin azúcar con vitaminas y calcio
-bls:C660000	Oat drink unsweetened	bebida de avena sin azúcar añadido
-bls:C660200	Oat drink unsweetened, fortified with vitamins, calcium and iodine	bebida de avena sin azúcar con vitaminas con calcio y yodo
+bls:C660000	Oat drink unsweetened	bebida vegetal de avena sin azúcar
+bls:C660200	Oat drink unsweetened, fortified with vitamins, calcium and iodine	bebida de avena sin azúcar con vitaminas, calcio y yodo
 bls:C660300	Oat drink sweetened, flavoured	bebida de avena azucarada aromatizada
-bls:C660500	Oat drink sweetened, flavoured, fortified with vitamins, calcium and iodine	bebida de avena azucarada aromatizada con vitaminas con calcio y yodo
+bls:C660500	Oat drink sweetened, flavoured, fortified with vitamins, calcium and iodine	bebida de avena azucarada aromatizada con vitaminas, calcio y yodo
 bls:D011000	Soup pearls	perlas de sopa
 bls:D024000	Spelt rusk unsweetened	biscotes de espelta sin azúcar
 bls:D025000	Wholemeal rusk unsweetened	biscotes integrales sin azúcar
@@ -425,9 +425,9 @@ bls:D035000	Coconut rusk	biscotes de coco
 bls:D036000	Butter rusk	biscotes de mantequilla
 bls:D038000	Rusk egg-free	biscotes sin huevo
 bls:D039000	Rusk gluten-free	biscotes sin gluten
-bls:D041000	Peanut puffs	snacks de cacahuete
+bls:D041000	Peanut puffs	flips de cacahuete
 bls:D050000	Crackers	crackers salados
-bls:D064000	Salted pretzels/pretzel sticks (snack)	pretzels salados snack
+bls:D064000	Salted pretzels/pretzel sticks (snack)	pretzels salados
 bls:D071000	Frying batter (with milk) sweetened, raw	rebozado con leche azucarado crudo
 bls:D072000	Puff pastry egg-free, raw	hojaldre sin huevo crudo
 bls:D072062	Puff pastry egg-free, baked	hojaldre sin huevo al horno
@@ -466,17 +466,17 @@ bls:D187200	Apple crumble tart (shortcrust pastry)	tarta de manzana con crumble 
 bls:D187300	Apple crumble tart (cake batter)	tarta de manzana con crumble de masa batida
 bls:D188400	Apple cake with bee sting cake topping (shortcrust pastry)	tarta de manzana de masa quebrada con cobertura de almendra caramelizada
 bls:D1A1000	Apple crumble cake (yeast dough)	tarta de manzana con crumble de masa de levadura
-bls:D1A1100	Apple cake with pudding (yeast dough)	tarta de manzana de masa de levadura con pudin
+bls:D1A1100	Apple cake with pudding (yeast dough)	tarta de manzana de masa de levadura con natillas
 bls:D1A1200	Rhubarb crumble cake (yeast dough)	tarta de ruibarbo con crumble de masa de levadura
 bls:D1A1300	Blue plum crumble cake (yeast dough)	tarta de ciruela con crumble de masa de levadura
 bls:D1A2000	Apricot cake (shortcrust pastry) with cream topping	tarta de albaricoque de masa quebrada con crema por encima
 bls:D1A2100	Cherry crumble cake (shortcrust pastry)	tarta de cereza con crumble de masa quebrada
-bls:D1A2200	Shortcrust pastry base with fruit, pudding and gelatin glaze	base de masa quebrada con fruta con pudin y cobertura de gelatina
+bls:D1A2200	Shortcrust pastry base with fruit, pudding and gelatin glaze	base de masa quebrada con fruta, natillas y cobertura de gelatina
 bls:D1A2300	Rhubarb crumble cake (shortcrust pastry)	tarta de ruibarbo con crumble de masa quebrada
 bls:D1A3000	Apple cake (quark oil dough)	tarta de manzana de masa de quark y aceite
 bls:D1A3100	Blue plum cake (quark oil dough)	tarta de ciruela de masa de quark y aceite
 bls:D1A4000	Apple cake vegan (cake batter)	tarta de manzana de masa batida vegana
-bls:D1A4100	Cake base with fruit, pudding and gelatin glaze	base de tarta con fruta con pudin y cobertura de gelatina
+bls:D1A4100	Cake base with fruit, pudding and gelatin glaze	base de tarta con fruta, natillas y cobertura de gelatina
 bls:D1A4200	Gooseberry cake (cake batter) with meringue	tarta de grosella espinosa de masa batida con merengue
 bls:D200300	Strawberry cake (cake batter) with gelatin glaze	tarta de fresa de masa batida con gelatina
 bls:D208700	Apple cheese torte (without cake base)	tarta de manzana y quark sin base
@@ -510,7 +510,7 @@ bls:D311200	Butter cream torte (sponge cake)	tarta de crema de mantequilla de bi
 bls:D312300	Apricot cream torte (sponge cake)	tarta de crema de albaricoque de bizcocho
 bls:D312500	"Zuger Kirschtorte" cherry torte (sponge cake and nut sponge cake) with alcohol	tarta de cereza Zuger Kirschtorte de bizcocho y bizcocho de frutos secos con alcohol
 bls:D312600	Buckwheat flour torte (water sponge cake) with blueberry-cream	tarta de trigo sarraceno de bizcocho sin grasa con crema de arándanos
-bls:D312700	Carrot nut cake (sponge cake)	bizcocho de zanahoria y frutos secos de bizcocho
+bls:D312700	Carrot nut cake (sponge cake)	bizcocho de zanahoria y frutos secos
 bls:D312800	Mocha cream torte (water sponge cake) with alcohol	tarta de crema de moka de bizcocho sin grasa con alcohol
 bls:D312900	Truffle torte (chocolate water sponge cake)	tarta de trufa de bizcocho de chocolate sin grasa
 bls:D313100	Mocha-cream marzipan torte (water sponge cake)	tarta de mazapán y crema de moka de bizcocho sin grasa
@@ -531,7 +531,7 @@ bls:D330400	"Prinzregententorte" torte (sponge cake)	tarta Prinzregenten de bizc
 bls:D330500	Chocolate nut torte (cake batter)	tarta de chocolate y frutos secos de masa batida
 bls:D340100	Butter cream torte (sand cake batter)	tarta de crema de mantequilla de masa cuatro cuartos
 bls:D340200	Grape torte (sand cake batter) with vanilla cream and gelatin glaze	tarta de uva de masa cuatro cuartos con crema de vainilla y gelatina
-bls:D380200	Cheese torte (shortcrust pastry)	torta de queso de masa quebrada
+bls:D380200	Cheese torte (shortcrust pastry)	tarta de queso de masa quebrada
 bls:D380900	Cake base/torte base (shortcrust pastry, fine)	base de tarta de masa quebrada fina
 bls:D3A1000	Sponge cake roll, filled with raspberry-cream	brazo de gitano con crema de frambuesa
 bls:D3A2000	Strawberry Charlotte Royale Cake (sponge cake)	charlotte royale de fresa de bizcocho
@@ -560,7 +560,7 @@ bls:D431100	Marble cake (cake batter)	bizcocho marmolado de masa batida
 bls:D431200	Almond cake (cake batter)	bizcocho de almendra de masa batida
 bls:D431300	Macaroon cake (cake batter)	bizcocho de macarrón de masa batida
 bls:D431400	"Donau-Wellen" cake (cake batter)	bizcocho Donauwelle de masa batida
-bls:D431500	Layer cake (cake batter)	bizcocho en capas de masa batida
+bls:D431500	Layer cake (cake batter)	baumkuchen
 bls:D431700	Orange cake (cake batter)	bizcocho de naranja de masa batida
 bls:D431800	Pineapple marzipan cake (cake batter)	bizcocho de piña y mazapán de masa batida
 bls:D431900	"Ottilienkuchen" cake (cake batter)	bizcocho Ottilien de masa batida
@@ -611,7 +611,7 @@ bls:D4A1000	Apple strudel (puff pastry)	strudel de manzana de hojaldre
 bls:D4A1100	Cherry strudel (puff pastry)	strudel de cereza de hojaldre
 bls:D4A2000	Brownies	brownies de chocolate
 bls:D4A3000	Cheesecake (without cake base)	tarta de queso sin base
-bls:D4A4000	Pumpkin almond cake (sponge cake)	bizcocho de calabaza y almendra de bizcocho
+bls:D4A4000	Pumpkin almond cake (sponge cake)	pastel de zanahoria y frutos secos
 bls:D4A5100	Swedish almond marzipan cake (shortcrust pastry)	bizcocho sueco de almendra y mazapán de masa quebrada
 bls:D4A6000	"Eierschecke" cheesecake (yeast dough) with egg cream	tarta de queso Eierschecke de masa de levadura con crema de huevo
 bls:D4A6100	Braided yeast bread with sultanas	trenza de levadura con pasas sultanas
@@ -633,7 +633,7 @@ bls:D540100	Viennese apple strudel (strudel dough)	strudel de manzana vienés de
 bls:D540200	Apple strudel (strudel dough)	strudel de manzana de masa de strudel
 bls:D540300	Cherry strudel (strudel dough)	strudel de cereza de masa de strudel
 bls:D540400	Quark strudel (strudel dough)	strudel de quark de masa de strudel
-bls:D610100	Russian bread letter-shaped biscuits (meringue)	galletas de merengue en forma de letras de merengue
+bls:D610100	Russian bread letter-shaped biscuits (meringue)	galletas de merengue en forma de letras
 bls:D610200	Meringue	suspiros
 bls:D610300	Chocolate meringue	merengue de chocolate
 bls:D610500	Cinnamon stars (meringue)	estrellas de canela de merengue
@@ -663,9 +663,9 @@ bls:D630500	Shortbread biscuits, with chocolate icing	galletas de mantequilla co
 bls:D630600	Shortcake biscuits sandwiched with cocoa-cream filling	galletas de mantequilla dobles con crema de cacao
 bls:D630700	Wafer biscuits with nougat filling	galletas de barquillo con relleno de turrón
 bls:D630800	Waffle biscuits with chocolate nut filling and chocolate icing	galletas de barquillo con relleno de chocolate y avellana y cobertura de chocolate
-bls:D650100	Domino dices (petit fours)	petit fours de dominó petit fours
+bls:D650100	Domino dices (petit fours)	petit fours de dominó
 bls:D650200	White gingerbread	pan de jengibre blanco
-bls:D650400	Elisen gingerbread (with at least 25 % almonds and hazelnuts)	lebkuchen Elisen Elisen
+bls:D650400	Elisen gingerbread (with at least 25 % almonds and hazelnuts)	lebkuchen Elisen
 bls:D650500	Gingerbread on baking wafers	lebkuchen sobre obleas
 bls:D650600	Chocolate gingerbread	lebkuchen de chocolate
 bls:D651300	"Printen" brown gingerbread biscuits	galletas Printen
@@ -693,7 +693,7 @@ bls:D660700	Hazelnut macaroons	macarrones de avellana
 bls:D660800	Chocolate macaroons	macarrones de chocolate
 bls:D661100	Marzipan moons	lunas de mazapán
 bls:D6A1000	Basler Leckerli (hard spice biscuit)	Basler Leckerli
-bls:D6A2000	Spit cake tips	puntas de tarta al espetón
+bls:D6A2000	Spit cake tips	puntas de baumkuchen
 bls:D6A3000	Brown gingerbread without icing	pan de jengibre moreno sin glaseado
 bls:D6A4000	Florentine biscuits (almond mass)	florentinos de masa de almendra
 bls:D6A5000	Gingerbread cake with chocolate icing	bizcocho de jengibre con cobertura de chocolate
@@ -758,7 +758,7 @@ bls:D750200	Danish swirl (yeast dough) with crumbles	caracola danesa de masa de 
 bls:D750300	Bavarian doughnuts (yeast dough) deep-fried	donuts bávaros de masa de levadura fritos
 bls:D750600	"Heidesand" biscuits (shortcrust pastry)	galletas Heidesand de masa quebrada
 bls:D750700	Marzipan sticks (cake batter)	barritas de mazapán de masa batida
-bls:D751100	"Hobelspäne" pastry (cake batter) deep-fried	Hobelspäne fritos de masa batida fritos
+bls:D751100	"Hobelspäne" pastry (cake batter) deep-fried	Hobelspäne de masa batida fritos
 bls:D752100	Danish swirl (yeast dough) with raisins and almonds	caracola danesa de masa de levadura con pasas y almendras
 bls:D753100	Nut spritz biscuits (cake batter)	galletas spritz de frutos secos de masa batida
 bls:D753200	Coconut square (cake batter)	porción de coco de masa batida
@@ -769,13 +769,13 @@ bls:D755200	Almond ring cake (cake batter)	rosco de almendra de masa batida
 bls:D755300	Almond crescent roll (cake batter)	medialuna de almendra de masa batida
 bls:D770100	Danish swirl (puff pastry) with poppy seeds	caracola danesa de hojaldre con semillas de amapola
 bls:D770200	Cheese pastry salted (shortcrust pastry with quark)	pastelito de queso de masa quebrada con quark salado
-bls:D770300	Pig ear pastry (puff pastry)	orejas de hojaldre
-bls:D770400	Fine pastry (puff pastry) with chocolate icing	hojaldre fino de hojaldre con cobertura de chocolate
-bls:D770800	Coffee pastry (puff pastry with quark)	hojaldre de café de hojaldre con quark
+bls:D770300	Pig ear pastry (puff pastry)	palmeras de hojaldre
+bls:D770400	Fine pastry (puff pastry) with chocolate icing	hojaldre fino
+bls:D770800	Coffee pastry (puff pastry with quark)	hojaldre con mermelada
 bls:D771100	Strawberry-cream square (puff pastry)	porción de crema de fresa de hojaldre
-bls:D771200	Apricot pastry (puff pastry)	hojaldre de albaricoque de hojaldre
-bls:D771300	Raspberry cream in vol-au-vent (puff pastry)	volován con crema de frambuesa de hojaldre
-bls:D771400	Oblong mocha-cream filled pastry (puff pastry)	hojaldre alargado relleno de crema de moka de hojaldre
+bls:D771200	Apricot pastry (puff pastry)	volován con crema de frambuesa
+bls:D771300	Raspberry cream in vol-au-vent (puff pastry)	volován con mermelada
+bls:D771400	Oblong mocha-cream filled pastry (puff pastry)	volován con nata
 bls:D771500	Crescent roll (puff pastry)	medialuna de hojaldre
 bls:D771600	Danish pastry croissant	croissant danés
 bls:D771700	Danish pastry croissant, filled with nut nougat cream	croissant danés con crema de cacao y avellanas
@@ -800,7 +800,7 @@ bls:D7A3100	Muffins vegan (cake batter)	magdalenas de masa batida veganas
 bls:D7A4000	Salty cheese puff (choux pastry) filled with cream cheese	profiterol salado de queso de masa choux con queso crema
 bls:D7A5000	Turnover (yeast dough) filled with apples	empanadilla de masa de levadura con manzana
 bls:D7A5100	Danish swirl (yeast dough) with nuts	caracola danesa de masa de levadura con frutos secos
-bls:D7A5200	Danish swirl (yeast dough) with pudding	caracola danesa de masa de levadura con pudin
+bls:D7A5200	Danish swirl (yeast dough) with pudding	caracola danesa de masa de levadura con natillas
 bls:D7A5300	Danish swirl (yeast dough) with cinnamon	caracola danesa de masa de levadura con canela
 bls:D7A5400	Milk roll (yeast dough)	panecillo de leche de masa de levadura
 bls:D7A5500	Roll with raisins (yeast dough)	panecillo de masa de levadura con pasas
@@ -810,17 +810,17 @@ bls:D7A6100	"Berliner" doughnut (yeast dough) deep-fried, filled with egg liqueu
 bls:D7A6200	"Berliner" doughnut (yeast dough) deep-fried, filled with jam	berlina de masa de levadura frita con mermelada
 bls:D7A6300	"Berliner" doughnut (yeast dough) deep-fried, filled with nut nougat cream	berlina de masa de levadura frita con crema de cacao y avellanas
 bls:D7A6400	"Berliner" doughnut (yeast dough) deep-fried, filled with plum jam	berlina de masa de levadura frita con mermelada de ciruela
-bls:D7A6500	"Berliner" doughnut (yeast dough) deep-fried, filled with pudding	berlina de masa de levadura frita con pudin
+bls:D7A6500	"Berliner" doughnut (yeast dough) deep-fried, filled with pudding	berlina de masa de levadura frita con natillas
 bls:D7A6600	Quark balls (yeast dough) deep-fried	buñuelos de quark de masa de levadura fritos
 bls:D7A6700	Langos (yeast dough) deep-fried, unfilled	langos de masa de levadura fritos sin relleno
 bls:D7A7000	Danish pastry raw	bollo danés crudo
 bls:D7A7100	Danish pastry baked	bollo danés al horno
 bls:D7A7200	"Franzbrötchen" Danish pastry, filled with cinnamon-sugar	bollo danés Franzbrötchen con canela y azúcar
 bls:D7A7300	Danish pastry with poppy seeds	bollo danés con semillas de amapola
-bls:D7A7400	Danish pastry with pudding	bollo danés con pudin
-bls:D7A7410	Danish pastry with pudding and fruit	bollo danés con pudin y fruta
-bls:D7A7420	Danish pastry with pudding, fruit and gelatin glaze	bollo danés con pudin con fruta y cobertura de gelatina
-bls:D7A7430	Danish pastry with pudding, fruit, gelatin glaze and whipped cream	bollo danés con pudin con fruta con gelatina y nata montada
+bls:D7A7400	Danish pastry with pudding	bollo danés con natillas
+bls:D7A7410	Danish pastry with pudding and fruit	bollo danés con natillas y fruta
+bls:D7A7420	Danish pastry with pudding, fruit and gelatin glaze	bollo danés con natillas, fruta y cobertura de gelatina
+bls:D7A7430	Danish pastry with pudding, fruit, gelatin glaze and whipped cream	bollo danés con natillas, fruta, gelatina y nata montada
 bls:D7A7500	Danish pastry with quark	bollo danés con quark
 bls:D7A7510	Danish pastry with quark and fruit	bollo danés con quark y fruta
 bls:D7A7600	Danish pastry with chocolate	bollo danés con chocolate
@@ -832,8 +832,8 @@ bls:D7B1100	Butter biscuits containing cocoa (shortcrust pastry)	galletas de man
 bls:D7B2000	Shortbread biscuits with nougat filling	galletas de mantequilla con relleno de turrón
 bls:D7B2100	Shortbread biscuits with nougat filling and chocolate icing	galletas de mantequilla con relleno de turrón y cobertura de chocolate
 bls:D7B3000	Shortbread biscuits, containing cocoa	galletas de mantequilla con cacao
-bls:D7B3100	Shortbread biscuits, containing cocoa, with nougat filling	galletas de mantequilla con cacao con relleno de turrón
-bls:D7B3200	Shortbread biscuits, containing cocoa, with nougat filling and chocolate icing	galletas de mantequilla con cacao con relleno de turrón y cobertura de chocolate
+bls:D7B3100	Shortbread biscuits, containing cocoa, with nougat filling	galletas de mantequilla con cacao y relleno de turrón
+bls:D7B3200	Shortbread biscuits, containing cocoa, with nougat filling and chocolate icing	galletas de mantequilla con cacao, relleno de turrón y cobertura de chocolate
 bls:D7B4000	"Friesenkekse" biscuits (shortrcrust pastry)	galletas Friesenkekse de masa quebrada
 bls:D7B5000	Biscuits, containig cocoa (cake batter)	galletas de masa batida con cacao
 bls:D7B5100	Biscuits, containig cocoa (cake batter) with chocolate icing	galletas de masa batida con cacao y cobertura de chocolate
@@ -865,9 +865,9 @@ bls:D9A4000	Wholemeal Danish pastry dough, raw	masa integral de bollería cruda
 bls:D9A4100	Wholemeal Danish pastry dough, baked	masa integral de bollería al horno
 bls:D9A4200	Wholemeal Danish pastry with marzipan	bollo danés integral con mazapán
 bls:D9A4300	Wholemeal Danish pastry with poppy seed	bollo danés integral con semillas de amapola
-bls:D9A4400	Wholemeal Danish pastry with pudding	bollo danés integral con pudin
-bls:D9A4500	Wholemeal Danish pastry with pudding and fruit	bollo danés integral con pudin y fruta
-bls:D9A4600	Wholemeal Danish pastry with pudding, fruit and gelatin glaze	bollo danés integral con pudin con fruta y cobertura de gelatina
+bls:D9A4400	Wholemeal Danish pastry with pudding	bollo danés integral con natillas
+bls:D9A4500	Wholemeal Danish pastry with pudding and fruit	bollo danés integral con natillas y fruta
+bls:D9A4600	Wholemeal Danish pastry with pudding, fruit and gelatin glaze	bollo danés integral con natillas, fruta y cobertura de gelatina
 bls:D9A4700	Wholemeal Danish pastry with quark	bollo danés integral con quark
 bls:D9A4800	Wholemeal Danish pastry with quark and fruit	bollo danés integral con quark y fruta
 bls:D9A4900	Wholemeal Danish pastry croissant	croissant danés integral
@@ -876,7 +876,7 @@ bls:D9A5100	Wholemeal marble cake (cake batter)	bizcocho marmolado integral de m
 bls:D9A5200	Wholemeal sand cake	bizcocho cuatro cuartos integral
 bls:D9A5300	Wholemeal chocolate almond cake (cake batter)	bizcocho integral de chocolate y almendra de masa batida
 bls:D9B1000	Wholemeal shortbread biscuits, containing cocoa	galletas integrales de mantequilla con cacao
-bls:D9B1100	Wholemeal shortbread biscuits, containing cocoa, with nougat filling	galletas integrales de mantequilla con cacao con relleno de turrón
+bls:D9B1100	Wholemeal shortbread biscuits, containing cocoa, with nougat filling	galletas integrales de mantequilla con cacao y relleno de turrón
 bls:D9B1200	Wholemeal biscuits (shortcrust pastry) with nougat filling	galletas integrales de masa quebrada con relleno de turrón
 bls:D9B1300	Wholemeal biscuits (shortcrust pastry) with nougat filling and chocolate icing	galletas integrales de masa quebrada con relleno de turrón y cobertura de chocolate
 bls:D9B1400	Wholemeal muesli biscuits (shortcrust pastry) with chocolate icing	galletas integrales de muesli de masa quebrada con cobertura de chocolate
@@ -888,7 +888,7 @@ bls:E107122	Chicken egg poached	huevo escalfado
 bls:E108122	Chicken egg white, poached	clara de huevo escalfada
 bls:E111100	Chicken egg raw	huevo crudo
 bls:E111132	Chicken egg boiled	huevo cocido
-bls:E111162	Chicken egg baked	huevo horneado
+bls:E111162	Chicken egg baked	huevo en el horno
 bls:E111182	Chicken egg fried without fat (pan)	huevo a la plancha
 bls:E111500	Chicken egg powder	huevo en polvo
 bls:E112100	Chicken egg yolk, raw	yema de huevo cruda
@@ -897,14 +897,14 @@ bls:E112162	Chicken egg yolk, baked	yema de huevo al horno
 bls:E112182	Chicken egg yolk, fried without fat (pan)	yema de huevo a la plancha
 bls:E112400	Chicken egg yolk, dried	yema de huevo seca
 bls:E112500	Chicken egg yolk, powder	yema de huevo en polvo
-bls:E113100	Chicken egg white, raw	clara de huevo sin cocinar
+bls:E113100	Chicken egg white, raw	clara de huevo en crudo
 bls:E113132	Chicken egg white, boiled	clara de huevo cocida
 bls:E113162	Chicken egg white, baked	clara de huevo al horno
 bls:E113182	Chicken egg white, fried without fat (pan)	clara de huevo a la plancha
 bls:E113400	Chicken egg white, dried	clara de huevo seca
-bls:E113500	Chicken egg white, powder	polvo de clara de huevo
+bls:E113500	Chicken egg white, powder	clara de huevo deshidratada en polvo
 bls:E131100	Duck egg raw	huevo de pato crudo
-bls:E131132	Duck egg boiled	huevo de pato hervido
+bls:E131132	Duck egg boiled	huevo de pato cocido en agua
 bls:E141100	Goose egg raw	huevo de ganso crudo
 bls:E141132	Goose egg boiled	huevo de ganso cocido
 bls:E151100	Turkey egg raw	huevo de pavo crudo
@@ -941,11 +941,11 @@ bls:E603062	Fresh egg pasta Ravioli (meat filling) boiled, baked	raviolis fresco
 bls:E603082	Fresh egg pasta Ravioli (meat filling) boiled, fried without fat (pan)	raviolis frescos de carne cocidos a la plancha
 bls:E604300	Egg pasta with wheat germ, raw	pasta al huevo con germen de trigo cruda
 bls:E604332	Egg pasta with wheat germ, boiled	pasta al huevo con germen de trigo cocida
-bls:E605000	Potato noodles (Schupfnudeln) raw	Schupfnudeln Schupfnudeln crudos
-bls:E605032	Potato noodles (Schupfnudeln) boiled	Schupfnudeln Schupfnudeln cocidos
-bls:E605062	Potato noodles (Schupfnudeln) boiled, baked	Schupfnudeln Schupfnudeln cocidos al horno
-bls:E605082	Potato noodles (Schupfnudeln) boiled, fried without fat (pan)	Schupfnudeln Schupfnudeln cocidos a la plancha
-bls:E605200	Finger-shaped pasta Swabian style, raw	pasta en dedos a la suaba cruda
+bls:E605000	Potato noodles (Schupfnudeln) raw	Schupfnudeln crudos
+bls:E605032	Potato noodles (Schupfnudeln) boiled	Schupfnudeln cocidos
+bls:E605062	Potato noodles (Schupfnudeln) boiled, baked	Schupfnudeln cocidos al horno
+bls:E605082	Potato noodles (Schupfnudeln) boiled, fried without fat (pan)	Schupfnudeln cocidos a la plancha
+bls:E605200	Finger-shaped pasta Swabian style, raw	Schupfnudeln suabos
 bls:E605232	Finger-shaped pasta Swabian style, boiled	pasta en dedos a la suaba cocida
 bls:E605300	Finger-shaped pasta egg-free, raw	pasta en dedos sin huevo cruda
 bls:E605332	Finger-shaped pasta egg-free, boiled	pasta en dedos sin huevo cocida
@@ -993,7 +993,7 @@ bls:F016600	Multi-fruit juice fortified with vitamins and minerals	zumo multifru
 bls:F020600	Red multi-fruit juice	zumo multifruta rojo
 bls:F021600	Red multi-fruit juice fortified with vitamins (red multivitamin juice)	zumo multifruta rojo con vitaminas
 bls:F022700	Mixed fruit nectar, fortified with vitamins (multivitamin nectar)	néctar multifruta con vitaminas
-bls:F023700	Mixed fruit nectar with artificial sweeteners, fortified with vitamins (multivitamin nectar)	néctar multifruta con edulcorante con vitaminas
+bls:F023700	Mixed fruit nectar with artificial sweeteners, fortified with vitamins (multivitamin nectar)	néctar multifruta con edulcorante y vitaminas
 bls:F032600	Smoothie of purple fruits	batido de frutas moradas
 bls:F033600	Smoothie of yellow fruits	batido de frutas amarillas
 bls:F034600	Smoothie of green fruits and vegetables	batido verde de frutas y verduras
@@ -1010,7 +1010,7 @@ bls:F092100	Berry mix with sour cherries, unsweetened, raw	mezcla de bayas con g
 bls:F092152	Berry mix with sour cherries, unsweetened, stewed	mezcla de bayas con guindas sin azúcar estofada
 bls:F092902	Fruit mix/fruit cocktail, with artificial sweeteners, canned, drained	macedonia con edulcorante en conserva, escurrida
 bls:F093902	Fruit mix/fruit cocktail, unsweetened, canned, drained	macedonia sin azúcar en conserva, escurrida
-bls:F110100	Apple raw	manzana cruda
+bls:F110100	Apple raw	manzana al natural
 bls:F110152	Apple stewed	manzana estofada
 bls:F110400	Apple dried	manzana seca
 bls:F110600	Apple juice	zumo de manzana
@@ -1033,7 +1033,7 @@ bls:F140100	Quince raw	membrillo fresco
 bls:F140132	Quince boiled	membrillo cocido
 bls:F140152	Quince stewed	membrillo estofado
 bls:F140600	Quince juice	zumo de membrillo
-bls:F150100	Medlar raw	níspero crudo
+bls:F150100	Medlar raw	níspero fresco
 bls:F201100	Apricot raw	albaricoque fresco
 bls:F201152	Apricot stewed	albaricoque estofado
 bls:F201400	Apricot dried	albaricoque seco
@@ -1069,10 +1069,10 @@ bls:F220600	Plum juice	zumo de ciruela
 bls:F220902	Plum sugared, canned, drained	ciruela azucarada en conserva, escurrida
 bls:F223100	Blue plum raw	ciruela damascena fresca
 bls:F223152	Blue plum stewed	ciruela damascena estofada
-bls:F224100	Mirabelle plum raw	ciruela mirabel cruda
+bls:F224100	Mirabelle plum raw	ciruela mirabel fresca
 bls:F224152	Mirabelle plum stewed	ciruela mirabel estofada
 bls:F224902	Mirabelle plum sugared, canned, drained	ciruela mirabel azucarada en conserva, escurrida
-bls:F225100	Greengage raw	ciruela claudia cruda
+bls:F225100	Greengage raw	ciruela claudia fresca
 bls:F225152	Greengage stewed	ciruela claudia estofada
 bls:F227902	Plum with artificial sweeteners, canned, drained	ciruela con edulcorante en conserva, escurrida
 bls:F22A902	Plum unsweetened, canned, drained	ciruela sin azúcar en conserva, escurrida
@@ -1086,7 +1086,7 @@ bls:F2C1902	Apricot unsweetened, canned, drained	albaricoque sin azúcar en cons
 bls:F301100	Strawberry raw	fresa fresca
 bls:F301152	Strawberry stewed	fresa estofada
 bls:F301400	Strawberry dried	fresa seca
-bls:F301600	Strawberry juice	zumo de fresa natural
+bls:F301600	Strawberry juice	zumo de fresa exprimido
 bls:F301902	Strawberry sugared, canned, drained	fresa azucarada en conserva, escurrida
 bls:F302100	Raspberry raw	frambuesa fresca
 bls:F302152	Raspberry stewed	frambuesa estofada
@@ -1100,9 +1100,9 @@ bls:F303600	Blackberry juice	zumo de mora
 bls:F303902	Blackberry sugared, canned, drained	mora azucarada en conserva, escurrida
 bls:F304100	Blueberry raw	arándano azul fresco
 bls:F304152	Blueberry stewed	arándano azul estofado
-bls:F304600	Blueberry juice	zumo de arándano
+bls:F304600	Blueberry juice	zumo de arándanos exprimido
 bls:F304902	Blueberry sugared, canned, drained	arándano azul azucarado en conserva, escurrido
-bls:F305100	Gooseberry raw	grosella espinosa cruda
+bls:F305100	Gooseberry raw	grosella espinosa fresca
 bls:F305152	Gooseberry stewed	grosella espinosa estofada
 bls:F305902	Gooseberry sugared, canned, drained	grosella espinosa azucarada en conserva, escurrida
 bls:F306100	Loganberry raw	frambuesa de Logan fresca
@@ -1155,17 +1155,17 @@ bls:F409100	Wild strawberry raw	fresa silvestre fresca
 bls:F411100	Wild raspberry raw	frambuesa silvestre fresca
 bls:F413100	Wild blackberry raw	mora silvestre fresca
 bls:F414400	Cranberries dried, sugared	arándanos rojos secos azucarados
-bls:F4A1900	Lingonberry sugared (with pectine) canned	arándano rojo con pectina azucarado en conserva
-bls:F4B1900	Lingonberry with sugar and artificial sweeteners (with pectine) canned	arándano rojo con pectina con azúcar y edulcorante en conserva
+bls:F4A1900	Lingonberry sugared (with pectine) canned	arándano rojo azucarado con pectina en conserva
+bls:F4B1900	Lingonberry with sugar and artificial sweeteners (with pectine) canned	arándano rojo con pectina, azúcar y edulcorante en conserva
 bls:F501100	Pineapple raw	piña fresca
 bls:F501152	Pineapple stewed	piña estofada
 bls:F501400	Pineapple dried	piña seca
-bls:F501600	Pineapple juice	zumo de piña natural
+bls:F501600	Pineapple juice	zumo de piña exprimido
 bls:F501902	Pineapple sugared, canned, drained	piña azucarada en conserva, escurrida
 bls:F502100	Avocado raw	aguacate fresco
 bls:F503100	Banana raw	plátano fresco
 bls:F503400	Banana dried	plátano seco
-bls:F503700	Banana nectar	néctar de plátano natural
+bls:F503700	Banana nectar	néctar de banana
 bls:F504100	Date raw	dátil fresco
 bls:F504400	Date dried	dátiles secos
 bls:F505100	Fig raw	higo fresco
@@ -1176,10 +1176,10 @@ bls:F507100	Persimmon raw	caqui fresco
 bls:F507600	Persimmon juice	zumo de caqui
 bls:F508100	Passion fruit raw	maracuyá fresco
 bls:F508600	Passion fruit juice	zumo de maracuyá
-bls:F508700	Passion fruit nectar	néctar de maracuyá natural
+bls:F508700	Passion fruit nectar	néctar de fruta de la pasión
 bls:F511100	Acerola raw	acerola fresca
 bls:F511600	Acerola juice	zumo de acerola
-bls:F513100	Guava raw	guayaba cruda
+bls:F513100	Guava raw	guayaba al natural
 bls:F514100	Kiwi fruit raw	kiwi fresco
 bls:F514152	Kiwi stewed	kiwi estofado
 bls:F514600	Kiwi fruit juice	zumo de kiwi
@@ -1199,10 +1199,10 @@ bls:F523100	Breadfruit raw	fruta del pan fresca
 bls:F524100	Cherimoya raw	chirimoya fresca
 bls:F529100	Japanese medlar/loquat, raw	níspero japonés fresco
 bls:F532100	Musk melon/cantaloup, raw	cantalupo fresco
-bls:F533100	Honeydew melon raw	melón verde crudo
+bls:F533100	Honeydew melon raw	melón verde al natural
 bls:F533600	Honeydew melon juice	zumo de melón
 bls:F535100	Watermelon raw	sandía fresca
-bls:F545100	Plantain raw	plátano macho crudo
+bls:F545100	Plantain raw	plátano macho fresco
 bls:F545132	Plantain boiled	plátano macho cocido
 bls:F545142	Plantain braised without fat	plátano macho estofado sin grasa
 bls:F545152	Plantain stewed	plátano macho estofado
@@ -1224,19 +1224,19 @@ bls:F597902	Pineapple with artificial sweeteners, canned, drained	piña con edul
 bls:F5A1902	Pineapple in juice, canned, drained	piña en su jugo en conserva, escurrida
 bls:F601100	Lemon raw	limón fresco
 bls:F601300	Lemon concentrate	concentrado de limón
-bls:F601600	Lemon juice	zumo natural de limón
+bls:F601600	Lemon juice	zumo de limón exprimido
 bls:F602100	Lime raw	lima fresca
 bls:F602300	Lime concentrate	concentrado de lima
 bls:F602600	Lime juice	zumo de lima
 bls:F603100	Orange raw	naranja fresca
-bls:F603600	Orange juice	zumo de naranja natural
+bls:F603600	Orange juice	zumo de naranja exprimido
 bls:F603700	Orange nectar	néctar de naranja
-bls:F604100	Grapefruit raw	pomelo fresco rosa
+bls:F604100	Grapefruit raw	pomelo fresco
 bls:F604600	Grapefruit juice	zumo de pomelo
 bls:F605100	Pomelo raw	pomelo chino fresco
 bls:F605600	Pomelo juice	zumo de pomelo chino
 bls:F606100	Mandarin raw	mandarina fresca
-bls:F606600	Mandarin juice	zumo natural de mandarina
+bls:F606600	Mandarin juice	zumo de mandarina exprimido
 bls:F606902	Mandarin sugared, canned, drained	mandarina azucarada en conserva, escurrida
 bls:F607100	Clementine raw	clementina fresca
 bls:F607600	Clementine juice	zumo de clementina
@@ -1250,8 +1250,8 @@ bls:F640902	Mandarin unsweetened, canned, drained	mandarina sin azúcar en conse
 bls:F6A6902	Mandarin in juice, canned, drained	mandarina en su jugo en conserva, escurrida
 bls:F6B6902	Mandarin with artificial sweeteners, canned, drained	mandarinas en conserva con edulcorante
 bls:F820000	Fruit bar	barrita de fruta
-bls:F840100	Raisin/sultana (grape dried)	pasas uva seca
-bls:F840300	Currant (grape dried)	pasas de Corinto uva seca
+bls:F840100	Raisin/sultana (grape dried)	pasas
+bls:F840300	Currant (grape dried)	pasas de Corinto
 bls:F850100	Banana crips/banana chips, deep-fried, sweetened	chips de plátano fritos azucarados
 bls:F900900	Red fruit jelly sugared, canned	gelatina de frutos rojos azucarada en conserva
 bls:F921900	Apple sauce/apple compote, sugared, canned	compota de manzana azucarada en conserva
@@ -1292,12 +1292,12 @@ bls:G102100	Endive/escarole, raw	escarola cruda
 bls:G103100	Iceberg lettuce raw	lechuga iceberg cruda
 bls:G104100	Lamb's lettuce raw	canónigo fresco
 bls:G105100	Butterhead lettuce raw	lechuga mantecosa cruda
-bls:G106100	Radicchio/red Italian chicory, raw	radicchio fresco
-bls:G107100	Cos lettuce/Romaine lettuce, raw	lechuga romana fresca
+bls:G106100	Radicchio/red Italian chicory, raw	radicchio en crudo
+bls:G107100	Cos lettuce/Romaine lettuce, raw	lechuga romana en crudo
 bls:G108100	Looseleaf lettuce raw	lechuga de hoja cruda
 bls:G109100	Sugar loaf chicory raw	achicoria sugar loaf cruda
 bls:G130100	Rocket raw	rúcula cruda
-bls:G210132	Spinach boiled	espinacas cocidas
+bls:G210132	Spinach boiled	espinacas cocidas en agua
 bls:G210232	Spinach deep-frozen, boiled	espinacas congeladas cocidas
 bls:G210252	Spinach deep-frozen, stewed	espinacas congeladas estofadas
 bls:G210262	Spinach deep-frozen, baked	espinacas congeladas al horno
@@ -1316,14 +1316,14 @@ bls:G213100	New Zealand spinach raw	espinaca de Nueva Zelanda cruda
 bls:G213132	New Zealand spinach boiled	espinaca de Nueva Zelanda cocida
 bls:G213152	New Zealand spinach stewed	espinaca de Nueva Zelanda estofada
 bls:G213182	New Zealand spinach fried without fat (pan)	espinaca de Nueva Zelanda a la plancha
-bls:G220100	Stalk celery raw	apio fresco
-bls:G220132	Stalk celery boiled	apio cocido
+bls:G220100	Stalk celery raw	apio en crudo
+bls:G220132	Stalk celery boiled	apio cocido en agua
 bls:G220142	Stalk celery braised without fat	apio estofado sin grasa
 bls:G220152	Stalk celery stewed	apio estofado
 bls:G220162	Stalk celery baked	apio al horno
 bls:G221182	Stalk celery fried without fat (pan)	apio a la plancha
-bls:G230100	Chard/leaf beet, raw	acelga cruda
-bls:G230132	Chard/leaf beet, boiled	acelga cocida
+bls:G230100	Chard/leaf beet, raw	acelga en crudo
+bls:G230132	Chard/leaf beet, boiled	acelga cocida en agua
 bls:G230142	Chard/leaf beet, braised without fat	acelga estofada sin grasa
 bls:G230152	Chard/leaf beet, stewed	acelga estofada
 bls:G230162	Chard/leaf beet, baked	acelga al horno
@@ -1335,12 +1335,12 @@ bls:G261100	Stinging nettle raw	ortiga cruda
 bls:G261132	Stinging nettle boiled	ortiga cocida
 bls:G261152	Stinging nettle stewed	ortiga estofada
 bls:G262100	Dandelion raw	diente de león crudo
-bls:G263100	Sorrel raw	acedera fresca
+bls:G263100	Sorrel raw	acedera en crudo
 bls:G263132	Sorrel boiled	acedera cocida
 bls:G263152	Sorrel stewed	acedera estofada
 bls:G280100	Garden cress raw	berro de jardín crudo
-bls:G311100	Cauliflower raw	coliflor fresca
-bls:G311132	Cauliflower boiled	coliflor hervida
+bls:G311100	Cauliflower raw	coliflor en crudo
+bls:G311132	Cauliflower boiled	coliflor cocida en agua
 bls:G311142	Cauliflower steamed	coliflor al vapor
 bls:G311152	Cauliflower stewed	coliflor estofada
 bls:G311162	Cauliflower baked	coliflor al horno
@@ -1353,7 +1353,7 @@ bls:G311262	Cauliflower deep-frozen, baked	coliflor congelada al horno
 bls:G311282	Cauliflower deep-frozen, fried without fat (pan)	coliflor congelada a la plancha
 bls:G311802	Cauliflower pickled, drained	coliflor en vinagre escurrida
 bls:G312100	Broccoli raw	brócoli crudo
-bls:G312132	Broccoli boiled	brócoli cocido
+bls:G312132	Broccoli boiled	brócoli cocido en agua
 bls:G312152	Broccoli stewed	brócoli estofado
 bls:G312162	Broccoli baked	brócoli al horno
 bls:G312182	Broccoli fried without fat (pan)	brócoli a la plancha
@@ -1362,13 +1362,13 @@ bls:G312232	Broccoli deep-frozen, boiled	brócoli congelado cocido
 bls:G312252	Broccoli deep-frozen, stewed	brócoli congelado estofado
 bls:G312262	Broccoli deep-frozen, baked	brócoli congelado al horno
 bls:G312282	Broccoli deep-frozen, fried without fat (pan)	brócoli congelado a la plancha
-bls:G321100	Chinese white cabbage raw	col china fresca
+bls:G321100	Chinese white cabbage raw	col china en crudo
 bls:G321132	Chinese white cabbage boiled	col china hervida
 bls:G321152	Chinese white cabbage stewed	col china estofada
 bls:G321162	Chinese white cabbage baked	col china al horno
 bls:G321182	Chinese white cabbage fried without fat (pan)	col china a la plancha
-bls:G322100	Curly kale raw	col rizada cruda
-bls:G322132	Curly kale boiled	col rizada cocida
+bls:G322100	Curly kale raw	col rizada en crudo
+bls:G322132	Curly kale boiled	col rizada cocida en agua
 bls:G322142	Curly kale steamed	col rizada al vapor
 bls:G322152	Curly kale stewed	col rizada estofada
 bls:G322182	Curly kale fried without fat (pan)	col rizada a la plancha
@@ -1378,18 +1378,18 @@ bls:G322242	Curly kale deep-frozen, steamed	col rizada congelada al vapor
 bls:G322252	Curly kale deep-frozen, stewed	col rizada congelada estofada
 bls:G322282	Curly kale deep-frozen, fried without fat (pan)	col rizada congelada a la plancha
 bls:G322902	Curly kale canned, drained	col rizada en conserva, escurrida
-bls:G324100	Pak choi raw	pak choi fresco
+bls:G324100	Pak choi raw	pak choi en crudo
 bls:G324132	Pak choi boiled	pak choi cocido
 bls:G324152	Pak choi stewed (prepard without fat)	pak choi sin grasa estofado
 bls:G324182	Pak choi fried without fat (pan)	pak choi a la plancha
 bls:G331100	Kohlrabi raw	colirábano crudo
-bls:G331132	Kohlrabi boiled	colirábano cocido
+bls:G331132	Kohlrabi boiled	colirábano cocido en agua
 bls:G331152	Kohlrabi stewed	colirábano estofado
 bls:G331162	Kohlrabi baked	colirábano al horno
 bls:G331182	Kohlrabi fried without fat (pan)	colirábano a la plancha
 bls:G331902	Kohlrabi canned, drained	colirábano en conserva, escurrido
 bls:G332100	Brussels sprouts raw	coles de Bruselas crudas
-bls:G332132	Brussels sprouts boiled	coles de Bruselas cocidas
+bls:G332132	Brussels sprouts boiled	coles de Bruselas cocidas en agua
 bls:G332152	Brussels sprouts stewed	coles de Bruselas estofadas
 bls:G332162	Brussels sprouts baked	coles de Bruselas al horno
 bls:G332182	Brussels sprouts fried without fat (pan)	coles de Bruselas a la plancha
@@ -1398,7 +1398,7 @@ bls:G332232	Brussels sprouts deep-frozen, boiled	coles de Bruselas congeladas co
 bls:G332252	Brussels sprouts deep-frozen, stewed	coles de Bruselas congeladas estofadas
 bls:G332262	Brussels sprouts deep-frozen, baked	coles de Bruselas congeladas al horno
 bls:G332902	Brussels sprouts canned, drained	coles de Bruselas en conserva, escurridas
-bls:G341100	Red cabbage raw	col lombarda fresca
+bls:G341100	Red cabbage raw	col lombarda en crudo
 bls:G341132	Red cabbage boiled	col lombarda cocida
 bls:G341142	Red cabbage braised without fat	col lombarda estofada sin grasa
 bls:G341152	Red cabbage stewed	col lombarda estofada
@@ -1411,8 +1411,8 @@ bls:G342142	White cabbage braised without fat	col blanca estofada sin grasa
 bls:G342152	White cabbage stewed	col blanca estofada
 bls:G342162	White cabbage baked	col blanca al horno
 bls:G342182	White cabbage fried without fat (pan)	col blanca a la plancha
-bls:G343100	Savoy cabbage raw	col de Saboya fresca
-bls:G343132	Savoy cabbage boiled	col de Saboya cocida
+bls:G343100	Savoy cabbage raw	col de Saboya en crudo
+bls:G343132	Savoy cabbage boiled	col de Saboya cocida en agua
 bls:G343142	Savoy cabbage braised without fat	col de Saboya estofada sin grasa
 bls:G343152	Savoy cabbage stewed	col de Saboya estofada
 bls:G343162	Savoy cabbage baked	col de Saboya al horno
@@ -1427,7 +1427,7 @@ bls:G345032	Sauerkraut drained, boiled	chucrut escurrido cocido
 bls:G345042	Sauerkraut drained, braised without fat	chucrut escurrido estofado sin grasa
 bls:G345062	Sauerkraut drained, baked	chucrut escurrido al horno
 bls:G410732	Artichokes in oil, canned, drained boiled	alcachofas en aceite en conserva, escurridas
-bls:G430132	Fennel/Florence fennel, boiled	hinojo cocido
+bls:G430132	Fennel/Florence fennel, boiled	hinojo cocido en agua
 bls:G992200	Mixed vegetables peas and carrots, deep-frozen	guisantes con zanahoria congelados
 bls:G994100	Mixed vegetables Asian style, raw	mezcla de verduras asiáticas cruda
 bls:H210710	Sweet almond roasted with fat, salted	almendras tostadas saladas
@@ -1589,7 +1589,7 @@ cofid:11-1013	Pizza, ham and pineapple, retail	pizza con jamón y piña
 cofid:11-1077	Pie, fruit, wholemeal, with pie filling, homemade	pastel de frutas integral
 cofid:11-1102	Pancakes, savoury, made with skimmed milk, homemade	tortitas saladas de leche desnatada
 cofid:11-1115	Scones, fruit, wholemeal, homemade	scones integrales con fruta
-cofid:11-1124	Pudding, suet, homemade	pudin de sebo
+cofid:11-1124	Pudding, suet, homemade	pudín de sebo
 cofid:11-532	Cake, sponge, with dairy cream and jam, frozen	bizcocho relleno de nata y mermelada, congelado
 cofid:11-781	Muesli, Swiss style, no added sugar or salt, unfortified	muesli sin azúcar
 cofid:11-833	Cake, loaf, retail	bizcocho de molde
@@ -9897,7 +9897,7 @@ fdc:2705676	Light ice cream cone, chocolate, prepackaged	cucurucho de helado lig
 fdc:2705677	Sherbet, all flavors	sorbete
 fdc:2705678	Fudgesicle, light	polo de chocolate ligero
 fdc:2705679	Pudding, chocolate, NFS	natillas de chocolate
-fdc:2705680	Pudding, bread	pudin de pan
+fdc:2705680	Pudding, bread	pudín de pan
 fdc:2705681	Pudding, flavors other than chocolate, NFS	natillas
 fdc:2705682	Custard	crema inglesa
 fdc:2705683	Flan	flan
@@ -11409,7 +11409,7 @@ fdc:2707188	Egg salad, made with Italian dressing	ensalada de huevo con salsa it
 fdc:2707189	Egg salad, made with light Italian dressing	ensalada de huevo con salsa italiana ligera
 fdc:2707190	Egg Salad, made with any type of fat free dressing	ensalada de huevo con salsa sin grasa
 fdc:2707191	Huevos rancheros	huevos rancheros
-fdc:2707192	Egg casserole with bread, cheese, milk and meat	pudin de huevo con pan, queso, leche y carne
+fdc:2707192	Egg casserole with bread, cheese, milk and meat	pudín de huevo con pan, queso, leche y carne
 fdc:2707193	Egg foo yung, NFS	tortilla foo yung
 fdc:2707194	Chicken egg foo yung	tortilla foo yung de pollo
 fdc:2707195	Pork egg foo yung	tortilla foo yung de cerdo

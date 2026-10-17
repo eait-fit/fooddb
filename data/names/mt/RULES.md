@@ -442,3 +442,13 @@ ingredient rows.
   `сок-ассорти с асаи`; es `cooked` → `cocido` always (never `cocinado`);
   powdered-reconstituted drinks → `en polvo` (never `de polvos`); `diet` →
   `light` (`de dieta` only where `light` collides with a sibling row).
+
+### Batch 3a lessons (bls bakery/grain/veg corpus)
+
+- **Paren headwords are glosses, not qualifiers.** When a parenthetical merely names the product type already in the base head (`Polenta (polenta)`, `Schupfnudeln`, `(petit fours)`, `(dunst)`, `(nachos)`, `(choux pastry)` on a заварной/profiterol head, `(puff pastry)` on a hojaldre/слойка head), it is dropped entirely — emitting it a second time produces `полента полента`, `orejas de hojaldre de hojaldre`. Emit the dough/dish paren only when it adds information the head lacks.
+- **Merge `с`/`con` complements into one list.** Chained `с X с Y` / `con X con Y` is unnatural: write `с X, Y и Z` / `con X, Y y Z` (e.g. `с витаминами, кальцием и йодом`).
+- BLS `pudding` as a cake/pastry filling (custard) → es `natillas`; `pudín` only where the record is a pudding itself.
+- `Baumkuchen` → `баумкухен` / `baumkuchen` (layered spit cake; never «на вертеле»/«al espetón»); `Baumkuchenspitzen` → `кончики баумкухена` / `puntas de baumkuchen`.
+- Pig-ear pastry → `печенье «свиное ушко»` / `palmeras`; Dominosteine → `пирожные «домино»` / `petit fours de dominó` (no extra `птифур`).
+- es `pomelo` = grapefruit; the pummelo record takes `pomelo chino`.
+- When the canonical name is kcal-blocked, prefer (in order): word-order variant (`свежее яблоко`), synonym (`хлеб из ржи`, `bebida vegetal`, `flips de cacahuete`), real qualifier (`cocido en agua`, `en crudo`, `exprimido`) — never an invented tag (`простой`, `natural`, `molida`).
