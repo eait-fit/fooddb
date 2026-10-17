@@ -1426,26 +1426,1456 @@ bls:G344182	Pointed cabbage fried without fat (pan)	col puntiaguda a la plancha
 bls:G345032	Sauerkraut drained, boiled	chucrut escurrido cocido
 bls:G345042	Sauerkraut drained, braised without fat	chucrut escurrido estofado sin grasa
 bls:G345062	Sauerkraut drained, baked	chucrut escurrido al horno
+bls:G345082	Sauerkraut drained, fried without fat (pan)	chucrut escurrido a la plancha
+bls:G345100	Sauerkraut drained, raw	chucrut escurrido en crudo
+bls:G345152	Sauerkraut drained, stewed	chucrut escurrido estofado
+bls:G345600	Sauerkraut juice	zumo de chucrut
+bls:G345902	Sauerkraut canned, drained	chucrut en conserva, escurrido
+bls:G346100	Wine sauerkraut raw	chucrut al vino en crudo
+bls:G346132	Wine sauerkraut boiled	chucrut al vino cocido
+bls:G346152	Wine sauerkraut stewed	chucrut al vino estofado
+bls:G350100	Romanesco broccoli raw	romanesco en crudo
+bls:G350132	Romanesco broccoli boiled	romanesco cocido
+bls:G350152	Romanesco broccoli stewed	romanesco estofado
+bls:G350162	Romanesco broccoli baked	romanesco al horno
+bls:G350182	Romanesco broccoli fried without fat (pan)	romanesco a la plancha
+bls:G410100	Artichokes raw	alcachofas en crudo
+bls:G410132	Artichokes boiled	alcachofas cocidas
+bls:G410702	Artichokes in oil, canned, drained	alcachofas en aceite, escurridas
 bls:G410732	Artichokes in oil, canned, drained boiled	alcachofas en aceite en conserva, escurridas
+bls:G410902	Artichokes canned, drained	alcachofas en conserva, escurridas
+bls:G414100	Cardoon raw	cardo en crudo
+bls:G414132	Cardoon boiled	cardo cocido
+bls:G420100	Turnip tops/greens, raw	grelos en crudo
+bls:G420132	Turnip tops/greens, boiled	grelos cocidos
+bls:G420152	Turnip tops/greens, stewed	grelos estofados
+bls:G420182	Turnip tops/greens, fried without fat (pan)	grelos a la plancha
+bls:G430100	Fennel/Florence fennel, raw	hinojo en crudo
 bls:G430132	Fennel/Florence fennel, boiled	hinojo cocido en agua
+bls:G430152	Fennel/Florence fennel, stewed	hinojo estofado
+bls:G430162	Fennel/Florence fennel, baked	hinojo al horno
+bls:G430182	Fennel/Florence fennel, fried without fat (pan)	hinojo a la plancha
+bls:G431100	Roman fennel/sweet fennel, raw	hinojo de hoja en crudo
+bls:G440100	Palm heart, raw	palmito en crudo
+bls:G440132	Palm heart, boiled	palmito cocido
+bls:G440902	Palm heart, canned, drained	palmito en conserva, escurrido
+bls:G450100	Asparagus raw	espárragos en crudo
+bls:G450132	Asparagus boiled	espárragos blancos cocidos
+bls:G450142	Asparagus steamed	espárragos al vapor
+bls:G450152	Asparagus stewed	espárragos estofados
+bls:G450162	Asparagus baked	espárragos al horno
+bls:G450200	Asparagus deep-frozen	espárragos congelados
+bls:G450232	Asparagus deep-frozen, boiled	espárragos congelados cocidos
+bls:G450242	Asparagus deep-frozen, steamed	espárragos congelados al vapor
+bls:G450252	Asparagus deep-frozen, stewed	espárragos congelados estofados
+bls:G450262	Asparagus deep-frozen, baked	espárragos congelados al horno
+bls:G450282	Asparagus deep-frozen, fried without fat (pan)	espárragos congelados a la plancha
+bls:G450902	Asparagus canned, drained	espárragos en conserva, escurridos
+bls:G451082	Asparagus fried without fat (pan)	espárragos a la plancha
+bls:G460100	Purslane raw	verdolaga en crudo
+bls:G460152	Purslane stewed	verdolaga estofada
+bls:G470042	Leek braised without fat	puerro estofado sin grasa
+bls:G470100	Leek raw	puerro en crudo
+bls:G470132	Leek boiled	puerro cocido
+bls:G470152	Leek stewed	puerro estofado
+bls:G470162	Leek baked	puerro al horno
+bls:G470182	Leek fried without fat (pan)	puerro a la plancha
+bls:G470200	Leek deep-frozen	puerro congelado
+bls:G470232	Leek deep-frozen, boiled	puerro congelado cocido
+bls:G470242	Leek deep-frozen, braised without fat	puerro congelado estofado sin grasa
+bls:G470252	Leek deep-frozen, stewed	puerro congelado estofado
+bls:G470262	Leek deep-frozen, baked	puerro congelado al horno
+bls:G470282	Leek deep-frozen, fried without fat (pan)	puerro congelado a la plancha
+bls:G480072	Onion grilled	cebolla a la parrilla
+bls:G480100	Onion raw	cebolla en crudo
+bls:G480132	Onion boiled	cebolla cocida
+bls:G480142	Onion braised without fat	cebolla estofada sin grasa
+bls:G480152	Onion stewed	cebolla estofada
+bls:G480162	Onion baked	cebolla al horno
+bls:G480182	Onion fried without fat (pan)	cebolla a la plancha
+bls:G480200	Onion deep-frozen	cebolla congelada
+bls:G480232	Onion deep-frozen, boiled	cebolla congelada cocida
+bls:G480242	Onion deep-frozen, braised without fat	cebolla congelada estofada sin grasa
+bls:G480252	Onion deep-frozen, stewed	cebolla congelada estofada
+bls:G480262	Onion deep-frozen, baked	cebolla congelada al horno
+bls:G480282	Onion deep-frozen, fried without fat (pan)	cebolla congelada a la plancha
+bls:G480400	Onion dried	cebolla seca
+bls:G480500	Onion powder	cebolla en polvo
+bls:G480600	Onion juice	zumo de cebolla
+bls:G482100	Spring onion raw	cebolleta en crudo
+bls:G482132	Spring onion boiled	cebolleta hervida
+bls:G482142	Spring onion braised without fat	cebolleta estofada sin grasa
+bls:G482152	Spring onion stewed	cebolleta estofada
+bls:G482162	Spring onion baked	cebolleta al horno
+bls:G482182	Spring onion fried without fat (pan)	cebolleta a la plancha
+bls:G484100	Pearl onion raw	cebollitas en crudo
+bls:G484132	Pearl onion boiled	cebollitas cocidas
+bls:G484152	Pearl onion stewed	cebollitas estofadas
+bls:G484162	Pearl onion baked	cebollitas al horno
+bls:G484182	Pearl onion fried without fat (pan)	cebollitas a la plancha
+bls:G485082	Shallot fried without fat (pan)	chalota a la plancha
+bls:G485100	Shallot raw	chalota en crudo
+bls:G485132	Shalot boiled	chalota cocida
+bls:G485142	Shallot braised without fat	chalota estofada sin grasa
+bls:G485152	Shalot stewed	chalota estofada
+bls:G486100	Spring onion, bulb only, raw	cebolleta sin hojas en crudo
+bls:G486132	Spring onion, bulb only, boiled	cebolleta sin hojas cocida
+bls:G486142	Spring onion, bulb only, braised without fat	cebolleta sin hojas estofada sin grasa
+bls:G486152	Spring onion, bulb only, stewed	cebolleta sin hojas estofada
+bls:G486162	Spring onion, bulb only, baked	cebolleta sin hojas al horno
+bls:G486182	Spring onion, bulb only, fried without fat (pan)	cebolleta sin hojas a la plancha
+bls:G488100	Silverskin onion raw	cebollitas blancas en crudo
+bls:G488802	Silverskin onion pickled, drained	cebollitas en vinagre escurridas
+bls:G490042	Garlic braised without fat	ajo estofado sin grasa
+bls:G490100	Garlic raw	ajo en crudo
+bls:G490132	Garlic boiled	ajo hervido
+bls:G490152	Garlic stewed	ajo estofado
+bls:G490162	Garlic baked	ajo al horno
+bls:G490182	Garlic fried without fat (pan)	ajo a la plancha
+bls:G490200	Garlic deep-frozen	ajo congelado
+bls:G490232	Garlic deep-frozen, boiled	ajo congelado cocido
+bls:G490242	Garlic deep-frozen, braised without fat	ajo congelado estofado sin grasa
+bls:G490252	Garlic deep-frozen, stewed	ajo congelado estofado
+bls:G490262	Garlic deep-frozen, baked	ajo congelado al horno
+bls:G490282	Garlic deep-frozen, fried without fat (pan)	ajo congelado a la plancha
+bls:G490400	Garlic dried	ajo seco
+bls:G490500	Garlic powder	polvo de ajo
+bls:G491702	Garlic in oil, canned, drained	ajo en aceite en conserva, escurrido
+bls:G491802	Garlic pickled, drained	ajo en vinagre escurrido
+bls:G492100	Wild garlic raw	ajo de oso en crudo
+bls:G510100	Aubergine raw	berenjena en crudo
+bls:G510132	Aubergine boiled	berenjena cocida
+bls:G510142	Aubergine braised without fat	berenjena estofada sin grasa
+bls:G510152	Aubergine stewed	berenjena estofada
+bls:G510162	Aubergine baked	berenjena al horno
+bls:G510172	Aubergine grilled	berenjena a la parrilla
+bls:G510182	Aubergine fried without fat (pan)	berenjena a la plancha
+bls:G510702	Aubergine grilled, in oil, canned, drained	berenjena a la parrilla en aceite en conserva, escurrida
+bls:G520042	Cucumber braised without fat	pepino estofado sin grasa
+bls:G520062	Cucumber baked	pepino al horno
+bls:G520100	Cucumber raw	pepino en crudo
+bls:G520132	Cucumber boiled	pepino hervido
+bls:G520152	Cucumber stewed	pepino estofado
+bls:G520182	Cucumber fried without fat (pan)	pepino a la plancha
+bls:G520600	Cucumber juice	zumo de pepino
+bls:G520802	Cucumber/gherkin pickled, drained	pepino en vinagre escurrido
+bls:G530100	Okra raw	ocra en crudo
+bls:G530132	Okra boiled	ocra hervida
+bls:G530142	Okra braised without fat	ocra estofada sin grasa
+bls:G530152	Okra stewed	ocra estofada
+bls:G530902	Okra canned, drained	ocra en conserva, escurrida
+bls:G541032	Sweet pepper green, boiled	pimiento verde hervido
+bls:G541042	Sweet pepper green, braised without fat	pimiento verde estofado sin grasa
+bls:G541072	Sweet pepper green, grilled	pimiento verde a la parrilla
+bls:G541082	Sweet pepper green, fried without fat (pan)	pimiento verde a la plancha
+bls:G541100	Sweet pepper green, raw	pimiento verde en crudo
+bls:G541152	Sweet pepper green, stewed	pimiento verde estofado
+bls:G541162	Sweet pepper green, baked	pimiento verde al horno
+bls:G542042	Sweet pepper yellow, braised without fat	pimiento amarillo estofado sin grasa
+bls:G542100	Sweet pepper yellow, raw	pimiento amarillo en crudo
+bls:G542132	Sweet pepper yellow, boiled	pimiento amarillo cocido
+bls:G542152	Sweet pepper yellow, stewed	pimiento amarillo estofado
+bls:G542162	Sweet pepper yellow, baked	pimiento amarillo al horno
+bls:G542172	Sweet pepper yellow, grilled	pimiento amarillo a la parrilla
+bls:G542182	Sweet pepper yellow, fried without fat (pan)	pimiento amarillo a la plancha
+bls:G543032	Sweet pepper red, boiled	pimiento rojo hervido
+bls:G543042	Sweet pepper red, braised without fat	pimiento rojo estofado sin grasa
+bls:G543072	Sweet pepper red, grilled	pimiento rojo a la parrilla
+bls:G543082	Sweet pepper red, fried without fat (pan)	pimiento rojo a la plancha
+bls:G543100	Sweet pepper red, raw	pimiento rojo en crudo
+bls:G543152	Sweet pepper red, stewed	pimiento rojo estofado
+bls:G543162	Sweet pepper red, baked	pimiento rojo al horno
+bls:G543702	Sweet pepper red, grilled, in oil, canned, drained	pimiento rojo a la parrilla en aceite en conserva, escurrido
+bls:G543802	Sweet pepper red, pickled, drained	pimiento rojo en vinagre escurrido
+bls:G550702	Chilli pepper in oil, canned, drained	guindilla en aceite en conserva, escurrida
+bls:G550802	Chilli pepper pickled, drained	guindilla en vinagre escurrida
+bls:G553100	Chilli pepper green, raw	guindilla verde en crudo
+bls:G553132	Chilli pepper green, boiled	guindilla verde cocida
+bls:G553152	Chilli pepper green, stewed	guindilla verde estofada
+bls:G553182	Chilli pepper green, fried without fat (pan)	guindilla verde a la plancha
+bls:G554100	Chilli pepper red, raw	guindilla roja en crudo
+bls:G554132	Chilli pepper red, boiled	guindilla roja cocida
+bls:G554152	Chilli pepper red, stewed	guindilla roja estofada
+bls:G554182	Chilli pepper red, fried without fat (pan)	guindilla roja a la plancha
+bls:G560142	Tomato braised without fat	tomate estofado sin grasa
+bls:G560400	Tomato dried	tomate seco
+bls:G560600	Tomato juice with salt	zumo de tomate con sal
+bls:G560900	Tomato canned	tomate en conserva
+bls:G561072	Tomato grilled	tomate a la parrilla
+bls:G561082	Tomato fried without fat (pan)	tomate a la plancha
+bls:G561100	Tomato raw	tomate en crudo
+bls:G561132	Tomato boiled	tomate cocido
+bls:G561152	Tomato stewed	tomate estofado
+bls:G561162	Tomato baked	tomate al horno
+bls:G561500	Tomato powder	tomate en polvo
+bls:G561802	Tomato pickled, drained	tomate en vinagre escurrido
+bls:G567702	Tomato dried, in oil, canned, drained	tomate seco en aceite en conserva, escurrido
+bls:G568900	Tomato peeled, canned	tomate pelado en conserva
+bls:G569902	Tomate dried, marinated, drained	tomate seco marinado escurrido
+bls:G570100	Sweetcorn raw	maíz dulce en crudo
+bls:G570132	Sweetcorn boiled	maíz dulce cocido
+bls:G570162	Sweetcorn baked	maíz dulce al horno
+bls:G570172	Sweetcorn grilled	maíz dulce a la parrilla
+bls:G570182	Sweetcorn fried without fat (pan)	maíz dulce a la plancha
+bls:G570200	Sweetcorn deep-frozen	maíz dulce congelado
+bls:G570232	Sweetcorn deep-frozen, boiled	maíz dulce congelado cocido
+bls:G570262	Sweetcorn deep-frozen, baked	maíz dulce congelado al horno
+bls:G570272	Sweetcorn deep-frozen, grilled	maíz dulce congelado a la parrilla
+bls:G570282	Sweetcorn deep-frozen, fried without fat (pan)	maíz dulce congelado a la plancha
+bls:G570802	Sweetcorn pickled, drained	maíz dulce en vinagre escurrido
+bls:G570902	Sweetcorn canned, drained	maíz dulce en conserva, escurrido
+bls:G581000	Hokkaido pumpkin raw	calabaza hokkaido en crudo
+bls:G581032	Hokkaido pumpkin boiled	calabaza hokkaido cocida
+bls:G581042	Hokkaido pumpkin braised without fat	calabaza hokkaido estofada sin grasa
+bls:G581052	Hokkaido pumpkin stewed	calabaza hokkaido estofada
+bls:G581062	Hokkaido pumpkin baked	calabaza hokkaido al horno
+bls:G581082	Hokkaido pumpkin fried without fat (pan)	calabaza hokkaido a la plancha
+bls:G581100	Pumpkin (C. pepo) raw	calabaza en crudo
+bls:G581132	Pumpkin (C. pepo) boiled	calabaza pepo cocida
+bls:G581142	Pumpkin (C. pepo) braised without fat	calabaza estofada sin grasa
+bls:G581152	Pumpkin (C. pepo) stewed	calabaza estofada
+bls:G581162	Pumpkin (C. pepo) baked	calabaza al horno
+bls:G581182	Pumpkin (C. pepo) fried without fat (pan)	calabaza a la plancha
+bls:G581802	Pumpkin pickled, drained	calabaza en vinagre escurrida
+bls:G582100	Courgette raw	calabacín en crudo
+bls:G582132	Courgette boiled	calabacín hervido
+bls:G582142	Courgette braised without fat	calabacín estofado sin grasa
+bls:G582152	Courgette stewed	calabacín estofado
+bls:G582162	Courgette baked	calabacín al horno
+bls:G582172	Courgette grilled	calabacín a la parrilla
+bls:G582182	Courgette fried without fat (pan)	calabacín a la plancha
+bls:G582802	Courgette pickled, drained	calabacín en vinagre escurrido
+bls:G583100	Chayote raw	chayote en crudo
+bls:G583132	Chayote boiled	chayote hervido
+bls:G583182	Chayote fried without fat (pan)	chayote a la plancha
+bls:G611100	Swede raw	colinabo en crudo
+bls:G611132	Swede boiled	colinabo hervido
+bls:G611152	Swede stewed	colinabo estofado
+bls:G613100	Beetroot raw	remolacha en crudo
+bls:G613132	Beetroot boiled	remolacha hervida
+bls:G613152	Beetroot stewed	remolacha estofada
+bls:G613600	Beetroot juice	zumo de remolacha roja
+bls:G613802	Beetroot pickled, drained	remolacha en vinagre escurrida
+bls:G614100	Turnip raw	nabo en crudo
+bls:G614132	Turnip boiled	nabo hervido
+bls:G614152	Turnip stewed	nabo estofado
+bls:G620100	Carrot raw	zanahoria en crudo
+bls:G620132	Carrot boiled	zanahoria cocida
+bls:G620142	Carrot braised without fat	zanahoria estofada sin grasa
+bls:G620152	Carrot stewed	zanahoria estofada
+bls:G620162	Carrot baked	zanahoria al horno
+bls:G620182	Carrot fried without fat (pan)	zanahoria a la plancha
+bls:G620200	Carrot deep-frozen	zanahoria congelada
+bls:G620232	Carrot deep-frozen, boiled	zanahoria congelada cocida
+bls:G620242	Carrot deep-frozen, braised without fat	zanahoria congelada estofada sin grasa
+bls:G620252	Carrot deep-frozen, stewed	zanahoria congelada estofada
+bls:G620262	Carrot deep-frozen, baked	zanahoria congelada al horno
+bls:G620282	Carrot deep-frozen, fried without fat (pan)	zanahoria congelada a la plancha
+bls:G620600	Carrot juice	zumo de zanahorias
+bls:G620802	Carrot pickled, drained	zanahoria en vinagre escurrida
+bls:G620902	Carrot canned, drained	zanahoria en conserva, escurrida
+bls:G622600	Carrot juice, sweetened with honey	zumo de zanahoria con miel
+bls:G630100	Horseradish raw	rábano picante en crudo
+bls:G630132	Horseradish boiled	rábano picante cocido
+bls:G640100	Parsnip raw	chirivía en crudo
+bls:G640132	Parsnip boiled	chirivía hervida
+bls:G640142	Parsnip braised without fat	chirivía estofada sin grasa
+bls:G640152	Parsnip stewed	chirivía estofada
+bls:G640162	Parsnip baked	chirivía al horno
+bls:G640182	Parsnip fried without fat (pan)	chirivía a la plancha
+bls:G650100	Black salsify raw	escorzonera en crudo
+bls:G650132	Black salsify boiled	escorzonera cocida
+bls:G650142	Black salsify braised without fat	escorzonera estofada sin grasa
+bls:G650152	Black salsify stewed	escorzonera estofada
+bls:G650200	Black salsify deep-frozen	escorzonera congelada
+bls:G650232	Black salsify deep-frozen, boiled	escorzonera congelada cocida
+bls:G650242	Black salsify deep-frozen, braised without fat	escorzonera congelada estofada sin grasa
+bls:G650252	Black salsify deep-frozen, stewed	escorzonera congelada estofada
+bls:G650902	Black salsify canned, drained	escorzonera en conserva, escurrida
+bls:G660100	Celeriac raw	apio-nabo en crudo
+bls:G660132	Celeriac boiled	apio-nabo cocido
+bls:G660152	Celeriac stewed	apio-nabo estofado
+bls:G660162	Celeriac baked	apio-nabo al horno
+bls:G660182	Celeriac fried without fat (pan)	apio-nabo a la plancha
+bls:G660600	Celeriac juice	zumo de apio-nabo
+bls:G660802	Celeriac pickled, drained	apio-nabo en vinagre escurrido
+bls:G670100	Parsley root raw	raíz de perejil en crudo
+bls:G670132	Parsley root boiled	raíz de perejil cocida
+bls:G670142	Parsley root braised without fat	raíz de perejil estofada sin grasa
+bls:G670152	Parsley root stewed	raíz de perejil estofada
+bls:G670162	Parsley root baked	raíz de perejil al horno
+bls:G670182	Parsley root fried without fat (pan)	raíz de perejil a la plancha
+bls:G670400	Parsley root dried	raíz de perejil seca
+bls:G680100	Radish raw	rábano en crudo
+bls:G680152	Radish stewed	rábano estofado
+bls:G691100	Small red radish raw	rábanos en crudo
+bls:G691152	Small red radish stewed	rábanos estofados
+bls:G693100	Japanese horseradish/wasabi root, raw	wasabi en crudo
+bls:G710042	Bean green, deep-frozen, braised without fat	judías verdes congeladas estofadas sin grasa
+bls:G710100	Bean green, raw	judías verdes en crudo
+bls:G710132	Bean green, boiled	judías verdes hervidas
+bls:G710142	Bean green, braised without fat	judías verdes estofadas sin grasa
+bls:G710152	Bean green, stewed	judías verdes estofadas
+bls:G710162	Bean green, baked	judías verdes al horno
+bls:G710182	Bean green, fried without fat (pan)	judías verdes a la plancha
+bls:G710200	Bean green, deep-frozen	judías verdes congeladas
+bls:G710232	Bean green, deep-frozen, boiled	judías verdes congeladas cocidas
+bls:G710252	Bean green, deep-frozen, stewed	judías verdes congeladas estofadas
+bls:G710262	Bean green, deep-frozen, baked	judías verdes congeladas al horno
+bls:G710282	Bean green, deep-frozen, fried without fat (pan)	judías verdes congeladas a la plancha
+bls:G710802	Bean green, pickled, drained	judías verdes en vinagre escurridas
+bls:G710902	Bean green, canned, drained	judías verdes en conserva, escurridas
+bls:G720100	Wax bean raw	judías ceras en crudo
+bls:G720132	Wax bean boiled	judías ceras cocidas
+bls:G720152	Wax bean stewed	judías ceras estofadas
+bls:G720200	Wax bean deep-frozen	judías ceras congeladas
+bls:G720232	Wax bean deep-frozen, boiled	judías ceras congeladas cocidas
+bls:G720252	Wax bean deep-frozen, stewed	judías ceras congeladas estofadas
+bls:G720802	Wax bean pickled, drained	judías ceras en vinagre escurridas
+bls:G720902	Wax bean canned, drained	judías ceras en conserva, escurridas
+bls:G730100	Broad bean immature, raw	habas tiernas en crudo
+bls:G730132	Broad bean immature, boiled	habas tiernas cocidas
+bls:G730200	Broad bean immature, deep-frozen	habas tiernas congeladas
+bls:G730232	Broad bean immature, deep-frozen, boiled	habas tiernas congeladas cocidas
+bls:G730902	Broad bean immature, canned, drained	habas tiernas en conserva, escurridas
+bls:G750100	Soya bean immature (edamame) raw	edamame en crudo
+bls:G750400	Soya bean mature	soja madura
+bls:G750432	Soya bean mature, boiled	soja madura cocida
+bls:G750902	Soya bean immature (edamame) canned, drained	edamame en conserva, escurrido
+bls:G760100	Pea green, raw	guisantes verdes en crudo
+bls:G760132	Pea green, boiled	guisantes verdes cocidos
+bls:G760152	Pea green, stewed	guisantes verdes estofados
+bls:G760162	Pea green, baked	guisantes verdes al horno
+bls:G760182	Pea green, fried without fat (pan)	guisantes verdes a la plancha
+bls:G760200	Pea green, deep-frozen	guisantes verdes congelados
+bls:G760232	Pea green, deep-frozen, boiled	guisantes verdes congelados cocidos
+bls:G760252	Pea green, deep-frozen, stewed	guisantes verdes congelados estofados
+bls:G760262	Pea green, deep-frozen, baked	guisantes verdes congelados al horno
+bls:G760282	Pea green, deep-frozen, fried without fat (pan)	guisantes verdes congelados a la plancha
+bls:G760400	Pea green mature	guisantes secos
+bls:G760432	Pea green mature, boiled	guisantes secos cocidos
+bls:G760902	Pea green, canned, drained	guisantes verdes en conserva, escurridos
+bls:G761032	Sugar pea boiled	tirabeques cocidos
+bls:G761100	Sugar pea raw	tirabeques en crudo
+bls:G761152	Sugar pea stewed	tirabeques estofados
+bls:G761200	Sugar pea deep-frozen	tirabeques congelados
+bls:G761232	Sugar pea deep-frozen, boiled	tirabeques congelados cocidos
+bls:G761252	Sugar pea deep-frozen, stewed	tirabeques congelados estofados
+bls:G770400	Chick pea mature	garbanzos en seco
+bls:G770432	Chick pea mature, boiled	garbanzos secos cocidos
+bls:G780400	Lima bean/butter bean, mature	judías de Lima secas
+bls:G780432	Lima bean/butter bean, mature, boiled	judías de Lima secas cocidas
+bls:G850100	Cream of vegetable soup instant powder	crema de verduras en polvo
+bls:G850132	Cream of vegetable soup, made from instant powder and water	crema de verduras de sobre
+bls:G860192	Fried onions (ready-made product)	cebolla frita
+bls:G880402	Bean green, lactic acid fermented, drained	judías verdes fermentadas escurridas
+bls:G880602	Mixed pickles, drained	encurtidos variados escurridos
+bls:G890702	Gherkin lactic acid fermented, drained	pepinos fermentados escurridos
+bls:G890902	Cornichons pickled, canned, drained	pepinitos en vinagre escurridos
+bls:G891102	Sweet cucumber pickled, canned, drained	pepinos agridulces en vinagre escurridos
+bls:G891202	Mustard cucumber pickled, canned, drained	pepinos a la mostaza en vinagre escurridos
+bls:G898100	Horseradish (unsalted) canned	rábano picante en conserva sin sal
+bls:G898200	Creamed horseradish canned	rábano picante con nata en conserva
+bls:G898300	Horsereadish canned	rábano picante de mesa en conserva
+bls:G898400	Ajvar canned	ajvar en conserva
+bls:G920200	Mixed vegetables "Leipziger Allerlei", deep-frozen	mezcla de verduras Leipzig congelada
+bls:G920232	Mixed vegetables "Leipziger Allerlei", deep-frozen, boiled	mezcla de verduras Leipzig congelada cocida
+bls:G920252	Mixed vegetables "Leipziger Allerlei", deep-frozen, stewed	mezcla de verduras Leipzig congelada estofada
+bls:G920902	Mixed vegetables "Leipziger Allerlei", canned, drained	mezcla de verduras Leipzig en conserva, escurrida
+bls:G940100	Vegetable spread	crema de verduras para untar
+bls:G950900	Vegetarian goulash, canned	goulash vegetariano en conserva
+bls:G991902	Mixed vegetables Asian style, canned, drained	mezcla de verduras asiática en conserva, escurrida
+bls:G992100	Mixed vegetables peas and carrots, raw	guisantes con zanahoria en crudo
+bls:G992132	Mixed vegetables peas and carrots, boiled	guisantes con zanahoria hervidos
+bls:G992152	Mixed vegetables peas and carrots, stewed	guisantes con zanahoria estofados
+bls:G992162	Mixed vegetables peas and carrots, baked	guisantes con zanahoria al horno
+bls:G992182	Mixed vegetables peas and carrots, fried without fat (pan)	guisantes con zanahoria a la plancha
 bls:G992200	Mixed vegetables peas and carrots, deep-frozen	guisantes con zanahoria congelados
+bls:G992232	Mixed vegetables peas and carrots, deep-frozen, boiled	guisantes con zanahoria congelados cocidos
+bls:G992252	Mixed vegetables peas and carrots, deep-frozen, stewed	guisantes con zanahoria congelados estofados
+bls:G992262	Mixed vegetables peas and carrots, deep-frozen, baked	guisantes con zanahoria congelados al horno
+bls:G992282	Mixed vegetables peas and carrots, deep-frozen, fried without fat (pan)	guisantes con zanahoria congelados a la plancha
+bls:G992902	Mixed vegetables peas and carrots, canned, drained	guisantes con zanahoria en conserva, escurridos
+bls:G993100	Mixed vegetables Mexican style, raw	mezcla de verduras mexicana en crudo
+bls:G993132	Mixed vegetables Mexican style, boiled	mezcla de verduras mexicana cocida
+bls:G993142	Mixed vegetables Mexican style, braised without fat	mezcla de verduras mexicana estofada sin grasa
+bls:G993152	Mixed vegetables Mexican style, stewed	mezcla de verduras mexicana estofada
+bls:G993182	Mixed vegetables Mexican style, fried without fat (pan)	mezcla de verduras mexicana a la plancha
+bls:G993200	Mixed vegetables Mexican style, deep-frozen	mezcla de verduras mexicana congelada
+bls:G993232	Mixed vegetables Mexican style, deep-frozen, boiled	mezcla de verduras mexicana congelada cocida
+bls:G993242	Mixed vegetables Mexican style, deep-frozen, braised without fat	mezcla de verduras mexicana congelada estofada sin grasa
+bls:G993252	Mixed vegetables Mexican style, deep-frozen, stewed	mezcla de verduras mexicana congelada estofada
+bls:G993282	Mixed vegetables Mexican style, deep-frozen, fried without fat (pan)	mezcla de verduras mexicana congelada a la plancha
+bls:G993902	Mixed vegetables Mexican style, canned, drained	mezcla de verduras mexicana en conserva, escurrida
 bls:G994100	Mixed vegetables Asian style, raw	mezcla de verduras asiáticas cruda
+bls:G994132	Mixed vegetables Asian style, boiled	mezcla de verduras asiática cocida
+bls:G994142	Mixed vegetables Asian style, braised without fat	mezcla de verduras asiática estofada sin grasa
+bls:G994152	Mixed vegetables Asian style, stewed	mezcla de verduras asiática estofada
+bls:G994162	Mixed vegetables Asian style, baked	mezcla de verduras asiática al horno
+bls:G994182	Mixed vegetables Asian style, fried without fat (pan)	mezcla de verduras asiática a la plancha
+bls:G994200	Mixed vegetables Asian style, deep-frozen	mezcla de verduras asiática congelada
+bls:G994232	Mixed vegetables Asian style, deep-frozen, boiled	mezcla de verduras asiática congelada cocida
+bls:G994242	Mixed vegetables Asian style, deep-frozen, braised without fat	mezcla de verduras asiática congelada estofada sin grasa
+bls:G994252	Mixed vegetables Asian style, deep-frozen, stewed	mezcla de verduras asiática congelada estofada
+bls:G994262	Mixed vegetables Asian style, deep-frozen, baked	mezcla de verduras asiática congelada al horno
+bls:G994282	Mixed vegetables Asian style, deep-frozen, fried without fat (pan)	mezcla de verduras asiática congelada a la plancha
+bls:G995000	Sushi nori (toasted)	nori tostado
+bls:H011000	Soya bean protein isolate	aislado proteico de soja
+bls:H012000	Soya bean lecithin	lecitina de soja
+bls:H014900	Soya bean small sausage	salchichas de soja
+bls:H030400	Glass noodles made from mung bean starch, raw	fideos de cristal en crudo
+bls:H030432	Glass noodles made from mung bean starch, boiled	fideos de cristal cocidos
+bls:H110600	Peanut roasted	cacahuete tostado
+bls:H110700	Peanut roasted, salted	cacahuete tostado salado
+bls:H110800	Peanut butter (100 % pure)	crema de cacahuete pura
+bls:H120100	Walnut	nuez
+bls:H120400	Walnut ground	nuez molida
+bls:H120610	Walnut roasted without fat	nuez tostada
+bls:H130100	Hazelnut	avellana
+bls:H130400	Hazelnut ground	avellana molida
+bls:H130610	Hazelnut roasted without fat	avellana tostada
+bls:H130800	Hazelnut butter (100 % pure)	crema de avellanas pura
+bls:H150100	Coconut meat, raw	carne de coco en crudo
+bls:H150400	Coconut meat, grated, dried	coco rallado seco
+bls:H151000	Coconut water (liquid from coconuts)	agua de coco fresca
+bls:H154000	Coconut milk	leche de coco para cocinar
+bls:H160100	Pecan	pacana
+bls:H160600	Pecan roasted without fat	pacana tostada
+bls:H170100	Cashew nut	anacardo
+bls:H170600	Cashew nut roasted with fat	anacardo tostado en aceite
+bls:H170610	Cashew nut roasted without fat	anacardo tostado
+bls:H170700	Cashew nut roasted with fat, salted	anacardo tostado en aceite salado
+bls:H180100	Brazil nut	nuez de Brasil
+bls:H180610	Brazil nut roasted without fat	nuez de Brasil tostada
+bls:H190100	Macadamia nut	macadamia
+bls:H190600	Macadamia nut roasted without fat	macadamia tostada
+bls:H190700	Macadamia nut roasted without fat, salted	macadamia tostada salada
+bls:H210100	Sweet almond	almendra
+bls:H210200	Sweet almond blanched	almendra blanqueada
+bls:H210400	Sweet almond crushed	almendra molida
+bls:H210600	Sweet almond roasted without fat	almendra tostada
 bls:H210710	Sweet almond roasted with fat, salted	almendras tostadas saladas
+bls:H212800	Sweet almond butter (100 % pure)	crema de almendras pura
+bls:H220100	Bitter almond	almendra amarga
+bls:H230100	Sweet chestnut	castaña
+bls:H230132	Sweet chestnut boiled	castaña cocida
+bls:H230162	Sweet chestnut baked	castaña asada
+bls:H230172	Sweet chestnut grilled	castaña a la parrilla
+bls:H230182	Sweet chestnut fried without fat (pan)	castaña a la plancha
+bls:H230400	Sweet chestnut flour	harina de castaña
+bls:H250100	Pistachio nut	pistachos
+bls:H250600	Pistachio nut roasted without fat	pistachos tostados
+bls:H250700	Pistachio nut roasted without fat, salted	pistachos tostados salados
+bls:H310100	Pumpkin seed	pipas de calabaza
 bls:H310600	Pumpkin seed roasted without fat	semillas de calabaza tostadas
+bls:H320100	Pine nut	piñones
+bls:H320600	Pine nut roasted without fat	piñones tostados
+bls:H410100	Linseed/flax seed	linaza
+bls:H410400	Linseed/flax seed, ground	semillas de lino molidas
+bls:H410600	Linseed/flax seed, roasted without fat	semillas de lino tostadas
+bls:H420100	Sesame seed	sésamo
+bls:H420610	Sesame seeds roasted without fat	sésamo tostado
+bls:H430100	Sunflower seed	pipas de girasol
+bls:H430610	Sunflower seeds roasted without fat	pipas de girasol tostadas
+bls:H450100	Poppy seed	semillas de amapola
+bls:H450400	Poppy seed ground	semillas de amapola molidas
+bls:H480100	Chia seeds	semillas de chía
+bls:H510802	Olives green, pickled, drained	aceitunas verdes en salmuera escurridas
+bls:H510900	Olives green, filled with sweet pepper paste, pickled, drained	aceitunas verdes rellenas de pimiento escurridas
+bls:H511900	Olives green, filled with almonds, pickled, drained	aceitunas verdes rellenas de almendra escurridas
+bls:H520800	Olives blackened, in brine, drained	aceitunas negras en salmuera escurridas
+bls:H610100	Bamboo shoots raw	brotes de bambú en crudo
+bls:H610132	Bamboo shoots boiled	brotes de bambú hervidos
+bls:H610182	Bamboo shoots fried without fat (pan)	brotes de bambú a la plancha
+bls:H610902	Bamboo shoots canned, drained	brotes de bambú en conserva, escurridos
+bls:H620100	Soya bean sprouts raw	brotes de soja en crudo
 bls:H620902	Soya bean sprouts canned, drained	brotes de soja en conserva
+bls:H640100	Lucerne/alfalfa sprouts, raw	brotes de alfalfa en crudo
+bls:H650100	Mung bean sprouts raw	brotes de mungo en crudo
+bls:H650902	Mung bean sprouts canned, drained	brotes de mungo en conserva, escurridos
+bls:H662100	Lentils sprouted raw	lentejas germinadas en crudo
+bls:H702100	Cowpea/black-eyed pea, mature	carillas secas
+bls:H702132	Cowpea/black-eyed pea, mature, boiled	carillas secas cocidas
+bls:H702902	Cowpea/black-eyed pea, mature, canned, drained	carillas en conserva, escurridas
+bls:H710400	Pea flour	harina de guisantes
+bls:H720400	Chickpea flour	harina de garbanzos
+bls:H720902	Chickpea mature, canned, drained	garbanzos en conserva, escurridos
+bls:H725100	Lentil mature	lentejas en seco
 bls:H730000	Lentil red mature	lentejas rojas secas
+bls:H730032	Lentil red, mature, boiled	lentejas rojas cocidas
+bls:H730132	Lentil mature, boiled	lentejas cocidas
+bls:H730400	Lentil flour	harina de lentejas
+bls:H730902	Lentil mature, canned, drained	lentejas en conserva, escurridas
+bls:H731400	Lupin flour	harina de altramuz
+bls:H739400	Haricot bean mature	alubias blancas secas
+bls:H740132	Haricot bean mature, boiled	alubias blancas cocidas
+bls:H740902	Haricot bean mature, canned, drained	alubias blancas en conserva, escurridas
+bls:H742100	Kidney bean mature	alubias rojas secas
+bls:H742132	Kidney bean mature, boiled	alubias rojas cocidas
+bls:H742902	Kidney bean mature, canned, drained	alubias rojas en conserva, escurridas
+bls:H750100	Broad bean mature	habas secas
+bls:H750132	Broad bean mature, boiled	habas secas cocidas
+bls:H760600	Soya bean mature (soya kernel) roasted without fat	soja tostada en grano
+bls:H764400	Soya flour full fat	harina integral de soja
+bls:H765000	Plant-based mince, made from texturised soya protein, plain, dry	soja texturizada seca
 bls:H765082	Plant-based mince, made from texturised soya protein, plain, soaked, fried without fat (pan)	soja texturizada hidratada a la plancha
+bls:H770100	Mung bean mature	judías mungo secas
+bls:H770132	Mung bean mature, boiled	judías mungo hervidas
+bls:H800000	Almond drink unsweetened	bebida de almendras sin azúcar
+bls:H800100	Almond drink unsweetened, fortified with vitamins and calcium	bebida de almendra sin azúcar con vitaminas y calcio
+bls:H800200	Almond drink sweetened, flavoured	bebida de almendra azucarada aromatizada
+bls:H800300	Almond drink sweetened, flavoured, fortified with calcium	bebida de almendra azucarada aromatizada con calcio
+bls:H800400	Almond drink sweetened, flavoured, fortified with vitamins and calcium	bebida de almendra azucarada aromatizada con vitaminas y calcio
+bls:H810000	Fruit and nut mix	mezcla de frutos secos y pasas
+bls:H810100	Peanut roasted, crispy coated	cacahuetes japoneses
+bls:H841100	Soya drink unsweetened	bebida de soja sin azúcares
+bls:H841400	Soya drink unsweetened, fortified with vitamins and calcium	bebida de soja sin azúcar con vitaminas y calcio
 bls:H842400	Soya drink sweetened, flavoured	bebida de soja con sabor, azucarada
+bls:H842600	Soya drink sweetened, flavoured, fortified with vitamins and calcium	bebida de soja azucarada aromatizada con vitaminas y calcio
+bls:H843200	Plant-based dessert/pudding alternative	postre vegetal
+bls:H843300	Plant-based dessert/pudding alternative, fortified with vitamins and calcium	postre vegetal con vitaminas y calcio
+bls:H844000	Plant-based yogurt alternative, made from soya, unsweetened	yogur de soja sin azúcar
+bls:H844100	Plant-based yogurt alternative, made from soya, unsweetened, fortified with vitamins and calcium	yogur de soja sin azúcar con vitaminas y calcio
+bls:H844400	Plant-based yogurt alternative, made from soya, sweetened, flavoured	yogur de soja azucarado aromatizado
+bls:H844500	Plant-based yogurt alternative, made from soya, sweetened, flavoured fortified with vitamins and calcium	yogur de soja azucarado aromatizado con vitaminas y calcio
+bls:H845000	Plant-based cream alternative, made from soya (for boiling and refining)	nata de soja para cocinar
+bls:H861000	Tofu	tofu natural
+bls:H861032	Tofu poached	tofu escalfado
+bls:H861042	Tofu braised without fat	tofu estofado sin grasa
+bls:H861062	Tofu baked	tofu al horno
+bls:H861082	Tofu fried without fat (pan)	tofu a la plancha
+bls:H861100	Silken tofu	tofu sedoso
+bls:H861132	Silken tofu poached	tofu sedoso escalfado
+bls:H862200	Miso/soya bean paste	pasta de miso
+bls:H880100	Sunflower seed spread	crema de pipas de girasol
+bls:H880200	Peanut butter	crema de cacahuete
+bls:H882000	Plant-based cheese alternative, cashew-based, vegan	queso vegano de anacardos
+bls:H882100	Plant-based soft cream cheese alternative, almond-based, vegan	queso crema vegano de almendras
+bls:H900900	Haricot beans in tomato sauce, canned	alubias en salsa de tomate en conserva
+bls:H910200	Tofu burgers fried without fat (pan)	hamburguesas de tofu a la plancha
+bls:H910300	Vegetarian bratwurst (made from tofu and wheat protein)	salchichas vegetarianas de tofu
+bls:H910400	Vegan schnitzel	escalope vegano
+bls:H910500	Vegetarian Vienna sausages	salchichas vienesas vegetarianas
+bls:H923900	Soya Bolognese, canned	bolognesa de soja en conserva
+bls:H926100	Soya burgers fried without fat (pan)	hamburguesas de soja a la plancha
+bls:H930000	Vegan cold cuts alternative	fiambre vegano
+bls:H930100	Soya spreadable sausage alternative, vegan	salchicha para untar de soja vegana
+bls:H930200	Vegetarian cold cuts alternative, with egg	fiambre vegetariano con huevo
+bls:H960000	Hummus/chickpea puree	hummus de garbanzo
+bls:K110100	Potatoe peeled, raw	patata pelada en crudo
+bls:K110132	Potatoe peeled, boiled	patata pelada cocida
+bls:K110142	Potatoe peeled, braised without fat	patata pelada estofada sin grasa
+bls:K110143	Potatoe peeled, pressure-steamed	patata pelada en olla a presión
+bls:K110162	Potatoe peeled, baked	patata pelada al horno
+bls:K110182	Potatoe peeled, fried without fat (pan)	patata pelada a la plancha
+bls:K110902	Potatoe peeled, boiled, canned, drained	patata pelada cocida en conserva, escurrida
+bls:K120100	Potatoe unpeeled, raw	patata con piel en crudo
+bls:K120134	Potatoe unpeeled, boiled	patata cocida sin pelar
+bls:K120164	Potatoe unpeeled, baked	patata asada con piel
+bls:K120184	Potatoe unpeeled, fried without fat (pan)	patata con piel a la plancha
+bls:K120200	Potatoe unpeeled, deep-frozen	patata con piel congelada
+bls:K120264	Potatoe unpeeled, deep-frozen, baked	patata con piel congelada asada
+bls:K130200	Potato chips/french fries, deep-frozen	patatas fritas prefritas congeladas
+bls:K130262	Potato chips/french fries, deep-frozen, baked	patatas fritas congeladas al horno
+bls:K130362	Potato chips/french fries, deep-frozen, baked, salted	patatas fritas congeladas al horno saladas
+bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	patatas congeladas fritas
+bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	patatas congeladas fritas saladas
+bls:K213000	Potatoes mashed instant powder	puré de patatas en polvo
+bls:K230000	Potato starch (potato flour)	fécula de patata
+bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	bolas de patata cruda en polvo
+bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	bolas de patata cocida en polvo
+bls:K241200	Potato dumpling half and half, deep-frozen	bolas de patata mixtas congeladas
+bls:K241232	Potato dumpling half and half, deep-frozen, poached	bolas de patata mixtas congeladas escalfadas
+bls:K260200	Potato pancakes deep-frozen	tortitas de patata congeladas
+bls:K260262	Potato pancakes deep-frozen, baked	tortitas de patata congeladas al horno
+bls:K260282	Potato pancakes deep-frozen, fried without fat (pan)	tortitas de patata congeladas a la plancha
+bls:K260292	Potato pancakes deep-frozen, deep-fried	tortitas de patata congeladas fritas
+bls:K270000	Gnocchi raw	ñoquis en crudo
+bls:K270022	Gnocchi steamed	ñoquis al vapor
+bls:K270032	Gnocchi boiled	ñoquis cocidos
+bls:K270062	Gnocchi boiled, baked	ñoquis cocidos al horno
+bls:K270082	Gnocchi boiled, fried without fat (pan)	ñoquis cocidos a la plancha
+bls:K271000	Gnocchi deep-frozen	ñoquis congelados
+bls:K271032	Gnocchi deep-frozen, boiled	ñoquis congelados cocidos
+bls:K280100	Potato crisps/potato chips (various types)	patatas fritas de bolsa
+bls:K280200	Potato sticks	palitos de patata
+bls:K282200	Potato croquettes deep-frozen	croquetas congeladas de patata
+bls:K282262	Potato croquettes deep-frozen, baked	croquetas congeladas de patata al horno
+bls:K282292	Potato croquettes deep-frozen, deep-fried	croquetas congeladas de patata fritas
+bls:K290100	Potato crisps/potato chips, calorie-reduced	patatas fritas de bolsa ligeras
+bls:K311200	Potato pockets with cream cheese filling, deep-frozen	bolsitas de patata con queso crema congeladas
+bls:K311262	Potato pockets with cream cheese filling, deep-frozen, baked	bolsitas de patata con queso crema congeladas al horno
+bls:K311282	Potato pockets with cream cheese filling, deep-frozen, fried without fat (pan)	bolsitas de patata con queso crema congeladas a la plancha
+bls:K311292	Potato pockets with cream cheese filling, deep-frozen, deep-fried	bolsitas de patata con queso crema congeladas fritas
+bls:K391200	Potato rösti (fried grated potatoes) deep-frozen	rösti congelado
+bls:K391262	Potato rösti (fried grated potatoes) deep-frozen, baked	rösti congelado al horno
+bls:K391282	Potato rösti (fried grated potatoes) deep-frozen, fried without fat (pan)	rösti congelado a la plancha
+bls:K391292	Potato rösti (fried grated potatoes) deep-frozen, deep-fried	rösti congelado frito
+bls:K392200	Potato rösti with bacon, deep-frozen	rösti con beicon congelado
+bls:K392262	Potato rösti with bacon, deep-frozen, baked	rösti con beicon congelado al horno
+bls:K392282	Potato rösti with bacon, deep-frozen, fried without fat (pan)	rösti con beicon congelado a la plancha
+bls:K392292	Potato rösti with bacon, deep-frozen, deep-fried	rösti con beicon congelado frito
+bls:K410100	Manioc/cassava, raw	yuca en crudo
+bls:K410162	Manioc/cassava, baked	yuca al horno
+bls:K410182	Manioc/cassava, fried without fat (pan)	yuca a la plancha
+bls:K410432	Manioc/cassava, boiled	yuca hervida
 bls:K420100	Batata/sweet potato, raw	batata cruda
+bls:K420132	Batata/sweet potato, boiled	boniato hervido
+bls:K420162	Batata/sweet potato, baked	boniato al horno
+bls:K420182	Batata/sweet potato, fried without fat (pan)	boniato a la plancha
+bls:K420192	Batata/sweet potato, deep-fried, salted	boniato frito salado
+bls:K430100	Jerusalem artichoke/topinambur, raw	alcachofa de Jerusalén en crudo
+bls:K430132	Jerusalem artichoke/topinambur, boiled	alcachofa de Jerusalén cocida
+bls:K430162	Jerusalem artichoke/topinambur, baked	alcachofa de Jerusalén al horno
+bls:K430182	Jerusalem artichoke/topinambur, fried without fat (pan)	alcachofa de Jerusalén a la plancha
+bls:K440100	Yam raw	ñame en crudo
+bls:K440132	Yam boiled	ñame cocido
+bls:K440162	Yam baked	ñame asado
+bls:K440182	Yam fried without fat (pan)	ñame a la plancha
+bls:K512000	Tapioca (granulated cassava starch)	tapioca
+bls:K550000	Arrowroot flour	harina de arrurruz
+bls:K701100	Button mushroom raw	champiñones en crudo
+bls:K701132	Button mushroom boiled	champiñones hervidos
+bls:K701142	Button mushroom braised without fat	champiñones estofados sin grasa
+bls:K701152	Button mushroom stewed	champiñones estofados
+bls:K701162	Button mushroom baked	champiñones al horno
+bls:K701172	Button mushroom grilled	champiñones a la parrilla
+bls:K701182	Button mushroom fried without fat (pan)	champiñones a la plancha
+bls:K701200	Button mushroom deep-frozen	champiñones congelados
+bls:K701242	Button mushroom deep-frozen, stewed	champiñones congelados estofados
+bls:K701262	Button mushroom deep-frozen, baked	champiñones congelados al horno
+bls:K701282	Button mushroom deep-frozen, fried without fat (pan)	champiñones congelados a la plancha
+bls:K701400	Button mushroom dried	champiñones secos
+bls:K701432	Buttom mushroom dried, boiled	champiñones secos cocidos
+bls:K701502	Button mushroom grilled, in oil, canned, drained	champiñones a la parrilla en aceite en conserva, escurridos
+bls:K701902	Button mushroom canned, drained	champiñones en conserva, escurridos
+bls:K702100	Black truffle (Perigord black truffle) raw	trufa negra en crudo
+bls:K702152	Black truffle (Perigord black truffle) stewed	trufa negra estofada
+bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	trufa negra a la plancha
+bls:K702400	Black truffle (Perigord black truffle) dried	trufa negra seca
+bls:K702432	Black truffle (Perigord black truffle) dried, boiled	trufa negra seca cocida
+bls:K702902	Black truffle (Perigord black truffle) canned, drained	trufa negra en conserva, escurrida
+bls:K703100	Morel raw	colmenilla en crudo
+bls:K703152	Morel stewed	colmenilla estofada
+bls:K703182	Morel fried without fat (pan)	colmenilla a la plancha
+bls:K703400	Morel dried	colmenilla seca
+bls:K703432	Morel dried, boiled	colmenilla seca cocida
+bls:K703902	Morel canned, drained	colmenilla en conserva, escurrida
+bls:K704100	Brown birch bolete raw	boleto de abedul en crudo
+bls:K704152	Brown birch bolete stewed	boleto de abedul estofado
+bls:K704182	Brown birch bolete fried without fat (pan)	boleto de abedul a la plancha
+bls:K706100	Brown-yellow boletus (slippery jack) raw	boleto viscoso en crudo
+bls:K706152	Brown-yellow boletus (slippery jack) stewed	boleto viscoso estofado
+bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	boleto viscoso a la plancha
+bls:K706400	Brown-yellow boletus (slippery jack) dried	boleto viscoso seco
+bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	boleto viscoso seco cocido
+bls:K707100	Saffron milk cap (red pine mushroom) raw	níscalo en crudo
+bls:K707152	Saffron milk cap (red pine mushroom) stewed	níscalo estofado
+bls:K707182	Saffron milk cap (red pine mushroom) fried without fat (pan)	níscalo a la plancha
+bls:K709100	Dark honey mushroom raw	seta de miel en crudo
+bls:K709152	Dark honey mushroom stewed	seta de miel estofada
+bls:K709182	Dark honey mushroom fried without fat (pan)	seta de miel a la plancha
+bls:K713062	Chanterelle baked	rebozuelo al horno
+bls:K713100	Chanterelle raw	rebozuelo en crudo
+bls:K713142	Chanterelle braised without fat	rebozuelo estofado sin grasa
+bls:K713152	Chanterelle stewed	rebozuelo estofado
+bls:K713182	Chanterelle fried without fat (pan)	rebozuelo a la plancha
+bls:K713400	Chanterelle dried	rebozuelo seco
+bls:K713432	Chanterelle dried, boiled	rebozuelo seco cocido
+bls:K713902	Chanterelle canned, drained	rebozuelo en conserva, escurrido
+bls:K717100	Orange birch bolete raw	boleto de álamo en crudo
+bls:K717152	Orange birch bolete stewed	boleto de álamo estofado
+bls:K717182	Orange birch bolete fried without fat (pan)	boleto de álamo a la plancha
+bls:K718100	Porcini mushroom raw	boletus en crudo
+bls:K718152	Porcini mushroom stewed	boletus estofado
+bls:K718162	Porcini mushroom baked	boletus al horno
+bls:K718182	Porcini mushroom fried without fat (pan)	boletus a la plancha
+bls:K718400	Porcini mushroom dried	boletus seco
+bls:K718432	Porcini mushroom dried, boiled	boletus seco cocido
+bls:K718902	Porcini mushroom canned, drained	boletus en conserva, escurrido
+bls:K724100	Shiitake mushroom raw	shiitake en crudo
+bls:K724152	Shiitake mushroom stewed	shiitake estofado
+bls:K724182	Shiitake mushroom fried without fat (pan)	shiitake a la plancha
+bls:K724400	Shiitake mushroom dried	shiitake seco
+bls:K724432	Shiitake mushroom dried, boiled	shiitake seco cocido
+bls:K724902	Shiitake mushroom canned, drained	shiitake en conserva, escurrido
+bls:K740100	Oyster mushroom raw	seta de ostra en crudo
+bls:K740152	Oyster mushroom stewed	seta de ostra estofada
+bls:K740182	Oyster mushroom fried without fat (pan)	seta de ostra a la plancha
+bls:K740400	Oyster mushroom dried	seta de ostra seca
+bls:K740432	Oyster mushroom dried, boiled	seta de ostra seca cocida
+bls:K750100	Mixed mushrooms raw	setas variadas en crudo
+bls:K750152	Mixed mushrooms stewed	setas variadas estofadas
+bls:K750162	Mixed mushrooms baked	setas variadas al horno
+bls:K750182	Mixed mushrooms fried without fat (pan)	setas variadas a la plancha
+bls:K750200	Mixed mushrooms deep-frozen	setas variadas congeladas
+bls:K750252	Mixed mushrooms deep-frozen, stewed	setas variadas congeladas estofadas
+bls:K750262	Mixed mushrooms deep-frozen, baked	setas variadas congeladas al horno
+bls:K750282	Mixed mushrooms deep-frozen, fried without fat (pan)	setas variadas congeladas a la plancha
+bls:K750400	Mixed mushrooms dried	setas variadas secas
+bls:K750432	Mixed mushrooms dried, boiled	setas variadas secas cocidas
+bls:K750902	Mixed mushrooms canned, drained	setas variadas en conserva, escurridas
+bls:K762400	Yeast flakes/nutritional yeast	levadura nutricional en copos
+bls:K820000	Vegetarian pate, spread yeast-based	paté vegetal de levadura
+bls:K850500	Cream of mushroom soup instant powder	crema de champiñones en polvo
+bls:K850532	Cream of mushroom soup, made from instant powder and water	crema de champiñones de sobre
+bls:M011000	Sheep's milk min. 4.5 % fat	leche de oveja 4,5 %
+bls:M012100	Roquefort min. 50 % fat in dry matter	queso roquefort 50 % grasa en seco
+bls:M012200	Feta min. 45 % fat in dry matter	queso feta 45 % grasa en seco
+bls:M021000	Goat's milk min. 3 % fat	leche de cabra 3 %
+bls:M032100	Mozzarella min. 45 % fat in dry matter	mozzarella 45 % grasa en seco
+bls:M052000	Brine cheese made from cow's milk, min. 45 % fat in dry matter	queso de salmuera de vaca 45 % grasa en seco
+bls:M053000	Brine cheese made from goat's milk, min. 45 % fat in dry matter	queso de salmuera de cabra 45 % grasa en seco
+bls:M0A1000	Mozzarella min. 20 % fat in dry matter	mozzarella 20 % grasa en seco
+bls:M111100	Milk skimmed, fresh, max. 0.1 % fat, pasteurised	leche desnatada fresca 0,1 % pasteurizada
+bls:M111200	Milk low-fat, fresh, 1.5 % fat, pasteurised	leche semidesnatada fresca 1,5 % pasteurizada
+bls:M111300	Whole milk, fresh, 3.5 % fat, pasteurised	leche entera fresca 3,5 % pasteurizada
+bls:M112300	Certified raw milk, min. 3.5 % fat	leche cruda certificada 3,5 %
+bls:M113100	Milk skimmed, max. 0.5 % fat, ultra-heated	leche desnatada UHT 0,5 %
+bls:M113200	Milk low-fat, 1.5 % fat, ultra-heated	leche semidesnatada UHT 1,5 %
+bls:M113300	Whole milk, 3.5 % fat, ultra-heated	leche entera UHT 3,5 %
+bls:M114100	Milk skimmed, fresh, max. 0.1 % fat, lactose-free, pasteurised	leche desnatada sin lactosa 0,1 %
+bls:M114200	Milk low-fat, fresh, 1.5 % fat, lactose-free, pasteurised	leche semidesnatada sin lactosa 1,5 %
+bls:M114300	Whole milk, fresh, 3.5 % fat, lactose-free, pasteurised	leche entera sin lactosa 3,5 %
+bls:M117700	Cream substitute (mixture of vegetable fats and milk)	sucedáneo de nata vegetal
+bls:M121100	Soured milk (thick) skimmed, max. 0.5 % fat	leche fermentada desnatada 0,5 %
+bls:M121200	Soured milk (thick) low-fat, min. 1.5 % to max. 1.8 % fat	leche fermentada semidesnatada 1,5 %
+bls:M121300	Soured milk (thick) min. 3.5 % fat	leche fermentada entera 3,5 %
+bls:M121500	Soured milk (thick) min. 10 % fat	leche fermentada con nata 10 %
+bls:M130100	Kefir from skimmed milk, max. 0.5 % fat	kéfir desnatado 0,5 %
+bls:M130200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat	kéfir semidesnatado 1,5 %
+bls:M130300	Kefir min. 3.5 % fat	kéfir entero 3,5 %
+bls:M130500	Kefir min. 10 % fat	kéfir de nata 10 %
+bls:M141100	Yogurt from skimmed milk, max. 0.5 % fat	yogur desnatado 0,5 %
+bls:M141200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat	yogur semidesnatado 1,5 %
+bls:M141300	Yogurt mild, min. 3.5 % fat	yogur suave 3,5 %
+bls:M141500	Yogurt min. 10 % fat	yogur con nata 10 %
+bls:M148100	Yogurt from skimmed milk, max. 0.5 % fat, fortified with skimmed milk powder	yogur desnatado 0,5 % con leche en polvo
+bls:M148200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, fortified with skimmed milk powder	yogur semidesnatado 1,5 % con leche en polvo
+bls:M148300	Yogurt min. 3.5 % fat, fortified with skimmed milk powder	yogur 3,5 % con leche en polvo
+bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	yogur con nata 10 % y leche en polvo
+bls:M149500	Yogurt made from sheep's milk	yogur de oveja
+bls:M150000	Buttermilk	bebida de suero de mantequilla
+bls:M161000	Sweet whey	suero dulce
+bls:M162000	Sour whey	suero ácido
+bls:M171500	Coffee cream min. 10 % fat	nata para café 10 %
+bls:M172500	Sour cream min. 10 % fat	nata agria 10 %
+bls:M172700	Sour cream min. 20 % fat	nata agria 20 %
+bls:M172900	Sour cream 40 % fat	nata agria 40 %
+bls:M173800	Whipping cream min. 30 % fat	nata para montar 30 %
+bls:M173900	Whipping cream min. 36 % fat	nata para montar 36 %
+bls:M175800	Spray cream/whipping cream, sweetened, min. 30 % fat	nata en aerosol azucarada 30 %
 bls:M176800	Creme fraiche 30 % fat	crème fraîche 30 %
+bls:M181100	Condensed milk max. 1 % fat, sweetened	leche condensada desnatada azucarada
+bls:M181400	Condensed milk min. 8 % fat, sweetened	leche condensada azucarada 8 %
+bls:M182100	Evaporated milk max. 1 % fat	leche evaporada desnatada
+bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	leche evaporada semidesnatada 1-7,5 %
+bls:M182400	Evaporated milk min. 7.5 % fat	leche evaporada entera 7,5 %
+bls:M182500	Evaporated milk 10 % fat	leche evaporada 10 %
+bls:M1A3100	Milk skimmed, max. 0.5 % fat, lactose-free, ultra-heated	leche desnatada UHT sin lactosa 0,5 %
+bls:M1A5200	Milk low-fat, 1.5 % fat, lactose-free, ultra-heated	leche semidesnatada UHT sin lactosa 1,5 %
+bls:M1A7300	Whole milk, 3.5 % fat, lactose-free, ultra-heated	leche entera UHT sin lactosa 3,5 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	yogur desnatado sin lactosa
-bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero
+bls:M1B2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, lactose-free	yogur semidesnatado sin lactosa 1,5 %
+bls:M1E3300	Yogurt min. 3.5 % fat, lactose-free	yogur sin lactosa 3,5 %
+bls:M200100	Milk drink < 1 % fat, flavoured, sweetened	bebida láctea desnatada aromatizada azucarada
+bls:M200200	Milk drink 1.5 % fat, flavoured, sweetened	bebida láctea 1,5 % aromatizada azucarada
+bls:M200300	Milk drink 3.5 % fat, flavoured, sweetened	bebida láctea 3,5 % aromatizada azucarada
+bls:M206100	Milk drink < 1 % fat, with cocoa/chocolate, sweetened	bebida láctea desnatada con cacao azucarada
+bls:M206200	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened	bebida láctea 1,5 % con cacao azucarada
+bls:M206300	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened	bebida láctea 3,5 % con cacao azucarada
+bls:M208000	Milk drink 3.5 % fat, with coffee, sweetened	bebida láctea 3,5 % con café azucarada
+bls:M231200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	kéfir semidesnatado con fruta azucarado
+bls:M231500	Kefir min. 10 % fat, with fruit preparation, sweetened	kéfir de nata con fruta azucarado
+bls:M241100	Yogurt mild, max. 1 % fat, with fruit preparation, sweetened	yogur suave desnatado con fruta azucarado
+bls:M241200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur semidesnatado con fruta azucarado
+bls:M241300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened	yogur suave con fruta azucarado
+bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	yogur con nata y fruta azucarado
+bls:M246000	Yogurt min. 3.5 % fat, with chocolate preparation, sweetened	yogur con chocolate azucarado
+bls:M248000	Yogurt min. 3.5 % fat, with coffee preparation, sweetened	yogur con café azucarado
+bls:M252000	Buttermilk drink with fruit preparation, sweetened	bebida de suero de mantequilla con fruta azucarada
+bls:M255000	Buttermilk dessert with cream and fruit preparation, sweetened	postre de suero de mantequilla con nata y fruta azucarado
+bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	bebida de suero de mantequilla con fruta, azucarada, con vitaminas
+bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	bebida de suero con zumo de frutas, edulcorante y vitaminas
+bls:M276300	Yogurt min. 3.5 % fat, with fruit-chocolate preparation, sweetened	yogur con fruta y chocolate azucarado
+bls:M293300	Yogurt min. 3.5 % fat, with chocolate-cereal preparation, sweetened	yogur con chocolate y cereales azucarado
+bls:M2A0100	Milk drink < 1 % fat, flavoured, with sugar and artificial sweeteners	bebida láctea desnatada aromatizada con azúcar y edulcorante
+bls:M2A0200	Milk drink 1.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 1,5 % aromatizada azucarada con vitaminas
+bls:M2A0300	Milk drink 3.5 % fat, flavoured, sweetened, fortified with vitamins	bebida láctea 3,5 % aromatizada azucarada con vitaminas
+bls:M2A1100	Milk drink < 1 % fat, flavoured, with artificial sweeteners	bebida láctea desnatada aromatizada con edulcorante
+bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	bebida láctea desnatada probiótica con azúcar, edulcorante y vitaminas
+bls:M2A2200	Milk drink > 1 % fat, probiotic, flavoured, sweetened, fortified with vitamins	bebida láctea probiótica aromatizada azucarada con vitaminas
+bls:M2A3200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened, lactose-free	yogur semidesnatado con fruta azucarado sin lactosa
+bls:M2A3300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened, lactose-free	yogur suave con fruta azucarado sin lactosa
+bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	bebida láctea desnatada con cacao, azúcar y edulcorante
+bls:M2A7200	Milk drink 1.5 % fat, with coffee, sweetened	bebida láctea 1,5 % con café azucarada
+bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	yogur semidesnatado con fruta, azúcar y edulcorante
+bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	yogur desnatado con vainilla, azúcar y edulcorante
+bls:M2H2300	Milkshake 3.5 % fat sweetened	batido 3,5 % azucarado
+bls:M2H7300	Milkshake 3.5 % fat, with cocoa/chocolate, sweetened	batido de chocolate 3,5 % azucarado
+bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	bebida láctea 1,5 % con café y edulcorante
+bls:M2I5200	Milk drink 1.5 % fat, with coffee, unsweetened	bebida láctea 1,5 % con café sin azúcar
+bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	yogur desnatado con fruta, azúcar, edulcorante y vitaminas
+bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	yogur desnatado con fruta, azúcar y edulcorante
+bls:M2J7100	Yogurt drink from skimmed milk, max. 0.5 % fat, with fruit preparation, sweetened	yogur líquido desnatado con fruta azucarado
+bls:M2K7200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit-cereal preparation, sweetened	yogur semidesnatado con fruta y cereales azucarado
+bls:M2L2200	Yogurt drink low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	yogur líquido semidesnatado con fruta azucarado
+bls:M2L2300	Yogurt drink min. 3.5 % fat, with fruit preparation, sweetened	yogur líquido con fruta azucarado
+bls:M2L7300	Yogurt min. 3.5 % fat, with fruit-cereal preparation, sweetened	yogur con fruta y cereales azucarado
+bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	yogur con nata y chocolate azucarado
+bls:M2N1400	Yogurt min. 10 % fat, with vanilla preparation, sweetened	yogur con nata de vainilla azucarado
+bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	yogur con nata, fruta y edulcorante
+bls:M2N6400	Yogurt min. 10 % fat, sweetened	yogur con nata azucarado
+bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 1,5 % con cacao, azucarada, con vitaminas
+bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	bebida láctea 3,5 % con cacao, azucarada, con vitaminas
+bls:M2R2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with vanilla preparation, sweetened	yogur semidesnatado de vainilla azucarado
+bls:M2R7300	Yogurt min. 3.5 % fat, with crunchy-muesli mix, sweetened	yogur con muesli crujiente azucarado
+bls:M2R8300	Yogurt min. 3.5 % fat, with vanilla preparation, sweetened	yogur de vainilla azucarado
+bls:M2R9300	Yogurt min. 3.5 % fat, with nuts, sweetened	yogur con frutos secos azucarado
+bls:M2S8300	Ayran, yogurt drink, salted	ayrán salado
+bls:M300400	Hard cheese min. 30 % fat in dry matter	queso duro 30 % grasa en seco
+bls:M300600	Hard cheese min. 45 % fat in dry matter	queso duro 45 % grasa en seco
+bls:M300700	Hard cheese min. 50 % fat in dry matter	queso duro 50 % grasa en seco
+bls:M301300	Appenzeller cheese min. 20 % fat in dry matter	queso appenzeller 20 % grasa en seco
+bls:M301700	Appenzeller cheese min. 50 % fat in dry matter	queso appenzeller 50 % grasa en seco
+bls:M302600	Bergkäse (Alpine cheese) min. 45 % fat in dry matter	queso de montaña 45 % grasa en seco
+bls:M302700	Bergkäse (Alpine cheese) min. 50 % fat in dry matter	queso de montaña 50 % grasa en seco
+bls:M303600	Chester (Cheddar) cheese min. 45 % fat in dry matter	queso cheddar 45 % grasa en seco
+bls:M303700	Chester (Cheddar) cheese min. 50 % fat in dry matter	queso cheddar 50 % grasa en seco
+bls:M304600	Emmentaler cheese min. 45 % fat in dry matter	queso emmental 45 % grasa en seco
+bls:M305700	Gruyère cheese min. 50 % fat in dry matter	queso gruyère 50 % grasa en seco
+bls:M306400	Parmesan cheese min. 30 % fat in dry matter	queso parmesano 30 % grasa en seco
+bls:M307700	Raclette cheese min. 45 % fat in dry matter	queso raclette 45 % grasa en seco
+bls:M309600	Jarlsberg cheese min. 45 % fat in dry matter	queso jarlsberg 45 % grasa en seco
+bls:M313600	Provolone cheese min. 45 % fat in dry matter	queso provolone 45 % grasa en seco
+bls:M3A4300	Brine cheese made from sheep's milk, min. 20 % fat in dry matter	queso de salmuera de oveja 20 % grasa en seco
+bls:M400300	Semi-hard cheese min. 20 % fat in dry matter	queso semiduro 20 % grasa en seco
+bls:M400400	Semi-hard cheese min. 30 % fat in dry matter	queso semiduro 30 % grasa en seco
+bls:M400500	Semi-hard cheese min. 40 % fat in dry matter	queso semiduro 40 % grasa en seco
+bls:M400600	Semi-hard cheese min. 45 % fat in dry matter	queso semiduro 45 % grasa en seco
+bls:M400700	Semi-hard cheese min. 50 % fat in dry matter	queso semiduro 50 % grasa en seco
+bls:M400800	Semi-hard cheese min. 60 % fat in dry matter	queso semiduro 60 % grasa en seco
+bls:M401400	Edam cheese min. 30 % fat in dry matter	queso edam 30 % grasa en seco
+bls:M401500	Edam cheese min. 40 % fat in dry matter	queso edam 40 % grasa en seco
+bls:M401600	Edam cheese min. 45 % fat in dry matter	queso edam 45 % grasa en seco
+bls:M401700	Edam cheese min. 50 % fat in dry matter	queso edam 50 % grasa en seco
+bls:M402400	Gouda cheese min. 30 % fat in dry matter	queso gouda 30 % grasa en seco
+bls:M402500	Gouda cheese min. 40 % fat in dry matter	queso gouda 40 % grasa en seco
+bls:M402600	Gouda cheese 48 % fat in dry matter	queso gouda 48 % grasa en seco
+bls:M403400	Tilsit cheese min. 30 % fat in dry matter	queso tilsit 30 % grasa en seco
+bls:M403500	Tilsit cheese min. 40 % fat in dry matter	queso tilsit 40 % grasa en seco
+bls:M403600	Tilsit cheese min. 45 % fat in dry matter	queso tilsit 45 % grasa en seco
+bls:M403700	Tilsit cheese min. 50 % fat in dry matter	queso tilsit 50 % grasa en seco
+bls:M403800	Tilsit cheese min. 60 % fat in dry matter	queso tilsit 60 % grasa en seco
+bls:M404600	Wilstermarsch cheese min. 45 % fat in dry matter	queso wilstermarsch 45 % grasa en seco
+bls:M404700	Wilstermarsch cheese min. 50 % fat in dry matter	queso wilstermarsch 50 % grasa en seco
+bls:M406700	Fontina cheese min. 50 % fat in dry matter	queso fontina 50 % grasa en seco
+bls:M410700	Semi-hard cheese made from sheep's milk, min. 50 % fat in dry matter	queso semiduro de oveja 50 % grasa en seco
+bls:M500300	Semi-soft cheese min. 20 % fat in dry matter	queso semiblando 20 % grasa en seco
+bls:M500400	Semi-soft cheese min. 30 % fat in dry matter	queso semiblando 30 % grasa en seco
+bls:M500500	Semi-soft cheese min. 40 % fat in dry matter	queso semiblando 40 % grasa en seco
+bls:M500600	Semi-soft cheese min. 45 % fat in dry matter	queso semiblando 45 % grasa en seco
+bls:M500700	Semi-soft cheese min. 50 % fat in dry matter	queso semiblando 50 % grasa en seco
+bls:M500800	Semi-soft cheese min. 60 % fat in dry matter	queso semiblando 60 % grasa en seco
+bls:M501600	Butterkäse cheese min. 45 % fat in dry matter	queso butterkäse 45 % grasa en seco
+bls:M501700	Butterkäse cheese min. 50 % fat in dry matter	queso butterkäse 50 % grasa en seco
+bls:M501800	Butterkäse cheese min. 60 % fat in dry matter	queso butterkäse 60 % grasa en seco
+bls:M502600	Blue cheese min. 45 % fat in dry matter	queso azul 45 % grasa en seco
+bls:M502700	Blue cheese min. 50 % fat in dry matter	queso azul 50 % grasa en seco
+bls:M502800	Blue cheese min. 60 % fat in dry matter	queso azul 60 % grasa en seco
+bls:M503400	Steinbuscher cheese min. 30 % fat in dry matter	queso steinbuscher 30 % grasa en seco
+bls:M503600	Steinbuscher cheese min. 45 % fat in dry matter	queso steinbuscher 45 % grasa en seco
+bls:M503700	Steinbuscher cheese min. 50 % fat in dry matter	queso steinbuscher 50 % grasa en seco
+bls:M504500	Weisslacker cheese min. 40 % fat in dry matter	queso weisslacker 40 % grasa en seco
+bls:M504600	Weisslacker cheese min. 45 % fat in dry matter	queso weisslacker 45 % grasa en seco
+bls:M504700	Weisslacker cheese min. 50 % fat in dry matter	queso weisslacker 50 % grasa en seco
+bls:M505600	Trappista cheese min. 45 % fat in dry matter	queso trappista 45 % grasa en seco
+bls:M505700	Trappista cheese min. 50 % fat in dry matter	queso trappista 50 % grasa en seco
+bls:M506600	Danbo cheese min. 45 % fat in dry matter	queso danbo 45 % grasa en seco
+bls:M507600	Esrom cheese min. 45 % fat in dry matter	queso esrom 45 % grasa en seco
+bls:M508600	Havarti cheese min. 45 % fat in dry matter	queso havarti 45 % grasa en seco
+bls:M512400	Steppenkäse cheese min. 30 % fat in dry matter	queso steppenkäse 30 % grasa en seco
+bls:M512600	Steppenkäse cheese min. 45 % fat in dry matter	queso steppenkäse 45 % grasa en seco
+bls:M516700	Danish Blue cheese min. 50 % fat in dry matter	queso danablu 50 % grasa en seco
+bls:M524500	Halloumi cheese	queso halloumi
+bls:M524562	Halloumi cheese baked	queso halloumi al horno
+bls:M524572	Halloumi cheese grilled	queso halloumi a la parrilla
+bls:M524582	Halloumi cheese fried without fat (pan)	queso halloumi a la plancha
+bls:M5B1600	Gorgonzola cheese min. 48 % fat in dry matter	queso gorgonzola 48 % grasa en seco
+bls:M600300	Soft cheese min. 20 % fat in dry matter	queso blando 20 % grasa en seco
+bls:M600400	Soft cheese min. 30 % fat in dry matter	queso blando 30 % grasa en seco
+bls:M600500	Soft cheese min. 40 % fat in dry matter	queso blando 40 % grasa en seco
+bls:M600600	Soft cheese min. 45 % fat in dry matter	queso blando 45 % grasa en seco
+bls:M600700	Soft cheese min. 50 % fat in dry matter	queso blando 50 % grasa en seco
+bls:M600800	Soft cheese min. 60 % fat in dry matter	queso blando 60 % grasa en seco
+bls:M600900	Soft cheese min. 70 % fat in dry matter	queso blando 70 % grasa en seco
+bls:M601600	Brie cheese min. 45 % fat in dry matter	queso brie 45 % grasa en seco
+bls:M601700	Brie cheese min. 50 % fat in dry matter	queso brie 50 % grasa en seco
+bls:M601800	Brie cheese min. 60 % fat in dry matter	queso brie 60 % grasa en seco
+bls:M602400	Camembert cheese min. 30 % fat in dry matter	queso camembert 30 % grasa en seco
+bls:M602600	Camembert cheese min. 45 % fat in dry matter	queso camembert 45 % grasa en seco
+bls:M602700	Camembert cheese min. 50 % fat in dry matter	queso camembert 50 % grasa en seco
+bls:M602800	Camembert cheese min. 60 % fat in dry matter	queso camembert 60 % grasa en seco
+bls:M603300	Limburger cheese min. 20 % fat in dry matter	queso limburger 20 % grasa en seco
+bls:M603500	Limburger cheese min. 40 % fat in dry matter	queso limburger 40 % grasa en seco
+bls:M603700	Limburger cheese min. 50 % fat in dry matter	queso limburger 50 % grasa en seco
+bls:M604600	Muenster cheese min. 45 % fat in dry matter	queso münster 45 % grasa en seco
+bls:M604700	Muenster cheese min. 50 % fat in dry matter	queso münster 50 % grasa en seco
+bls:M605300	Romadur cheese min. 20 % fat in dry matter	queso romadur 20 % grasa en seco
+bls:M605500	Romadur cheese min. 40 % fat in dry matter	queso romadur 40 % grasa en seco
+bls:M605700	Romadur cheese min. 50 % fat in dry matter	queso romadur 50 % grasa en seco
+bls:M609600	Wine cheese, soft cheese, min. 45 % fat in dry matter	queso al vino blando 45 % grasa en seco
+bls:M609800	Wine cheese, soft cheese, min. 60 % fat in dry matter	queso al vino blando 60 % grasa en seco
+bls:M619700	Bel Paese cheese min. 50 % fat in dry matter	queso bel paese 50 % grasa en seco
+bls:M6A3700	Semi-hard cheese made from goat's milk, min. 50 % fat in dry matter	queso semiduro de cabra 50 % grasa en seco
+bls:M6A5700	Soft cheese made from sheep's milk, min. 45 % fat in dry matter	queso blando de oveja 45 % grasa en seco
+bls:M6A6800	Brine cheese made from sheep's milk, min. 45 % fat in dry matter	queso de salmuera de oveja 45 % grasa en seco
+bls:M6A9600	Soft cheese made from goat's milk, min. 45 % fat in dry matter	queso blando de cabra 45 % grasa en seco
+bls:M710100	Skyr Icelandic style strained yogurt < 10 % fat in dry matter	skyr
+bls:M710700	Cream cheese preparation min. 50 % fat in dry matter	queso crema 50 % grasa en seco
+bls:M710800	Cream cheese preparation min. 60 % fat in dry matter	queso crema 60 % grasa en seco
+bls:M711100	Cottage cheese < 10 % fat in dry matter	queso cottage desnatado
+bls:M711300	Cottage cheese min. 20 % fat in dry matter	queso cottage 20 % grasa en seco
+bls:M712200	Layered cheese min. 10 % fat in dry matter	queso en capas 10 % grasa en seco
+bls:M712300	Layered cheese min. 20 % fat in dry matter	queso en capas 20 % grasa en seco
+bls:M712500	Layered cheese min. 40 % fat in dry matter	queso en capas 40 % grasa en seco
+bls:M713100	Quark < 10 % fat in dry matter	requesón desnatado
+bls:M713200	Quark 10 % fat in dry matter	requesón 10 % grasa en seco
+bls:M713300	Quark 20 % fat in dry matter	requesón 20 % grasa en seco
+bls:M713500	Quark 40 % fat in dry matter	requesón 40 % grasa en seco
+bls:M713700	Quark 50 % fat in dry matter	requesón 50 % grasa en seco
+bls:M715800	Spread made from vegetable fats, cream, skimmed yogurt	crema para untar vegetal con nata y yogur
+bls:M730100	Soured milk cheese < 10 % fat in dry matter	queso de leche agria desnatado
+bls:M741600	Ricotta min. 45 % fat in dry matter	queso ricotta 45 % grasa en seco
+bls:M771300	Processed cheese sliceable min. 20 % fat in dry matter	queso fundido en lonchas 20 % grasa en seco
+bls:M771400	Processed cheese sliceable min. 30 % fat in dry matter	queso fundido en lonchas 30 % grasa en seco
+bls:M771600	Processed cheese sliceable min. 45 % fat in dry matter	queso fundido en lonchas 45 % grasa en seco
+bls:M771700	Processed cheese sliceable min. 50 % fat in dry matter	queso fundido en lonchas 50 % grasa en seco
+bls:M772800	Processed cheese made from cream cheese, spreadable, min. 60 % fat in dry matter	queso fundido para untar 60 % grasa en seco
+bls:M780100	German cooked cheese < 10 % fat in dry matter	queso cocido desnatado
+bls:M780200	German cooked cheese min. 10 % fat in dry matter	queso cocido 10 % grasa en seco
+bls:M780300	German cooked cheese min. 20 % fat in dry matter	queso cocido 20 % grasa en seco
+bls:M780500	German cooked cheese min. 40 % fat in dry matter	queso cocido 40 % grasa en seco
+bls:M7A1600	Cream cheese made from goat's milk, min. 45 % fat in dry matter	queso crema de cabra 45 % grasa en seco
+bls:M7A6800	Mascarpone min. 80 % fat in dry matter	queso mascarpone 80 % grasa en seco
+bls:M7B1600	Cream cheese made from sheep's milk, min. 45 % fat in dry matter	queso crema de oveja 45 % grasa en seco
+bls:M810300	Processed cheese preparation min. 20 % fat in dry matter	preparado de queso fundido 20 % grasa en seco
+bls:M810400	Processed cheese preparation min. 30 % fat in dry matter	preparado de queso fundido 30 % grasa en seco
+bls:M810500	Processed cheese preparation min. 40 % fat in dry matter	preparado de queso fundido 40 % grasa en seco
+bls:M810600	Processed cheese preparation 45 - 52 % fat in dry matter	preparado de queso fundido 45-52 % grasa en seco
+bls:M813700	Processed cheese preparation 45 - 52 % fat in dry matter, with ham	preparado de queso fundido 45-52 % grasa en seco con jamón
+bls:M816000	Processed cheese preparation 45 - 52 % fat in dry matter, with nuts	preparado de queso fundido 45-52 % grasa en seco con frutos secos
+bls:M820100	Cream cheese preparation < 10 % fat in dry matter	queso cremoso desnatado
+bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero 10 % grasa en seco
+bls:M820500	Cream cheese preparation min. 40 % fat in dry matter	queso crema 40 % grasa en seco
+bls:M820600	Cream cheese preparation min. 45 % fat in dry matter	queso crema 45 % grasa en seco
+bls:M821300	Dessert with yogurt mild, cream cheese and fruit preparation, sweetened	postre de yogur y queso crema con fruta azucarado
+bls:M827100	Cream cheese preparation < 10 % fat in dry matter, with vegetables/herbs	queso crema desnatado con verduras y hierbas
+bls:M827200	Cream cheese preparation min. 10 % fat in dry matter, with vegetables/herbs	queso crema 10 % grasa en seco con verduras y hierbas
+bls:M827300	Cream cheese preparation min. 20 % fat in dry matter, with vegetables/herbs	queso crema 20 % grasa en seco con verduras y hierbas
+bls:M827400	Cream cheese preparation min. 30 % fat in dry matter, with vegetables/herbs	queso crema 30 % grasa en seco con verduras y hierbas
+bls:M827500	Cream cheese preparation min. 40 % fat in dry matter, with vegetables/herbs	queso crema 40 % grasa en seco con verduras y hierbas
+bls:M827700	Cream cheese preparation min. 50 % fat in dry matter, with vegetables/herbs	queso crema 50 % grasa en seco con verduras y hierbas
+bls:M827800	Cream cheese preparation min. 60 % fat in dry matter, with vegetables/herbs	queso crema 60 % grasa en seco con verduras y hierbas
+bls:M831100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón desnatado con fruta azucarado
+bls:M831300	Quark preparation min. 20 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón 20 % grasa en seco con fruta azucarado
+bls:M831500	Quark preparation min. 40 % fat in dry matter, with fruit preparation, sweetened	preparado de requesón 40 % grasa en seco con fruta azucarado
+bls:M832100	Quark preparation < 10 % fat in dry matter, with vanilla preparation, sweetened	preparado de requesón desnatado de vainilla azucarado
+bls:M837500	Quark preparation min. 40 % fat in dry matter, with herbs	preparado de requesón 40 % grasa en seco con hierbas
+bls:M856000	Semolina pudding with cream and fruit sauce, sweetened	pudín de sémola con nata y salsa de frutas azucarado
+bls:M857000	Semolina pudding with cream, sweetened	pudín de sémola con nata azucarado
+bls:M861000	Mousse au chocolat (milk-based) sweetened	mousse de chocolate lácteo azucarado
+bls:M863000	Obatzter/Obazda (Bavarian cheese spread) 60 % fat in dry matter	obatzda 60 % grasa en seco
+bls:M881000	Milk powder with high fat content (cream powder)	nata en polvo
+bls:M882000	Whole milk powder	leche entera en polvo
+bls:M884000	Skimmed milk powder	leche desnatada en polvo
+bls:M886000	Buttermilk powder	suero de mantequilla en polvo
+bls:M887000	Sweet whey powder	suero dulce en polvo
+bls:M8A1200	Cream cheese preparation min. 10 % fat in dry matter, with fruit preparation, sweetened, fortified with vitamin D and Calcium	queso crema 10 % grasa en seco con fruta, azucarado, con vitamina D y calcio
+bls:M8A1300	Cream cheese preparation min. 20 % fat in dry matter, with fruit preparation, sweetened, fortified with Calcium	queso crema 20 % grasa en seco con fruta, azucarado, con calcio
+bls:M8A4000	Quark preparation min. 10 % fat in dry matter, with herbs	preparado de requesón 10 % grasa en seco con hierbas
+bls:M8A5000	Quark preparation min. 20 % fat in dry matter, with herbs	preparado de requesón 20 % grasa en seco con hierbas
+bls:M8A6000	Quark preparation min. 30 % fat in dry matter, with herbs	preparado de requesón 30 % grasa en seco con hierbas
+bls:M8B2100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sugar and artificial sweeteners	preparado de requesón desnatado con fruta, azúcar y edulcorante
+bls:M8C3300	Quark preparation min. 20 % fat in dry matter, with vanilla preparation, sweetened	preparado de requesón 20 % grasa en seco de vainilla azucarado
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	agua con sabor sin azúcar
+bls:N002000	Nearwater/Aqua Plus beverage, flavoured, sweetened	agua con sabor azucarada
+bls:N003000	Aperitif alcohol-free	aperitivo sin alcohol
+bls:N005000	Sparkling wine alcohol-free	cava sin alcohol
+bls:N014000	Wine alcohol-free	vino desalcoholizado
+bls:N019000	Iced tea lemon-peach-flavoured, sweetened	té frío sabor limón y melocotón azucarado
+bls:N0A1000	Nearwater/Aqua Plus beverage, with fruit juice, flavoured, sweetened	agua con sabor y zumo de frutas azucarada
+bls:N0A1100	Nearwater/Aqua Plus beverage, flavoured, with sugar and artificial sweeteners	agua con sabor, azúcar y edulcorante
+bls:N110000	Drinking water	agua potable
+bls:N120000	Natural mineral water	agua mineral
+bls:N127000	Natural mineral water carbonated	agua mineral con gas
+bls:N128000	Natural mineral water still	agua mineral sin gas
+bls:N130000	Natural mineral water with low mineral content	agua mineral de mineralización débil
+bls:N160000	Spring water	agua de manantial
+bls:N210000	Fruit juice beverage apple	bebida de zumo de manzana
+bls:N220000	Fruit juice beverage cherry	bebida de zumo de cereza
+bls:N230000	Fruit juice beverage currant	bebida de zumo de grosella
+bls:N250000	Fruit juice beverage citrus fruit	bebida de zumo de cítricos
+bls:N251000	Fruit juice beverage with sugar and artificial sweeteners	bebida de zumo con azúcar y edulcorante
+bls:N252000	Fruit juice beverage fortified with vitamins	bebida de zumo con vitaminas
+bls:N253000	Fruit juice beverage with artificial sweeteners, fortified with vitamins	bebida de zumo con edulcorante y vitaminas
+bls:N256000	Apple juice spritzer	zumo de manzana con agua con gas
+bls:N257000	Orange juice spritzer	zumo de naranja con agua con gas
+bls:N258000	Grape juice spritzer	zumo de uva con agua con gas
+bls:N259000	Isotonic beverage, sweetened, fortified with vitamins and minerals	bebida isotónica azucarada con vitaminas y minerales
+bls:N260000	Isotonic beverage with sugar and artificial sweeteners, fortified with vitamins and minerals	bebida isotónica con azúcar, edulcorante, vitaminas y minerales
+bls:N261000	Cherry nectar spritzer	néctar de cereza con agua con gas
+bls:N261700	Peach-maracuja fruit nectar	néctar de melocotón y maracuyá
+bls:N262000	Pear juice spritzer	zumo de pera con agua con gas
+bls:N264000	Currant juice spritzer	néctar de grosella con agua con gas
+bls:N265000	Fruit juice beverage ACE fortified	bebida de zumo con vitaminas ACE
+bls:N270000	Grapefruit juice spritzer	zumo de pomelo con agua con gas
+bls:N271000	Multi-fruit juice spritzer	zumo multifruta con agua con gas
+bls:N272000	Carrot juice spritzer	zumo de zanahoria con agua con gas
+bls:N273000	Pineapple juice spritzer	zumo de piña con agua con gas
+bls:N274000	Banana nectar spritzer	néctar de plátano con agua con gas
+bls:N276000	Peach-maracuja nectar spritzer	néctar de melocotón y maracuyá con agua con gas
+bls:N277000	Multi-fruit juice spritzer fortified with vitamins (multivitamin juice spritzer)	zumo multivitaminas con agua con gas
+bls:N310300	Orange soft drink	naranjada
+bls:N310400	Carbonated lemonade	gaseosa
+bls:N311000	Carbonated soft drink with artificial sweeteners	refresco con edulcorante
+bls:N312000	Carbonated soft drink with higher fruit juice content	refresco con más zumo
+bls:N314000	Carbonated soft drink with quinine	tónica con quinina
+bls:N315000	Ginger Ale	ginger ale
+bls:N316000	Carbonated soft drink with spice extracts and artificial sweeteners	refresco de especias con edulcorante
+bls:N321000	Carbonated sherbet with sugar and artificial sweeteners	refresco efervescente con azúcar y edulcorante
+bls:N323000	Carbonated sherbet	refresco efervescente
+bls:N330000	Cola beverage caffeinated	cola con cafeína
+bls:N331000	Cola beverage caffeinated, with artificial sweeteners	cola con cafeína y edulcorante
+bls:N340000	Cola beverage decaffeinated	cola sin cafeína
+bls:N352000	Cola beverage decaffeinated, with artificial sweeteners	cola sin cafeína con edulcorante
+bls:N390100	Cola Mix (cola beverage caffeinated with orange soft drink)	cola con naranja
+bls:N410100	Coffee (infusion)	café de filtro
+bls:N410200	Coffee (infusion) with milk 3.5 % fat	café con leche 3,5 %
+bls:N410300	Coffee (infusion) with milk 3.5 % fat and sugar	café con leche 3,5 % y azúcar
+bls:N410400	Coffee (infusion) with evaporated milk 7.5 % fat	café con leche evaporada 7,5 %
+bls:N410500	Coffee (infusion) with evaporated milk 7.5 % fat and sugar	café con leche evaporada 7,5 % y azúcar
+bls:N410600	Coffee (infusion) with sugar	café de filtro con azúcar
+bls:N410800	Coffee (infusion) with alcohol	café con alcohol
+bls:N411100	Espresso (infusion)	espresso
+bls:N411200	Espresso (infusion) with sugar	espresso con azúcar
+bls:N412900	Cappuccino (infusion) made from sweetened instant powder	capuchino de sobre azucarado
+bls:N414000	Cappuccino (infusion) with milk 3.5 % fat	capuchino con leche 3,5 %
+bls:N414100	Coffee (infusion) decaffeinated, with milk 3.5 % fat	café descafeinado con leche 3,5 %
+bls:N414200	Coffee (infusion) decaffeinated, with evaporated milk 7.5 % fat	café descafeinado con leche evaporada 7,5 %
+bls:N415000	Coffee (infusion) decaffeinated	café descafeinado
+bls:N416000	Coffee (infusion) caffeine-reduced	café bajo en cafeína
+bls:N418000	Latte Macchiato (infusion) with milk 3.5 % fat	latte macchiato con leche 3,5 %
+bls:N419000	Turkish mocha (infusion)	café a la turca
+bls:N420100	Coffee (infusion) made from instant powder	café instantáneo
+bls:N420900	Coffee instant powder	café en polvo instantáneo
+bls:N440100	Coffee (infusion) made from decaffeinated instant powder	café descafeinado instantáneo
+bls:N440900	Coffee instant powder decaffeinated	café en polvo instantáneo descafeinado
+bls:N491000	Coffee (infusion) half and half, with milk 3.5 % fat	café con leche 50/50
+bls:N4A0000	Coffee (infusion) with oat drink, unsweetened	café con bebida de avena sin azúcar
+bls:N4A1000	Coffee (infusion) with almond drink, unsweetened	café con bebida de almendra sin azúcar
+bls:N4A2000	Coffee (infusion) with soya drink, unsweetened	café con bebida de soja sin azúcar
+bls:N4A3300	Cappuccino (infusion) with milk 3.5 % fat and sugar	capuchino con leche 3,5 % y azúcar
+bls:N500100	Coffee substitute (infusion)	sucedáneo de café en infusión
+bls:N500200	Coffee substitute (infusion) with milk 3.5 % fat	sucedáneo de café con leche 3,5 %
+bls:N500300	Coffee substitute (infusion) with milk 3.5 % fat and sugar	sucedáneo de café con leche 3,5 % y azúcar
+bls:N500400	Coffee substitute (infusion) with evaporated milk 7.5 % fat	sucedáneo de café con leche evaporada 7,5 %
+bls:N500500	Coffee substitute (infusion) with evaporated milk 7.5 % fat and sugar	sucedáneo de café con leche evaporada 7,5 % y azúcar
+bls:N500600	Coffee substitute (infusion) with sugar	sucedáneo de café con azúcar
+bls:N500800	Coffee substitute (infusion) with alcohol	sucedáneo de café con alcohol
+bls:N500900	Coffee substitute powder	sucedáneo de café en polvo
+bls:N503900	Cappuccino instant powder, sweetened	capuchino en polvo azucarado
+bls:N540100	Chicory coffee (infusion)	café de achicoria
+bls:N540900	Chicory coffee powder	achicoria en polvo
+bls:N5A0000	Coffee substitute (infusion) with oat drink, unsweetened	sucedáneo de café con bebida de avena sin azúcar
+bls:N5A1000	Coffee substitute (infusion) with almond drink, unsweetened	sucedáneo de café con bebida de almendra sin azúcar
+bls:N5A2000	Coffee substitute (infusion) with soya drink, unsweetened	sucedáneo de café con bebida de soja sin azúcar
+bls:N601000	Rooibos tea (infusion)	rooibos
+bls:N610100	Green tea (infusion)	infusión de té verde
+bls:N611000	Mate tea (infusion)	mate
+bls:N630000	Black tea (infusion)	infusión de té negro
+bls:N630200	Black tea (infusion) with milk 3.5 % fat	té negro con leche 3,5 %
+bls:N630300	Black tea (infusion) with milk 3.5 % fat and sugar	té negro con leche 3,5 % y azúcar
+bls:N630400	Black tea (infusion) with cream 30 % fat	té negro con nata 30 %
+bls:N630500	Black tea (infusion) with cream 30 % fat and sugar	té negro con nata 30 % y azúcar
+bls:N630600	Black tea (infusion) with sugar	té negro con azúcar
+bls:N630700	Black tea (infusion) with lemon juice and sugar	té negro con zumo de limón y azúcar
+bls:N630800	Black tea (infusion) with alcohol	té negro con alcohol
+bls:N670100	Black tea (infusion) decaffeinated	infusión de té negro descafeinado
+bls:N710000	Fruit tea (infusion)	té de frutas
+bls:N710600	Fruit tea (infusion) with sugar	té de frutas con azúcar
+bls:N720100	Herbal tea (infusion)	tisana
+bls:N720200	Herbal tea (infusion) with milk 3.5 % fat	infusión de hierbas con leche 3,5 %
+bls:N720300	Herbal tea (infusion) with milk 3.5 % fat and sugar	infusión de hierbas con leche 3,5 % y azúcar
+bls:N720400	Herbal tea (infusion) with cream 30 % fat	infusión de hierbas con nata 30 %
+bls:N720500	Herbal tea (infusion) with cream 30 % fat and sugar	infusión de hierbas con nata 30 % y azúcar
+bls:N720600	Herbal tea (infusion) with sugar	infusión de hierbas con azúcar
+bls:N720800	Herbal tea (infusion) with alcohol	infusión de hierbas con alcohol
+bls:N721000	Peppermint tea (infusion)	té de menta
+bls:P122000	Malt drink, alcohol-free	bebida de malta sin alcohol
+bls:P150000	Wheat beer filtered	cerveza de trigo filtrada
+bls:P151100	Wheat beer, naturally cloudy	cerveza de trigo sin filtrar
+bls:P151110	Wheat beer alcohol-free	cerveza de trigo sin alcohol
+bls:P151120	Wheat beer 0.0 % vol	cerveza de trigo 0,0 %
+bls:P153000	Dark beer (medium-gravity beer) top-fermented	cerveza alt
+bls:P154000	Koelsch (beer from Cologne)	cerveza kölsch
+bls:P161000	Pale beer	cerveza lager clara
+bls:P162000	Pale export beer	cerveza export clara
+bls:P163000	Pilsner beer	cerveza pilsner
+bls:P163100	Pilsner beer alcohol-free	cerveza pilsner sin alcohol
+bls:P163110	Pilsner beer 0.0 % vol	cerveza pilsner 0,0 %
+bls:P165000	Dark beer	cerveza oscura
+bls:P166000	Dark export beer	cerveza export oscura
+bls:P167000	Black beer	cerveza negra
+bls:P172000	Bock beer (original wort > 16 %)	cerveza bock
+bls:P174000	Doppelbock beer (original wort min. 18 %)	cerveza doppelbock
+bls:P177000	Stout	stout
 bls:P192000	Pilsner beer mixed with carbonated lemonade	cerveza con gaseosa (clara)
+bls:P194000	Punch with top-fermented dark beer	ponche con cerveza alt
+bls:P195000	Beer with sparkling wine	cerveza con cava
+bls:P196000	Berlin draught beer with fruit syrup	berliner weisse con sirope de frutas
+bls:P197000	Beer reduced carbohydrate content	cerveza baja en carbohidratos
+bls:P1A1100	Wheat beer with cola	cerveza de trigo con cola
+bls:P1A1110	Wheat beer with fruit nectar	cerveza de trigo con néctar de frutas
+bls:P1A1120	Wheat beer, alcohol-free, mixed with carbonated lemonade	radler de trigo sin alcohol
+bls:P1A1130	Wheat beer mixed with carbonated lemonade	radler de trigo
+bls:P1A3000	Pilsner beer mixed with cola	cerveza pilsner con cola
+bls:P1A3100	Pilsner beer, alcohol-free, mixed with carbonated lemonade	radler sin alcohol
+bls:P1A3110	Pilsner beer mixed with mineral water	radler con agua con gas
+bls:P1A4000	Light beer	cerveza ligera
+bls:P210000	White wine dry	vino blanco seco
+bls:P219000	Ice wine	vino de hielo
+bls:P220000	White wine medium dry	vino blanco semiseco
+bls:P230000	White wine medium sweet	vino blanco semidulce
+bls:P231000	White wine sweet	vino blanco dulce
+bls:P232000	White wine Beerenauslese/Trockenbeerenauslese	vino blanco beerenauslese
+bls:P253000	Red wine medium dry	vino tinto semiseco
+bls:P273000	Rose wine dry	vino rosado seco
+bls:P273100	Rotling wine dry	vino rotling seco
+bls:P281000	Mulled wine	vino caliente
+bls:P285000	White wine spritzer with mineral water	vino blanco con agua con gas
+bls:P285100	White wine spritzer with carbonated lemonade	vino blanco con gaseosa
+bls:P287000	Cold duck (punch made from wine and sparkling wine)	ponche de vino y cava
+bls:P288100	Strawberry punch	ponche de fresa
+bls:P288300	Pineapple punch	ponche de piña
+bls:P288600	Red wine punch	ponche de vino tinto
+bls:P289000	Federweisser (still fermenting young wine)	vino joven en fermentación
+bls:P2A1000	Red wine sweet	vino tinto dulce
+bls:P2A2000	Red wine medium sweet	vino tinto semidulce
+bls:P2A3000	Red wine dry	vino tinto seco
+bls:P2A6000	Quality sparkling wine dry	cava seco
+bls:P2A6100	Quality sparkling wine extra dry	cava extra seco
+bls:P2A6110	Quality sparkling wine brut	cava brut
+bls:P2A7000	Quality sparkling wine sweet	cava dulce
+bls:P2A7100	Quality sparkling wine medium dry	cava semiseco
+bls:P2B1000	Rose wine sweet	vino rosado dulce
+bls:P2B1100	Rose wine medium sweet	vino rosado semidulce
+bls:P2B1200	Rose wine medium dry	vino rosado semiseco
+bls:P330000	Pearl wine/pearl wine with added carbonic acid, dry	vino perlado seco
+bls:P341300	Vermouth dry	vermut seco
+bls:P341600	Vermouth sweet	vermut dulce
+bls:P350000	Fruit wine	vino de frutas
+bls:P353100	Cider	sidra de manzana
+bls:P355000	Apple must	mosto de manzana
+bls:P3A2000	Sparkling wine with orange juice	cava con zumo de naranja
+bls:P431000	Port wine	oporto
+bls:P432000	Madeira wine	madeira
+bls:P461000	Sherry dry	jerez seco
+bls:P462000	Sherry medium dry	jerez semiseco
+bls:P463000	Sherry cream	jerez cream
 bls:P464000	Sherry sweet	jerez dulce
+bls:P510000	Fruit juice liqueur	licor de zumo de frutas
+bls:P530000	Fruit aroma liqueur	licor de frutas
+bls:P540100	Almond liqueur	licor de almendra
+bls:P546000	Egg liqueur	licor de huevo
+bls:P550000	Coffee/cocoa liqueur, without milk/cream	licor de café y cacao sin nata
 bls:P560000	Bitter/herb/spice liqueur	licor de hierbas amargo
+bls:P560100	Bitter liqueur 11 % vol	licor amargo 11 %
+bls:P571000	Apfelkorn (apple flavoured liqueur)	licor de manzana apfelkorn
+bls:P5A1000	Cream liqueur	licor de nata
+bls:P5A2000	Fruit cream liqueur	crema de licor de frutas
+bls:P5A5000	Coffee/chocolate liqueur, with milk/cream	licor de café y chocolate con nata
+bls:P610000	Cognac	coñac
+bls:P620000	Brandy/Weinbrand	brandy
+bls:P640000	Calvados	calvados
+bls:P712000	Vodka	vodka
+bls:P721000	Juniper-flavoured spirit drink	aguardiente de enebro
+bls:P722000	Gin	ginebra
+bls:P730000	Grain spirit	aguardiente de grano
+bls:P733000	Whisky/whiskey	whisky
+bls:P740000	Sugarcane spirit	cachaza
+bls:P741000	Rum 37.5/40 % vol	ron 40 %
+bls:P742000	Arrack	arrak
+bls:P743000	Rum 80 % vol	ron 80 %
+bls:P752100	Fruit spirit	aguardiente de frutas
+bls:P754100	Fruit geist	espirituoso de frutas
+bls:P7A1000	Aniseed-flavoured spirit drink	licor de anís
+bls:P7A1100	Aniseed-flavoured spirit drink, with water	anís con agua
+bls:P7A2000	Bitter-tasting spirit drink or bitter	bitter
+bls:P7A3000	Caraway-flavoured spirit drink or Kümmel/Aquavit	aguardiente de cominos
+bls:P7A4000	Agave spirit (Mezcal/Tequila)	mezcal/tequila (destilado de agave)
+bls:P8A2000	Alcopops	refrescos con alcohol
+bls:P8A3000	Egg nog	ponche de huevo caliente
+bls:P9A4000	Cocktail, Gin and tonic	cóctel gin-tonic
+bls:P9A5000	Cocktail, Touch down	cóctel Touch Down
+bls:P9A5100	Cocktail, Bloody Mary	cóctel Bloody Mary
+bls:P9A5110	Cocktail, Sex on the beach	Sex on the Beach
+bls:P9A6000	Cocktail, Tequila sunrise	cóctel Tequila Sunrise
+bls:P9A7000	Cocktail, Pina colada	piña colada (cóctel)
+bls:P9A7100	Cocktail, Cuba libre	Cuba Libre
+bls:P9A7110	Cocktail, Mojito	cóctel mojito
+bls:P9A8000	Cocktail, Kir royale	Kir Royal
+bls:P9A8100	Cocktail, Hugo	cóctel Hugo
+bls:P9A9000	Cocktail, Caipirinha	caipirinha
+bls:P9B1000	Cocktail, Campari-orange	Campari con naranja
+bls:P9B2000	Cocktail, Campari-soda	Campari con soda
+bls:P9B3000	Cocktail, Campari-tonic	Campari con tónica
+bls:P9B4000	Cocktail, Margarita	cóctel margarita
+bls:Q120000	Olive oil	aceite de oliva
+bls:Q140000	Hazelnut oil	aceite de avellana
+bls:Q150000	Palm fat/palm oil, refined	aceite de palma refinado
+bls:Q150100	Palm fat hydrogenated	grasa de palma hidrogenada
+bls:Q160000	Linseed oil	aceite de linaza
+bls:Q170000	Hemp oil	aceite de cáñamo
+bls:Q180000	Rapeseed oil/canola oil	aceite de colza
+bls:Q190000	Almond oil	aceite de almendras
+bls:Q210000	Peanut oil	aceite de cacahuete
+bls:Q220000	Wheat germ oil	aceite de germen de trigo
+bls:Q230000	Sesame oil	aceite de sésamo
+bls:Q250000	Pumpkin seed oil	aceite de pipas de calabaza
+bls:Q260000	Corn oil	aceite de maíz
+bls:Q270000	Soya oil	aceite de soja
+bls:Q310000	Walnut oil	aceite de nuez
+bls:Q320000	Sunflower oil	aceite de girasol
+bls:Q330000	Grapeseed oil	aceite de semilla de uva
+bls:Q340000	Safflower oil	aceite de cártamo
+bls:Q350000	Poppy seed oil	aceite de amapola
+bls:Q400000	Margarine full-fat, fortified with vitamins	margarina entera con vitaminas
+bls:Q440000	Margarine half-fat, fortified with vitamins	margarina ligera con vitaminas
+bls:Q481000	Margarine for baking	margarina para repostería
+bls:Q482000	Margarine for making puff pastry	margarina para hojaldre
+bls:Q4A1000	Margarine three-quarter fat, fortified with vitamins	margarina tres cuartos con vitaminas
+bls:Q4A4000	Margarine made from sunflower oil, fortified with vitamin D	margarina de girasol con vitamina D
+bls:Q4B1000	Vegetable fat cooking liquid	crema vegetal para freír y cocinar
+bls:Q4C1000	Vegetable fat spread with > 62 % and < 80 % fat, fortified with vitamins	crema para untar vegetal 62-80 % grasa con vitaminas
+bls:Q4C2000	Vegetable fat spread with > 41 % and < 60 % fat, fortified with vitamins	crema para untar vegetal 41-60 % grasa con vitaminas
+bls:Q4C3000	Vegetable fat spread with < 39 % fat, fortified with vitamins	crema para untar vegetal menos de 39 % grasa con vitaminas
+bls:Q4C4000	Margarine made from rapeseed oil/canola oil, fortified with vitamins	margarina de colza con vitaminas
+bls:Q4C5000	Mixed fat spread (mainly vegetable fat) unsalted, fortified with vitamins	grasa mixta para untar sin sal con vitaminas
+bls:Q4C5100	Mixed fat spread (mainly vegetable fat) salted, fortified with vitamins	grasa mixta para untar salada con vitaminas
+bls:Q520000	Shea butter	manteca de karité
+bls:Q530000	Cocoa butter	manteca de cacao
+bls:Q550000	Coconut oil	aceite de coco
+bls:Q550100	Coconut oil deodorized	aceite de coco desodorizado
+bls:Q550200	Coconut fat hydrogenated	grasa de coco hidrogenada
+bls:Q570000	Palm kernel fat/palm kernel oil	aceite de palmiste
+bls:Q590000	Plant-based cheese alternative, vegetable fat based, vegan	queso vegano de grasa vegetal
+bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortified with vitamin B12 and calcium	queso vegano de grasa vegetal con vitamina B12 y calcio
+bls:Q611000	Best quality butter	mantequilla de cultivo suave
+bls:Q620000	Cultured butter	mantequilla de cultivo
+bls:Q630000	Sweet cream butter	mantequilla de nata dulce
+bls:Q640000	Butter half fat	mantequilla mitad de grasa
+bls:Q656000	Garlic butter/herb butter	mantequilla de ajo y hierbas
+bls:Q683000	Rendered butter	mantequilla clarificada
+bls:Q6A4000	Butter salted	mantequilla salada
+bls:Q6A6000	Butter with yogurt	mantequilla con yogur
+bls:Q6A7000	Mixed fat spread, mainly milk fat, unsalted	grasa mixta de mantequilla sin sal
+bls:Q6A7100	Mixed fat spread, mainly milk fat, salted	grasa mixta de mantequilla salada
+bls:Q730000	Cod-liver oil	aceite de hígado de bacalao
+bls:Q810000	Duck fat	grasa de pato
+bls:Q820000	Goose lard/fat	grasa de oca
+bls:Q830000	Chicken fat	grasa de pollo
+bls:Q860000	Pork lard	manteca de cerdo
+bls:Q880000	Mutton tallow/fat	sebo de cordero
+bls:Q890000	Beef tallow/fat	sebo de vacuno
+bls:Q901000	Tahini made from sesame seeds	tahini
+bls:Q902000	Plant-based lard substitute, vegetable fat based, vegan	sucedáneo de manteca vegetal
+bls:Q940000	Vegetable deep-frying oil	aceite de freír
+bls:Q960000	Vegetable deep-frying fat	grasa de freír
+bls:Q991000	Mayonnaise (ready-made product)	mayonesa industrial
+bls:Q993000	Salad mayonnaise (ready-made product)	mayonesa para ensalada
+bls:Q998000	Salad cream (ready-made product)	crema para ensalada
+bls:Q999000	Remoulade (ready-made product)	salsa remoulade
+bls:R111000	Common salt/table salt	sal de mesa
+bls:R111100	Rock salt	sal gema
+bls:R112000	Sea salt	sal marina
+bls:R113000	Iodised salt with fluoride	sal yodada con flúor
+bls:R113100	Iodised salt with fluoride and folic acid	sal yodada con flúor y ácido fólico
+bls:R114000	Iodised salt	sal yodada
+bls:R115000	Seasoned salt/herb salt	sal de hierbas
+bls:R118000	Nitrite curing salt	sal de curado con nitrito
+bls:R118100	Nitrite curing salt, iodised	sal de curado con nitrito yodada
+bls:R121000	Wine vinegar	vinagre de vino
+bls:R122000	Distilled vinegar	vinagre destilado
+bls:R123100	Apple cider vinegar	vinagre de sidra
+bls:R124000	Herb vinegar	vinagre de hierbas
+bls:R125000	Balsamic vinegar	vinagre balsámico
+bls:R132000	Mustard medium hot	mostaza media
+bls:R133000	Mustard hot	mostaza fuerte
+bls:R134000	Mustard extra hot	mostaza extra fuerte
+bls:R135000	Mustard sweet	mostaza dulce
+bls:R141100	Tomato ketchup	kéchup de tomate
+bls:R141200	Curry ketchup	kéchup de curry
+bls:R143000	Soya sauce	salsa de soja fermentada
+bls:R144100	Fruit chutney	chutney de frutas
+bls:R146100	Chilli sauce (Sambal Oelek)	sambal oelek
+bls:R148200	Barbecue sauce, tomato-based	salsa barbacoa de tomate
+bls:R148600	Barbecue sauce, mayonnaise-based	salsa barbacoa de mayonesa
+bls:R160000	Tomato paste	concentrado de tomate
+bls:R161200	Tomato puree	puré de tomate
+bls:R172000	Monosodium glutamate	glutamato monosódico
+bls:R211200	Ginger root raw	jengibre en crudo
+bls:R231000	Basil dried	albahaca seca
+bls:R258100	Pepper black, dried	pimienta negra seca
+bls:R381100	Candied orange peel	cáscara de naranja confitada
+bls:R381200	Candied lemon peel	cáscara de limón confitada
+bls:R411000	Cutter additives phosphate-based (E 450)	aditivo de fosfatos E 450
+bls:R421100	Baking powder	impulsor
+bls:R421200	Hartshorn (ammonium bicarbonate, E 503)	bicarbonato de amonio E 503
+bls:R421300	Potash (99 % potassium carbonate, E 501)	potasa E 501
+bls:R434000	Whipped cream stabilizer	estabilizante de nata montada
+bls:R452000	Vanillin sugar	azúcar de vainillina
+bls:R458000	Baker's yeast dried	levadura seca
+bls:R459000	Baker's yeast fresh, pressed	levadura fresca prensada
+bls:R466000	Apple pectin dried	pectina de manzana seca
+bls:R468000	Gelatine	gelatina neutra
+bls:R481100	Pudding powder, vanilla, unsweetened	polvo para pudín de vainilla sin azúcar
+bls:R481132	Vanilla pudding made from powder, milk 3.5 % fat and sugar	pudín de vainilla de sobre con leche 3,5 %
+bls:R481200	Pudding powder, chocolate, unsweetened	polvo para pudín de chocolate sin azúcar
+bls:R481232	Chocolate pudding made from powder, milk 3.5 % fat and sugar	pudín de chocolate de sobre con leche 3,5 %
+bls:R551000	Lactic acid 80 % (E 270)	ácido láctico 80 % E 270
+bls:R552000	Citric acid (E 330)	ácido cítrico E 330
+bls:R553000	Ascorbic acid (E 300)	ácido ascórbico E 300
+bls:R554000	Acetic acid 60 % (E 260)	ácido acético 60 % E 260
+bls:R810000	Bouillon/stock/soup (stock cubes, powder)	caldo en polvo
+bls:R811000	Beef bouillon/stock/soup (stock cubes, powder)	caldo de vacuno en polvo
+bls:R821000	Vegetable bouillon/stock/soup (stock cubes, powder)	caldo de verduras en polvo
+bls:R822000	Chicken bouillon/stock/soup (stock cubes, powder)	caldo de pollo de sobre
+bls:R910000	Gravy instant powder	salsa gravy en polvo
+bls:R910032	Gravy made from instant powder and water	salsa gravy de sobre
+bls:R911000	White sauce instant powder	salsa blanca en polvo
+bls:R911032	White sauce made from instant powder and water	salsa blanca de sobre
+bls:R912000	Sushi ginger (Gari) canned	jengibre para sushi en conserva
+bls:R913000	Wasabi paste canned	pasta de wasabi en conserva
+bls:R921000	Whipped cream sweetened, with gelatine, for pastry/tortes	nata montada azucarada con gelatina para repostería
+bls:R922000	Yogurt cream for pastry/tortes	crema de yogur para repostería
+bls:R923000	Lemon cream for pastry/tortes	crema de limón para repostería
+bls:R924000	Mocha cream for pastry/tortes	crema de moka para repostería
+bls:R930000	Vanilla butter cream with egg, light, for pastry/tortes	crema de mantequilla de vainilla con huevo para repostería
+bls:R931000	Chocolate butter cream with egg, light, for pastry/tortes	crema de mantequilla de chocolate con huevo para repostería
+bls:R940000	Vanilla cream/vanilla flummery, with egg, for pastry/tortes	crema de vainilla con huevo para repostería
+bls:R941000	Cherry filling for pastry/tortes	relleno de cereza para repostería
+bls:R942000	Gelatin glaze for pastry/tortes	glaseado de gelatina para repostería
+bls:R943000	Ganache for pastry/tortes	ganache para repostería
+bls:R944000	Truffle cream filling for pastry/tortes	crema de trufa para repostería
+bls:R963000	Egg-herb spread	crema para untar de huevo y hierbas
+bls:R963100	Tomato-mozzarella spread	crema para untar de tomate y mozzarella
+bls:R9A1000	Strawberry cream for pastry/tortes	crema de fresa para repostería
+bls:R9A1100	Raspberry cream for pastry/tortes	crema de frambuesa para repostería
+bls:R9A1200	Cheese cream (egg-free) for pastry/tortes	crema de queso sin huevo para repostería
+bls:R9A1300	Mandarin cream for pastry/tortes	crema de mandarina para repostería
+bls:R9A1400	Lemon cream (with starch) for pastry/tortes	crema de limón con almidón para repostería
+bls:R9A2000	Pineapple yogurt cream for pastry/tortes	crema de piña y yogur para repostería
+bls:R9A2100	Nut cream for pastry/tortes	crema de frutos secos para repostería
+bls:R9A2200	Chocolate cream for pastry/tortes	crema de chocolate para repostería
+bls:R9A3000	Marzipan filling for pastry/tortes	relleno de mazapán para repostería
+bls:R9A3100	Poppy seed filling for pastry/tortes	relleno de amapola para repostería
+bls:R9A3200	Nut filling for pastry/tortes	relleno de frutos secos para repostería
+bls:R9A3300	Pudding filling for pastry/tortes	relleno de pudín para repostería
+bls:R9A3400	Quark filling for pastry/tortes	relleno de requesón para repostería
+bls:R9A3500	Sugar-butter-cinnamon filling for pastry/tortes	relleno de azúcar, mantequilla y canela para repostería
+bls:R9A4000	Mocha butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de moka sin huevo para repostería
+bls:R9A4100	Chocolate butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de chocolate sin huevo para repostería
+bls:R9A4200	Vanilla butter cream, egg-free, light, for pastry/tortes	crema de mantequilla de vainilla sin huevo para repostería
+bls:R9A5000	Apricot icing for pastry/tortes	glaseado de albaricoque para repostería
+bls:R9A5100	Sacher icing/chocolate icing, for pastry/tortes	glaseado de chocolate sacher para repostería
+bls:R9A5200	Chocolate icing (containing non-cocoa fats) for pastry/tortes	cobertura de chocolate para repostería
+bls:R9A6000	Apple-wine cream (with egg) for pastry/tortes	crema de manzana y vino con huevo para repostería
+bls:R9A6100	Mocha flummery with liqueur, for pastry/tortes	crema de moka con licor para repostería
+bls:R9A6200	Orange flummery with liqueur, for pastry/tortes	crema de naranja con licor para repostería
+bls:S111000	Sugar white (refined sugar)	azúcar blanco
+bls:S111100	Icing sugar/powdered sugar	azúcar glas
+bls:S112000	Sugar brown (candyfarin/raw sugar)	azúcar moreno
+bls:S114000	Vanilla sugar	azúcar vainillado
+bls:S115100	Dextrose/glucose)	glucosa
+bls:S116000	Lactose	lactosa
+bls:S117000	Maltose	maltosa
+bls:S118000	Fructose	fructosa
+bls:S120000	Honey	miel
+bls:S121000	Blossom honey	miel de flores
+bls:S122000	Honeydew honey	mielato
+bls:S124000	Invert sugar cream	crema de azúcar invertido
+bls:S131100	Fruit spread	crema de fruta para untar
+bls:S132000	Jam extra quality	confitura extra
+bls:S132100	Jam extra quality, with fructose and artificial sweeteners	confitura extra con fructosa y edulcorante
+bls:S134000	Jelly extra quality	jalea extra
+bls:S135000	Marmalade	mermelada de cítricos
+bls:S141000	Chocolate-nut cream	crema de cacao con avellanas
+bls:S142100	Apple butter, unsweetened	dulce de manzana sin azúcar
+bls:S142200	Apple butter, sweetened	dulce de manzana
+bls:S142300	Pear butter, unsweetened	dulce de pera sin azúcar
+bls:S142400	Pear butter, sweetened	dulce de pera
+bls:S143000	Sweet chestnut cream (spread)	crema de castañas
+bls:S145000	Nut nougat cream (spread)	crema de turrón de avellanas
+bls:S151000	Glucose syrup containing maltose	jarabe de glucosa con maltosa
+bls:S151100	Maple syrup	jarabe de arce
+bls:S152000	Treacle/molasses, dark	melaza oscura
+bls:S154000	Fruit syrup	sirope de frutas
+bls:S155000	Apple syrup	concentrado de manzana
+bls:S156000	Pear syrup	concentrado de pera
+bls:S157000	Grape syrup	concentrado de uva
+bls:S161000	Plum butter (jam)	dulce de ciruela
+bls:S162000	Sorbitol powder (E 420)	sorbitol en polvo E 420
+bls:S163000	Xylitol powder (E 967)	xilitol en polvo E 967
+bls:S164000	Mannitol powder (E 421)	manitol en polvo E 421
+bls:S170000	Table sweetener tablets (cyclamate, saccharin)	edulcorante en comprimidos
+bls:S171000	Table sweetener liquid (cyclamate, saccharin)	edulcorante líquido de ciclamato y sacarina
+bls:S201000	Fruit sherbet/sorbet	sorbete de fruta
+bls:S201300	Ice cream mixed (chocolate, nut) in waffle cone	helado de frutos secos y chocolate en cucurucho
+bls:S201400	Ice cream mixed (chocolate, fruit) in waffle cone	helado de fruta y chocolate en cucurucho
 bls:S201500	Coffee ice cream, in waffle cone	cucurucho de helado de café
+bls:S201600	Caramel ice cream, in waffle cone	helado de caramelo en cucurucho
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	helado de chocolate y vainilla con licor de huevo
+bls:S210000	Ice cream (containing egg yolk)	helado de yema
+bls:S210100	Ice cream mixed (fruit, vanilla) in waffle cone	helado de fruta y vainilla en cucurucho
+bls:S210300	Ice cream mixed (caramel, vanilla) in waffle cone	helado de caramelo y vainilla en cucurucho
+bls:S210400	Ice cream mixed (chocolate, nut, vanilla) in waffle cone	helado de frutos secos, chocolate y vainilla en cucurucho
+bls:S210600	Ice cream mixed (chocolate, fruit, vanilla) in waffle cone	helado de fruta, chocolate y vainilla en cucurucho
+bls:S210700	Ice cream mixed (chocolate, vanilla) in waffle cone	helado de chocolate y vainilla en cucurucho
+bls:S210800	Nut ice cream, in waffle cone	helado de frutos secos en cucurucho
+bls:S210900	Chocolate ice cream, in waffle cone	cono de helado de chocolate
+bls:S211000	Ice cream bar filled with ice cream and caramel, covered with chocolate	barrita de helado con caramelo cubierta de chocolate
+bls:S211100	Ice cream mixed (nut, vanilla) in waffle cone	helado de frutos secos y vainilla en cucurucho
+bls:S211400	Ice cream mixed (coffee, fruit) in waffle cone	helado de café y fruta en cucurucho
+bls:S211500	Vanilla ice cream, in waffle cone	helado de vainilla en cucurucho
+bls:S211700	Fruit ice cream, in waffle cone	helado de fruta en cucurucho
+bls:S211800	Ice cream mixed (caramel, fruit) in waffle cone	helado de caramelo y fruta en cucurucho
+bls:S211900	Ice cream mixed (fruit, nut) in waffle cone	helado de fruta y frutos secos en cucurucho
+bls:S220000	Fruit ice cream	helado de fruta
+bls:S220200	Coffee ice cream	helado de café
+bls:S220400	Ice cream mixed (chocolate, coffee, vanilla)	helado de café, chocolate y vainilla
+bls:S220500	Ice cream mixed (fruit, nut)	helado de fruta y frutos secos
+bls:S220700	Ice cream mixed (caramel, nut)	helado de caramelo y frutos secos
+bls:S220800	Ice cream mixed (nut, vanilla)	helado de frutos secos y vainilla
+bls:S220900	Ice cream mixed (coffee, vanilla)	helado de café y vainilla
+bls:S221000	Ice cream mixed (caramel, fruit, vanilla)	helado de caramelo, fruta y vainilla
+bls:S221200	Ice cream mixed (caramel, chocolate)	helado de caramelo y chocolate
+bls:S221700	Yogurt ice cream	helado de yogur
+bls:S221800	Yogurt-fruit ice cream	helado de yogur y fruta
+bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	helado de yogur y de yogur de fruta
+bls:S229000	Parfait	parfait
+bls:S230000	Ice cream cream-based	helado de nata
+bls:S231000	Ice cream with fruit preparation, covered with chocolate	helado con fruta cubierto de chocolate
+bls:S231200	Ice cream streaked with chocolate	helado veteado de chocolate
+bls:S241000	Vanilla ice cream	helado de vainilla
+bls:S241300	Ice cream mixed (chocolate, fruit, nut) with egg liqueur	helado de fruta, frutos secos y chocolate con licor de huevo
+bls:S241400	Ice cream mixed (coffee, fruit, nut) with egg liqueur	helado de café, fruta y frutos secos con licor de huevo
+bls:S241500	Vanilla ice cream, covered with chocolate	helado de vainilla cubierto de chocolate
+bls:S241600	Vanilla ice cream, covered with chocolate and almonds	helado de vainilla cubierto de chocolate y almendras
+bls:S241700	Chocolate ice cream, covered with chocolate	helado de chocolate con cobertura de chocolate
+bls:S241800	Ice cream covered with chocolate, caramel and almonds	helado cubierto de chocolate, caramelo y almendras
+bls:S241900	Vanilla ice cream, covered with chocolate and caramel	helado de vainilla cubierto de chocolate y caramelo
+bls:S242000	Chocolate ice cream	helado de chocolate
 bls:S242200	Caramel ice cream	helado de caramelo
 bls:S242300	Walnut ice cream	helado de nueces
 bls:S242400	Ice cream mixed (chocolate, vanilla, fruit)	helado surtido (chocolate, vainilla, fruta)

@@ -1426,26 +1426,1456 @@ bls:G344182	Pointed cabbage fried without fat (pan)	конусная капус�
 bls:G345032	Sauerkraut drained, boiled	квашеная капуста слитая варёная
 bls:G345042	Sauerkraut drained, braised without fat	квашеная капуста слитая припущенная
 bls:G345062	Sauerkraut drained, baked	квашеная капуста слитая запечённая
+bls:G345082	Sauerkraut drained, fried without fat (pan)	квашеная капуста слитая жареная без масла
+bls:G345100	Sauerkraut drained, raw	квашеная капуста слитая сырая
+bls:G345152	Sauerkraut drained, stewed	квашеная капуста слитая тушёная
+bls:G345600	Sauerkraut juice	сок квашеной капусты
+bls:G345902	Sauerkraut canned, drained	квашеная капуста консервированная слитая
+bls:G346100	Wine sauerkraut raw	квашеная капуста винная сырая
+bls:G346132	Wine sauerkraut boiled	квашеная капуста винная варёная
+bls:G346152	Wine sauerkraut stewed	квашеная капуста винная тушёная
+bls:G350100	Romanesco broccoli raw	романеско сырой
+bls:G350132	Romanesco broccoli boiled	романеско варёный
+bls:G350152	Romanesco broccoli stewed	романеско тушёный
+bls:G350162	Romanesco broccoli baked	романеско запечённый
+bls:G350182	Romanesco broccoli fried without fat (pan)	романеско жареный без масла
+bls:G410100	Artichokes raw	артишоки сырые
+bls:G410132	Artichokes boiled	артишоки варёные
+bls:G410702	Artichokes in oil, canned, drained	артишоки в масле консервированные слитые
 bls:G410732	Artichokes in oil, canned, drained boiled	артишоки в масле консервированные
+bls:G410902	Artichokes canned, drained	артишоки консервированные слитые
+bls:G414100	Cardoon raw	кардон свежий
+bls:G414132	Cardoon boiled	кардон варёный
+bls:G420100	Turnip tops/greens, raw	ботва репы сырая
+bls:G420132	Turnip tops/greens, boiled	ботва репы варёная
+bls:G420152	Turnip tops/greens, stewed	ботва репы тушёная
+bls:G420182	Turnip tops/greens, fried without fat (pan)	ботва репы жареная без масла
+bls:G430100	Fennel/Florence fennel, raw	фенхель овощной сырой
 bls:G430132	Fennel/Florence fennel, boiled	фенхель варёный
+bls:G430152	Fennel/Florence fennel, stewed	фенхель овощной тушёный
+bls:G430162	Fennel/Florence fennel, baked	фенхель овощной запечённый
+bls:G430182	Fennel/Florence fennel, fried without fat (pan)	фенхель овощной жареный без масла
+bls:G431100	Roman fennel/sweet fennel, raw	фенхель листовой сырой
+bls:G440100	Palm heart, raw	палмито сырой
+bls:G440132	Palm heart, boiled	палмито варёный
+bls:G440902	Palm heart, canned, drained	палмито консервированный слитый
+bls:G450100	Asparagus raw	спаржа свежая
+bls:G450132	Asparagus boiled	спаржа отварная
+bls:G450142	Asparagus steamed	спаржа на пару
+bls:G450152	Asparagus stewed	спаржа тушёная
+bls:G450162	Asparagus baked	спаржа запечённая
+bls:G450200	Asparagus deep-frozen	спаржа замороженная
+bls:G450232	Asparagus deep-frozen, boiled	спаржа замороженная варёная
+bls:G450242	Asparagus deep-frozen, steamed	спаржа замороженная на пару
+bls:G450252	Asparagus deep-frozen, stewed	спаржа замороженная тушёная
+bls:G450262	Asparagus deep-frozen, baked	спаржа замороженная запечённая
+bls:G450282	Asparagus deep-frozen, fried without fat (pan)	спаржа замороженная жареная без масла
+bls:G450902	Asparagus canned, drained	спаржа консервированная слитая
+bls:G451082	Asparagus fried without fat (pan)	спаржа жареная без масла
+bls:G460100	Purslane raw	портулак свежий
+bls:G460152	Purslane stewed	портулак тушёный
+bls:G470042	Leek braised without fat	лук-порей припущенный
+bls:G470100	Leek raw	лук-порей свежий
+bls:G470132	Leek boiled	лук-порей варёный
+bls:G470152	Leek stewed	лук-порей тушёный
+bls:G470162	Leek baked	лук-порей запечённый
+bls:G470182	Leek fried without fat (pan)	лук-порей жареный без масла
+bls:G470200	Leek deep-frozen	лук-порей замороженный
+bls:G470232	Leek deep-frozen, boiled	лук-порей замороженный варёный
+bls:G470242	Leek deep-frozen, braised without fat	лук-порей замороженный припущенный
+bls:G470252	Leek deep-frozen, stewed	лук-порей замороженный тушёный
+bls:G470262	Leek deep-frozen, baked	лук-порей замороженный запечённый
+bls:G470282	Leek deep-frozen, fried without fat (pan)	лук-порей замороженный жареный без масла
+bls:G480072	Onion grilled	лук репчатый на гриле
+bls:G480100	Onion raw	репчатый лук свежий
+bls:G480132	Onion boiled	лук репчатый варёный
+bls:G480142	Onion braised without fat	лук репчатый припущенный
+bls:G480152	Onion stewed	лук репчатый тушёный
+bls:G480162	Onion baked	лук репчатый запечённый
+bls:G480182	Onion fried without fat (pan)	лук репчатый жареный без масла
+bls:G480200	Onion deep-frozen	лук репчатый замороженный
+bls:G480232	Onion deep-frozen, boiled	лук репчатый замороженный варёный
+bls:G480242	Onion deep-frozen, braised without fat	лук репчатый замороженный припущенный
+bls:G480252	Onion deep-frozen, stewed	лук репчатый замороженный тушёный
+bls:G480262	Onion deep-frozen, baked	лук репчатый замороженный запечённый
+bls:G480282	Onion deep-frozen, fried without fat (pan)	лук репчатый замороженный жареный без масла
+bls:G480400	Onion dried	сушёный лук
+bls:G480500	Onion powder	луковый порошок
+bls:G480600	Onion juice	сок лука
+bls:G482100	Spring onion raw	лук зелёный сырой
+bls:G482132	Spring onion boiled	лук зелёный варёный
+bls:G482142	Spring onion braised without fat	лук зелёный припущенный
+bls:G482152	Spring onion stewed	лук зелёный тушёный
+bls:G482162	Spring onion baked	лук зелёный запечённый
+bls:G482182	Spring onion fried without fat (pan)	лук зелёный жареный без масла
+bls:G484100	Pearl onion raw	луковки сырые
+bls:G484132	Pearl onion boiled	луковки варёные
+bls:G484152	Pearl onion stewed	луковки тушёные
+bls:G484162	Pearl onion baked	луковки запечённые
+bls:G484182	Pearl onion fried without fat (pan)	луковки жареные без масла
+bls:G485082	Shallot fried without fat (pan)	шалот жареный без масла
+bls:G485100	Shallot raw	шалот сырой
+bls:G485132	Shalot boiled	шалот варёный
+bls:G485142	Shallot braised without fat	шалот припущенный
+bls:G485152	Shalot stewed	шалот тушёный
+bls:G486100	Spring onion, bulb only, raw	лук зелёный без зелени сырой
+bls:G486132	Spring onion, bulb only, boiled	лук зелёный без зелени варёный
+bls:G486142	Spring onion, bulb only, braised without fat	лук зелёный без зелени припущенный
+bls:G486152	Spring onion, bulb only, stewed	лук зелёный без зелени тушёный
+bls:G486162	Spring onion, bulb only, baked	лук зелёный без зелени запечённый
+bls:G486182	Spring onion, bulb only, fried without fat (pan)	лук зелёный без зелени жареный без масла
+bls:G488100	Silverskin onion raw	луковки белые сырые
+bls:G488802	Silverskin onion pickled, drained	луковки маринованные слитые
+bls:G490042	Garlic braised without fat	чеснок припущенный
+bls:G490100	Garlic raw	чеснок сырой
+bls:G490132	Garlic boiled	чеснок варёный
+bls:G490152	Garlic stewed	чеснок тушёный
+bls:G490162	Garlic baked	чеснок запечённый
+bls:G490182	Garlic fried without fat (pan)	чеснок жареный без масла
+bls:G490200	Garlic deep-frozen	чеснок замороженный
+bls:G490232	Garlic deep-frozen, boiled	чеснок замороженный варёный
+bls:G490242	Garlic deep-frozen, braised without fat	чеснок замороженный припущенный
+bls:G490252	Garlic deep-frozen, stewed	чеснок замороженный тушёный
+bls:G490262	Garlic deep-frozen, baked	чеснок замороженный запечённый
+bls:G490282	Garlic deep-frozen, fried without fat (pan)	чеснок замороженный жареный без масла
+bls:G490400	Garlic dried	чеснок сушёный
+bls:G490500	Garlic powder	чесночный порошок
+bls:G491702	Garlic in oil, canned, drained	чеснок в масле консервированный слитый
+bls:G491802	Garlic pickled, drained	чеснок маринованный слитый
+bls:G492100	Wild garlic raw	черемша сырая
+bls:G510100	Aubergine raw	свежий баклажан
+bls:G510132	Aubergine boiled	баклажан варёный
+bls:G510142	Aubergine braised without fat	баклажан припущенный
+bls:G510152	Aubergine stewed	баклажан тушёный
+bls:G510162	Aubergine baked	баклажан запечённый
+bls:G510172	Aubergine grilled	баклажан на гриле
+bls:G510182	Aubergine fried without fat (pan)	баклажан жареный без масла
+bls:G510702	Aubergine grilled, in oil, canned, drained	баклажан жареный на гриле в масле консервированный слитый
+bls:G520042	Cucumber braised without fat	огурец припущенный
+bls:G520062	Cucumber baked	огурец запечённый
+bls:G520100	Cucumber raw	огурец сырой
+bls:G520132	Cucumber boiled	огурец варёный
+bls:G520152	Cucumber stewed	огурец тушёный
+bls:G520182	Cucumber fried without fat (pan)	огурец жареный без масла
+bls:G520600	Cucumber juice	сок огурца
+bls:G520802	Cucumber/gherkin pickled, drained	огурец маринованный слитый
+bls:G530100	Okra raw	окра сырая
+bls:G530132	Okra boiled	окра варёная
+bls:G530142	Okra braised without fat	окра припущенная
+bls:G530152	Okra stewed	окра тушёная
+bls:G530902	Okra canned, drained	окра консервированная слитая
+bls:G541032	Sweet pepper green, boiled	перец сладкий зелёный варёный
+bls:G541042	Sweet pepper green, braised without fat	перец сладкий зелёный припущенный
+bls:G541072	Sweet pepper green, grilled	перец сладкий зелёный на гриле
+bls:G541082	Sweet pepper green, fried without fat (pan)	перец сладкий зелёный жареный без масла
+bls:G541100	Sweet pepper green, raw	перец сладкий зелёный сырой
+bls:G541152	Sweet pepper green, stewed	перец сладкий зелёный тушёный
+bls:G541162	Sweet pepper green, baked	перец сладкий зелёный запечённый
+bls:G542042	Sweet pepper yellow, braised without fat	перец сладкий жёлтый припущенный
+bls:G542100	Sweet pepper yellow, raw	перец сладкий жёлтый сырой
+bls:G542132	Sweet pepper yellow, boiled	перец сладкий жёлтый варёный
+bls:G542152	Sweet pepper yellow, stewed	перец сладкий жёлтый тушёный
+bls:G542162	Sweet pepper yellow, baked	перец сладкий жёлтый запечённый
+bls:G542172	Sweet pepper yellow, grilled	перец сладкий жёлтый на гриле
+bls:G542182	Sweet pepper yellow, fried without fat (pan)	перец сладкий жёлтый жареный без масла
+bls:G543032	Sweet pepper red, boiled	перец сладкий красный варёный
+bls:G543042	Sweet pepper red, braised without fat	перец сладкий красный припущенный
+bls:G543072	Sweet pepper red, grilled	перец сладкий красный на гриле
+bls:G543082	Sweet pepper red, fried without fat (pan)	перец сладкий красный жареный без масла
+bls:G543100	Sweet pepper red, raw	перец сладкий красный сырой
+bls:G543152	Sweet pepper red, stewed	перец сладкий красный тушёный
+bls:G543162	Sweet pepper red, baked	перец сладкий красный запечённый
+bls:G543702	Sweet pepper red, grilled, in oil, canned, drained	перец сладкий красный на гриле в масле консервированный слитый
+bls:G543802	Sweet pepper red, pickled, drained	перец сладкий красный маринованный слитый
+bls:G550702	Chilli pepper in oil, canned, drained	перец чили в масле консервированный слитый
+bls:G550802	Chilli pepper pickled, drained	перец чили маринованный слитый
+bls:G553100	Chilli pepper green, raw	перец чили зелёный сырой
+bls:G553132	Chilli pepper green, boiled	перец чили зелёный варёный
+bls:G553152	Chilli pepper green, stewed	перец чили зелёный тушёный
+bls:G553182	Chilli pepper green, fried without fat (pan)	перец чили зелёный жареный без масла
+bls:G554100	Chilli pepper red, raw	перец чили красный сырой
+bls:G554132	Chilli pepper red, boiled	перец чили красный варёный
+bls:G554152	Chilli pepper red, stewed	перец чили красный тушёный
+bls:G554182	Chilli pepper red, fried without fat (pan)	перец чили красный жареный без масла
+bls:G560142	Tomato braised without fat	помидор припущенный
+bls:G560400	Tomato dried	помидор сушёный
+bls:G560600	Tomato juice with salt	томатный сок с солью
+bls:G560900	Tomato canned	помидор консервированный
+bls:G561072	Tomato grilled	помидор на гриле
+bls:G561082	Tomato fried without fat (pan)	помидор жареный без масла
+bls:G561100	Tomato raw	помидор сырой
+bls:G561132	Tomato boiled	помидор варёный
+bls:G561152	Tomato stewed	помидор тушёный
+bls:G561162	Tomato baked	помидор запечённый
+bls:G561500	Tomato powder	томатный порошок
+bls:G561802	Tomato pickled, drained	помидор маринованный слитый
+bls:G567702	Tomato dried, in oil, canned, drained	помидор вяленый в масле консервированный слитый
+bls:G568900	Tomato peeled, canned	помидор очищенный консервированный
+bls:G569902	Tomate dried, marinated, drained	помидор сушёный маринованный слитый
+bls:G570100	Sweetcorn raw	кукуруза сахарная сырая
+bls:G570132	Sweetcorn boiled	кукуруза сахарная варёная
+bls:G570162	Sweetcorn baked	кукуруза сахарная запечённая
+bls:G570172	Sweetcorn grilled	кукуруза сахарная на гриле
+bls:G570182	Sweetcorn fried without fat (pan)	кукуруза сахарная жареная без масла
+bls:G570200	Sweetcorn deep-frozen	кукуруза сахарная замороженная
+bls:G570232	Sweetcorn deep-frozen, boiled	кукуруза сахарная замороженная варёная
+bls:G570262	Sweetcorn deep-frozen, baked	кукуруза сахарная замороженная запечённая
+bls:G570272	Sweetcorn deep-frozen, grilled	кукуруза сахарная замороженная на гриле
+bls:G570282	Sweetcorn deep-frozen, fried without fat (pan)	кукуруза сахарная замороженная жареная без масла
+bls:G570802	Sweetcorn pickled, drained	кукуруза сахарная маринованная слитая
+bls:G570902	Sweetcorn canned, drained	кукуруза сахарная консервированная слитая
+bls:G581000	Hokkaido pumpkin raw	тыква хоккайдо сырая
+bls:G581032	Hokkaido pumpkin boiled	тыква хоккайдо варёная
+bls:G581042	Hokkaido pumpkin braised without fat	тыква хоккайдо припущенная
+bls:G581052	Hokkaido pumpkin stewed	тыква хоккайдо тушёная
+bls:G581062	Hokkaido pumpkin baked	тыква хоккайдо запечённая
+bls:G581082	Hokkaido pumpkin fried without fat (pan)	тыква хоккайдо жареная без масла
+bls:G581100	Pumpkin (C. pepo) raw	тыква свежая
+bls:G581132	Pumpkin (C. pepo) boiled	тыква отварная
+bls:G581142	Pumpkin (C. pepo) braised without fat	тыква припущенная
+bls:G581152	Pumpkin (C. pepo) stewed	тыква тушёная
+bls:G581162	Pumpkin (C. pepo) baked	тыква печёная
+bls:G581182	Pumpkin (C. pepo) fried without fat (pan)	тыква жареная без масла
+bls:G581802	Pumpkin pickled, drained	тыква маринованная слитая
+bls:G582100	Courgette raw	цуккини сырой
+bls:G582132	Courgette boiled	цуккини варёный
+bls:G582142	Courgette braised without fat	цуккини припущенный
+bls:G582152	Courgette stewed	цуккини тушёный
+bls:G582162	Courgette baked	цуккини запечённый
+bls:G582172	Courgette grilled	цуккини на гриле
+bls:G582182	Courgette fried without fat (pan)	цуккини жареный без масла
+bls:G582802	Courgette pickled, drained	цуккини маринованный слитый
+bls:G583100	Chayote raw	чайот свежий
+bls:G583132	Chayote boiled	чайот варёный
+bls:G583182	Chayote fried without fat (pan)	чайот жареный без масла
+bls:G611100	Swede raw	брюква свежая
+bls:G611132	Swede boiled	брюква варёная
+bls:G611152	Swede stewed	брюква тушёная
+bls:G613100	Beetroot raw	свёкла сырая
+bls:G613132	Beetroot boiled	свёкла отварная
+bls:G613152	Beetroot stewed	свёкла тушёная
+bls:G613600	Beetroot juice	сок свёклы
+bls:G613802	Beetroot pickled, drained	свёкла маринованная слитая
+bls:G614100	Turnip raw	свежая репа
+bls:G614132	Turnip boiled	репа варёная
+bls:G614152	Turnip stewed	репа тушёная
+bls:G620100	Carrot raw	морковь сырая
+bls:G620132	Carrot boiled	морковь варёная
+bls:G620142	Carrot braised without fat	морковь припущенная
+bls:G620152	Carrot stewed	морковь тушёная
+bls:G620162	Carrot baked	морковь запечённая
+bls:G620182	Carrot fried without fat (pan)	морковь жареная без масла
+bls:G620200	Carrot deep-frozen	морковь замороженная
+bls:G620232	Carrot deep-frozen, boiled	морковь замороженная варёная
+bls:G620242	Carrot deep-frozen, braised without fat	морковь замороженная припущенная
+bls:G620252	Carrot deep-frozen, stewed	морковь замороженная тушёная
+bls:G620262	Carrot deep-frozen, baked	морковь замороженная запечённая
+bls:G620282	Carrot deep-frozen, fried without fat (pan)	морковь замороженная жареная без масла
+bls:G620600	Carrot juice	сок моркови
+bls:G620802	Carrot pickled, drained	морковь маринованная слитая
+bls:G620902	Carrot canned, drained	морковь консервированная слитая
+bls:G622600	Carrot juice, sweetened with honey	морковный сок с мёдом
+bls:G630100	Horseradish raw	хрен сырой
+bls:G630132	Horseradish boiled	хрен варёный
+bls:G640100	Parsnip raw	пастернак свежий
+bls:G640132	Parsnip boiled	пастернак варёный
+bls:G640142	Parsnip braised without fat	пастернак припущенный
+bls:G640152	Parsnip stewed	пастернак тушёный
+bls:G640162	Parsnip baked	пастернак запечённый
+bls:G640182	Parsnip fried without fat (pan)	пастернак жареный без масла
+bls:G650100	Black salsify raw	скорцонера сырая
+bls:G650132	Black salsify boiled	скорцонера варёная
+bls:G650142	Black salsify braised without fat	скорцонера припущенная
+bls:G650152	Black salsify stewed	скорцонера тушёная
+bls:G650200	Black salsify deep-frozen	скорцонера замороженная
+bls:G650232	Black salsify deep-frozen, boiled	скорцонера замороженная варёная
+bls:G650242	Black salsify deep-frozen, braised without fat	скорцонера замороженная припущенная
+bls:G650252	Black salsify deep-frozen, stewed	скорцонера замороженная тушёная
+bls:G650902	Black salsify canned, drained	скорцонера консервированная слитая
+bls:G660100	Celeriac raw	корневой сельдерей свежий
+bls:G660132	Celeriac boiled	сельдерей корневой варёный
+bls:G660152	Celeriac stewed	сельдерей корневой тушёный
+bls:G660162	Celeriac baked	сельдерей корневой запечённый
+bls:G660182	Celeriac fried without fat (pan)	сельдерей корневой жареный без масла
+bls:G660600	Celeriac juice	сок корневого сельдерея
+bls:G660802	Celeriac pickled, drained	сельдерей корневой маринованный слитый
+bls:G670100	Parsley root raw	корень петрушки сырой
+bls:G670132	Parsley root boiled	корень петрушки варёный
+bls:G670142	Parsley root braised without fat	корень петрушки припущенный
+bls:G670152	Parsley root stewed	корень петрушки тушёный
+bls:G670162	Parsley root baked	корень петрушки запечённый
+bls:G670182	Parsley root fried without fat (pan)	корень петрушки жареный без масла
+bls:G670400	Parsley root dried	корень петрушки сушёный
+bls:G680100	Radish raw	редька сырая
+bls:G680152	Radish stewed	редька тушёная
+bls:G691100	Small red radish raw	свежий редис
+bls:G691152	Small red radish stewed	редис тушёный
+bls:G693100	Japanese horseradish/wasabi root, raw	васаби сырой
+bls:G710042	Bean green, deep-frozen, braised without fat	фасоль стручковая замороженная припущенная
+bls:G710100	Bean green, raw	фасоль стручковая сырая
+bls:G710132	Bean green, boiled	фасоль стручковая варёная
+bls:G710142	Bean green, braised without fat	фасоль стручковая припущенная
+bls:G710152	Bean green, stewed	фасоль стручковая тушёная
+bls:G710162	Bean green, baked	фасоль стручковая запечённая
+bls:G710182	Bean green, fried without fat (pan)	фасоль стручковая жареная без масла
+bls:G710200	Bean green, deep-frozen	фасоль стручковая замороженная
+bls:G710232	Bean green, deep-frozen, boiled	фасоль стручковая замороженная варёная
+bls:G710252	Bean green, deep-frozen, stewed	фасоль стручковая замороженная тушёная
+bls:G710262	Bean green, deep-frozen, baked	фасоль стручковая замороженная запечённая
+bls:G710282	Bean green, deep-frozen, fried without fat (pan)	фасоль стручковая замороженная жареная без масла
+bls:G710802	Bean green, pickled, drained	фасоль стручковая маринованная слитая
+bls:G710902	Bean green, canned, drained	фасоль стручковая консервированная слитая
+bls:G720100	Wax bean raw	фасоль стручковая жёлтая сырая
+bls:G720132	Wax bean boiled	фасоль стручковая жёлтая варёная
+bls:G720152	Wax bean stewed	фасоль стручковая жёлтая тушёная
+bls:G720200	Wax bean deep-frozen	фасоль стручковая жёлтая замороженная
+bls:G720232	Wax bean deep-frozen, boiled	фасоль стручковая жёлтая замороженная варёная
+bls:G720252	Wax bean deep-frozen, stewed	фасоль стручковая жёлтая замороженная тушёная
+bls:G720802	Wax bean pickled, drained	фасоль стручковая жёлтая маринованная слитая
+bls:G720902	Wax bean canned, drained	фасоль стручковая жёлтая консервированная слитая
+bls:G730100	Broad bean immature, raw	бобы молодые сырые
+bls:G730132	Broad bean immature, boiled	бобы молодые варёные
+bls:G730200	Broad bean immature, deep-frozen	бобы молодые замороженные
+bls:G730232	Broad bean immature, deep-frozen, boiled	бобы молодые замороженные варёные
+bls:G730902	Broad bean immature, canned, drained	бобы молодые консервированные слитые
+bls:G750100	Soya bean immature (edamame) raw	эдамамэ сырые
+bls:G750400	Soya bean mature	соевые бобы спелые
+bls:G750432	Soya bean mature, boiled	соевые бобы спелые варёные
+bls:G750902	Soya bean immature (edamame) canned, drained	эдамамэ консервированные слитые
+bls:G760100	Pea green, raw	горошек зелёный сырой
+bls:G760132	Pea green, boiled	горошек зелёный варёный
+bls:G760152	Pea green, stewed	горошек зелёный тушёный
+bls:G760162	Pea green, baked	горошек зелёный запечённый
+bls:G760182	Pea green, fried without fat (pan)	горошек зелёный жареный без масла
+bls:G760200	Pea green, deep-frozen	горошек зелёный замороженный
+bls:G760232	Pea green, deep-frozen, boiled	горошек зелёный замороженный варёный
+bls:G760252	Pea green, deep-frozen, stewed	горошек зелёный замороженный тушёный
+bls:G760262	Pea green, deep-frozen, baked	горошек зелёный замороженный запечённый
+bls:G760282	Pea green, deep-frozen, fried without fat (pan)	горошек зелёный замороженный жареный без масла
+bls:G760400	Pea green mature	горох спелый
+bls:G760432	Pea green mature, boiled	горох спелый варёный
+bls:G760902	Pea green, canned, drained	зелёный горошек консервированный слитый
+bls:G761032	Sugar pea boiled	горошек сахарный варёный
+bls:G761100	Sugar pea raw	горошек сахарный сырой
+bls:G761152	Sugar pea stewed	горошек сахарный тушёный
+bls:G761200	Sugar pea deep-frozen	горошек сахарный замороженный
+bls:G761232	Sugar pea deep-frozen, boiled	горошек сахарный замороженный варёный
+bls:G761252	Sugar pea deep-frozen, stewed	горошек сахарный замороженный тушёный
+bls:G770400	Chick pea mature	нут спелый
+bls:G770432	Chick pea mature, boiled	нут спелый варёный
+bls:G780400	Lima bean/butter bean, mature	фасоль лима спелая
+bls:G780432	Lima bean/butter bean, mature, boiled	фасоль лима спелая варёная
+bls:G850100	Cream of vegetable soup instant powder	суп-пюре овощной порошковый
+bls:G850132	Cream of vegetable soup, made from instant powder and water	суп-пюре овощной из порошка
+bls:G860192	Fried onions (ready-made product)	лук жареный готовый
+bls:G880402	Bean green, lactic acid fermented, drained	фасоль стручковая квашеная слитая
+bls:G880602	Mixed pickles, drained	овощи маринованные ассорти слитые
+bls:G890702	Gherkin lactic acid fermented, drained	огурцы квашеные слитые
+bls:G890902	Cornichons pickled, canned, drained	корнишоны маринованные слитые
+bls:G891102	Sweet cucumber pickled, canned, drained	огурцы маринованные сладкие слитые
+bls:G891202	Mustard cucumber pickled, canned, drained	огурцы горчичные маринованные слитые
+bls:G898100	Horseradish (unsalted) canned	хрен консервированный без соли
+bls:G898200	Creamed horseradish canned	хрен со сливками консервированный
+bls:G898300	Horsereadish canned	хрен столовый консервированный
+bls:G898400	Ajvar canned	айвар консервированный
+bls:G920200	Mixed vegetables "Leipziger Allerlei", deep-frozen	овощная смесь «лейпцигское ассорти» замороженная
+bls:G920232	Mixed vegetables "Leipziger Allerlei", deep-frozen, boiled	овощная смесь «лейпцигское ассорти» замороженная варёная
+bls:G920252	Mixed vegetables "Leipziger Allerlei", deep-frozen, stewed	овощная смесь «лейпцигское ассорти» замороженная тушёная
+bls:G920902	Mixed vegetables "Leipziger Allerlei", canned, drained	овощная смесь «лейпцигское ассорти» консервированная слитая
+bls:G940100	Vegetable spread	намазка овощная
+bls:G950900	Vegetarian goulash, canned	гуляш вегетарианский консервированный
+bls:G991902	Mixed vegetables Asian style, canned, drained	овощная смесь по-азиатски консервированная слитая
+bls:G992100	Mixed vegetables peas and carrots, raw	горошек с морковью сырые
+bls:G992132	Mixed vegetables peas and carrots, boiled	горошек с морковью варёные
+bls:G992152	Mixed vegetables peas and carrots, stewed	горошек с морковью тушёные
+bls:G992162	Mixed vegetables peas and carrots, baked	горошек с морковью запечённые
+bls:G992182	Mixed vegetables peas and carrots, fried without fat (pan)	горошек с морковью жареные без масла
 bls:G992200	Mixed vegetables peas and carrots, deep-frozen	горошек с морковью замороженный
+bls:G992232	Mixed vegetables peas and carrots, deep-frozen, boiled	горошек с морковью замороженные варёные
+bls:G992252	Mixed vegetables peas and carrots, deep-frozen, stewed	горошек с морковью замороженные тушёные
+bls:G992262	Mixed vegetables peas and carrots, deep-frozen, baked	горошек с морковью замороженные запечённые
+bls:G992282	Mixed vegetables peas and carrots, deep-frozen, fried without fat (pan)	горошек с морковью замороженные жареные без масла
+bls:G992902	Mixed vegetables peas and carrots, canned, drained	горошек с морковью консервированные слитые
+bls:G993100	Mixed vegetables Mexican style, raw	овощная смесь по-мексикански сырая
+bls:G993132	Mixed vegetables Mexican style, boiled	овощная смесь по-мексикански варёная
+bls:G993142	Mixed vegetables Mexican style, braised without fat	овощная смесь по-мексикански припущенная
+bls:G993152	Mixed vegetables Mexican style, stewed	овощная смесь по-мексикански тушёная
+bls:G993182	Mixed vegetables Mexican style, fried without fat (pan)	овощная смесь по-мексикански жареная без масла
+bls:G993200	Mixed vegetables Mexican style, deep-frozen	овощная смесь по-мексикански замороженная
+bls:G993232	Mixed vegetables Mexican style, deep-frozen, boiled	овощная смесь по-мексикански замороженная варёная
+bls:G993242	Mixed vegetables Mexican style, deep-frozen, braised without fat	овощная смесь по-мексикански замороженная припущенная
+bls:G993252	Mixed vegetables Mexican style, deep-frozen, stewed	овощная смесь по-мексикански замороженная тушёная
+bls:G993282	Mixed vegetables Mexican style, deep-frozen, fried without fat (pan)	овощная смесь по-мексикански замороженная жареная без масла
+bls:G993902	Mixed vegetables Mexican style, canned, drained	овощная смесь по-мексикански консервированная слитая
 bls:G994100	Mixed vegetables Asian style, raw	азиатская овощная смесь сырая
+bls:G994132	Mixed vegetables Asian style, boiled	овощная смесь по-азиатски варёная
+bls:G994142	Mixed vegetables Asian style, braised without fat	овощная смесь по-азиатски припущенная
+bls:G994152	Mixed vegetables Asian style, stewed	овощная смесь по-азиатски тушёная
+bls:G994162	Mixed vegetables Asian style, baked	овощная смесь по-азиатски запечённая
+bls:G994182	Mixed vegetables Asian style, fried without fat (pan)	овощная смесь по-азиатски жареная без масла
+bls:G994200	Mixed vegetables Asian style, deep-frozen	овощная смесь по-азиатски замороженная
+bls:G994232	Mixed vegetables Asian style, deep-frozen, boiled	овощная смесь по-азиатски замороженная варёная
+bls:G994242	Mixed vegetables Asian style, deep-frozen, braised without fat	овощная смесь по-азиатски замороженная припущенная
+bls:G994252	Mixed vegetables Asian style, deep-frozen, stewed	овощная смесь по-азиатски замороженная тушёная
+bls:G994262	Mixed vegetables Asian style, deep-frozen, baked	овощная смесь по-азиатски замороженная запечённая
+bls:G994282	Mixed vegetables Asian style, deep-frozen, fried without fat (pan)	овощная смесь по-азиатски замороженная жареная без масла
+bls:G995000	Sushi nori (toasted)	нори жареный
+bls:H011000	Soya bean protein isolate	соевый протеиновый изолят
+bls:H012000	Soya bean lecithin	соевый лецитин
+bls:H014900	Soya bean small sausage	сосиски соевые
+bls:H030400	Glass noodles made from mung bean starch, raw	фунчоза сырая
+bls:H030432	Glass noodles made from mung bean starch, boiled	фунчоза варёная
+bls:H110600	Peanut roasted	арахис жареный
+bls:H110700	Peanut roasted, salted	арахис жареный солёный
+bls:H110800	Peanut butter (100 % pure)	арахисовая паста
+bls:H120100	Walnut	грецкий орех
+bls:H120400	Walnut ground	грецкий орех молотый
+bls:H120610	Walnut roasted without fat	грецкий орех жареный
+bls:H130100	Hazelnut	фундук
+bls:H130400	Hazelnut ground	фундук молотый
+bls:H130610	Hazelnut roasted without fat	фундук жареный
+bls:H130800	Hazelnut butter (100 % pure)	паста из фундука
+bls:H150100	Coconut meat, raw	мякоть кокоса сырая
+bls:H150400	Coconut meat, grated, dried	кокосовая стружка
+bls:H151000	Coconut water (liquid from coconuts)	вода кокосовая
+bls:H154000	Coconut milk	молоко кокосовое
+bls:H160100	Pecan	пекан
+bls:H160600	Pecan roasted without fat	пекан жареный
+bls:H170100	Cashew nut	кешью
+bls:H170600	Cashew nut roasted with fat	кешью жареный в масле
+bls:H170610	Cashew nut roasted without fat	кешью жареный
+bls:H170700	Cashew nut roasted with fat, salted	кешью жареный в масле солёный
+bls:H180100	Brazil nut	бразильский орех
+bls:H180610	Brazil nut roasted without fat	бразильский орех жареный
+bls:H190100	Macadamia nut	макадамия
+bls:H190600	Macadamia nut roasted without fat	макадамия жареная
+bls:H190700	Macadamia nut roasted without fat, salted	макадамия жареная солёная
+bls:H210100	Sweet almond	миндаль сладкий
+bls:H210200	Sweet almond blanched	миндаль бланшированный
+bls:H210400	Sweet almond crushed	миндаль молотый
+bls:H210600	Sweet almond roasted without fat	миндаль жареный
 bls:H210710	Sweet almond roasted with fat, salted	миндаль жареный солёный
+bls:H212800	Sweet almond butter (100 % pure)	паста миндальная
+bls:H220100	Bitter almond	миндаль горький
+bls:H230100	Sweet chestnut	каштан съедобный
+bls:H230132	Sweet chestnut boiled	каштан съедобный варёный
+bls:H230162	Sweet chestnut baked	каштан съедобный запечённый
+bls:H230172	Sweet chestnut grilled	каштан съедобный на гриле
+bls:H230182	Sweet chestnut fried without fat (pan)	каштан съедобный жареный без масла
+bls:H230400	Sweet chestnut flour	мука каштановая
+bls:H250100	Pistachio nut	фисташки
+bls:H250600	Pistachio nut roasted without fat	фисташки жареные
+bls:H250700	Pistachio nut roasted without fat, salted	фисташки жареные солёные
+bls:H310100	Pumpkin seed	семечки тыквенные
 bls:H310600	Pumpkin seed roasted without fat	тыквенные семечки жареные
+bls:H320100	Pine nut	кедровые орешки
+bls:H320600	Pine nut roasted without fat	кедровые орешки жареные
+bls:H410100	Linseed/flax seed	льняные семена
+bls:H410400	Linseed/flax seed, ground	семена льна молотые
+bls:H410600	Linseed/flax seed, roasted without fat	семена льна жареные
+bls:H420100	Sesame seed	семена кунжута
+bls:H420610	Sesame seeds roasted without fat	кунжут жареный
+bls:H430100	Sunflower seed	семечки подсолнечные
+bls:H430610	Sunflower seeds roasted without fat	семечки подсолнечные жареные
+bls:H450100	Poppy seed	мак
+bls:H450400	Poppy seed ground	мак молотый
+bls:H480100	Chia seeds	семена чиа
+bls:H510802	Olives green, pickled, drained	оливки зелёные маринованные слитые
+bls:H510900	Olives green, filled with sweet pepper paste, pickled, drained	оливки зелёные с перцем маринованные слитые
+bls:H511900	Olives green, filled with almonds, pickled, drained	оливки зелёные с миндалём маринованные слитые
+bls:H520800	Olives blackened, in brine, drained	оливки чёрные в рассоле слитые
+bls:H610100	Bamboo shoots raw	бамбуковые побеги сырые
+bls:H610132	Bamboo shoots boiled	побеги бамбука варёные
+bls:H610182	Bamboo shoots fried without fat (pan)	побеги бамбука жареные без масла
+bls:H610902	Bamboo shoots canned, drained	бамбуковые побеги консервированные слитые
+bls:H620100	Soya bean sprouts raw	проростки сои сырые
 bls:H620902	Soya bean sprouts canned, drained	ростки сои консервированные
+bls:H640100	Lucerne/alfalfa sprouts, raw	проростки люцерны сырые
+bls:H650100	Mung bean sprouts raw	проростки маш сырые
+bls:H650902	Mung bean sprouts canned, drained	проростки маш консервированные слитые
+bls:H662100	Lentils sprouted raw	пророщенная чечевица сырая
+bls:H702100	Cowpea/black-eyed pea, mature	вигна спелая
+bls:H702132	Cowpea/black-eyed pea, mature, boiled	вигна спелая варёная
+bls:H702902	Cowpea/black-eyed pea, mature, canned, drained	вигна консервированная слитая
+bls:H710400	Pea flour	гороховая мука
+bls:H720400	Chickpea flour	мука из нута
+bls:H720902	Chickpea mature, canned, drained	нут консервированный слитый
+bls:H725100	Lentil mature	сухая чечевица
 bls:H730000	Lentil red mature	чечевица красная
+bls:H730032	Lentil red, mature, boiled	чечевица красная варёная
+bls:H730132	Lentil mature, boiled	чечевица варёная
+bls:H730400	Lentil flour	чечевичная мука
+bls:H730902	Lentil mature, canned, drained	чечевица консервированная слитая
+bls:H731400	Lupin flour	люпиновая мука
+bls:H739400	Haricot bean mature	фасоль белая спелая
+bls:H740132	Haricot bean mature, boiled	фасоль белая спелая варёная
+bls:H740902	Haricot bean mature, canned, drained	фасоль белая консервированная слитая
+bls:H742100	Kidney bean mature	фасоль красная спелая
+bls:H742132	Kidney bean mature, boiled	фасоль красная варёная
+bls:H742902	Kidney bean mature, canned, drained	фасоль красная консервированная слитая
+bls:H750100	Broad bean mature	бобы спелые
+bls:H750132	Broad bean mature, boiled	бобы спелые варёные
+bls:H760600	Soya bean mature (soya kernel) roasted without fat	соевые бобы жареные
+bls:H764400	Soya flour full fat	соевая мука полножирная
+bls:H765000	Plant-based mince, made from texturised soya protein, plain, dry	соевый фарш сухой
 bls:H765082	Plant-based mince, made from texturised soya protein, plain, soaked, fried without fat (pan)	соевый фарш жареный без масла
+bls:H770100	Mung bean mature	маш спелый
+bls:H770132	Mung bean mature, boiled	маш спелый варёный
+bls:H800000	Almond drink unsweetened	миндальный напиток без сахара
+bls:H800100	Almond drink unsweetened, fortified with vitamins and calcium	миндальный напиток без сахара с витаминами и кальцием
+bls:H800200	Almond drink sweetened, flavoured	миндальный напиток сладкий ароматизированный
+bls:H800300	Almond drink sweetened, flavoured, fortified with calcium	миндальный напиток сладкий ароматизированный с кальцием
+bls:H800400	Almond drink sweetened, flavoured, fortified with vitamins and calcium	миндальный напиток сладкий ароматизированный с витаминами и кальцием
+bls:H810000	Fruit and nut mix	микс орехов и сухофруктов
+bls:H810100	Peanut roasted, crispy coated	арахис жареный в хрустящей оболочке
+bls:H841100	Soya drink unsweetened	соевый напиток без сахара
+bls:H841400	Soya drink unsweetened, fortified with vitamins and calcium	соевый напиток без сахара с витаминами и кальцием
 bls:H842400	Soya drink sweetened, flavoured	соевый напиток сладкий ароматизированный
+bls:H842600	Soya drink sweetened, flavoured, fortified with vitamins and calcium	соевый напиток сладкий ароматизированный с витаминами и кальцием
+bls:H843200	Plant-based dessert/pudding alternative	десерт растительный
+bls:H843300	Plant-based dessert/pudding alternative, fortified with vitamins and calcium	десерт растительный с витаминами и кальцием
+bls:H844000	Plant-based yogurt alternative, made from soya, unsweetened	йогурт соевый без сахара
+bls:H844100	Plant-based yogurt alternative, made from soya, unsweetened, fortified with vitamins and calcium	йогурт соевый без сахара с витаминами и кальцием
+bls:H844400	Plant-based yogurt alternative, made from soya, sweetened, flavoured	йогурт соевый сладкий ароматизированный
+bls:H844500	Plant-based yogurt alternative, made from soya, sweetened, flavoured fortified with vitamins and calcium	йогурт соевый сладкий ароматизированный с витаминами и кальцием
+bls:H845000	Plant-based cream alternative, made from soya (for boiling and refining)	сливки соевые для готовки
+bls:H861000	Tofu	тофу (соевый творог)
+bls:H861032	Tofu poached	тофу отварной
+bls:H861042	Tofu braised without fat	тофу припущенный
+bls:H861062	Tofu baked	тофу запечённый
+bls:H861082	Tofu fried without fat (pan)	тофу жареный без масла
+bls:H861100	Silken tofu	тофу шёлковый
+bls:H861132	Silken tofu poached	тофу шёлковый отварной
+bls:H862200	Miso/soya bean paste	паста мисо
+bls:H880100	Sunflower seed spread	намазка из семечек подсолнечника
+bls:H880200	Peanut butter	арахисовое масло
+bls:H882000	Plant-based cheese alternative, cashew-based, vegan	сыр веганский из кешью
+bls:H882100	Plant-based soft cream cheese alternative, almond-based, vegan	крем-сыр веганский из миндаля
+bls:H900900	Haricot beans in tomato sauce, canned	фасоль в томатном соусе консервированная
+bls:H910200	Tofu burgers fried without fat (pan)	котлеты из тофу жареные без масла
+bls:H910300	Vegetarian bratwurst (made from tofu and wheat protein)	колбаски вегетарианские из тофу
+bls:H910400	Vegan schnitzel	шницель веганский
+bls:H910500	Vegetarian Vienna sausages	сосиски вегетарианские
+bls:H923900	Soya Bolognese, canned	соевое болоньезе консервированное
+bls:H926100	Soya burgers fried without fat (pan)	котлеты соевые жареные без масла
+bls:H930000	Vegan cold cuts alternative	колбасные ломтики веганские
+bls:H930100	Soya spreadable sausage alternative, vegan	колбаса-паста соевая веганская
+bls:H930200	Vegetarian cold cuts alternative, with egg	колбасные ломтики вегетарианские с яйцом
+bls:H960000	Hummus/chickpea puree	хумус из нута
+bls:K110100	Potatoe peeled, raw	картофель очищенный сырой
+bls:K110132	Potatoe peeled, boiled	картофель очищенный варёный
+bls:K110142	Potatoe peeled, braised without fat	картофель очищенный припущенный
+bls:K110143	Potatoe peeled, pressure-steamed	картофель очищенный в скороварке
+bls:K110162	Potatoe peeled, baked	картофель очищенный запечённый
+bls:K110182	Potatoe peeled, fried without fat (pan)	картофель очищенный жареный без масла
+bls:K110902	Potatoe peeled, boiled, canned, drained	картофель очищенный варёный консервированный слитый
+bls:K120100	Potatoe unpeeled, raw	картофель в кожуре сырой
+bls:K120134	Potatoe unpeeled, boiled	картофель в мундире
+bls:K120164	Potatoe unpeeled, baked	картофель в мундире запечённый
+bls:K120184	Potatoe unpeeled, fried without fat (pan)	картофель в кожуре жареный без масла
+bls:K120200	Potatoe unpeeled, deep-frozen	картофель в кожуре замороженный
+bls:K120264	Potatoe unpeeled, deep-frozen, baked	картофель в кожуре замороженный запечённый
+bls:K130200	Potato chips/french fries, deep-frozen	картофель фри замороженный
+bls:K130262	Potato chips/french fries, deep-frozen, baked	картофель фри замороженный запечённый
+bls:K130362	Potato chips/french fries, deep-frozen, baked, salted	картофель фри замороженный запечённый солёный
+bls:K130492	Potato chips/french fries, deep-frozen, deep-fried	картофель фри замороженный жареный во фритюре
+bls:K130592	Potato chips/french fries, deep-frozen, deep-fried, salted	картофель фри замороженный жареный во фритюре солёный
+bls:K213000	Potatoes mashed instant powder	пюре картофельное порошковое
+bls:K230000	Potato starch (potato flour)	крахмал картофельный
+bls:K240400	Potato dumpling (from raw potatoes) dehydrated product	клёцки картофельные из сырого картофеля сухие
+bls:K240500	Potato dumpling (from boiled potatoes) dehydrated product	клёцки картофельные из варёного картофеля сухие
+bls:K241200	Potato dumpling half and half, deep-frozen	клёцки картофельные полусырые замороженные
+bls:K241232	Potato dumpling half and half, deep-frozen, poached	клёцки картофельные полусырые замороженные отварные
+bls:K260200	Potato pancakes deep-frozen	драники замороженные
+bls:K260262	Potato pancakes deep-frozen, baked	драники замороженные запечённые
+bls:K260282	Potato pancakes deep-frozen, fried without fat (pan)	драники замороженные жареные без масла
+bls:K260292	Potato pancakes deep-frozen, deep-fried	драники замороженные жареные во фритюре
+bls:K270000	Gnocchi raw	ньокки сырые
+bls:K270022	Gnocchi steamed	ньокки на пару
+bls:K270032	Gnocchi boiled	ньокки варёные
+bls:K270062	Gnocchi boiled, baked	ньокки варёные запечённые
+bls:K270082	Gnocchi boiled, fried without fat (pan)	ньокки варёные жареные без масла
+bls:K271000	Gnocchi deep-frozen	ньокки замороженные
+bls:K271032	Gnocchi deep-frozen, boiled	ньокки замороженные варёные
+bls:K280100	Potato crisps/potato chips (various types)	чипсы картофельные
+bls:K280200	Potato sticks	палочки картофельные
+bls:K282200	Potato croquettes deep-frozen	крокеты картофельные замороженные
+bls:K282262	Potato croquettes deep-frozen, baked	крокеты картофельные замороженные запечённые
+bls:K282292	Potato croquettes deep-frozen, deep-fried	крокеты картофельные замороженные жареные во фритюре
+bls:K290100	Potato crisps/potato chips, calorie-reduced	чипсы картофельные лёгкие
+bls:K311200	Potato pockets with cream cheese filling, deep-frozen	картофельные конвертики с крем-сыром замороженные
+bls:K311262	Potato pockets with cream cheese filling, deep-frozen, baked	картофельные конвертики с крем-сыром замороженные запечённые
+bls:K311282	Potato pockets with cream cheese filling, deep-frozen, fried without fat (pan)	картофельные конвертики с крем-сыром замороженные жареные без масла
+bls:K311292	Potato pockets with cream cheese filling, deep-frozen, deep-fried	картофельные конвертики с крем-сыром замороженные жареные во фритюре
+bls:K391200	Potato rösti (fried grated potatoes) deep-frozen	рёшти замороженный
+bls:K391262	Potato rösti (fried grated potatoes) deep-frozen, baked	рёшти замороженный запечённый
+bls:K391282	Potato rösti (fried grated potatoes) deep-frozen, fried without fat (pan)	рёшти замороженный жареный без масла
+bls:K391292	Potato rösti (fried grated potatoes) deep-frozen, deep-fried	рёшти замороженный жареный во фритюре
+bls:K392200	Potato rösti with bacon, deep-frozen	рёшти с беконом замороженный
+bls:K392262	Potato rösti with bacon, deep-frozen, baked	рёшти с беконом замороженный запечённый
+bls:K392282	Potato rösti with bacon, deep-frozen, fried without fat (pan)	рёшти с беконом замороженный жареный без масла
+bls:K392292	Potato rösti with bacon, deep-frozen, deep-fried	рёшти с беконом замороженный жареный во фритюре
+bls:K410100	Manioc/cassava, raw	маниок сырой
+bls:K410162	Manioc/cassava, baked	маниок запечённый
+bls:K410182	Manioc/cassava, fried without fat (pan)	маниок жареный без масла
+bls:K410432	Manioc/cassava, boiled	маниок варёный
 bls:K420100	Batata/sweet potato, raw	батат сырой
+bls:K420132	Batata/sweet potato, boiled	батат отварной
+bls:K420162	Batata/sweet potato, baked	батат запечённый
+bls:K420182	Batata/sweet potato, fried without fat (pan)	батат жареный без масла
+bls:K420192	Batata/sweet potato, deep-fried, salted	батат жареный во фритюре солёный
+bls:K430100	Jerusalem artichoke/topinambur, raw	топинамбур свежий
+bls:K430132	Jerusalem artichoke/topinambur, boiled	топинамбур варёный
+bls:K430162	Jerusalem artichoke/topinambur, baked	топинамбур запечённый
+bls:K430182	Jerusalem artichoke/topinambur, fried without fat (pan)	топинамбур жареный без масла
+bls:K440100	Yam raw	ямс сырой
+bls:K440132	Yam boiled	ямс варёный
+bls:K440162	Yam baked	ямс запечённый
+bls:K440182	Yam fried without fat (pan)	ямс жареный без масла
+bls:K512000	Tapioca (granulated cassava starch)	тапиока
+bls:K550000	Arrowroot flour	мука аррорут
+bls:K701100	Button mushroom raw	свежие шампиньоны
+bls:K701132	Button mushroom boiled	шампиньоны варёные
+bls:K701142	Button mushroom braised without fat	шампиньоны припущенные
+bls:K701152	Button mushroom stewed	шампиньоны тушёные
+bls:K701162	Button mushroom baked	шампиньоны запечённые
+bls:K701172	Button mushroom grilled	шампиньоны на гриле
+bls:K701182	Button mushroom fried without fat (pan)	шампиньоны жареные без масла
+bls:K701200	Button mushroom deep-frozen	шампиньоны замороженные
+bls:K701242	Button mushroom deep-frozen, stewed	шампиньоны замороженные тушёные
+bls:K701262	Button mushroom deep-frozen, baked	шампиньоны замороженные запечённые
+bls:K701282	Button mushroom deep-frozen, fried without fat (pan)	шампиньоны замороженные жареные без масла
+bls:K701400	Button mushroom dried	шампиньоны сушёные
+bls:K701432	Buttom mushroom dried, boiled	шампиньоны сушёные варёные
+bls:K701502	Button mushroom grilled, in oil, canned, drained	шампиньоны жареные на гриле в масле консервированные слитые
+bls:K701902	Button mushroom canned, drained	консервированные шампиньоны слитые
+bls:K702100	Black truffle (Perigord black truffle) raw	трюфель чёрный сырой
+bls:K702152	Black truffle (Perigord black truffle) stewed	трюфель чёрный тушёный
+bls:K702182	Black truffle (Perigord black truffle) fried without fat (pan)	трюфель чёрный жареный без масла
+bls:K702400	Black truffle (Perigord black truffle) dried	трюфель чёрный сушёный
+bls:K702432	Black truffle (Perigord black truffle) dried, boiled	трюфель чёрный сушёный варёный
+bls:K702902	Black truffle (Perigord black truffle) canned, drained	трюфель чёрный консервированный слитый
+bls:K703100	Morel raw	сморчок сырой
+bls:K703152	Morel stewed	сморчок тушёный
+bls:K703182	Morel fried without fat (pan)	сморчок жареный без масла
+bls:K703400	Morel dried	сморчок сушёный
+bls:K703432	Morel dried, boiled	сморчок сушёный варёный
+bls:K703902	Morel canned, drained	сморчок консервированный слитый
+bls:K704100	Brown birch bolete raw	подберёзовик сырой
+bls:K704152	Brown birch bolete stewed	подберёзовик тушёный
+bls:K704182	Brown birch bolete fried without fat (pan)	подберёзовик жареный без масла
+bls:K706100	Brown-yellow boletus (slippery jack) raw	маслёнок сырой
+bls:K706152	Brown-yellow boletus (slippery jack) stewed	маслёнок тушёный
+bls:K706182	Brown-yellow boletus (slippery jack) fried without fat (pan)	маслёнок жареный без масла
+bls:K706400	Brown-yellow boletus (slippery jack) dried	маслёнок сушёный
+bls:K706432	Brown-yellow boletus (slippery jack) dried, boiled	маслёнок сушёный варёный
+bls:K707100	Saffron milk cap (red pine mushroom) raw	рыжик сырой
+bls:K707152	Saffron milk cap (red pine mushroom) stewed	рыжик тушёный
+bls:K707182	Saffron milk cap (red pine mushroom) fried without fat (pan)	рыжик жареный без масла
+bls:K709100	Dark honey mushroom raw	опёнок сырой
+bls:K709152	Dark honey mushroom stewed	опёнок тушёный
+bls:K709182	Dark honey mushroom fried without fat (pan)	опёнок жареный без масла
+bls:K713062	Chanterelle baked	лисичка запечённая
+bls:K713100	Chanterelle raw	лисичка сырая
+bls:K713142	Chanterelle braised without fat	лисичка припущенная
+bls:K713152	Chanterelle stewed	лисичка тушёная
+bls:K713182	Chanterelle fried without fat (pan)	лисичка жареная без масла
+bls:K713400	Chanterelle dried	лисичка сушёная
+bls:K713432	Chanterelle dried, boiled	лисичка сушёная варёная
+bls:K713902	Chanterelle canned, drained	лисичка консервированная слитая
+bls:K717100	Orange birch bolete raw	подосиновик сырой
+bls:K717152	Orange birch bolete stewed	подосиновик тушёный
+bls:K717182	Orange birch bolete fried without fat (pan)	подосиновик жареный без масла
+bls:K718100	Porcini mushroom raw	белый гриб сырой
+bls:K718152	Porcini mushroom stewed	белый гриб тушёный
+bls:K718162	Porcini mushroom baked	белый гриб запечённый
+bls:K718182	Porcini mushroom fried without fat (pan)	белый гриб жареный без масла
+bls:K718400	Porcini mushroom dried	белый гриб сушёный
+bls:K718432	Porcini mushroom dried, boiled	белый гриб сушёный варёный
+bls:K718902	Porcini mushroom canned, drained	белый гриб консервированный слитый
+bls:K724100	Shiitake mushroom raw	шиитаке сырой
+bls:K724152	Shiitake mushroom stewed	шиитаке тушёный
+bls:K724182	Shiitake mushroom fried without fat (pan)	шиитаке жареный без масла
+bls:K724400	Shiitake mushroom dried	шиитаке сушёный
+bls:K724432	Shiitake mushroom dried, boiled	шиитаке сушёный варёный
+bls:K724902	Shiitake mushroom canned, drained	шиитаке консервированный слитый
+bls:K740100	Oyster mushroom raw	вешенка сырая
+bls:K740152	Oyster mushroom stewed	вешенка тушёная
+bls:K740182	Oyster mushroom fried without fat (pan)	вешенка жареная без масла
+bls:K740400	Oyster mushroom dried	вешенка сушёная
+bls:K740432	Oyster mushroom dried, boiled	вешенка сушёная варёная
+bls:K750100	Mixed mushrooms raw	грибы ассорти сырые
+bls:K750152	Mixed mushrooms stewed	грибы ассорти тушёные
+bls:K750162	Mixed mushrooms baked	грибы ассорти запечённые
+bls:K750182	Mixed mushrooms fried without fat (pan)	грибы ассорти жареные без масла
+bls:K750200	Mixed mushrooms deep-frozen	грибы ассорти замороженные
+bls:K750252	Mixed mushrooms deep-frozen, stewed	грибы ассорти замороженные тушёные
+bls:K750262	Mixed mushrooms deep-frozen, baked	грибы ассорти замороженные запечённые
+bls:K750282	Mixed mushrooms deep-frozen, fried without fat (pan)	грибы ассорти замороженные жареные без масла
+bls:K750400	Mixed mushrooms dried	грибы ассорти сушёные
+bls:K750432	Mixed mushrooms dried, boiled	грибы ассорти сушёные варёные
+bls:K750902	Mixed mushrooms canned, drained	грибы ассорти консервированные слитые
+bls:K762400	Yeast flakes/nutritional yeast	дрожжи пищевые хлопьями
+bls:K820000	Vegetarian pate, spread yeast-based	паштет вегетарианский на дрожжах
+bls:K850500	Cream of mushroom soup instant powder	суп-пюре грибной порошковый
+bls:K850532	Cream of mushroom soup, made from instant powder and water	суп-пюре грибной из порошка
+bls:M011000	Sheep's milk min. 4.5 % fat	молоко овечье 4,5 %
+bls:M012100	Roquefort min. 50 % fat in dry matter	сыр рокфор 50 % жира в сухом веществе
+bls:M012200	Feta min. 45 % fat in dry matter	сыр фета 45 % жира в сухом веществе
+bls:M021000	Goat's milk min. 3 % fat	молоко козье 3 %
+bls:M032100	Mozzarella min. 45 % fat in dry matter	моцарелла 45 % жира в сухом веществе
+bls:M052000	Brine cheese made from cow's milk, min. 45 % fat in dry matter	сыр рассольный из коровьего молока 45 % жира в сухом веществе
+bls:M053000	Brine cheese made from goat's milk, min. 45 % fat in dry matter	сыр рассольный из козьего молока 45 % жира в сухом веществе
+bls:M0A1000	Mozzarella min. 20 % fat in dry matter	моцарелла 20 % жира в сухом веществе
+bls:M111100	Milk skimmed, fresh, max. 0.1 % fat, pasteurised	молоко обезжиренное свежее 0,1 % пастеризованное
+bls:M111200	Milk low-fat, fresh, 1.5 % fat, pasteurised	молоко нежирное свежее 1,5 % пастеризованное
+bls:M111300	Whole milk, fresh, 3.5 % fat, pasteurised	молоко цельное свежее 3,5 % пастеризованное
+bls:M112300	Certified raw milk, min. 3.5 % fat	молоко сырое сертифицированное 3,5 %
+bls:M113100	Milk skimmed, max. 0.5 % fat, ultra-heated	молоко обезжиренное ультрапастеризованное 0,5 %
+bls:M113200	Milk low-fat, 1.5 % fat, ultra-heated	молоко нежирное ультрапастеризованное 1,5 %
+bls:M113300	Whole milk, 3.5 % fat, ultra-heated	молоко цельное ультрапастеризованное 3,5 %
+bls:M114100	Milk skimmed, fresh, max. 0.1 % fat, lactose-free, pasteurised	молоко обезжиренное без лактозы 0,1 %
+bls:M114200	Milk low-fat, fresh, 1.5 % fat, lactose-free, pasteurised	молоко нежирное без лактозы 1,5 %
+bls:M114300	Whole milk, fresh, 3.5 % fat, lactose-free, pasteurised	молоко цельное без лактозы 3,5 %
+bls:M117700	Cream substitute (mixture of vegetable fats and milk)	заменитель сливок растительно-молочный
+bls:M121100	Soured milk (thick) skimmed, max. 0.5 % fat	простокваша обезжиренная 0,5 %
+bls:M121200	Soured milk (thick) low-fat, min. 1.5 % to max. 1.8 % fat	простокваша нежирная 1,5 %
+bls:M121300	Soured milk (thick) min. 3.5 % fat	простокваша 3,5 %
+bls:M121500	Soured milk (thick) min. 10 % fat	простокваша сливочная 10 %
+bls:M130100	Kefir from skimmed milk, max. 0.5 % fat	кефир обезжиренный 0,5 %
+bls:M130200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat	кефир нежирный 1,5 %
+bls:M130300	Kefir min. 3.5 % fat	кефир 3,5 %
+bls:M130500	Kefir min. 10 % fat	кефир сливочный 10 %
+bls:M141100	Yogurt from skimmed milk, max. 0.5 % fat	йогурт обезжиренный 0,5 %
+bls:M141200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat	йогурт нежирный 1,5 %
+bls:M141300	Yogurt mild, min. 3.5 % fat	йогурт мягкий 3,5 %
+bls:M141500	Yogurt min. 10 % fat	йогурт сливочный 10 %
+bls:M148100	Yogurt from skimmed milk, max. 0.5 % fat, fortified with skimmed milk powder	йогурт обезжиренный 0,5 % с сухим молоком
+bls:M148200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, fortified with skimmed milk powder	йогурт нежирный 1,5 % с сухим молоком
+bls:M148300	Yogurt min. 3.5 % fat, fortified with skimmed milk powder	йогурт 3,5 % с сухим молоком
+bls:M148500	Yogurt min. 10 % fat, fortified with skimmed milk powder	йогурт сливочный 10 % с сухим молоком
+bls:M149500	Yogurt made from sheep's milk	йогурт из овечьего молока
+bls:M150000	Buttermilk	пахта (обрат)
+bls:M161000	Sweet whey	сыворотка сладкая
+bls:M162000	Sour whey	сыворотка кислая
+bls:M171500	Coffee cream min. 10 % fat	сливки для кофе 10 %
+bls:M172500	Sour cream min. 10 % fat	сметана 10 %
+bls:M172700	Sour cream min. 20 % fat	сметана 20 %
+bls:M172900	Sour cream 40 % fat	сметана 40 %
+bls:M173800	Whipping cream min. 30 % fat	сливки для взбивания 30 %
+bls:M173900	Whipping cream min. 36 % fat	сливки для взбивания 36 %
+bls:M175800	Spray cream/whipping cream, sweetened, min. 30 % fat	сливки в баллончике сладкие 30 %
 bls:M176800	Creme fraiche 30 % fat	крем-фреш 30 %
+bls:M181100	Condensed milk max. 1 % fat, sweetened	сгущённое молоко обезжиренное с сахаром
+bls:M181400	Condensed milk min. 8 % fat, sweetened	сгущённое молоко с сахаром 8 %
+bls:M182100	Evaporated milk max. 1 % fat	сгущённое молоко обезжиренное без сахара
+bls:M182300	Evaporated milk semi-skimmed, min. 1 % to < 7.5 % fat	сгущённое молоко полуобезжиренное без сахара
+bls:M182400	Evaporated milk min. 7.5 % fat	сгущённое молоко без сахара 7,5 %
+bls:M182500	Evaporated milk 10 % fat	сгущённое молоко без сахара 10 %
+bls:M1A3100	Milk skimmed, max. 0.5 % fat, lactose-free, ultra-heated	молоко обезжиренное ультрапастеризованное без лактозы 0,5 %
+bls:M1A5200	Milk low-fat, 1.5 % fat, lactose-free, ultra-heated	молоко нежирное ультрапастеризованное без лактозы 1,5 %
+bls:M1A7300	Whole milk, 3.5 % fat, lactose-free, ultra-heated	молоко цельное ультрапастеризованное без лактозы 3,5 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	йогурт обезжиренный без лактозы
+bls:M1B2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, lactose-free	йогурт нежирный без лактозы 1,5 %
+bls:M1E3300	Yogurt min. 3.5 % fat, lactose-free	йогурт без лактозы 3,5 %
+bls:M200100	Milk drink < 1 % fat, flavoured, sweetened	молочный напиток обезжиренный ароматизированный сладкий
+bls:M200200	Milk drink 1.5 % fat, flavoured, sweetened	молочный напиток 1,5 % ароматизированный сладкий
+bls:M200300	Milk drink 3.5 % fat, flavoured, sweetened	молочный напиток 3,5 % ароматизированный сладкий
+bls:M206100	Milk drink < 1 % fat, with cocoa/chocolate, sweetened	молочный напиток обезжиренный с какао сладкий
+bls:M206200	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened	молочный напиток 1,5 % с какао сладкий
+bls:M206300	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened	молочный напиток 3,5 % с какао сладкий
+bls:M208000	Milk drink 3.5 % fat, with coffee, sweetened	молочный напиток 3,5 % с кофе сладкий
+bls:M231200	Kefir low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	кефир нежирный с фруктовым наполнителем сладкий
+bls:M231500	Kefir min. 10 % fat, with fruit preparation, sweetened	кефир сливочный с фруктовым наполнителем сладкий
+bls:M241100	Yogurt mild, max. 1 % fat, with fruit preparation, sweetened	йогурт мягкий обезжиренный с фруктовым наполнителем сладкий
+bls:M241200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	йогурт нежирный с фруктовым наполнителем сладкий
+bls:M241300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened	йогурт мягкий с фруктовым наполнителем сладкий
+bls:M241500	Yogurt min. 10 % fat, with fruit preparation, sweetened	йогурт сливочный с фруктовым наполнителем сладкий
+bls:M246000	Yogurt min. 3.5 % fat, with chocolate preparation, sweetened	йогурт с шоколадным наполнителем сладкий
+bls:M248000	Yogurt min. 3.5 % fat, with coffee preparation, sweetened	йогурт с кофейным наполнителем сладкий
+bls:M252000	Buttermilk drink with fruit preparation, sweetened	напиток из пахты с фруктами сладкий
+bls:M255000	Buttermilk dessert with cream and fruit preparation, sweetened	десерт из пахты со сливками и фруктами сладкий
+bls:M259000	Buttermilk drink with fruit preparation, sweetened, fortified with vitamins	напиток из пахты с фруктами, сладкий, с витаминами
+bls:M260100	Whey with fruit juice, sugar and artificial sweeteners fortified with vitamins	сывороточный напиток с фруктовым соком, подсластителями и витаминами
+bls:M276300	Yogurt min. 3.5 % fat, with fruit-chocolate preparation, sweetened	йогурт с фруктово-шоколадным наполнителем сладкий
+bls:M293300	Yogurt min. 3.5 % fat, with chocolate-cereal preparation, sweetened	йогурт с шоколадно-зерновым наполнителем сладкий
+bls:M2A0100	Milk drink < 1 % fat, flavoured, with sugar and artificial sweeteners	молочный напиток обезжиренный ароматизированный с сахаром и подсластителем
+bls:M2A0200	Milk drink 1.5 % fat, flavoured, sweetened, fortified with vitamins	молочный напиток 1,5 % ароматизированный сладкий с витаминами
+bls:M2A0300	Milk drink 3.5 % fat, flavoured, sweetened, fortified with vitamins	молочный напиток 3,5 % ароматизированный сладкий с витаминами
+bls:M2A1100	Milk drink < 1 % fat, flavoured, with artificial sweeteners	молочный напиток обезжиренный ароматизированный с подсластителем
+bls:M2A2100	Milk drink < 1 % fat, probiotic, flavoured, with sugar and artificial sweeteners, fortified with vitamins	молочный напиток обезжиренный пробиотический с сахаром, подсластителем и витаминами
+bls:M2A2200	Milk drink > 1 % fat, probiotic, flavoured, sweetened, fortified with vitamins	молочный напиток пробиотический ароматизированный сладкий с витаминами
+bls:M2A3200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened, lactose-free	йогурт нежирный с фруктовым наполнителем сладкий без лактозы
+bls:M2A3300	Yogurt mild, max. 3.8 % fat, with fruit preparation, sweetened, lactose-free	йогурт мягкий с фруктовым наполнителем сладкий без лактозы
+bls:M2A6100	Milk drink < 1 % fat, with cocoa/chocolate, sugar and artificial sweeteners	молочный напиток обезжиренный с какао, сахаром и подсластителем
+bls:M2A7200	Milk drink 1.5 % fat, with coffee, sweetened	молочный напиток 1,5 % с кофе сладкий
+bls:M2A9200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sugar and artificial sweeteners	йогурт нежирный с фруктовым наполнителем, сахаром и подсластителем
+bls:M2D1100	Yogurt from skimmed milk, max. 0.5 % fat, with vanilla preparation, sugar and artificial sweeteners	йогурт обезжиренный ванильный с сахаром и подсластителем
+bls:M2H2300	Milkshake 3.5 % fat sweetened	милкшейк 3,5 % сладкий
+bls:M2H7300	Milkshake 3.5 % fat, with cocoa/chocolate, sweetened	милкшейк шоколадный 3,5 % сладкий
+bls:M2I3200	Milk drink 1.5 % fat, with coffee and artificial sweeteners	молочный напиток 1,5 % с кофе и подсластителем
+bls:M2I5200	Milk drink 1.5 % fat, with coffee, unsweetened	молочный напиток 1,5 % с кофе без сахара
+bls:M2J1100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners, fortified with vitamins	йогурт обезжиренный с фруктовым наполнителем, сахаром, подсластителем и витаминами
+bls:M2J2100	Yogurt from skimmed milk, max. 0.5 % fat, with fruit preparation, sugar and artificial sweeteners	йогурт обезжиренный с фруктовым наполнителем, сахаром и подсластителем
+bls:M2J7100	Yogurt drink from skimmed milk, max. 0.5 % fat, with fruit preparation, sweetened	йогурт питьевой обезжиренный с фруктовым наполнителем сладкий
+bls:M2K7200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with fruit-cereal preparation, sweetened	йогурт нежирный с фруктово-зерновым наполнителем сладкий
+bls:M2L2200	Yogurt drink low-fat, min. 1.5 % to max. 1.8 % fat, with fruit preparation, sweetened	йогурт питьевой нежирный с фруктовым наполнителем сладкий
+bls:M2L2300	Yogurt drink min. 3.5 % fat, with fruit preparation, sweetened	йогурт питьевой с фруктовым наполнителем сладкий
+bls:M2L7300	Yogurt min. 3.5 % fat, with fruit-cereal preparation, sweetened	йогурт с фруктово-зерновым наполнителем сладкий
+bls:M2M2400	Yogurt min. 10 % fat, with chocolate preparation, sweetened	йогурт сливочный с шоколадным наполнителем сладкий
+bls:M2N1400	Yogurt min. 10 % fat, with vanilla preparation, sweetened	йогурт сливочный ванильный сладкий
+bls:M2N3400	Yogurt min. 10 % fat, with fruit preparation and artificial sweeteners	йогурт сливочный с фруктовым наполнителем и подсластителем
+bls:M2N6400	Yogurt min. 10 % fat, sweetened	йогурт сливочный сладкий
+bls:M2Q4220	Milk drink 1.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	молочный напиток 1,5 % с какао, сладкий, с витаминами
+bls:M2Q8320	Milk drink 3.5 % fat, with cocoa/chocolate, sweetened, fortified with vitamins	молочный напиток 3,5 % с какао, сладкий, с витаминами
+bls:M2R2200	Yogurt low-fat, min. 1.5 % to max. 1.8 % fat, with vanilla preparation, sweetened	йогурт нежирный ванильный сладкий
+bls:M2R7300	Yogurt min. 3.5 % fat, with crunchy-muesli mix, sweetened	йогурт с хрустящим мюсли сладкий
+bls:M2R8300	Yogurt min. 3.5 % fat, with vanilla preparation, sweetened	йогурт ванильный сладкий
+bls:M2R9300	Yogurt min. 3.5 % fat, with nuts, sweetened	йогурт с орехами сладкий
+bls:M2S8300	Ayran, yogurt drink, salted	айран солёный
+bls:M300400	Hard cheese min. 30 % fat in dry matter	сыр твёрдый 30 % жира в сухом веществе
+bls:M300600	Hard cheese min. 45 % fat in dry matter	сыр твёрдый 45 % жира в сухом веществе
+bls:M300700	Hard cheese min. 50 % fat in dry matter	сыр твёрдый 50 % жира в сухом веществе
+bls:M301300	Appenzeller cheese min. 20 % fat in dry matter	сыр аппенцеллер 20 % жира в сухом веществе
+bls:M301700	Appenzeller cheese min. 50 % fat in dry matter	сыр аппенцеллер 50 % жира в сухом веществе
+bls:M302600	Bergkäse (Alpine cheese) min. 45 % fat in dry matter	сыр горный 45 % жира в сухом веществе
+bls:M302700	Bergkäse (Alpine cheese) min. 50 % fat in dry matter	сыр горный 50 % жира в сухом веществе
+bls:M303600	Chester (Cheddar) cheese min. 45 % fat in dry matter	сыр чеддер 45 % жира в сухом веществе
+bls:M303700	Chester (Cheddar) cheese min. 50 % fat in dry matter	сыр чеддер 50 % жира в сухом веществе
+bls:M304600	Emmentaler cheese min. 45 % fat in dry matter	сыр эмменталер 45 % жира в сухом веществе
+bls:M305700	Gruyère cheese min. 50 % fat in dry matter	сыр грюйер 50 % жира в сухом веществе
+bls:M306400	Parmesan cheese min. 30 % fat in dry matter	сыр пармезан 30 % жира в сухом веществе
+bls:M307700	Raclette cheese min. 45 % fat in dry matter	сыр раклет 45 % жира в сухом веществе
+bls:M309600	Jarlsberg cheese min. 45 % fat in dry matter	сыр ярлсберг 45 % жира в сухом веществе
+bls:M313600	Provolone cheese min. 45 % fat in dry matter	сыр проволоне 45 % жира в сухом веществе
+bls:M3A4300	Brine cheese made from sheep's milk, min. 20 % fat in dry matter	сыр рассольный из овечьего молока 20 % жира в сухом веществе
+bls:M400300	Semi-hard cheese min. 20 % fat in dry matter	сыр полутвёрдый 20 % жира в сухом веществе
+bls:M400400	Semi-hard cheese min. 30 % fat in dry matter	сыр полутвёрдый 30 % жира в сухом веществе
+bls:M400500	Semi-hard cheese min. 40 % fat in dry matter	сыр полутвёрдый 40 % жира в сухом веществе
+bls:M400600	Semi-hard cheese min. 45 % fat in dry matter	сыр полутвёрдый 45 % жира в сухом веществе
+bls:M400700	Semi-hard cheese min. 50 % fat in dry matter	сыр полутвёрдый 50 % жира в сухом веществе
+bls:M400800	Semi-hard cheese min. 60 % fat in dry matter	сыр полутвёрдый 60 % жира в сухом веществе
+bls:M401400	Edam cheese min. 30 % fat in dry matter	сыр эдам 30 % жира в сухом веществе
+bls:M401500	Edam cheese min. 40 % fat in dry matter	сыр эдам 40 % жира в сухом веществе
+bls:M401600	Edam cheese min. 45 % fat in dry matter	сыр эдам 45 % жира в сухом веществе
+bls:M401700	Edam cheese min. 50 % fat in dry matter	сыр эдам 50 % жира в сухом веществе
+bls:M402400	Gouda cheese min. 30 % fat in dry matter	сыр гауда 30 % жира в сухом веществе
+bls:M402500	Gouda cheese min. 40 % fat in dry matter	сыр гауда 40 % жира в сухом веществе
+bls:M402600	Gouda cheese 48 % fat in dry matter	сыр гауда 48 % жира в сухом веществе
+bls:M403400	Tilsit cheese min. 30 % fat in dry matter	сыр тильзит 30 % жира в сухом веществе
+bls:M403500	Tilsit cheese min. 40 % fat in dry matter	сыр тильзит 40 % жира в сухом веществе
+bls:M403600	Tilsit cheese min. 45 % fat in dry matter	сыр тильзит 45 % жира в сухом веществе
+bls:M403700	Tilsit cheese min. 50 % fat in dry matter	сыр тильзит 50 % жира в сухом веществе
+bls:M403800	Tilsit cheese min. 60 % fat in dry matter	сыр тильзит 60 % жира в сухом веществе
+bls:M404600	Wilstermarsch cheese min. 45 % fat in dry matter	сыр вильстермарш 45 % жира в сухом веществе
+bls:M404700	Wilstermarsch cheese min. 50 % fat in dry matter	сыр вильстермарш 50 % жира в сухом веществе
+bls:M406700	Fontina cheese min. 50 % fat in dry matter	сыр фонтина 50 % жира в сухом веществе
+bls:M410700	Semi-hard cheese made from sheep's milk, min. 50 % fat in dry matter	сыр полутвёрдый из овечьего молока 50 % жира в сухом веществе
+bls:M500300	Semi-soft cheese min. 20 % fat in dry matter	сыр полумягкий 20 % жира в сухом веществе
+bls:M500400	Semi-soft cheese min. 30 % fat in dry matter	сыр полумягкий 30 % жира в сухом веществе
+bls:M500500	Semi-soft cheese min. 40 % fat in dry matter	сыр полумягкий 40 % жира в сухом веществе
+bls:M500600	Semi-soft cheese min. 45 % fat in dry matter	сыр полумягкий 45 % жира в сухом веществе
+bls:M500700	Semi-soft cheese min. 50 % fat in dry matter	сыр полумягкий 50 % жира в сухом веществе
+bls:M500800	Semi-soft cheese min. 60 % fat in dry matter	сыр полумягкий 60 % жира в сухом веществе
+bls:M501600	Butterkäse cheese min. 45 % fat in dry matter	сыр буттеркезе 45 % жира в сухом веществе
+bls:M501700	Butterkäse cheese min. 50 % fat in dry matter	сыр буттеркезе 50 % жира в сухом веществе
+bls:M501800	Butterkäse cheese min. 60 % fat in dry matter	сыр буттеркезе 60 % жира в сухом веществе
+bls:M502600	Blue cheese min. 45 % fat in dry matter	сыр с плесенью 45 % жира в сухом веществе
+bls:M502700	Blue cheese min. 50 % fat in dry matter	сыр с плесенью 50 % жира в сухом веществе
+bls:M502800	Blue cheese min. 60 % fat in dry matter	сыр с плесенью 60 % жира в сухом веществе
+bls:M503400	Steinbuscher cheese min. 30 % fat in dry matter	сыр штейнбушер 30 % жира в сухом веществе
+bls:M503600	Steinbuscher cheese min. 45 % fat in dry matter	сыр штейнбушер 45 % жира в сухом веществе
+bls:M503700	Steinbuscher cheese min. 50 % fat in dry matter	сыр штейнбушер 50 % жира в сухом веществе
+bls:M504500	Weisslacker cheese min. 40 % fat in dry matter	сыр вайслакер 40 % жира в сухом веществе
+bls:M504600	Weisslacker cheese min. 45 % fat in dry matter	сыр вайслакер 45 % жира в сухом веществе
+bls:M504700	Weisslacker cheese min. 50 % fat in dry matter	сыр вайслакер 50 % жира в сухом веществе
+bls:M505600	Trappista cheese min. 45 % fat in dry matter	сыр траппист 45 % жира в сухом веществе
+bls:M505700	Trappista cheese min. 50 % fat in dry matter	сыр траппист 50 % жира в сухом веществе
+bls:M506600	Danbo cheese min. 45 % fat in dry matter	сыр данбо 45 % жира в сухом веществе
+bls:M507600	Esrom cheese min. 45 % fat in dry matter	сыр эсром 45 % жира в сухом веществе
+bls:M508600	Havarti cheese min. 45 % fat in dry matter	сыр хаварти 45 % жира в сухом веществе
+bls:M512400	Steppenkäse cheese min. 30 % fat in dry matter	сыр степной 30 % жира в сухом веществе
+bls:M512600	Steppenkäse cheese min. 45 % fat in dry matter	сыр степной 45 % жира в сухом веществе
+bls:M516700	Danish Blue cheese min. 50 % fat in dry matter	сыр датский голубой 50 % жира в сухом веществе
+bls:M524500	Halloumi cheese	сыр халлуми
+bls:M524562	Halloumi cheese baked	сыр халлуми запечённый
+bls:M524572	Halloumi cheese grilled	сыр халлуми на гриле
+bls:M524582	Halloumi cheese fried without fat (pan)	сыр халлуми жареный без масла
+bls:M5B1600	Gorgonzola cheese min. 48 % fat in dry matter	сыр горгонзола 48 % жира в сухом веществе
+bls:M600300	Soft cheese min. 20 % fat in dry matter	сыр мягкий 20 % жира в сухом веществе
+bls:M600400	Soft cheese min. 30 % fat in dry matter	сыр мягкий 30 % жира в сухом веществе
+bls:M600500	Soft cheese min. 40 % fat in dry matter	сыр мягкий 40 % жира в сухом веществе
+bls:M600600	Soft cheese min. 45 % fat in dry matter	сыр мягкий 45 % жира в сухом веществе
+bls:M600700	Soft cheese min. 50 % fat in dry matter	сыр мягкий 50 % жира в сухом веществе
+bls:M600800	Soft cheese min. 60 % fat in dry matter	сыр мягкий 60 % жира в сухом веществе
+bls:M600900	Soft cheese min. 70 % fat in dry matter	сыр мягкий 70 % жира в сухом веществе
+bls:M601600	Brie cheese min. 45 % fat in dry matter	сыр бри 45 % жира в сухом веществе
+bls:M601700	Brie cheese min. 50 % fat in dry matter	сыр бри 50 % жира в сухом веществе
+bls:M601800	Brie cheese min. 60 % fat in dry matter	сыр бри 60 % жира в сухом веществе
+bls:M602400	Camembert cheese min. 30 % fat in dry matter	сыр камамбер 30 % жира в сухом веществе
+bls:M602600	Camembert cheese min. 45 % fat in dry matter	сыр камамбер 45 % жира в сухом веществе
+bls:M602700	Camembert cheese min. 50 % fat in dry matter	сыр камамбер 50 % жира в сухом веществе
+bls:M602800	Camembert cheese min. 60 % fat in dry matter	сыр камамбер 60 % жира в сухом веществе
+bls:M603300	Limburger cheese min. 20 % fat in dry matter	сыр лимбургер 20 % жира в сухом веществе
+bls:M603500	Limburger cheese min. 40 % fat in dry matter	сыр лимбургер 40 % жира в сухом веществе
+bls:M603700	Limburger cheese min. 50 % fat in dry matter	сыр лимбургер 50 % жира в сухом веществе
+bls:M604600	Muenster cheese min. 45 % fat in dry matter	сыр мюнстер 45 % жира в сухом веществе
+bls:M604700	Muenster cheese min. 50 % fat in dry matter	сыр мюнстер 50 % жира в сухом веществе
+bls:M605300	Romadur cheese min. 20 % fat in dry matter	сыр ромадюр 20 % жира в сухом веществе
+bls:M605500	Romadur cheese min. 40 % fat in dry matter	сыр ромадюр 40 % жира в сухом веществе
+bls:M605700	Romadur cheese min. 50 % fat in dry matter	сыр ромадюр 50 % жира в сухом веществе
+bls:M609600	Wine cheese, soft cheese, min. 45 % fat in dry matter	сыр винный мягкий 45 % жира в сухом веществе
+bls:M609800	Wine cheese, soft cheese, min. 60 % fat in dry matter	сыр винный мягкий 60 % жира в сухом веществе
+bls:M619700	Bel Paese cheese min. 50 % fat in dry matter	сыр бель паезе 50 % жира в сухом веществе
+bls:M6A3700	Semi-hard cheese made from goat's milk, min. 50 % fat in dry matter	сыр полутвёрдый из козьего молока 50 % жира в сухом веществе
+bls:M6A5700	Soft cheese made from sheep's milk, min. 45 % fat in dry matter	сыр мягкий из овечьего молока 45 % жира в сухом веществе
+bls:M6A6800	Brine cheese made from sheep's milk, min. 45 % fat in dry matter	сыр рассольный из овечьего молока 45 % жира в сухом веществе
+bls:M6A9600	Soft cheese made from goat's milk, min. 45 % fat in dry matter	сыр мягкий из козьего молока 45 % жира в сухом веществе
+bls:M710100	Skyr Icelandic style strained yogurt < 10 % fat in dry matter	скир
+bls:M710700	Cream cheese preparation min. 50 % fat in dry matter	сливочный сыр 50 % жира в сухом веществе
+bls:M710800	Cream cheese preparation min. 60 % fat in dry matter	сливочный сыр 60 % жира в сухом веществе
+bls:M711100	Cottage cheese < 10 % fat in dry matter	зернёный творог обезжиренный
+bls:M711300	Cottage cheese min. 20 % fat in dry matter	зернёный творог 20 % жира в сухом веществе
+bls:M712200	Layered cheese min. 10 % fat in dry matter	сыр слоёный 10 % жира в сухом веществе
+bls:M712300	Layered cheese min. 20 % fat in dry matter	сыр слоёный 20 % жира в сухом веществе
+bls:M712500	Layered cheese min. 40 % fat in dry matter	сыр слоёный 40 % жира в сухом веществе
+bls:M713100	Quark < 10 % fat in dry matter	творог обезжиренный
+bls:M713200	Quark 10 % fat in dry matter	творог 10 % жира в сухом веществе
+bls:M713300	Quark 20 % fat in dry matter	творог полужирный 20 % жира в сухом веществе
+bls:M713500	Quark 40 % fat in dry matter	творог жирный 40 % жира в сухом веществе
+bls:M713700	Quark 50 % fat in dry matter	творог сливочный 50 % жира в сухом веществе
+bls:M715800	Spread made from vegetable fats, cream, skimmed yogurt	намазка из растительных жиров со сливками и йогуртом
+bls:M730100	Soured milk cheese < 10 % fat in dry matter	сыр кисломолочный обезжиренный
+bls:M741600	Ricotta min. 45 % fat in dry matter	сыр рикотта 45 % жира в сухом веществе
+bls:M771300	Processed cheese sliceable min. 20 % fat in dry matter	сыр плавленый в ломтиках 20 % жира в сухом веществе
+bls:M771400	Processed cheese sliceable min. 30 % fat in dry matter	сыр плавленый в ломтиках 30 % жира в сухом веществе
+bls:M771600	Processed cheese sliceable min. 45 % fat in dry matter	сыр плавленый в ломтиках 45 % жира в сухом веществе
+bls:M771700	Processed cheese sliceable min. 50 % fat in dry matter	сыр плавленый в ломтиках 50 % жира в сухом веществе
+bls:M772800	Processed cheese made from cream cheese, spreadable, min. 60 % fat in dry matter	сыр плавленый пастообразный 60 % жира в сухом веществе
+bls:M780100	German cooked cheese < 10 % fat in dry matter	сыр варёный обезжиренный
+bls:M780200	German cooked cheese min. 10 % fat in dry matter	сыр варёный 10 % жира в сухом веществе
+bls:M780300	German cooked cheese min. 20 % fat in dry matter	сыр варёный 20 % жира в сухом веществе
+bls:M780500	German cooked cheese min. 40 % fat in dry matter	сыр варёный 40 % жира в сухом веществе
+bls:M7A1600	Cream cheese made from goat's milk, min. 45 % fat in dry matter	сливочный сыр из козьего молока 45 % жира в сухом веществе
+bls:M7A6800	Mascarpone min. 80 % fat in dry matter	сыр маскарпоне 80 % жира в сухом веществе
+bls:M7B1600	Cream cheese made from sheep's milk, min. 45 % fat in dry matter	сливочный сыр из овечьего молока 45 % жира в сухом веществе
+bls:M810300	Processed cheese preparation min. 20 % fat in dry matter	продукт плавленый сырный 20 % жира в сухом веществе
+bls:M810400	Processed cheese preparation min. 30 % fat in dry matter	продукт плавленый сырный 30 % жира в сухом веществе
+bls:M810500	Processed cheese preparation min. 40 % fat in dry matter	продукт плавленый сырный 40 % жира в сухом веществе
+bls:M810600	Processed cheese preparation 45 - 52 % fat in dry matter	продукт плавленый сырный 45-52 % жира в сухом веществе
+bls:M813700	Processed cheese preparation 45 - 52 % fat in dry matter, with ham	продукт плавленый сырный 45-52 % жира в сухом веществе с ветчиной
+bls:M816000	Processed cheese preparation 45 - 52 % fat in dry matter, with nuts	продукт плавленый сырный 45-52 % жира в сухом веществе с орехами
+bls:M820100	Cream cheese preparation < 10 % fat in dry matter	сливочный сыр обезжиренный
 bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	сливочный сыр лёгкий (10 % жира в сухом веществе)
+bls:M820500	Cream cheese preparation min. 40 % fat in dry matter	сливочный сыр 40 % жира в сухом веществе
+bls:M820600	Cream cheese preparation min. 45 % fat in dry matter	сливочный сыр 45 % жира в сухом веществе
+bls:M821300	Dessert with yogurt mild, cream cheese and fruit preparation, sweetened	десерт из йогурта и сливочного сыра с фруктами сладкий
+bls:M827100	Cream cheese preparation < 10 % fat in dry matter, with vegetables/herbs	сливочный сыр обезжиренный с овощами и зеленью
+bls:M827200	Cream cheese preparation min. 10 % fat in dry matter, with vegetables/herbs	сливочный сыр 10 % жира в сухом веществе с овощами и зеленью
+bls:M827300	Cream cheese preparation min. 20 % fat in dry matter, with vegetables/herbs	сливочный сыр 20 % жира в сухом веществе с овощами и зеленью
+bls:M827400	Cream cheese preparation min. 30 % fat in dry matter, with vegetables/herbs	сливочный сыр 30 % жира в сухом веществе с овощами и зеленью
+bls:M827500	Cream cheese preparation min. 40 % fat in dry matter, with vegetables/herbs	сливочный сыр 40 % жира в сухом веществе с овощами и зеленью
+bls:M827700	Cream cheese preparation min. 50 % fat in dry matter, with vegetables/herbs	сливочный сыр 50 % жира в сухом веществе с овощами и зеленью
+bls:M827800	Cream cheese preparation min. 60 % fat in dry matter, with vegetables/herbs	сливочный сыр 60 % жира в сухом веществе с овощами и зеленью
+bls:M831100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sweetened	творожная паста обезжиренная с фруктовым наполнителем сладкая
+bls:M831300	Quark preparation min. 20 % fat in dry matter, with fruit preparation, sweetened	творожная паста 20 % жира в сухом веществе с фруктовым наполнителем сладкая
+bls:M831500	Quark preparation min. 40 % fat in dry matter, with fruit preparation, sweetened	творожная паста 40 % жира в сухом веществе с фруктовым наполнителем сладкая
+bls:M832100	Quark preparation < 10 % fat in dry matter, with vanilla preparation, sweetened	творожная паста обезжиренная ванильная сладкая
+bls:M837500	Quark preparation min. 40 % fat in dry matter, with herbs	творожная паста 40 % жира в сухом веществе с зеленью
+bls:M856000	Semolina pudding with cream and fruit sauce, sweetened	манный пудинг со сливками и фруктовым соусом сладкий
+bls:M857000	Semolina pudding with cream, sweetened	манный пудинг со сливками сладкий
+bls:M861000	Mousse au chocolat (milk-based) sweetened	шоколадный мусс молочный сладкий
+bls:M863000	Obatzter/Obazda (Bavarian cheese spread) 60 % fat in dry matter	обацда 60 % жира в сухом веществе
+bls:M881000	Milk powder with high fat content (cream powder)	сливки сухие
+bls:M882000	Whole milk powder	молоко сухое цельное
+bls:M884000	Skimmed milk powder	молоко сухое обезжиренное
+bls:M886000	Buttermilk powder	пахта сухая
+bls:M887000	Sweet whey powder	сыворотка сухая сладкая
+bls:M8A1200	Cream cheese preparation min. 10 % fat in dry matter, with fruit preparation, sweetened, fortified with vitamin D and Calcium	сливочный сыр 10 % жира в сухом веществе с фруктовым наполнителем, сладкий, с витамином D и кальцием
+bls:M8A1300	Cream cheese preparation min. 20 % fat in dry matter, with fruit preparation, sweetened, fortified with Calcium	сливочный сыр 20 % жира в сухом веществе с фруктовым наполнителем, сладкий, с кальцием
+bls:M8A4000	Quark preparation min. 10 % fat in dry matter, with herbs	творожная паста 10 % жира в сухом веществе с зеленью
+bls:M8A5000	Quark preparation min. 20 % fat in dry matter, with herbs	творожная паста 20 % жира в сухом веществе с зеленью
+bls:M8A6000	Quark preparation min. 30 % fat in dry matter, with herbs	творожная паста 30 % жира в сухом веществе с зеленью
+bls:M8B2100	Quark preparation < 10 % fat in dry matter, with fruit preparation, sugar and artificial sweeteners	творожная паста обезжиренная с фруктовым наполнителем, сахаром и подсластителем
+bls:M8C3300	Quark preparation min. 20 % fat in dry matter, with vanilla preparation, sweetened	творожная паста 20 % жира в сухом веществе ванильная сладкая
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	вода с ароматом без сахара
+bls:N002000	Nearwater/Aqua Plus beverage, flavoured, sweetened	вода с ароматом и сахаром
+bls:N003000	Aperitif alcohol-free	аперитив безалкогольный
+bls:N005000	Sparkling wine alcohol-free	игристое вино безалкогольное
+bls:N014000	Wine alcohol-free	безалкогольное вино
+bls:N019000	Iced tea lemon-peach-flavoured, sweetened	холодный чай лимонно-персиковый сладкий
+bls:N0A1000	Nearwater/Aqua Plus beverage, with fruit juice, flavoured, sweetened	вода с ароматом и фруктовым соком, сладкая
+bls:N0A1100	Nearwater/Aqua Plus beverage, flavoured, with sugar and artificial sweeteners	вода с ароматом, сахаром и подсластителем
+bls:N110000	Drinking water	вода питьевая
+bls:N120000	Natural mineral water	вода минеральная
+bls:N127000	Natural mineral water carbonated	вода минеральная газированная
+bls:N128000	Natural mineral water still	вода минеральная негазированная
+bls:N130000	Natural mineral water with low mineral content	вода минеральная слабоминерализованная
+bls:N160000	Spring water	вода родниковая
+bls:N210000	Fruit juice beverage apple	соковый напиток яблочный
+bls:N220000	Fruit juice beverage cherry	соковый напиток вишнёвый
+bls:N230000	Fruit juice beverage currant	соковый напиток смородиновый
+bls:N250000	Fruit juice beverage citrus fruit	соковый напиток цитрусовый
+bls:N251000	Fruit juice beverage with sugar and artificial sweeteners	соковый напиток с сахаром и подсластителем
+bls:N252000	Fruit juice beverage fortified with vitamins	соковый напиток с витаминами
+bls:N253000	Fruit juice beverage with artificial sweeteners, fortified with vitamins	соковый напиток с подсластителем и витаминами
+bls:N256000	Apple juice spritzer	яблочный сок с газированной водой
+bls:N257000	Orange juice spritzer	апельсиновый сок с газированной водой
+bls:N258000	Grape juice spritzer	виноградный сок с газированной водой
+bls:N259000	Isotonic beverage, sweetened, fortified with vitamins and minerals	напиток изотонический сладкий с витаминами и минералами
+bls:N260000	Isotonic beverage with sugar and artificial sweeteners, fortified with vitamins and minerals	напиток изотонический с сахаром, подсластителем, витаминами и минералами
+bls:N261000	Cherry nectar spritzer	нектар вишнёвый с газированной водой
+bls:N261700	Peach-maracuja fruit nectar	нектар персиковый с маракуйей
+bls:N262000	Pear juice spritzer	грушевый сок с газированной водой
+bls:N264000	Currant juice spritzer	нектар смородиновый с газированной водой
+bls:N265000	Fruit juice beverage ACE fortified	соковый напиток с витаминами ACE
+bls:N270000	Grapefruit juice spritzer	грейпфрутовый сок с газированной водой
+bls:N271000	Multi-fruit juice spritzer	мультифруктовый сок с газированной водой
+bls:N272000	Carrot juice spritzer	морковный сок с газированной водой
+bls:N273000	Pineapple juice spritzer	ананасовый сок с газированной водой
+bls:N274000	Banana nectar spritzer	нектар банановый с газированной водой
+bls:N276000	Peach-maracuja nectar spritzer	нектар персиковый с маракуйей и газированной водой
+bls:N277000	Multi-fruit juice spritzer fortified with vitamins (multivitamin juice spritzer)	мультивитаминный сок с газированной водой
+bls:N310300	Orange soft drink	лимонад апельсиновый
+bls:N310400	Carbonated lemonade	лимонад лимонный
+bls:N311000	Carbonated soft drink with artificial sweeteners	лимонад с подсластителем
+bls:N312000	Carbonated soft drink with higher fruit juice content	лимонад с повышенным содержанием сока
+bls:N314000	Carbonated soft drink with quinine	тоник с хинином
+bls:N315000	Ginger Ale	джинджер-эль
+bls:N316000	Carbonated soft drink with spice extracts and artificial sweeteners	лимонад с экстрактами пряностей и подсластителем
+bls:N321000	Carbonated sherbet with sugar and artificial sweeteners	напиток шипучий с сахаром и подсластителем
+bls:N323000	Carbonated sherbet	напиток шипучий
+bls:N330000	Cola beverage caffeinated	кола с кофеином
+bls:N331000	Cola beverage caffeinated, with artificial sweeteners	кола с кофеином и подсластителем
+bls:N340000	Cola beverage decaffeinated	кола без кофеина
+bls:N352000	Cola beverage decaffeinated, with artificial sweeteners	кола без кофеина с подсластителем
+bls:N390100	Cola Mix (cola beverage caffeinated with orange soft drink)	кола с апельсиновым лимонадом
+bls:N410100	Coffee (infusion)	кофе заварной
+bls:N410200	Coffee (infusion) with milk 3.5 % fat	кофе с молоком 3,5 %
+bls:N410300	Coffee (infusion) with milk 3.5 % fat and sugar	кофе с молоком 3,5 % и сахаром
+bls:N410400	Coffee (infusion) with evaporated milk 7.5 % fat	кофе со сгущённым молоком 7,5 %
+bls:N410500	Coffee (infusion) with evaporated milk 7.5 % fat and sugar	кофе со сгущённым молоком 7,5 % и сахаром
+bls:N410600	Coffee (infusion) with sugar	кофе заварной с сахаром
+bls:N410800	Coffee (infusion) with alcohol	кофе с алкоголем
+bls:N411100	Espresso (infusion)	эспрессо заварной
+bls:N411200	Espresso (infusion) with sugar	эспрессо с сахаром
+bls:N412900	Cappuccino (infusion) made from sweetened instant powder	капучино из порошка сладкий
+bls:N414000	Cappuccino (infusion) with milk 3.5 % fat	капучино с молоком 3,5 %
+bls:N414100	Coffee (infusion) decaffeinated, with milk 3.5 % fat	кофе без кофеина с молоком 3,5 %
+bls:N414200	Coffee (infusion) decaffeinated, with evaporated milk 7.5 % fat	кофе без кофеина со сгущённым молоком 7,5 %
+bls:N415000	Coffee (infusion) decaffeinated	кофе без кофеина
+bls:N416000	Coffee (infusion) caffeine-reduced	кофе с пониженным кофеином
+bls:N418000	Latte Macchiato (infusion) with milk 3.5 % fat	латте макиато с молоком 3,5 %
+bls:N419000	Turkish mocha (infusion)	турецкий кофе
+bls:N420100	Coffee (infusion) made from instant powder	кофе растворимый заваренный
+bls:N420900	Coffee instant powder	растворимый кофе порошковый
+bls:N440100	Coffee (infusion) made from decaffeinated instant powder	кофе без кофеина растворимый заваренный
+bls:N440900	Coffee instant powder decaffeinated	растворимый кофе порошковый без кофеина
+bls:N491000	Coffee (infusion) half and half, with milk 3.5 % fat	кофе напополам с молоком 3,5 %
+bls:N4A0000	Coffee (infusion) with oat drink, unsweetened	кофе с овсяным напитком без сахара
+bls:N4A1000	Coffee (infusion) with almond drink, unsweetened	кофе с миндальным напитком без сахара
+bls:N4A2000	Coffee (infusion) with soya drink, unsweetened	кофе с соевым напитком без сахара
+bls:N4A3300	Cappuccino (infusion) with milk 3.5 % fat and sugar	капучино с молоком 3,5 % и сахаром
+bls:N500100	Coffee substitute (infusion)	напиток из заменителя кофе
+bls:N500200	Coffee substitute (infusion) with milk 3.5 % fat	заменитель кофе с молоком 3,5 %
+bls:N500300	Coffee substitute (infusion) with milk 3.5 % fat and sugar	заменитель кофе с молоком 3,5 % и сахаром
+bls:N500400	Coffee substitute (infusion) with evaporated milk 7.5 % fat	заменитель кофе со сгущённым молоком 7,5 %
+bls:N500500	Coffee substitute (infusion) with evaporated milk 7.5 % fat and sugar	заменитель кофе со сгущённым молоком 7,5 % и сахаром
+bls:N500600	Coffee substitute (infusion) with sugar	заменитель кофе с сахаром
+bls:N500800	Coffee substitute (infusion) with alcohol	заменитель кофе с алкоголем
+bls:N500900	Coffee substitute powder	заменитель кофе порошковый
+bls:N503900	Cappuccino instant powder, sweetened	капучино порошковый сладкий
+bls:N540100	Chicory coffee (infusion)	кофе из цикория
+bls:N540900	Chicory coffee powder	цикорий порошковый
+bls:N5A0000	Coffee substitute (infusion) with oat drink, unsweetened	заменитель кофе с овсяным напитком без сахара
+bls:N5A1000	Coffee substitute (infusion) with almond drink, unsweetened	заменитель кофе с миндальным напитком без сахара
+bls:N5A2000	Coffee substitute (infusion) with soya drink, unsweetened	заменитель кофе с соевым напитком без сахара
+bls:N601000	Rooibos tea (infusion)	чай ройбуш
+bls:N610100	Green tea (infusion)	зелёный чай
+bls:N611000	Mate tea (infusion)	мате
+bls:N630000	Black tea (infusion)	чёрный чай
+bls:N630200	Black tea (infusion) with milk 3.5 % fat	чай чёрный с молоком 3,5 %
+bls:N630300	Black tea (infusion) with milk 3.5 % fat and sugar	чай чёрный с молоком 3,5 % и сахаром
+bls:N630400	Black tea (infusion) with cream 30 % fat	чай чёрный со сливками 30 %
+bls:N630500	Black tea (infusion) with cream 30 % fat and sugar	чай чёрный со сливками 30 % и сахаром
+bls:N630600	Black tea (infusion) with sugar	чай чёрный с сахаром
+bls:N630700	Black tea (infusion) with lemon juice and sugar	чай чёрный с лимонным соком и сахаром
+bls:N630800	Black tea (infusion) with alcohol	чай чёрный с алкоголем
+bls:N670100	Black tea (infusion) decaffeinated	чёрный чай без кофеина
+bls:N710000	Fruit tea (infusion)	чай фруктовый
+bls:N710600	Fruit tea (infusion) with sugar	чай фруктовый с сахаром
+bls:N720100	Herbal tea (infusion)	травяной чай
+bls:N720200	Herbal tea (infusion) with milk 3.5 % fat	чай травяной с молоком 3,5 %
+bls:N720300	Herbal tea (infusion) with milk 3.5 % fat and sugar	чай травяной с молоком 3,5 % и сахаром
+bls:N720400	Herbal tea (infusion) with cream 30 % fat	чай травяной со сливками 30 %
+bls:N720500	Herbal tea (infusion) with cream 30 % fat and sugar	чай травяной со сливками 30 % и сахаром
+bls:N720600	Herbal tea (infusion) with sugar	чай травяной с сахаром
+bls:N720800	Herbal tea (infusion) with alcohol	чай травяной с алкоголем
+bls:N721000	Peppermint tea (infusion)	чай мятный
+bls:P122000	Malt drink, alcohol-free	солодовый напиток безалкогольный
+bls:P150000	Wheat beer filtered	пиво пшеничное фильтрованное
+bls:P151100	Wheat beer, naturally cloudy	пиво пшеничное нефильтрованное
+bls:P151110	Wheat beer alcohol-free	пиво пшеничное безалкогольное
+bls:P151120	Wheat beer 0.0 % vol	пиво пшеничное 0,0 %
+bls:P153000	Dark beer (medium-gravity beer) top-fermented	альтбир
+bls:P154000	Koelsch (beer from Cologne)	кёльш
+bls:P161000	Pale beer	пиво светлое лагер
+bls:P162000	Pale export beer	пиво светлое экспорт
+bls:P163000	Pilsner beer	пиво пильснер
+bls:P163100	Pilsner beer alcohol-free	пиво пильснер безалкогольное
+bls:P163110	Pilsner beer 0.0 % vol	пиво пильснер 0,0 %
+bls:P165000	Dark beer	пиво тёмное лагер
+bls:P166000	Dark export beer	пиво тёмное экспорт
+bls:P167000	Black beer	пиво чёрное
+bls:P172000	Bock beer (original wort > 16 %)	пиво бок
+bls:P174000	Doppelbock beer (original wort min. 18 %)	пиво доппельбок
+bls:P177000	Stout	стаут
 bls:P192000	Pilsner beer mixed with carbonated lemonade	пиво с лимонадом (радлер)
+bls:P194000	Punch with top-fermented dark beer	пунш с тёмным пивом
+bls:P195000	Beer with sparkling wine	пиво с игристым вином
+bls:P196000	Berlin draught beer with fruit syrup	берлинер вайссе с фруктовым сиропом
+bls:P197000	Beer reduced carbohydrate content	пиво с пониженными углеводами
+bls:P1A1100	Wheat beer with cola	пшеничное пиво с колой
+bls:P1A1110	Wheat beer with fruit nectar	пшеничное пиво с фруктовым нектаром
+bls:P1A1120	Wheat beer, alcohol-free, mixed with carbonated lemonade	пшеничный радлер безалкогольный
+bls:P1A1130	Wheat beer mixed with carbonated lemonade	пшеничный радлер
+bls:P1A3000	Pilsner beer mixed with cola	пиво пильснер с колой
+bls:P1A3100	Pilsner beer, alcohol-free, mixed with carbonated lemonade	радлер безалкогольный
+bls:P1A3110	Pilsner beer mixed with mineral water	радлер с минеральной водой
+bls:P1A4000	Light beer	пиво лёгкое
+bls:P210000	White wine dry	вино белое сухое
+bls:P219000	Ice wine	айсвайн
+bls:P220000	White wine medium dry	вино белое полусухое
+bls:P230000	White wine medium sweet	вино белое полусладкое
+bls:P231000	White wine sweet	вино белое сладкое
+bls:P232000	White wine Beerenauslese/Trockenbeerenauslese	вино белое бееренауслезе
+bls:P253000	Red wine medium dry	вино красное полусухое
+bls:P273000	Rose wine dry	вино розовое сухое
+bls:P273100	Rotling wine dry	вино ротлинг сухое
+bls:P281000	Mulled wine	глинтвейн
+bls:P285000	White wine spritzer with mineral water	вино белое с минеральной водой
+bls:P285100	White wine spritzer with carbonated lemonade	вино белое с лимонадом
+bls:P287000	Cold duck (punch made from wine and sparkling wine)	пунш из вина и игристого
+bls:P288100	Strawberry punch	пунш клубничный
+bls:P288300	Pineapple punch	пунш ананасовый
+bls:P288600	Red wine punch	пунш из красного вина
+bls:P289000	Federweisser (still fermenting young wine)	федервайсер
+bls:P2A1000	Red wine sweet	вино красное сладкое
+bls:P2A2000	Red wine medium sweet	вино красное полусладкое
+bls:P2A3000	Red wine dry	вино красное сухое
+bls:P2A6000	Quality sparkling wine dry	игристое вино сухое
+bls:P2A6100	Quality sparkling wine extra dry	игристое вино экстра-сухое
+bls:P2A6110	Quality sparkling wine brut	игристое вино брют
+bls:P2A7000	Quality sparkling wine sweet	игристое вино сладкое
+bls:P2A7100	Quality sparkling wine medium dry	игристое вино полусухое
+bls:P2B1000	Rose wine sweet	вино розовое сладкое
+bls:P2B1100	Rose wine medium sweet	вино розовое полусладкое
+bls:P2B1200	Rose wine medium dry	вино розовое полусухое
+bls:P330000	Pearl wine/pearl wine with added carbonic acid, dry	перлвейн сухой
+bls:P341300	Vermouth dry	вермут сухой
+bls:P341600	Vermouth sweet	вермут сладкий
+bls:P350000	Fruit wine	вино плодовое
+bls:P353100	Cider	сидр яблочный
+bls:P355000	Apple must	яблочный муст
+bls:P3A2000	Sparkling wine with orange juice	игристое вино с апельсиновым соком
+bls:P431000	Port wine	портвейн
+bls:P432000	Madeira wine	мадера
+bls:P461000	Sherry dry	херес сухой
+bls:P462000	Sherry medium dry	херес полусухой
+bls:P463000	Sherry cream	херес кремовый
 bls:P464000	Sherry sweet	херес сладкий
+bls:P510000	Fruit juice liqueur	ликёр фруктовый на соке
+bls:P530000	Fruit aroma liqueur	ликёр фруктовый ароматный
+bls:P540100	Almond liqueur	ликёр миндальный
+bls:P546000	Egg liqueur	ликёр яичный
+bls:P550000	Coffee/cocoa liqueur, without milk/cream	ликёр кофейно-какао без сливок
 bls:P560000	Bitter/herb/spice liqueur	травяной ликёр горький
+bls:P560100	Bitter liqueur 11 % vol	ликёр горький 11 %
+bls:P571000	Apfelkorn (apple flavoured liqueur)	яблочный ликёр апфелькорн
+bls:P5A1000	Cream liqueur	сливочный ликёр
+bls:P5A2000	Fruit cream liqueur	ликёр сливочный фруктовый
+bls:P5A5000	Coffee/chocolate liqueur, with milk/cream	ликёр кофейно-шоколадный сливочный
+bls:P610000	Cognac	коньяк
+bls:P620000	Brandy/Weinbrand	бренди
+bls:P640000	Calvados	кальвадос
+bls:P712000	Vodka	водка
+bls:P721000	Juniper-flavoured spirit drink	можжевеловая водка
+bls:P722000	Gin	джин
+bls:P730000	Grain spirit	зерновой шнапс
+bls:P733000	Whisky/whiskey	виски
+bls:P740000	Sugarcane spirit	кашаса
+bls:P741000	Rum 37.5/40 % vol	ром 40 %
+bls:P742000	Arrack	аррак
+bls:P743000	Rum 80 % vol	ром 80 %
+bls:P752100	Fruit spirit	фруктовый шнапс
+bls:P754100	Fruit geist	фруктовый гайст
+bls:P7A1000	Aniseed-flavoured spirit drink	анисовая водка
+bls:P7A1100	Aniseed-flavoured spirit drink, with water	анисовая водка с водой
+bls:P7A2000	Bitter-tasting spirit drink or bitter	настойка горькая
+bls:P7A3000	Caraway-flavoured spirit drink or Kümmel/Aquavit	тминная водка
+bls:P7A4000	Agave spirit (Mezcal/Tequila)	мескаль/текила (агавовый дистиллят)
+bls:P8A2000	Alcopops	алкопопы
+bls:P8A3000	Egg nog	яичный пунш
+bls:P9A4000	Cocktail, Gin and tonic	коктейль джин-тоник
+bls:P9A5000	Cocktail, Touch down	коктейль тачдаун
+bls:P9A5100	Cocktail, Bloody Mary	кровавая мэри
+bls:P9A5110	Cocktail, Sex on the beach	секс на пляже
+bls:P9A6000	Cocktail, Tequila sunrise	коктейль текила санрайз
+bls:P9A7000	Cocktail, Pina colada	коктейль «пина колада»
+bls:P9A7100	Cocktail, Cuba libre	куба либре
+bls:P9A7110	Cocktail, Mojito	коктейль мохито
+bls:P9A8000	Cocktail, Kir royale	кир рояль
+bls:P9A8100	Cocktail, Hugo	коктейль хуго
+bls:P9A9000	Cocktail, Caipirinha	кайпиринья
+bls:P9B1000	Cocktail, Campari-orange	кампари-оранж
+bls:P9B2000	Cocktail, Campari-soda	кампари-сода
+bls:P9B3000	Cocktail, Campari-tonic	кампари-тоник
+bls:P9B4000	Cocktail, Margarita	коктейль маргарита
+bls:Q120000	Olive oil	масло оливковое
+bls:Q140000	Hazelnut oil	масло фундучное
+bls:Q150000	Palm fat/palm oil, refined	масло пальмовое рафинированное
+bls:Q150100	Palm fat hydrogenated	жир пальмовый гидрогенизированный
+bls:Q160000	Linseed oil	масло льняное
+bls:Q170000	Hemp oil	масло конопляное
+bls:Q180000	Rapeseed oil/canola oil	масло рапсовое
+bls:Q190000	Almond oil	масло миндальное
+bls:Q210000	Peanut oil	масло арахисовое
+bls:Q220000	Wheat germ oil	масло зародышей пшеницы
+bls:Q230000	Sesame oil	масло кунжутное
+bls:Q250000	Pumpkin seed oil	масло тыквенных семечек
+bls:Q260000	Corn oil	масло кукурузное
+bls:Q270000	Soya oil	масло соевое
+bls:Q310000	Walnut oil	масло грецкого ореха
+bls:Q320000	Sunflower oil	масло подсолнечное
+bls:Q330000	Grapeseed oil	масло виноградной косточки
+bls:Q340000	Safflower oil	масло сафлоровое
+bls:Q350000	Poppy seed oil	масло маковое
+bls:Q400000	Margarine full-fat, fortified with vitamins	маргарин полножирный с витаминами
+bls:Q440000	Margarine half-fat, fortified with vitamins	маргарин полужирный с витаминами
+bls:Q481000	Margarine for baking	маргарин для выпечки
+bls:Q482000	Margarine for making puff pastry	маргарин для слоёного теста
+bls:Q4A1000	Margarine three-quarter fat, fortified with vitamins	маргарин трёхчетвертной жирности с витаминами
+bls:Q4A4000	Margarine made from sunflower oil, fortified with vitamin D	маргарин из подсолнечного масла с витамином D
+bls:Q4B1000	Vegetable fat cooking liquid	растительный крем для жарки и варки
+bls:Q4C1000	Vegetable fat spread with > 62 % and < 80 % fat, fortified with vitamins	спред растительный 62-80 % жира с витаминами
+bls:Q4C2000	Vegetable fat spread with > 41 % and < 60 % fat, fortified with vitamins	спред растительный 41-60 % жира с витаминами
+bls:Q4C3000	Vegetable fat spread with < 39 % fat, fortified with vitamins	спред растительный до 39 % жира с витаминами
+bls:Q4C4000	Margarine made from rapeseed oil/canola oil, fortified with vitamins	маргарин из рапсового масла с витаминами
+bls:Q4C5000	Mixed fat spread (mainly vegetable fat) unsalted, fortified with vitamins	спред смешанный несолёный с витаминами
+bls:Q4C5100	Mixed fat spread (mainly vegetable fat) salted, fortified with vitamins	спред смешанный солёный с витаминами
+bls:Q520000	Shea butter	масло ши
+bls:Q530000	Cocoa butter	масло какао
+bls:Q550000	Coconut oil	масло кокосовое
+bls:Q550100	Coconut oil deodorized	масло кокосовое дезодорированное
+bls:Q550200	Coconut fat hydrogenated	жир кокосовый гидрогенизированный
+bls:Q570000	Palm kernel fat/palm kernel oil	масло пальмоядровое
+bls:Q590000	Plant-based cheese alternative, vegetable fat based, vegan	сыр веганский на растительном жире
+bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortified with vitamin B12 and calcium	сыр веганский на растительном жире с витамином B12 и кальцием
+bls:Q611000	Best quality butter	масло сливочное мягкое на закваске
+bls:Q620000	Cultured butter	масло сливочное на закваске
+bls:Q630000	Sweet cream butter	масло сливочное сладкосливочное
+bls:Q640000	Butter half fat	масло полужирное
+bls:Q656000	Garlic butter/herb butter	масло чесночно-травяное
+bls:Q683000	Rendered butter	масло топлёное
+bls:Q6A4000	Butter salted	масло сливочное солёное
+bls:Q6A6000	Butter with yogurt	масло сливочное с йогуртом
+bls:Q6A7000	Mixed fat spread, mainly milk fat, unsalted	спред сливочный несолёный
+bls:Q6A7100	Mixed fat spread, mainly milk fat, salted	спред сливочный солёный
+bls:Q730000	Cod-liver oil	жир печени трески
+bls:Q810000	Duck fat	жир утиный
+bls:Q820000	Goose lard/fat	жир гусиный
+bls:Q830000	Chicken fat	жир куриный
+bls:Q860000	Pork lard	смалец свиной
+bls:Q880000	Mutton tallow/fat	жир бараний
+bls:Q890000	Beef tallow/fat	жир говяжий
+bls:Q901000	Tahini made from sesame seeds	тахини
+bls:Q902000	Plant-based lard substitute, vegetable fat based, vegan	заменитель смальца растительный
+bls:Q940000	Vegetable deep-frying oil	масло растительное для жарки
+bls:Q960000	Vegetable deep-frying fat	жир растительный для фритюра
+bls:Q991000	Mayonnaise (ready-made product)	майонез готовый
+bls:Q993000	Salad mayonnaise (ready-made product)	майонез салатный
+bls:Q998000	Salad cream (ready-made product)	крем салатный
+bls:Q999000	Remoulade (ready-made product)	соус ремулюн
+bls:R111000	Common salt/table salt	соль поваренная
+bls:R111100	Rock salt	соль каменная
+bls:R112000	Sea salt	соль морская
+bls:R113000	Iodised salt with fluoride	соль йодированная с фтором
+bls:R113100	Iodised salt with fluoride and folic acid	соль йодированная с фтором и фолиевой кислотой
+bls:R114000	Iodised salt	соль йодированная
+bls:R115000	Seasoned salt/herb salt	соль с травами
+bls:R118000	Nitrite curing salt	соль нитритная посолочная
+bls:R118100	Nitrite curing salt, iodised	соль нитритная посолочная йодированная
+bls:R121000	Wine vinegar	уксус винный
+bls:R122000	Distilled vinegar	столовый уксус
+bls:R123100	Apple cider vinegar	яблочный уксус
+bls:R124000	Herb vinegar	уксус травяной
+bls:R125000	Balsamic vinegar	уксус бальзамический
+bls:R132000	Mustard medium hot	горчица среднеострая
+bls:R133000	Mustard hot	горчица острая
+bls:R134000	Mustard extra hot	горчица очень острая
+bls:R135000	Mustard sweet	горчица сладкая
+bls:R141100	Tomato ketchup	кетчуп томатный
+bls:R141200	Curry ketchup	кетчуп карри
+bls:R143000	Soya sauce	соус соевый
+bls:R144100	Fruit chutney	чатни фруктовый
+bls:R146100	Chilli sauce (Sambal Oelek)	самбал-олек
+bls:R148200	Barbecue sauce, tomato-based	соус барбекю томатный
+bls:R148600	Barbecue sauce, mayonnaise-based	соус барбекю на майонезе
+bls:R160000	Tomato paste	томатная паста
+bls:R161200	Tomato puree	томатное пюре
+bls:R172000	Monosodium glutamate	глутамат натрия
+bls:R211200	Ginger root raw	имбирь корень сырой
+bls:R231000	Basil dried	базилик сушёный
+bls:R258100	Pepper black, dried	перец чёрный сушёный
+bls:R381100	Candied orange peel	цукаты апельсиновые
+bls:R381200	Candied lemon peel	цукаты лимонные
+bls:R411000	Cutter additives phosphate-based (E 450)	фосфатная добавка E 450
+bls:R421100	Baking powder	разрыхлитель
+bls:R421200	Hartshorn (ammonium bicarbonate, E 503)	гидрокарбонат аммония E 503
+bls:R421300	Potash (99 % potassium carbonate, E 501)	поташ E 501
+bls:R434000	Whipped cream stabilizer	стабилизатор для взбитых сливок
+bls:R452000	Vanillin sugar	сахар ванилиновый
+bls:R458000	Baker's yeast dried	дрожжи сухие
+bls:R459000	Baker's yeast fresh, pressed	дрожжи свежие прессованные
+bls:R466000	Apple pectin dried	пектин яблочный сухой
+bls:R468000	Gelatine	желатин
+bls:R481100	Pudding powder, vanilla, unsweetened	пудинг порошковый ванильный без сахара
+bls:R481132	Vanilla pudding made from powder, milk 3.5 % fat and sugar	пудинг ванильный из порошка на молоке 3,5 %
+bls:R481200	Pudding powder, chocolate, unsweetened	пудинг порошковый шоколадный без сахара
+bls:R481232	Chocolate pudding made from powder, milk 3.5 % fat and sugar	пудинг шоколадный из порошка на молоке 3,5 %
+bls:R551000	Lactic acid 80 % (E 270)	кислота молочная 80 % E 270
+bls:R552000	Citric acid (E 330)	кислота лимонная E 330
+bls:R553000	Ascorbic acid (E 300)	кислота аскорбиновая E 300
+bls:R554000	Acetic acid 60 % (E 260)	кислота уксусная 60 % E 260
+bls:R810000	Bouillon/stock/soup (stock cubes, powder)	бульон порошковый
+bls:R811000	Beef bouillon/stock/soup (stock cubes, powder)	бульон говяжий порошковый
+bls:R821000	Vegetable bouillon/stock/soup (stock cubes, powder)	бульон овощной порошковый
+bls:R822000	Chicken bouillon/stock/soup (stock cubes, powder)	бульон куриный порошковый
+bls:R910000	Gravy instant powder	соус подливочный порошковый
+bls:R910032	Gravy made from instant powder and water	соус подливочный из порошка
+bls:R911000	White sauce instant powder	соус белый порошковый
+bls:R911032	White sauce made from instant powder and water	соус белый из порошка
+bls:R912000	Sushi ginger (Gari) canned	имбирь для суши консервированный
+bls:R913000	Wasabi paste canned	паста васаби консервированная
+bls:R921000	Whipped cream sweetened, with gelatine, for pastry/tortes	сливки взбитые сладкие с желатином для выпечки
+bls:R922000	Yogurt cream for pastry/tortes	крем йогуртовый для выпечки
+bls:R923000	Lemon cream for pastry/tortes	крем лимонный для выпечки
+bls:R924000	Mocha cream for pastry/tortes	крем мокко для выпечки
+bls:R930000	Vanilla butter cream with egg, light, for pastry/tortes	крем масляный ванильный с яйцом для выпечки
+bls:R931000	Chocolate butter cream with egg, light, for pastry/tortes	крем масляный шоколадный с яйцом для выпечки
+bls:R940000	Vanilla cream/vanilla flummery, with egg, for pastry/tortes	крем ванильный с яйцом для выпечки
+bls:R941000	Cherry filling for pastry/tortes	начинка вишнёвая для выпечки
+bls:R942000	Gelatin glaze for pastry/tortes	глазурь желе для выпечки
+bls:R943000	Ganache for pastry/tortes	ганаш для выпечки
+bls:R944000	Truffle cream filling for pastry/tortes	крем трюфельный для выпечки
+bls:R963000	Egg-herb spread	намазка яично-травяная
+bls:R963100	Tomato-mozzarella spread	намазка томатно-моцарелловая
+bls:R9A1000	Strawberry cream for pastry/tortes	крем клубничный для выпечки
+bls:R9A1100	Raspberry cream for pastry/tortes	крем малиновый для выпечки
+bls:R9A1200	Cheese cream (egg-free) for pastry/tortes	крем сырный без яиц для выпечки
+bls:R9A1300	Mandarin cream for pastry/tortes	крем мандариновый для выпечки
+bls:R9A1400	Lemon cream (with starch) for pastry/tortes	крем лимонный с крахмалом для выпечки
+bls:R9A2000	Pineapple yogurt cream for pastry/tortes	крем ананасово-йогуртовый для выпечки
+bls:R9A2100	Nut cream for pastry/tortes	крем ореховый для выпечки
+bls:R9A2200	Chocolate cream for pastry/tortes	крем шоколадный для выпечки
+bls:R9A3000	Marzipan filling for pastry/tortes	начинка марципановая для выпечки
+bls:R9A3100	Poppy seed filling for pastry/tortes	начинка маковая для выпечки
+bls:R9A3200	Nut filling for pastry/tortes	начинка ореховая для выпечки
+bls:R9A3300	Pudding filling for pastry/tortes	начинка пудинговая для выпечки
+bls:R9A3400	Quark filling for pastry/tortes	начинка творожная для выпечки
+bls:R9A3500	Sugar-butter-cinnamon filling for pastry/tortes	начинка сахарно-масляно-коричная для выпечки
+bls:R9A4000	Mocha butter cream, egg-free, light, for pastry/tortes	крем масляный мокко без яиц для выпечки
+bls:R9A4100	Chocolate butter cream, egg-free, light, for pastry/tortes	крем масляный шоколадный без яиц для выпечки
+bls:R9A4200	Vanilla butter cream, egg-free, light, for pastry/tortes	крем масляный ванильный без яиц для выпечки
+bls:R9A5000	Apricot icing for pastry/tortes	глазурь абрикосовая для выпечки
+bls:R9A5100	Sacher icing/chocolate icing, for pastry/tortes	глазурь захер шоколадная для выпечки
+bls:R9A5200	Chocolate icing (containing non-cocoa fats) for pastry/tortes	глазурь шоколадная с заменителем какао для выпечки
+bls:R9A6000	Apple-wine cream (with egg) for pastry/tortes	крем яблочно-винный с яйцом для выпечки
+bls:R9A6100	Mocha flummery with liqueur, for pastry/tortes	крем мокко с ликёром для выпечки
+bls:R9A6200	Orange flummery with liqueur, for pastry/tortes	крем апельсиновый с ликёром для выпечки
+bls:S111000	Sugar white (refined sugar)	сахар белый
+bls:S111100	Icing sugar/powdered sugar	сахарная пудра
+bls:S112000	Sugar brown (candyfarin/raw sugar)	сахар коричневый
+bls:S114000	Vanilla sugar	сахар ванильный
+bls:S115100	Dextrose/glucose)	глюкоза
+bls:S116000	Lactose	лактоза
+bls:S117000	Maltose	мальтоза
+bls:S118000	Fructose	фруктоза
+bls:S120000	Honey	мёд
+bls:S121000	Blossom honey	мёд цветочный
+bls:S122000	Honeydew honey	мёд падевый
+bls:S124000	Invert sugar cream	инвертный сахарный крем
+bls:S131100	Fruit spread	спред фруктовый
+bls:S132000	Jam extra quality	варенье экстра
+bls:S132100	Jam extra quality, with fructose and artificial sweeteners	варенье экстра с фруктозой и подсластителем
+bls:S134000	Jelly extra quality	желе экстра
+bls:S135000	Marmalade	мармелад цитрусовый
+bls:S141000	Chocolate-nut cream	паста шоколадно-ореховая
+bls:S142100	Apple butter, unsweetened	повидло яблочное без сахара
+bls:S142200	Apple butter, sweetened	повидло яблочное
+bls:S142300	Pear butter, unsweetened	повидло грушевое без сахара
+bls:S142400	Pear butter, sweetened	повидло грушевое
+bls:S143000	Sweet chestnut cream (spread)	крем каштановый
+bls:S145000	Nut nougat cream (spread)	паста орехово-нуговая
+bls:S151000	Glucose syrup containing maltose	сироп глюкозный с мальтозой
+bls:S151100	Maple syrup	сироп кленовый
+bls:S152000	Treacle/molasses, dark	патока
+bls:S154000	Fruit syrup	сироп фруктовый
+bls:S155000	Apple syrup	сироп яблочный
+bls:S156000	Pear syrup	сироп грушевый
+bls:S157000	Grape syrup	сироп виноградный
+bls:S161000	Plum butter (jam)	повидло сливовое
+bls:S162000	Sorbitol powder (E 420)	сорбит порошковый E 420
+bls:S163000	Xylitol powder (E 967)	ксилит порошковый E 967
+bls:S164000	Mannitol powder (E 421)	маннит порошковый E 421
+bls:S170000	Table sweetener tablets (cyclamate, saccharin)	подсластитель таблетки
+bls:S171000	Table sweetener liquid (cyclamate, saccharin)	подсластитель жидкий
+bls:S201000	Fruit sherbet/sorbet	сорбет фруктовый
+bls:S201300	Ice cream mixed (chocolate, nut) in waffle cone	мороженое орехово-шоколадное в вафельном стаканчике
+bls:S201400	Ice cream mixed (chocolate, fruit) in waffle cone	мороженое фруктово-шоколадное в вафельном стаканчике
 bls:S201500	Coffee ice cream, in waffle cone	кофейное мороженое в вафельном стаканчике
+bls:S201600	Caramel ice cream, in waffle cone	мороженое карамельное в вафельном стаканчике
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	мороженое шоколадно-ванильное с яичным ликёром
+bls:S210000	Ice cream (containing egg yolk)	мороженое кремовое на желтках
+bls:S210100	Ice cream mixed (fruit, vanilla) in waffle cone	мороженое фруктово-ванильное в вафельном стаканчике
+bls:S210300	Ice cream mixed (caramel, vanilla) in waffle cone	мороженое карамельно-ванильное в вафельном стаканчике
+bls:S210400	Ice cream mixed (chocolate, nut, vanilla) in waffle cone	мороженое орехово-шоколадно-ванильное в вафельном стаканчике
+bls:S210600	Ice cream mixed (chocolate, fruit, vanilla) in waffle cone	мороженое фруктово-шоколадно-ванильное в вафельном стаканчике
+bls:S210700	Ice cream mixed (chocolate, vanilla) in waffle cone	мороженое шоколадно-ванильное в вафельном стаканчике
+bls:S210800	Nut ice cream, in waffle cone	мороженое ореховое в вафельном стаканчике
+bls:S210900	Chocolate ice cream, in waffle cone	мороженое шоколадное в вафельном стаканчике
+bls:S211000	Ice cream bar filled with ice cream and caramel, covered with chocolate	эскимо с карамелью в шоколаде
+bls:S211100	Ice cream mixed (nut, vanilla) in waffle cone	мороженое орехово-ванильное в вафельном стаканчике
+bls:S211400	Ice cream mixed (coffee, fruit) in waffle cone	мороженое кофейно-фруктовое в вафельном стаканчике
+bls:S211500	Vanilla ice cream, in waffle cone	мороженое ванильное в вафельном стаканчике
+bls:S211700	Fruit ice cream, in waffle cone	мороженое фруктовое в вафельном стаканчике
+bls:S211800	Ice cream mixed (caramel, fruit) in waffle cone	мороженое карамельно-фруктовое в вафельном стаканчике
+bls:S211900	Ice cream mixed (fruit, nut) in waffle cone	мороженое фруктово-ореховое в вафельном стаканчике
+bls:S220000	Fruit ice cream	мороженое фруктовое
+bls:S220200	Coffee ice cream	мороженое кофейное
+bls:S220400	Ice cream mixed (chocolate, coffee, vanilla)	мороженое кофейно-шоколадно-ванильное
+bls:S220500	Ice cream mixed (fruit, nut)	мороженое фруктово-ореховое
+bls:S220700	Ice cream mixed (caramel, nut)	мороженое карамельно-ореховое
+bls:S220800	Ice cream mixed (nut, vanilla)	мороженое орехово-ванильное
+bls:S220900	Ice cream mixed (coffee, vanilla)	мороженое кофейно-ванильное
+bls:S221000	Ice cream mixed (caramel, fruit, vanilla)	мороженое карамельно-фруктово-ванильное
+bls:S221200	Ice cream mixed (caramel, chocolate)	мороженое карамельно-шоколадное
+bls:S221700	Yogurt ice cream	мороженое йогуртовое
+bls:S221800	Yogurt-fruit ice cream	мороженое йогуртово-фруктовое
+bls:S222000	Yogurt ice cream and yogurt-fruit ice cream mixed	мороженое йогуртовое и йогуртово-фруктовое
+bls:S229000	Parfait	парфе
+bls:S230000	Ice cream cream-based	мороженое на сливках
+bls:S231000	Ice cream with fruit preparation, covered with chocolate	мороженое с фруктовым наполнителем в шоколадной глазури
+bls:S231200	Ice cream streaked with chocolate	мороженое с шоколадной прослойкой
+bls:S241000	Vanilla ice cream	мороженое ванильное
+bls:S241300	Ice cream mixed (chocolate, fruit, nut) with egg liqueur	мороженое фруктово-орехово-шоколадное с яичным ликёром
+bls:S241400	Ice cream mixed (coffee, fruit, nut) with egg liqueur	мороженое кофейно-фруктово-ореховое с яичным ликёром
+bls:S241500	Vanilla ice cream, covered with chocolate	мороженое ванильное в шоколадной глазури
+bls:S241600	Vanilla ice cream, covered with chocolate and almonds	мороженое ванильное в шоколадной глазури с миндалём
+bls:S241700	Chocolate ice cream, covered with chocolate	мороженое шоколадное в шоколадной глазури
+bls:S241800	Ice cream covered with chocolate, caramel and almonds	мороженое в шоколадной глазури с карамелью и миндалём
+bls:S241900	Vanilla ice cream, covered with chocolate and caramel	мороженое ванильное в шоколадной глазури с карамелью
+bls:S242000	Chocolate ice cream	мороженое шоколадное
 bls:S242200	Caramel ice cream	мороженое карамельное
 bls:S242300	Walnut ice cream	мороженое ореховое
 bls:S242400	Ice cream mixed (chocolate, vanilla, fruit)	мороженое ассорти (шоколадное, ванильное, фруктовое)
