@@ -45,6 +45,8 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
 
 - drumstick = `muslo`/`jamoncito`; thigh = `contramuslo` (one word).
 - sirloin = `lomo`/`entrecot`/`chuletón`, never `solomillo` (= tenderloin).
+- brisket = `pecho`; `falda` is flank/skirt only. ribeye = `entrecot`;
+  T-bone (bone-in) = `chuletón` (`filete` implies boneless).
 - beef shank = `morcillo`/`jarrete`, never `rodaballo` (turbot).
 - kale = `col kale`; savoy cabbage = `col de Saboya`; never conflate.
 - pumpkin = `calabaza`; winter squash = `calabaza de invierno`.
@@ -77,6 +79,37 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
 - No calques of source jargon: `мирепуа` → `суповые овощи`, `печенье шприц` →
   `песочное печенье`. If the foreign word is not in the receiving language's dictionary,
   describe the thing.
+
+## FNDDS qualifiers (batch 2)
+
+- `skin eaten` / `skin not eaten` → `с кожей` / `без кожи`, `con piel` / `sin piel`.
+- `fried, coated, skin / coating eaten` → `в панировке с кожей`; `not eaten` →
+  `в панировке, без кожи`; `prepared skinless, coating eaten` puts `без кожи`
+  BEFORE `в панировке` (word order keeps the two skinless cases apart).
+- provenance splits kcal and stays: `from raw` → `(из сырой)` / `desde crudo`,
+  `from pre-cooked` → `(из готовой)` / `precocinado`, `from fast food /
+  restaurant` → `(фастфуд)` / `de fast food`, `de restaurante`.
+- `rotisserie` → `на вертеле` / `al espetón` (never `на гриле`/`a la parrilla`).
+- `baked, broiled, or roasted` → `запечённый` / `al horno`; `stewed` →
+  `тушёный` / `estofado`; `sauteed` → `обжаренный` / `salteado`.
+- `NFS`, `NS as to …` and the water kind of powdered formula are dropped.
+- `including/excluding carrots, broccoli, and/or dark-green leafy` →
+  `с морковью и брокколи` / `без моркови и брокколи`,
+  `con zanahoria y brócoli` / `sin zanahoria ni brócoli` (in every combo dish).
+- `infant formula` → `детская смесь` / `leche de fórmula`; ready-to-feed →
+  `готовая` / `líquida`; powder → `из порошка` / `en polvo` (the file's
+  written form — powdered milk already uses `en polvo`).
+- `light` (dairy, dips, ice cream) → `лёгкий`/`нежирный` / `ligero`/`light`;
+  `reduced fat` → `нежирный` / `bajo en grasa`; `nonfat, fat free` →
+  `обезжиренный` / `desnatado`, `sin grasa`.
+- US `2 %` milk → `молоко 2 %` / `leche semidesnatada`; `1 %` keeps the number.
+- `reduced sodium` → `с пониженной солью` / `bajo en sodio`.
+- luncheon meat → `варёная колбаса` / `fiambre`; ice cream bar → `эскимо` /
+  `barrita de helado` (`polo` = ice pop: Creamsicle, Fudgesicle); pudding →
+  `пудинг` / `natillas`; `gravy` → `подливка` / `gravy`.
+- Cross-source name collisions with >10 % kcal split are resolved by a
+  translated qualifier on the record that owns the qualifier (`неподогретая`,
+  `en conserva`, `de restaurante`, `de Jersey`) — never an English suffix.
 
 ## Process
 
@@ -150,6 +183,36 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
   `скумбрия испанская`/`sierra`; chinook = `чавыча`/`salmón real`;
   chum = `кета`/`salmón keta`; pollock = `минтай`/`abadejo`
   (`сайда` is saithe — a different fish).
+
+## Traps from the batch-2a review
+
+- corned beef = `солонина` (hash, patty, with-potatoes dishes follow);
+  the cured-ingredient lines keep `корнед-биф`.
+- country fried = `жареный в панировке` / `empanado frito`; pot roast =
+  `тушёный` / `estofado`; fresh side pork = `бекон несолёный` (uncured).
+- cheese dip ≠ cheese sauce: dip → `сырный соус-дип` / `salsa de queso
+  para mojar` so it does not collide with `сырный соус` / `salsa de queso`.
+- shellfish = `морепродукты` (crustaceans included), not `моллюски`;
+  clams = `вонголе`; guisada dish = `тушёный (гуисада)` / `guisado` —
+  the es adjective agrees (`vacuno/cerdo guisado`).
+- chipped (dried beef) = `ломтиками`, never `стружка` (wood shavings);
+  liver paste/pate = `печёночный паштет`; frankfurter = `сосиска для
+  хот-догов`; reconstituted (milk) = `восстановленное`; welsh rarebit =
+  `гренки с сырным соусом`; licuado = `молочно-фруктовый коктейль`;
+  gefilte fish = `гефилте фиш`; watercress = `кресс водяной`;
+  cordon bleu = `кордон блю`.
+- es: `buey` is ox, never a beef-food word (`ternera`/`vacuno`); whiting =
+  `pescadilla`, not `merlán`; escargot = `caracoles`; custard = `crema
+  inglesa` (`crema pastelera` is thicker pastry cream); dumplings =
+  `bolitas de masa`; hot chocolate = `chocolate a la taza`; light cream =
+  `nata para cocinar`; starchy vegetables = `tubérculos`; ready-to-eat =
+  `listo para consumir`; thuringer = `salchicha de Turingia`; Salisbury
+  steak is a patty → `hamburguesa Salisbury`; wild fauna → `silvestre`;
+  porcupine balls = `albóndigas con arroz "puerco espín"` (rice quills,
+  not porcupine meat); scallopini = `escalopes de ternera`.
+- Do not invent fat qualifiers the source lacks: cottage cheese with
+  vegetables is `творог с овощами` / `requesón con verduras` — the lowfat
+  sibling is a different record.
 
 ## FNDDS qualifiers (batch 2b)
 
