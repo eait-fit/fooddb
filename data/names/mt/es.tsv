@@ -387,7 +387,7 @@ fdc:167662	Restaurant, Latino, pupusas con queso (pupusas, cheese)	pupusas de qu
 fdc:167663	Restaurant, Latino, pupusas del cerdo (pupusas, pork)	pupusas de cerdo
 fdc:167664	Restaurant, Latino, tamale, corn	tamal de maíz
 fdc:167665	Restaurant, Mexican, spanish rice	arroz a la mexicana
-fdc:167666	Restaurant, Mexican, refried beans	judías refritas
+fdc:167666	Restaurant, Mexican, refried beans	judías refritas mexicanas
 fdc:167667	Restaurant, Chinese, egg rolls, assorted	rollitos de huevo variados
 fdc:167668	Restaurant, Chinese, fried rice, without meat	arroz frito sin carne
 fdc:167669	CRACKER BARREL, steak fries	patatas fritas gruesas Cracker Barrel
@@ -8315,14 +8315,14 @@ fdc:2706883	Sloppy joe sandwich, on white bun	sloppy joe en pan blanco
 fdc:2706884	Sloppy joe sandwich, on wheat bun	sloppy joe en pan de trigo
 fdc:2706885	Barbecue beef sandwich, on white bun	sándwich de vacuno a la barbacoa en pan blanco
 fdc:2706886	Barbecue beef sandwich, on wheat bun	sándwich de vacuno a la barbacoa en pan de trigo
-fdc:2706887	Cheeseburger slider, from fast food	mini hamburguesa con queso de fast food
+fdc:2706887	Cheeseburger slider, from fast food	minihamburguesa con queso de fast food
 fdc:2706888	Cheeseburger, NFS	hamburguesa con queso
 fdc:2706889	Cheeseburger, from fast food, 1 small patty	hamburguesa con queso pequeña de fast food
 fdc:2706890	Cheeseburger (Burger King)	hamburguesa con queso Burger King
 fdc:2706891	Whopper Jr with cheese (Burger King)	Whopper Jr con queso
 fdc:2706892	Cheeseburger (McDonalds)	hamburguesa con queso McDonald's
 fdc:2706893	Cheeseburger, from school cafeteria	hamburguesa con queso de comedor escolar
-fdc:2706894	Cheeseburger slider	mini hamburguesa con queso
+fdc:2706894	Cheeseburger slider	minihamburguesa con queso
 fdc:2706895	Cheeseburger, on white bun, 1 small patty	hamburguesa con queso en pan blanco, pequeña
 fdc:2706896	Cheeseburger, on wheat bun, 1 small patty	hamburguesa con queso en pan de trigo, pequeña
 fdc:2706897	Cheeseburger, from fast food, 1 medium patty	hamburguesa con queso mediana de fast food
@@ -8824,7 +8824,7 @@ fdc:2707392	Baked beans from fast food / restaurant	alubias al horno de fast foo
 fdc:2707393	Beans and tomatoes, no added fat	judías con tomate sin grasa
 fdc:2707394	Beans and tomatoes, fat added	judías con tomate con grasa
 fdc:2707395	Black bean salad	ensalada de judías negras
-fdc:2707396	Refried beans	puré de judías refritas
+fdc:2707396	Refried beans	judías refritas
 fdc:2707397	Refried beans, from fast food / restaurant	judías refritas de fast food
 fdc:2707398	Refried beans with meat	judías refritas con carne
 fdc:2707399	Refried beans, from canned, reduced sodium	judías refritas en conserva bajas en sodio
@@ -8837,7 +8837,7 @@ fdc:2707405	Beans and franks	judías con salchichas
 fdc:2707406	Pork and beans	judías con cerdo
 fdc:2707407	Beans with meat, NS as to type	judías con carne
 fdc:2707408	Falafel	falafel
-fdc:2707409	Bean cake	torta de judías
+fdc:2707409	Bean cake	pastel de judías
 fdc:2707410	Baked beans, reduced sodium	alubias al horno bajas en sodio
 fdc:2707411	Chili, vegetarian	chili vegetariano
 fdc:2707412	Blackeyed peas, NFS	carillas
@@ -9105,13 +9105,13 @@ fdc:2707673	Roll, sweet, frosted	panecillo dulce con glaseado
 fdc:2707674	Pan Dulce, no topping	pan dulce sin cobertura
 fdc:2707675	Pan Dulce, with sugar topping	pan dulce con cobertura de azúcar
 fdc:2707676	Pan Dulce, with raisins and icing	pan dulce con pasas y glaseado
-fdc:2707677	Coffee cake, yeast type	bizcocho de café de levadura
+fdc:2707677	Coffee cake, yeast type	pastel americano de levadura
 fdc:2707678	Croissant	croissant
 fdc:2707679	Croissant, cheese	croissant de queso
 fdc:2707680	Croissant, chocolate	croissant de chocolate
 fdc:2707681	Croissant, fruit	croissant de fruta
 fdc:2707682	Brioche	brioche
-fdc:2707683	Bread, Spanish coffee	bizcocho español de café
+fdc:2707683	Bread, Spanish coffee	pan español para el café
 fdc:2707684	Bagel	bagel
 fdc:2707685	Bagel, with raisins	bagel con pasas
 fdc:2707686	Bagel, with fruit other than raisins	bagel con fruta
@@ -9507,9 +9507,9 @@ fdc:2708075	Doughnut, custard-filled	donut relleno de crema
 fdc:2708076	Doughnut, custard-filled, with icing	donut relleno de crema con glaseado
 fdc:2708077	Breakfast tart	tartaleta de desayuno
 fdc:2708078	Breakfast tart, lowfat	tartaleta de desayuno baja en grasa
-fdc:2708079	Coffee cake, crumb or quick-bread type	bizcocho de café con crumble
-fdc:2708080	Coffee cake, crumb or quick-bread type, with fruit	bizcocho de café con crumble y fruta
-fdc:2708081	Coffee cake, crumb or quick-bread type, cheese-filled	bizcocho de café relleno de queso
+fdc:2708079	Coffee cake, crumb or quick-bread type	pastel americano de migas
+fdc:2708080	Coffee cake, crumb or quick-bread type, with fruit	pastel americano de migas con fruta
+fdc:2708081	Coffee cake, crumb or quick-bread type, cheese-filled	pastel americano relleno de queso
 fdc:2708082	Cereal or granola bar (General Mills Fiber One Chewy Bar)	barra Fiber One
 fdc:2708083	Cereal or granola bar (Kellogg's Nutri-Grain Cereal Bar)	barra Nutri-Grain
 fdc:2708084	Cereal or granola bar (Kellogg's Nutri-Grain Yogurt Bar)	barra Nutri-Grain de yogur
