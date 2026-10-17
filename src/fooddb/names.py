@@ -33,7 +33,21 @@ def _tsv(f: Path) -> dict[str, str]:
 
 
 def load_mt(dir: Path = MT_DIR) -> dict[str, int]:
-    """Sync every `<lang>.tsv` into food_name: {lang: rows held}. Idempotent — reruns rewrite nothing."""
+    """Sync every `<lang>.tsv` into food_name: {lang: rows held}. Idempotent — reruns rewrite nothing.
+    Stamps `names-mt`/`names-mt-fail` into fetcher_check so health.report can say when the
+    last run landed or failed — advisory only, a names gap is never a fetch outage."""
+    from fooddb.health import checked
+
+    try:
+        out = _load(dir)
+    except Exception:
+        checked("names-mt-fail")
+        raise
+    checked("names-mt")
+    return out
+
+
+def _load(dir: Path) -> dict[str, int]:
     out = {}
     for f in sorted(dir.glob("*.tsv")):
         lang, rows = f.stem, _tsv(f)
