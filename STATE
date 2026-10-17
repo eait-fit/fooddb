@@ -1,19 +1,14 @@
-dv-fooddb-128-merge — batch 2b merge state
-==========================================
-DONE: main merged at 5449e6f (union, zero line edits, all gates green),
-STATE checkpoint 41fff85 (approved sha), REVIEW sent, GO received from
-lead-fooddb (event 01M55DKDWMYAJR2A7HJ5DGX68N).
-DONE: task:fooddb/128 released from dv-fooddb-122-2b, claimed.
-DONE: eait-merge eait-fit/fooddb 128 → merged at
-d574daee27bab14314e571023a6806c5bd1be301.
-DONE: pin bump kirmalyshev-org/ieat-app PR #2334 (worktree
-~/.herdr/worktrees/ieat-app/fooddb-pin-d574daee): eait_fooddb_ref +
-REFs in fooddb-deploy.test.ts (incl. title) + fooddb-backup.test.ts;
-bun test 57/57; merged at a1b57575d9bdbe46e9d1fd81250764d56411bb52
-(EAIT_NO_VISIBLE_CHANGE="deploy pin only").
-DONE: coordinator told "deploying fooddb d574daee…" (msg
-01M55E3N2W3ZFYPX8EEQ3WX9K5).
-WAITING for coordinator go. Then: make deploy in
-~/Personal/projects/ieat-app (git pull --ff-only + git submodule update
-first), verify mt=11,202/lang + /healthz, DONE to lead-fooddb,
-task done task:fooddb/128.
+dv-fooddb-128-merge — batch 2b: COMPLETE
+========================================
+fooddb#128 merged at d574daee27bab14314e571023a6806c5bd1be301
+(main merge of names-mt-2b at 41fff85; union of batch 2a + 2b,
+zero line edits, all gates green: kcal-collision 0, alignment 0,
+coverage 11,202/lang, script scan clean, ./dev test 370 passed).
+ieat-app pin PR #2334 merged at a1b57575d9bdbe46e9d1fd81250764d56411bb52.
+Deployed: make deploy rc=0, failed=0 (ok=125 changed=7);
+/version sha d574daee; /healthz ok, all fetchers fresh;
+prod food_name origin='mt': ru 11,202, es 11,202;
+search smoke 4/4 (свинина му шу / cerdo mu shu / сэндвич с куриным
+филе / pan blanco casero all hit their batch-2b records).
+Reported: coordinator REPORT 01M55E9QXYC42301AYW90FVE92,
+lead DONE 01M55E9TMQ7N032W2H68MDJSPP, task:fooddb/128 done.
