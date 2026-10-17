@@ -1,21 +1,19 @@
 dv-fooddb-128-merge — batch 2b merge state
 ==========================================
-main merged into names-mt-2b at 5449e6f (union of 2a 2705384-2706763 +
-2b 2706764-2708143, sorted by record_id, ZERO line edits; RULES.md kept
-all sections — batch-2a traps then batch-2b qualifiers).
-Gates on combined files: real-data kcal-collision 0 (loaded
-fooddb_names_mt_2b, 238 ru / 281 es shared-name groups), ru/es alignment
-0, coverage 11,202 ids per lang each once, script scan clean, ./dev test
-370 passed.
-REVIEW sent to lead-fooddb (msg 01M55DJVYNA5KR2HA0WKF7J4CQ):
-"changed translations: none".
-WAITING for lead GO. After GO: task add task:fooddb/128 (release from
-dv-fooddb-122-2b on 409), eait-merge eait-fit/fooddb 128 5449e6f, pin
-bump in kirmalyshev-org/ieat-app (branch off origin/main; submodule
-update; eait_fooddb_ref in deploy/iac/inventories/production/group_vars/
-eait.yml + REF in scripts/fooddb-deploy.test.ts incl. title +
-scripts/fooddb-backup.test.ts; add exactly 3 files; bun test; PR;
-eait-merge EAIT_NO_VISIBLE_CHANGE="deploy pin only"), tell coordinator
-"deploying fooddb 5449e6f" and wait for its go, make deploy in
-~/Personal/projects/ieat-app (git pull --ff-only + submodule update
-first), verify mt=11,202/lang + /healthz, DONE to lead, task done.
+DONE: main merged at 5449e6f (union, zero line edits, all gates green),
+STATE checkpoint 41fff85 (approved sha), REVIEW sent, GO received from
+lead-fooddb (event 01M55DKDWMYAJR2A7HJ5DGX68N).
+DONE: task:fooddb/128 released from dv-fooddb-122-2b, claimed.
+DONE: eait-merge eait-fit/fooddb 128 → merged at
+d574daee27bab14314e571023a6806c5bd1be301.
+DONE: pin bump kirmalyshev-org/ieat-app PR #2334 (worktree
+~/.herdr/worktrees/ieat-app/fooddb-pin-d574daee): eait_fooddb_ref +
+REFs in fooddb-deploy.test.ts (incl. title) + fooddb-backup.test.ts;
+bun test 57/57; merged at a1b57575d9bdbe46e9d1fd81250764d56411bb52
+(EAIT_NO_VISIBLE_CHANGE="deploy pin only").
+DONE: coordinator told "deploying fooddb d574daee…" (msg
+01M55E3N2W3ZFYPX8EEQ3WX9K5).
+WAITING for coordinator go. Then: make deploy in
+~/Personal/projects/ieat-app (git pull --ff-only + git submodule update
+first), verify mt=11,202/lang + /healthz, DONE to lead-fooddb,
+task done task:fooddb/128.
