@@ -1340,9 +1340,209 @@ fdc:168624	Beef, variety meats and by-products, brain, cooked, simmered	говя
 fdc:168625	Beef, variety meats and by-products, heart, raw	говяжье сердце сырое
 fdc:168626	Beef, variety meats and by-products, liver, cooked, braised	говяжья печень тушёная
 fdc:168627	Beef, variety meats and by-products, liver, cooked, pan-fried	говяжья печень жареная
+fdc:168628	Beef, variety meats and by-products, lungs, raw	говяжьи лёгкие сырые
+fdc:168629	Beef, variety meats and by-products, lungs, cooked, braised	говяжьи лёгкие тушёные
+fdc:168630	Beef, variety meats and by-products, mechanically separated beef, raw	говядина механической обвалки сырая
+fdc:168631	Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк стриплойн с жиром на гриле
+fdc:168632	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк стриплойн постный на гриле
+fdc:168633	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, select, cooked, broiled	стейк топ-серлоин с жиром на гриле
+fdc:168634	Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	стейк топ-серлоин постный на гриле
+fdc:168635	Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled	стейк топ-серлоин постный на гриле (чойс)
+fdc:168636	Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк топ-серлоин постный на гриле (селект)
+fdc:168637	Beef, short loin, porterhouse steak, separable lean only,  trimmed to 1/8" fat, all grades, cooked, grilled	стейк портерхаус постный на гриле (все категории)
+fdc:168638	Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	стейк портерхаус постный на гриле
+fdc:168639	Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled	стейк портерхаус постный на гриле (чойс)
+fdc:168640	Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, select, raw	стейк портерхаус постный сырой
+fdc:168641	Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	стейк портерхаус постный на гриле (селект)
+fdc:168642	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, all grades, raw	стейк ти-бон постный сырой (все категории)
+fdc:168643	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	стейк ти-бон постный на гриле (все категории)
+fdc:168644	Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled	стейк ти-бон постный на гриле (чойс)
+fdc:168645	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, select, raw	стейк ти-бон постный сырой (селект)
+fdc:168646	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, choice, raw	жаркое из верха огузка с жиром сырое (чойс)
+fdc:168647	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, select, raw	жаркое из верха огузка с жиром сырое (селект)
+fdc:168648	Beef, rib, eye, small end (ribs 10- 12) separable lean only, trimmed to 0" fat, select, cooked, broiled	рибай постный на гриле
+fdc:168649	Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк из верхнего огузка постный на гриле
+fdc:168650	Beef, ground, 70% lean meat / 30% fat, patty cooked, pan-broiled	котлета из говяжьего фарша 70/30 жареная
+fdc:168651	Beef, ground, 70% lean meat / 30% fat, patty, cooked, broiled	котлета из говяжьего фарша 70/30 на гриле
+fdc:168652	Beef, ground, 70% lean meat / 30% fat, raw	говяжий фарш 70/30 сырой
+fdc:168653	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, select, raw	стейк Денвер постный сырой
+fdc:168654	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	стейк из верхней лопатки постный на гриле
+fdc:168655	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, select, raw	стейк из верхней лопатки постный сырой
+fdc:168656	Beef, brisket, flat half, boneless separable lean only, trimmed to 0" fat, all grades, raw	говяжья грудинка плоская часть постная сырая (все категории)
+fdc:168657	Beef, brisket, flat half, boneless, separable lean only, trimmed to 0" fat, choice, raw	говяжья грудинка плоская часть постная сырая (чойс)
+fdc:168658	Beef, brisket, flat half, boneless, separable lean only, trimmed to 0" fat, select, raw	говяжья грудинка плоская часть постная сырая (селект)
+fdc:168659	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк из верхней лопатки с жиром на гриле (чойс)
+fdc:168660	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, all grades, raw	жаркое из шейной части с жиром сырое (все категории)
+fdc:168661	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, choice, raw	жаркое из шейной части с жиром сырое (чойс)
+fdc:168662	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, select, raw	жаркое из шейной части с жиром сырое (селект)
+fdc:168663	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, select, cooked	говядина смешанных отрубов с жиром приготовленная
 fdc:168664	Beef, brisket, whole, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья грудинка сырая
+fdc:168665	Beef, brisket, whole, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	говяжья грудинка целиком с жиром тушёная
+fdc:168666	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья грудинка плоская часть с жиром сырая
+fdc:168667	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	говяжья лопатка тушёная (все категории)
+fdc:168668	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, choice, raw	говяжья лопатка с жиром сырая (чойс)
+fdc:168669	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	говяжья лопатка с жиром тушёная (чойс)
+fdc:168670	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, select, raw	говяжья лопатка с жиром сырая (селект)
+fdc:168671	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	жаркое из говяжьей шеи с жиром тушёное (чойс)
+fdc:168672	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, select, raw	жаркое из говяжьей шеи с жиром сырое (селект)
+fdc:168673	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised	жаркое из говяжьей шеи с жиром тушёное (селект)
+fdc:168674	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	жаркое из шейной части постное запечённое
+fdc:168675	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, raw	говяжья рёберная часть с жиром сырая (чойс)
+fdc:168676	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	говяжья рёберная часть с жиром на гриле (чойс)
+fdc:168677	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	говяжья рёберная часть с жиром запечённая (чойс)
+fdc:168678	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, raw	говяжья рёберная часть с жиром сырая (селект)
+fdc:168679	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted	говяжья рёберная часть с жиром запечённая (прайм)
 fdc:168680	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, raw	говядина толстый край сырая
+fdc:168681	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	говяжья рёберная часть толстый край с жиром на гриле (все категории)
+fdc:168682	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (все категории)
+fdc:168683	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	говяжья рёберная часть толстый край с жиром на гриле (селект)
+fdc:168684	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (селект)
+fdc:168685	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, raw	говяжья рёберная часть толстый край с жиром сырая (прайм)
+fdc:168686	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	говяжья рёберная часть толстый край с жиром на гриле (прайм)
+fdc:168687	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (прайм)
+fdc:168688	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	говяжья рёберная часть тонкий край с жиром на гриле (чойс)
+fdc:168689	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	говяжья рёберная часть тонкий край с жиром запечённая (чойс)
+fdc:168690	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, raw	говяжья рёберная часть тонкий край с жиром сырая (селект)
+fdc:168691	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	говяжья рёберная часть тонкий край с жиром на гриле (селект)
+fdc:168692	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из верхней лопатки с жиром на гриле (селект)
+fdc:168693	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк из верхней лопатки с жиром сырой
+fdc:168694	Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, choice, raw	говядина огузок целиком с жиром сырая (чойс)
+fdc:168695	Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	говядина огузок целиком с жиром на гриле (чойс)
+fdc:168696	Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое из нижнего огузка с жиром запечённое
+fdc:168697	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк из нижнего огузка с жиром сырой (чойс)
+fdc:168698	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	стейк из нижнего огузка с жиром тушёный (чойс)
+fdc:168699	Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	жаркое из нижнего огузка с жиром запечённое (чойс)
+fdc:168700	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, select, raw	стейк из нижнего огузка с жиром сырой (селект)
+fdc:168701	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, choice, raw	жаркое из глазка огузка с жиром сырое (чойс)
+fdc:168702	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	жаркое из глазка огузка с жиром запечённое (чойс)
+fdc:168703	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, select, raw	жаркое из глазка огузка с жиром сырое (селект)
+fdc:168704	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое из глазка огузка с жиром запечённое (селект)
+fdc:168705	Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, select, raw	верх огузка с жиром сырой (селект)
+fdc:168706	Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое из верха огузка с жиром запечённое (селект)
+fdc:168707	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	стейк из верхней лопатки с жиром сырой (чойс)
+fdc:168708	Beef, round, top round, separable lean only, trimmed to 1/8" fat, choice, cooked, pan-fried	верхний огузок постный жареный (чойс)
+fdc:168709	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	верхний огузок с жиром тушёный (чойс)
+fdc:168710	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	стейк из верхнего огузка с жиром на гриле (чойс)
+fdc:168711	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, choice, cooked, pan-fried	верхний огузок с жиром жареный (чойс)
+fdc:168712	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, raw	стейк из верхнего огузка с жиром сырой (селект)
+fdc:168713	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised	верхний огузок с жиром тушёный (селект)
+fdc:168714	Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	говяжья грудинка плоская часть с жиром сырая
+fdc:168715	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк портерхаус с жиром сырой
+fdc:168716	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	стейк портерхаус с жиром на гриле
+fdc:168717	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк ти-бон с жиром сырой
+fdc:168718	Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	стейк стриплойн с жиром на гриле (чойс)
+fdc:168719	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, select, raw	стриплойн с жиром сырой (селект)
+fdc:168720	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled	стриплойн с жиром на гриле (селект)
+fdc:168721	Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, prime, raw	стейк стриплойн с жиром сырой (прайм)
+fdc:168722	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	стейк из вырезки с жиром на гриле (чойс)
+fdc:168723	Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	жаркое из вырезки с жиром запечённое (чойс)
+fdc:168724	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw	стейк из вырезки с жиром сырой (селект)
+fdc:168725	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	стейк из вырезки с жиром на гриле (селект)
+fdc:168726	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк топ-серлоин с жиром сырой
+fdc:168727	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	стейк топ-серлоин с жиром на гриле (все категории)
+fdc:168728	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк топ-серлоин с жиром сырой (чойс)
+fdc:168729	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	стейк топ-серлоин с жиром на гриле (чойс)
+fdc:168730	Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	жаркое из лопатки постное запечённое
+fdc:168731	Beef, shoulder steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк из лопатки постный на гриле (чойс)
+fdc:168732	Beef, shoulder steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк из лопатки постный на гриле (селект)
+fdc:168733	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	стейк фланк с жиром на гриле
+fdc:168734	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, all grades, raw	жаркое три-тип с жиром сырое (все категории)
+fdc:168735	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	жаркое три-тип с жиром запечённое (чойс)
+fdc:168736	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, choice, raw	жаркое три-тип с жиром сырое (чойс)
+fdc:168737	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	жаркое три-тип с жиром запечённое (селект)
+fdc:168738	Beef, chuck, top blade, separable lean only, trimmed to 0" fat, choice, cooked, broiled	стейк из верхней шеи постный на гриле (чойс)
+fdc:168739	Beef, chuck, top blade, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк из верхней шеи постный на гриле (селект)
+fdc:168740	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	стейк из верхнего огузка с жиром на гриле (чойс)
+fdc:168741	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	стейк из верхнего огузка с жиром на гриле (селект)
+fdc:168742	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, raw	жаркое из шейной части постное сырое (селект)
+fdc:168743	Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	говяжья грудинка плоская часть с жиром сырая (чойс)
+fdc:168744	Beef, plate, inside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	внутренний скёрт-стейк постный на гриле
+fdc:168745	Beef, plate, outside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	наружный скёрт-стейк постный на гриле
+fdc:168746	Alcoholic beverage, beer, regular, all	пиво
+fdc:168747	Alcoholic beverage, beer, regular, BUDWEISER	пиво Budweiser
+fdc:168748	Alcoholic beverage, beer, light, BUDWEISER SELECT	пиво Budweiser Select
+fdc:168749	Alcoholic beverage, beer, light	пиво лёгкое
+fdc:168750	Alcoholic beverage, pina colada, canned	пина колада консервированная
+fdc:168751	Beverages, almond milk, sweetened, vanilla flavor, ready-to-drink	миндальное молоко ванильное сладкое
+fdc:168752	Alcoholic beverage, pina colada, prepared-from-recipe	пина колада
+fdc:168753	Alcoholic beverage, tequila sunrise, canned	текила санрайз консервированная
+fdc:168754	Candies, milk chocolate, with almonds	молочный шоколад с миндалём
+fdc:168755	Candies, milk chocolate, with rice cereal	молочный шоколад с воздушным рисом
+fdc:168756	Candies, MARS SNACKFOOD US, MILKY WAY Bar	батончик Milky Way
+fdc:168757	Candies, HERSHEY'S SKOR Toffee Bar	батончик Skor ирисковый
+fdc:168758	Toppings, strawberry	топпинг клубничный
+fdc:168759	Candies, MOUNDS Candy Bar	батончик Mounds
+fdc:168760	Candies, MR. GOODBAR Chocolate Bar	батончик Mr. Goodbar
+fdc:168761	Candies, NESTLE, 100 GRAND Bar	батончик 100 Grand
+fdc:168762	Candies, NESTLE, CRUNCH Bar and Dessert Topping	батончик Crunch
+fdc:168763	Candies, REESE'S Peanut Butter Cups	корзиночки Reese's с арахисовой пастой
+fdc:168764	Candies, REESE'S PIECES Candy	драже Reese's Pieces
+fdc:168765	Candies, ROLO Caramels in Milk Chocolate	карамель Rolo в молочном шоколаде
+fdc:168766	Candies, NESTLE, AFTER EIGHT Mints	конфеты After Eight мятные
+fdc:168767	Candies, MARS SNACKFOOD US, 3 MUSKETEERS Bar	батончик 3 Musketeers
+fdc:168768	Candies, MARS SNACKFOOD US, TWIX Caramel Cookie Bars	батончик Twix с карамелью
+fdc:168769	Candies, MARS SNACKFOOD US, TWIX Peanut Butter Cookie Bars	батончик Twix с арахисовой пастой
+fdc:168770	Candies, WHATCHAMACALLIT Candy Bar	батончик Whatchamacallit
+fdc:168771	Chewing gum	жевательная резинка
+fdc:168772	Egg custards, dry mix	крем заварной сухой
+fdc:168773	Egg custards, dry mix, prepared with whole milk	крем заварной на цельном молоке
+fdc:168774	Cocoa, dry powder, unsweetened, HERSHEY'S European Style Cocoa	какао-порошок Hershey's
+fdc:168775	Gelatin desserts, dry mix	желе сухое для десерта
+fdc:168776	Candies, YORK BITES	конфеты York Bites
+fdc:168777	Desserts, mousse, chocolate, prepared-from-recipe	шоколадный мусс
+fdc:168778	Puddings, chocolate, ready-to-eat	пудинг шоколадный готовый
+fdc:168779	Puddings, chocolate, dry mix, instant	пудинг шоколадный сухой быстрого приготовления
+fdc:168780	Puddings, chocolate, dry mix, regular, prepared with 2% milk	пудинг шоколадный сухой на молоке 2%
+fdc:168781	Puddings, coconut cream, dry mix, instant, prepared with 2% milk	пудинг кокосовый быстрого приготовления на молоке 2%
+fdc:168782	Puddings, rice, ready-to-eat	пудинг рисовый готовый
+fdc:168783	Puddings, rice, dry mix	пудинг рисовый сухой
+fdc:168784	Puddings, vanilla, dry mix, instant	пудинг ванильный сухой быстрого приготовления
+fdc:168785	Puddings, vanilla, dry mix, instant, prepared with whole milk	пудинг ванильный быстрого приготовления на цельном молоке
+fdc:168786	Puddings, lemon, dry mix, instant, prepared with 2% milk	пудинг лимонный быстрого приготовления на молоке 2%
+fdc:168787	Egg custards, dry mix, prepared with 2% milk	крем заварной на молоке 2%
+fdc:168788	Puddings, vanilla, dry mix, regular, prepared with 2% milk	пудинг ванильный сухой на молоке 2%
+fdc:168789	Rennin, chocolate, dry mix, prepared with 2% milk	крем реннет шоколадный на молоке 2%
+fdc:168790	Rennin, vanilla, dry mix, prepared with 2% milk	крем реннет ванильный на молоке 2%
+fdc:168791	Candies, praline, prepared-from-recipe	пралине
+fdc:168792	Desserts, rennin, vanilla, dry mix	крем реннет ванильный сухой
+fdc:168793	Rennin, vanilla, dry mix, prepared with whole milk	крем реннет ванильный на цельном молоке
+fdc:168794	Desserts, rennin, tablets, unsweetened	реннет в таблетках
+fdc:168795	Frostings, chocolate, creamy, ready-to-eat	глазурь шоколадная кремовая
+fdc:168796	Flan, caramel custard, dry mix, prepared with whole milk	флан сухой на цельном молоке
+fdc:168797	Puddings, vanilla, ready-to-eat, fat free	пудинг ванильный готовый обезжиренный
+fdc:168798	Puddings, tapioca, ready-to-eat, fat free	пудинг тапиока готовый обезжиренный
+fdc:168799	Puddings, chocolate, ready-to-eat, fat free	пудинг шоколадный готовый обезжиренный
+fdc:168800	Frostings, chocolate, creamy, dry mix, prepared with butter	глазурь шоколадная кремовая сухая с маслом
+fdc:168801	Candies, HEATH BITES	конфеты Heath Bites ирисковые
+fdc:168802	Frostings, vanilla, creamy, dry mix	глазурь ванильная кремовая сухая
+fdc:168803	Frostings, white, fluffy, dry mix	глазурь белая воздушная сухая
+fdc:168804	Candies, MARS SNACKFOOD US, DOVE Milk Chocolate	шоколад Dove молочный
+fdc:168805	Candies, MARS SNACKFOOD US, DOVE Dark Chocolate	шоколад Dove тёмный
+fdc:168806	Candies, MARS SNACKFOOD US, MILKY WAY Caramels, milk chocolate covered	карамель Milky Way в молочном шоколаде
+fdc:168807	Candies, MARS SNACKFOOD US, MILKY WAY Caramels. dark chocolate covered	карамель Milky Way в тёмном шоколаде
+fdc:168808	Snacks, GENERAL MILLS, BETTY CROCKER Fruit Roll Ups, berry flavored, with vitamin C	фруктовые рулетики Fruit Roll-Ups ягодные
+fdc:168809	Ice creams, chocolate	мороженое шоколадное
+fdc:168810	Ice creams, strawberry	мороженое клубничное
+fdc:168811	Snacks, FARLEY CANDY, FARLEY Fruit Snacks, with vitamins A, C, and E	фруктовые жевательные конфеты Farley с витаминами
+fdc:168812	Frozen novelties, ice type, italian, restaurant-prepared	итальянское фруктовое мороженое
+fdc:168813	Frozen novelties, ice type, pop	фруктовый лёд
+fdc:168814	Candies, MARS SNACKFOOD US, M&M's Crispy Chocolate Candies	драже M&M's Crispy
+fdc:168815	Frozen yogurts, vanilla, soft-serve	замороженный йогурт ванильный мягкий
+fdc:168816	Fruit butters, apple	яблочная паста
+fdc:168817	Candies, fudge, chocolate marshmallow, with nuts, prepared-by-recipe	помадка шоколадная с маршмеллоу и орехами
+fdc:168818	Candies, MARS SNACKFOOD US, SNICKERS Almond bar	батончик Snickers с миндалём
 fdc:168819	Marmalade, orange	апельсиновый джем
+fdc:168820	Molasses	меласса
+fdc:168821	Pectin, unsweetened, dry mix	пектин сухой
+fdc:168822	Pie fillings, apple, canned	начинка для пирога яблочная консервированная
+fdc:168823	Candies, MARS SNACKFOOD US, STARBURST Fruit Chews, Tropical fruits	конфеты Starburst тропические фрукты
+fdc:168824	Pie fillings, canned, cherry	начинка для пирога вишнёвая консервированная
+fdc:168825	Puddings, banana, dry mix, regular, prepared with whole milk	пудинг банановый сухой на цельном молоке
+fdc:168826	Puddings, coconut cream, dry mix, instant	пудинг кокосовый сухой быстрого приготовления
+fdc:168827	Puddings, coconut cream, dry mix, instant, prepared with whole milk	пудинг кокосовый быстрого приготовления на цельном молоке
+fdc:168828	Puddings, coconut cream, dry mix, regular	пудинг кокосовый сухой
+fdc:168829	Puddings, coconut cream, dry mix, regular, prepared with whole milk	пудинг кокосовый сухой на цельном молоке
+fdc:168830	Puddings, lemon, dry mix, instant, prepared with whole milk	пудинг лимонный быстрого приготовления на цельном молоке
 fdc:168920	Corn grain, white	кукуруза белая в зерне
 fdc:168934	Spaghetti, protein-fortified, cooked, enriched (n x 6.25)	спагетти протеиновые варёные
 fdc:169011	APPLEBEE'S, mozzarella sticks	Applebee's палочки моцареллы
