@@ -1,13 +1,21 @@
-dv-fooddb-122-2b — batch 2b state (post-review)
-=============================================
-scope DONE: fdc FNDDS ids fdc:2706764-2708143 (1,380 records), PR #128
-head after review fixes: 6931161 (review at abfee3e applied: ru 2 SPELLING +
-12 UNNATURAL, es 1 MEANING + 3 UNNATURAL)
-- fdc:167666 got `judías refritas mexicanas` so plain `judías refritas` stays
-  for the FNDDS family without a kcal collision
-- gates re-run at 6931161: kcal-collision 0, coverage 1380/1380 each lang,
-  script scan clean, ./dev test 370 passed
-STEP 2 WAITING on lead: when #127 (batch 2a) is merged, merge origin/main
-into names-mt-2b (union sorted by record_id, only fix NEW cross-batch kcal
-collisions via truthful translated qualifier), re-run all gates, push, report
-sha + changed translations. Do NOT merge #128 until lead GO.
+dv-fooddb-128-merge — batch 2b merge state
+==========================================
+main merged into names-mt-2b at 5449e6f (union of 2a 2705384-2706763 +
+2b 2706764-2708143, sorted by record_id, ZERO line edits; RULES.md kept
+all sections — batch-2a traps then batch-2b qualifiers).
+Gates on combined files: real-data kcal-collision 0 (loaded
+fooddb_names_mt_2b, 238 ru / 281 es shared-name groups), ru/es alignment
+0, coverage 11,202 ids per lang each once, script scan clean, ./dev test
+370 passed.
+REVIEW sent to lead-fooddb (msg 01M55DJVYNA5KR2HA0WKF7J4CQ):
+"changed translations: none".
+WAITING for lead GO. After GO: task add task:fooddb/128 (release from
+dv-fooddb-122-2b on 409), eait-merge eait-fit/fooddb 128 5449e6f, pin
+bump in kirmalyshev-org/ieat-app (branch off origin/main; submodule
+update; eait_fooddb_ref in deploy/iac/inventories/production/group_vars/
+eait.yml + REF in scripts/fooddb-deploy.test.ts incl. title +
+scripts/fooddb-backup.test.ts; add exactly 3 files; bun test; PR;
+eait-merge EAIT_NO_VISIBLE_CHANGE="deploy pin only"), tell coordinator
+"deploying fooddb 5449e6f" and wait for its go, make deploy in
+~/Personal/projects/ieat-app (git pull --ff-only + submodule update
+first), verify mt=11,202/lang + /healthz, DONE to lead, task done.
