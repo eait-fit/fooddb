@@ -2991,8 +2991,8 @@ bls:X570153	Green peas boiled, in white basic sauce	guisantes cocidos en salsa b
 bls:X570343	Pea puree from dried peas	puré de guisantes secos
 bls:X570363	Pea puree from fresh peas	puré de guisantes frescos
 bls:X570653	Green peas and sweetcorn stewed	guisantes con maíz estofados
-bls:X570763	Sugar peas boiled, tossed in butter	guisantes cocidos salteados en mantequilla
-bls:X571143	Green beans stewed	judías verdes estofadas
+bls:X570763	Sugar peas boiled, tossed in butter	tirabeques cocidos salteados en mantequilla
+bls:X571143	Green beans stewed	estofado de judías verdes
 bls:X571153	Green beans boiled, in white basic sauce	judías verdes cocidas en salsa blanca
 bls:X571163	Green beans boiled, tossed in butter	judías verdes cocidas salteadas en mantequilla
 bls:X571253	Broad beans with bacon stewed, in white basic sauce	habas con beicon estofadas en salsa blanca
@@ -3050,10 +3050,10 @@ bls:X5A8030	Lentils boiled, with stewed vegetables	lentejas cocidas con verduras
 bls:X5A8040	Cheese alternative Mozzarella style, vegan	alternativa al queso tipo mozzarella vegana
 bls:X5A8050	Tofu vegan breaded, fried	tofu vegano empanado frito
 bls:X5A9000	Carrots boiled	zanahorias cocidas
-bls:X5A9010	Kohlrabi boiled, vegetarian filled with cream cheese and peas	colinabo cocido relleno de queso crema y guisantes
+bls:X5A9010	Kohlrabi boiled, vegetarian filled with cream cheese and peas	colirábano cocido relleno de queso crema y guisantes
 bls:X5A9020	Swede stewed, with bacon	colinabo estofado con beicon
 bls:X5A9030	Fried onions	cebolla frita crujiente
-bls:X5A9040	Beetroot stewed	remolacha estofada
+bls:X5A9040	Beetroot stewed	estofado de remolacha
 bls:X5A9050	Celeriac boiled (with lemon juice and salt)	apio nabo cocido
 bls:X5B1000	Vegetable-potato-fish purree, with carrots and salmon (without salt, suitable as baby food)	puré de verduras, patata y pescado con zanahoria y salmón, sin sal, para bebés
 bls:X5B1010	Vegetable-potato-poultry purree, with carrots and chicken (without salt, suitable as baby food)	puré de verduras, patata y pollo con zanahoria, sin sal, para bebés
@@ -3077,7 +3077,7 @@ bls:X614213	Potato goulash	gulash de patatas
 bls:X614313	Potato layer dish with sauerkraut and boiled ham, gratinated	pastel de patatas con chucrut y jamón cocido gratinado
 bls:X631042	Potatoes mashed	puré de patatas
 bls:X634012	Potato puree with milk 3.5 % fat	puré de patatas con leche entera
-bls:X635053	Potato mash with milk 3.5 % fat	puré de patatas ligero con leche entera
+bls:X635053	Potato mash with milk 3.5 % fat	puré de patata con leche entera
 bls:X635253	Puree of potatoes and carrots with milk 3.5 % fat	puré de patata y zanahoria con leche entera
 bls:X636012	Potato puree, made from instant powder and milk 1.5 % fat	puré de patatas de copos con leche semidesnatada
 bls:X636043	Potato puree, made from instant powder, water, milk 3.5 % fat and fat	puré de patatas de copos con agua, leche entera y grasa
@@ -3357,27 +3357,27 @@ bls:X9A2000	Millet porridge sweetened, with milk 3.5 % fat	gachas de mijo dulces
 bls:X9A2010	Millet porridge unsweetened, with milk 3.5 % fat	gachas de mijo sin azúcar con leche entera
 bls:X9A2020	Millet porridge unsweetened, with almond drink	gachas de mijo sin azúcar con bebida de almendras
 bls:X9A2030	Cereal-fruit puree, with unsweetened apple sauce and oat flakes (suitable as baby food)	puré de cereales y fruta con compota de manzana y copos de avena para bebés
-bls:X9A2040	Milk-cereal puree, with oat flakes and apple juice (suitable as baby food)	puré de cereales y fruta con compota de manzana y copos de arroz para bebés
-bls:X9A2050	Polenta (maize porridge prepared with water, rapeseed oil and salt) boiled	puré de cereales y fruta con plátano y copos de avena para bebés
-bls:X9A2060	Porridge sweetened, with milk 3.5 % fat	puré de cereales y fruta con plátano y copos de arroz para bebés
-bls:X9A2070	Porridge sweetened, with milk 3.5 % fat and cocoa powder	puré de cereales y fruta con manzana y copos de avena para bebés
-bls:X9A2080	Porridge sweetened, with soya drink	puré de cereales y fruta con pera y copos de avena para bebés
-bls:X9A2090	Porridge sweetened, with water	puré de cereales y leche con copos de avena para bebés
-bls:X9A2100	Porridge unsweetened, with milk 3.5 % fat	puré de cereales y leche con copos de arroz para bebés
-bls:X9A2110	Porridge unsweetened, with soya drink	puré de cereales y fruta con plátano para bebés
+bls:X9A2040	Milk-cereal puree, with oat flakes and apple juice (suitable as baby food)	puré de cereales y leche con copos de avena y zumo de manzana para bebés
+bls:X9A2050	Polenta (maize porridge prepared with water, rapeseed oil and salt) boiled	polenta hervida
+bls:X9A2060	Porridge sweetened, with milk 3.5 % fat	gachas de avena dulces con leche entera
+bls:X9A2070	Porridge sweetened, with milk 3.5 % fat and cocoa powder	gachas de avena dulces con leche entera y cacao en polvo
+bls:X9A2080	Porridge sweetened, with soya drink	gachas de avena dulces con bebida de soja
+bls:X9A2090	Porridge sweetened, with water	gachas de avena dulces con agua
+bls:X9A2100	Porridge unsweetened, with milk 3.5 % fat	gachas de avena sin azúcar con leche entera
+bls:X9A2110	Porridge unsweetened, with soya drink	gachas de avena sin azúcar con bebida de soja
 bls:X9A2120	Porridge unsweetened, with water	gachas de avena con agua sin azúcar
 bls:X9A3000	Puff pastry pockets filled with leaf spinach and sheep's milk cheese, baked	hojaldres rellenos de espinacas y queso de oveja
-bls:X9A3010	Puff pastry pockets filled with cheese and boiled ham, baked	gachas de avena dulces con leche entera
-bls:X9A3020	Puff pastry pockets with salmon-schmand filling, baked	gachas de avena sin azúcar con leche entera
-bls:X9A3030	Spring rolls vegetarian filled with vegetables, deep-fried	gachas de avena sin azúcar con bebida de soja
-bls:X9A3040	Vegetable muffins savoury	gachas de avena sin azúcar con bebida de almendras
+bls:X9A3010	Puff pastry pockets filled with cheese and boiled ham, baked	hojaldres rellenos de queso y jamón cocido
+bls:X9A3020	Puff pastry pockets with salmon-schmand filling, baked	hojaldres rellenos de salmón y nata agria
+bls:X9A3030	Spring rolls vegetarian filled with vegetables, deep-fried	rollitos de primavera rellenos de verduras fritos
+bls:X9A3040	Vegetable muffins savoury	muffins salados de verduras
 bls:X9A3050	Grissini	grissini
 bls:X9A3060	Pate (shortcrust pastry) with button mushroom-cheese filling, baked	pastel de masa quebrada relleno de champiñones y queso
 bls:X9A3070	Pie (shortcrust pastry) filled with vegetables and pork mince, baked	pastel de masa quebrada relleno de verduras y carne picada de cerdo
 bls:X9A3080	Pirogue filled with minced meat, baked	pirogo con relleno de carne picada
 bls:X9A3090	Pirogue filled with sauerkraut, baked	pirogo relleno de chucrut
 bls:X9A4000	Burrito filled with vegetables, beef mince and cheese	burrito relleno de verduras, carne picada de vacuno y queso
-bls:X9A4010	Burrito filled with vegetables, mushrooms and cheese	burrito con carne picada, alubias y queso
+bls:X9A4010	Burrito filled with vegetables, mushrooms and cheese	burrito relleno de verduras, champiñones y queso
 bls:X9A4020	Pancakes unsweetened, with milk 3.5 % fat, fried in butter	creps sin azúcar con leche entera fritos en mantequilla
 bls:X9A4030	Pankcake casserole with spinach	pastel de creps con espinacas
 bls:X9A5000	Tarte flambee vegetarian	flammkuchen vegetariano
@@ -3459,7 +3459,7 @@ bls:Y144423	Beef ragout	ragú de vacuno
 bls:Y144512	Beef ragout with white wine	vacuno en tiras con vino blanco
 bls:Y146113	Westphalian "Pfefferpotthast" (beef stew with sauce)	pfefferpotthast de Westfalia
 bls:Y151112	Beef olive braised, with sauce	rollitos de vacuno braseados con salsa
-bls:Y160122	Beef fillet fried in oven, without sauce	filete de vacuno asado sin salsa
+bls:Y160122	Beef fillet fried in oven, without sauce	solomillo de vacuno asado sin salsa
 bls:Y161013	Beef roast with sauce	asado de vacuno con salsa
 bls:Y161212	Beef roast without sauce	asado de vacuno sin salsa
 bls:Y161333	Beef braised with onions and sauce	vacuno braseado con cebolla y salsa
@@ -3522,7 +3522,7 @@ bls:Y238033	Veal loin fried in oven, with sauce	lomo de ternera asado con salsa
 bls:Y239123	Veal shoulder stewed, with cream sauce	paleta de ternera estofada con salsa de nata
 bls:Y240222	Veal meatballs fried	albóndigas de ternera fritas
 bls:Y241033	Veal goulash	gulash de ternera
-bls:Y242013	Veal ragout Zurich style	ternera en tiras a la zuriqueña
+bls:Y242013	Veal ragout Zurich style	ternera en tiras a la zuriquesa
 bls:Y243132	Veal skewer grilled	brocheta de ternera a la parrilla
 bls:Y244023	Veal ragout (ragout fin)	ragú fin de ternera
 bls:Y245013	Veal fricassee	fricasé de ternera
@@ -3602,7 +3602,7 @@ bls:Y352013	Rolled pork roast with sauce	asado de cerdo enrollado con salsa
 bls:Y352112	Pork roast with brown basic sauce	asado de cerdo con salsa oscura
 bls:Y352212	Pork roast without sauce	asado de cerdo sin salsa
 bls:Y361123	Pork loin braised, with brown basic sauce	lomo de cerdo braseado con salsa oscura
-bls:Y361233	Pork breast filled with minced meat fried in oven, with cream sauce from brown basic sauce	pechuga de cerdo rellena de carne picada asada con salsa de nata
+bls:Y361233	Pork breast filled with minced meat fried in oven, with cream sauce from brown basic sauce	pecho de cerdo relleno de carne picada asado con salsa de nata
 bls:Y361623	Pork roast with sauce, mixed vegetables and boiled salted potatoes	asado de cerdo con salsa, verduras mixtas y patatas cocidas
 bls:Y362012	Pork hock braised, without sauce	codillo de cerdo braseado sin salsa
 bls:Y362023	Pork hock braised, with sauce	codillo de cerdo braseado con salsa
@@ -3670,7 +3670,7 @@ bls:Y536133	Rabbit roast with brown basic sauce with cream	asado de conejo con s
 bls:Y536212	Rabbit roast without sauce	conejo asado sin salsa
 bls:Y546033	Leg of wild boar braised, with game sauce from brown basic sauce	pierna de jabalí braseada con salsa de caza
 bls:Y546123	Wild boar roast with bacon and game sauce from brown basic sauce	asado de jabalí con beicon y salsa de caza
-bls:Y556113	Wild duck braised, with bacon and brown basic sauce	pato salvaje braseado con beicon y salsa oscura
+bls:Y556113	Wild duck braised, with bacon and brown basic sauce	pato silvestre braseado con beicon y salsa oscura
 bls:Y560123	Paprika chicken stewed, with sauce	pollo con pimentón estofado en salsa
 bls:Y560312	Chicken grilled	pollo a la brasa
 bls:Y560322	Chicken fried in oven (roast chicken)	pollo asado al horno
@@ -3855,7 +3855,7 @@ bls:Y6A1010	Tuna dip with mayonnaise	paté de atún con mayonesa
 bls:Y6A1020	Tuna steak fried with ham	filete de atún frito con jamón
 bls:Y6A2000	Salmon in puff pastry baked	salmón en hojaldre al horno
 bls:Y6A2010	Salmon in puff pastry baked, with boiled asparagus and white basic sauce	salmón en hojaldre al horno con espárragos cocidos y salsa blanca
-bls:Y6A2020	Salmon fried in white basic sauce with cream and risi-pisi	salmón frito en salsa blanca con nata y risi-bisi
+bls:Y6A2020	Salmon fried in white basic sauce with cream and risi-pisi	salmón frito en salsa blanca con nata y risi-pisi
 bls:Y6A2030	Salmon-spinach casserole	cazuela de salmón y espinacas
 bls:Y6A3000	Redfish casserole with potatoes and spinach	cazuela de gallineta con patatas y espinacas
 bls:Y6A3010	Redfish fillet poached (without sauce)	filete de gallineta escalfado sin salsa
