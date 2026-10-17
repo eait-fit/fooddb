@@ -2366,7 +2366,7 @@ bls:M810600	Processed cheese preparation 45 - 52 % fat in dry matter	preparado d
 bls:M813700	Processed cheese preparation 45 - 52 % fat in dry matter, with ham	preparado de queso fundido 45-52 % grasa en seco con jamón
 bls:M816000	Processed cheese preparation 45 - 52 % fat in dry matter, with nuts	preparado de queso fundido 45-52 % grasa en seco con frutos secos
 bls:M820100	Cream cheese preparation < 10 % fat in dry matter	queso cremoso desnatado
-bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero 10 % grasa en seco
+bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema 10 % grasa en seco
 bls:M820500	Cream cheese preparation min. 40 % fat in dry matter	queso crema 40 % grasa en seco
 bls:M820600	Cream cheese preparation min. 45 % fat in dry matter	queso crema 45 % grasa en seco
 bls:M821300	Dessert with yogurt mild, cream cheese and fruit preparation, sweetened	postre de yogur y queso crema con fruta azucarado
@@ -2896,33 +2896,957 @@ bls:U807000	Lamb muscle meat, raw	carne de cordero cruda
 bls:U863242	Sheep shoulder, fat, deep-frozen, braised without fat	paleta de carnero grasa estofada
 bls:U871100	Sheep foreshank, lean, raw	brazuelo de cordero magro crudo
 bls:U884000	Sheep leg, lean, marinated, raw	pierna de cordero magra marinada cruda
-bls:V438232	Boiling fowl giblets, deep-frozen, boiled	menudillos de gallina cocidos
+bls:V320162	Partridge meat, fried without fat (oven)	carne de perdiz al horno
+bls:V320200	Partridge meat, deep-frozen	carne de perdiz congelada
+bls:V320262	Partridge meat, deep-frozen, fried without fat (oven)	carne de perdiz de congelado al horno
+bls:V330200	Wild duck meat, with skin, deep-frozen	carne de pato salvaje con piel congelada
+bls:V330262	Wild duck meat, with skin, deep-frozen, fried without fat (oven)	carne de pato salvaje con piel de congelado al horno
+bls:V334100	Wild duck meat, with skin, raw	carne de pato salvaje con piel cruda
+bls:V334162	Wild duck meat, with skin, fried without fat (oven)	carne de pato salvaje con piel al horno
+bls:V335100	Wild duck leg, with skin, raw	muslo de pato salvaje con piel crudo
+bls:V335162	Wild duck leg, with skin, fried without fat (oven)	muslo de pato salvaje con piel al horno
+bls:V335182	Wild duck leg, with skin, fried without fat (pan)	muslo de pato salvaje con piel a la plancha
+bls:V351182	Quail meat, without skin, fried without fat (pan)	carne de codorniz sin piel a la plancha
+bls:V351200	Quail meat, without skin, deep-frozen	carne de codorniz sin piel congelada
+bls:V351242	Quail meat, without skin, deep-frozen, braised without fat	carne de codorniz sin piel de congelado estofada
+bls:V351262	Quail meat, without skin, deep-frozen, fried without fat (oven)	carne de codorniz sin piel de congelado al horno
+bls:V351282	Quail meat, without skin, deep-frozen, fried without fat (pan)	carne de codorniz sin piel de congelado a la plancha
+bls:V354100	Quail meat, without skin, raw	carne de codorniz sin piel cruda
+bls:V354142	Quail meat, without skin, braised without fat	carne de codorniz sin piel estofada
+bls:V354162	Quail meat, without skin, fried without fat (oven)	carne de codorniz sin piel al horno
+bls:V402100	Young turkey meat, with skin, raw	carne de pavo joven con piel cruda
+bls:V402142	Young turkey meat, with skin, braised without fat	carne de pavo joven con piel estofada
+bls:V402162	Young turkey meat, with skin, fried without fat (oven)	carne de pavo joven con piel al horno
+bls:V402182	Young turkey meat, with skin, fried without fat (pan)	carne de pavo joven con piel a la plancha
+bls:V413000	Chicken meat, without skin, raw	carne de pollo sin piel cruda
+bls:V413132	Chicken meat, without skin, boiled	carne de pollo sin piel cocida
+bls:V413142	Chicken meat, without skin, braised without fat	carne de pollo sin piel estofada
+bls:V413172	Chicken meat, without skin, grilled	carne de pollo sin piel a la parrilla
+bls:V413182	Chicken meat, without skin, fried without fat (pan)	carne de pollo sin piel a la plancha
+bls:V413200	Chicken meat, without skin, deep-frozen	carne de pollo sin piel congelada
+bls:V413232	Chicken meat, without skin, deep-frozen, boiled	carne de pollo sin piel de congelado cocida
+bls:V413242	Chicken meat, without skin, deep-frozen, braised without fat	carne de pollo sin piel de congelado estofada
+bls:V413272	Chicken meat, without skin, deep-frozen, grilled	carne de pollo sin piel de congelado a la parrilla
+bls:V413282	Chicken meat, without skin, deep-frozen, fried without fat (pan)	carne de pollo sin piel de congelado a la plancha
+bls:V414100	Chicken whole, boneless, with skin, raw	pollo entero deshuesado con piel crudo
+bls:V414142	Chicken whole, boneless, with skin, braised without fat	pollo entero deshuesado con piel estofado
+bls:V414162	Chicken whole, boneless, with skin, fried without fat (oven)	pollo entero deshuesado con piel al horno
+bls:V414172	Chicken whole, boneless, with skin, grilled	pollo entero deshuesado con piel a la parrilla
+bls:V414200	Chicken whole, boneless, with skin, deep-frozen	pollo entero deshuesado con piel congelado
+bls:V414242	Chicken whole, boneless, with skin, deep-frozen, braised without fat	pollo entero deshuesado con piel de congelado estofado
+bls:V414262	Chicken whole, boneless, with skin, deep-frozen, fried without fat (oven)	pollo entero deshuesado con piel de congelado al horno
+bls:V414272	Chicken whole, boneless, with skin, deep-frozen, grilled	pollo entero deshuesado con piel de congelado a la parrilla
+bls:V416100	Chicken breast fillet, raw	filete de pechuga de pollo crudo
+bls:V416132	Chicken breast fillet, boiled	filete de pechuga de pollo cocido
+bls:V416142	Chicken breast fillet, braised without fat	filete de pechuga de pollo estofado
+bls:V416162	Chicken breast fillet, fried without fat (oven)	filete de pechuga de pollo al horno
+bls:V416172	Chicken breast fillet, grilled	filete de pechuga de pollo a la parrilla
+bls:V416182	Chicken breast fillet, fried without fat (pan)	filete de pechuga de pollo a la plancha
+bls:V416200	Chicken breast fillet, deep-frozen	filete de pechuga de pollo congelado
+bls:V416242	Chicken breast fillet, deep-frozen, braised without fat	filete de pechuga de pollo de congelado estofado
+bls:V416262	Chicken breast fillet, deep-frozen, fried without fat (oven)	filete de pechuga de pollo de congelado al horno
+bls:V416272	Chicken breast fillet, deep-frozen, grilled	filete de pechuga de pollo de congelado a la parrilla
+bls:V416282	Chicken breast fillet, deep-frozen, fried without fat (pan)	filete de pechuga de pollo de congelado a la plancha
+bls:V417100	Chicken wings, with skin, raw	alas de pollo con piel crudas
+bls:V417142	Chicken wings, with skin, braised without fat	alas de pollo con piel estofadas
+bls:V417162	Chicken wings, with skin, fried without fat (oven)	alas de pollo con piel al horno
+bls:V417172	Chicken wings, with skin, grilled	alas de pollo con piel a la parrilla
+bls:V417182	Chicken wings, with skin, fried without fat (pan)	alas de pollo con piel a la plancha
+bls:V417200	Chicken wings, with skin, deep-frozen	alas de pollo con piel congeladas
+bls:V417242	Chicken wings, with skin, deep-frozen, braised without fat	alas de pollo con piel de congelado estofadas
+bls:V417262	Chicken wings, with skin, deep-frozen, fried without fat (oven)	alas de pollo con piel de congelado al horno
+bls:V417272	Chicken wings, with skin, deep-frozen, grilled	alas de pollo con piel de congelado a la parrilla
+bls:V417282	Chicken wings, with skin, deep-frozen, fried without fat (pan)	alas de pollo con piel de congelado a la plancha
+bls:V419000	Chicken wings, with skin, marinated, raw	alas de pollo con piel marinadas crudas
+bls:V419062	Chicken wings, with skin, marinated, fried without fat (oven)	alas de pollo con piel marinadas al horno
+bls:V419072	Chicken wings, with skin, marinated, grilled	alas de pollo con piel marinadas a la parrilla
+bls:V420000	Chicken drumstick, with skin, marinated, raw	muslo de pollo con piel marinado crudo
+bls:V420072	Chicken drumstick, with skin, marinated, grilled	muslo de pollo con piel marinado a la parrilla
+bls:V421000	Chicken breast fillet, marinated, raw	filete de pechuga de pollo marinado crudo
+bls:V421072	Chicken breast fillet, marinated, grilled	filete de pechuga de pollo marinado a la parrilla
+bls:V422072	Poultry kebab meat, grilled	carne de döner de ave a la parrilla
+bls:V432132	Boiling fowl meat, with skin, boiled	carne de gallina con piel cocida
+bls:V432200	Boiling fowl meat, with skin, deep-frozen	carne de gallina con piel congelada
+bls:V432232	Boiling fowl meat, with skin, deep-frozen, boiled	carne de gallina con piel de congelado cocida
+bls:V434100	Boiling fowl meat, with skin, raw	carne de gallina con piel cruda
+bls:V435100	Boiling fowl leg, with skin, raw	muslo de gallina con piel crudo
+bls:V435132	Boiling fowl leg, with skin, boiled	muslo de gallina con piel cocido
+bls:V435200	Boiling fowl leg, with skin, deep-frozen	muslo de gallina con piel congelado
+bls:V435232	Boiling fowl leg, with skin, deep-frozen, boiled	muslo de gallina con piel de congelado cocido
+bls:V438100	Boiling fowl giblets, raw	menudillos de gallina crudos
+bls:V438132	Boiling fowl giblets, boiled	menudillos de gallina cocidos
+bls:V438142	Boiling fowl giblets, braised without fat	menudillos de gallina estofados
+bls:V438182	Boiling fowl giblets, fried without fat (pan)	menudillos de gallina a la plancha
+bls:V438200	Boiling fowl giblets, deep-frozen	menudillos de gallina congelados
+bls:V438232	Boiling fowl giblets, deep-frozen, boiled	menudillos de gallina de congelado cocidos
+bls:V438242	Boiling fowl giblets, deep-frozen, braised without fat	menudillos de gallina de congelado estofados
+bls:V438282	Boiling fowl giblets, deep-frozen, fried without fat (pan)	menudillos de gallina de congelado a la plancha
+bls:V444100	Poulard meat, with skin, raw	carne de pularda con piel cruda
+bls:V444162	Poulard meat, with skin, fried without fat (oven)	carne de pularda con piel al horno
+bls:V444200	Poulard meat, with skin, deep-frozen	carne de pularda con piel congelada
+bls:V444262	Poulard meat, with skin, deep-frozen, fried without fat (oven)	carne de pularda con piel de congelado al horno
+bls:V454100	Guineafowl meat, with skin, raw	carne de pintada con piel cruda
+bls:V454162	Guineafowl meat, with skin, fried without fat (oven)	carne de pintada con piel al horno
 bls:V454200	Guineafowl meat, with skin, deep-frozen	carne de pintada congelada
+bls:V454262	Guineafowl meat, with skin, deep-frozen, fried without fat (oven)	carne de pintada con piel de congelado al horno
+bls:V463000	Duck meat, without skin, raw	carne de pato sin piel cruda
+bls:V463042	Duck meat, without skin, braised without fat	carne de pato sin piel estofada
+bls:V463132	Duck meat, without skin, boiled	carne de pato sin piel cocida
+bls:V463162	Duck meat, without skin, fried without fat (oven)	carne de pato sin piel al horno
+bls:V463172	Duck meat, without skin, grilled	carne de pato sin piel a la parrilla
+bls:V463182	Duck meat, without skin, fried without fat (pan)	carne de pato sin piel a la plancha
+bls:V464100	Duck meat, with skin, raw	carne de pato con piel cruda
+bls:V464132	Duck meat, with skin, boiled	carne de pato con piel cocida
+bls:V464142	Duck meat, with skin, braised without fat	carne de pato con piel estofada
+bls:V464162	Duck meat, with skin, fried without fat (oven)	carne de pato con piel al horno
+bls:V464172	Duck meat, with skin, grilled	carne de pato con piel a la parrilla
+bls:V464182	Duck meat, with skin, fried without fat (pan)	carne de pato con piel a la plancha
+bls:V464200	Duck meat, with skin, deep-frozen	carne de pato con piel congelada
+bls:V464232	Duck meat, with skin, deep-frozen, boiled	carne de pato con piel de congelado cocida
+bls:V464242	Duck meat, with skin, deep-frozen, braised without fat	carne de pato con piel de congelado estofada
+bls:V464262	Duck meat, with skin, deep-frozen, fried without fat (oven)	carne de pato con piel de congelado al horno
+bls:V464272	Duck meat, with skin, deep-frozen, grilled	carne de pato con piel de congelado a la parrilla
+bls:V464282	Duck meat, with skin, deep-frozen, fried without fat (pan)	carne de pato con piel de congelado a la plancha
+bls:V465100	Duck leg, with skin, raw	muslo de pato con piel crudo
+bls:V465142	Duck leg, with skin, braised without fat	muslo de pato con piel estofado
+bls:V465162	Duck leg, with skin, fried without fat (oven)	muslo de pato con piel al horno
+bls:V465172	Duck leg, with skin, grilled	muslo de pato con piel a la parrilla
+bls:V465182	Duck leg, with skin, fried without fat (pan)	muslo de pato con piel a la plancha
+bls:V465200	Duck leg, with skin, deep-frozen	muslo de pato con piel congelado
 bls:V465242	Duck leg, with skin, deep-frozen, braised without fat	muslo de pato estofado congelado
+bls:V465262	Duck leg, with skin, deep-frozen, fried without fat (oven)	muslo de pato con piel de congelado al horno
+bls:V465272	Duck leg, with skin, deep-frozen, grilled	muslo de pato con piel de congelado a la parrilla
+bls:V465282	Duck leg, with skin, deep-frozen, fried without fat (pan)	muslo de pato con piel de congelado a la plancha
+bls:V466162	Duck breast, with skin, fried without fat (oven)	pechuga de pato con piel al horno
+bls:V466172	Duck breast, with skin, grilled	pechuga de pato con piel a la parrilla
+bls:V466182	Duck breast, with skin, fried without fat (pan)	pechuga de pato con piel a la plancha
+bls:V468100	Duck giblets, raw	menudillos de pato crudos
+bls:V468142	Duck giblets, braised without fat	menudillos de pato estofados
+bls:V468182	Duck giblets, fried without fat (pan)	menudillos de pato a la plancha
+bls:V468200	Duck giblets, deep-frozen	menudillos de pato congelados
+bls:V468242	Duck giblets, deep-frozen, braised without fat	menudillos de pato de congelado estofados
+bls:V468282	Duck giblets, deep-frozen, fried without fat (pan)	menudillos de pato de congelado a la plancha
+bls:V469000	Duck meat with skin marinated, raw	carne de pato con piel marinada cruda
+bls:V469072	Duck meat with skin marinated, grilled	carne de pato con piel marinada a la parrilla
+bls:V471100	Goose meat, without skin, raw	carne de ganso sin piel cruda
+bls:V474100	Goose meat, with skin, raw	carne de ganso con piel cruda
+bls:V474132	Goose meat, with skin, boiled	carne de ganso con piel cocida
+bls:V474162	Goose meat, with skin, fried without fat (oven)	carne de ganso con piel al horno
+bls:V474172	Goose meat, with skin, grilled	carne de ganso con piel a la parrilla
+bls:V474182	Goose meat, with skin, fried without fat (pan)	carne de ganso con piel a la plancha
+bls:V474200	Goose meat, with skin, deep-frozen	carne de ganso con piel congelada
+bls:V474232	Goose meat, with skin, deep-frozen, boiled	carne de ganso con piel de congelado cocida
+bls:V474262	Goose meat, with skin, deep-frozen, fried without fat (oven)	carne de ganso con piel de congelado al horno
+bls:V474272	Goose meat, with skin, deep-frozen, grilled	carne de ganso con piel de congelado a la parrilla
+bls:V474282	Goose meat, with skin, deep-frozen, fried without fat (pan)	carne de ganso con piel de congelado a la plancha
+bls:V475100	Goose leg, with skin, raw	muslo de ganso con piel crudo
 bls:V475142	Goose leg, with skin, braised without fat	muslo de ganso estofado
+bls:V475162	Goose leg, with skin, fried without fat (oven)	muslo de ganso con piel al horno
+bls:V475182	Goose leg, with skin, fried without fat (pan)	muslo de ganso con piel a la plancha
+bls:V475200	Goose leg, with skin, deep-frozen	muslo de ganso con piel congelado
+bls:V475242	Goose leg (with skin) deep-frozen, braised without fat	muslo de ganso con piel de congelado estofado
+bls:V475262	Goose leg (with skin) deep-frozen, fried without fat (oven)	muslo de ganso con piel de congelado al horno
+bls:V475282	Goose leg (with skin) deep-frozen, fried without fat (pan)	muslo de ganso con piel de congelado a la plancha
+bls:V476132	Goose meat, without skin, boiled	carne de ganso sin piel cocida
+bls:V476162	Goose meat, without skin, fried without fat (oven)	carne de ganso sin piel al horno
+bls:V476172	Goose meat, without skin, grilled	carne de ganso sin piel a la parrilla
+bls:V476182	Goose meat, without skin, fried without fat (pan)	carne de ganso sin piel a la plancha
+bls:V478100	Goose giblets, raw	menudillos de ganso crudos
+bls:V478142	Goose giblets, braised without fat	menudillos de ganso estofados
+bls:V478182	Goose giblets, fried without fat (pan)	menudillos de ganso a la plancha
+bls:V478200	Goose giblets, deep-frozen	menudillos de ganso congelados
+bls:V478242	Goose giblets, deep-frozen, braised without fat	menudillos de ganso de congelado estofados
 bls:V478282	Goose giblets, deep-frozen, fried without fat (pan)	menudillos de ganso congelados a la plancha
+bls:V481000	Turkey meat, without skin, raw	carne de pavo sin piel cruda
+bls:V481132	Turkey meat, without skin, boiled	carne de pavo sin piel cocida
+bls:V481162	Turkey meat, without skin, fried without fat (oven)	carne de pavo sin piel al horno
+bls:V481172	Turkey meat, without skin, grilled	carne de pavo sin piel a la parrilla
+bls:V481182	Turkey meat, without skin, fried without fat (pan)	carne de pavo sin piel a la plancha
+bls:V481200	Turkey meat, without skin, deep-frozen	carne de pavo sin piel congelada
+bls:V481232	Turkey meat, without skin, deep-frozen, boiled	carne de pavo sin piel de congelado cocida
+bls:V481262	Turkey meat, without skin, deep-frozen, fried without fat (oven)	carne de pavo sin piel de congelado al horno
+bls:V481272	Turkey meat, without skin, deep-frozen, grilled	carne de pavo sin piel de congelado a la parrilla
+bls:V481282	Turkey meat, without skin, deep-frozen, fried without fat (pan)	carne de pavo sin piel de congelado a la plancha
+bls:V484100	Turkey meat, with skin, raw	carne de pavo con piel cruda
+bls:V484142	Turkey meat, with skin, braised without fat	carne de pavo con piel estofada
+bls:V484162	Turkey meat, with skin, fried without fat (oven)	carne de pavo con piel al horno
+bls:V484172	Turkey meat, with skin, grilled	carne de pavo con piel a la parrilla
+bls:V484182	Turkey meat, with skin, fried without fat (pan)	carne de pavo con piel a la plancha
+bls:V484200	Turkey meat, with skin, deep-frozen	carne de pavo con piel congelada
+bls:V484242	Turkey meat, with skin, deep-frozen, braised without fat	carne de pavo con piel de congelado estofada
+bls:V484262	Turkey meat, with skin, deep-frozen, fried without fat (oven)	carne de pavo con piel de congelado al horno
+bls:V484272	Turkey meat, with skin, deep-frozen, grilled	carne de pavo con piel de congelado a la parrilla
+bls:V484282	Turkey meat, with skin, deep-frozen, fried without fat (pan)	carne de pavo con piel de congelado a la plancha
+bls:V485100	Turkey leg, without skin, raw	muslo de pavo sin piel crudo
+bls:V485142	Turkey leg, without skin, braised without fat	muslo de pavo sin piel estofado
+bls:V485162	Turkey leg, without skin, fried without fat (oven)	muslo de pavo sin piel al horno
+bls:V485172	Turkey leg, without skin, grilled	muslo de pavo sin piel a la parrilla
+bls:V485182	Turkey leg, without skin, fried without fat (pan)	muslo de pavo sin piel a la plancha
+bls:V485200	Turkey leg, without skin, deep-frozen	muslo de pavo sin piel congelado
+bls:V485242	Turkey leg, without skin, deep-frozen, braised without fat	muslo de pavo sin piel de congelado estofado
+bls:V485262	Turkey leg, without skin, deep-frozen, fried without fat (oven)	muslo de pavo sin piel de congelado al horno
+bls:V485272	Turkey leg, without skin, deep-frozen, grilled	muslo de pavo sin piel de congelado a la parrilla
 bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	muslo de pavo sin piel a la plancha
+bls:V486100	Turkey breast, without skin, raw	pechuga de pavo sin piel cruda
+bls:V486132	Turkey breast, without skin, boiled	pechuga de pavo sin piel cocida
+bls:V486142	Turkey breast, without skin, braised without fat	pechuga de pavo sin piel estofada
+bls:V486162	Turkey breast, without skin, fried without fat (oven)	pechuga de pavo sin piel al horno
+bls:V486172	Turkey breast, without skin, grilled	pechuga de pavo sin piel a la parrilla
+bls:V486182	Turkey breast, without skin, fried without fat (pan)	pechuga de pavo sin piel a la plancha
+bls:V486200	Turkey breast, without skin, deep-frozen	pechuga de pavo sin piel congelada
+bls:V486232	Turkey breast, without skin, deep-frozen, boiled	pechuga de pavo sin piel de congelado cocida
+bls:V486242	Turkey breast, without skin, deep-frozen, braised without fat	pechuga de pavo sin piel de congelado estofada
+bls:V486262	Turkey breast, without skin, deep-frozen, fried without fat (oven)	pechuga de pavo sin piel de congelado al horno
+bls:V486272	Turkey breast, without skin, deep-frozen, grilled	pechuga de pavo sin piel de congelado a la parrilla
 bls:V486282	Turkey breast, without skin, deep-frozen, fried without fat (pan)	pechuga de pavo a la plancha
+bls:V487100	Turkey wings, with skin, raw	alas de pavo con piel crudas
+bls:V487132	Turkey wings, with skin, boiled	alas de pavo con piel cocidas
+bls:V487142	Turkey wings, with skin, braised without fat	alas de pavo con piel estofadas
+bls:V487162	Turkey wings, with skin, fried without fat (oven)	alas de pavo con piel al horno
+bls:V487172	Turkey wings, with skin, grilled	alas de pavo con piel a la parrilla
+bls:V487182	Turkey wings, with skin, fried without fat (pan)	alas de pavo con piel a la plancha
+bls:V487200	Turkey wings, with skin, deep-frozen	alas de pavo con piel congeladas
+bls:V487232	Turkey wings, with skin, deep-frozen, boiled	alas de pavo con piel de congelado cocidas
+bls:V487242	Turkey wings, with skin, deep-frozen, braised without fat	alas de pavo con piel de congelado estofadas
+bls:V487262	Turkey wings, with skin, deep-frozen, fried without fat (oven)	alas de pavo con piel de congelado al horno
+bls:V487272	Turkey wings, with skin, deep-frozen, grilled	alas de pavo con piel de congelado a la parrilla
+bls:V487282	Turkey wings, with skin, deep-frozen, fried without fat (pan)	alas de pavo con piel de congelado a la plancha
+bls:V488100	Turkey giblets, raw	menudillos de pavo crudos
+bls:V488142	Turkey giblets, braised without fat	menudillos de pavo estofados
+bls:V488182	Turkey giblets, fried without fat (pan)	menudillos de pavo a la plancha
+bls:V488200	Turkey giblets, deep-frozen	menudillos de pavo congelados
+bls:V488242	Turkey giblets, deep-frozen, braised without fat	menudillos de pavo de congelado estofados
+bls:V488282	Turkey giblets, deep-frozen, fried without fat (pan)	menudillos de pavo de congelado a la plancha
+bls:V489000	Turkey breast, without skin, marinated, raw	pechuga de pavo sin piel marinada cruda
+bls:V489082	Turkey breast, without skin, marinated, fried without fat (pan)	pechuga de pavo sin piel marinada a la plancha
+bls:V494100	Pigeon meat, with skin, raw	carne de pichón con piel cruda
+bls:V494142	Pigeon meat, with skin, braised without fat	carne de pichón con piel estofada
+bls:V494162	Pigeon meat, with skin, fried without fat (oven)	carne de pichón con piel al horno
+bls:V494200	Pigeon meat, with skin, deep-frozen	carne de pichón con piel congelada
+bls:V494242	Pigeon meat, with skin, deep-frozen, braised without fat	carne de pichón con piel de congelado estofada
+bls:V494262	Pigeon meat, with skin, deep-frozen, fried without fat (oven)	carne de pichón con piel de congelado al horno
+bls:V4A5100	Chicken thigh, with skin, raw	contramuslo de pollo con piel crudo
+bls:V4A5142	Chicken thigh, with skin, braised without fat	contramuslo de pollo con piel estofado
+bls:V4A5162	Chicken thigh, with skin, fried without fat (oven)	contramuslo de pollo con piel al horno
+bls:V4A5172	Chicken thigh, with skin, grilled	contramuslo de pollo con piel a la parrilla
+bls:V4A5182	Chicken thigh, with skin, fried without fat (pan)	contramuslo de pollo con piel a la plancha
+bls:V4A6100	Chicken breast, without skin, raw	pechuga de pollo sin piel cruda
+bls:V4A6142	Chicken breast, without skin, braised without fat	pechuga de pollo sin piel estofada
+bls:V4A6162	Chicken breast, without skin, fried without fat (oven)	pechuga de pollo sin piel al horno
+bls:V4A6172	Chicken breast, without skin, grilled	pechuga de pollo sin piel a la parrilla
+bls:V4A6182	Chicken breast, without skin, fried without fat (pan)	pechuga de pollo sin piel a la plancha
+bls:V4B5100	Chicken drumstick, with skin, raw	muslo de pollo con piel crudo
+bls:V4B5142	Chicken drumstick, with skin, braised without fat	muslo de pollo con piel estofado
+bls:V4B5162	Chicken drumstick, with skin, fried without fat (oven)	muslo de pollo con piel al horno
+bls:V4B5172	Chicken drumstick, with skin, grilled	muslo de pollo con piel a la parrilla
+bls:V4B5182	Chicken drumstick, with skin, fried without fat (pan)	muslo de pollo con piel a la plancha
+bls:V511100	Beef heart, raw	corazón de vacuno crudo
+bls:V511142	Beef heart, braised without fat	corazón de vacuno estofado
+bls:V511182	Beef heart, fried without fat (pan)	corazón de vacuno a la plancha
+bls:V511200	Beef heart, deep-frozen	corazón de vacuno congelado
+bls:V511242	Beef heart, deep-frozen, braised without fat	corazón de vacuno de congelado estofado
+bls:V511282	Beef heart, deep-frozen, fried without fat (pan)	corazón de vacuno de congelado a la plancha
+bls:V512100	Veal heart, raw	corazón de ternera crudo
+bls:V512142	Veal heart, braised without fat	corazón de ternera estofado
+bls:V512182	Veal heart, fried without fat (pan)	corazón de ternera a la plancha
+bls:V512200	Veal heart, deep-frozen	corazón de ternera congelado
+bls:V512242	Veal heart, deep-frozen, braised without fat	corazón de ternera de congelado estofado
+bls:V512282	Veal heart, deep-frozen, fried without fat (pan)	corazón de ternera de congelado a la plancha
+bls:V513100	Pork heart, raw	corazón de cerdo crudo
+bls:V513142	Pork heart, braised without fat	corazón de cerdo estofado
+bls:V513182	Pork heart, fried without fat (pan)	corazón de cerdo a la plancha
+bls:V513200	Pork heart, deep-frozen	corazón de cerdo congelado
+bls:V513242	Pork heart, deep-frozen, braised without fat	corazón de cerdo de congelado estofado
+bls:V513282	Pork heart, deep-frozen, fried without fat (pan)	corazón de cerdo de congelado a la plancha
+bls:V513800	Pork heart, cooked cured	corazón de cerdo curado cocido
+bls:V514100	Sheep heart, raw	corazón de oveja crudo
+bls:V514142	Sheep heart, braised without fat	corazón de oveja estofado
+bls:V514182	Sheep heart, fried without fat (pan)	corazón de oveja a la plancha
+bls:V515100	Lamb heart, raw	corazón de cordero crudo
+bls:V515142	Lamb heart, braised without fat	corazón de cordero estofado
+bls:V515182	Lamb heart, fried without fat (pan)	corazón de cordero a la plancha
+bls:V516100	Mutton heart, raw	corazón de carnero crudo
+bls:V516142	Mutton heart, braised without fat	corazón de carnero estofado
+bls:V516182	Mutton heart, fried without fat (pan)	corazón de carnero a la plancha
+bls:V522100	Veal brain, raw	sesos de ternera crudos
+bls:V522132	Veal brain, boiled	sesos de ternera cocidos
+bls:V523100	Pork brain, raw	sesos de cerdo crudos
+bls:V523132	Pork brain, boiled	sesos de cerdo cocidos
+bls:V524100	Sheep brain, raw	sesos de oveja crudos
+bls:V524132	Sheep brain, boiled	sesos de oveja cocidos
+bls:V526100	Mutton brain, raw	sesos de carnero crudos
+bls:V526132	Mutton brain, boiled	sesos de carnero cocidos
+bls:V531100	Beef liver, raw	hígado de vacuno crudo
+bls:V531182	Beef liver, fried without fat (pan)	hígado de vacuno a la plancha
+bls:V531200	Beef liver, deep-frozen	hígado de vacuno congelado
+bls:V531282	Beef liver, deep-frozen, fried without fat (pan)	hígado de vacuno de congelado a la plancha
+bls:V532100	Veal liver, raw	hígado de ternera crudo
+bls:V532182	Veal liver, fried without fat (pan)	hígado de ternera a la plancha
 bls:V532200	Veal liver, deep-frozen	hígado de ternera congelado
+bls:V532282	Veal liver, deep-frozen, fried without fat (pan)	hígado de ternera de congelado a la plancha
+bls:V533100	Pork liver, raw	hígado de cerdo crudo
+bls:V533182	Pork liver, fried without fat (pan)	hígado de cerdo a la plancha
+bls:V533200	Pork liver, deep-frozen	hígado de cerdo congelado
+bls:V533282	Pork liver, deep-frozen, fried without fat (pan)	hígado de cerdo de congelado a la plancha
+bls:V534100	Sheep liver, raw	hígado de oveja crudo
+bls:V534182	Sheep liver, fried without fat (pan)	hígado de oveja a la plancha
+bls:V535100	Lamb liver, raw	hígado de cordero crudo
+bls:V535182	Lamb liver, fried without fat (pan)	hígado de cordero a la plancha
+bls:V536100	Mutton liver, raw	hígado de carnero crudo
+bls:V536182	Mutton liver, fried without fat (pan)	hígado de carnero a la plancha
+bls:V541100	Beef lungs, raw	pulmones de vacuno crudos
+bls:V541132	Beef lungs, boiled	pulmones de vacuno cocidos
+bls:V542100	Veal lungs, raw	pulmones de ternera crudos
+bls:V542132	Veal lungs, boiled	pulmones de ternera cocidos
+bls:V543100	Pork lungs, raw	pulmones de cerdo crudos
+bls:V543132	Pork lungs, boiled	pulmones de cerdo cocidos
+bls:V544100	Sheep lungs, raw	pulmones de oveja crudos
+bls:V544132	Sheep lungs, boiled	pulmones de oveja cocidos
+bls:V546100	Mutton lungs, raw	pulmones de carnero crudos
+bls:V546132	Mutton lungs, boiled	pulmones de carnero cocidos
+bls:V551100	Beef stomach/tripe, raw	callos de vacuno crudos
+bls:V551132	Beef stomach/tripe, boiled	callos de vacuno cocidos
+bls:V552100	Veal stomach/pluck, raw	estómago de ternera crudo
+bls:V552132	Veal stomach/pluck, boiled	estómago de ternera cocido
+bls:V553100	Pork stomach, raw	estómago de cerdo crudo
+bls:V553132	Pork stomach, boiled	estómago de cerdo cocido
+bls:V561100	Beef spleen, raw	bazo de vacuno crudo
+bls:V562100	Veal spleen, raw	bazo de ternera crudo
+bls:V563100	Pork spleen, raw	bazo de cerdo crudo
+bls:V564100	Sheep spleen, raw	bazo de oveja crudo
+bls:V565100	Lamb spleen, raw	bazo de cordero crudo
+bls:V566100	Mutton spleen, raw	bazo de carnero crudo
+bls:V571100	Beef kidney, raw	riñones de vacuno crudos
+bls:V572100	Veal kidney, raw	riñones de ternera crudos
+bls:V572142	Veal kidney, braised without fat	riñones de ternera estofados
+bls:V573100	Pork kidney, raw	riñones de cerdo crudos
+bls:V573142	Pork kidney, braised without fat	riñones de cerdo estofados
+bls:V574100	Sheep kidney, raw	riñones de oveja crudos
 bls:V574142	Sheep kidney, braised without fat	riñones de oveja estofados sin grasa
-bls:V614200	Chicken heart, deep-frozen	corazón de pollo congelado
+bls:V575100	Lamb kidney, raw	riñones de cordero crudos
+bls:V575142	Lamb kidney, braised without fat	riñones de cordero estofados
+bls:V576100	Mutton kidney, raw	riñones de carnero crudos
+bls:V576142	Mutton kidney, braised without fat	riñones de carnero estofados
+bls:V582100	Veal sweetbread, raw	mollejas de ternera crudas
+bls:V582132	Veal sweetbread, boiled	mollejas de ternera cocidas
+bls:V584100	Sheep sweetbread, raw	mollejas de oveja crudas
+bls:V584132	Sheep sweetbread, boiled	mollejas de oveja cocidas
+bls:V585100	Lamb sweetbread, raw	mollejas de cordero crudas
+bls:V585132	Lamb sweetbread, boiled	mollejas de cordero cocidas
+bls:V591100	Beef tongue, raw	lengua de vacuno cruda
+bls:V591132	Beef tongue, boiled	lengua de vacuno cocida
+bls:V591800	Beef tongue, cooked cured	lengua de vacuno curada cocida
+bls:V592100	Veal tongue, raw	lengua de ternera cruda
+bls:V592132	Veal tongue, boiled	lengua de ternera cocida
+bls:V592800	Veal tongue, cooked cured	lengua de ternera curada cocida
+bls:V593100	Pork tongue, raw	lengua de cerdo cruda
+bls:V593132	Pork tongue, boiled	lengua de cerdo cocida
+bls:V593800	Pork tongue, cooked cured	lengua de cerdo curada cocida
+bls:V594100	Sheep tongue, raw	lengua de oveja cruda
+bls:V594132	Sheep tongue, boiled	lengua de oveja cocida
+bls:V595100	Lamb tongue, raw	lengua de cordero cruda
+bls:V595132	Lamb tongue, boiled	lengua de cordero cocida
+bls:V596100	Mutton tongue, raw	lengua de carnero cruda
+bls:V596132	Mutton tongue, boiled	lengua de carnero cocida
+bls:V604100	Chicken giblets, raw	menudillos de pollo crudos
+bls:V604142	Chicken giblets, braised without fat	menudillos de pollo estofados
+bls:V604182	Chicken giblets, fried without fat (pan)	menudillos de pollo a la plancha
+bls:V614100	Chicken heart, raw	corazones de pollo crudos
+bls:V614142	Chicken heart, braised without fat	corazones de pollo estofados
+bls:V614182	Chicken heart, fried without fat (pan)	corazones de pollo a la plancha
+bls:V614200	Chicken heart, deep-frozen	corazones de pollo congelados
+bls:V614242	Chicken heart, deep-frozen, braised without fat	corazones de pollo de congelado estofados
+bls:V614282	Chicken heart, deep-frozen, fried without fat (pan)	corazones de pollo de congelado a la plancha
+bls:V634100	Chicken liver, raw	hígado de pollo crudo
+bls:V634182	Chicken liver, fried without fat (pan)	hígado de pollo a la plancha
+bls:V634200	Chicken liver, deep-frozen	hígado de pollo congelado
+bls:V634282	Chicken liver, deep-frozen, fried without fat (pan)	hígado de pollo de congelado a la plancha
+bls:V635100	Duck liver, raw	hígado de pato crudo
+bls:V635182	Duck liver, fried without fat (pan)	hígado de pato a la plancha
+bls:V635200	Duck liver, deep-frozen	hígado de pato congelado
+bls:V635282	Duck liver, deep-frozen, fried without fat (pan)	hígado de pato de congelado a la plancha
+bls:V636100	Goose liver, raw	hígado de ganso crudo
+bls:V636182	Goose liver, fried without fat (pan)	hígado de ganso a la plancha
+bls:V654100	Chicken stomach, raw	mollejas de pollo crudas
+bls:V654182	Chicken stomach, fried without fat (pan)	mollejas de pollo a la plancha
+bls:V654200	Chicken stomach, deep-frozen	mollejas de pollo congeladas
+bls:V654282	Chicken stomach, deep-frozen, fried without fat (pan)	mollejas de pollo de congelado a la plancha
+bls:V880100	Game paste spread	paté de caza para untar
+bls:V880300	Chicken cream spread	crema de pollo para untar
+bls:V913200	Pate made from rabbit, baked	paté de liebre al horno
+bls:V913300	Mock wild boar pie, with shortcrust pastry, baked	pastel de falso jabalí en masa quebrada
+bls:V913400	Duck pate baked	paté de pato al horno
+bls:V913500	Truffled goose liver pate, baked in a crust	paté de hígado de ganso trufado en costra
+bls:V913600	Chicken pate baked	paté de pollo al horno
+bls:V988100	Liver dumplings canned	bolas de hígado en conserva
+bls:V990100	Poultry patty, raw	hamburguesa de ave cruda
+bls:V990162	Poultry patty, fried without fat (oven)	hamburguesa de ave al horno
+bls:V990182	Poultry patty, fried without fat (pan)	hamburguesa de ave a la plancha
+bls:V997100	Chicken breast fillet in its own juice, canned	filete de pechuga de pollo en su jugo en conserva
+bls:W002000	Sausage meat for turkey cold cuts with pork	masa para fiambre de pavo con cerdo
+bls:W003000	Sausage meat for cold cuts reduced-fat	masa para fiambre baja en grasa
+bls:W004000	Sausage meat for cold cuts	masa para fiambre
+bls:W005000	Sausage meat for beef cold cuts	masa de vacuno para fiambre
+bls:W006000	Sausage meat light, for roulade sausage	masa clara para fiambre en rollo
+bls:W007000	Sausage meat medium, for roulade sausage	masa media para fiambre en rollo
+bls:W008000	Sausage meat dark, for roulade sausage	masa oscura para fiambre en rollo
 bls:W009000	Mosaic-edge for roulade sausage	borde mosaico para fiambre en rollo
+bls:W010000	Shortcrust pastry for meat/sausage pate, raw	masa quebrada para patés de carne cruda
+bls:W110000	Braunschweiger Mettwurst sausage high quality, spreadable	mettwurst de Brunswick extra para untar
+bls:W112200	Mettwurst sausage/Mettwurst sausage with onions, spreadable	mettwurst para untar con cebolla
+bls:W112300	Braunschweiger Mettwurst sausage spreadable, reduced-fat	mettwurst de Brunswick para untar baja en grasa
+bls:W114000	Coarse Mettwurst sausage spreadable	mettwurst gruesa para untar
+bls:W114100	Coarse Mettwurst sausage spreadable, reduced-fat	mettwurst gruesa para untar baja en grasa
+bls:W115200	Westphalian coarse Mettwurst sausage spreadable	mettwurst gruesa de Westfalia
+bls:W115282	Westphalian coarse Mettwurst sausage, fried without fat (pan)	mettwurst gruesa de Westfalia a la plancha
+bls:W116000	Mettwurst sausage high-fat, spreadable	mettwurst grasa para untar
 bls:W117000	Mettwurst sausage simple, spreadable	mettwurst para untar
+bls:W121100	Teewurst sausage finely/coarsely minced/Rügenwalder style, spreadable	teewurst para untar
 bls:W121400	Teewurst sausage made from poultry and pork, spreadable	teewurst de ave y cerdo para untar
+bls:W121500	Teewurst sausage spreadable, reduced-fat	teewurst para untar baja en grasa
+bls:W131000	Zervelatwurst sausage high quality	cervelat extra
+bls:W132000	Zervelatwurst sausage	cervelat
+bls:W133000	Schlackwurst sausage	schlackwurst
+bls:W134000	Zervelatwurst sausage reduced-fat	cervelat bajo en grasa
+bls:W138100	Zervelatwurst sausage with goose meat and pork	cervelat de ganso con cerdo
+bls:W139100	Zervelatwurst sausage with lamb meat	cervelat con cordero
+bls:W140000	Salami	salami
+bls:W141100	German salami	salami alemán
+bls:W141200	Salami high quality, reduced-fat	salami extra bajo en grasa
+bls:W142000	Salami high quality	salami extra
+bls:W143000	Salami Hungarian-type	salami estilo húngaro
+bls:W144000	Salami Italian-type, with lamb meat	salami estilo italiano con cordero
+bls:W145000	Beef salami	salami de vacuno
+bls:W146000	Katenrauchwurst sausage	katenrauchwurst
+bls:W147000	Poultry salami with vegetable fat	salami de ave con grasa vegetal
+bls:W149100	Lamb salami	salami de cordero
+bls:W149200	Venison salami with pork	salami de venado con cerdo
+bls:W149300	Pork salami	salami de cerdo
+bls:W151000	Mettwurst sausage firm	mettwurst
+bls:W151082	Mettwurst sausage firm, fried without fat (pan)	mettwurst a la plancha
+bls:W153000	Mettwurst sausage firm air dried	mettwurst curada
 bls:W153100	Mettwurst sausage firm air dried, reduced-fat	mettwurst curada baja en grasa
+bls:W154000	Schinkenmettwurst sausage firm	mettwurst de jamón
+bls:W154500	Salami Croatian-type	salami estilo croata
+bls:W155000	Aalrauchmettwurst sausage firm	aalrauchmettwurst
+bls:W156000	Landmettwurst sausage firm	landmettwurst
+bls:W161000	Plockwurst sausage	plockwurst
+bls:W162000	Plockwurst sausage simple	plockwurst simple
+bls:W163100	Schinkenplockwurst sausage air dried	schinkenplockwurst curada
+bls:W164000	Ham bologna raw	salchicha de jamón curada
+bls:W164100	Ham bologna Krakow style raw	salchicha de jamón estilo Cracovia curada
+bls:W164200	Göttinger ham bologna raw	salchicha de jamón de Gotinga curada
+bls:W171100	Garlic sausage raw	salchicha de ajo curada
 bls:W171200	Krakow sausage raw	salchicha de Cracovia curada
+bls:W171300	Touristenwurst sausage raw	touristenwurst curada
+bls:W171600	Kolbacz sausage raw	kolbacz curada
+bls:W171700	Sausage with caraway seeds, raw	salchicha de comino curada
+bls:W172100	Garlic sausage simple	salchicha de ajo simple
+bls:W181000	Polish Bratwurst sausage raw, small, firm	salchicha polaca curada
+bls:W182000	Berlin Knacker sausage raw, small, firm	knacker de Berlín curado
+bls:W183000	Bauernbratwurst sausage raw, small, firm	bratwurst campesina curada
+bls:W184000	Bratwurst sausage smoked, raw, small, firm	bratwurst ahumada cruda
+bls:W185000	Debrecziner sausage raw, small, firm	debrecener curada
+bls:W189000	Black forest farmer's sausage raw, small, firm	salchicha campesina de la Selva Negra curada
+bls:W191000	Landjäger sausage raw, small, firm	landjäger curado
+bls:W193000	Kabanossi/Peperoni, sausage, raw, small, firm	kabanos curados
+bls:W202000	Geflügeljagdwurst sausage made from poultry and pork	jagdwurst de ave con cerdo
+bls:W203000	Jagdwurst sausage reduced-fat	jagdwurst baja en grasa
+bls:W205000	Small scalded sausage reduced-fat	salchichas knack bajas en grasa
+bls:W206000	Mortadella reduced-fat	mortadela baja en grasa
+bls:W207000	Poultry bockwurst with pork	bockwurst de ave con cerdo
+bls:W207032	Poultry bockwurst with pork, poached	bockwurst de ave con cerdo escaldada
+bls:W211100	Bockwurst	bockwurst
+bls:W211132	Bockwurst poached	bockwurst escaldada
+bls:W211200	Vienna sausage	salchichas de Viena
+bls:W211300	Vienna sausage with cheese	salchichas de Viena con queso
+bls:W211332	Vienna sausage with cheese, poached	salchichas de Viena con queso escaldadas
+bls:W211400	Berner small sausage (with bacon and cheese)	salchichas de Berna con beicon y queso
+bls:W211472	Berner small sausage (with bacon and cheese) grilled	salchichas de Berna con beicon y queso a la parrilla
+bls:W211482	Berner small sausage (with bacon and cheese) fried without fat (pan)	salchichas de Berna con beicon y queso a la plancha
+bls:W212000	Poultry Vienna sausage	salchichas de Viena de ave
+bls:W212032	Poultry Vienna sausage poached	salchichas de Viena de ave escaldadas
+bls:W213000	Frankfurt sausage small	salchichas de Frankfurt
+bls:W214000	Gourmet sausage small	salchichas delicatessen
+bls:W215000	Knackwurst/Servela sausage, small	knackwurst
+bls:W216100	Frankfurt beef sausage/red sausage	salchicha de vacuno de Frankfurt
+bls:W217000	Knacker sausage simple	knacker simple
 bls:W218000	Regensburg sausage small	salchicha de Ratisbona pequeña
+bls:W218100	Cabanossi sausage scalded, small	cabanossi pequeñas
+bls:W218600	Geselchte sausage smoked	geselchte ahumada
+bls:W219100	Debreziner sausage (scalded)	salchichas debrecener
+bls:W219500	Salami scalded	kochsalami
+bls:W221000	Rhenish bratwurst	bratwurst del Rin
+bls:W221072	Rhenish bratwurst grilled	bratwurst del Rin a la parrilla
+bls:W221082	Rhenish bratwurst fried without fat (pan)	bratwurst del Rin a la plancha
+bls:W221100	Bratwurst sausage meat	masa para bratwurst
+bls:W221300	Curry-Bratwurst	bratwurst al curry
+bls:W221372	Curry-Bratwurst grilled	bratwurst al curry a la parrilla
+bls:W221382	Curry-Bratwurst fried without fat (pan)	bratwurst al curry a la plancha
+bls:W222100	Bratwurst medium-coarsely minced	bratwurst de picado medio
+bls:W222172	Bratwurst medium-coarsely minced, grilled	bratwurst de picado medio a la parrilla
+bls:W222182	Bratwurst medium-coarsely minced, fried without fat (pan)	bratwurst de picado medio a la plancha
+bls:W222600	Rostbratwurst sausage	rostbratwurst
+bls:W222632	Rostbratwurst sausage poached	rostbratwurst escaldada
+bls:W222672	Rostbratwurst sausage grilled	rostbratwurst a la parrilla
+bls:W222682	Rostbratwurst sausage fried without fat (pan)	rostbratwurst a la plancha
+bls:W222700	Beef-Bratwurst	bratwurst de vacuno
+bls:W222772	Beef-Bratwurst grilled	bratwurst de vacuno a la parrilla
+bls:W222782	Beef-Bratwurst fried without fat (pan)	bratwurst de vacuno a la plancha
+bls:W223100	Poultry bratwurst	bratwurst de ave
+bls:W223172	Poultry bratwurst grilled	bratwurst de ave a la parrilla
+bls:W223182	Poultry bratwurst fried without fat (pan)	bratwurst de ave a la plancha
+bls:W224000	Bavarian white sausage	weißwurst de Múnich
+bls:W224032	Bavarian white sausage poached	weißwurst de Múnich escaldada
+bls:W224082	Bavarian white sausage fried without fat (pan)	weißwurst de Múnich a la plancha
+bls:W225000	Stockwurst sausage	stockwurst
+bls:W226000	Wollwurst sausage (without casing)	wollwurst
+bls:W231100	Lyon sausage	salchicha lyoner
+bls:W231200	Mortadella/Ham bologna finely minced	mortadela de corte fino
 bls:W231700	Veal bologna with pork	mortadela de ternera con cerdo
+bls:W231800	Veal fleischkaese sausage with pork	fleischkäse de ternera con cerdo
+bls:W231862	Veal fleischkaese sausage with pork, fried without fat (oven)	fleischkäse de ternera con cerdo al horno
+bls:W231882	Veal fleischkaese sausage with pork, fried without fat (pan)	fleischkäse de ternera con cerdo a la plancha
+bls:W233000	Fleischkaese sausage	fleischkäse
+bls:W233032	Fleischkaese sausage boiled	fleischkäse cocido
+bls:W233062	Fleischkaese sausage fried without fat (oven)	fleischkäse al horno
+bls:W233082	Fleischkaese sausage fried without fat (pan)	fleischkäse a la plancha
+bls:W234000	Bologna	mortadela
+bls:W234032	Bologna boiled	mortadela cocida
+bls:W234062	Bologna fried without fat (oven)	mortadela al horno
+bls:W234082	Bologna fried without fat (pan)	mortadela a la plancha
+bls:W234100	Bologna reduced-fat	mortadela baja en grasa
+bls:W236000	Bologna for meat salads	mortadela para ensalada de carne
+bls:W237000	Fleischkaese sausage reduced-fat	fleischkäse bajo en grasa
+bls:W237032	Fleischkaese sausage reduced-fat, boiled	fleischkäse bajo en grasa cocido
+bls:W237062	Fleischkaese sausage reduced-fat, fried without fat, (oven)	fleischkäse bajo en grasa al horno
+bls:W237082	Fleischkaese sausage reduced-fat, fried without fat, (pan)	fleischkäse bajo en grasa a la plancha
+bls:W238000	Poultry fleischkaese sausage with pork	fleischkäse de ave con cerdo
+bls:W238032	Poultry fleischkaese sausage with pork, boiled	fleischkäse de ave con cerdo cocido
+bls:W241000	Gelbwurst sausage (uncured)	gelbwurst
+bls:W243000	Kalbskaese sausage with pork	kalbskäse con cerdo
 bls:W244000	White fleischkaese sausage	fleischkäse blanco
+bls:W245000	White Lyoner sausage	lyoner blanco
+bls:W251000	Bavarian Bierwurst	bierwurst de Baviera
+bls:W251200	North German Kochmettwurst sausage (cooked)	kochmettwurst del norte de Alemania
+bls:W251300	Ham bologna smoked	salchicha de jamón ahumada
+bls:W252000	Göttinger Bierwurst	bierwurst de Gotinga
+bls:W252100	Krakow cooked sausage	salchicha de Cracovia cocida
+bls:W252500	Krakow ham bologna	salchicha de jamón de Cracovia
+bls:W253200	Tyrolean ham bologna	salchicha de jamón del Tirol
+bls:W254000	Jagdwurst sausage/ham bologna coarsely minced	jagdwurst de picado grueso
+bls:W254032	Jagdwurst sausage/ham bologna coarsely minced, boiled	jagdwurst de picado grueso cocida
+bls:W254042	Jagdwurst sausage/ham bologna coarsely minced, braised without fat	jagdwurst de picado grueso estofada
+bls:W254062	Jagdwurst sausage/ham bologna coarsely minced, fried without fat (oven)	jagdwurst de picado grueso al horno
+bls:W254082	Jagdwurst sausage/ham bologna coarsely minced, fried without fat (pan)	jagdwurst de picado grueso a la plancha
+bls:W254200	Ham bologna with cheese	salchicha de jamón con queso
+bls:W255100	Lyoner sausage coarsely minced	lyoner de picado grueso
+bls:W255200	Bierwurst made from poultry and pork	bierwurst de ave con cerdo
+bls:W255300	Small scalded sausage filled with cheese	käsekrainer
+bls:W255372	Small scalded sausage filled with cheese, grilled	käsekrainer a la parrilla
+bls:W255382	Small scalded sausage filled with cheese, fried without fat (pan)	käsekrainer a la plancha
+bls:W255400	Bierwurst sausage	bierwurst
+bls:W255600	Luncheon meat	fiambre
+bls:W255700	Stuttgart Leberkaese sausage	leberkäse de Stuttgart
+bls:W256000	Leberkaese sausage reduced-fat	leberkäse bajo en grasa
+bls:W256100	Leberkaese sausage	leberkäse
+bls:W256162	Leberkaese sausage fried without fat (oven)	leberkäse al horno
+bls:W256200	Fleischkaese sausage coarsely minced	fleischkäse de picado grueso
+bls:W256232	Fleischkaese sausage coarsely minced, boiled	fleischkäse de picado grueso cocido
+bls:W256262	Fleischkaese sausage coarsely minced, fried without fat (oven)	fleischkäse de picado grueso al horno
+bls:W256282	Fleischkaese sausage coarsely minced, fried without fat (pan)	fleischkäse de picado grueso a la plancha
+bls:W257000	Cabanossi sausage scalded	cabanossi
+bls:W258000	Touristenwurst sausage simple, scalded	touristenwurst simple
+bls:W259000	Pork brawn sausage	queso de cerdo
+bls:W261000	White Fleischkaese sausage made from pork	fleischkäse blanco de cerdo
+bls:W269200	Leberkaese sausage with goose liver and pork, truffled	leberkäse de hígado de ganso con cerdo trufado
+bls:W271000	Beer ham	bierschinken
+bls:W271200	Filled ham	jamón relleno
+bls:W272100	Mosaic-patterned roulade sausage	fiambre en rollo mosaico
+bls:W272200	Star-patterned pate	paté estrella
+bls:W272300	Die-patterned pate	paté dados
 bls:W272400	Truffled mosaic pate	paté mosaico trufado
+bls:W273100	Beef beer ham	bierschinken de vacuno
+bls:W273500	Ham roulade sausage	rulo de jamón
+bls:W273600	Pork roulade sausage	rulo de cerdo
+bls:W274500	Brawn Presssäckel	queso de cerdo presssäckel
+bls:W274600	White brawn	queso de cerdo blanco
+bls:W275000	Mortadella South German	mortadela del sur de Alemania
+bls:W275100	Heart sausage	salchicha de corazón
+bls:W275200	Light pork tongue sausage	salchicha de lengua clara
+bls:W275232	Light pork tongue sausage boiled	salchicha de lengua clara cocida
+bls:W275300	Pork tongue sausage reduced-fat	morcilla de lengua baja en grasa
+bls:W277000	Paprika bacon sausage	salchicha de beicon con pimentón
+bls:W278000	Veal roulade sausage with pork	rulo de ternera con cerdo
+bls:W278200	Veal roulade sausage with dry-cured, smoked, rolled lean pork loin	rulo de ternera con lomo de cerdo curado
+bls:W278400	Swedish liver pate with anchovies	paté de hígado sueco con anchoas
+bls:W278600	Veal brisket filled, fried (in oven)	pecho de ternera relleno al horno
+bls:W281000	Scalded sausage with milt	salchicha de bazo
+bls:W288100	Poultry mortadella	mortadela de ave
+bls:W288132	Poultry mortadella boiled	mortadela de ave cocida
+bls:W288162	Poultry mortadella fried without fat (oven)	mortadela de ave al horno
+bls:W288182	Poultry mortadella fried without fat (pan)	mortadela de ave a la plancha
+bls:W288200	Ghoose brawn with pork	queso de cerdo de ganso
+bls:W291100	Ham-cheese pate	paté de jamón y queso
+bls:W291200	Egg pate	paté de huevo
+bls:W293100	Hazelnut pate	paté de avellanas
+bls:W295100	Button mushroom pate	paté de champiñones
+bls:W295200	Spring pate	paté primavera
+bls:W298100	Olive pate	paté de olivas
+bls:W302000	Poultry liver sausage	salchicha de hígado de ave
+bls:W308000	Liver sausage finely minced, reduced-fat	salchicha de hígado fina baja en grasa
+bls:W309000	Thuringian blood sausage reduced-fat	morcilla de Turingia baja en grasa
+bls:W310000	Liver sausage finely minced	salchicha de hígado fina
+bls:W313000	Frankfurt liver sausage	salchicha de hígado de Frankfurt
+bls:W314000	Veal liver sausage	salchicha de hígado de ternera
+bls:W317100	Liver brawn simple	queso de cerdo de hígado simple
+bls:W318100	Goose liver sausage with truffles and pork	salchicha de hígado de ganso con trufa y cerdo
+bls:W318300	Strasbourg goose liver sausage with pork	salchicha de hígado de ganso de Estrasburgo con cerdo
+bls:W319000	Truffled liver sausage	salchicha de hígado trufada
+bls:W319200	Button mushroom liver sausage	salchicha de hígado con champiñones
+bls:W320000	Braunschweiger coarse liver sausage	salchicha de hígado gruesa de Brunswick
+bls:W320100	Liver roll (liver sausage)	rulo de hígado
+bls:W323000	Bauernleberwurst liver sausage	salchicha de hígado campesina
+bls:W324000	Veal liver sausage coarsely minced, with pork	salchicha de hígado de ternera de picado grueso con cerdo
+bls:W327000	Liver sausage simple	salchicha de hígado simple
+bls:W329000	Liver sausage with herbs	salchicha de hígado con hierbas
+bls:W331000	Mettwurst sausage cooked	mettwurst cocida
+bls:W332000	Cooked sausage with onions	salchicha de cebolla cocida
+bls:W333000	Hanoverian white sausage	weißwurst de Hannover
+bls:W335000	Bregenwurst blood sausage	bregenwurst de sangre
+bls:W340000	Thuringian blood sausage	morcilla de Turingia
+bls:W342000	Hessian blood sausage	morcilla de Hesse
+bls:W342100	Liver blood sausage	morcilla de hígado
+bls:W343000	Blood sausage meat	masa para morcilla
+bls:W343400	Homemade blood sausage	morcilla casera
+bls:W348000	Blood brawn	queso de cerdo de sangre
+bls:W349000	Red brawn	queso de cerdo rojo
+bls:W350000	Fillet blood sausage	morcilla con filete
+bls:W352000	Tongue blood sausage	morcilla de lengua
+bls:W361000	Jellied brawn	salchicha en gelatina
+bls:W362000	Presswurst brawn	presswurst
 bls:W363000	Schwartenmagen brawn	queso de cerdo (schwartenmagen)
+bls:W364000	Franconian pork brawn	queso de cerdo de Franconia
+bls:W364400	Tongue brawn	queso de cerdo de lengua
+bls:W364500	Ham brawn	queso de cerdo de jamón
+bls:W365100	Schweinekümmelmagen pork brawn with caraway seeds	estómago de cerdo con comino
+bls:W368000	Anspacher liver brawn	queso de hígado de Ansbach
+bls:W371000	Jellied veal	ternera en gelatina
+bls:W372000	Jellied beef	vacuno en gelatina
+bls:W373000	Vegetable aspic/vegetable mix in aspic	verduras en gelatina
+bls:W378100	Goose liver in aspic	hígado de ganso en gelatina
+bls:W380200	Rice sausage	salchicha de arroz
+bls:W380300	Potato sausage	salchicha de patata
+bls:W380400	Sausage made with pea flour	salchicha de guisantes
+bls:W381200	Blood sausage with buckwheat flour	morcilla con harina de trigo sarraceno
+bls:W383100	Blood sausage with oat groats	morcilla con avena
+bls:W383700	Bremer Pinkel pork sausage with oat groats	salchicha pinkel de Bremen con avena
+bls:W384100	Small blood sausage with pearl barley	morcillas pequeñas con cebada
+bls:W384200	Blood sausage with pearl barley	morcilla con cebada
+bls:W384300	White sausage with pearl barley	salchicha blanca con cebada
+bls:W386000	Palatinate stuffed pig's stomach	saumagen (estómago de cerdo relleno)
+bls:W391200	Game pate with venison meat	paté de caza con venado
+bls:W391400	Hare pate	paté de liebre
+bls:W395000	Liver pate	paté de hígado
+bls:W395100	Liver pate with button mushrooms	paté de hígado con champiñones
+bls:W396000	Venison meat pate with alcohol, baked	paté de venado con alcohol al horno
+bls:W397300	Goose liver pate with pork, baked	paté de hígado de ganso con cerdo al horno
+bls:W398000	Veal pate with pork	paté de ternera con cerdo
+bls:W399100	Pate made from cured rolled pork loin	paté de lomo de cerdo curado
+bls:W399300	Ham bologna sausage meat terrine with alcohol, baked	terrina de jamón con alcohol al horno
+bls:W399400	French pork terrine baked	terrina de cerdo francesa al horno
+bls:W410400	Pork bacon (ham) raw cured, smoked	panceta de jamón curada ahumada
+bls:W410432	Pork bacon (ham) raw cured, smoked, boiled	panceta de jamón curada ahumada cocida
+bls:W410462	Pork bacon (ham) raw cured, smoked, fried without fat (oven)	panceta de jamón curada ahumada al horno
+bls:W410472	Pork bacon (ham) raw cured, smoked, grilled	panceta de jamón curada ahumada a la parrilla
+bls:W410482	Pork bacon (ham) raw cured, smoked, fried without fat (pan)	panceta de jamón curada ahumada a la plancha
+bls:W411000	Pork bacon (loin) raw cured, smoked	tocino de lomo curado ahumado
+bls:W411300	Pork streaky bacon, raw cured, smoked	panceta curada ahumada
+bls:W411332	Pork streaky bacon, raw cured, smoked, boiled	panceta curada ahumada cocida
+bls:W412000	Pork bacon (loin) raw	tocino de lomo crudo
+bls:W415000	Pork breakfast bacon, raw cured, smoked	beicon de desayuno curado ahumado
+bls:W415032	Pork breakfast bacon, raw cured, smoked, boiled	beicon de desayuno curado ahumado cocido
+bls:W415062	Pork breakfast bacon, raw cured, smoked, fried without fat (oven)	beicon de desayuno curado ahumado al horno
+bls:W415072	Pork breakfast bacon, raw cured, smoked, grilled	beicon de desayuno curado ahumado a la parrilla
+bls:W415082	Pork breakfast bacon, raw cured, smoked, fried without fat (pan)	beicon de desayuno curado ahumado a la plancha
+bls:W423000	Pork ham, cooked cured, smoked	jamón cocido ahumado
+bls:W424000	Pork ham, cooked cured	jamón cocido
+bls:W424032	Pork ham, cooked cured, boiled	jamón cocido hervido
+bls:W424082	Pork ham, cooked cured, fried without fat (pan)	jamón cocido a la plancha
+bls:W440000	Pork ham, cooked cured, canned	jamón cocido en conserva
+bls:W441000	Parma ham	jamón de Parma
+bls:W441032	Parma ham boiled	jamón de Parma cocido
+bls:W441082	Parma ham fried without fat (pan)	jamón de Parma a la plancha
+bls:W442000	Black Forest ham, raw cured, smoked	jamón de la Selva Negra
+bls:W443000	Pork loin lean rolled, raw cured, smoked	lomo de cerdo curado ahumado (lachsschinken)
+bls:W510000	Pork loin chop, raw cured, smoked	chuleta de cerdo curada ahumada (kasseler)
+bls:W510062	Pork loin chop, raw cured, smoked, fried without fat (oven)	chuleta de cerdo curada ahumada al horno
+bls:W510082	Pork loin chop, raw cured, smoked, fried without fat (pan)	chuleta de cerdo curada ahumada a la plancha
+bls:W511000	Pork neck, cooked cured, smoked	cuello de cerdo curado cocido ahumado
+bls:W512000	Pork loin spare ribs, cooked cured, smoked	costillas de cerdo curadas cocidas ahumadas
+bls:W514032	Pork loin chop raw cured, smoked, boiled	chuleta de cerdo curada ahumada cocida
+bls:W515072	Pork loin chop raw cured, smoked, grilled	chuleta de cerdo curada ahumada a la parrilla
+bls:W520000	Corned beef	corned beef
+bls:W520032	Corned beef boiled	corned beef cocido
+bls:W530042	Pork loin chop raw cured, smoked, braised without fat	chuleta de cerdo curada ahumada estofada
+bls:W530052	Pork loin chop raw cured, smoked, stewed	chuleta de cerdo curada ahumada rehogada
+bls:W531000	Pork loin chop raw cured, smoked, breaded	chuleta de cerdo curada ahumada empanada
+bls:W531082	Pork loin chop raw cured, smoked, breaded fried without fat (pan)	chuleta de cerdo curada ahumada empanada a la plancha
+bls:W540000	Beef meat (topside/top round) raw cured, smoked	vacuno curado ahumado (tapa)
+bls:W561000	Turkey breast cold cuts, cooked cured, smoked	pechuga de pavo curada cocida ahumada
+bls:W610000	Pork spare ribs, cooked cured	costillas de cerdo curadas cocidas
 bls:W620000	Pork foreshank (hock) "Eisbein" cooked cured, boiled	codillo de cerdo curado cocido
+bls:W641100	Beef meat (breast) cured, smoked	pecho de vacuno curado ahumado
+bls:W811000	Pork belly filled, fried (in oven)	panza de cerdo rellena al horno
+bls:W812000	Pork neck filled, fried (in oven)	cuello de cerdo relleno al horno
+bls:W841000	Veal meat galantine baked	galantina de ternera
+bls:W844200	Goose galantine with veal and pork, baked	galantina de ganso con ternera y cerdo
+bls:W845000	Game galantine baked	galantina de caza
+bls:W850100	Ham pie	pastel de jamón
+bls:W850200	Ham and cheese aspic	jamón con queso en gelatina
+bls:W850300	Ham roll in aspic	rollitos de jamón en gelatina
+bls:W850400	Burgundy ham in aspic	jamón de Borgoña en gelatina
+bls:W850500	Jellied sausage	salchicha en gelatina
+bls:W851000	Jellied pork	cerdo en gelatina
+bls:W854000	Jellied pork chop	chuleta en gelatina
+bls:W855000	Pork belly in aspic	panza de cerdo en gelatina
+bls:W858000	Jellied pork tongue	lengua de cerdo en gelatina
+bls:W862000	Veal brisket in aspic	pecho de ternera en gelatina
+bls:W863000	Veal tongue white-wine aspic	lengua de ternera en gelatina de vino blanco
+bls:W864000	Beef brisket white-wine aspic	pecho de vacuno en gelatina de vino blanco
+bls:W865000	Jellied meatloaf	pastel de carne en gelatina
+bls:W866000	Oxtail in jelly	rabo de toro en gelatina
+bls:W870200	Mortadella/Ham bologna finely minced, canned	mortadela de corte fino en conserva
+bls:W870400	Lyon sausage canned	salchicha lyoner en conserva
+bls:W870500	Veal bologna with pork, canned	mortadela de ternera con cerdo en conserva
+bls:W870600	Bologna canned	mortadela en conserva
+bls:W871700	Bierwurst canned	bierwurst en conserva
+bls:W871800	Krakow cooked sausage canned	salchicha de Cracovia cocida en conserva
+bls:W872100	Krakow ham bologna canned	salchicha de jamón de Cracovia en conserva
+bls:W872500	Jagdwurst sausage/ham bologna coarsely minced, canned	jagdwurst de picado grueso en conserva
+bls:W872800	Luncheon meat canned	fiambre en conserva
+bls:W873100	Beer ham canned	bierschinken en conserva
+bls:W873500	Light pork tongue sausage canned	salchicha de lengua clara en conserva
+bls:W873600	Heart sausage canned	salchicha de corazón en conserva
+bls:W874100	Frankfurt small sausage canned	salchichas de Frankfurt en conserva
+bls:W874200	Cocktail sausage small canned	salchichas cóctel en conserva
+bls:W874300	Vienna sausage canned	salchichas de Viena en conserva
+bls:W874600	Debreziner sausage canned	salchichas debrecener en conserva
+bls:W875100	Frankfurt beef sausage/red sausage, canned	salchicha de vacuno de Frankfurt en conserva
+bls:W880100	Liver sausage high quality, canned	salchicha de hígado extra en conserva
+bls:W880200	Veal liver sausage canned	salchicha de hígado de ternera en conserva
+bls:W880300	Truffle liver sausage canned	salchicha de hígado trufada en conserva
+bls:W880400	Homemade liver sausage canned	salchicha de hígado casera en conserva
 bls:W881300	Homemade blood sausage canned	morcilla casera en lata
+bls:W881400	Sausage with diced tongue canned	salchicha de lengua en dados en conserva
+bls:W881500	Thuringian blood sausage canned	morcilla de Turingia en conserva
+bls:W882100	Homemade jellied brawn canned	queso de cerdo casero en conserva
+bls:W882200	Jellied veal canned	ternera en gelatina en conserva
 bls:W882300	Saxon brawn canned	queso de cerdo sajón en lata
+bls:W980100	Bologna in puff pastry baked	mortadela en hojaldre
+bls:W981100	Sausage pie with shortcrust pastry, with alcohol, baked	pastel de salchicha en masa quebrada con alcohol
+bls:W981200	Ham pie with shortcrust pastry, baked	pastel de jamón en masa quebrada
+bls:W981300	Fleischkaese sausage in pastry crust, deep-fried	fleischkäse en rebozado de cerveza frito
+bls:W981500	Pork loin pate with shortcrust pastry, with alcohol, baked	paté de lomo de cerdo en masa quebrada con alcohol
+bls:W981600	Button mushroom pate with shortcrust pastry, baked	paté de champiñones en masa quebrada
+bls:W981700	Hazelnut pate with shortcrust pastry, baked	paté de avellanas en masa quebrada
+bls:W982100	Beer ham pate with shortcrust pastry, baked	paté de bierschinken en masa quebrada
+bls:W982200	Gourmet pate with shortcrust pastry, baked	paté delicatessen en masa quebrada
 bls:W982300	Pate made from Jagdwurst sausage, with shortcrust pastry, baked	pastel de paté de jagdwurst
+bls:W982600	Truffled tongue pate with button mushrooms and shortcrust pastry, baked	paté de lengua trufado con champiñones en masa quebrada
+bls:W982700	Pate in bread dough baked	paté en masa de pan
+bls:W982900	Parisian pate with shortcrust pastry, baked	paté parisino en masa quebrada
+bls:W984100	Veal pate with pork and shortcrust pastry, baked	paté de ternera con cerdo en masa quebrada
+bls:W985000	Bologna salad with salad mayonnaise and gherkin	ensalada de fiambre con mayonesa y pepinillo
+bls:X013040	Pumpernickel with shrimp cream spread	pumpernickel con crema de gambas
+bls:X023310	Baguette roll with egg and remoulade sauce	bocadillo de baguette con huevo y salsa remoulade
+bls:X041910	Roll and fleischkaese sausage	bocadillo con fleischkäse
+bls:X060030	Baguette roll with salami, tomatoes and salad cream	bocadillo de baguette con salami, tomate y crema de ensalada
+bls:X060060	Baguette roll with boiled ham, cheese, tomatoes and remoulade sauce	bocadillo de baguette con jamón cocido, queso, tomate y salsa remoulade
+bls:X060130	Baguette roll with Parma ham, parmesan cheese, rucola and salad cream	bocadillo de baguette con jamón de Parma, parmesano, rúcula y crema de ensalada
+bls:X060160	Baguette roll with tomato-mozzarella	bocadillo de baguette con tomate y mozzarella
+bls:X061310	Pretzel roll with butter	bocadillo de colada con mantequilla
+bls:X061410	Pretzel with butter	pretzel de colada con mantequilla
+bls:X061610	Baguette gratinated with boiled ham, cream cheese, tomatoes and button mushrooms	baguette gratinada con jamón cocido, queso crema, tomate y champiñones
+bls:X070060	Club sandwich with mozzarella, tomatoes and boiled ham	club sándwich con mozzarella, tomate y jamón cocido
+bls:X070160	Club sandwich with chicken breast fillet, tomatoes, bacon and mayonnaise	club sándwich con filete de pollo, tomate, beicon y mayonesa
+bls:X070260	Club sandwich with tuna, cucumber, Emmental cheese and mayonnaise	club sándwich con atún, pepino, queso emmental y mayonesa
+bls:X070360	Sandwich with shrimp cocktail	sándwich con cóctel de gambas
+bls:X070460	Sandwich with poultry salad (chicken)	sándwich con ensalada de pollo
+bls:X081143	Toast squares with creamed ham, baked	tostadas con crema de jamón al horno
+bls:X081243	Toast with asparagus, ham and cheese, baked	tostada con espárragos, jamón y queso al horno
+bls:X081462	Toast with boiled ham, cheese and tomatoes, baked	tostada con jamón cocido, queso y tomate al horno
+bls:X081743	Toast Hawaii (pineapple, boiled ham, cheese) baked	tostada hawaiana con piña, jamón cocido y queso
+bls:X081943	Cheese toast baked "Welsh rarebit"	welsh rarebit (tostada de queso)
+bls:X092040	Oat flakes sweetened, with milk 3.5 % fat and mixed fruit	copos de avena azucarados con leche 3,5 % y mezcla de frutas
+bls:X092050	Oat flakes unsweetened, with milk 3.5 % fat and mixed fruit	copos de avena sin azúcar con leche 3,5 % y mezcla de frutas
+bls:X092060	Muesli Bircher-Benner style, sweetened, with apples, raisins, cream and nuts	muesli estilo Bircher-Benner azucarado con manzanas, pasas, nata y nueces
+bls:X092410	Muesli unsweetened, with milk 3.5 % fat and mixed fruit	muesli sin azúcar con leche 3,5 % y mezcla de frutas
+bls:X092510	Muesli unsweetened, with yogurt 3.5 % fat and mixed fruit	muesli sin azúcar con yogur y mezcla de frutas
+bls:X095540	Fresh-grain porridge sweetened, with yogurt 3.5 % fat and mixed fruit	gachas de grano fresco azucaradas con yogur y mezcla de frutas
+bls:X0A1000	Cornflakes with milk 1.5 % fat, honey sweetened	cornflakes con leche 1,5 % y miel
+bls:X0A1010	Cornflakes with milk 3.5 % fat, honey sweetened	cornflakes con leche 3,5 % y miel
+bls:X0A1020	Cornflakes with soya drink, maple syrup sweetened	cornflakes con bebida de soja y sirope de arce
+bls:X0A2000	Fresh-grain porridge unsweetened, with mixed fruit	gachas de grano fresco sin azúcar con mezcla de frutas
+bls:X0A2010	Fresh-grain porridge unsweetened, with yogurt 3.5 % fat and mixed fruit	gachas de grano fresco sin azúcar con yogur y mezcla de frutas
+bls:X0A3000	Crunchy muesli (granola) sweetened, baked	muesli crujiente (granola) azucarado horneado
+bls:X0A3010	Crunchy muesli (granola) sweetened, with yogurt 3.5 % fat and mixed fruit	muesli crujiente (granola) azucarado con yogur y mezcla de frutas
+bls:X0A3020	Crunchy muesli (granola) sweetened, with milk 3.5 % fat and mixed fruit	muesli crujiente (granola) azucarado con leche 3,5 % y mezcla de frutas
 bls:X0A3030	Crunchy muesli (granola) sweetened, with soya drink and mixed fruit	granola con bebida de soja y frutas
+bls:X0A4000	Oat flakes sweetened, with yogurt 3.5 % fat and mixed fruit	copos de avena azucarados con yogur y mezcla de frutas
+bls:X0A4010	Oat flakes sweetened, with soya drink and mixed fruit	copos de avena azucarados con bebida de soja y mezcla de frutas
+bls:X0A4020	Oat flakes unsweetened, with yogurt 3.5 % fat and mixed fruit	copos de avena sin azúcar con yogur y mezcla de frutas
+bls:X0A4030	Oat flakes unsweetened, with soya drink and mixed fruit	copos de avena sin azúcar con bebida de soja y mezcla de frutas
+bls:X0A5000	Muesli Bircher-Benner style, unsweetened, with apples, raisins, cream and nuts	muesli estilo Bircher-Benner sin azúcar con manzanas, pasas, nata y nueces
+bls:X0A5010	Muesli sweetened, with yogurt 3.5 % fat and mixed fruit	muesli azucarado con yogur y mezcla de frutas
+bls:X0A5020	Muesli sweetened, with milk 3.5 % fat and mixed fruit	muesli azucarado con leche 3,5 % y mezcla de frutas
+bls:X0A5030	Muesli sweetened, with soya drink and mixed fruit	muesli azucarado con bebida de soja y mezcla de frutas
+bls:X0A5040	Muesli unsweetened, with soya drink and mixed fruit	muesli sin azúcar con bebida de soja y mezcla de frutas
+bls:X131460	Cauliflower salad (cooked) with vinegar marinade	ensalada de coliflor cocida con aliño de vinagre
+bls:X132460	Broccoli salad (cooked) with vinegar marinade	ensalada de brócoli cocido con aliño de vinagre
+bls:X141462	Artichoke salad (cooked) with lemon marinade	ensalada de alcachofas cocidas con aliño de limón
+bls:X143242	Fennel salad (cooked) with vinegar marinade	ensalada de hinojo cocido con aliño de vinagre
+bls:X145242	Asparagus salad (cooked) with vinegar marinade	ensalada de espárragos cocidos con aliño de vinagre
+bls:X147242	Leek salad (cooked) with vinegar marinade	ensalada de puerro cocido con aliño de vinagre
+bls:X147442	Leek salad (cooked) with bacon-vinegar marinade	ensalada de puerro cocido con aliño de beicon y vinagre
+bls:X151462	Aubergine salad (cooked) with lemon marinade	ensalada de berenjenas cocidas con aliño de limón
+bls:X162612	Carrot salad (cooked) with warm vinegar marinade	ensalada de zanahorias cocidas con aliño de vinagre tibio
+bls:X166260	Celeriac salad (cooked) with warm vinegar marinade	ensalada de apionabo cocido con aliño de vinagre tibio
+bls:X167512	Beetroot salad (cooked) with vinegar marinade	ensalada de remolacha cocida con aliño de vinagre
+bls:X171242	Green bean salad (cooked) with vinegar marinade	ensalada de judías verdes cocidas con aliño de vinagre
+bls:X171450	Green bean salad (cooked) with bacon-vinegar marinade	ensalada de judías verdes cocidas con aliño de beicon y vinagre
+bls:X171460	Green bean salad (cooked) with warm vinegar marinade	ensalada de judías verdes cocidas con aliño de vinagre tibio
+bls:X177063	Chickpea salad (cooked) with warm vinegar marinade	ensalada de garbanzos cocidos con aliño de vinagre tibio
+bls:X191202	Vegetable salad (cooked) with yogurt marinade	ensalada de verduras cocidas con aliño de yogur
+bls:X191302	Vegetable salad (cooked) with mayonnaise (with vinegar)	ensalada de verduras cocidas con mayonesa
+bls:X191402	Vegetable salad (cooked) with vinegar marinade	ensalada de verduras cocidas con aliño de vinagre
+bls:X1A1000	Cauliflower salad (cooked) with quark-mayonnaise	ensalada de coliflor cocida con mayonesa de quark
+bls:X1A1010	Broccoli salad (cooked) with yogurt marinade	ensalada de brócoli cocido con aliño de yogur
+bls:X1A1020	Mixed bean salad (cooked) with sheep's milk cheese and warm vinegar marinade	ensalada de alubias variadas cocidas con queso de oveja y aliño de vinagre tibio
+bls:X1A1030	Green bean salad (cooked) with porcini mushrooms, Parma ham and war vinegar marinade	ensalada de judías verdes cocidas con boletus, jamón de Parma y aliño de vinagre tibio
+bls:X1A1040	Green asparagus salad (cooked) with vinegar marinade	ensalada de espárragos verdes cocidos con aliño de vinagre
+bls:X1A1050	Beetroot salad (cooked) with lemon marinade	ensalada de remolacha cocida con aliño de limón
+bls:X1A1060	Celeriac salad (cooked) with apple, mayonnaise and cream	ensalada de apionabo cocido con manzana, mayonesa y nata
+bls:X1A1070	White cabbage salad (cooked) with raw apple-carrot-celeriac mix and vinegar marinade	ensalada de col blanca cocida con mezcla cruda de manzana, zanahoria y apio y aliño de vinagre
+bls:X1A1080	White cabbage salad (cooked) with vinegar marinade	ensalada de col blanca cocida con aliño de beicon y vinagre
+bls:X1A2000	Potato salad with gherkin and marinade (vegetable stock)	ensalada de patatas con pepinillo y aliño de caldo de verduras
+bls:X1A2010	Potato salad with marinade (vegetable stock)	ensalada de patatas con aliño de caldo de verduras
+bls:X1A2020	Potato salad with mayonnaise	ensalada de patatas con mayonesa
+bls:X1A2030	Potato salad with cucumber and marinade (vegetable stock)	ensalada de patatas con pepino y aliño de caldo de verduras
+bls:X1A2040	Potato salad with cucumber and mayonnaise, diluted with yogurt	ensalada de patatas con pepino y mayonesa aligerada con yogur
+bls:X1A2050	Potato salad with bacon and marinade (vegetable stock)	ensalada de patatas con beicon y aliño de caldo de verduras
+bls:X1A3000	Glass noodle salad with turkey breast, vegetables and vinegar marinade	ensalada de fideos de cristal con pechuga de pavo, verduras y aliño de vinagre
+bls:X1A3010	Salad of egg pasta Danish style, with mayonnaise, diluted with yogurt	ensalada de pasta de huevo estilo danés con mayonesa aligerada con yogur
+bls:X1A3020	Salad of egg pasta, savoury, with mayonnaise, diluted with yogurt	ensalada de pasta de huevo sabrosa con mayonesa aligerada con yogur
+bls:X1A3030	Rice salad with chicken, egg and mayonnaise	ensalada de arroz con pollo, huevo y mayonesa
+bls:X1A3040	Curried rice salad with vegetables, fruits and lemon marinade	ensalada de arroz al curry con verduras, frutas y aliño de limón
+bls:X1A3050	Rice salad with vegetables, boiled ham and vinegar marinade	ensalada de arroz con verduras, jamón cocido y aliño de vinagre
+bls:X1A4000	Poultry salad (chicken) with vinegar marinade	ensalada de pollo con aliño de vinagre
+bls:X1A4010	Poultry salad (chicken) with mayonnaise, diluted with cream	ensalada de pollo con mayonesa aligerada con nata
+bls:X1A5000	Egg salad with tomatoes and vinegar marinade	ensalada de huevo con tomate y aliño de vinagre
+bls:X1A6000	Layered salad with vegetables, fruits, cheese, eggs, boiled ham and mayonnaise (with lemon juice)	ensalada en capas con verduras, frutas, queso, huevos, jamón cocido y mayonesa con limón
+bls:X1A6010	Cheese salad with vinegar marinade	ensalada de queso con aliño de vinagre
+bls:X1A7000	Sausage-cheese salad with vinegar marinade	ensalada de salchicha y queso con aliño de vinagre
+bls:X1A7010	Sausage salad Bavarian style with warm vinegar marinade	ensalada de salchicha a la bávara con aliño de vinagre tibio
+bls:X1A7020	Sausage salad with gherkin and vinegar marinade	ensalada de salchicha con pepinillo y aliño de vinagre
+bls:X1A7030	Sausage salad Swiss Style	ensalada de salchicha a la suiza
+bls:X1A7040	Meat salad (beef) with vinegar marinade	ensalada de carne de vacuno con aliño de vinagre
+bls:X1A7050	Meat salad (beef) with mayonnaise, diluted with sour cream	ensalada de carne de vacuno con mayonesa aligerada con crema agria
+bls:X1A7060	Meat salad (pork) with mayonnaise	ensalada de carne de cerdo con mayonesa
+bls:X1A8000	Fish-mayonnaise with cod	mayonesa de pescado con bacalao
+bls:X1A8010	Fish salad with cod and vinegar marinade	ensalada de pescado con bacalao y aliño de vinagre
+bls:X1A8020	Herring salad with apple and vinegar marinade	ensalada de arenque con manzana y aliño de vinagre
+bls:X1A8030	Herring salad with apple, gherkin and mayonnaise, diluted with sour/whipping cream	ensalada de arenque con manzana, pepinillo y mayonesa aligerada con nata
+bls:X1A8040	Herring salad with beetroot, apple, gherkin and mayonnaise, diluted with sour cream	ensalada de arenque con remolacha, manzana, pepinillo y mayonesa aligerada con crema agria
+bls:X1A8050	Matjes herring salad with beetrot, apple, potatoes and mayonnaise	ensalada de arenque matjes con remolacha, manzana, patatas y mayonesa
+bls:X1A8060	Tuna salad with mayonnaise, diluted with yogurt	ensalada de atún con mayonesa aligerada con yogur
+bls:X1A9000	Shrimp cocktail with mayonnaise, diluted with cream	cóctel de gambas con mayonesa aligerada con nata
+bls:X1A9010	Lobster salad with mayonnaise, diluted with cream	ensalada de bogavante con mayonesa aligerada con nata
+bls:X1A9020	Shellfish cocktail with vinegar marinade	cóctel de marisco con aliño de vinagre
+bls:X1A9030	Cuttlefish salad with vinegar marinade	ensalada de sepia con aliño de vinagre
+bls:X200350	Tomato-cucumber salad with yogurt marinade	ensalada de tomate y pepino con aliño de yogur
+bls:X200650	Sauerkraut salad (raw) with sour cream dressing	ensalada de chucrut con aliño de crema agria
+bls:X200840	Summer salad with carrots, kohlrabi, cucumber and yogurt marinade	ensalada de verano con zanahorias, colirábano, pepino y aliño de yogur
+bls:X201160	Mixed salad without salad marinade	ensalada mixta sin aliño
+bls:X201200	Mixed salad with cream dressing	ensalada mixta con aliño de nata
+bls:X201400	Mixed salad with vinegar marinade	ensalada mixta con aliño de vinagre
+bls:X201600	Mixed salad with yogurt marinade	ensalada mixta con aliño de yogur
+bls:X201740	Cucumber salad with sour cream dressing	ensalada de pepino con aliño de crema agria
+bls:X201840	Cucumber salad with vinegar marinade	ensalada de pepino con aliño de vinagre
+bls:X203140	Waldorf salad with mayonnaise (with lemon juice)	ensalada Waldorf con mayonesa con limón
+bls:X203460	Greek farmers salad	ensalada griega de pueblo
+bls:X203560	Salad Budapest	ensalada Budapest
+bls:X203850	Greek salad	ensalada griega
+bls:X204340	Apple-celeriac salad with lemon marinade	ensalada de manzana y apionabo con aliño de limón
+bls:X205440	Tomato-sweet pepper salad with vinegar marinade	ensalada de tomate y pimiento con aliño de vinagre
+bls:X205650	Cucumber-tomato salad with sour cream dressing	ensalada de pepino y tomate con aliño de crema agria
+bls:X206750	Beetroot salad (raw) with celeriac, apple and yogurt marinade	ensalada de remolacha cruda con apionabo, manzana y aliño de yogur
+bls:X208240	Tomato-tuna salad with vinegar marinade	ensalada de tomate y atún con aliño de vinagre
+bls:X208312	Tomato-mozzarella (Caprese)	tomate con mozzarella (caprese)
+bls:X211040	Chicory salad with lemon marinade	ensalada de achicoria con aliño de limón
+bls:X211540	Chicory salad with sour cream dressing	ensalada de achicoria con aliño de crema agria
 bls:X212240	Endive salad with vinegar marinade	ensalada de escarola con vinagreta
+bls:X212540	Endive salad with sour cream dressing	ensalada de escarola con aliño de crema agria
+bls:X213510	Iceberg lettuce with vinegar marinade	lechuga iceberg con aliño de vinagre
+bls:X214110	Endive-tomato salad with vinegar marinade	ensalada de escarola y tomate con aliño de vinagre
+bls:X214240	Lamb's lettuce with vinegar marinade	canónigos con aliño de vinagre
+bls:X214460	Lamb's lettuce with lemon marinade	canónigos con aliño de limón
+bls:X215240	Lettuce with vinegar marinade	lechuga con aliño de vinagre
+bls:X215540	Lettuce with sour cream dressing	lechuga con aliño de crema agria
+bls:X215910	Lettuce with lemon marinade	lechuga con aliño de limón
+bls:X216210	Lettuce with small red radishes and vinegar marinade	lechuga con rábanitos y aliño de vinagre
+bls:X216460	Radiccio salad with vinegar marinade	ensalada de radicchio con aliño de vinagre
+bls:X216510	Salad of small red radishes with vinegar marinade	ensalada de rábanitos con aliño de vinagre
+bls:X230443	Sauerkraut salad (raw) with apple and fried bacon	ensalada de chucrut con manzana y beicon frito
+bls:X230512	Sauerkraut salad (raw) with apple, sweet pepper, fried bacon and vinegar marinade	ensalada de chucrut con manzana, pimiento, beicon frito y aliño de vinagre
+bls:X230610	Lollo Rosso salad with vinegar marinade	ensalada lollo rosso con aliño de vinagre
+bls:X231540	Cauliflower salad (raw) with sour cream dressing	ensalada de coliflor cruda con aliño de crema agria
+bls:X235540	Kohlrabi salad (raw) with sour cream dressing	ensalada de colirábano crudo con aliño de crema agria
+bls:X237460	Red cabbage salad (raw) with warm vinegar marinade	ensalada de col lombarda cruda con aliño de vinagre tibio
+bls:X238060	White cabbage salad (raw) with bacon-vinegar marinade	ensalada de col blanca cruda con aliño de beicon y vinagre
+bls:X238310	White cabbage salad (raw) with vinegar marinade	ensalada de col blanca cruda con aliño de vinagre
+bls:X243450	Fennel salad (raw) with lemon marinade	ensalada de hinojo crudo con aliño de limón
+bls:X252640	Cucumber salad with yogurt marinade	ensalada de pepino con aliño de yogur
+bls:X252810	Sweet pepper-cucumber-tomato salad with vinegar marinade	ensalada de pimiento, pepino y tomate con aliño de vinagre
+bls:X252910	Cucumber-radish salad with sour cream dressing	ensalada de pepino y rábanos con aliño de crema agria
+bls:X254510	Sweet pepper salad with vinegar marinade	ensalada de pimiento con aliño de vinagre
+bls:X255010	Tomato salad with vinegar marinade	ensalada de tomate con aliño de vinagre
+bls:X262540	Carrot salad (raw) with sour cream dressing	ensalada de zanahoria cruda con aliño de crema agria
+bls:X262612	Carrot salad (raw) with vinegar marinade	ensalada de zanahoria cruda con aliño de vinagre
+bls:X262712	Carrot salad (raw) with lemon marinade	ensalada de zanahoria cruda con aliño de limón
+bls:X268550	Radish salad with cream dressing	ensalada de rábano con aliño de nata
+bls:X268610	Radish salad with sour cream dressing	ensalada de rábano con aliño de crema agria
+bls:X270112	Fruit salad unsweetened	macedonia sin azúcar
+bls:X270440	Fruit salad with chicory and sour cream dressing	macedonia con achicoria y aliño de crema agria
+bls:X270810	Fruit salad sweetened	macedonia azucarada
+bls:X295460	Nicoise salad with tuna and anchovies	ensalada nicoise con atún y anchoas
+bls:X2A1000	Chinese white cabbage with vinegar marinade	ensalada de col china con aliño de vinagre
+bls:X2A1010	Chinese white cabbage with yogurt marinade	ensalada de col china con aliño de yogur
+bls:X2A1020	Chinese white cabbage with mandarins and cream dressing	ensalada de col china con mandarinas y aliño de nata
+bls:X2A1030	Coleslaw with sour cream dressing	coleslaw con aliño de crema agria
+bls:X2A1040	Fennel salad (raw) with yogurt marinade	ensalada de hinojo crudo con aliño de yogur
+bls:X2A1050	Carrot salad (raw) with yogurt marinade	ensalada de zanahoria cruda con aliño de yogur
+bls:X2A1060	Kohlrabi-carrot salad (raw) with lemon marinade	ensalada de colirábano y zanahoria cruda con aliño de limón
+bls:X2A1070	Kohlrabi salad (raw) with apple, hazelnut and yogurt marinade	ensalada de colirábano crudo con manzana, avellana y aliño de yogur
+bls:X2A1080	Leek salad (raw) with sour cream dressing	ensalada de puerro crudo con aliño de crema agria
 bls:X2A1090	Radish salad with vinegar marinade	ensalada de rábano en vinagreta
+bls:X2A1100	Beetroot-carrot salad (raw) with vinegar marinade	ensalada de remolacha y zanahoria cruda con aliño de vinagre
+bls:X2A1110	Beetroot salad (raw) with yogurt marinade	ensalada de remolacha cruda con aliño de yogur
+bls:X2A1120	Beetroot salad (raw) with vinegar marinade	ensalada de remolacha cruda con aliño de vinagre
+bls:X2A1130	Red cabbage salad (raw) with vinegar marinade	ensalada de col lombarda cruda con aliño de vinagre
+bls:X2A1140	Sauerkraut salad (raw) with apple, sweet pepper, fried bacon and sour cream dressing	ensalada de chucrut con manzana, pimiento, beicon y aliño de crema agria
+bls:X2A1150	Celeriac salad (raw) with sour cream dressing	ensalada de apionabo crudo con aliño de crema agria
+bls:X2A1160	Tomato-sweet pepper salad with lemon marinade	ensalada de tomate y pimiento con aliño de limón
+bls:X2A1170	Tomato salad with lemon marinade	ensalada de tomate con aliño de limón
+bls:X2A2000	Iceberg lettuce with lemon marinade	lechuga iceberg con aliño de limón
+bls:X2A2010	Lamb's lettuce with button mushrooms and vinegar marinade	canónigos con champiñones y aliño de vinagre
+bls:X2A2020	Lamb's lettuce with yogurt marinade	canónigos con aliño de yogur
+bls:X2A2030	Mixed salad with sour cream dressing	ensalada mixta con aliño de crema agria
+bls:X2A2040	Mixed salad with lemon marinade	ensalada mixta con aliño de limón
+bls:X2A2050	Cucumber-lettuce-salad with yogurt marinade	ensalada de pepino y lechuga con aliño de yogur
+bls:X2A2060	Lettuce with tomato, cucumber and yogurt marinade	lechuga con tomate, pepino y aliño de yogur
+bls:X2A3000	Fruit mix (apple, banana, mandarin) unsweetened	mezcla de frutas (manzana, plátano, mandarina) sin azúcar
+bls:X2A3010	Fruit salad exotic, sweetened	macedonia exótica azucarada
 bls:X322053	Mushroom sauce from Bechamel sauce	salsa de champiñones con bechamel
 bls:X326353	Sweet pepper sauce from Bechamel sauce	salsa bechamel con pimiento
 bls:X336363	Sweet pepper sauce from brown basic sauce	salsa de pimiento dulce
