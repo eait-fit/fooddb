@@ -48,7 +48,7 @@ curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/review" # values a failed 
 API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`. The commands that
 [docs/usage.md](docs/usage.md) shows with `fooddb` run in a checkout as `./dev cli …`.
 
-Python 3.13 or newer, through `uv`. `uv run pytest` alone runs the unit tests and skips the
+Python 3.14 or newer, through `uv`. `uv run pytest` alone runs the unit tests and skips the
 database suite. `./dev test` runs both.
 
 ## Writing the change

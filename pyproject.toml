@@ -3,7 +3,7 @@ name = "fooddb"
 version = "0.1.0"
 description = "Global food nutrition database served as REST, MCP and CLI"
 license = "AGPL-3.0-only"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.20.0",
     "fastapi>=0.142.2",
