@@ -248,3 +248,79 @@ Following the batch-2 section (PR #127): same mixed-dish qualifiers. New here:
 - Brands and their product names stay Latin: `Whopper`, `Big Mac`, `McDouble`,
   `Quarter Pounder`, `Nutella`, `Spam`, `Pocky`, cereal/nutrition-bar brands
   (`Nature Valley`, `Quaker`, `Clif`, `PowerBar`, …) — `McDonald's` spelled out.
+
+## FNDDS qualifiers (batch 2c)
+
+Snacks, breakfast starches, pasta/rice dishes, Mexican plate matrix, fruit.
+
+- crackers → `крекеры` / `galletas saladas` (`galletas` where the corpus already
+  uses it); saltine → `солёные крекеры` / `galletas saladas` (`galletas de soda`
+  when it must split from a sibling); woven wheat → `плетёные` / `trenzadas`;
+  water cracker → `пресные` / `de agua`; oyster cracker → `сухие крекеры к супу`
+  / `galletas pequeñas para sopa`; sandwich crackers → `крекеры-сэндвичи` /
+  `galletas sándwich`.
+- popcorn: `air-popped` → `воздушный` / `al aire`; `popped in oil` →
+  `жареный в масле` / `hechas en aceite`; `movie theater` → `кинотеатральный` /
+  `de cine`; `microwave` → `для микроволновки` / `para microondas`;
+  `ready-to-eat` (bagged) → `готовый` / `envasadas`; `kettle` → `сладкий` /
+  `dulces`; `light` → `лёгкий` / `ligeras`.
+- pretzels: hard → `крендельки` / `pretzels`; soft → `крендели мягкие` /
+  `pretzels blandos`; `from frozen` → `из заморозки` / `de congelado`;
+  soft ready-to-eat → `готовые` / `recién hechos`.
+- FNDDS cereal codes: `O's` → `колечки овсяные` / `aros de avena`; `K's` →
+  `рисово-пшеничные хлопья` / `hojuelas de arroz y trigo`; corn squares →
+  `кукурузные подушечки` / `cuadritos de maíz`; corn puffs → `кукурузные шарики`
+  / `puffs de maíz`; rice crispy → `воздушный рис` / `arroz inflado`;
+  shredded wheat → `подушечки из цельной пшеницы` / `almohadillas de trigo`;
+  cinnamon toast → `хлопья корица-тост` / `cereales de canela`.
+- hot cereal: grits → `кукурузная каша` / `gachas de maíz`; cornmeal mush →
+  `мамалыга` / `polenta`; cream of wheat → `манная каша` / `gachas de sémola`;
+  oatmeal → `овсянка` / `gachas de avena`; `non-dairy milk` →
+  `растительное молоко` / `bebida vegetal`; `instant` → `быстрого приготовления`
+  / `instantáneas`.
+- pancakes → `оладьи` / `tortitas`; waffle → `вафли` / `gofres`; french toast →
+  `французские тосты` / `torrijas` (sticks → `палочки` / `bastones`); crepe →
+  `блины` / `crepes`.
+- provenance/state suffixes: `restaurant` → `из ресторана` / `de restaurante`;
+  `fast food / restaurant` → `(фастфуд)` / `de fast food`; `school` →
+  `из школьной столовой` / `de comedor escolar`; `home recipe`/`from fresh` →
+  `домашняя` / `casera`; `ready-to-heat` → `готовая к разогреву`, `полуфабрикат`
+  where shorter / `lista para calentar`, `precocinado`; `diet frozen meal` →
+  `диетическое замороженное блюдо` / `comida dietética congelada`;
+  `packaged/dry mix` → `из готовой/сухой смеси` / `de preparado`.
+- pizza crust: thin/medium/thick → `на тонком/среднем/толстом тесте` /
+  `de masa fina/media/gruesa`; stuffed crust → `с сырным бортиком` /
+  `con borde relleno`; whole wheat → `цельнозерновой` / `integral`;
+  `from frozen` → `замороженная` / `congelada`.
+- Mexican plate matrix: `с`/`con` per component (`тако кукурузный с говядиной` /
+  `taco de maíz de vacuno`); burrito bowl → `боул буррито` / `bol de burrito`;
+  taco salad → `салат тако` / `ensalada taco`; Puerto Rican dishes keep their
+  words (`sorullitos`, `bacalaítos`, `asopao`, `hayacas`) with
+  `по-пуэрторикански` / `puertorriqueño` where the source only says the style.
+- pasta dishes: sauce → `в томатном/сливочном соусе` / `con salsa de
+  tomate/nata`; stuffed shells → `фаршированные ракушки` / `conchas rellenas`;
+  egg roll → `эг-ролл` / `rollito de primavera` (fresh rice-paper roll →
+  `спринг-ролл свежий` / `rollito de primavera fresco`); turnover/hot pocket →
+  `слоёный пирожок` / `empanadilla` (empanada stays `empanada`).
+- fruit: applesauce → `яблочное пюре` / `compota de manzana`; fruit salad →
+  `фруктовый салат` / `macedonia`; fruit cocktail → `фруктовый коктейль` /
+  `macedonia en conserva`; baby food → `детское пюре` / `potito` (`Stage N` →
+  `ступень N` / `etapa N`); baby juice → `детский сок` / `zumo infantil`;
+  dried currants → `коринка` / `pasas de Corinto`; dried apricots →
+  `курага` / `orejones`; ice pop → `фруктовый лёд` / `polo`; sushi roll →
+  `ролл` / `maki`; nigiri-style `topped with` → `суши с` / `nigiri de`.
+- potato: hash brown → `хэшбраун` / `tortitas de patata fritas`; tater tots →
+  `картофельные тоты` / `croquetas de patata`; potato skins →
+  `картофельные лодочки` / `barcas de patata`; scalloped → `картофельный гратен`
+  / `patatas gratinadas`; home fries → `картофель по-домашнему` /
+  `patatas fritas en dados`; es splits `patatas fritas` (fries) from
+  `patatas fritas de bolsa` (chips); `peel eaten/not eaten` →
+  `с кожурой` / `без кожуры` → `con piel` / `sin piel`.
+- NFS/plain twin rows: when `NFS` and `plain` collapse to one name, plain takes
+  `классические` / `clásicas` (`попкорн для микроволновки` vs `... классический`);
+  a fully generic NFS may take a bare synonym (`фри`, `пюре картофельное`,
+  `puré de patatas`, `канталупа`/`cantalupo` when `дыня канталупа` collided).
+- Cross-batch collisions fixed by giving the record that OWNS the qualifier its
+  qualifier back (1b rule): `fdc:167549` oil-popped → `на масле` / `en aceite`,
+  `fdc:169035` restaurant → `из ресторана` / `de restaurante`, `fdc:170291`
+  fast food → `(фастфуд)` / `de fast food`.
