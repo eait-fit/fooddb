@@ -5824,8 +5824,206 @@ fdc:173108	Beef, New Zealand, imported, tenderloin, separable lean and fat, cook
 fdc:173109	Beef, New Zealand, imported, tenderloin, separable lean and fat, raw	vacuno neozelandés solomillo con grasa crudo
 fdc:173110	Beef, ground, 93% lean meat / 7% fat, raw	carne picada de vacuno 93% magro cruda
 fdc:173111	Beef, ground, 97% lean meat / 3% fat, raw	carne picada de vacuno 97% magro cruda
-fdc:173218	Beverages, SNAPPLE, tea, black and green, ready to drink, lemon, diet	Snapple té con limón dietético
+fdc:173112	Beef, ground, 97% lean meat / 3% fat, patty, cooked, broiled	hamburguesa de vacuno picado 97% magro a la parrilla
+fdc:173113	Beef, ground, 97% lean meat /3% fat, patty, cooked, pan-broiled	hamburguesa de vacuno picado 97% magro a la plancha
+fdc:173114	Beef, ground, 97% lean meat / 3% fat, loaf, cooked, baked	pastel de carne picada de vacuno 97% magro al horno
+fdc:173115	Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, braised	filete de contra de vacuno magro grasa 1/8" estofado (choice)
+fdc:173116	Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, raw	filete de lomo alto magro grasa 1/8" crudo (choice)
+fdc:173117	Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	filete de solomillo magro grasa 1/8" a la parrilla (choice)
+fdc:173118	Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	filete de lomo bajo magro grasa 1/8" a la parrilla (choice)
+fdc:173119	Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	filete de lomo alto magro grasa 1/8" a la parrilla (choice)
+fdc:173120	Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, select, raw	asado de redondo de vacuno magro grasa 1/8" crudo (select)
+fdc:173121	Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, select, raw	filete de tapa de vacuno magro grasa 1/8" crudo (select)
+fdc:173122	Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, select, raw	asado de contra de vacuno magro grasa 1/8" crudo (select)
+fdc:173123	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled	vacuno costillar parte fina magra grasa 1/8" a la parrilla
+fdc:173124	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, raw	asado tri-tip magro sin grasa visible crudo (select)
+fdc:173125	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, raw	asado de punta de tapa magro sin grasa visible crudo (todas)
+fdc:173126	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, raw	asado de punta de tapa magro sin grasa visible crudo (choice)
+fdc:173127	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, raw	asado de punta de tapa magro sin grasa visible crudo (select)
+fdc:173128	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, raw	pecho parte plana con grasa grasa 1/8" crudo (choice)
+fdc:173129	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, select, raw	pecho parte plana con grasa grasa 1/8" crudo (select)
+fdc:173130	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	pecho parte plana con grasa grasa 1/8" estofado (choice)
+fdc:173131	Snacks, popcorn, microwave, 94% fat free	palomitas para microondas casi sin grasa
+fdc:173132	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Double Chocolate Nut Bar	barrita Snickers Marathon doble chocolate con frutos secos
+fdc:173133	Snacks, M&M MARS, KUDOS Whole Grain Bars, peanut butter	barrita Kudos integral con crema de cacahuete
+fdc:173134	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Honey Nut Oat Bar	barrita Snickers Marathon miel-avellanas-avena
+fdc:173135	Snacks, M&M MARS, KUDOS Whole Grain Bar, M&M's milk chocolate	barrita Kudos integral con chocolate M&M's
+fdc:173136	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Energy Bar, all flavors	barrita energética Snickers Marathon
+fdc:173137	Formulated bar, POWER BAR, chocolate	barrita PowerBar de chocolate
+fdc:173138	Formulated bar, MARS SNACKFOOD US, COCOAVIA, Chocolate Blueberry Snack Bar	barrita Cocoavia chocolate-arándano
+fdc:173139	Formulated bar, SLIM-FAST OPTIMA meal bar, milk chocolate peanut	barrita Slim-Fast Optima chocolate con leche y cacahuete
+fdc:173140	Snacks, soy chips or crisps, salted	chips de soja saladas
+fdc:173141	Popcorn, microwave, regular (butter) flavor, made with palm oil	palomitas para microondas sabor mantequilla
+fdc:173142	Snacks, plantain chips, salted	chips de plátano macho saladas
+fdc:173143	Tortilla chips, yellow, plain, salted	tortilla chips amarillas saladas
+fdc:173144	Snacks, granola bar, KASHI GOLEAN, crunchy, mixed flavors	barrita de granola crujiente Kashi GoLean
+fdc:173145	Snacks, granola bar, chewy, reduced sugar, all flavors	barrita de granola masticable reducida en azúcar
+fdc:173146	Snacks, granola bites, mixed flavors	bocaditos de granola
+fdc:173147	Snacks, pita chips, salted	chips de pan de pita saladas
+fdc:173148	Snacks, granola bars, soft, almond, confectioners coating	barrita de granola blanda con almendra glaseada
+fdc:173149	Formulated bar, high fiber, chewy, oats and chocolate	barrita rica en fibra de avena y chocolate
+fdc:173150	Snacks, bagel chips, plain	chips de bagel
+fdc:173151	Snacks, NUTRI-GRAIN FRUIT AND NUT BAR	barrita Nutri-Grain de fruta y frutos secos
+fdc:173152	Snacks, yucca (cassava) chips, salted	chips de yuca saladas
+fdc:173153	Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, CHEWY TRAIL MIX	barrita de granola masticable Trail Mix Nature Valley
+fdc:173154	Snacks, granola bar, QUAKER, DIPPS, all flavors	barrita de granola Dipps Quaker
+fdc:173155	Snacks, brown rice chips	chips de arroz integral
+fdc:173156	Snack, Pretzel, hard chocolate coated	pretzel cubierto de chocolate
+fdc:173157	Snacks, peas, roasted, wasabi-flavored	guisantes tostados sabor wasabi
+fdc:173158	Formulated Bar, SOUTH BEACH protein bar	barrita proteica South Beach
+fdc:173159	Snack, BALANCE, original bar	barrita Balance
+fdc:173160	Snacks, shrimp cracker	galletitas de gamba
+fdc:173161	Rice crackers	galletitas de arroz
+fdc:173162	Beverages, MONSTER energy drink, low carb	bebida energética Monster baja en carbohidratos
+fdc:173163	Beverages, Whiskey sour mix, powder	mezcla para whisky sour en polvo
+fdc:173164	Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix	cóctel whisky sour
+fdc:173165	Beverages, THE COCA-COLA COMPANY, NOS energy drink, Original, grape, loaded cherry, charged citrus, fortified with vitamins B6 and B12	bebida energética NOS con vitaminas B6 y B12
+fdc:173166	Beverages, water, bottled, yumberry, pomegranate with anti-oxidants, zero calories	agua con bayas y granada sin calorías
+fdc:173167	Beverages, ABBOTT, EAS whey protein powder	proteína de suero EAS en polvo
+fdc:173168	Alcoholic beverage, creme de menthe, 72 proof	licor de menta
+fdc:173169	Beverages, NESTLE, Boost plus, nutritional drink, ready-to-drink	bebida nutritiva Boost Plus Nestlé lista para beber
+fdc:173170	Beverages, SLIMFAST, Meal replacement,  High Protein Shake, Ready-To-Drink, 3-2-1 plan	batido Slimfast proteico sustitutivo listo para beber
+fdc:173171	Beverages, UNILEVER, SLIMFAST, meal replacement, regular, ready-to-drink,  3-2-1 Plan	batido Slimfast sustitutivo listo para beber
+fdc:173172	Beverages, UNILEVER, SLIMFAST Shake Mix, powder, 3-2-1 Plan	mezcla Slimfast para batido en polvo
+fdc:173173	Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6	bebida Fuze naranja-mango con vitaminas
+fdc:173174	Beverages, UNILEVER, SLIMFAST Shake Mix, high protein, whey powder, 3-2-1 Plan,	mezcla Slimfast proteica en polvo
+fdc:173175	Beverages, Acai berry drink, fortified	bebida de açaí enriquecida
+fdc:173176	Alcoholic beverage, wine, dessert, sweet	vino dulce de postre
+fdc:173177	Beverages, Whey protein powder isolate	proteína de suero aislada en polvo
+fdc:173178	Beverages, Orange juice, light, No pulp	zumo de naranja ligero sin pulpa
+fdc:173179	Beverages, The COCA-COLA company, Hi-C Flashin' Fruit Punch	bebida de frutas Hi-C
+fdc:173180	Beverages, Protein powder whey based	proteína de suero en polvo
+fdc:173181	Beverages, Protein powder soy based	proteína de soja en polvo
+fdc:173182	Beverages, rich chocolate, powder	bebida de chocolate en polvo
+fdc:173183	Beverages, GEROLSTEINER BRUNNEN GmbH & Co. KG (Gerolsteiner), naturally sparkling, mineral bottled water	agua mineral con gas Gerolsteiner
+fdc:173184	Beverages, chocolate malt, powder, prepared with fat free milk	bebida de chocolate malteada con leche desnatada
+fdc:173185	Alcoholic beverage, wine, table, all	vino de mesa
+fdc:173186	Beverages, V8 SPLASH Smoothies, Peach Mango	zumo melocotón-mango V8 Splash
+fdc:173187	Beverages, chocolate almond milk, unsweetened, shelf-stable, fortified with vitamin D2 and E	bebida de almendra con chocolate sin azúcar con vitaminas D2 y E
+fdc:173188	Beverages, The COCA-COLA company, Glaceau Vitamin Water, Revive Fruit Punch, fortified	agua vitaminada de frutas Glacéau
+fdc:173189	Beverages, MINUTE MAID, Lemonada, Limeade	limonada de lima Minute Maid
+fdc:173190	Alcoholic beverage, wine, table, red	vino tinto de mesa
+fdc:173191	Alcoholic Beverage, wine, table, red, Barbera	vino tinto barbera
+fdc:173192	Alcoholic Beverage, wine, table, red, Zinfandel	vino tinto zinfandel
+fdc:173193	Alcoholic Beverage, wine, table, red, Petite Sirah	vino tinto petite sirah
+fdc:173194	Alcoholic Beverage, wine, table, red, Claret	vino tinto clarete
+fdc:173195	Alcoholic beverage, wine, table, white, Chenin Blanc	vino blanco chenin blanc
+fdc:173196	Alcoholic beverage, wine, table, white, Fume Blanc	vino blanco fumé blanc
+fdc:173197	Beverages, Mixed vegetable and fruit juice drink, with added nutrients	bebida de verduras y frutas enriquecida
+fdc:173198	Alcoholic beverage, wine, table, white, Muller Thurgau	vino blanco müller-thurgau
+fdc:173199	Carbonated beverage, cream soda	refresco cream soda
+fdc:173200	Alcoholic beverage, wine, table, white, Riesling	vino blanco riesling
+fdc:173201	Alcoholic beverage, wine, table, white, Sauvignon Blanc	vino blanco sauvignon blanc
+fdc:173202	Alcoholic beverage, wine, table, white, late harvest	vino blanco de vendimia tardía
+fdc:173203	Beverages, carbonated, grape soda	refresco de uva
+fdc:173204	Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine	refresco bajo en calorías sin cafeína
+fdc:173205	Beverages, carbonated, lemon-lime soda, no caffeine	refresco de limón-lima sin cafeína
+fdc:173206	Beverages, carbonated, SPRITE, lemon-lime, without caffeine	refresco Sprite sin cafeína
+fdc:173207	Beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine	refresco bajo en calorías con aspartamo con cafeína
+fdc:173208	Alcoholic Beverage, wine, table, red, Burgundy	vino tinto borgoña
+fdc:173209	Beverages, carbonated, pepper-type, contains caffeine	refresco tipo pepper con cafeína
+fdc:173210	Beverages, Energy drink, RED BULL	bebida energética Red Bull
+fdc:173211	Beverages, tea, black, ready to drink, decaffeinated, diet	té negro descafeinado dietético listo para beber
+fdc:173212	Beverages, tea, black, ready to drink, decaffeinated	té negro descafeinado listo para beber
+fdc:173213	Beverages, grape juice drink, canned	bebida de uva en conserva
+fdc:173214	Beverages, Cranberry juice cocktail	zumo de arándanos rojos
+fdc:173215	Beverages, SNAPPLE, tea, black and green, ready to drink, peach, diet	té dietético de melocotón Snapple
+fdc:173216	Lemonade, frozen concentrate, white	limonada concentrada congelada
+fdc:173217	Lemonade, frozen concentrate, white, prepared with water	limonada de concentrado
+fdc:173218	Beverages, SNAPPLE, tea, black and green, ready to drink, lemon, diet	té dietético de limón Snapple
+fdc:173219	Beverages, Malted drink mix, natural, with added nutrients, powder, prepared with whole milk	bebida malteada enriquecida con leche entera
+fdc:173220	Beverages, Malted drink mix, natural, powder, dairy based.	bebida malteada láctea en polvo
+fdc:173221	Beverages, Malted drink mix, natural, powder, prepared with whole milk	bebida malteada con leche entera
+fdc:173222	Beverages, OVALTINE, chocolate malt powder	bebida de chocolate malteada Ovaltine en polvo
+fdc:173223	Beverages, orange and apricot juice drink, canned	bebida de naranja y albaricoque en conserva
+fdc:173224	Beverages, pineapple and grapefruit juice drink, canned	bebida de piña y pomelo en conserva
+fdc:173225	Beverages, pineapple and orange juice drink, canned	bebida de piña y naranja en conserva
+fdc:173226	Shake, fast food, vanilla	batido de vainilla
+fdc:173227	Beverages, tea, black, brewed, prepared with tap water	té negro infusionado
+fdc:173228	Beverages, tea, instant, decaffeinated, lemon, diet	té instantáneo dietético de limón descafeinado
+fdc:173229	Beverages, tea, instant, decaffeinated, lemon, sweetened	té instantáneo de limón azucarado descafeinado
+fdc:173230	Beverages, tea, instant, unsweetened, powder	té instantáneo sin azúcar en polvo
+fdc:173231	Beverages, tea, instant, lemon, diet	té instantáneo dietético de limón
+fdc:173232	Beverages, tea, herb, other than chamomile, brewed	infusión de hierbas
+fdc:173233	Beverages, water, bottled, PERRIER	agua Perrier
+fdc:173234	Beverages, water, bottled, POLAND SPRING	agua Poland Spring
+fdc:173235	Beverages, orange-flavor drink, breakfast type, powder	bebida de naranja en polvo
+fdc:173236	Beverages, orange-flavor drink, breakfast type, powder, prepared with water	bebida de naranja de polvo
+fdc:173237	Beverages, Orange-flavor drink, breakfast type, low calorie, powder	bebida de naranja baja en calorías en polvo
 fdc:173238	English muffins, plain, unenriched, without calcium propionate (includes sourdough)	muffin inglés
+fdc:173239	Pie, apple, commercially prepared, unenriched flour	pastel de manzana
+fdc:173240	Pie, fried pies, cherry	pastelito frito de cereza
+fdc:173241	Tortillas, ready-to-bake or -fry, corn, without added salt	tortilla de maíz sin sal para cocinar
+fdc:173242	Tortillas, ready-to-bake or -fry, flour, without added calcium	tortilla de trigo para cocinar
+fdc:173243	Cake, pound, commercially prepared, fat-free	bizcocho sin grasa
+fdc:173244	Cake, yellow, light, dry mix	mezcla seca para pastel amarillo ligera
+fdc:173245	Archway Home Style Cookies, Coconut Macaroon	galleta de coco Archway
+fdc:173246	Archway Home Style Cookies, Date Filled Oatmeal	galleta de avena rellena de dátiles Archway
+fdc:173247	Archway Home Style Cookies, Dutch Cocoa	galleta de cacao Archway
+fdc:173248	Archway Home Style Cookies, Frosty Lemon	galleta de limón glaseada Archway
+fdc:173249	Archway Home Style Cookies, Iced Molasses	galleta de melaza glaseada Archway
+fdc:173250	Archway Home Style Cookies, Old Fashioned Molasses	galleta de melaza Archway
+fdc:173251	Archway Home Style Cookies, Old Fashioned Windmill Cookies	galleta especiada de molino Archway
+fdc:173252	Archway Home Style Cookies, Peanut Butter	galleta de crema de cacahuete Archway
+fdc:173253	Archway Home Style Cookies, Raspberry Filled	galleta rellena de frambuesa Archway
+fdc:173254	George Weston Bakeries, Brownberry Sage and Onion Stuffing Mix, dry	mezcla seca para relleno de salvia y cebolla Brownberry
+fdc:173255	Keebler, Keebler Chocolate Graham SELECTS	galleta de chocolate graham Keebler
+fdc:173256	Continental Mills, Krusteaz Almond Poppyseed Muffin Mix, Artificially Flavored, dry	mezcla seca para muffins de almendra y amapola Krusteaz
+fdc:173257	Mckee Baking, Little Debbie Nutty Bars, Wafers with Peanut Butter, Chocolate Covered	barquillos con crema de cacahuete cubiertos de chocolate Little Debbie
+fdc:173258	Nabisco, Nabisco Ritz Crackers	galletas Ritz Nabisco
+fdc:173259	Pillsbury, Buttermilk Biscuits, Artificial Flavor, refrigerated dough	bizcochos de suero de mantequilla masa refrigerada Pillsbury
+fdc:173260	Pillsbury, Chocolate Chip Cookies, refrigerated dough	galletas con pepitas de chocolate masa refrigerada Pillsbury
+fdc:173261	Pillsbury, Crusty French Loaf, refrigerated dough	pan francés crujiente masa refrigerada Pillsbury
+fdc:173262	Sorghum flour, refined, unenriched	harina de sorgo refinada
+fdc:173263	Rice, brown, parboiled, cooked, UNCLE BENS	arroz integral precocido cocido Uncle Ben's
+fdc:173264	Pasta, gluten-free, rice flour and rice bran extract, cooked, DE BOLES	pasta sin gluten de arroz cocida De Boles
+fdc:173265	Pasta, gluten-free, corn and rice flour, cooked	pasta sin gluten de maíz y arroz cocida
+fdc:173266	Fast foods, biscuit, with egg and bacon	bizcocho con huevo y beicon
+fdc:173267	Fast foods, biscuit, with egg and ham	bizcocho con huevo y jamón
+fdc:173268	Fast foods, biscuit, with crispy chicken fillet	bizcocho con filete de pollo crujiente
+fdc:173269	Fast foods, croissant, with egg, cheese, and bacon	croissant con huevo queso y beicon
+fdc:173270	Fast foods, croissant, with egg, cheese, and ham	croissant con huevo queso y jamón
+fdc:173271	Fast foods, croissant, with egg, cheese, and sausage	croissant con huevo queso y salchicha
+fdc:173272	Fast foods, egg, scrambled	huevos revueltos
+fdc:173273	Fast foods, potatoes, hash browns, round pieces or patty	patatas hash brown
+fdc:173274	Fast foods, vanilla, light, soft-serve ice cream, with cone	helado de vainilla ligero en cucurucho
+fdc:173275	Fast foods, sundae, caramel	sundae de caramelo
+fdc:173276	Fast foods, sundae, hot fudge	sundae de chocolate caliente
+fdc:173277	Fast foods, burrito, with beans and beef	burrito de judías con vacuno
+fdc:173278	Fast foods, burrito, with beans, cheese, and beef	burrito de judías con queso y vacuno
+fdc:173279	PIZZA HUT 12" Pepperoni Pizza, Hand-Tossed Crust	pizza de pepperoni 12" masa fina Pizza Hut
+fdc:173280	PIZZA HUT 12" Pepperoni Pizza, Pan Crust	pizza de pepperoni 12" masa gruesa Pizza Hut
+fdc:173281	PIZZA HUT 12" Super Supreme Pizza, Hand-Tossed Crust	pizza Super Supreme 12" Pizza Hut
+fdc:173282	DOMINO'S 14" Cheese Pizza, Classic Hand-Tossed Crust	pizza de queso 14" masa clásica Domino's
+fdc:173283	DOMINO'S 14" Cheese Pizza, Ultimate Deep Dish Crust	pizza de queso 14" masa alta Domino's
+fdc:173284	PAPA JOHN'S 14" Cheese Pizza, Original Crust	pizza de queso 14" Papa John's
+fdc:173285	PAPA JOHN'S 14" Pepperoni Pizza, Original Crust	pizza de pepperoni 14" Papa John's
+fdc:173286	PAPA JOHN'S 14" The Works Pizza, Original Crust	pizza The Works 14" Papa John's
+fdc:173287	PAPA JOHN'S 14" Cheese Pizza, Thin Crust	pizza de queso 14" masa fina Papa John's
+fdc:173288	LITTLE CAESARS 14" Pepperoni Pizza, Large Deep Dish Crust	pizza de pepperoni 14" masa alta Little Caesars
+fdc:173289	LITTLE CAESARS 14" Cheese Pizza, Thin Crust	pizza de queso 14" masa fina Little Caesars
+fdc:173290	PIZZA HUT 14" Cheese Pizza, Hand-Tossed Crust	pizza de queso 14" masa fina Pizza Hut
+fdc:173291	PIZZA HUT 14" Cheese Pizza, Pan Crust	pizza de queso 14" masa gruesa Pizza Hut
+fdc:173292	Fast Food, Pizza Chain, 14" pizza, cheese topping, regular crust	pizza de queso 14"
+fdc:173293	Fast Food, Pizza Chain, 14" pizza, cheese topping, thick crust	pizza de queso 14" masa gruesa
+fdc:173294	Fast Food, Pizza Chain, 14" pizza, cheese topping, thin crust	pizza de queso 14" masa fina
+fdc:173295	Fast Food, Pizza Chain, 14" pizza, pepperoni topping, regular crust	pizza de pepperoni 14"
+fdc:173296	Fast Food, Pizza Chain, 14" pizza, pepperoni topping, thick crust	pizza de pepperoni 14" masa gruesa
+fdc:173297	McDONALD'S, Chicken McNUGGETS	nuggets de pollo McDonald's
+fdc:173298	McDONALD'S, Hash Brown	patata hash brown McDonald's
+fdc:173299	McDONALD'S, Hotcakes (plain)	tortitas McDonald's
+fdc:173300	McDONALD'S, Bacon, Egg & Cheese McGRIDDLES	macgriddles con beicon huevo y queso McDonald's
+fdc:173301	McDONALD'S, Hot Caramel Sundae	sundae de caramelo McDonald's
+fdc:173302	McDONALD'S, Hot Fudge Sundae	sundae de chocolate caliente McDonald's
+fdc:173303	McDONALD'S, McFLURRY with M&M'S CANDIES	mcflurry con M&M's McDonald's
+fdc:173304	McDONALD'S, McFLURRY with OREO cookies	mcflurry con Oreo McDonald's
+fdc:173305	McDONALD'S, McCHICKEN Sandwich	sándwich mcchicken McDonald's
+fdc:173306	McDONALD'S, McCHICKEN Sandwich (without mayonnaise)	sándwich mcchicken sin mayonesa McDonald's
+fdc:173307	McDONALD'S, Egg McMUFFIN	mcmuffin de huevo McDonald's
+fdc:173308	McDONALD'S, Sausage McMUFFIN	mcmuffin de salchicha McDonald's
+fdc:173309	McDONALD'S, Deluxe Breakfast, with syrup and margarine	desayuno grande con sirope y margarina McDonald's
+fdc:173310	McDONALD'S, Hotcakes and Sausage	tortitas con salchicha McDonald's
+fdc:173311	McDONALD'S, Hotcakes (with 2 pats margarine & syrup)	tortitas con margarina y sirope McDonald's
 fdc:173340	Macaroni and cheese dinner with dry sauce mix, boxed, uncooked	macarrones con queso en caja, sin cocinar
 fdc:173428	Egg, yolk, dried	yema de huevo deshidratada
 fdc:173467	Fat free ice cream, no sugar added, flavors other than chocolate	helado sin grasa ni azúcar añadido

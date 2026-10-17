@@ -5824,8 +5824,206 @@ fdc:173108	Beef, New Zealand, imported, tenderloin, separable lean and fat, cook
 fdc:173109	Beef, New Zealand, imported, tenderloin, separable lean and fat, raw	говядина новозеландская вырезка с жиром сырая
 fdc:173110	Beef, ground, 93% lean meat / 7% fat, raw	говяжий фарш 93% постности сырой
 fdc:173111	Beef, ground, 97% lean meat / 3% fat, raw	говяжий фарш 97% постности сырой
-fdc:173218	Beverages, SNAPPLE, tea, black and green, ready to drink, lemon, diet	Snapple чай с лимоном диетический
-fdc:173238	English muffins, plain, unenriched, without calcium propionate (includes sourdough)	английский маффин
+fdc:173112	Beef, ground, 97% lean meat / 3% fat, patty, cooked, broiled	котлета из говяжьего фарша 97% постности на гриле
+fdc:173113	Beef, ground, 97% lean meat /3% fat, patty, cooked, pan-broiled	котлета из говяжьего фарша 97% постности жареная
+fdc:173114	Beef, ground, 97% lean meat / 3% fat, loaf, cooked, baked	мясной хлеб из говяжьего фарша 97% постности запечённый
+fdc:173115	Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, braised	стейк из нижнего огузка без кости постный жир 1/8" тушёный (чойс)
+fdc:173116	Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, raw	стейк стриплойн постный жир 1/8" сырой (чойс)
+fdc:173117	Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	стейк из вырезки постный жир 1/8" на гриле (чойс)
+fdc:173118	Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	стейк из серлоина постный жир 1/8" на гриле (чойс)
+fdc:173119	Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled	стейк стриплойн постный жир 1/8" на гриле (чойс)
+fdc:173120	Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, select, raw	жаркое из глазка огузка постное жир 1/8" сырое (селект)
+fdc:173121	Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, select, raw	стейк из верхнего огузка постный жир 1/8" сырой (селект)
+fdc:173122	Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, select, raw	жаркое из нижнего огузка постное жир 1/8" сырое (селект)
+fdc:173123	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled	говядина ребро тонкий край постное жир 1/8" на гриле
+fdc:173124	Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, raw	жаркое трай-тип постное без внешнего жира сырое (селект)
+fdc:173125	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, raw	жаркое из кончика огузка постное без внешнего жира сырое (все категории)
+fdc:173126	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, raw	жаркое из кончика огузка постное без внешнего жира сырое (чойс)
+fdc:173127	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, raw	жаркое из кончика огузка постное без внешнего жира сырое (селект)
+fdc:173128	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, raw	грудинка часть плоская с жиром жир 1/8" сырая (чойс)
+fdc:173129	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, select, raw	грудинка часть плоская с жиром жир 1/8" сырая (селект)
+fdc:173130	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised	грудинка часть плоская с жиром жир 1/8" тушёная (чойс)
+fdc:173131	Snacks, popcorn, microwave, 94% fat free	попкорн для микроволновки почти без масла
+fdc:173132	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Double Chocolate Nut Bar	батончик Snickers Marathon двойной шоколад с орехами
+fdc:173133	Snacks, M&M MARS, KUDOS Whole Grain Bars, peanut butter	батончик Kudos цельнозерновой с арахисовой пастой
+fdc:173134	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Honey Nut Oat Bar	батончик Snickers Marathon мёд-орехи-овсянка
+fdc:173135	Snacks, M&M MARS, KUDOS Whole Grain Bar, M&M's milk chocolate	батончик Kudos цельнозерновой с шоколадом M&M's
+fdc:173136	Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Energy Bar, all flavors	батончик энергетический Snickers Marathon
+fdc:173137	Formulated bar, POWER BAR, chocolate	батончик PowerBar шоколадный
+fdc:173138	Formulated bar, MARS SNACKFOOD US, COCOAVIA, Chocolate Blueberry Snack Bar	батончик Cocoavia шоколадно-черничный
+fdc:173139	Formulated bar, SLIM-FAST OPTIMA meal bar, milk chocolate peanut	батончик Slim-Fast Optima молочный шоколад с арахисом
+fdc:173140	Snacks, soy chips or crisps, salted	чипсы соевые солёные
+fdc:173141	Popcorn, microwave, regular (butter) flavor, made with palm oil	попкорн для микроволновки со вкусом масла
+fdc:173142	Snacks, plantain chips, salted	чипсы из плантана солёные
+fdc:173143	Tortilla chips, yellow, plain, salted	чипсы тортилья жёлтые солёные
+fdc:173144	Snacks, granola bar, KASHI GOLEAN, crunchy, mixed flavors	батончик гранола хрустящий Kashi GoLean
+fdc:173145	Snacks, granola bar, chewy, reduced sugar, all flavors	батончик гранола жевательный пониженный сахар
+fdc:173146	Snacks, granola bites, mixed flavors	батончики гранола кусочки
+fdc:173147	Snacks, pita chips, salted	чипсы из питы солёные
+fdc:173148	Snacks, granola bars, soft, almond, confectioners coating	батончик гранола мягкий с миндалём в глазури
+fdc:173149	Formulated bar, high fiber, chewy, oats and chocolate	батончик с клетчаткой овёс-шоколад
+fdc:173150	Snacks, bagel chips, plain	чипсы из бублика
+fdc:173151	Snacks, NUTRI-GRAIN FRUIT AND NUT BAR	батончик Nutri-Grain фруктово-ореховый
+fdc:173152	Snacks, yucca (cassava) chips, salted	чипсы из кассавы солёные
+fdc:173153	Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, CHEWY TRAIL MIX	батончик гранола жевательный Trail Mix Nature Valley
+fdc:173154	Snacks, granola bar, QUAKER, DIPPS, all flavors	батончик гранола Dipps Quaker
+fdc:173155	Snacks, brown rice chips	чипсы из коричневого риса
+fdc:173156	Snack, Pretzel, hard chocolate coated	крендель в шоколадной глазури
+fdc:173157	Snacks, peas, roasted, wasabi-flavored	горошек обжаренный со вкусом васаби
+fdc:173158	Formulated Bar, SOUTH BEACH protein bar	батончик протеиновый South Beach
+fdc:173159	Snack, BALANCE, original bar	батончик Balance
+fdc:173160	Snacks, shrimp cracker	крекеры креветочные
+fdc:173161	Rice crackers	крекеры рисовые
+fdc:173162	Beverages, MONSTER energy drink, low carb	энергетик Monster низкоуглеводный
+fdc:173163	Beverages, Whiskey sour mix, powder	смесь для виски-сауэр порошок
+fdc:173164	Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix	коктейль виски-сауэр
+fdc:173165	Beverages, THE COCA-COLA COMPANY, NOS energy drink, Original, grape, loaded cherry, charged citrus, fortified with vitamins B6 and B12	энергетик NOS с витаминами B6 и B12
+fdc:173166	Beverages, water, bottled, yumberry, pomegranate with anti-oxidants, zero calories	вода с ягодами и гранатом без калорий
+fdc:173167	Beverages, ABBOTT, EAS whey protein powder	протеин сывороточный EAS порошок
+fdc:173168	Alcoholic beverage, creme de menthe, 72 proof	ликёр мятный
+fdc:173169	Beverages, NESTLE, Boost plus, nutritional drink, ready-to-drink	напиток питательный Boost Plus Nestle готовый
+fdc:173170	Beverages, SLIMFAST, Meal replacement,  High Protein Shake, Ready-To-Drink, 3-2-1 plan	коктейль Slimfast протеиновый заменитель еды готовый
+fdc:173171	Beverages, UNILEVER, SLIMFAST, meal replacement, regular, ready-to-drink,  3-2-1 Plan	коктейль Slimfast заменитель еды готовый
+fdc:173172	Beverages, UNILEVER, SLIMFAST Shake Mix, powder, 3-2-1 Plan	смесь Slimfast для коктейля порошок
+fdc:173173	Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6	напиток Fuze апельсин-манго с витаминами
+fdc:173174	Beverages, UNILEVER, SLIMFAST Shake Mix, high protein, whey powder, 3-2-1 Plan,	смесь Slimfast протеиновая порошок
+fdc:173175	Beverages, Acai berry drink, fortified	напиток из асаи обогащённый
+fdc:173176	Alcoholic beverage, wine, dessert, sweet	вино десертное сладкое
+fdc:173177	Beverages, Whey protein powder isolate	протеин сывороточный изолят порошок
+fdc:173178	Beverages, Orange juice, light, No pulp	сок апельсиновый лёгкий без мякоти
+fdc:173179	Beverages, The COCA-COLA company, Hi-C Flashin' Fruit Punch	напиток фруктовый Hi-C
+fdc:173180	Beverages, Protein powder whey based	протеин сывороточный порошок
+fdc:173181	Beverages, Protein powder soy based	протеин соевый порошок
+fdc:173182	Beverages, rich chocolate, powder	напиток шоколадный порошок
+fdc:173183	Beverages, GEROLSTEINER BRUNNEN GmbH & Co. KG (Gerolsteiner), naturally sparkling, mineral bottled water	вода минеральная газированная Gerolsteiner
+fdc:173184	Beverages, chocolate malt, powder, prepared with fat free milk	напиток шоколадно-солодовый на обезжиренном молоке
+fdc:173185	Alcoholic beverage, wine, table, all	вино столовое
+fdc:173186	Beverages, V8 SPLASH Smoothies, Peach Mango	смузи персик-манго V8 Splash
+fdc:173187	Beverages, chocolate almond milk, unsweetened, shelf-stable, fortified with vitamin D2 and E	напиток миндально-шоколадный без сахара с витаминами D2 и E
+fdc:173188	Beverages, The COCA-COLA company, Glaceau Vitamin Water, Revive Fruit Punch, fortified	вода витаминная фруктовый пунш Glacéau
+fdc:173189	Beverages, MINUTE MAID, Lemonada, Limeade	лаймейд Minute Maid
+fdc:173190	Alcoholic beverage, wine, table, red	вино красное столовое
+fdc:173191	Alcoholic Beverage, wine, table, red, Barbera	вино красное барбера
+fdc:173192	Alcoholic Beverage, wine, table, red, Zinfandel	вино красное зинфандель
+fdc:173193	Alcoholic Beverage, wine, table, red, Petite Sirah	вино красное пти сира
+fdc:173194	Alcoholic Beverage, wine, table, red, Claret	вино красное кларет
+fdc:173195	Alcoholic beverage, wine, table, white, Chenin Blanc	вино белое шенен блан
+fdc:173196	Alcoholic beverage, wine, table, white, Fume Blanc	вино белое фюме блан
+fdc:173197	Beverages, Mixed vegetable and fruit juice drink, with added nutrients	напиток овощно-фруктовый обогащённый
+fdc:173198	Alcoholic beverage, wine, table, white, Muller Thurgau	вино белое мюллер-тургау
+fdc:173199	Carbonated beverage, cream soda	лимонад крем-сода
+fdc:173200	Alcoholic beverage, wine, table, white, Riesling	вино белое рислинг
+fdc:173201	Alcoholic beverage, wine, table, white, Sauvignon Blanc	вино белое совиньон блан
+fdc:173202	Alcoholic beverage, wine, table, white, late harvest	вино белое позднего сбора
+fdc:173203	Beverages, carbonated, grape soda	лимонад виноградный
+fdc:173204	Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine	газировка низкокалорийная без кофеина
+fdc:173205	Beverages, carbonated, lemon-lime soda, no caffeine	лимонад лимонно-лаймовый без кофеина
+fdc:173206	Beverages, carbonated, SPRITE, lemon-lime, without caffeine	лимонад Sprite без кофеина
+fdc:173207	Beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine	газировка низкокалорийная с аспартамом с кофеином
+fdc:173208	Alcoholic Beverage, wine, table, red, Burgundy	вино красное бургундское
+fdc:173209	Beverages, carbonated, pepper-type, contains caffeine	напиток типа доктор пеппер с кофеином
+fdc:173210	Beverages, Energy drink, RED BULL	энергетик Red Bull
+fdc:173211	Beverages, tea, black, ready to drink, decaffeinated, diet	чай чёрный диетический без кофеина готовый
+fdc:173212	Beverages, tea, black, ready to drink, decaffeinated	чай чёрный без кофеина готовый
+fdc:173213	Beverages, grape juice drink, canned	напиток виноградный консервированный
+fdc:173214	Beverages, Cranberry juice cocktail	морс клюквенный
+fdc:173215	Beverages, SNAPPLE, tea, black and green, ready to drink, peach, diet	чай диетический персиковый Snapple
+fdc:173216	Lemonade, frozen concentrate, white	лимонад концентрат замороженный
+fdc:173217	Lemonade, frozen concentrate, white, prepared with water	лимонад из концентрата
+fdc:173218	Beverages, SNAPPLE, tea, black and green, ready to drink, lemon, diet	чай диетический лимонный Snapple
+fdc:173219	Beverages, Malted drink mix, natural, with added nutrients, powder, prepared with whole milk	напиток солодовый обогащённый на цельном молоке
+fdc:173220	Beverages, Malted drink mix, natural, powder, dairy based.	напиток солодовый молочный порошок
+fdc:173221	Beverages, Malted drink mix, natural, powder, prepared with whole milk	напиток солодовый на цельном молоке
+fdc:173222	Beverages, OVALTINE, chocolate malt powder	напиток шоколадно-солодовый Ovaltine порошок
+fdc:173223	Beverages, orange and apricot juice drink, canned	напиток апельсиново-абрикосовый консервированный
+fdc:173224	Beverages, pineapple and grapefruit juice drink, canned	напиток ананасово-грейпфрутовый консервированный
+fdc:173225	Beverages, pineapple and orange juice drink, canned	напиток ананасово-апельсиновый консервированный
+fdc:173226	Shake, fast food, vanilla	милкшейк ванильный
+fdc:173227	Beverages, tea, black, brewed, prepared with tap water	чай чёрный заварной
+fdc:173228	Beverages, tea, instant, decaffeinated, lemon, diet	чай растворимый диетический лимонный без кофеина
+fdc:173229	Beverages, tea, instant, decaffeinated, lemon, sweetened	чай растворимый лимонный сладкий без кофеина
+fdc:173230	Beverages, tea, instant, unsweetened, powder	чай растворимый без сахара порошок
+fdc:173231	Beverages, tea, instant, lemon, diet	чай растворимый диетический лимонный
+fdc:173232	Beverages, tea, herb, other than chamomile, brewed	чай травяной заварной
+fdc:173233	Beverages, water, bottled, PERRIER	вода Perrier
+fdc:173234	Beverages, water, bottled, POLAND SPRING	вода Poland Spring
+fdc:173235	Beverages, orange-flavor drink, breakfast type, powder	напиток апельсиновый порошок
+fdc:173236	Beverages, orange-flavor drink, breakfast type, powder, prepared with water	напиток апельсиновый из порошка
+fdc:173237	Beverages, Orange-flavor drink, breakfast type, low calorie, powder	напиток апельсиновый низкокалорийный порошок
+fdc:173238	English muffins, plain, unenriched, without calcium propionate (includes sourdough)	маффин английский
+fdc:173239	Pie, apple, commercially prepared, unenriched flour	пирог яблочный
+fdc:173240	Pie, fried pies, cherry	пирожок жареный вишнёвый
+fdc:173241	Tortillas, ready-to-bake or -fry, corn, without added salt	тортилья кукурузная без соли для выпечки
+fdc:173242	Tortillas, ready-to-bake or -fry, flour, without added calcium	тортилья пшеничная для выпечки
+fdc:173243	Cake, pound, commercially prepared, fat-free	кекс обезжиренный
+fdc:173244	Cake, yellow, light, dry mix	сухая смесь для жёлтого пирога лёгкая
+fdc:173245	Archway Home Style Cookies, Coconut Macaroon	печенье кокосовое Archway
+fdc:173246	Archway Home Style Cookies, Date Filled Oatmeal	печенье овсяное с финиковой начинкой Archway
+fdc:173247	Archway Home Style Cookies, Dutch Cocoa	печенье шоколадное Archway
+fdc:173248	Archway Home Style Cookies, Frosty Lemon	печенье лимонное в глазури Archway
+fdc:173249	Archway Home Style Cookies, Iced Molasses	печенье мелассовое в глазури Archway
+fdc:173250	Archway Home Style Cookies, Old Fashioned Molasses	печенье мелассовое Archway
+fdc:173251	Archway Home Style Cookies, Old Fashioned Windmill Cookies	печенье пряничное мельничное Archway
+fdc:173252	Archway Home Style Cookies, Peanut Butter	печенье с арахисовой пастой Archway
+fdc:173253	Archway Home Style Cookies, Raspberry Filled	печенье с малиновой начинкой Archway
+fdc:173254	George Weston Bakeries, Brownberry Sage and Onion Stuffing Mix, dry	сухая смесь для начинки с шалфеем и луком Brownberry
+fdc:173255	Keebler, Keebler Chocolate Graham SELECTS	печенье шоколадное грэм Keebler
+fdc:173256	Continental Mills, Krusteaz Almond Poppyseed Muffin Mix, Artificially Flavored, dry	сухая смесь для маффинов миндально-маковая Krusteaz
+fdc:173257	Mckee Baking, Little Debbie Nutty Bars, Wafers with Peanut Butter, Chocolate Covered	вафли с арахисовой пастой в шоколаде Little Debbie
+fdc:173258	Nabisco, Nabisco Ritz Crackers	крекеры Ritz Nabisco
+fdc:173259	Pillsbury, Buttermilk Biscuits, Artificial Flavor, refrigerated dough	бисквиты пахтаночные охлаждённое тесто Pillsbury
+fdc:173260	Pillsbury, Chocolate Chip Cookies, refrigerated dough	печенье с шоколадной крошкой охлаждённое тесто Pillsbury
+fdc:173261	Pillsbury, Crusty French Loaf, refrigerated dough	французский батон охлаждённое тесто Pillsbury
+fdc:173262	Sorghum flour, refined, unenriched	мука сорго рафинированная
+fdc:173263	Rice, brown, parboiled, cooked, UNCLE BENS	рис бурый пропаренный варёный Uncle Ben's
+fdc:173264	Pasta, gluten-free, rice flour and rice bran extract, cooked, DE BOLES	паста безглютеновая рисовая варёная De Boles
+fdc:173265	Pasta, gluten-free, corn and rice flour, cooked	паста безглютеновая кукурузно-рисовая варёная
+fdc:173266	Fast foods, biscuit, with egg and bacon	бисквит с яйцом и беконом
+fdc:173267	Fast foods, biscuit, with egg and ham	бисквит с яйцом и ветчиной
+fdc:173268	Fast foods, biscuit, with crispy chicken fillet	бисквит с хрустящей куриной котлетой
+fdc:173269	Fast foods, croissant, with egg, cheese, and bacon	круассан с яйцом сыром и беконом
+fdc:173270	Fast foods, croissant, with egg, cheese, and ham	круассан с яйцом сыром и ветчиной
+fdc:173271	Fast foods, croissant, with egg, cheese, and sausage	круассан с яйцом сыром и колбаской
+fdc:173272	Fast foods, egg, scrambled	омлет болтунья
+fdc:173273	Fast foods, potatoes, hash browns, round pieces or patty	картофельные оладьи хэш-браун
+fdc:173274	Fast foods, vanilla, light, soft-serve ice cream, with cone	мороженое ванильное лёгкое в рожке
+fdc:173275	Fast foods, sundae, caramel	мороженое сандей карамельное
+fdc:173276	Fast foods, sundae, hot fudge	мороженое сандей с горячей помадкой
+fdc:173277	Fast foods, burrito, with beans and beef	буррито с фасолью и говядиной
+fdc:173278	Fast foods, burrito, with beans, cheese, and beef	буррито с фасолью сыром и говядиной
+fdc:173279	PIZZA HUT 12" Pepperoni Pizza, Hand-Tossed Crust	пицца пепперони 12" на тонком тесте Pizza Hut
+fdc:173280	PIZZA HUT 12" Pepperoni Pizza, Pan Crust	пицца пепперони 12" на толстом тесте Pizza Hut
+fdc:173281	PIZZA HUT 12" Super Supreme Pizza, Hand-Tossed Crust	пицца Super Supreme 12" Pizza Hut
+fdc:173282	DOMINO'S 14" Cheese Pizza, Classic Hand-Tossed Crust	пицца сырная 14" на тонком тесте Domino's
+fdc:173283	DOMINO'S 14" Cheese Pizza, Ultimate Deep Dish Crust	пицца сырная 14" на глубоком блюде Domino's
+fdc:173284	PAPA JOHN'S 14" Cheese Pizza, Original Crust	пицца сырная 14" Papa John's
+fdc:173285	PAPA JOHN'S 14" Pepperoni Pizza, Original Crust	пицца пепперони 14" Papa John's
+fdc:173286	PAPA JOHN'S 14" The Works Pizza, Original Crust	пицца The Works 14" Papa John's
+fdc:173287	PAPA JOHN'S 14" Cheese Pizza, Thin Crust	пицца сырная 14" на тонком тесте Papa John's
+fdc:173288	LITTLE CAESARS 14" Pepperoni Pizza, Large Deep Dish Crust	пицца пепперони 14" на глубоком блюде Little Caesars
+fdc:173289	LITTLE CAESARS 14" Cheese Pizza, Thin Crust	пицца сырная 14" на тонком тесте Little Caesars
+fdc:173290	PIZZA HUT 14" Cheese Pizza, Hand-Tossed Crust	пицца сырная 14" на тонком тесте Pizza Hut
+fdc:173291	PIZZA HUT 14" Cheese Pizza, Pan Crust	пицца сырная 14" на толстом тесте Pizza Hut
+fdc:173292	Fast Food, Pizza Chain, 14" pizza, cheese topping, regular crust	пицца сырная 14"
+fdc:173293	Fast Food, Pizza Chain, 14" pizza, cheese topping, thick crust	пицца сырная 14" на толстом тесте
+fdc:173294	Fast Food, Pizza Chain, 14" pizza, cheese topping, thin crust	пицца сырная 14" на тонком тесте
+fdc:173295	Fast Food, Pizza Chain, 14" pizza, pepperoni topping, regular crust	пицца пепперони 14"
+fdc:173296	Fast Food, Pizza Chain, 14" pizza, pepperoni topping, thick crust	пицца пепперони 14" на толстом тесте
+fdc:173297	McDONALD'S, Chicken McNUGGETS	наггетсы куриные McDonald's
+fdc:173298	McDONALD'S, Hash Brown	картофельная оладья McDonald's
+fdc:173299	McDONALD'S, Hotcakes (plain)	панкейки McDonald's
+fdc:173300	McDONALD'S, Bacon, Egg & Cheese McGRIDDLES	макгриддлс с беконом яйцом и сыром McDonald's
+fdc:173301	McDONALD'S, Hot Caramel Sundae	мороженое сандей с карамелью McDonald's
+fdc:173302	McDONALD'S, Hot Fudge Sundae	мороженое сандей с горячей помадкой McDonald's
+fdc:173303	McDONALD'S, McFLURRY with M&M'S CANDIES	макфлурри с M&M's McDonald's
+fdc:173304	McDONALD'S, McFLURRY with OREO cookies	макфлурри с Oreo McDonald's
+fdc:173305	McDONALD'S, McCHICKEN Sandwich	сэндвич макчикен McDonald's
+fdc:173306	McDONALD'S, McCHICKEN Sandwich (without mayonnaise)	сэндвич макчикен без майонеза McDonald's
+fdc:173307	McDONALD'S, Egg McMUFFIN	макмаффин с яйцом McDonald's
+fdc:173308	McDONALD'S, Sausage McMUFFIN	макмаффин с колбаской McDonald's
+fdc:173309	McDONALD'S, Deluxe Breakfast, with syrup and margarine	большой завтрак с сиропом и маргарином McDonald's
+fdc:173310	McDONALD'S, Hotcakes and Sausage	панкейки с колбаской McDonald's
+fdc:173311	McDONALD'S, Hotcakes (with 2 pats margarine & syrup)	панкейки с маргарином и сиропом McDonald's
 fdc:173340	Macaroni and cheese dinner with dry sauce mix, boxed, uncooked	макароны с сыром полуфабрикат
 fdc:173428	Egg, yolk, dried	желток яичный сушёный
 fdc:173467	Fat free ice cream, no sugar added, flavors other than chocolate	мороженое обезжиренное без сахара
