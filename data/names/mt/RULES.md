@@ -266,13 +266,14 @@ Snacks, breakfast starches, pasta/rice dishes, Mexican plate matrix, fruit.
   `dulces`; `light` → `лёгкий` / `ligeras`.
 - pretzels: hard → `крендельки` / `pretzels`; soft → `крендели мягкие` /
   `pretzels blandos`; `from frozen` → `из заморозки` / `de congelado`;
-  soft ready-to-eat → `готовые` / `recién hechos`.
+  soft ready-to-eat → `готовые` / `listos para comer` (`recién hechos` means
+  freshly made, not ready-to-eat).
 - FNDDS cereal codes: `O's` → `колечки овсяные` / `aros de avena`; `K's` →
   `рисово-пшеничные хлопья` / `hojuelas de arroz y trigo`; corn squares →
   `кукурузные подушечки` / `cuadritos de maíz`; corn puffs → `кукурузные шарики`
   / `puffs de maíz`; rice crispy → `воздушный рис` / `arroz inflado`;
   shredded wheat → `подушечки из цельной пшеницы` / `almohadillas de trigo`;
-  cinnamon toast → `хлопья корица-тост` / `cereales de canela`.
+  cinnamon toast → `хлопья «коричный тост»` / `cereales de canela`.
 - hot cereal: grits → `кукурузная каша` / `gachas de maíz`; cornmeal mush →
   `мамалыга` / `polenta`; cream of wheat → `манная каша` / `gachas de sémola`;
   oatmeal → `овсянка` / `gachas de avena`; `non-dairy milk` →
@@ -303,9 +304,9 @@ Snacks, breakfast starches, pasta/rice dishes, Mexican plate matrix, fruit.
   `спринг-ролл свежий` / `rollito de primavera fresco`); turnover/hot pocket →
   `слоёный пирожок` / `empanadilla` (empanada stays `empanada`).
 - fruit: applesauce → `яблочное пюре` / `compota de manzana`; fruit salad →
-  `фруктовый салат` / `macedonia`; fruit cocktail → `фруктовый коктейль` /
+  `фруктовый салат` / `macedonia`; fruit cocktail → `фруктовый микс` /
   `macedonia en conserva`; baby food → `детское пюре` / `potito` (`Stage N` →
-  `ступень N` / `etapa N`); baby juice → `детский сок` / `zumo infantil`;
+  `этап N` / `etapa N`); baby juice → `детский сок` / `zumo infantil`;
   dried currants → `коринка` / `pasas de Corinto`; dried apricots →
   `курага` / `orejones`; ice pop → `фруктовый лёд` / `polo`; sushi roll →
   `ролл` / `maki`; nigiri-style `topped with` → `суши с` / `nigiri de`.
@@ -324,3 +325,19 @@ Snacks, breakfast starches, pasta/rice dishes, Mexican plate matrix, fruit.
   qualifier back (1b rule): `fdc:167549` oil-popped → `на масле` / `en aceite`,
   `fdc:169035` restaurant → `из ресторана` / `de restaurante`, `fdc:170291`
   fast food → `(фастфуд)` / `de fast food`.
+
+### Traps from the batch-2c review
+
+- `Noodles, chow mein` is the crispy fried noodle (~520 kcal), never boiled:
+  `лапша чоу-мейн хрустящая` / `fideos chow mein crujientes`.
+- US apple cider = unfiltered non-alcoholic juice → `яблочный сок
+  нефильтрованный` / `zumo de manzana sin filtrar` — `сидр` implies fermented.
+- vinaigrette → `уксусно-масляная заправка` / `vinagreta` — `винегрет` is the
+  beet salad. `Dumpling, no meat` → `галушки` (`пельмени` implies meat;
+  bare `вареники` is the pierogi record).
+- Do not invent `домашний`/`casera` to split a canned sibling — a word-order
+  variant invents less (`суп с куриной лапшой` / `sopa de fideos con pollo`).
+- fruit cocktail (canned mix) → `фруктовый микс`, never `коктейль` (a drink);
+  ambrosia → `фруктовый салат «амброзия»`; bottled → `в бутылке`
+  (`бутилированный` is jug water); corn nuts → `kikos` (the Spain word);
+  `Stage N` → `этап N` (`ступень` is mechanical).
