@@ -597,7 +597,7 @@ fdc:167881	Pork, fresh, variety meats and by-products, tail, cooked, simmered	с
 fdc:167882	Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, pan-fried	свиные отбивные из корейки на кости постные жареные
 fdc:167883	Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, pan-fried	свиные отбивные на ребре постные жареные
 fdc:167884	Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, pan-fried	свиные отбивные шейные на кости с жиром жареные
-fdc:167885	Pork, cured, ham, extra lean and regular, canned, unheated	ветчина консервированная
+fdc:167885	Pork, cured, ham, extra lean and regular, canned, unheated	ветчина консервированная неподогретая
 fdc:167886	Pork, cured, ham, extra lean and regular, canned, roasted	ветчина консервированная запечённая
 fdc:167887	Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, pan-fried	свиные отбивные без кости с жиром жареные
 fdc:167888	Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, raw	свинина с жиром сырая
@@ -1728,7 +1728,7 @@ fdc:169012	APPLEBEE'S, chicken tenders, from kids' menu	куриные стри�
 fdc:169013	T.G.I. FRIDAY'S, chicken fingers, from kids' menu	куриные пальчики TGI Friday's
 fdc:169014	T.G.I. FRIDAY'S, classic sirloin steak (10 oz)	стейк серлоин TGI Friday's
 fdc:169015	Restaurant, family style, fried mozzarella sticks	жареные палочки моцарелла
-fdc:169016	Restaurant, family style, sirloin steak	стейк серлоин
+fdc:169016	Restaurant, family style, sirloin steak	стейк сёрлоин (ресторан)
 fdc:169017	APPLEBEE'S, fish, hand battered	рыба в кляре Applebee's
 fdc:169018	APPLEBEE'S, chili	чили кон карне Applebee's
 fdc:169019	T.G.I. FRIDAY'S, chicken fingers	куриные пальчики TGI Friday's
@@ -1740,7 +1740,7 @@ fdc:169024	DENNY'S, fish fillet, battered or breaded, fried	рыбное фил�
 fdc:169025	DENNY'S, hash browns	рёшти Denny's
 fdc:169026	Restaurant, family style, coleslaw	коул-сло
 fdc:169027	Restaurant, family style, onion rings	луковые кольца
-fdc:169028	Restaurant, family style, chili with meat and beans	чили кон карне
+fdc:169028	Restaurant, family style, chili with meat and beans	чили с мясом и фасолью (ресторан)
 fdc:169029	Restaurant, family style, spaghetti and meatballs	спагетти с фрикадельками
 fdc:169030	CARRABBA'S ITALIAN GRILL, lasagne	лазанья Carrabba's
 fdc:169031	ON THE BORDER, Mexican rice	мексиканский рис On The Border
@@ -2610,7 +2610,7 @@ fdc:169894	Butter replacement, without fat, powder	заменитель слив
 fdc:169895	Salad dressing, buttermilk, lite	соус из пахты лёгкий
 fdc:169896	Sweeteners, tabletop, fructose, dry, powder	фруктоза порошковая
 fdc:169897	Beverage, instant breakfast powder, chocolate, sugar-free, not reconstituted	сухой шоколадный завтрак без сахара
-fdc:169898	Yogurt, fruit variety, nonfat	йогурт фруктовый обезжиренный
+fdc:169898	Yogurt, fruit variety, nonfat	йогурт фруктовый на обезжиренном молоке
 fdc:169899	Whipped cream substitute, dietetic, made from powdered mix	взбитые сливки заменитель диетический сухой
 fdc:169900	Frozen novelties, ice cream type, sundae, prepackaged	мороженое сандей упакованное
 fdc:169901	Cheese, american cheddar, imitation	сыр чеддер имитация
@@ -3154,7 +3154,7 @@ fdc:170438	Potatoes, boiled, cooked in skin, flesh, without salt	картофе�
 fdc:170439	Potatoes, boiled, cooked in skin, skin, without salt	картофельная кожура варёная без соли
 fdc:170440	Potatoes, boiled, cooked without skin, flesh, without salt	картофель варёный очищенный без соли
 fdc:170441	Potatoes, microwaved, cooked in skin, flesh, without salt	картофель в микроволновке в кожуре без соли
-fdc:170442	Potatoes, au gratin, home-prepared from recipe using butter	картофельный гратен домашний с маслом (гратен)
+fdc:170442	Potatoes, au gratin, home-prepared from recipe using butter	картофельный гратен домашний с маслом
 fdc:170443	Potatoes, canned, solids and liquids	картофель консервированный
 fdc:170444	Potatoes, canned, drained solids	картофель консервированный слитый
 fdc:170445	Potatoes, mashed, dehydrated, flakes without milk, dry form	картофельные хлопья для пюре сухие
@@ -3643,7 +3643,7 @@ fdc:170927	Spices, mace, ground	мускатный цвет молотый
 fdc:170928	Spices, marjoram, dried	майоран сушёный
 fdc:170929	Spices, mustard seed, ground	горчичный порошок
 fdc:170930	Spices, parsley, dried	петрушка сушёная
-fdc:170931	Spices, pepper, black	перец чёрный (специи)
+fdc:170931	Spices, pepper, black	перец чёрный
 fdc:170932	Spices, pepper, red or cayenne	перец красный жгучий
 fdc:170933	Spices, pepper, white	перец белый
 fdc:170934	Spices, saffron	шафран
@@ -4298,6 +4298,1386 @@ fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodi
 fdc:175259	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled	баранья корейка жареная
 fdc:175268	Veal, leg (top round), separable lean and fat, raw	телятина окорок сырой
 fdc:2346403	Potatoes, gold, without skin, raw	картофель жёлтый очищенный сырой
+fdc:2705384	Milk, NFS	молоко
+fdc:2705385	Milk, whole	молоко цельное
+fdc:2705386	Milk, reduced fat (2%)	молоко 2 %
+fdc:2705387	Milk, low fat (1%)	молоко 1 %
+fdc:2705388	Milk, fat free (skim)	молоко обезжиренное
+fdc:2705389	Milk, lactose free, low fat (1%)	молоко безлактозное 1 %
+fdc:2705390	Milk, lactose free, fat free (skim)	молоко безлактозное обезжиренное
+fdc:2705391	Milk, lactose free, reduced fat (2%)	молоко безлактозное 2 %
+fdc:2705392	Milk, lactose free, whole	молоко безлактозное цельное
+fdc:2705393	Buttermilk	пахта
+fdc:2705394	Kefir	кефир
+fdc:2705395	Goat milk	козье молоко
+fdc:2705396	Milk, dry, reconstituted, nonfat	молоко из сухого обезжиренного
+fdc:2705397	Milk, dry, reconstituted, whole	молоко из сухого цельного
+fdc:2705398	Milk, evaporated, NS as to fat content	молоко выпаренное
+fdc:2705399	Milk, evaporated, whole	молоко выпаренное цельное
+fdc:2705400	Milk, evaporated, reduced fat (2%)	молоко выпаренное нежирное
+fdc:2705401	Milk, evaporated, fat free (skim)	молоко выпаренное обезжиренное
+fdc:2705402	Milk, condensed, sweetened	сгущённое молоко
+fdc:2705403	Non-dairy milk, NFS	растительное молоко
+fdc:2705404	Soy milk, sweetened	соевое молоко сладкое
+fdc:2705405	Soy milk, unsweetened	соевое молоко несладкое
+fdc:2705406	Soy milk, chocolate	соевое молоко шоколадное
+fdc:2705407	Almond milk, sweetened	миндальное молоко сладкое
+fdc:2705408	Almond milk, chocolate	миндальное молоко шоколадное
+fdc:2705409	Almond milk, unsweetened	миндальное молоко несладкое
+fdc:2705410	Almond milk, NFS	миндальное молоко
+fdc:2705411	Rice milk	рисовое молоко
+fdc:2705412	Oat milk	овсяное молоко
+fdc:2705413	Coconut milk	кокосовое молоко
+fdc:2705414	Yogurt, NFS	йогурт
+fdc:2705415	Yogurt, Greek, NS as to type of milk or flavor	йогурт греческий
+fdc:2705416	Yogurt, NS as to type of milk or flavor	йогурт классический
+fdc:2705417	Yogurt, NS as to type of milk, plain	йогурт натуральный
+fdc:2705418	Yogurt, whole milk, plain	йогурт натуральный цельный
+fdc:2705419	Yogurt, low fat milk, plain	йогурт натуральный нежирный
+fdc:2705420	Yogurt, nonfat milk, plain	йогурт натуральный обезжиренный
+fdc:2705421	Yogurt, Greek, NS as to type of milk, plain	йогурт греческий натуральный
+fdc:2705422	Yogurt, Greek, whole milk, plain	йогурт греческий натуральный цельный
+fdc:2705423	Yogurt, Greek, low fat milk, plain	йогурт греческий натуральный нежирный
+fdc:2705424	Yogurt, Greek, nonfat milk, plain	йогурт греческий натуральный обезжиренный
+fdc:2705425	Yogurt, NS as to type of milk, fruit	йогурт фруктовый
+fdc:2705426	Yogurt, whole milk, fruit	йогурт фруктовый цельный
+fdc:2705427	Yogurt, low fat milk, fruit	йогурт фруктовый нежирный
+fdc:2705428	Yogurt, nonfat milk, fruit	йогурт фруктовый обезжиренный
+fdc:2705429	Yogurt, Greek, NS as to type of milk, fruit	йогурт греческий фруктовый
+fdc:2705430	Yogurt, Greek, whole milk, fruit	йогурт греческий фруктовый цельный
+fdc:2705431	Yogurt, Greek, low fat milk, fruit	йогурт греческий фруктовый нежирный
+fdc:2705432	Yogurt, Greek, nonfat milk, fruit	йогурт греческий фруктовый обезжиренный
+fdc:2705433	Yogurt, NS as to type of milk, flavors other than fruit	йогурт ароматизированный
+fdc:2705434	Yogurt, whole milk, flavors other than fruit	йогурт ароматизированный цельный
+fdc:2705435	Yogurt, low fat milk, flavors other than fruit	йогурт ароматизированный нежирный
+fdc:2705436	Yogurt, nonfat milk, flavors other than fruit	йогурт ароматизированный обезжиренный
+fdc:2705437	Yogurt, Greek, NS as to type of milk, flavors other than fruit	йогурт греческий ароматизированный
+fdc:2705438	Yogurt, Greek, whole milk, flavors other than fruit	йогурт греческий ароматизированный цельный
+fdc:2705439	Yogurt, Greek, low fat milk, flavors other than fruit	йогурт греческий ароматизированный нежирный
+fdc:2705440	Yogurt, Greek, nonfat milk, flavors other than fruit	йогурт греческий ароматизированный обезжиренный
+fdc:2705441	Yogurt, Greek, with oats	йогурт греческий с овсянкой
+fdc:2705442	Yogurt, liquid	йогурт питьевой
+fdc:2705443	Yogurt tube	йогурт в тюбике
+fdc:2705444	Chipotle dip, yogurt based	соус чипотле на йогурте
+fdc:2705445	Onion dip, yogurt based	соус луковый на йогурте
+fdc:2705446	Ranch dip, yogurt based	соус ранч на йогурте
+fdc:2705447	Spinach dip, yogurt based	соус шпинатный на йогурте
+fdc:2705448	Tzatziki dip	соус дзадзики
+fdc:2705449	Vegetable dip, yogurt based	соус для овощей на йогурте
+fdc:2705450	Yogurt parfait, with fruit	парфе йогуртовое с фруктами
+fdc:2705451	Frozen yogurt, NFS	замороженный йогурт
+fdc:2705452	Frozen yogurt, vanilla	замороженный йогурт ванильный
+fdc:2705453	Frozen yogurt, chocolate	замороженный йогурт шоколадный
+fdc:2705454	Frozen yogurt, soft serve, vanilla	замороженный йогурт мягкий ванильный
+fdc:2705455	Frozen yogurt, soft serve, chocolate	замороженный йогурт мягкий шоколадный
+fdc:2705456	Frozen yogurt sandwich	сэндвич с замороженным йогуртом
+fdc:2705457	Frozen yogurt bar, vanilla	эскимо из замороженного йогурта ванильное
+fdc:2705458	Frozen yogurt bar, chocolate	эскимо из замороженного йогурта шоколадное
+fdc:2705459	Frozen yogurt cone, chocolate	замороженный йогурт в рожке шоколадный
+fdc:2705460	Frozen yogurt cone, vanilla	замороженный йогурт в рожке ванильный
+fdc:2705461	Frozen yogurt cone, vanilla, waffle cone	замороженный йогурт в вафельном рожке ванильный
+fdc:2705462	Frozen yogurt cone, chocolate, waffle cone	замороженный йогурт в вафельном рожке шоколадный
+fdc:2705463	Baby Toddler food, NFS	детское питание
+fdc:2705464	Baby Toddler yogurt, plain	йогурт детский натуральный
+fdc:2705465	Baby Toddler yogurt, with fruit	йогурт детский с фруктами
+fdc:2705466	Chocolate milk, NFS	молоко шоколадное
+fdc:2705467	Chocolate milk, whole	молоко шоколадное цельное
+fdc:2705468	Chocolate milk, reduced fat (2%)	молоко шоколадное 2 %
+fdc:2705469	Chocolate milk, fat free (skim)	молоко шоколадное обезжиренное
+fdc:2705470	Chocolate milk, low fat (1%)	молоко шоколадное 1 %
+fdc:2705471	Chocolate milk, reduced sugar, NFS	молоко шоколадное с пониженным сахаром
+fdc:2705472	Hot chocolate / cocoa, NFS	горячий шоколад
+fdc:2705473	Hot chocolate / cocoa, made with whole or reduced fat (2%) milk	горячий шоколад на цельном молоке
+fdc:2705474	Hot chocolate / cocoa, made with lowfat (1%) or fat free (skim) milk	горячий шоколад на обезжиренном молоке
+fdc:2705475	Hot chocolate / cocoa, made with non-dairy milk	горячий шоколад на растительном молоке
+fdc:2705476	Hot chocolate / cocoa, with whipped cream	горячий шоколад со взбитыми сливками
+fdc:2705477	Chocolate milk, Nesquik, NS as to type of milk	молоко шоколадное Nesquik
+fdc:2705478	Chocolate milk, Nesquik, made with non-dairy milk	молоко шоколадное Nesquik на растительном молоке
+fdc:2705479	Chocolate milk, reduced sugar, whole	молоко шоколадное цельное с пониженным сахаром
+fdc:2705480	Chocolate milk, reduced sugar, reduced fat (2%)	молоко шоколадное 2 % с пониженным сахаром
+fdc:2705481	Chocolate milk, reduced sugar, low fat (1%)	молоко шоколадное 1 % с пониженным сахаром
+fdc:2705482	Chocolate milk, reduced sugar, fat free (skim)	молоко шоколадное обезжиренное с пониженным сахаром
+fdc:2705483	Hot chocolate / cocoa, dry mix, made with water	какао из порошка на воде
+fdc:2705484	Hot chocolate / cocoa, dry mix, made with whole or reduced fat (2%) milk	какао из порошка на цельном молоке
+fdc:2705485	Hot chocolate / cocoa, dry mix, made with lowfat (1%) or fat free (skim) milk	какао из порошка на обезжиренном молоке
+fdc:2705486	Hot chocolate / cocoa, dry mix , made with non-dairy milk	какао из порошка на растительном молоке
+fdc:2705487	Hot chocolate / cocoa, dry mix, made with water, with whipped cream	какао из порошка на воде со взбитыми сливками
+fdc:2705488	Hot chocolate / cocoa, dry mix, reduced sugar, made with water	какао из порошка с пониженным сахаром на воде
+fdc:2705489	Hot chocolate / cocoa, dry mix, reduced sugar, made with whole or reduced fat (2%) milk	какао из порошка с пониженным сахаром на цельном молоке
+fdc:2705490	Hot chocolate / cocoa, reduced sugar, made with non-dairy milk	какао с пониженным сахаром на растительном молоке
+fdc:2705491	Hot chocolate / cocoa, reduced sugar, made with whole or reduced fat (2%) milk	какао с пониженным сахаром на цельном молоке
+fdc:2705492	Hot chocolate / cocoa, dry mix, reduced sugar, made with lowfat (1%) or fat free (skim) milk	какао из порошка с пониженным сахаром на обезжиренном молоке
+fdc:2705493	Hot chocolate / cocoa, reduced sugar, made with lowfat (1%) or fat free (skim) milk	какао с пониженным сахаром на обезжиренном молоке
+fdc:2705494	Hot chocolate / cocoa, dry mix, reduced sugar, made with non-dairy milk	какао из порошка с пониженным сахаром на растительном молоке
+fdc:2705495	Strawberry milk, NFS	молоко клубничное
+fdc:2705496	Strawberry milk, whole	молоко клубничное цельное
+fdc:2705497	Strawberry milk, reduced fat (2%)	молоко клубничное 2 %
+fdc:2705498	Strawberry milk, low fat (1%)	молоко клубничное 1 %
+fdc:2705499	Strawberry milk, fat free  (skim)	молоко клубничное обезжиренное
+fdc:2705500	Strawberry milk, reduced sugar	молоко клубничное с пониженным сахаром
+fdc:2705501	Milk, malted	молоко солодовое
+fdc:2705502	Eggnog	эгног
+fdc:2705503	Milk shake, home recipe, chocolate	молочный коктейль домашний шоколадный
+fdc:2705504	Milk shake, home recipe, flavors other than chocolate	молочный коктейль домашний
+fdc:2705505	Milk shake, home recipe, chocolate, light	молочный коктейль домашний шоколадный лёгкий
+fdc:2705506	Milk shake, home recipe, flavors other than chocolate, light	молочный коктейль домашний лёгкий
+fdc:2705507	Milk shake with malt	молочный коктейль с солодом
+fdc:2705508	Milk shake, fast food, chocolate	молочный коктейль шоколадный (фастфуд)
+fdc:2705509	Milk shake, fast food, flavors other than chocolate	молочный коктейль (фастфуд)
+fdc:2705510	Milk shake, bottled, chocolate	молочный коктейль шоколадный бутылочный
+fdc:2705511	Milk shake, bottled, flavors other than chocolate	молочный коктейль бутылочный
+fdc:2705512	Licuado or Batido	ликуадо
+fdc:2705513	Fruit smoothie, NFS	фруктовый смузи
+fdc:2705514	Fruit smoothie, with whole fruit and dairy	смузи из целых фруктов с молоком
+fdc:2705515	Fruit smoothie, with whole fruit and dairy, added protein	смузи из целых фруктов с молоком и протеином
+fdc:2705516	Fruit smoothie juice drink, with dairy	фруктовый смузи-напиток с молоком
+fdc:2705517	Chocolate milk drink	шоколадно-молочный напиток
+fdc:2705518	Infant formula, NFS	детская смесь
+fdc:2705519	Infant formula, Similac, NFS	детская смесь Similac
+fdc:2705520	Infant formula, Similac Alimentum, ready-to-feed	детская смесь Similac Alimentum готовая
+fdc:2705521	Infant formula, Similac Alimentum, powder, made with water	детская смесь Similac Alimentum из порошка
+fdc:2705522	Infant formula, Similac Advance, ready-to-feed	детская смесь Similac Advance готовая
+fdc:2705523	Infant formula, Similac Advance, powder, made with tap water	детская смесь Similac Advance из порошка
+fdc:2705524	Infant formula, Similac Advance, powder, made with bottled water	детская смесь Similac Advance из порошка
+fdc:2705525	Infant formula, Similac Advance, powder, made with baby water	детская смесь Similac Advance из порошка
+fdc:2705526	Infant formula, Similac Sensitive, ready-to-feed	детская смесь Similac Sensitive готовая
+fdc:2705527	Infant formula, Similac Sensitive, powder, made with tap water	детская смесь Similac Sensitive из порошка
+fdc:2705528	Infant formula, Similac Sensitive, powder, made with bottled water	детская смесь Similac Sensitive из порошка
+fdc:2705529	Infant formula, Similac Sensitive, powder, made with baby water	детская смесь Similac Sensitive из порошка
+fdc:2705530	Infant formula, Similac for Spit-Up, ready-to-feed	детская смесь Similac for Spit-Up готовая
+fdc:2705531	Infant formula, Similac for Spit-Up, powder, made with water	детская смесь Similac for Spit-Up из порошка
+fdc:2705532	Toddler formula, Similac Go and Grow	смесь для малышей Similac Go and Grow
+fdc:2705533	Infant formula, Enfamil, NFS	детская смесь Enfamil
+fdc:2705534	Infant formula, Enfamil Infant, ready-to-feed	детская смесь Enfamil Infant готовая
+fdc:2705535	Infant formula, Enfamil Infant, powder, made with tap water	детская смесь Enfamil Infant из порошка
+fdc:2705536	Infant formula, Enfamil Infant, powder, made with bottled water	детская смесь Enfamil Infant из порошка
+fdc:2705537	Infant formula, Enfamil Infant, powder, made with baby water	детская смесь Enfamil Infant из порошка
+fdc:2705538	Infant formula, Enfamil AR, ready-to-feed	детская смесь Enfamil AR готовая
+fdc:2705539	Infant formula, Enfamil AR, powder, made with water	детская смесь Enfamil AR из порошка
+fdc:2705540	Infant formula, Enfamil Gentlease, ready-to-feed	детская смесь Enfamil Gentlease готовая
+fdc:2705541	Infant formula, Enfamil Gentlease, powder, made with tap water	детская смесь Enfamil Gentlease из порошка
+fdc:2705542	Infant formula, Enfamil Gentlease, powder, made with bottled water	детская смесь Enfamil Gentlease из порошка
+fdc:2705543	Infant formula, Enfamil Gentlease, powder, made with baby water	детская смесь Enfamil Gentlease из порошка
+fdc:2705544	Toddler formula, Enfamil Enfagrow	смесь для малышей Enfamil Enfagrow
+fdc:2705545	Toddler formula, PediaSure	смесь для малышей PediaSure
+fdc:2705546	Toddler formula, Nido Kinder	смесь для малышей Nido Kinder
+fdc:2705547	Toddler formula, store brand, beginning or next stage	смесь для малышей магазинная, первый или второй этап
+fdc:2705548	Toddler formula, store brand, pediatric shake	детский питьевой коктейль магазинный
+fdc:2705549	Infant formula, Gerber, NFS	детская смесь Gerber
+fdc:2705550	Infant formula, Gerber Good Start Gentle, Stage 1, ready-to-feed	детская смесь Gerber Good Start Gentle 1 готовая
+fdc:2705551	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with tap water	детская смесь Gerber Good Start Gentle 1 из порошка
+fdc:2705552	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with bottled water	детская смесь Gerber Good Start Gentle 1 из порошка
+fdc:2705553	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with baby water	детская смесь Gerber Good Start Gentle 1 из порошка
+fdc:2705554	Infant formula, Gerber Good Start Gentle, Stage 2	детская смесь Gerber Good Start Gentle 2
+fdc:2705555	Toddler formula, Gerber Good Start, Stage 3	смесь для малышей Gerber Good Start 3
+fdc:2705556	Infant formula, premature, powder, made with water	детская смесь для недоношенных из порошка
+fdc:2705557	Infant formula, premature, ready-to-feed	детская смесь для недоношенных готовая
+fdc:2705558	Infant formula, organic, powder, made with water	детская смесь органическая из порошка
+fdc:2705559	Infant formula, organic, ready-to-feed	детская смесь органическая готовая
+fdc:2705560	Infant formula, store brand, advantage or tender, powder, made with tap water	детская смесь магазинная из порошка
+fdc:2705561	Infant formula, store brand, advantage or tender, powder, made with bottled water	детская смесь магазинная из порошка
+fdc:2705562	Infant formula, store brand, advantage or tender, powder, made with baby water	детская смесь магазинная из порошка
+fdc:2705563	Infant formula, store brand, gentle or sensitivity	детская смесь магазинная мягкая
+fdc:2705564	Infant formula, store brand, added rice	детская смесь магазинная с рисом
+fdc:2705565	Infant formula, Enfamil ProSobee, ready-to-feed	детская смесь Enfamil ProSobee готовая
+fdc:2705566	Infant formula, Enfamil ProSobee, powder, made with tap water	детская смесь Enfamil ProSobee из порошка
+fdc:2705567	Infant formula, Enfamil ProSobee, powder, made with bottled water	детская смесь Enfamil ProSobee из порошка
+fdc:2705568	Infant formula, Enfamil ProSobee, powder, made with baby water	детская смесь Enfamil ProSobee из порошка
+fdc:2705569	Infant formula, Similac Isomil Soy, ready-to-feed	детская смесь Similac Isomil Soy готовая
+fdc:2705570	Infant formula, Similac Isomil Soy, powder, made with tap water	детская смесь Similac Isomil Soy из порошка
+fdc:2705571	Infant formula, Similac Isomil Soy, powder, made with bottled water	детская смесь Similac Isomil Soy из порошка
+fdc:2705572	Infant formula, Similac Isomil Soy, powder, made with baby water	детская смесь Similac Isomil Soy из порошка
+fdc:2705573	Infant formula, Similac for Diarrhea	детская смесь Similac for Diarrhea
+fdc:2705574	Infant formula, Gerber Good Start Soy, Stage 1, ready-to-feed	детская смесь Gerber Good Start Soy 1 готовая
+fdc:2705575	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with tap water	детская смесь Gerber Good Start Soy 1 из порошка
+fdc:2705576	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with bottled water	детская смесь Gerber Good Start Soy 1 из порошка
+fdc:2705577	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with baby water	детская смесь Gerber Good Start Soy 1 из порошка
+fdc:2705578	Infant formula, store brand, soy	детская смесь магазинная соевая
+fdc:2705579	Infant formula, Enfamil Nutramigen, ready-to-feed	детская смесь Enfamil Nutramigen готовая
+fdc:2705580	Infant formula, Enfamil Nutramigen, powder, made with water	детская смесь Enfamil Nutramigen из порошка
+fdc:2705581	Infant formula, Enfamil Pregestimil, ready-to-feed	детская смесь Enfamil Pregestimil готовая
+fdc:2705582	Infant formula, Enfamil Pregestimil, powder, made with water	детская смесь Enfamil Pregestimil из порошка
+fdc:2705583	Infant formula, amino acids	детская смесь на аминокислотах
+fdc:2705584	Infant formula, low iron	детская смесь с пониженным железом
+fdc:2705585	Milk, dry, not reconstituted	молоко сухое
+fdc:2705586	Whey, sweet, dry	сыворотка сухая сладкая
+fdc:2705587	Cocoa powder, not reconstituted	какао-порошок
+fdc:2705588	Chocolate beverage powder, dry mix, not reconstituted	порошок для шоколадного напитка
+fdc:2705589	Chocolate beverage powder, light, dry mix, not reconstituted	порошок для шоколадного напитка лёгкий
+fdc:2705590	Milk, malted, dry mix, not reconstituted	порошок для солодового молочного напитка
+fdc:2705591	Strawberry beverage powder, dry mix, not reconstituted	порошок для клубничного напитка
+fdc:2705592	Cream, NS as to light, heavy, or half and half	сливки
+fdc:2705593	Cream, light	сливки лёгкие
+fdc:2705594	Cream, half and half	сливки полужирные
+fdc:2705595	Cream, half and half, flavored	сливки полужирные ароматизированные
+fdc:2705596	Cream, half and half, fat free	сливки полужирные обезжиренные
+fdc:2705597	Cream, heavy	сливки жирные
+fdc:2705598	Cream, whipped	сливки взбитые
+fdc:2705599	Coffee creamer, NFS	заменитель сливок для кофе
+fdc:2705600	Coffee creamer, liquid	заменитель сливок жидкий
+fdc:2705601	Coffee creamer, liquid, flavored	заменитель сливок жидкий ароматизированный
+fdc:2705602	Coffee creamer, liquid, fat free	заменитель сливок жидкий обезжиренный
+fdc:2705603	Coffee creamer, liquid, fat free, flavored	заменитель сливок жидкий обезжиренный ароматизированный
+fdc:2705604	Coffee creamer, liquid, fat free, sugar free, flavored	заменитель сливок жидкий обезжиренный без сахара ароматизированный
+fdc:2705605	Coffee creamer, liquid, sugar free, flavored	заменитель сливок жидкий без сахара ароматизированный
+fdc:2705606	Coffee creamer, powder	заменитель сливок сухой
+fdc:2705607	Coffee creamer, powder, flavored	заменитель сливок сухой ароматизированный
+fdc:2705608	Coffee creamer, powder, fat free	заменитель сливок сухой обезжиренный
+fdc:2705609	Coffee creamer,powder, sugar free, flavored	заменитель сливок сухой без сахара ароматизированный
+fdc:2705610	Coffee creamer, soy, liquid	заменитель сливок соевый жидкий
+fdc:2705611	Whipped topping	топпинг взбитый
+fdc:2705612	Whipped topping, fat free	топпинг взбитый обезжиренный
+fdc:2705613	Whipped topping, sugar free	топпинг взбитый без сахара
+fdc:2705614	Sour cream, regular	сметана
+fdc:2705615	Sour cream, light	сметана нежирная
+fdc:2705616	Sour cream, fat free	сметана обезжиренная
+fdc:2705617	Sour cream, imitation	заменитель сметаны
+fdc:2705618	Dip, NFS	соус-дип
+fdc:2705619	Chipotle dip, regular	соус чипотле
+fdc:2705620	Chipotle dip, light	соус чипотле лёгкий
+fdc:2705621	Onion dip, regular	соус луковый
+fdc:2705622	Onion dip, light	соус луковый лёгкий
+fdc:2705623	Ranch dip, regular	соус ранч
+fdc:2705624	Ranch dip, light	соус ранч лёгкий
+fdc:2705625	Spinach dip, regular	соус шпинатный
+fdc:2705626	Spinach dip, light	соус шпинатный лёгкий
+fdc:2705627	Vegetable dip, regular	соус для овощей
+fdc:2705628	Vegetable dip, light	соус для овощей лёгкий
+fdc:2705629	Ice cream, NFS	мороженое
+fdc:2705630	Ice cream, vanilla	мороженое ванильное
+fdc:2705631	Ice cream, vanilla, with additional ingredients	мороженое ванильное с наполнителями
+fdc:2705632	Ice cream, chocolate	мороженое шоколадное
+fdc:2705633	Ice cream, chocolate, with additional ingredients	мороженое шоколадное с наполнителями
+fdc:2705634	Ice cream, soft serve, vanilla	мороженое мягкое ванильное
+fdc:2705635	Ice cream, soft serve, chocolate	мороженое мягкое шоколадное
+fdc:2705636	Gelato, vanilla	джелато ванильное
+fdc:2705637	Gelato, chocolate	джелато шоколадное
+fdc:2705638	Ice cream bar, vanilla	эскимо ванильное
+fdc:2705639	Ice cream bar, vanilla, chocolate coated	эскимо ванильное в шоколадной глазури
+fdc:2705640	Ice cream candy bar	батончик-мороженое
+fdc:2705641	Ice cream bar, chocolate	эскимо шоколадное
+fdc:2705642	Ice cream sandwich, vanilla	сэндвич-мороженое ванильное
+fdc:2705643	Ice cream sandwich, chocolate	сэндвич-мороженое шоколадное
+fdc:2705644	Ice cream cookie sandwich	сэндвич-мороженое с печеньем
+fdc:2705645	Ice cream cone, scooped, vanilla	мороженое ванильное в рожке
+fdc:2705646	Ice cream cone, scooped, vanilla, waffle cone	мороженое ванильное в вафельном рожке
+fdc:2705647	Ice cream cone, NFS	мороженое в рожке
+fdc:2705648	Ice cream cone, scooped, chocolate	мороженое шоколадное в рожке
+fdc:2705649	Ice cream cone, scooped, chocolate, waffle cone	мороженое шоколадное в вафельном рожке
+fdc:2705650	Ice cream cone, soft serve, vanilla	мороженое мягкое ванильное в рожке
+fdc:2705651	Ice cream cone, soft serve, chocolate	мороженое мягкое шоколадное в рожке
+fdc:2705652	Ice cream cone, soft serve, vanilla, waffle cone	мороженое мягкое ванильное в вафельном рожке
+fdc:2705653	Ice cream cone, soft serve, chocolate, waffle cone	мороженое мягкое шоколадное в вафельном рожке
+fdc:2705654	Ice cream cone, vanilla, prepackaged	мороженое в рожке ванильное фабричное
+fdc:2705655	Ice cream cone, chocolate, prepackaged	мороженое в рожке шоколадное фабричное
+fdc:2705656	Ice cream soda, flavors other than chocolate	мороженое с содовой
+fdc:2705657	Ice cream soda, chocolate	мороженое с содовой шоколадное
+fdc:2705658	Ice cream sundae, NFS	сандей
+fdc:2705659	Ice cream sundae, fruit topping	сандей с фруктовым топпингом
+fdc:2705660	Banana split	банана-сплит
+fdc:2705661	Ice cream sundae, hot fudge topping	сандей с горячим шоколадом
+fdc:2705662	Ice cream sundae, caramel topping	сандей с карамелью
+fdc:2705663	Ice cream, fried	мороженое жареное
+fdc:2705664	Light ice cream, NFS	мороженое лёгкое
+fdc:2705665	Light ice cream, vanilla	мороженое лёгкое ванильное
+fdc:2705666	Light ice cream, chocolate	мороженое лёгкое шоколадное
+fdc:2705667	Soft serve, blended with candy or cookies, from fast food	мороженое мягкое с конфетами или печеньем (фастфуд)
+fdc:2705668	Light ice cream sandwich, vanilla	сэндвич-мороженое лёгкое ванильное
+fdc:2705669	Light ice cream sandwich, chocolate	сэндвич-мороженое лёгкое шоколадное
+fdc:2705670	Light ice cream bar, vanilla	эскимо лёгкое ванильное
+fdc:2705671	Light ice cream bar, vanilla, chocolate coated	эскимо лёгкое ванильное в шоколадной глазури
+fdc:2705672	Light ice cream bar, chocolate	эскимо лёгкое шоколадное
+fdc:2705673	Creamsicle	сливочное эскимо
+fdc:2705674	Fudgesicle	шоколадное эскимо
+fdc:2705675	Light ice cream cone, vanilla, prepackaged	мороженое лёгкое в рожке ванильное фабричное
+fdc:2705676	Light ice cream cone, chocolate, prepackaged	мороженое лёгкое в рожке шоколадное фабричное
+fdc:2705677	Sherbet, all flavors	щербет
+fdc:2705678	Fudgesicle, light	шоколадное эскимо лёгкое
+fdc:2705679	Pudding, chocolate, NFS	пудинг шоколадный
+fdc:2705680	Pudding, bread	пудинг хлебный
+fdc:2705681	Pudding, flavors other than chocolate, NFS	пудинг
+fdc:2705682	Custard	заварной крем
+fdc:2705683	Flan	флан
+fdc:2705684	Creme brulee	крем-брюле
+fdc:2705685	Pudding, rice	пудинг рисовый
+fdc:2705686	Firni, Indian pudding	фирни
+fdc:2705687	Pudding, tapioca, made from dry mix	пудинг тапиоковый из сухой смеси
+fdc:2705688	Pudding, flavors other than chocolate, made from dry mix	пудинг из сухой смеси
+fdc:2705689	Pudding, chocolate, made from dry mix	пудинг шоколадный из сухой смеси
+fdc:2705690	Pudding, flavors other than chocolate, made from dry mix, sugar free	пудинг из сухой смеси без сахара
+fdc:2705691	Pudding, chocolate, made from dry mix, sugar free	пудинг шоколадный из сухой смеси без сахара
+fdc:2705692	Pudding, flavors other than chocolate, ready-to-eat	пудинг готовый
+fdc:2705693	Pudding, flavors other than chocolate, ready-to-eat, sugar free	пудинг готовый без сахара
+fdc:2705694	Pudding, chocolate, ready-to-eat	пудинг шоколадный готовый
+fdc:2705695	Pudding, chocolate, ready-to-eat, sugar free	пудинг шоколадный готовый без сахара
+fdc:2705696	Pudding, tapioca, ready-to-eat	пудинг тапиоковый готовый
+fdc:2705697	Banana pudding	пудинг банановый
+fdc:2705698	Mousse	мусс
+fdc:2705699	Dulce de leche	дульсе де лече
+fdc:2705700	Barfi or Burfi, Indian dessert	барфи
+fdc:2705701	Trifle	трайфл
+fdc:2705702	Tiramisu	тирамису
+fdc:2705703	White sauce or gravy	соус белый или подливка
+fdc:2705704	Cheese, NFS	сыр
+fdc:2705705	Cheese, Blue or Roquefort	сыр с плесенью
+fdc:2705706	Cheese, Brick	сыр брик
+fdc:2705707	Cheese, Camembert	сыр камамбер
+fdc:2705708	Cheese, Brie	сыр бри
+fdc:2705709	Cheese, Cheddar	сыр чеддер
+fdc:2705710	Cheese, Cheddar, reduced fat	сыр чеддер нежирный
+fdc:2705711	Cheese, Cheddar, nonfat or fat free	сыр чеддер обезжиренный
+fdc:2705712	Cheese, Colby	сыр колби
+fdc:2705713	Cheese, Colby Jack	сыр колби-джек
+fdc:2705714	Cheese, Feta	сыр фета
+fdc:2705715	Cheese, Fontina	сыр фонтина
+fdc:2705716	Cheese, goat	сыр козий
+fdc:2705717	Cheese, Gouda or Edam	сыр гауда или эдам
+fdc:2705718	Cheese, Gruyere	сыр грюйер
+fdc:2705719	Cheese, Limburger	сыр лимбургер
+fdc:2705720	Cheese, Monterey	сыр монтерей
+fdc:2705721	Cheese, Monterey, reduced fat	сыр монтерей нежирный
+fdc:2705722	Cheese, Mozzarella, NFS	сыр моцарелла
+fdc:2705723	Cheese, Mozzarella, part skim	сыр моцарелла полуобезжиренная
+fdc:2705724	Cheese, Mozzarella, reduced sodium	сыр моцарелла с пониженной солью
+fdc:2705725	Cheese, Mozzarella, nonfat or fat free	сыр моцарелла обезжиренная
+fdc:2705726	Cheese, Muenster	сыр мюнстер
+fdc:2705727	Cheese, Muenster, reduced fat	сыр мюнстер нежирный
+fdc:2705728	Cheese, Parmesan, dry grated	сыр пармезан тёртый
+fdc:2705729	Cheese, Parmesan, dry grated, reduced fat	сыр пармезан тёртый нежирный
+fdc:2705730	Cheese, Parmesan, hard	сыр пармезан
+fdc:2705731	Cheese, Parmesan, dry grated, fat free	сыр пармезан тёртый обезжиренный
+fdc:2705732	Cheese, Port du Salut	сыр порт-дю-салю
+fdc:2705733	Cheese, Provolone	сыр проволоне
+fdc:2705734	Cheese, provolone, reduced fat	сыр проволоне нежирный
+fdc:2705735	Cheese, Swiss	сыр швейцарский
+fdc:2705736	Cheese, Swiss, reduced sodium	сыр швейцарский с пониженной солью
+fdc:2705737	Cheese, Swiss, reduced fat	сыр швейцарский нежирный
+fdc:2705738	Cheese, Swiss, nonfat or fat free	сыр швейцарский обезжиренный
+fdc:2705739	Cheese, Cheddar, reduced sodium	сыр чеддер с пониженной солью
+fdc:2705740	Cheese, paneer	сыр панир
+fdc:2705741	Cheese, Mexican blend	сырная смесь мексиканская
+fdc:2705742	Cheese, Mexican blend, reduced fat	сырная смесь мексиканская нежирная
+fdc:2705743	Queso Anejo, aged Mexican cheese	сыр кесо аньехо
+fdc:2705744	Queso Asadero	сыр кесо асадеро
+fdc:2705745	Queso Fresco	сыр кесо фреско
+fdc:2705746	Queso cotija	сыр котиха
+fdc:2705747	Cheese, cottage, NFS	творог
+fdc:2705748	Cheese, cottage, creamed, large or small curd	творог зернёный
+fdc:2705749	Cottage cheese, farmer's	творог деревенский
+fdc:2705750	Cheese, Ricotta	сыр рикотта
+fdc:2705751	Cheese, cottage, with fruit	творог с фруктами
+fdc:2705752	Cheese, cottage, with vegetables	творог нежирный с овощами
+fdc:2705753	Cheese, cottage, dry curd	творог сухой
+fdc:2705754	Cheese, cottage, salted, dry curd	творог сухой солёный
+fdc:2705755	Puerto Rican white cheese	сыр пуэрториканский белый
+fdc:2705756	Cheese, cottage, low fat	творог нежирный
+fdc:2705757	Cheese, cottage, lowfat, with fruit	творог нежирный с фруктами
+fdc:2705758	Cheese, cottage, lowfat, low sodium	творог нежирный с пониженной солью
+fdc:2705759	Cheese, cottage, lowfat, lactose reduced	творог нежирный с пониженной лактозой
+fdc:2705760	Cream cheese, regular, plain	сыр сливочный
+fdc:2705761	Cream cheese, regular, flavored	сыр сливочный ароматизированный
+fdc:2705762	Cream cheese, light	сыр сливочный лёгкий
+fdc:2705763	Cheese, American and Swiss blends	сырная смесь американско-швейцарская
+fdc:2705764	Cheese, American	сыр американский
+fdc:2705765	Cheese, American, reduced fat	сыр американский нежирный
+fdc:2705766	Cheese, American, nonfat or fat free	сыр американский обезжиренный
+fdc:2705767	Cheese, American, reduced sodium	сыр американский с пониженной солью
+fdc:2705768	Cheese spread, American or Cheddar cheese base, reduced fat	паста сырная нежирная
+fdc:2705769	Cream cheese, fat free	сыр сливочный обезжиренный
+fdc:2705770	Cheese, processed cheese food	сыр плавленый
+fdc:2705771	Cheese, processed, with vegetables	сыр плавленый с овощами
+fdc:2705772	Cheese,  with wine	сыр с вином
+fdc:2705773	Cheese spread, American or Cheddar cheese base	паста сырная американская
+fdc:2705774	Cheese spread, Swiss cheese base	паста сырная швейцарская
+fdc:2705775	Cheese spread, cream cheese	паста из сливочного сыра
+fdc:2705776	Cheese spread, pressurized can	паста сырная в баллончике
+fdc:2705777	Imitation cheese	заменитель сыра
+fdc:2705778	Cheese, cottage cheese, with gelatin dessert	творог с желатиновым десертом
+fdc:2705779	Cheese, cottage cheese, with gelatin dessert and fruit	творог с желатиновым десертом и фруктами
+fdc:2705780	Cheese, cottage cheese, with gelatin dessert and vegetables	творог с желатиновым десертом и овощами
+fdc:2705781	Cheese ball	сырный шар
+fdc:2705782	Artichoke dip	соус с артишоками
+fdc:2705783	Spinach and artichoke dip	соус со шпинатом и артишоками
+fdc:2705784	Seafood dip	соус с морепродуктами
+fdc:2705785	Cheese dip with chili pepper	сырный соус с чили
+fdc:2705786	Cheese dip	сырный соус
+fdc:2705787	Topping from cheese pizza	начинка с сырной пиццы
+fdc:2705788	Topping from vegetable pizza	начинка с овощной пиццы
+fdc:2705789	Topping from meat pizza	начинка с мясной пиццы
+fdc:2705790	Topping from meat and vegetable pizza	начинка с мясной пиццы с овощами
+fdc:2705791	Cheese fondue	сырное фондю
+fdc:2705792	Cheese souffle	сырное суфле
+fdc:2705793	Welsh rarebit	уэльский рареби
+fdc:2705794	Cheese sandwich, NFS	сэндвич с сыром
+fdc:2705795	Cheese sandwich, American cheese, on white bread	сэндвич с американским сыром на белом хлебе
+fdc:2705796	Cheese sandwich, American cheese, on wheat bread	сэндвич с американским сыром на пшеничном хлебе
+fdc:2705797	Cheese sandwich, cheddar cheese, on white bread	сэндвич с чеддером на белом хлебе
+fdc:2705798	Cheese sandwich, cheddar cheese, on wheat bread	сэндвич с чеддером на пшеничном хлебе
+fdc:2705799	Cheese sandwich, reduced fat cheese, on white bread	сэндвич с нежирным сыром на белом хлебе
+fdc:2705800	Cheese sandwich, reduced fat cheese, on wheat bread	сэндвич с нежирным сыром на пшеничном хлебе
+fdc:2705801	Grilled cheese sandwich, NFS	жареный сэндвич с сыром
+fdc:2705802	Grilled cheese sandwich, American cheese, on white bread	жареный сэндвич с американским сыром на белом хлебе
+fdc:2705803	Grilled cheese sandwich, American cheese, on wheat bread	жареный сэндвич с американским сыром на пшеничном хлебе
+fdc:2705804	Grilled cheese sandwich, cheddar cheese, on white bread	жареный сэндвич с чеддером на белом хлебе
+fdc:2705805	Grilled cheese sandwich, cheddar cheese, on wheat bread	жареный сэндвич с чеддером на пшеничном хлебе
+fdc:2705806	Grilled cheese sandwich, reduced fat cheese, on white bread	жареный сэндвич с нежирным сыром на белом хлебе
+fdc:2705807	Grilled cheese sandwich, reduced fat cheese, on wheat bread	жареный сэндвич с нежирным сыром на пшеничном хлебе
+fdc:2705808	Cheese sauce	сырный соус
+fdc:2705809	Alfredo sauce	соус альфредо
+fdc:2705810	Alfredo sauce with added vegetables	соус альфредо с овощами
+fdc:2705811	Alfredo sauce with meat	соус альфредо с мясом
+fdc:2705812	Alfredo sauce with meat and added vegetables	соус альфредо с мясом и овощами
+fdc:2705813	Alfredo sauce with poultry	соус альфредо с курицей
+fdc:2705814	Alfredo sauce with poultry and added vegetables	соус альфредо с курицей и овощами
+fdc:2705815	Alfredo sauce with seafood	соус альфредо с морепродуктами
+fdc:2705816	Alfredo sauce with seafood and added vegetables	соус альфредо с морепродуктами и овощами
+fdc:2705817	Mozzarella sticks, breaded, baked, or fried	палочки моцареллы в панировке
+fdc:2705818	Mozzarella cheese, tomato, and basil, with oil and vinegar dressing	капрезе
+fdc:2705819	Meat, NFS	мясо
+fdc:2705820	Meat, ground, NFS	фарш
+fdc:2705821	Baby Toddler meat, NFS	мясо детское
+fdc:2705822	Beef, NFS	говядина
+fdc:2705823	Steak, NS as to type of meat, NS as to fat eaten	стейк
+fdc:2705824	Beef, steak, NFS	стейк говяжий
+fdc:2705825	Beef, steak, chuck	стейк из шейной части
+fdc:2705826	Beef, steak, cube	стейк отбитый
+fdc:2705827	Beef, steak, flank	стейк фланк
+fdc:2705828	Beef, steak, ribeye, NS as to fat eaten	стейк рибай
+fdc:2705829	Beef, steak, ribeye, lean and fat eaten	стейк рибай с жиром
+fdc:2705830	Beef, steak, ribeye, lean only eaten	стейк рибай без жира
+fdc:2705831	Beef, steak, round	стейк из огузка
+fdc:2705832	Beef, steak, sirloin, NS as to fat eaten	стейк сёрлоин
+fdc:2705833	Beef, steak, sirloin, lean and fat eaten	стейк сёрлоин с жиром
+fdc:2705834	Beef, steak, sirloin, lean only eaten	стейк сёрлоин без жира
+fdc:2705835	Beef, steak, strip, NS as to fat eaten	стейк стриплойн
+fdc:2705836	Beef, steak, strip, lean and fat eaten	стейк стриплойн с жиром
+fdc:2705837	Beef, steak, strip, lean only eaten	стейк стриплойн без жира
+fdc:2705838	Beef, steak, T-bone, NS as to fat eaten	стейк ти-бон
+fdc:2705839	Beef, steak, T-bone,  lean and fat eaten	стейк ти-бон с жиром
+fdc:2705840	Beef, steak, T-bone, lean only eaten	стейк ти-бон без жира
+fdc:2705841	Beef, steak, tenderloin	стейк из вырезки
+fdc:2705842	Beef, steak, country fried	стейк говяжий кантри-фрайд
+fdc:2705843	Beef, oxtails	бычьи хвосты
+fdc:2705844	Beef, neck bones	шея говяжья на кости
+fdc:2705845	Beef, shortribs	рёбра говяжьи короткие
+fdc:2705846	Beef, cow head	голова говяжья
+fdc:2705847	Beef, roast	ростбиф
+fdc:2705848	Beef, pot roast	говядина жареная в горшочке
+fdc:2705849	Beef, stew meat	говядина для тушения
+fdc:2705850	Beef, corned	говядина солёная (корнед-биф)
+fdc:2705851	Beef, brisket	грудинка говяжья
+fdc:2705852	Beef, sandwich steak	стейк для сэндвича
+fdc:2705853	Beef, ground, raw	фарш говяжий сырой
+fdc:2705854	Beef, ground	фарш говяжий
+fdc:2705855	Beef, ground, patty	котлета из фарша говяжьего
+fdc:2705856	Beef, bacon, cooked	бекон говяжий
+fdc:2705857	Beef, bacon, reduced sodium, cooked	бекон говяжий с пониженной солью
+fdc:2705858	Beef, dried, chipped, uncooked	говядина вяленая стружка сырая
+fdc:2705859	Beef, dried, chipped, cooked in fat	говядина вяленая стружка жареная
+fdc:2705860	Beef jerky	говядина вяленая (джерки)
+fdc:2705861	Baby Toddler beef	говядина детская
+fdc:2705862	Pork, NFS	свинина
+fdc:2705863	Pork, ground	фарш свиной
+fdc:2705864	Pork, carnitas	карнитас
+fdc:2705865	Pork jerky	свинина вяленая (джерки)
+fdc:2705866	Pork, chop, NS as to fat eaten	отбивная свиная
+fdc:2705867	Pork, chop, lean and fat eaten	отбивная свиная с жиром
+fdc:2705868	Pork, chop, lean only eaten	отбивная свиная без жира
+fdc:2705869	Pork, chop, coated, NS as to fat eaten	отбивная свиная в панировке
+fdc:2705870	Pork, chop, coated, lean and fat eaten	отбивная свиная в панировке с жиром
+fdc:2705871	Pork, chop, coated, lean only eaten	отбивная свиная в панировке без жира
+fdc:2705872	Pork, chop, stuffed	отбивная свиная фаршированная
+fdc:2705873	Pork, steak, NS as to fat eaten	стейк свиной
+fdc:2705874	Pork, steak, lean and fat eaten	стейк свиной с жиром
+fdc:2705875	Pork, steak, lean only eaten	стейк свиной без жира
+fdc:2705876	Pork, steak, coated	стейк свиной в панировке
+fdc:2705877	Pork, tenderloin	вырезка свиная
+fdc:2705878	Ham	ветчина
+fdc:2705879	Ham, prosciutto	прошутто
+fdc:2705880	Ham, canned	ветчина консервированная
+fdc:2705881	Ham, ground	фарш ветчинный
+fdc:2705882	Pork, roast	свинина жареная
+fdc:2705883	Pork, roll	рулет свиной
+fdc:2705884	Canadian bacon, cooked	бекон канадский
+fdc:2705885	Bacon, NS as to type of meat, cooked	бекон жареный
+fdc:2705886	Bacon, NS as to type of meat, reduced sodium, cooked	бекон с пониженной солью
+fdc:2705887	Pork bacon, NS as to fresh, smoked or cured, cooked	бекон свиной
+fdc:2705888	Pork bacon, NS as to fresh, smoked or cured, reduced sodium, cooked	бекон свиной с пониженной солью
+fdc:2705889	Pork bacon, smoked or cured, cooked	бекон свиной копчёный
+fdc:2705890	Bacon or side pork, fresh, cooked	бекон свежий
+fdc:2705891	Pork bacon, smoked or cured, reduced sodium, cooked	бекон свиной копчёный с пониженной солью
+fdc:2705892	Fat back, cooked	сало спинное
+fdc:2705893	Ribs, NFS	рёбра
+fdc:2705894	Pork, ribs	рёбра свиные
+fdc:2705895	Pork, cracklings	шкварки свиные
+fdc:2705896	Pork, ears	уши свиные
+fdc:2705897	Pork, bones	кости свиные
+fdc:2705898	Pork, pig's feet	ножки свиные
+fdc:2705899	Pork, pig's feet, pickled	ножки свиные маринованные
+fdc:2705900	Pork, ham hocks	рулька свиная
+fdc:2705901	Pork, belly	грудинка свиная
+fdc:2705902	Pork skin rinds	корки свиные
+fdc:2705903	Baby Toddler ham	ветчина детская
+fdc:2705904	Baby Toddler meat stick	мясная палочка детская
+fdc:2705905	Lamb, NS as to cut	баранина
+fdc:2705906	Lamb, chop	отбивная баранья
+fdc:2705907	Lamb, ground	фарш бараний
+fdc:2705908	Goat	козлятина
+fdc:2705909	Veal, chop	отбивная телячья
+fdc:2705910	Veal, ground	фарш телячий
+fdc:2705911	Mock chicken legs	имитация куриных ножек
+fdc:2705912	Rabbit	кролик
+fdc:2705913	Venison, NFS	оленина
+fdc:2705914	Venison, steak	стейк из оленины
+fdc:2705915	Venison/deer jerky	оленина вяленая (джерки)
+fdc:2705916	Venison sausage	колбаса из оленины
+fdc:2705917	Moose	лосятина
+fdc:2705918	Bear	медвежатина
+fdc:2705919	Caribou	карибу
+fdc:2705920	Bison	бизон
+fdc:2705921	Groundhog	сурок
+fdc:2705922	Opossum	опоссум
+fdc:2705923	Squirrel	белка
+fdc:2705924	Beaver	бобр
+fdc:2705925	Raccoon	енот
+fdc:2705926	Armadillo	броненосец
+fdc:2705927	Wild pig	кабан
+fdc:2705928	Ostrich	страус
+fdc:2705929	Chicken, NS as to part and cooking method, NS as to skin eaten	курица
+fdc:2705930	Chicken, NS as to part and cooking method, skin eaten	курица с кожей
+fdc:2705931	Chicken, NS as to part and cooking method, skin not eaten	курица без кожи
+fdc:2705932	Chicken, NS as to part, baked, broiled, or roasted, NS as to skin eaten	курица запечённая
+fdc:2705933	Chicken, NS as to part, baked, broiled, or roasted, skin eaten	курица запечённая с кожей
+fdc:2705934	Chicken, NS as to part, baked, broiled, or roasted, skin not eaten	курица запечённая без кожи
+fdc:2705935	Chicken, NS as to part, rotisserie, NS as to skin eaten	курица на вертеле
+fdc:2705936	Chicken, NS as to part, rotisserie, skin eaten	курица на вертеле с кожей
+fdc:2705937	Chicken, NS as to part, rotisserie, skin not eaten	курица на вертеле без кожи
+fdc:2705938	Chicken, NS as to part, stewed, NS as to skin eaten	курица тушёная
+fdc:2705939	Chicken, NS as to part, stewed, skin eaten	курица тушёная с кожей
+fdc:2705940	Chicken, NS as to part, stewed, skin not eaten	курица тушёная без кожи
+fdc:2705941	Chicken, NS as to part, grilled without sauce, NS as to skin eaten	курица на гриле
+fdc:2705942	Chicken, NS as to part, grilled without sauce, skin eaten	курица на гриле с кожей
+fdc:2705943	Chicken, NS as to part, grilled without sauce, skin not eaten	курица на гриле без кожи
+fdc:2705944	Chicken, NS as to part, grilled with sauce, NS as to skin eaten	курица на гриле с соусом
+fdc:2705945	Chicken, NS as to part, grilled with sauce, skin eaten	курица на гриле с соусом и кожей
+fdc:2705946	Chicken, NS as to part, grilled with sauce, skin not eaten	курица на гриле с соусом без кожи
+fdc:2705947	Chicken, NS as to part, sauteed, skin eaten	курица обжаренная с кожей
+fdc:2705948	Chicken, NS as to part, sauteed, skin not eaten	курица обжаренная без кожи
+fdc:2705949	Chicken, NS as to part, fried, coated, skin / coating eaten	курица жареная в панировке с кожей
+fdc:2705950	Chicken, NS as to part, fried, coated, skin / coating not eaten	курица жареная в панировке без кожи
+fdc:2705951	Chicken, NS as to part, baked, coated, skin / coating eaten	курица запечённая в панировке с кожей
+fdc:2705952	Chicken, NS as to part, baked, coated, skin / coating not eaten	курица запечённая в панировке без кожи
+fdc:2705953	Chicken breast, NS as to cooking method, skin eaten	куриная грудка с кожей
+fdc:2705954	Chicken breast, NS as to cooking method, skin not eaten	куриная грудка без кожи
+fdc:2705955	Chicken breast, baked, broiled, or roasted, skin eaten, from raw	куриная грудка запечённая с кожей (из сырой)
+fdc:2705956	Chicken breast, baked, broiled, or roasted, skin not eaten, from raw	куриная грудка запечённая без кожи (из сырой)
+fdc:2705957	Chicken breast, baked or broiled, skin eaten, from pre-cooked	куриная грудка запечённая с кожей (из готовой)
+fdc:2705958	Chicken breast, baked or broiled, skin not eaten, from pre-cooked	куриная грудка запечённая без кожи (из готовой)
+fdc:2705959	Chicken breast, baked or broiled, skin eaten, from fast food / restaurant	куриная грудка запечённая с кожей (фастфуд)
+fdc:2705960	Chicken breast, baked or broiled, skin not eaten, from fast food / restaurant	куриная грудка запечённая без кожи (фастфуд)
+fdc:2705961	Chicken breast, baked, broiled, or roasted with marinade, skin eaten, from raw	куриная грудка запечённая в маринаде с кожей
+fdc:2705962	Chicken breast, baked, broiled, or roasted with marinade, skin not eaten, from raw	куриная грудка запечённая в маринаде без кожи
+fdc:2705963	Chicken breast, rotisserie, skin eaten	куриная грудка на вертеле с кожей
+fdc:2705964	Chicken breast, rotisserie, skin not eaten	куриная грудка на вертеле без кожи
+fdc:2705965	Chicken breast, stewed, skin eaten	куриная грудка тушёная с кожей
+fdc:2705966	Chicken breast, stewed, skin not eaten	куриная грудка тушёная без кожи
+fdc:2705967	Chicken breast, grilled without sauce, skin eaten	куриная грудка на гриле с кожей
+fdc:2705968	Chicken breast, grilled without sauce, skin not eaten	куриная грудка на гриле без кожи
+fdc:2705969	Chicken breast, grilled with sauce, skin eaten	куриная грудка на гриле с соусом и кожей
+fdc:2705970	Chicken breast, grilled with sauce, skin not eaten	куриная грудка на гриле с соусом без кожи
+fdc:2705971	Chicken breast, sauteed, skin eaten	куриная грудка обжаренная с кожей
+fdc:2705972	Chicken breast, sauteed, skin not eaten	куриная грудка обжаренная без кожи
+fdc:2705973	Chicken breast, fried, coated, skin / coating eaten, from raw	куриная грудка жареная в панировке с кожей (из сырой)
+fdc:2705974	Chicken breast, fried, coated, skin / coating not eaten, from raw	куриная грудка жареная в панировке без кожи (из сырой)
+fdc:2705975	Chicken breast, fried, coated, prepared skinless, coating eaten, from raw	куриная грудка без кожи жареная в панировке (из сырой)
+fdc:2705976	Chicken breast, fried, coated, skin / coating eaten, from pre-cooked	куриная грудка жареная в панировке с кожей (из готовой)
+fdc:2705977	Chicken breast, fried, coated, skin / coating not eaten, from pre-cooked	куриная грудка жареная в панировке без кожи (из готовой)
+fdc:2705978	Chicken breast, fried, coated, skin / coating eaten, from fast food / restaurant	куриная грудка жареная в панировке с кожей (фастфуд)
+fdc:2705979	Chicken breast, fried, coated, skin / coating not eaten, from fast food / restaurant	куриная грудка жареная в панировке без кожи (фастфуд)
+fdc:2705980	Chicken breast, baked, coated, skin / coating eaten	куриная грудка запечённая в панировке с кожей
+fdc:2705981	Chicken breast, baked, coated, skin / coating not eaten	куриная грудка запечённая в панировке без кожи
+fdc:2705982	Chicken leg, drumstick and thigh, NS as to cooking method, skin eaten	куриный окорочок с кожей
+fdc:2705983	Chicken leg, drumstick and thigh, NS as to cooking method, skin not eaten	куриный окорочок без кожи
+fdc:2705984	Chicken leg, drumstick and thigh, baked or broiled, skin eaten	куриный окорочок запечённый с кожей
+fdc:2705985	Chicken leg, drumstick and thigh, baked or broiled, skin not eaten	куриный окорочок запечённый без кожи
+fdc:2705986	Chicken leg, drumstick and thigh, rotisserie, skin eaten	куриный окорочок на вертеле с кожей
+fdc:2705987	Chicken leg, drumstick and thigh, rotisserie, skin not eaten	куриный окорочок на вертеле без кожи
+fdc:2705988	Chicken leg, drumstick and thigh, stewed, skin eaten	куриный окорочок тушёный с кожей
+fdc:2705989	Chicken leg, drumstick and thigh, stewed, skin not eaten	куриный окорочок тушёный без кожи
+fdc:2705990	Chicken leg, drumstick and thigh, grilled without sauce, skin eaten	куриный окорочок на гриле с кожей
+fdc:2705991	Chicken leg, drumstick and thigh, grilled without sauce, skin not eaten	куриный окорочок на гриле без кожи
+fdc:2705992	Chicken leg, drumstick and thigh, grilled with sauce, skin eaten	куриный окорочок на гриле с соусом и кожей
+fdc:2705993	Chicken leg, drumstick and thigh, grilled with sauce, skin not eaten	куриный окорочок на гриле с соусом без кожи
+fdc:2705994	Chicken leg, drumstick and thigh, sauteed, skin eaten	куриный окорочок обжаренный с кожей
+fdc:2705995	Chicken leg, drumstick and thigh, sauteed, skin not eaten	куриный окорочок обжаренный без кожи
+fdc:2705996	Chicken leg, drumstick and thigh, fried, coated, skin / coating eaten	куриный окорочок жареный в панировке с кожей
+fdc:2705997	Chicken leg, drumstick and thigh, fried, coated, skin / coating not eaten	куриный окорочок жареный в панировке без кожи
+fdc:2705998	Chicken leg, drumstick and thigh, baked, coated, skin / coating eaten	куриный окорочок запечённый в панировке с кожей
+fdc:2705999	Chicken leg, drumstick and thigh, baked, coated, skin / coating not eaten	куриный окорочок запечённый в панировке без кожи
+fdc:2706000	Chicken drumstick, NS as to cooking method, skin eaten	куриная голень с кожей
+fdc:2706001	Chicken drumstick, NS as to cooking method, skin not eaten	куриная голень без кожи
+fdc:2706002	Chicken drumstick, baked, broiled, or roasted, skin eaten, from raw	куриная голень запечённая с кожей (из сырой)
+fdc:2706003	Chicken drumstick, baked, broiled, or roasted, skin not eaten, from raw	куриная голень запечённая без кожи (из сырой)
+fdc:2706004	Chicken drumstick, baked or broiled, skin eaten, from pre-cooked	куриная голень запечённая с кожей (из готовой)
+fdc:2706005	Chicken drumstick, baked or broiled, skin not eaten, from pre-cooked	куриная голень запечённая без кожи (из готовой)
+fdc:2706006	Chicken drumstick, baked or broiled, skin eaten, from fast food / restaurant	куриная голень запечённая с кожей (фастфуд)
+fdc:2706007	Chicken drumstick, baked or broiled, skin not eaten, from fast food / restaurant	куриная голень запечённая без кожи (фастфуд)
+fdc:2706008	Chicken drumstick, rotisserie, skin eaten	куриная голень на вертеле с кожей
+fdc:2706009	Chicken drumstick, rotisserie, skin not eaten	куриная голень на вертеле без кожи
+fdc:2706010	Chicken drumstick, grilled without sauce, skin eaten	куриная голень на гриле с кожей
+fdc:2706011	Chicken drumstick, grilled without sauce, skin not eaten	куриная голень на гриле без кожи
+fdc:2706012	Chicken drumstick, grilled with sauce, skin eaten	куриная голень на гриле с соусом и кожей
+fdc:2706013	Chicken drumstick, grilled with sauce, skin not eaten	куриная голень на гриле с соусом без кожи
+fdc:2706014	Chicken drumstick, stewed, skin eaten	куриная голень тушёная с кожей
+fdc:2706015	Chicken drumstick, stewed, skin not eaten	куриная голень тушёная без кожи
+fdc:2706016	Chicken drumstick, sauteed, skin eaten	куриная голень обжаренная с кожей
+fdc:2706017	Chicken drumstick, sauteed, skin not eaten	куриная голень обжаренная без кожи
+fdc:2706018	Chicken drumstick, fried, coated, skin / coating eaten, from raw	куриная голень жареная в панировке с кожей (из сырой)
+fdc:2706019	Chicken drumstick, fried, coated, skin / coating not eaten, from raw	куриная голень жареная в панировке без кожи (из сырой)
+fdc:2706020	Chicken drumstick, fried, coated, prepared skinless, coating eaten, from raw	куриная голень без кожи жареная в панировке (из сырой)
+fdc:2706021	Chicken drumstick, fried, coated, skin / coating eaten, from pre-cooked	куриная голень жареная в панировке с кожей (из готовой)
+fdc:2706022	Chicken drumstick, fried, coated, skin / coating not eaten, from pre-cooked	куриная голень жареная в панировке без кожи (из готовой)
+fdc:2706023	Chicken drumstick, fried, coated, skin / coating eaten, from fast food / restaurant	куриная голень жареная в панировке с кожей (фастфуд)
+fdc:2706024	Chicken drumstick, fried, coated, skin / coating not eaten, from fast food / restaurant	куриная голень жареная в панировке без кожи (фастфуд)
+fdc:2706025	Chicken drumstick, baked, coated, skin / coating eaten	куриная голень запечённая в панировке с кожей
+fdc:2706026	Chicken drumstick, baked, coated, skin / coating not eaten	куриная голень запечённая в панировке без кожи
+fdc:2706027	Chicken thigh, NS as to cooking method, skin eaten	куриное бедро с кожей
+fdc:2706028	Chicken thigh, NS as to cooking method, skin not eaten	куриное бедро без кожи
+fdc:2706029	Chicken thigh, baked, broiled, or roasted, skin eaten, from raw	куриное бедро запечённое с кожей (из сырого)
+fdc:2706030	Chicken thigh, baked, broiled, or roasted, skin not eaten, from raw	куриное бедро запечённое без кожи (из сырого)
+fdc:2706031	Chicken thigh, baked or broiled, skin eaten, from pre-cooked	куриное бедро запечённое с кожей (из готового)
+fdc:2706032	Chicken thigh, baked or broiled, skin not eaten, from pre-cooked	куриное бедро запечённое без кожи (из готового)
+fdc:2706033	Chicken thigh, baked or broiled, skin eaten, from fast food / restaurant	куриное бедро запечённое с кожей (фастфуд)
+fdc:2706034	Chicken thigh, baked or broiled, skin not eaten, from fast food / restaurant	куриное бедро запечённое без кожи (фастфуд)
+fdc:2706035	Chicken thigh, rotisserie, skin eaten	куриное бедро на вертеле с кожей
+fdc:2706036	Chicken thigh, rotisserie, skin not eaten	куриное бедро на вертеле без кожи
+fdc:2706037	Chicken thigh, stewed, skin eaten	куриное бедро тушёное с кожей
+fdc:2706038	Chicken thigh, stewed, skin not eaten	куриное бедро тушёное без кожи
+fdc:2706039	Chicken thigh, grilled without sauce, skin eaten	куриное бедро на гриле с кожей
+fdc:2706040	Chicken thigh, grilled without sauce, skin not eaten	куриное бедро на гриле без кожи
+fdc:2706041	Chicken thigh, grilled with sauce, skin eaten	куриное бедро на гриле с соусом и кожей
+fdc:2706042	Chicken thigh, grilled with sauce, skin not eaten	куриное бедро на гриле с соусом без кожи
+fdc:2706043	Chicken thigh, sauteed, skin eaten	куриное бедро обжаренное с кожей
+fdc:2706044	Chicken thigh, sauteed, skin not eaten	куриное бедро обжаренное без кожи
+fdc:2706045	Chicken thigh, fried, coated, skin / coating eaten, from raw	куриное бедро жареное в панировке с кожей (из сырого)
+fdc:2706046	Chicken thigh, fried, coated, skin / coating not eaten, from raw	куриное бедро жареное в панировке без кожи (из сырого)
+fdc:2706047	Chicken thigh, fried, coated, prepared skinless, coating eaten, from raw	куриное бедро без кожи жареное в панировке (из сырого)
+fdc:2706048	Chicken thigh, fried, coated, skin / coating eaten, from pre-cooked	куриное бедро жареное в панировке с кожей (из готового)
+fdc:2706049	Chicken thigh, fried, coated, skin / coating not eaten, from pre-cooked	куриное бедро жареное в панировке без кожи (из готового)
+fdc:2706050	Chicken thigh, fried, coated, skin / coating eaten, from fast food	куриное бедро жареное в панировке с кожей (фастфуд)
+fdc:2706051	Chicken thigh, fried, coated, skin / coating not eaten, from fast food	куриное бедро жареное в панировке без кожи (фастфуд)
+fdc:2706052	Chicken thigh, fried, coated, skin / coating eaten, from restaurant	куриное бедро жареное в панировке с кожей (ресторан)
+fdc:2706053	Chicken thigh, fried, coated, skin / coating not eaten, from restaurant	куриное бедро жареное в панировке без кожи (ресторан)
+fdc:2706054	Chicken thigh, baked, coated, skin / coating eaten	куриное бедро запечённое в панировке с кожей
+fdc:2706055	Chicken thigh, baked, coated, skin / coating not eaten	куриное бедро запечённое в панировке без кожи
+fdc:2706056	Chicken wing, NS as to cooking method	куриное крыло
+fdc:2706057	Chicken wing, baked, broiled, or roasted, from raw	куриное крыло запечённое (из сырого)
+fdc:2706058	Chicken wing, baked or broiled, from pre-cooked	куриное крыло запечённое (из готового)
+fdc:2706059	Chicken wing, baked or broiled, from fast food / restaurant	куриное крыло запечённое (фастфуд)
+fdc:2706060	Chicken wing, rotisserie	куриное крыло на вертеле
+fdc:2706061	Chicken wing, stewed	куриное крыло тушёное
+fdc:2706062	Chicken wing, grilled without sauce	куриное крыло на гриле
+fdc:2706063	Chicken wing, grilled with sauce	куриное крыло на гриле с соусом
+fdc:2706064	Chicken wing, sauteed	куриное крыло обжаренное
+fdc:2706065	Chicken wing, fried, coated, from raw	куриное крыло жареное в панировке (из сырого)
+fdc:2706066	Chicken wing, fried, coated, from pre-cooked	куриное крыло жареное в панировке (из готового)
+fdc:2706067	Chicken wing, fried, coated, from fast food	куриное крыло жареное в панировке (фастфуд)
+fdc:2706068	Chicken wing, fried, coated, from restaurant	куриное крыло жареное в панировке (ресторан)
+fdc:2706069	Chicken wing, baked, coated	куриное крыло запечённое в панировке
+fdc:2706070	Chicken "wings" with hot sauce, from fast food / restaurant	куриные крылышки с острым соусом (фастфуд)
+fdc:2706071	Chicken "wings" with other sauces or seasoning, from fast food / restaurant	куриные крылышки с соусом (фастфуд)
+fdc:2706072	Chicken "wings", plain, from fast food / restaurant	куриные крылышки без соуса (фастфуд)
+fdc:2706073	Chicken "wings" with hot sauce, from precooked	куриные крылышки с острым соусом (из готовых)
+fdc:2706074	Chicken "wings" with other sauces or seasoning, from precooked	куриные крылышки с соусом (из готовых)
+fdc:2706075	Chicken "wings", plain, from precooked	куриные крылышки без соуса (из готовых)
+fdc:2706076	Chicken "wings" with hot sauce, from other sources	куриные крылышки с острым соусом (прочие)
+fdc:2706077	Chicken "wings" with other sauces or seasoning, from other sources	куриные крылышки с соусом (прочие)
+fdc:2706078	Chicken "wings", plain, from other sources	куриные крылышки без соуса (прочие)
+fdc:2706079	Chicken "wings", boneless, with hot sauce, from fast food / restaurant	куриные крылышки без костей с острым соусом (фастфуд)
+fdc:2706080	Chicken "wings", boneless, with hot sauce, from other sources	куриные крылышки без костей с острым соусом (прочие)
+fdc:2706081	Chicken, back	куриная спинка
+fdc:2706082	Chicken, neck or ribs	куриная шея или рёбра
+fdc:2706083	Chicken, tail	куриный хвост
+fdc:2706084	Chicken skin	куриная кожа
+fdc:2706085	Chicken feet	куриные лапки
+fdc:2706086	Chicken, canned, meat only	курица консервированная
+fdc:2706087	Chicken, chicken roll, roasted	рулет куриный запечённый
+fdc:2706088	Chicken patty, breaded	котлета куриная в панировке
+fdc:2706089	Chicken fillet, breaded	куриное филе в панировке
+fdc:2706090	Chicken fillet, grilled	куриное филе на гриле
+fdc:2706091	Chicken, ground	фарш куриный
+fdc:2706092	Chicken nuggets, NFS	наггетсы куриные
+fdc:2706093	Chicken nuggets, from fast food	наггетсы куриные (фастфуд)
+fdc:2706094	Chicken nuggets, from restaurant	наггетсы куриные (ресторан)
+fdc:2706095	Chicken nuggets, from school lunch	наггетсы куриные (школьная столовая)
+fdc:2706096	Chicken nuggets, from frozen	наггетсы куриные из заморозки
+fdc:2706097	Chicken nuggets, from other sources	наггетсы куриные (прочие)
+fdc:2706098	Chicken tenders or strips, NFS	стрипсы куриные
+fdc:2706099	Chicken tenders or strips, breaded, from fast food	стрипсы куриные в панировке (фастфуд)
+fdc:2706100	Chicken tenders or strips, breaded, from restaurant	стрипсы куриные в панировке (ресторан)
+fdc:2706101	Chicken tenders or strips, breaded, from school lunch	стрипсы куриные в панировке (школьная столовая)
+fdc:2706102	Chicken tenders or strips, breaded, from frozen	стрипсы куриные в панировке из заморозки
+fdc:2706103	Chicken tenders or strips, breaded, from other sources	стрипсы куриные в панировке (прочие)
+fdc:2706104	Turkey, NFS	индейка
+fdc:2706105	Turkey, light meat, skin not eaten	белое мясо индейки без кожи
+fdc:2706106	Turkey, light meat, skin eaten	белое мясо индейки с кожей
+fdc:2706107	Turkey, light meat, breaded, baked or fried, skin not eaten	белое мясо индейки в панировке без кожи
+fdc:2706108	Turkey, light meat, breaded, baked or fried, skin eaten	белое мясо индейки в панировке с кожей
+fdc:2706109	Turkey, light meat, roasted, skin not eaten	белое мясо индейки запечённое без кожи
+fdc:2706110	Turkey, light meat, roasted, skin eaten	белое мясо индейки запечённое с кожей
+fdc:2706111	Turkey, dark meat, roasted, skin not eaten	тёмное мясо индейки запечённое без кожи
+fdc:2706112	Turkey, dark meat, roasted, skin eaten	тёмное мясо индейки запечённое с кожей
+fdc:2706113	Turkey, light and dark meat, roasted, skin not eaten	мясо индейки запечённое без кожи
+fdc:2706114	Turkey, light and dark meat, roasted, skin eaten	мясо индейки запечённое с кожей
+fdc:2706115	Turkey, light or dark meat, fried, coated, skin not eaten	мясо индейки жареное в панировке без кожи
+fdc:2706116	Turkey, light or dark meat, fried, coated, skin eaten	мясо индейки жареное в панировке с кожей
+fdc:2706117	Turkey, light or dark meat, stewed, skin not eaten	мясо индейки тушёное без кожи
+fdc:2706118	Turkey light or dark meat, stewed, skin eaten	мясо индейки тушёное с кожей
+fdc:2706119	Turkey, light or dark meat, smoked, skin eaten	мясо индейки копчёное с кожей
+fdc:2706120	Turkey, light or dark meat, smoked, skin not eaten	мясо индейки копчёное без кожи
+fdc:2706121	Turkey, drumstick, cooked, skin not eaten	голень индейки готовая без кожи
+fdc:2706122	Turkey, drumstick, cooked, skin eaten	голень индейки готовая с кожей
+fdc:2706123	Turkey, drumstick, roasted, skin not eaten	голень индейки запечённая без кожи
+fdc:2706124	Turkey, drumstick, roasted, skin eaten	голень индейки запечённая с кожей
+fdc:2706125	Turkey, thigh, cooked, skin eaten	бедро индейки готовое с кожей
+fdc:2706126	Turkey, thigh, cooked, skin not eaten	бедро индейки готовое без кожи
+fdc:2706127	Turkey, neck	шея индейки
+fdc:2706128	Turkey, wing, cooked, skin not eaten	крыло индейки готовое без кожи
+fdc:2706129	Turkey, wing, cooked, skin eaten	крыло индейки готовое с кожей
+fdc:2706130	Turkey, tail	хвост индейки
+fdc:2706131	Turkey, back	спинка индейки
+fdc:2706132	Turkey, canned	индейка консервированная
+fdc:2706133	Turkey, ground	фарш из индейки
+fdc:2706134	Turkey, nuggets	наггетсы из индейки
+fdc:2706135	Turkey bacon, cooked	бекон из индейки
+fdc:2706136	Turkey bacon, reduced sodium, cooked	бекон из индейки с пониженной солью
+fdc:2706137	Duck, cooked, skin eaten	утка готовая с кожей
+fdc:2706138	Duck, cooked, skin not eaten	утка готовая без кожи
+fdc:2706139	Duck, roasted, skin eaten	утка запечённая с кожей
+fdc:2706140	Duck, roasted, skin not eaten	утка запечённая без кожи
+fdc:2706141	Duck, Peking	утка по-пекински
+fdc:2706142	Goose, wild, roasted	гусь дикий запечённый
+fdc:2706143	Cornish game hen, cooked, skin eaten	цыплёнок корнуолльский готовый с кожей
+fdc:2706144	Cornish game hen, cooked, skin not eaten	цыплёнок корнуолльский готовый без кожи
+fdc:2706145	Cornish game hen, roasted, skin eaten	цыплёнок корнуолльский запечённый с кожей
+fdc:2706146	Cornish game hen, roasted, skin not eaten	цыплёнок корнуолльский запечённый без кожи
+fdc:2706147	Dove, cooked, NS as to cooking method	голубь готовый
+fdc:2706148	Dove, fried	голубь жареный
+fdc:2706149	Quail, cooked	перепёлка готовая
+fdc:2706150	Pheasant, cooked	фазан готовый
+fdc:2706151	Baby Toddler chicken	курица детская
+fdc:2706152	Baby Toddler turkey	индейка детская
+fdc:2706153	Liver, beef	печень говяжья
+fdc:2706154	Liver, chicken	печень куриная
+fdc:2706155	Liver, paste or pate	паста из печени
+fdc:2706156	Heart	сердце
+fdc:2706157	Kidney	почки
+fdc:2706158	Sweetbreads	тимус
+fdc:2706159	Brains	мозги
+fdc:2706160	Tongue	язык
+fdc:2706161	Tongue pot roast, Puerto Rican style	язык тушёный по-пуэрторикански
+fdc:2706162	Tripe	рубец
+fdc:2706163	Chitterlings	свиные кишки
+fdc:2706164	Hog maws	свиной желудок
+fdc:2706165	Gizzard	желудок куриный
+fdc:2706166	Hot dog, NFS	сосиска хот-дог
+fdc:2706167	Hot dog, beef	сосиска хот-дог говяжья
+fdc:2706168	Hot dog, meat and poultry	сосиска хот-дог мясная
+fdc:2706169	Hot dog, reduced fat	сосиска хот-дог нежирная
+fdc:2706170	Hot dog, turkey	сосиска хот-дог из индейки
+fdc:2706171	Beef sausage	колбаса говяжья
+fdc:2706172	Beef sausage with cheese	колбаса говяжья с сыром
+fdc:2706173	Blood sausage	кровяная колбаса
+fdc:2706174	Bratwurst	братвурст
+fdc:2706175	Bratwurst, with cheese	братвурст с сыром
+fdc:2706176	Bologna	колбаса болонья
+fdc:2706177	Bologna, reduced fat	колбаса болонья нежирная
+fdc:2706178	Bologna, reduced sodium	колбаса болонья с пониженной солью
+fdc:2706179	Chorizo	чоризо
+fdc:2706180	Head cheese	свиной зельц
+fdc:2706181	Knockwurst	кноквурст
+fdc:2706182	Mortadella	мортаделла
+fdc:2706183	Pastrami, NFS	пастрами
+fdc:2706184	Pastrami, made from any kind of meat, reduced fat	пастрами нежирная
+fdc:2706185	Pepperoni, NFS	пепперони
+fdc:2706186	Pepperoni, reduced fat	пепперони нежирная
+fdc:2706187	Pepperoni, reduced sodium	пепперони с пониженной солью
+fdc:2706188	Polish sausage	колбаса польская
+fdc:2706189	Italian sausage	колбаса итальянская
+fdc:2706190	Sausage, NFS	колбаса
+fdc:2706191	Pork sausage	колбаса свиная
+fdc:2706192	Pork sausage, reduced fat	колбаса свиная нежирная
+fdc:2706193	Pork sausage, reduced sodium	колбаса свиная с пониженной солью
+fdc:2706194	Pork and beef sausage	колбаса свино-говяжья
+fdc:2706195	Salami, NFS	салями
+fdc:2706196	Salami, made from any type of meat, reduced fat	салями нежирная
+fdc:2706197	Salami, made from any type of meat, reduced sodium	салями с пониженной солью
+fdc:2706198	Scrapple, cooked	скрэппл (свиная запеканка)
+fdc:2706199	Thuringer	колбаса тюринген
+fdc:2706200	Turkey or chicken sausage	колбаса из индейки или курицы
+fdc:2706201	Turkey or chicken sausage, reduced sodium	колбаса из индейки или курицы с пониженной солью
+fdc:2706202	Turkey or chicken and pork sausage	колбаса из птицы и свинины
+fdc:2706203	Vienna sausage, canned	сосиски венские консервированные
+fdc:2706204	Pickled sausage	колбаса маринованная
+fdc:2706205	Luncheon meat, NFS	варёная колбаса
+fdc:2706206	Ham, prepackaged or deli, luncheon meat	варёная колбаса ветчинная
+fdc:2706207	Ham, prepackaged or deli, luncheon meat, reduced sodium	варёная колбаса ветчинная с пониженной солью
+fdc:2706208	Chicken, prepackaged or deli, luncheon meat	варёная колбаса куриная
+fdc:2706209	Chicken, prepackaged or deli, luncheon meat, reduced sodium	варёная колбаса куриная с пониженной солью
+fdc:2706210	Ham luncheon meat, loaf type	варёная колбаса ветчинная батонная
+fdc:2706211	Spam	Spam
+fdc:2706212	Spam, reduced sodium	Spam с пониженной солью
+fdc:2706213	Liverwurst	печёночная колбаса
+fdc:2706214	Luncheon meat, loaf type	варёная колбаса батонная
+fdc:2706215	Turkey, prepackaged or deli, luncheon meat	варёная колбаса из индейки
+fdc:2706216	Turkey, prepackaged or deli, luncheon meat, reduced sodium	варёная колбаса из индейки с пониженной солью
+fdc:2706217	Turkey ham, prepackaged or deli, luncheon meat	варёная колбаса из ветчины индейки
+fdc:2706218	Beef, prepackaged or deli, luncheon meat	варёная колбаса говяжья
+fdc:2706219	Beef, prepackaged or deli, luncheon meat, reduced sodium	варёная колбаса говяжья с пониженной солью
+fdc:2706220	Meat spread or potted meat, NFS	паста мясная
+fdc:2706221	Chicken salad spread	паста из куриного салата
+fdc:2706222	Ham salad spread	паста из ветчинного салата
+fdc:2706223	Fish, raw	рыба сырая
+fdc:2706224	Fish, NFS	рыба
+fdc:2706225	Fish, NS as to type, baked or broiled	рыба запечённая
+fdc:2706226	Fish, NS as to type, baked or broiled, coated	рыба запечённая в панировке
+fdc:2706227	Fish, NS as to type, fried	рыба жареная
+fdc:2706228	Fish, NS as to type, steamed	рыба на пару
+fdc:2706229	Fish, canned	рыба консервированная
+fdc:2706230	Fish, smoked	рыба копчёная
+fdc:2706231	Fish, stick	рыбная палочка
+fdc:2706232	Fish, anchovy	анчоусы
+fdc:2706233	Fish, carp	карп
+fdc:2706234	Fish, catfish, NFS	сом
+fdc:2706235	Fish, catfish, baked or broiled	сом запечённый
+fdc:2706236	Fish, catfish, grilled	сом на гриле
+fdc:2706237	Fish, catfish, baked or broiled, coated	сом запечённый в панировке
+fdc:2706238	Fish, catfish, fried	сом жареный
+fdc:2706239	Fish, catfish, steamed	сом на пару
+fdc:2706240	Fish, cod, NFS	треска
+fdc:2706241	Fish, cod, baked or broiled	треска запечённая
+fdc:2706242	Fish, cod, grilled	треска на гриле
+fdc:2706243	Fish, cod, baked or broiled, coated	треска запечённая в панировке
+fdc:2706244	Fish, cod, fried	треска жареная
+fdc:2706245	Fish, cod, steamed	треска на пару
+fdc:2706246	Fish, croaker	горбыль
+fdc:2706247	Fish, eel	угорь
+fdc:2706248	Fish, flounder, NFS	камбала
+fdc:2706249	Fish, flounder, baked or broiled	камбала запечённая
+fdc:2706250	Fish, flounder, grilled	камбала на гриле
+fdc:2706251	Fish, flounder, baked or broiled, coated	камбала запечённая в панировке
+fdc:2706252	Fish, flounder, fried	камбала жареная
+fdc:2706253	Fish, flounder, steamed	камбала на пару
+fdc:2706254	Fish, haddock, NFS	пикша
+fdc:2706255	Fish, haddock, baked or broiled	пикша запечённая
+fdc:2706256	Fish, haddock, grilled	пикша на гриле
+fdc:2706257	Fish, haddock, baked or broiled, coated	пикша запечённая в панировке
+fdc:2706258	Fish, haddock, fried	пикша жареная
+fdc:2706259	Fish, haddock, steamed	пикша на пару
+fdc:2706260	Fish, halibut	палтус
+fdc:2706261	Fish, herring	сельдь
+fdc:2706262	Fish, pickled	рыба маринованная
+fdc:2706263	Fish, mackerel, NFS	скумбрия
+fdc:2706264	Fish, mackerel, baked or broiled	скумбрия запечённая
+fdc:2706265	Fish, mackerel, grilled	скумбрия на гриле
+fdc:2706266	Fish, mackerel, baked or broiled, coated	скумбрия запечённая в панировке
+fdc:2706267	Fish, mackerel, fried	скумбрия жареная
+fdc:2706268	Fish, mackerel, canned	скумбрия консервированная
+fdc:2706269	Fish, mullet	кефаль
+fdc:2706270	Fish, perch, NFS	окунь
+fdc:2706271	Fish, perch, baked or broiled	окунь запечённый
+fdc:2706272	Fish, perch, grilled	окунь на гриле
+fdc:2706273	Fish, perch, baked or broiled, coated	окунь запечённый в панировке
+fdc:2706274	Fish, perch, fried	окунь жареный
+fdc:2706275	Fish, perch, steamed	окунь на пару
+fdc:2706276	Fish, pike	щука
+fdc:2706277	Fish, pompano, NFS	помпано
+fdc:2706278	Fish, pompano, baked or broiled	помпано запечённое
+fdc:2706279	Fish, pompano, grilled	помпано на гриле
+fdc:2706280	Fish, pompano, baked or broiled, coated	помпано запечённое в панировке
+fdc:2706281	Fish, pompano, fried	помпано жареное
+fdc:2706282	Fish, pompano, steamed	помпано на пару
+fdc:2706283	Fish, snapper	снэппер
+fdc:2706284	Fish, salmon, raw	лосось сырой
+fdc:2706285	Fish, salmon, NFS	лосось
+fdc:2706286	Fish, salmon, baked or broiled	лосось запечённый
+fdc:2706287	Fish, salmon, grilled	лосось на гриле
+fdc:2706288	Fish, salmon, baked or broiled, coated	лосось запечённый в панировке
+fdc:2706289	Fish, salmon, fried	лосось жареный
+fdc:2706290	Fish, salmon, steamed	лосось на пару
+fdc:2706291	Fish, salmon, canned	лосось консервированный
+fdc:2706292	Fish, salmon, smoked	лосось копчёный
+fdc:2706293	Fish, sardines, canned	сардины консервированные
+fdc:2706294	Fish, bass, NFS	окунь морской
+fdc:2706295	Fish, bass, baked or broiled	окунь морской запечённый
+fdc:2706296	Fish, bass, grilled	окунь морской на гриле
+fdc:2706297	Fish, bass, baked or broiled, coated	окунь морской запечённый в панировке
+fdc:2706298	Fish, bass, fried	окунь морской жареный
+fdc:2706299	Fish, bass, steamed	окунь морской на пару
+fdc:2706300	Fish, shark	акула
+fdc:2706301	Fish, swordfish	рыба-меч
+fdc:2706302	Fish, trout, NFS	форель
+fdc:2706303	Fish, trout, baked or broiled	форель запечённая
+fdc:2706304	Fish, trout, grilled	форель на гриле
+fdc:2706305	Fish, trout, baked or broiled, coated	форель запечённая в панировке
+fdc:2706306	Fish, trout, fried	форель жареная
+fdc:2706307	Fish, trout, steamed	форель на пару
+fdc:2706308	Fish, tuna, raw	тунец сырой
+fdc:2706309	Fish, tuna, NFS	тунец
+fdc:2706310	Fish, tuna, cooked	тунец готовый
+fdc:2706311	Fish, tuna, canned	тунец консервированный
+fdc:2706312	Fish, whiting, NFS	мерланг
+fdc:2706313	Fish, whiting, baked or broiled	мерланг запечённый
+fdc:2706314	Fish, whiting, grilled	мерланг на гриле
+fdc:2706315	Fish, whiting, baked or broiled, coated	мерланг запечённый в панировке
+fdc:2706316	Fish, whiting, fried	мерланг жареный
+fdc:2706317	Fish, whiting, steamed	мерланг на пару
+fdc:2706318	Fish, tilapia, NFS	тилапия
+fdc:2706319	Fish, tilapia, baked or broiled	тилапия запечённая
+fdc:2706320	Fish, tilapia, grilled	тилапия на гриле
+fdc:2706321	Fish, tilapia, baked or broiled, coated	тилапия запечённая в панировке
+fdc:2706322	Fish, tilapia, fried	тилапия жареная
+fdc:2706323	Fish, tilapia, steamed	тилапия на пару
+fdc:2706324	Fish, white, mixed species, NFS	рыба белая
+fdc:2706325	Fish, white, mixed species, baked or broiled	рыба белая запечённая
+fdc:2706326	Fish, white, mixed species, baked or broiled, coated	рыба белая запечённая в панировке
+fdc:2706327	Fish, white, mixed species, fried	рыба белая жареная
+fdc:2706328	Fish, white, mixed species, steamed	рыба белая на пару
+fdc:2706329	Fish, white, mixed species, grilled	рыба белая на гриле
+fdc:2706330	Frog legs	лягушачьи лапки
+fdc:2706331	Octopus	осьминог
+fdc:2706332	Caviar	икра
+fdc:2706333	Calamari, cooked	кальмар готовый
+fdc:2706334	Calamari, fried	кальмар жареный
+fdc:2706335	Turtle	черепаха
+fdc:2706336	Shellfish, NFS	моллюски
+fdc:2706337	Abalone	морское ушко
+fdc:2706338	Clams, raw	моллюски-вонголе сырые
+fdc:2706339	Clams, NFS	моллюски-вонголе
+fdc:2706340	Clams, baked or broiled	моллюски-вонголе запечённые
+fdc:2706341	Clams, fried	моллюски-вонголе жареные
+fdc:2706342	Clams, steamed or boiled	моллюски-вонголе отварные
+fdc:2706343	Clams, canned	моллюски-вонголе консервированные
+fdc:2706344	Crab	краб
+fdc:2706345	Crab, canned	краб консервированный
+fdc:2706346	Crab, soft shell	краб с мягким панцирем
+fdc:2706347	Crayfish, fried	рак жареный
+fdc:2706348	Crayfish, cooked	рак отварной
+fdc:2706349	Lobster	омар
+fdc:2706350	Mussels	мидии
+fdc:2706351	Oysters, raw	устрицы сырые
+fdc:2706352	Oysters, baked or broiled	устрицы запечённые
+fdc:2706353	Oysters, steamed	устрицы на пару
+fdc:2706354	Oysters, fried	устрицы жареные
+fdc:2706355	Oysters, canned	устрицы консервированные
+fdc:2706356	Scallops, baked or broiled	гребешки запечённые
+fdc:2706357	Scallops, grilled	гребешки на гриле
+fdc:2706358	Scallops, steamed or boiled	гребешки отварные
+fdc:2706359	Scallops, fried	гребешки жареные
+fdc:2706360	Shrimp, NFS	креветки
+fdc:2706361	Shrimp, baked or broiled	креветки запечённые
+fdc:2706362	Shrimp, grilled	креветки на гриле
+fdc:2706363	Shrimp, steamed or boiled	креветки отварные
+fdc:2706364	Shrimp, fried	креветки жареные
+fdc:2706365	Shrimp, baked or broiled, coated	креветки запечённые в панировке
+fdc:2706366	Shrimp, dried	креветки сушёные
+fdc:2706367	Shrimp, canned	креветки консервированные
+fdc:2706368	Escargot	эскарго
+fdc:2706369	Barbecue meat, NFS	мясо барбекю
+fdc:2706370	Beef with tomato-based sauce	говядина в томатном соусе
+fdc:2706371	Beef burgundy	говядина по-бургундски
+fdc:2706372	Guisada, beef	говядина гисада
+fdc:2706373	Chili, NFS	чили
+fdc:2706374	Chili with meat, from restaurant	чили с мясом (ресторан)
+fdc:2706375	Chili with meat and beans	чили с мясом и фасолью
+fdc:2706376	Chili with meat, canned	чили с мясом консервированный
+fdc:2706377	Chili with meat	чили кон карне
+fdc:2706378	Sloppy joe, no bun	слоппи-джо без булочки
+fdc:2706379	Beef with gravy	говядина в подливе
+fdc:2706380	Salisbury steak with gravy	стейк солсбери с подливой
+fdc:2706381	Beef with cream or white sauce	говядина в сливочном соусе
+fdc:2706382	Beef stroganoff	бефстроганов
+fdc:2706383	Creamed chipped or dried beef	говядина вяленая в сливках
+fdc:2706384	Swedish meatballs with cream or white sauce	шведские фрикадельки в сливочном соусе
+fdc:2706385	Beef with mushroom sauce	говядина в грибном соусе
+fdc:2706386	Beef with soy-based sauce	говядина в соевом соусе
+fdc:2706387	Steak teriyaki	стейк терияки
+fdc:2706388	Beef curry	говядина карри
+fdc:2706389	Beef curry with rice	говядина карри с рисом
+fdc:2706390	Barbecue beef, with sauce	говядина барбекю с соусом
+fdc:2706391	Barbecue beef, no sauce	говядина барбекю без соуса
+fdc:2706392	Beef with sweet and sour sauce	говядина в кисло-сладком соусе
+fdc:2706393	Stewed seasoned ground beef, Mexican style	фарш говяжий тушёный по-мексикански
+fdc:2706394	Steak tartare	тартар из говядины
+fdc:2706395	Meatballs, Puerto Rican style	фрикадельки по-пуэрторикански
+fdc:2706396	Stewed seasoned ground beef, Puerto Rican style	фарш говяжий тушёный по-пуэрторикански
+fdc:2706397	Stewed dried beef, Puerto Rican style	говядина вяленая тушёная по-пуэрторикански
+fdc:2706398	Ham or pork with gravy	ветчина или свинина в подливе
+fdc:2706399	Barbecue pork, with sauce	свинина барбекю с соусом
+fdc:2706400	Barbecue pork, no sauce	свинина барбекю без соуса
+fdc:2706401	Sweet and sour pork	свинина в кисло-сладком соусе
+fdc:2706402	Ham stroganoff	ветчина строганов
+fdc:2706403	Ham or pork with mushroom sauce	ветчина или свинина в грибном соусе
+fdc:2706404	Ham or pork with tomato-based sauce	ветчина или свинина в томатном соусе
+fdc:2706405	Sausage with tomato-based sauce	колбаса в томатном соусе
+fdc:2706406	Sausage gravy	подливка с колбасой
+fdc:2706407	Guisada, pork	свинина гисада
+fdc:2706408	Pork or ham with soy-based sauce	свинина или ветчина в соевом соусе
+fdc:2706409	Chili hot dog, no bun	хот-дог с чили без булочки
+fdc:2706410	Frankfurters or hot dogs with tomato-based sauce	сосиски в томатном соусе
+fdc:2706411	Pork with chili and tomatoes	свинина с чили и томатами
+fdc:2706412	Stewed pork, Puerto Rican style	свинина тушёная по-пуэрторикански
+fdc:2706413	Lamb or mutton with gravy	баранина в подливе
+fdc:2706414	Stewed goat, Puerto Rican style	козлятина тушёная по-пуэрторикански
+fdc:2706415	Veal scallopini	телятина скалопини
+fdc:2706416	Veal Marsala	телятина марсала
+fdc:2706417	Veal parmigiana	телятина пармиджана
+fdc:2706418	Veal cordon bleu	телятина кордон-блё
+fdc:2706419	Venison or deer with tomato-based sauce	оленина в томатном соусе
+fdc:2706420	Venison or deer with gravy	оленина в подливе
+fdc:2706421	Chicken or turkey cacciatore	курица или индейка каччаторе
+fdc:2706422	Spaghetti sauce with poultry	соус для спагетти с курицей
+fdc:2706423	Spaghetti sauce with poultry and added vegetables	соус для спагетти с курицей и овощами
+fdc:2706424	Stewed chicken with tomato-based sauce, Mexican style	курица тушёная в томатном соусе по-мексикански
+fdc:2706425	Chili with chicken and beans	чили с курицей и фасолью
+fdc:2706426	Chili with chicken	чили с курицей
+fdc:2706427	Chili, white	чили белый
+fdc:2706428	Chicken with gravy	курица в подливе
+fdc:2706429	Chicken or turkey fricassee	курица или индейка фрикасе
+fdc:2706430	Turkey with gravy	индейка в подливе
+fdc:2706431	Chicken or turkey with cream sauce	курица или индейка в сливочном соусе
+fdc:2706432	Chicken or turkey with mushroom sauce	курица или индейка в грибном соусе
+fdc:2706433	Chicken or turkey with teriyaki	курица или индейка терияки
+fdc:2706434	Barbecue chicken	курица барбекю
+fdc:2706435	Sweet and sour chicken or turkey	курица или индейка в кисло-сладком соусе
+fdc:2706436	Sweet and sour chicken or turkey, without vegetables	курица или индейка в кисло-сладком соусе без овощей
+fdc:2706437	Chicken curry	курица карри
+fdc:2706438	Chicken curry with rice	курица карри с рисом
+fdc:2706439	Chicken with mole sauce	курица в соусе моле
+fdc:2706440	Chicken or turkey with cheese sauce	курица или индейка в сырном соусе
+fdc:2706441	Chicken or turkey cordon bleu	курица или индейка кордон-блё
+fdc:2706442	Chicken or turkey parmigiana	курица или индейка пармиджана
+fdc:2706443	Orange chicken	курица апельсиновая
+fdc:2706444	Sesame chicken	курица кунжутная
+fdc:2706445	Chicken kiev	котлета по-киевски
+fdc:2706446	Stuffed chicken, drumstick or breast, Puerto Rican style	курица фаршированная по-пуэрторикански
+fdc:2706447	Fish with cream or white sauce, not tuna or lobster	рыба в сливочном соусе
+fdc:2706448	Fish timbale or mousse	рыбный тимбаль или мусс
+fdc:2706449	Shrimp cocktail	креветочный коктейль
+fdc:2706450	Tuna with cream or white sauce	тунец в сливочном соусе
+fdc:2706451	Seafood thermidor	морепродукты термидор
+fdc:2706452	Seafood sauce	соус для морепродуктов
+fdc:2706453	Spaghetti sauce with seafood	соус для спагетти с морепродуктами
+fdc:2706454	Spaghetti sauce with seafood and added vegetables	соус для спагетти с морепродуктами и овощами
+fdc:2706455	Shrimp with lobster sauce	креветки в соусе из омара
+fdc:2706456	Sweet and sour shrimp	креветки в кисло-сладком соусе
+fdc:2706457	Fish sauce	рыбный соус
+fdc:2706458	Shrimp scampi	креветки скампи
+fdc:2706459	Fish with tomato-based sauce	рыба в томатном соусе
+fdc:2706460	Fish curry	рыба карри
+fdc:2706461	Fish curry with rice	рыба карри с рисом
+fdc:2706462	Shrimp teriyaki	креветки терияки
+fdc:2706463	Ceviche	севиче
+fdc:2706464	Crabs in tomato-based sauce, Puerto Rican style	крабы в томатном соусе по-пуэрторикански
+fdc:2706465	Shrimp in garlic sauce, Puerto Rican style	креветки в чесночном соусе по-пуэрторикански
+fdc:2706466	Stew, fish	рыбное рагу
+fdc:2706467	Meatballs, NS as to type of meat, with sauce	фрикадельки в соусе
+fdc:2706468	Meat loaf, Puerto Rican style	мясной хлеб по-пуэрторикански
+fdc:2706469	Meat with tomato-based sauce	мясо в томатном соусе
+fdc:2706470	Spaghetti sauce with meat	соус для спагетти с мясом
+fdc:2706471	Spaghetti sauce with meat and added vegetables	соус для спагетти с мясом и овощами
+fdc:2706472	Stewed, seasoned, ground beef and pork, Mexican style	фарш говяжий и свиной тушёный по-мексикански
+fdc:2706473	Meat with gravy, NS as to type of meat,	мясо в подливе
+fdc:2706474	Beef and potatoes, no sauce	говядина с картофелем без соуса
+fdc:2706475	Beef and potatoes with cream sauce, white sauce or mushroom sauce	говядина с картофелем в сливочном соусе
+fdc:2706476	Beef, roast, hash	хэш из ростбифа
+fdc:2706477	Corned beef hash	хэш из корнед-бифа
+fdc:2706478	Beef and potatoes with cheese sauce	говядина с картофелем в сырном соусе
+fdc:2706479	Stewed, seasoned, ground beef with potatoes, Mexican style	фарш говяжий тушёный с картофелем по-мексикански
+fdc:2706480	Beef and noodles, no sauce	говядина с лапшой без соуса
+fdc:2706481	Beef and macaroni with cheese sauce	говядина с макаронами в сырном соусе
+fdc:2706482	Beef and noodles with tomato-based sauce	говядина с лапшой в томатном соусе
+fdc:2706483	Chili with macaroni	чили с макаронами
+fdc:2706484	Beef and noodles with gravy	говядина с лапшой в подливе
+fdc:2706485	Beef and noodles with cream or white sauce	говядина с лапшой в сливочном соусе
+fdc:2706486	Beef stroganoff with noodles	бефстроганов с лапшой
+fdc:2706487	Beef and noodles with mushroom sauce	говядина с лапшой в грибном соусе
+fdc:2706488	Beef and noodles with soy-based sauce	говядина с лапшой в соевом соусе
+fdc:2706489	Beef and rice, no sauce	говядина с рисом без соуса
+fdc:2706490	Biryani with meat	бирьяни с мясом
+fdc:2706491	Beef and rice with tomato-based sauce	говядина с рисом в томатном соусе
+fdc:2706492	Porcupine balls with tomato-based sauce	фрикадельки-ёжики в томатном соусе
+fdc:2706493	Beef and rice with gravy	говядина с рисом в подливе
+fdc:2706494	Beef and rice with cream sauce	говядина с рисом в сливочном соусе
+fdc:2706495	Beef and rice with mushroom sauce	говядина с рисом в грибном соусе
+fdc:2706496	Porcupine balls with mushroom sauce	фрикадельки-ёжики в грибном соусе
+fdc:2706497	Beef and rice with soy-based sauce	говядина с рисом в соевом соусе
+fdc:2706498	Beef and rice with cheese sauce	говядина с рисом в сырном соусе
+fdc:2706499	Meat loaf made with beef	мясной хлеб из говядины
+fdc:2706500	Meat loaf made with beef, with tomato-based sauce	мясной хлеб из говядины в томатном соусе
+fdc:2706501	Beef wellington	говядина веллингтон
+fdc:2706502	Corned beef patty	котлета из корнед-бифа
+fdc:2706503	Beef stew with potatoes, Puerto Rican style	говядина тушёная с картофелем по-пуэрторикански
+fdc:2706504	Meat loaf made with ham	мясной хлеб из ветчины
+fdc:2706505	Ham and noodles with cream or white sauce	ветчина с лапшой в сливочном соусе
+fdc:2706506	Ham and rice with mushroom sauce	ветчина с рисом в грибном соусе
+fdc:2706507	Ham or pork with stuffing	ветчина или свинина с начинкой
+fdc:2706508	Ham croquette	крокеты из ветчины
+fdc:2706509	Pork and rice with tomato-based sauce	свинина с рисом в томатном соусе
+fdc:2706510	Sausage and rice with tomato-based sauce	колбаса с рисом в томатном соусе
+fdc:2706511	Sausage and rice with mushroom sauce	колбаса с рисом в грибном соусе
+fdc:2706512	Sausage and rice with cheese sauce	колбаса с рисом в сырном соусе
+fdc:2706513	Sausage and noodles with cream or white sauce	колбаса с лапшой в сливочном соусе
+fdc:2706514	Ham and noodles, no sauce	ветчина с лапшой без соуса
+fdc:2706515	Ham or pork and rice, no sauce	ветчина или свинина с рисом без соуса
+fdc:2706516	Ham or pork and potatoes with gravy	ветчина или свинина с картофелем в подливе
+fdc:2706517	Ham or pork and potatoes with cheese sauce	ветчина или свинина с картофелем в сырном соусе
+fdc:2706518	Stewed pig's feet, Puerto Rican style	ножки свиные тушёные по-пуэрторикански
+fdc:2706519	Stew, pork	рагу из свинины
+fdc:2706520	Stew, pork, with pasta	рагу из свинины с макаронами
+fdc:2706521	Lamb or mutton loaf	мясной хлеб из баранины
+fdc:2706522	Lamb or mutton and potatoes with gravy	баранина с картофелем в подливе
+fdc:2706523	Lamb or mutton and potatoes with tomato-based sauce	баранина с картофелем в томатном соусе
+fdc:2706524	Lamb or mutton and noodles with gravy	баранина с лапшой в подливе
+fdc:2706525	Meat loaf made with venison/deer	мясной хлеб из оленины
+fdc:2706526	Venison or deer and noodles with cream or white sauce	оленина с лапшой в сливочном соусе
+fdc:2706527	Chicken or turkey hash	хэш из курицы или индейки
+fdc:2706528	Chicken or turkey and potatoes with gravy	курица или индейка с картофелем в подливе
+fdc:2706529	Chicken or turkey and noodles, no sauce	курица или индейка с лапшой без соуса
+fdc:2706530	Chicken or turkey and noodles with gravy	курица или индейка с лапшой в подливе
+fdc:2706531	Chicken or turkey and noodles with mushroom sauce	курица или индейка с лапшой в грибном соусе
+fdc:2706532	Chicken or turkey and noodles with cream or white sauce	курица или индейка с лапшой в сливочном соусе
+fdc:2706533	Chicken or turkey and noodles with cheese sauce	курица или индейка с лапшой в сырном соусе
+fdc:2706534	Chicken or turkey tetrazzini	курица или индейка тетраццини
+fdc:2706535	Chicken or turkey and noodles with tomato-based sauce	курица или индейка с лапшой в томатном соусе
+fdc:2706536	Chicken or turkey and noodles with soy-based sauce	курица или индейка с лапшой в соевом соусе
+fdc:2706537	Chicken or turkey and rice, no sauce	курица или индейка с рисом без соуса
+fdc:2706538	Biryani with chicken	бирьяни с курицей
+fdc:2706539	Chicken or turkey and rice with cream sauce	курица или индейка с рисом в сливочном соусе
+fdc:2706540	Chicken or turkey and rice with mushroom sauce	курица или индейка с рисом в грибном соусе
+fdc:2706541	Chicken or turkey and rice with tomato-based sauce	курица или индейка с рисом в томатном соусе
+fdc:2706542	Chicken or turkey and rice with soy-based sauce	курица или индейка с рисом в соевом соусе
+fdc:2706543	Chicken or turkey with dumplings	курица или индейка с клёцками
+fdc:2706544	Chicken or turkey with stuffing	курица или индейка с начинкой
+fdc:2706545	Chicken or turkey cake, patty, or croquette	котлета из курицы или индейки
+fdc:2706546	Chicken or turkey souffle	суфле из курицы или индейки
+fdc:2706547	Meat loaf made with chicken or turkey	мясной хлеб из курицы или индейки
+fdc:2706548	Meat loaf made with chicken or turkey, with tomato-based sauce	мясной хлеб из курицы или индейки в томатном соусе
+fdc:2706549	Crab, cake	крабовая котлета
+fdc:2706550	Fish, cake or patty	рыбная котлета
+fdc:2706551	Gefilte fish	рыба гефилте
+fdc:2706552	Fish, salmon cake or patty	котлета из лосося
+fdc:2706553	Shrimp and noodles, no sauce	креветки с лапшой без соуса
+fdc:2706554	Shrimp and noodles with gravy	креветки с лапшой в подливе
+fdc:2706555	Shrimp and noodles with mushroom sauce	креветки с лапшой в грибном соусе
+fdc:2706556	Shrimp and noodles with cream or white sauce	креветки с лапшой в сливочном соусе
+fdc:2706557	Shrimp and noodles with soy-based sauce	креветки с лапшой в соевом соусе
+fdc:2706558	Shrimp and noodles with cheese sauce	креветки с лапшой в сырном соусе
+fdc:2706559	Shrimp and noodles with tomato sauce	креветки с лапшой в томатном соусе
+fdc:2706560	Tuna cake or patty	котлета из тунца
+fdc:2706561	Clam cake or patty	котлета из моллюсков
+fdc:2706562	Flounder with crab stuffing	камбала фаршированная крабом
+fdc:2706563	Lobster with bread stuffing, baked	омар фаршированный хлебом запечённый
+fdc:2706564	Clams Casino	моллюски казино
+fdc:2706565	Shrimp, cake or patty	котлета из креветок
+fdc:2706566	Shrimp with crab stuffing	креветки фаршированные крабом
+fdc:2706567	Shrimp toast	креветочный тост
+fdc:2706568	Imitation crab meat	крабовые палочки
+fdc:2706569	Seafood souffle	суфле из морепродуктов
+fdc:2706570	Tuna noodle casserole with cream or white sauce	запеканка из тунца с лапшой в сливочном соусе
+fdc:2706571	Tuna noodle casserole with mushroom sauce	запеканка из тунца с лапшой в грибном соусе
+fdc:2706572	Tuna and rice with mushroom sauce	тунец с рисом в грибном соусе
+fdc:2706573	Fish and rice with tomato-based sauce	рыба с рисом в томатном соусе
+fdc:2706574	Fish and rice with cream sauce	рыба с рисом в сливочном соусе
+fdc:2706575	Fish and rice with mushroom sauce	рыба с рисом в грибном соусе
+fdc:2706576	Fish and noodles with mushroom sauce	рыба с лапшой в грибном соусе
+fdc:2706577	Shellfish and noodles with tomato-based sauce	морепродукты с лапшой в томатном соусе
+fdc:2706578	Stewed salmon, Puerto Rican style	лосось тушёный по-пуэрторикански
+fdc:2706579	Meat loaf, NS as to type of meat	мясной хлеб
+fdc:2706580	Meatballs, with breading, NS as to type of meat, with gravy	фрикадельки в панировке в подливе
+fdc:2706581	Meat loaf made with beef and pork	мясной хлеб из говядины и свинины
+fdc:2706582	Meat loaf made with beef, veal and pork	мясной хлеб из говядины, телятины и свинины
+fdc:2706583	Meat loaf made with beef and pork, with tomato-based sauce	мясной хлеб из говядины и свинины в томатном соусе
+fdc:2706584	Hash, NS as to type of meat	хэш
+fdc:2706585	Vienna sausages stewed with potatoes, Puerto Rican style	сосиски венские тушёные с картофелем по-пуэрторикански
+fdc:2706586	Stewed, seasoned, ground beef and pork with potatoes, Mexican style	фарш говяжий и свиной тушёный с картофелем по-мексикански
+fdc:2706587	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	говядина с картофелем, морковью и брокколи без соуса
+fdc:2706588	Beef, potatoes, and vegetables, excluding carrots, broccoli, and dark-green leafy; no sauce	говядина с картофелем и овощами без моркови и брокколи, без соуса
+fdc:2706589	Corned beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	корнед-биф с картофелем, морковью и брокколи без соуса
+fdc:2706590	Corned beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	корнед-биф с картофелем и овощами без моркови и брокколи, без соуса
+fdc:2706591	Stew, beef, canned	рагу из говядины консервированное
+fdc:2706592	Stew, beef	рагу из говядины
+fdc:2706593	Stew, beef, with pasta	рагу из говядины с макаронами
+fdc:2706594	Shepherd's pie	пастуший пирог
+fdc:2706595	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	говядина с картофелем, морковью и брокколи в подливе
+fdc:2706596	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	говядина с картофелем и овощами без моркови и брокколи в подливе
+fdc:2706597	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	говядина с картофелем, морковью и брокколи в сливочном соусе
+fdc:2706598	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	говядина с картофелем и овощами без моркови и брокколи в сливочном соусе
+fdc:2706599	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	говядина с картофелем, морковью и брокколи в томатном соусе
+fdc:2706600	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	говядина с картофелем и овощами без моркови и брокколи в томатном соусе
+fdc:2706601	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	говядина с картофелем, морковью и брокколи в сырном соусе
+fdc:2706602	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	говядина с картофелем и овощами без моркови и брокколи в сырном соусе
+fdc:2706603	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	говядина с картофелем, морковью и брокколи в соевом соусе
+fdc:2706604	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	говядина с картофелем и овощами без моркови и брокколи в соевом соусе
+fdc:2706605	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	говядина с лапшой, морковью и брокколи без соуса
+fdc:2706606	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	говядина с лапшой и овощами без моркови и брокколи, без соуса
+fdc:2706607	Beef chow mein or chop suey with noodles	чоу-мейн с говядиной и лапшой
+fdc:2706608	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	говядина с лапшой, морковью и брокколи в соевом соусе
+fdc:2706609	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	говядина с лапшой и овощами без моркови и брокколи в соевом соусе
+fdc:2706610	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	говядина с лапшой, морковью и брокколи в томатном соусе
+fdc:2706611	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	говядина с лапшой и овощами без моркови и брокколи в томатном соусе
+fdc:2706612	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; mushroom sauce	говядина с лапшой, морковью и брокколи в грибном соусе
+fdc:2706613	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; mushroom sauce	говядина с лапшой и овощами без моркови и брокколи в грибном соусе
+fdc:2706614	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	говядина с лапшой, морковью и брокколи в подливе
+fdc:2706615	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	говядина с лапшой и овощами без моркови и брокколи в подливе
+fdc:2706616	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	говядина с рисом, морковью и брокколи без соуса
+fdc:2706617	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	говядина с рисом и овощами без моркови и брокколи, без соуса
+fdc:2706618	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	говядина с рисом, морковью и брокколи в томатном соусе
+fdc:2706619	Beef, rice, and vegetables excluding carrots, broccoli, and/or dark-green leafy; tomato-based sauce	говядина с рисом и овощами без моркови и брокколи в томатном соусе
+fdc:2706620	Stuffed cabbage rolls with beef and rice	голубцы с говядиной и рисом
+fdc:2706621	Stuffed grape leaves with beef and rice	долма с говядиной и рисом
+fdc:2706622	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; mushroom sauce	говядина с рисом, морковью и брокколи в грибном соусе
+fdc:2706623	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; mushroom sauce	говядина с рисом и овощами без моркови и брокколи в грибном соусе
+fdc:2706624	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	говядина с рисом, морковью и брокколи в сырном соусе
+fdc:2706625	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	говядина с рисом и овощами без моркови и брокколи в сырном соусе
+fdc:2706626	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	говядина с рисом, морковью и брокколи в подливе
+fdc:2706627	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	говядина с рисом и овощами без моркови и брокколи в подливе
+fdc:2706628	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	говядина с рисом, морковью и брокколи в соевом соусе
+fdc:2706629	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	говядина с рисом и овощами без моркови и брокколи в соевом соусе
+fdc:2706630	Pot pie, beef	пирог с говядиной
+fdc:2706631	Beef, dumplings, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	говядина с клёцками, морковью и брокколи в подливе
+fdc:2706632	Beef, dumplings, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	говядина с клёцками и овощами без моркови и брокколи в подливе
+fdc:2706633	Stuffed green pepper, Puerto Rican style	перец зелёный фаршированный по-пуэрторикански
+fdc:2706634	Ham or pork, noodles and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	ветчина или свинина с лапшой и овощами без моркови и брокколи, без соуса
+fdc:2706635	Ham or pork, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	ветчина или свинина с лапшой, морковью и брокколи без соуса
+fdc:2706636	Ham or pork, noodles and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	ветчина или свинина с лапшой и овощами без моркови и брокколи в сырном соусе
+fdc:2706637	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	свинина с картофелем, морковью и брокколи без соуса
+fdc:2706638	Ham or pork, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	ветчина или свинина с лапшой, морковью и брокколи в томатном соусе
+fdc:2706639	Sausage, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	колбаса с лапшой и овощами без моркови и брокколи в томатном соусе
+fdc:2706640	Sausage, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	колбаса с лапшой, морковью и брокколи в томатном соусе
+fdc:2706641	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	свинина с картофелем, морковью и брокколи в томатном соусе
+fdc:2706642	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	свинина с картофелем и овощами без моркови и брокколи в томатном соусе
+fdc:2706643	Sausage, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	колбаса с картофелем, морковью и брокколи в подливе
+fdc:2706644	Sausage, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	колбаса с картофелем и овощами без моркови и брокколи в подливе
+fdc:2706645	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	свинина с картофелем, морковью и брокколи в подливе
+fdc:2706646	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	свинина с картофелем и овощами без моркови и брокколи в подливе
+fdc:2706647	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	свинина с картофелем и овощами без моркови и брокколи, без соуса
+fdc:2706648	Pork chow mein or chop suey with noodles	чоу-мейн со свининой и лапшой
+fdc:2706649	Pork, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	свинина с рисом, морковью и брокколи в соевом соусе
+fdc:2706650	Pork, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	свинина с рисом и овощами без моркови и брокколи в соевом соусе
+fdc:2706651	Pork, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	свинина с рисом, морковью и брокколи в томатном соусе
+fdc:2706652	Pork, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	свинина с рисом и овощами без моркови и брокколи в томатном соусе
+fdc:2706653	Ham, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	ветчина с картофелем и овощами без моркови и брокколи, без соуса
+fdc:2706654	Ham, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	ветчина с картофелем, морковью и брокколи без соуса
+fdc:2706655	Sweet and sour pork with rice	свинина в кисло-сладком соусе с рисом
+fdc:2706656	Lamb or mutton, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	баранина с рисом и овощами без моркови и брокколи в подливе
+fdc:2706657	Lamb or mutton, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	баранина с рисом, морковью и брокколи в томатном соусе
+fdc:2706658	Lamb or mutton, rice, and vegetables  including carrots, broccoli, and/or dark-green leafy; gravy	баранина с рисом, морковью и брокколи в подливе
+fdc:2706659	Stuffed grape leaves with lamb and rice	долма с бараниной и рисом
+fdc:2706660	Stew, lamb	рагу из баранины
+fdc:2706661	Stewed rabbit, Puerto Rican style,	кролик тушёный по-пуэрторикански
+fdc:2706662	Venison or deer, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	оленина с картофелем, морковью и брокколи в подливе
+fdc:2706663	Venison or deer, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	оленина с картофелем и овощами без моркови и брокколи в подливе
+fdc:2706664	Venison or deer, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	оленина с лапшой, морковью и брокколи в томатном соусе
+fdc:2706665	Venison or deer, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	оленина с лапшой и овощами без моркови и брокколи в томатном соусе
+fdc:2706666	Chicken or turkey, potatoes, corn, and cheese, with gravy	курица или индейка с картофелем, кукурузой и сыром в подливе
+fdc:2706667	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	курица или индейка с картофелем, морковью и брокколи без соуса
+fdc:2706668	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	курица или индейка с картофелем и овощами без моркови и брокколи, без соуса
+fdc:2706669	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	курица или индейка с картофелем, морковью и брокколи в подливе
+fdc:2706670	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	курица или индейка с картофелем и овощами без моркови и брокколи в подливе
+fdc:2706671	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с картофелем, морковью и брокколи в сливочном соусе
+fdc:2706672	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с картофелем и овощами без моркови и брокколи в сливочном соусе
+fdc:2706673	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	курица или индейка с картофелем, морковью и брокколи в сырном соусе
+fdc:2706674	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	курица или индейка с картофелем и овощами без моркови и брокколи в сырном соусе
+fdc:2706675	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	курица или индейка с картофелем, морковью и брокколи в томатном соусе
+fdc:2706676	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	курица или индейка с картофелем и овощами без моркови и брокколи в томатном соусе
+fdc:2706677	Stew, chicken, with pasta	рагу из курицы с макаронами
+fdc:2706678	Stew, chicken	рагу из курицы
+fdc:2706679	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	курица или индейка с лапшой, морковью и брокколи без соуса
+fdc:2706680	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	курица или индейка с лапшой и овощами без моркови и брокколи, без соуса
+fdc:2706681	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	курица или индейка с лапшой, морковью и брокколи в подливе
+fdc:2706682	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	курица или индейка с лапшой и овощами без моркови и брокколи в подливе
+fdc:2706683	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с лапшой, морковью и брокколи в сливочном соусе
+fdc:2706684	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с лапшой и овощами без моркови и брокколи в сливочном соусе
+fdc:2706685	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	курица или индейка с лапшой, морковью и брокколи в томатном соусе
+fdc:2706686	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	курица или индейка с лапшой и овощами без моркови и брокколи в томатном соусе
+fdc:2706687	Chicken or turkey chow mein or chop suey with noodles	чоу-мейн с курицей или индейкой и лапшой
+fdc:2706688	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	курица или индейка с лапшой, морковью и брокколи в сырном соусе
+fdc:2706689	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	курица или индейка с лапшой и овощами без моркови и брокколи в сырном соусе
+fdc:2706690	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	курица или индейка с рисом, морковью и брокколи без соуса
+fdc:2706691	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	курица или индейка с рисом и овощами без моркови и брокколи, без соуса
+fdc:2706692	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	курица или индейка с рисом, морковью и брокколи в подливе
+fdc:2706693	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	курица или индейка с рисом и овощами без моркови и брокколи в подливе
+fdc:2706694	Chicken or turkey, rice, corn, and cheese, with gravy	курица или индейка с рисом, кукурузой и сыром в подливе
+fdc:2706695	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	курица или индейка с рисом, морковью и брокколи в соевом соусе
+fdc:2706696	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	курица или индейка с рисом и овощами без моркови и брокколи в соевом соусе
+fdc:2706697	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с рисом, морковью и брокколи в сливочном соусе
+fdc:2706698	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	курица или индейка с рисом и овощами без моркови и брокколи в сливочном соусе
+fdc:2706699	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	курица или индейка с рисом, морковью и брокколи в сырном соусе
+fdc:2706700	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	курица или индейка с рисом и овощами без моркови и брокколи в сырном соусе
+fdc:2706701	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	курица или индейка с рисом, морковью и брокколи в томатном соусе
+fdc:2706702	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	курица или индейка с рисом и овощами без моркови и брокколи в томатном соусе
+fdc:2706703	Pot pie, chicken	пирог с курицей
+fdc:2706704	Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	курица или индейка с начинкой, морковью и брокколи без соуса
+fdc:2706705	Chicken or turkey,stuffing, and vegetables excluding carrots, broccoli, and dark green leafy; no sauce	курица или индейка с начинкой и овощами без моркови и брокколи, без соуса
+fdc:2706706	Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	курица или индейка с начинкой, морковью и брокколи в подливе
+fdc:2706707	Chicken or turkey, stuffing, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	курица или индейка с начинкой и овощами без моркови и брокколи в подливе
+fdc:2706708	Chicken or turkey, dumplings, and vegetables including carrots, broccoli, and/or dark green leafy; gravy	курица или индейка с клёцками, морковью и брокколи в подливе
+fdc:2706709	Chicken or turkey, dumplings, and vegetables excluding carrots, broccoli, and dark green leafy; gravy	курица или индейка с клёцками и овощами без моркови и брокколи в подливе
+fdc:2706710	Chicken fricassee, Puerto Rican style	курица фрикасе по-пуэрторикански
+fdc:2706711	Paella with seafood	паэлья с морепродуктами
+fdc:2706712	Shrimp chow mein or chop suey with noodles	чоу-мейн с креветками и лапшой
+fdc:2706713	Shrimp creole, with rice	креветки креольские с рисом
+fdc:2706714	Tuna noodle casserole with vegetables, cream or white sauce	запеканка из тунца с лапшой и овощами в сливочном соусе
+fdc:2706715	Fish, noodles, and vegetables including carrots, broccoli, and/or dark green leafy; cheese sauce	рыба с лапшой, морковью и брокколи в сырном соусе
+fdc:2706716	Fish, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	рыба с лапшой и овощами без моркови и брокколи в сырном соусе
+fdc:2706717	Soup, bouillabaisse	суп буйабес
+fdc:2706718	Tuna noodle casserole with vegetables and mushroom sauce	запеканка из тунца с лапшой и овощами в грибном соусе
+fdc:2706719	Codfish with starchy vegetables, Puerto Rican style	треска с крахмалистыми овощами по-пуэрторикански
+fdc:2706720	Biscayne codfish, Puerto Rican style	треска по-бискайски по-пуэрторикански
+fdc:2706721	Stew, NFS	рагу
+fdc:2706722	Chow mein or chop suey, NS as to type of meat, with noodles	чоу-мейн с мясом и лапшой
+fdc:2706723	Paella, NFS	паэлья
+fdc:2706724	Chow mein or chop suey, various types of meat, with noodles	чоу-мейн с разным мясом и лапшой
+fdc:2706725	Stewed tripe, with potatoes, Puerto Rican style	рубец тушёный с картофелем по-пуэрторикански
+fdc:2706726	Gumbo with rice	гамбо с рисом
+fdc:2706727	Jambalaya with meat and rice	джамбалайя с мясом и рисом
+fdc:2706728	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	говядина с морковью и брокколи без соуса
+fdc:2706729	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	говядина с овощами без моркови и брокколи, без соуса
+fdc:2706730	Beef shish kabob with vegetables, excluding potatoes	шашлык из говядины с овощами
+fdc:2706731	Beef with vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	говядина с морковью и брокколи в томатном соусе
+fdc:2706732	Swiss steak	стейк по-швейцарски
+fdc:2706733	Beef rolls, stuffed with vegetables or meat mixture, tomato-based sauce	рулетики из говядины с начинкой в томатном соусе
+fdc:2706734	Beef with vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, tomato-based sauce	говядина с овощами без моркови и брокколи в томатном соусе
+fdc:2706735	Beef with vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, mushroom sauce	говядина с морковью и брокколи в грибном соусе
+fdc:2706736	Beef with vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, mushroom sauce	говядина с овощами без моркови и брокколи в грибном соусе
+fdc:2706737	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	говядина с морковью и брокколи в соевом соусе
+fdc:2706738	Beef and broccoli	говядина с брокколи
+fdc:2706739	Beef, tofu, and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	говядина с тофу, морковью и брокколи в соевом соусе
+fdc:2706740	Szechuan beef	говядина по-сычуаньски
+fdc:2706741	Hunan beef	говядина по-хунаньски
+fdc:2706742	Beef chow mein or chop suey, no noodles	чоу-мейн с говядиной без лапши
+fdc:2706743	Kung Pao beef	говядина кунг-пао
+fdc:2706744	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	говядина с овощами без моркови и брокколи в соевом соусе
+fdc:2706745	Beef, tofu, and vegetables excluding carrots, broccoli,  and dark-green leafy; no potatoes, soy-based sauce	говядина с тофу и овощами без моркови и брокколи в соевом соусе
+fdc:2706746	Beef and vegetables, Hawaiian style	говядина с овощами по-гавайски
+fdc:2706747	Pepper steak	стейк с перцем
+fdc:2706748	Beef, ground, with egg and onion	фарш говяжий с яйцом и луком
+fdc:2706749	Beef salad	салат из говядины
+fdc:2706750	Beef taco filling: beef, cheese, tomato, taco sauce	начинка для тако с говядиной
+fdc:2706751	Stir fried beef and vegetables in soy sauce	говядина с овощами жареная в соевом соусе
+fdc:2706752	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, gravy	говядина с морковью и брокколи в подливе
+fdc:2706753	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, gravy	говядина с овощами без моркови и брокколи в подливе
+fdc:2706754	Beef steak with onions, Puerto Rican style	стейк с луком по-пуэрторикански
+fdc:2706755	Cabbage with ham hocks	капуста со свиной рулькой
+fdc:2706756	Ham or pork salad	салат из ветчины или свинины
+fdc:2706757	Frankfurters or hot dogs and sauerkraut	сосиски с квашеной капустой
+fdc:2706758	Pork and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	свинина с морковью и брокколи без соуса
+fdc:2706759	Greens with ham or pork	зелень со свининой или ветчиной
+fdc:2706760	Pork, tofu, and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-base sauce	свинина с тофу, морковью и брокколи в соевом соусе
+fdc:2706761	Pork and vegetables, Hawaiian style	свинина с овощами по-гавайски
+fdc:2706762	Pork and watercress with soy-based sauce	свинина с крессом в соевом соусе
+fdc:2706763	Kung Pao pork	свинина кунг-пао
 fdc:2727572	Beef, short loin (NY strip steak), raw	стриплойн-стейк сырой
 fdc:333476	Fish, pollock, raw	минтай сырой
 fdc:746767	Cheese, swiss	швейцарский сыр
@@ -4316,7 +5696,7 @@ frida:1794	Sausage, with soy protein	колбаса с соевым белком
 frida:1803	Chickpeas, dry, raw	нут сухой
 frida:1806	Edamame beans (Soy beans), shelled, frozen	эдамамэ замороженные
 frida:1886	Peach Icetea, artificial sweetener added	холодный чай персиковый с подсластителем
-frida:236	Pepper, black	перец чёрный
+frida:236	Pepper, black	чёрный перец
 frida:285	Lentils, sprouted, raw	чечевица пророщенная
 frida:352	Pop corn, oil and salt added	попкорн с маслом и солью
 frida:417	Salt, table	соль поваренная
@@ -4387,9 +5767,9 @@ mext:10139	しろさけ 塩ざけ	кета солёная
 mext:10198	たちうお 生	рыба-сабля сырая
 mext:10222	にしん かずのこ 生	икра сельди сырая
 mext:10264	缶詰 油漬 フレーク ホワイト	тунец хлопьями в масле консервированный
-mext:10330	加工品 干しえび	креветки сушёные
+mext:10330	加工品 干しえび	креветки сушёные переработанные
 mext:10351	ほたるいか つくだ煮	цукудани из кальмаров-светлячков
-mext:10399	まこがれい 焼き	камбала жареная
+mext:10399	まこがれい 焼き	камбала мраморная на гриле
 mext:10421	とびうお 煮干し	летучая рыба сушёная
 mext:11038	うし ［乳用肥育牛肉］ リブロース 脂身つき 焼き	говядина рибай жареная
 mext:11115	ぶた ［大型種肉］ かた 脂身つき 生	свиная лопатка сырая
@@ -4431,7 +5811,7 @@ tfda:M0900201	奶油(固態,加鹽)	масло сливочное солёное
 tfda:O0200401	蘆薈露飲料	напиток с алоэ
 tfda:O0702001	珍珠奶茶(去冰,微糖)	бабл-ти с молоком малосладкий
 tfda:P0200601	油蔥酥	лук-шалот жареный хрустящий
-tfda:P0201101	椰漿	кокосовое молоко
+tfda:P0201101	椰漿	кокосовое молоко консервированное
 tfda:P1002101	金桔醬	джем из кумквата
 tfda:P1004501	香椿醬	паста из листьев китайского туна (сянчунь)
 tfda:R3000201	冷凍春捲	спринг-роллы замороженные

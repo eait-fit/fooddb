@@ -78,6 +78,36 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
   `песочное печенье`. If the foreign word is not in the receiving language's dictionary,
   describe the thing.
 
+## FNDDS qualifiers (batch 2)
+
+- `skin eaten` / `skin not eaten` → `с кожей` / `без кожи`, `con piel` / `sin piel`.
+- `fried, coated, skin / coating eaten` → `в панировке с кожей`; `not eaten` →
+  `в панировке, без кожи`; `prepared skinless, coating eaten` puts `без кожи`
+  BEFORE `в панировке` (word order keeps the two skinless cases apart).
+- provenance splits kcal and stays: `from raw` → `(из сырой)` / `desde crudo`,
+  `from pre-cooked` → `(из готовой)` / `precocinado`, `from fast food /
+  restaurant` → `(фастфуд)` / `de fast food`, `de restaurante`.
+- `rotisserie` → `на вертеле` / `al espetón` (never `на гриле`/`a la parrilla`).
+- `baked, broiled, or roasted` → `запечённый` / `al horno`; `stewed` →
+  `тушёный` / `estofado`; `sauteed` → `обжаренный` / `salteado`.
+- `NFS`, `NS as to …` and the water kind of powdered formula are dropped.
+- `including/excluding carrots, broccoli, and/or dark-green leafy` →
+  `с морковью и брокколи` / `без моркови и брокколи`,
+  `con zanahoria y brócoli` / `sin zanahoria ni brócoli` (in every combo dish).
+- `infant formula` → `детская смесь` / `leche de fórmula`; ready-to-feed →
+  `готовая` / `líquida`; powder → `из порошка` / `de polvo`.
+- `light` (dairy, dips, ice cream) → `лёгкий`/`нежирный` / `ligero`/`light`;
+  `reduced fat` → `нежирный` / `bajo en grasa`; `nonfat, fat free` →
+  `обезжиренный` / `desnatado`, `sin grasa`.
+- US `2 %` milk → `молоко 2 %` / `leche semidesnatada`; `1 %` keeps the number.
+- `reduced sodium` → `с пониженной солью` / `bajo en sodio`.
+- luncheon meat → `варёная колбаса` / `fiambre`; ice cream bar → `эскимо` /
+  `barrita de helado` (`polo` = ice pop: Creamsicle, Fudgesicle); pudding →
+  `пудинг` / `natillas`; `gravy` → `подливка` / `gravy`.
+- Cross-source name collisions with >10 % kcal split are resolved by a
+  translated qualifier on the record that owns the qualifier (`неподогретая`,
+  `en conserva`, `de restaurante`, `de Jersey`) — never an English suffix.
+
 ## Process
 
 - One line per record per language; sorted by `record_id`.

@@ -30,7 +30,7 @@ bls:H842400	Soya drink sweetened, flavoured	bebida de soja con sabor, azucarada
 bls:K420100	Batata/sweet potato, raw	batata cruda
 bls:M176800	Creme fraiche 30 % fat	crème fraîche 30 %
 bls:M1B1100	Yogurt from skimmed milk, max. 0.5 % fat, lactose-free	yogur desnatado sin lactosa
-bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	queso crema ligero
+bls:M820200	Cream cheese preparation min. 10 % fat in dry matter	preparado de queso crema ligero
 bls:N001000	Nearwater/Aqua Plus beverage, flavoured, unsweetened	agua con sabor sin azúcar
 bls:P192000	Pilsner beer mixed with carbonated lemonade	cerveza con gaseosa (clara)
 bls:P464000	Sherry sweet	jerez dulce
@@ -186,7 +186,7 @@ cofid:11-781	Muesli, Swiss style, no added sugar or salt, unfortified	muesli sin
 cofid:11-833	Cake, loaf, retail	bizcocho de molde
 cofid:11-877	Red rice, boiled in unsalted water	arroz rojo cocido
 cofid:11-905	Polenta, hydrated, raw	polenta cocida
-cofid:12-322	Milk, Channel islands, whole, summer	leche entera
+cofid:12-322	Milk, Channel islands, whole, summer	leche entera de Jersey
 cofid:12-551	Cheese, spreadable, full fat, soft, white	queso para untar cremoso
 cofid:13-080	Beans, cluster, raw	judías guar crudas
 cofid:13-501	Onions, fried in sunflower oil	cebollas fritas
@@ -775,7 +775,7 @@ fdc:168059	Steelhead trout, dried, flesh (Shoshone Bannock)	trucha steelhead sec
 fdc:168060	Steelhead trout, boiled, canned (Alaska Native)	trucha steelhead cocida en conserva (Alaska)
 fdc:168061	Acorn stew (Apache)	estofado de bellotas (apache)
 fdc:168062	Restaurant, Italian, chicken parmesan without pasta	pollo a la parmesana sin pasta
-fdc:168063	Restaurant, Latino, arroz con leche (rice pudding)	arroz con leche
+fdc:168063	Restaurant, Latino, arroz con leche (rice pudding)	arroz con leche de restaurante
 fdc:168064	Restaurant, Latino, Arroz con frijoles negros (rice and black beans)	arroz con judías negras
 fdc:168065	Restaurant, Latino, Arroz con habichuelas colorados (Rice And Red Beans)	arroz con judías rojas
 fdc:168066	Restaurant, Latino, Arroz con grandules (rice and pigeonpeas)	arroz con gandules
@@ -1728,7 +1728,7 @@ fdc:169012	APPLEBEE'S, chicken tenders, from kids' menu	tiras de pollo Applebee'
 fdc:169013	T.G.I. FRIDAY'S, chicken fingers, from kids' menu	deditos de pollo TGI Friday's
 fdc:169014	T.G.I. FRIDAY'S, classic sirloin steak (10 oz)	chuletón de vacuno TGI Friday's
 fdc:169015	Restaurant, family style, fried mozzarella sticks	palitos de mozzarella fritos
-fdc:169016	Restaurant, family style, sirloin steak	filete de vacuno
+fdc:169016	Restaurant, family style, sirloin steak	entrecot de restaurante
 fdc:169017	APPLEBEE'S, fish, hand battered	pescado rebozado Applebee's
 fdc:169018	APPLEBEE'S, chili	chili con carne Applebee's
 fdc:169019	T.G.I. FRIDAY'S, chicken fingers	deditos de pollo TGI Friday's
@@ -1740,7 +1740,7 @@ fdc:169024	DENNY'S, fish fillet, battered or breaded, fried	filete de pescado re
 fdc:169025	DENNY'S, hash browns	tortitas de patata Denny's
 fdc:169026	Restaurant, family style, coleslaw	ensalada de col
 fdc:169027	Restaurant, family style, onion rings	aros de cebolla
-fdc:169028	Restaurant, family style, chili with meat and beans	chili con carne
+fdc:169028	Restaurant, family style, chili with meat and beans	chili con carne y alubias de restaurante
 fdc:169029	Restaurant, family style, spaghetti and meatballs	espaguetis con albóndigas
 fdc:169030	CARRABBA'S ITALIAN GRILL, lasagne	lasaña Carrabba's
 fdc:169031	ON THE BORDER, Mexican rice	arroz mexicano On The Border
@@ -2559,7 +2559,7 @@ fdc:169843	CRACKER BARREL, coleslaw	ensalada de col Cracker Barrel
 fdc:169844	DENNY'S, onion rings	aros de cebolla Denny's
 fdc:169845	DENNY'S, spaghetti and meatballs	espaguetis con albóndigas Denny's
 fdc:169846	Restaurant, family style, fish fillet, battered or breaded, fried	filete de pescado rebozado frito
-fdc:169847	Restaurant, family style, chicken tenders	tiras de pollo
+fdc:169847	Restaurant, family style, chicken tenders	tiras de pollo de restaurante
 fdc:169848	Restaurant, family style, hash browns	patatas hash brown
 fdc:169849	CRACKER BARREL, macaroni n' cheese	macarrones con queso Cracker Barrel
 fdc:169850	Restaurant, Italian, lasagna with meat	lasaña con carne
@@ -3599,7 +3599,7 @@ fdc:170883	Milk shakes, thick chocolate	batido de chocolate espeso
 fdc:170884	Milk shakes, thick vanilla	batido de vainilla espeso
 fdc:170885	Whey, acid, fluid	suero ácido
 fdc:170886	Yogurt, plain, low fat	yogur natural bajo en grasa
-fdc:170887	Yogurt, plain, skim milk	yogur natural desnatado
+fdc:170887	Yogurt, plain, skim milk	yogur natural de leche desnatada
 fdc:170888	Yogurt, vanilla, low fat.	yogur de vainilla bajo en grasa
 fdc:170889	Yogurt, fruit, low fat,9 g protein/8 oz	yogur de fruta bajo en grasa rico en proteína
 fdc:170890	Milk dessert bar, frozen, made from lowfat milk	helado lácteo bajo en grasa
@@ -3996,7 +3996,7 @@ fdc:171280	Milk, indian buffalo, fluid	leche de búfala
 fdc:171281	Whey, acid, dried	suero ácido en polvo
 fdc:171282	Whey, sweet, fluid	suero dulce
 fdc:171283	Whey, sweet, dried	suero dulce en polvo
-fdc:171284	Yogurt, plain, whole milk	yogur natural entero
+fdc:171284	Yogurt, plain, whole milk	yogur natural de leche entera
 fdc:171285	Yogurt, fruit, low fat, 10 grams protein per 8 ounce	yogur de fruta bajo en grasa rico en proteína
 fdc:171286	Yogurt, fruit, low fat, 11g protein/8 oz	yogur de fruta bajo en grasa 11g proteína
 fdc:171287	Egg, whole, raw, fresh	huevo crudo
@@ -4238,7 +4238,7 @@ fdc:171900	Beverages, OCEAN SPRAY, Cran Lemonade	Ocean Spray limonada de aránda
 fdc:171951	Fish, butterfish, raw	pez mantequilla crudo
 fdc:171952	Fish, carp, raw	carpa cruda
 fdc:172098	Chili, no beans, canned entree	chili sin frijoles enlatado
-fdc:172111	Chicken, nuggets, dark and white meat, precooked, frozen, not reheated	nuggets de pollo congelados
+fdc:172111	Chicken, nuggets, dark and white meat, precooked, frozen, not reheated	nuggets de pollo congelados precocinados
 fdc:172121	Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de ternera a la parrilla
 fdc:172143	Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	lomo alto de ternera crudo
 fdc:172163	Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw	entraña de ternera cruda
@@ -4298,6 +4298,1386 @@ fdc:175245	Beans, kidney, red, mature seeds, canned, solids and liquid, low sodi
 fdc:175259	Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled	lomo de cordero asado
 fdc:175268	Veal, leg (top round), separable lean and fat, raw	pierna de ternera cruda
 fdc:2346403	Potatoes, gold, without skin, raw	patata amarilla pelada cruda
+fdc:2705384	Milk, NFS	leche
+fdc:2705385	Milk, whole	leche entera
+fdc:2705386	Milk, reduced fat (2%)	leche semidesnatada
+fdc:2705387	Milk, low fat (1%)	leche semidesnatada 1 %
+fdc:2705388	Milk, fat free (skim)	leche desnatada
+fdc:2705389	Milk, lactose free, low fat (1%)	leche sin lactosa semidesnatada 1 %
+fdc:2705390	Milk, lactose free, fat free (skim)	leche sin lactosa desnatada
+fdc:2705391	Milk, lactose free, reduced fat (2%)	leche sin lactosa semidesnatada
+fdc:2705392	Milk, lactose free, whole	leche sin lactosa entera
+fdc:2705393	Buttermilk	suero de mantequilla
+fdc:2705394	Kefir	kéfir
+fdc:2705395	Goat milk	leche de cabra
+fdc:2705396	Milk, dry, reconstituted, nonfat	leche en polvo desnatada reconstituida
+fdc:2705397	Milk, dry, reconstituted, whole	leche en polvo entera reconstituida
+fdc:2705398	Milk, evaporated, NS as to fat content	leche evaporada
+fdc:2705399	Milk, evaporated, whole	leche evaporada entera
+fdc:2705400	Milk, evaporated, reduced fat (2%)	leche evaporada semidesnatada
+fdc:2705401	Milk, evaporated, fat free (skim)	leche evaporada desnatada
+fdc:2705402	Milk, condensed, sweetened	leche condensada
+fdc:2705403	Non-dairy milk, NFS	bebida vegetal
+fdc:2705404	Soy milk, sweetened	leche de soja azucarada
+fdc:2705405	Soy milk, unsweetened	leche de soja sin azúcar
+fdc:2705406	Soy milk, chocolate	leche de soja de chocolate
+fdc:2705407	Almond milk, sweetened	leche de almendras azucarada
+fdc:2705408	Almond milk, chocolate	leche de almendras de chocolate
+fdc:2705409	Almond milk, unsweetened	leche de almendras sin azúcar
+fdc:2705410	Almond milk, NFS	leche de almendras
+fdc:2705411	Rice milk	leche de arroz
+fdc:2705412	Oat milk	leche de avena
+fdc:2705413	Coconut milk	leche de coco
+fdc:2705414	Yogurt, NFS	yogur
+fdc:2705415	Yogurt, Greek, NS as to type of milk or flavor	yogur griego
+fdc:2705416	Yogurt, NS as to type of milk or flavor	yogur
+fdc:2705417	Yogurt, NS as to type of milk, plain	yogur natural
+fdc:2705418	Yogurt, whole milk, plain	yogur natural entero
+fdc:2705419	Yogurt, low fat milk, plain	yogur natural bajo en grasa
+fdc:2705420	Yogurt, nonfat milk, plain	yogur natural desnatado
+fdc:2705421	Yogurt, Greek, NS as to type of milk, plain	yogur griego natural
+fdc:2705422	Yogurt, Greek, whole milk, plain	yogur griego natural entero
+fdc:2705423	Yogurt, Greek, low fat milk, plain	yogur griego natural bajo en grasa
+fdc:2705424	Yogurt, Greek, nonfat milk, plain	yogur griego natural desnatado
+fdc:2705425	Yogurt, NS as to type of milk, fruit	yogur de frutas
+fdc:2705426	Yogurt, whole milk, fruit	yogur de frutas entero
+fdc:2705427	Yogurt, low fat milk, fruit	yogur de frutas bajo en grasa
+fdc:2705428	Yogurt, nonfat milk, fruit	yogur de frutas desnatado
+fdc:2705429	Yogurt, Greek, NS as to type of milk, fruit	yogur griego de frutas
+fdc:2705430	Yogurt, Greek, whole milk, fruit	yogur griego de frutas entero
+fdc:2705431	Yogurt, Greek, low fat milk, fruit	yogur griego de frutas bajo en grasa
+fdc:2705432	Yogurt, Greek, nonfat milk, fruit	yogur griego de frutas desnatado
+fdc:2705433	Yogurt, NS as to type of milk, flavors other than fruit	yogur de sabores
+fdc:2705434	Yogurt, whole milk, flavors other than fruit	yogur de sabores entero
+fdc:2705435	Yogurt, low fat milk, flavors other than fruit	yogur de sabores bajo en grasa
+fdc:2705436	Yogurt, nonfat milk, flavors other than fruit	yogur de sabores desnatado
+fdc:2705437	Yogurt, Greek, NS as to type of milk, flavors other than fruit	yogur griego de sabores
+fdc:2705438	Yogurt, Greek, whole milk, flavors other than fruit	yogur griego de sabores entero
+fdc:2705439	Yogurt, Greek, low fat milk, flavors other than fruit	yogur griego de sabores bajo en grasa
+fdc:2705440	Yogurt, Greek, nonfat milk, flavors other than fruit	yogur griego de sabores desnatado
+fdc:2705441	Yogurt, Greek, with oats	yogur griego con avena
+fdc:2705442	Yogurt, liquid	yogur líquido
+fdc:2705443	Yogurt tube	yogur en tubo
+fdc:2705444	Chipotle dip, yogurt based	salsa de chipotle con yogur
+fdc:2705445	Onion dip, yogurt based	salsa de cebolla con yogur
+fdc:2705446	Ranch dip, yogurt based	salsa ranch con yogur
+fdc:2705447	Spinach dip, yogurt based	salsa de espinacas con yogur
+fdc:2705448	Tzatziki dip	salsa tzatziki
+fdc:2705449	Vegetable dip, yogurt based	salsa para verduras con yogur
+fdc:2705450	Yogurt parfait, with fruit	parfait de yogur con fruta
+fdc:2705451	Frozen yogurt, NFS	yogur helado
+fdc:2705452	Frozen yogurt, vanilla	yogur helado de vainilla
+fdc:2705453	Frozen yogurt, chocolate	yogur helado de chocolate
+fdc:2705454	Frozen yogurt, soft serve, vanilla	yogur helado soft de vainilla
+fdc:2705455	Frozen yogurt, soft serve, chocolate	yogur helado soft de chocolate
+fdc:2705456	Frozen yogurt sandwich	sándwich de yogur helado
+fdc:2705457	Frozen yogurt bar, vanilla	barrita de yogur helado de vainilla
+fdc:2705458	Frozen yogurt bar, chocolate	barrita de yogur helado de chocolate
+fdc:2705459	Frozen yogurt cone, chocolate	cucurucho de yogur helado de chocolate
+fdc:2705460	Frozen yogurt cone, vanilla	cucurucho de yogur helado de vainilla
+fdc:2705461	Frozen yogurt cone, vanilla, waffle cone	cucurucho de barquillo de yogur helado de vainilla
+fdc:2705462	Frozen yogurt cone, chocolate, waffle cone	cucurucho de barquillo de yogur helado de chocolate
+fdc:2705463	Baby Toddler food, NFS	comida infantil
+fdc:2705464	Baby Toddler yogurt, plain	yogur infantil natural
+fdc:2705465	Baby Toddler yogurt, with fruit	yogur infantil con fruta
+fdc:2705466	Chocolate milk, NFS	leche chocolatada
+fdc:2705467	Chocolate milk, whole	leche chocolatada entera
+fdc:2705468	Chocolate milk, reduced fat (2%)	leche chocolatada semidesnatada
+fdc:2705469	Chocolate milk, fat free (skim)	leche chocolatada desnatada
+fdc:2705470	Chocolate milk, low fat (1%)	leche chocolatada semidesnatada 1 %
+fdc:2705471	Chocolate milk, reduced sugar, NFS	leche chocolatada reducida en azúcar
+fdc:2705472	Hot chocolate / cocoa, NFS	chocolate caliente
+fdc:2705473	Hot chocolate / cocoa, made with whole or reduced fat (2%) milk	chocolate caliente con leche entera
+fdc:2705474	Hot chocolate / cocoa, made with lowfat (1%) or fat free (skim) milk	chocolate caliente con leche desnatada
+fdc:2705475	Hot chocolate / cocoa, made with non-dairy milk	chocolate caliente con bebida vegetal
+fdc:2705476	Hot chocolate / cocoa, with whipped cream	chocolate caliente con nata montada
+fdc:2705477	Chocolate milk, Nesquik, NS as to type of milk	leche chocolatada Nesquik
+fdc:2705478	Chocolate milk, Nesquik, made with non-dairy milk	leche chocolatada Nesquik con bebida vegetal
+fdc:2705479	Chocolate milk, reduced sugar, whole	leche chocolatada entera reducida en azúcar
+fdc:2705480	Chocolate milk, reduced sugar, reduced fat (2%)	leche chocolatada semidesnatada reducida en azúcar
+fdc:2705481	Chocolate milk, reduced sugar, low fat (1%)	leche chocolatada semidesnatada 1 % reducida en azúcar
+fdc:2705482	Chocolate milk, reduced sugar, fat free (skim)	leche chocolatada desnatada reducida en azúcar
+fdc:2705483	Hot chocolate / cocoa, dry mix, made with water	chocolate caliente de polvo con agua
+fdc:2705484	Hot chocolate / cocoa, dry mix, made with whole or reduced fat (2%) milk	chocolate caliente de polvo con leche entera
+fdc:2705485	Hot chocolate / cocoa, dry mix, made with lowfat (1%) or fat free (skim) milk	chocolate caliente de polvo con leche desnatada
+fdc:2705486	Hot chocolate / cocoa, dry mix , made with non-dairy milk	chocolate caliente de polvo con bebida vegetal
+fdc:2705487	Hot chocolate / cocoa, dry mix, made with water, with whipped cream	chocolate caliente de polvo con agua y nata montada
+fdc:2705488	Hot chocolate / cocoa, dry mix, reduced sugar, made with water	chocolate caliente de polvo reducido en azúcar con agua
+fdc:2705489	Hot chocolate / cocoa, dry mix, reduced sugar, made with whole or reduced fat (2%) milk	chocolate caliente de polvo reducido en azúcar con leche entera
+fdc:2705490	Hot chocolate / cocoa, reduced sugar, made with non-dairy milk	chocolate caliente reducido en azúcar con bebida vegetal
+fdc:2705491	Hot chocolate / cocoa, reduced sugar, made with whole or reduced fat (2%) milk	chocolate caliente reducido en azúcar con leche entera
+fdc:2705492	Hot chocolate / cocoa, dry mix, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate caliente de polvo reducido en azúcar con leche desnatada
+fdc:2705493	Hot chocolate / cocoa, reduced sugar, made with lowfat (1%) or fat free (skim) milk	chocolate caliente reducido en azúcar con leche desnatada
+fdc:2705494	Hot chocolate / cocoa, dry mix, reduced sugar, made with non-dairy milk	chocolate caliente de polvo reducido en azúcar con bebida vegetal
+fdc:2705495	Strawberry milk, NFS	leche de fresa
+fdc:2705496	Strawberry milk, whole	leche de fresa entera
+fdc:2705497	Strawberry milk, reduced fat (2%)	leche de fresa semidesnatada
+fdc:2705498	Strawberry milk, low fat (1%)	leche de fresa semidesnatada 1 %
+fdc:2705499	Strawberry milk, fat free  (skim)	leche de fresa desnatada
+fdc:2705500	Strawberry milk, reduced sugar	leche de fresa reducida en azúcar
+fdc:2705501	Milk, malted	leche malteada
+fdc:2705502	Eggnog	ponche de huevo
+fdc:2705503	Milk shake, home recipe, chocolate	batido de chocolate casero
+fdc:2705504	Milk shake, home recipe, flavors other than chocolate	batido casero
+fdc:2705505	Milk shake, home recipe, chocolate, light	batido de chocolate casero light
+fdc:2705506	Milk shake, home recipe, flavors other than chocolate, light	batido casero light
+fdc:2705507	Milk shake with malt	batido con malta
+fdc:2705508	Milk shake, fast food, chocolate	batido de chocolate de fast food
+fdc:2705509	Milk shake, fast food, flavors other than chocolate	batido de fast food
+fdc:2705510	Milk shake, bottled, chocolate	batido de chocolate embotellado
+fdc:2705511	Milk shake, bottled, flavors other than chocolate	batido embotellado
+fdc:2705512	Licuado or Batido	batido
+fdc:2705513	Fruit smoothie, NFS	batido de frutas
+fdc:2705514	Fruit smoothie, with whole fruit and dairy	batido de fruta entera con leche
+fdc:2705515	Fruit smoothie, with whole fruit and dairy, added protein	batido de fruta entera con leche y proteína
+fdc:2705516	Fruit smoothie juice drink, with dairy	zumo batido de fruta con leche
+fdc:2705517	Chocolate milk drink	bebida de leche con chocolate
+fdc:2705518	Infant formula, NFS	leche de fórmula
+fdc:2705519	Infant formula, Similac, NFS	leche de fórmula Similac
+fdc:2705520	Infant formula, Similac Alimentum, ready-to-feed	leche de fórmula Similac Alimentum líquida
+fdc:2705521	Infant formula, Similac Alimentum, powder, made with water	leche de fórmula Similac Alimentum de polvo
+fdc:2705522	Infant formula, Similac Advance, ready-to-feed	leche de fórmula Similac Advance líquida
+fdc:2705523	Infant formula, Similac Advance, powder, made with tap water	leche de fórmula Similac Advance de polvo
+fdc:2705524	Infant formula, Similac Advance, powder, made with bottled water	leche de fórmula Similac Advance de polvo
+fdc:2705525	Infant formula, Similac Advance, powder, made with baby water	leche de fórmula Similac Advance de polvo
+fdc:2705526	Infant formula, Similac Sensitive, ready-to-feed	leche de fórmula Similac Sensitive líquida
+fdc:2705527	Infant formula, Similac Sensitive, powder, made with tap water	leche de fórmula Similac Sensitive de polvo
+fdc:2705528	Infant formula, Similac Sensitive, powder, made with bottled water	leche de fórmula Similac Sensitive de polvo
+fdc:2705529	Infant formula, Similac Sensitive, powder, made with baby water	leche de fórmula Similac Sensitive de polvo
+fdc:2705530	Infant formula, Similac for Spit-Up, ready-to-feed	leche de fórmula Similac for Spit-Up líquida
+fdc:2705531	Infant formula, Similac for Spit-Up, powder, made with water	leche de fórmula Similac for Spit-Up de polvo
+fdc:2705532	Toddler formula, Similac Go and Grow	leche de crecimiento Similac Go and Grow
+fdc:2705533	Infant formula, Enfamil, NFS	leche de fórmula Enfamil
+fdc:2705534	Infant formula, Enfamil Infant, ready-to-feed	leche de fórmula Enfamil Infant líquida
+fdc:2705535	Infant formula, Enfamil Infant, powder, made with tap water	leche de fórmula Enfamil Infant de polvo
+fdc:2705536	Infant formula, Enfamil Infant, powder, made with bottled water	leche de fórmula Enfamil Infant de polvo
+fdc:2705537	Infant formula, Enfamil Infant, powder, made with baby water	leche de fórmula Enfamil Infant de polvo
+fdc:2705538	Infant formula, Enfamil AR, ready-to-feed	leche de fórmula Enfamil AR líquida
+fdc:2705539	Infant formula, Enfamil AR, powder, made with water	leche de fórmula Enfamil AR de polvo
+fdc:2705540	Infant formula, Enfamil Gentlease, ready-to-feed	leche de fórmula Enfamil Gentlease líquida
+fdc:2705541	Infant formula, Enfamil Gentlease, powder, made with tap water	leche de fórmula Enfamil Gentlease de polvo
+fdc:2705542	Infant formula, Enfamil Gentlease, powder, made with bottled water	leche de fórmula Enfamil Gentlease de polvo
+fdc:2705543	Infant formula, Enfamil Gentlease, powder, made with baby water	leche de fórmula Enfamil Gentlease de polvo
+fdc:2705544	Toddler formula, Enfamil Enfagrow	leche de crecimiento Enfamil Enfagrow
+fdc:2705545	Toddler formula, PediaSure	batido infantil PediaSure
+fdc:2705546	Toddler formula, Nido Kinder	leche de crecimiento Nido Kinder
+fdc:2705547	Toddler formula, store brand, beginning or next stage	leche de crecimiento de marca blanca, primera o segunda etapa
+fdc:2705548	Toddler formula, store brand, pediatric shake	batido infantil de marca blanca
+fdc:2705549	Infant formula, Gerber, NFS	leche de fórmula Gerber
+fdc:2705550	Infant formula, Gerber Good Start Gentle, Stage 1, ready-to-feed	leche de fórmula Gerber Good Start Gentle 1 líquida
+fdc:2705551	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Gentle 1 de polvo
+fdc:2705552	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Gentle 1 de polvo
+fdc:2705553	Infant formula, Gerber Good Start Gentle, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Gentle 1 de polvo
+fdc:2705554	Infant formula, Gerber Good Start Gentle, Stage 2	leche de fórmula Gerber Good Start Gentle 2
+fdc:2705555	Toddler formula, Gerber Good Start, Stage 3	leche de crecimiento Gerber Good Start 3
+fdc:2705556	Infant formula, premature, powder, made with water	leche de fórmula para prematuros de polvo
+fdc:2705557	Infant formula, premature, ready-to-feed	leche de fórmula para prematuros líquida
+fdc:2705558	Infant formula, organic, powder, made with water	leche de fórmula ecológica de polvo
+fdc:2705559	Infant formula, organic, ready-to-feed	leche de fórmula ecológica líquida
+fdc:2705560	Infant formula, store brand, advantage or tender, powder, made with tap water	leche de fórmula de marca blanca de polvo
+fdc:2705561	Infant formula, store brand, advantage or tender, powder, made with bottled water	leche de fórmula de marca blanca de polvo
+fdc:2705562	Infant formula, store brand, advantage or tender, powder, made with baby water	leche de fórmula de marca blanca de polvo
+fdc:2705563	Infant formula, store brand, gentle or sensitivity	leche de fórmula de marca blanca suave
+fdc:2705564	Infant formula, store brand, added rice	leche de fórmula de marca blanca con arroz
+fdc:2705565	Infant formula, Enfamil ProSobee, ready-to-feed	leche de fórmula Enfamil ProSobee líquida
+fdc:2705566	Infant formula, Enfamil ProSobee, powder, made with tap water	leche de fórmula Enfamil ProSobee de polvo
+fdc:2705567	Infant formula, Enfamil ProSobee, powder, made with bottled water	leche de fórmula Enfamil ProSobee de polvo
+fdc:2705568	Infant formula, Enfamil ProSobee, powder, made with baby water	leche de fórmula Enfamil ProSobee de polvo
+fdc:2705569	Infant formula, Similac Isomil Soy, ready-to-feed	leche de fórmula Similac Isomil Soy líquida
+fdc:2705570	Infant formula, Similac Isomil Soy, powder, made with tap water	leche de fórmula Similac Isomil Soy de polvo
+fdc:2705571	Infant formula, Similac Isomil Soy, powder, made with bottled water	leche de fórmula Similac Isomil Soy de polvo
+fdc:2705572	Infant formula, Similac Isomil Soy, powder, made with baby water	leche de fórmula Similac Isomil Soy de polvo
+fdc:2705573	Infant formula, Similac for Diarrhea	leche de fórmula Similac for Diarrhea
+fdc:2705574	Infant formula, Gerber Good Start Soy, Stage 1, ready-to-feed	leche de fórmula Gerber Good Start Soy 1 líquida
+fdc:2705575	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with tap water	leche de fórmula Gerber Good Start Soy 1 de polvo
+fdc:2705576	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with bottled water	leche de fórmula Gerber Good Start Soy 1 de polvo
+fdc:2705577	Infant formula, Gerber Good Start Soy, Stage 1, powder, made with baby water	leche de fórmula Gerber Good Start Soy 1 de polvo
+fdc:2705578	Infant formula, store brand, soy	leche de fórmula de marca blanca de soja
+fdc:2705579	Infant formula, Enfamil Nutramigen, ready-to-feed	leche de fórmula Enfamil Nutramigen líquida
+fdc:2705580	Infant formula, Enfamil Nutramigen, powder, made with water	leche de fórmula Enfamil Nutramigen de polvo
+fdc:2705581	Infant formula, Enfamil Pregestimil, ready-to-feed	leche de fórmula Enfamil Pregestimil líquida
+fdc:2705582	Infant formula, Enfamil Pregestimil, powder, made with water	leche de fórmula Enfamil Pregestimil de polvo
+fdc:2705583	Infant formula, amino acids	leche de fórmula de aminoácidos
+fdc:2705584	Infant formula, low iron	leche de fórmula baja en hierro
+fdc:2705585	Milk, dry, not reconstituted	leche en polvo
+fdc:2705586	Whey, sweet, dry	suero de leche en polvo dulce
+fdc:2705587	Cocoa powder, not reconstituted	cacao en polvo
+fdc:2705588	Chocolate beverage powder, dry mix, not reconstituted	polvo para batido de chocolate
+fdc:2705589	Chocolate beverage powder, light, dry mix, not reconstituted	polvo para batido de chocolate light
+fdc:2705590	Milk, malted, dry mix, not reconstituted	polvo para leche malteada
+fdc:2705591	Strawberry beverage powder, dry mix, not reconstituted	polvo para batido de fresa
+fdc:2705592	Cream, NS as to light, heavy, or half and half	nata
+fdc:2705593	Cream, light	nata ligera
+fdc:2705594	Cream, half and half	nata para café
+fdc:2705595	Cream, half and half, flavored	nata para café de sabores
+fdc:2705596	Cream, half and half, fat free	nata para café desnatada
+fdc:2705597	Cream, heavy	nata para montar
+fdc:2705598	Cream, whipped	nata montada
+fdc:2705599	Coffee creamer, NFS	crema para café
+fdc:2705600	Coffee creamer, liquid	crema para café líquida
+fdc:2705601	Coffee creamer, liquid, flavored	crema para café líquida de sabores
+fdc:2705602	Coffee creamer, liquid, fat free	crema para café líquida desnatada
+fdc:2705603	Coffee creamer, liquid, fat free, flavored	crema para café líquida desnatada de sabores
+fdc:2705604	Coffee creamer, liquid, fat free, sugar free, flavored	crema para café líquida desnatada sin azúcar de sabores
+fdc:2705605	Coffee creamer, liquid, sugar free, flavored	crema para café líquida sin azúcar de sabores
+fdc:2705606	Coffee creamer, powder	crema para café en polvo
+fdc:2705607	Coffee creamer, powder, flavored	crema para café en polvo de sabores
+fdc:2705608	Coffee creamer, powder, fat free	crema para café en polvo desnatada
+fdc:2705609	Coffee creamer,powder, sugar free, flavored	crema para café en polvo sin azúcar de sabores
+fdc:2705610	Coffee creamer, soy, liquid	crema para café de soja líquida
+fdc:2705611	Whipped topping	nata montada vegetal
+fdc:2705612	Whipped topping, fat free	nata montada vegetal desnatada
+fdc:2705613	Whipped topping, sugar free	nata montada vegetal sin azúcar
+fdc:2705614	Sour cream, regular	nata agria
+fdc:2705615	Sour cream, light	nata agria ligera
+fdc:2705616	Sour cream, fat free	nata agria desnatada
+fdc:2705617	Sour cream, imitation	sucedáneo de nata agria
+fdc:2705618	Dip, NFS	salsa para mojar
+fdc:2705619	Chipotle dip, regular	salsa de chipotle
+fdc:2705620	Chipotle dip, light	salsa de chipotle ligera
+fdc:2705621	Onion dip, regular	salsa de cebolla
+fdc:2705622	Onion dip, light	salsa de cebolla ligera
+fdc:2705623	Ranch dip, regular	salsa ranch
+fdc:2705624	Ranch dip, light	salsa ranch ligera
+fdc:2705625	Spinach dip, regular	salsa de espinacas
+fdc:2705626	Spinach dip, light	salsa de espinacas ligera
+fdc:2705627	Vegetable dip, regular	salsa para verduras
+fdc:2705628	Vegetable dip, light	salsa para verduras ligera
+fdc:2705629	Ice cream, NFS	helado
+fdc:2705630	Ice cream, vanilla	helado de vainilla
+fdc:2705631	Ice cream, vanilla, with additional ingredients	helado de vainilla con tropezones
+fdc:2705632	Ice cream, chocolate	helado de chocolate
+fdc:2705633	Ice cream, chocolate, with additional ingredients	helado de chocolate con tropezones
+fdc:2705634	Ice cream, soft serve, vanilla	helado soft de vainilla
+fdc:2705635	Ice cream, soft serve, chocolate	helado soft de chocolate
+fdc:2705636	Gelato, vanilla	gelato de vainilla
+fdc:2705637	Gelato, chocolate	gelato de chocolate
+fdc:2705638	Ice cream bar, vanilla	barrita de helado de vainilla
+fdc:2705639	Ice cream bar, vanilla, chocolate coated	barrita de helado de vainilla bañada en chocolate
+fdc:2705640	Ice cream candy bar	barrita de helado
+fdc:2705641	Ice cream bar, chocolate	barrita de helado de chocolate
+fdc:2705642	Ice cream sandwich, vanilla	sándwich de helado de vainilla
+fdc:2705643	Ice cream sandwich, chocolate	sándwich de helado de chocolate
+fdc:2705644	Ice cream cookie sandwich	sándwich de helado con galleta
+fdc:2705645	Ice cream cone, scooped, vanilla	helado de vainilla en cucurucho
+fdc:2705646	Ice cream cone, scooped, vanilla, waffle cone	helado de vainilla en cucurucho de barquillo
+fdc:2705647	Ice cream cone, NFS	helado en cucurucho
+fdc:2705648	Ice cream cone, scooped, chocolate	helado de chocolate en cucurucho
+fdc:2705649	Ice cream cone, scooped, chocolate, waffle cone	helado de chocolate en cucurucho de barquillo
+fdc:2705650	Ice cream cone, soft serve, vanilla	helado soft de vainilla en cucurucho
+fdc:2705651	Ice cream cone, soft serve, chocolate	helado soft de chocolate en cucurucho
+fdc:2705652	Ice cream cone, soft serve, vanilla, waffle cone	helado soft de vainilla en cucurucho de barquillo
+fdc:2705653	Ice cream cone, soft serve, chocolate, waffle cone	helado soft de chocolate en cucurucho de barquillo
+fdc:2705654	Ice cream cone, vanilla, prepackaged	cucurucho de helado de vainilla envasado
+fdc:2705655	Ice cream cone, chocolate, prepackaged	cucurucho de helado de chocolate envasado
+fdc:2705656	Ice cream soda, flavors other than chocolate	helado con gaseosa
+fdc:2705657	Ice cream soda, chocolate	helado con gaseosa de chocolate
+fdc:2705658	Ice cream sundae, NFS	sundae
+fdc:2705659	Ice cream sundae, fruit topping	sundae con fruta
+fdc:2705660	Banana split	banana split
+fdc:2705661	Ice cream sundae, hot fudge topping	sundae con chocolate caliente
+fdc:2705662	Ice cream sundae, caramel topping	sundae con caramelo
+fdc:2705663	Ice cream, fried	helado frito
+fdc:2705664	Light ice cream, NFS	helado ligero
+fdc:2705665	Light ice cream, vanilla	helado ligero de vainilla
+fdc:2705666	Light ice cream, chocolate	helado ligero de chocolate
+fdc:2705667	Soft serve, blended with candy or cookies, from fast food	helado soft con golosinas o galleta de fast food
+fdc:2705668	Light ice cream sandwich, vanilla	sándwich de helado ligero de vainilla
+fdc:2705669	Light ice cream sandwich, chocolate	sándwich de helado ligero de chocolate
+fdc:2705670	Light ice cream bar, vanilla	barrita de helado de vainilla ligera
+fdc:2705671	Light ice cream bar, vanilla, chocolate coated	barrita de helado de vainilla ligera bañada en chocolate
+fdc:2705672	Light ice cream bar, chocolate	barrita de helado de chocolate ligera
+fdc:2705673	Creamsicle	polo cremoso
+fdc:2705674	Fudgesicle	polo de chocolate
+fdc:2705675	Light ice cream cone, vanilla, prepackaged	cucurucho de helado ligero de vainilla envasado
+fdc:2705676	Light ice cream cone, chocolate, prepackaged	cucurucho de helado ligero de chocolate envasado
+fdc:2705677	Sherbet, all flavors	sorbete
+fdc:2705678	Fudgesicle, light	polo de chocolate ligero
+fdc:2705679	Pudding, chocolate, NFS	natillas de chocolate
+fdc:2705680	Pudding, bread	pudin de pan
+fdc:2705681	Pudding, flavors other than chocolate, NFS	natillas
+fdc:2705682	Custard	crema pastelera
+fdc:2705683	Flan	flan
+fdc:2705684	Creme brulee	crème brûlée
+fdc:2705685	Pudding, rice	arroz con leche
+fdc:2705686	Firni, Indian pudding	firni
+fdc:2705687	Pudding, tapioca, made from dry mix	natillas de tapioca de preparado
+fdc:2705688	Pudding, flavors other than chocolate, made from dry mix	natillas de preparado
+fdc:2705689	Pudding, chocolate, made from dry mix	natillas de chocolate de preparado
+fdc:2705690	Pudding, flavors other than chocolate, made from dry mix, sugar free	natillas de preparado sin azúcar
+fdc:2705691	Pudding, chocolate, made from dry mix, sugar free	natillas de chocolate de preparado sin azúcar
+fdc:2705692	Pudding, flavors other than chocolate, ready-to-eat	natillas listas para comer
+fdc:2705693	Pudding, flavors other than chocolate, ready-to-eat, sugar free	natillas listas para comer sin azúcar
+fdc:2705694	Pudding, chocolate, ready-to-eat	natillas de chocolate listas para comer
+fdc:2705695	Pudding, chocolate, ready-to-eat, sugar free	natillas de chocolate listas para comer sin azúcar
+fdc:2705696	Pudding, tapioca, ready-to-eat	natillas de tapioca listas para comer
+fdc:2705697	Banana pudding	natillas de plátano
+fdc:2705698	Mousse	mousse
+fdc:2705699	Dulce de leche	dulce de leche
+fdc:2705700	Barfi or Burfi, Indian dessert	barfi
+fdc:2705701	Trifle	trifle
+fdc:2705702	Tiramisu	tiramisú
+fdc:2705703	White sauce or gravy	salsa blanca o gravy
+fdc:2705704	Cheese, NFS	queso
+fdc:2705705	Cheese, Blue or Roquefort	queso azul
+fdc:2705706	Cheese, Brick	queso brick
+fdc:2705707	Cheese, Camembert	queso camembert
+fdc:2705708	Cheese, Brie	queso brie
+fdc:2705709	Cheese, Cheddar	queso cheddar
+fdc:2705710	Cheese, Cheddar, reduced fat	queso cheddar bajo en grasa
+fdc:2705711	Cheese, Cheddar, nonfat or fat free	queso cheddar sin grasa
+fdc:2705712	Cheese, Colby	queso colby
+fdc:2705713	Cheese, Colby Jack	queso colby jack
+fdc:2705714	Cheese, Feta	queso feta
+fdc:2705715	Cheese, Fontina	queso fontina
+fdc:2705716	Cheese, goat	queso de cabra
+fdc:2705717	Cheese, Gouda or Edam	queso gouda o edam
+fdc:2705718	Cheese, Gruyere	queso gruyere
+fdc:2705719	Cheese, Limburger	queso limburger
+fdc:2705720	Cheese, Monterey	queso monterey
+fdc:2705721	Cheese, Monterey, reduced fat	queso monterey bajo en grasa
+fdc:2705722	Cheese, Mozzarella, NFS	queso mozzarella
+fdc:2705723	Cheese, Mozzarella, part skim	queso mozzarella semidesnatado
+fdc:2705724	Cheese, Mozzarella, reduced sodium	queso mozzarella bajo en sodio
+fdc:2705725	Cheese, Mozzarella, nonfat or fat free	queso mozzarella sin grasa
+fdc:2705726	Cheese, Muenster	queso muenster
+fdc:2705727	Cheese, Muenster, reduced fat	queso muenster bajo en grasa
+fdc:2705728	Cheese, Parmesan, dry grated	queso parmesano rallado
+fdc:2705729	Cheese, Parmesan, dry grated, reduced fat	queso parmesano rallado bajo en grasa
+fdc:2705730	Cheese, Parmesan, hard	queso parmesano
+fdc:2705731	Cheese, Parmesan, dry grated, fat free	queso parmesano rallado sin grasa
+fdc:2705732	Cheese, Port du Salut	queso port du salut
+fdc:2705733	Cheese, Provolone	queso provolone
+fdc:2705734	Cheese, provolone, reduced fat	queso provolone bajo en grasa
+fdc:2705735	Cheese, Swiss	queso suizo
+fdc:2705736	Cheese, Swiss, reduced sodium	queso suizo bajo en sodio
+fdc:2705737	Cheese, Swiss, reduced fat	queso suizo bajo en grasa
+fdc:2705738	Cheese, Swiss, nonfat or fat free	queso suizo sin grasa
+fdc:2705739	Cheese, Cheddar, reduced sodium	queso cheddar bajo en sodio
+fdc:2705740	Cheese, paneer	queso paneer
+fdc:2705741	Cheese, Mexican blend	mezcla de quesos mexicanos
+fdc:2705742	Cheese, Mexican blend, reduced fat	mezcla de quesos mexicanos baja en grasa
+fdc:2705743	Queso Anejo, aged Mexican cheese	queso añejo
+fdc:2705744	Queso Asadero	queso asadero
+fdc:2705745	Queso Fresco	queso fresco
+fdc:2705746	Queso cotija	queso cotija
+fdc:2705747	Cheese, cottage, NFS	requesón
+fdc:2705748	Cheese, cottage, creamed, large or small curd	requesón en grano
+fdc:2705749	Cottage cheese, farmer's	requesón de granja
+fdc:2705750	Cheese, Ricotta	queso ricotta
+fdc:2705751	Cheese, cottage, with fruit	requesón con fruta
+fdc:2705752	Cheese, cottage, with vegetables	requesón bajo en grasa con verduras
+fdc:2705753	Cheese, cottage, dry curd	requesón seco
+fdc:2705754	Cheese, cottage, salted, dry curd	requesón seco salado
+fdc:2705755	Puerto Rican white cheese	queso blanco puertorriqueño
+fdc:2705756	Cheese, cottage, low fat	requesón bajo en grasa
+fdc:2705757	Cheese, cottage, lowfat, with fruit	requesón bajo en grasa con fruta
+fdc:2705758	Cheese, cottage, lowfat, low sodium	requesón bajo en grasa bajo en sodio
+fdc:2705759	Cheese, cottage, lowfat, lactose reduced	requesón bajo en grasa bajo en lactosa
+fdc:2705760	Cream cheese, regular, plain	queso crema
+fdc:2705761	Cream cheese, regular, flavored	queso crema de sabores
+fdc:2705762	Cream cheese, light	queso crema ligero
+fdc:2705763	Cheese, American and Swiss blends	mezcla de queso americano y suizo
+fdc:2705764	Cheese, American	queso americano
+fdc:2705765	Cheese, American, reduced fat	queso americano bajo en grasa
+fdc:2705766	Cheese, American, nonfat or fat free	queso americano sin grasa
+fdc:2705767	Cheese, American, reduced sodium	queso americano bajo en sodio
+fdc:2705768	Cheese spread, American or Cheddar cheese base, reduced fat	pasta de queso baja en grasa
+fdc:2705769	Cream cheese, fat free	queso crema sin grasa
+fdc:2705770	Cheese, processed cheese food	queso fundido
+fdc:2705771	Cheese, processed, with vegetables	queso fundido con verduras
+fdc:2705772	Cheese,  with wine	queso con vino
+fdc:2705773	Cheese spread, American or Cheddar cheese base	queso americano para untar
+fdc:2705774	Cheese spread, Swiss cheese base	pasta de queso suiza
+fdc:2705775	Cheese spread, cream cheese	pasta de queso crema
+fdc:2705776	Cheese spread, pressurized can	pasta de queso en aerosol
+fdc:2705777	Imitation cheese	sucedáneo de queso
+fdc:2705778	Cheese, cottage cheese, with gelatin dessert	requesón con gelatina
+fdc:2705779	Cheese, cottage cheese, with gelatin dessert and fruit	requesón con gelatina y fruta
+fdc:2705780	Cheese, cottage cheese, with gelatin dessert and vegetables	requesón con gelatina y verduras
+fdc:2705781	Cheese ball	bola de queso
+fdc:2705782	Artichoke dip	salsa de alcachofas
+fdc:2705783	Spinach and artichoke dip	salsa de espinacas y alcachofas
+fdc:2705784	Seafood dip	salsa de marisco para mojar
+fdc:2705785	Cheese dip with chili pepper	salsa de queso con chile
+fdc:2705786	Cheese dip	salsa de queso
+fdc:2705787	Topping from cheese pizza	ingredientes de pizza de queso
+fdc:2705788	Topping from vegetable pizza	ingredientes de pizza de verduras
+fdc:2705789	Topping from meat pizza	ingredientes de pizza de carne
+fdc:2705790	Topping from meat and vegetable pizza	ingredientes de pizza de carne y verduras
+fdc:2705791	Cheese fondue	fondue de queso
+fdc:2705792	Cheese souffle	suflé de queso
+fdc:2705793	Welsh rarebit	welsh rarebit
+fdc:2705794	Cheese sandwich, NFS	sándwich de queso
+fdc:2705795	Cheese sandwich, American cheese, on white bread	sándwich de queso americano en pan blanco
+fdc:2705796	Cheese sandwich, American cheese, on wheat bread	sándwich de queso americano en pan integral
+fdc:2705797	Cheese sandwich, cheddar cheese, on white bread	sándwich de cheddar en pan blanco
+fdc:2705798	Cheese sandwich, cheddar cheese, on wheat bread	sándwich de cheddar en pan integral
+fdc:2705799	Cheese sandwich, reduced fat cheese, on white bread	sándwich de queso bajo en grasa en pan blanco
+fdc:2705800	Cheese sandwich, reduced fat cheese, on wheat bread	sándwich de queso bajo en grasa en pan integral
+fdc:2705801	Grilled cheese sandwich, NFS	sándwich de queso a la plancha
+fdc:2705802	Grilled cheese sandwich, American cheese, on white bread	sándwich de queso americano a la plancha en pan blanco
+fdc:2705803	Grilled cheese sandwich, American cheese, on wheat bread	sándwich de queso americano a la plancha en pan integral
+fdc:2705804	Grilled cheese sandwich, cheddar cheese, on white bread	sándwich de cheddar a la plancha en pan blanco
+fdc:2705805	Grilled cheese sandwich, cheddar cheese, on wheat bread	sándwich de cheddar a la plancha en pan integral
+fdc:2705806	Grilled cheese sandwich, reduced fat cheese, on white bread	sándwich de queso bajo en grasa a la plancha en pan blanco
+fdc:2705807	Grilled cheese sandwich, reduced fat cheese, on wheat bread	sándwich de queso bajo en grasa a la plancha en pan integral
+fdc:2705808	Cheese sauce	salsa de queso
+fdc:2705809	Alfredo sauce	salsa alfredo
+fdc:2705810	Alfredo sauce with added vegetables	salsa alfredo con verduras
+fdc:2705811	Alfredo sauce with meat	salsa alfredo con carne
+fdc:2705812	Alfredo sauce with meat and added vegetables	salsa alfredo con carne y verduras
+fdc:2705813	Alfredo sauce with poultry	salsa alfredo con pollo
+fdc:2705814	Alfredo sauce with poultry and added vegetables	salsa alfredo con pollo y verduras
+fdc:2705815	Alfredo sauce with seafood	salsa alfredo con marisco
+fdc:2705816	Alfredo sauce with seafood and added vegetables	salsa alfredo con marisco y verduras
+fdc:2705817	Mozzarella sticks, breaded, baked, or fried	palitos de mozzarella empanados
+fdc:2705818	Mozzarella cheese, tomato, and basil, with oil and vinegar dressing	caprese
+fdc:2705819	Meat, NFS	carne
+fdc:2705820	Meat, ground, NFS	carne picada
+fdc:2705821	Baby Toddler meat, NFS	carne infantil
+fdc:2705822	Beef, NFS	vacuno
+fdc:2705823	Steak, NS as to type of meat, NS as to fat eaten	filete
+fdc:2705824	Beef, steak, NFS	filete de vacuno
+fdc:2705825	Beef, steak, chuck	filete de aguja
+fdc:2705826	Beef, steak, cube	filete ablandado
+fdc:2705827	Beef, steak, flank	filete de falda
+fdc:2705828	Beef, steak, ribeye, NS as to fat eaten	filete de ribeye
+fdc:2705829	Beef, steak, ribeye, lean and fat eaten	filete de ribeye con grasa
+fdc:2705830	Beef, steak, ribeye, lean only eaten	filete de ribeye solo magro
+fdc:2705831	Beef, steak, round	filete de redondo
+fdc:2705832	Beef, steak, sirloin, NS as to fat eaten	filete de lomo
+fdc:2705833	Beef, steak, sirloin, lean and fat eaten	filete de lomo con grasa
+fdc:2705834	Beef, steak, sirloin, lean only eaten	filete de lomo solo magro
+fdc:2705835	Beef, steak, strip, NS as to fat eaten	filete de strip
+fdc:2705836	Beef, steak, strip, lean and fat eaten	filete de strip con grasa
+fdc:2705837	Beef, steak, strip, lean only eaten	filete de strip solo magro
+fdc:2705838	Beef, steak, T-bone, NS as to fat eaten	filete t-bone
+fdc:2705839	Beef, steak, T-bone,  lean and fat eaten	filete t-bone con grasa
+fdc:2705840	Beef, steak, T-bone, lean only eaten	filete t-bone solo magro
+fdc:2705841	Beef, steak, tenderloin	solomillo de vacuno
+fdc:2705842	Beef, steak, country fried	filete de vacuno country fried
+fdc:2705843	Beef, oxtails	rabo de toro
+fdc:2705844	Beef, neck bones	huesos de cuello de vacuno
+fdc:2705845	Beef, shortribs	costillas de vacuno
+fdc:2705846	Beef, cow head	cabeza de vacuno
+fdc:2705847	Beef, roast	asado de vacuno
+fdc:2705848	Beef, pot roast	vacuno asado en olla
+fdc:2705849	Beef, stew meat	carne de vacuno para guisar
+fdc:2705850	Beef, corned	corned beef
+fdc:2705851	Beef, brisket	falda de vacuno
+fdc:2705852	Beef, sandwich steak	filete para sándwich
+fdc:2705853	Beef, ground, raw	carne picada de vacuno cruda
+fdc:2705854	Beef, ground	carne picada de vacuno
+fdc:2705855	Beef, ground, patty	hamburguesa de vacuno
+fdc:2705856	Beef, bacon, cooked	beicon de vacuno
+fdc:2705857	Beef, bacon, reduced sodium, cooked	beicon de vacuno bajo en sodio
+fdc:2705858	Beef, dried, chipped, uncooked	cecina en tiras cruda
+fdc:2705859	Beef, dried, chipped, cooked in fat	cecina en tiras frita
+fdc:2705860	Beef jerky	cecina de vacuno (jerky)
+fdc:2705861	Baby Toddler beef	vacuno infantil
+fdc:2705862	Pork, NFS	cerdo
+fdc:2705863	Pork, ground	carne picada de cerdo
+fdc:2705864	Pork, carnitas	carnitas
+fdc:2705865	Pork jerky	cecina de cerdo (jerky)
+fdc:2705866	Pork, chop, NS as to fat eaten	chuleta de cerdo
+fdc:2705867	Pork, chop, lean and fat eaten	chuleta de cerdo con grasa
+fdc:2705868	Pork, chop, lean only eaten	chuleta de cerdo solo magra
+fdc:2705869	Pork, chop, coated, NS as to fat eaten	chuleta de cerdo empanada
+fdc:2705870	Pork, chop, coated, lean and fat eaten	chuleta de cerdo empanada con grasa
+fdc:2705871	Pork, chop, coated, lean only eaten	chuleta de cerdo empanada solo magra
+fdc:2705872	Pork, chop, stuffed	chuleta de cerdo rellena
+fdc:2705873	Pork, steak, NS as to fat eaten	filete de cerdo
+fdc:2705874	Pork, steak, lean and fat eaten	filete de cerdo con grasa
+fdc:2705875	Pork, steak, lean only eaten	filete de cerdo solo magro
+fdc:2705876	Pork, steak, coated	filete de cerdo empanado
+fdc:2705877	Pork, tenderloin	solomillo de cerdo
+fdc:2705878	Ham	jamón cocido
+fdc:2705879	Ham, prosciutto	jamón curado (prosciutto)
+fdc:2705880	Ham, canned	jamón en conserva
+fdc:2705881	Ham, ground	carne picada de jamón
+fdc:2705882	Pork, roast	asado de cerdo
+fdc:2705883	Pork, roll	rollo de cerdo
+fdc:2705884	Canadian bacon, cooked	beicon canadiense
+fdc:2705885	Bacon, NS as to type of meat, cooked	beicon frito
+fdc:2705886	Bacon, NS as to type of meat, reduced sodium, cooked	beicon bajo en sodio
+fdc:2705887	Pork bacon, NS as to fresh, smoked or cured, cooked	beicon de cerdo
+fdc:2705888	Pork bacon, NS as to fresh, smoked or cured, reduced sodium, cooked	beicon de cerdo bajo en sodio
+fdc:2705889	Pork bacon, smoked or cured, cooked	beicon de cerdo ahumado
+fdc:2705890	Bacon or side pork, fresh, cooked	panceta fresca
+fdc:2705891	Pork bacon, smoked or cured, reduced sodium, cooked	beicon de cerdo ahumado bajo en sodio
+fdc:2705892	Fat back, cooked	tocino de lomo
+fdc:2705893	Ribs, NFS	costillas
+fdc:2705894	Pork, ribs	costillas de cerdo
+fdc:2705895	Pork, cracklings	chicharrones
+fdc:2705896	Pork, ears	orejas de cerdo
+fdc:2705897	Pork, bones	huesos de cerdo
+fdc:2705898	Pork, pig's feet	manitas de cerdo
+fdc:2705899	Pork, pig's feet, pickled	manitas de cerdo en escabeche
+fdc:2705900	Pork, ham hocks	codillo de cerdo
+fdc:2705901	Pork, belly	panceta
+fdc:2705902	Pork skin rinds	cortezas de cerdo
+fdc:2705903	Baby Toddler ham	jamón infantil
+fdc:2705904	Baby Toddler meat stick	barrita de carne infantil
+fdc:2705905	Lamb, NS as to cut	cordero
+fdc:2705906	Lamb, chop	chuleta de cordero
+fdc:2705907	Lamb, ground	carne picada de cordero
+fdc:2705908	Goat	carne de cabra
+fdc:2705909	Veal, chop	chuleta de ternera
+fdc:2705910	Veal, ground	carne picada de ternera
+fdc:2705911	Mock chicken legs	muslos de pollo de imitación
+fdc:2705912	Rabbit	conejo
+fdc:2705913	Venison, NFS	venado
+fdc:2705914	Venison, steak	filete de venado
+fdc:2705915	Venison/deer jerky	cecina de venado (jerky)
+fdc:2705916	Venison sausage	salchicha de venado
+fdc:2705917	Moose	carne de alce
+fdc:2705918	Bear	carne de oso
+fdc:2705919	Caribou	carne de caribú
+fdc:2705920	Bison	carne de bisonte
+fdc:2705921	Groundhog	carne de marmota
+fdc:2705922	Opossum	carne de zarigüeya
+fdc:2705923	Squirrel	carne de ardilla
+fdc:2705924	Beaver	carne de castor
+fdc:2705925	Raccoon	carne de mapache
+fdc:2705926	Armadillo	carne de armadillo
+fdc:2705927	Wild pig	jabalí
+fdc:2705928	Ostrich	avestruz
+fdc:2705929	Chicken, NS as to part and cooking method, NS as to skin eaten	pollo
+fdc:2705930	Chicken, NS as to part and cooking method, skin eaten	pollo con piel
+fdc:2705931	Chicken, NS as to part and cooking method, skin not eaten	pollo sin piel
+fdc:2705932	Chicken, NS as to part, baked, broiled, or roasted, NS as to skin eaten	pollo al horno
+fdc:2705933	Chicken, NS as to part, baked, broiled, or roasted, skin eaten	pollo al horno con piel
+fdc:2705934	Chicken, NS as to part, baked, broiled, or roasted, skin not eaten	pollo al horno sin piel
+fdc:2705935	Chicken, NS as to part, rotisserie, NS as to skin eaten	pollo al espetón
+fdc:2705936	Chicken, NS as to part, rotisserie, skin eaten	pollo al espetón con piel
+fdc:2705937	Chicken, NS as to part, rotisserie, skin not eaten	pollo al espetón sin piel
+fdc:2705938	Chicken, NS as to part, stewed, NS as to skin eaten	pollo estofado
+fdc:2705939	Chicken, NS as to part, stewed, skin eaten	pollo estofado con piel
+fdc:2705940	Chicken, NS as to part, stewed, skin not eaten	pollo estofado sin piel
+fdc:2705941	Chicken, NS as to part, grilled without sauce, NS as to skin eaten	pollo a la parrilla
+fdc:2705942	Chicken, NS as to part, grilled without sauce, skin eaten	pollo a la parrilla con piel
+fdc:2705943	Chicken, NS as to part, grilled without sauce, skin not eaten	pollo a la parrilla sin piel
+fdc:2705944	Chicken, NS as to part, grilled with sauce, NS as to skin eaten	pollo a la parrilla con salsa
+fdc:2705945	Chicken, NS as to part, grilled with sauce, skin eaten	pollo a la parrilla con salsa y piel
+fdc:2705946	Chicken, NS as to part, grilled with sauce, skin not eaten	pollo a la parrilla con salsa sin piel
+fdc:2705947	Chicken, NS as to part, sauteed, skin eaten	pollo salteado con piel
+fdc:2705948	Chicken, NS as to part, sauteed, skin not eaten	pollo salteado sin piel
+fdc:2705949	Chicken, NS as to part, fried, coated, skin / coating eaten	pollo frito empanado con piel
+fdc:2705950	Chicken, NS as to part, fried, coated, skin / coating not eaten	pollo frito empanado sin piel
+fdc:2705951	Chicken, NS as to part, baked, coated, skin / coating eaten	pollo al horno empanado con piel
+fdc:2705952	Chicken, NS as to part, baked, coated, skin / coating not eaten	pollo al horno empanado sin piel
+fdc:2705953	Chicken breast, NS as to cooking method, skin eaten	pechuga de pollo con piel
+fdc:2705954	Chicken breast, NS as to cooking method, skin not eaten	pechuga de pollo sin piel
+fdc:2705955	Chicken breast, baked, broiled, or roasted, skin eaten, from raw	pechuga de pollo al horno con piel desde cruda
+fdc:2705956	Chicken breast, baked, broiled, or roasted, skin not eaten, from raw	pechuga de pollo al horno sin piel desde cruda
+fdc:2705957	Chicken breast, baked or broiled, skin eaten, from pre-cooked	pechuga de pollo al horno con piel precocinada
+fdc:2705958	Chicken breast, baked or broiled, skin not eaten, from pre-cooked	pechuga de pollo al horno sin piel precocinada
+fdc:2705959	Chicken breast, baked or broiled, skin eaten, from fast food / restaurant	pechuga de pollo al horno con piel de fast food
+fdc:2705960	Chicken breast, baked or broiled, skin not eaten, from fast food / restaurant	pechuga de pollo al horno sin piel de fast food
+fdc:2705961	Chicken breast, baked, broiled, or roasted with marinade, skin eaten, from raw	pechuga de pollo al horno adobada con piel
+fdc:2705962	Chicken breast, baked, broiled, or roasted with marinade, skin not eaten, from raw	pechuga de pollo al horno adobada sin piel
+fdc:2705963	Chicken breast, rotisserie, skin eaten	pechuga de pollo al espetón con piel
+fdc:2705964	Chicken breast, rotisserie, skin not eaten	pechuga de pollo al espetón sin piel
+fdc:2705965	Chicken breast, stewed, skin eaten	pechuga de pollo estofada con piel
+fdc:2705966	Chicken breast, stewed, skin not eaten	pechuga de pollo estofada sin piel
+fdc:2705967	Chicken breast, grilled without sauce, skin eaten	pechuga de pollo a la parrilla con piel
+fdc:2705968	Chicken breast, grilled without sauce, skin not eaten	pechuga de pollo a la parrilla sin piel
+fdc:2705969	Chicken breast, grilled with sauce, skin eaten	pechuga de pollo a la parrilla con salsa y piel
+fdc:2705970	Chicken breast, grilled with sauce, skin not eaten	pechuga de pollo a la parrilla con salsa sin piel
+fdc:2705971	Chicken breast, sauteed, skin eaten	pechuga de pollo salteada con piel
+fdc:2705972	Chicken breast, sauteed, skin not eaten	pechuga de pollo salteada sin piel
+fdc:2705973	Chicken breast, fried, coated, skin / coating eaten, from raw	pechuga de pollo frita empanada con piel desde cruda
+fdc:2705974	Chicken breast, fried, coated, skin / coating not eaten, from raw	pechuga de pollo frita empanada sin piel desde cruda
+fdc:2705975	Chicken breast, fried, coated, prepared skinless, coating eaten, from raw	pechuga de pollo sin piel frita empanada desde cruda
+fdc:2705976	Chicken breast, fried, coated, skin / coating eaten, from pre-cooked	pechuga de pollo frita empanada con piel precocinada
+fdc:2705977	Chicken breast, fried, coated, skin / coating not eaten, from pre-cooked	pechuga de pollo frita empanada sin piel precocinada
+fdc:2705978	Chicken breast, fried, coated, skin / coating eaten, from fast food / restaurant	pechuga de pollo frita empanada con piel de fast food
+fdc:2705979	Chicken breast, fried, coated, skin / coating not eaten, from fast food / restaurant	pechuga de pollo frita empanada sin piel de fast food
+fdc:2705980	Chicken breast, baked, coated, skin / coating eaten	pechuga de pollo al horno empanada con piel
+fdc:2705981	Chicken breast, baked, coated, skin / coating not eaten	pechuga de pollo al horno empanada sin piel
+fdc:2705982	Chicken leg, drumstick and thigh, NS as to cooking method, skin eaten	pierna de pollo con piel
+fdc:2705983	Chicken leg, drumstick and thigh, NS as to cooking method, skin not eaten	pierna de pollo sin piel
+fdc:2705984	Chicken leg, drumstick and thigh, baked or broiled, skin eaten	pierna de pollo al horno con piel
+fdc:2705985	Chicken leg, drumstick and thigh, baked or broiled, skin not eaten	pierna de pollo al horno sin piel
+fdc:2705986	Chicken leg, drumstick and thigh, rotisserie, skin eaten	pierna de pollo al espetón con piel
+fdc:2705987	Chicken leg, drumstick and thigh, rotisserie, skin not eaten	pierna de pollo al espetón sin piel
+fdc:2705988	Chicken leg, drumstick and thigh, stewed, skin eaten	pierna de pollo estofada con piel
+fdc:2705989	Chicken leg, drumstick and thigh, stewed, skin not eaten	pierna de pollo estofada sin piel
+fdc:2705990	Chicken leg, drumstick and thigh, grilled without sauce, skin eaten	pierna de pollo a la parrilla con piel
+fdc:2705991	Chicken leg, drumstick and thigh, grilled without sauce, skin not eaten	pierna de pollo a la parrilla sin piel
+fdc:2705992	Chicken leg, drumstick and thigh, grilled with sauce, skin eaten	pierna de pollo a la parrilla con salsa y piel
+fdc:2705993	Chicken leg, drumstick and thigh, grilled with sauce, skin not eaten	pierna de pollo a la parrilla con salsa sin piel
+fdc:2705994	Chicken leg, drumstick and thigh, sauteed, skin eaten	pierna de pollo salteada con piel
+fdc:2705995	Chicken leg, drumstick and thigh, sauteed, skin not eaten	pierna de pollo salteada sin piel
+fdc:2705996	Chicken leg, drumstick and thigh, fried, coated, skin / coating eaten	pierna de pollo frita empanada con piel
+fdc:2705997	Chicken leg, drumstick and thigh, fried, coated, skin / coating not eaten	pierna de pollo frita empanada sin piel
+fdc:2705998	Chicken leg, drumstick and thigh, baked, coated, skin / coating eaten	pierna de pollo al horno empanada con piel
+fdc:2705999	Chicken leg, drumstick and thigh, baked, coated, skin / coating not eaten	pierna de pollo al horno empanada sin piel
+fdc:2706000	Chicken drumstick, NS as to cooking method, skin eaten	muslo de pollo con piel
+fdc:2706001	Chicken drumstick, NS as to cooking method, skin not eaten	muslo de pollo sin piel
+fdc:2706002	Chicken drumstick, baked, broiled, or roasted, skin eaten, from raw	muslo de pollo al horno con piel desde crudo
+fdc:2706003	Chicken drumstick, baked, broiled, or roasted, skin not eaten, from raw	muslo de pollo al horno sin piel desde crudo
+fdc:2706004	Chicken drumstick, baked or broiled, skin eaten, from pre-cooked	muslo de pollo al horno con piel precocinado
+fdc:2706005	Chicken drumstick, baked or broiled, skin not eaten, from pre-cooked	muslo de pollo al horno sin piel precocinado
+fdc:2706006	Chicken drumstick, baked or broiled, skin eaten, from fast food / restaurant	muslo de pollo al horno con piel de fast food
+fdc:2706007	Chicken drumstick, baked or broiled, skin not eaten, from fast food / restaurant	muslo de pollo al horno sin piel de fast food
+fdc:2706008	Chicken drumstick, rotisserie, skin eaten	muslo de pollo al espetón con piel
+fdc:2706009	Chicken drumstick, rotisserie, skin not eaten	muslo de pollo al espetón sin piel
+fdc:2706010	Chicken drumstick, grilled without sauce, skin eaten	muslo de pollo a la parrilla con piel
+fdc:2706011	Chicken drumstick, grilled without sauce, skin not eaten	muslo de pollo a la parrilla sin piel
+fdc:2706012	Chicken drumstick, grilled with sauce, skin eaten	muslo de pollo a la parrilla con salsa y piel
+fdc:2706013	Chicken drumstick, grilled with sauce, skin not eaten	muslo de pollo a la parrilla con salsa sin piel
+fdc:2706014	Chicken drumstick, stewed, skin eaten	muslo de pollo estofado con piel
+fdc:2706015	Chicken drumstick, stewed, skin not eaten	muslo de pollo estofado sin piel
+fdc:2706016	Chicken drumstick, sauteed, skin eaten	muslo de pollo salteado con piel
+fdc:2706017	Chicken drumstick, sauteed, skin not eaten	muslo de pollo salteado sin piel
+fdc:2706018	Chicken drumstick, fried, coated, skin / coating eaten, from raw	muslo de pollo frito empanado con piel desde crudo
+fdc:2706019	Chicken drumstick, fried, coated, skin / coating not eaten, from raw	muslo de pollo frito empanado sin piel desde crudo
+fdc:2706020	Chicken drumstick, fried, coated, prepared skinless, coating eaten, from raw	muslo de pollo sin piel frito empanado desde crudo
+fdc:2706021	Chicken drumstick, fried, coated, skin / coating eaten, from pre-cooked	muslo de pollo frito empanado con piel precocinado
+fdc:2706022	Chicken drumstick, fried, coated, skin / coating not eaten, from pre-cooked	muslo de pollo frito empanado sin piel precocinado
+fdc:2706023	Chicken drumstick, fried, coated, skin / coating eaten, from fast food / restaurant	muslo de pollo frito empanado con piel de fast food
+fdc:2706024	Chicken drumstick, fried, coated, skin / coating not eaten, from fast food / restaurant	muslo de pollo frito empanado sin piel de fast food
+fdc:2706025	Chicken drumstick, baked, coated, skin / coating eaten	muslo de pollo al horno empanado con piel
+fdc:2706026	Chicken drumstick, baked, coated, skin / coating not eaten	muslo de pollo al horno empanado sin piel
+fdc:2706027	Chicken thigh, NS as to cooking method, skin eaten	contramuslo de pollo con piel
+fdc:2706028	Chicken thigh, NS as to cooking method, skin not eaten	contramuslo de pollo sin piel
+fdc:2706029	Chicken thigh, baked, broiled, or roasted, skin eaten, from raw	contramuslo de pollo al horno con piel desde crudo
+fdc:2706030	Chicken thigh, baked, broiled, or roasted, skin not eaten, from raw	contramuslo de pollo al horno sin piel desde crudo
+fdc:2706031	Chicken thigh, baked or broiled, skin eaten, from pre-cooked	contramuslo de pollo al horno con piel precocinado
+fdc:2706032	Chicken thigh, baked or broiled, skin not eaten, from pre-cooked	contramuslo de pollo al horno sin piel precocinado
+fdc:2706033	Chicken thigh, baked or broiled, skin eaten, from fast food / restaurant	contramuslo de pollo al horno con piel de fast food
+fdc:2706034	Chicken thigh, baked or broiled, skin not eaten, from fast food / restaurant	contramuslo de pollo al horno sin piel de fast food
+fdc:2706035	Chicken thigh, rotisserie, skin eaten	contramuslo de pollo al espetón con piel
+fdc:2706036	Chicken thigh, rotisserie, skin not eaten	contramuslo de pollo al espetón sin piel
+fdc:2706037	Chicken thigh, stewed, skin eaten	contramuslo de pollo estofado con piel
+fdc:2706038	Chicken thigh, stewed, skin not eaten	contramuslo de pollo estofado sin piel
+fdc:2706039	Chicken thigh, grilled without sauce, skin eaten	contramuslo de pollo a la parrilla con piel
+fdc:2706040	Chicken thigh, grilled without sauce, skin not eaten	contramuslo de pollo a la parrilla sin piel
+fdc:2706041	Chicken thigh, grilled with sauce, skin eaten	contramuslo de pollo a la parrilla con salsa y piel
+fdc:2706042	Chicken thigh, grilled with sauce, skin not eaten	contramuslo de pollo a la parrilla con salsa sin piel
+fdc:2706043	Chicken thigh, sauteed, skin eaten	contramuslo de pollo salteado con piel
+fdc:2706044	Chicken thigh, sauteed, skin not eaten	contramuslo de pollo salteado sin piel
+fdc:2706045	Chicken thigh, fried, coated, skin / coating eaten, from raw	contramuslo de pollo frito empanado con piel desde crudo
+fdc:2706046	Chicken thigh, fried, coated, skin / coating not eaten, from raw	contramuslo de pollo frito empanado sin piel desde crudo
+fdc:2706047	Chicken thigh, fried, coated, prepared skinless, coating eaten, from raw	contramuslo de pollo sin piel frito empanado desde crudo
+fdc:2706048	Chicken thigh, fried, coated, skin / coating eaten, from pre-cooked	contramuslo de pollo frito empanado con piel precocinado
+fdc:2706049	Chicken thigh, fried, coated, skin / coating not eaten, from pre-cooked	contramuslo de pollo frito empanado sin piel precocinado
+fdc:2706050	Chicken thigh, fried, coated, skin / coating eaten, from fast food	contramuslo de pollo frito empanado con piel de fast food
+fdc:2706051	Chicken thigh, fried, coated, skin / coating not eaten, from fast food	contramuslo de pollo frito empanado sin piel de fast food
+fdc:2706052	Chicken thigh, fried, coated, skin / coating eaten, from restaurant	contramuslo de pollo frito empanado con piel de restaurante
+fdc:2706053	Chicken thigh, fried, coated, skin / coating not eaten, from restaurant	contramuslo de pollo frito empanado sin piel de restaurante
+fdc:2706054	Chicken thigh, baked, coated, skin / coating eaten	contramuslo de pollo al horno empanado con piel
+fdc:2706055	Chicken thigh, baked, coated, skin / coating not eaten	contramuslo de pollo al horno empanado sin piel
+fdc:2706056	Chicken wing, NS as to cooking method	ala de pollo
+fdc:2706057	Chicken wing, baked, broiled, or roasted, from raw	ala de pollo al horno desde cruda
+fdc:2706058	Chicken wing, baked or broiled, from pre-cooked	ala de pollo al horno precocinada
+fdc:2706059	Chicken wing, baked or broiled, from fast food / restaurant	ala de pollo al horno de fast food
+fdc:2706060	Chicken wing, rotisserie	ala de pollo al espetón
+fdc:2706061	Chicken wing, stewed	ala de pollo estofada
+fdc:2706062	Chicken wing, grilled without sauce	ala de pollo a la parrilla
+fdc:2706063	Chicken wing, grilled with sauce	ala de pollo a la parrilla con salsa
+fdc:2706064	Chicken wing, sauteed	ala de pollo salteada
+fdc:2706065	Chicken wing, fried, coated, from raw	ala de pollo frita empanada desde cruda
+fdc:2706066	Chicken wing, fried, coated, from pre-cooked	ala de pollo frita empanada precocinada
+fdc:2706067	Chicken wing, fried, coated, from fast food	ala de pollo frita empanada de fast food
+fdc:2706068	Chicken wing, fried, coated, from restaurant	ala de pollo frita empanada de restaurante
+fdc:2706069	Chicken wing, baked, coated	ala de pollo al horno empanada
+fdc:2706070	Chicken "wings" with hot sauce, from fast food / restaurant	alitas con salsa picante de fast food
+fdc:2706071	Chicken "wings" with other sauces or seasoning, from fast food / restaurant	alitas con salsa de fast food
+fdc:2706072	Chicken "wings", plain, from fast food / restaurant	alitas sin salsa de fast food
+fdc:2706073	Chicken "wings" with hot sauce, from precooked	alitas con salsa picante precocinadas
+fdc:2706074	Chicken "wings" with other sauces or seasoning, from precooked	alitas con salsa precocinadas
+fdc:2706075	Chicken "wings", plain, from precooked	alitas sin salsa precocinadas
+fdc:2706076	Chicken "wings" with hot sauce, from other sources	alitas con salsa picante
+fdc:2706077	Chicken "wings" with other sauces or seasoning, from other sources	alitas con salsa
+fdc:2706078	Chicken "wings", plain, from other sources	alitas sin salsa
+fdc:2706079	Chicken "wings", boneless, with hot sauce, from fast food / restaurant	alitas deshuesadas con salsa picante de fast food
+fdc:2706080	Chicken "wings", boneless, with hot sauce, from other sources	alitas deshuesadas con salsa picante
+fdc:2706081	Chicken, back	espinazo de pollo
+fdc:2706082	Chicken, neck or ribs	cuello o costillas de pollo
+fdc:2706083	Chicken, tail	rabadilla de pollo
+fdc:2706084	Chicken skin	piel de pollo
+fdc:2706085	Chicken feet	patas de pollo
+fdc:2706086	Chicken, canned, meat only	pollo en conserva
+fdc:2706087	Chicken, chicken roll, roasted	rollo de pollo asado
+fdc:2706088	Chicken patty, breaded	hamburguesa de pollo empanada
+fdc:2706089	Chicken fillet, breaded	filete de pollo empanado
+fdc:2706090	Chicken fillet, grilled	filete de pollo a la parrilla
+fdc:2706091	Chicken, ground	carne picada de pollo
+fdc:2706092	Chicken nuggets, NFS	nuggets de pollo
+fdc:2706093	Chicken nuggets, from fast food	nuggets de pollo de fast food
+fdc:2706094	Chicken nuggets, from restaurant	nuggets de pollo de restaurante
+fdc:2706095	Chicken nuggets, from school lunch	nuggets de pollo de comedor escolar
+fdc:2706096	Chicken nuggets, from frozen	nuggets de pollo congelados
+fdc:2706097	Chicken nuggets, from other sources	nuggets de pollo de otras fuentes
+fdc:2706098	Chicken tenders or strips, NFS	tiras de pollo
+fdc:2706099	Chicken tenders or strips, breaded, from fast food	tiras de pollo empanadas de fast food
+fdc:2706100	Chicken tenders or strips, breaded, from restaurant	tiras de pollo empanadas de restaurante
+fdc:2706101	Chicken tenders or strips, breaded, from school lunch	tiras de pollo empanadas de comedor escolar
+fdc:2706102	Chicken tenders or strips, breaded, from frozen	tiras de pollo empanadas congeladas
+fdc:2706103	Chicken tenders or strips, breaded, from other sources	tiras de pollo empanadas de otras fuentes
+fdc:2706104	Turkey, NFS	pavo
+fdc:2706105	Turkey, light meat, skin not eaten	carne blanca de pavo sin piel
+fdc:2706106	Turkey, light meat, skin eaten	carne blanca de pavo con piel
+fdc:2706107	Turkey, light meat, breaded, baked or fried, skin not eaten	carne blanca de pavo empanada sin piel
+fdc:2706108	Turkey, light meat, breaded, baked or fried, skin eaten	carne blanca de pavo empanada con piel
+fdc:2706109	Turkey, light meat, roasted, skin not eaten	carne blanca de pavo asada sin piel
+fdc:2706110	Turkey, light meat, roasted, skin eaten	carne blanca de pavo asada con piel
+fdc:2706111	Turkey, dark meat, roasted, skin not eaten	carne oscura de pavo asada sin piel
+fdc:2706112	Turkey, dark meat, roasted, skin eaten	carne oscura de pavo asada con piel
+fdc:2706113	Turkey, light and dark meat, roasted, skin not eaten	carne de pavo asada sin piel
+fdc:2706114	Turkey, light and dark meat, roasted, skin eaten	carne de pavo asada con piel
+fdc:2706115	Turkey, light or dark meat, fried, coated, skin not eaten	carne de pavo frita empanada sin piel
+fdc:2706116	Turkey, light or dark meat, fried, coated, skin eaten	carne de pavo frita empanada con piel
+fdc:2706117	Turkey, light or dark meat, stewed, skin not eaten	carne de pavo estofada sin piel
+fdc:2706118	Turkey light or dark meat, stewed, skin eaten	carne de pavo estofada con piel
+fdc:2706119	Turkey, light or dark meat, smoked, skin eaten	carne de pavo ahumada con piel
+fdc:2706120	Turkey, light or dark meat, smoked, skin not eaten	carne de pavo ahumada sin piel
+fdc:2706121	Turkey, drumstick, cooked, skin not eaten	muslo de pavo cocinado sin piel
+fdc:2706122	Turkey, drumstick, cooked, skin eaten	muslo de pavo cocinado con piel
+fdc:2706123	Turkey, drumstick, roasted, skin not eaten	muslo de pavo asado sin piel
+fdc:2706124	Turkey, drumstick, roasted, skin eaten	muslo de pavo asado con piel
+fdc:2706125	Turkey, thigh, cooked, skin eaten	contramuslo de pavo cocinado con piel
+fdc:2706126	Turkey, thigh, cooked, skin not eaten	contramuslo de pavo cocinado sin piel
+fdc:2706127	Turkey, neck	cuello de pavo
+fdc:2706128	Turkey, wing, cooked, skin not eaten	ala de pavo cocinada sin piel
+fdc:2706129	Turkey, wing, cooked, skin eaten	ala de pavo cocinada con piel
+fdc:2706130	Turkey, tail	rabadilla de pavo
+fdc:2706131	Turkey, back	espinazo de pavo
+fdc:2706132	Turkey, canned	pavo en conserva
+fdc:2706133	Turkey, ground	carne picada de pavo
+fdc:2706134	Turkey, nuggets	nuggets de pavo
+fdc:2706135	Turkey bacon, cooked	beicon de pavo
+fdc:2706136	Turkey bacon, reduced sodium, cooked	beicon de pavo bajo en sodio
+fdc:2706137	Duck, cooked, skin eaten	pato cocinado con piel
+fdc:2706138	Duck, cooked, skin not eaten	pato cocinado sin piel
+fdc:2706139	Duck, roasted, skin eaten	pato asado con piel
+fdc:2706140	Duck, roasted, skin not eaten	pato asado sin piel
+fdc:2706141	Duck, Peking	pato laqueado
+fdc:2706142	Goose, wild, roasted	ganso salvaje asado
+fdc:2706143	Cornish game hen, cooked, skin eaten	pollo de Cornualles cocinado con piel
+fdc:2706144	Cornish game hen, cooked, skin not eaten	pollo de Cornualles cocinado sin piel
+fdc:2706145	Cornish game hen, roasted, skin eaten	pollo de Cornualles asado con piel
+fdc:2706146	Cornish game hen, roasted, skin not eaten	pollo de Cornualles asado sin piel
+fdc:2706147	Dove, cooked, NS as to cooking method	tórtola cocinada
+fdc:2706148	Dove, fried	tórtola frita
+fdc:2706149	Quail, cooked	codorniz cocinada
+fdc:2706150	Pheasant, cooked	faisán cocinado
+fdc:2706151	Baby Toddler chicken	pollo infantil
+fdc:2706152	Baby Toddler turkey	pavo infantil
+fdc:2706153	Liver, beef	hígado de vacuno
+fdc:2706154	Liver, chicken	hígado de pollo
+fdc:2706155	Liver, paste or pate	paté de hígado
+fdc:2706156	Heart	corazón
+fdc:2706157	Kidney	riñones
+fdc:2706158	Sweetbreads	mollejas
+fdc:2706159	Brains	sesos
+fdc:2706160	Tongue	lengua
+fdc:2706161	Tongue pot roast, Puerto Rican style	lengua estofada a la puertorriqueña
+fdc:2706162	Tripe	callos
+fdc:2706163	Chitterlings	intestinos de cerdo
+fdc:2706164	Hog maws	buche de cerdo
+fdc:2706165	Gizzard	molleja
+fdc:2706166	Hot dog, NFS	salchicha Frankfurt
+fdc:2706167	Hot dog, beef	salchicha Frankfurt de vacuno
+fdc:2706168	Hot dog, meat and poultry	salchicha Frankfurt de carne y ave
+fdc:2706169	Hot dog, reduced fat	salchicha Frankfurt baja en grasa
+fdc:2706170	Hot dog, turkey	salchicha Frankfurt de pavo
+fdc:2706171	Beef sausage	salchicha de vacuno
+fdc:2706172	Beef sausage with cheese	salchicha de vacuno con queso
+fdc:2706173	Blood sausage	morcilla
+fdc:2706174	Bratwurst	bratwurst
+fdc:2706175	Bratwurst, with cheese	bratwurst con queso
+fdc:2706176	Bologna	mortadela
+fdc:2706177	Bologna, reduced fat	mortadela baja en grasa
+fdc:2706178	Bologna, reduced sodium	mortadela baja en sodio
+fdc:2706179	Chorizo	chorizo
+fdc:2706180	Head cheese	queso de cerdo
+fdc:2706181	Knockwurst	knackwurst
+fdc:2706182	Mortadella	mortadela italiana
+fdc:2706183	Pastrami, NFS	pastrami
+fdc:2706184	Pastrami, made from any kind of meat, reduced fat	pastrami bajo en grasa
+fdc:2706185	Pepperoni, NFS	pepperoni
+fdc:2706186	Pepperoni, reduced fat	pepperoni bajo en grasa
+fdc:2706187	Pepperoni, reduced sodium	pepperoni bajo en sodio
+fdc:2706188	Polish sausage	salchicha polaca
+fdc:2706189	Italian sausage	salchicha italiana
+fdc:2706190	Sausage, NFS	salchicha
+fdc:2706191	Pork sausage	salchicha de cerdo
+fdc:2706192	Pork sausage, reduced fat	salchicha de cerdo baja en grasa
+fdc:2706193	Pork sausage, reduced sodium	salchicha de cerdo baja en sodio
+fdc:2706194	Pork and beef sausage	salchicha de cerdo y vacuno
+fdc:2706195	Salami, NFS	salami
+fdc:2706196	Salami, made from any type of meat, reduced fat	salami bajo en grasa
+fdc:2706197	Salami, made from any type of meat, reduced sodium	salami bajo en sodio
+fdc:2706198	Scrapple, cooked	scrapple
+fdc:2706199	Thuringer	salchicha thuringer
+fdc:2706200	Turkey or chicken sausage	salchicha de pavo o pollo
+fdc:2706201	Turkey or chicken sausage, reduced sodium	salchicha de pavo o pollo baja en sodio
+fdc:2706202	Turkey or chicken and pork sausage	salchicha de ave y cerdo
+fdc:2706203	Vienna sausage, canned	salchichas vienesas en conserva
+fdc:2706204	Pickled sausage	salchicha en escabeche
+fdc:2706205	Luncheon meat, NFS	fiambre
+fdc:2706206	Ham, prepackaged or deli, luncheon meat	fiambre de jamón
+fdc:2706207	Ham, prepackaged or deli, luncheon meat, reduced sodium	fiambre de jamón bajo en sodio
+fdc:2706208	Chicken, prepackaged or deli, luncheon meat	fiambre de pollo
+fdc:2706209	Chicken, prepackaged or deli, luncheon meat, reduced sodium	fiambre de pollo bajo en sodio
+fdc:2706210	Ham luncheon meat, loaf type	fiambre de jamón en barra
+fdc:2706211	Spam	Spam
+fdc:2706212	Spam, reduced sodium	Spam bajo en sodio
+fdc:2706213	Liverwurst	salchicha de hígado
+fdc:2706214	Luncheon meat, loaf type	fiambre en barra
+fdc:2706215	Turkey, prepackaged or deli, luncheon meat	fiambre de pavo
+fdc:2706216	Turkey, prepackaged or deli, luncheon meat, reduced sodium	fiambre de pavo bajo en sodio
+fdc:2706217	Turkey ham, prepackaged or deli, luncheon meat	fiambre de jamón de pavo
+fdc:2706218	Beef, prepackaged or deli, luncheon meat	fiambre de vacuno
+fdc:2706219	Beef, prepackaged or deli, luncheon meat, reduced sodium	fiambre de vacuno bajo en sodio
+fdc:2706220	Meat spread or potted meat, NFS	paté de carne
+fdc:2706221	Chicken salad spread	paté de ensalada de pollo
+fdc:2706222	Ham salad spread	paté de ensalada de jamón
+fdc:2706223	Fish, raw	pescado crudo
+fdc:2706224	Fish, NFS	pescado
+fdc:2706225	Fish, NS as to type, baked or broiled	pescado al horno
+fdc:2706226	Fish, NS as to type, baked or broiled, coated	pescado al horno empanado
+fdc:2706227	Fish, NS as to type, fried	pescado frito
+fdc:2706228	Fish, NS as to type, steamed	pescado al vapor
+fdc:2706229	Fish, canned	pescado en conserva
+fdc:2706230	Fish, smoked	pescado ahumado
+fdc:2706231	Fish, stick	palito de pescado
+fdc:2706232	Fish, anchovy	anchoas
+fdc:2706233	Fish, carp	carpa
+fdc:2706234	Fish, catfish, NFS	siluro
+fdc:2706235	Fish, catfish, baked or broiled	siluro al horno
+fdc:2706236	Fish, catfish, grilled	siluro a la parrilla
+fdc:2706237	Fish, catfish, baked or broiled, coated	siluro al horno empanado
+fdc:2706238	Fish, catfish, fried	siluro frito
+fdc:2706239	Fish, catfish, steamed	siluro al vapor
+fdc:2706240	Fish, cod, NFS	bacalao
+fdc:2706241	Fish, cod, baked or broiled	bacalao al horno
+fdc:2706242	Fish, cod, grilled	bacalao a la parrilla
+fdc:2706243	Fish, cod, baked or broiled, coated	bacalao al horno empanado
+fdc:2706244	Fish, cod, fried	bacalao frito
+fdc:2706245	Fish, cod, steamed	bacalao al vapor
+fdc:2706246	Fish, croaker	corvina
+fdc:2706247	Fish, eel	anguila
+fdc:2706248	Fish, flounder, NFS	lenguado
+fdc:2706249	Fish, flounder, baked or broiled	lenguado al horno
+fdc:2706250	Fish, flounder, grilled	lenguado a la parrilla
+fdc:2706251	Fish, flounder, baked or broiled, coated	lenguado al horno empanado
+fdc:2706252	Fish, flounder, fried	lenguado frito
+fdc:2706253	Fish, flounder, steamed	lenguado al vapor
+fdc:2706254	Fish, haddock, NFS	eglefino
+fdc:2706255	Fish, haddock, baked or broiled	eglefino al horno
+fdc:2706256	Fish, haddock, grilled	eglefino a la parrilla
+fdc:2706257	Fish, haddock, baked or broiled, coated	eglefino al horno empanado
+fdc:2706258	Fish, haddock, fried	eglefino frito
+fdc:2706259	Fish, haddock, steamed	eglefino al vapor
+fdc:2706260	Fish, halibut	fletán
+fdc:2706261	Fish, herring	arenque
+fdc:2706262	Fish, pickled	pescado en escabeche
+fdc:2706263	Fish, mackerel, NFS	caballa
+fdc:2706264	Fish, mackerel, baked or broiled	caballa al horno
+fdc:2706265	Fish, mackerel, grilled	caballa a la parrilla
+fdc:2706266	Fish, mackerel, baked or broiled, coated	caballa al horno empanada
+fdc:2706267	Fish, mackerel, fried	caballa frita
+fdc:2706268	Fish, mackerel, canned	caballa en conserva
+fdc:2706269	Fish, mullet	lisa
+fdc:2706270	Fish, perch, NFS	perca
+fdc:2706271	Fish, perch, baked or broiled	perca al horno
+fdc:2706272	Fish, perch, grilled	perca a la parrilla
+fdc:2706273	Fish, perch, baked or broiled, coated	perca al horno empanada
+fdc:2706274	Fish, perch, fried	perca frita
+fdc:2706275	Fish, perch, steamed	perca al vapor
+fdc:2706276	Fish, pike	lucio
+fdc:2706277	Fish, pompano, NFS	pámpano
+fdc:2706278	Fish, pompano, baked or broiled	pámpano al horno
+fdc:2706279	Fish, pompano, grilled	pámpano a la parrilla
+fdc:2706280	Fish, pompano, baked or broiled, coated	pámpano al horno empanado
+fdc:2706281	Fish, pompano, fried	pámpano frito
+fdc:2706282	Fish, pompano, steamed	pámpano al vapor
+fdc:2706283	Fish, snapper	pargo
+fdc:2706284	Fish, salmon, raw	salmón crudo
+fdc:2706285	Fish, salmon, NFS	salmón
+fdc:2706286	Fish, salmon, baked or broiled	salmón al horno
+fdc:2706287	Fish, salmon, grilled	salmón a la parrilla
+fdc:2706288	Fish, salmon, baked or broiled, coated	salmón al horno empanado
+fdc:2706289	Fish, salmon, fried	salmón frito
+fdc:2706290	Fish, salmon, steamed	salmón al vapor
+fdc:2706291	Fish, salmon, canned	salmón en conserva
+fdc:2706292	Fish, salmon, smoked	salmón ahumado
+fdc:2706293	Fish, sardines, canned	sardinas en conserva
+fdc:2706294	Fish, bass, NFS	lubina
+fdc:2706295	Fish, bass, baked or broiled	lubina al horno
+fdc:2706296	Fish, bass, grilled	lubina a la parrilla
+fdc:2706297	Fish, bass, baked or broiled, coated	lubina al horno empanada
+fdc:2706298	Fish, bass, fried	lubina frita
+fdc:2706299	Fish, bass, steamed	lubina al vapor
+fdc:2706300	Fish, shark	tiburón
+fdc:2706301	Fish, swordfish	pez espada
+fdc:2706302	Fish, trout, NFS	trucha
+fdc:2706303	Fish, trout, baked or broiled	trucha al horno
+fdc:2706304	Fish, trout, grilled	trucha a la parrilla
+fdc:2706305	Fish, trout, baked or broiled, coated	trucha al horno empanada
+fdc:2706306	Fish, trout, fried	trucha frita
+fdc:2706307	Fish, trout, steamed	trucha al vapor
+fdc:2706308	Fish, tuna, raw	atún crudo
+fdc:2706309	Fish, tuna, NFS	atún
+fdc:2706310	Fish, tuna, cooked	atún cocinado
+fdc:2706311	Fish, tuna, canned	atún en conserva
+fdc:2706312	Fish, whiting, NFS	merlán
+fdc:2706313	Fish, whiting, baked or broiled	merlán al horno
+fdc:2706314	Fish, whiting, grilled	merlán a la parrilla
+fdc:2706315	Fish, whiting, baked or broiled, coated	merlán al horno empanado
+fdc:2706316	Fish, whiting, fried	merlán frito
+fdc:2706317	Fish, whiting, steamed	merlán al vapor
+fdc:2706318	Fish, tilapia, NFS	tilapia
+fdc:2706319	Fish, tilapia, baked or broiled	tilapia al horno
+fdc:2706320	Fish, tilapia, grilled	tilapia a la parrilla
+fdc:2706321	Fish, tilapia, baked or broiled, coated	tilapia al horno empanada
+fdc:2706322	Fish, tilapia, fried	tilapia frita
+fdc:2706323	Fish, tilapia, steamed	tilapia al vapor
+fdc:2706324	Fish, white, mixed species, NFS	pescado blanco
+fdc:2706325	Fish, white, mixed species, baked or broiled	pescado blanco al horno
+fdc:2706326	Fish, white, mixed species, baked or broiled, coated	pescado blanco al horno empanado
+fdc:2706327	Fish, white, mixed species, fried	pescado blanco frito
+fdc:2706328	Fish, white, mixed species, steamed	pescado blanco al vapor
+fdc:2706329	Fish, white, mixed species, grilled	pescado blanco a la parrilla
+fdc:2706330	Frog legs	ancas de rana
+fdc:2706331	Octopus	pulpo
+fdc:2706332	Caviar	caviar
+fdc:2706333	Calamari, cooked	calamares cocinados
+fdc:2706334	Calamari, fried	calamares fritos
+fdc:2706335	Turtle	tortuga
+fdc:2706336	Shellfish, NFS	marisco
+fdc:2706337	Abalone	abalón
+fdc:2706338	Clams, raw	almejas crudas
+fdc:2706339	Clams, NFS	almejas
+fdc:2706340	Clams, baked or broiled	almejas al horno
+fdc:2706341	Clams, fried	almejas fritas
+fdc:2706342	Clams, steamed or boiled	almejas al vapor
+fdc:2706343	Clams, canned	almejas en conserva
+fdc:2706344	Crab	cangrejo
+fdc:2706345	Crab, canned	cangrejo en conserva
+fdc:2706346	Crab, soft shell	cangrejo de caparazón blando
+fdc:2706347	Crayfish, fried	cangrejo de río frito
+fdc:2706348	Crayfish, cooked	cangrejo de río cocido
+fdc:2706349	Lobster	bogavante
+fdc:2706350	Mussels	mejillones
+fdc:2706351	Oysters, raw	ostras crudas
+fdc:2706352	Oysters, baked or broiled	ostras al horno
+fdc:2706353	Oysters, steamed	ostras al vapor
+fdc:2706354	Oysters, fried	ostras fritas
+fdc:2706355	Oysters, canned	ostras en conserva
+fdc:2706356	Scallops, baked or broiled	vieiras al horno
+fdc:2706357	Scallops, grilled	vieiras a la parrilla
+fdc:2706358	Scallops, steamed or boiled	vieiras al vapor o cocidas
+fdc:2706359	Scallops, fried	vieiras fritas
+fdc:2706360	Shrimp, NFS	gambas
+fdc:2706361	Shrimp, baked or broiled	gambas al horno
+fdc:2706362	Shrimp, grilled	gambas a la parrilla
+fdc:2706363	Shrimp, steamed or boiled	gambas al vapor
+fdc:2706364	Shrimp, fried	gambas fritas
+fdc:2706365	Shrimp, baked or broiled, coated	gambas al horno empanadas
+fdc:2706366	Shrimp, dried	gambas secas
+fdc:2706367	Shrimp, canned	gambas en conserva
+fdc:2706368	Escargot	escargot
+fdc:2706369	Barbecue meat, NFS	carne a la barbacoa
+fdc:2706370	Beef with tomato-based sauce	vacuno en salsa de tomate
+fdc:2706371	Beef burgundy	vacuno a la borgoñona
+fdc:2706372	Guisada, beef	vacuno guisada
+fdc:2706373	Chili, NFS	chili
+fdc:2706374	Chili with meat, from restaurant	chili con carne de restaurante
+fdc:2706375	Chili with meat and beans	chili con carne y alubias
+fdc:2706376	Chili with meat, canned	chili con carne en conserva
+fdc:2706377	Chili with meat	chili con carne
+fdc:2706378	Sloppy joe, no bun	sloppy joe sin pan
+fdc:2706379	Beef with gravy	vacuno con gravy
+fdc:2706380	Salisbury steak with gravy	filete Salisbury con gravy
+fdc:2706381	Beef with cream or white sauce	vacuno en salsa de nata
+fdc:2706382	Beef stroganoff	buey stroganoff
+fdc:2706383	Creamed chipped or dried beef	cecina en nata
+fdc:2706384	Swedish meatballs with cream or white sauce	albóndigas suecas en salsa de nata
+fdc:2706385	Beef with mushroom sauce	vacuno en salsa de champiñones
+fdc:2706386	Beef with soy-based sauce	vacuno en salsa de soja
+fdc:2706387	Steak teriyaki	filete teriyaki
+fdc:2706388	Beef curry	vacuno al curry
+fdc:2706389	Beef curry with rice	vacuno al curry con arroz
+fdc:2706390	Barbecue beef, with sauce	vacuno a la barbacoa con salsa
+fdc:2706391	Barbecue beef, no sauce	vacuno a la barbacoa sin salsa
+fdc:2706392	Beef with sweet and sour sauce	vacuno en salsa agridulce
+fdc:2706393	Stewed seasoned ground beef, Mexican style	carne picada de vacuno guisada a la mexicana
+fdc:2706394	Steak tartare	steak tartar
+fdc:2706395	Meatballs, Puerto Rican style	albóndigas a la puertorriqueña
+fdc:2706396	Stewed seasoned ground beef, Puerto Rican style	carne picada de vacuno guisada a la puertorriqueña
+fdc:2706397	Stewed dried beef, Puerto Rican style	cecina guisada a la puertorriqueña
+fdc:2706398	Ham or pork with gravy	jamón o cerdo con gravy
+fdc:2706399	Barbecue pork, with sauce	cerdo a la barbacoa con salsa
+fdc:2706400	Barbecue pork, no sauce	cerdo a la barbacoa sin salsa
+fdc:2706401	Sweet and sour pork	cerdo agridulce
+fdc:2706402	Ham stroganoff	jamón stroganoff
+fdc:2706403	Ham or pork with mushroom sauce	jamón o cerdo en salsa de champiñones
+fdc:2706404	Ham or pork with tomato-based sauce	jamón o cerdo en salsa de tomate
+fdc:2706405	Sausage with tomato-based sauce	salchicha en salsa de tomate
+fdc:2706406	Sausage gravy	gravy con salchicha
+fdc:2706407	Guisada, pork	cerdo guisada
+fdc:2706408	Pork or ham with soy-based sauce	cerdo o jamón en salsa de soja
+fdc:2706409	Chili hot dog, no bun	perro caliente con chili sin pan
+fdc:2706410	Frankfurters or hot dogs with tomato-based sauce	salchichas en salsa de tomate
+fdc:2706411	Pork with chili and tomatoes	cerdo con chili y tomate
+fdc:2706412	Stewed pork, Puerto Rican style	cerdo guisado a la puertorriqueña
+fdc:2706413	Lamb or mutton with gravy	cordero con gravy
+fdc:2706414	Stewed goat, Puerto Rican style	cabra guisada a la puertorriqueña
+fdc:2706415	Veal scallopini	ternera escalopini
+fdc:2706416	Veal Marsala	ternera Marsala
+fdc:2706417	Veal parmigiana	ternera parmesana
+fdc:2706418	Veal cordon bleu	ternera cordon bleu
+fdc:2706419	Venison or deer with tomato-based sauce	venado en salsa de tomate
+fdc:2706420	Venison or deer with gravy	venado con gravy
+fdc:2706421	Chicken or turkey cacciatore	pollo o pavo cacciatora
+fdc:2706422	Spaghetti sauce with poultry	salsa para espaguetis con ave
+fdc:2706423	Spaghetti sauce with poultry and added vegetables	salsa para espaguetis con ave y verduras
+fdc:2706424	Stewed chicken with tomato-based sauce, Mexican style	pollo guisado en salsa de tomate a la mexicana
+fdc:2706425	Chili with chicken and beans	chili con pollo y alubias
+fdc:2706426	Chili with chicken	chili con pollo
+fdc:2706427	Chili, white	chili blanco
+fdc:2706428	Chicken with gravy	pollo con gravy
+fdc:2706429	Chicken or turkey fricassee	pollo o pavo en fricasé
+fdc:2706430	Turkey with gravy	pavo con gravy
+fdc:2706431	Chicken or turkey with cream sauce	pollo o pavo en salsa de nata
+fdc:2706432	Chicken or turkey with mushroom sauce	pollo o pavo en salsa de champiñones
+fdc:2706433	Chicken or turkey with teriyaki	pollo o pavo teriyaki
+fdc:2706434	Barbecue chicken	pollo a la barbacoa
+fdc:2706435	Sweet and sour chicken or turkey	pollo o pavo agridulce
+fdc:2706436	Sweet and sour chicken or turkey, without vegetables	pollo o pavo agridulce sin verduras
+fdc:2706437	Chicken curry	pollo al curry
+fdc:2706438	Chicken curry with rice	pollo al curry con arroz
+fdc:2706439	Chicken with mole sauce	pollo en salsa mole
+fdc:2706440	Chicken or turkey with cheese sauce	pollo o pavo en salsa de queso
+fdc:2706441	Chicken or turkey cordon bleu	pollo o pavo cordon bleu
+fdc:2706442	Chicken or turkey parmigiana	pollo o pavo parmesana
+fdc:2706443	Orange chicken	pollo a la naranja
+fdc:2706444	Sesame chicken	pollo al sésamo
+fdc:2706445	Chicken kiev	pollo Kiev
+fdc:2706446	Stuffed chicken, drumstick or breast, Puerto Rican style	pollo relleno a la puertorriqueña
+fdc:2706447	Fish with cream or white sauce, not tuna or lobster	pescado en salsa de nata
+fdc:2706448	Fish timbale or mousse	mousse de pescado
+fdc:2706449	Shrimp cocktail	cóctel de gambas
+fdc:2706450	Tuna with cream or white sauce	atún en salsa de nata
+fdc:2706451	Seafood thermidor	marisco termidor
+fdc:2706452	Seafood sauce	salsa de marisco
+fdc:2706453	Spaghetti sauce with seafood	salsa para espaguetis con marisco
+fdc:2706454	Spaghetti sauce with seafood and added vegetables	salsa para espaguetis con marisco y verduras
+fdc:2706455	Shrimp with lobster sauce	gambas en salsa de bogavante
+fdc:2706456	Sweet and sour shrimp	gambas agridulces
+fdc:2706457	Fish sauce	salsa de pescado
+fdc:2706458	Shrimp scampi	gambas scampi
+fdc:2706459	Fish with tomato-based sauce	pescado en salsa de tomate
+fdc:2706460	Fish curry	pescado al curry
+fdc:2706461	Fish curry with rice	pescado al curry con arroz
+fdc:2706462	Shrimp teriyaki	gambas teriyaki
+fdc:2706463	Ceviche	ceviche
+fdc:2706464	Crabs in tomato-based sauce, Puerto Rican style	cangrejos en salsa de tomate a la puertorriqueña
+fdc:2706465	Shrimp in garlic sauce, Puerto Rican style	gambas al ajillo a la puertorriqueña
+fdc:2706466	Stew, fish	guiso de pescado
+fdc:2706467	Meatballs, NS as to type of meat, with sauce	albóndigas en salsa
+fdc:2706468	Meat loaf, Puerto Rican style	pastel de carne a la puertorriqueña
+fdc:2706469	Meat with tomato-based sauce	carne en salsa de tomate
+fdc:2706470	Spaghetti sauce with meat	salsa para espaguetis con carne
+fdc:2706471	Spaghetti sauce with meat and added vegetables	salsa para espaguetis con carne y verduras
+fdc:2706472	Stewed, seasoned, ground beef and pork, Mexican style	carne picada de vacuno y cerdo guisada a la mexicana
+fdc:2706473	Meat with gravy, NS as to type of meat,	carne con gravy
+fdc:2706474	Beef and potatoes, no sauce	vacuno con patatas sin salsa
+fdc:2706475	Beef and potatoes with cream sauce, white sauce or mushroom sauce	vacuno con patatas en salsa de nata
+fdc:2706476	Beef, roast, hash	hash de asado de vacuno
+fdc:2706477	Corned beef hash	hash de corned beef
+fdc:2706478	Beef and potatoes with cheese sauce	vacuno con patatas en salsa de queso
+fdc:2706479	Stewed, seasoned, ground beef with potatoes, Mexican style	carne picada de vacuno guisada con patatas a la mexicana
+fdc:2706480	Beef and noodles, no sauce	vacuno con fideos sin salsa
+fdc:2706481	Beef and macaroni with cheese sauce	vacuno con macarrones en salsa de queso
+fdc:2706482	Beef and noodles with tomato-based sauce	vacuno con fideos en salsa de tomate
+fdc:2706483	Chili with macaroni	chili con macarrones
+fdc:2706484	Beef and noodles with gravy	vacuno con fideos con gravy
+fdc:2706485	Beef and noodles with cream or white sauce	vacuno con fideos en salsa de nata
+fdc:2706486	Beef stroganoff with noodles	buey stroganoff con fideos
+fdc:2706487	Beef and noodles with mushroom sauce	vacuno con fideos en salsa de champiñones
+fdc:2706488	Beef and noodles with soy-based sauce	vacuno con fideos en salsa de soja
+fdc:2706489	Beef and rice, no sauce	vacuno con arroz sin salsa
+fdc:2706490	Biryani with meat	biryani con carne
+fdc:2706491	Beef and rice with tomato-based sauce	vacuno con arroz en salsa de tomate
+fdc:2706492	Porcupine balls with tomato-based sauce	albóndigas puerco espín en salsa de tomate
+fdc:2706493	Beef and rice with gravy	vacuno con arroz con gravy
+fdc:2706494	Beef and rice with cream sauce	vacuno con arroz en salsa de nata
+fdc:2706495	Beef and rice with mushroom sauce	vacuno con arroz en salsa de champiñones
+fdc:2706496	Porcupine balls with mushroom sauce	albóndigas puerco espín en salsa de champiñones
+fdc:2706497	Beef and rice with soy-based sauce	vacuno con arroz en salsa de soja
+fdc:2706498	Beef and rice with cheese sauce	vacuno con arroz en salsa de queso
+fdc:2706499	Meat loaf made with beef	pastel de carne de vacuno
+fdc:2706500	Meat loaf made with beef, with tomato-based sauce	pastel de carne de vacuno en salsa de tomate
+fdc:2706501	Beef wellington	vacuno Wellington
+fdc:2706502	Corned beef patty	hamburguesa de corned beef
+fdc:2706503	Beef stew with potatoes, Puerto Rican style	vacuno guisado con patatas a la puertorriqueña
+fdc:2706504	Meat loaf made with ham	pastel de carne de jamón
+fdc:2706505	Ham and noodles with cream or white sauce	jamón con fideos en salsa de nata
+fdc:2706506	Ham and rice with mushroom sauce	jamón con arroz en salsa de champiñones
+fdc:2706507	Ham or pork with stuffing	jamón o cerdo con relleno
+fdc:2706508	Ham croquette	croquetas de jamón
+fdc:2706509	Pork and rice with tomato-based sauce	cerdo con arroz en salsa de tomate
+fdc:2706510	Sausage and rice with tomato-based sauce	salchicha con arroz en salsa de tomate
+fdc:2706511	Sausage and rice with mushroom sauce	salchicha con arroz en salsa de champiñones
+fdc:2706512	Sausage and rice with cheese sauce	salchicha con arroz en salsa de queso
+fdc:2706513	Sausage and noodles with cream or white sauce	salchicha con fideos en salsa de nata
+fdc:2706514	Ham and noodles, no sauce	jamón con fideos sin salsa
+fdc:2706515	Ham or pork and rice, no sauce	jamón o cerdo con arroz sin salsa
+fdc:2706516	Ham or pork and potatoes with gravy	jamón o cerdo con patatas con gravy
+fdc:2706517	Ham or pork and potatoes with cheese sauce	jamón o cerdo con patatas en salsa de queso
+fdc:2706518	Stewed pig's feet, Puerto Rican style	manitas de cerdo guisadas a la puertorriqueña
+fdc:2706519	Stew, pork	guiso de cerdo
+fdc:2706520	Stew, pork, with pasta	guiso de cerdo con pasta
+fdc:2706521	Lamb or mutton loaf	pastel de carne de cordero
+fdc:2706522	Lamb or mutton and potatoes with gravy	cordero con patatas con gravy
+fdc:2706523	Lamb or mutton and potatoes with tomato-based sauce	cordero con patatas en salsa de tomate
+fdc:2706524	Lamb or mutton and noodles with gravy	cordero con fideos con gravy
+fdc:2706525	Meat loaf made with venison/deer	pastel de carne de venado
+fdc:2706526	Venison or deer and noodles with cream or white sauce	venado con fideos en salsa de nata
+fdc:2706527	Chicken or turkey hash	hash de pollo o pavo
+fdc:2706528	Chicken or turkey and potatoes with gravy	pollo o pavo con patatas con gravy
+fdc:2706529	Chicken or turkey and noodles, no sauce	pollo o pavo con fideos sin salsa
+fdc:2706530	Chicken or turkey and noodles with gravy	pollo o pavo con fideos con gravy
+fdc:2706531	Chicken or turkey and noodles with mushroom sauce	pollo o pavo con fideos en salsa de champiñones
+fdc:2706532	Chicken or turkey and noodles with cream or white sauce	pollo o pavo con fideos en salsa de nata
+fdc:2706533	Chicken or turkey and noodles with cheese sauce	pollo o pavo con fideos en salsa de queso
+fdc:2706534	Chicken or turkey tetrazzini	pollo o pavo tetrazzini
+fdc:2706535	Chicken or turkey and noodles with tomato-based sauce	pollo o pavo con fideos en salsa de tomate
+fdc:2706536	Chicken or turkey and noodles with soy-based sauce	pollo o pavo con fideos en salsa de soja
+fdc:2706537	Chicken or turkey and rice, no sauce	pollo o pavo con arroz sin salsa
+fdc:2706538	Biryani with chicken	biryani de pollo
+fdc:2706539	Chicken or turkey and rice with cream sauce	pollo o pavo con arroz en salsa de nata
+fdc:2706540	Chicken or turkey and rice with mushroom sauce	pollo o pavo con arroz en salsa de champiñones
+fdc:2706541	Chicken or turkey and rice with tomato-based sauce	pollo o pavo con arroz en salsa de tomate
+fdc:2706542	Chicken or turkey and rice with soy-based sauce	pollo o pavo con arroz en salsa de soja
+fdc:2706543	Chicken or turkey with dumplings	pollo o pavo con dumplings
+fdc:2706544	Chicken or turkey with stuffing	pollo o pavo con relleno
+fdc:2706545	Chicken or turkey cake, patty, or croquette	hamburguesa o croqueta de pollo o pavo
+fdc:2706546	Chicken or turkey souffle	suflé de pollo o pavo
+fdc:2706547	Meat loaf made with chicken or turkey	pastel de carne de pollo o pavo
+fdc:2706548	Meat loaf made with chicken or turkey, with tomato-based sauce	pastel de carne de pollo o pavo en salsa de tomate
+fdc:2706549	Crab, cake	croqueta de cangrejo
+fdc:2706550	Fish, cake or patty	croqueta de pescado
+fdc:2706551	Gefilte fish	pescado gefilte
+fdc:2706552	Fish, salmon cake or patty	croqueta de salmón
+fdc:2706553	Shrimp and noodles, no sauce	gambas con fideos sin salsa
+fdc:2706554	Shrimp and noodles with gravy	gambas con fideos con gravy
+fdc:2706555	Shrimp and noodles with mushroom sauce	gambas con fideos en salsa de champiñones
+fdc:2706556	Shrimp and noodles with cream or white sauce	gambas con fideos en salsa de nata
+fdc:2706557	Shrimp and noodles with soy-based sauce	gambas con fideos en salsa de soja
+fdc:2706558	Shrimp and noodles with cheese sauce	gambas con fideos en salsa de queso
+fdc:2706559	Shrimp and noodles with tomato sauce	gambas con fideos en salsa de tomate
+fdc:2706560	Tuna cake or patty	croqueta de atún
+fdc:2706561	Clam cake or patty	croqueta de almejas
+fdc:2706562	Flounder with crab stuffing	lenguado relleno de cangrejo
+fdc:2706563	Lobster with bread stuffing, baked	bogavante relleno de pan al horno
+fdc:2706564	Clams Casino	almejas casino
+fdc:2706565	Shrimp, cake or patty	croqueta de gambas
+fdc:2706566	Shrimp with crab stuffing	gambas rellenas de cangrejo
+fdc:2706567	Shrimp toast	tostada de gambas
+fdc:2706568	Imitation crab meat	palitos de cangrejo
+fdc:2706569	Seafood souffle	suflé de marisco
+fdc:2706570	Tuna noodle casserole with cream or white sauce	cazuela de atún con fideos en salsa de nata
+fdc:2706571	Tuna noodle casserole with mushroom sauce	cazuela de atún con fideos en salsa de champiñones
+fdc:2706572	Tuna and rice with mushroom sauce	atún con arroz en salsa de champiñones
+fdc:2706573	Fish and rice with tomato-based sauce	pescado con arroz en salsa de tomate
+fdc:2706574	Fish and rice with cream sauce	pescado con arroz en salsa de nata
+fdc:2706575	Fish and rice with mushroom sauce	pescado con arroz en salsa de champiñones
+fdc:2706576	Fish and noodles with mushroom sauce	pescado con fideos en salsa de champiñones
+fdc:2706577	Shellfish and noodles with tomato-based sauce	marisco con fideos en salsa de tomate
+fdc:2706578	Stewed salmon, Puerto Rican style	salmón guisado a la puertorriqueña
+fdc:2706579	Meat loaf, NS as to type of meat	pastel de carne
+fdc:2706580	Meatballs, with breading, NS as to type of meat, with gravy	albóndigas empanadas con gravy
+fdc:2706581	Meat loaf made with beef and pork	pastel de carne de vacuno y cerdo
+fdc:2706582	Meat loaf made with beef, veal and pork	pastel de carne de vacuno, ternera y cerdo
+fdc:2706583	Meat loaf made with beef and pork, with tomato-based sauce	pastel de carne de vacuno y cerdo en salsa de tomate
+fdc:2706584	Hash, NS as to type of meat	hash
+fdc:2706585	Vienna sausages stewed with potatoes, Puerto Rican style	salchichas vienesas guisadas con patatas a la puertorriqueña
+fdc:2706586	Stewed, seasoned, ground beef and pork with potatoes, Mexican style	carne picada de vacuno y cerdo guisada con patatas a la mexicana
+fdc:2706587	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	vacuno con patatas, zanahoria y brócoli sin salsa
+fdc:2706588	Beef, potatoes, and vegetables, excluding carrots, broccoli, and dark-green leafy; no sauce	vacuno con patatas y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706589	Corned beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	corned beef con patatas, zanahoria y brócoli sin salsa
+fdc:2706590	Corned beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	corned beef con patatas y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706591	Stew, beef, canned	guiso de vacuno en conserva
+fdc:2706592	Stew, beef	guiso de vacuno
+fdc:2706593	Stew, beef, with pasta	guiso de vacuno con pasta
+fdc:2706594	Shepherd's pie	pastel de pastor
+fdc:2706595	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con patatas, zanahoria y brócoli con gravy
+fdc:2706596	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con patatas y verduras sin zanahoria ni brócoli con gravy
+fdc:2706597	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	vacuno con patatas, zanahoria y brócoli en salsa de nata
+fdc:2706598	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	vacuno con patatas y verduras sin zanahoria ni brócoli en salsa de nata
+fdc:2706599	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	vacuno con patatas, zanahoria y brócoli en salsa de tomate
+fdc:2706600	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	vacuno con patatas y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706601	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	vacuno con patatas, zanahoria y brócoli en salsa de queso
+fdc:2706602	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	vacuno con patatas y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706603	Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	vacuno con patatas, zanahoria y brócoli en salsa de soja
+fdc:2706604	Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	vacuno con patatas y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706605	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	vacuno con fideos, zanahoria y brócoli sin salsa
+fdc:2706606	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	vacuno con fideos y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706607	Beef chow mein or chop suey with noodles	chow mein de vacuno
+fdc:2706608	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	vacuno con fideos, zanahoria y brócoli en salsa de soja
+fdc:2706609	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	vacuno con fideos y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706610	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	vacuno con fideos, zanahoria y brócoli en salsa de tomate
+fdc:2706611	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	vacuno con fideos y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706612	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; mushroom sauce	vacuno con fideos, zanahoria y brócoli en salsa de champiñones
+fdc:2706613	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; mushroom sauce	vacuno con fideos y verduras sin zanahoria ni brócoli en salsa de champiñones
+fdc:2706614	Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con fideos, zanahoria y brócoli con gravy
+fdc:2706615	Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con fideos y verduras sin zanahoria ni brócoli con gravy
+fdc:2706616	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	vacuno con arroz, zanahoria y brócoli sin salsa
+fdc:2706617	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	vacuno con arroz y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706618	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	vacuno con arroz, zanahoria y brócoli en salsa de tomate
+fdc:2706619	Beef, rice, and vegetables excluding carrots, broccoli, and/or dark-green leafy; tomato-based sauce	vacuno con arroz y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706620	Stuffed cabbage rolls with beef and rice	rollitos de col rellenos de vacuno y arroz
+fdc:2706621	Stuffed grape leaves with beef and rice	hojas de parra rellenas de vacuno y arroz
+fdc:2706622	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; mushroom sauce	vacuno con arroz, zanahoria y brócoli en salsa de champiñones
+fdc:2706623	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; mushroom sauce	vacuno con arroz y verduras sin zanahoria ni brócoli en salsa de champiñones
+fdc:2706624	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	vacuno con arroz, zanahoria y brócoli en salsa de queso
+fdc:2706625	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	vacuno con arroz y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706626	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con arroz, zanahoria y brócoli con gravy
+fdc:2706627	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con arroz y verduras sin zanahoria ni brócoli con gravy
+fdc:2706628	Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	vacuno con arroz, zanahoria y brócoli en salsa de soja
+fdc:2706629	Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	vacuno con arroz y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706630	Pot pie, beef	empanada de vacuno
+fdc:2706631	Beef, dumplings, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	vacuno con dumplings, zanahoria y brócoli con gravy
+fdc:2706632	Beef, dumplings, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	vacuno con dumplings y verduras sin zanahoria ni brócoli con gravy
+fdc:2706633	Stuffed green pepper, Puerto Rican style	pimiento verde relleno a la puertorriqueña
+fdc:2706634	Ham or pork, noodles and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	jamón o cerdo con fideos y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706635	Ham or pork, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	jamón o cerdo con fideos, zanahoria y brócoli sin salsa
+fdc:2706636	Ham or pork, noodles and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	jamón o cerdo con fideos y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706637	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	cerdo con patatas, zanahoria y brócoli sin salsa
+fdc:2706638	Ham or pork, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	jamón o cerdo con fideos, zanahoria y brócoli en salsa de tomate
+fdc:2706639	Sausage, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	salchicha con fideos y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706640	Sausage, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	salchicha con fideos, zanahoria y brócoli en salsa de tomate
+fdc:2706641	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	cerdo con patatas, zanahoria y brócoli en salsa de tomate
+fdc:2706642	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	cerdo con patatas y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706643	Sausage, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	salchicha con patatas, zanahoria y brócoli con gravy
+fdc:2706644	Sausage, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	salchicha con patatas y verduras sin zanahoria ni brócoli con gravy
+fdc:2706645	Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	cerdo con patatas, zanahoria y brócoli con gravy
+fdc:2706646	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	cerdo con patatas y verduras sin zanahoria ni brócoli con gravy
+fdc:2706647	Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	cerdo con patatas y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706648	Pork chow mein or chop suey with noodles	chow mein de cerdo
+fdc:2706649	Pork, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	cerdo con arroz, zanahoria y brócoli en salsa de soja
+fdc:2706650	Pork, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	cerdo con arroz y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706651	Pork, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	cerdo con arroz, zanahoria y brócoli en salsa de tomate
+fdc:2706652	Pork, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	cerdo con arroz y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706653	Ham, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	jamón con patatas y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706654	Ham, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	jamón con patatas, zanahoria y brócoli sin salsa
+fdc:2706655	Sweet and sour pork with rice	cerdo agridulce con arroz
+fdc:2706656	Lamb or mutton, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	cordero con arroz y verduras sin zanahoria ni brócoli con gravy
+fdc:2706657	Lamb or mutton, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	cordero con arroz, zanahoria y brócoli en salsa de tomate
+fdc:2706658	Lamb or mutton, rice, and vegetables  including carrots, broccoli, and/or dark-green leafy; gravy	cordero con arroz, zanahoria y brócoli con gravy
+fdc:2706659	Stuffed grape leaves with lamb and rice	hojas de parra rellenas de cordero y arroz
+fdc:2706660	Stew, lamb	guiso de cordero
+fdc:2706661	Stewed rabbit, Puerto Rican style,	conejo guisado a la puertorriqueña
+fdc:2706662	Venison or deer, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	venado con patatas, zanahoria y brócoli con gravy
+fdc:2706663	Venison or deer, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	venado con patatas y verduras sin zanahoria ni brócoli con gravy
+fdc:2706664	Venison or deer, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	venado con fideos, zanahoria y brócoli en salsa de tomate
+fdc:2706665	Venison or deer, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	venado con fideos y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706666	Chicken or turkey, potatoes, corn, and cheese, with gravy	pollo o pavo con patatas, maíz y queso con gravy
+fdc:2706667	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	pollo o pavo con patatas, zanahoria y brócoli sin salsa
+fdc:2706668	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	pollo o pavo con patatas y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706669	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	pollo o pavo con patatas, zanahoria y brócoli con gravy
+fdc:2706670	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	pollo o pavo con patatas y verduras sin zanahoria ni brócoli con gravy
+fdc:2706671	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con patatas, zanahoria y brócoli en salsa de nata
+fdc:2706672	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con patatas y verduras sin zanahoria ni brócoli en salsa de nata
+fdc:2706673	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	pollo o pavo con patatas, zanahoria y brócoli en salsa de queso
+fdc:2706674	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	pollo o pavo con patatas y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706675	Chicken or turkey, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	pollo o pavo con patatas, zanahoria y brócoli en salsa de tomate
+fdc:2706676	Chicken or turkey, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	pollo o pavo con patatas y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706677	Stew, chicken, with pasta	guiso de pollo con pasta
+fdc:2706678	Stew, chicken	guiso de pollo
+fdc:2706679	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	pollo o pavo con fideos, zanahoria y brócoli sin salsa
+fdc:2706680	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	pollo o pavo con fideos y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706681	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	pollo o pavo con fideos, zanahoria y brócoli con gravy
+fdc:2706682	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	pollo o pavo con fideos y verduras sin zanahoria ni brócoli con gravy
+fdc:2706683	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con fideos, zanahoria y brócoli en salsa de nata
+fdc:2706684	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con fideos y verduras sin zanahoria ni brócoli en salsa de nata
+fdc:2706685	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	pollo o pavo con fideos, zanahoria y brócoli en salsa de tomate
+fdc:2706686	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	pollo o pavo con fideos y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706687	Chicken or turkey chow mein or chop suey with noodles	chow mein de pollo o pavo
+fdc:2706688	Chicken or turkey, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	pollo o pavo con fideos, zanahoria y brócoli en salsa de queso
+fdc:2706689	Chicken or turkey, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	pollo o pavo con fideos y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706690	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	pollo o pavo con arroz, zanahoria y brócoli sin salsa
+fdc:2706691	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; no sauce	pollo o pavo con arroz y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706692	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	pollo o pavo con arroz, zanahoria y brócoli con gravy
+fdc:2706693	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	pollo o pavo con arroz y verduras sin zanahoria ni brócoli con gravy
+fdc:2706694	Chicken or turkey, rice, corn, and cheese, with gravy	pollo o pavo con arroz, maíz y queso con gravy
+fdc:2706695	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; soy-based sauce	pollo o pavo con arroz, zanahoria y brócoli en salsa de soja
+fdc:2706696	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; soy-based sauce	pollo o pavo con arroz y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706697	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con arroz, zanahoria y brócoli en salsa de nata
+fdc:2706698	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cream sauce, white sauce, or mushroom sauce	pollo o pavo con arroz y verduras sin zanahoria ni brócoli en salsa de nata
+fdc:2706699	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; cheese sauce	pollo o pavo con arroz, zanahoria y brócoli en salsa de queso
+fdc:2706700	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	pollo o pavo con arroz y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706701	Chicken or turkey, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce	pollo o pavo con arroz, zanahoria y brócoli en salsa de tomate
+fdc:2706702	Chicken or turkey, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; tomato-based sauce	pollo o pavo con arroz y verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706703	Pot pie, chicken	empanada de pollo
+fdc:2706704	Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce	pollo o pavo con relleno, zanahoria y brócoli sin salsa
+fdc:2706705	Chicken or turkey,stuffing, and vegetables excluding carrots, broccoli, and dark green leafy; no sauce	pollo o pavo con relleno y verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706706	Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy	pollo o pavo con relleno, zanahoria y brócoli con gravy
+fdc:2706707	Chicken or turkey, stuffing, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy	pollo o pavo con relleno y verduras sin zanahoria ni brócoli con gravy
+fdc:2706708	Chicken or turkey, dumplings, and vegetables including carrots, broccoli, and/or dark green leafy; gravy	pollo o pavo con dumplings, zanahoria y brócoli con gravy
+fdc:2706709	Chicken or turkey, dumplings, and vegetables excluding carrots, broccoli, and dark green leafy; gravy	pollo o pavo con dumplings y verduras sin zanahoria ni brócoli con gravy
+fdc:2706710	Chicken fricassee, Puerto Rican style	pollo en fricasé a la puertorriqueña
+fdc:2706711	Paella with seafood	paella de marisco
+fdc:2706712	Shrimp chow mein or chop suey with noodles	chow mein de gambas
+fdc:2706713	Shrimp creole, with rice	gambas criollas con arroz
+fdc:2706714	Tuna noodle casserole with vegetables, cream or white sauce	cazuela de atún con fideos y verduras en salsa de nata
+fdc:2706715	Fish, noodles, and vegetables including carrots, broccoli, and/or dark green leafy; cheese sauce	pescado con fideos, zanahoria y brócoli en salsa de queso
+fdc:2706716	Fish, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; cheese sauce	pescado con fideos y verduras sin zanahoria ni brócoli en salsa de queso
+fdc:2706717	Soup, bouillabaisse	bullabesa
+fdc:2706718	Tuna noodle casserole with vegetables and mushroom sauce	cazuela de atún con fideos y verduras en salsa de champiñones
+fdc:2706719	Codfish with starchy vegetables, Puerto Rican style	bacalao con verduras feculentas a la puertorriqueña
+fdc:2706720	Biscayne codfish, Puerto Rican style	bacalao a la vizcaína a la puertorriqueña
+fdc:2706721	Stew, NFS	guiso
+fdc:2706722	Chow mein or chop suey, NS as to type of meat, with noodles	chow mein de carne
+fdc:2706723	Paella, NFS	paella
+fdc:2706724	Chow mein or chop suey, various types of meat, with noodles	chow mein de varias carnes
+fdc:2706725	Stewed tripe, with potatoes, Puerto Rican style	callos guisados con patatas a la puertorriqueña
+fdc:2706726	Gumbo with rice	gumbo con arroz
+fdc:2706727	Jambalaya with meat and rice	jambalaya con carne y arroz
+fdc:2706728	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	vacuno con zanahoria y brócoli sin salsa
+fdc:2706729	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, no sauce	vacuno con verduras sin zanahoria ni brócoli, sin salsa
+fdc:2706730	Beef shish kabob with vegetables, excluding potatoes	brocheta de vacuno con verduras
+fdc:2706731	Beef with vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce	vacuno con zanahoria y brócoli en salsa de tomate
+fdc:2706732	Swiss steak	filete suizo
+fdc:2706733	Beef rolls, stuffed with vegetables or meat mixture, tomato-based sauce	rollitos de vacuno rellenos en salsa de tomate
+fdc:2706734	Beef with vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, tomato-based sauce	vacuno con verduras sin zanahoria ni brócoli en salsa de tomate
+fdc:2706735	Beef with vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, mushroom sauce	vacuno con zanahoria y brócoli en salsa de champiñones
+fdc:2706736	Beef with vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, mushroom sauce	vacuno con verduras sin zanahoria ni brócoli en salsa de champiñones
+fdc:2706737	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	vacuno con zanahoria y brócoli en salsa de soja
+fdc:2706738	Beef and broccoli	vacuno con brócoli
+fdc:2706739	Beef, tofu, and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-based sauce	vacuno con tofu, zanahoria y brócoli en salsa de soja
+fdc:2706740	Szechuan beef	vacuno a la sichuan
+fdc:2706741	Hunan beef	vacuno a la hunan
+fdc:2706742	Beef chow mein or chop suey, no noodles	chow mein de vacuno sin fideos
+fdc:2706743	Kung Pao beef	vacuno kung pao
+fdc:2706744	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, soy-based sauce	vacuno con verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706745	Beef, tofu, and vegetables excluding carrots, broccoli,  and dark-green leafy; no potatoes, soy-based sauce	vacuno con tofu y verduras sin zanahoria ni brócoli en salsa de soja
+fdc:2706746	Beef and vegetables, Hawaiian style	vacuno con verduras a la hawaiana
+fdc:2706747	Pepper steak	filete con pimientos
+fdc:2706748	Beef, ground, with egg and onion	carne picada de vacuno con huevo y cebolla
+fdc:2706749	Beef salad	ensalada de vacuno
+fdc:2706750	Beef taco filling: beef, cheese, tomato, taco sauce	relleno de taco de vacuno
+fdc:2706751	Stir fried beef and vegetables in soy sauce	vacuno salteado con verduras en salsa de soja
+fdc:2706752	Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, gravy	vacuno con zanahoria y brócoli con gravy
+fdc:2706753	Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, gravy	vacuno con verduras sin zanahoria ni brócoli con gravy
+fdc:2706754	Beef steak with onions, Puerto Rican style	filete con cebolla a la puertorriqueña
+fdc:2706755	Cabbage with ham hocks	col con codillo de cerdo
+fdc:2706756	Ham or pork salad	ensalada de jamón o cerdo
+fdc:2706757	Frankfurters or hot dogs and sauerkraut	salchichas con chucrut
+fdc:2706758	Pork and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, no sauce	cerdo con zanahoria y brócoli sin salsa
+fdc:2706759	Greens with ham or pork	verduras de hoja con jamón o cerdo
+fdc:2706760	Pork, tofu, and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, soy-base sauce	cerdo con tofu, zanahoria y brócoli en salsa de soja
+fdc:2706761	Pork and vegetables, Hawaiian style	cerdo con verduras a la hawaiana
+fdc:2706762	Pork and watercress with soy-based sauce	cerdo con berros en salsa de soja
+fdc:2706763	Kung Pao pork	cerdo kung pao
 fdc:2727572	Beef, short loin (NY strip steak), raw	lomo bajo de vacuno crudo
 fdc:333476	Fish, pollock, raw	abadejo crudo
 fdc:746767	Cheese, swiss	queso emmental
@@ -4431,7 +5811,7 @@ tfda:M0900201	奶油(固態,加鹽)	mantequilla con sal
 tfda:O0200401	蘆薈露飲料	bebida de aloe vera
 tfda:O0702001	珍珠奶茶(去冰,微糖)	bubble tea con poco azúcar
 tfda:P0200601	油蔥酥	chalotes fritos crujientes
-tfda:P0201101	椰漿	leche de coco
+tfda:P0201101	椰漿	leche de coco en conserva
 tfda:P1002101	金桔醬	mermelada de kumquat
 tfda:P1004501	香椿醬	salsa de cedro chino (xiangchun)
 tfda:R3000201	冷凍春捲	rollitos de primavera congelados
