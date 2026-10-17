@@ -1,22 +1,1431 @@
+bls:B101000	Wholemeal bread	цельнозерновой хлеб
+bls:B106000	Wholemeal bread with oilseeds	цельнозерновой хлеб с масличными семенами
+bls:B106500	Wholemeal bread with sunflower seeds	цельнозерновой хлеб с семечками подсолнечника
+bls:B106700	Wholemeal bread with pumpkin seeds	цельнозерновой хлеб с тыквенными семечками
+bls:B106800	Wholemeal bread with nuts	цельнозерновой хлеб с орехами
+bls:B107300	Wholemeal bread with buttermilk	цельнозерновой хлеб на пахте
+bls:B107900	Wholemeal bread with quark	цельнозерновой хлеб с творогом
+bls:B111000	Wholemeal wheat bread	хлеб пшеничный цельнозерновой
+bls:B111200	Wholemeal wheat toast	цельнозерновой тостовый хлеб
+bls:B111272	Wholemeal wheat toast toasted	цельнозерновой тостовый хлеб поджаренный
+bls:B111300	Wholemeal wheat bread with pumpkin seeds	цельнозерновой пшеничный хлеб с тыквенными семечками
+bls:B111400	Wholemeal wheat bread with nuts	цельнозерновой пшеничный хлеб с орехами
+bls:B111500	Wholemeal wheat bread with oilseeds	цельнозерновой пшеничный хлеб с масличными семенами
+bls:B111600	Wholemeal wheat bread with sunflower seeds	цельнозерновой пшеничный хлеб с семечками подсолнечника
+bls:B111700	Wholemeal wheat bread with buttermilk	цельнозерновой пшеничный хлеб на пахте
+bls:B111800	Wholemeal wheat bread with quark	цельнозерновой пшеничный хлеб с творогом
+bls:B121000	Wholemeal rye bread	цельнозерновой ржаной хлеб
+bls:B121100	Wholemeal rye bread with pumpkin seeds	цельнозерновой ржаной хлеб с тыквенными семечками
+bls:B121200	Wholemeal rye bread with nuts	цельнозерновой ржаной хлеб с орехами
+bls:B121300	Wholemeal rye bread with oilseeds	цельнозерновой ржаной хлеб с масличными семенами
+bls:B121400	Wholemeal rye bread with sunflower seeds	цельнозерновой ржаной хлеб с семечками подсолнечника
+bls:B121500	Wholemeal rye bread with buttermilk	цельнозерновой ржаной хлеб на пахте
+bls:B121600	Wholemeal rye bread with quark	цельнозерновой ржаной хлеб с творогом
+bls:B122000	Coarse wholemeal rye bread	ржаной хлеб грубого помола
+bls:B131000	Wholemeal oat bread	цельнозерновой овсяный хлеб
+bls:B221000	Rye bread	ржаной хлеб простой
+bls:B226000	Rye bread with oilseeds	ржаной хлеб с масличными семенами
+bls:B226500	Rye bread with sunflower seeds	ржаной хлеб с семечками подсолнечника
+bls:B226700	Rye bread with pumpkin seeds	ржаной хлеб с тыквенными семечками
+bls:B226800	Rye bread with nuts	ржаной хлеб с орехами
+bls:B227300	Rye bread with buttermilk	ржаной хлеб на пахте
+bls:B227700	Rye bread with quark	ржаной хлеб с творогом
+bls:B231000	Oat bread	хлеб из овса
+bls:B251000	Wheat-rye bread (> 50 % and < 90 % wheat)	пшенично-ржаной хлеб
+bls:B254000	Mixed wheat toast	тостовый хлеб смешанный
+bls:B254072	Mixed wheat toast toasted	тостовый хлеб смешанный поджаренный
+bls:B255500	Wheat-rye bread (> 50 % and < 90 % wheat) with onions	пшенично-ржаной хлеб с луком
+bls:B255700	Wheat-rye bread (> 50 % and < 90 % wheat) with caraway seeds	пшенично-ржаной хлеб с тмином
+bls:B256000	Wheat-rye bread (> 50 % and < 90 % wheat) with oilseeds	пшенично-ржаной хлеб с масличными семенами
+bls:B256500	Wheat-rye bread (> 50 % and < 90 % wheat) with sunflower seeds	пшенично-ржаной хлеб с семечками подсолнечника
+bls:B256700	Wheat-rye bread (> 50 % and < 90 % wheat) with nuts	пшенично-ржаной хлеб с орехами
+bls:B257300	Wheat-rye bread (> 50 % and < 90 % wheat) with buttermilk	пшенично-ржаной хлеб на пахте
+bls:B257700	Wheat-rye bread (> 50 % and < 90 % wheat) with quark	пшенично-ржаной хлеб с творогом
+bls:B259000	Wheat-rye bread (> 50 % and < 90 % wheat) with pumpkin seeds	пшенично-ржаной хлеб с тыквенными семечками
+bls:B271000	Rye-wheat bread (> 50 % and < 90 % rye)	ржано-пшеничный хлеб
+bls:B275500	Rye-wheat bread (> 50 % and < 90 % rye) with onions	ржано-пшеничный хлеб с луком
+bls:B275700	Rye-wheat bread (> 50 % and < 90 % rye) with caraway seeds	ржано-пшеничный хлеб с тмином
+bls:B276000	Rye-wheat bread (> 50 % and < 90 % rye) with oilseeds	ржано-пшеничный хлеб с масличными семенами
 bls:B276500	Rye-wheat bread (> 50 % and < 90 % rye) with sunflower seeds	ржано-пшеничный хлеб с семечками подсолнечника
 bls:B276700	Rye-wheat bread (> 50 % and < 90 % rye) with pumpkin seeds	ржано-пшеничный хлеб с тыквенными семечками
+bls:B276800	Rye-wheat bread (> 50 % and < 90 % rye) with nuts	ржано-пшеничный хлеб с орехами
+bls:B277300	Rye-wheat bread (> 50 % and < 90 % rye) with buttermilk	ржано-пшеничный хлеб на пахте
+bls:B277700	Rye-wheat bread (> 50 % and < 90 % rye) with quark	ржано-пшеничный хлеб с творогом
+bls:B291000	Multigrain bread	мультизерновой хлеб
+bls:B309000	White bread gluten-free	белый хлеб без глютена
+bls:B311000	White bread/wheat bread	белый хлеб
+bls:B314000	Wheat toast/butter toast	тостовый хлеб
+bls:B314072	Wheat toast/butter toast, toasted	тостовый хлеб поджаренный
+bls:B314100	Wheat toast with rye	тостовый хлеб со ржью
+bls:B314172	Wheat toast with rye, toasted	тостовый хлеб со ржью поджаренный
+bls:B314200	Multigrain toast	мультизерновой тостовый хлеб
+bls:B314272	Multigrain toast toasted	мультизерновой тостовый хлеб поджаренный
+bls:B401000	Wholemeal roll	цельнозерновая булочка
+bls:B406000	Wholemeal roll with oilseeds	цельнозерновая булочка с масличными семенами
+bls:B406500	Wholemeal roll with sunflower seeds	цельнозерновая булочка с семечками подсолнечника
+bls:B406700	Wholemeal roll with pumpkin seeds	цельнозерновая булочка с тыквенными семечками
+bls:B406800	Wholemeal roll with nuts	цельнозерновая булочка с орехами
+bls:B411000	Wholemeal wheat roll	цельнозерновая пшеничная булочка
+bls:B416000	Wholemeal wheat roll with oilseeds	цельнозерновая пшеничная булочка с масличными семенами
+bls:B416500	Wholemeal wheat roll with sunflower seeds	цельнозерновая пшеничная булочка с семечками подсолнечника
+bls:B416700	Wholemeal wheat roll with pumpkin seeds	цельнозерновая пшеничная булочка с тыквенными семечками
+bls:B416800	Wholemeal wheat roll with nuts	цельнозерновая пшеничная булочка с орехами
+bls:B421000	Wholemeal rye roll	цельнозерновая ржаная булочка
+bls:B426000	Wholemeal rye roll with oilseeds	цельнозерновая ржаная булочка с масличными семенами
+bls:B426500	Wholemeal rye roll with sunflower seeds	цельнозерновая ржаная булочка с семечками подсолнечника
+bls:B426700	Wholemeal rye roll with pumpkin seeds	цельнозерновая ржаная булочка с тыквенными семечками
+bls:B426800	Wholemeal rye roll with nuts	цельнозерновая ржаная булочка с орехами
+bls:B491000	Wholemeal spelt roll	цельнозерновая булочка из полбы
+bls:B491100	Wholemeal spelt roll with pumpkin seeds	цельнозерновая булочка из полбы с тыквенными семечками
+bls:B491200	Wholemeal spelt roll with nuts	цельнозерновая булочка из полбы с орехами
+bls:B491300	Wholemeal spelt roll with oilseeds	цельнозерновая булочка из полбы с масличными семенами
+bls:B491400	Wholemeal spelt roll with sunflower seeds	цельнозерновая булочка из полбы с семечками подсолнечника
+bls:B511000	Wheat roll	пшеничная булочка
+bls:B511100	Wheat roll with caraway seeds and salt	пшеничная булочка с тмином и солью
+bls:B511200	Wheat roll with bacon	пшеничная булочка с беконом
+bls:B515500	Wheat roll with onions	пшеничная булочка с луком
+bls:B516000	Wheat roll with oilseeds	пшеничная булочка с масличными семенами
+bls:B516300	Wheat roll with sesame seeds	пшеничная булочка с кунжутом
+bls:B516400	Wheat roll with poppy seeds	пшеничная булочка с маком
+bls:B516500	Wheat roll with sunflower seeds	пшеничная булочка с семечками подсолнечника
+bls:B516700	Wheat roll with pumpkin seeds	пшеничная булочка с тыквенными семечками
+bls:B517700	Wheat roll with quark	пшеничная булочка с творогом
+bls:B521000	Rye roll	ржаная булочка
+bls:B521100	Rye roll with caraway seeds and salt	ржаная булочка с тмином и солью
+bls:B521200	Rye roll with bacon	ржаная булочка с беконом
+bls:B526000	Rye roll with oilseeds	ржаная булочка с масличными семенами
+bls:B526300	Rye roll with sesame seeds	ржаная булочка с кунжутом
+bls:B526400	Rye roll with poppy seeds	ржаная булочка с маком
+bls:B526500	Rye roll with sunflower seeds	ржаная булочка с семечками подсолнечника
+bls:B526700	Rye roll with pumpkin seeds	ржаная булочка с тыквенными семечками
+bls:B531000	Oat roll	овсяная булочка
+bls:B551000	Wheat-rye roll (> 50 % and < 90 % wheat)	пшенично-ржаная булочка
+bls:B551100	Wheat-rye roll (> 50 % and < 90 % wheat) with pumpkin seeds	пшенично-ржаная булочка с тыквенными семечками
+bls:B551200	Wheat-rye roll (> 50 % and < 90 % wheat) with poppy seeds	пшенично-ржаная булочка с маком
+bls:B551300	Wheat-rye roll (> 50 % and < 90 % wheat) with oilseeds	пшенично-ржаная булочка с масличными семенами
+bls:B551400	Wheat-rye roll (> 50 % and < 90 % wheat) with sesame seeds	пшенично-ржаная булочка с кунжутом
+bls:B551500	Wheat-rye roll (> 50 % and < 90 % wheat) with sunflower seeds	пшенично-ржаная булочка с семечками подсолнечника
+bls:B551600	Wheat-rye roll (> 50 % and < 90 % wheat) with caraway seeds and salt	пшенично-ржаная булочка с тмином и солью
+bls:B551700	Wheat-rye roll (> 50 % and < 90 % wheat) with bacon	пшенично-ржаная булочка с беконом
+bls:B551800	Wheat-rye roll (> 50 % and < 90 % wheat) with onions	пшенично-ржаная булочка с луком
+bls:B561000	Spelt roll	булочка из полбы
+bls:B561100	Spelt roll with pumpkin seeds	булочка из полбы с тыквенными семечками
+bls:B561200	Spelt roll with nuts	булочка из полбы с орехами
+bls:B561300	Spelt roll with oilseeds	булочка из полбы с масличными семенами
+bls:B561400	Spelt roll with sunflower seeds	булочка из полбы с семечками подсолнечника
+bls:B591000	Multigrain roll	мультизерновая булочка
+bls:B629000	Crackerbread gluten-free	крекерные хлебцы без глютена
+bls:B6A1000	Wheat crispbread with sesame seeds	пшеничные хлебцы с кунжутом
+bls:B6A1100	Wholemeal wheat crispbread with cheese, oilseeds and tomatoes	цельнозерновые пшеничные хлебцы с сыром с масличными семенами и томатами
+bls:B6A1200	Wholemeal wheat crispbread with muesli ingredients, sweetened	цельнозерновые пшеничные хлебцы с добавками для мюсли сладкие
+bls:B6A1300	Wholemeal wheat crispbread with oilseeds	цельнозерновые пшеничные хлебцы с масличными семенами
+bls:B6A1400	Wholemeal wheat crispbread with oilseeds and hard cheese	цельнозерновые пшеничные хлебцы с масличными семенами и твёрдым сыром
+bls:B6A1500	Wholemeal wheat crispbread with oilseeds, hard cheese and carrots	цельнозерновые пшеничные хлебцы с масличными семенами с твёрдым сыром и морковью
+bls:B6A1600	Wholemeal wheat crispbread with oilseeds, hard cheese and onions	цельнозерновые пшеничные хлебцы с масличными семенами с твёрдым сыром и луком
+bls:B6A2000	Rye crispbread	ржаные хлебцы
+bls:B6A2100	Wholemeal rye crispbread	цельнозерновые ржаные хлебцы
+bls:B6A2200	Wholemeal rye crispbread with buttermilk	цельнозерновые ржаные хлебцы на пахте
+bls:B6A2300	Wholemeal rye crispbread with milk	цельнозерновые ржаные хлебцы с молоком
+bls:B6A2400	Wholemeal rye crispbread with spelt	цельнозерновые ржаные хлебцы с полбой
+bls:B6A2500	Wholemeal rye crispbread with barley malt	цельнозерновые ржаные хлебцы с солодом ячменным
+bls:B6A2600	Wholemeal rye crispbread with wheat bran and oilseeds	цельнозерновые ржаные хлебцы с пшеничными отрубями и масличными семенами
+bls:B6A2700	Wholemeal rye crispbread with caraway seeds	цельнозерновые ржаные хлебцы с тмином
+bls:B6A2800	Wholemeal rye crispbread with pumpkin seeds	цельнозерновые ржаные хлебцы с тыквенными семечками
+bls:B6A2900	Wholemeal rye crispbread with linseed and wheat germ	цельнозерновые ржаные хлебцы с льняным семенем и зародышами пшеницы
+bls:B6A3000	Wholemeal rye crispbread with oilseeds	цельнозерновые ржаные хлебцы с масличными семенами
+bls:B6A3100	Wholemeal rye crispbread with sesame seeds	цельнозерновые ржаные хлебцы с кунжутом
+bls:B6A3200	Wholemeal rye crispbread with sunflower seeds	цельнозерновые ржаные хлебцы с семечками подсолнечника
+bls:B6A4000	Multigrain wholemeal crispbread	мультизерновые цельнозерновые хлебцы
+bls:B6A4100	Multigrain wholemeal crispbread with oilseeds	мультизерновые цельнозерновые хлебцы с масличными семенами
+bls:B6A5000	Wholemeal spelt criscpread with muesli ingredients, sweetened	цельнозерновые хлебцы из полбы с добавками для мюсли сладкие
+bls:B6A5100	Wholemeal spelt criscpread with oilseeds	цельнозерновые хлебцы из полбы с масличными семенами
+bls:B6A5200	Wholemeal spelt criscpread with oilseeds and hard cheese	цельнозерновые хлебцы из полбы с масличными семенами и твёрдым сыром
+bls:B6A6000	Crispbread gluten-free, lactose-free	хлебцы без глютена без лактозы
+bls:B710500	Spelt bread	хлеб из полбы
+bls:B710600	Spelt bread with pumpkin seeds	хлеб из полбы с тыквенными семечками
+bls:B710700	Spelt bread with nuts	хлеб из полбы с орехами
+bls:B710800	Spelt bread with oilseeds	хлеб из полбы с масличными семенами
+bls:B710900	Spelt bread with sunflower seeds	хлеб из полбы с семечками подсолнечника
+bls:B717000	Millet bread gluten-free	пшенный хлеб без глютена
+bls:B718000	Chestnut bread gluten-free	каштановый хлеб без глютена
+bls:B719000	Raisin bread gluten-free	хлеб с изюмом без глютена
+bls:B723000	Pretzel salted	брецель солёный
+bls:B723100	Pretzel (visible salt removed)	брецель без соли сверху
+bls:B723200	Lye pastry (pretzels) with pumpkin seeds	брецели с тыквенными семечками
+bls:B723300	Lye pastry (pretzels) with sesame seeds	брецели с кунжутом
+bls:B723400	Lye pastry (pretzels) with sunflower seeds	брецели с семечками подсолнечника
+bls:B723500	Lye pastry (pretzels) with cheese	брецели с сыром
+bls:B723600	Lye pastry (pretzels) with cheese and bacon	брецели с сыром и беконом
+bls:B780500	Pumpernickel	пумперникель
+bls:B781200	Wheat baguette	пшеничный багет
+bls:B781300	Wheat baguette roll	багет-булочка
+bls:B781400	Wheat baguette with nuts	пшеничный багет с орехами
+bls:B781500	Wholemeal wheat baguette	цельнозерновой пшеничный багет
+bls:B781600	Wholemeal spelt baguette	цельнозерновой багет из полбы
+bls:B782100	Wheat flatbread	пшеничная лепёшка
+bls:B783012	Wheat flour tortilla	пшеничная тортилья
+bls:B821000	Bread crumbs	панировочные сухари
+bls:B822000	Bread crumbs gluten-free	панировочные сухари без глютена
+bls:B881100	Protein bread	белковый хлеб
+bls:B881200	Protein roll	белковая булочка
+bls:B8A1000	Baguette gluten-free	багет без глютена
+bls:B8A2000	Roll gluten-free	булочка без глютена
+bls:B8A3000	Buckwheat bread gluten-free	гречневый хлеб без глютена
+bls:B8A4000	Sourdough bread gluten-free	хлеб на закваске без глютена
+bls:B8A5000	Sourdough bread with pumpkin seeds, gluten-free	хлеб на закваске с тыквенными семечками без глютена
+bls:B8A6000	Sourdough bread with oilseeds, gluten-free	хлеб на закваске с масличными семенами без глютена
+bls:B8A7000	Sourdough bread with sunflower seeds, gluten-free	хлеб на закваске с семечками подсолнечника без глютена
+bls:B8A8000	Toast gluten-free	тостовый хлеб без глютена
+bls:B8A8072	Toast gluten-free, toasted	тостовый хлеб без глютена поджаренный
+bls:B8A9000	Wholemeal bread gluten-free	цельнозерновой хлеб без глютена
+bls:B8B1000	Multigrain crackerbread, fortified with vitamins and trace elements	мультизерновые крекерные хлебцы с витаминами и микроэлементами
+bls:B8B2000	Rye crackerbread	ржаные крекерные хлебцы
+bls:B8B3000	Wholemeal crackerbread	цельнозерновые крекерные хлебцы
+bls:B8B4000	Wheat crackerbread	пшеничные крекерные хлебцы
+bls:B8B5000	Wheat crackerbread (made with butter)	пшеничные крекерные хлебцы на сливочном масле
+bls:B8B6000	Spelt crackerbread	крекерные хлебцы из полбы
+bls:C111000	Wheat whole grain, raw	пшеница цельная сырая
+bls:C111032	Wheat whole grain, boiled	пшеница цельная варёная
+bls:C111062	Wheat whole grain, boiled, baked	пшеница цельная варёная запечённая
+bls:C111082	Wheat whole grain, boiled, fried without fat (pan)	пшеница цельная варёная жареная без масла
+bls:C113000	Wheat flakes	пшеничные хлопья
+bls:C113032	Wheat flakes, boiled	пшеничные хлопья варёные
+bls:C114000	Wheat germ	пшеничные зародыши
+bls:C117000	Wheat groats	пшеничная крупа
+bls:C117032	Wheat groats, boiled	пшеничная крупа варёная
+bls:C118000	Quinoa white, raw	киноа белая сырая
+bls:C118032	Quinoa white, boiled	киноа белая варёная
+bls:C118100	Quinoa tricolore, raw	киноа триколор сырая
+bls:C118122	Quinoa tricolore, boiled	киноа триколор варёная
+bls:C119100	Bulgur (durum wheat) raw	булгур из твёрдой пшеницы сырой
+bls:C119132	Bulgur (durum wheat) boiled	булгур из твёрдой пшеницы варёный
+bls:C119200	Couscous (durum wheat) raw	кускус из твёрдой пшеницы сырой
+bls:C119232	Couscous (durum wheat) boiled	кускус из твёрдой пшеницы варёный
+bls:C121000	Rye whole grain, raw	рожь цельная сырая
+bls:C121032	Rye whole grain, boiled	рожь цельная варёная
+bls:C123000	Rye flakes	ржаные хлопья
+bls:C123032	Rye flakes, boiled	ржаные хлопья варёные
+bls:C126000	Rye semolina	ржаная крупа
+bls:C130032	Oat whole grain, boiled	овёс цельный варёный
+bls:C131000	Oat whole grain, raw	овёс цельный сырой
+bls:C133000	Oat flakes	овсяные хлопья
+bls:C133032	Oat flakes, boiled	овсяные хлопья варёные
+bls:C136000	Oat semolina	овсяная сечка
+bls:C137000	Oat groats	овсяная крупа
+bls:C137032	Oat groats, boiled	овсяная крупа варёная
+bls:C138000	Oat bran flakes	овсяные отрубевые хлопья
+bls:C141000	Barley whole grain, raw	ячмень цельный сырой
+bls:C141032	Barley whole grain, boiled	ячмень цельный варёный
+bls:C143000	Barley flakes	ячменные хлопья
+bls:C143032	Barley flakes, boiled	ячменные хлопья варёные
+bls:C146000	Barley semolina	ячменная крупа
+bls:C147000	Barley groats	ячневая крупа
+bls:C147032	Barley groats, boiled	ячневая крупа варёная
+bls:C148000	Pearl barley	перловка
+bls:C148032	Pearl barley, boiled	перловка варёная
+bls:C211000	Wheat wholemeal flour	пшеничная цельнозерновая мука
+bls:C211100	Wheat coarse meal	пшеничная крупа грубого помола
+bls:C211132	Wheat coarse meal, boiled	пшеничная крупа грубого помола варёная
+bls:C212000	Wheat coarse meal, Type 1700	пшеничная крупа грубого помола (тип 1700)
+bls:C212032	Wheat coarse meal, Type 1700, boiled	пшеничная крупа грубого помола (тип 1700) варёная
+bls:C213100	Wheat flour, Type 812	пшеничная мука (тип 812)
+bls:C213200	Wheat flour, Type 1050	пшеничная мука (тип 1050)
+bls:C213500	Wheat flour, Type 1600	пшеничная мука (тип 1600)
+bls:C214100	Wheat flour, Type 405	пшеничная мука (тип 405)
+bls:C214200	Wheat flour, Type 550	пшеничная мука (тип 550)
+bls:C215000	Wheat middlings (dunst)	пшеничный дунст дунст
+bls:C216000	Wheat starch	пшеничный крахмал
+bls:C217000	Wheat bran	пшеничные отруби
+bls:C218000	Soft wheat semolina	манка из мягкой пшеницы
+bls:C218032	Soft wheat semolina, boiled	манка из мягкой пшеницы варёная
+bls:C219000	Durum wheat wholemeal flour	цельнозерновая мука из твёрдой пшеницы
+bls:C219100	Durum wheat wholemeal semolina	цельнозерновая крупа из твёрдой пшеницы
+bls:C219132	Durum wheat wholemeal semolina, boiled	цельнозерновая крупа из твёрдой пшеницы варёная
+bls:C219200	Durum wheat whole grain, raw	твёрдая пшеница цельная сырая
+bls:C219232	Durum wheat whole grain, boiled	твёрдая пшеница цельная варёная
+bls:C219300	Durum wheat semolina	крупа из твёрдой пшеницы
+bls:C219332	Durum wheat semolina, boiled	крупа из твёрдой пшеницы варёная
+bls:C221000	Rye wholemeal flour	ржаная цельнозерновая мука
+bls:C221100	Rye coarse meal	ржаная крупа грубого помола
+bls:C221132	Rye coarse meal, boiled	ржаная крупа грубого помола варёная
+bls:C222000	Rye coarse meal, Type 1800	ржаная крупа грубого помола (тип 1800)
+bls:C222032	Rye coarse meal, Type 1800, boiled	ржаная крупа грубого помола (тип 1800) варёная
+bls:C223100	Rye flour, Type 815	ржаная мука (тип 815)
+bls:C223200	Rye flour, Type 997	ржаная мука (тип 997)
+bls:C223300	Rye flour, Type 1150	ржаная мука (тип 1150)
+bls:C223400	Rye flour, Type 1370	ржаная мука (тип 1370)
+bls:C223600	Rye flour, Type 1740	ржаная мука (тип 1740)
+bls:C232000	Oat coarse meal	овсяная крупа грубого помола
+bls:C232032	Oat coarse meal, boiled	овсяная крупа грубого помола варёная
+bls:C233000	Oat flour	овсяная мука
+bls:C234000	Spelt flour, Type 630	мука из полбы (тип 630)
+bls:C234100	Spelt flour, Type 812	мука из полбы (тип 812)
+bls:C234200	Spelt flour, Type 1050	мука из полбы (тип 1050)
+bls:C235000	Spelt wholemeal flour	цельнозерновая мука из полбы
+bls:C235100	Spelt coarse meal	крупа из полбы грубого помола
+bls:C235132	Spelt coarse meal, boiled	крупа из полбы грубого помола варёная
+bls:C236000	Spelt whole grain, raw	полба цельная сырая
+bls:C236032	Spelt whole grain, boiled	полба цельная варёная
+bls:C236100	Spelt flakes	хлопья из полбы
+bls:C237000	Spelt bran	отруби из полбы
+bls:C238000	Spelt semolina	крупа из полбы
+bls:C238032	Spelt semolina, boiled	крупа из полбы варёная
+bls:C240000	Emmer wheat wholemeal flour	цельнозерновая мука из эммера
+bls:C240100	Emmer wheat whole grain, raw	эммер цельный сырой
+bls:C240132	Emmer wheat whole grain, boiled	эммер цельный варёный
+bls:C240200	Emmer wheat flakes	хлопья из эммера
+bls:C241000	Einkorn wheat wholemeal flour	цельнозерновая мука из эйнкорна
+bls:C241100	Einkorn wheat whole grain, raw	эйнкорн цельный сырой
+bls:C241132	Einkorn wheat whole grain, boiled	эйнкорн цельный варёный
+bls:C241200	Einkorn wheat flakes	хлопья из эйнкорна
+bls:C242000	Barley coarse meal	ячменная крупа грубого помола
+bls:C242032	Barley coarse meal, boiled	ячменная крупа грубого помола варёная
+bls:C243000	Barley flour	ячменная мука
+bls:C311000	Green spelt whole grain, raw	зелёная полба цельная сырая
 bls:C311032	Green spelt whole grain, boiled	зелёная полба варёная
+bls:C317000	Green spelt groats	крупа из зелёной полбы
+bls:C317032	Green spelt groats, boiled	крупа из зелёной полбы варёная
+bls:C320032	Buckwheat boiled	гречка варёная
+bls:C322000	Buckwheat raw	гречка сырая
+bls:C326000	Buckwheat semolina	гречневая крупа
+bls:C326032	Buckwheat semolina, boiled	гречневая крупа варёная
+bls:C327000	Buckwheat groats	гречневая крупа ядрица
+bls:C327032	Buckwheat groats, boiled	гречневая крупа ядрица варёная
+bls:C332000	Millet raw	пшено сырое
+bls:C333100	Millet wholegrain flakes	пшенные цельнозерновые хлопья
+bls:C333132	Millet wholegrain flakes, boiled	пшенные цельнозерновые хлопья варёные
+bls:C334032	Millet boiled	пшено отварное
+bls:C335000	Amaranth raw	амарант сырой
+bls:C335032	Amaranth boiled	амарант отварной
+bls:C341000	Maize raw	кукуруза сырая
+bls:C341032	Maize boiled	кукуруза варёная
+bls:C341162	Maize boiled, baked	кукуруза варёная запечённая
+bls:C346000	Maize semolina	кукурузная манка
+bls:C346032	Maize semolina, boiled	кукурузная манка варёная
+bls:C347000	Maize grits	кукурузная крупа
+bls:C347032	Maize grits, boiled	кукурузная крупа варёная
+bls:C350042	White rice braised without fat	белый рис припущенный
+bls:C350222	White rice steamed	белый рис на пару
+bls:C351000	Brown rice raw	коричневый рис сырой
+bls:C351032	Brown rice boiled	коричневый рис варёный
+bls:C351082	Brown rice boiled, fried without fat (pan)	коричневый рис варёный жареный без масла
+bls:C352000	White rice raw	белый рис сырой
+bls:C352032	White rice boiled	белый рис варёный
+bls:C352082	White rice boiled, fried without fat (pan)	белый рис варёный жареный без масла
+bls:C353100	Wild rice raw	дикий рис сырой
+bls:C353132	Wild rice boiled	рис дикий варёный
+bls:C353182	Wild rice boiled, fried without fat (pan)	дикий рис варёный жареный без масла
+bls:C354100	Rice mix with wild rice, raw	рисовая смесь с диким рисом сырая
+bls:C354132	Rice mix with wild rice, boiled	рисовая смесь с диким рисом варёная
+bls:C356000	Rice semolina	рисовая крупа
+bls:C356032	Rice grits, boiled	рисовая крупа варёная
+bls:C359000	Rice parboiled, raw	пропаренный рис сырой
+bls:C359032	Rice parboiled, boiled	пропаренный рис варёный
+bls:C359042	Rice parboiled, braised without fat	пропаренный рис припущенный
+bls:C359082	Rice parboiled, boiled, fried without fat (pan)	пропаренный рис варёный жареный без масла
+bls:C412000	Green spelt coarse meal	крупа из зелёной полбы грубого помола
+bls:C412032	Green spelt coarse meal, boiled	крупа из зелёной полбы грубого помола варёная
+bls:C412182	Green spelt coarse meal, boiled, fried without fat (pan)	крупа из зелёной полбы грубого помола варёная жареная без масла
+bls:C413000	Green spelt flour	мука из зелёной полбы
+bls:C414000	Flour mix low protein, gluten-free, low sodium	мучная смесь низкобелковая без глютена с пониженной солью
+bls:C414100	Flour mix gluten-free	мучная смесь без глютена
+bls:C415000	Flour mix for bread gluten-free	мучная смесь для хлеба без глютена
+bls:C416000	Flour mix for cake gluten-free	мучная смесь для выпечки без глютена
+bls:C421000	Buckwheat wholemeal flour	гречневая цельнозерновая мука
+bls:C422000	Buckwheat coarse meal	гречневая крупа грубого помола
+bls:C422032	Buckwheat coarse meal, boiled	гречневая крупа грубого помола варёная
+bls:C424000	Buckwheat flour	гречневая мука
+bls:C432000	Millet coarse meal	пшенная крупа грубого помола
+bls:C432032	Millet coarse meal, boiled	пшенная крупа грубого помола варёная
+bls:C433000	Millet flour	пшенная мука
+bls:C433100	Brown millet flour	мука из коричневого проса
+bls:C443000	Maize flour	кукурузная мука
+bls:C446000	Maize starch	кукурузный крахмал
 bls:C453000	Rice flour	рисовая мука
+bls:C456000	Rice starch	рисовый крахмал
+bls:C457000	Rice bran	рисовые отруби
+bls:C492000	Grain mix coarse meal	зерновая смесь грубого помола
+bls:C492032	Grain mix coarse meal, boiled	зерновая смесь грубого помола варёная
+bls:C492062	Grain mix coarse meal, boiled, baked	зерновая смесь грубого помола варёная запечённая
+bls:C492082	Grain mix coarse meal, boiled, fried without fat (pan)	зерновая смесь грубого помола варёная жареная без масла
+bls:C512000	Muesli basic mix (without dried fruit) unsweetened	основа для мюсли без сухофруктов без сахара
+bls:C512300	Muesli mix with dried fruit, unsweetened	мюсли с сухофруктами без сахара
+bls:C512600	Muesli mix Bircher style (with dried fruit and nuts) unsweetened	мюсли бюхер с сухофруктами и орехами без сахара
+bls:C512700	Muesli mix with dried fruit, gluten-free, sweetened	мюсли с сухофруктами без глютена сладкие
+bls:C512800	Muesli mix with chocolate, gluten-free, sweetenend	мюсли с шоколадом без глютена сладкие
+bls:C513300	Muesli mix with chocolate, sweetened	мюсли с шоколадом сладкие
+bls:C514200	Crunchy muesli mix, classic, sweetened	хрустящие мюсли классические сладкие
+bls:C514300	Crunchy muesli mix, classic, sweetened, fortified with vitamins and minerals	хрустящие мюсли классические сладкие с витаминами и минералами
+bls:C514400	Crunchy muesli mix with dried fruit, sweetened	хрустящие мюсли с сухофруктами сладкие
+bls:C514500	Crunchy muesli mix with dried fruit, sweetened, fortified with vitamins and minerals	хрустящие мюсли с сухофруктами сладкие с витаминами и минералами
+bls:C514600	Crunchy muesli mix with chocolate, sweetened	хрустящие мюсли с шоколадом сладкие
+bls:C514700	Crunchy muesli mix with chocolate, sweetened, fortified with vitamins and minerals	хрустящие мюсли с шоколадом сладкие с витаминами и минералами
+bls:C515000	Cornflakes sweetened	кукурузные хлопья сладкие
+bls:C515100	Cornflakes sweetened, fortified with vitamins	кукурузные хлопья сладкие с витаминами
+bls:C515200	Cornflakes sweetened, sugar frosted, with peanuts, fortified with vitamins and minerals	кукурузные хлопья сладкие в сахарной глазури с арахисом с витаминами и минералами
+bls:C515300	Cornflakes sweetened, sugar frosted, with peanuts	кукурузные хлопья сладкие в сахарной глазури с арахисом
+bls:C515400	Cornflakes unsweetened	кукурузные хлопья без сахара
+bls:C515600	Cornflakes sweetened, sugar frosted	кукурузные хлопья сладкие в сахарной глазури
+bls:C518000	Popcorn salty	попкорн солёный
+bls:C519000	Popcorn sweet	попкорн сладкий
 bls:C522000	Cereal flakes sweetened	хлопья злаковые сладкие
+bls:C522100	Cereal flakes sweetened, fortified with vitamins and minerals	злаковые хлопья сладкие с витаминами и минералами
+bls:C522200	Cereal flakes sweetened, with dried fruit	злаковые хлопья сладкие с сухофруктами
+bls:C522300	Cereal flakes sweetened, with dried fruit, fortified with vitamins and minerals	злаковые хлопья сладкие с сухофруктами с витаминами и минералами
+bls:C522400	Cereal flakes sweetened, with nuts	злаковые хлопья сладкие с орехами
+bls:C522500	Cereal flakes sweetened, with nuts, fortified with vitamins and minerals	злаковые хлопья сладкие с орехами с витаминами и минералами
+bls:C522600	Cereal flakes sweetened, with chocolate	злаковые хлопья сладкие с шоколадом
+bls:C522700	Cereal flakes sweetened, with chocolate, fortified with vitamins and minerals	злаковые хлопья сладкие с шоколадом с витаминами и минералами
+bls:C526000	Polenta (Maize semolina prepared with water, fat and salt) boiled	полента полента варёная
+bls:C526062	Polenta (Maize semolina prepared with water, fat and salt) boiled, baked	полента полента варёная запечённая
+bls:C526082	Polenta (Maize semolina prepared with water, fat and salt) boiled, fried without fat (pan)	полента полента варёная жареная без масла
+bls:C530100	Amaranth puffed, unsweetened	амарант воздушный без сахара
+bls:C530200	Quinoa puffed, unsweetened	киноа воздушная без сахара
+bls:C531000	Wheat puffed, unsweetened	пшеница воздушная без сахара
+bls:C532000	Rice puffed, unsweetened	рис воздушный без сахара
+bls:C532100	Whole milk chocolate with puffed rice and crispies	молочный шоколад с воздушным рисом и хрустящими шариками
+bls:C532200	White chocolate with puffed rice and crispies	белый шоколад с воздушным рисом и хрустящими шариками
+bls:C532700	Puffed rice waffles unsalted	рисовые вафли несолёные
+bls:C532800	Puffed rice waffles salted	рисовые вафли солёные
+bls:C532900	Puffed rice waffles chocolate coated	рисовые вафли в шоколаде
+bls:C533000	Popcorn unsweetened	попкорн без сахара
+bls:C533100	Puffed maize waffles salted	кукурузные вафли солёные
+bls:C534100	Extruded cereals sweetened, unfilled, cinnamon flavoured	подушечки злаковые сладкие без начинки со вкусом корицы
+bls:C534200	Extruded cereals sweetened, unfilled, cinnamon flavoured, fortified with vitamins and minerals	подушечки злаковые сладкие без начинки со вкусом корицы с витаминами и минералами
+bls:C534300	Extruded cereals sweetened, unfilled, fruit/honey/caramel/chocolate flavoured	подушечки злаковые сладкие без начинки со вкусом фруктов, мёда, карамели или шоколада
+bls:C534400	Extruded cereals sweetened, unfilled, fruit/honey/caramel/chocolate flavoured, fortified with vitamins and minerals	подушечки злаковые сладкие без начинки со вкусом фруктов, мёда, карамели или шоколада с витаминами и минералами
+bls:C534500	Extruded cereals sweetened, variously filled	подушечки злаковые сладкие с разной начинкой
+bls:C534600	Extruded cereals sweetened, variously filled, fortified with vitamins and minerals	подушечки злаковые сладкие с разной начинкой с витаминами и минералами
+bls:C537000	Wheat pops/wheat puffed, sweetened	пшеница воздушная сладкая
+bls:C538000	Muesli mix with dried fruit, sweetened	мюсли с сухофруктами сладкие
+bls:C539100	Wholemeal wheat cereals sweetened, unfilled, basic/fruit/chocolate	цельнозерновые пшеничные подушечки сладкие без начинки основные, фруктовые или шоколадные
+bls:C539200	Wholemeal wheat cereals sweetened, unfilled, basic/fruit/chocolate, fortified with vitamins and minerals	цельнозерновые пшеничные подушечки сладкие без начинки основные, фруктовые или шоколадные с витаминами и минералами
+bls:C546000	Tortilla chips (Nachos)	чипсы тортилья начос
+bls:C549000	Barley malt extract	ячменный солодовый экстракт
+bls:C551000	Gluten (from wheat)	глютен пшеничный
+bls:C552000	Multigrain flakes	мультизерновые хлопья
+bls:C556000	Wheat gluten mix, dried product	пшеничная клейковина сухой продукт
+bls:C557000	Meat substitute containing gluten, milk and soya	заменитель мяса на клейковине с молоком и соей
 bls:C558000	Meat substitute containing gluten (seitan)	сейтан
+bls:C559000	Rice noodles raw	рисовая лапша сырая
+bls:C559032	Rice noodles boiled	рисовая лапша отварная
+bls:C650000	Rice drink unsweetened	рисовый напиток без сахара
+bls:C650200	Rice drink unsweetened, fortified with vitamins and calcium	рисовый напиток без сахара с витаминами и кальцием
+bls:C660000	Oat drink unsweetened	овсяный напиток без сахара
+bls:C660200	Oat drink unsweetened, fortified with vitamins, calcium and iodine	овсяный напиток без сахара с витаминами с кальцием и йодом
+bls:C660300	Oat drink sweetened, flavoured	овсяный напиток сладкий ароматизированный
+bls:C660500	Oat drink sweetened, flavoured, fortified with vitamins, calcium and iodine	овсяный напиток сладкий ароматизированный с витаминами с кальцием и йодом
+bls:D011000	Soup pearls	суповые шарики
+bls:D024000	Spelt rusk unsweetened	сухари из полбы без сахара
+bls:D025000	Wholemeal rusk unsweetened	цельнозерновые сухари без сахара
+bls:D026000	Wholemeal rusk	цельнозерновые сухари
+bls:D032000	Fortified rusk	обогащённые сухари
+bls:D034000	Chocolate rusk	шоколадные сухари
+bls:D035000	Coconut rusk	кокосовые сухари
+bls:D036000	Butter rusk	сливочные сухари
+bls:D038000	Rusk egg-free	сухари без яиц
+bls:D039000	Rusk gluten-free	сухари без глютена
+bls:D041000	Peanut puffs	арахисовые пуфы
+bls:D050000	Crackers	крекеры
+bls:D064000	Salted pretzels/pretzel sticks (snack)	солёные брецели и палочки снэк
+bls:D071000	Frying batter (with milk) sweetened, raw	кляр на молоке сладкий сырой
+bls:D072000	Puff pastry egg-free, raw	слоёное тесто без яиц сырое
+bls:D072062	Puff pastry egg-free, baked	слоёное тесто без яиц запечённое
+bls:D073000	Choux pastry raw	заварное тесто сырое
+bls:D076000	Frying batter (with beer) unsweetened, raw	кляр на пиве без сахара сырой
+bls:D077002	Sponge cake base	бисквитная основа
+bls:D079000	Pizza dough with yeast, raw	тесто для пиццы на дрожжах сырое
+bls:D079062	Pizza dough with yeast, baked	тесто для пиццы на дрожжах запечённое
+bls:D083000	Sacher cake base	основа для торта Захер
+bls:D085000	Viennese sponge cake base (light)	венская бисквитная основа светлый
+bls:D086000	Sponge cake roll unfilled	бисквитный рулет без начинки
+bls:D087000	Chocolate sponge cake base	шоколадная бисквитная основа
+bls:D088000	Viennese sponge cake base containing cocoa (dark)	венская бисквитная основа тёмный с какао
+bls:D089000	Chocolate sponge cake roll unfilled	шоколадный бисквитный рулет без начинки
+bls:D096000	Onion cake (yeast dough) with bacon	луковый пирог из дрожжевого теста с беконом
+bls:D0A1000	Buckwheat water sponge cake base	гречневая бисквитная основа без масла
+bls:D0A2000	Almond sponge cake base	миндальная бисквитная основа
+bls:D0A2100	Chocolate-almond sponge cake base	шоколадно-миндальная бисквитная основа
+bls:D0A2200	Almond cake base (prepared with egg white)	миндальная основа для торта на яичном белке
 bls:D0A3000	Nut sponge cake base	ореховый бисквит
+bls:D0A3100	Nut water sponge cake base	ореховая бисквитная основа без масла
+bls:D0A3200	Nut cake base (prepared with egg white)	ореховая основа для торта на яичном белке
+bls:D0A4000	Water sponge cake base	бисквитная основа без масла
+bls:D0A4100	Chocolate water sponge cake base	шоколадная бисквитная основа без масла
+bls:D0A5000	Yeast dough (simple) baked	дрожжевое тесто простое запечённое
+bls:D0A5100	Yeast dough (fine) baked	дрожжевое тесто нежное запечённое
+bls:D0A6000	Cake base/torte base (shortcrust pastry, simple)	основа для торта на простом песочном тесте
+bls:D0A6100	Cake base/torte base, containing cocoa (shortcrust pastry, simple)	основа для торта на простом песочном тесте с какао
+bls:D0A7000	Cake base/torte base (cake batter)	основа для торта из кексового теста
+bls:D0A8000	Quiche base (shortcrust pastry)	основа для киша на песочном тесте
+bls:D130100	Apple pie (sand cake batter)	яблочный пирог из теста для песочного кекса
+bls:D131200	Apple pie (cake batter)	яблочный пирог из кексового теста
+bls:D132100	Apricot cheese cake (cake batter)	творожный пирог с абрикосами из кексового теста
+bls:D181300	Covered apple sheet cake (shortcrust pastry)	закрытый яблочный пирог на песочном тесте
+bls:D187200	Apple crumble tart (shortcrust pastry)	яблочный пирог с крошкой на песочном тесте
+bls:D187300	Apple crumble tart (cake batter)	яблочный пирог с крошкой из кексового теста
+bls:D188400	Apple cake with bee sting cake topping (shortcrust pastry)	яблочный пирог на песочном тесте с миндально-карамельной корочкой
+bls:D1A1000	Apple crumble cake (yeast dough)	яблочный пирог с крошкой из дрожжевого теста
+bls:D1A1100	Apple cake with pudding (yeast dough)	яблочный пирог из дрожжевого теста с пудингом
+bls:D1A1200	Rhubarb crumble cake (yeast dough)	ревеневый пирог с крошкой из дрожжевого теста
+bls:D1A1300	Blue plum crumble cake (yeast dough)	сливовый пирог с крошкой из дрожжевого теста
+bls:D1A2000	Apricot cake (shortcrust pastry) with cream topping	абрикосовый пирог на песочном тесте со сливочным кремом сверху
+bls:D1A2100	Cherry crumble cake (shortcrust pastry)	вишнёвый пирог с крошкой на песочном тесте
+bls:D1A2200	Shortcrust pastry base with fruit, pudding and gelatin glaze	песочная основа с фруктами с пудингом и желе
+bls:D1A2300	Rhubarb crumble cake (shortcrust pastry)	ревеневый пирог с крошкой на песочном тесте
+bls:D1A3000	Apple cake (quark oil dough)	яблочный пирог из творожно-масляного теста
+bls:D1A3100	Blue plum cake (quark oil dough)	сливовый пирог из творожно-масляного теста
+bls:D1A4000	Apple cake vegan (cake batter)	яблочный пирог из кексового теста веганский
+bls:D1A4100	Cake base with fruit, pudding and gelatin glaze	основа для торта с фруктами с пудингом и желе
+bls:D1A4200	Gooseberry cake (cake batter) with meringue	пирог с крыжовником из кексового теста с безе
+bls:D200300	Strawberry cake (cake batter) with gelatin glaze	клубничный пирог из кексового теста с желе
+bls:D208700	Apple cheese torte (without cake base)	яблочно-творожный торт без основы
+bls:D237100	Rhubarb cake (cake batter) with meringue	ревеневый пирог из кексового теста с безе
+bls:D238500	Apricot torte with nuts (cake batter)	абрикосовый торт из кексового теста с орехами
+bls:D281100	Cherry torte (shortcrust pastry and cake batter)	вишнёвый торт на песочном и кексовом тесте
+bls:D283000	Peach tartlet (shortcrust pastry) with gelatin glaze and whipped cream	персиковая тарталетка на песочном тесте с желе и взбитыми сливками
+bls:D288100	Peach torte (shortcrust pastry) with gelatin glaze	персиковый торт на песочном тесте с желе
+bls:D288200	Covered apple torte (shortcrust pastry)	закрытый яблочный торт на песочном тесте
+bls:D288300	Poppy seed apple torte (shortcrust pastry)	яблочно-маковый торт на песочном тесте
+bls:D2A1000	Raspberry tartlet (shortcrust pastry) with whipped cream and almond flakes	малиновая тарталетка на песочном тесте со взбитыми сливками и лепестками миндаля
+bls:D2A2000	Red currant torte (shortcrust pastry) with meringue	торт с красной смородиной на песочном тесте с безе
+bls:D300200	Sacher torte (cake batter)	торт Захер из кексового теста
 bls:D300400	Nut cream torte (sponge cake)	ореховый торт с кремом
+bls:D300500	Linzer torte (shortcrust pastry)	линцский торт на песочном тесте
+bls:D300600	Black forest torte (chocolate sponge cake) with alcohol	торт «Шварцвальд» шоколадный бисквит с алкоголем
+bls:D301000	Marzipan walnut torte (sponge cake and shortcrust pastry)	марципаново-ореховый торт бисквитный на песочном тесте
+bls:D301300	French chocolate torte (cake batter)	французский шоколадный торт из кексового теста
+bls:D302100	Macaroon torte (shortcrust pastry)	макаронный торт на песочном тесте
+bls:D302200	Meringue chocolate cream torte (shortcrust pastry)	безе-шоколадный торт на песочном тесте
+bls:D305000	Dutch cherry cream torte/squares (puff pastry)	голландский вишнёвый торт из слоёного теста
+bls:D306000	Cream torte (choux and shortcrust pastry)	сливочный торт заварное и песочное
+bls:D307000	Dark chocolate torte (shortcrust pastry and Viennese sponge cake light) with apple wine-cream	тёмный шоколадный торт на песочном тесте и светлом венском бисквите с кремом из яблочного вина
+bls:D310300	Cheese cream torte (sponge cake)	сырно-сливочный торт бисквитный
+bls:D310400	Sponge cake roll, filled with jam	бисквитный рулет с джемом
+bls:D310600	Sponge cake roll, filled with yogurt-cream	бисквитный рулет с йогуртовым кремом
+bls:D310700	Sponge cake roll, filled with lemon-cream	бисквитный рулет с лимонным кремом
+bls:D310800	Sponge cake roll, filled with strawberry-cream	бисквитный рулет с клубничным кремом
+bls:D310900	Sponge cake roll, filled with mandarin-cream	бисквитный рулет с мандариновым кремом
+bls:D311200	Butter cream torte (sponge cake)	масляный крем-торт бисквитный
+bls:D312300	Apricot cream torte (sponge cake)	абрикосовый крем-торт бисквитный
+bls:D312500	"Zuger Kirschtorte" cherry torte (sponge cake and nut sponge cake) with alcohol	вишнёвый торт «Цугер Киршторте» бисквитный с ореховым бисквитом с алкоголем
+bls:D312600	Buckwheat flour torte (water sponge cake) with blueberry-cream	гречневый торт бисквитный без масла с черничным кремом
+bls:D312700	Carrot nut cake (sponge cake)	морковно-ореховый пирог бисквитный
+bls:D312800	Mocha cream torte (water sponge cake) with alcohol	кофейный крем-торт бисквитный без масла с алкоголем
+bls:D312900	Truffle torte (chocolate water sponge cake)	трюфельный торт шоколадный бисквит без масла
+bls:D313100	Mocha-cream marzipan torte (water sponge cake)	кофейно-марципановый торт бисквитный без масла
+bls:D313300	Strawberry cream torte (water sponge cake)	клубничный крем-торт без масла
+bls:D313400	Chocolate cream torte (chocolate water sponge cake)	шоколадный крем-торт шоколадный бисквит без масла
+bls:D313500	Lemon cream torte (water sponge cake)	лимонный крем-торт бисквитный без масла
+bls:D313600	Orange cream torte (Viennese sponge cake dark) with chocolate-cream	апельсиновый крем-торт тёмный венский бисквит с шоколадным кремом
+bls:D314200	Mocha butter cream torte (sponge cake) with alcohol	кофейный масляный торт бисквитный с алкоголем
+bls:D314300	Chocolate butter cream torte (sponge cake)	шоколадный масляный торт бисквитный
+bls:D314400	Butter cream torte (chocolate sponge cake) with chocolate icing	масляный крем-торт шоколадный бисквит с шоколадной глазурью
+bls:D314500	Chocolate torte (cake batter) with chocolate icing	шоколадный торт из кексового теста с шоколадной глазурью
+bls:D314600	Peach torte (sponge cake) with gelatin glaze (without cream)	персиковый торт бисквитный без крема с желе
+bls:D320100	Butter cream torte (Viennese sponge cake light)	масляный крем-торт светлый венский бисквит
+bls:D321000	Yogurt cream torte (sponge cake and shortcrust pastry)	йогуртовый крем-торт бисквитный на песочном тесте
+bls:D330100	Butter cream torte (cake batter)	масляный крем-торт из кексового теста
+bls:D330300	Chocolate torte (cake batter)	шоколадный торт из кексового теста
+bls:D330400	"Prinzregententorte" torte (sponge cake)	торт «Принцрегент» бисквитный
+bls:D330500	Chocolate nut torte (cake batter)	шоколадно-ореховый торт из кексового теста
+bls:D340100	Butter cream torte (sand cake batter)	масляный крем-торт из теста для песочного кекса
+bls:D340200	Grape torte (sand cake batter) with vanilla cream and gelatin glaze	виноградный торт из теста для песочного кекса с ванильным кремом и желе
+bls:D380200	Cheese torte (shortcrust pastry)	сырный торт на песочном тесте
+bls:D380900	Cake base/torte base (shortcrust pastry, fine)	основа для торта на нежном песочном тесте
+bls:D3A1000	Sponge cake roll, filled with raspberry-cream	бисквитный рулет с малиновым кремом
+bls:D3A2000	Strawberry Charlotte Royale Cake (sponge cake)	клубничная шарлотка рояль бисквитный
+bls:D3A3000	Strawberry-cream torte (water sponge cake)	клубнично-сливочный торт без масла
+bls:D3A4000	Nut sponge cake roll, filled with raspberries and whipped cream	ореховый бисквитный рулет с малиной и взбитыми сливками
+bls:D3A5000	Black-and-white chequerboard torte (water sponge cake)	шахматный торт бисквитный без масла
+bls:D3A6000	Cheesecake (without baking)	чизкейк без выпечки
+bls:D3A7000	Egg liqueur torte (chocolate-almond sponge cake)	торт с яичным ликёром шоколадно-миндальный бисквит
+bls:D400400	Chocolate muffins (cake batter)	шоколадные маффины из кексового теста
+bls:D400700	English muffins/toasties (yeast dough) fried without fat (pan)	английские маффины из дрожжевого теста жареные без масла
+bls:D400800	Blueberry muffins (cake batter)	черничные маффины из кексового теста
+bls:D401100	Potato cake (cake batter)	картофельный пирог из кексового теста
+bls:D401400	Gingerbread cake	пряник имбирный
+bls:D410100	Sponge cake square with vanilla butter cream	бисквитное пирожное с ванильным масляным кремом
 bls:D410300	"Bismarck-Eiche" chocolate log cake (water sponge cake) with mocha butter cream	шоколадный рулет «Бисмарк» с кремом мокко
+bls:D411100	Viennese sponge cake roll filled with whipped cream and mandarins	венский бисквитный рулет со взбитыми сливками и мандаринами
+bls:D411200	Mock saddle of venison cake (Viennese sponge cake light)	торт «ложная оленья седловина» светлый венский бисквит
+bls:D420000	Fruitcake (prepared with rye bread dough)	фруктовый кекс на ржаном тесте
+bls:D421000	Sand cake batter raw	тесто для песочного кекса сырое
+bls:D422000	Cake batter raw	кексовое тесто сырое
+bls:D422600	Pound cake (cake batter)	кекс паунд из кексового теста
+bls:D430400	Ring cake with sultanas and candied lemon peel (cake batter)	кекс-кольцо из кексового теста с изюмом и цукатами лимона
+bls:D430500	Nut cake (cake batter)	ореховый кекс из кексового теста
+bls:D430600	Raisin cake (cake batter)	кекс с изюмом из кексового теста
+bls:D431100	Marble cake (cake batter)	мраморный кекс из кексового теста
+bls:D431200	Almond cake (cake batter)	миндальный кекс из кексового теста
+bls:D431300	Macaroon cake (cake batter)	кокосово-миндальный кекс из кексового теста
+bls:D431400	"Donau-Wellen" cake (cake batter)	кекс «Дунайские волны» из кексового теста
+bls:D431500	Layer cake (cake batter)	слоёный кекс из кексового теста
+bls:D431700	Orange cake (cake batter)	апельсиновый кекс из кексового теста
+bls:D431800	Pineapple marzipan cake (cake batter)	ананасово-марципановый кекс из кексового теста
+bls:D431900	"Ottilienkuchen" cake (cake batter)	кекс «Оттилиен» из кексового теста
+bls:D432100	Mock saddle of venison cake (sand cake batter)	торт «ложная оленья седловина» из теста для песочного кекса
+bls:D432200	Hollow wafer sticks (cake batter)	вафельные трубочки из кексового теста
+bls:D432300	Fruitcake (prepared without fat)	фруктовый кекс без жира
+bls:D432400	Quark stollen (cake batter)	творожный штоллен из кексового теста
+bls:D433200	Quark ring cake (cake batter)	творожный кекс-кольцо из кексового теста
+bls:D433300	Chocolate cake (cake batter)	шоколадный кекс из кексового теста
+bls:D433400	Spice cake (cake batter)	пряный кекс из кексового теста
+bls:D433600	Log cake (cake batter) filled with chocolate butter cream	рулет-кекс из кексового теста с шоколадно-масляным кремом
+bls:D440300	Sand cake	песочный кекс
+bls:D440500	Nut cake (sand cake batter)	ореховый кекс из теста для песочного кекса
+bls:D440700	English cake (sand cake batter) with alcohol	английский кекс из теста для песочного кекса с алкоголем
+bls:D440800	Candied fruit cake (cake batter) with alcohol	кекс с цукатами из кексового теста с алкоголем
+bls:D441300	Frankfurt crown cake (sand cake batter)	франкфуртский кранц из теста для песочного кекса
+bls:D441400	Viennese sand torte	венский песочный торт
+bls:D461200	Cheesecake (yeast dough)	чизкейк из дрожжевого теста
+bls:D461300	Bee sting cake (yeast dough)	пирог «пчелиный укус» из дрожжевого теста
+bls:D461400	Ring cake with raisins (yeast dough)	кекс-кольцо из дрожжевого теста с изюмом
+bls:D461500	Crumb cake (yeast dough)	пирог с крошкой из дрожжевого теста
+bls:D461602	Brioches (yeast dough) without filling	бриоши из дрожжевого теста без начинки
+bls:D461700	German butter cake (yeast dough)	немецкий сливочный пирог из дрожжевого теста
+bls:D462700	Almond cake (yeast dough)	миндальный кекс из дрожжевого теста
+bls:D462800	Yeast rose cake	дрожжевой пирог-роза
+bls:D463100	Dresden stollen (yeast dough) with alcohol	дрезденский штоллен из дрожжевого теста с алкоголем
+bls:D463500	Poppy seed stollen (yeast dough)	маковый штоллен из дрожжевого теста
+bls:D463700	Marzipan stollen (yeast dough)	марципановый штоллен из дрожжевого теста
+bls:D464200	Nut ring cake (yeast dough)	ореховый кекс-кольцо из дрожжевого теста
+bls:D464300	Almond ring cake (yeast dough)	миндальный кекс-кольцо из дрожжевого теста
+bls:D465300	Thuringian fruit flan (yeast dough)	тюрингский фруктовый флан из дрожжевого теста
+bls:D466100	Apple pie (yeast dough)	яблочный пирог из дрожжевого теста
+bls:D470100	Cheesecake (quark oil dough)	чизкейк из творожно-масляного теста
+bls:D470200	Nut ring cake (quark oil dough)	ореховый кекс-кольцо из творожно-масляного теста
+bls:D470300	German butter cake (quark oil dough)	немецкий сливочный пирог из творожно-масляного теста
+bls:D471600	Swiss roll, filled with marzipan and nuts (quark oil dough)	рулет из творожно-масляного теста с марципаном и орехами
+bls:D471700	Turnover (quark oil dough) filled with quark	пирожок-конвертик из творожно-масляного теста с творогом
+bls:D477100	Ham rolls (quark oil dough)	булочки с ветчиной из творожно-масляного теста
+bls:D480200	Cheesecake (shortcrust pastry)	чизкейк на песочном тесте
+bls:D480300	Cheesecake with crumbles (shortcrust pastry)	чизкейк на песочном тесте с крошкой
+bls:D482200	Blue plum tart (shortcrust pastry)	сливовый тарт на песочном тесте
+bls:D483200	Braided hazelnut bread (shortcrust pastry)	косичка с фундуком на песочном тесте
+bls:D483400	Apple strudel (shortcrust pastry)	яблочный штрудель на песочном тесте
+bls:D490100	Puff pastry with quark, baked	слоёное тесто с творогом запечённое
+bls:D490300	Puff pastry with egg, baked	слоёное тесто с яйцом запечённое
+bls:D490500	French apple tart (puff pastry)	французский яблочный тарт из слоёного теста
+bls:D4A1000	Apple strudel (puff pastry)	яблочный штрудель из слоёного теста
+bls:D4A1100	Cherry strudel (puff pastry)	вишнёвый штрудель из слоёного теста
+bls:D4A2000	Brownies	брауни шоколадные
+bls:D4A3000	Cheesecake (without cake base)	чизкейк без основы
+bls:D4A4000	Pumpkin almond cake (sponge cake)	тыквенно-миндальный кекс бисквитный
+bls:D4A5100	Swedish almond marzipan cake (shortcrust pastry)	шведский миндально-марципановый кекс на песочном тесте
+bls:D4A6000	"Eierschecke" cheesecake (yeast dough) with egg cream	чизкейк «айершеке» из дрожжевого теста с яичным кремом
+bls:D4A6100	Braided yeast bread with sultanas	дрожжевая косичка с изюмом
+bls:D4A6200	Poppy seed stollen (shortcrust pastry with yeast)	маковый штоллен на дрожжевом песочном тесте
+bls:D4A6300	Thuringian poppy seed cake (yeast dough)	тюрингский маковый пирог из дрожжевого теста
+bls:D4A7000	Cheese-ham crescent (quark oil dough)	рогалик с сыром и ветчиной из творожно-масляного теста
+bls:D4A7100	Mandarin heavy sour cream cake (quark oil dough)	мандариновый пирог на сметане из творожно-масляного теста
+bls:D4A7200	Poppy seed ring cake (quark oil dough)	маковый кекс-кольцо из творожно-масляного теста
+bls:D4A8000	Filled pineapple ring cake (cake batter)	ананасовый кекс-кольцо с начинкой из кексового теста
+bls:D4A8100	Coconut cake (cake batter)	кокосовый кекс из кексового теста
+bls:D4A8200	Pumpkin cake (cake batter)	тыквенный кекс из кексового теста
+bls:D4A8300	Marble cake (cake batter) with cherries	мраморный кекс из кексового теста с вишней
+bls:D4A8400	Carrot nut cake (cake batter)	морковно-ореховый пирог из кексового теста
+bls:D4A8500	Nut cake vegan (cake batter)	ореховый кекс из кексового теста веганский
+bls:D4A8600	Red wine cake (cake batter)	кекс на красном вине из кексового теста
+bls:D4A8700	Lemon cake (cake batter)	лимонный кекс из кексового теста
+bls:D4A8800	Lemon cake vegan (cake batter)	лимонный кекс из кексового теста веганский
+bls:D540100	Viennese apple strudel (strudel dough)	венский яблочный штрудель в тесте для штруделя
+bls:D540200	Apple strudel (strudel dough)	яблочный штрудель в тесте для штруделя
+bls:D540300	Cherry strudel (strudel dough)	вишнёвый штрудель в тесте для штруделя
+bls:D540400	Quark strudel (strudel dough)	творожный штрудель в тесте для штруделя
+bls:D610100	Russian bread letter-shaped biscuits (meringue)	буквенное печенье из безе из безе
+bls:D610200	Meringue	пирожные безе
+bls:D610300	Chocolate meringue	шоколадное безе
+bls:D610500	Cinnamon stars (meringue)	коричные звёздочки из безе
+bls:D610600	"Zuckerlis" almond meringue	миндальное безе «цукерли»
+bls:D610700	"Wasp nests" almond meringue	миндальное безе «осиные гнёзда»
+bls:D610800	Meringue with chocolate-nougat filling	безе с шоколадно-нуговой начинкой
+bls:D611000	Maize biscuits gluten-free	кукурузное печенье без глютена
+bls:D612000	Chocolate biscuits gluten-free	шоколадное печенье без глютена
+bls:D613000	Lemon biscuits gluten-free	лимонное печенье без глютена
+bls:D614000	Muesli biscuits gluten-free	печенье с мюсли без глютена
+bls:D615000	Sponge fingers gluten-free	печенье савоярди без глютена
+bls:D616000	Hazelnut biscuits gluten-free	фундучное печенье без глютена
+bls:D617000	Waffles (cake batter) gluten-free	вафли из кексового теста без глютена
+bls:D618000	Spiced biscuits gluten-free	пряное печенье без глютена
+bls:D621000	Waffles (cake batter)	вафли из кексового теста
+bls:D621100	Ice cream cones	вафельные стаканчики
+bls:D621200	Waffle biscuits	вафельное печенье
+bls:D621300	Waffle biscuits with chocolate icing	вафельное печенье с шоколадной глазурью
+bls:D621800	Cream waffle (cake batter)	сливочная вафля из кексового теста
+bls:D623000	Marble waffles (cake batter)	мраморные вафли из кексового теста
+bls:D623100	Waffles (sand cake batter)	вафли из теста для песочного кекса
+bls:D623200	Apple waffles (cake batter)	яблочные вафли из кексового теста
+bls:D623400	Ham waffles (cake batter)	вафли с ветчиной из кексового теста
+bls:D623500	Cheese waffles salted (cake batter)	сырные вафли из кексового теста солёные
+bls:D630400	Shortbread biscuits	сливочное песочное печенье
+bls:D630500	Shortbread biscuits, with chocolate icing	песочное печенье с шоколадной глазурью
+bls:D630600	Shortcake biscuits sandwiched with cocoa-cream filling	песочное печенье двойное с какао-кремом
+bls:D630700	Wafer biscuits with nougat filling	вафельное печенье с нугой
+bls:D630800	Waffle biscuits with chocolate nut filling and chocolate icing	вафельное печенье с шоколадно-ореховой начинкой и шоколадной глазурью
+bls:D650100	Domino dices (petit fours)	пирожные «домино» птифур
+bls:D650200	White gingerbread	белый пряник
+bls:D650400	Elisen gingerbread (with at least 25 % almonds and hazelnuts)	элитный пряник «элизен» элитный
+bls:D650500	Gingerbread on baking wafers	пряники на вафлях
+bls:D650600	Chocolate gingerbread	шоколадный пряник
+bls:D651300	"Printen" brown gingerbread biscuits	пряники «принтен»
+bls:D651400	Nut printen with chocolate icing	ореховые пряники «принтен» с шоколадной глазурью
+bls:D651500	Chocolate printen	шоколадные пряники «принтен»
+bls:D651700	Round baking wafers	круглые вафли для выпечки
+bls:D652300	"Pfeffernusse" spiced gingerbread biscuits with sugar icing	пряники «пфеффернюссе» с сахарной глазурью
+bls:D652400	Nuremberg gingerbread	нюрнбергский пряник
+bls:D653100	"Liegnitzer" filled gingerbread with chocolate icing	пряник «лигницкий» с начинкой с шоколадной глазурью
+bls:D655100	Fine gingerbread cake	тонкий пряничный кекс
+bls:D655200	East-Prussian gingerbread cake	восточно-прусский пряничный кекс
+bls:D655400	Thick gingerbread cake	толстый пряничный кекс
+bls:D655500	Spiced gingerbread	пряный пряник
+bls:D655600	Syrup cake	пирог на сиропе
+bls:D657100	"Kathrinchen" honey gingerbread biscuits	медовые пряники «катринхен»
+bls:D657200	Gingerbread cake biscuits	пряничное печенье-кексы
+bls:D657300	"Pflastersteine" thick convex gingerbread biscuits	пряники «пфлястерштайне»
+bls:D657400	Gingerbread cake mounds	пряничные купола
+bls:D660100	Macaroons	макаруны
+bls:D660200	Marzipan macaroons	марципановые макаруны
+bls:D660300	Coconut macaroons	кокосовые макаруны
+bls:D660500	Chocolate coconut macaroons	шоколадно-кокосовые макаруны
+bls:D660600	Chocolate hazelnut macaroons	шоколадно-фундучные макаруны
+bls:D660700	Hazelnut macaroons	фундучные макаруны
+bls:D660800	Chocolate macaroons	шоколадные макаруны
+bls:D661100	Marzipan moons	марципановые полумесяцы
+bls:D6A1000	Basler Leckerli (hard spice biscuit)	базельские пряники
+bls:D6A2000	Spit cake tips	кончики пирога на вертеле
+bls:D6A3000	Brown gingerbread without icing	коричневый пряник без глазури
+bls:D6A4000	Florentine biscuits (almond mass)	флорентинское печенье из миндальной массы
+bls:D6A5000	Gingerbread cake with chocolate icing	имбирный пряник с шоколадной глазурью
+bls:D6A6000	Gingerbread with fruit filling and chocolate icing	пряник с фруктовой начинкой и шоколадной глазурью
+bls:D6A7000	Almond bread (prepared with egg white, without fat)	миндальный хлебец на яичном белке, без жира
+bls:D6A8000	Sponge cake base gluten-free	бисквитная основа без глютена
+bls:D6A9000	English tea cake gluten-free	английский чайный кекс без глютена
+bls:D701400	"Zedernbrot" lemon almond biscuits	лимонно-миндальное печенье «цедернброт»
+bls:D701500	"Raspeli" meringue with cocoa powder and coconut	безе «распели» с какао и кокосом
+bls:D701600	Oatmeal biscuits	овсяное печенье
+bls:D701700	Oatmeal-nut biscuits	овсяно-ореховое печенье
+bls:D701800	"Springerle" anise biscuits	анисовое печенье «шпрингерле»
+bls:D702000	"Baklava" filled puff pastry	пахлава из слоёного теста
+bls:D705200	Apricots in frying batter deep-fried	абрикосы в кляре жареные во фритюре
+bls:D705300	Apple slices in frying batter, deep-fried	яблочные ломтики в кляре жареные во фритюре
+bls:D705400	Bananas in frying batter deep-fried	бананы в кляре жареные во фритюре
+bls:D710100	Chocolate sponge biscuits	шоколадное бисквитное печенье
+bls:D710200	Sponge fingers	печенье савоярди
+bls:D710300	Small sponge biscuits	маленькое бисквитное печенье
+bls:D710500	Anise sponge biscuits	анисовое бисквитное печенье
+bls:D710700	Chocolate sponge biscuits with nougat filling	шоколадное бисквитное печенье с нугой
+bls:D710800	Chocolate-hazelnut cookies	шоколадно-фундучное печенье
+bls:D711100	Orange sponge biscuits	апельсиновое бисквитное печенье
+bls:D712000	Biscuits low protein	печенье низкобелковое
+bls:D720200	Cream puff (choux pastry)	заварной пирожок заварное
+bls:D720300	Cream éclairs (choux pastry)	эклеры заварное
+bls:D720400	Choux pastry baked	заварное тесто запечённое
+bls:D720500	Cream puff (choux pastry) filled with cherries	заварной пирожок заварное с вишней
+bls:D720600	"Flockentorte" layer torte (choux pastry)	слоёный торт «флокенторте» заварное
+bls:D720700	Lingonberry-stracciatella-cream ring cake (choux pastry)	кольцо с бруснично-страчателловым кремом заварное
+bls:D720800	Cheese puffs salted (choux pastry) unfilled	сырные заварные пирожки заварное солёные без начинки
+bls:D721100	"Eberswalder" french crullers (choux pastry) deep-fried	пирожные «эберсвальдер» заварное жареные во фритюре
 bls:D730300	Spritz biscuits with almonds (cake batter)	песочное печенье с миндалём
+bls:D730600	"Spekulatius" spiced almond biscuits (shortcrust pastry)	пряное печенье «спекулатиус» на песочном тесте
+bls:D730700	Shortcake cheese biscuits salted	сырное песочное печенье солёные
+bls:D730800	Tea biscuits (shortcrust pastry)	чайное печенье на песочном тесте
+bls:D730900	Pastries (shortcrust pastry) deep-fried	пирожные из теста на песочном тесте жареные во фритюре
+bls:D731200	Apple pie (shortcrust pastry)	яблочный пирог на песочном тесте
+bls:D732100	Vanilla shortcrust pastry biscuit	ванильное песочное печенье
+bls:D733100	Nut rounds (shortcrust pastry)	ореховые кружки на песочном тесте
+bls:D733200	Crumble biscuits (shortcrust pastry)	печенье с крошкой на песочном тесте
+bls:D733500	Black-and-white chequerboard biscuits (shortcrust pastry)	шахматное печенье на песочном тесте
+bls:D733600	Nut triangles (shortcrust pastry)	ореховые треугольники на песочном тесте
+bls:D733800	Almond biscuits (shortcrust pastry)	миндальное печенье на песочном тесте
+bls:D734600	Butter biscuits (shortcrust pastry)	сливочное печенье на песочном тесте
+bls:D734700	"Husaren" biscuits (shortcrust pastry) filled with jam	печенье «гусарское» на песочном тесте с джемом
+bls:D734800	Hazelnut balls (shortcrust pastry)	фундучные шарики на песочном тесте
+bls:D734900	Nut sticks (shortcrust pastry)	ореховые палочки на песочном тесте
+bls:D735100	"Spitzbuben" sandwich biscuit (shortcrust pastry) filled with jam	печенье-сэндвич «шпицбубен» на песочном тесте с джемом
+bls:D735200	Small orange turnovers (shortcrust pastry)	апельсиновые конвертики на песочном тесте
+bls:D735300	"Dreispitz" hazelnut biscuits (shortcrust pastry)	фундучное печенье «драйшпиц» на песочном тесте
+bls:D736100	Crispy cheese biscuits salted (shortcrust pastry)	хрустящее сырное печенье на песочном тесте солёные
+bls:D740100	Almond-marzipan doughnuts (yeast dough) deep-fried	миндально-марципановые пончики из дрожжевого теста жареные во фритюре
+bls:D740400	Potato crescent roll (shortcrust pastry)	картофельный рогалик на песочном тесте
+bls:D740500	Nut crescent roll (yeast dough)	ореховый рогалик из дрожжевого теста
+bls:D740600	Viennese crescent roll (yeast dough)	венский рогалик из дрожжевого теста
+bls:D741000	Doughnut (yeast dough) deep-fried, with chocolate icing	пончик из дрожжевого теста жареный во фритюре с шоколадной глазурью
+bls:D741400	"Buchteln" baked yeast buns	дрожжевые булочки «бухтельн»
+bls:D741600	Doughnut (yeast dough) deep-fried	пончик из дрожжевого теста жареный во фритюре
+bls:D750100	"Amerikaner" moist shortbread biscuit (cake batter) with sugar icing	бисквитное печенье «американер» из кексового теста с сахарной глазурью
+bls:D750200	Danish swirl (yeast dough) with crumbles	венская улитка из дрожжевого теста с крошкой
+bls:D750300	Bavarian doughnuts (yeast dough) deep-fried	баварские пончики из дрожжевого теста жареные во фритюре
+bls:D750600	"Heidesand" biscuits (shortcrust pastry)	песочное печенье «хайдезанд» на песочном тесте
+bls:D750700	Marzipan sticks (cake batter)	марципановые палочки из кексового теста
+bls:D751100	"Hobelspäne" pastry (cake batter) deep-fried	жареная выпечка «хобельшпене» из кексового теста жареная во фритюре
+bls:D752100	Danish swirl (yeast dough) with raisins and almonds	венская улитка из дрожжевого теста с изюмом и миндалём
+bls:D753100	Nut spritz biscuits (cake batter)	ореховое отсадное печенье из кексового теста
+bls:D753200	Coconut square (cake batter)	кокосовое пирожное из кексового теста
+bls:D753500	Vanilla crescents (shortcrust pastry)	ванильные рогалики на песочном тесте
+bls:D753600	Heart-shaped almond lemon biscuits (without fat and flour)	миндально-лимонное печенье-сердечки без жира и муки
+bls:D754100	"Rheinische Mutzen" pastry (pasta dough) deep-fried	рейнские мутцен из мучного теста жареные во фритюре
+bls:D755200	Almond ring cake (cake batter)	миндальный кекс-кольцо из кексового теста
+bls:D755300	Almond crescent roll (cake batter)	миндальный рогалик из кексового теста
+bls:D770100	Danish swirl (puff pastry) with poppy seeds	венская улитка из слоёного теста с маком
+bls:D770200	Cheese pastry salted (shortcrust pastry with quark)	сырный пирожок на песочном тесте с творогом солёный
+bls:D770300	Pig ear pastry (puff pastry)	печенье «свиное ушко» из слоёного теста
+bls:D770400	Fine pastry (puff pastry) with chocolate icing	нежная слойка из слоёного теста с шоколадной глазурью
+bls:D770800	Coffee pastry (puff pastry with quark)	кофейная слойка из слоёного теста с творогом
+bls:D771100	Strawberry-cream square (puff pastry)	клубнично-кремовое пирожное из слоёного теста
+bls:D771200	Apricot pastry (puff pastry)	абрикосовая слойка из слоёного теста
+bls:D771300	Raspberry cream in vol-au-vent (puff pastry)	малиновый крем в воловане из слоёного теста
+bls:D771400	Oblong mocha-cream filled pastry (puff pastry)	продолговатая слойка с кофейным кремом из слоёного теста
+bls:D771500	Crescent roll (puff pastry)	рогалик из слоёного теста
+bls:D771600	Danish pastry croissant	круассан-слойка
+bls:D771700	Danish pastry croissant, filled with nut nougat cream	круассан-слойка с орехово-нуговым кремом
+bls:D771800	Danish pastry croissant, filled with marzipan	круассан-слойка с марципаном
+bls:D771900	Puff pastry roll	слоёный рулет
+bls:D772100	Ham crescent (puff pastry)	рогалик с ветчиной из слоёного теста
+bls:D780300	Hazelnut Danish pastry	фундучная венская слойка
+bls:D780500	Danish pastry with marzipan	венская слойка с марципаном
+bls:D790100	Wholemeal biscuits, salted	цельнозерновое печенье солёное
+bls:D790300	Wholemeal biscuits with chocolate icing	цельнозерновое печенье с шоколадной глазурью
+bls:D790700	Wholemeal biscuits	цельнозерновое печенье
+bls:D793100	Wholemeal muesli biscuits (shortcrust pastry)	цельнозерновое печенье с мюсли на песочном тесте
+bls:D7A1000	Sponge cake biscuits with fruit filling and chocolate icing	бисквитное печенье с фруктовой начинкой и шоколадной глазурью
+bls:D7A1100	Sponge cake biscuits with nougat filling	бисквитное печенье с нугой
+bls:D7A1200	Sponge cake biscuits with chocolate icing	бисквитное печенье с шоколадной глазурью
+bls:D7A2000	Chocolate chip cookies	печенье с шоколадной крошкой
+bls:D7A2100	Chocolate almond cookies vegan	шоколадно-миндальное печенье веганские
+bls:D7A2200	Peanut biscuits (shortcrust pastry)	арахисовое печенье на песочном тесте
+bls:D7A2300	Chocolate pretzels (shortcrust pastry)	шоколадные брецели-печенье на песочном тесте
+bls:D7A3000	Scones (British)	сконы британские
+bls:D7A3100	Muffins vegan (cake batter)	маффины из кексового теста веганские
+bls:D7A4000	Salty cheese puff (choux pastry) filled with cream cheese	солёный сырный профитроль заварное с сырным кремом
+bls:D7A5000	Turnover (yeast dough) filled with apples	пирожок-конвертик из дрожжевого теста с яблоками
+bls:D7A5100	Danish swirl (yeast dough) with nuts	венская улитка из дрожжевого теста с орехами
+bls:D7A5200	Danish swirl (yeast dough) with pudding	венская улитка из дрожжевого теста с пудингом
+bls:D7A5300	Danish swirl (yeast dough) with cinnamon	венская улитка из дрожжевого теста с корицей
+bls:D7A5400	Milk roll (yeast dough)	молочная булочка из дрожжевого теста
+bls:D7A5500	Roll with raisins (yeast dough)	булочка из дрожжевого теста с изюмом
+bls:D7A5600	Roll with chocolate chips (yeast dough)	булочка из дрожжевого теста с шоколадной крошкой
+bls:D7A6000	"Berliner" doughnut (yeast dough) deep-fried, unfilled	берлинский пончик из дрожжевого теста жареный во фритюре без начинки
+bls:D7A6100	"Berliner" doughnut (yeast dough) deep-fried, filled with egg liqueur cream	берлинский пончик из дрожжевого теста жареный во фритюре с кремом из яичного ликёра
+bls:D7A6200	"Berliner" doughnut (yeast dough) deep-fried, filled with jam	берлинский пончик из дрожжевого теста жареный во фритюре с джемом
+bls:D7A6300	"Berliner" doughnut (yeast dough) deep-fried, filled with nut nougat cream	берлинский пончик из дрожжевого теста жареный во фритюре с орехово-нуговым кремом
+bls:D7A6400	"Berliner" doughnut (yeast dough) deep-fried, filled with plum jam	берлинский пончик из дрожжевого теста жареный во фритюре с повидлом
+bls:D7A6500	"Berliner" doughnut (yeast dough) deep-fried, filled with pudding	берлинский пончик из дрожжевого теста жареный во фритюре с пудингом
+bls:D7A6600	Quark balls (yeast dough) deep-fried	творожные шарики из дрожжевого теста жареные во фритюре
+bls:D7A6700	Langos (yeast dough) deep-fried, unfilled	лангос из дрожжевого теста жареный во фритюре без начинки
+bls:D7A7000	Danish pastry raw	венская слойка сырой
+bls:D7A7100	Danish pastry baked	венская слойка запечённый
+bls:D7A7200	"Franzbrötchen" Danish pastry, filled with cinnamon-sugar	венская слойка «францбрётхен» с корицей и сахаром
+bls:D7A7300	Danish pastry with poppy seeds	венская слойка с маком
+bls:D7A7400	Danish pastry with pudding	венская слойка с пудингом
+bls:D7A7410	Danish pastry with pudding and fruit	венская слойка с пудингом и фруктами
+bls:D7A7420	Danish pastry with pudding, fruit and gelatin glaze	венская слойка с пудингом с фруктами и желе
+bls:D7A7430	Danish pastry with pudding, fruit, gelatin glaze and whipped cream	венская слойка с пудингом с фруктами с желе и взбитыми сливками
+bls:D7A7500	Danish pastry with quark	венская слойка с творогом
+bls:D7A7510	Danish pastry with quark and fruit	венская слойка с творогом и фруктами
+bls:D7A7600	Danish pastry with chocolate	венская слойка с шоколадом
+bls:D7A7700	"Kalter Hund" biscuits cake without baking	пирожное «холодная собака» без выпечки
+bls:D7A7800	Turnover (puff pastry) filled with apples	пирожок-конвертик из слоёного теста с яблоками
+bls:D7A7810	Turnover (puff pastry) filled with cherries	пирожок-конвертик из слоёного теста с вишней
+bls:D7B1000	Butter biscuits (shortcrust pastry) with cream filling	сливочное печенье на песочном тесте с кремовой начинкой
+bls:D7B1100	Butter biscuits containing cocoa (shortcrust pastry)	сливочное печенье на песочном тесте с какао
+bls:D7B2000	Shortbread biscuits with nougat filling	песочное печенье с нугой
+bls:D7B2100	Shortbread biscuits with nougat filling and chocolate icing	песочное печенье с нугой и шоколадной глазурью
+bls:D7B3000	Shortbread biscuits, containing cocoa	песочное печенье с какао
+bls:D7B3100	Shortbread biscuits, containing cocoa, with nougat filling	песочное печенье с какао с нугой
+bls:D7B3200	Shortbread biscuits, containing cocoa, with nougat filling and chocolate icing	песочное печенье с какао с нугой и шоколадной глазурью
+bls:D7B4000	"Friesenkekse" biscuits (shortrcrust pastry)	печенье «фризенкексе» на песочном тесте
+bls:D7B5000	Biscuits, containig cocoa (cake batter)	печенье из кексового теста с какао
+bls:D7B5100	Biscuits, containig cocoa (cake batter) with chocolate icing	печенье из кексового теста с какао и шоколадной глазурью
+bls:D7B5200	Biscuits, containig cocoa (cake batter) with nougat filling	печенье из кексового теста с какао и нугой
+bls:D7B5300	Biscuits, containig cocoa (cake batter) with nougat filling and chocolate icing	печенье из кексового теста с какао, нугой и шоколадной глазурью
+bls:D7B6000	Shortcrust pastry biscuit with chocolate icing	песочное пирожное с шоколадной глазурью
+bls:D7B6100	Shortcrust pastry biscuit with nougat filling	песочное пирожное с нугой
+bls:D7B6200	Shortcrust pastry biscuit with nougat filling and chocolate icing	песочное пирожное с нугой и шоколадной глазурью
+bls:D7B7000	Nut spritz biscuits (cake batter) with chocolate icing	ореховое отсадное печенье из кексового теста с шоколадной глазурью
+bls:D7B7100	Nut spritz biscuits (cake batter) with nougat filling	ореховое отсадное печенье из кексового теста с нугой
+bls:D7B7200	Nut spritz biscuits (cake batter) with nougat filling and chocolate icing	ореховое отсадное печенье из кексового теста с нугой и шоколадной глазурью
+bls:D7B8000	Spritz biscuits (cake batter)	отсадное печенье из кексового теста
+bls:D7B8100	Spritz biscuits (cake batter) with chocolate icing	отсадное печенье из кексового теста с шоколадной глазурью
+bls:D7B8200	Spritz biscuits (cake batter) with nougat filling	отсадное печенье из кексового теста с нугой
+bls:D7B8300	Spritz biscuits (cake batter) with nougat filling and chocolate icing	отсадное печенье из кексового теста с нугой и шоколадной глазурью
+bls:D9A1000	Wholemeal puff pastry egg-free, raw	цельнозерновое слоёное тесто без яиц сырое
+bls:D9A1100	Wholemeal puff pastry egg-free, baked	цельнозерновое слоёное тесто без яиц запечённое
+bls:D9A2000	Wholemeal yeast dough, sweetened, raw	цельнозерновое дрожжевое тесто сладкое сырое
+bls:D9A2100	Wholemeal yeast dough, sweetened, baked	цельнозерновое дрожжевое тесто сладкое запечённое
+bls:D9A2200	Wholemeal apple crumble cake (yeast dough)	цельнозерновой яблочный пирог с крошкой из дрожжевого теста
+bls:D9A2300	Wholemeal cheesecake (yeast dough)	цельнозерновой чизкейк из дрожжевого теста
+bls:D9A2400	Wholemeal yeast stollen	цельнозерновой дрожжевой штоллен
+bls:D9A2500	Wholemeal braided yeast bread	цельнозерновая дрожжевая косичка
+bls:D9A3000	Wholemeal shortcrust pastry, sweetened, raw	цельнозерновое песочное тесто сладкое сырое
+bls:D9A3100	Wholemeal shortcrust pastry, sweetened, baked	цельнозерновое песочное тесто сладкое запечённое
+bls:D9A3200	Wholemeal apple pie (shortcrust pastry)	цельнозерновой яблочный пирог на песочном тесте
+bls:D9A3300	Wholemeal cheesecake (shortcrust pastry)	цельнозерновой чизкейк на песочном тесте
+bls:D9A4000	Wholemeal Danish pastry dough, raw	цельнозерновое тесто для венской выпечки сырое
+bls:D9A4100	Wholemeal Danish pastry dough, baked	цельнозерновое тесто для венской выпечки запечённое
+bls:D9A4200	Wholemeal Danish pastry with marzipan	цельнозерновая венская слойка с марципаном
+bls:D9A4300	Wholemeal Danish pastry with poppy seed	цельнозерновая венская слойка с маком
+bls:D9A4400	Wholemeal Danish pastry with pudding	цельнозерновая венская слойка с пудингом
+bls:D9A4500	Wholemeal Danish pastry with pudding and fruit	цельнозерновая венская слойка с пудингом и фруктами
+bls:D9A4600	Wholemeal Danish pastry with pudding, fruit and gelatin glaze	цельнозерновая венская слойка с пудингом с фруктами и желе
+bls:D9A4700	Wholemeal Danish pastry with quark	цельнозерновая венская слойка с творогом
+bls:D9A4800	Wholemeal Danish pastry with quark and fruit	цельнозерновая венская слойка с творогом и фруктами
+bls:D9A4900	Wholemeal Danish pastry croissant	цельнозерновой круассан-слойка
+bls:D9A5000	Wholemeal hazelnut cake (cake batter)	цельнозерновой фундучный кекс из кексового теста
+bls:D9A5100	Wholemeal marble cake (cake batter)	цельнозерновой мраморный кекс из кексового теста
+bls:D9A5200	Wholemeal sand cake	цельнозерновой песочный кекс
+bls:D9A5300	Wholemeal chocolate almond cake (cake batter)	цельнозерновой шоколадно-миндальный кекс из кексового теста
+bls:D9B1000	Wholemeal shortbread biscuits, containing cocoa	цельнозерновое песочное печенье с какао
+bls:D9B1100	Wholemeal shortbread biscuits, containing cocoa, with nougat filling	цельнозерновое песочное печенье с какао с нугой
+bls:D9B1200	Wholemeal biscuits (shortcrust pastry) with nougat filling	цельнозерновое печенье на песочном тесте с нугой
+bls:D9B1300	Wholemeal biscuits (shortcrust pastry) with nougat filling and chocolate icing	цельнозерновое печенье на песочном тесте с нугой и шоколадной глазурью
+bls:D9B1400	Wholemeal muesli biscuits (shortcrust pastry) with chocolate icing	цельнозерновое печенье с мюсли на песочном тесте с шоколадной глазурью
+bls:D9B1500	Wholemeal chocolate muesli biscuits (shortcrust pastry)	цельнозерновое шоколадное печенье с мюсли на песочном тесте
+bls:E101132	Quail egg boiled	перепелиное яйцо варёное
+bls:E105182	Quail egg fried without fat (pan)	перепелиное яйцо жареное без масла
+bls:E106100	Quail egg raw	перепелиное яйцо сырое
+bls:E107122	Chicken egg poached	куриное яйцо пашот
+bls:E108122	Chicken egg white, poached	яичный белок пашот
+bls:E111100	Chicken egg raw	куриное яйцо сырое
+bls:E111132	Chicken egg boiled	куриное яйцо варёное
+bls:E111162	Chicken egg baked	куриное яйцо запечённое
+bls:E111182	Chicken egg fried without fat (pan)	куриное яйцо жареное без масла
+bls:E111500	Chicken egg powder	куриное яйцо в порошке
+bls:E112100	Chicken egg yolk, raw	яичный желток сырой
+bls:E112132	Chicken egg yolk, boiled	яичный желток варёный
+bls:E112162	Chicken egg yolk, baked	яичный желток запечённый
+bls:E112182	Chicken egg yolk, fried without fat (pan)	яичный желток жареный без масла
+bls:E112400	Chicken egg yolk, dried	яичный желток сушёный
+bls:E112500	Chicken egg yolk, powder	яичный желток в порошке
+bls:E113100	Chicken egg white, raw	белок яичный сырой
+bls:E113132	Chicken egg white, boiled	яичный белок варёный
+bls:E113162	Chicken egg white, baked	яичный белок запечённый
+bls:E113182	Chicken egg white, fried without fat (pan)	яичный белок жареный без масла
+bls:E113400	Chicken egg white, dried	яичный белок сушёный
+bls:E113500	Chicken egg white, powder	яичный белок в порошке
+bls:E131100	Duck egg raw	утиное яйцо сырое
+bls:E131132	Duck egg boiled	яйцо утиное варёное
+bls:E141100	Goose egg raw	гусиное яйцо сырое
+bls:E141132	Goose egg boiled	яйцо гусиное варёное
+bls:E151100	Turkey egg raw	индюшиное яйцо сырое
+bls:E151132	Turkey egg boiled	индюшиное яйцо варёное
+bls:E401000	Pasta egg-free, raw	макароны без яиц сырые
+bls:E401032	Pasta egg-free, boiled	макароны без яиц варёные
+bls:E401062	Pasta egg-free, boiled, baked	макароны без яиц варёные запечённые
+bls:E401082	Pasta egg-free, boiled, fried without fat (pan)	макароны без яиц варёные жареные без масла
+bls:E430062	Egg pasta boiled, baked	яичная лапша варёная запечённая
+bls:E430082	Egg pasta boiled, fried without fat (pan)	яичная лапша варёная жареная без масла
+bls:E432000	Egg pasta raw	яичная лапша сырая
+bls:E432032	Egg pasta boiled	яичная лапша варёная
+bls:E438000	Fresh egg pasta raw	свежая яичная лапша сырая
+bls:E438032	Fresh egg pasta boiled	свежая яичная лапша варёная
+bls:E438062	Fresh egg pasta boiled, baked	свежая яичная лапша варёная запечённая
+bls:E438082	Fresh egg pasta boiled, fried without fat (pan)	свежая яичная лапша варёная жареная без масла
+bls:E470000	Fresh egg pasta Ravioli (vegetable filling) raw	свежие равиоли с овощами сырые
+bls:E470032	Fresh egg pasta Ravioli (vegetable filling) boiled	свежие равиоли с овощами варёные
+bls:E470042	Fresh egg pasta Ravioli (vegetable filling) steamed	свежие равиоли с овощами на пару
+bls:E470082	Fresh egg pasta Ravioli (vegetable filling) boiled, fried without fat (pan)	свежие равиоли с овощами варёные жареные без масла
+bls:E470162	Fresh egg pasta Ravioli (vegetable filling) boiled, baked	свежие равиоли с овощами варёные запечённые
+bls:E500032	Wholemeal pasta egg-free, boiled	цельнозерновые макароны без яиц варёные
+bls:E500062	Wholemeal pasta egg-free, boiled, baked	цельнозерновые макароны без яиц варёные запечённые
+bls:E500082	Wholemeal pasta egg-free, boiled, fried without fat (pan)	цельнозерновые макароны без яиц варёные жареные без масла
+bls:E510000	Wholemeal pasta egg-free, raw	цельнозерновые макароны без яиц сырые
+bls:E530000	Wholemeal egg pasta raw	цельнозерновая яичная лапша сырая
+bls:E530032	Wholemeal egg pasta boiled	цельнозерновая яичная лапша варёная
+bls:E530062	Wholemeal egg pasta boiled, baked	цельнозерновая яичная лапша варёная запечённая
+bls:E530082	Wholemeal egg pasta boiled, fried without fat (pan)	цельнозерновая яичная лапша варёная жареная без масла
+bls:E603000	Fresh egg pasta Ravioli (meat filling) raw	свежие равиоли с мясом сырые
+bls:E603022	Fresh egg pasta Ravioli (meat filling) steamed	свежие равиоли с мясом на пару
+bls:E603032	Fresh egg pasta Ravioli (meat filling) boiled	свежие равиоли с мясом варёные
+bls:E603062	Fresh egg pasta Ravioli (meat filling) boiled, baked	свежие равиоли с мясом варёные запечённые
+bls:E603082	Fresh egg pasta Ravioli (meat filling) boiled, fried without fat (pan)	свежие равиоли с мясом варёные жареные без масла
+bls:E604300	Egg pasta with wheat germ, raw	яичная лапша с зародышами пшеницы сырая
+bls:E604332	Egg pasta with wheat germ, boiled	яичная лапша с зародышами пшеницы варёная
+bls:E605000	Potato noodles (Schupfnudeln) raw	картофельные шупфнудели шупфнудели сырые
+bls:E605032	Potato noodles (Schupfnudeln) boiled	картофельные шупфнудели шупфнудели варёные
+bls:E605062	Potato noodles (Schupfnudeln) boiled, baked	картофельные шупфнудели шупфнудели варёные запечённые
+bls:E605082	Potato noodles (Schupfnudeln) boiled, fried without fat (pan)	картофельные шупфнудели шупфнудели варёные жареные без масла
+bls:E605200	Finger-shaped pasta Swabian style, raw	швабская лапша-пальчики сырая
+bls:E605232	Finger-shaped pasta Swabian style, boiled	швабская лапша-пальчики варёная
+bls:E605300	Finger-shaped pasta egg-free, raw	лапша-пальчики без яиц сырая
+bls:E605332	Finger-shaped pasta egg-free, boiled	лапша-пальчики без яиц варёная
+bls:E606000	White bread dumplings raw	кнедлики из белого хлеба сырые
+bls:E606022	White bread dumplings steamed	кнедлики из белого хлеба на пару
+bls:E606032	White bread dumplings boiled	кнедлики из белого хлеба варёные
+bls:E606062	White bread dumplings boiled, baked	кнедлики из белого хлеба варёные запечённые
+bls:E606082	White bread dumplings boiled, fried without fat (pan)	кнедлики из белого хлеба варёные жареные без масла
+bls:E606200	White bread dumplings dried	кнедлики из белого хлеба сушёные
+bls:E606232	White bread dumplings dried, boiled	кнедлики из белого хлеба сушёные варёные
+bls:E606282	White bread dumplings dried, boiled, fried without fat (pan)	кнедлики из белого хлеба сушёные варёные жареные без масла
+bls:E607000	Semolina dumplings raw	манные клёцки сырые
+bls:E607032	Semolina dumplings boiled	манные клёцки варёные
 bls:E607100	Semolina dumplings dried	клёцки манные сушёные
+bls:E607132	Semolina dumplings dried, boiled	манные клёцки сушёные варёные
+bls:E607182	Semolina dumplings dried, boiled, fried without fat (pan)	манные клёцки сушёные варёные жареные без масла
+bls:E608000	Bohemian dumplings raw	богемские кнедлики сырые
+bls:E608032	Bohemian dumplings boiled	богемские кнедлики варёные
+bls:E608082	Bohemian dumplings boiled, fried without fat (pan)	богемские кнедлики варёные жареные без масла
+bls:E609100	Egg pasta Tortelloni (ricotta and spinach filling) dried	тортеллони с рикоттой и шпинатом сушёные
+bls:E609132	Egg pasta Tortelloni (ricotta and spinach filling) dried, boiled	тортеллони с рикоттой и шпинатом сушёные варёные
+bls:E609200	Egg pasta Tortellini (meat filling) dried	тортеллини с мясом сушёные
+bls:E609232	Egg pasta Tortellini (meat filling) dried, boiled	тортеллини с мясом сушёные варёные
+bls:E612000	Pasta egg-free, gluten-free, raw	макароны без яиц без глютена сырые
+bls:E612032	Pasta egg-free, gluten-free, boiled	макароны без яиц без глютена варёные
+bls:E612100	Egg pasta gluten-free, raw	яичная лапша без глютена сырая
+bls:E612132	Egg pasta gluten-free, boiled	яичная лапша без глютена варёная
+bls:E632000	Spelt pasta egg-free, raw	макароны из полбы без яиц сырые
+bls:E632032	Spelt pasta egg-free, boiled	макароны из полбы без яиц варёные
+bls:E632100	Spelt egg pasta raw	яичная лапша из полбы сырая
+bls:E632132	Spelt egg pasta boiled	яичная лапша из полбы варёная
+bls:E632200	Wholemeal spelt pasta egg-free, raw	цельнозерновые макароны из полбы без яиц сырые
+bls:E632232	Wholemeal spelt pasta egg-free, boiled	цельнозерновые макароны из полбы без яиц варёные
+bls:E632300	Wholemeal spelt egg pasta raw	цельнозерновая яичная лапша из полбы сырая
+bls:E632332	Wholemeal spelt egg pasta boiled	цельнозерновая яичная лапша из полбы варёная
+bls:E811000	Fresh pasta egg-free, raw	свежие макароны без яиц сырые
+bls:E811032	Fresh pasta egg-free, boiled	свежие макароны без яиц варёные
+bls:E901000	Pasta egg-free, Ravioli (meat filling) in tomato sauce, canned	равиоли с мясом в томатном соусе консервированные
+bls:E911000	Pasta egg-free, Ravioli (vegetable filling) in tomato sauce, canned	равиоли с овощами в томатном соусе консервированные
+bls:F010600	Multi-fruit juice	мультифруктовый сок
+bls:F012700	Mixed fruit nectar	мультифруктовый нектар
+bls:F013700	Mixed fruit nectar with artificial sweeteners	мультифруктовый нектар с подсластителем
+bls:F014600	Multi-fruit juice fortified with vitamins (multivitamin juice)	мультифруктовый сок с витаминами
+bls:F016600	Multi-fruit juice fortified with vitamins and minerals	мультифруктовый сок с витаминами и минералами
+bls:F020600	Red multi-fruit juice	красный мультифруктовый сок
+bls:F021600	Red multi-fruit juice fortified with vitamins (red multivitamin juice)	красный мультифруктовый сок с витаминами
+bls:F022700	Mixed fruit nectar, fortified with vitamins (multivitamin nectar)	мультифруктовый нектар с витаминами
+bls:F023700	Mixed fruit nectar with artificial sweeteners, fortified with vitamins (multivitamin nectar)	мультифруктовый нектар с подсластителем с витаминами
+bls:F032600	Smoothie of purple fruits	смузи из фиолетовых фруктов
+bls:F033600	Smoothie of yellow fruits	смузи из жёлтых фруктов
+bls:F034600	Smoothie of green fruits and vegetables	зелёный смузи из фруктов и овощей
+bls:F081100	Rhubarb raw	ревень свежий
+bls:F081600	Rhubarb juice	сок ревеня
+bls:F081902	Rhubarb sugared, canned, drained	ревень с сахаром консервированный слитый
+bls:F083902	Rhubarb unsweetened, canned, drained	ревень без сахара консервированный слитый
+bls:F090100	Mixed fruit sugared, raw	фруктовый микс с сахаром свежий
+bls:F090400	Mixed fruit dried	фруктовый микс сушёный
+bls:F090902	Fruit mix/fruit cocktail, sugared, canned, drained	фруктовый микс с сахаром консервированный слитый
+bls:F091100	Mixed fruit unsweetened	фруктовый микс без сахара
+bls:F091902	Fruit mix/fruit cocktail, in juice, canned, drained	фруктовый микс в собственном соку консервированный слитый
+bls:F092100	Berry mix with sour cherries, unsweetened, raw	ягодный микс с вишней без сахара свежий
+bls:F092152	Berry mix with sour cherries, unsweetened, stewed	ягодный микс с вишней без сахара тушёный
+bls:F092902	Fruit mix/fruit cocktail, with artificial sweeteners, canned, drained	фруктовый микс с подсластителем консервированный слитый
+bls:F093902	Fruit mix/fruit cocktail, unsweetened, canned, drained	фруктовый микс без сахара консервированный слитый
+bls:F110100	Apple raw	яблоко сырое
+bls:F110152	Apple stewed	яблоко тушёное
+bls:F110400	Apple dried	яблоко сушёное
+bls:F110600	Apple juice	яблочный сок
+bls:F110700	Apple nectar	яблочный нектар
+bls:F112600	Apple juice fortified with vitamin C	яблочный сок с витамином С
+bls:F116600	Apple nectar with artificial sweeteners	яблочный нектар с подсластителем
+bls:F119902	Apple unsweetened, canned, drained	яблоко без сахара консервированное слитое
+bls:F120100	Apple peeled, raw	яблоко очищенное свежее
+bls:F120152	Apple peeled, stewed	яблоко очищенное тушёное
+bls:F120400	Apple peeled, dried	яблоко очищенное сушёное
+bls:F130100	Pear raw	груша свежая
+bls:F130152	Pear stewed	груша тушёная
+bls:F130400	Pear dried	сушёная груша
+bls:F130600	Pear juice	грушевый сок
+bls:F130902	Pear sugared, canned, drained	груша с сахаром консервированная слитая
+bls:F131902	Pear unsweetened, canned, drained	груша без сахара консервированная слитая
+bls:F133902	Pear with artificial sweeteners, canned, drained	груша с подсластителем консервированная слитая
+bls:F134902	Pear in juice, canned, drained	груша в собственном соку консервированная слитая
+bls:F140100	Quince raw	айва свежая
+bls:F140132	Quince boiled	айва варёная
+bls:F140152	Quince stewed	айва тушёная
+bls:F140600	Quince juice	сок айвы
+bls:F150100	Medlar raw	мушмула сырая
+bls:F201100	Apricot raw	абрикос свежий
+bls:F201152	Apricot stewed	абрикос тушёный
+bls:F201400	Apricot dried	абрикос сушёный
+bls:F201600	Apricot juice	абрикосовый сок
+bls:F201902	Apricot sugared, canned, drained	абрикос с сахаром консервированный слитый
+bls:F202100	Nectarine raw	нектарин свежий
+bls:F202152	Nectarine stewed	нектарин тушёный
+bls:F203100	Peach raw	персик свежий
+bls:F203152	Peach stewed	персик тушёный
+bls:F203400	Peach dried	сушёный персик
+bls:F203700	Peach nectar	персиковый нектар
+bls:F203902	Peach sugared, canned, drained	персик с сахаром консервированный слитый
+bls:F206902	Peach in juice, canned, drained	персик в собственном соку консервированный слитый
+bls:F207902	Peach with artificial sweeteners, canned, drained	персик с подсластителем консервированный слитый
+bls:F208902	Peach unsweetened, canned, drained	персик без сахара консервированный слитый
+bls:F210902	Sweet cherry unsweetened, canned, drained	черешня без сахара консервированная слитая
+bls:F211100	Sweet cherry raw	свежая черешня
+bls:F211152	Sweet cherry stewed	черешня тушёная
+bls:F211400	Sweet cherry dried	черешня сушёная
+bls:F211600	Sweet cherry juice	черешнёвый сок
+bls:F211902	Sweet cherry sugared, canned, drained	черешня с сахаром консервированная слитая
+bls:F212100	Sour cherry raw	вишня свежая
+bls:F212152	Sour cherry stewed	вишня тушёная
+bls:F212600	Sour cherry juice	вишнёвый сок
+bls:F212700	Sour cherry nectar	вишнёвый нектар
+bls:F212902	Sour cherry sugared, canned, drained	вишня с сахаром консервированная слитая
+bls:F213902	Sour cherry unsweetened, canned, drained	вишня без сахара консервированная слитая
+bls:F217902	Sour cherry with artificial sweeteners, canned, drained	вишня с подсластителем консервированная слитая
 bls:F220100	Plum raw	слива свежая
+bls:F220152	Plum stewed	слива тушёная
+bls:F220400	Plum dried (prunes)	слива сушёная
+bls:F220600	Plum juice	сливовый сок
+bls:F220902	Plum sugared, canned, drained	слива с сахаром консервированная слитая
+bls:F223100	Blue plum raw	слива венгерка свежая
+bls:F223152	Blue plum stewed	слива венгерка тушёная
+bls:F224100	Mirabelle plum raw	слива мирабель сырая
+bls:F224152	Mirabelle plum stewed	слива мирабель тушёная
+bls:F224902	Mirabelle plum sugared, canned, drained	слива мирабель с сахаром консервированная слитая
+bls:F225100	Greengage raw	слива ренклод сырая
+bls:F225152	Greengage stewed	слива ренклод тушёная
+bls:F227902	Plum with artificial sweeteners, canned, drained	слива с подсластителем консервированная слитая
+bls:F22A902	Plum unsweetened, canned, drained	слива без сахара консервированная слитая
+bls:F22B902	Mirabelle plum with artificial sweeteners, canned, drained	слива мирабель с подсластителем консервированная слитая
+bls:F22C902	Mirabelle plum unsweetened, canned, drained	слива мирабель без сахара консервированная слитая
+bls:F240902	Sweet cherry with artificial sweeteners, canned, drained	черешня с подсластителем консервированная слитая
+bls:F2A1902	Apricot in juice, canned, drained	абрикос в собственном соку консервированный слитый
+bls:F2A2700	Sour cherry nectar with artificial sweeteners	вишнёвый нектар с подсластителем
+bls:F2B1902	Apricot with artificial sweeteners, canned, drained	абрикос с подсластителем консервированный слитый
+bls:F2C1902	Apricot unsweetened, canned, drained	абрикос без сахара консервированный слитый
+bls:F301100	Strawberry raw	свежая клубника
+bls:F301152	Strawberry stewed	клубника тушёная
+bls:F301400	Strawberry dried	клубника сушёная
+bls:F301600	Strawberry juice	клубничный сок
+bls:F301902	Strawberry sugared, canned, drained	клубника с сахаром консервированная слитая
+bls:F302100	Raspberry raw	малина сырая
+bls:F302152	Raspberry stewed	малина тушёная
+bls:F302400	Raspberry dried	малина сушёная
+bls:F302600	Raspberry juice	малиновый сок
+bls:F302902	Raspberry sugared, canned, drained	малина с сахаром консервированная слитая
+bls:F303100	Blackberry raw	свежая ежевика
+bls:F303152	Blackberry stewed	ежевика тушёная
+bls:F303400	Blackberry dried	ежевика сушёная
+bls:F303600	Blackberry juice	ежевичный сок
+bls:F303902	Blackberry sugared, canned, drained	ежевика с сахаром консервированная слитая
+bls:F304100	Blueberry raw	черника свежая
+bls:F304152	Blueberry stewed	черника тушёная
+bls:F304600	Blueberry juice	черничный сок
+bls:F304902	Blueberry sugared, canned, drained	черника с сахаром консервированная слитая
+bls:F305100	Gooseberry raw	крыжовник сырой
+bls:F305152	Gooseberry stewed	крыжовник тушёный
+bls:F305902	Gooseberry sugared, canned, drained	крыжовник с сахаром консервированный слитый
+bls:F306100	Loganberry raw	логанова ягода свежая
+bls:F307100	Boysenberry raw	бойзенова ягода свежая
+bls:F310100	Grape raw	виноград свежий
+bls:F310600	Grape juice	виноградный сок
+bls:F311100	Grape red, raw	виноград красный свежий
+bls:F311600	Grape red juice	сок красного винограда
+bls:F312100	Grape white, raw	виноград белый свежий
+bls:F312600	Grape white juice	сок белого винограда
+bls:F313902	Grape white, unsweetened, canned, drained	виноград белый без сахара консервированный слитый
+bls:F317600	Grape juice fortified with iron	виноградный сок обогащённый железом
+bls:F321100	Red currant raw	красная смородина свежая
+bls:F321152	Red currant stewed	красная смородина тушёная
+bls:F321600	Red currant juice	сок красной смородины
+bls:F321902	Red currant sugared, canned, drained	красная смородина с сахаром консервированная слитая
+bls:F322100	White currant raw	белая смородина свежая
+bls:F323100	Black currant raw	чёрная смородина свежая
+bls:F323152	Black currant stewed	чёрная смородина тушёная
+bls:F323600	Black currant juice	сок чёрной смородины
+bls:F323700	Black currant nectar	нектар чёрной смородины
+bls:F323902	Black currant sugared, canned, drained	чёрная смородина с сахаром консервированная слитая
+bls:F324902	Red currant unsweetened, canned, drained	красная смородина без сахара консервированная слитая
+bls:F331100	Mulberry raw	шелковица сырая
+bls:F331600	Mulberry juice	сок шелковицы
+bls:F340902	Strawberry unsweetened, canned, drained	клубника без сахара консервированная слитая
+bls:F341902	Strawberry with artificial sweeteners, canned, drained	клубника с подсластителем консервированная слитая
+bls:F3A2902	Raspberry with artificial sweeteners, canned, drained	малина с подсластителем консервированная слитая
+bls:F3A3700	Black currant nectar with artificial sweeteners	нектар чёрной смородины с подсластителем
+bls:F3A3902	Blackberry unsweetened, canned, drained	ежевика без сахара консервированная слитая
+bls:F3A4902	Blueberry with artificial sweeteners, canned, drained	черника с подсластителем консервированная слитая
+bls:F3A5902	Gooseberry with artificial sweeteners, canned, drained	крыжовник с подсластителем консервированный слитый
+bls:F3B2902	Raspberry unsweetened, canned, drained	малина без сахара консервированная слитая
+bls:F3B4902	Blueberry unsweetened, canned, drained	черника без сахара консервированная слитая
+bls:F3B5902	Gooseberry unsweetened, canned, drained	крыжовник без сахара консервированный слитый
+bls:F401100	Lingonberry raw	брусника свежая
+bls:F401600	Lingonberry juice	брусничный сок
+bls:F401902	Lingonberry sugared, canned, drained	брусника с сахаром консервированная слитая
+bls:F402100	Rose hip raw	шиповник свежий
+bls:F403100	Sloe raw	терн свежий
+bls:F403600	Sloe fruit juice	сок терна
+bls:F404100	Sweet rowanberry raw	рябина сладкоплодная свежая
+bls:F405100	Sea buckthorn berry raw	облепиха свежая
+bls:F405600	Sea buckthorn berry juice	облепиховый сок
+bls:F406100	Elderberry raw	бузина свежая
+bls:F406600	Elderberry juice	сок бузины
+bls:F407100	Small cranberry raw	клюква мелкая свежая
+bls:F408000	Cloudberry raw	морошка свежая
+bls:F409100	Wild strawberry raw	земляника свежая
+bls:F411100	Wild raspberry raw	малина дикая свежая
+bls:F413100	Wild blackberry raw	ежевика дикая свежая
+bls:F414400	Cranberries dried, sugared	клюква сушёная с сахаром
+bls:F4A1900	Lingonberry sugared (with pectine) canned	брусника с пектином с сахаром консервированная
+bls:F4B1900	Lingonberry with sugar and artificial sweeteners (with pectine) canned	брусника с пектином с сахаром и подсластителем консервированная
+bls:F501100	Pineapple raw	свежий ананас
+bls:F501152	Pineapple stewed	ананас тушёный
+bls:F501400	Pineapple dried	ананас сушёный
+bls:F501600	Pineapple juice	ананасовый сок
+bls:F501902	Pineapple sugared, canned, drained	ананас с сахаром консервированный слитый
+bls:F502100	Avocado raw	свежее авокадо
+bls:F503100	Banana raw	банан свежий
+bls:F503400	Banana dried	банан сушёный
+bls:F503700	Banana nectar	банановый нектар
+bls:F504100	Date raw	финик свежий
 bls:F504400	Date dried	финики сушёные
+bls:F505100	Fig raw	свежий инжир
+bls:F505400	Fig dried	сушёный инжир
+bls:F505902	Fig sugared, canned, drained	инжир с сахаром консервированный слитый
+bls:F506100	Pomegranate raw	гранат свежий
+bls:F507100	Persimmon raw	хурма свежая
+bls:F507600	Persimmon juice	сок хурмы
 bls:F508100	Passion fruit raw	маракуйя свежая
+bls:F508600	Passion fruit juice	сок маракуйи
+bls:F508700	Passion fruit nectar	нектар из маракуйи
+bls:F511100	Acerola raw	свежая ацерола
+bls:F511600	Acerola juice	сок ацеролы
+bls:F513100	Guava raw	свежая гуава
+bls:F514100	Kiwi fruit raw	киви свежее
+bls:F514152	Kiwi stewed	киви тушёное
+bls:F514600	Kiwi fruit juice	сок киви
+bls:F515100	Lychee raw	личи свежая
+bls:F515600	Lychee juice	сок личи
+bls:F515902	Lychee sugared, canned, drained	личи с сахаром консервированная слитая
+bls:F516100	Mango raw	манго свежее
+bls:F516400	Mango dried	манго сушёное
+bls:F516600	Mango juice	сок манго
+bls:F516700	Mango nectar	нектар манго
+bls:F516902	Mango sugared, canned, drained	манго с сахаром консервированное слитое
+bls:F517100	Papaya raw	папайя свежая
+bls:F517400	Papaya dried	папайя сушёная
+bls:F517902	Papaya sugared, canned, drained	папайя с сахаром консервированная слитая
+bls:F522100	Naranjilla raw	наранхилья свежая
+bls:F523100	Breadfruit raw	хлебное дерево свежее
+bls:F524100	Cherimoya raw	черимойя свежая
+bls:F529100	Japanese medlar/loquat, raw	локва свежая
+bls:F532100	Musk melon/cantaloup, raw	канталупа свежая
+bls:F533100	Honeydew melon raw	медовая дыня свежая
+bls:F533600	Honeydew melon juice	сок дыни
+bls:F535100	Watermelon raw	свежий арбуз
+bls:F545100	Plantain raw	банан плантан сырой
+bls:F545132	Plantain boiled	банан плантан варёный
+bls:F545142	Plantain braised without fat	банан плантан припущенный
+bls:F545152	Plantain stewed	банан плантан тушёный
+bls:F545162	Plantain baked	банан плантан запечённый
+bls:F545182	Plantain fried without fat (pan)	банан плантан жареный без масла
+bls:F545400	Plantain dried	банан плантан сушёный
+bls:F549100	Jackfruit raw	свежий джекфрут
+bls:F552100	Cape gooseberry raw	физалис свежий
+bls:F552600	Cape gooseberry juice	сок физалиса
+bls:F553100	Carambola/star fruit, raw	свежая карамбола
+bls:F556100	Prickly pear raw	опунция свежая
+bls:F559100	Rambutan raw	рамбутан свежий
+bls:F563100	Feijoa/pineapple guava, raw	фейхоа свежая
+bls:F564100	Mangosteen raw	мангустин свежий
+bls:F564600	Mangosteen juice	сок мангустина
+bls:F572100	Tamarillo/tree tomato, raw	тамарилло свежее
+bls:F591902	Pineapple unsweetened, canned, drained	ананас без сахара консервированный слитый
+bls:F597902	Pineapple with artificial sweeteners, canned, drained	ананас с подсластителем консервированный слитый
+bls:F5A1902	Pineapple in juice, canned, drained	ананас в собственном соку консервированный слитый
+bls:F601100	Lemon raw	лимон свежий
+bls:F601300	Lemon concentrate	лимонный концентрат
+bls:F601600	Lemon juice	лимонный сок
+bls:F602100	Lime raw	лайм свежий
+bls:F602300	Lime concentrate	лаймовый концентрат
+bls:F602600	Lime juice	лаймовый сок
+bls:F603100	Orange raw	апельсин свежий
+bls:F603600	Orange juice	апельсиновый сок
+bls:F603700	Orange nectar	апельсиновый нектар
+bls:F604100	Grapefruit raw	грейпфрут свежий
+bls:F604600	Grapefruit juice	грейпфрутовый сок
+bls:F605100	Pomelo raw	помело сырое
+bls:F605600	Pomelo juice	сок помело
+bls:F606100	Mandarin raw	мандарин свежий
+bls:F606600	Mandarin juice	мандариновый сок
+bls:F606902	Mandarin sugared, canned, drained	мандарин с сахаром консервированный слитый
+bls:F607100	Clementine raw	клементин свежий
+bls:F607600	Clementine juice	сок клементина
+bls:F608100	Satsuma mandarin raw	мандарин сацума свежий
+bls:F608600	Satsuma mandarin juice	сок мандарина сацума
+bls:F609100	Tangerine raw	танжерин свежий
+bls:F609600	Tangerine juice	сок танжерина
+bls:F613100	Kumquat raw	свежий кумкват
+bls:F614600	Orange nectar with artificial sweeteners	апельсиновый нектар с подсластителем
+bls:F640902	Mandarin unsweetened, canned, drained	мандарин без сахара консервированный слитый
+bls:F6A6902	Mandarin in juice, canned, drained	мандарин в собственном соку консервированный слитый
 bls:F6B6902	Mandarin with artificial sweeteners, canned, drained	мандарины консервированные с подсластителем
+bls:F820000	Fruit bar	фруктовый батончик
+bls:F840100	Raisin/sultana (grape dried)	изюм виноград сушёный
+bls:F840300	Currant (grape dried)	коринка виноград сушёный
+bls:F850100	Banana crips/banana chips, deep-fried, sweetened	банановые чипсы жареные во фритюре сладкие
+bls:F900900	Red fruit jelly sugared, canned	красное фруктовое желе с сахаром консервированное
+bls:F921900	Apple sauce/apple compote, sugared, canned	яблочное пюре с сахаром консервированное
+bls:F923900	Apple sauce/apple compote, unsweetened, canned	яблочное пюре без сахара консервированное
+bls:F928900	Apple sauce/apple compote, with artificial sweeteners, canned	яблочное пюре с подсластителем консервированное
+bls:F957900	Rhubarb compote with sugar and artificial sweeteners, canned	тушёный ревень с сахаром и подсластителем консервированное
+bls:F960800	Cashew butter (100 % pure)	кешью-паста
+bls:F971900	Fruit sauce sugared, canned	фруктовый соус с сахаром консервированный
+bls:G012902	Capers pickled, canned, drained	каперсы маринованные консервированные слитые
+bls:G061000	Basil raw	базилик сырой
+bls:G081100	Chives raw	лук-резанец сырой
+bls:G081400	Chives dried	лук-резанец сушёный
+bls:G090100	Mixed vegetables (carrots, cauliflower and broccoli florets) raw	овощная смесь морковь, цветная капуста и брокколи сырая
+bls:G090132	Mixed vegetables (carrots, cauliflower and broccoli florets) boiled	овощная смесь морковь, цветная капуста и брокколи варёная
+bls:G090142	Mixed vegetables (carrots, cauliflower and broccoli florets) braised without fat	овощная смесь морковь, цветная капуста и брокколи припущенная
+bls:G090152	Mixed vegetables (carrots, cauliflower and broccoli florets) stewed	овощная смесь морковь, цветная капуста и брокколи тушёная
+bls:G090162	Mixed vegetables (carrots, cauliflower and broccoli florets) baked	овощная смесь морковь, цветная капуста и брокколи запечённая
+bls:G090182	Mixed vegetables (carrots, cauliflower and broccoli florets) fried without fat (pan)	овощная смесь морковь, цветная капуста и брокколи жареная без масла
+bls:G090200	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen	овощная смесь морковь, цветная капуста и брокколи замороженная
+bls:G090232	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen, boiled	овощная смесь морковь, цветная капуста и брокколи замороженная варёная
+bls:G090242	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen, braised without fat	овощная смесь морковь, цветная капуста и брокколи замороженная припущенная
+bls:G090252	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen, stewed	овощная смесь морковь, цветная капуста и брокколи замороженная тушёная
+bls:G090262	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen, baked	овощная смесь морковь, цветная капуста и брокколи замороженная запечённая
+bls:G090282	Mixed vegetables (carrots, cauliflower and broccoli florets) deep-frozen, fried without fat (pan)	овощная смесь морковь, цветная капуста и брокколи замороженная жареная без масла
+bls:G090600	Mixed vegetables juice	овощной сок
+bls:G090802	Mixed vegetables pickled, drained	овощная смесь маринованная слитая
+bls:G093100	Mirepoix raw	суповые овощи сырые
+bls:G093132	Mirepoix boiled	суповые овощи варёные
+bls:G093200	Mirepoix deep-frozen	суповые овощи замороженные
+bls:G093232	Mirepoix deep-frozen, boiled	суповые овощи замороженные варёные
+bls:G093400	Mirepoix dried	суповые овощи сушёные
 bls:G093432	Mirepoix dried, boiled	суповые овощи сушёные варёные
+bls:G101100	Witloof chicory raw	цикорий витлуф сырой
+bls:G101152	Witloof chicory stewed	цикорий витлуф тушёный
+bls:G101162	Witloof chicory baked	цикорий витлуф запечённый
+bls:G101182	Witloof chicory fried without fat (pan)	цикорий витлуф жареный без масла
+bls:G102100	Endive/escarole, raw	эндивий-эскариол сырой
+bls:G103100	Iceberg lettuce raw	айсберг сырой
 bls:G104100	Lamb's lettuce raw	полевой салат сырой
+bls:G105100	Butterhead lettuce raw	маслянистый салат сырой
+bls:G106100	Radicchio/red Italian chicory, raw	радиккьо сырое
+bls:G107100	Cos lettuce/Romaine lettuce, raw	салат ромэн сырой
+bls:G108100	Looseleaf lettuce raw	листовой салат сырой
+bls:G109100	Sugar loaf chicory raw	сахарный цикорий сырой
+bls:G130100	Rocket raw	рукола сырая
+bls:G210132	Spinach boiled	шпинат варёный
+bls:G210232	Spinach deep-frozen, boiled	шпинат замороженный варёный
+bls:G210252	Spinach deep-frozen, stewed	шпинат замороженный тушёный
+bls:G210262	Spinach deep-frozen, baked	шпинат замороженный запечённый
+bls:G210282	Spinach deep-frozen, fried without fat (pan)	шпинат замороженный жареный без масла
+bls:G210600	Spinach juice	сок шпината
+bls:G210902	Spinach canned, drained	шпинат консервированный отжатый
+bls:G211100	Spinach raw	шпинат свежий
+bls:G211152	Spinach stewed	шпинат тушёный
+bls:G211162	Spinach baked	шпинат запечённый
+bls:G211182	Spinach fried without fat (pan)	шпинат жареный без масла
+bls:G211200	Spinach deep-frozen	шпинат замороженный
+bls:G212100	Chinese spinach raw	китайский шпинат сырой
+bls:G212152	Chinese spinach stewed	китайский шпинат тушёный
+bls:G212182	Chinese spinach fried without fat (pan)	китайский шпинат жареный без масла
+bls:G213100	New Zealand spinach raw	новозеландский шпинат сырой
+bls:G213132	New Zealand spinach boiled	новозеландский шпинат варёный
+bls:G213152	New Zealand spinach stewed	новозеландский шпинат тушёный
+bls:G213182	New Zealand spinach fried without fat (pan)	новозеландский шпинат жареный без масла
+bls:G220100	Stalk celery raw	сельдерей черешковый сырой
+bls:G220132	Stalk celery boiled	сельдерей черешковый варёный
+bls:G220142	Stalk celery braised without fat	сельдерей черешковый припущенный
+bls:G220152	Stalk celery stewed	сельдерей черешковый тушёный
+bls:G220162	Stalk celery baked	сельдерей черешковый запечённый
+bls:G221182	Stalk celery fried without fat (pan)	сельдерей черешковый жареный без масла
+bls:G230100	Chard/leaf beet, raw	мангольд сырой
+bls:G230132	Chard/leaf beet, boiled	мангольд варёный
+bls:G230142	Chard/leaf beet, braised without fat	мангольд припущенный
+bls:G230152	Chard/leaf beet, stewed	мангольд тушёный
+bls:G230162	Chard/leaf beet, baked	мангольд запечённый
 bls:G230182	Chard/leaf beet, fried without fat (pan)	мангольд жареный без масла
+bls:G250100	Parsley leaf raw	петрушка сырая
+bls:G250200	Parsley leaf deep-frozen	петрушка замороженная
+bls:G250400	Parsley leaf dried	зелень петрушки сушёная
+bls:G261100	Stinging nettle raw	крапива сырая
+bls:G261132	Stinging nettle boiled	крапива варёная
+bls:G261152	Stinging nettle stewed	крапива тушёная
+bls:G262100	Dandelion raw	одуванчик сырой
+bls:G263100	Sorrel raw	щавель свежий
+bls:G263132	Sorrel boiled	щавель варёный
+bls:G263152	Sorrel stewed	щавель тушёный
+bls:G280100	Garden cress raw	кресс-салат сырой
+bls:G311100	Cauliflower raw	капуста цветная сырая
+bls:G311132	Cauliflower boiled	цветная капуста отварная
+bls:G311142	Cauliflower steamed	цветная капуста на пару
+bls:G311152	Cauliflower stewed	цветная капуста тушёная
+bls:G311162	Cauliflower baked	цветная капуста запечённая
 bls:G311182	Cauliflower fried without fat (pan)	цветная капуста жареная без масла
+bls:G311200	Cauliflower deep-frozen	цветная капуста замороженная
+bls:G311232	Cauliflower deep-frozen, boiled	цветная капуста замороженная варёная
+bls:G311242	Cauliflower deep-frozen, steamed	цветная капуста замороженная на пару
+bls:G311252	Cauliflower deep-frozen, stewed	цветная капуста замороженная тушёная
+bls:G311262	Cauliflower deep-frozen, baked	цветная капуста замороженная запечённая
+bls:G311282	Cauliflower deep-frozen, fried without fat (pan)	цветная капуста замороженная жареная без масла
+bls:G311802	Cauliflower pickled, drained	цветная капуста маринованная слитая
+bls:G312100	Broccoli raw	брокколи сырые
+bls:G312132	Broccoli boiled	брокколи варёные
+bls:G312152	Broccoli stewed	брокколи тушёные
+bls:G312162	Broccoli baked	брокколи запечённые
+bls:G312182	Broccoli fried without fat (pan)	брокколи жареные без масла
+bls:G312200	Broccoli deep-frozen	брокколи замороженные
+bls:G312232	Broccoli deep-frozen, boiled	брокколи замороженные варёные
+bls:G312252	Broccoli deep-frozen, stewed	брокколи замороженные тушёные
+bls:G312262	Broccoli deep-frozen, baked	брокколи замороженные запечённые
+bls:G312282	Broccoli deep-frozen, fried without fat (pan)	брокколи замороженные жареные без масла
+bls:G321100	Chinese white cabbage raw	пекинская капуста сырая
+bls:G321132	Chinese white cabbage boiled	пекинская капуста варёная
+bls:G321152	Chinese white cabbage stewed	пекинская капуста тушёная
+bls:G321162	Chinese white cabbage baked	пекинская капуста запечённая
+bls:G321182	Chinese white cabbage fried without fat (pan)	пекинская капуста жареная без масла
+bls:G322100	Curly kale raw	кудрявая капуста сырая
+bls:G322132	Curly kale boiled	кудрявая капуста варёная
+bls:G322142	Curly kale steamed	кудрявая капуста на пару
+bls:G322152	Curly kale stewed	кудрявая капуста тушёная
+bls:G322182	Curly kale fried without fat (pan)	кудрявая капуста жареная без масла
+bls:G322200	Curly kale deep-frozen	кудрявая капуста замороженная
+bls:G322232	Curly kale deep-frozen, boiled	кудрявая капуста замороженная варёная
+bls:G322242	Curly kale deep-frozen, steamed	кудрявая капуста замороженная на пару
+bls:G322252	Curly kale deep-frozen, stewed	кудрявая капуста замороженная тушёная
+bls:G322282	Curly kale deep-frozen, fried without fat (pan)	кудрявая капуста замороженная жареная без масла
+bls:G322902	Curly kale canned, drained	кудрявая капуста консервированная слитая
+bls:G324100	Pak choi raw	пак-чой сырой
+bls:G324132	Pak choi boiled	пак-чой варёный
+bls:G324152	Pak choi stewed (prepard without fat)	пак-чой без жира тушёный
+bls:G324182	Pak choi fried without fat (pan)	пак-чой жареный без масла
+bls:G331100	Kohlrabi raw	кольраби сырая
+bls:G331132	Kohlrabi boiled	кольраби варёная
+bls:G331152	Kohlrabi stewed	кольраби тушёная
+bls:G331162	Kohlrabi baked	кольраби запечённая
+bls:G331182	Kohlrabi fried without fat (pan)	кольраби жареная без масла
+bls:G331902	Kohlrabi canned, drained	кольраби консервированная слитая
+bls:G332100	Brussels sprouts raw	брюссельская капуста сырая
+bls:G332132	Brussels sprouts boiled	брюссельская капуста варёная
+bls:G332152	Brussels sprouts stewed	брюссельская капуста тушёная
+bls:G332162	Brussels sprouts baked	брюссельская капуста запечённая
+bls:G332182	Brussels sprouts fried without fat (pan)	брюссельская капуста жареная без масла
+bls:G332200	Brussels sprouts deep-frozen	брюссельская капуста замороженная
+bls:G332232	Brussels sprouts deep-frozen, boiled	брюссельская капуста замороженная варёная
+bls:G332252	Brussels sprouts deep-frozen, stewed	брюссельская капуста замороженная тушёная
+bls:G332262	Brussels sprouts deep-frozen, baked	брюссельская капуста замороженная запечённая
+bls:G332902	Brussels sprouts canned, drained	брюссельская капуста консервированная слитая
+bls:G341100	Red cabbage raw	краснокочанная капуста сырая
+bls:G341132	Red cabbage boiled	краснокочанная капуста варёная
+bls:G341142	Red cabbage braised without fat	краснокочанная капуста припущенная
+bls:G341152	Red cabbage stewed	краснокочанная капуста тушёная
+bls:G341162	Red cabbage baked	краснокочанная капуста запечённая
+bls:G341182	Red cabbage fried without fat (pan)	краснокочанная капуста жареная без масла
+bls:G341900	Red cabbage canned undrained	краснокочанная капуста консервированная, не слитая
+bls:G342100	White cabbage raw	белокочанная капуста сырая
+bls:G342132	White cabbage boiled	белокочанная капуста варёная
+bls:G342142	White cabbage braised without fat	белокочанная капуста припущенная
+bls:G342152	White cabbage stewed	белокочанная капуста тушёная
+bls:G342162	White cabbage baked	белокочанная капуста запечённая
+bls:G342182	White cabbage fried without fat (pan)	белокочанная капуста жареная без масла
+bls:G343100	Savoy cabbage raw	савойская капуста сырая
+bls:G343132	Savoy cabbage boiled	савойская капуста варёная
+bls:G343142	Savoy cabbage braised without fat	савойская капуста припущенная
+bls:G343152	Savoy cabbage stewed	савойская капуста тушёная
+bls:G343162	Savoy cabbage baked	савойская капуста запечённая
+bls:G343182	Savoy cabbage fried without fat (pan)	савойская капуста жареная без масла
+bls:G343902	Savoy cabbage canned, drained	савойская капуста консервированная слитая
+bls:G344100	Pointed cabbage raw	конусная капуста сырая
+bls:G344132	Pointed cabbage boiled	конусная капуста варёная
+bls:G344152	Pointed cabbage stewed	конусная капуста тушёная
+bls:G344162	Pointed cabbage baked	конусная капуста запечённая
+bls:G344182	Pointed cabbage fried without fat (pan)	конусная капуста жареная без масла
+bls:G345032	Sauerkraut drained, boiled	квашеная капуста слитая варёная
+bls:G345042	Sauerkraut drained, braised without fat	квашеная капуста слитая припущенная
+bls:G345062	Sauerkraut drained, baked	квашеная капуста слитая запечённая
 bls:G410732	Artichokes in oil, canned, drained boiled	артишоки в масле консервированные
 bls:G430132	Fennel/Florence fennel, boiled	фенхель варёный
 bls:G992200	Mixed vegetables peas and carrots, deep-frozen	горошек с морковью замороженный
