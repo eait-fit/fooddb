@@ -1426,10 +1426,420 @@ bls:G344182	Pointed cabbage fried without fat (pan)	конусная капус�
 bls:G345032	Sauerkraut drained, boiled	квашеная капуста слитая варёная
 bls:G345042	Sauerkraut drained, braised without fat	квашеная капуста слитая припущенная
 bls:G345062	Sauerkraut drained, baked	квашеная капуста слитая запечённая
+bls:G345082	Sauerkraut drained, fried without fat (pan)	квашеная капуста слитая жареная без масла
+bls:G345100	Sauerkraut drained, raw	квашеная капуста слитая сырая
+bls:G345152	Sauerkraut drained, stewed	квашеная капуста слитая тушёная
+bls:G345600	Sauerkraut juice	сок квашеной капусты
+bls:G345902	Sauerkraut canned, drained	квашеная капуста консервированная слитая
+bls:G346100	Wine sauerkraut raw	квашеная капуста винная сырая
+bls:G346132	Wine sauerkraut boiled	квашеная капуста винная варёная
+bls:G346152	Wine sauerkraut stewed	квашеная капуста винная тушёная
+bls:G350100	Romanesco broccoli raw	романеско сырой
+bls:G350132	Romanesco broccoli boiled	романеско варёный
+bls:G350152	Romanesco broccoli stewed	романеско тушёный
+bls:G350162	Romanesco broccoli baked	романеско запечённый
+bls:G350182	Romanesco broccoli fried without fat (pan)	романеско жареный без масла
+bls:G410100	Artichokes raw	артишоки сырые
+bls:G410132	Artichokes boiled	артишоки варёные
+bls:G410702	Artichokes in oil, canned, drained	артишоки в масле консервированные слитые
 bls:G410732	Artichokes in oil, canned, drained boiled	артишоки в масле консервированные
+bls:G410902	Artichokes canned, drained	артишоки консервированные слитые
+bls:G414100	Cardoon raw	кардон сырой
+bls:G414132	Cardoon boiled	кардон варёный
+bls:G420100	Turnip tops/greens, raw	ботва репы сырая
+bls:G420132	Turnip tops/greens, boiled	ботва репы варёная
+bls:G420152	Turnip tops/greens, stewed	ботва репы тушёная
+bls:G420182	Turnip tops/greens, fried without fat (pan)	ботва репы жареная без масла
+bls:G430100	Fennel/Florence fennel, raw	фенхель овощной сырой
 bls:G430132	Fennel/Florence fennel, boiled	фенхель варёный
+bls:G430152	Fennel/Florence fennel, stewed	фенхель овощной тушёный
+bls:G430162	Fennel/Florence fennel, baked	фенхель овощной запечённый
+bls:G430182	Fennel/Florence fennel, fried without fat (pan)	фенхель овощной жареный без масла
+bls:G431100	Roman fennel/sweet fennel, raw	фенхель листовой сырой
+bls:G440100	Palm heart, raw	палмито сырой
+bls:G440132	Palm heart, boiled	палмито варёный
+bls:G440902	Palm heart, canned, drained	палмито консервированный слитый
+bls:G450100	Asparagus raw	спаржа сырая
+bls:G450132	Asparagus boiled	спаржа варёная
+bls:G450142	Asparagus steamed	спаржа на пару
+bls:G450152	Asparagus stewed	спаржа тушёная
+bls:G450162	Asparagus baked	спаржа запечённая
+bls:G450200	Asparagus deep-frozen	спаржа замороженная
+bls:G450232	Asparagus deep-frozen, boiled	спаржа замороженная варёная
+bls:G450242	Asparagus deep-frozen, steamed	спаржа замороженная на пару
+bls:G450252	Asparagus deep-frozen, stewed	спаржа замороженная тушёная
+bls:G450262	Asparagus deep-frozen, baked	спаржа замороженная запечённая
+bls:G450282	Asparagus deep-frozen, fried without fat (pan)	спаржа замороженная жареная без масла
+bls:G450902	Asparagus canned, drained	спаржа консервированная слитая
+bls:G451082	Asparagus fried without fat (pan)	спаржа жареная без масла
+bls:G460100	Purslane raw	портулак сырой
+bls:G460152	Purslane stewed	портулак тушёный
+bls:G470042	Leek braised without fat	лук-порей припущенный
+bls:G470100	Leek raw	лук-порей сырой
+bls:G470132	Leek boiled	лук-порей варёный
+bls:G470152	Leek stewed	лук-порей тушёный
+bls:G470162	Leek baked	лук-порей запечённый
+bls:G470182	Leek fried without fat (pan)	лук-порей жареный без масла
+bls:G470200	Leek deep-frozen	лук-порей замороженный
+bls:G470232	Leek deep-frozen, boiled	лук-порей замороженный варёный
+bls:G470242	Leek deep-frozen, braised without fat	лук-порей замороженный припущенный
+bls:G470252	Leek deep-frozen, stewed	лук-порей замороженный тушёный
+bls:G470262	Leek deep-frozen, baked	лук-порей замороженный запечённый
+bls:G470282	Leek deep-frozen, fried without fat (pan)	лук-порей замороженный жареный без масла
+bls:G480072	Onion grilled	лук репчатый на гриле
+bls:G480100	Onion raw	лук репчатый сырой
+bls:G480132	Onion boiled	лук репчатый варёный
+bls:G480142	Onion braised without fat	лук репчатый припущенный
+bls:G480152	Onion stewed	лук репчатый тушёный
+bls:G480162	Onion baked	лук репчатый запечённый
+bls:G480182	Onion fried without fat (pan)	лук репчатый жареный без масла
+bls:G480200	Onion deep-frozen	лук репчатый замороженный
+bls:G480232	Onion deep-frozen, boiled	лук репчатый замороженный варёный
+bls:G480242	Onion deep-frozen, braised without fat	лук репчатый замороженный припущенный
+bls:G480252	Onion deep-frozen, stewed	лук репчатый замороженный тушёный
+bls:G480262	Onion deep-frozen, baked	лук репчатый замороженный запечённый
+bls:G480282	Onion deep-frozen, fried without fat (pan)	лук репчатый замороженный жареный без масла
+bls:G480400	Onion dried	лук сушёный
+bls:G480500	Onion powder	луковый порошок
+bls:G480600	Onion juice	сок лука
+bls:G482100	Spring onion raw	лук зелёный сырой
+bls:G482132	Spring onion boiled	лук зелёный варёный
+bls:G482142	Spring onion braised without fat	лук зелёный припущенный
+bls:G482152	Spring onion stewed	лук зелёный тушёный
+bls:G482162	Spring onion baked	лук зелёный запечённый
+bls:G482182	Spring onion fried without fat (pan)	лук зелёный жареный без масла
+bls:G484100	Pearl onion raw	луковки сырые
+bls:G484132	Pearl onion boiled	луковки варёные
+bls:G484152	Pearl onion stewed	луковки тушёные
+bls:G484162	Pearl onion baked	луковки запечённые
+bls:G484182	Pearl onion fried without fat (pan)	луковки жареные без масла
+bls:G485082	Shallot fried without fat (pan)	шалот жареный без масла
+bls:G485100	Shallot raw	шалот сырой
+bls:G485132	Shalot boiled	шалот варёный
+bls:G485142	Shallot braised without fat	шалот припущенный
+bls:G485152	Shalot stewed	шалот тушёный
+bls:G486100	Spring onion, bulb only, raw	лук зелёный без зелени сырой
+bls:G486132	Spring onion, bulb only, boiled	лук зелёный без зелени варёный
+bls:G486142	Spring onion, bulb only, braised without fat	лук зелёный без зелени припущенный
+bls:G486152	Spring onion, bulb only, stewed	лук зелёный без зелени тушёный
+bls:G486162	Spring onion, bulb only, baked	лук зелёный без зелени запечённый
+bls:G486182	Spring onion, bulb only, fried without fat (pan)	лук зелёный без зелени жареный без масла
+bls:G488100	Silverskin onion raw	луковки белые сырые
+bls:G488802	Silverskin onion pickled, drained	луковки маринованные слитые
+bls:G490042	Garlic braised without fat	чеснок припущенный
+bls:G490100	Garlic raw	чеснок сырой
+bls:G490132	Garlic boiled	чеснок варёный
+bls:G490152	Garlic stewed	чеснок тушёный
+bls:G490162	Garlic baked	чеснок запечённый
+bls:G490182	Garlic fried without fat (pan)	чеснок жареный без масла
+bls:G490200	Garlic deep-frozen	чеснок замороженный
+bls:G490232	Garlic deep-frozen, boiled	чеснок замороженный варёный
+bls:G490242	Garlic deep-frozen, braised without fat	чеснок замороженный припущенный
+bls:G490252	Garlic deep-frozen, stewed	чеснок замороженный тушёный
+bls:G490262	Garlic deep-frozen, baked	чеснок замороженный запечённый
+bls:G490282	Garlic deep-frozen, fried without fat (pan)	чеснок замороженный жареный без масла
+bls:G490400	Garlic dried	чеснок сушёный
+bls:G490500	Garlic powder	чесночный порошок
+bls:G491702	Garlic in oil, canned, drained	чеснок в масле консервированный слитый
+bls:G491802	Garlic pickled, drained	чеснок маринованный слитый
+bls:G492100	Wild garlic raw	черемша сырая
+bls:G510100	Aubergine raw	баклажан сырой
+bls:G510132	Aubergine boiled	баклажан варёный
+bls:G510142	Aubergine braised without fat	баклажан припущенный
+bls:G510152	Aubergine stewed	баклажан тушёный
+bls:G510162	Aubergine baked	баклажан запечённый
+bls:G510172	Aubergine grilled	баклажан на гриле
+bls:G510182	Aubergine fried without fat (pan)	баклажан жареный без масла
+bls:G510702	Aubergine grilled, in oil, canned, drained	баклажан жареный на гриле в масле консервированный слитый
+bls:G520042	Cucumber braised without fat	огурец припущенный
+bls:G520062	Cucumber baked	огурец запечённый
+bls:G520100	Cucumber raw	огурец сырой
+bls:G520132	Cucumber boiled	огурец варёный
+bls:G520152	Cucumber stewed	огурец тушёный
+bls:G520182	Cucumber fried without fat (pan)	огурец жареный без масла
+bls:G520600	Cucumber juice	сок огурца
+bls:G520802	Cucumber/gherkin pickled, drained	огурец маринованный слитый
+bls:G530100	Okra raw	окра сырая
+bls:G530132	Okra boiled	окра варёная
+bls:G530142	Okra braised without fat	окра припущенная
+bls:G530152	Okra stewed	окра тушёная
+bls:G530902	Okra canned, drained	окра консервированная слитая
+bls:G541032	Sweet pepper green, boiled	перец сладкий зелёный варёный
+bls:G541042	Sweet pepper green, braised without fat	перец сладкий зелёный припущенный
+bls:G541072	Sweet pepper green, grilled	перец сладкий зелёный на гриле
+bls:G541082	Sweet pepper green, fried without fat (pan)	перец сладкий зелёный жареный без масла
+bls:G541100	Sweet pepper green, raw	перец сладкий зелёный сырой
+bls:G541152	Sweet pepper green, stewed	перец сладкий зелёный тушёный
+bls:G541162	Sweet pepper green, baked	перец сладкий зелёный запечённый
+bls:G542042	Sweet pepper yellow, braised without fat	перец сладкий жёлтый припущенный
+bls:G542100	Sweet pepper yellow, raw	перец сладкий жёлтый сырой
+bls:G542132	Sweet pepper yellow, boiled	перец сладкий жёлтый варёный
+bls:G542152	Sweet pepper yellow, stewed	перец сладкий жёлтый тушёный
+bls:G542162	Sweet pepper yellow, baked	перец сладкий жёлтый запечённый
+bls:G542172	Sweet pepper yellow, grilled	перец сладкий жёлтый на гриле
+bls:G542182	Sweet pepper yellow, fried without fat (pan)	перец сладкий жёлтый жареный без масла
+bls:G543032	Sweet pepper red, boiled	перец сладкий красный варёный
+bls:G543042	Sweet pepper red, braised without fat	перец сладкий красный припущенный
+bls:G543072	Sweet pepper red, grilled	перец сладкий красный на гриле
+bls:G543082	Sweet pepper red, fried without fat (pan)	перец сладкий красный жареный без масла
+bls:G543100	Sweet pepper red, raw	перец сладкий красный сырой
+bls:G543152	Sweet pepper red, stewed	перец сладкий красный тушёный
+bls:G543162	Sweet pepper red, baked	перец сладкий красный запечённый
+bls:G543702	Sweet pepper red, grilled, in oil, canned, drained	перец сладкий красный на гриле в масле консервированный слитый
+bls:G543802	Sweet pepper red, pickled, drained	перец сладкий красный маринованный слитый
+bls:G550702	Chilli pepper in oil, canned, drained	перец чили в масле консервированный слитый
+bls:G550802	Chilli pepper pickled, drained	перец чили маринованный слитый
+bls:G553100	Chilli pepper green, raw	перец чили зелёный сырой
+bls:G553132	Chilli pepper green, boiled	перец чили зелёный варёный
+bls:G553152	Chilli pepper green, stewed	перец чили зелёный тушёный
+bls:G553182	Chilli pepper green, fried without fat (pan)	перец чили зелёный жареный без масла
+bls:G554100	Chilli pepper red, raw	перец чили красный сырой
+bls:G554132	Chilli pepper red, boiled	перец чили красный варёный
+bls:G554152	Chilli pepper red, stewed	перец чили красный тушёный
+bls:G554182	Chilli pepper red, fried without fat (pan)	перец чили красный жареный без масла
+bls:G560142	Tomato braised without fat	помидор припущенный
+bls:G560400	Tomato dried	помидор сушёный
+bls:G560600	Tomato juice with salt	томатный сок с солью
+bls:G560900	Tomato canned	помидор консервированный
+bls:G561072	Tomato grilled	помидор на гриле
+bls:G561082	Tomato fried without fat (pan)	помидор жареный без масла
+bls:G561100	Tomato raw	помидор сырой
+bls:G561132	Tomato boiled	помидор варёный
+bls:G561152	Tomato stewed	помидор тушёный
+bls:G561162	Tomato baked	помидор запечённый
+bls:G561500	Tomato powder	томатный порошок
+bls:G561802	Tomato pickled, drained	помидор маринованный слитый
+bls:G567702	Tomato dried, in oil, canned, drained	помидор вяленый в масле консервированный слитый
+bls:G568900	Tomato peeled, canned	помидор очищенный консервированный
+bls:G569902	Tomate dried, marinated, drained	помидор сушёный маринованный слитый
+bls:G570100	Sweetcorn raw	кукуруза сахарная сырая
+bls:G570132	Sweetcorn boiled	кукуруза сахарная варёная
+bls:G570162	Sweetcorn baked	кукуруза сахарная запечённая
+bls:G570172	Sweetcorn grilled	кукуруза сахарная на гриле
+bls:G570182	Sweetcorn fried without fat (pan)	кукуруза сахарная жареная без масла
+bls:G570200	Sweetcorn deep-frozen	кукуруза сахарная замороженная
+bls:G570232	Sweetcorn deep-frozen, boiled	кукуруза сахарная замороженная варёная
+bls:G570262	Sweetcorn deep-frozen, baked	кукуруза сахарная замороженная запечённая
+bls:G570272	Sweetcorn deep-frozen, grilled	кукуруза сахарная замороженная на гриле
+bls:G570282	Sweetcorn deep-frozen, fried without fat (pan)	кукуруза сахарная замороженная жареная без масла
+bls:G570802	Sweetcorn pickled, drained	кукуруза сахарная маринованная слитая
+bls:G570902	Sweetcorn canned, drained	кукуруза сахарная консервированная слитая
+bls:G581000	Hokkaido pumpkin raw	тыква хоккайдо сырая
+bls:G581032	Hokkaido pumpkin boiled	тыква хоккайдо варёная
+bls:G581042	Hokkaido pumpkin braised without fat	тыква хоккайдо припущенная
+bls:G581052	Hokkaido pumpkin stewed	тыква хоккайдо тушёная
+bls:G581062	Hokkaido pumpkin baked	тыква хоккайдо запечённая
+bls:G581082	Hokkaido pumpkin fried without fat (pan)	тыква хоккайдо жареная без масла
+bls:G581100	Pumpkin (C. pepo) raw	тыква сырая
+bls:G581132	Pumpkin (C. pepo) boiled	тыква варёная
+bls:G581142	Pumpkin (C. pepo) braised without fat	тыква припущенная
+bls:G581152	Pumpkin (C. pepo) stewed	тыква тушёная
+bls:G581162	Pumpkin (C. pepo) baked	тыква запечённая
+bls:G581182	Pumpkin (C. pepo) fried without fat (pan)	тыква жареная без масла
+bls:G581802	Pumpkin pickled, drained	тыква маринованная слитая
+bls:G582100	Courgette raw	цуккини сырой
+bls:G582132	Courgette boiled	цуккини варёный
+bls:G582142	Courgette braised without fat	цуккини припущенный
+bls:G582152	Courgette stewed	цуккини тушёный
+bls:G582162	Courgette baked	цуккини запечённый
+bls:G582172	Courgette grilled	цуккини на гриле
+bls:G582182	Courgette fried without fat (pan)	цуккини жареный без масла
+bls:G582802	Courgette pickled, drained	цуккини маринованный слитый
+bls:G583100	Chayote raw	чайот сырой
+bls:G583132	Chayote boiled	чайот варёный
+bls:G583182	Chayote fried without fat (pan)	чайот жареный без масла
+bls:G611100	Swede raw	брюква сырая
+bls:G611132	Swede boiled	брюква варёная
+bls:G611152	Swede stewed	брюква тушёная
+bls:G613100	Beetroot raw	свёкла сырая
+bls:G613132	Beetroot boiled	свёкла варёная
+bls:G613152	Beetroot stewed	свёкла тушёная
+bls:G613600	Beetroot juice	свекольный сок
+bls:G613802	Beetroot pickled, drained	свёкла маринованная слитая
+bls:G614100	Turnip raw	репа сырая
+bls:G614132	Turnip boiled	репа варёная
+bls:G614152	Turnip stewed	репа тушёная
+bls:G620100	Carrot raw	морковь сырая
+bls:G620132	Carrot boiled	морковь варёная
+bls:G620142	Carrot braised without fat	морковь припущенная
+bls:G620152	Carrot stewed	морковь тушёная
+bls:G620162	Carrot baked	морковь запечённая
+bls:G620182	Carrot fried without fat (pan)	морковь жареная без масла
+bls:G620200	Carrot deep-frozen	морковь замороженная
+bls:G620232	Carrot deep-frozen, boiled	морковь замороженная варёная
+bls:G620242	Carrot deep-frozen, braised without fat	морковь замороженная припущенная
+bls:G620252	Carrot deep-frozen, stewed	морковь замороженная тушёная
+bls:G620262	Carrot deep-frozen, baked	морковь замороженная запечённая
+bls:G620282	Carrot deep-frozen, fried without fat (pan)	морковь замороженная жареная без масла
+bls:G620600	Carrot juice	морковный сок
+bls:G620802	Carrot pickled, drained	морковь маринованная слитая
+bls:G620902	Carrot canned, drained	морковь консервированная слитая
+bls:G622600	Carrot juice, sweetened with honey	морковный сок с мёдом
+bls:G630100	Horseradish raw	хрен сырой
+bls:G630132	Horseradish boiled	хрен варёный
+bls:G640100	Parsnip raw	пастернак сырой
+bls:G640132	Parsnip boiled	пастернак варёный
+bls:G640142	Parsnip braised without fat	пастернак припущенный
+bls:G640152	Parsnip stewed	пастернак тушёный
+bls:G640162	Parsnip baked	пастернак запечённый
+bls:G640182	Parsnip fried without fat (pan)	пастернак жареный без масла
+bls:G650100	Black salsify raw	скорцонера сырая
+bls:G650132	Black salsify boiled	скорцонера варёная
+bls:G650142	Black salsify braised without fat	скорцонера припущенная
+bls:G650152	Black salsify stewed	скорцонера тушёная
+bls:G650200	Black salsify deep-frozen	скорцонера замороженная
+bls:G650232	Black salsify deep-frozen, boiled	скорцонера замороженная варёная
+bls:G650242	Black salsify deep-frozen, braised without fat	скорцонера замороженная припущенная
+bls:G650252	Black salsify deep-frozen, stewed	скорцонера замороженная тушёная
+bls:G650902	Black salsify canned, drained	скорцонера консервированная слитая
+bls:G660100	Celeriac raw	сельдерей корневой сырой
+bls:G660132	Celeriac boiled	сельдерей корневой варёный
+bls:G660152	Celeriac stewed	сельдерей корневой тушёный
+bls:G660162	Celeriac baked	сельдерей корневой запечённый
+bls:G660182	Celeriac fried without fat (pan)	сельдерей корневой жареный без масла
+bls:G660600	Celeriac juice	сок корневого сельдерея
+bls:G660802	Celeriac pickled, drained	сельдерей корневой маринованный слитый
+bls:G670100	Parsley root raw	корень петрушки сырой
+bls:G670132	Parsley root boiled	корень петрушки варёный
+bls:G670142	Parsley root braised without fat	корень петрушки припущенный
+bls:G670152	Parsley root stewed	корень петрушки тушёный
+bls:G670162	Parsley root baked	корень петрушки запечённый
+bls:G670182	Parsley root fried without fat (pan)	корень петрушки жареный без масла
+bls:G670400	Parsley root dried	корень петрушки сушёный
+bls:G680100	Radish raw	редька сырая
+bls:G680152	Radish stewed	редька тушёная
+bls:G691100	Small red radish raw	редис сырой
+bls:G691152	Small red radish stewed	редис тушёный
+bls:G693100	Japanese horseradish/wasabi root, raw	васаби сырой
+bls:G710042	Bean green, deep-frozen, braised without fat	фасоль стручковая замороженная припущенная
+bls:G710100	Bean green, raw	фасоль стручковая сырая
+bls:G710132	Bean green, boiled	фасоль стручковая варёная
+bls:G710142	Bean green, braised without fat	фасоль стручковая припущенная
+bls:G710152	Bean green, stewed	фасоль стручковая тушёная
+bls:G710162	Bean green, baked	фасоль стручковая запечённая
+bls:G710182	Bean green, fried without fat (pan)	фасоль стручковая жареная без масла
+bls:G710200	Bean green, deep-frozen	фасоль стручковая замороженная
+bls:G710232	Bean green, deep-frozen, boiled	фасоль стручковая замороженная варёная
+bls:G710252	Bean green, deep-frozen, stewed	фасоль стручковая замороженная тушёная
+bls:G710262	Bean green, deep-frozen, baked	фасоль стручковая замороженная запечённая
+bls:G710282	Bean green, deep-frozen, fried without fat (pan)	фасоль стручковая замороженная жареная без масла
+bls:G710802	Bean green, pickled, drained	фасоль стручковая маринованная слитая
+bls:G710902	Bean green, canned, drained	фасоль стручковая консервированная слитая
+bls:G720100	Wax bean raw	фасоль стручковая жёлтая сырая
+bls:G720132	Wax bean boiled	фасоль стручковая жёлтая варёная
+bls:G720152	Wax bean stewed	фасоль стручковая жёлтая тушёная
+bls:G720200	Wax bean deep-frozen	фасоль стручковая жёлтая замороженная
+bls:G720232	Wax bean deep-frozen, boiled	фасоль стручковая жёлтая замороженная варёная
+bls:G720252	Wax bean deep-frozen, stewed	фасоль стручковая жёлтая замороженная тушёная
+bls:G720802	Wax bean pickled, drained	фасоль стручковая жёлтая маринованная слитая
+bls:G720902	Wax bean canned, drained	фасоль стручковая жёлтая консервированная слитая
+bls:G730100	Broad bean immature, raw	бобы молодые сырые
+bls:G730132	Broad bean immature, boiled	бобы молодые варёные
+bls:G730200	Broad bean immature, deep-frozen	бобы молодые замороженные
+bls:G730232	Broad bean immature, deep-frozen, boiled	бобы молодые замороженные варёные
+bls:G730902	Broad bean immature, canned, drained	бобы молодые консервированные слитые
+bls:G750100	Soya bean immature (edamame) raw	эдамамэ сырые
+bls:G750400	Soya bean mature	соевые бобы спелые
+bls:G750432	Soya bean mature, boiled	соевые бобы спелые варёные
+bls:G750902	Soya bean immature (edamame) canned, drained	эдамамэ консервированные слитые
+bls:G760100	Pea green, raw	горошек зелёный сырой
+bls:G760132	Pea green, boiled	горошек зелёный варёный
+bls:G760152	Pea green, stewed	горошек зелёный тушёный
+bls:G760162	Pea green, baked	горошек зелёный запечённый
+bls:G760182	Pea green, fried without fat (pan)	горошек зелёный жареный без масла
+bls:G760200	Pea green, deep-frozen	горошек зелёный замороженный
+bls:G760232	Pea green, deep-frozen, boiled	горошек зелёный замороженный варёный
+bls:G760252	Pea green, deep-frozen, stewed	горошек зелёный замороженный тушёный
+bls:G760262	Pea green, deep-frozen, baked	горошек зелёный замороженный запечённый
+bls:G760282	Pea green, deep-frozen, fried without fat (pan)	горошек зелёный замороженный жареный без масла
+bls:G760400	Pea green mature	горох спелый
+bls:G760432	Pea green mature, boiled	горох спелый варёный
+bls:G760902	Pea green, canned, drained	горошек зелёный консервированный слитый
+bls:G761032	Sugar pea boiled	горошек сахарный варёный
+bls:G761100	Sugar pea raw	горошек сахарный сырой
+bls:G761152	Sugar pea stewed	горошек сахарный тушёный
+bls:G761200	Sugar pea deep-frozen	горошек сахарный замороженный
+bls:G761232	Sugar pea deep-frozen, boiled	горошек сахарный замороженный варёный
+bls:G761252	Sugar pea deep-frozen, stewed	горошек сахарный замороженный тушёный
+bls:G770400	Chick pea mature	нут спелый
+bls:G770432	Chick pea mature, boiled	нут спелый варёный
+bls:G780400	Lima bean/butter bean, mature	фасоль лима спелая
+bls:G780432	Lima bean/butter bean, mature, boiled	фасоль лима спелая варёная
+bls:G850100	Cream of vegetable soup instant powder	суп-пюре овощной порошковый
+bls:G850132	Cream of vegetable soup, made from instant powder and water	суп-пюре овощной из порошка
+bls:G860192	Fried onions (ready-made product)	лук жареный готовый
+bls:G880402	Bean green, lactic acid fermented, drained	фасоль стручковая квашеная слитая
+bls:G880602	Mixed pickles, drained	овощи маринованные ассорти слитые
+bls:G890702	Gherkin lactic acid fermented, drained	огурцы квашеные слитые
+bls:G890902	Cornichons pickled, canned, drained	корнишоны маринованные слитые
+bls:G891102	Sweet cucumber pickled, canned, drained	огурцы маринованные сладкие слитые
+bls:G891202	Mustard cucumber pickled, canned, drained	огурцы горчичные маринованные слитые
+bls:G898100	Horseradish (unsalted) canned	хрен консервированный без соли
+bls:G898200	Creamed horseradish canned	хрен со сливками консервированный
+bls:G898300	Horsereadish canned	хрен столовый консервированный
+bls:G898400	Ajvar canned	айвар консервированный
+bls:G920200	Mixed vegetables "Leipziger Allerlei", deep-frozen	овощная смесь «лейпцигское ассорти» замороженная
+bls:G920232	Mixed vegetables "Leipziger Allerlei", deep-frozen, boiled	овощная смесь «лейпцигское ассорти» замороженная варёная
+bls:G920252	Mixed vegetables "Leipziger Allerlei", deep-frozen, stewed	овощная смесь «лейпцигское ассорти» замороженная тушёная
+bls:G920902	Mixed vegetables "Leipziger Allerlei", canned, drained	овощная смесь «лейпцигское ассорти» консервированная слитая
+bls:G940100	Vegetable spread	намазка овощная
+bls:G950900	Vegetarian goulash, canned	гуляш вегетарианский консервированный
+bls:G991902	Mixed vegetables Asian style, canned, drained	овощная смесь по-азиатски консервированная слитая
+bls:G992100	Mixed vegetables peas and carrots, raw	горошек с морковью сырые
+bls:G992132	Mixed vegetables peas and carrots, boiled	горошек с морковью варёные
+bls:G992152	Mixed vegetables peas and carrots, stewed	горошек с морковью тушёные
+bls:G992162	Mixed vegetables peas and carrots, baked	горошек с морковью запечённые
+bls:G992182	Mixed vegetables peas and carrots, fried without fat (pan)	горошек с морковью жареные без масла
 bls:G992200	Mixed vegetables peas and carrots, deep-frozen	горошек с морковью замороженный
+bls:G992232	Mixed vegetables peas and carrots, deep-frozen, boiled	горошек с морковью замороженные варёные
+bls:G992252	Mixed vegetables peas and carrots, deep-frozen, stewed	горошек с морковью замороженные тушёные
+bls:G992262	Mixed vegetables peas and carrots, deep-frozen, baked	горошек с морковью замороженные запечённые
+bls:G992282	Mixed vegetables peas and carrots, deep-frozen, fried without fat (pan)	горошек с морковью замороженные жареные без масла
+bls:G992902	Mixed vegetables peas and carrots, canned, drained	горошек с морковью консервированные слитые
+bls:G993100	Mixed vegetables Mexican style, raw	овощная смесь по-мексикански сырая
+bls:G993132	Mixed vegetables Mexican style, boiled	овощная смесь по-мексикански варёная
+bls:G993142	Mixed vegetables Mexican style, braised without fat	овощная смесь по-мексикански припущенная
+bls:G993152	Mixed vegetables Mexican style, stewed	овощная смесь по-мексикански тушёная
+bls:G993182	Mixed vegetables Mexican style, fried without fat (pan)	овощная смесь по-мексикански жареная без масла
+bls:G993200	Mixed vegetables Mexican style, deep-frozen	овощная смесь по-мексикански замороженная
+bls:G993232	Mixed vegetables Mexican style, deep-frozen, boiled	овощная смесь по-мексикански замороженная варёная
+bls:G993242	Mixed vegetables Mexican style, deep-frozen, braised without fat	овощная смесь по-мексикански замороженная припущенная
+bls:G993252	Mixed vegetables Mexican style, deep-frozen, stewed	овощная смесь по-мексикански замороженная тушёная
+bls:G993282	Mixed vegetables Mexican style, deep-frozen, fried without fat (pan)	овощная смесь по-мексикански замороженная жареная без масла
+bls:G993902	Mixed vegetables Mexican style, canned, drained	овощная смесь по-мексикански консервированная слитая
 bls:G994100	Mixed vegetables Asian style, raw	азиатская овощная смесь сырая
+bls:G994132	Mixed vegetables Asian style, boiled	овощная смесь по-азиатски варёная
+bls:G994142	Mixed vegetables Asian style, braised without fat	овощная смесь по-азиатски припущенная
+bls:G994152	Mixed vegetables Asian style, stewed	овощная смесь по-азиатски тушёная
+bls:G994162	Mixed vegetables Asian style, baked	овощная смесь по-азиатски запечённая
+bls:G994182	Mixed vegetables Asian style, fried without fat (pan)	овощная смесь по-азиатски жареная без масла
+bls:G994200	Mixed vegetables Asian style, deep-frozen	овощная смесь по-азиатски замороженная
+bls:G994232	Mixed vegetables Asian style, deep-frozen, boiled	овощная смесь по-азиатски замороженная варёная
+bls:G994242	Mixed vegetables Asian style, deep-frozen, braised without fat	овощная смесь по-азиатски замороженная припущенная
+bls:G994252	Mixed vegetables Asian style, deep-frozen, stewed	овощная смесь по-азиатски замороженная тушёная
+bls:G994262	Mixed vegetables Asian style, deep-frozen, baked	овощная смесь по-азиатски замороженная запечённая
+bls:G994282	Mixed vegetables Asian style, deep-frozen, fried without fat (pan)	овощная смесь по-азиатски замороженная жареная без масла
+bls:G995000	Sushi nori (toasted)	нори жареный
+bls:H011000	Soya bean protein isolate	изолят соевого белка
+bls:H012000	Soya bean lecithin	соевый лецитин
+bls:H014900	Soya bean small sausage	сосиски соевые
+bls:H030400	Glass noodles made from mung bean starch, raw	фунчоза сырая
+bls:H030432	Glass noodles made from mung bean starch, boiled	фунчоза варёная
+bls:H110600	Peanut roasted	арахис жареный
+bls:H110700	Peanut roasted, salted	арахис жареный солёный
+bls:H110800	Peanut butter (100 % pure)	арахисовая паста
+bls:H120100	Walnut	грецкий орех
+bls:H120400	Walnut ground	грецкий орех молотый
+bls:H120610	Walnut roasted without fat	грецкий орех жареный
+bls:H130100	Hazelnut	фундук
+bls:H130400	Hazelnut ground	фундук молотый
+bls:H130610	Hazelnut roasted without fat	фундук жареный
+bls:H130800	Hazelnut butter (100 % pure)	паста из фундука
+bls:H150100	Coconut meat, raw	мякоть кокоса сырая
+bls:H150400	Coconut meat, grated, dried	кокосовая стружка
+bls:H151000	Coconut water (liquid from coconuts)	кокосовая вода
+bls:H154000	Coconut milk	кокосовое молоко
+bls:H160100	Pecan	пекан
 bls:H210710	Sweet almond roasted with fat, salted	миндаль жареный солёный
 bls:H310600	Pumpkin seed roasted without fat	тыквенные семечки жареные
 bls:H620902	Soya bean sprouts canned, drained	ростки сои консервированные
