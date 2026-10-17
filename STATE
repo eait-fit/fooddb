@@ -1,0 +1,13 @@
+dv-fooddb-122-2b — batch 2b state
+=================================
+scope: fdc FNDDS ids fdc:2706764–fdc:2708143 (next 1,380 after 2a's 2705384–2706763)
+TSVs: ru 9,822 lines, es 9,822 lines, sorted by record_id
+Nits folded in (es): 172425/172426 frijol→judía moth, 175163 rabo→serviola,
+169701 enlatado→en conserva
+RULES.md: "FNDDS qualifiers (batch 2b)" section appended
+33 kcal-collision groups resolved via real qualifiers (pie/cake split
+tarta/pastel/bizcocho, бисквит-скон, гриссини, cocidas, de nogal, etc.)
+gates: coverage 1380/1380, ru/es ids equal, script scan clean,
+kcal-collision vs fooddb_names_mt_2b (35,848 + 5,431 FNDDS loaded) = 0,
+./dev test 370 passed
+NEXT for 2c/2d: fdc FNDDS ids > 2708143, ~1,375 each

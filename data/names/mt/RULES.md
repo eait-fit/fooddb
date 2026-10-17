@@ -150,3 +150,38 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
   `скумбрия испанская`/`sierra`; chinook = `чавыча`/`salmón real`;
   chum = `кета`/`salmón keta`; pollock = `минтай`/`abadejo`
   (`сайда` is saithe — a different fish).
+
+## FNDDS qualifiers (batch 2b)
+
+Following the batch-2 section (PR #127): same mixed-dish qualifiers. New here:
+
+- Sandwich bread: `on white bun`/`on wheat bun` → `на белой/пшеничной булочке` /
+  `en pan blanco`/`en pan de trigo` for burgers and sloppy joes; `on white/wheat
+  bread` → `на белом/пшеничном хлебе` / `en pan blanco`/`en pan de trigo` for
+  sliced-bread sandwiches. Where a record family offers BOTH bun and bread
+  (hot dogs), the bun becomes `panecillo` to keep the names apart.
+- `sandwich or sub, restaurant` → `(ресторан)` / `de restaurante`;
+  `from school cafeteria` → `из школьной столовой` / `de comedor escolar`.
+- patty size `1 small/medium/large` → `маленькая/средняя/большая котлета` /
+  `pequeña`/`mediana`/`grande`; `slider` → `мини-` / `mini`.
+- Omelet matrix: `made with margarine/oil/butter/animal fat/cooking spray` →
+  `на маргарине/масле/сливочном масле/животном жире/с кулинарным спреем`,
+  `en margarina/aceite/mantequilla/grasa animal/con spray de cocinar`;
+  `no added fat` → `без масла` / `sin grasa`. `dark-green vegetables` →
+  `зелёные овощи` / `verduras verdes` (never `зелень` — that is herbs).
+- Beans `from dried` / `from canned` → `из сухой` / `консервированная`,
+  `de secas` / `en conserva`; `fat added` / `no added fat` →
+  `с жиром` / `без масла`, `con grasa` / `sin grasa`. When the FNDDS
+  record is the cooked dish and a canned sibling exists, add `cocidas`.
+- `Pie` vs `Cake` vs `Cheesecake` must not collapse in es: pie → `tarta`/`pastel`,
+  cake → `tarta`/`bizcocho`, cheesecake → `tarta de queso`; if two still share a
+  name, split with a real qualifier (`americana`, `sencilla`).
+- Fast-food/dessert vocabulary: `biscuit` (US) → `бисквит`/`panecillo de soda`
+  (collided with sponge `бисквит` → `бисквит-скон`); `croutons` → `гриссини`-only
+  for the soft kind; `crisp`/`cobbler` stay Latin-ish (`крисп`/`коблер`,
+  `crisp`/`cobbler`); `breadsticks` soft = `хлебные палочки`/`palitos de pan`,
+  hard = `гриссини`-family/`picos de pan`.
+- `trail mix` → `микс орехов и сухофруктов` / `mezcla de frutos secos (y fruta)`.
+- Brands and their product names stay Latin: `Whopper`, `Big Mac`, `McDouble`,
+  `Quarter Pounder`, `Nutella`, `Spam`, `Pocky`, cereal/nutrition-bar brands
+  (`Nature Valley`, `Quaker`, `Clif`, `PowerBar`, …) — `McDonald's` spelled out.
