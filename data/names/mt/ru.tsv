@@ -11576,16 +11576,517 @@ cofid:18-157	Lamb, loin joint, roasted, lean and fat, weighed with bone	бара
 cofid:18-159	Lamb, mince, stewed	фарш бараний тушёный
 cofid:18-160	Lamb, neck fillet, raw, lean	баранина филе шеи сырое постное
 cofid:18-161	Lamb, neck fillet, raw, lean and fat	баранина филе шеи сырое с жиром
+cofid:18-162	Lamb, neck fillet, slices, grilled, lean	баранина филе шеи ломтиками на гриле постное
+cofid:18-163	Lamb, neck fillet, slices, grilled, lean and fat	баранина филе шеи ломтиками на гриле с жиром
+cofid:18-164	Lamb, neck fillet, strips, stir-fried  in corn oil, lean	баранина филе шеи полосками стир-фрай на кукурузном масле постное
+cofid:18-165	Lamb, neck fillet, strips, stir-fried in corn oil, lean and fat	баранина филе шеи полосками стир-фрай на кукурузном масле с жиром
+cofid:18-166	Lamb, rack of, raw, lean and fat	баранина каре сырое с жиром
+cofid:18-167	Lamb, rack of, raw, lean and fat, weighed with bone	баранина каре сырое с жиром на кости
+cofid:18-168	Lamb, rack of, lean, roasted	баранина каре запечённое постное
+cofid:18-169	Lamb, rack of, roasted, lean and fat	баранина каре запечённое с жиром
 cofid:18-170	Lamb, shoulder, raw, lean and fat	баранья лопатка сырая с жиром
+cofid:18-171	Lamb, shoulder, raw, lean and fat, weighed with bone	баранина лопатка сырая с жиром на кости
+cofid:18-172	Lamb, shoulder, diced, kebabs, grilled, lean and fat	баранина лопатка кубиками шашлык на гриле с жиром
+cofid:18-173	Lamb, shoulder, half bladeside, pot-roasted, lean	баранина лопатка половина со стороны лопасти томлёная постная
+cofid:18-174	Lamb, shoulder, half bladeside, pot-roasted, lean and fat	баранина лопатка половина со стороны лопасти томлёная с жиром
+cofid:18-175	Lamb, shoulder, half knuckle, braised, lean	баранина лопатка половина со стороны голяшки томлёная постная
+cofid:18-176	Lamb, shoulder, half knuckle, braised, lean and fat	баранина лопатка половина со стороны голяшки томлёная с жиром
+cofid:18-177	Lamb, shoulder joint, roasted, lean	баранина лопатка для жарки запечённая постная
+cofid:18-178	Lamb, shoulder joint, roasted, lean and fat	баранина лопатка для жарки запечённая с жиром
+cofid:18-179	Lamb, shoulder, whole, roasted, lean	баранина лопатка целая запечённая постная
+cofid:18-180	Lamb, shoulder, whole, roasted, lean and fat	баранина лопатка целая запечённая с жиром
+cofid:18-181	Lamb, shoulder, whole, roasted, lean and fat, weighed with bone	баранина лопатка целая запечённая с жиром на кости
+cofid:18-182	Lamb, stewing, raw, lean and fat	баранина для тушения сырая с жиром
+cofid:18-183	Lamb, stewing, raw, lean and fat, weighed with bone	баранина для тушения сырая с жиром на кости
+cofid:18-184	Lamb, stewing, pressure cooked, lean	баранина для тушения в скороварке постная
+cofid:18-185	Lamb, stewing, pressure cooked, lean and fat	баранина для тушения в скороварке с жиром
+cofid:18-186	Lamb, stewing, stewed, lean	баранина для тушения тушёная постная
+cofid:18-187	Lamb, stewing, stewed, lean and fat	баранина для тушения тушёная с жиром
+cofid:18-188	Lamb, New Zealand, leg, whole, chilled, roasted, lean	баранина новозеландская нога целая охлаждённая запечённая постная
+cofid:18-189	Lamb, New Zealand, leg, whole, chilled, roasted, lean and fat	баранина новозеландская нога целая охлаждённая запечённая с жиром
+cofid:18-190	Lamb, New Zealand, leg, whole, frozen, raw, lean and fat, weighed with bone	баранина новозеландская нога целая замороженная сырая с жиром на кости
+cofid:18-191	Lamb, New Zealand, leg, whole, frozen, roasted, lean	баранина новозеландская нога целая замороженная запечённая постная
+cofid:18-192	Lamb, New Zealand, leg, whole, frozen, roasted, lean and fat	баранина новозеландская нога целая замороженная запечённая с жиром
+cofid:18-193	Lamb, New Zealand, leg, whole, frozen, roasted, lean and fat, weighed with bone	баранина новозеландская нога целая замороженная запечённая с жиром на кости
+cofid:18-194	Lamb, New Zealand, loin chops, frozen, grilled, lean	баранина новозеландская корейка на косточке замороженная на гриле постная
+cofid:18-195	Lamb, New Zealand, loin chops, frozen, grilled, lean, weighed with fat and bone	баранина новозеландская корейка на косточке замороженная на гриле постная с жиром и костью
+cofid:18-196	Lamb, New Zealand, loin chops, frozen, grilled, lean and fat	баранина новозеландская корейка на косточке замороженная на гриле с жиром
+cofid:18-197	Lamb, New Zealand, loin chops, frozen, grilled, lean and fat, weighed with bone	баранина новозеландская корейка на косточке замороженная на гриле с жиром на кости
+cofid:18-198	Lamb, New Zealand, mince, frozen, stewed	фарш бараний новозеландский замороженный тушёный
+cofid:18-199	Lamb, New Zealand, shoulder, whole, frozen, roasted, lean	баранина новозеландская лопатка целая замороженная запечённая постная
+cofid:18-200	Lamb, New Zealand, shoulder, whole, frozen, roasted, lean and fat	баранина новозеландская лопатка целая замороженная запечённая с жиром
+cofid:18-216	Pork, crackling, cooked	свиная корочка запечённая
+cofid:18-289	Chicken, dark meat, raw	курица тёмное мясо сырое
+cofid:18-290	Chicken, light meat, raw	курица белое мясо сырое
+cofid:18-292	Chicken, skin, raw	куриная кожа сырая
+cofid:18-293	Chicken, leg quarter, raw, meat and skin	куриная четверть ножная сырая мясо с кожей
+cofid:18-294	Chicken, leg quarter, raw, meat and skin, weighed with bone	куриная четверть ножная сырая мясо с кожей на кости
+cofid:18-295	Chicken, wing quarter, raw, meat and skin	куриная четверть крыльная сырая мясо с кожей
+cofid:18-296	Chicken, wing quarter, raw, meat and skin, weighed with bone	куриная четверть крыльная сырая мясо с кожей на кости
+cofid:18-297	Chicken, whole, raw, meat and skin	курица целая сырая мясо с кожей
+cofid:18-298	Chicken, whole, raw, meat and skin, weighed with bone	курица целая сырая мясо с кожей на кости
+cofid:18-299	Chicken, corn-fed, raw, dark meat only	курица на кукурузном откорме сырая тёмное мясо
+cofid:18-300	Chicken, corn-fed, raw, light meat only	курица на кукурузном откорме сырая белое мясо
+cofid:18-301	Chicken, corn-fed, raw, meat only	курица на кукурузном откорме сырая только мясо
+cofid:18-302	Chicken, corn-fed, raw, skin only	курица на кукурузном откорме сырая только кожа
+cofid:18-303	Chicken, whole, corn-fed, raw, meat and skin	курица целая на кукурузном откорме сырая мясо с кожей
+cofid:18-304	Chicken, whole, corn-fed, raw, meat and skin, weighed with bone	курица целая на кукурузном откорме сырая мясо с кожей на кости
+cofid:18-305	Poussin, raw, meat and skin	цыплёнок сырой мясо с кожей
+cofid:18-306	Poussin, raw, meat and skin, weighed with bone	цыплёнок сырой мясо с кожей на кости
+cofid:18-307	Chicken, breast, casseroled, meat only	куриная грудка тушёная без кожи
+cofid:18-308	Chicken, breast, casseroled, meat and skin	куриная грудка тушёная мясо с кожей
+cofid:18-309	Chicken, breast, casseroled, meat and skin, weighed with bone	куриная грудка тушёная мясо с кожей на кости
+cofid:18-310	Chicken, drumsticks, casseroled, meat only	куриные голени тушёные без кожи
+cofid:18-311	Chicken, drumsticks, casseroled, meat and skin	куриные голени тушёные мясо с кожей
+cofid:18-312	Chicken, drumsticks, casseroled, meat and skin, weighed with bone	куриные голени тушёные мясо с кожей на кости
+cofid:18-313	Chicken, leg quarter, casseroled, meat only	куриная четверть ножная тушёная без кожи
+cofid:18-314	Chicken, leg quarter, casseroled, meat and skin	куриная четверть ножная тушёная мясо с кожей
+cofid:18-315	Chicken, leg quarter, casseroled, meat and skin, weighed with bone	куриная четверть ножная тушёная мясо с кожей на кости
+cofid:18-316	Chicken, skin, casseroled	куриная кожа тушёная
+cofid:18-317	Chicken, thighs, casseroled, meat and skin	куриные бёдра тушёные мясо с кожей
+cofid:18-318	Chicken, thighs, casseroled, meat and skin, weighed with bone	куриные бёдра тушёные мясо с кожей на кости
+cofid:18-319	Chicken, thighs, casseroled, meat only, diced	куриные бёдра тушёные без кожи кубиками
+cofid:18-320	Chicken, wing quarter, casseroled, meat only	куриная четверть крыльная тушёная без кожи
+cofid:18-321	Chicken, wing quarter, casseroled, meat and skin	куриная четверть крыльная тушёная мясо с кожей
+cofid:18-322	Chicken, wing quarter, casseroled, meat and skin, weighed with bone	куриная четверть крыльная тушёная мясо с кожей на кости
+cofid:18-323	Chicken, breast, grilled without skin, meat only	куриная грудка на гриле без кожи
+cofid:18-324	Chicken, breast, grilled with skin, meat only	куриная грудка на гриле с кожей без кожи в подаче
+cofid:18-325	Chicken, breast, grilled, meat and skin	куриная грудка на гриле мясо с кожей
+cofid:18-326	Chicken, breast, strips, stir-fried in corn oil	куриная грудка полосками стир-фрай на кукурузном масле
+cofid:18-327	Chicken, portions, not coated, deep-fried, meat and skin	куриные порции без панировки во фритюре мясо с кожей
+cofid:18-328	Chicken, portions, not coated, deep-fried, meat and skin, weighed with bone	куриные порции без панировки во фритюре мясо с кожей на кости
+cofid:18-329	Chicken, dark meat, roasted	курица тёмное мясо запечённое
+cofid:18-330	Chicken, light meat, roasted	курица белое мясо запечённое
+cofid:18-331	Chicken, meat, average, roasted	курица мясо среднее запечённое
+cofid:18-332	Chicken, skin, roasted/grilled, dry	куриная кожа запечённая сухая
+cofid:18-333	Chicken, skin, roasted/grilled, moist	куриная кожа запечённая сочная
+cofid:18-334	Chicken, drumsticks, roasted, meat only	куриные голени запечённые без кожи
+cofid:18-335	Chicken, drumsticks, roasted, meat and skin	куриные голени запечённые мясо с кожей
+cofid:18-336	Chicken, drumsticks, roasted, meat and skin, weighed with bone	куриные голени запечённые мясо с кожей на кости
+cofid:18-337	Chicken, leg quarter, roasted, meat and skin	куриная четверть ножная запечённая мясо с кожей
+cofid:18-338	Chicken, leg quarter, roasted, meat and skin, weighed with bone	куриная четверть ножная запечённая мясо с кожей на кости
+cofid:18-339	Chicken, wing quarter, roasted, meat and skin	куриная четверть крыльная запечённая мясо с кожей
+cofid:18-340	Chicken, wing quarter, roasted, meat and skin, weighed with bone	куриная четверть крыльная запечённая мясо с кожей на кости
+cofid:18-341	Chicken, whole, roasted, meat and skin	курица целая запечённая мясо с кожей
+cofid:18-342	Chicken, whole, roasted, meat and skin, weighed with bone	курица целая запечённая мясо с кожей на кости
+cofid:18-343	Chicken, corn-fed, roasted, dark meat only	курица на кукурузном откорме запечённая тёмное мясо
+cofid:18-344	Chicken, corn-fed, roasted, light meat only	курица на кукурузном откорме запечённая белое мясо
+cofid:18-345	Chicken, corn-fed, roasted, meat only	курица на кукурузном откорме запечённая только мясо
+cofid:18-346	Chicken, whole, corn-fed, roasted, meat and skin	курица целая на кукурузном откорме запечённая мясо с кожей
+cofid:18-347	Chicken, whole, corn-fed, roasted, meat and skin, weighed with bone	курица целая на кукурузном откорме запечённая мясо с кожей на кости
+cofid:18-348	Turkey, dark meat, raw	индейка тёмное мясо сырое
+cofid:18-349	Turkey, light meat, raw	индейка белое мясо сырое
+cofid:18-350	Turkey, meat, average, raw	индейка мясо среднее сырое
+cofid:18-351	Turkey, skin, raw	кожа индейки сырая
+cofid:18-352	Turkey, whole, raw	индейка целая сырая
+cofid:18-353	Turkey, whole, raw, weighed with bone	индейка целая сырая на кости
+cofid:18-354	Turkey, mince, stewed	фарш индюшиный тушёный
+cofid:18-355	Turkey, thighs, diced, casseroled, meat only	бёдра индейки кубиками тушёные без кожи
+cofid:18-356	Turkey, breast, fillet, grilled, meat only	индейка грудка филе на гриле без кожи
+cofid:18-357	Turkey, strips, stir-fried in corn oil	индейка полосками стир-фрай на кукурузном масле
+cofid:18-358	Turkey, dark meat, roasted	индейка тёмное мясо запечённое
+cofid:18-359	Turkey, light meat, roasted	индейка белое мясо запечённое
+cofid:18-360	Turkey, self-basting, light meat, roasted	индейка с инъекцией жира белое мясо запечённое
+cofid:18-361	Turkey, meat, average, roasted	индейка мясо среднее запечённое
+cofid:18-362	Turkey, skin, dry, roasted	кожа индейки запечённая сухая
+cofid:18-363	Turkey, skin, moist, roasted	кожа индейки запечённая сочная
+cofid:18-364	Turkey, drumsticks, roasted, meat only	голени индейки запечённые без кожи
+cofid:18-365	Turkey, drumsticks, roasted, meat and skin	голени индейки запечённые мясо с кожей
+cofid:18-366	Turkey, drumsticks, roasted, meat and skin, weighed with bone	голени индейки запечённые мясо с кожей на кости
+cofid:18-367	Turkey, whole, roasted, meat and skin	индейка целая запечённая мясо с кожей
+cofid:18-368	Turkey, whole, roasted, meat and skin, weighed with bone	индейка целая запечённая мясо с кожей на кости
+cofid:18-371	Duck, raw, meat, fat and skin	утка сырая мясо с жиром и кожей
+cofid:18-372	Duck, roasted, meat only	утка запечённая только мясо
+cofid:18-373	Duck, roasted, meat only, weighed with fat, skin and bone	утка запечённая только мясо с жиром, кожей и костью
+cofid:18-374	Duck, roasted, meat, fat and skin	утка запечённая мясо с жиром и кожей
+cofid:18-375	Goose, meat, raw, fat and skin	гусь мясо сырое с жиром и кожей
+cofid:18-376	Goose, meat, roasted, fat and skin	гусь мясо запечённое с жиром и кожей
+cofid:18-377	Grouse, meat only, roasted	тетерев мясо запечённое
+cofid:18-378	Grouse, meat only, roasted, weighed with bone	тетерев мясо запечённое на кости
+cofid:18-379	Hare, meat only, stewed	заяц мясо тушёное
+cofid:18-380	Hare, meat only, stewed, weighed with bone	заяц мясо тушёное на кости
+cofid:18-381	Partridge, meat only, roasted	куропатка мясо запечённое
+cofid:18-382	Partridge, meat only, roasted, weighed with bone	куропатка мясо запечённое на кости
+cofid:18-383	Pheasant, meat only, roasted	фазан мясо запечённое
+cofid:18-384	Pheasant, meat only, roasted, weighed with bone	фазан мясо запечённое на кости
+cofid:18-385	Pigeon, meat only, roasted	голубь мясо запечённое
+cofid:18-386	Pigeon, meat only, roasted, weighed with bone	голубь мясо запечённое на кости
+cofid:18-387	Rabbit, raw, meat only	кролик мясо сырое
+cofid:18-388	Rabbit, stewed, meat only	кролик мясо тушёное
+cofid:18-389	Rabbit, stewed, meat only, weighed with bone	кролик мясо тушёное на кости
+cofid:18-390	Venison, meat only, raw	оленина мясо сырое
+cofid:18-392	Brain, lamb, boiled	мозги бараньи варёные
+cofid:18-393	Giblets, chicken, raw	потроха куриные сырые
+cofid:18-394	Giblets, chicken, boiled	потроха куриные варёные
+cofid:18-395	Giblets, turkey, boiled	потроха индюшиные варёные
+cofid:18-396	Heart, lamb, raw	сердце баранье сырое
+cofid:18-398	Heart, ox, raw	сердце говяжье сырое
+cofid:18-399	Heart, ox, stewed	сердце говяжье тушёное
 cofid:18-400	Heart, pig, raw	сердце свиное сырое
+cofid:18-401	Heart, pig, stewed	сердце свиное тушёное
+cofid:18-402	Kidney, lamb, raw	почки бараньи сырые
+cofid:18-404	Kidney, ox, raw	почки говяжьи сырые
+cofid:18-405	Kidney, ox, stewed	почки говяжьи тушёные
+cofid:18-406	Kidney, pig, raw	почки свиные сырые
+cofid:18-407	Kidney, pig, fried	почки свиные жареные
+cofid:18-408	Kidney, pig, stewed	почки свиные тушёные
+cofid:18-409	Liver, calf, raw	печень телячья сырая
+cofid:18-410	Liver, calf, fried in corn oil	печень телячья жареная на кукурузном масле
+cofid:18-411	Liver, chicken, raw	печень куриная сырая
+cofid:18-412	Liver, chicken, fried in corn oil	печень куриная жареная на кукурузном масле
+cofid:18-413	Liver, lamb, raw	печень баранья сырая
+cofid:18-415	Liver, ox, raw	печень говяжья сырая
+cofid:18-416	Liver, ox, stewed	печень говяжья тушёная
+cofid:18-417	Liver, pig, raw	печень свиная сырая
+cofid:18-418	Liver, pig, stewed	печень свиная тушёная
+cofid:18-419	Oxtail, raw	хвост говяжий сырой
+cofid:18-420	Oxtail, meat only, stewed with added salt	хвост говяжий тушёный с солью без костей
+cofid:18-421	Sweetbread, lamb, raw	зобная железа телячья сырая
+cofid:18-422	Sweetbread, lamb, fried in corn oil	зобная железа телячья жареная на кукурузном масле
+cofid:18-423	Tongue, lamb, raw	язык бараний сырой
+cofid:18-424	Tongue, ox, meat only, pickled, raw	язык говяжий солёный сырой
+cofid:18-425	Tongue, ox, meat only, pickled, stewed	язык говяжий солёный тушёный
+cofid:18-426	Tongue, ox, meat only, stewed	язык говяжий тушёный
+cofid:18-427	Tongue, sheep, meat only, stewed	язык бараний тушёный
+cofid:18-428	Tripe, dressed, raw	рубец обработанный сырой
+cofid:18-429	Pork, trotters and tails, boiled with added salt	свиные ножки и хвосты варёные с солью
+cofid:18-468	Beef, lean, average, raw	говядина постная средняя сырая
+cofid:18-469	Beef, mince, raw	фарш говяжий сырой
+cofid:18-470	Beef, mince, stewed	фарш говяжий тушёный
+cofid:18-471	Beef, rump steak, raw, lean and fat	говядина стейк из огузка сырой с жиром
+cofid:18-472	Beef, rump steak, fried in corn oil, lean and fat	говядина стейк из огузка жареный на кукурузном масле с жиром
+cofid:18-473	Beef, rump steak, fried in corn oil, lean only	говядина стейк из огузка жареный на кукурузном масле постный
+cofid:18-474	Beef, rump steak, grilled, lean only	говядина стейк из огузка на гриле постный
+cofid:18-475	Lamb, lean only, raw, average	баранина постная средняя сырая
+cofid:18-476	Lamb, loin chops, raw, lean and fat	баранина корейка на косточке сырая с жиром
+cofid:18-477	Lamb, loin chops, grilled, lean and fat	баранина корейка на косточке на гриле с жиром
+cofid:18-478	Lamb, average, raw, lean and fat	баранина средняя сырая с жиром
+cofid:18-479	Lamb, leg, whole, roasted, lean only	баранина нога целая запечённая постная
+cofid:18-480	Lamb, leg, whole, roasted, lean and fat	баранина нога целая запечённая с жиром
+cofid:18-481	Lamb, mince, raw	фарш бараний сырой
+cofid:18-486	Veal, escalope, raw	эскалоп телячий сырой
+cofid:18-487	Veal, escalope, fried in corn oil	эскалоп телячий жареный на кукурузном масле
+cofid:18-488	Chicken, meat, average, raw	курица мясо среднее сырое
+cofid:18-489	Duck, meat only, raw	утка только мясо сырая
+cofid:18-490	Duck, crispy, chinese style, meat and skin	утка хрустящая по-китайски мясо с кожей
+cofid:18-491	Venison, roast	оленина запечённая
+cofid:18-492	Heart, lamb, roasted	сердце баранье запечённое
+cofid:18-493	Kidney, lamb, fried in corn oil	почки бараньи жареные на кукурузном масле
+cofid:18-494	Liver, lamb, fried in corn oil	печень баранья жареная на кукурузном масле
+cofid:18-495	Duck, raw, meat only, weighed with fat, skin and bone	утка сырая только мясо с жиром, кожей и костью
+cofid:18-496	Lamb, loin chops, grilled, lean and fat, weighed with bone	баранина корейка на косточке на гриле с жиром на кости
+cofid:18-497	Lamb, loin chops, raw, lean and fat, weighed with bone	баранина корейка на косточке сырая с жиром на кости
+cofid:18-499	Pork, spare ribs, Chinese barbecue, takeaway	рёбрышки свиные по-китайски на барбекю на вынос
+cofid:18-500	Chicken portions, battered, deep fried, takeaway	куриные порции в кляре во фритюре на вынос
+cofid:18-501	Chicken pieces, coated, takeaway	куриные кусочки в панировке на вынос
+cofid:18-502	Burger, chicken/turkey, coated, retail, grilled	бургер куриный-индюшиный в панировке магазинный на гриле
+cofid:18-503	Chicken/turkey pieces, coated, baked	куриные-индюшиные кусочки в панировке запечённые
+cofid:18-504	Chicken breast/steak, coated, baked	куриная грудка-стейк в панировке запечённая
+cofid:18-505	Pie, beef, puff or shortcrust pastry, family size, retail	пирог с говядиной слоёный или песочный большой магазинный
+cofid:18-506	Pie, beef, puff or shortcrust pastry, individual, retail	пирог с говядиной слоёный или песочный порционный магазинный
+cofid:18-507	Beef, mince, extra lean, stewed	фарш говяжий экстра-постный тушёный
+cofid:18-508	Beef, mince, raw, extra lean	фарш говяжий сырой экстра-постный
+cofid:18-510	Pork, fillet medallions, raw, lean	свинина медальоны из вырезки сырые постные
+cofid:18-511	Pork, fillet medallions, raw, lean and fat	свинина медальоны из вырезки сырые с жиром
+cofid:18-512	Pork, leg joint, raw, lean	свинина окорок для жарки сырой постная
+cofid:18-513	Pork, leg joint, raw, lean and fat, trimmed	свинина окорок для жарки сырой обрезанный с жиром
+cofid:18-514	Pork, leg joint, raw, lean and fat	свинина окорок для жарки сырой с жиром
+cofid:18-515	Pork, leg joint, roasted, lean	свинина окорок для жарки запечённый постная
+cofid:18-516	Pork, leg joint, roasted, lean and fat, trimmed	свинина окорок для жарки запечённый обрезанный с жиром
+cofid:18-517	Pork, leg joint, roasted, lean and fat	свинина окорок для жарки запечённый с жиром
+cofid:18-518	Pork, loin medallions, raw, lean	свинина медальоны из корейки сырые постные
+cofid:18-519	Pork, loin medallions, raw, lean and fat	свинина медальоны из корейки сырые с жиром
+cofid:18-520	Pork, loin medallions, raw, lean and fat, trimmed	свинина медальоны из корейки сырые обрезанные с жиром
+cofid:18-521	Pork, loin steaks, raw, lean	свинина стейки из корейки сырые постные
+cofid:18-522	Pork, loin steaks, raw, lean and fat	свинина стейки из корейки сырые с жиром
+cofid:18-523	Pork, loin steaks, raw, lean and fat, trimmed	свинина стейки из корейки сырые обрезанные с жиром
 cofid:18-524	Pork, loin steaks, grilled, lean	свиной стейк жареный постный
+cofid:18-525	Pork, loin steaks, grilled, lean and fat, trimmed	свинина стейки из корейки на гриле обрезанные с жиром
+cofid:18-526	Pork, loin steaks, grilled, lean and fat	свинина стейки из корейки на гриле с жиром
+cofid:18-527	Pork, diced, casseroled, lean	свинина кубиками тушёная постная
+cofid:18-528	Pork, diced, casseroled, lean and fat	свинина кубиками тушёная с жиром
+cofid:18-529	Pork, diced, raw, lean	свинина кубиками сырая постная
+cofid:18-530	Pork, diced, raw, lean and fat	свинина кубиками сырая с жиром
 cofid:18-531	Pork, fillet medallions, grilled lean	медальоны из свиной вырезки жареные
+cofid:18-532	Pork, fillet medallions, grilled, lean and fat	свинина медальоны из вырезки на гриле с жиром
+cofid:18-533	Pork, fillet strips, stir-fried in rapeseed oil, lean	свинина вырезка полосками стир-фрай на рапсовом масле постная
+cofid:18-534	Pork, loin chops, grilled, lean	свинина отбивные из корейки на гриле постные
+cofid:18-535	Pork, loin chops, grilled, lean and fat	свинина отбивные из корейки на гриле с жиром
+cofid:18-536	Pork, loin chops, raw, lean and fat	свинина отбивные из корейки сырые с жиром
+cofid:18-537	Pork, loin chops, raw, lean and fat, weighed with bone	свинина отбивные из корейки сырые с жиром на кости
+cofid:18-538	Pork, loin steaks, fried in rapeseed oil, lean	свинина стейки из корейки жареные на рапсовом масле постные
+cofid:18-539	Pork, loin steaks, fried in rapeseed oil, lean and fat	свинина стейки из корейки жареные на рапсовом масле с жиром
+cofid:18-540	Pork, diced, kebabs, grilled, lean	свинина кубиками шашлык на гриле постная
+cofid:18-541	Pork, diced, kebabs, grilled, lean and fat	свинина кубиками шашлык на гриле с жиром
+cofid:18-542	Pork, shoulder chops (collar), braised, lean	свинина отбивные шейные томлёные постные
+cofid:18-543	Pork, shoulder chops (collar), braised, lean and fat	свинина отбивные шейные томлёные с жиром
+cofid:18-544	Pork, shoulder chops (collar), braised, lean and fat, weighed with bone	свинина отбивные шейные томлёные с жиром на кости
+cofid:18-545	Pork, shoulder chops (collar), raw, lean and fat	свинина отбивные шейные сырые с жиром
+cofid:18-546	Pork, shoulder chops (collar), raw, lean and fat, weighed with bone	свинина отбивные шейные сырые с жиром на кости
+cofid:18-547	Pork, shoulder joint (collar), pot-roasted, lean	свинина шея для жарки томлёная постная
 cofid:18-548	Pork, shoulder joint (collar), pot-roasted, lean and fat	свиная шейка тушёная
+cofid:18-549	Pork, shoulder joint (collar), raw, lean and fat	свинина шея для жарки сырая с жиром
+cofid:18-550	Pork, shoulder joint (collar), raw, lean and fat, weighed with bone	свинина шея для жарки сырая с жиром на кости
+cofid:18-551	Pork, shoulder steaks (collar), grilled, lean and fat	свинина стейки шейные на гриле с жиром
+cofid:18-552	Pork, shoulder steaks (collar), grilled, lean and fat, weighed with bone	свинина стейки шейные на гриле с жиром на кости
+cofid:18-553	Pork, shoulder steaks (collar), raw, lean and fat, weighed with bone	свинина стейки шейные сырые с жиром на кости
+cofid:18-554	Pork, shoulder steaks (collar), raw, lean and fat	свинина стейки шейные сырые с жиром
+cofid:18-555	Pork, belly joint, roasted, lean and fat	свинина грудинка для жарки запечённая с жиром
+cofid:18-556	Pork, belly joint/slices, grilled, lean and fat	свинина грудинка на гриле с жиром
+cofid:18-557	Pork, belly joint/slices, raw, lean and fat	свинина грудинка сырая с жиром
+cofid:18-558	Pork, belly joint/slices, raw, lean and fat, weighed with bone	свинина грудинка сырая с жиром на кости
+cofid:18-559	Pork, fat, average, cooked	свиной жир приготовленный
+cofid:18-600	Pork, fat, average, raw	свиной жир сырой
+cofid:18-601	Pork, hand, shoulder joint, raw, lean	свинина передняя часть для жарки сырая постная
+cofid:18-602	Pork, hand, shoulder joint, raw, lean and fat	свинина передняя часть для жарки сырая с жиром
+cofid:18-603	Pork, hand, shoulder joint, roasted, lean	свинина передняя часть для жарки запечённая постная
+cofid:18-604	Pork, hand, shoulder joint, roasted, lean and fat	свинина передняя часть для жарки запечённая с жиром
+cofid:18-605	Pork, loin steaks, stewed, lean	свинина стейки из корейки тушёные постные
+cofid:18-606	Pork, mince, raw	фарш свиной сырой
+cofid:18-607	Pork, mince, stewed	фарш свиной тушёный
+cofid:18-608	Pork, lean, average, raw	свинина постная средняя сырая
+cofid:18-609	Pork, spare ribs, raw, lean and fat	рёбрышки свиные сырые с жиром
+cofid:18-610	Pork, loin chops, roasted, lean and fat	свинина отбивные из корейки запечённые с жиром
+cofid:18-611	Pork, loin chops, roasted, lean and fat, weighed with bone	свинина отбивные из корейки запечённые с жиром на кости
+cofid:18-612	Pork, loin steaks, stewed, lean and fat	свинина стейки из корейки тушёные с жиром
+cofid:18-613	Pork, loin chops, roasted, lean	свинина отбивные из корейки запечённые постные
+cofid:19-009	Bacon rashers, back, reduced salt, grilled	бекон спинной полосками с пониженной солью на гриле
+cofid:19-016	Bacon rashers, streaky, raw	бекон с прослойками полосками сырой
+cofid:19-018	Bacon rashers, streaky, grilled	бекон с прослойками полосками на гриле
+cofid:19-020	Ham, gammon joint, raw	окорок гаммон сырой
+cofid:19-021	Ham, gammon joint, boiled	окорок гаммон варёный
+cofid:19-058	Pie, game, homemade	пирог с дичью домашний
+cofid:19-106	Liver sausage	колбаса печёночная
+cofid:19-113	Black pudding, raw	кровяная колбаса сырая
+cofid:19-114	Black pudding, dry-fried	кровяная колбаса жареная без масла
+cofid:19-115	Brawn	зельц
+cofid:19-128	Corned beef, canned	солонина консервированная
+cofid:19-131	Faggots in gravy, retail, reheated	фэгготы в подливке магазинные разогретые
+cofid:19-132	Haggis, boiled	хаггис варёный
+cofid:19-136	Luncheon meat, Chinese, steamed	варёная колбаса китайская на пару
+cofid:19-145	Pate, meat, reduced fat	паштет мясной нежирный
+cofid:19-150	Shish kebab, meat only	шиш-кебаб только мясо
+cofid:19-208	Chilli con carne, retail, reheated	чили кон карне магазинное разогретое
+cofid:19-264	Pork, spare ribs, 'barbecue style', meat only, retail, reheated	рёбрышки свиные «барбекю» только мясо магазинные разогретые
+cofid:19-265	Pork, spare ribs, 'barbecue style', meat only, retail, reheated, weighed with bone	рёбрышки свиные «барбекю» только мясо магазинные разогретые на кости
+cofid:19-296	Curry, chicken tikka masala, retail, reheated	карри тикка масала с курицей магазинное разогретое
+cofid:19-304	Sweet and sour pork, battered, takeaway	свинина кисло-сладкая в кляре на вынос
+cofid:19-315	Burger, chicken, takeaway	бургер куриный на вынос
+cofid:19-317	Pate, liver	паштет печёночный
+cofid:19-319	Saveloy, unbattered, takeaway	савелой без кляра на вынос
+cofid:19-321	Chow mein, chicken, takeaway	чоу-мейн куриный на вынос
+cofid:19-322	Curry, chicken, average, takeaway	карри куриное среднее на вынос
+cofid:19-323	Chicken satay, takeaway	курица сатей на вынос
+cofid:19-324	Sweet and sour chicken, takeaway	курица кисло-сладкая на вынос
+cofid:19-326	Meat samosas, takeaway	самосы с мясом на вынос
+cofid:19-327	Spring rolls, meat, takeaway	спринг-роллы с мясом на вынос
 cofid:19-449	Curry, chicken balti, retail	карри балти с курицей
+cofid:19-454	Biryani, chicken, takeaway	бирьяни куриный на вынос
+cofid:19-460	Stir-fry beef with green peppers and blackbean sauce, takeaway	говядина стир-фрай с зелёным перцем в соусе из чёрных бобов на вынос
+cofid:19-464	Fajita, chicken, meat only, takeaway and restaurant	фахита куриная только мясо на вынос и в ресторане
+cofid:19-465	Curry, chicken, Thai green, takeaway and restaurant	карри куриное зелёное тайское на вынос и в ресторане
+cofid:19-466	Cornish pasty, retail	корнуэльский пасти магазинный
+cofid:19-467	Pork pie, individual	свиной пирог порционный
+cofid:19-468	Sausage roll, flaky pastry, ready-to-eat, retail	рулет с колбаской в слоёном тесте магазинный
+cofid:19-469	Chicken/turkey pasties/slices, puff pastry	пасти куриные-индюшиные слоёные
+cofid:19-470	Casserole, beef, made with cook-in sauce	говядина тушёная из готового соуса
+cofid:19-471	Beef bourguignon, homemade	говядина по-бургундски домашняя
+cofid:19-472	Curry, beef, reduced fat, homemade	карри говяжье нежирное домашнее
+cofid:19-473	Stew, beef, homemade	рагу из говядины домашнее
+cofid:19-475	Bolognese sauce (with meat), made with extra lean minced beef, homemade	соус болоньезе из экстра-постного фарша домашний
+cofid:19-476	Bolognese sauce (with meat), homemade	соус болоньезе домашний
+cofid:19-477	Coronation chicken, homemade	коронационная курица домашняя
+cofid:19-478	Chilli con carne, homemade	чили кон карне домашнее
+cofid:19-479	Stew, Irish, homemade	рагу по-ирландски домашнее
+cofid:19-480	Kheema, lamb, homemade	кхима из баранины домашняя
+cofid:19-481	Lasagne, homemade	лазанья домашняя
+cofid:19-482	Lasagne, homemade, with extra lean minced beef	лазанья из экстра-постного фарша домашняя
+cofid:19-483	Pasta with meat and tomato sauce, homemade	паста с мясом в томатном соусе домашняя
+cofid:19-484	Casserole, sausage, homemade	запеканка с колбасками домашняя
+cofid:19-485	Sweet and sour pork, homemade	свинина кисло-сладкая домашняя
+cofid:19-486	Coq au vin, homemade	кок-о-вен домашний
+cofid:19-487	Burger, Quarter Pounder with cheese, takeaway	бургер Quarter Pounder с сыром на вынос
+cofid:19-488	Curry, beef, retail, reheated	карри говяжье магазинное разогретое
+cofid:19-489	Sausages, beef, grilled	сосиски говяжьи на гриле
+cofid:19-490	Burger, beef, 98-99% beef, fried in vegetable oil	бургер говяжий 98-99 % жареный на растительном масле
+cofid:19-491	Burger, beef, 98-99% beef, grilled	бургер говяжий 98-99 % на гриле
+cofid:19-492	Burger, beef, 98-99% beef, raw	бургер говяжий 98-99 % сырой
+cofid:19-493	Burger, Big Mac, takeaway	бургер Big Mac на вынос
+cofid:19-494	Pie, Cottage/Shepherd's, reheated	пирог «коттедж/пастуший» разогретый
+cofid:19-495	Frankfurter	сосиска для хот-догов
+cofid:19-496	Ham	ветчина
+cofid:19-497	Bacon rashers, back, raw	бекон спинной полосками сырой
+cofid:19-498	Bacon rashers, back, dry-fried	бекон спинной полосками жареный без масла
 cofid:19-499	Bacon rashers, back, fat trimmed, grilled	бекон постный жареный
+cofid:19-500	Bacon rashers, back, grilled	бекон спинной полосками на гриле
+cofid:19-501	Bacon rashers, back, grilled crispy	бекон спинной полосками на гриле до хруста
+cofid:19-502	Bacon rashers, back, microwaved	бекон спинной полосками в микроволновке
+cofid:19-503	Bacon rashers, middle, grilled	бекон средний полосками на гриле
+cofid:19-504	Bacon rashers, streaky, fried in corn oil	бекон с прослойками полосками жареный на кукурузном масле
+cofid:19-505	Ham, gammon rashers, grilled	полоски гаммона на гриле
+cofid:19-506	Meat spread	мясная намазка
+cofid:19-507	Moussaka, retail, reheated	мусака магазинная разогретая
+cofid:19-508	Salami snack	салями-снек
+cofid:19-509	Sausages, pork, chilled, grilled	сосиски свиные охлаждённые на гриле
+cofid:19-510	Sausages, pork, raw	сосиски свиные сырые
+cofid:19-511	Sausages, pork, reduced fat, grilled	сосиски свиные нежирные на гриле
+cofid:19-512	Sausages, pork, chilled, fried in vegetable oil	сосиски свиные охлаждённые жареные на растительном масле
+cofid:19-513	Sausages, premium, grilled	сосиски премиальные на гриле
+cofid:19-514	Burger, Whopper, takeaway	бургер Whopper на вынос
+cofid:19-515	Pie, chicken, individual, baked	пирог куриный порционный запечённый
+cofid:19-516	Chorizo	чоризо
+cofid:19-517	Salami	салями
+cofid:19-518	Scotch eggs, retail	яйца по-шотландски магазинные
+cofid:19-519	Chow mein, beef, retail, reheated	чоу-мейн говяжий магазинный разогретый
+cofid:19-520	Curry, chicken, average, retail, reheated	карри куриное среднее магазинное разогретое
+cofid:19-521	Chicken, stir-fried with rice and vegetables, retail, reheated	курица стир-фрай с рисом и овощами магазинная разогретая
+cofid:19-522	Hot pot, lamb/beef with potatoes, retail, reheated	хотпот с бараниной-говядиной и картофелем магазинный разогретый
+cofid:19-523	Lasagne, retail, reheated	лазанья магазинная разогретая
+cofid:19-524	Spaghetti bolognese, retail, reheated, with spaghetti	спагетти болоньезе магазинные разогретые
+cofid:19-525	Shish kebab in pitta bread with salad	шиш-кебаб в пите с салатом
+cofid:19-526	Doner kebab in pitta bread with salad	дёнер-кебаб в пите с салатом
+cofid:19-527	Chilli con carne, retail, reheated, with rice	чили кон карне магазинное разогретое с рисом
+cofid:19-528	Curry, chicken, average, retail, reheated with rice	карри куриное среднее магазинное разогретое с рисом
+cofid:19-529	Curry, beef, retail, reheated, with rice	карри говяжье магазинное разогретое с рисом
+cofid:19-530	Beef, stir-fried with green peppers, homemade	говядина стир-фрай с зелёным перцем домашняя
+cofid:19-534	Curry, chicken, made with cook-in sauce	карри куриное из готового соуса
+cofid:19-535	Curry, lamb, made with cook-in sauce	карри из баранины из готового соуса
+cofid:19-536	Casserole, pork, made with cook-in sauce	свинина тушёная из готового соуса
+cofid:19-537	Bacon, fat only, average, cooked	бекон только жир приготовленный
+cofid:19-538	Chicken slices	ломтики куриные
+cofid:19-539	Doner kebabs, meat only	дёнер-кебаб только мясо
+cofid:19-540	Curry, chicken tandoori, retail, reheated	карри тандури с курицей магазинное разогретое
+cofid:19-541	Chicken wings, marinated, meat and skin, barbecued	куриные крылья маринованные мясо с кожей на барбекю
+cofid:19-542	Spaghetti bolognese, retail, meat and sauce only, reheated	болоньезе магазинное только мясо с соусом разогретое
+cofid:19-543	Turkey slices	ломтики индюшиные
+cofid:19-544	Burger, hamburger, takeaway	бургер гамбургер на вынос
+cofid:19-545	Burger, cheeseburger, takeaway	бургер чизбургер на вынос
+cofid:19-546	Burger, beef, 62-85%, beef, grilled	бургер говяжий 62-85 % на гриле
+cofid:19-547	Curry, beef and spinach, homemade	карри из говядины со шпинатом домашнее
+cofid:19-548	Beef bourguignonne, made with lean beef, homemade	говядина по-бургундски из постной говядины домашняя
+cofid:19-549	Curry, beef, homemade	карри говяжье домашнее
+cofid:19-550	Stew, beef, made with lean beef, homemade	рагу из постной говядины домашнее
+cofid:19-551	Beef Stroganoff, homemade	бефстроганов домашний
+cofid:19-552	Beef Wellington, homemade	говядина Веллингтон домашняя
 cofid:19-553	Burger, beef, fried in rapeseed oil, homemade	котлета для бургера говяжья жареная
+cofid:19-554	Burger, beef, with bun, fried in rapeseed oil, homemade	бургер говяжий в булочке жареный на рапсовом масле домашний
+cofid:19-555	Burger, beef, grilled, homemade	бургер говяжий на гриле домашний
+cofid:19-556	Burger, beef, with bun, grilled, homemade	бургер говяжий в булочке на гриле домашний
+cofid:19-557	Pie, steak and kidney, single crust, homemade	пирог со стейком и почками открытый домашний
+cofid:19-558	Carbonnade of Beef, homemade	говядина карбонад по-фламандски домашняя
+cofid:19-559	Pie, chicken and mushroom, single crust, homemade	пирог с курицей и грибами открытый домашний
+cofid:19-560	Chicken chasseur, homemade	курица шасёр домашняя
+cofid:19-561	Chicken fricassee, homemade	фрикасе куриное домашнее
+cofid:19-562	Chicken fricassee, reduced fat, homemade	фрикасе куриное нежирное домашнее
+cofid:19-563	Chicken in white sauce, made with semi-skimmed milk	курица в белом соусе на полуобезжиренном молоке
+cofid:19-564	Chicken in white sauce, made with whole milk	курица в белом соусе на цельном молоке
+cofid:19-565	Curry, chicken korma, homemade	карри куриное корма домашнее
+cofid:19-566	Risotto, chicken, homemade	ризотто куриное домашнее
+cofid:19-567	Curry, chicken vindaloo, homemade	карри куриное виндалу домашнее
+cofid:19-568	Curry, chicken vindaloo, reduced fat, homemade	карри куриное виндалу нежирное домашнее
+cofid:19-569	Chicken, stir-fried with mushrooms and cashew nuts, homemade	курица стир-фрай с грибами и кешью домашняя
+cofid:19-570	Chicken, stir-fried with peppers in black bean sauce, homemade	курица стир-фрай с перцем в соусе из чёрных бобов домашняя
+cofid:19-571	Coq au vin, homemade, weighed with bone	кок-о-вен домашний на кости
+cofid:19-572	Corned beef hash, homemade	хэш из солонины домашний
+cofid:19-573	Cornish pasty, homemade	корнуэльский пасти домашний
+cofid:19-574	Coronation chicken, reduced fat, homemade	коронационная курица нежирная домашняя
+cofid:19-575	Pie, Cottage, homemade	пирог коттедж домашний
+cofid:19-576	Devilled kidneys, homemade	почки дьявольские домашние
+cofid:19-577	Sauce, duck a l'orange	соус к утке по-оранжевому
+cofid:19-578	Duck a l'orange, excluding fat and skin, homemade	утка по-оранжевому без жира и кожи домашняя
+cofid:19-579	Duck a l'orange, including fat and skin, homemade	утка по-оранжевому с жиром и кожей домашняя
 cofid:19-580	Duck with pineapple, homemade	утка с ананасом
+cofid:19-581	Frankfurter with bun	сосиска для хот-догов с булочкой
+cofid:19-582	Frankfurter with bun, ketchup, fried onions and mustard	сосиска для хот-догов с булочкой, кетчупом, жареным луком и горчицей
+cofid:19-583	Goulash, homemade	гуляш домашний
+cofid:19-585	Stew, Irish, made with lean lamb, homemade	рагу по-ирландски из постной баранины домашнее
+cofid:19-586	Enchiladas, beef, homemade	энчиладас с говядиной домашние
+cofid:19-587	Kheema, beef, homemade	кхима из говядины домашняя
+cofid:19-588	Beef olives, homemade	говяжьи рулетики домашние
+cofid:19-589	Beef steak pudding, homemade	пудинг со стейком домашний
+cofid:19-590	Stew, beef, with dumplings, homemade	рагу из говядины с галушками домашнее
+cofid:19-591	Curry, lamb biryani, homemade	бирьяни с бараниной домашнее
 cofid:19-592	Curry, lamb biryani, reduced fat, homemade	бирьяни с бараниной
+cofid:19-593	Kheema, lamb, reduced fat, homemade	кхима из баранины нежирная домашняя
+cofid:19-594	Kofta, lamb, coated with breadcrumbs, homemade	кофта из баранины в сухарях домашняя
+cofid:19-595	Curry, lamb rogan josh, homemade	карри из баранины роган джош домашнее
+cofid:19-596	Samosas, lamb, baked, homemade	самосы с бараниной запечённые домашние
+cofid:19-597	Samosas, lamb, deep fried in rapeseed oil, homemade	самосы с бараниной во фритюре на рапсовом масле домашние
+cofid:19-598	Lamb stir-fried with vegetables, homemade	баранина стир-фрай с овощами домашняя
+cofid:19-599	Curry, lamb vindaloo, homemade	карри из баранины виндалу домашнее
+cofid:19-600	Lamb's heart casserole, homemade	сердце баранье тушёное домашнее
+cofid:19-601	Lancashire hotpot, homemade	ланкаширский хотпот домашний
+cofid:19-602	Lemon chicken, homemade	курица в лимоне домашняя
+cofid:19-603	Liver and bacon, fried, homemade	печень с беконом жареная домашняя
+cofid:19-604	Liver and onions, stewed, homemade	печень с луком тушёная домашняя
+cofid:19-605	Meat loaf, homemade	мясной хлеб домашний
+cofid:19-606	Beef, mince, with vegetables, stewed	фарш говяжий с овощами тушёный
+cofid:19-607	Beef, mince, stewed	фарш говяжий тушёный куском
+cofid:19-608	Lamb, mince, stewed with onions	фарш бараний тушёный с луком
+cofid:19-609	Moussaka, homemade	мусака домашняя
+cofid:19-610	Venison in red wine and port, homemade	оленина в красном вине с портвейном домашняя
+cofid:19-611	Pasta with ham and mushroom sauce, homemade	паста с ветчиной в грибном соусе домашняя
+cofid:19-612	Casserole, pork and apple, homemade	свинина тушёная с яблоками домашняя
+cofid:19-613	Meatballs, pork and beef, in tomato sauce, homemade	фрикадельки из свинины и говядины в томатном соусе домашние
+cofid:19-614	Chow mein, pork and chicken, homemade	чоу-мейн со свининой и курицей домашний
+cofid:19-615	Kebabs, pork and pineapple, homemade	шашлык свиной с ананасом домашний
+cofid:19-623	Casserole, rabbit, homemade	кролик тушёный домашний
+cofid:19-625	Salmis of pheasant, homemade	сальми из фазана домашнее
+cofid:19-626	Shepherd's pie, homemade	пастуший пирог домашний
+cofid:19-627	Shish kebabs, with onions and peppers, homemade	шиш-кебабы с луком и перцем домашние
+cofid:19-628	Spaghetti bolognese, homemade	спагетти болоньезе домашние
+cofid:19-629	Pie, steak and kidney, double crust, homemade	пирог со стейком и почками закрытый домашний
+cofid:19-630	Steak and kidney pudding, homemade	пудинг со стейком и почками домашний
+cofid:19-631	Cabbage leaves, stuffed with lamb and rice, homemade	голубцы с бараниной и рисом домашние
+cofid:19-632	Peppers, stuffed with beef, rice and vegetables, homemade	перец фаршированный говядиной, рисом и овощами домашний
+cofid:19-635	Toad in the hole, homemade	сосиски в тесте домашние
+cofid:19-636	Toad in the hole, made with skimmed milk and reduced fat sausages, homemade	сосиски в тесте на обезжиренном молоке с нежирными сосисками домашние
+cofid:19-637	Tripe and onions, stewed, homemade	рубец с луком тушёный домашний
+cofid:19-638	Turkey and pasta bake, homemade	запеканка из индейки с макаронами домашняя
+cofid:19-639	Pie, turkey, single crust, homemade	пирог с индейкой открытый домашний
+cofid:19-640	Turkey, stir-fried with vegetables, homemade	индейка стир-фрай с овощами домашняя
+cofid:19-641	Wiener schnitzel, homemade	венский шницель домашний
+cofid:19-642	Kofta, beef, homemade	кофта из говядины домашняя
+cofid:19-643	Sausage rolls, short pastry, homemade	рулеты с колбаской в песочном тесте домашние
+cofid:19-644	Bacon loin steaks, lean, grilled	бекон стейки корейковые постные на гриле
+cofid:19-645	Bacon rashers, back, dry-cured, grilled	бекон спинной полосками сухой соли на гриле
+cofid:19-646	Bacon rashers, back, fat trimmed, raw	бекон спинной полосками с обрезанным жиром сырой
+cofid:19-647	Bacon rashers, back, sweetcure, grilled	бекон спинной полосками сладкой соли на гриле
+cofid:19-648	Bacon rashers, middle, fried in corn oil	бекон средний полосками жареный на кукурузном масле
+cofid:19-649	Bacon rashers, middle, raw	бекон средний полосками сырой
+cofid:19-650	Bacon, fat only, average, raw	бекон только жир сырой
+cofid:19-651	Burger, beef, 62-85% beef, raw	бургер говяжий 62-85 % сырой
+cofid:19-652	Chicken wings, marinated, meat and skin, barbecued, weighed with bone	куриные крылья маринованные мясо с кожей на барбекю на кости
+cofid:19-653	Sausages, beef, fried in vegetable oil	сосиски говяжьи жареные на растительном масле
+cofid:19-654	Sausages, pork, frozen, fried in vegetable oil	сосиски свиные замороженные жареные на растительном масле
+cofid:19-655	Sausages, pork, frozen, grilled	сосиски свиные замороженные на гриле
+cofid:19-656	Sausages, beef, raw	сосиски говяжьи сырые
+cofid:19-657	Sausages, premium, raw	сосиски премиальные сырые
+cofid:19-658	Sausages, pork, reduced fat, raw	сосиски свиные нежирные сырые
+cofid:19-659	Bacon rashers, back, smoked, grilled	бекон спинной полосками копчёный на гриле
+cofid:19-660	Bacon rashers, back, 'tendersweet', grilled	бекон спинной полосками «тендерсвит» на гриле
+cofid:19-661	Sausages, premium, fried in vegetable oil	сосиски премиальные жареные на растительном масле
+cofid:19-662	Sausages, pork, reduced fat, fried in vegetable oil	сосиски свиные нежирные жареные на растительном масле
+cofid:19-663	Chicken chasseur, homemade, weighed with bone	курица шасёр домашняя на кости
+cofid:19-664	Beef, minced, stewed with onions, extra lean	фарш говяжий с луком тушёный экстра-постный
+cofid:19-665	Pork chops in mustard and cream, homemade	свиные отбивные в горчично-сливочном соусе домашние
+cofid:19-666	Pork chops in mustard and cream, homemade, weighed with bone	свиные отбивные в горчично-сливочном соусе домашние на кости
+cofid:19-667	Pork, stir-fried with vegetables, homemade	свинина стир-фрай с овощами домашняя
+cofid:19-668	Pork, sweet and sour, made with lean pork, homemade	свинина кисло-сладкая из постной свинины домашняя
+cofid:19-669	Pork, sweet and sour, made with sweet and sour cook in sauce	свинина кисло-сладкая из готового соуса
+cofid:19-670	Pork, spare ribs, 'barbecue style', homemade	рёбрышки свиные «барбекю» домашние
+cofid:19-671	Pork, spare ribs, 'barbecue style', homemade, weighed with bone	рёбрышки свиные «барбекю» домашние на кости
+cofid:19-672	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade	рёбрышки свиные в соусе из чёрных бобов только мясо домашние
+cofid:19-673	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade, weighed with bone	рёбрышки свиные в соусе из чёрных бобов только мясо домашние на кости
+cofid:50-1173	Tomato sauce, homemade	соус из томатов домашний
+cofid:50-494	Oxtail, meat only, stewed, weighed with fat and bones	хвост говяжий тушёный только мясо с жиром и костями
+cofid:50-502	Tripe, dressed, stewed in milk	рубец обработанный тушёный в молоке
+cofid:50-629	Trout, brown, steamed	форель ручьевая на пару
+cofid:50-630	Trout, brown, steamed, weighed with bones	форель ручьевая на пару с костями
+cofid:50-681	Potato chips, straight cut, frozen, fried in blended oil	картофель фри обычный замороженный жареный на смеси масел
+cofid:50-683	Potato chips, straight cut, frozen, fried in dripping	картофель фри обычный замороженный жареный на вытопленном жире
+cofid:50-684	Potato chips, fine cut, frozen, fried in blended vegetable oil	картофель фри тонкий замороженный жареный на смеси растительных масел
+cofid:50-686	Potato chips, fine cut, frozen, fried in dripping	картофель фри тонкий замороженный жареный на вытопленном жире
 fdc:1104647	Garlic, raw	чеснок свежий
 fdc:1104705	Flour, soy, defatted	соевая мука обезжиренная
 fdc:1104766	Flour, soy, full-fat	мука соевая жирная
