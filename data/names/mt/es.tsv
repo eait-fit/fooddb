@@ -6624,8 +6624,106 @@ fdc:173908	Cereals, oats, instant, fortified, with raisins and spice, prepared w
 fdc:173909	Cereals ready-to-eat, MALT-O-MEAL, MARSHMALLOW MATEYS	cereales Marshmallow Mateys Malt-O-Meal
 fdc:173910	Cereals ready-to-eat, POST, Shredded Wheat, original big biscuit	almohadillas de trigo triturado grandes Post
 fdc:173911	Cereals ready-to-eat, POST, Shredded Wheat, original spoon-size	almohadillas de trigo triturado pequeñas Post
-fdc:173998	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw	redondo de ternera crudo
-fdc:174006	Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0" fat, select, cooked, roasted	solomillo de ternera asado
+fdc:173912	Cereals ready-to-eat, rice, puffed, fortified	arroz inflado enriquecido
+fdc:173913	Cereals ready-to-eat, wheat, puffed, fortified	trigo inflado enriquecido
+fdc:173914	Cereals, CREAM OF RICE, cooked with water, with salt	papilla de arroz Cream of Rice con sal
+fdc:173915	Cereals, CREAM OF WHEAT, regular (10 minute), cooked with water, with salt	sémola Cream of Wheat con sal
+fdc:173916	Cereals, farina, unenriched, dry	sémola de trigo seca
+fdc:173917	Cereals, farina, enriched, cooked with water, with salt	sémola de trigo enriquecida cocida con sal
+fdc:173918	Cereals ready-to-eat, POST, Shredded Wheat, lightly frosted, spoon-size	almohadillas de trigo triturado pequeñas glaseadas Post
+fdc:173919	Cereals ready-to-eat, POST SELECTS Blueberry Morning	cereales Blueberry Morning Post Selects
+fdc:173920	Cereals, oats, instant, fortified, maple and brown sugar, dry	avena instantánea con arce y azúcar moreno enriquecida seca
+fdc:173921	Cereals ready-to-eat, QUAKER WHOLE HEARTS oat cereal	cereales de avena Whole Hearts Quaker
+fdc:173922	Cereals, QUAKER, Weight Control Instant Oatmeal, maple and brown sugar	avena instantánea control de peso con arce Quaker
+fdc:173923	Cereals, QUAKER, Weight Control Instant Oatmeal, banana bread	avena instantánea control de peso de plátano Quaker
+fdc:173924	Cereals, QUAKER, oatmeal, REAL MEDLEYS, peach almond, dry	avena Real Medleys melocotón-almendra Quaker seca
+fdc:173925	Cereals, QUAKER, oatmeal, REAL MEDLEYS, cherry pistachio, dry	avena Real Medleys cereza-pistacho Quaker seca
+fdc:173926	Cereals, QUAKER, Instant Oatmeal, weight control, cinnamon	avena instantánea control de peso con canela Quaker
+fdc:173927	Cereals ready-to-eat, MOM'S BEST, Sweetened WHEAT-FULS	cereales de trigo azucarados Wheat-fuls Mom's Best
+fdc:173928	Apples, raw, without skin, cooked, boiled	manzanas sin piel cocidas
+fdc:173929	Apples, raw, without skin, cooked, microwave	manzanas sin piel al microondas
+fdc:173930	Apples, canned, sweetened, sliced, drained, heated	manzanas en conserva azucaradas en gajos escurridas calentadas
+fdc:173931	Apples, dehydrated (low moisture), sulfured, uncooked	manzanas semideshidratadas crudas
+fdc:173932	Apples, frozen, unsweetened, heated (Includes foods for USDA's Food Distribution Program)	manzanas congeladas sin azúcar calentadas
+fdc:173933	Apple juice, canned or bottled, unsweetened, without added ascorbic acid	zumo de manzana sin azúcar
+fdc:173934	Apple juice, frozen concentrate, unsweetened, undiluted, without added ascorbic acid	zumo de manzana concentrado congelado sin diluir
+fdc:173935	Apple juice, frozen concentrate, unsweetened, diluted with 3 volume water without added ascorbic acid	zumo de manzana de concentrado
+fdc:173936	Apricots, canned, water pack, without skin, solids and liquids	albaricoques en conserva en agua sin piel
+fdc:173937	Apricots, canned, juice pack, with skin, solids and liquids	albaricoques en conserva en su jugo con piel
+fdc:173938	Apricots, canned, extra light syrup pack, with skin, solids and liquids (Includes foods for USDA's Food Distribution Program)	albaricoques en conserva en almíbar muy ligero con piel
+fdc:173939	Apricots, canned, light syrup pack, with skin, solids and liquids	albaricoques en conserva en almíbar ligero con piel
+fdc:173940	Apricots, dehydrated (low-moisture), sulfured, stewed	albaricoques semideshidratados en compota
+fdc:173941	Apricots, dried, sulfured, uncooked	orejones crudos
+fdc:173942	Apricots, dried, sulfured, stewed, without added sugar	orejones en compota sin azúcar
+fdc:173943	Apricots, dried, sulfured, stewed, with added sugar	orejones en compota con azúcar
+fdc:173944	Bananas, raw	plátanos frescos
+fdc:173945	Bananas, dehydrated, or banana powder	plátanos secos
+fdc:173946	Blackberries, raw	zarzamoras frescas
+fdc:173947	Blackberry juice, canned	zumo de zarzamora en conserva
+fdc:173948	Blueberries, canned, heavy syrup, solids and liquids	arándanos en conserva en almíbar
+fdc:173949	Blueberries, wild, frozen (Includes foods for USDA's Food Distribution Program)	arándanos silvestres congelados
+fdc:173950	Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)	arándanos congelados sin azúcar
+fdc:173951	Blueberries, frozen, sweetened	arándanos congelados con azúcar
+fdc:173952	Carissa, (natal-plum), raw	carisa fresca
+fdc:173953	Cherimoya, raw	chirimoya fresca
+fdc:173954	Cherries, sour, red, raw	guindas frescas
+fdc:173955	Cherries, sour, red, canned, water pack, solids and liquids	guindas en conserva en agua
+fdc:173956	Cherries, sour, red, canned, light syrup pack, solids and liquids	guindas en conserva en almíbar ligero
+fdc:173957	Cherries, sweet, canned, water pack, solids and liquids	cerezas en conserva en agua
+fdc:173958	Cherries, sweet, canned, juice pack, solids and liquids	cerezas en conserva en su jugo
+fdc:173959	Cherries, sweet, canned, light syrup pack, solids and liquids	cerezas en conserva en almíbar ligero
+fdc:173960	Cherries, sweet, canned, pitted, heavy syrup pack, solids and liquids	cerezas sin hueso en conserva en almíbar
+fdc:173961	Cranberry sauce, canned, sweetened	salsa de arándanos en conserva
+fdc:173962	Cranberry-orange relish, canned	relish de arándano y naranja en conserva
+fdc:173963	Currants, european black, raw	grosellas negras frescas
+fdc:173964	Currants, red and white, raw	grosellas rojas y blancas frescas
+fdc:173965	Beef, Australian, imported, grass-fed, loin, tenderloin steak/roast, boneless, separable lean only, raw	vacuno australiano de pasto solomillo sin hueso magro crudo
+fdc:173966	Beef, Australian, imported, Wagyu, loin, tenderloin steak/roast, boneless, separable lean only, Aust. marble score 4/5, raw	vacuno wagyu solomillo sin hueso magro marmoleo 4/5 crudo
+fdc:173967	Beef, Australian, imported, Wagyu, external fat, Aust. marble score 9, raw	vacuno wagyu grasa externa marmoleo 9 cruda
+fdc:173968	Beef, Australian, imported, Wagyu, seam fat, Aust. marble score 9, raw	vacuno wagyu grasa intermuscular marmoleo 9 cruda
+fdc:173969	Beef, Australian, imported, grass-fed, loin, tenderloin steak/roast, boneless, separable lean and fat, raw	vacuno australiano de pasto solomillo sin hueso con grasa crudo
+fdc:173970	Beef, Australian, imported, grass-fed, loin, top loin steak/roast, boneless, separable lean only, raw	vacuno australiano de pasto lomo alto sin hueso magro crudo
+fdc:173971	Beef, Australian, imported, grass-fed, round, bottom round steak/roast, boneless, separable lean only, raw	vacuno australiano de pasto contra sin hueso magra cruda
+fdc:173972	Beef, Australian, imported, grass-fed, round, top round cap-off steak/roast, boneless, separable lean only, raw	vacuno australiano de pasto tapa sin hueso magra cruda
+fdc:173973	Beef, Australian, imported, Wagyu, loin, tenderloin steak/roast, boneless, separable lean only, Aust. marble score 9, raw	vacuno wagyu solomillo sin hueso magro marmoleo 9 crudo
+fdc:173974	Beef, Australian, imported, Wagyu, loin, top loin steak/roast, boneless, separable lean only, Aust. marble score 4/5, raw	vacuno wagyu lomo alto sin hueso magro marmoleo 4/5 crudo
+fdc:173975	Beef, Australian, imported, grass-fed, rib, ribeye steak/roast lip-on, boneless, separable lean and fat, raw	vacuno australiano de pasto ribeye con borde sin hueso con grasa crudo
+fdc:173976	Beef, Australian, imported, grass-fed, round, bottom round steak/roast, boneless, separable lean and fat, raw	vacuno australiano de pasto contra sin hueso con grasa cruda
+fdc:173977	Beef, Australian, imported, grass-fed, round, top round cap-off steak/roast, boneless, separable lean and fat, raw	vacuno australiano de pasto tapa sin hueso con grasa cruda
+fdc:173978	Beef, Australian, imported, Wagyu, loin, top loin steak/roast, boneless, separable lean and fat, Aust. marble score 4/5, raw	vacuno wagyu lomo alto sin hueso con grasa marmoleo 4/5 crudo
+fdc:173979	Beef, Australian, imported, Wagyu, loin, top loin steak/roast, separable lean and fat, Aust. marble score 9, raw	vacuno wagyu lomo alto con grasa marmoleo 9 crudo
+fdc:173980	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	filete de tapa de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:173981	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de tapa de vacuno sin hueso con grasa sin grasa visible crudo (select)
+fdc:173982	Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	asado de tapa de vacuno sin hueso con grasa sin grasa visible crudo
+fdc:173983	Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	asado de tapa de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:173984	Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de redondo de vacuno sin hueso con grasa sin grasa visible crudo
+fdc:173985	Beef, round, eye of round steak, boneless separable lean and fat, trimmed to 0" fat, choice, raw	filete de redondo de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:173986	Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de redondo de vacuno sin hueso con grasa sin grasa visible crudo (select)
+fdc:173987	Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	asado de solomillo de vacuno sin hueso con grasa sin grasa visible crudo
+fdc:173988	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de solomillo de vacuno sin hueso con grasa sin grasa visible crudo
+fdc:173989	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	filete de solomillo de vacuno sin hueso con grasa sin grasa visible crudo (choice)
+fdc:173990	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de solomillo de vacuno sin hueso con grasa sin grasa visible crudo (select)
+fdc:173991	Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado de solomillo de vacuno sin hueso con grasa sin grasa visible asado
+fdc:173992	Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de tapa de vacuno sin hueso con grasa sin grasa visible asado (select)
+fdc:173993	Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de redondo de vacuno sin hueso con grasa sin grasa visible a la parrilla
+fdc:173994	Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de redondo de vacuno sin hueso con grasa sin grasa visible a la parrilla (choice)
+fdc:173995	Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de redondo de vacuno sin hueso con grasa sin grasa visible a la parrilla (select)
+fdc:173996	Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, choice, raw	asado de tapa de vacuno sin hueso magro sin grasa visible crudo (choice)
+fdc:173997	Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, select, raw	asado de tapa de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:173998	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw	asado de redondo de vacuno sin hueso magro sin grasa visible crudo
+fdc:173999	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, choice, raw	asado de redondo de vacuno sin hueso magro sin grasa visible crudo (choice)
+fdc:174000	Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, choice, raw	asado de solomillo de vacuno sin hueso magro sin grasa visible crudo (choice)
+fdc:174001	Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, select, raw	asado de solomillo de vacuno sin hueso magro sin grasa visible crudo (select)
+fdc:174002	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw	filete de lomo alto de vacuno sin hueso sin borde magro sin grasa visible crudo
+fdc:174003	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, raw	filete de lomo alto de vacuno sin hueso sin borde magro sin grasa visible crudo (choice)
+fdc:174004	Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	asado de solomillo de vacuno sin hueso magro sin grasa visible asado
+fdc:174005	Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de solomillo de vacuno sin hueso magro sin grasa visible asado (choice)
+fdc:174006	Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0" fat, select, cooked, roasted	asado de solomillo de vacuno sin hueso magro sin grasa visible asado (select)
+fdc:174007	Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	asado de tapa de vacuno sin hueso magro sin grasa visible asado
+fdc:174008	Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	filete de redondo de vacuno sin hueso magro sin grasa visible a la parrilla (select)
+fdc:174009	Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, raw	filete de lomo alto de vacuno sin hueso con borde magro grasa 1/8" crudo (select)
+fdc:174010	Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw	filete de lomo alto de vacuno sin hueso con borde magro grasa 1/8" crudo (choice)
+fdc:174011	Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw	filete de lomo alto de vacuno sin hueso con borde magro grasa 1/8" crudo
 fdc:174104	Crackers, gluten-free, multi-seeded and multigrain	galletas saladas sin gluten con semillas
 fdc:174305	Tofu, salted and fermented (fuyu), prepared with calcium sulfate	tofu fermentado salado
 fdc:174403	Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero cruda
