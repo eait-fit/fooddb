@@ -6506,59 +6506,753 @@ ciqual:15048	Mix of nuts and dried fruit, no added salt	mezcla de frutos secos y
 ciqual:15049	Mix of nuts and raisins, no added salt	mezcla de frutos secos y pasas
 ciqual:15050	Hazelnut, grilled, salted	avellanas tostadas saladas
 ciqual:15052	Flaxseed, brown, seed	semillas de lino marrones
+ciqual:15053	Peanut, grilled, no added salt	cacahuete tostado
+ciqual:15054	Cashew nut, grilled, no added salt	anacardos tostados
+ciqual:15055	Cashew nut, dry-grilled, no added salt	anacardos tostados en seco
+ciqual:15057	Peanut, grilled, flavoured	cacahuete tostado aromatizado
+ciqual:15058	Candied peanut	cacahuete garrapiñado
+ciqual:15059	Mix of nuts, grilled, salted	mezcla de frutos secos tostados salados
+ciqual:15062	Almond, grilled, salted, smoked	almendras tostadas saladas ahumadas
+ciqual:15063	Hemp, seed, hulled	semillas de cáñamo peladas
+ciqual:15064	Pumpkin and squash, seed, dried	semillas de calabaza secas
+ciqual:15065	Seeds and peanuts, dried, salted (average)	mezcla de frutos secos y cacahuetes salada
+ciqual:15066	Seeds and peanuts, dried, unsalted (average)	mezcla de frutos secos y cacahuetes sin sal
+ciqual:15201	Marzipan or almond paste, prepacked	mazapán
+ciqual:15202	Peanut butter or peanut paste	crema de cacahuete
+ciqual:15203	Tahini (sesame paste)	tahini
+ciqual:16030	Cocoa butter	manteca de cacao
+ciqual:16040	Coconut fat or oil	aceite de coco
+ciqual:16050	Coconut fat or oil, virgin	aceite de coco virgen
+ciqual:16060	Coconut fat or oil, refined	aceite de coco refinado
+ciqual:16080	Solid vegetal fat (margarine type), for frying	grasa vegetal sólida para freír
+ciqual:16110	Shea butter or shea oil	manteca de karité
+ciqual:16128	Frying oil	aceite para freír
+ciqual:16150	Palm oil, refined	aceite de palma refinado
+ciqual:16200	Palm kernel fat	aceite de palmiste
+ciqual:16400	Butter, 80% fat minimum, unsalted	mantequilla 80 % sin sal
+ciqual:16401	Butter oil or concentrated butter	mantequilla clarificada
+ciqual:16402	Butter, 80% fat minimum, half-salted	mantequilla 80 % semisalada
+ciqual:16403	Butter, 80% fat minimum, salted	mantequilla 80 % con sal
+ciqual:16404	Butter, 82% fa minimumt, unsalted, easy-to-spread	mantequilla tierna 82 % sin sal
+ciqual:16410	Butter, 60-62% fat, light, unsalted	mantequilla ligera 60-62 % sin sal
+ciqual:16411	Butter, 60-62% fat, light, half-salted	mantequilla ligera 60-62 % semisalada
+ciqual:16412	Butter spread, reduced fat, unsalted (average)	crema de mantequilla ligera sin sal
+ciqual:16413	Butter, unknown fat content, half-salted (average)	mantequilla semisalada
+ciqual:16414	Butter, unknown fat content, unsalted (average)	mantequilla sin sal
+ciqual:16415	Butter, light, 39-41% fat, unsalted	mantequilla ligera 39-41 % sin sal
+ciqual:16416	Butter, light, 39-41% fat, half-salted	mantequilla ligera 39-41 % semisalada
+ciqual:16520	Lard or pork fat	manteca de cerdo
 ciqual:16530	Pork fat, raw	tocino de cerdo crudo
+ciqual:16540	Chicken fat	grasa de pollo
+ciqual:16550	Duck fat	grasa de pato
+ciqual:16560	Goose fat	grasa de oca
+ciqual:16570	Turkey fat	grasa de pavo
+ciqual:16588	Spreadable fat <= 41% fat, unsalted, with plant strols	grasa para untar hasta 41 % sin sal con esteroles vegetales
+ciqual:16589	Spreadable fat > 62% fat, unsalted, rich in omega 3	grasa para untar más del 62 % sin sal con omega 3
+ciqual:16590	Spreadable fat > 62% fat, unsalted, standard	grasa para untar más del 62 % sin sal
+ciqual:16591	Spreadable fat > 41% fat and <= 62% fat, unsalted, standard	grasa para untar 41-62 % sin sal
+ciqual:16592	Spreadable fat <= 41% fat, unsalted, standard	grasa para untar hasta 41 % sin sal
+ciqual:16593	Spreadable fat > 62% fat, half-salted	grasa para untar más del 62 % semisalada
+ciqual:16594	Spreadable fat > 41% fat and <= 62% fat, half-salted	grasa para untar 41-62 % semisalada
+ciqual:16595	Spreadable fat > 41% fat and <= 62% fat, unsalted, with plant sterols	grasa para untar 41-62 % sin sal con esteroles vegetales
+ciqual:16596	Spreadable fat > 41% fat and <= 62% fat, unsalted, rich in omega 3	grasa para untar 41-62 % sin sal con omega 3
+ciqual:16597	Spreadable fat > 41% fat and <= 62% fat, half-salted, rich in omega 3	grasa para untar 41-62 % semisalada con omega 3
+ciqual:16598	Spreadable fat <= 41% fat, half-salted, with plant sterols	grasa para untar hasta 41 % semisalada con esteroles vegetales
+ciqual:16599	Spreadable fat <= 41% fat, unsalted, rich in omega 3	grasa para untar hasta 41 % sin sal con omega 3
+ciqual:16600	Spreadable fat <= 41% fat, half-salted, standard	grasa para untar hasta 41 % semisalada
+ciqual:16601	Spreadable fat, fat % unknown, unsalted (average)	grasa para untar sin sal
+ciqual:16602	Spreadable fat, fat % unknown, half-salted (average)	grasa para untar semisalada
+ciqual:16603	Spreadable fat, fat % unknown, unsalted, rich in omega 3 (average)	grasa para untar sin sal con omega 3
+ciqual:16713	Spreadable dairy fat 15-25% fat, light, spreadable, unsalted, fortified with vitamin(s)	grasa láctea para untar 15-25 % sin sal con vitaminas
+ciqual:17001	Vegetable oil (average)	aceite vegetal
+ciqual:17020	Apricot kernel oil	aceite de hueso de albaricoque
+ciqual:17030	Almond oil	aceite de almendras
+ciqual:17040	Peanut oil	aceite de cacahuete
+ciqual:17100	Avocado oil	aceite de aguacate
+ciqual:17110	Wheat germ oil	aceite de germen de trigo
+ciqual:17130	Rapeseed oil	aceite de colza
+ciqual:17170	Cottonseed oil	aceite de algodón
+ciqual:17180	Linseed oil	aceite de linaza
+ciqual:17190	Maize/corn oil	aceite de maíz
+ciqual:17210	Hazelnut oil	aceite de avellana
+ciqual:17220	Walnut oil	aceite de nuez
+ciqual:17270	Olive oil, extra virgin	aceite de oliva virgen extra
+ciqual:17325	Poppyseed oil	aceite de amapola
+ciqual:17350	Grapeseed oil	aceite de pepitas de uva
+ciqual:17390	Rice bran oil	aceite de salvado de arroz
+ciqual:17400	Sesame oil	aceite de sésamo
+ciqual:17420	Soy oil	aceite de soja
+ciqual:17440	Sunflower oil	aceite de girasol
+ciqual:17630	Cod liver oil	aceite de hígado de bacalao
+ciqual:17640	Sardine oil	aceite de sardina
+ciqual:17645	Salmon oil	aceite de salmón
+ciqual:17650	Herring oil	aceite de arenque
+ciqual:17700	Combined oil (blended vegetable oils)	mezcla de aceites vegetales
+ciqual:17701	Combined oil (mix of olive oil and seeds oil)	mezcla de aceite de oliva y aceites de semillas
+ciqual:17800	Camelina oil	aceite de camelina
+ciqual:17850	Hemp oil	aceite de cáñamo
+ciqual:17900	Argan oil	aceite de argán
+ciqual:18001	Carbonated beverage or soft drink, without fruit , no added sugars and with sweetener(s)	refresco aromatizado sin azúcar con edulcorantes
+ciqual:18003	Coffee, ground	café molido
+ciqual:18004	Coffee, non instant no added sugars, ready-to-drink	café sin azúcar listo para beber
+ciqual:18005	Coffee, powder, instant	café soluble
+ciqual:18007	Cocktail, alcohol-free (juices based cocktail without syrup)	cóctel sin alcohol de zumos
+ciqual:18009	Mineral sparkling water, bottled, lightly mineralized (average)	agua mineral con gas débilmente mineralizada
+ciqual:18010	Lemonade, with sugar(s)	limonada con azúcar
+ciqual:18011	Coconut water	agua de coco
+ciqual:18012	Bottled water, flavoured, with sugar(s)	agua saborizada con azúcar
+ciqual:18013	Tonic drink, no added sugars, with sweetener(s)	tónica sin azúcar
+ciqual:18014	Tonic drink, with sugar(s) and sweetener(s)	tónica con azúcar y edulcorantes
+ciqual:18015	Still soft drink with tea extract, with sugar(s) and sweetener(s)	bebida de té con azúcar y edulcorantes
+ciqual:18016	Lemonade, with sugar(s) and with sweetener(s)	limonada con azúcar y edulcorantes
+ciqual:18017	Syrup, to be diluted, with sugar(s)	sirope para diluir con azúcar
+ciqual:18018	Cola, with sugar(s)	cola con azúcar
+ciqual:18019	Carbonated beverage or fruit soft drink , fruit content >= 10% and < 50%, with sugar(s)	refresco de frutas con azúcar (10-50 % de fruta)
+ciqual:18020	Tea, brewed, no added sugars	té sin azúcar
+ciqual:18021	Still soft drink, fruit content <10%, no added sugars and with sweetener(s)	bebida de frutas sin azúcar con edulcorantes
+ciqual:18022	Infusion, brewed, no added sugars	infusión sin azúcar
+ciqual:18023	Still soft drink, fruit content <10%, with sugar(s)	bebida de frutas con azúcar (<10 % de fruta)
+ciqual:18024	Still soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	bebida de frutas con azúcar y edulcorantes (10-50 % de fruta)
+ciqual:18025	Kombucha, prepacked	kombucha
+ciqual:18026	Carbonated beverage or soft drink, without fruit, with sugar(s)	refresco aromatizado con azúcar
+ciqual:18028	Bottled water, flavoured, no added sugars and no sweetener(s)	agua saborizada sin azúcar ni edulcorantes
+ciqual:18029	Non-alcoholic beverage (average)	bebida sin alcohol
+ciqual:18030	Bottled water, flavoured, no added sugars and with sweetener(s)	agua saborizada sin azúcar con edulcorantes
+ciqual:18033	Carbonated beverage or fruit soft drink, fruit content < 10% , with sugar(s) and with sweetener(s)	refresco de frutas con azúcar y edulcorantes
+ciqual:18034	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, with sugar(s) and with sweetener(s)	refresco de frutas con azúcar y edulcorantes (10-50 % de fruta)
+ciqual:18035	Lemonade, no added sugars, with sweetener(s)	limonada sin azúcar
+ciqual:18037	Cola, with sugar(s) and with sweetener(s)	cola con azúcar y edulcorantes
+ciqual:18039	Lemonade with syrupwith sugar(s)	limonada con sirope con azúcar
+ciqual:18041	Coconut milk	leche de coco
+ciqual:18044	Water, mineral (average)	agua mineral
+ciqual:18045	Mineral still water, bottled (average)	agua mineral sin gas
+ciqual:18046	Mineral sparkling water, bottled (average)	agua mineral con gas
+ciqual:18048	Carbonated beverage or fruit soft drink (fruit juice content unknown), with sugar(s) (average)	refresco de frutas con azúcar
+ciqual:18049	Carbonated beverage or fruit soft drink, fruit content < 10% , with sugar(s)	refresco de frutas con azúcar (<10 % de fruta)
+ciqual:18050	Carbonated beverage or fruit soft drink, fruit content <10%, reduced sugar	refresco de frutas bajo en azúcar
+ciqual:18051	Carbonated beverage or fruit soft drink, fruit content >= 10% and < 50%, no added sugars and with sweetener(s)	refresco de frutas sin azúcar con edulcorantes (10-50 % de fruta)
+ciqual:18057	Preparation for beverage diluted in water (eg. mint, strawberry etc.), no added sugars, with sweetener(s), type syrup 0%	bebida de concentrado sin azúcar con edulcorantes
+ciqual:18058	Syrup (eg. Mint, strawberry etc.), with sugar(s), diluted in water	bebida de sirope con azúcar diluida en agua
+ciqual:18059	Concentrate beverage (to be diluted), no added sugars and with sweeteners, "syrup 0%" type	bebida concentrada sin azúcar con edulcorantes para diluir
+ciqual:18060	Cola, without added sugars and with sweetener(s)	cola sin azúcar
+ciqual:18062	Still soft drink with tea extract, sugar and sweetener contents unknown (average)	bebida de té
+ciqual:18063	Cola, sugar(s) and sweetener(s) content unknown (average)	cola
+ciqual:18064	Still soft drink with tea extract, flavoured, reduced sugar	bebida de té baja en azúcar
+ciqual:18065	Still soft drink with tea extract, flavoured, no added sugars and with sweetener(s)	bebida de té sin azúcar
+ciqual:18066	Water, municipal	agua del grifo
+ciqual:18067	Cola, with sugar(s) and without caffeine	cola con azúcar sin cafeína
+ciqual:18068	Cola, without added sugars, with sweetener(s) and no caffeine	cola sin azúcar ni cafeína
+ciqual:18069	Decaffeinated coffee, powder, instant	café soluble descafeinado
+ciqual:18070	Decaffeinated non instant coffee, no added sugars, ready-to-drink	café descafeinado sin azúcar listo para beber
+ciqual:18071	Espresso coffee non instant coffee, no added sugars, ready-to-drink	café expreso sin azúcar
+ciqual:18072	Decaffeinated instant coffee, no added sugars, ready-to-drink	café soluble descafeinado sin azúcar listo para beber
+ciqual:18073	Instant coffee, no added sugars, ready-to-drink	café soluble sin azúcar listo para beber
+ciqual:18075	Still soft drink with tea extract, flavoured, with sugar(s)	bebida de té con azúcar
+ciqual:18076	Tea leaf	té en hoja
+ciqual:18078	Carbonated beverage or soft drink, without fruit, with sugar(s) and with sweetener(s)	refresco aromatizado con azúcar y edulcorantes
+ciqual:18100	Cocoa powder, no added sugars, powder, instant	cacao en polvo soluble sin azúcar
+ciqual:18101	Cocoa or chocolate powder, for beverages, with sugar(s)	cacao en polvo para bebidas con azúcar
+ciqual:18102	Malted cocoa or chocolate powder for beverage, with sugar(s), fortified with vitamins and minerals	cacao en polvo malteado con azúcar con vitaminas y minerales
+ciqual:18104	Instant cocoa or chocolate beverage, with sugar(s), ready-to-drink (reconstituted with standard semi-skimmed milk)	cacao soluble con azúcar preparado con leche
+ciqual:18106	Instant cocoa or chocolate beverage, with sugar(s), fortified with vitamins, ready-to-drink (reconstituted with semi-skimmed milk)	cacao soluble con azúcar con vitaminas preparado con leche
+ciqual:18107	Almond drink, plain, no added sugars, not fortified, prepacked	bebida de almendras sin azúcar
+ciqual:18110	Almond drink, with sugar(s), fortified with calcium, prepacked	bebida de almendras con azúcar con calcio
+ciqual:18111	Almond drink, prepacked (average)	bebida de almendras
+ciqual:18112	Plant-based drink, prepacked (average)	bebida vegetal
+ciqual:18113	Soy drink, prepacked (average)	bebida de soja
+ciqual:18150	Mix of chicory and coffee, powder, instant	mezcla de achicoria y café soluble
+ciqual:18151	Coffee with milk or white coffee or cappuccino, instant or non instant coffee, no added sugars, ready-to-drink	café con leche sin azúcar listo para beber
+ciqual:18152	Chicory, powder, instant	achicoria soluble
+ciqual:18153	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	mezcla de achicoria y café soluble sin azúcar preparada con leche
+ciqual:18154	Black tea, brewed, no added sugars	té negro sin azúcar
+ciqual:18155	Green tea, brewed, no added sugars	té verde sin azúcar
+ciqual:18160	Coffee with milk or cappuccino, powder, instant	café con leche soluble
+ciqual:18161	Instant chicory, no added sugars, ready-to-drink (reconstituted with standard semi-skimmed milk)	achicoria soluble sin azúcar preparada con leche
+ciqual:18162	Mix of chicory and coffee, instant, no added sugars, ready-to-drink (reconstituted with water)	mezcla de achicoria y café soluble sin azúcar preparada con agua
+ciqual:18163	Coffee with milk or cappuccino with chocolate, powder, instant	capuchino con chocolate soluble
+ciqual:18167	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins and minerals	cacao en polvo para bebidas con azúcar con vitaminas y minerales
+ciqual:18168	Cocoa or chocolate powder, for beverages, with sugar(s), fortified with vitamins	cacao en polvo para bebidas con azúcar con vitaminas
+ciqual:18220	Lemon speciality to be diluted, for beverages or culinary use, no added sugars	concentrado de limón para diluir sin azúcar
+ciqual:18294	Still soft drink, fruit content <10%, with sugar(s), refrigerated fortified with vitamin(s)	bebida de frutas con azúcar refrigerada con vitaminas (<10 % de fruta)
+ciqual:18295	Still soft drink, fruit content >= 10% and < 50%, with sugar(s), fortified with vitamin(s)	bebida de frutas con azúcar con vitaminas (10-50 % de fruta)
+ciqual:18296	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, fortified with vitamin(s)	bebida de frutas con puré tipo smoothie con vitaminas
+ciqual:18297	Still soft drink, fruit content >= 50%, room temperature, fortified with vitamin(s)	bebida de frutas con vitaminas (≥50 % de fruta)
+ciqual:18298	Still soft drink, fruit content >= 50%, room temperature	bebida de frutas (≥50 % de fruta)
+ciqual:18299	Still soft drink, lemonade, fruit content >= 10% and < 50%, with sugar(s)	limonada sin gas con azúcar
+ciqual:18300	Still soft drink, with fruit puree, smoothie type, fruit content >= 50%, no added sugars, refrigerated	bebida de frutas con puré tipo smoothie sin azúcar refrigerada
+ciqual:18304	Still soft drink, fruit content >= 10% and < 50%, reduced sugar	bebida de frutas baja en azúcar (10-50 % de fruta)
+ciqual:18305	Still soft drink, fruit content >= 10% and < 50%, no added sugars	bebida de frutas sin azúcar (10-50 % de fruta)
+ciqual:18306	Aloe vera beverage, with sugar(s)	bebida de aloe vera con azúcar
+ciqual:18309	Still soft drink, fruit content unknown, with sugar(s)	bebida de frutas con azúcar
+ciqual:18315	Fruit and vegetable beverage	bebida de frutas y verduras
+ciqual:18316	Water kefir or Tibicos, prepacked	kéfir de agua
+ciqual:18324	Energy drink, sugar and artifical sweetener contents unknown (average)	bebida energética
+ciqual:18325	Still soft drink, fruit content unknown, sugar and sweetener contents unknown (average)	bebida de frutas
+ciqual:18326	Bottled water, flavoured, sugar and sweetener contents unknown (average)	agua saborizada
+ciqual:18327	Lemonade, sugar and sweetener contents unknown (average)	limonada
+ciqual:18328	Syrup (eg. Mint, strawberry etc.), sugar content unknown, diluted in water (average)	bebida de sirope diluida en agua
+ciqual:18329	Carbonated beverage or soft drink, without fruit, sugar and sweetener contents unknown (average)	refresco aromatizado
+ciqual:18339	Still soft drink, fruit content >= 10% and < 50%, with sugar(s)	bebida de frutas con azúcar (10-50 % de fruta)
+ciqual:18340	Carbonated beverage or fruit soft drink, fruit content < 10% , no added sugars and with sweetener(s)	refresco de frutas sin azúcar con edulcorantes
+ciqual:18341	Carbonated beverage, apple content >= 50% and <99%, no added sugars	refresco de manzana sin azúcar
+ciqual:18343	Still beverage with fruit juice and milk	bebida de zumo de fruta y leche
+ciqual:18344	Tonic drink, with sugar(s)	tónica con azúcar
+ciqual:18345	Carbonated beverage or fruit soft drink, fruit content < 10% , no added sugars and no sweetener(s)	refresco de frutas sin azúcar ni edulcorantes
+ciqual:18347	Birch sap beverage	bebida de savia de abedul
+ciqual:18348	Sports drink, with sugar(s)	bebida deportiva con azúcar
+ciqual:18349	Sports drink with added sugars, with sugar(s)	bebida deportiva con azúcar y edulcorantes
+ciqual:18352	Energy drink, with sugar(s)	bebida energética con azúcar
+ciqual:18353	Energy drink, no added sugar(s) and with sweetener(s), fortified with vitamins	bebida energética sin azúcar con vitaminas
+ciqual:18354	Energy drink, with sugar(s) and with sweetener(s)	bebida energética con azúcar y edulcorantes
+ciqual:18356	Tonic drink, sugar(s) and sweetener(s) content unknown (average)	tónica
+ciqual:18430	Spring water, bottled	agua de manantial
+ciqual:18899	Oat drink, plain, no added sugar, not fortified, prepacked	bebida de avena sin azúcar
+ciqual:18900	Soy drink, plain, not fortified, prepacked	bebida de soja natural
+ciqual:18901	Soy drink, plain, fortified with calcium, prepacked	bebida de soja natural con calcio
+ciqual:18902	Soy drink, flavoured, with sugar(s), not fortified, prepacked	bebida de soja saborizada con azúcar
+ciqual:18903	Soy drink, flavoured, with sugar(s), fortified in calcium, prepacked	bebida de soja saborizada con azúcar y calcio
+ciqual:18904	Rice drink, plain, prepacked	bebida de arroz
+ciqual:18906	Chestnut drink, plain, prepacked	bebida de castañas
+ciqual:18907	Coconut drink, plain, prepacked	bebida de coco
+ciqual:19000	Milk, bulk	leche
+ciqual:19010	Milk, whole, raw	leche entera cruda
+ciqual:19012	Baby milk, growing-up milk, ready to drink	leche de crecimiento líquida
+ciqual:19013	Baby milk, infant formula, ready to drink	leche de inicio líquida
+ciqual:19014	Baby milk, follow-on formula, ready to drink	leche de continuación líquida
+ciqual:19015	Baby milk, for premature baby, ready to drink	leche para prematuros líquida
+ciqual:19016	Milk, whole (average)	leche entera
+ciqual:19021	Milk powder, whole	leche en polvo entera
+ciqual:19023	Milk, whole, UHT	leche entera UHT
+ciqual:19024	Milk, whole, pasteurised	leche entera pasteurizada
+ciqual:19026	Condensed milk, no added sugars, whole	leche condensada sin azúcar entera
+ciqual:19027	Condensed milk, with sugar(s), whole	leche condensada azucarada entera
 ciqual:19033	Milk, semi-skimmed (average)	leche semidesnatada
+ciqual:19037	Milk, semi-skimmed, UHT, fortified with vitamin D	leche semidesnatada UHT con vitamina D
+ciqual:19038	Milk, 1,2% fat, UHT, fortified with vitamins	leche 1,2 % UHT con vitaminas
+ciqual:19039	Milk, fat content unknown, UHT (average)	leche UHT
+ciqual:19041	Milk, semi-skimmed, UHT	leche semidesnatada UHT
+ciqual:19042	Milk, semi-skimmed, pasteurised	leche semidesnatada pasteurizada
+ciqual:19044	Milk powder, semi-skimmed	leche en polvo semidesnatada
+ciqual:19050	Milk, skimmed, UHT	leche desnatada UHT
+ciqual:19051	Milk, skimmed, pasteurised	leche desnatada pasteurizada
+ciqual:19054	Milk powder, skimmed	leche en polvo desnatada
+ciqual:19060	Milk, semi-skimmed, UHT, reduced lactose	молоко 1,5 % УВТ с пониженной лактозой
+ciqual:19114	Vanilla flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	bebida láctea de vainilla con azúcar y vitamina D
+ciqual:19116	Coffee flavoured milk beverage, with sugar(s), partially skimmed fortified with vitamin(s) and/or mineral(s)	bebida láctea de café con azúcar y vitaminas
+ciqual:19117	Coffee flavoured milk beverage, with sugar(s), partially skimmed, not fortified	bebida láctea de café con azúcar
+ciqual:19118	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, not fortified	bebida láctea de chocolate con azúcar
+ciqual:19119	Chocolate flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamin(s) and/or mineral(s)	bebida láctea de chocolate con azúcar y vitaminas
+ciqual:19120	Flavoured milk beverage, with sugar(s), partially skimmed, fortified with vitamins and/ormineral(s) (average)	bebida láctea saborizada con azúcar y vitaminas
+ciqual:19127	Strawberry flavoured milk, with sugar(s), partially skimmed, fortified with vitamin D	bebida láctea de fresa con azúcar y vitamina D
+ciqual:19200	Goat milk, whole, UHT	leche de cabra entera UHT
+ciqual:19201	Goat milk, half skimmed, UHT	leche de cabra semidesnatada UHT
+ciqual:19202	Goat milk, whole, raw	leche de cabra entera cruda
+ciqual:19225	Mare's milk, whole	leche de yegua entera
+ciqual:19250	Sheep milk, whole	leche de oveja entera
+ciqual:19270	Buffalo milk, whole	leche de búfala entera
+ciqual:19402	Cream and similar, fat content unknown (average)	nata
 ciqual:19403	Cream and similar, fat content unknown, fluid (average)	nata líquida
+ciqual:19404	Cream and similar, fat content unknownthick or semi-thick (average)	nata espesa
+ciqual:19410	Cream 30% fat, thick, refrigerated	nata 30 % espesa
+ciqual:19411	Cream, from Isigny, >= 35% fat	nata de Isigny
+ciqual:19415	Cream 30% fat, semi-thick, UHT	nata 30 % semiespesa UHT
+ciqual:19417	Cream 30% fat, liquid, UHT	nata 30 % líquida UHT
+ciqual:19420	Whipped cream, aerosol, UHT	nata montada en aerosol
+ciqual:19430	Cream, 12-25% fat, light, semi-thick, UHT	nata ligera 12-25 % semiespesa UHT
+ciqual:19431	Cream, 12-25% fat, light, thick, refrigerated	nata ligera 12-25 % espesa
+ciqual:19432	Cream based preparation, light, 5% fat, fluid or thick	preparado de nata ligero 5 %
+ciqual:19433	Cream based preparation, light, about 4% fat, fluid or thick	preparado de nata ligero 4 %
+ciqual:19434	Cream based preparation with aromatic herbs 19% fat, to cook	preparado de nata para cocinar con hierbas 19 %
+ciqual:19435	Cream based preparation with aromatic herbs 12% fat, to cook	preparado de nata para cocinar con hierbas 12 %
+ciqual:19436	Cream, 12-20% fat, light, fluid, refrigerated	nata ligera 12-20 % líquida
+ciqual:19437	Cheese, breaded, to grill, prepacked, from goat's milk	queso de cabra rebozado para dorar
+ciqual:19500	Fermented milk drink, flavoured, with sweetener(s), reduced sugar, 0% fat, with L Casei	bebida de leche fermentada desnatada sin azúcar con L. casei
+ciqual:19501	Quark, plain or with fruits (average)	queso quark natural
+ciqual:19508	Fermented milk drink, flavoured, with sugar(s)	bebida de leche fermentada saborizada con azúcar
+ciqual:19516	Fermented milk drink, flavoured, with sugar(s), with L Casei	bebida de leche fermentada saborizada con azúcar y L. casei
+ciqual:19534	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D	bebida de leche fermentada saborizada con azúcar y vitamina D
+ciqual:19535	Fermented milk drink, with fruits, with sugar(s)	bebida de leche fermentada con fruta azucarada
+ciqual:19536	Fermented milk drink, with fruits, with sugar(s), fortified with vitamin D	bebida de leche fermentada con fruta azucarada con vitamina D
+ciqual:19538	Fermented milk drink, plain, with sugar(s), with L Casei	bebida de leche fermentada natural azucarada con L. casei
+ciqual:19539	Fermented milk, yogurt type with bifidus, flavoured, with sugar(s)	yogur con bífidus saborizado azucarado
+ciqual:19541	Fermented milk, yogurt type with bifidus, with fruits, 0% fat, with sweetener(s)	yogur con bífidus desnatado con fruta sin azúcar
+ciqual:19542	Fermented milk, yogurt type with bifidus, with fruits, with sugar(s)	yogur con bífidus con fruta azucarado
+ciqual:19543	Fermented milk, yogurt type with sterol esters, with fruits, 0% fat, with sweetener(s)	yogur con esteroles desnatado con fruta sin azúcar
+ciqual:19544	Fermented milk, yogurt type with bifidus, plain, 0% fat	yogur con bífidus desnatado natural
 ciqual:19546	Fermented milk, yogurt type with bifidus, plain	yogur con bífidus natural
+ciqual:19550	Yogurt, Greek-style, ewe's milk	yogur griego de leche de oveja
+ciqual:19551	Fermented milk drink, flavoured, with sugar(s), fortified with vitamin D, with L Casei	bebida de leche fermentada saborizada con azúcar con vitamina D y L. casei
+ciqual:19552	Yogurt, Greek-style, on a fruit layer, with sugar(s)	yogur griego sobre capa de fruta azucarado
 ciqual:19553	Yogurt, ewe's milk, flavoured, with sugar(s)	yogur de leche de oveja azucarado
+ciqual:19554	Yogurt, ewe's milk, plain, around 3% fat	yogur de leche de oveja natural 3 %
+ciqual:19555	Yogurt, ewe's milk, on a fruit layer, with sugar(s)	yogur de leche de oveja sobre capa de fruta azucarado
+ciqual:19556	Yogurt, goat's milk, plain	yogur de leche de cabra natural
+ciqual:19557	Yogurt or fermented milk, on a fruit layer, with sugar(s)	yogur sobre capa de fruta azucarado
+ciqual:19559	Yogurt or fermented milk, flavoured, 0% fat, with sweetener(s)	yogur desnatado saborizado sin azúcar
+ciqual:19572	Fresh cream cheese, petit-suisse type, chocolate flavoured, with sugar(s)	petit suisse de chocolate azucarado
+ciqual:19574	Yogurt or fermented milk, flavoured, 0% fat, with sweetener(s), fortified with vitamin D	yogur desnatado saborizado sin azúcar con vitamina D
+ciqual:19575	Yogurt or fermented milk, flavoured, with sugar(s)	yogur saborizado azucarado
+ciqual:19577	Yogurt or fermented milk, flavoured, with cream, with sugar(s)	yogur saborizado con nata azucarado
+ciqual:19578	Yogurt or fermented milk, flavoured, with sugar(s), fortified with vitamin D	yogur saborizado azucarado con vitamina D
+ciqual:19579	Yogurt or fermented milk, with cereals	yogur con cereales
+ciqual:19580	Yogurt or fermented milk, with chocolate flakes, with cream, with sugar(s)	yogur con virutas de chocolate y nata azucarado
+ciqual:19581	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s)	yogur desnatado con fruta sin azúcar
+ciqual:19582	Yogurt or fermented milk, with fruits, 0% fat, with sweetener(s), fortified with vitamin D	yogur desnatado con fruta sin azúcar con vitamina D
+ciqual:19584	Mascarpone cheese, from cow's milk	mascarpone
 ciqual:19585	Ricotta cheese, from cow's milk	queso ricotta
+ciqual:19587	Yogurt or fermented milk, with fruits, with sugar(s)	yogur con fruta azucarado
 ciqual:19589	Yogurt or fermented milk, with fruits, with cream, with sugar(s)	yogur con fruta y nata azucarado
+ciqual:19590	Mozzarella cheese, from cow's milk	mozzarella
+ciqual:19591	Mozzarella cheese, from buffala's milk	mozzarella di bufala
+ciqual:19592	Yogurt or fermented milk, with fruits, with sugar(s), fortified with vitamin D	yogur con fruta azucarado con vitamina D
+ciqual:19593	Yogurt or fermented milk, plain	yogur natural
+ciqual:19594	Yogurt or fermented milk, plain, 0% fat	yogur desnatado natural
+ciqual:19596	Yogurt or fermented milk, plain, 0% fat, fortified with vitamin D	yogur desnatado natural con vitamina D
+ciqual:19598	Yogurt or fermented milk, plain, with cream	yogur natural con nata
+ciqual:19599	Yogurt or fermented milk, plain, with sugar(s)	yogur natural azucarado
+ciqual:19600	Yoghurt or fermented milk, plain (average)	yogur natural sin precisar grasa
+ciqual:19624	Yoghurtor fermented milk, plain or with fruits (average)	yogur natural o de frutas
+ciqual:19628	Yoghurt or fermented milk, with fruits (average)	yogur con fruta
+ciqual:19638	Drained soft fresh cheese, with fruit sauce	faisselle con coulis de fruta
+ciqual:19639	Drained soft fresh cheese, 0% fat	faisselle desnatada
+ciqual:19641	Drained soft fresh cheese, around 6% fat	faisselle 6 %
+ciqual:19643	Quark and whipped cream, on a fruit layer, with sugar(s)	queso quark con nata montada sobre capa de fruta azucarado
+ciqual:19644	Quark, plain, 0% fat	queso quark desnatado
+ciqual:19645	Quark, plain, 0% fat, fortified with vitamin D	queso quark desnatado con vitamina D
+ciqual:19646	Quark, plain, 2-3% fat	queso quark 2-3 %
+ciqual:19648	Quark, plain, 2-3% fat, fortified with vitamin D	queso quark 2-3 % con vitamina D
+ciqual:19650	Quark and whipped cream, plain	queso quark con nata montada
+ciqual:19654	Quark or dairy specialty, with chocolate flakes, 7-8% fat, with sugar(s)	queso quark 7-8 % con virutas de chocolate azucarado
+ciqual:19656	Quark or dairy specialty, with fruits, 0% fat, with sugar(s)	queso quark desnatado con fruta azucarado
+ciqual:19657	Quark or dairy specialty, with fruits, 2-3% fat, with sugar(s)	queso quark 2-3 % con fruta azucarado
+ciqual:19659	Quark or dairy specialty, with fruits, 7-8% fat, with sugar(s)	queso quark 7-8 % con fruta azucarado
+ciqual:19660	Quark or dairy specialty, on a fruit layer, 7-8% fat, with sugar(s)	queso quark 7-8 % sobre capa de fruta azucarado
+ciqual:19663	Fresh cream cheese, petit-suisse type, plain, 0% fat	petit suisse desnatado
+ciqual:19664	Fresh cream cheese, petit-suisse type, plain, around 4% fat	petit suisse 4 %
+ciqual:19665	Fresh cream cheese mousse, on a fruit layer, 0% fat, with sweetener(s), fortified with calcium and vitamin D	mousse de queso quark sobre capa de fruta desnatada sin azúcar con calcio y vitamina D
+ciqual:19666	Fresh cream cheese, petit-suisse type, plain, around 10% fat	petit suisse 10 %
+ciqual:19669	Yoghurt, rich in protein, on a fruit layer, with sugar(s)	yogur rico en proteína sobre capa de fruta azucarado
+ciqual:19671	Yogurt or fermented milk, with fruits or flavoured, 0% fat (average)	yogur desnatado con fruta
+ciqual:19672	Yogurt or fermented milk, with fruits or flavoured, no reduced fat (average)	yogur con fruta entero
+ciqual:19673	Custard dessert, reduced fat, refrigerated	natillas ligeras
+ciqual:19674	Flan with eggs, refrigerated	flan de huevo
+ciqual:19675	Yogurt or fermented milk, with fruits or flavoured, with sweetener(s) (average)	yogur con fruta sin azúcar
 ciqual:19676	Yogurt or fermented milk, with fruits or flavoured, with sugar(s) (average)	yogur de frutas azucarado
+ciqual:19677	Yogurt or fermented milk, with fruits or flavoured, no reduced fat, with sugar(s) (average)	yogur con fruta azucarado entero
+ciqual:19678	Renneted milk, flavoured, refrigerated	leche cuajada saborizada
+ciqual:19679	Milk jelly, flavoured, covered with caramel sauce, refrigerated	gelatina de leche con salsa de caramelo
+ciqual:19680	Milk jelly, flavoured, refrigerated	gelatina de leche saborizada
+ciqual:19681	Custard (chocolate, coffee, caramel or vanilla) topped with whipped cream, refrigerated	postre vienés
+ciqual:19682	Yogurt or fermented milk, with fruits or flavoured (average)	yogur con fruta o saborizado
+ciqual:19684	Egg custard, refrigerated	huevos con leche
+ciqual:19685	Panna cotta, with fruit preparation or caramel, refrigerated	panna cotta
+ciqual:19686	Dairy specialty or milk-based desert, flavoured, reduced fat, with sugar(s) and sweetener(s), refrigerated	postre lácteo ligero saborizado azucarado
+ciqual:19688	Rum baba, refrigerated	babá al ron
+ciqual:19691	Quark or dairy specialty, with fruits, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado con fruta azucarado con vitamina D
+ciqual:19692	Soy dessert, with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre de soja con fruta azucarado con calcio
+ciqual:19693	Soy dessert, plain, no added sugars, not fortified, fermented, refrigerated	postre de soja natural sin azúcar
+ciqual:19694	Soy dessert, plain, no added sugars, fortified with calcium, fermented, refrigerated	postre de soja natural sin azúcar con calcio
+ciqual:19695	Soy dessert, with fruits, with sugar(s), not fortified, fermented, refrigerated	postre de soja con fruta azucarado
+ciqual:19696	Soy dessert, with almonds, with sugar(s), fortified with vitamins and minerals, refrigerated	postre de soja con almendras azucarado con vitaminas y minerales
+ciqual:19697	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado saborizado azucarado con vitamina D
+ciqual:19698	Tiramisu with coffee, refrigerated	tiramisú de café
+ciqual:19699	Tiramisu with fruits, refrigerated	tiramisú de frutas
+ciqual:19705	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), with sugar(s)	queso quark desnatado saborizado azucarado
+ciqual:19707	Quark or dairy specialty, on a fruit layer, 0% fat, with sweetener(s), with sugar(s), fortified with vitamin D	queso quark desnatado sobre capa de fruta azucarado con vitamina D
+ciqual:19708	Quark or dairy specialty, on a fruit layer, 0% fat, with sweetener(s), no added sugars, fortified with vitamin D	queso quark desnatado sobre capa de fruta sin azúcar con vitamina D
+ciqual:19709	Quark or dairy specialty, flavoured, 0% fat, with sweetener(s), no added sugars	queso quark desnatado saborizado sin azúcar
+ciqual:19711	Quark, plain, 7-8% fat	queso quark 7-8 %
+ciqual:19712	Quark from ewe's milk, plain, around 5% fat	queso quark de leche de oveja 5 %
+ciqual:19713	Quark from goat's milk, plain, around 7% fat	queso quark de leche de cabra 7 %
 ciqual:19714	Quark or dairy specialty, flavoured, 0% fat, with sugar(s)	queso quark 0 % azucarado
+ciqual:19715	Quark or dairy specialty, flavoured, 2-3% fat, with sugar(s)	queso quark 2-3 % saborizado azucarado
+ciqual:19716	Quark, plain, 2-3% fat, with sugar(s)	queso quark 2-3 % azucarado
+ciqual:19718	Quark or dairy specialty, flavoured, 7-8% fat, with sugar(s)	queso quark 7-8 % saborizado azucarado
+ciqual:19719	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s)	petit suisse con fruta 2-3 % azucarado
+ciqual:19720	Fresh cream cheese, petit-suisse type, with fruits, 2-3% fat, with sugar(s), fortified with vitamin D	petit suisse con fruta 2-3 % azucarado con vitamina D
+ciqual:19721	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s)	petit suisse saborizado 2-3 % azucarado
+ciqual:19722	Fresh cream cheese, petit-suisse type, flavoured, 2-3% fat, with sugar(s), fortified with vitamin D	petit suisse saborizado 2-3 % azucarado con vitamina D
+ciqual:19723	Yogurt or fermented milk, plain, fortified with vitamin D	yogur natural con vitamina D
+ciqual:19724	Yoghurt, rich in protein, plain	yogur rico en proteína natural
+ciqual:19725	Quark or dairy specialty, on a fruit layer, 0% fat, with sugar(s)	queso quark desnatado sobre capa de fruta azucarado
+ciqual:19726	Yogurt or fermented milk, plain, with sugar(s), fortified with vitamin D	yogur natural azucarado con vitamina D
+ciqual:19727	Yogurt, goat's milk, with fruits, with sugar(s)	yogur de leche de cabra con fruta azucarado
+ciqual:19728	Yogurt, goat's milk, on a fruit layer, with sugar(s)	yogur de leche de cabra sobre capa de fruta azucarado
+ciqual:19733	Yogurt or fermented milk, on a fruit layer, with cream, with sugar(s)	yogur sobre capa de fruta con nata azucarado
+ciqual:19801	Fermented milk drink, plain, skimmed milk	bebida de leche fermentada desnatada
+ciqual:19805	Fermented milk drink, plain, whole milk	bebida de leche fermentada entera
+ciqual:19852	Chestnut mousse, refrigerated	mousse de castañas
+ciqual:19860	Yogurt, Greek-style, plain	yogur griego natural
+ciqual:19862	Yogurt, Greek-style, flavoured, with sugar(s)	yogur griego saborizado azucarado
+ciqual:19863	Tzatziki, with yogurt, prepacked	tzatziki con yogur
+ciqual:19864	Tzatziki, with quark, prepacked	tzatziki con queso quark
+ciqual:19865	Milk kefir	kéfir
+ciqual:19882	Yogurt, ewe's milk, plain, around 6% fat	yogur de leche de oveja natural 6 %
+ciqual:19999	Sweet pepper, green , yellow or red, cooked (average)	pimiento cocido
 ciqual:2000	Pineapple juice, from concentrate	zumo de piña de concentrado
+ciqual:20000	Artichoke, globe, cooked	alcachofa cocida
+ciqual:20002	Eggplant, cooked	berenjena cocida
+ciqual:20003	Beetroot, cooked	remolacha cocida
+ciqual:20004	Swiss chard, stalk without leaves, raw	pencas de acelga crudas
+ciqual:20005	Swiss chard, stalk without leaves, cooked	pencas de acelga cocidas
+ciqual:20007	Carrot, canned, drained	zanahorias en conserva escurridas
+ciqual:20009	Carrot, raw	zanahoria cruda
+ciqual:20010	Mushroom, all types, raw	setas crudas
+ciqual:20011	Mushroom, all types, canned, drained	setas en conserva escurridas
+ciqual:20012	Curly endive, raw	escarola rizada cruda
+ciqual:20014	Red cabbage, raw	col lombarda cruda
+ciqual:20015	Green cabbage, cooked	col verde cocida
+ciqual:20016	Cauliflower, raw	coliflor cruda
+ciqual:20017	Cauliflower, boiled	coliflor cocida
+ciqual:20018	Palm heart, canned, drained	corazones de palma en conserva escurridos
+ciqual:20019	Cucumber, flesh and skin, raw	pepino crudo
 ciqual:2002	Multifruit juice, pure juice, multivitamin	zumo multifruta con vitaminas
+ciqual:20020	Courgette or zucchini, flesh and skin, raw	calabacín crudo
+ciqual:20021	Courgette or zucchini, flesh and skin, cooked	calabacín cocido
+ciqual:20022	Watercress, raw	berros crudos
+ciqual:20023	Celery stalk, raw	apio crudo
+ciqual:20025	Celeriac, cooked	apionabo cocido
+ciqual:20026	Chicory, raw	endibia cruda
+ciqual:20027	Spinach, cooked	espinacas cocidas
+ciqual:20028	Fennel, raw	hinojo crudo
+ciqual:20029	Mung bean, sprouted, canned, drained	brotes de soja verde en conserva escurridos
+ciqual:20030	French bean, cooked	judías verdes cocidas
+ciqual:20031	Lettuce, raw	lechuga cruda
+ciqual:20033	Turnip, cooked	nabo cocido
+ciqual:20034	Onion, raw	cebolla cruda
+ciqual:20035	Onion, cooked	cebolla cocida
+ciqual:20036	Garden peas, canned, drained	guisantes en conserva escurridos
+ciqual:20037	Garden peas, cooked	guisantes cocidos
+ciqual:20038	Dandelion, raw	diente de león crudo
+ciqual:20039	Leek, raw	puerro crudo
 ciqual:2004	Fruit juice (average)	zumo de frutas
+ciqual:20040	Leek, cooked	puerro cocido
+ciqual:20041	Sweet pepper, green, yellow or red, raw	pimiento crudo
+ciqual:20044	Pumpkin, raw	calabaza gigante cruda
+ciqual:20045	Radish, raw	rábanos crudos
+ciqual:20046	Salsify, cooked	salsifí cocido
+ciqual:20048	Tomato, peeled, canned, drained	tomates pelados en conserva escurridos
+ciqual:20049	Corn, on the cob, cooked	mazorca de maíz cocida
+ciqual:20050	Jerusalem artichoke, cooked	alcachofa de Jerusalén cocida
+ciqual:20051	Mixed diced vegetables, canned, drained	menestra de verduras en conserva escurrida
+ciqual:20052	Artichoke, globe, raw	alcachofa cruda
+ciqual:20053	Eggplant, raw	berenjena cruda
+ciqual:20054	Cardoon, raw	carda cruda
+ciqual:20055	Celeriac, raw	apionabo crudo
+ciqual:20056	Button mushroom or cultivated mushroom, raw	champiñones crudos
+ciqual:20057	Broccoli, raw	brócoli crudo
+ciqual:20058	Brussels sprout, raw	coles de Bruselas crudas
+ciqual:20059	Spinach, raw	espinacas crudas
 ciqual:2006	Carrot juice, pure juice	zumo de zanahoria
+ciqual:20060	Spinach, canned, drained	espinacas en conserva escurridas
+ciqual:20061	French bean, raw	judías verdes crudas
+ciqual:20062	French bean, canned, drained	judías verdes en conserva escurridas
+ciqual:20063	Butter bean or yellow bean, canned, drained	judías manteca en conserva escurridas
+ciqual:20064	Turnip, peeled, raw	nabo pelado crudo
+ciqual:20065	Kohlrabi, raw	colirábano crudo
+ciqual:20066	Corn, sweet, canned, drained	maíz dulce en conserva escurrido
+ciqual:20067	Artichoke, canned, drained	alcachofas en conserva escurridas
+ciqual:20068	Tomato paste, concentrated, canned	concentrado de tomate
+ciqual:20069	Green cabbage, raw	col verde cruda
 ciqual:2007	Lemon juice, homemade	zumo de limón casero
+ciqual:20070	French bean, frozen, raw	judías verdes congeladas crudas
+ciqual:20071	French bean, frozen, cooked	judías verdes congeladas cocidas
+ciqual:20072	Garden peas, raw	guisantes crudos
+ciqual:20074	Artichoke, globe, steamed	alcachofa al vapor
+ciqual:20076	Asparagus, canned, drained	espárragos en conserva escurridos
+ciqual:20077	Brussels sprout, canned, drained	coles de Bruselas en conserva escurridas
+ciqual:20078	Celery stalk, canned, drained	apio en conserva escurrido
+ciqual:20079	Button mushroom or cultivated mushroom, canned, drained	champiñones en conserva escurridos
 ciqual:2008	Cocktail, alcohol-free (juices and syrup-based cocktail)	cóctel sin alcohol de frutas
+ciqual:20081	Salsify, canned, drained	salsifí en conserva escurrido
+ciqual:20082	Cauliflower, frozen, raw	coliflor congelada cruda
+ciqual:20083	Spinach, frozen, raw	espinacas congeladas crudas
+ciqual:20084	Garden peas, frozen, raw	guisantes congelados crudos
+ciqual:20085	Sweet pepper, green, raw	pimiento verde crudo
+ciqual:20086	Sweet pepper, green, cooked	pimiento verde cocido
+ciqual:20087	Sweet pepper, red, raw	pimiento rojo crudo
+ciqual:20088	Sweet pepper, red, cooked	pimiento rojo cocido
+ciqual:20089	Radish, black, raw	rábano negro crudo
 ciqual:2009	Multifruit nectar, apple base, standard	néctar multifruta con base de manzana
+ciqual:20090	Escaroles, raw	escarola cruda
+ciqual:20091	Beetroot, raw	remolacha cruda
+ciqual:20092	Carrot, dehydrated	zanahoria deshidratada
+ciqual:20093	Garden peas and carrots, canned, drained	guisantes con zanahorias en conserva escurridos
+ciqual:20094	Kohlrabi, boiled/cooked in water	colirábano cocido
+ciqual:20095	Red cabbage, boiled/cooked in water	col lombarda cocida
+ciqual:20096	Pumpkin, cooked	calabaza cocida
+ciqual:20097	Shallot, raw	chalota cruda
+ciqual:20099	Lamb's lettuce, raw	canónigos crudos
 ciqual:2010	Multifruit nectar, apple base, multivitamin	néctar multifruta con base de manzana y vitaminas
+ciqual:20101	Mixed vegetables, frozen, raw	menestra de verduras congelada cruda
+ciqual:20102	Button mushroom or cultivated mushroom, boiled/cooked in water	champiñones cocidos
+ciqual:20103	Chanterelle or girolle mushroom, raw	rebozuelos crudos
+ciqual:20105	Morel, raw	colmenillas crudas
+ciqual:20106	Black truffle, raw	trufa negra cruda
+ciqual:20108	Corn, on the cob, frozen, raw	mazorca de maíz congelada cruda
 ciqual:2011	Multifruit juice, orange base, multivitamin	zumo multifruta con base de naranja y vitaminas
+ciqual:20111	Sorrel, raw	acedera cruda
+ciqual:20114	Oyster mushroom, raw	setas ostra crudas
+ciqual:20116	White cabbage, raw	col blanca cruda
+ciqual:20118	Fennel, boiled/cooked in water	hinojo cocido
+ciqual:20119	Tomato, green, raw	tomate verde crudo
 ciqual:2012	Orange juice, from concentrate	zumo de naranja de concentrado
+ciqual:20123	Lettuce, var. batavia, raw	lechuga batavia cruda
+ciqual:20124	Garden peas, frozen, cooked	guisantes congelados cocidos
+ciqual:20125	Button mushroom or cultivated mushroom, sautéed/pan-fried, without added fat	champiñones salteados sin grasa
+ciqual:20127	Purslane, leaf, raw	verdolaga cruda
+ciqual:20128	Pumpkin (cucurbita moschata), flesh without skin, raw	calabaza moscada sin piel cruda
 ciqual:2013	Orange juice, fresh	zumo de naranja recién exprimido
+ciqual:20132	Red kuri squash, flesh without skin, raw	calabaza potimarrón sin piel cruda
+ciqual:20134	Sweet green hokkaido squash, flesh without skin, raw	calabaza hokkaido sin piel cruda
+ciqual:20135	Leeks fondue or slow-simmered leeks, prepacked	puerros confitados
+ciqual:20136	Squash, melonnette jaspée from Vendée, flesh without skin, raw	calabaza melonnette sin piel cruda
+ciqual:20137	Tomato, peeled, canned, in juice, solids and liquids	tomates pelados en su jugo en conserva
+ciqual:20138	Squash, butternut, flesh without skin, raw	calabaza cacahuete sin piel cruda
+ciqual:20139	Squash, all types, raw	calabaza cruda
 ciqual:2014	Apple juice, from concentrate	zumo de manzana de concentrado
+ciqual:20141	Squash, butternut, flesh without skin, boiled	calabaza cacahuete cocida
+ciqual:20143	Squash, spaghetti, flesh without skin, cooked	calabaza espagueti cocida
+ciqual:20145	Squash, spaghetti, flesh without skin, raw	calabaza espagueti cruda
 ciqual:2015	Grapefruit juice, from concentrate	zumo de pomelo de concentrado
+ciqual:20151	Chili pepper, raw	guindilla cruda
+ciqual:20155	Artichoke, globe, heart, canned, drained	corazones de alcachofa en conserva escurridos
+ciqual:20156	Artichoke, globe, base, canned, drained	fondos de alcachofa en conserva escurridos
+ciqual:20158	New Zealand spinach, cooked	espinaca de Nueva Zelanda cocida
+ciqual:20159	Caesar's mushroom or royal agaric, raw	oronja cruda
 ciqual:2016	Grape juice, pure juice	zumo de uva
+ciqual:20160	Cep or boletus mushroom, raw	boletus crudo
+ciqual:20161	Field mushroom, raw	champiñón silvestre crudo
+ciqual:20162	Red endive, raw	achicoria roja cruda
+ciqual:20163	Green endive, raw	achicoria verde cruda
+ciqual:20165	Rutabaga or Swede, cooked	colinabo cocido
+ciqual:20166	Pumpkin, flesh without skin, raw	calabaza sin piel cruda
+ciqual:20167	Chinese cabbage (nappa cabbage), raw	col china cruda
+ciqual:20168	Sweet pepper, yellow, raw	pimiento amarillo crudo
+ciqual:20169	Tomato flesh without skin, canned	tomate sin piel en conserva
 ciqual:2017	Pomegranate juice, pure juice	zumo de granada
+ciqual:20170	Tomato puree, canned	puré de tomate en conserva
+ciqual:20171	Cos or romaine lettuce, raw	lechuga romana cruda
+ciqual:20172	Tomato, cherry, raw	tomates cherry crudos
+ciqual:20173	Snow pea, raw	tirabeques crudos
 ciqual:2018	Prune juice	zumo de ciruela pasa
 ciqual:20180	Onion, dried	cebolla deshidratada
+ciqual:20181	Parsnip, raw	chirivía cruda
+ciqual:20183	Mung bean, sprouted, raw	brotes de soja verde crudos
+ciqual:20188	Bamboo shoots, canned, drained	brotes de bambú en conserva escurridos
+ciqual:20189	Tomato, dried	tomates secos
 ciqual:2019	Grape juice, from concentrate	zumo de uva de concentrado
+ciqual:20192	Tomato, beef heart, raw	tomate corazón de buey crudo
+ciqual:20194	Haricot beans with tomato sauce, canned	alubias en salsa de tomate en conserva
+ciqual:20195	Butter bean or yellow bean, raw	judías manteca crudas
+ciqual:20196	Jerusalem artichoke, raw	alcachofa de Jerusalén cruda
+ciqual:20197	Salsify, black, raw	escoroncera cruda
+ciqual:20198	Bamboo shoots, raw	brotes de bambú crudos
+ciqual:20199	Garden cress, raw	berro de huerto crudo
+ciqual:20200	Iceberg lettuce, raw	lechuga iceberg cruda
+ciqual:20201	Rutabaga or Swede, raw	colinabo crudo
+ciqual:20202	Cloud ear fungus, dried	oreja de Judas seca
+ciqual:20203	Butter bean or yellow bean, frozen, raw	judías manteca congeladas crudas
+ciqual:20204	Broccoli, frozen, raw	brócoli congelado crudo
+ciqual:20206	Brussels sprout, frozen, raw	coles de Bruselas congeladas crudas
+ciqual:20208	Carrot, frozen, raw	zanahoria congelada cruda
+ciqual:20210	Cucumber, flesh without skin, raw	pepino sin piel crudo
+ciqual:20211	Shiitake mushroom, dried	shiitake seco
+ciqual:20212	Shiitake mushroom, cooked	shiitake cocido
+ciqual:20214	Garden peas and carrots, frozen, raw	guisantes con zanahorias congelados crudos
+ciqual:20216	Snow pea, boiled/cooked in water	tirabeques hervidos
+ciqual:20217	Roman rocket, raw	rúcula cruda
+ciqual:20218	Curly kale, raw	col kale cruda
+ciqual:20219	Curly kale, cooked	col kale cocida
 ciqual:2022	Strawberry nectar	néctar de fresa
+ciqual:20221	Chinese cabbage (nappa cabbage), sautéed/pan-fried, without added fat	col china salteada sin grasa
+ciqual:20228	Button mushroom or cultivated mushroom, frozen, raw	champiñones congelados crudos
 ciqual:2023	Mango juice, fresh	zumo de mango recién exprimido
+ciqual:20230	Courgette or zucchini, flesh and skin, frozen, raw	calabacín congelado crudo
+ciqual:20231	Chinese or Japanese artichokes, frozen, raw	crosnes congelados crudos
+ciqual:20232	Artichoke globe, base, frozen, raw	fondos de alcachofa congelados crudos
+ciqual:20233	Corn, frozen, raw	maíz dulce congelado crudo
+ciqual:20234	Turnip, frozen, raw	nabo congelado crudo
+ciqual:20235	Onion, frozen, raw	cebolla congelada cruda
+ciqual:20236	Leek, frozen, raw	puerro congelado crudo
+ciqual:20237	Salsify, frozen, raw	salsifí congelado crudo
+ciqual:20238	Red onion, raw	cebolla roja cruda
+ciqual:20239	Yellow onion, raw	cebolla amarilla cruda
 ciqual:2024	Passion fruit juice, fresh	zumo de maracuyá recién exprimido
+ciqual:20240	Piperade, Basque-style (fondue of sweet peppers and tomatoes with onions and garlic), prepacked	piperrada
+ciqual:20241	Cardoon, cooked	carda cocida
+ciqual:20242	Tomato, flesh and skin, boiled/cooked in water	tomates cocidos
+ciqual:20243	Snow pea, cooked	tirabeques cocidos
+ciqual:20246	Baby food jar with vegetables, from 4-6 months	potito de verduras a partir de 4-6 meses
 ciqual:20247	Baby food jar with vegetables and starchy food, from 4-6 months	tarrito infantil de verduras con cereal
+ciqual:20248	Baby meal, vegetables and starchy food, from 6-8 months	comida infantil de verduras con fécula a partir de 6-8 meses
+ciqual:20249	Baby meal, vegetable with milk/cream and starchy food, from 6-8 months	comida infantil de verduras con leche y fécula a partir de 6-8 meses
 ciqual:2025	Grapefruit juice, fresh	zumo de pomelo recién exprimido
+ciqual:20250	Baby meal, vegetable with milk/cream and starchy food, from 8-12 months	comida infantil de verduras con leche y fécula a partir de 8-12 meses
+ciqual:20251	Baby meal, vegetable with milk/cream and starchy food, from 12 months	comida infantil de verduras con leche y fécula a partir de 12 meses
+ciqual:20252	Baby soup, with vegetables and potatoes	sopa infantil de verduras y patata
+ciqual:20253	Baby soup, with vegetables, cereals and milk	sopa infantil de verduras, cereales y leche
+ciqual:20254	Baby meal, vegetable with milk/cream and starchy food, from 18 months	comida infantil de verduras con leche y fécula a partir de 18 meses
+ciqual:20255	Shallot, cooked	chalota cocida
+ciqual:20256	Tomato, dried, in oil	tomates secos en aceite
+ciqual:20257	French bean, puree	puré de judías verdes
+ciqual:20258	Vegetables (3-4 types), mashed	puré de verduras variadas
+ciqual:20259	Broccoli, puree	puré de brócoli
 ciqual:2026	Tomato juice, pure juice, 3 g salt/L	zumo de tomate salado (3 g/l)
+ciqual:20260	Tomato coulis, canned (tomato puree semi-reduced 11%)	coulis de tomate en conserva
+ciqual:20261	Carrots, puree	puré de zanahoria
+ciqual:20262	Vegetables, pan-fried without mushrooms, seasonned, frozen, raw	salteado de verduras sin setas congelado crudo
+ciqual:20263	Mixed vegetables for soups, frozen, raw	verduras para sopa congeladas crudas
+ciqual:20264	Courgette or zucchini, puree	puré de calabacín
+ciqual:20265	Thinly-shredded or diced vegetables, frozen, raw	verduras en juliana congeladas crudas
+ciqual:20266	Mixed vegetables for ratatouille, frozen	verduras para pisto congeladas
+ciqual:20267	Spring vegetables, frozen, raw (green peas, potatoes, green beans, carrots, onions)	menestra primavera congelada cruda
+ciqual:20268	Tomato paste, double concentrate, canned	concentrado de tomate doble
+ciqual:20269	Flat bean, raw	judías planas crudas
 ciqual:2027	Grapefruit juice, pure juice	zumo de pomelo
+ciqual:20270	Spinach, young leaves for salad, raw	hojas tiernas de espinaca crudas
+ciqual:20271	Mixed diced vegetables, pre-cooked, to be recooked, frozen	menestra de verduras precocida congelada
+ciqual:20272	Mesclun or salads, mix of baby leaves	mesclún
+ciqual:20273	Vegetables, pan-fried or stir-fried, seasonned, Asian-style, frozen, raw	salteado de verduras al estilo asiático congelado crudo
+ciqual:20274	Vegetables, pan-fried or stir-fried, seasonned, Mediterranean-style, frozen, raw	salteado de verduras a la mediterránea congelado crudo
+ciqual:20275	Sweet pepper, red, canned, drained	pimiento rojo en conserva escurrido
+ciqual:20276	Tomato, round, raw	tomate redondo crudo
+ciqual:20277	Asparagus, white, boiled/cooked in water	espárragos blancos cocidos
+ciqual:20278	Celeriac, puree	puré de apionabo
+ciqual:20279	Asparagus, green, raw	espárragos verdes crudos
 ciqual:2028	Lemon juice, pure juice	zumo de limón
+ciqual:20280	Romanesco cauliflower or romanesco broccoli, raw	romanesco crudo
+ciqual:20282	Asparagus, white or purple, peeled, raw	espárragos blancos pelados crudos
+ciqual:20283	Glasswort (Salicornia sp.), fresh, raw	salicor crudo
+ciqual:20284	Garden peas, puree	puré de guisantes
+ciqual:20288	Lettuce, sucrine, raw	lechuga sucrine cruda
+ciqual:20289	Tomato, flesh and skin, roasted/baked	tomates asados
+ciqual:20290	Romanesco cauliflower or romanesco broccoli, cooked	romanesco cocido
+ciqual:20291	Red kuri squash, flesh without skin, braised	calabaza potimarrón estofada
+ciqual:20292	Pumpkin (cucurbita moschata), flesh without skin, cooked	calabaza moscada cocida
+ciqual:20293	Coco bean, boiled/cooked in water	judías coco cocidas
+ciqual:20295	Lettuce, oak-leaf, raw	lechuga hoja de roble cruda
+ciqual:20296	Chinese cabbageor bok choï bredes, rods and leafs, steamed, from the island La Réunion (Brassica rapa subsp. Chinensis)	bok choy al vapor
+ciqual:20297	Chayote, without skin, pitted, steamed, sampled in the island La Réunion (Sechium edule)	chayote al vapor
+ciqual:20298	Carrots, , seasoned puree with cream, prepacked	puré de zanahoria con nata
+ciqual:20299	Asparagus, green, boiled/cooked in water	espárragos verdes cocidos
 ciqual:2030	Lime juice, fresh	zumo de lima recién exprimido
+ciqual:20300	Eggplant, flesh and skin, roasted/baked	berenjena asada
+ciqual:20301	Swiss chard, leaf and stalk, boiled/cooked in water	acelga cocida
+ciqual:20302	Broccoli, boiled/cooked in water, crunchy	brócoli cocido crujiente
+ciqual:20303	Broccoli, boiled/cooked in water, tender	brócoli cocido tierno
+ciqual:20304	Broccoli, steamed	brócoli al vapor
+ciqual:20305	Carrot, boiled/cooked in water, crunchy	zanahoria cocida crujiente
+ciqual:20306	Carrot, boiled/cooked in water, tender	zanahoria cocida tierna
+ciqual:20307	Carrot, steamed	zanahoria al vapor
+ciqual:20308	White cabbage, boiled/cooked in water	col blanca cocida
+ciqual:20309	Brussels sprout, boiled/cooked in water	coles de Bruselas cocidas
 ciqual:2031	Lime juice, pure juice	zumo de lima
+ciqual:20310	Red cabbage, braised	col lombarda estofada
+ciqual:20311	Green cabbage, boiled/cooked in water	col verde hervida
+ciqual:20312	Cauliflower, steamed	coliflor al vapor
+ciqual:20313	Courgette or zucchini, flesh and skin, roasted/baked	calabacín asado
+ciqual:20314	Celery stalk, braised	apio estofado
+ciqual:20315	Celeriac, boiled/cooked in water	apionabo hervido
+ciqual:20316	Chicory, roasted/baked	endibia asada
+ciqual:20317	Fennel, braised	hinojo estofado
+ciqual:20318	Butter bean or yellow bean, boiled/cooked in water	judías manteca cocidas
 ciqual:2032	Tomato juice, pure juice, 6 g salt/L	zumo de tomate salado (6 g/l)
+ciqual:20320	French bean, boiled/cooked in water	judías verdes hervidas
+ciqual:20321	Turnip, boiled/cooked in water	nabo hervido
+ciqual:20322	Onion, white or yellow, sautéed/pan-fried, without added fat	cebolla salteada sin grasa
+ciqual:20323	Spring onion, sautéed/pan-fried, without added fat	cebolleta salteada sin grasa
+ciqual:20324	Onion, red, sautéed/pan-fried, without added fat	cebolla roja salteada sin grasa
+ciqual:20325	Parsnip, braised	chirivía estofada
+ciqual:20326	Garden peas, boiled/cooked in water	guisantes hervidos
+ciqual:20327	Leek, boiled/cooked in water	puerro hervido
+ciqual:20328	Sweet pepper, yellow, sautéed/pan-fried, without added fat	pimiento amarillo salteado sin grasa
+ciqual:20329	Sweet pepper, red, sautéed/pan-fried, without added fat	pimiento rojo salteado sin grasa
 ciqual:2033	Multifruit juice, juice and fruit puree	zumo multifruta con puré de fruta
+ciqual:20330	Sweet pepper, green, sautéed/pan-fried, without added fat	pimiento verde salteado sin grasa
+ciqual:20331	Red kuri squash, flesh without skin, boiled/cooked in water	calabaza potimarrón hervida
 ciqual:20332	Pumpkin, roasted/baked	calabaza asada
+ciqual:20333	Salsify, boiled/cooked in water	salsifí hervido
+ciqual:20335	Shallot, sautéed/pan-fried, without added fat	chalota salteada sin grasa
+ciqual:20336	Spinach, boiled/cooked in water	espinacas hervidas
+ciqual:20337	Plant-based sausage with tofu (vegan), prepacked	salchicha vegetal con tofu vegana
+ciqual:20338	Plant-based sausage with tofu (not vegan), prepacked	quenelle de tofu
+ciqual:20339	Chinese cabbage, pak choï ou pak choy, cooked	pak choi cocido
 ciqual:2034	Mandarin or clementine juice, pure juice	zumo de mandarina
+ciqual:20340	Chinese cabbage, pak choï ou pak choy, raw	pak choi crudo
+ciqual:20343	Tomato, marmande, raw	tomate marmande crudo
+ciqual:20344	Tomato, black krim, raw	tomate negro de Crimea crudo
+ciqual:20345	Tomato, long, raw	tomate alargado crudo
+ciqual:20346	Kale, raw	kale cruda
+ciqual:20347	Drumstick or moringa pods, raw	vainas de moringa crudas
+ciqual:20348	Drumstick or moringaleaves, raw	hojas de moringa crudas
+ciqual:20349	Asparagus, boiled/cooked in water (average)	espárragos hervidos
 ciqual:2035	Multifruit juice, pure juice, standard	zumo multifruta
+ciqual:20350	Broccoli, boiled/cooked in water (average)	brócoli hervido
+ciqual:20351	Broccoli, cooked (average)	brócoli cocido
+ciqual:20352	Carrot, boiled/cooked in water (average)	zanahoria hervida
+ciqual:20353	Carrot, cooked (average)	zanahoria cocida
+ciqual:20354	Celery stalk, cooked (average)	apio cocido
+ciqual:20355	Red cabbage, cooked (average)	col lombarda guisada
+ciqual:20356	Fennel, cooked (average)	hinojo cocido
+ciqual:20357	Red kuri squash, flesh without skin, cooked (average)	calabaza potimarrón cocida
+ciqual:20358	Tomato, flesh and skin, cooked (average)	tomates guisados
+ciqual:20359	Lentil, dried (average)	lentejas secas
 ciqual:2036	Multifruit juice, grape base, standard	zumo multifruta con base de uva
+ciqual:20360	Lentil, boiled/cooked in water (average)	lentejas hervidas
 ciqual:2038	Multifruit juice, orange base, standard	zumo multifruta con base de naranja
+ciqual:20385	Tomato, raw (average)	tomate crudo
 ciqual:2039	Pomegranate juice, fresh	zumo de granada recién exprimido
 ciqual:2040	Acerola juice, fresh	zumo de acerola recién exprimido
 ciqual:2043	Apricot nectar	néctar de albaricoque
 ciqual:2045	Papaya nectar	néctar de papaya
 ciqual:2048	Multifruit juice, apple base, standard	zumo multifruta con base de manzana
+ciqual:20496	Mixed vegetables for couscous, frozen, raw	verduras para cuscús congeladas crudas
+ciqual:20497	Mixed vegetables for couscous, cooked	verduras para cuscús cocidas
+ciqual:20498	Vegetables with mushrooms, pan-fried or stir-fried, seasonned, country-style, frozen	salteado de verduras con setas congelado
+ciqual:20499	Vegetable, cooked (average)	verduras cocidas
 ciqual:2050	Multifruit juice, apple base, multivitamin	zumo multifruta con base de manzana y vitaminas
+ciqual:20500	Broad bean, boiled/cooked in water	habas hervidas
+ciqual:20501	Haricot bean, dried	alubias blancas secas
+ciqual:20502	Haricot bean, boiled/cooked in water	alubias blancas hervidas
+ciqual:20503	Red kidney bean, boiled/cooked in water	alubias rojas hervidas
+ciqual:20506	Split pea, boiled/cooked in water	guisantes partidos hervidos
+ciqual:20507	Chick pea, boiled/cooked in water	garbanzos hervidos
+ciqual:20508	Flageolet bean, canned, drained	judías flageolet en conserva escurridas
+ciqual:20510	Lentil, seasoned, canned, drained	lentejas guisadas en conserva escurridas
+ciqual:20511	Haricot bean, canned, drained	alubias blancas en conserva escurridas
+ciqual:20513	Flageolet bean, boiled/cooked in water	judías flageolet hervidas
+ciqual:20515	Split pea, dried	guisantes partidos secos
+ciqual:20516	Chick pea, dried	garbanzos secos
+ciqual:20517	Broad bean, to shell, fresh, raw	habas frescas en vaina crudas
+ciqual:20518	Broad bean, dried	habas secas
 ciqual:2052	Fruit and vegetable juice, pure juice	zumo de fruta y verdura
+ciqual:20521	Lentils seeds, sprouted, fresh, raw	brotes de lenteja crudos
+ciqual:20524	Red kidney bean, canned, drained	alubias rojas en conserva escurridas
+ciqual:20525	Red kidney bean, dried	alubias rojas secas
+ciqual:20527	Pigeon-pea, immature, fresh, raw	guandú fresco crudo
+ciqual:20529	Lima bean, raw	judías de Lima crudas
 ciqual:2053	Tomato juice, pure juice (average)	zumo de tomate
+ciqual:20530	Beans, mung, mature, seeds, dried	judías mungo secas
+ciqual:20531	Mung bean, fresh, boiled/cooked in water	judías mungo frescas hervidas
+ciqual:20532	Chick pea, canned, drained	garbanzos en conserva escurridos
+ciqual:20534	Lupin, seed, dried	altramuces secos
+ciqual:20535	Lentil, pink or red, dried	lentejas rojas secas
+ciqual:20537	flageolet bean, fresh, frozen, raw	judías flageolet frescas congeladas crudas
+ciqual:20539	Flageolet bean, green, dried	judías flageolet verdes secas
 ciqual:2054	Pear nectar	néctar de pera
+ciqual:20540	Flageolet bean, green, boiled/cooked in water	judías flageolet verdes hervidas
+ciqual:20541	Broad bean, peeled, fresh, frozen, raw	habas peladas congeladas crudas
+ciqual:20542	Broad bean, peeled, fresh, frozen, boiled/cooked in water	habas peladas congeladas hervidas
+ciqual:20543	Broad bean, fresh, frozen, boiled/cooked in water	habas congeladas hervidas
+ciqual:20584	Tomato, bunch, raw	tomates en rama crudos
+ciqual:20585	Lentil, green, dried	lentejas verdes secas
+ciqual:20586	Lentil, blond, dried	lentejas rubias secas
+ciqual:20587	Lentil, green, boiled/cooked in water	lentejas verdes hervidas
+ciqual:20588	Lentil, blond, boiled/cooked in water	lentejas rubias hervidas
+ciqual:20589	Lentil, pink or red, boiled/cooked in water	lentejas rojas hervidas
+ciqual:20590	Chinese or Japanese artichokes, cooked	crosnes cocidos
+ciqual:20591	Soy protein, textured, rehydrated	proteína de soja texturizada rehidratada
 ciqual:2060	Multifruit nectar, multivitamin	néctar multifruta con vitaminas
 ciqual:2061	Multifruit nectar, standard	néctar multifruta
 ciqual:2062	Multifruit nectar, orange base, multivitamin	néctar multifruta con base de naranja y vitaminas
@@ -6566,6 +7260,7 @@ ciqual:2063	Multifruit nectar, orange base, standard	néctar multifruta con base
 ciqual:2064	Fruit nectar, with sweetener(s), reduced sugar	néctar con edulcorante
 ciqual:2069	Multifruit juice, from concentrate, standard	zumo multifruta de concentrado
 ciqual:2070	Orange juice, pure juice	zumo de naranja
+ciqual:20700	Legume, cooked (average)	legumbres cocidas
 ciqual:2071	Multifruit juice, from concentrate, multivitamin	zumo multifruta de concentrado con vitaminas
 ciqual:2072	Fruit juice, pure juice (average)	zumo de frutas exprimido
 ciqual:2073	Pineapple juice, pure juice	zumo de piña
@@ -6573,27 +7268,507 @@ ciqual:2074	Apple juice, pure juice	zumo de manzana
 ciqual:2075	Vegetable juice, pure juice (average)	zumo de verduras
 ciqual:2076	Apple nectar	néctar de manzana
 ciqual:2077	Fruit juice, from concentrate (average)	zumo de frutas de concentrado
+ciqual:20800	Yellow banana, flesh without skin, steamed, sampled in the island of La Martinique	banana al vapor
+ciqual:20801	Pumpkin (local variety), crisps, sampled in the island of La Martinique	chips de calabaza (variedad local)
+ciqual:20802	Pumpkin (phoenix variety), crisps, sampled in the island of La Martinique	chips de calabaza (variedad Phoenix)
+ciqual:20803	Caribbean cabbage, pulp, steamed, sampled in the island of La Martinique	macabo al vapor
+ciqual:20804	Chayote, white skin, flesh without skin, pitted, steamed, sampled in the island of La Martinique	chayote de piel blanca al vapor
+ciqual:20805	Chayote, green skin, flesh without skin, pitted, steamed, sampled in the island of La Martinique	chayote de piel verde al vapor
+ciqual:20806	Chayote, white skin, flesh without skin, pitted, canned, solids and liquids, sampled in the island of La Martinique	chayote de piel blanca en conserva
+ciqual:20807	Chayote, white skin, flesh and skin, pitted, steamed, frozen, sampled in the island of La Martinique	chayote al vapor congelado
+ciqual:20808	Cucumber, flesh without skin, with seeds, raw, sampled in the island of La Martinique	pepino sin piel con pepitas crudo
+ciqual:20809	Cucumber, flesh and skin, raw, sampled in the island of La Martinique	pepino crudo de Martinica
+ciqual:20810	Watercress, leaf, raw, sampled in the island of La Martinique	berros crudos de Martinica
+ciqual:20811	Dachine, pulp, steamed, sampled in the island of La Martinique	dachine al vapor
+ciqual:20812	Sweet potato flour, sampled in the island of La Martinique	harina de boniato
+ciqual:20813	Breadfruit, flesh without skin, steamed, sampled in the island of La Martinique	fruta del pan al vapor
+ciqual:20814	Pumpkin (local variety), flesh without skin, steamed, sampled in the island of La Martinique	calabaza local al vapor
+ciqual:20815	Pumpkin (local variety),flesh without skin, steamed, frozen, sampled in the island of La Martinique	calabaza local al vapor congelada
+ciqual:20816	Pumpkin (local variety), flesh without skin, grated, raw, sampled in the island of La Martinique	calabaza local rallada cruda
+ciqual:20817	Pumpkin (phoenix variety), flesh without skin, steamed, sampled in the island of La Martinique	calabaza Phoenix al vapor
+ciqual:20818	Pumpkin (phoenix variety), flesh without skin, grated, raw, sampled in the island of La Martinique	calabaza Phoenix rallada cruda
+ciqual:20819	Pumpkin (phoenix variety), flesh without skin, frozen, steamed, sampled in the island of La Martinique	calabaza Phoenix al vapor congelada
+ciqual:20820	Okra, whole, canned, solids and liquids, sampled in the island of La Martinique	ocra en conserva
+ciqual:20821	Okra, whole, canned, steamed, sampled in the island of La Martinique	ocra al vapor
+ciqual:20822	Okra, flesh without peduncle, blanched, frozen, sampled in the island of La Martinique	ocra escaldada congelada
+ciqual:20823	Yam cousse-couche, pulp, steamed, sampled in the island of La Martinique	ñame cousse-couche al vapor
+ciqual:20824	Yam yellow, pulp, steamed, sampled in the island of La Martinique	ñame amarillo al vapor
+ciqual:20825	Yam St Martin, pulp, steamed, sampled in the island of La Martinique	ñame Saint-Martin al vapor
+ciqual:20826	Jerusalem artichoke, pulp, steamed, sampled in the island of La Martinique	alcachofa de Jerusalén al vapor
+ciqual:20827	Kamanioc, pulp, steamed, sampled in the island of La Martinique	kamanioc al vapor
+ciqual:20828	Massissi, flesh, raw, sampled in the island of La Martinique	massissi crudo
+ciqual:20829	Papaya immature, flesh without skin, raw, from Martinique	papaya verde cruda
+ciqual:20830	Papaya immature, flesh without skin, steamed, sampled in the island of La Martinique	papaya verde al vapor
+ciqual:20831	Sweet potato, pulp, blanched, frozen, sampled in the island of La Martinique	boniato escaldado congelado
+ciqual:20832	Sweet potatoes, pulp, steamed, sampled in the island of La Martinique	boniato al vapor
+ciqual:20833	Pigeon pea, whole, steamed, sampled in the island of La Martinique	guandú al vapor
+ciqual:20834	Ti nain, flesh without skin, steamed, sampled in the island of La Martinique	ti nain al vapor
+ciqual:20835	Tomato, whole, raw, sampled in the island of La Martinique	tomates enteros crudos de Martinica
+ciqual:20901	Soybean, seed, whole	grano de soja
+ciqual:20903	Soy protein	aislado de proteína de soja
+ciqual:20904	Tofu, plain, prepacked	tofu natural
+ciqual:20906	Tofu, silky, prepacked	tofu sedoso
+ciqual:20911	Soy dessert, flavoured, with sugar(s), fortified with calcium, refrigerated	postre de soja saborizado azucarado con calcio
+ciqual:20912	Tofu, smoked, prepacked	tofu ahumado
+ciqual:20914	Plant-based burger or steak from soybean	hamburguesa de soja
+ciqual:20915	Soya flour, wholegrain	harina de soja integral
+ciqual:20916	Miso	miso
+ciqual:20917	Tempeh	tempeh
+ciqual:20918	Syrup for canned fruits	sirope para fruta en conserva
+ciqual:20919	Light syrup for canned fruits	sirope ligero para fruta en conserva
+ciqual:20921	Soy dessert, flavoured, with sugar(s), not fortified, refrigerated	postre de soja saborizado azucarado
+ciqual:20922	Plant-based dessert (almond, oat, hemp, coconut, rice), flavoured, with sugar(s), not fortified, refrigerated	postre vegetal sin soja saborizado azucarado
+ciqual:20923	Plant-based dessert (coconut, rice), with fruits, with sugar(s), fortified with calcium, fermented, refrigerated	postre vegetal sin soja con fruta azucarado con calcio
+ciqual:20924	Light syrup for canned pears	sirope ligero para pera en conserva
+ciqual:20925	Soy dessert, flavoured, with sugar(s), fortified with calcium and vitamin D, refrigerated	postre de soja saborizado azucarado con calcio y vitamina D
+ciqual:20926	Soy dessert, with fruits, with sugar(s), fortified with calcium and vitamin D, fermented, refrigerated	postre de soja con fruta azucarado con calcio y vitamina D
+ciqual:20927	Plant-based dessert (almond, oat, hemp, coconut, rice), plain, no added sugars, not fortified, refrigerated	postre vegetal sin soja natural sin azúcar
+ciqual:20928	Plant-based dessert without soy, refrigerated (average)	postre vegetal sin soja
+ciqual:20929	Soy dessert, refrigerated (average)	postre de soja
+ciqual:20982	Seaweed, Spirulina (spirulina sp.), fresh, raw	espirulina fresca
 ciqual:20983	Seaweed, Sea fennel, fresh, raw	hinojo marino fresco
+ciqual:20985	Sea lettuce (Ulva sp.), dried or dehydrated	lechuga de mar seca
+ciqual:20986	Sea belt (Saccharina latissima), dried or dehydrated	kombu royal seco
+ciqual:20987	Laver (Porphyra sp.), dried or dehydrated	nori seco
+ciqual:20988	Dulse (Palmaria palmata), dried or dehydrated	dulse seco
+ciqual:20989	Lithothamnion (Lithothamnion), dried or dehydrated	maërl seco
+ciqual:20990	Kombu or Japanese kelp (Saccharina japonica), dried or dehydrated	kombu seco
+ciqual:20991	Tangle (Laminaria digitata), dried or dehydrated	kombu bretón seco
+ciqual:20992	Sea thong (Himanthalia elongata), dried or dehydrated	espaguetis de mar secos
+ciqual:20993	Gracilaria seaweeds (Gracilaria sp.), dried or dehydrated	gracilaria seca
+ciqual:20994	Toothed wrack or bladder wrack (Fucus serratus et vesiculosus), dried or dehydrated	fucus seco
+ciqual:20995	Gut weed (Ulva sp.), dried or dehydrated	aonori seco
+ciqual:20996	Carragheen mosses (Chondrus crispus), dried or dehydrated	musgo de Irlanda seco
+ciqual:20997	Chlorella, dried or dehydrated	clorela seca
+ciqual:20998	North Atlantic rockweed (Ascophyllum nodosum), dried or dehydrated	ascofilo seco
+ciqual:20999	Atlantic wakame (Alaria esculenta), dried or dehydrated	wakame atlántico seco
+ciqual:21001	Mutton, meat, raw	carnero crudo
+ciqual:21003	Mutton, shoulder, raw	paleta de carnero cruda
+ciqual:21004	Sheep, foot, raw	patas de carnero crudas
+ciqual:21005	Sheep, head, raw	cabeza de carnero cruda
+ciqual:21006	Mutton, leg, raw	pierna de carnero cruda
+ciqual:21007	Mutton, leg, roasted/baked	pierna de carnero asada
+ciqual:21500	Lamb, cutlet, raw	chuletas de cordero crudas
+ciqual:21501	Lamb cutlet, grilled/pan-fried	chuletas de cordero a la plancha
+ciqual:21502	Lamb, leg, raw	pierna de cordero cruda
+ciqual:21503	Lamb, leg, roasted/baked	pierna de cordero asada
+ciqual:21504	Lamb, shoulder, raw	paleta de cordero cruda
+ciqual:21505	Lamb, shoulder, lean, raw	paleta de cordero magra cruda
+ciqual:21506	Lamb, shoulder, roasted/baked	paleta de cordero asada
+ciqual:21507	Lamb, shoulder, lean, roasted/baked	paleta de cordero magra asada
+ciqual:21508	Lamb, neck, braised or boiled	cuello de cordero estofado
+ciqual:21509	Lamb, chop fillet, grilled/pan-fried	chuleta de lomo de cordero a la plancha
+ciqual:21512	Lamb, rib chop, grilled/pan-fried	chuleta de costilla de cordero a la plancha
+ciqual:21513	Lamb, saddle, lean, roasted/baked	silla de cordero magra asada
+ciqual:21514	Lamb, neck, raw	cuello de cordero crudo
+ciqual:21515	Lamb, saddle, raw	silla de cordero cruda
+ciqual:21516	Lamb, chop fillet, raw	chuleta de lomo de cordero cruda
+ciqual:21517	Lamb, rib chop, raw	chuleta de costilla de cordero cruda
+ciqual:21518	Lamb, leg, grilled/pan-fried	pierna de cordero a la plancha
+ciqual:21519	Lamb, leg, braised	pierna de cordero estofada
+ciqual:21520	Lamb, saddle, lean, grilled/pan-fried	silla de cordero magra a la plancha
+ciqual:21521	Lamb, chop, raw (average)	chuletas de cordero crudas
+ciqual:21522	Lamb, chop, cooked (average)	chuletas de cordero cocidas
+ciqual:21523	Lamb, meat, cooked (average)	carne de cordero cocida
+ciqual:21524	Lamb, chop, grilled/pan-fried (average)	chuletas de cordero a la plancha
+ciqual:21525	Lamb, spare rib, raw	costillas de cordero crudas
+ciqual:21800	Kid meat, raw	cabrito crudo
+ciqual:21801	Kid meat, cooked	cabrito cocido
+ciqual:22000	Egg, raw	huevo crudo
+ciqual:22001	Egg white, raw	clara de huevo cruda
+ciqual:22002	Egg yolk, raw	yema de huevo cruda
+ciqual:22003	Egg yolk, powder	yema de huevo en polvo
+ciqual:22004	Egg white, powder	clara de huevo en polvo
+ciqual:22008	Egg white, cooked	clara de huevo cocida
+ciqual:22009	Egg yolk, cooked	yema de huevo cocida
+ciqual:22010	Egg, hard-boiled	huevo duro
+ciqual:22011	Egg, poached	huevo escalfado
+ciqual:22013	Egg, powder	huevo en polvo
+ciqual:22014	Egg, soft-boiled	huevo pasado por agua
+ciqual:22050	Quail egg, raw	huevo de codorniz crudo
+ciqual:22060	Duck egg, raw	huevo de pato crudo
+ciqual:22070	Goose egg, raw	huevo de oca crudo
+ciqual:22080	Turkey egg, raw	huevo de pavo crudo
+ciqual:22500	Omelette, plain, homemade	tortilla francesa casera
+ciqual:22502	Egg, scrambled, with added fat	huevos revueltos con grasa
+ciqual:22505	Egg, fried, without added fat	huevo frito sin grasa
+ciqual:22506	Omelette with cheese, homemade	tortilla francesa con queso casera
+ciqual:22507	Omelette with lardoons, homemade	tortilla francesa con beicon casera
+ciqual:22508	Omelette with mushrooms, homemade	tortilla francesa con champiñones casera
+ciqual:22509	Omelette with herbs, homemade	tortilla francesa con hierbas casera
+ciqual:22510	Spanish-style tortilla with onions (omelette with potatoes and onions), prepacked	tortilla de patata con cebolla
+ciqual:22511	Omelette with vegetables, cheese or meat (average)	tortilla francesa con relleno
+ciqual:23000	Cake (average)	pastel
+ciqual:23001	Cheesecake, prepacked	tarta de queso
+ciqual:23005	Chou pastry with praline flavoured custard	Paris-Brest
+ciqual:23006	Sponge cake with chocolate with or without cherry "black forest cake"	tarta selva negra
+ciqual:23007	Sponge cake with fruit mousse	tarta con mousse de fruta
+ciqual:23008	Dessert, Opera cake type	tarta ópera
+ciqual:23009	Sponge sandwich cake filled and topped with strawberries or raspberries	tarta fraisier
 ciqual:23021	Rum baba, from bakery	babá al ron
+ciqual:23022	Canelé cake	canelé
+ciqual:23023	Kouign amann, Buttered and caramelized milkbread cake, prepacked	kouign amann
+ciqual:23024	Macaroon filled with jam or cream	macarrón relleno de mermelada o crema
+ciqual:23027	Macaroon, biscuit, dry	macarrón seco
+ciqual:23030	Christmas log cake	tronco de Navidad
+ciqual:23031	Brownie (chocolate cake), with nuts, prepacked	brownie con frutos secos
+ciqual:23032	Brownie (chocolate cake), prepacked	brownie
+ciqual:23033	Rock-shaped coconut cake, prepacked	rochers de coco
+ciqual:23050	Savoy-style sponge cake	bizcocho de Saboya
+ciqual:23080	Butter pound cake, traditional	cuatro cuartos artesano
+ciqual:23081	Butter pound cake, prepacked	cuatro cuartos
+ciqual:23082	Pound cake, prepacked	plum cake
+ciqual:23103	Soft cake, with lemon, prepacked	bizcocho de limón
+ciqual:23120	Breton pudding cake with prunes filling, prepacked	pastel bretón relleno de crema de ciruelas
+ciqual:23121	Breton pudding cake with prunes	far bretón con ciruelas
+ciqual:23122	Kouign amann, Buttered and caramelized milkbread cake, from bakery	kouign amann artesano
+ciqual:23200	Gingerbread, prepacked	pan de especias
+ciqual:23220	Gingerbread with filling, prepacked	pan de especias relleno
+ciqual:23300	Baklava (oriental pastry with almonds and syrup)	baklava
+ciqual:23301	Gazelle horn (oriental pastry with almonds, crescent shaped and covered with icing sugar)	cuerno de gacela
+ciqual:23399	Short crust pastry, prepacked, cooked (average)	masa quebrada horneada
+ciqual:23402	Thin-crust pizza dough, prepacked, raw	masa de pizza fina cruda
+ciqual:23410	Short crust pastry, with vegetal fat, prepacked, raw	masa quebrada con grasa vegetal cruda
+ciqual:23412	Short crust pastry, with vegetal fat, prepacked, cooked	masa quebrada con grasa vegetal horneada
+ciqual:23414	Short crust pastry, pure butter, prepacked, raw	masa quebrada de mantequilla cruda
 ciqual:23415	Short crust pastry, pure butter, frozen, prepacked, raw	masa quebrada de mantequilla congelada
+ciqual:23416	Short crust pastryt, pure butter, prepacked, cooked	masa quebrada de mantequilla horneada
+ciqual:23420	Puff pastry, with vegetal fat, prepacked, raw	masa de hojaldre con grasa vegetal cruda
+ciqual:23424	Puff pastry, pure butter, prepacked, raw	masa de hojaldre de mantequilla cruda
+ciqual:23425	Puff pastry, pure butter, frozen, prepacked, raw	masa de hojaldre de mantequilla congelada cruda
+ciqual:23426	Puff pastry, pure butter, prepacked, cooked	masa de hojaldre de mantequilla horneada
+ciqual:23430	Khatfa (phyllo or filo pastry sheets), prepacked, dry cooked, without fat	masa filo horneada en seco sin grasa
+ciqual:23440	Shortbread dough, prepacked, raw	masa de galleta cruda
 ciqual:23442	Shortbread dough, prepacked, cooked	masa de galleta horneada
+ciqual:23444	Shortbread dough, pure butter, prepacked, raw	masa de galleta de mantequilla cruda
+ciqual:23445	Phyllo or filo dough, raw	masa filo cruda
 ciqual:23446	Shortbread dough, pure butter, frozen, prepacked, raw	masa de galleta de mantequilla congelada cruda
+ciqual:23448	Shortbread dough, pure butter, prepacked, cooked	masa de galleta de mantequilla horneada
+ciqual:23455	Chou pastry filled cream (whipped or custard)	pasta choux con crema
+ciqual:23456	Chou pastry filled with whipped cream	pasta choux con nata montada
+ciqual:23457	Chou pastry filled with custard cream	pasta choux con crema pastelera
+ciqual:23467	Chou pastry, sugar coated	chouquettes
+ciqual:23472	Profiteroles (chou pastry), with vanilla ice cream and chocolate sauce	profiteroles con helado de vainilla y salsa de chocolate
+ciqual:23474	Profiteroles (chou pastry) with custard and chocolate sauce, refrigerated	profiteroles con crema pastelera y salsa de chocolate
+ciqual:23477	Eclair	éclair
+ciqual:23479	Fruit pie with custard cream	tarta de frutas con crema pastelera
+ciqual:23480	Apple turnover	hojaldre de manzana
+ciqual:23481	Apple pie with custard (flour, eggs, cream, sugar, apple alcohol), from bakery	tarta normanda de manzana artesana
+ciqual:23485	Lemon tart	tarta de limón
+ciqual:23490	Apple tart	tarta de manzana
+ciqual:23491	Strawberries tart, from bakery	tarta de fresas artesana
+ciqual:23493	Apple crumble, prepacked	crumble de manzana
+ciqual:23494	Apricots tart	tarta de albaricoques
+ciqual:23495	Red berries tart	tarta de frutos rojos
+ciqual:23496	Tatin tart (caramelized upside-down apple tart)	tarta tatin
+ciqual:23497	Chocolate tart, from bakery	tarta de chocolate artesana
+ciqual:23498	Fruit tart (average)	tarta de frutas
+ciqual:23525	Flan tart with eggs	flan pastelero
+ciqual:23531	Fruit charlotte	charlota de frutas
+ciqual:23534	Semolina pudding with raisins and caramel sauce, refrigerated	pudding de sémola con pasas y caramelo
+ciqual:23536	Rice pudding with caramel sauce, refrigerated	arroz con leche al caramelo
+ciqual:23540	Moka cake	tarta moka
+ciqual:23585	Chocolate cake, prepacked	pastel de chocolate
+ciqual:23586	Chocolate soft cake, prepacked	bizcocho de chocolate
+ciqual:23588	Yogurt cake, prepacked	bizcocho de yogur
+ciqual:23594	Soft cake, plain, sponge cake type, prepacked	bizcocho tipo esponja
 ciqual:2365	Passion fruit nectar	néctar de maracuyá
 ciqual:2366	Banana nectar	néctar de plátano
 ciqual:2367	Guava nectar	néctar de guayaba
+ciqual:23680	Twelfth Night cake (puff pastry filled with applesauce)	galette des rois de manzana
+ciqual:23684	Twelfth Night cake (puff pastry filled with almond paste)	galette des rois de mazapán
 ciqual:2370	Mango nectar	néctar de mango
 ciqual:2371	Peach nectar	néctar de melocotón
 ciqual:2374	Pineapple nectar	néctar de piña
 ciqual:2375	Orange nectar	néctar de naranja
 ciqual:2377	Blood orange juice, pure juice	zumo de naranja sanguina
+ciqual:23799	Crepe, plain, prepacked, refrigerated	crepe refrigerada
+ciqual:23800	Crepe, plain, prepacked, room temperature	crepe
+ciqual:23801	Buckwheat crepe, plain, to be filled, prepacked	crepe de trigo sarraceno para rellenar
+ciqual:23802	Basque cake (shortbread), with custard cream	pastel vasco con crema pastelera
+ciqual:23803	Basque cake (shortbread), with cherries	pastel vasco con cerezas
+ciqual:23804	Crepe filled chocolate and cerels balls, prepacked	crepe rellena de chocolate y bolitas de cereales
+ciqual:23805	Blinis	blinis
 ciqual:2381	Cranberry juice	zumo de arándano rojo
 ciqual:23815	Crepe filled with sugar, prepacked	crêpe con azúcar
+ciqual:23820	Crepe filled with jam, home-made	crepe con mermelada casera
+ciqual:23821	Crepe filled with chocolate or chocolate and hazelnut spread, home-made	crepe con crema de chocolate casera
+ciqual:23827	Pancake, with sugar(s), prepacked	crepe dulce
+ciqual:23828	Pancake filled with chocolate and hazelnut spread, prepacked	crepe con crema de cacao y avellanas
+ciqual:23829	Crepe filled with chocolate, prepacked	crepe con chocolate
+ciqual:23830	Crepe with strawberry filling, prepacked	crepe con fresa
+ciqual:23849	Wafer biscuit, thin, filled with honey, caramel or soft brown sugar, prepacked	gaufrette fina con miel o caramelo
+ciqual:23850	Waffle, from bakery, plain, from bakery	gofre artesano
+ciqual:23851	Soft waffle (Brussels-style), plain or with sugar(s), prepacked	gofre blando de Bruselas
+ciqual:23852	Soft waffle (Brussels-style), with chocolate, prepacked	gofre blando con chocolate
+ciqual:23853	Wafer biscuit, crunchy (thin or dried), plain or with sugar(s), prepacked	gofre crujiente
+ciqual:23880	Doughnut, plain, sprinkled with sugar	donut con azúcar
+ciqual:23881	Doughnut filled with fruit filling (e.g. jam), prepacked-> ARCHIVE	donut con relleno de fruta
+ciqual:23885	Doughnut filled or covered with chocolate or with chocolate and hazelut paste, prepacked	donut con chocolate
+ciqual:23900	Pastry (average)	bollería
+ciqual:23909	Fruit cake (candied fruits and/or raisins), prepacked	plum cake con fruta escarchada y pasas
+ciqual:23925	Marble cake, prepacked	bizcocho marmolado
+ciqual:23935	Soft cake, plain, prepacked	bizcocho sencillo
+ciqual:23937	Soft cake, with fruits, prepacked	bizcocho con fruta
+ciqual:23938	Soft cake with nuts, prepacked	bizcocho con frutos secos
+ciqual:23939	Soft cake filled with chocolate, prepacked	bizcocho relleno de chocolate
+ciqual:23941	Soft cake filled with fruits, mini sponge roll type, prepacked	mini brazo relleno de fruta
+ciqual:23943	Soft cake, with chocolate chips, prepacked	bizcocho con pepitas de chocolate
+ciqual:23944	Soft cake filled with chocolate and with chocolate coating, prepacked	bizcocho relleno de chocolate con cobertura de chocolate
+ciqual:23945	Soft cake filled with chocolate and milk, with chocolate coating prepacked	bizcocho relleno de chocolate y leche con cobertura de chocolate
+ciqual:23951	Muffin, with fruits (e.g. blueberries), prepacked	magdalena con fruta
+ciqual:23952	Muffin, with chocolate, prepacked	magdalena con chocolate
+ciqual:24000	Biscuit (cookie)	galleta
+ciqual:24001	Biscuit (cookie), plain	galleta sencilla
+ciqual:24002	Biscuit (cookie), vitamin content guaranteed	galleta con vitaminas
+ciqual:24003	Biscuit (cookie), vitamin and mineral content guaranteed	galleta con vitaminas y minerales
+ciqual:24004	Biscuit (cookie) with fruits, low salt	galleta con fruta baja en sal
+ciqual:24006	Soja biscuit, fortified with vitamins and minerals	galleta de soja con vitaminas y minerales
+ciqual:24008	Biscuit (cookie) filled with fruits, reduced fat	galleta rellena de fruta baja en grasa
+ciqual:24009	Speculoos biscuit	galleta speculoos
+ciqual:24010	Biscuit (cookie), with vegetal fat	galleta con grasa vegetal
+ciqual:24011	Biscuit (cookie), assortment	galletas surtidas
+ciqual:24012	Biscuit (cookie), with chocolate, no added sugars and with sweetener(s), fortified with vitamins	galleta con chocolate sin azúcar con vitaminas
+ciqual:24013	Biscuit (cookie), no added sugars and with sweetener(s)	galleta sin azúcar
+ciqual:24014	Biscuit (cookie), with a chocolate bar covering, milk filling	galleta bañada en chocolate con relleno de leche
+ciqual:24015	Butter biscuit (cookie)	galleta de mantequilla
+ciqual:24016	Biscuit (cookie), with a chocolate bar covering	galleta bañada en chocolate
+ciqual:24017	Butter biscuit (cookie), with chocolate (chocolate chips or covering)	galleta de mantequilla con chocolate
+ciqual:24018	Butter biscuit (cookie), gluten free	galleta de mantequilla sin gluten
+ciqual:24019	Biscuit, with chocolate, gluten free	galleta con chocolate sin gluten
+ciqual:24020	Biscuit (cookie) from whole grain cereals	galleta integral
+ciqual:24021	Butter biscuit (cookie), whole wheat	galleta de mantequilla integral
+ciqual:24028	Biscuit (cookie), with sesame, not fortified	galleta con sésamo
+ciqual:24029	Biscuit (cookie), with sesame, fortifed with vitamins and minerals	galleta con sésamo con vitaminas y minerales
+ciqual:24031	Biscuit (cookie), without chocolate, reduced fat	galleta baja en grasa
+ciqual:24034	Breakfast biscuit (cookie), without chocolate, not fortified	galleta de desayuno
+ciqual:24035	Breakfast biscuit (cookie), reduced sugar	galleta de desayuno baja en azúcar
+ciqual:24036	Biscuit (cookie), with chocolate, not fortified	galleta con chocolate no enriquecida
+ciqual:24037	Biscuit (cookie) filled with fruit paste or fruit puree	galleta rellena de fruta
+ciqual:24038	Biscuit (cookie), with chocolate covering	galleta con cobertura de chocolate
+ciqual:24040	Breakfast biscuit (cookie), with chocolate, not fortified	galleta de desayuno con chocolate
+ciqual:24041	Breakfast biscuit (cookie), fortified with vitamins and minerals	galleta de desayuno con vitaminas y minerales
+ciqual:24042	Biscuit (cookie) with cereals, fortified with vitamins and minerals	galleta con cereales con vitaminas y minerales
+ciqual:24048	Biscuit (cookie), shortbread, commercial, whith vegetal fat	galleta tipo sablé con grasa vegetal
+ciqual:24049	Biscuit shortbread, with butter	galleta tipo sablé con mantequilla
+ciqual:24050	Biscuit shortbread, with butter and chocolate	galleta tipo sablé con mantequilla y chocolate
+ciqual:24051	Biscuit sponge cake, with chocolate covering, pre-packed	galleta de bizcocho con cobertura de chocolate
+ciqual:24052	Biscuit (small tart), with chocolate covering, prepacked	tartaleta con cobertura de chocolate
+ciqual:24054	Biscuit shortbread, with fruits	galleta tipo sablé con fruta
+ciqual:24056	Florentine biscuit (chocolate biscuit or cookie with almonds)	galleta florentina
+ciqual:24057	Biscuit shortbread, with fruit filling, "lunette" type	galleta tipo sablé con fruta tipo lunette
+ciqual:24061	biscuit with meringue, filled (chocolate, hazelut, coconut…) with chocolate covering or chocolate base	galleta con merengue y chocolate
+ciqual:24070	Biscuit (cookie) with coconut	galleta de coco
+ciqual:24071	Shortbread pastry biscuit, from bakery	galleta tipo sablé artesana
+ciqual:24224	Chocolate biscuit (cookie), with vanilla filling, round, black and white	galleta de chocolate con relleno de vainilla redonda
+ciqual:24225	Biscuit (cookie), snack with dairy or vanilla filling	galleta con relleno lácteo
+ciqual:24230	Biscuit (cookie), snack with chocolate filling, whole wheat whole wheat	galleta integral con relleno de chocolate
+ciqual:24231	Biscuit (cookie), snack with chocolate filling	galleta con relleno de chocolate
+ciqual:24240	Biscuit (cookie), snack with fruits filling	galleta con relleno de fruta
+ciqual:24300	Wafer biscuit without filling	galleta de oblea sin relleno
+ciqual:24311	Wafer biscuit, filled or coated with chocolate	galleta de oblea con chocolate
+ciqual:24312	Wafer biscuit, with nuts (hazelnut, almond, praliné, etc.) filling, with chocolate or not, prepacked	galleta de oblea con frutos secos
+ciqual:24313	Wafer biscuit, with vanilla filling	galleta de oblea con vainilla
+ciqual:24320	Wafer biscuit, with fruit filling	galleta de oblea con fruta
+ciqual:24370	Wafer cookie or crepe dentelle, plain	crepa dentelle
+ciqual:24371	Wafer cookie, crepe dentelle, with chocolate covering	crepa dentelle con chocolate
+ciqual:24430	Biscuit (cookie), sponge fingers or lady fingers	bizcochos de soletilla
+ciqual:24441	Biscuit (cookie), cat tongue type	lenguas de gato
+ciqual:24520	Meringue	merengue
 ciqual:24614	Biscuit (cookie), hard, with almonds (e.g. canistrelli)	galleta dura de almendras
+ciqual:24615	Biscuit (cookie), thin, with almonds	galleta fina de almendra
+ciqual:24616	Biscuit (cookie), thin, lemon or orange lavour	galleta fina de limón o naranja
 ciqual:24630	Madeleine cake, pure butter, prepacked	magdalenas
+ciqual:24631	Madeleine cake, with chocolate, prepacked	magdalena con chocolate
+ciqual:24632	Madeleine cake, prepacked	magdalena clásica
+ciqual:24654	Biscuit, oat, with chocolate covering	galleta de avena con chocolate
+ciqual:24655	Biscuit, oat, plain	galleta de avena
+ciqual:24656	Biscuit, cookie, cranberries and white chocolate, prepacked	galleta con arándanos rojos y chocolate blanco
+ciqual:24657	Biscuit, stick, with chocolate covering	palitos de galleta con chocolate
+ciqual:24658	Biscuit puff pastry, with chocolate covering	galleta de hojaldre con chocolate
+ciqual:24659	Biscuit puff pastry, prepacked	galleta de hojaldre
+ciqual:24660	Biscuit (puff pastry), palmier, from bakery	palmera de hojaldre artesana
+ciqual:24663	Pear tart with almonds	tarta de pera con almendras
+ciqual:24664	Almond cake, financier, prepacked	financier de almendra
+ciqual:24666	Mille-feuille pastry	milhojas
+ciqual:24674	Soft cake, without chocolate, gluten free, prepacked	bizcocho sin chocolate sin gluten
+ciqual:24675	Soft cake, with chocolate, gluten free, prepacked	bizcocho con chocolate sin gluten
+ciqual:24676	Biscuit (cookie), with chocolate and nuts, prepacked	galleta con chocolate y frutos secos
+ciqual:24678	Biscuit sponge cake with fruits covering, pre-packed	galleta de bizcocho con fruta
+ciqual:24679	Biscuit (small tart), with fruit covering, prepacked	tartaleta con fruta
+ciqual:24680	Soft cake, filled with orange paste and sugar icing coating	bizcocho relleno de naranja con glaseado
+ciqual:24684	Biscuit (cookie), with chocolate, prepacked	galleta con chocolate
+ciqual:24685	Cone, wafer for ice cream	cucurucho de oblea para helado
+ciqual:24686	Biscuit sponge cake, filled with fruits and with chocolate covering	galleta de bizcocho con fruta y cobertura de chocolate
+ciqual:24687	Biscuit (cookie), with chocolate chips and coconut, prepacked	galleta con pepitas de chocolate y coco
+ciqual:24689	Baby biscuit	galleta infantil
 ciqual:24998	White fish with sauce, prepacked (average)	pescado blanco en salsa preparado
+ciqual:24999	Dessert (average)	postre
 ciqual:2500	Smoothie, no precision on fruit content and other ingredients	batido de frutas
+ciqual:25001	Veal stew in white sauce, prepacked	blanqueta de ternera
+ciqual:25002	White bean stew, canned	cassoulet en conserva
+ciqual:25003	Sauerkraut, with garnish (cooked meats), prepacked	chucrut con carne
+ciqual:25009	Shepherd's pie or cottage pie with meat, prepacked	pastel de carne con puré de patata
+ciqual:25010	Salt-cured pork belly with lentils, prepacked	panceta adobada con lentejas
+ciqual:25013	Boiled meat with vegetables, prepacked	pot-au-feu
+ciqual:25018	Ratatouille, seasoneded, prepacked	ratatouille
+ciqual:25019	Ravioli filled with meat, in tomato sauce, canned	raviolis de carne en salsa de tomate en conserva
+ciqual:25020	Cheese soufflé	suflé de queso
+ciqual:25026	Spinach with cream sauce, prepacked	espinacas en salsa de nata
+ciqual:25029	Couscous with mutton	cuscús con cordero
+ciqual:25031	Paëlla, prepacked	paella
+ciqual:25033	Burgundy-style beef stew, prepacked	ternera a la borgoñona
+ciqual:25035	Sauté of lamb with curry, prepacked	salteado de cordero al curry
+ciqual:25037	Fish or seafood au gratin, intended to be cooked, prepacked, raw	gratinado de pescado o marisco crudo
+ciqual:25038	Fish and shrimp au gratin, prepacked, cooked	gratinado de pescado y gambas
+ciqual:25043	Couscous with meat or chicken, reduced fat, prepacked	cuscús con carne o pollo ligero
+ciqual:25052	Eggplant au gratin, prepacked	berenjenas gratinadas
+ciqual:25056	Dauphiné-style creamed potatoes au gratin, prepacked	patatas gratinadas a la crema
+ciqual:25057	Pre-fried potatoes, pan-fried, with bacon bits or chicken, without green vegetables, prepacked	patatas salteadas con beicon o pollo
+ciqual:25058	Duck with sauce (green pepper sauce, hunter-style sauce, etc.) , prepacked	pato en salsa
+ciqual:25063	Rabbit with mustard sauce, prepacked	conejo a la mostaza
+ciqual:25065	Beef stew with carrots, prepacked	ternera estofada con zanahorias
+ciqual:25071	Pork sausage stew with cabbage, carrots and potatoes	salchichas de cerdo estofadas con col, zanahorias y patatas
+ciqual:25073	Chicory with ham in sauce, prepacked	endibias con jamón en salsa
+ciqual:25077	Salmon with sorrel, prepacked	salmón con acedera
+ciqual:25081	Lasagna or cannelloni with meat (bolognese sauce), prepacked	lasaña de carne
+ciqual:25085	Bolognese-style pasta (spaghetti, tagliatelle…), prepacked	pasta a la boloñesa
+ciqual:25086	White fish with bordelaise sauce, prepacked	pescado blanco a la bordelesa
+ciqual:25088	Cantonese rice, prepacked	arroz cantonés
+ciqual:25089	Veal escalope cordon bleu (escalope topped with a ham slice and cheese, breaded, prepacked	cordón bleu de ternera
+ciqual:25098	White bean stew, with pork, canned	alubias blancas con cerdo en conserva
+ciqual:25099	White bean stew, with duck or goose, canned	alubias blancas con pato en conserva
+ciqual:25101	Cauliflower au gratin, prepacked	coliflor gratinada
+ciqual:25103	Stuffed tomatoes, prepacked	tomates rellenos
+ciqual:25106	Stuffed cabbage, prepacked	col rellena
+ciqual:25107	Couscous with fish	cuscús con pescado
+ciqual:25108	Samosas or samoosas or filled filo pastry, prepacked, cooked	samosas
+ciqual:25110	Dumplings, steamed, with shrimps, cooked	dumplings de gambas al vapor
+ciqual:25111	Chili con carne, prepacked	chili con carne
+ciqual:25121	Cockerel in red wine sauce	gallo al vino tinto
+ciqual:25122	Pasta with ham au gratin, prepacked	pasta con jamón gratinada
+ciqual:25123	Moussaka, prepacked	musaca
+ciqual:25124	Stewed lamb garnished with potatoes and other vegetables	cordero estofado con patatas y verduras
+ciqual:25125	Veal paupiette	rollito de ternera
+ciqual:25126	Poultry paupiette	rollito de ave
+ciqual:25127	Couscous royal (with different meats), prepacked	cuscús real
+ciqual:25128	White fish with Provencal-style sauce (tomato sauce), prepacked	pescado blanco a la provenzal
+ciqual:25131	Lasagna or cannelloni with vegetables, prepacked	lasaña de verduras
+ciqual:25135	Carbonara-style pasta (spaghetti, tagliatelle…), prepacked	pasta a la carbonara
+ciqual:25137	Tartiflette (cheese fondue with potatoes, reblochon cheese, bacon bits…), prepacked	tartiflette
+ciqual:25138	Couscous with chicken	cuscús con pollo
+ciqual:25139	Lasagna or cannelloni with fish, prepacked	lasaña de pescado
+ciqual:25140	White fish with Florentine-style sauce (spinach sauce), prepacked	pescado blanco a la florentina con espinacas
+ciqual:25141	White fish with shallots, mussels and white wine sauce, prepacked	pescado blanco con chalotas y mejillones en vino blanco
+ciqual:25142	White fish with mustard sauce, prepacked	pescado blanco a la mostaza
+ciqual:25143	White fish with Parisian-style sauce (mushrooms sauce), prepacked	pescado blanco a la parisina con setas
+ciqual:25145	White fish with tarragon sauce, prepacked	pescado blanco al estragón
+ciqual:25146	White fish with sorrel sauce, prepacked	pescado blanco a la acedera
+ciqual:25149	Fresh pasta, stuffed with cheese (e.g. ravioli), prepacked, cooked	pasta fresca rellena de queso cocida
+ciqual:25150	Couscous with vegetables, prepacked	cuscús con verduras
+ciqual:25151	Fish or seafood in puff pastry, prepacked, to cook	pescado o marisco en hojaldre crudo
+ciqual:25152	Couscous with meat, prepacked	cuscús con carne
+ciqual:25154	Fish brandade or fish shepherd's pie, prepacked	brandada de pescado
+ciqual:25155	Fresh pasta, stuffed with cheese and vegetables (e.g. ravioli), cooked, prepacked	pasta fresca rellena de queso y verduras cocida
+ciqual:25157	Fresh pasta, stuffed with meat (e.g. bolognese-style ravioli), prepacked, raw	pasta fresca rellena de carne cruda
+ciqual:25158	Fresh pasta, stuffed with meat (e.g. bolognese-style ravioli), prepacked, cooked	pasta fresca rellena de carne cocida
+ciqual:25159	Mutton tagine, prepacked	tajín de cordero
+ciqual:25162	Vegetables au gratin, prepacked	verduras gratinadas
+ciqual:25163	Meat balls, beef, cooked	albóndigas de vacuno cocidas
+ciqual:25164	Osso buco from veal (with vegetables and white wine), homemade	osso buco de ternera casero
+ciqual:25169	Chinese specialty or dumplings, prepacked	dumplings chinos
+ciqual:25172	Meat in sauce (average)	carne en salsa
+ciqual:25173	Milanese-style veal escalope or breaded veal escalope	escalope de ternera a la milanesa
+ciqual:25174	Chicken with curry and coconut milk sauce, prepacked	pollo al curry con leche de coco
+ciqual:25175	Molokhia,beef-based mdish with jute mallow (or nalta jute), home-made	molokhia con vacuno casera
+ciqual:25181	Fresh pasta, stuffed with cheese (e.g. ravioli, prepacked, raw	pasta fresca rellena de queso cruda
+ciqual:25182	Fresh pasta, stuffed with cheese and vegetables (e.g. ravioli), prepacked, raw	pasta fresca rellena de queso y verduras cruda
+ciqual:25183	Noodles with shrimps, prepacked, sautéed/pan-fried, without added fat	fideos con gambas salteados sin grasa
+ciqual:25186	Meat balls, pork and beef (Swedish-style), prepacked, raw	albóndigas de cerdo y vacuno suecas crudas
+ciqual:25187	Risotto, with vegetables, prepacked	risotto con verduras
+ciqual:25188	Risotto, with seafood, prepacked	risotto con marisco
+ciqual:25189	Risotto, with cheeses, prepacked	risotto con quesos
+ciqual:25190	Chicken, Basque-style, prepacked	pollo a la vasca
+ciqual:25192	Ravioli filled with vegetables, in tomato sauce, canned	raviolis de verduras en salsa de tomate en conserva
+ciqual:25193	Fresh pasta, stuffed with vegetables (e.g. ravioli), prepacked, cooked	pasta fresca rellena de verduras cocida
+ciqual:25194	Meat balls, beef and lamb (kefta type), prepacked, raw	albóndigas kefta crudas
 ciqual:25195	Shepherd's pie with duck, prepacked, to cook	pastel de pato con puré de patata
+ciqual:25196	Riste (Eggplant, tomatoes, onions), prepacked	riste (berenjena, tomate, cebolla)
+ciqual:25198	Pasta with cheese sauce (spaghetti, tagliatelle…), prepacked	pasta con salsa de queso
+ciqual:25199	Vegetable rosti, pre-fried, frozen	rösti de verduras congelado
+ciqual:25200	Devilled pork shoulder in mustard sauce, prepacked	paleta de cerdo a la mostaza
+ciqual:25201	Beef tongue with Madeira wine sauce, prepacked	lengua de vacuno a la madeira
+ciqual:25203	Fresh pasta, stuffed with vegetables (e.g. ravioli), prepacked, raw	pasta fresca rellena de verduras cruda
+ciqual:25204	Chicken tagine, prepacked	tajín de pollo
+ciqual:25205	Chop suey (pork or chicken, vegetables), prepacked	chop suey
+ciqual:25207	Pork with caramel sauce, prepacked	cerdo al caramelo
+ciqual:25208	Vegetable rosti, pre-fried, frozen, cooked	rösti de verduras cocido
+ciqual:25210	Stuffed salmon, prepacked	salmón relleno
+ciqual:25211	Meat balls, beef, with tomato sauce, prepacked	albóndigas de vacuno en salsa de tomate
+ciqual:25213	Veal paupiette, prepacked, roasted/baked	rollito de ternera asado
+ciqual:25216	Pasta (e.g. ravioli), filled, cooked (average)	pasta rellena cocida
+ciqual:25217	Vine leaf stuffed wih rice or dolmas, drained, prepacked	dolmas de hojas de parra
+ciqual:25219	Lasagna or cannelloni with vegetables and goat cheese, prepacked, cooked	lasaña de verduras con queso de cabra
+ciqual:25220	Sauerkraut, seasoned and cooked with bacon bits, without garnish, drained, cooked	chucrut cocido con beicon escurrido
+ciqual:25221	Meat balls, beef and lamb (kefta type), prepacked cooked	albóndigas kefta cocidas
+ciqual:25222	Meat balls, pork and beef (Swedish-style), prepacked, cooked	albóndigas de cerdo y vacuno suecas cocidas
+ciqual:25223	Soy and wheat burger or bite (vegan), prepacked	hamburguesa de soja y trigo vegana
+ciqual:25224	Soy and wheat burger or bite (not vegan), prepacked	hamburguesa de soja y trigo
+ciqual:25225	Wheat-based nuggets, breaded croquette (wo soybean), prepacked	nuggets de trigo empanados
+ciqual:25226	Soybean and wheat-based nuggets, breaded croquette (not vegan), prepacked	nuggets de soja y trigo empanados
+ciqual:25227	Soybean and wheat-based nuggets, breaded croquette (vegan), prepacked	nuggets de soja y trigo empanados veganos
+ciqual:25228	Schnitzel, soybean and wheat-based (not vegan), prepacked	escalope vegetal de soja y trigo
+ciqual:25229	Schnitzel or stick, soybean and wheat-based (vegan), prepacked	escalope vegetal de soja y trigo vegano
+ciqual:25230	Schnitzel, soybean, wheat and cheese-based, cordon bleu-style, prepacked	escalope vegetal de soja, trigo y queso cordón bleu
+ciqual:25231	Ravioli filled with tofu, in tomato sauce, prepacked	raviolis de tofu en salsa de tomate
+ciqual:25232	Plant-based sausage with wheat or seitan, prepacked	salchicha vegetal de trigo
+ciqual:25233	Cereal burger with cheese (without soybean), prepacked	hamburguesa de cereales con queso
+ciqual:25234	Cereal burger with végétables (without soybean), prepacked	hamburguesa de cereales con verduras
+ciqual:25238	Vegetables au gratin, home-made	verduras gratinadas caseras
+ciqual:25242	Paëlla, home-made	paella casera
+ciqual:25243	Noodles, asian style, instant, flavoured, cooked	fideos instantáneos al estilo asiático cocidos
+ciqual:25396	Ham and cheese puffed pastry, prepacked	hojaldre de jamón y queso
+ciqual:25398	Cheese puff pastry, prepacked, to cook	hojaldre de queso crudo
+ciqual:25399	Snails in puff pastry, prepacked	caracoles en hojaldre
+ciqual:25400	Toasted ham and cheese sandwich, w butter, homemade	croque monsieur casero
+ciqual:25401	Cheese puff pastry, prepacked, cooked	hojaldre de queso
+ciqual:25402	Meat puff pastry, prepacked	hojaldre de carne
+ciqual:25403	Hot-dog, prepacked	perrito caliente
 ciqual:25404	Pizza, cheese and tomato (Margherita), prepacked	pizza margarita
+ciqual:25405	Quiche Lorraine (eggs and lardoons quiche), prepacked	quiche lorraine
+ciqual:25409	Crepe or buckwheat pancake, filled with ham, prepacked	crepe de trigo sarraceno con jamón
+ciqual:25410	Crepe or buckwheat pancake, filled with cheese, ham and béchamel sauce, prepacked	crepe de trigo sarraceno con jamón, queso y bechamel
+ciqual:25411	Crepe or buckwheat pancake, filled with mushrooms and béchamel sauce, prepacked, frozen	crepe de trigo sarraceno con setas y bechamel congelada
+ciqual:25412	Vol-au-vent with meat/poultry/quenelle	vol-au-vent de carne
+ciqual:25413	Hamburger, from fast food	hamburguesa de fast food
+ciqual:25414	Cheeseburger, from fast food	hamburguesa con queso de fast food
+ciqual:25415	Cheeseburger, double, from fast food	hamburguesa con queso doble de fast food
+ciqual:25416	Fish burger, from fast food	hamburguesa de pescado de fast food
+ciqual:25417	Tart, vegetables, prepacked	tarta de verduras
+ciqual:25418	Croissant filled with ham and cheese, homemade	croissant con jamón y queso casero
+ciqual:25419	Spring roll	rollito de primavera
+ciqual:25428	Sandwich, pita bread, kebab and raw vegetables	bocadillo de pan pita con kebab y verduras
+ciqual:25429	Sandwich, baguette, kebab and raw vegetables	bocadillo de baguette con kebab y verduras
+ciqual:25431	Sandwich, baguette, tuna, raw vegetables and mayonnaise, homemade	bocadillo de atún, verduras y mayonesa casero
+ciqual:25433	Caribbean-style fish fritters, fish acras, prepacked	acras de pescado caribeños
+ciqual:25434	Sandwich, panini bread, cured ham, mozzarella cheese and tomato, toasted	panini con jamón curado, mozzarella y tomate
+ciqual:25435	Pizza, ham and cheese, prepacked	pizza de jamón y queso
+ciqual:25437	Small cheese chou-pastry puff	pasta choux de queso
+ciqual:25438	Samosas or samoosas or filled filo pastry, home-made, cooked	samosas caseras
+ciqual:25444	Tart, cheese, prepacked	tarta de queso salada
+ciqual:25454	Tart, Provence-style, prepacked	tarta a la provenzal
+ciqual:25456	Sushi or maki, with seafood products	sushi con marisco
+ciqual:25457	Pizza, Bolognese-style with meat, prepacked	pizza a la boloñesa con carne
+ciqual:25459	Burritos with beef	burrito de vacuno
+ciqual:25460	Fajitas, home-prepared from kit	fajitas de kit
+ciqual:25462	Pizza, chorizo or salami, prepacked	pizza de chorizo o salami
+ciqual:25463	Pizza, seafood, prepacked	pizza de marisco
+ciqual:25464	Pizza, salmon, prepacked	pizza de salmón
+ciqual:25468	Pizza, goat cheese and lardoons, prepacked	pizza de queso de cabra y beicon
+ciqual:25472	Pizza, vegetables or (4 seasons), prepacked	pizza de verduras
+ciqual:25475	Sandwich, baguette, ham, hard-boiled egg, raw vegetables and butter	bocadillo de jamón, huevo duro, verduras y mantequilla
+ciqual:25476	Sandwich, baguette, chicken, raw vegetables and mayonnaise, homemade	bocadillo de pollo, verduras y mayonesa casero
+ciqual:25477	Pizza, cheese and mushrooms, prepacked	pizza de queso y setas
 ciqual:25502	Chicken burger, from fast food	hamburguesa de pollo
 ciqual:25641	Sandwich, club, wholemeal bread, dry sausage, prepacked	sándwich club con salchichón
 ciqual:25968	Soup, asparagus, prepacked, to be reheated	sopa de espárragos preparada
