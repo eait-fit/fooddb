@@ -3090,7 +3090,7 @@ bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	muslo
 bls:V486100	Turkey breast, without skin, raw	pechuga de pavo sin piel cruda
 bls:V486132	Turkey breast, without skin, boiled	pechuga de pavo sin piel cocida
 bls:V486142	Turkey breast, without skin, braised without fat	pechuga de pavo sin piel estofada
-bls:V486162	Turkey breast, without skin, fried without fat (oven)	pechuga de pavo sin piel al horno
+bls:V486162	Turkey breast, without skin, fried without fat (oven)	pechuga de pavo al horno sin piel
 bls:V486172	Turkey breast, without skin, grilled	pechuga de pavo sin piel a la parrilla
 bls:V486182	Turkey breast, without skin, fried without fat (pan)	pechuga de pavo sin piel a la plancha
 bls:V486200	Turkey breast, without skin, deep-frozen	pechuga de pavo sin piel congelada
@@ -3111,7 +3111,7 @@ bls:V487242	Turkey wings, with skin, deep-frozen, braised without fat	alas de pa
 bls:V487262	Turkey wings, with skin, deep-frozen, fried without fat (oven)	alas de pavo con piel de congelado al horno
 bls:V487272	Turkey wings, with skin, deep-frozen, grilled	alas de pavo con piel de congelado a la parrilla
 bls:V487282	Turkey wings, with skin, deep-frozen, fried without fat (pan)	alas de pavo con piel de congelado a la plancha
-bls:V488100	Turkey giblets, raw	menudillos de pavo crudos
+bls:V488100	Turkey giblets, raw	menudillos de pavo frescos
 bls:V488142	Turkey giblets, braised without fat	menudillos de pavo estofados
 bls:V488182	Turkey giblets, fried without fat (pan)	menudillos de pavo a la plancha
 bls:V488200	Turkey giblets, deep-frozen	menudillos de pavo congelados
@@ -3126,7 +3126,7 @@ bls:V494200	Pigeon meat, with skin, deep-frozen	carne de pichón con piel congel
 bls:V494242	Pigeon meat, with skin, deep-frozen, braised without fat	carne de pichón con piel de congelado estofada
 bls:V494262	Pigeon meat, with skin, deep-frozen, fried without fat (oven)	carne de pichón con piel de congelado al horno
 bls:V4A5100	Chicken thigh, with skin, raw	contramuslo de pollo con piel crudo
-bls:V4A5142	Chicken thigh, with skin, braised without fat	contramuslo de pollo con piel estofado
+bls:V4A5142	Chicken thigh, with skin, braised without fat	contramuslo de pollo con piel guisado
 bls:V4A5162	Chicken thigh, with skin, fried without fat (oven)	contramuslo de pollo con piel al horno
 bls:V4A5172	Chicken thigh, with skin, grilled	contramuslo de pollo con piel a la parrilla
 bls:V4A5182	Chicken thigh, with skin, fried without fat (pan)	contramuslo de pollo con piel a la plancha
@@ -3136,7 +3136,7 @@ bls:V4A6162	Chicken breast, without skin, fried without fat (oven)	pechuga de po
 bls:V4A6172	Chicken breast, without skin, grilled	pechuga de pollo sin piel a la parrilla
 bls:V4A6182	Chicken breast, without skin, fried without fat (pan)	pechuga de pollo sin piel a la plancha
 bls:V4B5100	Chicken drumstick, with skin, raw	muslo de pollo con piel crudo
-bls:V4B5142	Chicken drumstick, with skin, braised without fat	muslo de pollo con piel estofado
+bls:V4B5142	Chicken drumstick, with skin, braised without fat	muslo de pollo con piel guisado
 bls:V4B5162	Chicken drumstick, with skin, fried without fat (oven)	muslo de pollo con piel al horno
 bls:V4B5172	Chicken drumstick, with skin, grilled	muslo de pollo con piel a la parrilla
 bls:V4B5182	Chicken drumstick, with skin, fried without fat (pan)	muslo de pollo con piel a la plancha
@@ -3152,8 +3152,8 @@ bls:V512182	Veal heart, fried without fat (pan)	corazón de ternera a la plancha
 bls:V512200	Veal heart, deep-frozen	corazón de ternera congelado
 bls:V512242	Veal heart, deep-frozen, braised without fat	corazón de ternera de congelado estofado
 bls:V512282	Veal heart, deep-frozen, fried without fat (pan)	corazón de ternera de congelado a la plancha
-bls:V513100	Pork heart, raw	corazón de cerdo crudo
-bls:V513142	Pork heart, braised without fat	corazón de cerdo estofado
+bls:V513100	Pork heart, raw	corazón de cerdo fresco
+bls:V513142	Pork heart, braised without fat	corazón de cerdo guisado
 bls:V513182	Pork heart, fried without fat (pan)	corazón de cerdo a la plancha
 bls:V513200	Pork heart, deep-frozen	corazón de cerdo congelado
 bls:V513242	Pork heart, deep-frozen, braised without fat	corazón de cerdo de congelado estofado
@@ -3163,7 +3163,7 @@ bls:V514100	Sheep heart, raw	corazón de oveja crudo
 bls:V514142	Sheep heart, braised without fat	corazón de oveja estofado
 bls:V514182	Sheep heart, fried without fat (pan)	corazón de oveja a la plancha
 bls:V515100	Lamb heart, raw	corazón de cordero crudo
-bls:V515142	Lamb heart, braised without fat	corazón de cordero estofado
+bls:V515142	Lamb heart, braised without fat	corazón de cordero guisado
 bls:V515182	Lamb heart, fried without fat (pan)	corazón de cordero a la plancha
 bls:V516100	Mutton heart, raw	corazón de carnero crudo
 bls:V516142	Mutton heart, braised without fat	corazón de carnero estofado
@@ -3180,7 +3180,7 @@ bls:V531100	Beef liver, raw	hígado de vacuno crudo
 bls:V531182	Beef liver, fried without fat (pan)	hígado de vacuno a la plancha
 bls:V531200	Beef liver, deep-frozen	hígado de vacuno congelado
 bls:V531282	Beef liver, deep-frozen, fried without fat (pan)	hígado de vacuno de congelado a la plancha
-bls:V532100	Veal liver, raw	hígado de ternera crudo
+bls:V532100	Veal liver, raw	hígado de ternera fresco
 bls:V532182	Veal liver, fried without fat (pan)	hígado de ternera a la plancha
 bls:V532200	Veal liver, deep-frozen	hígado de ternera congelado
 bls:V532282	Veal liver, deep-frozen, fried without fat (pan)	hígado de ternera de congelado a la plancha
@@ -3198,7 +3198,7 @@ bls:V541100	Beef lungs, raw	pulmones de vacuno crudos
 bls:V541132	Beef lungs, boiled	pulmones de vacuno cocidos
 bls:V542100	Veal lungs, raw	pulmones de ternera crudos
 bls:V542132	Veal lungs, boiled	pulmones de ternera cocidos
-bls:V543100	Pork lungs, raw	pulmones de cerdo crudos
+bls:V543100	Pork lungs, raw	pulmones de cerdo frescos
 bls:V543132	Pork lungs, boiled	pulmones de cerdo cocidos
 bls:V544100	Sheep lungs, raw	pulmones de oveja crudos
 bls:V544132	Sheep lungs, boiled	pulmones de oveja cocidos
@@ -3209,22 +3209,22 @@ bls:V551132	Beef stomach/tripe, boiled	callos de vacuno cocidos
 bls:V552100	Veal stomach/pluck, raw	estómago de ternera crudo
 bls:V552132	Veal stomach/pluck, boiled	estómago de ternera cocido
 bls:V553100	Pork stomach, raw	estómago de cerdo crudo
-bls:V553132	Pork stomach, boiled	estómago de cerdo cocido
+bls:V553132	Pork stomach, boiled	estómago de cerdo hervido
 bls:V561100	Beef spleen, raw	bazo de vacuno crudo
 bls:V562100	Veal spleen, raw	bazo de ternera crudo
 bls:V563100	Pork spleen, raw	bazo de cerdo crudo
 bls:V564100	Sheep spleen, raw	bazo de oveja crudo
 bls:V565100	Lamb spleen, raw	bazo de cordero crudo
 bls:V566100	Mutton spleen, raw	bazo de carnero crudo
-bls:V571100	Beef kidney, raw	riñones de vacuno crudos
-bls:V572100	Veal kidney, raw	riñones de ternera crudos
-bls:V572142	Veal kidney, braised without fat	riñones de ternera estofados
+bls:V571100	Beef kidney, raw	riñones de vacuno frescos
+bls:V572100	Veal kidney, raw	riñones de ternera frescos
+bls:V572142	Veal kidney, braised without fat	riñones de ternera guisados
 bls:V573100	Pork kidney, raw	riñones de cerdo crudos
-bls:V573142	Pork kidney, braised without fat	riñones de cerdo estofados
+bls:V573142	Pork kidney, braised without fat	riñones de cerdo guisados
 bls:V574100	Sheep kidney, raw	riñones de oveja crudos
 bls:V574142	Sheep kidney, braised without fat	riñones de oveja estofados sin grasa
-bls:V575100	Lamb kidney, raw	riñones de cordero crudos
-bls:V575142	Lamb kidney, braised without fat	riñones de cordero estofados
+bls:V575100	Lamb kidney, raw	riñones de cordero frescos
+bls:V575142	Lamb kidney, braised without fat	riñones de cordero guisados
 bls:V576100	Mutton kidney, raw	riñones de carnero crudos
 bls:V576142	Mutton kidney, braised without fat	riñones de carnero estofados
 bls:V582100	Veal sweetbread, raw	mollejas de ternera crudas
@@ -3234,12 +3234,12 @@ bls:V584132	Sheep sweetbread, boiled	mollejas de oveja cocidas
 bls:V585100	Lamb sweetbread, raw	mollejas de cordero crudas
 bls:V585132	Lamb sweetbread, boiled	mollejas de cordero cocidas
 bls:V591100	Beef tongue, raw	lengua de vacuno cruda
-bls:V591132	Beef tongue, boiled	lengua de vacuno cocida
+bls:V591132	Beef tongue, boiled	lengua de vacuno hervida
 bls:V591800	Beef tongue, cooked cured	lengua de vacuno curada cocida
-bls:V592100	Veal tongue, raw	lengua de ternera cruda
+bls:V592100	Veal tongue, raw	lengua de ternera fresca
 bls:V592132	Veal tongue, boiled	lengua de ternera cocida
 bls:V592800	Veal tongue, cooked cured	lengua de ternera curada cocida
-bls:V593100	Pork tongue, raw	lengua de cerdo cruda
+bls:V593100	Pork tongue, raw	lengua de cerdo fresca
 bls:V593132	Pork tongue, boiled	lengua de cerdo cocida
 bls:V593800	Pork tongue, cooked cured	lengua de cerdo curada cocida
 bls:V594100	Sheep tongue, raw	lengua de oveja cruda
@@ -3248,7 +3248,7 @@ bls:V595100	Lamb tongue, raw	lengua de cordero cruda
 bls:V595132	Lamb tongue, boiled	lengua de cordero cocida
 bls:V596100	Mutton tongue, raw	lengua de carnero cruda
 bls:V596132	Mutton tongue, boiled	lengua de carnero cocida
-bls:V604100	Chicken giblets, raw	menudillos de pollo crudos
+bls:V604100	Chicken giblets, raw	menudillos de pollo frescos
 bls:V604142	Chicken giblets, braised without fat	menudillos de pollo estofados
 bls:V604182	Chicken giblets, fried without fat (pan)	menudillos de pollo a la plancha
 bls:V614100	Chicken heart, raw	corazones de pollo crudos
@@ -3261,7 +3261,7 @@ bls:V634100	Chicken liver, raw	hígado de pollo crudo
 bls:V634182	Chicken liver, fried without fat (pan)	hígado de pollo a la plancha
 bls:V634200	Chicken liver, deep-frozen	hígado de pollo congelado
 bls:V634282	Chicken liver, deep-frozen, fried without fat (pan)	hígado de pollo de congelado a la plancha
-bls:V635100	Duck liver, raw	hígado de pato crudo
+bls:V635100	Duck liver, raw	hígado de pato fresco
 bls:V635182	Duck liver, fried without fat (pan)	hígado de pato a la plancha
 bls:V635200	Duck liver, deep-frozen	hígado de pato congelado
 bls:V635282	Duck liver, deep-frozen, fried without fat (pan)	hígado de pato de congelado a la plancha
@@ -3353,7 +3353,7 @@ bls:W193000	Kabanossi/Peperoni, sausage, raw, small, firm	kabanos curados
 bls:W202000	Geflügeljagdwurst sausage made from poultry and pork	jagdwurst de ave con cerdo
 bls:W203000	Jagdwurst sausage reduced-fat	jagdwurst baja en grasa
 bls:W205000	Small scalded sausage reduced-fat	salchichas knack bajas en grasa
-bls:W206000	Mortadella reduced-fat	mortadela baja en grasa
+bls:W206000	Mortadella reduced-fat	mortadela reducida en grasa
 bls:W207000	Poultry bockwurst with pork	bockwurst de ave con cerdo
 bls:W207032	Poultry bockwurst with pork, poached	bockwurst de ave con cerdo escaldada
 bls:W211100	Bockwurst	bockwurst
@@ -3368,7 +3368,7 @@ bls:W212000	Poultry Vienna sausage	salchichas de Viena de ave
 bls:W212032	Poultry Vienna sausage poached	salchichas de Viena de ave escaldadas
 bls:W213000	Frankfurt sausage small	salchichas de Frankfurt
 bls:W214000	Gourmet sausage small	salchichas delicatessen
-bls:W215000	Knackwurst/Servela sausage, small	knackwurst
+bls:W215000	Knackwurst/Servela sausage, small	salchicha knackwurst
 bls:W216100	Frankfurt beef sausage/red sausage	salchicha de vacuno de Frankfurt
 bls:W217000	Knacker sausage simple	knacker simple
 bls:W218000	Regensburg sausage small	salchicha de Ratisbona pequeña
@@ -3411,12 +3411,12 @@ bls:W233000	Fleischkaese sausage	fleischkäse
 bls:W233032	Fleischkaese sausage boiled	fleischkäse cocido
 bls:W233062	Fleischkaese sausage fried without fat (oven)	fleischkäse al horno
 bls:W233082	Fleischkaese sausage fried without fat (pan)	fleischkäse a la plancha
-bls:W234000	Bologna	mortadela
-bls:W234032	Bologna boiled	mortadela cocida
-bls:W234062	Bologna fried without fat (oven)	mortadela al horno
-bls:W234082	Bologna fried without fat (pan)	mortadela a la plancha
-bls:W234100	Bologna reduced-fat	mortadela baja en grasa
-bls:W236000	Bologna for meat salads	mortadela para ensalada de carne
+bls:W234000	Bologna	mortadela de Bolonia
+bls:W234032	Bologna boiled	mortadela de Bolonia cocida
+bls:W234062	Bologna fried without fat (oven)	mortadela de Bolonia al horno
+bls:W234082	Bologna fried without fat (pan)	mortadela de Bolonia a la plancha
+bls:W234100	Bologna reduced-fat	mortadela de Bolonia baja en grasa
+bls:W236000	Bologna for meat salads	mortadela de Bolonia para ensalada de carne
 bls:W237000	Fleischkaese sausage reduced-fat	fleischkäse bajo en grasa
 bls:W237032	Fleischkaese sausage reduced-fat, boiled	fleischkäse bajo en grasa cocido
 bls:W237062	Fleischkaese sausage reduced-fat, fried without fat, (oven)	fleischkäse bajo en grasa al horno
@@ -3446,7 +3446,7 @@ bls:W255300	Small scalded sausage filled with cheese	käsekrainer
 bls:W255372	Small scalded sausage filled with cheese, grilled	käsekrainer a la parrilla
 bls:W255382	Small scalded sausage filled with cheese, fried without fat (pan)	käsekrainer a la plancha
 bls:W255400	Bierwurst sausage	bierwurst
-bls:W255600	Luncheon meat	fiambre
+bls:W255600	Luncheon meat	fiambre de desayuno
 bls:W255700	Stuttgart Leberkaese sausage	leberkäse de Stuttgart
 bls:W256000	Leberkaese sausage reduced-fat	leberkäse bajo en grasa
 bls:W256100	Leberkaese sausage	leberkäse
@@ -3457,7 +3457,7 @@ bls:W256262	Fleischkaese sausage coarsely minced, fried without fat (oven)	fleis
 bls:W256282	Fleischkaese sausage coarsely minced, fried without fat (pan)	fleischkäse de picado grueso a la plancha
 bls:W257000	Cabanossi sausage scalded	cabanossi
 bls:W258000	Touristenwurst sausage simple, scalded	touristenwurst simple
-bls:W259000	Pork brawn sausage	queso de cerdo
+bls:W259000	Pork brawn sausage	queso de cerdo de cabeza
 bls:W261000	White Fleischkaese sausage made from pork	fleischkäse blanco de cerdo
 bls:W269200	Leberkaese sausage with goose liver and pork, truffled	leberkäse de hígado de ganso con cerdo trufado
 bls:W271000	Beer ham	bierschinken
@@ -3547,7 +3547,7 @@ bls:W384300	White sausage with pearl barley	salchicha blanca con cebada
 bls:W386000	Palatinate stuffed pig's stomach	saumagen (estómago de cerdo relleno)
 bls:W391200	Game pate with venison meat	paté de caza con venado
 bls:W391400	Hare pate	paté de liebre
-bls:W395000	Liver pate	paté de hígado
+bls:W395000	Liver pate	pastel de hígado
 bls:W395100	Liver pate with button mushrooms	paté de hígado con champiñones
 bls:W396000	Venison meat pate with alcohol, baked	paté de venado con alcohol al horno
 bls:W397300	Goose liver pate with pork, baked	paté de hígado de ganso con cerdo al horno
@@ -3570,7 +3570,7 @@ bls:W415062	Pork breakfast bacon, raw cured, smoked, fried without fat (oven)	be
 bls:W415072	Pork breakfast bacon, raw cured, smoked, grilled	beicon de desayuno curado ahumado a la parrilla
 bls:W415082	Pork breakfast bacon, raw cured, smoked, fried without fat (pan)	beicon de desayuno curado ahumado a la plancha
 bls:W423000	Pork ham, cooked cured, smoked	jamón cocido ahumado
-bls:W424000	Pork ham, cooked cured	jamón cocido
+bls:W424000	Pork ham, cooked cured	jamón cocido de cerdo
 bls:W424032	Pork ham, cooked cured, boiled	jamón cocido hervido
 bls:W424082	Pork ham, cooked cured, fried without fat (pan)	jamón cocido a la plancha
 bls:W440000	Pork ham, cooked cured, canned	jamón cocido en conserva
@@ -3586,7 +3586,7 @@ bls:W511000	Pork neck, cooked cured, smoked	cuello de cerdo curado cocido ahumad
 bls:W512000	Pork loin spare ribs, cooked cured, smoked	costillas de cerdo curadas cocidas ahumadas
 bls:W514032	Pork loin chop raw cured, smoked, boiled	chuleta de cerdo curada ahumada cocida
 bls:W515072	Pork loin chop raw cured, smoked, grilled	chuleta de cerdo curada ahumada a la parrilla
-bls:W520000	Corned beef	corned beef
+bls:W520000	Corned beef	carne de vacuno en salmuera
 bls:W520032	Corned beef boiled	corned beef cocido
 bls:W530042	Pork loin chop raw cured, smoked, braised without fat	chuleta de cerdo curada ahumada estofada
 bls:W530052	Pork loin chop raw cured, smoked, stewed	chuleta de cerdo curada ahumada rehogada
@@ -3619,12 +3619,12 @@ bls:W866000	Oxtail in jelly	rabo de toro en gelatina
 bls:W870200	Mortadella/Ham bologna finely minced, canned	mortadela de corte fino en conserva
 bls:W870400	Lyon sausage canned	salchicha lyoner en conserva
 bls:W870500	Veal bologna with pork, canned	mortadela de ternera con cerdo en conserva
-bls:W870600	Bologna canned	mortadela en conserva
+bls:W870600	Bologna canned	mortadela de Bolonia en conserva
 bls:W871700	Bierwurst canned	bierwurst en conserva
 bls:W871800	Krakow cooked sausage canned	salchicha de Cracovia cocida en conserva
 bls:W872100	Krakow ham bologna canned	salchicha de jamón de Cracovia en conserva
 bls:W872500	Jagdwurst sausage/ham bologna coarsely minced, canned	jagdwurst de picado grueso en conserva
-bls:W872800	Luncheon meat canned	fiambre en conserva
+bls:W872800	Luncheon meat canned	fiambre de desayuno en conserva
 bls:W873100	Beer ham canned	bierschinken en conserva
 bls:W873500	Light pork tongue sausage canned	salchicha de lengua clara en conserva
 bls:W873600	Heart sausage canned	salchicha de corazón en conserva
@@ -3643,7 +3643,7 @@ bls:W881500	Thuringian blood sausage canned	morcilla de Turingia en conserva
 bls:W882100	Homemade jellied brawn canned	queso de cerdo casero en conserva
 bls:W882200	Jellied veal canned	ternera en gelatina en conserva
 bls:W882300	Saxon brawn canned	queso de cerdo sajón en lata
-bls:W980100	Bologna in puff pastry baked	mortadela en hojaldre
+bls:W980100	Bologna in puff pastry baked	mortadela de Bolonia en hojaldre
 bls:W981100	Sausage pie with shortcrust pastry, with alcohol, baked	pastel de salchicha en masa quebrada con alcohol
 bls:W981200	Ham pie with shortcrust pastry, baked	pastel de jamón en masa quebrada
 bls:W981300	Fleischkaese sausage in pastry crust, deep-fried	fleischkäse en rebozado de cerveza frito
@@ -3773,7 +3773,7 @@ bls:X201400	Mixed salad with vinegar marinade	ensalada mixta con aliño de vinag
 bls:X201600	Mixed salad with yogurt marinade	ensalada mixta con aliño de yogur
 bls:X201740	Cucumber salad with sour cream dressing	ensalada de pepino con aliño de crema agria
 bls:X201840	Cucumber salad with vinegar marinade	ensalada de pepino con aliño de vinagre
-bls:X203140	Waldorf salad with mayonnaise (with lemon juice)	ensalada Waldorf con mayonesa con limón
+bls:X203140	Waldorf salad with mayonnaise (with lemon juice)	ensalada Waldorf con mayonesa y limón
 bls:X203460	Greek farmers salad	ensalada griega de pueblo
 bls:X203560	Salad Budapest	ensalada Budapest
 bls:X203850	Greek salad	ensalada griega
@@ -3858,7 +3858,7 @@ bls:X321163	Tomato sauce of tomato paste	salsa de tomate de concentrado
 bls:X321211	Tomato sauce of fresh tomatoes and cream cheese	salsa de tomate fresco con queso crema
 bls:X321242	Tomato sauce of fresh tomatoes and bologna	salsa de tomate fresco con mortadela
 bls:X321263	Tomato sauce of fresh tomatoes	salsa de tomate fresco
-bls:X321813	Tomato sauce of canned tomatoes	salsa de tomate en conserva
+bls:X321813	Tomato sauce of canned tomatoes	salsa de tomate de lata
 bls:X322053	Mushroom sauce from Bechamel sauce	salsa de champiñones con bechamel
 bls:X322163	Mushroom sauce from white basic sauce	salsa de setas de salsa base blanca
 bls:X322243	Button mushroom sauce from white basic sauce, cream and white wine	salsa de champiñones con nata y vino blanco
@@ -3916,7 +3916,7 @@ bls:X341040	Mayonnaise with vinegar	mayonesa con vinagre
 bls:X341060	Mayonnaise with lemon juice	mayonesa con limón
 bls:X344060	Mayonnaise dressing	aliño de mayonesa
 bls:X344260	Aioli	alioli
-bls:X344360	Tatar sauce	salsa tártara
+bls:X344360	Tatar sauce	salsa tartare
 bls:X346150	Horseradish mayonnaise	mayonesa con rábano picante
 bls:X346250	Mayonnaise, diluted with quark	mayonesa aligerada con quark
 bls:X346360	Russian sauce/tomato mayonnaise	salsa rosa
@@ -3927,7 +3927,7 @@ bls:X348360	Apple-horseradish cream	rábano picante con manzana
 bls:X351040	Vinegar marinade for salad	aliño de vinagre para ensalada
 bls:X351140	Lemon marinade for salad	aliño de limón para ensalada
 bls:X351440	Salad marinade with horseradish	aliño con rábano picante
-bls:X354040	Caesar dressing	salsa César
+bls:X354040	Caesar dressing	aliño César
 bls:X354060	Roquefort dressing	aliño de roquefort
 bls:X356050	Quark dressing	aliño de quark
 bls:X356250	Quark-horseradish dressing	aliño de quark y rábano picante
@@ -3935,7 +3935,7 @@ bls:X356360	Quark mayonnaise	mayonesa de quark
 bls:X357112	Buttermilk dressing with honey for salad	aliño de suero de mantequilla con miel
 bls:X357160	Horseradish mousse	mousse de rábano picante
 bls:X357260	Horseradish dressing	aliño de rábano picante
-bls:X357312	Cocktail dressing	salsa cóctel
+bls:X357312	Cocktail dressing	salsa de cóctel
 bls:X357340	Yogurt dressing	aliño de yogur
 bls:X357413	Yogurt marinade for salad	aliño de yogur para ensalada
 bls:X357613	Sour cream dressing for salad	aliño de crema agria para ensalada
@@ -3946,12 +3946,12 @@ bls:X359253	Mustard marinade for salad	aliño de mostaza para ensalada
 bls:X359440	Bacon-vinegar marinade for salad	aliño de beicon y vinagre
 bls:X359540	Red wine marinade for salad	aliño de vino tinto
 bls:X359640	Asian dressing	aliño asiático
-bls:X359712	French dressing	salsa francesa
-bls:X359912	Italian dressing	aliño italiano
+bls:X359712	French dressing	aliño francés
+bls:X359912	Italian dressing	aliño estilo italiano
 bls:X360040	Cream sauce sweet	salsa de nata dulce
 bls:X361163	Vanilla sauce	salsa de vainilla
 bls:X362143	Chocolate sauce	salsa de chocolate
-bls:X363143	Caramel sauce	salsa de caramelo
+bls:X363143	Caramel sauce	salsa de caramelo para postres
 bls:X364003	Cherry sauce thickened	salsa de cereza espesa
 bls:X364043	Red currant sauce (of fruit juice)	salsa de grosella
 bls:X365062	Punch sauce	salsa de ponche
@@ -3973,9 +3973,9 @@ bls:X379343	Rum sauce from vanilla sauce	salsa de ron de salsa de vainilla
 bls:X381063	Cumberland sauce with red and port wine	salsa Cumberland con vino tinto y oporto
 bls:X382040	Frankfurt green herb sauce	salsa verde de Frankfurt
 bls:X382160	Frankfurt green herb sauce with boiled egg	salsa verde de Frankfurt con huevo cocido
-bls:X384143	Barbecue sauce	salsa barbacoa
+bls:X384143	Barbecue sauce	salsa para barbacoa
 bls:X384243	Devil's sauce for barbecue	salsa del diablo para barbacoa
-bls:X389000	Avocado dip (Guacamole)	guacamole
+bls:X389000	Avocado dip (Guacamole)	dip de guacamole
 bls:X3A1000	Beer sauce	salsa de cerveza
 bls:X3A2000	Minced meat-sweet pepper sauce	salsa de picada y pimiento
 bls:X3A2010	Salmon-spinach sauce from white basic sauce	salsa de salmón y espinacas con nata
@@ -3992,7 +3992,7 @@ bls:X3A6030	Horseradish sauce vegan, with soya drink	salsa de rábano picante ve
 bls:X3A6040	Tofu Bolognese vegan	boloñesa de tofu vegana
 bls:X3A7000	Almond pesto	pesto de almendras
 bls:X3A7010	Pesto rosso	pesto rosso
-bls:X3A7020	Salsa verde	salsa verde
+bls:X3A7020	Salsa verde	salsa verde italiana
 bls:X3A7030	Anchovy pesto with herbs	pesto de anchoas con hierbas
 bls:X3A7040	Spanish sauce (Salsa)	salsa española
 bls:X3A7050	Mayonnaise, diluted with yogurt	mayonesa aligerada con yogur
@@ -4006,13 +4006,365 @@ bls:X3A9010	Yogurt dip	dip de yogur
 bls:X3A9020	Yogurt dip with herbs	dip de yogur con hierbas
 bls:X3A9030	Sour cream dressing wiht yogurt and mustard	aliño de crema agria con yogur y mostaza
 bls:X3A9040	Schmand dip with chives	dip de crema agria con cebollino
+bls:X411243	Chicken stock	caldo de gallina
+bls:X411363	Game stock	caldo de caza
+bls:X411563	Veal stock	caldo de ternera
+bls:X411613	Meat stock with egg	caldo de carne con huevo hilado
+bls:X411713	Meat stock with small semolina dumplings	caldo de carne con bolitas de sémola
+bls:X411813	Meat stock with small liver dumplings	caldo de carne con bolitas de hígado
+bls:X412053	Beef consomme	consomé de vacuno
+bls:X412113	Meat stock with pork mince-spinach-filled pasta squares	caldo de carne con maultaschen
+bls:X412263	Poultry consomme (chicken)	consomé de pollo
+bls:X412363	Game consomme	consomé de caza
+bls:X412463	Fish consomme	consomé de pescado
+bls:X412513	Meat stock with strips of crepe	caldo de carne con tiras de crepe
+bls:X412613	Meat stock with small marrow dumplings	caldo de carne con bolitas de tuétano
+bls:X413663	Double beef consomme	consomé de vacuno doble
+bls:X416243	Vegetable stock	caldo de verduras
+bls:X416313	Vegetable stock with egg	caldo de verduras con huevo hilado
+bls:X416513	Vegetable stock with pasta egg-free	caldo de verduras con pasta sin huevo
 bls:X416713	Vegetable soup	sopa de verduras
+bls:X416813	Vegetable stock with vegetables	caldo de verduras con verduras
+bls:X416913	Vegetable puree soup	sopa de verduras pasada
+bls:X417013	Vegetable-beef stew	estofado de vacuno con verduras
+bls:X417113	Vegetable stew with sausage	estofado de verduras con salchicha
+bls:X417813	Semolina soup sweetened, with milk 3.5 % fat	sopa de sémola dulce con leche 3,5 %
+bls:X420163	Beef consomme with tapioka (sago)	consomé de vacuno con tapioca
+bls:X420363	Beef consomme Scottish style with pearl barley	consomé de vacuno a la escocesa con cebada
+bls:X421143	Meat stock with diced egg custard	caldo de carne con crema de huevo en dados
+bls:X421363	Beef consomme with diced egg custard	consomé de vacuno con crema de huevo en dados
+bls:X422163	Beef consomme with strips of crepe	consomé de vacuno con tiras de crepe
+bls:X422253	Chicken stock with egg pasta	caldo de pollo con pasta de huevo
+bls:X422363	Beef consomme with egg pasta	consomé de vacuno con pasta de huevo
+bls:X422643	Meat stock with pasta egg-free	caldo de carne con pasta sin huevo
+bls:X423053	Beef consomme with small semolina dumplings	consomé de vacuno con bolitas de sémola
+bls:X423153	Meat stock with vegetables and rice	caldo de carne con verduras y arroz
+bls:X423363	Beef consomme with pearl barley	consomé de vacuno con cebada
+bls:X423462	Beef consomme with rice	consomé de vacuno con arroz
+bls:X423553	Chicken stock with rice	caldo de pollo con arroz
+bls:X423753	Meat stock with egg pasta	caldo de carne con pasta de huevo
+bls:X424553	Meat stock with roll slices	caldo de carne con rebanadas de pan
+bls:X425163	Italian vegetable soup (minestrone)	sopa de verduras minestrone
+bls:X425363	Beef consomme with vegetables	consomé de vacuno con verduras
+bls:X425543	French onion soup with white bread slices, gratinated	sopa de cebolla francesa con rebanadas de pan gratinada
+bls:X425553	Onion soup clear, with meat stock	sopa de cebolla clara con caldo de carne
+bls:X425813	Chinese soup spicy, with chicken breast fillet	sopa china picante con filete de pollo
+bls:X426153	Oxtail soup clear	sopa de rabo de toro clara
+bls:X427153	Meat stock with liver spaetzle	caldo de carne con spaetzle de hígado
+bls:X427363	Liver dumpling soup	sopa de albóndigas de hígado
+bls:X431143	Egg added to soups	huevo hilado para sopa
+bls:X431242	Custard royale (diced egg custard) as soup garnish	crema de huevo en dados para sopa
+bls:X431340	Meringue dumplings as sweet soup garnish	bolitas de merengue para sopa
+bls:X432142	Pasta egg-free (boiled with salt)	pasta sin huevo cocida con sal
+bls:X432252	Pasta egg-free (boiled with salt) as soup garnish	pasta sin huevo para sopa
+bls:X432342	"Flädle" fried strips of crepe as soup garnish	tiras de crepe fritas para sopa
+bls:X434143	"Grießnockerln" semolina dumplings as soup garnish	nockerl de sémola para sopa
+bls:X434243	Small semolina dumplings as soup garnish	bolitas de sémola para sopa
+bls:X434343	"Schwemmklößchen" small dumplings as soup garnish	bolitas pequeñas para sopa
+bls:X434442	Croutons, white bread cubes toasted in butter	picatostes de pan blanco en mantequilla
+bls:X434543	Small white bread dumplings	bolitas de pan blanco
+bls:X435143	Small cheese dumplings	bolitas de queso
+bls:X435163	Cheese-semolina dumplings	bolitas de queso y sémola
+bls:X436143	Small sausage meatballs	bolitas de salchicha
+bls:X436243	Small ham dumplings	bolitas de jamón
+bls:X436343	Small meatballs	albóndigas pequeñas
+bls:X437143	Liver spaetzle	spaetzle de hígado
+bls:X437343	Small liver dumplings with bread crumbs	bolitas de hígado con pan rallado
+bls:X437363	Small liver dumplings	bolitas de hígado
+bls:X438163	Small marrow dumplings	bolitas de tuétano
 bls:X439163	Small game meatballs	albóndigas de caza
+bls:X441043	Basic soup light-coloured	sopa base clara
+bls:X441653	"Königin" soup	sopa reina
+bls:X442043	Basic soup dark	sopa base oscura
+bls:X443063	Cream of cauliflower soup (Puree Dubarry)	crema de coliflor (Dubarry)
+bls:X443812	Carrots in frying batter (with beer) deep-fried	zanahorias en rebozado de cerveza fritas
+bls:X444112	Cream of herb soup	crema de hierbas
+bls:X444143	Cream of vegetable soup	crema de verduras con nata
+bls:X444253	Cream of leek soup	crema de puerro
+bls:X444313	Cream of potato-leek soup	crema de patata y puerro
+bls:X444343	Tomato soup thickened	sopa de tomate espesa
+bls:X444453	Cream of asparagus soup	crema de espárragos
+bls:X444563	Cream of cucumber soup	crema de pepino
+bls:X444613	Cream of broccoli soup	crema de brócoli
+bls:X444913	Asparagus soup	sopa de espárragos
+bls:X445213	Tomato soup thickened with rice	sopa de tomate espesa con arroz
+bls:X445643	Velvety spinach soup	sopa de espinacas aterciopelada
+bls:X445713	Cream of celeriac soup	crema de apionabo
+bls:X445743	Cream of celeriac-leek soup	crema de apionabo y puerro
+bls:X445813	Cream of avocado soup	crema de aguacate
 bls:X445863	Cream of pumpkin soup	crema de calabaza
+bls:X446143	Cream of carrot soup	crema de zanahoria
+bls:X446153	Carrot soup	sopa de zanahoria
+bls:X446343	Leek soup thickened	sopa de puerro espesa
+bls:X446643	Tomato soup of fresh tomatoes and vegetable stock	sopa de tomate fresco con caldo de verduras
+bls:X446653	Tomato soup with meat stock	sopa de tomate con caldo de carne
+bls:X446813	Beetroot soup with apple and horseradish	sopa de remolacha con manzana y rábano picante
+bls:X446913	Sauerkraut soup with sweet pepper and potatoes	sopa de chucrut con pimiento y patatas
+bls:X446953	Celeriac soup	sopa de apionabo
+bls:X447313	Tomato soup of tomato paste, vegetable stock and pasta egg-free	sopa de tomate de concentrado con caldo de verduras y pasta sin huevo
+bls:X447413	Tomato soup of fresh tomatoes, vegetable stock and pasta egg-free	sopa de tomate fresco con caldo de verduras y pasta sin huevo
+bls:X448053	Button mushroom soup of fresh button mushrooms	sopa de champiñones frescos
+bls:X448153	Cream of button mushroom soup with meat stock	crema de champiñones con caldo de carne
+bls:X448343	Porcini mushroom soup	sopa de boletus
+bls:X448353	Mushroom soup	sopa de setas
+bls:X449023	Potato soup with vegetable stock	sopa de patatas con caldo de verduras
+bls:X449353	Potato soup with leek and vegetable stock	sopa de patatas con puerro y caldo de verduras
+bls:X449613	Potato soup with vegetable stock, thickened	sopa de patatas con caldo de verduras espesa
+bls:X449713	Cream of potato-vegetable soup	crema de patata y verduras
+bls:X450013	Cream of potato-leek soup with bacon	crema de patata y puerro con beicon
+bls:X450033	Potato soup with vegetable stock and scalded sausage	sopa de patatas con caldo de verduras y salchicha
+bls:X450212	Potato soup sour, thickened	sopa de patatas agria espesa
+bls:X450243	Potato soup sour with blood and liver sausage	sopa de patatas agria con morcilla y salchicha de hígado
+bls:X451343	Creamy cheese soup "Paris" (with processed cheese)	crema de queso parisina con queso fundido
+bls:X451463	Cheese soup "Allgäuer" with croutons	sopa de queso Allgäu con picatostes
+bls:X452013	Stew of pasta egg-free, with minced meat	estofado de pasta sin huevo con picada
+bls:X452153	Stew of pasta egg-free, with vegetables and chicken	estofado de pasta sin huevo con verduras y pollo
+bls:X452263	Soup of egg pasta with chicken	sopa de pasta de huevo con pollo
+bls:X453023	Boiled rice with chicken	arroz cocido con pollo
+bls:X453123	Rice soup with meat stock and vegetables	sopa de arroz con caldo de carne y verduras
+bls:X453253	Boiled rice with beef	arroz cocido con vacuno
+bls:X454223	Semolina soup roasted, thickened with egg yolk	sopa de sémola tostada espesa con yema
+bls:X454243	Semolina soup roasted	sopa de sémola tostada
+bls:X454343	Semolina soup	sopa de sémola
+bls:X454443	Green spelt flour soup	sopa de harina de espelta verde
+bls:X454463	Green spelt soup roasted	sopa de espelta verde tostada
+bls:X454663	Oat flakes soup roasted, with vegetable stock	sopa de copos de avena tostada con caldo de verduras
+bls:X454713	Oat gruel	agua de avena
+bls:X454812	Pearl barley soup "Mecklenburg" (with vegetable stock, prunes, duck meat)	sopa de cebada estilo Mecklemburgo con ciruelas pasas y pato
+bls:X454943	Barley soup "Bündner" style with bacon, smoked beef and pork	sopa de cebada estilo Grisones con beicon y vacuno y cerdo ahumados
+bls:X455013	Bread soup (white bread) with vegetable stock, tomatoes, button mushruooms and cheese	sopa de pan blanco con caldo de verduras, tomate, champiñones y queso
+bls:X455063	Bread soup (brown bread) with meat stock, vegetables and bacon	sopa de pan negro con caldo de carne, verduras y beicon
+bls:X455153	Bread soup (brown bread) with raisins, apple and sour cream	sopa de pan negro con pasas, manzana y crema agria
+bls:X455243	Bread soup (brown bread) with vegetable stock	sopa de pan negro con caldo de verduras
+bls:X455913	Goulash soup with beef, meat stock and red wine	sopa de gulash con vacuno, caldo de carne y vino tinto
+bls:X456043	Soup with roe deer meat, bacon and red wine	sopa de corzo con beicon y vino tinto
+bls:X456133	Goulash soup "Hungarian" with beef, meat stock, tomatoes and potatoes	sopa de gulash húngara con vacuno, tomate y patatas
+bls:X456143	Goulash soup with beef, onions and sweet pepper	sopa de gulash con vacuno, cebolla y pimiento
+bls:X456243	Minced meat soup	sopa de picada
+bls:X456743	Oxtail soup thickened	sopa de rabo de toro espesa
+bls:X458143	Cream of chicken soup	crema de ave
+bls:X459033	Fish soup "Bouillabaisse"	sopa de pescado bullabesa
+bls:X459143	Eel soup Hamburg style with dried fruit	sopa de anguila a la hamburguesa con fruta seca
+bls:X459263	Lobster soup with whipped cream, white wine and celery	sopa de bogavante con nata montada, vino blanco y apio
+bls:X459363	Crayfish soup	sopa de cangrejos de río
+bls:X459723	Fish-vegetable stew "Pichelsteiner" with saithe	estofado de pescado y verduras pichelsteiner con colin
+bls:X461143	Carrot stew with pork belly	estofado de zanahorias con panza de cerdo
+bls:X461243	Turnip stew with cured, smoked pork neck and potatoes	estofado de colinabo con cuello de cerdo curado ahumado y patatas
+bls:X461423	Leek stew with cured pork neck and potatoes	estofado de puerro con cuello de cerdo curado y patatas
+bls:X461713	Lentil stew with vegetables, potatoes and Vienna sausages	estofado de lentejas con verduras, patatas y salchichas de Viena
+bls:X461813	Lentil stew with vegetables	estofado de lentejas con verduras
+bls:X461913	Lentil stew with vegetables and potatoes	estofado de lentejas con verduras y patatas
+bls:X462023	Vegetable stew "Pichelsteiner" with beef and pork	estofado de verduras pichelsteiner con vacuno y cerdo
+bls:X462063	Vegetable soup with potatoes and beef	sopa de verduras con patatas y vacuno
+bls:X462123	Vegetable soup thickened	sopa de verduras espesa
+bls:X462133	Vegetable stew with mutton	estofado de verduras con carnero
+bls:X462153	Vegetable stew with beef	estofado de verduras con vacuno
+bls:X462313	Lentil stew with bacon	estofado de lentejas con beicon
+bls:X462413	Bavarian vegetable stew with white cabbage	estofado de verduras a la bávara con col blanca
+bls:X462513	Lentil soup with vegetables	sopa de lentejas con verduras
+bls:X462623	Vegetable soup with pearl barley	sopa de verduras con cebada
+bls:X462743	Stew "Köthen" style with potatoes, pork neck and pears, baked in oven	estofado estilo Köthen con patatas, cuello de cerdo y peras al horno
+bls:X463453	Lentil stew with sausage and fresh egg pasta spaetzle	estofado de lentejas con salchicha y spaetzle de huevo
 bls:X463613	Lentil soup with vegetables and cured pork	sopa de lentejas con verduras y cerdo curado
 bls:X463813	Lentil stew with prunes and blood sausage	estofado de lentejas con ciruelas y morcilla
+bls:X464433	Pea soup with vegetable stock, mirepoix, bacon and Vienna sausages	sopa de guisantes con caldo de verduras, hortalizas, beicon y salchichas de Viena
+bls:X464643	Green pea soup with small semolina dumplings	sopa de guisantes verdes con bolitas de sémola
+bls:X464713	Pea soup with vegetable stock, mirepoix and bacon, thickened	sopa de guisantes con caldo de verduras, hortalizas y beicon espesa
+bls:X464753	Pea soup with vegetable stock, mirepoix and bacon	sopa de guisantes con caldo de verduras, hortalizas y beicon
+bls:X464813	Pea soup with vegetable stock, vegetables, small Mettwurst sausages and pork belly	sopa de guisantes con caldo de verduras, verduras, mettwursts pequeñas y panza de cerdo
+bls:X464913	Chickpea-tomato stew	estofado de garbanzos con tomate
+bls:X465033	Haricot bean soup with smoked pork	sopa de alubias con cerdo ahumado
+bls:X465153	Haricot bean stew with beef	estofado de alubias con vacuno
+bls:X465253	Haricot bean soup with bacon	sopa de alubias con beicon
+bls:X465363	Tomato stew with bacon, broad beans and vegetables	estofado de tomate con beicon, habas y hortalizas
+bls:X465553	Green bean soup with vegetable stock and potatoes	sopa de judías verdes con caldo de verduras y patatas
+bls:X465623	Green bean stew with vegetable stock, potatoes, beef and bacon	estofado de judías verdes con caldo de verduras, patatas, vacuno y beicon
+bls:X465663	Green bean stew with vegetable stock, potatoes and mutton	estofado de judías verdes con caldo de verduras, patatas y carnero
+bls:X465713	Green bean stew with vegetable stock and potatoes	estofado de judías verdes con caldo de verduras y patatas
+bls:X465813	Green bean stew with vegetable stock, potatoes, pears and bacon	estofado de judías verdes con caldo de verduras, patatas, peras y beicon
+bls:X465823	Haricot bean soup with bologna	sopa de alubias con mortadela
+bls:X465953	Haricot bean soup with carrots	sopa de alubias con zanahorias
+bls:X466023	Savoy cabbage stew with potatoes, carrots and bacon	estofado de col de Saboya con patatas, zanahorias y beicon
+bls:X466043	Savoy cabbage stew with small meatballs, potatoes and carrots	estofado de col de Saboya con albóndigas, patatas y zanahorias
+bls:X466053	Savoy cabbage stew with beef, potatoes and carrots	estofado de col de Saboya con vacuno, patatas y zanahorias
+bls:X466143	White cabbage stew with mutton	estofado de col blanca con carnero
+bls:X466443	Curly kale stew with potatoes and pork belly	estofado de col rizada con patatas y panza de cerdo
+bls:X466513	Curly kale stew with potatoes and cooked sausage	estofado de col rizada con patatas y salchicha cocida
+bls:X468263	Swede-potato stew with poulard "Hamburg National"	estofado de colinabo y patatas con pularda Hamburg National
+bls:X468453	Westphalian bean stew (with haricot and green beans, potatoes, bacon, pome fruit)	estofado de alubias westfaliano con patatas, beicon y manzana
+bls:X468713	"Gaisburger Marsch" (stew with beef, vegetables, potatoes and fresh egg pasta spaetzle)	estofado Gaisburger Marsch con vacuno, verduras, patatas y spaetzle
+bls:X469033	"Borschtsch" (beetroot soup)	sopa borsch
+bls:X469043	White cabbage-carrot stew with haricots and mutton	estofado de col blanca y zanahorias con alubias y carnero
+bls:X469113	Serbian bean soup with bacon	sopa de alubias serbia con beicon
+bls:X469213	Irish stew (white cabbage-potato stew with mutton)	estofado irlandés con carnero
+bls:X469313	"Spanish Fricco" (potato stew with pork, yogurt and sour cream)	estofado español fricco con cerdo, yogur y crema agria
+bls:X469343	Dutch stew (with potatoes, carrots and small Mettwurst sausages)	estofado holandés con patatas, zanahorias y mettwursts pequeñas
+bls:X469413	"Bigosch" (stew with pork, potatoes, sauerkraut and white cabbage)	bigos con cerdo, patatas y chucrut
+bls:X469460	"Gazpacho" (cold Spanish vegetable soup)	gazpacho andaluz
+bls:X469743	Chilli con carne simple	chili con carne simple
+bls:X469753	Chilli con carne (with beef mince)	chili con carne de picada de vacuno
+bls:X470043	Vanilla-milk soup with egg, thickened with starch	sopa de leche y vainilla con huevo espesa con almidón
+bls:X471153	Cold vanilla-milk soup with egg, thickened with starch	sopa fría de leche y vainilla con huevo espesa con almidón
+bls:X471353	Cold chocolate-milk soup thickened with starch	sopa fría de leche y chocolate espesa con almidón
+bls:X471423	Chocolate-milk soup thickened with semolina	sopa de leche y chocolate espesa con sémola
+bls:X471443	Chocolate-milk soup thickened with starch	sopa de leche y chocolate espesa con almidón
+bls:X472143	Vanilla-milk soup thickened with semolina	sopa de leche y vainilla espesa con sémola
+bls:X475243	Milk soup sweetened, thickened with oat flakes	sopa de leche dulce espesa con copos de avena
+bls:X475453	Cold vanilla-milk soup with egg and fruit garnish, thickened with starch	sopa fría de leche y vainilla con huevo y fruta espesa con almidón
+bls:X475713	Porridge, roasted, with vegetable stock and egg	sopa de copos de avena tostada con caldo de verduras y huevo
+bls:X476140	Buttermilk soup, sweetened	sopa de suero de mantequilla dulce
+bls:X476512	Tsatsiki	tzatziki
+bls:X476540	Cold cucumber-buttermilk-yogurt soup	sopa fría de pepino, suero de mantequilla y yogur
+bls:X476650	Cold buttermilk soup, sweetened	sopa fría de suero de mantequilla dulce
+bls:X490153	Cold rhubarb soup thickened with starch	sopa fría de ruibarbo espesa con almidón
+bls:X490263	Pumpkin soup spicy, with cream	sopa de calabaza picante con nata
+bls:X491163	Cold apple soup	sopa fría de manzana
+bls:X491443	Cold apple soup with currants	sopa fría de manzana con pasas de Corinto
+bls:X492143	Cold cherry soup thickened with starch	sopa fría de cereza espesa con almidón
+bls:X492343	Plum puree soup, strained	sopa de ciruela pasada
+bls:X492563	Cold apricot soup thickened with starch	sopa fría de albaricoque espesa con almidón
+bls:X493153	Elderberry soup with apple and small semolina dumplings, thickened	sopa de saúco con manzana y bolitas de sémola espesa
+bls:X493243	Elderberry soup with apple, thickened with starch	sopa de saúco con manzana espesa con almidón
+bls:X493343	Blueberry soup thickened with starch	sopa de arándanos espesa con almidón
+bls:X493453	Cold gooseberry soup thickened with starch	sopa fría de grosella espesa con almidón
+bls:X493563	Cold red currant soup thickened with starch	sopa fría de grosella roja espesa con almidón
+bls:X494143	Rose hip soup with apple, thickened with starch	sopa de escaramujo con manzana espesa con almidón
+bls:X495363	Cold melon soup	sopa fría de melón
+bls:X496363	Cold orange soup	sopa fría de naranja
+bls:X497143	Wine soup sweetened, thickened with starch	sopa de vino dulce espesa con almidón
+bls:X498113	Beer soup Berlin style	sopa de cerveza a la berlinesa
+bls:X498163	Beer soup sweetened, thickened with starch	sopa de cerveza dulce espesa con almidón
+bls:X4A1000	Fish stock	fondo de pescado
+bls:X4A1010	Meat bouillon with egg	caldo de carne con huevo
 bls:X4A1020	Chicken soup with chicken and vegetables	sopa de pollo con verduras
+bls:X4A1030	Vegetable soup with chicken and rice	sopa de verduras con pollo y arroz
+bls:X4A2000	Wine soup "Terlan"	sopa de vino Terlan
+bls:X4A3000	Velvety vegetable soup	sopa de verduras aterciopelada
+bls:X4A3010	Pumpkin soup with coconut milk	sopa de calabaza con leche de coco
+bls:X4A4000	Cream of broccoli soup with yogurt and almond flakes	crema de brócoli con yogur y láminas de almendra
+bls:X4A4010	Cream of sweet pepper soup	crema de pimiento
+bls:X4A5000	Potato-vegetable soup with vegetable stock	sopa de patata y verduras con caldo de verduras
+bls:X4A5010	Potato stew with cured, smoked pork neck	estofado de patatas con cuello de cerdo curado ahumado
+bls:X4A6000	Fennel soup with orange fillets	sopa de hinojo con gajos de naranja
+bls:X4A6010	Green pea soup "St. Germain"	sopa de guisantes verdes Saint-Germain
+bls:X4A6020	Tomato soup of tomato paste and vegetable stock	sopa de tomate de concentrado con caldo de verduras
+bls:X4A6030	Tomato soup clear, with vegetable stock	sopa de tomate clara con caldo de verduras
+bls:X4A7000	Vegetable stew "Pichelsteiner"	estofado de verduras pichelsteiner
+bls:X4A7010	Vegetable soup with potatoes	sopa de verduras con patatas
+bls:X4A8000	Chilli sin carne	chili sin carne
+bls:X4A8010	Pea stew with vegetable stock, mirepoix and potatoes	estofado de guisantes con caldo de verduras, hortalizas y patatas
+bls:X4A8020	Pea soup with vegetable stock and mirepoix	sopa de guisantes con caldo de verduras y hortalizas
+bls:X4A8030	Chickpea stew	estofado de garbanzos
+bls:X4A8040	Lentil stew with vegetables and fresh egg pasta spaetzle	estofado de lentejas con verduras y spaetzle de huevo
+bls:X4A8050	Lentil soup with vegetables and Vienna sausages	sopa de lentejas con verduras y salchichas de Viena
+bls:X4A8060	Miso soup	sopa miso
+bls:X4A8070	Red lentil soup with coriander	sopa de lentejas rojas con cilantro
+bls:X4A8080	Haricot bean soup	sopa de alubias
+bls:X4A8090	Haricot bean stew with sweet pepper, tomatoes and ajvar	estofado de alubias con pimiento, tomate y ajvar
+bls:X4A8100	Haricot bean stew with bacon	estofado de alubias con beicon
+bls:X4A8110	Haricot bean stew	estofado de alubias
+bls:X4A9000	Curly kale-stew with potatoes	estofado de col rizada con patatas
+bls:X4A9010	White cabbage stew	estofado de col blanca
+bls:X4A9020	Savoy cabbage stew with vegetable stock, potatoes and carrots	estofado de col de Saboya con caldo de verduras, patatas y zanahorias
+bls:X4B1000	Cold peach soup thickened with starch	sopa fría de melocotón espesa con almidón
+bls:X4B1010	Cold rhubarb soup thickened with semolina	sopa fría de ruibarbo espesa con sémola
+bls:X4B2000	Oat flakes soup sweetened, with milk 3.5 % fat	sopa de copos de avena dulce con leche 3,5 %
+bls:X4B3000	Liver dumpling as soup garnish	albóndiga de hígado para sopa
+bls:X4B3010	Pork mince-filled pasta squares as soup garnish	maultaschen para sopa
+bls:X4B3020	Ham dumplings as soup garnish	nockerl de jamón para sopa
+bls:X503053	Courgette patties with cheese fried	tortitas de calabacín con queso fritas
+bls:X503412	Quiche (shortcrust pastry) with broccoli and cauliflower	quiche con brócoli y coliflor
+bls:X505012	Lentils boiled, in white basic sauce	lentejas cocidas en salsa base blanca
+bls:X510043	Mushrooms stewed, with sour cream	setas estofadas con crema agria
+bls:X511043	Button mushrooms stewed, in white basic sauce with cream	champiñones estofados en salsa base blanca con nata
+bls:X511153	Button mushrooms stewed, in herb sauce from white basic sauce	champiñones estofados en salsa de hierbas de salsa base blanca
+bls:X511343	Button mushroom ragout, gratinated	ragú de champiñones gratinado
+bls:X511463	Button mushrooms filled, gratinated	champiñones rellenos gratinados
+bls:X511812	Button mushrooms in frying batter (with beer) deep-fried	champiñones en rebozado de cerveza fritos
+bls:X512053	Chanterelles stewed	rebozuelos estofados
+bls:X512163	Chanterelles stewed, in white basic sauce with cream	rebozuelos estofados en salsa base blanca con nata
+bls:X513063	Porcini mushrooms stewed	boletus estofados
+bls:X513163	Porcini mushrooms stewed, in white basic sauce with cream	boletus estofados en salsa base blanca con nata
+bls:X513263	Porcini mushrooms fried with tomatoes	boletus fritos con tomate
+bls:X518033	Mixed vegetables stewed, in white basic sauce with cream	mezcla de verduras estofada en salsa base blanca con nata
+bls:X518053	Mixed vegetables stewed	mezcla de verduras estofada
+bls:X518133	Mixed vegetables "Leipziger Allerlei" stewed	mezcla de verduras Leipziger Allerlei estofada
+bls:X518233	Vegetable mix fried	mezcla de verduras frita
+bls:X518363	Carrots and peas stewed, in white basic sauce with cream	zanahorias y guisantes estofadas en salsa base blanca con nata
+bls:X518412	Carrots and peas stewed (with fat and salt)	zanahorias y guisantes estofadas con grasa y sal
+bls:X518543	Ratatouille	ratatouille de verduras
+bls:X518743	Vegetables with cheese sauce gratinated	verduras con salsa de queso gratinadas
+bls:X521043	Spinach stewed, with cream	espinacas estofadas con nata
+bls:X521053	Spinach stewed, in white basic sauce	espinacas estofadas en salsa base blanca
+bls:X521413	Spinach casserole with cheese gratinated	cazuela de espinacas gratinada con queso
+bls:X522012	Leaf spinach stewed (with fat and salt)	espinacas de hoja estofadas con grasa y sal
+bls:X523053	Chard stewed, in white basic sauce	acelgas estofadas en salsa base blanca
+bls:X523312	Chard tart (shortcrust pastry)	tarta de acelgas
+bls:X523512	Chard stewed (with fat and salt)	acelgas estofadas con grasa y sal
+bls:X525043	Parsley root stewed, in white basic sauce with cream	raíz de perejil estofada en salsa base blanca con nata
+bls:X526062	Chicory stewed, with butter	achicoria estofada con mantequilla
+bls:X526162	Chicory stewed (with fat and salt)	achicoria estofada con grasa y sal
+bls:X530143	Bavarian white cabbage stewed	col a la bávara estofada
+bls:X530163	Bavarian white cabbage stewed, with bacon	col a la bávara estofada con beicon
+bls:X530343	Sauerkraut with apple stewed	chucrut con manzana estofado
+bls:X530353	Sauerkraut stewed	chucrut estofado
+bls:X531042	Cauliflower stewed, with breadcrumbs	coliflor estofada con pan rallado
+bls:X531053	Cauliflower boiled, with white basic sauce	coliflor cocida con salsa base blanca
+bls:X531263	Cauliflower stewed, with Bechamel sauce	coliflor estofada con salsa bechamel
+bls:X531413	Cauliflower gratinated	coliflor gratinada
+bls:X531433	Cauliflower casserole	cazuela de coliflor
+bls:X531543	Cauliflower with cheese sauce from Bechamel sauce gratinated	coliflor con salsa de queso de bechamel gratinada
+bls:X531612	Cauliflower stewed (with fat and salt)	coliflor estofada con grasa y sal
+bls:X531713	Cauliflower with minced meat filling and cheese gratinated	coliflor rellena de picada y queso gratinada
+bls:X531812	Cauliflower in frying batter (with beer) deep-fried	coliflor en rebozado de cerveza frita
+bls:X532043	Broccoli stewed, with roasted almond flakes	brócoli estofado con láminas de almendra tostadas
+bls:X532142	Broccoli stewed, with roasted breadcrumbs	brócoli estofado con pan rallado tostado
+bls:X532263	Broccoli stewed, with Bechamel sauce	brócoli estofado con salsa bechamel
+bls:X532363	Broccoli casserole	cazuela de brócoli
+bls:X532512	Broccoli stewed (with fat and salt)	brócoli estofado con grasa y sal
+bls:X532812	Broccoli in frying batter (with beer) deep-fried	brócoli en rebozado de cerveza frito
+bls:X533042	Chinese white cabbage stewed, with grated cheese	col china estofada con queso rallado
+bls:X534133	Curly kale stewed, with Westphalian mettwurst sausage	col rizada estofada con mettwurst de Westfalia
+bls:X534212	Curly kale stewed, with bacon	col rizada estofada con beicon
+bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	colirábano estofado con perejil
+bls:X535053	Kohlrabi stewed, with white basic sauce	colirábano estofado con salsa base blanca
+bls:X535163	Kohlrabi filled with chicken breast fillet, rice and vegetables, gratinated	colirábano relleno de filete de pollo, arroz y verduras gratinado
+bls:X535312	Kohlrabi stewed (with fat and salt)	colirábano estofado con grasa y sal
+bls:X536053	Brussels sprouts stewed (with fat and salt)	coles de Bruselas estofadas con grasa y sal
+bls:X536063	Brussels sprouts stewed, with melted butter	coles de Bruselas estofadas con mantequilla derretida
+bls:X536143	Brussels sprouts stewed, with boiled ham	coles de Bruselas estofadas con jamón cocido
+bls:X536343	Brussels sprouts boiled, with cheese sauce from Bechamel sauce	coles de Bruselas cocidas con salsa de queso de bechamel
+bls:X536363	Brussels sprouts boiled, with Bechamel sauce with cream	coles de Bruselas cocidas con bechamel y nata
+bls:X536463	Brussels sprouts with cheese gratinated	coles de Bruselas con queso gratinadas
+bls:X536563	Brussels sprouts stewed, with bacon and onions	coles de Bruselas estofadas con beicon y cebolla
+bls:X537063	Red cabbage with apple stewed	col lombarda con manzana estofada
+bls:X537112	Red cabbage stewed (with fat and salt)	col lombarda estofada con grasa y sal
+bls:X537912	White cabbage stewed (with fat and salt)	col blanca estofada con grasa y sal
+bls:X538153	White cabbage boiled, with white basic sauce	col blanca cocida con salsa base blanca
+bls:X538212	Cabbage roulade with minced meat filling, stewed	rollo de col relleno de picada estofado
+bls:X538853	Pointed cabbage stewed (with fat and salt)	col puntiaguda estofada con grasa y sal
+bls:X538943	White cabbage with white wine and apple stewed	col blanca con vino y manzana estofada
+bls:X539043	Savoy cabbage stewed, with cream	col de Saboya estofada con nata
+bls:X539053	Savoy cabbage boiled, with white basic sauce	col de Saboya cocida con salsa base blanca
+bls:X539063	Savoy cabbage stewed (with fat and salt)	col de Saboya estofada con grasa y sal
+bls:X541263	Artichoke quarters fried with porcini mushrooms and bacon	cuartos de alcachofa fritos con boletus y beicon
+bls:X541463	Artichoke bottoms with meat-filling	fondos de alcachofa con relleno de carne
+bls:X541563	Puree from artichoke bottoms	puré de alcachofas
+bls:X543063	Fennel stewed	hinojo estofado de guarnición
+bls:X543163	Fennel breaded, fried	hinojo empanado frito
+bls:X545043	Asparagus boiled, with Hollandaise sauce	espárragos cocidos con salsa holandesa
+bls:X545053	Asparagus boiled, with white basic sauce	espárragos cocidos con salsa base blanca
+bls:X545063	Asparagus boiled (without sauce)	espárragos cocidos sin salsa
+bls:X545563	Asparagus casserole	cazuela de espárragos
+bls:X545612	Asparagus boiled (with fat and salt)	espárragos cocidos con grasa y sal
+bls:X547053	Leek stewed, with Bechamel sauce	puerro estofado con salsa bechamel
+bls:X547063	Leek stewed (with fat and salt)	puerro estofado con grasa y sal
+bls:X548163	Onions fried	cebollas salteadas
+bls:X548243	Onions stewed, with sour cream	cebollas estofadas con crema agria
+bls:X548343	Onions stewed, with bacon	cebollas estofadas con beicon
 bls:X548443	Onions gratinated	cebollas gratinadas
+bls:X548812	Onion rings in frying batter (with beer) deep-fried	aros de cebolla en rebozado de cerveza fritos
+bls:X548912	Onions stewed (with fat and salt)	cebollas estofadas con grasa y sal
 bls:X566412	Celeriac boiled, with cream	apio nabo cocido con nata
 bls:X570143	Green peas stewed	guisantes estofados
 bls:X5A1010	Vegetable wafers savoury	oblea salada de verduras

@@ -3090,7 +3090,7 @@ bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	но�
 bls:V486100	Turkey breast, without skin, raw	грудка индейки без кожи сырая
 bls:V486132	Turkey breast, without skin, boiled	грудка индейки без кожи варёная
 bls:V486142	Turkey breast, without skin, braised without fat	грудка индейки без кожи тушёная
-bls:V486162	Turkey breast, without skin, fried without fat (oven)	грудка индейки без кожи запечённая
+bls:V486162	Turkey breast, without skin, fried without fat (oven)	филе индейки без кожи запечённое
 bls:V486172	Turkey breast, without skin, grilled	грудка индейки без кожи на гриле
 bls:V486182	Turkey breast, without skin, fried without fat (pan)	грудка индейки без кожи жареная без масла
 bls:V486200	Turkey breast, without skin, deep-frozen	грудка индейки без кожи замороженная
@@ -3152,7 +3152,7 @@ bls:V512182	Veal heart, fried without fat (pan)	сердце телячье жа
 bls:V512200	Veal heart, deep-frozen	сердце телячье замороженное
 bls:V512242	Veal heart, deep-frozen, braised without fat	сердце телячье из заморозки тушёное
 bls:V512282	Veal heart, deep-frozen, fried without fat (pan)	сердце телячье из заморозки жареное без масла
-bls:V513100	Pork heart, raw	сердце свиное сырое
+bls:V513100	Pork heart, raw	свиное сердце сырое
 bls:V513142	Pork heart, braised without fat	сердце свиное тушёное
 bls:V513182	Pork heart, fried without fat (pan)	сердце свиное жареное без масла
 bls:V513200	Pork heart, deep-frozen	сердце свиное замороженное
@@ -3166,7 +3166,7 @@ bls:V515100	Lamb heart, raw	сердце ягнячье сырое
 bls:V515142	Lamb heart, braised without fat	сердце ягнячье тушёное
 bls:V515182	Lamb heart, fried without fat (pan)	сердце ягнячье жареное без масла
 bls:V516100	Mutton heart, raw	сердце баранье сырое
-bls:V516142	Mutton heart, braised without fat	сердце баранье тушёное
+bls:V516142	Mutton heart, braised without fat	баранье сердце тушёное
 bls:V516182	Mutton heart, fried without fat (pan)	сердце баранье жареное без масла
 bls:V522100	Veal brain, raw	мозги телячьи сырые
 bls:V522132	Veal brain, boiled	мозги телячьи варёные
@@ -3180,7 +3180,7 @@ bls:V531100	Beef liver, raw	печень говяжья сырая
 bls:V531182	Beef liver, fried without fat (pan)	печень говяжья жареная без масла
 bls:V531200	Beef liver, deep-frozen	печень говяжья замороженная
 bls:V531282	Beef liver, deep-frozen, fried without fat (pan)	печень говяжья из заморозки жареная без масла
-bls:V532100	Veal liver, raw	печень телячья сырая
+bls:V532100	Veal liver, raw	телячья печень сырая
 bls:V532182	Veal liver, fried without fat (pan)	печень телячья жареная без масла
 bls:V532200	Veal liver, deep-frozen	печень телячья замороженная
 bls:V532282	Veal liver, deep-frozen, fried without fat (pan)	печень телячья из заморозки жареная без масла
@@ -3217,8 +3217,8 @@ bls:V564100	Sheep spleen, raw	селезёнка овечья сырая
 bls:V565100	Lamb spleen, raw	селезёнка ягнячья сырая
 bls:V566100	Mutton spleen, raw	селезёнка баранья сырая
 bls:V571100	Beef kidney, raw	почки говяжьи сырые
-bls:V572100	Veal kidney, raw	почки телячьи сырые
-bls:V572142	Veal kidney, braised without fat	почки телячьи тушёные
+bls:V572100	Veal kidney, raw	телячьи почки сырые
+bls:V572142	Veal kidney, braised without fat	телячьи почки тушёные
 bls:V573100	Pork kidney, raw	почки свиные сырые
 bls:V573142	Pork kidney, braised without fat	почки свиные тушёные
 bls:V574100	Sheep kidney, raw	почки овечьи сырые
@@ -3226,7 +3226,7 @@ bls:V574142	Sheep kidney, braised without fat	почки овечьи тушён
 bls:V575100	Lamb kidney, raw	почки ягнячьи сырые
 bls:V575142	Lamb kidney, braised without fat	почки ягнячьи тушёные
 bls:V576100	Mutton kidney, raw	почки бараньи сырые
-bls:V576142	Mutton kidney, braised without fat	почки бараньи тушёные
+bls:V576142	Mutton kidney, braised without fat	бараньи почки тушёные
 bls:V582100	Veal sweetbread, raw	зобная железа телячья сырая
 bls:V582132	Veal sweetbread, boiled	зобная железа телячья варёная
 bls:V584100	Sheep sweetbread, raw	зобная железа овечья сырая
@@ -3236,7 +3236,7 @@ bls:V585132	Lamb sweetbread, boiled	зобная железа ягнячья в�
 bls:V591100	Beef tongue, raw	язык говяжий сырой
 bls:V591132	Beef tongue, boiled	язык говяжий варёный
 bls:V591800	Beef tongue, cooked cured	язык говяжий солёный варёный
-bls:V592100	Veal tongue, raw	язык телячий сырой
+bls:V592100	Veal tongue, raw	телячий язык сырой
 bls:V592132	Veal tongue, boiled	язык телячий варёный
 bls:V592800	Veal tongue, cooked cured	язык телячий солёный варёный
 bls:V593100	Pork tongue, raw	язык свиной сырой
@@ -3246,7 +3246,7 @@ bls:V594100	Sheep tongue, raw	язык овечий сырой
 bls:V594132	Sheep tongue, boiled	язык овечий варёный
 bls:V595100	Lamb tongue, raw	язык ягнячий сырой
 bls:V595132	Lamb tongue, boiled	язык ягнячий варёный
-bls:V596100	Mutton tongue, raw	язык бараний сырой
+bls:V596100	Mutton tongue, raw	бараний язык сырой
 bls:V596132	Mutton tongue, boiled	язык бараний варёный
 bls:V604100	Chicken giblets, raw	потрошки цыплёнка сырые
 bls:V604142	Chicken giblets, braised without fat	потрошки цыплёнка тушёные
@@ -3261,11 +3261,11 @@ bls:V634100	Chicken liver, raw	печень куриная сырая
 bls:V634182	Chicken liver, fried without fat (pan)	печень куриная жареная без масла
 bls:V634200	Chicken liver, deep-frozen	печень куриная замороженная
 bls:V634282	Chicken liver, deep-frozen, fried without fat (pan)	печень куриная из заморозки жареная без масла
-bls:V635100	Duck liver, raw	печень утиная сырая
+bls:V635100	Duck liver, raw	утиная печень сырая
 bls:V635182	Duck liver, fried without fat (pan)	печень утиная жареная без масла
 bls:V635200	Duck liver, deep-frozen	печень утиная замороженная
 bls:V635282	Duck liver, deep-frozen, fried without fat (pan)	печень утиная из заморозки жареная без масла
-bls:V636100	Goose liver, raw	печень гусиная сырая
+bls:V636100	Goose liver, raw	гусиная печень сырая
 bls:V636182	Goose liver, fried without fat (pan)	печень гусиная жареная без масла
 bls:V654100	Chicken stomach, raw	желудочки куриные сырые
 bls:V654182	Chicken stomach, fried without fat (pan)	желудочки куриные жареные без масла
@@ -3446,7 +3446,7 @@ bls:W255300	Small scalded sausage filled with cheese	кезекрайнер
 bls:W255372	Small scalded sausage filled with cheese, grilled	кезекрайнер на гриле
 bls:W255382	Small scalded sausage filled with cheese, fried without fat (pan)	кезекрайнер жареный без масла
 bls:W255400	Bierwurst sausage	бирвурст
-bls:W255600	Luncheon meat	варёная колбаса
+bls:W255600	Luncheon meat	фрюштюксфляйш (варёная колбаса)
 bls:W255700	Stuttgart Leberkaese sausage	штутгартский леберкезе
 bls:W256000	Leberkaese sausage reduced-fat	леберкезе с пониженным жиром
 bls:W256100	Leberkaese sausage	леберкезе
@@ -3457,7 +3457,7 @@ bls:W256262	Fleischkaese sausage coarsely minced, fried without fat (oven)	фл�
 bls:W256282	Fleischkaese sausage coarsely minced, fried without fat (pan)	фляйшкезе крупного помола жареный без масла
 bls:W257000	Cabanossi sausage scalded	кабаносси
 bls:W258000	Touristenwurst sausage simple, scalded	туристская колбаска простая
-bls:W259000	Pork brawn sausage	зельц свиной
+bls:W259000	Pork brawn sausage	зельц из свиной головы
 bls:W261000	White Fleischkaese sausage made from pork	фляйшкезе белый из свинины
 bls:W269200	Leberkaese sausage with goose liver and pork, truffled	леберкезе из гусиной печени со свининой и трюфелем
 bls:W271000	Beer ham	биршинкен
@@ -3468,14 +3468,14 @@ bls:W272300	Die-patterned pate	паштет «кубик»
 bls:W272400	Truffled mosaic pate	паштет мозаичный с трюфелем
 bls:W273100	Beef beer ham	биршинкен говяжий
 bls:W273500	Ham roulade sausage	ветчинный рулет
-bls:W273600	Pork roulade sausage	рулет свиной
+bls:W273600	Pork roulade sausage	свиной рулет
 bls:W274500	Brawn Presssäckel	зельц прессцекель
 bls:W274600	White brawn	зельц белый
 bls:W275000	Mortadella South German	мортаделла южнонемецкая
 bls:W275100	Heart sausage	колбаса сердечная
 bls:W275200	Light pork tongue sausage	языковая колбаса светлая
 bls:W275232	Light pork tongue sausage boiled	языковая колбаса светлая варёная
-bls:W275300	Pork tongue sausage reduced-fat	кровяная колбаса с языком с пониженным жиром
+bls:W275300	Pork tongue sausage reduced-fat	кровяная колбаса с языком и пониженным жиром
 bls:W277000	Paprika bacon sausage	колбаса с паприковым беконом
 bls:W278000	Veal roulade sausage with pork	рулет телячий со свининой
 bls:W278200	Veal roulade sausage with dry-cured, smoked, rolled lean pork loin	рулет телячий с копчёной свиной корейкой
@@ -3547,7 +3547,7 @@ bls:W384300	White sausage with pearl barley	белая колбаса с пер�
 bls:W386000	Palatinate stuffed pig's stomach	заумаген (фаршированный свиной желудок)
 bls:W391200	Game pate with venison meat	паштет из дичи с олениной
 bls:W391400	Hare pate	паштет из зайца
-bls:W395000	Liver pate	печёночный паштет
+bls:W395000	Liver pate	паштет из печени
 bls:W395100	Liver pate with button mushrooms	печёночный паштет с шампиньонами
 bls:W396000	Venison meat pate with alcohol, baked	паштет из оленины с алкоголем запечённый
 bls:W397300	Goose liver pate with pork, baked	паштет из гусиной печени со свининой запечённый
@@ -3624,7 +3624,7 @@ bls:W871700	Bierwurst canned	бирвурст консервированная
 bls:W871800	Krakow cooked sausage canned	краковская варёная колбаса консервированная
 bls:W872100	Krakow ham bologna canned	краковская ветчинная колбаса консервированная
 bls:W872500	Jagdwurst sausage/ham bologna coarsely minced, canned	охотничья колбаса крупного помола консервированная
-bls:W872800	Luncheon meat canned	варёная колбаса консервированная
+bls:W872800	Luncheon meat canned	фрюштюксфляйш консервированный
 bls:W873100	Beer ham canned	биршинкен консервированный
 bls:W873500	Light pork tongue sausage canned	языковая колбаса светлая консервированная
 bls:W873600	Heart sausage canned	колбаса сердечная консервированная
@@ -3677,7 +3677,7 @@ bls:X081143	Toast squares with creamed ham, baked	тосты с ветчинны
 bls:X081243	Toast with asparagus, ham and cheese, baked	тост со спаржей, ветчиной и сыром запечённый
 bls:X081462	Toast with boiled ham, cheese and tomatoes, baked	тост с варёной ветчиной, сыром и помидорами запечённый
 bls:X081743	Toast Hawaii (pineapple, boiled ham, cheese) baked	тост «гавайский» с ананасом, варёной ветчиной и сыром
-bls:X081943	Cheese toast baked "Welsh rarebit"	гренки с сырным соусом
+bls:X081943	Cheese toast baked "Welsh rarebit"	тост с сырным соусом
 bls:X092040	Oat flakes sweetened, with milk 3.5 % fat and mixed fruit	хлопья овсяные сладкие с молоком 3,5 % и фруктовым миксом
 bls:X092050	Oat flakes unsweetened, with milk 3.5 % fat and mixed fruit	хлопья овсяные несладкие с молоком 3,5 % и фруктовым миксом
 bls:X092060	Muesli Bircher-Benner style, sweetened, with apples, raisins, cream and nuts	мюсли по-бирхерски сладкие с яблоками, изюмом, сливками и орехами
@@ -3916,7 +3916,7 @@ bls:X341040	Mayonnaise with vinegar	майонез с уксусом
 bls:X341060	Mayonnaise with lemon juice	майонез с лимонным соком
 bls:X344060	Mayonnaise dressing	заправка майонезная
 bls:X344260	Aioli	айоли
-bls:X344360	Tatar sauce	соус тартар
+bls:X344360	Tatar sauce	соус тартаре
 bls:X346150	Horseradish mayonnaise	майонез с хреном
 bls:X346250	Mayonnaise, diluted with quark	майонез, разведённый творогом
 bls:X346360	Russian sauce/tomato mayonnaise	русский соус (томатный майонез)
@@ -3927,7 +3927,7 @@ bls:X348360	Apple-horseradish cream	яблочный хрен
 bls:X351040	Vinegar marinade for salad	уксусная заправка для салата
 bls:X351140	Lemon marinade for salad	лимонная заправка для салата
 bls:X351440	Salad marinade with horseradish	салатная заправка с хреном
-bls:X354040	Caesar dressing	заправка цезарь
+bls:X354040	Caesar dressing	дрессинг цезарь
 bls:X354060	Roquefort dressing	заправка рокфор
 bls:X356050	Quark dressing	заправка творожная
 bls:X356250	Quark-horseradish dressing	заправка творожная с хреном
@@ -3935,7 +3935,7 @@ bls:X356360	Quark mayonnaise	творожный майонез
 bls:X357112	Buttermilk dressing with honey for salad	пахтовая заправка с мёдом
 bls:X357160	Horseradish mousse	хреновый мусс
 bls:X357260	Horseradish dressing	заправка с хреном
-bls:X357312	Cocktail dressing	заправка коктейльная
+bls:X357312	Cocktail dressing	коктейль-соус
 bls:X357340	Yogurt dressing	йогуртовая заправка
 bls:X357413	Yogurt marinade for salad	йогуртовый маринад для салата
 bls:X357613	Sour cream dressing for salad	сметанная заправка для салата
@@ -3946,8 +3946,8 @@ bls:X359253	Mustard marinade for salad	горчичный маринад для 
 bls:X359440	Bacon-vinegar marinade for salad	беконно-уксусная заправка
 bls:X359540	Red wine marinade for salad	маринад из красного вина для салата
 bls:X359640	Asian dressing	азиатская заправка
-bls:X359712	French dressing	французская заправка
-bls:X359912	Italian dressing	итальянская заправка
+bls:X359712	French dressing	заправка по-французски
+bls:X359912	Italian dressing	заправка по-итальянски
 bls:X360040	Cream sauce sweet	сливочный соус сладкий
 bls:X361163	Vanilla sauce	ванильный соус
 bls:X362143	Chocolate sauce	шоколадный соус
@@ -3973,9 +3973,9 @@ bls:X379343	Rum sauce from vanilla sauce	ромовый соус на ванил
 bls:X381063	Cumberland sauce with red and port wine	соус камберленд с красным вином и портвейном
 bls:X382040	Frankfurt green herb sauce	франкфуртский зелёный соус
 bls:X382160	Frankfurt green herb sauce with boiled egg	франкфуртский зелёный соус с варёным яйцом
-bls:X384143	Barbecue sauce	соус барбекю
+bls:X384143	Barbecue sauce	соус для гриля
 bls:X384243	Devil's sauce for barbecue	соус «дьявольский» для гриля
-bls:X389000	Avocado dip (Guacamole)	гуакамоле
+bls:X389000	Avocado dip (Guacamole)	дип гуакамоле
 bls:X3A1000	Beer sauce	пивной соус
 bls:X3A2000	Minced meat-sweet pepper sauce	соус с фаршем и болгарским перцем
 bls:X3A2010	Salmon-spinach sauce from white basic sauce	лососево-шпинатный соус со сливками
@@ -3992,7 +3992,7 @@ bls:X3A6030	Horseradish sauce vegan, with soya drink	хреновый соус �
 bls:X3A6040	Tofu Bolognese vegan	болоньезе из тофу веганская
 bls:X3A7000	Almond pesto	миндальное песто
 bls:X3A7010	Pesto rosso	песто россо
-bls:X3A7020	Salsa verde	сальса верде
+bls:X3A7020	Salsa verde	зелёная сальса
 bls:X3A7030	Anchovy pesto with herbs	песто из анчоусов с травами
 bls:X3A7040	Spanish sauce (Salsa)	соус сальса испанский
 bls:X3A7050	Mayonnaise, diluted with yogurt	майонез, разведённый йогуртом
@@ -4006,13 +4006,365 @@ bls:X3A9010	Yogurt dip	йогуртовый дип
 bls:X3A9020	Yogurt dip with herbs	йогуртовый дип с травами
 bls:X3A9030	Sour cream dressing wiht yogurt and mustard	сметанная заправка с йогуртом и горчицей
 bls:X3A9040	Schmand dip with chives	сметанный дип с зелёным луком
+bls:X411243	Chicken stock	куриный бульон
+bls:X411363	Game stock	бульон из дичи
+bls:X411563	Veal stock	телячий бульон
+bls:X411613	Meat stock with egg	мясной бульон с яичной струйкой
+bls:X411713	Meat stock with small semolina dumplings	мясной бульон с манными клёцками
+bls:X411813	Meat stock with small liver dumplings	мясной бульон с печёночными клёцками
+bls:X412053	Beef consomme	крепкий говяжий бульон
+bls:X412113	Meat stock with pork mince-spinach-filled pasta squares	мясной бульон с маульташен
+bls:X412263	Poultry consomme (chicken)	крепкий куриный бульон
+bls:X412363	Game consomme	крепкий бульон из дичи
+bls:X412463	Fish consomme	крепкий рыбный бульон
+bls:X412513	Meat stock with strips of crepe	мясной бульон с блинными полосками
+bls:X412613	Meat stock with small marrow dumplings	мясной бульон с клёцками из костного мозга
+bls:X413663	Double beef consomme	двойной крепкий говяжий бульон
+bls:X416243	Vegetable stock	овощной бульон
+bls:X416313	Vegetable stock with egg	овощной бульон с яичной струйкой
+bls:X416513	Vegetable stock with pasta egg-free	овощной бульон с макаронами без яиц
 bls:X416713	Vegetable soup	овощной суп
+bls:X416813	Vegetable stock with vegetables	овощной бульон с овощами
+bls:X416913	Vegetable puree soup	суп-пюре овощный
+bls:X417013	Vegetable-beef stew	овощное рагу с говядиной
+bls:X417113	Vegetable stew with sausage	рагу овощное с колбасой
+bls:X417813	Semolina soup sweetened, with milk 3.5 % fat	манный суп сладкий на молоке 3,5 %
+bls:X420163	Beef consomme with tapioka (sago)	крепкий говяжий бульон с тапиокой
+bls:X420363	Beef consomme Scottish style with pearl barley	крепкий говяжий бульон по-шотландски с перловкой
+bls:X421143	Meat stock with diced egg custard	мясной бульон с яичным заварным кубиком
+bls:X421363	Beef consomme with diced egg custard	крепкий говяжий бульон с яичным заварным кубиком
+bls:X422163	Beef consomme with strips of crepe	крепкий говяжий бульон с блинными полосками
+bls:X422253	Chicken stock with egg pasta	куриный бульон с яичной лапшой
+bls:X422363	Beef consomme with egg pasta	крепкий говяжий бульон с яичной лапшой
+bls:X422643	Meat stock with pasta egg-free	мясной бульон с макаронами без яиц
+bls:X423053	Beef consomme with small semolina dumplings	крепкий говяжий бульон с манными клёцками
+bls:X423153	Meat stock with vegetables and rice	мясной бульон с овощами и рисом
+bls:X423363	Beef consomme with pearl barley	крепкий говяжий бульон с перловкой
+bls:X423462	Beef consomme with rice	крепкий говяжий бульон с рисом
+bls:X423553	Chicken stock with rice	куриный бульон с рисом
+bls:X423753	Meat stock with egg pasta	мясной бульон с яичной лапшой
+bls:X424553	Meat stock with roll slices	мясной бульон с ломтиками булочки
+bls:X425163	Italian vegetable soup (minestrone)	суп овощной минестроне
+bls:X425363	Beef consomme with vegetables	крепкий говяжий бульон с овощами
+bls:X425543	French onion soup with white bread slices, gratinated	французский луковый суп с ломтиками белого хлеба запечённый с сыром
+bls:X425553	Onion soup clear, with meat stock	луковый суп прозрачный на мясном бульоне
+bls:X425813	Chinese soup spicy, with chicken breast fillet	суп китайский острый с куриным филе
+bls:X426153	Oxtail soup clear	суп из бычьего хвоста прозрачный
+bls:X427153	Meat stock with liver spaetzle	мясной бульон с печёночными шпецле
+bls:X427363	Liver dumpling soup	суп с печёночными кнедлями
+bls:X431143	Egg added to soups	яичная струйка для супа
+bls:X431242	Custard royale (diced egg custard) as soup garnish	яичный заварной кубик для супа
+bls:X431340	Meringue dumplings as sweet soup garnish	клёцки из меренги сладкие для супа
+bls:X432142	Pasta egg-free (boiled with salt)	макароны без яиц варёные с солью
+bls:X432252	Pasta egg-free (boiled with salt) as soup garnish	макароны без яиц для супа
+bls:X432342	"Flädle" fried strips of crepe as soup garnish	блинные полоски жареные для супа
+bls:X434143	"Grießnockerln" semolina dumplings as soup garnish	манные нокерлы для супа
+bls:X434243	Small semolina dumplings as soup garnish	манные клёцки для супа
+bls:X434343	"Schwemmklößchen" small dumplings as soup garnish	маленькие клёцки для супа
+bls:X434442	Croutons, white bread cubes toasted in butter	гренки из белого хлеба в сливочном масле
+bls:X434543	Small white bread dumplings	клёцки из белого хлеба
+bls:X435143	Small cheese dumplings	сырные клёцки
+bls:X435163	Cheese-semolina dumplings	сырно-манные клёцки
+bls:X436143	Small sausage meatballs	колбасные клёцки
+bls:X436243	Small ham dumplings	ветчинные клёцки
+bls:X436343	Small meatballs	мясные клёцки
+bls:X437143	Liver spaetzle	печёночные шпецле
+bls:X437343	Small liver dumplings with bread crumbs	печёночные клёцки с панировочными сухарями
+bls:X437363	Small liver dumplings	печёночные клёцки
+bls:X438163	Small marrow dumplings	клёцки из костного мозга
 bls:X439163	Small game meatballs	котлетки из дичи
+bls:X441043	Basic soup light-coloured	основной суп светлый
+bls:X441653	"Königin" soup	суп «королевский»
+bls:X442043	Basic soup dark	основной суп тёмный
+bls:X443063	Cream of cauliflower soup (Puree Dubarry)	крем-суп из цветной капусты (Дюбарри)
+bls:X443812	Carrots in frying batter (with beer) deep-fried	морковь в пивном кляре жареная во фритюре
+bls:X444112	Cream of herb soup	крем-суп травяной
+bls:X444143	Cream of vegetable soup	крем-суп овощной
+bls:X444253	Cream of leek soup	крем-суп из лука-порея
+bls:X444313	Cream of potato-leek soup	крем-суп картофельно-порейный
+bls:X444343	Tomato soup thickened	томатный суп загущённый
+bls:X444453	Cream of asparagus soup	крем-суп из спаржи
+bls:X444563	Cream of cucumber soup	крем-суп огуречный
+bls:X444613	Cream of broccoli soup	крем-суп из брокколи
+bls:X444913	Asparagus soup	суп из спаржи
+bls:X445213	Tomato soup thickened with rice	томатный суп загущённый рисом
+bls:X445643	Velvety spinach soup	шпинатный бархатный суп
+bls:X445713	Cream of celeriac soup	крем-суп из корня сельдерея
+bls:X445743	Cream of celeriac-leek soup	крем-суп из сельдерея и порея
+bls:X445813	Cream of avocado soup	крем-суп из авокадо
 bls:X445863	Cream of pumpkin soup	суп-пюре тыквенный
+bls:X446143	Cream of carrot soup	крем-суп морковный
+bls:X446153	Carrot soup	морковный суп
+bls:X446343	Leek soup thickened	суп из лука-порея загущённый
+bls:X446643	Tomato soup of fresh tomatoes and vegetable stock	томатный суп из свежих помидоров на овощном бульоне
+bls:X446653	Tomato soup with meat stock	томатный суп на мясном бульоне
+bls:X446813	Beetroot soup with apple and horseradish	свекольный суп с яблоком и хреном
+bls:X446913	Sauerkraut soup with sweet pepper and potatoes	суп из квашеной капусты с болгарским перцем и картофелем
+bls:X446953	Celeriac soup	суп из корня сельдерея
+bls:X447313	Tomato soup of tomato paste, vegetable stock and pasta egg-free	томатный суп из томатной пасты на овощном бульоне с макаронами без яиц
+bls:X447413	Tomato soup of fresh tomatoes, vegetable stock and pasta egg-free	томатный суп из свежих помидоров на овощном бульоне с макаронами без яиц
+bls:X448053	Button mushroom soup of fresh button mushrooms	суп из свежих шампиньонов
+bls:X448153	Cream of button mushroom soup with meat stock	крем-суп из шампиньонов на мясном бульоне
+bls:X448343	Porcini mushroom soup	суп из белых грибов
+bls:X448353	Mushroom soup	грибной суп
+bls:X449023	Potato soup with vegetable stock	картофельный суп на овощном бульоне
+bls:X449353	Potato soup with leek and vegetable stock	картофельный суп с луком-пореем на овощном бульоне
+bls:X449613	Potato soup with vegetable stock, thickened	картофельный суп на овощном бульоне загущённый
+bls:X449713	Cream of potato-vegetable soup	крем-суп картофельно-овощной
+bls:X450013	Cream of potato-leek soup with bacon	крем-суп картофельно-порейный с беконом
+bls:X450033	Potato soup with vegetable stock and scalded sausage	картофельный суп на овощном бульоне с сосисками
+bls:X450212	Potato soup sour, thickened	картофельный суп кислый загущённый
+bls:X450243	Potato soup sour with blood and liver sausage	картофельный суп кислый с кровяной и печёночной колбасой
+bls:X451343	Creamy cheese soup "Paris" (with processed cheese)	крем-суп сырный «парижский» с плавленым сыром
+bls:X451463	Cheese soup "Allgäuer" with croutons	сырный суп по-альгойски с гренками
+bls:X452013	Stew of pasta egg-free, with minced meat	рагу из макарон без яиц с фаршем
+bls:X452153	Stew of pasta egg-free, with vegetables and chicken	рагу из макарон без яиц с овощами и курицей
+bls:X452263	Soup of egg pasta with chicken	суп из яичной лапши с курицей
+bls:X453023	Boiled rice with chicken	рис отварной с курицей
+bls:X453123	Rice soup with meat stock and vegetables	рисовый суп на мясном бульоне с овощами
+bls:X453253	Boiled rice with beef	рис отварной с говядиной
+bls:X454223	Semolina soup roasted, thickened with egg yolk	манный суп обжаренный загущённый желтком
+bls:X454243	Semolina soup roasted	манный суп обжаренный
+bls:X454343	Semolina soup	манный суп
+bls:X454443	Green spelt flour soup	суп из грюнкерновой муки
+bls:X454463	Green spelt soup roasted	суп из грюнкерна обжаренный
+bls:X454663	Oat flakes soup roasted, with vegetable stock	овсяный суп обжаренный на овощном бульоне
+bls:X454713	Oat gruel	овсяный отвар
+bls:X454812	Pearl barley soup "Mecklenburg" (with vegetable stock, prunes, duck meat)	перловый суп по-мекленбургски с черносливом и уткой
+bls:X454943	Barley soup "Bündner" style with bacon, smoked beef and pork	перловый суп по-гризонски с беконом и копчёной говядиной со свининой
+bls:X455013	Bread soup (white bread) with vegetable stock, tomatoes, button mushruooms and cheese	хлебный суп из белого хлеба на овощном бульоне с помидорами, шампиньонами и сыром
+bls:X455063	Bread soup (brown bread) with meat stock, vegetables and bacon	хлебный суп из чёрного хлеба на мясном бульоне с овощами и беконом
+bls:X455153	Bread soup (brown bread) with raisins, apple and sour cream	хлебный суп из чёрного хлеба с изюмом, яблоком и сметаной
+bls:X455243	Bread soup (brown bread) with vegetable stock	хлебный суп из чёрного хлеба на овощном бульоне
+bls:X455913	Goulash soup with beef, meat stock and red wine	гуляш-суп с говядиной на мясном бульоне с красным вином
+bls:X456043	Soup with roe deer meat, bacon and red wine	суп из мяса косули с беконом и красным вином
+bls:X456133	Goulash soup "Hungarian" with beef, meat stock, tomatoes and potatoes	гуляш-суп по-венгерски с говядиной, помидорами и картофелем
+bls:X456143	Goulash soup with beef, onions and sweet pepper	гуляш-суп с говядиной, луком и болгарским перцем
+bls:X456243	Minced meat soup	суп с фаршем
+bls:X456743	Oxtail soup thickened	суп из бычьего хвоста загущённый
+bls:X458143	Cream of chicken soup	крем-суп куриный
+bls:X459033	Fish soup "Bouillabaisse"	рыбный суп буйабес
+bls:X459143	Eel soup Hamburg style with dried fruit	суп из угря по-гамбургски с сухофруктами
+bls:X459263	Lobster soup with whipped cream, white wine and celery	суп из омара со взбитыми сливками, белым вином и сельдереем
+bls:X459363	Crayfish soup	суп из раков
+bls:X459723	Fish-vegetable stew "Pichelsteiner" with saithe	рагу рыбно-овощное «пихельштайнер» с сайдой
+bls:X461143	Carrot stew with pork belly	рагу морковное со свиной грудинкой
+bls:X461243	Turnip stew with cured, smoked pork neck and potatoes	рагу из брюквы с копчёной свиной шеей и картофелем
+bls:X461423	Leek stew with cured pork neck and potatoes	рагу из лука-порея с солёной свиной шеей и картофелем
+bls:X461713	Lentil stew with vegetables, potatoes and Vienna sausages	рагу из чечевицы с овощами, картофелем и венскими сосисками
+bls:X461813	Lentil stew with vegetables	рагу из чечевицы с овощами
+bls:X461913	Lentil stew with vegetables and potatoes	рагу из чечевицы с овощами и картофелем
+bls:X462023	Vegetable stew "Pichelsteiner" with beef and pork	рагу овощное «пихельштайнер» с говядиной и свининой
+bls:X462063	Vegetable soup with potatoes and beef	суп овощной с картофелем и говядиной
+bls:X462123	Vegetable soup thickened	суп овощной загущённый
+bls:X462133	Vegetable stew with mutton	рагу овощное с бараниной
+bls:X462153	Vegetable stew with beef	рагу овощное с говядиной
+bls:X462313	Lentil stew with bacon	рагу из чечевицы с беконом
+bls:X462413	Bavarian vegetable stew with white cabbage	рагу овощное по-баварски с белокочанной капустой
+bls:X462513	Lentil soup with vegetables	суп из чечевицы с овощами
+bls:X462623	Vegetable soup with pearl barley	суп овощной с перловкой
+bls:X462743	Stew "Köthen" style with potatoes, pork neck and pears, baked in oven	рагу по-кётенски с картофелем, свиной шеей и грушами запечённое
+bls:X463453	Lentil stew with sausage and fresh egg pasta spaetzle	рагу из чечевицы с колбасой и свежими яичными шпецле
 bls:X463613	Lentil soup with vegetables and cured pork	чечевичный суп с овощами и копчёной свининой
 bls:X463813	Lentil stew with prunes and blood sausage	рагу из чечевицы с черносливом и кровяной колбасой
+bls:X464433	Pea soup with vegetable stock, mirepoix, bacon and Vienna sausages	гороховый суп на овощном бульоне с суповыми овощами, беконом и венскими сосисками
+bls:X464643	Green pea soup with small semolina dumplings	суп из зелёного гороха с манными клёцками
+bls:X464713	Pea soup with vegetable stock, mirepoix and bacon, thickened	гороховый суп на овощном бульоне с суповыми овощами и беконом загущённый
+bls:X464753	Pea soup with vegetable stock, mirepoix and bacon	гороховый суп на овощном бульоне с суповыми овощами и беконом
+bls:X464813	Pea soup with vegetable stock, vegetables, small Mettwurst sausages and pork belly	гороховый суп на овощном бульоне с овощами, маленькими меттвурстами и свиной грудинкой
+bls:X464913	Chickpea-tomato stew	рагу из нута с помидорами
+bls:X465033	Haricot bean soup with smoked pork	суп из белой фасоли с копчёной свининой
+bls:X465153	Haricot bean stew with beef	рагу из белой фасоли с говядиной
+bls:X465253	Haricot bean soup with bacon	суп из белой фасоли с беконом
+bls:X465363	Tomato stew with bacon, broad beans and vegetables	рагу томатное с беконом, бобами и овощами
+bls:X465553	Green bean soup with vegetable stock and potatoes	суп из стручковой фасоли на овощном бульоне с картофелем
+bls:X465623	Green bean stew with vegetable stock, potatoes, beef and bacon	рагу из стручковой фасоли на овощном бульоне с картофелем, говядиной и беконом
+bls:X465663	Green bean stew with vegetable stock, potatoes and mutton	рагу из стручковой фасоли на овощном бульоне с картофелем и бараниной
+bls:X465713	Green bean stew with vegetable stock and potatoes	рагу из стручковой фасоли на овощном бульоне с картофелем
+bls:X465813	Green bean stew with vegetable stock, potatoes, pears and bacon	рагу из стручковой фасоли на овощном бульоне с картофелем, грушами и беконом
+bls:X465823	Haricot bean soup with bologna	суп из белой фасоли с колбасой болонья
+bls:X465953	Haricot bean soup with carrots	суп из белой фасоли с морковью
+bls:X466023	Savoy cabbage stew with potatoes, carrots and bacon	рагу из савойской капусты с картофелем, морковью и беконом
+bls:X466043	Savoy cabbage stew with small meatballs, potatoes and carrots	рагу из савойской капусты с мясными клёцками, картофелем и морковью
+bls:X466053	Savoy cabbage stew with beef, potatoes and carrots	рагу из савойской капусты с говядиной, картофелем и морковью
+bls:X466143	White cabbage stew with mutton	рагу из белокочанной капусты с бараниной
+bls:X466443	Curly kale stew with potatoes and pork belly	рагу из кудрявой капусты с картофелем и свиной грудинкой
+bls:X466513	Curly kale stew with potatoes and cooked sausage	рагу из кудрявой капусты с картофелем и варёной колбасой
+bls:X468263	Swede-potato stew with poulard "Hamburg National"	рагу из брюквы с картофелем и пуляркой «Гамбургер националь»
+bls:X468453	Westphalian bean stew (with haricot and green beans, potatoes, bacon, pome fruit)	вестфальское рагу из фасоли с картофелем, беконом и яблоками
+bls:X468713	"Gaisburger Marsch" (stew with beef, vegetables, potatoes and fresh egg pasta spaetzle)	рагу «Гайсбургер марш» с говядиной, овощами, картофелем и шпецле
+bls:X469033	"Borschtsch" (beetroot soup)	борщ свекольный
+bls:X469043	White cabbage-carrot stew with haricots and mutton	рагу из белокочанной капусты и моркови с белой фасолью и бараниной
+bls:X469113	Serbian bean soup with bacon	сербский фасолевый суп с беконом
+bls:X469213	Irish stew (white cabbage-potato stew with mutton)	ирландское рагу с бараниной
+bls:X469313	"Spanish Fricco" (potato stew with pork, yogurt and sour cream)	испанское рагу «фрико» со свининой, йогуртом и сметаной
+bls:X469343	Dutch stew (with potatoes, carrots and small Mettwurst sausages)	голландское рагу с картофелем, морковью и маленькими меттвурстами
+bls:X469413	"Bigosch" (stew with pork, potatoes, sauerkraut and white cabbage)	бигос со свининой, картофелем и квашеной капустой
+bls:X469460	"Gazpacho" (cold Spanish vegetable soup)	гаспачо андалузский
+bls:X469743	Chilli con carne simple	чили кон карне простое
+bls:X469753	Chilli con carne (with beef mince)	чили кон карне с говяжьим фаршем
+bls:X470043	Vanilla-milk soup with egg, thickened with starch	ванильно-молочный суп с яйцом загущённый крахмалом
+bls:X471153	Cold vanilla-milk soup with egg, thickened with starch	холодный ванильно-молочный суп с яйцом загущённый крахмалом
+bls:X471353	Cold chocolate-milk soup thickened with starch	холодный шоколадно-молочный суп загущённый крахмалом
+bls:X471423	Chocolate-milk soup thickened with semolina	шоколадно-молочный суп загущённый манкой
+bls:X471443	Chocolate-milk soup thickened with starch	шоколадно-молочный суп загущённый крахмалом
+bls:X472143	Vanilla-milk soup thickened with semolina	ванильно-молочный суп загущённый манкой
+bls:X475243	Milk soup sweetened, thickened with oat flakes	молочный суп сладкий загущённый овсяными хлопьями
+bls:X475453	Cold vanilla-milk soup with egg and fruit garnish, thickened with starch	холодный ванильно-молочный суп с яйцом и фруктами загущённый крахмалом
+bls:X475713	Porridge, roasted, with vegetable stock and egg	овсяный суп обжаренный на овощном бульоне с яйцом
+bls:X476140	Buttermilk soup, sweetened	пахтовый суп сладкий
+bls:X476512	Tsatsiki	дзадзики
+bls:X476540	Cold cucumber-buttermilk-yogurt soup	холодный огуречно-пахтово-йогуртовый суп
+bls:X476650	Cold buttermilk soup, sweetened	холодный пахтовый суп сладкий
+bls:X490153	Cold rhubarb soup thickened with starch	холодный ревеневый суп загущённый крахмалом
+bls:X490263	Pumpkin soup spicy, with cream	тыквенный суп острый со сливками
+bls:X491163	Cold apple soup	холодный яблочный суп
+bls:X491443	Cold apple soup with currants	холодный яблочный суп с коринкой
+bls:X492143	Cold cherry soup thickened with starch	холодный вишнёвый суп загущённый крахмалом
+bls:X492343	Plum puree soup, strained	сливовый суп-пюре протёртый
+bls:X492563	Cold apricot soup thickened with starch	холодный абрикосовый суп загущённый крахмалом
+bls:X493153	Elderberry soup with apple and small semolina dumplings, thickened	бузинный суп с яблоком и манными клёцками загущённый
+bls:X493243	Elderberry soup with apple, thickened with starch	бузинный суп с яблоком загущённый крахмалом
+bls:X493343	Blueberry soup thickened with starch	черничный суп загущённый крахмалом
+bls:X493453	Cold gooseberry soup thickened with starch	холодный крыжовенный суп загущённый крахмалом
+bls:X493563	Cold red currant soup thickened with starch	холодный суп из красной смородины загущённый крахмалом
+bls:X494143	Rose hip soup with apple, thickened with starch	шиповниковый суп с яблоком загущённый крахмалом
+bls:X495363	Cold melon soup	холодный дынный суп
+bls:X496363	Cold orange soup	холодный апельсиновый суп
+bls:X497143	Wine soup sweetened, thickened with starch	винный суп сладкий загущённый крахмалом
+bls:X498113	Beer soup Berlin style	пивной суп по-берлински
+bls:X498163	Beer soup sweetened, thickened with starch	пивной суп сладкий загущённый крахмалом
+bls:X4A1000	Fish stock	бульон рыбный
+bls:X4A1010	Meat bouillon with egg	мясной бульон с яйцом
 bls:X4A1020	Chicken soup with chicken and vegetables	куриный суп с овощами
+bls:X4A1030	Vegetable soup with chicken and rice	овощной суп с курицей и рисом
+bls:X4A2000	Wine soup "Terlan"	винный суп «Терлан»
+bls:X4A3000	Velvety vegetable soup	овощной бархатный суп
+bls:X4A3010	Pumpkin soup with coconut milk	тыквенный суп с кокосовым молоком
+bls:X4A4000	Cream of broccoli soup with yogurt and almond flakes	крем-суп из брокколи с йогуртом и миндальными лепестками
+bls:X4A4010	Cream of sweet pepper soup	крем-суп из болгарского перца
+bls:X4A5000	Potato-vegetable soup with vegetable stock	картофельно-овощной суп на овощном бульоне
+bls:X4A5010	Potato stew with cured, smoked pork neck	рагу картофельное с копчёной свиной шеей
+bls:X4A6000	Fennel soup with orange fillets	фенхелевый суп с дольками апельсина
+bls:X4A6010	Green pea soup "St. Germain"	суп из зелёного гороха «Сен-Жермен»
+bls:X4A6020	Tomato soup of tomato paste and vegetable stock	томатный суп из томатной пасты на овощном бульоне
+bls:X4A6030	Tomato soup clear, with vegetable stock	томатный суп прозрачный на овощном бульоне
+bls:X4A7000	Vegetable stew "Pichelsteiner"	рагу овощное «пихельштайнер»
+bls:X4A7010	Vegetable soup with potatoes	суп овощной с картофелем
+bls:X4A8000	Chilli sin carne	чили без мяса
+bls:X4A8010	Pea stew with vegetable stock, mirepoix and potatoes	рагу из гороха на овощном бульоне с суповыми овощами и картофелем
+bls:X4A8020	Pea soup with vegetable stock and mirepoix	гороховый суп на овощном бульоне с суповыми овощами
+bls:X4A8030	Chickpea stew	рагу из нута
+bls:X4A8040	Lentil stew with vegetables and fresh egg pasta spaetzle	рагу из чечевицы с овощами и свежими яичными шпецле
+bls:X4A8050	Lentil soup with vegetables and Vienna sausages	суп из чечевицы с овощами и венскими сосисками
+bls:X4A8060	Miso soup	мисо-суп
+bls:X4A8070	Red lentil soup with coriander	суп из красной чечевицы с кориандром
+bls:X4A8080	Haricot bean soup	суп из белой фасоли
+bls:X4A8090	Haricot bean stew with sweet pepper, tomatoes and ajvar	рагу из белой фасоли с болгарским перцем, помидорами и айваром
+bls:X4A8100	Haricot bean stew with bacon	рагу из белой фасоли с беконом
+bls:X4A8110	Haricot bean stew	рагу из белой фасоли
+bls:X4A9000	Curly kale-stew with potatoes	рагу из кудрявой капусты с картофелем
+bls:X4A9010	White cabbage stew	рагу из белокочанной капусты
+bls:X4A9020	Savoy cabbage stew with vegetable stock, potatoes and carrots	рагу из савойской капусты на овощном бульоне с картофелем и морковью
+bls:X4B1000	Cold peach soup thickened with starch	холодный персиковый суп загущённый крахмалом
+bls:X4B1010	Cold rhubarb soup thickened with semolina	холодный ревеневый суп загущённый манкой
+bls:X4B2000	Oat flakes soup sweetened, with milk 3.5 % fat	овсяный суп сладкий на молоке 3,5 %
+bls:X4B3000	Liver dumpling as soup garnish	печёночный кнедль для супа
+bls:X4B3010	Pork mince-filled pasta squares as soup garnish	маульташен для супа
+bls:X4B3020	Ham dumplings as soup garnish	ветчинные нокерлы для супа
+bls:X503053	Courgette patties with cheese fried	котлетки из цукини с сыром жареные
+bls:X503412	Quiche (shortcrust pastry) with broccoli and cauliflower	киш с брокколи и цветной капустой
+bls:X505012	Lentils boiled, in white basic sauce	чечевица отварная в белом базовом соусе
+bls:X510043	Mushrooms stewed, with sour cream	грибы тушёные со сметаной
+bls:X511043	Button mushrooms stewed, in white basic sauce with cream	шампиньоны тушёные в белом базовом соусе со сливками
+bls:X511153	Button mushrooms stewed, in herb sauce from white basic sauce	шампиньоны тушёные в травяном соусе на белом базовом соусе
+bls:X511343	Button mushroom ragout, gratinated	рагу из шампиньонов запечённое с сыром
+bls:X511463	Button mushrooms filled, gratinated	шампиньоны фаршированные запечённые с сыром
+bls:X511812	Button mushrooms in frying batter (with beer) deep-fried	шампиньоны в пивном кляре жареные во фритюре
+bls:X512053	Chanterelles stewed	лисички тушёные
+bls:X512163	Chanterelles stewed, in white basic sauce with cream	лисички тушёные в белом базовом соусе со сливками
+bls:X513063	Porcini mushrooms stewed	белые грибы тушёные
+bls:X513163	Porcini mushrooms stewed, in white basic sauce with cream	белые грибы тушёные в белом базовом соусе со сливками
+bls:X513263	Porcini mushrooms fried with tomatoes	белые грибы жареные с помидорами
+bls:X518033	Mixed vegetables stewed, in white basic sauce with cream	ассорти овощное тушёное в белом базовом соусе со сливками
+bls:X518053	Mixed vegetables stewed	ассорти овощное тушёное
+bls:X518133	Mixed vegetables "Leipziger Allerlei" stewed	ассорти овощное «Лейпциг» тушёное
+bls:X518233	Vegetable mix fried	овощной микс жареный
+bls:X518363	Carrots and peas stewed, in white basic sauce with cream	морковь с горошком тушёная в белом базовом соусе со сливками
+bls:X518412	Carrots and peas stewed (with fat and salt)	морковь с горошком тушёная с маслом и солью
+bls:X518543	Ratatouille	рататуй овощной
+bls:X518743	Vegetables with cheese sauce gratinated	овощи с сырным соусом запечённые
+bls:X521043	Spinach stewed, with cream	шпинат тушёный со сливками
+bls:X521053	Spinach stewed, in white basic sauce	шпинат тушёный в белом базовом соусе
+bls:X521413	Spinach casserole with cheese gratinated	запеканка шпинатная с сыром запечённая
+bls:X522012	Leaf spinach stewed (with fat and salt)	шпинат листовой тушёный с маслом и солью
+bls:X523053	Chard stewed, in white basic sauce	мангольд тушёный в белом базовом соусе
+bls:X523312	Chard tart (shortcrust pastry)	тарталетка из мангольда
+bls:X523512	Chard stewed (with fat and salt)	мангольд тушёный с маслом и солью
+bls:X525043	Parsley root stewed, in white basic sauce with cream	корень петрушки тушёный в белом базовом соусе со сливками
+bls:X526062	Chicory stewed, with butter	цикорий салатный тушёный со сливочным маслом
+bls:X526162	Chicory stewed (with fat and salt)	цикорий салатный тушёный с маслом и солью
+bls:X530143	Bavarian white cabbage stewed	капуста по-баварски тушёная
+bls:X530163	Bavarian white cabbage stewed, with bacon	капуста по-баварски тушёная с беконом
+bls:X530343	Sauerkraut with apple stewed	квашеная капуста с яблоком тушёная
+bls:X530353	Sauerkraut stewed	квашеная капуста тушёная
+bls:X531042	Cauliflower stewed, with breadcrumbs	цветная капуста тушёная с панировочными сухарями
+bls:X531053	Cauliflower boiled, with white basic sauce	цветная капуста варёная с белым базовым соусом
+bls:X531263	Cauliflower stewed, with Bechamel sauce	цветная капуста тушёная с соусом бешамель
+bls:X531413	Cauliflower gratinated	цветная капуста запечённая с сыром
+bls:X531433	Cauliflower casserole	запеканка из цветной капусты
+bls:X531543	Cauliflower with cheese sauce from Bechamel sauce gratinated	цветная капуста с сырным соусом на бешамеле запечённая
+bls:X531612	Cauliflower stewed (with fat and salt)	цветная капуста тушёная с маслом и солью
+bls:X531713	Cauliflower with minced meat filling and cheese gratinated	цветная капуста с фаршем и сыром запечённая
+bls:X531812	Cauliflower in frying batter (with beer) deep-fried	цветная капуста в пивном кляре жареная во фритюре
+bls:X532043	Broccoli stewed, with roasted almond flakes	брокколи тушёная с обжаренными миндальными лепестками
+bls:X532142	Broccoli stewed, with roasted breadcrumbs	брокколи тушёная с обжаренными сухарями
+bls:X532263	Broccoli stewed, with Bechamel sauce	брокколи тушёная с соусом бешамель
+bls:X532363	Broccoli casserole	запеканка из брокколи
+bls:X532512	Broccoli stewed (with fat and salt)	брокколи тушёная с маслом и солью
+bls:X532812	Broccoli in frying batter (with beer) deep-fried	брокколи в пивном кляре жареная во фритюре
+bls:X533042	Chinese white cabbage stewed, with grated cheese	пекинская капуста тушёная с тёртым сыром
+bls:X534133	Curly kale stewed, with Westphalian mettwurst sausage	кудрявая капуста тушёная с вестфальским меттвурстом
+bls:X534212	Curly kale stewed, with bacon	кудрявая капуста тушёная с беконом
+bls:X535043	Kohlrabi stewed (with fat and salt) with parsley	кольраби тушёный с петрушкой
+bls:X535053	Kohlrabi stewed, with white basic sauce	кольраби тушёный с белым базовым соусом
+bls:X535163	Kohlrabi filled with chicken breast fillet, rice and vegetables, gratinated	кольраби фаршированный куриным филе, рисом и овощами запечённый с сыром
+bls:X535312	Kohlrabi stewed (with fat and salt)	кольраби тушёный с маслом и солью
+bls:X536053	Brussels sprouts stewed (with fat and salt)	брюссельская капуста тушёная с маслом и солью
+bls:X536063	Brussels sprouts stewed, with melted butter	брюссельская капуста тушёная с растопленным сливочным маслом
+bls:X536143	Brussels sprouts stewed, with boiled ham	брюссельская капуста тушёная с варёной ветчиной
+bls:X536343	Brussels sprouts boiled, with cheese sauce from Bechamel sauce	брюссельская капуста варёная с сырным соусом на бешамеле
+bls:X536363	Brussels sprouts boiled, with Bechamel sauce with cream	брюссельская капуста варёная с бешамелем на сливках
+bls:X536463	Brussels sprouts with cheese gratinated	брюссельская капуста с сыром запечённая
+bls:X536563	Brussels sprouts stewed, with bacon and onions	брюссельская капуста тушёная с беконом и луком
+bls:X537063	Red cabbage with apple stewed	краснокочанная капуста с яблоком тушёная
+bls:X537112	Red cabbage stewed (with fat and salt)	краснокочанная капуста тушёная с маслом и солью
+bls:X537912	White cabbage stewed (with fat and salt)	белокочанная капуста тушёная с маслом и солью
+bls:X538153	White cabbage boiled, with white basic sauce	белокочанная капуста варёная с белым базовым соусом
+bls:X538212	Cabbage roulade with minced meat filling, stewed	голубец с фаршем тушёный
+bls:X538853	Pointed cabbage stewed (with fat and salt)	острокочанная капуста тушёная с маслом и солью
+bls:X538943	White cabbage with white wine and apple stewed	белокочанная капуста винная с яблоком тушёная
+bls:X539043	Savoy cabbage stewed, with cream	савойская капуста тушёная со сливками
+bls:X539053	Savoy cabbage boiled, with white basic sauce	савойская капуста варёная с белым базовым соусом
+bls:X539063	Savoy cabbage stewed (with fat and salt)	савойская капуста тушёная с маслом и солью
+bls:X541263	Artichoke quarters fried with porcini mushrooms and bacon	четвертинки артишоков жареные с белыми грибами и беконом
+bls:X541463	Artichoke bottoms with meat-filling	донышки артишоков с мясной начинкой
+bls:X541563	Puree from artichoke bottoms	пюре из артишоков
+bls:X543063	Fennel stewed	фенхель тушёный на гарнир
+bls:X543163	Fennel breaded, fried	фенхель в панировке жареный
+bls:X545043	Asparagus boiled, with Hollandaise sauce	спаржа варёная с соусом голландез
+bls:X545053	Asparagus boiled, with white basic sauce	спаржа варёная с белым базовым соусом
+bls:X545063	Asparagus boiled (without sauce)	спаржа варёная без соуса
+bls:X545563	Asparagus casserole	запеканка из спаржи
+bls:X545612	Asparagus boiled (with fat and salt)	спаржа варёная с маслом и солью
+bls:X547053	Leek stewed, with Bechamel sauce	лук-порей тушёный с соусом бешамель
+bls:X547063	Leek stewed (with fat and salt)	лук-порей тушёный с маслом и солью
+bls:X548163	Onions fried	лук обжаренный
+bls:X548243	Onions stewed, with sour cream	лук тушёный со сметаной
+bls:X548343	Onions stewed, with bacon	лук тушёный с беконом
 bls:X548443	Onions gratinated	лук, запечённый с сыром
+bls:X548812	Onion rings in frying batter (with beer) deep-fried	луковые кольца в пивном кляре жареные во фритюре
+bls:X548912	Onions stewed (with fat and salt)	лук тушёный с маслом и солью
 bls:X566412	Celeriac boiled, with cream	сельдерей корневой варёный со сливками
 bls:X570143	Green peas stewed	зелёный горошек тушёный
 bls:X5A1010	Vegetable wafers savoury	вафли овощные солёные
