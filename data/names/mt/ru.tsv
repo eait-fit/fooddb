@@ -25700,14 +25700,664 @@ frida:511	Milk, dry, whole, powder	молоко сухое цельное
 frida:698	Liver, calf, raw	печень телячья сырая
 frida:704	Coconut meat, desiccated	кокосовая стружка сушёная
 frida:754	Chicken, breast, boiled, sliced	куриная грудка варёная нарезанная
+matvaretabellen:01.001	Milk, whole, 3,5 % fat, Tine	молоко цельное 3,5 % Tine
+matvaretabellen:01.002	Milk, semi-skimmed, 1,0 % fat, Tine	молоко маложирное 1,0 % Tine
+matvaretabellen:01.003	Milk, skimmed, Tine	молоко обезжиренное Tine
+matvaretabellen:01.008	Milk beverage, chocolate flavour	шоколадное молоко
+matvaretabellen:01.011	Yoghurt, whole milk, plain	йогурт натуральный из цельного молока
+matvaretabellen:01.013	Milk, goat, UHT-treated	молоко козье ультрапастеризованное
+matvaretabellen:01.015	Cream, whipping, 37 % fat	сливки для взбивания 37 %
+matvaretabellen:01.018	Ice cream, dairy, vanilla	мороженое пломбир ванильное
+matvaretabellen:01.020	Pudding, chocolate, industrially made	пудинг шоколадный покупной
+matvaretabellen:01.023	Vanilla sauce, industrially made	ванильный соус покупной
+matvaretabellen:01.025	Cheese, ripened, Camembert	сыр камамбер
+matvaretabellen:01.027	Cheese, hard, Cheddar	сыр чеддер
+matvaretabellen:01.028	Cottage cheese	творог зернёный
+matvaretabellen:01.030	Cheese, hard, Edam	сыр эдам
+matvaretabellen:01.032	Cheese, skimmed milk, matured, sharp, Gammelost	сыр гамельост
+matvaretabellen:01.035	Cheese, hard, Jarlsberg	сыр ярлсберг
+matvaretabellen:01.036	Quark, 1 % fat	кварк 1 %
+matvaretabellen:01.037	Cheese, blue mold, Normanna	сыр с голубой плесенью Normanna
+matvaretabellen:01.038	Cheese, semi-hard, Gräddost	сыр греддост
+matvaretabellen:01.039	Cheese, hard, Norvegia	сыр Norvegia
+matvaretabellen:01.040	Cheese, hard, low-fat, Norvegia	сыр Norvegia лёгкий
+matvaretabellen:01.042	Cheese, blue mold, Norzola	сыр с голубой плесенью Norzola
+matvaretabellen:01.043	Cheese, hard, caraway spiced, Nøkkelost	сыр с тмином Nøkkelost
+matvaretabellen:01.046	Cheese, semi-hard, Port Salut	сыр порт-салют
+matvaretabellen:01.047	Cheese, fermented skimmed milk, granular, caraway spiced, Pultost, Løiten	сыр пультост с тмином Løiten
+matvaretabellen:01.048	Cheese, semi-hard, Ridderost	сыр риддерост
+matvaretabellen:01.050	Cheese, hard, Sveitser	сыр свейцер
+matvaretabellen:01.052	Cheese, whey, goat milk	брюност козий
+matvaretabellen:01.053	Cheese, whey, cow milk	брюност из коровьих сливок
+matvaretabellen:01.054	Cheese, whey, cow milk, low-fat	брюност из коровьих сливок лёгкий
+matvaretabellen:01.055	Cheese, whey, cow and goat milk	брюност гудбрандсдал
+matvaretabellen:01.058	Curd, milk and whey, sweetened	гомме сладкий
+matvaretabellen:01.059	Cheese, whey spread	сырная паста прим
+matvaretabellen:01.060	Cheese, whey spread, lean	сырная паста прим лёгкая
+matvaretabellen:01.062	Cheese, semi-hard, Crème Chérie	сыр Crème Chérie
+matvaretabellen:01.063	Cheese spread, bacon flavour	плавленый сыр со вкусом бекона
+matvaretabellen:01.064	Cheese spread, 7 % fat	плавленый сыр нежирный 7 %
+matvaretabellen:01.066	Cheese, Mozarella, semi-hard, Norwegian	моцарелла норвежская
+matvaretabellen:01.071	Cheese, hard, low-fat, Jarlsberg	сыр ярлсберг лёгкий
+matvaretabellen:01.072	Cheese, whey, cow and goat milk, low-fat	брюност гудбрандсдал лёгкий
+matvaretabellen:01.078	Pudding, caramel, industrially made	пудинг карамельный покупной
+matvaretabellen:01.079	Milkshake, chocolate flavour	молочный коктейль шоколадный
+matvaretabellen:01.083	Milk, cultured, whole, Kulturmelk	простокваша цельная
+matvaretabellen:01.084	Milk, cultured, whole, Kefir, Tine	кефир Tine
+matvaretabellen:01.085	Milk, cultured, skimmed, Skummet kulturmelk	простокваша обезжиренная
+matvaretabellen:01.086	Cream, sour, 35 % fat	сметана 35 %
+matvaretabellen:01.087	Cream, sour, low-fat, 18 % fat	сметана 18 %
+matvaretabellen:01.088	Cream, sour, extra low-fat, 10 % fat	сметана 10 %
+matvaretabellen:01.089	Cream, sour, 35 % fat, Crème Fraîche	крем-фреш 35 %
+matvaretabellen:01.096	Yoghurt, with strawberry, Tine	йогурт клубничный Tine
+matvaretabellen:01.108	Cream, coffee, 10 % fat	сливки для кофе 10 %
+matvaretabellen:01.109	Milk, for coffee, 3,5 % fat	молоко для кофе 3,5 %
+matvaretabellen:01.111	Custard, vanilla flavour, industrially made	ванильный заварной крем покупной
+matvaretabellen:01.112	Custard, rum flavour, industrially made	заварной крем со вкусом рома покупной
+matvaretabellen:01.117	Cream cheese, goat milk, Snøfrisk	сливочный сыр козий Snøfrisk
+matvaretabellen:01.118	Milk, semi-skimmed, 1,0 % fat, lactose reduced	молоко маложирное 1,0 % с пониженной лактозой
+matvaretabellen:01.119	Milk, semi-skimmed, 1,2 % fat, UHT-treated	молоко маложирное 1,2 % ультрапастеризованное
+matvaretabellen:01.127	Milk beverage, with chocolate flavour, Litago	шоколадное молоко Litago
+matvaretabellen:01.131	Pudding, milk, almond flavour, industrially made	пудинг миндальный покупной
+matvaretabellen:01.136	Cheese, ripened, Brie	сыр бри
+matvaretabellen:01.138	Cheese, semi-hard, low-fat, Mozzarella, Norwegian	моцарелла норвежская лёгкая
+matvaretabellen:01.142	Cheese, hard, caraway spiced, low-fat, Nøkkelost	сыр с тмином Nøkkelost лёгкий
+matvaretabellen:01.150	Cream cheese, plain	сыр сливочный
+matvaretabellen:01.161	Cheese, processed, semi-hard, tomato flavour, Taffelost	плавленый сыр томатный Taffelost
+matvaretabellen:01.170	Milk, cultured, Biola	простокваша Biola
+matvaretabellen:01.171	Milk, cultured, skimmed, blueberry, Biola	простокваша обезжиренная с черникой Biola
+matvaretabellen:01.175	Cream, household, 18 % fat	сливки кулинарные 18 %
+matvaretabellen:01.176	Coffee whitener, powder, Coffeemate	сливки для кофе сухие Coffeemate
+matvaretabellen:01.177	Coffee whitener, vegetable fat	сливки для кофе растительные
+matvaretabellen:01.179	Cream substitute, vegetable fat, whipped cream, canned	взбитые сливки растительные в баллончике
+matvaretabellen:01.180	Dressing, sour cream with herbs	заправка сметанная с травами
+matvaretabellen:01.184	Rice cream, with strawberries, Rislunsj	рисовый крем с клубникой
+matvaretabellen:01.185	Cheese, white, unspecified	сыр жёлтый
+matvaretabellen:01.186	Cheese, whey, unspecified	брюност
+matvaretabellen:01.188	Cheese, goat milk, Feta	фета козья
+matvaretabellen:01.189	Cream substitute, vegetable fat, whipping	сливки растительные для взбивания
+matvaretabellen:01.192	Milk, semi-skimmed, 0,5 % fat, vitamin D, Tine	молоко маложирное 0,5 % с витамином D Tine
+matvaretabellen:01.195	Porridge, prepared with sour cream, Rømmegrøt	рёммегрёт
+matvaretabellen:01.196	Cocoa, prepared with low-fat milk	какао на маложирном молоке
+matvaretabellen:01.197	Cocoa, prepared from instant powder and low-fat milk	шоколадное молоко из порошка на маложирном молоке
+matvaretabellen:01.200	Cheese, hard, Parmesan, Parmigiano Reggiano	сыр пармезан
+matvaretabellen:01.202	Cheese spread, 3 % fat	плавленый сыр 3 %
+matvaretabellen:01.204	Cheese spread, 10 % fat	плавленый сыр 10 %
+matvaretabellen:01.212	Cream cheese, herbs	сыр сливочный с травами
+matvaretabellen:01.213	Milk, cultured, skimmed, strawberry, Biola	простокваша обезжиренная с клубникой Biola
+matvaretabellen:01.214	Milk, cultured, skimmed, raspberry, Biola	простокваша обезжиренная с малиной Biola
+matvaretabellen:01.215	Milk, semi-skimmed, 1,0 % fat, lactose free	молоко маложирное 1,0 % безлактозное
+matvaretabellen:01.219	Cheese, grated	сыр тёртый для пиццы
+matvaretabellen:01.220	Cheese, whey spread, with iron	сырная паста прим с железом
+matvaretabellen:01.222	Yoghurt, with muesli and berries	йогурт с мюсли и ягодами Go Morgen
+matvaretabellen:01.225	Cream, whipped, canned	взбитые сливки в баллончике
+matvaretabellen:01.226	Quark, 7 % fat	кварк 7 %
+matvaretabellen:01.227	Milk, semi-skimmed, chocolate flavour, vitamin D	молоко маложирное шоколадное с витамином D
+matvaretabellen:01.228	Milk, semi-skimmed, 1,0 % fat, Q-meieriene	молоко маложирное 1,0 % Q-meieriene
+matvaretabellen:01.229	Milk, semi-skimmed, 1 % fat, unspecified	молоко маложирное 1 %
+matvaretabellen:01.230	Milk, semi-skimmed, 0,5 % fat, vitamin D, Q-meieriene	молоко маложирное 0,5 % с витамином D Q-meieriene
+matvaretabellen:01.231	Milk, semi-skimmed, 0,5 % fat, unspecified	молоко маложирное 0,5 %
+matvaretabellen:01.233	Cultured milk, with flavour, Skyr	скир ароматизированный с подсластителем
+matvaretabellen:01.235	Milk, whole, 4 % fat, Q-meieriene	молоко цельное 4 % Q-meieriene
+matvaretabellen:01.236	Milk, whole, unspecified	молоко цельное
+matvaretabellen:01.237	Milk, cultured, semi-skimmed, 0,1 % fat, blueberry and raspberry, BioQ	простокваша 0,1 % с черникой и малиной BioQ
+matvaretabellen:01.240	Ice cream, dairy, with wafer and chocolate, cone, krone-is	рожок пломбир с шоколадом
+matvaretabellen:01.241	Ice cream, dairy, with wafer and strawberry, cone, krone-is	рожок пломбир с клубникой
+matvaretabellen:01.243	Ice cream, dairy, vanilla, with dark chocolate coating	эскимо ванильное в тёмном шоколаде
+matvaretabellen:01.244	Ice cream, dairy, caramel filling, with wafer and chocolate coating	рожок пломбир с карамелью в шоколадной глазури
+matvaretabellen:01.245	Cheese, hard, matured, Norvegia	сыр Norvegia выдержанный
+matvaretabellen:01.246	Cheese, hard, organic, Norvegia	сыр Norvegia органический
+matvaretabellen:01.247	Cheese, hard, rich, Norvegia	сыр Norvegia насыщенный
+matvaretabellen:01.248	Goat cheese, hard, white, Balsfjord	сыр козий белый Balsfjord
+matvaretabellen:01.249	Goat cheese, hard, white, Kvitlin	сыр козий белый Kvitlin
+matvaretabellen:01.250	Cheese, fermented skimmed milk, granular, caraway spiced, Pultost, Hedemark	сыр пультост с тмином Hedemark
+matvaretabellen:01.251	Goat cheese, chevre, Naturell	сыр козий шевр
+matvaretabellen:01.252	Cheese, blue mold, Selbu Blå	сыр с голубой плесенью Selbu Blå
+matvaretabellen:01.253	Cream cheese, spices	сыр сливочный со специями
+matvaretabellen:01.254	Cream cheese, pepper	сыр сливочный с перцем
+matvaretabellen:01.257	Cream cheese, goat milk, Snøfrisk, dill	сыр сливочный козий с укропом Snøfrisk
+matvaretabellen:01.258	Cream cheese, goat milk, Snøfrisk, red onion and thyme	сыр сливочный козий с красным луком и тимьяном Snøfrisk
+matvaretabellen:01.260	Cream cheese, goat milk, Snøfrisk, chantarelle	сыр сливочный козий с лисичками Snøfrisk
+matvaretabellen:01.261	Cheese, blue mold, Gorgonzola	сыр горгонзола
+matvaretabellen:01.262	Cheese, gruyere	сыр грюйер
+matvaretabellen:01.263	Cheese, Mascarpone	сыр маскарпоне
+matvaretabellen:01.264	Cheese, blue mold, Roquefort	сыр рокфор
+matvaretabellen:01.265	Cheese, Stilton, blue	сыр стилтон
+matvaretabellen:01.266	Cheese, Ricotta	сыр рикотта
+matvaretabellen:01.267	Cheese, Raclette	сыр раклет
+matvaretabellen:01.268	Milk, semi-skimmed, 1,2 % fat, organic	молоко маложирное 1,2 % органическое
+matvaretabellen:01.269	Cream cheese, Philadelphia	сыр сливочный Philadelphia
+matvaretabellen:01.270	Cheese, Halloumi	сыр халлуми
+matvaretabellen:01.271	Cream cheese, light, Philadelphia	сыр сливочный лёгкий Philadelphia
+matvaretabellen:01.272	Milk, whole, 3,5 % fat, lactose free	молоко цельное 3,5 % безлактозное
+matvaretabellen:01.273	Cream, whipping, 37 % fat, lactose free	сливки для взбивания 37 % безлактозные
+matvaretabellen:01.274	Milk, semi-skimmed, 0,5 % fat, vitamin D, lactose free	молоко маложирное 0,5 % с витамином D безлактозное
+matvaretabellen:01.275	Yoghurt, whole milk, plain, lactose free	йогурт натуральный из цельного молока безлактозный
+matvaretabellen:01.277	Milk, semi-skimmed, cultured, lactose free, Biola	простокваша с черникой безлактозная Biola
+matvaretabellen:01.278	Milk, semi-skimmed, beetroot/apple/lime, Biola	простокваша со свёклой, яблоком и лаймом Biola
+matvaretabellen:01.279	Yoghurt, vanilla, lactose free	йогурт ванильный безлактозный
+matvaretabellen:01.280	Milk beverage, chocolate flavour, no added sugar, Litago Uten	шоколадное молоко без добавленного сахара Litago
+matvaretabellen:01.282	Cheese, Østavind	сыр Østavind
+matvaretabellen:01.283	Milk, whole, 4,1 % fat, organic	молоко цельное 4,1 % органическое
+matvaretabellen:01.285	Milk, semi-skimmed, 0,7 % fat, organic	молоко маложирное 0,7 % органическое
+matvaretabellen:01.286	Cream, sour, low-fat, 18 % fat, organic	сметана 18 % органическая
+matvaretabellen:01.287	Cheese, blue mold, organic, Selbu Blå	сыр с голубой плесенью Selbu Blå органический
+matvaretabellen:01.289	Milk, skimmed, Styrk	молоко обезжиренное Styrk
+matvaretabellen:01.290	Yoghurt, whole milk, plain, organic	йогурт натуральный из цельного молока органический
+matvaretabellen:01.291	Milk, unspecified	молоко
+matvaretabellen:01.292	Milk, semi-skimmed, unspecified	молоко маложирное
+matvaretabellen:01.293	Cream substitute, vegetable fat, soy, 17 % fat	сливки растительные соевые 17 %
+matvaretabellen:01.294	Cream substitute, vegetable fat, oat, 13 %	сливки растительные овсяные 13 %
+matvaretabellen:01.295	Cultured, thickened oat product	йогурт овсяный
+matvaretabellen:01.296	Cultured oat product, for food preparation, 15 % fat	сливки овсяные кулинарные 15 %
+matvaretabellen:01.297	Cheese, Mozzarella, in brine, imported	моцарелла в рассоле
+matvaretabellen:01.298	Yoghurt, vanilla, 0 % fat, Yoplait	йогурт ванильный 0 % Yoplait
+matvaretabellen:01.299	Yoghurt, blueberries, 0 % fat, Yoplait	йогурт черничный 0 % Yoplait
+matvaretabellen:01.300	Cheese, Manchego	сыр манчего
+matvaretabellen:01.301	Cheese, paneer	сыр панир
+matvaretabellen:01.302	Cheese, gouda	сыр гауда
+matvaretabellen:01.303	Milk, cultured, Kefir, with flavour, Q-meieriene	кефир ароматизированный Q-meieriene
+matvaretabellen:01.304	Yoghurt, strawberry, Q-meieriene	йогурт клубничный Q-meieriene
+matvaretabellen:01.305	Yoghurt, vanilla	йогурт ванильный
+matvaretabellen:01.306	Cultured milk, banana, Skyr	скир с бананом
+matvaretabellen:01.307	Cultured milk, raspberry, Skyr	скир с малиной
+matvaretabellen:01.308	Ice cream, vanilla, home-made	мороженое ванильное домашнее
+matvaretabellen:01.309	Hot chocolate, whole milk	горячий шоколад на цельном молоке
+matvaretabellen:01.310	Hot chocolate, semi-skimmed milk	горячий шоколад на маложирном молоке
+matvaretabellen:01.311	Yoghurt, with coulis and granola, from cafe/bakery	йогурт с кули и гранолой (из кафе)
+matvaretabellen:01.312	Yoghurt, with coulis, from cafe/bakery	йогурт с кули (из кафе)
+matvaretabellen:01.313	Yoghurt, with fruit puree and muesli, from cafe/bakery	йогурт с фруктовым пюре и мюсли (из кафе)
+matvaretabellen:01.315	Ice cream, dairy, vanilla, without added sugar	мороженое пломбир ванильное без добавленного сахара
+matvaretabellen:01.316	Ice cream, dairy, crushed nougat	мороженое пломбир с карамельной крошкой
+matvaretabellen:01.318	Ice cream, dairy, salty caramel, without added sugar	мороженое пломбир солёная карамель без добавленного сахара
+matvaretabellen:01.319	Ice cream, dairy, chocolate, without added sugar	мороженое пломбир шоколадное без добавленного сахара
+matvaretabellen:01.322	Ice cream, non-dairy, fruit, mango	мороженое фруктовое манго
+matvaretabellen:01.325	Ice cream, dairy, vanilla and chocolate, without added sugar	мороженое пломбир ванильно-шоколадное без добавленного сахара
+matvaretabellen:01.326	Ice cream, dairy, vanilla, with oreo cookies	мороженое пломбир ванильное с печеньем Oreo
+matvaretabellen:01.331	Ice cream, dairy, vanilla, with cookie dough	мороженое пломбир ванильное с кусочками теста
+matvaretabellen:01.332 	Ice cream, dairy, with chocolate cookie and salty caramel	мороженое пломбир с шоколадным печеньем и солёной карамелью
+matvaretabellen:01.333	Ice cream, dairy, liquorice	мороженое пломбир лакричное
+matvaretabellen:01.334	Yoghurt, plain, 2 % fat, Greek/Turkish	йогурт греческий 2 %
+matvaretabellen:01.335	Yoghurt, plain, 10 % fat, Greek/Turkish	йогурт греческий 10 %
+matvaretabellen:01.336	Cheese, hard, Grana padano	сыр грана падано
+matvaretabellen:01.337	Oat porridge, without salt, with milk	овсяная каша на молоке без соли
+matvaretabellen:01.338	Oat porridge, without salt, with water	овсяная каша на воде без соли
+matvaretabellen:01.339	Cocoa, prepared from instant powder and whole milk	шоколадное молоко из порошка на цельном молоке
+matvaretabellen:01.340	Cocoa, prepared from instant powder and milk	шоколадное молоко из порошка
+matvaretabellen:01.341	Cheese, fermented skimmed milk, granular, caraway spiced	сыр пультост
+matvaretabellen:01.342	Ice cream, dairy, vanilla, 15 % cream	мороженое пломбир ванильное 15 % сливок
+matvaretabellen:01.343	Ice cream, dairy, vanilla, > 25 % cream	мороженое пломбир ванильное более 25 % сливок
+matvaretabellen:01.344	Appenzeller, cheese	сыр аппенцеллер
+matvaretabellen:01.345	Burrata cheese	сыр буррата
+matvaretabellen:02.001	Egg, raw	яйцо сырое
+matvaretabellen:02.002	Egg white, raw	белок яичный сырой
+matvaretabellen:02.003	Egg yolk, raw	желток яичный сырой
+matvaretabellen:02.006	Omelette, fried in fat	омлет жареный на масле
+matvaretabellen:02.007	Omelette, fried without fat	омлет жареный без масла
+matvaretabellen:02.008	Egg, scrambled, fried in fat	яичница-болтунья на масле
+matvaretabellen:02.009	Egg, scrambled, fried without fat	яичница-болтунья без масла
+matvaretabellen:02.010	Egg-flip	эггедосис
+matvaretabellen:02.025	Egg, fried in fat	яичница на масле
 matvaretabellen:02.026	Egg, boiled	яйцо варёное
+matvaretabellen:02.030	Egg, organic, raw	яйцо органическое сырое
+matvaretabellen:02.037	Egg, organic, boiled	яйцо органическое варёное
+matvaretabellen:02.038	Egg, organic, fried in fat	яичница органическая на масле
+matvaretabellen:02.039	Egg white, boiled	белок яичный варёный
+matvaretabellen:02.040	Egg yolk, boiled	желток яичный варёный
+matvaretabellen:03.001	Duck, meat and skin, raw	утка с кожей сырая
+matvaretabellen:03.002	Goose, meat and skin, raw	гусь с кожей сырой
+matvaretabellen:03.003	Hen, meat and skin, raw	курица с кожей сырая
+matvaretabellen:03.004	Turkey, meat and skin, raw	индейка с кожей сырая
+matvaretabellen:03.005	Turkey, with skin, roasted	индейка с кожей запечённая
+matvaretabellen:03.006	Chicken, with skin, raw	цыплёнок с кожей сырой
+matvaretabellen:03.007	Chicken, with skin, roasted	цыплёнок с кожей запечённый
+matvaretabellen:03.008	Ptarmigan, meat, raw	куропатка белая сырая
+matvaretabellen:03.014	Lamb, leg, for roast, raw	баранья нога сырая
+matvaretabellen:03.029	Lamb, leg, cured, dried, smoked	фенолор
+matvaretabellen:03.031	Mutton, for stewing, cured, raw	баранина малосолёная сырая
+matvaretabellen:03.033	Whale, raw	китовое мясо сырое
+matvaretabellen:03.037	Veal, for roast, raw	телятина для жарки сырая
+matvaretabellen:03.039	Veal, chops, raw	отбивные телячьи сырые
+matvaretabellen:03.044	Rabbit, raw	кролик сырой
+matvaretabellen:03.051	Beef, bottom round, silverside, stewing, raw	говядина для тушения сырая
+matvaretabellen:03.054	Beef, rib-eye steak, raw	стейк рибай сырой
+matvaretabellen:03.056	Beef, inside round, topside, raw	говядина внутренний окорок сырая
+matvaretabellen:03.057	Beef, chuck roll, raw	говядина шейно-лопаточная сырая
+matvaretabellen:03.058	Beef, tenderloin, raw	вырезка говяжья сырая
+matvaretabellen:03.064	Beef, top sirloin butt, raw	корейка говяжья сырая
+matvaretabellen:03.066	Beef, striploin, raw	говядина стриплойн сырая
+matvaretabellen:03.083	Pork, neck chops, raw	отбивные свиные из шеи сырые
+matvaretabellen:03.086	Pork, tenderloin, loinback, raw	свиная вырезка сырая
+matvaretabellen:03.090	Pork, rib, side bacon, raw	свиная грудинка на кости сырая
+matvaretabellen:03.103	Smoked picnic shoulder, Bayonne	окорок байонский варёный
+matvaretabellen:03.105	Pork loin, smoked	корейка свиная копчёная
+matvaretabellen:03.106	Ham, boiled	окорок варёный
+matvaretabellen:03.109	Ham, cured	окорок солёный вестфальский
+matvaretabellen:03.111	Ham, smoke-cured	спекескинке
+matvaretabellen:03.112	Moose, roasting, raw	лосятина сырая
+matvaretabellen:03.113	Hare, raw	заяц сырой
+matvaretabellen:03.114	Fallow deer, raw	лань сырая
+matvaretabellen:03.115	Reindeer, shoulder, roasting, raw	оленина лопатка сырая
+matvaretabellen:03.117	Blood, beef, raw	кровь говяжья сырая
+matvaretabellen:03.118	Heart, raw	сердце сырое
+matvaretabellen:03.120	Liver, lamb, raw	печень баранья сырая
+matvaretabellen:03.121	Liver, reindeer, raw	печень оленья сырая
+matvaretabellen:03.122	Liver, beef, raw	печень говяжья сырая
+matvaretabellen:03.123	Liver, pork, raw	печень свиная сырая
+matvaretabellen:03.126	Beef, minced meat, 4,5 % fat, raw	фарш говяжий для котлет 4,5 % сырой
+matvaretabellen:03.127	Beef, minced meat, 14 % fat, with salt and water, raw	фарш говяжий 14 % с солью и водой сырой
+matvaretabellen:03.128	Pork and beef, minced meat, raw	фарш свино-говяжий сырой
+matvaretabellen:03.129	Meat, minced beef, salt, water or milk, spices and starch added	фарш мясной с добавками сырой
+matvaretabellen:03.132	Hamburger, raw	котлета для гамбургера сырая
+matvaretabellen:03.133	Meat rissoles, beef, industrially made	кьёттаке покупные
+matvaretabellen:03.134	Meat loaf, roasted	мясной пудинг запечённый
+matvaretabellen:03.135	Pork patties, fried	медистекаке жареные
+matvaretabellen:03.136	Beef patties, raw	карбонаде сырые
+matvaretabellen:03.137	Beef patties, industrially made	карбонаде покупные
+matvaretabellen:03.138	Beef, minced meat, fried without fat	фарш говяжий жареный без масла
 matvaretabellen:03.139	Beef, minced meat, max 6 % fat, fried without fat	фарш говяжий постный жареный без масла
+matvaretabellen:03.141	Pork, minced meat, fried without fat	фарш свиной жареный без масла
+matvaretabellen:03.144	Sausage, grill	сосиски для гриля
+matvaretabellen:03.145	Sausage, meat, industrially made	колбаса мясная покупная
+matvaretabellen:03.146	Sausage, meat, lean	колбаса мясная постная
+matvaretabellen:03.147	Sausage, knakkpølse	наккепёльсе
+matvaretabellen:03.148	Sausage, pork, smoked and unsmoked	медистерпёльсе
+matvaretabellen:03.149	Sausage, cocktail	сосиски коктейльные
+matvaretabellen:03.150	Sausage, Frankfurter/Wiener	сосиски венские
+matvaretabellen:03.152	Sausage, Swedish, Falukorv	фалукорв
+matvaretabellen:03.153	Sausage spread, pork, high fat content	флескепёльсе
+matvaretabellen:03.154	Sausage, mutton, smoked	форепёльсе
+matvaretabellen:03.155	Veal, roll	рулет телячий
+matvaretabellen:03.157	Liver paste, oven-baked	паштет печёночный запечённый
+matvaretabellen:03.159	Sausage, cured, Morr	морпёльсе
+matvaretabellen:03.161	Beef, rolled	рулет говяжий
+matvaretabellen:03.162	Sausage, reindeer	колбаса из оленины
+matvaretabellen:03.163	Sausage, salami	салями
+matvaretabellen:03.164	Sausage, bologna	сервелат
+matvaretabellen:03.166	Sausage, fermented, Stabbur	стаббурпёльсе
+matvaretabellen:03.167	Head cheese	зельц
+matvaretabellen:03.170	Black pudding, with animal blood, roasted	кровяная колбаса запечённая
+matvaretabellen:03.171	Lungs, hashed, industrially made	лунгемос покупной
+matvaretabellen:03.177	Meat rissoles, canned	тефтели консервированные
+matvaretabellen:03.181	Meat rissoles, reindeer, canned	котлеты из оленины консервированные
+matvaretabellen:03.188	Ham, boiled, canned	окорок лопаточный варёный консервированный
+matvaretabellen:03.198	Sausage, Frankfurter/Wiener, lean	сосиски венские постные
+matvaretabellen:03.199	Sausage, grill, lean	сосиски для гриля постные
+matvaretabellen:03.202	Sausage, bologna, lean	сервелат постный
+matvaretabellen:03.204	Turkey, breast, without skin, raw	филе грудки индейки без кожи сырое
+matvaretabellen:03.205	Chicken, fillet, without skin, raw	куриное филе без кожи сырое
+matvaretabellen:03.206	Hen, with skin, boiled	курица с кожей варёная
 matvaretabellen:03.208	Pork, inside round, raw	свинина внутренний окорок сырой
+matvaretabellen:03.209	Pork, tenderloin, raw	вырезка свиная сырая
+matvaretabellen:03.210	Pork, striploin, raw	свинина стриплойн сырая
+matvaretabellen:03.211	Lamb, inside round, raw	баранина внутренний окорок сырая
+matvaretabellen:03.212	Lamb striploin, raw	баранина стриплойн сырая
+matvaretabellen:03.213	Lamb, tenderloin, raw	вырезка баранья сырая
+matvaretabellen:03.214	Lamb, roll	рулет бараний
 matvaretabellen:03.215	Lamb, shoulder, for roast, raw	баранья лопатка сырая
+matvaretabellen:03.218	Lamb, for mutton and cabbage stew (Fårikål), raw	баранина для форикол сырая
+matvaretabellen:03.219	Beef, roast of nuckle, raw	говядина круглая на жаркое сырая
+matvaretabellen:03.221	Beef, clod (shoulder), for roast, without bone, raw	говядина лопаточная на жаркое без кости сырая
+matvaretabellen:03.224	Hen, fillet, raw	филе курицы без кожи сырое
+matvaretabellen:03.225	Chicken, leg (thigh and drumstick), with skin, raw	окорочок куриный с кожей сырой
+matvaretabellen:03.231	Duck, without skin, raw	утка без кожи сырая
+matvaretabellen:03.232	Duck, without skin, roasted	утка без кожи запечённая
+matvaretabellen:03.233	Duck, with skin, roasted	утка с кожей запечённая
+matvaretabellen:03.234	Goose, with skin, roasted	гусь с кожей запечённый
+matvaretabellen:03.236	Hen, fillet, boiled	филе курицы варёное
+matvaretabellen:03.237	Hen, without skin, raw	курица без кожи сырая
+matvaretabellen:03.239	Turkey, without skin, raw	индейка без кожи сырая
+matvaretabellen:03.240	Turkey, without skin, roasted	индейка без кожи запечённая
+matvaretabellen:03.241	Turkey breast, without skin, roasted	грудка индейки без кожи запечённая
+matvaretabellen:03.242	Chicken fillet, fried in fat	куриное филе жареное на масле
+matvaretabellen:03.244	Chicken, leg (thigh and drumstick), with skin, roasted	окорочок куриный с кожей запечённый
+matvaretabellen:03.245	Goose, without skin, roasted	гусь без кожи запечённый
+matvaretabellen:03.246	Chicken, without skin, roasted	цыплёнок без кожи запечённый
+matvaretabellen:03.249	Ptarmigan, meat, roasted	куропатка белая запечённая
+matvaretabellen:03.250	Moussaka, with minced meat	мусака с фаршем
+matvaretabellen:03.251	Lamb and cabbage stew, fårikål	форикол
+matvaretabellen:03.252	Wienerschnitzel, raw	шницель венский в панировке сырой
+matvaretabellen:03.254	Lasagne, with minced meat	лазанья с фаршем
+matvaretabellen:03.256	Casserole, with beef, tomato, sour cream	бефстроганов
+matvaretabellen:03.257	Lamb stew, meat and vegetables, in sauce	фрикасе из баранины
+matvaretabellen:03.259	Liver, chicken, raw	печень куриная сырая
+matvaretabellen:03.260	Reindeer, meat, smoked	оленина копчёная
+matvaretabellen:03.261	Quiche, with cheese and ham	киш с ветчиной и сыром
+matvaretabellen:03.265	Lamb, leg, roasted	нога баранья запечённая
+matvaretabellen:03.266	Lamb, chops, raw	отбивные бараньи сырые
+matvaretabellen:03.267	Lamb, cutlet, fried without fat	отбивная баранья жареная без масла
+matvaretabellen:03.268	Beef, rib-eye steak, roasted without fat	стейк рибай жареный без масла
+matvaretabellen:03.271	Beef, striploin, roasted without fat	говядина стриплойн жареная без масла
+matvaretabellen:03.272	Pork, inside round, roasted without fat	свинина внутренний окорок жареный без масла
+matvaretabellen:03.274	Pork, neck chops, roasted without fat	отбивные свиные из шеи жареные без масла
+matvaretabellen:03.280	Beef, boiled	говядина варёная
+matvaretabellen:03.281	Beef, roastbeef, lightly roasted without fat	ростбиф недожаренный
+matvaretabellen:03.288	Stew, with beef, potatoes and vegetables	лапскаус светлый с говядиной
+matvaretabellen:03.292	Chicken, without skin, raw	цыплёнок без кожи сырой
+matvaretabellen:03.302	Casserole, with chicken, tomato, onion and mushroom	рагу куриное с томатом, луком и грибами
+matvaretabellen:03.305	Goose, without skin, raw	гусь без кожи сырой
+matvaretabellen:03.307	Chicken nuggets, deep fried, fast food restaurant	наггетсы куриные фритюр (фастфуд)
+matvaretabellen:03.308	Burger, single, with bread, dressing etc, fast food restaurant	гамбургер (фастфуд)
+matvaretabellen:03.309	Cheese burger, single, with bread, cheese, dressing etc, fast food restaurant	чизбургер (фастфуд)
+matvaretabellen:03.310	Burger, double, with bread, cheese, lettuce, dressing etc, fast food restaurant	гамбургер двойной (фастфуд)
+matvaretabellen:03.311	Burger, extra large, with bread, cheese etc, fast food restaurant	гамбургер большой (фастфуд)
+matvaretabellen:03.312	Chicken burger, breaded, fried, with bread, lettuce, dressing, fast food restaurant	куриный бургер в панировке (фастфуд)
+matvaretabellen:03.313	Pasta dish, with turkey and cheese sauce, frozen, industrially made	паста с индейкой в сырном соусе покупная
+matvaretabellen:03.314	Pasta, with meat sauce, Bolognese, frozen, industrially made	паста болоньезе покупная
+matvaretabellen:03.315	Lasagne, with minced meat, frozen, industrially made	лазанья с фаршем покупная
+matvaretabellen:03.317	Hash, with potato, meat, onion, frozen, industrially made	пютт и панне покупное
+matvaretabellen:03.318	Sausage, grill, turkey and chicken	сосиски для гриля из индейки и курицы
+matvaretabellen:03.320	Chicken nuggets, deep fried, industrially made	наггетсы куриные фритюр покупные
+matvaretabellen:03.321	Schnitzel, chicken, with cheese, breaded, raw	котлеты с курицей и сыром в панировке сырые
+matvaretabellen:03.322	Ham, turkey, with spices	рулет из индейки пряный
+matvaretabellen:03.323	Ham, turkey, smoked	ветчина из индейки копчёная
+matvaretabellen:03.326	Soup, with meat, potatoes and vegetables, canned	содд консервированный
+matvaretabellen:03.330	Chicken, thigh (leg without drumstick), with skin, raw	бедро куриное с кожей сырое
+matvaretabellen:03.331	Chicken, drumstick, with skin, raw	голень куриная с кожей сырая
+matvaretabellen:03.332	Chicken, leg (thigh and drumstick), without skin, raw	окорочок куриный без кожи сырой
+matvaretabellen:03.333	Chicken, thigh (leg without drumstick), without skin, raw	бедро куриное без кожи сырое
+matvaretabellen:03.334	Chicken, drumstick, without skin, raw	голень куриная без кожи сырая
+matvaretabellen:03.345	Beef, trimmed fat, raw	жир говяжий обрезной сырой
+matvaretabellen:03.348	Pork, minced meat, 9 % fat, raw	фарш свиной 9 % сырой
+matvaretabellen:03.351	Reindeer, meat in slices, raw, frozen	рейнсдюрскав
+matvaretabellen:03.352	Reindeer, meat, raw, dried	оленина вяленая сырая
+matvaretabellen:03.353	Pork, roll, sliced	рулет из свиной грудинки ломтиками
+matvaretabellen:03.354	Roast beef, cold cuts, sliced	ростбиф ломтиками
+matvaretabellen:03.356	Sausage, chicken and turkey, lean	колбаса из курицы и индейки постная
+matvaretabellen:03.357	Sausage, grill, with cheese	сосиски для гриля с сыром
+matvaretabellen:03.358	Moose roast, roasted	нога лося запечённая
+matvaretabellen:03.361	Sausage, chicken and turkey, with cheese	колбаса из курицы и индейки с сыром
+matvaretabellen:03.362	Roe deer, meat, raw	косуля сырая
 matvaretabellen:03.363	Sausage, chorizo	чоризо
+matvaretabellen:03.364	Sausage, salsiccia	сальсичча
+matvaretabellen:03.365	Wild boar, meat, raw	кабан сырой
+matvaretabellen:03.366	Chicken, minced meat, 8 % fat, raw	фарш куриный 8 % сырой
+matvaretabellen:03.373	Chicken, with skin, raw, landkylling	цыплёнок деревенский с кожей сырой
+matvaretabellen:03.390	Chicken, skin, raw	кожа куриная сырая
+matvaretabellen:03.391	Chicken, with skin, landkylling, roasted	цыплёнок деревенский с кожей запечённый
+matvaretabellen:03.392	Chicken, leg (thigh and drumstick), without skin, roasted	окорочок куриный без кожи запечённый
+matvaretabellen:03.393	Chicken, thigh (leg without drumstick), with skin, roasted	бедро куриное с кожей запечённое
+matvaretabellen:03.394	Chicken, thigh (leg without drumstick), without skin, roasted	бедро куриное без кожи запечённое
+matvaretabellen:03.395	Chicken, drumstick, with skin, roasted	голень куриная с кожей запечённая
+matvaretabellen:03.396	Chicken, drumstick, without skin, roasted	голень куриная без кожи запечённая
 matvaretabellen:03.397	Beef, minced meat, 13 % fat, without salt and water, raw	фарш говяжий 13 % сырой
+matvaretabellen:03.418	Chicken, fillet, simmered	куриное филе варёное
+matvaretabellen:03.425	Sausage, salami, 38 % fat	салями 38 %
+matvaretabellen:03.426	Sausage, salami, 22 % fat	салями 22 %
+matvaretabellen:03.428	Sausage, salami, lean	салями постная
+matvaretabellen:03.434	Liver paste, canned	паштет печёночный консервированный
+matvaretabellen:03.436	Liver paste, chicken, oven-baked	паштет куриный запечённый
+matvaretabellen:03.437	Liver paste, chicken, canned	паштет куриный консервированный
+matvaretabellen:03.438	Liver paste, chicken	паштет куриный
+matvaretabellen:03.451	Sausage, Frankfurter/Wiener, turkey and chicken	сосиски венские из индейки и курицы
+matvaretabellen:03.457	Meat rissoles	тефтели
+matvaretabellen:03.458	Meat balls, chicken	тефтели куриные
+matvaretabellen:03.459	Meat rissoles, turkey and chicken	тефтели из индейки и курицы
+matvaretabellen:03.462	Chili con carne	чили кон карне
+matvaretabellen:03.463	Pasta bolognese	паста болоньезе
+matvaretabellen:03.464	Bidos, home-made	бидос домашний
+matvaretabellen:03.465	Shephards' pie	пастуший пирог
+matvaretabellen:03.466	Hen stew, home-made	фрикасе куриное домашнее
+matvaretabellen:03.467	Sausages, with bun	сосиски в тесте
+matvaretabellen:03.469	Liver paste, coarse, Danish type	паштет печёночный грубый датский
+matvaretabellen:03.470	Liver paste, unspecified	паштет печёночный
+matvaretabellen:03.471	Liver paste	паштет печёночный свежий
+matvaretabellen:03.475	Pepperoni	пепперони
+matvaretabellen:03.476	Beef, meat, raw	говядина сырая
+matvaretabellen:03.477	Liver paste, with bacon	паштет печёночный с беконом
+matvaretabellen:03.478	Chicken, minced meat, fried without fat	фарш куриный жареный без масла
+matvaretabellen:03.479	Lamb, minced meat, 14 % fat, raw	фарш бараний 14 % сырой
+matvaretabellen:03.480	Lamb, minced meat, fried without fat	фарш бараний жареный без масла
+matvaretabellen:03.481	Chicken fillet, fried without fat	куриное филе жареное без масла
+matvaretabellen:03.482	Lamb, shoulder, roasted	лопатка баранья запечённая
+matvaretabellen:03.483	Lamb, inside round, roasted	баранина внутренний окорок жареный без масла
+matvaretabellen:03.484	Lamb, tenderloin, roasted	вырезка баранья жареная без масла
+matvaretabellen:03.485	Lamb, sirloin, raw	корейка баранья сырая
+matvaretabellen:03.486	Lamb, sirloin, roasted without fat	корейка баранья жареная без масла
+matvaretabellen:03.487	Lamb, rib, raw	рёбра бараньи сырые
+matvaretabellen:03.488	Lamb, striploin, roasted without fat	баранина стриплойн жареная без масла
+matvaretabellen:03.490	Pork, bottom round, boiled	свинина для тушения варёная
+matvaretabellen:03.491	Svin, bottom round, raw	свинина для тушения сырая
+matvaretabellen:03.492	Pork, tenderloin, roasted without fat	вырезка свиная жареная без масла
+matvaretabellen:03.493	Pork, silverside, raw	свинина оковалок сырая
 matvaretabellen:03.494	Pork, tenderloin, loinback, boiled	свиная вырезка варёная
+matvaretabellen:03.495	Pork, tenderloin, loinback, roasted without fat	свиная вырезка жареная без масла
+matvaretabellen:03.496	Pork, striploin, roasted without fat	свинина стриплойн жареная без масла
+matvaretabellen:03.497	Kebab meat, prepared, restaurant	мясо для кебаба готовое (ресторан)
+matvaretabellen:03.498	Reindeer, roasting, raw	оленина на жаркое сырая
+matvaretabellen:03.499	Reindeer, meat, warm smoked	оленина горячего копчения
+matvaretabellen:03.500	Reindeer, meat, cold smoked	оленина холодного копчения
+matvaretabellen:03.501	Moose, minced, raw	фарш лосиный сырой
+matvaretabellen:03.502	Moose, sirloin, raw	корейка лосиная сырая
+matvaretabellen:03.503	Moose, sirloin, roasted	корейка лосиная запечённая
+matvaretabellen:03.504	Moose, chuck, raw	лосятина шейно-лопаточная сырая
+matvaretabellen:03.505	Moose, chuck, roasted	лосятина шейно-лопаточная запечённая
+matvaretabellen:03.506	Meat rissoles, Swedish	тефтели по-шведски
+matvaretabellen:03.507	Sausage, salami, Danish	салями датская
+matvaretabellen:03.508	Kebab durum	кебаб дюрюм
+matvaretabellen:03.509	Pork, bacon, side bacon, pan-fried	бекон жареный
+matvaretabellen:03.510	Pita with kebab, salad and dressing	пита с кебабом, салатом и соусом
+matvaretabellen:03.511	Butter chicken, industrially made	баттер-чикен покупной
+matvaretabellen:03.512	Serrano ham	окорок серрано
+matvaretabellen:03.513	Schwarzwald ham	окорок шварцвальдский
+matvaretabellen:03.514	Casserole, with moose meat, potatoes and vegetables	рагу лосиное
+matvaretabellen:03.515	Spring roll, with chicken and vegetables, industrially made	спринг-роллы с курицей и овощами покупные
+matvaretabellen:03.516	Spring rolls, fresh, with chicken, noodles and vegetables	спринг-роллы свежие с курицей, лапшой и овощами
+matvaretabellen:04.001	Halibut, Greenland, raw/smoked	палтус синий сырой или копчёный
+matvaretabellen:04.003	Sprat, raw	килька сырая
+matvaretabellen:04.004	Cusk, tusk, raw	бросме сырой
+matvaretabellen:04.005	Plaice, raw	камбала сырая
+matvaretabellen:04.006	Pike northern, raw	щука сырая
+matvaretabellen:04.008	Garfish, raw	сарган сырой
+matvaretabellen:04.009	Whiting, raw	мерланг сырой
+matvaretabellen:04.011	Haddock, slices, smoked, raw	пикша копчёная ломтиками
+matvaretabellen:04.014	Halibut, Atlantic, raw	палтус сырой
+matvaretabellen:04.015	Salmon, ocean, raw	лосось дикий сырой
+matvaretabellen:04.018	Salmon, smoked	лосось копчёный
+matvaretabellen:04.019	Ling, raw	мольва сырая
+matvaretabellen:04.020	Fish, alkaline cured, soaked in water, Lutefisk	лютефиск
+matvaretabellen:04.021	Pollack, raw	люр сырой
+matvaretabellen:04.022	Mackerel, February - June, raw	скумбрия постная сырая
+matvaretabellen:04.023	Mackerel, August - December, raw	скумбрия жирная сырая
+matvaretabellen:04.024	Mackerel, warm smoked	скумбрия горячего копчения
+matvaretabellen:04.029	Saithe, raw	сайда сырая
+matvaretabellen:04.030	Powan, raw	сиг сырой
+matvaretabellen:04.033	Herring, in spicy marinade	сельдь в пряном маринаде
+matvaretabellen:04.037	Catfish, raw	зубатка сырая
+matvaretabellen:04.038	Cod, wild, raw	треска дикая сырая
+matvaretabellen:04.039	Cod, slices, raw	треска ломтиками сырая
+matvaretabellen:04.041	Stockfish, dried fish	стокфиск
+matvaretabellen:04.042	Cod, lightly salted, raw	треска малосолёная сырая
+matvaretabellen:04.043	Tuna, raw	тунец сырой
+matvaretabellen:04.045	Redfish, raw	окунь морской сырой
+matvaretabellen:04.046	Redfish, cured, raw	окунь морской малосолёный сырой
+matvaretabellen:04.047	Trout, ocean, raw	форель морская сырая
+matvaretabellen:04.048	Perch, raw	окунь речной сырой
+matvaretabellen:04.049	Eel, raw	угорь сырой
+matvaretabellen:04.050	Eel, smoked	угорь копчёный
+matvaretabellen:04.051	Cod liver, raw	печень трески сырая
+matvaretabellen:04.052	Cod roe, raw	икра трески сырая
+matvaretabellen:04.053	Mussel, blue, raw	мидии сырые
+matvaretabellen:04.054	Lobster, boiled	омар варёный
+matvaretabellen:04.057	Shrimps, boiled	креветки варёные
+matvaretabellen:04.058	Oyster, common, raw	устрица сырая
+matvaretabellen:04.061	Fish cakes, industrially made	фискекаке покупные
+matvaretabellen:04.062	Fish burger, lean fish	рыбный бургер из постной рыбы
+matvaretabellen:04.063	Fish pudding	фискепудинг
+matvaretabellen:04.068	Plaice, fillet, rolled in breadcrumbs, raw	камбала филе в панировочных сухарях сырая
+matvaretabellen:04.069	Saithe, fillet, rolled in breadcrumbs, raw	сайда филе в панировочных сухарях сырая
+matvaretabellen:04.070	Cod, fillet, rolled in breadcrumbs, raw	треска филе в панировочных сухарях сырая
+matvaretabellen:04.071	Saithe, fillet, rolled in flour, with fried onion, frozen, industrially made	сайда в муке с жареным луком покупная
+matvaretabellen:04.075	Anchovies, canned	анчоусы консервированные
+matvaretabellen:04.076	Mussel, blue, in brine, drained	мидии в рассоле слитые
+matvaretabellen:04.079	Fish balls, canned, drained	фискеболлер слитые консервированные
+matvaretabellen:04.086	Anchovy fillets, canned	кусочки сельди консервированные
+matvaretabellen:04.087	Caviar spread, cod roe	паста из икры мойвы
+matvaretabellen:04.089	Caviar, capelin roe	кавиар из икры трески
+matvaretabellen:04.091	Crab, plain, canned	краб натуральный консервированный
+matvaretabellen:04.097	Mackerel fillet, in tomato sauce, 70 % mackerel, canned	скумбрия в томатном соусе 70 % консервированная
+matvaretabellen:04.098	Shrimps, in brine, drained	креветки в рассоле слитые
+matvaretabellen:04.100	Cod roe, compressed, canned	икра трески прессованная консервированная
+matvaretabellen:04.101	Roe paste, canned	паштет из икры и печени
+matvaretabellen:04.106	Tuna, in jelly, canned	тунец в желе консервированный
+matvaretabellen:04.107	Tuna, in oil, drained, canned	тунец в масле слитый консервированный
+matvaretabellen:04.108	Tuna in water, drained, canned	тунец в собственном соку слитый консервированный
+matvaretabellen:04.110	Haddock, raw	пикша сырая
+matvaretabellen:04.111	Dogfish, raw	катран сырой
+matvaretabellen:04.112	Turbot, raw	калкан сырой
+matvaretabellen:04.113	Lemon sole, raw	камбала лимонная сырая
+matvaretabellen:04.114	Scallop, raw	гребешок сырой
+matvaretabellen:04.115	Blue ling, raw	мольва синяя сырая
+matvaretabellen:04.116	Porbeagle, mackerel shark, raw	акула сельдевая сырая
+matvaretabellen:04.117	Char, raw	голец арктический сырой
+matvaretabellen:04.118	Dover sole, raw	морской язык сырой
+matvaretabellen:04.119	Skate (ray), raw	скат сырой
+matvaretabellen:04.120	Conger eel, raw	конгер сырой
+matvaretabellen:04.121	Crawfish, boiled	раки варёные
+matvaretabellen:04.123	Herring, smoked, Bøkling	бёклинг
+matvaretabellen:04.200	Plaice, filled, pre-fried, frozen	камбала фаршированная полуобжаренная замороженная
+matvaretabellen:04.203	Cod, filled, pre-fried, frozen	треска фаршированная полуобжаренная замороженная
+matvaretabellen:04.207	Shrimp, battered, pre-fried, frozen	креветки в кляре полуобжаренные замороженные
+matvaretabellen:04.208	Squid, battered, pre-fried, frozen	кальмар в кляре полуобжаренный замороженный
+matvaretabellen:04.210	Fish balls, industrially made	фискеболлер покупные
+matvaretabellen:04.211	Angler fish, raw	удильщик сырой
+matvaretabellen:04.218	Haddock, simmered	пикша варёная
+matvaretabellen:04.220	Salmon, farmed, raw	лосось фермерский сырой
+matvaretabellen:04.221	Haddock, smoked, slices, simmered	пикша копчёная ломтиками варёная
+matvaretabellen:04.222	Halibut, Atlantic, slices, simmered	палтус ломтиками варёный
+matvaretabellen:04.223	Halibut Atlantic, fillet, rolled in flour, fried in fat	палтус филе в муке жареный
+matvaretabellen:04.224	Salmon, ocean, simmered	лосось дикий варёный
+matvaretabellen:04.225	Salmon, farmed, slices, simmered	лосось фермерский ломтиками варёный
+matvaretabellen:04.226	Salmon, farmed, slices, rolled in flour, fried in fat	лосось фермерский ломтиками в муке жареный
+matvaretabellen:04.227	Mackerel, August - December, simmered	скумбрия жирная варёная
+matvaretabellen:04.228	Mackerel, August - December, fried in fat	скумбрия жирная жареная
+matvaretabellen:04.229	Mackerel, February - June, simmered	скумбрия постная варёная
+matvaretabellen:04.230	Mackerel, February - June, fried in fat	скумбрия постная жареная
+matvaretabellen:04.231	Plaice, fillet, simmered	камбала филе варёная
+matvaretabellen:04.232	Plaice, fillet, rolled in flour, fried in fat	камбала филе в муке жареная
+matvaretabellen:04.233	Plaice, fillet, rolled in breadcrumbs, fried in fat	камбала филе в панировочных сухарях жареная
+matvaretabellen:04.234	Char, fried without fat	голец арктический жареный без масла
+matvaretabellen:04.235	Char, rolled in flour, fried in fat	голец арктический в муке жареный
+matvaretabellen:04.236	Saithe, simmered	сайда варёная
+matvaretabellen:04.241	Saithe, fillet, rolled in breadcrumbs, fried in fat	сайда филе в панировочных сухарях жареная
+matvaretabellen:04.246	Catfish, fillet, simmered	зубатка филе варёная
+matvaretabellen:04.247	Catfish, fillet, rolled in flour, fried in fat	зубатка филе в муке жареная
+matvaretabellen:04.248	Cod, slices, simmered	треска ломтиками варёная
+matvaretabellen:04.249	Cod, fillet, rolled in flour, fried in fat	треска филе в муке жареная
+matvaretabellen:04.250	Angler fish, fillet, simmered	удильщик филе варёный
+matvaretabellen:04.251	Cod, fillet, rolled in breadcrumbs, fried in fat	треска филе в панировочных сухарях жареная
+matvaretabellen:04.252	Cod, cured, simmered	треска малосолёная варёная
+matvaretabellen:04.253	Cod, split, salted and dried	клипфиск
+matvaretabellen:04.255	Salmon fillet, dry salted, with sugar and spices	гравлакс
+matvaretabellen:04.256	Trout, farmed, raw	форель фермерская сырая
+matvaretabellen:04.257	Trout, farmed, simmered	форель фермерская варёная
+matvaretabellen:04.258	Snails, canned	улитки консервированные
+matvaretabellen:04.259	Trout, sea, rolled in flour, fried in fat	форель морская в муке жареная
+matvaretabellen:04.260	Trout fillet, smoked	форель филе копчёная
+matvaretabellen:04.261	Redfish, cured, slices, simmered	окунь морской малосолёный ломтиками варёный
+matvaretabellen:04.262	Squid, raw	кальмар сырой
+matvaretabellen:04.264	Scallop, fried	гребешок жареный
+matvaretabellen:04.265	Crabsticks, frozen	крабовые палочки замороженные
+matvaretabellen:04.266	Redfish, fillet, simmered	окунь морской филе варёный
+matvaretabellen:04.267	Trout, farmed, slices, rolled in flour, fried in fat	форель фермерская ломтиками в муке жареная
+matvaretabellen:04.268	Fish burger, saithe	рыбный бургер из сайды
+matvaretabellen:04.269	Fish pudding, with cream	фискепудинг со сливками
+matvaretabellen:04.270	Fish, lean, minced, milk added, raw	фарш рыбный постный с молоком сырой
+matvaretabellen:04.271	Fish burger, mackerel	рыбный бургер из скумбрии
+matvaretabellen:04.272	Fish burger, salmon	рыбный бургер из лосося
+matvaretabellen:04.273	Fish burger, herring	рыбный бургер из сельди
+matvaretabellen:04.274	Fish paté, lean fish	рыбный паштет из постной рыбы
+matvaretabellen:04.275	Fish paté, salmon	рыбный паштет из лосося
+matvaretabellen:04.277	Shrimp, battered, pre-fried, fried in fat	креветки в кляре жареные
+matvaretabellen:04.278	Plaice, filled, breaded, pre-fried, roasted without fat	камбала фаршированная в панировке запечённая без масла
+matvaretabellen:04.279	Plaice, filled, breaded, pre-fried, fried in fat	камбала фаршированная в панировке жареная
+matvaretabellen:04.280	Saithe, fillet, rolled in flour, with onion, fried in fat	сайда в муке с луком жареная
+matvaretabellen:04.281	Cod, breaded, pre-fried, filled, roasted	треска фаршированная в панировке запечённая
+matvaretabellen:04.282	Cod, filled, breaded, pre-fried, fried in fat	треска фаршированная в панировке жареная
+matvaretabellen:04.284	Cod, breaded, pre-fried, fried in fat	треска в панировке полуобжаренная жареная
+matvaretabellen:04.285	Tuna, in oil, canned	тунец в масле консервированный
+matvaretabellen:04.286	Saithe, in oil, canned, drained	сайда в масле слитая консервированная
+matvaretabellen:04.287	Herring, pickled, marinated, with mayonnaise and sour cream	сельдь маринованная в майонезе со сметаной
+matvaretabellen:04.288	Herring, pickled, marinated, with mustard sauce	сельдь маринованная в горчичном соусе
+matvaretabellen:04.290	Herring, pickled, drained	сельдь маринованная слитая
+matvaretabellen:04.291	Fish gratin, with egg, roasted	рыбный гратен с яйцом
+matvaretabellen:04.292	Fish gratin, with egg and macaroni, roasted	рыбный гратен с яйцом и макаронами
+matvaretabellen:04.293	Fish gratin, roasted, industrially made	рыбный гратен покупной
+matvaretabellen:04.295	Casserole, with saithe, onion and sweet pepper sauce	рагу из сайды с луком в соусе из паприки
+matvaretabellen:04.296	Casserole, with cod and tomato	рагу из трески с томатом
+matvaretabellen:04.297	Fish in aspic, with fish pudding and shrimps	рыба в желе с рыбным пудингом и креветками
+matvaretabellen:04.298	Fish soup, with white fish, home-made	уха из белой рыбы домашняя
+matvaretabellen:04.301	Herring salad, with potatoes	салат из сельди с картофелем
+matvaretabellen:04.302	Squid, boiled	кальмар варёный
+matvaretabellen:04.306	Cod, breaded, pre-fried, roasted	треска в панировке запечённая
+matvaretabellen:04.307	Caviar, cod roe with mayonnaise	кавиармикс
+matvaretabellen:04.309	Halibut, Atlantic, slices, smoked, raw	палтус копчёный ломтиками
+matvaretabellen:04.310	Herring, cured, soaked in water	сельдь солёная вымоченная
+matvaretabellen:04.311	Mackerel, cold smoked	скумбрия холодного копчения
+matvaretabellen:04.312	Cod roe, boiled	икра трески варёная
+matvaretabellen:04.313	Squid, battered, pre-fried, fried in fat	кальмар в кляре жареный
+matvaretabellen:04.314	Fish, dried, alkaline cured, simmered	лютефиск варёный
+matvaretabellen:04.317	Trout, sea, simmered	форель морская варёная
+matvaretabellen:04.318	Cod roe, canned, fried in fat	икра трески консервированная жареная
+matvaretabellen:04.319	Fish fingers, pre-fried, fried in fat	рыбные палочки жареные
+matvaretabellen:04.320	Saithe, fillet, rolled in flour, fried in fat	сайда филе в муке жареная
+matvaretabellen:04.321	Sprat in tomato sauce, canned	килька в томатном соусе консервированная
+matvaretabellen:04.322	Sprat in oil, drained, canned	килька в масле слитая консервированная
+matvaretabellen:04.323	Fish burger, breaded, fried, with bread, cheese, sauce, fast food restaurant	рыбный бургер в панировке (фастфуд)
+matvaretabellen:04.324	Halibut, Atlantic, farmed, raw	палтус фермерский сырой
+matvaretabellen:04.325	Halibut, Atlantic, unspecified, raw	палтус сырой неспецифицированный
+matvaretabellen:04.326	Cod, farmed, raw	треска фермерская сырая
+matvaretabellen:04.327	Cod, unspecified, raw	треска сырая
+matvaretabellen:04.330	Salmon spread, 70 % salmon, industrially made	паста из лосося 70 %
+matvaretabellen:04.331	Sashimi, salmon	сашими из лосося
+matvaretabellen:04.332	Sashimi, halibut, Atlantic	сашими из палтуса
+matvaretabellen:04.333	Sashimi, tuna	сашими из тунца
+matvaretabellen:04.334	Sushi, nigiri, salmon	нигири с лососем
+matvaretabellen:04.335	Sushi, nigiri, halibut, Atlantic	нигири с палтусом
+matvaretabellen:04.336	Sushi, nigiri, tuna	нигири с тунцом
+matvaretabellen:04.337	Sushi, maki, salmon	ролл с лососем
+matvaretabellen:04.338	Sushi, maki, halibut, Atlantic	ролл с палтусом
+matvaretabellen:04.339	Sushi, maki, tuna	ролл с тунцом
+matvaretabellen:04.340	King prawns, raw	королевские креветки сырые
+matvaretabellen:04.341	Alaska pollock, raw	минтай сырой
+matvaretabellen:04.342	Salmon, fillet, roasted	лосось филе запечённый
+matvaretabellen:04.343	Salmon, fillet, pan-fried	лосось филе жареный
+matvaretabellen:04.344	Pangasius, raw	пангасиус сырой
+matvaretabellen:04.345	Cod, fillet, roasted	треска филе запечённая
+matvaretabellen:04.346	Cod, fillet, pan-fried	треска филе жареная
+matvaretabellen:04.347	Cod, fillet, simmered	треска филе варёная
+matvaretabellen:04.348	Cod, breaded, industrially made	треска в панировке покупная
+matvaretabellen:04.351	Saithe, breaded, industrially made	сайда в панировке покупная
+matvaretabellen:04.352	Fish fingers, pre-fried, industrially made	рыбные палочки покупные
+matvaretabellen:04.360	Fish burger, industrially made	рыбный бургер покупной
+matvaretabellen:04.365	Fish gratin, industrially made	рыбный гратен готовый
+matvaretabellen:04.366	Surimi	сурими
+matvaretabellen:04.367	Periwinkle, common, Norwegian	литторина
+matvaretabellen:04.368	Sushi, maki, California	ролл «Калифорния»
+matvaretabellen:04.369	Sushi, maki, tempura	ролл темпура
+matvaretabellen:04.370	Sushi, maki, scampi	ролл с лангустином
+matvaretabellen:04.371	Sushi, nigiri, scampi	нигири с лангустином
+matvaretabellen:04.372	Sushi, nigiri, scallops	нигири с гребешком
+matvaretabellen:04.373	Caviar, polar	кавиар полярный
+matvaretabellen:04.374	Lobster tail, in brine, drained	хвост лангустина в рассоле слитый
+matvaretabellen:04.375	Salmon spread, with spring onion and lemon	паста из лосося с зелёным луком и лимоном
 matvaretabellen:04.378	Mackerel fillet, in tomato sauce, canned	скумбрия в томатном соусе консервированная
+matvaretabellen:04.379	Fish dish, with white sauce, vegetables and potatoes	плюккифиск
+matvaretabellen:04.380	Cusk, tusk, simmered	бросме варёный
+matvaretabellen:04.381	Cusk, tusk, roasted	бросме запечённый
+matvaretabellen:04.382	Herring, raw	сельдь сырая
+matvaretabellen:04.383	Herring, simmered	сельдь варёная
+matvaretabellen:04.384	Herring, rolled in flour, fried in fat	сельдь в муке жареная
+matvaretabellen:04.385	Ceviche, with salmon, mango and avocado	севиче из лосося с манго и авокадо
+matvaretabellen:04.386	Ceviche, with cod, mango and avocado	севиче из трески с манго и авокадо
+matvaretabellen:04.387	Shrimps, raw	креветки сырые
+matvaretabellen:04.388	Mussel, blue, steamed	мидии на пару
+matvaretabellen:04.389	Mussel, blue, frozen	мидии замороженные
+matvaretabellen:04.390	Snow crab, raw	краб-стригун сырой
+matvaretabellen:04.391	Snow crab, boiled	краб-стригун варёный
+matvaretabellen:04.392	Snow crab, roasted	краб-стригун запечённый
+matvaretabellen:04.393	King crab, red, boiled	краб камчатский варёный
+matvaretabellen:04.394	Lobster, raw	омар сырой
 matvaretabellen:05.026	Rye flour, wholemeal	мука ржаная обойная
 matvaretabellen:05.066	Rolls, coarse, 50 % wholemeal flour, skimmed milk	булочки цельнозерновые (50 %) на обезжиренном молоке
 matvaretabellen:05.194	Rice cake, without salt	хлебец рисовый без соли
