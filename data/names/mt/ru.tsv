@@ -1848,14 +1848,514 @@ fdc:169132	Plums, canned, purple, heavy syrup pack, solids and liquids	слив�
 fdc:169133	Plums, canned, purple, extra heavy syrup pack, solids and liquids	сливы консервированные в густом сиропе
 fdc:169134	Pomegranates, raw	гранаты свежие
 fdc:169135	Lima beans, immature seeds, cooked, boiled, drained, without salt	бобы лима варёные без соли
+fdc:169136	Lima beans, immature seeds, canned, regular pack, solids and liquids	бобы лима консервированные
+fdc:169137	Mung beans, mature seeds, sprouted, cooked, boiled, drained, without salt	ростки маш варёные без соли
+fdc:169138	Mung beans, mature seeds, sprouted, cooked, stir-fried	ростки маш жареные
+fdc:169139	Beans, navy, mature seeds, sprouted, raw	ростки белой фасоли сырые
+fdc:169140	Beans, navy, mature seeds, sprouted, cooked, boiled, drained, without salt	ростки белой фасоли варёные без соли
+fdc:169141	Beans, snap, green, cooked, boiled, drained, without salt	стручковая зелёная фасоль варёная без соли
+fdc:169142	Beans, snap, green, canned, regular pack, solids and liquids	стручковая зелёная фасоль консервированная
+fdc:169143	Beans, snap, green, canned, regular pack, drained solids	стручковая зелёная фасоль консервированная слитая
+fdc:169144	Beans, snap, canned, all styles, seasoned, solids and liquids	стручковая фасоль консервированная с приправой
+fdc:169145	Beets, raw	свёкла сырая
+fdc:169146	Beets, cooked, boiled, drained	свёкла варёная
+fdc:169147	Beets, canned, regular pack, solids and liquids	свёкла консервированная
+fdc:169148	Pork, cured, ham -- water added, whole, boneless, separable lean only, heated, roasted	ветчина с добавленной водой без кости постная запечённая
+fdc:169149	Pork, cured, ham -- water added, whole, boneless, separable lean only, unheated	ветчина с добавленной водой без кости постная
+fdc:169150	Pork, cured, ham and water product, shank, bone-in, separable lean only, heated, roasted	ветчинный продукт из голяшки на кости постный запечённый
+fdc:169151	Pork, cured, ham -- water added, slice, bone-in, separable lean only, unheated	ломтик ветчины с добавленной водой на кости постный
+fdc:169152	Pork, cured, ham and water product, rump, bone-in, separable lean only, unheated	ветчинный продукт из окорока на кости постный
+fdc:169153	Pork, cured, ham and water product, slice, bone-in, separable lean only, unheated	ломтик ветчинного продукта на кости постный
+fdc:169154	Pork, cured, ham and water product, shank, bone-in, unheated, separable lean only	ветчинный продукт из голяшки на кости постный
+fdc:169155	Pork, cured, ham, separable fat, boneless, heated	жир из ветчины без кости разогретый
+fdc:169156	Pork, cured, ham, separable fat, boneless, unheated	жир из ветчины без кости
+fdc:169157	Pork, pickled pork hocks	свиные рульки маринованные
+fdc:169158	Pork, cured, ham, slice, bone-in, separable lean only, heated, pan-broil	ломтик ветчины на кости постный жареный
+fdc:169159	Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, unheated	ветчина в собственном соку без кости с жиром
+fdc:169160	Pork, cured, ham and water product, whole, boneless, separable lean and fat, unheated	ветчинный продукт без кости с жиром
+fdc:169161	Pork, cured, ham and water product, slice, bone-in, separable lean and fat, unheated	ломтик ветчинного продукта на кости с жиром
+fdc:169162	Pork, cured, ham and water product, shank, bone-in, separable lean and fat, unheated	ветчинный продукт из голяшки на кости с жиром
+fdc:169163	Pork, cured, ham and water product, rump, bone-in, separable lean and fat, unheated	ветчинный продукт из окорока на кости с жиром
+fdc:169164	Pork, cured, ham -- water added, rump, bone-in, separable lean and fat, heated, roasted	ветчина с добавленной водой из окорока на кости с жиром запечённая
+fdc:169165	Pork, cured, ham -- water added, shank, bone-in, separable lean and fat, heated, roasted	ветчина с добавленной водой из голяшки на кости с жиром запечённая
+fdc:169166	Pork, cured, ham -- water added, slice, bone-in, separable lean and fat, heated, pan-broil	ломтик ветчины с добавленной водой на кости с жиром жареный
+fdc:169167	Pork, cured, ham -- water added, slice, boneless, separable lean and fat, heated, pan-broil	ломтик ветчины с добавленной водой без кости с жиром жареный
+fdc:169168	Pork, cured, ham and water product, slice, boneless, separable lean and fat, heated, pan-broil	ломтик ветчинного продукта без кости с жиром жареный
+fdc:169169	Pork, cured, ham and water product, whole, boneless, separable lean and fat, heated, roasted	ветчинный продукт без кости с жиром запечённый
+fdc:169170	Pork, cured, ham with natural juices, rump, bone-in, separable lean and fat, heated, roasted	ветчина в собственном соку из окорока на кости с жиром запечённая
+fdc:169171	Pork, cured, ham with natural juices, shank, bone-in, separable lean and fat, heated, roasted	ветчина в собственном соку из голяшки на кости с жиром запечённая
+fdc:169172	Pork, cured, ham with natural juices, slice, bone-in, separable lean and fat, heated, pan-broil	ломтик ветчины в собственном соку на кости с жиром жареный
+fdc:169173	Pork, cured, ham, rump, bone-in, separable lean only, heated, roasted	ветчина из окорока на кости постная запечённая
+fdc:169174	Pork, cured, ham, rump, bone-in, separable lean only, unheated	ветчина из окорока на кости постная
+fdc:169175	Pork, cured, ham, shank, bone-in, separable lean only, heated, roasted	ветчина из голяшки на кости постная запечённая
+fdc:169176	Pork, cured, ham, shank, bone-in, separable lean only, unheated	ветчина из голяшки на кости постная
+fdc:169177	Pork, cured, ham, slice, bone-in, separable lean and fat, unheated	ломтик ветчины на кости с жиром
+fdc:169178	Pork, fresh, spareribs, separable lean and fat, cooked, roasted	свиные рёбрышки с жиром запечённые
+fdc:169179	Pork, fresh, composite of separable fat, with added solution, raw	свиной жир сырой
 fdc:169180	Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted	свиная вырезка запечённая
+fdc:169181	Pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, raw	свиные отбивные без кости постные с рассолом сырые
+fdc:169182	Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, raw	свиные отбивные без кости с жиром с рассолом сырые
+fdc:169183	Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, cooked, broiled	свиные отбивные без кости с жиром с рассолом на гриле
+fdc:169184	Pork, fresh, loin, tenderloin, separable lean and fat, with added solution, raw	свиная вырезка с жиром с рассолом сырая
+fdc:169185	Pork, fresh, loin, tenderloin, separable lean and fat, with added solution, cooked, roasted	свиная вырезка с жиром с рассолом запечённая
+fdc:169186	Pork, Leg Cap Steak, boneless, separable lean and fat, raw	стейк из свиного бедра без кости с жиром сырой
+fdc:169187	Pork, Shoulder breast, boneless, separable lean and fat, raw	нижняя часть свиной лопатки с жиром сырая
+fdc:169188	Pork, Shoulder breast, boneless, separable lean and fat, cooked, broiled	нижняя часть свиной лопатки с жиром на гриле
+fdc:169189	Pork, shoulder, petite tender, boneless, separable lean and fat, cooked, broiled	малая свиная вырезка с жиром на гриле
+fdc:169190	Pork, ground, 96% lean / 4% fat, raw	свиной фарш 96% постный сырой
+fdc:169191	Pork, ground, 72% lean / 28% fat, cooked, crumbles	свиной фарш 72% постный обжаренный
+fdc:169192	Pork, ground, 84% lean / 16% fat, cooked, crumbles	свиной фарш 84% постный обжаренный
+fdc:169193	Pork, ground, 96% lean / 4% fat, cooked, crumbles	свиной фарш 96% постный обжаренный
+fdc:169194	Pork, fresh, loin, blade (chops or roasts), boneless, separable lean only, raw	свиные отбивные шейные без кости постные сырые
+fdc:169195	Pork, fresh, loin, blade (roasts), boneless, separable lean only, cooked, roasted	свиное жаркое шейное без кости постное запечённое
+fdc:169196	Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled	свиные отбивные шейные без кости постные на гриле
+fdc:169197	Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, broiled	свиные рёбра по-деревенски без кости постные на гриле
+fdc:169198	Pork, fresh, loin, blade (roasts), boneless, separable lean and fat, cooked, roasted	свиное жаркое шейное без кости с жиром запечённое
+fdc:169199	Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, broiled	свиные рёбра по-деревенски без кости с жиром на гриле
+fdc:169200	Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, broiled	свиные рёбра по-деревенски на кости с жиром на гриле
+fdc:169201	Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, roasted	свиные рёбра по-деревенски без кости с жиром запечённые
+fdc:169202	Amaranth leaves, cooked, boiled, drained, without salt	листья амаранта варёные без соли
+fdc:169203	Arrowhead, raw	стрелолист сырой
+fdc:169204	Arrowhead, cooked, boiled, drained, without salt	стрелолист варёный без соли
+fdc:169205	Artichokes, (globe or french), raw	артишоки сырые
+fdc:169206	Asparagus, canned, regular pack, solids and liquids	спаржа консервированная
+fdc:169207	Asparagus, canned, drained solids	спаржа консервированная слитая
+fdc:169208	Asparagus, frozen, unprepared	спаржа замороженная сырая
+fdc:169209	Asparagus, frozen, cooked, boiled, drained, without salt	спаржа замороженная варёная без соли
+fdc:169210	Bamboo shoots, raw	побеги бамбука сырые
+fdc:169211	Bamboo shoots, cooked, boiled, drained, without salt	побеги бамбука варёные без соли
+fdc:169212	Bamboo shoots, canned, drained solids	побеги бамбука консервированные слитые
+fdc:169213	Beans, kidney, mature seeds, sprouted, raw	ростки красной фасоли сырые
+fdc:169214	Corn, sweet, yellow, canned, whole kernel, drained solids	кукуруза сладкая консервированная зёрнами слитая
+fdc:169215	Corn, sweet, yellow, canned, cream style, regular pack	кукуруза сладкая консервированная сливочная
+fdc:169216	Corn, sweet, yellow, canned, vacuum pack, regular pack	кукуруза сладкая консервированная вакуумная
+fdc:169217	Corn, yellow, whole kernel, frozen, microwaved	кукуруза замороженная зёрнами в микроволновке
+fdc:169218	Corn with red and green peppers, canned, solids and liquids	кукуруза с перцем консервированная
+fdc:169219	Cornsalad, raw	маш-салат свежий
+fdc:169220	Cowpeas (blackeyes), immature seeds, raw	черноглазый горох молодой сырой
+fdc:169221	Cowpeas, young pods with seeds, cooked, boiled, drained, without salt	стручки черноглазого гороха варёные без соли
+fdc:169222	Yardlong bean, raw	фасоль длинностручковая сырая
+fdc:169223	Yardlong bean, cooked, boiled, drained, without salt	фасоль длинностручковая варёная без соли
+fdc:169224	Cowpeas, leafy tips, raw	листовые верхушки черноглазого гороха сырые
+fdc:169225	Cucumber, peeled, raw	огурец очищенный свежий
+fdc:169226	Dandelion greens, raw	зелень одуванчика свежая
+fdc:169227	Dandelion greens, cooked, boiled, drained, without salt	зелень одуванчика варёная без соли
+fdc:169228	Eggplant, raw	баклажан сырой
+fdc:169229	Eggplant, cooked, boiled, drained, without salt	баклажан варёный без соли
+fdc:169230	Garlic, raw	чеснок свежий
+fdc:169231	Ginger root, raw	имбирь свежий
+fdc:169232	Gourd, white-flowered (calabash), raw	калабас сырой
+fdc:169233	Gourd, white-flowered (calabash), cooked, boiled, drained, without salt	калабас варёный без соли
+fdc:169234	Hyacinth-beans, immature seeds, raw	бобы гиацинтовые молодые сырые
+fdc:169235	Hyacinth-beans, immature seeds, cooked, boiled, drained, without salt	бобы гиацинтовые молодые варёные без соли
+fdc:169236	Jerusalem-artichokes, raw	топинамбур сырой
+fdc:169237	Jew's ear, (pepeao), raw	древесное ухо сырое
+fdc:169238	Kale, cooked, boiled, drained, without salt	капуста кейл варёная без соли
+fdc:169239	Kale, frozen, unprepared	капуста кейл замороженная сырая
+fdc:169240	Kale, frozen, cooked, boiled, drained, without salt	капуста кейл замороженная варёная без соли
+fdc:169241	Kanpyo, (dried gourd strips)	канпё (сушёная тыква)
+fdc:169242	Mushrooms, shiitake, raw	шиитаке сырые
+fdc:169243	Mushrooms, portabella, grilled	шампиньоны портобелло на гриле
+fdc:169244	Lambsquarters, raw	лебеда сырая
+fdc:169245	Lambsquarters, cooked, boiled, drained, without salt	лебеда варёная без соли
+fdc:169246	Leeks, (bulb and lower leaf-portion), raw	лук-порей сырой
+fdc:169247	Lettuce, cos or romaine, raw	салат ромэн свежий
+fdc:169248	Lettuce, iceberg (includes crisphead types), raw	салат айсберг свежий
+fdc:169249	Lettuce, green leaf, raw	салат зеленолистный свежий
+fdc:169250	Lotus root, raw	корень лотоса сырой
+fdc:169251	Mushrooms, white, raw	шампиньоны сырые
+fdc:169252	Mushrooms, white, cooked, boiled, drained, without salt	шампиньоны варёные без соли
+fdc:169253	Mushrooms, white, stir-fried	шампиньоны жареные
+fdc:169254	Mushrooms, canned, drained solids	шампиньоны консервированные слитые
+fdc:169255	Mushrooms, portabella, raw	шампиньоны портобелло сырые
+fdc:169256	Mustard greens, raw	горчичная зелень свежая
+fdc:169257	Mustard greens, cooked, boiled, drained, without salt	горчичная зелень варёная без соли
+fdc:169258	Mustard greens, frozen, unprepared	горчичная зелень замороженная сырая
+fdc:169259	Mustard greens, frozen, cooked, boiled, drained, without salt	горчичная зелень замороженная варёная без соли
+fdc:169260	Okra, raw	окра сырая
+fdc:169261	Okra, cooked, boiled, drained, without salt	окра варёная без соли
+fdc:169262	Okra, frozen, unprepared	окра замороженная сырая
+fdc:169263	Okra, frozen, cooked, boiled, drained, without salt	окра замороженная варёная без соли
+fdc:169264	Potatoes, french fried, all types, salt added in processing, frozen, home-prepared, oven heated	картофель фри замороженный запечённый в духовке
+fdc:169265	Potatoes, french fried, cottage-cut, salt not added in processing, frozen, as purchased	картофель фри толстыми ломтиками замороженный сырой
+fdc:169266	Potatoes, french fried, cottage-cut, salt not added in processing, frozen, oven-heated	картофель фри толстыми ломтиками замороженный запечённый
+fdc:169267	Potatoes, frozen, french fried, par fried, extruded, unprepared	картофель фри полуфабрикат сырой
+fdc:169268	Potatoes, frozen, french fried, par fried, extruded, prepared, heated in oven, without salt	картофель фри полуфабрикат запечённый без соли
+fdc:169269	Potato salad, home-prepared	картофельный салат домашний
+fdc:169270	Pumpkin flowers, raw	цветы тыквы сырые
+fdc:169271	Pumpkin flowers, cooked, boiled, drained, without salt	цветы тыквы варёные без соли
+fdc:169272	Pumpkin leaves, raw	листья тыквы сырые
+fdc:169273	Pumpkin pie mix, canned	начинка для тыквенного пирога консервированная
+fdc:169274	Purslane, raw	портулак сырой
+fdc:169275	Purslane, cooked, boiled, drained, without salt	портулак варёный без соли
+fdc:169276	Radishes, raw	редис свежий
+fdc:169277	Salsify, (vegetable oyster), raw	козлобородник сырой
+fdc:169278	Salsify, cooked, boiled, drained, without salt	козлобородник варёный без соли
+fdc:169279	Sauerkraut, canned, solids and liquids	квашеная капуста консервированная
+fdc:169280	Seaweed, agar, raw	водоросли агаровые сырые
+fdc:169281	Sesbania flower, cooked, steamed, without salt	цветы сесбании на пару без соли
+fdc:169282	Soybeans, green, raw	соевые бобы зелёные сырые
+fdc:169283	Soybeans, green, cooked, boiled, drained, without salt	соевые бобы зелёные варёные без соли
+fdc:169284	Soybeans, mature seeds, sprouted, raw	ростки сои сырые
+fdc:169285	Spinach, canned, regular pack, solids and liquids	шпинат консервированный
+fdc:169286	Spinach, canned, regular pack, drained solids	шпинат консервированный слитый
+fdc:169287	Spinach, frozen, chopped or leaf, unprepared (Includes foods for USDA's Food Distribution Program)	шпинат замороженный сырой
+fdc:169288	Spinach, frozen, chopped or leaf, cooked, boiled, drained, without salt	шпинат замороженный варёный без соли
+fdc:169289	Squash, summer, scallop, raw	патиссон сырой
+fdc:169290	Squash, summer, scallop, cooked, boiled, drained, without salt	патиссон варёный без соли
+fdc:169291	Squash, summer, zucchini, includes skin, raw	цукини сырые
+fdc:169292	Squash, summer, zucchini, includes skin, cooked, boiled, drained, without salt	цукини варёные без соли
+fdc:169293	Squash, winter, acorn, cooked, baked, without salt	тыква желудёвая запечённая без соли
+fdc:169294	Squash, winter, acorn, cooked, boiled, mashed, without salt	тыква желудёвая варёная толчёная без соли
+fdc:169295	Squash, winter, butternut, raw	тыква мускатная сырая
+fdc:169296	Squash, winter, butternut, cooked, baked, without salt	тыква мускатная запечённая без соли
+fdc:169297	Squash, winter, hubbard, cooked, boiled, mashed, without salt	тыква хаббард варёная толчёная без соли
+fdc:169298	Squash, winter, spaghetti, raw	спагетти-тыква сырая
+fdc:169299	Squash, winter, spaghetti, cooked, boiled, drained, or baked, without salt	спагетти-тыква варёная без соли
+fdc:169300	Succotash, (corn and limas), raw	сукоташ сырой
+fdc:169301	Water convolvulus,raw	водный шпинат свежий
+fdc:169302	Water convolvulus, cooked, boiled, drained, without salt	водный шпинат варёный без соли
+fdc:169303	Sweet potato leaves, raw	листья батата сырые
+fdc:169304	Sweet potato leaves, cooked, steamed, without salt	листья батата на пару без соли
+fdc:169305	Sweet potato, canned, mashed	батат консервированный толчёный
+fdc:169306	Sweet potato, frozen, unprepared (Includes foods for USDA's Food Distribution Program)	батат замороженный сырой
+fdc:169307	Sweet potato, frozen, cooked, baked, without salt	батат замороженный запечённый без соли
+fdc:169308	Taro, raw	таро сырой
 fdc:169309	Taro shoots, cooked, without salt	побеги таро варёные
+fdc:169310	Taro, tahitian, raw	таро таитянский сырой
+fdc:169311	Artichokes, (globe or french), cooked, boiled, drained, with salt	артишоки варёные с солью
+fdc:169312	Artichokes, (globe or french), frozen, cooked, boiled, drained, with salt	артишоки замороженные варёные с солью
+fdc:169313	Asparagus, cooked, boiled, drained, with salt	спаржа варёная с солью
+fdc:169314	Asparagus, canned, no salt added, solids and liquids	спаржа консервированная без соли
+fdc:169315	Beans, kidney, mature seeds, sprouted, cooked, boiled, drained, with salt	ростки красной фасоли варёные с солью
+fdc:169316	Lima beans, immature seeds, cooked, boiled, drained, with salt	бобы лима варёные с солью
+fdc:169317	Lima beans, immature seeds, canned, no salt added, solids and liquids	бобы лима консервированные без соли
+fdc:169318	Lima beans, immature seeds, frozen, baby, cooked, boiled, drained, with salt	бобы лима замороженные варёные с солью
+fdc:169319	Beans, pinto, mature seeds, sprouted, cooked, boiled, drained, with salt	ростки фасоли пинто варёные с солью
+fdc:169320	Beans, snap, yellow, raw	стручковая жёлтая фасоль сырая
+fdc:169321	Beans, snap, green, cooked, boiled, drained, with salt	стручковая зелёная фасоль варёная с солью
+fdc:169322	Beans, snap, yellow, cooked, boiled, drained, without salt	стручковая жёлтая фасоль варёная без соли
+fdc:169323	Beans, snap, yellow, cooked, boiled, drained, with salt	стручковая жёлтая фасоль варёная с солью
+fdc:169324	Beans, snap, yellow, frozen, all styles, unprepared	стручковая жёлтая фасоль замороженная сырая
+fdc:169325	Beans, snap, green, frozen, cooked, boiled, drained, with salt	стручковая зелёная фасоль замороженная варёная с солью
+fdc:169326	Beans, snap, yellow, frozen, cooked, boiled, drained, without salt	стручковая жёлтая фасоль замороженная варёная без соли
+fdc:169327	Beans, snap, yellow, frozen, cooked, boiled, drained, with salt	стручковая жёлтая фасоль замороженная варёная с солью
+fdc:169328	Broadbeans, immature seeds, cooked, boiled, drained, with salt	бобы фава молодые варёные с солью
+fdc:169329	Broccoli, leaves, raw	листья брокколи сырые
+fdc:169330	Broccoli, flower clusters, raw	соцветия брокколи сырые
+fdc:169331	Broccoli, stalks, raw	стебли брокколи сырые
+fdc:169332	Brussels sprouts, frozen, cooked, boiled, drained, with salt	брюссельская капуста замороженная варёная с солью
+fdc:169333	Burdock root, cooked, boiled, drained, with salt	корень лопуха варёный с солью
+fdc:169334	Butterbur, cooked, boiled, drained, with salt	белокопытник варёный с солью
+fdc:169335	Cabbage, common (danish, domestic, and pointed types), freshly harvest, raw	капуста свежая сырая
+fdc:169336	Cabbage, common (danish, domestic, and pointed types), stored, raw	капуста хранёная сырая
+fdc:169337	Cabbage, chinese (pe-tsai), cooked, boiled, drained, with salt	капуста пекинская варёная с солью
+fdc:169338	Cardoon, cooked, boiled, drained, with salt	кардон варёный с солью
+fdc:169339	Carrots, cooked, boiled, drained, with salt	морковь варёная с солью
+fdc:169340	Carrots, canned, no salt added, solids and liquids	морковь консервированная без соли
+fdc:169341	Celeriac, cooked, boiled, drained, with salt	сельдерей корневой варёный с солью
+fdc:169342	Celery, cooked, boiled, drained, with salt	сельдерей варёный с солью
+fdc:169343	Chard, swiss, cooked, boiled, drained, with salt	мангольд варёный с солью
+fdc:169344	Chayote, fruit, cooked, boiled, drained, with salt	чайот варёный с солью
+fdc:169345	Corn, sweet, yellow, canned, no salt added, solids and liquids (Includes foods for USDA's Food Distribution Program)	кукуруза сладкая консервированная зёрнами без соли
+fdc:169346	Corn, sweet, yellow, canned, cream style, no salt added	кукуруза сладкая сливочная консервированная без соли
+fdc:169347	Corn, sweet, yellow, canned, vacuum pack, no salt added	кукуруза сладкая консервированная вакуумная без соли
+fdc:169348	Corn, sweet, yellow, frozen, kernels, cut off cob, boiled, drained, with salt	кукуруза сладкая замороженная зёрнами варёная с солью
+fdc:169349	Corn, sweet, yellow, frozen, kernels on cob, cooked, boiled, drained, with salt	кукуруза сладкая замороженная в початках варёная с солью
+fdc:169350	Cress, garden, cooked, boiled, drained, with salt	кресс-салат варёный с солью
+fdc:169351	Dandelion greens, cooked, boiled, drained, with salt	зелень одуванчика варёная с солью
+fdc:169352	Eggplant, cooked, boiled, drained, with salt	баклажан варёный с солью
+fdc:169353	Gourd, white-flowered (calabash), cooked, boiled, drained, with salt	калабас варёный с солью
+fdc:169354	Jute, potherb, cooked, boiled, drained, with salt	листья джута варёные с солью
+fdc:169355	Kale, cooked, boiled, drained, with salt	капуста кейл варёная с солью
+fdc:169356	Kale, frozen, cooked, boiled, drained, with salt	капуста кейл замороженная варёная с солью
+fdc:169357	Kohlrabi, cooked, boiled, drained, with salt	кольраби варёный с солью
+fdc:169358	Yambean (jicama), cooked, boiled, drained, with salt	хикама варёная с солью
+fdc:169359	Yardlong bean, cooked, boiled, drained, with salt	фасоль длинностручковая варёная с солью
+fdc:169360	Corn, sweet, white, canned, whole kernel, no salt added, solids and liquids	кукуруза сладкая белая консервированная без соли
+fdc:169361	Corn, sweet, white, canned, whole kernel, drained solids	кукуруза сладкая белая консервированная слитая
+fdc:169362	Corn, sweet, white, canned, cream style, regular pack	кукуруза сладкая белая сливочная консервированная
+fdc:169363	Corn, sweet, white, canned, cream style, no salt added	кукуруза сладкая белая сливочная консервированная без соли
+fdc:169364	Corn, sweet, white, frozen, kernels cut off cob, boiled, drained, with salt	кукуруза сладкая белая замороженная зёрнами варёная с солью
+fdc:169365	Corn, sweet, white, frozen, kernels on cob, unprepared	кукуруза сладкая белая замороженная в початках сырая
+fdc:169366	Corn, sweet, white, frozen, kernels on cob, cooked, boiled, drained, without salt	кукуруза сладкая белая замороженная в початках варёная без соли
+fdc:169367	Corn, sweet, white, frozen, kernels on cob, cooked, boiled, drained, with salt	кукуруза сладкая белая замороженная в початках варёная с солью
+fdc:169368	Sesbania flower, cooked, steamed, with salt	цветы сесбании на пару с солью
+fdc:169369	Soybeans, mature seeds, sprouted, cooked, steamed, with salt	ростки сои на пару с солью
+fdc:169370	Soybeans, mature seeds, sprouted, cooked, stir-fried, with salt	ростки сои жареные с солью
+fdc:169371	Dock, cooked, boiled, drained, with salt	щавель варёный с солью
+fdc:169372	Potatoes, mashed, dehydrated, prepared from flakes without milk, whole milk and margarine added	картофельное пюре из хлопьев с молоком и маргарином
+fdc:169373	Peppers, sweet, red, freeze-dried	перец сладкий красный сублимированный
+fdc:169374	Beans, snap, yellow, canned, regular pack, drained solids	стручковая жёлтая фасоль консервированная слитая
+fdc:169375	Beans, snap, yellow, canned, no salt added, drained solids	стручковая жёлтая фасоль консервированная без соли слитая
+fdc:169376	Mushroom, white, exposed to ultraviolet light, raw	шампиньоны под ультрафиолетом сырые
+fdc:169377	Mushrooms, portabella, exposed to ultraviolet light, grilled	шампиньоны портобелло под ультрафиолетом на гриле
+fdc:169378	Pickles, cucumber, sweet (includes bread and butter pickles)	огурцы маринованные сладкие
+fdc:169379	Pickles, cucumber, sour	огурцы кислые
+fdc:169380	Pickles, cucumber, sweet, low sodium (includes bread and butter pickles)	огурцы маринованные сладкие малосолёные
+fdc:169381	Catsup, low sodium	кетчуп малосолёный
+fdc:169382	Mushrooms, enoki, raw	грибы эноки сырые
+fdc:169383	Peppers, sweet, yellow, raw	перец сладкий жёлтый свежий
+fdc:169384	Tomatoes, sun-dried, packed in oil, drained	томаты вяленые в масле слитые
+fdc:169385	Fennel, bulb, raw	фенхель свежий
+fdc:169386	Pickle relish, hamburger	релиш для гамбургеров
+fdc:169387	Arugula, raw	рукола свежая
+fdc:169388	Nopales, cooked, without salt	нопали приготовленные без соли
+fdc:169389	Cauliflower, green, raw	цветная капуста зелёная сырая
+fdc:169390	Cauliflower, green, cooked, no salt added	цветная капуста зелёная приготовленная без соли
+fdc:169391	Cauliflower, green, cooked, with salt	цветная капуста зелёная приготовленная с солью
+fdc:169392	Broccoli, chinese, cooked	брокколи китайская приготовленная
+fdc:169393	Grape leaves, canned	виноградные листья консервированные
+fdc:169394	Pepper, banana, raw	перец банановый свежий
+fdc:169395	Peppers, serrano, raw	перец серрано свежий
+fdc:169396	Peppers, ancho, dried	перец анчо сушёный
+fdc:169397	Pickles, chowchow, with cauliflower onion mustard, sweet	овощная смесь чоу-чоу сладкая
+fdc:169398	Epazote, raw	эпазоте свежий
+fdc:169399	Fireweed, leaves, raw	листья кипрея сырые
+fdc:169400	Malabar spinach, cooked	малабарский шпинат приготовленный
+fdc:169401	Yautia (tannier), raw	яутия сырая
+fdc:169402	Mushrooms, white, microwaved	шампиньоны в микроволновке
+fdc:169403	Mushrooms, maitake, raw	грибы майтаке сырые
+fdc:169404	Broccoli, chinese, raw	брокколи китайская сырая
+fdc:169405	Fiddlehead ferns, raw	рачки папоротника сырые
+fdc:169406	Seeds, sesame butter, tahini, from unroasted kernels (non-chemically removed seed coat)	тахини из необжаренных семян
+fdc:169407	Seeds, watermelon seed kernels, dried	семена арбуза сушёные
+fdc:169408	Nuts, chestnuts, japanese, dried	каштаны японские сушёные
+fdc:169409	Nuts, coconut milk, frozen (liquid expressed from grated meat and water)	кокосовое молоко замороженное
+fdc:169410	Seeds, sesame butter, tahini, from raw and stone ground kernels	тахини из сырых семян каменный помол
+fdc:169411	Nuts, formulated, wheat-based, all flavors except macadamia, without salt	орехи пшеничные искусственные без соли
+fdc:169412	Seeds, sesame seed kernels, dried (decorticated)	семена кунжута сушёные очищенные
+fdc:169413	Nuts, chestnuts, japanese, raw	каштаны японские сырые
+fdc:169414	Seeds, flaxseed	семена льна
+fdc:169415	Seeds, pumpkin and squash seed kernels, roasted, with salt added	тыквенные семечки жареные солёные
+fdc:169416	Seeds, sesame seed kernels, toasted, with salt added (decorticated)	семена кунжута подсушенные солёные
+fdc:169417	Seeds, sunflower seed kernels from shell, dry roasted, with salt added	семечки подсолнечника жареные солёные очищенные
+fdc:169418	Seeds, sunflower seed kernels, dry roasted, with salt added	семечки подсолнечника жареные солёные
+fdc:169419	Nuts, almonds, oil roasted, with salt added	миндаль жареный в масле солёный
+fdc:169420	Nuts, almonds, oil roasted, with salt added, smoke flavor	миндаль жареный в масле солёный с дымком
+fdc:169421	Nuts, cashew nuts, dry roasted, with salt added	кешью жареные солёные
+fdc:169422	Nuts, cashew nuts, oil roasted, with salt added	кешью жареные в масле солёные
+fdc:169423	Nuts, mixed nuts, oil roasted, without peanuts, with salt added	смесь орехов жареных в масле солёных без арахиса
+fdc:169424	Nuts, pecans, dry roasted, with salt added	пекан жареный солёный
+fdc:169425	Nuts, pecans, oil roasted, with salt added	пекан жареный в масле солёный
+fdc:169426	Nuts, pistachio nuts, dry roasted, with salt added	фисташки жареные солёные
+fdc:169427	Nuts, mixed nuts, oil roasted, with peanuts, lightly salted	смесь орехов жареных в масле малосолёных с арахисом
 fdc:169428	Nuts, mixed nuts, oil roasted, without peanuts, lightly salted	смесь жареных орехов слабосолёная
+fdc:169429	Beef, grass-fed, strip steaks, lean only, raw	стрип-стейки говяжьи травяные постные сырые
+fdc:169430	Beef, carcass, separable lean and fat, choice, raw	говядина с кости с жиром сырая (чойс)
+fdc:169431	Beef, carcass, separable lean and fat, select, raw	говядина с кости с жиром сырая (селект)
+fdc:169432	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised	говяжья грудинка плоская часть с жиром тушёная (селект)
+fdc:169433	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, raw	стейк фланк с жиром сырой
+fdc:169434	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	стейк фланк с жиром тушёный
+fdc:169435	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	стейк фланк с жиром на гриле
+fdc:169436	Beef, rib, eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	рибай с жиром на гриле (чойс)
+fdc:169437	Beef, rib, eye, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, raw	рибай постный сырой (чойс)
+fdc:169438	Beef, rib, eye, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, cooked, broiled	рибай постный на гриле (чойс)
+fdc:169439	Beef, rib, shortribs, separable lean and fat, choice, raw	говяжьи рёбрышки с жиром сырые (чойс)
+fdc:169440	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	говяжья грудинка плоская часть с жиром тушёная (чойс)
+fdc:169441	Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, raw	говяжья голяшка поперечными ломтиками постная сырая
+fdc:169442	Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, cooked, simmered	говяжья голяшка поперечными ломтиками постная варёная
+fdc:169443	Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, choice, raw	стейк портерхаус постный сырой (чойс)
+fdc:169444	Beef, chuck, under blade pot roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	жаркое из нижней лопатки постное тушёное
+fdc:169445	Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	нижняя лопатка постная сырая
+fdc:169446	Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	нижняя лопатка постная сырая (чойс)
+fdc:169447	Beef, ground, patties, frozen, cooked, broiled	замороженные говяжьи котлеты на гриле
+fdc:169448	Beef, variety meats and by-products, heart, cooked, simmered	говяжье сердце варёное
+fdc:169449	Beef, variety meats and by-products, kidneys, raw	говяжьи почки сырые
+fdc:169450	Beef, variety meats and by-products, kidneys, cooked, simmered	говяжьи почки варёные
+fdc:169451	Beef, variety meats and by-products, liver, raw	говяжья печень сырая
+fdc:169452	Beef, variety meats and by-products, pancreas, raw	говяжья поджелудочная сырая
+fdc:169453	Beef, variety meats and by-products, pancreas, cooked, braised	говяжья поджелудочная тушёная
+fdc:169454	Beef, variety meats and by-products, spleen, raw	говяжья селезёнка сырая
+fdc:169455	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк стриплойн постный на гриле (чойс)
+fdc:169456	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк стриплойн постный на гриле (селект)
+fdc:169457	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	стейк топ-серлоин с жиром на гриле (все категории)
+fdc:169458	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	стейк топ-серлоин с жиром на гриле (чойс)
+fdc:169459	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	стейк портерхаус с жиром на гриле (все категории)
+fdc:169460	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled	стейк портерхаус с жиром на гриле (чойс)
+fdc:169461	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled	стейк портерхаус с жиром на гриле (селект)
+fdc:169462	Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, all grades, raw	стейк портерхаус постный сырой (все категории)
+fdc:169463	Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк портерхаус постный на гриле (селект)
+fdc:169464	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	стейк ти-бон с жиром на гриле (все категории)
+fdc:169465	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled	стейк ти-бон с жиром на гриле (чойс)
+fdc:169466	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled	стейк ти-бон с жиром на гриле (селект)
+fdc:169467	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	стейк ти-бон постный на гриле (селект)
+fdc:169468	Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк ти-бон постный на гриле (селект)
+fdc:169469	Beef, brisket, flat half, separable lean only, trimmed to 0" fat, select, cooked, braised	говяжья грудинка плоская часть постная тушёная
+fdc:169470	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, all grades, raw	жаркое из верха огузка с жиром сырое
+fdc:169471	Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк из верхнего огузка постный на гриле (чойс)
+fdc:169472	Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк из верхнего огузка постный на гриле (селект)
+fdc:169473	Beef, ground, 70% lean meat / 30% fat, crumbles, cooked, pan-browned	говяжий фарш 70/30 обжаренный
+fdc:169474	Beef, ground, 70% lean meat / 30% fat, loaf, cooked, baked	говяжий фарш 70/30 хлебом запечённый
+fdc:169475	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	стейк из верхней лопатки постный на гриле (чойс)
+fdc:169476	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	стейк из верхней лопатки постный на гриле (селект)
+fdc:169477	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	стейк из верхней лопатки постный сырой
+fdc:169478	Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	стейк из верхней лопатки постный сырой (чойс)
+fdc:169479	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк из верхней лопатки с жиром на гриле
+fdc:169480	Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	лопатка постная сырая
+fdc:169481	Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	лопатка постная сырая (чойс)
+fdc:169482	Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, select, raw	лопатка постная сырая (селект)
+fdc:169483	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говядина смешанных отрубов с жиром сырая
+fdc:169484	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, all grades, cooked	говядина смешанных отрубов с жиром приготовленная (все категории)
+fdc:169485	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, raw	говядина смешанных отрубов с жиром сырая (чойс)
+fdc:169486	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked	говядина смешанных отрубов с жиром приготовленная (чойс)
+fdc:169487	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, select, raw	говядина смешанных отрубов с жиром сырая (селект)
+fdc:169488	Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	говяжья грудинка плоская часть с жиром тушёная
+fdc:169489	Beef, brisket, point half, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья грудинка толстая часть с жиром сырая
+fdc:169490	Beef, brisket, point half, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	говяжья грудинка толстая часть с жиром тушёная
+fdc:169491	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья лопатка с жиром сырая
+fdc:169492	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised	говяжья лопатка с жиром тушёная (селект)
+fdc:169493	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw	жаркое из говяжьей шеи с жиром сырое
+fdc:169494	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	жаркое из говяжьей шеи с жиром тушёное
+fdc:169495	Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, choice, raw	жаркое из говяжьей шеи с жиром сырое (чойс)
+fdc:169496	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое из шейной части постное запечённое (чойс)
+fdc:169497	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	жаркое из шейной части постное запечённое (селект)
+fdc:169498	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья рёберная часть с жиром сырая
+fdc:169499	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	говяжья рёберная часть с жиром на гриле
 fdc:169500	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	говядина рибай запечённая
+fdc:169501	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	говяжья рёберная часть с жиром на гриле (селект)
+fdc:169502	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	говяжья рёберная часть с жиром запечённая (селект)
+fdc:169503	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, raw	говяжья рёберная часть с жиром сырая (прайм)
+fdc:169504	Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	говяжья рёберная часть с жиром на гриле (прайм)
+fdc:169505	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, raw	говяжья рёберная часть толстый край с жиром сырая (чойс)
+fdc:169506	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled	говяжья рёберная часть толстый край с жиром на гриле (чойс)
+fdc:169507	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	говяжья рёберная часть толстый край с жиром запечённая (чойс)
+fdc:169508	Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, raw	говяжья рёберная часть толстый край с жиром сырая (селект)
+fdc:169509	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, raw	говяжья рёберная часть тонкий край с жиром сырая
+fdc:169510	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	говяжья рёберная часть тонкий край с жиром на гриле
+fdc:169511	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	говяжья рёберная часть тонкий край с жиром запечённая
+fdc:169512	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, raw	говяжья рёберная часть тонкий край с жиром сырая (чойс)
+fdc:169513	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	говяжья рёберная часть тонкий край с жиром запечённая (селект)
 fdc:169514	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, raw	говяжья корейка сырая
+fdc:169515	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	говяжья рёберная часть тонкий край с жиром на гриле (прайм)
+fdc:169516	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted	говяжья рёберная часть тонкий край с жиром запечённая (прайм)
+fdc:169517	Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, select, raw	говядина огузок целиком с жиром сырая (селект)
+fdc:169518	Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	говядина огузок целиком с жиром на гриле (селект)
+fdc:169519	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк из нижнего огузка с жиром сырой
+fdc:169520	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	стейк из нижнего огузка с жиром тушёный
+fdc:169521	Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised	стейк из нижнего огузка с жиром тушёный (селект)
+fdc:169522	Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое из нижнего огузка с жиром запечённое (селект)
+fdc:169523	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw	жаркое из глазка огузка с жиром сырое
+fdc:169524	Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое из глазка огузка с жиром запечённое
+fdc:169525	Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, all grades, raw	верх огузка с жиром сырой
+fdc:169526	Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое из верха огузка с жиром запечённое
+fdc:169527	Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, choice, raw	верх огузка с жиром сырой (чойс)
 fdc:169528	Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted	говядина окорок запечённый
+fdc:169529	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк из верхнего огузка с жиром сырой
+fdc:169530	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	верхний огузок с жиром тушёный
+fdc:169531	Beef, round, top round steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	стейк из верхнего огузка с жиром на гриле
+fdc:169532	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк из верхнего огузка с жиром сырой (чойс)
+fdc:169533	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	стейк из верхнего огузка с жиром на гриле (селект)
+fdc:169534	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, prime, raw	верхний огузок с жиром сырой (прайм)
+fdc:169535	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	стейк из верхнего огузка с жиром на гриле (прайм)
+fdc:169536	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	стейк из верхней лопатки с жиром сырой (селект)
+fdc:169537	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	стейк ти-бон с жиром на гриле (чойс)
+fdc:169538	Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк стриплойн с жиром сырой
+fdc:169539	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled	стриплойн с жиром на гриле
+fdc:169540	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, choice, raw	стриплойн с жиром сырой (чойс)
+fdc:169541	Beef, short loin, top loin, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	стриплойн с жиром на гриле (прайм)
+fdc:169542	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	стейк из вырезки с жиром сырой
+fdc:169543	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	стейк из вырезки с жиром на гриле
+fdc:169544	Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted	жаркое из вырезки с жиром запечённое
+fdc:169545	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	стейк из вырезки с жиром сырой (чойс)
+fdc:169546	Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted	жаркое из вырезки с жиром запечённое (селект)
+fdc:169547	Beef, tenderloin, separable lean and fat, trimmed to 1/8" fat, prime, raw	говяжья вырезка с жиром сырая (прайм)
+fdc:169548	Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	стейк из вырезки с жиром на гриле (прайм)
+fdc:169549	Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted	жаркое из вырезки с жиром запечённое (прайм)
+fdc:169550	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, pan-fried	стейк топ-серлоин с жиром жареный (чойс)
+fdc:169551	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw	стейк топ-серлоин с жиром сырой (селект)
+fdc:169552	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	стейк топ-серлоин с жиром на гриле (селект)
+fdc:169553	Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	жаркое из лопатки постное запечённое (чойс)
+fdc:169554	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, select, cooked, broiled	стейк фланк с жиром на гриле (селект)
+fdc:169555	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, select, cooked, braised	говяжья грудинка плоская часть с жиром тушёная (селект)
+fdc:169556	Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, select, cooked, broiled	рибай с жиром на гриле (селект)
+fdc:169557	Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	рибай с жиром на гриле (все категории)
+fdc:169558	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	жаркое три-тип с жиром запечённое
+fdc:169559	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, select, raw	жаркое три-тип с жиром сырое (селект)
+fdc:169560	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	стейк из верхнего огузка с жиром на гриле (все категории)
+fdc:169561	Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled	стейк мок-тендер постный на гриле (чойс)
+fdc:169562	Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	стейк мок-тендер постный на гриле (селект)
+fdc:169563	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, all grades, raw	стейк фланк с жиром сырой (все категории)
+fdc:169564	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, select, raw	стейк фланк с жиром сырой (селект)
+fdc:169565	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, all grades, raw	жаркое из шейной части постное сырое
+fdc:169566	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, choice, raw	жаркое из шейной части постное сырое (чойс)
+fdc:169567	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised	говяжьи рёбрышки из шеи без кости постные тушёные (чойс)
+fdc:169568	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised	говяжьи рёбрышки из шеи без кости постные тушёные (селект)
+fdc:169569	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	говяжьи рёбрышки из шеи без кости постные тушёные
+fdc:169570	Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, select, raw	говяжья грудинка плоская часть с жиром сырая (селект)
+fdc:169571	Beef, loin, bottom sirloin butt, tri-tip roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	жаркое три-тип постное запечённое
+fdc:169572	Alcoholic beverage, beer, light, BUD LIGHT	пиво Bud Light
+fdc:169573	Alcoholic beverage, daiquiri, canned	дайкири консервированный
+fdc:169574	Alcoholic beverage, daiquiri, prepared-from-recipe	дайкири
+fdc:169575	Alcoholic beverage, beer, light, low carb	пиво лёгкое низкоуглеводное
+fdc:169576	Candies, milk chocolate coated raisins	изюм в молочном шоколаде
+fdc:169577	Syrups, table blends, pancake, reduced-calorie	сироп для панкейков низкокалорийный
+fdc:169578	Syrups, table blends, pancake	сироп для панкейков
+fdc:169579	Candies, HERSHEY'S POT OF GOLD Almond Bar	батончик Hershey's Pot of Gold с миндалём
+fdc:169580	Candies, truffles, prepared-from-recipe	трюфели шоколадные
+fdc:169581	Baking chocolate, MARS SNACKFOOD US, M&M's Semisweet Chocolate Mini Baking Bits	шоколад для выпечки M&M's
+fdc:169582	Candies, MARS SNACKFOOD US, M&M's Peanut Chocolate Candies	драже M&M's с арахисом
+fdc:169583	Candies, MARS SNACKFOOD US, M&M's Milk Chocolate Candies	драже M&M's молочный шоколад
+fdc:169584	Baking chocolate, MARS SNACKFOOD US, M&M's Milk Chocolate Mini Baking Bits	шоколад молочный для выпечки M&M's
+fdc:169585	Candies, peanut bar	батончик арахисовый
+fdc:169586	Candies, peanut brittle, prepared-from-recipe	грильяж арахисовый
+fdc:169587	Candies, NESTLE, RAISINETS Chocolate Covered Raisins	драже Raisinets изюм в шоколаде
+fdc:169588	Candies, sesame crunch	козинаки кунжутные
+fdc:169589	Candies, MARS SNACKFOOD US, SNICKERS Bar	батончик Snickers
+fdc:169590	Candies, MARS SNACKFOOD US, STARBURST Fruit Chews, Original fruits	конфеты Starburst фруктовые
+fdc:169591	Candies, MARS SNACKFOOD US, M&M's MINIs Milk Chocolate Candies	драже M&M's Minis
+fdc:169592	Candies, SPECIAL DARK Chocolate Bar	шоколад Hershey's Special Dark
+fdc:169593	Cocoa, dry powder, unsweetened	какао-порошок
 fdc:169594	Cocoa, dry powder, unsweetened, processed with alkali	какао-порошок несладкий
+fdc:169595	Desserts, egg custard, baked, prepared-from-recipe	заварной крем запечённый
+fdc:169596	Gelatin desserts, dry mix, prepared with water	желе на воде
+fdc:169597	Gelatin desserts, dry mix, reduced calorie, with aspartame	желе низкокалорийное сухое с аспартамом
+fdc:169598	Gelatin desserts, dry mix, reduced calorie, with aspartame, prepared with water	желе низкокалорийное с аспартамом на воде
+fdc:169599	Gelatins, dry powder, unsweetened	желатин порошковый
+fdc:169600	Puddings, chocolate, dry mix, instant, prepared with whole milk	пудинг шоколадный быстрого приготовления на цельном молоке
+fdc:169601	Desserts, apple crisp, prepared-from-recipe	яблочный крисп
+fdc:169602	Flan, caramel custard, dry mix	флан сухой
+fdc:169603	Puddings, chocolate, dry mix, regular	пудинг шоколадный сухой
+fdc:169604	Puddings, chocolate, dry mix, regular, prepared with whole milk	пудинг шоколадный сухой на цельном молоке
+fdc:169605	Puddings, rice, dry mix, prepared with whole milk	пудинг рисовый сухой на цельном молоке
+fdc:169606	Puddings, tapioca, dry mix	пудинг тапиока сухой
+fdc:169607	Puddings, tapioca, dry mix, prepared with whole milk	пудинг тапиока сухой на цельном молоке
+fdc:169608	Puddings, vanilla, ready-to-eat	пудинг ванильный готовый
+fdc:169609	Puddings, vanilla, dry mix, regular	пудинг ванильный сухой
+fdc:169610	Puddings, vanilla, dry mix, regular, prepared with whole milk	пудинг ванильный сухой на цельном молоке
+fdc:169611	Puddings, rice, dry mix, prepared with 2% milk	пудинг рисовый сухой на молоке 2%
+fdc:169612	Puddings, tapioca, dry mix, prepared with 2% milk	пудинг тапиока сухой на молоке 2%
+fdc:169613	Frozen novelties, ice type, fruit, no sugar added	фруктовый лёд без сахара
+fdc:169614	Puddings, tapioca, ready-to-eat	пудинг тапиока готовый
+fdc:169615	Puddings, coconut cream, dry mix, regular, prepared with 2% milk	пудинг кокосовый сухой на молоке 2%
+fdc:169616	Desserts, rennin, chocolate, dry mix	крем реннет шоколадный сухой
+fdc:169617	Rennin, chocolate, dry mix, prepared with whole milk	крем реннет шоколадный на цельном молоке
+fdc:169618	Frostings, coconut-nut, ready-to-eat	глазурь кокосовая с орехами
+fdc:169619	Frostings, cream cheese-flavor, ready-to-eat	глазурь со сливочным сыром
+fdc:169620	Frostings, vanilla, creamy, ready-to-eat	глазурь ванильная кремовая
+fdc:169621	Flan, caramel custard, dry mix, prepared with 2% milk	флан сухой на молоке 2%
+fdc:169622	Candies, HERSHEY'S MILK CHOCOLATE WITH ALMOND BITES	конфеты Hershey's молочный шоколад с миндалём
+fdc:169623	Candies, REESE'S BITES	конфеты Reese's Bites
+fdc:169624	Candies, REESE'S NUTRAGEOUS Candy Bar	батончик Reese's Nutrageous
+fdc:169625	Frostings, chocolate, creamy, dry mix	глазурь шоколадная кремовая сухая
 fdc:169626	Frostings, white, fluffy, dry mix, prepared with water	глазурь белая кремовая
+fdc:169627	Candies, HERSHEY'S, ALMOND JOY BITES	конфеты Almond Joy Bites
+fdc:169628	Candies, HERSHEY, REESESTICKS crispy wafers, peanut butter, milk chocolate	вафли Reese's Sticks с арахисовой пастой в молочном шоколаде
+fdc:169629	Candies, HERSHEY, KIT KAT BIG KAT Bar	батончик Kit Kat Big Kat
+fdc:169630	Candies, REESE'S, FAST BREAK, milk chocolate peanut butter and soft nougats	батончик Reese's Fast Break с арахисовой пастой и нугой
+fdc:169631	Ice creams, vanilla, light, no sugar added	мороженое ванильное лёгкое без сахара
+fdc:169632	Frozen novelties, fruit and juice bars	эскимо фруктово-соковое
+fdc:169633	Ice creams, chocolate, light, no sugar added	мороженое шоколадное лёгкое без сахара
+fdc:169634	Candies, dark chocolate coated coffee beans	кофейные зёрна в тёмном шоколаде
+fdc:169635	Snacks, SUNKIST, SUNKIST Fruit Roll, strawberry, with vitamins A, C, and E	фруктовый ролл Sunkist клубничный
+fdc:169636	Snacks, fruit leather, pieces, with vitamin C	фруктовая пастила кусочками
+fdc:169637	Candies, milk chocolate coated coffee beans	кофейные зёрна в молочном шоколаде
+fdc:169638	Frozen novelties, ice type, lime	фруктовый лёд лаймовый
+fdc:169639	Candies, MARS SNACKFOOD US, SNICKERS MUNCH bar	батончик Snickers Munch
+fdc:169640	Honey	мёд
+fdc:169641	Jams and preserves	варенье
+fdc:169642	Jellies	желе
+fdc:169643	Candies, MARS SNACKFOOD US, POP'ABLES SNICKERS Brand Bite Size Candies	конфеты Snickers Pop'ables
 fdc:169701	Hominy, canned, white	кукуруза хомини консервированная
 fdc:169788	Infant formula, MEAD JOHNSON, ENFAMIL, ENFAGROW, Soy, Toddler transitions, with ARA and DHA,  powder	Enfamil Enfagrow детская смесь на сое
 fdc:169796	Whale, beluga, eyes (Alaska Native)	глаза белухи
