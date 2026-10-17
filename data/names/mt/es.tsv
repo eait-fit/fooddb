@@ -3365,10 +3365,18 @@ bls:X9A2080	Porridge sweetened, with soya drink	puré de cereales y fruta con pe
 bls:X9A2090	Porridge sweetened, with water	puré de cereales y leche con copos de avena para bebés
 bls:X9A2100	Porridge unsweetened, with milk 3.5 % fat	puré de cereales y leche con copos de arroz para bebés
 bls:X9A2110	Porridge unsweetened, with soya drink	puré de cereales y fruta con plátano para bebés
+bls:X9A2120	Porridge unsweetened, with water	gachas de avena con agua sin azúcar
+bls:X9A3000	Puff pastry pockets filled with leaf spinach and sheep's milk cheese, baked	hojaldres rellenos de espinacas y queso de oveja
 bls:X9A3010	Puff pastry pockets filled with cheese and boiled ham, baked	gachas de avena dulces con leche entera
 bls:X9A3020	Puff pastry pockets with salmon-schmand filling, baked	gachas de avena sin azúcar con leche entera
 bls:X9A3030	Spring rolls vegetarian filled with vegetables, deep-fried	gachas de avena sin azúcar con bebida de soja
 bls:X9A3040	Vegetable muffins savoury	gachas de avena sin azúcar con bebida de almendras
+bls:X9A3050	Grissini	grissini
+bls:X9A3060	Pate (shortcrust pastry) with button mushroom-cheese filling, baked	pastel de masa quebrada relleno de champiñones y queso
+bls:X9A3070	Pie (shortcrust pastry) filled with vegetables and pork mince, baked	pastel de masa quebrada relleno de verduras y carne picada de cerdo
+bls:X9A3080	Pirogue filled with minced meat, baked	pirogo con relleno de carne picada
+bls:X9A3090	Pirogue filled with sauerkraut, baked	pirogo relleno de chucrut
+bls:X9A4000	Burrito filled with vegetables, beef mince and cheese	burrito relleno de verduras, carne picada de vacuno y queso
 bls:X9A4010	Burrito filled with vegetables, mushrooms and cheese	burrito con carne picada, alubias y queso
 bls:X9A4020	Pancakes unsweetened, with milk 3.5 % fat, fried in butter	creps sin azúcar con leche entera fritos en mantequilla
 bls:X9A4030	Pankcake casserole with spinach	pastel de creps con espinacas
@@ -3450,15 +3458,307 @@ bls:Y144323	Beef ragout with sweet pepper	ragú de vacuno con pimiento
 bls:Y144423	Beef ragout	ragú de vacuno
 bls:Y144512	Beef ragout with white wine	vacuno en tiras con vino blanco
 bls:Y146113	Westphalian "Pfefferpotthast" (beef stew with sauce)	pfefferpotthast de Westfalia
+bls:Y151112	Beef olive braised, with sauce	rollitos de vacuno braseados con salsa
+bls:Y160122	Beef fillet fried in oven, without sauce	filete de vacuno asado sin salsa
+bls:Y161013	Beef roast with sauce	asado de vacuno con salsa
+bls:Y161212	Beef roast without sauce	asado de vacuno sin salsa
+bls:Y161333	Beef braised with onions and sauce	vacuno braseado con cebolla y salsa
+bls:Y162113	Rhenish "Sauerbraten" marinated beef roast, with sauce	sauerbraten renano con salsa
+bls:Y162212	"Sauerbraten" marinated beef roast, with sauce	sauerbraten con salsa
+bls:Y163213	Boeuf a la mode with sauce	boeuf a la mode con salsa
+bls:Y163313	Braised beef roast with bacon and sauce	asado de vacuno braseado con beicon y salsa
 bls:Y171022	Beef heart, boiled, with herb sauce from white basic sauce	corazón de vacuno cocido con salsa de hierbas
+bls:Y171113	Beef heart, stewed, with sauce	corazón de vacuno estofado con salsa
+bls:Y171123	Beef heart, braised, with sauce	corazón de vacuno braseado con salsa
+bls:Y171223	Beef heart ragout with button mushrooms	ragú de corazón de vacuno con champiñones
+bls:Y171323	Beef heart ragout	ragú de corazón de vacuno
+bls:Y172012	Veal brain fried	sesos de ternera fritos
+bls:Y173012	Beef liver fried, with red wine sauce	hígado de vacuno frito con salsa de vino tinto
+bls:Y173032	Beef liver fried Berlin style	hígado de vacuno frito a la berlinesa
+bls:Y173113	Beef liver fried	hígado de vacuno frito
+bls:Y173623	Beef liver ragout, with brown basic sauce	hígado de vacuno en tiras con salsa oscura
+bls:Y173833	Beef liver ragout sour with sauce	hígado de vacuno en tiras agrio con salsa
+bls:Y174122	Beef lung ragout with sauce	ragú de pulmón de vacuno con salsa
+bls:Y175022	Sour beef tripe boiled, with brown basic sauce	callos de vacuno agrios cocidos con salsa oscura
+bls:Y175133	Fried beef tripe with egg	callos de vacuno fritos con huevo a la boloñesa
+bls:Y179012	Beef tongue boiled (in stock)	lengua de vacuno cocida
+bls:Y179032	Beef tongue boiled, with raisin sauce	lengua de vacuno cocida con salsa de pasas
+bls:Y179222	Ox tongue breaded, fried	lengua de buey empanada frita
+bls:Y179423	Beef tongue ragout with button mushrooms	ragú de lengua de vacuno con champiñones
+bls:Y180012	Beef boiled, with red wine sauce	vacuno cocido con salsa de vino tinto
+bls:Y180033	Beef boiled, with vegetables	vacuno cocido con verduras
+bls:Y180133	Saxon "Zwiebelfleisch" (beef stew with onions)	vacuno con cebolla a la sajona
+bls:Y180512	Beef boiled	vacuno cocido
+bls:Y180622	Beef boiled, with creamed apple-horseradish	vacuno cocido con rábano picante de manzana y nata
+bls:Y180723	Beef boiled, with caper sauce from white basic sauce	vacuno cocido con salsa de alcaparras
+bls:Y181132	Beef rump cap boiled, with horseradish sauce from white basic sauce	cadera de vacuno cocida con salsa de rábano picante
+bls:Y181223	Smoked, cured beef, boiled, in cream sauce from brown basic sauce	vacuno curado ahumado cocido en salsa de nata
+bls:Y182912	Beef goulash simple	gulash de vacuno sencillo
+bls:Y183013	Beef stock	caldo de vacuno
+bls:Y184212	Beef stewed (with fat and salt)	vacuno estofado con grasa y sal
+bls:Y184312	Ox tail braised (with fat and salt)	rabo de buey braseado con grasa y sal
+bls:Y184412	Beef fillet fried in oven (with fat and salt)	filete de vacuno asado con grasa y sal
+bls:Y184512	Beef steak fried (with fat and salt)	filete de vacuno frito con grasa y sal
+bls:Y184612	Beef braised (with fat and salt)	vacuno braseado con grasa y sal
+bls:Y1A1000	Beef goulash	gulash de vacuno
+bls:Y1A2000	Sour beef kidneys	riñones de vacuno agrios
+bls:Y211022	Veal fillet fried in oven	filete de ternera asado
+bls:Y211033	Veal loin stewed, with sauce	lomo de ternera estofado con salsa
+bls:Y213133	Veal medaillons fried, in white wine sauce from white basic sauce	medallones de ternera fritos en salsa de vino blanco
+bls:Y221013	Veal chop fried, with fried button mushrooms	chuleta de ternera frita con champiñones fritos
 bls:Y221122	Veal chop breaded, fried	chuleta de ternera empanada frita
+bls:Y221232	Veal chop fried	chuleta de ternera frita
+bls:Y231022	Veal schnitzel floured, fried	escalope de ternera enharinado frito
+bls:Y231133	Veal schnitzel fried with Parma ham (Saltimbocca) and sauce	saltimbocca de ternera con jamón de Parma y salsa
+bls:Y231233	Veal chop fried, with cream sauce	chuleta de ternera frita con salsa de nata
+bls:Y231322	Viennese schnitzel fried	schnitzel vienés frito
 bls:Y231432	Veal schnitzel grilled with boiled ham and cheese	escalope de ternera con jamón y queso
+bls:Y231632	Veal cordon bleu fried	cordon bleu de ternera frito
+bls:Y235022	Veal steak fried (with fat and salt)	filete de ternera frito con grasa y sal
+bls:Y235032	Veal chop grilled, with basil butter	chuleta de ternera a la parrilla con mantequilla de albahaca
+bls:Y235122	Veal chop stewed	chuleta de ternera estofada
+bls:Y238023	Veal loin fried in oven	lomo de ternera asado
+bls:Y238033	Veal loin fried in oven, with sauce	lomo de ternera asado con salsa
+bls:Y239123	Veal shoulder stewed, with cream sauce	paleta de ternera estofada con salsa de nata
+bls:Y240222	Veal meatballs fried	albóndigas de ternera fritas
+bls:Y241033	Veal goulash	gulash de ternera
+bls:Y242013	Veal ragout Zurich style	ternera en tiras a la zuriqueña
+bls:Y243132	Veal skewer grilled	brocheta de ternera a la parrilla
+bls:Y244023	Veal ragout (ragout fin)	ragú fin de ternera
+bls:Y245013	Veal fricassee	fricasé de ternera
 bls:Y251323	Veal olive fried, with brown basic sauce	rollitos de ternera en salsa
+bls:Y252223	Veal rolled roast with white wine-cream sauce from brown basic sauce	asado enrollado de ternera con salsa de vino blanco y nata
+bls:Y253133	Veal loin roast with brown basic sauce	lomo de ternera asado con salsa oscura
+bls:Y260912	Veal roast without sauce	asado de ternera sin salsa
+bls:Y261013	Veal roast with white wine-cream sauce from brown basic sauce	asado de ternera con salsa de vino blanco y nata
+bls:Y261023	Veal roast with brown basic sauce	asado de ternera con salsa oscura
+bls:Y261123	Veal roast with cream sauce	asado de ternera con salsa de nata
+bls:Y261213	Veal brisket with minced meat filling, fried in oven, with sauce	pechuga de ternera rellena de carne picada asada con salsa
+bls:Y261422	Veal brisket stewed, with brown basic sauce	pechuga de ternera estofada con salsa oscura
+bls:Y263123	Veal goulash with cream	gulash de ternera con nata
+bls:Y271013	Larded veal heart stewed, with cream sauce from brown basic sauce	corazón de ternera mechado estofado con salsa de nata
+bls:Y271033	Veal heart braised, with cream sauce	corazón de ternera braseado con salsa de nata
+bls:Y271133	Veal heart filled, stewed, with cream sauce from brown basic sauce	corazón de ternera relleno estofado con salsa de nata
+bls:Y272112	Veal brain fried with egg	sesos de ternera fritos con huevo
+bls:Y273012	Veal liver fried, with fried onions	hígado de ternera frito con cebolla frita
+bls:Y273032	Veal liver floured, fried	hígado de ternera enharinado frito
+bls:Y273113	Veal liver fried Berlin style	hígado de ternera frito a la berlinesa
+bls:Y273632	Veal liver skewer grilled	brochetas de hígado de ternera a la parrilla
+bls:Y274333	Veal lung ragout sour with sauce	ragú de pulmón de ternera agrio con salsa
+bls:Y277013	Veal kidneys fried, with mustard sauce from brown basic sauce	riñones de ternera fritos con salsa de mostaza
+bls:Y277033	Veal kidney ragout with brown basic sauce	riñones de ternera en tiras con salsa oscura
 bls:Y277133	Veal kidneys sour, fried, with cream sauce from brown basic sauce	riñones de ternera fritos en salsa de nata
+bls:Y278023	Veal sweetbread boiled, with white basic sauce	mollejas de ternera cocidas con salsa blanca
+bls:Y279033	Veal tongue boiled, with white wine sauce from white basic sauce and sour cream	lengua de ternera cocida con salsa de vino blanco y nata agria
+bls:Y291113	Veal knuckle fried in oven, with orange sauce	codillo de ternera asado con salsa de naranja
+bls:Y291133	Veal knuckle fried in oven, with brown basic sauce	codillo de ternera asado con salsa oscura
+bls:Y291223	Ossobuco alla milanese (veal leg slices braised)	ossobuco a la milanesa
+bls:Y292012	Veal boiled (with fat and salt)	ternera cocida con grasa y sal
+bls:Y299113	Leg of veal braised, with cream sauce from brown basic sauce	pierna de ternera braseada con salsa de nata
+bls:Y2A1000	Veal pate (shortcrust pastry) with bacon and boiled ham, baked	pastel de ternera de masa quebrada con beicon y jamón cocido
+bls:Y2A1010	Veal pudding with ham and button mushrooms	pudín de ternera con jamón curado y champiñones
+bls:Y2A2000	Veal knuckle fried in oven, without sauce	codillo de ternera asado sin salsa
+bls:Y2A3000	Veal olive braised, with red wine sauce from brown basic sauce	rollitos de ternera braseados con salsa de vino tinto
+bls:Y301122	Pork foreshank (hock) "Eisbein" cured, boiled	codillo curado cocido
+bls:Y301213	Pork loin spare ribs cured, boiled, with sauerkraut	costillas de cerdo curadas cocidas con chucrut
+bls:Y301322	Pork loin chop cured, breaded, fried	chuleta de cerdo curada empanada frita
+bls:Y301423	Pork loin cured, fried in oven, with brown basic sauce	lomo de cerdo curado asado con salsa oscura
+bls:Y301533	Pork loin spare ribs cured, fried in oven, with red wine sauce from brown basic sauce	costillas de cerdo curadas asadas con salsa de vino tinto
+bls:Y301822	Pork loin chop cured, fried	chuleta de cerdo curada frita
+bls:Y302113	Pork loin spare ribs cured, fried in oven, with cream sauce from brown basic sauce	costillas de cerdo curadas asadas con salsa de nata
+bls:Y302213	Pork loin chop cured, baked in puff pastry	chuleta de cerdo curada en hojaldre al horno
+bls:Y302232	Pork loin chop cured, baked in bread dough	chuleta de cerdo curada en masa de pan al horno
+bls:Y311112	Pork fillet braised, with sauce	solomillo de cerdo braseado con salsa
+bls:Y311132	Pork fillet marinated, grilled, with orange	solomillo de cerdo marinado a la parrilla con naranja
+bls:Y311233	Pork medaillon fried, with apple and sauce	medallón de cerdo frito con manzana y salsa
+bls:Y311323	Pork tenderloin fried in oven, with brown basic sauce	lomo de cerdo asado con salsa oscura
+bls:Y311332	Pork tenderloin wrapped in savoy cabbage, fried in oven	lomo de cerdo envuelto en col de Saboya asado
+bls:Y311522	Pork fillet stewed	solomillo de cerdo estofado
+bls:Y311612	Pork medaillon fried	medallón de cerdo frito
+bls:Y311712	Pork tenderloin fried in oven (with fat and salt)	lomo de cerdo asado con grasa y sal
+bls:Y321012	Pork chop breaded, fried	chuleta de cerdo empanada frita
+bls:Y321222	Pork chop fried	chuleta de cerdo frita
+bls:Y321323	Pork chop stewed, with brown basic sauce	chuleta de cerdo estofada con salsa oscura
+bls:Y322113	Pork neck braised, with brown basic sauce	cuello de cerdo braseado con salsa oscura
+bls:Y332132	Pork schnitzel breaded, fried	escalope de cerdo empanado frito
+bls:Y332212	Pork schnitzel fried	escalope de cerdo frito
+bls:Y332532	"Jaegerschnitzel" pork schnitzel fried, with mushroom sauce	escalope de cazador con salsa de setas
+bls:Y332832	Pork cordon bleu fried	cordon bleu de cerdo frito
+bls:Y333831	Pork schnitzel fried, with brown basic sauce	escalope de cerdo frito con salsa oscura
+bls:Y335012	Pork steak fried	filete de cerdo frito
+bls:Y336022	Shashlik with pork grilled	shashlik de cerdo a la parrilla
+bls:Y336132	Meat skewer (veal and pork) grilled	brochetas de ternera y cerdo a la parrilla
+bls:Y341013	Pork goulash with tomatoes and onions	gulash de cerdo con tomate y cebolla
+bls:Y341023	Pork goulash	gulash de cerdo
+bls:Y341113	"Szegediner" pork goulash	gulash de cerdo estilo Szeged
+bls:Y341313	"Debreziner" bean goulash with pork	gulash de alubias con cerdo estilo Debrecen
+bls:Y344013	Pork ragout	ragú de cerdo
+bls:Y344023	Pork ragout with vegetables	ragú de cerdo con verduras
+bls:Y346013	"Schweinepfeffer" savoury pork goulash	gulash de cerdo a la pimienta
+bls:Y351013	Pork olive filled with sauerkraut braised, with sauce	rollitos de cerdo rellenos de chucrut braseados con salsa
+bls:Y351023	Pork olive braised, with brown basic sauce	rollitos de cerdo braseados con salsa oscura
+bls:Y351032	Pork olive braised, without sauce	rollitos de cerdo braseados sin salsa
+bls:Y352013	Rolled pork roast with sauce	asado de cerdo enrollado con salsa
+bls:Y352112	Pork roast with brown basic sauce	asado de cerdo con salsa oscura
+bls:Y352212	Pork roast without sauce	asado de cerdo sin salsa
+bls:Y361123	Pork loin braised, with brown basic sauce	lomo de cerdo braseado con salsa oscura
+bls:Y361233	Pork breast filled with minced meat fried in oven, with cream sauce from brown basic sauce	pechuga de cerdo rellena de carne picada asada con salsa de nata
+bls:Y361623	Pork roast with sauce, mixed vegetables and boiled salted potatoes	asado de cerdo con salsa, verduras mixtas y patatas cocidas
+bls:Y362012	Pork hock braised, without sauce	codillo de cerdo braseado sin salsa
+bls:Y362023	Pork hock braised, with sauce	codillo de cerdo braseado con salsa
+bls:Y363323	Pork loin braised, with vegetables and sauce	lomo de cerdo braseado con verduras y salsa
+bls:Y371013	Larded pork heart stewed, with cream sauce from brown basic sauce	corazón de cerdo mechado estofado con salsa de nata
+bls:Y371033	Pork heart ragout	ragú de corazón de cerdo
+bls:Y372012	Pork brain fried with egg	sesos de cerdo fritos con huevo
+bls:Y373012	Pork liver floured, fried	hígado de cerdo enharinado frito
+bls:Y373032	Pork liver fried, with brown basic sauce	hígado de cerdo frito con salsa oscura
+bls:Y373223	Pork liver ragout with apple, onions and brown basic sauce	hígado de cerdo en tiras con manzana, cebolla y salsa oscura
+bls:Y373323	Pork liver slices stewed, with cream sauce from brown basic sauce	hígado de cerdo en rodajas estofado con salsa de nata
+bls:Y373622	Palatine pork liver dumplings cooked	bolas de hígado de cerdo a la palatina cocidas
+bls:Y374113	Pork lung sour, boiled, with white basic sauce	pulmón de cerdo agrio cocido con salsa blanca
+bls:Y375213	Pork stomach stuffed, cooked	estómago de cerdo relleno cocido
+bls:Y377013	Pork kidney ragout sour, with brown basic sauce	riñones de cerdo en tiras agrios con salsa oscura
+bls:Y377323	Pork kidneys fried, with mushrooms and brown basic sauce	riñones de cerdo fritos con setas y salsa oscura
+bls:Y379032	Pork tongue boiled, with white wine sauce from white basic sauce	lengua de cerdo cocida con salsa de vino blanco
+bls:Y380212	Pork belly boiled, with sauerkraut with apple stewed	panceta cocida con chucrut y manzana
+bls:Y381352	Pork belly boiled	panceta cocida
+bls:Y384112	Gyros (pork) fried	gyros de cerdo frito
+bls:Y392023	Pork shoulder boiled, with herb sauce from white basic sauce	paleta de cerdo cocida con salsa de hierbas
+bls:Y395222	Pork spare ribs boiled	costillas de cerdo cocidas
+bls:Y396213	Pork belly filled, fried in oven	panceta rellena asada
+bls:Y396512	Pork meatballs fried	albóndigas de cerdo fritas
+bls:Y397812	Pork belly fried in oven (with fat and salt)	panceta asada con grasa y sal
+bls:Y3A1000	Pirogue with cured pork loin chop, baked	pirogo de cerdo curado en masa de levadura
+bls:Y3A2000	Pork steak fried, with carrots and peas stewed	filete de cerdo frito con zanahorias y guisantes estofados
+bls:Y404123	Small lamb meatballs with curry in tomato sauce (of tomato paste)	albóndigas de cordero con curry en salsa de tomate
+bls:Y410012	Mutton fillet fried	filete de carnero frito
+bls:Y413032	Lamb fillet fried	filete de cordero frito
+bls:Y421012	Mutton chop fried	chuleta de carnero frita
+bls:Y421233	Lamb chops marinated, grilled	chuletas de cordero marinadas a la parrilla
+bls:Y422032	Lamb chop fried	chuleta de cordero frita
+bls:Y435112	Mutton steak fried	filete de carnero frito
+bls:Y436232	Lamb skewer with vegetables, grilled	brochetas de cordero con verduras a la parrilla
+bls:Y441133	Mutton goulash	gulash de carnero
+bls:Y444113	Lamb ragout oriental style	ragú de cordero a la oriental
+bls:Y444123	Lamb ragout with carrots	ragú de cordero con zanahorias
+bls:Y444523	Mutton ragout with green beans	ragú de carnero con judías verdes
+bls:Y446123	Lamb curry (with sauce)	curry de cordero
+bls:Y461113	Lamb roast with red wine sauce from brown basic sauce	asado de cordero con salsa de vino tinto
+bls:Y461132	Lamb roast without sauce	asado de cordero sin salsa
+bls:Y462113	Lamb loin fried in oven, with rosemary and sauce	lomo de cordero asado con romero y salsa
+bls:Y463013	Braised lamb roast with sauce	asado de cordero braseado con salsa
+bls:Y497113	Leg of lamb fried in oven Provencal style, with sauce	pierna de cordero asada a la provenzal con salsa
+bls:Y497412	Leg of lamb braised with onions and mustard, with brown basic sauce	pierna de cordero braseada con cebolla y mostaza en salsa oscura
+bls:Y497623	Mutton stewed with white cabbage (Irish Stew)	carnero estofado con col (irish stew)
+bls:Y4A1000	Small lamb meatballs cooked	albóndigas de cordero cocidas
+bls:Y504023	Game ragout with brown basic sauce	ragú de caza con salsa oscura
+bls:Y504233	Game goulash with porcini mushrooms and game sauce from brown basic sauce	gulash de caza con boletus en salsa de caza
+bls:Y504322	Roe deer schnitzel breaded, fried	escalope de corzo empanado frito
+bls:Y504422	Game meatballs fried	albóndigas de caza fritas
+bls:Y514233	Venison ragout with brown basic sauce and red wine	ragú de ciervo con salsa oscura y vino tinto
+bls:Y516033	Venison roast with game sauce from brown basic sauce	asado de ciervo con salsa de caza
+bls:Y516112	Venison roast without sauce	asado de ciervo sin salsa
 bls:Y522133	Roe deer saddle fried in oven, with game sauce from brown basic sauce	lomo de corzo asado con salsa de caza
+bls:Y524233	Roe deer ragout	ragú de corzo
+bls:Y525023	"Rehpfeffer" savory roe deer goulash	gulash de corzo a la pimienta
+bls:Y526013	Roe deer roast with game sauce from brown basic sauce	asado de corzo con salsa de caza
+bls:Y527012	Leg of roe deer fried in oven (with fat and salt)	pierna de corzo asada con grasa y sal
+bls:Y531023	Marinated hare roast with sauce	asado de liebre marinada con salsa
+bls:Y534133	Hare ragout	ragú de liebre
+bls:Y536123	Hare roast with brown basic sauce and sour cream	asado de liebre con salsa oscura y nata agria
+bls:Y536133	Rabbit roast with brown basic sauce with cream	asado de conejo con salsa oscura de nata
 bls:Y536212	Rabbit roast without sauce	conejo asado sin salsa
+bls:Y546033	Leg of wild boar braised, with game sauce from brown basic sauce	pierna de jabalí braseada con salsa de caza
+bls:Y546123	Wild boar roast with bacon and game sauce from brown basic sauce	asado de jabalí con beicon y salsa de caza
+bls:Y556113	Wild duck braised, with bacon and brown basic sauce	pato salvaje braseado con beicon y salsa oscura
+bls:Y560123	Paprika chicken stewed, with sauce	pollo con pimentón estofado en salsa
+bls:Y560312	Chicken grilled	pollo a la brasa
+bls:Y560322	Chicken fried in oven (roast chicken)	pollo asado al horno
+bls:Y560723	Pilaf with stewed chicken breast fillet and sauce	pilaf con pechuga de pollo estofada y salsa
+bls:Y561422	Chicken in frying batter fried	pollo frito enrebozado a la vienesa
 bls:Y562032	Chicken breast fillet fried	filete de pechuga de pollo frito
+bls:Y562112	Chicken breast fillet fried, with stewed mixed vegetables	filete de pechuga de pollo frito con verduras mixtas estofadas
+bls:Y562123	Chicken breast fillet fried, with boiled asparagus and white basic sauce	filete de pechuga de pollo frito con espárragos cocidos y salsa blanca
+bls:Y562133	Chicken breast fillet fried, with braised cucumbers	filete de pechuga de pollo frito con pepinos estofados
+bls:Y563112	Chicken cordon bleu fried	cordon bleu de pollo frito
+bls:Y563212	Turkey cordon bleu fried	cordon bleu de pavo frito
+bls:Y564113	Chicken fricassee with button mushrooms	fricasé de pollo con champiñones
+bls:Y564123	Chicken fricassee with white wine	fricasé de pollo con vino blanco
+bls:Y564523	Chicken ragout with vegetables	ragú de pollo con verduras
+bls:Y567133	Chicken hearts braised, in white wine sauce from white basic sauce	corazones de pollo braseados en salsa de vino blanco
+bls:Y568223	Chicken boiled, with white basic sauce and sour cream	pollo cocido en salsa blanca con nata agria
+bls:Y569122	Chicken thigh fried in oven	muslo de pollo asado
+bls:Y569523	Chicken thigh boiled, in curry sauce	muslo de pollo cocido en salsa de curry
+bls:Y569533	Chicken thigh marinated, fried, with curry-yogurt sauce	muslo de pollo marinado frito con salsa de yogur y curry
+bls:Y576113	Duck fried in oven, with oranges and sauce	pato asado con naranjas y salsa
+bls:Y576133	Duck fried in oven, with brown basic sauce	pato asado con salsa oscura
+bls:Y576312	Duck breast fried in oven (with fat and salt)	pechuga de pato asada con grasa y sal
+bls:Y580013	Turkey fried in oven, with cream sauce from brown basic sauce	pavo asado con salsa de nata
+bls:Y580033	Turkey filled, fried in oven, with brown basic sauce	pavo relleno asado con salsa oscura
+bls:Y581233	Turkey with chestnut filling fried in oven, with lingonberry jam and brown basic sauce	pavo relleno de castañas asado con mermelada de arándanos rojos y salsa oscura
+bls:Y583212	Turkey schnitzel fried	escalope de pavo frito
+bls:Y583312	Turkey schnitzel breaded, fried	escalope de pavo empanado frito
+bls:Y584123	Turkey ragout with sweet pepper and sour cream	ragú de pavo con pimiento y nata agria
+bls:Y584223	Turkey ragout with tomatoes and button mushrooms	ragú de pavo con tomate y champiñones
+bls:Y584412	Turkey ragout with white wine and sour cream	pavo en tiras con vino blanco y nata agria
+bls:Y586113	Goose fried in oven, with brown basic sauce	oca asada con salsa oscura
+bls:Y591112	Chicken breast fillet breaded, fried	filete de pechuga de pollo empanado frito
+bls:Y593112	Duck meat in frying batter (with beer) deep-fried	carne de pato en rebozado de cerveza frita en abundante aceite
+bls:Y599012	Chicken thigh boiled (with fat and salt)	muslo de pollo cocido con grasa y sal
+bls:Y599112	Wrap filled with salad and fried chicken breast fillet	wrap de lechuga con filete de pechuga de pollo frito
+bls:Y5A1000	Chicken breast fillet with cornflakes breading, fried	filete de pechuga de pollo rebozado en cornflakes frito
+bls:Y5A2000	Chicken meatballs with button mushrooms, fried	albóndigas de pollo con champiñones fritas
+bls:Y5A3000	Chicken liver fried	hígado de pollo frito
+bls:Y5A4000	Chicken ragout fin	ragú fin de pollo
+bls:Y610232	Herring fillet breaded, fried	filete de arenque empanado frito
+bls:Y610412	Herring fillet grilled	filete de arenque a la parrilla
+bls:Y610512	Matjes herring roll	bocadillo de matjes
+bls:Y610610	Matjes herring with onions	matjes con cebolla
+bls:Y610712	Baked fish roll with cod	bocadillo de bacalao rebozado frito
+bls:Y610920	Pickled herring fillet in sauce "Heringsstip"	arenque marinado en salsa heringsstip
+bls:Y611012	Matjes herring fillet homemade	matjes a la casera
+bls:Y611410	Pickled herring fillet, in cream sauce	arenque en salsa de nata
+bls:Y611632	Fried herring marinated, drained	arenque frito marinado escurrido
+bls:Y611813	Herring cooked, in tomato sauce from white basic sauce	arenque cocido en salsa de tomate
+bls:Y612110	Pickled herring fillet, filled, rolled, drained	rollmops marinado escurrido
+bls:Y612413	Herring cooked, with horseradish sauce	arenque cocido con salsa de rábano picante
+bls:Y613312	Mackerel stewed, savory style	caballa estofada especiada
+bls:Y614323	Tuna fried, in white wine sauce from white basic sauce	atún frito en salsa de vino blanco
+bls:Y614533	Tuna steak marinated, grilled	filete de atún marinado a la parrilla
+bls:Y616133	Sardines with spinach filling baked	sardinas rellenas de espinacas al horno
+bls:Y616233	Sardines in white wine, baked	sardinas en vino blanco al horno
+bls:Y616433	Sardines with fennel seeds, baked	sardinas con semillas de hinojo estofadas
+bls:Y621712	Cod stewed on Asian vegetables	bacalao estofado sobre verduras asiáticas
+bls:Y621922	Cod fried, with stewed sweet peppers and tomatoes	bacalao frito con pimientos y tomates estofados
+bls:Y622112	Cod poached (without sauce)	bacalao escalfado sin salsa
+bls:Y622232	Cod fillet breaded, fried	filete de bacalao empanado frito
+bls:Y622633	Cod fillet in white wine sauce from white basic sauce with cream	filete de bacalao en salsa de vino blanco con nata
+bls:Y622733	Cod fillet filled, with white basic sauce with cream, baked	filete de bacalao relleno al horno en salsa blanca con nata
+bls:Y622812	Fried potatoes and fish pan with cod fillet	sartén de patatas fritas con filete de bacalao
+bls:Y622913	Cod fillet with vegetables, baked in foil	filete de bacalao con verduras al horno en papel de aluminio
+bls:Y623012	Saithe fillet stewed with white wine	filete de carbonero estofado con vino blanco
+bls:Y623133	Saithe fillet stewed, in white wine sauce from white basic sauce with cream	filete de carbonero estofado en salsa de vino blanco con nata
+bls:Y623312	Saithe fillet breaded, fried	filete de carbonero empanado frito
+bls:Y623523	Saithe risotto	risotto de carbonero
+bls:Y623612	Saithe fillet stewed (with fat and salt)	filete de carbonero estofado con grasa y sal
+bls:Y623723	Saithe roulade with bacon filling baked, with sauce	rollito de carbonero relleno de beicon al horno con salsa
+bls:Y623823	Saithe fillet steamed, with herb sauce from white basic sauce	filete de carbonero al vapor con salsa de hierbas
+bls:Y623912	Saithe fillet floured, fried	filete de carbonero enharinado frito
+bls:Y624112	Hake fillet poached (without sauce)	filete de merluza escalfado sin salsa
 bls:Y625112	Haddock fillet poached (without sauce)	filete de eglefino escalfado
+bls:Y626132	Ling breaded, fried	maruca empanada frita
+bls:Y627112	Sushi with salmon	sushi de salmón
+bls:Y631122	Plaice fillet floured, fried	filete de solla enharinado frito
+bls:Y631232	Plaice fillet with parsley breaded, fried	filete de solla empanado con perejil frito
+bls:Y631413	Plaice stewed, with white wine sauce from white basic sauce	solla estofada con salsa de vino blanco
+bls:Y632132	Plaice fried with bacon	solla a la hamburguesa frita con beicon
+bls:Y633212	Sole fillet fried	filete de lenguado frito
+bls:Y633533	Sole fillet gratinated	filete de lenguado gratinado
+bls:Y634113	Sole fillet stewed, in tomato sauce (of tomato paste)	filete de lenguado estofado en salsa de tomate
+bls:Y634233	Sole fillet stewed, in white wine sauce from white basic sauce	filete de lenguado estofado en salsa de vino blanco
+bls:Y634433	Sole floured, fried	lenguado enharinado frito
+bls:Y634732	Sole fillet grilled	filete de lenguado a la parrilla
+bls:Y635132	Flounder breaded, fried	platija empanada frita
 bls:Y740540	Russian eggs	huevos rellenos
 bls:Y810242	Apple dumplings	bolas de masa con manzana
 bls:Y814110	Apple-banana-pear salad sweetened with honey	ensalada de manzana, plátano y pera con miel

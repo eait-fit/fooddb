@@ -3365,10 +3365,18 @@ bls:X9A2080	Porridge sweetened, with soya drink	пюре зерново-фрук
 bls:X9A2090	Porridge sweetened, with water	пюре молочно-зерновое с овсяными хлопьями для прикорма
 bls:X9A2100	Porridge unsweetened, with milk 3.5 % fat	пюре молочно-зерновое с рисовыми хлопьями для прикорма
 bls:X9A2110	Porridge unsweetened, with soya drink	пюре зерново-фруктовое с бананом для прикорма
+bls:X9A2120	Porridge unsweetened, with water	овсяная каша на воде без сахара
+bls:X9A3000	Puff pastry pockets filled with leaf spinach and sheep's milk cheese, baked	слойки со шпинатом и овечьим сыром
 bls:X9A3010	Puff pastry pockets filled with cheese and boiled ham, baked	каша овсяная сладкая на молоке 3,5 %
 bls:X9A3020	Puff pastry pockets with salmon-schmand filling, baked	каша овсяная без сахара на молоке 3,5 %
 bls:X9A3030	Spring rolls vegetarian filled with vegetables, deep-fried	каша овсяная без сахара на соевом напитке
 bls:X9A3040	Vegetable muffins savoury	каша овсяная без сахара на миндальном напитке
+bls:X9A3050	Grissini	гриссини
+bls:X9A3060	Pate (shortcrust pastry) with button mushroom-cheese filling, baked	пирог на песочном тесте с начинкой из шампиньонов и сыра
+bls:X9A3070	Pie (shortcrust pastry) filled with vegetables and pork mince, baked	пирог на песочном тесте с овощами и свиным фаршем
+bls:X9A3080	Pirogue filled with minced meat, baked	пирог с мясным фаршем
+bls:X9A3090	Pirogue filled with sauerkraut, baked	пирог с квашеной капустой
+bls:X9A4000	Burrito filled with vegetables, beef mince and cheese	буррито с овощами, говяжьим фаршем и сыром
 bls:X9A4010	Burrito filled with vegetables, mushrooms and cheese	буррито с фаршем, фасолью и сыром
 bls:X9A4020	Pancakes unsweetened, with milk 3.5 % fat, fried in butter	блины без сахара на молоке 3,5 % жареные на сливочном масле
 bls:X9A4030	Pankcake casserole with spinach	запеканка из блинов со шпинатом
@@ -3450,15 +3458,307 @@ bls:Y144323	Beef ragout with sweet pepper	рагу говяжье со слад�
 bls:Y144423	Beef ragout	рагу говяжье
 bls:Y144512	Beef ragout with white wine	говядина ломтиками в белом вине
 bls:Y146113	Westphalian "Pfefferpotthast" (beef stew with sauce)	пефферпоттаст вестфальский
+bls:Y151112	Beef olive braised, with sauce	зразы говяжьи томлёные с соусом
+bls:Y160122	Beef fillet fried in oven, without sauce	говяжье филе запечённое без соуса
+bls:Y161013	Beef roast with sauce	говядина запечённая с соусом
+bls:Y161212	Beef roast without sauce	говядина запечённая без соуса
+bls:Y161333	Beef braised with onions and sauce	говядина томлёная с луком в соусе
+bls:Y162113	Rhenish "Sauerbraten" marinated beef roast, with sauce	зауэрбратен рейнский с соусом
+bls:Y162212	"Sauerbraten" marinated beef roast, with sauce	зауэрбратен с соусом
+bls:Y163213	Boeuf a la mode with sauce	бёф а ля мод с соусом
+bls:Y163313	Braised beef roast with bacon and sauce	говядина томлёная с беконом и соусом
 bls:Y171022	Beef heart, boiled, with herb sauce from white basic sauce	сердце говяжье варёное с соусом из зелени
+bls:Y171113	Beef heart, stewed, with sauce	сердце говяжье тушёное с соусом
+bls:Y171123	Beef heart, braised, with sauce	сердце говяжье томлёное с соусом
+bls:Y171223	Beef heart ragout with button mushrooms	рагу из говяжьего сердца с шампиньонами
+bls:Y171323	Beef heart ragout	рагу из говяжьего сердца
+bls:Y172012	Veal brain fried	мозги телячьи жареные
+bls:Y173012	Beef liver fried, with red wine sauce	печень говяжья жареная с соусом из красного вина
+bls:Y173032	Beef liver fried Berlin style	печень говяжья жареная по-берлински
+bls:Y173113	Beef liver fried	печень говяжья жареная
+bls:Y173623	Beef liver ragout, with brown basic sauce	говяжья печень ломтиками в тёмном соусе
+bls:Y173833	Beef liver ragout sour with sauce	говяжья печень ломтиками кислая с соусом
+bls:Y174122	Beef lung ragout with sauce	рагу из говяжьего лёгкого с соусом
+bls:Y175022	Sour beef tripe boiled, with brown basic sauce	говяжий рубец кислый варёный в тёмном соусе
+bls:Y175133	Fried beef tripe with egg	говяжий рубец жареный с яйцом по-болоньски
+bls:Y179012	Beef tongue boiled (in stock)	язык говяжий варёный
+bls:Y179032	Beef tongue boiled, with raisin sauce	язык говяжий варёный с изюмным соусом
+bls:Y179222	Ox tongue breaded, fried	язык бычий в панировке жареный
+bls:Y179423	Beef tongue ragout with button mushrooms	рагу из говяжьего языка с шампиньонами
+bls:Y180012	Beef boiled, with red wine sauce	говядина варёная с соусом из красного вина
+bls:Y180033	Beef boiled, with vegetables	говядина варёная с суповыми овощами
+bls:Y180133	Saxon "Zwiebelfleisch" (beef stew with onions)	говядина с луком по-саксонски
+bls:Y180512	Beef boiled	говядина варёная
+bls:Y180622	Beef boiled, with creamed apple-horseradish	говядина варёная со сливочным яблочным хреном
+bls:Y180723	Beef boiled, with caper sauce from white basic sauce	говядина варёная с соусом из каперсов
+bls:Y181132	Beef rump cap boiled, with horseradish sauce from white basic sauce	огузок говяжий варёный с соусом из хрена
+bls:Y181223	Smoked, cured beef, boiled, in cream sauce from brown basic sauce	копчёная солёная говядина варёная в сливочном соусе
+bls:Y182912	Beef goulash simple	гуляш говяжий простой
+bls:Y183013	Beef stock	бульон говяжий
+bls:Y184212	Beef stewed (with fat and salt)	говядина тушёная с жиром и солью
+bls:Y184312	Ox tail braised (with fat and salt)	бычий хвост томлёный с жиром и солью
+bls:Y184412	Beef fillet fried in oven (with fat and salt)	говяжье филе запечённое с жиром и солью
+bls:Y184512	Beef steak fried (with fat and salt)	говяжий стейк жареный с жиром и солью
+bls:Y184612	Beef braised (with fat and salt)	говядина томлёная с жиром и солью
+bls:Y1A1000	Beef goulash	гуляш говяжий
+bls:Y1A2000	Sour beef kidneys	почки говяжьи кислые
+bls:Y211022	Veal fillet fried in oven	телячье филе запечённое
+bls:Y211033	Veal loin stewed, with sauce	телячья корейка тушёная с соусом
+bls:Y213133	Veal medaillons fried, in white wine sauce from white basic sauce	телячьи медальоны жареные в соусе из белого вина
+bls:Y221013	Veal chop fried, with fried button mushrooms	отбивная телячья жареная с жареными шампиньонами
 bls:Y221122	Veal chop breaded, fried	телячья отбивная в панировке жареная
+bls:Y221232	Veal chop fried	отбивная телячья жареная
+bls:Y231022	Veal schnitzel floured, fried	телячий шницель обвалянный в муке жареный
+bls:Y231133	Veal schnitzel fried with Parma ham (Saltimbocca) and sauce	телячий шницель жареный с пармской ветчиной и соусом
+bls:Y231233	Veal chop fried, with cream sauce	отбивная телячья жареная со сливочным соусом
+bls:Y231322	Viennese schnitzel fried	венский шницель жареный
 bls:Y231432	Veal schnitzel grilled with boiled ham and cheese	телячий шницель с ветчиной и сыром
+bls:Y231632	Veal cordon bleu fried	кордон блю из телятины жареный
+bls:Y235022	Veal steak fried (with fat and salt)	телячий стейк жареный с жиром и солью
+bls:Y235032	Veal chop grilled, with basil butter	отбивная телячья на гриле с базиликовым маслом
+bls:Y235122	Veal chop stewed	отбивная телячья тушёная
+bls:Y238023	Veal loin fried in oven	телячья корейка запечённая
+bls:Y238033	Veal loin fried in oven, with sauce	телячья корейка запечённая с соусом
+bls:Y239123	Veal shoulder stewed, with cream sauce	телячья лопатка тушёная со сливочным соусом
+bls:Y240222	Veal meatballs fried	котлеты телячьи жареные
+bls:Y241033	Veal goulash	гуляш телячий
+bls:Y242013	Veal ragout Zurich style	телятина ломтиками по-цюрихски
+bls:Y243132	Veal skewer grilled	шашлык из телятины на гриле
+bls:Y244023	Veal ragout (ragout fin)	рагу фин из телятины
+bls:Y245013	Veal fricassee	фрикасе из телятины
 bls:Y251323	Veal olive fried, with brown basic sauce	телячьи зразы с тёмным соусом
+bls:Y252223	Veal rolled roast with white wine-cream sauce from brown basic sauce	рулет телячий запечённый с соусом из белого вина и сливок
+bls:Y253133	Veal loin roast with brown basic sauce	телячья корейка запечённая с тёмным соусом
+bls:Y260912	Veal roast without sauce	телятина запечённая без соуса
+bls:Y261013	Veal roast with white wine-cream sauce from brown basic sauce	телятина запечённая с соусом из белого вина и сливок
+bls:Y261023	Veal roast with brown basic sauce	телятина запечённая с тёмным соусом
+bls:Y261123	Veal roast with cream sauce	телятина запечённая со сливочным соусом
+bls:Y261213	Veal brisket with minced meat filling, fried in oven, with sauce	телячья грудинка фаршированная запечённая с соусом
+bls:Y261422	Veal brisket stewed, with brown basic sauce	телячья грудинка тушёная с тёмным соусом
+bls:Y263123	Veal goulash with cream	гуляш телячий со сливками
+bls:Y271013	Larded veal heart stewed, with cream sauce from brown basic sauce	сердце телячье шпигованное тушёное со сливочным соусом
+bls:Y271033	Veal heart braised, with cream sauce	сердце телячье томлёное со сливочным соусом
+bls:Y271133	Veal heart filled, stewed, with cream sauce from brown basic sauce	сердце телячье фаршированное тушёное со сливочным соусом
+bls:Y272112	Veal brain fried with egg	мозги телячьи жареные с яйцом
+bls:Y273012	Veal liver fried, with fried onions	печень телячья жареная с жареным луком
+bls:Y273032	Veal liver floured, fried	печень телячья обвалянная в муке жареная
+bls:Y273113	Veal liver fried Berlin style	печень телячья жареная по-берлински
+bls:Y273632	Veal liver skewer grilled	шашлычки из телячьей печени на гриле
+bls:Y274333	Veal lung ragout sour with sauce	рагу из телячьего лёгкого кислое с соусом
+bls:Y277013	Veal kidneys fried, with mustard sauce from brown basic sauce	почки телячьи жареные с горчичным соусом
+bls:Y277033	Veal kidney ragout with brown basic sauce	телячьи почки ломтиками в тёмном соусе
 bls:Y277133	Veal kidneys sour, fried, with cream sauce from brown basic sauce	почки телячьи жареные в сливочном соусе
+bls:Y278023	Veal sweetbread boiled, with white basic sauce	зобная железа телячья варёная в белом соусе
+bls:Y279033	Veal tongue boiled, with white wine sauce from white basic sauce and sour cream	язык телячий варёный с соусом из белого вина и сметаной
+bls:Y291113	Veal knuckle fried in oven, with orange sauce	телячья рулька запечённая с апельсиновым соусом
+bls:Y291133	Veal knuckle fried in oven, with brown basic sauce	телячья рулька запечённая с тёмным соусом
+bls:Y291223	Ossobuco alla milanese (veal leg slices braised)	оссобуко по-милански
+bls:Y292012	Veal boiled (with fat and salt)	телятина варёная с жиром и солью
+bls:Y299113	Leg of veal braised, with cream sauce from brown basic sauce	телячий окорок томлёный со сливочным соусом
+bls:Y2A1000	Veal pate (shortcrust pastry) with bacon and boiled ham, baked	пирог на песочном тесте с телятиной, беконом и ветчиной
+bls:Y2A1010	Veal pudding with ham and button mushrooms	пудинг из телятины с копчёной корейкой и шампиньонами
+bls:Y2A2000	Veal knuckle fried in oven, without sauce	телячья рулька запечённая без соуса
+bls:Y2A3000	Veal olive braised, with red wine sauce from brown basic sauce	зразы телячьи томлёные с соусом из красного вина
+bls:Y301122	Pork foreshank (hock) "Eisbein" cured, boiled	айсбайн варёный
+bls:Y301213	Pork loin spare ribs cured, boiled, with sauerkraut	свиные рёбра солёные варёные с квашеной капустой
+bls:Y301322	Pork loin chop cured, breaded, fried	свиная отбивная солёная в панировке жареная
+bls:Y301423	Pork loin cured, fried in oven, with brown basic sauce	свиная корейка солёная запечённая с тёмным соусом
+bls:Y301533	Pork loin spare ribs cured, fried in oven, with red wine sauce from brown basic sauce	свиные рёбра солёные запечённые с соусом из красного вина
+bls:Y301822	Pork loin chop cured, fried	свиная отбивная солёная жареная
+bls:Y302113	Pork loin spare ribs cured, fried in oven, with cream sauce from brown basic sauce	свиные рёбра солёные запечённые со сливочным соусом
+bls:Y302213	Pork loin chop cured, baked in puff pastry	свиная отбивная солёная в слоёном тесте запечённая
+bls:Y302232	Pork loin chop cured, baked in bread dough	свиная отбивная солёная в хлебном тесте запечённая
+bls:Y311112	Pork fillet braised, with sauce	свиное филе томлёное с соусом
+bls:Y311132	Pork fillet marinated, grilled, with orange	свиное филе маринованное на гриле с апельсином
+bls:Y311233	Pork medaillon fried, with apple and sauce	свиной медальон жареный с яблоком и соусом
+bls:Y311323	Pork tenderloin fried in oven, with brown basic sauce	свиная корейка запечённая с тёмным соусом
+bls:Y311332	Pork tenderloin wrapped in savoy cabbage, fried in oven	свиная корейка в савойской капусте запечённая
+bls:Y311522	Pork fillet stewed	свиное филе тушёное
+bls:Y311612	Pork medaillon fried	свиной медальон жареный
+bls:Y311712	Pork tenderloin fried in oven (with fat and salt)	свиная корейка запечённая с жиром и солью
+bls:Y321012	Pork chop breaded, fried	свиная отбивная в панировке жареная
+bls:Y321222	Pork chop fried	свиная отбивная жареная
+bls:Y321323	Pork chop stewed, with brown basic sauce	свиная отбивная тушёная с тёмным соусом
+bls:Y322113	Pork neck braised, with brown basic sauce	свиная шейка томлёная с тёмным соусом
+bls:Y332132	Pork schnitzel breaded, fried	свиной шницель в панировке жареный
+bls:Y332212	Pork schnitzel fried	свиной шницель жареный
+bls:Y332532	"Jaegerschnitzel" pork schnitzel fried, with mushroom sauce	шницель по-егерски с грибным соусом
+bls:Y332832	Pork cordon bleu fried	кордон блю из свинины жареный
+bls:Y333831	Pork schnitzel fried, with brown basic sauce	свиной шницель жареный с тёмным соусом
+bls:Y335012	Pork steak fried	свиной стейк жареный
+bls:Y336022	Shashlik with pork grilled	шашлык из свинины на гриле
+bls:Y336132	Meat skewer (veal and pork) grilled	шашлык из телятины и свинины на гриле
+bls:Y341013	Pork goulash with tomatoes and onions	гуляш свиной с томатами и луком
+bls:Y341023	Pork goulash	гуляш свиной
+bls:Y341113	"Szegediner" pork goulash	гуляш свиной по-сегедски
+bls:Y341313	"Debreziner" bean goulash with pork	гуляш из фасоли со свининой по-дебреценски
+bls:Y344013	Pork ragout	рагу свиное
+bls:Y344023	Pork ragout with vegetables	рагу свиное с овощами
+bls:Y346013	"Schweinepfeffer" savoury pork goulash	перечный гуляш из свинины
+bls:Y351013	Pork olive filled with sauerkraut braised, with sauce	зразы свиные фаршированные квашеной капустой томлёные с соусом
+bls:Y351023	Pork olive braised, with brown basic sauce	зразы свиные томлёные с тёмным соусом
+bls:Y351032	Pork olive braised, without sauce	зразы свиные томлёные без соуса
+bls:Y352013	Rolled pork roast with sauce	рулет свиной запечённый с соусом
+bls:Y352112	Pork roast with brown basic sauce	свинина запечённая с тёмным соусом
+bls:Y352212	Pork roast without sauce	свинина запечённая без соуса
+bls:Y361123	Pork loin braised, with brown basic sauce	свиная корейка томлёная с тёмным соусом
+bls:Y361233	Pork breast filled with minced meat fried in oven, with cream sauce from brown basic sauce	свиная грудинка с фаршем запечённая со сливочным соусом
+bls:Y361623	Pork roast with sauce, mixed vegetables and boiled salted potatoes	свинина запечённая с соусом, тушёными овощами и варёным картофелем
+bls:Y362012	Pork hock braised, without sauce	свиная рулька томлёная без соуса
+bls:Y362023	Pork hock braised, with sauce	свиная рулька томлёная с соусом
+bls:Y363323	Pork loin braised, with vegetables and sauce	свиная корейка томлёная с овощами и соусом
+bls:Y371013	Larded pork heart stewed, with cream sauce from brown basic sauce	сердце свиное шпигованное тушёное со сливочным соусом
+bls:Y371033	Pork heart ragout	рагу из свиного сердца
+bls:Y372012	Pork brain fried with egg	мозги свиные жареные с яйцом
+bls:Y373012	Pork liver floured, fried	печень свиная обвалянная в муке жареная
+bls:Y373032	Pork liver fried, with brown basic sauce	печень свиная жареная с тёмным соусом
+bls:Y373223	Pork liver ragout with apple, onions and brown basic sauce	свиная печень ломтиками с яблоком, луком и тёмным соусом
+bls:Y373323	Pork liver slices stewed, with cream sauce from brown basic sauce	свиная печень ломтиками тушёная со сливочным соусом
+bls:Y373622	Palatine pork liver dumplings cooked	клёцки из свиной печени по-пфальцски варёные
+bls:Y374113	Pork lung sour, boiled, with white basic sauce	свиное лёгкое кислое варёное в белом соусе
+bls:Y375213	Pork stomach stuffed, cooked	свиной желудок фаршированный варёный
+bls:Y377013	Pork kidney ragout sour, with brown basic sauce	свиные почки ломтиками кислые в тёмном соусе
+bls:Y377323	Pork kidneys fried, with mushrooms and brown basic sauce	почки свиные жареные с грибами и тёмным соусом
+bls:Y379032	Pork tongue boiled, with white wine sauce from white basic sauce	язык свиной варёный с соусом из белого вина
+bls:Y380212	Pork belly boiled, with sauerkraut with apple stewed	свиная грудинка варёная с квашеной капустой и яблоком
+bls:Y381352	Pork belly boiled	свиная грудинка варёная
+bls:Y384112	Gyros (pork) fried	гирос из свинины жареный
+bls:Y392023	Pork shoulder boiled, with herb sauce from white basic sauce	свиная лопатка варёная с травяным соусом
+bls:Y395222	Pork spare ribs boiled	свиные рёбрышки варёные
+bls:Y396213	Pork belly filled, fried in oven	свиная грудинка фаршированная запечённая
+bls:Y396512	Pork meatballs fried	котлеты свиные жареные
+bls:Y397812	Pork belly fried in oven (with fat and salt)	свиная грудинка запечённая с жиром и солью
+bls:Y3A1000	Pirogue with cured pork loin chop, baked	пирог с солёной свининой на дрожжевом тесте
+bls:Y3A2000	Pork steak fried, with carrots and peas stewed	свиной стейк жареный с тушёной морковью и горошком
+bls:Y404123	Small lamb meatballs with curry in tomato sauce (of tomato paste)	котлетки бараньи с карри в томатном соусе
+bls:Y410012	Mutton fillet fried	филе баранины жареное
+bls:Y413032	Lamb fillet fried	филе ягнёнка жареное
+bls:Y421012	Mutton chop fried	отбивная из баранины жареная
+bls:Y421233	Lamb chops marinated, grilled	отбивные из ягнёнка маринованные на гриле
+bls:Y422032	Lamb chop fried	отбивная из ягнёнка жареная
+bls:Y435112	Mutton steak fried	стейк из баранины жареный
+bls:Y436232	Lamb skewer with vegetables, grilled	шашлык из ягнёнка с овощами на гриле
+bls:Y441133	Mutton goulash	гуляш из баранины
+bls:Y444113	Lamb ragout oriental style	рагу из ягнёнка по-восточному
+bls:Y444123	Lamb ragout with carrots	рагу из ягнёнка с морковью
+bls:Y444523	Mutton ragout with green beans	рагу из баранины с зелёной фасолью
+bls:Y446123	Lamb curry (with sauce)	карри из ягнёнка
+bls:Y461113	Lamb roast with red wine sauce from brown basic sauce	ягнёнок запечённый с соусом из красного вина
+bls:Y461132	Lamb roast without sauce	ягнёнок запечённый без соуса
+bls:Y462113	Lamb loin fried in oven, with rosemary and sauce	корейка ягнёнка запечённая с розмарином и соусом
+bls:Y463013	Braised lamb roast with sauce	ягнёнок томлёный с соусом
+bls:Y497113	Leg of lamb fried in oven Provencal style, with sauce	окорок ягнёнка запечённый по-провански с соусом
+bls:Y497412	Leg of lamb braised with onions and mustard, with brown basic sauce	окорок ягнёнка томлёный с луком и горчицей в тёмном соусе
+bls:Y497623	Mutton stewed with white cabbage (Irish Stew)	баранина тушёная с белокочанной капустой
+bls:Y4A1000	Small lamb meatballs cooked	котлетки бараньи варёные
+bls:Y504023	Game ragout with brown basic sauce	рагу из дичи с тёмным соусом
+bls:Y504233	Game goulash with porcini mushrooms and game sauce from brown basic sauce	гуляш из дичи с белыми грибами в соусе для дичи
+bls:Y504322	Roe deer schnitzel breaded, fried	шницель из косули в панировке жареный
+bls:Y504422	Game meatballs fried	котлеты из дичи жареные
+bls:Y514233	Venison ragout with brown basic sauce and red wine	рагу из оленины с тёмным соусом и красным вином
+bls:Y516033	Venison roast with game sauce from brown basic sauce	оленина запечённая с соусом для дичи
+bls:Y516112	Venison roast without sauce	оленина запечённая без соуса
 bls:Y522133	Roe deer saddle fried in oven, with game sauce from brown basic sauce	седло косули запечённое с соусом для дичи
+bls:Y524233	Roe deer ragout	рагу из косули
+bls:Y525023	"Rehpfeffer" savory roe deer goulash	перечный гуляш из косули
+bls:Y526013	Roe deer roast with game sauce from brown basic sauce	косуля запечённая с соусом для дичи
+bls:Y527012	Leg of roe deer fried in oven (with fat and salt)	окорок косули запечённый с жиром и солью
+bls:Y531023	Marinated hare roast with sauce	заяц маринованный запечённый с соусом
+bls:Y534133	Hare ragout	рагу из зайца
+bls:Y536123	Hare roast with brown basic sauce and sour cream	заяц запечённый с тёмным соусом и сметаной
+bls:Y536133	Rabbit roast with brown basic sauce with cream	кролик запечённый с тёмным сливочным соусом
 bls:Y536212	Rabbit roast without sauce	кролик жареный без соуса
+bls:Y546033	Leg of wild boar braised, with game sauce from brown basic sauce	окорок кабана томлёный с соусом для дичи
+bls:Y546123	Wild boar roast with bacon and game sauce from brown basic sauce	кабан запечённый с беконом и соусом для дичи
+bls:Y556113	Wild duck braised, with bacon and brown basic sauce	дикая утка томлёная с беконом в тёмном соусе
+bls:Y560123	Paprika chicken stewed, with sauce	курица с паприкой тушёная в соусе
+bls:Y560312	Chicken grilled	курица на гриле
+bls:Y560322	Chicken fried in oven (roast chicken)	курица жареная в духовке
+bls:Y560723	Pilaf with stewed chicken breast fillet and sauce	плов с тушёным куриным филе и соусом
+bls:Y561422	Chicken in frying batter fried	курица в кляре жареная по-венски
 bls:Y562032	Chicken breast fillet fried	филе куриной грудки жареное
+bls:Y562112	Chicken breast fillet fried, with stewed mixed vegetables	куриное филе жареное с тушёными овощами
+bls:Y562123	Chicken breast fillet fried, with boiled asparagus and white basic sauce	куриное филе жареное с варёной спаржей и белым соусом
+bls:Y562133	Chicken breast fillet fried, with braised cucumbers	куриное филе жареное с тушёными огурцами
+bls:Y563112	Chicken cordon bleu fried	кордон блю из курицы жареный
+bls:Y563212	Turkey cordon bleu fried	кордон блю из индейки жареный
+bls:Y564113	Chicken fricassee with button mushrooms	фрикасе из курицы с шампиньонами
+bls:Y564123	Chicken fricassee with white wine	фрикасе из курицы с белым вином
+bls:Y564523	Chicken ragout with vegetables	рагу из курицы с овощами
+bls:Y567133	Chicken hearts braised, in white wine sauce from white basic sauce	куриные сердечки томлёные в соусе из белого вина
+bls:Y568223	Chicken boiled, with white basic sauce and sour cream	курица варёная в белом соусе со сметаной
+bls:Y569122	Chicken thigh fried in oven	куриный окорочок запечённый
+bls:Y569523	Chicken thigh boiled, in curry sauce	куриный окорочок варёный в соусе карри
+bls:Y569533	Chicken thigh marinated, fried, with curry-yogurt sauce	куриный окорочок маринованный жареный с йогуртовым соусом карри
+bls:Y576113	Duck fried in oven, with oranges and sauce	утка запечённая с апельсинами и соусом
+bls:Y576133	Duck fried in oven, with brown basic sauce	утка запечённая с тёмным соусом
+bls:Y576312	Duck breast fried in oven (with fat and salt)	утиная грудка запечённая с жиром и солью
+bls:Y580013	Turkey fried in oven, with cream sauce from brown basic sauce	индейка запечённая со сливочным соусом
+bls:Y580033	Turkey filled, fried in oven, with brown basic sauce	индейка фаршированная запечённая с тёмным соусом
+bls:Y581233	Turkey with chestnut filling fried in oven, with lingonberry jam and brown basic sauce	индейка фаршированная каштанами запечённая с брусничным джемом и тёмным соусом
+bls:Y583212	Turkey schnitzel fried	шницель из индейки жареный
+bls:Y583312	Turkey schnitzel breaded, fried	шницель из индейки в панировке жареный
+bls:Y584123	Turkey ragout with sweet pepper and sour cream	рагу из индейки со сладким перцем и сметаной
+bls:Y584223	Turkey ragout with tomatoes and button mushrooms	рагу из индейки с томатами и шампиньонами
+bls:Y584412	Turkey ragout with white wine and sour cream	индейка ломтиками с белым вином и сметаной
+bls:Y586113	Goose fried in oven, with brown basic sauce	гусь запечённый с тёмным соусом
+bls:Y591112	Chicken breast fillet breaded, fried	куриное филе в панировке жареное
+bls:Y593112	Duck meat in frying batter (with beer) deep-fried	утиное мясо в пивном кляре во фритюре
+bls:Y599012	Chicken thigh boiled (with fat and salt)	куриный окорочок варёный с жиром и солью
+bls:Y599112	Wrap filled with salad and fried chicken breast fillet	врап с салатом и жареным куриным филе
+bls:Y5A1000	Chicken breast fillet with cornflakes breading, fried	куриное филе в кукурузных хлопьях жареное
+bls:Y5A2000	Chicken meatballs with button mushrooms, fried	котлеты куриные с шампиньонами жареные
+bls:Y5A3000	Chicken liver fried	печень куриная жареная
+bls:Y5A4000	Chicken ragout fin	рагу фин из курицы
+bls:Y610232	Herring fillet breaded, fried	филе сельди в панировке жареное
+bls:Y610412	Herring fillet grilled	филе сельди на гриле
+bls:Y610512	Matjes herring roll	булочка с матье
+bls:Y610610	Matjes herring with onions	матье с луком
+bls:Y610712	Baked fish roll with cod	булочка с треской в кляре
+bls:Y610920	Pickled herring fillet in sauce "Heringsstip"	сельдь маринованная в соусе херингстип
+bls:Y611012	Matjes herring fillet homemade	филе матье по-домашнему
+bls:Y611410	Pickled herring fillet, in cream sauce	сельдь в сливочном соусе
+bls:Y611632	Fried herring marinated, drained	сельдь жареная маринованная слитая
+bls:Y611813	Herring cooked, in tomato sauce from white basic sauce	сельдь припущенная в томатном соусе
+bls:Y612110	Pickled herring fillet, filled, rolled, drained	рольмопс маринованный слитый
+bls:Y612413	Herring cooked, with horseradish sauce	сельдь припущенная с хреновым соусом
+bls:Y613312	Mackerel stewed, savory style	скумбрия тушёная пряная
+bls:Y614323	Tuna fried, in white wine sauce from white basic sauce	тунец жареный в соусе из белого вина
+bls:Y614533	Tuna steak marinated, grilled	стейк тунца маринованный на гриле
+bls:Y616133	Sardines with spinach filling baked	сардины с начинкой из шпината запечённые
+bls:Y616233	Sardines in white wine, baked	сардины в белом вине запечённые
+bls:Y616433	Sardines with fennel seeds, baked	сардины с семенами фенхеля тушёные
+bls:Y621712	Cod stewed on Asian vegetables	треска тушёная на азиатских овощах
+bls:Y621922	Cod fried, with stewed sweet peppers and tomatoes	треска жареная с тушёными перцами и томатами
+bls:Y622112	Cod poached (without sauce)	треска припущенная без соуса
+bls:Y622232	Cod fillet breaded, fried	филе трески в панировке жареное
+bls:Y622633	Cod fillet in white wine sauce from white basic sauce with cream	филе трески в соусе из белого вина со сливками
+bls:Y622733	Cod fillet filled, with white basic sauce with cream, baked	филе трески фаршированное запечённое в белом соусе со сливками
+bls:Y622812	Fried potatoes and fish pan with cod fillet	жареный картофель с филе трески на сковороде
+bls:Y622913	Cod fillet with vegetables, baked in foil	филе трески с овощами запечённое в фольге
+bls:Y623012	Saithe fillet stewed with white wine	филе сайды тушёное с белым вином
+bls:Y623133	Saithe fillet stewed, in white wine sauce from white basic sauce with cream	филе сайды тушёное в соусе из белого вина со сливками
+bls:Y623312	Saithe fillet breaded, fried	филе сайды в панировке жареное
+bls:Y623523	Saithe risotto	ризотто с сайдой
+bls:Y623612	Saithe fillet stewed (with fat and salt)	филе сайды тушёное с жиром и солью
+bls:Y623723	Saithe roulade with bacon filling baked, with sauce	рулет из сайды фаршированный беконом запечённый с соусом
+bls:Y623823	Saithe fillet steamed, with herb sauce from white basic sauce	филе сайды на пару с травяным соусом
+bls:Y623912	Saithe fillet floured, fried	филе сайды обвалянное в муке жареное
+bls:Y624112	Hake fillet poached (without sauce)	филе хека припущенное без соуса
 bls:Y625112	Haddock fillet poached (without sauce)	филе пикши припущенное
+bls:Y626132	Ling breaded, fried	мольва в панировке жареная
+bls:Y627112	Sushi with salmon	суши с лососем
+bls:Y631122	Plaice fillet floured, fried	филе камбалы обвалянное в муке жареное
+bls:Y631232	Plaice fillet with parsley breaded, fried	филе камбалы в панировке с петрушкой жареное
+bls:Y631413	Plaice stewed, with white wine sauce from white basic sauce	камбала тушёная в соусе из белого вина
+bls:Y632132	Plaice fried with bacon	камбала с беконом жареная по-гамбургски
+bls:Y633212	Sole fillet fried	филе морского языка жареное
+bls:Y633533	Sole fillet gratinated	филе морского языка запечённое под сыром
+bls:Y634113	Sole fillet stewed, in tomato sauce (of tomato paste)	филе морского языка тушёное в томатном соусе
+bls:Y634233	Sole fillet stewed, in white wine sauce from white basic sauce	филе морского языка тушёное в соусе из белого вина
+bls:Y634433	Sole floured, fried	морской язык обвалянный в муке жареный
+bls:Y634732	Sole fillet grilled	филе морского языка на гриле
+bls:Y635132	Flounder breaded, fried	речная камбала в панировке жареная
 bls:Y740540	Russian eggs	яйца по-русски
 bls:Y810242	Apple dumplings	яблоки в тесте
 bls:Y814110	Apple-banana-pear salad sweetened with honey	фруктовый салат яблоко-банан-груша с мёдом
