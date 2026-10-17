@@ -7524,9 +7524,206 @@ fdc:174808	Soup, hot and sour, Chinese restaurant	sopa agripicante china
 fdc:174809	Beverages, THE COCA-COLA COMPANY, NOS Zero, energy drink, sugar-free with guarana, fortified with vitamins B6 and B12	bebida energética NOS Zero sin azúcar con guaraná
 fdc:174810	Alcoholic beverage, whiskey sour, canned	whiskey sour en conserva
 fdc:174811	Beverages, Whiskey sour mix, bottled	mezcla para whiskey sour
-fdc:174909	Bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs	pan de maíz
-fdc:174949	Cookies, brownies, prepared from recipe	brownie
-fdc:175001	Ice cream cones, sugar, rolled-type	cucurucho de barquillo
+fdc:174812	Alcoholic beverage, whiskey sour, prepared from item 14028	whiskey sour
+fdc:174813	Beverages, ABBOTT, EAS soy protein powder	proteína de soja en polvo EAS
+fdc:174814	Beverages, CYTOSPORT, Muscle Milk, ready-to-drink	batido proteico Muscle Milk
+fdc:174815	Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof	destilado 40°
+fdc:174816	Beverages, OCEAN SPRAY, Cran-Energy, Cranberry Energy Juice Drink	bebida energética de arándano Ocean Spray
+fdc:174817	Alcoholic beverage, distilled, rum, 80 proof	ron 40°
+fdc:174818	Alcoholic beverage, distilled, vodka, 80 proof	vodka 40°
+fdc:174819	Alcoholic beverage, distilled, whiskey, 86 proof	whisky 43°
+fdc:174820	Beverages, almond milk, chocolate, ready-to-drink	bebida de almendra con chocolate
+fdc:174821	Beverages, Energy Drink with carbonated water and high fructose corn syrup	bebida energética con gas
+fdc:174822	Beverages, Energy Drink, sugar free	bebida energética sin azúcar
+fdc:174823	Beverages, ABBOTT, ENSURE, Nutritional Shake, Ready-to-Drink	batido nutritivo Ensure
+fdc:174824	Beverages, chocolate powder, no sugar added	cacao en polvo sin azúcar añadido
+fdc:174825	Beverages, ZEVIA, cola	cola Zevia
+fdc:174826	Beverages, ZEVIA, cola, caffeine free	cola sin cafeína Zevia
+fdc:174827	Beverages, GEROLSTEINER BRUNNEN GmbH & Co. KG,Gerolsteiner naturally sparkling mineral water,	agua mineral con gas Gerolsteiner
+fdc:174828	Beverages, yellow green colored citrus soft drink with caffeine	refresco de cítricos con cafeína
+fdc:174829	Beverages, V8 SPLASH Smoothies, Strawberry Banana	smoothie de fresa y plátano V8 Splash
+fdc:174830	Beverages, V8 SPLASH Smoothies, Tropical Colada	smoothie tropical V8 Splash
+fdc:174831	Beverages, Coconut water, ready-to-drink, unsweetened	agua de coco sin azúcar
+fdc:174832	Beverages, almond milk, unsweetened, shelf stable	bebida de almendra sin azúcar
+fdc:174833	Alcoholic Beverage, wine, table, red, Cabernet Sauvignon	vino tinto cabernet sauvignon
+fdc:174834	Alcoholic Beverage, wine, table, red, Cabernet Franc	vino tinto cabernet franc
+fdc:174835	Alcoholic Beverage, wine, table, red, Pinot Noir	vino tinto pinot noir
+fdc:174836	Alcoholic Beverage, wine, table, red, Syrah	vino tinto syrah
+fdc:174837	Alcoholic beverage, wine, table, white	vino blanco de mesa
+fdc:174838	Alcoholic Beverage, wine, table, red, Lemberger	vino tinto lemberger
+fdc:174839	Alcoholic Beverage, wine, table, red, Sangiovese	vino tinto sangiovese
+fdc:174840	Alcoholic Beverage, wine, table, red, Carignane	vino tinto cariñena
+fdc:174841	Alcoholic beverage, wine, table, white, Pinot Gris (Grigio)	vino blanco pinot gris
+fdc:174842	Beverages, carbonated, club soda	soda
+fdc:174843	Alcoholic beverage, wine, table, white, Gewurztraminer	vino blanco gewürztraminer
+fdc:174844	Alcoholic beverage, wine, table, white, late harvest, Gewurztraminer	vino blanco gewürztraminer de vendimia tardía
+fdc:174845	Alcoholic beverage, wine, table, white, Semillon	vino blanco semillón
+fdc:174846	Beverages, carbonated, ginger ale	ginger ale
+fdc:174847	Beverages, NESTEA, tea, black, ready-to-drink, lemon	té negro de limón Nestea
+fdc:174848	Alcoholic beverage, wine, table, white, Pinot Blanc	vino blanco pinot blanc
+fdc:174849	Alcoholic beverage, wine, table, white, Muscat	vino blanco moscatel
+fdc:174850	Beverages, carbonated, low calorie, cola or pepper-type, with aspartame, without caffeine	refresco de cola dietético con aspartamo sin cafeína
+fdc:174851	Beverages, carbonated, cola, without caffeine	cola sin cafeína
+fdc:174852	Beverages, carbonated, cola, regular	cola
+fdc:174853	Beverages, carbonated, reduced sugar, cola, contains caffeine and sweeteners	cola reducida en azúcar
+fdc:174854	Beverages, carbonated, orange	refresco de naranja
+fdc:174855	Beverages, tea, black, ready-to-drink, peach, diet	té negro de melocotón dietético
+fdc:174856	Beverages, OCEAN SPRAY, Ruby Red cranberry	bebida de arándano Ruby Red Ocean Spray
+fdc:174857	Beverages, MOTTS, Apple juice light, fortified with vitamin C	zumo de manzana ligero con vitamina C Mott's
+fdc:174858	Beverages, Lemonade, powder	mezcla para limonada en polvo
+fdc:174859	Lemonade, powder, prepared with water	limonada
+fdc:174860	Beverages, lemonade-flavor drink, powder	mezcla para bebida de limón en polvo
+fdc:174861	Beverages, lemonade-flavor drink, powder, prepared with water	bebida de limón
+fdc:174862	Limeade, frozen concentrate, prepared with water	limonada de lima
+fdc:174863	Malt beverage, includes non-alcoholic beer	cerveza sin alcohol
+fdc:174864	Beverages, OVALTINE, Classic Malt powder	bebida de malta en polvo Ovaltine
+fdc:174865	Beverages, Malted drink mix, chocolate, with added nutrients, powder, prepared with whole milk	bebida de malta con chocolate enriquecida con leche entera
+fdc:174866	Beverages, malted drink mix, chocolate, powder	mezcla de malta y chocolate en polvo
+fdc:174867	Beverages, Malted drink mix, chocolate, powder, prepared with whole milk	bebida de malta con chocolate con leche entera
+fdc:174868	Beverages, orange drink, canned, with added vitamin C	bebida de naranja con vitamina C en conserva
+fdc:174869	Strawberry-flavor beverage mix, powder	mezcla para bebida de fresa en polvo
+fdc:174870	Beverages, Strawberry-flavor beverage mix, powder, prepared with whole milk	bebida de fresa con leche entera
+fdc:174871	Beverages, tea, black, brewed, prepared with tap water, decaffeinated	té negro descafeinado
+fdc:174872	Beverages, tea, instant, decaffeinated, unsweetened	té soluble descafeinado sin azúcar
+fdc:174873	Beverages, tea, instant, unsweetened, prepared with water	té soluble
+fdc:174874	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, cooked, braised	chuletas de paletilla de cordero neozelandés con grasa estofadas
+fdc:174875	Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, raw	chuletas de paletilla de cordero neozelandés con grasa crudas
+fdc:174876	Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, cooked, slow roasted	paletilla de cordero neozelandés con grasa asada
+fdc:174877	Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, raw	pierna de cordero neozelandés deshuesada sin anca ni jarrete con grasa cruda
+fdc:174878	Lamb, New Zealand, imported, tenderloin, separable lean and fat, raw	solomillo de cordero neozelandés con grasa crudo
+fdc:174879	Veal, ground, cooked, pan-fried	carne picada de ternera frita
+fdc:174880	Veal, leg, top round, cap off, cutlet, boneless, cooked, grilled	escalope de ternera de tapa sin hueso a la parrilla
+fdc:174881	Veal, shoulder, blade chop, separable lean only, cooked, grilled	chuleta de aguja de ternera magra a la parrilla
+fdc:174882	Veal, external fat only, raw	grasa externa de ternera cruda
+fdc:174883	Veal, external fat only, cooked	grasa externa de ternera cocinada
+fdc:174884	Veal, seam fat only, raw	grasa intermuscular de ternera cruda
+fdc:174885	Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano parte baja sin hueso magra grasa 1/8" asada
+fdc:174886	Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean only, trimmed to 1/8" fat, cooked, braised	jarrete trasero de cordero australiano con hueso magro grasa 1/8" estofado
+fdc:174887	Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean only, trimmed to 1/8" fat, raw	jarrete trasero de cordero australiano con hueso magro grasa 1/8" crudo
+fdc:174888	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted	solomillo de cordero australiano sin hueso magro grasa 1/8" asado
+fdc:174889	Lamb, Australian, imported, fresh, rack, roast, frenched, denuded, bone-in, separable lean only, trimmed to 0" fat, cooked, roasted	carré de cordero australiano francés denudado con hueso magro sin grasa visible asado
+fdc:174890	Lamb, Australian, imported, fresh, rack, roast, frenched, bone-in, separable lean only, trimmed to 1/8" fat, cooked, roasted	carré de cordero australiano francés con hueso magro grasa 1/8" asado
+fdc:174891	Lamb, Australian, imported, fresh, external fat, cooked	grasa externa de cordero australiano cocinada
+fdc:174892	Lamb, Australian, imported, fresh, external fat, raw	grasa externa de cordero australiano cruda
+fdc:174893	Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, braised	jarrete trasero de cordero australiano con hueso con grasa grasa 1/8" estofado
+fdc:174894	Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	jarrete trasero de cordero australiano con hueso con grasa grasa 1/8" crudo
+fdc:174895	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	pierna de cordero australiano sin mano con hueso con grasa grasa 1/8" asada
+fdc:174896	Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean and fat, trimmed to 1/8" fat, raw	pierna de cordero australiano sin mano con hueso con grasa grasa 1/8" cruda
+fdc:174897	Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted	solomillo de cordero australiano sin hueso con grasa grasa 1/8" asado
+fdc:174898	Lamb, Australian, imported, fresh, rib chop, frenched, denuded, bone-in, separable lean and fat, trimmed to 0" fat, cooked, grilled	chuleta de cordero australiano francesa denudada con hueso con grasa sin grasa visible a la parrilla
+fdc:174899	Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)	bagels
+fdc:174900	Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame), toasted	bagels tostados
+fdc:174901	Bagels, egg	bagels de huevo
+fdc:174902	Biscuits, plain or buttermilk, dry mix	mezcla para biscotes seca
+fdc:174903	Biscuits, plain or buttermilk, dry mix, prepared	biscotes de mezcla
+fdc:174904	Biscuits, plain or buttermilk, refrigerated dough, lower fat	biscotes de masa refrigerada bajos en grasa
+fdc:174905	Biscuits, plain or buttermilk, refrigerated dough, lower fat, baked	biscotes de masa refrigerada bajos en grasa horneados
+fdc:174906	Bread, banana, prepared from recipe, made with margarine	pan de plátano
+fdc:174907	Bread, boston brown, canned	pan de Boston en conserva
+fdc:174908	Bread, cornbread, dry mix, enriched (includes corn muffin mix)	mezcla para pan de maíz seca
+fdc:174909	Bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs	pan de maíz de mezcla
+fdc:174910	Bread, cornbread, prepared from recipe, made with low fat (2%) milk	pan de maíz casero
+fdc:174911	Bread, french or vienna, toasted (includes sourdough)	pan francés tostado
+fdc:174912	Bread, irish soda, prepared from recipe	pan de soda irlandés
+fdc:174913	Bread, Italian	pan italiano
+fdc:174914	Bread, multi-grain, toasted (includes whole-grain)	pan multicereal tostado
+fdc:174915	Bread, pita, white, enriched	pan de pita blanco
+fdc:174916	Bread, pita, whole-wheat	pan de pita integral
+fdc:174917	Bread, protein (includes gluten)	pan proteico
+fdc:174918	Bread, pumpernickel	pan pumpernickel
+fdc:174919	Bread, reduced-calorie, oatmeal	pan de avena bajo en calorías
+fdc:174920	Bread, reduced-calorie, rye	pan de centeno bajo en calorías
+fdc:174921	Bread, reduced-calorie, wheat	pan de trigo bajo en calorías
+fdc:174922	Bread, reduced-calorie, white	pan blanco bajo en calorías
+fdc:174923	Bread, rice bran	pan de salvado de arroz
+fdc:174924	Bread, white, commercially prepared (includes soft bread crumbs)	pan blanco
+fdc:174925	Bread, white, commercially prepared, toasted	pan blanco tostado
+fdc:174926	Bread, white, prepared from recipe, made with nonfat dry milk	pan blanco casero con leche en polvo desnatada
+fdc:174927	Bread, white, prepared from recipe, made with low fat (2%) milk	pan blanco casero con leche semidesnatada
+fdc:174928	Bread, crumbs, dry, grated, plain	pan rallado
+fdc:174929	Bread, sticks, plain	grisines
+fdc:174930	Bread, stuffing, dry mix	mezcla para relleno seca
+fdc:174931	Bread, stuffing, dry mix, prepared	relleno de pan
+fdc:174932	Cake, pudding-type, carrot, dry mix	mezcla para pastel de zanahoria seca
+fdc:174933	Cake, cherry fudge with chocolate frosting	pastel de cereza con glaseado de chocolate
+fdc:174934	Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery	pastel de chocolate con glaseado de chocolate
+fdc:174935	Cake, pudding-type, chocolate, dry mix	mezcla para pastel de chocolate seca
+fdc:174936	Cake, coffeecake, creme-filled with chocolate frosting	pastel de café relleno de crema con glaseado de chocolate
+fdc:174937	Cake, coffeecake, fruit	pastel de café de fruta
+fdc:174938	Cake, coffeecake, cinnamon with crumb topping, dry mix, prepared	pastel de café de canela con crumble de mezcla
+fdc:174939	Cake, fruitcake, commercially prepared	pastel de frutas
+fdc:174940	Cake, pound, commercially prepared, other than all butter, enriched	bizcocho de mantequilla
+fdc:174941	Cake, shortcake, biscuit-type, prepared from recipe	bizcocho de masa quebrada
+fdc:174942	Cake, snack cakes, creme-filled, chocolate with frosting	pastelito de chocolate relleno de crema con glaseado
+fdc:174943	Cake, snack cakes, creme-filled, sponge	pastelito relleno de crema
+fdc:174944	Cake, yellow, commercially prepared, with chocolate frosting, in-store bakery	pastel amarillo con glaseado de chocolate
+fdc:174945	Cake, yellow, commercially prepared, with vanilla frosting	pastel amarillo con glaseado de vainilla
+fdc:174946	Cake, pudding-type, yellow, dry mix	mezcla para pastel amarillo seca
+fdc:174947	Cake, yellow, enriched, dry mix	mezcla para pastel amarillo enriquecida seca
+fdc:174948	Cookies, brownies, dry mix, regular	mezcla para brownie seca
+fdc:174949	Cookies, brownies, prepared from recipe	brownies caseros
+fdc:174950	Cookies, butter, commercially prepared, enriched	galletas de mantequilla
+fdc:174951	Cookies, fudge, cake-type (includes trolley cakes)	galletas de chocolate tipo bizcocho
+fdc:174952	Cookies, chocolate chip, dry mix	mezcla para galletas con pepitas de chocolate seca
+fdc:174953	Cookies, chocolate chip, refrigerated dough	masa refrigerada para galletas con pepitas de chocolate
+fdc:174954	Cookies, chocolate chip, refrigerated dough, baked	galletas con pepitas de chocolate de masa refrigerada
+fdc:174955	Cookies, chocolate chip, prepared from recipe, made with margarine	galletas con pepitas de chocolate caseras
+fdc:174956	Cookies, gingersnaps	galletas de jengibre
+fdc:174957	Cookies, graham crackers, plain or honey (includes cinnamon)	galletas graham
+fdc:174958	Cookies, graham crackers, chocolate-coated	galletas graham cubiertas de chocolate
+fdc:174959	Cookies, ladyfingers, with lemon juice and rind	bizcochos de soletilla con limón
+fdc:174960	Cookies, oatmeal, dry mix	mezcla para galletas de avena seca
+fdc:174961	Cookies, oatmeal, refrigerated dough	masa refrigerada para galletas de avena
+fdc:174962	Cookies, oatmeal, refrigerated dough, baked	galletas de avena de masa refrigerada
+fdc:174963	Cookies, oatmeal, with raisins	galletas de avena con pasas
+fdc:174964	Cookies, peanut butter, prepared from recipe	galletas de crema de cacahuete caseras
+fdc:174965	Cookies, peanut butter sandwich, regular	galletas sándwich de crema de cacahuete
+fdc:174966	Cookies, raisin, soft-type	galletas de pasas blandas
+fdc:174967	Cookies, shortbread, commercially prepared, plain	galletas de mantequilla escocesas
+fdc:174968	Cookies, shortbread, commercially prepared, pecan	galletas de mantequilla escocesas con pacanas
+fdc:174969	Cookies, peanut butter sandwich, special dietary	galletas sándwich de crema de cacahuete dietéticas
+fdc:174970	Cookies, sugar wafer, with creme filling, sugar free	barquillos de azúcar con crema sin azúcar
+fdc:174971	Cookies, sugar, commercially prepared, regular (includes vanilla)	galletas de azúcar
+fdc:174972	Cookies, sugar, refrigerated dough	masa refrigerada para galletas de azúcar
+fdc:174973	Cookies, vanilla wafers, lower fat	barquillos de vainilla bajos en grasa
+fdc:174974	Cookies, vanilla wafers, higher fat	barquillos de vainilla
+fdc:174975	Crackers, cheese, regular	galletas de queso
+fdc:174976	Crackers, cheese, sandwich-type with peanut butter filling	galletas de queso sándwich con crema de cacahuete
+fdc:174977	Crackers, melba toast, plain	tostas melba
+fdc:174978	Crackers, melba toast, rye (includes pumpernickel)	tostas melba de centeno
+fdc:174979	Crackers, melba toast, wheat	tostas melba de trigo
+fdc:174980	Crackers, milk	galletas de leche
+fdc:174981	Crackers, rusk toast	biscotes
+fdc:174982	Crackers, standard snack-type, regular	galletas saladas
+fdc:174983	Crackers, standard snack-type, sandwich, with cheese filling	galletas sándwich con queso
+fdc:174984	Crackers, standard snack-type, sandwich, with peanut butter filling	galletas sándwich con crema de cacahuete
+fdc:174985	Crackers, wheat, regular	galletas de trigo
+fdc:174986	Cream puff shell, prepared from recipe	profiteroles
+fdc:174987	Croissants, butter	cruasanes de mantequilla
+fdc:174988	Croissants, apple	cruasán de manzana
+fdc:174989	Croissants, cheese	cruasán de queso
+fdc:174990	Doughnuts, cake-type, plain (includes unsugared, old-fashioned)	rosquillas de bizcocho
+fdc:174991	Doughnuts, cake-type, plain, chocolate-coated or frosted	rosquillas de bizcocho con chocolate
+fdc:174992	Doughnuts, cake-type, plain, sugared or glazed	rosquillas de bizcocho azucaradas o glaseadas
+fdc:174993	Doughnuts, cake-type, chocolate, sugared or glazed	rosquillas de bizcocho de chocolate glaseadas
+fdc:174994	Muffins, English, plain, enriched, with ca prop (includes sourdough)	muffins ingleses
+fdc:174995	Muffins, English, plain, toasted, enriched, with calcium propionate (includes sourdough)	muffins ingleses tostados
+fdc:174996	Muffins, English, mixed-grain (includes granola)	muffins ingleses multicereales
+fdc:174997	Muffins, English, raisin-cinnamon (includes apple-cinnamon)	muffins ingleses de pasas y canela
+fdc:174998	French toast, prepared from recipe, made with low fat (2%) milk	torrijas con leche semidesnatada
+fdc:174999	Hush puppies, prepared from recipe	buñuelos de maíz fritos
+fdc:175000	Ice cream cones, cake or wafer-type	barquillos para helado
+fdc:175001	Ice cream cones, sugar, rolled-type	cucuruchos
+fdc:175002	Muffins, corn, commercially prepared	muffins de maíz
+fdc:175003	Muffins, corn, dry mix, prepared	muffins de maíz de mezcla
+fdc:175004	Muffins, corn, toaster-type	muffins de maíz para tostadora
+fdc:175005	Muffins, corn, prepared from recipe, made with low fat (2%) milk	muffins de maíz caseros
+fdc:175006	Pancakes, plain, dry mix, complete, prepared	tortitas de mezcla completa
+fdc:175007	Pancakes, plain, dry mix, incomplete (includes buttermilk)	mezcla para tortitas incompleta seca
+fdc:175008	Pancakes, plain, dry mix, incomplete, prepared	tortitas de mezcla
+fdc:175009	Pancakes, plain, prepared from recipe	tortitas caseras
+fdc:175010	Pancakes, whole-wheat, dry mix, incomplete, prepared	tortitas integrales de mezcla
+fdc:175011	Pie, apple, commercially prepared, enriched flour	tarta de manzana
 fdc:1750340	Apples, fuji, with skin, raw	manzana fuji
 fdc:175042	Leavening agents, yeast, baker's, compressed	levadura prensada
 fdc:175154	Fish, trout, rainbow, wild, raw	trucha arcoíris silvestre cruda
