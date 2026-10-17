@@ -1446,26 +1446,1456 @@ bls:P464000	Sherry sweet	jerez dulce
 bls:P560000	Bitter/herb/spice liqueur	licor de hierbas amargo
 bls:S201500	Coffee ice cream, in waffle cone	cucurucho de helado de café
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	helado de chocolate y vainilla con licor de huevo
+bls:S242200	Caramel ice cream	helado de caramelo
+bls:S242300	Walnut ice cream	helado de nueces
+bls:S242400	Ice cream mixed (chocolate, vanilla, fruit)	helado surtido (chocolate, vainilla, fruta)
+bls:S242500	Ice cream mixed (chocolate, vanilla, nut)	helado surtido (chocolate, vainilla, nuez)
+bls:S242600	Ice cream mixed (chocolate, nut)	helado surtido (chocolate, nuez)
+bls:S242700	Ice cream mixed (caramel, vanilla)	helado surtido (caramelo, vainilla)
+bls:S242800	Vanilla ice cream with egg liqueur	helado de vainilla con licor de huevo
+bls:S242900	Ice cream mixed (chocolate, fruit, coffee)	helado surtido (chocolate, fruta, café)
+bls:S243000	Ice cream mixed (chocolate, vanilla)	helado surtido (chocolate, vainilla)
+bls:S243200	Ice cream mixed (chocolate, vanilla, nut) with egg liqueur	helado surtido (chocolate, vainilla, nuez) con licor de huevo
+bls:S243300	Ice cream mixed (chocolate, vanilla, coffee, caramel)	helado surtido (chocolate, vainilla, café, caramelo)
+bls:S243400	Ice cream mixed (chocolate, vanilla, caramel)	helado surtido (chocolate, vainilla, caramelo)
+bls:S243600	Ice cream mixed (chocolate, nut, fruit)	helado surtido (chocolate, nuez, fruta)
+bls:S243800	Ice cream mixed (nut, vanilla, caramel)	helado surtido (nuez, vainilla, caramelo)
+bls:S243900	Ice cream mixed (fruit, vanilla) with egg liqueur	helado surtido (fruta, vainilla) con licor de huevo
+bls:S244000	Ice cream mixed (fruit, vanilla)	helado surtido (fruta, vainilla)
+bls:S244100	Ice cream mixed (chocolate, vanilla, fruit) with egg liqueur	helado surtido (chocolate, vainilla, fruta) con licor de huevo
+bls:S244200	Ice cream mixed (chocolate, vanilla, coffee, fruit)	helado surtido (chocolate, vainilla, café, fruta)
+bls:S244300	Ice cream mixed (chocolate, fruit )	helado surtido (chocolate, fruta)
+bls:S244400	Ice cream mixed (fruit, vanilla, nut)	helado surtido (fruta, vainilla, nuez)
+bls:S244500	Ice cream mixed (fruit, vanilla, nut, chocolate)	helado surtido (fruta, vainilla, nuez, chocolate)
+bls:S244600	Ice cream mixed (fruit, vanilla, nut, caramel)	helado surtido (fruta, vainilla, nuez, caramelo)
+bls:S244800	Ice cream mixed (chocolate, coffee)	helado surtido (chocolate, café)
+bls:S311000	Hard candy	caramelos duros
+bls:S320000	Boiled sweets filled/hard candy filled	caramelos duros rellenos
+bls:S330000	Soft caramels	caramelos masticables
+bls:S331000	Toffee/cream toffee	toffee de nata
+bls:S332000	Cream caramel	caramelos de nata
+bls:S340000	Soft caramel filled	caramelos masticables rellenos
+bls:S341000	Caramel candy sugar-free	caramelos sin azúcar
+bls:S342000	Fruit gum sugar-free	gominolas de fruta sin azúcar
+bls:S351000	Fondant/fondant mass	pasta de fondant
+bls:S352000	Fondant confectionery covered with bittersweet chocolate	bombones de fondant cubiertos de chocolate semiamargo
+bls:S353000	Peppermint creams	fondant de menta
+bls:S354000	Coconut fondant flakes	copos de coco de fondant
+bls:S355000	Fondant confectionery	bombones de fondant
+bls:S356000	Fondant cream	crema de fondant
+bls:S358100	Chocolate fondant	fondant de chocolate
+bls:S358300	Vanilla fondant	fondant de vainilla
+bls:S361000	Gum drops with fruit essence	gominolas de frutas
+bls:S372000	Marshmallow	nubes
+bls:S380000	Compressed sweet/candy	pastillas comprimidas
+bls:S410000	Liquorice	dulce de regaliz
+bls:S420000	Marzipan	dulce de mazapán
+bls:S421000	Marzipan raw paste	pasta de mazapán
+bls:S440000	Jelly fruit	frutas escarchadas
+bls:S450000	Nougat	turrón
+bls:S451000	Nut nougat raw paste	pasta de turrón de frutos secos
+bls:S461000	Nonpareil	nonpareilles
+bls:S462000	Sugar beads/sugar sprinkles	perlas de azúcar
+bls:S463000	Hundreds and Thousands sprinkles	fideos de colores
+bls:S464000	Chocolate sugar-coated	grageas de chocolate
+bls:S465000	Almond roasted, sugar-coated	almendra tostada garrapiñado
+bls:S466000	Hazelnut roasted, sugar-coated	avellana tostada garrapiñado
+bls:S467000	Peanut roasted, sugar-coated	cacahuete tostado garrapiñado
+bls:S472200	Cherry candied	cereza confitada
+bls:S475100	Pineapple candied	piña confitada
+bls:S478100	Ginger candied	jengibre confitado
+bls:S491000	Sesame brittle	crocante de sésamo
+bls:S492000	Peanut brittle	guirlache de cacahuete
+bls:S493000	Hazelnut brittle	crocante de avellana
+bls:S500000	Chocolate	chocolate
+bls:S530000	Milk chocolate	chocolate con leche
+bls:S530300	Milk chocolate filled with caramel	chocolate con leche relleno de caramelo
+bls:S530700	Milk chocolate filled with fruit cream	chocolate con leche relleno de crema de fruta
+bls:S530800	Milk chocolate with truffle filling (alcoholic)	chocolate con leche relleno de trufa (con alcohol)
+bls:S531200	Milk chocolate filled with almond-caramel	chocolate con leche relleno de caramelo de almendra
+bls:S532000	Milk chocolate with puffed rice	chocolate con leche con arroz inflado
+bls:S533000	Flaky brittle covered with whole milk chocolate	crocante de hojaldre cubierto de chocolate con leche
+bls:S535000	Milk chocolate filled with nougat	chocolate con leche relleno de turrón
+bls:S536000	Whole milk chocolate with hazelnuts	chocolate con leche con avellanas
+bls:S537000	Whole milk chocolate with almonds	chocolate con leche con almendras
+bls:S538000	Milk chocolate with peanuts	chocolate con leche con cacahuetes
+bls:S538300	Whole milk chocolate filled with fruit-vanilla cream	chocolate con leche relleno de crema de fruta y vainilla
+bls:S538400	Whole milk chocolate with raisins and hazelnuts (alcoholic)	chocolate con leche con pasas y avellanas (con alcohol)
+bls:S538500	Whole milk chocolate with cereal flakes	chocolate con leche con copos de cereales
+bls:S538600	Whole milk chocolate with caramel filling (alcoholic)	chocolate con leche relleno de caramelo (con alcohol)
+bls:S538700	Whole milk chocolate with truffle filling (alcoholic)	chocolate con leche relleno de trufa (con alcohol)
+bls:S538800	Whole milk chocolate filled with coconut cream	chocolate con leche relleno de crema de coco
+bls:S538900	Whole milk chocolate with alcoholic filling	chocolate con leche con relleno alcohólico
+bls:S539000	Whole milk chocolate filled with mocha/coffee cream	chocolate con leche relleno de crema de moca y café
+bls:S539100	Whole milk chocolate filled with caramel	chocolate con leche relleno de caramelo
+bls:S539200	Whole milk chocolate filled with fruit cream	chocolate con leche relleno de crema de fruta
+bls:S539300	Whole milk chocolate with nut-spice cream	chocolate con leche con crema de frutos secos y especias
+bls:S539700	Whole milk chocolate with raisins and hazelnuts	chocolate con leche con pasas y avellanas
+bls:S539900	Whole milk chocolate	chocolate con leche
+bls:S541000	Whole milk chocolate with hazelnuts and cornflakes	chocolate con leche con avellanas y cornflakes
+bls:S541600	Whole milk chocolate filled with nougat	chocolate con leche relleno de turrón
+bls:S550000	Cream chocolate	chocolate cremoso
+bls:S551000	Cream chocolate with mocha/coffee	chocolate cremoso con moca y café
+bls:S551200	Cream chocolate filled with caramel	chocolate cremoso relleno de caramelo
+bls:S560000	Bittersweet/semisweet chocolate	chocolate semiamargo
+bls:S560400	Bittersweet/semisweet chocolate, with hazelnuts	chocolate semiamargo con avellanas
+bls:S560500	Bittersweet/semisweet chocolate, filled with mocha/coffee	chocolate semiamargo con moca y café
+bls:S560600	Bittersweet/semisweet chocolate, filled with coconut cream	chocolate semiamargo con crema de coco
+bls:S560700	Bittersweet/semisweet chocolate, filled with peppermint cream	chocolate semiamargo con crema de menta
+bls:S561500	Bittersweet/semisweet chocolate, filled with marzipan	chocolate semiamargo con mazapán
+bls:S570000	Dark chocolate	chocolate amargo
+bls:S570100	Dark chocolate filled with marzipan (alcoholic)	chocolate negro relleno de mazapán (con alcohol)
+bls:S570300	Dark chocolate with hazelnuts	chocolate negro con avellanas
+bls:S570500	Dark chocolate with spice cream	chocolate negro con crema de especias
+bls:S570700	Dark chocolate filled with fruit cream	chocolate negro relleno de crema de fruta
+bls:S570800	Dark chocolate filled with peppermint cream	chocolate negro relleno de crema de menta
+bls:S570900	Dark chocolate filled with coffee	chocolate negro relleno de café
+bls:S571000	Dark chocolate filled with caramel	chocolate negro relleno de caramelo
+bls:S571300	Dark chocolate filled with fruit cream (alcoholic)	chocolate negro relleno de crema de fruta (con alcohol)
+bls:S571400	Dark chocolate filled with truffles	chocolate negro relleno de trufa
+bls:S580000	Chocolate white	chocolate blanco
+bls:S580200	Chocolate white, filled with coffee	chocolate blanco con café
+bls:S580300	Chocolate white, filled with coconut chips	chocolate blanco con copos de coco
+bls:S580600	Chocolate white, with cornflakes	chocolate blanco con cornflakes
+bls:S580700	Chocolate white, with hazelnuts	chocolate blanco con avellanas
+bls:S581000	Whole milk chocolate bar filled with nougat cream and waffle	barrita de chocolate con leche rellena de crema de turrón y barquillo
+bls:S581100	Milk chocolate bar filled with caramel, roasted peanuts and soft nougat	barrita de chocolate con leche rellena de caramelo con cacahuetes tostados y turrón blando
+bls:S581200	Milk chocolate bar filled with caramel cream and roasted hazelnuts	barrita de chocolate con leche rellena de crema de caramelo y avellana tostada
+bls:S581300	Milk chocolate bar filled with wholemeal biscuit	barrita de chocolate con leche rellena de galleta integral
+bls:S581400	Milk chocolate bar filled with caramel and crispy biscuit	barrita de chocolate con leche rellena de caramelo y galleta crujiente
+bls:S581500	Milk chocolate bar filled with crispy waffle	barrita de chocolate con leche rellena de barquillo crujiente
+bls:S581600	Whole milk chocolate bar filled with strawberry -yogurt cream	barrita de chocolate con leche rellena de crema de fresa y yogur
+bls:S581700	Caramel-toffee filled with nougat cream, chocolate and hazelnut	toffee de caramelo relleno de crema de turrón con chocolate y avellana
+bls:S581800	Milk chocolate bar with caramel-waffle and puffed cereals	barrita de chocolate con leche con barquillo de caramelo y cereales inflados
+bls:S581900	Coconut praline with cream-filling and blanched almond	praliné de coco con crema y almendra
+bls:S582000	Crispy praline with milk chocolate, cornflakes and almond bits	praliné crujiente con chocolate con leche con cornflakes y trocitos de almendra
+bls:S582100	Wafer square filled with cocoa cream and roasted hazelnut bits	barquillo relleno de crema de cacao y avellana tostada
+bls:S582200	Chocolate kiss (chocolate coated egg meringue on waffle base)	beso de chocolate
+bls:S582300	Milk chocolate with almond-nougat	chocolate con leche con turrón de almendra
+bls:S582400	Sponge cake slice filled with milk cream	tira de bizcocho rellena de crema de leche
+bls:S582500	Milk chocolate bar filled with soft nougat/with soft nougat and caramel	barrita de chocolate con leche rellena de turrón blando (y caramelo)
+bls:S582600	Whole milk chocolate bar filled with milk cream	barrita de chocolate con leche rellena de crema de leche
+bls:S610000	Pralines	bombones de praliné
+bls:S620000	Pralines filled	bombones rellenos
+bls:S621000	Pralines with alcoholic filling	bombones con relleno alcohólico
+bls:S621100	Pralines with brandy-cherry filling	cerezas al brandy
+bls:S621200	Pralines with brandy filling	bombones rellenos de brandy
+bls:S622000	Pralines filled with marzipan	bombones rellenos de mazapán
+bls:S622100	Pralines filled with almond-caramel	bombones rellenos de caramelo de almendra
+bls:S622300	Pralines filled with peppermint cream	bombones rellenos de crema de menta
+bls:S622400	Pralines filled with coconut cream	bombones rellenos de crema de coco
+bls:S622500	Nut pralines (alcoholic)	bombones de frutos secos (con alcohol)
+bls:S622600	Pralines filled with caramel cream	bombones rellenos de crema de caramelo
+bls:S622800	Pralines filled with spice cream	bombones rellenos de crema de especias
+bls:S622900	Cream pralines	bombones de nata
+bls:S623000	Nut pralines	bombones de frutos secos
+bls:S623100	Pralines with fruit-nut filling (alcoholic)	bombones rellenos de fruta y frutos secos (con alcohol)
+bls:S623200	Nut truffle pralines (alcoholic)	bombones trufa de frutos secos (con alcohol)
+bls:S623400	Pralines filled with fruit cream (alcoholic)	bombones rellenos de crema de fruta (con alcohol)
+bls:S623600	Pralines filled with vanilla cream	bombones rellenos de crema de vainilla
+bls:S623700	Truffle pralines (alcoholic)	bombones trufa (con alcohol)
+bls:S624000	Pralines filled with fruit cream	bombones rellenos de crema de fruta
+bls:S625000	Truffle pralines	bombones trufa
+bls:S627000	Pralines filled with coffee	bombones rellenos de café
+bls:S628000	Pralines filled with milk/yogurt cream	bombones rellenos de crema de leche y yogur
+bls:S640000	Rum truffles	trufas de ron
+bls:S660000	Chocolate sprinkles	fideos de chocolate
+bls:S671000	Glazing chocolate, bittersweet/semi-sweet	cobertura de chocolate semiamargo
+bls:S672000	Chocolate decorations	decoración de chocolate
+bls:S680000	Ice confectionery	bombón helado
+bls:S691000	Crispbread pieces in whole milk chocolate	trocitos de pan crujiente en chocolate con leche
+bls:S692000	Cereal crisps coated with milk chocolate	copos de cereales cubiertos de chocolate con leche
+bls:S693000	Whole milk chocolate covered nuts	frutos secos cubiertos de chocolate con leche
+bls:S694000	Whole milk chocolate covered dried fruits	frutas deshidratadas cubiertas de chocolate con leche
+bls:S711000	Cocoa powder lightly deoiled	cacao en polvo poco desgrasado
+bls:S713000	Cocoa powder strongly deoiled	cacao en polvo muy desgrasado
+bls:S723000	Beverage powder containing cocoa	bebida de cacao en polvo
+bls:S730000	Beverage powder containing malt, fortified with vitamins and minerals	bebida de malta en polvo con vitaminas y minerales
+bls:S740000	Instant hot chocolate powder (for drinking chocolate)	cacao soluble en polvo
+bls:S790000	Cocoa mass	pasta de cacao
+bls:S820000	Energy bar with hazelnut cream	barrita energética con crema de avellana
+bls:S820100	Energy bar fortified with vitamins and minerals	barrita energética con vitaminas y minerales
+bls:S830000	Muesli bar	barrita de muesli
+bls:T020100	Common cuttlefish raw	sepia cruda
+bls:T020132	Common cuttlefish boiled	sepia común cocida
+bls:T020142	Common cuttlefish braised without fat	sepia estofada
+bls:T020172	Common cuttlefish grilled	sepia a la parrilla
+bls:T020182	Common cuttlefish fried without fat (pan)	sepia a la plancha
+bls:T020200	Common cuttlefish deep-frozen	sepia congelada
+bls:T020232	Common cuttlefish deep-frozen, boiled	sepia de congelado cocida
+bls:T020252	Common cuttlefish deep-frozen, stewed	sepia de congelado estofada
+bls:T020262	Common cuttlefish deep-frozen, fried without fat (oven)	sepia de congelado al horno
+bls:T020272	Common cuttlefish deep-frozen, grilled	sepia de congelado a la parrilla
+bls:T020282	Common cuttlefish deep-frozen, fried without fat (pan)	sepia de congelado a la plancha
+bls:T020702	Common cuttlefish in oil, canned, drained	sepia en aceite en conserva escurrida
+bls:T033000	Piked dogfish belly hot smoked	tiras de cazón ahumado en calientes
+bls:T033100	Piked dogfish raw	cazón crudo
+bls:T033152	Piked dogfish stewed	cazón estofado
+bls:T033182	Piked dogfish fried without fat (pan)	cazón a la plancha
+bls:T033600	Piked dogfish smoked	cazón ahumado
+bls:T041100	Eel raw	anguila europea cruda
+bls:T041142	Eel braised without fat	anguila estofada
+bls:T041152	Eel stewed	anguila estofada
+bls:T041182	Eel fried without fat (pan)	anguila a la plancha
+bls:T041600	Eel smoked	anguila ahumada
+bls:T045100	Cod liver raw	hígado de bacalao crudo
+bls:T045182	Cod liver fried without fat (pan)	hígado de bacalao a la plancha
+bls:T045900	Cod liver canned	hígado de bacalao en conserva
+bls:T060132	Pike poached	lucio escalfado
+bls:T060182	Pike fried without fat (pan)	lucio a la plancha
+bls:T061100	Garfish raw	aguja cruda
+bls:T061152	Garfish stewed	aguja estofada
+bls:T061182	Garfish fried without fat (pan)	aguja a la plancha
+bls:T064100	Pike raw	lucio crudo
+bls:T064152	Pike stewed	lucio estofado
+bls:T070100	Anglerfish raw	rape europeo crudo
+bls:T070152	Anglerfish stewed	rape estofado
+bls:T070182	Anglerfish fried without fat (pan)	rape a la plancha
+bls:T091100	Herring roe raw	huevas de arenque crudos
+bls:T091400	Herring roe salted	huevas de arenque salados
+bls:T093100	Cod roe raw	huevas de bacalao crudos
+bls:T093400	Cod roe salted	huevas de bacalao salados
+bls:T094100	Salmon roe raw	huevas de salmón crudos
+bls:T094400	Salmon roe salted	huevas de salmón salados
+bls:T102100	Herring raw	arenque crudo
+bls:T102132	Herring poached	arenque escalfado
+bls:T102162	Herring fried without fat (oven)	arenque al horno
+bls:T102182	Herring fried without fat (pan)	arenque a la plancha
+bls:T102400	Herring salted	arenque salado
+bls:T102600	Herring smoked	arenque ahumado
+bls:T102702	Herring in oil, canned, drained	arenque en aceite en conserva escurrido
+bls:T103100	Matjes herring mild salted	arenque matje poco salado
+bls:T103600	Matjes herring mild salted, smoked	arenque matje poco salado ahumado
+bls:T103802	Matjes herring in oil, semi-preserved, drained	arenque matje en aceite en semiconserva escurrido
+bls:T104100	Anchovy raw	boquerón crudo
+bls:T104162	Anchovy fried without fat (oven)	anchoa al horno
+bls:T104172	Anchovy grilled	anchoa a la parrilla
+bls:T104182	Anchovy fried without fat (pan)	anchoa a la plancha
+bls:T104400	Anchovy salted	anchoa salada
+bls:T104702	Anchovy in oil, canned, drained	anchoa en aceite en conserva escurrida
+bls:T105100	Sardine raw	sardina cruda
+bls:T105172	Sardine grilled	sardina a la parrilla
+bls:T105182	Sardine fried without fat (pan)	sardina a la plancha
+bls:T105702	Sardine in oil, canned, drained	sardina en aceite en conserva escurrida
+bls:T106100	Sprat raw	espadín crudo
+bls:T106152	Sprat stewed	espadín estofado
+bls:T106182	Sprat fried without fat (pan)	espadín a la plancha
+bls:T106600	Sprat smoked	espadín ahumado
+bls:T106702	Sprat in oil, canned, drained	espadín en aceite en conserva escurrido
+bls:T107100	Mackerel raw	caballa cruda
+bls:T107172	Mackerel grilled	caballa a la brasa
+bls:T107182	Mackerel fried without fat (pan)	caballa a la plancha
+bls:T107600	Mackerel smoked	caballa ahumada
+bls:T107702	Mackerel in oil, canned, drained	caballa en aceite en conserva escurrida
+bls:T107902	Mackerel canned, drained	caballa en conserva escurrida
+bls:T113902	Herring fillet rolled, pickled, canned, drained	rollmops en escabeche en conserva escurrido
+bls:T118100	Atlantic horse mackerel raw	jurel crudo
+bls:T118152	Atlantic horse mackerel stewed	jurel estofado
+bls:T118182	Atlantic horse mackerel fried without fat (pan)	jurel a la plancha
+bls:T120100	Atlantic bonito raw	bonito crudo
+bls:T120152	Atlantic bonito stewed	bonito estofado
+bls:T120182	Atlantic bonito fried without fat (pan)	bonito a la plancha
+bls:T121100	Tuna raw	atún fresco crudo
+bls:T121132	Tuna poached	atún escalfado
+bls:T121162	Tuna fried without fat (oven)	atún al horno
+bls:T121172	Tuna grilled	atún a la parrilla
+bls:T121182	Tuna fried without fat (pan)	atún a la plancha
+bls:T121200	Tuna deep-frozen	atún congelado
+bls:T121262	Tuna deep-frozen, fried without fat (oven)	atún de congelado al horno
+bls:T121272	Tuna deep-frozen, grilled	atún de congelado a la parrilla
+bls:T121282	Tuna deep-frozen, fried without fat (pan)	atún de congelado a la plancha
+bls:T121702	Tuna in oil, canned, drained	atún en aceite en conserva escurrido
+bls:T121902	Tuna canned, drained	atún en conserva escurrido
+bls:T122100	Albacore raw	bonito del norte crudo
+bls:T122152	Albacore stewed	bonito del norte estofado
+bls:T122182	Albacore fried without fat (pan)	bonito del norte a la plancha
+bls:T122200	Albacore deep-frozen	bonito del norte congelado
+bls:T122252	Albacore deep-frozen, stewed	bonito del norte de congelado estofado
+bls:T122282	Albacore deep-frozen, fried without fat (pan)	bonito del norte de congelado a la plancha
+bls:T124100	Yellowfin tuna raw	rabil crudo
+bls:T124152	Yellowfin tuna stewed	rabil estofado
+bls:T124182	Yellowfin tuna fried without fat (pan)	rabil a la plancha
+bls:T124200	Yellowfin tuna deep-frozen	rabil congelado
+bls:T124252	Yellowfin tuna deep-frozen, stewed	rabil de congelado estofado
+bls:T124282	Yellowfin tuna deep-frozen, fried without fat (pan)	rabil de congelado a la plancha
+bls:T200100	Grenadier raw	granadero crudo
+bls:T200152	Grenadier stewed	granadero estofado
+bls:T200182	Grenadier fried without fat (pan)	granadero a la plancha
+bls:T201100	Cusk raw	brosme cruda
+bls:T201152	Cusk stewed	brosme estofada
+bls:T201182	Cusk fried without fat (pan)	brosme a la plancha
+bls:T202100	Ling raw	maruca cruda
+bls:T202152	Ling stewed	maruca estofada
+bls:T202182	Ling fried without fat (pan)	maruca a la plancha
+bls:T204100	Cod raw	bacalao fresco crudo
+bls:T204132	Cod poached	bacalao fresco escalfado
+bls:T204152	Cod stewed	bacalao fresco estofado
+bls:T204162	Cod fried without fat (oven)	bacalao fresco al horno
+bls:T204172	Cod grilled	bacalao fresco a la brasa
 bls:T204182	Cod fried without fat (pan)	bacalao fresco a la plancha
+bls:T204200	Cod deep-frozen	bacalao fresco congelado
+bls:T204232	Cod deep-frozen, poached	bacalao fresco de congelado escalfado
+bls:T204252	Cod deep-frozen, stewed	bacalao fresco de congelado estofado
+bls:T204262	Cod deep-frozen, fried without fat (oven)	bacalao fresco al horno de congelado
+bls:T204272	Cod deep-frozen, grilled	bacalao fresco a la brasa de congelado
+bls:T204282	Cod deep-frozen, fried without fat (pan)	bacalao fresco de congelado a la plancha
+bls:T204582	Cod breaded fried without fat (pan)	bacalao fresco empanado a la plancha
+bls:T206100	Haddock raw	eglefino crudo
+bls:T206152	Haddock stewed	eglefino estofado
+bls:T206172	Haddock grilled	eglefino a la brasa
+bls:T206182	Haddock fried without fat (pan)	eglefino a la plancha
 bls:T206600	Haddock smoked	eglefino ahumado
+bls:T207100	Saithe/pollack, raw	carbonero crudo
+bls:T207132	Saithe/pollack, poached	carbonero escalfado
+bls:T207152	Saithe/pollack, stewed	carbonero estofado
+bls:T207162	Saithe/pollack, fried without fat (oven)	carbonero al horno
+bls:T207172	Saithe/pollack, grilled	carbonero a la parrilla
+bls:T207182	Saithe/pollack, fried without fat (pan)	carbonero a la plancha
+bls:T207200	Saithe/pollack, deep-frozen	carbonero congelado
+bls:T207232	Saithe/pollack, deep-frozen, poached	carbonero de congelado escalfado
+bls:T207252	Saithe/pollack, deep-frozen, stewed	carbonero de congelado estofado
+bls:T207262	Saithe/pollack, deep-frozen, fried without fat (oven)	carbonero de congelado al horno
+bls:T207272	Saithe/pollack, deep-frozen, grilled	carbonero de congelado a la parrilla
+bls:T207282	Saithe/pollack, deep-frozen, fried without fat (pan)	carbonero de congelado a la plancha
+bls:T207600	Saithe/pollack, smoked	carbonero ahumado
+bls:T208100	Whiting raw	pescadilla cruda
+bls:T208152	Whiting stewed	pescadilla estofada
+bls:T208182	Whiting fried without fat (pan)	pescadilla a la plancha
+bls:T209100	Hake raw	merluza cruda
+bls:T209132	Hake poached	merluza escalfada
+bls:T209152	Hake stewed	merluza estofada
+bls:T209182	Hake fried without fat (pan)	merluza a la plancha
+bls:T209200	Hake deep-frozen	merluza congelada
+bls:T209232	Hake deep-frozen, poached	merluza de congelado escalfada
+bls:T209252	Hake deep-frozen, stewed	merluza de congelado estofada
+bls:T209282	Hake deep-frozen, fried without fat (pan)	merluza de congelado a la plancha
+bls:T213100	Alaska pollock raw	abadejo crudo
+bls:T213132	Alaska pollock poached	abadejo escalfado
+bls:T213152	Alaska pollock stewed	abadejo estofado
+bls:T213162	Alaska pollock fried without fat (oven)	abadejo al horno
+bls:T213172	Alaska pollock grilled	abadejo a la parrilla
+bls:T213182	Alaska pollock fried without fat (pan)	abadejo a la plancha
+bls:T213200	Alaska pollock deep-frozen	abadejo congelado
+bls:T213232	Alaska pollock deep-frozen, poached	abadejo de congelado escalfado
+bls:T213252	Alaska pollock deep-frozen, stewed	abadejo de congelado estofado
+bls:T213262	Alaska pollock deep-frozen, fried without fat (oven)	abadejo de congelado al horno
+bls:T213272	Alaska pollock deep-frozen, grilled	abadejo de congelado a la parrilla
+bls:T213282	Alaska pollock deep-frozen, fried without fat (pan)	abadejo de congelado a la plancha
+bls:T213802	Alaska pollock in oil, semi-preserved, drained	abadejo en aceite en semiconserva escurrido
+bls:T302100	Turbot raw	rodaballo fresco crudo
+bls:T302152	Turbot stewed	rodaballo estofado
+bls:T302182	Turbot fried without fat (pan)	rodaballo a la plancha
+bls:T302200	Turbot deep-frozen	rodaballo congelado
+bls:T302252	Turbot deep-frozen, stewed	rodaballo de congelado estofado
+bls:T302282	Turbot deep-frozen, fried without fat (pan)	rodaballo de congelado a la plancha
+bls:T305100	Plaice raw	solla cruda
+bls:T305132	Plaice poached	solla escalfada
+bls:T305152	Plaice stewed	solla estofada
+bls:T305162	Plaice fried without fat (oven)	solla al horno
+bls:T305172	Plaice grilled	solla a la parrilla
+bls:T305182	Plaice fried without fat (pan)	solla a la plancha
+bls:T305200	Plaice deep-frozen	solla congelada
+bls:T305232	Plaice deep-frozen, poached	solla de congelado escalfada
+bls:T305252	Plaice deep-frozen, stewed	solla de congelado estofada
+bls:T305262	Plaice deep-frozen, fried without fat (oven)	solla de congelado al horno
+bls:T305272	Plaice deep-frozen, grilled	solla de congelado a la parrilla
+bls:T305282	Plaice deep-frozen, fried without fat (pan)	solla de congelado a la plancha
+bls:T306100	Halibut/white halibut, raw	halibut crudo
+bls:T306132	Halibut/white halibut, poached	fletán escalfado
+bls:T306152	Halibut/white halibut, stewed	fletán estofado
 bls:T306182	Halibut/white halibut, fried without fat (pan)	fletán a la plancha
+bls:T306200	Halibut/white halibut, deep-frozen	fletán congelado
+bls:T306252	Halibut/white halibut, deep-frozen, stewed	fletán de congelado estofado
+bls:T306282	Halibut/white halibut, deep-frozen, fried without fat (pan)	fletán de congelado a la plancha
+bls:T307100	Greenland halibut raw	fletán negro crudo
+bls:T307152	Greenland halibut stewed	fletán negro estofado
+bls:T307182	Greenland halibut fried without fat (pan)	fletán negro a la plancha
+bls:T307200	Greenland halibut deep-frozen	fletán negro congelado
+bls:T307252	Greenland halibut deep-frozen, stewed	fletán negro de congelado estofado
+bls:T307282	Greenland halibut deep-frozen, fried without fat (pan)	fletán negro de congelado a la plancha
+bls:T307600	Greenland halibut smoked	fletán negro ahumado
+bls:T309100	Sole raw	lenguado crudo
+bls:T309152	Sole stewed	lenguado estofado
+bls:T309182	Sole fried without fat (pan)	lenguado a la plancha
+bls:T309200	Sole deep-frozen	lenguado congelado
+bls:T309252	Sole deep-frozen, stewed	lenguado de congelado estofado
+bls:T309282	Sole deep-frozen, fried without fat (pan)	lenguado de congelado a la plancha
+bls:T311100	Flounder raw	platija cruda
+bls:T311152	Flounder stewed	platija estofada
+bls:T311182	Flounder fried without fat (pan)	platija a la plancha
+bls:T311600	Flounder smoked	platija ahumada
+bls:T313100	Witch raw	mendo crudo
+bls:T313152	Witch stewed	mendo estofado
+bls:T313182	Witch fried without fat (pan)	mendo a la plancha
+bls:T313200	Witch deep-frozen	mendo congelado
+bls:T313252	Witch deep-frozen, stewed	mendo de congelado estofado
+bls:T313282	Witch deep-frozen, fried without fat (pan)	mendo de congelado a la plancha
+bls:T402100	European smelt raw	eperlano europeo crudo
+bls:T402152	European smelt stewed	eperlano estofado
+bls:T402182	European smelt fried without fat (pan)	eperlano a la plancha
+bls:T402200	European smelt deep-frozen	eperlano congelado
+bls:T402252	European smelt deep-frozen, stewed	eperlano de congelado estofado
+bls:T402282	European smelt deep-frozen, fried without fat (pan)	eperlano de congelado a la plancha
+bls:T403100	Brook trout raw	trucha de arroyo cruda
+bls:T403152	Brook trout stewed	trucha de arroyo estofada
+bls:T403182	Brook trout fried without fat (pan)	trucha de arroyo a la plancha
+bls:T403600	Brook trout smoked	trucha de arroyo ahumada
+bls:T406100	Whitefishes raw	coregono crudo
+bls:T406152	Whitefishes stewed	pescado blanco estofado
+bls:T406182	Whitefishes fried without fat (pan)	pescado blanco a la plancha
+bls:T406200	Whitefishes deep-frozen	pescado blanco congelado
+bls:T406252	Whitefishes deep-frozen, stewed	pescado blanco de congelado estofado
+bls:T406282	Whitefishes deep-frozen, fried without fat (pan)	pescado blanco de congelado a la plancha
+bls:T406600	Whitefishes smoked	coregono ahumado
+bls:T410052	Salmon stewed	salmón estofado
+bls:T410062	Salmon fried without fat (oven)	salmón atlántico al horno
+bls:T410072	Salmon grilled	salmón atlántico a la parrilla
+bls:T410082	Salmon fried without fat (pan)	salmón a la plancha
+bls:T410100	Salmon raw	salmón crudo
+bls:T410132	Salmon poached	salmón escalfado
+bls:T410200	Salmon deep-frozen	salmón congelado
+bls:T410252	Salmon deep-frozen, stewed	salmón de congelado estofado
+bls:T410262	Salmon deep-frozen, fried without fat (oven)	salmón de congelado al horno
+bls:T410272	Salmon deep-frozen, grilled	salmón de congelado a la parrilla
+bls:T410282	Salmon deep-frozen, fried without fat (pan)	salmón de congelado a la plancha
+bls:T410600	Salmon smoked	salmón atlántico ahumado
+bls:T410702	Salmon in oil, canned, drained	salmón en aceite en conserva escurrido
+bls:T410902	Salmon canned, drained	salmón en conserva escurrido
+bls:T411222	Salmon deep-frozen, poached	salmón de congelado escalfado
+bls:T411700	Salmon salted	salmón atlántico salado
+bls:T411800	Graved salmon (salt-sugar-cured)	salmón gravlax
+bls:T412100	Pink salmon raw	salmón rosado crudo
+bls:T412152	Pink salmon stewed	salmón rosado estofado
+bls:T412182	Pink salmon fried without fat (pan)	salmón rosado a la plancha
+bls:T412200	Pink salmon deep-frozen	salmón rosado congelado
+bls:T412252	Pink salmon deep-frozen, stewed	salmón rosado de congelado estofado
+bls:T412282	Pink salmon deep-frozen, fried without fat (pan)	salmón rosado de congelado a la plancha
+bls:T412902	Pink salmon in oil, canned, drained	salmón rosado en aceite en conserva escurrido
+bls:T415100	Chinook salmon raw	salmón real crudo
+bls:T415152	Chinook salmon stewed	salmón real estofado
+bls:T415182	Chinook salmon fried without fat (pan)	salmón real a la plancha
+bls:T415200	Chinook salmon deep-frozen	salmón real congelado
+bls:T415252	Chinook salmon deep-frozen, stewed	salmón real de congelado estofado
+bls:T415282	Chinook salmon deep-frozen, fried without fat (pan)	salmón real de congelado a la plancha
+bls:T415600	Chinook salmon smoked	salmón chinook ahumado
+bls:T417100	Pacific salmon raw	salmón salvaje crudo
+bls:T417152	Pacific salmon stewed	salmón salvaje estofado
+bls:T417182	Pacific salmon fried without fat (pan)	salmón salvaje a la plancha
+bls:T417200	Pacific salmon deep-frozen	salmón salvaje congelado
+bls:T417252	Pacific salmon deep-frozen, stewed	salmón salvaje de congelado estofado
+bls:T417282	Pacific salmon deep-frozen, fried without fat (pan)	salmón salvaje de congelado a la plancha
+bls:T417400	Pacific salmon salted	salmón salvaje salado
+bls:T417600	Pacific salmon smoked	salmón salvaje ahumado
+bls:T417902	Pacific salmon canned, drained	salmón salvaje en conserva escurrido
+bls:T420132	Trout poached	trucha escalfada
+bls:T420152	Trout stewed	trucha estofada
+bls:T420162	Trout fried without fat (oven)	trucha al horno
+bls:T420172	Trout grilled	trucha a la parrilla
+bls:T420182	Trout fried without fat (pan)	trucha a la plancha
+bls:T420232	Trout deep-frozen, poached	trucha de congelado escalfada
+bls:T420252	Trout deep-frozen, stewed	trucha de congelado estofada
+bls:T420262	Trout deep-frozen, fried without fat (oven)	trucha de congelado al horno
+bls:T420282	Trout deep-frozen, fried without fat (pan)	trucha de congelado a la plancha
 bls:T422100	Trout raw	trucha cruda
+bls:T422112	Trout/rainbow trout fillet with skin, raw	filete de trucha arcoíris con piel crudo
+bls:T422200	Trout deep-frozen	trucha congelada
+bls:T422272	Trout deep-frozen, grilled	trucha de congelado a la parrilla
+bls:T422400	Trout salted	trucha salada
+bls:T422600	Trout smoked	trucha ahumada
+bls:T424100	Sea trout raw	trucha de mar cruda
+bls:T424152	Sea trout stewed	trucha de mar estofada
+bls:T424182	Sea trout fried without fat (pan)	trucha de mar a la plancha
+bls:T424200	Sea trout deep-frozen	trucha de mar congelada
+bls:T424252	Sea trout deep-frozen, stewed	trucha de mar de congelado estofada
+bls:T424282	Sea trout deep-frozen, fried without fat (pan)	trucha de mar de congelado a la plancha
+bls:T501100	Carp raw	carpa cruda
+bls:T501132	Carp poached	carpa escalfada
+bls:T501152	Carp stewed	carpa estofada
+bls:T501162	Carp fried without fat (oven)	carpa al horno
+bls:T501182	Carp fried without fat (pan)	carpa a la plancha
+bls:T501200	Carp deep-frozen	carpa congelada
+bls:T501232	Carp deep-frozen, poached	carpa de congelado escalfada
+bls:T501252	Carp deep-frozen, stewed	carpa de congelado estofada
+bls:T501262	Carp deep-frozen, fried without fat (oven)	carpa de congelado al horno
+bls:T501282	Carp deep-frozen, fried without fat (pan)	carpa de congelado a la plancha
+bls:T501400	Carp salted	carpa salada
+bls:T501600	Carp smoked	carpa ahumada
+bls:T502100	Common bream raw	brema cruda
+bls:T502132	Common bream poached	brema escalfada
+bls:T502182	Common bream fried without fat (pan)	brema a la plancha
+bls:T502200	Common bream deep-frozen	brema congelada
+bls:T502252	Common bream deep-frozen, stewed	brema de congelado estofada
+bls:T502282	Common bream deep-frozen, fried without fat (pan)	brema de congelado a la plancha
 bls:T502400	Common bream salted	brema salada
+bls:T502600	Common bream smoked	brema ahumada
 bls:T506100	European catfish raw	siluro crudo
+bls:T506152	European catfish stewed	siluro estofado
+bls:T506182	European catfish fried without fat (pan)	siluro a la plancha
+bls:T506200	European catfish deep-frozen	siluro congelado
+bls:T506252	European catfish deep-frozen, stewed	siluro de congelado estofado
+bls:T506282	European catfish deep-frozen, fried without fat (pan)	siluro de congelado a la plancha
+bls:T506400	European catfish salted	siluro salado
+bls:T506600	European catfish smoked	siluro ahumado
+bls:T507100	Striped catfish raw	panga cruda
+bls:T507152	Striped catfish stewed	panga estofada
+bls:T507182	Striped catfish fried without fat (pan)	panga a la plancha
+bls:T512100	Tench raw	tenca cruda
+bls:T512182	Tench fried without fat (pan)	tenca a la plancha
+bls:T512200	Tench deep-frozen	tenca congelada
+bls:T512400	Tench salted	tenca salada
+bls:T512600	Tench smoked	tenca ahumada
+bls:T600100	Goatfish raw	salmonete crudo
+bls:T600152	Goatfish stewed	salmonete estofado
+bls:T600182	Goatfish fried without fat (pan)	salmonete a la plancha
 bls:T601100	European perch raw	perca cruda
+bls:T601132	European perch poached	perca escalfada
+bls:T601152	European perch stewed	perca estofada
+bls:T601162	European perch fried without fat (oven)	perca de río al horno
+bls:T601182	European perch fried without fat (pan)	perca a la plancha
+bls:T601200	European perch deep-frozen	perca congelada
+bls:T601232	European perch deep-frozen, poached	perca de congelado escalfada
+bls:T601252	European perch deep-frozen, stewed	perca de congelado estofada
+bls:T601272	European perch deep-frozen, grilled	perca de congelado a la parrilla
+bls:T601282	European perch deep-frozen, fried without fat (pan)	perca de congelado a la plancha
+bls:T601400	European perch salted	perca salada
+bls:T601600	European perch smoked	perca ahumada
+bls:T603100	Pike-perch raw	lucioperca cruda
+bls:T603132	Pike-perch poached	lucioperca escalfada
+bls:T603152	Pike-perch stewed	lucioperca estofada
+bls:T603172	Pike-perch grilled	lucioperca a la parrilla
+bls:T603182	Pike-perch fried without fat (pan)	lucioperca a la plancha
+bls:T603200	Pike-perch deep-frozen	lucioperca congelada
+bls:T603252	Pike-perch deep-frozen, stewed	lucioperca de congelado estofada
+bls:T603282	Pike-perch deep-frozen, fried without fat (pan)	lucioperca de congelado a la plancha
+bls:T603400	Pike-perch salted	lucioperca salada
+bls:T603600	Pike-perch smoked	lucioperca ahumada
+bls:T604100	Catfish/wolffish, raw	pez lobo crudo
+bls:T604152	Catfish/wolffish, stewed	pez lobo estofado
+bls:T604182	Catfish/wolffish, fried without fat (pan)	pez lobo a la plancha
+bls:T604200	Catfish/wolffish, deep-frozen	pez lobo congelado
+bls:T604252	Catfish/wolffish, deep-frozen, stewed	pez lobo de congelado estofado
+bls:T604282	Catfish/wolffish, deep-frozen, fried without fat (pan)	pez lobo de congelado a la plancha
+bls:T604600	Catfish/wolffish, smoked	pez lobo ahumado
+bls:T612100	Swordfish raw	emperador crudo
+bls:T612152	Swordfish stewed	pez espada estofado
+bls:T612182	Swordfish fried without fat (pan)	pez espada a la plancha
+bls:T612200	Swordfish deep-frozen	pez espada congelado
+bls:T612252	Swordfish deep-frozen, stewed	pez espada de congelado estofado
+bls:T612282	Swordfish deep-frozen, fried without fat (pan)	pez espada de congelado a la plancha
+bls:T615100	Ocean perch/redfish, raw	gallineta cruda
+bls:T615142	Ocean perch/redfish, steamed	gallineta al vapor
+bls:T615152	Ocean perch/redfish, stewed	gallineta estofada
+bls:T615162	Ocean perch/redfish, fried without fat (oven)	gallineta al horno
+bls:T615172	Ocean perch/redfish, grilled	gallineta a la parrilla
+bls:T615182	Ocean perch/redfish, fried without fat (pan)	gallineta a la plancha
+bls:T615200	Ocean perch/redfish, deep-frozen	gallineta congelada
+bls:T615252	Ocean perch/redfish deep-frozen, stewed	gallineta de congelado estofada
+bls:T615262	Ocean perch/redfish, deep-frozen, fried without fat (oven)	gallineta de congelado al horno
+bls:T615282	Ocean perch/redfish, deep-frozen, fried without fat (pan)	gallineta de congelado a la plancha
+bls:T615600	Ocean perch/redfish, smoked	gallineta ahumada
+bls:T617100	Sheepshead raw	sargo crudo
+bls:T617152	Sheepshead stewed	sargo estofado
+bls:T617182	Sheepshead fried without fat (pan)	sargo a la plancha
+bls:T617200	Sheepshead deep-frozen	sargo congelado
+bls:T617252	Sheepshead deep-frozen, stewed	sargo de congelado estofado
+bls:T617282	Sheepshead deep-frozen, fried without fat (pan)	sargo de congelado a la plancha
+bls:T633100	Grey mullet raw	lisa cruda
+bls:T633152	Grey mullet stewed	lisa estofada
+bls:T633182	Grey mullet fried without fat (pan)	lisa a la plancha
+bls:T633200	Grey mullet deep-frozen	lisa congelada
+bls:T633252	Grey mullet deep-frozen, stewed	lisa de congelado estofada
+bls:T633282	Grey mullet deep-frozen, fried without fat (pan)	lisa de congelado a la plancha
+bls:T710100	Crayfish raw	cangrejos de río crudos
+bls:T710132	Crayfish boiled	cangrejos de río cocidos
+bls:T710172	Crayfish boiled, grilled	cangrejos de río cocidos a la parrilla
+bls:T710182	Crayfish boiled, fried without fat (pan)	cangrejos de río cocidos a la plancha
 bls:T710200	Crayfish deep-frozen	cangrejos de río congelados
+bls:T710232	Crayfish deep-frozen, boiled	cangrejos de río de congelado cocidos
+bls:T710282	Crayfish deep-frozen, fried without fat (pan)	cangrejos de río de congelado a la plancha
+bls:T710400	Crayfish salted	cangrejos de río salados
+bls:T710800	Crayfish semi-preserved	cangrejos de río en semiconserva
+bls:T710902	Crayfish canned, drained	cangrejos de río en conserva escurridos
+bls:T720100	Spiny lobster/rock lobster/crawfish, raw	langosta espinosa cruda
+bls:T720132	Spiny lobster/rock lobster/crawfish, boiled	langosta espinosa cocida
+bls:T720172	Spiny lobster/rock lobster/crawfish, boiled, grilled	langosta espinosa cocida a la parrilla
+bls:T720182	Spiny lobster/rock lobster/crawfish, boiled, fried without fat (pan)	langosta espinosa cocida a la plancha
+bls:T720200	Spiny lobster/rock lobster/crawfish, deep-frozen	langosta espinosa congelada
+bls:T720232	Spiny lobster/rock lobster/crawfish, deep-frozen, boiled	langosta espinosa cocida de congelado
+bls:T720272	Spiny lobster/rock lobster/crawfish, deep-frozen, grilled	langosta espinosa a la parrilla de congelado
+bls:T720282	Spiny lobster/rock lobster/crawfish, deep-frozen, fried without fat (pan)	langosta espinosa a la plancha de congelado
+bls:T730100	Lobster raw	bogavante europeo crudo
+bls:T730132	Lobster boiled	bogavante europeo cocido
+bls:T730172	Lobster boiled, grilled	bogavante cocido a la parrilla
+bls:T730182	Lobster boiled, fried without fat (pan)	bogavante cocido a la plancha
+bls:T730200	Lobster deep-frozen	bogavante congelado
+bls:T730232	Lobster deep-frozen, boiled	bogavante europeo cocido
+bls:T730272	Lobster deep-frozen, grilled	bogavante de congelado a la parrilla
+bls:T730282	Lobster deep-frozen, fried without fat (pan)	bogavante de congelado a la plancha
+bls:T753100	Common shrimp raw	gambas crudos
+bls:T753132	Common shrimp boiled	gambas cocidos
+bls:T753172	Common shrimp boiled, grilled	gambas cocidos a la parrilla
+bls:T753182	Common shrimp boiled, fried without fat (pan)	gambas cocidos a la plancha
+bls:T753200	Common shrimp deep-frozen	gambas congelados
+bls:T753232	Common shrimp deep-frozen, boiled	gambas de congelado cocidos
+bls:T753252	Common shrimp deep-frozen, stewed	gambas de congelado estofados
+bls:T753272	Common shrimp deep-frozen, grilled	gambas de congelado a la parrilla
+bls:T753282	Common shrimp deep-frozen, fried without fat (pan)	gambas de congelado a la plancha
+bls:T753800	Common shrimp semi-preserved	gambas en semiconserva
+bls:T780100	European oyster raw	ostra cruda
+bls:T780152	European oyster steamed	ostra al vapor
+bls:T780162	European oyster gratinated without fat (oven)	ostra gratinada
+bls:T780172	European oyster grilled	ostra a la parrilla
+bls:T780182	European oyster fried without fat (pan)	ostra a la plancha
+bls:T780200	European oyster deep-frozen	ostra congelada
+bls:T780252	European oyster deep-frozen, steamed	ostra de congelado al vapor
+bls:T780262	European oyster deep-frozen, gratinated without fat (oven)	ostra de congelado gratinada
+bls:T780272	European oyster deep-frozen, grilled	ostra de congelado a la parrilla
+bls:T780282	European oyster deep-frozen, fried without fat (pan)	ostra de congelado a la plancha
+bls:T780702	European oyster in oil, canned, drained	ostra en aceite en conserva escurrida
+bls:T791100	Softshell clam raw	almeja blanda cruda
+bls:T791132	Softshell clam boiled	almeja blanda cocida
+bls:T791200	Softshell clam deep-frozen	almeja blanda congelada
+bls:T791232	Softshell clam deep-frozen, boiled	almeja blanda de congelado cocida
+bls:T792100	Common mussel raw	mejillón crudo
+bls:T792132	Common mussel boiled	mejillón cocido
+bls:T792182	Common mussel boiled, fried without fat (pan)	mejillón cocido a la plancha
+bls:T792200	Common mussel deep-frozen	mejillón congelado
+bls:T792232	Common mussel deep-frozen, boiled	mejillón de congelado cocido
+bls:T792282	Common mussel deep-frozen, fried without fat (pan)	mejillón de congelado a la plancha
+bls:T792702	Common mussel in oil, canned, drained	mejillón en aceite en conserva escurrido
+bls:T793100	Scallop raw	vieira cruda
+bls:T793162	Scallop gratinated without fat (oven)	vieira gratinada
+bls:T793172	Scallop grilled	vieira a la parrilla
+bls:T793182	Scallop fried without fat (pan)	vieira a la plancha
+bls:T793200	Scallop deep-frozen	vieira congelada
+bls:T793262	Scallop deep-frozen, gratinated without fat (oven)	vieira de congelado gratinada
+bls:T793272	Scallop deep-frozen, grilled	vieira de congelado a la parrilla
+bls:T793282	Scallop deep-frozen, fried without fat (pan)	vieira de congelado a la plancha
+bls:T797100	Venus clam raw	almeja cruda
+bls:T797132	Venus clam boiled	almeja cocida
 bls:T797162	Venus clam boiled, gratinated without fat (oven)	almeja cocida gratinada
+bls:T797182	Venus clam boiled, fried without fat (pan)	almeja cocida a la plancha
+bls:T797200	Venus clam deep-frozen	almeja congelada
+bls:T797232	Venus clam deep-frozen, boiled	almeja de congelado cocida
+bls:T797262	Venus clam deep-frozen, gratinated without fat (oven)	almeja de congelado gratinada
+bls:T797282	Venus clam deep-frozen, fried without fat (pan)	almeja de congelado a la plancha
+bls:T797902	Venus clam canned, drained	almeja en conserva escurrida
+bls:T800100	Fish salted, dried	pescado salado seco
+bls:T800200	Stockfish (cod unsalted, dried)	bacalao seco
+bls:T811100	Matjes fillet (herring fillet) Nordic style	filete de arenque matje a la nórdica
+bls:T812702	Shellfish (frutti di mare) in oil, canned, drained	marisco variado en aceite en conserva escurrido
+bls:T813900	Tuna in tomato sauce, canned	atún en tomate en conserva
+bls:T815900	Common shrimp in dill cream, semi-preserved	gambas en crema de eneldo en semiconserva
+bls:T817900	Sardine in tomato sauce, canned	sardina en salsa de tomate en conserva
+bls:T820802	Herring pickled, semi-preserved, drained	arenque en escabeche en semiconserva escurrido
+bls:T822100	Herring fillet in dill cream, canned	filete de arenque en crema de eneldo en conserva
+bls:T822400	Herring fillet in horseradish cream, canned	filete de arenque en crema de rábano picante en conserva
+bls:T822500	Herring fillet in mustard cream, canned	filete de arenque en crema de mostaza en conserva
+bls:T822900	Herring fillet in tomato sauce, canned	filete de arenque en salsa de tomate en conserva
+bls:T824900	Salmon in tomato sauce, canned	salmón en salsa de tomate en conserva
+bls:T830102	Fried herring canned, drained	arenque frito en conserva escurrido
+bls:T830802	Fried mackerel canned, drained	caballa frita en conserva escurrida
+bls:T831900	Mackerel in tomato sauce, canned	caballa en tomate en conserva
+bls:T832900	Common mussel in tomato sauce, canned	mejillón en salsa de tomate en conserva
+bls:T840000	Herring boiled, in jelly	arenque cocido en gelatina
+bls:T860000	Caviar paste	pasta de caviar
+bls:T860100	Anchovy paste	pasta de anchoas
+bls:T861100	Caviar (sturgeon)	caviar de esturión
+bls:T861700	Caviar substitute (lumpfish)	sucedáneo de caviar (de lumpo)
+bls:T890100	Surimi (crab meat imitation)	surimi de pescado
+bls:T900262	Common cuttlefish rings, breaded, deep-frozen, baked (oven)	anillas de sepia empanados de congelado al horno
+bls:T900300	Shellfish (frutti di mare) raw	marisco variado crudo
+bls:T900352	Shellfish (frutti di mare) stewed	marisco variado estofado
+bls:T900382	Shellfish (frutti di mare) fried without fat (pan)	marisco variado a la plancha
+bls:T930100	Fish fingers (Alaska pollock) breaded, deep-frozen	palitos de pescado de abadejo empanados congelados
+bls:T930162	Fish fingers (Alaska pollock) breaded, deep-frozen, fried without fat (oven)	palitos de pescado de abadejo empanados de congelado al horno
+bls:T930182	Fish fingers (Alaska pollock) breaded, deep-frozen, fried without fat (pan)	palitos de pescado de abadejo empanados de congelado a la plancha
 bls:T930700	Alaska pollock in frying batter, deep-frozen	colín de Alaska rebozado congelado
+bls:T930762	Alaska pollock in frying batter, deep-frozen, fried without fat (oven)	abadejo rebozado de congelado al horno
+bls:T930782	Alaska pollock in frying batter, deep-frozen, fried without fat (pan)	abadejo rebozado de congelado a la plancha
+bls:T930792	Alaska pollock in frying batter, deep-frozen, deep-fried	abadejo rebozado de congelado frito
+bls:T930800	Fishcake (Alaska pollock) breaded, deep-frozen	croqueta de pescado de abadejo empanada congelada
+bls:T930862	Fishcake (Alaska pollock) breaded, deep-frozen, fried without fat (oven)	croqueta de pescado de abadejo empanada de congelado al horno
+bls:T930882	Fishcake (Alaska pollock) breaded, deep-frozen, fried without fat (pan)	croqueta de pescado de abadejo empanada de congelado a la plancha
+bls:T930892	Fishcake (Alaska pollock) breaded, deep-frozen, deep-fried	croqueta de pescado de abadejo empanada de congelado frita
+bls:T931200	Saithe/pollack, breaded, deep-frozen	carbonero empanado congelado
+bls:T931262	Saithe/pollack, breaded, deep-frozen, fried without fat (oven)	carbonero empanado de congelado al horno
+bls:T931282	Saithe/pollack, breaded, deep-frozen, fried without fat (pan)	carbonero empanado de congelado a la plancha
+bls:T931292	Saithe/pollack, breaded, deep-frozen, deep-fried	carbonero empanado de congelado frito
+bls:T932200	Saithe/pollack, in frying batter, deep-frozen	carbonero rebozado congelado
+bls:T932262	Saithe/pollack, in frying batter, deep-frozen, fried without fat (oven)	carbonero rebozado de congelado al horno
+bls:T932282	Saithe/pollack, in frying batter, deep-frozen, fried without fat (pan)	carbonero rebozado de congelado a la plancha
 bls:T933100	Carp in frying batter, raw	carpa rebozada cruda
+bls:T933182	Carp in frying batter, fried without fat (pan)	carpa rebozada a la plancha
+bls:T934200	Alaska pollock breaded, deep-frozen	abadejo empanado congelado
+bls:T934262	Alaska pollock breaded, deep-frozen, fried without fat (oven)	abadejo empanado de congelado al horno
+bls:T934282	Alaska pollock breaded, deep-frozen, fried without fat (pan)	abadejo empanado de congelado a la plancha
+bls:T934292	Alaska pollock breaded, deep-frozen, deep-fried	abadejo empanado de congelado frito
+bls:T935200	Fish bake Bordelaise style (Alaska pollock) deep-frozen	filete de abadejo a la bordalesa congelado
+bls:T935262	Fish bake Bordelaise style (Alaska pollock) deep-frozen, fried without fat (oven)	filete de abadejo a la bordalesa de congelado al horno
+bls:T936100	Common shrimp breaded, deep-frozen	gambas empanados congelados
+bls:T936182	Common shrimp breaded, deep-frozen, fried without fat (pan)	gambas empanados de congelado a la plancha
+bls:T940200	Cod in frying batter, deep-frozen	bacalao fresco rebozado congelado
+bls:U010100	Beef mince, raw	carne picada de vacuno cruda
+bls:U010132	Beef mince, boiled	carne picada de vacuno cocida
+bls:U010142	Beef mince, braised without fat	carne picada de vacuno estofada
+bls:U010162	Beef mince, fried without fat (oven)	carne picada de vacuno al horno
+bls:U010182	Beef mince, fried without fat (pan)	carne picada de vacuno a la plancha
+bls:U010200	Beef mince, deep-frozen	carne picada de vacuno congelada
+bls:U010232	Beef mince, deep-frozen, boiled	carne picada de vacuno de congelado cocida
+bls:U010242	Beef mince, deep-frozen, braised without fat	carne picada de vacuno de congelado estofada
+bls:U010262	Beef mince, deep-frozen, fried without fat (oven)	carne picada de vacuno de congelado al horno
+bls:U010272	Beef mince, deep-frozen, grilled	carne picada de vacuno de congelado a la parrilla
+bls:U011172	Beef mince, grilled	carne picada de vacuno a la parrilla
+bls:U012282	Beef mince, deep-frozen, fried without fat (pan)	carne picada de vacuno de congelado a la plancha
+bls:U013100	Beef patty, raw	filete ruso de vacuno crudo
+bls:U013162	Beef patty, fried without fat (oven)	filete ruso de vacuno al horno
+bls:U013172	Beef patty, grilled	filete ruso de vacuno a la parrilla
+bls:U013182	Beef patty, fried without fat (pan)	filete ruso de vacuno a la plancha
+bls:U020100	Pork mince, raw	picada de cerdo cruda
+bls:U020132	Pork mince, boiled	carne picada de cerdo cocida
+bls:U020142	Pork mince, braised without fat	carne picada de cerdo estofada
+bls:U020162	Pork mince, fried without fat (oven)	carne picada de cerdo al horno
 bls:U020182	Pork mince, fried without fat (pan)	carne picada de cerdo salteada sin aceite
+bls:U020200	Pork mince, deep-frozen	carne picada de cerdo congelada
+bls:U020242	Pork mince, deep-frozen, braised without fat	carne picada de cerdo de congelado estofada
+bls:U020272	Pork mince, deep-frozen, grilled	carne picada de cerdo de congelado a la parrilla
+bls:U022232	Pork mince, deep-frozen, boiled	carne picada de cerdo de congelado cocida
+bls:U023262	Pork mince, deep-frozen, fried without fat (pan)	carne picada de cerdo de congelado a la plancha
+bls:U024172	Pork mince, grilled	carne picada de cerdo a la parrilla
+bls:U025100	Pork patty, raw	filete ruso de cerdo crudo
+bls:U025162	Pork patty, fried without fat (oven)	filete ruso de cerdo al horno
+bls:U025172	Pork patty, grilled	filete ruso de cerdo a la parrilla
+bls:U025182	Pork patty, fried without fat (pan)	filete ruso de cerdo a la plancha
+bls:U030100	Veal mince, raw	carne picada de ternera cruda
+bls:U030132	Veal mince, boiled	carne picada de ternera cocida
+bls:U030142	Veal mince, braised without fat	carne picada de ternera estofada
+bls:U030162	Veal mince, fried without fat (oven)	carne picada de ternera al horno
+bls:U030172	Veal mince, grilled	picada de ternera a la parrilla
+bls:U030182	Veal mince, fried without fat (pan)	carne picada de ternera a la plancha
+bls:U040100	Pork/beef, mince mixed, raw	carne picada de cerdo y vacuno cruda
+bls:U040132	Pork/beef, mince mixed, boiled	carne picada de cerdo y vacuno cocida
+bls:U040142	Pork/beef, mince mixed, braised without fat	carne picada de cerdo y vacuno estofada
+bls:U040162	Pork/beef, mince mixed, fried without fat (oven)	carne picada de cerdo y vacuno al horno
+bls:U040182	Pork/beef, mince mixed, fried without fat (pan)	carne picada de cerdo y vacuno a la plancha
+bls:U042232	Pork/beef, mince mixed, deep-frozen, boiled	carne picada de cerdo y vacuno de congelado cocida
+bls:U043262	Pork/beef, mince mixed, deep-frozen, fried without fat (oven)	carne picada de cerdo y vacuno de congelado al horno
+bls:U044262	Pork/beef, mince mixed, deep-frozen, fried without fat (pan)	carne picada de cerdo y vacuno de congelado a la plancha
+bls:U045172	Pork/beef, mince mixed, grilled	carne picada de cerdo y vacuno a la parrilla
+bls:U047200	Pork/beef, mince mixed, deep-frozen	carne picada de cerdo y vacuno congelada
+bls:U047242	Pork/beef, mince mixed, deep-frozen, braised without fat	carne picada de cerdo y vacuno de congelado estofada
+bls:U050100	Beef/pork, mince mixed, raw	carne picada de vacuno y cerdo cruda
+bls:U050132	Beef/pork, mince mixed, boiled	carne picada de vacuno y cerdo cocida
+bls:U050162	Beef/pork, mince mixed, fried without fat (oven)	carne picada de vacuno y cerdo al horno
+bls:U050182	Beef/pork, mince mixed, fried without fat (pan)	carne picada de vacuno y cerdo a la plancha
+bls:U050200	Beef/pork, mince mixed, deep-frozen	carne picada de vacuno y cerdo congelada
+bls:U050242	Beef/pork, mince mixed, deep-frozen, braised without fat	carne picada de vacuno y cerdo de congelado estofada
+bls:U050282	Beef/pork, mince mixed, deep-frozen, fried without fat (pan)	carne picada de vacuno y cerdo de congelado a la plancha
+bls:U051100	Beef/pork, patty, raw	filete ruso de vacuno y cerdo crudo
+bls:U051162	Beef/pork, patty, fried without fat (oven)	filete ruso de vacuno y cerdo al horno
+bls:U051172	Beef/pork, patty, grilled	filete ruso de vacuno y cerdo a la parrilla
+bls:U051182	Beef/pork, patty, fried without fat (pan)	filete ruso de vacuno y cerdo a la plancha
+bls:U063100	Beef/pork, minced steak, raw	filete ruso de vacuno y cerdo crudo
+bls:U063162	Beef/pork, minced steak, fried without fat (oven)	filete ruso de vacuno y cerdo al horno
+bls:U063172	Beef/pork, minced steak, grilled	hamburguesa de vacuno y cerdo a la parrilla
+bls:U063182	Beef/pork, minced steak, fried without fat (pan)	filete ruso de vacuno y cerdo a la plancha
+bls:U063200	Beef/pork, minced steak, deep-frozen	filete ruso de vacuno y cerdo congelado
+bls:U063262	Beef/pork, minced steak, deep-frozen, fried without fat (oven)	filete ruso de vacuno y cerdo de congelado al horno
+bls:U063272	Beef/pork, minced steak, deep-frozen, grilled	filete ruso de vacuno y cerdo de congelado a la parrilla
+bls:U063282	Beef/pork, minced steak, deep-frozen, fried without fat (pan)	filete ruso de vacuno y cerdo de congelado a la plancha
+bls:U065100	Pork sausage meat, raw	masa de salchicha de cerdo cruda
+bls:U065132	Pork sausage meat, boiled	masa de salchicha de cerdo cocida
+bls:U065200	Pork sausage meat, deep-frozen	masa de salchicha de cerdo congelada
+bls:U067100	Leberkase sausage meat from veal with pork, raw	masa de leberkäse de ternera con cerdo cruda
+bls:U067162	Leberkase sausage meat from veal with pork, fried without fat (oven)	masa de leberkäse de ternera con cerdo al horno
+bls:U070100	Beef mince, lean, raw	carne picada de vacuno magra cruda
+bls:U070162	Beef mince, lean, fried without fat (oven)	carne picada de vacuno magra al horno
+bls:U070182	Beef mince, lean, fried without fat (pan)	carne picada de vacuno magra a la plancha
+bls:U070200	Beef mince, lean, deep-frozen	carne picada de vacuno magra congelada
+bls:U070232	Beef mince, lean, deep-frozen, boiled	carne picada de vacuno magra de congelado cocida
+bls:U080100	Beef liver mince, raw	hígado de vacuno picado crudo
+bls:U080132	Beef liver mince, boiled	hígado de vacuno picado cocido
+bls:U080182	Beef liver mince, fried without fat (pan)	hígado de vacuno picado a la plancha
+bls:U080200	Beef liver mince, deep-frozen	hígado de vacuno picado congelado
+bls:U080232	Beef liver mince, deep-frozen, boiled	hígado de vacuno picado de congelado cocido
+bls:U080282	Beef liver mince, deep-frozen, fried without fat (pan)	hígado de vacuno picado de congelado a la plancha
+bls:U101400	Beef meat (round) dried	vacuno (pierna) seco
+bls:U104100	Beef bonemeat, raw	recortes de vacuno crudos
+bls:U109100	Beef oxtail, raw	rabo de vacuno crudo
+bls:U109142	Beef oxtail, braised without fat	rabo de vacuno estofado
+bls:U109182	Beef oxtail, fried without fat (pan)	rabo de vacuno a la plancha
+bls:U111700	Beef fillet, raw cured, smoked	solomillo de vacuno curado ahumado
+bls:U121100	Beef chop (loin) raw	chuleta de vacuno cruda
+bls:U121172	Beef chop (loin) grilled	chuleta de vacuno a la parrilla
+bls:U121182	Beef chop (loin) fried without fat (pan)	chuleta de vacuno a la plancha
+bls:U121200	Beef chop (loin) deep-frozen	chuleta de vacuno congelada
 bls:U121272	Beef chop (loin) deep-frozen, grilled	chuleta de ternera congelada a la parrilla
+bls:U121282	Beef chop (loin) deep-frozen, fried without fat (pan)	chuleta de vacuno de congelado a la plancha
+bls:U131100	Beef steak (loin) raw	filete de lomo de vacuno crudo
+bls:U131162	Beef steak (loin) fried in the oven without fat	filete de lomo de vacuno al horno
+bls:U131172	Beef steak (loin) grilled	filete de lomo de vacuno a la parrilla
+bls:U131182	Beef steak (loin) fried without fat (pan)	filete de lomo de vacuno a la plancha
+bls:U131200	Beef steak (loin) deep-frozen	filete de lomo de vacuno congelado
+bls:U131262	Beef steak (loin) deep-frozen, fried without fat (oven)	filete de lomo de vacuno de congelado al horno
+bls:U131272	Beef steak (loin) deep-frozen, grilled	filete de lomo de vacuno de congelado a la parrilla
+bls:U131282	Beef steak (loin) deep-frozen, fried without fat (pan)	filete de lomo de vacuno de congelado a la plancha
+bls:U133100	Beef steak (loin) marinated, raw	filete de lomo de vacuno marinado crudo
+bls:U133172	Beef steak (loin) marinated, grilled	filete de lomo de vacuno marinado a la parrilla
+bls:U133182	Beef steak (loin) marinated, fried without fat (pan)	filete de lomo de vacuno marinado a la plancha
+bls:U151100	Beef goulash (shoulder) raw	vacuno para guisar (paleta) crudo
+bls:U151142	Beef goulash (shoulder) braised without fat	vacuno para guisar (paleta) estofado
+bls:U151182	Beef goulash (shoulder) fried without fat (pan)	vacuno para guisar (paleta) a la plancha
+bls:U151200	Beef goulash (shoulder) deep-frozen	vacuno para guisar (paleta) congelado
+bls:U151242	Beef goulash (shoulder) deep-frozen, braised without fat	vacuno para guisar (paleta) de congelado estofado
+bls:U151282	Beef goulash (shoulder) deep-frozen, fried without fat (pan)	vacuno para guisar (paleta) de congelado a la plancha
+bls:U163100	Beef meat for olives (topside/top round) raw	vacuno para rollitos (tapa) crudo
+bls:U163142	Beef meat for olives (topside/top round) braised without fat	vacuno para rollitos (tapa) estofado
+bls:U163182	Beef meat for olives (topside/top round) fried without fat (pan)	vacuno para rollitos (tapa) a la plancha
+bls:U171100	Beef meat for roasting (shoulder) raw	vacuno para asar (paleta) crudo
+bls:U171142	Beef meat for roasting (shoulder) braised without fat	vacuno para asar (paleta) estofado
+bls:U171162	Beef meat for roasting (shoulder) fried without fat (oven)	vacuno para asar (paleta) al horno
+bls:U171200	Beef meat for roasting (shoulder) deep-frozen	vacuno para asar (paleta) congelado
+bls:U171242	Beef meat for roasting (shoulder) deep-frozen, braised without fat	vacuno para asar (paleta) de congelado estofado
+bls:U171262	Beef meat for roasting (shoulder) deep-frozen, fried without fat (oven)	vacuno para asar (paleta) de congelado al horno
+bls:U171942	Beef meat for roasting (shoulder) marinated, braised without fat	vacuno para asar (paleta) marinado estofado
+bls:U175100	Beef meat for roasting (sirloin) raw	vacuno para asar (lomo) crudo
+bls:U175162	Beef meat for roasting (sirloin) fried without fat (oven)	vacuno para asar (lomo) al horno
+bls:U184100	Beef meat for boiling (shoulder) raw	vacuno para cocer (paleta) crudo
+bls:U184132	Beef meat for boiling (shoulder) boiled	vacuno para cocer (paleta) cocido
+bls:U185100	Beef meat for boiling (rump) raw	vacuno para cocer (cadera) crudo
+bls:U185132	Beef meat for boiling (rump) boiled	vacuno para cocer (cadera) cocido
+bls:U201000	Beef muscle meat, raw	carne magra de vacuno cruda
+bls:U202000	Beef meat, fat and tendons free (R I) raw	vacuno sin grasa ni tendones crudo
+bls:U203000	Beef meat, tendons coarsly removed, visible fat content max. 5 % (R II) raw	vacuno sin tendones grasa visible máx. 5 % crudo
+bls:U204000	Beef meat, tendons coarsly removed, visible fat content max. 10 % (R III) raw	vacuno sin tendones grasa visible máx. 10 % crudo
+bls:U205000	Beef fatty tissue, subcutaneous, raw	tejido graso de vacuno subcutáneo crudo
+bls:U205300	Beef marrow, raw	tuétano de vacuno crudo
+bls:U205800	Beef fatty tissue, intermuscular, raw	tejido graso de vacuno intermuscular crudo
+bls:U207000	Beef connective tissue, raw	tejido conectivo de vacuno crudo
+bls:U209100	Beef blood liquid, raw	sangre de vacuno cruda
+bls:U211100	Beef fillet (tenderloin) raw	solomillo de vacuno crudo
+bls:U211162	Beef fillet (tenderloin) fried in the oven without fat	solomillo de vacuno al horno
+bls:U211200	Beef fillet (tenderloin) deep-frozen	solomillo de vacuno congelado
+bls:U211262	Beef fillet (tenderloin) deep-frozen, fried without fat (oven)	solomillo de vacuno de congelado al horno
+bls:U216100	Beef tenderloin steak raw	medallón de solomillo de vacuno crudo
+bls:U216172	Beef tenderloin steak grilled	filete de solomillo de vacuno a la parrilla
+bls:U216182	Beef tenderloin steak fried without fat (pan)	filete de solomillo de vacuno a la plancha
+bls:U221100	Beef roastbeef (loin) raw	rosbif de vacuno crudo
+bls:U221162	Beef roastbeef (loin) fried without fat (oven)	rosbif de vacuno al horno
+bls:U221200	Beef roastbeef (loin) deep-frozen	rosbif de vacuno congelado
+bls:U221262	Beef roastbeef (loin) deep-frozen, fried without fat (oven)	rosbif de vacuno de congelado al horno
+bls:U221700	Beef roastbeef (loin) raw cured, smoked	rosbif de vacuno curado ahumado
+bls:U221800	Beef roastbeef (loin) raw cured	rosbif de vacuno curado
+bls:U223000	Beef roastbeef (loin) marinated	rosbif de vacuno marinado
+bls:U223072	Beef roastbeef (loin) marinated, grilled	rosbif de vacuno marinado a la parrilla
+bls:U231100	Beef neck/chuck, raw	cuello de vacuno crudo
+bls:U231132	Beef neck/chuck, boiled	cuello de vacuno cocido
+bls:U231142	Beef neck/chuck, braised without fat	cuello de vacuno estofado
+bls:U231200	Beef neck/chuck, deep-frozen	cuello de vacuno congelado
+bls:U231232	Beef neck/chuck, deep-frozen, boiled	cuello de vacuno de congelado cocido
+bls:U231242	Beef neck/chuck, deep-frozen, braised without fat	cuello de vacuno de congelado estofado
+bls:U235100	Beef forerib/prime rib, raw	costillar de vacuno crudo
+bls:U235132	Beef forerib/prime rib, boiled	costillar de vacuno cocido
+bls:U235142	Beef forerib/prime rib, braised without fat	costillar de vacuno estofado
+bls:U235162	Beef forerib/prime rib, fried without fat (oven)	costillar de vacuno al horno
+bls:U255100	Beef brisket/centre cut, raw	pecho de vacuno central crudo
+bls:U255132	Beef brisket/centre cut, boiled	pecho de vacuno cocido
+bls:U255142	Beef brisket/centre cut, braised without fat	pecho de vacuno estofado
+bls:U255162	Beef brisket/centre cut, fried without fat (oven)	pecho de vacuno al horno
+bls:U255700	Beef brisket/centre cut, raw cured, smoked	pecho de vacuno curado ahumado
+bls:U255800	Beef brisket/centre cut, raw cured	pecho de vacuno curado
+bls:U261100	Beef shoulder, raw	paleta de vacuno cruda
+bls:U261142	Beef shoulder, braised without fat	paleta de vacuno estofada
+bls:U261162	Beef shoulder, fried without fat (oven)	paleta de vacuno al horno
+bls:U261200	Beef shoulder, deep-frozen	paleta de vacuno congelada
+bls:U271100	Beef shin/foreshank, raw	jarrete delantero de vacuno crudo
+bls:U271132	Beef shin/foreshank, boiled	jarrete delantero de vacuno cocido
+bls:U271142	Beef shin/foreshank, braised without fat	jarrete delantero de vacuno estofado
+bls:U271200	Beef shin/foreshank, deep-frozen	jarrete delantero de vacuno congelado
+bls:U271232	Beef shin/foreshank, deep-frozen, boiled	jarrete delantero de vacuno de congelado cocido
+bls:U271242	Beef shin/foreshank, deep-frozen, braised without fat	jarrete delantero de vacuno de congelado estofado
+bls:U281100	Beef round, raw	redondo de vacuno crudo
+bls:U281132	Beef round, boiled	redondo de vacuno cocido
+bls:U281142	Beef round, braised without fat	redondo de vacuno estofado
 bls:U281162	Beef round, fried without fat (oven)	redondo de ternera al horno
+bls:U281200	Beef round, deep-frozen	redondo de vacuno congelado
+bls:U281232	Beef round, deep-frozen, boiled	redondo de vacuno de congelado cocido
+bls:U281242	Beef round, deep-frozen, braised without fat	redondo de vacuno de congelado estofado
+bls:U281262	Beef round, deep-frozen, fried without fat (oven)	redondo de vacuno de congelado al horno
+bls:U284100	Beef rump, raw	cadera de vacuno cruda
+bls:U284132	Beef rump, boiled	cadera de vacuno cocida
+bls:U284142	Beef rump, braised without fat	cadera de vacuno estofada
+bls:U284162	Beef rump, fried without fat (oven)	cadera de vacuno al horno
+bls:U287100	Beef topside/top round, raw	tapa de vacuno cruda
+bls:U287132	Beef topside/top round, boiled	tapa de vacuno cocida
+bls:U287162	Beef topside/top round, fried without fat (oven)	tapa de vacuno al horno
+bls:U291100	Beef leg/hindshank, raw	jarrete trasero de vacuno crudo
+bls:U291132	Beef leg/hindshank, boiled	jarrete trasero de vacuno cocido
+bls:U291142	Beef leg/hindshank, braised without fat	jarrete trasero de vacuno estofado
+bls:U291200	Beef leg/hindshank, deep-frozen	jarrete trasero de vacuno congelado
+bls:U291232	Beef leg/hindshank, deep-frozen, boiled	jarrete trasero de vacuno de congelado cocido
+bls:U291242	Beef leg/hindshank, deep-frozen, braised without fat	jarrete trasero de vacuno de congelado estofado
+bls:U304100	Veal bonemeat, raw	recortes de ternera crudos
+bls:U323100	Veal chop (loin) raw	chuleta de ternera cruda
+bls:U323162	Veal chop (loin) fried without fat (oven)	chuleta de ternera al horno
+bls:U323172	Veal chop (loin) grilled	chuleta de ternera a la parrilla
+bls:U323182	Veal chop (loin) fried without fat (pan)	chuleta de ternera a la plancha
+bls:U331100	Veal steak (loin) raw	filete de lomo de ternera crudo
+bls:U331162	Veal steak (loin) fried without fat (oven)	filete de lomo de ternera al horno
+bls:U331172	Veal steak (loin) grilled	filete de lomo de ternera a la parrilla
+bls:U331182	Veal steak (loin) fried without fat (pan)	filete de lomo de ternera a la plancha
+bls:U331200	Veal steak (loin) deep-frozen	filete de lomo de ternera congelado
+bls:U331262	Veal steak (loin) deep-frozen, fried without fat (oven)	filete de lomo de ternera de congelado al horno
+bls:U331272	Veal steak (loin) deep-frozen, grilled	filete de lomo de ternera de congelado a la parrilla
+bls:U331282	Veal steak (loin) deep-frozen, fried without fat (pan)	filete de lomo de ternera de congelado a la plancha
+bls:U333100	Veal tenderloin steak, raw	filete de solomillo de ternera crudo
+bls:U333162	Veal tenderloin steak, fried without fat (oven)	filete de solomillo de ternera al horno
+bls:U333172	Veal tenderloin steak, grilled	filete de solomillo de ternera a la parrilla
+bls:U333182	Veal tenderloin steak, fried without fat (pan)	filete de solomillo de ternera a la plancha
+bls:U342100	Veal schnitzel (round) raw	escalope de ternera (pierna) crudo
+bls:U342162	Veal schnitzel (round) fried without fat (oven)	escalope de ternera (pierna) al horno
+bls:U342172	Veal schnitzel (round) grilled	escalope de ternera (pierna) a la parrilla
+bls:U342182	Veal schnitzel (round) fried without fat (pan)	escalope de ternera (pierna) a la plancha
+bls:U342200	Veal schnitzel (round) deep-frozen	escalope de ternera (pierna) congelado
+bls:U342262	Veal schnitzel (round) deep-frozen, fried without fat (oven)	escalope de ternera (pierna) de congelado al horno
+bls:U342272	Veal schnitzel (round) deep-frozen, grilled	escalope de ternera (pierna) de congelado a la parrilla
+bls:U342282	Veal schnitzel (round) deep-frozen, fried without fat (pan)	escalope de ternera (pierna) de congelado a la plancha
+bls:U351100	Veal goulash (shoulder) raw	ternera para guisar (paleta) cruda
+bls:U351142	Veal goulash (shoulder) braised without fat	ternera para guisar (paleta) estofada
+bls:U351182	Veal goulash (shoulder) fried without fat (pan)	ternera para guisar (paleta) a la plancha
+bls:U362100	Veal meat for olives (round) raw	ternera para rollitos (pierna) cruda
+bls:U362200	Veal meat for olives (round) deep-frozen	ternera para rollitos (pierna) congelada
+bls:U371100	Veal meat for roasting (shoulder) raw	ternera para asar (paleta) cruda
+bls:U371162	Veal meat for roasting (shoulder) fried without fat (oven)	ternera para asar (paleta) al horno
+bls:U371200	Veal meat for roasting (shoulder) deep-frozen	ternera para asar (paleta) congelada
+bls:U371262	Veal meat for roasting (shoulder) deep-frozen, fried without fat (oven)	ternera para asar (paleta) de congelado al horno
+bls:U382100	Veal meat for boiling (breast) raw	ternera para cocer (pecho) cruda
+bls:U382132	Veal meat for boiling (breast) boiled	ternera para cocer (pecho) cocida
+bls:U382200	Veal meat for boiling (breast) deep-frozen	ternera para cocer (pecho) congelada
+bls:U382232	Veal meat for boiling (breast) deep-frozen, boiled	ternera para cocer (pecho) de congelado cocida
+bls:U401000	Veal muscle meat, raw	carne magra de ternera cruda
+bls:U402000	Veal meat, fat and tendon free (KA I) raw	ternera sin grasa ni tendones cruda
+bls:U403100	Veal meat, low tendon content, visible fat content max. 5 % (KA II) raw	ternera pocos tendones grasa visible máx. 5 % cruda
+bls:U404000	Veal meat, tendon free, visible fat content > 20 % (KA IV) raw	ternera sin tendones grasa visible >20 % cruda
+bls:U405000	Veal fatty tissue, subcutaneous, raw	tejido graso de ternera subcutáneo crudo
+bls:U405200	Veal kidney fat, deep-frozen	grasa del riñón de ternera congelada
+bls:U405800	Veal fatty tissue, intermuscular, raw	tejido graso de ternera intermuscular crudo
+bls:U411100	Veal fillet (tenderloin) raw	solomillo de ternera crudo
+bls:U411162	Veal fillet (tenderloin) fried without fat (oven)	solomillo de ternera al horno
+bls:U411200	Veal fillet (tenderloin) deep-frozen	solomillo de ternera congelado
+bls:U411262	Veal fillet (tenderloin) deep-frozen, fried without fat (oven)	solomillo de ternera de congelado al horno
+bls:U421100	Veal loin, raw	lomo de ternera crudo
+bls:U421142	Veal loin, braised without fat	lomo de ternera estofado
+bls:U421162	Veal loin, fried without fat (oven)	lomo de ternera al horno
+bls:U421200	Veal loin, deep-frozen	lomo de ternera congelado
+bls:U421242	Veal loin, deep-frozen, braised without fat	lomo de ternera de congelado estofado
+bls:U421262	Veal loin, deep-frozen, fried without fat (oven)	lomo de ternera de congelado al horno
+bls:U432100	Veal scrag raw	cuello de ternera crudo
+bls:U432132	Veal scrag boiled	cuello de ternera cocido
+bls:U432142	Veal scrag braised without fat	cuello de ternera estofado
+bls:U432162	Veal scrag fried without fat (oven)	cuello de ternera al horno
+bls:U432200	Veal scrag deep-frozen	cuello de ternera congelado
+bls:U432232	Veal scrag deep-frozen, boiled	cuello de ternera de congelado cocido
+bls:U432242	Veal scrag deep-frozen, braised without fat	cuello de ternera de congelado estofado
+bls:U432262	Veal scrag deep-frozen, fried without fat (oven)	cuello de ternera de congelado al horno
+bls:U452100	Veal breast, raw	pecho de ternera crudo
+bls:U452132	Veal breast, boiled	pecho de ternera cocido
+bls:U452142	Veal breast, braised without fat	pecho de ternera estofado
+bls:U452162	Veal breast, fried without fat (oven)	pecho de ternera al horno
+bls:U452200	Veal breast, deep-frozen	pecho de ternera congelado
+bls:U452232	Veal breast, deep-frozen, boiled	pecho de ternera de congelado cocido
+bls:U452242	Veal breast, deep-frozen, braised without fat	pecho de ternera de congelado estofado
+bls:U452262	Veal breast, deep-frozen, fried without fat (oven)	pecho de ternera de congelado al horno
+bls:U452700	Veal breast, raw cured, smoked	pecho de ternera curado ahumado
+bls:U452800	Veal breast, raw cured	pecho de ternera curado
+bls:U461100	Veal shoulder, raw	paleta de ternera cruda
+bls:U461132	Veal shoulder, boiled	paleta de ternera cocida
+bls:U461142	Veal shoulder, braised without fat	paleta de ternera braseada
+bls:U461162	Veal shoulder, fried without fat (oven)	paleta de ternera al horno
+bls:U461200	Veal shoulder, deep-frozen	paleta de ternera congelada
+bls:U461232	Veal shoulder, deep-frozen, boiled	paleta de ternera de congelado cocida
+bls:U461242	Veal shoulder, deep-frozen, braised without fat	paleta de ternera de congelado estofada
+bls:U461262	Veal shoulder, deep-frozen, fried without fat (oven)	paleta de ternera de congelado al horno
+bls:U471100	Veal shank, raw	jarrete de ternera crudo
+bls:U471142	Veal shank, braised without fat	jarrete de ternera estofado
+bls:U471162	Veal shank, fried without fat (oven)	jarrete de ternera al horno
+bls:U471172	Veal shank, grilled	jarrete de ternera a la parrilla
+bls:U471200	Veal shank, deep-frozen	jarrete de ternera congelado
+bls:U471242	Veal shank, deep-frozen, braised without fat	jarrete de ternera de congelado estofado
+bls:U471262	Veal shank, deep-frozen, fried without fat (oven)	jarrete de ternera de congelado al horno
+bls:U471272	Veal shank, deep-frozen, grilled	jarrete de ternera de congelado a la parrilla
+bls:U482100	Veal round, raw	pierna de ternera cruda
+bls:U482162	Veal round, fried without fat (oven)	pierna de ternera al horno
+bls:U482200	Veal round, deep-frozen	pierna de ternera congelada
+bls:U482262	Veal round, deep-frozen, fried without fat (oven)	pierna de ternera de congelado al horno
+bls:U485100	Veal thick flank, raw	contra de ternera cruda
+bls:U485162	Veal thick flank, fried without fat (oven)	contra de ternera al horno
+bls:U486100	Veal silverside, raw	babilla de ternera cruda
+bls:U486142	Veal silverside, braised without fat	babilla de ternera estofada
+bls:U486162	Veal silverside, fried without fat (oven)	babilla de ternera al horno
+bls:U4A3100	Veal meat, visible fat content max. 15 % (KA III) raw	ternera grasa visible máx. 15 % cruda
+bls:U504100	Pork bonemeat, raw	recortes de cerdo crudos
+bls:U505100	Pork fat belly flank, without rind, low lean meat content (S XI) raw	falda de cerdo grasa sin corteza poca carne (S XI) cruda
+bls:U507100	Pork fat jowl, without rind (S VI) raw	grasa de carrillera sin corteza (S VI) cruda
+bls:U508100	Pork mask, without lean and fat jowl (S XII) raw	careta de cerdo sin carrilleras (S XII) cruda
+bls:U510082	Pork fillet medallion, marinated, fried without fat (pan)	medallón de solomillo de cerdo marinado a la plancha
+bls:U511082	Pork fillet medaillon, breaded, fried without fat (pan)	medallones de solomillo de cerdo empanados a la plancha
+bls:U511100	Pork fillet medaillon, raw	medallones de solomillo de cerdo crudos
+bls:U511162	Pork fillet medaillon, fried without fat (oven)	medallones de solomillo de cerdo al horno
+bls:U511172	Pork fillet medaillon, grilled	medallones de solomillo de cerdo a la parrilla
 bls:U511182	Pork fillet medaillon, fried without fat (pan)	medallones de lomo de cerdo a la plancha
+bls:U511200	Pork fillet medaillon, deep-frozen	medallones de solomillo de cerdo congelados
+bls:U511262	Pork fillet medaillon, deep-frozen, fried without fat (oven)	medallones de solomillo de cerdo de congelado al horno
+bls:U511272	Pork fillet medaillon, deep-frozen, grilled	medallones de solomillo de cerdo de congelado a la parrilla
+bls:U511282	Pork fillet medaillon, deep-frozen, fried without fat (pan)	medallones de solomillo de cerdo de congelado a la plancha
+bls:U512100	Pork fillet medaillon, marinated, raw	medallones de solomillo de cerdo marinados crudos
+bls:U512172	Pork fillet medaillon, marinated, grilled	medallones de solomillo de cerdo marinados a la parrilla
+bls:U522100	Pork chop (loin) raw	chuleta de cerdo con hueso cruda
+bls:U522162	Pork chop (loin) fried without fat (oven)	chuleta de cerdo al horno
+bls:U522172	Pork chop (loin) grilled	chuleta de cerdo a la parrilla
+bls:U522182	Pork chop (loin) fried without fat (pan)	chuleta de cerdo a la plancha
+bls:U522200	Pork chop (loin) deep-frozen	chuleta de cerdo congelada
+bls:U522262	Pork chop (loin) deep-frozen, fried without fat (oven)	chuleta de cerdo de congelado al horno
+bls:U522272	Pork chop (loin) deep-frozen, grilled	chuleta de cerdo de congelado a la parrilla
+bls:U522282	Pork chop (loin) deep-frozen, fried without fat (pan)	chuleta de cerdo de congelado a la plancha
+bls:U522700	Pork chop (loin) cooked cured, smoked	chuleta de cerdo curada cocida ahumada
+bls:U522800	Pork chop (loin) cooked cured	chuleta de cerdo curada cocida
+bls:U532072	Pork steak (neck) marinated, grilled	filete de cuello de cerdo marinado a la parrilla
+bls:U532100	Pork steak (neck) raw	filete de cuello de cerdo crudo
+bls:U532162	Pork steak (neck) fried without fat (oven)	filete de cuello de cerdo al horno
+bls:U532172	Pork steak (neck) grilled	filete de cuello de cerdo a la parrilla
+bls:U532182	Pork steak (neck) raw fried without fat (pan)	filete de cuello de cerdo crudo a la plancha
+bls:U532200	Pork steak (neck) deep-frozen	filete de cuello de cerdo congelado
+bls:U532262	Pork steak (neck) deep-frozen, fried without fat (oven)	filete de cuello de cerdo de congelado al horno
+bls:U532272	Pork steak (neck) deep-frozen, grilled	filete de cuello de cerdo de congelado a la parrilla
+bls:U532282	Pork steak (neck) deep-frozen, fried without fat (pan)	filete de cuello de cerdo de congelado a la plancha
+bls:U533100	Pork steak (loin) raw	filete mariposa de cerdo crudo
+bls:U533162	Pork steak (loin) fried without fat (oven)	filete mariposa de cerdo al horno
+bls:U533172	Pork steak (loin) grilled	filete mariposa de cerdo a la parrilla
+bls:U533182	Pork steak (loin) fried without fat (pan)	filete mariposa de cerdo a la plancha
+bls:U541062	Pork schnitzel (topside) fried without fat (oven)	escalope de cerdo (tapa) al horno
+bls:U541072	Pork schnitzel (topside) marinated, grilled	escalope de cerdo (tapa) marinado a la parrilla
+bls:U541082	Pork schnitzel (topside) fried without fat (pan)	escalope de cerdo (tapa) a la plancha
+bls:U541100	Pork schnitzel (topside) raw	escalope de cerdo (tapa) crudo
+bls:U541172	Pork schnitzel (topside) grilled	escalope de cerdo (tapa) a la parrilla
+bls:U541200	Pork schnitzel (topside) deep-frozen	escalope de cerdo (tapa) congelado
+bls:U541262	Pork schnitzel (topside) deep-frozen, fried without fat (oven)	escalope de cerdo (tapa) de congelado al horno
+bls:U541272	Pork schnitzel (topside) deep-frozen, grilled	escalope de cerdo (tapa) de congelado a la parrilla
+bls:U541282	Pork schnitzel (topside) deep-frozen, fried without fat (pan)	escalope de cerdo (tapa) de congelado a la plancha
+bls:U543100	Pork schnitzel (thick flank) raw	escalope de cerdo (contra) crudo
+bls:U543162	Pork schnitzel (thick flank) fried without fat (oven)	escalope de cerdo (contra) al horno
+bls:U543172	Pork schnitzel (thick flank) grilled	escalope de cerdo (contra) a la parrilla
+bls:U543182	Pork schnitzel (thick flank) fried without fat (pan)	escalope de cerdo (contra) a la plancha
+bls:U554100	Pork goulash (shoulder strips) raw	cerdo para guisar (recortes de paleta) crudo
+bls:U554142	Pork goulash (shoulder strips) braised without fat	cerdo para guisar (recortes de paleta) estofado
+bls:U554182	Pork goulash (shoulder strips) fried without fat (pan)	cerdo para guisar (recortes de paleta) a la plancha
+bls:U563100	Pork meat for olives (topside) raw	cerdo para rollitos (tapa) crudo
+bls:U563142	Pork meat for olives (topside) braised without fat	cerdo para rollitos (tapa) estofado
 bls:U563162	Pork meat for olives (topside) fried without fat (pan)	filetes de cerdo para rollitos a la plancha
+bls:U564100	Pork breast tip cut raw	costillar grueso de cerdo crudo
+bls:U564132	Pork breast tip cut boiled	costillar grueso de cerdo cocido
+bls:U564142	Pork breast tip cut braised without fat	costillar grueso de cerdo estofado
+bls:U564162	Pork breast tip cut fried without fat (oven)	costillar grueso de cerdo al horno
+bls:U571100	Pork meat for roasting (shoulder with fat and rind) raw	cerdo para asar (paleta, con grasa y corteza) crudo
+bls:U571162	Pork meat for roasting (shoulder with fat and rind) fried without fat (oven)	cerdo para asar (paleta, con grasa y corteza) al horno
+bls:U574100	Pork meat for roasting (shoulder without fat and rind) raw	cerdo para asar (paleta, sin grasa ni corteza) crudo
+bls:U574162	Pork meat for roasting (shoulder without fat and rind) fried without fat (oven)	cerdo para asar (paleta, sin grasa ni corteza) al horno
+bls:U575100	Pork meat for roasting (thick flank) raw	cerdo para asar (contra) crudo
+bls:U575162	Pork meat for roasting (thick flank) fried without fat (oven)	cerdo para asar (contra) al horno
+bls:U576100	Pork meat for roasting (rump) roh	cerdo para asar (cadera) crudo
+bls:U576162	Pork meat for roasting (rump) fried without fat (oven)	cerdo para asar (cadera) al horno
+bls:U577100	Pork meat for roasting (neck) raw	cerdo para asar (cuello) crudo
+bls:U577162	Pork meat for roasting (neck) fried without fat (oven)	cerdo para asar (cuello) al horno
+bls:U578100	Pork meat for roasting (loin) raw	cerdo para asar (lomo) crudo
+bls:U578162	Pork meat for roasting (loin) fried without fat (oven)	cerdo para asar (lomo) al horno
+bls:U579100	Pork meat for roasting (silverside) raw	cerdo para asar con corteza (asado crujiente) crudo
+bls:U579162	Pork meat for roasting (silverside) fried without fat (oven)	cerdo para asar con corteza (asado crujiente) al horno
+bls:U57A100	Pork belly for grilling, raw	panceta para la parrilla cruda
+bls:U57A172	Pork belly for grilling, grilled	panceta para la parrilla a la parrilla
+bls:U57B100	Pork belly for roasting, raw	falda de cerdo para asar cruda
+bls:U57B162	Pork belly for roasting, fried without fat (oven)	falda de cerdo para asar al horno
+bls:U583100	Pork meat for boiling (belly) raw	cerdo para cocer (panceta) crudo
+bls:U583132	Pork meat for boiling (belly) boiled	cerdo para cocer (panceta) cocido
+bls:U583200	Pork meat for boiling (belly) deep-frozen	cerdo para cocer (panceta) congelado
+bls:U583232	Pork meat for boiling (belly) deep-frozen, boiled	cerdo para cocer (panceta) de congelado cocido
+bls:U601000	Pork muscle meat, raw	carne magra de cerdo cruda
+bls:U602000	Pork meat, fat and tendon free (S I) raw	cerdo sin grasa ni tendones crudo
+bls:U602100	Pork meat, tendon free, visible fat content max. 5 % (S II) raw	cerdo sin tendones grasa visible máx. 5 % crudo
+bls:U602200	Pork meat, low fine tendon content, visible fat content max. 3 - 5 % (S II/III) raw	cerdo pocos tendones finos grasa visible 3-5 % crudo
+bls:U603000	Pork meat, higher tendon content, visible fat content max. 7 - 10 % (S III) raw	cerdo más tendones grasa visible 7-10 % crudo
+bls:U603100	Pork belly, lean, visible fat content max. 25 % (S IV) raw	panceta magra grasa visible máx. 25 % cruda
+bls:U604000	Pork belly, firm, visible fat content max. 60 % (S V) raw	panceta carnosa grasa visible máx. 60 % cruda
+bls:U605000	Pork back fat, firm, without rind (S VIII) raw	tocino de espalda carnoso sin corteza (S VIII) crudo
+bls:U605700	Pork neck and back fat, without rind (S VII) raw	cuello de cerdo con tocino sin corteza (S VII) crudo
+bls:U605800	Pork fat trimmings, low rind content, very low lean meat content (S IX) raw	recortes de grasa de cerdo poca corteza muy poca carne (S IX) crudos
+bls:U605900	Pork belly flank, medium fat, without rind (S X) raw	falda de cerdo semigraso sin corteza (S X) cruda
+bls:U608300	Pork rind, boiled	corteza de cerdo cocida
+bls:U609100	Pork blood, raw	sangre de cerdo cruda
+bls:U611100	Pork tenderloin, raw	solomillo de cerdo crudo
+bls:U611162	Pork tenderloin, fried without fat (oven)	solomillo de cerdo al horno
+bls:U611172	Pork tenderloin, grilled	solomillo de cerdo a la parrilla
+bls:U611200	Pork tenderloin, deep-frozen	solomillo de cerdo congelado
+bls:U611262	Pork tenderloin, deep-frozen, fried without fat (oven)	solomillo de cerdo de congelado al horno
+bls:U611272	Pork tenderloin, deep-frozen, grilled	solomillo de cerdo de congelado a la parrilla
+bls:U622100	Pork loin (cranial part) raw	lomo de cerdo (parte craneal) crudo
+bls:U622142	Pork loin (cranial part) braised without fat	lomo de cerdo (parte craneal) estofado
+bls:U622162	Pork loin (cranial part) fried without fat (oven)	lomo de cerdo (parte craneal) al horno
+bls:U622172	Pork loin (cranial part) grilled	lomo de cerdo (parte craneal) a la parrilla
+bls:U622200	Pork loin (cranial part) deep-frozen	lomo de cerdo (parte craneal) congelado
+bls:U622242	Pork loin (cranial part) deep-frozen, braised without fat	lomo de cerdo (parte craneal) de congelado estofado
+bls:U622262	Pork loin (cranial part) deep-frozen, fried without fat (oven)	lomo de cerdo (parte craneal) de congelado al horno
+bls:U622272	Pork loin (cranial part) deep-frozen, grilled	lomo de cerdo (parte craneal) de congelado a la parrilla
+bls:U622700	Pork loin (cranial part) cooked cured, smoked	lomo de cerdo (parte craneal) curado cocido ahumado
+bls:U622800	Pork loin (cranial part) cooked cured	lomo de cerdo (parte craneal) curado cocido
+bls:U623172	Pork loin (cranial part) marinated, grilled	lomo de cerdo (parte craneal) marinado a la parrilla
+bls:U624100	Pork loin (caudal part) raw	lomo de cerdo (parte caudal) crudo
+bls:U624162	Pork loin (caudal part) fried without fat (oven)	lomo de cerdo (parte caudal) al horno
+bls:U624172	Pork loin (caudal part) grilled	lomo de cerdo (parte caudal) a la parrilla
+bls:U632072	Pork neck, marinated, grilled	cuello de cerdo marinado a la parrilla
+bls:U632100	Pork neck, raw	cuello de cerdo crudo
+bls:U632162	Pork neck, fried without fat (oven)	cuello de cerdo al horno
+bls:U632172	Pork neck, grilled	cuello de cerdo a la parrilla
+bls:U632200	Pork neck, deep-frozen	cuello de cerdo congelado
+bls:U632262	Pork neck, deep-frozen, fried without fat (oven)	cuello de cerdo de congelado al horno
+bls:U632272	Pork neck, deep-frozen, grilled	cuello de cerdo de congelado a la parrilla
+bls:U632700	Pork neck, raw cured, smoked	cuello de cerdo curado ahumado
+bls:U632800	Pork neck, raw cured	cuello de cerdo curado
+bls:U642100	Pork belly (untrimmed) raw	panceta entera cruda
+bls:U642132	Pork belly (untrimmed) boiled	panceta entera cocida
+bls:U642162	Pork belly (untrimmed) fried in the oven without fat	panceta entera al horno
+bls:U642172	Pork belly (untrimmed) grilled	panceta entera a la parrilla
+bls:U642200	Pork belly (untrimmed) deep-frozen	panceta entera congelada
+bls:U642232	Pork belly (untrimmed) deep-frozen, boiled	panceta entera de congelado cocida
+bls:U642262	Pork belly (untrimmed) deep-frozen, fried without fat (oven)	panceta entera de congelado al horno
+bls:U642272	Pork belly (untrimmed) deep-frozen, grilled	panceta entera de congelado a la parrilla
+bls:U642300	Pork belly (untrimmed) marinated	panceta entera marinada
+bls:U642372	Pork belly (untrimmed) marinated, grilled	panceta entera marinada a la parrilla
+bls:U642700	Pork belly (untrimmed) raw cured, smoked	panceta entera curada ahumada
+bls:U642800	Pork belly (untrimmed) raw cured	panceta entera curada
+bls:U651100	Pork breast tip, raw	punta de pecho de cerdo cruda
+bls:U651132	Pork breast tip, boiled	punta de pecho de cerdo cocida
+bls:U651142	Pork breast tip, braised without fat	punta de pecho de cerdo estofada
+bls:U651162	Pork breast tip, fried without fat (oven)	punta de pecho de cerdo al horno
+bls:U664100	Pork shoulder (with fat and rind) raw	paleta de cerdo con grasa y corteza cruda
+bls:U664162	Pork shoulder (with fat and rind) fried without fat (oven)	paleta de cerdo con grasa y corteza al horno
+bls:U665100	Pork shoulder (without fat and rind) raw	paleta de cerdo sin grasa ni corteza cruda
+bls:U665162	Pork shoulder (without fat and rind) fried without fat (oven)	paleta de cerdo sin grasa ni corteza al horno
+bls:U666100	Pork shoulder strips, raw	recortes de paleta de cerdo crudos
+bls:U672100	Pork foreshank (hock) raw	codillo delantero crudo
+bls:U672132	Pork foreshank (hock) boiled	codillo delantero cocido
+bls:U672162	Pork foreshank (hock) fried without fat (oven)	codillo delantero al horno
+bls:U672172	Pork foreshank (hock) grilled	codillo delantero a la parrilla
+bls:U672200	Pork foreshank (hock) deep-frozen	codillo delantero congelado
+bls:U672232	Pork foreshank (hock) deep-frozen, boiled	codillo delantero de congelado cocido
+bls:U672262	Pork foreshank (hock) deep-frozen, fried without fat (oven)	codillo delantero de congelado al horno
+bls:U672272	Pork foreshank (hock) deep-frozen, grilled	codillo delantero de congelado a la parrilla
+bls:U672700	Pork foreshank (hock) cooked cured, smoked	codillo delantero curado cocido ahumado
+bls:U672800	Pork foreshank (hock) cooked cured	codillo delantero curado cocido
+bls:U681700	Pork ham raw, lean, raw cured, smoked	jamón crudo magro curado ahumado
+bls:U682700	Pork ham raw, with fat, raw cured, smoked	jamón crudo con borde de grasa curado ahumado
+bls:U684100	Pork thick flank, raw	contra de cerdo cruda
+bls:U684162	Pork thick flank, fried without fat (oven)	contra de cerdo al horno
+bls:U685100	Pork rump, raw	cadera de cerdo cruda
+bls:U685142	Pork rump, braised without fat	cadera de cerdo estofada
+bls:U685162	Pork rump, fried without fat (oven)	cadera de cerdo al horno
+bls:U686100	Pork silverside, raw	babilla de cerdo cruda
+bls:U686162	Pork silverside, fried without fat (oven)	babilla de cerdo al horno
+bls:U687000	Pork topside	tapa de cerdo
+bls:U687032	Pork topside, boiled	tapa de cerdo cocida
+bls:U687062	Pork topside, fried without fat (oven)	tapa de cerdo al horno
+bls:U693100	Pork hindshank (hock) raw	codillo trasero crudo
+bls:U693132	Pork hindshank (hock) boiled	codillo trasero cocido
+bls:U693162	Pork hindshank (hock) fried without fat (oven)	codillo trasero al horno
+bls:U693172	Pork hindshank (hock) grilled	codillo trasero a la parrilla
+bls:U693200	Pork hindshank (hock) deep-frozen	codillo trasero congelado
+bls:U693232	Pork hindshank (hock) deep-frozen, boiled	codillo trasero de congelado cocido
+bls:U693262	Pork hindshank (hock) deep-frozen, fried without fat (oven)	codillo trasero de congelado al horno
+bls:U693272	Pork hindshank (hock) deep-frozen, grilled	codillo trasero de congelado a la parrilla
+bls:U693700	Pork hindshank (hock) cooked cured, smoked	codillo trasero curado cocido ahumado
+bls:U693800	Pork hindshank (hock) cooked cured	codillo trasero curado cocido
+bls:U711100	Sheep fillet medaillon, raw	medallones de solomillo de carnero crudos
+bls:U711162	Sheep fillet medaillon, fried without fat (oven)	medallones de solomillo de carnero al horno
+bls:U711172	Sheep fillet medaillon, grilled	medallones de solomillo de carnero a la parrilla
+bls:U711182	Sheep fillet medaillon, fried without fat (pan)	medallones de solomillo de carnero a la plancha
+bls:U711200	Sheep fillet medaillon, deep-frozen	medallones de solomillo de carnero congelados
+bls:U711262	Sheep fillet medaillon, deep-frozen, fried without fat (oven)	medallones de solomillo de carnero de congelado al horno
+bls:U711272	Sheep fillet medaillon, deep-frozen, grilled	medallones de solomillo de carnero de congelado a la parrilla
+bls:U711282	Sheep fillet medaillon, deep-frozen, fried without fat (pan)	medallones de solomillo de carnero de congelado a la plancha
+bls:U721100	Sheep chop (loin) raw	chuleta de carnero cruda
+bls:U721172	Sheep chop (loin) grilled	chuleta de carnero a la parrilla
+bls:U721182	Sheep chop (loin) fried without fat (pan)	chuleta de carnero a la plancha
+bls:U721200	Sheep chop (loin) deep-frozen	chuleta de carnero congelada
+bls:U721272	Sheep chop (loin) deep-frozen, grilled	chuleta de carnero de congelado a la parrilla
+bls:U721282	Sheep chop (loin) deep-frozen, fried without fat (pan)	chuleta de carnero de congelado a la plancha
+bls:U724000	Sheep chop (loin) marinated, raw	chuleta de carnero marinada cruda
+bls:U724072	Sheep chop (loin) marinated, grilled	chuleta de carnero marinada a la parrilla
+bls:U724082	Sheep chop (loin) marinated, fried without fat (pan)	chuleta de carnero marinada a la plancha
+bls:U726100	Mutton chop (loin) raw	chuleta de carnero cruda
+bls:U726162	Mutton chop (loin) fried without fat (oven)	chuleta de carnero al horno
+bls:U726172	Mutton chop (loin) grilled	chuleta de carnero a la parrilla
+bls:U726182	Mutton chop (loin) fried without fat (pan)	chuleta de carnero a la plancha
+bls:U727100	Lamb chop (loin) raw	chuleta de cordero cruda
+bls:U727162	Lamb chop (loin) fried without fat (oven)	chuleta de cordero al horno
+bls:U727172	Lamb chop (loin) grilled	chuleta de cordero a la parrilla
+bls:U727182	Lamb chop (loin) fried without fat (pan)	chuleta de cordero a la plancha
+bls:U733100	Sheep fillet steak, raw	filete de solomillo de carnero crudo
+bls:U733162	Sheep fillet steak, fried without fat (oven)	filete de solomillo de carnero al horno
+bls:U733172	Sheep fillet steak, grilled	filete de solomillo de carnero a la parrilla
+bls:U733182	Sheep fillet steak, fried without fat (pan)	filete de solomillo de carnero a la plancha
+bls:U733200	Sheep fillet steak, deep-frozen	filete de solomillo de carnero congelado
+bls:U733262	Sheep fillet steak, deep-frozen, fried without fat (oven)	filete de solomillo de carnero de congelado al horno
+bls:U733272	Sheep fillet steak, deep-frozen, grilled	filete de solomillo de carnero de congelado a la parrilla
+bls:U733282	Sheep fillet steak, deep-frozen, fried without fat (pan)	filete de solomillo de carnero de congelado a la plancha
+bls:U741100	Sheep schnitzel (leg, lean) raw	escalope de carnero (pierna, magro) crudo
+bls:U741162	Sheep schnitzel (leg, lean) fried without fat (oven)	escalope de carnero (pierna, magro) al horno
+bls:U741172	Sheep schnitzel (leg, lean) grilled	escalope de carnero (pierna, magro) a la parrilla
+bls:U741182	Sheep schnitzel (leg, lean) fried without fat (pan)	escalope de carnero (pierna, magro) a la plancha
+bls:U741200	Sheep schnitzel (leg, lean) deep-frozen	escalope de carnero (pierna, magro) congelado
+bls:U741262	Sheep schnitzel (leg, lean) deep-frozen, fried without fat (oven)	escalope de carnero (pierna, magro) de congelado al horno
+bls:U741272	Sheep schnitzel (leg, lean) deep-frozen, grilled	escalope de carnero (pierna, magro) de congelado a la parrilla
+bls:U741282	Sheep schnitzel (leg, lean) deep-frozen, fried without fat (pan)	escalope de carnero (pierna, magro) de congelado a la plancha
+bls:U742100	Sheep schnitzel (leg, medium fat) raw	escalope de carnero (pierna, semigraso) crudo
+bls:U742162	Sheep schnitzel (leg, medium fat) fried without fat (oven)	escalope de carnero (pierna, semigraso) al horno
+bls:U742172	Sheep schnitzel (leg, medium fat) grilled	escalope de carnero (pierna, semigraso) a la parrilla
+bls:U742182	Sheep schnitzel (leg, medium fat) fried without fat (pan)	escalope de carnero (pierna, semigraso) a la plancha
+bls:U751100	Sheep goulash (shoulder, lean) raw	carnero para guisar (paleta, magra) crudo
+bls:U751142	Sheep goulash (shoulder, lean) braised without fat	carnero para guisar (paleta, magra) estofado
+bls:U751182	Sheep goulash (shoulder, lean) fried without fat (pan)	carnero para guisar (paleta, magra) a la plancha
+bls:U753100	Sheep goulash (shoulder, fat) raw	carnero para guisar (paleta, grasa) crudo
+bls:U753142	Sheep goulash (shoulder, fat) braised without fat	carnero para guisar (paleta, grasa) estofado
+bls:U753182	Sheep goulash (shoulder, fat) fried without fat (pan)	carnero para guisar (paleta, grasa) a la plancha
+bls:U754100	Sheep goulash (scrag) raw	carnero para guisar (cuello) crudo
+bls:U754142	Sheep goulash (scrag) braised without fat	carnero para guisar (cuello) estofado
+bls:U754182	Sheep goulash (scrag) fried without fat (pan)	carnero para guisar (cuello) a la plancha
+bls:U771100	Sheep meat for roasting (shoulder, lean) raw	carnero para asar (paleta, magra) crudo
+bls:U771142	Sheep meat for roasting (shoulder, lean) braised without fat	carnero para asar (paleta, magra) estofado
+bls:U771162	Sheep meat for roasting (shoulder, lean) fried without fat (oven)	carnero para asar (paleta, magra) al horno
+bls:U773100	Sheep meat for roasting (shoulder, fat) raw	carnero para asar (paleta, grasa) crudo
+bls:U773142	Sheep meat for roasting (shoulder, fat) braised without fat	carnero para asar (paleta, grasa) estofado
+bls:U773162	Sheep meat for roasting (shoulder, fat) fried without fat (oven)	carnero para asar (paleta, grasa) al horno
+bls:U783100	Sheep meat for boiling (breast, fat) raw	carnero para cocer (pecho, graso) crudo
+bls:U783132	Sheep meat for boiling (breast, fat) boiled	carnero para cocer (pecho, graso) cocido
+bls:U801000	Sheep muscle meat, raw	carne magra de carnero cruda
+bls:U802000	Sheep meat, low in fat and tendons, raw	carnero bajo en grasa y tendones crudo
+bls:U803000	Sheep meat, tendons coarsly removed, raw	carnero sin tendones crudo
+bls:U805800	Sheep fatty tissue, intermuscular, raw	tejido graso de carnero intermuscular crudo
+bls:U806000	Mutton muscle meat, raw	carne magra de carnero cruda
 bls:U807000	Lamb muscle meat, raw	carne de cordero cruda
+bls:U807100	Lamb fatty tissue, intermuscular, raw	tejido graso de cordero intermuscular crudo
+bls:U811100	Sheep tenderloin, raw	solomillo de carnero crudo
+bls:U811162	Sheep tenderloin, fried without fat (oven)	solomillo de carnero al horno
+bls:U811172	Sheep tenderloin, grilled	solomillo de carnero a la parrilla
+bls:U811200	Sheep tenderloin, deep-frozen	solomillo de carnero congelado
+bls:U811262	Sheep tenderloin, deep-frozen, fried without fat (oven)	solomillo de carnero de congelado al horno
+bls:U811272	Sheep tenderloin, deep-frozen, grilled	solomillo de carnero de congelado a la parrilla
+bls:U816100	Mutton tenderloin, raw	solomillo de carnero crudo
+bls:U816162	Mutton tenderloin, fried without fat (oven)	solomillo de carnero al horno
+bls:U816172	Mutton tenderloin, grilled	solomillo de carnero a la parrilla
+bls:U817100	Lamb thick flank, raw	contra de cordero cruda
+bls:U817162	Lamb thick flank, fried without fat (oven)	contra de cordero al horno
+bls:U821100	Sheep loin (chop) raw	lomo de carnero crudo
+bls:U821162	Sheep loin (chop) fried without fat (oven)	lomo de carnero al horno
+bls:U821172	Sheep loin (chop) grilled	lomo de carnero a la parrilla
+bls:U831100	Sheep scrag, raw	cuello de carnero crudo
+bls:U831142	Sheep scrag, braised without fat	cuello de carnero estofado
+bls:U831162	Sheep scrag, fried without fat (oven)	cuello de carnero al horno
+bls:U831172	Sheep scrag, grilled	cuello de carnero a la parrilla
+bls:U831182	Sheep scrag, fried without fat (pan)	cuello de carnero a la plancha
+bls:U837100	Lamb scrag, raw	cuello de cordero crudo
+bls:U852100	Sheep breast, medium fat, raw	pecho de carnero semigraso crudo
+bls:U852132	Sheep breast, medium fat, boiled	pecho de carnero semigraso cocido
+bls:U852142	Sheep breast, medium fat, braised without fat	pecho de carnero semigraso estofado
+bls:U852162	Sheep breast, medium fat, fried without fat (oven)	pecho de carnero semigraso al horno
+bls:U852200	Sheep breast, medium fat, deep-frozen	pecho de carnero semigraso congelado
+bls:U852232	Sheep breast, medium fat, deep-frozen, boiled	pecho de carnero semigraso de congelado cocido
+bls:U852242	Sheep breast, medium fat, deep-frozen, braised without fat	pecho de carnero semigraso de congelado estofado
+bls:U852262	Sheep breast, medium fat, deep-frozen, fried without fat (oven)	pecho de carnero semigraso de congelado al horno
+bls:U853100	Sheep breast, fat, raw	pecho de carnero graso crudo
+bls:U853132	Sheep breast, fat, boiled	pecho de carnero graso cocido
+bls:U853142	Sheep breast, fat, braised without fat	pecho de carnero graso estofado
+bls:U853162	Sheep breast, fat, fried without fat (oven)	pecho de carnero graso al horno
+bls:U856100	Mutton breast, raw	pecho de carnero crudo
+bls:U856132	Mutton breast, boiled	pecho de carnero cocido
+bls:U856142	Mutton breast, braised without fat	pecho de carnero estofado
+bls:U856162	Mutton breast, fried without fat (oven)	pecho de carnero al horno
+bls:U857100	Lamb breast, raw	pecho de cordero crudo
+bls:U857132	Lamb breast, boiled	pecho de cordero cocido
+bls:U857142	Lamb breast, braised without fat	pecho de cordero estofado
+bls:U857162	Lamb breast, fried without fat (oven)	pecho de cordero al horno
+bls:U861100	Sheep shoulder, lean, raw	paleta de carnero magra cruda
+bls:U861132	Sheep shoulder, lean, boiled	paleta de carnero magra cocida
+bls:U861142	Sheep shoulder, lean, braised without fat	paleta de carnero magra estofada
+bls:U861162	Sheep shoulder, lean, fried without fat (oven)	paleta de carnero magra al horno
+bls:U861200	Sheep shoulder, lean, deep-frozen	paleta de carnero magra congelada
+bls:U861232	Sheep shoulder, lean, deep-frozen, boiled	paleta de carnero magra de congelado cocida
+bls:U861242	Sheep shoulder, lean, deep-frozen, braised without fat	paleta de carnero magra de congelado estofada
+bls:U861262	Sheep shoulder, lean, deep-frozen, fried without fat (oven)	paleta de carnero magra de congelado al horno
+bls:U863100	Sheep shoulder, fat, raw	paleta de carnero grasa cruda
+bls:U863132	Sheep shoulder, fat, boiled	paleta de carnero grasa cocida
+bls:U863142	Sheep shoulder, fat, braised without fat	paleta de carnero grasa estofada
+bls:U863162	Sheep shoulder, fat, fried without fat (oven)	paleta de carnero grasa al horno
+bls:U863200	Sheep shoulder, fat, deep-frozen	paleta de carnero grasa congelada
+bls:U863232	Sheep shoulder, fat, deep-frozen, boiled	paleta de carnero grasa de congelado cocida
 bls:U863242	Sheep shoulder, fat, deep-frozen, braised without fat	paleta de carnero grasa estofada
+bls:U863262	Sheep shoulder, fat, deep-frozen, fried without fat (oven)	paleta de carnero grasa de congelado al horno
+bls:U866100	Mutton shoulder, raw	paleta de carnero cruda
+bls:U866132	Mutton shoulder, boiled	paleta de carnero cocida
+bls:U866142	Mutton shoulder, braised without fat	paleta de carnero estofada
+bls:U866162	Mutton shoulder, fried without fat (oven)	paleta de carnero al horno
+bls:U867100	Lamb shoulder, raw	paleta de cordero pequeño cruda
+bls:U867132	Lamb shoulder, boiled	paleta de cordero cocida
+bls:U867142	Lamb shoulder, braised without fat	paleta de cordero estofada
+bls:U867162	Lamb shoulder, fried without fat (oven)	paleta de cordero al horno
 bls:U871100	Sheep foreshank, lean, raw	brazuelo de cordero magro crudo
+bls:U871132	Sheep foreshank, lean, boiled	jarrete delantero de carnero magro cocido
+bls:U871142	Sheep foreshank, lean, braised without fat	jarrete delantero de carnero magro estofado
+bls:U871162	Sheep foreshank, lean, fried without fat (oven)	jarrete delantero de carnero magro al horno
+bls:U871172	Sheep foreshank, lean, grilled	jarrete delantero de carnero magro a la parrilla
+bls:U872100	Sheep foreshank, medium fat, raw	jarrete delantero de carnero semigraso crudo
+bls:U872132	Sheep foreshank, medium fat, boiled	jarrete delantero de carnero semigraso cocido
+bls:U872142	Sheep foreshank, medium fat, braised without fat	jarrete delantero de carnero semigraso estofado
+bls:U872162	Sheep foreshank, medium fat, fried without fat (oven)	jarrete delantero de carnero semigraso al horno
+bls:U872172	Sheep foreshank, medium fat, grilled	jarrete delantero de carnero semigraso a la parrilla
+bls:U872200	Sheep foreshank, medium fat, deep-frozen	jarrete delantero de carnero semigraso congelado
+bls:U872232	Sheep foreshank, medium fat, deep-frozen boiled	jarrete delantero de carnero semigraso de congelado cocido
+bls:U872242	Sheep foreshank, medium fat, deep-frozen braised without fat	jarrete delantero de carnero semigraso de congelado estofado
+bls:U872262	Sheep foreshank, medium fat, deep-frozen fried without fat (oven)	jarrete delantero de carnero semigraso de congelado al horno
+bls:U872272	Sheep foreshank, medium fat, deep-frozen grilled	jarrete delantero de carnero semigraso de congelado a la parrilla
+bls:U881100	Sheep leg, lean, raw	pierna de carnero magra cruda
+bls:U881142	Sheep leg, lean, braised without fat	pierna de carnero magra estofada
+bls:U881162	Sheep leg, lean, fried without fat (oven)	pierna de carnero magra al horno
+bls:U881200	Sheep leg, lean, deep-frozen	pierna de carnero magra congelada
+bls:U881242	Sheep leg, lean, deep-frozen, braised without fat	pierna de carnero magra estofada de congelado
+bls:U881262	Sheep leg, lean, deep-frozen, fried without fat (oven)	pierna de carnero magra de congelado al horno
+bls:U882100	Sheep leg, medium fat, raw	pierna de carnero semigraso cruda
+bls:U882142	Sheep leg, medium fat, braised without fat	pierna de carnero semigraso estofada
+bls:U882162	Sheep leg, medium fat, fried without fat (oven)	pierna de carnero semigraso al horno
+bls:U882200	Sheep leg, medium fat, deep-frozen	pierna de carnero semigraso congelada
+bls:U882242	Sheep leg, medium fat, deep-frozen, baked	pierna de carnero semigrasa estofada de congelado
+bls:U882262	Sheep leg, medium fat, deep-frozen, fried without fat (oven)	pierna de carnero semigraso de congelado al horno
+bls:U883100	Sheep leg, fat, raw	pierna de carnero grasa cruda
+bls:U883142	Sheep leg, fat, braised without fat	pierna de carnero grasa estofada
+bls:U883162	Sheep leg, fat, fried without fat (oven)	pierna de carnero grasa al horno
+bls:U883200	Sheep leg, fat, deep-frozen	pierna de carnero grasa congelada
+bls:U883242	Sheep leg, fat, deep-frozen, baked	pierna de carnero grasa estofada de congelado
+bls:U883262	Sheep leg, fat, deep-frozen, fried without fat (oven)	pierna de carnero grasa de congelado al horno
 bls:U884000	Sheep leg, lean, marinated, raw	pierna de cordero magra marinada cruda
+bls:U884042	Sheep leg, lean, marinated, braised without fat	pierna de carnero magra marinada estofada
+bls:U886100	Mutton leg, raw	pierna de carnero cruda
+bls:U886142	Mutton leg, braised without fat	pierna de carnero estofada
+bls:U886162	Mutton leg, fried without fat (oven)	pierna de carnero al horno
+bls:U891100	Sheep hindshank, lean, raw	jarrete trasero de carnero magro crudo
+bls:U891132	Sheep hindshank, lean, boiled	jarrete trasero de carnero magro cocido
+bls:U891142	Sheep hindshank, lean, braised without fat	jarrete trasero de carnero magro estofado
+bls:U891162	Sheep hindshank, lean, fried without fat (oven)	jarrete trasero de carnero magro al horno
+bls:U891172	Sheep hindshank, lean, grilled	jarrete trasero de carnero magro a la parrilla
+bls:U891200	Sheep hindshank, lean, deep-frozen	jarrete trasero de carnero magro congelado
+bls:U891232	Sheep hindshank, lean, deep-frozen, boiled	jarrete trasero de carnero magro de congelado cocido
+bls:U891242	Sheep hindshank, lean, deep-frozen, braised without fat	jarrete trasero de carnero magro de congelado estofado
+bls:U891262	Sheep hindshank, lean, deep-frozen, fried without fat (oven)	jarrete trasero de carnero magro de congelado al horno
+bls:U891272	Sheep hindshank, lean, deep-frozen, grilled	jarrete trasero de carnero magro de congelado a la parrilla
+bls:U892100	Sheep hindshank, medium fat, raw	jarrete trasero de carnero semigraso crudo
+bls:U892132	Sheep hindshank, medium fat, boiled	jarrete trasero de carnero semigraso cocido
+bls:U892142	Sheep hindshank, medium fat, braised without fat	jarrete trasero de carnero semigraso estofado
+bls:U892162	Sheep hindshank, medium fat, fried without fat (oven)	jarrete trasero de carnero semigraso al horno
+bls:U892172	Sheep hindshank, medium fat, grilled	jarrete trasero de carnero semigraso a la parrilla
+bls:U892200	Sheep hindshank, medium fat, deep-frozen	jarrete trasero de carnero semigraso congelado
+bls:U892232	Sheep hindshank, medium fat, deep-frozen, boiled	jarrete trasero de carnero semigraso de congelado cocido
+bls:U892242	Sheep hindshank, medium fat, deep-frozen, braised without fat	jarrete trasero de carnero semigraso de congelado estofado
+bls:U892262	Sheep hindshank, medium fat, deep-frozen, fried without fat (oven)	jarrete trasero de carnero semigraso de congelado al horno
+bls:U892272	Sheep hindshank, medium fat, deep-frozen, grilled	jarrete trasero de carnero semigraso de congelado a la parrilla
+bls:U912000	Beef in jelly, canned	vacuno en gelatina en conserva
+bls:U931100	Beef in its own juice, with pork rind, canned	vacuno en su jugo con corteza de cerdo en conserva
+bls:U931600	Beef olive (ready-made meal) canned	rollito de vacuno en conserva
+bls:U931900	German corned beef, with pork rind, canned	corned beef a la alemana con corteza de cerdo en conserva
+bls:U941100	"Königsberger Klopse" meatballs, canned	albóndigas Königsberger Klopse en conserva
+bls:U950100	Pork in its own juice, with rind, canned	cerdo en su jugo con corteza en conserva
+bls:U950200	Pork roast, canned	asado de cerdo en conserva
+bls:U951800	Corned pork, canned	cerdo en salmuera en conserva
+bls:U952000	Pork meat, breaded, fried without fat (pan)	cerdo empanado a la plancha
+bls:U980200	Oxtail soup thickened, canned	sopa de rabo de toro espesa en conserva
+bls:U980400	Goulash soup canned	sopa de gulash en conserva
+bls:U981700	Soup basic stock canned	fondo de carne en conserva
+bls:U984100	Marrow dumplings canned	bolitas de tuétano en conserva
+bls:U985200	Beef stock canned	caldo de vacuno en conserva
+bls:U990100	Gravy dark, canned	salsa de asado oscura en conserva
+bls:U990200	Horseradish sauce canned	salsa de rábano picante en conserva
+bls:U990400	Sauce Hollandaise, canned	salsa holandesa en conserva
+bls:V050100	Snails edible/escargots, raw	caracoles de viña crudos
+bls:V050132	Snails edible/escargots, boiled	caracoles cocidos
+bls:V050182	Snails edible/escargots, fried without fat (pan)	caracoles a la plancha
+bls:V050200	Snails edible/escargots, deep-frozen	caracoles congelados
+bls:V050232	Snails edible/escargots, deep-frozen, boiled	caracoles de congelado cocidos
+bls:V050282	Snails edible/escargots, deep-frozen, fried without fat (pan)	caracoles de congelado a la plancha
+bls:V111200	Horse meat, deep-frozen	carne de caballo congelada
+bls:V111242	Horse meat, deep-frozen, braised without fat	carne de caballo de congelado estofada
+bls:V111262	Horse meat, deep-frozen, fried without fat (oven)	carne de caballo al horno de congelado
+bls:V112100	Horse meat, raw	carne de caballo fresca cruda
+bls:V112142	Horse meat, braised without fat	carne de caballo estofada
+bls:V112162	Horse meat, fried without fat (oven)	carne de caballo al horno
+bls:V122100	Goat meat, raw	carne cruda de cabra
+bls:V122142	Goat meat, braised without fat	carne de cabra estofada
+bls:V122162	Goat meat, fried without fat (oven)	carne de cabra al horno
+bls:V132100	Domestic rabbit meat, raw	conejo crudo
+bls:V132142	Domestic rabbit meat, braised without fat	conejo estofado
+bls:V132162	Domestic rabbit meat, fried without fat (oven)	conejo al horno
+bls:V132200	Domestic rabbit meat, deep-frozen	conejo congelado
+bls:V132242	Domestic rabbit meat, deep-frozen, braised without fat	conejo de congelado estofado
+bls:V132262	Domestic rabbit meat, deep-frozen, fried without fat (oven)	conejo de congelado al horno
+bls:V212100	Venison meat, raw	carne de venado cruda
+bls:V212132	Venison meat, boiled	carne de venado cocida
+bls:V212142	Venison meat, braised without fat	carne de venado estofada
+bls:V212162	Venison meat, fried without fat (oven)	carne de venado al horno
+bls:V212182	Venison meat, fried without fat (pan)	carne de venado a la plancha
+bls:V212200	Venison meat, deep-frozen	carne de venado congelada
+bls:V217100	Venison saddle, raw	lomo de venado crudo
+bls:V217142	Venison saddle, braised without fat	lomo de venado estofado
+bls:V217162	Venison saddle, fried without fat (oven)	lomo de venado al horno
+bls:V217200	Venison saddle, deep-frozen	lomo de venado congelado
+bls:V217242	Venison saddle, deep-frozen, braised without fat	lomo de venado de congelado estofado
+bls:V217262	Venison saddle, deep-frozen, fried without fat (oven)	lomo de venado de congelado al horno
+bls:V221100	Roe deer leg, raw	pierna de corzo cruda
+bls:V221132	Roe deer leg, boiled	pierna de corzo cocida
+bls:V221142	Roe deer leg, braised without fat	pierna de corzo estofada
+bls:V221162	Roe deer leg, fried without fat (oven)	pierna de corzo al horno
+bls:V221172	Roe deer leg, grilled	pierna de corzo a la parrilla
+bls:V222100	Roe deer saddle, raw	lomo de corzo crudo
+bls:V222142	Roe deer saddle, braised without fat	lomo de corzo estofado
+bls:V222162	Roe deer saddle, fried without fat (oven)	lomo de corzo al horno
+bls:V222200	Roe deer saddle, deep-frozen	lomo de corzo congelado
+bls:V222242	Roe deer saddle, deep-frozen, braised without fat	lomo de corzo de congelado estofado
+bls:V222262	Roe deer saddle, deep-frozen, fried without fat (oven)	lomo de corzo de congelado al horno
+bls:V224100	Roe deer saddle, marinated, raw	lomo de corzo marinado crudo
+bls:V224142	Roe deer saddle, marinated, braised without fat	lomo de corzo marinado estofado
+bls:V232100	Hare meat, raw	carne de liebre cruda
+bls:V232142	Hare meat, braised without fat	carne de liebre estofada
+bls:V232162	Hare meat, fried without fat (oven)	carne de liebre al horno
+bls:V232200	Hare meat, deep-frozen	carne de liebre congelada
+bls:V232242	Hare meat, deep-frozen, braised without fat	carne de liebre de congelado estofada
+bls:V232262	Hare meat, deep-frozen, fried without fat (oven)	carne de liebre de congelado al horno
+bls:V242100	Wild rabbit meat, raw	conejo de monte crudo
+bls:V242142	Wild rabbit meat, braised without fat	conejo de monte estofado
+bls:V242162	Wild rabbit meat, fried without fat (oven)	conejo de monte al horno
+bls:V250100	Wild boar meat, raw	carne cruda de jabalí
+bls:V250132	Wild boar meat, boiled	carne de jabalí cocida
+bls:V250162	Wild boar meat, fried without fat (oven)	carne de jabalí al horno
+bls:V250172	Wild boar meat, grilled	carne de jabalí a la parrilla
+bls:V250182	Wild boar meat, fried without fat (pan)	carne de jabalí a la plancha
+bls:V250200	Wild boar meat, deep-frozen	carne de jabalí congelada
+bls:V250232	Wild boar meat, deep-frozen, boiled	carne de jabalí de congelado cocida
+bls:V250242	Wild boar meat, deep-frozen, braised without fat	carne de jabalí de congelado estofada
+bls:V250262	Wild boar meat, deep-frozen, fried without fat (oven)	carne de jabalí de congelado al horno
+bls:V250272	Wild boar meat, deep-frozen, grilled	carne de jabalí de congelado a la parrilla
+bls:V250282	Wild boar meat, deep-frozen, fried without fat (pan)	carne de jabalí de congelado a la plancha
+bls:V256042	Wild boar meat, braised without fat	carne de jabalí estofada
+bls:V272100	Reindeer meat, raw	carne de reno cruda
+bls:V272142	Reindeer meat, braised without fat	carne de reno estofada
+bls:V272162	Reindeer meat, fried without fat (oven)	carne de reno al horno
+bls:V311100	Pheasant meat, with skin, raw	carne de faisán con piel cruda
+bls:V311162	Pheasant meat, with skin, fried without fat (oven)	carne de faisán con piel al horno
+bls:V311200	Pheasant meat, with skin, deep-frozen	carne de faisán con piel congelada
+bls:V311262	Pheasant meat, with skin, deep-frozen, fried without fat (oven)	carne de faisán con piel de congelado al horno
+bls:V320100	Partridge meat, raw	carne de perdiz cruda
 bls:V438232	Boiling fowl giblets, deep-frozen, boiled	menudillos de gallina cocidos
 bls:V454200	Guineafowl meat, with skin, deep-frozen	carne de pintada congelada
 bls:V465242	Duck leg, with skin, deep-frozen, braised without fat	muslo de pato estofado congelado
