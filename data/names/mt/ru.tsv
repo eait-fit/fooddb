@@ -2466,9 +2466,214 @@ bls:N414200	Coffee (infusion) decaffeinated, with evaporated milk 7.5 % fat	ко
 bls:N415000	Coffee (infusion) decaffeinated	кофе без кофеина
 bls:N416000	Coffee (infusion) caffeine-reduced	кофе с пониженным кофеином
 bls:N418000	Latte Macchiato (infusion) with milk 3.5 % fat	латте макиато с молоком 3,5 %
+bls:N419000	Turkish mocha (infusion)	кофе по-турецки
+bls:N420100	Coffee (infusion) made from instant powder	кофе растворимый заваренный
+bls:N420900	Coffee instant powder	кофе растворимый порошок
+bls:N440100	Coffee (infusion) made from decaffeinated instant powder	кофе без кофеина растворимый заваренный
+bls:N440900	Coffee instant powder decaffeinated	кофе растворимый порошок без кофеина
+bls:N491000	Coffee (infusion) half and half, with milk 3.5 % fat	кофе напополам с молоком 3,5 %
+bls:N4A0000	Coffee (infusion) with oat drink, unsweetened	кофе с овсяным напитком без сахара
+bls:N4A1000	Coffee (infusion) with almond drink, unsweetened	кофе с миндальным напитком без сахара
+bls:N4A2000	Coffee (infusion) with soya drink, unsweetened	кофе с соевым напитком без сахара
+bls:N4A3300	Cappuccino (infusion) with milk 3.5 % fat and sugar	капучино с молоком 3,5 % и сахаром
+bls:N500100	Coffee substitute (infusion)	заменитель кофе
+bls:N500200	Coffee substitute (infusion) with milk 3.5 % fat	заменитель кофе с молоком 3,5 %
+bls:N500300	Coffee substitute (infusion) with milk 3.5 % fat and sugar	заменитель кофе с молоком 3,5 % и сахаром
+bls:N500400	Coffee substitute (infusion) with evaporated milk 7.5 % fat	заменитель кофе со сгущённым молоком 7,5 %
+bls:N500500	Coffee substitute (infusion) with evaporated milk 7.5 % fat and sugar	заменитель кофе со сгущённым молоком 7,5 % и сахаром
+bls:N500600	Coffee substitute (infusion) with sugar	заменитель кофе с сахаром
+bls:N500800	Coffee substitute (infusion) with alcohol	заменитель кофе с алкоголем
+bls:N500900	Coffee substitute powder	заменитель кофе порошковый
+bls:N503900	Cappuccino instant powder, sweetened	капучино порошковый сладкий
+bls:N540100	Chicory coffee (infusion)	цикорий напиток
+bls:N540900	Chicory coffee powder	цикорий порошковый
+bls:N5A0000	Coffee substitute (infusion) with oat drink, unsweetened	заменитель кофе с овсяным напитком без сахара
+bls:N5A1000	Coffee substitute (infusion) with almond drink, unsweetened	заменитель кофе с миндальным напитком без сахара
+bls:N5A2000	Coffee substitute (infusion) with soya drink, unsweetened	заменитель кофе с соевым напитком без сахара
+bls:N601000	Rooibos tea (infusion)	чай ройбуш
+bls:N610100	Green tea (infusion)	чай зелёный
+bls:N611000	Mate tea (infusion)	мате
+bls:N630000	Black tea (infusion)	чай чёрный
+bls:N630200	Black tea (infusion) with milk 3.5 % fat	чай чёрный с молоком 3,5 %
+bls:N630300	Black tea (infusion) with milk 3.5 % fat and sugar	чай чёрный с молоком 3,5 % и сахаром
+bls:N630400	Black tea (infusion) with cream 30 % fat	чай чёрный со сливками 30 %
+bls:N630500	Black tea (infusion) with cream 30 % fat and sugar	чай чёрный со сливками 30 % и сахаром
+bls:N630600	Black tea (infusion) with sugar	чай чёрный с сахаром
+bls:N630700	Black tea (infusion) with lemon juice and sugar	чай чёрный с лимонным соком и сахаром
+bls:N630800	Black tea (infusion) with alcohol	чай чёрный с алкоголем
+bls:N670100	Black tea (infusion) decaffeinated	чай чёрный без кофеина
+bls:N710000	Fruit tea (infusion)	чай фруктовый
+bls:N710600	Fruit tea (infusion) with sugar	чай фруктовый с сахаром
+bls:N720100	Herbal tea (infusion)	чай травяной
+bls:N720200	Herbal tea (infusion) with milk 3.5 % fat	чай травяной с молоком 3,5 %
+bls:N720300	Herbal tea (infusion) with milk 3.5 % fat and sugar	чай травяной с молоком 3,5 % и сахаром
+bls:N720400	Herbal tea (infusion) with cream 30 % fat	чай травяной со сливками 30 %
+bls:N720500	Herbal tea (infusion) with cream 30 % fat and sugar	чай травяной со сливками 30 % и сахаром
+bls:N720600	Herbal tea (infusion) with sugar	чай травяной с сахаром
+bls:N720800	Herbal tea (infusion) with alcohol	чай травяной с алкоголем
+bls:N721000	Peppermint tea (infusion)	чай мятный
+bls:P122000	Malt drink, alcohol-free	солодовый напиток безалкогольный
+bls:P150000	Wheat beer filtered	пиво пшеничное фильтрованное
+bls:P151100	Wheat beer, naturally cloudy	пиво пшеничное нефильтрованное
+bls:P151110	Wheat beer alcohol-free	пиво пшеничное безалкогольное
+bls:P151120	Wheat beer 0.0 % vol	пиво пшеничное 0,0 %
+bls:P153000	Dark beer (medium-gravity beer) top-fermented	альтбир
+bls:P154000	Koelsch (beer from Cologne)	кёльш
+bls:P161000	Pale beer	пиво светлое лагер
+bls:P162000	Pale export beer	пиво светлое экспорт
+bls:P163000	Pilsner beer	пиво пильснер
+bls:P163100	Pilsner beer alcohol-free	пиво пильснер безалкогольное
+bls:P163110	Pilsner beer 0.0 % vol	пиво пильснер 0,0 %
+bls:P165000	Dark beer	пиво тёмное лагер
+bls:P166000	Dark export beer	пиво тёмное экспорт
+bls:P167000	Black beer	пиво чёрное
+bls:P172000	Bock beer (original wort > 16 %)	пиво бок
+bls:P174000	Doppelbock beer (original wort min. 18 %)	пиво доппельбок
+bls:P177000	Stout	стаут
 bls:P192000	Pilsner beer mixed with carbonated lemonade	пиво с лимонадом (радлер)
+bls:P194000	Punch with top-fermented dark beer	пунш с тёмным пивом
+bls:P195000	Beer with sparkling wine	пиво с игристым вином
+bls:P196000	Berlin draught beer with fruit syrup	берлинер вайссе с фруктовым сиропом
+bls:P197000	Beer reduced carbohydrate content	пиво с пониженными углеводами
+bls:P1A1100	Wheat beer with cola	пшеничное пиво с колой
+bls:P1A1110	Wheat beer with fruit nectar	пшеничное пиво с фруктовым нектаром
+bls:P1A1120	Wheat beer, alcohol-free, mixed with carbonated lemonade	пшеничный радлер безалкогольный
+bls:P1A1130	Wheat beer mixed with carbonated lemonade	пшеничный радлер
+bls:P1A3000	Pilsner beer mixed with cola	пиво пильснер с колой
+bls:P1A3100	Pilsner beer, alcohol-free, mixed with carbonated lemonade	радлер безалкогольный
+bls:P1A3110	Pilsner beer mixed with mineral water	радлер с минеральной водой
+bls:P1A4000	Light beer	пиво лёгкое
+bls:P210000	White wine dry	вино белое сухое
+bls:P219000	Ice wine	айсвайн
+bls:P220000	White wine medium dry	вино белое полусухое
+bls:P230000	White wine medium sweet	вино белое полусладкое
+bls:P231000	White wine sweet	вино белое сладкое
+bls:P232000	White wine Beerenauslese/Trockenbeerenauslese	вино белое бееренауслезе
+bls:P253000	Red wine medium dry	вино красное полусухое
+bls:P273000	Rose wine dry	вино розовое сухое
+bls:P273100	Rotling wine dry	вино ротлинг сухое
+bls:P281000	Mulled wine	глинтвейн
+bls:P285000	White wine spritzer with mineral water	вино белое с минеральной водой
+bls:P285100	White wine spritzer with carbonated lemonade	вино белое с лимонадом
+bls:P287000	Cold duck (punch made from wine and sparkling wine)	пунш «холодная утка»
+bls:P288100	Strawberry punch	пунш клубничный
+bls:P288300	Pineapple punch	пунш ананасовый
+bls:P288600	Red wine punch	пунш из красного вина
+bls:P289000	Federweisser (still fermenting young wine)	федервайсер
+bls:P2A1000	Red wine sweet	вино красное сладкое
+bls:P2A2000	Red wine medium sweet	вино красное полусладкое
+bls:P2A3000	Red wine dry	вино красное сухое
+bls:P2A6000	Quality sparkling wine dry	игристое вино сухое
+bls:P2A6100	Quality sparkling wine extra dry	игристое вино экстра-сухое
+bls:P2A6110	Quality sparkling wine brut	игристое вино брют
+bls:P2A7000	Quality sparkling wine sweet	игристое вино сладкое
+bls:P2A7100	Quality sparkling wine medium dry	игристое вино полусухое
+bls:P2B1000	Rose wine sweet	вино розовое сладкое
+bls:P2B1100	Rose wine medium sweet	вино розовое полусладкое
+bls:P2B1200	Rose wine medium dry	вино розовое полусухое
+bls:P330000	Pearl wine/pearl wine with added carbonic acid, dry	перлвейн сухой
+bls:P341300	Vermouth dry	вермут сухой
+bls:P341600	Vermouth sweet	вермут сладкий
+bls:P350000	Fruit wine	вино плодовое
+bls:P353100	Cider	сидр
+bls:P355000	Apple must	яблочный муст
+bls:P3A2000	Sparkling wine with orange juice	игристое вино с апельсиновым соком
+bls:P431000	Port wine	портвейн
+bls:P432000	Madeira wine	мадера
+bls:P461000	Sherry dry	херес сухой
+bls:P462000	Sherry medium dry	херес полусухой
+bls:P463000	Sherry cream	херес кремовый
 bls:P464000	Sherry sweet	херес сладкий
+bls:P510000	Fruit juice liqueur	ликёр фруктовый на соке
+bls:P530000	Fruit aroma liqueur	ликёр фруктовый ароматный
+bls:P540100	Almond liqueur	ликёр миндальный
+bls:P546000	Egg liqueur	ликёр яичный
+bls:P550000	Coffee/cocoa liqueur, without milk/cream	ликёр кофейно-какао без сливок
 bls:P560000	Bitter/herb/spice liqueur	травяной ликёр горький
+bls:P560100	Bitter liqueur 11 % vol	ликёр горький 11 %
+bls:P571000	Apfelkorn (apple flavoured liqueur)	яблочный ликёр апфелькорн
+bls:P5A1000	Cream liqueur	ликёр сливочный
+bls:P5A2000	Fruit cream liqueur	ликёр сливочный фруктовый
+bls:P5A5000	Coffee/chocolate liqueur, with milk/cream	ликёр кофейно-шоколадный сливочный
+bls:P610000	Cognac	коньяк
+bls:P620000	Brandy/Weinbrand	бренди
+bls:P640000	Calvados	кальвадос
+bls:P712000	Vodka	водка
+bls:P721000	Juniper-flavoured spirit drink	можжевеловая водка
+bls:P722000	Gin	джин
+bls:P730000	Grain spirit	зерновой шнапс
+bls:P733000	Whisky/whiskey	виски
+bls:P740000	Sugarcane spirit	касаса
+bls:P741000	Rum 37.5/40 % vol	ром 40 %
+bls:P742000	Arrack	аррак
+bls:P743000	Rum 80 % vol	ром 80 %
+bls:P752100	Fruit spirit	фруктовый шнапс
+bls:P754100	Fruit geist	фруктовый гайст
+bls:P7A1000	Aniseed-flavoured spirit drink	анисовая водка
+bls:P7A1100	Aniseed-flavoured spirit drink, with water	анисовая водка с водой
+bls:P7A2000	Bitter-tasting spirit drink or bitter	настойка горькая
+bls:P7A3000	Caraway-flavoured spirit drink or Kümmel/Aquavit	тминная водка
+bls:P7A4000	Agave spirit (Mezcal/Tequila)	мескаль и текила
+bls:P8A2000	Alcopops	алкопопы
+bls:P8A3000	Egg nog	яичный пунш
+bls:P9A4000	Cocktail, Gin and tonic	джин-тоник
+bls:P9A5000	Cocktail, Touch down	коктейль тачдаун
+bls:P9A5100	Cocktail, Bloody Mary	кровавая мэри
+bls:P9A5110	Cocktail, Sex on the beach	секс на пляже
+bls:P9A6000	Cocktail, Tequila sunrise	текила санрайз
+bls:P9A7000	Cocktail, Pina colada	пина колада
+bls:P9A7100	Cocktail, Cuba libre	куба либре
+bls:P9A7110	Cocktail, Mojito	мохито
+bls:P9A8000	Cocktail, Kir royale	кир рояль
+bls:P9A8100	Cocktail, Hugo	коктейль хуго
+bls:P9A9000	Cocktail, Caipirinha	кайпиринья
+bls:P9B1000	Cocktail, Campari-orange	кампари-оранж
+bls:P9B2000	Cocktail, Campari-soda	кампари-сода
+bls:P9B3000	Cocktail, Campari-tonic	кампари-тоник
+bls:P9B4000	Cocktail, Margarita	маргарита
+bls:Q120000	Olive oil	масло оливковое
+bls:Q140000	Hazelnut oil	масло фундучное
+bls:Q150000	Palm fat/palm oil, refined	масло пальмовое рафинированное
+bls:Q150100	Palm fat hydrogenated	жир пальмовый гидрогенизированный
+bls:Q160000	Linseed oil	масло льняное
+bls:Q170000	Hemp oil	масло конопляное
+bls:Q180000	Rapeseed oil/canola oil	масло рапсовое
+bls:Q190000	Almond oil	масло миндальное
+bls:Q210000	Peanut oil	масло арахисовое
+bls:Q220000	Wheat germ oil	масло зародышей пшеницы
+bls:Q230000	Sesame oil	масло кунжутное
+bls:Q250000	Pumpkin seed oil	масло тыквенных семечек
+bls:Q260000	Corn oil	масло кукурузное
+bls:Q270000	Soya oil	масло соевое
+bls:Q310000	Walnut oil	масло грецкого ореха
+bls:Q320000	Sunflower oil	масло подсолнечное
+bls:Q330000	Grapeseed oil	масло виноградной косточки
+bls:Q340000	Safflower oil	масло сафлоровое
+bls:Q350000	Poppy seed oil	масло маковое
+bls:Q400000	Margarine full-fat, fortified with vitamins	маргарин полножирный с витаминами
+bls:Q440000	Margarine half-fat, fortified with vitamins	маргарин полужирный с витаминами
+bls:Q481000	Margarine for baking	маргарин для выпечки
+bls:Q482000	Margarine for making puff pastry	маргарин для слоёного теста
+bls:Q4A1000	Margarine three-quarter fat, fortified with vitamins	маргарин трёхчетвертной жирности с витаминами
+bls:Q4A4000	Margarine made from sunflower oil, fortified with vitamin D	маргарин из подсолнечного масла с витамином D
+bls:Q4B1000	Vegetable fat cooking liquid	растительный крем для жарки и варки
+bls:Q4C1000	Vegetable fat spread with > 62 % and < 80 % fat, fortified with vitamins	спред растительный 62-80 % жира с витаминами
+bls:Q4C2000	Vegetable fat spread with > 41 % and < 60 % fat, fortified with vitamins	спред растительный 41-60 % жира с витаминами
+bls:Q4C3000	Vegetable fat spread with < 39 % fat, fortified with vitamins	спред растительный до 39 % жира с витаминами
+bls:Q4C4000	Margarine made from rapeseed oil/canola oil, fortified with vitamins	маргарин из рапсового масла с витаминами
+bls:Q4C5000	Mixed fat spread (mainly vegetable fat) unsalted, fortified with vitamins	спред смешанный несолёный с витаминами
+bls:Q4C5100	Mixed fat spread (mainly vegetable fat) salted, fortified with vitamins	спред смешанный солёный с витаминами
+bls:Q520000	Shea butter	масло ши
+bls:Q530000	Cocoa butter	масло какао
+bls:Q550000	Coconut oil	масло кокосовое
+bls:Q550100	Coconut oil deodorized	масло кокосовое дезодорированное
+bls:Q550200	Coconut fat hydrogenated	жир кокосовый гидрогенизированный
+bls:Q570000	Palm kernel fat/palm kernel oil	масло пальмоядровое
+bls:Q590000	Plant-based cheese alternative, vegetable fat based, vegan	сыр веганский на растительном жире
+bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortified with vitamin B12 and calcium	сыр веганский на растительном жире с витамином B12 и кальцием
+bls:Q611000	Best quality butter	масло сливочное мягкое сбражённое
+bls:Q620000	Cultured butter	масло сливочное на закваске
+bls:Q630000	Sweet cream butter	масло сливочное сладкосливочное
 bls:S201500	Coffee ice cream, in waffle cone	кофейное мороженое в вафельном стаканчике
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	мороженое шоколадно-ванильное с яичным ликёром
 bls:T204182	Cod fried without fat (pan)	треска жареная без масла

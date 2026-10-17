@@ -2466,9 +2466,214 @@ bls:N414200	Coffee (infusion) decaffeinated, with evaporated milk 7.5 % fat	caf�
 bls:N415000	Coffee (infusion) decaffeinated	café descafeinado
 bls:N416000	Coffee (infusion) caffeine-reduced	café bajo en cafeína
 bls:N418000	Latte Macchiato (infusion) with milk 3.5 % fat	latte macchiato con leche 3,5 %
+bls:N419000	Turkish mocha (infusion)	café turco
+bls:N420100	Coffee (infusion) made from instant powder	café instantáneo
+bls:N420900	Coffee instant powder	café en polvo instantáneo
+bls:N440100	Coffee (infusion) made from decaffeinated instant powder	café descafeinado instantáneo
+bls:N440900	Coffee instant powder decaffeinated	café en polvo instantáneo descafeinado
+bls:N491000	Coffee (infusion) half and half, with milk 3.5 % fat	café con leche 50/50
+bls:N4A0000	Coffee (infusion) with oat drink, unsweetened	café con bebida de avena sin azúcar
+bls:N4A1000	Coffee (infusion) with almond drink, unsweetened	café con bebida de almendra sin azúcar
+bls:N4A2000	Coffee (infusion) with soya drink, unsweetened	café con bebida de soja sin azúcar
+bls:N4A3300	Cappuccino (infusion) with milk 3.5 % fat and sugar	capuchino con leche 3,5 % y azúcar
+bls:N500100	Coffee substitute (infusion)	sucedáneo de café
+bls:N500200	Coffee substitute (infusion) with milk 3.5 % fat	sucedáneo de café con leche 3,5 %
+bls:N500300	Coffee substitute (infusion) with milk 3.5 % fat and sugar	sucedáneo de café con leche 3,5 % y azúcar
+bls:N500400	Coffee substitute (infusion) with evaporated milk 7.5 % fat	sucedáneo de café con leche evaporada 7,5 %
+bls:N500500	Coffee substitute (infusion) with evaporated milk 7.5 % fat and sugar	sucedáneo de café con leche evaporada 7,5 % y azúcar
+bls:N500600	Coffee substitute (infusion) with sugar	sucedáneo de café con azúcar
+bls:N500800	Coffee substitute (infusion) with alcohol	sucedáneo de café con alcohol
+bls:N500900	Coffee substitute powder	sucedáneo de café en polvo
+bls:N503900	Cappuccino instant powder, sweetened	capuchino en polvo azucarado
+bls:N540100	Chicory coffee (infusion)	achicoria bebida
+bls:N540900	Chicory coffee powder	achicoria en polvo
+bls:N5A0000	Coffee substitute (infusion) with oat drink, unsweetened	sucedáneo de café con bebida de avena sin azúcar
+bls:N5A1000	Coffee substitute (infusion) with almond drink, unsweetened	sucedáneo de café con bebida de almendra sin azúcar
+bls:N5A2000	Coffee substitute (infusion) with soya drink, unsweetened	sucedáneo de café con bebida de soja sin azúcar
+bls:N601000	Rooibos tea (infusion)	rooibos
+bls:N610100	Green tea (infusion)	té verde
+bls:N611000	Mate tea (infusion)	mate
+bls:N630000	Black tea (infusion)	té negro
+bls:N630200	Black tea (infusion) with milk 3.5 % fat	té negro con leche 3,5 %
+bls:N630300	Black tea (infusion) with milk 3.5 % fat and sugar	té negro con leche 3,5 % y azúcar
+bls:N630400	Black tea (infusion) with cream 30 % fat	té negro con nata 30 %
+bls:N630500	Black tea (infusion) with cream 30 % fat and sugar	té negro con nata 30 % y azúcar
+bls:N630600	Black tea (infusion) with sugar	té negro con azúcar
+bls:N630700	Black tea (infusion) with lemon juice and sugar	té negro con zumo de limón y azúcar
+bls:N630800	Black tea (infusion) with alcohol	té negro con alcohol
+bls:N670100	Black tea (infusion) decaffeinated	té negro descafeinado
+bls:N710000	Fruit tea (infusion)	té de frutas
+bls:N710600	Fruit tea (infusion) with sugar	té de frutas con azúcar
+bls:N720100	Herbal tea (infusion)	infusión de hierbas
+bls:N720200	Herbal tea (infusion) with milk 3.5 % fat	infusión de hierbas con leche 3,5 %
+bls:N720300	Herbal tea (infusion) with milk 3.5 % fat and sugar	infusión de hierbas con leche 3,5 % y azúcar
+bls:N720400	Herbal tea (infusion) with cream 30 % fat	infusión de hierbas con nata 30 %
+bls:N720500	Herbal tea (infusion) with cream 30 % fat and sugar	infusión de hierbas con nata 30 % y azúcar
+bls:N720600	Herbal tea (infusion) with sugar	infusión de hierbas con azúcar
+bls:N720800	Herbal tea (infusion) with alcohol	infusión de hierbas con alcohol
+bls:N721000	Peppermint tea (infusion)	té de menta
+bls:P122000	Malt drink, alcohol-free	bebida de malta sin alcohol
+bls:P150000	Wheat beer filtered	cerveza de trigo filtrada
+bls:P151100	Wheat beer, naturally cloudy	cerveza de trigo sin filtrar
+bls:P151110	Wheat beer alcohol-free	cerveza de trigo sin alcohol
+bls:P151120	Wheat beer 0.0 % vol	cerveza de trigo 0,0 %
+bls:P153000	Dark beer (medium-gravity beer) top-fermented	cerveza alt
+bls:P154000	Koelsch (beer from Cologne)	cerveza kölsch
+bls:P161000	Pale beer	cerveza lager clara
+bls:P162000	Pale export beer	cerveza export clara
+bls:P163000	Pilsner beer	cerveza pilsner
+bls:P163100	Pilsner beer alcohol-free	cerveza pilsner sin alcohol
+bls:P163110	Pilsner beer 0.0 % vol	cerveza pilsner 0,0 %
+bls:P165000	Dark beer	cerveza oscura
+bls:P166000	Dark export beer	cerveza export oscura
+bls:P167000	Black beer	cerveza negra
+bls:P172000	Bock beer (original wort > 16 %)	cerveza bock
+bls:P174000	Doppelbock beer (original wort min. 18 %)	cerveza doppelbock
+bls:P177000	Stout	stout
 bls:P192000	Pilsner beer mixed with carbonated lemonade	cerveza con gaseosa (clara)
+bls:P194000	Punch with top-fermented dark beer	ponche con cerveza alt
+bls:P195000	Beer with sparkling wine	cerveza con cava
+bls:P196000	Berlin draught beer with fruit syrup	berliner weisse con sirope de frutas
+bls:P197000	Beer reduced carbohydrate content	cerveza baja en carbohidratos
+bls:P1A1100	Wheat beer with cola	cerveza de trigo con cola
+bls:P1A1110	Wheat beer with fruit nectar	cerveza de trigo con néctar de frutas
+bls:P1A1120	Wheat beer, alcohol-free, mixed with carbonated lemonade	radler de trigo sin alcohol
+bls:P1A1130	Wheat beer mixed with carbonated lemonade	radler de trigo
+bls:P1A3000	Pilsner beer mixed with cola	cerveza pilsner con cola
+bls:P1A3100	Pilsner beer, alcohol-free, mixed with carbonated lemonade	radler sin alcohol
+bls:P1A3110	Pilsner beer mixed with mineral water	radler con agua con gas
+bls:P1A4000	Light beer	cerveza ligera
+bls:P210000	White wine dry	vino blanco seco
+bls:P219000	Ice wine	vino de hielo
+bls:P220000	White wine medium dry	vino blanco semiseco
+bls:P230000	White wine medium sweet	vino blanco semidulce
+bls:P231000	White wine sweet	vino blanco dulce
+bls:P232000	White wine Beerenauslese/Trockenbeerenauslese	vino blanco beerenauslese
+bls:P253000	Red wine medium dry	vino tinto semiseco
+bls:P273000	Rose wine dry	vino rosado seco
+bls:P273100	Rotling wine dry	vino rotling seco
+bls:P281000	Mulled wine	vino caliente
+bls:P285000	White wine spritzer with mineral water	vino blanco con agua con gas
+bls:P285100	White wine spritzer with carbonated lemonade	vino blanco con gaseosa
+bls:P287000	Cold duck (punch made from wine and sparkling wine)	ponche de vino y cava
+bls:P288100	Strawberry punch	ponche de fresa
+bls:P288300	Pineapple punch	ponche de piña
+bls:P288600	Red wine punch	ponche de vino tinto
+bls:P289000	Federweisser (still fermenting young wine)	vino joven en fermentación
+bls:P2A1000	Red wine sweet	vino tinto dulce
+bls:P2A2000	Red wine medium sweet	vino tinto semidulce
+bls:P2A3000	Red wine dry	vino tinto seco
+bls:P2A6000	Quality sparkling wine dry	cava seco
+bls:P2A6100	Quality sparkling wine extra dry	cava extra seco
+bls:P2A6110	Quality sparkling wine brut	cava brut
+bls:P2A7000	Quality sparkling wine sweet	cava dulce
+bls:P2A7100	Quality sparkling wine medium dry	cava semiseco
+bls:P2B1000	Rose wine sweet	vino rosado dulce
+bls:P2B1100	Rose wine medium sweet	vino rosado semidulce
+bls:P2B1200	Rose wine medium dry	vino rosado semiseco
+bls:P330000	Pearl wine/pearl wine with added carbonic acid, dry	vino perlado seco
+bls:P341300	Vermouth dry	vermut seco
+bls:P341600	Vermouth sweet	vermut dulce
+bls:P350000	Fruit wine	vino de frutas
+bls:P353100	Cider	sidra
+bls:P355000	Apple must	mosto de manzana
+bls:P3A2000	Sparkling wine with orange juice	cava con zumo de naranja
+bls:P431000	Port wine	oporto
+bls:P432000	Madeira wine	madeira
+bls:P461000	Sherry dry	jerez seco
+bls:P462000	Sherry medium dry	jerez semiseco
+bls:P463000	Sherry cream	jerez cream
 bls:P464000	Sherry sweet	jerez dulce
+bls:P510000	Fruit juice liqueur	licor de zumo de frutas
+bls:P530000	Fruit aroma liqueur	licor de frutas
+bls:P540100	Almond liqueur	licor de almendra
+bls:P546000	Egg liqueur	licor de huevo
+bls:P550000	Coffee/cocoa liqueur, without milk/cream	licor de café y cacao sin nata
 bls:P560000	Bitter/herb/spice liqueur	licor de hierbas amargo
+bls:P560100	Bitter liqueur 11 % vol	licor amargo 11 %
+bls:P571000	Apfelkorn (apple flavoured liqueur)	licor de manzana apfelkorn
+bls:P5A1000	Cream liqueur	licor de nata
+bls:P5A2000	Fruit cream liqueur	crema de licor de frutas
+bls:P5A5000	Coffee/chocolate liqueur, with milk/cream	licor de café y chocolate con nata
+bls:P610000	Cognac	coñac
+bls:P620000	Brandy/Weinbrand	brandy
+bls:P640000	Calvados	calvados
+bls:P712000	Vodka	vodka
+bls:P721000	Juniper-flavoured spirit drink	aguardiente de enebro
+bls:P722000	Gin	ginebra
+bls:P730000	Grain spirit	aguardiente de grano
+bls:P733000	Whisky/whiskey	whisky
+bls:P740000	Sugarcane spirit	cachaza
+bls:P741000	Rum 37.5/40 % vol	ron 40 %
+bls:P742000	Arrack	arrak
+bls:P743000	Rum 80 % vol	ron 80 %
+bls:P752100	Fruit spirit	aguardiente de frutas
+bls:P754100	Fruit geist	espirituoso de frutas
+bls:P7A1000	Aniseed-flavoured spirit drink	anís
+bls:P7A1100	Aniseed-flavoured spirit drink, with water	anís con agua
+bls:P7A2000	Bitter-tasting spirit drink or bitter	bitter
+bls:P7A3000	Caraway-flavoured spirit drink or Kümmel/Aquavit	aguardiente de cominos
+bls:P7A4000	Agave spirit (Mezcal/Tequila)	mezcal y tequila
+bls:P8A2000	Alcopops	refrescos con alcohol
+bls:P8A3000	Egg nog	ponche de huevo
+bls:P9A4000	Cocktail, Gin and tonic	gin-tonic
+bls:P9A5000	Cocktail, Touch down	cóctel Touch Down
+bls:P9A5100	Cocktail, Bloody Mary	Bloody Mary
+bls:P9A5110	Cocktail, Sex on the beach	Sex on the Beach
+bls:P9A6000	Cocktail, Tequila sunrise	Tequila Sunrise
+bls:P9A7000	Cocktail, Pina colada	piña colada
+bls:P9A7100	Cocktail, Cuba libre	Cuba Libre
+bls:P9A7110	Cocktail, Mojito	mojito
+bls:P9A8000	Cocktail, Kir royale	Kir Royal
+bls:P9A8100	Cocktail, Hugo	cóctel Hugo
+bls:P9A9000	Cocktail, Caipirinha	caipirinha
+bls:P9B1000	Cocktail, Campari-orange	Campari con naranja
+bls:P9B2000	Cocktail, Campari-soda	Campari con soda
+bls:P9B3000	Cocktail, Campari-tonic	Campari con tónica
+bls:P9B4000	Cocktail, Margarita	margarita
+bls:Q120000	Olive oil	aceite de oliva
+bls:Q140000	Hazelnut oil	aceite de avellana
+bls:Q150000	Palm fat/palm oil, refined	aceite de palma refinado
+bls:Q150100	Palm fat hydrogenated	grasa de palma hidrogenada
+bls:Q160000	Linseed oil	aceite de linaza
+bls:Q170000	Hemp oil	aceite de cáñamo
+bls:Q180000	Rapeseed oil/canola oil	aceite de colza
+bls:Q190000	Almond oil	aceite de almendras
+bls:Q210000	Peanut oil	aceite de cacahuete
+bls:Q220000	Wheat germ oil	aceite de germen de trigo
+bls:Q230000	Sesame oil	aceite de sésamo
+bls:Q250000	Pumpkin seed oil	aceite de pipas de calabaza
+bls:Q260000	Corn oil	aceite de maíz
+bls:Q270000	Soya oil	aceite de soja
+bls:Q310000	Walnut oil	aceite de nuez
+bls:Q320000	Sunflower oil	aceite de girasol
+bls:Q330000	Grapeseed oil	aceite de semilla de uva
+bls:Q340000	Safflower oil	aceite de cártamo
+bls:Q350000	Poppy seed oil	aceite de amapola
+bls:Q400000	Margarine full-fat, fortified with vitamins	margarina entera con vitaminas
+bls:Q440000	Margarine half-fat, fortified with vitamins	margarina ligera con vitaminas
+bls:Q481000	Margarine for baking	margarina para repostería
+bls:Q482000	Margarine for making puff pastry	margarina para hojaldre
+bls:Q4A1000	Margarine three-quarter fat, fortified with vitamins	margarina tres cuartos con vitaminas
+bls:Q4A4000	Margarine made from sunflower oil, fortified with vitamin D	margarina de girasol con vitamina D
+bls:Q4B1000	Vegetable fat cooking liquid	crema vegetal para freír y cocinar
+bls:Q4C1000	Vegetable fat spread with > 62 % and < 80 % fat, fortified with vitamins	crema para untar vegetal 62-80 % grasa con vitaminas
+bls:Q4C2000	Vegetable fat spread with > 41 % and < 60 % fat, fortified with vitamins	crema para untar vegetal 41-60 % grasa con vitaminas
+bls:Q4C3000	Vegetable fat spread with < 39 % fat, fortified with vitamins	crema para untar vegetal menos de 39 % grasa con vitaminas
+bls:Q4C4000	Margarine made from rapeseed oil/canola oil, fortified with vitamins	margarina de colza con vitaminas
+bls:Q4C5000	Mixed fat spread (mainly vegetable fat) unsalted, fortified with vitamins	grasa mixta para untar sin sal con vitaminas
+bls:Q4C5100	Mixed fat spread (mainly vegetable fat) salted, fortified with vitamins	grasa mixta para untar salada con vitaminas
+bls:Q520000	Shea butter	manteca de karité
+bls:Q530000	Cocoa butter	manteca de cacao
+bls:Q550000	Coconut oil	aceite de coco
+bls:Q550100	Coconut oil deodorized	aceite de coco desodorizado
+bls:Q550200	Coconut fat hydrogenated	grasa de coco hidrogenada
+bls:Q570000	Palm kernel fat/palm kernel oil	aceite de palmiste
+bls:Q590000	Plant-based cheese alternative, vegetable fat based, vegan	queso vegano de grasa vegetal
+bls:Q590100	Plant-based cheese alternative, vegetable fat based, vegan, fortified with vitamin B12 and calcium	queso vegano de grasa vegetal con vitamina B12 y calcio
+bls:Q611000	Best quality butter	mantequilla suave fermentada
+bls:Q620000	Cultured butter	mantequilla de cultivo
+bls:Q630000	Sweet cream butter	mantequilla de nata dulce
 bls:S201500	Coffee ice cream, in waffle cone	cucurucho de helado de café
 bls:S202200	Ice cream mixed (chocolate, vanilla) with egg liqueur	helado de chocolate y vainilla con licor de huevo
 bls:T204182	Cod fried without fat (pan)	bacalao fresco a la plancha
