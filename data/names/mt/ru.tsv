@@ -3930,13 +3930,352 @@ bls:Y7A2020	Salmon-cream cheese with dill weed	крем из лосося с у�
 bls:Y7A2030	Oven cheese baked with garlic and thyme	печёный сыр с чесноком и тимьяном
 bls:Y7A2040	Sheep's milk cheese baked with tomatoes and olives	овечий сыр с томатами и оливками запечённый
 bls:Y7A3000	Basil butter	масло с базиликом
+bls:Y7A3010	Lemon butter	лимонное масло
 bls:Y810242	Apple dumplings	яблоки в тесте
+bls:Y812343	Semolina slices fried, with sugar and cinnamon	ломтики манной запеканки жареные с сахаром и корицей
+bls:Y812512	"Karthäuser" dumplings (made from rolls) fried, with sugar and cinnamon	картхойзерские клёцки жареные с сахаром и корицей
+bls:Y812962	French toast fried, with sugar and cinnamon	сладкие гренки жареные с сахаром и корицей
+bls:Y813142	"Savarin" (yeast ring cake, drizzled with white wine)	саварен пропитанный белым вином
+bls:Y813162	"Savarin" (yeast ring cake, drizzled with fruit juice)	саварен пропитанный фруктовым соком
+bls:Y813262	"Baba" (yeast ring cake, drizzled with rum)	баба с ромом
+bls:Y813442	"Dampfnudeln" yeast dumplings sweetened fried	дампфнудели сладкие
+bls:Y813452	"Dampfnudeln" yeast dumplings salted fried	дампфнудели солёные
+bls:Y813552	Small yeast pancakes fried	дрожжевые оладьи жареные
+bls:Y813652	"Rohrnudeln" sweet yeast dumplings baked	дрожжевые булочки сладкие запечённые
+bls:Y813942	Small buckwheat pancakes fried	гречневые оладьи жареные
+bls:Y814010	Apple-banana sauce (raw) with raisins	яблочно-банановое пюре сырое с изюмом
 bls:Y814110	Apple-banana-pear salad sweetened with honey	фруктовый салат яблоко-банан-груша с мёдом
+bls:Y814210	Apple-banana-pear sauce raw	яблочно-бананово-грушевое пюре сырое
+bls:Y814310	Apple-banana salad sweetened with honey	салат из яблок и бананов с мёдом
+bls:Y817142	Cream dumplings fried	сливочные клёцки жареные
+bls:Y818162	Pancakes with milk 3.5 % fat, fried, filled with jam	блины на молоке 3,5 % жареные с джемом
+bls:Y818242	Small quark pancakes fried	творожные оладьи жареные
+bls:Y818342	Small yeast pancakes with apple, fried	дрожжевые оладьи с яблоком жареные
+bls:Y821043	Semolina casserole with raisins	запеканка манная с изюмом
+bls:Y821143	Semolina casserole with apple	запеканка манная с яблоком
+bls:Y823143	Oat flakes casserole with cocoa	запеканка овсяная с какао
+bls:Y824043	Wheat roll casserole	запеканка из булочек
+bls:Y824243	Souffle with rolls, apple and raisins	запеканка из булочек с яблоком и изюмом
+bls:Y824443	Cherry souffle	запеканка вишнёвая из булочек
+bls:Y824463	Cherry souffle (with white wine)	запеканка вишнёвая с белым вином
+bls:Y825043	Chocolate casserole	запеканка шоколадная
+bls:Y826043	Apple casserole	запеканка яблочная
+bls:Y826063	Quark casserole with apple	запеканка творожная с яблоком
+bls:Y827043	Souffle with mixed fruit	запеканка с ассорти фруктов
+bls:Y827163	Rusk pudding with apple baked	запеканка из сухарей с яблоком
+bls:Y829243	Brown bread casserole with chocolate	запеканка из чёрного хлеба с шоколадом
+bls:Y832043	Rice pudding with almonds and sultanas	рисовый пудинг с миндалём и изюмом
+bls:Y834143	Nut pudding	ореховый пудинг
+bls:Y835463	Plum pudding	плам-пудинг
+bls:Y836312	Mango compote	манго тушёное
+bls:Y837312	Nectarine compote	нектарины тушёные
+bls:Y837543	Pudding English style	пудинг по-английски
+bls:Y837643	Frankfurt pudding	пудинг франкфуртский
+bls:Y838312	Banana compote	бананы тушёные
+bls:Y839243	Buckwheat groats (with milk 3.5 % fat)	гречневая каша на молоке 3,5 % жирности
+bls:Y839312	Banana compote with artificial sweetener	бананы тушёные с подсластителем
+bls:Y840143	Rhubarb compote	ревень тушёный
+bls:Y840243	Blueberry compote	черника тушёная
+bls:Y840312	Pear compote unsweetened	груши тушёные без сахара
+bls:Y840343	Apple compote with white wine and sultanas	яблоки тушёные с белым вином и изюмом
+bls:Y840353	Apple compote with white wine	яблоки тушёные с белым вином
+bls:Y840363	Apple compote with raisins and rum	яблоки тушёные с изюмом и ромом
+bls:Y840412	Raspberry compote sugar-reduced	малина тушёная с пониженным сахаром
+bls:Y840443	Raspberry compote	малина тушёная
+bls:Y840563	Lingonberry compote	брусника тушёная
+bls:Y840643	Blackberry compote	ежевика тушёная
+bls:Y840743	Gooseberry compote	крыжовник тушёный
+bls:Y840843	Pear compote	груши тушёные
 bls:Y840853	Pears boiled	груши варёные
+bls:Y840953	Pears boiled with chocolate sauce	груши варёные с шоколадным соусом
+bls:Y841112	Strawberry compote with artificial sweetener	клубника тушёная с подсластителем
+bls:Y841212	Red currant compote	красная смородина тушёная
+bls:Y841263	Sweet cherry compote	черешня тушёная
+bls:Y841312	Sour cherry compote with artificial sweetener	вишня тушёная с подсластителем
+bls:Y841363	Sour cherry compote	вишня тушёная
+bls:Y841412	Apricot compote unsweetened	абрикосы тушёные без сахара
+bls:Y841443	Apricot compote	абрикосы тушёные
+bls:Y841543	Mirabelle plum compote	сливы мирабель тушёные
+bls:Y841643	Prune compote	чернослив тушёный
+bls:Y841743	Plum compote	сливы тушёные
+bls:Y841812	Peach compote unsweetened	персики тушёные без сахара
+bls:Y841843	Peach compote	персики тушёные
+bls:Y841953	Strawberry compote	клубника тушёная
+bls:Y842153	Fruit compote	фрукты тушёные
+bls:Y842253	Greengage compote	сливы ренклод тушёные
+bls:Y842343	Quince compote	айва тушёная
+bls:Y842412	Apricot compote with artificial sweetener	абрикосы тушёные с подсластителем
+bls:Y842443	Pumpkin compote	тыква тушёная
+bls:Y842712	Plum compote sugar-reduced	сливы тушёные с пониженным сахаром
+bls:Y842812	Strawberry compote unsweetened	клубника тушёная без сахара
+bls:Y842912	Sweet cherry compote unsweetened	черешня тушёная без сахара
+bls:Y843143	Apple sauce	яблочное пюре
+bls:Y843212	Red currant compote unsweetened	красная смородина тушёная без сахара
+bls:Y843243	Apple sauce with cinnamon	яблочное пюре с корицей
 bls:Y843312	Nectarine compote unsweetened	нектарины тушёные без сахара
+bls:Y844253	Rhubarb compote with vanilla sauce	ревеневый кисель с ванильным соусом
+bls:Y844912	Pineapple compote with artificial sweetener	ананас тушёный с подсластителем
+bls:Y845143	Baked apple filled	яблоко запечённое фаршированное
+bls:Y845153	Baked apple filled, with vanilla sauce	яблоко запечённое фаршированное с ванильным соусом
+bls:Y845163	Baked apple unfilled	яблоко запечённое
+bls:Y845242	Apple doughnuts fried	яблочные кольца в кляре жареные
+bls:Y845312	Peach compote sugar-reduced	персики тушёные с пониженным сахаром
+bls:Y845362	Apple doughnuts fried, with vanilla sauce	яблочные кольца в кляре жареные с ванильным соусом
+bls:Y845453	Apple baked in shortcrust pastry	яблоко в песочном тесте запечённое
+bls:Y845552	"Apfelschmarren" fried (thick apple pancake cut into pieces)	яблочный шмаррен жареный
+bls:Y845643	Apple froth with rum	яблочный мусс с ромом
+bls:Y845753	Apple compote with caramel sauce	яблоки тушёные с карамельным соусом
+bls:Y845843	Apple compote with vanilla cream	яблоки в ванильном креме
+bls:Y845953	Apple compote with raisins and almonds	яблоки тушёные с изюмом и миндалём
+bls:Y846150	Strawberry mousse	клубничный мусс со сливками
+bls:Y846312	Peach compote with artificial sweetener	персики тушёные с подсластителем
+bls:Y846553	Rice pudding with milk 3.5 % fat and raw banana	рисовая молочная каша с бананом
+bls:Y846653	Rice pudding with milk 3.5 % fat and apricot compote	рисовая молочная каша с тушёными абрикосами
+bls:Y846753	Rice pudding with milk 3.5 % fat and gooseberry compote	рисовая молочная каша с тушёным крыжовником
+bls:Y847012	Layered sponge cake cream dish with fruits	десерт «тутти-фрутти»
+bls:Y847140	Orange cream (with gelatine) with white wine	апельсиновый крем с белым вином
+bls:Y847353	Apple compote with vanilla sauce	яблоки тушёные с ванильным соусом
+bls:Y847650	Strawberries sugared	клубника с сахаром
+bls:Y847750	Blueberries sugared	черника с сахаром
+bls:Y847840	Raspberries sugared	малина с сахаром
+bls:Y847950	Red currants sugared	красная смородина с сахаром
+bls:Y848160	Fruit preserved in rum with sugar	фрукты в роме с сахаром (румтопф)
+bls:Y848312	Rhubarb cream simple	ревеневый крем простой
+bls:Y848912	Blueberry compote unsweetened	черника тушёная без сахара
 bls:Y849440	Grapefruit sugared	грейпфрут с сахаром
+bls:Y849512	Fruit compote with artificial sweetener	фрукты тушёные с подсластителем
+bls:Y849560	Sponge cake cream dish (with Bavarian cream)	шарлотта по-русски с баварским кремом
+bls:Y849912	Plum compote with artificial sweetener	сливы тушёные с подсластителем
+bls:Y851143	Fruit aspic (with white wine)	фруктовое заливное с белым вином
+bls:Y851312	Fruit jelly, sugar-reduced	фруктовый кисель с пониженным сахаром
+bls:Y851363	Fruit jelly	фруктовый кисель
+bls:Y851512	Rhubarb compote sugar-reduced	ревень тушёный с пониженным сахаром
+bls:Y852112	Mixed fruit compote unsweetened	ассорти фруктов тушёное без сахара
+bls:Y852312	Quince compote with artificial sweetener	айва тушёная с подсластителем
+bls:Y853512	Rhubarb compote with artificial sweetener	ревень тушёный с подсластителем
+bls:Y854312	Red fruit jelly with artificial sweetener	красный кисель с подсластителем
+bls:Y855043	Red fruit jelly of fruit juice	красный кисель из фруктового сока
+bls:Y855053	Red fruit jelly	красный кисель
+bls:Y855153	Apple jelly	яблочный кисель
+bls:Y855253	Gooseberry jelly with whipped cream	кисель из крыжовника со взбитыми сливками
+bls:Y855312	Red fruit jelly, unsweetened	красный кисель без сахара
+bls:Y855543	Cherry jelly	вишнёвый кисель
+bls:Y855643	Rhubarb jelly	ревеневый кисель
+bls:Y855743	Red fruit jelly with vanilla sauce	красный кисель с ванильным соусом
+bls:Y856153	Pineapple jelly with whipped cream	ананасовое желе со взбитыми сливками
+bls:Y856163	Pineapple jelly	ананасовое желе
+bls:Y856243	Wine jelly	винное желе
+bls:Y856253	Wine jelly with fruit	винное желе с фруктами
+bls:Y856312	Red fruit jelly, sugar-reduced	красный кисель с пониженным сахаром
+bls:Y856353	Red currant jelly with whipped cream	желе из красной смородины со взбитыми сливками
+bls:Y856453	Wine jelly with pineapple	винное желе с ананасом
+bls:Y856550	Buttermilk jelly with strawberries	желе из пахты с клубникой
+bls:Y857063	Fruit jelly with fruit pieces and whipped cream	фруктовое желе с кусочками фруктов и взбитыми сливками
+bls:Y857540	Strawberry froth	клубничная пена
+bls:Y859343	Orange cream (with starch)	апельсиновый крем на крахмале
+bls:Y859440	Russian cream (with alcohol) with whipped cream	русский крем со взбитыми сливками
+bls:Y859663	Apricot cream	абрикосовый крем
+bls:Y860212	Lemon jelly	лимонное желе
+bls:Y860453	Caramel pudding with vanilla sauce	карамельный пудинг с ванильным соусом
+bls:Y860463	Caramel pudding simple	карамельный крем простой
+bls:Y860553	Chocolate pudding with vanilla sauce	шоколадный пудинг с ванильным соусом
+bls:Y860643	Semolina pudding with egg	манный пудинг с яйцом
+bls:Y860840	Vanilla butter cream	ванильный масляный крем
+bls:Y860940	Butter-cream filling	масляный крем для начинки
+bls:Y860963	Almond cream (Bavarian cream with almond brittle)	миндальный крем с миндальной крошкой
+bls:Y861653	Vanilla pudding made from powder with milk 3.5 % fat	ванильный пудинг из порошка с молоком 3,5 % жирности
+bls:Y861753	Chocolate pudding made from powder with milk 3.5 % fat	шоколадный пудинг из порошка с молоком 3,5 % жирности
+bls:Y862143	Vanilla pudding with egg yolk	ванильный пудинг с яичным желтком
+bls:Y862253	Chocolate- semolina pudding	шоколадно-манный пудинг
+bls:Y862363	Hazelnut pudding	ореховый пудинг с лесным орехом
+bls:Y862612	Caramel pudding	карамельный пудинг
+bls:Y862753	Semolina pudding with egg and cherry juice	манный пудинг с яйцом и вишнёвым соком
+bls:Y862763	Semolina pudding with egg and almonds	манный пудинг с яйцом и миндалём
+bls:Y863112	Apple sauce with artificial sweetener	яблочное пюре с подсластителем
+bls:Y864053	Semolina pudding with egg and cherry sauce	манный пудинг с яйцом и вишнёвым соусом
+bls:Y864112	Apple sauce unsweetened	яблочное пюре без сахара
+bls:Y864943	"Welfencreme" (vanilla pudding with wine sabayon)	ванильный пудинг с винным сабайоном
+bls:Y865312	Red currant compote with artificial sweetener	красная смородина тушёная с подсластителем
+bls:Y867112	Strawberry carpaccio (with white wine)	клубничное карпаччо с белым вином
+bls:Y868040	Buttermilk aspic (with arrack)	заливное из пахты с араком
+bls:Y869143	Yeast pudding	дрожжевой пудинг
+bls:Y870163	Bavarian cream	баварский крем
+bls:Y870253	Vanilla cream simple	ванильный крем простой
+bls:Y870263	Vanilla cream (with gelatine)	ванильный крем с желатином
+bls:Y870363	Chocolate cream (with gelatine) with rum	шоколадный крем с желатином и ромом
+bls:Y870440	Hazelnut cream (with starch)	ореховый крем на крахмале
+bls:Y870463	Hazelnut cream (with gelatine)	ореховый крем с желатином
+bls:Y870643	Mocha cream (with gelatine)	кофейный крем мокко с желатином
+bls:Y870653	Coffee cream simple (with starch)	кофейный крем простой
+bls:Y870843	White wine cream (with gelatine)	крем из белого вина с желатином
+bls:Y870912	Red wine cream (with gelatine)	крем из красного вина с желатином
+bls:Y871363	Mousse au chocolat (chocolate mousse) with rum	шоколадный мусс с ромом
+bls:Y872053	Fruit cream (with gelatine)	фруктовый крем с желатином
+bls:Y872160	Strawberry cream (with gelatine)	клубничный крем с желатином
+bls:Y872340	Lemon cream (with gelatine) with white wine	лимонный крем с белым вином
+bls:Y872460	Strawberries with whipped cream	клубника со взбитыми сливками
+bls:Y872812	Lemon cream (with gelatine)	лимонный крем с желатином
 bls:Y874012	Vanilla pudding made from powder with milk 3.5 % fat, with fruit and artificial sweetener	ванильный пудинг с фруктами и подсластителем
+bls:Y875140	Cream made from sour cream with rum	сметанный крем с ромом
+bls:Y877012	Cream pudding with fruit	сливочный пудинг с фруктами
+bls:Y879812	Pineapple rings in frying batter (with milk) fried	кольца ананаса в молочном кляре жареные
+bls:Y880040	Quark dish simple, with chocolate	творожный десерт простой с шоколадом
+bls:Y880050	Quark dish simple, with strawberries	творожный десерт простой с клубникой
+bls:Y880160	Quark cream	творожный крем
+bls:Y880250	Fruit quark	творог фруктовый
+bls:Y880312	Quark dish with pineapple	творожный десерт с ананасом
+bls:Y880453	Quark casserole with fruit sauce	творожная запеканка с фруктовым соусом
+bls:Y880763	Quark doughnuts deep-fried	творожные пончики во фритюре
+bls:Y880853	Quark casserole	творожная запеканка
+bls:Y881012	Quark dish with sour cherries	творожный десерт с вишней
+bls:Y881153	Vanilla quark	творог ванильный
+bls:Y881510	Quark dish with strawberries	творожный десерт с клубникой
+bls:Y881610	Quark dish with raspberries	творожный десерт с малиной
+bls:Y881743	Quark dumplings filled with apricots	творожные клёцки с начинкой из абрикосов
+bls:Y881812	Small quark pancakes (with potatoes) fried	творожные оладьи с картофелем жареные
+bls:Y881842	Small quark-yeast pancakes fried	творожные оладьи на дрожжевом тесте жареные
+bls:Y881943	Quark pudding	творожный пудинг
+bls:Y882010	Quark dish with sweet cherries	творожный десерт с черешней
+bls:Y882150	Banana quark	творог банановый
+bls:Y882310	Quark dish with peaches	творожный десерт с персиками
+bls:Y882410	Quark (< 10 % fat in dry matter) with jam	творог обезжиренный с джемом
+bls:Y882510	Quark (min. 20 % fat in dry matter) with jam	творог полужирный с джемом
+bls:Y883140	Quark-mocha cream	творожно-кофейный крем
+bls:Y883340	Quarkdish with sour cherries, chocolate and cherry brandy	десерт «Шварцвальд» с творогом и киршем
+bls:Y884312	Green fruit jelly	зелёный кисель
+bls:Y885150	Strawberry yogurt with cream	клубничный йогурт со сливками
+bls:Y886240	Yogurt cream (with gelatine)	йогуртовый крем
+bls:Y886260	Lemon-yogurt cream (with gelatine)	лимонно-йогуртовый крем
+bls:Y888312	Sweet cherry compote sugar-reduced	черешня тушёная с пониженным сахаром
+bls:Y890342	"Kaiserschmarren" fried (thick pancake with milk 3.5 % fat, cut into pieces)	кайзершмаррен на молоке 3,5 %
+bls:Y890463	"Salzburger Nockerl" baked (sweet egg dish)	зальцбургские нокерли запечённые
+bls:Y890512	"Kaiserschmarren" fried (thick pancake with milk 1.5 % fat, cut into pieces)	кайзершмаррен на молоке 1,5 %
+bls:Y891062	Pancakes with milk 3.5 % fat, fried in butter	блины на молоке 3,5 % жареные на сливочном масле
+bls:Y891142	Pancakes with milk 3.5 % fat and blueberries, fried	блины на молоке 3,5 % с черникой жареные
+bls:Y891542	Omelette souffle fried, filled with jam	омлет-суфле с джемом жареный
+bls:Y892142	Small potato-yeast dumplings fried	картофельные шарики на дрожжевом тесте во фритюре
+bls:Y893062	Honey pancakes fried	медовые блины жареные
+bls:Y893162	Crepes Suzette fried	крепы сюзетт жареные
+bls:Y894243	Omelette souffle fried	омлет-суфле жареный
+bls:Y896143	Cake souffle	кексовое суфле запечённое
+bls:Y8A1000	Zabaione (with alcohol)	забайоне
+bls:Y8A2000	Almond brittle	миндальный крокант
+bls:Y8A3000	Apple-banana-pear sauce unsweetened	яблочно-бананово-грушевое пюре без сахара
+bls:Y8A3010	Apple-mango sauce unsweetened	яблочно-манговое пюре без сахара
+bls:Y8A3020	Apple compote	яблоки тушёные
+bls:Y8A3030	Dried fruit compote thickened with starch	сухофрукты тушёные загущённые крахмалом
+bls:Y8A3040	Hot raspberry sauce	горячий малиновый соус
+bls:Y8A4000	Semolina pudding (as dessert) with raw strawberry sauce	манная каша с сырым клубничным соусом
+bls:Y8A4010	Semolina pudding (as dessert) with caramel sauce	манная каша с карамельным соусом
+bls:Y8A4020	Semolina pudding (as dessert) with cherry sauce	манная каша с вишнёвым соусом
 bls:Y8A4030	Semolina pudding (as dessert) with chocolate sauce	манный пудинг с шоколадным соусом
+bls:Y8A4040	Semolina pudding (as dessert) with vanilla sauce	манная каша с ванильным соусом
+bls:Y8A4050	Semolina pudding without egg	манный пудинг без яйца
+bls:Y8A4060	Semolina slices sweetened fried	ломтики манной запеканки сладкие жареные
+bls:Y8A4070	Yogurt 1.5 % fat with strawberries	йогурт 1,5 % с клубникой
+bls:Y8A4080	Rice pudding with milk 3.5 % fat and red fruit jelly	рисовая молочная каша с красным киселем
+bls:Y8A4090	Chocolate pudding	шоколадный пудинг
+bls:Y8A4100	Chocolate pudding made from powder with milk 1.5 % fat	шоколадный пудинг из порошка на молоке 1,5 % жирности
+bls:Y8A4110	Chocolate pudding made from powder with soya drink	шоколадный пудинг из порошка на соевом напитке
+bls:Y8A4120	Vanilla pudding (as dessert) with caramel sauce	ванильный пудинг с карамельным соусом
+bls:Y8A4130	Vanilla pudding (as dessert) with chocolate sauce	ванильный пудинг с шоколадным соусом
+bls:Y8A4140	Vanilla pudding with egg	ванильный пудинг с яйцом
+bls:Y8A4150	Vanilla pudding made from powder with milk 1.5 % fat	ванильный пудинг из порошка на молоке 1,5 % жирности
+bls:Y8A4160	Vanilla pudding made from powder with soya drink	ванильный пудинг из порошка на соевом напитке
+bls:Y8A5000	Creme brulee	крем-брюле
+bls:Y8A5010	Coffee cream (with gelatine)	кофейный крем с желатином
+bls:Y8A5012	Vanilla pudding made from powder with milk 1.5 % fat, with fruit	ванильный пудинг из порошка на молоке 1,5 % с фруктами
+bls:Y8A5020	Pannacotta	панна-кота
+bls:Y8A5030	Cream pudding with egg yolk	сливочный пудинг с желтком
+bls:Y8A5040	Cream pudding (as dessert) with caramel sauce	сливочный пудинг с карамельным соусом
+bls:Y8A5050	Cream pudding (as dessert) with cherry sauce	сливочный пудинг с вишнёвым соусом
+bls:Y8A5060	Cream pudding (as dessert) with chocolate sauce	сливочный пудинг с шоколадным соусом
+bls:Y8A6000	Quark-semolina casserole	творожно-манная запеканка
+bls:Y8A7000	Pancakes with milk 3.5 % fat and apple, fried	блины на молоке 3,5 % с яблоком жареные
+bls:Y8A7010	Pancakes with milk 3.5 % fat and raisins, fried	блины на молоке 3,5 % с изюмом жареные
+bls:Y8A8000	Frying batter sweetened, with milk 3.5 % fat, raw	кляр сладкий на молоке 3,5 % сырой
+bls:Y8A8010	Yeast dough sweetened, with milk 3.5 % fat, raw	дрожжевое тесто сладкое на молоке 3,5 % сырое
+bls:Y8A8020	Yeast dough sweetened, with water, raw	дрожжевое тесто сладкое на воде сырое
+bls:Y8A8030	Shortcrust pastry sweetened, raw	песочное тесто сладкое сырое
+bls:Y8B1012	Vanilla pudding made from powder with milk 3.5 % fat, with artificial sweetener	ванильный пудинг из порошка на молоке 3,5 % с подсластителем
+bls:Y8D5010	Tiramisu (without egg) with liqueur	тирамису без яиц с ликёром
+bls:Y8D6000	Tiramisu reduced-fat, with liqueur	тирамису облегчённое с ликёром
+bls:Y8D7010	Tiramisu (without egg) with liqueur and fruit	тирамису без яиц с ликёром и фруктами
+bls:Y8D8012	Cream pudding made from powder with milk 3.5 % fat and cream	сливочный пудинг из порошка на молоке 3,5 % со сливками
+bls:Y910030	Potato chips with ketchup	картофель фри с кетчупом
+bls:Y910060	Potato chips with mayonnaise	картофель фри с майонезом
+bls:Y910130	Baked potatoes with herb quark	печёный картофель с травяным творогом
+bls:Y911060	Hamburger	гамбургер
+bls:Y911160	Cheeseburger	чизбургер
+bls:Y911260	Double cheeseburger	двойной чизбургер
+bls:Y911360	Double-decker burger	двухъярусный бургер
+bls:Y912030	Meatball with mustard	котлета с горчицей
+bls:Y912060	Meatball with roll and tomato ketchup	котлета с булочкой и кетчупом
+bls:Y912130	Meatball with potato salad and mustard	котлета с картофельным салатом и горчицей
+bls:Y912160	Meatball with potato chips and tomato ketchup	котлета с картофелем фри и кетчупом
+bls:Y912260	Meatball with fried potatoes (of raw potatoes) and tomato ketchup	котлета с жареным картофелем и кетчупом
+bls:Y913032	Bockwurst with mustard	боквурст с горчицей
+bls:Y913062	Bockwurst with roll and mustard	боквурст с булочкой и горчицей
+bls:Y913132	Bockwurst with potato salad and mustard	боквурст с картофельным салатом и горчицей
+bls:Y914032	Vienna sausage with mustard	венские сосиски с горчицей
+bls:Y914062	Vienna sausage with roll and mustard	венские сосиски с булочкой и горчицей
+bls:Y914132	Vienna sausage with potato salad and mustard	венские сосиски с картофельным салатом и горчицей
+bls:Y915032	Knackwurst with mustard	кнацквурст с горчицей
+bls:Y915062	Knackwurst with roll and mustard	кнацквурст с булочкой и горчицей
+bls:Y915132	Knackwurst with potato salad and mustard	кнацквурст с картофельным салатом и горчицей
+bls:Y916032	Scalded sausage with mustard	варёная колбаса с горчицей
+bls:Y916062	Scalded sausage with roll and mustard	варёная колбаса с булочкой и горчицей
+bls:Y916132	Scalded sausage with potato salad and mustard	варёная колбаса с картофельным салатом и горчицей
+bls:Y921062	Doner kebab, flatbread filled with grilled veal and beef, salad and sauce	дёнер с телятиной и говядиной, салатом и соусом
+bls:Y921162	Doner kebab, flatbread filled with grilled poultry, salad and sauce	дёнер с птицей, салатом и соусом
+bls:Y942032	Bratwurst with mustard	братвурст с горчицей
+bls:Y942062	Bratwurst with roll and mustard	братвурст с булочкой и горчицей
+bls:Y942132	Bratwurst with potato salad and mustard	братвурст с картофельным салатом и горчицей
+bls:Y943032	Curried bratwurst with curry ketchup	карривурст с карри-кетчупом
+bls:Y943062	Curried bratwurst with curry ketchup and roll	карривурст с карри-кетчупом и булочкой
+bls:Y944062	Curried bratwurst with potato chips	карривурст с картофелем фри
+bls:Y945032	Rostbratwurst with mustard	ростбратвурст с горчицей
+bls:Y945062	Rostbratwurst with roll and mustard	ростбратвурст с булочкой и горчицей
+bls:Y945132	Rostbratwurst with potato salad and mustard	ростбратвурст с картофельным салатом и горчицей
+bls:Y946062	Shashlik with roll and tomato ketchup	шашлык с булочкой и кетчупом
+bls:Y946162	Shashlik with potato chips and tomato ketchup	шашлык с картофелем фри и кетчупом
+bls:Y991060	Vanilla ice cream (with egg) with whipped cream	кремовое ванильное мороженое со взбитыми сливками
+bls:Y991143	Vanilla cream ice cream	ванильное сливочное мороженое
+bls:Y991240	Vanilla parfait (semi-frozen)	ванильное парфе
+bls:Y992060	Vanilla ice cream (with egg) with whipped cream and fruit (canned)	кремовое ванильное мороженое со взбитыми сливками и консервированными фруктами
+bls:Y993140	Vanilla cream ice cream with orange liqueur	ванильное сливочное мороженое с апельсиновым ликёром
+bls:Y993240	Chocolate cream ice cream	шоколадное сливочное мороженое
+bls:Y993340	Mocha cream ice cream	сливочное мороженое мокко
+bls:Y993440	Strawberry cream ice cream	клубничное сливочное мороженое
+bls:Y993540	Vanilla cream ice cream with hot chocolate sauce	ванильное сливочное мороженое с горячим шоколадным соусом
+bls:Y995040	Vanilla cream ice cream with whipped cream, fresh strawberries and rum	ванильное сливочное мороженое со взбитыми сливками, свежей клубникой и ромом
+bls:Y995060	Vanilla ice cream (with egg) with hot raspberry sauce	кремовое ванильное мороженое с горячим малиновым соусом
+bls:Y995140	Pear Helene	груша Елена
+bls:Y995240	Peach Melba	персик мельба
+bls:Y996140	Vanilla ice cream (with egg)	кремовое ванильное мороженое
+bls:Y996240	Strawberry ice cream (with egg)	кремовое клубничное мороженое
+bls:Y996340	Chocolate ice cream (with egg)	кремовое шоколадное мороженое
+bls:Y996440	Lemon sherbet/sorbet	лимонный сорбет
+bls:Y996510	Strawberry ice cream	клубничное мороженое
+bls:Y997043	Iced coffee	кофе-глясе
+bls:Y999140	Neapolitan ice cream	мороженое «фюрст-пюклер»
+bls:Y999242	Meringue ice-cream cake	торт-мороженое с безе
+bls:Y9A1000	Chicken burger	чикенбургер
+bls:Y9A1010	Fish burger with saithe	рыбный бургер с сайдой
+bls:Y9A1020	Gyros burger	гирос-бургер
+bls:Y9A1030	Tofu burger vegan	тофу-бургер веганский
+bls:Y9A1040	Doner vegetarian, flatbread filled with salad, sheep's milk cheese and sauce	дёнер вегетарианский с салатом, овечьим сыром и соусом
+bls:Y9A1050	Falafel (small chickpea balls) deep-fried	фалафель во фритюре
+bls:Y9A1060	Falafel deep-fried, in flatbread, vegetarian filled	фалафель во фритюре в лепёшке вегетарианский
+bls:Y9A1070	Lahmacun unfilled	лахмаджун без начинки
+bls:Y9A1080	Lahmacun filled with grilled poultry, salad and sauce	лахмаджун с курицей-гриль, салатом и соусом
+bls:Y9A1090	Lahmacun filled with salad and sauce	лахмаджун с салатом и соусом
+bls:Y9A2000	Apricot ice cream	абрикосовое мороженое
+bls:Y9A2010	Raspberry ice cream	малиновое мороженое
+bls:Y9A2020	Hazelnut ice cream (with egg)	кремовое мороженое с лесным орехом
+bls:Y9A2030	Tartufo di Pizzo (with nut and chocolate ice cream)	тартуфо ди пиццо
+bls:Y9A2040	Tartufo, vanilla ice cream in chocolate coating (with alcohol)	тартуфо ванильное в шоколадной глазури
+bls:Y9A2050	Vanilla ice cream (with egg) with whipped cream and fresh strawberries	кремовое ванильное мороженое со взбитыми сливками и свежей клубникой
 ciqual:10023	Shrimp fritters	креветки в кляре
 ciqual:11202	Indian-style sauce, tandoori or garam masala type, prepacked	соус тандури
 ciqual:11216	Soy sauce, with sugar(s), prepacked	соевый соус с сахаром

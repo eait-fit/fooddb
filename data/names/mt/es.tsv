@@ -3930,13 +3930,352 @@ bls:Y7A2020	Salmon-cream cheese with dill weed	crema de salmón y eneldo con que
 bls:Y7A2030	Oven cheese baked with garlic and thyme	queso al horno con ajo y tomillo
 bls:Y7A2040	Sheep's milk cheese baked with tomatoes and olives	queso de oveja (feta) al horno con tomate y aceitunas
 bls:Y7A3000	Basil butter	mantequilla de albahaca
+bls:Y7A3010	Lemon butter	mantequilla de limón
 bls:Y810242	Apple dumplings	bolas de masa con manzana
+bls:Y812343	Semolina slices fried, with sugar and cinnamon	rodajas de sémola fritas con azúcar y canela
+bls:Y812512	"Karthäuser" dumplings (made from rolls) fried, with sugar and cinnamon	bolas kartäuser fritas con azúcar y canela
+bls:Y812962	French toast fried, with sugar and cinnamon	torrijas fritas con azúcar y canela
+bls:Y813142	"Savarin" (yeast ring cake, drizzled with white wine)	savarín con vino blanco
+bls:Y813162	"Savarin" (yeast ring cake, drizzled with fruit juice)	savarín con zumo de fruta
+bls:Y813262	"Baba" (yeast ring cake, drizzled with rum)	baba con ron
+bls:Y813442	"Dampfnudeln" yeast dumplings sweetened fried	dampfnudeln dulces
+bls:Y813452	"Dampfnudeln" yeast dumplings salted fried	dampfnudeln saladas
+bls:Y813552	Small yeast pancakes fried	tortitas de levadura fritas
+bls:Y813652	"Rohrnudeln" sweet yeast dumplings baked	bollos dulces de levadura al horno
+bls:Y813942	Small buckwheat pancakes fried	tortitas de trigo sarraceno fritas
+bls:Y814010	Apple-banana sauce (raw) with raisins	puré de manzana y plátano crudo con pasas
 bls:Y814110	Apple-banana-pear salad sweetened with honey	ensalada de manzana, plátano y pera con miel
+bls:Y814210	Apple-banana-pear sauce raw	puré de manzana, plátano y pera crudo
+bls:Y814310	Apple-banana salad sweetened with honey	ensalada de manzana y plátano con miel
+bls:Y817142	Cream dumplings fried	bolas de nata fritas
+bls:Y818162	Pancakes with milk 3.5 % fat, fried, filled with jam	creps con leche 3,5 % fritas rellenas de mermelada
+bls:Y818242	Small quark pancakes fried	tortitas de quark fritas
+bls:Y818342	Small yeast pancakes with apple, fried	tortitas de levadura con manzana fritas
+bls:Y821043	Semolina casserole with raisins	cazuela de sémola con pasas
+bls:Y821143	Semolina casserole with apple	cazuela de sémola con manzana
+bls:Y823143	Oat flakes casserole with cocoa	cazuela de copos de avena con cacao
+bls:Y824043	Wheat roll casserole	cazuela de panecillos
+bls:Y824243	Souffle with rolls, apple and raisins	cazuela de panecillos con manzana y pasas
+bls:Y824443	Cherry souffle	cazuela de panecillos con cerezas
+bls:Y824463	Cherry souffle (with white wine)	cazuela de cerezas con vino blanco
+bls:Y825043	Chocolate casserole	cazuela de chocolate
+bls:Y826043	Apple casserole	cazuela de manzana
+bls:Y826063	Quark casserole with apple	cazuela de quark con manzana
+bls:Y827043	Souffle with mixed fruit	cazuela de frutas mixtas
+bls:Y827163	Rusk pudding with apple baked	cazuela de biscotes con manzana
+bls:Y829243	Brown bread casserole with chocolate	cazuela de pan negro con chocolate
+bls:Y832043	Rice pudding with almonds and sultanas	pudín de arroz con almendras y pasas sultanas
+bls:Y834143	Nut pudding	pudín de frutos secos
+bls:Y835463	Plum pudding	plum pudding
+bls:Y836312	Mango compote	compota de mango
+bls:Y837312	Nectarine compote	compota de nectarinas
+bls:Y837543	Pudding English style	pudín a la inglesa
+bls:Y837643	Frankfurt pudding	pudín de Fráncfort
+bls:Y838312	Banana compote	compota de plátano
+bls:Y839243	Buckwheat groats (with milk 3.5 % fat)	gachas de trigo sarraceno con leche 3,5 %
+bls:Y839312	Banana compote with artificial sweetener	compota de plátano con edulcorante
+bls:Y840143	Rhubarb compote	compota de ruibarbo
+bls:Y840243	Blueberry compote	compota de arándanos
+bls:Y840312	Pear compote unsweetened	compota de peras sin azúcar
+bls:Y840343	Apple compote with white wine and sultanas	compota de manzana con vino blanco y pasas sultanas
+bls:Y840353	Apple compote with white wine	compota de manzana con vino blanco
+bls:Y840363	Apple compote with raisins and rum	compota de manzana con pasas y ron
+bls:Y840412	Raspberry compote sugar-reduced	compota de frambuesas baja en azúcar
+bls:Y840443	Raspberry compote	compota de frambuesas
+bls:Y840563	Lingonberry compote	compota de arándanos rojos
+bls:Y840643	Blackberry compote	compota de moras
+bls:Y840743	Gooseberry compote	compota de grosellas espinosas
+bls:Y840843	Pear compote	compota de peras
 bls:Y840853	Pears boiled	peras cocidas
+bls:Y840953	Pears boiled with chocolate sauce	peras cocidas con salsa de chocolate
+bls:Y841112	Strawberry compote with artificial sweetener	compota de fresas con edulcorante
+bls:Y841212	Red currant compote	compota de grosellas rojas
+bls:Y841263	Sweet cherry compote	compota de cerezas
+bls:Y841312	Sour cherry compote with artificial sweetener	compota de guindas con edulcorante
+bls:Y841363	Sour cherry compote	compota de guindas
+bls:Y841412	Apricot compote unsweetened	compota de albaricoques sin azúcar
+bls:Y841443	Apricot compote	compota de albaricoques
+bls:Y841543	Mirabelle plum compote	compota de ciruelas mirabel
+bls:Y841643	Prune compote	compota de ciruelas pasas
+bls:Y841743	Plum compote	compota de ciruelas
+bls:Y841812	Peach compote unsweetened	compota de melocotones sin azúcar
+bls:Y841843	Peach compote	compota de melocotones
+bls:Y841953	Strawberry compote	compota de fresas
+bls:Y842153	Fruit compote	compota de frutas
+bls:Y842253	Greengage compote	compota de ciruelas claudias
+bls:Y842343	Quince compote	compota de membrillo
+bls:Y842412	Apricot compote with artificial sweetener	compota de albaricoques con edulcorante
+bls:Y842443	Pumpkin compote	compota de calabaza
+bls:Y842712	Plum compote sugar-reduced	compota de ciruelas baja en azúcar
+bls:Y842812	Strawberry compote unsweetened	compota de fresas sin azúcar
+bls:Y842912	Sweet cherry compote unsweetened	compota de cerezas sin azúcar
+bls:Y843143	Apple sauce	puré de manzana
+bls:Y843212	Red currant compote unsweetened	compota de grosellas rojas sin azúcar
+bls:Y843243	Apple sauce with cinnamon	puré de manzana con canela
 bls:Y843312	Nectarine compote unsweetened	compota de nectarinas sin azúcar
+bls:Y844253	Rhubarb compote with vanilla sauce	postre de ruibarbo con salsa de vainilla
+bls:Y844912	Pineapple compote with artificial sweetener	compota de piña con edulcorante
+bls:Y845143	Baked apple filled	manzana asada rellena
+bls:Y845153	Baked apple filled, with vanilla sauce	manzana asada rellena con salsa de vainilla
+bls:Y845163	Baked apple unfilled	manzana asada
+bls:Y845242	Apple doughnuts fried	aros de manzana enrebozados fritos
+bls:Y845312	Peach compote sugar-reduced	compota de melocotones baja en azúcar
+bls:Y845362	Apple doughnuts fried, with vanilla sauce	aros de manzana enrebozados fritos con salsa de vainilla
+bls:Y845453	Apple baked in shortcrust pastry	manzana en masa quebrada al horno
+bls:Y845552	"Apfelschmarren" fried (thick apple pancake cut into pieces)	schmarrn de manzana frito
+bls:Y845643	Apple froth with rum	espuma de manzana con ron
+bls:Y845753	Apple compote with caramel sauce	compota de manzana con salsa de caramelo
+bls:Y845843	Apple compote with vanilla cream	manzanas en crema de vainilla
+bls:Y845953	Apple compote with raisins and almonds	compota de manzana con pasas y almendras
+bls:Y846150	Strawberry mousse	mousse de fresa con nata
+bls:Y846312	Peach compote with artificial sweetener	compota de melocotones con edulcorante
+bls:Y846553	Rice pudding with milk 3.5 % fat and raw banana	arroz con leche 3,5 % y plátano
+bls:Y846653	Rice pudding with milk 3.5 % fat and apricot compote	arroz con leche 3,5 % y compota de albaricoque
+bls:Y846753	Rice pudding with milk 3.5 % fat and gooseberry compote	arroz con leche 3,5 % y compota de grosellas espinosas
+bls:Y847012	Layered sponge cake cream dish with fruits	tutti frutti
+bls:Y847140	Orange cream (with gelatine) with white wine	crema de naranja con vino blanco
+bls:Y847353	Apple compote with vanilla sauce	compota de manzana con salsa de vainilla
+bls:Y847650	Strawberries sugared	fresas azucaradas
+bls:Y847750	Blueberries sugared	arándanos azucarados
+bls:Y847840	Raspberries sugared	frambuesas azucaradas
+bls:Y847950	Red currants sugared	grosellas rojas azucaradas
+bls:Y848160	Fruit preserved in rum with sugar	rumtopf
+bls:Y848312	Rhubarb cream simple	crema de ruibarbo sencilla
+bls:Y848912	Blueberry compote unsweetened	compota de arándanos sin azúcar
 bls:Y849440	Grapefruit sugared	pomelo azucarado
+bls:Y849512	Fruit compote with artificial sweetener	compota de frutas con edulcorante
+bls:Y849560	Sponge cake cream dish (with Bavarian cream)	charlotte a la rusa con crema bávara
+bls:Y849912	Plum compote with artificial sweetener	compota de ciruelas con edulcorante
+bls:Y851143	Fruit aspic (with white wine)	gelatina de fruta con vino blanco
+bls:Y851312	Fruit jelly, sugar-reduced	postre de frutas bajo en azúcar
+bls:Y851363	Fruit jelly	postre de frutas
+bls:Y851512	Rhubarb compote sugar-reduced	compota de ruibarbo baja en azúcar
+bls:Y852112	Mixed fruit compote unsweetened	compota de frutas mixtas sin azúcar
+bls:Y852312	Quince compote with artificial sweetener	compota de membrillo con edulcorante
+bls:Y853512	Rhubarb compote with artificial sweetener	compota de ruibarbo con edulcorante
+bls:Y854312	Red fruit jelly with artificial sweetener	postre de frutos rojos con edulcorante
+bls:Y855043	Red fruit jelly of fruit juice	postre de frutos rojos de zumo de frutas
+bls:Y855053	Red fruit jelly	postre de frutos rojos
+bls:Y855153	Apple jelly	postre de manzana
+bls:Y855253	Gooseberry jelly with whipped cream	postre de grosellas espinosas con nata montada
+bls:Y855312	Red fruit jelly, unsweetened	postre de frutos rojos sin azúcar
+bls:Y855543	Cherry jelly	postre de cereza
+bls:Y855643	Rhubarb jelly	postre de ruibarbo
+bls:Y855743	Red fruit jelly with vanilla sauce	postre de frutos rojos con salsa de vainilla
+bls:Y856153	Pineapple jelly with whipped cream	gelatina de piña con nata montada
+bls:Y856163	Pineapple jelly	gelatina de piña
+bls:Y856243	Wine jelly	gelatina de vino
+bls:Y856253	Wine jelly with fruit	gelatina de vino con frutas
+bls:Y856312	Red fruit jelly, sugar-reduced	postre de frutos rojos bajo en azúcar
+bls:Y856353	Red currant jelly with whipped cream	gelatina de grosellas rojas con nata montada
+bls:Y856453	Wine jelly with pineapple	gelatina de vino con piña
+bls:Y856550	Buttermilk jelly with strawberries	gelatina de suero de mantequilla con fresas
+bls:Y857063	Fruit jelly with fruit pieces and whipped cream	gelatina de fruta con trozos de fruta y nata montada
+bls:Y857540	Strawberry froth	espuma de fresa
+bls:Y859343	Orange cream (with starch)	crema de naranja con almidón
+bls:Y859440	Russian cream (with alcohol) with whipped cream	crema rusa con nata montada
+bls:Y859663	Apricot cream	crema de albaricoque
+bls:Y860212	Lemon jelly	gelatina de limón
+bls:Y860453	Caramel pudding with vanilla sauce	pudín de caramelo con salsa de vainilla
+bls:Y860463	Caramel pudding simple	flan de caramelo sencillo
+bls:Y860553	Chocolate pudding with vanilla sauce	pudín de chocolate con salsa de vainilla
+bls:Y860643	Semolina pudding with egg	pudín de sémola con huevo
+bls:Y860840	Vanilla butter cream	crema de mantequilla de vainilla
+bls:Y860940	Butter-cream filling	crema de mantequilla para rellenar
+bls:Y860963	Almond cream (Bavarian cream with almond brittle)	crema de almendra con krokant
+bls:Y861653	Vanilla pudding made from powder with milk 3.5 % fat	pudín de vainilla de sobre preparado con leche 3,5 %
+bls:Y861753	Chocolate pudding made from powder with milk 3.5 % fat	pudín de chocolate de sobre preparado con leche 3,5 %
+bls:Y862143	Vanilla pudding with egg yolk	pudín de vainilla con yema de huevo
+bls:Y862253	Chocolate- semolina pudding	pudín de chocolate y sémola
+bls:Y862363	Hazelnut pudding	pudín de avellana
+bls:Y862612	Caramel pudding	pudín de caramelo
+bls:Y862753	Semolina pudding with egg and cherry juice	pudín de sémola con huevo y zumo de cereza
+bls:Y862763	Semolina pudding with egg and almonds	pudín de sémola con huevo y almendras
+bls:Y863112	Apple sauce with artificial sweetener	puré de manzana con edulcorante
+bls:Y864053	Semolina pudding with egg and cherry sauce	pudín de sémola con huevo y salsa de cereza
+bls:Y864112	Apple sauce unsweetened	puré de manzana sin azúcar
+bls:Y864943	"Welfencreme" (vanilla pudding with wine sabayon)	pudín de vainilla con sabayón de vino
+bls:Y865312	Red currant compote with artificial sweetener	compota de grosellas rojas con edulcorante
+bls:Y867112	Strawberry carpaccio (with white wine)	carpaccio de fresa con vino blanco
+bls:Y868040	Buttermilk aspic (with arrack)	gelatina de suero de mantequilla con arrack
+bls:Y869143	Yeast pudding	pudín de levadura
+bls:Y870163	Bavarian cream	crema bávara
+bls:Y870253	Vanilla cream simple	crema de vainilla sencilla
+bls:Y870263	Vanilla cream (with gelatine)	crema de vainilla con gelatina
+bls:Y870363	Chocolate cream (with gelatine) with rum	crema de chocolate con gelatina y ron
+bls:Y870440	Hazelnut cream (with starch)	crema de avellana con almidón
+bls:Y870463	Hazelnut cream (with gelatine)	crema de avellana con gelatina
+bls:Y870643	Mocha cream (with gelatine)	crema de moca con gelatina
+bls:Y870653	Coffee cream simple (with starch)	crema de café sencilla
+bls:Y870843	White wine cream (with gelatine)	crema de vino blanco con gelatina
+bls:Y870912	Red wine cream (with gelatine)	crema de vino tinto con gelatina
+bls:Y871363	Mousse au chocolat (chocolate mousse) with rum	mousse de chocolate con ron
+bls:Y872053	Fruit cream (with gelatine)	crema de fruta con gelatina
+bls:Y872160	Strawberry cream (with gelatine)	crema de fresa con gelatina
+bls:Y872340	Lemon cream (with gelatine) with white wine	crema de limón con vino blanco
+bls:Y872460	Strawberries with whipped cream	fresas con nata montada
+bls:Y872812	Lemon cream (with gelatine)	crema de limón con gelatina
 bls:Y874012	Vanilla pudding made from powder with milk 3.5 % fat, with fruit and artificial sweetener	natillas de vainilla con fruta y edulcorante
+bls:Y875140	Cream made from sour cream with rum	crema de nata agria con ron
+bls:Y877012	Cream pudding with fruit	pudín de nata con frutas
+bls:Y879812	Pineapple rings in frying batter (with milk) fried	aros de piña en rebozado de leche fritos
+bls:Y880040	Quark dish simple, with chocolate	postre de quark sencillo con chocolate
+bls:Y880050	Quark dish simple, with strawberries	postre de quark sencillo con fresas
+bls:Y880160	Quark cream	crema de quark
+bls:Y880250	Fruit quark	quark de frutas
+bls:Y880312	Quark dish with pineapple	postre de quark con piña
+bls:Y880453	Quark casserole with fruit sauce	cazuela de quark con salsa de frutas
+bls:Y880763	Quark doughnuts deep-fried	buñuelos de quark fritos en abundante aceite
+bls:Y880853	Quark casserole	cazuela de quark
+bls:Y881012	Quark dish with sour cherries	postre de quark con guindas
+bls:Y881153	Vanilla quark	quark de vainilla
+bls:Y881510	Quark dish with strawberries	postre de quark con fresas
+bls:Y881610	Quark dish with raspberries	postre de quark con frambuesas
+bls:Y881743	Quark dumplings filled with apricots	bolas de quark rellenas de albaricoque
+bls:Y881812	Small quark pancakes (with potatoes) fried	tortitas de quark y patata fritas
+bls:Y881842	Small quark-yeast pancakes fried	tortitas de quark de masa de levadura fritas
+bls:Y881943	Quark pudding	pudín de quark
+bls:Y882010	Quark dish with sweet cherries	postre de quark con cerezas
+bls:Y882150	Banana quark	quark de plátano
+bls:Y882310	Quark dish with peaches	postre de quark con melocotones
+bls:Y882410	Quark (< 10 % fat in dry matter) with jam	quark desnatado con mermelada
+bls:Y882510	Quark (min. 20 % fat in dry matter) with jam	quark semidesnatado con mermelada
+bls:Y883140	Quark-mocha cream	crema de quark y moca
+bls:Y883340	Quarkdish with sour cherries, chocolate and cherry brandy	vaso Selva Negra con quark y kirsch
+bls:Y884312	Green fruit jelly	postre de frutas verdes
+bls:Y885150	Strawberry yogurt with cream	yogur de fresa con nata
+bls:Y886240	Yogurt cream (with gelatine)	crema de yogur
+bls:Y886260	Lemon-yogurt cream (with gelatine)	crema de yogur y limón
+bls:Y888312	Sweet cherry compote sugar-reduced	compota de cerezas baja en azúcar
+bls:Y890342	"Kaiserschmarren" fried (thick pancake with milk 3.5 % fat, cut into pieces)	kaiserschmarrn con leche 3,5 %
+bls:Y890463	"Salzburger Nockerl" baked (sweet egg dish)	nockerl de Salzburgo al horno
+bls:Y890512	"Kaiserschmarren" fried (thick pancake with milk 1.5 % fat, cut into pieces)	kaiserschmarrn con leche 1,5 %
+bls:Y891062	Pancakes with milk 3.5 % fat, fried in butter	creps con leche 3,5 % fritas en mantequilla
+bls:Y891142	Pancakes with milk 3.5 % fat and blueberries, fried	creps con leche 3,5 % y arándanos fritas
+bls:Y891542	Omelette souffle fried, filled with jam	tortilla soufflé rellena de mermelada frita
+bls:Y892142	Small potato-yeast dumplings fried	bolas de patata de masa de levadura fritas en abundante aceite
+bls:Y893062	Honey pancakes fried	creps de miel fritas
+bls:Y893162	Crepes Suzette fried	creps suzette
+bls:Y894243	Omelette souffle fried	tortilla soufflé frita
+bls:Y896143	Cake souffle	soufflé de bizcocho al horno
+bls:Y8A1000	Zabaione (with alcohol)	zabaione
+bls:Y8A2000	Almond brittle	krokant de almendra
+bls:Y8A3000	Apple-banana-pear sauce unsweetened	puré de manzana, plátano y pera sin azúcar
+bls:Y8A3010	Apple-mango sauce unsweetened	puré de manzana y mango sin azúcar
+bls:Y8A3020	Apple compote	compota de manzana
+bls:Y8A3030	Dried fruit compote thickened with starch	compota de frutos secos espesada con almidón
+bls:Y8A3040	Hot raspberry sauce	salsa de frambuesa caliente
+bls:Y8A4000	Semolina pudding (as dessert) with raw strawberry sauce	gachas de sémola con salsa de fresa cruda
+bls:Y8A4010	Semolina pudding (as dessert) with caramel sauce	gachas de sémola con salsa de caramelo
+bls:Y8A4020	Semolina pudding (as dessert) with cherry sauce	gachas de sémola con salsa de cereza
 bls:Y8A4030	Semolina pudding (as dessert) with chocolate sauce	sémola con leche con salsa de chocolate
+bls:Y8A4040	Semolina pudding (as dessert) with vanilla sauce	gachas de sémola con salsa de vainilla
+bls:Y8A4050	Semolina pudding without egg	pudín de sémola sin huevo
+bls:Y8A4060	Semolina slices sweetened fried	rodajas de sémola dulces fritas
+bls:Y8A4070	Yogurt 1.5 % fat with strawberries	yogur 1,5 % con fresas
+bls:Y8A4080	Rice pudding with milk 3.5 % fat and red fruit jelly	arroz con leche 3,5 % y postre de frutos rojos
+bls:Y8A4090	Chocolate pudding	pudín de chocolate
+bls:Y8A4100	Chocolate pudding made from powder with milk 1.5 % fat	pudín de chocolate de sobre preparado con leche 1,5 %
+bls:Y8A4110	Chocolate pudding made from powder with soya drink	pudín de chocolate de sobre con bebida de soja
+bls:Y8A4120	Vanilla pudding (as dessert) with caramel sauce	pudín de vainilla con salsa de caramelo
+bls:Y8A4130	Vanilla pudding (as dessert) with chocolate sauce	pudín de vainilla con salsa de chocolate
+bls:Y8A4140	Vanilla pudding with egg	pudín de vainilla con huevo
+bls:Y8A4150	Vanilla pudding made from powder with milk 1.5 % fat	pudín de vainilla de sobre preparado con leche 1,5 %
+bls:Y8A4160	Vanilla pudding made from powder with soya drink	pudín de vainilla de sobre con bebida de soja
+bls:Y8A5000	Creme brulee	crema brulée
+bls:Y8A5010	Coffee cream (with gelatine)	crema de café con gelatina
+bls:Y8A5012	Vanilla pudding made from powder with milk 1.5 % fat, with fruit	pudín de vainilla de sobre preparado con leche 1,5 % y frutas
+bls:Y8A5020	Pannacotta	panna cotta
+bls:Y8A5030	Cream pudding with egg yolk	pudín de nata con yema
+bls:Y8A5040	Cream pudding (as dessert) with caramel sauce	pudín de nata con salsa de caramelo
+bls:Y8A5050	Cream pudding (as dessert) with cherry sauce	pudín de nata con salsa de cereza
+bls:Y8A5060	Cream pudding (as dessert) with chocolate sauce	pudín de nata con salsa de chocolate
+bls:Y8A6000	Quark-semolina casserole	cazuela de quark y sémola
+bls:Y8A7000	Pancakes with milk 3.5 % fat and apple, fried	creps con leche 3,5 % y manzana fritas
+bls:Y8A7010	Pancakes with milk 3.5 % fat and raisins, fried	creps con leche 3,5 % y pasas fritas
+bls:Y8A8000	Frying batter sweetened, with milk 3.5 % fat, raw	rebozado dulce con leche 3,5 % crudo
+bls:Y8A8010	Yeast dough sweetened, with milk 3.5 % fat, raw	masa de levadura dulce con leche 3,5 % cruda
+bls:Y8A8020	Yeast dough sweetened, with water, raw	masa de levadura dulce con agua cruda
+bls:Y8A8030	Shortcrust pastry sweetened, raw	masa quebrada dulce cruda
+bls:Y8B1012	Vanilla pudding made from powder with milk 3.5 % fat, with artificial sweetener	pudín de vainilla de sobre preparado con leche 3,5 % y edulcorante
+bls:Y8D5010	Tiramisu (without egg) with liqueur	tiramisú sin huevo con licor
+bls:Y8D6000	Tiramisu reduced-fat, with liqueur	tiramisú bajo en grasa con licor
+bls:Y8D7010	Tiramisu (without egg) with liqueur and fruit	tiramisú sin huevo con licor y frutas
+bls:Y8D8012	Cream pudding made from powder with milk 3.5 % fat and cream	pudín de nata de sobre con leche 3,5 % y nata
+bls:Y910030	Potato chips with ketchup	patatas fritas con ketchup
+bls:Y910060	Potato chips with mayonnaise	patatas fritas con mayonesa
+bls:Y910130	Baked potatoes with herb quark	patatas asadas con quark de hierbas
+bls:Y911060	Hamburger	hamburguesa
+bls:Y911160	Cheeseburger	hamburguesa con queso
+bls:Y911260	Double cheeseburger	hamburguesa doble con queso
+bls:Y911360	Double-decker burger	hamburguesa de doble piso
+bls:Y912030	Meatball with mustard	albóndiga con mostaza
+bls:Y912060	Meatball with roll and tomato ketchup	albóndiga con panecillo y ketchup
+bls:Y912130	Meatball with potato salad and mustard	albóndiga con ensalada de patatas y mostaza
+bls:Y912160	Meatball with potato chips and tomato ketchup	albóndiga con patatas fritas y ketchup
+bls:Y912260	Meatball with fried potatoes (of raw potatoes) and tomato ketchup	albóndiga con patatas salteadas y ketchup
+bls:Y913032	Bockwurst with mustard	bockwurst con mostaza
+bls:Y913062	Bockwurst with roll and mustard	bockwurst con panecillo y mostaza
+bls:Y913132	Bockwurst with potato salad and mustard	bockwurst con ensalada de patatas y mostaza
+bls:Y914032	Vienna sausage with mustard	salchichas de Viena con mostaza
+bls:Y914062	Vienna sausage with roll and mustard	salchichas de Viena con panecillo y mostaza
+bls:Y914132	Vienna sausage with potato salad and mustard	salchichas de Viena con ensalada de patatas y mostaza
+bls:Y915032	Knackwurst with mustard	knackwurst con mostaza
+bls:Y915062	Knackwurst with roll and mustard	knackwurst con panecillo y mostaza
+bls:Y915132	Knackwurst with potato salad and mustard	knackwurst con ensalada de patatas y mostaza
+bls:Y916032	Scalded sausage with mustard	salchicha escaldada con mostaza
+bls:Y916062	Scalded sausage with roll and mustard	salchicha escaldada con panecillo y mostaza
+bls:Y916132	Scalded sausage with potato salad and mustard	salchicha escaldada con ensalada de patatas y mostaza
+bls:Y921062	Doner kebab, flatbread filled with grilled veal and beef, salad and sauce	döner kebab de ternera y vacuno con lechuga y salsa
+bls:Y921162	Doner kebab, flatbread filled with grilled poultry, salad and sauce	döner kebab de ave con lechuga y salsa
+bls:Y942032	Bratwurst with mustard	bratwurst con mostaza
+bls:Y942062	Bratwurst with roll and mustard	bratwurst con panecillo y mostaza
+bls:Y942132	Bratwurst with potato salad and mustard	bratwurst con ensalada de patatas y mostaza
+bls:Y943032	Curried bratwurst with curry ketchup	currywurst con ketchup de curry
+bls:Y943062	Curried bratwurst with curry ketchup and roll	currywurst con ketchup de curry y panecillo
+bls:Y944062	Curried bratwurst with potato chips	currywurst con patatas fritas
+bls:Y945032	Rostbratwurst with mustard	rostbratwurst con mostaza
+bls:Y945062	Rostbratwurst with roll and mustard	rostbratwurst con panecillo y mostaza
+bls:Y945132	Rostbratwurst with potato salad and mustard	rostbratwurst con ensalada de patatas y mostaza
+bls:Y946062	Shashlik with roll and tomato ketchup	shashlik con panecillo y ketchup
+bls:Y946162	Shashlik with potato chips and tomato ketchup	shashlik con patatas fritas y ketchup
+bls:Y991060	Vanilla ice cream (with egg) with whipped cream	helado cremoso de vainilla con nata montada
+bls:Y991143	Vanilla cream ice cream	helado de nata de vainilla
+bls:Y991240	Vanilla parfait (semi-frozen)	parfait de vainilla
+bls:Y992060	Vanilla ice cream (with egg) with whipped cream and fruit (canned)	helado cremoso de vainilla con nata montada y frutas en conserva
+bls:Y993140	Vanilla cream ice cream with orange liqueur	helado de nata de vainilla con licor de naranja
+bls:Y993240	Chocolate cream ice cream	helado de nata de chocolate
+bls:Y993340	Mocha cream ice cream	helado de nata de moca
+bls:Y993440	Strawberry cream ice cream	helado de nata de fresa
+bls:Y993540	Vanilla cream ice cream with hot chocolate sauce	helado de nata de vainilla con salsa de chocolate caliente
+bls:Y995040	Vanilla cream ice cream with whipped cream, fresh strawberries and rum	helado de nata de vainilla con nata montada, fresas frescas y ron
+bls:Y995060	Vanilla ice cream (with egg) with hot raspberry sauce	helado cremoso de vainilla con salsa de frambuesa caliente
+bls:Y995140	Pear Helene	pera Helene
+bls:Y995240	Peach Melba	melocotón Melba
+bls:Y996140	Vanilla ice cream (with egg)	helado cremoso de vainilla
+bls:Y996240	Strawberry ice cream (with egg)	helado cremoso de fresa
+bls:Y996340	Chocolate ice cream (with egg)	helado cremoso de chocolate
+bls:Y996440	Lemon sherbet/sorbet	sorbete de limón
+bls:Y996510	Strawberry ice cream	helado de fresa
+bls:Y997043	Iced coffee	café con helado
+bls:Y999140	Neapolitan ice cream	helado Fürst-Pückler
+bls:Y999242	Meringue ice-cream cake	tarta de helado con merengue
+bls:Y9A1000	Chicken burger	hamburguesa de pollo
+bls:Y9A1010	Fish burger with saithe	hamburguesa de carbonero
+bls:Y9A1020	Gyros burger	hamburguesa de gyros
+bls:Y9A1030	Tofu burger vegan	hamburguesa de tofu vegana
+bls:Y9A1040	Doner vegetarian, flatbread filled with salad, sheep's milk cheese and sauce	döner vegetariano con lechuga, queso de oveja y salsa
+bls:Y9A1050	Falafel (small chickpea balls) deep-fried	faláfel frito en abundante aceite
+bls:Y9A1060	Falafel deep-fried, in flatbread, vegetarian filled	faláfel frito en abundante aceite en pan de pita vegetariano
+bls:Y9A1070	Lahmacun unfilled	lahmacun sin relleno
+bls:Y9A1080	Lahmacun filled with grilled poultry, salad and sauce	lahmacun con ave a la parrilla, lechuga y salsa
+bls:Y9A1090	Lahmacun filled with salad and sauce	lahmacun con lechuga y salsa
+bls:Y9A2000	Apricot ice cream	helado de albaricoque
+bls:Y9A2010	Raspberry ice cream	helado de frambuesa
+bls:Y9A2020	Hazelnut ice cream (with egg)	helado cremoso de avellana
+bls:Y9A2030	Tartufo di Pizzo (with nut and chocolate ice cream)	tartufo di Pizzo
+bls:Y9A2040	Tartufo, vanilla ice cream in chocolate coating (with alcohol)	tartufo de vainilla en cobertura de chocolate
+bls:Y9A2050	Vanilla ice cream (with egg) with whipped cream and fresh strawberries	helado cremoso de vainilla con nata montada y fresas frescas
 ciqual:10023	Shrimp fritters	buñuelos de gambas
 ciqual:11202	Indian-style sauce, tandoori or garam masala type, prepacked	salsa tandoori
 ciqual:11216	Soy sauce, with sugar(s), prepacked	salsa de soja azucarada
