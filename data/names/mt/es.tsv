@@ -10677,12 +10677,12 @@ cofid:15-738	Curry, black-eye bean, homemade	curry de carillas casero
 cofid:15-739	Curry, Bombay potato, homemade	curry de patatas Bombay casero
 cofid:15-740	Curry, cabbage, masala, homemade	curry de col masala casero
 cofid:15-741	Curry, cauliflower and potato, homemade	curry de coliflor con patatas casero
-cofid:15-742	Curry, chick pea dahl and spinach, with butter, homemade	curry de dal de garbanzos con espinacas con mantequilla casero
-cofid:15-743	Curry, chick pea dahl and spinach, with vegetable oil, homemade	curry de dal de garbanzos con espinacas con aceite vegetal casero
+cofid:15-742	Curry, chick pea dahl and spinach, with butter, homemade	curry de dal de garbanzos con espinacas y mantequilla casero
+cofid:15-743	Curry, chick pea dahl and spinach, with vegetable oil, homemade	curry de dal de garbanzos con espinacas y aceite vegetal casero
 cofid:15-744	Curry, chick pea, whole, Gujerati type, homemade	curry de garbanzos enteros gujarati casero
 cofid:15-745	Curry, chick pea, whole and potato, homemade	curry de garbanzos enteros con patatas casero
-cofid:15-746	Curry, chick pea, whole and tomato, Gujerati, with butter ghee, homemade	curry de garbanzos enteros con tomate gujarati con ghee casero
-cofid:15-747	Curry, chick pea, whole and tomato, Gujerati, with vegetable oil, homemade	curry de garbanzos enteros con tomate gujarati con aceite vegetal casero
+cofid:15-746	Curry, chick pea, whole and tomato, Gujerati, with butter ghee, homemade	curry gujarati de garbanzos enteros con tomate y ghee casero
+cofid:15-747	Curry, chick pea, whole and tomato, Gujerati, with vegetable oil, homemade	curry gujarati de garbanzos enteros con tomate y aceite vegetal casero
 cofid:15-748	Curry, chick pea, UK type, homemade	curry de garbanzos británico casero
 cofid:15-749	Curry, courgette and potato, homemade	curry de calabacín con patatas casero
 cofid:15-750	Curry, egg and potato, homemade	curry de huevo con patatas casero
@@ -10694,8 +10694,8 @@ cofid:15-755	Curry, green bean, masala, homemade	curry de judías verdes masala 
 cofid:15-756	Curry, karela, homemade	curry de karela casero
 cofid:15-757	Curry, lentil, red/masoor dahl and mung bean dahl, homemade	curry de lentejas rojas con dal de mung casero
 cofid:15-758	Curry, lentil, red/masoor dahl and tomato, Punjabi, homemade	curry de lentejas rojas con tomate punjabi casero
-cofid:15-759	Curry, lentil, red/masoor dahl and tomato, with butter, homemade	curry de lentejas rojas con tomate con mantequilla casero
-cofid:15-760	Curry, lentil, red/masoor dahl and tomato, with vegetable oil, homemade	curry de lentejas rojas con tomate con aceite vegetal casero
+cofid:15-759	Curry, lentil, red/masoor dahl and tomato, with butter, homemade	curry de lentejas rojas con tomate y mantequilla casero
+cofid:15-760	Curry, lentil, red/masoor dahl and tomato, with vegetable oil, homemade	curry de lentejas rojas con tomate y aceite vegetal casero
 cofid:15-761	Curry, lentil, red/masoor dahl and vegetable, UK type, homemade	curry de lentejas rojas con verduras británico casero
 cofid:15-762	Curry, lentil, red/masoor dahl, Punjabi, homemade	curry de lentejas rojas punjabi casero
 cofid:15-763	Curry, lentil, red/masoor dahl, with butter, homemade	curry de lentejas rojas con mantequilla casero
@@ -10801,8 +10801,8 @@ cofid:15-874	Salad, potato, with mayonnaise	ensalada de patata con mayonesa
 cofid:15-875	Salad, rice, brown	ensalada de arroz integral
 cofid:15-876	Salad, tomato and onion	ensalada de tomate y cebolla
 cofid:15-878	Salad, Waldorf	ensalada Waldorf
-cofid:15-879	Sauce, curry, onion, with butter, homemade	salsa de curry con cebolla con mantequilla casera
-cofid:15-880	Sauce, curry, onion, with vegetable oil, homemade	salsa de curry con cebolla con aceite vegetal casera
+cofid:15-879	Sauce, curry, onion, with butter, homemade	salsa de curry con cebolla y mantequilla casera
+cofid:15-880	Sauce, curry, onion, with vegetable oil, homemade	salsa de curry con cebolla y aceite vegetal casera
 cofid:15-881	Sauce, curry, tomato and onion, homemade	salsa de curry de tomate y cebolla casera
 cofid:15-882	Sauce, tomato and mushroom, homemade	salsa de tomate con champiñones casera
 cofid:15-883	Shepherd's pie, vegetable	pastel del pastor vegetal
@@ -10824,7 +10824,7 @@ cofid:16-009	Catfish, flesh only, steamed, weighed with bones	bagre al vapor con
 cofid:16-010	Salted fish, Chinese, bones removed, steamed	pescado salado chino sin espinas al vapor
 cofid:16-011	Chital, raw	chitala cruda
 cofid:16-015	Cod, flesh only, poached in milk, butter and salt added	bacalao fresco escalfado en leche con mantequilla y sal
-cofid:16-016	Cod, flesh only, poached in milk, butter and salt added, weighed with bones and skin	bacalao fresco escalfado en leche con mantequilla y sal con huesos y piel
+cofid:16-016	Cod, flesh only, poached in milk, butter and salt added, weighed with bones and skin	bacalao fresco escalfado en leche con mantequilla y sal, con huesos y piel
 cofid:16-035	Eel, conger, flesh only, raw	congrio crudo
 cofid:16-036	Eel, conger, flesh only, grilled	congrio a la parrilla
 cofid:16-037	Eel, conger, flesh only, grilled, weighed with bones and skin	congrio a la parrilla con huesos y piel
@@ -11465,10 +11465,10 @@ cofid:18-028	Beef, fore-rib/rib-roast, raw, lean	vacuno costillar delantero crud
 cofid:18-029	Beef, fore-rib/rib-roast, raw, lean and fat	vacuno costillar delantero crudo con grasa
 cofid:18-030	Beef, fore-rib/rib-roast, microwaved, lean	vacuno costillar delantero al microondas magro
 cofid:18-031	Beef, fore-rib/rib-roast, microwaved, lean and fat	vacuno costillar delantero al microondas con grasa
-cofid:18-032	Beef, fore-rib/rib-roast, microwaved, lean and fat, weighed with bone	vacuno costillar delantero al microondas con grasa con hueso
+cofid:18-032	Beef, fore-rib/rib-roast, microwaved, lean and fat, weighed with bone	vacuno costillar delantero al microondas con grasa y hueso
 cofid:18-033	Beef, fore-rib/rib-roast, roasted, lean	vacuno costillar delantero asado magro
 cofid:18-034	Beef, fore-rib/rib-roast, roasted, lean and fat	vacuno costillar delantero asado con grasa
-cofid:18-035	Beef, fore-rib/rib-roast, roasted, lean and fat, weighed with bone	vacuno costillar delantero asado con grasa con hueso
+cofid:18-035	Beef, fore-rib/rib-roast, roasted, lean and fat, weighed with bone	vacuno costillar delantero asado con grasa y hueso
 cofid:18-037	Beef, mince, microwaved	carne picada de vacuno al microondas
 cofid:18-039	Beef, mince, frozen, stewed	carne picada de vacuno congelada guisada
 cofid:18-042	Beef, mince patties, barbecued	hamburguesas de vacuno a la barbacoa
@@ -11524,15 +11524,15 @@ cofid:18-098	Lamb, fat, average, raw	grasa de cordero cruda
 cofid:18-099	Lamb, fat, raw, average, extra trimmed	grasa de cordero cruda extra limpia
 cofid:18-100	Lamb, fat, average, cooked	grasa de cordero cocinada
 cofid:18-101	Lamb, best end neck cutlets, raw, lean and fat	cordero chuletas de costillar crudas con grasa
-cofid:18-102	Lamb, best end neck cutlets, raw, lean and fat, weighed with bone	cordero chuletas de costillar crudas con grasa con hueso
+cofid:18-102	Lamb, best end neck cutlets, raw, lean and fat, weighed with bone	cordero chuletas de costillar crudas con grasa y hueso
 cofid:18-103	Lamb, best end neck cutlets, barbecued, lean	cordero chuletas de costillar a la barbacoa magras
 cofid:18-104	Lamb, best end neck cutlets, barbecued, lean, weighed with fat and bone	cordero chuletas de costillar a la barbacoa magras con grasa y hueso
 cofid:18-105	Lamb, best end neck cutlets, barbecued, lean and fat	cordero chuletas de costillar a la barbacoa con grasa
-cofid:18-106	Lamb, best end neck cutlets, barbecued, lean and fat, weighed with bone	cordero chuletas de costillar a la barbacoa con grasa con hueso
+cofid:18-106	Lamb, best end neck cutlets, barbecued, lean and fat, weighed with bone	cordero chuletas de costillar a la barbacoa con grasa y hueso
 cofid:18-107	Lamb, best end neck cutlets, grilled, lean	cordero chuletas de costillar a la parrilla magras
 cofid:18-108	Lamb, best end neck cutlets, grilled, lean, weighed with fat and bone	cordero chuletas de costillar a la parrilla magras con grasa y hueso
 cofid:18-109	Lamb, best end neck cutlets, grilled, lean and fat	cordero chuletas de costillar a la parrilla con grasa
-cofid:18-110	Lamb, best end neck cutlets, grilled, lean and fat, weighed with bone	cordero chuletas de costillar a la parrilla con grasa con hueso
+cofid:18-110	Lamb, best end neck cutlets, grilled, lean and fat, weighed with bone	cordero chuletas de costillar a la parrilla con grasa y hueso
 cofid:18-111	Lamb, breast, raw, lean	cordero pecho crudo magro
 cofid:18-112	Lamb, breast, raw, lean and fat	cordero pecho crudo con grasa
 cofid:18-113	Lamb, breast, roasted, lean	cordero pecho asado magro
@@ -11542,16 +11542,16 @@ cofid:18-116	Lamb, chump chops, raw, lean and fat, weighed with bone	chuletas de
 cofid:18-117	Lamb, chump chops, fried, lean	cordero chuletas de anca fritas magras
 cofid:18-118	Lamb, chump chops, fried, lean, weighed with fat and bone	cordero chuletas de anca fritas magras con grasa y hueso
 cofid:18-119	Lamb, chump chops, fried, lean and fat	cordero chuletas de anca fritas con grasa
-cofid:18-120	Lamb, chump chops, fried, lean and fat, weighed with bone	cordero chuletas de anca fritas con grasa con hueso
+cofid:18-120	Lamb, chump chops, fried, lean and fat, weighed with bone	cordero chuletas de anca fritas con grasa y hueso
 cofid:18-121	Lamb, chump steaks, raw, lean and fat	cordero filetes de anca crudos con grasa
 cofid:18-122	Lamb, chump steaks, fried, lean and fat	cordero filetes de anca fritos con grasa
 cofid:18-124	Lamb, leg chops, grilled, lean and fat	cordero chuletas de pierna a la parrilla con grasa
-cofid:18-125	Lamb, leg chops, grilled, lean and fat, weighed with bone	cordero chuletas de pierna a la parrilla con grasa con hueso
+cofid:18-125	Lamb, leg chops, grilled, lean and fat, weighed with bone	cordero chuletas de pierna a la parrilla con grasa y hueso
 cofid:18-126	Lamb, leg, half fillet, braised, lean	cordero media pierna sin hueso estofada magra
 cofid:18-127	Lamb, leg, half fillet, braised, lean and fat	cordero media pierna sin hueso estofada con grasa
 cofid:18-128	Lamb, leg, half knuckle, pot-roasted, lean	cordero media pierna parte del jarrete asada en olla magra
 cofid:18-129	Lamb, leg, half knuckle, pot-roasted, lean and fat	cordero media pierna parte del jarrete asada en olla con grasa
-cofid:18-130	Lamb, leg, half knuckle, pot-roasted, lean and fat, weighed with bone	cordero media pierna parte del jarrete asada en olla con grasa con hueso
+cofid:18-130	Lamb, leg, half knuckle, pot-roasted, lean and fat, weighed with bone	cordero media pierna parte del jarrete asada en olla con grasa y hueso
 cofid:18-131	Lamb, leg joint, roasted, lean	cordero pierna para asar asada magra
 cofid:18-132	Lamb, leg joint, roasted, lean and fat	cordero pierna para asar asada con grasa
 cofid:18-133	Lamb, leg steaks, grilled, lean	cordero filetes de pierna a la parrilla magros
@@ -11563,16 +11563,16 @@ cofid:18-142	Lamb, loin chops, grilled, lean, weighed with fat and bone	cordero 
 cofid:18-145	Lamb, loin chops, microwaved, lean	cordero chuletas de lomo al microondas magras
 cofid:18-146	Lamb, loin chops, microwaved, lean, weighed with fat and bone	cordero chuletas de lomo al microondas magras con grasa y hueso
 cofid:18-147	Lamb, loin chops, microwaved, lean and fat	cordero chuletas de lomo al microondas con grasa
-cofid:18-148	Lamb, loin chops, microwaved, lean and fat, weighed with bone	cordero chuletas de lomo al microondas con grasa con hueso
+cofid:18-148	Lamb, loin chops, microwaved, lean and fat, weighed with bone	cordero chuletas de lomo al microondas con grasa y hueso
 cofid:18-149	Lamb, loin chops, roasted, lean	cordero chuletas de lomo asadas magras
 cofid:18-150	Lamb, loin chops, roasted, lean, weighed with fat and bone	cordero chuletas de lomo asadas magras con grasa y hueso
 cofid:18-151	Lamb, loin chops, roasted, lean and fat	cordero chuletas de lomo asadas con grasa
-cofid:18-152	Lamb, loin chops, roasted, lean and fat, weighed with bone	cordero chuletas de lomo asadas con grasa con hueso
+cofid:18-152	Lamb, loin chops, roasted, lean and fat, weighed with bone	cordero chuletas de lomo asadas con grasa y hueso
 cofid:18-153	Lamb, loin joint, raw, lean and fat	cordero lomo para asar crudo con grasa
-cofid:18-154	Lamb, loin joint, raw, lean and fat, weighed with bone	cordero lomo para asar crudo con grasa con hueso
+cofid:18-154	Lamb, loin joint, raw, lean and fat, weighed with bone	cordero lomo para asar crudo con grasa y hueso
 cofid:18-155	Lamb, loin joint, roasted, lean	cordero lomo para asar asado magro
 cofid:18-156	Lamb, loin joint, roasted, lean and fat	cordero lomo para asar asado con grasa
-cofid:18-157	Lamb, loin joint, roasted, lean and fat, weighed with bone	cordero lomo para asar asado con grasa con hueso
+cofid:18-157	Lamb, loin joint, roasted, lean and fat, weighed with bone	cordero lomo para asar asado con grasa y hueso
 cofid:18-159	Lamb, mince, stewed	carne picada de cordero guisada
 cofid:18-160	Lamb, neck fillet, raw, lean	cordero filete de cuello crudo magro
 cofid:18-161	Lamb, neck fillet, raw, lean and fat	cordero filete de cuello crudo con grasa
@@ -11581,11 +11581,11 @@ cofid:18-163	Lamb, neck fillet, slices, grilled, lean and fat	cordero filete de 
 cofid:18-164	Lamb, neck fillet, strips, stir-fried  in corn oil, lean	cordero filete de cuello en tiras salteado en aceite de maíz magro
 cofid:18-165	Lamb, neck fillet, strips, stir-fried in corn oil, lean and fat	cordero filete de cuello en tiras salteado en aceite de maíz con grasa
 cofid:18-166	Lamb, rack of, raw, lean and fat	cordero costillar crudo con grasa
-cofid:18-167	Lamb, rack of, raw, lean and fat, weighed with bone	cordero costillar crudo con grasa con hueso
+cofid:18-167	Lamb, rack of, raw, lean and fat, weighed with bone	cordero costillar crudo con grasa y hueso
 cofid:18-168	Lamb, rack of, lean, roasted	cordero costillar asado magro
 cofid:18-169	Lamb, rack of, roasted, lean and fat	cordero costillar asado con grasa
 cofid:18-170	Lamb, shoulder, raw, lean and fat	paleta de cordero cruda con grasa
-cofid:18-171	Lamb, shoulder, raw, lean and fat, weighed with bone	cordero paleta cruda con grasa con hueso
+cofid:18-171	Lamb, shoulder, raw, lean and fat, weighed with bone	cordero paleta cruda con grasa y hueso
 cofid:18-172	Lamb, shoulder, diced, kebabs, grilled, lean and fat	cordero paleta en dados pinchos a la parrilla con grasa
 cofid:18-173	Lamb, shoulder, half bladeside, pot-roasted, lean	cordero media paleta lado omóplato asada en olla magra
 cofid:18-174	Lamb, shoulder, half bladeside, pot-roasted, lean and fat	cordero media paleta lado omóplato asada en olla con grasa
@@ -11595,23 +11595,23 @@ cofid:18-177	Lamb, shoulder joint, roasted, lean	cordero paleta para asar asada 
 cofid:18-178	Lamb, shoulder joint, roasted, lean and fat	cordero paleta para asar asada con grasa
 cofid:18-179	Lamb, shoulder, whole, roasted, lean	cordero paleta entera asada magra
 cofid:18-180	Lamb, shoulder, whole, roasted, lean and fat	cordero paleta entera asada con grasa
-cofid:18-181	Lamb, shoulder, whole, roasted, lean and fat, weighed with bone	cordero paleta entera asada con grasa con hueso
+cofid:18-181	Lamb, shoulder, whole, roasted, lean and fat, weighed with bone	cordero paleta entera asada con grasa y hueso
 cofid:18-182	Lamb, stewing, raw, lean and fat	cordero para guisar crudo con grasa
-cofid:18-183	Lamb, stewing, raw, lean and fat, weighed with bone	cordero para guisar crudo con grasa con hueso
+cofid:18-183	Lamb, stewing, raw, lean and fat, weighed with bone	cordero para guisar crudo con grasa y hueso
 cofid:18-184	Lamb, stewing, pressure cooked, lean	cordero para guisar en olla a presión magro
 cofid:18-185	Lamb, stewing, pressure cooked, lean and fat	cordero para guisar en olla a presión con grasa
 cofid:18-186	Lamb, stewing, stewed, lean	cordero para guisar guisado magro
 cofid:18-187	Lamb, stewing, stewed, lean and fat	cordero para guisar guisado con grasa
 cofid:18-188	Lamb, New Zealand, leg, whole, chilled, roasted, lean	cordero de Nueva Zelanda pierna entera refrigerada asada magra
 cofid:18-189	Lamb, New Zealand, leg, whole, chilled, roasted, lean and fat	cordero de Nueva Zelanda pierna entera refrigerada asada con grasa
-cofid:18-190	Lamb, New Zealand, leg, whole, frozen, raw, lean and fat, weighed with bone	cordero de Nueva Zelanda pierna entera congelada cruda con grasa con hueso
+cofid:18-190	Lamb, New Zealand, leg, whole, frozen, raw, lean and fat, weighed with bone	cordero de Nueva Zelanda pierna entera congelada cruda con grasa y hueso
 cofid:18-191	Lamb, New Zealand, leg, whole, frozen, roasted, lean	cordero de Nueva Zelanda pierna entera congelada asada magra
 cofid:18-192	Lamb, New Zealand, leg, whole, frozen, roasted, lean and fat	cordero de Nueva Zelanda pierna entera congelada asada con grasa
-cofid:18-193	Lamb, New Zealand, leg, whole, frozen, roasted, lean and fat, weighed with bone	cordero de Nueva Zelanda pierna entera congelada asada con grasa con hueso
+cofid:18-193	Lamb, New Zealand, leg, whole, frozen, roasted, lean and fat, weighed with bone	cordero de Nueva Zelanda pierna entera congelada asada con grasa y hueso
 cofid:18-194	Lamb, New Zealand, loin chops, frozen, grilled, lean	cordero de Nueva Zelanda chuletas de lomo congeladas a la parrilla magras
 cofid:18-195	Lamb, New Zealand, loin chops, frozen, grilled, lean, weighed with fat and bone	cordero de Nueva Zelanda chuletas de lomo congeladas a la parrilla magras con grasa y hueso
 cofid:18-196	Lamb, New Zealand, loin chops, frozen, grilled, lean and fat	cordero de Nueva Zelanda chuletas de lomo congeladas a la parrilla con grasa
-cofid:18-197	Lamb, New Zealand, loin chops, frozen, grilled, lean and fat, weighed with bone	cordero de Nueva Zelanda chuletas de lomo congeladas a la parrilla con grasa con hueso
+cofid:18-197	Lamb, New Zealand, loin chops, frozen, grilled, lean and fat, weighed with bone	cordero de Nueva Zelanda chuletas de lomo congeladas a la parrilla con grasa y hueso
 cofid:18-198	Lamb, New Zealand, mince, frozen, stewed	carne picada de cordero de Nueva Zelanda congelada guisada
 cofid:18-199	Lamb, New Zealand, shoulder, whole, frozen, roasted, lean	cordero de Nueva Zelanda paleta entera congelada asada magra
 cofid:18-200	Lamb, New Zealand, shoulder, whole, frozen, roasted, lean and fat	cordero de Nueva Zelanda paleta entera congelada asada con grasa
@@ -11620,41 +11620,41 @@ cofid:18-289	Chicken, dark meat, raw	pollo carne oscura cruda
 cofid:18-290	Chicken, light meat, raw	pollo carne blanca cruda
 cofid:18-292	Chicken, skin, raw	piel de pollo cruda
 cofid:18-293	Chicken, leg quarter, raw, meat and skin	cuarto trasero de pollo crudo con piel
-cofid:18-294	Chicken, leg quarter, raw, meat and skin, weighed with bone	cuarto trasero de pollo crudo con piel con hueso
+cofid:18-294	Chicken, leg quarter, raw, meat and skin, weighed with bone	cuarto trasero de pollo crudo con piel y hueso
 cofid:18-295	Chicken, wing quarter, raw, meat and skin	cuarto delantero de pollo crudo con piel
-cofid:18-296	Chicken, wing quarter, raw, meat and skin, weighed with bone	cuarto delantero de pollo crudo con piel con hueso
+cofid:18-296	Chicken, wing quarter, raw, meat and skin, weighed with bone	cuarto delantero de pollo crudo con piel y hueso
 cofid:18-297	Chicken, whole, raw, meat and skin	pollo entero crudo con piel
-cofid:18-298	Chicken, whole, raw, meat and skin, weighed with bone	pollo entero crudo con piel con hueso
+cofid:18-298	Chicken, whole, raw, meat and skin, weighed with bone	pollo entero crudo con piel y hueso
 cofid:18-299	Chicken, corn-fed, raw, dark meat only	pollo alimentado con maíz crudo carne oscura
 cofid:18-300	Chicken, corn-fed, raw, light meat only	pollo alimentado con maíz crudo carne blanca
 cofid:18-301	Chicken, corn-fed, raw, meat only	pollo alimentado con maíz crudo solo carne
 cofid:18-302	Chicken, corn-fed, raw, skin only	pollo alimentado con maíz crudo solo piel
-cofid:18-303	Chicken, whole, corn-fed, raw, meat and skin	pollo entero alimentado con maíz crudo con piel
-cofid:18-304	Chicken, whole, corn-fed, raw, meat and skin, weighed with bone	pollo entero alimentado con maíz crudo con piel con hueso
+cofid:18-303	Chicken, whole, corn-fed, raw, meat and skin	pollo entero alimentado con maíz, crudo, con piel
+cofid:18-304	Chicken, whole, corn-fed, raw, meat and skin, weighed with bone	pollo entero alimentado con maíz, crudo, con piel y hueso
 cofid:18-305	Poussin, raw, meat and skin	pollito crudo con piel
-cofid:18-306	Poussin, raw, meat and skin, weighed with bone	pollito crudo con piel con hueso
+cofid:18-306	Poussin, raw, meat and skin, weighed with bone	pollito crudo con piel y hueso
 cofid:18-307	Chicken, breast, casseroled, meat only	pollo pechuga estofada solo carne
 cofid:18-308	Chicken, breast, casseroled, meat and skin	pollo pechuga estofada con piel
-cofid:18-309	Chicken, breast, casseroled, meat and skin, weighed with bone	pollo pechuga estofada con piel con hueso
+cofid:18-309	Chicken, breast, casseroled, meat and skin, weighed with bone	pollo pechuga estofada con piel y hueso
 cofid:18-310	Chicken, drumsticks, casseroled, meat only	muslos de pollo estofados solo carne
 cofid:18-311	Chicken, drumsticks, casseroled, meat and skin	muslos de pollo estofados con piel
-cofid:18-312	Chicken, drumsticks, casseroled, meat and skin, weighed with bone	muslos de pollo estofados con piel con hueso
+cofid:18-312	Chicken, drumsticks, casseroled, meat and skin, weighed with bone	muslos de pollo estofados con piel y hueso
 cofid:18-313	Chicken, leg quarter, casseroled, meat only	cuarto trasero de pollo estofado solo carne
 cofid:18-314	Chicken, leg quarter, casseroled, meat and skin	cuarto trasero de pollo estofado con piel
-cofid:18-315	Chicken, leg quarter, casseroled, meat and skin, weighed with bone	cuarto trasero de pollo estofado con piel con hueso
+cofid:18-315	Chicken, leg quarter, casseroled, meat and skin, weighed with bone	cuarto trasero de pollo estofado con piel y hueso
 cofid:18-316	Chicken, skin, casseroled	piel de pollo estofada
 cofid:18-317	Chicken, thighs, casseroled, meat and skin	contramuslos de pollo estofados con piel
-cofid:18-318	Chicken, thighs, casseroled, meat and skin, weighed with bone	contramuslos de pollo estofados con piel con hueso
+cofid:18-318	Chicken, thighs, casseroled, meat and skin, weighed with bone	contramuslos de pollo estofados con piel y hueso
 cofid:18-319	Chicken, thighs, casseroled, meat only, diced	contramuslos de pollo estofados solo carne en dados
 cofid:18-320	Chicken, wing quarter, casseroled, meat only	cuarto delantero de pollo estofado solo carne
 cofid:18-321	Chicken, wing quarter, casseroled, meat and skin	cuarto delantero de pollo estofado con piel
-cofid:18-322	Chicken, wing quarter, casseroled, meat and skin, weighed with bone	cuarto delantero de pollo estofado con piel con hueso
+cofid:18-322	Chicken, wing quarter, casseroled, meat and skin, weighed with bone	cuarto delantero de pollo estofado con piel y hueso
 cofid:18-323	Chicken, breast, grilled without skin, meat only	pollo pechuga a la parrilla sin piel
 cofid:18-324	Chicken, breast, grilled with skin, meat only	pollo pechuga a la parrilla con piel solo carne
 cofid:18-325	Chicken, breast, grilled, meat and skin	pollo pechuga a la parrilla con piel
 cofid:18-326	Chicken, breast, strips, stir-fried in corn oil	pollo pechuga en tiras salteada en aceite de maíz
 cofid:18-327	Chicken, portions, not coated, deep-fried, meat and skin	porciones de pollo sin rebozar fritas con piel
-cofid:18-328	Chicken, portions, not coated, deep-fried, meat and skin, weighed with bone	porciones de pollo sin rebozar fritas con piel con hueso
+cofid:18-328	Chicken, portions, not coated, deep-fried, meat and skin, weighed with bone	porciones de pollo sin rebozar fritas con piel y hueso
 cofid:18-329	Chicken, dark meat, roasted	pollo carne oscura asada
 cofid:18-330	Chicken, light meat, roasted	pollo carne blanca asada
 cofid:18-331	Chicken, meat, average, roasted	pollo carne media asada
@@ -11662,18 +11662,18 @@ cofid:18-332	Chicken, skin, roasted/grilled, dry	piel de pollo asada seca
 cofid:18-333	Chicken, skin, roasted/grilled, moist	piel de pollo asada jugosa
 cofid:18-334	Chicken, drumsticks, roasted, meat only	muslos de pollo asados solo carne
 cofid:18-335	Chicken, drumsticks, roasted, meat and skin	muslos de pollo asados con piel
-cofid:18-336	Chicken, drumsticks, roasted, meat and skin, weighed with bone	muslos de pollo asados con piel con hueso
+cofid:18-336	Chicken, drumsticks, roasted, meat and skin, weighed with bone	muslos de pollo asados con piel y hueso
 cofid:18-337	Chicken, leg quarter, roasted, meat and skin	cuarto trasero de pollo asado con piel
-cofid:18-338	Chicken, leg quarter, roasted, meat and skin, weighed with bone	cuarto trasero de pollo asado con piel con hueso
+cofid:18-338	Chicken, leg quarter, roasted, meat and skin, weighed with bone	cuarto trasero de pollo asado con piel y hueso
 cofid:18-339	Chicken, wing quarter, roasted, meat and skin	cuarto delantero de pollo asado con piel
-cofid:18-340	Chicken, wing quarter, roasted, meat and skin, weighed with bone	cuarto delantero de pollo asado con piel con hueso
+cofid:18-340	Chicken, wing quarter, roasted, meat and skin, weighed with bone	cuarto delantero de pollo asado con piel y hueso
 cofid:18-341	Chicken, whole, roasted, meat and skin	pollo entero asado con piel
-cofid:18-342	Chicken, whole, roasted, meat and skin, weighed with bone	pollo entero asado con piel con hueso
+cofid:18-342	Chicken, whole, roasted, meat and skin, weighed with bone	pollo entero asado con piel y hueso
 cofid:18-343	Chicken, corn-fed, roasted, dark meat only	pollo alimentado con maíz asado carne oscura
 cofid:18-344	Chicken, corn-fed, roasted, light meat only	pollo alimentado con maíz asado carne blanca
 cofid:18-345	Chicken, corn-fed, roasted, meat only	pollo alimentado con maíz asado solo carne
-cofid:18-346	Chicken, whole, corn-fed, roasted, meat and skin	pollo entero alimentado con maíz asado con piel
-cofid:18-347	Chicken, whole, corn-fed, roasted, meat and skin, weighed with bone	pollo entero alimentado con maíz asado con piel con hueso
+cofid:18-346	Chicken, whole, corn-fed, roasted, meat and skin	pollo entero alimentado con maíz, asado, con piel
+cofid:18-347	Chicken, whole, corn-fed, roasted, meat and skin, weighed with bone	pollo entero alimentado con maíz, asado, con piel y hueso
 cofid:18-348	Turkey, dark meat, raw	pavo carne oscura cruda
 cofid:18-349	Turkey, light meat, raw	pavo carne blanca cruda
 cofid:18-350	Turkey, meat, average, raw	pavo carne media cruda
@@ -11692,9 +11692,9 @@ cofid:18-362	Turkey, skin, dry, roasted	piel de pavo asada seca
 cofid:18-363	Turkey, skin, moist, roasted	piel de pavo asada jugosa
 cofid:18-364	Turkey, drumsticks, roasted, meat only	muslos de pavo asados solo carne
 cofid:18-365	Turkey, drumsticks, roasted, meat and skin	muslos de pavo asados con piel
-cofid:18-366	Turkey, drumsticks, roasted, meat and skin, weighed with bone	muslos de pavo asados con piel con hueso
+cofid:18-366	Turkey, drumsticks, roasted, meat and skin, weighed with bone	muslos de pavo asados con piel y hueso
 cofid:18-367	Turkey, whole, roasted, meat and skin	pavo entero asado con piel
-cofid:18-368	Turkey, whole, roasted, meat and skin, weighed with bone	pavo entero asado con piel con hueso
+cofid:18-368	Turkey, whole, roasted, meat and skin, weighed with bone	pavo entero asado con piel y hueso
 cofid:18-371	Duck, raw, meat, fat and skin	pato crudo carne con grasa y piel
 cofid:18-372	Duck, roasted, meat only	pato asado solo carne
 cofid:18-373	Duck, roasted, meat only, weighed with fat, skin and bone	pato asado solo carne con grasa, piel y hueso
@@ -11741,8 +11741,8 @@ cofid:18-417	Liver, pig, raw	hígado de cerdo crudo
 cofid:18-418	Liver, pig, stewed	hígado de cerdo guisado
 cofid:18-419	Oxtail, raw	rabo de buey crudo
 cofid:18-420	Oxtail, meat only, stewed with added salt	rabo de buey guisado con sal solo carne
-cofid:18-421	Sweetbread, lamb, raw	molleja de ternera cruda
-cofid:18-422	Sweetbread, lamb, fried in corn oil	molleja de ternera frita en aceite de maíz
+cofid:18-421	Sweetbread, lamb, raw	mollejas de cordero crudas
+cofid:18-422	Sweetbread, lamb, fried in corn oil	mollejas de cordero fritas en aceite de maíz
 cofid:18-423	Tongue, lamb, raw	lengua de cordero cruda
 cofid:18-424	Tongue, ox, meat only, pickled, raw	lengua de buey en salmuera cruda
 cofid:18-425	Tongue, ox, meat only, pickled, stewed	lengua de buey en salmuera guisada
@@ -11774,8 +11774,8 @@ cofid:18-492	Heart, lamb, roasted	corazón de cordero asado
 cofid:18-493	Kidney, lamb, fried in corn oil	riñones de cordero fritos en aceite de maíz
 cofid:18-494	Liver, lamb, fried in corn oil	hígado de cordero frito en aceite de maíz
 cofid:18-495	Duck, raw, meat only, weighed with fat, skin and bone	pato crudo solo carne con grasa, piel y hueso
-cofid:18-496	Lamb, loin chops, grilled, lean and fat, weighed with bone	cordero chuletas de lomo a la parrilla con grasa con hueso
-cofid:18-497	Lamb, loin chops, raw, lean and fat, weighed with bone	cordero chuletas de lomo crudas con grasa con hueso
+cofid:18-496	Lamb, loin chops, grilled, lean and fat, weighed with bone	cordero chuletas de lomo a la parrilla con grasa y hueso
+cofid:18-497	Lamb, loin chops, raw, lean and fat, weighed with bone	cordero chuletas de lomo crudas con grasa y hueso
 cofid:18-499	Pork, spare ribs, Chinese barbecue, takeaway	costillas de cerdo a la barbacoa chinas para llevar
 cofid:18-500	Chicken portions, battered, deep fried, takeaway	porciones de pollo rebozadas fritas para llevar
 cofid:18-501	Chicken pieces, coated, takeaway	piezas de pollo empanadas para llevar
@@ -11792,7 +11792,7 @@ cofid:18-512	Pork, leg joint, raw, lean	cerdo pierna para asar cruda magra
 cofid:18-513	Pork, leg joint, raw, lean and fat, trimmed	cerdo pierna para asar cruda limpia con grasa
 cofid:18-514	Pork, leg joint, raw, lean and fat	cerdo pierna para asar cruda con grasa
 cofid:18-515	Pork, leg joint, roasted, lean	cerdo pierna para asar asada magra
-cofid:18-516	Pork, leg joint, roasted, lean and fat, trimmed	cerdo pierна para asar asada limpia con grasa
+cofid:18-516	Pork, leg joint, roasted, lean and fat, trimmed	cerdo pierna para asar asada limpia con grasa
 cofid:18-517	Pork, leg joint, roasted, lean and fat	cerdo pierna para asar asada con grasa
 cofid:18-518	Pork, loin medallions, raw, lean	cerdo medallones de lomo crudos magros
 cofid:18-519	Pork, loin medallions, raw, lean and fat	cerdo medallones de lomo crudos con grasa
@@ -11813,28 +11813,28 @@ cofid:18-533	Pork, fillet strips, stir-fried in rapeseed oil, lean	cerdo solomil
 cofid:18-534	Pork, loin chops, grilled, lean	cerdo chuletas de lomo a la parrilla magras
 cofid:18-535	Pork, loin chops, grilled, lean and fat	cerdo chuletas de lomo a la parrilla con grasa
 cofid:18-536	Pork, loin chops, raw, lean and fat	cerdo chuletas de lomo crudas con grasa
-cofid:18-537	Pork, loin chops, raw, lean and fat, weighed with bone	cerdo chuletas de lomo crudas con grasa con hueso
+cofid:18-537	Pork, loin chops, raw, lean and fat, weighed with bone	cerdo chuletas de lomo crudas con grasa y hueso
 cofid:18-538	Pork, loin steaks, fried in rapeseed oil, lean	cerdo filetes de lomo fritos en aceite de colza magros
 cofid:18-539	Pork, loin steaks, fried in rapeseed oil, lean and fat	cerdo filetes de lomo fritos en aceite de colza con grasa
 cofid:18-540	Pork, diced, kebabs, grilled, lean	cerdo en dados pinchos a la parrilla magro
 cofid:18-541	Pork, diced, kebabs, grilled, lean and fat	cerdo en dados pinchos a la parrilla con grasa
 cofid:18-542	Pork, shoulder chops (collar), braised, lean	cerdo chuletas de cuello estofadas magras
 cofid:18-543	Pork, shoulder chops (collar), braised, lean and fat	cerdo chuletas de cuello estofadas con grasa
-cofid:18-544	Pork, shoulder chops (collar), braised, lean and fat, weighed with bone	cerdo chuletas de cuello estofadas con grasa con hueso
+cofid:18-544	Pork, shoulder chops (collar), braised, lean and fat, weighed with bone	cerdo chuletas de cuello estofadas con grasa y hueso
 cofid:18-545	Pork, shoulder chops (collar), raw, lean and fat	cerdo chuletas de cuello crudas con grasa
-cofid:18-546	Pork, shoulder chops (collar), raw, lean and fat, weighed with bone	cerdo chuletas de cuello crudas con grasa con hueso
+cofid:18-546	Pork, shoulder chops (collar), raw, lean and fat, weighed with bone	cerdo chuletas de cuello crudas con grasa y hueso
 cofid:18-547	Pork, shoulder joint (collar), pot-roasted, lean	cerdo cuello para asar asado en olla magro
 cofid:18-548	Pork, shoulder joint (collar), pot-roasted, lean and fat	paleta de cerdo estofada
 cofid:18-549	Pork, shoulder joint (collar), raw, lean and fat	cerdo cuello para asar crudo con grasa
-cofid:18-550	Pork, shoulder joint (collar), raw, lean and fat, weighed with bone	cerdo cuello para asar crudo con grasa con hueso
+cofid:18-550	Pork, shoulder joint (collar), raw, lean and fat, weighed with bone	cerdo cuello para asar crudo con grasa y hueso
 cofid:18-551	Pork, shoulder steaks (collar), grilled, lean and fat	cerdo filetes de cuello a la parrilla con grasa
-cofid:18-552	Pork, shoulder steaks (collar), grilled, lean and fat, weighed with bone	cerdo filetes de cuello a la parrilla con grasa con hueso
-cofid:18-553	Pork, shoulder steaks (collar), raw, lean and fat, weighed with bone	cerdo filetes de cuello crudos con grasa con hueso
+cofid:18-552	Pork, shoulder steaks (collar), grilled, lean and fat, weighed with bone	cerdo filetes de cuello a la parrilla con grasa y hueso
+cofid:18-553	Pork, shoulder steaks (collar), raw, lean and fat, weighed with bone	cerdo filetes de cuello crudos con grasa y hueso
 cofid:18-554	Pork, shoulder steaks (collar), raw, lean and fat	cerdo filetes de cuello crudos con grasa
 cofid:18-555	Pork, belly joint, roasted, lean and fat	cerdo panceta para asar asada con grasa
 cofid:18-556	Pork, belly joint/slices, grilled, lean and fat	cerdo panceta a la parrilla con grasa
 cofid:18-557	Pork, belly joint/slices, raw, lean and fat	cerdo panceta cruda con grasa
-cofid:18-558	Pork, belly joint/slices, raw, lean and fat, weighed with bone	cerdo panceta cruda con grasa con hueso
+cofid:18-558	Pork, belly joint/slices, raw, lean and fat, weighed with bone	cerdo panceta cruda con grasa y hueso
 cofid:18-559	Pork, fat, average, cooked	grasa de cerdo cocinada
 cofid:18-600	Pork, fat, average, raw	grasa de cerdo cruda
 cofid:18-601	Pork, hand, shoulder joint, raw, lean	cerdo brazuelo para asar crudo magro
@@ -11847,7 +11847,7 @@ cofid:18-607	Pork, mince, stewed	carne picada de cerdo guisada
 cofid:18-608	Pork, lean, average, raw	cerdo magro medio crudo
 cofid:18-609	Pork, spare ribs, raw, lean and fat	costillas de cerdo crudas con grasa
 cofid:18-610	Pork, loin chops, roasted, lean and fat	cerdo chuletas de lomo asadas con grasa
-cofid:18-611	Pork, loin chops, roasted, lean and fat, weighed with bone	cerdo chuletas de lomo asadas con grasa con hueso
+cofid:18-611	Pork, loin chops, roasted, lean and fat, weighed with bone	cerdo chuletas de lomo asadas con grasa y hueso
 cofid:18-612	Pork, loin steaks, stewed, lean and fat	cerdo filetes de lomo guisados con grasa
 cofid:18-613	Pork, loin chops, roasted, lean	cerdo chuletas de lomo asadas magras
 cofid:19-009	Bacon rashers, back, reduced salt, grilled	lonchas de beicon de lomo bajas en sal a la parrilla
@@ -11945,7 +11945,7 @@ cofid:19-523	Lasagne, retail, reheated	lasaña comprada recalentada
 cofid:19-524	Spaghetti bolognese, retail, reheated, with spaghetti	espaguetis a la boloñesa comprados recalentados
 cofid:19-525	Shish kebab in pitta bread with salad	pincho de cordero en pan de pita con ensalada
 cofid:19-526	Doner kebab in pitta bread with salad	kebab döner en pan de pita con ensalada
-cofid:19-527	Chilli con carne, retail, reheated, with rice	chili con carne comprado recalentado con arroz
+cofid:19-527	Chilli con carne, retail, reheated, with rice	chili con carne y arroz comprado recalentado
 cofid:19-528	Curry, chicken, average, retail, reheated with rice	curry de pollo medio comprado recalentado con arroz
 cofid:19-529	Curry, beef, retail, reheated, with rice	curry de vacuno comprado recalentado con arroz
 cofid:19-530	Beef, stir-fried with green peppers, homemade	vacuno salteado con pimientos verdes casero
@@ -12056,7 +12056,7 @@ cofid:19-648	Bacon rashers, middle, fried in corn oil	lonchas de beicon medio fr
 cofid:19-649	Bacon rashers, middle, raw	lonchas de beicon medio crudas
 cofid:19-650	Bacon, fat only, average, raw	grasa de beicon cruda
 cofid:19-651	Burger, beef, 62-85% beef, raw	hamburguesa de vacuno 62-85 % cruda
-cofid:19-652	Chicken wings, marinated, meat and skin, barbecued, weighed with bone	alitas de pollo marinadas con piel a la barbacoa con hueso
+cofid:19-652	Chicken wings, marinated, meat and skin, barbecued, weighed with bone	alitas de pollo marinadas a la barbacoa con piel y hueso
 cofid:19-653	Sausages, beef, fried in vegetable oil	salchichas de vacuno fritas en aceite vegetal
 cofid:19-654	Sausages, pork, frozen, fried in vegetable oil	salchichas de cerdo congeladas fritas en aceite vegetal
 cofid:19-655	Sausages, pork, frozen, grilled	salchichas de cerdo congeladas a la parrilla
@@ -13784,7 +13784,7 @@ fdc:169196	Pork, fresh, loin, blade (chops), boneless, separable lean only, bone
 fdc:169197	Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, broiled	costillas de cerdo camperas magras sin hueso a la parrilla
 fdc:169198	Pork, fresh, loin, blade (roasts), boneless, separable lean and fat, cooked, roasted	asado de aguja de cerdo sin hueso con grasa asado
 fdc:169199	Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, broiled	costillas de cerdo camperas con grasa sin hueso a la parrilla
-fdc:169200	Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, broiled	costillas de cerdo camperas con grasa con hueso a la parrilla
+fdc:169200	Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, broiled	costillas de cerdo camperas con grasa y hueso a la parrilla
 fdc:169201	Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, roasted	costillas de cerdo camperas con grasa sin hueso asadas
 fdc:169202	Amaranth leaves, cooked, boiled, drained, without salt	hojas de amaranto cocidas sin sal
 fdc:169203	Arrowhead, raw	saeta cruda
