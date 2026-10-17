@@ -6424,13 +6424,206 @@ fdc:173708	Fish, tuna, light, canned in oil, drained solids	atún en conserva en
 fdc:173709	Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)	atún en conserva en agua escurrido
 fdc:173710	Fish, turbot, european, raw	rodaballo crudo
 fdc:173711	Fish, whitefish, mixed species, raw	pescado blanco crudo
-fdc:173726	Fish, pollock, Alaska, cooked	colín de Alaska cocido
-fdc:173763	Vitasoy USA, Organic Nasoya Firm Tofu	Nasoya tofu firme
-fdc:173771	SILK Light Plain, soymilk	Silk leche de soja ligera
-fdc:173787	HOUSE FOODS Premium Soft Tofu	House Foods tofu suave
-fdc:173799	Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, with salt	garbanzos cocidos
-fdc:173855	Game meat, deer, raw	carne de venado cruda
-fdc:173875	Frankfurter, meat and poultry, unheated	salchicha tipo frankfurt
+fdc:173712	Fish, whitefish, mixed species, smoked	pescado blanco ahumado
+fdc:173713	Fish, whiting, mixed species, raw	pescadilla cruda
+fdc:173714	Fish, catfish, channel, wild, cooked, dry heat	siluro salvaje asado
+fdc:173715	Fish, salmon, coho, farmed, raw	salmón coho de piscifactoría crudo
+fdc:173716	Fish, salmon, coho, farmed, cooked, dry heat	salmón coho de piscifactoría asado
+fdc:173717	Fish, trout, rainbow, farmed, raw	trucha arcoíris de piscifactoría cruda
+fdc:173718	Fish, trout, rainbow, farmed, cooked, dry heat	trucha arcoíris de piscifactoría asada
+fdc:173719	Fish, salmon, coho, wild, cooked, dry heat	salmón coho salvaje asado
+fdc:173720	Mollusks, conch, baked or broiled	caracola asada
+fdc:173721	Salmon nuggets, breaded, frozen, heated	nuggets de salmón empanados calentados
+fdc:173722	Salmon nuggets, cooked as purchased, unheated	nuggets de salmón empanados sin calentar
+fdc:173723	Salmon, sockeye, canned, drained solids, without skin and bones	salmón rojo en conserva escurrido sin piel ni espinas
+fdc:173724	Fish, Salmon, pink, canned, drained solids, without skin and bones	salmón rosado en conserva escurrido sin piel ni espinas
+fdc:173725	Fish, pollock, Alaska, raw	abadejo crudo
+fdc:173726	Fish, pollock, Alaska, cooked	abadejo cocinado
+fdc:173727	Beans, adzuki, mature seeds, raw	judías adzuki crudas
+fdc:173728	Beans, adzuki, mature seeds, cooked, boiled, without salt	judías adzuki cocidas sin sal
+fdc:173729	Beans, adzuki, mature seeds, canned, sweetened	judías adzuki en conserva azucaradas
+fdc:173730	Yokan, prepared from adzuki beans and sugar	yokan de judías adzuki
+fdc:173731	Beans, baked, home prepared	judías al horno caseras
+fdc:173732	Beans, baked, canned, with pork and sweet sauce	judías al horno en conserva con cerdo en salsa dulce
+fdc:173733	Beans, baked, canned, with pork and tomato sauce	judías al horno en conserva con cerdo en salsa de tomate
+fdc:173734	Beans, black, mature seeds, raw	judías negras crudas
+fdc:173735	Beans, black, mature seeds, cooked, boiled, without salt	judías negras cocidas sin sal
+fdc:173736	Beans, cranberry (roman), mature seeds, cooked, boiled, without salt	judías pintas cocidas sin sal
+fdc:173737	Beans, cranberry (roman), mature seeds, canned	judías pintas en conserva
+fdc:173738	Beans, french, mature seeds, raw	judías francesas crudas
+fdc:173739	Beans, french, mature seeds, cooked, boiled, without salt	judías francesas cocidas sin sal
+fdc:173740	Beans, kidney, all types, mature seeds, cooked, boiled, without salt	judías rojas cocidas sin sal
+fdc:173741	Beans, kidney, all types, mature seeds, canned	judías rojas en conserva
+fdc:173742	Beans, kidney, california red, mature seeds, raw	judías rojas de California crudas
+fdc:173743	Beans, kidney, california red, mature seeds, cooked, boiled, without salt	judías rojas de California cocidas sin sal
+fdc:173744	Beans, kidney, red, mature seeds, raw	judías rojas crudas
+fdc:173745	Beans, navy, mature seeds, raw	alubias blancas crudas
+fdc:173746	Beans, navy, mature seeds, cooked, boiled, without salt	alubias blancas cocidas sin sal
+fdc:173747	Beans, navy, mature seeds, canned	alubias blancas en conserva
+fdc:173748	Beans, pink, mature seeds, raw	judías rosas crudas
+fdc:173749	Beans, small white, mature seeds, raw	alubias blancas pequeñas crudas
+fdc:173750	Beans, small white, mature seeds, cooked, boiled, without salt	alubias blancas pequeñas cocidas sin sal
+fdc:173751	Beans, yellow, mature seeds, raw	judías amarillas crudas
+fdc:173752	Beans, yellow, mature seeds, cooked, boiled, without salt	judías amarillas cocidas sin sal
+fdc:173753	Broadbeans (fava beans), mature seeds, cooked, boiled, without salt	habas cocidas sin sal
+fdc:173754	Broadbeans (fava beans), mature seeds, canned	habas en conserva
+fdc:173755	Carob flour	harina de algarroba
+fdc:173756	Chickpeas (garbanzo beans, bengal gram), mature seeds, raw	garbanzos crudos
+fdc:173757	Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt	garbanzos cocidos sin sal
+fdc:173758	Cowpeas, common (blackeyes, crowder, southern), mature seeds, raw	caupí crudo
+fdc:173759	Cowpeas, common (blackeyes, crowder, southern), mature seeds, cooked, boiled, without salt	caupí cocido sin sal
+fdc:173760	Cowpeas, common (blackeyes, crowder, southern), mature seeds, canned, plain	caupí en conserva
+fdc:173761	Cowpeas, common (blackeyes, crowder, southern), mature seeds, canned with pork	caupí en conserva con cerdo
+fdc:173762	Vitasoy USA, Organic Nasoya Extra Firm Tofu	tofu extra firme ecológico Nasoya
+fdc:173763	Vitasoy USA, Organic Nasoya Firm Tofu	tofu firme ecológico Nasoya
+fdc:173764	Vitasoy USA, Organic Nasoya Silken Tofu	tofu sedoso ecológico Nasoya
+fdc:173765	Soymilk (All flavors), enhanced	bebida de soja enriquecida
+fdc:173766	Soymilk, original and vanilla, light, with added calcium, vitamins A and D	bebida de soja ligera con calcio y vitaminas
+fdc:173767	Soymilk, chocolate and other flavors, light, with added calcium, vitamins A and D	bebida de soja de chocolate ligera con calcio y vitaminas
+fdc:173768	Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D	bebida de soja ligera sin azúcar con calcio y vitaminas
+fdc:173769	Soymilk (All flavors), lowfat, with added calcium, vitamins A and D	bebida de soja baja en grasa con calcio y vitaminas
+fdc:173770	SILK Chocolate, soymilk	bebida de soja de chocolate Silk
+fdc:173771	SILK Light Plain, soymilk	bebida de soja ligera Silk
+fdc:173772	SILK Light Vanilla, soymilk	bebida de soja de vainilla ligera Silk
+fdc:173773	SILK Light Chocolate, soymilk	bebida de soja de chocolate ligera Silk
+fdc:173774	SILK Very Vanilla, soymilk	bebida de soja de vainilla Silk
+fdc:173775	SILK Nog, soymilk	bebida de soja eggnog Silk
+fdc:173776	SILK Chai, soymilk	bebida de soja chai Silk
+fdc:173777	SILK Mocha, soymilk	bebida de soja moka Silk
+fdc:173778	SILK Raspberry soy yogurt	yogur de soja de frambuesa Silk
+fdc:173779	SILK Peach soy yogurt	yogur de soja de melocotón Silk
+fdc:173780	SILK Black Cherry soy yogurt	yogur de soja de cereza Silk
+fdc:173781	SILK Blueberry soy yogurt	yogur de soja de arándanos Silk
+fdc:173782	SILK Hazelnut Creamer	crema de soja de avellana Silk
+fdc:173783	Vitasoy USA Organic Nasoya, Soft Tofu	tofu blando ecológico Nasoya
+fdc:173784	Vitasoy USA Nasoya, Lite Silken Tofu	tofu sedoso ligero Nasoya
+fdc:173785	Vitasoy USA Organic Nasoya, Tofu Plus Extra Firm	tofu extra firme ecológico Nasoya Plus
+fdc:173786	Vitasoy USA Azumaya, Silken Tofu	tofu sedoso Azumaya
+fdc:173787	HOUSE FOODS Premium Soft Tofu	tofu blando House Foods
+fdc:173788	HOUSE FOODS Premium Firm Tofu	tofu firme House Foods
+fdc:173789	Beans, adzuki, mature seed, cooked, boiled, with salt	judías adzuki cocidas con sal
+fdc:173790	Beans, great northern, mature seeds, cooked, boiled, with salt	alubias blancas grandes cocidas con sal
+fdc:173791	Beans, great northern, mature seeds, canned, low sodium	alubias blancas grandes en conserva bajas en sal
+fdc:173792	Beans, kidney, all types, mature seeds, cooked, boiled, with salt	judías rojas cocidas con sal
+fdc:173793	Beans, kidney, california red, mature seeds, cooked, boiled, with salt	judías rojas de California cocidas con sal
+fdc:173794	Beans, navy, mature seeds, cooked, boiled, with salt	alubias blancas cocidas con sal
+fdc:173795	Beans, pink, mature seeds, cooked, boiled, with salt	judías rosas cocidas con sal
+fdc:173796	Beans, pinto, mature seeds, cooked, boiled, with salt	judías pintas cocidas con sal
+fdc:173797	Beans, pinto, mature seeds, canned, drained solids, rinsed in tap water	judías pintas en conserva escurridas enjuagadas
+fdc:173798	Broadbeans (fava beans), mature seeds, cooked, boiled, with salt	habas cocidas con sal
+fdc:173799	Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, with salt	garbanzos cocidos con sal
+fdc:173800	Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids	garbanzos en conserva escurridos
+fdc:173801	Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained, rinsed in tap water	garbanzos en conserva escurridos enjuagados
+fdc:173802	Lima beans, large, mature seeds, cooked, boiled, with salt	judías de lima grandes cocidas con sal
+fdc:173803	Lima beans, thin seeded (baby), mature seeds, cooked, boiled, with salt	judías de lima pequeñas cocidas con sal
+fdc:173804	Lupins, mature seeds, cooked, boiled, with salt	altramuces cocidos con sal
+fdc:173805	Mothbeans, mature seeds, cooked, boiled, with salt	judías moth cocidas con sal
+fdc:173806	Peanuts, all types, dry-roasted, without salt	cacahuetes tostados sin sal
+fdc:173807	Peanuts, spanish, oil-roasted, without salt	cacahuetes españoles fritos sin sal
+fdc:173808	Peanuts, valencia, oil-roasted, without salt	cacahuetes valencia fritos sin sal
+fdc:173809	Peanuts, virginia, oil-roasted, without salt	cacahuetes virginia fritos sin sal
+fdc:173810	Lamb, New Zealand, imported, loin chop, separable lean only, raw	cordero neozelandés chuleta de lomo magra cruda
+fdc:173811	Lamb, New Zealand, imported, frozen, loin, separable lean only, cooked, broiled	cordero neozelandés congelado lomo magro a la parrilla
+fdc:173812	Lamb, New Zealand, imported, rack - partly frenched, separable lean and fat, raw	cordero neozelandés costillar con grasa crudo
+fdc:173813	Lamb, New Zealand, imported, rack - partly frenched, separable lean and fat, cooked, fast roasted	cordero neozelandés costillar con grasa asado rápido
+fdc:173814	Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean only, cooked, braised	cordero neozelandés congelado paletilla magra estofada
+fdc:173815	Veal, composite of trimmed retail cuts, separable lean and fat, raw	ternera mixta con grasa cruda
+fdc:173816	Veal, composite of trimmed retail cuts, separable lean and fat, cooked	ternera mixta con grasa cocinada
+fdc:173817	Veal, composite of trimmed retail cuts, separable lean only, raw	ternera mixta magra cruda
+fdc:173818	Veal, leg (top round), separable lean and fat, cooked, braised	ternera pierna con grasa estofada
+fdc:173819	Veal, leg (top round), separable lean and fat, cooked, pan-fried, breaded	ternera pierna con grasa frita empanada
+fdc:173820	Veal, leg (top round), separable lean and fat, cooked, pan-fried, not breaded	ternera pierna con grasa frita sin empanar
+fdc:173821	Veal, leg (top round), separable lean and fat, cooked, roasted	ternera pierna con grasa asada
+fdc:173822	Veal, leg (top round), separable lean only, cooked, roasted	ternera pierna magra asada
+fdc:173823	Veal, loin, separable lean and fat, raw	ternera lomo con grasa crudo
+fdc:173824	Veal, loin, separable lean and fat, cooked, braised	ternera lomo con grasa estofado
+fdc:173825	Veal, loin, separable lean and fat, cooked, roasted	ternera lomo con grasa asado
+fdc:173826	Veal, loin, separable lean only, raw	ternera lomo magro crudo
+fdc:173827	Veal, rib, separable lean and fat, cooked, roasted	ternera costillar con grasa asado
+fdc:173828	Veal, rib, separable lean only, raw	ternera costillar magro crudo
+fdc:173829	Veal, rib, separable lean only, cooked, braised	ternera costillar magro estofado
+fdc:173830	Veal, rib, separable lean only, cooked, roasted	ternera costillar magro asado
+fdc:173831	Veal, shoulder, whole (arm and blade), separable lean only, cooked, braised	ternera paletilla magra estofada
+fdc:173832	Veal, shoulder, whole (arm and blade), separable lean only, cooked, roasted	ternera paletilla magra asada
+fdc:173833	Veal, shoulder, arm, separable lean and fat, raw	ternera brazuelo con grasa crudo
+fdc:173834	Veal, shoulder, arm, separable lean and fat, cooked, braised	ternera brazuelo con grasa estofado
+fdc:173835	Veal, shoulder, blade chop, separable lean and fat, raw	ternera paletilla chuleta con grasa cruda
+fdc:173836	Veal, shoulder, blade, separable lean and fat, cooked, braised	ternera paletilla con grasa estofada
+fdc:173837	Veal, shoulder, blade, separable lean and fat, cooked, roasted	ternera paletilla con grasa asada
+fdc:173838	Veal, shoulder, blade chop, separable lean only, raw	ternera paletilla chuleta magra cruda
+fdc:173839	Veal, shoulder, blade, separable lean only, cooked, braised	ternera paletilla magra estofada
+fdc:173840	Veal, sirloin, separable lean only, raw	ternera lomo bajo magro crudo
+fdc:173841	Veal, sirloin, separable lean only, cooked, braised	ternera lomo bajo magro estofado
+fdc:173842	Veal, sirloin, separable lean only, cooked, roasted	ternera lomo bajo magro asado
+fdc:173843	Veal, cubed for stew (leg and shoulder), separable lean only, raw	ternera en dados para guisar magra cruda
+fdc:173844	Game meat, antelope, cooked, roasted	carne de antílope asada
+fdc:173845	Game meat, bear, raw	carne de oso cruda
+fdc:173846	Game meat, bear, cooked, simmered	carne de oso cocida
+fdc:173847	Bison, ground, grass-fed, cooked	carne picada de bisonte de pasto cocinada
+fdc:173848	Game meat, beefalo, composite of cuts, cooked, roasted	carne de bífalo asada
+fdc:173849	Veal, Australian, separable fat, raw	ternera australiana grasa cruda
+fdc:173850	Veal, Australian, rib, rib roast, separable lean and fat, raw	ternera australiana asado de costillar con grasa crudo
+fdc:173851	Game meat, bison, separable lean only, raw	carne de bisonte magra cruda
+fdc:173852	Game meat, bison, separable lean only, cooked, roasted	carne de bisonte magra asada
+fdc:173853	Game meat, caribou, raw	carne de caribú cruda
+fdc:173854	Game meat, caribou, cooked, roasted	carne de caribú asada
+fdc:173855	Game meat, deer, raw	carne de ciervo cruda
+fdc:173856	Bologna, pork	mortadela de cerdo
+fdc:173857	Bologna, turkey	mortadela de pavo
+fdc:173858	Chicken spread	paté de pollo para untar
+fdc:173859	Sausage, pork, chorizo, link or ground, raw	chorizo de cerdo crudo
+fdc:173860	Corned beef loaf, jellied	fiambre de corned beef en gelatina
+fdc:173861	Dutch brand loaf, chicken, pork and beef	fiambre holandés de pollo cerdo y vacuno
+fdc:173862	Frankfurter, beef, unheated	salchichas de vacuno
+fdc:173863	Ham, sliced, pre-packaged, deli meat (96%fat free, water added)	jamón en lonchas casi sin grasa
+fdc:173864	Ham, sliced, regular (approximately 11% fat)	jamón en lonchas
+fdc:173865	Ham, minced	jamón picado
+fdc:173866	Ham salad spread	paté de jamón para untar
+fdc:173867	Knackwurst, knockwurst, pork, beef	salchichas knackwurst de cerdo y vacuno
+fdc:173868	Lebanon bologna, beef	mortadela Lebanon de vacuno
+fdc:173869	Liver cheese, pork	queso de hígado de cerdo
+fdc:173870	Liver sausage, liverwurst, pork	salchicha de hígado de cerdo
+fdc:173871	Sausage, turkey, fresh, cooked	salchicha de pavo cocinada
+fdc:173872	Bologna, chicken, pork, beef	mortadela de pollo cerdo y vacuno
+fdc:173873	Bologna, chicken, pork	mortadela de pollo y cerdo
+fdc:173874	Chicken breast, deli, rotisserie seasoned, sliced, prepackaged	pechuga de pollo especiada asada en lonchas
+fdc:173875	Frankfurter, meat and poultry, unheated	salchichas de carne
+fdc:173876	Pork sausage, link/patty, fully cooked, unheated	salchicha de cerdo cocida
+fdc:173877	Kielbasa, fully cooked, grilled	kielbasa a la parrilla
+fdc:173878	Kielbasa, fully cooked, pan-fried	kielbasa frita
+fdc:173879	Kielbasa, fully cooked, unheated	kielbasa
+fdc:173880	Sausage, chicken or turkey, Italian style,  lower sodium	salchicha italiana de pollo o pavo baja en sal
+fdc:173881	Ham, smoked, extra lean, low sodium	jamón ahumado extra magro bajo en sal
+fdc:173882	Pork sausage, reduced sodium, cooked	salchicha de cerdo reducida en sal cocinada
+fdc:173883	Sausage, pork, turkey, and beef, reduced sodium	salchicha de cerdo pavo y vacuno reducida en sal
+fdc:173884	Cereals ready-to-eat, GENERAL MILLS, CHEERIOS	cereales Cheerios General Mills
+fdc:173885	Cereals ready-to-eat, POST, COCOA PEBBLES	cereales Cocoa Pebbles Post
+fdc:173886	Cereals ready-to-eat, QUAKER, QUAKER CRUNCHY BRAN	cereales de salvado crujientes Quaker
+fdc:173887	Cereals ready-to-eat, RALSTON CRISP RICE	cereales de arroz Ralston
+fdc:173888	Cereals ready-to-eat, POST Bran Flakes	cereales de salvado Post
+fdc:173889	Cereals ready-to-eat, POST, Honeycomb Cereal	cereales Honeycomb Post
+fdc:173890	Cereals ready-to-eat, QUAKER, KING VITAMAN	cereales King Vitaman Quaker
+fdc:173891	Cereals ready-to-eat, QUAKER, QUAKER OAT LIFE, plain	cereales Life de avena Quaker
+fdc:173892	Cereals ready-to-eat, QUAKER, 100% Natural Granola, Oats, Wheat and Honey	granola con avena trigo y miel Quaker
+fdc:173893	Cereals ready-to-eat, RALSTON TASTEEOS	cereales Tasteeos Ralston
+fdc:173894	Cereals ready-to-eat, POST, Honey Nut Shredded Wheat	almohadillas de trigo triturado miel-nuez Post
+fdc:173895	Cereals ready-to-eat, MALT-O-MEAL, CORN BURSTS	cereales Corn Bursts Malt-O-Meal
+fdc:173896	Cereals ready-to-eat, wheat germ, toasted, plain	germen de trigo tostado
+fdc:173897	Cereals, QUAKER, corn grits, instant, plain, prepared (microwaved or boiling water added), without salt	sémola de maíz instantánea sin sal Quaker
+fdc:173898	Cereals, QUAKER, corn grits, instant, cheddar cheese flavor, dry	sémola de maíz instantánea sabor cheddar Quaker seca
+fdc:173899	Cereals, QUAKER, Instant Grits, Country Bacon flavor, dry	sémola de maíz instantánea sabor beicon Quaker seca
+fdc:173900	Cereals, CREAM OF RICE, dry	papilla de arroz Cream of Rice seca
+fdc:173901	Cereals, CREAM OF WHEAT, regular, 10 minute cooking, dry	sémola Cream of Wheat seca
+fdc:173902	Cereals, CREAM OF WHEAT, instant, prepared with water, without salt	sémola Cream of Wheat instantánea sin sal
+fdc:173903	Cereals, MALT-O-MEAL, original, plain, dry	papilla de trigo Malt-O-Meal seca
+fdc:173904	Cereals, oats, regular and quick, not fortified, dry	copos de avena secos
+fdc:173905	Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt	avena cocida sin sal
+fdc:173906	Cereals, oats, instant, fortified, with cinnamon and spice, prepared with water	avena instantánea con canela enriquecida
+fdc:173907	Cereals, QUAKER, Instant Oatmeal, maple and brown sugar, dry	avena instantánea con arce y azúcar moreno Quaker seca
+fdc:173908	Cereals, oats, instant, fortified, with raisins and spice, prepared with water	avena instantánea con pasas y especias enriquecida
+fdc:173909	Cereals ready-to-eat, MALT-O-MEAL, MARSHMALLOW MATEYS	cereales Marshmallow Mateys Malt-O-Meal
+fdc:173910	Cereals ready-to-eat, POST, Shredded Wheat, original big biscuit	almohadillas de trigo triturado grandes Post
+fdc:173911	Cereals ready-to-eat, POST, Shredded Wheat, original spoon-size	almohadillas de trigo triturado pequeñas Post
 fdc:173998	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw	redondo de ternera crudo
 fdc:174006	Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0" fat, select, cooked, roasted	solomillo de ternera asado
 fdc:174104	Crackers, gluten-free, multi-seeded and multigrain	galletas saladas sin gluten con semillas
