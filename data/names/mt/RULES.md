@@ -29,6 +29,44 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
 `desnatada` not `descremada`, `en conserva` not `enlatado`, `gamba` not `camarón`,
 `beicon`/`tocino` per Spain, `bonito`/`caballa` over LatAm fish names.
 
+### es qualifiers that must survive (each splits kcal >10%)
+
+- trim `0"` vs `1/8"`/etc → keep as `sin grasa visible` vs `grasa 1/8"`.
+- grade `choice`/`select`/`prime` → keep `(choice)`/`(select)`/`(prime)` when a
+  sibling record differs only by it.
+- `drained` → `escurrido`; `with added solution` / `pre-basted` → `con salmuera`
+  everywhere (not dropped, not `con agua de`).
+- `bone-in` vs `boneless` → `con hueso` / `sin hueso`; `steak` vs `roast` →
+  `filete` / `asado`; `flat half` vs `point half` vs `whole` → `parte plana` /
+  `parte gruesa` / `entero`; cut sub-name (`chuck eye`, `top blade`, `under
+  blade`, `Denver cut`, `mock tender`, `country-style`) must stay identifiable.
+
+### es fixed vocabulary
+
+- drumstick = `muslo`/`jamoncito`; thigh = `contramuslo` (one word).
+- sirloin = `lomo`/`entrecot`/`chuletón`, never `solomillo` (= tenderloin).
+- beef shank = `morcillo`/`jarrete`, never `rodaballo` (turbot).
+- kale = `col kale`; savoy cabbage = `col de Saboya`; never conflate.
+- pumpkin = `calabaza`; winter squash = `calabaza de invierno`.
+- rutabaga = `colinabo`; kohlrabi = `colirábano` — they differ.
+- welsh onion = `cebolleta de invierno`; fruit leather = `piel de fruta`;
+  popcorn, air-popped = `palomitas al aire`; popcorn chicken =
+  `trocitos de pollo frito`; pork skins/rinds = `cortezas de cerdo`;
+  cheeseburger = `hamburguesa con queso`; french dressing = `salsa francesa`;
+  trail mix = `mezcla de frutos secos`; pattypan/scallop squash = `patissón`;
+  green soybeans = `edamame`; Alaska devilfish = `pulpo` (octopus);
+  lingcod keep as `lingcod`; cured dried beef = `cecina de vacuno`.
+- Word order: `jamón con agua añadida`, not `con agua de`.
+
+## ru qualifiers that must survive (each splits kcal >10%)
+
+- trim `0"` vs `1/8"` → `без внешнего жира` / `жир 1/8"`; grade tag stays
+  `(чойс)`/`(селект)`/`(прайм)` when it is the only difference.
+- `drained` → `слитые`; `with added solution`/`pre-basted` → `с рассолом`.
+- `bone-in`/`boneless`, `steak`/`roast`, `flat`/`point`/`whole` halves and cut
+  sub-names (`верхняя лопатка`, `нижняя лопатка`, `шейная часть`, `мок-тендер`,
+  `Денвер`, `кантри-стайл`) must stay identifiable.
+
 ## Glossary traps seen in review
 
 - compote / Kompott = stewed fruit (`тушёные фрукты`, `compota`), never `компот` (the drink)
@@ -46,3 +84,15 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
 - `load_mt` is idempotent: a line removed drops its `food_name` row.
 - `tests/test_db.py::test_no_two_records_share_an_mt_name_with_different_kcal` guards the
   class of error where two nutritionally different records collapse to one name.
+- meatloaf = `мясной хлеб`, never `хлебом` (bread); breadnut-tree seeds =
+  `семена рамона`, breadfruit seeds = `семена хлебного дерева` — different trees.
+- welsh onion = `лук-батун`; cornsalad = `полевой салат`/`рапунцель` (маш-салат
+  collides with mung `маш`); Alaska devilfish = `осьминог`.
+- `бостонские стейки`/`кантри-стайл`/`самобастед`/`сливки-халф-энд-халф` read as
+  calques: Boston butt = `свиная шея`/`плечевая часть`, country-style ribs =
+  `рёбра по-деревенски`, pre-basted = `с рассолом`, half-and-half =
+  `сливки полужирные`, granulated sugar = `сахар-песок`→`сахар`, kasha buckwheat
+  raw ≠ `гречка жареная сырая`.
+- es: `cuero de fruta`, `frijoles`, `palomitas de pollo`, `vinagreta casera`
+  (french dressing), `coctel` are LatAm/calque/wrong-accent — see the es
+  vocabulary list above.
