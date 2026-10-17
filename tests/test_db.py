@@ -204,6 +204,35 @@ def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(t
     assert names(c, {"q": "хумус"}) == []
 
 
+def test_load_mt_scales_past_the_pg_parameter_limit(tmp_path):
+    """More TSV rows than 65,535/5 bind parameters (13,107) — the old one-statement
+    load died at ~13k names; chunked inserts and array-param id lists must not."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    n = 14_000
+    with engine().begin() as conn:
+        # `clean` restarted identity, so these products are ids 1..n.
+        conn.execute(text("insert into product (created_at) select now() from generate_series(1, :n)"), {"n": n})
+        conn.execute(text("insert into food (id, product_id, source, layer, licence, name) "
+                          "select 'bulk:' || g, g, 't', 'core', 'X', 'food ' || g "
+                          "from generate_series(1, :n) g"), {"n": n})
+    (tmp_path / "ru.tsv").write_text(
+        "".join(f"bulk:{i}\tfood {i}\tблюдо {i}\n" for i in range(1, n + 1)), encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": n}
+    assert load_mt(tmp_path) == {"ru": n}  # idempotent
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == n
+    (tmp_path / "ru.tsv").write_text("bulk:1\tfood 1\tблюдо 1\n", encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 1}
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == 1
+
+
 def test_no_two_records_share_an_mt_name_with_different_kcal():
     """Two records that collapse to one mt name must be the same food for energy: a shared name
     whose newest accepted ENERC_KCAL differ by more than 10 % means a qualifier that changes the
