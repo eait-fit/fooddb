@@ -5795,30 +5795,1349 @@ bls:X548343	Onions stewed, with bacon	cebollas estofadas con beicon
 bls:X548443	Onions gratinated	cebollas gratinadas
 bls:X548812	Onion rings in frying batter (with beer) deep-fried	aros de cebolla en rebozado de cerveza fritos
 bls:X548912	Onions stewed (with fat and salt)	cebollas estofadas con grasa y sal
+bls:X551142	Aubergine slices fried	rodajas de berenjena fritas
+bls:X551162	Aubergine slices deep-fried	rodajas de berenjena fritas en abundante aceite
+bls:X551343	Aubergines with tomatoes stewed	berenjenas con tomate estofadas
+bls:X551363	Aubergine slices fried, with tomato sauce (of canned tomatoes) and cheese gratinated	rodajas de berenjena fritas gratinadas con salsa de tomate en conserva y queso
+bls:X551463	Aubergines filled with lamb, rice and tomatoes, gratinated	berenjenas rellenas de cordero, arroz y tomate gratinadas
+bls:X551563	Aubergines braised with tomatoes and sweet peppers	berenjenas con tomate y pimiento braseadas
+bls:X551812	Aubergine slices in frying batter (with beer) deep-fried	rodajas de berenjena rebozadas con cerveza fritas en abundante aceite
+bls:X552043	Cucumbers stewed	pepinos estofados
+bls:X552153	Cucumbers braised	pepinos braseados
+bls:X552423	Cucumbers with minced meat filling, braised, with sauce	pepinos rellenos de carne picada braseados con salsa
+bls:X553712	Sweet peppers baked, with bulgur-vegetable-filling	pimientos al horno con relleno de bulgur y verduras
+bls:X553812	Sweet peppers with minced meat filling, baked	pimientos rellenos de carne picada al horno
+bls:X553912	Sweet peppers stewed (with fat and salt)	pimientos estofados con grasa y sal
+bls:X554043	Sweet peppers and tomatoes stewed	pimientos con tomate estofados
+bls:X554113	Sweet peppers with minced meat filling baked, in tomato sauce (of fresh tomatoes)	pimientos rellenos de carne picada al horno en salsa de tomate fresco
+bls:X554333	Sweet peppers with minced meat-rice filling, in tomato sauce (of tomato paste)	pimientos rellenos de carne picada y arroz estofados en salsa de concentrado de tomate
+bls:X554543	Sweet peppers and cucumbers stewed	pimientos con pepino estofados
+bls:X556043	Whole tomatoes stewed, with cream	tomates enteros estofados con nata
+bls:X556142	Tomatoes stewed, with rosemary and sage	tomates estofados con romero y salvia
+bls:X556233	Tomatoes baked Provencal style	tomates al horno a la provenzal
+bls:X556243	Tomatoes filled with olives and sheep's milk cheese, gratinated	tomates rellenos de aceitunas y queso de oveja gratinados
+bls:X556263	Tomatoes filled with herb-bread-parmesan mix, grilled	tomates rellenos de mezcla de hierbas, pan y parmesano a la parrilla
+bls:X556422	Tomatoes with minced meat filling, baked	tomates rellenos de carne picada al horno
+bls:X556643	Tomatoes with cheese-herb-filling, baked	tomates rellenos de queso y hierbas al horno
+bls:X556812	Tomatoes stewed (with fat and salt)	tomates estofados con grasa y sal
+bls:X558063	Courgette slices breaded, fried	rodajas de calabacín empanadas fritas
+bls:X558112	Courgette-cream sauce	salsa de calabacín con nata
+bls:X558143	Courgette stewed (with fat and salt)	calabacín estofado con grasa y sal
+bls:X558312	Courgette pancakes fried	tortitas de calabacín fritas
+bls:X558412	Courgette with millet-filling and cheese gratinated	calabacín con relleno de mijo gratinado con queso
+bls:X559043	Pumpkin baked, in tomato sauce (of tomato paste)	calabaza al horno en salsa de concentrado de tomate
+bls:X559063	Pumpkin baked, in white basic sauce	calabaza al horno en salsa blanca
+bls:X559243	Pumpkin baked, in sweet pepper sauce (from Bechamel sauce)	calabaza al horno en salsa de pimiento
+bls:X559312	Pumpkin stewed (with fat and salt)	calabaza estofada con grasa y sal
+bls:X561043	Swede stewed, with bacon, in white basic sauce	colinabo estofado con beicon en salsa blanca
+bls:X561053	Swede stewed, in white basic sauce	colinabo estofado en salsa blanca
+bls:X561112	Swede stewed (with fat and salt)	colinabo estofado con grasa y sal
+bls:X562013	Carrots boiled, fried	zanahorias cocidas salteadas
+bls:X562043	Carrots stewed (with fat and salt)	zanahorias estofadas con grasa y sal
+bls:X562053	Carrots boiled, with white basis sauce	zanahorias cocidas con salsa blanca
+bls:X562063	Carrots boiled, tossed in butter	zanahorias cocidas salteadas en mantequilla
+bls:X562153	Carrots, peas and beans boiled, in white basic sauce	zanahorias con guisantes y judías cocidas en salsa blanca
+bls:X562243	Carrots and leek stewed	zanahorias con puerro estofadas
+bls:X562463	Carrots puree	puré de zanahoria
+bls:X565043	Black salsify boiled (with lemon juice and salt)	escorzonera cocida
+bls:X565143	Black salsify boiled, with Hollandaise sauce	escorzonera cocida con salsa holandesa
+bls:X566063	Celeriac puree	puré de apio nabo
+bls:X566142	Celeriac slices in frying batter (with beer) deep-fried	rodajas de apio nabo rebozadas con cerveza fritas en abundante aceite
+bls:X566253	Celeriac stewed, in white basic sauce with cream	apio nabo estofado en salsa blanca con nata
 bls:X566412	Celeriac boiled, with cream	apio nabo cocido con nata
+bls:X567053	Beetroot sweet-and-sour stewed	remolacha estofada agridulce
+bls:X567243	Beetroot stewed, with sour cream	remolacha estofada con nata agria
+bls:X568043	Turnips "Teltower Rübchen" stewed, with cream	nabos de Teltow estofados con nata
 bls:X570143	Green peas stewed	guisantes estofados
+bls:X570153	Green peas boiled, in white basic sauce	guisantes cocidos en salsa blanca
+bls:X570343	Pea puree from dried peas	puré de guisantes secos
+bls:X570363	Pea puree from fresh peas	puré de guisantes frescos
+bls:X570653	Green peas and sweetcorn stewed	guisantes con maíz estofados
+bls:X570763	Sugar peas boiled, tossed in butter	tirabeques cocidos salteados en mantequilla
+bls:X571143	Green beans stewed	estofado de judías verdes
+bls:X571153	Green beans boiled, in white basic sauce	judías verdes cocidas en salsa blanca
+bls:X571163	Green beans boiled, tossed in butter	judías verdes cocidas salteadas en mantequilla
+bls:X571253	Broad beans with bacon stewed, in white basic sauce	habas con beicon estofadas en salsa blanca
+bls:X571453	Haricot beans boiled, in tomato sauce (of canned tomatoes)	alubias blancas cocidas en salsa de tomate en conserva
+bls:X572143	Lentils boiled, with mirepoix and bacon	lentejas cocidas con verduras de sopa y beicon
+bls:X572153	Lentils boiled with mirepoix	lentejas cocidas con verduras de sopa
+bls:X572212	Antipasti mix with tuna and Parma ham	antipasto con atún y jamón de Parma
+bls:X572312	Sweetcorn stewed (with fat and salt)	maíz dulce estofado con grasa y sal
+bls:X572412	Tofu fried (with fat and salt)	tofu frito con grasa y sal
+bls:X572512	Topinambur stewed (with fat and salt)	tupinambo estofado con grasa y sal
+bls:X572612	Chinese white cabbage stewed (with fat and salt)	col china estofada con grasa y sal
+bls:X572712	Curly kale stewed (with fat and salt)	col rizada estofada con grasa y sal
+bls:X572812	Fennel boiled (with fat and salt)	hinojo cocido con grasa y sal
+bls:X573012	Aubergines stewed (with fat and salt)	berenjenas estofadas con grasa y sal
+bls:X573212	Celery boiled (with fat and salt)	apio cocido con grasa y sal
+bls:X573312	Romanesco stewed (with fat and salt)	romanesco estofado con grasa y sal
+bls:X573412	Okra stewed (with fat and salt)	ocra estofada con grasa y sal
+bls:X573612	Turnip stewed (with fat and salt)	nabos estofados con grasa y sal
+bls:X573712	Parsnip boiled, fried (with fat and salt)	chirivías cocidas fritas con grasa y sal
+bls:X573812	Celeriac stewed (with fat and salt)	apio nabo estofado con grasa y sal
+bls:X574012	Bamboo shoots stewed (with fat and salt)	brotes de bambú estofados con grasa y sal
+bls:X574112	Soya bean sprouts stewed (with fat and salt)	brotes de soja estofados con grasa y sal
+bls:X574212	Chickpeas boiled (with fat and salt)	garbanzos cocidos con grasa y sal
+bls:X574312	Haricot beans boiled (with fat and salt)	alubias blancas cocidas con grasa y sal
+bls:X574412	Broad beans stewed (with fat and salt)	habas estofadas con grasa y sal
+bls:X574512	Soya bean (edamame) stewed (with fat and salt)	edamame estofado con grasa y sal
+bls:X5A1000	Vegetable patties vegan, fried	hamburguesas de verduras veganas fritas
 bls:X5A1010	Vegetable wafers savoury	oblea salada de verduras
+bls:X5A1020	Chickpea patties fried	hamburguesas de garbanzos fritas
+bls:X5A1030	Chickpea snack baked	snack de garbanzos al horno
+bls:X5A1040	Lentil patties fried	hamburguesas de lentejas fritas
+bls:X5A1050	Lentil patties vegan, fried	hamburguesas de lentejas veganas fritas
+bls:X5A2000	Button mushrooms stewed in vinegar, pickled in rapeseed oil	champiñones estofados en vinagre en conserva en aceite de colza
+bls:X5A3000	Vegetable mix boiled (without sauce)	mezcla de verduras cocida
+bls:X5A4000	Chicory stewed, with cheese sauce from Bechamel sauce gratinated	achicoria estofada gratinada con salsa de queso
+bls:X5A4010	Chicory braised with bacon	achicoria braseada con beicon
+bls:X5A4020	Spinach casserole/spinach pudding	pudín de espinacas
+bls:X5A5000	Cabbage roulade with rice-ham-filling, stewed	rollitos de col con relleno de arroz y jamón estofados
+bls:X5A5010	Cabbage roulade stewed, vegan filled with millet, tomatoes and tofu	rollitos de col veganos rellenos de mijo, tomate y tofu estofados
+bls:X5A5020	Cabbage roulade stewed, vegetarian filled with millet, tomatoes and sheep's milk cheese	rollitos de col vegetarianos rellenos de mijo, tomate y queso de oveja estofados
+bls:X5A6000	Artichokes stewed with orange juice	alcachofas estofadas con zumo de naranja
+bls:X5A6010	Artichokes boiled (with lemon juice and salt)	alcachofas cocidas
+bls:X5A6020	Artichokes boiled, with butter	alcachofas cocidas con mantequilla
+bls:X5A6030	Leek stewed, with butter and cheese	puerro estofado con mantequilla y queso
+bls:X5A6040	Asparagus-ham rolls with cheese gratinated	rollitos de espárragos y jamón gratinados con queso
+bls:X5A6050	Onions filled with button mushrooms and minced meat, braised	cebollas rellenas de champiñones y carne picada braseadas
+bls:X5A7000	Antipasti of grilled sweet pepper	antipasto de pimiento a la parrilla
+bls:X5A7010	Pumpkin baked	calabaza asada
+bls:X5A7020	Pumpkin rösti baked	rösti de calabaza al horno
+bls:X5A7030	Courgette with minced meat filling and cheese gratinated	calabacín relleno de carne picada gratinado con queso
+bls:X5A8000	Green beans boiled	judías verdes cocidas
+bls:X5A8010	Green peas stewed in cream	guisantes estofados en nata
+bls:X5A8020	Kidney beans stewed	alubias rojas estofadas
+bls:X5A8030	Lentils boiled, with stewed vegetables	lentejas cocidas con verduras estofadas
+bls:X5A8040	Cheese alternative Mozzarella style, vegan	alternativa al queso tipo mozzarella vegana
+bls:X5A8050	Tofu vegan breaded, fried	tofu vegano empanado frito
+bls:X5A9000	Carrots boiled	zanahorias cocidas
+bls:X5A9010	Kohlrabi boiled, vegetarian filled with cream cheese and peas	colirábano cocido relleno de queso crema y guisantes
+bls:X5A9020	Swede stewed, with bacon	colinabo estofado con beicon
+bls:X5A9030	Fried onions	cebolla frita crujiente
+bls:X5A9040	Beetroot stewed	estofado de remolacha
+bls:X5A9050	Celeriac boiled (with lemon juice and salt)	apio nabo cocido
+bls:X5B1000	Vegetable-potato-fish purree, with carrots and salmon (without salt, suitable as baby food)	puré de verduras, patata y pescado con zanahoria y salmón, sin sal, para bebés
+bls:X5B1010	Vegetable-potato-poultry purree, with carrots and chicken (without salt, suitable as baby food)	puré de verduras, patata y pollo con zanahoria, sin sal, para bebés
+bls:X5B1020	Vegetable-potato-meat purree, with carrots and beef (without salt, suitable as baby food)	puré de verduras, patata y carne con zanahoria y vacuno, sin sal, para bebés
+bls:X5B1030	Vegetable-potato-meat purree, with carrots and pork (without salt, suitable as baby food)	puré de verduras, patata y carne con zanahoria y cerdo, sin sal, para bebés
+bls:X5B1100	Vegetable-potato purree, with fennel (without salt, suitable as baby food)	puré de verduras y patata con hinojo, sin sal, para bebés
+bls:X5B1110	Vegetable-potato purree, with carrot and pumpkin (without salt, suitable as baby food)	puré de verduras y patata con zanahoria y calabaza, sin sal, para bebés
+bls:X5B1120	Vegetable-potato purree, with carrot and parsnip (without salt, suitable as baby food)	puré de verduras y patata con zanahoria y chirivía, sin sal, para bebés
+bls:X5B1130	Vegetable-potato purree, with spinach (without salt, suitable as baby food)	puré de verduras y patata con espinacas, sin sal, para bebés
+bls:X5B1140	Vegetable-potato purree, with courgette (without salt, suitable as baby food)	puré de verduras y patata con calabacín, sin sal, para bebés
+bls:X5B1150	Vegetable-potato-cereal purree, with carrot and oat flakes (without salt, suitable as baby food)	puré de verduras, patata y cereal con zanahoria y copos de avena, sin sal, para bebés
+bls:X5B1160	Vegetable-sweet potato purree, with carrot and parsnip (without salt, suitable as baby food)	puré de verduras y boniato con zanahoria y chirivía, sin sal, para bebés
+bls:X610042	Potatoes boiled with salt	patatas cocidas con sal
+bls:X610143	Cream potatoes "Niedernauer" fried	patatas en nata fritas
+bls:X610253	Boiled potatoes with vegetable stock and vegetables	patatas cocidas en caldo de verduras con verduras
+bls:X611143	Bouillon potatoes (with meat stock)	patatas cocidas en caldo de carne
+bls:X612152	Parsley potatoes	patatas con perejil
+bls:X613043	Potatoes with herb sauce from white basic sauce	patatas con salsa de hierbas
+bls:X613143	Bechamel potatoes	patatas con bechamel
+bls:X614213	Potato goulash	gulash de patatas
+bls:X614313	Potato layer dish with sauerkraut and boiled ham, gratinated	pastel de patatas con chucrut y jamón cocido gratinado
+bls:X631042	Potatoes mashed	puré de patatas
+bls:X634012	Potato puree with milk 3.5 % fat	puré de patatas con leche entera
+bls:X635053	Potato mash with milk 3.5 % fat	puré de patata con leche entera
+bls:X635253	Puree of potatoes and carrots with milk 3.5 % fat	puré de patata y zanahoria con leche entera
+bls:X636012	Potato puree, made from instant powder and milk 1.5 % fat	puré de patatas de copos con leche semidesnatada
+bls:X636043	Potato puree, made from instant powder, water, milk 3.5 % fat and fat	puré de patatas de copos con agua, leche entera y grasa
+bls:X636212	Puree of potatoes and brussels sprouts with milk 3.5 % fat	puré de patata y coles de Bruselas con leche entera
+bls:X637012	Potato puree, made from instant powder and milk 3.5 % fat	puré de patatas de copos con leche entera
+bls:X638012	Potato puree, made from instant powder and water	puré de patatas de copos con agua
+bls:X639012	Potato puree with milk 1.5 % fat	puré de patatas con leche semidesnatada
+bls:X640053	Potato gratin	gratinado de patatas
+bls:X640063	Potato casserole	pastel de patatas
+bls:X641000	Duchesse potatoes baked	patatas duquesa al horno
+bls:X641812	Butter potatoes	patatas con mantequilla
+bls:X642063	"Bäckerin-Kartoffeln" (potato gratin) vegetarian	gratinado de patatas Bäckerin vegetariano
+bls:X643113	Potatoes with eggs and tomatoes, gratinated	patatas con huevo y tomate gratinadas
+bls:X643153	Potatoes with tomatoes stewed	patatas con tomate estofadas
+bls:X644013	Potato gratin without cheese	gratinado de patatas sin queso
+bls:X644113	Potato gratin with tomatoes and mozzarella	gratinado de patatas con tomate y mozzarella
+bls:X644253	Potato gratin with kohlrabi and cheese	gratinado de patatas con colirábano y queso
+bls:X644313	Potato gratin with spinach	gratinado de patatas con espinacas
+bls:X644712	Potato gratin with leek	gratinado de patatas con puerro
+bls:X651012	Potatoes boiled, peeled, fried	patatas cocidas peladas fritas
+bls:X651013	Potatoes raw, peeled, fried	patatas crudas peladas fritas
+bls:X651043	Fried potatoes (of boiled potatoes) with onions	patatas salteadas de patata cocida con cebolla
+bls:X651063	Fried potatoes (of raw potatoes) with onions	patatas salteadas de patata cruda con cebolla
+bls:X651112	Farmer's breakfast with bacon and boiled ham, fried	desayuno de granjero con beicon y jamón cocido frito
+bls:X651343	Fried potatoes with bacon and onions	patatas salteadas con beicon y cebolla
+bls:X651443	Potatoes with caraway seeds baked	patatas al comino al horno
+bls:X651543	Fried potatoes sweetened	patatas salteadas azucaradas
+bls:X651642	Potatoes stewed with bacon	patatas estofadas con beicon
+bls:X651823	Fried grated potatoes "Tyrolese"	patatas ralladas fritas al estilo tirolés
+bls:X651912	Fried potatoes with egg	patatas salteadas con huevo
+bls:X652912	Potato croquettes	croquetas de patata
+bls:X653042	Potato croquettes with cheese	croquetas de patata con queso
+bls:X653123	Potato croquettes with carrots and peas in white basic sauce with cream	croquetas de patata con zanahoria y guisantes en salsa blanca con nata
+bls:X653242	Potato croquettes from choux pastry	croquetas de patata de masa choux
+bls:X654042	Potato chips	patatas fritas
 bls:X655022	Potato pancakes fried	tortitas de patata fritas
+bls:X655032	Potato pancakes (with sour cream and semolina) fried	tortitas de patata con nata agria y sémola fritas
+bls:X655112	Potato pancakes "Rhenish" fried, with apple sauce and lingonberries	tortitas de patata renanas fritas con compota de manzana y arándanos rojos
+bls:X655452	Potato-vegetable cake	pastel de patata y verduras
+bls:X655512	Small potato burger with cheese fried	tortitas de patata con queso fritas
+bls:X656362	Bernese rösti fried grated potatoes	rösti bernés frito
+bls:X657052	Potato patties with onions fried	hamburguesas de patata con cebolla fritas
+bls:X658012	Potato omelette fried	tortilla de patatas frita
+bls:X659012	"Schupfnudeln" (German potato pasta) cooked	schupfnudeln cocidos
+bls:X659112	"Schupfnudeln" (German potato pasta ) cooked, fried	schupfnudeln cocidos fritos
+bls:X663213	Potato pudding	pudín de patata
+bls:X671042	Thuringian dumplings (made from raw and boiled potatoes)	klöße de Turingia
+bls:X671052	Thuringian green dumplings (made from raw and boiled potatoes with semolina)	klöße verdes de Turingia con sémola
+bls:X673042	Potato dumplings from boiled potatoes	bolas de patata cocida
+bls:X673122	Potato dumplings fried with egg-milk mix, with buttered breadcrumbs and compote of dried fruit	bolas de patata fritas con huevo y leche, pan rallado en mantequilla y compota de frutos secos
+bls:X673252	Potato dumplings from boiled potatoes, fried with egg-milk mix	bolas de patata cocida fritas con huevo y leche
+bls:X673612	Potato dumplings from raw potatoes	bolas de patata cruda
+bls:X676062	"Wickelklöße" wrapped potato dumplings from boiled potatoes	bolas de patata Wickelklöße de patata cocida
+bls:X677042	Potato dumplings (made from half raw and half boiled potatoes)	bolas de patata mitad cruda
+bls:X678112	"Lippischer Pickert" fried (pancakes made from yeast dough with raw potatoes and sour cream)	pickert de Lippe frito
+bls:X678212	Potato squares filled with plums, baked	maultaschen de patata rellenos de ciruela al horno
+bls:X682513	"Heaven and earth" apple-potato mash with fried bacon	puré de manzana y patata «cielo y tierra» con beicon frito
+bls:X682533	"Heaven and earth" apple-potato mash with fried blood sausage	puré de manzana y patata «cielo y tierra» con morcilla frita
+bls:X693412	Lobscouse	labskaus
+bls:X696312	Haricot bean puree	puré de alubias blancas
+bls:X697212	Broccoli puree with milk 1.5 % fat	puré de brócoli con leche semidesnatada
+bls:X698212	Pumpkin-potato puree with milk 1.5 % fat	puré de calabaza y patata con leche semidesnatada
+bls:X699312	Sweet potatoes stewed (with fat and salt)	boniato estofado con grasa y sal
+bls:X699412	Jacket potatoes baked	patatas asadas con piel
+bls:X6A1000	Potatoes boiled, with fried chicken and herb sauce from Bechamel sauce	patatas cocidas con pollo frito y salsa de hierbas
+bls:X6A1010	Potatoes boiled with peel	patatas cocidas con piel
+bls:X6A1020	Sweet potatoes and broccoli stewed, with boiled beef and white basic sauce	boniato con brócoli estofado con vacuno cocido y salsa blanca
+bls:X6A2000	Sweet potato puree (without salt, suitable as baby food)	puré de boniato sin sal para bebés
+bls:X6A3000	Potato souffle with bacon	soufflé de patata con beicon
+bls:X6A3010	Potato souffle with broccoli	soufflé de patata con brócoli
+bls:X6A3020	Moussaka (gratin with potatoes, aubergines, Bechamel and minced meat sauce)	musaca
+bls:X6A3030	Baked potatoes with onions	patatas al horno con cebolla
+bls:X6A3040	Potatoes with ham, sour cream and cheese gratinated	patatas con jamón, nata agria y queso gratinadas
+bls:X6A4000	Potato pockets filled with herb-cream cheese, fried	paquetes de patata rellenos de queso crema con hierbas fritos
+bls:X6A5000	Potato dough (from boiled potatoes) raw	masa de patata cocida cruda
+bls:X6A5010	Cherry dumplings with sugar and cinnamon	bolas de masa con cerezas, azúcar y canela
+bls:X6A5020	Plum dumplings with sugar and cinnamon	bolas de masa con ciruelas, azúcar y canela
+bls:X700062	Fresh egg pasta, homemade, raw	pasta fresca al huevo casera cruda
+bls:X700212	Fresh egg pasta, red, homemade, raw	pasta fresca al huevo roja casera cruda
+bls:X700242	Fresh egg pasta with semolina, green, homemade, raw	pasta fresca al huevo verde con sémola casera cruda
+bls:X701142	Fresh pasta egg-free, homemade, raw	pasta fresca sin huevo casera cruda
+bls:X702042	Fresh wholemeal egg pasta, homemade, raw	pasta fresca al huevo integral casera cruda
+bls:X702142	Fresh wholemeal egg pasta with almond pesto	pasta fresca al huevo integral con pesto de almendras
+bls:X702233	Fresh wholemeal egg pasta with anchovy-herb pesto	pasta fresca al huevo integral con pesto de anchoas y hierbas
+bls:X702343	Fresh wholemeal egg pasta with Roquefort sauce	pasta fresca al huevo integral con salsa de roquefort
+bls:X702412	Fresh wholemeal egg pasta with Bolognese (minced meat sauce)	pasta fresca al huevo integral con salsa boloñesa
+bls:X702512	Fresh wholemeal egg pasta with tomato sauce from white basic sauce	pasta fresca al huevo integral con salsa de tomate
+bls:X702612	Fresh wholemeal egg pasta with stewed mixed vegetables	pasta fresca al huevo integral con verduras estofadas
+bls:X703012	Fresh egg pasta Ravioli with minced meat filling, in tomato sauce from white basic sauce	ravioli frescos de huevo con relleno de carne picada en salsa de tomate
+bls:X703112	Pasta egg-free, with pesto verde	pasta sin huevo con pesto verde
+bls:X710213	Pasta egg-free, boiled with milk and raisins	pasta sin huevo cocida con leche y pasas
+bls:X711242	Fresh egg pasta tomato spaetzle, homemade, raw	spaetzle al huevo de tomate caseros crudos
+bls:X711343	Fresh egg pasta spaetzle with sauerkraut	spaetzle al huevo con chucrut
+bls:X711412	Fresh egg pasta spaetzle with cheese	spaetzle al huevo con queso
+bls:X711512	Fresh egg pasta spaetzle, homemade, raw	spaetzle al huevo frescos caseros crudos
+bls:X712343	Fresh egg pasta with baked pumpkin, in white basic sauce with cream	pasta fresca al huevo con calabaza asada en salsa blanca con nata
+bls:X713343	Fresh egg pasta spaetzle with beef goulash simple	spaetzle al huevo con gulash de vacuno sencillo
+bls:X720213	Casserole of pasta egg-free, with boiled ham	cazuela de pasta sin huevo con jamón cocido
+bls:X720343	Fresh wholemeal egg pasta with spinach and canned tomatoes, gratinated	pasta fresca al huevo integral con espinacas y tomate en conserva gratinada
+bls:X720413	Casserole of egg pasta with mushroom sauce from Bechamel sauce and Gouda cheese gratinated	cazuela de pasta al huevo con salsa de champiñones y gouda gratinada
+bls:X720533	"Schinkenfleckerl" (casserole of fresh egg pasta with boiled ham and sour cream)	schinkenfleckerl
+bls:X720613	Casserole of fresh egg pasta with cream-cheese sauce and Chester cheese gratinated	cazuela de pasta al huevo con salsa de queso crema gratinada con chester
+bls:X720713	Pasta egg-free, fried with cooked sausage and eggs	pasta sin huevo frita con salchicha cocida y huevo
+bls:X720912	Pasta egg-free, fried with egg	pasta sin huevo frita con huevo
+bls:X730033	Lasagna al forno (pasta sheets with Bechamel- and Bolognese sauce, gratinated with cheese)	lasaña al horno
+bls:X730243	Pasta with ricotta and stewed tomatoes with spinach	pasta con ricotta y tomates estofados con espinacas
+bls:X740162	Egg pasta with flakes of butter	pasta al huevo con láminas de mantequilla
+bls:X740433	Egg pasta with Bolognese (minced meat sauce)	pasta al huevo con salsa boloñesa
+bls:X740612	Egg pasta with Roquefort sauce	pasta al huevo con salsa de roquefort
+bls:X740733	Egg pasta with Carbonara	pasta al huevo con carbonara
+bls:X740763	Egg pasta fried with tuna	pasta al huevo frita con atún
+bls:X740833	Pasta egg-free, with tomato sauce (of fresh tomatoes) with anchovies	pasta sin huevo con salsa de tomate fresco con anchoas
+bls:X740862	Pasta egg-free, tossed in oil, with boiled broccoli and anchovies	pasta sin huevo en aceite con brócoli cocido y anchoas
+bls:X740933	Egg pasta with tomato sauce (of fresh tomatoes)	pasta al huevo con salsa de tomate fresco
+bls:X740963	Pasta egg-free, with aubergines stewed with tomatoes and ricotta	pasta sin huevo con berenjenas estofadas con tomate y ricotta
+bls:X741033	Egg pasta with Gorgonzola sauce	pasta al huevo con salsa de gorgonzola
+bls:X741112	Egg pasta (boiled with salt)	pasta al huevo cocida
+bls:X742123	Egg pasta with tomato sauce (of tomato paste) with bacon	pasta al huevo con salsa de concentrado de tomate y beicon
+bls:X742233	Egg pasta with four cheeses	pasta al huevo con cuatro quesos
+bls:X742423	Egg pasta fried with vegetables and egg	pasta al huevo frita con verduras y huevo
+bls:X744063	Pasta egg-free, with veal goulash	pasta sin huevo con gulash de ternera
+bls:X744133	Egg pasta with stewed tomatoes and parsley	pasta al huevo con tomates estofados y perejil
+bls:X744163	Egg pasta with mussel sauce	pasta al huevo con salsa de mejillones
+bls:X744233	Egg pasta with fried chicken breast fillet and white basic sauce	pasta al huevo con filete de pechuga de pollo frito y salsa blanca
+bls:X744263	Egg pasta fried with porcini mushrooms and tomatoes	pasta al huevo frita con boletus y tomate
+bls:X745023	Fresh egg pasta with dices of boiled ham and white basic sauce	pasta fresca al huevo con dados de jamón cocido y salsa blanca
+bls:X746023	Fresh egg pasta with semolina, green, with Gorgonzola sauce	pasta fresca al huevo verde con salsa de gorgonzola
+bls:X760112	Minced meat-spinach-filled pasta squares, Swabian style, cooked	maultaschen cocidos
 bls:X760212	Minced meat-spinach-filled pasta squares, Swabian style, fried in butter	maultaschen fritos en mantequilla
+bls:X760312	Minced meat-spinach-filled pasta squares, Swabian style, cooked, with fried onions	maultaschen cocidos con cebolla frita
+bls:X760533	Cannelloni al forno (pasta rolls filled with Bolognese sauce, gratinated with cheese)	canelones al horno
+bls:X760712	Minced meat-spinach-filled pasta squares, Swabian style, fried	maultaschen fritos
+bls:X760812	Minced meat-spinach-filled pasta squares, Swabian style, fried with egg	maultaschen fritos con huevo
+bls:X760912	Minced meat-spinach-filled pasta squares, Swabian style, cooked in meat stock	maultaschen cocidos en caldo de carne
+bls:X761033	Fresh egg pasta Ravioli vegetarian filled, with boiled vegetables in white basic sauce	ravioli frescos de huevo con relleno vegetariano con verduras cocidas en salsa blanca
+bls:X7A1000	Fresh egg pasta with basil (boiled with salt)	pasta fresca al huevo con albahaca
+bls:X7A1010	Pasta egg-free, fried with egg, sweet pepper and chicken	pasta sin huevo frita con huevo, pimiento y pollo
+bls:X7A1020	Pasta aglio e olio (pasta egg-free, with garlic and vegetable oil)	pasta aglio e olio
+bls:X7A2000	Pudding of pasta egg-free, with boiled ham	pudín de pasta sin huevo con jamón cocido
+bls:X7A2010	Gratin of egg pasta and spinach	gratinado de pasta al huevo y espinacas
+bls:X7A3000	Spinach-filled pasta squares cooked	maultaschen con relleno de espinacas cocidos
+bls:X7A3010	Spinach-filled pasta squares, cooked in vegetable stock	maultaschen con relleno de espinacas cocidos en caldo de verduras
+bls:X7A3020	Fresh egg pasta Ravioli, filled with beef mince	ravioli frescos de huevo rellenos de carne picada de vacuno
+bls:X7A3030	Fresh egg pasta Ravioli, vegetarian filled with asparagus and ricotta	ravioli frescos de huevo con relleno vegetariano de espárragos y ricotta
+bls:X810013	Rice pudding sweetened, with milk 3.5 % fat, raisins and pistachios	arroz con leche dulce con pasas y pistachos
+bls:X810033	Rice pudding sweetened, with milk 3.5 % fat	arroz con leche dulce
+bls:X810113	Rice pudding sweetened, with milk 3.5 % fat, browned butter, sugar and cinnamon	arroz con leche dulce con mantequilla tostada, azúcar y canela
+bls:X810123	Rice pudding sweetened, with milk 3.5 % fat, sugar and cinnamon	arroz con leche dulce con azúcar y canela
+bls:X810223	Rice pudding sweetened, with milk 3.5 % fat and fruit mix	arroz con leche dulce con mezcla de frutas
+bls:X810333	Rice pudding sweetened, with milk 3.5 % fat and berry mix	arroz con leche dulce con mezcla de frutos rojos
+bls:X810413	Rice pudding sweetened, with milk 3.5 % fat and raisins, baked	arroz con leche dulce con pasas al horno
+bls:X810553	Rice pudding sweetened, with milk 3.5 % fat and compote of dried fruit	arroz con leche dulce con compota de frutos secos
+bls:X810613	Rice porridge sweetened, with milk 3.5 % fat	gachas de arroz dulces con leche entera
+bls:X810713	Apple rice with milk 3.5 % fat	arroz con manzana y leche entera
+bls:X811233	Rice pudding "Trauttmansdorff"	arroz Trauttmansdorff
+bls:X812122	Rice pancakes fried, with compote	tortitas de arroz fritas con compota
+bls:X813113	"Kaiserreis" (rice pudding sweetenend, with cream and sour cherries)	arroz con leche Kaiser con nata y cerezas ácidas
+bls:X820162	Rice boiled	arroz cocido
+bls:X820252	Buttered rice	arroz con mantequilla
+bls:X820353	Rice with stewed sweet peppers	arroz con pimiento estofado
+bls:X820453	Rice with stewed button mushrooms	arroz con champiñones estofados
+bls:X820553	Rice with stewed tomatoes	arroz con tomates estofados
+bls:X820653	Rice with tomato paste	arroz con concentrado de tomate
+bls:X820753	Rice with fried onions	arroz con cebolla frita
+bls:X820852	Rice with stewed vegetables and boiled ham	arroz con verduras estofadas y jamón cocido
+bls:X821012	Rice with mushroom sauce from white basic sauce	arroz con salsa de champiñones
+bls:X821112	Brown rice stewed (with fat and salt)	arroz integral estofado con grasa y sal
+bls:X821212	White rice stewed (with fat and salt)	arroz blanco estofado con grasa y sal
+bls:X822212	Risi-Pisi (boiled rice with stewed green peas)	risi-pisi
+bls:X822312	Green spelt risotto with button mushrooms	risotto de espelta verde con champiñones
+bls:X850123	Risotto stewed with vegetable stock	risotto estofado con caldo de verduras
+bls:X850133	Risotto with butter and Parmesan cheese	risotto con mantequilla y parmesano
+bls:X850353	Risotto with vegetables	risotto de verduras
+bls:X850453	Risotto with ham	risotto con jamón
+bls:X860142	"Reisrand" (boiled rice turned out of a mould)	arroz cocido en molde
+bls:X860252	Rice croquettes with Parmesan cheese	croquetas de arroz con parmesano
+bls:X870123	Rice casserole with carrots, peas and mushrooms	pastel de arroz con zanahoria, guisantes y setas
+bls:X870213	Rice casserole sweetened, with apple	pastel de arroz dulce con manzana
+bls:X870443	Rice casserole sweetened	pastel de arroz dulce
+bls:X871213	Rice casserole with boiled ham and cheese	pastel de arroz con jamón cocido y queso
+bls:X880113	Rice stewed with chanterelles	arroz estofado con rebozuelos
+bls:X880213	Rice with root vegetables and cheese	arroz con verduras y queso
+bls:X880442	Curried rice with almonds	arroz al curry con almendras
+bls:X880453	Curried rice	arroz al curry
+bls:X880532	Risi-Pisi with fried shrimps	risi-pisi con gambas fritas
+bls:X890632	Cheese pilaf (rice with onions and cheese)	pilaf con queso
+bls:X890662	Pilaf (rice with onions and butter)	pilaf
+bls:X890733	Pilaf "Serbian" with meat	pilaf serbio con carne
+bls:X890933	Paella	paella
+bls:X891133	Nasi Goreng (rice fried with vegetables and pork)	nasi goreng
+bls:X891212	Bami Goreng (egg pasta fried with vegetables and chicken)	bami goreng
+bls:X891412	Wild rice mix stewed (with fat and salt)	mezcla de arroz salvaje estofada con grasa y sal
+bls:X8A1000	Boiled rice (with vegetable stock)	arroz cocido en caldo de verduras
+bls:X8A1010	Rice flakes porridge unsweetened, with water, apple juice and rapeseed oil	gachas de copos de arroz sin azúcar con agua, zumo de manzana y aceite de colza
+bls:X8A1020	Liver risotto	risotto de hígado
+bls:X8A1030	Rice pudding sweetened, with rice drink	arroz con leche dulce con bebida de arroz
+bls:X8A1040	Rice pudding sweetened, with soya drink	arroz con leche dulce con bebida de soja
+bls:X8A1050	Rice pudding sweetened, with almond drink	arroz con leche dulce con bebida de almendras
+bls:X8A1060	Rice casserole with asparagus and cheese	pastel de arroz con espárragos y queso
+bls:X8A1070	Rice-ham filling for vegetables	relleno de arroz y jamón para verduras
+bls:X8A1080	Asparagus risotto	risotto de espárragos
+bls:X8A1090	Sushi vegan, filled with vegetables	sushi vegano relleno de verduras
+bls:X8A1100	Sushi rice (ground recipe)	arroz para sushi
+bls:X901612	Porridge unsweetened, with milk 3.5 % fat and cocoa powder	gachas sin azúcar con leche entera y cacao en polvo
+bls:X911013	Wholemeal pizza with tomato sauce, mozzarella, tomatoes, onions and olives	pizza integral con salsa de tomate, mozzarella, tomate, cebolla y aceitunas
+bls:X911112	Wholemeal pizza with tomato sauce, vegetables, mozzarella and button mushrooms	pizza integral con salsa de tomate, verduras, mozzarella y champiñones
+bls:X912033	Pizza margherita (with tomato sauce, mozzarella)	pizza margarita
+bls:X912133	Pizza al funghi (with tomato sauce, button mushrooms, mozzarella)	pizza al funghi
+bls:X912233	Pizza quattro formaggi (with cheese)	pizza cuatro quesos
+bls:X912363	Pizza Napoli (with tomato sauce, mozzarella, anchovy fillets, olives, capers)	pizza Napoli
+bls:X912412	Pizza prosciutto (with tomato sauce, boiled ham, mozzarella)	pizza prosciutto
+bls:X914133	Pizza salame (with tomato sauce, mozzarellea, salami, olives, peperoni)	pizza salame
+bls:X914233	Pizza quattro stagioni (mit tomato sauce, artichokes, button mushrooms, sweet pepper, boiled ham)	pizza cuatro estaciones
+bls:X915113	Pizza siciliana (with tomato sauce, mozzarella, anchovies, olives)	pizza siciliana
+bls:X915233	Pizza tonno (with tomato sauce, mozzarella, tuna, anchovies, olives, onions)	pizza tonno
+bls:X915333	Pizza marinara (with tomato sauce, mozzarella, shellfish)	pizza marinara con marisco
+bls:X916063	Quiche lorraine	quiche lorraine
+bls:X916163	Onion cake "Swabian", with bacon	tarta de cebolla suaba con beicon
+bls:X921063	Puff pastry pockets filled with spinach, sheep's milk cheese and pine nuts, baked	paquetes de hojaldre rellenos de espinacas, queso de oveja y piñones al horno
+bls:X922143	Spring rolls filled with vegetables and pork, deep-fried	rollitos de primavera rellenos de verduras y cerdo fritos
+bls:X922163	Spring rolls filled with vegetables, pork and shrimps, deep-fried	rollitos de primavera rellenos de verduras, cerdo y gambas fritos
+bls:X924012	Pancakes unsweetened, with milk 1.5 % fat, fried without fat	creps sin azúcar con leche semidesnatada a la plancha
+bls:X925012	Pancakes unsweetened, with milk 1.5 % fat, fried	creps sin azúcar con leche semidesnatada fritos
+bls:X928112	Onion cake without bacon	tarta de cebolla sin beicon
+bls:X929012	Wholemeal pancakes unsweetened, with milk 3.5 % fat, fried	creps integrales sin azúcar con leche entera fritos
+bls:X929212	Pancakes unsweetened, with milk 3.5 % fat, fried	creps sin azúcar con leche entera fritos
+bls:X930252	Quark pancakes unsweetened, fried	creps de quark sin azúcar fritos
+bls:X930452	Bacon pancakes fried	creps con beicon fritos
+bls:X930512	Pancakes made from buckwheat flour, unsweetened, fried	creps de trigo sarraceno sin azúcar fritos
+bls:X930642	Pancakes fried, filled with stewed mushrooms and sour cream	creps fritos rellenos de setas estofadas y nata agria
+bls:X930862	Pancakes fried, filled with stewed cream-spinach	creps fritos rellenos de espinacas con nata estofadas
+bls:X931152	Pancakes fried, filled with stewed mixed vegetables	creps fritos rellenos de verduras estofadas
+bls:X934412	Tarte flambee Alsatian style	flammkuchen alsaciano
+bls:X935613	Semolina pudding, salted, with cheese and parsley	pudín de sémola salado con queso y perejil
+bls:X936410	Banana milk with milk 3.5 % fat	leche con plátano
+bls:X937510	Strawberry milk with milk 1.5 % fat	leche con fresa
+bls:X940112	"Mehlschmarren" fried (thick flour pancake cut into pieces)	mehlschmarren frito
+bls:X940212	"Mehlpüfferchen" fried (small flour pancakes)	mehlpüfferchen fritos
+bls:X940362	Franconian flour dumplings	bolas de harina franconas
+bls:X940412	Franconian flour dumplings with compote of dried fruit	bolas de harina franconas con compota de frutos secos
+bls:X951113	Semolina porridge simple, sweetened	gachas de sémola dulces sencillas
+bls:X951133	Semolina porridge sweetened, with butter and egg	gachas de sémola dulces con mantequilla y huevo
+bls:X951213	Semolina casserole with cheese	pastel de sémola con queso
+bls:X951312	Millet stewed (with fat and salt)	mijo estofado con grasa y sal
+bls:X952133	Porridge sweetened, with butter and egg	gachas de avena dulces con mantequilla y huevo
+bls:X961462	Spinach dumplings	bolas de espinacas
+bls:X962162	Butter dumplings	bolas de mantequilla
+bls:X980112	White bread dumplings	bolas de panecillo
+bls:X981162	White bread dumpling roll poached	bolas de panecillo escalfadas en paño
+bls:X981252	Tyrolean bacon dumplings	bolas tirolésas con beicon
+bls:X981452	Ham dumplings	bolas con jamón
+bls:X981662	Bohemian dumplings	bolas bohemias
+bls:X983062	Semolina dumplings	bolas de sémola
+bls:X985162	Yeast dumplings, filled with plum jam, topped with ground poppy seed	germknödel
+bls:X985212	"Rohrnudeln" sweet yeast dumplings (of dough prepared with water) baked	rohrnudeln de masa de agua al horno
+bls:X986143	Polenta (maize porridge prepared with water, rapeseed oil and salt) baked	polenta al horno
+bls:X987112	Pizza baguette with boiled ham and cheese gratinated	baguette de pizza con jamón cocido gratinada con queso
+bls:X987212	Pizza baguette with vegetables and sheep's milk cheese gratinated	baguette de pizza con verduras gratinada con queso de oveja
+bls:X987312	Pizza baguette with tomatoes and cheese gratinated	baguette de pizza con tomate gratinada con queso
+bls:X987512	Wheat boiled (with fat and salt)	trigo cocido con grasa y sal
+bls:X987612	Bulgur boiled (with fat and salt)	bulgur cocido con grasa y sal
+bls:X987712	Green spelt boiled (with fat and salt)	espelta verde cocida con grasa y sal
+bls:X987812	Oat groats, boiled (with fat and salt)	avena entera cocida con grasa y sal
+bls:X988012	Buckwheat boiled (with fat and salt)	trigo sarraceno cocido con grasa y sal
+bls:X988212	Maize boiled (with fat and salt)	maíz cocido con grasa y sal
+bls:X991442	Pearl barley prepared like risotto	cebada perlada a la risotto
+bls:X992133	Couscous with butter	cuscús con mantequilla
+bls:X992163	Couscous (with fat and salt)	cuscús con grasa y sal
+bls:X9A1000	Couscous fried with vegetables	cuscús frito con verduras
+bls:X9A1010	Oat patties vegan, fried	hamburguesas de avena veganas fritas
+bls:X9A1020	Cereal patties fried	hamburguesas de cereales fritas
+bls:X9A1030	Green spelt patties fried	hamburguesas de espelta verde fritas
+bls:X9A1040	Green spelt patties with carrots and nuts, vegan, fried	hamburguesas de espelta verde con zanahoria y frutos secos veganas fritas
+bls:X9A1050	Millet patties fried	hamburguesas de mijo fritas
+bls:X9A1060	Millet-vegetable patties fried	hamburguesas de mijo y verduras fritas
+bls:X9A2000	Millet porridge sweetened, with milk 3.5 % fat	gachas de mijo dulces con leche entera
+bls:X9A2010	Millet porridge unsweetened, with milk 3.5 % fat	gachas de mijo sin azúcar con leche entera
+bls:X9A2020	Millet porridge unsweetened, with almond drink	gachas de mijo sin azúcar con bebida de almendras
+bls:X9A2030	Cereal-fruit puree, with unsweetened apple sauce and oat flakes (suitable as baby food)	puré de cereales y fruta con compota de manzana y copos de avena para bebés
+bls:X9A2040	Milk-cereal puree, with oat flakes and apple juice (suitable as baby food)	puré de cereales y leche con copos de avena y zumo de manzana para bebés
+bls:X9A2050	Polenta (maize porridge prepared with water, rapeseed oil and salt) boiled	polenta hervida
+bls:X9A2060	Porridge sweetened, with milk 3.5 % fat	gachas de avena dulces con leche entera
+bls:X9A2070	Porridge sweetened, with milk 3.5 % fat and cocoa powder	gachas de avena dulces con leche entera y cacao en polvo
+bls:X9A2080	Porridge sweetened, with soya drink	gachas de avena dulces con bebida de soja
+bls:X9A2090	Porridge sweetened, with water	gachas de avena dulces con agua
+bls:X9A2100	Porridge unsweetened, with milk 3.5 % fat	gachas de avena sin azúcar con leche entera
+bls:X9A2110	Porridge unsweetened, with soya drink	gachas de avena sin azúcar con bebida de soja
+bls:X9A2120	Porridge unsweetened, with water	gachas de avena con agua sin azúcar
+bls:X9A3000	Puff pastry pockets filled with leaf spinach and sheep's milk cheese, baked	hojaldres rellenos de espinacas y queso de oveja
+bls:X9A3010	Puff pastry pockets filled with cheese and boiled ham, baked	hojaldres rellenos de queso y jamón cocido
+bls:X9A3020	Puff pastry pockets with salmon-schmand filling, baked	hojaldres rellenos de salmón y nata agria
+bls:X9A3030	Spring rolls vegetarian filled with vegetables, deep-fried	rollitos de primavera rellenos de verduras fritos
+bls:X9A3040	Vegetable muffins savoury	muffins salados de verduras
+bls:X9A3050	Grissini	grissini
+bls:X9A3060	Pate (shortcrust pastry) with button mushroom-cheese filling, baked	pastel de masa quebrada relleno de champiñones y queso
+bls:X9A3070	Pie (shortcrust pastry) filled with vegetables and pork mince, baked	pastel de masa quebrada relleno de verduras y carne picada de cerdo
+bls:X9A3080	Pirogue filled with minced meat, baked	pirogo con relleno de carne picada
+bls:X9A3090	Pirogue filled with sauerkraut, baked	pirogo relleno de chucrut
+bls:X9A4000	Burrito filled with vegetables, beef mince and cheese	burrito relleno de verduras, carne picada de vacuno y queso
+bls:X9A4010	Burrito filled with vegetables, mushrooms and cheese	burrito relleno de verduras, champiñones y queso
+bls:X9A4020	Pancakes unsweetened, with milk 3.5 % fat, fried in butter	creps sin azúcar con leche entera fritos en mantequilla
+bls:X9A4030	Pankcake casserole with spinach	pastel de creps con espinacas
+bls:X9A5000	Tarte flambee vegetarian	flammkuchen vegetariano
+bls:X9A5010	Pizza Hawaii (with tomato sauce, mozzarella, pineapple, ham)	pizza hawaiana
+bls:X9A5020	Pizza special (with tomato sauce, mozzarella, ham, salami)	pizza especial con jamón y salami
+bls:X9A6000	Frying batter unsweetened, with beer, raw	rebozado sin azúcar con cerveza crudo
+bls:X9A6010	Frying batter unsweetened, with milk 3.5 % fat, raw	rebozado sin azúcar con leche entera crudo
+bls:X9A6020	Puff pastry (with butter) raw	hojaldre con mantequilla crudo
+bls:X9A6030	Yeast dough for pizza/pizza dough, raw	masa de pizza de levadura cruda
+bls:X9A6040	Yeast dough, salted, with milk 3.5 % fat, raw	masa de levadura salada con leche entera cruda
+bls:X9A6050	Wholemeal yeast dough for pizza/wholemeal pizza dough, raw	masa de pizza integral de levadura cruda
+bls:X9A6060	Pankcake dough unsweetened, with milk 3.5 % fat, raw	masa de creps sin azúcar con leche entera cruda
+bls:X9A6070	Vegetarian filling for vegetables	relleno vegetariano para verduras
+bls:Y015132	Pork belly boiled, with warm blood- and pork liver sausage and stewed sauerkraut	panceta cocida con morcilla y salchicha de hígado calientes y chucrut estofado
+bls:Y016242	Pork foreshank (hock) "Eisbein" cured, in aspic	codillo curado en gelatina
+bls:Y021113	"Palatine" bratwurst fried, in brown basic sauce	bratwurst del Palatinado frita en salsa oscura
+bls:Y021312	Bratwurst fried	bratwurst frita
+bls:Y021413	Bratwurst fried, in beer sauce	bratwurst frita en salsa de cerveza
+bls:Y021512	Hot Dog	perrito caliente
+bls:Y022322	Beer ham fried	jamón de cerveza frito
+bls:Y022422	"Berner Würstel" (small sausages filled with cheese, wrapped in bacon) fried	salchichas bernesas rellenas de queso envueltas en beicon fritas
+bls:Y023113	Liver sausages heated	salchichas de hígado calentadas
+bls:Y024113	Blood sausages heated	morcillas calentadas
+bls:Y025022	Fleischkaese fried	fleischkäse frito
+bls:Y025322	Students' schnitzel (fleischkaese fried, with fried egg)	escalope de estudiante
+bls:Y026022	Leberkaese sausage fried	leberkäse frito
+bls:Y033112	German beefsteak fried	hamburguesa alemana frita
+bls:Y033132	Hamburg beefsteak fried	hamburguesa de Hamburgo frita
+bls:Y036122	Meatballs fried	albóndigas fritas
+bls:Y036223	Meatloaf with brown basic sauce	pastel de carne con salsa oscura
+bls:Y036233	Meatloaf with vegetable sauce	pastel de carne con salsa de verduras
+bls:Y036322	"Königsberger Klopse" meatballs	Königsberger Klopse
+bls:Y036333	"Königsberger Klopse" meatballs, with caper sauce from white basic sauce	Königsberger Klopse con salsa de alcaparras
 bls:Y036410	Meatballs of turkey fried	albóndigas de pavo fritas
-bls:Y141123	Beef goulash "Hungarian"	gulash de ternera
+bls:Y036514	Meatballs filled with sheep's milk cheese, fried	albóndigas rellenas de queso de oveja fritas
+bls:Y036533	Meatballs fried, with stewed tomatoes	albóndigas fritas con tomates estofados
+bls:Y036553	Meatballs filled with tomatoes, fried, with tomato sauce (of tomato paste)	albóndigas rellenas de tomate fritas con salsa de concentrado de tomate
+bls:Y036610	Beef meatballs fried	albóndigas de vacuno fritas
+bls:Y036752	Small veal meatballs fried in oven	albóndigas de ternera al horno
+bls:Y038213	Bolognese sauce with beef mince	salsa boloñesa con carne picada de vacuno
+bls:Y063023	Liver pate/liver pudding	paté de hígado
+bls:Y063813	Pirogue with minced meat filling and sauerkraut with apple stewed	pirogo con relleno de carne picada y chucrut con manzana estofado
+bls:Y064033	Minced meat pate (with shortcrust pastry) baked	pastel de carne picada de masa quebrada al horno
+bls:Y067643	Goose liver pate (cooked in a loaf tin)	paté de hígado de oca
+bls:Y073012	Beef and pork offals with cream sauce	casquería de vacuno y cerdo con salsa de nata
+bls:Y0A1000	Pork boiled, in aspic	gelatina con cerdo cocido
+bls:Y0A2000	Puff pastry pockets filled with beef mince and cheese, baked	paquetes de hojaldre rellenos de carne picada de vacuno y queso al horno
+bls:Y0A2010	Small meatballs (pork/veal mince) fried	albóndigas de cerdo y ternera fritas
+bls:Y0A2020	Minced meat-cabbage pudding	pudín de carne picada y col
+bls:Y0A2030	Liver pudding with minced meat	pudín de hígado con carne picada
+bls:Y0A2040	Minced meat filling (for vegatables) raw	relleno de carne picada para verduras crudo
+bls:Y0A2050	Minced meat-rice filling (for vegatables) stewed	relleno de carne picada y arroz para verduras estofado
+bls:Y0A2060	Minced meat dough (for meatballs) raw	masa de carne picada para albóndigas cruda
+bls:Y101123	Cured beef brisket boiled, with horseradish sauce from white basic sauce	pecho de vacuno en salmuera cocido con salsa de rábano picante
+bls:Y111012	Beef fillet marinated, fried in oven	solomillo de vacuno marinado asado
+bls:Y111032	Beef fillet medaillons fried, with fried vegetables	medallones de solomillo de vacuno fritos con verduras salteadas
+bls:Y111123	Beef fillet fried in oven, with sauce	solomillo de vacuno asado con salsa
+bls:Y114012	Beef fillet steak fried, with herb butter	filete de solomillo de vacuno frito con mantequilla de hierbas
+bls:Y114022	Beef fillet steak fried	filete de solomillo de vacuno frito
+bls:Y114033	Beef fillet steak fried, with sauce	filete de solomillo de vacuno frito con salsa
+bls:Y121032	Beef chop fried	chuleta de vacuno frita
+bls:Y131032	Roast beef fried in oven, with fried vegetables	roast beef asado con verduras salteadas
+bls:Y131132	Roast beef fried in oven, without sauce	roast beef asado sin salsa
+bls:Y131223	Roast beef fried in oven, with sauce	roast beef asado con salsa
+bls:Y134012	Beef rump steak fried, with fried onions	filete de cadera de vacuno frito con cebolla frita
+bls:Y134022	Beef rump steak fried	filete de cadera de vacuno frito
+bls:Y135033	Beef pepper steak fried, with sauce	filete de vacuno a la pimienta frito con salsa
+bls:Y135132	Beef steak grilled, with herb butter	filete de vacuno a la parrilla con mantequilla de hierbas
+bls:Y135432	Beef steak grilled	filete de vacuno a la parrilla
+bls:Y141123	Beef goulash "Hungarian"	gulash de vacuno a la húngara
+bls:Y141223	Beef goulash with cream	gulash de vacuno con nata
+bls:Y141423	Beef goulash "Esterhazy"	gulash de vacuno Esterházy
+bls:Y141523	Beef goulash with white cabbage	gulash de vacuno con col blanca
+bls:Y141823	Beef goulash with vegetables	gulash de vacuno con verduras
+bls:Y143132	Beef skewer grilled	brochetas de vacuno a la parrilla
+bls:Y144123	Beef ragout with mushrooms	ragú de vacuno con setas
+bls:Y144323	Beef ragout with sweet pepper	ragú de vacuno con pimiento
+bls:Y144423	Beef ragout	ragú de vacuno
+bls:Y144512	Beef ragout with white wine	vacuno en tiras con vino blanco
+bls:Y146113	Westphalian "Pfefferpotthast" (beef stew with sauce)	pfefferpotthast de Westfalia
+bls:Y151112	Beef olive braised, with sauce	rollitos de vacuno braseados con salsa
+bls:Y160122	Beef fillet fried in oven, without sauce	solomillo de vacuno asado sin salsa
+bls:Y161013	Beef roast with sauce	asado de vacuno con salsa
+bls:Y161212	Beef roast without sauce	asado de vacuno sin salsa
+bls:Y161333	Beef braised with onions and sauce	vacuno braseado con cebolla y salsa
+bls:Y162113	Rhenish "Sauerbraten" marinated beef roast, with sauce	sauerbraten renano con salsa
+bls:Y162212	"Sauerbraten" marinated beef roast, with sauce	sauerbraten con salsa
+bls:Y163213	Boeuf a la mode with sauce	boeuf a la mode con salsa
+bls:Y163313	Braised beef roast with bacon and sauce	asado de vacuno braseado con beicon y salsa
 bls:Y171022	Beef heart, boiled, with herb sauce from white basic sauce	corazón de vacuno cocido con salsa de hierbas
+bls:Y171113	Beef heart, stewed, with sauce	corazón de vacuno estofado con salsa
+bls:Y171123	Beef heart, braised, with sauce	corazón de vacuno braseado con salsa
+bls:Y171223	Beef heart ragout with button mushrooms	ragú de corazón de vacuno con champiñones
+bls:Y171323	Beef heart ragout	ragú de corazón de vacuno
+bls:Y172012	Veal brain fried	sesos de ternera fritos
+bls:Y173012	Beef liver fried, with red wine sauce	hígado de vacuno frito con salsa de vino tinto
+bls:Y173032	Beef liver fried Berlin style	hígado de vacuno frito a la berlinesa
+bls:Y173113	Beef liver fried	hígado de vacuno frito
+bls:Y173623	Beef liver ragout, with brown basic sauce	hígado de vacuno en tiras con salsa oscura
+bls:Y173833	Beef liver ragout sour with sauce	hígado de vacuno en tiras agrio con salsa
+bls:Y174122	Beef lung ragout with sauce	ragú de pulmón de vacuno con salsa
+bls:Y175022	Sour beef tripe boiled, with brown basic sauce	callos de vacuno agrios cocidos con salsa oscura
+bls:Y175133	Fried beef tripe with egg	callos de vacuno fritos con huevo a la boloñesa
+bls:Y179012	Beef tongue boiled (in stock)	lengua de vacuno cocida
+bls:Y179032	Beef tongue boiled, with raisin sauce	lengua de vacuno cocida con salsa de pasas
+bls:Y179222	Ox tongue breaded, fried	lengua de buey empanada frita
+bls:Y179423	Beef tongue ragout with button mushrooms	ragú de lengua de vacuno con champiñones
+bls:Y180012	Beef boiled, with red wine sauce	vacuno cocido con salsa de vino tinto
+bls:Y180033	Beef boiled, with vegetables	vacuno cocido con verduras
+bls:Y180133	Saxon "Zwiebelfleisch" (beef stew with onions)	vacuno con cebolla a la sajona
+bls:Y180512	Beef boiled	vacuno cocido
+bls:Y180622	Beef boiled, with creamed apple-horseradish	vacuno cocido con rábano picante de manzana y nata
+bls:Y180723	Beef boiled, with caper sauce from white basic sauce	vacuno cocido con salsa de alcaparras
+bls:Y181132	Beef rump cap boiled, with horseradish sauce from white basic sauce	cadera de vacuno cocida con salsa de rábano picante
+bls:Y181223	Smoked, cured beef, boiled, in cream sauce from brown basic sauce	vacuno curado ahumado cocido en salsa de nata
+bls:Y182912	Beef goulash simple	gulash de vacuno sencillo
+bls:Y183013	Beef stock	caldo de vacuno
+bls:Y184212	Beef stewed (with fat and salt)	vacuno estofado con grasa y sal
+bls:Y184312	Ox tail braised (with fat and salt)	rabo de buey braseado con grasa y sal
+bls:Y184412	Beef fillet fried in oven (with fat and salt)	filete de vacuno asado con grasa y sal
+bls:Y184512	Beef steak fried (with fat and salt)	filete de vacuno frito con grasa y sal
+bls:Y184612	Beef braised (with fat and salt)	vacuno braseado con grasa y sal
+bls:Y1A1000	Beef goulash	gulash de vacuno
+bls:Y1A2000	Sour beef kidneys	riñones de vacuno agrios
+bls:Y211022	Veal fillet fried in oven	filete de ternera asado
+bls:Y211033	Veal loin stewed, with sauce	lomo de ternera estofado con salsa
+bls:Y213133	Veal medaillons fried, in white wine sauce from white basic sauce	medallones de ternera fritos en salsa de vino blanco
+bls:Y221013	Veal chop fried, with fried button mushrooms	chuleta de ternera frita con champiñones fritos
 bls:Y221122	Veal chop breaded, fried	chuleta de ternera empanada frita
+bls:Y221232	Veal chop fried	chuleta de ternera frita
+bls:Y231022	Veal schnitzel floured, fried	escalope de ternera enharinado frito
+bls:Y231133	Veal schnitzel fried with Parma ham (Saltimbocca) and sauce	saltimbocca de ternera con jamón de Parma y salsa
+bls:Y231233	Veal chop fried, with cream sauce	chuleta de ternera frita con salsa de nata
+bls:Y231322	Viennese schnitzel fried	schnitzel vienés frito
 bls:Y231432	Veal schnitzel grilled with boiled ham and cheese	escalope de ternera con jamón y queso
+bls:Y231632	Veal cordon bleu fried	cordon bleu de ternera frito
+bls:Y235022	Veal steak fried (with fat and salt)	filete de ternera frito con grasa y sal
+bls:Y235032	Veal chop grilled, with basil butter	chuleta de ternera a la parrilla con mantequilla de albahaca
+bls:Y235122	Veal chop stewed	chuleta de ternera estofada
+bls:Y238023	Veal loin fried in oven	lomo de ternera asado
+bls:Y238033	Veal loin fried in oven, with sauce	lomo de ternera asado con salsa
+bls:Y239123	Veal shoulder stewed, with cream sauce	paleta de ternera estofada con salsa de nata
+bls:Y240222	Veal meatballs fried	albóndigas de ternera fritas
+bls:Y241033	Veal goulash	gulash de ternera
+bls:Y242013	Veal ragout Zurich style	ternera en tiras a la zuriquesa
+bls:Y243132	Veal skewer grilled	brocheta de ternera a la parrilla
+bls:Y244023	Veal ragout (ragout fin)	ragú fin de ternera
+bls:Y245013	Veal fricassee	fricasé de ternera
 bls:Y251323	Veal olive fried, with brown basic sauce	rollitos de ternera en salsa
+bls:Y252223	Veal rolled roast with white wine-cream sauce from brown basic sauce	asado enrollado de ternera con salsa de vino blanco y nata
+bls:Y253133	Veal loin roast with brown basic sauce	lomo de ternera asado con salsa oscura
+bls:Y260912	Veal roast without sauce	asado de ternera sin salsa
+bls:Y261013	Veal roast with white wine-cream sauce from brown basic sauce	asado de ternera con salsa de vino blanco y nata
+bls:Y261023	Veal roast with brown basic sauce	asado de ternera con salsa oscura
+bls:Y261123	Veal roast with cream sauce	asado de ternera con salsa de nata
+bls:Y261213	Veal brisket with minced meat filling, fried in oven, with sauce	pechuga de ternera rellena de carne picada asada con salsa
+bls:Y261422	Veal brisket stewed, with brown basic sauce	pechuga de ternera estofada con salsa oscura
+bls:Y263123	Veal goulash with cream	gulash de ternera con nata
+bls:Y271013	Larded veal heart stewed, with cream sauce from brown basic sauce	corazón de ternera mechado estofado con salsa de nata
+bls:Y271033	Veal heart braised, with cream sauce	corazón de ternera braseado con salsa de nata
+bls:Y271133	Veal heart filled, stewed, with cream sauce from brown basic sauce	corazón de ternera relleno estofado con salsa de nata
+bls:Y272112	Veal brain fried with egg	sesos de ternera fritos con huevo
+bls:Y273012	Veal liver fried, with fried onions	hígado de ternera frito con cebolla frita
+bls:Y273032	Veal liver floured, fried	hígado de ternera enharinado frito
+bls:Y273113	Veal liver fried Berlin style	hígado de ternera frito a la berlinesa
+bls:Y273632	Veal liver skewer grilled	brochetas de hígado de ternera a la parrilla
+bls:Y274333	Veal lung ragout sour with sauce	ragú de pulmón de ternera agrio con salsa
+bls:Y277013	Veal kidneys fried, with mustard sauce from brown basic sauce	riñones de ternera fritos con salsa de mostaza
+bls:Y277033	Veal kidney ragout with brown basic sauce	riñones de ternera en tiras con salsa oscura
 bls:Y277133	Veal kidneys sour, fried, with cream sauce from brown basic sauce	riñones de ternera fritos en salsa de nata
+bls:Y278023	Veal sweetbread boiled, with white basic sauce	mollejas de ternera cocidas con salsa blanca
+bls:Y279033	Veal tongue boiled, with white wine sauce from white basic sauce and sour cream	lengua de ternera cocida con salsa de vino blanco y nata agria
+bls:Y291113	Veal knuckle fried in oven, with orange sauce	codillo de ternera asado con salsa de naranja
+bls:Y291133	Veal knuckle fried in oven, with brown basic sauce	codillo de ternera asado con salsa oscura
+bls:Y291223	Ossobuco alla milanese (veal leg slices braised)	ossobuco a la milanesa
+bls:Y292012	Veal boiled (with fat and salt)	ternera cocida con grasa y sal
+bls:Y299113	Leg of veal braised, with cream sauce from brown basic sauce	pierna de ternera braseada con salsa de nata
+bls:Y2A1000	Veal pate (shortcrust pastry) with bacon and boiled ham, baked	pastel de ternera de masa quebrada con beicon y jamón cocido
+bls:Y2A1010	Veal pudding with ham and button mushrooms	pudín de ternera con jamón curado y champiñones
+bls:Y2A2000	Veal knuckle fried in oven, without sauce	codillo de ternera asado sin salsa
+bls:Y2A3000	Veal olive braised, with red wine sauce from brown basic sauce	rollitos de ternera braseados con salsa de vino tinto
+bls:Y301122	Pork foreshank (hock) "Eisbein" cured, boiled	codillo curado cocido
+bls:Y301213	Pork loin spare ribs cured, boiled, with sauerkraut	costillas de cerdo curadas cocidas con chucrut
+bls:Y301322	Pork loin chop cured, breaded, fried	chuleta de cerdo curada empanada frita
+bls:Y301423	Pork loin cured, fried in oven, with brown basic sauce	lomo de cerdo curado asado con salsa oscura
+bls:Y301533	Pork loin spare ribs cured, fried in oven, with red wine sauce from brown basic sauce	costillas de cerdo curadas asadas con salsa de vino tinto
+bls:Y301822	Pork loin chop cured, fried	chuleta de cerdo curada frita
+bls:Y302113	Pork loin spare ribs cured, fried in oven, with cream sauce from brown basic sauce	costillas de cerdo curadas asadas con salsa de nata
+bls:Y302213	Pork loin chop cured, baked in puff pastry	chuleta de cerdo curada en hojaldre al horno
+bls:Y302232	Pork loin chop cured, baked in bread dough	chuleta de cerdo curada en masa de pan al horno
+bls:Y311112	Pork fillet braised, with sauce	solomillo de cerdo braseado con salsa
+bls:Y311132	Pork fillet marinated, grilled, with orange	solomillo de cerdo marinado a la parrilla con naranja
+bls:Y311233	Pork medaillon fried, with apple and sauce	medallón de cerdo frito con manzana y salsa
+bls:Y311323	Pork tenderloin fried in oven, with brown basic sauce	lomo de cerdo asado con salsa oscura
+bls:Y311332	Pork tenderloin wrapped in savoy cabbage, fried in oven	lomo de cerdo envuelto en col de Saboya asado
+bls:Y311522	Pork fillet stewed	solomillo de cerdo estofado
+bls:Y311612	Pork medaillon fried	medallón de cerdo frito
+bls:Y311712	Pork tenderloin fried in oven (with fat and salt)	lomo de cerdo asado con grasa y sal
+bls:Y321012	Pork chop breaded, fried	chuleta de cerdo empanada frita
+bls:Y321222	Pork chop fried	chuleta de cerdo frita
+bls:Y321323	Pork chop stewed, with brown basic sauce	chuleta de cerdo estofada con salsa oscura
+bls:Y322113	Pork neck braised, with brown basic sauce	cuello de cerdo braseado con salsa oscura
+bls:Y332132	Pork schnitzel breaded, fried	escalope de cerdo empanado frito
+bls:Y332212	Pork schnitzel fried	escalope de cerdo frito
+bls:Y332532	"Jaegerschnitzel" pork schnitzel fried, with mushroom sauce	escalope de cazador con salsa de setas
+bls:Y332832	Pork cordon bleu fried	cordon bleu de cerdo frito
+bls:Y333831	Pork schnitzel fried, with brown basic sauce	escalope de cerdo frito con salsa oscura
+bls:Y335012	Pork steak fried	filete de cerdo frito
+bls:Y336022	Shashlik with pork grilled	shashlik de cerdo a la parrilla
+bls:Y336132	Meat skewer (veal and pork) grilled	brochetas de ternera y cerdo a la parrilla
+bls:Y341013	Pork goulash with tomatoes and onions	gulash de cerdo con tomate y cebolla
+bls:Y341023	Pork goulash	gulash de cerdo
+bls:Y341113	"Szegediner" pork goulash	gulash de cerdo estilo Szeged
+bls:Y341313	"Debreziner" bean goulash with pork	gulash de alubias con cerdo estilo Debrecen
+bls:Y344013	Pork ragout	ragú de cerdo
+bls:Y344023	Pork ragout with vegetables	ragú de cerdo con verduras
+bls:Y346013	"Schweinepfeffer" savoury pork goulash	gulash de cerdo a la pimienta
+bls:Y351013	Pork olive filled with sauerkraut braised, with sauce	rollitos de cerdo rellenos de chucrut braseados con salsa
+bls:Y351023	Pork olive braised, with brown basic sauce	rollitos de cerdo braseados con salsa oscura
+bls:Y351032	Pork olive braised, without sauce	rollitos de cerdo braseados sin salsa
+bls:Y352013	Rolled pork roast with sauce	asado de cerdo enrollado con salsa
+bls:Y352112	Pork roast with brown basic sauce	asado de cerdo con salsa oscura
+bls:Y352212	Pork roast without sauce	asado de cerdo sin salsa
+bls:Y361123	Pork loin braised, with brown basic sauce	lomo de cerdo braseado con salsa oscura
+bls:Y361233	Pork breast filled with minced meat fried in oven, with cream sauce from brown basic sauce	pecho de cerdo relleno de carne picada asado con salsa de nata
+bls:Y361623	Pork roast with sauce, mixed vegetables and boiled salted potatoes	asado de cerdo con salsa, verduras mixtas y patatas cocidas
+bls:Y362012	Pork hock braised, without sauce	codillo de cerdo braseado sin salsa
+bls:Y362023	Pork hock braised, with sauce	codillo de cerdo braseado con salsa
+bls:Y363323	Pork loin braised, with vegetables and sauce	lomo de cerdo braseado con verduras y salsa
+bls:Y371013	Larded pork heart stewed, with cream sauce from brown basic sauce	corazón de cerdo mechado estofado con salsa de nata
+bls:Y371033	Pork heart ragout	ragú de corazón de cerdo
+bls:Y372012	Pork brain fried with egg	sesos de cerdo fritos con huevo
+bls:Y373012	Pork liver floured, fried	hígado de cerdo enharinado frito
+bls:Y373032	Pork liver fried, with brown basic sauce	hígado de cerdo frito con salsa oscura
+bls:Y373223	Pork liver ragout with apple, onions and brown basic sauce	hígado de cerdo en tiras con manzana, cebolla y salsa oscura
+bls:Y373323	Pork liver slices stewed, with cream sauce from brown basic sauce	hígado de cerdo en rodajas estofado con salsa de nata
+bls:Y373622	Palatine pork liver dumplings cooked	bolas de hígado de cerdo a la palatina cocidas
+bls:Y374113	Pork lung sour, boiled, with white basic sauce	pulmón de cerdo agrio cocido con salsa blanca
+bls:Y375213	Pork stomach stuffed, cooked	estómago de cerdo relleno cocido
+bls:Y377013	Pork kidney ragout sour, with brown basic sauce	riñones de cerdo en tiras agrios con salsa oscura
+bls:Y377323	Pork kidneys fried, with mushrooms and brown basic sauce	riñones de cerdo fritos con setas y salsa oscura
+bls:Y379032	Pork tongue boiled, with white wine sauce from white basic sauce	lengua de cerdo cocida con salsa de vino blanco
+bls:Y380212	Pork belly boiled, with sauerkraut with apple stewed	panceta cocida con chucrut y manzana
+bls:Y381352	Pork belly boiled	panceta cocida
+bls:Y384112	Gyros (pork) fried	gyros de cerdo frito
+bls:Y392023	Pork shoulder boiled, with herb sauce from white basic sauce	paleta de cerdo cocida con salsa de hierbas
+bls:Y395222	Pork spare ribs boiled	costillas de cerdo cocidas
+bls:Y396213	Pork belly filled, fried in oven	panceta rellena asada
+bls:Y396512	Pork meatballs fried	albóndigas de cerdo fritas
+bls:Y397812	Pork belly fried in oven (with fat and salt)	panceta asada con grasa y sal
+bls:Y3A1000	Pirogue with cured pork loin chop, baked	pirogo de cerdo curado en masa de levadura
+bls:Y3A2000	Pork steak fried, with carrots and peas stewed	filete de cerdo frito con zanahorias y guisantes estofados
+bls:Y404123	Small lamb meatballs with curry in tomato sauce (of tomato paste)	albóndigas de cordero con curry en salsa de tomate
+bls:Y410012	Mutton fillet fried	filete de carnero frito
+bls:Y413032	Lamb fillet fried	filete de cordero frito
+bls:Y421012	Mutton chop fried	chuleta de carnero frita
+bls:Y421233	Lamb chops marinated, grilled	chuletas de cordero marinadas a la parrilla
+bls:Y422032	Lamb chop fried	chuleta de cordero frita
+bls:Y435112	Mutton steak fried	entrecot de carnero frito
+bls:Y436232	Lamb skewer with vegetables, grilled	brochetas de cordero con verduras a la parrilla
+bls:Y441133	Mutton goulash	gulash de carnero
+bls:Y444113	Lamb ragout oriental style	ragú de cordero a la oriental
+bls:Y444123	Lamb ragout with carrots	ragú de cordero con zanahorias
+bls:Y444523	Mutton ragout with green beans	ragú de carnero con judías verdes
+bls:Y446123	Lamb curry (with sauce)	curry de cordero
+bls:Y461113	Lamb roast with red wine sauce from brown basic sauce	asado de cordero con salsa de vino tinto
+bls:Y461132	Lamb roast without sauce	asado de cordero sin salsa
+bls:Y462113	Lamb loin fried in oven, with rosemary and sauce	lomo de cordero asado con romero y salsa
+bls:Y463013	Braised lamb roast with sauce	asado de cordero braseado con salsa
+bls:Y497113	Leg of lamb fried in oven Provencal style, with sauce	pierna de cordero asada a la provenzal con salsa
+bls:Y497412	Leg of lamb braised with onions and mustard, with brown basic sauce	pierna de cordero braseada con cebolla y mostaza en salsa oscura
+bls:Y497623	Mutton stewed with white cabbage (Irish Stew)	carnero estofado con col (irish stew)
+bls:Y4A1000	Small lamb meatballs cooked	albóndigas de cordero cocidas
+bls:Y504023	Game ragout with brown basic sauce	ragú de caza con salsa oscura
+bls:Y504233	Game goulash with porcini mushrooms and game sauce from brown basic sauce	gulash de caza con boletus en salsa de caza
+bls:Y504322	Roe deer schnitzel breaded, fried	escalope de corzo empanado frito
+bls:Y504422	Game meatballs fried	albóndigas de caza fritas
+bls:Y514233	Venison ragout with brown basic sauce and red wine	ragú de ciervo con salsa oscura y vino tinto
+bls:Y516033	Venison roast with game sauce from brown basic sauce	asado de ciervo con salsa de caza
+bls:Y516112	Venison roast without sauce	asado de ciervo sin salsa
 bls:Y522133	Roe deer saddle fried in oven, with game sauce from brown basic sauce	lomo de corzo asado con salsa de caza
+bls:Y524233	Roe deer ragout	ragú de corzo
+bls:Y525023	"Rehpfeffer" savory roe deer goulash	gulash de corzo a la pimienta
+bls:Y526013	Roe deer roast with game sauce from brown basic sauce	asado de corzo con salsa de caza
+bls:Y527012	Leg of roe deer fried in oven (with fat and salt)	pierna de corzo asada con grasa y sal
+bls:Y531023	Marinated hare roast with sauce	asado de liebre marinada con salsa
+bls:Y534133	Hare ragout	ragú de liebre
+bls:Y536123	Hare roast with brown basic sauce and sour cream	asado de liebre con salsa oscura y nata agria
+bls:Y536133	Rabbit roast with brown basic sauce with cream	asado de conejo con salsa oscura de nata
 bls:Y536212	Rabbit roast without sauce	conejo asado sin salsa
+bls:Y546033	Leg of wild boar braised, with game sauce from brown basic sauce	pierna de jabalí braseada con salsa de caza
+bls:Y546123	Wild boar roast with bacon and game sauce from brown basic sauce	asado de jabalí con beicon y salsa de caza
+bls:Y556113	Wild duck braised, with bacon and brown basic sauce	pato silvestre braseado con beicon y salsa oscura
+bls:Y560123	Paprika chicken stewed, with sauce	pollo con pimentón estofado en salsa
+bls:Y560312	Chicken grilled	pollo a la brasa
+bls:Y560322	Chicken fried in oven (roast chicken)	pollo asado al horno
+bls:Y560723	Pilaf with stewed chicken breast fillet and sauce	pilaf con pechuga de pollo estofada y salsa
+bls:Y561422	Chicken in frying batter fried	pollo frito enrebozado a la vienesa
 bls:Y562032	Chicken breast fillet fried	filete de pechuga de pollo frito
+bls:Y562112	Chicken breast fillet fried, with stewed mixed vegetables	filete de pechuga de pollo frito con verduras mixtas estofadas
+bls:Y562123	Chicken breast fillet fried, with boiled asparagus and white basic sauce	filete de pechuga de pollo frito con espárragos cocidos y salsa blanca
+bls:Y562133	Chicken breast fillet fried, with braised cucumbers	filete de pechuga de pollo frito con pepinos estofados
+bls:Y563112	Chicken cordon bleu fried	cordon bleu de pollo frito
+bls:Y563212	Turkey cordon bleu fried	cordon bleu de pavo frito
+bls:Y564113	Chicken fricassee with button mushrooms	fricasé de pollo con champiñones
+bls:Y564123	Chicken fricassee with white wine	fricasé de pollo con vino blanco
+bls:Y564523	Chicken ragout with vegetables	ragú de pollo con verduras
+bls:Y567133	Chicken hearts braised, in white wine sauce from white basic sauce	corazones de pollo braseados en salsa de vino blanco
+bls:Y568223	Chicken boiled, with white basic sauce and sour cream	pollo cocido en salsa blanca con nata agria
+bls:Y569122	Chicken thigh fried in oven	muslo de pollo asado
+bls:Y569523	Chicken thigh boiled, in curry sauce	muslo de pollo cocido en salsa de curry
+bls:Y569533	Chicken thigh marinated, fried, with curry-yogurt sauce	muslo de pollo marinado frito con salsa de yogur y curry
+bls:Y576113	Duck fried in oven, with oranges and sauce	pato asado con naranjas y salsa
+bls:Y576133	Duck fried in oven, with brown basic sauce	pato asado con salsa oscura
+bls:Y576312	Duck breast fried in oven (with fat and salt)	pechuga de pato asada con grasa y sal
+bls:Y580013	Turkey fried in oven, with cream sauce from brown basic sauce	pavo asado con salsa de nata
+bls:Y580033	Turkey filled, fried in oven, with brown basic sauce	pavo relleno asado con salsa oscura
+bls:Y581233	Turkey with chestnut filling fried in oven, with lingonberry jam and brown basic sauce	pavo relleno de castañas asado con mermelada de arándanos rojos y salsa oscura
+bls:Y583212	Turkey schnitzel fried	escalope de pavo frito
+bls:Y583312	Turkey schnitzel breaded, fried	escalope de pavo empanado frito
+bls:Y584123	Turkey ragout with sweet pepper and sour cream	ragú de pavo con pimiento y nata agria
+bls:Y584223	Turkey ragout with tomatoes and button mushrooms	ragú de pavo con tomate y champiñones
+bls:Y584412	Turkey ragout with white wine and sour cream	pavo en tiras con vino blanco y nata agria
+bls:Y586113	Goose fried in oven, with brown basic sauce	oca asada con salsa oscura
+bls:Y591112	Chicken breast fillet breaded, fried	filete de pechuga de pollo empanado frito
+bls:Y593112	Duck meat in frying batter (with beer) deep-fried	carne de pato en rebozado de cerveza frita en abundante aceite
+bls:Y599012	Chicken thigh boiled (with fat and salt)	muslo de pollo cocido con grasa y sal
+bls:Y599112	Wrap filled with salad and fried chicken breast fillet	wrap de lechuga con filete de pechuga de pollo frito
+bls:Y5A1000	Chicken breast fillet with cornflakes breading, fried	filete de pechuga de pollo rebozado en cornflakes frito
+bls:Y5A2000	Chicken meatballs with button mushrooms, fried	albóndigas de pollo con champiñones fritas
+bls:Y5A3000	Chicken liver fried	hígado de pollo frito
+bls:Y5A4000	Chicken ragout fin	ragú fin de pollo
+bls:Y610232	Herring fillet breaded, fried	filete de arenque empanado frito
+bls:Y610412	Herring fillet grilled	filete de arenque a la parrilla
+bls:Y610512	Matjes herring roll	bocadillo de matjes
+bls:Y610610	Matjes herring with onions	matjes con cebolla
+bls:Y610712	Baked fish roll with cod	bocadillo de bacalao rebozado frito
+bls:Y610920	Pickled herring fillet in sauce "Heringsstip"	arenque marinado en salsa heringsstip
+bls:Y611012	Matjes herring fillet homemade	matjes a la casera
+bls:Y611410	Pickled herring fillet, in cream sauce	arenque en salsa de nata
+bls:Y611632	Fried herring marinated, drained	arenque frito marinado escurrido
+bls:Y611813	Herring cooked, in tomato sauce from white basic sauce	arenque cocido en salsa de tomate
+bls:Y612110	Pickled herring fillet, filled, rolled, drained	rollmops marinado escurrido
+bls:Y612413	Herring cooked, with horseradish sauce	arenque cocido con salsa de rábano picante
+bls:Y613312	Mackerel stewed, savory style	caballa estofada especiada
+bls:Y614323	Tuna fried, in white wine sauce from white basic sauce	atún frito en salsa de vino blanco
+bls:Y614533	Tuna steak marinated, grilled	filete de atún marinado a la parrilla
+bls:Y616133	Sardines with spinach filling baked	sardinas rellenas de espinacas al horno
+bls:Y616233	Sardines in white wine, baked	sardinas en vino blanco al horno
+bls:Y616433	Sardines with fennel seeds, baked	sardinas con semillas de hinojo estofadas
+bls:Y621712	Cod stewed on Asian vegetables	bacalao estofado sobre verduras asiáticas
+bls:Y621922	Cod fried, with stewed sweet peppers and tomatoes	bacalao frito con pimientos y tomates estofados
+bls:Y622112	Cod poached (without sauce)	bacalao escalfado sin salsa
+bls:Y622232	Cod fillet breaded, fried	filete de bacalao empanado frito
+bls:Y622633	Cod fillet in white wine sauce from white basic sauce with cream	filete de bacalao en salsa de vino blanco con nata
+bls:Y622733	Cod fillet filled, with white basic sauce with cream, baked	filete de bacalao relleno al horno en salsa blanca con nata
+bls:Y622812	Fried potatoes and fish pan with cod fillet	sartén de patatas fritas con filete de bacalao
+bls:Y622913	Cod fillet with vegetables, baked in foil	filete de bacalao con verduras al horno en papel de aluminio
+bls:Y623012	Saithe fillet stewed with white wine	filete de carbonero estofado con vino blanco
+bls:Y623133	Saithe fillet stewed, in white wine sauce from white basic sauce with cream	filete de carbonero estofado en salsa de vino blanco con nata
+bls:Y623312	Saithe fillet breaded, fried	filete de carbonero empanado frito
+bls:Y623523	Saithe risotto	risotto de carbonero
+bls:Y623612	Saithe fillet stewed (with fat and salt)	filete de carbonero estofado con grasa y sal
+bls:Y623723	Saithe roulade with bacon filling baked, with sauce	rollito de carbonero relleno de beicon al horno con salsa
+bls:Y623823	Saithe fillet steamed, with herb sauce from white basic sauce	filete de carbonero al vapor con salsa de hierbas
+bls:Y623912	Saithe fillet floured, fried	filete de carbonero enharinado frito
+bls:Y624112	Hake fillet poached (without sauce)	filete de merluza escalfado sin salsa
 bls:Y625112	Haddock fillet poached (without sauce)	filete de eglefino escalfado
+bls:Y626132	Ling breaded, fried	maruca empanada frita
+bls:Y627112	Sushi with salmon	sushi de salmón
+bls:Y631122	Plaice fillet floured, fried	filete de solla enharinado frito
+bls:Y631232	Plaice fillet with parsley breaded, fried	filete de solla empanado con perejil frito
+bls:Y631413	Plaice stewed, with white wine sauce from white basic sauce	solla estofada con salsa de vino blanco
+bls:Y632132	Plaice fried with bacon	solla a la hamburguesa frita con beicon
+bls:Y633212	Sole fillet fried	filete de lenguado frito
+bls:Y633533	Sole fillet gratinated	filete de lenguado gratinado
+bls:Y634113	Sole fillet stewed, in tomato sauce (of tomato paste)	filete de lenguado estofado en salsa de tomate
+bls:Y634233	Sole fillet stewed, in white wine sauce from white basic sauce	filete de lenguado estofado en salsa de vino blanco
+bls:Y634433	Sole floured, fried	lenguado enharinado frito
+bls:Y634732	Sole fillet grilled	filete de lenguado a la parrilla
+bls:Y635132	Flounder breaded, fried	platija empanada frita
+bls:Y635412	Flounder floured, fried	platija enharinada frita
+bls:Y637132	Halibut breaded, fried	fletán empanado frito
+bls:Y637332	Halibut fillet grilled	filete de fletán a la parrilla
+bls:Y637422	Halibut fillet poached (without sauce)	filete de fletán escalfado sin salsa
+bls:Y637513	Halibut fried American style	fletán frito a la americana
+bls:Y637812	Halibut floured, fried	fletán enharinado frito
+bls:Y638132	Turbot breaded, fried	rodaballo empanado frito
+bls:Y638212	Turbot floured, fried	rodaballo enharinado frito
+bls:Y638332	Turbot fillet poached (without sauce)	filete de rodaballo escalfado sin salsa
+bls:Y639132	Witch breaded, fried	bruja empanada frita
+bls:Y639212	Witch floured, fried	bruja enharinada frita
+bls:Y640112	Salmon stewed on vegetables	salmón estofado sobre verduras
+bls:Y640312	Salmon steaks fried	filetes de salmón fritos
+bls:Y640413	Salmon fried, in white basic sauce with cream	salmón frito en salsa blanca con nata
+bls:Y640432	Salmon steamed with yogurt-rosemary dip	salmón al vapor con dip de yogur y romero
+bls:Y642112	Trout poached in stock with vinegar	trucha azul escalfada en agua avinagrada
+bls:Y642232	Trout breaded, fried	trucha empanada frita
+bls:Y642332	Trout fillet fried	filete de trucha frito
+bls:Y642412	Trout floured, fried	trucha enharinada frita
+bls:Y644112	Whitefish poached (without sauce)	corégono escalfado sin salsa
+bls:Y646132	Whitefish fillet baked in almond crust	filete de corégono en costra de almendra al horno
+bls:Y650232	Carp breaded, deep-fried	carpa empanada frita en abundante aceite
+bls:Y650313	Carp poached in root vegetable stock	carpa escalfada en caldo de raíces
+bls:Y650412	Carp poached in stock with vinegar	carpa azul escalfada en agua avinagrada
+bls:Y650513	Carp poached Polish style	carpa escalfada a la polaca
+bls:Y650732	Carp marinated, grilled	carpa marinada a la parrilla
+bls:Y650812	Carp in frying batter (with beer) deep-fried	carpa en rebozado de cerveza frita en abundante aceite
+bls:Y652112	Tench poached in root vegetable stock	tenca escalfada en caldo de raíces
+bls:Y652232	Tench breaded, deep-fried	tenca empanada frita en abundante aceite
+bls:Y652313	Tench stewed, with mustard sauce from white basic sauce	tenca estofada con salsa de mostaza
+bls:Y660213	Redfish fillet stewed, in herb sauce from white basic sauce	filete de gallineta estofado en salsa de hierbas
+bls:Y660313	Redfish fillet stewed, in tomato sauce (of tomato paste)	filete de gallineta estofado en salsa de tomate
+bls:Y660422	Redfish breaded, fried	gallineta empanada frita
+bls:Y660912	Redfish fillet stewed (with fat and salt)	filete de gallineta estofado con grasa y sal
+bls:Y661012	Perch floured, fried	perca enharinada frita
+bls:Y661313	Redfish poached Polish style	gallineta escalfada a la polaca
+bls:Y662032	Swordfish poached (without sauce)	pez espada escalfado sin salsa
+bls:Y662132	Swordfish roulades fried	rollitos de pez espada fritos
+bls:Y662233	Swordfish stewed (with fat and salt)	pez espada estofado con grasa y sal
+bls:Y662433	Swordfish fried, with stewed sweet-peppers, tomatoes and cucumbers	pez espada frito con pimientos, tomates y pepinos estofados
+bls:Y663132	Pike-perch fillet breaded, fried	filete de lucioperca empanado frito
+bls:Y663232	Pike-perch fillet floured, fried	filete de lucioperca enharinado frito
+bls:Y670042	Eel in red wine marinated, poached	anguila marinada en vino tinto escalfada
+bls:Y670113	Eel poached, in herb sauce	anguila escalfada en salsa verde
+bls:Y670533	Eel poached, in tomate sauce (of canned tomatoes), gratinated	anguila en salsa de tomate gratinada
+bls:Y670632	Eel with bacon baked	anguila con beicon al horno
+bls:Y672232	Pike breaded, fried	lucio empanado frito
+bls:Y672413	Pike stewed, with white wine sauce from white basic sauce and sour cream	lucio estofado en salsa de vino blanco con nata agria
+bls:Y672513	Pike fried in oven Baden style	lucio asado a la badense
+bls:Y672713	Pike filled, baked	lucio relleno al horno
+bls:Y682132	Lobster "Thermidor" (gratinated with cheese and sauce)	bogavante thermidor
+bls:Y682333	Lobster cooked, in curry sauce from white basic sauce	bogavante cocido en salsa de curry
+bls:Y683312	Mussels steamed, in white wine stock	mejillones al vapor en vino blanco
+bls:Y684562	Scallops fried Provencal style	vieiras fritas a la provenzal
+bls:Y686132	Cuttlefish rings in frying batter (with beer) deep-fried	anillas de calamar en rebozado de cerveza fritas en abundante aceite
+bls:Y686212	Cuttlefish floured, fried	calamares enharinados fritos
+bls:Y686433	Cuttlefish tubes filled, grilled	tubos de calamar rellenos a la parrilla
+bls:Y686612	Cuttlefish rings in beer batter deep-fried, with tsatsiki	anillas de calamar en rebozado de cerveza fritas en abundante aceite con tzatziki
+bls:Y687163	Snails boiled in stock	caracoles cocidos en caldo
+bls:Y687363	Snails baked Burgundy style	caracoles al horno a la borgoñona
+bls:Y688113	Scampi cooked, in spicy tomato sauce (of canned tomatoes)	cigalas cocidas en salsa de tomate picante
+bls:Y689132	King prawns marinated, grilled	gambones marinados a la parrilla
+bls:Y690313	Redfish fried, with white basic sauce with cream	gallineta frita en salsa blanca con nata
+bls:Y690613	Redfish casserole	cazuela de gallineta
+bls:Y690633	Redfish casserole with vegetables	cazuela de gallineta con verduras
+bls:Y691123	Redfish ragout	ragú de gallineta
+bls:Y691432	Fishcakes with saithe fried	albóndigas de pescado con carbonero fritas
+bls:Y691610	Swordfish-salad with mustard marinade	ensalada de pez espada con marinada de mostaza
+bls:Y691913	Hake fricassee	fricasé de merluza
+bls:Y692123	Small fishcakes with redfish cooked and vegetable sauce from white basic sauce	bolas de pescado con gallineta cocidas en salsa de verduras
+bls:Y692212	Small fishcakes with redfish cooked	bolas de pescado con gallineta cocidas
+bls:Y692313	Hake with mustard sauce from white basic sauce, gratinated	merluza con salsa de mostaza gratinada
+bls:Y692423	Fish curry with saithe and peanuts	curry de pescado con carbonero y cacahuetes
+bls:Y692623	Fish goulash with saithe and sweet peppers	gulash de pescado con carbonero y pimiento
+bls:Y692723	Fish goulash with saithe Hungarian style	gulash de pescado con carbonero a la húngara
+bls:Y692943	Ragout fin with redfish	ragú fin con gallineta
+bls:Y693312	Sole fried in butter, with stewed mixed vegetables and boiled (salted) potatoes	lenguado frito en mantequilla con verduras mixtas y patatas cocidas
+bls:Y693342	Sole fried in butter	lenguado frito en mantequilla
+bls:Y693522	Cod fillet stewed (with fat and salt)	filete de bacalao estofado con grasa y sal
+bls:Y693723	Cod fillet in frying batter (with beer) deep-fried	filete de bacalao en rebozado de cerveza frito en abundante aceite
+bls:Y693752	Redfish fillet in frying batter (with milk) deep-fried	filete de gallineta en rebozado de leche frito en abundante aceite
+bls:Y693842	Redfish fillet grilled	filete de gallineta a la parrilla
+bls:Y693932	Fish and chips (with redfish)	fish and chips con gallineta
+bls:Y694723	Redfish with button mushroom sauce, gratinated	gallineta con salsa de champiñones gratinada
+bls:Y694823	Cod fillet stewed, with vegetable sauce from white basic sauce	filete de bacalao estofado en salsa de verduras
+bls:Y694923	Cod fillet stewed, with lemon butter and sauce	filete de bacalao estofado con mantequilla de limón y salsa
+bls:Y695112	Fish fingers (with Alaska pollock) fried	palitos de pescado de abadejo fritos
+bls:Y695322	Fish slices of saithe grilled	rodajas de carbonero a la parrilla
+bls:Y695623	Hamburg fried fish (fried redfish with fried potatoes and mustard sauce)	pannfisch de Hamburgo con gallineta
+bls:Y697522	Fish croquettes with saithe deep-fried	croquetas de pescado con carbonero fritas en abundante aceite
+bls:Y697612	Anglerfish fried (with fat and salt)	rape frito con grasa y sal
+bls:Y6A1000	Herring fillet floured, fried	filete de arenque enharinado frito
+bls:Y6A1010	Tuna dip with mayonnaise	paté de atún con mayonesa
+bls:Y6A1020	Tuna steak fried with ham	filete de atún frito con jamón
+bls:Y6A2000	Salmon in puff pastry baked	salmón en hojaldre al horno
+bls:Y6A2010	Salmon in puff pastry baked, with boiled asparagus and white basic sauce	salmón en hojaldre al horno con espárragos cocidos y salsa blanca
+bls:Y6A2020	Salmon fried in white basic sauce with cream and risi-pisi	salmón frito en salsa blanca con nata y risi-pisi
+bls:Y6A2030	Salmon-spinach casserole	cazuela de salmón y espinacas
+bls:Y6A3000	Redfish casserole with potatoes and spinach	cazuela de gallineta con patatas y espinacas
+bls:Y6A3010	Redfish fillet poached (without sauce)	filete de gallineta escalfado sin salsa
+bls:Y6A4000	Crayfish cooked, in white basic sauce with cream	cangrejos de río cocidos en salsa blanca con nata
+bls:Y710142	Fried egg	huevo frito
+bls:Y710162	Fried egg in butter	huevo frito en mantequilla
+bls:Y710243	Baked egg on stewed spinach with tomatoes	huevo al horno sobre espinacas estofadas con tomate
+bls:Y710352	Fried egg with boiled ham	huevo frito con jamón cocido
+bls:Y710362	Fried egg with bacon	huevo frito con beicon
+bls:Y713152	Eggs in frying batter fried	huevos enrebozados fritos
+bls:Y715142	Eggs with cheese gratinated	huevos gratinados con queso
+bls:Y720143	Scrambled eggs fried	huevos revueltos
+bls:Y720163	Scrambled eggs fried in butter	huevos revueltos en mantequilla
+bls:Y720443	Scrambled eggs fried with chanterelles	huevos revueltos con rebozuelos
+bls:Y720452	Scrambled eggs fried with chanterelles and bacon	huevos revueltos con rebozuelos y beicon
+bls:Y720462	Scrambled eggs fried with chanterelles and boiled ham	huevos revueltos con rebozuelos y jamón cocido
+bls:Y720643	Scrambled eggs fried with bacon	huevos revueltos con beicon
+bls:Y720662	Scrambled eggs fried with button mushrooms	huevos revueltos con champiñones
+bls:Y720863	Scrambled eggs fried with cheese and boiled ham	huevos revueltos con queso y jamón cocido
+bls:Y722243	Scrambled eggs fried with tomatoes	huevos revueltos con tomate
+bls:Y722353	Scrambled eggs fried with sweet peppers	huevos revueltos con pimiento
+bls:Y724153	Scrambled eggs fried with Leberkaese sausage	huevos revueltos con leberkäse
+bls:Y724253	Scrambled eggs fried with bologna and onions	huevos revueltos con salchichón y cebolla
+bls:Y725153	Scrambled eggs fried, with smoked salmon	huevos revueltos con salmón ahumado
+bls:Y725212	Scrambled eggs fried with boiled ham	huevos revueltos con jamón cocido
+bls:Y725412	Scrambled eggs fried with herbs	huevos revueltos con hierbas
+bls:Y725512	Scrambled eggs fried with onions	huevos revueltos con cebolla
+bls:Y730163	Omelette fried	tortilla francesa
+bls:Y730243	Omelette fried with cheese	tortilla francesa con queso
+bls:Y730343	Omelette fried with herbs	tortilla francesa con hierbas
+bls:Y730443	Omelette fried, filled with blanched vegetables and boiled ham	tortilla francesa rellena de verduras blanqueadas y jamón cocido
+bls:Y730463	Omelette fried with tomatoes	tortilla francesa con tomate
+bls:Y731163	Omelette fried, filled with stewed button mushrooms	tortilla francesa rellena de champiñones estofados
+bls:Y731263	Herb omelette fried with chanterelles	tortilla francesa de hierbas con rebozuelos
+bls:Y733143	Omelette souffle sweetened, fried, drizzled with lemon juice	tortilla soufflé dulce con zumo de limón
+bls:Y733242	Omelette souffle fried with vegetables	tortilla soufflé con verduras
+bls:Y734142	Omelette fried with potatoes and boiled ham	tortilla francesa con patatas y jamón cocido
+bls:Y740162	Eggs boiled	huevos cocidos
+bls:Y740342	Eggs boiled, salted	huevos cocidos salados
+bls:Y740453	Eggs soft boiled, with mustard sauce	huevos pasados por agua con salsa de mostaza
 bls:Y740540	Russian eggs	huevos rellenos
+bls:Y740842	Eggs poached	huevos escalfados
+bls:Y741353	Egg fricassee with mushroom sauce from white basic sauce	fricasé de huevo con salsa de setas
+bls:Y741952	Egg custard with herbs, diced	cuajada de huevo con hierbas
+bls:Y742250	Eggs boiled, with remoulade sauce, diluted with sour cream	huevos cocidos con salsa remoulade y nata agria
+bls:Y742350	Eggs poached, with horseradish-mayonnaise	huevos escalfados con mayonesa de rábano picante
+bls:Y743253	Eggs soft boiled, with bacon sauce from brown basic sauce	huevos pasados por agua con salsa de beicon
+bls:Y744123	Egg fricassee with cauliflower and asparagus in white basic sauce, with risotto	fricasé de huevo en salsa blanca con coliflor, espárragos y risotto
+bls:Y760142	Quark dumplings (with sugar and cinnamon)	bolas de quark con azúcar y canela
+bls:Y760152	Quark dumplings with sweet cherry compote, sugar and cinnamon	bolas de quark con compota de cerezas, azúcar y canela
+bls:Y771140	Quark, min. 40 % fat in dry matter, with chives	quark entero con cebollino
+bls:Y771240	Quark, < 10 % fat in dry matter, with chives	quark desnatado con cebollino
+bls:Y771350	Potatoes boiled, with herb quark and butter	patatas cocidas con quark de hierbas y mantequilla
+bls:Y771510	Quark, < 10 % fat in dry matter, with herbs	quark desnatado con hierbas
+bls:Y780043	Rolls gratinated with Tilsit cheese and sour cream	panecillos gratinados con queso Tilsit y nata agria
+bls:Y780163	Cheese fondue (with alcohol)	fondue de queso
+bls:Y780543	Cheese slices breaded, fried	queso en rodajas empanado frito
+bls:Y780613	Cheese pudding cooked in bain-marie	pudín de queso al baño maría
+bls:Y780743	Cheese in puff pastry baked	queso en hojaldre al horno
+bls:Y780863	Camembert cheese breaded, deep-fried	camembert empanado frito en abundante aceite
+bls:Y781112	Mozzarella cheese breaded, deep-fried	mozzarella empanada frita en abundante aceite
+bls:Y782012	Cheese souffle	soufflé de queso
+bls:Y782613	Cheese-white bread casserole	cazuela de queso y pan blanco
+bls:Y790160	Herb butter	mantequilla de hierbas
+bls:Y790240	Horseradish butter	mantequilla de rábano picante
+bls:Y790340	Mustard butter	mantequilla de mostaza
+bls:Y7A1000	Souffle with smoked trout	soufflé de trucha ahumada
+bls:Y7A2000	Dip made from sheep's milk cheese	dip de queso de oveja
+bls:Y7A2010	Koch Kaese (German cooked cheese) homemade	queso cocido casero (kochkäse)
+bls:Y7A2012	Sheep's milk camembert cheese breaded, deep-fried	camembert de oveja empanado frito en abundante aceite
+bls:Y7A2020	Salmon-cream cheese with dill weed	crema de salmón y eneldo con queso fresco
+bls:Y7A2030	Oven cheese baked with garlic and thyme	queso al horno con ajo y tomillo
+bls:Y7A2040	Sheep's milk cheese baked with tomatoes and olives	queso de oveja (feta) al horno con tomate y aceitunas
+bls:Y7A3000	Basil butter	mantequilla de albahaca
+bls:Y7A3010	Lemon butter	mantequilla de limón
 bls:Y810242	Apple dumplings	bolas de masa con manzana
+bls:Y812343	Semolina slices fried, with sugar and cinnamon	rodajas de sémola fritas con azúcar y canela
+bls:Y812512	"Karthäuser" dumplings (made from rolls) fried, with sugar and cinnamon	bolas kartäuser fritas con azúcar y canela
+bls:Y812962	French toast fried, with sugar and cinnamon	torrijas fritas con azúcar y canela
+bls:Y813142	"Savarin" (yeast ring cake, drizzled with white wine)	savarín con vino blanco
+bls:Y813162	"Savarin" (yeast ring cake, drizzled with fruit juice)	savarín con zumo de fruta
+bls:Y813262	"Baba" (yeast ring cake, drizzled with rum)	baba con ron
+bls:Y813442	"Dampfnudeln" yeast dumplings sweetened fried	dampfnudeln dulces
+bls:Y813452	"Dampfnudeln" yeast dumplings salted fried	dampfnudeln saladas
+bls:Y813552	Small yeast pancakes fried	tortitas de levadura fritas
+bls:Y813652	"Rohrnudeln" sweet yeast dumplings baked	bollos dulces de levadura al horno
+bls:Y813942	Small buckwheat pancakes fried	tortitas de trigo sarraceno fritas
+bls:Y814010	Apple-banana sauce (raw) with raisins	puré de manzana y plátano crudo con pasas
 bls:Y814110	Apple-banana-pear salad sweetened with honey	ensalada de manzana, plátano y pera con miel
+bls:Y814210	Apple-banana-pear sauce raw	puré de manzana, plátano y pera crudo
+bls:Y814310	Apple-banana salad sweetened with honey	ensalada de manzana y plátano con miel
+bls:Y817142	Cream dumplings fried	bolas de nata fritas
+bls:Y818162	Pancakes with milk 3.5 % fat, fried, filled with jam	creps con leche 3,5 % fritas rellenas de mermelada
+bls:Y818242	Small quark pancakes fried	tortitas de quark fritas
+bls:Y818342	Small yeast pancakes with apple, fried	tortitas de levadura con manzana fritas
+bls:Y821043	Semolina casserole with raisins	cazuela de sémola con pasas
+bls:Y821143	Semolina casserole with apple	cazuela de sémola con manzana
+bls:Y823143	Oat flakes casserole with cocoa	cazuela de copos de avena con cacao
+bls:Y824043	Wheat roll casserole	cazuela de panecillos
+bls:Y824243	Souffle with rolls, apple and raisins	cazuela de panecillos con manzana y pasas
+bls:Y824443	Cherry souffle	cazuela de panecillos con cerezas
+bls:Y824463	Cherry souffle (with white wine)	cazuela de cerezas con vino blanco
+bls:Y825043	Chocolate casserole	cazuela de chocolate
+bls:Y826043	Apple casserole	cazuela de manzana
+bls:Y826063	Quark casserole with apple	cazuela de quark con manzana
+bls:Y827043	Souffle with mixed fruit	cazuela de frutas mixtas
+bls:Y827163	Rusk pudding with apple baked	cazuela de biscotes con manzana
+bls:Y829243	Brown bread casserole with chocolate	cazuela de pan negro con chocolate
+bls:Y832043	Rice pudding with almonds and sultanas	pudín de arroz con almendras y pasas sultanas
+bls:Y834143	Nut pudding	pudín de frutos secos
+bls:Y835463	Plum pudding	plum pudding
+bls:Y836312	Mango compote	compota de mango
+bls:Y837312	Nectarine compote	compota de nectarinas
+bls:Y837543	Pudding English style	pudín a la inglesa
+bls:Y837643	Frankfurt pudding	pudín de Fráncfort
+bls:Y838312	Banana compote	compota de plátano
+bls:Y839243	Buckwheat groats (with milk 3.5 % fat)	gachas de trigo sarraceno con leche 3,5 %
+bls:Y839312	Banana compote with artificial sweetener	compota de plátano con edulcorante
+bls:Y840143	Rhubarb compote	compota de ruibarbo
+bls:Y840243	Blueberry compote	compota de arándanos
+bls:Y840312	Pear compote unsweetened	compota de peras sin azúcar
+bls:Y840343	Apple compote with white wine and sultanas	compota de manzana con vino blanco y pasas sultanas
+bls:Y840353	Apple compote with white wine	compota de manzana con vino blanco
+bls:Y840363	Apple compote with raisins and rum	compota de manzana con pasas y ron
+bls:Y840412	Raspberry compote sugar-reduced	compota de frambuesas baja en azúcar
+bls:Y840443	Raspberry compote	compota de frambuesas
+bls:Y840563	Lingonberry compote	compota de arándanos rojos
+bls:Y840643	Blackberry compote	compota de moras
+bls:Y840743	Gooseberry compote	compota de grosellas espinosas
+bls:Y840843	Pear compote	compota de peras
 bls:Y840853	Pears boiled	peras cocidas
+bls:Y840953	Pears boiled with chocolate sauce	peras cocidas con salsa de chocolate
+bls:Y841112	Strawberry compote with artificial sweetener	compota de fresas con edulcorante
+bls:Y841212	Red currant compote	compota de grosellas rojas
+bls:Y841263	Sweet cherry compote	compota de cerezas
+bls:Y841312	Sour cherry compote with artificial sweetener	compota de guindas con edulcorante
+bls:Y841363	Sour cherry compote	compota de guindas
+bls:Y841412	Apricot compote unsweetened	compota de albaricoques sin azúcar
+bls:Y841443	Apricot compote	compota de albaricoques
+bls:Y841543	Mirabelle plum compote	compota de ciruelas mirabel
+bls:Y841643	Prune compote	compota de ciruelas pasas
+bls:Y841743	Plum compote	compota de ciruelas
+bls:Y841812	Peach compote unsweetened	compota de melocotones sin azúcar
+bls:Y841843	Peach compote	compota de melocotones
+bls:Y841953	Strawberry compote	compota de fresas
+bls:Y842153	Fruit compote	compota de frutas
+bls:Y842253	Greengage compote	compota de ciruelas claudias
+bls:Y842343	Quince compote	compota de membrillo
+bls:Y842412	Apricot compote with artificial sweetener	compota de albaricoques con edulcorante
+bls:Y842443	Pumpkin compote	compota de calabaza
+bls:Y842712	Plum compote sugar-reduced	compota de ciruelas baja en azúcar
+bls:Y842812	Strawberry compote unsweetened	compota de fresas sin azúcar
+bls:Y842912	Sweet cherry compote unsweetened	compota de cerezas sin azúcar
+bls:Y843143	Apple sauce	puré de manzana
+bls:Y843212	Red currant compote unsweetened	compota de grosellas rojas sin azúcar
+bls:Y843243	Apple sauce with cinnamon	puré de manzana con canela
 bls:Y843312	Nectarine compote unsweetened	compota de nectarinas sin azúcar
+bls:Y844253	Rhubarb compote with vanilla sauce	postre de ruibarbo con salsa de vainilla
+bls:Y844912	Pineapple compote with artificial sweetener	compota de piña con edulcorante
+bls:Y845143	Baked apple filled	manzana asada rellena
+bls:Y845153	Baked apple filled, with vanilla sauce	manzana asada rellena con salsa de vainilla
+bls:Y845163	Baked apple unfilled	manzana asada
+bls:Y845242	Apple doughnuts fried	aros de manzana enrebozados fritos
+bls:Y845312	Peach compote sugar-reduced	compota de melocotones baja en azúcar
+bls:Y845362	Apple doughnuts fried, with vanilla sauce	aros de manzana enrebozados fritos con salsa de vainilla
+bls:Y845453	Apple baked in shortcrust pastry	manzana en masa quebrada al horno
+bls:Y845552	"Apfelschmarren" fried (thick apple pancake cut into pieces)	schmarrn de manzana frito
+bls:Y845643	Apple froth with rum	espuma de manzana con ron
+bls:Y845753	Apple compote with caramel sauce	compota de manzana con salsa de caramelo
+bls:Y845843	Apple compote with vanilla cream	manzanas en crema de vainilla
+bls:Y845953	Apple compote with raisins and almonds	compota de manzana con pasas y almendras
+bls:Y846150	Strawberry mousse	mousse de fresa con nata
+bls:Y846312	Peach compote with artificial sweetener	compota de melocotones con edulcorante
+bls:Y846553	Rice pudding with milk 3.5 % fat and raw banana	arroz con leche 3,5 % y plátano
+bls:Y846653	Rice pudding with milk 3.5 % fat and apricot compote	arroz con leche 3,5 % y compota de albaricoque
+bls:Y846753	Rice pudding with milk 3.5 % fat and gooseberry compote	arroz con leche 3,5 % y compota de grosellas espinosas
+bls:Y847012	Layered sponge cake cream dish with fruits	tutti frutti
+bls:Y847140	Orange cream (with gelatine) with white wine	crema de naranja con vino blanco
+bls:Y847353	Apple compote with vanilla sauce	compota de manzana con salsa de vainilla
+bls:Y847650	Strawberries sugared	fresas azucaradas
+bls:Y847750	Blueberries sugared	arándanos azucarados
+bls:Y847840	Raspberries sugared	frambuesas azucaradas
+bls:Y847950	Red currants sugared	grosellas rojas azucaradas
+bls:Y848160	Fruit preserved in rum with sugar	rumtopf
+bls:Y848312	Rhubarb cream simple	crema de ruibarbo sencilla
+bls:Y848912	Blueberry compote unsweetened	compota de arándanos sin azúcar
 bls:Y849440	Grapefruit sugared	pomelo azucarado
+bls:Y849512	Fruit compote with artificial sweetener	compota de frutas con edulcorante
+bls:Y849560	Sponge cake cream dish (with Bavarian cream)	charlotte a la rusa con crema bávara
+bls:Y849912	Plum compote with artificial sweetener	compota de ciruelas con edulcorante
+bls:Y851143	Fruit aspic (with white wine)	gelatina de fruta con vino blanco
+bls:Y851312	Fruit jelly, sugar-reduced	postre de frutas bajo en azúcar
+bls:Y851363	Fruit jelly	postre de frutas
+bls:Y851512	Rhubarb compote sugar-reduced	compota de ruibarbo baja en azúcar
+bls:Y852112	Mixed fruit compote unsweetened	compota de frutas mixtas sin azúcar
+bls:Y852312	Quince compote with artificial sweetener	compota de membrillo con edulcorante
+bls:Y853512	Rhubarb compote with artificial sweetener	compota de ruibarbo con edulcorante
+bls:Y854312	Red fruit jelly with artificial sweetener	postre de frutos rojos con edulcorante
+bls:Y855043	Red fruit jelly of fruit juice	postre de frutos rojos de zumo de frutas
+bls:Y855053	Red fruit jelly	postre de frutos rojos
+bls:Y855153	Apple jelly	postre de manzana
+bls:Y855253	Gooseberry jelly with whipped cream	postre de grosellas espinosas con nata montada
+bls:Y855312	Red fruit jelly, unsweetened	postre de frutos rojos sin azúcar
+bls:Y855543	Cherry jelly	postre de cereza
+bls:Y855643	Rhubarb jelly	postre de ruibarbo
+bls:Y855743	Red fruit jelly with vanilla sauce	postre de frutos rojos con salsa de vainilla
+bls:Y856153	Pineapple jelly with whipped cream	gelatina de piña con nata montada
+bls:Y856163	Pineapple jelly	gelatina de piña
+bls:Y856243	Wine jelly	gelatina de vino
+bls:Y856253	Wine jelly with fruit	gelatina de vino con frutas
+bls:Y856312	Red fruit jelly, sugar-reduced	postre de frutos rojos bajo en azúcar
+bls:Y856353	Red currant jelly with whipped cream	gelatina de grosellas rojas con nata montada
+bls:Y856453	Wine jelly with pineapple	gelatina de vino con piña
+bls:Y856550	Buttermilk jelly with strawberries	gelatina de suero de mantequilla con fresas
+bls:Y857063	Fruit jelly with fruit pieces and whipped cream	gelatina de fruta con trozos de fruta y nata montada
+bls:Y857540	Strawberry froth	espuma de fresa
+bls:Y859343	Orange cream (with starch)	crema de naranja con almidón
+bls:Y859440	Russian cream (with alcohol) with whipped cream	crema rusa con nata montada
+bls:Y859663	Apricot cream	crema de albaricoque
+bls:Y860212	Lemon jelly	gelatina de limón
+bls:Y860453	Caramel pudding with vanilla sauce	pudín de caramelo con salsa de vainilla
+bls:Y860463	Caramel pudding simple	flan de caramelo sencillo
+bls:Y860553	Chocolate pudding with vanilla sauce	pudín de chocolate con salsa de vainilla
+bls:Y860643	Semolina pudding with egg	pudín de sémola con huevo
+bls:Y860840	Vanilla butter cream	crema de mantequilla de vainilla
+bls:Y860940	Butter-cream filling	crema de mantequilla para rellenar
+bls:Y860963	Almond cream (Bavarian cream with almond brittle)	crema de almendra con krokant
+bls:Y861653	Vanilla pudding made from powder with milk 3.5 % fat	pudín de vainilla de sobre preparado con leche 3,5 %
+bls:Y861753	Chocolate pudding made from powder with milk 3.5 % fat	pudín de chocolate de sobre preparado con leche 3,5 %
+bls:Y862143	Vanilla pudding with egg yolk	pudín de vainilla con yema de huevo
+bls:Y862253	Chocolate- semolina pudding	pudín de chocolate y sémola
+bls:Y862363	Hazelnut pudding	pudín de avellana
+bls:Y862612	Caramel pudding	pudín de caramelo
+bls:Y862753	Semolina pudding with egg and cherry juice	pudín de sémola con huevo y zumo de cereza
+bls:Y862763	Semolina pudding with egg and almonds	pudín de sémola con huevo y almendras
+bls:Y863112	Apple sauce with artificial sweetener	puré de manzana con edulcorante
+bls:Y864053	Semolina pudding with egg and cherry sauce	pudín de sémola con huevo y salsa de cereza
+bls:Y864112	Apple sauce unsweetened	puré de manzana sin azúcar
+bls:Y864943	"Welfencreme" (vanilla pudding with wine sabayon)	pudín de vainilla con sabayón de vino
+bls:Y865312	Red currant compote with artificial sweetener	compota de grosellas rojas con edulcorante
+bls:Y867112	Strawberry carpaccio (with white wine)	carpaccio de fresa con vino blanco
+bls:Y868040	Buttermilk aspic (with arrack)	gelatina de suero de mantequilla con arrack
+bls:Y869143	Yeast pudding	pudín de levadura
+bls:Y870163	Bavarian cream	crema bávara
+bls:Y870253	Vanilla cream simple	crema de vainilla sencilla
+bls:Y870263	Vanilla cream (with gelatine)	crema de vainilla con gelatina
+bls:Y870363	Chocolate cream (with gelatine) with rum	crema de chocolate con gelatina y ron
+bls:Y870440	Hazelnut cream (with starch)	crema de avellana con almidón
+bls:Y870463	Hazelnut cream (with gelatine)	crema de avellana con gelatina
+bls:Y870643	Mocha cream (with gelatine)	crema de moca con gelatina
+bls:Y870653	Coffee cream simple (with starch)	crema de café sencilla
+bls:Y870843	White wine cream (with gelatine)	crema de vino blanco con gelatina
+bls:Y870912	Red wine cream (with gelatine)	crema de vino tinto con gelatina
+bls:Y871363	Mousse au chocolat (chocolate mousse) with rum	mousse de chocolate con ron
+bls:Y872053	Fruit cream (with gelatine)	crema de fruta con gelatina
+bls:Y872160	Strawberry cream (with gelatine)	crema de fresa con gelatina
+bls:Y872340	Lemon cream (with gelatine) with white wine	crema de limón con vino blanco
+bls:Y872460	Strawberries with whipped cream	fresas con nata montada
+bls:Y872812	Lemon cream (with gelatine)	crema de limón con gelatina
 bls:Y874012	Vanilla pudding made from powder with milk 3.5 % fat, with fruit and artificial sweetener	natillas de vainilla con fruta y edulcorante
+bls:Y875140	Cream made from sour cream with rum	crema de nata agria con ron
+bls:Y877012	Cream pudding with fruit	pudín de nata con frutas
+bls:Y879812	Pineapple rings in frying batter (with milk) fried	aros de piña en rebozado de leche fritos
+bls:Y880040	Quark dish simple, with chocolate	postre de quark sencillo con chocolate
+bls:Y880050	Quark dish simple, with strawberries	postre de quark sencillo con fresas
+bls:Y880160	Quark cream	crema de quark
+bls:Y880250	Fruit quark	quark de frutas
+bls:Y880312	Quark dish with pineapple	postre de quark con piña
+bls:Y880453	Quark casserole with fruit sauce	cazuela de quark con salsa de frutas
+bls:Y880763	Quark doughnuts deep-fried	buñuelos de quark fritos en abundante aceite
+bls:Y880853	Quark casserole	cazuela de quark
+bls:Y881012	Quark dish with sour cherries	postre de quark con guindas
+bls:Y881153	Vanilla quark	quark de vainilla
+bls:Y881510	Quark dish with strawberries	postre de quark con fresas
+bls:Y881610	Quark dish with raspberries	postre de quark con frambuesas
+bls:Y881743	Quark dumplings filled with apricots	bolas de quark rellenas de albaricoque
+bls:Y881812	Small quark pancakes (with potatoes) fried	tortitas de quark y patata fritas
+bls:Y881842	Small quark-yeast pancakes fried	tortitas de quark de masa de levadura fritas
+bls:Y881943	Quark pudding	pudín de quark
+bls:Y882010	Quark dish with sweet cherries	postre de quark con cerezas
+bls:Y882150	Banana quark	quark de plátano
+bls:Y882310	Quark dish with peaches	postre de quark con melocotones
+bls:Y882410	Quark (< 10 % fat in dry matter) with jam	quark desnatado con mermelada
+bls:Y882510	Quark (min. 20 % fat in dry matter) with jam	quark semidesnatado con mermelada
+bls:Y883140	Quark-mocha cream	crema de quark y moca
+bls:Y883340	Quarkdish with sour cherries, chocolate and cherry brandy	vaso Selva Negra con quark y kirsch
+bls:Y884312	Green fruit jelly	postre de frutas verdes
+bls:Y885150	Strawberry yogurt with cream	yogur de fresa con nata
+bls:Y886240	Yogurt cream (with gelatine)	crema de yogur
+bls:Y886260	Lemon-yogurt cream (with gelatine)	crema de yogur y limón
+bls:Y888312	Sweet cherry compote sugar-reduced	compota de cerezas baja en azúcar
+bls:Y890342	"Kaiserschmarren" fried (thick pancake with milk 3.5 % fat, cut into pieces)	kaiserschmarrn con leche 3,5 %
+bls:Y890463	"Salzburger Nockerl" baked (sweet egg dish)	nockerl de Salzburgo al horno
+bls:Y890512	"Kaiserschmarren" fried (thick pancake with milk 1.5 % fat, cut into pieces)	kaiserschmarrn con leche 1,5 %
+bls:Y891062	Pancakes with milk 3.5 % fat, fried in butter	creps con leche 3,5 % fritas en mantequilla
+bls:Y891142	Pancakes with milk 3.5 % fat and blueberries, fried	creps con leche 3,5 % y arándanos fritas
+bls:Y891542	Omelette souffle fried, filled with jam	tortilla soufflé rellena de mermelada frita
+bls:Y892142	Small potato-yeast dumplings fried	bolas de patata de masa de levadura fritas en abundante aceite
+bls:Y893062	Honey pancakes fried	creps de miel fritas
+bls:Y893162	Crepes Suzette fried	creps suzette
+bls:Y894243	Omelette souffle fried	tortilla soufflé frita
+bls:Y896143	Cake souffle	soufflé de bizcocho al horno
+bls:Y8A1000	Zabaione (with alcohol)	zabaione
+bls:Y8A2000	Almond brittle	krokant de almendra
+bls:Y8A3000	Apple-banana-pear sauce unsweetened	puré de manzana, plátano y pera sin azúcar
+bls:Y8A3010	Apple-mango sauce unsweetened	puré de manzana y mango sin azúcar
+bls:Y8A3020	Apple compote	compota de manzana
+bls:Y8A3030	Dried fruit compote thickened with starch	compota de frutos secos espesada con almidón
+bls:Y8A3040	Hot raspberry sauce	salsa de frambuesa caliente
+bls:Y8A4000	Semolina pudding (as dessert) with raw strawberry sauce	gachas de sémola con salsa de fresa cruda
+bls:Y8A4010	Semolina pudding (as dessert) with caramel sauce	gachas de sémola con salsa de caramelo
+bls:Y8A4020	Semolina pudding (as dessert) with cherry sauce	gachas de sémola con salsa de cereza
 bls:Y8A4030	Semolina pudding (as dessert) with chocolate sauce	sémola con leche con salsa de chocolate
+bls:Y8A4040	Semolina pudding (as dessert) with vanilla sauce	gachas de sémola con salsa de vainilla
+bls:Y8A4050	Semolina pudding without egg	pudín de sémola sin huevo
+bls:Y8A4060	Semolina slices sweetened fried	rodajas de sémola dulces fritas
+bls:Y8A4070	Yogurt 1.5 % fat with strawberries	yogur 1,5 % con fresas
+bls:Y8A4080	Rice pudding with milk 3.5 % fat and red fruit jelly	arroz con leche 3,5 % y postre de frutos rojos
+bls:Y8A4090	Chocolate pudding	pudín de chocolate
+bls:Y8A4100	Chocolate pudding made from powder with milk 1.5 % fat	pudín de chocolate de sobre preparado con leche 1,5 %
+bls:Y8A4110	Chocolate pudding made from powder with soya drink	pudín de chocolate de sobre con bebida de soja
+bls:Y8A4120	Vanilla pudding (as dessert) with caramel sauce	pudín de vainilla con salsa de caramelo
+bls:Y8A4130	Vanilla pudding (as dessert) with chocolate sauce	pudín de vainilla con salsa de chocolate
+bls:Y8A4140	Vanilla pudding with egg	pudín de vainilla con huevo
+bls:Y8A4150	Vanilla pudding made from powder with milk 1.5 % fat	pudín de vainilla de sobre preparado con leche 1,5 %
+bls:Y8A4160	Vanilla pudding made from powder with soya drink	pudín de vainilla de sobre con bebida de soja
+bls:Y8A5000	Creme brulee	crema brulée
+bls:Y8A5010	Coffee cream (with gelatine)	crema de café con gelatina
+bls:Y8A5012	Vanilla pudding made from powder with milk 1.5 % fat, with fruit	pudín de vainilla de sobre preparado con leche 1,5 % y frutas
+bls:Y8A5020	Pannacotta	panna cotta
+bls:Y8A5030	Cream pudding with egg yolk	pudín de nata con yema
+bls:Y8A5040	Cream pudding (as dessert) with caramel sauce	pudín de nata con salsa de caramelo
+bls:Y8A5050	Cream pudding (as dessert) with cherry sauce	pudín de nata con salsa de cereza
+bls:Y8A5060	Cream pudding (as dessert) with chocolate sauce	pudín de nata con salsa de chocolate
+bls:Y8A6000	Quark-semolina casserole	cazuela de quark y sémola
+bls:Y8A7000	Pancakes with milk 3.5 % fat and apple, fried	creps con leche 3,5 % y manzana fritas
+bls:Y8A7010	Pancakes with milk 3.5 % fat and raisins, fried	creps con leche 3,5 % y pasas fritas
+bls:Y8A8000	Frying batter sweetened, with milk 3.5 % fat, raw	rebozado dulce con leche 3,5 % crudo
+bls:Y8A8010	Yeast dough sweetened, with milk 3.5 % fat, raw	masa de levadura dulce con leche 3,5 % cruda
+bls:Y8A8020	Yeast dough sweetened, with water, raw	masa de levadura dulce con agua cruda
+bls:Y8A8030	Shortcrust pastry sweetened, raw	masa quebrada dulce cruda
+bls:Y8B1012	Vanilla pudding made from powder with milk 3.5 % fat, with artificial sweetener	pudín de vainilla de sobre preparado con leche 3,5 % y edulcorante
+bls:Y8D5010	Tiramisu (without egg) with liqueur	tiramisú sin huevo con licor
+bls:Y8D6000	Tiramisu reduced-fat, with liqueur	tiramisú bajo en grasa con licor
+bls:Y8D7010	Tiramisu (without egg) with liqueur and fruit	tiramisú sin huevo con licor y frutas
+bls:Y8D8012	Cream pudding made from powder with milk 3.5 % fat and cream	pudín de nata de sobre con leche 3,5 % y nata
+bls:Y910030	Potato chips with ketchup	patatas fritas con ketchup
+bls:Y910060	Potato chips with mayonnaise	patatas fritas con mayonesa
+bls:Y910130	Baked potatoes with herb quark	patatas asadas con quark de hierbas
+bls:Y911060	Hamburger	hamburguesa
+bls:Y911160	Cheeseburger	hamburguesa con queso
+bls:Y911260	Double cheeseburger	hamburguesa doble con queso
+bls:Y911360	Double-decker burger	hamburguesa de doble piso
+bls:Y912030	Meatball with mustard	albóndiga con mostaza
+bls:Y912060	Meatball with roll and tomato ketchup	albóndiga con panecillo y ketchup
+bls:Y912130	Meatball with potato salad and mustard	albóndiga con ensalada de patatas y mostaza
+bls:Y912160	Meatball with potato chips and tomato ketchup	albóndiga con patatas fritas y ketchup
+bls:Y912260	Meatball with fried potatoes (of raw potatoes) and tomato ketchup	albóndiga con patatas salteadas y ketchup
+bls:Y913032	Bockwurst with mustard	bockwurst con mostaza
+bls:Y913062	Bockwurst with roll and mustard	bockwurst con panecillo y mostaza
+bls:Y913132	Bockwurst with potato salad and mustard	bockwurst con ensalada de patatas y mostaza
+bls:Y914032	Vienna sausage with mustard	salchichas de Viena con mostaza
+bls:Y914062	Vienna sausage with roll and mustard	salchichas de Viena con panecillo y mostaza
+bls:Y914132	Vienna sausage with potato salad and mustard	salchichas de Viena con ensalada de patatas y mostaza
+bls:Y915032	Knackwurst with mustard	knackwurst con mostaza
+bls:Y915062	Knackwurst with roll and mustard	knackwurst con panecillo y mostaza
+bls:Y915132	Knackwurst with potato salad and mustard	knackwurst con ensalada de patatas y mostaza
+bls:Y916032	Scalded sausage with mustard	salchicha escaldada con mostaza
+bls:Y916062	Scalded sausage with roll and mustard	salchicha escaldada con panecillo y mostaza
+bls:Y916132	Scalded sausage with potato salad and mustard	salchicha escaldada con ensalada de patatas y mostaza
+bls:Y921062	Doner kebab, flatbread filled with grilled veal and beef, salad and sauce	döner kebab de ternera y vacuno con lechuga y salsa
+bls:Y921162	Doner kebab, flatbread filled with grilled poultry, salad and sauce	döner kebab de ave con lechuga y salsa
+bls:Y942032	Bratwurst with mustard	bratwurst con mostaza
+bls:Y942062	Bratwurst with roll and mustard	bratwurst con panecillo y mostaza
+bls:Y942132	Bratwurst with potato salad and mustard	bratwurst con ensalada de patatas y mostaza
+bls:Y943032	Curried bratwurst with curry ketchup	currywurst con ketchup de curry
+bls:Y943062	Curried bratwurst with curry ketchup and roll	currywurst con ketchup de curry y panecillo
+bls:Y944062	Curried bratwurst with potato chips	currywurst con patatas fritas
+bls:Y945032	Rostbratwurst with mustard	rostbratwurst con mostaza
+bls:Y945062	Rostbratwurst with roll and mustard	rostbratwurst con panecillo y mostaza
+bls:Y945132	Rostbratwurst with potato salad and mustard	rostbratwurst con ensalada de patatas y mostaza
+bls:Y946062	Shashlik with roll and tomato ketchup	shashlik con panecillo y ketchup
+bls:Y946162	Shashlik with potato chips and tomato ketchup	shashlik con patatas fritas y ketchup
+bls:Y991060	Vanilla ice cream (with egg) with whipped cream	helado cremoso de vainilla con nata montada
+bls:Y991143	Vanilla cream ice cream	helado de nata de vainilla
+bls:Y991240	Vanilla parfait (semi-frozen)	parfait de vainilla
+bls:Y992060	Vanilla ice cream (with egg) with whipped cream and fruit (canned)	helado cremoso de vainilla con nata montada y frutas en conserva
+bls:Y993140	Vanilla cream ice cream with orange liqueur	helado de nata de vainilla con licor de naranja
+bls:Y993240	Chocolate cream ice cream	helado de nata de chocolate
+bls:Y993340	Mocha cream ice cream	helado de nata de moca
+bls:Y993440	Strawberry cream ice cream	helado de nata de fresa
+bls:Y993540	Vanilla cream ice cream with hot chocolate sauce	helado de nata de vainilla con salsa de chocolate caliente
+bls:Y995040	Vanilla cream ice cream with whipped cream, fresh strawberries and rum	helado de nata de vainilla con nata montada, fresas frescas y ron
+bls:Y995060	Vanilla ice cream (with egg) with hot raspberry sauce	helado cremoso de vainilla con salsa de frambuesa caliente
+bls:Y995140	Pear Helene	pera Helene
+bls:Y995240	Peach Melba	melocotón Melba
+bls:Y996140	Vanilla ice cream (with egg)	helado cremoso de vainilla
+bls:Y996240	Strawberry ice cream (with egg)	helado cremoso de fresa
+bls:Y996340	Chocolate ice cream (with egg)	helado cremoso de chocolate
+bls:Y996440	Lemon sherbet/sorbet	sorbete de limón
+bls:Y996510	Strawberry ice cream	helado de fresa
+bls:Y997043	Iced coffee	café con helado
+bls:Y999140	Neapolitan ice cream	helado Fürst-Pückler
+bls:Y999242	Meringue ice-cream cake	tarta de helado con merengue
+bls:Y9A1000	Chicken burger	hamburguesa de pollo
+bls:Y9A1010	Fish burger with saithe	hamburguesa de carbonero
+bls:Y9A1020	Gyros burger	hamburguesa de gyros
+bls:Y9A1030	Tofu burger vegan	hamburguesa de tofu vegana
+bls:Y9A1040	Doner vegetarian, flatbread filled with salad, sheep's milk cheese and sauce	döner vegetariano con lechuga, queso de oveja y salsa
+bls:Y9A1050	Falafel (small chickpea balls) deep-fried	faláfel frito en abundante aceite
+bls:Y9A1060	Falafel deep-fried, in flatbread, vegetarian filled	faláfel frito en abundante aceite en pan de pita vegetariano
+bls:Y9A1070	Lahmacun unfilled	lahmacun sin relleno
+bls:Y9A1080	Lahmacun filled with grilled poultry, salad and sauce	lahmacun con ave a la parrilla, lechuga y salsa
+bls:Y9A1090	Lahmacun filled with salad and sauce	lahmacun con lechuga y salsa
+bls:Y9A2000	Apricot ice cream	helado de albaricoque
+bls:Y9A2010	Raspberry ice cream	helado de frambuesa
+bls:Y9A2020	Hazelnut ice cream (with egg)	helado cremoso de avellana
+bls:Y9A2030	Tartufo di Pizzo (with nut and chocolate ice cream)	tartufo di Pizzo
+bls:Y9A2040	Tartufo, vanilla ice cream in chocolate coating (with alcohol)	tartufo de vainilla en cobertura de chocolate
+bls:Y9A2050	Vanilla ice cream (with egg) with whipped cream and fresh strawberries	helado cremoso de vainilla con nata montada y fresas frescas
 ciqual:1000	Pastis (anise-flavoured spirit)	pastís
 ciqual:10000	Winkle, cooked	bígaro cocido
 ciqual:10001	Squid, raw	calamar crudo
