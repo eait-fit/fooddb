@@ -130,6 +130,60 @@ name (reader context only; ja/zh for mext/tfda, ru for `recipe:*.ru`), the trans
   (french dressing), `coctel` are LatAm/calque/wrong-accent — see the es
   vocabulary list above.
 
+## Batch 1b additions (PR #126 review)
+
+- **Never a source tag as a qualifier** — no `Foundation`, `USDA`, `NFS`,
+  `Frida`, `(tabla nueva)`, `(новая таблица)`, `(США)`, `(EE. UU.)` on the
+  translated name. When two records of the same food differ only in kcal and
+  collapse to one name, disambiguate with a real qualifier from the source
+  name (`минтай сырой (Аляска)` when only the sibling says Alaska) or a natural
+  synonym/word-order variant (`соевая мука обезжиренная` vs `мука соевая
+  обезжиренная`, `копчёная пикша`, `свежая клубника`, `ahumado de eglefino`,
+  `yogur natural de leche entera`).
+- **Grade-split sibling groups**: when `choice`/`select`/`prime` tags separate
+  siblings, tag ALL of them — `(все категории)`/`(todas)` included.
+- US biscuit (the quick bread) = `бисквит(-скон)` / `panecillo de soda` —
+  never `bizcocho`/`biscotes` (sponge cake).
+- english muffin = `английские маффины` / `muffins ingleses`; american muffin =
+  `маффины` / `magdalenas`; american pancakes = `оладьи` / `tortitas`
+  (`панкейки` ok on branded items; `блины` is crepes).
+- lamb rack = `каре` / `costillar`/`carré` — never `корейка` (that is loin);
+  `frenched` is absorbed into `каре`; `denuded` = `зачищенное`; frenched chop =
+  `с зачищенной косточкой`.
+- lamb shoulder arm = `плечевая часть` (never `рулет` unless netted/rolled);
+  lamb flap = `пашина` (never `брюшина`); lamb chump = `огузок`;
+  seam/intermuscular fat = `прослойка жира` / `grasa intermuscular`.
+- brisket = `грудинка` / `pecho`; point end = `толстая часть` /
+  `punta de pecho`; navel end = `брюшная часть` / `extremo naval`;
+  `falda` is flank/skirt only.
+- stewed fruit: ru = `тушёные` (`припущенные` only for poached fish),
+  es = `en compota`; sulfured stays `сернистые`/`sulfitados`.
+- species as genitive after the part: `грудка перепела`, `pechuga de codorniz`.
+- `proof` → % alcohol: 100 = 50%, 94 = 47%, 86 = 43%, 80 = 40%.
+- buttermilk = `на пахте` / `suero de mantequilla` — never `пахтаночный`,
+  never `suero de leche`.
+- generic `honey nut` = `мёд-орехи` / `frutos secos` (`nueces` = walnuts only).
+- veal shank fore+hind = `передняя и задняя` / `morcillo delantero y trasero`.
+- Lebanon bologna = `колбаса Лебанон` / `mortadela Lebanon` — Lebanon PA,
+  not the country.
+- Fish/seafood vocabulary (ru / es): herring = `сельдь`/`arenque`;
+  turbot = `калкан`/`rodaballo`; seatrout = `корвина`/`corvina`;
+  freshwater drum = `горбыль`; monkfish = `удильщик`/`rape`;
+  tilefish = `тайлфиш`/`blanquillo`; Pacific rockfish =
+  `окунь тихоокеанский`/`gallineta`; whiting = `мерланг`/`pescadilla`;
+  whitefish = `сиг`/`pescado blanco`; yellowtail = `лацеда`/`serviola`;
+  ling = `мольва`/`maruca`; lingcod = `линкод`/`lingcod`; ocean pout =
+  `тресковый бычок`/`faneca`; freshwater perch = `окунь речной`/`perca de río`;
+  freshwater bass = `окунь пресноводный`/`lobina`; channel catfish =
+  `сом канальный`/`bagre de canal`; milkfish = `чанос`/`sabalote`;
+  shad = `сельдь-алоза`/`sábalo`; cuttlefish = `каракатица`/`sepia`;
+  whelk = `морская улитка (велк)`; conch = `морская улитка (стромб)`/`caracola`;
+  queen crab (snow crab) = `краб-стригун`/`cangrejo de las nieves`;
+  blue crab = `краб голубой`/`cangrejo azul`; Spanish mackerel =
+  `скумбрия испанская`/`sierra`; chinook = `чавыча`/`salmón real`;
+  chum = `кета`/`salmón keta`; pollock = `минтай`/`abadejo`
+  (`сайда` is saithe — a different fish).
+
 ## Traps from the batch-2a review
 
 - corned beef = `солонина` (hash, patty, with-potatoes dishes follow);
