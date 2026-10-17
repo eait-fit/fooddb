@@ -169,7 +169,7 @@ ciqual:7200	Sandwich loaf, prepacked	pan de molde
 ciqual:7263	Bretzel, fresh bread	pretzel de pan fresco
 ciqual:7525	Grissini or bread stick, plain (without sesame)	palitos de pan (grissini)
 ciqual:76047	Mineral sparkling water (Ste-Marguerite), bottled, averagely mineralized	agua mineral con gas
-ciqual:76088	Mineral sparkling water (Nessel), bottled, averagely mineralized	agua mineral con gas
+ciqual:76088	Mineral sparkling water (Nessel), bottled, averagely mineralized	agua mineral con gas — mineral sparkling water (nessel)
 ciqual:8313	Pork liver mousse	mousse de hígado de cerdo
 ciqual:8316	Poultry liver pâté	paté de hígado de ave
 ciqual:8373	Rolled escalope of pork with pistachio	rollo de cerdo con pistachos
@@ -528,7 +528,7 @@ fdc:167812	Pork, fresh, belly, raw	panceta cruda
 fdc:167813	Pork, fresh, separable fat, raw	grasa de cerdo cruda
 fdc:167814	Pork, fresh, leg (ham), rump half, separable lean and fat, raw	pierna de cerdo con grasa cruda
 fdc:167815	Pork, fresh, leg (ham), rump half, separable lean and fat, cooked, roasted	pierna de cerdo con grasa asada
-fdc:167816	Pork, fresh, leg (ham), rump half, separable lean only, raw (Includes foods for USDA's Food Distribution Program)	pierna de cerdo magra cruda
+fdc:167816	Pork, fresh, leg (ham), rump half, separable lean only, raw (Includes foods for USDA's Food Distribution Program)	pierna de cerdo magra cruda — pork
 fdc:167817	Pork, fresh, leg (ham), rump half, separable lean only, cooked, roasted	pierna de cerdo magra asada
 fdc:167818	Pork, fresh, loin, whole, separable lean and fat, raw	lomo de cerdo con grasa crudo
 fdc:167819	Pork, fresh, loin, whole, separable lean and fat, cooked, braised	lomo de cerdo con grasa estofado
@@ -979,9 +979,9 @@ fdc:168263	Pork, fresh, loin, center loin (chops), boneless, separable lean only
 fdc:168264	Pork, fresh, variety meats and by-products, brain, raw	cerebro de cerdo crudo
 fdc:168265	Pork, fresh, variety meats and by-products, brain, cooked, braised	cerebro de cerdo estofado
 fdc:168266	Pork, fresh, variety meats and by-products, chitterlings, raw	tripas de cerdo crudas
-fdc:168267	Pork, fresh, variety meats and by-products, heart, raw	corazón de cerdo crudo
+fdc:168267	Pork, fresh, variety meats and by-products, heart, raw	corazón de cerdo crudo — pork
 fdc:168268	Pork, fresh, variety meats and by-products, heart, cooked, braised	corazón de cerdo estofado
-fdc:168269	Pork, fresh, variety meats and by-products, jowl, raw	carrillera de cerdo cruda
+fdc:168269	Pork, fresh, variety meats and by-products, jowl, raw	carrillera de cerdo cruda — fresh
 fdc:168270	Pork, fresh, variety meats and by-products, kidneys, raw	riñones de cerdo crudos
 fdc:168271	Pork, fresh, variety meats and by-products, lungs, cooked, braised	pulmones de cerdo estofados
 fdc:168272	Pork, fresh, variety meats and by-products, mechanically separated, raw	cerdo separado mecánicamente crudo
@@ -993,7 +993,7 @@ fdc:168277	Pork, cured, bacon, unprepared	beicon crudo
 fdc:168278	Pork, cured, breakfast strips, raw or unheated	tiras de beicon crudas
 fdc:168279	Pork, cured, ham, extra lean (approximately 4% fat), canned, unheated	jamón en conserva extra magro sin calentar
 fdc:168280	Pork, cured, ham, extra lean (approximately 4% fat), canned, roasted	jamón en conserva extra magro asado
-fdc:168281	Pork, cured, ham, regular (approximately 13% fat), canned, roasted	jamón en conserva asado
+fdc:168281	Pork, cured, ham, regular (approximately 13% fat), canned, roasted	jamón en conserva asado — regular (approximately 13% fat)
 fdc:168282	Pork, cured, ham, center slice, country-style, separable lean only, raw	loncha de jamón campera magra cruda
 fdc:168283	Pork, cured, ham, center slice, separable lean and fat, unheated	loncha de jamón con grasa sin calentar
 fdc:168284	Pork, cured, ham, whole, separable lean only, roasted	jamón entero magro asado
@@ -1452,13 +1452,13 @@ fdc:168736	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed 
 fdc:168737	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado tri-tip con grasa asado (select)
 fdc:168738	Beef, chuck, top blade, separable lean only, trimmed to 0" fat, choice, cooked, broiled	filete de aguja alta de vacuno magro a la parrilla (choice)
 fdc:168739	Beef, chuck, top blade, separable lean only, trimmed to 0" fat, select, cooked, broiled	filete de aguja alta de vacuno magro a la parrilla (select)
-fdc:168740	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de tapa de vacuno con grasa a la parrilla (choice)
+fdc:168740	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de tapa de vacuno con grasa a la parrilla (choice) — sin hueso
 fdc:168741	Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de tapa de vacuno con grasa a la parrilla (select)
 fdc:168742	Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, raw	asado de aguja de vacuno magro crudo
 fdc:168743	Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	pecho de vacuno parte plana con grasa crudo (choice)
 fdc:168744	Beef, plate, inside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	entraña fina de vacuno a la parrilla
 fdc:168745	Beef, plate, outside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled	entraña gruesa de vacuno a la parrilla
-fdc:168746	Alcoholic beverage, beer, regular, all	cerveza
+fdc:168746	Alcoholic beverage, beer, regular, all	cerveza — all
 fdc:168747	Alcoholic beverage, beer, regular, BUDWEISER	cerveza Budweiser
 fdc:168748	Alcoholic beverage, beer, light, BUDWEISER SELECT	cerveza Budweiser Select
 fdc:168749	Alcoholic beverage, beer, light	cerveza ligera
@@ -1891,7 +1891,7 @@ fdc:169175	Pork, cured, ham, shank, bone-in, separable lean only, heated, roaste
 fdc:169176	Pork, cured, ham, shank, bone-in, separable lean only, unheated	jamón de jarrete con hueso magro
 fdc:169177	Pork, cured, ham, slice, bone-in, separable lean and fat, unheated	loncha de jamón con hueso con grasa
 fdc:169178	Pork, fresh, spareribs, separable lean and fat, cooked, roasted	costillas de cerdo con grasa asadas
-fdc:169179	Pork, fresh, composite of separable fat, with added solution, raw	grasa de cerdo cruda
+fdc:169179	Pork, fresh, composite of separable fat, with added solution, raw	grasa de cerdo cruda — composite of separable fat
 fdc:169180	Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted	solomillo de cerdo asado
 fdc:169181	Pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, raw	chuletas de lomo alto sin hueso magras con salmuera crudas
 fdc:169182	Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, raw	chuletas de lomo alto sin hueso con grasa con salmuera crudas
@@ -1931,7 +1931,7 @@ fdc:169215	Corn, sweet, yellow, canned, cream style, regular pack	maíz dulce en
 fdc:169216	Corn, sweet, yellow, canned, vacuum pack, regular pack	maíz dulce en conserva al vacío
 fdc:169217	Corn, yellow, whole kernel, frozen, microwaved	maíz en grano congelado al microondas
 fdc:169218	Corn with red and green peppers, canned, solids and liquids	maíz con pimiento rojo y verde en conserva
-fdc:169219	Cornsalad, raw	canónigos frescos
+fdc:169219	Cornsalad, raw	canónigos frescos — cornsalad
 fdc:169220	Cowpeas (blackeyes), immature seeds, raw	caupí tierno crudo
 fdc:169221	Cowpeas, young pods with seeds, cooked, boiled, drained, without salt	vainas de caupí cocidas sin sal
 fdc:169222	Yardlong bean, raw	judía china cruda
@@ -2127,7 +2127,7 @@ fdc:169411	Nuts, formulated, wheat-based, all flavors except macadamia, without 
 fdc:169412	Seeds, sesame seed kernels, dried (decorticated)	semillas de sésamo secas peladas
 fdc:169413	Nuts, chestnuts, japanese, raw	castañas japonesas crudas
 fdc:169414	Seeds, flaxseed	semillas de lino
-fdc:169415	Seeds, pumpkin and squash seed kernels, roasted, with salt added	pipas de calabaza tostadas saladas
+fdc:169415	Seeds, pumpkin and squash seed kernels, roasted, with salt added	pipas de calabaza tostadas saladas — pumpkin and squash seed kernels
 fdc:169416	Seeds, sesame seed kernels, toasted, with salt added (decorticated)	semillas de sésamo tostadas saladas
 fdc:169417	Seeds, sunflower seed kernels from shell, dry roasted, with salt added	pipas de girasol tostadas saladas peladas
 fdc:169418	Seeds, sunflower seed kernels, dry roasted, with salt added	pipas de girasol tostadas saladas
@@ -2169,8 +2169,8 @@ fdc:169453	Beef, variety meats and by-products, pancreas, cooked, braised	páncr
 fdc:169454	Beef, variety meats and by-products, spleen, raw	bazo de vacuno crudo
 fdc:169455	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled	filete de lomo alto magro a la parrilla (choice)
 fdc:169456	Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, cooked, grilled	filete de lomo alto magro a la parrilla (select)
-fdc:169457	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	filete de lomo bajo con grasa a la parrilla (todas)
-fdc:169458	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	filete de lomo bajo con grasa a la parrilla (choice)
+fdc:169457	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	filete de lomo bajo con grasa a la parrilla (todas) — trimmed to 0" fat
+fdc:169458	Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	filete de lomo bajo con grasa a la parrilla (choice) — trimmed to 0" fat
 fdc:169459	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	porterhouse de vacuno con grasa a la parrilla (todas)
 fdc:169460	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled	porterhouse de vacuno con grasa a la parrilla (choice)
 fdc:169461	Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled	porterhouse de vacuno con grasa a la parrilla (select)
@@ -2180,7 +2180,7 @@ fdc:169464	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0"
 fdc:169465	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled	chuleta T-bone de vacuno con grasa a la parrilla (choice)
 fdc:169466	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled	chuleta T-bone de vacuno con grasa a la parrilla (select)
 fdc:169467	Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	chuleta T-bone de vacuno magra a la parrilla (select)
-fdc:169468	Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	chuleta T-bone de vacuno magra a la parrilla (select)
+fdc:169468	Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, select, cooked, broiled	chuleta T-bone de vacuno magra a la parrilla (select) — trimmed to 0" fat
 fdc:169469	Beef, brisket, flat half, separable lean only, trimmed to 0" fat, select, cooked, braised	pecho de vacuno parte plana magro estofado
 fdc:169470	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, all grades, raw	asado de tapa de cadera con grasa crudo
 fdc:169471	Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	filete de tapa de vacuno magro a la parrilla (choice)
@@ -2245,11 +2245,11 @@ fdc:169529	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8
 fdc:169530	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised	tapa de vacuno con grasa estofada
 fdc:169531	Beef, round, top round steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled	filete de tapa de vacuno con grasa a la parrilla
 fdc:169532	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw	filete de tapa de vacuno con grasa crudo (choice)
-fdc:169533	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	filete de tapa de vacuno con grasa a la parrilla (select)
+fdc:169533	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	filete de tapa de vacuno con grasa a la parrilla (select) — filete
 fdc:169534	Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, prime, raw	tapa de vacuno con grasa cruda (prime)
 fdc:169535	Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled	filete de tapa de vacuno con grasa a la parrilla (prime)
 fdc:169536	Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de aguja de vacuno con grasa crudo (select)
-fdc:169537	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	chuleta T-bone de vacuno con grasa a la parrilla (choice)
+fdc:169537	Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled	chuleta T-bone de vacuno con grasa a la parrilla (choice) — choice
 fdc:169538	Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw	filete de lomo alto con grasa crudo
 fdc:169539	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled	lomo alto de vacuno con grasa a la parrilla
 fdc:169540	Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, choice, raw	lomo alto de vacuno con grasa crudo (choice)
@@ -2265,9 +2265,9 @@ fdc:169549	Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat,
 fdc:169550	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, pan-fried	filete de lomo bajo con grasa frito (choice)
 fdc:169551	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw	filete de lomo bajo con grasa crudo (select)
 fdc:169552	Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled	filete de lomo bajo con grasa a la parrilla (select)
-fdc:169553	Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de aguja de vacuno magro asado (choice)
+fdc:169553	Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de aguja de vacuno magro asado (choice) — aguja
 fdc:169554	Beef, flank, steak, separable lean and fat, trimmed to 0" fat, select, cooked, broiled	vacío de vacuno con grasa a la parrilla (select)
-fdc:169555	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, select, cooked, braised	pecho de vacuno parte plana con grasa estofado (select)
+fdc:169555	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, select, cooked, braised	pecho de vacuno parte plana con grasa estofado (select) — trimmed to 0" fat
 fdc:169556	Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, select, cooked, broiled	entrecot de vacuno con grasa a la parrilla (select)
 fdc:169557	Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled	entrecot de vacuno con grasa a la parrilla
 fdc:169558	Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado tri-tip con grasa asado
@@ -2394,7 +2394,7 @@ fdc:169678	Snacks, potato chips, made from dried potatoes, cheese-flavor	patatas
 fdc:169679	Snacks, rice cakes, brown rice, corn	tortitas de arroz integral con maíz
 fdc:169680	Snacks, rice cakes, brown rice, multigrain	tortitas de arroz integral multicereales
 fdc:169681	Snacks, granola bars, hard, peanut butter	barrita de granola crujiente con crema de cacahuete
-fdc:169682	Snacks, potato chips, cheese-flavor	patatas fritas de bolsa sabor queso
+fdc:169682	Snacks, potato chips, cheese-flavor	patatas fritas de bolsa sabor queso — cheese-flavor
 fdc:169683	Snacks, potato chips, reduced fat	patatas fritas de bolsa bajas en grasa
 fdc:169684	Snacks, potato chips, fat-free, made with olestra	patatas fritas de bolsa sin grasa con olestra
 fdc:169685	Popcorn, sugar syrup/caramel, fat-free	palomitas de caramelo sin grasa
@@ -2520,7 +2520,7 @@ fdc:169804	Cranberries, wild, bush, raw (Alaska Native)	arándanos rojos silvest
 fdc:169805	Cranberry, low bush or lingenberry, raw (Alaska Native)	arándano rojo de matorral (Alaska)
 fdc:169806	Fish, herring eggs, Pacific, plain (Alaska Native)	huevas de arenque (Alaska)
 fdc:169807	Fish, herring, Pacific, flesh, air-dried, packed in oil (Alaska Native)	arenque seco en aceite (Alaska)
-fdc:169808	Huckleberries, raw (Alaska Native)	arándanos silvestres (Alaska)
+fdc:169808	Huckleberries, raw (Alaska Native)	arándanos silvestres (Alaska) — huckleberries
 fdc:169809	Fish, lingcod, meat, raw (Alaska Native)	marrajo crudo (Alaska)
 fdc:169810	Fish, lingcod, liver (Alaska Native)	hígado de marrajo (Alaska)
 fdc:169811	Tennis Bread, plain (Apache)	pan tennis (apache)
@@ -2722,7 +2722,7 @@ fdc:170006	Onions, young green, tops only	tallos de cebolleta
 fdc:170007	Onions, welsh, raw	cebolla galesa cruda
 fdc:170008	Onions, sweet, raw	cebolla dulce cruda
 fdc:170009	Parsnips, cooked, boiled, drained, without salt	chirivía cocida sin sal
-fdc:170010	Peas, edible-podded, raw	tirabeques crudos
+fdc:170010	Peas, edible-podded, raw	tirabeques crudos — peas
 fdc:170011	Peas, edible-podded, boiled, drained, without salt	tirabeques cocidos
 fdc:170012	Peas, edible-podded, frozen, unprepared	tirabeques congelados sin preparar
 fdc:170013	Peas, green (includes baby and lesuer types), canned, drained solids, unprepared	guisantes en conserva escurridos
@@ -2756,7 +2756,7 @@ fdc:170040	Potatoes, mashed, dehydrated, prepared from granules without milk, wh
 fdc:170041	Potatoes, mashed, dehydrated, granules with milk, dry form	gránulos de patata con leche secos
 fdc:170042	Potatoes, mashed, dehydrated, prepared from granules with milk, water and margarine added	puré de patata de gránulos con margarina
 fdc:170043	Potatoes, hash brown, frozen, plain, unprepared	tortitas de patata congeladas sin preparar
-fdc:170044	Potatoes, hash brown, frozen, plain, prepared, pan fried in canola oil	tortitas de patata fritas en aceite de colza
+fdc:170044	Potatoes, hash brown, frozen, plain, prepared, pan fried in canola oil	tortitas de patata fritas en aceite de colza — frozen
 fdc:170045	Potatoes, hash brown, frozen, with butter sauce, unprepared	tortitas de patata con salsa de mantequilla congeladas sin preparar
 fdc:170046	Potatoes, hash brown, frozen, with butter sauce, prepared	tortitas de patata con salsa de mantequilla preparadas
 fdc:170047	Potato puffs, frozen, unprepared	bolas de patata congeladas sin preparar
@@ -2820,7 +2820,7 @@ fdc:170104	Peas, green, canned, no salt added, drained solids	guisantes en conse
 fdc:170105	Peas, green, frozen, cooked, boiled, drained, with salt	guisantes congelados cocidos con sal
 fdc:170106	Peppers, hot chili, red, raw	chile rojo crudo
 fdc:170107	Peppers, hot chili, red, canned, excluding seeds, solids and liquids	guindilla roja en conserva
-fdc:170108	Peppers, sweet, red, raw	pimiento rojo crudo
+fdc:170108	Peppers, sweet, red, raw	pimiento rojo crudo — peppers
 fdc:170109	Peppers, sweet, green, cooked, boiled, drained, with salt	pimiento verde cocido con sal
 fdc:170110	Peppers, sweet, red, cooked, boiled, drained, without salt	pimiento rojo cocido sin sal
 fdc:170111	Potatoes, baked, flesh and skin, with salt	patata asada con piel con sal
@@ -2918,7 +2918,7 @@ fdc:170202	Beef, cured, luncheon meat, jellied	embutido de vacuno en gelatina
 fdc:170203	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, select, cooked, grilled	filete Denver de ternera a la parrilla
 fdc:170204	Beef, cured, pastrami	pastrami
 fdc:170205	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, all grades, raw	filete Denver de vacuno magro crudo
-fdc:170206	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, choice, cooked	vacuno con grasa cocinado (piezas variadas, choice)
+fdc:170206	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, choice, cooked	vacuno con grasa cocinado (piezas variadas, choice) — trimmed to 0" fat
 fdc:170207	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, select, cooked	vacuno con grasa cocinado (piezas variadas, select)
 fdc:170208	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, all grades, cooked	vacuno magro cocinado (piezas variadas)
 fdc:170209	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, choice, cooked	vacuno magro cocinado (piezas variadas, choice)
@@ -2935,24 +2935,24 @@ fdc:170219	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to
 fdc:170220	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, choice, cooked, broiled	costillar de vacuno parte fina con grasa a la parrilla (choice)
 fdc:170221	Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, select, cooked, broiled	costillar de vacuno parte fina con grasa a la parrilla (select)
 fdc:170222	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado de contra de vacuno con grasa asado (todas)
-fdc:170223	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	filete de contra de vacuno con grasa estofado (choice)
-fdc:170224	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	asado de contra de vacuno con grasa asado (choice)
-fdc:170225	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, cooked, braised	filete de contra de vacuno con grasa estofado (select)
+fdc:170223	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	filete de contra de vacuno con grasa estofado (choice) — trimmed to 0" fat
+fdc:170224	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	asado de contra de vacuno con grasa asado (choice) — trimmed to 0" fat
+fdc:170225	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, cooked, braised	filete de contra de vacuno con grasa estofado (select) — trimmed to 0" fat
 fdc:170226	Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, select, cooked, braised	filete de contra de vacuno magro estofado
 fdc:170227	Beef, round, bottom round roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	asado de contra de vacuno magro asado
-fdc:170228	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado de redondo de vacuno con grasa asado
-fdc:170229	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	asado de redondo de vacuno con grasa asado (choice)
+fdc:170228	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado de redondo de vacuno con grasa asado — sin hueso
+fdc:170229	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	asado de redondo de vacuno con grasa asado (choice) — sin hueso
 fdc:170230	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted	asado de tapa de cadera con grasa asado (todas)
 fdc:170231	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted	asado de tapa de cadera con grasa asado (choice)
-fdc:170232	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de tapa de cadera con grasa asado (select)
+fdc:170232	Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de tapa de cadera con grasa asado (select) — trimmed to 0" fat
 fdc:170233	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	asado de tapa de cadera magro asado
-fdc:170234	Beef, round, top round, separable lean and fat, trimmed to 0" fat, select, cooked, braised	tapa de vacuno con grasa estofada (select)
+fdc:170234	Beef, round, top round, separable lean and fat, trimmed to 0" fat, select, cooked, braised	tapa de vacuno con grasa estofada (select) — trimmed to 0" fat
 fdc:170235	Beef, round, top round, separable lean only, trimmed to 0" fat, choice, cooked, braised	tapa de vacuno magra estofada (choice)
 fdc:170236	Beef, round, top round, separable lean only, trimmed to 0" fat, select, cooked, braised	tapa de vacuno magra estofada (select)
 fdc:170237	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de solomillo con grasa a la parrilla (todas)
-fdc:170238	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de solomillo con grasa a la parrilla (choice)
+fdc:170238	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de solomillo con grasa a la parrilla (choice) — sin hueso
 fdc:170239	Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de lomo alto con grasa a la parrilla (todas)
-fdc:170240	Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de lomo alto con grasa a la parrilla (choice)
+fdc:170240	Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de lomo alto con grasa a la parrilla (choice) — sin hueso
 fdc:170241	Puddings, banana, dry mix, regular, with added oil	natillas de plátano en polvo con aceite
 fdc:170242	Puddings, lemon, dry mix, regular, with added oil, potassium, sodium	natillas de limón en polvo con aceite
 fdc:170243	Puddings, tapioca, dry mix, with no added salt	natillas de tapioca en polvo sin sal
@@ -3100,8 +3100,8 @@ fdc:170384	Burdock root, cooked, boiled, drained, without salt	raíz de bardana 
 fdc:170385	Butterbur, (fuki), raw	fuki crudo
 fdc:170386	Butterbur, cooked, boiled, drained, without salt	fuki cocido sin sal
 fdc:170387	Butterbur, canned	fuki en conserva
-fdc:170388	Cabbage, savoy, raw	col rizada cruda
-fdc:170389	Cabbage, savoy, cooked, boiled, drained, without salt	col rizada cocida sin sal
+fdc:170388	Cabbage, savoy, raw	col rizada cruda — cabbage
+fdc:170389	Cabbage, savoy, cooked, boiled, drained, without salt	col rizada cocida sin sal — cabbage
 fdc:170390	Cabbage, chinese (pak-choi), raw	pak choi crudo
 fdc:170391	Cabbage, chinese (pak-choi), cooked, boiled, drained, without salt	pak choi cocido sin sal
 fdc:170392	Cabbage, kimchi	kimchi
@@ -3154,7 +3154,7 @@ fdc:170438	Potatoes, boiled, cooked in skin, flesh, without salt	patata cocida c
 fdc:170439	Potatoes, boiled, cooked in skin, skin, without salt	piel de patata cocida sin sal
 fdc:170440	Potatoes, boiled, cooked without skin, flesh, without salt	patata cocida sin piel sin sal
 fdc:170441	Potatoes, microwaved, cooked in skin, flesh, without salt	patata al microondas con piel sin sal
-fdc:170442	Potatoes, au gratin, home-prepared from recipe using butter	patatas gratinadas caseras con mantequilla
+fdc:170442	Potatoes, au gratin, home-prepared from recipe using butter	patatas gratinadas caseras con mantequilla — au gratin
 fdc:170443	Potatoes, canned, solids and liquids	patatas en conserva
 fdc:170444	Potatoes, canned, drained solids	patatas en conserva escurridas
 fdc:170445	Potatoes, mashed, dehydrated, flakes without milk, dry form	copos de patata para puré secos
@@ -3199,9 +3199,9 @@ fdc:170483	Drumstick pods, raw	vainas de moringa crudas
 fdc:170484	Drumstick pods, cooked, boiled, drained, without salt	vainas de moringa cocidas sin sal
 fdc:170485	Leeks, (bulb and lower-leaf portion), freeze-dried	puerros liofilizados
 fdc:170486	Parsley, freeze-dried	perejil liofilizado
-fdc:170487	Squash, summer, all varieties, raw	calabaza de verano cruda
+fdc:170487	Squash, summer, all varieties, raw	calabaza de verano cruda — all varieties
 fdc:170488	Squash, summer, all varieties, cooked, boiled, drained, without salt	calabaza de verano cocida sin sal
-fdc:170489	Squash, winter, all varieties, raw	calabaza cruda
+fdc:170489	Squash, winter, all varieties, raw	calabaza cruda — squash
 fdc:170490	Squash, winter, all varieties, cooked, baked, without salt	calabaza asada sin sal
 fdc:170491	Carrot juice, canned	zumo de zanahoria en conserva
 fdc:170492	Corn pudding, home prepared	pudín de maíz casero
@@ -3273,7 +3273,7 @@ fdc:170557	Seeds, pumpkin and squash seed kernels, roasted, without salt	semilla
 fdc:170558	Seeds, safflower seed kernels, dried	semillas de cártamo secas
 fdc:170559	Seeds, safflower seed meal, partially defatted	harina de cártamo parcialmente desgrasada
 fdc:170560	Seeds, sesame flour, low-fat	harina de sésamo desgrasada
-fdc:170561	Seeds, sesame meal, partially defatted	harina de sésamo parcialmente desgrasada
+fdc:170561	Seeds, sesame meal, partially defatted	harina de sésamo parcialmente desgrasada — sesame meal
 fdc:170562	Seeds, sunflower seed kernels, dried	pipas de girasol secas
 fdc:170563	Seeds, sunflower seed kernels, dry roasted, without salt	pipas de girasol tostadas sin sal
 fdc:170564	Seeds, sunflower seed kernels, oil roasted, without salt	pipas de girasol fritas en aceite sin sal
@@ -3323,7 +3323,7 @@ fdc:170607	Beef, chopped, cured, smoked	vacuno picado curado ahumado
 fdc:170608	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, choice, raw	filete Denver de vacuno magro crudo (choice)
 fdc:170609	Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, all grades, cooked	vacuno con grasa cocinado (piezas variadas)
 fdc:170610	Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, select, cooked	vacuno magro cocinado (piezas variadas, select)
-fdc:170611	Beef, brisket, whole, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	pecho de vacuno entero con grasa estofado
+fdc:170611	Beef, brisket, whole, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	pecho de vacuno entero con grasa estofado — trimmed to 0" fat
 fdc:170612	Beef, brisket, whole, separable lean only, trimmed to 0" fat, all grades, cooked, braised	pecho de vacuno entero magro estofado
 fdc:170613	Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	pecho de vacuno parte plana con grasa estofado (todas)
 fdc:170614	Beef, chuck, arm pot roast, separable lean and fat, trimmed to 0" fat, select, cooked, braised	aguja de vacuno con grasa estofada (select)
@@ -3339,20 +3339,20 @@ fdc:170623	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0"
 fdc:170624	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, cooked, broiled	costillar de vacuno parte fina magro a la parrilla (choice)
 fdc:170625	Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, select, cooked, broiled	costillar de vacuno parte fina magro a la parrilla (select)
 fdc:170626	Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	filete de contra de vacuno con grasa estofado (todas)
-fdc:170627	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de contra de vacuno con grasa asado (select)
+fdc:170627	Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de contra de vacuno con grasa asado (select) — trimmed to 0" fat
 fdc:170628	Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, all grades, cooked, braised	filete de contra de vacuno magro estofado
 fdc:170629	Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	asado de contra de vacuno magro asado
 fdc:170630	Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, choice, cooked, braised	filete de contra de vacuno magro estofado (choice)
 fdc:170631	Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de contra de vacuno magro asado (choice)
-fdc:170632	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de redondo de vacuno con grasa asado (select)
+fdc:170632	Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted	asado de redondo de vacuno con grasa asado (select) — sin hueso
 fdc:170633	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted	redondo de ternera asado
 fdc:170634	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de redondo de vacuno magro asado (choice)
 fdc:170635	Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted	asado de redondo de vacuno magro asado (select)
 fdc:170636	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted	asado de tapa de cadera magro asado (choice)
 fdc:170637	Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, cooked, roasted	asado de tapa de cadera magro asado (select)
 fdc:170638	Beef, round, top round, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	tapa de vacuno con grasa estofada (todas)
-fdc:170639	Beef, round, top round, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	tapa de vacuno con grasa estofada (choice)
-fdc:170640	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de solomillo con grasa a la parrilla (select)
+fdc:170639	Beef, round, top round, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	tapa de vacuno con grasa estofada (choice) — trimmed to 0" fat
+fdc:170640	Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de solomillo con grasa a la parrilla (select) — sin hueso
 fdc:170641	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	filete de solomillo magro a la parrilla
 fdc:170642	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled	filete de solomillo magro a la parrilla (choice)
 fdc:170643	Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled	filete de solomillo magro a la parrilla (select)
@@ -3457,11 +3457,11 @@ fdc:170741	KFC, Fried Chicken, ORIGINAL RECIPE, Thigh, meat only, skin and bread
 fdc:170742	KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat only, skin and breading removed	contra muslo de pollo frito sin piel ni rebozado KFC crujiente
 fdc:170743	KFC, Fried Chicken, EXTRA CRISPY, Wing, meat only, skin and breading removed	ala de pollo frito sin piel ni rebozado KFC crujiente
 fdc:170744	KFC, Fried Chicken, ORIGINAL RECIPE, Breast, meat and skin with breading	pechuga de pollo frito con piel y rebozado KFC
-fdc:170745	KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat and skin with breading	muslo de pollo frito con piel y rebozado KFC
+fdc:170745	KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat and skin with breading	muslo de pollo frito con piel y rebozado KFC — drumstick
 fdc:170746	KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat and skin with breading	contra muslo de pollo frito con piel y rebozado KFC crujiente
 fdc:170747	KFC, Fried Chicken, EXTRA CRISPY, Wing, meat and skin with breading	ala de pollo frito con piel y rebozado KFC crujiente
 fdc:170748	POPEYES, Fried Chicken, Mild, Breast, meat only, skin and breading removed	pechuga de pollo frito sin piel ni rebozado Popeyes
-fdc:170749	POPEYES, Fried Chicken, Mild, Drumstick, meat only, skin and breading removed	muslo de pollo frito sin piel ni rebozado Popeyes
+fdc:170749	POPEYES, Fried Chicken, Mild, Drumstick, meat only, skin and breading removed	muslo de pollo frito sin piel ni rebozado Popeyes — drumstick
 fdc:170750	POPEYES, Fried Chicken, Mild, Thigh, meat and skin with breading	contra muslo de pollo frito con piel y rebozado Popeyes
 fdc:170751	POPEYES, Fried Chicken, Mild, Wing, meat and skin with breading	ala de pollo frito con piel y rebozado Popeyes
 fdc:170752	Fast foods, grilled chicken, bacon and tomato club sandwich, with cheese, lettuce, and mayonnaise	club sándwich de pollo a la parrilla con beicon y queso
@@ -3496,7 +3496,7 @@ fdc:170780	School Lunch, pizza, pepperoni topping, thin crust, whole grain, froz
 fdc:170781	School Lunch, pizza, pepperoni topping, thick crust, whole grain, frozen, cooked	pizza de pepperoni integral de masa gruesa escolar horneada
 fdc:170782	School Lunch, pizza, sausage topping, thin crust, whole grain, frozen, cooked	pizza con salchicha integral fina escolar horneada
 fdc:170783	Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw	costillas de aguja de vacuno magras crudas (choice)
-fdc:170784	WENDY'S, Double Stack, with cheese	hamburguesa doble Wendy's con queso
+fdc:170784	WENDY'S, Double Stack, with cheese	hamburguesa Double Stack Wendy's con queso
 fdc:170785	Fast foods, crispy chicken in tortilla, with lettuce, cheese, and ranch sauce	wrap de pollo crujiente con ranch
 fdc:170786	Fast foods, grilled chicken in tortilla, with lettuce, cheese, and ranch sauce	wrap de pollo a la parrilla con ranch
 fdc:170787	Fast foods, breakfast burrito, with egg, cheese, and sausage	burrito de desayuno con huevo, queso y salchicha
@@ -3514,9 +3514,9 @@ fdc:170798	Beef, chuck eye Country-Style ribs, boneless, separable lean only, tr
 fdc:170799	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	costillas country de vacuno magras estofadas
 fdc:170800	Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw	costillas country de vacuno magras crudas (choice)
 fdc:170801	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled	filete de aguja de vacuno magro a la parrilla
-fdc:170802	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	filete de aguja de vacuno magro crudo (choice)
+fdc:170802	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	filete de aguja de vacuno magro crudo (choice) — filete de aguja de vacuno
 fdc:170803	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, select, raw	filete de aguja de vacuno magro crudo (select)
-fdc:170804	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	filete de aguja de vacuno magro crudo
+fdc:170804	Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw	filete de aguja de vacuno magro crudo — filete de aguja de vacuno
 fdc:170805	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised	filete mock tender de vacuno magro estofado
 fdc:170806	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	filete mock tender de vacuno magro estofado (todas)
 fdc:170807	Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, choice, raw	filete mock tender de vacuno magro crudo (choice)
@@ -3546,8 +3546,8 @@ fdc:170830	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat,
 fdc:170831	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	costillas country de vacuno con grasa crudas
 fdc:170832	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	costillas country de vacuno con grasa crudas (choice)
 fdc:170833	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, select, raw	costillas country de vacuno con grasa crudas (select)
-fdc:170834	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	filete de aguja de vacuno con grasa crudo (choice)
-fdc:170835	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de aguja de vacuno con grasa crudo (select)
+fdc:170834	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw	filete de aguja de vacuno con grasa crudo (choice) — filete de aguja de vacuno
+fdc:170835	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw	filete de aguja de vacuno con grasa crudo (select) — filete de aguja de vacuno
 fdc:170836	Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted	entrecot de vacuno con hueso magro asado
 fdc:170837	Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, roasted	entrecot de vacuno con hueso magro asado (select)
 fdc:170838	Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, raw	entrecot de vacuno con hueso magro crudo (select)
@@ -3643,7 +3643,7 @@ fdc:170927	Spices, mace, ground	macis molido
 fdc:170928	Spices, marjoram, dried	mejorana seca
 fdc:170929	Spices, mustard seed, ground	mostaza en polvo
 fdc:170930	Spices, parsley, dried	perejil seco
-fdc:170931	Spices, pepper, black	pimienta negra
+fdc:170931	Spices, pepper, black	pimienta negra — spices
 fdc:170932	Spices, pepper, red or cayenne	pimienta de cayena
 fdc:170933	Spices, pepper, white	pimienta blanca
 fdc:170934	Spices, saffron	azafrán
@@ -3921,7 +3921,7 @@ fdc:171205	Beef, chuck for stew, separable lean and fat, choice, cooked, braised
 fdc:171206	Beef, chuck for stew, separable lean and fat, all grades, raw	vacuno para guisar con grasa crudo
 fdc:171207	Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised	filete de aguja baja de vacuno magro estofado
 fdc:171208	Beef, chuck, under blade pot roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	asado de aguja baja de vacuno con grasa estofado
-fdc:171209	Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	entrecot de vacuno magro a la parrilla
+fdc:171209	Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled	entrecot de vacuno magro a la parrilla — sin hueso
 fdc:171210	Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted	entrecot de vacuno con hueso magro asado (choice)
 fdc:171211	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete Denver de vacuno con grasa a la parrilla (choice)
 fdc:171212	Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete Denver de vacuno con grasa a la parrilla (select)
@@ -3940,10 +3940,10 @@ fdc:171224	Beef, shoulder pot roast, boneless, separable lean and fat, trimmed t
 fdc:171225	Beef, shoulder pot roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised	paletilla de vacuno con grasa estofada (choice)
 fdc:171226	Beef, shoulder pot roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised	paletilla de vacuno con grasa estofada (select)
 fdc:171227	Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised	costillas country de vacuno con grasa estofadas
-fdc:171228	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla
-fdc:171229	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla (choice)
-fdc:171230	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla (select)
-fdc:171231	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de aguja de vacuno con grasa crudo
+fdc:171228	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla — filete de aguja de vacuno
+fdc:171229	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla (choice) — filete de aguja de vacuno
+fdc:171230	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled	filete de aguja de vacuno con grasa a la parrilla (select) — filete de aguja de vacuno
+fdc:171231	Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw	filete de aguja de vacuno con grasa crudo — filete de aguja de vacuno
 fdc:171232	Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled	entrecot de vacuno magro a la parrilla (choice)
 fdc:171233	Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, grilled	entrecot de vacuno magro a la parrilla (select)
 fdc:171234	Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw	entrecot de vacuno con hueso magro crudo
@@ -3958,7 +3958,7 @@ fdc:171242	Cheese, gruyere	queso gruyère
 fdc:171243	Cheese, limburger	queso limburger
 fdc:171244	Cheese, mozzarella, low moisture, part-skim	mozzarella semidesnatada baja humedad
 fdc:171245	Cheese, muenster	queso muenster
-fdc:171246	Cheese, neufchatel	queso neufchâtel
+fdc:171246	Cheese, neufchatel	queso neufchâtel — cheese
 fdc:171247	Cheese, parmesan, grated	parmesano rallado
 fdc:171248	Cheese, ricotta, part skim milk	ricotta semidesnatada
 fdc:171249	Cheese, romano	queso romano
@@ -4088,7 +4088,7 @@ fdc:171372	Zwieback	panecillos tostados zwieback
 fdc:171373	Babyfood, dessert, cherry vanilla pudding, junior	natillas de cereza y vainilla para niños mayores
 fdc:171374	Babyfood, dessert, fruit pudding, orange, strained	natillas de fruta y naranja infantiles
 fdc:171375	Babyfood, dessert, peach cobbler, strained	postre de melocotón infantil
-fdc:171376	Babyfood, dessert, peach cobbler, junior	postre de melocotón para niños mayores
+fdc:171376	Babyfood, dessert, peach cobbler, junior	postre de melocotón para niños mayores — peach cobbler
 fdc:171377	Babyfood, dessert, fruit dessert, without ascorbic acid, junior	puré de frutas para niños mayores
 fdc:171378	Babyfood, dessert, tropical fruit, junior	postre de frutas tropicales para niños mayores
 fdc:171379	Babyfood, dessert, custard pudding, vanilla, strained	natillas de vainilla infantiles
@@ -4214,14 +4214,14 @@ fdc:171498	Turkey, whole, wing, meat only, cooked, roasted	ala de pavo sin piel 
 fdc:171499	Turkey, young hen, skin only, cooked, roasted	piel de pavo joven asada
 fdc:171500	Turkey and gravy, frozen	pavo con salsa congelado
 fdc:171501	Turkey breast, pre-basted, meat and skin, cooked, roasted	pechuga de pavo asada
-fdc:171502	Turkey thigh, pre-basted, meat and skin, cooked, roasted	contra muslo de pavo con piel asado
+fdc:171502	Turkey thigh, pre-basted, meat and skin, cooked, roasted	contra muslo de pavo con piel asado — turkey thigh
 fdc:171503	Turkey roast, boneless, frozen, seasoned, light and dark meat, raw	asado de pavo sin hueso aliñado congelado crudo
 fdc:171504	Turkey, mechanically deboned, from turkey frames, raw	carne de pavo deshuesada mecánicamente cruda
 fdc:171505	Turkey, Ground, raw	pavo picado crudo
 fdc:171506	Turkey, Ground, cooked	pavo picado cocinado
 fdc:171507	Chicken, cornish game hens, meat and skin, raw	pollo Cornualles con piel crudo
 fdc:171508	Chicken, wing, frozen, glazed, barbecue flavored, heated (microwave)	alas de pollo glaseadas a la barbacoa al microondas
-fdc:171509	Chicken, broilers or fryers, breast, skinless, boneless, meat only, with added solution, raw	pechuga de pollo sin piel ni hueso cruda
+fdc:171509	Chicken, broilers or fryers, breast, skinless, boneless, meat only, with added solution, raw	pechuga de pollo sin piel ni hueso cruda — broilers or fryers
 fdc:171510	Duck, young duckling, domesticated, White Pekin, breast, meat and skin, boneless, cooked, roasted	pechuga de pato con piel asada
 fdc:171511	Duck, young duckling, domesticated, White Pekin, breast, meat only, boneless, cooked without skin, broiled	pechuga de pato sin piel a la parrilla
 fdc:171521	Chicken, broilers or fryers,  rotisserie, original seasoning, drumstick, meat and skin, cooked	muslo de pollo asado
