@@ -65,7 +65,7 @@ bls:V478282	Goose giblets, deep-frozen, fried without fat (pan)	menudillos de ga
 bls:V485282	Turkey leg, without skin, deep-frozen, fried without fat (pan)	muslo de pavo sin piel a la plancha
 bls:V486282	Turkey breast, without skin, deep-frozen, fried without fat (pan)	pechuga de pavo a la plancha
 bls:V532200	Veal liver, deep-frozen	hígado de ternera congelado
-bls:V574142	Sheep kidney, braised without fat	riñones de cordero estofados
+bls:V574142	Sheep kidney, braised without fat	riñones de oveja estofados sin grasa
 bls:V614200	Chicken heart, deep-frozen	corazón de pollo congelado
 bls:W009000	Mosaic-edge for roulade sausage	borde mosaico para fiambre en rollo
 bls:W117000	Mettwurst sausage simple, spreadable	mettwurst para untar
@@ -225,7 +225,7 @@ cofid:19-553	Burger, beef, fried in rapeseed oil, homemade	hamburguesa de terner
 cofid:19-580	Duck with pineapple, homemade	pato con piña
 cofid:19-592	Curry, lamb biryani, reduced fat, homemade	biryani de cordero bajo en grasa
 fdc:1104647	Garlic, raw	ajo
-fdc:1104705	Flour, soy, defatted	harina de soja desgrasada
+fdc:1104705	Flour, soy, defatted	harina de soja desgrasada Foundation
 fdc:1104766	Flour, soy, full-fat	harina de soja entera
 fdc:1104812	Flour, rice, brown	harina de arroz integral
 fdc:1104867	Flour, rice, glutinous	harina de arroz glutinoso
@@ -418,7 +418,7 @@ fdc:167693	Salad dressing, french dressing, reduced calorie	salsa francesa baja 
 fdc:167694	Sausage, turkey and pork, fresh, bulk, patty or link, cooked	salchichas de pavo y cerdo cocinadas
 fdc:167695	Mayonnaise, made with tofu	mayonesa de tofu
 fdc:167696	Frankfurter, beef, low fat	salchicha de vacuno baja en grasa
-fdc:167697	Milk, buttermilk, fluid, cultured, reduced fat	suero de mantequilla bajo en grasa
+fdc:167697	Milk, buttermilk, fluid, cultured, reduced fat	suero de mantequilla cultivado bajo en grasa
 fdc:167698	Pork sausage rice links, brown and serve, cooked	salchichas de cerdo con arroz cocinadas
 fdc:167699	Salad dressing, blue or roquefort cheese dressing, fat-free	salsa de queso azul sin grasa
 fdc:167700	Salad Dressing, mayonnaise-like, fat-free	salsa tipo mayonesa sin grasa
@@ -490,7 +490,7 @@ fdc:167765	Watermelon, raw	sandía
 fdc:167766	Maraschino cherries, canned, drained	cerezas marrasquino en conserva
 fdc:167767	Pineapple, canned, juice pack, drained	piña en conserva en su zumo
 fdc:167768	Apricots, canned, heavy syrup, drained	albaricoques en conserva en almíbar
-fdc:167769	Cherries, sour, canned, water pack, drained	guindas en conserva en agua
+fdc:167769	Cherries, sour, canned, water pack, drained	guindas en conserva en agua escurridas
 fdc:167770	Cherries, sweet, canned, pitted, heavy syrup, drained	cerezas en conserva sin hueso en almíbar
 fdc:167771	Apple juice, canned or bottled, unsweetened, with added ascorbic acid	zumo de manzana sin azúcar con vitamina C
 fdc:167772	Applesauce, canned, unsweetened, with added ascorbic acid	puré de manzana sin azúcar
@@ -2568,8 +2568,8 @@ fdc:169843	CRACKER BARREL, coleslaw	ensalada de col Cracker Barrel
 fdc:169844	DENNY'S, onion rings	aros de cebolla Denny's
 fdc:169845	DENNY'S, spaghetti and meatballs	espaguetis con albóndigas Denny's
 fdc:169846	Restaurant, family style, fish fillet, battered or breaded, fried	filete de pescado rebozado frito
-fdc:169847	Restaurant, family style, chicken tenders	tiras de pollo
-fdc:169848	Restaurant, family style, hash browns	patatas hash brown
+fdc:169847	Restaurant, family style, chicken tenders	tiras de pollo de restaurante
+fdc:169848	Restaurant, family style, hash browns	patatas hash brown de restaurante
 fdc:169849	CRACKER BARREL, macaroni n' cheese	macarrones con queso Cracker Barrel
 fdc:169850	Restaurant, Italian, lasagna with meat	lasaña con carne
 fdc:169851	OLIVE GARDEN, lasagna classico	lasaña clásica Olive Garden
@@ -2596,7 +2596,7 @@ fdc:169871	Babyfood, carrots, toddler	zanahorias infantiles para niños pequeño
 fdc:169872	Babyfood, dessert, banana pudding, strained	puré de plátano infantil
 fdc:169873	Babyfood, fruit, tutti frutti, strained	puré de frutas variadas infantil
 fdc:169874	Babyfood, fruit, tutti frutti, junior	puré de frutas variadas para niños mayores
-fdc:169875	Salad dressing, sweet and sour	salsa agridulce
+fdc:169875	Salad dressing, sweet and sour	aderezo agridulce
 fdc:169876	Salad dressing, blue or roquefort cheese, low calorie	salsa de queso azul baja en calorías
 fdc:169877	Salad dressing, caesar, low calorie	salsa césar baja en calorías
 fdc:169878	Syrups, sugar free	sirope sin azúcar
@@ -4165,7 +4165,7 @@ fdc:171440	Oil, industrial, soy, fully hydrogenated	aceite de soja totalmente hi
 fdc:171441	Oil, industrial, cottonseed, fully hydrogenated	aceite de algodón totalmente hidrogenado
 fdc:171442	Oil, flaxseed, contains added sliced flaxseed	aceite de linaza con semillas
 fdc:171443	Mayonnaise, reduced fat, with olive oil	mayonesa baja en grasa con aceite de oliva
-fdc:171444	Salad dressing, mayonnaise-type, light	mayonesa ligera
+fdc:171444	Salad dressing, mayonnaise-type, light	salsa tipo mayonesa ligera
 fdc:171445	Chicken, broiler, rotisserie, BBQ, breast, meat only	pechuga de pollo asada sin piel
 fdc:171446	Chicken, broilers or fryers, meat and skin and giblets and neck, stewed	pollo entero con menudillos guisado
 fdc:171447	Chicken, broilers or fryers, meat and skin, raw	pollo con piel crudo
@@ -4250,7 +4250,7 @@ fdc:171525	Turkey, drumstick, from whole bird, meat only, with added solution, r
 fdc:171526	Turkey, wing, from whole bird, meat only, with added solution, raw	ala de pavo sin piel con salmuera cruda
 fdc:171527	Turkey, wing, from whole bird, meat only, with added solution, roasted	ala de pavo sin piel con salmuera asada
 fdc:171528	Turkey, retail parts, breast, meat and skin, raw	pechuga de pavo con piel cruda
-fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	pechuga de pavo con piel asada
+fdc:171529	Turkey, retail parts, breast, meat and skin, cooked, roasted	pechuga de pavo con piel asada de pieza
 fdc:171530	Turkey, drumstick, from whole bird, meat only, roasted	muslo de pavo sin piel asado
 fdc:171531	Turkey, thigh, from whole bird, meat only, raw	contramuslo de pavo sin piel crudo
 fdc:171532	Turkey, thigh, from whole bird, meat only, roasted	contramuslo de pavo sin piel asado
@@ -4614,7 +4614,7 @@ fdc:171889	Beverages, coffee, brewed, prepared with tap water, decaffeinated	caf
 fdc:171890	Beverages, coffee, brewed, prepared with tap water	café de filtro
 fdc:171891	Beverages, coffee, brewed, espresso, restaurant-prepared	café expreso
 fdc:171892	Beverages, tea, black, ready-to-drink, lemon, diet	té negro con limón light
-fdc:171893	Beverages, coffee, instant, regular, powder	café soluble
+fdc:171893	Beverages, coffee, instant, regular, powder	café soluble en polvo
 fdc:171894	Beverages, coffee, instant, decaffeinated, prepared with water	café soluble descafeinado
 fdc:171895	Beverages, OCEAN SPRAY, Cranberry-Apple Juice Drink, bottled	bebida de arándano rojo y manzana Ocean Spray
 fdc:171896	Beverages, OCEAN SPRAY, Diet Cranberry Juice	bebida de arándano rojo light Ocean Spray
@@ -4692,7 +4692,7 @@ fdc:171967	Crustaceans, crab, blue, crab cakes, home recipe	pasteles de cangrejo
 fdc:171968	Crustaceans, crab, dungeness, raw	cangrejo Dungeness crudo
 fdc:171969	Crustaceans, crab, queen, raw	cangrejo reina crudo
 fdc:171970	Crustaceans, shrimp, mixed species, cooked, breaded and fried	gambas fritas rebozadas
-fdc:171971	Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)	gambas cocidas
+fdc:171971	Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)	gambas cocidas con aditivos
 fdc:171972	Crustaceans, shrimp, mixed species, canned	gambas en conserva
 fdc:171973	Crustaceans, shrimp, mixed species, imitation, made from surimi	gambas de imitación de surimi
 fdc:171974	Mollusks, clam, mixed species, cooked, breaded and fried	almejas fritas rebozadas
@@ -4758,7 +4758,7 @@ fdc:172033	Fast foods, english muffin, with egg, cheese, and canadian bacon	muff
 fdc:172034	Fast foods, english muffin, with egg, cheese, and sausage	muffin inglés con huevo queso y salchicha
 fdc:172035	Fast foods, french toast sticks	palitos de torrija
 fdc:172036	Fast foods, sundae, strawberry	sundae de fresa
-fdc:172037	Fast foods, shrimp, breaded and fried	gambas fritas rebozadas
+fdc:172037	Fast foods, shrimp, breaded and fried	gambas fritas rebozadas de restaurante
 fdc:172038	Fast foods, burrito, with beans	burrito de judías
 fdc:172039	Fast foods, burrito, with beans and cheese	burrito de judías con queso
 fdc:172040	PIZZA HUT 12" Cheese Pizza, Hand-Tossed Crust	pizza de queso 12" masa fina Pizza Hut
@@ -5098,7 +5098,7 @@ fdc:172373	Chicken, broilers or fryers, drumstick, meat and skin, raw	muslo de p
 fdc:172374	Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, batter	muslo de pollo con piel frito en rebozado
 fdc:172375	Chicken, broilers or fryers, drumstick, meat only, cooked, fried	muslo de pollo sin piel frito
 fdc:172376	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted	muslo de pollo sin piel asado
-fdc:172377	Chicken, broilers or fryers, drumstick, meat only, cooked, stewed	muslo de pollo sin piel estofado
+fdc:172377	Chicken, broilers or fryers, drumstick, meat only, cooked, stewed	muslo de pollo sin piel guisado
 fdc:172378	Chicken, broilers or fryers, leg, meat and skin, raw	pata de pollo con piel cruda
 fdc:172379	Chicken, broilers or fryers, leg, meat only, cooked, fried	pata de pollo sin piel frita
 fdc:172380	Chicken, broilers or fryers, leg, meat only, cooked, roasted	pata de pollo sin piel asada
@@ -5156,7 +5156,7 @@ fdc:172431	Peanuts, spanish, oil-roasted, with salt	cacahuetes fritos en aceite 
 fdc:172432	Peanuts, valencia, raw	cacahuetes valencia crudos
 fdc:172433	Peanuts, valencia, oil-roasted, with salt	cacahuetes valencia fritos en aceite salados
 fdc:172434	Peanuts, virginia, raw	cacahuetes virginia crudos
-fdc:172435	Peanut flour, low fat	harina de cacahuete desgrasada
+fdc:172435	Peanut flour, low fat	harina de cacahuete baja en grasa
 fdc:172436	Pigeon peas (red gram), mature seeds, raw	gandules crudos
 fdc:172437	Pigeon peas (red gram), mature seeds, cooked, boiled, without salt	gandules cocidos sin sal
 fdc:172438	Refried beans, canned, traditional style	judías refritas en conserva
@@ -5165,7 +5165,7 @@ fdc:172440	Soybeans, mature seeds, roasted, salted	soja tostada salada
 fdc:172441	Soybeans, mature seeds, dry roasted	soja tostada en seco
 fdc:172442	Miso	miso
 fdc:172443	Natto	natto
-fdc:172444	Soy flour, low-fat	harina de soja desgrasada
+fdc:172444	Soy flour, low-fat	harina de soja baja en grasa
 fdc:172445	Soy meal, defatted, raw	soja molida desgrasada
 fdc:172446	Soymilk, original and vanilla, unfortified	bebida de soja natural y vainilla no enriquecida
 fdc:172447	Soy protein concentrate, produced by alcohol extraction	concentrado de proteína de soja
@@ -5291,7 +5291,7 @@ fdc:172566	Game meat, bison, shoulder clod, separable lean only, trimmed to 0" f
 fdc:172567	Veal, breast, separable fat, cooked	ternera falda grasa cocinada
 fdc:172568	Veal, shank (fore and hind), separable lean and fat, raw	ternera morcillo con grasa crudo
 fdc:172569	Veal, shank (fore and hind), separable lean and fat, cooked, braised	ternera morcillo con grasa estofado
-fdc:172570	Veal, shank (fore and hind), separable lean only, raw	ternera morcillo magro crudo
+fdc:172570	Veal, shank (fore and hind), separable lean only, raw	ternera morcillo delantero y trasero magro crudo
 fdc:172571	Veal, shank (fore and hind), separable lean only, cooked, braised	ternera morcillo magro estofado
 fdc:172572	Lamb, Australian, imported, fresh, separable fat, raw	cordero australiano grasa cruda
 fdc:172573	Lamb, Australian, imported, fresh, separable fat, cooked	cordero australiano grasa cocinada
@@ -5425,7 +5425,7 @@ fdc:172700	Cake, coffeecake, cinnamon with crumb topping, commercially prepared,
 fdc:172701	Cake, gingerbread, dry mix	mezcla seca para pan de jengibre
 fdc:172702	Cake, gingerbread, prepared from recipe	pan de jengibre casero
 fdc:172703	Cake, pineapple upside-down, prepared from recipe	pastel de piña al revés casero
-fdc:172704	Cake, pound, commercially prepared, butter (includes fresh and frozen)	bizcocho de mantequilla
+fdc:172704	Cake, pound, commercially prepared, butter (includes fresh and frozen)	bizcocho de mantequilla pura
 fdc:172705	Cake, white, dry mix, special dietary (includes lemon-flavored)	mezcla seca para pastel blanco dietético
 fdc:172706	Cake, sponge, commercially prepared	bizcocho
 fdc:172707	Cake, sponge, prepared from recipe	bizcocho casero
@@ -5574,9 +5574,9 @@ fdc:172849	Turkey, ground, fat free, patties, broiled	hamburguesas de pavo sin g
 fdc:172850	Turkey, ground, 93% lean, 7% fat, raw	carne picada de pavo 93% magra cruda
 fdc:172851	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	carne picada de pavo 93% magra a la plancha
 fdc:172852	Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, braised	muslo de pollo sin piel estofado
-fdc:172853	Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised	contramuslo de pollo sin piel estofado
+fdc:172853	Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised	contramuslo de pollo carne oscura sin piel estofado
 fdc:172854	Chicken, skin (drumsticks and thighs), cooked, braised	piel de pollo estofada
-fdc:172855	Chicken, skin (drumsticks and thighs), raw	piel de pollo cruda
+fdc:172855	Chicken, skin (drumsticks and thighs), raw	piel de pollo de muslos cruda
 fdc:172856	Chicken, dark meat, drumstick, meat only, with added solution, cooked, roasted	muslo de pollo sin piel con salmuera asado
 fdc:172857	Chicken, dark meat, drumstick, meat only, with added solution, cooked, braised	muslo de pollo sin piel con salmuera estofado
 fdc:172858	Chicken, dark meat, thigh, meat only, with added solution, cooked, braised	contramuslo de pollo sin piel con salmuera estofado
@@ -5593,13 +5593,13 @@ fdc:172868	Turkey, whole, meat only, with added solution, raw	pavo entero sin pi
 fdc:172869	Turkey, whole, meat only, with added solution, roasted	pavo entero sin piel con salmuera asado
 fdc:172870	Turkey, whole, meat and skin, with added solution, raw	pavo entero con piel con salmuera crudo
 fdc:172871	Turkey, whole, meat and skin, with added solution, roasted	pavo entero con piel con salmuera asado
-fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	ala de pavo sin piel asada
+fdc:172872	Turkey, retail parts, wing, meat only, cooked, roasted	ala de pavo sin piel asada de pieza
 fdc:172873	Turkey, skin, from retail parts, from dark meat, raw	piel de pavo de carne oscura cruda
 fdc:172874	Turkey, skin, from retail parts, from dark meat, cooked, roasted	piel de pavo de carne oscura asada
 fdc:172875	Turkey, retail parts, drumstick, meat only, raw	muslo de pavo sin piel crudo
 fdc:172876	Turkey, breast, from whole bird, meat only, with added solution, raw	pechuga de pavo sin piel con salmuera cruda
 fdc:172877	Turkey, retail parts, thigh, meat only, cooked, roasted	contramuslo de pavo sin piel asado
-fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	muslo de pavo sin piel asado
+fdc:172878	Turkey, retail parts, drumstick, meat only, cooked, roasted	muslo de pavo sin piel asado de pieza
 fdc:172879	Sauce, plum, ready-to-serve	salsa de ciruela
 fdc:172880	Sauce, pizza, canned, ready-to-serve	salsa para pizza en conserva
 fdc:172881	Soup, tomato bisque, canned, condensed	sopa de tomate bisque concentrada en conserva
@@ -5643,9 +5643,9 @@ fdc:172918	Soup, cream of shrimp, canned, prepared with equal volume water	crema
 fdc:172919	Soup, tomato beef with noodle, canned, prepared with equal volume water	sopa de tomate con vacuno y fideos reconstituida
 fdc:172920	Soup, tomato rice, canned, prepared with equal volume water	sopa de tomate con arroz reconstituida
 fdc:172921	Soup, vegetable with beef broth, canned, prepared with equal volume water	sopa de verduras con caldo de vacuno reconstituida
-fdc:172922	Soup, beef broth or bouillon, powder, prepared with water	caldo de vacuno en polvo
+fdc:172922	Soup, beef broth or bouillon, powder, prepared with water	caldo de vacuno de polvo preparado
 fdc:172923	Soup, beef broth, cubed, prepared with water	caldo de vacuno en pastilla
-fdc:172924	Soup, chicken broth or bouillon, dry, prepared with water	caldo de pollo en polvo
+fdc:172924	Soup, chicken broth or bouillon, dry, prepared with water	caldo de pollo de polvo preparado
 fdc:172925	Soup, chicken noodle, dry, mix, prepared with water	sopa de pollo con fideos de mezcla seca
 fdc:172926	Olive loaf, pork	fiambre con aceitunas de cerdo
 fdc:172927	Pastrami, turkey	pastrami de pavo
@@ -5885,7 +5885,7 @@ fdc:173160	Snacks, shrimp cracker	galletitas de gamba
 fdc:173161	Rice crackers	galletitas de arroz
 fdc:173162	Beverages, MONSTER energy drink, low carb	bebida energética Monster baja en carbohidratos
 fdc:173163	Beverages, Whiskey sour mix, powder	mezcla para whisky sour en polvo
-fdc:173164	Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix	cóctel whisky sour
+fdc:173164	Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix	cóctel whisky sour de sobre
 fdc:173165	Beverages, THE COCA-COLA COMPANY, NOS energy drink, Original, grape, loaded cherry, charged citrus, fortified with vitamins B6 and B12	bebida energética NOS con vitaminas B6 y B12
 fdc:173166	Beverages, water, bottled, yumberry, pomegranate with anti-oxidants, zero calories	agua con bayas y granada sin calorías
 fdc:173167	Beverages, ABBOTT, EAS whey protein powder	proteína de suero EAS en polvo
@@ -6160,9 +6160,9 @@ fdc:173435	Cheese, goat, soft type	queso de cabra blando
 fdc:173436	Egg, yolk, raw, frozen, salted, pasteurized	yema de huevo congelada salada pasteurizada
 fdc:173437	Cheese, mexican, queso asadero	queso asadero
 fdc:173438	Cheese, mexican, queso chihuahua	queso chihuahua
-fdc:173439	Cheese, low fat, cheddar or colby	queso cheddar bajo en grasa
+fdc:173439	Cheese, low fat, cheddar or colby	queso bajo en grasa cheddar o colby
 fdc:173440	Cheese, low-sodium, cheddar or colby	queso cheddar bajo en sal
-fdc:173441	Milk, fluid, 1% fat, without added vitamin A and vitamin D	leche semidesnatada
+fdc:173441	Milk, fluid, 1% fat, without added vitamin A and vitamin D	leche 1%
 fdc:173442	Sour cream, reduced fat	nata agria reducida en grasa
 fdc:173443	Sour cream, light	nata agria ligera
 fdc:173444	Sour cream, fat free	nata agria sin grasa
@@ -6235,7 +6235,7 @@ fdc:173510	Babyfood, vegetable, butternut squash and corn	comida infantil verdur
 fdc:173511	Babyfood, apples, dices, toddler	comida infantil manzana en dados para pequeños
 fdc:173512	Babyfood, fruit, applesauce, strained	comida infantil puré de manzana
 fdc:173513	Babyfood, dinner, vegetables and chicken, junior	comida infantil verduras con pollo junior
-fdc:173514	Babyfood, dinner, mixed vegetable, strained	puré infantil de verduras mixtas
+fdc:173514	Babyfood, dinner, mixed vegetable, strained	puré infantil de verduras mixtas cena
 fdc:173515	Babyfood, vegetables, mix vegetables strained	puré infantil de verduras mixtas
 fdc:173516	Babyfood, dinner, beef noodle, junior	comida infantil vacuno con fideos junior
 fdc:173517	Babyfood, apples with ham, strained	puré infantil de manzana con jamón
@@ -6472,8 +6472,8 @@ fdc:173747	Beans, navy, mature seeds, canned	alubias blancas en conserva
 fdc:173748	Beans, pink, mature seeds, raw	judías rosas crudas
 fdc:173749	Beans, small white, mature seeds, raw	alubias blancas pequeñas crudas
 fdc:173750	Beans, small white, mature seeds, cooked, boiled, without salt	alubias blancas pequeñas cocidas sin sal
-fdc:173751	Beans, yellow, mature seeds, raw	judías amarillas crudas
-fdc:173752	Beans, yellow, mature seeds, cooked, boiled, without salt	judías amarillas cocidas sin sal
+fdc:173751	Beans, yellow, mature seeds, raw	judías amarillas maduras crudas
+fdc:173752	Beans, yellow, mature seeds, cooked, boiled, without salt	judías amarillas maduras cocidas sin sal
 fdc:173753	Broadbeans (fava beans), mature seeds, cooked, boiled, without salt	habas cocidas sin sal
 fdc:173754	Broadbeans (fava beans), mature seeds, canned	habas en conserva
 fdc:173755	Carob flour	harina de algarroba
@@ -6495,7 +6495,7 @@ fdc:173770	SILK Chocolate, soymilk	bebida de soja de chocolate Silk
 fdc:173771	SILK Light Plain, soymilk	bebida de soja ligera Silk
 fdc:173772	SILK Light Vanilla, soymilk	bebida de soja de vainilla ligera Silk
 fdc:173773	SILK Light Chocolate, soymilk	bebida de soja de chocolate ligera Silk
-fdc:173774	SILK Very Vanilla, soymilk	bebida de soja de vainilla Silk
+fdc:173774	SILK Very Vanilla, soymilk	bebida de soja muy vainilla Silk
 fdc:173775	SILK Nog, soymilk	bebida de soja eggnog Silk
 fdc:173776	SILK Chai, soymilk	bebida de soja chai Silk
 fdc:173777	SILK Mocha, soymilk	bebida de soja moka Silk
@@ -6586,7 +6586,7 @@ fdc:173861	Dutch brand loaf, chicken, pork and beef	fiambre holandés de pollo c
 fdc:173862	Frankfurter, beef, unheated	salchichas de vacuno
 fdc:173863	Ham, sliced, pre-packaged, deli meat (96%fat free, water added)	jamón en lonchas casi sin grasa
 fdc:173864	Ham, sliced, regular (approximately 11% fat)	jamón en lonchas
-fdc:173865	Ham, minced	jamón picado
+fdc:173865	Ham, minced	jamón finamente picado
 fdc:173866	Ham salad spread	paté de jamón para untar
 fdc:173867	Knackwurst, knockwurst, pork, beef	salchichas knackwurst de cerdo y vacuno
 fdc:173868	Lebanon bologna, beef	mortadela Lebanon de vacuno
@@ -6851,7 +6851,7 @@ fdc:174126	Beverages, coffee, instant, regular, half the caffeine	café soluble 
 fdc:174127	Beverages, coffee and cocoa, instant, decaffeinated, with whitener and low calorie sweetener	café con cacao soluble descafeinado con crema vegetal y edulcorante
 fdc:174128	Beverages, tea, green, ready-to-drink, sweetened	té verde azucarado
 fdc:174129	Beverages, tea, ready-to-drink, lemon, diet	té de limón dietético
-fdc:174130	Beverages, coffee, instant, regular, prepared with water	café soluble
+fdc:174130	Beverages, coffee, instant, regular, prepared with water	café soluble preparado
 fdc:174131	Beverages, aloe vera juice drink, fortified with Vitamin C	bebida de zumo de aloe vera con vitamina C
 fdc:174132	Beverages, OCEAN SPRAY, Cran Grape	bebida de arándano y uva Ocean Spray
 fdc:174133	Beverages, coffee, instant, decaffeinated, powder	café soluble descafeinado en polvo
@@ -6920,7 +6920,7 @@ fdc:174195	Fish, fish sticks, frozen, prepared	palitos de pescado preparados
 fdc:174196	Fish, flatfish (flounder and sole species), raw	platija y lenguado crudos
 fdc:174197	Fish, flatfish (flounder and sole species), cooked, dry heat	platija y lenguado asados
 fdc:174198	Fish, haddock, cooked, dry heat	eglefino asado
-fdc:174199	Fish, haddock, smoked	eglefino ahumado
+fdc:174199	Fish, haddock, smoked	eglefino ahumado USDA
 fdc:174200	Fish, halibut, Atlantic and Pacific, raw	fletán crudo
 fdc:174201	Fish, halibut, Atlantic and Pacific, cooked, dry heat	fletán asado
 fdc:174202	Crustaceans, crab, alaska king, cooked, moist heat	cangrejo real de Alaska cocido
@@ -6931,7 +6931,7 @@ fdc:174206	Crustaceans, crayfish, mixed species, wild, raw	cangrejos de río sal
 fdc:174207	Crustaceans, crayfish, mixed species, wild, cooked, moist heat	cangrejos de río salvajes cocidos
 fdc:174208	Crustaceans, lobster, northern, raw	bogavante crudo
 fdc:174209	Crustaceans, lobster, northern, cooked, moist heat	bogavante cocido
-fdc:174210	Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)	gambas crudas
+fdc:174210	Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)	gambas crudas con aditivos
 fdc:174211	Crustaceans, spiny lobster, mixed species, raw	langosta cruda
 fdc:174212	Mollusks, abalone, mixed species, raw	abulón crudo
 fdc:174213	Mollusks, abalone, mixed species, cooked, fried	abulón frito
@@ -7012,7 +7012,7 @@ fdc:174287	Veggie burgers or soyburgers, unprepared	hamburguesas vegetales
 fdc:174288	Chickpea flour (besan)	harina de garbanzo
 fdc:174289	Hummus, commercial	hummus
 fdc:174290	Tofu, extra firm, prepared with nigari	tofu extra firme
-fdc:174291	Tofu, hard, prepared with nigari	tofu firme
+fdc:174291	Tofu, hard, prepared with nigari	tofu duro
 fdc:174292	MORI-NU, Tofu, silken, soft	tofu sedoso Mori-Nu
 fdc:174293	Soymilk, chocolate, unfortified	bebida de soja con chocolate
 fdc:174294	Peanut Butter, smooth (Includes foods for USDA's Food Distribution Program)	crema de cacahuete suave
@@ -7703,7 +7703,7 @@ fdc:174978	Crackers, melba toast, rye (includes pumpernickel)	tostas melba de ce
 fdc:174979	Crackers, melba toast, wheat	tostas melba de trigo
 fdc:174980	Crackers, milk	galletas de leche
 fdc:174981	Crackers, rusk toast	biscotes
-fdc:174982	Crackers, standard snack-type, regular	galletas saladas
+fdc:174982	Crackers, standard snack-type, regular	galletas saladas de aperitivo
 fdc:174983	Crackers, standard snack-type, sandwich, with cheese filling	galletas sándwich con queso
 fdc:174984	Crackers, standard snack-type, sandwich, with peanut butter filling	galletas sándwich con crema de cacahuete
 fdc:174985	Crackers, wheat, regular	galletas de trigo
@@ -7720,7 +7720,7 @@ fdc:174995	Muffins, English, plain, toasted, enriched, with calcium propionate (
 fdc:174996	Muffins, English, mixed-grain (includes granola)	muffins ingleses multicereales
 fdc:174997	Muffins, English, raisin-cinnamon (includes apple-cinnamon)	muffins ingleses de pasas y canela
 fdc:174998	French toast, prepared from recipe, made with low fat (2%) milk	torrijas con leche semidesnatada
-fdc:174999	Hush puppies, prepared from recipe	buñuelos de maíz fritos
+fdc:174999	Hush puppies, prepared from recipe	buñuelos de maíz fritos caseros
 fdc:175000	Ice cream cones, cake or wafer-type	barquillos para helado
 fdc:175001	Ice cream cones, sugar, rolled-type	cucuruchos
 fdc:175002	Muffins, corn, commercially prepared	muffins de maíz
@@ -7737,7 +7737,7 @@ fdc:175012	Pie, apple, prepared from recipe	tarta de manzana casera
 fdc:175013	Pie, banana cream, prepared from mix, no-bake type	tarta de plátano y nata de mezcla
 fdc:175014	Pie, chocolate creme, commercially prepared	tarta de crema de chocolate
 fdc:175015	Pie, chocolate mousse, prepared from mix, no-bake type	tarta de mousse de chocolate de mezcla
-fdc:175016	Pie, coconut creme, commercially prepared	tarta de crema de coco
+fdc:175016	Pie, coconut creme, commercially prepared	tarta de coco cremosa
 fdc:175017	Pie, coconut cream, prepared from mix, no-bake type	tarta de coco de mezcla
 fdc:175018	Pie, lemon meringue, prepared from recipe	tarta de limón con merengue casera
 fdc:175019	Pie, mince, prepared from recipe	tarta de picadillo de frutas casera
@@ -8064,7 +8064,7 @@ fdc:2003602	Mushroom, maitake	setas maitake
 fdc:2003603	Mushroom, beech	setas shimeji
 fdc:2003604	Mushroom, pioppini	setas pioppini
 fdc:2257044	Soy milk, sweetened, plain, refrigerated	bebida de soja azucarada
-fdc:2257045	Almond milk, unsweetened, plain, refrigerated	bebida de almendra sin azúcar
+fdc:2257045	Almond milk, unsweetened, plain, refrigerated	bebida de almendra sin azúcar refrigerada
 fdc:2257046	Oat milk, unsweetened, plain, refrigerated	bebida de avena sin azúcar
 fdc:2258586	Carrots, mature, raw	zanahorias
 fdc:2258587	Carrots, baby, raw	zanahorias baby
@@ -8073,7 +8073,7 @@ fdc:2258589	Peppers, bell, yellow, raw	pimiento amarillo
 fdc:2258590	Peppers, bell, red, raw	pimiento rojo
 fdc:2258591	Peppers, bell, orange, raw	pimiento naranja
 fdc:2259792	Buttermilk, low fat	suero de mantequilla bajo en grasa
-fdc:2259793	Yogurt, plain, whole milk	yogur natural entero
+fdc:2259793	Yogurt, plain, whole milk	yogur natural entero Foundation
 fdc:2259794	Yogurt, Greek, plain, whole milk	yogur griego natural entero
 fdc:2259795	Cheese, parmesan, grated, refrigerated	queso parmesano rallado refrigerado
 fdc:2259796	Cheese, feta, whole milk, crumbled	feta desmigado
@@ -8081,7 +8081,7 @@ fdc:2261420	Flour, almond	harina de almendra
 fdc:2261421	Flour, oat, whole grain	harina de avena integral
 fdc:2261422	Flour, potato	harina de patata
 fdc:2262072	Peanut butter, creamy	crema de cacahuete
-fdc:2262073	Sesame butter, creamy	tahini
+fdc:2262073	Sesame butter, creamy	tahini cremoso
 fdc:2262074	Almond butter, creamy	crema de almendra
 fdc:2262075	Flaxseed, ground	lino molido
 fdc:2346384	Cottage cheese, full fat, large or small curd	requesón entero
@@ -8094,7 +8094,7 @@ fdc:2346390	Lettuce, leaf, red, raw	lechuga de hoja roja
 fdc:2346391	Lettuce, leaf, green, raw	lechuga de hoja verde
 fdc:2346392	Nuts, pine nuts, raw	piñones
 fdc:2346393	Nuts, almonds, whole, raw	almendras crudas
-fdc:2346394	Nuts, walnuts, English, halves, raw	nueces
+fdc:2346394	Nuts, walnuts, English, halves, raw	nueces en mitades
 fdc:2346395	Nuts, pecans, halves, raw	pacanas
 fdc:2346396	Oats, whole grain, rolled, old fashioned	copos de avena
 fdc:2346397	Oats, whole grain, steel cut	avena cortada
@@ -8109,8 +8109,8 @@ fdc:2346405	Celery, raw	apio
 fdc:2346406	Cucumber, with peel, raw	pepino con piel
 fdc:2346407	Cabbage, green, raw	col verde
 fdc:2346408	Cabbage, red, raw	col morada
-fdc:2346409	Strawberries, raw	fresas
-fdc:2346410	Raspberries, raw	frambuesas
+fdc:2346409	Strawberries, raw	fresas Foundation
+fdc:2346410	Raspberries, raw	frambuesas Foundation
 fdc:2346411	Blueberries, raw	arándanos
 fdc:2346412	Grapes, red, seedless, raw	uva roja sin semillas
 fdc:2346413	Grapes, green, seedless, raw	uva verde sin semillas
@@ -8157,13 +8157,13 @@ fdc:2644293	Blackeye pea, canned, sodium added, drained and rinsed	caupí en con
 fdc:2644294	Beans, great northern, canned, sodium added, drained and rinsed	alubias blancas del norte en conserva escurridas lavadas
 fdc:2646168	Pork, loin, boneless, raw	lomo de cerdo sin hueso crudo
 fdc:2646169	Pork, loin, tenderloin, boneless, raw	solomillo de cerdo sin hueso crudo
-fdc:2646170	Chicken, breast, boneless, skinless, raw	pechuga de pollo sin piel ni hueso cruda
+fdc:2646170	Chicken, breast, boneless, skinless, raw	pechuga de pollo sin piel ni hueso cruda Foundation
 fdc:2646171	Chicken, thigh, boneless, skinless, raw	contramuslo de pollo sin piel ni hueso crudo
 fdc:2646172	Beef, ribeye, steak, boneless, choice, raw	filete ribeye de vacuno sin hueso crudo (choice)
 fdc:2646173	Beef, round, top round, boneless, choice, raw	filete de tapa de vacuno sin hueso crudo (choice)
 fdc:2646174	Beef, chuck, roast, boneless, choice, raw	asado de aguja de vacuno sin hueso crudo (choice)
 fdc:2646175	Beef, flank, steak, boneless, choice, raw	filete de falda de vacuno sin hueso crudo (choice)
-fdc:2647437	Yogurt, plain, nonfat	yogur natural desnatado
+fdc:2647437	Yogurt, plain, nonfat	yogur natural desnatado Foundation
 fdc:2647438	Cheese, monterey jack, solid	queso Monterey Jack
 fdc:2647439	Cheese, pasteurized process cheese food or product, American, singles	queso fundido en lonchas
 fdc:2647440	Cheese, provolone, sliced	queso provolone
@@ -8215,7 +8215,7 @@ fdc:327046	Kiwifruit, green, raw	kiwi verde
 fdc:327357	Nectarines, raw	nectarinas
 fdc:328637	Cheese, cheddar	queso cheddar
 fdc:328841	Cheese, cottage, lowfat, 2% milkfat	requesón 2%
-fdc:329370	Cheese, mozzarella, low moisture, part-skim	mozzarella semidesnatada
+fdc:329370	Cheese, mozzarella, low moisture, part-skim	mozzarella semidesnatada baja en humedad
 fdc:329490	Egg, whole, dried	huevo en polvo
 fdc:329596	Egg, yolk, raw, frozen, pasteurized	yema de huevo congelada pasteurizada
 fdc:329716	Egg, yolk, dried	yema de huevo deshidratada
@@ -8230,7 +8230,7 @@ fdc:332791	Olives, green, Manzanilla, stuffed with pimiento	aceitunas verdes rel
 fdc:333008	Cookies, oatmeal, soft, with raisins	galletas de avena blandas con pasas
 fdc:333281	Tomatoes, canned, red, ripe, diced	tomates en conserva en dados
 fdc:333374	Fish, haddock, raw	eglefino crudo
-fdc:333476	Fish, pollock, raw	abadejo crudo
+fdc:333476	Fish, pollock, raw	abadejo crudo Foundation
 fdc:334194	Fish, tuna, light, canned in water, drained solids	atún claro al natural escurrido
 fdc:334536	Restaurant, Chinese, fried rice, without meat	arroz frito chino sin carne
 fdc:334628	Restaurant, Latino, tamale, pork	tamal de cerdo
@@ -8263,7 +8263,7 @@ fdc:746782	Milk, whole, 3.25% milkfat, with added vitamin D	leche entera 3,25% c
 fdc:746783	Sausage, turkey, breakfast links, mild, raw	salchichas de desayuno de pavo suaves crudas
 fdc:746784	Sugars, granulated	azúcar
 fdc:746785	Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles	carne picada de pavo 93% magro a la plancha
-fdc:746952	Ham, sliced, restaurant	jamón en lonchas
+fdc:746952	Ham, sliced, restaurant	jamón en lonchas de restaurante
 fdc:747429	Cheese, American, restaurant	queso americano
 fdc:747430	Beans, Dry, Medium Red (0% moisture)	alubias medianas rojas secas
 fdc:747431	Beans, Dry, Red (0% moisture)	alubias rojas secas
@@ -8283,7 +8283,7 @@ fdc:747444	Beans, Dry, Black (0% moisture)	alubias negras secas
 fdc:747445	Beans, Dry, Pinto (0% moisture)	alubias pintas secas
 fdc:747446	Beans, Dry, Great Northern (0% moisture)	alubias blancas del norte secas
 fdc:747447	Broccoli, raw	brócoli
-fdc:747693	Ketchup, restaurant	ketchup
+fdc:747693	Ketchup, restaurant	ketchup de restaurante
 fdc:747997	Eggs, Grade A, Large, egg white	clara de huevo
 fdc:748236	Eggs, Grade A, Large, egg yolk	yema de huevo
 fdc:748278	Oil, canola	aceite de canola
@@ -8314,7 +8314,7 @@ frida:1747	Whey protein powder	proteína de suero en polvo
 frida:1756	Veal, shortloin, raw	lomo corto de ternera crudo
 frida:179	Rice starch	almidón de arroz
 frida:1794	Sausage, with soy protein	salchicha con proteína de soja
-frida:1803	Chickpeas, dry, raw	garbanzos secos
+frida:1803	Chickpeas, dry, raw	garbanzos secos Frida
 frida:1806	Edamame beans (Soy beans), shelled, frozen	edamame congelado
 frida:1886	Peach Icetea, artificial sweetener added	té helado de melocotón con edulcorante
 frida:236	Pepper, black	pimienta negra
@@ -8356,7 +8356,7 @@ matvaretabellen:09.153	Pizza, industrially made	pizza preparada
 matvaretabellen:10.156	Soup, meat and vegetables, betasoup, home-made	sopa de carne con verduras
 matvaretabellen:12.015	Pork scratchings	chicharrones de cerdo
 matvaretabellen:12.026	Salt, sea	sal marina
-matvaretabellen:13.007	Wine, non-alcoholic	vino sin alcohol
+matvaretabellen:13.007	Wine, non-alcoholic	vino sin alcohol de Noruega
 matvaretabellen:13.034	Instant coffee, ready-to-drink	café instantáneo preparado
 matvaretabellen:13.052	Fortified wines, sweet vermouth, 15 vol-% alcohol	vermut dulce 15 %
 matvaretabellen:13.080	Cortado, single	cortado
@@ -8436,7 +8436,7 @@ tfda:P0201101	椰漿	leche de coco
 tfda:P1002101	金桔醬	mermelada de kumquat
 tfda:P1004501	香椿醬	salsa de cedro chino (xiangchun)
 tfda:R3000201	冷凍春捲	rollitos de primavera congelados
-tfda:R5100801	培根	beicon
+tfda:R5100801	培根	beicon cocido
 tfda:R6100401	冷凍旗魚丸	albóndigas de pez espada congeladas
 tfda:R7101401	蛋酥花生仁	cacahuetes en rebozado de huevo
 tfda:R7500601	油魚卵(加工)	huevas de escolar procesadas
