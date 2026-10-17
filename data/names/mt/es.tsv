@@ -10843,8 +10843,8 @@ cofid:16-059	Haddock, fillets, flesh only, in flour, fried in dripping, weighed 
 cofid:16-060	Haddock, fillets, flesh only, in flour, fried in sunflower oil	filete de eglefino enharinado frito en aceite de girasol
 cofid:16-061	Haddock, fillets, flesh only, in flour, fried in sunflower oil, weighed with bones and skin	filete de eglefino enharinado frito en aceite de girasol con huesos y piel
 cofid:16-062	Haddock, coated in crumbs, frozen, raw	eglefino empanado congelado crudo
-cofid:16-063	Haddock, coated in crumbs, frozen, fried in blended oil	eglefino empanado frito en mezcla de aceites
-cofid:16-064	Haddock, coated in crumbs, frozen, fried in blended oil, weighed with bones and skin	eglefino empanado frito en mezcla de aceites con huesos y piel
+cofid:16-063	Haddock, coated in crumbs, frozen, fried in blended oil	eglefino empanado congelado frito en mezcla de aceites
+cofid:16-064	Haddock, coated in crumbs, frozen, fried in blended oil, weighed with bones and skin	eglefino empanado congelado frito en mezcla de aceites con huesos y piel
 cofid:16-070	Hake, flesh only, raw	merluza cruda
 cofid:16-071	Hake, flesh only, grilled	merluza a la parrilla
 cofid:16-072	Hake, flesh only, grilled, weighed with bones and skin	merluza a la parrilla con huesos y piel
@@ -11076,7 +11076,7 @@ cofid:16-478	Lemon sole, flesh only, steamed	mendo limón al vapor
 cofid:16-479	Mackerel, flesh only, grilled, fillets weighed with bones and skin	caballa a la parrilla con huesos y piel
 cofid:16-480	Plaice, flesh only, steamed, fillets weighed with bones and skin	platija al vapor con huesos y piel
 cofid:16-481	Prawns, king, purchased cooked, weighed with shells	gambones cocidos comprados con cáscara
-cofid:16-482	Prawns, standard, dried	gambas secas compradas
+cofid:16-482	Prawns, standard, dried	gambas secas estándar
 cofid:16-483	Salmon, farmed, flesh only, steamed, fillets weighed with bones and skin	salmón de piscifactoría al vapor con huesos y piel
 cofid:16-484	Salmon, farmed, flesh only, grilled, weighed with bones and skin	salmón de piscifactoría a la parrilla con huesos y piel
 cofid:16-485	Salmon, wild, baked	salmón salvaje al horno
@@ -11146,14 +11146,14 @@ cofid:17-156	Coffee, infusion, average, with whole milk	café de filtro con lech
 cofid:17-157	Coffee, infusion, average, with semi-skimmed milk	café de filtro con leche semidesnatada
 cofid:17-158	Coffee, powder, instant	café instantáneo en polvo
 cofid:17-159	Coffee, instant, made up with water	café instantáneo preparado con agua
-cofid:17-160	Coffee, instant, made up with water and whole milk	café instantáneo preparado con leche entera
-cofid:17-161	Coffee, instant, made up with water and semi-skimmed milk	café instantáneo preparado con leche semidesnatada
+cofid:17-160	Coffee, instant, made up with water and whole milk	café instantáneo preparado con agua y leche entera
+cofid:17-161	Coffee, instant, made up with water and semi-skimmed milk	café instantáneo preparado con agua y leche semidesnatada
 cofid:17-163	Coffee and chicory essence, with water	esencia de café y achicoria preparada con agua
 cofid:17-165	Tea, black, infusion, average	té negro medio
 cofid:17-166	Tea, black, infusion, weak	té negro suave
 cofid:17-167	Tea, black, infusion, strong	té negro fuerte
-cofid:17-168	Tea, infusion, average, with whole milk	té con leche entera
-cofid:17-169	Tea, infusion, average, with semi-skimmed milk	té con leche semidesnatada
+cofid:17-168	Tea, infusion, average, with whole milk	té medio con leche entera
+cofid:17-169	Tea, infusion, average, with semi-skimmed milk	té medio con leche semidesnatada
 cofid:17-170	Tea, Chinese, leaves, infusion	té chino en hoja
 cofid:17-171	Tea, green, infusion	té verde
 cofid:17-172	Tea, herbal, infusion	infusión de hierbas
@@ -11188,7 +11188,7 @@ cofid:17-358	Cream of tartar	cremor tártaro
 cofid:17-360	Gelatine	gelatina
 cofid:17-362	Mustard powder	mostaza en polvo
 cofid:17-363	Mustard, powder, made up	mostaza en polvo preparada
-cofid:17-364	Mustard, smooth	mostaza suave
+cofid:17-364	Mustard, smooth	mostaza fina
 cofid:17-365	Mustard, wholegrain	mostaza en grano
 cofid:17-367	Salt	sal
 cofid:17-371	Stuffing mix, dried	mezcla seca para relleno
@@ -12076,8 +12076,8 @@ cofid:19-668	Pork, sweet and sour, made with lean pork, homemade	cerdo agridulce
 cofid:19-669	Pork, sweet and sour, made with sweet and sour cook in sauce	cerdo agridulce de salsa preparada
 cofid:19-670	Pork, spare ribs, 'barbecue style', homemade	costillas de cerdo estilo barbacoa caseras
 cofid:19-671	Pork, spare ribs, 'barbecue style', homemade, weighed with bone	costillas de cerdo estilo barbacoa caseras con hueso
-cofid:19-672	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade	costillas de cerdo en salsa de judías negras solo carne caseras
-cofid:19-673	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade, weighed with bone	costillas de cerdo en salsa de judías negras solo carne caseras con hueso
+cofid:19-672	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade	costillas de cerdo en salsa de judías negras solo carne con salsa caseras
+cofid:19-673	Pork, spare ribs, in black bean sauce, meat and sauce only, homemade, weighed with bone	costillas de cerdo en salsa de judías negras solo carne con salsa caseras con hueso
 cofid:50-1173	Tomato sauce, homemade	salsa casera de tomate
 cofid:50-494	Oxtail, meat only, stewed, weighed with fat and bones	rabo de buey guisado solo carne con grasa y huesos
 cofid:50-502	Tripe, dressed, stewed in milk	callos limpios guisados en leche
