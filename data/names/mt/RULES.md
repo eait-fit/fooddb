@@ -326,10 +326,27 @@ ingredient rows.
   `nopal`; Chinese broccoli → `кай-лан` / `kai-lan`; radicchio → `радиккио` /
   `radicchio`; snow peas → `горошек стручковый` / `tirabeques`; Puerto Rican
   dishes → `мофонго`/`mofongo`, `пастелон`/`pastelón`, `пастелес`/`pasteles`,
-  `софрито`/`sofrito`; baby food → `детское пюре` / `potito` + `ступень N` /
-  `etapa N`; toddler meal → `детский обед` / `comida infantil`.
+  `софрито`/`sofrito`; baby food → `детское пюре` / `potito` + `этап N` /
+  `etapa N` (`ступень` is mechanical); toddler meal → `детский обед` /
+  `comida infantil`.
 - Collision lessons: FNDDS vs FDC same-English-name records with >10 % kcal got
-  a real qualifier or word-order variant (`спаржевая капуста` when both
-  `брокколи свежая` and `брокколи сырая` were taken, `бебida de aloe`,
-  `café instantáneo hecho` — check the three existing forms before adding a
-  fourth); `rum and cola` → `ром с колой` in ru (Cuba libre only in es).
+  a real qualifier or word-order variant (`бебida de aloe`,
+  `café instantáneo preparado con agua` — check the existing forms before
+  adding another). When the corpus headword itself is taken but a sibling
+  pair needs one name, either keep the headword on both and vary only the
+  state word (`ботва свекольная свежая`/`сырая`, `радиккио свежий`/`сырой`,
+  `hojas de remolacha crudas`/`frescas`, `col china fresca`, `nabos frescos`,
+  `стручковая зелёная фасоль свежая`, `репа свежая`, `brócoli fresco`,
+  `champiñones frescos`, `шампиньоны свежие`) or move the whole pair to the
+  real second name (`рапини`/`rapini`, `кай-лан`/`brócoli kai-lan`).
+  `rum and cola` → `ром с колой` in ru (Cuba libre only in es); cocktails
+  take the bare canonical name, `коктейль`/`cóctel` only where the bare name
+  is kcal-taken (daiquiri, piña colada).
+- More vocabulary: `drippings` → `жир с жаркого` / `grasa de asado` (never
+  `вытопки`/`chicharrones` — those are cracklings); generic FNDDS mushrooms →
+  `шампиньоны` / `champiñones` (Asian keeps `грибы азиатские` /
+  `setas asiáticas`); watercress → `кресс водяной` / `berros`; mixed salad
+  greens → `салатный микс`, other `mixed` → `ассорти`; acai blend juice →
+  `сок-ассорти с асаи`; es `cooked` → `cocido` always (never `cocinado`);
+  powdered-reconstituted drinks → `en polvo` (never `de polvos`); `diet` →
+  `light` (`de dieta` only where `light` collides with a sibling row).
