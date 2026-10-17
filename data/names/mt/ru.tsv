@@ -3979,10 +3979,251 @@ fdc:171263	Cream substitute, powdered	заменитель сливок поро
 fdc:171264	Milk substitutes, fluid, with lauric acid oil	заменитель молока с лауриновым маслом
 fdc:171265	Milk, whole, 3.25% milkfat, with added vitamin D	молоко цельное 3,25 %
 fdc:171266	Milk, producer, fluid, 3.7% milkfat	молоко цельное 3.7%
+fdc:171267	Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D	молоко 2% с витаминами A и D
+fdc:171268	Milk, lowfat, fluid, 1% milkfat, protein fortified, with added vitamin A and vitamin D	молоко 1% белковое с витаминами A и D
+fdc:171269	Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)	молоко обезжиренное с витаминами A и D
+fdc:171270	Milk, nonfat, fluid, with added nonfat milk solids, vitamin A and vitamin D (fat free or skim)	молоко обезжиренное с сухим молоком и витаминами
+fdc:171271	Milk, nonfat, fluid, protein fortified, with added vitamin A and vitamin D (fat free and skim)	молоко обезжиренное белковое с витаминами
+fdc:171272	Milk, dry, nonfat, instant, with added vitamin A and vitamin D	молоко сухое обезжиренное растворимое с витаминами
+fdc:171273	Milk, dry, nonfat, calcium reduced	молоко сухое обезжиренное с пониженным кальцием
+fdc:171274	Milk, buttermilk, dried	пахта сухая
+fdc:171275	Milk, canned, condensed, sweetened	молоко сгущённое с сахаром
+fdc:171276	Milk, canned, evaporated, with added vitamin D and without added vitamin A	молоко сгущённое без сахара с витамином D
+fdc:171277	Milk, chocolate beverage, hot cocoa, homemade	какао горячее домашнее
+fdc:171278	Milk, goat, fluid, with added vitamin D	молоко козье с витамином D
+fdc:171279	Milk, human, mature, fluid (For Reference Only)	молоко грудное
+fdc:171280	Milk, indian buffalo, fluid	молоко буйволицы
+fdc:171281	Whey, acid, dried	сыворотка кислая сухая
+fdc:171282	Whey, sweet, fluid	сыворотка сладкая
+fdc:171283	Whey, sweet, dried	сыворотка сладкая сухая
+fdc:171284	Yogurt, plain, whole milk	йогурт из цельного молока
+fdc:171285	Yogurt, fruit, low fat, 10 grams protein per 8 ounce	йогурт фруктовый нежирный с высоким белком
+fdc:171286	Yogurt, fruit, low fat, 11g protein/8 oz	йогурт фруктовый нежирный 11г белка
+fdc:171287	Egg, whole, raw, fresh	яйцо сырое
+fdc:171288	Cheese, Mexican blend	сырная смесь мексиканская
+fdc:171289	Cheese product, pasteurized process, American, vitamin D fortified	сырный продукт плавленый с витамином D
+fdc:171290	Cheese, pasteurized process, American, without added vitamin D	сыр плавленый американский
+fdc:171291	Cheese food, pasteurized process, American, without added vitamin D	сырная паста американская
+fdc:171292	Cheese, cheddar, reduced fat (Includes foods for USDA's Food Distribution Program)	сыр чеддер нежирный
+fdc:171293	Ice cream, light, soft serve, chocolate	мороженое лёгкое шоколадное мягкое
+fdc:171294	Ice cream bar, stick or nugget, with crunch coating	мороженое на палочке в хрустящей глазури
+fdc:171295	Cheese, cheddar, nonfat or fat free	сыр чеддер обезжиренный
+fdc:171296	Yogurt, Greek, nonfat, vanilla, CHOBANI	греческий йогурт обезжиренный ванильный Chobani
+fdc:171297	Yogurt, Greek, strawberry, DANNON OIKOS	греческий йогурт клубничный Oikos
+fdc:171298	Yogurt, Greek, nonfat, vanilla, DANNON OIKOS	греческий йогурт обезжиренный ванильный Oikos
+fdc:171299	Yogurt, Greek, nonfat, strawberry, DANNON OIKOS	греческий йогурт обезжиренный клубничный Oikos
+fdc:171300	Yogurt, Greek, strawberry, lowfat	греческий йогурт нежирный клубничный
+fdc:171301	Kefir, lowfat, strawberry, LIFEWAY	кефир нежирный клубничный Lifeway
+fdc:171302	Milk, evaporated, 2% fat, with added vitamin A and vitamin D	молоко сгущённое без сахара 2% с витаминами
+fdc:171303	Milk, chocolate, fat free, with added vitamin A and vitamin D	молоко шоколадное обезжиренное
+fdc:171304	Yogurt, Greek, plain, whole milk	греческий йогурт из цельного молока
+fdc:171305	Ice cream bar, covered with chocolate and nuts	мороженое в шоколаде с орехами
+fdc:171306	Ice cream sundae cone	мороженое сандей в рожке
+fdc:171307	Light ice cream, Creamsicle	мороженое лёгкое Creamsicle
+fdc:171308	Cream, half and half, lowfat	сливки-халф-энд-халф нежирные
+fdc:171309	Yogurt, Greek, whole, plain, CHOBANI	греческий йогурт из цельного молока Chobani
+fdc:171310	Yogurt, Greek, nonfat, lemon blend, CHOBANI	греческий йогурт обезжиренный лимонный Chobani
+fdc:171311	Yogurt, Greek, nonfat, peach, CHOBANI	греческий йогурт обезжиренный персиковый Chobani
+fdc:171312	Yogurt, Greek, nonfat, plain, CHOBANI	греческий йогурт обезжиренный Chobani
+fdc:171313	Yogurt, Greek, nonfat, raspberry, CHOBANI	греческий йогурт обезжиренный малиновый Chobani
+fdc:171314	Butter, Clarified butter (ghee)	топлёное масло ги
+fdc:171315	Spices, allspice, ground	перец душистый молотый
+fdc:171316	Spices, anise seed	анис
+fdc:171317	Spices, basil, dried	базилик сушёный
+fdc:171318	Spices, chervil, dried	кервель сушёный
+fdc:171319	Spices, chili powder	чили порошок
+fdc:171320	Spices, cinnamon, ground	корица молотая
+fdc:171321	Spices, cloves, ground	гвоздика молотая
+fdc:171322	Spices, dill weed, dried	укроп сушёный
+fdc:171323	Spices, fennel seed	семена фенхеля
 fdc:171324	Spices, fenugreek seed	семена пажитника
+fdc:171325	Spices, garlic powder	чеснок сухой
+fdc:171326	Spices, nutmeg, ground	мускатный орех молотый
 fdc:171327	Spices, onion powder	луковый порошок
+fdc:171328	Spices, oregano, dried	орегано сушёное
+fdc:171329	Spices, paprika	паприка
+fdc:171330	Spices, poppy seed	мак
+fdc:171331	Spices, poultry seasoning	приправа для птицы
+fdc:171332	Spices, pumpkin pie spice	специи для тыквенного пирога
+fdc:171333	Spices, rosemary, dried	розмарин сушёный
+fdc:171334	Babyfood, vegetables, corn, creamed, junior	детское пюре кукурузное со сливками
+fdc:171335	Babyfood, fruit, bananas with tapioca, strained	детское пюре банановое с тапиокой
+fdc:171336	Babyfood, fruit, peaches, strained	детское пюре персиковое
+fdc:171337	Babyfood, fruit, peaches, junior	детское пюре персиковое для старших
+fdc:171338	Babyfood, fruit, pears, strained	детское пюре грушевое протёртое
+fdc:171339	Babyfood, fruit, prunes with tapioca, without ascorbic acid, junior	детское пюре черносливовое с тапиокой для старших
+fdc:171340	Babyfood, prunes, without vitamin c, strained	детское пюре черносливовое
+fdc:171341	Babyfood, fruit dessert, mango with tapioca	детский десерт манговый с тапиокой
+fdc:171342	Babyfood, pears, dices, toddler	груша кусочками детская
+fdc:171343	Babyfood, fruit, applesauce and pineapple, strained	детское пюре яблочно-ананасовое
+fdc:171344	Babyfood, fruit, applesauce and pineapple, junior	детское пюре яблочно-ананасовое для старших
+fdc:171345	Babyfood, fruit, apple and raspberry, strained	детское пюре яблочно-малиновое
+fdc:171346	Babyfood, fruit, apple and raspberry, junior	детское пюре яблочно-малиновое для старших
+fdc:171347	Babyfood, fruit, pears and pineapple, junior	детское пюре грушево-ананасовое для старших
+fdc:171348	Babyfood, fruit, guava and papaya with tapioca, strained	детское пюре гуавово-папайевое с тапиокой
+fdc:171349	Babyfood, peaches, dices, toddler	персики кусочками детские
+fdc:171350	Babyfood, fruit, papaya and applesauce with tapioca, strained	детское пюре папайя-яблоко с тапиокой
+fdc:171351	Babyfood, apple-banana juice	детский сок яблочно-банановый
+fdc:171352	Babyfood, juice, apple and peach	детский сок яблочно-персиковый
+fdc:171353	Babyfood, juice, apple and prune	детский сок яблочно-черносливовый
+fdc:171354	Babyfood, juice, orange	детский сок апельсиновый
+fdc:171355	Babyfood, juice, orange and apple	детский сок апельсиново-яблочный
+fdc:171356	Babyfood, juice, prune and orange	детский сок черносливово-апельсиновый
+fdc:171357	Babyfood, juice, mixed fruit	детский сок мультифруктовый
+fdc:171358	Babyfood, cereal, barley, dry fortified	детская ячневая каша сухая обогащённая
+fdc:171359	Babyfood, cereal, whole wheat, with apples, dry fortified	детская цельнопшеничная каша с яблоком сухая обогащённая
+fdc:171360	Babyfood, cereal, oatmeal, dry fortified	детская овсяная каша сухая обогащённая
+fdc:171361	Babyfood, cereal, oatmeal, with bananas, dry	детская овсяная каша с бананом сухая
+fdc:171362	Babyfood, cereal, oatmeal, with applesauce and bananas, strained	детская овсяная каша с яблоком и бананом протёртая
+fdc:171363	Babyfood, cereal, oatmeal, with applesauce and bananas, junior, fortified	детская овсяная каша с яблоком и бананом для старших обогащённая
+fdc:171364	Babyfood, cereal, with egg yolks, junior	детская каша с желтком для старших
+fdc:171365	Babyfood, cereal, with eggs, strained	детская каша с яйцом протёртая
+fdc:171366	Babyfood, cereal, egg yolks and bacon, junior	детская каша с желтком и беконом для старших
+fdc:171367	Babyfood, oatmeal cereal with fruit, dry, instant, toddler fortified	детская овсяная каша с фруктами сухая быстрого приготовления
+fdc:171368	Babyfood, cookie, baby, fruit	детское печенье фруктовое
+fdc:171369	Babyfood, cookies, arrowroot	детское печенье аррорут
+fdc:171370	Babyfood, pretzels	детские крендельки
+fdc:171371	Babyfood, GERBER, GRADUATES Lil Biscuits Vanilla Wheat	детское печенье Gerber Graduates ванильное пшеничное
+fdc:171372	Zwieback	хлебцы цвибак
+fdc:171373	Babyfood, dessert, cherry vanilla pudding, junior	детский пудинг вишнёво-ванильный для старших
+fdc:171374	Babyfood, dessert, fruit pudding, orange, strained	детский пудинг фруктово-апельсиновый протёртый
+fdc:171375	Babyfood, dessert, peach cobbler, strained	детский десерт персиковый кобблер
+fdc:171376	Babyfood, dessert, peach cobbler, junior	детский десерт персиковый кобблер для старших
+fdc:171377	Babyfood, dessert, fruit dessert, without ascorbic acid, junior	детский десерт фруктовый для старших
+fdc:171378	Babyfood, dessert, tropical fruit, junior	детский десерт тропический для старших
+fdc:171379	Babyfood, dessert, custard pudding, vanilla, strained	детский пудинг заварной ванильный
+fdc:171380	Babyfood, dessert, custard pudding, vanilla, junior	детский пудинг заварной ванильный для старших
+fdc:171381	Babyfood, juice, apple and grape	детский сок яблочно-виноградный
+fdc:171382	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, ADVANCE with iron, liquid concentrate	детская смесь Similac Isomil Advance концентрат с железом
+fdc:171383	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, ADVANCE with iron, ready-to-feed	детская смесь Similac Isomil Advance готовая с железом
+fdc:171384	Infant formula, ABBOTT NUTRITION, SIMILAC, ISOMIL, ADVANCE with iron, powder, not reconstituted	детская смесь Similac Isomil Advance порошковая с железом
+fdc:171385	Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, ready-to-feed	детская смесь Good Start Supreme готовая с железом, DHA и ARA
+fdc:171386	Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, prepared from liquid concentrate	детская смесь Good Start Supreme из концентрата с железом, DHA и ARA
+fdc:171387	Infant Formula, MEAD JOHNSON, ENFAMIL GENTLEASE, with iron, prepared from powder	детская смесь Enfamil Gentlease из порошка с железом
+fdc:171388	Babyfood, fortified cereal bar, fruit filling	детский батончик зерновой обогащённый с фруктовой начинкой
+fdc:171389	Infant Formula, MEAD JOHNSON, ENFAMIL, GENTLEASE, with ARA and DHA powder not reconstituted	детская смесь Enfamil Gentlease порошковая с DHA и ARA
+fdc:171390	Infant formula, MEAD JOHNSON, ENFAMIL, Enfagrow, Soy, Toddler ready-to-feed	детская смесь Enfagrow Soy готовая
+fdc:171391	Infant formula, MEAD JOHNSON, ENFAMIL, NUTRAMIGEN AA, ready-to-feed	детская смесь Enfamil Nutramigen AA готовая
+fdc:171392	Infant formula, MEAD JOHNSON, ENFAMIL, Premature, with iron, 20 calories, ready-to-feed	детская смесь Enfamil для недоношенных 20 ккал с железом
+fdc:171393	Infant formula, MEAD JOHNSON, ENFAMIL, Premature, with iron, 24 calories, ready-to-feed	детская смесь Enfamil для недоношенных 24 ккал с железом
+fdc:171394	Infant formula, GERBER, GOOD START 2, PROTECT PLUS, ready-to-feed	детская смесь Good Start 2 Protect Plus готовая
+fdc:171395	Infant formula, ABBOTT NUTRITION, SIMILAC, GO AND GROW, ready-to-feed, with ARA and DHA	детская смесь Similac Go And Grow готовая с DHA и ARA
+fdc:171396	Infant formula, ABBOTT NUTRITION, SIMILAC, Expert Care, Diarrhea, ready- to- feed with ARA and DHA	детская смесь Similac при диарее готовая с DHA и ARA
+fdc:171397	Infant formula, ABBOTT NUTRITION, SIMILAC, For Spit Up, ready-to-feed, with ARA and DHA	детская смесь Similac при срыгивании готовая с DHA и ARA
+fdc:171398	Babyfood, Snack, GERBER, GRADUATES, LIL CRUNCHIES, baked whole grain corn snack	детские кукурузные хрустики Gerber Lil' Crunchies
+fdc:171399	Infant formula, ABBOTT NUTRITION, SIMILAC, For Spit Up, powder, with ARA and DHA	детская смесь Similac при срыгивании порошковая с DHA и ARA
+fdc:171400	Fat, beef tallow	говяжий жир
+fdc:171401	Lard	смалец
+fdc:171402	Salad dressing, thousand island, commercial, regular	соус тысяча островов
+fdc:171403	Salad dressing, mayonnaise type, regular, with salt	соус майонезный
+fdc:171404	Salad dressing, french dressing, reduced fat	соус французский нежирный
+fdc:171405	Salad dressing, italian dressing, commercial, reduced fat	соус итальянский нежирный
+fdc:171406	Salad dressing, mayonnaise, imitation, soybean	заменитель майонеза на соевом масле
+fdc:171407	Salad dressing, mayonnaise, imitation, milk cream	заменитель майонеза сливочный
+fdc:171408	Salad dressing, mayonnaise, imitation, soybean without cholesterol	заменитель майонеза без холестерина
+fdc:171409	Sandwich spread, with chopped pickle, regular, unspecified oils	соус для сэндвичей с маринованным огурцом
+fdc:171410	Oil, peanut, salad or cooking	масло арахисовое
+fdc:171411	Oil, soybean, salad or cooking	масло соевое
+fdc:171412	Oil, coconut	масло кокосовое
+fdc:171413	Oil, olive, salad or cooking	масло оливковое
+fdc:171414	Salad dressing, french dressing, commercial, regular	соус французский
+fdc:171415	Margarine,spread, 35-39% fat, tub	спред 35-39%
+fdc:171416	Salad dressing, french, home recipe	соус французский домашний
+fdc:171417	Salad dressing, home recipe, vinegar and oil	соус уксусно-масляный домашний
+fdc:171418	Salad dressing, mayonnaise, soybean oil, without salt	майонез на соевом масле без соли
+fdc:171419	Salad dressing, french, cottonseed, oil, home recipe	соус французский домашний на хлопковом масле
+fdc:171420	Salad dressing, french dressing, fat-free	соус французский обезжиренный
+fdc:171421	Oil, cocoa butter	масло какао
+fdc:171422	Vegetable oil, palm kernel	масло пальмоядровое
+fdc:171423	Oil, poppyseed	масло маковое
+fdc:171424	Oil, tomatoseed	масло томатных семян
+fdc:171425	Oil, teaseed	масло чайных семян
+fdc:171426	Oil, soybean lecithin	лецитин соевый
+fdc:171427	Oil, hazelnut	масло фундука
+fdc:171428	Oil, babassu	масло бабасу
+fdc:171429	Oil, sheanut	масло ши
+fdc:171430	Oil, PAM cooking spray, original	масло-спрей Pam
+fdc:171431	Margarine, margarine-like vegetable oil spread, 67-70% fat, tub	спред 67-70%
+fdc:171432	Margarine, 80% fat, tub, CANOLA HARVEST Soft Spread (canola, palm and palm kernel oils)	спред мягкий Canola Harvest 80%
+fdc:171433	Oil, cooking and salad, ENOVA, 80% diglycerides	масло Enova 80% диглицеридов
+fdc:171434	Margarine-like, vegetable oil spread, approximately 37% fat, unspecified oils, with salt, with added vitamin D	спред 37% с солью и витамином D
+fdc:171435	Margarine, regular, 80% fat, composite, stick, with salt, with added vitamin D	маргарин 80% с солью и витамином D
+fdc:171436	Margarine, regular, 80% fat, composite, tub, with salt, with added vitamin D	маргарин 80% в коробке с солью и витамином D
+fdc:171437	Margarine-like, vegetable oil spread, 60% fat, stick, with salt, with added vitamin D	спред 60% с солью и витамином D
+fdc:171438	Oil, industrial, soy, low linolenic	масло соевое промышленное низколиноленовое
+fdc:171439	Oil, industrial, soy, ultra low linolenic	масло соевое промышленное сверхнизколиноленовое
+fdc:171440	Oil, industrial, soy, fully hydrogenated	масло соевое полностью гидрогенизированное
+fdc:171441	Oil, industrial, cottonseed, fully hydrogenated	масло хлопковое полностью гидрогенизированное
+fdc:171442	Oil, flaxseed, contains added sliced flaxseed	масло льняное с семенами льна
+fdc:171443	Mayonnaise, reduced fat, with olive oil	майонез нежирный с оливковым маслом
+fdc:171444	Salad dressing, mayonnaise-type, light	майонез лёгкий
+fdc:171445	Chicken, broiler, rotisserie, BBQ, breast, meat only	куриная грудка гриль без кожи
+fdc:171446	Chicken, broilers or fryers, meat and skin and giblets and neck, stewed	курица целиком с потрохами и шеей тушёная
+fdc:171447	Chicken, broilers or fryers, meat and skin, raw	курица с кожей сырая
+fdc:171448	Chicken, broilers or fryers, meat and skin, cooked, fried, batter	курица с кожей жареная в кляре
+fdc:171449	Chicken, broilers or fryers, meat and skin, cooked, fried, flour	курица с кожей жареная в муке
+fdc:171450	Chicken, broilers or fryers, meat and skin, cooked, roasted	курица с кожей запечённая
+fdc:171451	Chicken, broilers or fryers, meat only, cooked, stewed	курица без кожи тушёная
+fdc:171452	Chicken, broilers or fryers, skin only, raw	куриная кожа сырая
+fdc:171453	Chicken, broilers or fryers, skin only, cooked, fried, batter	куриная кожа жареная в кляре
+fdc:171454	Chicken, broilers or fryers, skin only, cooked, fried, flour	куриная кожа жареная в муке
+fdc:171455	Chicken, broilers or fryers, giblets, cooked, simmered	куриные потрошки варёные
+fdc:171456	Chicken, gizzard, all classes, raw	куриный желудок сырой
+fdc:171457	Chicken, gizzard, all classes, cooked, simmered	куриный желудок варёный
+fdc:171458	Chicken, heart, all classes, raw	куриные сердечки сырые
+fdc:171459	Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, batter	куриное белое мясо с кожей жареное в кляре
+fdc:171460	Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, flour	куриное белое мясо с кожей жареное в муке
+fdc:171461	Chicken, broilers or fryers, light meat, meat and skin, cooked, roasted	куриное белое мясо с кожей запечённое
+fdc:171462	Chicken, broilers or fryers, light meat, meat and skin, cooked, stewed	куриное белое мясо с кожей тушёное
+fdc:171463	Chicken, broilers or fryers, dark meat, meat and skin, raw	куриное тёмное мясо с кожей сырое
+fdc:171464	Chicken, broilers or fryers, light meat, meat only, raw	куриное белое мясо без кожи сырое
+fdc:171465	Chicken, broilers or fryers, light meat, meat only, cooked, fried	куриное белое мясо без кожи жареное
+fdc:171466	Chicken, broilers or fryers, light meat, meat only, cooked, roasted	куриное белое мясо без кожи запечённое
+fdc:171467	Chicken, broilers or fryers, light meat, meat only, cooked, stewed	куриное белое мясо без кожи тушёное
+fdc:171468	Chicken, broilers or fryers, separable fat, raw	куриный жир сырой
+fdc:171469	Chicken, broilers or fryers, back, meat and skin, raw	куриная спинка с кожей сырая
+fdc:171470	Chicken, broilers or fryers, back, meat and skin, cooked, fried, batter	куриная спинка с кожей жареная в кляре
+fdc:171471	Chicken, broilers or fryers, back, meat and skin, cooked, fried, flour	куриная спинка с кожей жареная в муке
+fdc:171472	Chicken, broilers or fryers, back, meat only, cooked, roasted	куриная спинка без кожи запечённая
+fdc:171473	Chicken, broilers or fryers, back, meat only, cooked, stewed	куриная спинка без кожи тушёная
+fdc:171474	Chicken, broilers or fryers, breast, meat and skin, raw	куриная грудка с кожей сырая
+fdc:171475	Chicken, broilers or fryers, breast, meat and skin, cooked, fried, batter	куриная грудка с кожей жареная в кляре
+fdc:171476	Chicken, broilers or fryers, breast, meat and skin, cooked, fried, flour	куриная грудка с кожей жареная в муке
+fdc:171477	Chicken, broilers or fryers, breast, meat only, cooked, roasted	куриная грудка без кожи запечённая
+fdc:171478	Chicken, broilers or fryers, breast, meat only, cooked, stewed	куриная грудка без кожи тушёная
+fdc:171479	Turkey, whole, meat and skin, cooked, roasted	индейка целиком с кожей запечённая
+fdc:171480	Turkey, whole, meat only, raw	индейка без кожи сырая
+fdc:171481	Turkey, whole, meat only, cooked, roasted	индейка без кожи запечённая
 fdc:171482	Turkey, whole, skin (light and dark), raw	кожа индейки сырая
+fdc:171483	Turkey, all classes, gizzard, cooked, simmered	желудок индейки варёный
+fdc:171484	Turkey, all classes, heart, raw	сердце индейки сырое
+fdc:171485	Turkey, all classes, heart, cooked, simmered	сердце индейки варёное
+fdc:171486	Turkey, all classes, liver, raw	печень индейки сырая
+fdc:171487	Turkey, all classes, liver, cooked, simmered	печень индейки варёная
+fdc:171488	Turkey, dark meat, meat and skin, raw	индейка тёмное мясо с кожей сырое
+fdc:171489	Turkey, whole, dark meat, meat and skin, cooked, roasted	индейка тёмное мясо с кожей запечённое
+fdc:171490	Turkey, whole, light meat, raw	индейка белое мясо сырое
+fdc:171491	Turkey, all classes, light meat, cooked, roasted	индейка белое мясо запечённое
+fdc:171492	Turkey, all classes, breast, meat and skin, cooked, roasted	грудка индейки с кожей запечённая
+fdc:171493	Turkey, all classes, leg, meat and skin, raw	нога индейки с кожей сырая
+fdc:171494	Turkey, all classes, leg, meat and skin, cooked, roasted	нога индейки с кожей запечённая
+fdc:171495	Turkey, all classes, wing, meat and skin, raw	крыло индейки с кожей сырое
+fdc:171496	Turkey, whole, breast, meat only, cooked, roasted	грудка индейки без кожи запечённая
+fdc:171497	Turkey, whole, wing, meat only, raw	крыло индейки без кожи сырое
+fdc:171498	Turkey, whole, wing, meat only, cooked, roasted	крыло индейки без кожи запечённое
+fdc:171499	Turkey, young hen, skin only, cooked, roasted	кожа индейки запечённая
+fdc:171500	Turkey and gravy, frozen	индейка с подливкой замороженная
 fdc:171501	Turkey breast, pre-basted, meat and skin, cooked, roasted	грудка индейки с кожей запечённая
+fdc:171502	Turkey thigh, pre-basted, meat and skin, cooked, roasted	бедро индейки самобастед с кожей запечённое
+fdc:171503	Turkey roast, boneless, frozen, seasoned, light and dark meat, raw	жаркое из индейки замороженное с приправами сырое
+fdc:171504	Turkey, mechanically deboned, from turkey frames, raw	мясо индейки механической обвалки сырое
+fdc:171505	Turkey, Ground, raw	фарш индейки сырой
+fdc:171506	Turkey, Ground, cooked	фарш индейки обжаренный
+fdc:171507	Chicken, cornish game hens, meat and skin, raw	цыплёнок корниш с кожей сырой
+fdc:171508	Chicken, wing, frozen, glazed, barbecue flavored, heated (microwave)	куриные крылья глазированные барбекю в микроволновке
+fdc:171509	Chicken, broilers or fryers, breast, skinless, boneless, meat only, with added solution, raw	куриная грудка без кожи и кости сырая
+fdc:171510	Duck, young duckling, domesticated, White Pekin, breast, meat and skin, boneless, cooked, roasted	утиная грудка с кожей запечённая
+fdc:171511	Duck, young duckling, domesticated, White Pekin, breast, meat only, boneless, cooked without skin, broiled	утиная грудка без кожи на гриле
 fdc:171521	Chicken, broilers or fryers,  rotisserie, original seasoning, drumstick, meat and skin, cooked	куриная голень гриль
 fdc:171568	Gravy, turkey, canned, ready-to-serve	подливка из индейки консервированная
 fdc:171635	Pork sausage, link/patty, reduced fat, unprepared	свиная колбаска с пониженным жиром сырая
