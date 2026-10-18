@@ -1,7 +1,7 @@
 """fetch_run.code: the fetcher's own code version. A parser change bumps a fetcher's CODE, and
 `already_done` then finds no done run at that code, so the next check re-ingests a source whose
 file did not change (#63). Runs stored before the column have it null, which equals no declared
-code — each versioned fetcher re-ingests once after this deploy.
+code — a fetcher re-ingests once when it adopts a code.
 
 Revision ID: 0024
 Revises: 0023

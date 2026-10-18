@@ -20,7 +20,6 @@ DELTA = "https://static.openfoodfacts.org/data/delta/"
 DUMP = "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz"  # ~13 GB gzipped
 FETCHER = "off-delta"
 DUMP_FETCHER = "off-dump"
-CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "ODbL-1.0"
 IMAGES = "https://images.openfoodfacts.org/images/products/"
 IMAGE_KINDS = ("front", "nutrition")
@@ -203,10 +202,10 @@ def url_lines(url: str) -> Iterator[bytes]:
         yield rest
 
 
-def load(source: Path | Iterable[bytes], fetcher: str, ref: str, code: str | None = None) -> tuple[int, int]:
+def load(source: Path | Iterable[bytes], fetcher: str, ref: str) -> tuple[int, int]:
     """Ingest one OFF JSONL source: a .gz file path, or lines already being streamed."""
     lines = file_lines(source) if isinstance(source, Path) else source
-    return ingest.run(fetcher, ref, records(lines), code=code)
+    return ingest.run(fetcher, ref, records(lines))
 
 
 def todo(index: list[str], done: set[str], first_run: int) -> list[str]:
@@ -242,9 +241,9 @@ def fetch_dump(force: bool = False) -> tuple[int, int] | None:
     head = httpx.head(DUMP, timeout=60, follow_redirects=True)
     head.raise_for_status()
     ref = head.headers.get("last-modified") or "unknown"
-    if not force and ingest.already_done(DUMP_FETCHER, ref, code=CODE):
+    if not force and ingest.already_done(DUMP_FETCHER, ref):
         return None
-    return load(url_lines(DUMP), DUMP_FETCHER, ref, code=CODE)
+    return load(url_lines(DUMP), DUMP_FETCHER, ref)
 
 
 def backfill_images(limit: int | None = None, pause: float = PAUSE_S, transport: httpx.BaseTransport | None = None) -> tuple[int, int]:

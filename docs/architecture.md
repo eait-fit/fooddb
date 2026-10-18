@@ -193,11 +193,13 @@ returns its SHA-256 (`fetchers/__init__.py:13`). `fetchers.json_items` reads the
 array, one at a time, so memory holds one item (`fetchers/__init__.py:25`).
 
 A fetcher asks `ingest.already_done` before it downloads: a ref a `done` run already loaded is
-skipped (`ingest.py:48`). Each gated fetcher also declares `CODE`, its own code version, stored on
-the run and compared the same way — a ref loaded by an older code is not done, so a parser change
-re-ingests an unchanged file on the next check. A run stored before `fetch_run.code` existed has
-it null, which equals no declared code, so the first check after the column shipped re-ingested
-every versioned source once. `fooddb run … --force` overrides the gate by hand.
+skipped (`ingest.py:48`). A fetcher may declare `CODE`, its own code version, stored on the run and
+compared the same way — a ref loaded by an older code is not done, so a parser change re-ingests an
+unchanged file on the next check. A run stored before `fetch_run.code` existed has it null, which
+equals no declared code, so the first check after a fetcher adopts a code re-ingests its source
+once; the eight table fetchers are versioned, FDC and the OFF dump stay ref-only until a parser
+change there declares its code and pays its one reload deliberately. `fooddb run … --force`
+overrides the gate by hand.
 
 - The FDC fetcher finds the newest release on the FDC download page (`fetchers/fdc.py:33`). It
   writes the zip to a tempfile and reads the JSON file in it with `json_items`
@@ -1233,8 +1235,8 @@ Twenty-four Alembic migrations make this schema:
   index, the `f_unaccent` indexes, and the `origin` and `licence` columns that keep source-stated
   and agent-written names apart.
 - `0024` adds `fetch_run.code`, the fetcher's own code version (`alembic/versions/0024_fetch_run_code.py`).
-  Runs from before it have `code` null, which equals no declared code in `already_done`, so every
-  versioned fetcher re-ingested its source once after this deploy.
+  Runs from before it have `code` null, which equals no declared code in `already_done`, so a
+  fetcher re-ingests its source once when it adopts a code — this deploy versioned the eight tables.
 
 `observation` has no unique key. The comparison in `_observations` makes a re-run idempotent.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.

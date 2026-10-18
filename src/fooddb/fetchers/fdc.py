@@ -21,7 +21,6 @@ DATASETS = {
     "branded": ("branded_food_json", "BrandedFoods"),
     "survey": ("survey_food_json", "SurveyFoods"),
 }
-CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 
 # FDC nutrient id → INFOODS tagname. Energy: 1008 when present, else Atwater general (2047).
 # 1005 is carbohydrate by difference, fibre included. FDC reports no available carbohydrate.
@@ -82,9 +81,9 @@ def records(foods: Iterable[dict]):
 def fetch(dataset: str = "foundation", force: bool = False) -> tuple[int, int] | None:
     release = latest_release(dataset)
     fetcher = f"fdc-{dataset}"
-    if not force and ingest.already_done(fetcher, release, code=CODE):
+    if not force and ingest.already_done(fetcher, release):
         return None
     with tempfile.TemporaryFile() as tmp:  # the zip goes to disk, not memory
         download(BASE + release, tmp)
         with zipfile.ZipFile(tmp) as z, z.open(next(n for n in z.namelist() if n.endswith(".json"))) as f:
-            return ingest.run(fetcher, release, records(json_items(f, DATASETS[dataset][1])), code=CODE)
+            return ingest.run(fetcher, release, records(json_items(f, DATASETS[dataset][1])))
