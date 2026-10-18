@@ -538,6 +538,49 @@ def test_stems_segment_splits_on_corpus_stems():
     assert stems.segment("egg", voc) == []  # shorter than the split needs
 
 
+def test_search_the_food_beats_the_dish_and_the_variant():
+    """#161 class 1: a dish or derivative carrying the query word used to outrank the plain
+    food on name length. Two signals demote it: a name that drops a query word, and a dish,
+    derivative or variant marker the query never asked for."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Egg nog"),
+                           rec(id="fdc:2", name="Egg, raw"),
+                           rec(id="fdc:3", name="Cabbage pie"),
+                           rec(id="fdc:4", name="Cabbage, green, raw"),
+                           rec(id="fdc:5", name="Sour cream, light"),
+                           rec(id="cofid:1", source="cofid", licence="CC-BY-4.0",
+                               name="Cream, sour, cultured")])
+    c = client()
+    assert names(c, {"q": "egg"}) == ["fdc:2", "fdc:1"]
+    assert names(c, {"q": "cabbage"}) == ["fdc:4", "fdc:3"]
+    assert names(c, {"q": "sour cream"}) == ["cofid:1", "fdc:5"]
+
+
+def test_search_cover_keeps_the_name_that_answers_the_whole_query():
+    """#161 class 1: the head-first ordering #158 rejected demoted a "Category, food" name
+    below a compound one. Cover demotes only names that DROP a query word, so for "canned
+    salmon" "Fish, salmon, canned" (head 'fish') still beats "Salmon, smoked"."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Salmon, smoked"),
+                           rec(id="fdc:2", name="Fish, salmon, canned")])
+    assert names(client(), {"q": "canned salmon"})[0] == "fdc:2"
+
+
+def test_search_a_dish_query_still_finds_the_dish():
+    """#161 class 1: dish words are inert for the query that names them — "apple pie" still
+    finds the pie, "fish soup" the soup."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Apple, raw"),
+                           rec(id="fdc:2", name="Pie, apple, commercially prepared"),
+                           rec(id="fdc:3", name="Fish soup, homemade")])
+    c = client()
+    assert names(c, {"q": "apple pie"})[0] == "fdc:2"
+    assert names(c, {"q": "fish soup"})[0] == "fdc:3"
+
+
 def test_barcode_country_orders_by_preferred_source():
     from fooddb import ingest
 
