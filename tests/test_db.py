@@ -244,7 +244,7 @@ def test_health_names_is_advisory_and_flags_a_short_or_failed_mt_load(tmp_path, 
     from fooddb.db import engine
     from fooddb.names import load_mt
 
-    now = datetime(2026, 10, 17, 12, tzinfo=UTC)
+    now = datetime.now(UTC)
     for f in health.watched():
         if f != "snapshot":
             health.checked(f, at=now)
@@ -1009,7 +1009,7 @@ def test_health_reports_stale_and_fresh_fetchers():
 
     from fooddb import health
 
-    now = datetime(2026, 10, 4, 12, tzinfo=UTC)
+    now = datetime.now(UTC)
     health.checked("off-delta", at=now - timedelta(hours=2))
     health.checked("fdc-foundation", at=now - timedelta(days=20))
     report = health.report(now=now)
