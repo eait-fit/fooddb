@@ -322,6 +322,24 @@ def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page
     assert names(client(), {"q": "apple", "limit": 2}) == ["fdc:2", "fdc:3"]
 
 
+def test_search_first_result_does_not_depend_on_limit():
+    from fooddb import ingest
+
+    # One product whose long name matches the query well and whose deeper short name only enters the
+    # candidate cut (limit * CANDIDATES rows per name index) at a bigger limit: twenty food_name rows
+    # tie above "oranges", which is row 21 at limit=1 and inside at limit=5. Ordering the product by
+    # independent max(sim)/min(len) aggregates let that deeper row shorten it and flip the first
+    # result ("orange" → Candied orange peel at limit=5); ordering by the best tuple cannot.
+    filler = {f"l{i:02}": "Orange bonbon" for i in range(20)}
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Candied orange peel", group="g"),
+                           rec(id="fdc:2", name="Zest filler", group="g",
+                               names={"fi": "oranges"} | filler),
+                           rec(id="fdc:3", name="Orange, raw")])
+    c = client()
+    first = {limit: names(c, {"q": "orange", "limit": limit})[0] for limit in (1, 5, 20)}
+    assert first == {1: "fdc:3", 5: "fdc:3", 20: "fdc:3"}
+
+
 def test_search_without_country_is_unchanged():
     from fooddb import ingest
 
