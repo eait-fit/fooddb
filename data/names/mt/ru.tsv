@@ -27094,29 +27094,1387 @@ fdc:790276	Flour, corn, yellow, fine meal, enriched	мука кукурузна�
 fdc:790508	Butter, stick, salted	масло сливочное солёное
 fdc:790577	Onions, red, raw	лук красный свежий
 fdc:790646	Onions, yellow, raw	лук репчатый свежий
+frida:1	Strawberry, raw	клубника
+frida:10	Rhubarb, raw	ревень
+frida:1001	Pastilles, sugarfree, unspecified	пастилки без сахара
+frida:1002	Halibut, greenland, smoked	палтус чёрный копчёный
+frida:1003	Pork, loin, defatted (approx. 3 mm fat), raw	свиная корейка без шпика сырая
+frida:1005	Cauliflower, imported, raw	цветная капуста
+frida:1006	Fructose	фруктоза
+frida:1007	Salt, block	соль каменная
+frida:1008	Toffees, mixed	ириски ассорти
+frida:101	Duck, flesh and skin, raw	утка с кожей сырая
+frida:1010	Liver pâté, pork, Danish	печёночный паштет свиной
+frida:1011	Apple jelly	желе яблочное
+frida:1013	Currant, black, jelly	желе из чёрной смородины
+frida:1014	Bread, white, roll, coarse grain	булочка грубого помола
+frida:1015	Butter, salt not added	масло сливочное несолёное
+frida:1016	Goose fat	жир гусиный
+frida:1017	Lamb, leg with fat, raw	баранья нога с жиром сырая
+frida:1018	Plant margarine, 80%, fry/bake	маргарин растительный 80 % для жарки и выпечки
+frida:1019	Beef, chuck, raw	лопатка говяжья сырая
+frida:102	Rye-flour, wheat-flour, bolted	мука ржано-пшеничная сеяная
+frida:1020	Margarine, 80 % fat, table use, soft, vegetable fat	маргарин мягкий растительный 80 %
+frida:1021	Pork, ham, smoked, boiled	ветчина копчёно-варёная
+frida:1022	Chocolate, bitter	шоколад горький
+frida:1023	Soup, tomato, ready to eat	суп томатный готовый к употреблению
+frida:1024	Herring, pickled, spiced, canned	сельдь пряная маринованная
+frida:1025	Pork, minced and bound with flour and egg, boiled, frozen	кёдранд
+frida:1026	Herring, smoked	сельдь копчёная
+frida:1029	Pork, ham, silverside (M. Biceps Femoris), 5 mm rind, raw	оковалок свиной с шпиком сырой
+frida:103	Pudding powder	пудинг порошковый
+frida:1031	Salmon, Atlantic, wild, gravad	сёмга дикая гравлакс
+frida:1032	Margarine, 80 % fat, table use, vegetable fat	маргарин столовый растительный 80 %
+frida:1034	Anchovy, pickled, canned	анчоусы маринованные
+frida:1035	Sprat, pickled, canned	килька маринованная
+frida:1036	Margarine, 80 % fat, for frying/baking, animal and vegetable fat	маргарин для жарки и выпечки 80 %
+frida:1037	Chicken, hen, flesh and skin, raw	кура с кожей сырая
+frida:1038	Margarine, 80 % fat, table use, animal and vegetable fat	маргарин столовый 80 %
+frida:1040	Beef, brisket, anterior part, raw	грудинка говяжья толстая часть сырая
+frida:1041	Poularde, flesh and skin, raw	пулярка сырая
+frida:1042	Beef, shoulder, dorsal part, raw	плечевая часть говяжья сырая
+frida:1043	Pork, ham sausage	ветчинная колбаса
+frida:1044	Margarine, (more than 50 % fat), average	маргарин >50 % жирности
+frida:1045	Cream pastry, with jam, marzipan-covered	кремовый торт с джемом в марципане
+frida:1047	Rolls, wheat with coarse meal, high fat seeds, industrially produced	булочка грубого помола с семечками
+frida:1048	Milk, skimmed, organic	молоко обезжиренное органическое
+frida:1049	Milk, skimmed	молоко обезжиренное
+frida:1051	Bamboo shoots, raw	побеги бамбука
+frida:1052	Butter, salt added	масло сливочное солёное
+frida:1053	Beef, meat, approx. 15 % fat, raw	говядина 15 % жирности сырая
+frida:1054	Herring, pickled, in madeira sauce, canned	сельдь маринованная в соусе мадера
+frida:1055	Passion fruit, raw	маракуйя
+frida:1056	Pork sausage, bierwurst	колбаса бирвурст
+frida:1057	Jam, fruit, average values	джем
+frida:1058	Pork, flank, raw	пашина свиная сырая
+frida:1059	Swiss roll, raspberry stuffing	рулет малиновый
+frida:1060	Pork, ham, bayonne style, deboned	байонский окорок без кости
 frida:1061	Sugar pea (Snow pea, Mangetout) raw	сахарный горошек сырой
+frida:1062	Swiss roll, unspecified	рулет бисквитный
+frida:1063	Bread, roll, danish	булочка датская
+frida:1064	Beef, top, end of rump, raw	пиканья сырая
+frida:1065	Liquorice, average values	лакричные конфеты
+frida:1066	Milk, skimmed, 0.5 % fat	молоко 0,5 %
+frida:1067	Beef, mince, 15-20% fat, raw	фарш говяжий 15-20 % жирности сырой
+frida:1068	Milk, buttermilk with lemon	пахта с лимонным соком
+frida:1069	Beef, T-bone steak, raw	стейк ти-бон сырой
+frida:1070	Veal and pork, mince, 15-20% fat, raw	фарш телячье-свиной 15-20 % жирности сырой
+frida:1071	Cream pastry, shortbread with chocolate glaze	песочное пирожное с кремом и шоколадной глазурью
+frida:1074	Pork sausage, jagdwurst	колбаса ягдвурст
+frida:1075	Coffee bean, roasted, ground	кофе жареный молотый
+frida:1076	Pork, mince, 15-20% fat, raw	фарш свиной 15-20 % жирности сырой
+frida:1077	Pork, thin belly, lean, approx. 2 mm rind, raw	постная свиная грудинка сырая
+frida:1078	Herring, pickled, in curry sauce, canned	сельдь маринованная в карри-соусе
+frida:1079	Cocoa, instant, med milk, powder	какао растворимое с молоком порошковое
+frida:108	Cheese, semihard, Havarti, 30 % fidm.	сыр хаварти 30 %
+frida:1080	Plaice, fillet, battered, deepfried	филе камбалы в кляре жареное во фритюре
+frida:1081	Rice bran	отруби рисовые
+frida:1082	Beef, sirloin, raw	сирлоин с жировой кромкой сырой
+frida:1083	Pastry, garland cake	крансекаке
+frida:1084	Wheat germ, raw	зародыши пшеницы
+frida:1087	Haddock, breaded, fried	пикша в панировке жареная
+frida:1088	Tuna, in oil, canned	тунец в масле консервированный
+frida:1089	Black salsify, raw	скорцонера
+frida:109	Cheese, firm, Danbo, 45 % fidm.	сыр данбо 45 %
+frida:1090	Mutton, shoulder, raw	лопатка баранья сырая
+frida:1091	Chicken, flesh and skin, grilled	курица с кожей жареная на гриле
+frida:1092	Chocolate, plain, couverture	шоколад кулинарный
+frida:1093	Frankfurt sausage, boiled, fast food	сосиска венская варёная (фастфуд)
+frida:1094	Cream pastry, puff pastry with jam	слоёный торт «наполеон»
+frida:1095	Dandelion, leaves, raw	листья одуванчика
+frida:1096	Cinnamon stick	корица палочками
+frida:1098	Syrup, kitchen	сироп золотой
+frida:1099	Pate, liver	паштет печёночный
+frida:11	Currant, black, raw	смородина чёрная
+frida:110	Lamb, flank, spiced, cooked	руллепёльсе из баранины
+frida:1100	Chanterelle, raw	лисички
+frida:1101	Pork sausage, saveloy type	колбаса свиная
+frida:1102	Sapotes, raw	сапота
+frida:1103	Pork scratchings	шкварки свиные
+frida:1104	Pork sausage, malakoff	колбаса малакофф
+frida:1105	Mackerel, filet, in natural juices, canned	скумбрия в собственном соку консервированная
+frida:1106	Sandwich, rib roast	сэндвич с жареной свиной грудинкой
+frida:1107	Milk, skimmed, with chocolate	шоколадное молоко обезжиренное
+frida:1108	Milk, skimmed, with chocolate (UHT)	шоколадное молоко обезжиренное ультрапастеризованное
+frida:1109	Beef, striploin "cap on", raw	стриплойн с жировой крышкой сырой
+frida:1110	Cheese, Camembert, 30 % fidm.	сыр камамбер 30 %
+frida:1111	Alfalfa seeds, sprouted, raw	ростки люцерны
+frida:1112	Pork, meat, approx. 20 % fat, raw	свинина 20 % жирности сырая
+frida:1114	Liquorice, salt	лакрица солёная
+frida:1115	Biscuit, 20-30% wholemeal, digestive type	печенье digestive неполнозерновое
+frida:1117	Pork, loin with rind, raw	свиная корейка со шкурой сырая
+frida:1118	Fruit gums	мармелад жевательный фруктовый
+frida:1120	Sprat (sardine), in oil, canned	шпроты в масле
+frida:1121	Sardine, in oil, canned	сардины в масле
+frida:1122	Cream Crackers	крекеры Cream Crackers
+frida:1124	Pork, thin belly with rind, raw	грудинка свиная со шкурой сырая
+frida:1125	Human milk, colostrum	молозиво женское
+frida:1126	Breakfast cereal, Havrefras	злаки для завтрака Havrefras
+frida:1128	Pork/beef sausage, saveloy type	колбаса сервелат
+frida:1131	Mint jelly	мятное желе
+frida:1132	Herring, autumn, raw	сельдь жирная сырая
+frida:1134	Baby food, infant formula, low iron content, prepared	детская смесь готовая с пониженным железом
+frida:1135	Vecao	какао Vekao
+frida:1136	Pork, mettwurst, smoked	колбаса медистер копчёная
+frida:1137	Bacon, sliced, raw	бекон сырой
+frida:1138	Sandwich with ham and cheese, toasted, fast food	сэндвич с ветчиной и сыром жареный (фастфуд)
+frida:114	Onions, chopped and deepfried	лук жареный хрустящий
+frida:1142	Alfalfa seeds	семена люцерны
+frida:1143	Pork, sausage, frankfurter	сосиска венская
+frida:1147	Salad dressing, mayonnaise	заправка салатная майонез
+frida:1148	Rye-flour, bolted (extraction rate 70 %)	мука ржаная сеяная
+frida:1149	Beef, entrecote "cap on", raw	антрекот с жировой крышкой сырой
+frida:115	Tea, ready-to-drink	чай готовый
+frida:1150	Kippers, in oil, canned	кипперы в масле
+frida:1152	Herring, salted, ripened	сельдь солёная выдержанная
+frida:1153	Milk, 1.5 % fat, cultured, kefir	кефир 1,5 %
+frida:1154	Milk, partly skimmed, organic, 1.5 % fat	молоко 1,5 % органическое
+frida:1156	Salad dressing, oil and vinegar	уксусно-масляная заправка
+frida:1157	Nutmeg, whole	мускатный орех
+frida:1158	Pork, flank, spiced, cooked	руллепёльсе свиной
+frida:1159	Brussels sprouts, winter (January to April), raw	брюссельская капуста зимняя
+frida:116	Chestnut, raw	каштан
+frida:1160	Chervil, raw	кервель
+frida:1161	Pork sausage, Thüringer bratwurst	колбаса братвурст тюрингская
+frida:1162	Peanut butter	арахисовая паста
+frida:1163	Pork sausage, polony type	колбаса краковская
+frida:1164	Sweetcorn, kernels, canned	кукуруза сладкая консервированная
+frida:1166	Apple, dried	яблоки сушёные
+frida:1167	Human milk, transitional (10th day post partum)	молоко женское переходное
+frida:1169	Yogurt, with fruit, 1.5 % fat	йогурт фруктовый 1,5 %
+frida:117	Coffee, instant, prepared with water	кофе растворимый разведённый
+frida:1171	Veal, fat, raw	жир телячий сырой
+frida:1172	Pork, neck, smoked, boiled	шея свиная солёная варёная
+frida:1173	Biscuit, sweet	печенье сдобное
+frida:1174	Cream, whipping, 38 % fat	сливки для взбивания 38 %
+frida:1176	Honey	мёд
+frida:1178	Beverages, soy, commercially prepared, unfortified	напиток соевый
+frida:118	Cheese, semihard, Esrom, 45 % fidm.	сыр эсром 45 %
+frida:1180	Human milk, mature	молоко женское зрелое
+frida:1181	Cream, cultured, 38 % fat	крем-фреш 38 %
+frida:1182	Salmon, Atlantic, wild, salted	сёмга дикая солёная
+frida:1184	Black pudding, boiled	кровяная колбаса варёная
+frida:1187	Eggs, chicken, yolk, salted, pasteurized	желток яичный солёный пастеризованный
+frida:1188	Charr, fillet, smoked	голец копчёный
+frida:1189	Milk, with chocolate, partly skimmed, 1.5 % fat (UHT)	шоколадное молоко 1,5 % ультрапастеризованное
+frida:1190	Gelatin	желатин
+frida:1191	Margarine, (less than 50 % fat), average	маргарин лёгкий
+frida:1192	Frankfurt sausage, fried, fast food	сосиска венская жареная (фастфуд)
+frida:1193	Pecans, oil roasted	орехи пекан жареные в масле
+frida:1194	Pecans, dry roasted	орехи пекан жареные сухие
+frida:1195	Margarine, 40 % fat, vegetable fat	маргарин растительный 40 %
+frida:1196	Brussels sprouts, automn (October to December), raw	брюссельская капуста осенняя
+frida:1198	Buckwheat flour	мука гречневая
+frida:1199	Yeast, dried	дрожжи сухие
+frida:12	Yogurt plain, whole milk	йогурт натуральный цельный
+frida:1200	Squab (pigeon), raw	голубь сырой
+frida:1201	Pork, thick belly, defatted, approx. 2 mm rind, raw	грудинка свиная мясистая без шпика сырая
+frida:1202	Cheese, processed, 20 % fidm.	сыр плавленый 20 %
+frida:1203	Cheese, firm, Danbo, 20 % fidm.	сыр данбо 20 %
+frida:1204	Seaweed, kombu, dried	ламинария комбу сушёная
+frida:1205	Milk, with chocolate, partly skimmed, 1.5 % fat	шоколадное молоко 1,5 %
+frida:1206	Cocoa, instant, without milk, powder	какао растворимое без молока порошковое
+frida:1207	Yeast extract, Marmite	дрожжевой экстракт Marmite
+frida:1209	French fries, deepfried, fast food	картофель фри (фастфуд)
+frida:1210	Egg, hen, yolk, sugar added, pasteurized, frozen	желток яичный с сахаром пастеризованный
+frida:1211	Cheese, firm, 20 % fidm., all varieties	сыр твёрдый 20 %
+frida:1215	Cheese, Cream, 60 % fidm.	сыр сливочный 60 %
+frida:1216	Tomato paste, concentrated	томатная паста
+frida:1217	Beans, soy, dried, raw	соя сухая
+frida:1218	Meat extract, cube	мясной экстракт в кубике
+frida:1220	Mackerel, smoked	скумбрия копчёная
+frida:1221	Beef brisket, soaked in brine	грудинка говяжья солёная варёная
+frida:1224	Biscuit, sweet	печенье каммерюнкер
+frida:1225	Rice groats, raw	рис круглозерный сырой
+frida:1226	Pork, ham, smoked	окорок копчёный
+frida:1227	Cheese, processed, 30 % fidm.	сыр плавленый 30 %
+frida:1228	Cheese, Brie, 45 % fidm.	сыр бри 45 %
+frida:1229	Chicken, flesh and skin, battered, deepfried	курица с кожей в панировке жареная во фритюре
+frida:1230	Egg, chicken, yolk, raw	желток яичный сырой
+frida:1232	Beef, meat, approx. 25 % fat, raw	говядина 25 % жирности сырая
+frida:1233	Beef, brisket, posterior part, raw	грудинка говяжья брюшная часть сырая
+frida:1234	Lamb, meat, average values, raw	баранина сырая
+frida:1235	Cheese, Camembert, 45 % fidm.	сыр камамбер 45 %
+frida:1236	Chicken, flesh and skin, deepfried	курица с кожей жареная во фритюре
+frida:1237	Beef, brisket, middle part, raw	грудинка говяжья средняя часть сырая
+frida:1238	Bucklingpaté (sweet cured herring, smoked)	паштет из копчёной сельди
+frida:1240	Buckwheat groats, raw	гречка сырая
+frida:1243	Cheese, semihard, Feta, 50 % fidm	сыр фета 50 %
 frida:1244	Cheese, firm, skimmed milk, max. 5 % fidm.	сыр твёрдый обезжиренный
+frida:1246	Tomato puree	томатное пюре
+frida:1248	Eel, raw	угорь сырой
+frida:1249	Pork, thick belly with rind, raw	грудинка свиная мясистая со шкурой сырая
+frida:1251	Beef, flatribs (short ribs), raw	короткие рёбра говяжьи сырые
+frida:1252	Rice, polished, raw	рис шлифованный сырой
+frida:1253	Bouillon, beef, concentrated, cube	говяжий бульонный кубик
+frida:1255	Rice flour	мука рисовая
+frida:1256	Cocoa, powder	какао порошок
+frida:1257	Olives, black, salted, in oil	оливки чёрные солёные в масле
+frida:1258	Rye flour, bolted (extraction rate 85 %)	мука ржаная полусеяная
+frida:1259	Cheese, firm, Danbo, 30 % fidm.	сыр данбо 30 %
+frida:1261	Beef, flank, raw	пашина говяжья сырая
+frida:1262	Tomato ketchup, bottled	кетчуп томатный
+frida:1265	Milk, whole, 3.5, (UHT), % fat	молоко цельное 3,5 % ультрапастеризованное
+frida:1266	Milk, whole, organic, 3.5 % fat	молоко цельное органическое 3,5 %
+frida:1268	Lamb, loin, raw	баранья корейка сырая
+frida:1269	Pork, meat, approx. 32 % fat, raw	свинина 32 % жирности сырая
+frida:1270	Yoghurt with strawberries	йогурт клубничный
+frida:1271	Rice, parboiled, raw	рис пропаренный сырой
+frida:1272	Potato flour	крахмал картофельный
+frida:1273	Yoghurt with mixed berries	йогурт с лесными ягодами
+frida:1274	Cheese, firm, 30 % fidm., all varieties	сыр твёрдый 30 %
+frida:1275	Baby food, infant formula, high iron content, powder	детская смесь с высоким железом порошковая
+frida:1276	Peach, dried	персики сушёные
+frida:1277	Cheese, Camembert, 50 % fidm.	сыр камамбер 50 %
+frida:1284	Yoghurt with peach melba	йогурт персик-мельба
+frida:1286	Yoghurt, whole milk, with fruit	йогурт цельный фруктовый
+frida:1288	Cheese, firm, Maribo, 30 % fidm.	сыр марибо 30 %
+frida:1289	Yoghurt with pear and banana	йогурт груша-банан
+frida:1290	Yoghurt with cherries	йогурт вишнёвый
+frida:1291	Milk, acidophilus cultured from whole milk, 3.5% fat	молоко ацидофильное 3,5 %
+frida:1292	Poppy seeds	семена мака
+frida:1294	Barley flour, raw	мука ячневая
+frida:1295	Pastilles, sugar added, unspecified	пастилки с сахаром
+frida:1296	Pasta, boiled	макароны варёные
+frida:1297	Corn flour	мука кукурузная
+frida:1299	Cheese, semihard, Mozzarella, 30 % fidm.	сыр моцарелла 30 %
+frida:13	Celery, raw	сельдерей листовой
+frida:1301	Wheat flour	мука пшеничная
+frida:1302	Eel, smoked	угорь копчёный
+frida:1304	Cheese, Cream, 70 % fidm.	сыр сливочный 70 %
+frida:1305	Yoghurt with müsli	йогурт с мюсли
+frida:1308	Wheat flour, breadmaking (extraction rate 75%)	мука пшеничная хлебопекарная
+frida:131	Cheese, firm, Elbo, 40 % fidm.	сыр эльбо 40 %
+frida:1311	Semolina	крупа манная
+frida:1312	Baking powder	разрыхлитель
+frida:1313	Cheese, Brie, 50 % fidm.	сыр бри 50 %
+frida:1314	Peas, green, canned	горошек зелёный консервированный
+frida:1315	Lamb, flank, raw	пашина баранья сырая
+frida:1316	Lamb, breast, raw	грудинка баранья сырая
+frida:1317	Beansprouts, soy, raw	ростки сои
+frida:1318	Cheese, firm, Samsoe, 30 % fidm.	сыр самсё 30 %
+frida:132	Potato crisps, coarse	чипсы картофельные рифлёные
+frida:1320	Goat milk	молоко козье
+frida:1323	Thistle oil	масло сафлоровое
+frida:1333	Oil, corn germ	масло кукурузное зародышевое
+frida:1334	Rolls, sweet dough type	булочки сдобные
+frida:1335	Wheat germ oil	масло зародышей пшеницы
+frida:1345	Oil, cotton seed	масло хлопковое
+frida:1351	Sorbitol	сорбит
+frida:1355	Oil, palm	масло пальмовое
+frida:136	Cheese, Roquefort, Danish, 50 % fidm.	сыр рокфор 50 %
+frida:1364	Oil, cocoa butter	масло какао
+frida:1369	Mustard powder	горчица порошковая
+frida:137	Coffee, instant, decaffeinated, prepared with water	кофе растворимый без кофеина разведённый
+frida:1377	Palm kernel oil	масло пальмоядровое
+frida:138	Cheese, Danish Blue, 50 % fidm.	сыр данаблю 50 %
+frida:1380	Peanut oil	масло арахисовое
+frida:1382	Sunflower oil	масло подсолнечное
+frida:1384	Walnut oil	масло грецкого ореха
+frida:139	Cheese, Brie, 60 % fidm.	сыр бри 60 %
+frida:1390	Beet, red, danish, raw	свёкла
+frida:1391	Kale, Danish, raw	кале
+frida:1394	Lettuce, iceberg (incl. crisphead types), danish, raw	салат айсберг датский
+frida:1396	Cod liver oil	жир печени трески
+frida:14	Cauliflower, all varieties, raw	цветная капуста сырая
+frida:1406	Dumplings, frozen	клёцки мучные замороженные
+frida:141	Bacon, stewing, raw	бекон для варки сырой
+frida:1412	Oil, sesame	масло кунжутное
+frida:1413	Lettuce, iceberg (incl. crisphead types), imported, raw	салат айсберг импортный
+frida:1414	Sugar, brown cane sugar	сахар тростниковый коричневый
+frida:1415	Corn oil	масло кукурузное
+frida:1418	Linseed oil	масло льняное
+frida:142	Coffee, beverage	кофе заварной
+frida:1420	Rye bread, soft, no high fat seeds, industrially produced	хлеб ржаной мягкий
+frida:1427	Wheat bread, italien type, retail bakery	хлеб пшеничный итальянский
+frida:1429	Oil, grapeseed	масло виноградное
+frida:143	Rye kernels, whole/cracked	зёрна ржаные
+frida:144	Sausage, liver sausage	печёночная колбаса
+frida:1440	Oil, coconut	масло кокосовое
+frida:1454	Saithe (UK), pollock (US), liver oil	жир печени сайды
+frida:1455	Fat, beef tallow	жир говяжий топлёный
+frida:146	Sour cream, 50 % fat	крем-фреш 50 %
+frida:1461	Soyabean oil, refined	масло соевое рафинированное
+frida:1465	Fish fillet, breaded, deepfried, fast food	филе рыбы в панировке жареное во фритюре (фастфуд)
+frida:1467	Olive oil	масло оливковое
+frida:148	Cheese, firm, 45 % fidm., all varieties	сыр твёрдый 45 %
+frida:1483	Oil, rape seed (no eruca acid)	масло рапсовое
+frida:1485	Celeriac, celery root, danish, raw	сельдерей корневой
+frida:149	Linseeds, raw	семена льна
+frida:1492	Arugula, rocket, raw	руккола
+frida:150	Peanut, dried	арахис сушёный
+frida:1507	Pumpkin seed, dried	семечки тыквенные сушёные
+frida:1512	Durum wheat flour	мука из твёрдой пшеницы
+frida:152	Double Cream, 50 % fat	сливки 50 %
+frida:1521	Wheat bread, white, industrially produced	хлеб пшеничный белый
+frida:1522	Bread, white, large, retail bakery	хлеб пшеничный белый пекарский
+frida:1523	Wheat bread, with coarse meal, industrially produced	хлеб пшеничный грубого помола
+frida:1524	Wheat bread, large, with coarse meal, retail bakery	хлеб пшеничный грубого помола пекарский
+frida:153	Pepper, white	перец белый
+frida:154	Soya flour, full fat	мука соевая полножирная
+frida:1548	Tiger prawn, aquaculture, raw, frozen	креветки тигровые сырые
+frida:1549	Prawn, giant tiger, aquaculture, boiled, frozen	креветки тигровые варёные
+frida:1552	Salmon, Atlantic, aquaculture, cold smoked	сёмга холодного копчения
+frida:1553	Salmon, atlantic, aquaculture, hot smoked	сёмга горячего копчения
+frida:156	Rice, brown, raw	рис бурый сырой
+frida:1570	White Wheat, whole grain flour, ready-to-bake	мука пшеничная цельнозерновая для выпечки
+frida:1573	Butter cookie, wheat, Danish, industrially produced	печенье сливочное датское
+frida:1574	American inspired cookie	куки американские
+frida:1575	Cookies, oat flakes, industrially produced	печенье овсяное
+frida:1576	Butter cookie, brown, (Danish), industrially produced	печенье брункаге
+frida:1577	Biscuit, sweet, pepper nuts, Danish tradition, industrially produced	печенье пебернёд
+frida:1578	Cookies, Klenät, industrially produced	печенье клейнер
+frida:1579	Cookies, low sugar content, industrially produced	печенье с пониженным сахаром
+frida:158	Milk, dry, skimmed, powder	молоко сухое обезжиренное
+frida:1580	Cookies, coconut, industrially produced	печенье кокосовое
+frida:1581	Cookie, truffle product / unbaked, industrially produced	пирожное трюфельное
+frida:1582	Wreath cake, almond based, Danish tradition	крансекаке
+frida:1584	Sweetcorn, baby, on-the-cob, raw	мини-кукуруза
+frida:1585	Pomelo (pommelo; shaddock), raw	помело
+frida:1586	Biscuit, rye	печенье ржаное
+frida:1587	Biscuit, wheat, sweet with thick chocolate	печенье пшеничное с толстым шоколадом
+frida:1588	Biscuit, double, wheat, sweet	печенье двойное сладкое
+frida:1589	Biscuit, oat, sweet	печенье овсяное сладкое
+frida:1590	Biscuit, oat, sweet with chokolate	печенье овсяное с шоколадом
+frida:1591	Granola bar	батончик гранола
+frida:1592	Wafer sticks	вафельные трубочки
+frida:1595	Biscuit, coarse grain with fruit and vegetables	печенье грубого помола с фруктами и овощами
+frida:1596	Milk, skimmed, 0.1 % fat	молоко обезжиренное 0,1 %
+frida:1597	Yogurt plain, low fat, 1.5 % fat	йогурт натуральный 1,5 %
+frida:1598	Yogurt low fat, 0.1 % fat	йогурт натуральный 0,1 %
+frida:1607	Bread, wheat, white wheat, wholw grain, retail bakery	хлеб пшеничный цельнозерновой пекарский
+frida:1608	Rolls, White Wheat, whole grain, industrially produced	булочка пшеничная цельнозерновая
+frida:1609	Bread, wheat, white wheat, wholw grain, industrially produced	хлеб пшеничный цельнозерновой
+frida:161	Cheese, semihard, Havarti, 45 % fidm.	сыр хаварти 45 %
+frida:1610	Herring, Baltic Sea, unspecified, raw	салака сырая
+frida:1611	Beef, mince, 5-10% fat, raw	фарш говяжий 5-10 % жирности сырой
+frida:1612	Pork, mince, 10-15% fat, raw	фарш свиной 10-15 % жирности сырой
+frida:1613	Turkey, mince, 5-10% fat, raw	фарш индейки 5-10 % жирности сырой
+frida:1615	Hamburger, small patty, salad and dressing, fast food	гамбургер маленький (фастфуд)
+frida:1616	Hamburger, medium patty, salad and dressing, fast food	гамбургер средний (фастфуд)
+frida:1617	Hamburger, large patty, salad and dressing, fast food	гамбургер большой (фастфуд)
+frida:1618	Hamburger and bacon, salad and dressing, fast food	гамбургер с беконом (фастфуд)
+frida:1619	Cheeseburger, salad and dressing, fast food	чизбургер (фастфуд)
+frida:162	Rose hip, dried, powder	шиповник порошковый
+frida:1620	Hamburger, bacon and cheese, salad and dressing, fast food	чизбургер с беконом (фастфуд)
+frida:1621	Hamburger, chicken, salad and dressing, fast food	бургер с курицей (фастфуд)
+frida:1622	Sandwich with chicken, salad and dressing, fast food	сэндвич с курицей (фастфуд)
+frida:1623	Sandwich with chicken and bacon, salad and dressing, fast food	сэндвич с курицей и беконом (фастфуд)
+frida:1624	Sandwich, ham and cheese, salad and dressing, fast food	сэндвич с ветчиной и сыром (фастфуд)
+frida:1625	Sandwich with eggs / shrimp, salad and dressing, fast food	сэндвич с яйцом и креветками (фастфуд)
+frida:1626	Sandwich with seafood, salad and dressing, fast food	сэндвич с рыбой (фастфуд)
+frida:1627	Sandwich with kebab, salad and dressing, fast food	сэндвич с кебабом (фастфуд)
+frida:1628	Sandwich with roast pork, red cabbage and cucumber pickles, fast food	сэндвич с жареной свининой, красной капустой и огурцом (фастфуд)
+frida:1629	Triangle sandwich with chicken and bacon, salad and dressing, fast food	сэндвич треугольный с курицей и беконом (фастфуд)
+frida:163	Oyster, raw	устрицы
+frida:1630	Triangle sandwich with ham and cheese, salad and dressing, fast food	сэндвич треугольный с ветчиной и сыром (фастфуд)
+frida:1631	Triangle sandwich with eggs, salad and dressing, fast food	сэндвич треугольный с яйцом (фастфуд)
+frida:1632	Sandwich with meatball, salad and dressing, fast food	сэндвич с фрикаделькой (фастфуд)
+frida:1633	Pita sandwich with kebab, salad and dressing, fast food	пита с кебабом (фастфуд)
+frida:1634	Pita sandwich with chicken, salad and dressing, fast food	пита с курицей (фастфуд)
+frida:1635	Pita sandwich with shrimp, salad and dressing, fast food	пита с креветками (фастфуд)
+frida:1636	Pita sandwich with falafel, salad and dressing, fast food	пита с фалафелем (фастфуд)
+frida:1637	Pita sandwich with salad and dressing, fast food	пита с салатом и соусом (фастфуд)
+frida:1638	Dürüm roll with kebab, salad and dressing, fast food	дюрюм с кебабом (фастфуд)
+frida:1639	Bacon-Wrapped Frankfurt sausage, freid, fast food	сосиска в беконе жареная (фастфуд)
+frida:164	Wine, white, dry	вино белое сухое
+frida:1640	French Hotdog, fast food	французский хот-дог (фастфуд)
 frida:1641	Hotdog, fast food	хот-дог
+frida:1642	Frankfurt sausage mix, fried, with frensh fries, fast food	сосисочный микс с картофелем фри (фастфуд)
+frida:1643	Kebab mix and french fries, deepfried, fast food	микс кебаб с картофелем фри (фастфуд)
+frida:1644	Chicken, grilled, fast food	курица жареная на гриле (фастфуд)
+frida:1645	Chicken nuggets, deepfried, fast food	куриные наггетсы (фастфуд)
+frida:1646	Pizza with tomato and cheese, fast food	пицца с томатом и сыром (фастфуд)
+frida:1647	Pizza with seafood, tomato and cheese, fast food	пицца с морепродуктами, томатом и сыром (фастфуд)
+frida:1648	Pizza with salami, tomato and cheese, fast food	пицца с салями, томатом и сыром (фастфуд)
+frida:1649	Pizza with vegetables, fruit, tomato and cheese, fast food	пицца с овощами и фруктами (фастфуд)
+frida:165	Fish balls, canned	рыбные фрикадельки консервированные
+frida:1650	Pizza with meat, tomato and cheese, fast food	пицца с мясом, томатом и сыром (фастфуд)
+frida:1651	Pizza with meat and seafood, tomato and cheese, fast food	пицца с мясом и морепродуктами (фастфуд)
+frida:1652	Fish fillet, breaded, fried, delicatessens	филе рыбы в панировке жареное (гастроном)
+frida:1653	Tuna, yellowfin, raw	тунец желтопёрый сырой
+frida:1654	Shrimp, boiled, in brine	креветки варёные в рассоле
+frida:1655	Salmon, atlantic, aquaculture, gravad	сёмга гравлакс
+frida:1656	Flounder, fillet, breaded, raw, frozen	филе камбалы-ёрша в панировке сырое
+frida:1657	Fish fingers, breaded, frozen	рыбные палочки
+frida:1658	Salmon, atlantic, aquaculture, raw	сёмга сырая
+frida:1659	Salmon, pacific, wild, raw	лосось тихоокеанский дикий сырой
 frida:166	Rye bread crumbs with brown sugar, average values	сухари ржаные с коричневым сахаром
+frida:1660	Striped catfish, raw, frozen	сом полосатый сырой
+frida:1661	Blue mussel, boiled	мидии варёные
+frida:1662	Eggs, chicken, battery hens, raw	яйца куриные клеточные
+frida:1663	Eggs, chicken, free-range (outdoor) hens, raw	яйца куриные на вольном выгуле
+frida:1664	Eggs, chicken, free-range hens (indoor), raw	яйца куриные напольные
+frida:1665	Eggs, chicken, organic farming, raw	яйца куриные органические
+frida:1666	Eggs, chicken, boiled, frozen	яйца варёные замороженные
+frida:1667	Eggs, chicken, yolk, pasteurized	желток яичный пастеризованный
+frida:1668	Eggs, chicken, scrambled, industrially produced	болтунья яичная
+frida:1669	Eggs, chicken, scrambled eggs mix, industrially produced	яичная смесь для болтуньи
+frida:167	Wine, white, average values	вино белое
+frida:1670	Rye bread, dark, industrially produced	хлеб ржаной тёмный
+frida:1671	Rye bread, dark, whole grains, industrially produced	хлеб ржаной тёмный с цельными зёрнами
+frida:1672	Wheat bread, with coarse meal and high fat seeds, retail bakery	хлеб пшеничный грубого помола с семечками пекарский
+frida:1673	Rye bread, dark, retail bakery	хлеб ржаной тёмный пекарский
+frida:1674	Rye bread, dark, whole grains, retail bakery	хлеб ржаной тёмный с цельными зёрнами пекарский
+frida:1675	Rye bread, dark, with high fat seeds, retail bakery	хлеб ржаной тёмный с семечками пекарский
+frida:1676	Rye bread, with siftings (soft) and high fat seeds, retail bakery	хлеб ржаной мягкий с семечками пекарский
+frida:1677	Yogurt, with fruit, 0.1 % fat, no sugar added	йогурт фруктовый 0,1 % без сахара
+frida:1678	Cheese, cottage, 10 % fidm.	творог 10 %
+frida:1679	Cheese, cottage, 5 % fidm.	творог 5 %
+frida:168	Wine, white, Rhine wine	вино белое рейнское
+frida:1680	Lactose, dry, powder	лактоза порошковая
+frida:1681	Yogurt, with fruit, 0.4 % fat	йогурт фруктовый 0,4 %
+frida:1682	Buttermilk dessert	кольдсколь
+frida:1683	Milkshake	молочный коктейль
+frida:1684	Blended spread, 75% fat	спред масляный 75 %
+frida:1685	Blended spread, reduced fat, 57% fat	спред масляный лёгкий 57 %
+frida:1686	Pork, thick flank, completely trimmed, raw	окорок свиной зачищенный сырой
+frida:1687	Pork, thin belly with rind, raw	грудинка свиная со шкурой сырая
+frida:1688	Pork, loin, 0-1 mm fat, raw	корейка свиная с жировой кромкой 0-1 мм сырая
 frida:1689	Pork, jaw, trimmed, raw	щёки свиные сырые
+frida:169	Tomato, sun-dried	томаты сушёные
+frida:1690	Oat drink, unfortified	напиток овсяный
+frida:1691	Rice drink, unfortified	напиток рисовый
+frida:1692	Almond drink, unfortified	напиток миндальный
+frida:1693	Skyr, 0.2 % fat	скир 0,2 %
+frida:1694	Galia melon, raw	дыня галия
+frida:1695	Cream pastry, chocolate cream puff	булочка с шоколадным кремом
+frida:1697	Caraway seed, raw	тмин
+frida:1698	Cumin seeds, raw	кумин
+frida:1699	Tahini	тахини
+frida:17	Broccoli, raw	брокколи
+frida:170	Ymer	юмер
+frida:1700	Rice drink, with added calcium	напиток рисовый с кальцием
+frida:1701	Oat drink, with added calcium	напиток овсяный с кальцием
+frida:1702	Soy drink, with added calcium	напиток соевый с кальцием
+frida:1703	Rolls, italien type, retail bakery	булочка итальянская
+frida:1704	Wheat bread, pita, white	пита белая
+frida:1705	Wheat bread, pita, with coarse meal	пита грубая
+frida:1707	Breakfast cereal, with bran	злаковый завтрак с отрубями
+frida:1708	Sea Buckthorn	облепиха
+frida:171	Wine, red, rosé, non-alcoholic	вино безалкогольное
+frida:1712	Veal, rump, raw	пиканья телячья сырая
+frida:1721	Pepper, sweet, yellow, raw	перец болгарский жёлтый
+frida:1722	Spelt wheat flour, bolted	мука спельтовая сеяная
+frida:1723	Spelt wheat flour, whole	мука спельтовая цельнозерновая
+frida:1724	Quinoa, white, raw	киноа белая сырая
+frida:1725	Quinoa, red, raw	киноа красная сырая
 frida:1726	Quinoa, black, raw	киноа чёрная сырая
+frida:1727	Rye flour, unspecified	мука ржаная
+frida:1728	Chia seeds	семена чиа
+frida:1729	Pearled spelt	полба перловая
+frida:173	Wine, white, medium	вино белое полусухое
+frida:1730	Pearled barley	перловка
+frida:1731	Oil margarine	маргарин жидкий
+frida:1732	Oil margarine, fortified with A- and D-vitamin	маргарин жидкий с витаминами А и D
+frida:1733	Plant margarine, 80%, fry/bake, enriched with A- and D-vitamin	маргарин растительный 80 % для жарки и выпечки с витаминами А и D
+frida:1734	Plant margarine, 80%, fry/bake, enriched with A-vitamin	маргарин растительный 80 % для жарки и выпечки с витамином А
+frida:1735	Plant margarine, 75%, fry/bake, fortified with A-vitamin	маргарин растительный 75 % для жарки и выпечки с витамином А
+frida:1736	Plant margarine, 60%, table use, soft, enriched with A-vitamin	маргарин растительный мягкий 60 % с витамином А
+frida:1737	Plant margarine, 40%, table use, soft, enriched with A- and D-vitamin	маргарин растительный мягкий 40 % с витаминами А и D
+frida:1739	Beef, mince, 8-12% fat, raw	фарш говяжий 8-12 % жирности сырой
+frida:174	Biscuit, sweet, 'Finnish'	печенье финское
 frida:1740	Chicken, mince, 3-10% fat, raw	фарш куриный сырой
+frida:1741	Baby spinach, raw	шпинат молодой
+frida:1743	Salad, romaine, raw	салат ромэн
+frida:1744	Squash, red kuri, Danish, raw	тыква хоккайдо
+frida:1745	Butternut squash, raw	тыква мускатная
 frida:1747	Whey protein powder	сывороточный протеин порошок
+frida:1748	Rice cake/cracker, puffed brown rice, plain	рисовые хлебцы из бурого риса
+frida:1749	Spinach, whole leaf, frozen	шпинат цельнолистовой замороженный
+frida:175	Wine, white, non-alcoholic	вино белое безалкогольное
+frida:1750	Cabbage, red, Danish, raw	капуста краснокочанная
+frida:1751	Cabbage, pointed, Danish, raw	капуста острокочанная
+frida:1752	Parsnip, Danish, raw	пастернак
+frida:1753	Veal, top round, raw	оковалок телячий сырой
+frida:1754	Veal, topside, trimmed, raw	внутренняя часть бедра телячья зачищенная сырая
+frida:1755	Veal, heart of rump, trimmed, raw	круглый отруб телячий сырой
 frida:1756	Veal, shortloin, raw	телятина поясничная часть сырая
+frida:1758	Beef, bottom round, raw	оковалок говяжий сырой
+frida:1759	Beef, flank steak, raw	фланк-стейк сырой
+frida:176	Barley groats, raw	крупа ячневая сырая
+frida:1760	Carrots, imported, without peel, raw	морковь очищенная импортная
+frida:1761	Carrots, Danish, without peel, raw	морковь очищенная
+frida:1762	Parsnips, imported, raw	пастернак импортный
+frida:1763	Celery, root, imported, raw	корень сельдерея импортный
+frida:1764	Cream yoghurt, plain, 10% fat (Greek and Turkish style)	йогурт греческий натуральный 10 %
+frida:1765	Cream yoghurt, plain, 2% fat (Greek and Turkish style)	йогурт греческий натуральный 2 %
+frida:1766	Milk, acidophilus cultured from partly skimmed milk, 1.5% fat	молоко ацидофильное 1,5 %
+frida:1767	Milk, acidophilus cultured from skimmed milk, 0.5% fat	молоко ацидофильное 0,5 %
+frida:1768	Pizza topping (Grated cheese, Mozzarella)	сыр моцарелла тёртый для пиццы
+frida:1769	Skinkeost 30+ (Processed cheese with ham)	сыр плавленый с ветчиной 30 %
+frida:1770	Rejeost, light, 8% fat, (Processed cheese with shrimp)	сыр плавленый с креветками лёгкий 8 %
+frida:1771	Feta, 5% (Salad cheese)	сыр фета 5 %
+frida:1772	Cheese, Cream, 30-40 % fidm.	сыр сливочный 30-40 %
+frida:1773	Cheese, Cream, 45-55 % fidm.	сыр сливочный 45-55 %
+frida:1774	Cheese, Brie, 11%	сыр бри 11 %
+frida:1775	Goat cheese, soft, 45-55% fidm.	сыр козий мягкий 45-55 %
+frida:1776	Goat cheese, in brine, 20-25%	сыр козий в рассоле 20-25 %
+frida:1777	Goat cheese, hard, 45% fidm.	сыр козий твёрдый 45 %
+frida:1778	Cheese, firm, 6%/10% fidm.	сыр твёрдый 6-10 %
+frida:1779	Cheese, firm, 45% fidm., Danish	сыр твёрдый датский 45 %
+frida:1780	Cheese, firm, 50% fidm., Danish	сыр твёрдый датский 50 %
+frida:1781	Veal, brisket, raw	грудинка телячья сырая
+frida:1782	Beef, brisket, boneless, raw	грудинка говяжья без кости сырая
+frida:1783	Cold cuts, with wheat protein	нарезка с пшеничным белком
+frida:1784	Seitan	сейтан
+frida:1785	Mince, with mycoprotein	фарш с микопротеином
+frida:1786	Mince, with soy protein	фарш с соевым белком
+frida:1787	Mince balls, with soy protein	фрикадельки с соевым белком
+frida:1788	Pieces, with soy protein	куски с соевым белком
+frida:1789	Cold cuts, with soy and pea protein	нарезка с соевым и гороховым белком
 frida:179	Rice starch	крахмал рисовый
+frida:1790	Mince, with pea protein	фарш с гороховым белком
+frida:1791	Sausage, with pea protein	колбаса с гороховым белком
+frida:1792	Cold cuts, with eggwhite	нарезка с яичным белком
+frida:1793	Pieces, with mycoprotein	куски с микопротеином
 frida:1794	Sausage, with soy protein	колбаса с соевым белком
+frida:1795	Beef, entrecote/rib eye, raw	антрекот мраморный сырой
+frida:1796	Aronia berries	арония
+frida:1797	Oatmilk, with added calcium and vitamins	напиток овсяный с кальцием и витаминами
+frida:1798	Almondmilk, with added calcium	напиток миндальный с кальцием
+frida:1799	Lentils, red, dried, raw	чечевица красная сухая
+frida:180	Liquorice allsorts	лакричные конфеты ассорти
+frida:1800	Lentils, green, dried, raw	чечевица зелёная сухая
+frida:1801	Beans, white, dried, raw	фасоль белая сухая
+frida:1802	Beans, red kidney, dried, raw	фасоль красная сухая
 frida:1803	Chickpeas, dry, raw	нут сухой сырой
+frida:1804	Le Puy green lentil, dried, raw	чечевица Ле-Пюи
+frida:1805	Lentils, beluga, dried, raw	чечевица белуга
 frida:1806	Edamame beans (Soy beans), shelled, frozen	эдамамэ замороженные
+frida:1807	Lentils, green, boiled, canned	чечевица зелёная варёная консервированная
+frida:1808	Baked beans (white beans in tomato sauce)	фасоль белая в томатном соусе
+frida:1809	Chili beans (red kidney beans in chilisauce)	фасоль красная в соусе чили
+frida:181	Danish pastry, square	слойка спандауэр
+frida:1810	Beans, red kidney, boiled, canned	фасоль красная варёная консервированная
+frida:1811	Beans, red kidney, cooked, ready to eat	фасоль красная варёная готовая
+frida:1812	Chickpeas, boiled, canned	нут варёный консервированный
+frida:1813	Chickpeas, steamed, ready to eat	нут приготовленный на пару
+frida:1814	Beans, black, boiled, canned	фасоль чёрная варёная консервированная
+frida:1815	White beans, dried and boiled	фасоль белая из сухой варёная
+frida:1816	Beans, red kidney, dried and boiled	фасоль красная из сухой варёная
+frida:1817	Blueberries, frozen	черника замороженная
+frida:1818	Raspberries, frozen	малина замороженная
+frida:1819	Strawberries, frozen	клубника замороженная
+frida:182	Salad dressing, French	заправка салатная французская
+frida:1820	Sweet corn kernels, frozen	кукуруза сладкая замороженная
+frida:1821	Peas, green, frozen	горошек зелёный замороженный
+frida:1822	Green beans (haricots verts), frozen	фасоль стручковая замороженная
+frida:1823	Cauliflower, frozen	цветная капуста замороженная
+frida:1824	Broccoli, frozen	брокколи замороженная
+frida:1825	Brussel sprouts, frozen	брюссельская капуста замороженная
+frida:1826	Soup vegetables, frozen	суповые овощи замороженные
+frida:1827	Root vegetables, frozen	корнеплоды замороженные
+frida:1828	Mango, frozen	манго замороженное
+frida:1829	Pomegranate seeds, frozen	гранатовые зёрна замороженные
+frida:183	Cheese, Danish Blue, 60 % fidm.	сыр данаблю 60 %
+frida:1830	Pineapple, frozen	ананас замороженный
+frida:1831	Mixed berries. frozen	микс ягод замороженный
+frida:1832	Baby carrots, frozen	мини-морковь замороженная
+frida:1833	Leek, frozen	лук-порей замороженный
+frida:1834	Avocado, frozen	авокадо замороженный
+frida:1835	Wok mix, organic, frozen	овощной микс для вока органический замороженный
+frida:1836	Wok mix, frozen	овощной микс для вока замороженный
+frida:1837	Pearl onion. frozen	луковички замороженные
+frida:1838	Bean mix, frozen	фасолевый микс замороженный
+frida:1839	Root vegetable fritters, frozen	оладьи из корнеплодов замороженные
+frida:184	Cheese, firm, Fynbo, 45 % fidm.	сыр фюнбо 45 %
+frida:1840	Sweet potato fries, frozen	батат фри замороженный
+frida:1841	Potato wedges, frozen	картофель дольками замороженный
+frida:1842	Halved potatoes, frozen	картофель половинками замороженный
+frida:1843	Curly fries, frozen	фри спиральные замороженные
+frida:1844	Potato rösti, frozen	рёшти замороженное
+frida:1845	Potato croquettes, frozen	картофельные крокеты замороженные
+frida:1846	Steak fries (thick fries with skin), frozen	картофель фри крупный с кожурой замороженный
+frida:1847	French fries, crinkle-cut, frozen	картофель фри рифлёный замороженный
+frida:1848	Blueberries, raw	черника
+frida:1849	Blackberry, raw	ежевика
+frida:1850	Raspberry, raw	малина
+frida:1851	Apricot, raw	абрикосы
+frida:1852	Plum, raw	сливы
+frida:1853	Peach, raw	персики
+frida:1854	Cherry, raw	вишня
+frida:1855	Pineapple, raw	ананас
+frida:1856	Grapefruit, raw	грейпфрут
+frida:1857	Melon, honeydew, raw	дыня медовая
+frida:1858	Kiwi fruit, raw	киви
+frida:1859	Mango, raw	манго
+frida:1860	Water, tap water	вода водопроводная
+frida:1861	Lolland raisins (beige-brown pea), dried	горох розинер сухой
+frida:1862	Pineapple juice	сок ананасовый
+frida:1863	Orange juice	сок апельсиновый
+frida:1864	Grapefruit juice	сок грейпфрутовый
+frida:1865	Prune juice	сок черносливовый
+frida:1866	Apple juice	сок яблочный
+frida:1867	Mixed fruit juice	сок мультифруктовый
+frida:1868	Carrot juice	сок морковный
+frida:1869	Tomato juice	сок томатный
+frida:187	Eggs, chicken, egg white, pasteurized	белок яичный пастеризованный
+frida:1870	Mixed vegetable juice	сок овощной микс
+frida:1871	Mixed fruit and vegetable juice	сок фруктово-овощной микс
+frida:1872	Fruit smoothie	смузи фруктовый
+frida:1873	Fruit and vegetable smoothie	смузи фруктово-овощной
+frida:1874	Mixed fruit cordial base, sugar added, dilution: 1+4	фруктовый сироп-концентрат с сахаром (1+4)
+frida:1875	Mixed fruit cordial base, sugar added, dilution: 1+5	фруктовый сироп-концентрат с сахаром (1+5)
+frida:1876	Cranberry cordial base, artificial sweetener added, dilution: 1+4	клюквенный сироп-концентрат с подсластителем (1+4)
+frida:1877	Mixed fruit cordial base, artificial sweetener added, dilution: 1+4	фруктовый сироп-концентрат с подсластителем (1+4)
+frida:1878	Mixed fruit cordial base, sugar and artificial sweetener added, dilution: 1+4	фруктовый сироп-концентрат с сахаром и подсластителем (1+4)
+frida:1879	Fruit juice, sugar added	нектар фруктовый с сахаром
+frida:188	Lumpsucker, smoked	пинагор копчёный
+frida:1880	Fruit juice, artificial sweetener added	нектар фруктовый с подсластителем
+frida:1881	Pear cider, sugar added, alcohol<0.7%	сидр грушевый с сахаром
+frida:1882	Apple cider, sugar added, alcohol<0.7%	сидр яблочный с сахаром
+frida:1883	Pear cider, artificial sweetener added, alcohol<0.7%	сидр грушевый с подсластителем
+frida:1884	Peach Icetea, sugar added	холодный чай персиковый с сахаром
+frida:1885	Lemon Icetea, sugar added	холодный чай лимонный с сахаром
 frida:1886	Peach Icetea, artificial sweetener added	холодный чай персиковый с подсластителем
+frida:1887	Peach Icetea, sugar and artificial sweetener added	холодный чай персиковый с сахаром и подсластителем
+frida:1888	Lemon Icetea, sugar added, powder	холодный чай лимонный с сахаром порошковый
+frida:1889	Soft drink, sugar added	газировка с сахаром
+frida:189	Wheat, kernels, whole/cracked	зёрна пшеницы
+frida:1890	Soft drink, artificial sweetener added	газировка с подсластителем
+frida:1891	Soft drink, sugar and artificial sweetener added	газировка с сахаром и подсластителем
+frida:1893	Soft drink, not carbonated, sugar added, ready to drink	негазированный напиток с сахаром
+frida:1894	Concentrated soft drink, not carbonated, sugar added, dilution 1+3	концентрат негазированного напитка с сахаром (1+3)
+frida:1895	Concentrated soft drink, not carbonated, sugar added, dilution 1+4	концентрат негазированного напитка с сахаром (1+4)
+frida:1896	Concentrated soft drink, not carbonated, sugar added, dilution 1+5	концентрат негазированного напитка с сахаром (1+5)
+frida:1897	Concentrated soft drink, not carbonated, sugar added, dilution 1+7	концентрат негазированного напитка с сахаром (1+7)
+frida:1898	Concentrated soft drink, not carbonated, sugar added, dilution 1+9	концентрат негазированного напитка с сахаром (1+9)
+frida:1899	Concentrated soft drink, not carbonated, artificial sweetener added, dilution 1+4	концентрат негазированного напитка с подсластителем (1+4)
+frida:1900	Concentrated soft drink, not carbonated, artificial sweetener added, dilution 1+5	концентрат негазированного напитка с подсластителем (1+5)
+frida:1901	Concentrated soft drink, not carbonated, artificial sweetener added, dilution 1+9	концентрат негазированного напитка с подсластителем (1+9)
+frida:1902	Concentrated soft drink, not carbonated, artificial sweetener added, dilution 1+11	концентрат негазированного напитка с подсластителем (1+11)
+frida:1903	Concentrated soft drink, not carbonated, sugar and artificial sweetener added, dilution 1+7	концентрат негазированного напитка с сахаром и подсластителем (1+7)
+frida:1904	Concentrated soft drink, not carbonated, sugar and artificial sweetener added, dilution 1+11	концентрат негазированного напитка с сахаром и подсластителем (1+11)
+frida:1905	Beer, lager, alc. 4-5 % by vol.	пиво лагер 4-5 %
+frida:1906	Beer, amber lager, alc. 4-5 % by vol.	пиво венский лагер 4-5 %
+frida:1907	Beer, strong lager, alc. 5-6 % by vol.	пиво крепкий лагер 5-6 %
+frida:1908	Beer, strong lager, alc. 7-8 % by vol.	пиво крепкий лагер 7-8 %
+frida:1909	Beer, lager, alc. 2-3 % by vol.	пиво лёгкий лагер 2-3 %
+frida:1910	Beer, lager, alcohol free	пиво безалкогольное
+frida:1911	Dark malt beer (Oud bruin type dark sweet beer), alc. 1-2 % by vol.	пиво тёмное сладкое 1-2 %
+frida:1912	Beer, brown ale, alc. 5-7 % by vol.	пиво эль тёмный 5-7 %
+frida:1913	Beer, blonde ale, alc. 6-7 % by vol.	пиво эль светлый 6-7 %
+frida:1914	Beer, wheat, German weissbier style, alc. 4-6 % by vol.	пиво пшеничное вайсбир 4-6 %
+frida:1915	Beer, wheat, Belgian witbier style, alc. 5-6 % by vol.	пиво пшеничное витбир 5-6 %
+frida:1916	Imperial stout, alc. 8% vol.	стаут имперский 8 %
+frida:1917	Beer, Danish Christmas, alc. 5-6 % vol.	пиво рождественское 5-6 %
+frida:1918	Dried ham, Serrano	ветчина серрано
+frida:1919	Dried ham, Black forest	ветчина шварцвальдская
+frida:192	Bread-crumbs	сухари панировочные
+frida:1920	Pork, loin without rind, dry aged	корейка свиная без шпика сухой выдержки сырая
+frida:1921	Chocolate ice cream	мороженое шоколадное
+frida:1922	Chocolate ice cream, sugar free	мороженое шоколадное без сахара
+frida:1923	Chocolate ice cream, vegan	мороженое шоколадное веганское
+frida:1924	Strawberry ice cream	мороженое клубничное
+frida:1925	Caramel ice cream	мороженое карамельное
+frida:1926	Nougat ice cream	мороженое нуговое
+frida:1927	Sorbet, raspberry	сорбет малиновый
+frida:1928	Stracciatella ice cream	мороженое страчателла
+frida:1929	Vanilla ice cream, <50% cream	мороженое ванильное со сливками <50 %
+frida:1930	Vanilla ice cream, >50% cream	мороженое ванильное со сливками >50 %
+frida:1931	Vanilla ice cream, without cream	мороженое ванильное без сливок
+frida:1932	Vanilla ice cream, vegan	мороженое ванильное веганское
+frida:1933	Lemonade popsickle	фруктовый лёд лимонадный
+frida:1934	Lemonade popsickle with coating	фруктовый лёд лимонадный в глазури
+frida:1935	Stick ice cream, vanilla with chocolate coating	эскимо ванильное в шоколадной глазури
+frida:1936	Stick ice cream, vanilla with chocolate and almond coating	эскимо ванильное в шоколадной глазури с миндалём
+frida:1937	Stick ice cream, vanilla with lemonade coating	эскимо ванильное в лимонадной глазури
+frida:1938	Stick ice cream, vanilla with blackcurrant and chocolate coating	эскимо ванильное с чёрной смородиной в шоколадной глазури
+frida:1939	Ice cream bar, waffle vanilla ice cream with strawberry sauce and chocolate coating	эскимо вафельное ванильное с клубничным соусом в шоколадной глазури
+frida:194	Apple juice, canned or bottled	яблочный сок нефильтрованный
+frida:1940	Waffle ice cream cone, vanilla with chocolate coating and nuts	мороженое ванильное в вафельном стаканчике с шоколадной глазурью и орехами
+frida:1941	Chicken mayonnaise salad, light	салат куриный с майонезом лёгкий
+frida:1942	Chicken mayonnaise salad	салат куриный с майонезом
+frida:1943	Ham mayonnaise salad, light	салат ветчинный с майонезом лёгкий
+frida:1944	Ham mayonnaise salad	салат ветчинный с майонезом
+frida:1945	Tuna mayonnaise salad	салат тунцовый с майонезом
+frida:1946	Italian mayonnaise salad	салат итальянский с майонезом
+frida:1947	Egg mayonnaise salad	салат яичный с майонезом
+frida:1948	Chicken and bacon mayonnaise salad	салат куриный с беконом и майонезом
+frida:1949	Horseradish cream salad	салат с хреном
+frida:1950	Curry mayonnaise salad	салат карри с майонезом
+frida:1951	Shellfish mayonnaise salad	салат с морепродуктами и майонезом
+frida:1952	Salad dressing, thousand island	заправка «тысяча островов»
+frida:1953	Salad dressing, sour creme	заправка крем-фреш
+frida:1954	Salad dressing, garlic	заправка чесночная
+frida:1955	Fastfood dressing, burger	соус бургерный (фастфуд)
+frida:1956	Pesto, peper	песто из болгарского перца
+frida:1957	Aioli	айоли
+frida:1958	Pesto alla genovese	песто генуэзе
+frida:1959	Pesto, tomato (Pesto rosso)	песто россо
+frida:1961	Salad dressing, Cæsar	заправка цезарь
+frida:1962	Salad dressing, Italian	заправка итальянская
+frida:1963	Salad dressing, Honey/Mustard	заправка горчично-медовая
+frida:1964	Mayonnaise	майонез
+frida:1965	Mayonnaise, low fat	майонез нежирный
+frida:1966	Mayonnaise, chili	майонез чили
+frida:1967	Mayonnaise, vegan	веганский майонез
+frida:1968	Remoulade	соус ремулад
+frida:1969	Remoulade, fatreduced	соус ремулад нежирный
+frida:1970	Pizza with ham and pineapple, fast food	пицца с ветчиной и ананасом (фастфуд)
+frida:1971	Pizza with kebab, salad and dressing, fast food	пицца с кебабом, салатом и соусом (фастфуд)
+frida:1972	Spring roll with vegetables, deepfried, fast food	спринг-ролл овощной жареный (фастфуд)
+frida:1973	Rice, boiled	рис варёный
+frida:1974	Shawarma kebab meat, takeaway	мясо для шаурмы (на вынос)
+frida:1975	Sushi, takeaway	суши (на вынос)
+frida:1976	Wakame seaweed salad with sesame seeds, takeaway	салат из вакаме с кунжутом (на вынос)
+frida:1977	Butter chicken, takeaway	карри баттер-чикен (на вынос)
+frida:1978	Salad with chicken, takeaway	салат с курицей (на вынос)
+frida:1979	Pad Thai with shrimp, takeaway	пад-тай с креветками (на вынос)
+frida:1980	Red curry chicken, takeaway	курица в красном карри (на вынос)
+frida:1981	Stir fried beef, takeaway	говядина обжаренная в воке (на вынос)
+frida:199	Pearl-sago (potato starch)	саго
+frida:2	Apple, raw, all varieties	яблоки
+frida:20	Beans, wax, raw	фасоль стручковая жёлтая
+frida:203	Cheese, firm, Maribo, 45 % fidm.	сыр марибо 45 %
+frida:204	Mustard, brown, ready made	горчица коричневая
+frida:205	Garlic, raw	чеснок
+frida:206	Wine, rosé	вино розовое
+frida:208	Minced meat in gravy, average values	фарш мясной в подливке
+frida:209	Cheese, firm, Samsoe, 45 % fidm.	сыр самсё 45 %
+frida:21	Lemon, raw	лимон
+frida:211	Baby food, infant formula, low iron content, powder	детская смесь с пониженным железом порошковая
+frida:212	Sherry, medium	херес полусладкий
+frida:213	Wine, red	вино красное
+frida:214	Cheese, hard, Cheshire, 50 % fidm.	сыр чешир 50 %
+frida:215	Eggs, chicken, egg white, raw	белок яичный сырой
+frida:216	Bacon, frying, raw	бекон для жарки сырой
+frida:217	Vermouth, dry	вермут сухой
+frida:22	Dill, raw	укроп
+frida:220	Vermouth, sweet	вермут сладкий
+frida:221	Prune, dried plum	чернослив
+frida:222	Tamarind, Indian date, raw	тамаринд
+frida:223	Pastry, croissant	круассан
+frida:225	Eggs, chicken, egg white, dried	белок яичный сушёный
+frida:226	Vinegar	уксус
+frida:228	Madeira	мадера
+frida:229	Campari	кампари
+frida:23	Kale, raw	капуста кудрявая
+frida:230	Pastry with poppy seeds	слойка с маком
+frida:231	Cheese, Blue and white mould, 70 % fidm.	сыр с голубой и белой плесенью 70 %
+frida:232	Wine, white, sweet	вино белое сладкое
+frida:235	BITTER, all types, average values	биттер
 frida:236	Pepper, black	перец чёрный
+frida:2384	Energy drink, sugar added	энергетический напиток с сахаром
+frida:2385	Energy drink, sugar free	энергетический напиток без сахара
+frida:2386	Energy drink, with sugar and artificial sweetener	энергетический напиток с сахаром и подсластителем
+frida:24	Carrot, raw	морковь
+frida:240	BITTER, Gammel Dansk Bitter Dram	биттер Gammel Dansk
+frida:245	Brandy, cognac	коньяк
+frida:246	Wine, white, sparkling, champagne	шампанское
+frida:248	Cheese, firm, Svenbo, 45 % fidm.	сыр свенбо 45 %
+frida:249	Aquavit, spiced, average values	аквавит пряный
+frida:25	Garfish, raw	сарган сырой
+frida:250	Sherry, dry	херес сухой
+frida:251	Olives, black, without stones, in brine	оливки чёрные без косточек в рассоле
+frida:257	Spirits, 70 % proof	крепкий алкоголь
+frida:258	Vodka	водка
+frida:259	Plain cake, lemon cake	кекс лимонный
+frida:26	Cabbage, white, raw	капуста белокочанная
+frida:260	BITTER, Krabask Bitter	биттер Krabask
+frida:261	Cheese, hard, Emmentaler, 45 % fidm.	сыр эмменталь 45 %
+frida:263	Breakfast cereal, Rice Krispies	злаковый завтрак Rice Krispies
+frida:264	Aquavit, 40 % vol., average values	аквавит
+frida:266	Ice cream, dairy, popsickle, strawberry	эскимо клубничное
+frida:268	Lemon juice, fresh	сок лимонный свежевыжатый
+frida:27	Rose hip, raw	шиповник
+frida:270	Cheese, semihard, Esrom, 60 % fidm.	сыр эсром 60 %
+frida:271	Cream yoghurt, 9 % fat, with fruit	йогурт сливочный фруктовый 9 %
+frida:272	Tofu, soy bean curd	тофу твёрдый
+frida:273	Port	портвейн
+frida:276	Plain cake, chocolate cake	кекс шоколадный
+frida:277	Bouillon, chicken, prepared	бульон куриный
+frida:279	Danish pastry, cinnamon roll	слойка с корицей
+frida:28	Elderberry, raw	бузина
+frida:280	Danish pastry, average values	слойка датская
+frida:281	Plain cake, average values	кекс
+frida:282	Pop corn, oil and salt added, traditional	попкорн с маслом и солью классический
+frida:283	Bulgur, parboiled, raw	булгур сырой
 frida:285	Lentils, sprouted, raw	чечевица пророщенная
+frida:286	Whisky	виски
+frida:287	Sausage, beef salami	салями говяжья
+frida:291	Cheese, semihard, Havarti, 60 % fidm.	сыр хаварти 60 %
+frida:3	Banana, raw	банан
+frida:30	Salmon, Atlantic, wild, raw	сёмга дикая сырая
+frida:300	Cream, cultured, 9 % fat  (Fraiche 9%)	сливки кислые 9 %
+frida:301	Pork/beef sausage, teewurst	колбаса тевурст
+frida:302	Hazelnut, dried	фундук сушёный
+frida:303	Cream, 9 % fat	сливки 9 %
+frida:305	Pasta, raw	паста сухая
+frida:307	Cheese, Quark, 5 % fidm.	кварк 5 %
+frida:308	Cheese, hard, Grana, 32 % fidm.	сыр грана 32 %
+frida:309	Cheese, hard, Parmesan, 32 % fidm.	сыр пармезан 32 %
+frida:31	Sweetcorn, on-the-cob, raw	кукуруза в початке
+frida:313	Gin	джин
+frida:317	Gherkin, pickled, no sugar added	корнишоны маринованные без сахара
+frida:319	Yeast, baker`s, compressed	дрожжи прессованные
+frida:32	Milk, buttermilk	пахта
+frida:320	Biscuit, sweet, vanilla flavoured	печенье ванильное
+frida:321	Cheese, hard, Cheddar, Danish	сыр чеддер 50 %
+frida:324	Fish cake, raw	рыбный фарш сырой
+frida:325	Rum	ром
+frida:328	Pistachio nuts, dried	фисташки сушёные
+frida:33	Milk, partly skimmed, konventional (not organic), 1.5 % fat	молоко 1,5 %
+frida:330	Whipped egg white and sugar with chocolate covering	зефир в шоколадной глазури
+frida:331	Millet, flakes	хлопья из пшена
+frida:333	Cheese, unripened, smoked, 1 % fat	сыр копчёный 1 %
+frida:335	Cod, liver, canned	печень трески консервированная
+frida:337	Snacks, expanded, cornbased	кукурузные снеки
+frida:34	Mackerel, raw	скумбрия сырая
+frida:340	Cheese, whey, Myseost, 33 % fidm.	сыр мюсеост 33 %
+frida:341	Cheese, hard, Gruyere, 45 % fidm.	сыр грюйер 45 %
+frida:342	Cabbage, red, canned, no sugar added	капуста краснокочанная консервированная без сахара
+frida:343	Danish pastry, pretzel	слойка крингле
+frida:344	Sherry, sweet	херес сладкий
+frida:348	Fig, dried	инжир сушёный
+frida:35	Almond, raw	миндаль
+frida:350	Cranberry, raw	клюква
+frida:351	Pastry, 'linse'	миндальный торт линсе
 frida:352	Pop corn, oil and salt added	попкорн с маслом и солью
+frida:356	Danish pastry, christmas cake	рождественская слойка
+frida:358	Sausage, salami	салями
+frida:359	Pound cake	кекс сливочный
+frida:36	Watermelon, raw	арбуз
+frida:364	Quinces, raw	айва
+frida:366	Pumpkin, raw	тыква
+frida:367	Salad dressing, blue cheese	заправка блю-чиз
+frida:368	Radishes, oriental, daikon, Japanese radish, raw	редька дайкон
+frida:37	Pepper, sweet, green, raw	перец болгарский зелёный
+frida:370	Sesame seeds, whole	кунжут
+frida:371	Olives, green, pickled, canned	оливки зелёные маринованные
+frida:372	Seaweed, agar, dried	агар
+frida:375	Crispbread, knackebrot, rye, coarse	хлебцы ржаные
+frida:377	Macaroni, spaghetti, whole meal, raw	спагетти цельнозерновые сухие
+frida:379	Rye bread, dark, wholemeal, imported	хлеб ржаной цельнозерновой
+frida:38	Pepper, sweet, red, raw	перец болгарский красный
+frida:380	Pear, canned	груши консервированные
+frida:381	Turnip, raw	брюква
+frida:383	BITTER, sweet, all types, average values	биттер сладкий
+frida:384	Bean, adzuki, sprouted, raw	ростки адзуки
+frida:385	Millet, whole-grain	просо
+frida:386	Pop corn, microwave oven	попкорн для микроволновки
+frida:387	Mussel, raw	мидии сырые
+frida:388	Cucumber, raw	огурец
+frida:389	Loquat, raw	локва
+frida:39	Radish, raw	редис
+frida:390	Cashew nuts, oil roasted	кешью жареные в масле
+frida:392	Danish pastry, butter ring	слойка масляное кольцо
+frida:393	Nut paste with cacao, spreads	ореховая паста с какао
+frida:395	Corn flakes, average values	кукурузные хлопья
+frida:396	Breakfast cereal, müsli, average values	мюсли
+frida:398	Mock turtle ragout, average values	рагу ложная черепаха
+frida:4	Potato, raw	картофель
+frida:40	Currant, red, raw	смородина красная
+frida:403	Apricot, canned, light syrup pack	абрикосы консервированные в лёгком сиропе
+frida:404	Gherkin, pickled	корнишоны маринованные
+frida:406	Pork sausage, saveloy type, low fat	колбаса свиная нежирная
+frida:407	Grape juice	сок виноградный
+frida:408	Crayfish, raw	раки
+frida:409	Corn starch	крахмал кукурузный
+frida:41	Brussels sprouts, raw	брюссельская капуста
+frida:410	Carrot, canned	морковь консервированная
+frida:412	Potatoes, mashed, instant powder with dry milk	пюре картофельное порошковое с сухим молоком
+frida:413	Rye bread, light	хлеб ржаной светлый
+frida:416	Bitter, Jägermeister	биттер Jägermeister
 frida:417	Salt, table	соль поваренная
+frida:418	Rye bread, dark, pumpernickel	пумперникель
+frida:419	Spring roll, frozen	спринг-ролл замороженный
 frida:421	Apricot, canned, no sugar added	абрикосы консервированные без сахара
+frida:422	Pumpkin, canned	тыква консервированная
+frida:423	Pineapple, canned	ананас консервированный
+frida:424	Onions, chopped, frozen	лук рубленый замороженный
+frida:425	Cream pastry, layer cake	кремовый торт слоёный
+frida:426	Wheat rusk	сухарь пшеничный пряный
+frida:427	Wheat rusk	сухарь пшеничный
+frida:428	Chayote fruit, raw	чайот
+frida:43	Beet, red, raw	свёкла сырая
+frida:432	Crispbread, knackebrot, rye, fine	хлебцы ржаные тонкие
+frida:433	Mustard, yellow, ready made	горчица жёлтая
+frida:434	Peach, canned	персики консервированные
+frida:435	Liqueur, average values	ликёр
+frida:436	Corn flakes, frosted	кукурузные хлопья глазированные
+frida:438	Sunflower seeds, decorticated, dried	семечки подсолнечные очищенные сушёные
+frida:439	Sauce gravad lax	соус к гравлаксу
+frida:44	Cabbage, red, raw	капуста краснокочанная сырая
+frida:443	Snacks, extruded, cornbased	кукурузные снеки экструдированные
+frida:444	Oats, rolled, enriched	овсяные хлопья обогащённые
+frida:447	Muskmelon, raw	дыня мускусная
+frida:45	Plaice, raw	камбала сырая
+frida:451	Tomato, Danish, ripe, raw	томат
+frida:452	Tangerine, canned	мандарины консервированные
+frida:454	Plaice, fillet, breaded, frozen	филе камбалы в панировке замороженное
+frida:458	Apricot, dried	абрикосы сушёные
+frida:459	Sauce, barbeque	соус барбекю
+frida:46	Celeriac, celery root, raw	корень сельдерея
+frida:460	Breakfast cereal, Müsli with added sugar	мюсли с добавленным сахаром
+frida:461	Breakfast cereal, Müsli, no sugar added	мюсли без добавленного сахара
+frida:462	Rye bread, fine with wheat flour, industrially produced	хлеб ржано-пшеничный
+frida:464	Lime, raw	лайм
+frida:465	Crab apple, raw	ранетка
+frida:467	Elderberry, juice, concentrated, sugar not added	сок бузины концентрированный без сахара
+frida:468	Cream, 13 % fat (UHT)	сливки 13 % ультрапастеризованные
+frida:469	Frog legs, frozen	лягушачьи лапки замороженные
+frida:47	Herring, pickled, canned	сельдь маринованная
+frida:470	Pepper, hot chili, canned	перец чили консервированный
+frida:471	Sesame seed, decorticated	кунжут очищенный
+frida:472	Strawberry juice, concentrated, sugar not added	сок клубничный концентрированный без сахара
+frida:473	Raspberry juice, concentrated, sugar not added	сок малиновый концентрированный без сахара
+frida:474	Burbot, raw	налим
+frida:475	Hake, raw	хек
+frida:476	Cream pastry, strawberry cake	клубничный кремовый торт
+frida:477	Salad dressing, mayonnaise, low calorie	майонез низкокалорийный
+frida:478	Liqueur, Curacao	ликёр кюрасао
+frida:479	Lettuce, iceberg (incl. crisphead types), raw	салат айсберг
+frida:48	Herring, raw	сельдь сырая
+frida:480	Oats, rolled, not enriched	овсяные хлопья необогащённые
+frida:481	Currant, red, juice, concentrated, sugar not added	сок красной смородины концентрированный без сахара
+frida:482	Strawberries, frozen, sweetened, whole	клубника замороженная с сахаром
+frida:483	Cream, 13 % fat	сливки 13 %
+frida:486	Saccharin	сахарин
+frida:489	Sausage, salami	салями сыровяленая
+frida:49	Cabbage, pointed, raw	капуста острокочанная сырая
+frida:490	Radish, white, raw	редька белая
+frida:491	Melon, cantaloup, raw	дыня канталупа
+frida:492	Beet, red, canned, no sugar added	свёкла консервированная без сахара
+frida:493	Meat balls, canned	фрикадельки консервированные
+frida:495	Octopus, raw	осьминог сырой
+frida:496	Horse-radish, raw	хрен свежий
+frida:497	Strawberries, canned	клубника консервированная в сиропе
+frida:498	Pork in curry sauce, frozen	свинина в карри-соусе замороженная
+frida:50	Spinach, raw	шпинат
+frida:500	Currant, black, juice, concentrated, sugar not added	сок чёрной смородины концентрированный без сахара
+frida:501	Snail, edible, raw	улитка виноградная
+frida:502	Carrot, frozen	морковь замороженная
+frida:503	Pepper, sweet, canned	перец болгарский консервированный
+frida:504	Pastry, coco macaroon	кокосовые макаруны
+frida:505	Ice cream, dairy, popsickle, vanilla	мороженое ванильное на палочке
+frida:508	Grape, green, raw	виноград зелёный
+frida:51	Gooseberry, raw	крыжовник
+frida:510	Papaya, raw	папайя
 frida:511	Milk, dry, whole, powder	молоко сухое цельное
+frida:512	Pizza Romana, frozen	пицца романа замороженная
+frida:513	Cherry juice, concentrated, sugar not added	сок вишнёвый концентрированный без сахара
+frida:514	Lingonberry, jam	брусника протёртая с сахаром
+frida:515	Pecans, dried	пекан сушёный
+frida:517	Cheese, cottage, 20 % fidm.	творог 20 %
+frida:518	Shrimp, boiled, shell removed	креветки варёные очищенные
+frida:519	Swede, raw	брюква сырая
+frida:52	Tomato, ripe, raw, origin unknown	томат спелый
+frida:520	Quark with fruit	кварк фруктовый
+frida:525	Cod, roe, canned	икра трески консервированная
+frida:526	Whey, sweet, fluid	сыворотка сладкая
+frida:527	Shrimp, canned	креветки консервированные
+frida:529	Rose hip syrup	сироп шиповниковый
+frida:533	Date, dried	финики сушёные
+frida:534	Bouillon, beef, cube, prepared	бульон говяжий из кубика
+frida:535	Ice cream, dairy, three coloured	мороженое трёхцветное
+frida:537	Tea, leaves	чай листовой
+frida:538	Rhubarb, frozen	ревень замороженный
+frida:54	Grape, raw	виноград
+frida:540	Gherkin cucumber, raw	огурец корнишонный
+frida:541	Lemon sole, raw	морской язык лимонный
+frida:542	Cucumber, large, pickled	огурцы крупные маринованные
+frida:544	Chicory, raw	цикорий салатный
+frida:546	Dab, raw	морской ёрш
+frida:547	Kidney, calf, raw	почки телячьи сырые
+frida:548	Cod, fillet, breaded, raw	филе трески в панировке сырое
+frida:549	Blue whiting, fillet, raw	филе путассу сырое
+frida:55	Peas, green, raw	горошек зелёный
+frida:550	Liver, pig, in cream sauce, frozen	печень свиная в сливочном соусе замороженная
+frida:551	Pastry, average values	сухое пирожное
+frida:553	Whiting, raw	мерланг сырой
+frida:556	Salt, sea salt (no iodine fortification)	соль морская
+frida:558	Oat Bran, Danish	отруби овсяные
+frida:559	Carrot, raw	морковь датская
+frida:56	Squash, raw	кабачок
+frida:560	Mandarin orange, raw	мандарин
+frida:561	Perch, raw	окунь речной
+frida:562	Cod, fillet, boiled	филе трески варёное
+frida:564	Wolffish (catfish), raw	зубатка
+frida:566	Heart, veal, raw	сердце телячье сырое
+frida:569	Kidney, ox, raw	почки говяжьи сырые
+frida:57	Artichoke, raw	артишок
+frida:570	Torsk, tusk, raw	мольва
+frida:571	Cod, fillet, smoked, with skin	филе трески копчёное с кожей
+frida:572	Prickly pear, Indian fig, raw	плод опунции
+frida:573	Cabbage, Chinese, raw	капуста пекинская
+frida:574	Kidney, pig, raw	почки свиные сырые
+frida:575	Norway pout, flesh, raw	путассу норвежская
+frida:577	Pastry, frangipani pastry	мазарины
+frida:578	Figs, raw	инжир
+frida:579	Carambola, raw	карамбола
+frida:58	Beans, mung, dried, raw	фасоль маш сухая
+frida:581	Turbot, raw	калкан
+frida:582	Haddock, raw	пикша сырая
+frida:583	Pork, liver paste, Danish, low fat	печёночный паштет свиной нежирный
+frida:584	Flounder, raw	камбала-ёрш
+frida:585	Endive (escarole), raw	салат эскариол
+frida:587	Pollack, raw	сайда
+frida:588	Plain cake, frangipani cake	кекс миндальный
+frida:589	Caviar, Danish (roe, lump-sucker)	икра пинагора
+frida:59	Oats, rolled, average values	овсяные хлопья
+frida:590	Pizza Napolitana, frozen	пицца неаполитана замороженная
+frida:591	Lettuce, looseleaf, raw	салат листовой
+frida:592	Split peas, dry, raw	горох колотый сухой
+frida:593	Persimmon, kaki fruit, raw	хурма
+frida:594	Ling, fillet, raw	филе мольвы сырое
+frida:595	Sole, raw	морской язык
+frida:596	Tomato, peeled, canned	томаты очищенные консервированные
+frida:597	Meat balls, average values	фрикадельки
+frida:598	Fish balls, fried	рыбные фрикадельки жареные
+frida:599	Endive (frisee), raw	салат фризе
+frida:6	Milk, whole, konventional (not organic), 3.5 % fat	молоко цельное 3,5 %
+frida:60	Rye flour, dark, wholemeal	мука ржаная цельнозерновая
+frida:600	Lettuce, Cos or romaine, raw	салат ромэн сырой
+frida:601	Pikeperch, raw	судак
+frida:602	Potatoes, mashed, instant powder without dry milk	пюре картофельное порошковое без сухого молока
+frida:603	Redfish, ocean perch, raw	окунь красный сырой
+frida:604	Spring roll with minced beef and white cabbage, deepfried, fast food	спринг-ролл с говяжьим фаршем и капустой жареный (фастфуд)
+frida:606	Carrot, raw	морковь импортная
+frida:607	Cod, liver, smoked	печень трески копчёная
+frida:608	Cod, liver, raw	печень трески сырая
+frida:61	Wheat, flour, wholemeal	мука пшеничная цельнозерновая
+frida:610	Nectarine, raw	нектарин
+frida:611	Pike, raw	щука сырая
+frida:612	Salad dressing, oil and vinegar, low calorie	уксусно-масляная заправка низкокалорийная
+frida:614	Squash, all varieties, raw	кабачок сырой
+frida:615	Wheat bread, with whole kernels	хлеб пшеничный с цельными зёрнами
+frida:616	Avocado, raw	авокадо
+frida:617	Wheat bran	отруби пшеничные
+frida:62	Ginger root, raw	имбирь
+frida:621	Beet, red, canned	свёкла маринованная
+frida:622	Lentils, brown, dried, raw	чечевица коричневая сухая
+frida:624	Tomato, imported, ripe, raw	томат импортный
+frida:625	Lobster, boiled	лобстер варёный
+frida:626	Lobster, canned	лобстер консервированный
+frida:627	Butterhead lettuce (US), cabbage lettuce (UK), raw	салат кочанный масляный
+frida:628	Margarine, 70 % fat, table use, soft, vegetable fat	маргарин мягкий растительный 70 %
+frida:629	Cabbage, red, canned	капуста краснокочанная консервированная
+frida:63	Okra, raw	окра
+frida:630	Lychee, raw	личи
+frida:631	Pizza, frozen, average values	пицца замороженная
+frida:632	Pomegranate, raw	гранат
+frida:633	Guava, common, raw	гуава
+frida:634	Spotted wolffish, fillet, raw	филе зубатки пятнистой сырое
+frida:635	Mussels, in water, canned	мидии консервированные в собственном соку
+frida:636	Cape gooseberries, raw	физалис
+frida:637	Cheese, unripened, smoked, 10 % fat	сыр копчёный 10 %
+frida:639	Bream, raw	лещ
+frida:64	Asparagus, green, raw	спаржа зелёная
+frida:641	Heart, beef, raw	сердце говяжье сырое
+frida:643	Pak choi (bok choy), raw	пак-чой
+frida:644	Heart, pork, raw	сердце свиное сырое
+frida:646	Rye bread, dark with high fat seeds and whole kernels, industrially produced	хлеб ржаной тёмный с семечками и зёрнами
+frida:647	Walnuts, dried	грецкие орехи сушёные
+frida:649	Asparagus, canned	спаржа консервированная
+frida:65	Fennel, bulb, raw	фенхель
+frida:650	Garlic, dried, powder	чеснок сушёный порошковый
+frida:651	Pizza with broccoli, frozen	пицца с брокколи замороженная
+frida:652	Chickory, raddichio, raw	радиккио
+frida:653	Eggs, chicken, dried	яйца сушёные
+frida:654	Lobster, raw	лобстер сырой
+frida:655	Norway lobster, raw	лангустин
+frida:656	Crispbread, knackebrot, wheat, coarse	хлебцы пшеничные грубые
+frida:657	Curry powder	карри порошок
+frida:658	Norway haddock, fillet, raw	филе морского окуня малого сырое
+frida:659	Potato crisps, fatreduced	чипсы картофельные нежирные
+frida:66	Saithe, raw	сайда сырая
+frida:660	Sausage, tongue sausage, saveloy type	колбаса язычная
+frida:661	Saithe (UK), pollock (US), fillet, frozen	филе сайды замороженное
+frida:662	Cream, 18 % fat	сливки 18 %
+frida:663	Beans, wax, canned	фасоль стручковая жёлтая консервированная
+frida:665	Wheat bread, with wheat bran	хлеб пшеничный с отрубями
+frida:666	Pork, ham, cured, canned	окорок варёный консервированный
+frida:667	Bread, bolted rye and wheat, sour, with caraway seeds	хлеб на закваске с тмином
+frida:668	Eggs, chicken, long eggs, boiled, frozen	яйца длинные варёные замороженные
+frida:669	Blackberry, jam	джем ежевичный
+frida:67	Buckwheat, whole, raw	гречиха цельная
+frida:670	Marmalade, mango	мармелад манговый
+frida:671	Cream, cultured, 18 % fat	крем-фреш 18 %
+frida:672	Bread, wholemeal	хлеб цельнозерновой
+frida:673	Liver, goose, raw	печень гусиная сырая
+frida:674	Veal, eye of round, salted, boiled	телятина солёная варёная
+frida:675	Chocolate, milk	шоколад молочный
+frida:676	Bread, white	хлеб белый
+frida:677	Wheat bread, italien type, industrially produced	хлеб пшеничный итальянский промышленный
+frida:679	Miso, soy paste	мисо
+frida:680	Beans, green, canned	фасоль стручковая консервированная
+frida:681	Lentils, dried	чечевица сухая
+frida:682	Gizzard, chicken, raw	желудок куриный сырой
+frida:683	Kohlrabi, raw	кольраби
+frida:685	Watercress, raw	кресс водяной
+frida:686	Salad dressing, soured fresh cream, low calorie	заправка из крем-фреш низкокалорийная
+frida:687	Eggs, chicken, yolk, dried	желток яичный сушёный
+frida:688	Baguette, wheat, fine, industrially produced	багет
+frida:69	Aubergine, raw	баклажан
+frida:691	Potato, canned	картофель консервированный
+frida:692	Brazil nuts, dried, raw	бразильский орех сушёный
+frida:693	Pork, ham, boiled, sliced	окорок варёный нарезанный
+frida:694	Charr, raw	голец ручьевой сырой
+frida:695	Meat balls, frozen	фрикадельки замороженные
+frida:696	Eggs, chicken, pasteurized	яйца пастеризованные
 frida:698	Liver, calf, raw	печень телячья сырая
+frida:699	Veal, lean meat, raw	телятина постная сырая
+frida:70	Orange, raw	апельсин
+frida:700	Halibut, atlantic, smoked	палтус белокорый копчёный
+frida:701	Wheat bread, for toasting, industrially produced	хлеб тостовый
+frida:702	Pig, fat, raw	свиной шпик сырой
+frida:703	Blackberry, frozen, unsweetened	ежевика замороженная без сахара
 frida:704	Coconut meat, desiccated	кокосовая стружка сушёная
+frida:707	Sweetbread, lamb, raw	тимус бараний сырой
+frida:708	Chicken, hen, flesh only	кура без кожи сырая
+frida:709	Currant, red, jelly	желе из красной смородины
+frida:71	Lamb, leg, unspecified , raw	баранья нога сырая
+frida:711	Halibut, atlantic, raw	палтус белокорый сырой
+frida:712	Liver, broiler or fryer, raw	печень куриная сырая
+frida:713	Trout, raw	форель морская
+frida:714	Sweet potato, raw	батат
+frida:715	Chard, swiss, raw	мангольд
+frida:716	Onion, raw	лук репчатый
+frida:718	Strawberry, jam	варенье клубничное
+frida:719	Sapodilla, raw	чику
+frida:72	Cod, fillet, raw	филе трески сырое
+frida:720	Coffee, instant, powder	кофе растворимый порошковый
+frida:721	Cheese, hard, Parmesan, grated	пармезан тёртый
+frida:722	Rolls, wheat with coarse meal, industrially produced	булочка пшеничная грубого помола
+frida:724	Pork, ham, topside (M. Semimembranosus), lean, raw	окорок свиной постный из внутренней части бедра сырой
+frida:726	Cherry, canned in sugar	вишня консервированная в сиропе
+frida:727	Cod, fillet, fried	филе трески жареное
+frida:728	Duck, flesh only, raw	утка без кожи сырая
+frida:729	Turkey, breast, boiled/smoked, sliced	грудка индейки варёно-копчёная нарезанная
+frida:73	Cheese, semihard, Feta, 40 % fidm	сыр фета 40 %
+frida:730	Pizza with tuna, frozen	пицца с тунцом замороженная
+frida:731	Cream pastry, marzipan- and cocoa-covered	кремовое пирожное в марципане и какао
+frida:732	Turkey, flesh only, raw	индейка без кожи сырая
+frida:734	Pork, ham, silverside (M. Semitendinosus), lean, raw	окорок свиной постный из полусухожильной мышцы сырой
+frida:735	Loganberries, frozen	малина логанова замороженная
+frida:736	Rye bread, with siftings (soft) and high fat seeds, industrially produced	хлеб ржаной мягкий с семечками
+frida:737	Lump, lumpsucker, raw	пинагор сырой
+frida:738	Duck, breast, flesh only, raw	грудка утиная сырая
+frida:739	Pork, loin, lean, raw	корейка свиная постная сырая
+frida:74	Pork, collar with rind, raw	шея свиная со шкурой сырая
+frida:740	Onions, spring, raw	лук зелёный
+frida:742	Liver, ox, raw	печень говяжья сырая
+frida:743	Pork, loin fillet, smoked	филе свиное копчёное
+frida:744	Pastry, napoleon hat	пирожное шляпа Наполеона
+frida:745	Wheat bread, with coarse meal, for toasting, industrially produced	хлеб тостовый грубого помола
+frida:746	Pork, ham, silverside (M. Biceps Femoris), lean, raw	окорок свиной постный из внешней части бедра сырой
+frida:747	Liver, duck, raw	печень утиная сырая
+frida:748	Marzipanproduct, chocolatecover, average values	марципан в шоколаде
+frida:749	Pork, saddle, smoked, raw	корейка свиная копчёная сырая
+frida:750	Pork, saddle, smoked, boiled	корейка свиная копчёная варёная
+frida:751	Tuna, in tomato sauce, canned	тунец в томатном соусе консервированный
+frida:752	Cabbage, savoy, raw	капуста савойская
+frida:753	Asparagus, all types, raw	спаржа
 frida:754	Chicken, breast, boiled, sliced	куриная грудка варёная нарезанная
+frida:756	Lemon peel, raw	цедра лимона
+frida:757	Pistachio nuts, dry roasted with salt	фисташки жареные сухие с солью
+frida:76	Rice groats, brown, raw	рис для каши бурый сырой
+frida:760	Cherry juice, concentrated, sugar added	сок вишнёвый концентрированный с сахаром
+frida:761	Currant, red, juice, concentrated, sugar added	сок красной смородины концентрированный с сахаром
+frida:762	Raspberry juice, concentrated, sugar added	сок малиновый концентрированный с сахаром
+frida:763	Strawberry juice, concentrated, sugar added	сок клубничный концентрированный с сахаром
+frida:764	Beans, green, raw	фасоль стручковая
+frida:765	Dill weed, dried	укроп сушёный
+frida:766	Bread, white, for sausages	булочка для хот-дога
+frida:767	Celeriac, celery leaves, raw	листья сельдерея
+frida:768	Whitefish, raw	сиг
+frida:769	Lingonberry, raw	брусника
+frida:77	Sugar, sucrose, white	сахар
+frida:770	Beef, topside, cap off, raw	говядина внутренняя часть бедра без жировой кромки сырая
+frida:771	Pork, tenderloin, trimmed, raw	вырезка свиная зачищенная сырая
+frida:772	Crispbread, knackebrot, wheat, fine	хлебцы пшеничные тонкие
+frida:773	Hare, raw	заяц сырой
+frida:774	Rainbow trout, raw	форель радужная
+frida:775	Coriander seed	семена кориандра
+frida:776	Heart, chicken, raw	сердце куриное сырое
+frida:777	Pork, meat, lean, approx. 3 % fat, raw	свинина постная сырая
+frida:778	Cod, roe, raw	икра трески сырая
+frida:78	Lard, pork, refined, Raffinol	смалец рафинированный
+frida:781	Liver, pig, raw	печень свиная сырая
+frida:783	Crab claws, meat, raw	мясо крабовых клешней сырое
+frida:784	Crab claws, meat, canned	мясо крабовых клешней консервированное
+frida:785	Turkey, flesh and skin, raw	индейка с кожей сырая
+frida:786	Bread, white, coarse grain	хлеб грубый белый
+frida:787	Marzipan	марципан
+frida:789	Pork, hand, lean, raw	лопатка свиная постная сырая
+frida:79	Lard, pork	смалец
+frida:790	Wheat bread, white, with cracked chestnuts	хлеб пшеничный с каштанами
+frida:791	Elderberry, juice, concentrated, sugar added	сок бузины концентрированный с сахаром
+frida:793	Fennel seed	семена фенхеля
+frida:794	Marmalade, English type	мармелад английский
+frida:795	Chicken, flesh only, raw	курица без кожи сырая
+frida:796	Lamb, leg, trimmed, raw	баранья нога зачищенная сырая
+frida:797	Whale meat, raw	китовое мясо сырое
+frida:798	Veal, thin fat, raw	телятина нежирная сырая
+frida:799	Cauliflower, Danish, raw	цветная капуста датская
+frida:8	Parsley, raw	петрушка
+frida:800	Crab, boiled	краб варёный
+frida:801	Potato, boiled	картофель варёный
+frida:802	Ptarmigan, flesh, raw	куропатка белая сырая
+frida:803	Marmalade, apricot	мармелад абрикосовый
+frida:804	Chocolate, milk, with nuts	шоколад молочный с орехами
+frida:805	Beef, rumpsteak, cap off, raw	ромштекс без жировой кромки сырой
+frida:806	Pine nuts, dried	кедровые орехи сушёные
+frida:807	Rabbit, flesh only, raw	кролик сырой
+frida:808	Pepper, hot chili, raw	перец чили
+frida:81	Water, bottled, carbonated	вода минеральная газированная
+frida:812	Seal meat, loin, raw	вырезка тюленя сырая
+frida:813	Baguette, with rye, industrially produced	багет с ржаной мукой
+frida:815	Cashew nuts, dry roasted	кешью жареные сухие
+frida:816	Rolls, italien type, industrially produced	булочка итальянская промышленная
+frida:818	Beef, meat, lean (<5 % fat), raw	говядина постная сырая
+frida:819	Beef, thick flank (top rump), cap off, raw	говядина толстая часть бедра без жировой кромки сырая
+frida:821	Caviar, made from capelin roe	икра мойвы
+frida:823	Breakfast cereal, Guldkorn	злаковый завтрак Guldkorn
+frida:824	Leek, raw	лук-порей сырой
+frida:825	Tuna, in water, canned	тунец в собственном соку консервированный
+frida:827	Cream pastry, cream puff	кремовое пирожное с заварным кремом
+frida:828	Roastbeef, sliced	ростбиф нарезанный
+frida:830	Cream pastry, average values	кремовое пирожное
+frida:831	Beef, tenderloin, defatted, raw	вырезка говяжья зачищенная сырая
+frida:832	Mutton, round, raw	баранина нога сырая
+frida:833	Dried fig spread	паста из инжира
+frida:835	Coriander, leaf, dried	кориандр сушёный
+frida:836	Wheat bread, with whole kernels	хлеб пшеничный трёхзерновой
+frida:837	Rye bread, fine with wheat flour and high fat seeds, industrially produced	хлеб ржано-пшеничный с семечками
+frida:838	Rolls, white, industrially produced	булочка белая
+frida:839	Potato crisps	чипсы картофельные
+frida:840	Marmalade, orange	мармелад апельсиновый
+frida:841	Pork, hind leg without rind, raw	окорок свиной без шкуры сырой
+frida:842	Lake trout, raw	форель озёрная
+frida:843	Spinach, chopped, frozen	шпинат рубленый замороженный
+frida:844	Pheasant, flesh only, raw	фазан сырой
+frida:845	Yam, raw	ямс
+frida:846	Potato, new (May to September), raw	картофель молодой
+frida:847	Hamburger sandwich with salad and dressing, fast food	сэндвич с котлетой, салатом и соусом (фастфуд)
+frida:848	Egg, duck, whole, raw	яйцо утиное сырое
+frida:85	Fish oil, hydrogenated	жир рыбий гидрогенизированный
+frida:854	Tongue, pig, raw	язык свиной сырой
+frida:855	Marmalade, kiwi	мармелад киви
+frida:856	Tongue, pig, cured	язык свиной солёный
+frida:859	Dried fruits spread, average values	паста из сухофруктов
+frida:860	Squab (pigeon), flesh, raw	голубь мясо сырое
+frida:861	Bread, white	хлеб французский
+frida:862	Currant, black, juice, concentrated, sugar added	сок чёрной смородины концентрированный с сахаром
+frida:863	Wheat bread, white, with walnuts	хлеб пшеничный с грецкими орехами
+frida:864	Nut, pea, oilroasted and salted	арахис жареный в масле с солью
+frida:866	Sprat, raw	килька сырая
+frida:867	Coriander, leaf, raw	кориандр
+frida:868	Bamboo shoots, canned, salted	побеги бамбука консервированные солёные
+frida:869	Bamboo shoots, canned, nonsalted	побеги бамбука консервированные несолёные
+frida:87	Goose, flesh and skin, raw	гусь с кожей сырой
+frida:870	Beef, shin + leg (shank), raw	голяшка говяжья сырая
+frida:871	Beef, striploin "cap off", raw	стриплойн без жировой кромки сырой
+frida:872	Dock (US), sorrel (UK), raw	щавель
+frida:874	Cheese, Quarg, 45 % fidm.	кварк 45 %
+frida:875	Egg, goose, whole, raw	яйцо гусиное сырое
+frida:876	Sugar, brown	сахар коричневый
+frida:877	Coffee, instant, decaffeinated, powder	кофе растворимый без кофеина порошковый
+frida:878	Asparagus, white, raw	спаржа белая
+frida:879	Beef, outside, round, raw	говядина внешняя часть бедра сырая
+frida:88	Nut, coco, raw	кокос
+frida:880	Raisin , seedless	изюм
+frida:881	Currant, black, jam	варенье из чёрной смородины
+frida:882	Chicken, leg, flesh and skin, raw	голень куриная с кожей сырая
+frida:884	Marmalade, black currant	мармелад из чёрной смородины
+frida:886	Chicken, drumstick, flesh and skin, raw	бедро куриное с кожей сырое
+frida:887	Baguette, wheat with rye, high fat seeds, industrially produced	багет с семечками
+frida:888	Kale, frozen	кале замороженный
+frida:889	Chervil, chopped, frozen	кервель рубленый замороженный
+frida:89	Snacks, expanded, potatobasis	снеки картофельные
+frida:891	Beef, eye of round, raw	округлая часть говяжьего бедра сырая
+frida:892	Cooking banana, Plantain, raw	банан плантайн
+frida:894	Chewing gum, sugar added, all types	жвачка с сахаром
+frida:895	Cherimoya, raw	черимойя
+frida:896	Halibut, greenland, gravad	палтус чёрный гравлакс
+frida:897	Halibut, greenland, raw	палтус чёрный сырой
+frida:898	Crispbread, wheat	хлебцы пшеничные
+frida:899	Wheat bread, sandwich/toast type, high fat seeds, industrially produced	хлеб тостовый с семечками
+frida:9	Pear, raw	груша
+frida:90	Mackerel mayonnaise salad	салат из скумбрии с майонезом
+frida:900	Pork, sausage, frankfurter, canned	сосиски венские консервированные
+frida:902	Dogfish, piked, raw	катран
+frida:903	Sweets, boiled	леденцы ассорти
+frida:904	Tuna, raw	тунец сырой
+frida:905	Turkey, mince, 0-5% fat, raw	фарш индейки 0-5 % жирности сырой
+frida:906	Liqueur, coffee with cream	ликёр кофейный со сливками
+frida:907	Chicken, breast, flesh and skin, raw	грудка куриная с кожей сырая
+frida:908	Wiener nougat	нуга венская
+frida:909	Beef, meat, 5-10 % fat, raw	говядина 5-10 % жирности сырая
+frida:911	Tongue, ox, raw	язык говяжий сырой
+frida:913	Tongue, calf, cured	язык телячий солёный
+frida:914	Broccoli, boiled	брокколи варёная
+frida:915	Marmalade, all types	мармелад
+frida:916	Marmalade, cherry	мармелад вишнёвый
+frida:917	Herring, breaded, fried, in vinegar with sugar	сельдь в панировке жареная в маринаде
+frida:92	Soya sauce	соевый соус
+frida:921	Salmon, Atlantic, wild, canned	сёмга дикая консервированная
+frida:922	Tomato ketchup, hot, bottled	кетчуп томатный острый
+frida:923	Horse, meat, raw	конина сырая
+frida:924	Sardine, in tomato sauce, canned	сардины в томатном соусе консервированные
+frida:925	Chicken, sausage	колбаса куриная
+frida:927	Mushroom, canned	шампиньоны консервированные
+frida:929	Wheat bread, white, with sunflower kernels	хлеб пшеничный с семечками подсолнечника
+frida:930	Chives, raw	лук-резанец
+frida:932	Kumquats, raw	кумкват
+frida:933	Tongue, calf, raw	язык телячий сырой
+frida:935	Pork, ham, silverside, 2 mm fat, raw	оковалок свиной с шпиком 2 мм сырой
+frida:936	Pork, ham, spiced, deboned	окорок пряный без кости
+frida:937	Parsnip, raw	пастернак сырой
+frida:938	Potato, automn (October to January), raw	картофель осенний
+frida:939	Cassava, raw	кассава
+frida:94	Cheese, firm, 40 % fidm., all varieties	сыр твёрдый 40 %
+frida:940	Beef, topside "cap on", raw	говядина внутренняя часть бедра с жировой кромкой сырая
+frida:942	Beef, mince, 10-15% fat, raw	фарш говяжий 10-15 % жирности сырой
+frida:943	Chewing gum, no sugar added, all types	жвачка без сахара
+frida:944	Beef, neck, raw	шея говяжья сырая
+frida:945	Pork, mince, 5-10% fat, raw	фарш свиной 5-10 % жирности сырой
+frida:946	Potato, old (February to June), raw	картофель старый
+frida:948	Bacalao, cod, split, salted and dried, raw	клипфиск сырой
+frida:949	Pork, collar, defatted, raw	шея свиная зачищенная сырая
+frida:95	Ymer, low fat	юмер нежирный
+frida:950	Jerusalem artichoke, raw	топинамбур
+frida:952	Liqueur, coffee	ликёр кофейный
+frida:955	Goose, flesh only, raw	гусь без кожи сырой
+frida:956	Bread, white, roll	булочка испанская
+frida:957	Kale, canned	кале консервированный
+frida:958	Spinach, canned	шпинат консервированный
+frida:959	Chicken, flesh and skin, raw	курица с кожей сырая
+frida:960	Mackerel, in tomato sauce, canned	скумбрия в томатном соусе консервированная
+frida:961	Mushroom, raw	шампиньоны
+frida:962	Swiss roll, apricot stuffing	рулет абрикосовый
+frida:966	Beef, rumpsteak "cap on", raw	ромштекс с жировой кромкой сырой
+frida:967	Biscuit, sweet	печенье мария
+frida:969	Cress, garden, raw	кресс-салат
+frida:97	Cheese, semihard, Mozzarella, 45 % fidm.	сыр моцарелла 45 %
+frida:970	Bean sprouts, mung, raw	ростки маш
+frida:971	Liquorice, sweet	лакрица сладкая
+frida:972	Marmalade, raspberry	мармелад малиновый
+frida:973	Pork, ham, silverside with rind, raw	оковалок свиной со шкурой сырой
+frida:975	Herring, pickled, canned	сельдь маринованная кусочками
+frida:976	Parsley root, raw	корень петрушки
+frida:977	Whey, sweet, dried	сыворотка сладкая сухая
+frida:978	Bean sprouts, average values, raw	ростки бобовых
+frida:979	Margarine, 30 % fat, vegetable fat	маргарин растительный 30 %
+frida:98	Cheese, processed, 45 % fidm.	сыр плавленый 45 %
+frida:980	Beef, shoulder, ventral part	плечевая часть говяжья нижняя сырая
+frida:981	Cod, roe, smoked	икра трески копчёная
+frida:982	Pork, sausage, Danish, raw	колбаса медистер сырая
+frida:984	Veal, medium fat, raw	телятина средней жирности сырая
+frida:985	Pork, hand with rind, raw	лопатка свиная со шкурой сырая
+frida:986	Blended spread, 80% fat	спред масляный 80 %
+frida:987	Marshmellows, unspecified	маршмеллоу
+frida:988	Pork, meat, approx. 10 % fat, raw	свинина 10 % жирности сырая
+frida:989	Pork, brawn, head cheese	зельц свиной
+frida:990	Chicken, wing, flesh and skin, raw	крыло куриное с кожей сырое
+frida:991	Wheat bread, high fat seeds, industrially produced	хлеб пшеничный с семечками
+frida:993	Sprat (sardine), in tomato sauce, canned	шпроты в томатном соусе
+frida:994	Lamb, shoulder, raw	лопатка баранья сырая
+frida:995	Pheasant, flesh and skin, raw	фазан с кожей сырой
+frida:997	Marmalade, strawberry	мармелад клубничный
+frida:998	Salmon, Atlantic, wild, cold smoked	сёмга дикая холодного копчения
 matvaretabellen:02.026	Egg, boiled	яйцо варёное
 matvaretabellen:03.139	Beef, minced meat, max 6 % fat, fried without fat	фарш говяжий постный жареный без масла
 matvaretabellen:03.208	Pork, inside round, raw	свинина внутренний окорок сырой
