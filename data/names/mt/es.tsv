@@ -30678,20 +30678,1066 @@ recipe:tvorog	Tvorog	tvorog
 recipe:tvorog.ru	Творог	tvorog
 recipe:vareniki	Vareniki, potato filling	vareniki de patata
 recipe:vareniki.ru	Вареники с картофелем	vareniki de patata
+tfda:A0100101	大麥仁	cebada
+tfda:A0110101	大麥片	copos de cebada
+tfda:A0120101	大麥仁粉	harina de cebada
+tfda:A0200101	小米	mijo
+tfda:A0200102	小米(2025年取樣)	mijo
+tfda:A0200201	糯小米	mijo glutinoso
+tfda:A0300101	小麥	trigo (grano)
+tfda:A0310101	小麥胚芽	germen de trigo
+tfda:A0320101	去筋麵粉	almidón de trigo
+tfda:A0320202	低筋麵粉	harina floja
+tfda:A0320301	中筋麵粉	harina de fuerza media
+tfda:A0320404	高筋麵粉	harina de fuerza
+tfda:A0320405	高筋麵粉(2021年取樣)	harina de fuerza
+tfda:A0320505	全麥麵粉	harina integral de trigo
+tfda:A0320601	雜糧中筋麵粉	harina multicereales de fuerza media
+tfda:A0320702	雜糧高筋麵粉	harina multicereales de fuerza
+tfda:A0400101	白玉米	maíz blanco
+tfda:A0400201	糯玉米(紫色)	maíz glutinoso morado
+tfda:A0400301	甜玉米	maíz dulce
+tfda:A0400401	雙色水果玉米	maíz dulce bicolor
+tfda:A0400501	糯玉米(雙色)	maíz glutinoso bicolor
+tfda:A0400601	冷凍玉米粒	maíz en grano congelado
+tfda:A0410101	乾玉米粒	maíz en grano seco
+tfda:A0410201	玉米胚芽	germen de maíz
+tfda:A0420101	玉米粉	maicena
+tfda:A0500101	秈米(台中在來2號)	arroz largo (variedad Taichung Tsailai 2)
+tfda:A0500102	秈米(台中秈10號)	arroz largo (variedad Taichung Sen 10)
+tfda:A0500103	秈米(台中秈10號)(2024年取樣)	arroz largo (variedad Taichung Sen 10)
+tfda:A0500201	稉米(台中189號)	arroz redondo (variedad Taichung 189)
+tfda:A0500202	稉米(台南11號)	arroz redondo (variedad Tainan 11)
+tfda:A0500203	稉米(台稉2號)	arroz redondo (variedad Taigeng 2)
+tfda:A0500204	稉米(台稉8號)	arroz redondo (variedad Taigeng 8)
+tfda:A0500205	稉米(台稉9號)	arroz redondo (variedad Taigeng 9)
+tfda:A0500206	稉米(台農71號)	arroz redondo (variedad Tainung 71)
+tfda:A0500207	稉米(高雄139號)	arroz redondo (variedad Kaohsiung 139)
+tfda:A0500208	稉米(高雄142號)	arroz redondo (variedad Kaohsiung 142)
+tfda:A0500209	稉米(高雄145號)	arroz redondo (variedad Kaohsiung 145)
+tfda:A0500210	稉米(高雄139號)(2021年取樣)	arroz redondo (variedad Kaohsiung 139)
+tfda:A0500211	稉米(高雄147)	arroz redondo (variedad Kaohsiung 147)
+tfda:A0500301	越光米	arroz koshihikari
+tfda:A0500302	越光米(台南16號)(2024年取樣)	arroz koshihikari (variedad Tainan 16)
+tfda:A0500401	秈型糯米(台中糯70號)	arroz glutinoso largo (variedad Taichung Nuo 70)
+tfda:A0500402	秈型糯米(2025年取樣)	arroz glutinoso largo
+tfda:A0500501	稉型糯米	arroz glutinoso redondo
+tfda:A0500502	稉型糯米(台稉糯1號)	arroz glutinoso redondo (variedad Taigeng Nuo 1)
+tfda:A0500503	稉型糯米(2025年取樣)	arroz glutinoso redondo
+tfda:A0500601	野生紅米	arroz rojo silvestre
+tfda:A0500701	紅糯糙米	arroz rojo glutinoso integral
+tfda:A0500801	黑秈糯糙米	arroz largo negro glutinoso integral
+tfda:A0500802	黑秈糯糙米(2025年取樣)	arroz largo negro glutinoso integral
+tfda:A0500901	胚芽秈米(台中秈10號)	arroz largo con germen (variedad Taichung Sen 10)
+tfda:A0501001	胚芽稉米(台稉10號）	arroz redondo con germen (variedad Taigeng 10)
+tfda:A0501002	胚芽稉米(台稉9號)	arroz redondo con germen (variedad Taigeng 9)
+tfda:A0501103	發芽稉米(台稉71號)	arroz redondo germinado (variedad Taigeng 71)
+tfda:A0501104	發芽稉米(台稉9號）	arroz redondo germinado (variedad Taigeng 9)
+tfda:A0501201	糙秈米	arroz largo integral
+tfda:A0501301	糙稉米(台稉71號)	arroz redondo integral (variedad Taigeng 71)
+tfda:A0501302	糙稉米(台稉9號)	arroz redondo integral (variedad Taigeng 9)
+tfda:A0501303	糙稉米(台中194)	arroz redondo integral (variedad Taichung 194)
+tfda:A0501401	黑秈糙米	arroz largo negro integral
+tfda:A0510101	加鈣米	arroz enriquecido con calcio
+tfda:A0510201	高纖米	arroz rico en fibra
+tfda:A0510301	五穀米	mezcla de cinco cereales
+tfda:A0510401	米胚芽	germen de arroz
+tfda:A0520201	秈米粉	harina de arroz largo
+tfda:A0520301	糙米粉	harina de arroz integral
+tfda:A0520401	白糯米粉	harina de arroz glutinoso
+tfda:A0550601	白飯	arroz cocido
+tfda:A0600101	高梁	sorgo
+tfda:A0600201	糯高梁	sorgo glutinoso
+tfda:A0710101	黑麥片	copos de centeno
+tfda:A0800101	燕麥	avena
+tfda:A0810101	燕麥片	copos de avena
+tfda:A0810201	即食燕麥片	copos de avena instantáneos
+tfda:A0900101	蕎麥(甜蕎)	alforfón
+tfda:A0900102	蕎麥(甜蕎)(2025年取樣)	alforfón
+tfda:A1000101	薏仁	lágrimas de Job (adlay)
+tfda:A1000102	薏仁(2025年取樣)	lágrimas de Job (adlay)
+tfda:A1000201	糙薏仁	lágrimas de Job integrales
+tfda:A1020101	薏仁粉	harina de adlay
+tfda:A1100101	紅藜麥	quinoa roja
+tfda:A1100201	台灣藜(紅)(帶殼)	quinoa de Taiwán roja con cáscara
+tfda:B0100101	淮山	ñame chino seco
+tfda:B0100201	山藥(二刺)	ñame chino (variedad Erci)
+tfda:B0100202	山藥(大汕1號)	ñame chino (variedad Dashan 1)
+tfda:B0100203	山藥(大汕3號)	ñame chino (variedad Dashan 3)
+tfda:B0100204	山藥(大刺)	ñame chino (variedad Daci)
+tfda:B0100205	山藥(中國長品)	ñame chino (variedad china larga)
+tfda:B0100206	山藥(台農1號)	ñame chino (variedad Tainung 1)
+tfda:B0100207	山藥(台農2號)	ñame chino (variedad Tainung 2)
+tfda:B0100208	山藥(白皮削)	ñame chino (de piel blanca)
+tfda:B0100209	山藥(尖石原生種)	ñame chino (variedad autóctona de Jianshi)
+tfda:B0100210	山藥(宜蘭原生種)	ñame chino (variedad autóctona de Yilan)
+tfda:B0100211	山藥(花蓮3號)	ñame chino (variedad Hualien 3)
+tfda:B0100212	山藥(青森)	ñame chino (variedad Aomori)
+tfda:B0100213	山藥(高田)	ñame chino (variedad Gaotian)
+tfda:B0100214	山藥(白肉)	ñame chino (de pulpa blanca)
+tfda:B0200301	紫山藥	ñame chino morado
+tfda:B0320101	木薯粉	tapioca
+tfda:B0400101	白皮甘藷	boniato de piel blanca
+tfda:B0400201	菱角牛奶甘藷	boniato (variedad trapa lechosa)
+tfda:B0400301	芋心甘藷	boniato (variedad taro)
+tfda:B0400401	紅肉甘藷	boniato de pulpa roja
+tfda:B0400501	金時甘藷	boniato kintoki
+tfda:B0400601	黃肉甘藷	boniato de pulpa amarilla
+tfda:B0420101	甘藷粉	almidón de boniato
+tfda:B0450101	油炸脫水甘藷	boniato frito deshidratado
+tfda:B0500101	芋頭	taro
+tfda:B0500201	小芋頭(山芋)	taro pequeño
+tfda:B0500301	檳榔心芋	taro «corazón de betel»
+tfda:B0500302	檳榔心芋(2021年取樣)	taro «corazón de betel» (2021)
+tfda:B0500401	冷凍芋頭塊	taro congelado en trozos
+tfda:B0520101	芋頭粉	almidón de taro
+tfda:B0600101	豆薯	jícama
+tfda:B0700101	紅馬鈴薯(粉紅珍珠馬鈴薯)	patata «perla rosa»
+tfda:B0700201	馬鈴薯	patata
+tfda:B0700202	馬鈴薯(2022年取樣)	patata
+tfda:B0700301	小馬鈴薯(珍珠馬鈴薯)	patata pequeña
+tfda:B0720101	馬鈴薯粉	almidón de patata
+tfda:B0800101	荸薺	castaña de agua
+tfda:B0800102	荸薺(2025年取樣)	castaña de agua (2025)
+tfda:B0820101	荸薺粉	almidón de castaña de agua
+tfda:B0900101	蓮藕	raíz de loto
+tfda:B0900201	熟蓮藕	raíz de loto cocida
+tfda:B0900202	熟蓮藕切片(水煮)	raíz de loto hervida en rodajas
+tfda:B0920101	蓮藕粉	almidón de raíz de loto
+tfda:B1000101	菱角(生)	castaña de agua (trapa) cruda
+tfda:B1000201	菱角仁(生)	castaña de agua (trapa) pelada cruda
+tfda:B1000301	菱角(熟)	castaña de agua (trapa) cocida
+tfda:B9900201	蒟蒻粉	harina de konjac
+tfda:C0105101	甘扁桃仁片(生)	láminas de almendra crudas
+tfda:C0110101	甘扁桃仁片(熟)	láminas de almendra tostadas
+tfda:C0110201	甘扁桃仁(熟)	almendra tostada
+tfda:C0205101	松子仁(生)	piñones crudos
+tfda:C0210101	原味松子仁	piñones
+tfda:C0310101	原味夏威夷豆	macadamia
+tfda:C0405101	生核桃	nueces crudas
+tfda:C0500101	栗子(生)	castañas crudas
+tfda:C0500202	栗子仁(生)	castañas peladas crudas
+tfda:C0710101	開心果	pistachos
+tfda:C0805101	腰果(生)	anacardos crudos
+tfda:C0810101	原味腰果	anacardos
+tfda:C0905101	原味榛果	avellanas
 tfda:C1005101	山粉圓	perlas de semilla de albahaca
+tfda:C1305101	亞麻仁籽	semillas de lino
+tfda:C1320101	亞麻仁籽粉	harina de lino
+tfda:C1410101	咖啡豆(曼特寧)	café en grano mandheling
+tfda:C1505101	奇亞子	semillas de chía
+tfda:C1605101	白芝麻(生)	sésamo blanco crudo
+tfda:C1605102	黑芝麻(生)	sésamo negro crudo
+tfda:C1605103	黑芝麻(生)(2025取樣)	sésamo negro crudo
+tfda:C1610101	白芝麻(熟)	sésamo blanco tostado
+tfda:C1610102	白芝麻(熟)2022年取樣)	sésamo blanco tostado
+tfda:C1610201	黑芝麻(熟)	sésamo negro tostado
+tfda:C1610202	黑芝麻(熟)(2022年取樣)	sésamo negro tostado
+tfda:C1620101	黑芝麻粉	harina de sésamo negro
+tfda:C1700101	帶殼花生(生)	cacahuetes con cáscara crudos
+tfda:C1700201	冷凍帶殼花生(熟)	cacahuetes con cáscara cocidos congelados
+tfda:C1700301	黑金剛花生(生)	cacahuetes «diamante negro» crudos
+tfda:C1705101	帶膜花生仁(生)(1995年之前取樣)	cacahuetes pelados con piel crudos
+tfda:C1705201	去膜花生仁(生)	cacahuetes pelados sin piel crudos
+tfda:C1705301	帶膜花生仁(生)(2004年取樣)	cacahuetes pelados con piel crudos
+tfda:C1710101	紅土帶殼花生(熟)	cacahuetes con cáscara tostados en arcilla roja
+tfda:C1720101	花生粉	harina de cacahuete
+tfda:C1800101	芡實	semillas de euriale (makhana)
+tfda:C2005101	愛玉子	semillas de aiyu
+tfda:C2110101	原味葵瓜子(去殼)	pipas de girasol peladas
+tfda:C2200101	銀杏果	nueces de ginkgo
+tfda:C2300101	蓮子	semillas de loto
+tfda:C2305101	蓮子(乾)	semillas de loto secas
+tfda:D0100101	山竹	mangostán
+tfda:D0200101	木瓜(2月取樣)	papaya (cosecha: febrero)
+tfda:D0200102	木瓜(5月取樣)	papaya (cosecha: mayo)
+tfda:D0200103	木瓜(8月取樣)	papaya (cosecha: agosto)
+tfda:D0200104	木瓜(11月取樣)	papaya (cosecha: noviembre)
+tfda:D0200201	青木瓜	papaya verde
+tfda:D0300101	安石榴	granada
+tfda:D0400101	百香果(台農一號)	maracuyá (variedad Tainung 1)
+tfda:D0430101	百香果汁	zumo de maracuyá
+tfda:D0500101	金黃奇異果	kiwi amarillo
 tfda:D0500201	奇異果	kiwi
+tfda:D0600101	紅毛丹	rambután
+tfda:D0700101	紅龍果(白肉)	pitahaya de pulpa blanca
+tfda:D0700201	紅龍果(紅肉)	pitahaya de pulpa roja
+tfda:D0800101	北蕉(2月取樣)	banana beijiao (cosecha: febrero)
+tfda:D0800102	北蕉(5月取樣)	banana beijiao (cosecha: mayo)
+tfda:D0800103	北蕉(9月取樣)	banana beijiao (cosecha: septiembre)
+tfda:D0800104	北蕉(11月取樣)	banana beijiao (cosecha: noviembre)
+tfda:D0800201	北蕉(0天,綠皮)	banana beijiao (verde, sin maduración)
+tfda:D0800301	北蕉(1天)	banana beijiao (1 día de maduración)
+tfda:D0800401	北蕉(3天)	banana beijiao (3 días de maduración)
+tfda:D0800501	北蕉(7天)	banana beijiao (7 días de maduración)
+tfda:D0800601	李林蕉(2007年取樣)	banana lilín
+tfda:D0800602	李林蕉(2012年取樣)	banana lilín
+tfda:D0800701	南華蕉	plátano macho
+tfda:D0800801	紅皮蕉(2004年取樣)	banana roja
+tfda:D0800802	紅皮蕉(2012年取樣)	banana roja
+tfda:D0801101	蛋蕉(2023年取樣)	banana «huevo» (kluai khai)
+tfda:D0900101	酪梨(綠皮)	aguacate de piel verde
+tfda:D0900201	酪梨(室溫存放0天)	aguacate (sin maduración)
+tfda:D0900301	酪梨(室溫存放3天)	aguacate (3 días de maduración)
+tfda:D0900401	酪梨(室溫存放6天)	aguacate (6 días de maduración)
+tfda:D1000101	榴槤	durián
+tfda:D1100101	開英種1號鳳梨	piña (variedad Kaiying 1)
+tfda:D1100201	甘蔗鳳梨	piña (variedad caña de azúcar)
+tfda:D1100202	甜蜜蜜鳳梨	piña (variedad miel)
+tfda:D1100203	金鑽鳳梨	piña (variedad diamante dorado)
+tfda:D1100204	牛奶鳳梨	piña (variedad lechosa)
+tfda:D1200101	釋迦	anona
+tfda:D1200201	鳳梨釋迦	atemoya
+tfda:D1300101	桑葚	mora de morera
+tfda:D1330101	桑葚汁	zumo de mora de morera
+tfda:D1400101	草莓	fresa
+tfda:D1500101	土芭樂	guayaba local
+tfda:D1500201	番石榴(珍珠拔)(有機)	guayaba «perla» ecológica
+tfda:D1500202	世紀芭樂	guayaba (variedad siglo)
+tfda:D1500203	珍珠芭樂	guayaba «perla»
+tfda:D1500204	泰國芭樂	guayaba tailandesa
+tfda:D1500205	無子芭樂	guayaba sin semillas
+tfda:D1500301	紅心芭樂	guayaba de pulpa rosa
+tfda:D1600101	楊桃(2月取樣)	carambola (cosecha: febrero)
+tfda:D1600102	楊桃(4月取樣)	carambola (cosecha: abril)
+tfda:D1600103	楊桃(5月取樣)	carambola (cosecha: mayo)
+tfda:D1600104	楊桃(9月取樣)	carambola (cosecha: septiembre)
+tfda:D1600105	楊桃(11月取樣)	carambola (cosecha: noviembre)
+tfda:D1700101	美國紅葡萄	uva roja americana
+tfda:D1700201	巨峰葡萄	uva kyoho
+tfda:D1700301	美國綠葡萄	uva verde americana
+tfda:D1700302	意大利葡萄	uva italiana
+tfda:D1700401	美國紅葡萄(含皮)	uva roja americana con piel
+tfda:D1700501	美國紫葡萄(含皮)	uva morada americana con piel
+tfda:D1700601	美國黑葡萄(含皮)	uva negra americana con piel
+tfda:D1700701	美國綠葡萄(含皮)	uva verde americana con piel
+tfda:D1700801	無子紅葡萄(含皮)	uva roja sin semillas con piel
+tfda:D1700901	黑美人葡萄(含皮)	uva «belleza negra» con piel
+tfda:D1701001	金香葡萄(含皮)	uva (variedad aroma dorado) con piel
+tfda:D1710101	葡萄乾	pasas
+tfda:D1800101	蓮霧(紅寶石)	jambo (variedad rubí)
+tfda:D1800102	蓮霧(黑金剛)	jambo (variedad diamante negro)
+tfda:D1800103	蓮霧(黑珍珠)	jambo (variedad perla negra)
+tfda:D1900101	華寶大西瓜(花蓮)	sandía (variedad Huabao, Hualien)
+tfda:D1900201	皇宮西瓜	sandía (variedad palacio)
+tfda:D1900202	紅鈴西瓜	sandía (variedad campana roja)
+tfda:D1900203	黑美人西瓜	sandía (variedad belleza negra)
+tfda:D1900204	鳳光西瓜	sandía (variedad Fengguang)
+tfda:D1900301	無籽西瓜	sandía sin semillas
+tfda:D1900401	小玉西瓜	sandía pequeña de pulpa amarilla
+tfda:D1900402	金蘭西瓜	sandía (variedad orquídea dorada)
+tfda:D1900501	嘉寶瓜	melón (variedad Jiabao)
+tfda:D2000101	太陽洋香瓜	melón (variedad sol)
+tfda:D2000102	狀元瓜	melón (variedad Zhuangyuan)
+tfda:D2000103	蜜世界洋香瓜	melón (variedad mundo de miel)
+tfda:D2000201	美濃瓜	melón (variedad Meinong)
+tfda:D2000202	黃香瓜	melón amarillo
+tfda:D2000203	嘉玉甜瓜	melón (variedad Jiayu)
+tfda:D2000301	洋香瓜(新世紀)	melón (variedad nuevo siglo)
+tfda:D2000302	新疆哈密瓜	melón Hami
+tfda:D2000303	洋香瓜(卡蜜拉)	melón (variedad Camila)
+tfda:D2000401	七股香洋香瓜	melón (variedad Qigu)
+tfda:D2000402	天香洋香瓜	melón (variedad Tianxiang)
+tfda:D2000403	秋香洋香瓜	melón (variedad Qiuxiang)
+tfda:D2000404	紅寶石洋香瓜	melón (variedad rubí)
+tfda:D2000405	香華洋香瓜	melón (variedad Xianghua)
+tfda:D2000406	藍寶石洋香瓜	melón (variedad zafiro)
+tfda:D2100101	土芒果	mango local
+tfda:D2100201	肯特芒果	mango (variedad Kent)
+tfda:D2100202	海頓芒果	mango (variedad Haden)
+tfda:D2100203	凱特芒果	mango (variedad Keitt)
+tfda:D2100204	愛文芒果	mango (variedad Irwin)
+tfda:D2100205	聖心芒果	mango (variedad corazón sagrado)
+tfda:D2100301	黑香芒果	mango (variedad fragancia negra)
+tfda:D2100401	四季芒果	mango (variedad cuatro estaciones)
+tfda:D2100402	玉文芒果	mango (variedad Yuwen)
+tfda:D2100403	金煌芒果	mango (variedad Jinhuang)
+tfda:D2100404	金蜜芒果	mango (variedad miel dorada)
+tfda:D2100405	金興芒果	mango (variedad Jinxing)
+tfda:D2100406	香水芒果	mango (variedad perfume)
+tfda:D2100407	蓮花芒果	mango (variedad loto)
+tfda:D2110101	芒果乾	mango seco
+tfda:D2200101	玉荷苞荔枝	litchi (variedad Yuhebao)
+tfda:D2200102	黑葉仔荔枝	litchi (variedad hoja negra)
+tfda:D2200201	冷凍荔枝	litchi congelado
+tfda:D2300101	龍眼	longán
+tfda:D2310101	龍眼乾	longán seco
+tfda:D2310201	帶殼龍眼乾	longán seco con cáscara
+tfda:D2400101	加州青李	ciruela verde californiana
+tfda:D2400102	翡翠李	ciruela (variedad jade)
+tfda:D2400201	紅肉李(大)	ciruela de pulpa roja (grande)
+tfda:D2400202	紅肉李(小)	ciruela de pulpa roja (pequeña)
+tfda:D2400301	加州紅李(台灣)	ciruela roja californiana (de Taiwán)
+tfda:D2400302	加州紅李(進口)	ciruela roja californiana (importada)
+tfda:D2400303	加州蜜李(進口)	ciruela miel californiana (importada)
+tfda:D2400304	香水李	ciruela (variedad perfume)
+tfda:D2400305	桃接李(大)	ciruela injertada en melocotón (grande)
+tfda:D2400306	桃接李(小)	ciruela injertada en melocotón (pequeña)
+tfda:D2400307	蜜棗李(進口)	ciruela «miel-dátil» (importada)
+tfda:D2400401	黃肉李	ciruela de pulpa amarilla
+tfda:D2400501	黑李	ciruela negra
+tfda:D2500101	枇杷	níspero
+tfda:D2600101	筆柿	caqui alargado
+tfda:D2700201	富有甜柿(大雪山)	caqui fuyu (Daxueshan)
+tfda:D2700202	甜柿(進口)	caqui dulce (importado)
+tfda:D2700203	國產甜柿	caqui dulce (local)
+tfda:D2700301	牛心柿	caqui «corazón de buey»
+tfda:D2700401	四周柿	caqui (variedad Sizhou)
+tfda:D2700501	柿餅	caqui seco en tortas
+tfda:D2800101	水蜜桃	melocotón
+tfda:D2800102	甜蜜桃	melocotón dulce
+tfda:D2800201	白油桃	nectarina de pulpa blanca
+tfda:D2800202	玫瑰桃	melocotón rosa
+tfda:D2800203	福壽桃	melocotón (variedad Fushou)
+tfda:D2800204	鶯哥桃	melocotón (variedad Yingge)
+tfda:D2800301	蟠桃	paraguayo
+tfda:D2900101	青梅(胭脂梅)	ume verde (variedad Yanzhi)
+tfda:D3000101	西洋梨(青皮)	pera de piel verde
+tfda:D3000102	西洋梨(紅皮)	pera de piel roja
+tfda:D3000103	西洋梨(黃皮)	pera de piel amarilla
+tfda:D3000201	幸水梨	pera nashi (variedad Kousui)
+tfda:D3000202	大雪梨	pera nashi (variedad Daxue)
+tfda:D3000203	新世紀梨	pera nashi (variedad nuevo siglo)
+tfda:D3000204	新興梨	pera nashi (variedad Xinxing)
+tfda:D3000205	橫山梨	pera nashi (variedad Hengshan)
+tfda:D3000206	豐水梨	pera nashi (variedad Housui)
+tfda:D3000301	將軍蜜梨	pera nashi (variedad general)
+tfda:D3000302	梨山蜜梨	pera nashi de miel (Lishan)
+tfda:D3100101	蜜棗(長形)	azufaifo indio alargado
+tfda:D3100102	蜜棗(圓形)	azufaifo indio redondo
+tfda:D3100201	珍珠蜜棗	azufaifo indio (variedad perla)
+tfda:D3100301	國產紅棗	azufaifa roja (local)
+tfda:D3100401	紅棗(乾)	azufaifa seca
+tfda:D3100402	黑棗(乾)	azufaifa negra ahumada seca
+tfda:D3200101	青龍蘋果	manzana verde (variedad dragón verde)
+tfda:D3200102	翠玉青蘋果	manzana verde (variedad jade)
+tfda:D3200201	翠玉青蘋果(帶皮)	manzana verde (variedad jade) con piel
+tfda:D3200301	美國五爪蘋果	manzana Red Delicious
+tfda:D3200401	加拉蘋果	manzana Gala
+tfda:D3200402	津輕蜜蘋果	manzana Tsugaru
 tfda:D3200403	秋香蘋果	manzana Qiuxiang
+tfda:D3200404	富士蘋果	manzana Fuji
+tfda:D3200501	富士蘋果(帶皮)	manzana Fuji con piel
+tfda:D3200601	金冠蘋果	manzana Golden
+tfda:D3300101	櫻桃	cereza
+tfda:D3300201	白櫻桃	cereza blanca
+tfda:D3400101	椪柑	mandarina ponkan
+tfda:D3400201	紅柑	mandarina roja
+tfda:D3400202	茂谷柑	mandarina murcott
+tfda:D3400203	海梨桶柑	mandarina tankan (variedad Haili)
+tfda:D3400204	高牆桶柑	mandarina tankan (variedad Gaoqiang)
+tfda:D3400205	檸檬柑	mandarina limón
+tfda:D3400206	砂糖橘	mandarina shatangju
+tfda:D3400301	長果金柑	kumquat oval
+tfda:D3400302	圓果金柑	kumquat redondo
+tfda:D3400303	圓果金柑汁(綠皮)	zumo de kumquat de piel verde
+tfda:D3500101	文旦	pomelo chino
+tfda:D3500102	文旦(2023年取樣)	pomelo chino (2023)
+tfda:D3500201	白柚	pomelo chino blanco
+tfda:D3500301	西施蜜柚	pomelo chino (variedad Xishi)
+tfda:D3600101	柳橙	naranja
+tfda:D3600102	香吉士(進口)	naranja Sunkist (importada)
+tfda:D3600103	澳洲甜橙(進口)	naranja australiana (importada)
+tfda:D3700101	青皮葡萄柚	pomelo de piel verde
+tfda:D3700201	紅寶石葡萄柚(古坑)	pomelo ruby (Gukeng)
+tfda:D3700301	黃皮葡萄柚(進口)	pomelo de piel amarilla (importado)
+tfda:D3700401	黃皮葡萄柚	pomelo de piel amarilla
+tfda:D3800101	檸檬	limón
+tfda:D3800201	萊姆	lima
+tfda:D3800301	檸檬汁(黃皮)	zumo de limón amarillo
+tfda:D3800302	檸檬汁(綠皮)	zumo de limón verde
+tfda:D3830102	萊姆汁	zumo de lima
+tfda:D3930101	紅甘蔗汁	zumo de caña de azúcar roja
+tfda:D3930102	紅甘蔗汁(有機,2023年取樣)	zumo de caña de azúcar roja ecológico
+tfda:D4000101	人心果	chicozapote
+tfda:D4130101	可可椰子汁(屏東)	agua de coco (Pingtung)
+tfda:D4130102	可可椰子汁(進口)	agua de coco (importada)
+tfda:D4300101	蛋黃果	canistel
+tfda:D4400101	無花果	higo
+tfda:D4410101	無花果乾	higos secos
+tfda:D4500101	黃金果	abiu
+tfda:D4600101	菠蘿蜜	yaca
+tfda:D4600201	榴槤蜜	chempedak
+tfda:D4700101	牛奶果	caimito
+tfda:D4800101	餘甘子	amla
+tfda:D4900101	嘉寶果	jaboticaba
+tfda:D5000101	藍莓(台灣)	arándanos (Taiwán)
+tfda:E0100101	牛蒡	raíz de bardana
+tfda:E0200101	胡蘿蔔	zanahoria
+tfda:E0200102	向陽二號胡蘿蔔	zanahoria (variedad Xiangyang 2)
+tfda:E0200103	澳洲胡蘿蔔(細長型)	zanahoria australiana (alargada)
+tfda:E0200201	黃胡蘿蔔	zanahoria amarilla
+tfda:E0200301	冷凍胡蘿蔔	zanahoria congelada
+tfda:E0300101	根菾菜根	remolacha
+tfda:E0300102	根菾菜根(2023年取樣)	remolacha (2023)
+tfda:E0400101	白蘿蔔	rábano daikon
+tfda:E0400102	白蘿蔔(長形)	rábano daikon (alargado)
+tfda:E0400201	櫻桃蘿蔔	rábano
+tfda:E0400301	青蘿蔔	rábano verde
 tfda:E0420101	蘿蔔乾	rábano seco
+tfda:E0500101	百合鱗片	bulbo de lirio
+tfda:E0510101	乾百合鱗片	bulbo de lirio seco
+tfda:E0600101	芋莖	tallos de taro
+tfda:E0700101	金針菜嫩莖	brotes de hemerocallis
+tfda:E0800101	草石蠶	alcachofa china
+tfda:E0900101	球莖甘藍	colirábano
+tfda:E1000101	孟宗竹筍	brotes de bambú moso
+tfda:E1100101	熟桂竹筍	brotes de bambú makino cocidos
+tfda:E1200101	烏殼綠竹筍	brotes de bambú verde con vaina oscura
+tfda:E1300101	茭白筍	tallos de arroz salvaje
+tfda:E1300201	玉米筍	mini maíz
+tfda:E1400101	麻竹筍	brotes de bambú ma
+tfda:E1400201	冷凍麻竹筍	brotes de bambú ma congelados
+tfda:E1500101	綠竹筍	brotes de bambú verde
+tfda:E1500201	帶殼熟綠竹筍	brotes de bambú verde cocidos en vaina
+tfda:E1500301	沙拉筍塊	trozos de brotes de bambú para ensalada
+tfda:E1600101	熟箭竹筍	brotes de bambú flecha cocidos
+tfda:E1700101	白蘆筍	espárragos blancos
+tfda:E1700201	綠蘆筍	espárragos verdes
+tfda:E1700202	澳洲綠蘆筍(粗短型)	espárragos verdes australianos (gruesos y cortos)
+tfda:E1700203	綠蘆筍(細短型)	espárragos verdes (finos y cortos)
+tfda:E1700204	綠蘆筍(短型)	espárragos verdes (cortos)
+tfda:E1700301	蘆筍花	espárragos en flor
+tfda:E1800101	嫩莖萵苣	lechuga de tallo
+tfda:E1900101	嫩薑	jengibre tierno
+tfda:E1900102	粉薑	jengibre
+tfda:E1900103	老薑	jengibre viejo
+tfda:E2000101	檳榔嫩莖	corazón de palma de betel
+tfda:E2100101	大蒜	ajo
+tfda:E2100201	青蒜	ajo verde
+tfda:E2100301	蒜苗	brotes de ajo
+tfda:E2300101	青蔥(有機)	cebolleta ecológica
+tfda:E2300102	山東大蔥	cebolleta de Shandong
+tfda:E2300103	日本甜蔥	cebolleta japonesa dulce
+tfda:E2300104	宜蘭粉蔥	cebolleta de Yilan
+tfda:E2400101	白洋蔥	cebolla blanca
+tfda:E2400201	紫洋蔥	cebolla morada
+tfda:E2400301	黃洋蔥	cebolla amarilla
+tfda:E2500101	紅蔥頭	chalote
+tfda:E2600101	韮菜花	flores de cebollino chino
+tfda:E2600201	韮菜	cebollino chino
+tfda:E2600301	韮黃	cebollino chino etiolado
+tfda:E2700101	九層塔	albahaca
+tfda:E2800101	小麥苗	brotes de trigo
+tfda:E2900101	水菜(日本種)	mizuna
+tfda:E3000101	梨山甘藍(尖球形)	col blanca puntiaguda (Lishan)
+tfda:E3000102	甘藍(扁圓形)	col blanca achatada
+tfda:E3000103	甘藍(圓球形)	col blanca redonda
+tfda:E3000104	甘藍(圓球形)(2021年取樣)	col blanca redonda (2021)
+tfda:E3000201	紫色甘藍	col lombarda
+tfda:E3000301	甘藍芽	brotes de col
+tfda:E3000401	冷凍甘藍	col congelada
+tfda:E3000501	羽衣甘藍(有機)	col kale ecológica
+tfda:E3010101	脫水甘藍	col deshidratada
+tfda:E3100101	甘藷葉	hojas de boniato
+tfda:E3200102	蚵仔白菜(2022年取樣)	col china (variedad ostra)
+tfda:E3200201	荷葉白菜	col china (variedad loto)
+tfda:E3200301	葵扇白菜	col china (variedad abanico)
+tfda:E3200401	黑葉白菜(短梗)	col china de hoja oscura (tallos cortos)
+tfda:E3200501	千寶菜	mostaza de hoja (variedad Qianbao)
+tfda:E3200601	小白菜(土植)(1月取樣)	pak choi de suelo (enero)
+tfda:E3200602	小白菜(土植)(3月取樣)	pak choi de suelo (marzo)
+tfda:E3200603	小白菜(土植)(4月取樣)	pak choi de suelo (abril)
+tfda:E3200604	小白菜(土植)(7月取樣)	pak choi de suelo (julio)
+tfda:E3200605	小白菜(土植)(10月取樣)	pak choi de suelo (octubre)
+tfda:E3200701	小白菜(水耕)(1月取樣)	pak choi hidropónico (enero)
+tfda:E3200702	小白菜(水耕)(4月取樣)	pak choi hidropónico (abril)
+tfda:E3200703	小白菜(水耕)(7月取樣)	pak choi hidropónico (julio)
+tfda:E3200704	小白菜(水耕)(10月取樣)	pak choi hidropónico (octubre)
+tfda:E3200801	小白菜(有機)(1月取樣)	pak choi ecológico (enero)
+tfda:E3200802	小白菜(有機)(4月取樣)	pak choi ecológico (abril)
+tfda:E3200803	小白菜(有機)(7月取樣)	pak choi ecológico (julio)
+tfda:E3200804	小白菜(有機)(10月取樣)	pak choi ecológico (octubre)
+tfda:E3200901	珍珠小白菜	pak choi (variedad perla)
+tfda:E3201001	油菜心	yu choy
+tfda:E3201101	油菜(有機)	colza de hoja ecológica
+tfda:E3201201	青江菜(土植)(1月取樣)	pak choi verde de suelo (enero)
+tfda:E3201202	青江菜(土植)(3月取樣)	pak choi verde de suelo (marzo)
+tfda:E3201203	青江菜(土植)(4月取樣)	pak choi verde de suelo (abril)
+tfda:E3201204	青江菜(土植)(7月取樣)	pak choi verde de suelo (julio)
+tfda:E3201205	青江菜(土植)(10月取樣)	pak choi verde de suelo (octubre)
+tfda:E3201301	青江菜(水耕)(1月取樣)	pak choi verde hidropónico (enero)
+tfda:E3201302	青江菜(水耕)(4月取樣)	pak choi verde hidropónico (abril)
+tfda:E3201303	青江菜(水耕)(7月取樣)	pak choi verde hidropónico (julio)
+tfda:E3201304	青江菜(水耕)(10月取樣)	pak choi verde hidropónico (octubre)
 tfda:E3201401	青江菜(有機)(1月取樣)	pak choi ecológico
+tfda:E3201402	青江菜(有機)(4月取樣)	pak choi verde ecológico (abril)
+tfda:E3201403	青江菜(有機)(7月取樣)	pak choi verde ecológico (julio)
+tfda:E3201404	青江菜(有機)(10月取樣)	pak choi verde ecológico (octubre)
+tfda:E3201501	塔菇菜(有機)	tatsoi ecológico
+tfda:E3201601	廣島野菜	verdura de hoja Hiroshima
+tfda:E3201701	日本油菜(有機)	komatsuna ecológica
+tfda:E3201801	青松菜(有機)	verdura qingsong ecológica
+tfda:E3201901	青油菜(有機)	colza verde ecológica
+tfda:E3300101	煙台白菜	col china (variedad Yantai)
+tfda:E3300102	迷你竹筍白菜	mini col china (variedad bambú)
+tfda:E3300103	翠玉白菜	col china (variedad jade)
+tfda:E3300104	包心白菜	col china
+tfda:E3300105	包心白菜(2025年取樣)	col china (2025)
+tfda:E3300201	白菜芽	col china baby
+tfda:E3400101	白鳳菜	gynura blanca
+tfda:E3400201	紅鳳菜	gynura bicolor
+tfda:E3500101	豆瓣菜	berros
+tfda:E3600101	明日葉	ashitaba
+tfda:E3700101	山芹菜	mitsuba
+tfda:E3700201	芹菜(青梗)	apio de tallos verdes
+tfda:E3700202	芹菜	apio
+tfda:E3700301	西洋芹菜	apio americano
+tfda:E3800101	大心芥菜	mostaza de tallo grueso
+tfda:E3800201	大芥菜	mostaza de hoja grande
+tfda:E3800301	包心芥菜	mostaza repollo
+tfda:E3800401	芥菜	mostaza de hoja
+tfda:E3800402	雪裡蕻	mostaza de hoja (xuelihong)
+tfda:E3800501	抱子芥菜	mostaza de brotes
+tfda:E3900101	芥藍菜	kai-lan
+tfda:E3900201	芥藍芽	brotes de kai-lan
+tfda:E4000101	芫荽	cilantro
+tfda:E4100101	紅梗珍珠菜	lisimaquia de tallos rojos
+tfda:E4200101	食茱萸	hojas de zantoxilo
+tfda:E4300101	香樁	brotes de toon
+tfda:E4400101	茴香	hinojo
+tfda:E4500101	馬齒莧	verdolaga
+tfda:E4600101	茼蒿	crisantemo comestible
+tfda:E4600201	日本茼蒿(有機)	crisantemo comestible japonés ecológico
+tfda:E4600301	昭和草	hierba Showa
 tfda:E4700101	隼人瓜苗	brotes de chayote
+tfda:E4800101	白莧菜	amaranto blanco
+tfda:E4800201	紅莧菜	amaranto rojo
+tfda:E4800301	野莧菜	amaranto silvestre
+tfda:E4900101	紫蘇	perilla
+tfda:E5000101	菠菜	espinaca
+tfda:E5000201	菠菜(葉)(有機)	espinaca de hoja ecológica
+tfda:E5000301	冷凍菠菜	espinaca congelada
+tfda:E5100101	菾菜	acelga
 tfda:E5100201	黃金菾菜	acelga amarilla
+tfda:E5200101	落葵	espinaca de Malabar
+tfda:E5200201	藤三七	enredadera de Madeira
+tfda:E5300101	奶油萵苣(日本種)	lechuga mantecosa
+tfda:E5300102	紅葉萵苣(荷蘭種）	lechuga roja
+tfda:E5300103	廣東萵苣	lechuga cantonesa
+tfda:E5300104	福山萵苣	lechuga romana (Fushan)
+tfda:E5300105	蘿蔓萵苣	lechuga romana
+tfda:E5300201	本島萵苣(土植)(1月取樣)	lechuga local de suelo (enero)
+tfda:E5300202	本島萵苣(土植)(3月取樣)	lechuga local de suelo (marzo)
+tfda:E5300203	本島萵苣(土植)(4月取樣)	lechuga local de suelo (abril)
+tfda:E5300204	本島萵苣(土植)(7月取樣)	lechuga local de suelo (julio)
+tfda:E5300205	本島萵苣(土植)(10月取樣)	lechuga local de suelo (octubre)
+tfda:E5300301	本島萵苣(水耕)(1月取樣)	lechuga local hidropónica (enero)
+tfda:E5300302	本島萵苣(水耕)(4月取樣)	lechuga local hidropónica (abril)
+tfda:E5300303	本島萵苣(水耕)(7月取樣)	lechuga local hidropónica (julio)
+tfda:E5300304	本島萵苣(水耕)(10月取樣)	lechuga local hidropónica (octubre)
+tfda:E5300401	本島萵苣(有機)(1月取樣)	lechuga local ecológica (enero)
+tfda:E5300402	本島萵苣(有機)(4月取樣)	lechuga local ecológica (abril)
+tfda:E5300403	本島萵苣(有機)(7月取樣)	lechuga local ecológica (julio)
+tfda:E5300404	本島萵苣(有機)(10月取樣)	lechuga local ecológica (octubre)
 tfda:E5300501	水耕波士頓萵苣	lechuga mantecosa hidropónica
+tfda:E5300601	結球萵苣	lechuga iceberg
+tfda:E5400101	豌豆苗	brotes de guisante
+tfda:E5500101	龍葵	hojas de hierba mora
+tfda:E5600101	蕹菜(土植)(1月取樣)	espinaca de agua de suelo (enero)
+tfda:E5600102	蕹菜(土植)(4月取樣)	espinaca de agua de suelo (abril)
+tfda:E5600103	蕹菜(土植)(7月取樣)	espinaca de agua de suelo (julio)
+tfda:E5600104	蕹菜(土植)(10月取樣)	espinaca de agua de suelo (octubre)
+tfda:E5600201	蕹菜(水耕)(1月取樣)	espinaca de agua hidropónica (enero)
+tfda:E5600202	蕹菜(水耕)(4月取樣)	espinaca de agua hidropónica (abril)
+tfda:E5600203	蕹菜(水耕)(7月取樣)	espinaca de agua hidropónica (julio)
+tfda:E5600204	蕹菜(水耕)(10月取樣)	espinaca de agua hidropónica (octubre)
+tfda:E5600301	蕹菜(有機)(4月取樣)	espinaca de agua ecológica (abril)
+tfda:E5600302	蕹菜(有機)(10月取樣)	espinaca de agua ecológica (octubre)
 tfda:E5600401	水蕹菜	espinaca de agua (kangkong)
+tfda:E5700101	蘿蔔葉	hojas de rábano
+tfda:E5800101	花椰菜	coliflor
+tfda:E5800201	冷凍花椰菜	coliflor congelada
+tfda:E5800301	紫色花椰菜	coliflor morada
+tfda:E5800401	青花菜(1999年取樣)	brócoli (1999)
+tfda:E5800402	青花菜(2021年取樣)	brócoli (2021)
+tfda:E5800501	冷凍青花菜	brócoli congelado
+tfda:E5800601	青花菜筍	broccolini
+tfda:E5810101	花椰菜乾	coliflor deshidratada
+tfda:E5900101	金針菜	flores de hemerocallis
+tfda:E5910101	金針菜乾	flores de hemerocallis secas
+tfda:E6010101	洛神花乾	flor de Jamaica seca
+tfda:E6100101	絲瓜花	flores de lufa
+tfda:E6200101	冬瓜	calabaza blanca
+tfda:E6200102	香芋冬瓜	calabaza blanca (variedad taro)
+tfda:E6200103	冬瓜(2022年取樣)	calabaza blanca (2022)
+tfda:E6300101	日本南瓜	calabaza kabocha
+tfda:E6300102	台灣南瓜	calabaza taiwanesa
+tfda:E6300103	栗子南瓜	calabaza (variedad castaña)
+tfda:E6300104	菊花南瓜	calabaza (variedad crisantemo)
+tfda:E6400101	胡瓜	pepino
+tfda:E6400201	花胡瓜(有機)	pepinos pequeños ecológicos
+tfda:E6400301	水果小胡瓜	pepinos mini
+tfda:E6500101	苦瓜(白皮)	melón amargo de piel blanca
+tfda:E6500201	苦瓜(青皮)	melón amargo de piel verde
+tfda:E6500301	珍珠苦瓜	melón amargo (variedad perla)
+tfda:E6500401	野苦瓜	melón amargo silvestre
+tfda:E6600101	隼人瓜	chayote
+tfda:E6600102	隼人瓜(2023年取樣)	chayote
+tfda:E6700101	白皮蛇瓜	calabaza serpiente de piel blanca
+tfda:E6700201	綠皮蛇瓜	calabaza serpiente de piel verde
+tfda:E6800101	絲瓜	lufa
+tfda:E6800201	稜角絲瓜	lufa angulosa
+tfda:E6800301	蘋果絲瓜(有機)	lufa «manzana» ecológica
+tfda:E6900101	越瓜	melón para encurtir
+tfda:E7000101	蒲瓜(長形)	calabaza vinatera alargada
+tfda:E7000102	蒲瓜(圓形)	calabaza vinatera redonda
+tfda:E7000201	花蒲瓜(圓形)	calabaza vinatera jaspeada (redonda)
+tfda:E7000301	葫蘆瓜	calabaza vinatera
+tfda:E7100101	黃櫛瓜	calabacín amarillo
+tfda:E7100201	綠櫛瓜	calabacín verde
+tfda:E7210101	枸杞乾	bayas de goji secas
+tfda:E7300101	長茄子	berenjena alargada
+tfda:E7300201	圓茄子	berenjena redonda
+tfda:E7300202	圓茄子(2025年取樣)	berenjena redonda (2025)
+tfda:E7400101	牛番茄	tomate corazón de buey
+tfda:E7400102	紅番茄	tomate rojo
+tfda:E7400103	桃太郎番茄	tomate (variedad Momotaro)
+tfda:E7400201	黃番茄	tomate amarillo
+tfda:E7400301	粉柿番茄	tomate rosa
+tfda:E7400302	黑柿番茄	tomate negro
+tfda:E7400303	綠番茄	tomate verde
+tfda:E7400401	聖女小番茄	tomates cherry
+tfda:E7400402	試交二號小番茄	tomates cherry (variedad híbrido 2)
+tfda:E7400403	櫻桃小番茄	tomates cherry
+tfda:E7400501	黃金小蕃茄	tomates cherry amarillos
+tfda:E7400601	金女小番茄	tomates cherry (variedad chica dorada)
+tfda:E7400602	黃金聖女小番茄	tomates cherry (variedad santa dorada)
+tfda:E7400603	橙蕃茄	tomate naranja
+tfda:E7400701	香瓜茄	pepino dulce
+tfda:E7500101	甜椒(青皮)	pimiento verde
+tfda:E7500102	小甜椒(青皮)	pimiento verde pequeño
+tfda:E7500103	高山甜椒(青皮)	pimiento verde de montaña
+tfda:E7500201	甜椒(紅皮)	pimiento rojo
+tfda:E7500202	甜椒(紅皮)(20205年取樣)	pimiento rojo
+tfda:E7500301	甜椒(黃皮)	pimiento amarillo
+tfda:E7500401	甜椒(橙皮)	pimiento naranja
+tfda:E7500501	角椒	pimiento picante
+tfda:E7500502	長辣椒(青皮)	guindilla verde
+tfda:E7500503	糯米椒	pimiento fushimi
+tfda:E7500601	長辣椒(紅皮)	guindilla roja
+tfda:E7500602	朝天椒(長果)	guindilla chaotian (alargada)
+tfda:E7500603	朝天椒(圓果)	guindilla chaotian (redonda)
+tfda:E7510101	乾長辣椒(紅皮)	guindilla roja seca
+tfda:E7600101	黃秋葵	okra
+tfda:E7700101	青花菜芽	brotes de brócoli
+tfda:E7700201	苜蓿芽	brotes de alfalfa
+tfda:E7700301	紫甘藍芽	brotes de col lombarda
+tfda:E7700401	黃豆芽	brotes de soja
+tfda:E7700402	黃豆芽(有機,2023年取樣)	brotes de soja ecológicos
+tfda:E7700501	黑豆芽	brotes de soja negra
+tfda:E7700601	葵花芽	brotes de girasol
+tfda:E7700701	綠豆芽	brotes de soja verde
+tfda:E7700801	豌豆芽	guisantes germinados
+tfda:E7700901	蕎麥芽	brotes de alforfón
+tfda:E7701001	蘿蔔芽	brotes de rábano
+tfda:E8700101	山蘇菜	helecho nido de ave
+tfda:E8800101	火炭母草	persicaria china
+tfda:E8900101	石蓮花	echeveria
+tfda:E9000101	青葙	celosía
+tfda:E9100101	假人蔘	talino
+tfda:E9200101	野苦瓜嫩梢	brotes de melón amargo silvestre
+tfda:E9300101	過溝菜蕨	helecho comestible
+tfda:E9400101	蔘鬚	raíces de ginseng
+tfda:E9500101	龍骨瓣莕菜	ninfoides acuático
+tfda:E9600101	薄荷	menta
+tfda:E9700101	蕺菜	houttuynia
+tfda:E9800101	蘆薈	aloe vera
+tfda:E9900101	皇宮菜	espinaca de agua (variedad palacio)
+tfda:E9900201	香芫荽	culantro
+tfda:E9900301	荷蘭豆菜心	brotes de tirabeque
+tfda:E9900401	厥子	brotes de helecho
+tfda:E9900501	義大利茼蒿	crisantemo comestible italiano
+tfda:E9900601	龍延草	hierba longyan
+tfda:E9900701	麵包果	fruto del árbol del pan
+tfda:E9900801	冰花	hierba del hielo
+tfda:E9900901	木虌果	gac
+tfda:F0110101	紅毛苔	alga «musgo rojo»
+tfda:F0210101	紫菜	nori
+tfda:F0210102	熟紫菜	nori tostada
+tfda:F0310101	髮菜	facai (alga cabello)
+tfda:F0400101	麒麟菜	eucheuma
+tfda:F0410101	乾麒麟菜	eucheuma seca
+tfda:F0500101	礁膜	monostroma
+tfda:F0610101	乾海茸芯	bambú de mar seco
+tfda:F0700101	海帶卷	kombu en rollos
+tfda:F0700102	海帶茸	kombu rallada
+tfda:F0700103	海帶梗	tallos de kombu
+tfda:F0700104	海帶結	nudos de kombu
+tfda:F0700105	海帶絲	kombu en tiras
+tfda:F0710101	乾海帶	kombu seca
+tfda:F0800101	裙帶菜	wakame
+tfda:F0810101	乾裙帶菜	wakame seca
+tfda:F0810201	乾裙帶菜根	raíces de wakame secas
+tfda:F0910101	鳳尾藻	alga cola de fénix
+tfda:F1000101	葛仙米藻	nostoc
+tfda:F1100101	長莖葡萄蕨藻	uva de mar
+tfda:F9900201	壽司海苔片	láminas de nori para sushi
+tfda:G0100101	木耳	oreja de Judas
+tfda:G0100201	冷凍木耳	oreja de Judas congelada
+tfda:G0110101	乾木耳(紅耳仔)	oreja de Judas seca (roja)
+tfda:G0110102	乾木耳(黑耳仔)	oreja de Judas seca (negra)
+tfda:G0110201	乾川耳	oreja de Judas fina seca
+tfda:G0200101	銀耳	tremella
+tfda:G0200201	白毛木耳	oreja de Judas blanca
+tfda:G0210101	乾銀耳	tremella seca
+tfda:G0300101	草菇	seta de paja
+tfda:G0300102	草菇(2025年取樣)	seta de paja (2025)
+tfda:G0400101	雞腿菇	coprinus
+tfda:G0410101	雞腿菇(乾)	coprinus seco
+tfda:G0500101	松茸	matsutake
+tfda:G0600101	雪白菇(長)	shimeji blanco de tallo largo
+tfda:G0700101	柳松菇	agrocibe
+tfda:G0710101	乾柳松菇	agrocibe seco
+tfda:G0800101	香菇(大)	shiitake grandes
+tfda:G0800102	香菇(小)	shiitake pequeños
+tfda:G0800103	花菇	shiitake «flor»
+tfda:G0810101	乾香菇	shiitake secos
+tfda:G0810102	乾花菇	shiitake «flor» secos
+tfda:G0810103	乾白花菇	shiitake «flor blanca» secos
+tfda:G0810104	乾鈕釦菇	shiitake «botón» secos
+tfda:G1000101	姬松茸	champiñón brasileño
+tfda:G1010101	乾姬松茸	champiñón brasileño seco
+tfda:G1100101	酒杯菇	seta en copa
+tfda:G1200101	秀珍菇	seta de ostra
+tfda:G1200201	天喜菇	seta de ostra (variedad Tianxi)
+tfda:G1200301	白蠔菇	seta de ostra blanca
+tfda:G1200401	玫瑰菇	seta de ostra rosa
+tfda:G1300101	杏香菇	seta de cardo (variedad aromática)
+tfda:G1300201	杏鮑菇(大)	seta de cardo grande
+tfda:G1300202	杏鮑菇(中)	seta de cardo mediana
+tfda:G1300203	杏鮑菇(小)	seta de cardo pequeña
+tfda:G1400301	珊瑚菇	seta de ostra amarilla
+tfda:G1500101	蠔菇	seta de ostra grande
+tfda:G1500201	鮑魚菇	seta de ostra abulón
+tfda:G1600101	金針菇	enoki
+tfda:G1600201	華翠菇	enoki amarillo
+tfda:G1700101	滑菇	nameko
+tfda:G1800101	舞菇	maitake
+tfda:G1900101	鴻喜菇	shimeji
+tfda:G1900201	雪白菇	shimeji blanco
+tfda:G2000101	洋菇	champiñón
+tfda:G2000201	冷凍洋菇	champiñón congelado
+tfda:G2100101	白茯苓	poria
+tfda:G2300101	猴頭菇	melena de león
+tfda:G2310101	乾猴頭菇	melena de león seca
+tfda:G2410101	乾竹笙	seta de bambú seca
+tfda:G9000101	松茸白菇	matsutake blanco
+tfda:G9000201	金喜菇	enoki marrón
+tfda:G9000301	喜來菇	seta shirai
+tfda:G9000401	富珍茸	seta fuzhen
+tfda:H0105101	白鳳豆(台灣)	judía sable (Taiwán)
+tfda:H0105102	白鳳豆(進口)	judía sable (importada)
+tfda:H0205101	米豆	frijol arroz
+tfda:H0305101	花豆	judía escarlata
+tfda:H0405101	紅豆	azuki
+tfda:H0505101	紅雲豆(大紅豆)	alubia roja grande
+tfda:H0605101	青仁黑豆	soja negra de grano verde
+tfda:H0605201	黃仁黑豆	soja negra de grano amarillo
+tfda:H0610101	發芽黑豆(青仁)	soja negra germinada (grano verde)
+tfda:H0610201	烘烤黑豆	soja negra tostada
+tfda:H0620101	黑豆粉	harina de soja negra
+tfda:H0650101	黑豆漿(青仁)(無糖)(2025年取樣)	bebida de soja negra de grano verde sin azúcar
+tfda:H0705101	毛綠豆	judía mungo
+tfda:H0705102	綠豆	judía mungo
+tfda:H0710101	綠豆仁	judía mungo pelada
+tfda:H0720101	綠豆粉	harina de mungo
+tfda:H0800101	豇豆(莢)	judía de metro (vainas)
+tfda:H0900101	萊豆仁(帶膜)	judías de Lima con piel
+tfda:H0900201	萊豆仁(去膜)	judías de Lima peladas
+tfda:H1000101	粉豆莢	judías verdes
+tfda:H1000201	敏豆莢	judías verdes (variedad mindou)
+tfda:H1000301	冷凍菜豆(莢)	judías verdes congeladas
+tfda:H1100101	毛豆仁	edamame (granos)
+tfda:H1100201	毛豆莢(高雄13號)	edamame en vaina (variedad Kaohsiung 13)
+tfda:H1100301	冷凍毛豆仁	edamame congelado (granos)
+tfda:H1105101	黃豆	soja
+tfda:H1105102	黃豆(有機)(2025年取樣)	soja ecológica
+tfda:H1110101	發芽黃豆	soja germinada
+tfda:H1120101	黃豆粉	harina de soja
+tfda:H1120102	黃豆粉(有機)	harina de soja ecológica
+tfda:H1150201	豆漿(無糖)	bebida de soja sin azúcar
+tfda:H1150301	全豆豆漿	bebida de soja integral
+tfda:H1200101	豌豆仁	guisantes verdes (granos)
+tfda:H1200201	豌豆莢	guisantes en vaina
+tfda:H1200301	高山大豌豆莢	guisantes en vaina de montaña grandes
+tfda:H1200401	甜豌豆莢	tirabeques
+tfda:H1200501	冷凍豌豆仁	guisantes congelados
+tfda:H1300101	鵲豆莢	judía egipcia (vainas)
+tfda:H1505101	紅扁豆仁	lentejas rojas
+tfda:H1600101	鷹嘴豆	garbanzos
+tfda:H1700101	樹豆(白)	guandú blanco
+tfda:H1800101	翼豆	judía alada
+tfda:H2000101	天貝(黃豆)	tempeh de soja
+tfda:I0100101	去骨牛小排	costillas de ternera sin hueso
 tfda:I0100102	帶骨牛小排	costillas de ternera con hueso
+tfda:I0100103	無骨牛小排(美牛)	costillas de ternera sin hueso (vacuno americano)
+tfda:I0100201	牛肋條	carne intercostal de ternera
 tfda:I0100202	牛肋條(2021年取樣)	tiras de costilla de ternera
+tfda:I0100301	沙朗牛排	entrecot
+tfda:I0102101	板腱	paleta superior de ternera
+tfda:I0102201	牛去骨肩胛小排	costillas de aguja de ternera sin hueso
+tfda:I0104101	牛前胸肉	pecho de vacuno
+tfda:I0104201	牛修清前胸肉	pecho de vacuno limpio
+tfda:I0106101	去骨紐約克牛排	filete Nueva York sin hueso
+tfda:I0106201	腓力牛排	filet mignon
+tfda:I0106202	腓力牛排(美牛)(2025年取樣)	filet mignon (vacuno americano)
+tfda:I0108101	牛後腿肉	carnaza de ternera
+tfda:I0108201	牛後腿股肉	tapilla de ternera
+tfda:I0108301	牛後腿腱子心	morcillo trasero de ternera
+tfda:I0108302	牛後腿腱子心(2022年取樣)	morcillo trasero de ternera
+tfda:I0110101	牛五花肉火鍋片	láminas de vacuno para hotpot (pecho)
+tfda:I0110102	牛紐約客火鍋片	láminas de vacuno para hotpot (Nueva York)
+tfda:I0110103	牛梅花肉火鍋片	láminas de vacuno para hotpot (aguja)
+tfda:I0110104	牛嫩肩里肌火鍋片	láminas de vacuno para hotpot (paleta tierna)
+tfda:I0120101	牛肚(瘤胃)	panza de vacuno
+tfda:I0120102	牛肚切片(瘤胃)	panza de vacuno en tiras
+tfda:I0120201	牛肚(蜂巢胃)	callos de vacuno de panal
+tfda:I0120301	牛筋	tendones de vacuno
+tfda:I0200101	山羊帶皮羊肉塊	cabra con piel en trozos
+tfda:I0200201	山羊前腿肉片	láminas de pierna delantera de cabra
+tfda:I0200301	山羊後腿肉火鍋片	láminas de pierna trasera de cabra para hotpot
+tfda:I0210101	綿羊肉切片	cordero en láminas
+tfda:I0210201	法式羊排	carré de cordero
 tfda:I0210301	去骨肩頸眼羊肉	carne de cordero deshuesada
+tfda:I0210401	小羊腰脊肉	lomo de cordero sin hueso
+tfda:I0210501	綿羊腹脅肉火鍋片	láminas de falda de cordero para hotpot
+tfda:I0300101	豬下肩肉	espaldilla de cerdo
+tfda:I0300102	豬下肩肉(2025年取樣)	espaldilla de cerdo
+tfda:I0300201	豬下肩瘦肉	espaldilla de cerdo magra
+tfda:I0300301	豬上肩肉	paleta de cerdo
+tfda:I0300401	豬肩胛肉	cuello de cerdo
+tfda:I0300501	豬肩胛排	costillas de paleta de cerdo
+tfda:I0300502	豬肩胛排(2021年取樣)	costillas de paleta de cerdo (2021)
+tfda:I0300601	豬前腿外腱肉	jarrete delantero de cerdo
+tfda:I0302101	豬後腿外腱肉	jarrete trasero de cerdo
+tfda:I0302201	豬後腿肉	pierna de cerdo
+tfda:I0302202	豬後腿肉(2025年取樣)	pierna de cerdo (2025)
+tfda:I0302301	豬後腿瘦肉	pierna de cerdo magra
+tfda:I0304101	豬大里肌	lomo de cerdo
+tfda:I0304201	豬大排	chuleta de cerdo
+tfda:I0304301	豬小排	costillas de cerdo
 tfda:I0304401	僧帽肌	filete flat iron de ternera
+tfda:I0306101	豬小里肌	solomillo de cerdo
+tfda:I0308101	豬去皮腹脇肉	panceta de cerdo sin piel
+tfda:I0308201	豬帶皮腹脇肉	panceta de cerdo con piel
+tfda:I0308301	豬腹脇排	costillas de cerdo de falda
+tfda:I0310101	豬肝連	diafragma de cerdo
+tfda:I0310201	豬頰肉	carrilleras de cerdo
+tfda:I0310202	豬頰肉(2022年取樣)	carrilleras de cerdo (2022)
+tfda:I0310301	豬頸肉	papada de cerdo
+tfda:I0310401	豬絞肉(70％瘦肉率)	cerdo picado (70 % magro)
+tfda:I0310402	豬絞肉(90％瘦肉率)	cerdo picado (90 % magro)
+tfda:I0320101	豬心	corazón de cerdo
+tfda:I0320201	豬白管	aorta de cerdo
+tfda:I0320301	豬皮	piel de cerdo
+tfda:I0320401	豬耳	orejas de cerdo
+tfda:I0320501	豬舌	lengua de cerdo
+tfda:I0320601	豬血	sangre de cerdo
+tfda:I0320701	豬尾	rabo de cerdo
+tfda:I0320801	豬肝	hígado de cerdo
+tfda:I0321101	豬肚	estómago de cerdo
+tfda:I0321201	熟豬肚	estómago de cerdo cocido
+tfda:I0321301	豬油渣	chicharrones de cerdo
+tfda:I0321401	豬大骨湯	caldo de huesos de cerdo
+tfda:I0321402	豬肋骨湯	caldo de costillas de cerdo
+tfda:I0321403	豬肩骨湯	caldo de huesos de paleta de cerdo
+tfda:I0321501	豬軟骨	cartílago de cerdo
+tfda:I0321601	豬腎	riñones de cerdo
+tfda:I0321701	豬脾臟	bazo de cerdo
+tfda:I0321801	豬大腸	intestino grueso de cerdo
+tfda:I0321901	豬小腸	intestino delgado de cerdo
+tfda:I0322001	豬空腸	yeyuno de cerdo
+tfda:I0322101	豬前腳	manitas de cerdo delanteras
+tfda:I0322201	豬後腳	manitas de cerdo traseras
+tfda:I0322301	豬蹄膀	codillo de cerdo
+tfda:I0322501	豬腳筋	tendones de manitas de cerdo
+tfda:I0322601	豬腦	sesos de cerdo
+tfda:I0400101	土雞	pollo campero
+tfda:I0400201	肉雞	pollo broiler
+tfda:I0400301	烏骨雞	gallina sedosa
+tfda:I0402101	里肌肉(土雞)	solomillo de pollo campero
+tfda:I0402102	里肌肉(肉雞)	solomillo de pollo broiler
+tfda:I0402201	帶骨去皮對切胸(肉雞)	pechugas de pollo broiler con hueso sin piel
+tfda:I0402301	帶骨帶皮對切胸(肉雞)	pechugas de pollo broiler con hueso y piel
+tfda:I0402401	去皮清肉(土雞)	pechuga de pollo campero sin piel ni hueso
+tfda:I0402402	去皮清肉(肉雞)	pechuga de pollo broiler sin piel ni hueso
+tfda:I0404101	骨腿(土雞)	pierna de pollo campero con hueso
+tfda:I0404102	骨腿(肉雞)	pierna de pollo broiler con hueso
+tfda:I0404201	清腿(土雞)	pierna de pollo campero entera
+tfda:I0404202	清腿(肉雞)	pierna de pollo broiler entera
+tfda:I0404301	棒棒腿(土雞)	jamoncitos de pollo campero
+tfda:I0404302	棒棒腿(肉雞)	jamoncitos de pollo broiler
+tfda:I0404401	雞排(土雞)	filete de pollo campero
+tfda:I0404402	雞排(肉雞)	filete de pollo broiler
+tfda:I0404403	雞排(肉雞)(2021年取樣)	filete de pollo broiler (2021)
+tfda:I0404501	去皮去骨雞腿(肉雞)	muslo de pollo broiler sin piel ni hueso
+tfda:I0406101	二節翅(土雞)	alas de pollo de dos segmentos (campero)
+tfda:I0406102	二節翅(肉雞)	alas de pollo de dos segmentos (broiler)
+tfda:I0406201	三節翅(土雞)	alas enteras de pollo campero
+tfda:I0406202	三節翅(肉雞)	alas enteras de pollo broiler
+tfda:I0406203	三節翅(肉雞)(2025年取樣)	alas enteras de pollo broiler (2025)
+tfda:I0406301	翅腿(肉雞)	muslitos de ala de pollo broiler
+tfda:I0410101	雞絞肉	pollo picado
+tfda:I0420101	雞心(肉雞)	corazones de pollo
+tfda:I0420102	雞心(肉雞)(2021年取樣)	corazones de pollo
+tfda:I0420201	雞尾椎	rabadilla de pollo
+tfda:I0420301	雞肝(肉雞)	hígado de pollo
+tfda:I0420401	雞胗(肉雞)	mollejas de pollo
+tfda:I0420601	雞胸骨湯	caldo de pollo
+tfda:I0420701	雞睪丸	criadillas de pollo
+tfda:I0420801	雞腳(肉雞)	pies de pollo
+tfda:I0420901	雞膝軟骨(肉雞)	cartílago de pollo
+tfda:I0421001	雞皮(肉雞)	piel de pollo
+tfda:I0500101	太空鴨	pato entero
+tfda:I0500201	番鴨	pato criollo
+tfda:I0500301	太空鴨(去皮)	pato entero sin piel
+tfda:I0500401	土番鴨	pato mulard
+tfda:I0502101	櫻桃鴨胸肉片	pechuga de pato Cherry Valley en láminas
+tfda:I0504101	鴨腿	muslo de pato
+tfda:I0520101	鴨血	sangre de pato
+tfda:I0520201	鴨胗	molleja de pato
+tfda:I0520301	去骨鴨掌	pies de pato sin hueso
+tfda:I0520401	鴨腸	intestinos de pato
+tfda:I0520601	鴨翅	alas de pato
+tfda:I0520701	鴨頭	cabeza de pato
+tfda:I0520801	鴨舌	lengua de pato
+tfda:I0600101	鵝肉	carne de oca
+tfda:I0602101	鵝胸肉	pechuga de oca
+tfda:I0604101	鵝腿肉	muslo de oca
+tfda:I0620101	鵝心	corazón de oca
+tfda:I0620201	鵝肝	hígado de oca
+tfda:I0620301	鵝胗	molleja de oca
+tfda:I0620401	鵝腸	intestinos de oca
+tfda:I0700101	火雞肉	carne de pavo
+tfda:I0802101	鴕鳥菲力肉排	filete de avestruz
+tfda:I0804101	鴕鳥沙朗肉排	entrecot de avestruz
+tfda:I0810101	鴕腱肉	morcillo de avestruz
+tfda:I0810201	鴕腩肉	falda de avestruz
+tfda:I1000101	山豬肉片	jabalí en láminas
+tfda:I9900101	虎皮蛙	rana toro china
+tfda:I9900201	蛇肉	carne de serpiente
+tfda:J0200201	雙髻鯊	tiburón martillo
+tfda:J0200202	雙髻鯊腹肉	vientre de tiburón martillo
+tfda:J0200301	鯊魚切片	tiburón en filetes
+tfda:J0200401	鱘龍魚片	esturión del Amur en filetes
+tfda:J0400101	魟魚	raya
+tfda:J0400201	日本鰻鱺魚片(生)	anguila japonesa cruda en filetes
+tfda:J0400401	灰海鰻	congrio dientes de daga
+tfda:J0400501	魩仔魚	alevines de anchoa
+tfda:J0400601	魩仔魚(加工,大)	alevines de anchoa procesados (grandes)
+tfda:J0400602	魩仔魚(加工,小)	alevines de anchoa procesados (pequeños)
+tfda:J0400603	魩仔魚(加工)	alevines de anchoa procesados
+tfda:J0400801	鱙仔魚(加工)	alevines de anchoa (yaozi) procesados
+tfda:J0400901	日本銀帶鯡(加工)	arenque plateado japonés procesado
+tfda:J0400902	日本銀帶鯡魚干(丁香魚脯)	arenque plateado japonés seco
+tfda:J0401001	虱目魚(2月)	sabalote (febrero)
+tfda:J0401002	虱目魚(5月)	sabalote (mayo)
+tfda:J0401003	虱目魚(8月)	sabalote (agosto)
+tfda:J0401004	虱目魚(9月)	sabalote (septiembre)
+tfda:J0401005	虱目魚(12月)	sabalote (diciembre)
+tfda:J0401101	虱目魚(含皮)	sabalote con piel
+tfda:J0401102	虱目魚(2022年取樣)	sabalote (2022)
+tfda:J0401201	虱目魚腹肉(虱目魚肚)	panza de sabalote
+tfda:J0401301	草魚切片	carpa herbívora en filetes
+tfda:J0401401	草魚(含皮)	carpa herbívora con piel
+tfda:J0401501	鯉	carpa
+tfda:J0401601	鱅	carpa cabezona
+tfda:J0401701	鬍鯰	clarias
+tfda:J0401801	斑海鯰	bagre marino moteado
+tfda:J0401901	長體油胡瓜魚	shishamo
+tfda:J0402001	香魚	ayu
+tfda:J0402101	銀魚	pez de hielo
+tfda:J0402201	白肉鮭魚切片	salmón de carne blanca en filetes
 tfda:J0402301	紅肉鮭魚切片	filete de salmón rojo
+tfda:J0402401	大西洋鮭魚(台灣養殖)	salmón atlántico (de cultivo en Taiwán)
+tfda:J0402402	大西洋鮭魚切片(中段)	salmón atlántico en filetes (corte medio)
+tfda:J0402403	大西洋鮭魚切片(尾段)	salmón atlántico en filetes (corte de cola)
+tfda:J0402404	大西洋鮭魚生魚片	salmón atlántico para sashimi
+tfda:J0402405	大西洋鮭魚腹肉	panza de salmón atlántico
+tfda:J0402501	麥奇鈎吻鮭(去皮)	trucha arcoíris sin piel
+tfda:J0402601	麥奇鈎吻鮭(含皮)	trucha arcoíris con piel
+tfda:J0402701	姬魚	aulopus
+tfda:J0402801	印度鐮齒魚	pez Bombay
+tfda:J0402901	狗母魚(蛇鯔)	pez lagarto
+tfda:J0403001	鮟鱇	rape
+tfda:J0403101	鯔(2月)	lisa (febrero)
+tfda:J0403102	鯔(4月)	lisa (abril)
+tfda:J0403103	鯔(8月)	lisa (agosto)
+tfda:J0403104	鯔(11月,雄魚)	lisa (noviembre, macho)
+tfda:J0403105	鯔(11月,雌魚)	lisa (noviembre, hembra)
+tfda:J0403106	鯔(12月,雄魚)	lisa (diciembre, macho)
+tfda:J0403107	鯔(12月,雌魚)	lisa (diciembre, hembra)
+tfda:J0403108	鯔切片	lisa en filetes
+tfda:J0403201	鯔(含皮)	lisa con piel
+tfda:J0403301	斑鰭飛魚	pez volador
+tfda:J0403401	斑鱵	pez pico moteado
+tfda:J0403501	鱷形叉尾鶴鱵	agujón cocodrilo
+tfda:J0403601	金鱗魚	pez ardilla
+tfda:J0403701	鱗馬鞭魚	pez flauta
+tfda:J0403801	黃鱔	anguila de arrozal
+tfda:J0403901	石狗公	cabracho
+tfda:J0404001	環紋簑鮋	pez león
+tfda:J0404101	深海鱗角魚	rubio de profundidad
+tfda:J0404201	尖嘴鱸(去皮)	barramundi sin piel
+tfda:J0404301	尖嘴鱸(含皮)	barramundi con piel
+tfda:J0404401	日本花鱸(2月)	lubina japonesa (febrero)
+tfda:J0404402	日本花鱸((3月)	lubina japonesa (marzo)
+tfda:J0404403	日本花鱸((8月)	lubina japonesa (agosto)
+tfda:J0404404	日本花鱸((11月)	lubina japonesa (noviembre)
+tfda:J0404405	日本花鱸((12月)	lubina japonesa (diciembre)
+tfda:J0404501	日本花鱸(含皮)	lubina japonesa con piel
+tfda:J0404601	白鱸	perca blanca
+tfda:J0404701	條紋狼鱸	lubina rayada
+tfda:J0404801	鱖	pez mandarín
+tfda:J0404901	白緣星鱠	mero de cola de lira
+tfda:J0405001	青星九刺鮨	mero coral
+tfda:J0405002	青星九刺鮨魚片	mero coral en filetes
+tfda:J0405101	斑帶石斑魚	mero de roca
+tfda:J0405102	龍虎石斑魚	mero dragón-tigre
+tfda:J0405201	斑點九刺鮨(去皮)	mero pavo real sin piel
+tfda:J0405301	斑點九刺鮨(含皮)	mero pavo real con piel
+tfda:J0405401	棕點石斑魚	mero tigre
+tfda:J0405501	鞍帶石斑魚片	mero gigante en filetes
+tfda:J0405601	駝背鱸	mero pantera
+tfda:J0405701	橫紋九刺鮨	mero chocolate
+tfda:J0405801	大口黑鱸	lubina bocaza
+tfda:J0405901	日本紅目大眼鯛	catalufa japonesa
+tfda:J0406001	血斑異大眼鯛	catalufa manchada
+tfda:J0406101	多鱗沙鮻	sillago plateado
+tfda:J0406201	日本馬頭魚	pez caballo rojo
+tfda:J0406301	白馬頭魚	pez caballo blanco
+tfda:J0406401	鬼頭刀魚片	mahi-mahi en filetes
+tfda:J0406501	鬼頭刀	mahi-mahi
+tfda:J0406601	海鱺	cobia
+tfda:J0406602	海鱺魚片	cobia en filetes
+tfda:J0406701	大口逆鈎鰺	pez reina
+tfda:J0406801	大甲鰺	jurel torpedo
+tfda:J0406901	日本竹筴魚	jurel japonés
+tfda:J0407001	布氏鯧鰺(去皮)	pompano chato sin piel
+tfda:J0407101	布氏鯧鰺(含皮)	pompano chato con piel
+tfda:J0407201	杜氏鰤	serviola
+tfda:J0407202	長鰭鰤魚	serviola de aletas largas
+tfda:J0407301	范氏副葉鰺	jurel de aleta negra
+tfda:J0407401	泰勃圓鰺	jurel de cola roja
+tfda:J0407501	烏鯧	pez luna negro
+tfda:J0407601	無斑圓鰺	jurel colirrojo del Pacífico
+tfda:J0407701	藍圓鰺	jurel redondo
+tfda:J0407801	雙帶鰺	pez arcoíris
+tfda:J0407901	眼眶魚	pez luna
+tfda:J0408001	斯氏長鰭烏魴	pezcuchillo
+tfda:J0408101	史氏紅諧魚	pez rubí japonés
+tfda:J0408201	希氏姬鯛	pargo lavanda
+tfda:J0408301	赤鰭笛鯛	pargo escarlata
+tfda:J0408401	孟加拉笛鯛	pargo de Bengala
+tfda:J0408501	前鱗笛鯛	pargo indio
+tfda:J0408601	馬拉巴笛鯛	pargo malabar
+tfda:J0408701	單斑笛鯛	pargo de una mancha
+tfda:J0408801	黃擬烏尾鮗	pargo amarillo
+tfda:J0408901	葉唇笛鯛	pargo de labios gruesos
+tfda:J0409001	松鯛	pez tres colas
+tfda:J0409101	三線磯鱸	ronco de tres líneas
+tfda:J0409201	星雞魚	ronco plateado
 tfda:J0409902	真鯛(3月)	pargo rojo
 tfda:J0410101	黑棘鯛(去皮)	dorada negra sin piel
 tfda:J2101701	日本龍蝦	langosta japonesa
