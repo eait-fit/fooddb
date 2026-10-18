@@ -20,3 +20,8 @@ Task: one PR per class; class 2 first. PR open → `agent-fleet tell agent:kir/e
 3. Compute per-set before/after hit@1/hit@5; verify no set loses hit@1 by >1 query.
 4. Commit tests + decisions.md (+ bench results + STATE.md), push dv-fooddb-161, open PR vs main closing #161 with numbers (draft body in /tmp/pr_body.md).
 5. `agent-fleet tell agent:kir/eait/lead-fooddb REVIEW eait-fit/fooddb#<pr> "…"` → STOP.
+
+## Final status (DONE — stopped)
+- PR open: https://github.com/eait-fit/fooddb/pull/165 (closes #161, class 2 only)
+- Reported REVIEW to lead-fooddb: msg 01M587TPQNKACPZ4NXAHM2N06G
+- Fleet NOTE received: DEPLOY FREEZE (coordinator) — no `make deploy`, no ieat-app pin PRs until lifted. Code/PRs/reviews continue. Noted; no deploy planned by me regardless.
