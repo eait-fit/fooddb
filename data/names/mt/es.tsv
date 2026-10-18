@@ -30596,28 +30596,1276 @@ matvaretabellen:13.160	Café au lait, with oat based beverage (with iodine)	caf�
 matvaretabellen:13.161	Cortado, single, with oat based beverage (with iodine)	cortado con bebida de avena con yodo
 matvaretabellen:13.162	Caffe Latte, single, with oat based beverage (with iodine)	café latte con bebida de avena con yodo
 matvaretabellen:13.163	Smoothie, green	smoothie verde
+mext:01001	アマランサス 玄穀	amaranto en grano
+mext:01002	あわ 精白粒	mijo italiano
+mext:01003	あわ あわもち	mochi de mijo italiano
+mext:01004	えんばく オートミール	copos de avena
+mext:01005	おおむぎ 七分つき押麦	copos de cebada pulida al 70 %
+mext:01006	おおむぎ 押麦 乾	copos de cebada secos
+mext:01007	おおむぎ 米粒麦	cebada partida
+mext:01008	おおむぎ 大麦めん 乾	fideos de cebada secos
+mext:01009	おおむぎ 大麦めん ゆで	fideos de cebada cocidos
+mext:01010	おおむぎ 麦こがし	harina de cebada tostada
+mext:01011	きび 精白粒	mijo común
+mext:01012	こむぎ ［玄穀］ 国産 普通	grano de trigo japonés
+mext:01013	こむぎ ［玄穀］ 輸入 軟質	grano de trigo blando de importación
+mext:01014	こむぎ ［玄穀］ 輸入 硬質	grano de trigo duro de importación
+mext:01015	こむぎ ［小麦粉］ 薄力粉 1等	harina floja grado 1
+mext:01016	こむぎ ［小麦粉］ 薄力粉 2等	harina floja grado 2
+mext:01018	こむぎ ［小麦粉］ 中力粉 1等	harina de media fuerza grado 1
+mext:01019	こむぎ ［小麦粉］ 中力粉 2等	harina de media fuerza grado 2
+mext:01020	こむぎ ［小麦粉］ 強力粉 1等	harina de fuerza grado 1
+mext:01021	こむぎ ［小麦粉］ 強力粉 2等	harina de fuerza grado 2
+mext:01023	こむぎ ［小麦粉］ 強力粉 全粒粉	harina de fuerza integral
+mext:01024	こむぎ ［小麦粉］ プレミックス粉 ホットケーキ用	preparado para tortitas
+mext:01025	こむぎ ［小麦粉］ プレミックス粉 天ぷら用	preparado para tempura
+mext:01026	こむぎ ［パン類］ 角形食パン 食パン	pan de molde
+mext:01028	こむぎ ［パン類］ コッペパン	pan koppe
+mext:01030	こむぎ ［パン類］ 乾パン	galletas de campaña
+mext:01031	こむぎ ［パン類］ フランスパン	baguette
+mext:01032	こむぎ ［パン類］ ライ麦パン	pan de centeno
+mext:01033	こむぎ ［パン類］ ぶどうパン	pan con pasas
+mext:01034	こむぎ ［パン類］ ロールパン	panecillo
+mext:01035	こむぎ ［パン類］ クロワッサン リッチタイプ	croissant de mantequilla
+mext:01036	こむぎ ［パン類］ イングリッシュマフィン	muffins ingleses
+mext:01037	こむぎ ［パン類］ ナン	naan
+mext:01038	こむぎ ［うどん・そうめん類］ うどん 生	udon fresco
+mext:01039	こむぎ ［うどん・そうめん類］ うどん ゆで	udon cocido
+mext:01041	こむぎ ［うどん・そうめん類］ 干しうどん 乾	udon seco
+mext:01042	こむぎ ［うどん・そうめん類］ 干しうどん ゆで	udon seco cocido
+mext:01043	こむぎ ［うどん・そうめん類］ そうめん・ひやむぎ 乾	fideos sōmen e hiyamugi secos
+mext:01044	こむぎ ［うどん・そうめん類］ そうめん・ひやむぎ ゆで	fideos sōmen e hiyamugi cocidos
+mext:01045	こむぎ ［うどん・そうめん類］ 手延そうめん・手延ひやむぎ 乾	sōmen e hiyamugi de estirado manual secos
+mext:01046	こむぎ ［うどん・そうめん類］ 手延そうめん・手延ひやむぎ ゆで	sōmen e hiyamugi de estirado manual cocidos
+mext:01047	こむぎ ［中華めん類］ 中華めん 生	fideos chinos frescos
+mext:01048	こむぎ ［中華めん類］ 中華めん ゆで	fideos chinos cocidos
+mext:01049	こむぎ ［中華めん類］ 蒸し中華めん 蒸し中華めん	fideos chinos al vapor
+mext:01050	こむぎ ［中華めん類］ 干し中華めん 乾	fideos chinos secos
+mext:01051	こむぎ ［中華めん類］ 干し中華めん ゆで	fideos chinos secos cocidos
+mext:01052	こむぎ ［中華めん類］ 沖縄そば 生	fideos de Okinawa frescos
+mext:01053	こむぎ ［中華めん類］ 沖縄そば ゆで	fideos de Okinawa cocidos
+mext:01054	こむぎ ［中華めん類］ 干し沖縄そば 乾	fideos de Okinawa secos
+mext:01055	こむぎ ［中華めん類］ 干し沖縄そば ゆで	fideos de Okinawa secos cocidos
+mext:01056	こむぎ ［即席めん類］ 即席中華めん 油揚げ味付け	fideos instantáneos fritos condimentados
+mext:01057	こむぎ ［即席めん類］ 即席中華めん 油揚げ 乾 （添付調味料等を含むもの）	fideos instantáneos fritos secos con condimento
+mext:01058	こむぎ ［即席めん類］ 即席中華めん 非油揚げ 乾 （添付調味料等を含むもの）	fideos instantáneos no fritos secos con condimento
+mext:01060	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 焼きそば 乾 （添付調味料等を含むもの）	yakisoba instantáneo en vaso con condimento
+mext:01061	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 乾 （添付調味料等を含むもの）	fideos instantáneos chinos no fritos con condimento
+mext:01062	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 乾 （添付調味料等を含むもの）	fideos instantáneos japoneses fritos con condimento
+mext:01063	こむぎ ［マカロニ・スパゲッティ類］ マカロニ・スパゲッティ 乾	macarrones y espaguetis secos
+mext:01064	こむぎ ［マカロニ・スパゲッティ類］ マカロニ・スパゲッティ ゆで	macarrones y espaguetis cocidos
+mext:01065	こむぎ ［ふ類］ 生ふ	gluten de trigo crudo (nama-fu)
+mext:01066	こむぎ ［ふ類］ 焼きふ 釜焼きふ	gluten de trigo horneado (kamayaki-fu)
+mext:01067	こむぎ ［ふ類］ 焼きふ 板ふ	gluten de trigo horneado en placas (ita-fu)
+mext:01068	こむぎ ［ふ類］ 焼きふ 車ふ	gluten de trigo horneado en ruedas (kuruma-fu)
+mext:01069	こむぎ ［その他］ ちくわぶ	chikuwabu (masa de trigo cocida)
+mext:01070	こむぎ ［その他］ 小麦はいが	germen de trigo
+mext:01071	こむぎ ［その他］ 小麦たんぱく 粉末状	proteína de trigo en polvo
+mext:01072	こむぎ ［その他］ 小麦たんぱく 粒状	proteína de trigo en gránulos
+mext:01073	こむぎ ［その他］ 小麦たんぱく ペースト状	proteína de trigo en pasta
+mext:01074	こむぎ ［その他］ ぎょうざの皮 生	masa para gyoza
+mext:01075	こむぎ ［その他］ しゅうまいの皮 生	masa para shūmai
+mext:01076	こむぎ ［その他］ ピザ生地	masa de pizza
+mext:01077	こむぎ ［その他］ パン粉 生	pan rallado fresco
+mext:01078	こむぎ ［その他］ パン粉 半生	pan rallado semiseco
+mext:01079	こむぎ ［その他］ パン粉 乾燥	pan rallado seco
+mext:01080	こめ ［水稲穀粒］ 玄米	arroz integral
+mext:01081	こめ ［水稲穀粒］ 半つき米	arroz semipulido
+mext:01082	こめ ［水稲穀粒］ 七分つき米	arroz pulido al 70 %
+mext:01083	こめ ［水稲穀粒］ 精白米 うるち米	arroz blanco
+mext:01084	こめ ［水稲穀粒］ はいが精米	arroz blanco con germen
+mext:01085	こめ ［水稲めし］ 玄米	arroz integral cocido
+mext:01086	こめ ［水稲めし］ 半つき米	arroz semipulido cocido
+mext:01087	こめ ［水稲めし］ 七分つき米	arroz pulido al 70 % cocido
+mext:01088	こめ ［水稲めし］ 精白米 うるち米	arroz blanco cocido
+mext:01089	こめ ［水稲めし］ はいが精米	arroz blanco con germen cocido
+mext:01090	こめ ［水稲全かゆ］ 玄米	gachas de arroz integral espesas
+mext:01091	こめ ［水稲全かゆ］ 半つき米	gachas de arroz semipulido espesas
+mext:01092	こめ ［水稲全かゆ］ 七分つき米	gachas de arroz pulido al 70 % espesas
+mext:01093	こめ ［水稲全かゆ］ 精白米	gachas de arroz espesas
+mext:01094	こめ ［水稲五分かゆ］ 玄米	gachas de arroz integral
+mext:01095	こめ ［水稲五分かゆ］ 半つき米	gachas de arroz semipulido
+mext:01096	こめ ［水稲五分かゆ］ 七分つき米	gachas de arroz pulido al 70 %
+mext:01097	こめ ［水稲五分かゆ］ 精白米	gachas de arroz
+mext:01098	こめ ［水稲おもゆ］ 玄米	gachas de arroz integral aguadas
+mext:01099	こめ ［水稲おもゆ］ 半つき米	gachas de arroz semipulido aguadas
+mext:01100	こめ ［水稲おもゆ］ 七分つき米	gachas de arroz pulido al 70 % aguadas
+mext:01101	こめ ［水稲おもゆ］ 精白米	gachas de arroz aguadas
 mext:01102	こめ ［陸稲穀粒］ 玄米	arroz integral
+mext:01103	こめ ［陸稲穀粒］ 半つき米	arroz semipulido de secano
+mext:01104	こめ ［陸稲穀粒］ 七分つき米	arroz pulido al 70 % de secano
+mext:01105	こめ ［陸稲穀粒］ 精白米	arroz blanco de secano
+mext:01106	こめ ［陸稲めし］ 玄米	arroz integral de secano cocido
+mext:01107	こめ ［陸稲めし］ 半つき米	arroz semipulido de secano cocido
+mext:01108	こめ ［陸稲めし］ 七分つき米	arroz pulido al 70 % de secano cocido
+mext:01109	こめ ［陸稲めし］ 精白米	arroz blanco de secano cocido
+mext:01110	こめ ［うるち米製品］ アルファ化米 一般用	arroz de cocción rápida
+mext:01111	こめ ［うるち米製品］ おにぎり	onigiri
+mext:01112	こめ ［うるち米製品］ 焼きおにぎり	onigiri a la parrilla
+mext:01113	こめ ［うるち米製品］ きりたんぽ	kiritanpo
+mext:01114	こめ ［うるち米製品］ 上新粉	harina de arroz jōshinko
+mext:01115	こめ ［うるち米製品］ ビーフン	fideos de arroz bifun
+mext:01116	こめ ［うるち米製品］ 米こうじ	kōji de arroz
+mext:01117	こめ ［もち米製品］ もち	mochi
+mext:01118	こめ ［もち米製品］ 赤飯	sekihan (arroz con azuki)
+mext:01119	こめ ［もち米製品］ あくまき	akumaki
+mext:01120	こめ ［もち米製品］ 白玉粉	harina de arroz shiratamako
+mext:01121	こめ ［もち米製品］ 道明寺粉	harina de arroz dōmyōji
+mext:01122	そば そば粉 全層粉	harina de trigo sarraceno integral
+mext:01123	そば そば粉 内層粉	harina de trigo sarraceno de capa interna
 mext:01124	そば そば粉 中層粉	harina de trigo sarraceno
+mext:01125	そば そば粉 表層粉	harina de trigo sarraceno de capa externa
+mext:01126	そば そば米	granos de trigo sarraceno (sobamai)
+mext:01127	そば そば 生	fideos soba frescos
+mext:01128	そば そば ゆで	fideos soba cocidos
+mext:01129	そば 干しそば 乾	fideos soba secos
+mext:01130	そば 干しそば ゆで	fideos soba secos cocidos
+mext:01131	とうもろこし 玄穀 黄色種	maíz amarillo en grano
+mext:01132	とうもろこし コーンミール 黄色種	harina de maíz gruesa amarilla
+mext:01133	とうもろこし コーングリッツ 黄色種	sémola de maíz amarilla
+mext:01134	とうもろこし コーンフラワー 黄色種	harina de maíz amarilla
+mext:01135	とうもろこし ジャイアントコーン フライ 味付け	kikos
+mext:01136	とうもろこし ポップコーン	palomitas
+mext:01137	とうもろこし コーンフレーク	copos de maíz
+mext:01138	はとむぎ 精白粒	lágrimas de Job
+mext:01139	ひえ 精白粒	mijo japonés
+mext:01140	もろこし 玄穀	sorgo en grano
+mext:01141	もろこし 精白粒	sorgo pulido
+mext:01142	ライむぎ 全粒粉	harina de centeno integral
+mext:01143	ライむぎ ライ麦粉	harina de centeno
+mext:01144	こむぎ ［即席めん類］ 即席中華めん 油揚げ 乾 （添付調味料等を含まないもの）	fideos instantáneos fritos secos sin condimento
+mext:01145	こむぎ ［即席めん類］ 即席中華めん 非油揚げ 乾 （添付調味料等を含まないもの）	fideos instantáneos no fritos secos sin condimento
+mext:01146	こむぎ ［小麦粉］ プレミックス粉 お好み焼き用	preparado para okonomiyaki
+mext:01147	こむぎ ［小麦粉］ プレミックス粉 から揚げ用	preparado para karaage
+mext:01148	こむぎ ［パン類］ ベーグル	bagel
+mext:01149	こむぎ ［マカロニ・スパゲッティ類］ 生パスタ 生	pasta fresca
+mext:01150	こむぎ ［その他］ 冷めん 生	fideos reimen frescos
+mext:01151	こめ ［水稲穀粒］ 精白米 もち米	arroz blanco glutinoso
+mext:01152	こめ ［水稲穀粒］ 精白米 インディカ米	arroz blanco índica
+mext:01153	こめ ［水稲穀粒］ 発芽玄米	arroz integral germinado
+mext:01154	こめ ［水稲めし］ 精白米 もち米	arroz blanco glutinoso cocido
+mext:01155	こめ ［水稲めし］ 発芽玄米	arroz integral germinado cocido
+mext:01156	こめ ［うるち米製品］ アルファ化米 学校給食用強化品	arroz de cocción rápida enriquecido
 mext:01157	こめ ［うるち米製品］ 玄米粉	harina de arroz integral
+mext:01158	こめ ［うるち米製品］ 米粉	harina de arroz
+mext:01159	こめ ［うるち米製品］ 米粉パン 小麦グルテン不使用のもの	pan de harina de arroz sin gluten
+mext:01160	こめ ［うるち米製品］ 米粉めん	fideos de harina de arroz
+mext:01161	こめ ［その他］ 米ぬか	salvado de arroz
+mext:01162	とうもろこし 玄穀 白色種	maíz blanco en grano
+mext:01163	とうもろこし コーンミール 白色種	harina de maíz gruesa blanca
+mext:01164	とうもろこし コーングリッツ 白色種	sémola de maíz blanca
+mext:01165	とうもろこし コーンフラワー 白色種	harina de maíz blanca
+mext:01167	キヌア 玄穀	quinoa
+mext:01168	こめ ［水稲めし］ 精白米 インディカ米	arroz blanco índica cocido
+mext:01169	こめ ［うるち米製品］ ライスペーパー	papel de arroz
+mext:01170	おおむぎ 押麦 めし	copos de cebada cocidos
+mext:01171	こむぎ ［小麦粉］ プレミックス粉 天ぷら用 バッター	rebozado para tempura
+mext:01172	こむぎ ［小麦粉］ プレミックス粉 天ぷら用 バッター 揚げ	rebozado de tempura frito
+mext:01173	こむぎ ［マカロニ・スパゲッティ類］ マカロニ・スパゲッティ ソテー	macarrones y espaguetis salteados
+mext:01174	こむぎ ［パン類］ 角形食パン 焼き	pan de molde tostado
+mext:01175	こむぎ ［パン類］ 角形食パン 耳を除いたもの	pan de molde sin corteza
+mext:01176	こむぎ ［パン類］ 角形食パン 耳	corteza de pan de molde
+mext:01177	こむぎ ［ふ類］ 油ふ	gluten de trigo frito (abura-fu)
+mext:01178	こむぎ ［その他］ かやきせんべい	galleta de arroz kayaki-senbei
+mext:01179	こむぎ ［その他］ 春巻きの皮 生	masa para rollitos de primavera
+mext:01180	こむぎ ［その他］ 春巻きの皮 揚げ	masa para rollitos de primavera frita
+mext:01181	こめ ［水稲穀粒］ 赤米	arroz rojo
+mext:01182	こめ ［水稲穀粒］ 黒米	arroz negro
+mext:01183	こめ ［水稲めし］ 赤米	arroz rojo cocido
+mext:01184	こめ ［水稲めし］ 黒米	arroz negro cocido
+mext:01185	こめ ［水稲軟めし］ 精白米	arroz blanco muy cocido
+mext:01186	こむぎ ［うどん・そうめん類］ うどん 半生うどん	udon semiseco
+mext:01187	こむぎ ［中華めん類］ 半生中華めん	fideos chinos semisecos
+mext:01188	こむぎ ［中華めん類］ 蒸し中華めん ソテー	fideos chinos al vapor salteados
+mext:01189	こむぎ ［即席めん類］ 即席中華めん 油揚げ ゆで （添付調味料等を含まないもの）	fideos instantáneos fritos cocidos sin condimento
+mext:01190	こむぎ ［即席めん類］ 即席中華めん 非油揚げ ゆで （添付調味料等を含まないもの）	fideos instantáneos no fritos cocidos sin condimento
+mext:01191	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 乾 （添付調味料等を含むもの）	fideos instantáneos chinos fritos sabor salsa de soja secos
+mext:01192	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos sabor salsa de soja preparados sin la sopa
+mext:01193	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 乾 （添付調味料等を含むもの）	fideos instantáneos chinos fritos salados secos
+mext:01194	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos salados preparados sin la sopa
+mext:01195	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos chinos no fritos preparados sin la sopa
+mext:01196	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos japoneses fritos preparados sin la sopa
+mext:01197	そば そば 半生そば	fideos soba semisecos
+mext:01198	こむぎ ［即席めん類］ 即席中華めん 油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos fritos preparados completos
+mext:01199	こむぎ ［即席めん類］ 即席中華めん 非油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos no fritos preparados completos
+mext:01200	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 調理後全体 （添付調味料等を含むもの）	fideos instantáneos chinos fritos sabor salsa de soja preparados completos
+mext:01201	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 調理後全体 （添付調味料等を含むもの）	fideos instantáneos chinos fritos salados preparados completos
+mext:01202	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 焼きそば 調理後全体 （添付調味料等を含むもの）	yakisoba instantáneo en vaso preparado completo
+mext:01203	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos chinos no fritos preparados completos
+mext:01204	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos japoneses fritos preparados completos
+mext:01205	こむぎ ［パン類］ 山形食パン 食パン	pan de molde abombado
+mext:01206	こむぎ ［パン類］ 食パン リーンタイプ	pan de molde ligero
+mext:01207	こむぎ ［パン類］ 食パン リッチタイプ	pan de molde enriquecido
+mext:01208	こむぎ ［パン類］ 全粒粉パン	pan integral
+mext:01209	こむぎ ［パン類］ クロワッサン レギュラータイプ	croissant
+mext:01210	こむぎ ［パン類］ くるみパン	pan con nueces
+mext:01211	こめ ［うるち米製品］ 米粉パン 食パン	pan de molde de harina de arroz
+mext:01212	こめ ［うるち米製品］ 米粉パン ロールパン	panecillo de harina de arroz
+mext:01213	こむぎ ［パン類］ バンズ	panecillos de hamburguesa
+mext:01214	こめ ［うるち米製品］ 水稲全かゆ レトルト 玄米	gachas de arroz integral espesas en bolsa
+mext:01215	こめ ［うるち米製品］ 水稲全かゆ レトルト 精白米	gachas de arroz espesas en bolsa
 mext:02001	きくいも 塊茎 生	topinambur crudo
+mext:02002	こんにゃく 精粉	harina de konjac
+mext:02003	こんにゃく 板こんにゃく 精粉こんにゃく	konjac en láminas de harina refinada
+mext:02004	こんにゃく 板こんにゃく 生いもこんにゃく	konjac en láminas de raíz cruda
+mext:02005	こんにゃく しらたき	shirataki
+mext:02006	さつまいも 塊根 皮なし 生	boniato sin piel crudo
+mext:02007	さつまいも 塊根 皮なし 蒸し	boniato sin piel al vapor
+mext:02008	さつまいも 塊根 皮なし 焼き	boniato sin piel asado
+mext:02009	さつまいも 蒸し切干	boniato seco al vapor
+mext:02010	さといも 球茎 生	taro crudo
+mext:02011	さといも 球茎 水煮	taro cocido
+mext:02012	さといも 球茎 冷凍	taro congelado
+mext:02013	みずいも 球茎 生	taro mizuimo crudo
+mext:02014	みずいも 球茎 水煮	taro mizuimo cocido
+mext:02015	やつがしら 球茎 生	taro yatsugashira crudo
+mext:02016	やつがしら 球茎 水煮	taro yatsugashira cocido
+mext:02017	じゃがいも 塊茎 皮なし 生	patata sin piel cruda
+mext:02018	じゃがいも 塊茎 皮なし 蒸し	patata sin piel al vapor
+mext:02019	じゃがいも 塊茎 皮なし 水煮	patata sin piel cocida
+mext:02020	じゃがいも 塊茎 皮なし フライドポテト （市販冷凍食品を揚げたもの）	patatas fritas de congeladas
+mext:02021	じゃがいも 乾燥マッシュポテト	puré de patatas deshidratado
+mext:02022	ながいも いちょういも 塊根 生	ñame nagaimo ichōimo crudo
+mext:02023	ながいも ながいも 塊根 生	ñame nagaimo crudo
+mext:02024	ながいも ながいも 塊根 水煮	ñame nagaimo cocido
+mext:02025	ながいも やまといも 塊根 生	ñame yamatoimo crudo
+mext:02026	じねんじょ 塊根 生	ñame silvestre (jinenjo) crudo
+mext:02027	だいじょ 塊根 生	ñame daijo crudo
+mext:02028	キャッサバでん粉	almidón de tapioca
+mext:02029	くずでん粉	almidón de kuzu
+mext:02030	米でん粉	almidón de arroz
+mext:02031	小麦でん粉	almidón de trigo
+mext:02032	サゴでん粉	almidón de sagú
+mext:02033	さつまいもでん粉	almidón de boniato
+mext:02034	じゃがいもでん粉	almidón de patata
+mext:02035	とうもろこしでん粉	almidón de maíz
 mext:02036	くずきり 乾	fideos de kuzu secos
+mext:02037	くずきり ゆで	fideos kuzukiri cocidos
+mext:02038	タピオカパール 乾	perlas de tapioca secas
+mext:02039	はるさめ 緑豆はるさめ 乾	fideos de cristal de judía mungo secos
+mext:02040	はるさめ 普通はるさめ 乾	fideos de cristal secos
+mext:02041	きくいも 塊茎 水煮	aguaturma cocida
+mext:02042	こんにゃく 赤こんにゃく	konjac rojo
+mext:02043	こんにゃく 凍みこんにゃく 乾	konjac congelado seco
+mext:02044	こんにゃく 凍みこんにゃく ゆで	konjac congelado seco cocido
+mext:02045	さつまいも 塊根 皮つき 生	boniato con piel crudo
+mext:02046	さつまいも 塊根 皮つき 蒸し	boniato con piel al vapor
+mext:02047	さつまいも 塊根 皮つき 天ぷら	boniato con piel en tempura
+mext:02048	むらさきいも 塊根 皮なし 生	boniato morado sin piel crudo
+mext:02049	むらさきいも 塊根 皮なし 蒸し	boniato morado sin piel al vapor
+mext:02050	セレベス 球茎 生	taro celebés crudo
+mext:02051	セレベス 球茎 水煮	taro celebés cocido
+mext:02052	たけのこいも 球茎 生	taro takenokoimo crudo
+mext:02053	たけのこいも 球茎 水煮	taro takenokoimo cocido
+mext:02054	ヤーコン 塊根 生	yacón crudo
+mext:02055	ヤーコン 塊根 水煮	yacón cocido
+mext:02056	ごま豆腐	tofu de sésamo
+mext:02057	タピオカパール ゆで	perlas de tapioca cocidas
+mext:02058	でん粉めん 生	fideos de almidón frescos
+mext:02059	でん粉めん 乾	fideos de almidón secos
+mext:02060	でん粉めん 乾 ゆで	fideos de almidón secos cocidos
+mext:02061	はるさめ 緑豆はるさめ ゆで	fideos de cristal de judía mungo cocidos
+mext:02062	はるさめ 普通はるさめ ゆで	fideos de cristal cocidos
+mext:02063	じゃがいも 塊茎 皮つき 生	patata con piel cruda
+mext:02064	じゃがいも 塊茎 皮つき 電子レンジ調理	patata con piel al microondas
+mext:02065	じゃがいも 塊茎 皮つき フライドポテト （生を揚げたもの）	patatas fritas con piel
+mext:02066	じゃがいも 塊茎 皮なし 電子レンジ調理	patata sin piel al microondas
+mext:02067	じゃがいも 塊茎 皮なし フライドポテト （生を揚げたもの）	patatas fritas sin piel
+mext:02068	アメリカほどいも 塊根 生	apios crudo
+mext:02069	アメリカほどいも 塊根 ゆで	apios cocido
+mext:02070	おおうばゆりでん粉	almidón de lirio obayuri
+mext:03001	黒砂糖	azúcar de caña sin refinar (kurozatō)
+mext:03002	和三盆糖	azúcar wasanbon
+mext:03003	車糖 上白糖	azúcar blanco (jōhakutō)
+mext:03004	車糖 三温糖	azúcar san'ontō (marrón claro)
+mext:03005	ざらめ糖 グラニュー糖	azúcar granulado
+mext:03006	ざらめ糖 白ざら糖	azúcar blanco de grano grueso
+mext:03007	ざらめ糖 中ざら糖	azúcar moreno claro
+mext:03008	加工糖 角砂糖	azúcar en terrones
+mext:03009	加工糖 氷砂糖	azúcar cande
+mext:03010	加工糖 コーヒーシュガー	azúcar para café
+mext:03011	加工糖 粉糖	azúcar glas
+mext:03012	液糖 しょ糖型液糖	jarabe de sacarosa
+mext:03013	液糖 転化型液糖	jarabe invertido
+mext:03014	氷糖みつ	jarabe kōrimito
+mext:03015	粉あめ	glucosa en polvo
+mext:03017	ぶどう糖 全糖	glucosa integral
+mext:03018	ぶどう糖 含水結晶	glucosa monohidrato
+mext:03019	ぶどう糖 無水結晶	glucosa anhidra
+mext:03020	果糖	fructosa
+mext:03022	はちみつ	miel
+mext:03023	メープルシロップ	jarabe de arce
+mext:03024	水あめ 酵素糖化	jarabe de glucosa enzimático
+mext:03025	水あめ 酸糖化	jarabe de glucosa ácido
+mext:03026	異性化液糖 ぶどう糖果糖液糖	jarabe de glucosa y fructosa
+mext:03027	異性化液糖 果糖ぶどう糖液糖	jarabe de fructosa y glucosa
+mext:03028	異性化液糖 高果糖液糖	jarabe de alta fructosa
+mext:03029	黒蜜	jarabe kuromitsu
+mext:03030	てんさい含蜜糖	azúcar de remolacha con melaza
+mext:03031	還元麦芽糖	maltitol
+mext:03032	還元水あめ	jarabe de maltitol
+mext:03033	はちみつ 国産品	miel japonesa
+mext:04001	あずき 全粒 乾	alubias azuki secas
+mext:04002	あずき 全粒 ゆで	alubias azuki cocidas
+mext:04003	あずき ゆで小豆缶詰	alubias azuki cocidas en conserva
+mext:04004	あずき あん こし生あん	anko fino (koshi-an)
+mext:04005	あずき あん さらしあん （乾燥あん）	anko seco (sarashi-an)
+mext:04006	あずき あん つぶし練りあん	anko de trozos cocido (tsubushi-neri-an)
+mext:04007	いんげんまめ 全粒 乾	alubias secas
+mext:04008	いんげんまめ 全粒 ゆで	alubias cocidas
+mext:04009	いんげんまめ うずら豆	alubias uzura
+mext:04010	いんげんまめ こし生あん	anko fino de alubias blancas
+mext:04011	いんげんまめ 豆きんとん	kinton de alubias
+mext:04012	えんどう 全粒 青えんどう 乾	guisantes secos
+mext:04013	えんどう 全粒 青えんどう ゆで	guisantes secos cocidos
+mext:04014	えんどう グリンピース（揚げ豆）	guisantes fritos
+mext:04015	えんどう 塩豆	guisantes salados
+mext:04016	えんどう うぐいす豆	guisantes uguisu
+mext:04017	ささげ 全粒 乾	carillas secas
+mext:04018	ささげ 全粒 ゆで	carillas cocidas
+mext:04019	そらまめ 全粒 乾	habas secas
+mext:04020	そらまめ フライビーンズ	habas fritas
+mext:04021	そらまめ おたふく豆	habas otafuku
+mext:04022	そらまめ ふき豆	habas fuki
+mext:04023	だいず ［全粒・全粒製品］ 全粒 黄大豆 国産 乾	soja amarilla japonesa seca
+mext:04024	だいず ［全粒・全粒製品］ 全粒 黄大豆 国産 ゆで	soja amarilla japonesa cocida
+mext:04025	だいず ［全粒・全粒製品］ 全粒 黄大豆 米国産 乾	soja amarilla estadounidense seca
+mext:04026	だいず ［全粒・全粒製品］ 全粒 黄大豆 中国産 乾	soja amarilla china seca
+mext:04027	だいず ［全粒・全粒製品］ 全粒 黄大豆 ブラジル産 乾	soja amarilla brasileña seca
+mext:04028	だいず ［全粒・全粒製品］ 水煮缶詰 黄大豆	soja en conserva al natural
+mext:04029	だいず ［全粒・全粒製品］ きな粉 黄大豆 全粒大豆	kinako de soja amarilla entera
+mext:04030	だいず ［全粒・全粒製品］ きな粉 黄大豆 脱皮大豆	kinako de soja amarilla pelada
+mext:04031	だいず ［全粒・全粒製品］ ぶどう豆	soja dulce (budō-mame)
+mext:04032	だいず ［豆腐・油揚げ類］ 木綿豆腐	tofu momen (firme)
+mext:04033	だいず ［豆腐・油揚げ類］ 絹ごし豆腐	tofu kinugoshi (sedoso)
+mext:04034	だいず ［豆腐・油揚げ類］ ソフト豆腐	tofu blando
+mext:04035	だいず ［豆腐・油揚げ類］ 充てん豆腐	tofu envasado (jūten)
+mext:04036	だいず ［豆腐・油揚げ類］ 沖縄豆腐	tofu de Okinawa
+mext:04037	だいず ［豆腐・油揚げ類］ ゆし豆腐	tofu yushi
+mext:04038	だいず ［豆腐・油揚げ類］ 焼き豆腐	tofu asado (yaki-dōfu)
+mext:04039	だいず ［豆腐・油揚げ類］ 生揚げ	tofu frito grueso (atsuage)
+mext:04040	だいず ［豆腐・油揚げ類］ 油揚げ 生	aburaage crudo
+mext:04041	だいず ［豆腐・油揚げ類］ がんもどき	ganmodoki
+mext:04042	だいず ［豆腐・油揚げ類］ 凍り豆腐 乾	tofu congelado seco (kōya-dōfu)
+mext:04043	だいず ［豆腐・油揚げ類］ 豆腐よう	tofu fermentado (tōfuyō)
+mext:04044	だいず ［豆腐・油揚げ類］ 豆腐竹輪 蒸し	chikuwa de tofu al vapor
+mext:04045	だいず ［豆腐・油揚げ類］ 豆腐竹輪 焼き	chikuwa de tofu asada
+mext:04046	だいず ［納豆類］ 糸引き納豆	natto de hebras
+mext:04047	だいず ［納豆類］ 挽きわり納豆	natto picado
+mext:04048	だいず ［納豆類］ 五斗納豆	natto gotō
+mext:04049	だいず ［納豆類］ 寺納豆	natto de templo
+mext:04051	だいず ［その他］ おから 生	okara cruda
+mext:04052	だいず ［その他］ 豆乳 豆乳	bebida de soja
+mext:04053	だいず ［その他］ 豆乳 調製豆乳	bebida de soja ajustada
+mext:04054	だいず ［その他］ 豆乳 豆乳飲料・麦芽コーヒー	bebida de soja con café de malta
+mext:04055	だいず ［その他］ 大豆たんぱく 粒状大豆たんぱく	proteína de soja en gránulos
+mext:04056	だいず ［その他］ 大豆たんぱく 濃縮大豆たんぱく	proteína de soja concentrada
+mext:04057	だいず ［その他］ 大豆たんぱく 分離大豆たんぱく 塩分無調整タイプ	proteína de soja aislada sin ajuste de sal
+mext:04058	だいず ［その他］ 大豆たんぱく 繊維状大豆たんぱく	proteína de soja fibrosa
+mext:04059	だいず ［その他］ 湯葉 生	yuba fresca
+mext:04060	だいず ［その他］ 湯葉 干し 乾	yuba seca
+mext:04061	だいず ［その他］ 金山寺みそ	miso kinzanji
+mext:04062	だいず ［その他］ ひしおみそ	miso hishio
+mext:04063	だいず ［その他］ テンペ	tempeh
+mext:04064	つるあずき 全粒 乾	alubias tsuru-azuki secas
+mext:04065	ひよこまめ 全粒 乾	garbanzos secos
+mext:04066	ひよこまめ 全粒 ゆで	garbanzos cocidos
+mext:04067	ひよこまめ 全粒 フライ 味付け	garbanzos fritos salados
+mext:04068	べにばないんげん 全粒 乾	alubias escarlata secas
+mext:04069	べにばないんげん 全粒 ゆで	alubias rojas cocidas
+mext:04070	らいまめ 全粒 乾	alubias de Lima secas
+mext:04071	りょくとう 全粒 乾	judías mungo secas
+mext:04072	りょくとう 全粒 ゆで	judías mungo cocidas
+mext:04073	レンズまめ 全粒 乾	lentejas secas
+mext:04074	えんどう 全粒 赤えんどう 乾	guisantes rojos secos
+mext:04075	えんどう 全粒 赤えんどう ゆで	guisantes rojos cocidos
+mext:04076	そらまめ しょうゆ豆	habas en salsa de soja (shōyu-mame)
+mext:04077	だいず ［全粒・全粒製品］ 全粒 黒大豆 国産 乾	soja negra japonesa seca
+mext:04078	だいず ［全粒・全粒製品］ いり大豆 黄大豆	soja amarilla tostada
 mext:04079	だいず ［全粒・全粒製品］ いり大豆 黒大豆	soja negra tostada
+mext:04080	だいず ［全粒・全粒製品］ いり大豆 青大豆	soja verde tostada
+mext:04081	だいず ［全粒・全粒製品］ 蒸し大豆 黄大豆	soja amarilla al vapor
 mext:04082	だいず ［全粒・全粒製品］ きな粉 青大豆 全粒大豆	harina de soja tostada (kinako)
+mext:04083	だいず ［全粒・全粒製品］ 大豆はいが	germen de soja
+mext:04084	だいず ［豆腐・油揚げ類］ 油揚げ 油抜き 生	aburaage desengrasado crudo
+mext:04085	だいず ［豆腐・油揚げ類］ 油揚げ 油抜き 焼き	aburaage desengrasado asado
+mext:04086	だいず ［豆腐・油揚げ類］ 油揚げ 油抜き ゆで	aburaage desengrasado cocido
+mext:04087	だいず ［豆腐・油揚げ類］ 凍り豆腐 水煮	tofu congelado cocido
+mext:04088	だいず ［豆腐・油揚げ類］ ろくじょう豆腐	tofu rokujō
+mext:04089	だいず ［その他］ おから 乾燥	okara seca
+mext:04090	だいず ［その他］ 大豆たんぱく 分離大豆たんぱく 塩分調整タイプ	proteína de soja aislada con ajuste de sal
+mext:04091	だいず ［その他］ 湯葉 干し 湯戻し	yuba seca rehidratada
+mext:04092	つるあずき 全粒 ゆで	alubias tsuru-azuki cocidas
+mext:04093	らいまめ 全粒 ゆで	alubias de Lima cocidas
+mext:04094	レンズまめ 全粒 ゆで	lentejas cocidas
+mext:04095	だいず ［豆腐・油揚げ類］ 油揚げ 甘煮	aburaage guisado dulce
+mext:04096	だいず ［全粒・全粒製品］ きな粉 青大豆 脱皮大豆	kinako de soja verde pelada
+mext:04097	だいず ［豆腐・油揚げ類］ 木綿豆腐 （凝固剤：塩化マグネシウム）	tofu momen (con cloruro de magnesio)
+mext:04098	だいず ［豆腐・油揚げ類］ 木綿豆腐 （凝固剤：硫酸カルシウム）	tofu momen (con sulfato de calcio)
+mext:04099	だいず ［豆腐・油揚げ類］ 絹ごし豆腐 （凝固剤：塩化マグネシウム）	tofu kinugoshi (con cloruro de magnesio)
+mext:04100	だいず ［豆腐・油揚げ類］ 絹ごし豆腐 （凝固剤：硫酸カルシウム）	tofu kinugoshi (con sulfato de calcio)
+mext:04101	あずき あん こし練りあん （並あん）	anko fino cocido (nami-an)
+mext:04102	あずき あん こし練りあん （中割りあん）	anko fino cocido denso
+mext:04103	あずき あん こし練りあん （もなかあん）	anko fino cocido para monaka
+mext:04104	だいず ［全粒・全粒製品］ 全粒 青大豆 国産 乾	soja verde japonesa seca
+mext:04105	だいず ［全粒・全粒製品］ 全粒 青大豆 国産 ゆで	soja verde japonesa cocida
+mext:04106	だいず ［全粒・全粒製品］ 全粒 黒大豆 国産 ゆで	soja negra japonesa cocida
+mext:04108	やぶまめ 乾	alubias yabumame secas
+mext:04109	だいず ［全粒・全粒製品］ きな粉（砂糖入り） 青きな粉	kinako con azúcar de soja verde
+mext:04110	だいず ［全粒・全粒製品］ きな粉（砂糖入り） きな粉	kinako con azúcar
+mext:04111	あずき あん つぶし生あん	anko de trozos (tsubushi-an)
+mext:04112	えんどう うぐいすあん	uguisu-an (pasta de guisantes)
+mext:04113	だいず ［豆腐・油揚げ類］ 絹生揚げ	tofu frito grueso sedoso
+mext:04114	だいず ［納豆類］ 塩納豆	natto salado
+mext:04115	だいず ［納豆類］ 干し納豆	natto seco
+mext:05001	アーモンド 乾	almendras secas
+mext:05002	アーモンド フライ 味付け	almendras fritas saladas
+mext:05003	あさ 乾	semillas de cáñamo secas
+mext:05004	えごま 乾	semillas de egoma secas
+mext:05005	カシューナッツ フライ 味付け	anacardos fritos salados
+mext:05006	かぼちゃ いり 味付け	pipas de calabaza tostadas saladas
+mext:05007	かや いり	nueces de kaya tostadas
+mext:05008	ぎんなん 生	ginkgo crudos
+mext:05009	ぎんなん ゆで	ginkgo cocidos
+mext:05010	日本ぐり 生	castañas japonesas crudas
+mext:05011	日本ぐり ゆで	castañas japonesas cocidas
+mext:05012	日本ぐり 甘露煮	castañas japonesas en almíbar
+mext:05013	中国ぐり 甘ぐり	castañas chinas dulces
+mext:05014	くるみ いり	nueces tostadas
+mext:05015	けし 乾	semillas de amapola secas
+mext:05016	ココナッツ ココナッツパウダー	coco rallado
+mext:05017	ごま 乾	sésamo seco
+mext:05018	ごま いり	sésamo tostado
+mext:05019	ごま むき	sésamo pelado
+mext:05020	しい 生	nueces de haya crudas
+mext:05021	すいか いり 味付け	pipas de sandía tostadas saladas
+mext:05022	とち 蒸し	nueces de tochi al vapor
+mext:05023	はす 未熟 生	semillas de loto inmaduras crudas
+mext:05024	はす 成熟 乾	semillas de loto maduras secas
+mext:05025	ひし 生	castaña de agua (hishi) cruda
 mext:05026	ピスタチオ いり 味付け	pistachos tostados salados
 mext:05027	ひまわり フライ 味付け	pipas de girasol fritas saladas
+mext:05028	ブラジルナッツ フライ 味付け	nueces de Brasil fritas saladas
+mext:05029	ヘーゼルナッツ フライ 味付け	avellanas fritas saladas
+mext:05030	ペカン フライ 味付け	nueces pecanas fritas saladas
+mext:05031	マカダミアナッツ いり 味付け	macadamias tostadas saladas
+mext:05032	まつ 生	piñones crudos
+mext:05033	まつ いり	piñones tostados
+mext:05034	らっかせい 大粒種 乾	cacahuetes grandes crudos
+mext:05035	らっかせい 大粒種 いり	cacahuetes grandes tostados
+mext:05036	らっかせい バターピーナッツ	cacahuetes con sabor a mantequilla
+mext:05037	らっかせい ピーナッツバター	crema de cacahuete
+mext:05040	アーモンド いり 無塩	almendras tostadas sin sal
+mext:05041	あまに いり	linaza tostada
+mext:05042	ごま ねり	tahini
+mext:05043	はす 成熟 ゆで	semillas de loto maduras cocidas
+mext:05044	らっかせい 小粒種 乾	cacahuetes pequeños crudos
+mext:05045	らっかせい 小粒種 いり	cacahuetes pequeños tostados
+mext:05046	チアシード 乾	semillas de chía secas
+mext:05047	とうびし 生	nueces de tobishi crudas
+mext:05048	とうびし ゆで	nueces de tobishi cocidas
+mext:06001	アーティチョーク 花らい 生	alcachofa cruda
+mext:06002	アーティチョーク 花らい ゆで	alcachofa cocida
+mext:06003	あさつき 葉 生	cebollino japonés (asatsuki) crudo
+mext:06004	あさつき 葉 ゆで	cebollino japonés (asatsuki) cocido
+mext:06005	あしたば 茎葉 生	ashitaba cruda
+mext:06006	あしたば 茎葉 ゆで	ashitaba cocida
+mext:06007	アスパラガス 若茎 生	espárragos crudos
+mext:06008	アスパラガス 若茎 ゆで	espárragos cocidos
+mext:06009	アスパラガス 水煮缶詰	espárragos en conserva al natural
+mext:06010	いんげんまめ さやいんげん 若ざや 生	judías verdes crudas
+mext:06011	いんげんまめ さやいんげん 若ざや ゆで	judías verdes cocidas
+mext:06012	うど 茎 生	udo crudo
+mext:06013	うど 茎 水さらし	udo en remojo
+mext:06014	やまうど 茎 生	udo de montaña crudo
+mext:06015	えだまめ 生	edamame frescos
+mext:06016	えだまめ ゆで	edamame cocidos
+mext:06017	えだまめ 冷凍	edamame congelados
+mext:06018	エンダイブ 葉 生	endibia cruda
+mext:06019	トウミョウ 茎葉 生	brotes de guisante (tōmyō) crudos
+mext:06020	さやえんどう 若ざや 生	tirabeques crudos
+mext:06021	さやえんどう 若ざや ゆで	tirabeques cocidos
+mext:06022	スナップえんどう 若ざや 生	tirabeques crujientes crudos
+mext:06023	グリンピース 生	guisantes frescos
+mext:06024	グリンピース ゆで	guisantes cocidos
+mext:06025	グリンピース 冷凍	guisantes congelados
+mext:06026	グリンピース 水煮缶詰	guisantes en conserva al natural
+mext:06027	おおさかしろな 葉 生	osaka-shirona cruda
+mext:06028	おおさかしろな 葉 ゆで	osaka-shirona cocida
+mext:06029	おおさかしろな 塩漬	osaka-shirona en salazón
+mext:06030	おかひじき 茎葉 生	okahijiki cruda
+mext:06031	おかひじき 茎葉 ゆで	okahijiki cocida
+mext:06032	オクラ 果実 生	okra cruda
+mext:06033	オクラ 果実 ゆで	okra cocida
+mext:06034	かぶ 葉 生	hojas de nabo crudas
+mext:06035	かぶ 葉 ゆで	hojas de nabo cocidas
+mext:06036	かぶ 根 皮つき 生	nabo con piel crudo
+mext:06037	かぶ 根 皮つき ゆで	nabo con piel cocido
+mext:06038	かぶ 根 皮なし 生	nabo sin piel crudo
+mext:06039	かぶ 根 皮なし ゆで	nabo sin piel cocido
+mext:06040	かぶ 漬物 塩漬 葉	hojas de nabo en salazón
+mext:06041	かぶ 漬物 塩漬 根 皮つき	nabo en salazón con piel
+mext:06042	かぶ 漬物 塩漬 根 皮なし	nabo en salazón sin piel
+mext:06043	かぶ 漬物 ぬかみそ漬 葉	hojas de nabo encurtidas en nukamiso
+mext:06044	かぶ 漬物 ぬかみそ漬 根 皮つき	nabo encurtido en nukamiso con piel
+mext:06045	かぶ 漬物 ぬかみそ漬 根 皮なし	nabo encurtido en nukamiso sin piel
+mext:06046	日本かぼちゃ 果実 生	calabaza japonesa cruda
+mext:06047	日本かぼちゃ 果実 ゆで	calabaza japonesa cocida
+mext:06048	西洋かぼちゃ 果実 生	calabaza kabocha cruda
+mext:06049	西洋かぼちゃ 果実 ゆで	calabaza kabocha cocida
+mext:06050	西洋かぼちゃ 果実 冷凍	calabaza kabocha congelada
+mext:06051	そうめんかぼちゃ 果実 生	calabaza espagueti cruda
+mext:06052	からしな 葉 生	mostaza de hoja cruda
+mext:06053	からしな 塩漬	mostaza de hoja en salazón
+mext:06054	カリフラワー 花序 生	coliflor cruda
+mext:06055	カリフラワー 花序 ゆで	coliflor cocida
+mext:06056	かんぴょう 乾	kampyo (calabaza seca en tiras) seco
+mext:06057	かんぴょう ゆで	kampyo cocido
+mext:06058	きく 花びら 生	pétalos de crisantemo crudos
+mext:06059	きく 花びら ゆで	pétalos de crisantemo cocidos
+mext:06060	きく 菊のり	kikunori (pasta de crisantemo)
+mext:06061	キャベツ 結球葉 生	col cruda
+mext:06062	キャベツ 結球葉 ゆで	col cocida
+mext:06063	グリーンボール 結球葉 生	mini col «green ball» cruda
+mext:06064	レッドキャベツ 結球葉 生	col lombarda cruda
+mext:06065	きゅうり 果実 生	pepino crudo
+mext:06066	きゅうり 漬物 塩漬	pepino en salazón
+mext:06067	きゅうり 漬物 しょうゆ漬	pepino encurtido en salsa de soja
+mext:06068	きゅうり 漬物 ぬかみそ漬	pepino encurtido en nukamiso
+mext:06069	きゅうり 漬物 ピクルス スイート型	pepinillos agridulces
+mext:06070	きゅうり 漬物 ピクルス サワー型	pepinillos en vinagre
+mext:06071	ぎょうじゃにんにく 葉 生	ajo de oso japonés crudo
+mext:06072	みずな 葉 生	mizuna cruda
+mext:06073	みずな 葉 ゆで	mizuna cocida
+mext:06074	みずな 塩漬	mizuna en salazón
+mext:06075	キンサイ 茎葉 生	apio chino (kinsai) crudo
+mext:06076	キンサイ 茎葉 ゆで	apio chino (kinsai) cocido
+mext:06077	クレソン 茎葉 生	berros crudos
+mext:06078	くわい 塊茎 生	kuwai (saeta) crudo
+mext:06079	くわい 塊茎 ゆで	kuwai cocido
+mext:06080	ケール 葉 生	col kale cruda
+mext:06081	コールラビ 球茎 生	colirábano crudo
+mext:06082	コールラビ 球茎 ゆで	colirábano cocido
+mext:06083	こごみ 若芽 生	kogomi (brotes de helecho) crudos
+mext:06084	ごぼう 根 生	raíz de bardana cruda
+mext:06085	ごぼう 根 ゆで	raíz de bardana cocida
+mext:06086	こまつな 葉 生	komatsuna cruda
+mext:06087	こまつな 葉 ゆで	komatsuna cocida
+mext:06088	ザーサイ 漬物	zha cai
+mext:06089	さんとうさい 葉 生	santōsai cruda
 mext:06090	さんとうさい 葉 ゆで	hojas de santosai cocidas
+mext:06091	さんとうさい 塩漬	santōsai en salazón
+mext:06092	しかくまめ 若ざや 生	judías aladas crudas
+mext:06093	ししとう 果実 生	pimientos shishito crudos
+mext:06094	ししとう 果実 油いため	pimientos shishito salteados
+mext:06095	しそ 葉 生	hojas de shiso crudas
+mext:06096	しそ 実 生	semillas de shiso frescas
+mext:06097	じゅうろくささげ 若ざや 生	vainas de judía jūroku-sasage
+mext:06098	じゅうろくささげ 若ざや ゆで	vainas de judía jūroku-sasage cocidas
+mext:06099	しゅんぎく 葉 生	shungiku crudo
+mext:06100	しゅんぎく 葉 ゆで	shungiku cocido
+mext:06101	じゅんさい 若葉 水煮びん詰	junsai en agua
+mext:06102	葉しょうが 根茎 生	jengibre tierno con hojas
+mext:06103	しょうが 根茎 皮なし 生	jengibre pelado crudo
+mext:06104	しょうが 漬物 酢漬	jengibre en vinagre
 mext:06105	しょうが 漬物 甘酢漬	jengibre encurtido (gari)
+mext:06106	しろうり 果実 生	melón shirouri crudo
+mext:06107	しろうり 漬物 塩漬	melón shirouri en salazón
+mext:06108	しろうり 漬物 奈良漬	melón shirouri en narazuke
+mext:06109	ずいき 生ずいき 生	tallos de taro (zuiki) frescos
+mext:06110	ずいき 生ずいき ゆで	tallos de taro frescos cocidos
+mext:06111	ずいき 干しずいき 乾	tallos de taro secos
+mext:06112	ずいき 干しずいき ゆで	tallos de taro secos cocidos
 mext:06113	すぐきな 葉 生	hojas de nabo sugukina crudas
+mext:06114	すぐきな 根 生	sugukina cruda
+mext:06115	すぐきな すぐき漬	suguki encurtida
+mext:06116	ズッキーニ 果実 生	calabacín crudo
+mext:06117	せり 茎葉 生	seri (perejil de agua) crudo
+mext:06118	せり 茎葉 ゆで	seri cocido
+mext:06119	セロリ 葉柄 生	apio crudo
+mext:06120	ぜんまい 生ぜんまい 若芽 生	zenmai fresco crudo
+mext:06121	ぜんまい 生ぜんまい 若芽 ゆで	zenmai fresco cocido
+mext:06122	ぜんまい 干しぜんまい 干し若芽 乾	zenmai seco
+mext:06123	ぜんまい 干しぜんまい 干し若芽 ゆで	zenmai seco cocido
+mext:06124	そらまめ 未熟豆 生	habas tiernas crudas
+mext:06125	そらまめ 未熟豆 ゆで	habas tiernas cocidas
+mext:06126	タアサイ 葉 生	tatsoi crudo
+mext:06127	タアサイ 葉 ゆで	tatsoi cocido
 mext:06128	かいわれだいこん 芽ばえ 生	brotes de rábano daikon crudos
+mext:06129	葉だいこん 葉 生	daikon de hoja crudo
+mext:06130	だいこん 葉 生	hojas de daikon crudas
+mext:06131	だいこん 葉 ゆで	hojas de daikon cocidas
+mext:06132	だいこん 根 皮つき 生	daikon con piel crudo
+mext:06133	だいこん 根 皮つき ゆで	daikon con piel cocido
+mext:06134	だいこん 根 皮なし 生	daikon sin piel crudo
+mext:06135	だいこん 根 皮なし ゆで	daikon sin piel cocido
+mext:06136	切干しだいこん 乾	daikon seco en tiras (kiriboshi)
+mext:06137	漬物 ぬかみそ漬	daikon encurtido en nukamiso
+mext:06138	漬物 たくあん漬 塩押しだいこん漬	takuan salado (daikon fresco)
+mext:06139	漬物 たくあん漬 干しだいこん漬	takuan de daikon seco
+mext:06140	漬物 守口漬	daikon encurtido moriguchi
+mext:06141	漬物 べったら漬	daikon encurtido bettara
+mext:06142	漬物 みそ漬	daikon encurtido en miso
+mext:06143	漬物 福神漬	fukujinzuke
+mext:06144	つまみな 葉 生	tsumamina cruda
+mext:06145	たいさい 葉 生	taisai cruda
+mext:06146	たいさい 塩漬	taisai en salazón
+mext:06147	たかな 葉 生	takana cruda
+mext:06148	たかな たかな漬	takana encurtida
+mext:06149	たけのこ 若茎 生	brotes de bambú crudos
+mext:06150	たけのこ 若茎 ゆで	brotes de bambú cocidos
+mext:06151	たけのこ 水煮缶詰	brotes de bambú en conserva al natural
+mext:06152	たけのこ めんま 塩蔵 塩抜き	menma desalado
+mext:06153	たまねぎ りん茎 生	cebolla cruda
+mext:06154	たまねぎ りん茎 水さらし	cebolla en remojo
+mext:06155	たまねぎ りん茎 ゆで	cebolla cocida
+mext:06156	赤たまねぎ りん茎 生	cebolla roja cruda
+mext:06157	たらのめ 若芽 生	taranome (brotes de aralia) crudos
+mext:06158	たらのめ 若芽 ゆで	taranome cocidos
+mext:06159	チコリ 若芽 生	achicoria cruda
+mext:06160	チンゲンサイ 葉 生	bok choy crudo
+mext:06161	チンゲンサイ 葉 ゆで	bok choy cocido
+mext:06162	つくし 胞子茎 生	tsukushi (brotes de cola de caballo) crudos
+mext:06163	つくし 胞子茎 ゆで	tsukushi cocidos
+mext:06164	つるな 茎葉 生	tsuruna cruda
+mext:06165	つるむらさき 茎葉 生	espinaca de Malabar (tsurumurasaki) cruda
+mext:06166	つるむらさき 茎葉 ゆで	espinaca de Malabar cocida
+mext:06167	つわぶき 葉柄 生	pecíolos de tsuwabuki crudos
+mext:06168	つわぶき 葉柄 ゆで	pecíolos de tsuwabuki cocidos
+mext:06169	とうがらし 葉･果実 生	guindilla con hojas cruda
+mext:06170	とうがらし 葉･果実 油いため	guindilla con hojas salteada
+mext:06171	とうがらし 果実 生	guindilla fresca
+mext:06172	とうがらし 果実 乾	guindilla seca
+mext:06173	とうがん 果実 生	calabaza de cera (tōgan) cruda
+mext:06174	とうがん 果実 ゆで	calabaza de cera cocida
 mext:06175	スイートコーン 未熟種子 生	maíz dulce crudo
+mext:06176	スイートコーン 未熟種子 ゆで	maíz dulce cocido
+mext:06177	スイートコーン 未熟種子 穂軸つき 冷凍	maíz dulce en mazorca congelado
+mext:06178	スイートコーン 未熟種子 カーネル 冷凍	maíz dulce en grano congelado
+mext:06179	スイートコーン 缶詰 クリームスタイル	maíz cremoso en conserva
+mext:06180	スイートコーン 缶詰 ホールカーネルスタイル	maíz en grano en conserva
+mext:06181	ヤングコーン 幼雌穂 生	maíz baby crudo
+mext:06182	赤色トマト 果実 生	tomate rojo crudo
+mext:06183	赤色ミニトマト 果実 生	tomate cherry crudo
+mext:06184	加工品 ホール 食塩無添加	tomates enteros en conserva sin sal
+mext:06185	加工品 トマトジュース 食塩添加	zumo de tomate con sal
+mext:06186	加工品 ミックスジュース 食塩添加	zumo mixto de tomate con sal
+mext:06187	トレビス 葉 生	treviso crudo
+mext:06188	とんぶり ゆで	tonburi cocido
+mext:06189	ながさきはくさい 葉 生	col china de Nagasaki cruda
+mext:06190	ながさきはくさい 葉 ゆで	col china de Nagasaki cocida
+mext:06191	なす 果実 生	berenjena cruda
+mext:06192	なす 果実 ゆで	berenjena cocida
+mext:06193	べいなす 果実 生	berenjena americana cruda
+mext:06194	べいなす 果実 素揚げ	berenjena americana frita
+mext:06195	漬物 塩漬	berenjena en salazón
+mext:06196	漬物 ぬかみそ漬	berenjena encurtida en nukamiso
+mext:06197	漬物 こうじ漬	berenjena encurtida en kōji
+mext:06198	漬物 からし漬	berenjena encurtida en mostaza
+mext:06199	漬物 しば漬	berenjena encurtida shiba-zuke
+mext:06200	なずな 葉 生	nazuna (bolsa de pastor) cruda
+mext:06201	和種なばな 花らい・茎 生	nabana japonesa cruda
+mext:06202	和種なばな 花らい・茎 ゆで	nabana japonesa cocida
+mext:06203	洋種なばな 茎葉 生	rapini crudos
+mext:06204	洋種なばな 茎葉 ゆで	rapini cocidos
+mext:06205	にがうり 果実 生	melón amargo (nigauri) crudo
+mext:06206	にがうり 果実 油いため	melón amargo salteado
+mext:06207	にら 葉 生	nira (cebollino chino) cruda
+mext:06208	にら 葉 ゆで	nira cocida
+mext:06209	花にら 花茎・花らい 生	nira en flor cruda
+mext:06210	黄にら 葉 生	nira amarilla cruda
+mext:06211	葉にんじん 葉 生	zanahoria de hoja cruda
+mext:06212	にんじん 根 皮つき 生	zanahoria con piel cruda
+mext:06213	にんじん 根 皮つき ゆで	zanahoria con piel cocida
+mext:06214	にんじん 根 皮なし 生	zanahoria sin piel cruda
+mext:06215	にんじん 根 皮なし ゆで	zanahoria sin piel cocida
+mext:06216	にんじん 根 冷凍	zanahoria congelada
+mext:06217	にんじん ジュース 缶詰	zumo de zanahoria en conserva
+mext:06218	きんとき 根 皮つき 生	zanahoria kintoki con piel cruda
+mext:06219	きんとき 根 皮つき ゆで	zanahoria kintoki con piel cocida
+mext:06220	きんとき 根 皮なし 生	zanahoria kintoki sin piel cruda
+mext:06221	きんとき 根 皮なし ゆで	zanahoria kintoki sin piel cocida
+mext:06222	ミニキャロット 根 生	minizanahorias crudas
+mext:06223	にんにく りん茎 生	ajo crudo
+mext:06224	茎にんにく 花茎 生	escapes de ajo crudos
+mext:06225	茎にんにく 花茎 ゆで	escapes de ajo cocidos
+mext:06226	根深ねぎ 葉 軟白 生	cebolleta de invierno blanca cruda
+mext:06227	葉ねぎ 葉 生	cebolleta de invierno cruda
+mext:06228	こねぎ 葉 生	cebolleta pequeña (konegi) cruda
+mext:06229	のざわな 葉 生	nozawana cruda
+mext:06230	のざわな 漬物 塩漬	nozawana en salazón
+mext:06231	のざわな 漬物 調味漬	nozawana encurtida condimentada
+mext:06232	のびる りん茎葉 生	nobiru (ajo silvestre) crudo
+mext:06233	はくさい 結球葉 生	col china cruda
+mext:06234	はくさい 結球葉 ゆで	col china cocida
+mext:06235	はくさい 漬物 塩漬	col china en salazón
+mext:06236	はくさい 漬物 キムチ	col china kimchi
+mext:06237	パクチョイ 葉 生	pak choi crudo
+mext:06238	バジル 葉 生	albahaca cruda
+mext:06239	パセリ 葉 生	perejil crudo
+mext:06240	はつかだいこん 根 生	rábanos crudos
+mext:06241	はやとうり 果実 白色種 生	chayote blanco crudo
+mext:06242	はやとうり 果実 白色種 塩漬	chayote blanco en salazón
+mext:06243	ビーツ 根 生	remolacha cruda
+mext:06244	ビーツ 根 ゆで	remolacha cocida
+mext:06245	青ピーマン 果実 生	pimiento verde crudo
+mext:06246	青ピーマン 果実 油いため	pimiento verde salteado
+mext:06247	赤ピーマン 果実 生	pimiento rojo crudo
+mext:06248	赤ピーマン 果実 油いため	pimiento rojo salteado
+mext:06249	黄ピーマン 果実 生	pimiento amarillo crudo
+mext:06250	黄ピーマン 果実 油いため	pimiento amarillo salteado
+mext:06251	トマピー 果実 生	pimiento tomapi crudo
+mext:06252	ひのな 根・茎葉 生	hinona (raíz y hojas) cruda
+mext:06253	ひのな 根・茎葉 甘酢漬	hinona encurtida en vinagre dulce
+mext:06254	ひろしまな 葉 生	hiroshimana cruda
+mext:06255	ひろしまな 塩漬	hiroshimana en salazón
+mext:06256	ふき 葉柄 生	pecíolos de fuki crudos
+mext:06257	ふき 葉柄 ゆで	pecíolos de fuki cocidos
+mext:06258	ふきのとう 花序 生	inflorescencias de fuki crudas
+mext:06259	ふきのとう 花序 ゆで	inflorescencias de fuki cocidas
+mext:06260	ふじまめ 若ざや 生	vainas de judía fuji
+mext:06261	ふだんそう 葉 生	hojas de acelga (fudansō) crudas
+mext:06262	ふだんそう 葉 ゆで	hojas de acelga cocidas
+mext:06263	ブロッコリー 花序 生	brócoli crudo
+mext:06264	ブロッコリー 花序 ゆで	brócoli cocido
+mext:06265	へちま 果実 生	lufa cruda
+mext:06266	へちま 果実 ゆで	lufa cocida
+mext:06267	ほうれんそう 葉 通年平均 生	espinacas crudas
+mext:06268	ほうれんそう 葉 通年平均 ゆで	espinacas cocidas
+mext:06269	ほうれんそう 葉 冷凍	espinacas congeladas
+mext:06270	ホースラディシュ 根茎 生	rábano picante crudo
+mext:06271	まこも 茎 生	makomo crudo
+mext:06272	みずかけな 葉 生	mizukakena cruda
+mext:06273	みずかけな 塩漬	mizukakena en salazón
+mext:06274	切りみつば 葉 生	mitsuba cortada cruda
 mext:06275	切りみつば 葉 ゆで	hojas de mitsuba cocidas
+mext:06276	根みつば 葉 生	mitsuba de raíz cruda
+mext:06277	根みつば 葉 ゆで	mitsuba de raíz cocida
+mext:06278	糸みつば 葉 生	mitsuba fina (ito) cruda
+mext:06279	糸みつば 葉 ゆで	mitsuba fina cocida
+mext:06280	みょうが 花穂 生	inflorescencias de myōga crudas
+mext:06281	みょうがたけ 茎葉 生	tallos de myōga crudos
+mext:06282	むかご 肉芽 生	mukago (bulbillos de ñame) crudos
+mext:06283	めキャベツ 結球葉 生	coles de Bruselas crudas
+mext:06284	めキャベツ 結球葉 ゆで	coles de Bruselas cocidas
+mext:06285	めたで 芽ばえ 生	brotes de mostaza crudos
+mext:06286	アルファルファもやし 生	brotes de alfalfa crudos
+mext:06287	だいずもやし 生	brotes de soja crudos
+mext:06288	だいずもやし ゆで	brotes de soja cocidos
+mext:06289	ブラックマッペもやし 生	brotes de urad crudos
+mext:06290	ブラックマッペもやし ゆで	brotes de urad cocidos
+mext:06291	りょくとうもやし 生	brotes de judía mungo crudos
+mext:06292	りょくとうもやし ゆで	brotes de judía mungo cocidos
+mext:06293	モロヘイヤ 茎葉 生	molokhia cruda
+mext:06294	モロヘイヤ 茎葉 ゆで	molokhia cocida
+mext:06295	やまごぼう みそ漬	bardana de montaña encurtida en miso
+mext:06296	ゆりね りん茎 生	bulbos de lirio crudos
 mext:06297	ゆりね りん茎 ゆで	bulbo de lirio cocido
+mext:06298	ようさい 茎葉 生	yōsai cruda
+mext:06299	ようさい 茎葉 ゆで	yōsai cocida
+mext:06300	よめな 葉 生	yomena cruda
+mext:06301	よもぎ 葉 生	yomogi (artemisa) cruda
+mext:06302	よもぎ 葉 ゆで	yomogi cocida
+mext:06303	らっかせい 未熟豆 生	cacahuetes tiernos crudos
+mext:06304	らっかせい 未熟豆 ゆで	cacahuetes tiernos cocidos
+mext:06305	らっきょう りん茎 生	rakkyō crudo
 mext:06306	らっきょう 甘酢漬	rakkyo encurtido
+mext:06307	エシャレット りん茎 生	chalotas crudas
+mext:06308	リーキ りん茎葉 生	puerro crudo
+mext:06309	リーキ りん茎葉 ゆで	puerro cocido
+mext:06310	ルバーブ 葉柄 生	ruibarbo crudo
+mext:06311	ルバーブ 葉柄 ゆで	ruibarbo cocido
+mext:06312	レタス 土耕栽培 結球葉 生	lechuga de suelo
+mext:06313	サラダな 葉 生	lechuga saradana
+mext:06314	リーフレタス 葉 生	lechuga de hoja
+mext:06315	サニーレタス 葉 生	lechuga sunny
+mext:06316	コスレタス 葉 生	lechuga romana
+mext:06317	れんこん 根茎 生	raíz de loto cruda
+mext:06318	れんこん 根茎 ゆで	raíz de loto cocida
+mext:06319	ルッコラ 葉 生	rúcula cruda
+mext:06320	わけぎ 葉 生	cebollino wakegi crudo
+mext:06321	わけぎ 葉 ゆで	cebollino wakegi cocido
+mext:06322	わさび 根茎 生	wasabi (raíz) crudo
 mext:06323	わさび わさび漬	wasabi encurtido
+mext:06324	わらび 生わらび 生	helecho común fresco (warabi) crudo
+mext:06325	わらび 生わらび ゆで	helecho común fresco cocido
+mext:06326	わらび 干しわらび 乾	helecho común seco
+mext:06327	アスパラガス 若茎 油いため	espárragos salteados
+mext:06328	アロエ 葉 生	aloe crudo
+mext:06329	トウミョウ 芽ばえ 生	brotes de guisante crudos
+mext:06330	トウミョウ 芽ばえ ゆで	brotes de guisante cocidos
+mext:06331	トウミョウ 芽ばえ 油いため	brotes de guisante salteados
+mext:06332	西洋かぼちゃ 果実 焼き	calabaza kabocha asada
+mext:06333	キャベツ 結球葉 油いため	col salteada
+mext:06334	切干しだいこん ゆで	daikon seco en tiras cocido
+mext:06335	切干しだいこん 油いため	daikon seco en tiras salteado
+mext:06336	たまねぎ りん茎 油いため	cebolla salteada
+mext:06337	葉たまねぎ りん茎及び葉 生	cebolla tierna cruda
+mext:06338	チンゲンサイ 葉 油いため	bok choy salteado
+mext:06339	スイートコーン 未熟種子 電子レンジ調理	maíz dulce al microondas
+mext:06340	加工品 トマトジュース 食塩無添加	zumo de tomate sin sal
+mext:06341	加工品 ミックスジュース 食塩無添加	zumo mixto de tomate sin sal
+mext:06342	なす 果実 油いため	berenjena salteada
+mext:06343	なす 果実 天ぷら	berenjena en tempura
+mext:06344	にら 葉 油いため	nira salteada
+mext:06345	にんじん 根 皮なし 油いため	zanahoria sin piel salteada
+mext:06346	にんじん 根 皮なし 素揚げ	zanahoria sin piel frita
+mext:06347	にんじん 根 皮 生	piel de zanahoria
+mext:06348	にんじん グラッセ	zanahoria glaseada
+mext:06349	にんにく りん茎 油いため	ajo salteado
+mext:06350	根深ねぎ 葉 軟白 ゆで	cebolleta de invierno blanca cocida
+mext:06351	根深ねぎ 葉 軟白 油いため	cebolleta de invierno blanca salteada
+mext:06352	葉ねぎ 葉 油いため	cebolleta de invierno salteada
+mext:06353	はやとうり 果実 緑色種 生	chayote verde crudo
+mext:06354	ブロッコリー 芽ばえ 生	brotes de brócoli crudos
+mext:06355	ほうれんそう 葉 夏採り 生	espinacas de verano crudas
+mext:06356	ほうれんそう 葉 冬採り 生	espinacas de invierno crudas
+mext:06357	ほうれんそう 葉 夏採り ゆで	espinacas de verano cocidas
+mext:06358	ほうれんそう 葉 冬採り ゆで	espinacas de invierno cocidas
+mext:06359	ほうれんそう 葉 通年平均 油いため	espinacas salteadas
+mext:06360	みぶな 葉 生	mibuna cruda
+mext:06361	レタス 水耕栽培 結球葉 生	lechuga hidropónica
+mext:06362	サンチュ 葉 生	sanchu crudo
+mext:06363	うるい 葉 生	urui (hojas de hosta) crudas
+mext:06364	かんぴょう 甘煮	kampyo guisado dulce
+mext:06365	しょうが 根茎 皮なし 生 おろし	jengibre rallado
+mext:06366	しょうが 根茎 皮なし 生 おろし汁	zumo de jengibre
+mext:06367	だいこん 根 皮なし 生 おろし	daikon rallado
+mext:06368	だいこん 根 皮なし 生 おろし汁	zumo de daikon
+mext:06369	だいこん 根 皮なし 生 おろし水洗い	daikon rallado lavado
+mext:06370	ドライトマト	tomates secos
+mext:06371	れんこん 甘酢れんこん	raíz de loto en vinagre dulce
+mext:06372	ほうれんそう 葉 冷凍 ゆで	espinacas congeladas cocidas
+mext:06373	ほうれんそう 葉 冷凍 油いため	espinacas congeladas salteadas
+mext:06374	グリンピース 冷凍 ゆで	guisantes congelados cocidos
+mext:06375	グリンピース 冷凍 油いため	guisantes congelados salteados
+mext:06376	ちぢみゆきな 葉 生	yukina rizada cruda
+mext:06377	ちぢみゆきな 葉 ゆで	yukina rizada cocida
+mext:06378	スイートコーン 未熟種子 カーネル 冷凍 ゆで	maíz dulce en grano congelado cocido
+mext:06379	スイートコーン 未熟種子 カーネル 冷凍 油いため	maíz dulce en grano congelado salteado
+mext:06380	にんじん 根 冷凍 ゆで	zanahoria congelada cocida
+mext:06381	にんじん 根 冷凍 油いため	zanahoria congelada salteada
+mext:06382	ミックスベジタブル 冷凍	mezcla de verduras congelada
+mext:06383	ミックスベジタブル 冷凍 ゆで	mezcla de verduras congelada cocida
+mext:06384	ミックスベジタブル 冷凍 油いため	mezcla de verduras congelada salteada
+mext:06385	コリアンダー 葉 生	cilantro
+mext:06386	新しょうが 根茎 生	jengibre tierno
+mext:06387	すいぜんじな 葉 生	suizenjina cruda
+mext:06388	漬物 いぶりがっこ	daikon encurtido ahumado (iburi-gakko)
+mext:06389	たまねぎ りん茎 油いため （あめ色たまねぎ）	cebolla caramelizada
+mext:06390	つるにんじん 根 生	tsuru-ninjin (raíz) crudo
+mext:06391	黄色トマト 果実 生	tomate amarillo crudo
+mext:06392	はなっこりー 生	hanakkori crudos
+mext:06393	オレンジピーマン 果実 生	pimiento naranja crudo
+mext:06394	オレンジピーマン 果実 油いため	pimiento naranja salteado
+mext:06395	ブロッコリー 花序 電子レンジ調理	brócoli al microondas
+mext:06396	ブロッコリー 花序 焼き	brócoli asado
+mext:06397	ブロッコリー 花序 油いため	brócoli salteado
+mext:06398	ブラックマッペもやし 油いため	brotes de urad salteados
+mext:06399	野菜ミックスジュース 通常タイプ	zumo de verduras
+mext:06400	野菜ミックスジュース 濃縮タイプ	zumo de verduras concentrado
+mext:06401	やぶまめ 生	yabumame fresco
+mext:06402	アイスプラント 生	planta de hielo cruda
+mext:06403	キャベツ 結球葉 カット 常法洗浄	col cortada
+mext:06404	キャベツ 結球葉 カット 次亜塩素酸洗浄	col cortada lavada con hipoclorito
+mext:06405	堀川ごぼう 根 生	bardana horikawa cruda
+mext:06406	万願寺とうがらし 果実 生	pimiento manganji crudo
+mext:06407	にんじん 根 皮なし カット 常法洗浄	zanahoria cortada sin piel
+mext:06408	にんじん 根 皮なし カット 次亜塩素酸洗浄	zanahoria cortada sin piel lavada con hipoclorito
+mext:06409	島にんじん 根 皮なし 生	zanahoria de isla cruda
+mext:06410	九条ねぎ 葉 生	cebolleta kujō cruda
+mext:06411	めねぎ 葉 生	cebolla tierna (menegi) cruda
+mext:06412	だいずもやし 油いため	brotes de soja salteados
+mext:06413	りょくとうもやし 油いため	brotes de judía mungo salteados
+mext:07001	あけび 果肉 生	pulpa de akebia cruda
+mext:07002	あけび 果皮 生	piel de akebia cruda
+mext:07003	アセロラ 酸味種 生	acerola ácida
+mext:07004	アセロラ 果実飲料 10%果汁入り飲料	bebida de acerola (10 % zumo)
+mext:07005	アテモヤ 生	atemoya
+mext:07006	アボカド 生	aguacate
+mext:07007	あんず 生	albaricoque
+mext:07008	あんず 乾	orejones
+mext:07009	あんず 缶詰	albaricoques en conserva
+mext:07010	あんず ジャム 高糖度	mermelada de albaricoque
+mext:07011	あんず ジャム 低糖度	mermelada de albaricoque baja en azúcar
+mext:07012	いちご 生	fresas
+mext:07013	いちご ジャム 高糖度	mermelada de fresa
+mext:07014	いちご ジャム 低糖度	mermelada de fresa baja en azúcar
+mext:07015	いちじく 生	higos
+mext:07016	いちじく 乾	higos secos
+mext:07017	いちじく 缶詰	higos en conserva
+mext:07018	いよかん 砂じょう 生	iyokan
+mext:07019	うめ 生	ume fresco
+mext:07020	うめ 梅漬 塩漬	ume en salazón
 mext:07021	うめ 梅漬 調味漬	ciruelas ume encurtidas
+mext:07022	うめ 梅干し 塩漬	umeboshi en salazón
+mext:07023	うめ 梅干し 調味漬	umeboshi condimentado
+mext:07024	うめ 梅びしお	umebishio (vinagre de ume)
+mext:07025	うめ 果実飲料 20%果汁入り飲料	bebida de ume (20 % zumo)
+mext:07026	うんしゅうみかん じょうのう 早生 生	mandarina satsuma temprana
+mext:07027	うんしゅうみかん じょうのう 普通 生	mandarina satsuma
+mext:07028	うんしゅうみかん 砂じょう 早生 生	mandarina satsuma temprana (pulpa)
+mext:07029	うんしゅうみかん 砂じょう 普通 生	mandarina satsuma (pulpa)
+mext:07030	うんしゅうみかん 果実飲料 ストレートジュース	zumo de mandarina directo
+mext:07031	うんしゅうみかん 果実飲料 濃縮還元ジュース	zumo de mandarina de concentrado
+mext:07032	うんしゅうみかん 果実飲料 果粒入りジュース	zumo de mandarina con pulpa
+mext:07033	うんしゅうみかん 果実飲料 50%果汁入り飲料	bebida de mandarina (50 % zumo)
+mext:07034	うんしゅうみかん 果実飲料 20%果汁入り飲料	bebida de mandarina (20 % zumo)
+mext:07035	うんしゅうみかん 缶詰 果肉	mandarinas en conserva (pulpa)
+mext:07036	うんしゅうみかん 缶詰 液汁	almíbar de mandarinas en conserva
+mext:07037	オリーブ 塩漬 グリーンオリーブ	aceitunas verdes en salmuera
+mext:07038	オリーブ 塩漬 ブラックオリーブ	aceitunas negras en salmuera
+mext:07039	オリーブ 塩漬 スタッフドオリーブ	aceitunas rellenas en salmuera
+mext:07040	オレンジ ネーブル 砂じょう 生	naranja navel
+mext:07041	オレンジ バレンシア 米国産 砂じょう 生	naranja valencia de Estados Unidos
+mext:07042	オレンジ バレンシア 果実飲料 ストレートジュース	zumo de naranja directo
+mext:07043	オレンジ バレンシア 果実飲料 濃縮還元ジュース	zumo de naranja de concentrado
+mext:07044	オレンジ バレンシア 果実飲料 50%果汁入り飲料	bebida de naranja (50 % zumo)
+mext:07045	オレンジ バレンシア 果実飲料 30%果汁入り飲料	bebida de naranja (30 % zumo)
+mext:07046	オレンジ バレンシア マーマレード 高糖度	mermelada de naranja
+mext:07047	オレンジ バレンシア マーマレード 低糖度	mermelada de naranja baja en azúcar
+mext:07048	オロブランコ 砂じょう 生	oroblanco
+mext:07049	かき 甘がき 生	caqui dulce
+mext:07050	かき 渋抜きがき 生	caqui sin astringencia
+mext:07051	かき 干しがき	caqui seco
+mext:07052	かぼす 果汁 生	zumo de kabosu
+mext:07053	かりん 生	membrillo chino
+mext:07054	キウイフルーツ 緑肉種 生	kiwi verde
+mext:07055	キワノ 生	kiwano
+mext:07056	きんかん 全果 生	kumquat
+mext:07057	グァバ 赤肉種 生	guayaba rosada
+mext:07058	グァバ 果実飲料 20%果汁入り飲料 （ネクター）	néctar de guayaba
+mext:07059	グァバ 果実飲料 10%果汁入り飲料	bebida de guayaba (10 % zumo)
+mext:07060	グーズベリー 生	grosella espinosa
+mext:07061	ぐみ 生	gumi
+mext:07062	グレープフルーツ 白肉種 砂じょう 生	pomelo blanco
+mext:07063	グレープフルーツ 果実飲料 ストレートジュース	zumo de pomelo directo
+mext:07064	グレープフルーツ 果実飲料 濃縮還元ジュース	zumo de pomelo de concentrado
+mext:07065	グレープフルーツ 果実飲料 50%果汁入り飲料	bebida de pomelo (50 % zumo)
+mext:07066	グレープフルーツ 果実飲料 20%果汁入り飲料	bebida de pomelo (20 % zumo)
+mext:07067	グレープフルーツ 缶詰	pomelo en conserva
+mext:07069	スターフルーツ 生	carambola
+mext:07070	さくらんぼ 国産 生	cerezas japonesas
+mext:07071	さくらんぼ 米国産 生	cerezas estadounidenses
+mext:07072	さくらんぼ 米国産 缶詰	cerezas en conserva
+mext:07073	ざくろ 生	granada
+mext:07074	さんぼうかん 砂じょう 生	sanbokan
+mext:07075	シークヮーサー 果汁 生	zumo de shikuwasa
+mext:07076	シークヮーサー 果実飲料 10%果汁入り飲料	bebida de shikuwasa (10 % zumo)
+mext:07077	すいか 赤肉種 生	sandía roja
+mext:07078	すだち 果皮 生	piel de sudachi
+mext:07079	すだち 果汁 生	zumo de sudachi
+mext:07080	にほんすもも 生	ciruela japonesa
+mext:07081	プルーン 生	ciruela
+mext:07082	プルーン 乾	ciruelas pasas
+mext:07083	だいだい 果汁 生	zumo de daidai
+mext:07085	セミノール 砂じょう 生	seminole
+mext:07086	チェリモヤ 生	chirimoya
+mext:07087	ドリアン 生	durián
+mext:07088	日本なし 生	pera japonesa (nashi)
+mext:07089	日本なし 缶詰	pera japonesa en conserva
+mext:07090	中国なし 生	pera china
+mext:07091	西洋なし 生	pera
+mext:07092	西洋なし 缶詰	peras en conserva
+mext:07093	なつみかん 砂じょう 生	natsumikan
+mext:07094	なつみかん 缶詰	natsumikan en conserva
+mext:07095	なつめ 乾	azufaifa seca
+mext:07096	なつめやし 乾	dátiles
+mext:07097	パインアップル 生	piña
+mext:07098	パインアップル 果実飲料 ストレートジュース	zumo de piña directo
+mext:07099	パインアップル 果実飲料 濃縮還元ジュース	zumo de piña de concentrado
+mext:07100	パインアップル 果実飲料 50%果汁入り飲料	bebida de piña (50 % zumo)
+mext:07101	パインアップル 果実飲料 10%果汁入り飲料	bebida de piña (10 % zumo)
+mext:07102	パインアップル 缶詰	piña en conserva
+mext:07103	パインアップル 砂糖漬	piña escarchada
+mext:07104	ハスカップ 生	baya de haskap
+mext:07105	はっさく 砂じょう 生	hassaku
+mext:07106	パッションフルーツ 果汁 生	zumo de maracuyá
+mext:07107	バナナ 生	plátano
+mext:07108	バナナ 乾	plátano seco
+mext:07109	パパイア 完熟 生	papaya madura
+mext:07110	パパイア 未熟 生	papaya verde
+mext:07111	ドラゴンフルーツ 生	pitahaya
+mext:07112	ひゅうがなつ じょうのう及びアルベド 生	hyūganatsu (con albedo)
+mext:07113	ひゅうがなつ 砂じょう 生	hyūganatsu
+mext:07114	びわ 生	níspero
+mext:07115	びわ 缶詰	níspero en conserva
+mext:07116	ぶどう 皮なし 生	uvas peladas
+mext:07117	ぶどう 干しぶどう	pasas
+mext:07118	ぶどう 果実飲料 ストレートジュース	zumo de uva directo
+mext:07119	ぶどう 果実飲料 濃縮還元ジュース	zumo de uva de concentrado
+mext:07120	ぶどう 果実飲料 70%果汁入り飲料	bebida de uva (70 % zumo)
+mext:07121	ぶどう 果実飲料 10%果汁入り飲料	bebida de uva (10 % zumo)
+mext:07122	ぶどう 缶詰	uvas en conserva
+mext:07123	ぶどう ジャム	mermelada de uva
+mext:07124	ブルーベリー 生	arándanos
+mext:07125	ブルーベリー ジャム	mermelada de arándanos
+mext:07126	ぶんたん 砂じょう 生	pomelo chino
+mext:07127	ぶんたん ざぼん漬	corteza de pomelo escarchada
+mext:07128	ホワイトサポテ 生	zapote blanco
+mext:07129	ぽんかん 砂じょう 生	ponkan
+mext:07130	まくわうり 黄肉種 生	melón makuwa amarillo
+mext:07131	マルメロ 生	membrillo
+mext:07132	マンゴー 生	mango
+mext:07133	マンゴスチン 生	mangostán
+mext:07134	メロン 温室メロン 生	melón de invernadero
+mext:07135	メロン 露地メロン 緑肉種 生	melón de campo verde
+mext:07136	もも 白肉種 生	melocotón blanco
+mext:07137	もも 果実飲料 30%果汁入り飲料 （ネクター）	néctar de melocotón
+mext:07138	もも 缶詰 白肉種 果肉	melocotón blanco en conserva
+mext:07139	もも 缶詰 液汁	almíbar de melocotón en conserva
+mext:07140	ネクタリン 生	nectarina
+mext:07141	やまもも 生	bayberry japonés
+mext:07142	ゆず 果皮 生	piel de yuzu
+mext:07143	ゆず 果汁 生	zumo de yuzu
+mext:07144	ライチー 生	lichi
+mext:07145	ライム 果汁 生	zumo de lima
+mext:07146	ラズベリー 生	frambuesas
+mext:07147	りゅうがん 乾	longan seco
+mext:07148	りんご 皮なし 生	manzana pelada
+mext:07149	りんご 果実飲料 ストレートジュース	zumo de manzana directo
+mext:07150	りんご 果実飲料 濃縮還元ジュース	zumo de manzana de concentrado
+mext:07151	りんご 果実飲料 50%果汁入り飲料	bebida de manzana (50 % zumo)
+mext:07152	りんご 果実飲料 30%果汁入り飲料	bebida de manzana (30 % zumo)
+mext:07153	りんご 缶詰	manzana en conserva
+mext:07154	りんご ジャム	mermelada de manzana
+mext:07155	レモン 全果 生	limón
+mext:07156	レモン 果汁 生	zumo de limón
+mext:07157	ココナッツ ココナッツウォーター	agua de coco
+mext:07158	ココナッツ ココナッツミルク	leche de coco
+mext:07159	アセロラ 甘味種 生	acerola dulce
+mext:07160	いちご 乾	fresas secas
+mext:07161	オレンジ 福原オレンジ 砂じょう 生	naranja Fukuhara
+mext:07162	かわちばんかん 砂じょう 生	kawachi-bankan
+mext:07163	きよみ 砂じょう 生	kiyomi
+mext:07164	グレープフルーツ 紅肉種 砂じょう 生	pomelo rosado
+mext:07165	しらぬひ 砂じょう 生	mandarina shiranui
+mext:07166	せとか 砂じょう 生	setoka
+mext:07167	はるみ 砂じょう 生	harumi
+mext:07168	キウイフルーツ 黄肉種 生	kiwi amarillo
+mext:07169	グァバ 白肉種 生	guayaba blanca
+mext:07170	ココナッツ ナタデココ	nata de coco
+mext:07171	すいか 黄肉種 生	sandía amarilla
+mext:07172	ブルーベリー 乾	arándanos secos
+mext:07173	まくわうり 白肉種 生	melón makuwa blanco
+mext:07174	メロン 露地メロン 赤肉種 生	melón de campo naranja
+mext:07175	もも 缶詰 黄肉種 果肉	melocotón amarillo en conserva
+mext:07176	りんご 皮つき 生	manzana
+mext:07177	パインアップル 焼き	piña asada
+mext:07178	ぶどう 皮つき 生	uvas
+mext:07179	マンゴー ドライマンゴー	mango seco
+mext:07180	りんご 皮つき 焼き	manzana con piel asada
+mext:07181	アサイー 冷凍 無糖	açaí congelado sin azúcar
+mext:07182	カシス 冷凍	grosella negra congelada
+mext:07183	きはだ 実 乾	kihada seco
+mext:07184	もも 黄肉種 生	melocotón amarillo
+mext:07185	くこ 実 乾	bayas de goji secas
+mext:07186	赤すぐり 冷凍	grosella roja congelada
+mext:07187	ぶどう 皮つき シャインマスカット 生	uvas Shine Muscat
+mext:08001	えのきたけ 生	enoki crudos
+mext:08002	えのきたけ ゆで	enoki cocidos
+mext:08003	えのきたけ 味付け瓶詰	enoki condimentados (nametake)
+mext:08004	あらげきくらげ 乾	seta arage-kikurage seca
+mext:08005	あらげきくらげ ゆで	seta arage-kikurage cocida
+mext:08006	きくらげ 乾	seta kikurage seca
+mext:08007	きくらげ ゆで	seta kikurage cocida
+mext:08008	しろきくらげ 乾	seta shirokikurage seca
+mext:08009	しろきくらげ ゆで	seta shirokikurage cocida
+mext:08010	くろあわびたけ 生	seta kuroawabitake cruda
+mext:08013	しいたけ 乾しいたけ 乾	shiitake seco
+mext:08014	しいたけ 乾しいたけ ゆで	shiitake seco cocido
+mext:08015	はたけしめじ 生	hatake-shimeji crudo
+mext:08016	ぶなしめじ 生	buna-shimeji crudo
+mext:08017	ぶなしめじ ゆで	buna-shimeji cocido
+mext:08018	ほんしめじ 生	hon-shimeji crudo
+mext:08019	たもぎたけ 生	seta ostra dorada cruda
+mext:08020	なめこ 株採り 生	nameko en racimo crudo
+mext:08021	なめこ 株採り ゆで	nameko en racimo cocido
+mext:08022	なめこ 水煮缶詰	nameko en conserva al natural
+mext:08023	ぬめりすぎたけ 生	numerisugitake crudo
+mext:08024	うすひらたけ 生	usuhiratake crudo
+mext:08025	エリンギ 生	eringi crudo
+mext:08026	ひらたけ 生	seta de ostra cruda
+mext:08027	ひらたけ ゆで	seta de ostra cocida
+mext:08028	まいたけ 生	maitake crudo
+mext:08029	まいたけ ゆで	maitake cocido
+mext:08030	まいたけ 乾	maitake seco
+mext:08031	マッシュルーム 生	champiñones crudos
+mext:08032	マッシュルーム ゆで	champiñones cocidos
+mext:08033	マッシュルーム 水煮缶詰	champiñones en conserva al natural
+mext:08034	まつたけ 生	matsutake crudo
+mext:08036	やなぎまつたけ 生	yanagimatsutake crudo
+mext:08037	えのきたけ 油いため	enoki salteados
+mext:08038	あらげきくらげ 油いため	seta arage-kikurage salteada
+mext:08039	しいたけ 生しいたけ 菌床栽培 生	shiitake fresco de sustrato crudo
+mext:08040	しいたけ 生しいたけ 菌床栽培 ゆで	shiitake fresco de sustrato cocido
+mext:08041	しいたけ 生しいたけ 菌床栽培 油いため	shiitake fresco de sustrato salteado
+mext:08042	しいたけ 生しいたけ 原木栽培 生	shiitake fresco de tronco crudo
+mext:08043	しいたけ 生しいたけ 原木栽培 ゆで	shiitake fresco de tronco cocido
+mext:08044	しいたけ 生しいたけ 原木栽培 油いため	shiitake fresco de tronco salteado
 mext:08045	はたけしめじ ゆで	shimeji cocido
+mext:08046	ぶなしめじ 油いため	buna-shimeji salteado
+mext:08047	ほんしめじ ゆで	hon-shimeji cocido
+mext:08048	エリンギ ゆで	eringi cocido
+mext:08049	エリンギ 焼き	eringi asado
+mext:08050	エリンギ 油いため	eringi salteado
+mext:08051	まいたけ 油いため	maitake salteado
+mext:08052	マッシュルーム 油いため	champiñones salteados
+mext:08053	しいたけ 乾しいたけ 甘煮	shiitake seco guisado dulce
+mext:08054	あらげきくらげ 生	seta arage-kikurage cruda
+mext:08055	ぶなしめじ 素揚げ	buna-shimeji frito
+mext:08056	ぶなしめじ 天ぷら	buna-shimeji en tempura
+mext:08057	しいたけ 生しいたけ 菌床栽培 天ぷら	shiitake fresco de sustrato en tempura
+mext:08058	なめこ カットなめこ 生	nameko cortado crudo
+mext:08059	マッシュルーム ブラウン種 生	champiñones marrones crudos
+mext:09001	あおさ 素干し	aosa seca
+mext:09002	あおのり 素干し	aonori seco
+mext:09003	あまのり ほしのり	nori amanori seco
+mext:09004	あまのり 焼きのり	nori amanori tostado
+mext:09005	あまのり 味付けのり	nori amanori condimentado
+mext:09006	あらめ 蒸し干し	arame seco al vapor
+mext:09007	いわのり 素干し	iwanori seco
+mext:09008	えごのり 素干し	egonori seco
+mext:09009	えごのり おきうと	okiuto (gelatina de egonori)
+mext:09010	おごのり 塩蔵 塩抜き	ogonori desalado
+mext:09011	かわのり 素干し	kawanori seco
+mext:09012	うみぶどう 生	uva de mar (umibudō) cruda
+mext:09013	えながおにこんぶ 素干し	kombu naga-oni seco
+mext:09014	がごめこんぶ 素干し	kombu gagome seco
+mext:09015	ながこんぶ 素干し	kombu naga seco
+mext:09016	ほそめこんぶ 素干し	kombu fino (hosome) seco
+mext:09017	まこんぶ 素干し 乾	kombu ma seco
+mext:09018	みついしこんぶ 素干し	kombu mitsuishi seco
+mext:09019	りしりこんぶ 素干し	kombu rishiri seco
+mext:09020	刻み昆布	kombu en tiras
+mext:09021	削り昆布	kombu en virutas
+mext:09022	塩昆布	kombu salado
+mext:09023	つくだ煮	kombu tsukudani
+mext:09024	すいぜんじのり 素干し 水戻し	suizenji-nori rehidratado
+mext:09025	てんぐさ 素干し	tengusa seco
+mext:09026	てんぐさ ところてん	tokoroten
+mext:09027	てんぐさ 角寒天	agar en barra
+mext:09028	てんぐさ 寒天	agar
+mext:09029	とさかのり 赤とさか 塩蔵 塩抜き	tosaka-nori rojo desalado
+mext:09030	とさかのり 青とさか 塩蔵 塩抜き	tosaka-nori verde desalado
+mext:09032	ひとえぐさ 素干し	hitoe-gusa seco
+mext:09033	ひとえぐさ つくだ煮	hitoe-gusa tsukudani
+mext:09034	ふのり 素干し	funori seco
+mext:09035	まつも 素干し	matsumo seco
+mext:09036	むかでのり 塩蔵 塩抜き	mukade-nori desalado
+mext:09037	おきなわもずく 塩蔵 塩抜き	mozuku de Okinawa desalado
+mext:09038	もずく 塩蔵 塩抜き	mozuku desalado
+mext:09039	わかめ 原藻 生	wakame cruda
+mext:09040	わかめ 乾燥わかめ 素干し	wakame seca
+mext:09041	わかめ 乾燥わかめ 素干し 水戻し	wakame seca rehidratada
+mext:09042	わかめ 乾燥わかめ 板わかめ	wakame en placa seca
+mext:09043	わかめ 乾燥わかめ 灰干し 水戻し	wakame seca con ceniza rehidratada
+mext:09044	わかめ カットわかめ 乾	wakame troceada seca
+mext:09045	わかめ 湯通し塩蔵わかめ 塩抜き 生	wakame escaldada desalada cruda
+mext:09046	わかめ くきわかめ 湯通し塩蔵 塩抜き	tallos de wakame desalados
+mext:09047	わかめ めかぶわかめ 生	mekabu cruda
+mext:09049	てんぐさ 粉寒天	agar en polvo
+mext:09050	ひじき ほしひじき ステンレス釜 乾	hijiki seco (en caldera de acero)
+mext:09051	ひじき ほしひじき ステンレス釜 ゆで	hijiki cocido (en caldera de acero)
+mext:09052	ひじき ほしひじき ステンレス釜 油いため	hijiki salteado (en caldera de acero)
+mext:09053	ひじき ほしひじき 鉄釜 乾	hijiki seco (en caldera de hierro)
+mext:09054	ひじき ほしひじき 鉄釜 ゆで	hijiki cocido (en caldera de hierro)
+mext:09055	ひじき ほしひじき 鉄釜 油いため	hijiki salteado (en caldera de hierro)
+mext:09056	まこんぶ 素干し 水煮	kombu ma seco cocido
+mext:09057	わかめ 湯通し塩蔵わかめ 塩抜き ゆで	wakame escaldada desalada cocida
+mext:09058	わかめ カットわかめ 水煮 （沸騰水で短時間加熱したもの）	wakame troceada cocida
+mext:09059	わかめ カットわかめ 水煮の汁	agua de cocción de wakame
+mext:09060	わかめ 乾燥わかめ 素干し 水戻し 水煮	wakame seca rehidratada cocida
 mext:10001	あいなめ 生	ainame crudo
+mext:10002	あこうだい 生	acodai (alfonsino) crudo
+mext:10003	まあじ 皮つき 生	jurel japonés con piel crudo
 mext:10004	まあじ 皮つき 水煮	jurel cocido
+mext:10005	まあじ 皮つき 焼き	jurel japonés con piel asado
+mext:10006	まあじ 開き干し 生	jurel japonés abierto seco crudo
+mext:10007	まあじ 開き干し 焼き	jurel japonés abierto seco asado
+mext:10008	にしまあじ 生	jurel nishima-aji crudo
+mext:10009	にしまあじ 水煮	jurel nishima-aji cocido
+mext:10010	にしまあじ 焼き	jurel nishima-aji asado
+mext:10011	むろあじ 生	jurel muroaji crudo
+mext:10012	むろあじ 焼き	jurel muroaji asado
+mext:10013	むろあじ 開き干し	jurel muroaji abierto seco
+mext:10014	むろあじ くさや	jurel muroaji kusaya
+mext:10015	あなご 生	anago (congrio) crudo
+mext:10016	あなご 蒸し	anago al vapor
+mext:10017	あまご 養殖 生	amago de cultivo crudo
+mext:10018	あまだい 生	amadai crudo
+mext:10019	あまだい 水煮	amadai cocido
+mext:10020	あまだい 焼き	amadai asado
+mext:10021	あゆ 天然 生	ayu silvestre crudo
+mext:10022	あゆ 天然 焼き	ayu silvestre asado
+mext:10023	あゆ 天然 内臓 生	ayu silvestre con vísceras crudo
+mext:10024	あゆ 天然 内臓 焼き	ayu silvestre con vísceras asado
+mext:10025	あゆ 養殖 生	ayu de cultivo crudo
+mext:10026	あゆ 養殖 焼き	ayu de cultivo asado
+mext:10027	あゆ 養殖 内臓 生	ayu de cultivo con vísceras crudo
+mext:10028	あゆ 養殖 内臓 焼き	ayu de cultivo con vísceras asado
+mext:10029	あゆ うるか	uruka
+mext:10030	アラスカめぬけ 生	gallineta menúke cruda
+mext:10031	あんこう 生	rape crudo
+mext:10032	あんこう きも 生	hígado de rape crudo
+mext:10033	いかなご 生	ikanago crudo
+mext:10034	いかなご 煮干し	ikanago seco cocido
+mext:10035	いかなご つくだ煮	ikanago tsukudani
+mext:10036	いかなご あめ煮	ikanago glaseado
+mext:10037	いさき 生	isaki crudo
+mext:10038	いしだい 生	ishidai crudo
+mext:10039	いとよりだい 生	itoyori cruda
+mext:10040	いとよりだい すり身	surimi de itoyori
+mext:10041	いぼだい 生	ibodai cruda
+mext:10042	うるめいわし 生	sardina urume cruda
+mext:10043	うるめいわし 丸干し	sardina urume seca entera
+mext:10044	かたくちいわし 生	anchoa japonesa (katakuchi-iwashi) cruda
+mext:10045	かたくちいわし 煮干し	anchoa japonesa seca (niboshi)
+mext:10046	かたくちいわし 田作り	tazukuri (anchoas glaseadas)
+mext:10047	まいわし 生	sardina cruda
+mext:10048	まいわし 水煮	sardina cocida
+mext:10049	まいわし 焼き	sardina asada
+mext:10050	まいわし 塩いわし	sardina en salazón
+mext:10051	まいわし 生干し	sardina semiseca
+mext:10052	まいわし 丸干し	sardina seca entera
+mext:10053	めざし 生	mezashi crudo
+mext:10054	めざし 焼き	mezashi asado
+mext:10055	しらす干し 微乾燥品	shirasu poco seco
+mext:10056	しらす干し 半乾燥品	shirasu semiseco
+mext:10057	たたみいわし	tatami-iwashi
+mext:10058	みりん干し かたくちいわし	anchoa japonesa seca en mirin
+mext:10059	みりん干し まいわし	sardina seca en mirin
+mext:10060	缶詰 水煮	sardina en conserva al natural
+mext:10061	缶詰 味付け	sardina en conserva condimentada
+mext:10062	缶詰 トマト漬	sardina en conserva en tomate
+mext:10063	缶詰 油漬	sardina en conserva en aceite
+mext:10064	缶詰 かば焼	sardina en conserva kabayaki
+mext:10065	いわな 養殖 生	iwana (salvelino) de cultivo cruda
+mext:10066	うぐい 生	ugui crudo
+mext:10067	うなぎ 養殖 生	anguila de cultivo cruda
+mext:10068	うなぎ きも 生	hígado de anguila crudo
+mext:10069	うなぎ 白焼き	anguila a la parrilla sin salsa
+mext:10070	うなぎ かば焼	anguila kabayaki
+mext:10071	うまづらはぎ 生	umazurahagi crudo
+mext:10072	うまづらはぎ 味付け開き干し	umazurahagi abierto seco condimentado
+mext:10073	えい 生	raya cruda
+mext:10074	えそ 生	eso (pez lagarto) crudo
+mext:10075	おいかわ 生	oikawa cruda
+mext:10076	おおさが 生	osaga cruda
+mext:10077	おこぜ 生	okoze (pez piedra) crudo
+mext:10078	おひょう 生	ohyō (fletán) crudo
+mext:10079	かさご 生	kasago (escorpena) crudo
+mext:10080	かじか 生	rascacio crudo
+mext:10081	かじか 水煮	rascacio cocido
+mext:10082	かじか つくだ煮	rascacio tsukudani
+mext:10083	くろかじき 生	marlín negro crudo
+mext:10084	まかじき 生	marlín rayado crudo
+mext:10085	めかじき 生	pez espada crudo
+mext:10086	かつお 春獲り 生	listado de primavera crudo
+mext:10087	かつお 秋獲り 生	listado de otoño crudo
+mext:10088	そうだがつお 生	melva cruda
+mext:10089	加工品 なまり	namari
+mext:10090	加工品 なまり節	namari-bushi
 mext:10091	加工品 かつお節	bonito seco (katsuobushi)
 mext:10092	加工品 削り節	virutas de bonito seco
 mext:10093	加工品 削り節つくだ煮	tsukudani de virutas de bonito
