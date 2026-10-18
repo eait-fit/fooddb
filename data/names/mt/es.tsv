@@ -29341,11 +29341,318 @@ tfda:G9000101	松茸白菇	matsutake blanco
 tfda:G9000201	金喜菇	enoki marrón
 tfda:G9000301	喜來菇	seta shirai
 tfda:G9000401	富珍茸	seta fuzhen
+tfda:H0105101	白鳳豆(台灣)	judía sable (Taiwán)
+tfda:H0105102	白鳳豆(進口)	judía sable (importada)
+tfda:H0205101	米豆	frijol arroz
+tfda:H0305101	花豆	judía escarlata
+tfda:H0405101	紅豆	azuki
+tfda:H0505101	紅雲豆(大紅豆)	alubia roja grande
+tfda:H0605101	青仁黑豆	soja negra de grano verde
+tfda:H0605201	黃仁黑豆	soja negra de grano amarillo
+tfda:H0610101	發芽黑豆(青仁)	soja negra germinada (grano verde)
+tfda:H0610201	烘烤黑豆	soja negra tostada
+tfda:H0620101	黑豆粉	harina de soja negra
+tfda:H0650101	黑豆漿(青仁)(無糖)(2025年取樣)	bebida de soja negra sin azúcar
+tfda:H0705101	毛綠豆	judía mungo
+tfda:H0705102	綠豆	judía mungo
+tfda:H0710101	綠豆仁	judía mungo pelada
+tfda:H0720101	綠豆粉	harina de mungo
+tfda:H0800101	豇豆(莢)	judía de metro (vainas)
+tfda:H0900101	萊豆仁(帶膜)	judías de Lima con piel
+tfda:H0900201	萊豆仁(去膜)	judías de Lima peladas
+tfda:H1000101	粉豆莢	judías verdes
+tfda:H1000201	敏豆莢	judías verdes (variedad mindou)
+tfda:H1000301	冷凍菜豆(莢)	judías verdes congeladas
+tfda:H1100101	毛豆仁	edamame (granos)
+tfda:H1100201	毛豆莢(高雄13號)	edamame en vaina (variedad Kaohsiung 13)
+tfda:H1100301	冷凍毛豆仁	edamame congelado (granos)
+tfda:H1105101	黃豆	soja
+tfda:H1105102	黃豆(有機)(2025年取樣)	soja ecológica
+tfda:H1110101	發芽黃豆	soja germinada
+tfda:H1120101	黃豆粉	harina de soja
+tfda:H1120102	黃豆粉(有機)	harina de soja ecológica
+tfda:H1150201	豆漿(無糖)	bebida de soja sin azúcar
+tfda:H1150301	全豆豆漿	bebida de soja integral
+tfda:H1200101	豌豆仁	guisantes verdes (granos)
+tfda:H1200201	豌豆莢	guisantes en vaina
+tfda:H1200301	高山大豌豆莢	guisantes en vaina de montaña grandes
+tfda:H1200401	甜豌豆莢	tirabeques
+tfda:H1200501	冷凍豌豆仁	guisantes congelados
+tfda:H1300101	鵲豆莢	judía egipcia (vainas)
+tfda:H1505101	紅扁豆仁	lentejas rojas
+tfda:H1600101	鷹嘴豆	garbanzos
+tfda:H1700101	樹豆(白)	guandú blanco
+tfda:H1800101	翼豆	judía alada
+tfda:H2000101	天貝(黃豆)	tempeh de soja
+tfda:I0100101	去骨牛小排	costillas de ternera sin hueso
 tfda:I0100102	帶骨牛小排	costillas de ternera con hueso
+tfda:I0100103	無骨牛小排(美牛)	costillas de ternera sin hueso (vacuno americano)
+tfda:I0100201	牛肋條	carne intercostal de ternera
 tfda:I0100202	牛肋條(2021年取樣)	tiras de costilla de ternera
+tfda:I0100301	沙朗牛排	entrecot
+tfda:I0102101	板腱	paleta superior de ternera
+tfda:I0102201	牛去骨肩胛小排	costillas de aguja de ternera sin hueso
+tfda:I0104101	牛前胸肉	pecho de vacuno
+tfda:I0104201	牛修清前胸肉	pecho de vacuno limpio
+tfda:I0106101	去骨紐約克牛排	filete Nueva York sin hueso
+tfda:I0106201	腓力牛排	filet mignon
+tfda:I0106202	腓力牛排(美牛)(2025年取樣)	filet mignon (vacuno americano)
+tfda:I0108101	牛後腿肉	carnaza de ternera
+tfda:I0108201	牛後腿股肉	tapilla de ternera
+tfda:I0108301	牛後腿腱子心	morcillo trasero de ternera
+tfda:I0108302	牛後腿腱子心(2022年取樣)	morcillo trasero de ternera
+tfda:I0110101	牛五花肉火鍋片	láminas de vacuno para hotpot (pecho)
+tfda:I0110102	牛紐約客火鍋片	láminas de vacuno para hotpot (Nueva York)
+tfda:I0110103	牛梅花肉火鍋片	láminas de vacuno para hotpot (aguja)
+tfda:I0110104	牛嫩肩里肌火鍋片	láminas de vacuno para hotpot (paleta tierna)
+tfda:I0120101	牛肚(瘤胃)	panza de vacuno
+tfda:I0120102	牛肚切片(瘤胃)	panza de vacuno en tiras
+tfda:I0120201	牛肚(蜂巢胃)	callos de vacuno de panal
+tfda:I0120301	牛筋	tendones de vacuno
+tfda:I0200101	山羊帶皮羊肉塊	cabra con piel en trozos
+tfda:I0200201	山羊前腿肉片	láminas de pierna delantera de cabra
+tfda:I0200301	山羊後腿肉火鍋片	láminas de pierna trasera de cabra para hotpot
+tfda:I0210101	綿羊肉切片	cordero en láminas
+tfda:I0210201	法式羊排	carré de cordero
 tfda:I0210301	去骨肩頸眼羊肉	carne de cordero deshuesada
+tfda:I0210401	小羊腰脊肉	lomo de cordero sin hueso
+tfda:I0210501	綿羊腹脅肉火鍋片	láminas de falda de cordero para hotpot
+tfda:I0300101	豬下肩肉	espaldilla de cerdo
+tfda:I0300102	豬下肩肉(2025年取樣)	espaldilla de cerdo
+tfda:I0300201	豬下肩瘦肉	espaldilla de cerdo magra
+tfda:I0300301	豬上肩肉	paleta de cerdo
+tfda:I0300401	豬肩胛肉	cuello de cerdo
+tfda:I0300501	豬肩胛排	costillas de paleta de cerdo
+tfda:I0300502	豬肩胛排(2021年取樣)	costillas de paleta de cerdo (2021)
+tfda:I0300601	豬前腿外腱肉	jarrete delantero de cerdo
+tfda:I0302101	豬後腿外腱肉	jarrete trasero de cerdo
+tfda:I0302201	豬後腿肉	pierna de cerdo fresca
+tfda:I0302202	豬後腿肉(2025年取樣)	pierna de cerdo (2025)
+tfda:I0302301	豬後腿瘦肉	pierna de cerdo magra
+tfda:I0304101	豬大里肌	lomo de cerdo
+tfda:I0304201	豬大排	chuleta de cerdo
+tfda:I0304301	豬小排	costillas de cerdo
 tfda:I0304401	僧帽肌	filete flat iron de ternera
+tfda:I0306101	豬小里肌	solomillo de cerdo
+tfda:I0308101	豬去皮腹脇肉	panceta de cerdo sin piel
+tfda:I0308201	豬帶皮腹脇肉	panceta de cerdo con piel
+tfda:I0308301	豬腹脇排	costillas de cerdo de falda
+tfda:I0310101	豬肝連	diafragma de cerdo
+tfda:I0310201	豬頰肉	carrilleras de cerdo
+tfda:I0310202	豬頰肉(2022年取樣)	carrilleras de cerdo (2022)
+tfda:I0310301	豬頸肉	papada de cerdo
+tfda:I0310401	豬絞肉(70％瘦肉率)	cerdo picado (70 % magro)
+tfda:I0310402	豬絞肉(90％瘦肉率)	cerdo picado (90 % magro)
+tfda:I0320101	豬心	corazón de cerdo
+tfda:I0320201	豬白管	aorta de cerdo
+tfda:I0320301	豬皮	piel de cerdo
+tfda:I0320401	豬耳	orejas de cerdo
+tfda:I0320501	豬舌	lengua de cerdo
+tfda:I0320601	豬血	sangre de cerdo
+tfda:I0320701	豬尾	rabo de cerdo
+tfda:I0320801	豬肝	hígado de cerdo
+tfda:I0321101	豬肚	estómago de cerdo
+tfda:I0321201	熟豬肚	estómago de cerdo cocido
+tfda:I0321301	豬油渣	chicharrones de cerdo
+tfda:I0321401	豬大骨湯	caldo de huesos de cerdo
+tfda:I0321402	豬肋骨湯	caldo de costillas de cerdo
+tfda:I0321403	豬肩骨湯	caldo de huesos de paleta de cerdo
+tfda:I0321501	豬軟骨	cartílago de cerdo
+tfda:I0321601	豬腎	riñones de cerdo
+tfda:I0321701	豬脾臟	bazo de cerdo
+tfda:I0321801	豬大腸	intestino grueso de cerdo
+tfda:I0321901	豬小腸	intestino delgado de cerdo
+tfda:I0322001	豬空腸	yeyuno de cerdo
+tfda:I0322101	豬前腳	manitas de cerdo delanteras
+tfda:I0322201	豬後腳	manitas de cerdo traseras
+tfda:I0322301	豬蹄膀	codillo de cerdo
+tfda:I0322501	豬腳筋	tendones de manitas de cerdo
+tfda:I0322601	豬腦	sesos de cerdo
+tfda:I0400101	土雞	pollo campero
+tfda:I0400201	肉雞	pollo broiler
+tfda:I0400301	烏骨雞	gallina sedosa
+tfda:I0402101	里肌肉(土雞)	solomillo de pollo campero
+tfda:I0402102	里肌肉(肉雞)	solomillo de pollo broiler
+tfda:I0402201	帶骨去皮對切胸(肉雞)	pechugas de pollo broiler con hueso sin piel
+tfda:I0402301	帶骨帶皮對切胸(肉雞)	pechugas de pollo broiler con hueso y piel
+tfda:I0402401	去皮清肉(土雞)	pechuga de pollo campero sin piel
+tfda:I0402402	去皮清肉(肉雞)	pechuga de pollo broiler sin piel
+tfda:I0404101	骨腿(土雞)	pierna de pollo campero con hueso
+tfda:I0404102	骨腿(肉雞)	pierna de pollo broiler con hueso
+tfda:I0404201	清腿(土雞)	pierna de pollo campero entera
+tfda:I0404202	清腿(肉雞)	pierna de pollo broiler entera
+tfda:I0404301	棒棒腿(土雞)	jamoncitos de pollo campero
+tfda:I0404302	棒棒腿(肉雞)	jamoncitos de pollo broiler
+tfda:I0404401	雞排(土雞)	filete de pollo campero
+tfda:I0404402	雞排(肉雞)	filete de pollo broiler
+tfda:I0404403	雞排(肉雞)(2021年取樣)	filete de pollo broiler (2021)
+tfda:I0404501	去皮去骨雞腿(肉雞)	muslo de pollo broiler sin piel ni hueso
+tfda:I0406101	二節翅(土雞)	alas de pollo de dos segmentos (campero)
+tfda:I0406102	二節翅(肉雞)	alas de pollo de dos segmentos (broiler)
+tfda:I0406201	三節翅(土雞)	alas enteras de pollo campero
+tfda:I0406202	三節翅(肉雞)	alas enteras de pollo broiler
+tfda:I0406203	三節翅(肉雞)(2025年取樣)	alas enteras de pollo broiler (2025)
+tfda:I0406301	翅腿(肉雞)	muslitos de ala de pollo broiler
+tfda:I0410101	雞絞肉	pollo picado
+tfda:I0420101	雞心(肉雞)	corazones de pollo
+tfda:I0420102	雞心(肉雞)(2021年取樣)	corazones de pollo
+tfda:I0420201	雞尾椎	rabadilla de pollo
+tfda:I0420301	雞肝(肉雞)	hígado de pollo
+tfda:I0420401	雞胗(肉雞)	mollejas de pollo
+tfda:I0420601	雞胸骨湯	caldo de pollo
+tfda:I0420701	雞睪丸	criadillas de pollo
+tfda:I0420801	雞腳(肉雞)	pies de pollo
+tfda:I0420901	雞膝軟骨(肉雞)	cartílago de pollo
+tfda:I0421001	雞皮(肉雞)	piel de pollo
+tfda:I0500101	太空鴨	pato entero
+tfda:I0500201	番鴨	pato criollo
+tfda:I0500301	太空鴨(去皮)	pato entero sin piel
+tfda:I0500401	土番鴨	pato mulard
+tfda:I0502101	櫻桃鴨胸肉片	pechuga de pato Cherry Valley en láminas
+tfda:I0504101	鴨腿	muslo de pato
+tfda:I0520101	鴨血	sangre de pato
+tfda:I0520201	鴨胗	molleja de pato
+tfda:I0520301	去骨鴨掌	pies de pato sin hueso
+tfda:I0520401	鴨腸	intestinos de pato
+tfda:I0520601	鴨翅	alas de pato
+tfda:I0520701	鴨頭	cabeza de pato
+tfda:I0520801	鴨舌	lengua de pato
+tfda:I0600101	鵝肉	carne de oca
+tfda:I0602101	鵝胸肉	pechuga de oca
+tfda:I0604101	鵝腿肉	muslo de oca
+tfda:I0620101	鵝心	corazón de oca
+tfda:I0620201	鵝肝	hígado de oca
+tfda:I0620301	鵝胗	molleja de oca
+tfda:I0620401	鵝腸	intestinos de oca
+tfda:I0700101	火雞肉	carne de pavo
+tfda:I0802101	鴕鳥菲力肉排	filete de avestruz
+tfda:I0804101	鴕鳥沙朗肉排	entrecot de avestruz
+tfda:I0810101	鴕腱肉	morcillo de avestruz
+tfda:I0810201	鴕腩肉	falda de avestruz
+tfda:I1000101	山豬肉片	jabalí en láminas
+tfda:I9900101	虎皮蛙	rana toro china
+tfda:I9900201	蛇肉	carne de serpiente
+tfda:J0200201	雙髻鯊	tiburón martillo
+tfda:J0200202	雙髻鯊腹肉	vientre de tiburón martillo
+tfda:J0200301	鯊魚切片	tiburón en filetes
+tfda:J0200401	鱘龍魚片	esturión del Amur en filetes
+tfda:J0400101	魟魚	raya
+tfda:J0400201	日本鰻鱺魚片(生)	anguila japonesa cruda en filetes
+tfda:J0400401	灰海鰻	congrio dientes de daga
+tfda:J0400501	魩仔魚	alevines de anchoa
+tfda:J0400601	魩仔魚(加工,大)	alevines de anchoa procesados (grandes)
+tfda:J0400602	魩仔魚(加工,小)	alevines de anchoa procesados (pequeños)
+tfda:J0400603	魩仔魚(加工)	alevines de anchoa procesados
+tfda:J0400801	鱙仔魚(加工)	alevines de anchoa (yaozi) procesados
+tfda:J0400901	日本銀帶鯡(加工)	arenque plateado japonés procesado
+tfda:J0400902	日本銀帶鯡魚干(丁香魚脯)	arenque plateado japonés seco
+tfda:J0401001	虱目魚(2月)	sabalote (febrero)
+tfda:J0401002	虱目魚(5月)	sabalote (mayo)
+tfda:J0401003	虱目魚(8月)	sabalote (agosto)
+tfda:J0401004	虱目魚(9月)	sabalote (septiembre)
+tfda:J0401005	虱目魚(12月)	sabalote (diciembre)
+tfda:J0401101	虱目魚(含皮)	sabalote con piel
+tfda:J0401102	虱目魚(2022年取樣)	sabalote (2022)
+tfda:J0401201	虱目魚腹肉(虱目魚肚)	panza de sabalote
+tfda:J0401301	草魚切片	carpa herbívora en filetes
+tfda:J0401401	草魚(含皮)	carpa herbívora con piel
+tfda:J0401501	鯉	carpa
+tfda:J0401601	鱅	carpa cabezona
+tfda:J0401701	鬍鯰	clarias
+tfda:J0401801	斑海鯰	bagre marino moteado
+tfda:J0401901	長體油胡瓜魚	shishamo
+tfda:J0402001	香魚	ayu
+tfda:J0402101	銀魚	pez de hielo
+tfda:J0402201	白肉鮭魚切片	salmón de carne blanca en filetes
 tfda:J0402301	紅肉鮭魚切片	filete de salmón rojo
+tfda:J0402401	大西洋鮭魚(台灣養殖)	salmón atlántico (de cultivo en Taiwán)
+tfda:J0402402	大西洋鮭魚切片(中段)	salmón atlántico en filetes (corte medio)
+tfda:J0402403	大西洋鮭魚切片(尾段)	salmón atlántico en filetes (corte de cola)
+tfda:J0402404	大西洋鮭魚生魚片	salmón atlántico para sashimi
+tfda:J0402405	大西洋鮭魚腹肉	panza de salmón atlántico
+tfda:J0402501	麥奇鈎吻鮭(去皮)	trucha arcoíris sin piel
+tfda:J0402601	麥奇鈎吻鮭(含皮)	trucha arcoíris con piel
+tfda:J0402701	姬魚	aulopus
+tfda:J0402801	印度鐮齒魚	pez Bombay
+tfda:J0402901	狗母魚(蛇鯔)	pez lagarto
+tfda:J0403001	鮟鱇	rape
+tfda:J0403101	鯔(2月)	lisa (febrero)
+tfda:J0403102	鯔(4月)	lisa (abril)
+tfda:J0403103	鯔(8月)	lisa (agosto)
+tfda:J0403104	鯔(11月,雄魚)	lisa (noviembre, macho)
+tfda:J0403105	鯔(11月,雌魚)	lisa (noviembre, hembra)
+tfda:J0403106	鯔(12月,雄魚)	lisa (diciembre, macho)
+tfda:J0403107	鯔(12月,雌魚)	lisa (diciembre, hembra)
+tfda:J0403108	鯔切片	lisa en filetes
+tfda:J0403201	鯔(含皮)	lisa con piel
+tfda:J0403301	斑鰭飛魚	pez volador
+tfda:J0403401	斑鱵	pez pico moteado
+tfda:J0403501	鱷形叉尾鶴鱵	agujón cocodrilo
+tfda:J0403601	金鱗魚	pez ardilla
+tfda:J0403701	鱗馬鞭魚	pez flauta
+tfda:J0403801	黃鱔	anguila de arrozal
+tfda:J0403901	石狗公	cabracho
+tfda:J0404001	環紋簑鮋	pez león
+tfda:J0404101	深海鱗角魚	rubio de profundidad
+tfda:J0404201	尖嘴鱸(去皮)	barramundi sin piel
+tfda:J0404301	尖嘴鱸(含皮)	barramundi con piel
+tfda:J0404401	日本花鱸(2月)	lubina japonesa (febrero)
+tfda:J0404402	日本花鱸((3月)	lubina japonesa (marzo)
+tfda:J0404403	日本花鱸((8月)	lubina japonesa (agosto)
+tfda:J0404404	日本花鱸((11月)	lubina japonesa (noviembre)
+tfda:J0404405	日本花鱸((12月)	lubina japonesa (diciembre)
+tfda:J0404501	日本花鱸(含皮)	lubina japonesa con piel
+tfda:J0404601	白鱸	perca blanca
+tfda:J0404701	條紋狼鱸	lubina rayada
+tfda:J0404801	鱖	pez mandarín
+tfda:J0404901	白緣星鱠	mero de cola de lira
+tfda:J0405001	青星九刺鮨	mero coral
+tfda:J0405002	青星九刺鮨魚片	mero coral en filetes
+tfda:J0405101	斑帶石斑魚	mero de roca
+tfda:J0405102	龍虎石斑魚	mero dragón-tigre
+tfda:J0405201	斑點九刺鮨(去皮)	mero pavo real sin piel
+tfda:J0405301	斑點九刺鮨(含皮)	mero pavo real con piel
+tfda:J0405401	棕點石斑魚	mero tigre
+tfda:J0405501	鞍帶石斑魚片	mero gigante en filetes
+tfda:J0405601	駝背鱸	mero pantera
+tfda:J0405701	橫紋九刺鮨	mero chocolate
+tfda:J0405801	大口黑鱸	lubina bocaza
+tfda:J0405901	日本紅目大眼鯛	catalufa japonesa
+tfda:J0406001	血斑異大眼鯛	catalufa manchada
+tfda:J0406101	多鱗沙鮻	sillago plateado
+tfda:J0406201	日本馬頭魚	pez caballo rojo
+tfda:J0406301	白馬頭魚	pez caballo blanco
+tfda:J0406401	鬼頭刀魚片	mahi-mahi en filetes
+tfda:J0406501	鬼頭刀	mahi-mahi
+tfda:J0406601	海鱺	cobia
+tfda:J0406602	海鱺魚片	cobia en filetes
+tfda:J0406701	大口逆鈎鰺	pez reina
+tfda:J0406801	大甲鰺	jurel torpedo
+tfda:J0406901	日本竹筴魚	jurel japonés
+tfda:J0407001	布氏鯧鰺(去皮)	pompano chato sin piel
+tfda:J0407101	布氏鯧鰺(含皮)	pompano chato con piel
+tfda:J0407201	杜氏鰤	serviola
+tfda:J0407202	長鰭鰤魚	serviola de aletas largas
+tfda:J0407301	范氏副葉鰺	jurel de aleta negra
+tfda:J0407401	泰勃圓鰺	jurel de cola roja
+tfda:J0407501	烏鯧	pez luna negro
+tfda:J0407601	無斑圓鰺	jurel colirrojo del Pacífico
+tfda:J0407701	藍圓鰺	jurel redondo
+tfda:J0407801	雙帶鰺	pez arcoíris
+tfda:J0407901	眼眶魚	jurel luna
+tfda:J0408001	斯氏長鰭烏魴	pezcuchillo
+tfda:J0408101	史氏紅諧魚	pez rubí japonés
+tfda:J0408201	希氏姬鯛	pargo lavanda
+tfda:J0408301	赤鰭笛鯛	pargo escarlata
+tfda:J0408401	孟加拉笛鯛	pargo de Bengala
+tfda:J0408501	前鱗笛鯛	pargo indio
+tfda:J0408601	馬拉巴笛鯛	pargo malabar
+tfda:J0408701	單斑笛鯛	pargo de una mancha
+tfda:J0408801	黃擬烏尾鮗	pargo amarillo
+tfda:J0408901	葉唇笛鯛	pargo de labios gruesos
+tfda:J0409001	松鯛	pez tres colas
+tfda:J0409101	三線磯鱸	ronco de tres líneas
+tfda:J0409201	星雞魚	ronco plateado
 tfda:J0409902	真鯛(3月)	pargo rojo
 tfda:J0410101	黑棘鯛(去皮)	dorada negra sin piel
 tfda:J2101701	日本龍蝦	langosta japonesa
