@@ -29651,18 +29651,478 @@ tfda:I0100202	牛肋條(2021年取樣)	tiras de costilla de ternera
 tfda:I0210301	去骨肩頸眼羊肉	carne de cordero deshuesada
 tfda:I0304401	僧帽肌	filete flat iron de ternera
 tfda:J0402301	紅肉鮭魚切片	filete de salmón rojo
+tfda:J0409301	密點少棘胡椒鯛	burro pintado
+tfda:J0409401	金線魚	nemíptero dorado
+tfda:J0409501	青嘴龍占魚	emperador jaspeado
+tfda:J0409601	網紋龍占魚	emperador de hocico rojo
+tfda:J0409701	平鯛	sargo de líneas doradas
+tfda:J0409801	阿部牙鯛	dentón de Abe
+tfda:J0409901	真鯛(1月)	pargo rojo (enero)
 tfda:J0409902	真鯛(3月)	pargo rojo
+tfda:J0409903	真鯛(5月)	pargo rojo (mayo)
+tfda:J0409904	真鯛(8月)	pargo rojo (agosto)
+tfda:J0409905	真鯛(9月)	pargo rojo (septiembre)
+tfda:J0409906	真鯛(11月)	pargo rojo (noviembre)
+tfda:J0410001	黃鰭棘鯛	dorada de aletas amarillas
 tfda:J0410101	黑棘鯛(去皮)	dorada negra sin piel
+tfda:J0410201	黑棘鯛(含皮)	dorada negra con piel
+tfda:J0410301	多鱗四指馬鮁	barbudo de cuatro dedos oriental
+tfda:J0410401	大黃魚	corvina amarilla grande
+tfda:J0410501	小黃魚(去皮)	corvina amarilla pequeña sin piel
+tfda:J0410601	小黃魚(含皮)	corvina amarilla pequeña con piel
+tfda:J0410701	白姑魚	corvina plateada
+tfda:J0410801	眼斑擬石首魚	corvina ocelada
+tfda:J0410901	黃姑魚	corvina de flor blanca
+tfda:J0411001	黑䱛	corvina boca negra
+tfda:J0411101	鮸	corvina miiuy
+tfda:J0411201	鱗鰭叫姑魚	corvina de aletas escamadas
+tfda:J0411301	黑斑海緋鯉	salmonete de mancha negra
+tfda:J0411401	斑點雞籠鯧	pez hoz manchado
+tfda:J0411501	花身鯻	terapón jarbua
+tfda:J0411601	花尾唇指翁(翁加魚邊)	morwong cola moteada
+tfda:J0411701	尼羅口孵非鯽(去皮)	tilapia del Nilo sin piel
+tfda:J0411801	尼羅口孵非鯽(含皮)	tilapia del Nilo con piel
+tfda:J0411802	尼羅口孵非鯽(含皮)(2022年取樣)	tilapia del Nilo con piel (2022)
+tfda:J0411901	花身副麗魚	guapote tigre
+tfda:J0412001	紅色吳郭魚	tilapia roja
+tfda:J0412002	台灣鯛魚片(生)	filete de tilapia taiwanesa crudo
+tfda:J0412003	台灣鯛魚片(生)(2021年)	filete de tilapia taiwanesa crudo (2021)
+tfda:J0412101	台灣鯛魚片(水煮)	filete de tilapia taiwanesa hervido
+tfda:J0412102	台灣鯛魚片(油煎)	filete de tilapia taiwanesa frito
+tfda:J0412103	台灣鯛魚片(烤,190℃,10分鐘)	filete de tilapia taiwanesa al horno (190 °C, 10 min)
+tfda:J0412104	台灣鯛魚片(烤,190℃,20分鐘)	filete de tilapia taiwanesa al horno (190 °C, 20 min)
+tfda:J0412105	台灣鯛魚片(烤,230℃,10分鐘)	filete de tilapia taiwanesa al horno (230 °C, 10 min)
+tfda:J0412106	台灣鯛魚片(烤,230℃,20分鐘)	filete de tilapia taiwanesa al horno (230 °C, 20 min)
+tfda:J0412107	台灣鯛魚片(清蒸)	filete de tilapia taiwanesa al vapor
+tfda:J0412108	台灣鯛魚片(微波)	filete de tilapia taiwanesa al microondas
+tfda:J0412201	台灣鯛魚湯(水煮)	sopa de tilapia taiwanesa
+tfda:J0412301	莫三比克口孵非鯽	tilapia de Mozambique
+tfda:J0412401	薔薇項鰭魚(去皮)	raor rosado sin piel
+tfda:J0412501	薔薇項鰭魚(含皮)	raor rosado con piel
+tfda:J0412601	藍豬齒魚	pez colmillón azul
+tfda:J0412701	福氏鸚哥魚(去皮)	loro de Forsten sin piel
+tfda:J0412801	橫紋鸚哥魚(含皮)	loro festivo con piel
+tfda:J0412901	藍點鸚哥魚	loro de barras azules
+tfda:J0413001	金錢魚	escatófago
+tfda:J0413101	褐臭肚魚	sigano pardo
+tfda:J0413201	杜氏刺尾鯛	cirujano de Dussumier
+tfda:J0413301	後刺尾鯛	cirujano mata
+tfda:J0413401	鋸尾鯛	pez sierra
+tfda:J0413501	大眼金梭魚	barracuda ojona
+tfda:J0413601	鱗網帶鰆切片	escolar en filetes
+tfda:J0413701	鱗網帶鰆(含皮)	escolar con piel
+tfda:J0413801	白帶魚	pez sable
+tfda:J0413802	白帶魚(油帶)(2025年取樣)	pez sable graso (2025)
+tfda:J0413901	大目鮪	atún ojo grande
+tfda:J0414001	正鰹	listado
+tfda:J0414101	花腹鯖	caballa australiana
+tfda:J0414201	高麗馬加鰆	sierra coreana
+tfda:J0414301	康氏馬加鰆切片(去皮)	sierra de Commerson en filetes sin piel
+tfda:J0414401	康氏馬加鰆切片(含皮)	sierra de Commerson en filetes con piel
+tfda:J0414501	臺灣馬加鰆	sierra de Taiwán
+tfda:J0414601	鮪魚生魚片	atún para sashimi
+tfda:J0414701	鯖魚(生)	caballa cruda
+tfda:J0414801	鯖魚(炒)	caballa salteada
+tfda:J0414802	鯖魚(炸)	caballa frita
+tfda:J0414803	鯖魚(烤,150度,10分)	caballa al horno (150 °C, 10 min)
+tfda:J0414804	鯖魚(烤,150度,20分)	caballa al horno (150 °C, 20 min)
+tfda:J0414805	鯖魚(烤,150度,30分)	caballa al horno (150 °C, 30 min)
+tfda:J0414806	鯖魚(烤,180度,10分)	caballa al horno (180 °C, 10 min)
+tfda:J0414807	鯖魚(烤,210度,10分)	caballa al horno (210 °C, 10 min)
+tfda:J0414808	鯖魚(煮)	caballa hervida
+tfda:J0414809	鯖魚(煎)	caballa a la plancha
+tfda:J0414810	鯖魚(蒸)	caballa al vapor
+tfda:J0414901	旗魚切片	pez espada en filetes
+tfda:J0414902	旗魚腹肉	ventresca de pez espada
+tfda:J0415001	刺鯧(去皮)	pez mantequilla japonés sin piel
+tfda:J0415101	刺鯧(含皮)	pez mantequilla japonés con piel
+tfda:J0415102	刺鯧(含皮)(2025年取樣)	pez mantequilla japonés con piel (2025)
+tfda:J0415201	星斑真鯧	palometa estrellada
+tfda:J0415301	銀鯧(2月)	palometa plateada (febrero)
+tfda:J0415302	銀鯧(3月)	palometa plateada (marzo)
+tfda:J0415303	銀鯧(5月)	palometa plateada (mayo)
+tfda:J0415304	銀鯧(8月)	palometa plateada (agosto)
+tfda:J0415305	銀鯧(12月)	palometa plateada (diciembre)
+tfda:J0415401	銀鯧(含皮)	palometa plateada con piel
+tfda:J0415501	斑鱧	pez cabeza de serpiente moteado
+tfda:J0415601	大口鰜切片(含皮)	fletán indio en filetes con piel
+tfda:J0415701	鰈魚切片	platija en filetes
+tfda:J0415801	雙線鬚鰨	lengua de dos franjas
+tfda:J0415901	單角革單棘魨(去皮)	pez lija unicornio sin piel
+tfda:J0416001	單角革單棘魨(含皮)	pez lija unicornio con piel
+tfda:J0416101	克氏兔頭魨	pez globo de Glover
+tfda:J0416201	翻車魨腹肉	panza de pez luna
+tfda:J0416301	犬牙南極魚切片	bacalao de profundidad en filetes
+tfda:J0416401	低眼無齒芒魚片(芒加魚邊)	panga en filetes
+tfda:J0416501	秋刀魚	paparda
+tfda:J0416601	毛鱗魚	capelán
+tfda:J0416701	斑駁尖塘鱧	gobio marmóreo
+tfda:J0600101	圓鱈魚鰓肉	mejillas de abadejo
+tfda:J0600201	潮鯛魚下巴	papada de tilapia de mar
+tfda:J0600301	鯊魚翅	aletas de tiburón
+tfda:J0600401	魚翅唇	labios de tiburón
+tfda:J0600501	翻車魨魚皮	piel de pez luna
+tfda:J0600601	鯊魚皮	piel de tiburón
+tfda:J0600701	魚漿(旗魚)	pasta de pescado (pez espada)
+tfda:J0700301	鮸魚卵(加工)	huevas de corvina miiuy procesadas
+tfda:J0700401	鯔魚卵	huevas de lisa
+tfda:J0700601	鰆魚卵	huevas de sierra
+tfda:J0700701	鰹魚卵	huevas de listado
+tfda:J0702101	鯔魚精囊	lechas de lisa
+tfda:J0705101	鮟鱇魚肝	hígado de rape
+tfda:J0707101	旗魚肚	ventresca de pez espada
+tfda:J0707201	鮪魚肚	ventresca de atún
+tfda:J0800101	小魚干	pescaditos secos
+tfda:J0800201	扁魚干	platija seca
+tfda:J0800401	柴魚片	katsuobushi
+tfda:J2100101	羅氏沼蝦	langostino de río gigante
+tfda:J2100201	北方長額蝦(加工)	gamba boreal cocida
+tfda:J2100301	東方異腕蝦	gamba acorazada
+tfda:J2100401	胭脂蝦	gamba roja gigante
+tfda:J2100501	日本玻璃蝦	gamba de cristal japonesa cocida
+tfda:J2100601	相模後海螯蝦	cigala de Sagami
+tfda:J2100701	中國對蝦	gamba china
+tfda:J2100801	日本對蝦(大)	gamba kuruma grande
+tfda:J2100802	日本對蝦(小)	gamba kuruma pequeña
+tfda:J2100901	白對蝦(大)	langostino blanco grande
+tfda:J2100902	白對蝦(小)	langostino blanco pequeño
+tfda:J2100903	白對蝦(小)(2022年取樣)	langostino blanco pequeño (2022)
+tfda:J2101001	哈氏彷對蝦	gamba lanza
+tfda:J2101101	草對蝦	gamba tigre gigante
+tfda:J2101201	藍對蝦	langostino azul
+tfda:J2101301	鬚赤蝦	gamba aterciopelada barbuda
+tfda:J2101401	大管鞭蝦	gamba cabezona
+tfda:J2101501	隆脊管鞭蝦	gamba cabezona crestada
+tfda:J2101601	螳螂蝦	galera
 tfda:J2101701	日本龍蝦	langosta japonesa
+tfda:J2101801	正櫻蝦(生)	gamba sakura cruda
+tfda:J2101901	正櫻蝦(熟)	gamba sakura cocida
+tfda:J2102001	正櫻蝦乾	gamba sakura seca
+tfda:J2200101	大頭蝦仁	gambas peladas cabezonas
+tfda:J2200201	明蝦仁	langostinos pelados
+tfda:J2200301	紅蝦仁	gambas rojas peladas
+tfda:J2200401	海鱸蝦仁	gambas peladas (hailu)
+tfda:J2200501	草蝦仁	gambas tigre peladas
+tfda:J2200601	鳳尾蝦仁	gambas peladas «fénix»
+tfda:J2200701	鬚赤蝦仁	gambas aterciopeladas peladas
+tfda:J2300101	蝦皮	gambitas secas (con cáscara)
+tfda:J2300201	蝦米	gambas secas peladas
+tfda:J2300301	金鉤蝦乾	gambas secas «gancho de oro»
+tfda:J2500101	紅蟳	cangrejo de manglar rojo
+tfda:J2500201	蛙形蟹	cangrejo rana
+tfda:J2600101	蟹腳肉	carne de patas de cangrejo
+tfda:J3100101	竹蟶(冷凍)	navajas congeladas
+tfda:J3100201	真牡蠣	ostra del Pacífico
+tfda:J3100202	帶殼真牡蠣(生蠔)	ostra del Pacífico en concha (cruda)
+tfda:J3100301	黑齒牡蠣	ostra de dientes negros
+tfda:J3100401	蝦夷海扇蛤	vieira de Yesso
+tfda:J3100501	綠殼菜蛤	mejillón verde
+tfda:J3100601	綠殼菜蛤干	mejillón verde seco
+tfda:J3100701	西施舌	coquina púrpura
+tfda:J3100801	台灣蜆	almeja asiática de Taiwán
+tfda:J3100901	大文蛤	almeja venus grande
+tfda:J3101001	文蛤	almeja venus
+tfda:J3101101	波紋橫簾蛤	almeja venus ondulada
+tfda:J3101201	菲律賓簾蛤	almeja filipina
+tfda:J3101301	環文蛤	almeja venus china
+tfda:J3200101	干貝(冷凍)	vieira congelada
+tfda:J3200201	干貝(乾)	vieira seca
+tfda:J3200202	珠貝(乾)	ostra perlífera seca
+tfda:J3300101	牡蠣干	ostra seca
+tfda:J3500101	真烏賊(大)	sepia grande
+tfda:J3500102	真烏賊(小)	sepia pequeña
+tfda:J3500201	章魚	pulpo
+tfda:J3500301	阿根廷魷	calamar argentino
+tfda:J3500401	泡魷魚	calamar remojado
+tfda:J3500501	台灣鎖管	calamar de Taiwán
+tfda:J3500502	台灣鎖管(宜蘭野生)(2025年取樣)	calamar de Taiwán salvaje (Yilan, 2025)
+tfda:J3500601	尖鎖管	calamar siboga
+tfda:J3500701	軟翅仔	calamar de arrecife
+tfda:J3500801	香螺	caracola aromática
+tfda:J3500901	象牙鳳螺	babylonia marfil
+tfda:J3501001	泥螺	caracol de fango
+tfda:J3501101	雪螺	caracol de nieve
+tfda:J3501201	九孔螺	oreja de mar pequeña
+tfda:J3501301	鮑魚	oreja de mar
+tfda:J3501501	蝸牛肉	carne de caracol
+tfda:J3600101	烏賊精囊	lechas de sepia
+tfda:J3700101	小卷干	calamar pequeño seco
+tfda:J4100101	白海參	pepino de mar blanco
+tfda:J4100201	仿刺參	pepino de mar japonés
+tfda:J4100301	南美刺參	pepino de mar sudamericano
+tfda:J4100401	紅海參	pepino de mar rojo
+tfda:J4100501	黑烏參	pepino de mar negro
+tfda:J5100101	海蜇皮	medusa en salazón
+tfda:K0100101	雞蛋(白殼)	huevo de gallina (cáscara blanca)
+tfda:K0100102	雞蛋(黃殼)	huevo de gallina (cáscara amarilla)
+tfda:K0100201	土雞蛋	huevo de gallina campera
+tfda:K0100202	土雞蛋(2022年取樣)	huevo de gallina campera (2022)
 tfda:K0100301	烏骨雞蛋	huevos de gallina sedosa
+tfda:K0100401	雞蛋(高DHA)	huevo de gallina enriquecido en DHA
+tfda:K0100501	雞蛋(高次亞麻油酸)	huevo de gallina enriquecido en ácido linolénico
+tfda:K0100601	雞蛋(高亞麻油酸)	huevo de gallina enriquecido en ácido linoleico
+tfda:K0100701	初卵雞蛋	huevo de pollastra
+tfda:K0100801	雞蛋(高維生素A&E)	huevo de gallina enriquecido en vitaminas A y E
+tfda:K0100901	雞蛋(高維生素E)	huevo de gallina enriquecido en vitamina E
+tfda:K0106101	雞蛋白(白殼)	clara de huevo (cáscara blanca)
+tfda:K0106102	雞蛋白(黃殼)	clara de huevo (cáscara amarilla)
+tfda:K0106201	烏骨雞蛋白	clara de huevo de gallina sedosa
+tfda:K0108101	雞蛋黃(白殼)	yema de huevo (cáscara blanca)
+tfda:K0108102	雞蛋黃(黃殼)	yema de huevo (cáscara amarilla)
+tfda:K0108201	烏骨雞蛋黃	yema de huevo de gallina sedosa
+tfda:K0108301	雞蛋黃(高維生素E)	yema de huevo enriquecida en vitamina E
+tfda:K0110101	溫泉蛋	huevo onsen
+tfda:K0111101	雞水煮蛋	huevo de gallina cocido
+tfda:K0111601	雞水煮蛋白	clara de huevo cocida
+tfda:K0111801	雞水煮蛋黃	yema de huevo cocida
+tfda:K0112101	茶葉蛋(市售)	huevo al té (comprado)
+tfda:K0112102	茶葉蛋(浸泡隔夜)	huevo al té (remojado toda la noche)
+tfda:K0112601	茶葉蛋白(浸泡隔夜)	clara al té (remojada toda la noche)
+tfda:K0112801	茶葉蛋黃(浸泡隔夜)	yema al té (remojada toda la noche)
+tfda:K0113101	雞皮蛋	huevo milenario de gallina
+tfda:K0113201	土雞皮蛋	huevo milenario de gallina campera
+tfda:K0120101	雞滷蛋(市售)	huevo en salsa de soja (comprado)
+tfda:K0120102	雞滷蛋(現煮)	huevo en salsa de soja (recién cocido)
+tfda:K0120103	雞滷蛋(浸泡隔夜)	huevo en salsa de soja (remojado toda la noche)
+tfda:K0120601	雞滷蛋白(現煮)	clara en salsa de soja (recién cocida)
+tfda:K0120602	雞滷蛋白(浸泡隔夜)	clara en salsa de soja (remojada toda la noche)
+tfda:K0120801	雞滷蛋黃(現煮)	yema en salsa de soja (recién cocida)
+tfda:K0120802	雞滷蛋黃(浸泡隔夜)	yema en salsa de soja (remojada toda la noche)
+tfda:K0121101	雞鐵蛋	huevo de hierro
+tfda:K0122101	雞水波蛋	huevo pochado
+tfda:K0123101	荷包蛋(不加油)	huevo a la plancha sin aceite
+tfda:K0123201	荷包蛋(加油1小匙)	huevo frito (1 cucharadita de aceite)
+tfda:K0150101	煎蛋(不加油)	huevo a la plancha sin aceite
+tfda:K0150201	炒蛋(加油3大匙)	huevo revuelto (3 cucharadas de aceite)
+tfda:K0150301	蒸蛋(市售)	flan de huevo (comprado)
+tfda:K0150302	蒸蛋(微波爐)	flan de huevo (microondas)
+tfda:K0150303	蒸蛋(電鍋)	flan de huevo (olla eléctrica)
+tfda:K0200101	鴨蛋	huevo de pato
+tfda:K0200201	紅面番鴨蛋	huevo de pato mudo
+tfda:K0206101	鴨蛋白	clara de huevo de pato
+tfda:K0208101	鴨蛋黃	yema de huevo de pato
+tfda:K0213101	鴨皮蛋	huevo milenario de pato
+tfda:K0214101	鴨生鹹蛋	huevo de pato salado crudo
+tfda:K0214102	鴨熟鹹蛋	huevo de pato salado cocido
+tfda:K0214103	鴨熟鹹蛋(薄鹽)	huevo de pato salado cocido (bajo en sal)
+tfda:K0214801	鴨鹹蛋黃	yema de huevo de pato salada
 tfda:K0300101	鵪鶉蛋	huevos de codorniz
+tfda:K0311101	鵪鶉水煮蛋	huevo de codorniz cocido
+tfda:K0313101	鵪鶉皮蛋	huevo milenario de codorniz
+tfda:K0314101	鵪鶉鹹蛋	huevo de codorniz salado
+tfda:K0320101	鵪鶉滷蛋	huevo de codorniz en salsa de soja
+tfda:K0321101	鵪鶉鐵蛋	huevo de codorniz de hierro
+tfda:K0400101	鴿蛋	huevo de paloma
+tfda:K0500102	鵝蛋	huevo de oca
+tfda:L0100101	高脂鮮乳	leche fresca rica en grasa
+tfda:L0102101	全脂鮮乳(1月取樣)	leche fresca entera (enero)
+tfda:L0102102	全脂鮮乳(4月取樣)	leche fresca entera (abril)
+tfda:L0102103	全脂鮮乳(6月取樣)	leche fresca entera (junio)
+tfda:L0102104	全脂鮮乳(9月取樣)	leche fresca entera (septiembre)
+tfda:L0102105	全脂鮮乳(10月取樣)	leche fresca entera (octubre)
 tfda:L0102106	全脂鮮乳(11月取樣)	leche entera fresca
+tfda:L0102107	全脂鮮乳(12月取樣)	leche fresca entera (diciembre)
+tfda:L0102108	全脂鮮乳(7月取樣)	leche fresca entera (julio)
+tfda:L0104101	中脂鮮乳	leche fresca semidesnatada
 tfda:L0106101	低脂鮮乳	leche semidesnatada fresca
+tfda:L0110101	高脂強化鮮乳(鈣強化)	leche fresca entera enriquecida en calcio
+tfda:L0110201	高脂強化鮮乳(寡醣強化)	leche fresca entera enriquecida en oligosacáridos
+tfda:L0114101	中脂強化鮮乳(脂肪酸調整)	leche fresca semidesnatada con perfil graso modificado
+tfda:L0116101	低脂強化鮮乳(維生素E強化)	leche fresca baja en grasa enriquecida en vitamina E
+tfda:L0116201	低脂強化鮮乳(寡醣強化)	leche fresca baja en grasa enriquecida en oligosacáridos
+tfda:L0118101	脫脂強化鮮乳(鈣強化)	leche fresca desnatada enriquecida en calcio
+tfda:L0118201	脫脂強化鮮乳(寡醣強化)	leche fresca desnatada enriquecida en oligosacáridos
+tfda:L0118301	脫脂強化鮮乳(鐵強化)	leche fresca desnatada enriquecida en hierro
+tfda:L0124101	中脂調味乳(巧克力)	leche saborizada semidesnatada de chocolate
+tfda:L0124201	中脂調味乳(多穀類)	leche saborizada semidesnatada de cereales
+tfda:L0124301	中脂調味乳(果汁)	leche saborizada semidesnatada de frutas
+tfda:L0124401	中脂調味乳(鈣強化)	leche saborizada semidesnatada enriquecida en calcio
+tfda:L0124501	中脂調味乳(維生素強化)	leche saborizada semidesnatada enriquecida en vitaminas
+tfda:L0124601	中脂調味乳(纖維&維生素E強化)	leche saborizada semidesnatada con fibra y vitamina E
+tfda:L0126101	低脂調味乳(木瓜)	leche saborizada baja en grasa (papaya)
+tfda:L0130101	高脂保久乳	leche UHT entera
+tfda:L0132101	全脂保久乳	leche UHT entera
+tfda:L0134101	中脂保久乳	leche UHT semidesnatada
+tfda:L0146101	低脂強化保久乳(寡糖強化)	leche UHT baja en grasa enriquecida en oligosacáridos
+tfda:L0154101	中脂調味保久乳(巧克力)	leche UHT saborizada semidesnatada de chocolate
+tfda:L0154201	中脂調味保久乳(布丁)	leche UHT saborizada semidesnatada de pudín
+tfda:L0200101	全脂奶粉	leche en polvo entera
+tfda:L0204101	部份脫脂奶粉	leche en polvo parcialmente desnatada
+tfda:L0204201	部份脫脂奶粉(即溶)	leche en polvo parcialmente desnatada instantánea
+tfda:L0204301	部份脫脂低乳糖奶粉	leche en polvo parcialmente desnatada baja en lactosa
+tfda:L0207101	脫脂奶粉	leche en polvo desnatada
 tfda:L0207201	脫脂奶粉(即溶)	leche desnatada en polvo instantánea
+tfda:L0211101	全脂強化奶粉(纖維強化)	leche en polvo entera enriquecida en fibra
+tfda:L0214101	部份脫脂強化奶粉(鈣強化)	leche en polvo parcialmente desnatada enriquecida en calcio
+tfda:L0214201	部份脫脂強化奶粉(纖維&DHA強化)	leche en polvo parcialmente desnatada con fibra y DHA
+tfda:L0214301	部份脫脂強化奶粉(纖維&鈣強化)	leche en polvo parcialmente desnatada con fibra y calcio
+tfda:L0214401	部份脫脂強化奶粉(脂肪酸調整)	leche en polvo parcialmente desnatada con perfil graso modificado
+tfda:L0217101	脫脂強化奶粉(抗氧化)	leche en polvo desnatada antioxidante
+tfda:L0217201	脫脂強化奶粉(鈣&維生素A強化)	leche en polvo desnatada con calcio y vitamina A
+tfda:L0217301	脫脂強化奶粉(鈣&維生素C,E強化)	leche en polvo desnatada con calcio y vitaminas C y E
+tfda:L0217401	脫脂強化奶粉(鈣&鐵強化)	leche en polvo desnatada con calcio y hierro
+tfda:L0224101	部份脫脂調味奶粉(巧克力)	leche en polvo parcialmente desnatada saborizada de chocolate
+tfda:L0224201	部份脫脂調味奶粉(果汁)	leche en polvo parcialmente desnatada saborizada de frutas
+tfda:L0308101	脫脂稀釋發酵乳	yogur líquido desnatado
+tfda:L0308201	脫脂稀釋發酵乳(鈣強化)	yogur líquido desnatado enriquecido en calcio
+tfda:L0312101	全脂濃稠發酵乳	yogur denso entero
+tfda:L0314101	中脂濃稠發酵乳	yogur denso semidesnatado
+tfda:L0314201	中脂濃稠發酵乳(無糖&纖維強化)	yogur denso semidesnatado sin azúcar con fibra
+tfda:L0314301	中脂濃稠發酵乳(草莓)	yogur denso semidesnatado de fresa
+tfda:L0316101	低脂濃稠發酵乳	yogur denso bajo en grasa
+tfda:L0318101	脫脂濃稠發酵乳	yogur denso desnatado
+tfda:L0318201	脫脂濃稠發酵乳(低熱量)	yogur denso desnatado bajo en calorías
+tfda:L0318301	脫脂濃稠發酵乳(草莓)	yogur denso desnatado de fresa
+tfda:L0318401	脫脂濃稠發酵乳(啤酒酵母)	yogur denso desnatado con levadura de cerveza
+tfda:L0320101	高脂凝態發酵乳(纖維強化)	yogur entero con fibra
+tfda:L0322101	全脂凝態發酵乳	yogur entero
+tfda:L0324101	中脂凝態發酵乳(草莓)	yogur semidesnatado de fresa
+tfda:L0324201	中脂凝態發酵乳(蘆薈)	yogur semidesnatado de aloe
+tfda:L0328101	脫脂凝態發酵乳(纖維強化)	yogur desnatado con fibra
+tfda:L0338101	脫脂保久稀釋發酵乳	yogur líquido desnatado esterilizado
+tfda:L0348101	脫脂保久濃稠發酵乳(草莓&蘋果)	yogur denso desnatado esterilizado de fresa y manzana
+tfda:L0400101	淡煉乳	leche evaporada
+tfda:L0400201	加糖部份脫脂煉乳	leche condensada parcialmente desnatada
+tfda:L0500101	切片乾酪	queso en lonchas
+tfda:L0500201	切片乾酪(低脂)	queso en lonchas bajo en grasa
+tfda:L0500301	刨絲乾酪	queso rallado
+tfda:L0500401	乾酪粉	queso en polvo
+tfda:L1000101	鮮奶可可	cacao con leche
+tfda:L1000201	木瓜牛奶	leche con papaya
+tfda:L1100101	高脂鮮羊乳	leche de cabra fresca entera
+tfda:L1104101	中脂鮮羊乳	leche de cabra fresca semidesnatada
 tfda:L1132101	保久羊乳	leche de cabra UHT
+tfda:L1154101	中脂調味保久羊乳(巧克力)	leche de cabra UHT saborizada semidesnatada de chocolate
+tfda:L1154201	中脂調味保久羊乳(果汁)	leche de cabra UHT saborizada semidesnatada de frutas
+tfda:L1200101	全脂羊奶粉	leche de cabra en polvo entera
+tfda:L1200201	全脂羊奶粉(即溶)	leche de cabra en polvo entera instantánea
+tfda:M0100101	牛油(未精煉)	sebo sin refinar
+tfda:M0100201	牛油(精煉)	sebo refinado
+tfda:M0200101	豬油	manteca de cerdo
+tfda:M0200102	豬油(2022年取樣)	manteca de cerdo (2022)
+tfda:M0200201	高油酸豬油	manteca de cerdo alta en ácido oleico
+tfda:M0300101	雞油	grasa de pollo
+tfda:M0900101	奶油(固態,不加鹽)	mantequilla sin sal
 tfda:M0900201	奶油(固態,加鹽)	mantequilla con sal
+tfda:M0900301	奶油(液態)	nata
+tfda:M1000101	人造奶油(維生素強化)	margarina enriquecida en vitaminas
+tfda:M1000102	人造奶油(2021年取樣)	margarina (2021)
+tfda:M1000201	中脂人造奶油	margarina semigrasa
+tfda:M1000301	人造奶油(低熱量)	margarina baja en calorías
+tfda:M1100101	大豆油	aceite de soja
+tfda:M1100201	大豆油(卵磷脂強化)	aceite de soja con lecitina
+tfda:M1100301	大豆油(多種維生素強化)	aceite de soja con vitaminas
+tfda:M1200101	玉米油	aceite de maíz
+tfda:M1300101	米油(秈米)	aceite de arroz (índica)
+tfda:M1300201	米油(粳米)	aceite de arroz (japónica)
+tfda:M1400101	亞麻仁油	aceite de linaza
+tfda:M1500101	白芝麻油	aceite de sésamo blanco
+tfda:M1500201	黑芝麻油	aceite de sésamo negro
+tfda:M1550101	調合芝麻油	aceite de sésamo mezclado
+tfda:M1600101	花生油	aceite de cacahuete
+tfda:M1650101	調合花生油	aceite de cacahuete mezclado
+tfda:M1700101	油菜籽油	aceite de colza
+tfda:M1800101	芥花油	aceite de canola
+tfda:M1900101	南瓜籽油	aceite de semillas de calabaza
+tfda:M2000101	紅花籽油	aceite de cártamo
+tfda:M2000201	高油酸紅花籽油	aceite de cártamo alto en ácido oleico
+tfda:M2100101	核桃油	aceite de nuez
+tfda:M2200101	油茶油	aceite de camelia
+tfda:M2200201	熟油茶油	aceite de camelia tostado
+tfda:M2300101	高油酸棕櫚油	aceite de palma alto en ácido oleico
+tfda:M2400101	椰子油	aceite de coco
+tfda:M2500101	葵花籽油	aceite de girasol
+tfda:M2500201	葵花籽油(多種維生素強化)	aceite de girasol con vitaminas
+tfda:M2500301	高油酸葵花籽油	aceite de girasol alto en ácido oleico
+tfda:M2600101	葡萄籽油	aceite de semillas de uva
+tfda:M2700101	橄欖油	aceite de oliva
+tfda:M9900101	烤酥油	grasa para repostería (shortening)
+tfda:M9900201	調合植物油	aceite vegetal mezclado
+tfda:M9900301	中鏈脂肪酸油	aceite MCT
+tfda:N0100101	方糖	azúcar en terrones
+tfda:N0100201	冰糖	azúcar cande
+tfda:N0100301	紅砂糖	azúcar moreno
+tfda:N0100401	黑砂糖	azúcar negro (kokuto)
+tfda:N0200101	麥芽糖	maltosa
+tfda:N0300101	果糖	fructosa
+tfda:N0400101	果寡糖	fructooligosacáridos
+tfda:N0600101	楓糖	sirope de arce
+tfda:N0700101	蜂蜜(冬蜜)	miel de invierno
+tfda:N0700201	蜂蜜(春蜜)	miel de primavera
+tfda:N0800101	黑糖蜜	melaza negra
+tfda:N0900101	冬瓜糖磚	bloque de azúcar de calabaza blanca
+tfda:O0100101	西瓜汁(非原汁)	zumo de sandía (no 100 %)
+tfda:O0100201	芭樂汁(非原汁)	zumo de guayaba (no 100 %)
+tfda:O0100301	柳橙汁(非原汁)	zumo de naranja (no 100 %)
+tfda:O0100401	柳橙汁(100%)	zumo de naranja 100 %
+tfda:O0100501	烏梅汁	bebida de ciruela ahumada (wumei)
+tfda:O0100601	黑棗茶	té de azufaifo negro
+tfda:O0100701	楊桃汁(非原汁)	zumo de carambola (no 100 %)
+tfda:O0100801	葡萄柚汁(非原汁)	zumo de pomelo (no 100 %)
+tfda:O0100901	鳳梨汁(非原汁)	zumo de piña (no 100 %)
+tfda:O0101001	蔓越莓汁(非原汁)	zumo de arándano rojo (no 100 %)
+tfda:O0101101	檸檬汁(非原汁)	zumo de limón (no 100 %)
+tfda:O0101201	蘋果汁(非原汁)	zumo de manzana (no 100 %)
+tfda:O0101301	蘋果汁(100%)	zumo de manzana 100 %
+tfda:O0200101	蕃茄汁(非原汁)	zumo de tomate (no 100 %)
+tfda:O0200201	仙草蜜	bebida de gelatina herbal con miel (xiancao)
+tfda:O0200301	薑母茶	té de jengibre (jiangmu)
 tfda:O0200401	蘆薈露飲料	bebida de aloe vera
+tfda:O0200501	黑豆茶	té de soja negra tostada
+tfda:O0200601	龜苓茶	té «guiling»
+tfda:O0200701	麥茶	té de cebada
+tfda:O0200801	黑麥汁	bebida de malta negra
+tfda:O0400101	果汁醋飲料(綜合)	bebida de vinagre de frutas
+tfda:O0600101	可樂	cola
+tfda:O0600201	可樂(低熱量)	cola light
+tfda:O0600301	沙士	bebida de zarzaparrilla
+tfda:O0600401	加鹽沙士	bebida de zarzaparrilla con sal
+tfda:O0600501	沙士(低糖)	bebida de zarzaparrilla baja en azúcar
+tfda:O0600601	汽水(綜合口味)	refresco de sabores
+tfda:O0600701	汽水(維生素強化)	refresco con vitaminas
+tfda:O0700101	美式咖啡(無糖)	café americano sin azúcar
+tfda:O0700201	無糖咖啡飲料	bebida de café sin azúcar
+tfda:O0700301	拿鐵咖啡(無糖)	latte sin azúcar
+tfda:O0700401	咖啡(三合一)	café instantáneo 3 en 1
+tfda:O0700501	紅茶茶湯	té negro
+tfda:O0700601	紅茶(大麥)	té negro de cebada
+tfda:O0700701	紅茶(蘋果)	té negro de manzana
+tfda:O0700801	烏龍茶茶湯	té oolong
+tfda:O0700901	烏龍茶	té oolong (bebida)
+tfda:O0701001	烏龍茶(去冰,微糖)	té oolong con poco azúcar
+tfda:O0701101	烏龍茶(去冰,半糖)	té oolong semidulce
+tfda:O0701201	烏龍茶(去冰,全糖)	té oolong dulce
+tfda:O0701301	綠茶茶湯	té verde
+tfda:O0701401	綠茶	té verde (bebida)
+tfda:O0701501	鮮奶茶(無糖)	té con leche fresca sin azúcar
+tfda:O0701601	奶茶(三合一)	té con leche 3 en 1
+tfda:O0701701	烏龍奶茶(去冰,微糖)	té con leche oolong con poco azúcar
+tfda:O0701801	烏龍奶茶(去冰,半糖)	té con leche oolong semidulce
+tfda:O0701901	烏龍奶茶(去冰,全糖)	té con leche oolong dulce
 tfda:O0702001	珍珠奶茶(去冰,微糖)	bubble tea con poco azúcar
+tfda:O0702101	珍珠奶茶(去冰,半糖)	bubble tea semidulce
+tfda:O0702201	珍珠奶茶(去冰,全糖)	bubble tea dulce
+tfda:O0702301	奶茶沖泡包(三合一)	té con leche instantáneo 3 en 1
+tfda:O0702401	茉莉花茶湯	té de jazmín
+tfda:O0702501	茉莉花茶	té de jazmín (bebida)
+tfda:O0702601	菊花茶	té de crisantemo
+tfda:O0702701	多多綠茶(全糖)	té verde «duoduo» dulce
+tfda:O0702801	冬瓜茶	bebida de calabaza blanca
+tfda:O0702901	乳酸飲料	bebida láctica
+tfda:O0703001	維生素強化飲料(胡蘿蔔素)	bebida enriquecida en betacaroteno
+tfda:O0703101	維生素強化飲料(綜合)	bebida enriquecida multivitamínica
+tfda:O0703201	維生素強化飲料(維生素C)	bebida enriquecida en vitamina C
+tfda:O0703301	運動飲料	bebida deportiva
+tfda:O0703401	米醋飲料	bebida de vinagre de arroz
+tfda:O0900101	即溶咖啡粉	café instantáneo
+tfda:O0900201	咖啡沖泡包(二合一)	café instantáneo 2 en 1
+tfda:O0900301	咖啡沖泡包(三合一)	café instantáneo 3 en 1
+tfda:O0900401	紅茶沖泡包(檸檬)	té negro instantáneo de limón
+tfda:O0901501	薑茶沖泡包	té de jengibre instantáneo
+tfda:O0901601	抹茶粉	matcha en polvo
+tfda:O0901701	可可粉	cacao en polvo
+tfda:O0901801	小麥草粉	hierba de trigo en polvo
+tfda:O9900301	椰奶	leche de coco
 tfda:P0200601	油蔥酥	chalotes fritos crujientes
 tfda:P0201101	椰漿	leche de coco en conserva
 tfda:P1002101	金桔醬	mermelada de kumquat
