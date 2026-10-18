@@ -62,6 +62,28 @@ def test_ingest_is_idempotent_and_logged():
     assert ingest.already_done("t", "r1")
 
 
+def test_a_fetcher_code_change_reloads_a_ref_it_already_loaded():
+    """#63: `already_done` compares the fetcher's code beside the publisher's ref, so a parser
+    change re-ingests a file that did not change."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()], code="1")
+    assert ingest.already_done("t", "r1", code="1")
+    assert not ingest.already_done("t", "r1", code="2")
+    ingest.run("t", "r1", [rec()], code="2")
+    assert ingest.already_done("t", "r1", code="2")
+
+
+def test_a_run_without_a_code_is_never_done_for_a_versioned_fetcher():
+    """Runs stored before `fetch_run.code` existed have it null: a fetcher that declares a code
+    re-ingests them once."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()])
+    assert ingest.already_done("t", "r1")
+    assert not ingest.already_done("t", "r1", code="1")
+
+
 def test_resolver_serves_newest_value_with_its_source_and_licence():
     from fooddb import ingest
 

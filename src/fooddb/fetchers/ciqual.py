@@ -13,6 +13,7 @@ from fooddb.fetchers.xlsx import rows
 
 PAGE = "https://ciqual.anses.fr/cms/en/node/20"
 FETCHER = "ciqual"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "etalab-2.0"
 ATTRIBUTION = "Anses. Ciqual French food composition table (https://ciqual.anses.fr). Licence Ouverte / Etalab 2.0."
 RELEASE = re.compile(r"https?://[^\"'\s]*Table%20Ciqual%20\d{4}_ENG_(\d{4})_(\d{2})_(\d{2})\.xlsx")
@@ -91,9 +92,9 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     r.raise_for_status()
     url, observed_at = newest(r.text)
     ref = url.rsplit("/", 1)[1]
-    if not force and ingest.already_done(FETCHER, ref):
+    if not force and ingest.already_done(FETCHER, ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as tmp, tempfile.TemporaryFile() as fr:
         download(url, tmp)
         download(url.replace("_ENG_", "_FR_"), fr)  # the same release's French edition
-        return ingest.run(FETCHER, ref, records(tmp, observed_at, french_names(fr)))
+        return ingest.run(FETCHER, ref, records(tmp, observed_at, french_names(fr)), code=CODE)

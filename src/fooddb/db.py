@@ -119,6 +119,7 @@ fetch_run = Table(
     Column("id", BigInteger, primary_key=True),
     Column("fetcher", Text, nullable=False),
     Column("ref", Text, nullable=False),  # file name or release the run consumed
+    Column("code", Text),  # the fetcher's own version (fetcher.CODE); null on runs before the column
     Column("status", Text, nullable=False),  # running | done | failed
     Column("foods", Integer, nullable=False, server_default="0"),
     Column("observations", Integer, nullable=False, server_default="0"),

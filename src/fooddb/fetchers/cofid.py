@@ -13,6 +13,7 @@ from fooddb.fetchers.xlsx import rows
 
 PAGE = "https://www.gov.uk/api/content/government/publications/composition-of-foods-integrated-dataset-cofid"
 FETCHER = "cofid"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "OGL-UK-3.0"
 ATTRIBUTION = ("McCance and Widdowson's The Composition of Foods Integrated Dataset 2021, Public Health England "
                "(https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid). "
@@ -85,8 +86,8 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     r = httpx.get(PAGE, timeout=60, follow_redirects=True)
     r.raise_for_status()
     url, ref, observed_at = newest(r.json())
-    if not force and ingest.already_done(FETCHER, ref):
+    if not force and ingest.already_done(FETCHER, ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as tmp:
         download(url, tmp)
-        return ingest.run(FETCHER, ref, records(tmp, observed_at))
+        return ingest.run(FETCHER, ref, records(tmp, observed_at), code=CODE)
