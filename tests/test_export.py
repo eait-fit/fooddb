@@ -17,27 +17,25 @@ def export(day: str, **params) -> list[dict]:
     return [json.loads(line) for line in r.text.splitlines()]
 
 
-def rest(pid: int, day: str, **params) -> dict:
-    r = client().get(f"/v1/foods/{pid}", params={"snapshot": day} | params)
+def rest(pid: int, **params) -> dict:
+    r = client().get(f"/v1/foods/{pid}", params=params)
     assert r.status_code == 200, r.text
     return r.json()
 
 
-def test_snapshots_list_newest_first_and_only_past_days_are_final(monkeypatch):
-    from fooddb import ingest, snapshot
+def test_snapshots_lists_the_single_current_snapshot(monkeypatch):
+    from fooddb import ingest
 
     ingest.run("t", "r1", [rec(), rec(**OFF)])
     build_on(monkeypatch, "2026-10-01")
     build_on(monkeypatch, "2026-10-02")
-    monkeypatch.setattr(snapshot, "today", lambda: date(2026, 10, 2))
     body = client().get("/v1/snapshots").json()
-    assert body["today"] == "2026-10-02" and "final" in body["note"]
-    assert [(i["day"], i["products"], i["final"]) for i in body["items"]] == [
-        ("2026-10-02", 2, False), ("2026-10-01", 2, True)]
-    assert all(i["built_at"] for i in body["items"])
+    assert "built_at" in body["note"]
+    assert [(i["day"], i["products"]) for i in body["items"]] == [("2026-10-02", 2)]
+    assert body["items"][0]["built_at"] and "final" not in body["items"][0]
 
 
-def test_export_of_a_pinned_day_has_exactly_that_days_products_and_values(monkeypatch):
+def test_export_serves_the_current_snapshot_and_404s_another_day(monkeypatch):
     from fooddb import ingest
 
     ingest.run("t", "r1", [rec()])
@@ -46,14 +44,11 @@ def test_export_of_a_pinned_day_has_exactly_that_days_products_and_values(monkey
                            rec(id="fdc:9", name="Lentils, raw", values={"ENERC_KCAL": 352.0})])
     build_on(monkeypatch, "2026-10-02")
 
-    old = export("2026-10-01")
-    assert [p["records"] for p in old] == [["fdc:1"]]
-    assert old[0]["per_100"]["ENERC_KCAL"]["value"] == 229
-    assert old == [rest(old[0]["id"], "2026-10-01")]  # the same shape the REST reads return
-    new = export("2026-10-02")
-    assert sorted(r for p in new for r in p["records"]) == ["fdc:1", "fdc:9"]
-    assert new == [rest(p["id"], "2026-10-02") for p in new]
-    assert client().get("/v1/snapshots/2026-09-01/export").status_code == 404
+    items = export("2026-10-02")
+    assert sorted(r for p in items for r in p["records"]) == ["fdc:1", "fdc:9"]
+    assert items == [rest(p["id"]) for p in items]  # the same shape the REST reads return
+    assert items[0]["per_100"]["ENERC_KCAL"]["value"] == 231
+    assert client().get("/v1/snapshots/2026-10-01/export").status_code == 404  # the replaced day is gone
 
 
 def test_export_after_a_merge_keeps_the_values_the_snapshot_froze(monkeypatch):
@@ -86,20 +81,22 @@ def test_export_keeps_the_off_layer_out_unless_asked(monkeypatch):
     assert "ODbL" not in client().get("/v1/snapshots/2026-10-01/export").text
 
 
-def test_export_etag_is_stable_for_a_final_day_and_gzip_on_request(monkeypatch):
+def test_export_etag_tracks_the_build_and_gzip_on_request(monkeypatch):
     from fooddb import ingest
 
     ingest.run("t", "r1", [rec()])
     build_on(monkeypatch, "2026-10-01")
     url = "/v1/snapshots/2026-10-01/export"
     first = client().get(url, headers={"Accept-Encoding": "identity"})
-    build_on(monkeypatch, "2026-10-02")
+    build_on(monkeypatch, "2026-10-01")  # a same-day rebuild: a new built_at, so a new ETag
     again = client().get(url, headers={"Accept-Encoding": "gzip"})
-    assert first.headers["etag"] == again.headers["etag"] and first.headers["last-modified"]
+    assert first.headers["etag"] != again.headers["etag"] and first.headers["last-modified"]
     assert "content-encoding" not in first.headers and again.headers["content-encoding"] == "gzip"
     assert again.text == first.text  # httpx decodes the gzip body
-    assert client().get(url, params={"include": "off"}).headers["etag"] != first.headers["etag"]
-    unchanged = client().get(url, headers={"If-None-Match": first.headers["etag"]})
+    assert client().get(url, params={"include": "off"}).headers["etag"] != again.headers["etag"]
+    stale = client().get(url, headers={"If-None-Match": first.headers["etag"]})
+    assert stale.status_code == 200  # the rebuilt snapshot does not match the old ETag
+    unchanged = client().get(url, headers={"If-None-Match": again.headers["etag"]})
     assert unchanged.status_code == 304 and not unchanged.content
 
 
@@ -126,7 +123,7 @@ def test_cli_export_writes_the_same_lines_gzipped(monkeypatch, tmp_path):
     ingest.run("t", "r1", [rec(), rec(**OFF)])
     build_on(monkeypatch, "2026-10-01")
     out = tmp_path / "day.ndjson.gz"
-    r = CliRunner().invoke(app, ["export", "--day", "2026-10-01", "--include-off", "--out", str(out)])
+    r = CliRunner().invoke(app, ["export", "--include-off", "--out", str(out)])
     assert r.exit_code == 0, r.output
     assert [json.loads(line) for line in gzip.decompress(out.read_bytes()).splitlines()] == export(
         "2026-10-01", include="off")

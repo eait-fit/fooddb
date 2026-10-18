@@ -1,16 +1,18 @@
 """Async jobs on pq (Postgres-backed queue, same database). Each task runs in a forked child."""
 
-from datetime import timedelta
+from datetime import UTC, datetime, timedelta
 from functools import cache
 
 from loguru import logger
 from pq import PQ, Priority
+from pq.models import Task, TaskStatus
+from sqlalchemy import select
 
 from fooddb import health, requestlog
 from fooddb.db import database_url
-from fooddb.fetchers import ciqual, cofid, fdc, fineli, frida, matvaretabellen, mext, off, tfda
+from fooddb.fetchers import bls, ciqual, cofid, fdc, fineli, frida, matvaretabellen, mext, off, tfda
 
-TABLES = {m.FETCHER: m for m in (ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda)}  # national composition tables
+TABLES = {m.FETCHER: m for m in (bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda)}  # national composition tables
 WEEKLY = "0 3 * * 1"  # Monday 03:00 UTC
 PRUNE_CRON = "15 3 * * *"
 # FDC Branded is about 3 GB of JSON: it may run longer than the worker's default task limit.
@@ -69,21 +71,41 @@ def match_products() -> None:
     logger.info(f"match: {match.run()} products merged")
 
 
-def build_snapshot() -> None:
+def build_recipes() -> None:
+    from fooddb import recipes
+
+    result = recipes.build()
+    health.checked("recipes")
+    logger.info(f"recipes: {result}")
+
+
+def build_snapshot(full: bool = False) -> None:
     from fooddb import snapshot
 
-    logger.info(f"snapshot: {snapshot.build()} products")
+    # Recipes recompute from their ingredients' current values before the build freezes: a changed
+    # formulation or ingredient lands in the queue for review, and the accepted values serve tonight.
+    try:
+        build_recipes()
+    except Exception as e:  # a recipe must never take the snapshot down: the build still runs
+        logger.exception(f"recipes skipped: {e}")
+    logger.info(f"snapshot: {snapshot.build(full=full)} products")
 
 
 def dump_odbl() -> None:
     from fooddb import dump
 
     m = dump.write()
-    logger.info("odbl dump: " + ("no final snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
+    logger.info("odbl dump: " + ("no snapshot yet" if m is None else f"{m['name']}, {m['products']} products"))
 
 
 def prune_request_log() -> None:
     logger.info(f"request log: {requestlog.prune()} rows past {requestlog.retention_days()} days deleted")
+
+
+def load_mt_names() -> None:
+    from fooddb.names import load_mt
+
+    logger.info(f"names mt: {load_mt()}")
 
 
 def read_label(photo: str, hints: dict[str, str], read: str | None = None) -> None:
@@ -104,6 +126,29 @@ def _rematch(fetcher: str) -> None:
         queue().upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
 
 
+def reap_orphans() -> int:
+    """This one worker owns the queue: a task still RUNNING at boot was claimed by a worker that
+    died before it could close the row — a deploy recreate SIGKILLs the old worker mid-drain, so
+    the row outlives its run. A row an upsert parked a new version on is re-queued with it, the
+    rest are failed. Runs before schedule(): once the rows are closed, this boot's upserts land
+    as plain re-queues instead of parking on a dead run, so a bootstrap fetch killed by the
+    deploy that added it runs again."""
+    with queue().session() as session:
+        orphans = list(session.execute(
+            select(Task).where(Task.status == TaskStatus.RUNNING).with_for_update()
+        ).scalars())
+        for task in orphans:
+            logger.warning(f"reaped orphaned task '{task.name}' (id={task.id}, started_at={task.started_at})"
+                           + (": re-queued with the parked upsert" if task.requeue is not None else ": marked failed"))
+            if task.requeue is not None:
+                task.apply_requeue()
+            else:
+                task.status = TaskStatus.FAILED
+                task.completed_at = datetime.now(UTC)
+                task.error = "orphaned: the worker that claimed it ended without closing the task"
+    return len(orphans)
+
+
 def schedule() -> None:
     """Periodic fetches. Idempotent: re-registering updates the schedule."""
     q = queue()
@@ -122,6 +167,9 @@ def schedule() -> None:
             q.upsert(fn, client_id=f"bootstrap-{name}", max_runtime_seconds=RUNTIME.get(name), **kwargs)
     if "snapshot" not in checked:
         q.upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
+    # The agent-written names ship with the code: BATCH lands the sync after the bootstrap fetches,
+    # so a fresh install names the records once they exist and a redeploy resyncs the TSVs.
+    q.upsert(load_mt_names, client_id="bootstrap-names-mt", priority=Priority.BATCH)
     # FDC and the national tables release a few times a year at most; a weekly check is plenty.
     for name, fn, kwargs in weekly:
         key = next(iter(kwargs.values()))
@@ -134,5 +182,5 @@ def schedule() -> None:
 def enqueue(name: str, **kwargs) -> int:
     fn = {"off": fetch_off_deltas, "off-dump": fetch_off_dump, "fdc": fetch_fdc, "table": fetch_table,
           "match": match_products, "snapshot": build_snapshot, "odbl-dump": dump_odbl,
-          "off-images": backfill_off_images}[name]
+          "off-images": backfill_off_images, "recipes": build_recipes}[name]
     return queue().enqueue(fn, max_runtime_seconds=RUNTIME.get(name), **kwargs)

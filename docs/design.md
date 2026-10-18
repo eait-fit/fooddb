@@ -17,7 +17,7 @@ references to the code. Each section below says what is built and links the issu
 Every step runs automatically except human review. Review sees only rows that changed or failed a
 check (the Robotoff rule from Open Food Facts), about 80 h/month at 1M products.
 
-**Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, CIQUAL, CoFID, Fineli, Frida,
+**Built:** lanes 1 and 2 (FDC Foundation, SR Legacy and Branded, BLS, CIQUAL, CoFID, Fineli, Frida,
 Matvaretabellen, MEXT, TFDA, OFF), normalise, observations, checks,
 Splink matching (not in the diagram above: it runs between observations and the resolver), the
 resolver, the nightly snapshot and its NDJSON export, REST and MCP, and the review queue
@@ -28,19 +28,22 @@ value's status. Each merge is logged. A reviewer splits a wrong merge through th
 SQLAdmin, and matching never joins the split records again. `fooddb match train` estimates the
 Splink weights on the data. **Not built:** a model trained on the full data (the weights are still
 hand-set), lane 3, and the eait side of the label-photo loop.
+Built ([#84](https://github.com/eait-fit/fooddb/issues/84)): the recipe layer — dishes no open
+composition table carries (plov, beshbarmak, manty, pelmeni, …) as records of the source `recipe`,
+computed from ingredient records, never typed in. See [Recipes](#recipes) below.
 
 ### Intake lanes
 
 1. **Open composition tables**, loaded when each publisher releases: USDA FDC (CC0), CIQUAL, BLS,
    Fineli, Frida, Matvaretabellen (NLOD 2.0), CoFID (OGL), Korea MFDS, Japan MEXT, Taiwan TFDA, and
    others. Built ([#15](https://github.com/eait-fit/fooddb/issues/15)): USDA FDC Foundation, SR
-   Legacy and Branded Foods, CIQUAL (Etalab 2.0), CoFID (OGL v3.0, [#36](https://github.com/eait-fit/fooddb/issues/36)), Fineli (CC BY 4.0), Frida (CC BY 4.0, [#35](https://github.com/eait-fit/fooddb/issues/35)),
+   Legacy and Branded Foods, BLS (Germany, CC BY 4.0, [#75](https://github.com/eait-fit/fooddb/issues/75)), CIQUAL (Etalab 2.0), CoFID (OGL v3.0, [#36](https://github.com/eait-fit/fooddb/issues/36)), Fineli (CC BY 4.0), Frida (CC BY 4.0, [#35](https://github.com/eait-fit/fooddb/issues/35)),
    Matvaretabellen (NLOD 2.0), Japan MEXT (free use with a citation,
    [#38](https://github.com/eait-fit/fooddb/issues/38); total sugars and saturated fat from its
    separate tables, [#57](https://github.com/eait-fit/fooddb/issues/57)) and Taiwan TFDA (OGDL 1.0,
    [#39](https://github.com/eait-fit/fooddb/issues/39)). FDC Branded and Fineli are off by default. The
    FDC fetcher reads its JSON as a stream. Not built: Korea MFDS
-   ([#37](https://github.com/eait-fit/fooddb/issues/37)) and BLS.
+   ([#37](https://github.com/eait-fit/fooddb/issues/37)).
 2. **Open Food Facts**: the full dump, then daily deltas. Built: a fresh install takes the newest
    delta, then every delta after it. The full dump is a manual job (`fooddb run off-dump`). Its data is under ODbL (see Licences).
 3. **Brands**: a brand upload form in v1. The uploader's brand is checked against the GS1
@@ -96,13 +99,33 @@ and the national tables share one rank, above OFF. Label reads have a rank above
 For other label reads, agreement still comes before rank, so a label read that is alone loses to
 two sources that agree. Brand uploads get no such override.
 
+### Recipes
+
+Dishes no usable open table carries are built as *recipes*: a formulation in `fooddb.recipes` names
+ingredient records of the composition tables with their grams in the raw mix, a cooked yield (the
+served weight divided by the raw mix) and a citation for the formulation. `build` weighs each
+ingredient's newest accepted values into per-100 g values of the cooked dish — the values are
+computed, never typed — and stores them through the normal ingest path with `review_all`, so every
+value waits in the review queue and the dish is invisible until a person has accepted it once. A
+nutrient an ingredient does not state counts only toward its share of the mix; below 90 % coverage
+the nutrient is dropped rather than understated. Each recipe declares a plausible kcal band and an
+outlier is flagged for review. `fooddb recipes` prints the formulations with the computed values —
+the readable review list. One recipe makes two records on one product: `recipe:<slug>` with the
+English name and `recipe:<slug>.ru` with the Russian one. Every snapshot build recomputes the
+recipes first, so an ingredient update or an edited formulation re-enters review on its own.
+Recipe records stay out of matching and rank below every composition table: a real table entry for
+the same dish always wins over a computed one. The recipe's licence tag is the most restrictive of
+its ingredients' licences, and its `attribution` is the union of the sources they came from.
+
 ### Snapshot and serving
 
-- A nightly snapshot, versioned and immutable. The API serves the latest one;
-  `?snapshot=YYYY-MM-DD` pins an earlier one for 30 days. Built: one snapshot per UTC day. A day is
-  final when it is over. Until then, a rebuild on the same day replaces it. A merge after a build
-  keeps the values that the build froze. Records and names are read live, not frozen. Built: the
-  export of one day as NDJSON, for consumers that keep a local copy. Built
+- One nightly snapshot, kept current by each build. The API serves it; there are no date pins
+  and no kept days — the raw history stays in `observation`. Built: one snapshot per UTC night, in
+  one transaction, so a read never sees a half-built state. A build rewrites only the products
+  whose values can have moved since the last one ([#96](https://github.com/eait-fit/fooddb/issues/96));
+  `fooddb run snapshot --full` rewrites all of them. A merge after a build keeps the values
+  that the build froze. Records and names are read live, not frozen. Built: the export of the
+  snapshot as NDJSON, for consumers that keep a local copy. Built
   ([#31](https://github.com/eait-fit/fooddb/issues/31)): the export reads about 7000 products per
   second, the same at 20,000 and at 100,000 products. At that rate the monthly ODbL dump of the full
   OFF layer fits in the worker's task limit. Not built: the eait job that loads it.
@@ -162,6 +185,7 @@ Australian and similar labels, and from CIQUAL, Fineli and Matvaretabellen. Frid
 | Fineli (Finland) | CC BY 4.0 | attribution, built |
 | Matvaretabellen (Norway) | NLOD 2.0 | attribution, built |
 | Frida (Denmark) | CC BY 4.0 | attribution, built |
+| BLS (Germany) | CC BY 4.0 | attribution, built |
 | Open Food Facts | ODbL | Share-alike on the derived database. It is kept in its own layer, which we publish monthly as an ODbL dump at `/v1/dumps` ([#14](https://github.com/eait-fit/fooddb/issues/14), built). See [data-licence.md](data-licence.md). |
 | Most EU national tables | CC BY / OGL / NLOD | attribution |
 | Korea MFDS | public, no usage restriction | none |

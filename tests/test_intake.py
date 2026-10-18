@@ -42,6 +42,19 @@ def test_fdc_branded_records_carry_barcode_brand_serving_and_category(tmp_path):
     assert water.gtin14 == "00083046155385"
 
 
+def test_fdc_survey_records_are_fndds_dishes_with_their_wweia_category(tmp_path):
+    from fooddb.fetchers import fdc
+
+    path = tmp_path / "survey.zip"
+    with zipfile.ZipFile(path, "w") as z:
+        z.write(FIXTURES / "fdc_survey.json", "surveyDownload.json")
+    with zipfile.ZipFile(path) as z, z.open(z.namelist()[0]) as f:
+        # "Milk, human" ships with no nutrients and is skipped; a mixed dish is a core record.
+        (jambalaya,) = fdc.records(fdc.json_items(f, fdc.DATASETS["survey"][1]))
+    assert jambalaya.name == "Jambalaya with meat and rice" and jambalaya.source == "fdc" and jambalaya.layer == "core"
+    assert jambalaya.categories == ["Rice mixed dishes"] and jambalaya.values["ENERC_KCAL"] > 0
+
+
 def test_fdc_branded_is_off_by_default(monkeypatch):
     from fooddb import health
 
@@ -70,9 +83,25 @@ def test_ciqual_reads_the_xlsx_into_available_carbohydrate_and_its_groups():
     assert dessert.values == {"ENERC_KJ": 1070, "ENERC_KCAL": 255, "PROCNT": 4.41, "CHOAVL": 32.9, "FAT": 11.3,
                               "SUGAR": 21.3, "FIBTG": 1.7, "FASAT": 4.96, "NA": 130, "ALC": 0.087}
     assert dessert.categories == [] and dessert.observed_at == observed
+    assert dessert.names == {}
+    dessert_fr = next(ciqual.records(FIXTURES / "ciqual.xlsx", observed, {"24999": "Dessert (aliment moyen)"}))
+    assert dessert_fr.names == {"fr": "Dessert (aliment moyen)"}
     assert celeriac.categories == ["ciqual:starters and dishes", "ciqual:mixed salads"]
     assert "CHOCDF" not in tuna.values and tuna.values["CHOAVL"] == 8.13
     assert checks.category(["ciqual:fruits, vegetables, legumes and nuts", "ciqual:vegetables"]) == "vegetables"
+
+
+def test_ciqual_reads_the_french_names_of_the_same_release(tmp_path):
+    from fooddb.fetchers import ciqual
+
+    # The French edition has the same layout with alim_nom_fr where the English one has alim_nom_eng.
+    french = tmp_path / "ciqual_fr.xlsx"
+    with zipfile.ZipFile(FIXTURES / "ciqual.xlsx") as src, zipfile.ZipFile(french, "w") as out:
+        for item in src.infolist():
+            out.writestr(item, src.read(item).replace(b"alim_nom_eng", b"alim_nom_fr"))
+    assert ciqual.french_names(french)["24999"] == "Dessert (average)"
+    with pytest.raises(RuntimeError, match="alim_nom_fr"):
+        ciqual.french_names(FIXTURES / "ciqual.xlsx")
 
 
 def test_ciqual_finds_the_newest_release_on_its_download_page():
@@ -105,6 +134,13 @@ def test_matvaretabellen_reads_its_food_list_into_available_carbohydrate():
     with open(FIXTURES / "matvaretabellen.json", "rb") as f:
         beans, agave, aioli = matvaretabellen.records(fdc.json_items(f, "foods"), observed)
     assert beans.id == "matvaretabellen:06.178" and beans.name == "Adzuki beans, uncooked"
+    assert beans.names == {}  # no Norwegian list given
+    with open(FIXTURES / "matvaretabellen.json", "rb") as f:
+        native = matvaretabellen.names(fdc.json_items(f, "foods"))
+    assert native["06.178"] == "Adzuki beans, uncooked"  # the fixture is the English list: names() reads any language
+    native["06.178"] = "Adzukibønner, rå"
+    with open(FIXTURES / "matvaretabellen.json", "rb") as f:
+        assert next(matvaretabellen.records(fdc.json_items(f, "foods"), observed, native)).names == {"nb": "Adzukibønner, rå"}
     assert beans.licence == "NLOD-2.0" and beans.layer == "core" and beans.observed_at == observed
     assert beans.values == {"ENERC_KJ": 1312.4, "ENERC_KCAL": 310, "FAT": 0.5, "FASAT": 0.2, "CHOAVL": 50.2,
                             "SUGAR": 3.0, "FIBTG": 13.0, "PROCNT": 19.9, "NA": 5.0}
@@ -242,6 +278,7 @@ def test_frida_reads_its_data_table_with_both_carbohydrate_codes_and_its_food_gr
     observed = datetime(2026, 1, 19, tzinfo=UTC)
     strawberry, biscuit, celeriac, water = frida.records(FIXTURES / "frida.xlsx", observed)
     assert strawberry.id == "frida:1" and strawberry.name == "Strawberry, raw" and strawberry.lang == "en"
+    assert strawberry.names == {"da": "Jordbær, rå"}
     assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "frida" and strawberry.layer == "core"
     assert strawberry.values == pytest.approx({
         "ENERC_KJ": 161.95358974359, "ENERC_KCAL": 38.4579487179487, "PROCNT": 0.659855769230769,
@@ -280,6 +317,56 @@ def test_frida_finds_the_dataset_workbook_in_the_dtu_data_record():
     assert observed == datetime(2026, 1, 19, 12, 0, 51, tzinfo=UTC)
     with pytest.raises(RuntimeError, match="no dataset workbook"):
         frida.newest({"files": [article["files"][0]]})
+
+
+def test_bls_reads_available_carbohydrate_in_the_units_it_states_and_the_english_name():
+    from fooddb.fetchers import bls
+
+    observed = datetime(2025, 12, 11, tzinfo=UTC)
+    strawberry, bread, salt, beer, oil, dish = bls.records(FIXTURES / "bls.xlsx", observed)
+    assert strawberry.id == "bls:F301100" and strawberry.name == "Strawberry raw" and strawberry.lang == "en"
+    assert strawberry.names == {"de": "Erdbeere roh"}
+    assert strawberry.licence == "CC-BY-4.0" and strawberry.source == "bls" and strawberry.layer == "core"
+    assert strawberry.values == pytest.approx({
+        "ENERC_KJ": 158, "ENERC_KCAL": 38, "PROCNT": 0.82, "CHOAVL": 5.917, "FIBTG": 2, "FAT": 0.4, "SUGAR": 5.857,
+        "FASAT": 0.03130, "NA": 1, "ALC": 0})
+    assert strawberry.observed_at == observed and "CHOCDF" not in strawberry.values
+    assert strawberry.categories == ["bls:F"] and checks.category(strawberry.categories) == "fruits"
+    assert not checks.flags(strawberry.values, "fruits")
+    assert "ALC" not in bread.values and bread.values["NA"] == 440.5  # <LOD is no value
+    assert salt.values["NA"] == 38145 and salt.values["ENERC_KCAL"] == 0  # sodium in mg, as stored
+    assert checks.category(beer.categories) == "alcoholic-beverages" and checks.category(oil.categories) == "fats"
+    assert dish.values == {"ENERC_KJ": 100, "ENERC_KCAL": 24, "CHOAVL": 3.5, "FAT": 0}  # TR is 0; "-" and <LOQ are gaps
+
+
+def test_bls_stops_when_a_component_changes_its_unit(tmp_path):
+    from fooddb.fetchers import bls
+
+    broken = tmp_path / "bls.xlsx"
+    with zipfile.ZipFile(FIXTURES / "bls.xlsx") as src, zipfile.ZipFile(broken, "w") as out:
+        for item in src.infolist():
+            data = src.read(item)
+            out.writestr(item, data.replace(b"Natrium [mg/100g]", b"Natrium [g/100g]") if "sheet1" in item.filename else data)
+    with pytest.raises(RuntimeError, match="component NA is not in mg"):
+        list(bls.records(broken, datetime(2025, 12, 11, tzinfo=UTC)))
+
+
+def test_bls_finds_its_zip_on_the_download_page_and_the_workbook_in_the_zip(tmp_path):
+    from fooddb.fetchers import bls
+
+    page = '<a href="&#47;assets&#47;uploads&#47;BLS&#95;4&#95;0&#95;2025&#95;DE&#46;zip?token=AAAA-BBBB">Download</a>'
+    assert bls.link(page) == "https://www.blsdb.de/assets/uploads/BLS_4_0_2025_DE.zip"
+    with pytest.raises(RuntimeError, match="no zip"):
+        bls.link("<a href='/download'>Download</a>")
+    path = tmp_path / "bls.zip"
+    with zipfile.ZipFile(path, "w") as z:
+        z.writestr("BLS_4_0_2025_DE/BLS_4_0_Components_DE_EN.xlsx", b"")
+        z.writestr(zipfile.ZipInfo("BLS_4_0_2025_DE/BLS_4_0_Daten_2025_DE.xlsx", (2025, 12, 11, 16, 50, 0)), b"")
+    with zipfile.ZipFile(path) as z:
+        assert bls.dataset(z).filename.endswith("BLS_4_0_Daten_2025_DE.xlsx") and bls.dataset(z).date_time[:3] == (2025, 12, 11)
+    with zipfile.ZipFile(path, "w") as z, pytest.raises(RuntimeError, match="no data workbook"):
+        z.writestr("BLS_4_0_Components_DE_EN.xlsx", b"")
+        bls.dataset(z)
 
 
 def test_mext_value_follows_the_rule_for_estimates_traces_and_gaps():

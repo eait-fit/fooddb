@@ -1,0 +1,121 @@
+ZERO RESULTS (9): tater tots → (none) → potato puffs, frozen, oven-heated; fettuccine alfredo → (none) → pasta with cream sauce, home recipe; chicken alfredo → (none) → pasta with cream sauce and poultry, home recipe; biscuits and gravy → (none) → biscuit with gravy; philly cheesesteak → (none) → fast foods, submarine sandwich, steak and cheese on white bread with cheese, lettuce and tomato; glazed donut → (none) → doughnuts, yeast-leavened, glazed, enriched (includes honey buns); gummy bears → (none) → candy, gummy; kettle corn → (none) → popcorn, microwave, kettle; grape jelly → (none) → jellies
+MISRANKS (112), q → top-1 → expected [in top5?]:
+- skim milk → Yogurt, plain, skim milk → milk, nonfat
+- yogurt → Yogurt, soy → yogurt, plain, whole milk [top5 ok]
+- white rice → Beans and white rice → white rice, cooked
+- spaghetti → Spaghetti sauce → pasta, cooked [top5 ok]
+- coffee → Coffee, Latte → coffee, brewed [top5 ok]
+- egg → Bread, egg → egg, whole, raw
+- orange juice → Babyfood, juice, orange → orange juice [top5 ok]
+- sourdough bread → Sourdough bread gluten-free → bread, french or vienna (includes sourdough) [top5 ok]
+- corn tortillas → Taco, corn tortilla, beef, cheese → tortillas, ready-to-bake or -fry, corn
+- dinner roll → Andrea's, Gluten Free Soft Dinner Roll → rolls, dinner, plain, commercially prepared (includes brown-and-serve)
+- buttermilk biscuits → Pillsbury Grands, Buttermilk Biscuits, refrigerated dough → biscuits, plain or buttermilk, prepared from recipe
+- cornbread → Chicken cornbread → bread, cornbread, prepared from recipe, made with low fat (2%) milk [top5 ok]
+- toast → Melba toast → bread, white, commercially prepared, toasted
+- whole wheat toast → Swedish toast, whole wheat → bread, whole-wheat, commercially prepared, toasted [top5 ok]
+- blueberry muffin → Artificial Blueberry Muffin Mix, dry → muffins, blueberry, commercially prepared (Includes mini-muffins) [top5 ok]
+- banana bread → Cereals, QUAKER, Instant Oatmeal, Banana Bread, dry → bread, banana, prepared from recipe, made with margarine [top5 ok]
+- oat bread → Bread, oat bran → bread, oatmeal [top5 ok]
+- rice cakes → Snacks, rice cakes, brown rice, rye → snacks, rice cakes, brown rice, plain, unsalted
+- 2% milk → Egg custards, dry mix, prepared with 2% milk → milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D
+- 1% milk → Beverages, chocolate malt powder, prepared with 1% milk, fortified → milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D [top5 ok]
+- chocolate milk → Soy milk, chocolate → milk, chocolate, fluid, commercial, reduced fat, with added vitamin A and vitamin D [top5 ok]
+- greek yogurt → Yogurt, Greek, with oats → yogurt, Greek, plain, nonfat [top5 ok]
+- nonfat greek yogurt → Yogurt, Greek, nonfat milk, fruit → yogurt, Greek, plain, nonfat [top5 ok]
+- vanilla yogurt → Frozen yogurt, vanilla → yogurt, vanilla, low fat. [top5 ok]
+- strawberry yogurt → Strawberry yogurt with cream → yogurt, fruit, low fat,9 g protein/8 oz
+- string cheese → DIGIORNO Pizza, cheese topping, cheese stuffed crust, frozen, baked → cheese, mozzarella, low moisture, part-skim
+- cheese → Cheese dip → cheese, cheddar [top5 ok]
+- egg whites → Egg, white, dried → egg, white, raw, fresh [top5 ok]
+- scrambled eggs → Eggs, scrambled, frozen mixture → egg, whole, cooked, scrambled [top5 ok]
+- egg yolk → Egg, yolk, dried → egg, yolk, raw, fresh [top5 ok]
+- grilled chicken breast → Chicken breast, grilled with sauce, skin eaten → chicken, broilers or fryers, breast, meat only, cooked, roasted [top5 ok]
+- deli turkey → Gravy, turkey, dry → turkey breast, sliced, prepackaged
+- bacon → Bacon bits → pork, cured, bacon, pre-sliced, cooked, pan-fried
+- pork chop → Pork, chop, stuffed → pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw [top5 ok]
+- steak → Swiss steak → beef, top sirloin steak, raw
+- filet mignon → Pork, filet mignon, raw → beef, tenderloin steak, raw
+- baby back ribs → Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, select, raw → pork loin, fresh, backribs, bone-in, raw, lean only
+- fried chicken → POPEYES, Fried Chicken, Mild, Skin and Breading → fast Foods, Fried Chicken, Breast, meat and skin and breading [top5 ok]
+- turkey → Fat, turkey → turkey, whole, meat only, cooked, roasted [top5 ok]
+- salmon → Lomi salmon → fish, salmon, Atlantic, farmed, raw [top5 ok]
+- tuna → Fish, tuna, raw → fish, tuna, light, canned in water, drained solids [top5 ok]
+- tuna steak → Tuna steak fried with ham → fish, tuna, fresh, yellowfin, raw [top5 ok]
+- cod → Cape Cod → fish, cod, Atlantic, raw [top5 ok]
+- scallops → Scallops, fried → mollusks, scallop, mixed species, raw [top5 ok]
+- onion → Bread, onion → onions, raw
+- zucchini → Bread, zucchini → squash, summer, zucchini, includes skin, raw [top5 ok]
+- butternut squash → Babyfood, vegetable, butternut squash and corn → squash, winter, butternut, raw [top5 ok]
+- sweet potato → Pie, sweet potato → sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) [top5 ok]
+- roasted brussels sprouts → Brussels sprouts, raw → BLS 4.0 (2025) G332162 brussels sprouts baked
+- canned corn → Corn, canned, cooked with oil → corn, sweet, yellow, canned, whole kernel, drained solids [top5 ok]
+- frozen peas → Green peas, frozen, cooked with oil → peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program) [top5 ok]
+- avocado → Oil, avocado → avocados, raw, all commercial varieties [top5 ok]
+- eggplant → Eggplant dip → eggplant, raw [top5 ok]
+- collard greens → Mustard greens, cooked, boiled, drained, with salt → collards, raw
+- lemon → Pie, lemon → lemons, raw, without peel [top5 ok]
+- prunes → Baby Toddler prunes → plums, dried (prunes), uncooked [top5 ok]
+- applesauce → Cookie, applesauce → applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program) [top5 ok]
+- green apple → Prune de cythère or pomme cythere or golden apple, green or immature, flesh and skin, with seeeds, raw, sampled in the island of La Martinique → apples, raw, granny smith, with skin (Includes foods for USDA's Food Distribution Program) [top5 ok]
+- fruit salad → Fruit salad, including citrus fruits, with pudding → fruit salad, fresh or raw, including citrus fruits, no dressing
+- brown rice → Flour, rice, brown → rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+- quinoa → Flour, quinoa → quinoa, cooked [top5 ok]
+- penne → Cayenne pepper, powder → pasta, cooked, enriched, without added salt
+- macaroni → Chili with macaroni → pasta, cooked, enriched, without added salt
+- ramen noodles → Soup, ramen noodles, water added → soup, ramen noodle, any flavor, dry [top5 ok]
+- tofu → Tofu yogurt → tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari) [top5 ok]
+- flour → Flour, 00 → wheat flour, white, all-purpose, enriched, bleached
+- instant oatmeal → Oatmeal, instant, maple flavored, fat added → cereals, oats, instant, fortified, plain, dry [top5 ok]
+- cheese pizza → Topping from cheese pizza → fast Food, Pizza Chain, 14" pizza, cheese topping, regular crust [top5 ok]
+- mac and cheese → Club sandwich with tuna, cucumber, Emmental cheese and mayonnaise → macaroni and cheese, box mix with cheese sauce, prepared
+- blt → Salt, block → fast foods, submarine sandwich, bacon, lettuce, and tomato on white bread
+- egg salad → Egg salad sandwich on white → egg salad, made with mayonnaise [top5 ok]
+- garden salad → Asian chicken or turkey garden salad, chicken and/or turkey, lettuce, fruit, nuts, no dressing → lettuce, salad with assorted vegetables including tomatoes and/or carrots, no dressing
+- burrito → Egg burrito → fast foods, burrito, with beans and beef [top5 ok]
+- tacos → Taco sauce → fast foods, taco with beef, cheese and lettuce, hard shell [top5 ok]
+- clam chowder → Soup, Manhattan clam chowder → soup, clam chowder, new england, canned, ready-to-serve [top5 ok]
+- meatloaf → Meatloaf sandwich → meat loaf made with beef
+- spaghetti with meat sauce → Spaghetti sauce with meat → restaurant, Italian, spaghetti with meat sauce [top5 ok]
+- buffalo wings → Game meat, buffalo, water, raw → chicken "wings" with hot sauce, from fast food / restaurant
+- pulled pork sandwich → Pork sandwich → barbecue pork sandwich, on white bun [top5 ok]
+- egg and cheese sandwich → Fast foods, griddle cake sandwich, egg, cheese, and bacon → egg sandwich on white bread, with cheese
+- tuna casserole → Tuna casserole with vegetables and mushroom sauce, no noodles → tuna noodle casserole with cream or white sauce
+- chocolate chip cookies → Cookies, chocolate chip, dry mix → cookies, chocolate chip, commercially prepared, regular, higher fat, enriched [top5 ok]
+- sugar cookie → Cookie, sugar wafer → cookies, sugar, commercially prepared, regular (includes vanilla)
+- brownie → Cookie, butterscotch, brownie → cookies, brownies, commercially prepared [top5 ok]
+- chocolate cake → Snack cake, chocolate → cake, chocolate, commercially prepared with chocolate frosting, in-store bakery [top5 ok]
+- milk chocolate → Soy milk, chocolate → candies, milk chocolate
+- popcorn → Popcorn cake → snacks, popcorn, air-popped [top5 ok]
+- cheese puffs → Cheese puffs and twists, corn based, baked, low fat → cheese flavored corn snacks
+- pudding → Pudding, rice → puddings, vanilla, ready-to-eat
+- jello → Jelly → gelatin desserts, dry mix, prepared with water
+- rice crispy treats → Cereal, rice crispy, plain → snacks, KELLOGG, KELLOGG'S RICE KRISPIES TREATS Squares
+- iced coffee → Coffee, Iced Latte → beverages, coffee, brewed, prepared with tap water [top5 ok]
+- cold brew → Cold buttermilk soup, sweetened → beverages, coffee, brewed, prepared with tap water
+- sweet tea → Biscuit, sweet, thin, with oats → tea, iced, brewed, black, pre-sweetened with sugar
+- iced tea → Long Island iced tea → beverages, tea, black, ready to drink
+- cola → Rum and cola → beverages, carbonated, cola, regular [top5 ok]
+- soda → Vodka and soda → beverages, carbonated, cola, regular
+- diet soda → Soft drink, cream soda, diet → beverages, carbonated, low calorie, cola or pepper-type, with aspartame, contains caffeine
+- ginger ale → Whiskey and ginger ale → beverages, carbonated, ginger ale [top5 ok]
+- lemonade → Vodka and lemonade → lemonade, frozen concentrate, white, prepared with water [top5 ok]
+- smoothie → Vegetable smoothie → fast foods, strawberry banana smoothie made with ice and low-fat yogurt [top5 ok]
+- coconut water → Coconut water, sweetened → nuts, coconut water (liquid from coconuts) [top5 ok]
+- fruit punch → Fruit punch, alcoholic → beverages, fruit punch drink, without added nutrients, canned
+- mayonnaise → Vegan mayonnaise → salad dressing, mayonnaise, regular [top5 ok]
+- mayo → Beans, Dry, Flor de Mayo (0% moisture) → salad dressing, mayonnaise, regular
+- italian dressing → Italian dressing, light → salad dressing, italian dressing, commercial, regular
+- bbq sauce → Sauce for dipping, sweet & sour, BBQ sauce, industrially made → sauce, barbecue [top5 ok]
+- hot sauce → Sauce, hot chile, sriracha → sauce, ready-to-serve, pepper or hot
+- marinara sauce → OLIVE GARDEN, cheese ravioli with marinara sauce → sauce, pasta, spaghetti/marinara, ready-to-serve
+- walnuts → Nuts, walnuts, glazed → nuts, walnuts, english [top5 ok]
+- pistachios → Mortadella with pistachios, pure pork → nuts, pistachio nuts, dry roasted, without salt added [top5 ok]
+- flaxseed → Flaxseed oil → seeds, flaxseed [top5 ok]
+DEBATABLE, label scope not search (6):
+- turkey breast → Turkey breast, sliced, prepackaged: label scope: case is raw breast meat, top is deli slices
+- chickpeas → Chickpeas, NFS: label scope: case excludes fat-added cooked chickpeas; NFS carries the fat-added value
+- turkey sandwich → Turkey sandwich wrap: label scope: wraps excluded
+- caesar salad → Caesar salad, with romaine, no dressing: label scope: FNDDS Caesar has no dressing, excluded on purpose
+- veggie burger → Veggie burger, on bun: label scope: case is the patty, not the sandwich
+- margarine → Margarine, tub: label scope: case is 80% stick margarine; tub is lower-fat

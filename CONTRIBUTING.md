@@ -39,7 +39,7 @@ Try the API of your worktree:
 curl "$(./dev url)/v1/foods?q=hummus"                         # search products
 curl "$(./dev url)/v1/products/06297001181102?include=off"    # by barcode, with the OFF layer
 curl "$(./dev url)/v1/records/fdc:168421"                     # the product a source record belongs to
-curl "$(./dev url)/v1/foods/1?snapshot=2026-10-04"            # pinned to a day's snapshot
+curl "$(./dev url)/v1/foods/1"                              # one product, from the current snapshot
 curl "$(./dev url)/healthz"                                   # freshness; 503 when stale
 KEY=$(./dev cli keys create --name me --scope review)         # printed once; only its hash is stored
 curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/review" # values a failed check held back
@@ -48,7 +48,7 @@ curl -H "Authorization: Bearer $KEY" "$(./dev url)/v1/review" # values a failed 
 API keys and `/admin` need `FOODDB__BACKEND__SECRET_KEY`. The commands that
 [docs/usage.md](docs/usage.md) shows with `fooddb` run in a checkout as `./dev cli …`.
 
-Python 3.13 or newer, through `uv`. `uv run pytest` alone runs the unit tests and skips the
+Python 3.14 or newer, through `uv`. `uv run pytest` alone runs the unit tests and skips the
 database suite. `./dev test` runs both.
 
 ## Writing the change

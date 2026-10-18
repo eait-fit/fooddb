@@ -23,8 +23,8 @@ commands in this runbook. Run `make` to list every target.
 - Docker Engine with the Compose v2 plugin (`docker compose version` must work).
 - About 1 GB of free disk for the image and the data of the first boot. The image is
   490 MB. The database was 210 MB after a first boot with FDC and Open Food Facts only. CIQUAL,
-  CoFID, Frida, Matvaretabellen, MEXT and TFDA add about 14,400 foods. Their size was not measured.
-- Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr`,
+  CoFID, Frida, BLS, Matvaretabellen, MEXT and TFDA add about 21,500 foods. Their size was not measured.
+- Outbound HTTPS to `fdc.nal.usda.gov`, `static.openfoodfacts.org`, `ciqual.anses.fr`, `www.blsdb.de`,
   `www.matvaretabellen.no`, `www.mext.go.jp`, `api.figshare.com`, `ndownloader.figshare.com` (Frida,
   which redirects to `s3q.ait.dtu.dk`), `www.gov.uk` and `assets.publishing.service.gov.uk` (CoFID), `data.gov.tw` and `data.fda.gov.tw` (TFDA). With Fineli on, also to the host of `FOODDB__BACKEND__FINELI_URL`.
 - For TLS: a DNS name with an A record that points to the server, and open ports 80 and 443.
@@ -330,10 +330,10 @@ A service that keeps its own copy of the catalog reads the snapshot export. The 
 
 - The export of a large day is long. With the full OFF dump it has about 4 million lines. Give the
   consumer's HTTP client a long read timeout. Caddy streams the response and needs no change.
-- Run the consumer's sync after the nightly snapshot (02:30 UTC). Sync the newest day where
-  `final` is `true`: that is yesterday's snapshot.
-- To make a file instead, run `docker compose exec api fooddb export --day 2026-10-04 --out
-  /tmp/2026-10-04.ndjson.gz`, then copy the file out of the container.
+- Run the consumer's sync after the nightly snapshot (02:30 UTC). Sync when the snapshot's
+  `built_at` (from `GET /v1/snapshots`, or the export's ETag) changes.
+- To make a file instead, run `docker compose exec api fooddb export --out
+  /tmp/snapshot.ndjson.gz`, then copy the file out of the container.
 - The export is a read. Give the consumer its own `read` key, with a `--rate-limit` that is
   sufficient for its sync. See [API keys](#api-keys).
 
@@ -355,7 +355,7 @@ A read below `FOODDB__BACKEND__LABEL_CONFIDENCE_FLOOR` waits for review in full.
 ## ODbL dumps
 
 The worker writes the ODbL dump of the Open Food Facts layer on the 1st of each month, at 04:00
-UTC. It dumps the newest final snapshot day to the `fooddb_dumps` volume, and keeps the newest
+UTC. It dumps the current snapshot to the `fooddb_dumps` volume, and keeps the newest
 `FOODDB__BACKEND__DUMP_KEEP` dumps. The API serves them at `/v1/dumps` with no API key, also when
 reads need one. The ODbL requires this. [data-licence.md](data-licence.md) has the terms.
 

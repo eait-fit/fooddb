@@ -10,21 +10,25 @@ served field and value carries the licence of its source in its `licence` tag.
 | Core data from CoFID (Public Health England, UK), tagged `OGL-UK-3.0` | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |
 | Core data from Fineli (THL, Finland), tagged `CC-BY-4.0` | [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Core data from Matvaretabellen (Mattilsynet, Norway), tagged `NLOD-2.0` | [Norwegian Licence for Open Government Data 2.0](https://data.norge.no/nlod/en/2.0) |
+| Core data from BLS (Max Rubner-Institut, Germany), tagged `CC-BY-4.0` | [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Core data from Frida (DTU, Denmark), tagged `CC-BY-4.0` | [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Core data from TFDA (Taiwan), tagged `OGDL-Taiwan-1.0` | [Open Government Data License, version 1.0](https://data.gov.tw/license) |
 | Core data from MEXT (Japan), tagged `mext-free-use` | Free use, with the source cited. See the [MEXT terms of use](https://www.mext.go.jp/a_menu/syokuhinseibun/index.htm) |
+| Core data computed by the recipe layer, tagged `recipe` | the most restrictive licence among each dish's ingredient sources; the product's `attribution` lists every ingredient source's text |
+| ru/es record names in `data/names/mt/` written by an AI agent, `food_name` `origin='mt'` | AGPL-3.0 |
 | Other core data | fooddb's own terms |
 | The Open Food Facts layer (`off`, tagged `ODbL-1.0`) | [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) |
 
 ## National composition tables
 
-The terms of CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA ask you to name the source. Each product in the
+The terms of BLS, CIQUAL, CoFID, Fineli, Frida, Matvaretabellen, MEXT and TFDA ask you to name the source. Each product in the
 API and in the snapshot export has an `attribution` list: one entry for each of these sources that
 gives a served field. Each entry has the `source`, the `licence` and the `text`. Show the text where
 you use the data, or link to it. The texts are:
 
 | Source | Attribution |
 |---|---|
+| `bls` | Max Rubner-Institut (2025): Bundeslebensmittelschlüssel (BLS), Version 4.0 — Deutsche Nährstoffdatenbank. |
 | `ciqual` | Anses. Ciqual French food composition table (https://ciqual.anses.fr). Licence Ouverte / Etalab 2.0. |
 | `fineli` | Finnish Institute for Health and Welfare (THL), Fineli (https://fineli.fi). CC BY 4.0. |
 | `cofid` | McCance and Widdowson's The Composition of Foods Integrated Dataset 2021, Public Health England (https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid). Contains public sector information licensed under the Open Government Licence v3.0. |
@@ -60,7 +64,7 @@ fooddb publishes the ODbL part of its data each month, as the ODbL requires:
 - `GET /v1/dumps/{name}` downloads one dump: gzipped NDJSON, one product per line.
 - These routes need no API key, also when reads need one. They count against the rate limit.
 
-A dump holds the products of the newest final snapshot day that have an Open Food Facts record.
+A dump holds the products of the current snapshot that have an Open Food Facts record.
 For each product, it keeps the fooddb product id, the `off:` record ids, and each field and value
 tagged `ODbL-1.0`. It holds no other value. The fooddb product id links a line to the API.
 

@@ -7,19 +7,18 @@ value.
 """
 
 import os
-from datetime import date
 
 from sqlalchemy import Connection, text
 
 from fooddb import checks
 from fooddb.db import engine
-from fooddb.fetchers import ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda
+from fooddb.fetchers import bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda
 
 # ponytail: fixed source ranks; a per-field trust table when brand uploads and label reads land.
 # The composition tables (FDC and the national ones) share one rank, above the crowd (OFF).
 RANK = ("case {col} when 'brand' then 1 when 'label' then 2"
         " when 'fdc' then 3 when 'ciqual' then 3 when 'fineli' then 3 when 'matvaretabellen' then 3"
-        " when 'mext' then 3"
+        " when 'mext' then 3 when 'bls' then 3"
         " when 'frida' then 3"
         " when 'cofid' then 3"
         " when 'tfda' then 3"
@@ -88,7 +87,7 @@ with recursive member(product_id, id) as (
 select * from ({pick_sql("""
     select m.product_id, v.nutrient, v.value_per_100, v.unit, v.basis, v.source, v.licence, v.observed_at, v.approved
     from member m join snapshot_value v on v.product_id = m.id
-    where v.day = :day and v.scope = :scope
+    where v.scope = :scope
 """)}) picked
 """
 
@@ -99,13 +98,10 @@ MERGED_SQL = "select distinct merged_into from product where merged_into = any(:
 STORED_SQL = """
 select product_id, nutrient, value_per_100, unit, basis, source, licence, observed_at, approved
 from snapshot_value
-where day = :day and scope = :scope and product_id = any(:pids)
+where scope = :scope and product_id = any(:pids)
 order by product_id, nutrient
 """
 
-
-class NoSnapshot(LookupError):
-    pass
 
 # A record shapes the product (name, barcode, category, flags) and is found by lookups only once one of
 # its values is accepted. A record with no observations at all has nothing to hold back.
@@ -117,7 +113,7 @@ select product_id, id, source, licence, gtin14, name, brand, lang, serving_text,
        serving_g::float8 as serving_g, category, flags, source_updated_at
 from food
 where product_id = any(:pids) and layer = any(:layers) and {VISIBLE}
-order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last
+order by product_id, {RANK.format(col="source")}, source_updated_at desc nulls last, id
 """
 
 
@@ -125,7 +121,7 @@ FIELDS = ("name", "brand", "lang", "serving_text", "serving_g", "category")
 # Least to most restrictive; an unknown licence counts as the most. The middle ones ask for attribution.
 LICENCES = ("CC0-1.0", "etalab-2.0", "NLOD-2.0", "OGL-UK-3.0", "OGDL-Taiwan-1.0", "mext-free-use", "CC-BY-4.0", "ODbL-1.0")
 # Sources whose licence asks every user of the data to name them: source → (licence, text).
-ATTRIBUTION = {m.FETCHER: (m.LICENCE, m.ATTRIBUTION) for m in (ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda)}
+ATTRIBUTION = {m.FETCHER: (m.LICENCE, m.ATTRIBUTION) for m in (bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda)}
 
 
 def tagged(record, value) -> dict | None:
@@ -148,10 +144,17 @@ def seals(per_100: dict) -> dict | None:
 
 
 def attribution(p: dict) -> list[dict]:
-    """The attribution that each source of a served field asks for, once per source."""
+    """The attribution that each source of a served field asks for, once per source.
+    A recipe's sources are its ingredients': the union of what the computed values were made of."""
+    from fooddb import recipes
+
     tags = [*(p[f] for f in (*FIELDS, "flags")), *p["gtin14"], *p["per_100"].values()]
+    sources = {t["source"] for t in tags if t}
+    for record in p["records"]:
+        if record.startswith(f"{recipes.SOURCE}:"):
+            sources |= recipes.ingredient_sources(record)
     return [{"source": s, "licence": ATTRIBUTION[s][0], "text": ATTRIBUTION[s][1]}
-            for s in sorted({t["source"] for t in tags if t} & ATTRIBUTION.keys())]
+            for s in sorted(sources & ATTRIBUTION.keys())]
 
 
 def layers_for(include: str | None) -> list[str]:
@@ -173,28 +176,25 @@ def canonical(pids: list[int], conn: Connection) -> list[int]:
     return list(dict.fromkeys(rows[p] for p in pids if p in rows))
 
 
-def products(pids: list[int], include: str | None, snapshot: date | None = None,
-             conn: Connection | None = None) -> list[dict]:
+def products(pids: list[int], include: str | None, conn: Connection | None = None) -> list[dict]:
     """Resolved products in the order given; a product with no visible record is left out.
 
-    Values come from the newest nightly snapshot (or the pinned `snapshot` day); live resolution
-    only while no snapshot has been built yet. Which records make up a product is always live.
-    ponytail: records and names are not snapshotted; pin them too if clients need full replay.
+    Values come from the current nightly snapshot; live resolution only while no snapshot has been
+    built yet. Which records make up a product is always live.
+    ponytail: records and names are not snapshotted.
     """
     if conn is None:
         with engine().connect() as conn:
-            return products(pids, include, snapshot, conn)
+            return products(pids, include, conn)
     pids = canonical(pids, conn)
     params = {"pids": pids, "layers": layers_for(include), "scope": "all" if include == "off" else "core"}
-    day = snapshot or conn.execute(text("select max(day) from snapshot")).scalar_one()
-    if snapshot and not conn.execute(text("select 1 from snapshot where day = :d"), {"d": snapshot}).first():
-        raise NoSnapshot(f"no snapshot for {snapshot.isoformat()}")
+    day = conn.execute(text("select max(day) from snapshot")).scalar_one()
     records = conn.execute(text(RECORDS_SQL), params).mappings().all()
     if day:
         merged = set(conn.execute(text(MERGED_SQL), params).scalars())
-        values = conn.execute(text(STORED_SQL), params | {"day": day, "pids": [p for p in pids if p not in merged]}).mappings().all()
+        values = conn.execute(text(STORED_SQL), params | {"pids": [p for p in pids if p not in merged]}).mappings().all()
         if merged:
-            values += conn.execute(text(SNAPSHOT_SQL), params | {"day": day, "pids": sorted(merged)}).mappings().all()
+            values += conn.execute(text(SNAPSHOT_SQL), params | {"pids": sorted(merged)}).mappings().all()
     else:
         values = conn.execute(text(LIVE_SQL), params).mappings().all()
     by_pid: dict[int, dict] = {}

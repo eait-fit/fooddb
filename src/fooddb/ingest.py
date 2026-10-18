@@ -1,7 +1,7 @@
 """Shared write path for every fetcher: normalise, check, store observations."""
 
 from collections.abc import Iterable, Iterator
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields, replace
 from datetime import UTC, datetime
 from itertools import islice
 
@@ -9,7 +9,7 @@ from sqlalchemy import insert, select, text, update
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from fooddb import checks
-from fooddb.db import engine, fetch_run, food, observation
+from fooddb.db import engine, fetch_run, food, food_name, observation
 
 UNITS = {"ENERC_KCAL": "kcal", "ENERC_KJ": "kJ", "NA": "mg"}  # everything else is grams
 OBS_ROWS_PER_INSERT = 60_000 // len(observation.c)  # Postgres caps a statement at 65535 parameters
@@ -37,9 +37,12 @@ class Record:
     extra_flags: list[str] = field(default_factory=list)
     categories: list[str] = field(default_factory=list)  # the source's own category tags (checks.category)
     labels: list[str] = field(default_factory=list)  # OFF labels_tags: seals stated on the pack
+    markets: list[str] = field(default_factory=list)  # OFF countries_tags: where the product is sold
     images: dict | None = None  # OFF photo references (food.images); {} = the source has none
     evidence: str | None = None  # sha256 of the label photo the values were read from
     review_all: bool = False  # every value waits for review, whatever the checks say
+    group: str | None = None  # records of one run sharing a group land in one product (e.g. a recipe's names)
+    names: dict[str, str] = field(default_factory=dict)  # lang → the name in another language than `name`
 
 
 def already_done(fetcher: str, ref: str) -> bool:
@@ -66,6 +69,15 @@ def runs(fetcher: str, ref: str) -> list[dict]:
         ).mappings()]
 
 
+def fail_abandoned() -> int:
+    """Close every run a dead process left "running": called once at worker boot, where run()'s
+    lazy sweep can't reach the refs nobody re-runs. Same single-worker assumption as run()."""
+    with engine().begin() as conn:
+        return conn.execute(update(fetch_run).where(fetch_run.c.status == "running").values(
+            status="failed", error="abandoned: process ended without closing the run",
+            finished_at=datetime.now(UTC))).rowcount
+
+
 def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> tuple[int, int]:
     """Store records in batches; logs the run in fetch_run. Returns (foods, observations)."""
     with engine().begin() as conn:
@@ -80,7 +92,7 @@ def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> 
         ).scalar_one()
     n_foods = n_obs = 0
     try:
-        for chunk in _chunks(records, batch):
+        for chunk in _chunks((_clean(r) for r in records), batch):
             f, o = _write(chunk)
             n_foods, n_obs = n_foods + f, n_obs + o
         if n_foods == 0:
@@ -90,6 +102,21 @@ def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> 
         raise
     _finish(run_id, "done", n_foods, n_obs)
     return n_foods, n_obs
+
+
+def _clean(r: Record) -> Record:
+    # Postgres text and jsonb refuse NUL (0x00): a source can carry it in any string.
+    return replace(r, **{f.name: _strip_nul(getattr(r, f.name)) for f in fields(r)})
+
+
+def _strip_nul(v):
+    if isinstance(v, str):
+        return v.replace("\x00", "")
+    if isinstance(v, list):
+        return [_strip_nul(i) for i in v]
+    if isinstance(v, dict):
+        return {_strip_nul(k): _strip_nul(i) for k, i in v.items()}
+    return v
 
 
 def _write(records: list[Record]) -> tuple[int, int]:
@@ -103,10 +130,15 @@ def _write(records: list[Record]) -> tuple[int, int]:
         stored = {(row.food_id, row.nutrient): row for row in conn.execute(text(LATEST_SQL), {"ids": ids})}
 
         # A record seen for the first time becomes its own product; matching merges products later.
+        # Records naming a `group` share one product — and join a known group member's product.
         new = [fid for fid in ids if fid not in known]
-        pids = dict(zip(new, conn.execute(text(
+        key = {fid: latest_by_id[fid].group or fid for fid in ids}
+        claimed = {key[fid]: row.product_id for fid, row in known.items()}
+        fresh = sorted({key[fid] for fid in new} - claimed.keys())
+        claimed.update(dict(zip(fresh, conn.execute(text(
             "insert into product (created_at) select now() from generate_series(1, :n) returning id"
-        ), {"n": len(new)}).scalars().all())) if new else {}
+        ), {"n": len(fresh)}).scalars().all()))) if fresh else None
+        pids = {fid: claimed[key[fid]] for fid in new}
 
         foods, obs = [], []
         for r in latest_by_id.values():
@@ -117,7 +149,8 @@ def _write(records: list[Record]) -> tuple[int, int]:
                 "source": r.source, "layer": r.layer, "licence": r.licence,
                 "gtin14": r.gtin14, "name": r.name[:500], "brand": r.brand, "lang": r.lang,
                 "serving_text": r.serving_text, "serving_g": r.serving_g, "category": category,
-                "flags": list(failed) + r.extra_flags, "images": r.images, "source_updated_at": r.observed_at,
+                "flags": list(failed) + r.extra_flags, "images": r.images, "markets": r.markets,
+                "source_updated_at": r.observed_at,
             })
             obs += _observations(r, failed, known.get(r.id), stored)
 
@@ -126,11 +159,20 @@ def _write(records: list[Record]) -> tuple[int, int]:
             index_elements=[food.c.id],
             set_={c: stmt.excluded[c] for c in (
                 "gtin14", "name", "brand", "lang", "serving_text", "serving_g", "category", "flags",
-                "images", "source_updated_at")}
+                "images", "markets", "source_updated_at")}
             | {"fetched_at": datetime.now(UTC)},
             # A late or retried older file must not roll the row back to older metadata.
             where=food.c.source_updated_at <= stmt.excluded.source_updated_at,
         ))
+        # A record that states names in other languages replaces its source-stated set; one that
+        # states none keeps it. origin='mt' rows (agent-written names) are never touched here.
+        named = [r for r in latest_by_id.values() if r.names]
+        if named:
+            conn.execute(food_name.delete().where(food_name.c.food_id.in_([r.id for r in named]),
+                                                  food_name.c.origin == "source"))
+            conn.execute(insert(food_name).values(
+                [{"food_id": r.id, "lang": lang, "name": n[:500], "origin": "source", "licence": r.licence}
+                 for r in named for lang, n in r.names.items()]))
         n_obs = 0
         for i in range(0, len(obs), OBS_ROWS_PER_INSERT):
             n_obs += len(conn.execute(
