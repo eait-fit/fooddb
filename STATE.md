@@ -25,3 +25,10 @@ Task: one PR per class; class 2 first. PR open → `agent-fleet tell agent:kir/e
 - PR open: https://github.com/eait-fit/fooddb/pull/165 (closes #161, class 2 only)
 - Reported REVIEW to lead-fooddb: msg 01M587TPQNKACPZ4NXAHM2N06G
 - Fleet NOTE received: DEPLOY FREEZE (coordinator) — no `make deploy`, no ieat-app pin PRs until lifted. Code/PRs/reviews continue. Noted; no deploy planned by me regardless.
+
+## Fix round 1 (REVIEW #2 sent, msg 01M58827JVSB4C6M0ADVGYRP9Q)
+- Merged origin/main (no rebase) — includes 0024_fetch_run_code (#163).
+- Stem migration renumbered 0025 off 0024; food index renamed food_stem_idx; dev+test dbs re-migrated to 0025.
+- GIN build measured: food 48.9K → 0.83 s / 1.9 MB; food_name 84.6K → 1.45 s / 2.0 MB (prod extrapolation noted in PR body).
+- Bench results renamed to dated names (2026-10-18-dv161-{before,after}.json).
+- ./dev test on merged tree: 387 passed. PR body updated via REST PATCH.
