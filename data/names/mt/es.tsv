@@ -28641,8 +28641,8 @@ tfda:A0500502	稉型糯米(台稉糯1號)	arroz glutinoso redondo (variedad Taig
 tfda:A0500503	稉型糯米(2025年取樣)	arroz glutinoso redondo
 tfda:A0500601	野生紅米	arroz rojo silvestre
 tfda:A0500701	紅糯糙米	arroz rojo glutinoso integral
-tfda:A0500801	黑秈糯糙米	arroz negro glutinoso integral
-tfda:A0500802	黑秈糯糙米(2025年取樣)	arroz negro glutinoso integral
+tfda:A0500801	黑秈糯糙米	arroz largo negro glutinoso integral
+tfda:A0500802	黑秈糯糙米(2025年取樣)	arroz largo negro glutinoso integral
 tfda:A0500901	胚芽秈米(台中秈10號)	arroz largo con germen (variedad Taichung Sen 10)
 tfda:A0501001	胚芽稉米(台稉10號）	arroz redondo con germen (variedad Taigeng 10)
 tfda:A0501002	胚芽稉米(台稉9號)	arroz redondo con germen (variedad Taigeng 9)
@@ -28693,7 +28693,7 @@ tfda:B0100214	山藥(白肉)	ñame chino (de pulpa blanca)
 tfda:B0200301	紫山藥	ñame chino morado
 tfda:B0320101	木薯粉	tapioca
 tfda:B0400101	白皮甘藷	boniato de piel blanca
-tfda:B0400201	菱角牛奶甘藷	boniato lechoso
+tfda:B0400201	菱角牛奶甘藷	boniato (variedad trapa lechosa)
 tfda:B0400301	芋心甘藷	boniato (variedad taro)
 tfda:B0400401	紅肉甘藷	boniato de pulpa roja
 tfda:B0400501	金時甘藷	boniato kintoki
@@ -28750,7 +28750,7 @@ tfda:C1610201	黑芝麻(熟)	sésamo negro tostado
 tfda:C1610202	黑芝麻(熟)(2022年取樣)	sésamo negro tostado
 tfda:C1620101	黑芝麻粉	harina de sésamo negro
 tfda:C1700101	帶殼花生(生)	cacahuetes con cáscara crudos
-tfda:C1700201	冷凍帶殼花生(熟)	cacahuetes con cáscara cocidos
+tfda:C1700201	冷凍帶殼花生(熟)	cacahuetes con cáscara cocidos congelados
 tfda:C1700301	黑金剛花生(生)	cacahuetes «diamante negro» crudos
 tfda:C1705101	帶膜花生仁(生)(1995年之前取樣)	cacahuetes pelados con piel crudos
 tfda:C1705201	去膜花生仁(生)	cacahuetes pelados sin piel crudos
@@ -28945,7 +28945,7 @@ tfda:D3400205	檸檬柑	mandarina limón
 tfda:D3400206	砂糖橘	mandarina shatangju
 tfda:D3400301	長果金柑	kumquat oval
 tfda:D3400302	圓果金柑	kumquat redondo
-tfda:D3400303	圓果金柑汁(綠皮)	zumo de kumquat
+tfda:D3400303	圓果金柑汁(綠皮)	zumo de kumquat de piel verde
 tfda:D3500101	文旦	pomelo chino
 tfda:D3500102	文旦(2023年取樣)	pomelo chino (2023)
 tfda:D3500201	白柚	pomelo chino blanco
@@ -29130,7 +29130,7 @@ tfda:E5200201	藤三七	enredadera de Madeira
 tfda:E5300101	奶油萵苣(日本種)	lechuga mantecosa
 tfda:E5300102	紅葉萵苣(荷蘭種）	lechuga roja
 tfda:E5300103	廣東萵苣	lechuga cantonesa
-tfda:E5300104	福山萵苣	lechuga romana ecológica (Fushan)
+tfda:E5300104	福山萵苣	lechuga romana (Fushan)
 tfda:E5300105	蘿蔓萵苣	lechuga romana
 tfda:E5300201	本島萵苣(土植)(1月取樣)	lechuga local de suelo (enero)
 tfda:E5300202	本島萵苣(土植)(3月取樣)	lechuga local de suelo (marzo)
@@ -29269,7 +29269,7 @@ tfda:E9900801	冰花	hierba del hielo
 tfda:E9900901	木虌果	gac
 tfda:F0110101	紅毛苔	alga «musgo rojo»
 tfda:F0210101	紫菜	nori
-tfda:F0210102	熟紫菜	nori cocida
+tfda:F0210102	熟紫菜	nori tostada
 tfda:F0310101	髮菜	facai (alga cabello)
 tfda:F0400101	麒麟菜	eucheuma
 tfda:F0410101	乾麒麟菜	eucheuma seca
@@ -29352,7 +29352,7 @@ tfda:H0605201	黃仁黑豆	soja negra de grano amarillo
 tfda:H0610101	發芽黑豆(青仁)	soja negra germinada (grano verde)
 tfda:H0610201	烘烤黑豆	soja negra tostada
 tfda:H0620101	黑豆粉	harina de soja negra
-tfda:H0650101	黑豆漿(青仁)(無糖)(2025年取樣)	bebida de soja negra sin azúcar
+tfda:H0650101	黑豆漿(青仁)(無糖)(2025年取樣)	bebida de soja negra de grano verde sin azúcar
 tfda:H0705101	毛綠豆	judía mungo
 tfda:H0705102	綠豆	judía mungo
 tfda:H0710101	綠豆仁	judía mungo pelada
@@ -29426,7 +29426,7 @@ tfda:I0300501	豬肩胛排	costillas de paleta de cerdo
 tfda:I0300502	豬肩胛排(2021年取樣)	costillas de paleta de cerdo (2021)
 tfda:I0300601	豬前腿外腱肉	jarrete delantero de cerdo
 tfda:I0302101	豬後腿外腱肉	jarrete trasero de cerdo
-tfda:I0302201	豬後腿肉	pierna de cerdo fresca
+tfda:I0302201	豬後腿肉	pierna de cerdo
 tfda:I0302202	豬後腿肉(2025年取樣)	pierna de cerdo (2025)
 tfda:I0302301	豬後腿瘦肉	pierna de cerdo magra
 tfda:I0304101	豬大里肌	lomo de cerdo
@@ -29475,8 +29475,8 @@ tfda:I0402101	里肌肉(土雞)	solomillo de pollo campero
 tfda:I0402102	里肌肉(肉雞)	solomillo de pollo broiler
 tfda:I0402201	帶骨去皮對切胸(肉雞)	pechugas de pollo broiler con hueso sin piel
 tfda:I0402301	帶骨帶皮對切胸(肉雞)	pechugas de pollo broiler con hueso y piel
-tfda:I0402401	去皮清肉(土雞)	pechuga de pollo campero sin piel
-tfda:I0402402	去皮清肉(肉雞)	pechuga de pollo broiler sin piel
+tfda:I0402401	去皮清肉(土雞)	pechuga de pollo campero sin piel ni hueso
+tfda:I0402402	去皮清肉(肉雞)	pechuga de pollo broiler sin piel ni hueso
 tfda:I0404101	骨腿(土雞)	pierna de pollo campero con hueso
 tfda:I0404102	骨腿(肉雞)	pierna de pollo broiler con hueso
 tfda:I0404201	清腿(土雞)	pierna de pollo campero entera
@@ -29639,7 +29639,7 @@ tfda:J0407501	烏鯧	pez luna negro
 tfda:J0407601	無斑圓鰺	jurel colirrojo del Pacífico
 tfda:J0407701	藍圓鰺	jurel redondo
 tfda:J0407801	雙帶鰺	pez arcoíris
-tfda:J0407901	眼眶魚	jurel luna
+tfda:J0407901	眼眶魚	pez luna
 tfda:J0408001	斯氏長鰭烏魴	pezcuchillo
 tfda:J0408101	史氏紅諧魚	pez rubí japonés
 tfda:J0408201	希氏姬鯛	pargo lavanda
