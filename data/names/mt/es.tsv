@@ -32361,8 +32361,436 @@ tfda:P1500301	蒸肉粉(五香)	mezcla de rebozado para carne al vapor (cinco es
 tfda:P1500401	熱狗粉	mezcla para perritos
 tfda:P1500501	麵包粉	pan rallado
 tfda:P1500601	酵母粉	levadura en polvo
+tfda:Q0100101	冷藏寧波年糕	pastel de arroz glutinoso refrigerado (nian gao, Ningbo)
+tfda:Q0100201	冷藏甜年糕	pastel de arroz glutinoso dulce refrigerado (nian gao)
+tfda:Q0100301	冷藏廣式芋頭粿	pastel de arroz con taro cantonés refrigerado
+tfda:Q0100401	冷藏廣式蘿蔔糕	pastel de arroz con rábano cantonés refrigerado
+tfda:Q0100501	包餡甜麻糬(紅豆)	mochi dulce relleno de judía azuki
+tfda:Q0200101	鹹麻糬	mochi salado
+tfda:Q0300101	芋仔餅	pastelito de taro
+tfda:Q0300201	月餅(棗泥)	pastel de luna con pasta de azufaifa
+tfda:Q0300301	綠豆凸	pastelito de judía mungo
+tfda:Q0300401	蕃薯餅	pastelito de boniato
+tfda:Q0400101	車輪餅(紅豆)	imagawayaki relleno de judía azuki
+tfda:Q0400201	車輪餅(菜脯)	imagawayaki relleno de rábano en conserva
+tfda:Q0500101	太陽餅	pastelito de malta «taiyangbing»
+tfda:Q0500201	牛舌餅	pastelito «lengua de buey»
+tfda:Q0500301	蛋黃芋頭酥	hojaldre de taro y yema de huevo congelado
+tfda:Q0500401	蛋黃酥	hojaldre de yema de huevo
+tfda:Q0500501	鳳梨酥	pastelito de piña
+tfda:Q0500601	蘿蔔酥	hojaldre de rábano
+tfda:Q0600701	鳳眼糕	galleta «ojo de fénix»
+tfda:Q0600801	米粩	galleta de arroz inflado (milao)
+tfda:Q0700101	可頌	croissant
+tfda:Q0700201	泡芙(巧克力)	profiteroles de chocolate
+tfda:Q0700301	蛋塔	tartaleta de crema de huevo
+tfda:Q0700401	蛋塔(葡式)	pastel de nata
+tfda:Q0700501	鬆餅	gofres
+tfda:Q0800101	冷凍馬拉糕	bizcocho al vapor «ma lai gao» congelado
+tfda:Q0800201	銅鑼燒	dorayaki
+tfda:Q0800301	冷凍馬蹄條	rollitos de castaña de agua y cacahuete congelados
+tfda:Q0900101	乳酪蛋糕	tarta de queso
+tfda:Q0900201	海綿蛋糕(圓形)	bizcocho
+tfda:Q0900301	提拉米蘇(圓形)	tiramisú
+tfda:Q0900401	蜂蜜蛋糕(原味)	bizcocho de miel
+tfda:Q0900501	蜂蜜蛋糕(巧克力)	bizcocho de miel con chocolate
+tfda:Q0900601	蜂蜜蛋糕(起司)	bizcocho de miel con queso
+tfda:Q0900701	黑森林蛋糕	tarta Selva Negra
+tfda:Q1000101	土司	pan de molde
+tfda:Q1000201	土司(含全穀粉)	pan de molde con harina integral
+tfda:Q1000301	紅豆土司	pan de molde con judía azuki
+tfda:Q1000401	奶酥麵包	bollo con cobertura de mantequilla
+tfda:Q1000501	肉鬆麵包	bollo con cerdo desmigado
+tfda:Q1000601	蜜糖甜甜圈(波/摩堤)	donut de mochi glaseado con miel
+tfda:Q1000701	糖粒甜甜圈(油炸)	donut azucarado frito
+tfda:Q1000801	菠蘿麵包	bollo piña (boluobao)
+tfda:Q1000901	葡萄乾奶酥麵包	bollo con cobertura de mantequilla y pasas
+tfda:Q1001001	漢堡包	pan de hamburguesa
+tfda:Q1001101	餐包	panecillo
+tfda:Q1001201	雙胞胎麵包	bollos fritos «gemelos»
+tfda:Q2100101	仙草凍	gelatina de hierba (xiancao)
+tfda:Q2100102	仙草凍(2020取樣)	gelatina de hierba (xiancao) (2020)
+tfda:Q2100201	咖啡凍	gelatina de café
+tfda:Q2100301	果凍	gelatina de frutas
+tfda:Q2100401	原味愛玉凍	gelatina de aiyu
+tfda:Q2100501	檸檬愛玉凍	gelatina de aiyu con limón
+tfda:Q2100601	粉粿	gelatina de almidón (fanguo)
+tfda:Q2102101	鮮奶布丁	natillas
+tfda:Q2102201	烤布丁	flan
+tfda:Q2102301	黃布丁	natillas de huevo
+tfda:Q2104101	豆花(花生)	douhua con cacahuete
+tfda:Q2104201	傳統豆花(未加糖)	douhua tradicional sin azúcar
+tfda:Q2106101	羊羹	yokan
+tfda:Q2200101	巧克力冰淇淋	helado de chocolate
+tfda:Q2200201	香草冰淇淋	helado de vainilla
+tfda:Q2200301	紅豆牛奶冰棒	polo de leche con judía azuki
+tfda:Q2300101	花生仁湯	sopa dulce de cacahuete en conserva
+tfda:Q4100101	方塊酥	galletas cuadradas hojaldradas
+tfda:Q4100201	夾心餅乾(草莓)	galletas sándwich de fresa
+tfda:Q4100301	捲心酥	barquillos rellenos
+tfda:Q4100401	蛋捲(芝麻)	barquillos de huevo con sésamo
+tfda:Q4100501	煎餅	galleta crujiente (jianbing)
+tfda:Q4100601	營養口糧	galletas nutritivas
+tfda:Q4100701	蘇打餅乾(蔬菜)	galletas de soda con verduras
+tfda:Q4200101	玉米餅乾(原味)	galletas de maíz
+tfda:Q4200201	洋芋片	patatas fritas de bolsa
+tfda:Q4200301	魚酥	galletas crujientes de pescado
+tfda:Q4200401	零食泡麵	fideos instantáneos secos de aperitivo
+tfda:Q4300101	雪餅	galletas de arroz glaseadas
+tfda:Q4900101	沙其馬	sachima
+tfda:Q6100101	牛奶巧克力	chocolate con leche
+tfda:Q6100201	花生牛奶巧克力	chocolate con leche y cacahuetes
+tfda:Q6100301	榛果牛奶巧克力	chocolate con leche y avellanas
+tfda:Q6100401	糖衣牛奶巧克力	grageas de chocolate con leche
+tfda:Q6100501	白巧克力風味糖	caramelos con sabor a chocolate blanco
+tfda:Q6100601	黑巧克力(85%)	chocolate negro 85 %
+tfda:Q6200101	白芝麻糖	turrón de sésamo blanco
+tfda:Q6200201	黑芝麻糖	turrón de sésamo negro
+tfda:Q6200301	花生糖	crocante de cacahuete
+tfda:Q6200401	花生貢糖	caramelo de cacahuete «gongtang»
+tfda:Q6200501	牛軋糖	turrón con cacahuete
+tfda:Q6200601	核棗糕	dulce de azufaifa con nueces
+tfda:Q6300101	水果軟糖	gomitas de fruta
+tfda:Q6300201	水果QQ軟糖	gomitas de fruta QQ
+tfda:Q6310101	牛奶軟糖	caramelos blandos de leche
+tfda:Q6310201	巧克力牛奶軟糖	caramelos blandos de leche con chocolate
+tfda:Q6400101	太妃糖	caramelo toffee
+tfda:Q6400201	蓮藕糖	caramelos de raíz de loto
+tfda:Q6400301	枇杷糖	caramelos de níspero
+tfda:Q6400401	苦茶糖	caramelos de hierbas
+tfda:Q6400501	薑糖	caramelos de jengibre
+tfda:Q6400601	巧克力夾心糖	caramelos rellenos de chocolate
+tfda:Q6800101	維生素C口含錠(檸檬)	pastillas de vitamina C con limón
+tfda:Q6800201	酵母菌咀嚼錠	comprimidos masticables de levadura
+tfda:Q6900101	乳酸球	bolas de leche
+tfda:Q6900201	羊乳片	tabletas de leche de cabra
+tfda:Q6900301	紅豆球	bolas de judía azuki
+tfda:Q6900401	綠豆球	bolas de judía mungo
+tfda:Q6900501	棉花糖	nubes
+tfda:Q8100101	甘薯蜜餞	boniato confitado
+tfda:Q8100201	芒果青	mango verde confitado
+tfda:Q8100401	芭樂果乾	guayaba deshidratada
+tfda:Q8100501	鳳梨果乾	piña deshidratada
+tfda:Q8100601	檸檬果乾	limón deshidratado
+tfda:Q9100101	豆干丁(五香)	tofu seco en dados (cinco especias)
+tfda:Q9100202	豆干片(沙茶)	tofu seco en láminas con salsa shacha
+tfda:Q9900101	布丁粉	natillas en polvo
+tfda:Q9900201	冰淇淋粉(香草)	polvo para helado de vainilla
+tfda:Q9900301	起酥片	láminas de hojaldre
+tfda:R0100101	廣東粥	gachas de arroz cantonesas
+tfda:R0200101	冷凍火腿炒飯	arroz frito con jamón congelado
+tfda:R0200201	冷凍蝦仁炒飯	arroz frito con gambas congelado
+tfda:R0300101	三角飯糰(肉鬆)	onigiri con cerdo desmigado
+tfda:R0300201	糯米飯糰	rollito de arroz glutinoso (fantuan)
+tfda:R0300301	壽司(豆皮壽司)	sushi inari
+tfda:R0400101	肉粽	zongzi de carne
+tfda:R0400201	鹼粽	zongzi alcalino
+tfda:R0500301	冷凍筒仔米糕	arroz glutinoso «tongzai» congelado
+tfda:R0500401	筒仔米糕	arroz glutinoso «tongzai»
+tfda:R0600101	豬血糕	pastel de sangre de cerdo con arroz
+tfda:R0600201	鴨血糕	pastel de sangre de pato con arroz
+tfda:R0700101	肉圓	ba-wan sin freír
+tfda:R0700201	清蒸蝦仁肉圓	ba-wan al vapor con gambas
+tfda:R0800101	甜酒釀	arroz glutinoso fermentado dulce (jiuniang)
+tfda:R0800201	紫米酒釀	arroz glutinoso negro fermentado (jiuniang)
+tfda:R0900101	冷凍芝麻湯圓	tangyuan de sésamo congelados
+tfda:R0900201	冷凍花生湯圓	tangyuan de cacahuete congelados
+tfda:R0900301	冷凍豬肉湯圓	tangyuan de cerdo congelados
+tfda:R1100101	免煮飯	arroz instantáneo
+tfda:R1100201	埔里米粉	fideos de arroz de Puli
+tfda:R1100301	細米粉	fideos de arroz finos
+tfda:R1100401	濁水米粉	fideos de arroz de Zhuoshui
+tfda:R1100501	米粄條	fideos de arroz anchos (mibantiao)
+tfda:R1100601	米苔目	fideos de arroz gruesos (mitaimu)
+tfda:R1100701	粿仔條	fideos de arroz «kway teow»
+tfda:R1300101	米漿(散裝)	bebida de arroz
+tfda:R1300201	保久米漿	bebida de arroz UHT
+tfda:R1300301	糙米漿	bebida de arroz integral
+tfda:R1300401	糙秈米漿	bebida de arroz integral índica
+tfda:R1300501	糯米漿	bebida de arroz glutinoso
+tfda:R1300601	黑糯米漿	bebida de arroz glutinoso negro
+tfda:R1310101	米漿粉	bebida de arroz en polvo
+tfda:R1500101	燕麥奶	bebida de avena
+tfda:R1600101	玉米粒罐頭	maíz en conserva
+tfda:R1600201	玉米醬罐頭	maíz cremoso en conserva
+tfda:R1700101	麵筋(未調味)	gluten de trigo sin condimentar
+tfda:R1700201	麵腸(未調味)	rollo de gluten sin condimentar
+tfda:R1800101	水餃皮	masa para dumplings
+tfda:R1800201	春捲皮	masa para rollitos de primavera
+tfda:R1800301	餛飩皮	masa para wonton
+tfda:R1900101	長麵線	fideos finos de trigo largos (misua)
+tfda:R1900201	紅麵線	fideos finos de trigo rojos (misua)
+tfda:R1900301	麵線	fideos finos de trigo (misua)
+tfda:R1900401	雞絲麵	fideos crujientes de pollo
+tfda:R2000101	乾麵條	fideos secos
+tfda:R2000201	油麵條	fideos de aceite secos
+tfda:R2000301	紅蘿蔔麵	fideos de zanahoria secos
+tfda:R2000401	通心麵	macarrones
+tfda:R2000501	菠菜麵	fideos de espinaca secos
+tfda:R2000601	鍋燒意麵	fideos de huevo fritos (guoshao)
+tfda:R2000701	雞蛋麵	fideos de huevo secos
+tfda:R2000801	刀削麵	fideos cortados a cuchillo frescos (daoxiaomian)
+tfda:R2000901	拉麵	fideos ramen frescos
+tfda:R2001001	意麵	fideos de huevo fritos (yimian)
+tfda:R2001101	衛生油麵	fideos de aceite cocidos
+tfda:R2001201	金門黃麵	fideos amarillos frescos de Kinmen
+tfda:R2001301	冷凍烏龍麵	udon congelado
+tfda:R2001401	鍋燒麵	fideos guoshao frescos
+tfda:R2001501	蕎麥麵(乾)	fideos de trigo sarraceno secos
+tfda:R2001502	蕎麥麵(濕)	fideos de trigo sarraceno frescos
+tfda:R2100101	炒板條	fideos de arroz anchos salteados
+tfda:R2100201	泡麵(牛肉口味)	fideos instantáneos sabor a ternera
+tfda:R2100301	泡麵(鮮蝦口味)	fideos instantáneos sabor a gamba
+tfda:R2100401	擔仔麵	fideos danzai
+tfda:R2200101	冷凍牛肉水餃	dumplings de ternera congelados
+tfda:R2200201	冷凍豬肉水餃	dumplings de cerdo congelados
+tfda:R2200301	冷凍豬肉韭菜水餃	dumplings de cerdo y cebollino chino congelados
+tfda:R2200401	冷凍豬肉蟹黃水餃	dumplings de cerdo y coral de cangrejo congelados
+tfda:R2200501	冷凍香菇雞肉水餃	dumplings de pollo y shiitake congelados
+tfda:R2200601	冷凍素食水餃	dumplings vegetarianos congelados
+tfda:R2200701	冷凍鮪魚水餃	dumplings de atún congelados
+tfda:R2200801	冷凍豬肉熟水餃	dumplings de cerdo cocidos congelados
+tfda:R2200901	冷凍素食熟水餃	dumplings vegetarianos cocidos congelados
+tfda:R2201001	冷凍冬菜蝦仁餛飩	wonton de gambas y col en conserva congelados
+tfda:R2201101	冷凍豬肉餛飩	wonton de cerdo congelados
+tfda:R2201201	冷凍菜肉餛飩	wonton de cerdo y verduras congelados
+tfda:R2201301	溫州餛飩	wonton de Wenzhou
+tfda:R2201401	豬肉鍋貼	guotie de cerdo
+tfda:R2201501	熟水餃(高麗菜水餃)	dumplings de col cocidos
+tfda:R2300101	冷凍叉燒包	baozi de char siu congelados
+tfda:R2300201	冷凍酸菜焢肉包子	baozi de cerdo estofado con col agria congelados
+tfda:R2300301	冷凍芋泥包	baozi de pasta de taro congelados
+tfda:R2300401	冷凍豆沙包	baozi de pasta de judía azuki congelados
+tfda:R2300501	冷凍芝麻包	baozi de sésamo congelados
+tfda:R2300601	冷凍蓮蓉包	baozi de pasta de loto congelados
+tfda:R2300701	冷凍叉燒包子	baozi de char siu congelados
+tfda:R2300801	冷凍牛肉包子	baozi de ternera congelados
+tfda:R2300901	冷凍豬肉包子	baozi de cerdo congelados
+tfda:R2301001	冷凍豬肉湯包	baozi de sopa y cerdo congelados
+tfda:R2301101	小籠包	xiaolongbao
+tfda:R2301201	冷凍素菜包子	baozi de verduras congelados
+tfda:R2301301	竹筍包	baozi de brotes de bambú
+tfda:R2400101	冷凍白饅頭	mantou congelados
+tfda:R2400201	白饅頭	mantou
+tfda:R2400301	芋頭饅頭	mantou de taro
+tfda:R2400401	花捲	mantou rizado
+tfda:R2400501	冷藏堅果饅頭	mantou con frutos secos refrigerado
+tfda:R2400601	黑糖饅頭	mantou de azúcar moreno
+tfda:R2400701	冷凍銀絲卷(奶黃)	rollo «yinsijuan» relleno de crema congelado
+tfda:R2500101	火腿蛋三明治	sándwich de jamón y huevo
+tfda:R2600101	披薩(夏威夷)	pizza hawaiana
+tfda:R2600201	冷凍披薩(黑胡椒火腿)	pizza de jamón y pimienta negra congelada
+tfda:R2700101	蔥油餅	tortita de cebolleta
+tfda:R2700201	冷凍蔥油餅	tortita de cebolleta congelada
+tfda:R2700301	冷凍蛋餅皮	masa para tortita de huevo congelada
+tfda:R2700401	燒餅	panecillo horneado (shaobing)
+tfda:R2800101	韭菜盒子	empanadilla de cebollino chino
+tfda:R2800201	大餅包小餅(紅豆)	crepe de judía azuki con masa crujiente
+tfda:R2800301	水煎包	baozi a la plancha y al vapor
+tfda:R2800401	牛肉餡餅	empanadilla de ternera frita
+tfda:R2800501	豬肉餡餅	empanadilla de cerdo frita
+tfda:R2900101	冷凍燒賣	siu mai congelados
+tfda:R2900201	冷凍水晶包	baozi «cristal» congelados
+tfda:R2900301	冷凍,水晶餃	dumplings «cristal» congelados
+tfda:R3000101	油條	youtiao
 tfda:R3000201	冷凍春捲	rollitos de primavera congelados
+tfda:R3000301	蚵仔煎	tortilla de ostras
+tfda:R3000401	棺材板	tostada rellena «ataúd»
+tfda:R3000501	油豆腐粉絲(阿給)	tofu frito relleno de fideos (agei)
+tfda:R3100101	冷凍可樂餅(奶汁)	croquetas de bechamel congeladas
+tfda:R4100101	芋圓	bolas de taro crudas
+tfda:R4100201	粉圓	perlas de tapioca crudas
+tfda:R4100301	冷凍甘薯條	boniato en bastones congelado
+tfda:R4100401	冷凍馬鈴薯條	patatas fritas congeladas
+tfda:R4100501	西谷米	sagú
+tfda:R4400101	台式泡菜	col encurtida taiwanesa
+tfda:R4400201	黃金泡菜	col encurtida «dorada»
+tfda:R4400301	韓式泡菜	kimchi
+tfda:R4400401	花瓜罐頭	pepinitos encurtidos en conserva
+tfda:R4400501	冷凍洋蔥圈	aros de cebolla congelados
+tfda:R4400601	醃辣椒	chiles encurtidos
+tfda:R4400701	桂竹筍片	brotes de bambú en láminas salados
+tfda:R4400801	麻竹筍干	brotes de bambú secos
+tfda:R4400901	薤	cebollino chino encurtido (rakkyo)
+tfda:R4401001	甘藍乾	col salada seca
+tfda:R4401101	酸甘藍菜	col encurtida agria
+tfda:R4401201	梅乾菜	mostaza de hoja fermentada seca (meigancai)
+tfda:R4401301	榨菜	zhacai (tallo de mostaza encurtido)
+tfda:R4401401	酸菜	col fermentada china (suancai)
+tfda:R4401501	醃漬冬瓜	calabaza de cera encurtida
+tfda:R4401601	醃漬花胡瓜	pepinitos encurtidos
+tfda:R4401701	醃漬越瓜	melón pepino encurtido (yuegua)
+tfda:R4500101	銀耳罐頭	tremella en conserva
+tfda:R4500201	草菇罐頭	setas de paja en conserva
+tfda:R4500301	醃漬香菇	shiitake encurtido
+tfda:R4500401	秀珍菇罐頭	setas ostra en conserva
+tfda:R4500501	金針菇罐頭	enoki en conserva
+tfda:R4500601	洋菇罐頭	champiñones en conserva
+tfda:R4500701	猴頭菇罐頭	melena de león en conserva
+tfda:R4600101	高纖胚芽冬粉	fideos de judía mungo con germen
+tfda:R4600201	冬粉	fideos de cristal
+tfda:R4600301	寬粉	fideos de cristal anchos
+tfda:R4700101	佃煮黑豆	judías negras estofadas dulces (tsukudani)
+tfda:R4700201	豆干絲	tofu seco en tiras
+tfda:R4700202	五香豆干	tofu seco cinco especias
+tfda:R4700203	小方豆干	tofu seco en cuadraditos
+tfda:R4700301	黑豆干	tofu seco negro
+tfda:R4700401	豆腐皮	yuba (piel de tofu)
+tfda:R4700501	日式炸豆皮	yuba frita japonesa (aburaage)
+tfda:R4700601	豆豉	judías negras fermentadas (douchi)
+tfda:R4700701	豆棗	tofu frito dulce (douzao)
+tfda:R4700801	百頁豆腐	tofu en láminas (baiye)
+tfda:R4700901	傳統豆腐	tofu tradicional
+tfda:R4700902	傳統豆腐(2022年取樣)	tofu tradicional (2022)
+tfda:R4701001	冷凍豆腐	tofu congelado
+tfda:R4701101	小三角油豆腐	tofu frito en triángulos
+tfda:R4701201	嫩豆腐	tofu blando
+tfda:R4701301	雞蛋豆腐	tofu de huevo
+tfda:R4701401	麻油辣腐乳	tofu fermentado picante con aceite de sésamo
+tfda:R4800101	素肉	carne vegetal
+tfda:R4800201	冷凍素雞塊	nuggets vegetales congelados
+tfda:R4900101	花生麵筋罐頭	gluten con cacahuetes en conserva
+tfda:R4900201	香菇麵筋罐頭	gluten con shiitake en conserva
+tfda:R4900301	花豆罐頭(糖漬)	judía escarlata en almíbar
+tfda:R4900401	紅豆罐頭(糖漬)	judía azuki en almíbar
+tfda:R4900501	甘納豆	amanatto
+tfda:R4900601	豌豆仁罐頭	guisantes en conserva
+tfda:R4900701	鹽酥蠶豆	habas tostadas saladas
+tfda:R5000101	豆漿	bebida de soja
+tfda:R5000201	雞蛋豆漿	bebida de soja con huevo
+tfda:R5000301	鹹豆漿	bebida de soja salada
+tfda:R5000501	豆漿優酪乳	yogur de soja
+tfda:R5000601	DHA豆奶	bebida de soja con DHA
+tfda:R5010101	豆漿粉	bebida de soja en polvo
+tfda:R5100101	叉燒肉	cerdo char siu
+tfda:R5100201	切片火腿(牛肉)	fiambre de vacuno en lonchas
+tfda:R5100301	切片火腿(豬肉)	fiambre de cerdo en lonchas
+tfda:R5100401	切片火腿(雞肉)	fiambre de pollo en lonchas
+tfda:R5100501	條狀火腿(牛肉,黑胡椒)	fiambre de vacuno en tiras con pimienta negra
+tfda:R5100601	條狀火腿(豬肉)	fiambre de cerdo en tiras
+tfda:R5100701	醬肘子	codillo de cerdo en salsa de soja
 tfda:R5100801	培根	beicon cocido
+tfda:R5100901	臘肉(五花肉)	panceta de cerdo curada ahumada cruda
+tfda:R5100902	臘肉(腿肉)	jamón de cerdo curado ahumado crudo
+tfda:R5101001	滷牛筋	tendones de vacuno en salsa de soja
+tfda:R5101101	滷豬腳	manitas de cerdo en salsa de soja
+tfda:R5101201	醃燻豬肝	hígado de cerdo curado ahumado
+tfda:R5101301	膽肝	hígado de cerdo curado
+tfda:R5200101	片狀肉乾(牛肉)	cecina de vacuno en lonchas
+tfda:R5200102	片狀肉乾(牛肉,辣味)	cecina de vacuno en lonchas picante
+tfda:R5200201	片狀肉乾(豬肉)	cecina de cerdo en lonchas
+tfda:R5200301	條狀肉乾(豬肉)	cecina de cerdo en tiras
+tfda:R5300101	牛肉香腸	salchicha de vacuno cruda
+tfda:R5300201	香腸	salchicha de cerdo cruda
+tfda:R5300202	香腸(蒜味)	salchicha de cerdo con ajo cruda
+tfda:R5300203	蒟蒻香腸(蒜味)	salchicha de cerdo con konjac y ajo cruda
+tfda:R5300301	小巧香腸	salchichas mini crudas
+tfda:R5300401	雞肉香腸(大)	salchicha de pollo grande cruda
+tfda:R5300402	雞肉香腸(小)	salchicha de pollo pequeña cruda
+tfda:R5300501	熱狗	salchicha Frankfurt cruda
+tfda:R5300601	德國香腸	bratwurst cruda
+tfda:R5300701	冷凍小香腸	salchichas pequeñas congeladas
+tfda:R5400101	冷凍珍珠丸	albóndigas en arroz glutinoso congeladas
+tfda:R5400201	冷凍貢丸	albóndigas «gongwan» congeladas
+tfda:R5400301	冷凍雞肉丸	albóndigas de pollo congeladas
+tfda:R5500101	冷凍牛肉漢堡肉	hamburguesa de vacuno congelada
+tfda:R5500201	冷凍雞塊	nuggets de pollo congelados
+tfda:R5600101	豬肉脯	cerdo seco prensado
+tfda:R5600201	豬肉酥	cerdo seco desmigado
+tfda:R5600301	雞肉酥	pollo seco desmigado
+tfda:R5900101	肉羹	pasta de cerdo con almidón (rougeng)
+tfda:R5900201	冷凍咕咾肉	cerdo agridulce congelado
+tfda:R5900301	豬腳凍	manitas de cerdo en gelatina
+tfda:R6100101	冷凍花枝丸	albóndigas de sepia congeladas
+tfda:R6100201	冷凍虱目魚丸	albóndigas de sabalote congeladas
+tfda:R6100301	冷凍文蛤丸	albóndigas de almeja congeladas
 tfda:R6100401	冷凍旗魚丸	albóndigas de pez espada congeladas
+tfda:R6100501	冷凍鱈魚丸	albóndigas de bacalao congeladas
+tfda:R6100601	冷凍蝦丸	albóndigas de gamba congeladas
+tfda:R6200201	冷凍花枝排	hamburguesa de sepia congelada
+tfda:R6200301	冷凍鮪排	hamburguesa de atún congelada
+tfda:R6200401	冷凍蝦餅	croqueta de gambas congelada
+tfda:R6300301	冷凍干貝酥	croquetas de vieira congeladas
+tfda:R6300401	冷凍花枝塊	trozos de sepia congelados
+tfda:R6300501	冷凍旗魚塊	trozos de pez espada congelados
+tfda:R6400101	冷凍蚵捲	rollitos de ostras congelados
+tfda:R6400201	冷凍魚捲	rollitos de pescado congelados
+tfda:R6400301	冷凍蝦捲	rollitos de gamba congelados
+tfda:R6500101	冷凍魷魚圈	aros de calamar congelados
+tfda:R6600101	冷凍花枝餃	dumplings de sepia congelados
+tfda:R6600201	冷凍香菇餃	dumplings de shiitake congelados
+tfda:R6600301	冷凍蛋餃	dumplings de huevo congelados
+tfda:R6600401	冷凍雪螺餃	dumplings de caracola de mar congelados
+tfda:R6600501	冷凍魚餃	dumplings de pescado congelados
+tfda:R6600601	冷凍蝦餃	dumplings de gambas congelados
+tfda:R6600701	冷凍燕餃	dumplings «yanjiao» congelados
+tfda:R6700101	冷凍蟹味棒	palitos de cangrejo congelados
+tfda:R6700201	冷凍魚卵卷	rollo de huevas congelado
+tfda:R6700301	魚板	kamaboko
+tfda:R6700401	天婦羅	tempura (pastel de pescado frito)
+tfda:R6700501	冷凍花枝漿	pasta de sepia congelada
+tfda:R6700601	冷凍花枝羹	sopa espesa de sepia congelada
+tfda:R6800101	魚肉脯	pescado desmigado cocido con sal
+tfda:R6800201	鯖魚肉脯	caballa desmigada seca
+tfda:R6800301	魚肉鬆	pescado desmigado seco
+tfda:R6800401	旗魚鬆	pez espada desmigado seco
+tfda:R6800501	鮭魚鬆	salmón desmigado seco
+tfda:R6900101	香筍鮪魚罐頭	atún con brotes de bambú en conserva
+tfda:R6900201	茄汁鯖魚罐頭	caballa en salsa de tomate en conserva
+tfda:R7100101	蒜味甘扁桃仁	almendras con ajo
+tfda:R7100201	杏仁霜	polvo de almendra para bebida
+tfda:R7100301	蜜汁松子仁	piñones con miel
+tfda:R7100401	鹽酥夏威夷豆	macadamias saladas
+tfda:R7100501	甜核桃	nueces azucaradas
+tfda:R7100601	糖炒栗子	castañas asadas con azúcar
+tfda:R7100701	蜜汁腰果	anacardos con miel
+tfda:R7100801	玉桂西瓜子	pipas de sandía con canela
+tfda:R7100901	醬油西瓜子	pipas de sandía con salsa de soja
+tfda:R7101001	鹽酥帶殼花生(熟)	cacahuetes salados con cáscara
+tfda:R7101101	醃漬花生仁	cacahuetes encurtidos
+tfda:R7101201	糖漬花生仁	cacahuetes garrapiñados
+tfda:R7101301	油炸花生仁	cacahuetes fritos
 tfda:R7101401	蛋酥花生仁	cacahuetes en rebozado de huevo
+tfda:R7101501	鹽酥花生仁	cacahuetes tostados salados
+tfda:R7101601	調味南瓜子(去殼)	pipas de calabaza peladas condimentadas
+tfda:R7101602	調味南瓜子(帶殼)	pipas de calabaza con cáscara condimentadas
+tfda:R7101701	甘草葵瓜子(帶殼)	pipas de girasol con regaliz con cáscara
+tfda:R7101801	鹽酥葵瓜子(帶殼)	pipas de girasol saladas con cáscara
+tfda:R7101901	糖漬蓮子	semillas de loto en almíbar
+tfda:R7300101	烤雞	pollo asado entero
+tfda:R7300201	冷凍烤雞翅	alitas de pollo asadas congeladas
+tfda:R7300301	鴨賞	pato ahumado (yashang)
+tfda:R7300401	茶鵝	oca ahumada con té
+tfda:R7300501	熟鵝腿肉	muslo de oca cocido
+tfda:R7500101	鯊魚煙	tiburón ahumado
+tfda:R7500201	日本鰻鱺魚片(蒲燒)	anguila kabayaki
+tfda:R7500301	鹽漬小鱗脂眼鯡(鹹馧仔)	arenque redondo salado
+tfda:R7500401	鯖魚(醃製)	caballa salada
+tfda:R7500402	鯖魚(醃製)(2022年取樣)	caballa salada (2022)
+tfda:R7500501	毛鱗魚(柳葉魚)(裹粉未炸)	capelán empanado sin freír
 tfda:R7500601	油魚卵(加工)	huevas de escolar procesadas
+tfda:R7500701	圓鱈魚卵(加工)	huevas de bacalao de profundidad encurtidas
+tfda:R7500801	鯔魚卵(加工)	huevas de mújol en salazón
+tfda:R7500802	鯔魚卵(加工)(2022年取樣)	huevas de mújol en salazón (2022)
+tfda:R7500901	醃漬鮭魚卵	huevas de salmón encurtidas
+tfda:R7501001	香魚片	ayu seco
+tfda:R7501101	龍蝦卵(調味)	huevas de langosta aliñadas
+tfda:R7501201	蠑螺(加工)	caracol turbo en conserva
+tfda:R7501301	鹹小卷	chipirones salados
+tfda:R8100101	沖泡濃湯(海鮮)	crema de marisco en polvo
+tfda:R8100201	玉米濃湯調理包	crema de maíz en polvo
+tfda:R8100301	麥片沖泡包(三合一)	bebida de cereales 3 en 1 en polvo
+tfda:R8100401	三合一麥片(野菜蘑菇)	bebida de cereales 3 en 1 de verduras y setas
+tfda:R8100501	糙米麩	bebida de arroz integral en polvo
+tfda:R8100601	麵茶粉	bebida de harina tostada en polvo (miancha)
+tfda:R8100701	植物燕麥奶粉(營養強化)	bebida de avena en polvo enriquecida
+tfda:R8100801	杏仁茶沖泡包	té de almendra en polvo
+tfda:R8100901	芝麻糊沖泡包	pasta de sésamo en polvo
+tfda:R8101001	綜合堅果穀物沖泡包	bebida de frutos secos y cereales en polvo
+tfda:R8200101	寒天脆藻	algas agar crujientes
+tfda:R9900101	生啤酒	cerveza de barril
+tfda:R9900102	啤酒	cerveza
+tfda:R9900201	陳年紹興酒	vino de arroz Shaoxing añejo
+tfda:R9900301	白葡萄酒	vino blanco
+tfda:R9900302	紅葡萄酒	vino tinto
+tfda:R9901101	雞精	esencia de pollo
