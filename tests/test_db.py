@@ -485,6 +485,59 @@ def test_search_expands_austrian_food_words_for_country_at():
     assert names(c, {"q": "Erdäpfel", "country": "de"}) == []
 
 
+def test_search_finds_inflected_and_compound_forms():
+    """#161 class 2: an empty trigram result retries on language stems. Every word of the
+    query must appear among the name's lexemes; a compounding country also splits long
+    tokens on the corpus's own stems."""
+    from fooddb import ingest, stems
+
+    stems.reset()  # the compound vocabulary reads live data
+    ingest.run("t", "r1", [rec(id="mat:1", source="matvaretabellen", name="Salmon",
+                               names={"nb": "Laks, filet, rå"}),
+                           rec(id="mat:2", source="matvaretabellen", name="Carrot",
+                               names={"nb": "Gulrot, kokt"}),
+                           rec(id="frida:1", source="frida", name="Egg yolk",
+                               names={"da": "Æg, høne, blomme, rå"}),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Walnut",
+                               names={"de": "Walnuss"})])
+    c = client()
+    # A compound the source writes as two words ("laksefilet" ~ "Laks, filet", 0.57 < 0.6).
+    assert names(c, {"q": "laksefilet", "country": "no"}) == ["mat:1"]
+    # Both words inflected: "kokte gulrøtter" meets "Gulrot, kokt" ({kokt, gulrot}).
+    assert names(c, {"q": "kokte gulrøtter", "country": "no"}) == ["mat:2"]
+    # A linking-letter compound: "æggeblomme" splits to {aeg, blom}.
+    assert names(c, {"q": "æggeblomme", "country": "dk"}) == ["frida:1"]
+    # A plural under the trigram threshold ("walnüsse" ~ "Walnuss", 0.44 < 0.6).
+    assert names(c, {"q": "walnüsse", "country": "de"}) == ["bls:1"]
+
+
+def test_search_falls_back_to_stems_only_when_the_trigram_path_is_empty():
+    """#161: the stem path adds recall; it never reorders an answer the trigram path had."""
+    from fooddb import ingest, stems
+
+    stems.reset()
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Beans, snap, green, raw"),
+                           rec(id="mat:1", source="matvaretabellen", name="Salmon",
+                               names={"nb": "Laks, filet, rå"})])
+    c = client()
+    assert names(c, {"q": "beans"}) == ["fdc:2"]  # the usual path, unchanged
+    # Nothing matches "laksefilet" on the stem side either: still empty, never a guess.
+    assert names(c, {"q": "blåbær", "country": "no"}) == []
+
+
+def test_stems_segment_splits_on_corpus_stems():
+    """Longest corpus-stem match per position, left to right; linkers stay uncovered."""
+    from fooddb import stems
+
+    voc = frozenset({"laks", "fil", "svin", "kjott", "aeg", "blom", "hvet", "boll"})
+    assert stems.segment("laksefilet", voc) == ["laks", "fil"]
+    assert stems.segment("svinekjott", voc) == ["svin", "kjott"]
+    assert stems.segment("aeggeblomme", voc) == ["aeg", "blom"]
+    assert stems.segment("hveteboller", voc) == ["hvet", "boll"]
+    assert stems.segment("solsikkekjerner", voc) == []  # no corpus stems inside
+    assert stems.segment("egg", voc) == []  # shorter than the split needs
+
+
 def test_barcode_country_orders_by_preferred_source():
     from fooddb import ingest
 

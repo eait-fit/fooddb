@@ -4,7 +4,7 @@ as `resolve.products` serves them; what a miss means is the caller's (the API's 
 from sqlalchemy import ColumnElement, Select, and_, case, false, func, literal, literal_column, select, union_all
 from sqlalchemy.dialects.postgresql import distinct_on
 
-from fooddb import countries, resolve, synonyms
+from fooddb import countries, resolve, stems, synonyms
 from fooddb.db import engine, food, food_name, observation
 
 CANDIDATES = 20  # name rows ranked per result row before the visibility check
@@ -89,6 +89,37 @@ def by_name(q: str, include: str | None = None, limit: int = 20, country: str | 
     # not three independent aggregates: a deeper cut can add a short name from a record that did not
     # give the best similarity, and max(sim)/min(rk)/min(len) would mix the tuples of two records,
     # so the first rows moved with `limit` ("orange" → Candied orange peel at limit=5).
+    top = (select(food.c.product_id, cand.c.sim, cand.c.pen, cand.c.rk, cand.c.len)
+           .select_from(cand.join(food, food.c.id == cand.c.id)).where(_visible())
+           .ext(distinct_on(food.c.product_id))
+           .order_by(food.c.product_id, cand.c.sim.desc(), cand.c.pen, cand.c.rk, cand.c.len)).cte("top")
+    items = resolve.products(_pids(
+        select(top.c.product_id).order_by(top.c.sim.desc(), top.c.pen, top.c.rk, top.c.len).limit(limit)
+    ), include)
+    # Inflection and compounds (#161): a query the trigram path could not reach at all tries
+    # again on word stems — the same ranking, only ever adding answers, never moving them.
+    return items or _by_stems(q, include, limit, cc, rk, layer, variants)
+
+
+def _by_stems(q, include, limit, cc, rk, layer, variants) -> list[dict]:
+    """The empty-result fallback on stemmed lexemes (see stems.py): every variant searched
+    once per name index, ranked by the same tuple; "laksefilet" then meets "Laks, filet"."""
+    named = food_name.join(food, food.c.id == food_name.c.food_id)
+
+    def best(variant, scored, name, tname, source) -> Select:
+        uq, un = func.f_unaccent(scored), func.f_unaccent(name)
+        sim = func.word_similarity(uq, un)
+        pen, length = _penalty(name, uq), func.length(name)
+        return (select(food.c.id, sim.label("sim"), pen.label("pen"),
+                       length.label("len"), rk.label("rk"))
+                .select_from(source)
+                .where(layer, stems.tsv(tname).op("@@")(stems.tsquery(variant)))
+                .order_by(sim.desc(), pen, *([rk] if cc else []), length)
+                .limit(limit * CANDIDATES))
+
+    cand = union_all(*(best(v, s, n, t, src) for v, s in stems.variants(q, cc, variants)
+                       for n, t, src in ((food.c.name, food, food),
+                                         (food_name.c.name, food_name, named)))).cte("cand")
     top = (select(food.c.product_id, cand.c.sim, cand.c.pen, cand.c.rk, cand.c.len)
            .select_from(cand.join(food, food.c.id == cand.c.id)).where(_visible())
            .ext(distinct_on(food.c.product_id))
