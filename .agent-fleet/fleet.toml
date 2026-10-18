@@ -1,0 +1,30 @@
+# How `agent-fleet spawn eait-fit/fooddb#<issue>` starts an agent on this repo
+# (https://github.com/kirmalyshev/agent-fleet, docs/PROTOCOL.md "Spawning"). First match wins.
+session = "eait"
+base = "origin/main"
+brief = "brief.md"
+
+[profiles.devin]
+kind = "devin"
+prefix = "dv-fooddb-"
+fallback = "sonnet"
+handoff_min = 5
+
+[profiles.sonnet]
+kind = "claude"
+args = ["--model", "sonnet", "--dangerously-skip-permissions"]
+unset_env = ["CLAUDE_CONFIG_DIR"]
+prefix = "s-fooddb-"
+
+[profiles.opus]
+kind = "claude"
+args = ["--model", "opus", "--dangerously-skip-permissions"]
+unset_env = ["CLAUDE_CONFIG_DIR"]
+prefix = "o-fooddb-"
+
+[[rules]]
+match = ["research", "design", "audit", "review", "label:research", "label:design", "label:audit", "label:review"]
+profile = "opus"
+
+[[rules]]
+profile = "devin"

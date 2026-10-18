@@ -204,6 +204,86 @@ def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(t
     assert names(c, {"q": "хумус"}) == []
 
 
+def test_load_mt_scales_past_the_pg_parameter_limit(tmp_path):
+    """More TSV rows than 65,535/5 bind parameters (13,107) — the old one-statement
+    load died at ~13k names; chunked inserts and array-param id lists must not."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    n = 14_000
+    with engine().begin() as conn:
+        # `clean` restarted identity, so these products are ids 1..n.
+        conn.execute(text("insert into product (created_at) select now() from generate_series(1, :n)"), {"n": n})
+        conn.execute(text("insert into food (id, product_id, source, layer, licence, name) "
+                          "select 'bulk:' || g, g, 't', 'core', 'X', 'food ' || g "
+                          "from generate_series(1, :n) g"), {"n": n})
+    (tmp_path / "ru.tsv").write_text(
+        "".join(f"bulk:{i}\tfood {i}\tблюдо {i}\n" for i in range(1, n + 1)), encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": n}
+    assert load_mt(tmp_path) == {"ru": n}  # idempotent
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == n
+    (tmp_path / "ru.tsv").write_text("bulk:1\tfood 1\tблюдо 1\n", encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 1}
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == 1
+
+
+def test_health_names_is_advisory_and_flags_a_short_or_failed_mt_load(tmp_path, monkeypatch):
+    """`names` in the health JSON is never part of `ok` — a translation gap must not 503 the
+    API — but it says not-ok when fewer rows are held than the TSVs can cover, or when the
+    last load_mt run died."""
+    from sqlalchemy import text
+
+    from fooddb import health, ingest
+    from fooddb import names as names_mod
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    now = datetime.now(UTC)
+    for f in health.watched():
+        if f != "snapshot":
+            health.checked(f, at=now)
+    with engine().begin() as conn:  # and a fresh snapshot: the report is green without names
+        conn.execute(text("insert into snapshot (day, built_at, products) values (current_date, :t, 0)"),
+                     {"t": now})
+    ingest.run("t", "r1", [rec()])
+    (tmp_path / "ru.tsv").write_text("fdc:1\tHummus, commercial\tхумус\n", encoding="utf-8")
+    monkeypatch.setattr(names_mod, "MT_DIR", tmp_path)
+
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False  # never loaded: held 0 < expected 1
+    assert r["names"]["languages"]["ru"] == {"expected": 1, "held": 0, "ok": False}
+    assert r["names"]["last_ok"] is None
+
+    load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True and r["names"]["languages"]["ru"]["held"] == 1
+    assert r["names"]["last_ok"] is not None and r["names"]["last_failed"] is None
+
+    with engine().begin() as conn:  # held drops below what the TSV can cover
+        conn.execute(text("delete from food_name where origin = 'mt'"))
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False
+
+    real_load = names_mod._load  # the load dies mid-run -> last run failed marks names not-ok
+    monkeypatch.setattr(names_mod, "_load", lambda dir: (_ for _ in ()).throw(RuntimeError("x")))
+    with pytest.raises(RuntimeError):
+        load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False and r["names"]["last_failed"] is not None
+
+    monkeypatch.setattr(names_mod, "_load", real_load)
+    load_mt(tmp_path)  # the next good run clears the flag
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True
+    assert client().get("/healthz").status_code == 200
+
+
 def test_no_two_records_share_an_mt_name_with_different_kcal():
     """Two records that collapse to one mt name must be the same food for energy: a shared name
     whose newest accepted ENERC_KCAL differ by more than 10 % means a qualifier that changes the
@@ -240,6 +320,24 @@ def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page
                            rec(id="fdc:2", name="Apple pie"),
                            rec(id="fdc:3", name="Apple strudel")])
     assert names(client(), {"q": "apple", "limit": 2}) == ["fdc:2", "fdc:3"]
+
+
+def test_search_first_result_does_not_depend_on_limit():
+    from fooddb import ingest
+
+    # One product whose long name matches the query well and whose deeper short name only enters the
+    # candidate cut (limit * CANDIDATES rows per name index) at a bigger limit: twenty food_name rows
+    # tie above "oranges", which is row 21 at limit=1 and inside at limit=5. Ordering the product by
+    # independent max(sim)/min(len) aggregates let that deeper row shorten it and flip the first
+    # result ("orange" → Candied orange peel at limit=5); ordering by the best tuple cannot.
+    filler = {f"l{i:02}": "Orange bonbon" for i in range(20)}
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Candied orange peel", group="g"),
+                           rec(id="fdc:2", name="Zest filler", group="g",
+                               names={"fi": "oranges"} | filler),
+                           rec(id="fdc:3", name="Orange, raw")])
+    c = client()
+    first = {limit: names(c, {"q": "orange", "limit": limit})[0] for limit in (1, 5, 20)}
+    assert first == {1: "fdc:3", 5: "fdc:3", 20: "fdc:3"}
 
 
 def test_search_without_country_is_unchanged():
@@ -929,7 +1027,7 @@ def test_health_reports_stale_and_fresh_fetchers():
 
     from fooddb import health
 
-    now = datetime(2026, 10, 4, 12, tzinfo=UTC)
+    now = datetime.now(UTC)
     health.checked("off-delta", at=now - timedelta(hours=2))
     health.checked("fdc-foundation", at=now - timedelta(days=20))
     report = health.report(now=now)
@@ -1043,6 +1141,42 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     jobs.fetch_off_deltas()  # later deltas wait for the nightly snapshot
     assert q.drain() == ["match_products"]
     assert product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]["value"] == 539
+
+
+def test_a_worker_boot_retries_a_fetch_the_last_worker_died_on():
+    """#110: a deploy recreate SIGKILLs the worker mid-run and the pq row stays RUNNING; without the
+    boot reap the next schedule() would only park on it and the bootstrap fetch would never run.
+    The real queue here: the same rows the incidents left (fdc-survey 16 Oct, names mt 18 Oct)."""
+    from sqlalchemy import text
+
+    from fooddb import ingest, jobs
+    from fooddb.db import engine
+
+    with engine().begin() as conn:
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("insert into fetch_run (fetcher, ref, status) values ('fdc-survey', 'r1', 'running')"))
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at) "
+                          "values ('bootstrap-fdc-survey', 'fooddb.jobs:fetch_fdc', "
+                          """'{"args": [], "kwargs": {"dataset": "survey"}}', 50, 'RUNNING', now(), 1, now())"""))
+        # An upsert that parked while its row ran is re-queued with the parked version, not failed.
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at, requeue) "
+                          "values ('bootstrap-names-mt', 'fooddb.jobs:load_mt_names', '{\"args\": [], \"kwargs\": {}}', 0, "
+                          """'RUNNING', now(), 1, now(), '{"name": "fooddb.jobs:load_mt_names", "payload": {"args": [], "kwargs": {}}, """
+                          """"priority": 0, "run_at": "2026-10-18T00:00:00+00:00", "max_runtime_seconds": null}'::jsonb)"""))
+    assert jobs.reap_orphans() == 2
+    assert ingest.fail_abandoned() == 1
+    jobs.schedule()  # what cli.worker() runs next: the upsert lands on the closed row as a re-queue
+    with engine().connect() as conn:
+        tasks = {r.client_id: r for r in conn.execute(
+            text("select client_id, status, error, attempts from pq_tasks where client_id like 'bootstrap%'")).mappings()}
+        [run] = conn.execute(text("select status, error from fetch_run where fetcher = 'fdc-survey'")).mappings()
+    assert (tasks["bootstrap-fdc-survey"]["status"], tasks["bootstrap-fdc-survey"]["attempts"]) == ("PENDING", 0)
+    assert tasks["bootstrap-fdc-survey"]["error"] is None
+    assert tasks["bootstrap-names-mt"]["status"] == "PENDING"
+    assert run["status"] == "failed" and "abandoned" in run["error"]
+    with engine().begin() as conn:  # leave the shared tables as a fresh database has them
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("delete from pq_periodic"))
 
 
 TYPO = HUMMUS | {"ENERC_KCAL": 2290.0, "SUGAR": 20.0, "FIBTG": 6.0}  # 10x kcal, sugars over carbs, new fibre

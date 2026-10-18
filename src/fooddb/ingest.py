@@ -69,6 +69,15 @@ def runs(fetcher: str, ref: str) -> list[dict]:
         ).mappings()]
 
 
+def fail_abandoned() -> int:
+    """Close every run a dead process left "running": called once at worker boot, where run()'s
+    lazy sweep can't reach the refs nobody re-runs. Same single-worker assumption as run()."""
+    with engine().begin() as conn:
+        return conn.execute(update(fetch_run).where(fetch_run.c.status == "running").values(
+            status="failed", error="abandoned: process ended without closing the run",
+            finished_at=datetime.now(UTC))).rowcount
+
+
 def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> tuple[int, int]:
     """Store records in batches; logs the run in fetch_run. Returns (foods, observations)."""
     with engine().begin() as conn:
