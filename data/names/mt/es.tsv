@@ -9193,7 +9193,7 @@ ciqual:25619	Pasta salad, with vegetable and meat/fish, with sauce, prepacked	en
 ciqual:25620	Guacamole, prepacked	guacamole
 ciqual:25621	Hummus, prepacked	hummus
 ciqual:25623	Tart (flamiche), Maroilles cheese, prepacked	tarta de maroilles
-ciqual:25624	Aubergine caviar, prepacked	caviar de berenjena
+ciqual:25624	Aubergine caviar, prepacked	caviar de berenjena en conserva
 ciqual:25625	Crepe or buckwheat crepe, filled with fish and/or seafood, prepacked	crep de pescado y marisco
 ciqual:25626	Mixed diced vegetables salad, with sauce, prepacked	macedonia de verduras con salsa
 ciqual:25628	Caesar's salad (salad, chicken, croûtons, sauce), prepacked	ensalada César con pollo
@@ -16711,7 +16711,7 @@ fdc:170703	School Lunch, pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Pepperoni Pizz
 fdc:170704	School Lunch, pizza, TONY'S Breakfast Pizza Sausage, frozen	pizza de desayuno con salchicha Tony's congelada
 fdc:170705	SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce	bocadillo de pollo teriyaki con cebolla dulce Subway
 fdc:170706	Fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato	bocadillo de pechuga de pavo
-fdc:170707	Fast foods, submarine sandwich, ham on white bread with lettuce and tomato	bocadillo de jamón
+fdc:170707	Fast foods, submarine sandwich, ham on white bread with lettuce and tomato	bocadillo de jamón de fast food
 fdc:170708	SUBWAY, meatball marinara sub on white bread (no toppings)	bocadillo de albóndigas con marinara Subway
 fdc:170709	Fast foods, submarine sandwich, meatball marinara on white bread	bocadillo de albóndigas con marinara
 fdc:170710	Fast foods, hamburger, large, single patty, with condiments	hamburguesa grande con salsas
@@ -33266,8 +33266,8 @@ recipe:haleem	Haleem	haleem
 recipe:haleem.ru	Халим	haleem
 recipe:halva	Halva, sesame	halva de sésamo
 recipe:halva.ru	Халва	halva de sésamo
-recipe:huevos-rellenos	Huevos rellenos (stuffed eggs)	huevos rellenos
-recipe:huevos-rellenos.ru	Фаршированные яйца	huevos rellenos
+recipe:huevos-rellenos	Huevos rellenos (stuffed eggs)	huevos rellenos de atún
+recipe:huevos-rellenos.ru	Фаршированные яйца	huevos rellenos de atún
 recipe:ikra-baklazhan	Eggplant caviar	caviar de berenjena
 recipe:ikra-baklazhan.ru	Баклажанная икра	caviar de berenjena
 recipe:ikra-kabachok	Zucchini caviar	caviar de calabacín
@@ -33304,8 +33304,8 @@ recipe:khoshan	Khoshan	khoshan
 recipe:khoshan.ru	Хошан	khoshan
 recipe:khvorost	Khvorost	khvorost
 recipe:khvorost.ru	Хворост	khvorost
-recipe:kiev-cutlet	Chicken Kiev	pollo Kiev
-recipe:kiev-cutlet.ru	Котлета по-киевски	pollo Kiev
+recipe:kiev-cutlet	Chicken Kiev	pollo a la Kiev
+recipe:kiev-cutlet.ru	Котлета по-киевски	pollo a la Kiev
 recipe:kimchi-jjigae	Kimchi jjigae (kimchi stew)	kimchi jjigae
 recipe:kimchi-jjigae.ru	Кимчи-ччиге	kimchi jjigae
 recipe:kompot	Kompot	kompot
@@ -33332,8 +33332,8 @@ recipe:larb	Larb (minced chicken salad)	larb
 recipe:larb.ru	Ларб	larb
 recipe:lavash	Lavash	lavash
 recipe:lavash.ru	Лаваш	lavash
-recipe:lecho	Lecho	lecho
-recipe:lecho.ru	Лечо	lecho
+recipe:lecho	Lecho	lecsó
+recipe:lecho.ru	Лечо	lecsó
 recipe:lobio	Lobio	lobio
 recipe:lobio.ru	Лобио	lobio
 recipe:lomo-saltado	Lomo saltado	lomo saltado
@@ -33360,8 +33360,8 @@ recipe:manty-kartoshka.ru	Манты с картошкой	manty de patata
 recipe:manty-tykva	Manty, pumpkin filling	manty de calabaza
 recipe:manty-tykva.ru	Манты с тыквой	manty de calabaza
 recipe:manty.ru	Манты	manty
-recipe:mapo-tofu	Mapo tofu	mapo tofu
-recipe:mapo-tofu.ru	Мапо тофу	mapo tofu
+recipe:mapo-tofu	Mapo tofu	mapo tofu de Sichuan
+recipe:mapo-tofu.ru	Мапо тофу	mapo tofu de Sichuan
 recipe:marmitako	Marmitako	marmitako
 recipe:marmitako.ru	Мармитако	marmitako
 recipe:masala-chai	Masala chai	masala chai
@@ -33398,16 +33398,16 @@ recipe:nihari	Nihari	nihari
 recipe:nihari.ru	Нихари	nihari
 recipe:nishalda	Nishalda	nishalda
 recipe:nishalda.ru	Нишалда	nishalda
-recipe:okonomiyaki	Okonomiyaki	okonomiyaki
-recipe:okonomiyaki.ru	Окономияки	okonomiyaki
+recipe:okonomiyaki	Okonomiyaki	okonomiyaki de Osaka
+recipe:okonomiyaki.ru	Окономияки	okonomiyaki de Osaka
 recipe:okroshka	Okroshka on kefir	okroshka
 recipe:okroshka.ru	Окрошка на кефире	okroshka
 recipe:olivier	Olivier salad	ensaladilla rusa
 recipe:olivier.ru	Оливье	ensaladilla rusa
 recipe:onigiri	Onigiri, salmon filling	onigiri de salmón
 recipe:onigiri.ru	Онигири с лососем	onigiri de salmón
-recipe:paella-marisco	Paella de marisco	paella de marisco
-recipe:paella-marisco.ru	Паэлья с морепродуктами	paella de marisco
+recipe:paella-marisco	Paella de marisco	paella marinera
+recipe:paella-marisco.ru	Паэлья с морепродуктами	paella marinera
 recipe:paella-valenciana	Paella valenciana	paella valenciana
 recipe:paella-valenciana.ru	Паэлья валенсиана	paella valenciana
 recipe:paneer-tikka	Paneer tikka	paneer tikka
@@ -33446,8 +33446,8 @@ recipe:pollo-patatas	Pollo con patatas	pollo con patatas
 recipe:pollo-patatas.ru	Курица с картошкой	pollo con patatas
 recipe:polvorones	Polvorones	polvorones
 recipe:polvorones.ru	Польворонес	polvorones
-recipe:pork-roast-dumplings	Pork roast with dumplings	asado de cerdo con dumplings
-recipe:pork-roast-dumplings.ru	Жаркое из свинины с кнедликами	asado de cerdo con dumplings
+recipe:pork-roast-dumplings	Pork roast with dumplings	asado de cerdo con bolitas de masa de pan
+recipe:pork-roast-dumplings.ru	Жаркое из свинины с кнедликами	asado de cerdo con bolitas de masa de pan
 recipe:puff-puff	Puff-puff	puff-puff
 recipe:puff-puff.ru	Паф-паф	puff-puff
 recipe:pure-kotleta	Mashed potato with meat cutlet	puré de patatas con chuleta
@@ -33482,8 +33482,8 @@ recipe:samsa	Samsa	samsa
 recipe:samsa.ru	Самса	samsa
 recipe:sandwich-vegetal	Sándwich vegetal	sándwich vegetal
 recipe:sandwich-vegetal.ru	Овощной сэндвич	sándwich vegetal
-recipe:selyodka-pod-shuboy	Herring under a fur coat	arenque bajo abrigo de pelo
-recipe:selyodka-pod-shuboy.ru	Селёдка под шубой	arenque bajo abrigo de pelo
+recipe:selyodka-pod-shuboy	Herring under a fur coat	ensalada de arenque shuba
+recipe:selyodka-pod-shuboy.ru	Селёдка под шубой	ensalada de arenque shuba
 recipe:shakshuka	Shakshuka	shakshuka
 recipe:shakshuka.ru	Шакшука	shakshuka
 recipe:shashlik	Shashlik, pork	shashlik de cerdo
