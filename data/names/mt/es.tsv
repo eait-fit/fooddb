@@ -30123,10 +30123,157 @@ tfda:O0901601	抹茶粉	matcha en polvo
 tfda:O0901701	可可粉	cacao en polvo
 tfda:O0901801	小麥草粉	hierba de trigo en polvo
 tfda:O9900301	椰奶	leche de coco
+tfda:P0100101	八角	anís estrellado
+tfda:P0100201	小茴香粉	comino molido
+tfda:P0100301	山葵粉	wasabi en polvo
+tfda:P0100401	五香粉	mezcla de cinco especias
+tfda:P0100501	甘草粉	regaliz en polvo
+tfda:P0100601	肉桂粉	canela molida
+tfda:P0100701	西洋芹菜片	apio seco en hojuelas
+tfda:P0100801	花椒粉	pimienta de Sichuan molida
+tfda:P0100901	洋香菜片	perejil seco
+tfda:P0101001	洋蔥粉	cebolla en polvo
+tfda:P0101101	白胡椒粉	pimienta blanca molida
+tfda:P0101201	紅胡椒粒	pimienta rosa en grano
+tfda:P0101301	黑胡椒粉	pimienta negra molida
+tfda:P0101401	綠胡椒粒	pimienta verde en grano
+tfda:P0101501	迷迭香粉	romero molido
+tfda:P0101601	荳蔻粉	nuez moscada molida
+tfda:P0101701	蒜粉	ajo en polvo
+tfda:P0101801	辣椒粉	chile en polvo
+tfda:P0101901	薑黃粉	cúrcuma molida
+tfda:P0102001	薑粉	jengibre en polvo
+tfda:P0102101	羅勒片	albahaca seca
+tfda:P0102201	花椒粒	pimienta de Sichuan en grano
+tfda:P0200101	七味唐辛子	shichimi togarashi
+tfda:P0200201	沙茶粉	polvo shacha
+tfda:P0200301	豆酥	crujiente de soja (dousu)
+tfda:P0200401	咖哩粉	curry en polvo
+tfda:P0200501	咖哩塊	bloque de curry
 tfda:P0200601	油蔥酥	chalotes fritos crujientes
+tfda:P0200701	梅子粉	ciruela agria en polvo
+tfda:P0200801	椰子粉	coco en polvo
+tfda:P0200901	蒜頭酥	ajo frito crujiente
+tfda:P0201001	糖粉	azúcar glas
 tfda:P0201101	椰漿	leche de coco en conserva
+tfda:P0201201	黃耆水	agua de astrágalo
+tfda:P0201301	黃耆片	astrágalo en rodajas
+tfda:P0201401	陳皮	piel de mandarina seca (chenpi)
+tfda:P0201501	山楂	espino
+tfda:P0300101	岩鹽	sal de roca
+tfda:P0300201	低鈉鹽	sal baja en sodio
+tfda:P0400101	味精	glutamato monosódico
+tfda:P0400201	高鮮味精	glutamato monosódico potenciado
+tfda:P0400301	鮮雞精	caldo de pollo en gránulos
+tfda:P0400401	鰹魚粉	bonito en polvo
+tfda:P0500101	高湯塊(排骨)	cubo de caldo de cerdo
+tfda:P0500201	高湯塊(雞肉)	cubo de caldo de pollo
+tfda:P0500301	高湯(豬大骨)	caldo de hueso de cerdo
+tfda:P0500401	低脂高湯	caldo bajo en grasa
+tfda:P0500501	素食高湯	caldo vegetal
+tfda:P0600101	米醋	vinagre de arroz
+tfda:P0600201	糯米醋	vinagre de arroz glutinoso
+tfda:P0600301	高梁醋	vinagre de sorgo
+tfda:P0600401	薏仁醋	vinagre de lágrimas de Job
+tfda:P0600501	紅醋	vinagre rojo
+tfda:P0600601	香醋	vinagre aromático
+tfda:P0600701	烏醋	vinagre negro
+tfda:P0600801	素食烏醋	vinagre negro vegetariano
+tfda:P0600901	壽司醋	vinagre para sushi
+tfda:P0700101	醬油	salsa de soja
+tfda:P0700201	薏仁醬油	salsa de soja con lágrimas de Job
+tfda:P0700301	黑豆醬油	salsa de soja de soja negra
+tfda:P0700401	淡色醬油	salsa de soja clara
+tfda:P0700501	薄鹽醬油(低鈉)	salsa de soja baja en sodio
+tfda:P0700601	薄鹽醬油(低鈉高鉀)	salsa de soja baja en sodio y alta en potasio
+tfda:P0700701	醬油膏	salsa de soja espesa
+tfda:P0700801	黑豆油膏	pasta de soja negra
+tfda:P0700901	薄鹽黑豆醬油膏	pasta de soja negra baja en sodio
+tfda:P0800101	味醂	mirin
+tfda:P0800201	鮮味露	salsa umami
+tfda:P0800301	蠔油	salsa de ostras
+tfda:P0800401	魚露	salsa de pescado
+tfda:P0900101	紅辣椒油	aceite de chile
+tfda:P0900201	香油	aceite de sésamo aromático
+tfda:P0900301	蝦油	salsa de gamba
+tfda:P1000101	干貝醬	salsa de vieira
+tfda:P1000201	牛肉醬	salsa de ternera
+tfda:P1000301	肉燥	salsa de cerdo picado
+tfda:P1000401	素肉燥	salsa de cerdo picado vegetariana
+tfda:P1000501	義式乳酪醬	salsa de queso italiana
+tfda:P1000601	炸醬	salsa zhajiang
+tfda:P1000701	素食炸醬	salsa zhajiang vegetariana
+tfda:P1000801	海苔醬	salsa de alga nori
+tfda:P1000901	麻醬	salsa de sésamo
+tfda:P1001001	速食乾麵麻醬包	salsa de sésamo para fideos instantáneos
+tfda:P1001101	白醬	salsa bechamel
+tfda:P1001201	青醬	salsa pesto
+tfda:P1001301	蕃茄義大利麵醬	salsa de tomate para pasta
+tfda:P1001401	五味醬	salsa de cinco sabores
+tfda:P1001501	牛排醬	salsa para carne
+tfda:P1001601	羊肉爐醬	salsa para hotpot de cordero
+tfda:P1001701	沙茶醬	salsa shacha
+tfda:P1001801	素沙茶醬	salsa shacha vegetariana
+tfda:P1001901	黃芥茉醬	mostaza amarilla
+tfda:P1002001	山葵醬	salsa de wasabi
 tfda:P1002101	金桔醬	mermelada de kumquat
+tfda:P1002201	海鮮醬	salsa hoisin
+tfda:P1002301	烤肉醬	salsa barbacoa
+tfda:P1002401	排骨醬	salsa para costillas
+tfda:P1002501	甜辣醬	salsa agridulce picante
+tfda:P1002601	甜麵醬	pasta dulce de soja (tianmianjiang)
+tfda:P1002701	朝鮮醬	salsa coreana
+tfda:P1002801	黑胡椒醬	salsa de pimienta negra
+tfda:P1002901	日式照燒醬	salsa teriyaki
+tfda:P1003001	蒜蓉醬	salsa de ajo
+tfda:P1003101	辣蒜蓉醬	salsa de ajo picante
+tfda:P1003201	辣椒醬	salsa de chile
+tfda:P1003301	蔥醬	salsa de cebolleta
+tfda:P1003401	糖醋醬	salsa agridulce
+tfda:P1003501	蕃茄醬	ketchup
+tfda:P1003601	薑蓉醬	salsa de jengibre
+tfda:P1003701	蘑菇醬	salsa de champiñones
+tfda:P1003801	米豆醬	salsa de judías de arroz
+tfda:P1003901	蒜味豆豉醬	salsa de judías negras fermentadas al ajo
+tfda:P1004001	豆酥醬	salsa de soja crujiente
+tfda:P1004101	豆瓣醬	salsa doubanjiang
+tfda:P1004201	辣豆瓣醬	salsa doubanjiang picante
+tfda:P1004301	紅麴醬	salsa de arroz rojo fermentado
+tfda:P1004401	韭花醬	salsa de flores de cebollino
 tfda:P1004501	香椿醬	salsa de cedro chino (xiangchun)
+tfda:P1004601	麻婆醬	salsa mapo
+tfda:P1004701	蝦醬	pasta de gamba
+tfda:P1100101	沙拉醬	mayonesa
+tfda:P1100102	沙拉醬(2021年取樣)	mayonesa (2021)
+tfda:P1100201	無蛋沙拉醬	mayonesa sin huevo
+tfda:P1100202	無蛋沙拉醬(2021年取樣)	mayonesa sin huevo (2021)
+tfda:P1100301	千島沙拉醬	salsa mil islas
+tfda:P1100401	和風沙拉醬	salsa japonesa para ensalada
+tfda:P1100501	凱撒沙拉醬	salsa césar
+tfda:P1200101	味噌	miso
+tfda:P1300101	法式奶酥醬	salsa de mantequilla francesa
+tfda:P1300201	巧克力醬(液體)	salsa de chocolate líquida
+tfda:P1300301	草莓果醬	mermelada de fresa
+tfda:P1300401	葡萄果醬	mermelada de uva
+tfda:P1300501	柚子果醬	mermelada de pomelo
+tfda:P1300601	桑葚果醬	mermelada de mora
+tfda:P1300701	白芝麻麵包醬	crema de sésamo blanco
+tfda:P1300801	黑芝麻麵包醬	crema de sésamo negro
+tfda:P1300901	花生醬	crema de cacahuete
+tfda:P1301001	洋蔥麵包醬	crema de cebolla para pan
+tfda:P1301101	法式香蒜醬	crema de ajo francesa
+tfda:P1301201	無糖黑芝麻醬	crema de sésamo negro sin azúcar
+tfda:P1400101	液體奶精	crema no láctea líquida
+tfda:P1400102	液體奶精(2021年)	crema no láctea líquida (2021)
+tfda:P1400201	奶精粉	crema no láctea en polvo
+tfda:P1400202	奶精粉(2021年)	crema no láctea en polvo (2021)
+tfda:P1400301	奶精粉(低脂)	crema no láctea en polvo baja en grasa
+tfda:P1500101	炸排粉	mezcla de rebozado para filetes
+tfda:P1500201	炸雞粉	mezcla de rebozado para pollo frito
+tfda:P1500301	蒸肉粉(五香)	mezcla de rebozado para carne al vapor (cinco especias)
+tfda:P1500401	熱狗粉	mezcla para perritos
+tfda:P1500501	麵包粉	pan rallado
+tfda:P1500601	酵母粉	levadura en polvo
 tfda:R3000201	冷凍春捲	rollitos de primavera congelados
 tfda:R5100801	培根	beicon cocido
 tfda:R6100401	冷凍旗魚丸	albóndigas de pez espada congeladas
