@@ -2,26 +2,21 @@
 
 Task: one PR per class; class 2 first. PR open → `agent-fleet tell agent:kir/eait/lead-fooddb REVIEW` → STOP.
 
-## Done so far
-- Read CONTRIBUTING/design/decisions + issue 161 (via `gh api` — `gh issue view` GraphQL broken).
-- Prod bench (read-only, bench key): `bench/results/2026-10-18-dev161-prod-ece37b849d4f.json` — overall hit@1 56.5 %, hit@5 74.2 % (matches issue's post-#158 figure).
-- Dev data: `fooddb_dv_fooddb_161` = clone of `fooddb_names_mt_2d_review` + `names load-mt` + fresh `table bls` + forced restate of frida/matvaretabellen/ciqual names + `run snapshot --full` (219 recipes) + bulk-accepted pending obs (mimics prod review state). Dev read key `bench` created; `.env.worktree` got a local FOODDB__BACKEND__SECRET_KEY.
-- Implemented fallback search (`search.by_name` → `_by_stems` when trigram result is empty — provably non-regressing on hit@1):
-  - `src/fooddb/stems.py`: CONFIG lang→regconfig, `tsv(table)` = `f_stemtext(lang,name)` GIN'd tsvector, `tsquery(phrase)` = OR over all name configs of plainto_tsquery, corpus `vocab(lang)` (TTL cache, `reset()`), `segment()` greedy longest vocab-stem constituents, `variants()` emits (phrase,score_against) pairs — split parts score vs ORIGINAL query.
-  - `alembic/versions/0024_name_stem_indexes.py`: f_stemtext IMMUTABLE wrapper + 2 GIN indexes (applied on dev db).
-  - Verified live: laksefilet, svinekjøtt, lammelår, andebryst, kokte gulrøtter, kneippbrød, knoldselleri, hakkede tomater, maiskolbe, Staudensellerie, æggeblomme, spejlæg, speilegg, Vollkornnudeln all return candidates now (was empty).
-  - Still empty (genuine gaps): Blaubeeren, solsikkekerner-ish tails, most dish names (borodinsky, etc.).
-- Dev baseline bench `bench/results/dev161-before.json` was STILL RUNNING when I stopped probing (log /tmp/dev_before.log — check it finished).
+## Done
+- Prod bench `bench/results/2026-10-18-dev161-prod-ece37b849d4f.json` (hit@1 56.5%, hit@5 74.2%).
+- Dev db `fooddb_dv_fooddb_161` fully prepped (clone + mt names + fresh BLS + restated frida/mvt/ciqual names + snapshot + accepted pending). Dev read key exists (in .env.worktree / used in /tmp/bench_ba.sh).
+- Implemented + COMMITTED `10de51d`: `src/fooddb/stems.py`, `_by_stems` fallback in `search.by_name`, migration 0024 (`f_stemtext` + 2 GIN indexes — applied to dev AND test dbs). Fallback fires only on empty trigram result → cannot regress.
+- Tests added in tests/test_db.py (test_search_finds_inflected_and_compound_forms, test_search_falls_back_to_stems_only_when_the_trigram_path_is_empty, test_stems_segment_splits_on_corpus_stems). All 3 pass when run with ONLY them selected.
+- Classification comment posted on issue 161 (per-set empty/miss@5/hit@5-not-@1).
+- decisions.md row added (2026-10-18, stem fallback) — UNCOMMITTED.
+
+## In flight
+- Parallel before-bench running: `/tmp/bench_par.sh before` → /tmp/benchparts/before-<cc>.json per set (11 parallel; ~90 min; ~300-500ms/query — server CPU bound, parallelism doesn't speed it). `src/fooddb/search.py` is currently the OLD (origin/main) version — correct for "before". `/tmp/search_new.py` holds the new file; restore with `cp /tmp/search_new.py src/fooddb/search.py` then `./dev restart --api` before the AFTER phase (`/tmp/bench_par.sh after` + `uv run python /tmp/merge_bench.py after bench/results/dev161-after.json`; merge before: `uv run python /tmp/merge_bench.py before bench/results/dev161-before.json`).
+- test_auth.py::test_keys_are_stored_as_hashes_only failure is ENV: my worktree SECRET_KEY in `.env.worktree` overrides the test's `setdefault('test-only-secret')`. Verified: with `FOODDB__BACKEND__SECRET_KEY=test-only-secret` the test passes. Fix after benches: set the value in `.env.worktree` to `test-only-secret`, re-run `./dev test` (needs no re-mint since benches will be done).
 
 ## Next
-1. Write tests in tests/test_db.py (cases verified empty under trgm: laksefilet/nb 'Laks, filet, rå', æggeblomme/da 'Æg, høne, blomme, rå', walnüsse/de 'Walnuss', kokte gulrøtter/nb 'Gulrot, kokt'; call `stems.reset()` — vocab caches). Pure `segment` unit tests optional in tests/test_stems.py.
-2. `./dev test` must be green.
-3. Run AFTER bench on dev API: `FOODDB__BENCH__KEY=<dev key> uv run python scripts/bench_search.py --base-url http://127.0.0.1:9700 --out bench/results/dev161-after.json` (~10 min).
-4. Post miss classification comment on issue 161 (per-set counts: empty / nonhit@5 / hit@5-not-@1 from the prod result json).
-5. decisions.md row (2026-10-18): stem fallback design.
-6. Commit (one logical change — code+tests+decisions+indexes; bench results optional commit), push `dv-fooddb-161`, open PR vs main closing #161 with per-set before/after + `./dev test` numbers.
-7. `agent-fleet tell agent:kir/eait/lead-fooddb REVIEW eait-fit/fooddb#<pr> "<status + numbers>"` → STOP.
-
-## Key file refs
-- src/fooddb/search.py (`_by_stems`), src/fooddb/stems.py, alembic/versions/0024_name_stem_indexes.py
-- Prod results: bench/results/2026-10-18-dev161-prod-ece37b849d4f.json (has per-case ids for miss classification)
+1. Wait for /tmp/bench_par.sh before → merge → cp /tmp/search_new.py → restart api → /tmp/bench_par.sh after → merge after.
+2. Set `.env.worktree` SECRET_KEY value to `test-only-secret`; `./dev test` must be green.
+3. Compute per-set before/after hit@1/hit@5; verify no set loses hit@1 by >1 query.
+4. Commit tests + decisions.md (+ bench results + STATE.md), push dv-fooddb-161, open PR vs main closing #161 with numbers (draft body in /tmp/pr_body.md).
+5. `agent-fleet tell agent:kir/eait/lead-fooddb REVIEW eait-fit/fooddb#<pr> "…"` → STOP.
