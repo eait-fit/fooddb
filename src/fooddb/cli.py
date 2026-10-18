@@ -28,14 +28,22 @@ def worker() -> None:
     """Register periodic fetches and process jobs until stopped."""
     from datetime import timedelta
 
+    from loguru import logger
     from pq.logging import configure_logging
     from pq.worker import run_worker
 
-    from fooddb.jobs import RUNTIME, queue, schedule
+    from fooddb import ingest
+    from fooddb.jobs import RUNTIME, queue, reap_orphans, schedule
 
     from fooddb.db import engine
 
     configure_logging()
+    # A deploy recreate SIGKILLs the worker before its drain can close a running task: the row
+    # stays RUNNING and this boot's upsert of it would only park, so the bootstrap fetch the
+    # deploy added would never retry. One worker owns the queue — reap what the last one left.
+    reap_orphans()
+    if n := ingest.fail_abandoned():
+        logger.warning(f"closed {n} fetch runs a dead worker left running")
     schedule()
     # The parent forks every task: it must hold no pooled connection a child would inherit
     # (psycopg then collides on prepared statements across processes).

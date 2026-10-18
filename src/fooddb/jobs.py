@@ -1,10 +1,12 @@
 """Async jobs on pq (Postgres-backed queue, same database). Each task runs in a forked child."""
 
-from datetime import timedelta
+from datetime import UTC, datetime, timedelta
 from functools import cache
 
 from loguru import logger
 from pq import PQ, Priority
+from pq.models import Task, TaskStatus
+from sqlalchemy import select
 
 from fooddb import health, requestlog
 from fooddb.db import database_url
@@ -122,6 +124,29 @@ def _rematch(fetcher: str) -> None:
     queue().upsert(match_products, client_id="match-products")
     if snapshot.predates(fetcher):
         queue().upsert(build_snapshot, client_id="bootstrap-snapshot", priority=Priority.BATCH)
+
+
+def reap_orphans() -> int:
+    """This one worker owns the queue: a task still RUNNING at boot was claimed by a worker that
+    died before it could close the row — a deploy recreate SIGKILLs the old worker mid-drain, so
+    the row outlives its run. A row an upsert parked a new version on is re-queued with it, the
+    rest are failed. Runs before schedule(): once the rows are closed, this boot's upserts land
+    as plain re-queues instead of parking on a dead run, so a bootstrap fetch killed by the
+    deploy that added it runs again."""
+    with queue().session() as session:
+        orphans = list(session.execute(
+            select(Task).where(Task.status == TaskStatus.RUNNING).with_for_update()
+        ).scalars())
+        for task in orphans:
+            logger.warning(f"reaped orphaned task '{task.name}' (id={task.id}, started_at={task.started_at})"
+                           + (": re-queued with the parked upsert" if task.requeue is not None else ": marked failed"))
+            if task.requeue is not None:
+                task.apply_requeue()
+            else:
+                task.status = TaskStatus.FAILED
+                task.completed_at = datetime.now(UTC)
+                task.error = "orphaned: the worker that claimed it ended without closing the task"
+    return len(orphans)
 
 
 def schedule() -> None:
