@@ -31866,26 +31866,1274 @@ mext:10087	かつお 秋獲り 生	listado de otoño crudo
 mext:10088	そうだがつお 生	melva cruda
 mext:10089	加工品 なまり	namari
 mext:10090	加工品 なまり節	namari-bushi
+mext:10091	加工品 かつお節	bonito seco (katsuobushi)
+mext:10092	加工品 削り節	virutas de bonito seco
+mext:10093	加工品 削り節つくだ煮	tsukudani de virutas de bonito
+mext:10094	加工品 角煮	kakuni de bonito
+mext:10095	加工品 塩辛	shiokara de bonito
+mext:10096	缶詰 味付け フレーク	bonito en conserva sazonado en escamas
+mext:10097	缶詰 油漬 フレーク	bonito en conserva en aceite en escamas
+mext:10098	かます 生	barracuda cruda
+mext:10099	かます 焼き	barracuda a la parrilla
+mext:10100	まがれい 生	platija magarei cruda
+mext:10101	まがれい 水煮	platija magarei cocida
+mext:10102	まがれい 焼き	platija magarei a la parrilla
+mext:10103	まこがれい 生	platija cruda
+mext:10104	子持ちがれい 生	platija con huevas cruda
+mext:10105	子持ちがれい 水煮	platija con huevas cocida
+mext:10106	干しかれい	platija seca
+mext:10107	かわはぎ 生	lija cruda
+mext:10108	かんぱち 三枚おろし 生	serviola en filetes cruda
+mext:10109	きす 生	sillago crudo
+mext:10110	きちじ 生	kichiji crudo
+mext:10111	きびなご 生	sardinita cruda
+mext:10112	きびなご 調味干し	sardinita seca sazonada
+mext:10113	キャビア 塩蔵品	caviar salado
+mext:10114	キングクリップ 生	kingklip crudo
+mext:10115	ぎんだら 生	bacalao negro crudo
+mext:10116	きんめだい 生	alfonsino crudo
+mext:10117	ぐち 生	corvina japonesa cruda
+mext:10118	ぐち 焼き	corvina japonesa a la parrilla
+mext:10119	こい 養殖 生	carpa de piscifactoría cruda
+mext:10120	こい 養殖 水煮	carpa de piscifactoría cocida
+mext:10121	こい 養殖 内臓 生	vísceras de carpa de piscifactoría crudas
+mext:10122	まごち 生	pez chato crudo
+mext:10123	めごち 生	pez chato pequeño crudo
+mext:10124	このしろ 生	sábalo japonés crudo
+mext:10125	このしろ 甘酢漬	sábalo japonés encurtido agridulce
+mext:10126	からふとます 生	salmón masu crudo
+mext:10127	からふとます 焼き	salmón masu a la parrilla
+mext:10128	からふとます 塩ます	salmón masu salado
+mext:10129	からふとます 水煮缶詰	salmón masu en conserva en agua
+mext:10130	ぎんざけ 養殖 生	salmón coho de piscifactoría crudo
+mext:10131	ぎんざけ 養殖 焼き	salmón coho de piscifactoría a la parrilla
+mext:10132	さくらます 生	salmón masu de mar crudo
+mext:10133	さくらます 焼き	salmón masu de mar a la parrilla
+mext:10134	しろさけ 生	salmón keta crudo
+mext:10135	しろさけ 水煮	salmón keta cocido
+mext:10136	しろさけ 焼き	salmón keta a la parrilla
+mext:10137	しろさけ 新巻き 生	salmón keta ligeramente salado (aramaki) crudo
+mext:10138	しろさけ 新巻き 焼き	salmón keta ligeramente salado (aramaki) a la parrilla
 mext:10139	しろさけ 塩ざけ	salmón salado
+mext:10140	しろさけ イクラ	huevas de salmón keta saladas
+mext:10141	しろさけ すじこ	huevas de salmón keta en membrana (sujiko)
+mext:10142	しろさけ めふん	mefun de salmón keta
+mext:10143	しろさけ 水煮缶詰	salmón keta en conserva en agua
+mext:10144	たいせいようさけ 養殖 皮つき 生	salmón atlántico de piscifactoría con piel crudo
+mext:10145	たいせいようさけ 養殖 皮つき 焼き	salmón atlántico de piscifactoría con piel a la parrilla
+mext:10146	にじます 海面養殖 皮つき 生	trucha arcoíris de piscifactoría marina con piel cruda
+mext:10147	にじます 海面養殖 皮つき 焼き	trucha arcoíris de piscifactoría marina con piel a la parrilla
+mext:10148	にじます 淡水養殖 皮つき 生	trucha arcoíris de piscifactoría de agua dulce con piel cruda
+mext:10149	べにざけ 生	salmón rojo crudo
+mext:10150	べにざけ 焼き	salmón rojo a la parrilla
+mext:10151	べにざけ くん製	salmón rojo ahumado
+mext:10152	ますのすけ 生	salmón real crudo
+mext:10153	ますのすけ 焼き	salmón real a la parrilla
+mext:10154	まさば 生	caballa cruda
+mext:10155	まさば 水煮	caballa cocida
+mext:10156	まさば 焼き	caballa a la parrilla
+mext:10157	ごまさば さば節	virutas de caballa seca
+mext:10158	たいせいようさば 生	caballa atlántica cruda
+mext:10159	たいせいようさば 水煮	caballa atlántica cocida
+mext:10160	たいせいようさば 焼き	caballa atlántica a la parrilla
+mext:10161	加工品 塩さば	caballa salada
+mext:10162	加工品 開き干し	caballa seca abierta
+mext:10163	加工品 しめさば	caballa en escabeche (shime saba)
+mext:10164	缶詰 水煮	caballa en conserva en agua
+mext:10165	缶詰 みそ煮	caballa en conserva en miso
+mext:10166	缶詰 味付け	caballa en conserva sazonada
+mext:10167	あぶらつのざめ 生	tiburón aburatsunozame crudo
+mext:10168	よしきりざめ 生	tiburón azul crudo
+mext:10169	ふかひれ	aleta de tiburón seca
+mext:10170	さより 生	agujeta cruda
+mext:10171	さわら 生	sierra cruda
+mext:10172	さわら 焼き	sierra a la parrilla
+mext:10173	さんま 皮つき 生	paparda con piel cruda
+mext:10174	さんま 皮つき 焼き	paparda con piel a la parrilla
+mext:10175	さんま 開き干し	paparda seca abierta
+mext:10176	さんま みりん干し	paparda seca con mirin
+mext:10177	さんま 缶詰 味付け	paparda en conserva sazonada
+mext:10178	さんま 缶詰 かば焼	paparda en conserva kabayaki
+mext:10179	しいら 生	lampuga cruda
+mext:10180	ししゃも 生干し 生	shishamo semiseco crudo
+mext:10181	ししゃも 生干し 焼き	shishamo semiseco a la parrilla
+mext:10182	からふとししゃも 生干し 生	capelán semiseco crudo
+mext:10183	からふとししゃも 生干し 焼き	capelán semiseco a la parrilla
+mext:10184	したびらめ 生	platija viscosa cruda
+mext:10185	しまあじ 養殖 生	jurel blanco de piscifactoría crudo
+mext:10186	しらうお 生	pez hielo crudo
+mext:10187	シルバー 生	trucha steelhead cruda
+mext:10188	すずき 生	lubina cruda
+mext:10189	きだい 生	pargo japonés crudo
+mext:10190	くろだい 生	sargo crudo
+mext:10191	ちだい 生	dentón chidai crudo
+mext:10192	まだい 天然 生	pargo salvaje crudo
+mext:10193	まだい 養殖 皮つき 生	pargo de piscifactoría con piel crudo
+mext:10194	まだい 養殖 皮つき 水煮	pargo de piscifactoría con piel cocido
+mext:10195	まだい 養殖 皮つき 焼き	pargo de piscifactoría con piel a la parrilla
+mext:10196	たかさご 生	fusilero crudo
+mext:10197	たかべ 生	takabe crudo
 mext:10198	たちうお 生	pez sable crudo
+mext:10199	すけとうだら 生	abadejo crudo
+mext:10200	すけとうだら すり身	surimi de abadejo
+mext:10201	すけとうだら すきみだら	abadejo sukimi
+mext:10202	すけとうだら たらこ 生	huevas de abadejo crudas
+mext:10203	すけとうだら たらこ 焼き	huevas de abadejo a la parrilla
+mext:10204	すけとうだら からしめんたいこ	huevas de abadejo picantes (mentaiko)
+mext:10205	まだら 生	bacalao fresco crudo
+mext:10206	まだら 焼き	bacalao fresco a la parrilla
+mext:10207	まだら しらこ 生	lechas de bacalao crudas
+mext:10208	まだら 塩だら	bacalao salado
+mext:10209	まだら 干しだら	bacalao seco sin sal
+mext:10210	加工品 でんぶ	denbu
+mext:10211	ちか 生	pejerrey japonés crudo
+mext:10212	ナイルティラピア 生	tilapia del Nilo cruda
+mext:10213	どじょう 生	locha cruda
+mext:10214	どじょう 水煮	locha cocida
+mext:10215	とびうお 生	pez volador crudo
+mext:10216	なまず 生	siluro crudo
+mext:10217	にぎす 生	nigisu crudo
+mext:10218	にしん 生	arenque crudo
+mext:10219	にしん 身欠きにしん	arenque seco eviscerado
+mext:10220	にしん 開き干し	arenque seco abierto
+mext:10221	にしん くん製	arenque ahumado
 mext:10222	にしん かずのこ 生	huevas de arenque crudas
+mext:10223	にしん かずのこ 乾	huevas de arenque secas
+mext:10224	にしん かずのこ 塩蔵 水戻し	huevas de arenque saladas remojadas
+mext:10225	はぜ 生	gobio crudo
+mext:10226	はぜ つくだ煮	tsukudani de gobios
+mext:10227	はぜ 甘露煮	kanroni de gobios
+mext:10228	はたはた 生	hatahata cruda
+mext:10229	はたはた 生干し	hatahata semiseca
+mext:10230	はまふえふき 生	emperador moteado crudo
+mext:10231	はも 生	anguila congrio (hamo) cruda
+mext:10232	みなみくろたち 生	minami kurotachi crudo
+mext:10233	ひらまさ 生	serviola hiramasa cruda
+mext:10234	ひらめ 天然 生	platija salvaje cruda
+mext:10235	ひらめ 養殖 皮つき 生	platija de piscifactoría con piel cruda
+mext:10236	とらふぐ 養殖 生	pez globo fugu de piscifactoría crudo
+mext:10237	まふぐ 生	pez globo crudo
+mext:10238	ふな 生	carpín crudo
+mext:10239	ふな 水煮	carpín cocido
+mext:10240	ふな 甘露煮	carpín kanroni
+mext:10241	ぶり 成魚 生	serviola adulta cruda
+mext:10242	ぶり 成魚 焼き	serviola adulta a la parrilla
+mext:10243	ぶり はまち 養殖 皮つき 生	serviola hamachi de piscifactoría con piel cruda
+mext:10244	ほうぼう 生	escacho crudo
+mext:10245	ホキ 生	hoki crudo
+mext:10246	ほっけ 生	hokke crudo
+mext:10247	ほっけ 塩ほっけ	hokke salado
+mext:10248	ほっけ 開き干し 生	hokke seco abierto crudo
+mext:10249	ぼら 生	mújol crudo
+mext:10250	ぼら からすみ	karasumi
+mext:10251	ほんもろこ 生	honmoroko crudo
+mext:10252	きはだ 生	atún de aleta amarilla crudo
+mext:10253	くろまぐろ 天然 赤身 生	atún de aleta azul salvaje parte magra (akami) crudo
+mext:10254	くろまぐろ 天然 脂身 生	atún de aleta azul salvaje parte grasa (toro) crudo
+mext:10255	びんなが 生	atún blanco crudo
+mext:10256	みなみまぐろ 赤身 生	atún del sur parte magra (akami) crudo
+mext:10257	みなみまぐろ 脂身 生	atún del sur parte grasa (toro) crudo
+mext:10258	めじまぐろ 生	atún joven crudo
+mext:10260	缶詰 水煮 フレーク ライト	atún claro en conserva en agua en escamas
+mext:10261	缶詰 水煮 フレーク ホワイト	atún blanco en conserva en agua en escamas
+mext:10262	缶詰 味付け フレーク	atún en conserva sazonado en escamas
+mext:10263	缶詰 油漬 フレーク ライト	atún claro en conserva en aceite en escamas
 mext:10264	缶詰 油漬 フレーク ホワイト	bonito del norte en aceite
+mext:10265	マジェランあいなめ 生	róbalo de Magallanes crudo
+mext:10266	まながつお 生	palometa japonesa cruda
+mext:10267	みなみだら 生	bacalao de profundidad crudo
+mext:10268	むつ 生	mutsu crudo
+mext:10269	むつ 水煮	mutsu cocido
+mext:10270	めじな 生	chopa cruda
+mext:10271	めばる 生	mebaru crudo
+mext:10272	メルルーサ 生	merluza cruda
+mext:10273	やつめうなぎ 生	lamprea cruda
+mext:10274	やつめうなぎ 干しやつめ	lamprea seca
+mext:10275	やまめ 養殖 生	trucha yamame de piscifactoría cruda
+mext:10276	わかさぎ 生	wakasagi crudo
+mext:10277	わかさぎ つくだ煮	tsukudani de wakasagi
+mext:10278	わかさぎ あめ煮	wakasagi estofado dulce
+mext:10279	あかがい 生	berberecho rojo crudo
+mext:10280	あげまき 生	navaja agemaki cruda
+mext:10281	あさり 生	almeja japonesa cruda
+mext:10282	あさり つくだ煮	tsukudani de almeja japonesa
+mext:10283	あさり 缶詰 水煮	almejas japonesas en conserva en agua
+mext:10284	あさり 缶詰 味付け	almejas japonesas en conserva sazonadas
+mext:10286	あわび 干し	abalone seco
+mext:10287	あわび 塩辛	shiokara de abalone
+mext:10288	あわび 水煮缶詰	abalone en conserva en agua
+mext:10289	いがい 生	mejillón crudo
+mext:10290	いたやがい 養殖 生	naco de piscifactoría crudo
+mext:10291	エスカルゴ 水煮缶詰	caracoles en conserva en agua
+mext:10292	かき 養殖 生	ostra de piscifactoría cruda
+mext:10293	かき 養殖 水煮	ostra de piscifactoría cocida
+mext:10294	かき くん製油漬缶詰	ostras ahumadas en conserva en aceite
+mext:10295	さざえ 生	caracol turbante crudo
+mext:10296	さざえ 焼き	caracol turbante a la parrilla
+mext:10297	しじみ 生	almeja de agua dulce cruda
+mext:10298	たいらがい 貝柱 生	músculo aductor de naco crudo
+mext:10299	たにし 生	caracol de río crudo
+mext:10300	つぶ 生	buccino crudo
+mext:10301	とこぶし 生	tokobushi crudo
+mext:10303	とりがい 斧足 生	pie de torigai crudo
+mext:10304	ばい 生	caracol bai crudo
+mext:10305	ばかがい 生	mactra cruda
+mext:10306	はまぐり 生	almeja hamaguri cruda
+mext:10307	はまぐり 水煮	almeja hamaguri cocida
+mext:10308	はまぐり 焼き	almeja hamaguri a la parrilla
+mext:10309	はまぐり つくだ煮	tsukudani de almeja hamaguri
+mext:10310	ちょうせんはまぐり 生	almeja coreana cruda
+mext:10311	ほたてがい 生	vieira cruda
+mext:10312	ほたてがい 水煮	vieira cocida
+mext:10313	ほたてがい 貝柱 生	músculo aductor de vieira crudo
+mext:10314	ほたてがい 貝柱 煮干し	músculo aductor de vieira seco cocido
+mext:10315	ほたてがい 貝柱 水煮缶詰	músculo aductor de vieira en conserva en agua
+mext:10316	ほっきがい 生	almeja hokkigai cruda
+mext:10317	みるがい 水管 生	sifón de almeja real crudo
+mext:10318	さるぼう 味付け缶詰	almeja púrpura en conserva sazonada
+mext:10319	あまえび 生	gamba boreal cruda
+mext:10320	いせえび 生	langosta cruda
+mext:10321	くるまえび 養殖 生	gamba kuruma de piscifactoría cruda
+mext:10322	くるまえび 養殖 ゆで	gamba kuruma de piscifactoría cocida
+mext:10323	くるまえび 養殖 焼き	gamba kuruma de piscifactoría a la parrilla
+mext:10324	さくらえび ゆで	gamba sakura cocida
+mext:10325	さくらえび 素干し	gamba sakura secada
+mext:10326	さくらえび 煮干し	gamba sakura seca cocida
+mext:10327	大正えび 生	gamba taisho cruda
+mext:10328	しばえび 生	gamba shiba cruda
+mext:10329	ブラックタイガー 養殖 生	gamba tigre de piscifactoría cruda
 mext:10330	加工品 干しえび	camarones secos
+mext:10331	加工品 つくだ煮	tsukudani de gambas
+mext:10332	がざみ 生	cangrejo gazami crudo
+mext:10333	毛がに 生	cangrejo de pelo crudo
+mext:10334	毛がに ゆで	cangrejo de pelo cocido
+mext:10335	ずわいがに 生	cangrejo de las nieves crudo
+mext:10336	ずわいがに ゆで	cangrejo de las nieves cocido
+mext:10337	ずわいがに 水煮缶詰	cangrejo de las nieves en conserva en agua
+mext:10338	たらばがに 生	cangrejo real crudo
+mext:10339	たらばがに ゆで	cangrejo real cocido
+mext:10340	たらばがに 水煮缶詰	cangrejo real en conserva en agua
+mext:10341	加工品 がん漬	cangrejo encurtido en miso (kanzuke)
+mext:10342	あかいか 生	calamar rojo crudo
+mext:10343	けんさきいか 生	calamar kensaki crudo
+mext:10344	こういか 生	sepia cruda
+mext:10345	するめいか 生	calamar crudo
+mext:10346	するめいか 水煮	calamar cocido
+mext:10347	するめいか 焼き	calamar a la parrilla
+mext:10348	ほたるいか 生	calamar luciérnaga crudo
+mext:10349	ほたるいか ゆで	calamar luciérnaga cocido
+mext:10350	ほたるいか くん製	calamar luciérnaga ahumado
 mext:10351	ほたるいか つくだ煮	calamar luciérnaga tsukudani
+mext:10352	やりいか 生	calamar yari crudo
+mext:10353	加工品 するめ	calamar seco (surume)
+mext:10354	加工品 さきいか	calamar seco en tiras (sakiika)
+mext:10355	加工品 くん製	calamar ahumado
+mext:10356	加工品 切りいかあめ煮	calamar en tiras estofado dulce
+mext:10357	加工品 いかあられ	snack de calamar seco (ika-arare)
+mext:10358	加工品 塩辛	shiokara de calamar
+mext:10359	加工品 味付け缶詰	calamar en conserva sazonado
+mext:10360	いいだこ 生	pulpo pequeño crudo
+mext:10361	まだこ 皮つき 生	pulpo con piel crudo
+mext:10362	まだこ ゆで	pulpo cocido
+mext:10363	あみ つくだ煮	tsukudani de gamba ami
+mext:10364	あみ 塩辛	shiokara de gamba ami
+mext:10365	うに 生うに	erizo de mar crudo
+mext:10366	うに 粒うに	erizo de mar en grano
+mext:10367	うに 練りうに	pasta de erizo de mar (neri-uni)
+mext:10368	おきあみ 生	krill crudo
+mext:10369	おきあみ ゆで	krill cocido
+mext:10370	くらげ 塩蔵 塩抜き	medusa salada desalada
+mext:10371	しゃこ ゆで	galera cocida
+mext:10372	なまこ 生	pepino de mar crudo
+mext:10373	なまこ このわた	konowata
+mext:10374	ほや 生	ascidia cruda
+mext:10375	ほや 塩辛	shiokara de ascidia
+mext:10376	かに風味かまぼこ	palitos de cangrejo
+mext:10377	昆布巻きかまぼこ	kamaboko en kombu
+mext:10378	す巻きかまぼこ	kamaboko su-maki
+mext:10379	蒸しかまぼこ	kamaboko al vapor
+mext:10380	焼き抜きかまぼこ	kamaboko asado
+mext:10381	焼き竹輪	chikuwa a la parrilla
+mext:10382	だて巻	datemaki
+mext:10383	つみれ	tsumire (albóndigas de pescado)
+mext:10384	なると	narutomaki
+mext:10385	はんぺん	hanpen
+mext:10386	さつま揚げ	satsuma-age
+mext:10387	魚肉ハム	fiambre de pescado
+mext:10388	魚肉ソーセージ	salchichas de pescado
+mext:10389	まあじ 皮なし 生	jurel sin piel crudo
+mext:10390	まあじ 皮つき フライ	jurel con piel frito
+mext:10391	まあじ 小型 骨付き 生	jurel pequeño con espinas crudo
+mext:10392	まあじ 小型 骨付き から揚げ	jurel pequeño con espinas karaage
+mext:10393	まるあじ 生	jurel redondo crudo
+mext:10394	まるあじ 焼き	jurel redondo a la parrilla
+mext:10395	まいわし フライ	sardina frita
+mext:10396	しらす 生	shirasu (crías de sardina) crudo
+mext:10397	缶詰 アンチョビ	anchoas en conserva
+mext:10398	めかじき 焼き	pez espada a la parrilla
 mext:10399	まこがれい 焼き	platija asada
+mext:10400	きす 天ぷら	sillago en tempura
+mext:10401	ぎんだら 水煮	bacalao negro cocido
+mext:10402	にじます 海面養殖 皮なし 生	trucha arcoíris de piscifactoría marina sin piel cruda
+mext:10403	まさば フライ	caballa frita
+mext:10404	ごまさば 生	caballa australiana cruda
+mext:10405	ごまさば 水煮	caballa australiana cocida
+mext:10406	ごまさば 焼き	caballa australiana a la parrilla
+mext:10407	さんま 皮なし 生	paparda sin piel cruda
+mext:10408	まだい 養殖 皮なし 生	pargo de piscifactoría sin piel crudo
+mext:10409	すけとうだら フライ	abadejo frito
+mext:10410	ひらめ 養殖 皮なし 生	platija de piscifactoría sin piel cruda
+mext:10411	ぶり はまち 養殖 皮なし 生	serviola hamachi de piscifactoría sin piel cruda
+mext:10412	ほっけ 開き干し 焼き	hokke seco abierto a la parrilla
+mext:10413	しじみ 水煮	almeja de agua dulce cocida
+mext:10414	ほたてがい 貝柱 焼き	músculo aductor de vieira a la parrilla
+mext:10415	バナメイえび 養殖 生	gamba vannamei de piscifactoría cruda
+mext:10416	バナメイえび 養殖 天ぷら	gamba vannamei de piscifactoría en tempura
+mext:10417	するめいか 胴 皮つき 生	calamar cuerpo con piel crudo
+mext:10418	するめいか 胴 皮なし 生	calamar cuerpo sin piel crudo
+mext:10419	するめいか 胴 皮なし 天ぷら	calamar cuerpo sin piel en tempura
+mext:10420	するめいか 耳・足 生	aletas y tentáculos de calamar crudos
 mext:10421	とびうお 煮干し	pez volador seco
+mext:10422	とびうお 焼き干し	pez volador seco asado
+mext:10423	黒はんぺん	hanpen negro
+mext:10424	かんぱち 背側 生	serviola parte del lomo cruda
+mext:10425	めばち 赤身 生	patudo parte magra (akami) crudo
+mext:10426	めばち 脂身 生	patudo parte grasa (toro) crudo
+mext:10427	あわび くろあわび 生	abalone negro crudo
+mext:10428	あわび まだかあわび 生	abalone gigante (madaka) crudo
+mext:10429	あわび めがいあわび 生	abalone megai crudo
+mext:10430	かき 養殖 フライ	ostra de piscifactoría frita
+mext:10431	さくらえび 生	gamba sakura cruda
+mext:10432	みずだこ 生	pulpo gigante crudo
+mext:10433	たいせいようさけ 養殖 皮つき 水煮	salmón atlántico de piscifactoría con piel cocido
+mext:10434	たいせいようさけ 養殖 皮つき 蒸し	salmón atlántico de piscifactoría con piel al vapor
+mext:10435	たいせいようさけ 養殖 皮つき 電子レンジ調理	salmón atlántico de piscifactoría con piel al microondas
+mext:10436	たいせいようさけ 養殖 皮つき ソテー	salmón atlántico de piscifactoría con piel salteado
+mext:10437	たいせいようさけ 養殖 皮つき 天ぷら	salmón atlántico de piscifactoría con piel en tempura
+mext:10438	たいせいようさけ 養殖 皮なし 生	salmón atlántico de piscifactoría sin piel crudo
+mext:10439	たいせいようさけ 養殖 皮なし 水煮	salmón atlántico de piscifactoría sin piel cocido
+mext:10440	たいせいようさけ 養殖 皮なし 蒸し	salmón atlántico de piscifactoría sin piel al vapor
+mext:10441	たいせいようさけ 養殖 皮なし 電子レンジ調理	salmón atlántico de piscifactoría sin piel al microondas
+mext:10442	たいせいようさけ 養殖 皮なし 焼き	salmón atlántico de piscifactoría sin piel a la parrilla
+mext:10443	たいせいようさけ 養殖 皮なし ソテー	salmón atlántico de piscifactoría sin piel salteado
+mext:10444	たいせいようさけ 養殖 皮なし 天ぷら	salmón atlántico de piscifactoría sin piel en tempura
+mext:10445	しらす 釜揚げしらす	shirasu cocido
+mext:10446	加工品 裸節	bonito seco (hadakabushi)
+mext:10447	しろさけ サケ節 削り節	virutas de salmón keta seco
+mext:10448	加工品 桜でんぶ	denbu rosa (sakura denbu)
+mext:10449	ふな ふなずし	funazushi
+mext:10450	くろまぐろ 養殖 赤身 生	atún de aleta azul de piscifactoría parte magra (akami) crudo
+mext:10451	くろまぐろ 養殖 赤身 水煮	atún de aleta azul de piscifactoría parte magra (akami) cocido
+mext:10452	くろまぐろ 養殖 赤身 蒸し	atún de aleta azul de piscifactoría parte magra (akami) al vapor
+mext:10453	くろまぐろ 養殖 赤身 電子レンジ調理	atún de aleta azul de piscifactoría parte magra (akami) al microondas
+mext:10454	くろまぐろ 養殖 赤身 焼き	atún de aleta azul de piscifactoría parte magra (akami) a la parrilla
+mext:10455	くろまぐろ 養殖 赤身 ソテー	atún de aleta azul de piscifactoría parte magra (akami) salteado
+mext:10456	くろまぐろ 養殖 赤身 天ぷら	atún de aleta azul de piscifactoría parte magra (akami) en tempura
+mext:10457	にしまあじ 開き干し 生	chicharro seco abierto crudo
+mext:10458	にしまあじ 開き干し 焼き	chicharro seco abierto a la parrilla
+mext:10459	くろまぐろ 養殖 脂身 生	atún de aleta azul de piscifactoría parte grasa (toro) crudo
+mext:10460	くろまぐろ 養殖 脂身 水煮	atún de aleta azul de piscifactoría parte grasa (toro) cocido
+mext:10461	くろまぐろ 養殖 脂身 蒸し	atún de aleta azul de piscifactoría parte grasa (toro) al vapor
+mext:10462	くろまぐろ 養殖 脂身 電子レンジ調理	atún de aleta azul de piscifactoría parte grasa (toro) al microondas
+mext:10463	くろまぐろ 養殖 脂身 焼き	atún de aleta azul de piscifactoría parte grasa (toro) a la parrilla
+mext:10464	くろまぐろ 養殖 脂身 ソテー	atún de aleta azul de piscifactoría parte grasa (toro) salteado
+mext:10465	くろまぐろ 養殖 脂身 天ぷら	atún de aleta azul de piscifactoría parte grasa (toro) en tempura
+mext:10466	あさり 蒸し	almeja japonesa al vapor
+mext:10467	アルゼンチンあかえび 生	gamba argentina cruda
+mext:10468	アルゼンチンあかえび ゆで	gamba argentina cocida
+mext:10469	アルゼンチンあかえび 焼き	gamba argentina a la parrilla
+mext:10470	するめいか 胴 皮なし フライ	calamar cuerpo sin piel frito
+mext:10471	まだこ 皮なし 生	pulpo sin piel crudo
+mext:10472	まだこ 蒸しだこ	pulpo al vapor
+mext:10473	まだこ 蒸しだこ 油いため	pulpo al vapor salteado
+mext:10474	まだこ 蒸しだこ 素揚げ	pulpo al vapor frito en abundante aceite
+mext:11001	いのしし 肉 脂身つき 生	carne de jabalí con grasa cruda
+mext:11002	いのぶた 肉 脂身つき 生	carne de inobuta con grasa cruda
+mext:11003	うさぎ 肉 赤肉 生	conejo magro crudo
+mext:11004	うし ［和牛肉］ かた 脂身つき 生	paleta de vacuno wagyu con grasa cruda
+mext:11005	うし ［和牛肉］ かた 皮下脂肪なし 生	paleta de vacuno wagyu sin grasa subcutánea cruda
+mext:11006	うし ［和牛肉］ かた 赤肉 生	paleta de vacuno wagyu magra cruda
+mext:11007	うし ［和牛肉］ かた 脂身 生	grasa de paleta de vacuno wagyu crudo
+mext:11008	うし ［和牛肉］ かたロース 脂身つき 生	aguja de vacuno wagyu con grasa cruda
+mext:11009	うし ［和牛肉］ かたロース 皮下脂肪なし 生	aguja de vacuno wagyu sin grasa subcutánea cruda
+mext:11010	うし ［和牛肉］ かたロース 赤肉 生	aguja de vacuno wagyu magra cruda
+mext:11011	うし ［和牛肉］ リブロース 脂身つき 生	lomo alto de vacuno wagyu con grasa crudo
+mext:11012	うし ［和牛肉］ リブロース 皮下脂肪なし 生	lomo alto de vacuno wagyu sin grasa subcutánea crudo
+mext:11013	うし ［和牛肉］ リブロース 赤肉 生	lomo alto de vacuno wagyu magro crudo
+mext:11014	うし ［和牛肉］ リブロース 脂身 生	grasa de lomo alto de vacuno wagyu crudo
+mext:11015	うし ［和牛肉］ サーロイン 脂身つき 生	lomo bajo de vacuno wagyu con grasa crudo
+mext:11016	うし ［和牛肉］ サーロイン 皮下脂肪なし 生	lomo bajo de vacuno wagyu sin grasa subcutánea crudo
+mext:11017	うし ［和牛肉］ サーロイン 赤肉 生	lomo bajo de vacuno wagyu magro crudo
+mext:11018	うし ［和牛肉］ ばら 脂身つき 生	falda de vacuno wagyu con grasa cruda
+mext:11019	うし ［和牛肉］ もも 脂身つき 生	redondo de vacuno wagyu con grasa crudo
+mext:11020	うし ［和牛肉］ もも 皮下脂肪なし 生	redondo de vacuno wagyu sin grasa subcutánea crudo
+mext:11021	うし ［和牛肉］ もも 赤肉 生	redondo de vacuno wagyu magro crudo
+mext:11022	うし ［和牛肉］ もも 脂身 生	grasa de redondo de vacuno wagyu crudo
+mext:11023	うし ［和牛肉］ そともも 脂身つき 生	tapilla de vacuno wagyu con grasa cruda
+mext:11024	うし ［和牛肉］ そともも 皮下脂肪なし 生	tapilla de vacuno wagyu sin grasa subcutánea cruda
+mext:11025	うし ［和牛肉］ そともも 赤肉 生	tapilla de vacuno wagyu magra cruda
+mext:11026	うし ［和牛肉］ ランプ 脂身つき 生	cadera de vacuno wagyu con grasa cruda
+mext:11027	うし ［和牛肉］ ランプ 皮下脂肪なし 生	cadera de vacuno wagyu sin grasa subcutánea cruda
+mext:11028	うし ［和牛肉］ ランプ 赤肉 生	cadera de vacuno wagyu magra cruda
+mext:11029	うし ［和牛肉］ ヒレ 赤肉 生	solomillo de vacuno wagyu magro crudo
+mext:11030	うし ［乳用肥育牛肉］ かた 脂身つき 生	paleta de vacuno de raza lechera con grasa cruda
+mext:11031	うし ［乳用肥育牛肉］ かた 皮下脂肪なし 生	paleta de vacuno de raza lechera sin grasa subcutánea cruda
+mext:11032	うし ［乳用肥育牛肉］ かた 赤肉 生	paleta de vacuno de raza lechera magra cruda
+mext:11033	うし ［乳用肥育牛肉］ かた 脂身 生	grasa de paleta de vacuno de raza lechera crudo
+mext:11034	うし ［乳用肥育牛肉］ かたロース 脂身つき 生	aguja de vacuno de raza lechera con grasa cruda
+mext:11035	うし ［乳用肥育牛肉］ かたロース 皮下脂肪なし 生	aguja de vacuno de raza lechera sin grasa subcutánea cruda
+mext:11036	うし ［乳用肥育牛肉］ かたロース 赤肉 生	aguja de vacuno de raza lechera magra cruda
+mext:11037	うし ［乳用肥育牛肉］ リブロース 脂身つき 生	lomo alto de vacuno de raza lechera con grasa crudo
 mext:11038	うし ［乳用肥育牛肉］ リブロース 脂身つき 焼き	lomo alto de ternera a la parrilla
+mext:11039	うし ［乳用肥育牛肉］ リブロース 脂身つき ゆで	lomo alto de vacuno de raza lechera con grasa cocido
+mext:11040	うし ［乳用肥育牛肉］ リブロース 皮下脂肪なし 生	lomo alto de vacuno de raza lechera sin grasa subcutánea crudo
+mext:11041	うし ［乳用肥育牛肉］ リブロース 赤肉 生	lomo alto de vacuno de raza lechera magro crudo
+mext:11042	うし ［乳用肥育牛肉］ リブロース 脂身 生	grasa de lomo alto de vacuno de raza lechera crudo
+mext:11043	うし ［乳用肥育牛肉］ サーロイン 脂身つき 生	lomo bajo de vacuno de raza lechera con grasa crudo
+mext:11044	うし ［乳用肥育牛肉］ サーロイン 皮下脂肪なし 生	lomo bajo de vacuno de raza lechera sin grasa subcutánea crudo
+mext:11045	うし ［乳用肥育牛肉］ サーロイン 赤肉 生	lomo bajo de vacuno de raza lechera magro crudo
+mext:11046	うし ［乳用肥育牛肉］ ばら 脂身つき 生	falda de vacuno de raza lechera con grasa cruda
+mext:11047	うし ［乳用肥育牛肉］ もも 脂身つき 生	redondo de vacuno de raza lechera con grasa crudo
+mext:11048	うし ［乳用肥育牛肉］ もも 皮下脂肪なし 生	redondo de vacuno de raza lechera sin grasa subcutánea crudo
+mext:11049	うし ［乳用肥育牛肉］ もも 皮下脂肪なし 焼き	redondo de vacuno de raza lechera sin grasa subcutánea a la parrilla
+mext:11050	うし ［乳用肥育牛肉］ もも 皮下脂肪なし ゆで	redondo de vacuno de raza lechera sin grasa subcutánea cocido
+mext:11051	うし ［乳用肥育牛肉］ もも 赤肉 生	redondo de vacuno de raza lechera magro crudo
+mext:11052	うし ［乳用肥育牛肉］ もも 脂身 生	grasa de redondo de vacuno de raza lechera crudo
+mext:11053	うし ［乳用肥育牛肉］ そともも 脂身つき 生	tapilla de vacuno de raza lechera con grasa cruda
+mext:11054	うし ［乳用肥育牛肉］ そともも 皮下脂肪なし 生	tapilla de vacuno de raza lechera sin grasa subcutánea cruda
+mext:11055	うし ［乳用肥育牛肉］ そともも 赤肉 生	tapilla de vacuno de raza lechera magra cruda
+mext:11056	うし ［乳用肥育牛肉］ ランプ 脂身つき 生	cadera de vacuno de raza lechera con grasa cruda
+mext:11057	うし ［乳用肥育牛肉］ ランプ 皮下脂肪なし 生	cadera de vacuno de raza lechera sin grasa subcutánea cruda
+mext:11058	うし ［乳用肥育牛肉］ ランプ 赤肉 生	cadera de vacuno de raza lechera magra cruda
+mext:11059	うし ［乳用肥育牛肉］ ヒレ 赤肉 生	solomillo de vacuno de raza lechera magro crudo
+mext:11060	うし ［輸入牛肉］ かた 脂身つき 生	paleta de vacuno de importación con grasa cruda
+mext:11061	うし ［輸入牛肉］ かた 皮下脂肪なし 生	paleta de vacuno de importación sin grasa subcutánea cruda
+mext:11062	うし ［輸入牛肉］ かた 赤肉 生	paleta de vacuno de importación magra cruda
+mext:11063	うし ［輸入牛肉］ かた 脂身 生	grasa de paleta de vacuno de importación crudo
+mext:11064	うし ［輸入牛肉］ かたロース 脂身つき 生	aguja de vacuno de importación con grasa cruda
+mext:11065	うし ［輸入牛肉］ かたロース 皮下脂肪なし 生	aguja de vacuno de importación sin grasa subcutánea cruda
+mext:11066	うし ［輸入牛肉］ かたロース 赤肉 生	aguja de vacuno de importación magra cruda
+mext:11067	うし ［輸入牛肉］ リブロース 脂身つき 生	lomo alto de vacuno de importación con grasa crudo
+mext:11068	うし ［輸入牛肉］ リブロース 皮下脂肪なし 生	lomo alto de vacuno de importación sin grasa subcutánea crudo
+mext:11069	うし ［輸入牛肉］ リブロース 赤肉 生	lomo alto de vacuno de importación magro crudo
+mext:11070	うし ［輸入牛肉］ リブロース 脂身 生	grasa de lomo alto de vacuno de importación crudo
+mext:11071	うし ［輸入牛肉］ サーロイン 脂身つき 生	lomo bajo de vacuno de importación con grasa crudo
+mext:11072	うし ［輸入牛肉］ サーロイン 皮下脂肪なし 生	lomo bajo de vacuno de importación sin grasa subcutánea crudo
+mext:11073	うし ［輸入牛肉］ サーロイン 赤肉 生	lomo bajo de vacuno de importación magro crudo
+mext:11074	うし ［輸入牛肉］ ばら 脂身つき 生	falda de vacuno de importación con grasa cruda
+mext:11075	うし ［輸入牛肉］ もも 脂身つき 生	redondo de vacuno de importación con grasa crudo
+mext:11076	うし ［輸入牛肉］ もも 皮下脂肪なし 生	redondo de vacuno de importación sin grasa subcutánea crudo
+mext:11077	うし ［輸入牛肉］ もも 赤肉 生	redondo de vacuno de importación magro crudo
+mext:11078	うし ［輸入牛肉］ もも 脂身 生	grasa de redondo de vacuno de importación crudo
+mext:11079	うし ［輸入牛肉］ そともも 脂身つき 生	tapilla de vacuno de importación con grasa cruda
+mext:11080	うし ［輸入牛肉］ そともも 皮下脂肪なし 生	tapilla de vacuno de importación sin grasa subcutánea cruda
+mext:11081	うし ［輸入牛肉］ そともも 赤肉 生	tapilla de vacuno de importación magra cruda
+mext:11082	うし ［輸入牛肉］ ランプ 脂身つき 生	cadera de vacuno de importación con grasa cruda
+mext:11083	うし ［輸入牛肉］ ランプ 皮下脂肪なし 生	cadera de vacuno de importación sin grasa subcutánea cruda
+mext:11084	うし ［輸入牛肉］ ランプ 赤肉 生	cadera de vacuno de importación magra cruda
+mext:11085	うし ［輸入牛肉］ ヒレ 赤肉 生	solomillo de vacuno de importación magro crudo
+mext:11086	うし ［子牛肉］ リブロース 皮下脂肪なし 生	lomo alto de ternera sin grasa subcutánea crudo
+mext:11087	うし ［子牛肉］ ばら 皮下脂肪なし 生	falda de ternera sin grasa subcutánea cruda
+mext:11088	うし ［子牛肉］ もも 皮下脂肪なし 生	redondo de ternera sin grasa subcutánea crudo
+mext:11089	うし ［ひき肉］ 生	carne picada de vacuno cruda
+mext:11090	うし ［副生物］ 舌 生	lengua de vacuno cruda
+mext:11091	うし ［副生物］ 心臓 生	corazón de vacuno crudo
+mext:11092	うし ［副生物］ 肝臓 生	hígado de vacuno crudo
+mext:11093	うし ［副生物］ じん臓 生	riñones de vacuno crudos
+mext:11094	うし ［副生物］ 第一胃 ゆで	panza de vacuno cocida
+mext:11095	うし ［副生物］ 第二胃 ゆで	redecilla de vacuno cocida
+mext:11096	うし ［副生物］ 第三胃 生	librillo de vacuno crudo
+mext:11097	うし ［副生物］ 第四胃 ゆで	cuajar de vacuno cocido
+mext:11098	うし ［副生物］ 小腸 生	intestino delgado de vacuno crudo
+mext:11099	うし ［副生物］ 大腸 生	intestino grueso de vacuno crudo
+mext:11100	うし ［副生物］ 直腸 生	recto de vacuno crudo
+mext:11101	うし ［副生物］ 腱 ゆで	tendón de vacuno cocido
+mext:11102	うし ［副生物］ 子宮 ゆで	útero de vacuno cocido
+mext:11103	うし ［副生物］ 尾 生	rabo de vacuno crudo
+mext:11104	うし ［加工品］ ローストビーフ	rosbif
+mext:11105	うし ［加工品］ コンビーフ缶詰	corned beef en conserva
+mext:11106	うし ［加工品］ 味付け缶詰	vacuno en conserva sazonado
+mext:11107	うし ［加工品］ ビーフジャーキー	cecina de vacuno (jerky)
+mext:11108	うし ［加工品］ スモークタン	lengua de vacuno ahumada
+mext:11109	うま 肉 赤肉 生	carne de caballo magra cruda
+mext:11110	くじら 肉 赤肉 生	carne de ballena magra cruda
+mext:11111	くじら うねす 生	panceta de ballena (unesu) cruda
+mext:11112	くじら 本皮 生	piel de ballena con grasa cruda
+mext:11113	くじら さらしくじら	sarashi de ballena
+mext:11114	しか あかしか 赤肉 生	ciervo magro crudo
 mext:11115	ぶた ［大型種肉］ かた 脂身つき 生	paleta de cerdo cruda
+mext:11116	ぶた ［大型種肉］ かた 皮下脂肪なし 生	paleta de cerdo de raza grande sin grasa subcutánea cruda
+mext:11117	ぶた ［大型種肉］ かた 赤肉 生	paleta de cerdo de raza grande magra cruda
+mext:11118	ぶた ［大型種肉］ かた 脂身 生	grasa de paleta de cerdo de raza grande crudo
+mext:11119	ぶた ［大型種肉］ かたロース 脂身つき 生	aguja de cerdo de raza grande con grasa cruda
+mext:11120	ぶた ［大型種肉］ かたロース 皮下脂肪なし 生	aguja de cerdo de raza grande sin grasa subcutánea cruda
+mext:11121	ぶた ［大型種肉］ かたロース 赤肉 生	aguja de cerdo de raza grande magra cruda
+mext:11122	ぶた ［大型種肉］ かたロース 脂身 生	grasa de aguja de cerdo de raza grande crudo
+mext:11123	ぶた ［大型種肉］ ロース 脂身つき 生	lomo de cerdo de raza grande con grasa crudo
+mext:11124	ぶた ［大型種肉］ ロース 脂身つき 焼き	lomo de cerdo de raza grande con grasa a la parrilla
+mext:11125	ぶた ［大型種肉］ ロース 脂身つき ゆで	lomo de cerdo de raza grande con grasa cocido
+mext:11126	ぶた ［大型種肉］ ロース 皮下脂肪なし 生	lomo de cerdo de raza grande sin grasa subcutánea crudo
+mext:11127	ぶた ［大型種肉］ ロース 赤肉 生	lomo de cerdo de raza grande magro crudo
+mext:11128	ぶた ［大型種肉］ ロース 脂身 生	grasa de lomo de cerdo de raza grande crudo
+mext:11129	ぶた ［大型種肉］ ばら 脂身つき 生	panceta de cerdo de raza grande con grasa cruda
+mext:11130	ぶた ［大型種肉］ もも 脂身つき 生	pierna de cerdo de raza grande con grasa cruda
+mext:11131	ぶた ［大型種肉］ もも 皮下脂肪なし 生	pierna de cerdo de raza grande sin grasa subcutánea cruda
+mext:11132	ぶた ［大型種肉］ もも 皮下脂肪なし 焼き	pierna de cerdo de raza grande sin grasa subcutánea a la parrilla
+mext:11133	ぶた ［大型種肉］ もも 皮下脂肪なし ゆで	pierna de cerdo de raza grande sin grasa subcutánea cocida
+mext:11134	ぶた ［大型種肉］ もも 赤肉 生	pierna de cerdo de raza grande magra cruda
+mext:11135	ぶた ［大型種肉］ もも 脂身 生	grasa de pierna de cerdo de raza grande crudo
+mext:11136	ぶた ［大型種肉］ そともも 脂身つき 生	pierna parte externa de cerdo de raza grande con grasa cruda
+mext:11137	ぶた ［大型種肉］ そともも 皮下脂肪なし 生	pierna parte externa de cerdo de raza grande sin grasa subcutánea cruda
+mext:11138	ぶた ［大型種肉］ そともも 赤肉 生	pierna parte externa de cerdo de raza grande magra cruda
+mext:11139	ぶた ［大型種肉］ そともも 脂身 生	grasa de pierna parte externa de cerdo de raza grande crudo
+mext:11140	ぶた ［大型種肉］ ヒレ 赤肉 生	solomillo de cerdo de raza grande magro crudo
+mext:11141	ぶた ［中型種肉］ かた 脂身つき 生	paleta de cerdo de raza mediana con grasa cruda
+mext:11142	ぶた ［中型種肉］ かた 皮下脂肪なし 生	paleta de cerdo de raza mediana sin grasa subcutánea cruda
+mext:11143	ぶた ［中型種肉］ かた 赤肉 生	paleta de cerdo de raza mediana magra cruda
+mext:11144	ぶた ［中型種肉］ かた 脂身 生	grasa de paleta de cerdo de raza mediana crudo
+mext:11145	ぶた ［中型種肉］ かたロース 脂身つき 生	aguja de cerdo de raza mediana con grasa cruda
+mext:11146	ぶた ［中型種肉］ かたロース 皮下脂肪なし 生	aguja de cerdo de raza mediana sin grasa subcutánea cruda
+mext:11147	ぶた ［中型種肉］ かたロース 赤肉 生	aguja de cerdo de raza mediana magra cruda
+mext:11148	ぶた ［中型種肉］ かたロース 脂身 生	grasa de aguja de cerdo de raza mediana crudo
+mext:11149	ぶた ［中型種肉］ ロース 脂身つき 生	lomo de cerdo de raza mediana con grasa crudo
+mext:11150	ぶた ［中型種肉］ ロース 皮下脂肪なし 生	lomo de cerdo de raza mediana sin grasa subcutánea crudo
+mext:11151	ぶた ［中型種肉］ ロース 赤肉 生	lomo de cerdo de raza mediana magro crudo
+mext:11152	ぶた ［中型種肉］ ロース 脂身 生	grasa de lomo de cerdo de raza mediana crudo
+mext:11153	ぶた ［中型種肉］ ばら 脂身つき 生	panceta de cerdo de raza mediana con grasa cruda
+mext:11154	ぶた ［中型種肉］ もも 脂身つき 生	pierna de cerdo de raza mediana con grasa cruda
+mext:11155	ぶた ［中型種肉］ もも 皮下脂肪なし 生	pierna de cerdo de raza mediana sin grasa subcutánea cruda
 mext:11156	ぶた ［中型種肉］ もも 赤肉 生	pierna de cerdo magra cruda
+mext:11157	ぶた ［中型種肉］ もも 脂身 生	grasa de pierna de cerdo de raza mediana crudo
+mext:11158	ぶた ［中型種肉］ そともも 脂身つき 生	pierna parte externa de cerdo de raza mediana con grasa cruda
+mext:11159	ぶた ［中型種肉］ そともも 皮下脂肪なし 生	pierna parte externa de cerdo de raza mediana sin grasa subcutánea cruda
+mext:11160	ぶた ［中型種肉］ そともも 赤肉 生	pierna parte externa de cerdo de raza mediana magra cruda
+mext:11161	ぶた ［中型種肉］ そともも 脂身 生	grasa de pierna parte externa de cerdo de raza mediana crudo
+mext:11162	ぶた ［中型種肉］ ヒレ 赤肉 生	solomillo de cerdo de raza mediana magro crudo
+mext:11163	ぶた ［ひき肉］ 生	carne picada de cerdo cruda
+mext:11164	ぶた ［副生物］ 舌 生	lengua de cerdo cruda
+mext:11165	ぶた ［副生物］ 心臓 生	corazón de cerdo crudo
+mext:11166	ぶた ［副生物］ 肝臓 生	hígado de cerdo crudo
+mext:11167	ぶた ［副生物］ じん臓 生	riñones de cerdo crudos
+mext:11168	ぶた ［副生物］ 胃 ゆで	estómago de cerdo cocido
+mext:11169	ぶた ［副生物］ 小腸 ゆで	intestino delgado de cerdo cocido
+mext:11170	ぶた ［副生物］ 大腸 ゆで	intestino grueso de cerdo cocido
+mext:11171	ぶた ［副生物］ 子宮 生	útero de cerdo crudo
+mext:11172	ぶた ［副生物］ 豚足 ゆで	manitas de cerdo cocidas
+mext:11173	ぶた ［副生物］ 軟骨 ゆで	cartílago de cerdo cocido
+mext:11174	ぶた ［ハム類］ 骨付きハム	jamón con hueso
+mext:11175	ぶた ［ハム類］ ボンレスハム	jamón deshuesado
+mext:11176	ぶた ［ハム類］ ロースハム ロースハム	jamón de lomo
+mext:11177	ぶた ［ハム類］ ショルダーハム	jamón de paleta
+mext:11178	ぶた ［プレスハム類］ プレスハム	fiambre de jamón prensado
+mext:11179	めんよう 混合プレスハム	fiambre de ovino mixto
+mext:11180	ぶた ［プレスハム類］ チョップドハム	chopped de jamón
+mext:11181	ぶた ［ハム類］ 生ハム 促成	jamón curado de maduración corta
+mext:11182	ぶた ［ハム類］ 生ハム 長期熟成	jamón curado de maduración larga
+mext:11183	ぶた ［ベーコン類］ ばらベーコン ばらベーコン	beicon de panceta
+mext:11184	ぶた ［ベーコン類］ ロースベーコン	beicon de lomo
+mext:11185	ぶた ［ベーコン類］ ショルダーベーコン	beicon de paleta
 mext:11186	ぶた ［ソーセージ類］ ウインナーソーセージ ウインナーソーセージ	salchichas tipo Viena
+mext:11187	ぶた ［ソーセージ類］ セミドライソーセージ	salchichas semicuradas
+mext:11188	ぶた ［ソーセージ類］ ドライソーセージ	salchichas secas curadas
+mext:11189	ぶた ［ソーセージ類］ フランクフルトソーセージ	salchichas Frankfurt
+mext:11190	ぶた ［ソーセージ類］ ボロニアソーセージ	mortadela de Bolonia
+mext:11191	ぶた ［ソーセージ類］ リオナソーセージ	salchicha lyoner
+mext:11192	ぶた ［ソーセージ類］ レバーソーセージ	salchicha de hígado
+mext:11193	ぶた ［ソーセージ類］ 混合ソーセージ	salchichas mixtas
 mext:11194	ぶた ［ソーセージ類］ 生ソーセージ	salchichas frescas crudas
+mext:11195	ぶた ［その他］ 焼き豚	cerdo asado (yakibuta)
+mext:11196	ぶた ［その他］ レバーペースト	paté de hígado
+mext:11197	ぶた ［その他］ スモークレバー	hígado ahumado
+mext:11198	ぶた ［その他］ ゼラチン	gelatina
+mext:11199	めんよう ［マトン］ ロース 脂身つき 生	lomo de carnero con grasa crudo
+mext:11200	めんよう ［マトン］ もも 脂身つき 生	pierna de carnero con grasa cruda
+mext:11201	めんよう ［ラム］ かた 脂身つき 生	paleta de cordero con grasa cruda
+mext:11202	めんよう ［ラム］ ロース 脂身つき 生	lomo de cordero con grasa crudo
+mext:11203	めんよう ［ラム］ もも 脂身つき 生	pierna de cordero con grasa cruda
+mext:11204	やぎ 肉 赤肉 生	carne de cabrito magra cruda
+mext:11205	かも あいがも 肉 皮つき 生	pato aigamo con piel crudo
+mext:11206	かも あひる 肉 皮つき 生	pato con piel crudo
+mext:11207	うずら 肉 皮つき 生	codorniz con piel cruda
+mext:11208	かも まがも 肉 皮なし 生	ánade real sin piel crudo
+mext:11209	きじ 肉 皮なし 生	faisán sin piel crudo
+mext:11210	しちめんちょう 肉 皮なし 生	pavo sin piel crudo
+mext:11211	すずめ 肉 骨・皮つき 生	gorrión con hueso y piel crudo
+mext:11212	にわとり ［親・主品目］ 手羽 皮つき 生	alas de gallina con piel crudas
+mext:11213	にわとり ［親・主品目］ むね 皮つき 生	pechuga de gallina con piel cruda
+mext:11214	にわとり ［親・主品目］ むね 皮なし 生	pechuga de gallina sin piel cruda
+mext:11215	にわとり ［親・主品目］ もも 皮つき 生	muslo de gallina con piel crudo
+mext:11216	にわとり ［親・主品目］ もも 皮なし 生	muslo de gallina sin piel crudo
+mext:11217	にわとり ［親・副品目］ ささみ 生	solomillo de gallina crudo
+mext:11218	にわとり ［若どり・主品目］ 手羽 皮つき 生	alas de pollo con piel crudas
+mext:11219	にわとり ［若どり・主品目］ むね 皮つき 生	pechuga de pollo con piel cruda
+mext:11220	にわとり ［若どり・主品目］ むね 皮なし 生	pechuga de pollo sin piel cruda
+mext:11221	にわとり ［若どり・主品目］ もも 皮つき 生	muslo de pollo con piel crudo
+mext:11222	にわとり ［若どり・主品目］ もも 皮つき 焼き	muslo de pollo con piel a la parrilla
+mext:11223	にわとり ［若どり・主品目］ もも 皮つき ゆで	muslo de pollo con piel cocido
+mext:11224	にわとり ［若どり・主品目］ もも 皮なし 生	muslo de pollo sin piel crudo
+mext:11225	にわとり ［若どり・主品目］ もも 皮なし 焼き	muslo de pollo sin piel a la parrilla
+mext:11226	にわとり ［若どり・主品目］ もも 皮なし ゆで	muslo de pollo sin piel cocido
+mext:11227	にわとり ［若どり・副品目］ ささみ 生	solomillo de pollo crudo
+mext:11228	にわとり ［若どり・副品目］ ささみ 焼き	solomillo de pollo a la parrilla
+mext:11229	にわとり ［若どり・副品目］ ささみ ゆで	solomillo de pollo cocido
+mext:11230	にわとり ［二次品目］ ひき肉 生	carne picada de pollo cruda
+mext:11231	にわとり ［副品目］ 心臓 生	corazón de pollo crudo
+mext:11232	にわとり ［副品目］ 肝臓 生	hígado de pollo crudo
+mext:11233	にわとり ［副品目］ すなぎも 生	molleja de pollo cruda
+mext:11234	にわとり ［副品目］ 皮 むね 生	piel de pechuga de pollo cruda
+mext:11235	にわとり ［副品目］ 皮 もも 生	piel de muslo de pollo cruda
+mext:11236	にわとり ［副品目］ なんこつ（胸肉） 生	cartílago de pechuga de pollo crudo
+mext:11237	にわとり ［その他］ 焼き鳥缶詰	yakitori en conserva
+mext:11238	はと 肉 皮なし 生	paloma sin piel cruda
+mext:11239	がちょう フォアグラ ゆで	foie gras cocido
+mext:11240	ほろほろちょう 肉 皮なし 生	pintada sin piel cruda
+mext:11241	いなご つくだ煮	tsukudani de saltamontes
+mext:11242	かえる 肉 生	ancas de rana crudas
+mext:11243	すっぽん 肉 生	carne de galápago chino cruda
+mext:11244	はち はちの子缶詰	larvas de abeja en conserva
+mext:11245	めんよう ［マトン］ ロース 皮下脂肪なし 生	lomo de carnero sin grasa subcutánea crudo
+mext:11246	めんよう ［ラム］ ロース 皮下脂肪なし 生	lomo de cordero sin grasa subcutánea crudo
+mext:11247	かも あひる 肉 皮なし 生	pato sin piel crudo
+mext:11248	うし ［和牛肉］ リブロース 脂身つき 焼き	lomo alto de vacuno wagyu con grasa a la parrilla
+mext:11249	うし ［和牛肉］ リブロース 脂身つき ゆで	lomo alto de vacuno wagyu con grasa cocido
+mext:11250	うし ［和牛肉］ もも 皮下脂肪なし 焼き	redondo de vacuno wagyu sin grasa subcutánea a la parrilla
+mext:11251	うし ［和牛肉］ もも 皮下脂肪なし ゆで	redondo de vacuno wagyu sin grasa subcutánea cocido
+mext:11252	うし ［乳用肥育牛肉］ ばら 脂身つき 焼き	falda de vacuno de raza lechera con grasa a la parrilla
+mext:11253	うし ［乳用肥育牛肉］ ヒレ 赤肉 焼き	solomillo de vacuno de raza lechera magro a la parrilla
+mext:11254	うし ［交雑牛肉］ リブロース 脂身つき 生	lomo alto de vacuno de cruce con grasa crudo
+mext:11255	うし ［交雑牛肉］ リブロース 脂身つき 焼き	lomo alto de vacuno de cruce con grasa a la parrilla
+mext:11256	うし ［交雑牛肉］ リブロース 脂身つき ゆで	lomo alto de vacuno de cruce con grasa cocido
+mext:11257	うし ［交雑牛肉］ リブロース 皮下脂肪なし 生	lomo alto de vacuno de cruce sin grasa subcutánea crudo
+mext:11258	うし ［交雑牛肉］ リブロース 赤肉 生	lomo alto de vacuno de cruce magro crudo
+mext:11259	うし ［交雑牛肉］ リブロース 脂身 生	grasa de lomo alto de vacuno de cruce crudo
+mext:11260	うし ［交雑牛肉］ ばら 脂身つき 生	falda de vacuno de cruce con grasa cruda
+mext:11261	うし ［交雑牛肉］ もも 脂身つき 生	redondo de vacuno de cruce con grasa crudo
+mext:11262	うし ［交雑牛肉］ もも 皮下脂肪なし 生	redondo de vacuno de cruce sin grasa subcutánea crudo
+mext:11263	うし ［交雑牛肉］ もも 皮下脂肪なし 焼き	redondo de vacuno de cruce sin grasa subcutánea a la parrilla
+mext:11264	うし ［交雑牛肉］ もも 皮下脂肪なし ゆで	redondo de vacuno de cruce sin grasa subcutánea cocido
+mext:11265	うし ［交雑牛肉］ もも 赤肉 生	redondo de vacuno de cruce magro crudo
+mext:11266	うし ［交雑牛肉］ もも 脂身 生	grasa de redondo de vacuno de cruce crudo
+mext:11267	うし ［交雑牛肉］ ヒレ 赤肉 生	solomillo de vacuno de cruce magro crudo
+mext:11268	うし ［輸入牛肉］ リブロース 脂身つき 焼き	lomo alto de vacuno de importación con grasa a la parrilla
 mext:11269	うし ［輸入牛肉］ リブロース 脂身つき ゆで	lomo alto de ternera cocido
+mext:11270	うし ［輸入牛肉］ もも 皮下脂肪なし 焼き	redondo de vacuno de importación sin grasa subcutánea a la parrilla
+mext:11271	うし ［輸入牛肉］ もも 皮下脂肪なし ゆで	redondo de vacuno de importación sin grasa subcutánea cocido
+mext:11272	うし ［ひき肉］ 焼き	carne picada de vacuno a la parrilla
+mext:11273	うし ［副生物］ 舌 焼き	lengua de vacuno a la parrilla
+mext:11274	うし ［副生物］ 横隔膜 生	entraña de vacuno cruda
+mext:11275	しか にほんじか 赤肉 生	ciervo sika magro crudo
+mext:11276	ぶた ［大型種肉］ ロース 脂身つき とんかつ	lomo de cerdo de raza grande con grasa tonkatsu
+mext:11277	ぶた ［大型種肉］ ばら 脂身つき 焼き	panceta de cerdo de raza grande con grasa a la parrilla
+mext:11278	ぶた ［大型種肉］ ヒレ 赤肉 焼き	solomillo de cerdo de raza grande magro a la parrilla
+mext:11279	ぶた ［大型種肉］ ヒレ 赤肉 とんかつ	solomillo de cerdo de raza grande magro tonkatsu
+mext:11280	ぶた ［ひき肉］ 焼き	carne picada de cerdo a la parrilla
+mext:11281	めんよう ［マトン］ ロース 脂身つき 焼き	lomo de carnero con grasa a la parrilla
+mext:11282	めんよう ［ラム］ ロース 脂身つき 焼き	lomo de cordero con grasa a la parrilla
+mext:11283	めんよう ［ラム］ もも 脂身つき 焼き	pierna de cordero con grasa a la parrilla
+mext:11284	かも あひる 皮 生	piel de pato cruda
+mext:11285	にわとり ［若どり・主品目］ 手羽さき 皮つき 生	puntas de ala de pollo con piel crudas
+mext:11286	にわとり ［若どり・主品目］ 手羽もと 皮つき 生	alitas de pollo con piel crudas
+mext:11287	にわとり ［若どり・主品目］ むね 皮つき 焼き	pechuga de pollo con piel a la parrilla
+mext:11288	にわとり ［若どり・主品目］ むね 皮なし 焼き	pechuga de pollo sin piel a la parrilla
+mext:11289	にわとり ［若どり・主品目］ もも 皮つき から揚げ	muslo de pollo con piel karaage
+mext:11290	にわとり ［若どり・主品目］ もも 皮なし から揚げ	muslo de pollo sin piel karaage
+mext:11291	にわとり ［二次品目］ ひき肉 焼き	carne picada de pollo a la parrilla
+mext:11292	にわとり ［その他］ チキンナゲット	nuggets de pollo
+mext:11293	にわとり ［その他］ つくね	tsukune (albóndigas de pollo)
+mext:11294	しか にほんじか えぞしか 赤肉 生	ciervo sika ezo magro crudo
+mext:11295	しか にほんじか きゅうしゅうじか 赤肉 生	ciervo sika de Kyushu magro crudo
+mext:11296	うし ［副生物］ 横隔膜 ゆで	entraña de vacuno cocida
+mext:11297	うし ［副生物］ 横隔膜 焼き	entraña de vacuno a la parrilla
+mext:11298	にわとり ［若どり・副品目］ ささみ ソテー	solomillo de pollo salteado
+mext:11299	にわとり ［若どり・副品目］ ささみ 天ぷら	solomillo de pollo en tempura
+mext:11300	にわとり ［若どり・副品目］ ささみ フライ	solomillo de pollo frito
+mext:11301	うし ［乳用肥育牛肉］ かた 赤肉 ゆで	paleta de vacuno de raza lechera magra cocida
+mext:11302	うし ［乳用肥育牛肉］ かた 赤肉 焼き	paleta de vacuno de raza lechera magra a la parrilla
+mext:11303	ぶた ［ハム類］ ロースハム ゆで	jamón de lomo cocido
+mext:11304	ぶた ［ハム類］ ロースハム 焼き	jamón de lomo a la parrilla
+mext:11305	ぶた ［ハム類］ ロースハム フライ	jamón de lomo frito
+mext:11306	ぶた ［ソーセージ類］ ウインナーソーセージ ゆで	salchichas tipo Viena cocidas
+mext:11307	ぶた ［ソーセージ類］ ウインナーソーセージ 焼き	salchichas tipo Viena a la parrilla
+mext:11308	ぶた ［ソーセージ類］ ウインナーソーセージ フライ	salchichas tipo Viena fritas
+mext:11309	うし ［乳用肥育牛肉］ かた 脂身つき ゆで	paleta de vacuno de raza lechera con grasa cocida
+mext:11310	うし ［乳用肥育牛肉］ かた 脂身つき 焼き	paleta de vacuno de raza lechera con grasa a la parrilla
+mext:11311	しか にほんじか ほんしゅうじか 赤肉 生	ciervo sika de Honshu magro crudo
+mext:11312	ぶた ［副生物］ 頭部 ジョウルミート 生	carrilleras de cerdo crudas
+mext:11313	ぶた ［副生物］ 頭部 ジョウルミート 焼き	carrilleras de cerdo a la parrilla
+mext:11314	ぶた ［ベーコン類］ ばらベーコン ゆで	beicon de panceta cocido
+mext:11315	ぶた ［ベーコン類］ ばらベーコン 焼き	beicon de panceta a la parrilla
+mext:11316	ぶた ［ベーコン類］ ばらベーコン 油いため	beicon de panceta salteado
+mext:11317	ぶた ［ソーセージ類］ ランチョンミート	fiambre (luncheon meat)
+mext:12001	うこっけい卵 全卵 生	huevo de gallina sedosa crudo
+mext:12002	うずら卵 全卵 生	huevo de codorniz crudo
+mext:12003	うずら卵 水煮缶詰	huevos de codorniz cocidos en conserva
+mext:12004	鶏卵 全卵 生	huevo de gallina crudo
+mext:12005	鶏卵 全卵 ゆで	huevo de gallina cocido
+mext:12006	鶏卵 全卵 ポーチドエッグ	huevo de gallina escalfado
+mext:12007	鶏卵 全卵 水煮缶詰	huevos cocidos en conserva
+mext:12008	鶏卵 全卵 加糖全卵	huevo entero azucarado
+mext:12009	鶏卵 全卵 乾燥全卵	huevo entero en polvo
+mext:12010	鶏卵 卵黄 生	yema de huevo cruda
 mext:12011	鶏卵 卵黄 ゆで	yema de huevo cocida
+mext:12012	鶏卵 卵黄 加糖卵黄	yema de huevo azucarada
+mext:12013	鶏卵 卵黄 乾燥卵黄	yema de huevo en polvo
+mext:12014	鶏卵 卵白 生	clara de huevo cruda
+mext:12015	鶏卵 卵白 ゆで	clara de huevo cocida
+mext:12016	鶏卵 卵白 乾燥卵白	clara de huevo en polvo
+mext:12017	鶏卵 たまご豆腐	tofu de huevo (tamago-dofu)
+mext:12018	鶏卵 たまご焼 厚焼きたまご	tortilla japonesa gruesa (tamagoyaki)
+mext:12019	鶏卵 たまご焼 だし巻きたまご	tortilla con dashi
+mext:12020	あひる卵 ピータン	huevo milenario (pidan)
+mext:12021	鶏卵 全卵 目玉焼き	huevo frito
+mext:12022	鶏卵 全卵 いり	huevos revueltos
+mext:12023	鶏卵 全卵 素揚げ	huevo frito en fritura
+mext:13001	生乳 ジャージー種	leche cruda (Jersey)
+mext:13002	生乳 ホルスタイン種	leche cruda (Holstein)
+mext:13003	普通牛乳	leche entera
+mext:13004	加工乳 濃厚	leche enriquecida
+mext:13005	加工乳 低脂肪	leche baja en grasa
+mext:13006	脱脂乳	leche desnatada
+mext:13007	乳飲料 コーヒー	bebida láctea de café
+mext:13008	乳飲料 フルーツ	bebida láctea de frutas
 mext:13009	全粉乳	leche entera en polvo
+mext:13010	脱脂粉乳	leche desnatada en polvo
+mext:13011	乳児用調製粉乳	leche de fórmula en polvo
+mext:13012	無糖練乳	leche evaporada
+mext:13013	加糖練乳	leche condensada
+mext:13014	クリーム 乳脂肪	nata
+mext:13015	クリーム 乳脂肪・植物性脂肪	nata mixta
+mext:13016	クリーム 植物性脂肪	nata vegetal
+mext:13017	ホイップクリーム 乳脂肪	nata para montar
+mext:13018	ホイップクリーム 乳脂肪・植物性脂肪	nata para montar mixta
+mext:13019	ホイップクリーム 植物性脂肪	nata para montar vegetal
+mext:13020	コーヒーホワイトナー 液状 乳脂肪	crema para café líquida láctea
+mext:13021	コーヒーホワイトナー 液状 乳脂肪・植物性脂肪	crema para café líquida mixta
+mext:13022	コーヒーホワイトナー 液状 植物性脂肪	crema para café líquida vegetal
+mext:13023	コーヒーホワイトナー 粉末状 乳脂肪	crema para café en polvo láctea
+mext:13024	コーヒーホワイトナー 粉末状 植物性脂肪	crema para café en polvo vegetal
+mext:13025	ヨーグルト 全脂無糖	yogur entero natural
+mext:13026	ヨーグルト 脱脂加糖	yogur desnatado azucarado
+mext:13027	ヨーグルト ドリンクタイプ 加糖	yogur líquido azucarado
+mext:13028	乳酸菌飲料 乳製品	bebida de fermentos lácteos láctea
+mext:13029	乳酸菌飲料 殺菌乳製品	bebida de fermentos lácteos esterilizada
+mext:13030	乳酸菌飲料 非乳製品	bebida de fermentos lácteos sin leche
+mext:13031	ナチュラルチーズ エダム	queso Edam
+mext:13032	ナチュラルチーズ エメンタール	queso Emmental
+mext:13033	ナチュラルチーズ カテージ	requesón
+mext:13034	ナチュラルチーズ カマンベール	queso Camembert
+mext:13035	ナチュラルチーズ クリーム	queso crema
+mext:13036	ナチュラルチーズ ゴーダ	queso Gouda
+mext:13037	ナチュラルチーズ チェダー	queso Cheddar
+mext:13038	ナチュラルチーズ パルメザン	queso Parmesano
+mext:13039	ナチュラルチーズ ブルー	queso azul
+mext:13040	プロセスチーズ	queso fundido
+mext:13041	チーズスプレッド	crema de queso
+mext:13042	アイスクリーム 高脂肪	helado de nata
+mext:13043	アイスクリーム 普通脂肪	helado
+mext:13044	アイスミルク	helado de leche
+mext:13045	ラクトアイス 普通脂肪	helado de leche graso
+mext:13046	ラクトアイス 低脂肪	helado de leche bajo en grasa
+mext:13047	ソフトクリーム	helado soft
+mext:13048	カゼイン	caseína
+mext:13049	シャーベット	sorbete
+mext:13050	チーズホエーパウダー	suero de queso en polvo
+mext:13051	人乳	leche materna
+mext:13052	やぎ乳	leche de cabra
+mext:13053	ヨーグルト 低脂肪無糖	yogur desnatado natural
+mext:13054	ヨーグルト 無脂肪無糖	yogur 0 % natural
+mext:13055	ナチュラルチーズ マスカルポーネ	queso mascarpone
+mext:13056	ナチュラルチーズ モッツァレラ	queso mozzarella
+mext:13057	ナチュラルチーズ やぎ	queso de cabra
+mext:13058	ナチュラルチーズ リコッタ	queso ricotta
+mext:13059	乳児用液体ミルク	leche de fórmula líquida
+mext:14001	オリーブ油	aceite de oliva
+mext:14002	ごま油	aceite de sésamo
+mext:14003	米ぬか油	aceite de salvado de arroz
+mext:14004	サフラワー油 ハイオレイック	aceite de cártamo alto oleico
+mext:14005	大豆油	aceite de soja
+mext:14006	調合油	aceite mezclado
+mext:14007	とうもろこし油	aceite de maíz
+mext:14008	なたね油	aceite de colza
+mext:14009	パーム油	aceite de palma
+mext:14010	パーム核油	aceite de palmiste
+mext:14011	ひまわり油 ハイリノール	aceite de girasol alto linoleico
+mext:14012	綿実油	aceite de algodón
+mext:14013	やし油	aceite de coco
+mext:14014	落花生油	aceite de cacahuete
+mext:14015	牛脂	sebo de vacuno
+mext:14016	ラード	manteca de cerdo
+mext:14017	無発酵バター 有塩バター	mantequilla no fermentada con sal
+mext:14018	無発酵バター 食塩不使用バター	mantequilla no fermentada sin sal
+mext:14019	発酵バター 有塩バター	mantequilla fermentada con sal
+mext:14020	マーガリン 家庭用 有塩	margarina doméstica con sal
+mext:14021	ファットスプレッド	grasa para untar
+mext:14022	ショートニング 家庭用	grasa vegetal doméstica
+mext:14023	あまに油	aceite de lino
+mext:14024	えごま油	aceite de perilla
+mext:14025	サフラワー油 ハイリノール	aceite de cártamo alto linoleico
+mext:14026	ひまわり油 ミッドオレイック	aceite de girasol medio oleico
+mext:14027	ひまわり油 ハイオレイック	aceite de girasol alto oleico
+mext:14028	ぶどう油	aceite de pepita de uva
+mext:14029	マーガリン 業務用 有塩	margarina industrial con sal
+mext:14030	ショートニング 業務用 製菓	grasa vegetal para repostería
+mext:14031	ショートニング 業務用 フライ	grasa vegetal para freír
+mext:14032	たらのあぶら	aceite de bacalao
+mext:14033	マーガリン 家庭用 無塩	margarina doméstica sin sal
+mext:14034	マーガリン 業務用 無塩	margarina industrial sin sal
+mext:15001	甘納豆 あずき	amanatto de azuki
+mext:15002	甘納豆 いんげんまめ	amanatto de alubias
+mext:15003	甘納豆 えんどう	amanatto de guisantes
+mext:15004	生八つ橋 あん入り こしあん・つぶしあん混合	yatsuhashi fresco con anko mixto
+mext:15005	今川焼 こしあん入り	imagawayaki con anko fino
+mext:15006	ういろう 白	uirou blanco
+mext:15007	うぐいすもち こしあん入り	uguisu-mochi con anko fino
+mext:15008	かしわもち こしあん入り	kashiwa-mochi con anko fino
+mext:15009	カステラ	castella
+mext:15010	かのこ	kanoko
+mext:15011	かるかん	karukan
+mext:15012	きび団子	dango de mijo
 mext:15013	ぎゅうひ	dulce de arroz glutinoso (gyuhi)
+mext:15014	きりざんしょ	kirizansho
+mext:15015	きんぎょく糖	kingyokuto
+mext:15016	きんつば	kintsuba
+mext:15017	草もち こしあん入り	kusa-mochi con anko fino
+mext:15018	くし団子 あん こしあん入り	dango en brocheta con anko fino
+mext:15019	くし団子 みたらし	dango en brocheta mitarashi
+mext:15020	げっぺい	geppei
+mext:15021	桜もち 関東風 こしあん入り	sakura-mochi estilo Kanto con anko fino
+mext:15022	桜もち 関西風 こしあん入り	sakura-mochi estilo Kansai con anko fino
+mext:15023	大福もち こしあん入り	daifuku con anko fino
+mext:15024	タルト （和菓子）	tarta wagashi
+mext:15025	ちまき	chimaki
+mext:15026	ちゃつう	chatsu
+mext:15027	どら焼 つぶしあん入り	dorayaki con anko troceado
+mext:15028	ねりきり	nerikiri
+mext:15029	まんじゅう カステラまんじゅう こしあん入り	manju castella con anko fino
+mext:15030	まんじゅう くずまんじゅう こしあん入り	manju kuzu con anko fino
+mext:15031	まんじゅう くりまんじゅう こしあん入り	manju de castaña con anko fino
+mext:15032	まんじゅう とうまんじゅう こしあん入り	manju azucarado con anko fino
+mext:15033	まんじゅう 蒸しまんじゅう こしあん入り	manju al vapor con anko fino
+mext:15034	まんじゅう 中華まんじゅう あんまん こしあん入り	anman con anko fino
+mext:15035	まんじゅう 中華まんじゅう 肉まん	nikuman
+mext:15036	もなか こしあん入り	monaka con anko fino
+mext:15037	ゆべし	yubeshi
+mext:15038	ようかん 練りようかん	yokan firme
+mext:15039	ようかん 水ようかん	yokan suave
+mext:15040	ようかん 蒸しようかん	yokan al vapor
+mext:15041	あめ玉	caramelo duro
+mext:15042	芋かりんとう	karinto de boniato
+mext:15043	おこし	okoshi
+mext:15044	おのろけ豆	onoroke-mame
+mext:15045	かりんとう 黒	karinto oscuro
+mext:15046	かりんとう 白	karinto claro
+mext:15047	ごかぼう	gokabo
+mext:15048	小麦粉せんべい 磯部せんべい	senbei isobe
+mext:15049	小麦粉せんべい かわらせんべい	senbei kawara
+mext:15050	小麦粉せんべい 巻きせんべい	senbei enrollado
+mext:15051	小麦粉せんべい 南部せんべい ごま入り	senbei nanbu con sésamo
+mext:15052	小麦粉せんべい 南部せんべい 落花生入り	senbei nanbu con cacahuete
+mext:15053	しおがま	shiogama
+mext:15054	中華風クッキー	galleta china
+mext:15055	ひなあられ 関東風	hina-arare estilo Kanto
+mext:15056	ひなあられ 関西風	hina-arare estilo Kansai
+mext:15057	米菓 揚げせんべい	senbei frito
+mext:15058	米菓 甘辛せんべい	senbei agridulce-salado
+mext:15059	米菓 あられ	arare
+mext:15060	米菓 しょうゆせんべい	senbei de soja
+mext:15061	ボーロ 小粒	galletas bolo
+mext:15062	ボーロ そばボーロ	galletas bolo de trigo sarraceno
+mext:15063	松風	matsukaze
+mext:15064	みしま豆	mishima-mame
+mext:15065	八つ橋	yatsuhashi (galleta)
+mext:15066	らくがん らくがん	rakugan
+mext:15067	らくがん 麦らくがん	rakugan de cebada
+mext:15068	らくがん もろこしらくがん	rakugan de maíz
+mext:15069	あんパン こしあん入り	anpan con anko fino
+mext:15070	クリームパン	pan de crema
+mext:15071	ジャムパン	pan de mermelada
+mext:15072	チョココロネ	cornet de chocolate
+mext:15073	シュークリーム	profiterol
+mext:15074	スポンジケーキ	bizcocho
+mext:15075	ショートケーキ 果実なし	tarta de nata sin fruta
+mext:15076	デニッシュペストリー デンマークタイプ プレーン	danesa
+mext:15077	ドーナッツ イーストドーナッツ プレーン	donut de levadura
+mext:15078	ドーナッツ ケーキドーナッツ プレーン	donut de masa
+mext:15079	パイ パイ皮	masa quebrada
+mext:15080	パイ アップルパイ	tarta de manzana
+mext:15081	パイ ミートパイ	pastel de carne
+mext:15082	バターケーキ	bizcocho de mantequilla
+mext:15083	ホットケーキ	hotcakes
+mext:15084	ワッフル カスタードクリーム入り	gofre con crema pastelera
+mext:15085	ワッフル ジャム入り	gofre con mermelada
+mext:15086	カスタードプリン	flan
+mext:15087	ゼリー オレンジ	gelatina de naranja
+mext:15088	ゼリー コーヒー	gelatina de café
+mext:15089	ゼリー ミルク	gelatina de leche
+mext:15090	ゼリー ワイン	gelatina de vino
+mext:15091	ババロア	crema bávara
+mext:15092	ウエハース	barquillos
+mext:15093	クラッカー オイルスプレークラッカー	galleta salada con aceite
+mext:15094	クラッカー ソーダクラッカー	galleta de soda
+mext:15095	サブレ	galleta de mantequilla
+mext:15096	リーフパイ	palmeras
+mext:15097	ビスケット ハードビスケット	galleta dura
+mext:15098	ビスケット ソフトビスケット	galleta blanda
+mext:15099	プレッツェル	pretzel
+mext:15100	ロシアケーキ	galleta rusa
+mext:15101	小麦粉あられ	arare de trigo
+mext:15102	コーンスナック	snack de maíz
+mext:15103	ポテトチップス ポテトチップス	patatas fritas de bolsa
+mext:15104	ポテトチップス 成形ポテトチップス	patatas fritas de bolsa moldeadas
+mext:15105	キャラメル	caramelo
+mext:15106	ラムネ	caramelos ramune
+mext:15107	ゼリーキャンデー	gominolas
+mext:15108	ゼリービーンズ	gominolas en gragea
+mext:15109	かわり玉	kawaridama
+mext:15110	ドロップ	caramelos de gota
+mext:15111	バタースコッチ	caramelo de mantequilla
+mext:15112	ブリットル	crocante
+mext:15113	マシュマロ	malvaviscos
+mext:15114	カバーリングチョコレート	chocolate de cobertura
+mext:15115	ホワイトチョコレート	chocolate blanco
+mext:15116	ミルクチョコレート	chocolate con leche
+mext:15117	マロングラッセ	marrón glacé
+mext:15118	板ガム	chicle en láminas
+mext:15119	糖衣ガム	chicle en gragea
+mext:15120	風船ガム	chicle de globos
+mext:15121	くずもち 関西風 くずでん粉製品	kuzumochi estilo Kansai
+mext:15122	くずもち 関東風 小麦でん粉製品	kuzumochi estilo Kanto
+mext:15123	五平もち	gohei-mochi
+mext:15124	笹だんご こしあん入り	sasa-dango con anko fino
+mext:15125	揚げパン	pan frito
+mext:15126	あんパン 薄皮タイプ こしあん入り	anpan de masa fina con anko fino
+mext:15127	カレーパン 皮及び具	pan de curry
+mext:15128	カレーパン 皮のみ	pan de curry (solo masa)
+mext:15129	カレーパン 具のみ	relleno de pan de curry
+mext:15130	クリームパン 薄皮タイプ	pan de crema de masa fina
+mext:15131	チョコパン 薄皮タイプ	pan de chocolate de masa fina
+mext:15132	メロンパン	melonpan
+mext:15133	タルト （洋菓子）	tarta
+mext:15134	チーズケーキ ベイクドチーズケーキ	tarta de queso horneada
+mext:15135	チーズケーキ レアチーズケーキ	tarta de queso fría
+mext:15136	牛乳寒天	gelatina de leche con agar
+mext:15137	アーモンドチョコレート	almendras con chocolate
+mext:15138	カスタードクリーム	crema pastelera
+mext:15139	しるこ こしあん	shiruko fino
+mext:15140	しるこ つぶしあん	shiruko troceado
+mext:15141	ウエハース クリーム入り	barquillos con crema
+mext:15142	こんにゃくゼリー	gelatina de konjac
 mext:15143	ずんだあん	pasta dulce de edamame (zunda)
+mext:15144	ずんだもち	zunda-mochi
+mext:15145	今川焼 つぶしあん入り	imagawayaki con anko troceado
+mext:15146	今川焼 カスタードクリーム入り	imagawayaki con crema pastelera
+mext:15147	ういろう 黒	uirou marrón
+mext:15148	うぐいすもち つぶしあん入り	uguisu-mochi con anko troceado
+mext:15149	かしわもち つぶしあん入り	kashiwa-mochi con anko troceado
+mext:15150	草もち つぶしあん入り	kusa-mochi con anko troceado
+mext:15151	くし団子 あん つぶしあん入り	dango en brocheta con anko troceado
+mext:15152	桜もち 関東風 つぶしあん入り	sakura-mochi estilo Kanto con anko troceado
+mext:15153	桜もち 関西風 つぶしあん入り	sakura-mochi estilo Kansai con anko troceado
+mext:15154	笹だんご つぶしあん入り	sasa-dango con anko troceado
+mext:15155	大福もち つぶしあん入り	daifuku con anko troceado
+mext:15156	どら焼 こしあん入り	dorayaki con anko fino
+mext:15157	生八つ橋 あん入り こしあん入り	yatsuhashi fresco con anko fino
+mext:15158	生八つ橋 あん入り つぶしあん入り	yatsuhashi fresco con anko troceado
+mext:15159	まんじゅう カステラまんじゅう つぶしあん入り	manju castella con anko troceado
+mext:15160	まんじゅう かるかんまんじゅう こしあん入り	manju karukan con anko fino
+mext:15161	まんじゅう かるかんまんじゅう つぶしあん入り	manju karukan con anko troceado
+mext:15162	まんじゅう くずまんじゅう つぶしあん入り	manju kuzu con anko troceado
+mext:15163	まんじゅう くりまんじゅう つぶしあん入り	manju de castaña con anko troceado
+mext:15164	まんじゅう とうまんじゅう つぶしあん入り	manju azucarado con anko troceado
+mext:15165	まんじゅう 蒸しまんじゅう つぶしあん入り	manju al vapor con anko troceado
+mext:15166	まんじゅう 中華まんじゅう あんまん つぶしあん入り	anman con anko troceado
+mext:15167	もなか つぶしあん入り	monaka con anko troceado
+mext:15168	あんパン つぶしあん入り	anpan con anko troceado
+mext:15169	あんパン 薄皮タイプ つぶしあん入り	anpan de masa fina con anko troceado
+mext:15170	ショートケーキ いちご	tarta de fresa
+mext:15171	デニッシュペストリー デンマークタイプ あん入り こしあん	danesa con anko fino
+mext:15172	デニッシュペストリー デンマークタイプ あん入り つぶしあん	danesa con anko troceado
+mext:15173	デニッシュペストリー デンマークタイプ あん入り カスタードクリーム	danesa con crema pastelera
+mext:15174	ドーナッツ イーストドーナッツ あん入り こしあん	donut de levadura con anko fino
+mext:15175	ドーナッツ イーストドーナッツ あん入り つぶしあん	donut de levadura con anko troceado
+mext:15176	ドーナッツ イーストドーナッツ あん入り カスタードクリーム	donut de levadura con crema pastelera
+mext:15177	ドーナッツ ケーキドーナッツ あん入り こしあん	donut de masa con anko fino
+mext:15178	ドーナッツ ケーキドーナッツ あん入り つぶしあん	donut de masa con anko troceado
+mext:15179	ドーナッツ ケーキドーナッツ あん入り カスタードクリーム	donut de masa con crema pastelera
+mext:15180	チョコレートクリーム	crema de chocolate
+mext:15181	菓子パン あんなし	pan dulce sin relleno
+mext:15182	デニッシュペストリー アメリカンタイプ プレーン	danesa americana
+mext:15183	デニッシュペストリー アメリカンタイプ あん入り こしあん	danesa americana con anko fino
+mext:15184	デニッシュペストリー アメリカンタイプ あん入り つぶしあん	danesa americana con anko troceado
+mext:15185	デニッシュペストリー アメリカンタイプ あん入り カスタードクリーム	danesa americana con crema pastelera
+mext:15186	スイートチョコレート	chocolate dulce
+mext:15187	スイートチョコレート カカオ増量	chocolate dulce extra cacao
+mext:16001	清酒 普通酒	sake regular
+mext:16002	清酒 純米酒	sake junmai
+mext:16003	清酒 本醸造酒	sake honjozo
+mext:16004	清酒 吟醸酒	sake ginjo
+mext:16005	清酒 純米吟醸酒	sake junmai-ginjo
+mext:16006	ビール 淡色	cerveza rubia
+mext:16007	ビール 黒	cerveza negra
+mext:16008	ビール スタウト	stout
+mext:16009	発泡酒	happoshu
+mext:16010	ぶどう酒 白	vino blanco
+mext:16011	ぶどう酒 赤	vino tinto
+mext:16012	ぶどう酒 ロゼ	vino rosado
+mext:16013	紹興酒	vino de Shaoxing
+mext:16014	しょうちゅう 連続式蒸留しょうちゅう	shochu de destilación continua
+mext:16015	しょうちゅう 単式蒸留しょうちゅう	shochu de destilación simple
+mext:16016	ウイスキー	whisky
+mext:16017	ブランデー	brandy
+mext:16018	ウオッカ	vodka
+mext:16019	ジン	ginebra
+mext:16020	ラム	ron
+mext:16021	マオタイ酒	maotai
+mext:16022	梅酒	umeshu
+mext:16023	合成清酒	sake sintético
+mext:16024	白酒	baijiu
+mext:16025	みりん 本みりん	mirin
+mext:16026	みりん 本直し	mirin hon-naoshi
+mext:16027	薬味酒	vino especiado (yakumi-zake)
+mext:16028	キュラソー	licor de curaçao
+mext:16029	スイートワイン	vino dulce
+mext:16030	ペパーミント	licor de menta
+mext:16031	ベルモット 甘口タイプ	vermut dulce
+mext:16032	ベルモット 辛口タイプ	vermut seco
+mext:16033	玉露 茶	té gyokuro en hoja
+mext:16034	玉露 浸出液	infusión de té gyokuro
+mext:16035	抹茶 茶	té matcha
+mext:16036	せん茶 茶	té sencha en hoja
+mext:16037	せん茶 浸出液	infusión de té sencha
+mext:16038	かまいり茶 浸出液	infusión de té kamairi
+mext:16039	番茶 浸出液	infusión de té bancha
+mext:16040	ほうじ茶 浸出液	infusión de té hojicha
+mext:16041	玄米茶 浸出液	infusión de té genmaicha
+mext:16042	ウーロン茶 浸出液	infusión de té oolong
+mext:16043	紅茶 茶	té negro en hoja
+mext:16044	紅茶 浸出液	infusión de té negro
+mext:16045	コーヒー 浸出液	café de filtro
+mext:16046	コーヒー インスタントコーヒー	café instantáneo en polvo
+mext:16047	コーヒー コーヒー飲料 乳成分入り 加糖	bebida de café con leche azucarada
+mext:16048	ココア ピュアココア	cacao puro en polvo
+mext:16049	ココア ミルクココア	cacao con leche en polvo
+mext:16050	甘酒	amazake
+mext:16051	昆布茶	té de alga kombu en polvo
+mext:16052	果実色飲料	bebida de frutas
+mext:16053	コーラ	cola
+mext:16054	サイダー	gaseosa
+mext:16055	麦茶 浸出液	infusión de té de cebada
+mext:16056	青汁 ケール	aojiru de kale en polvo
+mext:16057	スポーツドリンク	bebida deportiva
+mext:16058	ビール風味炭酸飲料	bebida gaseosa con sabor a cerveza
+mext:16059	缶チューハイ レモン風味	chu-hi de limón en lata
+mext:16060	しょうちゅう 泡盛	awamori
+mext:16061	なぎなたこうじゅ 浸出液	infusión de té naginata-koju
+mext:16062	番茶 茶	té bancha en hoja
+mext:16063	ほうじ茶 茶	té hojicha en hoja
+mext:16064	コーヒー 缶コーヒー 無糖	café en lata sin azúcar
+mext:17001	ウスターソース	salsa Worcestershire
+mext:17002	中濃ソース	salsa chuno
+mext:17003	濃厚ソース	salsa espesa (tonkatsu)
+mext:17004	トウバンジャン	doubanjiang
+mext:17005	チリペッパーソース	salsa de chile
+mext:17006	ラー油	aceite de chile
+mext:17007	こいくちしょうゆ	salsa de soja oscura
 mext:17008	うすくちしょうゆ	salsa de soja clara
+mext:17009	たまりしょうゆ	salsa de soja tamari
+mext:17010	さいしこみしょうゆ	salsa de soja saishikomi
+mext:17011	しろしょうゆ	salsa de soja blanca
+mext:17012	食塩	sal
+mext:17013	並塩	sal común
+mext:17014	精製塩 家庭用	sal refinada doméstica
+mext:17015	穀物酢	vinagre de grano
+mext:17016	米酢	vinagre de arroz
+mext:17017	果実酢 ぶどう酢	vinagre de vino
+mext:17018	果実酢 りんご酢	vinagre de manzana
+mext:17019	かつおだし 荒節	dashi de bonito (arabushi)
+mext:17020	昆布だし 水出し	dashi de kombu en frío
+mext:17021	かつお・昆布だし 荒節・昆布だし	dashi de bonito y kombu
+mext:17022	しいたけだし	dashi de shiitake
+mext:17023	煮干しだし	dashi de niboshi
+mext:17024	鶏がらだし	caldo de pollo
+mext:17025	中華だし	caldo chino
+mext:17026	洋風だし	caldo occidental
+mext:17027	固形ブイヨン	cubo de caldo
+mext:17028	顆粒和風だし	dashi en gránulos
+mext:17029	めんつゆ ストレート	mentsuyu
+mext:17030	めんつゆ 三倍濃縮	mentsuyu triple concentrado
+mext:17031	オイスターソース	salsa de ostras
+mext:17032	マーボー豆腐の素	base para mapo tofu
+mext:17033	ミートソース	salsa boloñesa
+mext:17034	トマトピューレー	puré de tomate
+mext:17035	トマトペースト	concentrado de tomate
+mext:17036	トマトケチャップ	kétchup
+mext:17037	トマトソース	salsa de tomate
+mext:17038	チリソース	salsa de chile picante
+mext:17039	分離液状ドレッシング 和風ドレッシングタイプ調味料 ノンオイルタイプ	aderezo japonés sin aceite
+mext:17040	分離液状ドレッシング フレンチドレッシング 分離液状	vinagreta francesa
+mext:17041	乳化液状ドレッシング サウザンアイランドドレッシング	salsa mil islas
+mext:17042	半固体状ドレッシング マヨネーズ 全卵型	mayonesa de huevo entero
+mext:17043	半固体状ドレッシング マヨネーズ 卵黄型	mayonesa de yema
+mext:17044	米みそ 甘みそ	miso de arroz dulce
+mext:17045	米みそ 淡色辛みそ	miso de arroz claro salado
+mext:17046	米みそ 赤色辛みそ	miso de arroz rojo salado
+mext:17047	麦みそ	miso de cebada
+mext:17048	豆みそ	miso de soja
+mext:17049	即席みそ 粉末タイプ	miso instantáneo en polvo
+mext:17050	即席みそ ペーストタイプ	miso instantáneo en pasta
+mext:17051	カレールウ	roux de curry
+mext:17052	ハヤシルウ	roux de hayashi
+mext:17053	酒かす	lías de sake
+mext:17054	みりん風調味料	condimento estilo mirin
+mext:17055	オールスパイス 粉	pimienta de Jamaica molida
+mext:17056	オニオンパウダー	cebolla en polvo
+mext:17057	からし 粉	mostaza en polvo
+mext:17058	からし 練り	mostaza molida
+mext:17059	からし 練りマスタード	mostaza preparada
+mext:17060	からし 粒入りマスタード	mostaza en grano
+mext:17061	カレー粉	curry en polvo
+mext:17062	クローブ 粉	clavo molido
+mext:17063	こしょう 黒 粉	pimienta negra molida
+mext:17064	こしょう 白 粉	pimienta blanca molida
+mext:17065	こしょう 混合 粉	mezcla de pimientas molida
+mext:17066	さんしょう 粉	sansho en polvo
+mext:17067	シナモン 粉	canela molida
+mext:17068	しょうが 粉	jengibre en polvo
+mext:17069	しょうが おろし	jengibre rallado
+mext:17070	セージ 粉	salvia en polvo
+mext:17071	タイム 粉	tomillo en polvo
+mext:17072	チリパウダー	chile en polvo
+mext:17073	とうがらし 粉	guindilla molida
+mext:17074	ナツメグ 粉	nuez moscada molida
+mext:17075	にんにく ガーリックパウダー 食塩無添加	ajo en polvo sin sal
+mext:17076	にんにく おろし	ajo rallado
+mext:17077	バジル 粉	albahaca en polvo
+mext:17078	パセリ 乾	perejil seco
+mext:17079	パプリカ 粉	pimentón
+mext:17080	わさび 粉 からし粉入り	wasabi en polvo con mostaza
+mext:17081	わさび 練り	wasabi en pasta
+mext:17082	酵母 パン酵母 圧搾	levadura de panadería prensada
+mext:17083	酵母 パン酵母 乾燥	levadura de panadería seca
+mext:17084	ベーキングパウダー	levadura química
+mext:17085	お好み焼きソース	salsa para okonomiyaki
+mext:17086	こいくちしょうゆ 減塩	salsa de soja oscura baja en sal
+mext:17087	だししょうゆ	salsa de soja con dashi
+mext:17088	照りしょうゆ	salsa de soja teriyaki
+mext:17089	精製塩 業務用	sal refinada industrial
+mext:17090	黒酢	vinagre negro
+mext:17091	果実酢 バルサミコ酢	vinagre balsámico
+mext:17092	顆粒おでん用	condimento para oden en gránulos
+mext:17093	顆粒中華だし	caldo chino en gránulos
+mext:17094	甘酢	vinagre dulce
+mext:17095	エビチリの素	base para ebi-chiri
+mext:17096	黄身酢	vinagre con yema
+mext:17097	ごま酢	vinagre de sésamo
+mext:17098	ごまだれ	salsa de sésamo
+mext:17099	三杯酢	vinagre sanbaizu
+mext:17100	二杯酢	vinagre nihaizu
+mext:17101	すし酢 ちらし・稲荷用	vinagre para sushi (chirashi e inari)
+mext:17102	すし酢 にぎり用	vinagre para sushi (nigiri)
+mext:17103	すし酢 巻き寿司・箱寿司用	vinagre para sushi (maki y oshizushi)
+mext:17104	中華風合わせ酢	vinagreta china
+mext:17105	デミグラスソース	salsa demi-glace
+mext:17106	テンメンジャン	tianmianjiang
+mext:17107	魚醤油 ナンプラー	nam pla
+mext:17108	冷やし中華のたれ	salsa para hiyashi-chuka
+mext:17109	ホワイトソース	salsa bechamel
+mext:17110	ぽん酢しょうゆ	salsa ponzu
+mext:17111	マリネ液	adobo
+mext:17112	焼き鳥のたれ	salsa para yakitori
+mext:17113	焼き肉のたれ	salsa para yakiniku
+mext:17114	みたらしのたれ	salsa mitarashi
+mext:17115	ゆずこしょう	yuzu kosho
+mext:17116	分離液状ドレッシング 和風ドレッシング 分離液状	vinagreta japonesa
+mext:17117	乳化液状ドレッシング ごまドレッシング	salsa de sésamo cremosa
+mext:17118	半固体状ドレッシング マヨネーズタイプ調味料 低カロリータイプ	mayonesa ligera
+mext:17119	減塩みそ	miso bajo en sal
+mext:17120	米みそ だし入りみそ	miso de arroz con dashi
+mext:17121	辛子酢みそ	miso con mostaza y vinagre
+mext:17122	ごまみそ	miso de sésamo
+mext:17123	酢みそ	miso con vinagre
+mext:17124	練りみそ	miso en pasta
+mext:17125	お茶漬けの素 さけ	condimento para ochazuke de salmón
+mext:17126	即席すまし汁	sopa clara instantánea
+mext:17127	ふりかけ たまご	furikake de huevo
+mext:17128	にんにく ガーリックパウダー 食塩添加	ajo en polvo con sal
+mext:17130	あごだし	dashi de pez volador
+mext:17131	かつおだし 本枯れ節	dashi de bonito (honkarebushi)
+mext:17132	昆布だし 煮出し	dashi de kombu hervido
+mext:17133	魚醤油 いかなごしょうゆ	salsa de pescado ikanago
+mext:17134	魚醤油 いしる （いしり）	salsa de pescado ishiru
+mext:17135	魚醤油 しょっつる	salsa de pescado shottsuru
+mext:17136	キムチの素	base para kimchi
+mext:17137	ぽん酢しょうゆ 市販品	salsa ponzu comercial
+mext:17138	料理酒	vino de cocina
+mext:17139	うすくちしょうゆ 低塩	salsa de soja clara baja en sal
+mext:17140	なべつゆ ストレート しょうゆ味	caldo para nabe de soja
+mext:17141	めんつゆ 二倍濃縮	mentsuyu doble concentrado
+mext:17142	ラーメンスープ 濃縮 しょうゆ味 ストレートしょうゆ味	sopa para ramen concentrada de soja
+mext:17143	ラーメンスープ 濃縮 みそ味 ストレートみそ味	sopa para ramen concentrada de miso
+mext:17144	焼きそば粉末ソース	salsa para yakisoba en polvo
+mext:17145	米みそ だし入りみそ 減塩	miso de arroz con dashi bajo en sal
+mext:17146	減塩タイプ食塩 調味料含む	sal baja en sodio con condimentos
+mext:17147	減塩タイプ食塩 調味料不使用	sal baja en sodio
+mext:17148	かつお・昆布だし 本枯れ節・昆布だし	dashi de bonito y kombu (honkarebushi)
+mext:17149	乳化液状ドレッシング フレンチドレッシング 乳化液状	vinagreta francesa emulsionada
 mext:18001	洋風料理 カレー類 ビーフカレー	curry de ternera
+mext:18002	中国料理 点心類 ぎょうざ	gyoza
+mext:18003	洋風料理 その他 えびグラタン	gratinado de gambas
+mext:18004	洋風料理 スープ類 コーンクリームスープ 粉末タイプ	crema de maíz en polvo
+mext:18005	洋風料理 スープ類 コーンクリームスープ コーンクリームスープ	crema de maíz
+mext:18006	洋風料理 フライ用冷凍食品 コロッケ クリームコロッケ 冷凍	croquetas cremosas congeladas
+mext:18007	洋風料理 フライ用冷凍食品 コロッケ ポテトコロッケ 冷凍	croquetas de patata congeladas
+mext:18008	洋風料理 フライ用冷凍食品 いかフライ 冷凍	calamares empanados congelados
+mext:18009	洋風料理 フライ用冷凍食品 えびフライ 冷凍	gambas empanadas congeladas
+mext:18010	洋風料理 フライ用冷凍食品 白身フライ 冷凍	filete de pescado blanco empanado congelado
+mext:18011	洋風料理 シチュー類 ビーフシチュー	estofado de vacuno
+mext:18012	中国料理 点心類 しゅうまい	shumai
+mext:18014	洋風料理 その他 えびピラフ	pilaf de gambas
+mext:18015	洋風料理 素揚げ類 ミートボール	albóndigas
+mext:18016	洋風料理 フライ用冷凍食品 メンチカツ 冷凍	menchi-katsu congelado
+mext:18018	洋風料理 コロッケ類 ポテトコロッケ	croquetas de patata
+mext:18019	洋風料理 フライ類 いかフライ	calamares fritos
+mext:18020	洋風料理 フライ類 えびフライ	gambas fritas
+mext:18021	洋風料理 フライ類 白身フライ	filete de pescado blanco frito
+mext:18022	洋風料理 フライ類 メンチカツ	menchi-katsu
+mext:18023	和風料理 その他 松前漬け しょうゆ漬	matsumaezuke encurtido en soja
+mext:18024	和風料理 和え物類 青菜の白和え	verduras con pasta de tofu (shira-ae)
+mext:18025	和風料理 和え物類 いんげんのごま和え	judías verdes con sésamo (goma-ae)
+mext:18026	和風料理 和え物類 わかめとねぎの酢みそ和え	wakame con cebolleta en vinagre-miso
+mext:18027	和風料理 酢の物類 紅白なます	namasu (daikon y zanahoria en vinagre)
+mext:18028	和風料理 汁物類 とん汁	sopa de miso con cerdo (tonjiru)
+mext:18029	和風料理 煮物類 卯の花いり	unohana (okara estofada con verduras)
+mext:18030	和風料理 煮物類 親子丼の具	base para oyakodon
+mext:18031	和風料理 煮物類 牛飯の具	base para gyudon
+mext:18032	和風料理 煮物類 切り干し大根の煮物	daikon seco estofado
+mext:18033	和風料理 煮物類 きんぴらごぼう	kinpira de bardana
+mext:18034	和風料理 煮物類 ぜんまいのいため煮	zenmai estofado
+mext:18035	和風料理 煮物類 筑前煮	chikuzenni
+mext:18036	和風料理 煮物類 肉じゃが	nikujaga
+mext:18037	和風料理 煮物類 ひじきのいため煮	hijiki estofadas
+mext:18038	和風料理 その他 アジの南蛮漬け	jurel en escabeche nanban
+mext:18039	韓国料理 和え物類 もやしのナムル	brotes de soja namul
+mext:18040	洋風料理 カレー類 チキンカレー	curry de pollo
+mext:18041	洋風料理 カレー類 ポークカレー	curry de cerdo
+mext:18042	洋風料理 スープ類 かぼちゃのクリームスープ	crema de calabaza
+mext:18043	洋風料理 コロッケ類 カニクリームコロッケ	croquetas de cangrejo cremosas
+mext:18044	洋風料理 コロッケ類 コーンクリームコロッケ	croquetas de maíz cremosas
+mext:18045	洋風料理 シチュー類 チキンシチュー	estofado de pollo
+mext:18046	中国料理 点心類 中華ちまき	chimaki chino
+mext:18047	中国料理 菜類 酢豚	cerdo agridulce
+mext:18048	中国料理 菜類 八宝菜	verduras chinas (happosai)
+mext:18049	中国料理 菜類 麻婆豆腐	mapo tofu
+mext:18050	洋風料理 ハンバーグステーキ類 合いびきハンバーグ	hamburguesa de carne mixta
+mext:18051	洋風料理 ハンバーグステーキ類 チキンハンバーグ	hamburguesa de pollo
+mext:18052	洋風料理 ハンバーグステーキ類 豆腐ハンバーグ	hamburguesa de tofu
+mext:18053	和風料理 その他 お好み焼き	okonomiyaki
+mext:18054	和風料理 その他 とりから揚げ	pollo karaage
+mext:18055	洋風料理 フライ類 かきフライ	ostras fritas
+mext:18056	中国料理 点心類 春巻き	rollito de primavera frito
+mext:18057	中国料理 菜類 チャーハン	arroz frito chino
 recipe:ayran	Ayran	ayrán
 recipe:ayran.ru	Айран	ayrán
 recipe:baursak	Baursak	baursak
