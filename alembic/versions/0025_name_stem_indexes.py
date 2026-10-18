@@ -5,14 +5,14 @@ f_stemtext(lang, name), an IMMUTABLE wrapper like f_unaccent (a CASE in an index
 is refused). The stem fallback query runs only when the trigram path is empty, so the
 indexes see mostly misses.
 
-Revision ID: 0024
-Revises: 0023
+Revision ID: 0025
+Revises: 0024
 """
 
 from alembic import op
 
-revision = "0024"
-down_revision = "0023"
+revision = "0025"
+down_revision = "0024"
 
 
 def upgrade() -> None:
@@ -28,11 +28,11 @@ def upgrade() -> None:
             when 'it' then 'italian' when 'pt' then 'portuguese' when 'nl' then 'dutch'
             else 'simple' end)::regconfig, public.f_unaccent($2)) $$"""
     )
-    op.execute("create index food_name_stem_idx on food using gin (f_stemtext(lang, name))")
+    op.execute("create index food_stem_idx on food using gin (f_stemtext(lang, name))")
     op.execute("create index food_name_name_stem_idx on food_name using gin (f_stemtext(lang, name))")
 
 
 def downgrade() -> None:
-    op.execute("drop index food_name_stem_idx")
+    op.execute("drop index food_stem_idx")
     op.execute("drop index food_name_name_stem_idx")
     op.execute("drop function f_stemtext(text, text)")

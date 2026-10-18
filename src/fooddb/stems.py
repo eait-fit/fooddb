@@ -24,7 +24,7 @@ from sqlalchemy.sql.elements import ColumnElement
 from fooddb.db import engine
 
 # food.lang / food_name.lang → the Postgres text-search config that stems the name. A language
-# Postgres cannot stem keeps whole words under 'simple'. Keep in sync with migration 0024.
+# Postgres cannot stem keeps whole words under 'simple'. Keep in sync with migration 0025.
 CONFIG = {
     "en": "english", "de": "german", "fr": "french", "es": "spanish", "ru": "russian",
     "uk": "russian", "nb": "norwegian", "no": "norwegian", "nn": "norwegian",
@@ -43,7 +43,7 @@ SPLIT = {"de": "de", "at": "de", "ch": "de", "li": "de",
 
 def tsv(table) -> ColumnElement:
     """The stemmed lexeme vector of <table>.name under its own language's config: the
-    IMMUTABLE f_stemtext wrapper (migration 0024) so the query uses the GIN index."""
+    IMMUTABLE f_stemtext wrapper (migration 0025) so the query uses the GIN index."""
     return func.f_stemtext(table.c.lang, table.c.name)
 
 
