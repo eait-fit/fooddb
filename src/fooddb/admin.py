@@ -233,10 +233,10 @@ class ReviewView(BaseView):
         offset = int(q["offset"]) if q.get("offset", "").isdigit() else 0
         items = await run_in_threadpool(lambda: review.queue(PAGE_SIZE, offset=offset, check=check, source=source, detail=True))
         facets = await run_in_threadpool(review.facets, ("%",), check, source)
-        days = await run_in_threadpool(export.days)
+        snap = await run_in_threadpool(export.current)
         page = lambda off: "?" + urlencode({k: v for k, v in (("check", check), ("source", source), ("offset", off)) if v})
         return await self.templates.TemplateResponse(request, "review.html", {
-            "title": "Review", "subtitle": "One card per food record with pending values", "items": items, "facets": facets, "snapshot_day": days[0]["day"] if days else None, "check": check, "source": source, "offset": offset,
+            "title": "Review", "subtitle": "One card per food record with pending values", "items": items, "facets": facets, "snapshot_day": snap["day"] if snap else None, "check": check, "source": source, "offset": offset,
             "back": request.url.path + (f"?{request.url.query}" if request.url.query else ""),
             "prev": page(max(offset - PAGE_SIZE, 0)) if offset else None,
             "next": page(offset + PAGE_SIZE) if offset + PAGE_SIZE < facets["total"] else None,

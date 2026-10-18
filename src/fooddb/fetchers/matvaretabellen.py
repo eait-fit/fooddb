@@ -8,6 +8,7 @@ from fooddb import ingest
 from fooddb.fetchers import download, json_items
 
 URL = "https://www.matvaretabellen.no/api/en/foods.json"
+URL_NB = "https://www.matvaretabellen.no/api/nb/foods.json"  # the same table, Norwegian names
 FETCHER = "matvaretabellen"
 LICENCE = "NLOD-2.0"
 ATTRIBUTION = ("Contains data from Matvaretabellen (https://www.matvaretabellen.no), Norwegian Food Safety "
@@ -29,7 +30,8 @@ def _groups(group: str | None) -> list[str]:
     return [f"matvaretabellen:{'.'.join(parts[:n])}" for n in range(len(parts), 0, -1) if group]
 
 
-def records(foods, observed_at: datetime):
+def records(foods, observed_at: datetime, native: dict[str, str] | None = None):
+    """`native` maps a foodId to its Norwegian name."""
     for f in foods:
         values = {tag: float(q["quantity"]) for key, (tag, unit) in ENERGY.items()
                   if (q := f.get(key) or {}).get("quantity") is not None and q.get("unit") == unit}
@@ -42,7 +44,13 @@ def records(foods, observed_at: datetime):
         yield ingest.Record(
             id=f"matvaretabellen:{f['foodId']}", source="matvaretabellen", layer="core", licence=LICENCE,
             name=name, lang="en", values=values, observed_at=observed_at, categories=_groups(f.get("foodGroupId")),
+            names={"nb": nb} if (nb := (native or {}).get(f["foodId"])) else {},
         )
+
+
+def names(foods) -> dict[str, str]:
+    """foodId → name, from one language's food list."""
+    return {f["foodId"]: n for f in foods if f.get("foodId") and (n := (f.get("foodName") or "").strip())}
 
 
 def fetch(force: bool = False) -> tuple[int, int] | None:
@@ -52,4 +60,7 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
         ref = download(URL, tmp)
         if not force and ingest.already_done(FETCHER, ref):
             return None
-        return ingest.run(FETCHER, ref, records(json_items(tmp, "foods"), datetime.now(UTC)))
+        with tempfile.TemporaryFile() as nb:
+            download(URL_NB, nb)
+            native = names(json_items(nb, "foods"))
+        return ingest.run(FETCHER, ref, records(json_items(tmp, "foods"), datetime.now(UTC), native))

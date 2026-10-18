@@ -295,8 +295,8 @@ licence, record}`. An image is the same:
 Cost: EUR 0 a month, no new infrastructure, no backup change, and no bytes distributed by us.
 
 **Switch to a mirror when** API customers are to receive image URLs, or earlier if hotlinks to OFF
-fail visibly (broken cards), or if answers must be reproducible by `?snapshot=` (a hotlink changes
-when a contributor re-selects an image). Then:
+fail visibly (broken cards), or if the bytes behind a served answer must be stable over time (a
+hotlink changes when a contributor re-selects an image). Then:
 
 - Store: **Cloudflare R2 with a custom domain**, public bucket, key `off/<gtin14>/<kind>_<lang>.<rev>.400.jpg`.
   Reason: zero egress, USD 1.50 to 2.40 a month at full scale, an R2 credential pattern already

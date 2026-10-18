@@ -54,7 +54,7 @@ stop: ## Stop the stack and keep the data
 
 update: ## Pull the latest code, rebuild and restart
 	git pull --ff-only
-	$(COMPOSE) up -d --build
+	GIT_SHA=$$(git rev-parse HEAD) $(COMPOSE) up -d --build
 
 uninstall: ## Stop the stack and DELETE the data (asks first; yes=1 skips)
 	@if [ "$(yes)" != 1 ]; then printf 'This deletes the fooddb database and all its data. Type yes to continue: '; read a; [ "$$a" = yes ] || { echo Aborted.; exit 1; }; fi

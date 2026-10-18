@@ -66,10 +66,10 @@ fooddb has three processes, and all of them come from one image (`Dockerfile:1`)
   database (`jobs.py:14`).
 - The **CLI** (`cli.py`) applies migrations, runs one job in the foreground, and shows the status.
   `fooddb lookup` calls the API function in its own process, not over HTTP (`cli.py:106`).
-  `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes one day's
-  snapshot to a file with the same code as the export endpoint (`cli.py:110`). `fooddb keys`
-  creates, lists and revokes API keys (`cli.py:131`). `fooddb dump odbl` writes the ODbL dump now
-  (`cli.py:155`).
+  `fooddb mcp` runs the MCP server on stdio for a local client. `fooddb export` writes the
+  current snapshot to a file with the same code as the export endpoint (`cli.py:150`). `fooddb keys`
+  creates, lists and revokes API keys (`cli.py:190`). `fooddb dump odbl` writes the ODbL dump now
+  (`cli.py:173`).
 
 The worker reads label photos through the model port: OpenRouter on a server, or a local agent
 (see [Label reads](#label-reads)).
@@ -84,8 +84,9 @@ The worker never fetches the full OFF dump on a schedule. An operator starts it 
 (`jobs.py:75`, [deploy.md](deploy.md#load-the-full-open-food-facts-dump)).
 
 A consumer that keeps a local copy, such as eait, reads the snapshot export. See
-[`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). The eait job that loads the export
-is not built. See [Planned, not built](#planned-not-built).
+[`GET /v1/snapshots/{day}/export`](#get-v1snapshotsdayexport). eait's leading backend checks
+`built_at` hourly and loads the export when it changed; the check is the cheap `GET /v1/snapshots`
+list, and the export downloads only on a new build.
 
 ## Deployment
 
@@ -161,8 +162,10 @@ flowchart TD
     tabsrc["BLS (in a zip), CIQUAL, CoFID, Frida and MEXT xlsx, Fineli and TFDA zip of CSV,<br/>Matvaretabellen JSON"] -->|"stream to a tempfile, then row by row"| tabrec["bls, ciqual, cofid, fineli, frida, matvaretabellen, mext, tfda<br/>records()"]
     tabrec --> run
     offsrc["OFF delta or dump, jsonl.gz"] -->|"stream, gunzip line by line"| offrec["off.records()<br/>gtin.normalize, per_100, basis, categories, labels"]
+    reg["recipe registry<br/>(recipes.py)"] -->|"computed from ingredient records,<br/>never typed"| rrec["recipes.build()<br/>review_all: every value waits"]
     fdcrec --> run["ingest.run()<br/>batches of 500 records"]
     offrec --> run
+    rrec --> run
     run --> fr[("fetch_run<br/>running, done, failed")]
     run -->|"one new product per new record"| prod[("product")]
     run --> chk["checks.category(), checks.flags()"]
@@ -725,6 +728,36 @@ A brand upload is the same shape as a label read with another source. The photo 
   no-referrer`. The page never shows the key again. The key is in the body of the post, not in the
   URL, so the access log does not have it.
 
+### Recipes
+
+Dishes that no open composition table carries are built from ingredient records (`recipes.py`). A
+recipe in the `RECIPES` registry names ingredient record ids with their grams in the raw mix, a
+cooked yield (served weight ÷ raw mix) and a citation: a public recipe or `fooddb editorial` with
+the reasoning written down.
+
+- `recipes.compute` weighs each ingredient's newest accepted per-100 g values into the cooked
+  dish's: `Σ grams × value / (Σ grams × yield)` per nutrient (`recipes.py:196`). CHOCDF-only
+  ingredients (FDC) contribute `CHOCDF − FIBTG` as CHOAVL, so US and EU rows can share one dish. A
+  nutrient stated by less than 90 % of the raw mix is dropped rather than understated, and the
+  review list names it (`recipes.report`, `fooddb recipes`). Computed values are rounded to six
+  significant digits so a rebuild with unchanged ingredients stores nothing.
+- `recipes.build` stores the values through `ingest.run` under the source `recipe` in the `core`
+  layer with `review_all`: every value waits in the review queue, and the record is invisible until
+  a person has accepted it once (`recipes.py:224`). Each recipe declares a plausible kcal band per
+  100 g; an outlier carries the flag `recipe-kcal-outside-band` for the reviewer. The build runs
+  inside `build_snapshot`, so every snapshot first recomputes the recipes (`jobs.py:80`), and a
+  manual `fooddb run recipes` does the same outside the schedule. A changed ingredient or
+  formulation stores new pending values while the last accepted ones keep serving.
+- One recipe makes two records sharing one product through `ingest.Record.group`: `recipe:<slug>`
+  with the English name the eait matcher keys on and `recipe:<slug>.ru` with the Russian one. Both
+  hold the same computed values, so the Russian record is reviewed too and invisible before that.
+- Recipe records do not take part in matching (`match.py:39`): a merge with a branded or crowd
+  record would bury the reviewed values. Their source ranks below every table in the resolver, so a
+  real table entry for the same dish wins over a computed one.
+- The licence tag on a recipe record and its values is the most restrictive among its ingredients'
+  licences; `resolve.attribution` serves the union of the ingredient sources' texts
+  (`resolve.py:150`).
+
 ### Match records into products
 
 `match.run` loads every record with its newest accepted energy and macros (`match.py:25`). Splink
@@ -780,10 +813,9 @@ flowchart LR
    into `merge_log` with `by` and `note`.
 
 `resolve.canonical` follows `merged_into`. Thus a restored id answers as itself at once. The
-snapshot read collects values over the live `merged_into` links. After a split, the survivor's
-values of a past day are what that day froze for it, because the build wrote them under its id. The
-next build writes the values of both products for today. A pin on a past day for the restored id
-has no values, because that day froze them under the survivor.
+snapshot read collects values over the live `merged_into` links. After a split, the survivor keeps
+the values the build froze under its id until the next build, which writes the values of both
+products.
 
 The SQLAdmin view `merge-log` lists `merge_log`. Its split action splits the records of a `merge`
 row out of the product that the row's survivor answers as now (`admin.py:134`). Each `merge` row has a **Split** button, and the Actions menu splits several (`admin.py:177`).
@@ -835,27 +867,36 @@ has the source, the licence and the text to show (`resolve.py:107`).
 
 ### Snapshot
 
-`snapshot.build` writes the resolved values of all products for the current UTC day, in one
-transaction (`snapshot.py:17`). It writes two scopes: `core` (core layer only) and `all` (core and
-OFF). The build takes no day argument. It writes only today (`snapshot.py:13`). It ends with
-`analyze snapshot_value`. Autovacuum analyzes the table a night later. Until then the planner does
-not know the size of the new day, and it joins the whole day for each read.
+`snapshot.build` rewrites the resolved values of the products that changed since the last build,
+in one transaction (`snapshot.py:33`). It writes two scopes: `core` (core layer only) and `all`
+(core and OFF). `snapshot.build(full=True)` — `fooddb run snapshot --full` — rewrites every
+product, and so does any build while no snapshot exists yet. The build takes no day argument. It
+writes only today (`snapshot.py:17`). It ends with `analyze snapshot_value`. Autovacuum analyzes
+the table a night later. Until then the planner does not know the size of the new rows, and it
+joins the whole table for each read.
 
-A day is final when it is over. Until then, a second build on the same day replaces that day
-(`snapshot.py:22`). The nightly build and the rebuild after a fetcher's first data both write
-today. Thus a pin on today can change during the day, but a pin on an earlier day cannot. The build
-deletes days that are more than 30 days older than the new day (`snapshot.py:34`).
+The changed products come from `snapshot_dirty` plus both ends of every `merge_log` row newer
+than the last `built_at` (`snapshot.py:21`). Statement-level triggers on `observation` (new
+values, withdrawals, review decisions and undo — an undo clears `reviewed_at`, so no timestamp
+sees it), and row-level triggers on `food` (a record moving product or layer, or deleted) and
+`product` (`merged_into` changing, or deleted) keep `snapshot_dirty` (`0018`). The build drains it
+inside the same transaction, so a change committed mid-build survives in the table and the next
+build picks it up. A build rewrites a changed product in both scopes, whatever it touched.
 
-The API reads values from the newest snapshot, or from the day that `?snapshot=` pins
-(`resolve.py:135`). Before the first snapshot exists, the API resolves values live
-(`resolve.py:141`). The snapshot holds only values. Record lists, names and merges always come from
-the live tables (`resolve.py:131`). Each of these fields carries the record that it is read from,
+One snapshot exists, the current one. `snapshot` keeps one row: its `day` and `built_at` are the
+last build's (`snapshot.py:68`), which is what the API, the export and the freshness check read.
+`snapshot_value` is not day-keyed. Inside one transaction a read never sees a half-built state.
+There is no `final` flag and no date pin.
+
+The API reads values from the current snapshot (`resolve.py:195`). Before the first snapshot
+exists, the API resolves values live (`resolve.py:206`). The snapshot holds only values. Record
+lists, names and merges always come from the live tables (`resolve.py:111`). Each of these fields carries the record that it is read from,
 so its licence tag is correct for the record that is served now.
 
 `snapshot_value` is keyed by the product id at build time. A merge after the build moves records to
 the survivor, but the old values stay under the merged-away id. Thus the snapshot read follows
 `merged_into` backwards. It collects the values of each product and of every product merged into
-it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:72`). The
+it. It picks one value per nutrient with the same `pick_sql` rule (`resolve.py:81`). The
 snapshot keeps only the winner of each old id. Thus agreement counts those winners, not every value
 that the build saw. An approved label read always wins its old id, and `snapshot_value.approved`
 keeps that flag. Thus the override holds after a merge. The result is the value that the build would have frozen if the merge had come
@@ -977,7 +1018,8 @@ erDiagram
     product |o--o{ product : "merged_into"
     product ||--o{ food : "product_id"
     food ||--o{ observation : "food_id"
-    snapshot ||--o{ snapshot_value : "day, on delete cascade"
+    snapshot ||--o{ snapshot_value : "the current one"
+    observation ||--o{ snapshot_dirty : "triggers mark changed products"
     product ||--o{ merge_log : "from_product, into_product"
     food ||--o{ cannot_link : "food_a, food_b"
     account |o--o{ api_key : "account_id"
@@ -1030,7 +1072,6 @@ erDiagram
         int products
     }
     snapshot_value {
-        date day PK,FK
         text scope PK "core or all"
         bigint product_id PK "no FK"
         text nutrient PK
@@ -1041,6 +1082,9 @@ erDiagram
         text licence
         timestamptz observed_at
         boolean approved "an approved label read"
+    }
+    snapshot_dirty {
+        bigint product_id PK "a product the next build rewrites"
     }
     fetch_run {
         bigint id PK
@@ -1142,7 +1186,7 @@ erDiagram
     }
 ```
 
-Fourteen Alembic migrations make this schema:
+Eighteen Alembic migrations make this schema:
 
 - `0001` enables `pg_trgm` and creates `food`, `observation` and `fetch_run`
   (`alembic/versions/0001_initial_schema.py:16`). Its `food_value` view was the first resolver.
@@ -1171,6 +1215,12 @@ Fourteen Alembic migrations make this schema:
 - `0014` adds `request_log` with an index on `at`, and `admin_action`
   (`alembic/versions/0014_admin_panel.py:15`). Neither table has a foreign key, so the log keeps
   its rows if a key or an account goes away.
+- `0015` adds `food.images` (`alembic/versions/0015_food_images.py:16`), `0016` adds `food.markets`
+  (`alembic/versions/0016_food_markets.py:16`), and `0017` drops every snapshot day but the newest
+  (`alembic/versions/0017_one_snapshot.py:15`).
+- `0018` drops `snapshot_value.day`, adds `snapshot_dirty` and the triggers that fill it
+  (`alembic/versions/0018_incremental_snapshot.py:75`). It seeds the table with every product, so
+  the first incremental build replays a full one and misses nothing the triggers never saw.
 
 `observation` has no unique key. The comparison in `_observations` makes a re-run idempotent.
 The index `observation_latest_idx` serves the "newest per record and nutrient" queries.
@@ -1189,25 +1239,17 @@ sequenceDiagram
     participant A as api.by_barcode
     participant R as resolve.products
     participant P as Postgres
-    Cl->>A: GET /v1/products/{barcode}?include=off&snapshot=2026-10-04
+    Cl->>A: GET /v1/products/{barcode}?include=off
     A->>A: gtin.normalize(barcode)
     alt not a valid global GTIN
         A-->>Cl: 422
     end
     A->>P: product ids from food, gtin14 = code, layer in core and off
-    A->>R: products(pids, include, snapshot)
+    A->>R: products(pids, include)
     R->>P: follow product.merged_into to the survivor
-    alt snapshot is given
-        R->>P: does snapshot.day = 2026-10-04 exist?
-        alt no
-            R-->>A: NoSnapshot
-            A-->>Cl: 404 no snapshot for 2026-10-04
-        end
-    else snapshot is not given
-        R->>P: max(day) from snapshot
-    end
+    R->>P: max(day) from snapshot
     R->>P: records from food, always live
-    alt a snapshot day is known
+    alt a snapshot exists
         R->>P: which ids have merged-in ids?
         R->>P: values from snapshot_value, scope all, as stored
         R->>P: merge-follow and pick_sql, only for the ids with merged-in ids
@@ -1224,21 +1266,20 @@ sequenceDiagram
 
 `by_barcode` (`api.py:77`) does these steps:
 
-1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:79`).
-2. It finds the products that have a record with this GTIN in the visible layers (`api.py:82`).
-   Without `include=off`, only the `core` layer is visible (`resolve.py:107`).
-3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:111`). A
+1. It normalises the barcode. An invalid or non-global GTIN gets 422 (`api.py:124`).
+2. It finds the products that have a record with this GTIN in the visible layers (`api.py:127`).
+   Without `include=off`, only the `core` layer is visible (`resolve.py:160`).
+3. `resolve.products` follows `merged_into` to the survivor product (`resolve.py:164`). A
    merged-away id thus answers as its survivor, with the survivor's id.
-4. With `?snapshot=`, it checks that the day exists. A day that does not exist gets 404
-   (`resolve.py:138`, `api.py:23`). Without `?snapshot=`, it uses the newest day.
-5. It reads the records of each product from the live `food` table (`resolve.py:140`). The most
+4. It reads the day of the one current snapshot (`resolve.py:195`).
+5. It reads the records of each product from the live `food` table (`resolve.py:111`). The most
    trusted, newest record gives the name, brand, language, serving, category and flags.
-   Each barcode is tagged with the most trusted record that has it (`resolve.py:152`).
-6. It reads the values from `snapshot_value` for the day and scope. The scope is `all` with
-   `include=off`, else `core` (`resolve.py:135`). The values include those of every product merged
-   into this one after the build (`resolve.py:72`). If no snapshot exists, it resolves live.
+   Each barcode is tagged with the most trusted record that has it (`resolve.py:127`).
+6. It reads the values from `snapshot_value` for the scope. The scope is `all`
+   with `include=off`, else `core` (`resolve.py:195`). The values include those of every product
+   merged into this one after the build (`resolve.py:81`). If no snapshot exists, it resolves live.
 7. No visible product gets 404. Without `include=off`, the message suggests `include=off`
-   (`api.py:85`).
+   (`api.py:140`).
 
 The product shape (API version 0.3.0):
 
@@ -1258,7 +1299,7 @@ the OFF layer, and no ODbL tag is in it.
 
 The other read endpoints use the same `resolve.products` call:
 
-- `GET /v1/foods?q=` searches `food.name` with `pg_trgm` word similarity (`api.py:49`).
+- `GET /v1/foods?q=` searches `food.name` with `pg_trgm` word similarity, diacritics folded away on both sides through `f_unaccent` (`api.py:49`). With `?country=` the country's synonyms rewrite the query first (AT Erdäpfel → Kartoffel), and every variant is searched with each product keeping its best score (`search.by_name`).
 - `GET /v1/foods/{product_id}` reads one product (`api.py:64`).
 - `GET /v1/records/{record_id}` finds the product of one source record (`api.py:69`).
 
@@ -1272,11 +1313,11 @@ sequenceDiagram
     participant R as resolve.products
     participant P as Postgres
     Cl->>A: GET /v1/snapshots
-    A->>P: day, built_at, products from snapshot
-    A-->>Cl: days, newest first, final when the day is over
+    A->>P: the one row of snapshot: day, built_at, products
+    A-->>Cl: the current snapshot: day, built_at, products
     Cl->>A: GET /v1/snapshots/2026-10-04/export?include=off, If-None-Match
     A->>P: built_at of 2026-10-04
-    alt no snapshot for the day
+    alt 2026-10-04 is not the current snapshot
         A-->>Cl: 404
     else If-None-Match has the ETag
         A-->>Cl: 304, no body
@@ -1284,7 +1325,7 @@ sequenceDiagram
         A-->>Cl: 200 NDJSON stream, ETag, Last-Modified, gzip on request
         G->>P: begin repeatable read, server-side cursor on IDS_SQL
         loop one batch of 1000 product ids
-            G->>R: products(batch, include, day, conn)
+            G->>R: products(batch, include, conn)
             R->>P: records, snapshot values
             G-->>Cl: one JSON line per product
         end
@@ -1294,25 +1335,25 @@ sequenceDiagram
 The export router is in `export.py`. The app adds it with `include_router` and the `read`
 dependency (`api.py:31`). See [Authentication](#authentication).
 
-- `GET /v1/snapshots` lists the days, newest first (`export.py:34`). `final` is true when the day
-  is before today (UTC). `products` counts the products with values in the `all` scope at build
-  time, before later merges.
-- `GET /v1/snapshots/{day}/export` gets 404 for a day with no snapshot (`export.py:81`). The ETag
-  is weak and is made of the day, the scope and `built_at`. A final day is never rebuilt, so its
-  ETag never changes. A matching `If-None-Match` gets 304 (`export.py:87`).
+- `GET /v1/snapshots` lists the one current snapshot (`export.py:73`): its day, `built_at` and
+  `products`, the count of products with values in the `all` scope at build time, before later
+  merges. A consumer syncs when `built_at` changes.
+- `GET /v1/snapshots/{day}/export` gets 404 for every day but the current snapshot's
+  (`export.py:83`). The ETag is weak and is made of the day, the scope and `built_at`, so a rebuild
+  changes it. A matching `If-None-Match` gets 304 (`export.py:90`).
 - `export.products` reads in one repeatable-read transaction (`export.py:46`). A rebuild or a
   merge during the export does not change what it sends. `export.lines` makes one JSON line of
   each product. The ODbL dump uses `export.products` too.
-- `IDS_SQL` selects every product with values that day, and follows `merged_into` to the survivor
-  (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
-  (`export.py:53`). Each batch goes through `resolve.products`, so each line has the shape of
-  `GET /v1/foods/{id}?snapshot=`. The process never holds the full export in memory.
+- `IDS_SQL` selects every product with values in the snapshot, and follows `merged_into` to the
+  survivor (`export.py:23`). A server-side cursor fetches the ids in batches of `BATCH` (1000)
+  (`export.py:52`). Each batch goes through `resolve.products`, so each line has the shape of
+  `GET /v1/foods/{id}`. The process never holds the full export in memory.
 - The export reads about 7000 products per second, the same at 20,000 and at 100,000 products.
   `scripts/bench_export.py` measures this on a development database that it seeds with synthetic
   products ([#31](https://github.com/eait-fit/fooddb/issues/31)).
-- With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:90`).
-- `fooddb export --day --include-off --out` writes the same lines to a file, gzipped when the name
-  ends in `.gz` (`cli.py:110`).
+- With `gzip` in `Accept-Encoding`, `export.gzipped` compresses the stream (`export.py:94`).
+- `fooddb export --include-off --out` writes the same lines to a file, gzipped when the name
+  ends in `.gz` (`cli.py:150`).
 
 ### `GET /v1/dumps`
 
@@ -1325,11 +1366,11 @@ sequenceDiagram
     participant Cl as Anyone
     participant A as dump.download
     Wk->>D: dump_odbl()
-    D->>D: newest day before today (UTC)
-    alt no final day
+    D->>D: the current snapshot's day
+    alt no snapshot yet
         D-->>Wk: None, nothing written
     else
-        loop each product of the day, include=off
+        loop each product of the snapshot, include=off
             E-->>D: product, as the export sends it
             D->>D: odbl(): keep off records and ODbL-tagged fields, skip products with no off record
         end
@@ -1349,8 +1390,8 @@ sequenceDiagram
 
 `dump.py` writes and serves the monthly ODbL dump of the Open Food Facts layer.
 
-- `dump.write` dumps the newest final day: the newest snapshot day before today (UTC)
-  (`dump.py:47`). It reads the products with `export.products(day, "off")`, the same generator as
+- `dump.write` dumps the current snapshot (`dump.py:53`). It reads the products with
+  `export.products(day, "off")`, the same generator as
   the export. Thus each line has the export's shape, with the parts that are not ODbL removed.
 - `dump.odbl` keeps a product only when it has an `off:` record (`dump.py:31`). It keeps the
   product id, the snapshot day and the `off:` record ids. It keeps each field, barcode and
@@ -1389,7 +1430,7 @@ flowchart LR
   nothing about the age of the data. A database error gives a 500, not a 200.
 - `/healthz` shows freshness (`api.py:42`). It compares each `fetcher_check` row and the newest
   `snapshot.built_at` with a maximum age (`health.py:12`): `off-delta` 12 h, `fdc-foundation`,
-  `fdc-sr_legacy`, `bls`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
+  `fdc-sr_legacy`, `fdc-survey`, `bls`, `ciqual`, `cofid`, `frida`, `matvaretabellen`, `mext` and `tfda` 8 days, and `snapshot` 26 h. `fdc-branded` and
   `fineli` (8 days) count only when they are on (`health.py:35`). One stale entry or one entry with
   no row gives 503.
 - A fetch that finds nothing new also counts as a successful check (`health.py:40`,
@@ -1425,7 +1466,7 @@ calls the REST handler for the same read, so MCP and REST cannot answer differen
 
 - `include_off: true` becomes `include=off`. Without it, the tools return only the `core` layer.
   Each value keeps its `licence` tag, as in REST.
-- `snapshot` pins a day, as `?snapshot=` does. `q` and `limit` have the same limits as REST.
+- `q` and `limit` have the same limits as REST.
 - A 404, 409 or 422 from the handler becomes an MCP tool error with the same message.
 - Over HTTP, the FastAPI lifespan runs the SDK's session manager. The route is stateless, so any
   API replica can answer any request.
@@ -1569,9 +1610,9 @@ flowchart LR
     listing -.->|"X-RapidAPI-Proxy-Secret"| auth
     auth --> api
     snap --> exp
-    exp -.->|"nightly refresh"| eaitc
+    exp -->|"built_at check hourly, export on change"| eaitc
     classDef planned stroke-dasharray: 5 5
-    class tables,eaitp,devin,listing,eaitc planned
+    class tables,eaitp,devin,listing planned
 ```
 
 - **Intake.** Other national composition tables: Korea MFDS
@@ -1582,5 +1623,3 @@ flowchart LR
 - **Model port.** A Devin backend. The port has OpenRouter, Claude Code and Codex CLI.
 - **RapidAPI listing.** The listing itself, which sells the REST API. The API already accepts the
   listing's proxy secret as a `read` key. See [Authentication](#authentication).
-- **eait as a consumer.** eait keeps a read-only local copy and refreshes it from the snapshot
-  export. The export exists. The eait job that loads it does not.

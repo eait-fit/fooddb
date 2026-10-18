@@ -28,14 +28,22 @@ def worker() -> None:
     """Register periodic fetches and process jobs until stopped."""
     from datetime import timedelta
 
+    from loguru import logger
     from pq.logging import configure_logging
     from pq.worker import run_worker
 
-    from fooddb.jobs import RUNTIME, queue, schedule
+    from fooddb import ingest
+    from fooddb.jobs import RUNTIME, queue, reap_orphans, schedule
 
     from fooddb.db import engine
 
     configure_logging()
+    # A deploy recreate SIGKILLs the worker before its drain can close a running task: the row
+    # stays RUNNING and this boot's upsert of it would only park, so the bootstrap fetch the
+    # deploy added would never retry. One worker owns the queue — reap what the last one left.
+    reap_orphans()
+    if n := ingest.fail_abandoned():
+        logger.warning(f"closed {n} fetch runs a dead worker left running")
     schedule()
     # The parent forks every task: it must hold no pooled connection a child would inherit
     # (psycopg then collides on prepared statements across processes).
@@ -68,10 +76,10 @@ def mcp() -> None:
 
 @app.command()
 def enqueue(
-    fetcher: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | snapshot | odbl-dump"),
+    fetcher: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     max_files: int = typer.Option(1, help="off: newest N delta files"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
-    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
+    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | survey | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
 ) -> None:
     """Queue a fetch for the worker."""
@@ -83,10 +91,12 @@ def enqueue(
 
 @app.command()
 def run(
-    job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | snapshot | odbl-dump"),
+    job: str = typer.Argument(help="off | off-dump | off-images | fdc | table | match | recipes | snapshot | odbl-dump"),
     limit: int = typer.Option(0, help="off-images: at most N records (0: all)"),
-    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | branded"),
+    dataset: str = typer.Option("foundation", help="fdc: foundation | sr_legacy | survey | branded"),
     source: str = typer.Option("ciqual", help="table: bls | ciqual | cofid | fineli | frida | matvaretabellen | mext | tfda"),
+    full: bool = typer.Option(False, "--full", help="snapshot: rewrite every product, not just the changed ones"),
+    force: bool = typer.Option(False, "--force", help="table, fdc, off-dump: load again even when this release is already loaded"),
 ) -> None:
     """Run a job in this process instead of queueing it: for loads longer than the worker's
     per-task timeout (the full OFF dump takes hours)."""
@@ -95,10 +105,25 @@ def run(
     from fooddb import jobs
 
     configure_logging()
-    kwargs = {"off-images": {"limit": limit or None}, "fdc": {"dataset": dataset}, "table": {"source": source}}.get(job, {})
+    kwargs = {"off-images": {"limit": limit or None}, "fdc": {"dataset": dataset}, "table": {"source": source},
+              "snapshot": {"full": full}}.get(job, {})
+    if force and job in ("table", "fdc", "off-dump"):
+        kwargs["force"] = True
     {"off": jobs.fetch_off_deltas, "off-dump": jobs.fetch_off_dump, "fdc": jobs.fetch_fdc, "table": jobs.fetch_table,
      "match": jobs.match_products, "snapshot": jobs.build_snapshot, "odbl-dump": jobs.dump_odbl,
-     "off-images": jobs.backfill_off_images}[job](**kwargs)
+     "off-images": jobs.backfill_off_images, "recipes": jobs.build_recipes}[job](**kwargs)
+
+
+names_app = typer.Typer(no_args_is_help=True, help="Names a record carries beyond its own.")
+app.add_typer(names_app, name="names")
+
+
+@names_app.command("load-mt")
+def names_load_mt() -> None:
+    """Sync the agent-written names of data/names/mt/*.tsv into food_name (origin='mt'). Idempotent."""
+    from fooddb.names import load_mt
+
+    typer.echo(json.dumps(load_mt()))
 
 
 match_app = typer.Typer(no_args_is_help=True, help="Product matching.")
@@ -122,6 +147,14 @@ def match_train(out: Path = typer.Option(None, help="model file; default: $FOODD
 
 
 @app.command()
+def recipes() -> None:
+    """The recipe layer's review list: each dish's formulation, citation and computed values."""
+    from fooddb import recipes as r
+
+    typer.echo(r.report())
+
+
+@app.command()
 def status() -> None:
     """Row counts, recent fetch runs and queue state."""
     from fooddb.db import engine
@@ -140,19 +173,17 @@ def status() -> None:
 
 @app.command()
 def export(
-    day: str = typer.Option(..., help="UTC day of the snapshot, YYYY-MM-DD"),
     include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)"),
     out: Path = typer.Option(..., help="NDJSON file, gzipped when the name ends in .gz"),
 ) -> None:
-    """Write one day's snapshot as NDJSON, one product per line: the same lines as the export endpoint."""
-    from datetime import date
-
+    """Write the current snapshot as NDJSON, one product per line: the same lines as the export endpoint."""
     from fooddb import export as ex
 
-    if ex.built_at(date.fromisoformat(day)) is None:
-        typer.echo(f"no snapshot for {day}", err=True)
+    snap = ex.current()
+    if snap is None:
+        typer.echo("no snapshot yet", err=True)
         raise typer.Exit(1)
-    chunks = ex.lines(date.fromisoformat(day), "off" if include_off else None)
+    chunks = ex.lines(snap["day"], "off" if include_off else None)
     with out.open("wb") as f:
         for chunk in ex.gzipped(chunks) if out.suffix == ".gz" else chunks:
             f.write(chunk)
@@ -165,13 +196,13 @@ app.add_typer(dump_app, name="dump")
 
 @dump_app.command("odbl")
 def dump_odbl(out: Path = typer.Option(None, help="directory; default: $FOODDB__BACKEND__DUMP_DIR, else ./dumps")) -> None:
-    """Write the ODbL dump of the Open Food Facts layer of the newest final snapshot day, with its manifest.
+    """Write the ODbL dump of the Open Food Facts layer of the current snapshot, with its manifest.
     Keeps the newest $FOODDB__BACKEND__DUMP_KEEP dumps (default 3) in the directory."""
     from fooddb import dump
 
     m = dump.write(out)
     if m is None:
-        typer.echo("no final snapshot day yet", err=True)
+        typer.echo("no snapshot yet", err=True)
         raise typer.Exit(1)
     typer.echo(f"wrote {m['name']}: {m['products']} products, {m['size']} bytes")
 
@@ -250,20 +281,21 @@ def accounts_set_unlimited(email: str, off: bool = typer.Option(False, "--off", 
 @app.command()
 def lookup(barcode: str, include_off: bool = True) -> None:
     """Look up a product by barcode."""
-    from fastapi import HTTPException
+    from fooddb import gtin, search
 
-    from fooddb.api import by_barcode as product
-
-    try:
-        typer.echo(json.dumps(product(barcode, "off" if include_off else None), default=str, indent=2))
-    except HTTPException as e:
-        typer.echo(f"{barcode}: {e.detail}", err=True)
+    code = gtin.normalize(barcode)
+    items = search.by_barcode(code, "off" if include_off else None) if code else []
+    if not items:
+        typer.echo(f"{barcode}: " + ("product not found" if code else "not a valid global GTIN"), err=True)
         raise typer.Exit(1)
+    typer.echo(json.dumps({"items": items}, default=str, indent=2))
 
 
 @app.command()
-def search(query: str, limit: int = typer.Option(5, min=1, max=100), include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)")) -> None:
+def search(query: str, limit: int = typer.Option(5, min=1, max=100), include_off: bool = typer.Option(False, help="add the Open Food Facts layer (ODbL)"),
+           country: str | None = typer.Option(None, help="prefer that country's sources (ISO 3166-1 alpha-2)")) -> None:
     """Search foods by name."""
-    from fooddb.api import search as foods
+    from fooddb import search as find
 
-    typer.echo(json.dumps(foods(q=query, include="off" if include_off else None, limit=limit, snapshot=None), default=str, indent=2))
+    items = find.by_name(query, "off" if include_off else None, limit, country)
+    typer.echo(json.dumps({"items": items}, default=str, indent=2))

@@ -3,7 +3,6 @@
 import gzip
 import hashlib
 import json
-from datetime import date
 
 import pytest
 
@@ -20,12 +19,6 @@ OFF_HUMMUS = dict(id="off:00000000000017", source="off", layer="off", licence=OD
 def dumps(monkeypatch, tmp_path):
     monkeypatch.setenv("FOODDB__BACKEND__DUMP_DIR", str(tmp_path))
     return tmp_path
-
-
-def on_day(monkeypatch, day: str) -> None:
-    from fooddb import snapshot
-
-    monkeypatch.setattr(snapshot, "today", lambda: date.fromisoformat(day))
 
 
 def dump_lines(path) -> list[dict]:
@@ -46,10 +39,9 @@ def fixture_days(monkeypatch) -> None:
     ingest.run("t", "r1", [rec(), rec(**OFF_HUMMUS), rec(**OFF), rec(id="fdc:9", name="Lentils, raw")])
     merge("fdc:1", "off:00000000000017")
     build_on(monkeypatch, "2026-10-01")
-    build_on(monkeypatch, "2026-10-02")  # today: not final, so not dumped
 
 
-def test_job_dumps_only_the_odbl_part_of_the_newest_final_day(monkeypatch, dumps):
+def test_job_dumps_only_the_odbl_part_of_the_current_snapshot(monkeypatch, dumps):
     from fooddb import jobs
 
     fixture_days(monkeypatch)
@@ -74,17 +66,16 @@ def test_job_dumps_only_the_odbl_part_of_the_newest_final_day(monkeypatch, dumps
     assert hummus["name"] is None  # FDC names the product
     assert [g["value"] for g in hummus["gtin14"]] == ["00000000000017"]
     assert hummus["snapshot"] == "2026-10-01"
-    full = client().get(f"/v1/foods/{hummus['id']}", params={"include": "off", "snapshot": "2026-10-01"}).json()
+    full = client().get(f"/v1/foods/{hummus['id']}", params={"include": "off"}).json()
     assert hummus["per_100"]["SUGAR"] == full["per_100"]["SUGAR"]  # the dump links back to the API by id
     spread = by_record["off:04006381333931"]
     assert spread["name"]["value"] == "Hummus classic" and spread["per_100"]["ENERC_KCAL"]["value"] == 300
 
 
-def test_no_final_day_writes_nothing(monkeypatch, dumps):
+def test_no_snapshot_writes_nothing(monkeypatch, dumps):
     from fooddb import dump, ingest
 
     ingest.run("t", "r1", [rec(**OFF)])
-    build_on(monkeypatch, "2026-10-01")
     assert dump.write() is None
     assert list(dumps.iterdir()) == []
 
@@ -95,7 +86,6 @@ def test_only_the_newest_dumps_are_kept(monkeypatch, dumps):
     ingest.run("t", "r1", [rec(**OFF)])
     for day in ("2026-07-01", "2026-08-01", "2026-09-01", "2026-10-01"):
         build_on(monkeypatch, day)
-        on_day(monkeypatch, "2026-12-31")
         dump.write()
     assert sorted(p.name for p in dumps.iterdir()) == [
         f"fooddb-off-odbl-2026-{m}-01.{ext}" for m in ("08", "09", "10") for ext in ("json", "ndjson.gz")]

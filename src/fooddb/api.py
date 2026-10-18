@@ -5,7 +5,6 @@ import base64
 import binascii
 import os
 from contextlib import asynccontextmanager
-from datetime import date
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
@@ -15,13 +14,12 @@ from mcp.server import MCPServer
 from mcp.server.mcpserver import Context
 from mcp.server.mcpserver.exceptions import ToolError
 from pydantic import BaseModel, Field
-from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 from starlette.routing import Route
 from starlette.templating import Jinja2Templates
 
 from fooddb import admin, auth, brands, dump, export, gtin, health, jobs, labels, portal, requestlog, resolve, review
-from fooddb.db import engine
+from fooddb import search as find
 from fooddb.labels import photos
 
 
@@ -51,20 +49,7 @@ def out_of_credits(_request: Request, e: auth.OutOfCredits) -> JSONResponse:
     return JSONResponse({"detail": e.detail, "buy": _buy_url()}, 402)
 
 
-def _pids(sql: str, **params) -> list[int]:
-    with engine().connect() as conn:
-        return list(conn.execute(text(sql), params).scalars())
-
-
-def _resolve(pids: list[int], include: str | None, snapshot: date | None) -> list[dict]:
-    try:
-        return resolve.products(pids, include, snapshot)
-    except resolve.NoSnapshot as e:
-        raise HTTPException(404, str(e))
-
-
-def _one(pids: list[int], include: str | None, what: str, snapshot: date | None = None) -> dict:
-    found = _resolve(pids, include, snapshot)
+def _one(found: list[dict], include: str | None, what: str) -> dict:
     if not found:
         raise HTTPException(404, f"{what} not found" + ("" if include == "off" else " in core; try include=off"))
     return found[0]
@@ -73,9 +58,7 @@ def _one(pids: list[int], include: str | None, what: str, snapshot: date | None 
 @app.get("/livez")
 def livez() -> dict:
     """The process is up and reaches the database. Says nothing about data freshness."""
-    with engine().connect() as conn:
-        n = conn.execute(text("select count(*) from product where merged_into is null")).scalar_one()
-    return {"ok": True, "products": n}
+    return {"ok": True, "products": health.live_products()}
 
 
 @app.get("/healthz")
@@ -85,42 +68,38 @@ def healthz() -> JSONResponse:
     return JSONResponse(r, status_code=200 if r["ok"] else 503)
 
 
+@app.get("/version")
+def version() -> dict:
+    """Code version and, when the image was built with a GIT_SHA build arg, the git sha it was built from."""
+    return {"version": app.version, "sha": os.environ.get("FOODDB__BACKEND__GIT_SHA") or None}
+
+
 @app.get("/v1/foods", dependencies=READ)
 def search(q: str = Query(min_length=2), include: str | None = None, limit: int = Query(20, ge=1, le=100),
-           snapshot: date | None = None) -> dict:
-    # Word similarity: a short query against a long name ("beans" in "Beans, snap, green, raw").
-    pids = _pids(
-        f"""select product_id from food
-           where layer = any(:layers) and {resolve.VISIBLE} and :q <% name
-           group by product_id
-           order by max(word_similarity(:q, name)) desc, min(length(name))
-           limit :limit""",
-        q=q, layers=resolve.layers_for(include), limit=limit,
-    )
-    return {"items": _resolve(pids, include, snapshot)}
+           country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: among equal name "
+                                       "matches, that country's sources rank first")) -> dict:
+    return {"items": find.by_name(q, include, limit, country)}
 
 
 @app.get("/v1/foods/{product_id}", dependencies=READ)
-def get_product(product_id: int, include: str | None = None, snapshot: date | None = None) -> dict:
-    return _one([product_id], include, "product", snapshot)
+def get_product(product_id: int, include: str | None = None) -> dict:
+    return _one(resolve.products([product_id], include), include, "product")
 
 
 @app.get("/v1/records/{record_id}", dependencies=READ)
-def get_record(record_id: str, include: str | None = None, snapshot: date | None = None) -> dict:
+def get_record(record_id: str, include: str | None = None) -> dict:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
-    pids = _pids(f"select product_id from food where id = :id and layer = any(:layers) and {resolve.VISIBLE}",
-                 id=record_id, layers=resolve.layers_for(include))
-    return _one(pids, include, "record", snapshot)
+    return _one(find.by_record(record_id, include), include, "record")
 
 
 @app.get("/v1/products/{barcode}", dependencies=READ)
-def by_barcode(barcode: str, include: str | None = None, snapshot: date | None = None) -> dict:
+def by_barcode(barcode: str, include: str | None = None,
+               country: str | None = Query(None, description="ISO 3166-1 alpha-2 code: order the "
+                                           "products by that country's preferred sources")) -> dict:
     code = gtin.normalize(barcode)
     if code is None:
         raise HTTPException(422, "not a valid global GTIN")
-    pids = _pids(f"select distinct product_id from food where gtin14 = :code and layer = any(:layers) and {resolve.VISIBLE}",
-                 code=code, layers=resolve.layers_for(include))
-    items = _resolve(pids, include, snapshot)
+    items = find.by_barcode(code, include, country)
     if not items:
         raise HTTPException(404, "product not found" + ("" if include == "off" else " in core; try include=off"))
     return {"items": items}
@@ -137,20 +116,38 @@ class Decision(BaseModel):
 
 
 @review_router.get("/v1/review")
-def review_queue(limit: int = Query(100, ge=1, le=1000)) -> dict:
-    """Values a failed check held back, grouped per source record, next to the values served now."""
-    return {"items": review.queue(limit)}
+def review_queue(limit: int = Query(100, ge=1, le=1000), offset: int = Query(0, ge=0),
+                 check: str | None = None, source: str | None = None, detail: bool = False) -> dict:
+    """Values a failed check held back, grouped per source record, next to the values served now.
+    `check` and `source` filter, `offset` pages, `detail` adds each record's latest values and a line
+    per failed check with its numbers."""
+    return {"items": review.queue(limit, offset=offset, check=check, source=source, detail=detail)}
 
 
-@review_router.post("/v1/review/{observation_id}")
-def decide_review(observation_id: int, body: Decision) -> dict:
-    """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
+@review_router.get("/v1/review/facets")
+def review_facets(check: str | None = None, source: str | None = None) -> dict:
+    """How many records wait in the queue: in total under both filters, per check under `source`,
+    per source under `check`."""
+    return review.facets(check=check, source=source)
+
+
+def _decide(observation_id: int, body: Decision, key_name: str | None) -> dict:
+    """`by` is who decided; when it differs from the caller's key name, both are recorded — a key
+    cannot sign as someone else."""
+    by = body.by if key_name is None or body.by == key_name else f"{body.by} (key {key_name})"
     try:
-        return review.decide(observation_id, body.decision, body.by, body.note)
+        return review.decide(observation_id, body.decision, by, body.note)
     except review.NotPending as e:
         raise HTTPException(409, str(e))
     except LookupError as e:
         raise HTTPException(404, str(e))
+
+
+@review_router.post("/v1/review/{observation_id}")
+def decide_review(request: Request, observation_id: int, body: Decision) -> dict:
+    """Accept a pending value (served from the next snapshot on) or reject it (never served)."""
+    caller = getattr(request.state, "caller", None)
+    return _decide(observation_id, body, caller.name if caller else None)
 
 
 class Split(BaseModel):
@@ -283,14 +280,16 @@ def _tool(handler, *args, **kwargs) -> dict:
         raise ToolError(e.detail)
 
 
-def _needs(ctx: Context, scope: str) -> None:
-    """Over HTTP, the caller the /mcp route authenticated must hold the scope. stdio is local and trusted."""
+def _needs(ctx: Context, scope: str) -> auth.Caller | None:
+    """Over HTTP, the caller the /mcp route authenticated must hold the scope; it is returned so a
+    tool can record who called. stdio is local and trusted: no caller."""
     request = ctx.request_context.request
     if request is None:
-        return
+        return None
     caller = request.scope.get("state", {}).get("caller")
     if caller is None or scope not in caller.scopes:
         raise ToolError(f"this tool needs an API key with the {scope} scope")
+    return caller
 
 
 def _include(include_off: bool) -> str | None:
@@ -299,29 +298,33 @@ def _include(include_off: bool) -> str | None:
 
 @mcp.tool()
 def search_foods(q: Annotated[str, Field(min_length=2)], limit: Annotated[int, Field(ge=1, le=100)] = 20,
-                 snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+                 include_off: bool = False,
+                 country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: among equal "
+                                                      "name matches, that country's sources rank first")] = None
+                 ) -> dict[str, Any]:
     """Search foods and products by name."""
-    return _tool(search, q=q, include=_include(include_off), limit=limit, snapshot=snapshot)
+    return _tool(search, q=q, include=_include(include_off), limit=limit, country=country)
 
 
 @mcp.tool()
-def get_product_by_barcode(barcode: str, snapshot: date | None = None,
-                           include_off: bool = False) -> dict[str, Any]:
+def get_product_by_barcode(barcode: str, include_off: bool = False,
+                           country: Annotated[str | None, Field(description="ISO 3166-1 alpha-2 code: order the "
+                                                               "products by that country's preferred sources")] = None
+                           ) -> dict[str, Any]:
     """Products with this barcode (GTIN-8, -12, -13 or -14)."""
-    return _tool(by_barcode, barcode, _include(include_off), snapshot)
+    return _tool(by_barcode, barcode, _include(include_off), country)
 
 
 @mcp.tool()
-def get_food(product_id: int, snapshot: date | None = None, include_off: bool = False) -> dict[str, Any]:
+def get_food(product_id: int, include_off: bool = False) -> dict[str, Any]:
     """One product by its fooddb id."""
-    return _tool(get_product, product_id, _include(include_off), snapshot)
+    return _tool(get_product, product_id, _include(include_off))
 
 
 @mcp.tool()
-def get_record_product(record_id: str, snapshot: date | None = None,
-                       include_off: bool = False) -> dict[str, Any]:
+def get_record_product(record_id: str, include_off: bool = False) -> dict[str, Any]:
     """The product a source record (e.g. "fdc:174289", "off:0…") belongs to."""
-    return _tool(get_record, record_id, _include(include_off), snapshot)
+    return _tool(get_record, record_id, _include(include_off))
 
 
 @mcp.tool()
@@ -331,18 +334,23 @@ def health_report() -> dict[str, Any]:
 
 
 @mcp.tool(name="review_queue")
-def review_queue_tool(ctx: Context, limit: Annotated[int, Field(ge=1, le=1000)] = 100) -> dict[str, Any]:
-    """Values a failed check held back, grouped per source record, next to the values served now."""
+def review_queue_tool(ctx: Context, limit: Annotated[int, Field(ge=1, le=1000)] = 100,
+                      offset: Annotated[int, Field(ge=0)] = 0, check: str | None = None,
+                      source: str | None = None, detail: bool = False) -> dict[str, Any]:
+    """Values a failed check held back, grouped per source record, next to the values served now.
+    `check` and `source` filter, `offset` pages, `detail` adds each record's latest values and a line
+    per failed check with its numbers."""
     _needs(ctx, "review")
-    return _tool(review_queue, limit)
+    return _tool(review_queue, limit=limit, offset=offset, check=check, source=source, detail=detail)
 
 
 @mcp.tool(name="decide_review")
 def decide_review_tool(ctx: Context, observation_id: int, decision: Literal["accept", "reject"], by: str,
                        note: str | None = None) -> dict[str, Any]:
     """Accept a pending value (served from the next snapshot on) or reject it (never served). `by` names who decided."""
-    _needs(ctx, "review")
-    return _tool(decide_review, observation_id, Decision(decision=decision, by=by, note=note))
+    caller = _needs(ctx, "review")
+    return _tool(_decide, observation_id, Decision(decision=decision, by=by, note=note),
+                 caller.name if caller else None)
 
 
 @mcp.tool(name="split_product")

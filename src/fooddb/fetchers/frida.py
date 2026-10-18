@@ -57,12 +57,14 @@ def records(xlsx, observed_at: datetime):
 
         values = {tag: v for pid, (_, tag) in PARAMETERS.items() if (v := _number(cell(at[str(pid)]))) is not None}
         code, name, group = cell(at["↓FoodID/→ParameterID"]), (cell(at["↓FoodName"]) or "").strip(), cell(at["FoodGroupID"])
+        da = (cell(at["↓FødevareNavn"]) or "").strip() if "↓FødevareNavn" in at else ""
         if not code or not name or not values:
             continue
         yield ingest.Record(
             id=f"frida:{code}", source="frida", layer="core", licence=LICENCE, name=name, lang="en",
             values=values, observed_at=observed_at,
             categories=[f"frida:{g}" for g in dict.fromkeys((group, parent.get(group))) if g and g != ROOT],
+            names={"da": da} if da else {},
         )
 
 

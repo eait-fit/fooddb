@@ -1,0 +1,166 @@
+# Austrian word or phrase -> the standard German word the sources (BLS) name it by.
+# <word><TAB><german>[<TAB><german> ...] — each extra word is one more rewrite.
+# A word is a stem: it also matches inside a compound (erdäpfel matches erdäpfelsalat);
+# the longest match wins, so a more specific line overrides a stem.
+# Austrian -> German only, never the reverse: words that are standard German already are
+# not keys (and false friends keep their Austrian meaning — AT "Hörnchen" is the pasta).
+#
+# The 23 terms of EU Accession Protocol No 10:
+Beiried	Roastbeef
+Eierschwammerl	Pfifferlinge
+Erdäpfel	Kartoffel
+Faschiertes	Hackfleisch
+Fisolen	Grüne Bohnen
+Grammeln	Grieben
+Grammel	Grieben
+Hüferl	Hüfte
+Karfiol	Blumenkohl
+Kohlsprossen	Rosenkohl
+Kren	Meerrettich
+Lungenbraten	Filet
+Marille	Aprikose
+Marillen	Aprikosen
+Melanzani	Aubergine
+Nuss	Kugel
+Nuß	Kugel
+Obers	Sahne
+Paradeiser	Tomate
+Powidl	Pflaumenmus
+Ribisel	Johannisbeeren
+Rostbraten	Entrecôte	Hochrippe
+Schlögel	Keule
+Topfen	Quark
+Vogerlsalat	Feldsalat
+Weichseln	Sauerkirschen
+#
+# Bread and pastry:
+Semmel	Brötchen
+Semmeln	Brötchen
+Semmelbrösel	Paniermehl
+Weckerl	Brötchen
+Wecken	Weißbrot
+Stangerl	Stangen
+Brezen	Brezel
+Kipferl	Croissant
+Krapfen	Berliner
+Krapferl	Krapfen
+Striezel	Hefezopf
+Pinze	Hefezopf
+Tascherl	Tasche
+Palatschinken	Pfannkuchen
+Palatschinke	Pfannkuchen
+Schmarrn	Schmarren
+Gugelhupf	Napfkuchen	Marmorkuchen
+Marmorgugelhupf	Marmorkuchen
+Buchteln	Rohrnudeln
+Schnitten	Waffeln
+Stanitzel	Eiswaffel
+Zuckerl	Bonbons
+Biskotten	Löffelbiskuits
+Kokosbusserl	Kokosmakronen
+Soletti	Salzstangen
+Zwetschkenfleck	Zwetschgenkuchen
+#
+# Dairy and eggs:
+Schlagobers	Schlagsahne
+Kaffeeobers	Kaffeesahne
+Sprühobers	Sprühsahne
+Sauerrahm	Saure Sahne
+Rahm	Sahne
+Haltbarmilch	H-Milch
+Joghurt	Jogurt
+Quargel	Sauermilchkäse
+Graukäse	Sauermilchkäse
+Schafkäse	Schafskäse
+Eierspeise	Rührei
+Eiklar	Eiweiß
+Dotter	Eigelb
+#
+# Meat, sausage, fish:
+Faschiert	Hackfleisch
+Laberl	Frikadelle
+Laibchen	Frikadelle
+Hendl	Hähnchen	Huhn
+Gansl	Gans
+Schopf	Nacken
+Selchfleisch	Kassler
+Geselchtes	Kassler
+Kaiserfleisch	Bauchspeck
+Siedfleisch	Suppenfleisch
+Extrawurst	Lyoner	Fleischwurst
+Pariser	Lyoner	Fleischwurst
+Burenwurst	Bockwurst
+Würstel	Würstchen
+Leberkas	Leberkäse
+Blunzen	Blutwurst
+Leberstreichwurst	Leberwurst
+Ripperl	Rippchen
+Bratl	Braten
+Schweins	Schweine
+Rinds	Rinder
+Dorsch	Kabeljau
+Ölsardinen	Sardinen
+Herrenpilze	Steinpilze
+#
+# Vegetables:
+Fisolen	Grüne Bohnen
+Häuptelsalat	Kopfsalat
+Kohl	Wirsing
+Kraut	Weißkohl
+Weißkraut	Weißkohl
+Rotkraut	Rotkohl
+Blaukraut	Rotkohl
+Rüben	Bete
+gelbe Rüben	Karotten
+Kukuruz	Mais
+Schwammerl	Champignons	Pilze
+Porree	Lauch
+Gurkerl	Gurken
+Jungzwiebel	Frühlingszwiebel
+Pfefferoni	Peperoni	Chili
+Apfelkren	Meerrettich
+Käferbohnen	Feuerbohnen
+Berglinsen	Linsen
+Fleckerl	Nudeln
+Hörnchen	Makkaroni	Nudeln
+Nockerl	Spätzle
+Grießnockerl	Grießklößchen
+Kasnocken	Käsespätzle
+Kasspatzln	Käsespätzle
+Kasnudeln	Schlutzkrapfen
+Erbsen und Karotten	Erbsen und Möhren
+glattes Mehl	Weizenmehl
+griffiges Mehl	Weizenmehl
+#
+# Fruit:
+Zwetschke	Zwetschge
+Zwetschken	Zwetschgen	Pflaumen
+Dörrzwetschken	Trockenpflaumen	Backpflaumen
+Schwarzbeeren	Heidelbeeren	Blaubeeren
+Ringlotten	Renekloden
+Kletzen	Trockenbirnen
+Holler	Holunder
+Maroni	Maronen
+#
+# Sugar, condiments, drinks:
+Germ	Hefe
+Staubzucker	Puderzucker
+Kristallzucker	Zucker
+Melange	Milchkaffee
+Verlängerter	Kaffee
+kleiner Brauner	Espresso
+Einspänner	Kaffee
+Kaffee mit Milch	Milchkaffee
+heiße Schokolade	Kakao
+Gespritzter	Weinschorle
+Apfelsaft gespritzt	Apfelschorle
+Mineral	Mineralwasser
+Leitungswasser	Trinkwasser
+Most	Apfelwein
+Sturm	Federweißer
+Obstler	Obstbrand
+Zwickl	Kellerbier	Lager
+Märzen	Lager	Bier
+Jause	Brotzeit
+Frittaten	Flädle
+Frittatensuppe	Flädlesuppe

@@ -3,7 +3,7 @@ FOODDB__BACKEND__DATABASE_URL at this worktree's __test database; skipped otherw
 
 import os
 import re
-from datetime import UTC, datetime
+from datetime import UTC, date, datetime
 
 import pytest
 
@@ -23,7 +23,7 @@ def clean():
     from fooddb.db import engine
 
     with engine().begin() as conn:
-        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, fetcher_check, merge_log, cannot_link, api_key, rate_limit, account, purchase, login_token, usage_month, request_log, admin_action restart identity cascade"))
+        conn.execute(text("truncate food, observation, fetch_run, product, snapshot, snapshot_value, snapshot_dirty, fetcher_check, merge_log, cannot_link, api_key, rate_limit, account, purchase, login_token, usage_month, request_log, admin_action restart identity cascade"))
 
 
 def client(key: str | None = None):
@@ -146,6 +146,333 @@ def test_cli_search_prints_what_the_route_returns():
     assert json.loads(r.output)["items"][0]["records"] == ["fdc:2"]
 
 
+def names(c, params: dict) -> list[str]:
+    r = c.get("/v1/foods", params=params)
+    assert r.status_code == 200, r.text
+    return [i["records"][0] for i in r.json()["items"]]
+
+
+def test_search_finds_a_record_by_its_name_in_the_tables_own_language():
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Wholemeal bread",
+                               names={"de": "Vollkornbrot"}),
+                           rec(id="fdc:2", name="Bread, whole-wheat"),
+                           rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Camembert cheese",
+                               names={"fr": "Camembert au lait cru"})])
+    c = client()
+    assert names(c, {"q": "Vollkornbrot"}) == ["bls:1"]
+    assert names(c, {"q": "vollkornbrot", "country": "de"}) == ["bls:1"]
+    assert names(c, {"q": "lait cru"}) == ["ciqual:1"]
+    assert names(c, {"q": "camembert"}) == ["ciqual:1"]  # one product, once, though both names match
+    # A later load restates the set: a name the source dropped goes; a load stating none keeps it.
+    ingest.run("t", "r2", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Wholemeal bread",
+                               names={"de": "Vollkornbrot, Weizen"})])
+    ingest.run("t", "r3", [rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Camembert cheese")])
+    with engine().connect() as conn:
+        assert dict(conn.execute(text("select food_id, name from food_name order by 1")).all()) == {
+            "bls:1": "Vollkornbrot, Weizen", "ciqual:1": "Camembert au lait cru"}
+
+
+def test_search_finds_a_record_by_an_agent_written_name_and_a_refetch_keeps_it(tmp_path):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    ingest.run("t", "r1", [rec()])
+    (tmp_path / "ru.tsv").write_text("fdc:1\tHummus, commercial\tхумус\nmissing:1\tGone\tпропал\n",
+                                   encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 1}  # the TSV's second record is not held: skipped
+    c = client()
+    assert names(c, {"q": "хумус"}) == ["fdc:1"]
+    # A table load restates only the source's own names: the agent-written row survives.
+    ingest.run("t", "r2", [rec(name="Hummus, commercial", names={"de": "Hummus, Kichererbsen"})])
+    assert names(c, {"q": "хумус"}) == ["fdc:1"]
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select licence from food_name where food_id = 'fdc:1' and lang = 'ru' and origin = 'mt'"
+        )).scalar() == "AGPL-3.0"  # agent-written names ride under the code's licence, not the source's
+    # Idempotent, and a line gone from the TSV drops its row.
+    assert load_mt(tmp_path) == {"ru": 1}
+    (tmp_path / "ru.tsv").write_text("", encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 0}
+    assert names(c, {"q": "хумус"}) == []
+
+
+def test_load_mt_scales_past_the_pg_parameter_limit(tmp_path):
+    """More TSV rows than 65,535/5 bind parameters (13,107) — the old one-statement
+    load died at ~13k names; chunked inserts and array-param id lists must not."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    n = 14_000
+    with engine().begin() as conn:
+        # `clean` restarted identity, so these products are ids 1..n.
+        conn.execute(text("insert into product (created_at) select now() from generate_series(1, :n)"), {"n": n})
+        conn.execute(text("insert into food (id, product_id, source, layer, licence, name) "
+                          "select 'bulk:' || g, g, 't', 'core', 'X', 'food ' || g "
+                          "from generate_series(1, :n) g"), {"n": n})
+    (tmp_path / "ru.tsv").write_text(
+        "".join(f"bulk:{i}\tfood {i}\tблюдо {i}\n" for i in range(1, n + 1)), encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": n}
+    assert load_mt(tmp_path) == {"ru": n}  # idempotent
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == n
+    (tmp_path / "ru.tsv").write_text("bulk:1\tfood 1\tблюдо 1\n", encoding="utf-8")
+    assert load_mt(tmp_path) == {"ru": 1}
+    with engine().connect() as conn:
+        assert conn.execute(text(
+            "select count(*) from food_name where origin = 'mt' and lang = 'ru'")).scalar() == 1
+
+
+def test_health_names_is_advisory_and_flags_a_short_or_failed_mt_load(tmp_path, monkeypatch):
+    """`names` in the health JSON is never part of `ok` — a translation gap must not 503 the
+    API — but it says not-ok when fewer rows are held than the TSVs can cover, or when the
+    last load_mt run died."""
+    from sqlalchemy import text
+
+    from fooddb import health, ingest
+    from fooddb import names as names_mod
+    from fooddb.db import engine
+    from fooddb.names import load_mt
+
+    now = datetime.now(UTC)
+    for f in health.watched():
+        if f != "snapshot":
+            health.checked(f, at=now)
+    with engine().begin() as conn:  # and a fresh snapshot: the report is green without names
+        conn.execute(text("insert into snapshot (day, built_at, products) values (current_date, :t, 0)"),
+                     {"t": now})
+    ingest.run("t", "r1", [rec()])
+    (tmp_path / "ru.tsv").write_text("fdc:1\tHummus, commercial\tхумус\n", encoding="utf-8")
+    monkeypatch.setattr(names_mod, "MT_DIR", tmp_path)
+
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False  # never loaded: held 0 < expected 1
+    assert r["names"]["languages"]["ru"] == {"expected": 1, "held": 0, "ok": False}
+    assert r["names"]["last_ok"] is None
+
+    load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True and r["names"]["languages"]["ru"]["held"] == 1
+    assert r["names"]["last_ok"] is not None and r["names"]["last_failed"] is None
+
+    with engine().begin() as conn:  # held drops below what the TSV can cover
+        conn.execute(text("delete from food_name where origin = 'mt'"))
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False
+
+    real_load = names_mod._load  # the load dies mid-run -> last run failed marks names not-ok
+    monkeypatch.setattr(names_mod, "_load", lambda dir: (_ for _ in ()).throw(RuntimeError("x")))
+    with pytest.raises(RuntimeError):
+        load_mt(tmp_path)
+    r = health.report(now=now)
+    assert r["ok"] is True and r["names"]["ok"] is False and r["names"]["last_failed"] is not None
+
+    monkeypatch.setattr(names_mod, "_load", real_load)
+    load_mt(tmp_path)  # the next good run clears the flag
+    r = health.report(now=now)
+    assert r["names"]["ok"] is True
+    assert client().get("/healthz").status_code == 200
+
+
+def test_no_two_records_share_an_mt_name_with_different_kcal():
+    """Two records that collapse to one mt name must be the same food for energy: a shared name
+    whose newest accepted ENERC_KCAL differ by more than 10 % means a qualifier that changes the
+    numbers (fat %, state, lean) was dropped in translation."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+    from fooddb.names import MT_DIR, _tsv
+
+    for f in sorted(MT_DIR.glob("*.tsv")):
+        by_name: dict[str, list[str]] = {}
+        for rid, n in _tsv(f).items():
+            by_name.setdefault(n, []).append(rid)
+        for n, ids in by_name.items():
+            if len(ids) < 2:
+                continue
+            with engine().connect() as conn:
+                kcal = dict(conn.execute(text(
+                    "select distinct on (food_id) food_id, value_per_100::float from observation "
+                    "where food_id = any(:ids) and nutrient = 'ENERC_KCAL' and status = 'accepted' "
+                    "and basis = '100g' order by food_id, observed_at desc, id desc"),
+                    {"ids": ids}).all())
+            vals = [kcal[i] for i in ids if i in kcal]
+            assert len(vals) < 2 or max(vals) <= min(vals) * 1.1, (
+                f"{f.name}: {ids} share mt name {n!r} but kcal {sorted(vals)} differ by >10%")
+
+
+def test_search_skips_a_record_with_only_pending_values_and_still_fills_the_page():
+    from fooddb import ingest
+
+    # The best name match waits for review in full: it is not found, and the cut of ranked candidates
+    # taken before the visibility check still leaves room for the visible ones behind it.
+    ingest.run("t", "r1", [rec(id="fdc:9", name="Apple", review_all=True),
+                           rec(id="fdc:2", name="Apple pie"),
+                           rec(id="fdc:3", name="Apple strudel")])
+    assert names(client(), {"q": "apple", "limit": 2}) == ["fdc:2", "fdc:3"]
+
+
+def test_search_first_result_does_not_depend_on_limit():
+    from fooddb import ingest
+
+    # One product whose long name matches the query well and whose deeper short name only enters the
+    # candidate cut (limit * CANDIDATES rows per name index) at a bigger limit: twenty food_name rows
+    # tie above "oranges", which is row 21 at limit=1 and inside at limit=5. Ordering the product by
+    # independent max(sim)/min(len) aggregates let that deeper row shorten it and flip the first
+    # result ("orange" → Candied orange peel at limit=5); ordering by the best tuple cannot.
+    filler = {f"l{i:02}": "Orange bonbon" for i in range(20)}
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Candied orange peel", group="g"),
+                           rec(id="fdc:2", name="Zest filler", group="g",
+                               names={"fi": "oranges"} | filler),
+                           rec(id="fdc:3", name="Orange, raw")])
+    c = client()
+    first = {limit: names(c, {"q": "orange", "limit": limit})[0] for limit in (1, 5, 20)}
+    assert first == {1: "fdc:3", 5: "fdc:3", 20: "fdc:3"}
+
+
+def test_search_without_country_is_unchanged():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel"),
+                           rec(id="bls:2", source="bls", licence="CC-BY-4.0", name="Applesauce")])
+    # Similarity first (a whole-word match is 1.0), then the shortest name, whatever the source.
+    assert names(client(), {"q": "apple"}) == ["fdc:2", "bls:1", "bls:2"]
+
+
+def test_search_country_prefers_the_countrys_sources():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel")])
+    c = client()
+    # Both names match "apple" equally (1.0): today the shorter name wins, with country=de the
+    # bls record does. The code is case-insensitive.
+    assert names(c, {"q": "apple", "country": "de"}) == ["bls:1", "fdc:2"]
+    assert names(c, {"q": "apple", "country": "DE"}) == ["bls:1", "fdc:2"]
+    assert names(c, {"q": "apple", "country": "us"}) == ["fdc:2", "bls:1"]
+
+
+def test_search_country_does_not_prefer_a_different_food():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Applesauce")])
+    # "Apple" is the better name match (1.0 against 0.83): a preference never outranks it.
+    assert names(client(), {"q": "apple", "country": "de"}) == ["fdc:2", "bls:1"]
+
+
+def test_search_country_ranks_the_whole_list(monkeypatch):
+    from fooddb import countries, ingest
+
+    # A country maps to an ordered list: adding a second source is one entry, no code change.
+    monkeypatch.setitem(countries.PREFERRED, "de", ("ciqual", "bls"))
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel"),
+                           rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Apple turnover")])
+    assert names(client(), {"q": "apple", "country": "de"}) == ["ciqual:1", "bls:1", "fdc:2"]
+
+
+def test_search_country_prefers_an_off_record_sold_there():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="off:04006381333931", source="off", layer="off", licence="ODbL-1.0",
+                               gtin14="04006381333931", name="Apple compote",
+                               markets=["en:germany", "en:spain"]),
+                           rec(id="fdc:2", name="Apple butter")])
+    c, params = client(), {"q": "apple", "include": "off"}
+    assert names(c, params | {"country": "de"}) == ["off:04006381333931", "fdc:2"]
+    assert names(c, params | {"country": "us"}) == ["fdc:2", "off:04006381333931"]
+    # A country with no preferred table still gets the OFF-layer preference.
+    assert names(c, params | {"country": "es"}) == ["off:04006381333931", "fdc:2"]
+
+
+def test_search_ignores_diacritics_in_the_query_and_the_name():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="ciqual:1", source="ciqual", licence="etalab-2.0", name="Paëlla"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Käse"),
+                           rec(id="fdc:2", name="Paella pan"),
+                           rec(id="ciqual:2", source="ciqual", licence="etalab-2.0", name="Burnt cream",
+                               names={"fr": "Crème brûlée"})])
+    c = client()
+    # Both sides pass through f_unaccent: the query may have the marks or lack them, so may the name.
+    assert names(c, {"q": "paella"}) == ["ciqual:1", "fdc:2"]
+    assert names(c, {"q": "Paëlla"}) == ["ciqual:1", "fdc:2"]
+    assert names(c, {"q": "kase"}) == ["bls:1"]
+    # The other-language names too (food_name): "creme brulee" finds "Crème brûlée".
+    assert names(c, {"q": "creme brulee"}) == ["ciqual:2"]
+
+
+def test_search_without_off_reads_names_through_the_core_index(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest, search
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie")])
+    seen, run = [], search._pids
+    monkeypatch.setattr(search, "_pids", lambda stmt: seen.append(stmt) or run(stmt))
+    search.by_name("apple")
+    sql = str(seen[0].compile(engine(), compile_kwargs={"literal_binds": True}))
+    with engine().connect() as conn:
+        conn.execute(text("set local enable_seqscan = off"))
+        # exec_driver_sql: the compiled statement's <% operator must reach Postgres unescaped.
+        plan = "\n".join(conn.exec_driver_sql(f"explain {sql}").scalars())
+    assert "food_core_name_trgm_idx" in plan
+
+
+def test_country_refuses_an_unknown_code():
+    c = client()
+    assert c.get("/v1/foods", params={"q": "apple", "country": "xx"}).status_code == 422
+    assert c.get("/v1/foods", params={"q": "apple", "country": "de2"}).status_code == 422
+    assert c.get("/v1/products/4006381333931", params={"country": "xx"}).status_code == 422
+
+
+def test_search_expands_austrian_food_words_for_country_at():
+    from fooddb import ingest
+
+    # BLS names its records in English; the German name rides in `names` (food_name).
+    ingest.run("t", "r1", [rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Potatoes, raw",
+                               names={"de": "Kartoffeln, roh"}),
+                           rec(id="bls:2", source="bls", licence="CC-BY-4.0", name="Tomatoes, raw",
+                               names={"de": "Tomaten, frisch"})])
+    c = client()
+    assert names(c, {"q": "Erdäpfel", "country": "at"}) == ["bls:1"]
+    assert names(c, {"q": "Paradeiser", "country": "at"}) == ["bls:2"]
+    # A compound rewrites its stem (erdäpfel in erdäpfelsalat), and a false friend keeps its
+    # Austrian sense: Hörnchen is the pasta here, not the croissant.
+    ingest.run("t", "r2", [rec(id="bls:3", source="bls", licence="CC-BY-4.0", name="Egg pasta, raw",
+                               names={"de": "Eiernudeln, roh"}),
+                           rec(id="bls:4", source="bls", licence="CC-BY-4.0", name="Potato salad",
+                               names={"de": "Kartoffelsalat"})])
+    assert names(c, {"q": "Erdäpfelsalat", "country": "at"})[0] == "bls:4"
+    assert names(c, {"q": "Hörnchen", "country": "at"})[0] == "bls:3"
+    # Without country=at an Austrian word rewrites nothing and finds no German name.
+    assert names(c, {"q": "Erdäpfel"}) == []
+    assert names(c, {"q": "Erdäpfel", "country": "de"}) == []
+
+
+def test_barcode_country_orders_by_preferred_source():
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec(id="fdc:2", name="Apple pie", gtin14="04006381333931"),
+                           rec(id="bls:1", source="bls", licence="CC-BY-4.0", name="Apple strudel",
+                               gtin14="04006381333931")])
+    items = client().get("/v1/products/4006381333931", params={"country": "de"}).json()["items"]
+    assert [i["records"] for i in items] == [["bls:1"], ["fdc:2"]]
+
+
 @pytest.mark.parametrize("barcode", [
     "²²²²²²²²",       # unicode digits: used to crash with a 500
     "0400000000008",  # GTIN-13 prefix 04: restricted, in-store use
@@ -186,6 +513,33 @@ def test_full_batch_with_many_nutrients_stays_under_postgres_parameter_limit():
     many = {f"N{i}": float(i) for i in range(25)}  # vitamins and minerals will get us here
     records = [rec(id=f"fdc:{i}", values=many) for i in range(500)]
     assert ingest.run("t", "wide", records) == (500, 500 * 25)
+
+
+def test_nul_bytes_are_stripped_from_every_string_before_a_record_is_stored():
+    # Postgres text and jsonb both refuse NUL: one OFF product carrying ^@ killed the dump at 2.88M.
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    assert ingest.run("t", "nul", [rec(
+        name="Hum\x00mus, commercial", brand="Ac\x00me", lang="d\x00e",
+        serving_text="2 EL (30 g\x00)", categories=["en:bev\x00erages"],
+        labels=["en:organic\x00"], markets=["en:german\x00y"], extra_flags=["fla\x00g"],
+        images={"front": {"lang": "i\x00t", "rev": 12}},
+    )]) == (1, 2)
+    p = product("fdc:1")
+    assert p["name"]["value"] == "Hummus, commercial"
+    assert p["brand"]["value"] == "Acme"
+    assert p["lang"]["value"] == "de"
+    assert p["serving_text"]["value"] == "2 EL (30 g)"
+    assert p["category"]["value"] == "beverages"  # the tag only matches once clean
+    assert p["flags"]["value"] == ["flag"]
+    with engine().connect() as conn:
+        row = dict(conn.execute(
+            text("select markets, images from food where id = 'fdc:1'")).mappings().one())
+    assert row["markets"] == ["en:germany"]
+    assert row["images"] == {"front": {"lang": "it", "rev": 12}}
 
 
 def test_values_failing_checks_wait_for_review_while_the_last_good_ones_serve():
@@ -464,7 +818,7 @@ def kcal(record_id: str, **params) -> float:
     return r.json()["per_100"]["ENERC_KCAL"]["value"]
 
 
-def test_api_serves_the_latest_snapshot_and_pins_an_older_one(monkeypatch):
+def test_api_serves_the_current_snapshot_and_ignores_a_date_pin(monkeypatch):
     from fooddb import ingest
 
     ingest.run("t", "r1", [rec()])
@@ -473,13 +827,17 @@ def test_api_serves_the_latest_snapshot_and_pins_an_older_one(monkeypatch):
     assert kcal("fdc:1") == 229  # not live until the next build
     build_on(monkeypatch, "2026-10-02")
     assert kcal("fdc:1") == 231
+    # `snapshot` is gone as a parameter: an old pin is ignored like every other unknown query
+    # parameter (FastAPI's rule for all of them), and the answer names the day it really is.
     pinned = client().get("/v1/records/fdc:1", params={"snapshot": "2026-10-01"}).json()
-    assert pinned["per_100"]["ENERC_KCAL"]["value"] == 229 and pinned["snapshot"] == "2026-10-01"
-    assert client().get("/v1/records/fdc:1", params={"snapshot": "2026-09-01"}).status_code == 404
+    assert pinned["per_100"]["ENERC_KCAL"]["value"] == 231 and pinned["snapshot"] == "2026-10-02"
 
 
-def test_a_day_is_final_once_it_is_over_and_only_today_is_rebuilt(monkeypatch):
+def test_a_build_replaces_the_current_snapshot_and_no_older_rows_remain(monkeypatch):
+    from sqlalchemy import text
+
     from fooddb import ingest
+    from fooddb.db import engine
 
     def observe(name: str, value: float, month: int) -> None:
         ingest.run("t", name, [rec(observed_at=datetime(2026, month, 1, tzinfo=UTC), values={"ENERC_KCAL": value})])
@@ -487,14 +845,15 @@ def test_a_day_is_final_once_it_is_over_and_only_today_is_rebuilt(monkeypatch):
     observe("r1", 229.0, 1)
     build_on(monkeypatch, "2026-10-01")
     observe("r2", 231.0, 2)
-    build_on(monkeypatch, "2026-10-01")  # a same-day rebuild (a fetcher's first data) replaces today
-    assert kcal("fdc:1") == kcal("fdc:1", snapshot="2026-10-01") == 231
+    build_on(monkeypatch, "2026-10-01")  # a same-day rebuild (a fetcher's first data) replaces it
+    assert kcal("fdc:1") == 231
     observe("r3", 233.0, 3)
     build_on(monkeypatch, "2026-10-02")
-    observe("r4", 235.0, 4)
-    build_on(monkeypatch, "2026-10-02")
-    assert kcal("fdc:1") == 235
-    assert kcal("fdc:1", snapshot="2026-10-01") == 231  # 2026-10-01 is over: no build writes it again
+    assert kcal("fdc:1") == 233
+    with engine().connect() as conn:
+        assert conn.execute(text("select day from snapshot")).scalars().all() == [date(2026, 10, 2)]
+        # snapshot_value is not day-keyed anymore: one product and one nutrient, in both scopes.
+        assert conn.execute(text("select count(*) from snapshot_value")).scalar_one() == 2
 
 
 def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatch):
@@ -509,14 +868,158 @@ def test_a_merge_after_a_snapshot_keeps_the_values_the_snapshot_froze(monkeypatc
     assert survivor < merged_away
     build_on(monkeypatch, "2026-10-01")
     jobs.match_products()
-    for params in ({}, {"snapshot": "2026-10-01"}):
-        for pid in (survivor, merged_away):
-            r = client().get(f"/v1/foods/{pid}", params=params)
-            assert r.status_code == 200, r.text
-            p = r.json()
-            assert (p["id"], sorted(p["records"])) == (survivor, ["fdc:1", "fdc:2"])
-            # As if the merge had come before the build: fdc:2's newer kcal and its fibre.
-            assert {n: v["value"] for n, v in p["per_100"].items()} == HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
+    for pid in (survivor, merged_away):
+        p = client().get(f"/v1/foods/{pid}").json()
+        assert (p["id"], sorted(p["records"])) == (survivor, ["fdc:1", "fdc:2"])
+        # As if the merge had come before the build: fdc:2's newer kcal and its fibre.
+        assert {n: v["value"] for n, v in p["per_100"].items()} == HUMMUS | {"ENERC_KCAL": 233.0, "FIBTG": 6.0}
+
+
+def snapshot_rows() -> list[dict]:
+    """Every value the one snapshot serves, ordered: what an incremental build must reproduce."""
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    with engine().connect() as conn:
+        return [dict(r) for r in conn.execute(text(
+            "select scope, product_id, nutrient, value_per_100, unit, basis, source, licence,"
+            " observed_at, approved from snapshot_value order by scope, product_id, nutrient"
+        )).mappings()]
+
+
+def assert_incremental_equals_full(monkeypatch, day: str = "2026-10-02") -> list[dict]:
+    """Rebuild after a change, then force the full rebuild: the two must be row-for-row identical."""
+    from fooddb import snapshot
+
+    build_on(monkeypatch, day)
+    rows = snapshot_rows()
+    snapshot.build(full=True)
+    assert snapshot_rows() == rows
+    return rows
+
+
+def test_an_incremental_build_without_a_change_keeps_every_row(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    before = snapshot_rows()
+    assert assert_incremental_equals_full(monkeypatch) == before
+    with engine().connect() as conn:
+        assert conn.execute(text("select count(*) from snapshot_dirty")).scalar_one() == 0
+
+
+def test_an_incremental_build_picks_up_a_new_observation_and_a_withdrawal(monkeypatch):
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    ingest.run("t", "r2", [rec(observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+                               values={"ENERC_KCAL": 231.0})])  # PROCNT withdrawn, ENERC_KCAL moved
+    assert_incremental_equals_full(monkeypatch)
+    assert "PROCNT" not in product("fdc:1")["per_100"] and kcal("fdc:1") == 231
+
+
+def test_an_incremental_build_picks_up_review_decisions_and_undo(monkeypatch):
+    from fooddb import review
+
+    ingest_typo()
+    build_on(monkeypatch, "2026-10-01")
+    obs = pending_id("ENERC_KCAL")
+    review.decide(obs, "accept", "tester")
+    assert_incremental_equals_full(monkeypatch, "2026-10-02")
+    assert kcal("fdc:1") == 2290
+    review.decide(pending_id("SUGAR"), "reject", "tester")
+    assert_incremental_equals_full(monkeypatch, "2026-10-03")
+    assert review.undo([obs], "tester") == 1
+    assert_incremental_equals_full(monkeypatch, "2026-10-04")
+    assert kcal("fdc:1") == 229  # pending again: the value a reviewer undid is not served
+
+
+def test_an_incremental_build_rebuilds_both_sides_of_a_merge(monkeypatch):
+    from fooddb import ingest, jobs
+
+    ingest.run("t", "r1", [
+        rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+        rec(id="fdc:2", name="Hummus, commercial", observed_at=datetime(2026, 6, 1, tzinfo=UTC),
+            values=MERGED_HUMMUS),
+    ])
+    survivor, merged_away = product("fdc:1")["id"], product("fdc:2")["id"]
+    build_on(monkeypatch, "2026-10-01")
+    jobs.match_products()
+    rows = assert_incremental_equals_full(monkeypatch)
+    assert not [r for r in rows if r["product_id"] == merged_away]  # its records serve the survivor
+    assert {n: v["value"] for n, v in product("fdc:2")["per_100"].items()} == MERGED_HUMMUS
+
+
+def test_an_incremental_build_rebuilds_both_sides_of_a_split(monkeypatch):
+    survivor, merged_away = wrongly_merged_hummus()
+    build_on(monkeypatch, "2026-10-01")
+    assert split(survivor, ["fdc:2"]).status_code == 200
+    assert_incremental_equals_full(monkeypatch)
+    values = lambda pid: {n: v["value"] for n, v in client().get(f"/v1/foods/{pid}").json()["per_100"].items()}
+    assert values(survivor) == HUMMUS and values(merged_away) == MERGED_HUMMUS
+
+
+def test_an_incremental_build_picks_up_a_moved_or_deleted_record(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec(id="fdc:1", name="Hummus, commercial", values=HUMMUS),
+                           rec(id="fdc:2", name="Beans, snap, green, raw",
+                               values={"ENERC_KCAL": 31.0, "CHOCDF": 7.0})])
+    build_on(monkeypatch, "2026-10-01")
+    with engine().begin() as conn:
+        # A record moved to another product by hand, and one deleted with its observations.
+        conn.execute(text("update food set product_id = (select product_id from food where id = 'fdc:1')"
+                          " where id = 'fdc:2'"))
+    assert_incremental_equals_full(monkeypatch)
+    with engine().begin() as conn:
+        conn.execute(text("delete from observation where food_id = 'fdc:2'"))
+        conn.execute(text("delete from food where id = 'fdc:2'"))
+    assert_incremental_equals_full(monkeypatch, "2026-10-03")
+    assert product("fdc:1")["records"] == ["fdc:1"]
+
+
+def test_an_incremental_build_drops_a_product_that_no_longer_resolves(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    build_on(monkeypatch, "2026-10-01")
+    with engine().begin() as conn:
+        conn.execute(text("delete from observation where food_id = 'fdc:1'"))
+        conn.execute(text("delete from food where id = 'fdc:1'"))
+        conn.execute(text("delete from product"))
+    rows = assert_incremental_equals_full(monkeypatch)
+    assert rows == []  # no product, no rows: a stale row would survive a selective rebuild
+
+
+def test_a_full_build_stays_available_and_runs_when_no_snapshot_exists(monkeypatch):
+    from sqlalchemy import text
+
+    from fooddb import ingest, snapshot
+    from fooddb.db import engine
+
+    ingest.run("t", "r1", [rec()])
+    snapshot.build(full=True)  # no snapshot yet: the same thing either way
+    assert kcal("fdc:1") == 229
+    with engine().begin() as conn:  # a row a build would drop: --full rewrites everything
+        conn.execute(text("insert into snapshot_value (scope, product_id, nutrient, value_per_100,"
+                          " unit, basis, source, licence, observed_at)"
+                          " values ('all', 999999, 'X', 1, 'g', '100g', 'x', 'x', now())"))
+    snapshot.build(full=True)
+    with engine().connect() as conn:
+        assert conn.execute(text("select count(*) from snapshot_value where product_id = 999999")
+                            ).scalar_one() == 0
 
 
 def test_health_reports_stale_and_fresh_fetchers():
@@ -524,7 +1027,7 @@ def test_health_reports_stale_and_fresh_fetchers():
 
     from fooddb import health
 
-    now = datetime(2026, 10, 4, 12, tzinfo=UTC)
+    now = datetime.now(UTC)
     health.checked("off-delta", at=now - timedelta(hours=2))
     health.checked("fdc-foundation", at=now - timedelta(days=20))
     report = health.report(now=now)
@@ -628,8 +1131,8 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
 
     jobs.schedule()
     # FDC Branded and Fineli are off by default; BLS, CIQUAL, CoFID, Frida, Matvaretabellen, MEXT and TFDA fill a fresh install.
-    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "fetch_table",
-                         "fetch_table", "fetch_table", "fetch_table", "match_products", "build_snapshot"]
+    assert q.drain() == ["fetch_fdc", "fetch_fdc", "fetch_fdc", "fetch_table", "fetch_table", "fetch_table", "fetch_table",
+                         "fetch_table", "fetch_table", "fetch_table", "match_products", "load_mt_names", "build_snapshot"]
     jobs.fetch_off_deltas()  # the periodic delta: pq runs it after every one-off task
     assert q.drain() == ["match_products", "build_snapshot"]
     kcal = product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]
@@ -638,6 +1141,42 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     jobs.fetch_off_deltas()  # later deltas wait for the nightly snapshot
     assert q.drain() == ["match_products"]
     assert product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]["value"] == 539
+
+
+def test_a_worker_boot_retries_a_fetch_the_last_worker_died_on():
+    """#110: a deploy recreate SIGKILLs the worker mid-run and the pq row stays RUNNING; without the
+    boot reap the next schedule() would only park on it and the bootstrap fetch would never run.
+    The real queue here: the same rows the incidents left (fdc-survey 16 Oct, names mt 18 Oct)."""
+    from sqlalchemy import text
+
+    from fooddb import ingest, jobs
+    from fooddb.db import engine
+
+    with engine().begin() as conn:
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("insert into fetch_run (fetcher, ref, status) values ('fdc-survey', 'r1', 'running')"))
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at) "
+                          "values ('bootstrap-fdc-survey', 'fooddb.jobs:fetch_fdc', "
+                          """'{"args": [], "kwargs": {"dataset": "survey"}}', 50, 'RUNNING', now(), 1, now())"""))
+        # An upsert that parked while its row ran is re-queued with the parked version, not failed.
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at, requeue) "
+                          "values ('bootstrap-names-mt', 'fooddb.jobs:load_mt_names', '{\"args\": [], \"kwargs\": {}}', 0, "
+                          """'RUNNING', now(), 1, now(), '{"name": "fooddb.jobs:load_mt_names", "payload": {"args": [], "kwargs": {}}, """
+                          """"priority": 0, "run_at": "2026-10-18T00:00:00+00:00", "max_runtime_seconds": null}'::jsonb)"""))
+    assert jobs.reap_orphans() == 2
+    assert ingest.fail_abandoned() == 1
+    jobs.schedule()  # what cli.worker() runs next: the upsert lands on the closed row as a re-queue
+    with engine().connect() as conn:
+        tasks = {r.client_id: r for r in conn.execute(
+            text("select client_id, status, error, attempts from pq_tasks where client_id like 'bootstrap%'")).mappings()}
+        [run] = conn.execute(text("select status, error from fetch_run where fetcher = 'fdc-survey'")).mappings()
+    assert (tasks["bootstrap-fdc-survey"]["status"], tasks["bootstrap-fdc-survey"]["attempts"]) == ("PENDING", 0)
+    assert tasks["bootstrap-fdc-survey"]["error"] is None
+    assert tasks["bootstrap-names-mt"]["status"] == "PENDING"
+    assert run["status"] == "failed" and "abandoned" in run["error"]
+    with engine().begin() as conn:  # leave the shared tables as a fresh database has them
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("delete from pq_periodic"))
 
 
 TYPO = HUMMUS | {"ENERC_KCAL": 2290.0, "SUGAR": 20.0, "FIBTG": 6.0}  # 10x kcal, sugars over carbs, new fibre
@@ -691,12 +1230,12 @@ def test_an_accepted_value_is_served_from_the_next_snapshot(monkeypatch):
     r = client(key("review")).post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester", "note": "label says so"})
     assert r.status_code == 200, r.text
     d = r.json()
-    assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester", "label says so")
+    assert (d["status"], d["reviewed_by"], d["review_note"]) == ("accepted", "tester (key test-review)",
+                                                               "label says so")
     assert d["reviewed_at"]
     assert kcal("fdc:1") == 229  # the snapshot holds until the next build
     build_on(monkeypatch, "2026-10-02")
     assert kcal("fdc:1") == 2290
-    assert kcal("fdc:1", snapshot="2026-10-01") == 229
     assert [v["nutrient"] for i in review.queue() for v in i["pending"]] == ["SUGAR"]
 
 
@@ -723,6 +1262,53 @@ def test_review_decisions_are_final_and_validated():
     assert c.post(f"/v1/review/{obs}", json={"decision": "accept", "by": "tester"}).status_code == 200
     assert c.post(f"/v1/review/{obs}", json={"decision": "reject", "by": "tester"}).status_code == 409
     assert c.post("/v1/review/999999", json={"decision": "accept", "by": "tester"}).status_code == 404
+
+
+def test_the_review_queue_filters_pages_and_details_for_agents():
+    ingest_typo()
+    c = client(key("review"))
+    [item] = c.get("/v1/review").json()["items"]
+    assert "why" not in item and "values" not in item  # detail is opt-in
+    assert c.get("/v1/review", params={"source": "recipe"}).json() == {"items": []}
+    assert c.get("/v1/review", params={"check": "negative-value"}).json() == {"items": []}
+    assert c.get("/v1/review", params={"offset": 1}).json() == {"items": []}
+    [item] = c.get("/v1/review", params={"source": "fdc", "check": "sugars-over-carbs",
+                                        "detail": "true", "limit": 5}).json()["items"]
+    assert item["record"] == "fdc:1" and "sugars-over-carbs" in item["why"]
+    assert any(v["nutrient"] == "SUGAR" and v["status"] == "pending" for v in item["values"])
+
+
+def test_review_facets_count_the_queue_per_check_and_source():
+    ingest_typo()
+    assert client().get("/v1/review/facets").status_code == 401
+    c = client(key("review"))
+    f = c.get("/v1/review/facets").json()
+    assert f["total"] == 1 and f["sources"] == {"fdc": 1}
+    assert all(f["checks"][k] == 1 for k in ("energy-mismatch", "sugars-over-carbs"))
+    assert c.get("/v1/review/facets", params={"source": "recipe"}).json()["total"] == 0
+    f = c.get("/v1/review/facets", params={"check": "sugars-over-carbs"}).json()
+    assert f["total"] == 1 and f["sources"] == {"fdc": 1}  # a check filter still counts all its sources
+
+
+def test_a_decision_under_another_name_records_the_key_name_too():
+    ingest_typo()
+    obs = pending_id("SUGAR")
+    r = client(key("review", name="agent-1")).post(f"/v1/review/{obs}",
+                                                 json={"decision": "accept", "by": "kirill"})
+    assert r.status_code == 200 and r.json()["reviewed_by"] == "kirill (key agent-1)"
+    obs = pending_id("ENERC_KCAL")
+    r = client(key("review", name="agent-2")).post(f"/v1/review/{obs}",
+                                                  json={"decision": "reject", "by": "agent-2"})
+    assert r.json()["reviewed_by"] == "agent-2"  # by names the key: stored once
+
+
+def test_mcp_review_queue_filters_and_details_like_the_api():
+    ingest_typo()
+    assert call("review_queue", source="recipe").structured_content["items"] == []
+    [item] = call("review_queue", source="fdc", check="sugars-over-carbs",
+                  detail=True).structured_content["items"]
+    assert "sugars-over-carbs" in item["why"] and item["values"]
+    assert call("review_queue", offset=1).structured_content["items"] == []
 
 
 def test_mcp_agents_work_the_same_review_queue():
@@ -1168,19 +1754,18 @@ def test_matching_never_puts_a_cannot_link_pair_in_one_product():
     assert product("fdc:2")["id"] in (product("fdc:1")["id"], product("fdc:3")["id"])
 
 
-def test_a_split_keeps_a_past_days_values_and_todays_follow_the_next_build(monkeypatch):
+def test_a_split_changes_the_next_build_and_the_current_snapshot_keeps_its_values(monkeypatch):
     survivor, merged_away = wrongly_merged_hummus()
     build_on(monkeypatch, "2026-10-01")
 
-    def values(pid, **params):
-        return {n: v["value"] for n, v in client().get(f"/v1/foods/{pid}", params=params).json()["per_100"].items()}
+    def values(pid):
+        return {n: v["value"] for n, v in client().get(f"/v1/foods/{pid}").json()["per_100"].items()}
 
     assert values(survivor) == MERGED_HUMMUS
     assert split(survivor, ["fdc:2"]).status_code == 200
-    assert values(survivor, snapshot="2026-10-01") == MERGED_HUMMUS  # 2026-10-01 is over: it keeps its values
+    assert values(survivor) == MERGED_HUMMUS  # records and names are live; values follow the next build
     build_on(monkeypatch, "2026-10-02")
     assert values(survivor) == HUMMUS and values(merged_away) == MERGED_HUMMUS
-    assert values(survivor, snapshot="2026-10-01") == MERGED_HUMMUS
 
 
 def test_mcp_agents_split_like_the_api():

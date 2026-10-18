@@ -3,7 +3,7 @@ name = "fooddb"
 version = "0.1.0"
 description = "Global food nutrition database served as REST, MCP and CLI"
 license = "AGPL-3.0-only"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.20.0",
     "fastapi>=0.142.2",
@@ -11,7 +11,7 @@ dependencies = [
     "itsdangerous>=2.2.0",
     "mcp>=2.3.0",
     "psycopg[binary]>=3.3.6",
-    "python-pq>=0.9.0",
+    "python-pq>=0.9.2",
     "splink>=5.0.0",
     "sqladmin>=0.32.0",
     "sqlalchemy[asyncio]>=2.1.3",
@@ -21,6 +21,7 @@ dependencies = [
 
 [project.scripts]
 fooddb = "fooddb.cli:app"
+fooddb-review = "fooddb.reviewcli:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -14,6 +14,7 @@ MAX_AGE = {
     "fdc-foundation": timedelta(days=8),
     "fdc-sr_legacy": timedelta(days=8),
     "fdc-branded": timedelta(days=8),
+    "fdc-survey": timedelta(days=8),
     "bls": timedelta(days=8),
     "ciqual": timedelta(days=8),
     "cofid": timedelta(days=8),
@@ -22,6 +23,7 @@ MAX_AGE = {
     "matvaretabellen": timedelta(days=8),
     "mext": timedelta(days=8),
     "tfda": timedelta(days=8),
+    "recipes": timedelta(days=2),  # recomputed inside every snapshot build
     "snapshot": timedelta(hours=26),
 }
 # Fetchers that run only when switched on. FDC Branded is about 3 GB of JSON. Fineli's site refuses
@@ -47,11 +49,41 @@ def checked(fetcher: str, at: datetime | None = None) -> None:
         """), {"f": fetcher, "at": at or datetime.now(UTC)})
 
 
+def live_products() -> int:
+    """Products not merged away: /livez's proof that the process reaches the database."""
+    with engine().connect() as conn:
+        return conn.execute(text("select count(*) from product where merged_into is null")).scalar_one()
+
+
+def _names(conn, last: dict) -> dict:
+    """The agent-written names load, advisory: when it last ran, and per language the rows held
+    against what the TSVs can cover. Never part of `ok` — a translation gap is not an outage."""
+    from fooddb.names import MT_DIR, _tsv
+
+    tsv = {f.stem: _tsv(f) for f in sorted(MT_DIR.glob("*.tsv"))}
+    ids = sorted({r for rows in tsv.values() for r in rows})
+    live = set(conn.execute(text("select id from food where id = any(:ids)"), {"ids": ids}).scalars()) \
+        if ids else set()
+    held = dict(conn.execute(text("select lang, count(*) from food_name where origin = 'mt'"
+                                  " group by lang")).all())
+    ok_at, fail_at = last.get("names-mt"), last.get("names-mt-fail")
+    langs = {}
+    for lang, rows in tsv.items():
+        expected, h = sum(r in live for r in rows), held.get(lang, 0)
+        langs[lang] = {"expected": expected, "held": h, "ok": h >= expected}
+    return {"last_ok": ok_at.isoformat() if ok_at else None,
+            "last_failed": fail_at.isoformat() if fail_at else None,
+            "ok": ok_at is not None and (fail_at is None or fail_at <= ok_at)
+                  and all(v["ok"] for v in langs.values()),
+            "languages": langs}
+
+
 def report(now: datetime | None = None) -> dict:
     now = now or datetime.now(UTC)
     with engine().connect() as conn:
         last = dict(conn.execute(text("select fetcher, checked_at from fetcher_check")).all())
         last["snapshot"] = conn.execute(text("select max(built_at) from snapshot")).scalar_one()
+        names = _names(conn, last)
     fetchers = {}
     for name in watched():
         at, max_age = last.get(name), MAX_AGE[name]
@@ -60,4 +92,4 @@ def report(now: datetime | None = None) -> dict:
             "max_age_hours": max_age.total_seconds() / 3600,
             "fresh": at is not None and now - at <= max_age,
         }
-    return {"ok": all(f["fresh"] for f in fetchers.values()), "fetchers": fetchers}
+    return {"ok": all(f["fresh"] for f in fetchers.values()), "fetchers": fetchers, "names": names}

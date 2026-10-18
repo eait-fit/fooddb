@@ -24,6 +24,7 @@ from sqlalchemy import (
     Numeric,
     Table,
     Text,
+    column,
     create_engine,
     false,
     func,
@@ -59,13 +60,36 @@ food = Table(
     Column("serving_g", Numeric),
     Column("category", Text),  # fooddb category (checks.CATEGORIES), null when unknown
     Column("flags", ARRAY(Text), nullable=False, server_default="{}"),
+    # OFF records only: countries_tags, the markets the product is sold in (?country= ranking).
+    Column("markets", ARRAY(Text), nullable=False, server_default="{}"),
     # OFF records only: {kind: {"lang", "rev"}} for the front and nutrition photos, never bytes. {} = checked, OFF has none; null = not checked.
     Column("images", JSONB(none_as_null=True)),
     Column("source_updated_at", DateTime(timezone=True)),
     Column("fetched_at", DateTime(timezone=True), nullable=False, server_default=func.now()),
     Index("food_gtin14_idx", "gtin14"),
     Index("food_product_idx", "product_id"),
-    Index("food_name_trgm_idx", "name", postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    # Names match diacritic-free through f_unaccent (migration 0021): "paella" finds "Paëlla".
+    Index("food_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}),
+    # The core layer alone (~30k of ~3M records): a search without OFF reads only these names.
+    Index("food_core_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}, postgresql_where=text("layer = 'core'")),
+)
+
+# A record's names in other languages than `food.name`: origin 'source' is what its source states
+# (BLS German, CIQUAL French, Frida Danish, Matvaretabellen Norwegian — a refetch restates only
+# these), 'mt' is an agent-written translation (data/names/mt/*.tsv). Search matches them all.
+food_name = Table(
+    "food_name",
+    metadata,
+    Column("food_id", Text, ForeignKey("food.id", ondelete="CASCADE"), primary_key=True),
+    Column("lang", Text, primary_key=True),
+    Column("origin", Text, primary_key=True, server_default="source"),
+    Column("name", Text, nullable=False),
+    # Source-stated names ride under the record's licence; agent-written ones under AGPL-3.0.
+    Column("licence", Text, nullable=False, server_default=""),
+    Index("food_name_name_trgm_idx", func.f_unaccent(column("name")).label("un"), postgresql_using="gin",
+          postgresql_ops={"un": "gin_trgm_ops"}),
 )
 
 observation = Table(
@@ -120,6 +144,14 @@ merge_log = Table(
     Column("note", Text),
     CheckConstraint("kind in ('merge', 'split')", name="merge_log_kind"),
     Index("merge_log_food_ids_idx", "food_ids", postgresql_using="gin"),
+)
+
+# Products whose resolved values can differ since the last snapshot build. Statement-level
+# triggers on observation, food and product write it (migration 0018); each build drains it.
+snapshot_dirty = Table(
+    "snapshot_dirty",
+    metadata,
+    Column("product_id", BigInteger, primary_key=True),
 )
 
 # Record pairs that matching never puts in one product. A split writes them.

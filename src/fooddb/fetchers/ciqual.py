@@ -45,7 +45,8 @@ def value(cell: str | None) -> float | None:
         return None
 
 
-def records(xlsx, observed_at: datetime):
+def records(xlsx, observed_at: datetime, native: dict[str, str] | None = None):
+    """`native` maps an alim_code to its French name (`french_names`)."""
     it = rows(xlsx)
     at = {" ".join((h or "").replace("/", " ").split()): i for i, h in enumerate(next(it))}
     if missing := [c for c in (*COLUMNS, *GROUPS, "alim_code", "alim_nom_eng") if c not in at]:
@@ -62,7 +63,19 @@ def records(xlsx, observed_at: datetime):
             id=f"ciqual:{code}", source="ciqual", layer="core", licence=LICENCE, name=name, lang="en",
             values=values, observed_at=observed_at,
             categories=[f"ciqual:{g}" for col in GROUPS if (g := cell(col).strip()) not in ("", "-")],
+            names={"fr": fr} if (fr := (native or {}).get(code)) else {},
         )
+
+
+def french_names(xlsx) -> dict[str, str]:
+    """alim_code → alim_nom_fr, from the French edition of the same release."""
+    it = rows(xlsx)
+    at = {(h or "").strip(): i for i, h in enumerate(next(it))}
+    if missing := [c for c in ("alim_code", "alim_nom_fr") if c not in at]:
+        raise RuntimeError(f"ciqual: French table columns {missing} missing; the file layout changed")
+    c, n = at["alim_code"], at["alim_nom_fr"]
+    return {code: name for row in it if len(row) > max(c, n)
+            and (code := (row[c] or "").strip()) and (name := (row[n] or "").strip())}
 
 
 def newest(page: str) -> tuple[str, datetime]:
@@ -80,6 +93,7 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     ref = url.rsplit("/", 1)[1]
     if not force and ingest.already_done(FETCHER, ref):
         return None
-    with tempfile.TemporaryFile() as tmp:
+    with tempfile.TemporaryFile() as tmp, tempfile.TemporaryFile() as fr:
         download(url, tmp)
-        return ingest.run(FETCHER, ref, records(tmp, observed_at))
+        download(url.replace("_ENG_", "_FR_"), fr)  # the same release's French edition
+        return ingest.run(FETCHER, ref, records(tmp, observed_at, french_names(fr)))
