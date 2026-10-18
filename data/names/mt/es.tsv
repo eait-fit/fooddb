@@ -29535,26 +29535,1067 @@ matvaretabellen:05.532	Pie crust flour mix, gluten-free, organic, powder, Det Gl
 matvaretabellen:05.533	Focaccia flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para focaccia sin gluten ecológico Det Glutenfrie Verksted
 matvaretabellen:05.534	Bread flour mix, fibre bread, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan con fibra sin gluten ecológico Det Glutenfrie Verksted
 matvaretabellen:05.535	Bread flour mix, no knead bread, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan sin amasar sin gluten ecológico Det Glutenfrie Verksted
+matvaretabellen:05.536	Sweet bun flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para bollos sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.537	Bread flour mix, nistebrød, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan nistebrød sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.538	Muesli, with chia seeds, gluten-free, organic, Det Glutenfrie Verksted	muesli con semillas de chía sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.539	Cake flour mix, chocolate cake, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para bizcocho de chocolate sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.540	Rolls flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para panecillos sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.541	Bread flour mix, superbrød, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan superbrød sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.542	Pizza crust flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para masa de pizza sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.543	Breakfast cereal, buckwheat and dark chocolate, gluten-free, organic, Det Glutenfrie Verksted	cereales de trigo sarraceno y chocolate negro sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.544	Muesli, with berries, gluten-free, organic, Det Glutenfrie Verksted	muesli con bayas sin gluten Det Glutenfrie Verksted
+matvaretabellen:05.545	Pasta, fresh, filled with cheese, no sauce, Ravioli, industrially made, cooked	ravioli de queso cocidos
+matvaretabellen:05.546	Pasta, fresh, filled with meat and cheese, Tortellini, industrially made, cooked	tortellini de carne y queso cocidos
+matvaretabellen:05.547	Pasta, fresh, filled with meat, Tortellini, industrially made, cooked	tortellini de carne cocidos
+matvaretabellen:05.548	Wheat bran	salvado de trigo
+matvaretabellen:05.549	Pancakes, American	tortitas americanas
+matvaretabellen:05.550	Rice paper	papel de arroz
+matvaretabellen:05.551	Pita bread, white, with iodized salt, industrially made	pan de pita blanco
+matvaretabellen:05.552	Rolls, white, with iodized salt, bake-off	panecillos blancos precocidos
+matvaretabellen:05.553	Rolls, coarse, with iodized salt, industrially made	panecillos integrales
+matvaretabellen:06.001	Potatoes, early, raw	patata temprana cruda
+matvaretabellen:06.003	Potatoes, autumn, raw	patata de otoño cruda
+matvaretabellen:06.004	Potatoes, storage, raw	patata de almacenaje cruda
+matvaretabellen:06.005	Potatoes, canned, drained	patatas en conserva escurridas
+matvaretabellen:06.006	Potatoes, French fries, frozen	patatas fritas congeladas
+matvaretabellen:06.007	Potato crisps	patatas fritas de bolsa
+matvaretabellen:06.008	Potatoes, mashed, prepared from powder, without milk	puré de patatas de polvo sin leche
+matvaretabellen:06.009	Potato snacks, extruded	snacks de patata
+matvaretabellen:06.010	Cucumber, Norwegian, raw	pepino crudo
+matvaretabellen:06.011	Artichoke, globe, raw	alcachofa cruda
+matvaretabellen:06.012	Asparagus, raw	espárragos crudos
+matvaretabellen:06.014	Asparagus, canned, drained	espárragos en conserva escurridos
+matvaretabellen:06.015	Aubergine, raw	berenjena cruda
+matvaretabellen:06.016	Cauliflower, Norwegian, raw	coliflor cruda de Noruega
+matvaretabellen:06.018	Broccoli, Norwegian, raw	brócoli crudo de Noruega
+matvaretabellen:06.023	Beans, brown, uncooked	alubias pintas secas
+matvaretabellen:06.024	Beans, white, in tomato sauce, canned	alubias blancas en salsa de tomate en conserva
+matvaretabellen:06.027	Peas, frozen	guisantes congelados
+matvaretabellen:06.028	Peas, green, canned, drained	guisantes en conserva escurridos
+matvaretabellen:06.029	Peas, yellow, uncooked	guisantes amarillos secos
+matvaretabellen:06.031	Peas, sugar-snap, Norwegian, raw	tirabeques crudos
+matvaretabellen:06.032	Chicory, endive, raw	endibia cruda
+matvaretabellen:06.033	Pumpkin, raw	calabaza cruda
+matvaretabellen:06.034	Chives, raw	cebollino fresco
+matvaretabellen:06.035	Kale, raw	col kale cruda
+matvaretabellen:06.036	Carrot, Norwegian, raw	zanahoria cruda
+matvaretabellen:06.037	Cabbage, white, Norwegian, raw	col blanca cruda
+matvaretabellen:06.038	Garlic, raw	ajo fresco
+matvaretabellen:06.039	Chestnuts, roasted	castañas asadas
+matvaretabellen:06.040	Cabbage, Chinese, Norwegian, raw	col china cruda
+matvaretabellen:06.041	Swede, Norwegian, raw	colinabo crudo
+matvaretabellen:06.042	Onion, Norwegian, raw	cebolla cruda
+matvaretabellen:06.044	Sweet corn, Norwegian, raw	maíz dulce crudo
+matvaretabellen:06.046	Turnip, Norwegian, raw	nabo crudo
+matvaretabellen:06.047	Sweet pepper, green, raw	pimiento verde crudo
+matvaretabellen:06.048	Sweet pepper, red, raw	pimiento rojo crudo
+matvaretabellen:06.049	Parsnip, raw	chirivía cruda
+matvaretabellen:06.050	Parsley, herb, Norwegian, raw	perejil fresco
+matvaretabellen:06.051	Parsley root, Norwegian, raw	raíz de perejil cruda
+matvaretabellen:06.052	Leek, Norwegian, raw	puerro crudo de Noruega
+matvaretabellen:06.053	Rhubarb, raw	ruibarbo crudo
 matvaretabellen:06.054	Radish, Norwegian, raw	rábano crudo
+matvaretabellen:06.055	Brussel sprouts, Norwegian, raw	coles de Bruselas crudas
+matvaretabellen:06.056	Brussel sprouts, frozen	coles de Bruselas congeladas
+matvaretabellen:06.057	Beetroot, Norwegian, raw	remolacha cruda
+matvaretabellen:06.058	Lettuce leaves, Norwegian, raw	lechuga de hoja fresca
+matvaretabellen:06.059	Lettuce, Iceberg, raw	lechuga iceberg fresca
+matvaretabellen:06.060	Celeriac root, raw	apio-nabo crudo
+matvaretabellen:06.061	Chicory, raw	achicoria cruda
+matvaretabellen:06.062	Mushroom, common, raw	champiñones frescos
+matvaretabellen:06.063	Mushroom, common, canned, drained	champiñones en conserva escurridos
+matvaretabellen:06.064	Spinach, raw	espinaca cruda
+matvaretabellen:06.065	Spinach, frozen	espinaca congelada
+matvaretabellen:06.067	Cabbage, spring green, raw	col tierna cruda
+matvaretabellen:06.068	Celery stalk or stem, Norwegian, raw	apio crudo de Noruega
+matvaretabellen:06.069	Tomato, Norwegian, raw	tomate crudo de Noruega
+matvaretabellen:06.070	Tomato, canned	tomate en conserva
+matvaretabellen:06.071	Tomato juice	zumo de tomate
+matvaretabellen:06.072	Carrot, cauliflower, peas, frozen	mezcla de zanahoria, coliflor y guisantes congelada
 matvaretabellen:06.074	Carrot, peas, sweet corn, frozen	mezcla de zanahoria, guisantes y maíz congelada
+matvaretabellen:06.075	Carrot, cauliflower, green beans, peas, frozen	mezcla de zanahoria, coliflor, judías verdes y guisantes congelada
+matvaretabellen:06.076	Cucumber, pickled	pepinos en vinagre
+matvaretabellen:06.077	Beetroot, pickled	remolacha en vinagre
+matvaretabellen:06.078	Sauerkraut	chucrut
+matvaretabellen:06.079	Tomato ketchup	ketchup
+matvaretabellen:06.080	Tomato purée	tomate concentrado
+matvaretabellen:06.081	Tomato, chopped, tetrapack	tomate troceado en brik
+matvaretabellen:06.082	Potato crisps, fat reduced	patatas fritas de bolsa ligeras
+matvaretabellen:06.083	Beans, soya, uncooked	soja seca
+matvaretabellen:06.084	Beans, white, uncooked	alubias blancas secas
+matvaretabellen:06.085	Squash, zucchini, raw	calabacín crudo
+matvaretabellen:06.086	Kohlrabi, raw	colirábano crudo
 matvaretabellen:06.087	Soy flour	harina de soja
+matvaretabellen:06.088	Sweet pepper, yellow/orange, raw	pimiento amarillo-naranja crudo
+matvaretabellen:06.089	Beans, mung, uncooked	judías mungo secas
+matvaretabellen:06.090	Beans, red (kidney), uncooked	alubias rojas secas
+matvaretabellen:06.091	Peas, chick peas, uncooked	garbanzos secos
+matvaretabellen:06.092	Leaf beet, mangold, raw	acelga cruda
+matvaretabellen:06.093	Cabbage, red, raw	lombarda cruda
+matvaretabellen:06.095	Potatoes, storage, boiled, salted water	patata de almacenaje cocida en agua con sal
+matvaretabellen:06.096	Potatoes, storage, boiled	patata de almacenaje cocida
+matvaretabellen:06.097	Lettuce, Rapid, Norwegian	lechuga rapid fresca
+matvaretabellen:06.098	Beans, green, French, raw	judías verdes crudas
+matvaretabellen:06.100	Salad, rocket, raw	rúcula fresca
+matvaretabellen:06.101	Sweet potato, cooked without salt	boniato cocido sin sal
+matvaretabellen:06.102	Tomatoes, sun-dried	tomates secos
+matvaretabellen:06.103	Tomatoes, sun-dried, in oil, drained	tomates secos en aceite escurridos
+matvaretabellen:06.104	Lentils, green, uncooked	lentejas verdes secas
+matvaretabellen:06.105	Lentils, green, cooked	lentejas verdes cocidas
+matvaretabellen:06.106	Wok mix, classic	mezcla para wok clásica
+matvaretabellen:06.107	Almonds	almendras
+matvaretabellen:06.108	Ginger, root, raw	jengibre fresco
+matvaretabellen:06.109	Jerusalem artichoke, raw	alcachofa de Jerusalén cruda
+matvaretabellen:06.110	Salsify, black, raw	salsifí negro crudo
+matvaretabellen:06.111	Basil, fresh	albahaca fresca
+matvaretabellen:06.112	Fennel, raw	hinojo crudo
+matvaretabellen:06.113	Scallion, spring onion, raw	cebolleta fresca
+matvaretabellen:06.114	Alfalfa seeds, sprouted, raw	brotes de alfalfa
+matvaretabellen:06.115	Pepper, chili, red, raw	chile rojo crudo
+matvaretabellen:06.116	Mushroom, chantherelle, raw	rebozuelos frescos
+matvaretabellen:06.117	Horse-radish, raw	rábano picante crudo
+matvaretabellen:06.119	Bamboo shoots, canned	brotes de bambú en conserva
+matvaretabellen:06.120	Dill, raw	eneldo fresco
 matvaretabellen:06.121	Coriander, raw	cilantro fresco
+matvaretabellen:06.122	Cassava, raw	yuca cruda
+matvaretabellen:06.123	Chicory, raddichio, raw	radicchio crudo
+matvaretabellen:06.124	Shallot, raw	chalota cruda
+matvaretabellen:06.125	Jalapeño, raw	jalapeño crudo
+matvaretabellen:06.126	Mushroom, oyster, raw	setas de ostra frescas
+matvaretabellen:06.127	Mushroom, shiitake, raw	shiitake fresco
+matvaretabellen:06.128	Peas, chick peas, canned	garbanzos en conserva
+matvaretabellen:06.129	Capers, canned	alcaparras en conserva
+matvaretabellen:06.130	Lentils, green, canned	lentejas verdes en conserva
+matvaretabellen:06.131	Lentils, red, canned	lentejas rojas en conserva
+matvaretabellen:06.132	Beans, black, canned	alubias negras en conserva
+matvaretabellen:06.133	Beans, red (kidney), canned	alubias rojas en conserva
+matvaretabellen:06.134	Beans, white, large, canned	alubias blancas grandes en conserva
+matvaretabellen:06.135	Water chestnuts, chinese, canned, drained	castañas de agua en conserva escurridas
+matvaretabellen:06.136	Sweet potato, raw	boniato crudo
+matvaretabellen:06.137	Mâche, salad	canónigos frescos
+matvaretabellen:06.138	Romaine lettuce	lechuga romana fresca
+matvaretabellen:06.139	Nori, seaweed, dried	nori seco
+matvaretabellen:06.140	Ginger, canned	jengibre encurtido
+matvaretabellen:06.143	Pesto, green, home-made	pesto verde casero
+matvaretabellen:06.144	Pesto, green, industrially made	pesto verde comprado
+matvaretabellen:06.145	Mung beans, sprouted, raw	brotes de soja verde
+matvaretabellen:06.146	Pepper, chili, green, raw	chile verde crudo
+matvaretabellen:06.147	Water chestnut, raw	castaña de agua cruda
+matvaretabellen:06.148	Baby corn, canned	minimazorcas en conserva
+matvaretabellen:06.149	Taco sauce	salsa taco
+matvaretabellen:06.151	Basil, dried	albahaca seca
+matvaretabellen:06.152	Chili powder	chile en polvo
+matvaretabellen:06.153	Turmeric, ground	cúrcuma molida
+matvaretabellen:06.154	Garlic powder	ajo en polvo
 matvaretabellen:06.155	Ginger, ground	jengibre molido
+matvaretabellen:06.156	Cinnamon, ground	canela molida
+matvaretabellen:06.157	Cardamom, ground	cardamomo molido
+matvaretabellen:06.158	Curry powder	curry en polvo
+matvaretabellen:06.159	Caraway seeds	semillas de alcaravea
+matvaretabellen:06.160	Coriander, dried	cilantro seco
+matvaretabellen:06.161	Nutmeg, ground	nuez moscada molida
+matvaretabellen:06.162	Cloves, ground	clavo molido
+matvaretabellen:06.163	Oregano, dried	orégano seco
+matvaretabellen:06.164	Sweet pepper, paprika, powder	pimentón
+matvaretabellen:06.165	Pepper, cayenne, red	pimienta de cayena
+matvaretabellen:06.166	Pepper, white	pimienta blanca molida
+matvaretabellen:06.167	Parsley, dried	perejil seco
+matvaretabellen:06.168	Rosemary, raw	romero fresco
+matvaretabellen:06.169	Rosemary, dried	romero seco
+matvaretabellen:06.170	Mustard seeds	semillas de mostaza
+matvaretabellen:06.171	Thyme, raw	tomillo fresco
+matvaretabellen:06.172	Thyme, dried	tomillo seco
+matvaretabellen:06.173	Poppy seeds	semillas de amapola
+matvaretabellen:06.174	Water-cress, raw	berros frescos
+matvaretabellen:06.175	Cabbage, pak-choi, bok choy, raw	pak choi crudo
+matvaretabellen:06.176	Olives, green, filled with sweet pepper, drained	aceitunas verdes rellenas de pimiento escurridas
+matvaretabellen:06.177	Bay leaf, dried	hoja de laurel seca
+matvaretabellen:06.178	Adzuki beans, uncooked	alubias adzuki secas
+matvaretabellen:06.179	Lima beans, uncooked	judías de Lima secas
+matvaretabellen:06.180	Broad beans, uncooked	habas secas
+matvaretabellen:06.181	Cranberry beans, uncooked	alubias borlotti secas
+matvaretabellen:06.182	Chayote, raw	chayote crudo
+matvaretabellen:06.183	Tarragon, dried	estragón seco
+matvaretabellen:06.184	Lentils, red, uncooked	lentejas rojas secas
+matvaretabellen:06.185	Lotus root, raw	raíz de loto cruda
+matvaretabellen:06.186	Marjoram, dried	mejorana seca
+matvaretabellen:06.187	Yardlong beans, raw	judías de metro crudas
+matvaretabellen:06.188	Okra, raw	okra cruda
+matvaretabellen:06.189	Saffron, dried	azafrán seco
+matvaretabellen:06.190	Mushroom, portabello	portobello fresco
+matvaretabellen:06.191	Cowpeas, blackeyes beans, uncooked	carillas secas
+matvaretabellen:06.192	Wasabi, root, raw	raíz de wasabi fresca
+matvaretabellen:06.193	Yam, raw	ñame crudo
+matvaretabellen:06.194	Coriander seeds	semillas de cilantro
+matvaretabellen:06.195	Anise seeds	semillas de anís
+matvaretabellen:06.196	Soy flour, low-fat	harina de soja desnatada
+matvaretabellen:06.197	Edamame, soy beans, frozen	edamame congelado
+matvaretabellen:06.198	Mushroom, king boletus, yellow boletus, raw	boletus fresco
+matvaretabellen:06.199	Mushroom, trumpet chanterelle, funnel chanterelle, raw	trompeta de la muerte fresca
+matvaretabellen:06.200	Caesar salad	ensalada César
+matvaretabellen:06.201	Salad Nicoise	ensalada nicoise
+matvaretabellen:06.202	Tomato salsa	salsa de tomate
+matvaretabellen:06.203	Mango salsa, home-made	salsa de mango casera
+matvaretabellen:06.204	Fennel seeds	semillas de hinojo
+matvaretabellen:06.205	Pineapple, dried	piña seca
+matvaretabellen:06.206	Dill, dried	eneldo seco
+matvaretabellen:06.207	Salad, little gem, raw	lechuga little gem fresca
+matvaretabellen:06.208	Kale, frozen, raw	col kale congelada
+matvaretabellen:06.209	Pumpkin, hokkaido, raw	calabaza hokkaido cruda
+matvaretabellen:06.210	Pumpkin, butternut, raw	calabaza butternut cruda
+matvaretabellen:06.211	Spinach, baby leaf	espinaca baby fresca
+matvaretabellen:06.212	Figs, raw	higos frescos
+matvaretabellen:06.213	Chick peas, boiled	garbanzos cocidos
+matvaretabellen:06.214	Cauliflower, broccoli, frozen	mezcla de coliflor y brócoli congelada
+matvaretabellen:06.215	Cauliflower, broccoli, carrot, frozen	mezcla de coliflor, brócoli y zanahoria congelada
+matvaretabellen:06.216	Broccoli, carrot, baby corn, frozen	mezcla de brócoli, zanahoria y minimazorcas congelada
+matvaretabellen:06.217	Swede, carrot, celeriac root, onion, parsnip, frozen	mezcla de colinabo, zanahoria, apio-nabo, cebolla y chirivía congelada
+matvaretabellen:06.218	Baby carrot, baby corn, French beans, frozen	mezcla de minizanahorias, minimazorcas y judías verdes congelada
+matvaretabellen:06.219	Cauliflower, broccoli, carrot, sugar-snap peas, frozen	mezcla de coliflor, brócoli, zanahoria y tirabeques congelada
+matvaretabellen:06.220	Cauliflower, carrot, brussel sprouts, frozen	mezcla de coliflor, zanahoria y coles de Bruselas congelada
+matvaretabellen:06.221	Beetroot, cooked	remolacha cocida
+matvaretabellen:06.222	Brussels sprouts, cooked	coles de Bruselas cocidas
+matvaretabellen:06.223	Potatoes, mashed, home-made	puré de patatas casero
+matvaretabellen:06.224	Cabbage, red, cooked	lombarda cocida
+matvaretabellen:06.225	Banana, dried, banana chips	chips de plátano
+matvaretabellen:06.226	Mango, dried	mango seco
+matvaretabellen:06.227	Mango, dried, sweetened	mango seco azucarado
+matvaretabellen:06.228	Cranberries, dried, sweetened	arándanos rojos secos azucarados
+matvaretabellen:06.229	Sweet potato, roasted	boniato asado
+matvaretabellen:06.230	Coleslaw	ensalada de col
+matvaretabellen:06.231	Nettle, parboiled	ortiga escaldada
+matvaretabellen:06.232	Pea puree	puré de guisantes
+matvaretabellen:06.233	Parsnip, cooked	chirivía cocida
+matvaretabellen:06.234	Parsnip puree	puré de chirivía
+matvaretabellen:06.235	Parsley root puree	puré de raíz de perejil
+matvaretabellen:06.236	Celeriac, cooked	apio-nabo cocido
+matvaretabellen:06.237	Celeriac puree	puré de apio-nabo
 matvaretabellen:06.238	Wakame salad	ensalada de wakame
+matvaretabellen:06.239	Mixed nuts with dried fruit	mezcla de frutos secos y fruta deshidratada
+matvaretabellen:06.240	Redcurrant jam	mermelada de grosella roja
+matvaretabellen:06.241	Gooseberry jam	mermelada de grosella espinosa
+matvaretabellen:06.242	Green juice, with cucumber and spinach, from cafe/bakery	zumo verde con pepino y espinacas de cafetería
+matvaretabellen:06.243	Ginger juice, ginger shot, cafe/bakery	chupito de jengibre de cafetería
+matvaretabellen:06.244	Ginger juice, ginger shot, with orange and turmeric, cafe/bakery	chupito de jengibre con naranja y cúrcuma de cafetería
+matvaretabellen:06.245	Juice, with apple, carrot, ginger and lemon, from cafe/bakery	zumo de manzana, zanahoria, jengibre y limón de cafetería
+matvaretabellen:06.246	Juice, with beetroot, carrot and ginger, from cafe/bakery	zumo de remolacha, zanahoria y jengibre de cafetería
+matvaretabellen:06.247	Lemonade, with raspberries, from cafe/bakery	limonada con frambuesas de cafetería
+matvaretabellen:06.248	Lemonade, with lemon, from cafe/bakery	limonada de cafetería
+matvaretabellen:06.249	Slush, with strawberries	granizado de fresa
+matvaretabellen:06.250	Slush, with water melon	granizado de sandía
+matvaretabellen:06.251	Beans, white, cooked	alubias blancas cocidas
+matvaretabellen:06.252	Beans, red, kidney, cooked	alubias rojas cocidas
+matvaretabellen:06.253	Spinach, steamed	espinacas al vapor
+matvaretabellen:06.254	Spinach, creamed	espinacas a la crema
+matvaretabellen:06.255	Leek, frozen	puerro congelado
+matvaretabellen:06.256	Lentils, black, beluga, uncooked	lentejas negras beluga secas
+matvaretabellen:06.257	Lentils, green, puy, uncooked	lentejas verdes puy secas
+matvaretabellen:06.258	Avocado, frozen	aguacate congelado
+matvaretabellen:06.259	Mint, raw	menta fresca
+matvaretabellen:06.260	Mint, dried	menta seca
+matvaretabellen:06.261	Purslane, raw	verdolaga fresca
+matvaretabellen:06.262	Potatoes, autumn, boiled	patata de otoño cocida
+matvaretabellen:06.263	Potatoes, autumn, boiled, salted water	patata de otoño cocida en agua con sal
+matvaretabellen:06.264	Potatoes, early, boiled	patata temprana cocida
+matvaretabellen:06.265	Potatoes, early, boiled, salted water	patata temprana cocida en agua con sal
+matvaretabellen:06.266	Cumin seeds, ground	comino molido
+matvaretabellen:06.267	Plant-based product, used as cream cheese, oat based	queso crema vegetal de avena
+matvaretabellen:06.268	Cabbage, red, in vinegar	lombarda en vinagre
+matvaretabellen:06.269	Pesto, red, industrially made	pesto rojo comprado
+matvaretabellen:06.270	Artichoke heart, canned, drained	corazones de alcachofa en conserva escurridos
+matvaretabellen:06.271	Sunflower sprouts, raw	brotes de girasol
+matvaretabellen:06.272	Broccoli sprouts, raw	brotes de brócoli
+matvaretabellen:06.273	Lentil sprouts, green, raw	brotes de lentejas
+matvaretabellen:06.274	Potatoes, baked	patatas asadas
+matvaretabellen:06.275	Sweet pepper, red, roasted	pimiento rojo asado
+matvaretabellen:06.276	Sweet pepper, green, roasted	pimiento verde asado
+matvaretabellen:06.277	Sweet pepper, yellow/orange, roasted	pimiento amarillo-naranja asado
+matvaretabellen:06.278	Sweet pepper, yellow/orange, cooked	pimiento amarillo-naranja cocido
+matvaretabellen:06.279	Celery stalk or stem, imported, raw	apio crudo importado
+matvaretabellen:06.280	Celery stalk or stem, raw	apio crudo
+matvaretabellen:06.281	Lettuce, Iceberg, Norwegian. raw	lechuga iceberg fresca de Noruega
+matvaretabellen:06.282	Lettuce, Iceberg, imported, raw	lechuga iceberg fresca importada
+matvaretabellen:06.283	Leek, imported, raw	puerro crudo importado
+matvaretabellen:06.284	Leek, raw	puerro crudo
+matvaretabellen:06.285	Spinach, Norwegian, raw	espinaca cruda de Noruega
+matvaretabellen:06.286	Spinach, imported, raw	espinaca cruda importada
+matvaretabellen:06.501	Blackberries, raw	moras
+matvaretabellen:06.502	Blueberries, raw	arándanos
+matvaretabellen:06.503	Raspberries, raw	frambuesas
+matvaretabellen:06.504	Strawberries, raw	fresas
+matvaretabellen:06.505	Strawberries, frozen, 250 g sugar/kg berries	fresas congeladas con azúcar 250 g/kg
+matvaretabellen:06.506	Cherries, raw	guindas
+matvaretabellen:06.507	Cherries, sweet, raw	guindas morello
+matvaretabellen:06.508	Cloudberries, raw	mora de los pantanos
+matvaretabellen:06.509	Cloudberry jam, frozen,	mermelada de mora de los pantanos congelada
+matvaretabellen:06.511	Rosehip soup powder, dry	sopa de escaramujo en polvo
+matvaretabellen:06.512	Redcurrants, raw	grosellas rojas
+matvaretabellen:06.513	Blackcurrants, raw	grosellas negras
+matvaretabellen:06.514	Gooseberries, raw	grosellas espinosas
+matvaretabellen:06.515	Lingonberries, cowberries, raw	arándanos rojos
+matvaretabellen:06.516	Lingonberry/cowberry jam, frozen	mermelada de arándanos rojos congelada
+matvaretabellen:06.517	Pineapple, raw	piña cruda
+matvaretabellen:06.518	Pineapple, canned, in natural juice	piña en conserva al natural
+matvaretabellen:06.519	Pineapple, canned, in syrup	piña en conserva en almíbar
+matvaretabellen:06.520	Orange, raw	naranja
+matvaretabellen:06.521	Apricots, raw	albaricoques
+matvaretabellen:06.522	Apricots, canned, in syrup	albaricoques en conserva en almíbar
+matvaretabellen:06.523	Apricots, dried	orejones
+matvaretabellen:06.524	Avocado, raw	aguacate
+matvaretabellen:06.525	Banana, raw	plátano
+matvaretabellen:06.526	Clementine, raw	clementina
+matvaretabellen:06.527	Dates, dried	dátiles
+matvaretabellen:06.528	Grapes, raw	uvas
+matvaretabellen:06.529	Apple, Norwegian, raw	manzana de Noruega
+matvaretabellen:06.530	Apples, canned	manzanas en conserva
+matvaretabellen:06.531	Apples, dried	manzanas secas
+matvaretabellen:06.532	Peach, raw	melocotón
+matvaretabellen:06.533	Peaches, canned, in natural juice	melocotón en conserva al natural
+matvaretabellen:06.534	Peaches, canned, in syrup	melocotón en conserva en almíbar
+matvaretabellen:06.535	Figs, dried	higos secos
+matvaretabellen:06.536	Fruit cocktail, canned, in natural juice	macedonia en conserva al natural
+matvaretabellen:06.537	Fruit cocktail, canned, in syrup	macedonia en conserva en almíbar
+matvaretabellen:06.538	Grapefruit, raw	pomelo
+matvaretabellen:06.539	Kiwi fruit, raw	kiwi
+matvaretabellen:06.540	Compote, made from fruits and berries	compota de frutas y bayas
+matvaretabellen:06.542	Mango, raw	mango
+matvaretabellen:06.543	Melon, water, raw	sandía
+matvaretabellen:06.544	Plums, raw	ciruelas
+matvaretabellen:06.545	Plums, canned, in syrup	ciruelas en conserva en almíbar
+matvaretabellen:06.546	Pear, Norwegian, raw	pera de Noruega
+matvaretabellen:06.548	Pears, canned, in syrup	peras en conserva en almíbar
+matvaretabellen:06.549	Raisins	pasas
+matvaretabellen:06.550	Lemon, raw	limón
+matvaretabellen:06.552	Prunes	ciruelas pasas
+matvaretabellen:06.553	Hazelnuts	avellanas
+matvaretabellen:06.554	Coconut, desiccated, not sweetened	coco rallado sin azúcar
+matvaretabellen:06.555	Almonds, without peel	almendras sin piel
+matvaretabellen:06.556	Olives, green, pickled	aceitunas verdes en vinagre
+matvaretabellen:06.557	Peanuts, raw	cacahuetes
+matvaretabellen:06.558	Peanuts, roasted, salted	cacahuetes tostados salados
+matvaretabellen:06.559	Peanut butter	crema de cacahuete
+matvaretabellen:06.560	Walnuts	nueces
+matvaretabellen:06.565	Orange marmalade	mermelada de naranja
+matvaretabellen:06.566	Fruit drink, 500 g sugar/l syrup, concentrated	concentrado de frutas 500 g azúcar/l
+matvaretabellen:06.567	Fruit drink, 1000 g sugar/l syrup, concentrated	concentrado de frutas 1000 g azúcar/l
+matvaretabellen:06.568	Orange juice, from concentrate	zumo de naranja de concentrado
+matvaretabellen:06.569	Fruit drink, orange, concentrated	concentrado de naranja
+matvaretabellen:06.571	Apple juice	zumo de manzana sin filtrar
+matvaretabellen:06.574	Fruit juice drink, blackcurrant, concentrated	concentrado de grosella negra
+matvaretabellen:06.581	Passion fruit, raw	maracuyá
+matvaretabellen:06.582	Cashew nuts	anacardos
+matvaretabellen:06.583	Fruit drink, 500 g sugar/l syrup, ready-to-drink	bebida de frutas 500 g azúcar/l
+matvaretabellen:06.584	Fruit drink, 1000 g sugar/l syrup, ready-to-drink	bebida de frutas 1000 g azúcar/l
+matvaretabellen:06.585	Fruit drink, orange, ready-to-drink	bebida de naranja
+matvaretabellen:06.586	Nectar, apple	néctar de manzana
 matvaretabellen:06.587	Fruit juice drink, blackcurrant, ready-to-drink	bebida de grosella negra
+matvaretabellen:06.588	Strawberries, frozen, 100 g sugar/kg berries	fresas congeladas con azúcar 100 g/kg
+matvaretabellen:06.589	Fruit drink, mixed berries, concentrated	concentrado de bayas
+matvaretabellen:06.590	Fruit drink, mixed berries, ready-to-drink	bebida de bayas
+matvaretabellen:06.591	Jam, 45 % berries, 25 % sugar	mermelada (45 % fruta, 25 % azúcar)
+matvaretabellen:06.592	Brazil nuts	nueces de Brasil
+matvaretabellen:06.593	Pecan nuts	nueces pecanas
+matvaretabellen:06.594	Pistachio nuts, roasted, with salt	pistachos tostados salados
+matvaretabellen:06.595	Cherimoya, raw	chirimoya
+matvaretabellen:06.596	Pomegranate, raw	granada
+matvaretabellen:06.597	Guava, raw	guayaba
+matvaretabellen:06.598	Elderberries, raw	bayas de saúco
+matvaretabellen:06.599	Prickly pear, raw	higo chumbo
+matvaretabellen:06.600	Melon, cantaloupe, raw	melón cantalupo
+matvaretabellen:06.601	Kumquat, raw	kumquat
+matvaretabellen:06.603	Lime, raw	lima
+matvaretabellen:06.604	Lychee, raw	lichi
+matvaretabellen:06.605	Nectarine, raw	nectarina
+matvaretabellen:06.606	Papaya, raw	papaya
+matvaretabellen:06.607	Crab apple, raw	manzana silvestre
+matvaretabellen:06.608	Pears, canned, in natural juice	peras en conserva al natural
+matvaretabellen:06.610	Melon, honeydew, raw	melón honeydew
+matvaretabellen:06.611	Olives, black, in oil, canned	aceitunas negras en aceite en conserva
+matvaretabellen:06.613	Fruit drink, blackcurrant, 500 g sugar/l syrup, ready-to-drink	bebida de grosella negra 500 g azúcar/l
+matvaretabellen:06.614	Pine nuts	piñones
+matvaretabellen:06.615	Quinoa, uncooked	quinoa seca
+matvaretabellen:06.616	Quinoa, cooked	quinoa cocida
+matvaretabellen:06.617	Macadamia nuts, raw	nueces de macadamia
+matvaretabellen:06.618	Cashew nuts, salted	anacardos salados
+matvaretabellen:06.619	Crowberries, raw	camarina
+matvaretabellen:06.620	Apple, Granny Smith, Golden Delicious, raw	manzana Granny Smith o Golden
+matvaretabellen:06.621	Apple, Ingrid Marie, raw	manzana Ingrid Marie
+matvaretabellen:06.622	Apple, Rød Aroma, raw	manzana Rød Aroma
+matvaretabellen:06.623	Plaintain, raw	plátano macho crudo
+matvaretabellen:06.624	Sea buckthorn, raw	espino amarillo
+matvaretabellen:06.625	Papaya, dried	papaya seca
+matvaretabellen:06.626	Lemon peel	cáscara de limón
+matvaretabellen:06.627	Tropical juice	zumo tropical
+matvaretabellen:06.628	Orange peel, raw	cáscara de naranja
+matvaretabellen:06.629	Jackfruit, raw	jackfruit
+matvaretabellen:06.630	Nashi, asian pear, raw	pera nashi
+matvaretabellen:06.631	Rambutan, raw	rambután
+matvaretabellen:06.632	Tamarinds, raw	tamarindo
+matvaretabellen:06.663	Quinoa, white, uncooked	quinoa blanca seca
+matvaretabellen:06.664	Quinoa, red, uncooked	quinoa roja seca
+matvaretabellen:06.665	Quinoa, black, uncooked	quinoa negra seca
+matvaretabellen:06.667	Blueberries, American, raw	arándanos americanos
+matvaretabellen:06.668	Pistachio nuts	pistachos
+matvaretabellen:06.669	Cucumber salad, with vinegar	ensalada de pepino con vinagre
+matvaretabellen:06.670	Potatoes, gratinated with cream	patatas gratinadas con nata
+matvaretabellen:06.671	Mashed swede	puré de colinabo
+matvaretabellen:06.672	Guacamole	guacamole
+matvaretabellen:06.673	Tzatziki	tzatziki
+matvaretabellen:06.674	Wok mix, Indian style	mezcla para wok india
+matvaretabellen:06.675	Wok mix, Chinese style	mezcla para wok china
+matvaretabellen:06.676	Wok mix, Thai style	mezcla para wok tailandesa
+matvaretabellen:06.677	Onion, roasted	cebolla frita crujiente
+matvaretabellen:06.678	Plant-based minced, soy protein	picado vegetal de soja
+matvaretabellen:06.679	Hummus	hummus
+matvaretabellen:06.680	Almond spread, home-made	crema de almendras casera
+matvaretabellen:06.681	Cashew nut spread, home-made	crema de anacardos casera
+matvaretabellen:06.682	Orange juice, freshly squeezed	zumo de naranja recién exprimido
+matvaretabellen:06.683	Passion fruit juice	zumo de maracuyá
+matvaretabellen:06.684	Plant-based schnitzel, soy and wheat protein	escalope vegetal de soja y trigo
+matvaretabellen:06.685	Tempeh soy bean product	tempeh
+matvaretabellen:06.686	Seitan, wheat gluten	seitán
+matvaretabellen:06.687	Nut roast	asado de frutos secos
+matvaretabellen:06.690	Plant-based product, used as cheese, shredded	queso vegetal rallado
+matvaretabellen:06.691	Plant-based product, used as cheese	queso vegetal
+matvaretabellen:06.692	Sweet pepper and chick pea puree, industrially made	paté de pimiento y garbanzos comprado
+matvaretabellen:06.693	Lentils and bean salad, industrially made	ensalada de lentejas y alubias comprada
+matvaretabellen:06.701	Coconut milk, canned	leche de coco en conserva
+matvaretabellen:06.702	Sesame paste, tahini	tahini
+matvaretabellen:06.703	Sausage, soy, canned	salchicha de soja en conserva
+matvaretabellen:06.704	Tofu	tofu
+matvaretabellen:06.705	Burger, vegetarian, with beans, fried in fat	hamburguesa de alubias frita
+matvaretabellen:06.706	Vegetable stew, with tomato, ratatouille	estofado de verduras con tomate (ratatouille)
+matvaretabellen:06.707	Casserole, with vegetables and potatoes	cazuela de verduras con patatas
+matvaretabellen:06.708	Casserole, with beans, no meat	cazuela de alubias vegetariana
+matvaretabellen:06.712	Greek salad, with feta cheese and olives	ensalada griega con feta y aceitunas
+matvaretabellen:06.713	Vegetable spread/pâté, industrially made	paté vegetal comprado
+matvaretabellen:06.716	Sweet pepper, green, cooked	pimiento verde cocido
+matvaretabellen:06.717	Sweet pepper, red, cooked	pimiento rojo cocido
+matvaretabellen:06.718	Carrot, cooked	zanahoria cocida
+matvaretabellen:06.719	Cauliflower, cooked	coliflor cocida
+matvaretabellen:06.720	Cabbage, white, cooked	col blanca cocida
+matvaretabellen:06.721	Swede, cooked	colinabo cocido
+matvaretabellen:06.722	Onion, cooked	cebolla cocida
+matvaretabellen:06.723	Leek, cooked	puerro cocido
+matvaretabellen:06.724	Tomato, cooked	tomate cocido
+matvaretabellen:06.725	Broccoli, cooked	brócoli cocido
+matvaretabellen:06.727	Parsley root, cooked	raíz de perejil cocida
+matvaretabellen:06.728	Grape juice	zumo de uva
+matvaretabellen:06.729	Lemon juice, bottled	zumo de limón embotellado
+matvaretabellen:06.730	Fruit drink, blackcurrant, 500 g sugar/l syrup, concentrated	concentrado de grosella negra 500 g azúcar/l
+matvaretabellen:06.731	Fruit drink, blackcurrant, 1000 g sugar/l syrup, ready-to-drink	bebida de grosella negra 1000 g azúcar/l
+matvaretabellen:06.732	Fruit drink, blackcurrant, 1000 g sugar/l syrup, concentrated	concentrado de grosella negra 1000 g azúcar/l
+matvaretabellen:06.734	Pizza, tomato sauce and cheese, hjemmelaget	pizza con salsa de tomate y queso casera
+matvaretabellen:06.735	Beans, brown, cooked	alubias pintas cocidas
+matvaretabellen:06.736	Sweet corn, canned	maíz dulce en conserva
+matvaretabellen:06.737	Soya protein, textured	proteína de soja texturizada
+matvaretabellen:06.738	French fries, fast food restaurant	patatas fritas de fast food
+matvaretabellen:06.739	Potatoes, spring, from Cyprus, raw	patata temprana de Chipre cruda
+matvaretabellen:06.740	Broccoli, imported, frozen	brócoli importado congelado
+matvaretabellen:06.741	Beans, green, French, frozen	judías verdes congeladas
+matvaretabellen:06.743	Carrot, imported, frozen	zanahoria importada congelada
+matvaretabellen:06.745	Sweet corn, frozen	maíz dulce congelado
+matvaretabellen:06.746	Cauliflower, imported, frozen	coliflor importada congelada
+matvaretabellen:06.747	Broccoli, imported, raw	brócoli crudo importado
+matvaretabellen:06.748	Broccoli, unspecified, raw	brócoli crudo
+matvaretabellen:06.752	Tomato, small, cherry, imported, raw	tomates cherry importados crudos
+matvaretabellen:06.753	Tomato, imported, raw	tomate crudo importado
+matvaretabellen:06.754	Tomato, unspecified, raw	tomate crudo
+matvaretabellen:06.755	Grapes, red, raw	uvas rojas
+matvaretabellen:06.756	Grapes, green, raw	uvas verdes
+matvaretabellen:06.757	Apple, imported, raw	manzana importada
+matvaretabellen:06.758	Apple, unspecified, raw	manzana
+matvaretabellen:06.759	Pear, imported, raw	pera importada
+matvaretabellen:06.760	Pear, unspecified, raw	pera
+matvaretabellen:06.761	Jam, without added sugar	mermelada sin azúcar añadido
+matvaretabellen:06.762	Jam, 40 % berries, 40 % sugar	mermelada (40 % fruta, 40 % azúcar)
 matvaretabellen:06.763	Jam, 60 % berries, 30 % sugar	mermelada de frutos del bosque
+matvaretabellen:06.764	Black chokeberries, raw	aronia
+matvaretabellen:06.765	Cranberries, raw	arándanos agrios
+matvaretabellen:06.766	Cape gooseberries, raw	physalis
+matvaretabellen:06.767	Persimmon, kaki fruit, raw	caqui
+matvaretabellen:06.768	Carambola, raw	carambola
+matvaretabellen:06.769	Coconut, raw	coco
+matvaretabellen:06.770	Melon, galia, raw	melón galia
+matvaretabellen:06.771	Pomelo, raw	pomelo chino
+matvaretabellen:06.772	Rosehip, raw	escaramujo
+matvaretabellen:06.773	Rowan-berries, raw	bayas de serbal
+matvaretabellen:06.774	Bog blueberries, raw	arándano de pantano
+matvaretabellen:06.775	Pineapple juice	zumo de piña
+matvaretabellen:06.776	Grapefruit juice	zumo de pomelo
+matvaretabellen:06.777	Cranberry juice	zumo de arándanos rojos
+matvaretabellen:06.780	Coconut milk, light, canned	leche de coco ligera en conserva
+matvaretabellen:06.781	Mycoprotein	micoproteína
+matvaretabellen:06.782	Vegetarian lasagna, home-made	lasaña vegetariana casera
+matvaretabellen:06.783	Falafel, home-made	falafel casero
+matvaretabellen:06.784	Vegetarian burger, home-made	hamburguesa vegetariana casera
+matvaretabellen:06.785	Sushi, maki, mango, vegetar	maki de mango vegetariano
+matvaretabellen:06.786	Sushi, maki, avocado, vegetarian	maki de aguacate vegetariano
+matvaretabellen:06.787	Sushi, maki, tofu, vegetarian	maki de tofu vegetariano
+matvaretabellen:06.788	Bean and olive salad, industrially made	ensalada de alubias y aceitunas comprada
+matvaretabellen:06.789	Vegetable spread, industrially made	crema de verduras comprada
+matvaretabellen:06.790	Ajvar, sweet pepper sauce, home-made	ajvar casero
+matvaretabellen:06.791	Avocado and chick pea puree, industrially made	paté de aguacate y garbanzos comprado
+matvaretabellen:06.792	Apricot jam	mermelada de albaricoque
+matvaretabellen:06.793	Blackberry jam	mermelada de mora
+matvaretabellen:06.794	Blueberry jam, frozen	mermelada de arándanos congelada
+matvaretabellen:06.795	Blueberry jam, with less sugar	mermelada de arándanos baja en azúcar
+matvaretabellen:06.796	Blueberry jam, without added sugar	mermelada de arándanos sin azúcar añadido
+matvaretabellen:06.797	Blueberry jam	mermelada de arándanos
+matvaretabellen:06.798	Raspberry jam, frozen	mermelada de frambuesa congelada
+matvaretabellen:06.799	Raspberry jam, with less sugar	mermelada de frambuesa baja en azúcar
+matvaretabellen:06.800	Raspberry jam, without added sugar	mermelada de frambuesa sin azúcar añadido
+matvaretabellen:06.801	Raspberry jam	mermelada de frambuesa
+matvaretabellen:06.802	Apple jam, with less sugar	compota de manzana baja en azúcar
+matvaretabellen:06.803	Apple jam, without added sugar	compota de manzana sin azúcar añadido
+matvaretabellen:06.804	Apple jam	compota de manzana
+matvaretabellen:06.805	Strawberry jam, frozen	mermelada de fresa congelada
+matvaretabellen:06.806	Strawberry jam, with less sugar	mermelada de fresa baja en azúcar
+matvaretabellen:06.807	Strawberry jam, without added sugar	mermelada de fresa sin azúcar añadido
+matvaretabellen:06.808	Strawberry jam	mermelada de fresa
+matvaretabellen:06.809	Cherry jam	mermelada de guinda
+matvaretabellen:06.810	Cloudberry jam	mermelada de mora de los pantanos
+matvaretabellen:06.811	Rosehip jam	mermelada de escaramujo
+matvaretabellen:06.812	Plum jam	mermelada de ciruela
+matvaretabellen:06.813	Rhubarb jam	mermelada de ruibarbo
+matvaretabellen:06.814	Blackcurrant jam	mermelada de grosella negra
+matvaretabellen:06.815	Lingonberry/cowberry jam	mermelada de arándanos rojos
+matvaretabellen:06.817	Falafel, chickpeas balls, industrially made	falafel comprado
+matvaretabellen:06.819	Plant-based burger, soy protein	hamburguesa vegetal de soja
+matvaretabellen:06.820	Plant-based burger, potato and lentils	hamburguesa vegetal de patata y lentejas
+matvaretabellen:06.821	Plant-based grill sausage, vegetables and potato	salchicha vegetal para parrilla de verduras y patata
+matvaretabellen:06.822	Plant-based balls, potato and lentils	albóndigas vegetales de patata y lentejas
+matvaretabellen:06.823	Plant-based balls, soy protein	albóndigas vegetales de soja
+matvaretabellen:06.826	Plant-based minced, soy protein and wheat	picado vegetal de soja y trigo
+matvaretabellen:06.827	Plant-based grill sausage, sunflower protein	salchicha vegetal para parrilla de proteína de girasol
+matvaretabellen:06.829	Plant-based balls, pea protein	albóndigas vegetales de proteína de guisante
+matvaretabellen:06.830	Plant-based minced, pea protein	picado vegetal de proteína de guisante
+matvaretabellen:06.833	Plant-based burger	hamburguesa vegetal
+matvaretabellen:06.834	Plant-based sausage, soy protein	salchicha vegetal de soja
+matvaretabellen:06.835	Plant-based grill sausage	salchicha vegetal para parrilla
+matvaretabellen:06.836	Plant-based balls	albóndigas vegetales
+matvaretabellen:06.837	Plant-based minced	picado vegetal
+matvaretabellen:06.838	Whitecurrant jam	mermelada de grosella blanca
+matvaretabellen:06.839	Mango, frozen	mango congelado
+matvaretabellen:06.840	Strawberries, frozen	fresas congeladas
+matvaretabellen:06.841	Raspberries, frozen	frambuesas congeladas
+matvaretabellen:06.842	Pineapple, frozen	piña congelada
+matvaretabellen:06.843	Goji berries, dried	bayas de goji secas
+matvaretabellen:06.844	Berries, mixed, frozen	mezcla de bayas congelada
+matvaretabellen:06.845	Pomegranate, frozen	granada congelada
+matvaretabellen:06.846	Beans, in chili sauce, canned	alubias en salsa de chile en conserva
+matvaretabellen:06.847	Blueberries, frozen	arándanos congelados
+matvaretabellen:06.848	Apple, Pink lady, raw	manzana Pink Lady
+matvaretabellen:06.849	Whitecurrants, raw	grosellas blancas
+matvaretabellen:06.850	Kale, steamed	col kale al vapor
+matvaretabellen:06.851	Mushroom, common, pan-fried	champiñones salteados
+matvaretabellen:06.852	Cauliflower, imported, raw	coliflor cruda importada
+matvaretabellen:06.853	Cauliflower, raw	coliflor cruda
+matvaretabellen:06.854	Fig jam	mermelada de higos
+matvaretabellen:06.855	Smoothie mix, strawberries, banana and blueberries, frozen	mezcla para smoothie de fresa, plátano y arándanos congelada
+matvaretabellen:06.856	Smoothie mix, strawberries, raspberries and banana, frozen	mezcla para smoothie de fresa, frambuesa y plátano congelada
+matvaretabellen:06.857	Smoothie mix, pineapple, papaya and mango, frozen	mezcla para smoothie de piña, papaya y mango congelada
+matvaretabellen:06.858	Smoothie mix, banana, kale, mango and ginger, frozen	mezcla para smoothie de plátano, col kale, mango y jengibre congelada
 matvaretabellen:06.859	Smoothie mix, pineapple, melon, banana, frozen	mezcla para smoothie de piña, melón y plátano congelada
+matvaretabellen:06.860	Smoothie mix, pineapple, mango and banana, frozen	mezcla para smoothie de piña, mango y plátano congelada
+matvaretabellen:06.861	Smoothie mix, raspberries, blueberries and banana, frozen	mezcla para smoothie de frambuesa, arándanos y plátano congelada
+matvaretabellen:06.862	Smoothie mix, strawberries and banana, frozen	mezcla para smoothie de fresa y plátano congelada
+matvaretabellen:06.863	Potato, carrot, celeriac root, swede, leek, frozen	mezcla para estofado de patata, zanahoria, apio-nabo, colinabo y puerro congelada
+matvaretabellen:06.864	Mushroom stew	setas estofadas en nata
+matvaretabellen:06.865	Tofu, silky	tofu sedoso
+matvaretabellen:06.866	Tofu, smoked	tofu ahumado
+matvaretabellen:06.867	Plant-based product, used as yoghurt, soy based, with flavour, with calcium and vitamins (vit D, riboflavin, vit B12)	yogur vegetal de soja con sabor, calcio y vitaminas
+matvaretabellen:06.868	Plant-based product, used as yoghurt, soy based, with calcium and vitamins (vit D, vit B12)	yogur vegetal de soja con calcio y vitaminas
+matvaretabellen:08.001	Fat, coconut	grasa de coco
+matvaretabellen:08.005	Butter	mantequilla
+matvaretabellen:08.006	Oil, corn	aceite de maíz
+matvaretabellen:08.007	Oil, soy	aceite de soja
+matvaretabellen:08.008	Cod liver oil, Møllers tran	aceite de hígado de bacalao Møllers
+matvaretabellen:08.009	Mayonnaise, full fat, 80 % fat	mayonesa 80 %
+matvaretabellen:08.010	Mayonnaise, fat reduced, 50 % fat	mayonesa ligera 50 %
+matvaretabellen:08.011	Mayonnaise, fat reduced, 40 % fat	mayonesa ligera 40 %
+matvaretabellen:08.012	Potato salad, with mayonnaise	ensalada de patatas con mayonesa
+matvaretabellen:08.013	Remoulade	salsa remoulade
+matvaretabellen:08.017	Salad dressing, no fat	aliño sin grasa
+matvaretabellen:08.019	Oil, olive	aceite de oliva
+matvaretabellen:08.021	Potato salad, with fat reduced mayonnaise	ensalada de patatas con mayonesa ligera
+matvaretabellen:08.022	Mayonnaise, low-fat, 25 % fat	mayonesa ligera 25 %
+matvaretabellen:08.030	Cod liver oil, capsules, Møllers Dobbel	aceite de hígado de bacalao Møllers Dobbel en cápsulas
+matvaretabellen:08.102	Margarine, fat spread, semi-hard, butter and rapeseed oil, 82 % fat, Bremykt	margarina Bremykt 82 %
+matvaretabellen:08.103	Margarine, fat spread, vegetable fat and butter, 40 % fat, Brelett	margarina Brelett 40 %
+matvaretabellen:08.104	Oil, wheatgerm	aceite de germen de trigo
+matvaretabellen:08.105	Oil, sesame	aceite de sésamo
+matvaretabellen:08.106	Oil, sunflower	aceite de girasol
 matvaretabellen:08.111	Oil, frying, blend	aceite para freír (mezcla)
+matvaretabellen:08.112	Oil, olive, Extra Virgin	aceite de oliva virgen extra
+matvaretabellen:08.113	Oil, rapeseed, cold pressed, Odelia	aceite de colza prensado en frío Odelia
+matvaretabellen:08.114	Oil, rapeseed and sunflower, Vita	aceite de colza y girasol Vita
+matvaretabellen:08.117	Margarine, liquid, rapeseed and sunflower oil, 85 % fat, Vita	margarina líquida Vita Hjertego 85 %
+matvaretabellen:08.118	Margarine, soft, spread with sterols, 35 % fat, Vita Pro aktiv	margarina Vita Pro aktiv 35 %
+matvaretabellen:08.121	Mayonnaise salad, with cheese	ensalada de queso con mayonesa
+matvaretabellen:08.122	Crabstick salad, mayonnaise salad	ensalada de palitos de cangrejo con mayonesa
+matvaretabellen:08.123	Shrimp salad, mayonnaise salad	ensalada de gambas con mayonesa
+matvaretabellen:08.124	Mustard sauce	salsa de mostaza
+matvaretabellen:08.125	Salad dressing, mayonnaise, 15 % fat	aliño tipo mayonesa 15 %
+matvaretabellen:08.126	Salad dressing, mayonnaise, 30 % fat	aliño tipo mayonesa 30 %
+matvaretabellen:08.127	Salad dressing, mayonnaise, 55 % fat	aliño tipo mayonesa 55 %
+matvaretabellen:08.128	Italian salad, mayonnaise salad	ensalada italiana con mayonesa
+matvaretabellen:08.129	Beetroot salad, mayonnaise salad	ensalada de remolacha con mayonesa
+matvaretabellen:08.130	Egg salad, mayonnaise salad, industrially made	ensalada de huevo con mayonesa comprada
+matvaretabellen:08.201	Salad dressing, oil and vinegar, French	vinagreta francesa
+matvaretabellen:08.202	Waldorf salad, with apples, celery, mayonnaise and whipped cream	ensalada Waldorf
+matvaretabellen:08.203	Potato salad, with low-fat sour cream	ensalada de patatas con nata agria baja en grasa
+matvaretabellen:08.204	Potato salad, with sour cream	ensalada de patatas con nata agria
+matvaretabellen:08.212	Margarine, for baking/frying, hard, vegetable fat, Melange	margarina para hornear y freír Melange
+matvaretabellen:08.213	Margarine, liquid, vegetable fat, Melange	margarina líquida Melange
+matvaretabellen:08.221	Margarine, vegetable fat, Soft Flora	margarina Soft Flora
+matvaretabellen:08.222	Margarine, for baking/frying, soft, vegetable fat, Soft Flora	margarina para hornear y freír Soft Flora
+matvaretabellen:08.223	Margarine, fat spread, vegetable fat, Soft light	margarina Soft Flora ligera
+matvaretabellen:08.228	Margarine, fat spread, rapeseed and sunflower oil, 80 % fat, Vita hjertego myk	margarina Vita Hjertego blanda 80 %
+matvaretabellen:08.229	Margarine, fat spread, rapeseed and sunflower oil, 40 % fat, Vita lett	margarina Vita Hjertego ligera 40 %
+matvaretabellen:08.230	Fat, dripping, 100 % fat	grasa de cocinar
+matvaretabellen:08.234	Oil, peanut	aceite de cacahuete
+matvaretabellen:08.235	Oil, rapeseed	aceite de colza
+matvaretabellen:08.236	Oil, palm	aceite de palma
+matvaretabellen:08.237	Butter, unsalted	mantequilla sin sal
+matvaretabellen:08.238	Margarine, hard	margarina dura
+matvaretabellen:08.239	Margarine, soft	margarina blanda
+matvaretabellen:08.240	Fat for cooking, unspecified	grasa para cocinar
+matvaretabellen:08.244	Margarine, without salt and milk, foil	margarina Melange sin sal ni leche
+matvaretabellen:08.245	Margarine, reduced salt, Soft Spesial	margarina Soft Spesial baja en sal
+matvaretabellen:08.247	Butter, extra salt, Kviteseid butter	mantequilla salada Kviteseid
+matvaretabellen:08.249	Oil, coconut	aceite de coco
+matvaretabellen:08.250	Oil, walnut	aceite de nuez
+matvaretabellen:08.251	Oil, linseed	aceite de linaza
+matvaretabellen:08.252	Ghee	ghee
+matvaretabellen:08.253	Ghee, vegetable oil	ghee vegetal
+matvaretabellen:08.254	Aioli	aioli
+matvaretabellen:08.256	Cheddar sauce	salsa de cheddar
+matvaretabellen:08.257	Caesar dressing	aliño César
+matvaretabellen:08.258	Butter sauce, with cream	salsa de mantequilla con nata
+matvaretabellen:08.259	Salad with shrimps and crawfish	ensalada de gambas y cangrejos de río
+matvaretabellen:08.260	Margarine, fat spread, Olivero	margarina Olivero
+matvaretabellen:08.262	Margarine, fat spread, Bremykt mykere	margarina Bremykt blanda
+matvaretabellen:08.263	Cocoa butter	manteca de cacao
+matvaretabellen:08.264	Cod liver oil, Biopharma	aceite de hígado de bacalao con sabor a lima Biopharma
+matvaretabellen:08.265	Fat, coconut, Delfia	grasa de coco Delfia
+matvaretabellen:08.266	Margarine, liquid, vegetable fat, with butter oil, Melange	margarina líquida Melange con mantequilla
+matvaretabellen:08.267	Margarine, liquid, vegetable fat, vegan, Melange	margarina líquida Melange vegana
+matvaretabellen:08.268	Egg salad, home-made	ensalada de huevo casera
+matvaretabellen:09.001	Sugar, brown	azúcar moreno
+matvaretabellen:09.002	Sugar, white, caster sugar, cube sugar	azúcar blanco
+matvaretabellen:09.003	Honey	miel
+matvaretabellen:09.004	Frosting	azúcar glas
+matvaretabellen:09.008	Milk spread, sugar added, Hapå	crema de leche con azúcar Hapå
+matvaretabellen:09.009	Nut spread, Nugatti	crema de cacao y avellanas Nugatti
+matvaretabellen:09.010	Chocolate spread, Sjokade	crema de cacao Sjokade
+matvaretabellen:09.011	Cocoa powder	cacao en polvo
+matvaretabellen:09.012	Cocoa, instant powder, without milk	cacao instantáneo sin leche
+matvaretabellen:09.013	Caramel	caramelo
+matvaretabellen:09.015	Syrup	jarabe
+matvaretabellen:09.016	Marzipan, 50 % almonds	mazapán 50 % almendra
+matvaretabellen:09.017	Chocolate bar, milk	chocolate con leche
+matvaretabellen:09.018	Chocolate, milk, with nuts	chocolate con leche con frutos secos
+matvaretabellen:09.019	Chocolate, cooking, plain, minimum 35 % cocoa	chocolate para cocinar negro
+matvaretabellen:09.021	Pastilles	pastillas
+matvaretabellen:09.022	Drops, hard	caramelos duros
+matvaretabellen:09.030	Liquorice, sweet	regaliz dulce
+matvaretabellen:09.101	Marzipan bar, chocolate covered	barrita de mazapán con chocolate
+matvaretabellen:09.102	Chocolate wafer bar	chocolate con galleta
+matvaretabellen:09.103	Chocolate, filled	chocolate relleno
+matvaretabellen:09.104	Chocolate, cooking, with milk, minimum 25 % cocoa	chocolate para cocinar con leche
+matvaretabellen:09.105	Sweets mix, chocolate included	mezcla de golosinas con chocolate
+matvaretabellen:09.106	Sweets mix, without chocolate	mezcla de golosinas sin chocolate
+matvaretabellen:09.107	Sweets mix, salt liquorice	mezcla de regaliz salado
+matvaretabellen:09.108	Vanilla sugar	azúcar vainillado
+matvaretabellen:09.110	Sherbet	sorbete
+matvaretabellen:09.111	Snowball	nube con coco
+matvaretabellen:09.113	Liquorice, allsorts	regaliz surtido
+matvaretabellen:09.114	Ice lolly, fruit juice	polo de zumo
+matvaretabellen:09.115	Ice lolly, with fruit juice	polo con zumo de fruta
+matvaretabellen:09.116	Chocolate bar, milk, aerated	chocolate con leche aireado
+matvaretabellen:09.117	Chocolate bar, jelly and marzipan covered with chocolate, Troika	chocolate con gelatina y mazapán Troika
+matvaretabellen:09.124	Pastilles, without sugar	pastillas sin azúcar
+matvaretabellen:09.125	Caramels, chocolate covered	caramelos con chocolate
+matvaretabellen:09.127	Marshmallows	malvaviscos
+matvaretabellen:09.128	Fruit jellies, Seigmenn	gominolas de fruta Seigmenn
+matvaretabellen:09.129	Chewing gum, with sugar	chicle con azúcar
+matvaretabellen:09.130	Marzipan, 30 % almonds	mazapán 30 % almendra
+matvaretabellen:09.131	Nut spread, less sugar, Nugatti	crema de cacao y avellanas baja en azúcar Nugatti
+matvaretabellen:09.133	Chocolate, dark, 70 % cocoa	chocolate negro 70 %
+matvaretabellen:09.134	Chocolate, white	chocolate blanco
+matvaretabellen:09.135	Meat rissoles with pea stew, industrially made	albóndigas con puré de guisantes preparadas
+matvaretabellen:09.136	Steamed salmon with herb sauce, carrots and potatoes, industrially made	salmón cocido con salsa de hierbas, zanahorias y patatas preparado
+matvaretabellen:09.137	Pork roast with sauerkraut and potatoes, ready to eat, industrially made	asado de cerdo con chucrut y patatas preparado
+matvaretabellen:09.138	Taco with tortilla, minced meat, vegetables	taco de tortilla con carne picada y verduras
+matvaretabellen:09.139	Taco with tortilla, chicken, vegetables	taco de tortilla con pollo y verduras
+matvaretabellen:09.140	Taco with tortilla, salmon, vegetables	taco de tortilla con salmón y verduras
+matvaretabellen:09.141	Taco with shell, minced meat, vegetables	taco en torta crujiente con carne picada y verduras
+matvaretabellen:09.142	Taco with shell, chicken, vegetables	taco en torta crujiente con pollo y verduras
+matvaretabellen:09.143	Taco with shell, salmon, vegetables	taco en torta crujiente con salmón y verduras
+matvaretabellen:09.144	Pancakes, coarse	tortitas integrales
+matvaretabellen:09.145	Pizza, ham, sweet pepper and Jarlsberg cheese, industrially made	pizza de jamón, pimiento y queso Jarlsberg preparada
+matvaretabellen:09.146	Pizza, ham, cheddar and mozzarella, industrially made	pizza de jamón, cheddar y mozzarella preparada
+matvaretabellen:09.147	Pizza, mozzarella, ham, sausage and champignon, industrially made	pizza de mozzarella, jamón, salami y champiñones preparada
+matvaretabellen:09.148	Pizza, minced meat and onion, industrially made	pizza de carne picada y cebolla preparada
+matvaretabellen:09.150	Pizza, ham, pepperoni and minced meat, industrially made	pizza de jamón, pepperoni y carne picada preparada
+matvaretabellen:09.151	Pizza, mozzarella and tomatoes, industrially made	pizza de mozzarella y tomate preparada
+matvaretabellen:09.152	Pizza, pepperoni, sausage, jalapeño and cheese, industrially made	pizza de pepperoni, salami, jalapeño y queso preparada
 matvaretabellen:09.153	Pizza, industrially made	pizza preparada
+matvaretabellen:09.154	Chocolate, with almond butter, Daim	chocolate Daim
+matvaretabellen:09.155	Chocolate, filled with mint, After Eight	chocolate After Eight
+matvaretabellen:09.156	Chocolate, filled with coconut, Bounty	chocolate Bounty
+matvaretabellen:09.157	Chocolate, Mars	chocolate Mars
+matvaretabellen:09.158	Chocolate, Milky Way	chocolate Milky Way
+matvaretabellen:09.159	Chocolate, Snickers	chocolate Snickers
+matvaretabellen:09.160	Foam candy, Ahlgrens bilar	gominolas Ahlgrens bilar
+matvaretabellen:09.161	Rhubarb soup	sopa de ruibarbo
+matvaretabellen:09.162	Lemon mousse	mousse de limón
+matvaretabellen:09.163	Crumbled pie, with berries	crumble de bayas
+matvaretabellen:09.164	Crumble pie, with apples	crumble de manzana
+matvaretabellen:09.165	Pizza, parma, home-made	pizza parma casera
+matvaretabellen:09.166	Pizza, minced meat, home-made	pizza de carne picada casera
+matvaretabellen:09.167	Pizza, vegetarian, home-made	pizza vegetariana casera
+matvaretabellen:09.168	Pizza, ham, home-made	pizza de jamón casera
+matvaretabellen:09.169	Chocolate puffed rice balls	bolas de arroz inflado con chocolate
+matvaretabellen:09.170	Taco with shell, minced meat (max 6% fat), vegetables	taco en torta crujiente con carne picada magra y verduras
+matvaretabellen:09.171	Taco with tortilla, minced meat (max 6 % fat), vegetables	taco de tortilla con carne picada magra y verduras
+matvaretabellen:09.172	Taco with shell, plant-based minced, vegetables	taco en torta crujiente con picado vegetal y verduras
+matvaretabellen:09.173	Taco with tortilla, plant-based minced, vegetables	taco de tortilla con picado vegetal y verduras
+matvaretabellen:09.174	Glucose syrup	jarabe de glucosa
+matvaretabellen:09.175	Cocoa beans	habas de cacao
+matvaretabellen:09.176	Chocolate, dark, 85 % cocoa	chocolate negro 85 %
+matvaretabellen:09.177	Chocolate, filled with toffee	chocolate relleno de toffee
+matvaretabellen:09.178	Chocolate, milk, with peanuts	chocolate con leche con cacahuetes
+matvaretabellen:09.179	Agave syrup	sirope de agave
+matvaretabellen:09.180	Chocolate truffles	trufas de chocolate
+matvaretabellen:09.181	Date balls, with cocoa powder and nuts	bolas de dátiles con cacao y frutos secos
+matvaretabellen:09.182	Date balls, with peanut butter and rolled oats	bolas de dátiles con crema de cacahuete y avena
+matvaretabellen:09.183	Chocolate, with nougat, Toblerone	chocolate Toblerone
+matvaretabellen:10.001	Sauce, fruit, powder base, prepared	salsa de fruta de preparado
+matvaretabellen:10.002	Mousse, powder base, prepared	mousse de preparado
+matvaretabellen:10.003	Soup, fruit, powder base, prepared	sopa de fruta de preparado
+matvaretabellen:10.004	Jelly, powder base, prepared	gelatina de preparado
+matvaretabellen:10.005	Soup, rosehip, powder base, prepared	sopa de escaramujo de preparado
+matvaretabellen:10.006	Pudding, chocolate, powder base, prepared	pudin de chocolate de preparado
+matvaretabellen:10.007	Sauce, vanilla, powder base, prepared	salsa de vainilla de preparado
+matvaretabellen:10.008	Casserole base, Oriental style, no meat, prepared	base para cazuela oriental sin carne
+matvaretabellen:10.012	Soup, cauliflower, powder base, prepared	sopa de coliflor de preparado
+matvaretabellen:10.013	Soup, tomato, powder base, prepared	sopa de tomate de preparado
+matvaretabellen:10.014	Soup, tomato and macaroni, powder base, prepared	sopa de tomate con macarrones de preparado
+matvaretabellen:10.015	Sauce, Bernaise, powder base, prepared	salsa bearnesa de preparado
+matvaretabellen:10.016	Sauce, brown, from cube, prepared	salsa marrón de cubito
+matvaretabellen:10.017	Sauce, brown, powder base, prepared	salsa marrón de preparado
+matvaretabellen:10.018	Sauce, béchamel, powder base, prepared	bechamel de preparado
+matvaretabellen:10.019	Sauce, gravy, powder base, prepared	gravy de preparado
+matvaretabellen:10.020	Pea stew, powder base, prepared	puré de guisantes de preparado
+matvaretabellen:10.021	Cocoa, instant powder, prepared	cacao instantáneo preparado
+matvaretabellen:10.023	Soup, fish, powder base, prepared	sopa de pescado de preparado
+matvaretabellen:10.024	Soup, with meat and pearled barley, powder base, prepared	sopa de carne con cebada perlada de preparado
+matvaretabellen:10.025	Sauce, brown with onion, powder base, prepared	salsa marrón con cebolla de preparado
+matvaretabellen:10.026	Sauce, venison, powder base, prepared	salsa para caza de preparado
+matvaretabellen:10.028	Casserole base, jegergryte, no meat, prepared	base para cazuela jegergryte sin carne
+matvaretabellen:10.029	Casserole base, stroganoff, no meat, prepared	base para cazuela stroganoff sin carne
+matvaretabellen:10.032	Soup, instant, cauliflower and broccoli, prepared	sopa de coliflor y brócoli de preparado
+matvaretabellen:10.034	Pizza topping, no meat, powder base, prepared	base para relleno de pizza sin carne
+matvaretabellen:10.100	Bouillon powder	caldo en polvo
+matvaretabellen:10.113	Soup, tomato, powder base, powder	sopa de tomate en polvo
+matvaretabellen:10.123	Soup, fish, powder base, powder	sopa de pescado en polvo
+matvaretabellen:10.124	Potatoes, instant, mashed, powder with milk	puré de patatas en polvo con leche
+matvaretabellen:10.125	Sauce for dipping, sweet & sour, BBQ sauce, industrially made	salsa para mojar barbacoa agridulce
+matvaretabellen:10.126	Soy sauce	salsa de soja
+matvaretabellen:10.129	Balsamic vinegar	vinagre balsámico
+matvaretabellen:10.130	Puff pastry	hojaldre
+matvaretabellen:10.131	Curry paste	pasta de curry
+matvaretabellen:10.132	Filo pastry	masa filo
+matvaretabellen:10.133	Baking soda	bicarbonato
+matvaretabellen:10.134	Taco spice mix, industrially made	condimento taco comprado
+matvaretabellen:10.135	Multi children, 1.5 g, Nycoplus	vitaminas infantiles Multi Barn Nycoplus
+matvaretabellen:10.136	Multi 0.62 g, Nycoplus	vitaminas Multi Nycoplus
+matvaretabellen:10.137	Liquid vitamins, Multi Vitaminmikstur, Nycoplus	solución vitamínica Nycoplus
+matvaretabellen:10.138	Miso	miso
+matvaretabellen:10.139	Wonton pastry	masa wonton
+matvaretabellen:10.140	Dessert with cloudberries and whipped cream	postre de mora de los pantanos con nata montada
+matvaretabellen:10.141	Panna cotta	panna cotta
+matvaretabellen:10.142	Rice cream	arroz con leche
+matvaretabellen:10.143	Chocolate fondant	coulant de chocolate
+matvaretabellen:10.144	Chocolate mousse	mousse de chocolate
+matvaretabellen:10.145	Dessert with cowberries, sugar and egg white	postre de arándanos rojos con merengue
+matvaretabellen:10.146	Dessert with apple, cream and rusk	postre de manzana con nata y pan rallado
+matvaretabellen:10.147	Milk, condensed, sweetened	leche condensada
+matvaretabellen:10.148	Soup, meat, with vegetables and potatoes, industrially made	sopa de carne con verduras y patatas preparada
+matvaretabellen:10.149	Oat porridge, with milk	gachas de avena con leche
+matvaretabellen:10.150	Cauliflower soup, home-made	sopa de coliflor casera
+matvaretabellen:10.151	Porridge, prepared with wheat, milk and butter	gachas de trigo con leche y mantequilla
+matvaretabellen:10.152	Porridge, prepared with semolina and milk	gachas de sémola con leche
+matvaretabellen:10.153	Pancakes, with banana	tortitas con plátano
+matvaretabellen:10.154	Rhubarb porridge	gachas de ruibarbo
+matvaretabellen:10.155	Asparagus soup, home-made	sopa de espárragos casera
 matvaretabellen:10.156	Soup, meat and vegetables, betasoup, home-made	sopa de carne con verduras
+matvaretabellen:10.157	Bouillabaisse, French fish soup	bullabesa
+matvaretabellen:10.158	Broccoli soup, home-made	sopa de brócoli casera
+matvaretabellen:10.159	Pumpkin soup, home-made	sopa de calabaza casera
+matvaretabellen:10.160	Gulach, home-made	gulash casero
+matvaretabellen:10.161	Carrot soup, home-made	sopa de zanahoria casera
+matvaretabellen:10.162	Hollandaise sauce, home-made	salsa holandesa casera
+matvaretabellen:10.163	Jerusalem artichoke soup, home-made	sopa de alcachofa de Jerusalén casera
+matvaretabellen:10.164	Onion soup, home-made	sopa de cebolla casera
+matvaretabellen:10.165	Onion soup, gratinated with cheese and bread, home-made	sopa de cebolla gratinada con queso y pan casera
+matvaretabellen:10.166	Minestrone soup, without meat, home-made	minestrone sin carne casero
+matvaretabellen:10.167	Potato and leek soup, home-made	sopa de patata y puerro casera
+matvaretabellen:10.168	Spinach soup, home-made	sopa de espinacas casera
+matvaretabellen:10.169	Sweet potato soup, home-made	sopa de boniato casera
+matvaretabellen:10.170	Taco soup, home-made	sopa taco casera
+matvaretabellen:10.171	Sauce, bernaise, home-made	salsa bearnesa casera
+matvaretabellen:10.172	Porridge, prepared with barley and milk	gachas de cebada con leche
+matvaretabellen:10.173	Oat porridge, overnight oats	avena overnight
+matvaretabellen:10.174	Pudding, caramel, home-made	flan casero
+matvaretabellen:10.175	Oat porridge, overnight oats and chia seeds	avena overnight con chía
+matvaretabellen:10.176	Porridge, prepared with oats, buck wheat and milk, gluten-free	gachas de avena y trigo sarraceno sin gluten
+matvaretabellen:10.177	Chili sauce, sweet	salsa de chile dulce
+matvaretabellen:10.178	Vinegar, apple cider	vinagre de manzana
+matvaretabellen:10.179	Teriyaki sauce	salsa teriyaki
+matvaretabellen:10.180	Pudding, chia	pudin de chía
+matvaretabellen:10.181	Pizza, pepperoni, home-made	pizza de pepperoni casera
+matvaretabellen:10.182	Pizza, minced meat (6 % fat), home-made	pizza de carne picada magra casera
+matvaretabellen:10.183	Pizza, minced plant-based, home-made	pizza de picado vegetal casera
+matvaretabellen:10.184	Pizza, vegan, home-made	pizza vegana casera
+matvaretabellen:10.185	Avocado soup, cold	sopa de aguacate fría
+matvaretabellen:10.186	Blueberry mousse	mousse de arándanos
+matvaretabellen:10.187	Raspberry mousse	mousse de frambuesa
+matvaretabellen:10.188	Borek, with minced meat, from cafe/bakery	börek de carne picada de cafetería
+matvaretabellen:10.189	Borek, with potato, from cafe/bakery	börek de patata de cafetería
+matvaretabellen:10.190	Borek, with spinach and feta cheese, from cafe/bakery	börek de espinacas y feta de cafetería
+matvaretabellen:10.191	Calzone, with meat filling, from cafe/bakery	calzone de carne de cafetería
+matvaretabellen:10.192	Calzone, with chicken and pesto, from cafe/bakery	calzone de pollo y pesto de cafetería
+matvaretabellen:10.193	Calzone, with cheese and ham, from cafe/bakery	calzone de queso y jamón de cafetería
+matvaretabellen:10.194	Fish soup, with salmon, home-made	sopa de pescado con salmón casera
+matvaretabellen:10.195	Fish soup, home-made	sopa de pescado casera
+matvaretabellen:10.196	Oat porridge, with yoghurt, granola and berries, from cafe/bakery	gachas de avena con yogur, granola y bayas de cafetería
+matvaretabellen:10.197	Hoisin sauce, home-made	salsa hoisin casera
+matvaretabellen:10.198	White sauce, home-made	salsa blanca casera
+matvaretabellen:10.199	Strawberry mousse	mousse de fresa
+matvaretabellen:10.200	Cold porridge, with berries, from cafe/bakery	gachas frías con bayas de cafetería
+matvaretabellen:10.201	Pie, key lime	tarta de lima
+matvaretabellen:10.202	Pepper sauce	salsa de pimienta
+matvaretabellen:10.203	Pesto, red, home-made	pesto rojo casero
+matvaretabellen:10.204	Ponzu sauce, home-made	salsa ponzu casera
+matvaretabellen:10.205	Salad, with chicken and feta cheese, from cafe/bakery	ensalada de pollo y feta de cafetería
+matvaretabellen:10.206	Soup, with shrimps, crab and crawfish	sopa de marisco
+matvaretabellen:10.207	Blackcurrants mousse	mousse de grosella negra
+matvaretabellen:10.208	Mushroom soup	sopa de setas
+matvaretabellen:10.209	Frozen ice dessert, plant-based, vanilla	helado vegetal de vainilla
+matvaretabellen:10.210	Frozen ice dessert, plant-based, chocolate	helado vegetal de chocolate
+matvaretabellen:10.213	Plant-based product, used as ham	fiambre vegetal
+matvaretabellen:10.214	Nutritional yeast	levadura nutricional
+matvaretabellen:10.215	Cheeze doodles, with lentils	gusanitos de lentejas
+matvaretabellen:10.216	Lentil crisps	chips de lentejas
+matvaretabellen:10.217	Soy sauce, sweet	salsa de soja dulce
+matvaretabellen:10.218	Worcestershire sauce	salsa Worcestershire
+matvaretabellen:10.219	Pizza, white, cured ham, home-made	pizza blanca con jamón curado casera
+matvaretabellen:10.220	Pizza, white, créme fraîche and spinach, home-made	pizza blanca con crème fraîche y espinacas casera
+matvaretabellen:10.221	Pizza, white, pear and blue mold cheese, home-made	pizza blanca con pera y queso azul casera
+matvaretabellen:10.222	Pita with falafel, salad and dressing	pita con falafel y ensalada
+matvaretabellen:10.223	Spring roll, vegetables, fried, industrially made	rollito de primavera de verduras frito comprado
+matvaretabellen:10.224	Pad Thai, rice noodles and shrimps, industrially made	pad thai con gambas comprado
+matvaretabellen:10.225	Wraps, with cottage cheese, home-made	wrap de requesón casero
+matvaretabellen:10.226	Pasta carbonara	pasta carbonara
+matvaretabellen:10.227	Pasta arrabiata	pasta arrabiata
+matvaretabellen:10.228	Lentil soup	sopa de lentejas
+matvaretabellen:10.229	Spring rolls, fresh, with tofu, noodles and vegetables	rollitos frescos con tofu, fideos y verduras
+matvaretabellen:11.040	Breast milk replacement from birth, prepared	leche de fórmula desde el nacimiento líquida
+matvaretabellen:11.041	Breast milk replacement from 6 months, prepared	leche de fórmula desde 6 meses líquida
+matvaretabellen:11.042	Breast milk replacement from birth, powder	leche de fórmula desde el nacimiento en polvo
+matvaretabellen:11.043	Breast milk replacement from 6 months, powder	leche de fórmula desde 6 meses en polvo
+matvaretabellen:11.047	Baby food, oatmeal porridge, from 6 months, powder	papilla de avena desde 6 meses en polvo
+matvaretabellen:11.048	Baby food, oatmeal porridge, from 6 months, prepared	papilla de avena desde 6 meses preparada
+matvaretabellen:11.049	Baby food, oatmeal porridge with banana and mango, from 8 months, powder	papilla de avena con plátano y mango desde 8 meses en polvo
+matvaretabellen:11.050	Baby food, oatmeal porridge with banana and mango, from 8 months, prepared	papilla de avena con plátano y mango desde 8 meses preparada
+matvaretabellen:11.053	Baby food, wholemeal porridge with exotic fruits and muesli, from 12 months, powder	papilla integral con frutas exóticas y muesli desde 12 meses en polvo
+matvaretabellen:11.054	Baby food, wholemeal porridge with exotic fruits and muesli, from 12 months, prepared	papilla integral con frutas exóticas y muesli desde 12 meses preparada
+matvaretabellen:11.055	Baby food, Sinlac special porridge, powder	papilla Sinlac en polvo
+matvaretabellen:11.056	Baby food, Sinlac special porridge, prepared, Nestlé	papilla Sinlac preparada Nestlé
+matvaretabellen:11.077	Baby food, in jars, meat balls in brown sauce, from 8 months	potito de albóndigas en salsa desde 8 meses
+matvaretabellen:11.078	Baby food, in jars, vegetable lasagna, from 12 months	potito de lasaña de verduras desde 12 meses
+matvaretabellen:11.079	Baby food, in jars, fish gratin, from 12 months	potito de gratinado de pescado desde 12 meses
+matvaretabellen:11.080	Baby food, in jars, vegetarian, from 6 months	potito vegetariano desde 6 meses
+matvaretabellen:11.081	Baby food, in jars, beef stroganoff with pasta, from 15 months	potito de ternera stroganoff con pasta desde 15 meses
+matvaretabellen:11.082	Baby food, in jars, wholemeal lasagna, from 12 months	potito de lasaña integral desde 12 meses
+matvaretabellen:11.083	Baby food, in jars, meat balls and potatoes, from 12 months	potito de albóndigas con patatas desde 12 meses
+matvaretabellen:11.084	Baby food, in jars, carrot and potatoes, from 4 months	potito de zanahoria y patata desde 4 meses
+matvaretabellen:11.085	Baby food, in jars, chicken meat balls and pasta, from 12 months	potito de albóndigas de pollo con pasta desde 12 meses
+matvaretabellen:11.086	Baby food, in jars, spaghetti bolognese, from 15 months	potito de espaguetis boloñesa desde 15 meses
+matvaretabellen:11.087	Baby food, in jars, couscous and salmon, from 15 months	potito de cuscús con salmón desde 15 meses
+matvaretabellen:11.088	Baby food, in jars, couscous and beef, from 12 months	potito de cuscús con ternera desde 12 meses
+matvaretabellen:11.089	Baby food, in jars, wholemeal pasta with vegetables, from 12 months	potito de pasta integral con verduras desde 12 meses
+matvaretabellen:11.090	Baby food, in jars, vegetarian casserole, from 12 months	potito de cazuela vegetariana desde 12 meses
+matvaretabellen:11.091	Baby food, in jars, beef and potatoes, from 12 months	potito de ternera con patatas desde 12 meses
+matvaretabellen:11.092	Baby food, in jars, potatoes and broccoli, from 4 months	potito de patata y brócoli desde 4 meses
+matvaretabellen:11.093	Baby food, in jars, vegetable risotto and turkey, from 12 months	potito de risotto de verduras con pavo desde 12 meses
+matvaretabellen:11.094	Baby food, in jars, carrot, from 4 months	potito de zanahoria desde 4 meses
+matvaretabellen:11.095	Breast milk replacement from birth, ready to drink	leche de fórmula desde el nacimiento lista para beber
+matvaretabellen:11.096	Breast milk replacement from 6 months, ready to drink	leche de fórmula desde 6 meses lista para beber
+matvaretabellen:11.097	Fruit bar, fruit candy	barrita de fruta
+matvaretabellen:11.098	Baby food, in jars, casserole with beef, from 12 months	potito de cazuela de ternera desde 12 meses
+matvaretabellen:11.099	Baby food, in jars, casserole with chicken and couscous, from 12 months	potito de cazuela de pollo con cuscús desde 12 meses
+matvaretabellen:11.100	Baby food, in jars, casserole with chicken and vegetables, from 6 months	potito de cazuela de pollo con verduras desde 6 meses
+matvaretabellen:11.101	Baby food, in jars, pasta bolognese, from 6 months	potito de pasta boloñesa desde 6 meses
+matvaretabellen:11.102	Baby food, in jars, pasta and vegetables, from 8 months	potito de pasta con verduras desde 8 meses
+matvaretabellen:11.103	Baby food, in jars, ragú, from 8 months	potito de ragú desde 8 meses
+matvaretabellen:12.004	Stock, meat, from cube, prepared	caldo de carne de cubito
+matvaretabellen:12.007	Bakers yeast, compressed	levadura fresca
+matvaretabellen:12.008	Mustard	mostaza
+matvaretabellen:12.009	Bakers yeast, active, dry	levadura seca
+matvaretabellen:12.010	Sauce, caramel	salsa de caramelo
+matvaretabellen:12.011	Sauce, chocolate, industrially made	salsa de chocolate comprada
+matvaretabellen:12.012	Popcorn, air popped, industrially made	palomitas al aire envasadas
+matvaretabellen:12.014	Salted sticks	palitos salados
 matvaretabellen:12.015	Pork scratchings	chicharrones de cerdo
+matvaretabellen:12.016	Cheese doodles	gusanitos de queso
+matvaretabellen:12.017	Tortilla chips	totopos
+matvaretabellen:12.018	Baking powder	levadura química
+matvaretabellen:12.022	Salt, table	sal de mesa
+matvaretabellen:12.023	Salt, mineral	sal mineral
+matvaretabellen:12.024	Salt, herbal	sal de hierbas
+matvaretabellen:12.025	Salt, table, iodized	sal yodada
 matvaretabellen:12.026	Salt, sea	sal marina
+matvaretabellen:12.027	Vinegar, 7 %	vinagre 7 %
+matvaretabellen:12.028	Popcorn, air popped, micro pop	palomitas para microondas
+matvaretabellen:12.110	Gelatin	gelatina en polvo
+matvaretabellen:12.111	Pepper, black	pimienta negra molida
+matvaretabellen:12.114	Vitamineral, Vitaplex	multivitaminas Vitaplex
+matvaretabellen:12.115	Vitamin Bears, Collett	ositos de vitaminas Collett
+matvaretabellen:12.116	Liquid vitamins and minerals, Sanasol	vitaminas y minerales líquidos Sanasol
+matvaretabellen:12.117	Liquid vitamins and minerals, Floradix	vitaminas y minerales líquidos Floradix
+matvaretabellen:12.118	Taco spice mix, home-made	condimento taco casero
+matvaretabellen:12.119	Vinegar, red wine	vinagre de vino tinto
 matvaretabellen:13.007	Wine, non-alcoholic	vino sin alcohol de Noruega
+matvaretabellen:13.009	Coffee, infusion	café de filtro
+matvaretabellen:13.010	Tea, black, infusion	té negro
+matvaretabellen:13.011	Spirits, 60 vol-% alcohol	aguardiente 60 %
+matvaretabellen:13.012	Spirits, 40 vol-% alcohol	aguardiente 40 %
+matvaretabellen:13.014	Liqueur, 35 vol-% alcohol	licor 35 %
+matvaretabellen:13.015	Wine, fortified, sweet, 17 vol-% alcohol	vino generoso dulce 17 %
+matvaretabellen:13.017	Wine, red, 12 vol-% alcohol	vino tinto 12 %
+matvaretabellen:13.018	Wine, fortified, dry, 15 vol-% alcohol	vino generoso seco 15 %
+matvaretabellen:13.022	Beer, light, 2,5 vol-% alcohol, Lettøl	cerveza ligera 2,5 %
+matvaretabellen:13.023	Beer, 5,7 vol-% alcohol, Gulløl	cerveza 5,7 %
+matvaretabellen:13.024	Beer, 4,7 vol-% alcohol, Pilsner	cerveza pilsner 4,7 %
+matvaretabellen:13.025	Beer, malt, non-alcoholic	cerveza de malta sin alcohol
+matvaretabellen:13.026	Beer, non-alcoholic	cerveza sin alcohol
+matvaretabellen:13.030	Wine, reduced alcohol	vino bajo en alcohol
+matvaretabellen:13.031	Wine, white, dry, 10 vol-% alcohol	vino blanco semiseco 10 %
+matvaretabellen:13.032	Wine, white, dry, 12 vol-% alcohol	vino blanco seco 12 %
+matvaretabellen:13.033	Water, tap	agua del grifo
 matvaretabellen:13.034	Instant coffee, ready-to-drink	café instantáneo preparado
+matvaretabellen:13.036	Fruit drink, without added sugar, artificially sweetened, ready-to-drink	bebida de frutas sin azúcar con edulcorantes
+matvaretabellen:13.038	Cappucino, single, with whole milk	capuchino con leche entera
+matvaretabellen:13.039	Cappucino, single, with semi-skimmed milk	capuchino con leche semidesnatada
+matvaretabellen:13.040	Caffe Latte, single, with whole milk	café latte con leche entera
+matvaretabellen:13.041	Caffe Latte, single, with semi-skimmed milk	café latte con leche semidesnatada
+matvaretabellen:13.042	Tea, green, infusion	té verde
+matvaretabellen:13.043	Soda, Tonic Water	tónica
+matvaretabellen:13.044	Soda, Bitter Lemon	bitter lemon
+matvaretabellen:13.045	Soft drinks, cola, with sugar	cola con azúcar
+matvaretabellen:13.046	Soft drinks, with fruit juice, with sugar	refresco de frutas con azúcar
+matvaretabellen:13.047	Soft drinks, cola drinks, artificially sweetened	cola light
+matvaretabellen:13.048	Soft drinks, with fruit juice, light, artificially sweetened	refresco de frutas light
+matvaretabellen:13.049	Beer, malt, dark, bock beer 6,5 vol-% alcohol	cerveza negra bock 6,5 %
+matvaretabellen:13.050	Beer, light beer, low carbohydrate	cerveza baja en carbohidratos
+matvaretabellen:13.051	Beer, dark, 4,5-4,7 vol-% alcohol, Bayer and Christmas beers	cerveza negra 4,5-4,7 %
 matvaretabellen:13.052	Fortified wines, sweet vermouth, 15 vol-% alcohol	vermut dulce 15 %
+matvaretabellen:13.053	Liqueur, sweet, 21 vol-% alcohol	licor dulce 21 %
+matvaretabellen:13.054	Liqueur, 17 vol-% alcohol, cream-based	licor de nata 17 %
+matvaretabellen:13.055	Fortified wines, sweet, port, 20 vol-% alcohol	vino de Oporto 20 %
+matvaretabellen:13.056	Wine, white, half sweet/sweet, including sparkling	vino blanco semidulce y dulce
+matvaretabellen:13.057	Wine, dessert, extra sweet, sparkling	vino de postre dulce espumoso
+matvaretabellen:13.058	Wine, white, rosé, sparkling, unspecified	vino espumoso blanco y rosado
+matvaretabellen:13.059	Wine, red, dry	vino tinto seco
+matvaretabellen:13.060	Wine, red, unspecified	vino tinto
+matvaretabellen:13.061	Smoothie, yogurt, juice, banana and berries	smoothie de yogur, zumo, plátano y bayas
+matvaretabellen:13.062	Smoothie, fruit juice, banana and berries	smoothie de zumo, plátano y bayas
+matvaretabellen:13.063	Cider, sweet, 4,5 vol-% alcohol	sidra dulce 4,5 %
+matvaretabellen:13.064	Energy drink, with taurine, caffeine and B-vitamins	bebida energética con taurina y cafeína
+matvaretabellen:13.065	Energy drink, with taurine, caffeine and B-vitamins, sugar free	bebida energética con taurina y cafeína sin azúcar
+matvaretabellen:13.066	Soy based beverage, sweetened, with calcium and vitamins (vit B2, vit B12, vit D)	bebida de soja dulce con calcio y vitaminas
+matvaretabellen:13.067	Soy based beverage, with calcium og vitamins (vit B2, vit B12, vit D)	bebida de soja con calcio y vitaminas
+matvaretabellen:13.068	Oat based beverage, with calcium and vitamins (vit D, vit B2, vit B12)	bebida de avena con calcio y vitaminas
+matvaretabellen:13.069	Espresso, single	espresso
+matvaretabellen:13.070	Iced tea, artificially sweetened, light, industrially made	té frío light comprado
+matvaretabellen:13.071	Iced tea, industrially made	té frío comprado
+matvaretabellen:13.072	Mineral water, carbonated, Bonaqua naturell	agua mineral con gas Bonaqua
+matvaretabellen:13.073	Mineral water, carbonated, Bris naturell	agua mineral con gas Bris
+matvaretabellen:13.074	Mineral water, carbonated, Farris naturell	agua mineral con gas Farris
+matvaretabellen:13.075	Mineral water, not carbonated, Bonaqua natural	agua mineral sin gas Bonaqua
+matvaretabellen:13.076	Mineral water, carbonated, Olden	agua mineral con gas Olden
+matvaretabellen:13.077	Mineral water, not carbonated, Olden	agua mineral sin gas Olden
+matvaretabellen:13.078	Macchiato, single	macchiato
+matvaretabellen:13.079	Café au lait	café con leche
 matvaretabellen:13.080	Cortado, single	cortado
 matvaretabellen:13.081	Caffe mocha	moca
+matvaretabellen:13.096	Chilli nuts	frutos secos con chile
+matvaretabellen:13.097	Coconut based beverage, with calsium og vitamins (vit B12, vit D)	bebida de coco con calcio y vitaminas
+matvaretabellen:13.098	Almond based beverage	bebida de almendras
+matvaretabellen:13.099	Almond based beverage, unsweetened, with calcium and vitamins (vit B2, vit B12, vit E, vit D)	bebida de almendras sin azúcar con calcio y vitaminas
+matvaretabellen:13.100	Rice based beverage	bebida de arroz
+matvaretabellen:13.101	Oat based beverage, chocolate flavour, with calcium, vitamins (vit D, vitB2, vitB12)	bebida de avena sabor chocolate con calcio y vitaminas
+matvaretabellen:13.102	Nut mix, oriental	mezcla de frutos secos oriental
+matvaretabellen:13.103	Oat based beverage, orange and mango flavour	bebida de avena sabor naranja y mango
+matvaretabellen:13.104	Smoothie, raspberries and strawberries	smoothie de frambuesa y fresa
+matvaretabellen:13.105	Smoothie, pineapple and coconut	smoothie de piña y coco
+matvaretabellen:13.106	Smoothie, pineapple and mango	smoothie de piña y mango
+matvaretabellen:13.107	Smoothie, blueberries and apple	smoothie de arándanos y manzana
+matvaretabellen:13.109	Smoothie, guava and gojiberries	smoothie de guayaba y bayas de goji
+matvaretabellen:13.111	Smoothie, mango and passion fruit	smoothie de mango y maracuyá
+matvaretabellen:13.112	Smoothie, pineapple and ginger	smoothie de piña y jengibre
+matvaretabellen:13.113	Smoothie, mango and gojiberries	smoothie de mango y bayas de goji
+matvaretabellen:13.117	Smoothie, mango and orange	smoothie de mango y naranja
+matvaretabellen:13.118	Smoothie, blueberries and raspberries	smoothie de arándanos y frambuesa
+matvaretabellen:13.119	Smoothie, orange, carrot and ginger	smoothie de naranja, zanahoria y jengibre
+matvaretabellen:13.120	Ice coffee, cappuchino	café frío capuchino
+matvaretabellen:13.121	Oat based beverage, organic	bebida de avena ecológica
+matvaretabellen:13.122	Oat and almond based beverage	bebida de avena y almendras
+matvaretabellen:13.123	Oat based beverage, with calcium and vitamin D	bebida de avena con calcio y vitamina D
+matvaretabellen:13.124	Oat based beverage, with iodine, calcium, vitamins (vit B2, folat, vit B12, vit D)	bebida de avena con yodo, calcio, folato y vitaminas
+matvaretabellen:13.125	Oat based beverage	bebida de avena
+matvaretabellen:13.126	Soy based beverage	bebida de soja
+matvaretabellen:13.127	Caffe Latte, single, with oat based beverage	café latte con bebida de avena
+matvaretabellen:13.128	Caffe Latte, single, with soy based beverage	café latte con bebida de soja
+matvaretabellen:13.129	Cortado, single, with lactose free milk	cortado con leche sin lactosa
+matvaretabellen:13.130	Cortado, single, with oat based beverage	cortado con bebida de avena
+matvaretabellen:13.131	Cortado, single, with soy based beverage	cortado con bebida de soja
+matvaretabellen:13.132	Café au lait, with lactose free milk	café con leche sin lactosa
+matvaretabellen:13.133	Café au lait, with oat based beverage	café con bebida de avena
+matvaretabellen:13.134	Café au lait, with soy based beverage	café con bebida de soja
+matvaretabellen:13.135	Cappucino, single, with lactose free milk	capuchino con leche sin lactosa
+matvaretabellen:13.136	Cappucino, single, with oat based beverage	capuchino con bebida de avena
+matvaretabellen:13.137	Cappucino, single, with soy based beverage	capuchino con bebida de soja
+matvaretabellen:13.138	Macchiato, single, with lactose free milk	macchiato con leche sin lactosa
+matvaretabellen:13.139	Macchiato, single, with oat based beverage	macchiato con bebida de avena
 matvaretabellen:13.140	Macchiato, single, with soy based beverage	macchiato con bebida de soja
+matvaretabellen:13.141	Caffe Latte, single, with lactose free milk	café latte con leche sin lactosa
+matvaretabellen:13.142	Americano, coffee	americano
+matvaretabellen:13.143	Frappe, strawberries and white chocolate	frappé de fresa y chocolate blanco
+matvaretabellen:13.144	Frappe, caramel/mocca	frappé de caramelo y moca
+matvaretabellen:13.145	Smoothie, avocado and mango, from cafe/bakery	smoothie de aguacate y mango de cafetería
+matvaretabellen:13.146	Lemonade, with passion fruit	limonada con maracuyá
+matvaretabellen:13.147	Juice, mixed fruits	zumo multifruta
+matvaretabellen:13.148	Carrot juice	zumo de zanahoria
+matvaretabellen:13.149	Prune juice	zumo de ciruela pasa
+matvaretabellen:13.150	Iced tea, lemon, industrially made	té frío de limón comprado
+matvaretabellen:13.151	Iced tea, peach, industrially made	té frío de melocotón comprado
+matvaretabellen:13.152	Cider, pear, 0,6 vol-% alcohol, artificially sweetened	sidra de pera 0,6 % con edulcorantes
+matvaretabellen:13.153	Cider, apple, 0,6 vol-% alcohol	sidra de manzana 0,6 %
+matvaretabellen:13.154	Cider, pear, 0,6 vol-% alcohol	sidra de pera 0,6 %
+matvaretabellen:13.155	Pear juice	zumo de pera
+matvaretabellen:13.156	Oat based beverage, chocolate flavour, with iodine, calcium and vitamins (vit D, vitB2, vitB12)	bebida de avena sabor chocolate con yodo, calcio y vitaminas
+matvaretabellen:13.157	Oat based beverage, with iodine, calcium and vitamins (vit D, vit B2, vit B12)	bebida de avena con yodo, calcio y vitaminas
+matvaretabellen:13.158	Macchiato, single, with oat based beverage (with iodine)	macchiato con bebida de avena con yodo
+matvaretabellen:13.159	Cappucino, single, with oat based beverage (with iodine)	capuchino con bebida de avena con yodo
+matvaretabellen:13.160	Café au lait, with oat based beverage (with iodine)	café con bebida de avena con yodo
+matvaretabellen:13.161	Cortado, single, with oat based beverage (with iodine)	cortado con bebida de avena con yodo
+matvaretabellen:13.162	Caffe Latte, single, with oat based beverage (with iodine)	café latte con bebida de avena con yodo
+matvaretabellen:13.163	Smoothie, green	smoothie verde
 mext:01102	こめ ［陸稲穀粒］ 玄米	arroz integral
 mext:01124	そば そば粉 中層粉	harina de trigo sarraceno
 mext:01157	こめ ［うるち米製品］ 玄米粉	harina de arroz integral
