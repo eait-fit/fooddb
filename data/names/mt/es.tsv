@@ -30780,11 +30780,11 @@ mext:01188	こむぎ ［中華めん類］ 蒸し中華めん ソテー	fideos c
 mext:01189	こむぎ ［即席めん類］ 即席中華めん 油揚げ ゆで （添付調味料等を含まないもの）	fideos instantáneos fritos cocidos sin condimento
 mext:01190	こむぎ ［即席めん類］ 即席中華めん 非油揚げ ゆで （添付調味料等を含まないもの）	fideos instantáneos no fritos cocidos sin condimento
 mext:01191	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 乾 （添付調味料等を含むもの）	fideos instantáneos chinos fritos sabor salsa de soja secos
-mext:01192	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos sabor salsa de soja preparados con sopa
+mext:01192	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ しょうゆ味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos sabor salsa de soja preparados sin la sopa
 mext:01193	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 乾 （添付調味料等を含むもの）	fideos instantáneos chinos fritos salados secos
-mext:01194	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos salados preparados con sopa
-mext:01195	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos chinos no fritos preparados con sopa
-mext:01196	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos japoneses fritos preparados con sopa
+mext:01194	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 塩味 調理後のめん （スープを残したもの）	fideos instantáneos chinos fritos salados preparados sin la sopa
+mext:01195	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos chinos no fritos preparados sin la sopa
+mext:01196	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 調理後のめん （スープを残したもの）	fideos instantáneos japoneses fritos preparados sin la sopa
 mext:01197	そば そば 半生そば	fideos soba semisecos
 mext:01198	こむぎ ［即席めん類］ 即席中華めん 油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos fritos preparados completos
 mext:01199	こむぎ ［即席めん類］ 即席中華めん 非油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos no fritos preparados completos
@@ -30793,7 +30793,7 @@ mext:01201	こむぎ ［即席めん類］ 中華スタイル即席カップめ�
 mext:01202	こむぎ ［即席めん類］ 中華スタイル即席カップめん 油揚げ 焼きそば 調理後全体 （添付調味料等を含むもの）	yakisoba instantáneo en vaso preparado completo
 mext:01203	こむぎ ［即席めん類］ 中華スタイル即席カップめん 非油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos chinos no fritos preparados completos
 mext:01204	こむぎ ［即席めん類］ 和風スタイル即席カップめん 油揚げ 調理後全体 （添付調味料等を含むもの）	fideos instantáneos japoneses fritos preparados completos
-mext:01205	こむぎ ［パン類］ 山形食パン 食パン	pan de molde yamagata
+mext:01205	こむぎ ［パン類］ 山形食パン 食パン	pan de molde abombado
 mext:01206	こむぎ ［パン類］ 食パン リーンタイプ	pan de molde ligero
 mext:01207	こむぎ ［パン類］ 食パン リッチタイプ	pan de molde enriquecido
 mext:01208	こむぎ ［パン類］ 全粒粉パン	pan integral
@@ -30889,7 +30889,7 @@ mext:03012	液糖 しょ糖型液糖	jarabe de sacarosa
 mext:03013	液糖 転化型液糖	jarabe invertido
 mext:03014	氷糖みつ	jarabe kōrimito
 mext:03015	粉あめ	glucosa en polvo
-mext:03017	ぶどう糖 全糖	glucosa total
+mext:03017	ぶどう糖 全糖	glucosa integral
 mext:03018	ぶどう糖 含水結晶	glucosa monohidrato
 mext:03019	ぶどう糖 無水結晶	glucosa anhidra
 mext:03020	果糖	fructosa
@@ -30971,7 +30971,7 @@ mext:04064	つるあずき 全粒 乾	alubias tsuru-azuki secas
 mext:04065	ひよこまめ 全粒 乾	garbanzos secos
 mext:04066	ひよこまめ 全粒 ゆで	garbanzos cocidos
 mext:04067	ひよこまめ 全粒 フライ 味付け	garbanzos fritos salados
-mext:04068	べにばないんげん 全粒 乾	alubias rojas secas
+mext:04068	べにばないんげん 全粒 乾	alubias escarlata secas
 mext:04069	べにばないんげん 全粒 ゆで	alubias rojas cocidas
 mext:04070	らいまめ 全粒 乾	alubias de Lima secas
 mext:04071	りょくとう 全粒 乾	judías mungo secas
@@ -30979,7 +30979,7 @@ mext:04072	りょくとう 全粒 ゆで	judías mungo cocidas
 mext:04073	レンズまめ 全粒 乾	lentejas secas
 mext:04074	えんどう 全粒 赤えんどう 乾	guisantes rojos secos
 mext:04075	えんどう 全粒 赤えんどう ゆで	guisantes rojos cocidos
-mext:04076	そらまめ しょうゆ豆	habas de soja (shōyu-mame)
+mext:04076	そらまめ しょうゆ豆	habas en salsa de soja (shōyu-mame)
 mext:04077	だいず ［全粒・全粒製品］ 全粒 黒大豆 国産 乾	soja negra japonesa seca
 mext:04078	だいず ［全粒・全粒製品］ いり大豆 黄大豆	soja amarilla tostada
 mext:04079	だいず ［全粒・全粒製品］ いり大豆 黒大豆	soja negra tostada
@@ -31053,7 +31053,7 @@ mext:05032	まつ 生	piñones crudos
 mext:05033	まつ いり	piñones tostados
 mext:05034	らっかせい 大粒種 乾	cacahuetes grandes crudos
 mext:05035	らっかせい 大粒種 いり	cacahuetes grandes tostados
-mext:05036	らっかせい バターピーナッツ	cacahuetes butter
+mext:05036	らっかせい バターピーナッツ	cacahuetes con sabor a mantequilla
 mext:05037	らっかせい ピーナッツバター	crema de cacahuete
 mext:05040	アーモンド いり 無塩	almendras tostadas sin sal
 mext:05041	あまに いり	linaza tostada
@@ -31840,7 +31840,7 @@ mext:10061	缶詰 味付け	sardina en conserva condimentada
 mext:10062	缶詰 トマト漬	sardina en conserva en tomate
 mext:10063	缶詰 油漬	sardina en conserva en aceite
 mext:10064	缶詰 かば焼	sardina en conserva kabayaki
-mext:10065	いわな 養殖 生	iwana (trucha char) de cultivo cruda
+mext:10065	いわな 養殖 生	iwana (salvelino) de cultivo cruda
 mext:10066	うぐい 生	ugui crudo
 mext:10067	うなぎ 養殖 生	anguila de cultivo cruda
 mext:10068	うなぎ きも 生	hígado de anguila crudo
