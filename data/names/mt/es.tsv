@@ -33134,46 +33134,444 @@ mext:18054	和風料理 その他 とりから揚げ	pollo karaage
 mext:18055	洋風料理 フライ類 かきフライ	ostras fritas
 mext:18056	中国料理 点心類 春巻き	rollito de primavera frito
 mext:18057	中国料理 菜類 チャーハン	arroz frito chino
+recipe:adana-kebab	Adana kebab	kebab adana
+recipe:adana-kebab.ru	Адана-кебаб	kebab adana
+recipe:adjika	Adjika	adjika
+recipe:adjika.ru	Аджика	adjika
+recipe:adobo	Chicken adobo	pollo adobo
+recipe:adobo.ru	Курица адобо	pollo adobo
+recipe:alcachofas-jamon	Alcachofas con jamón	alcachofas con jamón
+recipe:alcachofas-jamon.ru	Артишоки с хамоном	alcachofas con jamón
+recipe:aloo-paratha	Aloo paratha	aloo paratha
+recipe:aloo-paratha.ru	Алу паратха	aloo paratha
+recipe:arroz-cubana	Arroz a la cubana	arroz a la cubana
+recipe:arroz-cubana.ru	Рис по-кубински	arroz a la cubana
 recipe:ayran	Ayran	ayrán
 recipe:ayran.ru	Айран	ayrán
+recipe:azu	Azu	azu
+recipe:azu.ru	Азу	azu
+recipe:bacalao-pilpil	Bacalao al pil pil	bacalao al pil pil
+recipe:bacalao-pilpil.ru	Бакалао аль пиль-пиль	bacalao al pil pil
+recipe:bacon-sandwich	Bacon sandwich	sándwich de beicon
+recipe:bacon-sandwich.ru	Бутерброд с беконом	sándwich de beicon
+recipe:bangers-mash	Bangers and mash	salchichas con puré de patatas
+recipe:bangers-mash.ru	Сосиски с пюре	salchichas con puré de patatas
+recipe:banh-mi	Banh mi	banh mi
+recipe:banh-mi.ru	Бан ми	banh mi
 recipe:baursak	Baursak	baursak
 recipe:baursak.ru	Баурсак	baursak
+recipe:beans-toast	Beans on toast	tostada con alubias en salsa de tomate
+recipe:beans-toast.ru	Фасоль в томате на тосте	tostada con alubias en salsa de tomate
 recipe:beshbarmak	Beshbarmak	beshbarmak
 recipe:beshbarmak.ru	Бешбармак	beshbarmak
 recipe:blini	Blini	blini
+recipe:blini-myaso	Blini, meat filling	blini de carne
+recipe:blini-myaso.ru	Блины с мясом	blini de carne
+recipe:blini-tvorog	Blini, tvorog filling	blini de tvorog
+recipe:blini-tvorog.ru	Блины с творогом	blini de tvorog
 recipe:blini.ru	Блины	blini
+recipe:bobotie	Bobotie	bobotie
+recipe:bobotie.ru	Боботи	bobotie
+recipe:bocadillo-jamon	Bocadillo de jamón	bocadillo de jamón
+recipe:bocadillo-jamon.ru	Бокадильо с хамоном	bocadillo de jamón
+recipe:bocadillo-tortilla	Bocadillo de tortilla	bocadillo de tortilla
+recipe:bocadillo-tortilla.ru	Бокадильо с тортильей	bocadillo de tortilla
 recipe:borscht	Borscht	borsch
 recipe:borscht.ru	Борщ	borsch
+recipe:bulgogi	Bulgogi	bulgogi
+recipe:bulgogi.ru	Пульгоги	bulgogi
+recipe:bulochka-mak	Poppy-seed bun	bollo de semillas de amapola
+recipe:bulochka-mak.ru	Булочка с маком	bollo de semillas de amapola
+recipe:buterbrod-maslo	Bread with butter	pan con mantequilla
+recipe:buterbrod-maslo.ru	Бутерброд с маслом	pan con mantequilla
+recipe:buttered-toast	Buttered toast	tostada con mantequilla
+recipe:buttered-toast.ru	Тост с маслом	tostada con mantequilla
+recipe:caesar-wrap	Chicken Caesar wrap	wrap César de pollo
+recipe:caesar-wrap.ru	Ролл «Цезарь» с курицей	wrap César de pollo
+recipe:callos	Callos a la madrileña	callos a la madrileña
+recipe:callos.ru	Кальос	callos a la madrileña
+recipe:carrillada	Carrillada (braised pork cheek)	carrillada en salsa
+recipe:carrillada.ru	Щёки в соусе	carrillada en salsa
+recipe:chak-chak	Chak-chak	chak-chak
+recipe:chak-chak.ru	Чак-чак	chak-chak
+recipe:chakhokhbili	Chakhokhbili	chakhokhbili
+recipe:chakhokhbili.ru	Чахохбили	chakhokhbili
+recipe:char-siu	Char siu (Chinese BBQ pork)	char siu
+recipe:char-siu.ru	Часю	char siu
 recipe:chebureki	Chebureki	chebureki
 recipe:chebureki.ru	Чебуреки	chebureki
+recipe:chicken-tikka	Chicken tikka	pollo tikka
+recipe:chicken-tikka.ru	Курица тикка	pollo tikka
+recipe:chili-oil	Chili oil	aceite de chile
+recipe:chili-oil.ru	Чили-масло	aceite de chile
+recipe:chimichurri	Chimichurri	chimichurri
+recipe:chimichurri.ru	Чимичурри	chimichurri
+recipe:chole-bhature	Chole bhature	chole bhature
+recipe:chole-bhature.ru	Чоле-бхатуре	chole bhature
+recipe:churros	Churros	churros
+recipe:churros.ru	Чуррос	churros
+recipe:cochinillo	Cochinillo asado (roast suckling pig)	cochinillo asado
+recipe:cochinillo.ru	Молочный поросёнок жареный	cochinillo asado
+recipe:cocido	Cocido madrileño	cocido madrileño
+recipe:cocido.ru	Косидо	cocido madrileño
+recipe:crema-calabacin	Crema de calabacín	crema de calabacín
+recipe:crema-calabacin.ru	Крем-суп из кабачков	crema de calabacín
+recipe:croquetas-jamon	Croquetas de jamón	croquetas de jamón
+recipe:croquetas-jamon.ru	Крокеты с хамоном	croquetas de jamón
+recipe:croquetas-pollo	Croquetas de pollo	croquetas de pollo
+recipe:croquetas-pollo.ru	Крокеты с курицей	croquetas de pollo
+recipe:cuajada	Cuajada (milk junket)	cuajada
+recipe:cuajada.ru	Куахада	cuajada
+recipe:dal-makhani	Dal makhani	dal makhani
+recipe:dal-makhani.ru	Дал макхани	dal makhani
+recipe:dan-dan	Dan dan noodles	fideos dan dan
+recipe:dan-dan.ru	Даньдань мянь	fideos dan dan
+recipe:dimlama	Dimlama	dimlama
+recipe:dimlama.ru	Димляма	dimlama
+recipe:doro-wat	Doro wat	doro wat
+recipe:doro-wat.ru	Доро ват	doro wat
+recipe:ensaimada	Ensaimada	ensaimada
+recipe:ensaimada.ru	Энсаймада	ensaimada
+recipe:escalivada	Escalivada	escalivada
+recipe:escalivada.ru	Эскаливада	escalivada
+recipe:fabes-almejas	Fabes con almejas (beans with clams)	fabes con almejas
+recipe:fabes-almejas.ru	Фабада с моллюсками	fabes con almejas
+recipe:fattoush	Fattoush	fattoush
+recipe:fattoush.ru	Фаттуш	fattoush
+recipe:feijoada	Feijoada	feijoada
+recipe:feijoada.ru	Фейжоада	feijoada
+recipe:fettuccine-alfredo	Fettuccine Alfredo	fettuccine Alfredo
+recipe:fettuccine-alfredo.ru	Феттуччине альфредо	fettuccine Alfredo
+recipe:fideua	Fideuá	fideuá
+recipe:fideua.ru	Фидеуа	fideuá
+recipe:flamenquin	Flamenquín	flamenquín
+recipe:flamenquin.ru	Фламенкин	flamenquín
+recipe:ful-medames	Ful medames	ful medames
+recipe:ful-medames.ru	Фул медамес	ful medames
+recipe:full-english	Full English breakfast	desayuno inglés completo
+recipe:full-english.ru	Полный английский завтрак	desayuno inglés completo
+recipe:gambas-ajillo	Gambas al ajillo	gambas al ajillo
+recipe:gambas-ajillo.ru	Креветки аль ахильо	gambas al ajillo
+recipe:ganfan	Ganfan	ganfan
+recipe:ganfan.ru	Ганфан	ganfan
 recipe:grechka	Buckwheat porridge with butter	gachas de trigo sarraceno con mantequilla
+recipe:grechka-myaso	Buckwheat with meat	trigo sarraceno con carne
+recipe:grechka-myaso.ru	Гречка с мясом	trigo sarraceno con carne
 recipe:grechka.ru	Гречка с маслом	gachas de trigo sarraceno con mantequilla
+recipe:groundnut-stew	Groundnut stew (maafe)	estofado de cacahuete
+recipe:groundnut-stew.ru	Арахисовое рагу	estofado de cacahuete
+recipe:hainanese-chicken-rice	Hainanese chicken rice	arroz hainanés con pollo
+recipe:hainanese-chicken-rice.ru	Хайнаньский рис с курицей	arroz hainanés con pollo
+recipe:haleem	Haleem	haleem
+recipe:haleem.ru	Халим	haleem
+recipe:halva	Halva, sesame	halva de sésamo
+recipe:halva.ru	Халва	halva de sésamo
+recipe:huevos-rellenos	Huevos rellenos (stuffed eggs)	huevos rellenos
+recipe:huevos-rellenos.ru	Фаршированные яйца	huevos rellenos
+recipe:ikra-baklazhan	Eggplant caviar	caviar de berenjena
+recipe:ikra-baklazhan.ru	Баклажанная икра	caviar de berenjena
+recipe:ikra-kabachok	Zucchini caviar	caviar de calabacín
+recipe:ikra-kabachok.ru	Кабачковая икра	caviar de calabacín
+recipe:irimshik	Irimshik (dried curd cheese)	irimshik
+recipe:irimshik.ru	Ирімшік	irimshik
+recipe:jacket-potato-beans	Jacket potato with baked beans	patata asada con alubias
+recipe:jacket-potato-beans.ru	Запечённая картошка с фасолью	patata asada con alubias
+recipe:jalebi	Jalebi	jalebi
+recipe:jalebi.ru	Джалеби	jalebi
+recipe:jalfrezi	Chicken jalfrezi	pollo jalfrezi
+recipe:jalfrezi.ru	Курица джалфрези	pollo jalfrezi
+recipe:japchae	Japchae	japchae
+recipe:japchae.ru	Чапчхе	japchae
+recipe:jollof	Jollof rice	arroz jollof
+recipe:jollof.ru	Рис джоллоф	arroz jollof
+recipe:kabsa	Chicken kabsa	kabsa de pollo
+recipe:kabsa.ru	Кабса с курицей	kabsa de pollo
+recipe:kartoshka-pirozhnoe	Kartoshka pastry	pastel «kartoshka»
+recipe:kartoshka-pirozhnoe.ru	Пирожное «картошка»	pastel «kartoshka»
+recipe:kazan-kebab	Kazan kebab	kebab de kazán
+recipe:kazan-kebab.ru	Казан-кебаб	kebab de kazán
+recipe:khachapuri	Khachapuri, imeruli	khachapuri
+recipe:khachapuri-adjaruli	Khachapuri adjaruli	khachapuri adjaruli
+recipe:khachapuri-adjaruli.ru	Хачапури по-аджарски	khachapuri adjaruli
+recipe:khachapuri.ru	Хачапури	khachapuri
+recipe:kharcho	Kharcho	jarcho
+recipe:kharcho.ru	Харчо	jarcho
+recipe:kheer	Kheer	kheer
+recipe:kheer.ru	Кхир	kheer
+recipe:khinkali	Khinkali	khinkali
+recipe:khinkali.ru	Хинкали	khinkali
+recipe:khoshan	Khoshan	khoshan
+recipe:khoshan.ru	Хошан	khoshan
+recipe:khvorost	Khvorost	khvorost
+recipe:khvorost.ru	Хворост	khvorost
+recipe:kiev-cutlet	Chicken Kiev	pollo Kiev
+recipe:kiev-cutlet.ru	Котлета по-киевски	pollo Kiev
+recipe:kimchi-jjigae	Kimchi jjigae (kimchi stew)	kimchi jjigae
+recipe:kimchi-jjigae.ru	Кимчи-ччиге	kimchi jjigae
+recipe:kompot	Kompot	kompot
+recipe:kompot.ru	Компот	kompot
+recipe:korean-fried-chicken	Korean fried chicken	pollo frito coreano
+recipe:korean-fried-chicken.ru	Корейская жареная курица	pollo frito coreano
+recipe:koshari	Koshari	koshari
+recipe:koshari.ru	Кошари	koshari
+recipe:kuksi	Kuksi	kuksi
+recipe:kuksi.ru	Кукси	kuksi
 recipe:kumys	Kumys	kumis
 recipe:kumys.ru	Кумыс	kumis
 recipe:kurt	Kurt	kurt
 recipe:kurt.ru	Курт	kurt
+recipe:kuyrdak	Kuyrdak	kuyrdak
+recipe:kuyrdak.ru	Куырдак	kuyrdak
+recipe:kvass	Kvass	kvass
+recipe:kvass.ru	Квас	kvass
+recipe:labneh	Labneh	labneh
+recipe:labneh.ru	Лабне	labneh
 recipe:lagman	Lagman	lagman
 recipe:lagman.ru	Лагман	lagman
+recipe:larb	Larb (minced chicken salad)	larb
+recipe:larb.ru	Ларб	larb
+recipe:lavash	Lavash	lavash
+recipe:lavash.ru	Лаваш	lavash
+recipe:lecho	Lecho	lecho
+recipe:lecho.ru	Лечо	lecho
+recipe:lobio	Lobio	lobio
+recipe:lobio.ru	Лобио	lobio
+recipe:lomo-saltado	Lomo saltado	lomo saltado
+recipe:lomo-saltado.ru	Ломо сальтадо	lomo saltado
+recipe:lyulya-kebab	Lyulya kebab	kebab lyulya
+recipe:lyulya-kebab.ru	Люля-кебаб	kebab lyulya
+recipe:macarrones-chorizo	Macarrones con chorizo	macarrones con chorizo
+recipe:macarrones-chorizo.ru	Макароны с чорисо	macarrones con chorizo
+recipe:makarony-po-flotski	Navy-style pasta with minced meat	macarrones a la marinera
+recipe:makarony-po-flotski.ru	Макароны по-флотски	macarrones a la marinera
+recipe:mampar	Mampar	mampar
+recipe:mampar.ru	Мампар	mampar
+recipe:manakish	Manakish (za'atar flatbread)	manakish
+recipe:manakish.ru	Манакиш	manakish
+recipe:mandazi	Mandazi	mandazi
+recipe:mandazi.ru	Мандази	mandazi
+recipe:mango-lassi	Mango lassi	lassi de mango
+recipe:mango-lassi.ru	Манго-ласси	lassi de mango
+recipe:mango-sticky-rice	Mango sticky rice	arroz glutinoso con mango
+recipe:mango-sticky-rice.ru	Клейкий рис с манго	arroz glutinoso con mango
 recipe:manty	Manty	manty
+recipe:manty-kartoshka	Manty, potato filling	manty de patata
+recipe:manty-kartoshka.ru	Манты с картошкой	manty de patata
+recipe:manty-tykva	Manty, pumpkin filling	manty de calabaza
+recipe:manty-tykva.ru	Манты с тыквой	manty de calabaza
 recipe:manty.ru	Манты	manty
+recipe:mapo-tofu	Mapo tofu	mapo tofu
+recipe:mapo-tofu.ru	Мапо тофу	mapo tofu
+recipe:marmitako	Marmitako	marmitako
+recipe:marmitako.ru	Мармитако	marmitako
+recipe:masala-chai	Masala chai	masala chai
+recipe:masala-chai.ru	Масала-чай	masala chai
+recipe:massaman	Massaman curry	curry massaman
+recipe:massaman.ru	Массаман-карри	curry massaman
+recipe:medovik	Medovik (honey layer cake)	tarta de miel
+recipe:medovik.ru	Медовик	tarta de miel
+recipe:mejillones-escabeche	Mejillones en escabeche	mejillones en escabeche
+recipe:mejillones-escabeche.ru	Мидии в эскабече	mejillones en escabeche
+recipe:membrillo	Dulce de membrillo (quince paste)	dulce de membrillo
+recipe:membrillo.ru	Айвовое повидло	dulce de membrillo
+recipe:merluza-romana	Merluza a la romana	merluza a la romana
+recipe:merluza-romana.ru	Мерлуза по-римски	merluza a la romana
+recipe:mezze	Mezze platter	mezze
+recipe:mezze.ru	Меззе	mezze
+recipe:migas	Migas	migas
+recipe:migas.ru	Мигас	migas
+recipe:mimoza	Mimosa salad	ensalada mimosa
+recipe:mimoza.ru	Салат «Мимоза»	ensalada mimosa
+recipe:moi-moi	Moi moi	moi moi
+recipe:moi-moi.ru	Мои-мои	moi moi
+recipe:montadito-lomo	Montadito de lomo	montadito de lomo
+recipe:montadito-lomo.ru	Монтадито с ломо	montadito de lomo
+recipe:morkovcha	Korean-style carrot salad	zanahoria a la coreana
+recipe:morkovcha.ru	Морковь по-корейски	zanahoria a la coreana
+recipe:muhammara	Muhammara	muhammara
+recipe:muhammara.ru	Мухаммара	muhammara
+recipe:myaso-frantsuzski	Meat French-style	carne a la francesa
+recipe:myaso-frantsuzski.ru	Мясо по-французски	carne a la francesa
+recipe:nauryz-kozhe	Nauryz kozhe	nauryz kozhe
+recipe:nauryz-kozhe.ru	Наурыз көже	nauryz kozhe
+recipe:nihari	Nihari	nihari
+recipe:nihari.ru	Нихари	nihari
+recipe:nishalda	Nishalda	nishalda
+recipe:nishalda.ru	Нишалда	nishalda
+recipe:okonomiyaki	Okonomiyaki	okonomiyaki
+recipe:okonomiyaki.ru	Окономияки	okonomiyaki
+recipe:okroshka	Okroshka on kefir	okroshka
+recipe:okroshka.ru	Окрошка на кефире	okroshka
 recipe:olivier	Olivier salad	ensaladilla rusa
 recipe:olivier.ru	Оливье	ensaladilla rusa
+recipe:onigiri	Onigiri, salmon filling	onigiri de salmón
+recipe:onigiri.ru	Онигири с лососем	onigiri de salmón
+recipe:paella-marisco	Paella de marisco	paella de marisco
+recipe:paella-marisco.ru	Паэлья с морепродуктами	paella de marisco
+recipe:paella-valenciana	Paella valenciana	paella valenciana
+recipe:paella-valenciana.ru	Паэлья валенсиана	paella valenciana
+recipe:paneer-tikka	Paneer tikka	paneer tikka
+recipe:paneer-tikka.ru	Панир тикка	paneer tikka
+recipe:patatas-bravas	Patatas bravas	patatas bravas
+recipe:patatas-bravas.ru	Пататас бравас	patatas bravas
 recipe:pelmeni	Pelmeni	pelmeni
+recipe:pelmeni-zharenye	Pelmeni, fried	pelmeni fritos
+recipe:pelmeni-zharenye.ru	Пельмени жареные	pelmeni fritos
 recipe:pelmeni.ru	Пельмени	pelmeni
+recipe:pescaito-frito	Pescaíto frito (Andalusian fried fish)	pescaíto frito
+recipe:pescaito-frito.ru	Жареная рыба по-андалусски	pescaíto frito
+recipe:pestinos	Pestiños	pestiños
+recipe:pestinos.ru	Пестиньос	pestiños
+recipe:pimientos-padron	Pimientos de Padrón	pimientos de Padrón
+recipe:pimientos-padron.ru	Перцы падрон	pimientos de Padrón
+recipe:piri-piri-chicken	Piri piri chicken	pollo piri piri
+recipe:piri-piri-chicken.ru	Курица пири-пири	pollo piri piri
+recipe:pirog-kapusta	Cabbage pie	empanada de col
+recipe:pirog-kapusta.ru	Пирог с капустой	empanada de col
+recipe:pirozhki-cabbage	Pirozhki, cabbage filling	pirozhki de col
+recipe:pirozhki-cabbage.ru	Пирожки с капустой	pirozhki de col
+recipe:pirozhki-potato	Pirozhki, potato filling	pirozhki de patata
+recipe:pirozhki-potato.ru	Пирожки с картошкой	pirozhki de patata
+recipe:ploughmans	Ploughman's lunch	ploughman's lunch
+recipe:ploughmans.ru	Плантаторский ланч	ploughman's lunch
 recipe:plov	Plov	plov
 recipe:plov.ru	Плов	plov
+recipe:poha	Poha	poha
+recipe:poha.ru	Поха	poha
+recipe:poke	Poke bowl	poke bowl
+recipe:poke.ru	Поке	poke bowl
+recipe:pollo-ajillo	Pollo al ajillo	pollo al ajillo
+recipe:pollo-ajillo.ru	Курица аль ахильо	pollo al ajillo
+recipe:pollo-patatas	Pollo con patatas	pollo con patatas
+recipe:pollo-patatas.ru	Курица с картошкой	pollo con patatas
+recipe:polvorones	Polvorones	polvorones
+recipe:polvorones.ru	Польворонес	polvorones
+recipe:pork-roast-dumplings	Pork roast with dumplings	asado de cerdo con dumplings
+recipe:pork-roast-dumplings.ru	Жаркое из свинины с кнедликами	asado de cerdo con dumplings
+recipe:puff-puff	Puff-puff	puff-puff
+recipe:puff-puff.ru	Паф-паф	puff-puff
+recipe:pure-kotleta	Mashed potato with meat cutlet	puré de patatas con chuleta
+recipe:pure-kotleta.ru	Пюре с котлетой	puré de patatas con chuleta
+recipe:pyanse	Pyanse (steamed meat bun)	pyanse
+recipe:pyanse.ru	Пянсе	pyanse
+recipe:ramen	Ramen, shoyu	ramen de salsa de soja
+recipe:ramen.ru	Рамен с соевым соусом	ramen de salsa de soja
+recipe:rassolnik	Rassolnik	rassolnik
+recipe:rassolnik.ru	Рассольник	rassolnik
+recipe:rendang	Beef rendang	rendang de ternera
+recipe:rendang.ru	Говядина ренданг	rendang de ternera
+recipe:revuelto-setas	Revuelto de setas (scrambled eggs with mushrooms)	revuelto de setas
+recipe:revuelto-setas.ru	Ревуэльто с грибами	revuelto de setas
+recipe:ris-ovoshchi	Rice with vegetables	arroz con verduras
+recipe:ris-ovoshchi.ru	Рис с овощами	arroz con verduras
+recipe:risotto-mushroom	Mushroom risotto	risotto de setas
+recipe:risotto-mushroom.ru	Грибной ризотто	risotto de setas
+recipe:roasted-beetroot	Roasted beetroot	remolacha asada
+recipe:roasted-beetroot.ru	Запечённая свёкла	remolacha asada
+recipe:roasted-vegetables	Roasted vegetables	verduras asadas
+recipe:roasted-vegetables.ru	Запечённые овощи	verduras asadas
+recipe:roll-philadelphia	Philadelphia roll	roll Philadelphia
+recipe:roll-philadelphia.ru	Ролл «Филадельфия»	roll Philadelphia
+recipe:ryazhenka	Ryazhenka	ryazhenka
+recipe:ryazhenka.ru	Ряженка	ryazhenka
+recipe:salmorejo	Salmorejo	salmorejo
+recipe:salmorejo.ru	Сальморехо	salmorejo
+recipe:salsa-brava	Salsa brava	salsa brava
+recipe:salsa-brava.ru	Сальса брава	salsa brava
 recipe:samsa	Samsa	samsa
 recipe:samsa.ru	Самса	samsa
+recipe:sandwich-vegetal	Sándwich vegetal	sándwich vegetal
+recipe:sandwich-vegetal.ru	Овощной сэндвич	sándwich vegetal
+recipe:selyodka-pod-shuboy	Herring under a fur coat	arenque bajo abrigo de pelo
+recipe:selyodka-pod-shuboy.ru	Селёдка под шубой	arenque bajo abrigo de pelo
+recipe:shakshuka	Shakshuka	shakshuka
+recipe:shakshuka.ru	Шакшука	shakshuka
 recipe:shashlik	Shashlik, pork	shashlik de cerdo
+recipe:shashlik-kuritsa	Shashlik, chicken	shashlik de pollo
+recipe:shashlik-kuritsa.ru	Шашлык из курицы	shashlik de pollo
 recipe:shashlik.ru	Шашлык из свинины	shashlik de cerdo
+recipe:shawarma-beef	Beef shawarma wrap	shawarma de ternera
+recipe:shawarma-beef.ru	Шаурма с говядиной	shawarma de ternera
+recipe:shawarma-chicken	Chicken shawarma wrap	shawarma de pollo
+recipe:shawarma-chicken.ru	Шаурма с курицей	shawarma de pollo
 recipe:shchi	Shchi	shchi
 recipe:shchi.ru	Щи	shchi
+recipe:shelpek	Shelpek	shelpek
+recipe:shelpek.ru	Шелепек	shelpek
+recipe:shurpa	Shurpa	shurpa
+recipe:shurpa.ru	Шурпа	shurpa
+recipe:solyanka	Solyanka, meat	solianka
+recipe:solyanka.ru	Солянка мясная	solianka
+recipe:som-tam	Green papaya salad (som tam)	ensalada de papaya verde
+recipe:som-tam.ru	Сом там	ensalada de papaya verde
+recipe:sopa-de-ajo	Sopa de ajo (Castilian garlic soup)	sopa de ajo
+recipe:sopa-de-ajo.ru	Чесночный суп	sopa de ajo
+recipe:souvlaki	Souvlaki, pork	souvlaki de cerdo
+recipe:souvlaki.ru	Сувлаки из свинины	souvlaki de cerdo
+recipe:sticky-toffee	Sticky toffee pudding	sticky toffee pudding
+recipe:sticky-toffee.ru	Пудинг с финиками и ириской	sticky toffee pudding
+recipe:stuffed-zucchini	Stuffed zucchini	calabacines rellenos
+recipe:stuffed-zucchini.ru	Фаршированные кабачки	calabacines rellenos
+recipe:suya	Suya	suya
+recipe:suya.ru	Суйя	suya
+recipe:svekolnik	Svekolnik, cold beet soup	svekolnik
+recipe:svekolnik.ru	Свекольник	svekolnik
+recipe:syrne	Syrne	syrne
+recipe:syrne.ru	Сырне	syrne
 recipe:syrniki	Syrniki	syrniki
 recipe:syrniki.ru	Сырники	syrniki
+recipe:syrok-glazirovanny	Glazed curd cheese bar	barrita de cuajada glaseada
+recipe:syrok-glazirovanny.ru	Сырок глазированный	barrita de cuajada glaseada
+recipe:tagine-lamb	Lamb tagine with apricots	tajín de cordero con albaricoques
+recipe:tagine-lamb.ru	Бараний тажин с абрикосами	tajín de cordero con albaricoques
+recipe:teacake	Teacake	bollo dulce con pasas
+recipe:teacake.ru	Сдобная булочка с изюмом	bollo dulce con pasas
+recipe:teriyaki-salmon	Teriyaki salmon	salmón teriyaki
+recipe:teriyaki-salmon.ru	Лосось терияки	salmón teriyaki
+recipe:texas-toast	Texas toast (garlic butter toast)	tostada texas con ajo
+recipe:texas-toast.ru	Техасский тост с чесноком	tostada texas con ajo
+recipe:tinto-verano	Tinto de verano	tinto de verano
+recipe:tinto-verano.ru	Тинто де верано	tinto de verano
+recipe:tkemali	Tkemali sauce	tkemali
+recipe:tkemali.ru	Ткемали	tkemali
+recipe:tom-kha-gai	Tom kha gai	tom kha gai
+recipe:tom-kha-gai.ru	Том кха кай	tom kha gai
+recipe:tom-yum	Tom yum	tom yum
+recipe:tom-yum.ru	Том ям	tom yum
+recipe:toplenoe-moloko	Baked milk (toplenoe moloko)	leche horneada
+recipe:toplenoe-moloko.ru	Топлёное молоко	leche horneada
+recipe:tostada-aguacate	Tostada con aguacate	tostada con aguacate
+recipe:tostada-aguacate.ru	Тост с авокадо	tostada con aguacate
+recipe:turron	Turrón de Jijona (soft almond nougat)	turrón de Jijona
+recipe:turron.ru	Туррон де Хихона	turrón de Jijona
 recipe:tvorog	Tvorog	tvorog
 recipe:tvorog.ru	Творог	tvorog
+recipe:tykvennaya-kasha	Pumpkin-millet porridge	gachas de calabaza y mijo
+recipe:tykvennaya-kasha.ru	Тыквенная каша	gachas de calabaza y mijo
 recipe:vareniki	Vareniki, potato filling	vareniki de patata
+recipe:vareniki-tvorog	Vareniki, tvorog filling	vareniki de tvorog
+recipe:vareniki-tvorog.ru	Вареники с творогом	vareniki de tvorog
+recipe:vareniki-vishnya	Vareniki, sour cherry filling	vareniki de cereza
+recipe:vareniki-vishnya.ru	Вареники с вишней	vareniki de cereza
 recipe:vareniki.ru	Вареники с картофелем	vareniki de patata
+recipe:verduras-plancha	Verduras a la plancha	verduras a la plancha
+recipe:verduras-plancha.ru	Овощи на гриле	verduras a la plancha
+recipe:vinaigrette-balsamic	Balsamic vinaigrette	vinagreta balsámica
+recipe:vinaigrette-balsamic.ru	Бальзамическая заправка	vinagreta balsámica
+recipe:vindaloo	Pork vindaloo	vindaloo de cerdo
+recipe:vindaloo.ru	Свиной виндалу	vindaloo de cerdo
+recipe:vinegret	Vinegret (beet salad)	vinegret
+recipe:vinegret.ru	Винегрет	vinegret
+recipe:yassa	Chicken yassa	pollo yassa
+recipe:yassa.ru	Курица ясса	pollo yassa
+recipe:zarzuela	Zarzuela de pescado	zarzuela de pescado
+recipe:zarzuela.ru	Сарсуэла	zarzuela de pescado
+recipe:zeleny-borscht	Green borscht (sorrel soup)	borscht verde
+recipe:zeleny-borscht.ru	Зелёный борщ	borscht verde
+recipe:zhent	Zhent	zhent
+recipe:zhent.ru	Жент	zhent
+recipe:zrazy	Zrazy, potato dough with meat	zrazy
+recipe:zrazy.ru	Зразы	zrazy
 tfda:A0100101	大麥仁	cebada
 tfda:A0110101	大麥片	copos de cebada
 tfda:A0120101	大麥仁粉	harina de cebada
