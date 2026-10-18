@@ -62,6 +62,28 @@ def test_ingest_is_idempotent_and_logged():
     assert ingest.already_done("t", "r1")
 
 
+def test_a_fetcher_code_change_reloads_a_ref_it_already_loaded():
+    """#63: `already_done` compares the fetcher's code beside the publisher's ref, so a parser
+    change re-ingests a file that did not change."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()], code="1")
+    assert ingest.already_done("t", "r1", code="1")
+    assert not ingest.already_done("t", "r1", code="2")
+    ingest.run("t", "r1", [rec()], code="2")
+    assert ingest.already_done("t", "r1", code="2")
+
+
+def test_a_run_without_a_code_is_never_done_for_a_versioned_fetcher():
+    """Runs stored before `fetch_run.code` existed have it null: a fetcher that declares a code
+    re-ingests them once."""
+    from fooddb import ingest
+
+    ingest.run("t", "r1", [rec()])
+    assert ingest.already_done("t", "r1")
+    assert not ingest.already_done("t", "r1", code="1")
+
+
 def test_resolver_serves_newest_value_with_its_source_and_licence():
     from fooddb import ingest
 
@@ -1954,12 +1976,14 @@ def test_bls_is_served_with_available_carbohydrate_and_its_attribution_and_outra
     from fooddb.fetchers import bls
 
     xlsx = Path(__file__).parent / "fixtures" / "bls.xlsx"
-    assert ingest.run(bls.FETCHER, "t", bls.records(xlsx, datetime(2025, 12, 11, tzinfo=UTC)))[0] == 6
+    assert ingest.run(bls.FETCHER, "t", bls.records(xlsx, datetime(2025, 12, 11, tzinfo=UTC), erratum=True))[0] == 9
     p = product("bls:F301100")
     assert p["name"] == {"value": "Strawberry raw", "source": "bls", "licence": "CC-BY-4.0", "record": "bls:F301100"}
     assert (p["per_100"]["CHOAVL"]["value"], p["per_100"]["CHOAVL"]["licence"]) == (5.917, "CC-BY-4.0")
     assert "CHOCDF" not in p["per_100"] and p["per_100"]["NA"]["unit"] == "mg"
     assert not [i for i in review.queue() if i["record"].startswith("bls:")]  # no check flags the fixture
+    assert product("bls:S151000")["per_100"]["ENERC_KCAL"]["value"] == pytest.approx(317.6)  # the errata, section 3
+    assert not {"FAT", "ENERC_KCAL"} & product("bls:T104100")["per_100"].keys()  # the errata, section 6
     assert p["attribution"] == [{"source": "bls", "licence": "CC-BY-4.0", "text": bls.ATTRIBUTION}]
     ingest.run("t", "r2", [kcal_record("bls:1", "bls", 229.0, 2025), kcal_record("off:1", "off", 260.0, 2026)])
     merge("bls:1", "off:1")

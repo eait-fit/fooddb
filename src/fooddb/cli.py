@@ -164,9 +164,9 @@ def status() -> None:
             typer.echo(f"foods[{layer}]: {n}")
         typer.echo(f"observations: {conn.execute(text('select count(*) from observation')).scalar_one()}")
         for r in conn.execute(text(
-            "select fetcher, ref, status, foods, observations, finished_at from fetch_run order by id desc limit 5"
+            "select fetcher, ref, code, status, foods, observations, finished_at from fetch_run order by id desc limit 5"
         )):
-            typer.echo(f"run {r.fetcher} {r.ref} {r.status} foods={r.foods} obs={r.observations} {r.finished_at}")
+            typer.echo(f"run {r.fetcher} {r.ref} code={r.code} {r.status} foods={r.foods} obs={r.observations} {r.finished_at}")
         for r in conn.execute(text("select status, count(*) from pq_tasks group by status")):
             typer.echo(f"pq tasks {r.status}: {r.count}")
 
