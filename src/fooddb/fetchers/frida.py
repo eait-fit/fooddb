@@ -13,6 +13,7 @@ from fooddb.fetchers.xlsx import rows
 
 ARTICLE = "https://api.figshare.com/v2/articles/29500682"
 FETCHER = "frida"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "CC-BY-4.0"
 ATTRIBUTION = ("Frida Food Data (https://frida.fooddata.dk), National Food Institute, Technical University "
                "of Denmark. CC BY 4.0.")
@@ -80,8 +81,8 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     r = httpx.get(ARTICLE, timeout=60, follow_redirects=True)
     r.raise_for_status()
     url, ref, observed_at = newest(r.json())
-    if not force and ingest.already_done(FETCHER, ref):
+    if not force and ingest.already_done(FETCHER, ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as tmp:
         download(url, tmp)
-        return ingest.run(FETCHER, ref, records(tmp, observed_at))
+        return ingest.run(FETCHER, ref, records(tmp, observed_at), code=CODE)

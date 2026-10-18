@@ -45,11 +45,15 @@ class Record:
     names: dict[str, str] = field(default_factory=dict)  # lang → the name in another language than `name`
 
 
-def already_done(fetcher: str, ref: str) -> bool:
+def already_done(fetcher: str, ref: str, code: str | None = None) -> bool:
+    """True when this ref was loaded by a run of this code. A run stored without a code (before
+    `fetch_run.code` existed) is never done for a fetcher that declares one, so adopting or
+    bumping a fetcher's CODE re-ingests a source whose file did not change."""
     with engine().connect() as conn:
         return conn.execute(
             select(fetch_run.c.id).where(
-                fetch_run.c.fetcher == fetcher, fetch_run.c.ref == ref, fetch_run.c.status == "done"
+                fetch_run.c.fetcher == fetcher, fetch_run.c.ref == ref, fetch_run.c.code == code,
+                fetch_run.c.status == "done"
             )
         ).first() is not None
 
@@ -78,7 +82,8 @@ def fail_abandoned() -> int:
             finished_at=datetime.now(UTC))).rowcount
 
 
-def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> tuple[int, int]:
+def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500,
+        code: str | None = None) -> tuple[int, int]:
     """Store records in batches; logs the run in fetch_run. Returns (foods, observations)."""
     with engine().begin() as conn:
         # A run still "running" for this ref was killed hard (pq timeout, OOM, SIGKILL): no handler
@@ -88,7 +93,7 @@ def run(fetcher: str, ref: str, records: Iterable[Record], batch: int = 500) -> 
         ).values(status="failed", error="abandoned: process ended without closing the run",
                  finished_at=datetime.now(UTC)))
         run_id = conn.execute(
-            insert(fetch_run).values(fetcher=fetcher, ref=ref, status="running").returning(fetch_run.c.id)
+            insert(fetch_run).values(fetcher=fetcher, ref=ref, code=code, status="running").returning(fetch_run.c.id)
         ).scalar_one()
     n_foods = n_obs = 0
     try:

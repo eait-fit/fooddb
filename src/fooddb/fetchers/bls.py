@@ -18,6 +18,7 @@ from fooddb.fetchers.xlsx import rows
 PAGE = "https://www.blsdb.de/download"
 UPLOADS = "https://www.blsdb.de/assets/uploads/"
 FETCHER = "bls"
+CODE = "2"  # the fetcher's code version: bump it when the records a file yields can change (#63); 2 adds the errata
 LICENCE = "CC-BY-4.0"
 ATTRIBUTION = "Max Rubner-Institut (2025): Bundeslebensmittelschlüssel (BLS), Version 4.0 — Deutsche Nährstoffdatenbank."
 ZIP = re.compile(r"/assets/uploads/(BLS_\w+_DE\.zip)")
@@ -133,7 +134,7 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
         raise RuntimeError(f"bls: {url} states no size or change date; the server changed")
     name = url.rsplit("/", 1)[1]
     run_ref = ref(name, size, modified)
-    if not force and ingest.already_done(FETCHER, run_ref):
+    if not force and ingest.already_done(FETCHER, run_ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as tmp, tempfile.TemporaryFile() as workbook:
         download(url, tmp)
@@ -143,4 +144,4 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
                 shutil.copyfileobj(src, workbook)
         workbook.seek(0)
         observed_at = datetime(*member.date_time, tzinfo=UTC)
-        return ingest.run(FETCHER, run_ref, records(workbook, observed_at, erratum=name.startswith(RELEASE_4_0)))
+        return ingest.run(FETCHER, run_ref, records(workbook, observed_at, erratum=name.startswith(RELEASE_4_0)), code=CODE)

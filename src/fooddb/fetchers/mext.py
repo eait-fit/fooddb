@@ -16,6 +16,7 @@ from fooddb.fetchers.xlsx import rows
 
 PAGE = "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
 FETCHER = "mext"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "mext-free-use"
 EDITION = "日本食品標準成分表（八訂）増補2023年"
 ATTRIBUTION = (f"{EDITION}から引用 (Standard Tables of Food Composition in Japan, 8th revised edition, 2023 supplement, "
@@ -142,9 +143,9 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     r = httpx.get(PAGE, timeout=60, follow_redirects=True)
     r.raise_for_status()
     urls, ref, observed_at = newest(r.text)
-    if not force and ingest.already_done(FETCHER, ref):
+    if not force and ingest.already_done(FETCHER, ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as main, tempfile.TemporaryFile() as fatty_acids, tempfile.TemporaryFile() as carbohydrates:
         for url, tmp in zip(urls, (main, fatty_acids, carbohydrates)):
             download(url, tmp)
-        return ingest.run(FETCHER, ref, records(main, observed_at, fatty_acids, carbohydrates))
+        return ingest.run(FETCHER, ref, records(main, observed_at, fatty_acids, carbohydrates), code=CODE)

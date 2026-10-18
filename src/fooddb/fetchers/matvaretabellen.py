@@ -10,6 +10,7 @@ from fooddb.fetchers import download, json_items
 URL = "https://www.matvaretabellen.no/api/en/foods.json"
 URL_NB = "https://www.matvaretabellen.no/api/nb/foods.json"  # the same table, Norwegian names
 FETCHER = "matvaretabellen"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "NLOD-2.0"
 ATTRIBUTION = ("Contains data from Matvaretabellen (https://www.matvaretabellen.no), Norwegian Food Safety "
                "Authority, made available under the Norwegian Licence for Open Government Data (NLOD) 2.0.")
@@ -58,9 +59,9 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     Its values carry the day fooddb first saw them."""
     with tempfile.TemporaryFile() as tmp:
         ref = download(URL, tmp)
-        if not force and ingest.already_done(FETCHER, ref):
+        if not force and ingest.already_done(FETCHER, ref, code=CODE):
             return None
         with tempfile.TemporaryFile() as nb:
             download(URL_NB, nb)
             native = names(json_items(nb, "foods"))
-        return ingest.run(FETCHER, ref, records(json_items(tmp, "foods"), datetime.now(UTC), native))
+        return ingest.run(FETCHER, ref, records(json_items(tmp, "foods"), datetime.now(UTC), native), code=CODE)
