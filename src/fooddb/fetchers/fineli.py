@@ -15,6 +15,7 @@ from fooddb.fetchers import download
 # refused automated requests on 2026-10-06; a mirror of the zip can be set here.
 URL = os.environ.get("FOODDB__BACKEND__FINELI_URL") or "https://fineli.fi/fineli/content/file/47"
 FETCHER = "fineli"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "CC-BY-4.0"
 ATTRIBUTION = "Finnish Institute for Health and Welfare (THL), Fineli (https://fineli.fi). CC BY 4.0."
 KJ_PER_KCAL = 4.184
@@ -57,7 +58,7 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     package loads once."""
     with tempfile.TemporaryFile() as tmp:
         ref = download(URL, tmp)
-        if not force and ingest.already_done(FETCHER, ref):
+        if not force and ingest.already_done(FETCHER, ref, code=CODE):
             return None
         with zipfile.ZipFile(tmp) as z:
-            return ingest.run(FETCHER, ref, records(z))
+            return ingest.run(FETCHER, ref, records(z), code=CODE)

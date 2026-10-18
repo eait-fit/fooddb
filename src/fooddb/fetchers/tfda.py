@@ -15,6 +15,7 @@ from fooddb.fetchers import download
 
 PAGE = "https://data.gov.tw/api/v2/rest/dataset/8543"
 FETCHER = "tfda"
+CODE = "1"  # the fetcher's code version: bump it when the records a file yields can change (#63)
 LICENCE = "OGDL-Taiwan-1.0"
 ATTRIBUTION = ("Food and Drug Administration, Ministry of Health and Welfare, Taiwan: Food Nutrient Dataset "
                "(食品營養成分資料集, https://data.gov.tw/dataset/8543). Made available to the public under the Open "
@@ -77,8 +78,8 @@ def fetch(force: bool = False) -> tuple[int, int] | None:
     r = httpx.get(PAGE, timeout=60, follow_redirects=True)
     r.raise_for_status()
     url, ref, observed_at = newest(r.json())
-    if not force and ingest.already_done(FETCHER, ref):
+    if not force and ingest.already_done(FETCHER, ref, code=CODE):
         return None
     with tempfile.TemporaryFile() as tmp:
         download(url, tmp)
-        return ingest.run(FETCHER, ref, records(tmp, observed_at))
+        return ingest.run(FETCHER, ref, records(tmp, observed_at), code=CODE)
