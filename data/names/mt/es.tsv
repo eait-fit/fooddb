@@ -28475,22 +28475,1066 @@ frida:994	Lamb, shoulder, raw	paleta de cordero con grasa cruda
 frida:995	Pheasant, flesh and skin, raw	faisán con piel crudo
 frida:997	Marmalade, strawberry	mermelada de fresa
 frida:998	Salmon, Atlantic, wild, cold smoked	salmón atlántico salvaje ahumado en frío
+matvaretabellen:01.001	Milk, whole, 3,5 % fat, Tine	leche entera 3,5 % Tine
+matvaretabellen:01.002	Milk, semi-skimmed, 1,0 % fat, Tine	leche semidesnatada 1,0 % Tine
+matvaretabellen:01.003	Milk, skimmed, Tine	leche desnatada Tine
+matvaretabellen:01.008	Milk beverage, chocolate flavour	leche con chocolate
+matvaretabellen:01.011	Yoghurt, whole milk, plain	yogur natural entero
+matvaretabellen:01.013	Milk, goat, UHT-treated	leche de cabra uperizada
+matvaretabellen:01.015	Cream, whipping, 37 % fat	nata para montar 37 %
+matvaretabellen:01.018	Ice cream, dairy, vanilla	helado de vainilla
+matvaretabellen:01.020	Pudding, chocolate, industrially made	pudin de chocolate comprado
+matvaretabellen:01.023	Vanilla sauce, industrially made	salsa de vainilla comprada
+matvaretabellen:01.025	Cheese, ripened, Camembert	queso camembert
+matvaretabellen:01.027	Cheese, hard, Cheddar	queso cheddar
+matvaretabellen:01.028	Cottage cheese	requesón
+matvaretabellen:01.030	Cheese, hard, Edam	queso edam
+matvaretabellen:01.032	Cheese, skimmed milk, matured, sharp, Gammelost	queso gamalost
+matvaretabellen:01.035	Cheese, hard, Jarlsberg	queso jarlsberg
+matvaretabellen:01.036	Quark, 1 % fat	queso quark 1 %
+matvaretabellen:01.037	Cheese, blue mold, Normanna	queso azul Normanna
+matvaretabellen:01.038	Cheese, semi-hard, Gräddost	queso gräddost
+matvaretabellen:01.039	Cheese, hard, Norvegia	queso Norvegia
+matvaretabellen:01.040	Cheese, hard, low-fat, Norvegia	queso Norvegia ligero
+matvaretabellen:01.042	Cheese, blue mold, Norzola	queso azul Norzola
+matvaretabellen:01.043	Cheese, hard, caraway spiced, Nøkkelost	queso con alcaravea Nøkkelost
+matvaretabellen:01.046	Cheese, semi-hard, Port Salut	queso port salut
+matvaretabellen:01.047	Cheese, fermented skimmed milk, granular, caraway spiced, Pultost, Løiten	queso pultost con alcaravea Løiten
+matvaretabellen:01.048	Cheese, semi-hard, Ridderost	queso ridderost
+matvaretabellen:01.050	Cheese, hard, Sveitser	queso sveitser
+matvaretabellen:01.052	Cheese, whey, goat milk	brunost de cabra
+matvaretabellen:01.053	Cheese, whey, cow milk	brunost de vaca
+matvaretabellen:01.054	Cheese, whey, cow milk, low-fat	brunost de vaca ligero
+matvaretabellen:01.055	Cheese, whey, cow and goat milk	brunost gudbrandsdal
+matvaretabellen:01.058	Curd, milk and whey, sweetened	gomme dulce
+matvaretabellen:01.059	Cheese, whey spread	pasta de queso prim
+matvaretabellen:01.060	Cheese, whey spread, lean	pasta de queso prim ligera
+matvaretabellen:01.062	Cheese, semi-hard, Crème Chérie	queso Crème Chérie
+matvaretabellen:01.063	Cheese spread, bacon flavour	queso para untar sabor a beicon
+matvaretabellen:01.064	Cheese spread, 7 % fat	queso para untar bajo en grasa 7 %
+matvaretabellen:01.066	Cheese, Mozarella, semi-hard, Norwegian	mozzarella noruega
+matvaretabellen:01.071	Cheese, hard, low-fat, Jarlsberg	queso jarlsberg ligero
+matvaretabellen:01.072	Cheese, whey, cow and goat milk, low-fat	brunost gudbrandsdal ligero
+matvaretabellen:01.078	Pudding, caramel, industrially made	pudin de caramelo comprado
+matvaretabellen:01.079	Milkshake, chocolate flavour	batido de chocolate
+matvaretabellen:01.083	Milk, cultured, whole, Kulturmelk	leche fermentada entera
+matvaretabellen:01.084	Milk, cultured, whole, Kefir, Tine	kéfir Tine
+matvaretabellen:01.085	Milk, cultured, skimmed, Skummet kulturmelk	leche fermentada desnatada
+matvaretabellen:01.086	Cream, sour, 35 % fat	nata agria 35 %
+matvaretabellen:01.087	Cream, sour, low-fat, 18 % fat	nata agria 18 %
+matvaretabellen:01.088	Cream, sour, extra low-fat, 10 % fat	nata agria 10 %
+matvaretabellen:01.089	Cream, sour, 35 % fat, Crème Fraîche	crème fraîche 35 %
+matvaretabellen:01.096	Yoghurt, with strawberry, Tine	yogur de fresa Tine
+matvaretabellen:01.108	Cream, coffee, 10 % fat	nata para café 10 %
+matvaretabellen:01.109	Milk, for coffee, 3,5 % fat	leche para café 3,5 %
+matvaretabellen:01.111	Custard, vanilla flavour, industrially made	crema de vainilla comprada
+matvaretabellen:01.112	Custard, rum flavour, industrially made	crema sabor a ron comprada
+matvaretabellen:01.117	Cream cheese, goat milk, Snøfrisk	queso crema de cabra Snøfrisk
+matvaretabellen:01.118	Milk, semi-skimmed, 1,0 % fat, lactose reduced	leche semidesnatada 1,0 % baja en lactosa
+matvaretabellen:01.119	Milk, semi-skimmed, 1,2 % fat, UHT-treated	leche semidesnatada 1,2 % uperizada
+matvaretabellen:01.127	Milk beverage, with chocolate flavour, Litago	leche con chocolate Litago
+matvaretabellen:01.131	Pudding, milk, almond flavour, industrially made	pudin de almendra comprado
+matvaretabellen:01.136	Cheese, ripened, Brie	queso brie
+matvaretabellen:01.138	Cheese, semi-hard, low-fat, Mozzarella, Norwegian	mozzarella noruega ligera
+matvaretabellen:01.142	Cheese, hard, caraway spiced, low-fat, Nøkkelost	queso con alcaravea Nøkkelost ligero
+matvaretabellen:01.150	Cream cheese, plain	queso crema
+matvaretabellen:01.161	Cheese, processed, semi-hard, tomato flavour, Taffelost	queso fundido de tomate Taffelost
+matvaretabellen:01.170	Milk, cultured, Biola	leche fermentada Biola
+matvaretabellen:01.171	Milk, cultured, skimmed, blueberry, Biola	leche fermentada desnatada de arándanos Biola
+matvaretabellen:01.175	Cream, household, 18 % fat	nata para cocinar 18 %
+matvaretabellen:01.176	Coffee whitener, powder, Coffeemate	crema para café en polvo Coffeemate
+matvaretabellen:01.177	Coffee whitener, vegetable fat	crema para café vegetal
+matvaretabellen:01.179	Cream substitute, vegetable fat, whipped cream, canned	nata vegetal montada en aerosol
+matvaretabellen:01.180	Dressing, sour cream with herbs	aliño de nata agria con hierbas
+matvaretabellen:01.184	Rice cream, with strawberries, Rislunsj	crema de arroz con fresas
+matvaretabellen:01.185	Cheese, white, unspecified	queso amarillo
+matvaretabellen:01.186	Cheese, whey, unspecified	brunost
+matvaretabellen:01.188	Cheese, goat milk, Feta	feta de cabra
+matvaretabellen:01.189	Cream substitute, vegetable fat, whipping	nata vegetal para montar
+matvaretabellen:01.192	Milk, semi-skimmed, 0,5 % fat, vitamin D, Tine	leche semidesnatada 0,5 % con vitamina D Tine
+matvaretabellen:01.195	Porridge, prepared with sour cream, Rømmegrøt	rømmegrøt
+matvaretabellen:01.196	Cocoa, prepared with low-fat milk	cacao con leche semidesnatada
+matvaretabellen:01.197	Cocoa, prepared from instant powder and low-fat milk	leche con chocolate en polvo con leche semidesnatada
+matvaretabellen:01.200	Cheese, hard, Parmesan, Parmigiano Reggiano	queso parmesano
+matvaretabellen:01.202	Cheese spread, 3 % fat	queso para untar 3 %
+matvaretabellen:01.204	Cheese spread, 10 % fat	queso para untar 10 %
+matvaretabellen:01.212	Cream cheese, herbs	queso crema con hierbas
+matvaretabellen:01.213	Milk, cultured, skimmed, strawberry, Biola	leche fermentada desnatada de fresa Biola
+matvaretabellen:01.214	Milk, cultured, skimmed, raspberry, Biola	leche fermentada desnatada de frambuesa Biola
+matvaretabellen:01.215	Milk, semi-skimmed, 1,0 % fat, lactose free	leche semidesnatada 1,0 % sin lactosa
+matvaretabellen:01.219	Cheese, grated	queso rallado para pizza
+matvaretabellen:01.220	Cheese, whey spread, with iron	pasta de queso prim con hierro
+matvaretabellen:01.222	Yoghurt, with muesli and berries	yogur con muesli y bayas Go Morgen
+matvaretabellen:01.225	Cream, whipped, canned	nata montada en aerosol
+matvaretabellen:01.226	Quark, 7 % fat	queso quark 7 %
+matvaretabellen:01.227	Milk, semi-skimmed, chocolate flavour, vitamin D	leche semidesnatada de chocolate con vitamina D
+matvaretabellen:01.228	Milk, semi-skimmed, 1,0 % fat, Q-meieriene	leche semidesnatada 1,0 % Q-meieriene
+matvaretabellen:01.229	Milk, semi-skimmed, 1 % fat, unspecified	leche semidesnatada 1 %
+matvaretabellen:01.230	Milk, semi-skimmed, 0,5 % fat, vitamin D, Q-meieriene	leche semidesnatada 0,5 % con vitamina D Q-meieriene
+matvaretabellen:01.231	Milk, semi-skimmed, 0,5 % fat, unspecified	leche semidesnatada 0,5 %
+matvaretabellen:01.233	Cultured milk, with flavour, Skyr	skyr de sabores con edulcorante
+matvaretabellen:01.235	Milk, whole, 4 % fat, Q-meieriene	leche entera 4 % Q-meieriene
+matvaretabellen:01.236	Milk, whole, unspecified	leche entera
+matvaretabellen:01.237	Milk, cultured, semi-skimmed, 0,1 % fat, blueberry and raspberry, BioQ	leche fermentada 0,1 % de arándanos y frambuesa BioQ
+matvaretabellen:01.240	Ice cream, dairy, with wafer and chocolate, cone, krone-is	cucurucho de helado con chocolate
+matvaretabellen:01.241	Ice cream, dairy, with wafer and strawberry, cone, krone-is	cucurucho de helado con fresa
+matvaretabellen:01.243	Ice cream, dairy, vanilla, with dark chocolate coating	polo de vainilla con cobertura de chocolate negro
+matvaretabellen:01.244	Ice cream, dairy, caramel filling, with wafer and chocolate coating	cucurucho de helado con caramelo y cobertura de chocolate
+matvaretabellen:01.245	Cheese, hard, matured, Norvegia	queso Norvegia curado
+matvaretabellen:01.246	Cheese, hard, organic, Norvegia	queso Norvegia ecológico
+matvaretabellen:01.247	Cheese, hard, rich, Norvegia	queso Norvegia intenso
+matvaretabellen:01.248	Goat cheese, hard, white, Balsfjord	queso de cabra blanco Balsfjord
+matvaretabellen:01.249	Goat cheese, hard, white, Kvitlin	queso de cabra blanco Kvitlin
+matvaretabellen:01.250	Cheese, fermented skimmed milk, granular, caraway spiced, Pultost, Hedemark	queso pultost con alcaravea Hedemark
+matvaretabellen:01.251	Goat cheese, chevre, Naturell	queso de cabra chevre
+matvaretabellen:01.252	Cheese, blue mold, Selbu Blå	queso azul Selbu Blå
+matvaretabellen:01.253	Cream cheese, spices	queso crema con especias
+matvaretabellen:01.254	Cream cheese, pepper	queso crema con pimienta
+matvaretabellen:01.257	Cream cheese, goat milk, Snøfrisk, dill	queso crema de cabra con eneldo Snøfrisk
+matvaretabellen:01.258	Cream cheese, goat milk, Snøfrisk, red onion and thyme	queso crema de cabra con cebolla morada y tomillo Snøfrisk
+matvaretabellen:01.260	Cream cheese, goat milk, Snøfrisk, chantarelle	queso crema de cabra con rebozuelos Snøfrisk
+matvaretabellen:01.261	Cheese, blue mold, Gorgonzola	queso gorgonzola
+matvaretabellen:01.262	Cheese, gruyere	queso gruyère
+matvaretabellen:01.263	Cheese, Mascarpone	queso mascarpone
+matvaretabellen:01.264	Cheese, blue mold, Roquefort	queso roquefort
+matvaretabellen:01.265	Cheese, Stilton, blue	queso stilton
+matvaretabellen:01.266	Cheese, Ricotta	queso ricotta
+matvaretabellen:01.267	Cheese, Raclette	queso raclette
+matvaretabellen:01.268	Milk, semi-skimmed, 1,2 % fat, organic	leche semidesnatada 1,2 % ecológica
+matvaretabellen:01.269	Cream cheese, Philadelphia	queso crema Philadelphia
+matvaretabellen:01.270	Cheese, Halloumi	queso halloumi
+matvaretabellen:01.271	Cream cheese, light, Philadelphia	queso crema Philadelphia ligero
+matvaretabellen:01.272	Milk, whole, 3,5 % fat, lactose free	leche entera 3,5 % sin lactosa
+matvaretabellen:01.273	Cream, whipping, 37 % fat, lactose free	nata para montar 37 % sin lactosa
+matvaretabellen:01.274	Milk, semi-skimmed, 0,5 % fat, vitamin D, lactose free	leche semidesnatada 0,5 % con vitamina D sin lactosa
+matvaretabellen:01.275	Yoghurt, whole milk, plain, lactose free	yogur natural entero sin lactosa
+matvaretabellen:01.277	Milk, semi-skimmed, cultured, lactose free, Biola	leche fermentada de arándanos sin lactosa Biola
+matvaretabellen:01.278	Milk, semi-skimmed, beetroot/apple/lime, Biola	leche fermentada de remolacha, manzana y lima Biola
+matvaretabellen:01.279	Yoghurt, vanilla, lactose free	yogur de vainilla sin lactosa
+matvaretabellen:01.280	Milk beverage, chocolate flavour, no added sugar, Litago Uten	leche con chocolate sin azúcar añadido Litago
+matvaretabellen:01.282	Cheese, Østavind	queso Østavind
+matvaretabellen:01.283	Milk, whole, 4,1 % fat, organic	leche entera 4,1 % ecológica
+matvaretabellen:01.285	Milk, semi-skimmed, 0,7 % fat, organic	leche semidesnatada 0,7 % ecológica
+matvaretabellen:01.286	Cream, sour, low-fat, 18 % fat, organic	nata agria 18 % ecológica
+matvaretabellen:01.287	Cheese, blue mold, organic, Selbu Blå	queso azul Selbu Blå ecológico
+matvaretabellen:01.289	Milk, skimmed, Styrk	leche desnatada Styrk
+matvaretabellen:01.290	Yoghurt, whole milk, plain, organic	yogur natural entero ecológico
+matvaretabellen:01.291	Milk, unspecified	leche
+matvaretabellen:01.292	Milk, semi-skimmed, unspecified	leche semidesnatada
+matvaretabellen:01.293	Cream substitute, vegetable fat, soy, 17 % fat	nata vegetal de soja 17 %
+matvaretabellen:01.294	Cream substitute, vegetable fat, oat, 13 %	nata vegetal de avena 13 %
+matvaretabellen:01.295	Cultured, thickened oat product	yogur de avena
+matvaretabellen:01.296	Cultured oat product, for food preparation, 15 % fat	nata de avena para cocinar 15 %
+matvaretabellen:01.297	Cheese, Mozzarella, in brine, imported	mozzarella en salmuera
+matvaretabellen:01.298	Yoghurt, vanilla, 0 % fat, Yoplait	yogur de vainilla 0 % Yoplait
+matvaretabellen:01.299	Yoghurt, blueberries, 0 % fat, Yoplait	yogur de arándanos 0 % Yoplait
+matvaretabellen:01.300	Cheese, Manchego	queso manchego
+matvaretabellen:01.301	Cheese, paneer	queso paneer
+matvaretabellen:01.302	Cheese, gouda	queso gouda
+matvaretabellen:01.303	Milk, cultured, Kefir, with flavour, Q-meieriene	kéfir de sabores Q-meieriene
+matvaretabellen:01.304	Yoghurt, strawberry, Q-meieriene	yogur de fresa Q-meieriene
+matvaretabellen:01.305	Yoghurt, vanilla	yogur de vainilla
+matvaretabellen:01.306	Cultured milk, banana, Skyr	skyr de plátano
+matvaretabellen:01.307	Cultured milk, raspberry, Skyr	skyr de frambuesa
+matvaretabellen:01.308	Ice cream, vanilla, home-made	helado de vainilla casero
+matvaretabellen:01.309	Hot chocolate, whole milk	chocolate a la taza con leche entera
+matvaretabellen:01.310	Hot chocolate, semi-skimmed milk	chocolate a la taza con leche semidesnatada
+matvaretabellen:01.311	Yoghurt, with coulis and granola, from cafe/bakery	yogur con coulis y granola de cafetería
+matvaretabellen:01.312	Yoghurt, with coulis, from cafe/bakery	yogur con coulis de cafetería
+matvaretabellen:01.313	Yoghurt, with fruit puree and muesli, from cafe/bakery	yogur con puré de fruta y muesli de cafetería
+matvaretabellen:01.315	Ice cream, dairy, vanilla, without added sugar	helado de vainilla sin azúcar añadido
+matvaretabellen:01.316	Ice cream, dairy, crushed nougat	helado con crocante
+matvaretabellen:01.318	Ice cream, dairy, salty caramel, without added sugar	helado de caramelo salado sin azúcar añadido
+matvaretabellen:01.319	Ice cream, dairy, chocolate, without added sugar	helado de chocolate sin azúcar añadido
+matvaretabellen:01.322	Ice cream, non-dairy, fruit, mango	helado de fruta de mango
+matvaretabellen:01.325	Ice cream, dairy, vanilla and chocolate, without added sugar	helado de vainilla y chocolate sin azúcar añadido
+matvaretabellen:01.326	Ice cream, dairy, vanilla, with oreo cookies	helado de vainilla con galletas Oreo
+matvaretabellen:01.331	Ice cream, dairy, vanilla, with cookie dough	helado de vainilla con trozos de masa de galleta
+matvaretabellen:01.332 	Ice cream, dairy, with chocolate cookie and salty caramel	helado con galleta de chocolate y caramelo salado
+matvaretabellen:01.333	Ice cream, dairy, liquorice	helado de regaliz
+matvaretabellen:01.334	Yoghurt, plain, 2 % fat, Greek/Turkish	yogur griego 2 %
+matvaretabellen:01.335	Yoghurt, plain, 10 % fat, Greek/Turkish	yogur griego 10 %
+matvaretabellen:01.336	Cheese, hard, Grana padano	queso grana padano
+matvaretabellen:01.337	Oat porridge, without salt, with milk	gachas de avena con leche sin sal
+matvaretabellen:01.338	Oat porridge, without salt, with water	gachas de avena con agua sin sal
+matvaretabellen:01.339	Cocoa, prepared from instant powder and whole milk	leche con chocolate en polvo con leche entera
+matvaretabellen:01.340	Cocoa, prepared from instant powder and milk	leche con chocolate en polvo
+matvaretabellen:01.341	Cheese, fermented skimmed milk, granular, caraway spiced	queso pultost
+matvaretabellen:01.342	Ice cream, dairy, vanilla, 15 % cream	helado de vainilla 15 % nata
+matvaretabellen:01.343	Ice cream, dairy, vanilla, > 25 % cream	helado de vainilla más de 25 % nata
+matvaretabellen:01.344	Appenzeller, cheese	queso appenzeller
+matvaretabellen:01.345	Burrata cheese	queso burrata
+matvaretabellen:02.001	Egg, raw	huevo crudo
+matvaretabellen:02.002	Egg white, raw	clara de huevo cruda
+matvaretabellen:02.003	Egg yolk, raw	yema de huevo cruda
+matvaretabellen:02.006	Omelette, fried in fat	tortilla francesa frita
+matvaretabellen:02.007	Omelette, fried without fat	tortilla francesa a la plancha
+matvaretabellen:02.008	Egg, scrambled, fried in fat	huevos revueltos fritos
+matvaretabellen:02.009	Egg, scrambled, fried without fat	huevos revueltos sin grasa
+matvaretabellen:02.010	Egg-flip	eggedosis
+matvaretabellen:02.025	Egg, fried in fat	huevo frito
 matvaretabellen:02.026	Egg, boiled	huevo cocido
+matvaretabellen:02.030	Egg, organic, raw	huevo ecológico crudo
+matvaretabellen:02.037	Egg, organic, boiled	huevo ecológico cocido
+matvaretabellen:02.038	Egg, organic, fried in fat	huevo ecológico frito
+matvaretabellen:02.039	Egg white, boiled	clara de huevo cocida
+matvaretabellen:02.040	Egg yolk, boiled	yema de huevo cocida
+matvaretabellen:03.001	Duck, meat and skin, raw	pato con piel crudo
+matvaretabellen:03.002	Goose, meat and skin, raw	oca con piel cruda
+matvaretabellen:03.003	Hen, meat and skin, raw	gallina con piel cruda
+matvaretabellen:03.004	Turkey, meat and skin, raw	pavo con piel crudo
+matvaretabellen:03.005	Turkey, with skin, roasted	pavo con piel asado
+matvaretabellen:03.006	Chicken, with skin, raw	pollo con piel crudo
+matvaretabellen:03.007	Chicken, with skin, roasted	pollo con piel asado
+matvaretabellen:03.008	Ptarmigan, meat, raw	perdiz nival cruda
+matvaretabellen:03.014	Lamb, leg, for roast, raw	pierna de cordero cruda
+matvaretabellen:03.029	Lamb, leg, cured, dried, smoked	fenalår
+matvaretabellen:03.031	Mutton, for stewing, cured, raw	carne de oveja ligeramente salada cruda
+matvaretabellen:03.033	Whale, raw	carne de ballena cruda
+matvaretabellen:03.037	Veal, for roast, raw	ternera para asar cruda
+matvaretabellen:03.039	Veal, chops, raw	chuletas de ternera crudas
+matvaretabellen:03.044	Rabbit, raw	conejo crudo
+matvaretabellen:03.051	Beef, bottom round, silverside, stewing, raw	ternera para estofado cruda
+matvaretabellen:03.054	Beef, rib-eye steak, raw	entrecot de ternera crudo
+matvaretabellen:03.056	Beef, inside round, topside, raw	tapa de ternera cruda
+matvaretabellen:03.057	Beef, chuck roll, raw	aguja de ternera cruda
+matvaretabellen:03.058	Beef, tenderloin, raw	solomillo de ternera crudo
+matvaretabellen:03.064	Beef, top sirloin butt, raw	babilla de ternera cruda
+matvaretabellen:03.066	Beef, striploin, raw	lomo de ternera crudo
+matvaretabellen:03.083	Pork, neck chops, raw	chuletas de cuello de cerdo crudas
+matvaretabellen:03.086	Pork, tenderloin, loinback, raw	lomo alto de cerdo crudo
+matvaretabellen:03.090	Pork, rib, side bacon, raw	panceta de cerdo con costilla cruda
+matvaretabellen:03.103	Smoked picnic shoulder, Bayonne	jamón de Bayona cocido
+matvaretabellen:03.105	Pork loin, smoked	lomo de cerdo ahumado
+matvaretabellen:03.106	Ham, boiled	jamón cocido
+matvaretabellen:03.109	Ham, cured	jamón curado Westfalia
+matvaretabellen:03.111	Ham, smoke-cured	spekeskinke
+matvaretabellen:03.112	Moose, roasting, raw	carne de alce cruda
+matvaretabellen:03.113	Hare, raw	liebre cruda
+matvaretabellen:03.114	Fallow deer, raw	gamo crudo
+matvaretabellen:03.115	Reindeer, shoulder, roasting, raw	paleta de reno cruda
+matvaretabellen:03.117	Blood, beef, raw	sangre de vacuno cruda
+matvaretabellen:03.118	Heart, raw	corazón crudo
+matvaretabellen:03.120	Liver, lamb, raw	hígado de cordero crudo
+matvaretabellen:03.121	Liver, reindeer, raw	hígado de reno crudo
+matvaretabellen:03.122	Liver, beef, raw	hígado de vacuno crudo
+matvaretabellen:03.123	Liver, pork, raw	hígado de cerdo crudo
+matvaretabellen:03.126	Beef, minced meat, 4,5 % fat, raw	carne picada de ternera para hamburguesa 4,5 % cruda
+matvaretabellen:03.127	Beef, minced meat, 14 % fat, with salt and water, raw	carne picada de ternera 14 % con sal y agua cruda
+matvaretabellen:03.128	Pork and beef, minced meat, raw	carne picada de cerdo y vacuno cruda
+matvaretabellen:03.129	Meat, minced beef, salt, water or milk, spices and starch added	carne picada con aditivos cruda
+matvaretabellen:03.132	Hamburger, raw	hamburguesa cruda
+matvaretabellen:03.133	Meat rissoles, beef, industrially made	kjøttkaker compradas
+matvaretabellen:03.134	Meat loaf, roasted	pastel de carne al horno
+matvaretabellen:03.135	Pork patties, fried	medisterkaker fritas
+matvaretabellen:03.136	Beef patties, raw	karbonader crudas
+matvaretabellen:03.137	Beef patties, industrially made	karbonader compradas
+matvaretabellen:03.138	Beef, minced meat, fried without fat	carne picada de ternera a la plancha
 matvaretabellen:03.139	Beef, minced meat, max 6 % fat, fried without fat	carne picada de ternera 6 % a la plancha
+matvaretabellen:03.141	Pork, minced meat, fried without fat	carne picada de cerdo a la plancha
+matvaretabellen:03.144	Sausage, grill	salchichas para parrilla
+matvaretabellen:03.145	Sausage, meat, industrially made	salchicha de carne comprada
+matvaretabellen:03.146	Sausage, meat, lean	salchicha de carne magra
+matvaretabellen:03.147	Sausage, knakkpølse	knakkpølse
+matvaretabellen:03.148	Sausage, pork, smoked and unsmoked	medisterpølse
+matvaretabellen:03.149	Sausage, cocktail	salchichas cocktail
+matvaretabellen:03.150	Sausage, Frankfurter/Wiener	salchichas de Viena
+matvaretabellen:03.152	Sausage, Swedish, Falukorv	falukorv
+matvaretabellen:03.153	Sausage spread, pork, high fat content	fleskepølse
+matvaretabellen:03.154	Sausage, mutton, smoked	fårepølse
+matvaretabellen:03.155	Veal, roll	rollo de ternera
+matvaretabellen:03.157	Liver paste, oven-baked	paté de hígado al horno
+matvaretabellen:03.159	Sausage, cured, Morr	morrpølse
+matvaretabellen:03.161	Beef, rolled	rollo de vacuno
+matvaretabellen:03.162	Sausage, reindeer	salchicha de reno
+matvaretabellen:03.163	Sausage, salami	salami
+matvaretabellen:03.164	Sausage, bologna	servelat
+matvaretabellen:03.166	Sausage, fermented, Stabbur	stabburpølse
+matvaretabellen:03.167	Head cheese	sylte
+matvaretabellen:03.170	Black pudding, with animal blood, roasted	morcilla al horno
+matvaretabellen:03.171	Lungs, hashed, industrially made	lungemos comprado
+matvaretabellen:03.177	Meat rissoles, canned	albóndigas en conserva
+matvaretabellen:03.181	Meat rissoles, reindeer, canned	albóndigas de reno en conserva
+matvaretabellen:03.188	Ham, boiled, canned	paleta cocida en conserva
+matvaretabellen:03.198	Sausage, Frankfurter/Wiener, lean	salchichas de Viena magras
+matvaretabellen:03.199	Sausage, grill, lean	salchichas para parrilla magras
+matvaretabellen:03.202	Sausage, bologna, lean	servelat magro
+matvaretabellen:03.204	Turkey, breast, without skin, raw	filete de pechuga de pavo sin piel crudo
+matvaretabellen:03.205	Chicken, fillet, without skin, raw	filete de pollo sin piel crudo
+matvaretabellen:03.206	Hen, with skin, boiled	gallina con piel cocida
 matvaretabellen:03.208	Pork, inside round, raw	tapa de cerdo cruda
+matvaretabellen:03.209	Pork, tenderloin, raw	solomillo de cerdo crudo
+matvaretabellen:03.210	Pork, striploin, raw	lomo de cerdo crudo
+matvaretabellen:03.211	Lamb, inside round, raw	tapa de cordero cruda
+matvaretabellen:03.212	Lamb striploin, raw	lomo de cordero crudo
+matvaretabellen:03.213	Lamb, tenderloin, raw	solomillo de cordero crudo
+matvaretabellen:03.214	Lamb, roll	rollo de cordero
 matvaretabellen:03.215	Lamb, shoulder, for roast, raw	paleta de cordero cruda
+matvaretabellen:03.218	Lamb, for mutton and cabbage stew (Fårikål), raw	cordero para fårikål crudo
+matvaretabellen:03.219	Beef, roast of nuckle, raw	redondo de ternera crudo
+matvaretabellen:03.221	Beef, clod (shoulder), for roast, without bone, raw	paleta de ternera para asar sin hueso cruda
+matvaretabellen:03.224	Hen, fillet, raw	filete de gallina sin piel crudo
+matvaretabellen:03.225	Chicken, leg (thigh and drumstick), with skin, raw	cuarto trasero de pollo con piel crudo
+matvaretabellen:03.231	Duck, without skin, raw	pato sin piel crudo
+matvaretabellen:03.232	Duck, without skin, roasted	pato sin piel asado
+matvaretabellen:03.233	Duck, with skin, roasted	pato con piel asado
+matvaretabellen:03.234	Goose, with skin, roasted	oca con piel asada
+matvaretabellen:03.236	Hen, fillet, boiled	filete de gallina cocido
+matvaretabellen:03.237	Hen, without skin, raw	gallina sin piel cruda
+matvaretabellen:03.239	Turkey, without skin, raw	pavo sin piel crudo
+matvaretabellen:03.240	Turkey, without skin, roasted	pavo sin piel asado
+matvaretabellen:03.241	Turkey breast, without skin, roasted	pechuga de pavo sin piel asada
+matvaretabellen:03.242	Chicken fillet, fried in fat	filete de pollo frito
+matvaretabellen:03.244	Chicken, leg (thigh and drumstick), with skin, roasted	cuarto trasero de pollo con piel asado
+matvaretabellen:03.245	Goose, without skin, roasted	oca sin piel asada
+matvaretabellen:03.246	Chicken, without skin, roasted	pollo sin piel asado
+matvaretabellen:03.249	Ptarmigan, meat, roasted	perdiz nival asada
+matvaretabellen:03.250	Moussaka, with minced meat	musaka con carne picada
+matvaretabellen:03.251	Lamb and cabbage stew, fårikål	fårikål
+matvaretabellen:03.252	Wienerschnitzel, raw	escalope vienés empanado crudo
+matvaretabellen:03.254	Lasagne, with minced meat	lasaña con carne picada
+matvaretabellen:03.256	Casserole, with beef, tomato, sour cream	ternera stroganoff
+matvaretabellen:03.257	Lamb stew, meat and vegetables, in sauce	fricasé de cordero
+matvaretabellen:03.259	Liver, chicken, raw	hígado de pollo crudo
+matvaretabellen:03.260	Reindeer, meat, smoked	carne de reno ahumada
+matvaretabellen:03.261	Quiche, with cheese and ham	quiche de jamón y queso
+matvaretabellen:03.265	Lamb, leg, roasted	pierna de cordero asada
+matvaretabellen:03.266	Lamb, chops, raw	chuletas de cordero crudas
+matvaretabellen:03.267	Lamb, cutlet, fried without fat	chuleta de cordero a la plancha
+matvaretabellen:03.268	Beef, rib-eye steak, roasted without fat	entrecot de ternera a la plancha
+matvaretabellen:03.271	Beef, striploin, roasted without fat	lomo de ternera a la plancha
+matvaretabellen:03.272	Pork, inside round, roasted without fat	tapa de cerdo a la plancha
+matvaretabellen:03.274	Pork, neck chops, roasted without fat	chuletas de cuello de cerdo a la plancha
+matvaretabellen:03.280	Beef, boiled	vacuno cocido
+matvaretabellen:03.281	Beef, roastbeef, lightly roasted without fat	rosbif poco hecho
+matvaretabellen:03.288	Stew, with beef, potatoes and vegetables	lapskaus claro de vacuno
+matvaretabellen:03.292	Chicken, without skin, raw	pollo sin piel crudo
+matvaretabellen:03.302	Casserole, with chicken, tomato, onion and mushroom	guiso de pollo con tomate, cebolla y setas
+matvaretabellen:03.305	Goose, without skin, raw	oca sin piel cruda
+matvaretabellen:03.307	Chicken nuggets, deep fried, fast food restaurant	nuggets de pollo fritos de fast food
+matvaretabellen:03.308	Burger, single, with bread, dressing etc, fast food restaurant	hamburguesa de fast food
+matvaretabellen:03.309	Cheese burger, single, with bread, cheese, dressing etc, fast food restaurant	hamburguesa con queso de fast food
+matvaretabellen:03.310	Burger, double, with bread, cheese, lettuce, dressing etc, fast food restaurant	hamburguesa doble de fast food
+matvaretabellen:03.311	Burger, extra large, with bread, cheese etc, fast food restaurant	hamburguesa grande de fast food
+matvaretabellen:03.312	Chicken burger, breaded, fried, with bread, lettuce, dressing, fast food restaurant	hamburguesa de pollo empanada de fast food
+matvaretabellen:03.313	Pasta dish, with turkey and cheese sauce, frozen, industrially made	pasta con pavo en salsa de queso comprada
+matvaretabellen:03.314	Pasta, with meat sauce, Bolognese, frozen, industrially made	pasta boloñesa comprada
+matvaretabellen:03.315	Lasagne, with minced meat, frozen, industrially made	lasaña con carne picada comprada
+matvaretabellen:03.317	Hash, with potato, meat, onion, frozen, industrially made	pytt i panne comprado
+matvaretabellen:03.318	Sausage, grill, turkey and chicken	salchichas para parrilla de pavo y pollo
+matvaretabellen:03.320	Chicken nuggets, deep fried, industrially made	nuggets de pollo fritos comprados
+matvaretabellen:03.321	Schnitzel, chicken, with cheese, breaded, raw	filetes empanados de pollo y queso crudos
+matvaretabellen:03.322	Ham, turkey, with spices	rollo de pavo especiado
+matvaretabellen:03.323	Ham, turkey, smoked	fiambre de pavo ahumado
+matvaretabellen:03.326	Soup, with meat, potatoes and vegetables, canned	sodd en conserva
+matvaretabellen:03.330	Chicken, thigh (leg without drumstick), with skin, raw	contramuslo de pollo con piel crudo
+matvaretabellen:03.331	Chicken, drumstick, with skin, raw	muslo de pollo con piel crudo
+matvaretabellen:03.332	Chicken, leg (thigh and drumstick), without skin, raw	cuarto trasero de pollo sin piel crudo
+matvaretabellen:03.333	Chicken, thigh (leg without drumstick), without skin, raw	contramuslo de pollo sin piel crudo
+matvaretabellen:03.334	Chicken, drumstick, without skin, raw	muslo de pollo sin piel crudo
+matvaretabellen:03.345	Beef, trimmed fat, raw	grasa de vacuno recortada cruda
+matvaretabellen:03.348	Pork, minced meat, 9 % fat, raw	carne picada de cerdo 9 % cruda
+matvaretabellen:03.351	Reindeer, meat in slices, raw, frozen	reinsdyrskav
+matvaretabellen:03.352	Reindeer, meat, raw, dried	carne de reno seca cruda
+matvaretabellen:03.353	Pork, roll, sliced	rollo de panceta en lonchas
+matvaretabellen:03.354	Roast beef, cold cuts, sliced	rosbif en lonchas
+matvaretabellen:03.356	Sausage, chicken and turkey, lean	salchicha de pollo y pavo magra
+matvaretabellen:03.357	Sausage, grill, with cheese	salchichas para parrilla con queso
+matvaretabellen:03.358	Moose roast, roasted	pierna de alce asada
+matvaretabellen:03.361	Sausage, chicken and turkey, with cheese	salchicha de pollo y pavo con queso
+matvaretabellen:03.362	Roe deer, meat, raw	corzo crudo
 matvaretabellen:03.363	Sausage, chorizo	chorizo
+matvaretabellen:03.364	Sausage, salsiccia	salsiccia
+matvaretabellen:03.365	Wild boar, meat, raw	jabalí crudo
+matvaretabellen:03.366	Chicken, minced meat, 8 % fat, raw	carne picada de pollo 8 % cruda
+matvaretabellen:03.373	Chicken, with skin, raw, landkylling	pollo campero con piel crudo
+matvaretabellen:03.390	Chicken, skin, raw	piel de pollo cruda
+matvaretabellen:03.391	Chicken, with skin, landkylling, roasted	pollo campero con piel asado
+matvaretabellen:03.392	Chicken, leg (thigh and drumstick), without skin, roasted	cuarto trasero de pollo sin piel asado
+matvaretabellen:03.393	Chicken, thigh (leg without drumstick), with skin, roasted	contramuslo de pollo con piel asado
+matvaretabellen:03.394	Chicken, thigh (leg without drumstick), without skin, roasted	contramuslo de pollo sin piel asado
+matvaretabellen:03.395	Chicken, drumstick, with skin, roasted	muslo de pollo con piel asado
+matvaretabellen:03.396	Chicken, drumstick, without skin, roasted	muslo de pollo sin piel asado
 matvaretabellen:03.397	Beef, minced meat, 13 % fat, without salt and water, raw	carne picada de ternera 13 % cruda
+matvaretabellen:03.418	Chicken, fillet, simmered	filete de pollo cocido
+matvaretabellen:03.425	Sausage, salami, 38 % fat	salami 38 %
+matvaretabellen:03.426	Sausage, salami, 22 % fat	salami 22 %
+matvaretabellen:03.428	Sausage, salami, lean	salami magro
+matvaretabellen:03.434	Liver paste, canned	paté de hígado en conserva
+matvaretabellen:03.436	Liver paste, chicken, oven-baked	paté de pollo al horno
+matvaretabellen:03.437	Liver paste, chicken, canned	paté de pollo en conserva
+matvaretabellen:03.438	Liver paste, chicken	paté de pollo
+matvaretabellen:03.451	Sausage, Frankfurter/Wiener, turkey and chicken	salchichas de Viena de pavo y pollo
+matvaretabellen:03.457	Meat rissoles	albóndigas
+matvaretabellen:03.458	Meat balls, chicken	albóndigas de pollo
+matvaretabellen:03.459	Meat rissoles, turkey and chicken	albóndigas de pavo y pollo
+matvaretabellen:03.462	Chili con carne	chili con carne
+matvaretabellen:03.463	Pasta bolognese	pasta boloñesa
+matvaretabellen:03.464	Bidos, home-made	bidos casero
+matvaretabellen:03.465	Shephards' pie	pastel del pastor
+matvaretabellen:03.466	Hen stew, home-made	fricasé de gallina casero
+matvaretabellen:03.467	Sausages, with bun	salchichas en masa
+matvaretabellen:03.469	Liver paste, coarse, Danish type	paté de hígado danés
+matvaretabellen:03.470	Liver paste, unspecified	paté de hígado
+matvaretabellen:03.471	Liver paste	paté de hígado fresco
+matvaretabellen:03.475	Pepperoni	pepperoni
+matvaretabellen:03.476	Beef, meat, raw	vacuno crudo
+matvaretabellen:03.477	Liver paste, with bacon	paté de hígado con beicon
+matvaretabellen:03.478	Chicken, minced meat, fried without fat	carne picada de pollo a la plancha
+matvaretabellen:03.479	Lamb, minced meat, 14 % fat, raw	carne picada de cordero 14 % cruda
+matvaretabellen:03.480	Lamb, minced meat, fried without fat	carne picada de cordero a la plancha
+matvaretabellen:03.481	Chicken fillet, fried without fat	filete de pollo a la plancha
+matvaretabellen:03.482	Lamb, shoulder, roasted	paleta de cordero asada
+matvaretabellen:03.483	Lamb, inside round, roasted	tapa de cordero a la plancha
+matvaretabellen:03.484	Lamb, tenderloin, roasted	solomillo de cordero a la plancha
+matvaretabellen:03.485	Lamb, sirloin, raw	lomo alto de cordero crudo
+matvaretabellen:03.486	Lamb, sirloin, roasted without fat	lomo alto de cordero a la plancha
+matvaretabellen:03.487	Lamb, rib, raw	costillas de cordero crudas
+matvaretabellen:03.488	Lamb, striploin, roasted without fat	lomo bajo de cordero a la plancha
+matvaretabellen:03.490	Pork, bottom round, boiled	cerdo para estofado cocido
+matvaretabellen:03.491	Svin, bottom round, raw	cerdo para estofado crudo
+matvaretabellen:03.492	Pork, tenderloin, roasted without fat	solomillo de cerdo a la plancha
+matvaretabellen:03.493	Pork, silverside, raw	contra de cerdo cruda
 matvaretabellen:03.494	Pork, tenderloin, loinback, boiled	solomillo de cerdo cocido
+matvaretabellen:03.495	Pork, tenderloin, loinback, roasted without fat	lomo alto de cerdo al horno
+matvaretabellen:03.496	Pork, striploin, roasted without fat	lomo de cerdo a la plancha
+matvaretabellen:03.497	Kebab meat, prepared, restaurant	carne de kebab preparada de restaurante
+matvaretabellen:03.498	Reindeer, roasting, raw	reno para asar crudo
+matvaretabellen:03.499	Reindeer, meat, warm smoked	carne de reno ahumada en caliente
+matvaretabellen:03.500	Reindeer, meat, cold smoked	carne de reno ahumada en frío
+matvaretabellen:03.501	Moose, minced, raw	carne picada de alce cruda
+matvaretabellen:03.502	Moose, sirloin, raw	lomo de alce crudo
+matvaretabellen:03.503	Moose, sirloin, roasted	lomo de alce asado
+matvaretabellen:03.504	Moose, chuck, raw	aguja de alce cruda
+matvaretabellen:03.505	Moose, chuck, roasted	aguja de alce asada
+matvaretabellen:03.506	Meat rissoles, Swedish	albóndigas suecas
+matvaretabellen:03.507	Sausage, salami, Danish	salami danés
+matvaretabellen:03.508	Kebab durum	kebab dürüm
+matvaretabellen:03.509	Pork, bacon, side bacon, pan-fried	beicon frito
+matvaretabellen:03.510	Pita with kebab, salad and dressing	pita con kebab, ensalada y salsa
+matvaretabellen:03.511	Butter chicken, industrially made	butter chicken comprado
+matvaretabellen:03.512	Serrano ham	jamón serrano
+matvaretabellen:03.513	Schwarzwald ham	jamón de la Selva Negra
+matvaretabellen:03.514	Casserole, with moose meat, potatoes and vegetables	guiso de alce
+matvaretabellen:03.515	Spring roll, with chicken and vegetables, industrially made	rollitos de primavera de pollo y verduras comprados
+matvaretabellen:03.516	Spring rolls, fresh, with chicken, noodles and vegetables	rollitos de primavera frescos de pollo, fideos y verduras
+matvaretabellen:04.001	Halibut, Greenland, raw/smoked	halibut de Groenlandia crudo o ahumado
+matvaretabellen:04.003	Sprat, raw	esquirones crudos
+matvaretabellen:04.004	Cusk, tusk, raw	brosme crudo
+matvaretabellen:04.005	Plaice, raw	solla cruda
+matvaretabellen:04.006	Pike northern, raw	lucio crudo
+matvaretabellen:04.008	Garfish, raw	agujón crudo
+matvaretabellen:04.009	Whiting, raw	pescadilla cruda
+matvaretabellen:04.011	Haddock, slices, smoked, raw	eglefino ahumado en lonchas
+matvaretabellen:04.014	Halibut, Atlantic, raw	fletán crudo
+matvaretabellen:04.015	Salmon, ocean, raw	salmón salvaje crudo
+matvaretabellen:04.018	Salmon, smoked	salmón ahumado
+matvaretabellen:04.019	Ling, raw	maruca cruda
+matvaretabellen:04.020	Fish, alkaline cured, soaked in water, Lutefisk	lutefisk
+matvaretabellen:04.021	Pollack, raw	abadejo crudo
+matvaretabellen:04.022	Mackerel, February - June, raw	caballa magra cruda
+matvaretabellen:04.023	Mackerel, August - December, raw	caballa grasa cruda
+matvaretabellen:04.024	Mackerel, warm smoked	caballa ahumada en caliente
+matvaretabellen:04.029	Saithe, raw	carbonero crudo
+matvaretabellen:04.030	Powan, raw	corégono crudo
+matvaretabellen:04.033	Herring, in spicy marinade	arenque en adobo especiado
+matvaretabellen:04.037	Catfish, raw	pez lobo crudo
+matvaretabellen:04.038	Cod, wild, raw	bacalao salvaje crudo
+matvaretabellen:04.039	Cod, slices, raw	bacalao en lonchas crudo
+matvaretabellen:04.041	Stockfish, dried fish	stockfish
+matvaretabellen:04.042	Cod, lightly salted, raw	bacalao ligeramente salado crudo
+matvaretabellen:04.043	Tuna, raw	atún crudo
+matvaretabellen:04.045	Redfish, raw	gallineta cruda
+matvaretabellen:04.046	Redfish, cured, raw	gallineta ligeramente salada cruda
+matvaretabellen:04.047	Trout, ocean, raw	trucha de mar cruda
+matvaretabellen:04.048	Perch, raw	perca de río cruda
+matvaretabellen:04.049	Eel, raw	anguila cruda
+matvaretabellen:04.050	Eel, smoked	anguila ahumada
+matvaretabellen:04.051	Cod liver, raw	hígado de bacalao crudo
+matvaretabellen:04.052	Cod roe, raw	huevas de bacalao crudas
+matvaretabellen:04.053	Mussel, blue, raw	mejillones crudos
+matvaretabellen:04.054	Lobster, boiled	bogavante cocido
+matvaretabellen:04.057	Shrimps, boiled	gambas cocidas
+matvaretabellen:04.058	Oyster, common, raw	ostra cruda
+matvaretabellen:04.061	Fish cakes, industrially made	fiskekaker compradas
+matvaretabellen:04.062	Fish burger, lean fish	hamburguesa de pescado magro
+matvaretabellen:04.063	Fish pudding	fiskepudding
+matvaretabellen:04.068	Plaice, fillet, rolled in breadcrumbs, raw	solla filete empanada cruda
+matvaretabellen:04.069	Saithe, fillet, rolled in breadcrumbs, raw	carbonero filete empanado crudo
+matvaretabellen:04.070	Cod, fillet, rolled in breadcrumbs, raw	bacalao filete empanado crudo
+matvaretabellen:04.071	Saithe, fillet, rolled in flour, with fried onion, frozen, industrially made	carbonero enharinado con cebolla frita comprado
+matvaretabellen:04.075	Anchovies, canned	anchoas en conserva
+matvaretabellen:04.076	Mussel, blue, in brine, drained	mejillones en salmuera escurridos
+matvaretabellen:04.079	Fish balls, canned, drained	fiskeboller escurridas en conserva
+matvaretabellen:04.086	Anchovy fillets, canned	bocados de arenque en conserva
+matvaretabellen:04.087	Caviar spread, cod roe	pasta de huevas de capelán
+matvaretabellen:04.089	Caviar, capelin roe	caviar de huevas de bacalao
+matvaretabellen:04.091	Crab, plain, canned	cangrejo al natural en conserva
+matvaretabellen:04.097	Mackerel fillet, in tomato sauce, 70 % mackerel, canned	caballa en tomate 70 % en conserva
+matvaretabellen:04.098	Shrimps, in brine, drained	gambas en salmuera escurridas
+matvaretabellen:04.100	Cod roe, compressed, canned	huevas de bacalao prensadas en conserva
+matvaretabellen:04.101	Roe paste, canned	paté de huevas e hígado
+matvaretabellen:04.106	Tuna, in jelly, canned	atún en gelatina en conserva
+matvaretabellen:04.107	Tuna, in oil, drained, canned	atún en aceite escurrido en conserva
+matvaretabellen:04.108	Tuna in water, drained, canned	atún al natural escurrido en conserva
+matvaretabellen:04.110	Haddock, raw	eglefino crudo
+matvaretabellen:04.111	Dogfish, raw	mielga cruda
+matvaretabellen:04.112	Turbot, raw	rodaballo crudo
+matvaretabellen:04.113	Lemon sole, raw	gallo limón crudo
+matvaretabellen:04.114	Scallop, raw	vieira cruda
+matvaretabellen:04.115	Blue ling, raw	maruca azul cruda
+matvaretabellen:04.116	Porbeagle, mackerel shark, raw	marrajo crudo
+matvaretabellen:04.117	Char, raw	salvelino crudo
+matvaretabellen:04.118	Dover sole, raw	lenguado crudo
+matvaretabellen:04.119	Skate (ray), raw	raya cruda
+matvaretabellen:04.120	Conger eel, raw	congrio crudo
+matvaretabellen:04.121	Crawfish, boiled	cangrejos de río cocidos
+matvaretabellen:04.123	Herring, smoked, Bøkling	bøkling
+matvaretabellen:04.200	Plaice, filled, pre-fried, frozen	solla rellena prefrita congelada
+matvaretabellen:04.203	Cod, filled, pre-fried, frozen	bacalao relleno prefrito congelado
+matvaretabellen:04.207	Shrimp, battered, pre-fried, frozen	gambas rebozadas prefritas congeladas
+matvaretabellen:04.208	Squid, battered, pre-fried, frozen	calamar rebozado prefrito congelado
+matvaretabellen:04.210	Fish balls, industrially made	fiskeboller compradas
+matvaretabellen:04.211	Angler fish, raw	rape crudo
+matvaretabellen:04.218	Haddock, simmered	eglefino cocido
+matvaretabellen:04.220	Salmon, farmed, raw	salmón de piscifactoría crudo
+matvaretabellen:04.221	Haddock, smoked, slices, simmered	eglefino ahumado en lonchas cocido
+matvaretabellen:04.222	Halibut, Atlantic, slices, simmered	fletán en lonchas cocido
+matvaretabellen:04.223	Halibut Atlantic, fillet, rolled in flour, fried in fat	fletán filete enharinado frito
+matvaretabellen:04.224	Salmon, ocean, simmered	salmón salvaje cocido
+matvaretabellen:04.225	Salmon, farmed, slices, simmered	salmón de piscifactoría en lonchas cocido
+matvaretabellen:04.226	Salmon, farmed, slices, rolled in flour, fried in fat	salmón de piscifactoría enharinado frito
+matvaretabellen:04.227	Mackerel, August - December, simmered	caballa grasa cocida
+matvaretabellen:04.228	Mackerel, August - December, fried in fat	caballa grasa frita
+matvaretabellen:04.229	Mackerel, February - June, simmered	caballa magra cocida
+matvaretabellen:04.230	Mackerel, February - June, fried in fat	caballa magra frita
+matvaretabellen:04.231	Plaice, fillet, simmered	solla filete cocida
+matvaretabellen:04.232	Plaice, fillet, rolled in flour, fried in fat	solla filete enharinada frita
+matvaretabellen:04.233	Plaice, fillet, rolled in breadcrumbs, fried in fat	solla filete empanada frita
+matvaretabellen:04.234	Char, fried without fat	salvelino a la plancha
+matvaretabellen:04.235	Char, rolled in flour, fried in fat	salvelino enharinado frito
+matvaretabellen:04.236	Saithe, simmered	carbonero cocido
+matvaretabellen:04.241	Saithe, fillet, rolled in breadcrumbs, fried in fat	carbonero filete empanado frito
+matvaretabellen:04.246	Catfish, fillet, simmered	pez lobo filete cocido
+matvaretabellen:04.247	Catfish, fillet, rolled in flour, fried in fat	pez lobo filete enharinado frito
+matvaretabellen:04.248	Cod, slices, simmered	bacalao en lonchas cocido
+matvaretabellen:04.249	Cod, fillet, rolled in flour, fried in fat	bacalao filete enharinado frito
+matvaretabellen:04.250	Angler fish, fillet, simmered	rape filete cocido
+matvaretabellen:04.251	Cod, fillet, rolled in breadcrumbs, fried in fat	bacalao filete empanado frito
+matvaretabellen:04.252	Cod, cured, simmered	bacalao ligeramente salado cocido
+matvaretabellen:04.253	Cod, split, salted and dried	klippfisk
+matvaretabellen:04.255	Salmon fillet, dry salted, with sugar and spices	gravlax
+matvaretabellen:04.256	Trout, farmed, raw	trucha de piscifactoría cruda
+matvaretabellen:04.257	Trout, farmed, simmered	trucha de piscifactoría cocida
+matvaretabellen:04.258	Snails, canned	caracoles en conserva
+matvaretabellen:04.259	Trout, sea, rolled in flour, fried in fat	trucha de mar enharinada frita
+matvaretabellen:04.260	Trout fillet, smoked	trucha filete ahumada
+matvaretabellen:04.261	Redfish, cured, slices, simmered	gallineta ligeramente salada en lonchas cocida
+matvaretabellen:04.262	Squid, raw	calamar crudo
+matvaretabellen:04.264	Scallop, fried	vieira frita
+matvaretabellen:04.265	Crabsticks, frozen	palitos de cangrejo congelados
+matvaretabellen:04.266	Redfish, fillet, simmered	gallineta filete cocida
+matvaretabellen:04.267	Trout, farmed, slices, rolled in flour, fried in fat	trucha de piscifactoría enharinada frita
+matvaretabellen:04.268	Fish burger, saithe	hamburguesa de carbonero
+matvaretabellen:04.269	Fish pudding, with cream	fiskepudding con nata
+matvaretabellen:04.270	Fish, lean, minced, milk added, raw	carne picada de pescado magro con leche cruda
+matvaretabellen:04.271	Fish burger, mackerel	hamburguesa de caballa
+matvaretabellen:04.272	Fish burger, salmon	hamburguesa de salmón
+matvaretabellen:04.273	Fish burger, herring	hamburguesa de arenque
+matvaretabellen:04.274	Fish paté, lean fish	paté de pescado magro
+matvaretabellen:04.275	Fish paté, salmon	paté de salmón
+matvaretabellen:04.277	Shrimp, battered, pre-fried, fried in fat	gambas rebozadas fritas
+matvaretabellen:04.278	Plaice, filled, breaded, pre-fried, roasted without fat	solla rellena empanada al horno
+matvaretabellen:04.279	Plaice, filled, breaded, pre-fried, fried in fat	solla rellena empanada frita
+matvaretabellen:04.280	Saithe, fillet, rolled in flour, with onion, fried in fat	carbonero enharinado con cebolla frito
+matvaretabellen:04.281	Cod, breaded, pre-fried, filled, roasted	bacalao relleno empanado al horno
+matvaretabellen:04.282	Cod, filled, breaded, pre-fried, fried in fat	bacalao relleno empanado frito
+matvaretabellen:04.284	Cod, breaded, pre-fried, fried in fat	bacalao empanado prefrito frito
+matvaretabellen:04.285	Tuna, in oil, canned	atún en aceite en conserva
+matvaretabellen:04.286	Saithe, in oil, canned, drained	carbonero en aceite escurrido en conserva
+matvaretabellen:04.287	Herring, pickled, marinated, with mayonnaise and sour cream	arenque marinado en mayonesa y nata agria
+matvaretabellen:04.288	Herring, pickled, marinated, with mustard sauce	arenque marinado en salsa de mostaza
+matvaretabellen:04.290	Herring, pickled, drained	arenque en vinagre escurrido
+matvaretabellen:04.291	Fish gratin, with egg, roasted	gratén de pescado con huevo
+matvaretabellen:04.292	Fish gratin, with egg and macaroni, roasted	gratén de pescado con huevo y macarrones
+matvaretabellen:04.293	Fish gratin, roasted, industrially made	gratén de pescado comprado
+matvaretabellen:04.295	Casserole, with saithe, onion and sweet pepper sauce	guiso de carbonero con cebolla en salsa de pimiento
+matvaretabellen:04.296	Casserole, with cod and tomato	guiso de bacalao con tomate
+matvaretabellen:04.297	Fish in aspic, with fish pudding and shrimps	pescado en gelatina con fiskepudding y gambas
+matvaretabellen:04.298	Fish soup, with white fish, home-made	sopa de pescado blanco casera
+matvaretabellen:04.301	Herring salad, with potatoes	ensalada de arenque con patata
+matvaretabellen:04.302	Squid, boiled	calamar cocido
+matvaretabellen:04.306	Cod, breaded, pre-fried, roasted	bacalao empanado al horno
+matvaretabellen:04.307	Caviar, cod roe with mayonnaise	kaviarmix
+matvaretabellen:04.309	Halibut, Atlantic, slices, smoked, raw	fletán ahumado en lonchas
+matvaretabellen:04.310	Herring, cured, soaked in water	arenque salado remojado
+matvaretabellen:04.311	Mackerel, cold smoked	caballa ahumada en frío
+matvaretabellen:04.312	Cod roe, boiled	huevas de bacalao cocidas
+matvaretabellen:04.313	Squid, battered, pre-fried, fried in fat	calamar rebozado frito
+matvaretabellen:04.314	Fish, dried, alkaline cured, simmered	lutefisk cocido
+matvaretabellen:04.317	Trout, sea, simmered	trucha de mar cocida
+matvaretabellen:04.318	Cod roe, canned, fried in fat	huevas de bacalao en conserva fritas
+matvaretabellen:04.319	Fish fingers, pre-fried, fried in fat	palitos de pescado fritos
+matvaretabellen:04.320	Saithe, fillet, rolled in flour, fried in fat	carbonero filete enharinado frito
+matvaretabellen:04.321	Sprat in tomato sauce, canned	esquirones en tomate en conserva
+matvaretabellen:04.322	Sprat in oil, drained, canned	esquirones en aceite escurridos en conserva
+matvaretabellen:04.323	Fish burger, breaded, fried, with bread, cheese, sauce, fast food restaurant	hamburguesa de pescado empanada de fast food
+matvaretabellen:04.324	Halibut, Atlantic, farmed, raw	fletán de piscifactoría crudo
+matvaretabellen:04.325	Halibut, Atlantic, unspecified, raw	fletán crudo sin especificar
+matvaretabellen:04.326	Cod, farmed, raw	bacalao de piscifactoría crudo
+matvaretabellen:04.327	Cod, unspecified, raw	bacalao crudo
+matvaretabellen:04.330	Salmon spread, 70 % salmon, industrially made	pasta de salmón 70 %
+matvaretabellen:04.331	Sashimi, salmon	sashimi de salmón
+matvaretabellen:04.332	Sashimi, halibut, Atlantic	sashimi de fletán
+matvaretabellen:04.333	Sashimi, tuna	sashimi de atún
+matvaretabellen:04.334	Sushi, nigiri, salmon	nigiri de salmón
+matvaretabellen:04.335	Sushi, nigiri, halibut, Atlantic	nigiri de fletán
+matvaretabellen:04.336	Sushi, nigiri, tuna	nigiri de atún
+matvaretabellen:04.337	Sushi, maki, salmon	maki de salmón
+matvaretabellen:04.338	Sushi, maki, halibut, Atlantic	maki de fletán
+matvaretabellen:04.339	Sushi, maki, tuna	maki de atún
+matvaretabellen:04.340	King prawns, raw	gambones crudos
+matvaretabellen:04.341	Alaska pollock, raw	abadejo de Alaska crudo
+matvaretabellen:04.342	Salmon, fillet, roasted	salmón filete asado
+matvaretabellen:04.343	Salmon, fillet, pan-fried	salmón filete frito
+matvaretabellen:04.344	Pangasius, raw	pangasius crudo
+matvaretabellen:04.345	Cod, fillet, roasted	bacalao filete asado
+matvaretabellen:04.346	Cod, fillet, pan-fried	bacalao filete frito
+matvaretabellen:04.347	Cod, fillet, simmered	bacalao filete cocido
+matvaretabellen:04.348	Cod, breaded, industrially made	bacalao empanado comprado
+matvaretabellen:04.351	Saithe, breaded, industrially made	carbonero empanado comprado
+matvaretabellen:04.352	Fish fingers, pre-fried, industrially made	palitos de pescado comprados
+matvaretabellen:04.360	Fish burger, industrially made	hamburguesa de pescado comprada
+matvaretabellen:04.365	Fish gratin, industrially made	gratén de pescado preparado
+matvaretabellen:04.366	Surimi	surimi
+matvaretabellen:04.367	Periwinkle, common, Norwegian	bígaro
+matvaretabellen:04.368	Sushi, maki, California	maki California
+matvaretabellen:04.369	Sushi, maki, tempura	maki tempura
+matvaretabellen:04.370	Sushi, maki, scampi	maki de cigala
+matvaretabellen:04.371	Sushi, nigiri, scampi	nigiri de cigala
+matvaretabellen:04.372	Sushi, nigiri, scallops	nigiri de vieira
+matvaretabellen:04.373	Caviar, polar	caviar polar
+matvaretabellen:04.374	Lobster tail, in brine, drained	cola de cigala en salmuera escurrida
+matvaretabellen:04.375	Salmon spread, with spring onion and lemon	pasta de salmón con cebolleta y limón
 matvaretabellen:04.378	Mackerel fillet, in tomato sauce, canned	caballa en tomate en lata
+matvaretabellen:04.379	Fish dish, with white sauce, vegetables and potatoes	plukkfisk
+matvaretabellen:04.380	Cusk, tusk, simmered	brosme cocido
+matvaretabellen:04.381	Cusk, tusk, roasted	brosme asado
+matvaretabellen:04.382	Herring, raw	arenque crudo
+matvaretabellen:04.383	Herring, simmered	arenque cocido
+matvaretabellen:04.384	Herring, rolled in flour, fried in fat	arenque enharinado frito
+matvaretabellen:04.385	Ceviche, with salmon, mango and avocado	ceviche de salmón con mango y aguacate
+matvaretabellen:04.386	Ceviche, with cod, mango and avocado	ceviche de bacalao con mango y aguacate
+matvaretabellen:04.387	Shrimps, raw	gambas crudas
+matvaretabellen:04.388	Mussel, blue, steamed	mejillones al vapor
+matvaretabellen:04.389	Mussel, blue, frozen	mejillones congelados
+matvaretabellen:04.390	Snow crab, raw	cangrejo de las nieves crudo
+matvaretabellen:04.391	Snow crab, boiled	cangrejo de las nieves cocido
+matvaretabellen:04.392	Snow crab, roasted	cangrejo de las nieves asado
+matvaretabellen:04.393	King crab, red, boiled	cangrejo real cocido
+matvaretabellen:04.394	Lobster, raw	bogavante crudo
+matvaretabellen:04.395	Lobster, roasted	bogavante asado
+matvaretabellen:04.396	Mackerel fillet, 60 % mackerel, in tomato sauce, canned	caballa en tomate 60 % en conserva
+matvaretabellen:04.397	Spring rolls, fresh, with shrimps, noodles and vegetables	rollitos de primavera frescos de gambas, fideos y verduras
+matvaretabellen:04.398	Crab stuffed shell	caparazón de cangrejo relleno
+matvaretabellen:05.001	Barley, uncooked	cebada
+matvaretabellen:05.002	Barley flour	harina de cebada
+matvaretabellen:05.003	Rolled oats	copos de avena
+matvaretabellen:05.004	Oatmeal	harina de avena
+matvaretabellen:05.005	Millet, grain	mijo
+matvaretabellen:05.006	Wheat flour, wholemeal	harina de trigo integral
+matvaretabellen:05.007	Wheatgerm	germen de trigo
+matvaretabellen:05.009	Wheat, grain	trigo en grano
+matvaretabellen:05.010	Wheat flour, 80 % extraction	harina de trigo
+matvaretabellen:05.012	Linseeds, flax seeds, crushed	semillas de lino trituradas
+matvaretabellen:05.013	Cornmeal	harina de maíz
+matvaretabellen:05.015	Corn starch	maicena
+matvaretabellen:05.016	Pasta, plain, uncooked	pasta seca
+matvaretabellen:05.020	Potato starch	fécula de patata
+matvaretabellen:05.021	Rice, brown, long-grain, uncooked	arroz integral largo
+matvaretabellen:05.022	Rice, white, parboiled, long-grain, uncooked	arroz vaporizado largo
+matvaretabellen:05.023	Rice, white, short-grain, for porridge, uncooked	arroz redondo para gachas
+matvaretabellen:05.024	Rice, white, pre-boiled, uncooked	arroz rápido
 matvaretabellen:05.026	Rye flour, wholemeal	harina de centeno integral
+matvaretabellen:05.027	Rye flour	harina de centeno
+matvaretabellen:05.029	Semolina, wheat meal	sémola de trigo
+matvaretabellen:05.030	Sesame seeds, with shell	sésamo con cáscara
+matvaretabellen:05.033	Corn flakes, Kelloggs	copos de maíz Kellogg's
+matvaretabellen:05.034	Breakfast cereal, wheat, barley, rye, oat, no sugar, 4-korn	cereales de 4 granos sin azúcar
+matvaretabellen:05.036	Puffed wheat, with sugar and honey, Honni Korn	trigo inflado con miel Honni Korn
+matvaretabellen:05.037	Puffed oats	avena inflada
+matvaretabellen:05.039	Puffed rice	arroz inflado
+matvaretabellen:05.041	Bread, 100 % wholemeal flour, skimmed milk, home-made	pan integral 100 % casero
+matvaretabellen:05.042	Bread, 75 % wholemeal flour, water, home-made	pan integral 75 % casero
+matvaretabellen:05.043	Bread, 75 % wholemeal flour, skimmed milk, home-made	pan integral 75 % con leche desnatada casero
+matvaretabellen:05.044	Bread, 2/3 wholemeal flour, water, home-made	pan integral 2/3 casero
+matvaretabellen:05.045	Bread, 2/3 wholemeal flour, skimmed milk, home-made	pan integral 2/3 con leche desnatada casero
+matvaretabellen:05.046	Bread, 50 % wholemeal flour, water, home-made	pan integral 50 % casero
+matvaretabellen:05.047	Bread, 50 % wholemeal flour, skimmed milk, home-made	pan integral 50 % con leche desnatada casero
+matvaretabellen:05.048	Bread, 1/3 wholemeal flour, water, home-made	pan con harina integral 1/3 casero
+matvaretabellen:05.049	Bread, 1/3 wholemeal flour, skimmed milk, home-made	pan con harina integral 1/3 con leche desnatada casero
+matvaretabellen:05.050	Bread, 25 % wholemeal flour, water, home-made	pan con harina integral 25 % casero
+matvaretabellen:05.051	Bread, 25 % wholemeal flour, skimmed milk, home-made	pan con harina integral 25 % con leche desnatada casero
+matvaretabellen:05.052	Bread, white, with water, home-made	pan blanco casero
+matvaretabellen:05.053	Bread, white, with skimmed milk, home-made	pan blanco con leche desnatada casero
+matvaretabellen:05.060	Bread, white (0-25 %), industrially made	pan blanco
+matvaretabellen:05.061	Hamburger bun	pan de hamburguesa
+matvaretabellen:05.062	Pizza crust, no filling	base de pizza
+matvaretabellen:05.063	Hot dog bun	pan de perrito
+matvaretabellen:05.064	Rolls, white, industrially made	panecillos blancos
 matvaretabellen:05.066	Rolls, coarse, 50 % wholemeal flour, skimmed milk	panecillos integrales 50 %
+matvaretabellen:05.067	Rolls, coarse, 75 % wholemeal flour, skimmed milk	panecillos integrales 75 % con leche desnatada caseros
+matvaretabellen:05.068	Flatbread, hard	flatbrød
+matvaretabellen:05.069	Crisp bread, light	pan crujiente claro
+matvaretabellen:05.070	Crisp bread, wholemeal flour, rye, Husman	pan crujiente de centeno Husman
+matvaretabellen:05.071	Crisp bread, with wheat bran	pan crujiente con salvado de trigo
+matvaretabellen:05.073	Rusk	biscotes
+matvaretabellen:05.075	Cracker, Cream cracker	galletas Cream Cracker
+matvaretabellen:05.077	Cracker, wholemeal flour, Kornmo	galletas integrales Kornmo
+matvaretabellen:05.078	Biscuit, sweet, filled	galletas rellenas de crema
+matvaretabellen:05.079	Biscuit, sweet, Marie	galletas María
+matvaretabellen:05.080	Biscuit, sweet, Gjende	galletas Gjende
+matvaretabellen:05.081	Flatbread, soft, sweet, Norwegian, lefse, thick, no filling	tykklefse
+matvaretabellen:05.082	Flatbread, soft, sweet, Norwegian, lefse, thick, filled, industrially made	tykklefse rellena comprada
+matvaretabellen:05.084	Potato flatbread, soft, lompe	lompe
+matvaretabellen:05.086	Waffles, with sour cream, without eggs	gofres con nata agria sin huevo
+matvaretabellen:05.087	Chocolate cake, high fat content (coconut fat)	delfiakake
+matvaretabellen:05.088	Cake, pound, plain, fat reduced	bizcocho bajo en grasa
+matvaretabellen:05.090	Cake, pound, plain, marbled	bizcocho marmolado
+matvaretabellen:05.091	Cake, pound, Danish	bizcocho danés
+matvaretabellen:05.093	Cake, macaroon, Norwegian Prince cake, with apples	fyrstekake con manzanas
+matvaretabellen:05.094	Cake, macaroon, Norwegian Prince cake, with minced almonds	fyrstekake con almendras
+matvaretabellen:05.095	Sweet bun, whole milk	bollo con leche entera casero
+matvaretabellen:05.096	Cake, yeast, sweet	bizcocho de levadura
+matvaretabellen:05.097	Cake, yeast, with dried fruit, Norwegian Christmas cake	bizcocho navideño con fruta seca
+matvaretabellen:05.098	Coconut macaroon	macarrones de coco
+matvaretabellen:05.099	Marzipan ring cake	kransekake
+matvaretabellen:05.100	Yeast ring, sweet, with dried fruit	kringle con fruta seca
+matvaretabellen:05.102	Cake, Napoleon, puff pastry filled with custard, icing on top	milhojas
+matvaretabellen:05.103	Flan case bottom, with minced nuts	base de tarta de frutos secos
+matvaretabellen:05.104	Swiss roll, jam filling	brazo de gitano con mermelada
+matvaretabellen:05.105	Swiss roll, filling made of margarine	brazo de gitano con crema
+matvaretabellen:05.106	Cookie, Christmas, Serinakake	galletas serinakake
+matvaretabellen:05.107	Cake, syrup	bizcocho de sirope
+matvaretabellen:05.108	Cake, chocolate, with icing	tarta de chocolate con glaseado
+matvaretabellen:05.109	Sweet bun, with custard, icing and desiccated coconut	skolebrød
+matvaretabellen:05.110	Doughnut	donuts
+matvaretabellen:05.111	Cake, sponge, plain	bizcocho
+matvaretabellen:05.112	Cake, sponge, layered, filled with whipped cream and jam	tarta de bizcocho con nata y mermelada
+matvaretabellen:05.113	Cake, sponge cake, with custard, jelly and berries	bizcocho con crema, gelatina y bayas
+matvaretabellen:05.115	Tart shell, no filling	base de tarta
+matvaretabellen:05.117	Malt loaf, with raisins	pan de malta con pasas
+matvaretabellen:05.118	Danish pastry, with custard filling	hojaldre con crema pastelera
+matvaretabellen:05.121	Flour, wholemeal, wheat and rye	harina integral de trigo y centeno
+matvaretabellen:05.122	Oatbran	salvado de avena
+matvaretabellen:05.125	Rice, white, parboiled, long-grain, cooked	arroz vaporizado largo cocido
+matvaretabellen:05.126	Sunflower seeds	semillas de girasol
+matvaretabellen:05.127	Porridge, prepared with oats and water	gachas de avena con agua
+matvaretabellen:05.128	Porridge, prepared with rice and low fat milk	gachas de arroz con leche semidesnatada
+matvaretabellen:05.129	Bread, wholemeal flour, wheat and rye, home-made	pan integral de trigo y centeno casero
+matvaretabellen:05.130	Pasta, plain, cooked	pasta cocida
+matvaretabellen:05.131	Pie, apple	tarta de manzana
+matvaretabellen:05.132	Buckwheat flour	harina de trigo sarraceno
+matvaretabellen:05.134	Ginger nuts	galletas de especias
+matvaretabellen:05.135	Biscuit, sweet, Wafer, filled	barquillos rellenos
+matvaretabellen:05.136	Breakfast cereal, oats, fruit, vegetable oil, Crüsli	cereales de avena con fruta Crüsli
+matvaretabellen:05.139	Meringue	merengue
+matvaretabellen:05.140	Cookie, macaroon with oats	galletas de avena macarrón
+matvaretabellen:05.142	Crisp bread, wholemeal flour, with oats	pan crujiente con avena
+matvaretabellen:05.143	Crisp bread, with extra fiber	pan crujiente con fibra extra
+matvaretabellen:05.144	Flatbread, hard, with oats	flatbrød con avena
+matvaretabellen:05.146	Flatbread, hard, home-made style	flatbrød casero
+matvaretabellen:05.147	Sesame seeds, without shell	sésamo sin cáscara
+matvaretabellen:05.148	Crisp bread, wholemeal flour, rye	pan crujiente de centeno integral
+matvaretabellen:05.149	Biscuit, sweet, with oats, chocolate covered	galletas de avena con chocolate
+matvaretabellen:05.150	Biscuit, sweet, with chocolate, for children	galletas infantiles con chocolate
+matvaretabellen:05.151	Biscuit, sweet, for children	galletas infantiles
+matvaretabellen:05.152	Cracker, low-fat, Kaptein	galletas Kaptein
+matvaretabellen:05.153	Biscuit, sweet, cookies, with chocolate and nuts	cookies con chocolate y frutos secos
+matvaretabellen:05.154	Cracker, fatty, salted, Ritz, Seltiner	galletas saladas Ritz
+matvaretabellen:05.156	Wheat flakes, roasted, All-Bran Regular	cereales de salvado All-Bran
+matvaretabellen:05.158	Breakfast cereal, chocolate flavoured	cereales de chocolate
+matvaretabellen:05.170	Squash seeds, pumpkin seeds	semillas de calabaza
+matvaretabellen:05.180	Cream puff, plain, no filling	profiteroles sin relleno
+matvaretabellen:05.182	Chapatis, made with wholemeal flour	chapati integral
+matvaretabellen:05.184	Pumpernickel, extra coarse (75-100 %), rye bread, industrially made	pumpernickel
+matvaretabellen:05.186	Bread, white (0-25%), bake-off, ready-to-eat	pan blanco de masa semielaborada
+matvaretabellen:05.187	Cinnamon roll, home-made	rollito de canela casero
+matvaretabellen:05.188	Pita bread, white, industrially made	pan de pita
+matvaretabellen:05.189	Crisp bread, wholemeal flour, rye, thin, Rugsprø, Finncrisp	pan crujiente de centeno fino
+matvaretabellen:05.190	Crisp bread, gluten-free	pan crujiente sin gluten
+matvaretabellen:05.192	Rusk, white, sweet	kavring
+matvaretabellen:05.193	Rice cake, with salt	tortitas de arroz con sal
 matvaretabellen:05.194	Rice cake, without salt	tortitas de arroz sin sal
+matvaretabellen:05.197	Biscuit, sweet, wholemeal flour, Digestive	galletas Digestive
+matvaretabellen:05.198	Gingersnaps	galletas de jengibre
+matvaretabellen:05.199	Berliner, filled dougnut	berlina rellena
+matvaretabellen:05.200	Cake, sponge, layered, filled with whipped cream and jam, marzipan covered	tarta de mazapán con nata y mermelada
+matvaretabellen:05.201	Cake, chocolate, no icing	tarta de chocolate sin glaseado
+matvaretabellen:05.202	Sweet bun, low-fat milk	bollo con leche semidesnatada casero
+matvaretabellen:05.203	Swedish almond cake, macaroon tea cake	mazarin
+matvaretabellen:05.205	Cake, cheese cake, with bisquit bottom	tarta de queso
+matvaretabellen:05.206	Rolls, white, 100 % wheat flour, skimmed milk	panecillos blancos con leche desnatada caseros
+matvaretabellen:05.207	Sweet bun, with raisins, industrially made	bollo con pasas
+matvaretabellen:05.208	Cake, soft, with minced nuts	bizcocho de frutos secos
+matvaretabellen:05.210	Cake, carrot	bizcocho de zanahoria
+matvaretabellen:05.212	Rice, white, long-grain, uncooked	arroz blanco largo
+matvaretabellen:05.215	Rolls, coarse, bake-off, ready-to-eat	panecillos integrales de masa semielaborada
+matvaretabellen:05.216	Rolls, white, bake-off, ready-to-eat	panecillos blancos de masa semielaborada
+matvaretabellen:05.217	Sweet bun, industrially made	bollo
+matvaretabellen:05.221	Biscuit, sweet, with oats, Bixit	galletas de avena Bixit
+matvaretabellen:05.222	Noodles, wheat, without egg, uncooked	fideos de trigo sin huevo secos
+matvaretabellen:05.223	Rice flour	harina de arroz
+matvaretabellen:05.224	Sorghum	sorgo
+matvaretabellen:05.225	Couscous, uncooked	cuscús
+matvaretabellen:05.226	Pasta, plain, fresh, uncooked	pasta fresca cruda
+matvaretabellen:05.227	Pasta, green, fresh, uncooked	pasta fresca verde cruda
+matvaretabellen:05.229	Pasta, plain, fresh, cooked	pasta fresca cocida
+matvaretabellen:05.231	Buckwheat, grain	trigo sarraceno
+matvaretabellen:05.233	Bulgur, uncooked	bulgur
+matvaretabellen:05.235	Muesli, with fruit and nuts, Energimüsli	muesli con fruta y frutos secos Energimüsli
+matvaretabellen:05.237	Puffed oats, Havrefras	copos de avena inflados Havrefras
+matvaretabellen:05.238	Muesli, with fruit, nuts, sweetened	muesli con fruta y frutos secos dulce
 matvaretabellen:05.239	Corn flakes, sugar coated, Frosties	copos de maíz azucarados Frosties
+matvaretabellen:05.240	Breakfast cereal, wheat and rice, Special K	cereales Special K
+matvaretabellen:05.241	Wheat bran, roasted, sweetened, All-Bran Plus	salvado de trigo All-Bran Plus
+matvaretabellen:05.243	Noodles, wheat, without egg, cooked	fideos de trigo sin huevo cocidos
+matvaretabellen:05.244	Breakfast cereal, wheat, Weetabix	cereales Weetabix
+matvaretabellen:05.245	Porridge, prepared with rice and whole milk	gachas de arroz con leche entera
+matvaretabellen:05.247	Waffles, with egg	gofres con huevo
+matvaretabellen:05.248	Tortilla, corn flour, soft	tortilla de maíz
+matvaretabellen:05.250	Flour, gluten-free, mix for white bread, Toro	harina sin gluten blanca Toro
+matvaretabellen:05.251	Flour, gluten-free, mix for wholemeal bread	harina sin gluten integral Toro
+matvaretabellen:05.252	Couscous, cooked	cuscús cocido
+matvaretabellen:05.253	Pasta, green, fresh, cooked	pasta fresca verde cocida
+matvaretabellen:05.254	Rice, white, pre-boiled, cooked	arroz rápido cocido
+matvaretabellen:05.255	Rice, brown, long-grain, cooked	arroz integral largo cocido
+matvaretabellen:05.262	Bread, gluten-free, white, with water, home-made	pan sin gluten blanco casero
+matvaretabellen:05.263	Bread, gluten-free, coarse, with water, home-made	pan sin gluten integral casero
+matvaretabellen:05.264	Bread, gluten-free, white, with low-fat milk, home-made	pan sin gluten blanco con leche semidesnatada casero
+matvaretabellen:05.265	Bread, gluten-free, coarse, with low-fat milk, home-made	pan sin gluten integral con leche semidesnatada casero
+matvaretabellen:05.266	Sweet bun, gluten-free, low-fat milk	bollo sin gluten con leche semidesnatada casero
+matvaretabellen:05.268	Muffin, with chocolate chips, industrially made	magdalena con pepitas de chocolate
+matvaretabellen:05.271	Rolls, coarse, industrially made	panecillos integrales
 matvaretabellen:05.272	Bread, rye, light (0-25 %), industrially made	pan de centeno claro
+matvaretabellen:05.273	Bread, rye, coarse (50-75 %), industrially made	pan de centeno
+matvaretabellen:05.283	Bread, white (0-25 %), spirally shaped, industrially made	pan blanco en espiral
+matvaretabellen:05.284	Bread, white (0-25 %), squared-shaped, industrially made	pan blanco de molde
+matvaretabellen:05.285	Bulgur, cooked	bulgur cocido
+matvaretabellen:05.286	Sweet bun, skimmed milk	bollo con leche desnatada casero
+matvaretabellen:05.287	Danish pastry ring, filled with minced almonds	kringle vienés con almendra
+matvaretabellen:05.288	Waffles, with egg, no fat added	gofres con huevo sin grasa
+matvaretabellen:05.289	Rice, white, long-grain, cooked	arroz blanco largo cocido
+matvaretabellen:05.291	Custard, vanilla and egg, cake filling	crema pastelera de vainilla
+matvaretabellen:05.292	Chocolate frosting	glaseado de chocolate
+matvaretabellen:05.293	Chocolate butter cream, with butter	crema de mantequilla de chocolate con mantequilla
+matvaretabellen:05.294	Chocolate butter cream, with hard margarine	crema de mantequilla de chocolate con margarina
+matvaretabellen:05.295	Custard, whole milk, vanilla flavour	crema pastelera de vainilla con leche entera
+matvaretabellen:05.299	Frosting, plain	glaseado
+matvaretabellen:05.300	Rolls, white, 100 % wheat flour, water	panecillos blancos caseros
+matvaretabellen:05.301	Rolls, coarse, 75 % wholemeal flour, water	panecillos integrales 75 % caseros
+matvaretabellen:05.302	Rolls, coarse, 50 % wholemeal flour, water	panecillos integrales 50 % caseros
+matvaretabellen:05.304	Rice, white, pre-boiled with 1 % salt, uncooked	arroz rápido con sal
+matvaretabellen:05.305	Rice, Basmati, uncooked	arroz basmati
+matvaretabellen:05.306	Rice, Jasmin, uncooked	arroz jazmín
+matvaretabellen:05.307	Rice, white, for porridge, pre-boiled, uncooked	arroz para gachas rápido
+matvaretabellen:05.308	Biscuit, sweet, filled with jam or fruit	galletas rellenas de mermelada
+matvaretabellen:05.309	Biscuit, sweet, with oats, Sibas	galletas de avena Sibas
+matvaretabellen:05.310	Biscuit, sweet, thin, with oats	galletas finas de avena
+matvaretabellen:05.311	Biscuit, sweet, cookies, with chocolate chips and nuts	cookies con pepitas de chocolate y frutos secos
+matvaretabellen:05.312	Croissant, plain, industrially made	croissant
+matvaretabellen:05.313	Flatbread, soft, sweet, Norwegian, filled, industrially made	lefse rellena comprada
+matvaretabellen:05.314	Cinnamon roll, sugar coated, industrially made	rollito de canela azucarado
+matvaretabellen:05.315	Cinnamon roll, with custard and icing, industrially made	rollito de canela con crema y glaseado
+matvaretabellen:05.316	Danish pastry, filled with jam	hojaldre con mermelada
+matvaretabellen:05.317	Brownies, with icing, industrially made	brownies con glaseado
+matvaretabellen:05.318	Doughnut, with chocolate icing, industrially made	donuts con glaseado de chocolate
+matvaretabellen:05.319	Cake, pound, plain, with icing, industrially made	bizcocho con glaseado
+matvaretabellen:05.320	Cake, pound, plain, no icing, industrially made	bizcocho sin glaseado
+matvaretabellen:05.321	Cake, carrot, with icing, industrially made	bizcocho de zanahoria con crema de queso
+matvaretabellen:05.322	Muffin, blueberry, industrially made	magdalena de arándanos comprada
+matvaretabellen:05.323	Swiss roll, filling made of margarine jelly, industrially made	brazo de gitano con crema comprado
+matvaretabellen:05.324	Cake, chocolate, with icing, industrially made	tarta de chocolate con glaseado comprada
+matvaretabellen:05.325	Pasta, fresh, filled with meat, tortellini, industrially made, uncooked	tortellini de carne crudos
+matvaretabellen:05.326	Pasta, fresh, filled with meat and cheese, Tortellini, industrially made, uncooked	tortellini de carne y queso crudos
+matvaretabellen:05.327	Pasta, fresh, filled with cheese, no sauce, Ravioli, industrially made, uncooked	ravioli de queso crudos
+matvaretabellen:05.330	Noodles, with egg, uncooked	fideos de huevo secos
+matvaretabellen:05.331	Noodles, rice, uncooked	fideos de arroz secos
+matvaretabellen:05.332	Pasta, whole-grain, uncooked	pasta integral seca
+matvaretabellen:05.333	Noodles, with spices, cooked	fideos con especias cocidos
+matvaretabellen:05.334	Noodles, rice, cooked	fideos de arroz cocidos
+matvaretabellen:05.335	Pasta, whole grain, cooked with salt	pasta integral cocida con sal
+matvaretabellen:05.336	Rice, cooked, with salt	arroz rápido cocido con sal
+matvaretabellen:05.337	Rice, Basmati, cooked	arroz basmati cocido
+matvaretabellen:05.338	Rice, Jasmin, cooked	arroz jazmín cocido
+matvaretabellen:05.339	Rice, wild rice, uncooked	arroz salvaje
+matvaretabellen:05.340	Rice, wild rice, cooked	arroz salvaje cocido
+matvaretabellen:05.341	Bread, semi-coarse (25-50 %), industrially made	pan semiintegral
+matvaretabellen:05.342	Bread, coarse (50-75 %), industrially made	pan integral
+matvaretabellen:05.343	Bread, extra coarse (75-100 %), industrially made	pan integral grueso
+matvaretabellen:05.345	Cake, Oreo, prepared from powder with cream and butter	tarta Oreo de preparado
+matvaretabellen:05.346	Cupcakes with icing, prepared from powder with butter	cupcakes con glaseado de preparado
+matvaretabellen:05.349	Waffles, prepared from powder	gofres de preparado
+matvaretabellen:05.350	Waffles, gluten free, prepared from powder, Toro	gofres sin gluten de preparado Toro
+matvaretabellen:05.351	Cake flour mix, gluten-free, powder, Toro	preparado para bizcocho sin gluten Toro
+matvaretabellen:05.352	Cake base, gluten-free, prepared from powder, Toro	base de tarta sin gluten Toro
+matvaretabellen:05.354	Bread, gluten-free, coarse, with soy based beverage, home-made	pan sin gluten integral con bebida de soja casero
+matvaretabellen:05.356	Pancakes, prepared from powder	crepes de preparado
+matvaretabellen:05.360	Bread, semi-coarse (25-50 %), kneipp	pan semiintegral kneipp
+matvaretabellen:05.375	Breakfast cereal, chocolate flavoured, Coco Pops Crunchers	cereales de chocolate Coco Pops Crunchers
+matvaretabellen:05.377	Breakfast cereal, with berries, Blåbærmüsli	muesli con bayas
+matvaretabellen:05.379	Noodles, cellophane, uncooked	fideos de cristal secos
+matvaretabellen:05.380	Chia seeds, dried	semillas de chía
+matvaretabellen:05.381	Tortilla, wheat flour	tortilla de trigo
+matvaretabellen:05.382	Taco shells	tortillas de taco
+matvaretabellen:05.383	Gram flour	harina de garbanzo
+matvaretabellen:05.384	Rice, arborio, risotto rice, uncooked	arroz arborio
+matvaretabellen:05.385	Flatbread, soft, wheat	polarbrød
+matvaretabellen:05.386	Biscuit, sweet, nougat, Ballerina	galletas de turrón Ballerina
+matvaretabellen:05.387	Waffles, coarse	gofres integrales
+matvaretabellen:05.388	Amaranth, uncooked	amaranto
+matvaretabellen:05.392	Bread, coarse (50-75 %), kneipp	pan integral kneipp
 matvaretabellen:05.394	Breakfast cereal, Nestlé Cheerios	Cheerios
+matvaretabellen:05.395	Breakfast cereal, Nestlé Nesquick	cereales Nesquik
+matvaretabellen:05.396	Crisp bread, rye, Ryvita	pan crujiente Ryvita
+matvaretabellen:05.397	Crisp bread, rye and spelt, Sigdal helsprøtt	pan crujiente de centeno y espelta Sigdal Helsprøtt
+matvaretabellen:05.398	Crisp bread, Synnøve Grovkrisp sesamfrø og linfrø	pan crujiente Synnøve Grovkrisp con sésamo y lino
+matvaretabellen:05.399	Crisp bread, Mesterbakeren Original	pan crujiente Mesterbakeren Original
+matvaretabellen:05.400	Muesli, with fruit, Fruktmüsli	muesli con fruta
+matvaretabellen:05.401	Muffin, blueberries	magdalena de arándanos
+matvaretabellen:05.402	Muffin, cocoa	magdalena de cacao
+matvaretabellen:05.403	Muffin, lemon	magdalena de limón
+matvaretabellen:05.404	Muffin, chocolate	magdalena con pepitas de chocolate
+matvaretabellen:05.405	Muffin, with frosting	magdalena con glaseado
+matvaretabellen:05.406	Muffin, banana, with frosting	magdalena de plátano con glaseado
+matvaretabellen:05.407	Muffin, blueberries, with frosting	magdalena de arándanos con glaseado
+matvaretabellen:05.408	Muffin, cocoa, with frosting	magdalena de cacao con glaseado
+matvaretabellen:05.409	Muffin, lemon, with frosting	magdalena de limón con glaseado
+matvaretabellen:05.410	Muffin, chocolate, with frosting	magdalena con pepitas de chocolate y glaseado
+matvaretabellen:05.411	Pavlova, with whipped cream and berries	pavlova con nata montada y bayas
+matvaretabellen:05.412	Cake, Sarah Bernhard	tarta Sarah Bernhard
+matvaretabellen:05.413	Scones, coarse, with milk	scones integrales con leche
+matvaretabellen:05.414	Scones, coarse, with yoghurt	scones integrales con yogur
 matvaretabellen:05.415	Lemon tart	tarta de limón
+matvaretabellen:05.416	Cake, with chocolate icing and salted peanuts, Snickerskake	tarta Snickers
+matvaretabellen:05.417	Cake, with custard made of egg yolk and cream, Suksessterte	suksessterte
+matvaretabellen:05.418	Griddle cake, Norwegian, svele	sveler
+matvaretabellen:05.419	Crisp bread, rye, Husman Sport	pan crujiente Husman Sport
+matvaretabellen:05.420	Almond flour	harina de almendra
+matvaretabellen:05.421	Pasta, made of corn and rice, gluten-free, uncooked, Barilla	pasta sin gluten de maíz y arroz Barilla
+matvaretabellen:05.422	Pasta, spaghetti, gluten-free, uncooked, Semper	spaghetti sin gluten Semper
+matvaretabellen:05.423	Pasta, made of rice and vegetables, gluten-free, uncooked, Orgran tricolore	pasta sin gluten de arroz y verduras Orgran tricolore
+matvaretabellen:05.424	Flour, gluten-free, coarse, Semper	harina sin gluten integral Semper
+matvaretabellen:05.425	Flour, gluten-free, Jyttemel Original	harina sin gluten Jyttemel Original
+matvaretabellen:05.426	Flour, gluten-free, Schär	harina sin gluten Schär
+matvaretabellen:05.427	Bread, gluten-free, Semper formbrød	pan sin gluten Semper
+matvaretabellen:05.428	Saffron buns	bollos de azafrán
+matvaretabellen:05.429	Meringue, cake bottom	base de tarta de merengue
+matvaretabellen:05.430	Muffin	magdalena
+matvaretabellen:05.431	Muffin, banana	magdalena de plátano
+matvaretabellen:05.432	Sweet bun, with chocolate	bollo con pepitas de chocolate
+matvaretabellen:05.433	Cookie, sweet, biscotti	biscotti
+matvaretabellen:05.434	Cookie, Christmas, brune pinner	galletas navideñas brune pinner
+matvaretabellen:05.435	Cake, soft, with minced nuts, whipped cream and chocolate, frozen	tarta Daim
+matvaretabellen:05.436	Cake, apple	bizcocho de manzana
+matvaretabellen:05.437	Focaccia bread	focaccia
+matvaretabellen:05.438	Cookie, Christmas, hvite kakemenn	galletas navideñas hvite kakemenn
+matvaretabellen:05.439	Snowball cake	tarta de coco
+matvaretabellen:05.440	Cookie, Christmas, krumkaker	krumkaker
+matvaretabellen:05.441	Cake, with meringue, sponge cake and vanilla cream, Kvæfjordkake	kvæfjordkake
+matvaretabellen:05.442	Pearled spelt	espelta perlada
+matvaretabellen:05.443	Pearled barley	cebada perlada
+matvaretabellen:05.444	Rolls, with pizza filling	rollos de pizza
+matvaretabellen:05.445	Coconut flour	harina de coco
+matvaretabellen:05.446	Crisp bread, rye, with filling, sandwich	sándwich de pan crujiente de centeno
+matvaretabellen:05.447	Barley, cooked	cebada cocida
+matvaretabellen:05.448	Cake, with banana	bizcocho de plátano
+matvaretabellen:05.449	Cake, with spices	bizcocho de especias
+matvaretabellen:05.450	Muffin, carrot	magdalena de zanahoria
+matvaretabellen:05.451	Muffin, carrot, with frosting	magdalena de zanahoria con glaseado
+matvaretabellen:05.452	Rolls, white, home-made	panecillos de cuerno caseros
+matvaretabellen:05.453	Rolls, coarse, home-made	panecillos de cuerno integrales caseros
+matvaretabellen:05.454	Bagels, home-made	bagels caseros
+matvaretabellen:05.455	Baguette, coarse, home-made	baguette integral casera
+matvaretabellen:05.456	Quinoa, white, cooked	quinoa blanca cocida
+matvaretabellen:05.457	Quinoa, red, cooked	quinoa roja cocida
+matvaretabellen:05.458	Quinoa, black, cooked	quinoa negra cocida
+matvaretabellen:05.459	Crisp bread, home-made	pan crujiente casero
+matvaretabellen:05.460	Cookie, Christmas, Berlinerkrans	galletas berlinerkrans
+matvaretabellen:05.461	Cookie, Christmas, Goro	galletas goro
+matvaretabellen:05.462	Muesli bar, energy bar, home-made	barrita de muesli casera
+matvaretabellen:05.463	Cookie, Christmas, sandkake	galletas de mantequilla navideñas
+matvaretabellen:05.464	Cookie, Christmas, sirupssnipper	galletas de sirope navideñas
+matvaretabellen:05.465	Psyllium husk	cáscara de psyllium
+matvaretabellen:05.466	Crisp bread, gluten-free, lactose-free, sesame and sea salt, Wasa	pan crujiente sin gluten sin lactosa con sésamo y sal marina Wasa
+matvaretabellen:05.467	Crisp bread, gluten-free, Superknäcke chia	pan crujiente sin gluten Superknäcke con chía
+matvaretabellen:05.468	Bread, coarse, gluten-free, Fria Grova	pan integral sin gluten Fria
+matvaretabellen:05.469	Biscuit, sweet, gluten-free, Choco chip cookie	cookies con pepitas de chocolate sin gluten
+matvaretabellen:05.470	Wraps, gluten-free, Bfree	wraps sin gluten Bfree
+matvaretabellen:05.471	Wraps, gluten-free, Schär	wraps sin gluten Schär
+matvaretabellen:05.472	Ciabatta, gluten-free, Schär	ciabatta sin gluten Schär
+matvaretabellen:05.473	Cracker, gluten-free, salted, Salti	galletas saladas sin gluten Salti
+matvaretabellen:05.474	Fruit muesli, breakfast cereal, gluten-free, Finax	muesli con fruta sin gluten Finax
+matvaretabellen:05.475	Corn and rice flakes, breakfast cereal, gluten-free, special flakes, Semper	copos de maíz y arroz sin gluten Semper
+matvaretabellen:05.476	Corn flakes, gluten-free, Schär	copos de maíz sin gluten Schär
+matvaretabellen:05.477	Corn and rice flakes, gluten-free, Schär	copos de maíz y arroz sin gluten Schär
+matvaretabellen:05.478	Flour, gluten-free, Finax	harina sin gluten Finax
+matvaretabellen:05.479	Flour, gluten-free, Finmix, Semper	harina sin gluten Finmix Semper
+matvaretabellen:05.480	Oat bread flour mix, gluten-free, Toro	preparado para pan de avena sin gluten Toro
+matvaretabellen:05.481	Waffle flour mix, gluten-free, Toro	preparado para gofres sin gluten Toro
+matvaretabellen:05.482	Teff flour	harina de teff
+matvaretabellen:05.483	Granola, home-made	granola casera
+matvaretabellen:05.484	Cake, chocolate, with chocolate frosting, gluten free	tarta de chocolate con crema de mantequilla sin gluten
+matvaretabellen:05.485	Scones, white, gluten free	scones blancos sin gluten
+matvaretabellen:05.486	Cake, chocolate, wth cheese frosting, gluten free	tarta de chocolate con crema de queso sin gluten
+matvaretabellen:05.487	Muffin, prepared from powder, gluten free	magdalenas de preparado sin gluten
+matvaretabellen:05.488	Muffin, prepared from powder, with frosting, gluten-free	magdalenas de preparado con glaseado sin gluten
+matvaretabellen:05.489	Scones, coarse, gluten-free	scones integrales sin gluten
+matvaretabellen:05.490	Rolls, prepared from powder, coarse, gluten free	panecillos integrales de preparado sin gluten
+matvaretabellen:05.491	Baguette, gluten-free, Semper	baguette sin gluten Semper
+matvaretabellen:05.492	Rolls, white, gluten-free, industrially made	panecillos blancos sin gluten
+matvaretabellen:05.493	Rolls, fibre, gluten-free, industrially made	panecillos con fibra sin gluten
+matvaretabellen:05.495	Spelt flour	harina de espelta
+matvaretabellen:05.496	Wheat flour, organic	harina de trigo ecológica
+matvaretabellen:05.497	Rolled oats, organic	copos de avena ecológicos
+matvaretabellen:05.498	Pasta, gluten-free, cooked	pasta sin gluten cocida
+matvaretabellen:05.499	Danish pastries with poppy seeds	tebirkes
+matvaretabellen:05.500	Cake, Mor Monsen	tarta Mor Monsen
+matvaretabellen:05.501	Brioche	brioche
+matvaretabellen:05.502	Baguette, white, with chicken, from cafe/bakery	baguette con pollo de cafetería
+matvaretabellen:05.503	Baguette, coarse, with chicken, from cafe/bakery	baguette integral con pollo de cafetería
+matvaretabellen:05.504	Bruschetta, with tomato and basil	bruschetta con tomate y albahaca
+matvaretabellen:05.505	Croissant, with ham and cheese, from cafe/bakery	croissant de jamón y queso de cafetería
+matvaretabellen:05.506	Muesli bread, muesli rolls, from cafe/bakery	pan de muesli de cafetería
+matvaretabellen:05.507	Muesli roll, with brown cheese, from cafe/bakery	panecillo de muesli con brunost de cafetería
+matvaretabellen:05.508	Cookie, with almond filling, Napoleonshatt	napoleonshatt
+matvaretabellen:05.509	Panini, with cheese and ham, from cafe/bakery	panini de queso y jamón de cafetería
+matvaretabellen:05.510	Swiss roll, with chocolate filling	brazo de gitano con crema de chocolate
+matvaretabellen:05.511	Roll, white, with chicken and pesto, from cafe/bakery	panecillo con pollo y pesto de cafetería
+matvaretabellen:05.512	Roll, with cheese and ham, from cafe/bakery	panecillo con jamón y queso de cafetería
+matvaretabellen:05.513	Pancakes, with sweet potato	crepes con boniato
+matvaretabellen:05.514	Pancakes, fried in fat	crepes fritas
+matvaretabellen:05.515	Pancakes, fried without fat	crepes a la plancha
+matvaretabellen:05.516	Baguette, coarse, with cheese and ham, from cafe/bakery	baguette integral con jamón y queso de cafetería
+matvaretabellen:05.517	Baguette, white, with cheese and ham, from cafe/bakery	baguette con jamón y queso de cafetería
+matvaretabellen:05.518	Baguette, white, with roast beef, from cafe/bakery	baguette con rosbif de cafetería
+matvaretabellen:05.519	Baguette, coarse, with roast beef, from cafe/bakery	baguette integral con rosbif de cafetería
+matvaretabellen:05.520	Noodles, whole-grain, cooked	fideos integrales cocidos
+matvaretabellen:05.521	Rice, sushi rice, cooked	arroz para sushi cocido
+matvaretabellen:05.522	Noodles, cooked	fideos de huevo cocidos
+matvaretabellen:05.523	Noodles, whole-grain, uncooked	fideos integrales secos
+matvaretabellen:05.524	Noodles, cellophane, glass, cooked	fideos de cristal cocidos
+matvaretabellen:05.525	Rice flour, whole grain, organic, Det Glutenfrie Verksted	harina de arroz integral ecológica Det Glutenfrie Verksted
+matvaretabellen:05.526	Gram flour, organic	harina de garbanzo ecológica
+matvaretabellen:05.527	Quinoa flour	harina de quinoa
+matvaretabellen:05.528	Oatmeal, organic, Det Glutenfrie Verksted	harina de avena ecológica Det Glutenfrie Verksted
+matvaretabellen:05.529	Buckwheat flakes	copos de trigo sarraceno
 matvaretabellen:05.530	Millet flakes	copos de mijo
+matvaretabellen:05.531	Corn flakes, gluten-free, without added sugar, organic, Det Glutenfrie Verksted	copos de maíz sin gluten sin azúcar añadido ecológicos Det Glutenfrie Verksted
+matvaretabellen:05.532	Pie crust flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para base de tarta sin gluten ecológico Det Glutenfrie Verksted
+matvaretabellen:05.533	Focaccia flour mix, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para focaccia sin gluten ecológico Det Glutenfrie Verksted
+matvaretabellen:05.534	Bread flour mix, fibre bread, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan con fibra sin gluten ecológico Det Glutenfrie Verksted
+matvaretabellen:05.535	Bread flour mix, no knead bread, gluten-free, organic, powder, Det Glutenfrie Verksted	preparado para pan sin amasar sin gluten ecológico Det Glutenfrie Verksted
 matvaretabellen:06.054	Radish, Norwegian, raw	rábano crudo
 matvaretabellen:06.074	Carrot, peas, sweet corn, frozen	mezcla de zanahoria, guisantes y maíz congelada
 matvaretabellen:06.087	Soy flour	harina de soja
