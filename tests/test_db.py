@@ -1143,6 +1143,42 @@ def test_first_boot_serves_off_values_without_a_manual_snapshot(monkeypatch):
     assert product("off:04006381333931", "off")["per_100"]["ENERC_KCAL"]["value"] == 539
 
 
+def test_a_worker_boot_retries_a_fetch_the_last_worker_died_on():
+    """#110: a deploy recreate SIGKILLs the worker mid-run and the pq row stays RUNNING; without the
+    boot reap the next schedule() would only park on it and the bootstrap fetch would never run.
+    The real queue here: the same rows the incidents left (fdc-survey 16 Oct, names mt 18 Oct)."""
+    from sqlalchemy import text
+
+    from fooddb import ingest, jobs
+    from fooddb.db import engine
+
+    with engine().begin() as conn:
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("insert into fetch_run (fetcher, ref, status) values ('fdc-survey', 'r1', 'running')"))
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at) "
+                          "values ('bootstrap-fdc-survey', 'fooddb.jobs:fetch_fdc', "
+                          """'{"args": [], "kwargs": {"dataset": "survey"}}', 50, 'RUNNING', now(), 1, now())"""))
+        # An upsert that parked while its row ran is re-queued with the parked version, not failed.
+        conn.execute(text("insert into pq_tasks (client_id, name, payload, priority, status, run_at, attempts, started_at, requeue) "
+                          "values ('bootstrap-names-mt', 'fooddb.jobs:load_mt_names', '{\"args\": [], \"kwargs\": {}}', 0, "
+                          """'RUNNING', now(), 1, now(), '{"name": "fooddb.jobs:load_mt_names", "payload": {"args": [], "kwargs": {}}, """
+                          """"priority": 0, "run_at": "2026-10-18T00:00:00+00:00", "max_runtime_seconds": null}'::jsonb)"""))
+    assert jobs.reap_orphans() == 2
+    assert ingest.fail_abandoned() == 1
+    jobs.schedule()  # what cli.worker() runs next: the upsert lands on the closed row as a re-queue
+    with engine().connect() as conn:
+        tasks = {r.client_id: r for r in conn.execute(
+            text("select client_id, status, error, attempts from pq_tasks where client_id like 'bootstrap%'")).mappings()}
+        [run] = conn.execute(text("select status, error from fetch_run where fetcher = 'fdc-survey'")).mappings()
+    assert (tasks["bootstrap-fdc-survey"]["status"], tasks["bootstrap-fdc-survey"]["attempts"]) == ("PENDING", 0)
+    assert tasks["bootstrap-fdc-survey"]["error"] is None
+    assert tasks["bootstrap-names-mt"]["status"] == "PENDING"
+    assert run["status"] == "failed" and "abandoned" in run["error"]
+    with engine().begin() as conn:  # leave the shared tables as a fresh database has them
+        conn.execute(text("delete from pq_tasks"))
+        conn.execute(text("delete from pq_periodic"))
+
+
 TYPO = HUMMUS | {"ENERC_KCAL": 2290.0, "SUGAR": 20.0, "FIBTG": 6.0}  # 10x kcal, sugars over carbs, new fibre
 
 
