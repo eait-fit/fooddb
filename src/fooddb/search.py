@@ -1,13 +1,19 @@
 """Finding products: by name, by source record, by barcode. Each returns the products in answer order,
 as `resolve.products` serves them; what a miss means is the caller's (the API's 404, the CLI's exit 1)."""
 
-from sqlalchemy import ColumnElement, Select, case, false, func, literal, literal_column, select, union_all
+from sqlalchemy import ColumnElement, Select, and_, case, false, func, literal, literal_column, select, union_all
 from sqlalchemy.dialects.postgresql import distinct_on
 
 from fooddb import countries, resolve, synonyms
 from fooddb.db import engine, food, food_name, observation
 
 CANDIDATES = 20  # name rows ranked per result row before the visibility check
+
+# Whole words that mark a name as a processed variant rather than the plain food (#115). A name
+# carrying one of them loses to a plainer name when the query never asked for it ("Egg, white,
+# dried" for "egg whites", "Babyfood, juice, orange" for "orange").
+PROCESSING = ("mix", "mixture", "babyfood", "dried", "powder", "alcoholic",
+              "juice", "nectar", "oil", "flour", "bran", "sugared", "gluten-free")
 
 
 def _pids(stmt: Select) -> list[int]:
@@ -23,6 +29,18 @@ def _visible() -> ColumnElement[bool]:
 
 def _layers(include: str | None) -> ColumnElement[bool]:
     return food.c.layer.in_(resolve.layers_for(include))
+
+
+def _penalty(name: ColumnElement, uq: ColumnElement) -> ColumnElement[int]:
+    """How many PROCESSING words a name carries that the query did not ask for (#115). Whole-word
+    match on the unaccented lowercase of both, so "mixture" never counts as "mix" and "nonfat"
+    never as "fat"."""
+    un, q = func.lower(func.f_unaccent(name)), func.lower(uq)
+    pen = literal(0)
+    for word in PROCESSING:
+        pat = f"\\m{word}\\M"
+        pen = pen + case((and_(un.op("~")(pat), q.op("!~")(pat)), 1), else_=0)
+    return pen
 
 
 def _rank(cc: str | None) -> ColumnElement[int]:
@@ -57,23 +75,26 @@ def by_name(q: str, include: str | None = None, limit: int = 20, country: str | 
     def best(name, source, variant) -> Select:
         # f_unaccent on both sides: the query may carry the marks or lack them, so may the name.
         uq, un = func.f_unaccent(variant), func.f_unaccent(name)
-        sim, length = func.word_similarity(uq, un), func.length(name)
-        return (select(food.c.id, sim.label("sim"), length.label("len"), rk.label("rk"))
+        sim = func.word_similarity(uq, un)
+        pen, length = _penalty(name, uq), func.length(name)
+        return (select(food.c.id, sim.label("sim"), pen.label("pen"),
+                       length.label("len"), rk.label("rk"))
                 .select_from(source).where(layer, uq.op("<%")(un))
-                .order_by(sim.desc(), *([rk] if cc else []), length).limit(limit * CANDIDATES))
+                .order_by(sim.desc(), pen, *([rk] if cc else []), length)
+                .limit(limit * CANDIDATES))
 
     cand = union_all(*(best(name, source, v) for v in variants
                        for name, source in ((food.c.name, food), (food_name.c.name, named)))).cte("cand")
-    # A product orders by its ONE best candidate tuple, (sim, rk, len) in the cut's own order —
+    # A product orders by its ONE best candidate tuple, (sim, pen, rk, len) in the cut's own order —
     # not three independent aggregates: a deeper cut can add a short name from a record that did not
     # give the best similarity, and max(sim)/min(rk)/min(len) would mix the tuples of two records,
     # so the first rows moved with `limit` ("orange" → Candied orange peel at limit=5).
-    top = (select(food.c.product_id, cand.c.sim, cand.c.rk, cand.c.len)
+    top = (select(food.c.product_id, cand.c.sim, cand.c.pen, cand.c.rk, cand.c.len)
            .select_from(cand.join(food, food.c.id == cand.c.id)).where(_visible())
            .ext(distinct_on(food.c.product_id))
-           .order_by(food.c.product_id, cand.c.sim.desc(), cand.c.rk, cand.c.len)).cte("top")
+           .order_by(food.c.product_id, cand.c.sim.desc(), cand.c.pen, cand.c.rk, cand.c.len)).cte("top")
     return resolve.products(_pids(
-        select(top.c.product_id).order_by(top.c.sim.desc(), top.c.rk, top.c.len).limit(limit)
+        select(top.c.product_id).order_by(top.c.sim.desc(), top.c.pen, top.c.rk, top.c.len).limit(limit)
     ), include)
 
 
