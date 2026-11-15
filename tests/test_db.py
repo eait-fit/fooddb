@@ -3,6 +3,7 @@ FOODDB__BACKEND__DATABASE_URL at this worktree's __test database; skipped otherw
 
 import os
 import re
+import sys
 from datetime import UTC, date, datetime
 
 import pytest
@@ -696,6 +697,44 @@ def test_matching_joins_a_barcode_across_sources_and_the_trusted_source_wins():
     assert p["per_100"]["ENERC_KCAL"]["source"] == "fdc"  # USDA outranks OFF
     # Without include=off the same product answers from core only.
     assert product("fdc:9")["records"] == ["fdc:9"]
+
+
+# In a fresh interpreter, like the pq worker's forked task (DuckDB and pyarrow must not be
+# imported in the parent — jobs.py): their threads make a forked child deadlock, so the job runs
+# as a subprocess and wait4 reports its peak RSS the way the worker reports its killed tasks'.
+# ru_maxrss is a Linux/Unix field; CI is Linux.
+@pytest.mark.skipif(sys.platform != "linux", reason="measures a child's peak RSS via os.wait4")
+def test_match_products_peak_memory_stays_flat_on_a_large_catalogue():
+    """#186: the job materialised the whole catalogue as Python dicts twice and grew past the
+    box's memory — the kernel killed it nightly. Streamed into a file-backed linker its peak RSS
+    must stay flat, not grow with the record count."""
+    import os
+    import subprocess
+
+    from sqlalchemy import text
+
+    from fooddb.db import engine
+
+    n = 500_000
+    with engine().begin() as conn:
+        conn.execute(text("insert into product(id) select g from generate_series(1, :n) g"), {"n": n})
+        conn.execute(text("""
+            insert into food(id, product_id, source, layer, licence, gtin14, name, brand, lang)
+            select 'off:' || g, g, 'off', 'off', 'ODbL-1.0',
+                   lpad(((g::bigint * 7919) % 99999999999999)::text, 14, '0'),
+                   'Product ' || (g % 20000) || ' Variant ' || (g % 50) || ' Extra Words Here',
+                   case when g % 4 = 0 then 'Brand ' || (g % 500) end, 'en'
+            from generate_series(1, :n) g"""), {"n": n})
+        conn.execute(text("""
+            insert into observation(food_id, nutrient, value_per_100, unit, source, licence, observed_at)
+            select 'off:' || g, 'ENERC_KCAL', 10 + (g % 700), 'kcal', 'off', 'ODbL-1.0', now()
+            from generate_series(1, :n) g"""), {"n": n})
+    proc = subprocess.Popen([sys.executable, "-c", "from fooddb import jobs; jobs.match_products()"])
+    _, status, usage = os.wait4(proc.pid, 0)
+    assert os.waitstatus_to_exitcode(status) == 0
+    # The pre-stream shape's Python copies alone ran ~1.2 KB per record: ~0.6 GB over this bound
+    # on this fixture, ~2.5 GB at production size — the nightly OOM (#186).
+    assert usage.ru_maxrss < 1_500_000, f"match_products peaked at {usage.ru_maxrss} KB"
 
 
 def acme_hummus_in_both_layers() -> str:
