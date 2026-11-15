@@ -12,6 +12,9 @@ records once volume makes this slow.
 
 import os
 import re
+import tempfile
+from collections.abc import Iterator
+from pathlib import Path
 
 import pyarrow as pa
 import splink.comparison_library as cl
@@ -21,6 +24,25 @@ from sqlalchemy import text
 from fooddb.db import engine, merge_log
 
 THRESHOLD = float(os.environ.get("FOODDB__BACKEND__MATCH_THRESHOLD", "0.95"))
+# Records per Arrow batch streamed into DuckDB. The job used to materialise the whole candidate
+# set as Python dicts — twice (raw and prepared) — and at ~3 M rows that was most of a ~4 GB peak
+# on a box the worker shares; the kernel killed the task every night.
+LOAD_BATCH = 100_000
+# The linker engine's own budget: what a join or an aggregate cannot hold it spills to the temp
+# dir instead of growing the task's RSS. The production box shares ~8 GB between the API,
+# Postgres and the rest of the stack — the uncapped engine is what took the task past 4 GB.
+MEMORY_LIMIT = os.environ.get("FOODDB__BACKEND__MATCH_MEMORY_LIMIT", "1500MB")
+# RECORDS_SQL's output plus what _prepare adds: the schema a record lands in DuckDB with. Fixed
+# rather than inferred because a batch whose column is all null would type it `null` differently
+# from its neighbours.
+SCHEMA = pa.schema([
+    ("unique_id", pa.string()), ("product_id", pa.int64()), ("gtin14", pa.string()),
+    ("name", pa.string()), ("brand", pa.string()), ("lang", pa.string()),
+    ("kcal", pa.float64()), ("protein", pa.float64()), ("fat", pa.float64()),
+    ("carbs", pa.float64()), ("sodium", pa.float64()),
+    ("name_norm", pa.string()), ("name_words", pa.list_(pa.string())), ("name_key", pa.string()),
+    ("kcal_band", pa.int64()),
+])
 
 RECORDS_SQL = """
 select f.id as unique_id, f.product_id, f.gtin14, f.name, f.brand, f.lang,
@@ -142,21 +164,54 @@ def model() -> SettingsCreator | str:
     return path if path and os.path.exists(path) else SETTINGS
 
 
-def _linker(rows: list[dict], settings: SettingsCreator | str) -> Linker:
-    return Linker(DuckDBAPI().register(pa.Table.from_pylist([_prepare(r) for r in rows])), settings, log_level=30)
+def _linker(records, settings: SettingsCreator | str, workdir: Path) -> Linker:
+    """`records` is a RecordBatchReader (the catalogue streamed in) or a small list of record
+    dicts in tests. Two bounds on the job's RSS: a reader drains on its first scan and Splink
+    scans its input more than once, so the stream is materialised once into a real table whose
+    name the linker gets; and the engine is file-backed in `workdir`, so its tables live on disk
+    and `memory_limit` caps only the working set, which spills instead of growing."""
+    api = DuckDBAPI(connection=str(workdir / "match.duckdb"))
+    api.duckdb_con.execute(f"set memory_limit = '{MEMORY_LIMIT}'")
+    api.duckdb_con.execute("set preserve_insertion_order = false")
+    if isinstance(records, pa.RecordBatchReader):
+        api.duckdb_con.register("_stream", records)
+        api.duckdb_con.execute("create table catalogue as select * from _stream")
+        table = api.register("catalogue")
+    else:
+        table = api.register(pa.Table.from_pylist([_prepare(r) for r in records], schema=SCHEMA))
+    return Linker(table, settings, log_level=30)
 
 
-def _records() -> list[dict]:
+def _records() -> Iterator[dict]:
     with engine().connect() as conn:
-        return [dict(r) for r in conn.execute(text(RECORDS_SQL)).mappings()]
+        for r in conn.execute(text(RECORDS_SQL)).yield_per(LOAD_BATCH).mappings():
+            yield dict(r)
 
 
-def links(rows: list[dict], threshold: float = THRESHOLD) -> list[tuple[str, str, float]]:
+def _record_reader() -> pa.RecordBatchReader:
+    """The catalogue as a lazy Arrow stream: DuckDB pulls a batch at a time as it materialises its
+    input table, so the records never coexist as Python objects."""
+    def batches() -> Iterator[pa.RecordBatch]:
+        buf: list[dict] = []
+        for r in _records():
+            buf.append(_prepare(r))
+            if len(buf) >= LOAD_BATCH:
+                yield pa.RecordBatch.from_pylist(buf, schema=SCHEMA)
+                buf.clear()
+        if buf:
+            yield pa.RecordBatch.from_pylist(buf, schema=SCHEMA)
+    return pa.RecordBatchReader.from_batches(SCHEMA, batches())
+
+
+def links(records, threshold: float = THRESHOLD) -> list[tuple[str, str, float]]:
     """Record pairs at or above the threshold, with their match probability."""
-    if len(rows) < 2:
+    if not isinstance(records, pa.RecordBatchReader) and len(records) < 2:
         return []
-    predictions = _linker(rows, model()).inference.predict(threshold_match_probability=threshold, warning_mode="never")
-    return [(r["unique_id_l"], r["unique_id_r"], float(r["match_probability"])) for r in predictions.as_record_list()]
+    with tempfile.TemporaryDirectory(prefix="fooddb-match-") as workdir:
+        predictions = _linker(records, model(), Path(workdir)).inference.predict(
+            threshold_match_probability=threshold, warning_mode="never")
+        return [(r["unique_id_l"], r["unique_id_r"], float(r["match_probability"]))
+                for r in predictions.as_record_list()]
 
 
 def merges(product_of: dict[str, int], links: list[tuple[str, str, float]],
@@ -196,13 +251,19 @@ def merges(product_of: dict[str, int], links: list[tuple[str, str, float]],
 
 def run(threshold: float = THRESHOLD) -> int:
     """Match every record; merge products that matched. Returns how many products were merged away."""
-    rows = _records()
+    pairs = links(_record_reader(), threshold)
+    ids = {a for a, _, _ in pairs} | {b for _, b, _ in pairs}
     with engine().connect() as conn:
         cannot = [tuple(r) for r in conn.execute(text("select food_a, food_b from cannot_link"))]
-    product_of = {r["unique_id"]: r["product_id"] for r in rows}
+        for a, b in cannot:
+            ids.update((a, b))
+        # Product ids for the linked and cannot-link records only: one lookup per record of the
+        # catalogue was the second big resident set.
+        product_of = dict(conn.execute(
+            text("select id, product_id from food where id = any(:ids)"), {"ids": list(ids)}).all())
     merged = 0
     with engine().begin() as conn:
-        for survivor, others in merges(product_of, links(rows, threshold), cannot).items():
+        for survivor, others in merges(product_of, pairs, cannot).items():
             for pid, prob in others:
                 moved = conn.execute(text("update food set product_id = :s where product_id = :o returning id"),
                                      {"s": survivor, "o": pid}).scalars().all()
@@ -215,8 +276,9 @@ def run(threshold: float = THRESHOLD) -> int:
 
 def train(path: str) -> dict:
     """Estimate u by random sampling and m by EM on the current records; save the model as JSON."""
-    linker = _linker(_records(), SETTINGS)
-    linker.training.estimate_u_using_random_sampling(max_pairs=1e7, seed=1)
-    for rule in (block_on("gtin14"), block_on("name_norm", "kcal_band")):
-        linker.training.estimate_parameters_using_expectation_maximisation(rule)
-    return linker.misc.save_model_to_json(path, overwrite=True)
+    with tempfile.TemporaryDirectory(prefix="fooddb-match-") as workdir:
+        linker = _linker(_record_reader(), SETTINGS, Path(workdir))
+        linker.training.estimate_u_using_random_sampling(max_pairs=1e7, seed=1)
+        for rule in (block_on("gtin14"), block_on("name_norm", "kcal_band")):
+            linker.training.estimate_parameters_using_expectation_maximisation(rule)
+        return linker.misc.save_model_to_json(path, overwrite=True)
