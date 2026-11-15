@@ -12,6 +12,7 @@ records once volume makes this slow.
 
 import os
 import re
+import shutil
 import tempfile
 from collections.abc import Iterator
 from pathlib import Path
@@ -186,9 +187,14 @@ def _linker(records, settings: SettingsCreator | str, workdir: Path) -> Linker:
 
 def _workdir() -> tempfile.TemporaryDirectory:
     """Scratch space under the dumps volume (FOODDB__BACKEND__DUMP_DIR), not the system temp:
-    the prod worker's /tmp is a 512MB tmpfs, and the DuckDB file plus its spill need real disk."""
+    the prod worker's /tmp is a 512MB tmpfs, and the DuckDB file plus its spill need real disk.
+    A killed run leaves its dir behind, so stale children are swept before a new one is made;
+    one worker owns the queue, so nothing alive can match the glob."""
     parent = dump.directory() / "match-work"
     parent.mkdir(parents=True, exist_ok=True)
+    for stale in parent.glob("fooddb-match-*"):
+        if stale.is_dir():
+            shutil.rmtree(stale, ignore_errors=True)
     return tempfile.TemporaryDirectory(prefix="fooddb-match-", dir=parent)
 
 
