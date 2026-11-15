@@ -12,6 +12,7 @@ records once volume makes this slow.
 
 import os
 import re
+import shutil
 import tempfile
 from collections.abc import Iterator
 from pathlib import Path
@@ -21,6 +22,7 @@ import splink.comparison_library as cl
 from splink import DuckDBAPI, Linker, SettingsCreator, block_on
 from sqlalchemy import text
 
+from fooddb import dump
 from fooddb.db import engine, merge_log
 
 THRESHOLD = float(os.environ.get("FOODDB__BACKEND__MATCH_THRESHOLD", "0.95"))
@@ -173,6 +175,7 @@ def _linker(records, settings: SettingsCreator | str, workdir: Path) -> Linker:
     api = DuckDBAPI(connection=str(workdir / "match.duckdb"))
     api.duckdb_con.execute(f"set memory_limit = '{MEMORY_LIMIT}'")
     api.duckdb_con.execute("set preserve_insertion_order = false")
+    api.duckdb_con.execute(f"set temp_directory = '{workdir / 'spill'}'")
     if isinstance(records, pa.RecordBatchReader):
         api.duckdb_con.register("_stream", records)
         api.duckdb_con.execute("create table catalogue as select * from _stream")
@@ -180,6 +183,19 @@ def _linker(records, settings: SettingsCreator | str, workdir: Path) -> Linker:
     else:
         table = api.register(pa.Table.from_pylist([_prepare(r) for r in records], schema=SCHEMA))
     return Linker(table, settings, log_level=30)
+
+
+def _workdir() -> tempfile.TemporaryDirectory:
+    """Scratch space under the dumps volume (FOODDB__BACKEND__DUMP_DIR), not the system temp:
+    the prod worker's /tmp is a 512MB tmpfs, and the DuckDB file plus its spill need real disk.
+    A killed run leaves its dir behind, so stale children are swept before a new one is made;
+    one worker owns the queue, so nothing alive can match the glob."""
+    parent = dump.directory() / "match-work"
+    parent.mkdir(parents=True, exist_ok=True)
+    for stale in parent.glob("fooddb-match-*"):
+        if stale.is_dir():
+            shutil.rmtree(stale, ignore_errors=True)
+    return tempfile.TemporaryDirectory(prefix="fooddb-match-", dir=parent)
 
 
 def _records() -> Iterator[dict]:
@@ -211,7 +227,7 @@ def links(records, threshold: float = THRESHOLD) -> list[tuple[str, str, float]]
     """Record pairs at or above the threshold, with their match probability."""
     if not isinstance(records, pa.RecordBatchReader) and len(records) < 2:
         return []
-    with tempfile.TemporaryDirectory(prefix="fooddb-match-") as workdir:
+    with _workdir() as workdir:
         predictions = _linker(records, model(), Path(workdir)).inference.predict(
             threshold_match_probability=threshold, warning_mode="never")
         # Only the three columns merges() needs, straight out of DuckDB: as_record_list() would
@@ -285,7 +301,7 @@ def run(threshold: float = THRESHOLD) -> int:
 
 def train(path: str) -> dict:
     """Estimate u by random sampling and m by EM on the current records; save the model as JSON."""
-    with tempfile.TemporaryDirectory(prefix="fooddb-match-") as workdir:
+    with _workdir() as workdir:
         linker = _linker(_record_reader(), SETTINGS, Path(workdir))
         linker.training.estimate_u_using_random_sampling(max_pairs=1e7, seed=1)
         for rule in (block_on("gtin14"), block_on("name_norm", "kcal_band")):
