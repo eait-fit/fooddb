@@ -184,7 +184,11 @@ def _linker(records, settings: SettingsCreator | str, workdir: Path) -> Linker:
 
 def _records() -> Iterator[dict]:
     with engine().connect() as conn:
-        for r in conn.execute(text(RECORDS_SQL)).yield_per(LOAD_BATCH).mappings():
+        # yield_per as an execution option turns on a server-side cursor (it becomes
+        # stream_results + a row buffer at execute). Result.yield_per() after execute would
+        # only batch iteration over a result psycopg already buffered whole.
+        result = conn.execution_options(yield_per=LOAD_BATCH).execute(text(RECORDS_SQL))
+        for r in result.mappings():
             yield dict(r)
 
 
@@ -210,8 +214,12 @@ def links(records, threshold: float = THRESHOLD) -> list[tuple[str, str, float]]
     with tempfile.TemporaryDirectory(prefix="fooddb-match-") as workdir:
         predictions = _linker(records, model(), Path(workdir)).inference.predict(
             threshold_match_probability=threshold, warning_mode="never")
-        return [(r["unique_id_l"], r["unique_id_r"], float(r["match_probability"]))
-                for r in predictions.as_record_list()]
+        # Only the three columns merges() needs, straight out of DuckDB: as_record_list() would
+        # materialise every comparison column of every pair as a dict.
+        rows = predictions.db_api.duckdb_con.sql(
+            f"select unique_id_l, unique_id_r, match_probability from {predictions.physical_name}"
+        ).fetchall()
+        return [(a, b, float(p)) for a, b, p in rows]
 
 
 def merges(product_of: dict[str, int], links: list[tuple[str, str, float]],
@@ -257,8 +265,9 @@ def run(threshold: float = THRESHOLD) -> int:
         cannot = [tuple(r) for r in conn.execute(text("select food_a, food_b from cannot_link"))]
         for a, b in cannot:
             ids.update((a, b))
-        # Product ids for the linked and cannot-link records only: one lookup per record of the
-        # catalogue was the second big resident set.
+        # Product ids for the linked and cannot-link records only, read AFTER linking so it is one
+        # lookup per linked record instead of one per catalogue record — the second big resident
+        # set. Nothing here writes product ids, so the delay cannot make the read stale.
         product_of = dict(conn.execute(
             text("select id, product_id from food where id = any(:ids)"), {"ids": list(ids)}).all())
     merged = 0
