@@ -1,5 +1,5 @@
 # fooddb: one image, three roles: `fooddb serve` (API), `fooddb worker` (pq jobs), `fooddb migrate`.
-FROM python:3.14.8-slim@sha256:a2b82f3c48559aa0a8446d9af49826b6e2b2016f4cd2afabfe6013ec53729170 AS build
+FROM python:3.15.2-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928 AS build
 COPY --from=ghcr.io/astral-sh/uv:0.11 /uv /bin/uv
 WORKDIR /app
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy UV_PYTHON_DOWNLOADS=never
@@ -11,7 +11,7 @@ COPY alembic.ini ./
 COPY data ./data
 RUN uv sync --frozen --no-dev
 
-FROM python:3.14.8-slim@sha256:a2b82f3c48559aa0a8446d9af49826b6e2b2016f4cd2afabfe6013ec53729170
+FROM python:3.15.2-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928
 RUN useradd --system --uid 10001 --home /app fooddb
 WORKDIR /app
 COPY --from=build --chown=fooddb /app /app
